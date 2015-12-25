@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qsystemtrayicon.h
 // dst-file: /src/widgets/qsystemtrayicon.cxx
 //
@@ -9,20 +9,27 @@
 
 extern "C" {
 
-  // proto:  void QSystemTrayIcon::hide();
-void _ZN15QSystemTrayIcon4hideEv(void *that)
-
+// ~QSystemTrayIcon()
+void dedtor_ZN15QSystemTrayIconD0Ev(QSystemTrayIcon* that)
 {
-  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
-   cthat->hide();
+  QSystemTrayIcon* rthis = (QSystemTrayIcon*)that;
+  delete rthis;
 }
 
-  // proto:  void QSystemTrayIcon::show();
-void _ZN15QSystemTrayIcon4showEv(void *that)
-
+// QSystemTrayIcon(const class QIcon &, class QObject *)
+QSystemTrayIcon* dector_ZN15QSystemTrayIconC1ERK5QIconP7QObject(const QIcon & icon, QObject * parent)
 {
-  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
-   cthat->show();
+  // static_assert(sizeof(QSystemTrayIcon) == 32, "tyszerr");
+  QSystemTrayIcon* rthis = new QSystemTrayIcon(icon, parent);
+  return rthis;
+}
+
+// QSystemTrayIcon(class QObject *)
+QSystemTrayIcon* dector_ZN15QSystemTrayIconC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QSystemTrayIcon) == 32, "tyszerr");
+  QSystemTrayIcon* rthis = new QSystemTrayIcon(parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

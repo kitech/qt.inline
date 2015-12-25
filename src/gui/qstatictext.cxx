@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qstatictext.h
 // dst-file: /src/gui/qstatictext.cxx
 //
@@ -8,6 +8,37 @@
 #include <qstatictext.h>
 
 extern "C" {
+
+// QStaticText(const class QString &)
+QStaticText* dector_ZN11QStaticTextC1ERK7QString(const QString & text)
+{
+  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
+  QStaticText* rthis = new QStaticText(text);
+  return rthis;
+}
+
+// ~QStaticText()
+void dedtor_ZN11QStaticTextD0Ev(QStaticText* that)
+{
+  QStaticText* rthis = (QStaticText*)that;
+  delete rthis;
+}
+
+// QStaticText()
+QStaticText* dector_ZN11QStaticTextC1Ev()
+{
+  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
+  QStaticText* rthis = new QStaticText();
+  return rthis;
+}
+
+// QStaticText(const class QStaticText &)
+QStaticText* dector_ZN11QStaticTextC1ERKS_(const QStaticText & other)
+{
+  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
+  QStaticText* rthis = new QStaticText(other);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

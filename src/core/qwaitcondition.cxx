@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qwaitcondition.h
 // dst-file: /src/core/qwaitcondition.cxx
 //
@@ -8,6 +8,21 @@
 #include <qwaitcondition.h>
 
 extern "C" {
+
+// ~QWaitCondition()
+void dedtor_ZN14QWaitConditionD0Ev(QWaitCondition* that)
+{
+  QWaitCondition* rthis = (QWaitCondition*)that;
+  delete rthis;
+}
+
+// QWaitCondition()
+QWaitCondition* dector_ZN14QWaitConditionC1Ev()
+{
+  // static_assert(sizeof(QWaitCondition) == 32, "tyszerr");
+  QWaitCondition* rthis = new QWaitCondition();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

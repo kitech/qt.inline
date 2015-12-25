@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qopengltexture.h
 // dst-file: /src/gui/qopengltexture.cxx
 //
@@ -8,6 +8,29 @@
 #include <qopengltexture.h>
 
 extern "C" {
+
+// QOpenGLTexture(const class QImage &, enum QOpenGLTexture::MipMapGeneration)
+QOpenGLTexture* dector_ZN14QOpenGLTextureC1ERK6QImageNS_16MipMapGenerationE(const QImage & image, QOpenGLTexture::MipMapGeneration genMipMaps)
+{
+  // static_assert(sizeof(QOpenGLTexture) == 32, "tyszerr");
+  QOpenGLTexture* rthis = new QOpenGLTexture(image, genMipMaps);
+  return rthis;
+}
+
+// ~QOpenGLTexture()
+void dedtor_ZN14QOpenGLTextureD0Ev(QOpenGLTexture* that)
+{
+  QOpenGLTexture* rthis = (QOpenGLTexture*)that;
+  delete rthis;
+}
+
+// QOpenGLTexture(enum QOpenGLTexture::Target)
+QOpenGLTexture* dector_ZN14QOpenGLTextureC1ENS_6TargetE(QOpenGLTexture::Target target)
+{
+  // static_assert(sizeof(QOpenGLTexture) == 32, "tyszerr");
+  QOpenGLTexture* rthis = new QOpenGLTexture(target);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

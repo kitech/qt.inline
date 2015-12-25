@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qkeysequence.h
 // dst-file: /src/gui/qkeysequence.cxx
 //
@@ -9,12 +9,51 @@
 
 extern "C" {
 
-  // proto:  void QKeySequence::swap(QKeySequence & other);
-void _ZN12QKeySequence4swapERS_(void *that, QKeySequence & other)
-
+// QKeySequence(const class QKeySequence &)
+QKeySequence* dector_ZN12QKeySequenceC1ERKS_(const QKeySequence & ks)
 {
-  QKeySequence *cthat = (QKeySequence *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
+  QKeySequence* rthis = new QKeySequence(ks);
+  return rthis;
+}
+
+// QKeySequence(int, int, int, int)
+QKeySequence* dector_ZN12QKeySequenceC1Eiiii(int k1, int k2, int k3, int k4)
+{
+  // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
+  QKeySequence* rthis = new QKeySequence(k1, k2, k3, k4);
+  return rthis;
+}
+
+// QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
+QKeySequence* dector_ZN12QKeySequenceC1ERK7QStringNS_14SequenceFormatE(const QString & key, QKeySequence::SequenceFormat format)
+{
+  // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
+  QKeySequence* rthis = new QKeySequence(key, format);
+  return rthis;
+}
+
+// QKeySequence()
+QKeySequence* dector_ZN12QKeySequenceC1Ev()
+{
+  // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
+  QKeySequence* rthis = new QKeySequence();
+  return rthis;
+}
+
+// ~QKeySequence()
+void dedtor_ZN12QKeySequenceD0Ev(QKeySequence* that)
+{
+  QKeySequence* rthis = (QKeySequence*)that;
+  delete rthis;
+}
+
+// QKeySequence(enum QKeySequence::StandardKey)
+QKeySequence* dector_ZN12QKeySequenceC1ENS_11StandardKeyE(QKeySequence::StandardKey key)
+{
+  // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
+  QKeySequence* rthis = new QKeySequence(key);
+  return rthis;
 }
 
 }; // <= extern "C" block end

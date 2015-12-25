@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qmdiarea.h
 // dst-file: /src/widgets/qmdiarea.cxx
 //
@@ -8,6 +8,21 @@
 #include <qmdiarea.h>
 
 extern "C" {
+
+// ~QMdiArea()
+void dedtor_ZN8QMdiAreaD0Ev(QMdiArea* that)
+{
+  QMdiArea* rthis = (QMdiArea*)that;
+  delete rthis;
+}
+
+// QMdiArea(class QWidget *)
+QMdiArea* dector_ZN8QMdiAreaC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QMdiArea) == 32, "tyszerr");
+  QMdiArea* rthis = new QMdiArea(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

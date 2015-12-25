@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
@@ -9,20 +9,27 @@
 
 extern "C" {
 
-  // proto:  bool QDockWidget::isFloating();
-bool _ZNK11QDockWidget10isFloatingEv(void *that)
-
+// ~QDockWidget()
+void dedtor_ZN11QDockWidgetD0Ev(QDockWidget* that)
 {
-  QDockWidget *cthat = (QDockWidget *)that;
-  return cthat->isFloating();
+  QDockWidget* rthis = (QDockWidget*)that;
+  delete rthis;
 }
 
-  // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
-bool _ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *that, Qt::DockWidgetArea area)
-
+// QDockWidget(class QWidget *, Qt::WindowFlags)
+QDockWidget* dector_ZN11QDockWidgetC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
 {
-  QDockWidget *cthat = (QDockWidget *)that;
-  return cthat->isAreaAllowed(area);
+  // static_assert(sizeof(QDockWidget) == 32, "tyszerr");
+  QDockWidget* rthis = new QDockWidget(parent, flags);
+  return rthis;
+}
+
+// QDockWidget(const class QString &, class QWidget *, Qt::WindowFlags)
+QDockWidget* dector_ZN11QDockWidgetC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, QWidget * parent, Qt::WindowFlags flags)
+{
+  // static_assert(sizeof(QDockWidget) == 32, "tyszerr");
+  QDockWidget* rthis = new QDockWidget(title, parent, flags);
+  return rthis;
 }
 
 }; // <= extern "C" block end

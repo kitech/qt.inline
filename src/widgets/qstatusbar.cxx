@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qstatusbar.h
 // dst-file: /src/widgets/qstatusbar.cxx
 //
@@ -8,6 +8,21 @@
 #include <qstatusbar.h>
 
 extern "C" {
+
+// ~QStatusBar()
+void dedtor_ZN10QStatusBarD0Ev(QStatusBar* that)
+{
+  QStatusBar* rthis = (QStatusBar*)that;
+  delete rthis;
+}
+
+// QStatusBar(class QWidget *)
+QStatusBar* dector_ZN10QStatusBarC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QStatusBar) == 32, "tyszerr");
+  QStatusBar* rthis = new QStatusBar(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

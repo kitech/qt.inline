@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qprocess.h
 // dst-file: /src/core/qprocess.cxx
 //
@@ -9,12 +9,42 @@
 
 extern "C" {
 
-  // proto:  void QProcessEnvironment::swap(QProcessEnvironment & other);
-void _ZN19QProcessEnvironment4swapERS_(void *that, QProcessEnvironment & other)
-
+// ~QProcess()
+void dedtor_ZN8QProcessD0Ev(QProcess* that)
 {
-  QProcessEnvironment *cthat = (QProcessEnvironment *)that;
-   cthat->swap(other);
+  QProcess* rthis = (QProcess*)that;
+  delete rthis;
+}
+
+// QProcess(class QObject *)
+QProcess* dector_ZN8QProcessC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QProcess) == 32, "tyszerr");
+  QProcess* rthis = new QProcess(parent);
+  return rthis;
+}
+
+// ~QProcessEnvironment()
+void dedtor_ZN19QProcessEnvironmentD0Ev(QProcessEnvironment* that)
+{
+  QProcessEnvironment* rthis = (QProcessEnvironment*)that;
+  delete rthis;
+}
+
+// QProcessEnvironment(const class QProcessEnvironment &)
+QProcessEnvironment* dector_ZN19QProcessEnvironmentC1ERKS_(const QProcessEnvironment & other)
+{
+  // static_assert(sizeof(QProcessEnvironment) == 32, "tyszerr");
+  QProcessEnvironment* rthis = new QProcessEnvironment(other);
+  return rthis;
+}
+
+// QProcessEnvironment()
+QProcessEnvironment* dector_ZN19QProcessEnvironmentC1Ev()
+{
+  // static_assert(sizeof(QProcessEnvironment) == 32, "tyszerr");
+  QProcessEnvironment* rthis = new QProcessEnvironment();
+  return rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qfileinfo.h
 // dst-file: /src/core/qfileinfo.cxx
 //
@@ -9,29 +9,59 @@
 
 extern "C" {
 
-  // proto:  QString QFileInfo::symLinkTarget();
-QString* _ZNK9QFileInfo13symLinkTargetEv(void *that)
-
+// QFileInfo()
+QFileInfo* dector_ZN9QFileInfoC1Ev()
 {
-  QFileInfo *cthat = (QFileInfo *)that;
-  auto recret = cthat->symLinkTarget();
-  return new QString(recret);
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo();
+  return rthis;
 }
 
-  // proto:  bool QFileInfo::isAbsolute();
-bool _ZNK9QFileInfo10isAbsoluteEv(void *that)
-
+// QFileInfo(const class QString &)
+QFileInfo* dector_ZN9QFileInfoC1ERK7QString(const QString & file)
 {
-  QFileInfo *cthat = (QFileInfo *)that;
-  return cthat->isAbsolute();
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo(file);
+  return rthis;
 }
 
-  // proto:  void QFileInfo::swap(QFileInfo & other);
-void _ZN9QFileInfo4swapERS_(void *that, QFileInfo & other)
-
+// QFileInfo(const class QFile &)
+QFileInfo* dector_ZN9QFileInfoC1ERK5QFile(const QFile & file)
 {
-  QFileInfo *cthat = (QFileInfo *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo(file);
+  return rthis;
+}
+
+// QFileInfo(const class QFileInfo &)
+QFileInfo* dector_ZN9QFileInfoC1ERKS_(const QFileInfo & fileinfo)
+{
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo(fileinfo);
+  return rthis;
+}
+
+// QFileInfo(const class QDir &, const class QString &)
+QFileInfo* dector_ZN9QFileInfoC1ERK4QDirRK7QString(const QDir & dir, const QString & file)
+{
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo(dir, file);
+  return rthis;
+}
+
+// ~QFileInfo()
+void dedtor_ZN9QFileInfoD0Ev(QFileInfo* that)
+{
+  QFileInfo* rthis = (QFileInfo*)that;
+  delete rthis;
+}
+
+// QFileInfo(class QFileInfoPrivate *)
+QFileInfo* dector_ZN9QFileInfoC1EP16QFileInfoPrivate(QFileInfoPrivate * d)
+{
+  // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
+  QFileInfo* rthis = new QFileInfo(d);
+  return rthis;
 }
 
 }; // <= extern "C" block end

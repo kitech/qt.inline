@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qregularexpression.h
 // dst-file: /src/core/qregularexpression.cxx
 //
@@ -8,6 +8,83 @@
 #include <qregularexpression.h>
 
 extern "C" {
+
+// QRegularExpressionMatchIterator()
+QRegularExpressionMatchIterator* dector_ZN31QRegularExpressionMatchIteratorC1Ev()
+{
+  // static_assert(sizeof(QRegularExpressionMatchIterator) == 32, "tyszerr");
+  QRegularExpressionMatchIterator* rthis = new QRegularExpressionMatchIterator();
+  return rthis;
+}
+
+// QRegularExpressionMatchIterator(const class QRegularExpressionMatchIterator &)
+QRegularExpressionMatchIterator* dector_ZN31QRegularExpressionMatchIteratorC1ERKS_(const QRegularExpressionMatchIterator & iterator)
+{
+  // static_assert(sizeof(QRegularExpressionMatchIterator) == 32, "tyszerr");
+  QRegularExpressionMatchIterator* rthis = new QRegularExpressionMatchIterator(iterator);
+  return rthis;
+}
+
+// ~QRegularExpressionMatchIterator()
+void dedtor_ZN31QRegularExpressionMatchIteratorD0Ev(QRegularExpressionMatchIterator* that)
+{
+  QRegularExpressionMatchIterator* rthis = (QRegularExpressionMatchIterator*)that;
+  delete rthis;
+}
+
+// ~QRegularExpression()
+void dedtor_ZN18QRegularExpressionD0Ev(QRegularExpression* that)
+{
+  QRegularExpression* rthis = (QRegularExpression*)that;
+  delete rthis;
+}
+
+// QRegularExpression()
+QRegularExpression* dector_ZN18QRegularExpressionC1Ev()
+{
+  // static_assert(sizeof(QRegularExpression) == 32, "tyszerr");
+  QRegularExpression* rthis = new QRegularExpression();
+  return rthis;
+}
+
+// QRegularExpression(const class QString &, PatternOptions)
+QRegularExpression* dector_ZN18QRegularExpressionC1ERK7QString6QFlagsINS_13PatternOptionEE(const QString & pattern, QRegularExpression::PatternOption options)
+{
+  // static_assert(sizeof(QRegularExpression) == 32, "tyszerr");
+  QRegularExpression* rthis = new QRegularExpression(pattern, options);
+  return rthis;
+}
+
+// QRegularExpression(const class QRegularExpression &)
+QRegularExpression* dector_ZN18QRegularExpressionC1ERKS_(const QRegularExpression & re)
+{
+  // static_assert(sizeof(QRegularExpression) == 32, "tyszerr");
+  QRegularExpression* rthis = new QRegularExpression(re);
+  return rthis;
+}
+
+// QRegularExpressionMatch()
+QRegularExpressionMatch* dector_ZN23QRegularExpressionMatchC1Ev()
+{
+  // static_assert(sizeof(QRegularExpressionMatch) == 32, "tyszerr");
+  QRegularExpressionMatch* rthis = new QRegularExpressionMatch();
+  return rthis;
+}
+
+// QRegularExpressionMatch(const class QRegularExpressionMatch &)
+QRegularExpressionMatch* dector_ZN23QRegularExpressionMatchC1ERKS_(const QRegularExpressionMatch & match)
+{
+  // static_assert(sizeof(QRegularExpressionMatch) == 32, "tyszerr");
+  QRegularExpressionMatch* rthis = new QRegularExpressionMatch(match);
+  return rthis;
+}
+
+// ~QRegularExpressionMatch()
+void dedtor_ZN23QRegularExpressionMatchD0Ev(QRegularExpressionMatch* that)
+{
+  QRegularExpressionMatch* rthis = (QRegularExpressionMatch*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

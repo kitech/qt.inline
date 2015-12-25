@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -8,6 +8,67 @@
 #include <qboxlayout.h>
 
 extern "C" {
+
+// QHBoxLayout(class QWidget *)
+QHBoxLayout* dector_ZN11QHBoxLayoutC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QHBoxLayout) == 32, "tyszerr");
+  QHBoxLayout* rthis = new QHBoxLayout(parent);
+  return rthis;
+}
+
+// ~QHBoxLayout()
+void dedtor_ZN11QHBoxLayoutD0Ev(QHBoxLayout* that)
+{
+  QHBoxLayout* rthis = (QHBoxLayout*)that;
+  delete rthis;
+}
+
+// QHBoxLayout()
+QHBoxLayout* dector_ZN11QHBoxLayoutC1Ev()
+{
+  // static_assert(sizeof(QHBoxLayout) == 32, "tyszerr");
+  QHBoxLayout* rthis = new QHBoxLayout();
+  return rthis;
+}
+
+// ~QBoxLayout()
+void dedtor_ZN10QBoxLayoutD0Ev(QBoxLayout* that)
+{
+  QBoxLayout* rthis = (QBoxLayout*)that;
+  delete rthis;
+}
+
+// QBoxLayout(enum QBoxLayout::Direction, class QWidget *)
+QBoxLayout* dector_ZN10QBoxLayoutC1ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg1, QWidget * parent)
+{
+  // static_assert(sizeof(QBoxLayout) == 32, "tyszerr");
+  QBoxLayout* rthis = new QBoxLayout(arg1, parent);
+  return rthis;
+}
+
+// QVBoxLayout()
+QVBoxLayout* dector_ZN11QVBoxLayoutC1Ev()
+{
+  // static_assert(sizeof(QVBoxLayout) == 32, "tyszerr");
+  QVBoxLayout* rthis = new QVBoxLayout();
+  return rthis;
+}
+
+// QVBoxLayout(class QWidget *)
+QVBoxLayout* dector_ZN11QVBoxLayoutC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QVBoxLayout) == 32, "tyszerr");
+  QVBoxLayout* rthis = new QVBoxLayout(parent);
+  return rthis;
+}
+
+// ~QVBoxLayout()
+void dedtor_ZN11QVBoxLayoutD0Ev(QVBoxLayout* that)
+{
+  QVBoxLayout* rthis = (QVBoxLayout*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

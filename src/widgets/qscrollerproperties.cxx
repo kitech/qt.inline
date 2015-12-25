@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qscrollerproperties.h
 // dst-file: /src/widgets/qscrollerproperties.cxx
 //
@@ -8,6 +8,29 @@
 #include <qscrollerproperties.h>
 
 extern "C" {
+
+// QScrollerProperties(const class QScrollerProperties &)
+QScrollerProperties* dector_ZN19QScrollerPropertiesC1ERKS_(const QScrollerProperties & sp)
+{
+  // static_assert(sizeof(QScrollerProperties) == 32, "tyszerr");
+  QScrollerProperties* rthis = new QScrollerProperties(sp);
+  return rthis;
+}
+
+// ~QScrollerProperties()
+void dedtor_ZN19QScrollerPropertiesD0Ev(QScrollerProperties* that)
+{
+  QScrollerProperties* rthis = (QScrollerProperties*)that;
+  delete rthis;
+}
+
+// QScrollerProperties()
+QScrollerProperties* dector_ZN19QScrollerPropertiesC1Ev()
+{
+  // static_assert(sizeof(QScrollerProperties) == 32, "tyszerr");
+  QScrollerProperties* rthis = new QScrollerProperties();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

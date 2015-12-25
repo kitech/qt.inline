@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qtabbar.h
 // dst-file: /src/widgets/qtabbar.cxx
 //
@@ -8,6 +8,21 @@
 #include <qtabbar.h>
 
 extern "C" {
+
+// QTabBar(class QWidget *)
+QTabBar* dector_ZN7QTabBarC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QTabBar) == 32, "tyszerr");
+  QTabBar* rthis = new QTabBar(parent);
+  return rthis;
+}
+
+// ~QTabBar()
+void dedtor_ZN7QTabBarD0Ev(QTabBar* that)
+{
+  QTabBar* rthis = (QTabBar*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

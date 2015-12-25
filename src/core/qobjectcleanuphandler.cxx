@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qobjectcleanuphandler.h
 // dst-file: /src/core/qobjectcleanuphandler.cxx
 //
@@ -8,6 +8,21 @@
 #include <qobjectcleanuphandler.h>
 
 extern "C" {
+
+// ~QObjectCleanupHandler()
+void dedtor_ZN21QObjectCleanupHandlerD0Ev(QObjectCleanupHandler* that)
+{
+  QObjectCleanupHandler* rthis = (QObjectCleanupHandler*)that;
+  delete rthis;
+}
+
+// QObjectCleanupHandler()
+QObjectCleanupHandler* dector_ZN21QObjectCleanupHandlerC1Ev()
+{
+  // static_assert(sizeof(QObjectCleanupHandler) == 32, "tyszerr");
+  QObjectCleanupHandler* rthis = new QObjectCleanupHandler();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

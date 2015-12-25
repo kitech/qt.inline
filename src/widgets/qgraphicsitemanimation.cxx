@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicsitemanimation.h
 // dst-file: /src/widgets/qgraphicsitemanimation.cxx
 //
@@ -8,6 +8,21 @@
 #include <qgraphicsitemanimation.h>
 
 extern "C" {
+
+// QGraphicsItemAnimation(class QObject *)
+QGraphicsItemAnimation* dector_ZN22QGraphicsItemAnimationC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QGraphicsItemAnimation) == 32, "tyszerr");
+  QGraphicsItemAnimation* rthis = new QGraphicsItemAnimation(parent);
+  return rthis;
+}
+
+// ~QGraphicsItemAnimation()
+void dedtor_ZN22QGraphicsItemAnimationD0Ev(QGraphicsItemAnimation* that)
+{
+  QGraphicsItemAnimation* rthis = (QGraphicsItemAnimation*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

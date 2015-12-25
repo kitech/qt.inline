@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qerrormessage.h
 // dst-file: /src/widgets/qerrormessage.cxx
 //
@@ -8,6 +8,21 @@
 #include <qerrormessage.h>
 
 extern "C" {
+
+// QErrorMessage(class QWidget *)
+QErrorMessage* dector_ZN13QErrorMessageC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QErrorMessage) == 32, "tyszerr");
+  QErrorMessage* rthis = new QErrorMessage(parent);
+  return rthis;
+}
+
+// ~QErrorMessage()
+void dedtor_ZN13QErrorMessageD0Ev(QErrorMessage* that)
+{
+  QErrorMessage* rthis = (QErrorMessage*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

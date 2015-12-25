@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qlineedit.h
 // dst-file: /src/widgets/qlineedit.cxx
 //
@@ -8,6 +8,29 @@
 #include <qlineedit.h>
 
 extern "C" {
+
+// QLineEdit(const class QString &, class QWidget *)
+QLineEdit* dector_ZN9QLineEditC1ERK7QStringP7QWidget(const QString & arg1, QWidget * parent)
+{
+  // static_assert(sizeof(QLineEdit) == 32, "tyszerr");
+  QLineEdit* rthis = new QLineEdit(arg1, parent);
+  return rthis;
+}
+
+// ~QLineEdit()
+void dedtor_ZN9QLineEditD0Ev(QLineEdit* that)
+{
+  QLineEdit* rthis = (QLineEdit*)that;
+  delete rthis;
+}
+
+// QLineEdit(class QWidget *)
+QLineEdit* dector_ZN9QLineEditC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QLineEdit) == 32, "tyszerr");
+  QLineEdit* rthis = new QLineEdit(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

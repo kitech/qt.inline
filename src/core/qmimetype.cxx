@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qmimetype.h
 // dst-file: /src/core/qmimetype.cxx
 //
@@ -8,6 +8,37 @@
 #include <qmimetype.h>
 
 extern "C" {
+
+// ~QMimeType()
+void dedtor_ZN9QMimeTypeD0Ev(QMimeType* that)
+{
+  QMimeType* rthis = (QMimeType*)that;
+  delete rthis;
+}
+
+// QMimeType(const class QMimeTypePrivate &)
+QMimeType* dector_ZN9QMimeTypeC1ERK16QMimeTypePrivate(const QMimeTypePrivate & dd)
+{
+  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
+  QMimeType* rthis = new QMimeType(dd);
+  return rthis;
+}
+
+// QMimeType(const class QMimeType &)
+QMimeType* dector_ZN9QMimeTypeC1ERKS_(const QMimeType & other)
+{
+  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
+  QMimeType* rthis = new QMimeType(other);
+  return rthis;
+}
+
+// QMimeType()
+QMimeType* dector_ZN9QMimeTypeC1Ev()
+{
+  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
+  QMimeType* rthis = new QMimeType();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

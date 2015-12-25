@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qthread.h
 // dst-file: /src/core/qthread.cxx
 //
@@ -8,6 +8,21 @@
 #include <qthread.h>
 
 extern "C" {
+
+// QThread(class QObject *)
+QThread* dector_ZN7QThreadC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QThread) == 32, "tyszerr");
+  QThread* rthis = new QThread(parent);
+  return rthis;
+}
+
+// ~QThread()
+void dedtor_ZN7QThreadD0Ev(QThread* that)
+{
+  QThread* rthis = (QThread*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

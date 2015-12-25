@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qtableview.h
 // dst-file: /src/widgets/qtableview.cxx
 //
@@ -8,6 +8,21 @@
 #include <qtableview.h>
 
 extern "C" {
+
+// ~QTableView()
+void dedtor_ZN10QTableViewD0Ev(QTableView* that)
+{
+  QTableView* rthis = (QTableView*)that;
+  delete rthis;
+}
+
+// QTableView(class QWidget *)
+QTableView* dector_ZN10QTableViewC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QTableView) == 32, "tyszerr");
+  QTableView* rthis = new QTableView(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qtreeview.h
 // dst-file: /src/widgets/qtreeview.cxx
 //
@@ -8,6 +8,21 @@
 #include <qtreeview.h>
 
 extern "C" {
+
+// QTreeView(class QWidget *)
+QTreeView* dector_ZN9QTreeViewC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QTreeView) == 32, "tyszerr");
+  QTreeView* rthis = new QTreeView(parent);
+  return rthis;
+}
+
+// ~QTreeView()
+void dedtor_ZN9QTreeViewD0Ev(QTreeView* that)
+{
+  QTreeView* rthis = (QTreeView*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

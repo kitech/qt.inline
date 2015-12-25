@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qstringlistmodel.h
 // dst-file: /src/core/qstringlistmodel.cxx
 //
@@ -8,6 +8,22 @@
 #include <qstringlistmodel.h>
 
 extern "C" {
+
+// QStringListModel(const class QStringList &, class QObject *)
+QStringListModel* dector_ZN16QStringListModelC1ERK11QStringListP7QObject(const QStringList & strings, QObject * parent)
+{
+  // static_assert(sizeof(QStringListModel) == 32, "tyszerr");
+  QStringListModel* rthis = new QStringListModel(strings, parent);
+  return rthis;
+}
+
+// QStringListModel(class QObject *)
+QStringListModel* dector_ZN16QStringListModelC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QStringListModel) == 32, "tyszerr");
+  QStringListModel* rthis = new QStringListModel(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

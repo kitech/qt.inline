@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qsocketnotifier.h
 // dst-file: /src/core/qsocketnotifier.cxx
 //
@@ -8,6 +8,21 @@
 #include <qsocketnotifier.h>
 
 extern "C" {
+
+// QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
+QSocketNotifier* dector_ZN15QSocketNotifierC1EiNS_4TypeEP7QObject(qptrdiff socket, QSocketNotifier::Type arg2, QObject * parent)
+{
+  // static_assert(sizeof(QSocketNotifier) == 32, "tyszerr");
+  QSocketNotifier* rthis = new QSocketNotifier(socket, arg2, parent);
+  return rthis;
+}
+
+// ~QSocketNotifier()
+void dedtor_ZN15QSocketNotifierD0Ev(QSocketNotifier* that)
+{
+  QSocketNotifier* rthis = (QSocketNotifier*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

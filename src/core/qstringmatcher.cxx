@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qstringmatcher.h
 // dst-file: /src/core/qstringmatcher.cxx
 //
@@ -8,6 +8,45 @@
 #include <qstringmatcher.h>
 
 extern "C" {
+
+// QStringMatcher()
+QStringMatcher* dector_ZN14QStringMatcherC1Ev()
+{
+  // static_assert(sizeof(QStringMatcher) == 1048, "tyszerr");
+  QStringMatcher* rthis = new QStringMatcher();
+  return rthis;
+}
+
+// QStringMatcher(const class QStringMatcher &)
+QStringMatcher* dector_ZN14QStringMatcherC1ERKS_(const QStringMatcher & other)
+{
+  // static_assert(sizeof(QStringMatcher) == 1048, "tyszerr");
+  QStringMatcher* rthis = new QStringMatcher(other);
+  return rthis;
+}
+
+// QStringMatcher(const class QString &, Qt::CaseSensitivity)
+QStringMatcher* dector_ZN14QStringMatcherC1ERK7QStringN2Qt15CaseSensitivityE(const QString & pattern, Qt::CaseSensitivity cs)
+{
+  // static_assert(sizeof(QStringMatcher) == 1048, "tyszerr");
+  QStringMatcher* rthis = new QStringMatcher(pattern, cs);
+  return rthis;
+}
+
+// ~QStringMatcher()
+void dedtor_ZN14QStringMatcherD0Ev(QStringMatcher* that)
+{
+  QStringMatcher* rthis = (QStringMatcher*)that;
+  delete rthis;
+}
+
+// QStringMatcher(const class QChar *, int, Qt::CaseSensitivity)
+QStringMatcher* dector_ZN14QStringMatcherC1EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, int len, Qt::CaseSensitivity cs)
+{
+  // static_assert(sizeof(QStringMatcher) == 1048, "tyszerr");
+  QStringMatcher* rthis = new QStringMatcher(uc, len, cs);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

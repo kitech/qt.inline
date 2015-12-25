@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qshareddata.h
 // dst-file: /src/core/qshareddata.cxx
 //
@@ -8,22 +8,6 @@
 #include <qshareddata.h>
 
 extern "C" {
-
-  // proto:  void QSharedData::QSharedData();
-void _ZN11QSharedDataC1Ev(void *that)
-
-{
-  QSharedData *cthat = (QSharedData *)that;
-  auto _o = new(that) QSharedData();
-}
-
-  // proto:  void QSharedData::QSharedData(const QSharedData & );
-void _ZN11QSharedDataC1ERKS_(void *that, const QSharedData & arg1)
-
-{
-  QSharedData *cthat = (QSharedData *)that;
-  auto _o = new(that) QSharedData(arg1);
-}
 
 }; // <= extern "C" block end
 

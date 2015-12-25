@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -9,81 +9,37 @@
 
 extern "C" {
 
-  // proto:  void QTextFragment::QTextFragment(const QTextFragment & o);
-void _ZN13QTextFragmentC1ERKS_(void *that, const QTextFragment & o)
-
+// ~QTextBlockUserData()
+void dedtor_ZN18QTextBlockUserDataD0Ev(QTextBlockUserData* that)
 {
-  QTextFragment *cthat = (QTextFragment *)that;
-  auto _o = new(that) QTextFragment(o);
+  QTextBlockUserData* rthis = (QTextBlockUserData*)that;
+  delete rthis;
 }
 
-  // proto:  void QTextFragment::QTextFragment();
-void _ZN13QTextFragmentC1Ev(void *that)
-
+// ~QTextFrameLayoutData()
+void dedtor_ZN20QTextFrameLayoutDataD0Ev(QTextFrameLayoutData* that)
 {
-  QTextFragment *cthat = (QTextFragment *)that;
-  auto _o = new(that) QTextFragment();
+  QTextFrameLayoutData* rthis = (QTextFrameLayoutData*)that;
+  delete rthis;
 }
 
-  // proto:  bool QTextFragment::isValid();
-bool _ZNK13QTextFragment7isValidEv(void *that)
-
+// QTextFrame(class QTextDocument *)
+QTextFrame* dector_ZN10QTextFrameC1EP13QTextDocument(QTextDocument * doc)
 {
-  QTextFragment *cthat = (QTextFragment *)that;
-  return cthat->isValid();
+  // static_assert(sizeof(QTextFrame) == 32, "tyszerr");
+  QTextFrame* rthis = new QTextFrame(doc);
+  return rthis;
 }
 
-  // proto:  void QTextFragment::QTextFragment(const QTextDocumentPrivate * priv, int f, int fe);
-void _ZN13QTextFragmentC1EPK20QTextDocumentPrivateii(void *that, const QTextDocumentPrivate * priv, int f, int fe)
-
+// ~QTextFrame()
+void dedtor_ZN10QTextFrameD0Ev(QTextFrame* that)
 {
-  QTextFragment *cthat = (QTextFragment *)that;
-  auto _o = new(that) QTextFragment(priv, f, fe);
-}
-
-  // proto:  void QTextBlock::QTextBlock(const QTextBlock & o);
-void _ZN10QTextBlockC1ERKS_(void *that, const QTextBlock & o)
-
-{
-  QTextBlock *cthat = (QTextBlock *)that;
-  auto _o = new(that) QTextBlock(o);
-}
-
-  // proto:  QTextDocumentPrivate * QTextBlock::docHandle();
-QTextDocumentPrivate * _ZNK10QTextBlock9docHandleEv(void *that)
-
-{
-  QTextBlock *cthat = (QTextBlock *)that;
-  return cthat->docHandle();
-}
-
-  // proto:  void QTextBlock::QTextBlock(QTextDocumentPrivate * priv, int b);
-void _ZN10QTextBlockC1EP20QTextDocumentPrivatei(void *that, QTextDocumentPrivate * priv, int b)
-
-{
-  QTextBlock *cthat = (QTextBlock *)that;
-  auto _o = new(that) QTextBlock(priv, b);
-}
-
-  // proto:  int QTextBlock::fragmentIndex();
-int _ZNK10QTextBlock13fragmentIndexEv(void *that)
-
-{
-  QTextBlock *cthat = (QTextBlock *)that;
-  return cthat->fragmentIndex();
-}
-
-  // proto:  void QTextBlock::QTextBlock();
-void _ZN10QTextBlockC1Ev(void *that)
-
-{
-  QTextBlock *cthat = (QTextBlock *)that;
-  auto _o = new(that) QTextBlock();
+  QTextFrame* rthis = (QTextFrame*)that;
+  delete rthis;
 }
 
   // proto:  void QTextFrame::setFrameFormat(const QTextFrameFormat & format);
 void _ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *that, const QTextFrameFormat & format)
-
 {
   QTextFrame *cthat = (QTextFrame *)that;
    cthat->setFrameFormat(format);

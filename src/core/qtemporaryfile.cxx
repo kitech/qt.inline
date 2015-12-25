@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qtemporaryfile.h
 // dst-file: /src/core/qtemporaryfile.cxx
 //
@@ -9,28 +9,43 @@
 
 extern "C" {
 
-  // proto: static QTemporaryFile * QTemporaryFile::createLocalFile(QFile & file);
-QTemporaryFile * _ZN14QTemporaryFile15createLocalFileER5QFile(void *that, QFile & file)
-
+// ~QTemporaryFile()
+void dedtor_ZN14QTemporaryFileD0Ev(QTemporaryFile* that)
 {
-  QTemporaryFile *cthat = (QTemporaryFile *)that;
-  return cthat->createLocalFile(file);
+  QTemporaryFile* rthis = (QTemporaryFile*)that;
+  delete rthis;
 }
 
-  // proto: static QTemporaryFile * QTemporaryFile::createNativeFile(const QString & fileName);
-QTemporaryFile * _ZN14QTemporaryFile16createNativeFileERK7QString(void *that, const QString & fileName)
-
+// QTemporaryFile(const class QString &)
+QTemporaryFile* dector_ZN14QTemporaryFileC1ERK7QString(const QString & templateName)
 {
-  QTemporaryFile *cthat = (QTemporaryFile *)that;
-  return cthat->createNativeFile(fileName);
+  // static_assert(sizeof(QTemporaryFile) == 32, "tyszerr");
+  QTemporaryFile* rthis = new QTemporaryFile(templateName);
+  return rthis;
 }
 
-  // proto: static QTemporaryFile * QTemporaryFile::createLocalFile(const QString & fileName);
-QTemporaryFile * _ZN14QTemporaryFile15createLocalFileERK7QString(void *that, const QString & fileName)
-
+// QTemporaryFile(class QObject *)
+QTemporaryFile* dector_ZN14QTemporaryFileC1EP7QObject(QObject * parent)
 {
-  QTemporaryFile *cthat = (QTemporaryFile *)that;
-  return cthat->createLocalFile(fileName);
+  // static_assert(sizeof(QTemporaryFile) == 32, "tyszerr");
+  QTemporaryFile* rthis = new QTemporaryFile(parent);
+  return rthis;
+}
+
+// QTemporaryFile()
+QTemporaryFile* dector_ZN14QTemporaryFileC1Ev()
+{
+  // static_assert(sizeof(QTemporaryFile) == 32, "tyszerr");
+  QTemporaryFile* rthis = new QTemporaryFile();
+  return rthis;
+}
+
+// QTemporaryFile(const class QString &, class QObject *)
+QTemporaryFile* dector_ZN14QTemporaryFileC1ERK7QStringP7QObject(const QString & templateName, QObject * parent)
+{
+  // static_assert(sizeof(QTemporaryFile) == 32, "tyszerr");
+  QTemporaryFile* rthis = new QTemporaryFile(templateName, parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

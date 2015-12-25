@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
@@ -9,9 +9,31 @@
 
 extern "C" {
 
+// ~QBuffer()
+void dedtor_ZN7QBufferD0Ev(QBuffer* that)
+{
+  QBuffer* rthis = (QBuffer*)that;
+  delete rthis;
+}
+
+// QBuffer(class QObject *)
+QBuffer* dector_ZN7QBufferC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QBuffer) == 32, "tyszerr");
+  QBuffer* rthis = new QBuffer(parent);
+  return rthis;
+}
+
+// QBuffer(class QByteArray *, class QObject *)
+QBuffer* dector_ZN7QBufferC1EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent)
+{
+  // static_assert(sizeof(QBuffer) == 32, "tyszerr");
+  QBuffer* rthis = new QBuffer(buf, parent);
+  return rthis;
+}
+
   // proto:  void QBuffer::setData(const char * data, int len);
 void _ZN7QBuffer7setDataEPKci(void *that, const char * data, int len)
-
 {
   QBuffer *cthat = (QBuffer *)that;
    cthat->setData(data, len);

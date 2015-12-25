@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qcommandlinkbutton.h
 // dst-file: /src/widgets/qcommandlinkbutton.cxx
 //
@@ -8,6 +8,37 @@
 #include <qcommandlinkbutton.h>
 
 extern "C" {
+
+// QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
+QCommandLinkButton* dector_ZN18QCommandLinkButtonC1ERK7QStringS2_P7QWidget(const QString & text, const QString & description, QWidget * parent)
+{
+  // static_assert(sizeof(QCommandLinkButton) == 32, "tyszerr");
+  QCommandLinkButton* rthis = new QCommandLinkButton(text, description, parent);
+  return rthis;
+}
+
+// ~QCommandLinkButton()
+void dedtor_ZN18QCommandLinkButtonD0Ev(QCommandLinkButton* that)
+{
+  QCommandLinkButton* rthis = (QCommandLinkButton*)that;
+  delete rthis;
+}
+
+// QCommandLinkButton(class QWidget *)
+QCommandLinkButton* dector_ZN18QCommandLinkButtonC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QCommandLinkButton) == 32, "tyszerr");
+  QCommandLinkButton* rthis = new QCommandLinkButton(parent);
+  return rthis;
+}
+
+// QCommandLinkButton(const class QString &, class QWidget *)
+QCommandLinkButton* dector_ZN18QCommandLinkButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
+{
+  // static_assert(sizeof(QCommandLinkButton) == 32, "tyszerr");
+  QCommandLinkButton* rthis = new QCommandLinkButton(text, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

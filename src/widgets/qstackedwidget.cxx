@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qstackedwidget.h
 // dst-file: /src/widgets/qstackedwidget.cxx
 //
@@ -8,6 +8,21 @@
 #include <qstackedwidget.h>
 
 extern "C" {
+
+// ~QStackedWidget()
+void dedtor_ZN14QStackedWidgetD0Ev(QStackedWidget* that)
+{
+  QStackedWidget* rthis = (QStackedWidget*)that;
+  delete rthis;
+}
+
+// QStackedWidget(class QWidget *)
+QStackedWidget* dector_ZN14QStackedWidgetC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QStackedWidget) == 32, "tyszerr");
+  QStackedWidget* rthis = new QStackedWidget(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

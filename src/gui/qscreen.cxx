@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qscreen.h
 // dst-file: /src/gui/qscreen.cxx
 //
@@ -8,6 +8,13 @@
 #include <qscreen.h>
 
 extern "C" {
+
+// ~QScreen()
+void dedtor_ZN7QScreenD0Ev(QScreen* that)
+{
+  QScreen* rthis = (QScreen*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

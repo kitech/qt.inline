@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qproxystyle.h
 // dst-file: /src/widgets/qproxystyle.cxx
 //
@@ -8,6 +8,29 @@
 #include <qproxystyle.h>
 
 extern "C" {
+
+// QProxyStyle(const class QString &)
+QProxyStyle* dector_ZN11QProxyStyleC1ERK7QString(const QString & key)
+{
+  // static_assert(sizeof(QProxyStyle) == 32, "tyszerr");
+  QProxyStyle* rthis = new QProxyStyle(key);
+  return rthis;
+}
+
+// ~QProxyStyle()
+void dedtor_ZN11QProxyStyleD0Ev(QProxyStyle* that)
+{
+  QProxyStyle* rthis = (QProxyStyle*)that;
+  delete rthis;
+}
+
+// QProxyStyle(class QStyle *)
+QProxyStyle* dector_ZN11QProxyStyleC1EP6QStyle(QStyle * style)
+{
+  // static_assert(sizeof(QProxyStyle) == 32, "tyszerr");
+  QProxyStyle* rthis = new QProxyStyle(style);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

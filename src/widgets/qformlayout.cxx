@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qformlayout.h
 // dst-file: /src/widgets/qformlayout.cxx
 //
@@ -8,6 +8,21 @@
 #include <qformlayout.h>
 
 extern "C" {
+
+// QFormLayout(class QWidget *)
+QFormLayout* dector_ZN11QFormLayoutC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QFormLayout) == 32, "tyszerr");
+  QFormLayout* rthis = new QFormLayout(parent);
+  return rthis;
+}
+
+// ~QFormLayout()
+void dedtor_ZN11QFormLayoutD0Ev(QFormLayout* that)
+{
+  QFormLayout* rthis = (QFormLayout*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

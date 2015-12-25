@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -9,52 +9,43 @@
 
 extern "C" {
 
-  // proto:  qreal QTextLine::cursorToX(int cursorPos, QTextLine::Edge edge);
-qreal _ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextLine::Edge edge)
-
+// QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
+QTextLayout* dector_ZN11QTextLayoutC1ERK7QStringRK5QFontP12QPaintDevice(const QString & text, const QFont & font, QPaintDevice * paintdevice)
 {
-  QTextLine *cthat = (QTextLine *)that;
-  return cthat->cursorToX(cursorPos, edge);
+  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
+  QTextLayout* rthis = new QTextLayout(text, font, paintdevice);
+  return rthis;
 }
 
-  // proto:  void QTextLine::QTextLine();
-void _ZN9QTextLineC1Ev(void *that)
-
+// ~QTextLayout()
+void dedtor_ZN11QTextLayoutD0Ev(QTextLayout* that)
 {
-  QTextLine *cthat = (QTextLine *)that;
-  auto _o = new(that) QTextLine();
+  QTextLayout* rthis = (QTextLayout*)that;
+  delete rthis;
 }
 
-  // proto:  bool QTextLine::isValid();
-bool _ZNK9QTextLine7isValidEv(void *that)
-
+// QTextLayout(const class QTextBlock &)
+QTextLayout* dector_ZN11QTextLayoutC1ERK10QTextBlock(const QTextBlock & b)
 {
-  QTextLine *cthat = (QTextLine *)that;
-  return cthat->isValid();
+  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
+  QTextLayout* rthis = new QTextLayout(b);
+  return rthis;
 }
 
-  // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
-void _ZN17QTextInlineObjectC1EiP11QTextEngine(void *that, int i, QTextEngine * e)
-
+// QTextLayout(const class QString &)
+QTextLayout* dector_ZN11QTextLayoutC1ERK7QString(const QString & text)
 {
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  auto _o = new(that) QTextInlineObject(i, e);
+  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
+  QTextLayout* rthis = new QTextLayout(text);
+  return rthis;
 }
 
-  // proto:  bool QTextInlineObject::isValid();
-bool _ZNK17QTextInlineObject7isValidEv(void *that)
-
+// QTextLayout()
+QTextLayout* dector_ZN11QTextLayoutC1Ev()
 {
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextInlineObject::QTextInlineObject();
-void _ZN17QTextInlineObjectC1Ev(void *that)
-
-{
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  auto _o = new(that) QTextInlineObject();
+  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
+  QTextLayout* rthis = new QTextLayout();
+  return rthis;
 }
 
 }; // <= extern "C" block end

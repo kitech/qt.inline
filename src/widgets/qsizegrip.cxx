@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qsizegrip.h
 // dst-file: /src/widgets/qsizegrip.cxx
 //
@@ -8,6 +8,21 @@
 #include <qsizegrip.h>
 
 extern "C" {
+
+// ~QSizeGrip()
+void dedtor_ZN9QSizeGripD0Ev(QSizeGrip* that)
+{
+  QSizeGrip* rthis = (QSizeGrip*)that;
+  delete rthis;
+}
+
+// QSizeGrip(class QWidget *)
+QSizeGrip* dector_ZN9QSizeGripC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QSizeGrip) == 32, "tyszerr");
+  QSizeGrip* rthis = new QSizeGrip(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

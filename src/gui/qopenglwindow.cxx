@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qopenglwindow.h
 // dst-file: /src/gui/qopenglwindow.cxx
 //
@@ -8,6 +8,29 @@
 #include <qopenglwindow.h>
 
 extern "C" {
+
+// QOpenGLWindow(enum QOpenGLWindow::UpdateBehavior, class QWindow *)
+QOpenGLWindow* dector_ZN13QOpenGLWindowC1ENS_14UpdateBehaviorEP7QWindow(QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)
+{
+  // static_assert(sizeof(QOpenGLWindow) == 32, "tyszerr");
+  QOpenGLWindow* rthis = new QOpenGLWindow(updateBehavior, parent);
+  return rthis;
+}
+
+// QOpenGLWindow(class QOpenGLContext *, enum QOpenGLWindow::UpdateBehavior, class QWindow *)
+QOpenGLWindow* dector_ZN13QOpenGLWindowC1EP14QOpenGLContextNS_14UpdateBehaviorEP7QWindow(QOpenGLContext * shareContext, QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)
+{
+  // static_assert(sizeof(QOpenGLWindow) == 32, "tyszerr");
+  QOpenGLWindow* rthis = new QOpenGLWindow(shareContext, updateBehavior, parent);
+  return rthis;
+}
+
+// ~QOpenGLWindow()
+void dedtor_ZN13QOpenGLWindowD0Ev(QOpenGLWindow* that)
+{
+  QOpenGLWindow* rthis = (QOpenGLWindow*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

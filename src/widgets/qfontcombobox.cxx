@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qfontcombobox.h
 // dst-file: /src/widgets/qfontcombobox.cxx
 //
@@ -8,6 +8,21 @@
 #include <qfontcombobox.h>
 
 extern "C" {
+
+// ~QFontComboBox()
+void dedtor_ZN13QFontComboBoxD0Ev(QFontComboBox* that)
+{
+  QFontComboBox* rthis = (QFontComboBox*)that;
+  delete rthis;
+}
+
+// QFontComboBox(class QWidget *)
+QFontComboBox* dector_ZN13QFontComboBoxC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QFontComboBox) == 32, "tyszerr");
+  QFontComboBox* rthis = new QFontComboBox(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

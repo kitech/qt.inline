@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qcalendarwidget.h
 // dst-file: /src/widgets/qcalendarwidget.cxx
 //
@@ -8,6 +8,21 @@
 #include <qcalendarwidget.h>
 
 extern "C" {
+
+// ~QCalendarWidget()
+void dedtor_ZN15QCalendarWidgetD0Ev(QCalendarWidget* that)
+{
+  QCalendarWidget* rthis = (QCalendarWidget*)that;
+  delete rthis;
+}
+
+// QCalendarWidget(class QWidget *)
+QCalendarWidget* dector_ZN15QCalendarWidgetC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QCalendarWidget) == 32, "tyszerr");
+  QCalendarWidget* rthis = new QCalendarWidget(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

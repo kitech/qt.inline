@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -9,20 +9,35 @@
 
 extern "C" {
 
-  // proto:  void QUrl::swap(QUrl & other);
-void _ZN4QUrl4swapERS_(void *that, QUrl & other)
-
+// ~QUrl()
+void dedtor_ZN4QUrlD0Ev(QUrl* that)
 {
-  QUrl *cthat = (QUrl *)that;
-   cthat->swap(other);
+  QUrl* rthis = (QUrl*)that;
+  delete rthis;
 }
 
-  // proto:  void QUrl::QUrl(QUrl && other);
-void _ZN4QUrlC1EOS_(void *that, QUrl && other)
-
+// QUrl(const class QUrl &)
+QUrl* dector_ZN4QUrlC1ERKS_(const QUrl & copy)
 {
-  QUrl *cthat = (QUrl *)that;
-  auto _o = new(that) QUrl(other);
+  // static_assert(sizeof(QUrl) == 32, "tyszerr");
+  QUrl* rthis = new QUrl(copy);
+  return rthis;
+}
+
+// QUrl()
+QUrl* dector_ZN4QUrlC1Ev()
+{
+  // static_assert(sizeof(QUrl) == 32, "tyszerr");
+  QUrl* rthis = new QUrl();
+  return rthis;
+}
+
+// QUrl(const class QString &, enum QUrl::ParsingMode)
+QUrl* dector_ZN4QUrlC1ERK7QStringNS_11ParsingModeE(const QString & url, QUrl::ParsingMode mode)
+{
+  // static_assert(sizeof(QUrl) == 32, "tyszerr");
+  QUrl* rthis = new QUrl(url, mode);
+  return rthis;
 }
 
 }; // <= extern "C" block end

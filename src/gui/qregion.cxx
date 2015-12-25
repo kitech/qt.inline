@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qregion.h
 // dst-file: /src/gui/qregion.cxx
 //
@@ -9,29 +9,59 @@
 
 extern "C" {
 
-  // proto:  QRegion QRegion::translated(const QPoint & p);
-QRegion* _ZNK7QRegion10translatedERK6QPoint(void *that, const QPoint & p)
-
+// QRegion(const class QRegion &)
+QRegion* dector_ZN7QRegionC1ERKS_(const QRegion & region)
 {
-  QRegion *cthat = (QRegion *)that;
-  auto recret = cthat->translated(p);
-  return new QRegion(recret);
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion(region);
+  return rthis;
 }
 
-  // proto:  void QRegion::swap(QRegion & other);
-void _ZN7QRegion4swapERS_(void *that, QRegion & other)
-
+// QRegion(const class QBitmap &)
+QRegion* dector_ZN7QRegionC1ERK7QBitmap(const QBitmap & bitmap)
 {
-  QRegion *cthat = (QRegion *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion(bitmap);
+  return rthis;
 }
 
-  // proto:  void QRegion::translate(const QPoint & p);
-void _ZN7QRegion9translateERK6QPoint(void *that, const QPoint & p)
-
+// ~QRegion()
+void dedtor_ZN7QRegionD0Ev(QRegion* that)
 {
-  QRegion *cthat = (QRegion *)that;
-   cthat->translate(p);
+  QRegion* rthis = (QRegion*)that;
+  delete rthis;
+}
+
+// QRegion(const class QPolygon &, Qt::FillRule)
+QRegion* dector_ZN7QRegionC1ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule)
+{
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion(pa, fillRule);
+  return rthis;
+}
+
+// QRegion()
+QRegion* dector_ZN7QRegionC1Ev()
+{
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion();
+  return rthis;
+}
+
+// QRegion(const class QRect &, enum QRegion::RegionType)
+QRegion* dector_ZN7QRegionC1ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t)
+{
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion(r, t);
+  return rthis;
+}
+
+// QRegion(int, int, int, int, enum QRegion::RegionType)
+QRegion* dector_ZN7QRegionC1EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::RegionType t)
+{
+  // static_assert(sizeof(QRegion) == 32, "tyszerr");
+  QRegion* rthis = new QRegion(x, y, w, h, t);
+  return rthis;
 }
 
 }; // <= extern "C" block end

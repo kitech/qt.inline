@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qopenglbuffer.h
 // dst-file: /src/gui/qopenglbuffer.cxx
 //
@@ -9,12 +9,35 @@
 
 extern "C" {
 
-  // proto:  void QOpenGLBuffer::allocate(int count);
-void _ZN13QOpenGLBuffer8allocateEi(void *that, int count)
-
+// QOpenGLBuffer(const class QOpenGLBuffer &)
+QOpenGLBuffer* dector_ZN13QOpenGLBufferC1ERKS_(const QOpenGLBuffer & other)
 {
-  QOpenGLBuffer *cthat = (QOpenGLBuffer *)that;
-   cthat->allocate(count);
+  // static_assert(sizeof(QOpenGLBuffer) == 32, "tyszerr");
+  QOpenGLBuffer* rthis = new QOpenGLBuffer(other);
+  return rthis;
+}
+
+// QOpenGLBuffer()
+QOpenGLBuffer* dector_ZN13QOpenGLBufferC1Ev()
+{
+  // static_assert(sizeof(QOpenGLBuffer) == 32, "tyszerr");
+  QOpenGLBuffer* rthis = new QOpenGLBuffer();
+  return rthis;
+}
+
+// ~QOpenGLBuffer()
+void dedtor_ZN13QOpenGLBufferD0Ev(QOpenGLBuffer* that)
+{
+  QOpenGLBuffer* rthis = (QOpenGLBuffer*)that;
+  delete rthis;
+}
+
+// QOpenGLBuffer(class QOpenGLBuffer::Type)
+QOpenGLBuffer* dector_ZN13QOpenGLBufferC1ENS_4TypeE(QOpenGLBuffer::Type type)
+{
+  // static_assert(sizeof(QOpenGLBuffer) == 32, "tyszerr");
+  QOpenGLBuffer* rthis = new QOpenGLBuffer(type);
+  return rthis;
 }
 
 }; // <= extern "C" block end

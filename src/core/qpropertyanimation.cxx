@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qpropertyanimation.h
 // dst-file: /src/core/qpropertyanimation.cxx
 //
@@ -8,6 +8,29 @@
 #include <qpropertyanimation.h>
 
 extern "C" {
+
+// QPropertyAnimation(class QObject *)
+QPropertyAnimation* dector_ZN18QPropertyAnimationC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QPropertyAnimation) == 32, "tyszerr");
+  QPropertyAnimation* rthis = new QPropertyAnimation(parent);
+  return rthis;
+}
+
+// ~QPropertyAnimation()
+void dedtor_ZN18QPropertyAnimationD0Ev(QPropertyAnimation* that)
+{
+  QPropertyAnimation* rthis = (QPropertyAnimation*)that;
+  delete rthis;
+}
+
+// QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
+QPropertyAnimation* dector_ZN18QPropertyAnimationC1EP7QObjectRK10QByteArrayS1_(QObject * target, const QByteArray & propertyName, QObject * parent)
+{
+  // static_assert(sizeof(QPropertyAnimation) == 32, "tyszerr");
+  QPropertyAnimation* rthis = new QPropertyAnimation(target, propertyName, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

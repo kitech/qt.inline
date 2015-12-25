@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qevent.h
 // dst-file: /src/gui/qevent.cxx
 //
@@ -9,880 +9,665 @@
 
 extern "C" {
 
-  // proto:  QString QWhatsThisClickedEvent::href();
-QString* _ZNK22QWhatsThisClickedEvent4hrefEv(void *that)
-
-{
-  QWhatsThisClickedEvent *cthat = (QWhatsThisClickedEvent *)that;
-  auto recret = cthat->href();
-  return new QString(recret);
-}
-
-  // proto:  const QRegion & QExposeEvent::region();
-const QRegion * _ZNK12QExposeEvent6regionEv(void *that)
-
-{
-  QExposeEvent *cthat = (QExposeEvent *)that;
-  return &cthat->region();
-}
-
-  // proto:  const QString & QInputMethodEvent::preeditString();
-const QString * _ZNK17QInputMethodEvent13preeditStringEv(void *that)
-
-{
-  QInputMethodEvent *cthat = (QInputMethodEvent *)that;
-  return &cthat->preeditString();
-}
-
-  // proto:  int QInputMethodEvent::replacementStart();
-int _ZNK17QInputMethodEvent16replacementStartEv(void *that)
-
-{
-  QInputMethodEvent *cthat = (QInputMethodEvent *)that;
-  return cthat->replacementStart();
-}
-
-  // proto:  const QString & QInputMethodEvent::commitString();
-const QString * _ZNK17QInputMethodEvent12commitStringEv(void *that)
-
-{
-  QInputMethodEvent *cthat = (QInputMethodEvent *)that;
-  return &cthat->commitString();
-}
-
-  // proto:  int QInputMethodEvent::replacementLength();
-int _ZNK17QInputMethodEvent17replacementLengthEv(void *that)
-
-{
-  QInputMethodEvent *cthat = (QInputMethodEvent *)that;
-  return cthat->replacementLength();
-}
-
-  // proto:  const QPoint & QHelpEvent::globalPos();
-const QPoint * _ZNK10QHelpEvent9globalPosEv(void *that)
-
-{
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return &cthat->globalPos();
-}
-
-  // proto:  int QHelpEvent::globalX();
-int _ZNK10QHelpEvent7globalXEv(void *that)
-
-{
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return cthat->globalX();
-}
-
-  // proto:  const QPoint & QHelpEvent::pos();
-const QPoint * _ZNK10QHelpEvent3posEv(void *that)
-
-{
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return &cthat->pos();
-}
-
-  // proto:  int QHelpEvent::y();
-int _ZNK10QHelpEvent1yEv(void *that)
-
-{
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return cthat->y();
-}
-
-  // proto:  int QHelpEvent::globalY();
-int _ZNK10QHelpEvent7globalYEv(void *that)
-
+// ~QWhatsThisClickedEvent()
+void dedtor_ZN22QWhatsThisClickedEventD0Ev(QWhatsThisClickedEvent* that)
 {
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return cthat->globalY();
+  QWhatsThisClickedEvent* rthis = (QWhatsThisClickedEvent*)that;
+  delete rthis;
 }
 
-  // proto:  int QHelpEvent::x();
-int _ZNK10QHelpEvent1xEv(void *that)
-
-{
-  QHelpEvent *cthat = (QHelpEvent *)that;
-  return cthat->x();
-}
-
-  // proto:  QAction * QActionEvent::before();
-QAction * _ZNK12QActionEvent6beforeEv(void *that)
-
-{
-  QActionEvent *cthat = (QActionEvent *)that;
-  return cthat->before();
-}
-
-  // proto:  QAction * QActionEvent::action();
-QAction * _ZNK12QActionEvent6actionEv(void *that)
-
-{
-  QActionEvent *cthat = (QActionEvent *)that;
-  return cthat->action();
-}
-
-  // proto:  QPoint QMouseEvent::globalPos();
-QPoint* _ZNK11QMouseEvent9globalPosEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  auto recret = cthat->globalPos();
-  return new QPoint(recret);
-}
-
-  // proto:  int QMouseEvent::y();
-int _ZNK11QMouseEvent1yEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  return cthat->y();
-}
-
-  // proto:  const QPointF & QMouseEvent::screenPos();
-const QPointF * _ZNK11QMouseEvent9screenPosEv(void *that)
-
+// QWhatsThisClickedEvent(const class QString &)
+QWhatsThisClickedEvent* dector_ZN22QWhatsThisClickedEventC1ERK7QString(const QString & href)
 {
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  return &cthat->screenPos();
+  // static_assert(sizeof(QWhatsThisClickedEvent) == 32, "tyszerr");
+  QWhatsThisClickedEvent* rthis = new QWhatsThisClickedEvent(href);
+  return rthis;
 }
-
-  // proto:  int QMouseEvent::x();
-int _ZNK11QMouseEvent1xEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  return cthat->x();
-}
-
-  // proto:  int QMouseEvent::globalX();
-int _ZNK11QMouseEvent7globalXEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  return cthat->globalX();
-}
-
-  // proto:  int QMouseEvent::globalY();
-int _ZNK11QMouseEvent7globalYEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  return cthat->globalY();
-}
-
-  // proto:  QPoint QMouseEvent::pos();
-QPoint* _ZNK11QMouseEvent3posEv(void *that)
-
-{
-  QMouseEvent *cthat = (QMouseEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
-}
-
-  // proto:  QString QFileOpenEvent::file();
-QString* _ZNK14QFileOpenEvent4fileEv(void *that)
-
-{
-  QFileOpenEvent *cthat = (QFileOpenEvent *)that;
-  auto recret = cthat->file();
-  return new QString(recret);
-}
-
-  // proto:  bool QToolBarChangeEvent::toggle();
-bool _ZNK19QToolBarChangeEvent6toggleEv(void *that)
 
+// QExposeEvent(const class QRegion &)
+QExposeEvent* dector_ZN12QExposeEventC1ERK7QRegion(const QRegion & rgn)
 {
-  QToolBarChangeEvent *cthat = (QToolBarChangeEvent *)that;
-  return cthat->toggle();
+  // static_assert(sizeof(QExposeEvent) == 32, "tyszerr");
+  QExposeEvent* rthis = new QExposeEvent(rgn);
+  return rthis;
 }
 
-  // proto:  int QTabletEvent::x();
-int _ZNK12QTabletEvent1xEv(void *that)
-
+// ~QExposeEvent()
+void dedtor_ZN12QExposeEventD0Ev(QExposeEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->x();
+  QExposeEvent* rthis = (QExposeEvent*)that;
+  delete rthis;
 }
-
-  // proto:  int QTabletEvent::xTilt();
-int _ZNK12QTabletEvent5xTiltEv(void *that)
 
+// QInputMethodEvent(const class QString &, const QList<class QInputMethodEvent::Attribute> &)
+QInputMethodEvent* dector_ZN17QInputMethodEventC1ERK7QStringRK5QListINS_9AttributeEE(const QString & preeditText, const QList<QInputMethodEvent::Attribute> & attributes)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->xTilt();
+  // static_assert(sizeof(QInputMethodEvent) == 32, "tyszerr");
+  QInputMethodEvent* rthis = new QInputMethodEvent(preeditText, attributes);
+  return rthis;
 }
 
-  // proto:  qint64 QTabletEvent::uniqueId();
-qint64 _ZNK12QTabletEvent8uniqueIdEv(void *that)
-
+// QInputMethodEvent(const class QInputMethodEvent &)
+QInputMethodEvent* dector_ZN17QInputMethodEventC1ERKS_(const QInputMethodEvent & other)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->uniqueId();
+  // static_assert(sizeof(QInputMethodEvent) == 32, "tyszerr");
+  QInputMethodEvent* rthis = new QInputMethodEvent(other);
+  return rthis;
 }
 
-  // proto:  const QPointF & QTabletEvent::globalPosF();
-const QPointF * _ZNK12QTabletEvent10globalPosFEv(void *that)
-
+// QInputMethodEvent()
+QInputMethodEvent* dector_ZN17QInputMethodEventC1Ev()
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return &cthat->globalPosF();
+  // static_assert(sizeof(QInputMethodEvent) == 32, "tyszerr");
+  QInputMethodEvent* rthis = new QInputMethodEvent();
+  return rthis;
 }
-
-  // proto:  int QTabletEvent::z();
-int _ZNK12QTabletEvent1zEv(void *that)
 
+// ~QHelpEvent()
+void dedtor_ZN10QHelpEventD0Ev(QHelpEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->z();
+  QHelpEvent* rthis = (QHelpEvent*)that;
+  delete rthis;
 }
 
-  // proto:  int QTabletEvent::y();
-int _ZNK12QTabletEvent1yEv(void *that)
-
+// QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
+QHelpEvent* dector_ZN10QHelpEventC1EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, const QPoint & pos, const QPoint & globalPos)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->y();
+  // static_assert(sizeof(QHelpEvent) == 40, "tyszerr");
+  QHelpEvent* rthis = new QHelpEvent(type, pos, globalPos);
+  return rthis;
 }
-
-  // proto:  QPoint QTabletEvent::pos();
-QPoint* _ZNK12QTabletEvent3posEv(void *that)
 
+// QActionEvent(int, class QAction *, class QAction *)
+QActionEvent* dector_ZN12QActionEventC1EiP7QActionS1_(int type, QAction * action, QAction * before)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QActionEvent) == 40, "tyszerr");
+  QActionEvent* rthis = new QActionEvent(type, action, before);
+  return rthis;
 }
 
-  // proto:  qreal QTabletEvent::rotation();
-qreal _ZNK12QTabletEvent8rotationEv(void *that)
-
+// ~QActionEvent()
+void dedtor_ZN12QActionEventD0Ev(QActionEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->rotation();
+  QActionEvent* rthis = (QActionEvent*)that;
+  delete rthis;
 }
 
-  // proto:  QPoint QTabletEvent::globalPos();
-QPoint* _ZNK12QTabletEvent9globalPosEv(void *that)
-
+// QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+QMouseEvent* dector_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFS4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type, const QPointF & localPos, const QPointF & screenPos, Qt::MouseButton button, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  auto recret = cthat->globalPos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QMouseEvent) == 32, "tyszerr");
+  QMouseEvent* rthis = new QMouseEvent(type, localPos, screenPos, button, buttons, modifiers);
+  return rthis;
 }
-
-  // proto:  qreal QTabletEvent::tangentialPressure();
-qreal _ZNK12QTabletEvent18tangentialPressureEv(void *that)
 
+// QMouseEvent(enum QEvent::Type, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+QMouseEvent* dector_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFN2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type, const QPointF & localPos, Qt::MouseButton button, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->tangentialPressure();
+  // static_assert(sizeof(QMouseEvent) == 32, "tyszerr");
+  QMouseEvent* rthis = new QMouseEvent(type, localPos, button, buttons, modifiers);
+  return rthis;
 }
 
-  // proto:  qreal QTabletEvent::hiResGlobalX();
-qreal _ZNK12QTabletEvent12hiResGlobalXEv(void *that)
-
+// ~QMouseEvent()
+void dedtor_ZN11QMouseEventD0Ev(QMouseEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->hiResGlobalX();
+  QMouseEvent* rthis = (QMouseEvent*)that;
+  delete rthis;
 }
-
-  // proto:  int QTabletEvent::globalY();
-int _ZNK12QTabletEvent7globalYEv(void *that)
 
+// QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
+QMouseEvent* dector_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->globalY();
+  // static_assert(sizeof(QMouseEvent) == 32, "tyszerr");
+  QMouseEvent* rthis = new QMouseEvent(type, localPos, windowPos, screenPos, button, buttons, modifiers);
+  return rthis;
 }
 
-  // proto:  qreal QTabletEvent::hiResGlobalY();
-qreal _ZNK12QTabletEvent12hiResGlobalYEv(void *that)
-
+// QFileOpenEvent(const class QString &)
+QFileOpenEvent* dector_ZN14QFileOpenEventC1ERK7QString(const QString & file)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->hiResGlobalY();
+  // static_assert(sizeof(QFileOpenEvent) == 40, "tyszerr");
+  QFileOpenEvent* rthis = new QFileOpenEvent(file);
+  return rthis;
 }
 
-  // proto:  int QTabletEvent::globalX();
-int _ZNK12QTabletEvent7globalXEv(void *that)
-
+// QFileOpenEvent(const class QUrl &)
+QFileOpenEvent* dector_ZN14QFileOpenEventC1ERK4QUrl(const QUrl & url)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->globalX();
+  // static_assert(sizeof(QFileOpenEvent) == 40, "tyszerr");
+  QFileOpenEvent* rthis = new QFileOpenEvent(url);
+  return rthis;
 }
-
-  // proto:  const QPointF & QTabletEvent::posF();
-const QPointF * _ZNK12QTabletEvent4posFEv(void *that)
 
+// ~QFileOpenEvent()
+void dedtor_ZN14QFileOpenEventD0Ev(QFileOpenEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return &cthat->posF();
+  QFileOpenEvent* rthis = (QFileOpenEvent*)that;
+  delete rthis;
 }
 
-  // proto:  qreal QTabletEvent::pressure();
-qreal _ZNK12QTabletEvent8pressureEv(void *that)
-
+// QToolBarChangeEvent(_Bool)
+QToolBarChangeEvent* dector_ZN19QToolBarChangeEventC1Eb(bool t)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->pressure();
+  // static_assert(sizeof(QToolBarChangeEvent) == 32, "tyszerr");
+  QToolBarChangeEvent* rthis = new QToolBarChangeEvent(t);
+  return rthis;
 }
 
-  // proto:  int QTabletEvent::yTilt();
-int _ZNK12QTabletEvent5yTiltEv(void *that)
-
+// ~QToolBarChangeEvent()
+void dedtor_ZN19QToolBarChangeEventD0Ev(QToolBarChangeEvent* that)
 {
-  QTabletEvent *cthat = (QTabletEvent *)that;
-  return cthat->yTilt();
+  QToolBarChangeEvent* rthis = (QToolBarChangeEvent*)that;
+  delete rthis;
 }
-
-  // proto:  void QTouchEvent::setDevice(QTouchDevice * adevice);
-void _ZN11QTouchEvent9setDeviceEP12QTouchDevice(void *that, QTouchDevice * adevice)
 
+// ~QTabletEvent()
+void dedtor_ZN12QTabletEventD0Ev(QTabletEvent* that)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-   cthat->setDevice(adevice);
+  QTabletEvent* rthis = (QTabletEvent*)that;
+  delete rthis;
 }
 
-  // proto:  QWindow * QTouchEvent::window();
-QWindow * _ZNK11QTouchEvent6windowEv(void *that)
-
+// QTabletEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64, Qt::MouseButton, Qt::MouseButtons)
+QTabletEvent* dector_ZN12QTabletEventC1EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFlagsIN2Qt16KeyboardModifierEExNS6_11MouseButtonES5_IS9_E(QEvent::Type t, const QPointF & pos, const QPointF & globalPos, int device, int pointerType, double pressure, int xTilt, int yTilt, double tangentialPressure, double rotation, int z, Qt::KeyboardModifiers keyState, long long uniqueID, Qt::MouseButton button, Qt::MouseButtons buttons)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-  return cthat->window();
+  // static_assert(sizeof(QTabletEvent) == 32, "tyszerr");
+  QTabletEvent* rthis = new QTabletEvent(t, pos, globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID, button, buttons);
+  return rthis;
 }
 
-  // proto:  QTouchDevice * QTouchEvent::device();
-QTouchDevice * _ZNK11QTouchEvent6deviceEv(void *that)
-
+// QTabletEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64)
+QTabletEvent* dector_ZN12QTabletEventC1EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFlagsIN2Qt16KeyboardModifierEEx(QEvent::Type t, const QPointF & pos, const QPointF & globalPos, int device, int pointerType, double pressure, int xTilt, int yTilt, double tangentialPressure, double rotation, int z, Qt::KeyboardModifiers keyState, long long uniqueID)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-  return cthat->device();
+  // static_assert(sizeof(QTabletEvent) == 32, "tyszerr");
+  QTabletEvent* rthis = new QTabletEvent(t, pos, globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID);
+  return rthis;
 }
-
-  // proto:  QObject * QTouchEvent::target();
-QObject * _ZNK11QTouchEvent6targetEv(void *that)
 
+// QTouchEvent(class QEvent::Type, class QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<class QTouchEvent::TouchPoint> &)
+QTouchEvent* dector_ZN11QTouchEventC1EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardModifierEES4_INS5_15TouchPointStateEERK5QListINS_10TouchPointEE(QEvent::Type eventType, QTouchDevice * device, Qt::KeyboardModifiers modifiers, Qt::TouchPointStates touchPointStates, const QList<QTouchEvent::TouchPoint> & touchPoints)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-  return cthat->target();
+  // static_assert(sizeof(QTouchEvent) == 32, "tyszerr");
+  QTouchEvent* rthis = new QTouchEvent(eventType, device, modifiers, touchPointStates, touchPoints);
+  return rthis;
 }
 
-  // proto:  void QTouchEvent::setTouchPointStates(Qt::TouchPointStates aTouchPointStates);
-void _ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE(void *that, Qt::TouchPointStates aTouchPointStates)
-
+// ~QTouchEvent()
+void dedtor_ZN11QTouchEventD0Ev(QTouchEvent* that)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-   cthat->setTouchPointStates(aTouchPointStates);
+  QTouchEvent* rthis = (QTouchEvent*)that;
+  delete rthis;
 }
-
-  // proto:  void QTouchEvent::setTouchPoints(const QList<QTouchEvent::TouchPoint> & atouchPoints);
-void _ZN11QTouchEvent14setTouchPointsERK5QListINS_10TouchPointEE(void *that, const QList<QTouchEvent::TouchPoint> & atouchPoints)
 
+// ~QScreenOrientationChangeEvent()
+void dedtor_ZN29QScreenOrientationChangeEventD0Ev(QScreenOrientationChangeEvent* that)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-   cthat->setTouchPoints(atouchPoints);
+  QScreenOrientationChangeEvent* rthis = (QScreenOrientationChangeEvent*)that;
+  delete rthis;
 }
 
-  // proto:  void QTouchEvent::setWindow(QWindow * awindow);
-void _ZN11QTouchEvent9setWindowEP7QWindow(void *that, QWindow * awindow)
-
+// QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)
+QScreenOrientationChangeEvent* dector_ZN29QScreenOrientationChangeEventC1EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-   cthat->setWindow(awindow);
+  // static_assert(sizeof(QScreenOrientationChangeEvent) == 40, "tyszerr");
+  QScreenOrientationChangeEvent* rthis = new QScreenOrientationChangeEvent(screen, orientation);
+  return rthis;
 }
 
-  // proto:  void QTouchEvent::setTarget(QObject * atarget);
-void _ZN11QTouchEvent9setTargetEP7QObject(void *that, QObject * atarget)
-
+// ~QIconDragEvent()
+void dedtor_ZN14QIconDragEventD0Ev(QIconDragEvent* that)
 {
-  QTouchEvent *cthat = (QTouchEvent *)that;
-   cthat->setTarget(atarget);
+  QIconDragEvent* rthis = (QIconDragEvent*)that;
+  delete rthis;
 }
-
-  // proto:  int QWheelEvent::x();
-int _ZNK11QWheelEvent1xEv(void *that)
 
+// QIconDragEvent()
+QIconDragEvent* dector_ZN14QIconDragEventC1Ev()
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return cthat->x();
+  // static_assert(sizeof(QIconDragEvent) == 32, "tyszerr");
+  QIconDragEvent* rthis = new QIconDragEvent();
+  return rthis;
 }
 
-  // proto:  QPoint QWheelEvent::angleDelta();
-QPoint* _ZNK11QWheelEvent10angleDeltaEv(void *that)
-
+// ~QCloseEvent()
+void dedtor_ZN11QCloseEventD0Ev(QCloseEvent* that)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  auto recret = cthat->angleDelta();
-  return new QPoint(recret);
+  QCloseEvent* rthis = (QCloseEvent*)that;
+  delete rthis;
 }
-
-  // proto:  QPoint QWheelEvent::pos();
-QPoint* _ZNK11QWheelEvent3posEv(void *that)
 
+// QCloseEvent()
+QCloseEvent* dector_ZN11QCloseEventC1Ev()
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QCloseEvent) == 32, "tyszerr");
+  QCloseEvent* rthis = new QCloseEvent();
+  return rthis;
 }
 
-  // proto:  int QWheelEvent::globalY();
-int _ZNK11QWheelEvent7globalYEv(void *that)
-
+// ~QDragEnterEvent()
+void dedtor_ZN15QDragEnterEventD0Ev(QDragEnterEvent* that)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return cthat->globalY();
+  QDragEnterEvent* rthis = (QDragEnterEvent*)that;
+  delete rthis;
 }
 
-  // proto:  const QPointF & QWheelEvent::posF();
-const QPointF * _ZNK11QWheelEvent4posFEv(void *that)
-
+// QDragEnterEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers)
+QDragEnterEvent* dector_ZN15QDragEnterEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE(const QPoint & pos, Qt::DropActions actions, const QMimeData * data, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return &cthat->posF();
+  // static_assert(sizeof(QDragEnterEvent) == 32, "tyszerr");
+  QDragEnterEvent* rthis = new QDragEnterEvent(pos, actions, data, buttons, modifiers);
+  return rthis;
 }
-
-  // proto:  int QWheelEvent::globalX();
-int _ZNK11QWheelEvent7globalXEv(void *that)
 
+// QWheelEvent(const class QPointF &, const class QPointF &, class QPoint, class QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers)
+QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_11MouseButtonEES6_INS4_16KeyboardModifierEE(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return cthat->globalX();
+  // static_assert(sizeof(QWheelEvent) == 32, "tyszerr");
+  QWheelEvent* rthis = new QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers);
+  return rthis;
 }
 
-  // proto:  int QWheelEvent::y();
-int _ZNK11QWheelEvent1yEv(void *that)
-
+// QWheelEvent(const class QPointF &, const class QPointF &, int, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::Orientation)
+QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFS2_i6QFlagsIN2Qt11MouseButtonEES3_INS4_16KeyboardModifierEENS4_11OrientationE(const QPointF & pos, const QPointF & globalPos, int delta, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, Qt::Orientation orient)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return cthat->y();
+  // static_assert(sizeof(QWheelEvent) == 32, "tyszerr");
+  QWheelEvent* rthis = new QWheelEvent(pos, globalPos, delta, buttons, modifiers, orient);
+  return rthis;
 }
-
-  // proto:  QPoint QWheelEvent::pixelDelta();
-QPoint* _ZNK11QWheelEvent10pixelDeltaEv(void *that)
 
+// QWheelEvent(const class QPointF &, const class QPointF &, class QPoint, class QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, Qt::MouseEventSource)
+QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_11MouseButtonEES6_INS4_16KeyboardModifierEENS4_11ScrollPhaseENS4_16MouseEventSourceE(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, Qt::ScrollPhase phase, Qt::MouseEventSource source)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  auto recret = cthat->pixelDelta();
-  return new QPoint(recret);
+  // static_assert(sizeof(QWheelEvent) == 32, "tyszerr");
+  QWheelEvent* rthis = new QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase, source);
+  return rthis;
 }
 
-  // proto:  int QWheelEvent::delta();
-int _ZNK11QWheelEvent5deltaEv(void *that)
-
+// ~QWheelEvent()
+void dedtor_ZN11QWheelEventD0Ev(QWheelEvent* that)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return cthat->delta();
+  QWheelEvent* rthis = (QWheelEvent*)that;
+  delete rthis;
 }
 
-  // proto:  QPoint QWheelEvent::globalPos();
-QPoint* _ZNK11QWheelEvent9globalPosEv(void *that)
-
+// QWheelEvent(const class QPointF &, int, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::Orientation)
+QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFi6QFlagsIN2Qt11MouseButtonEES3_INS4_16KeyboardModifierEENS4_11OrientationE(const QPointF & pos, int delta, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, Qt::Orientation orient)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  auto recret = cthat->globalPos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QWheelEvent) == 32, "tyszerr");
+  QWheelEvent* rthis = new QWheelEvent(pos, delta, buttons, modifiers, orient);
+  return rthis;
 }
-
-  // proto:  const QPointF & QWheelEvent::globalPosF();
-const QPointF * _ZNK11QWheelEvent10globalPosFEv(void *that)
 
+// QWheelEvent(const class QPointF &, const class QPointF &, class QPoint, class QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase)
+QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE6QFlagsINS4_11MouseButtonEES6_INS4_16KeyboardModifierEENS4_11ScrollPhaseE(const QPointF & pos, const QPointF & globalPos, QPoint pixelDelta, QPoint angleDelta, int qt4Delta, Qt::Orientation qt4Orientation, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, Qt::ScrollPhase phase)
 {
-  QWheelEvent *cthat = (QWheelEvent *)that;
-  return &cthat->globalPosF();
+  // static_assert(sizeof(QWheelEvent) == 32, "tyszerr");
+  QWheelEvent* rthis = new QWheelEvent(pos, globalPos, pixelDelta, angleDelta, qt4Delta, qt4Orientation, buttons, modifiers, phase);
+  return rthis;
 }
 
-  // proto:  const QPointF & QHoverEvent::posF();
-const QPointF * _ZNK11QHoverEvent4posFEv(void *that)
-
+// ~QScrollEvent()
+void dedtor_ZN12QScrollEventD0Ev(QScrollEvent* that)
 {
-  QHoverEvent *cthat = (QHoverEvent *)that;
-  return &cthat->posF();
+  QScrollEvent* rthis = (QScrollEvent*)that;
+  delete rthis;
 }
 
-  // proto:  QPoint QHoverEvent::oldPos();
-QPoint* _ZNK11QHoverEvent6oldPosEv(void *that)
-
+// QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
+QScrollEvent* dector_ZN12QScrollEventC1ERK7QPointFS2_NS_11ScrollStateE(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState)
 {
-  QHoverEvent *cthat = (QHoverEvent *)that;
-  auto recret = cthat->oldPos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QScrollEvent) == 64, "tyszerr");
+  QScrollEvent* rthis = new QScrollEvent(contentPos, overshoot, scrollState);
+  return rthis;
 }
-
-  // proto:  const QPointF & QHoverEvent::oldPosF();
-const QPointF * _ZNK11QHoverEvent7oldPosFEv(void *that)
 
+// QHoverEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::KeyboardModifiers)
+QHoverEvent* dector_ZN11QHoverEventC1EN6QEvent4TypeERK7QPointFS4_6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type, const QPointF & pos, const QPointF & oldPos, Qt::KeyboardModifiers modifiers)
 {
-  QHoverEvent *cthat = (QHoverEvent *)that;
-  return &cthat->oldPosF();
+  // static_assert(sizeof(QHoverEvent) == 32, "tyszerr");
+  QHoverEvent* rthis = new QHoverEvent(type, pos, oldPos, modifiers);
+  return rthis;
 }
 
-  // proto:  QPoint QHoverEvent::pos();
-QPoint* _ZNK11QHoverEvent3posEv(void *that)
-
+// ~QHoverEvent()
+void dedtor_ZN11QHoverEventD0Ev(QHoverEvent* that)
 {
-  QHoverEvent *cthat = (QHoverEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
+  QHoverEvent* rthis = (QHoverEvent*)that;
+  delete rthis;
 }
 
-  // proto:  void QDragMoveEvent::accept(const QRect & r);
-void _ZN14QDragMoveEvent6acceptERK5QRect(void *that, const QRect & r)
-
+// QDragMoveEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
+QDragMoveEvent* dector_ZN14QDragMoveEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(const QPoint & pos, Qt::DropActions actions, const QMimeData * data, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, QEvent::Type type)
 {
-  QDragMoveEvent *cthat = (QDragMoveEvent *)that;
-   cthat->accept(r);
+  // static_assert(sizeof(QDragMoveEvent) == 32, "tyszerr");
+  QDragMoveEvent* rthis = new QDragMoveEvent(pos, actions, data, buttons, modifiers, type);
+  return rthis;
 }
-
-  // proto:  QRect QDragMoveEvent::answerRect();
-QRect* _ZNK14QDragMoveEvent10answerRectEv(void *that)
 
+// ~QDragMoveEvent()
+void dedtor_ZN14QDragMoveEventD0Ev(QDragMoveEvent* that)
 {
-  QDragMoveEvent *cthat = (QDragMoveEvent *)that;
-  auto recret = cthat->answerRect();
-  return new QRect(recret);
+  QDragMoveEvent* rthis = (QDragMoveEvent*)that;
+  delete rthis;
 }
 
-  // proto:  void QDragMoveEvent::ignore(const QRect & r);
-void _ZN14QDragMoveEvent6ignoreERK5QRect(void *that, const QRect & r)
-
+// ~QShowEvent()
+void dedtor_ZN10QShowEventD0Ev(QShowEvent* that)
 {
-  QDragMoveEvent *cthat = (QDragMoveEvent *)that;
-   cthat->ignore(r);
+  QShowEvent* rthis = (QShowEvent*)that;
+  delete rthis;
 }
-
-  // proto:  void QDragMoveEvent::ignore();
-void _ZN14QDragMoveEvent6ignoreEv(void *that)
 
+// QShowEvent()
+QShowEvent* dector_ZN10QShowEventC1Ev()
 {
-  QDragMoveEvent *cthat = (QDragMoveEvent *)that;
-   cthat->ignore();
+  // static_assert(sizeof(QShowEvent) == 32, "tyszerr");
+  QShowEvent* rthis = new QShowEvent();
+  return rthis;
 }
 
-  // proto:  void QDragMoveEvent::accept();
-void _ZN14QDragMoveEvent6acceptEv(void *that)
-
+// QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
+QPlatformSurfaceEvent* dector_ZN21QPlatformSurfaceEventC1ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType)
 {
-  QDragMoveEvent *cthat = (QDragMoveEvent *)that;
-   cthat->accept();
+  // static_assert(sizeof(QPlatformSurfaceEvent) == 32, "tyszerr");
+  QPlatformSurfaceEvent* rthis = new QPlatformSurfaceEvent(surfaceEventType);
+  return rthis;
 }
 
-  // proto:  const QRect & QPaintEvent::rect();
-const QRect * _ZNK11QPaintEvent4rectEv(void *that)
-
+// ~QPlatformSurfaceEvent()
+void dedtor_ZN21QPlatformSurfaceEventD0Ev(QPlatformSurfaceEvent* that)
 {
-  QPaintEvent *cthat = (QPaintEvent *)that;
-  return &cthat->rect();
+  QPlatformSurfaceEvent* rthis = (QPlatformSurfaceEvent*)that;
+  delete rthis;
 }
-
-  // proto:  const QRegion & QPaintEvent::region();
-const QRegion * _ZNK11QPaintEvent6regionEv(void *that)
 
+// ~QPaintEvent()
+void dedtor_ZN11QPaintEventD0Ev(QPaintEvent* that)
 {
-  QPaintEvent *cthat = (QPaintEvent *)that;
-  return &cthat->region();
+  QPaintEvent* rthis = (QPaintEvent*)that;
+  delete rthis;
 }
 
-  // proto:  bool QFocusEvent::lostFocus();
-bool _ZNK11QFocusEvent9lostFocusEv(void *that)
-
+// QPaintEvent(const class QRect &)
+QPaintEvent* dector_ZN11QPaintEventC1ERK5QRect(const QRect & paintRect)
 {
-  QFocusEvent *cthat = (QFocusEvent *)that;
-  return cthat->lostFocus();
+  // static_assert(sizeof(QPaintEvent) == 56, "tyszerr");
+  QPaintEvent* rthis = new QPaintEvent(paintRect);
+  return rthis;
 }
-
-  // proto:  bool QFocusEvent::gotFocus();
-bool _ZNK11QFocusEvent8gotFocusEv(void *that)
 
+// QPaintEvent(const class QRegion &)
+QPaintEvent* dector_ZN11QPaintEventC1ERK7QRegion(const QRegion & paintRegion)
 {
-  QFocusEvent *cthat = (QFocusEvent *)that;
-  return cthat->gotFocus();
+  // static_assert(sizeof(QPaintEvent) == 56, "tyszerr");
+  QPaintEvent* rthis = new QPaintEvent(paintRegion);
+  return rthis;
 }
 
-  // proto:  const QPoint QNativeGestureEvent::pos();
-const QPoint* _ZNK19QNativeGestureEvent3posEv(void *that)
-
+// QFocusEvent(enum QEvent::Type, Qt::FocusReason)
+QFocusEvent* dector_ZN11QFocusEventC1EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type, Qt::FocusReason reason)
 {
-  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
-  auto recret = cthat->pos();
-  return new const QPoint(recret);
+  // static_assert(sizeof(QFocusEvent) == 32, "tyszerr");
+  QFocusEvent* rthis = new QFocusEvent(type, reason);
+  return rthis;
 }
 
-  // proto:  const QPoint QNativeGestureEvent::globalPos();
-const QPoint* _ZNK19QNativeGestureEvent9globalPosEv(void *that)
-
+// ~QFocusEvent()
+void dedtor_ZN11QFocusEventD0Ev(QFocusEvent* that)
 {
-  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
-  auto recret = cthat->globalPos();
-  return new const QPoint(recret);
+  QFocusEvent* rthis = (QFocusEvent*)that;
+  delete rthis;
 }
-
-  // proto:  const QSize & QResizeEvent::oldSize();
-const QSize * _ZNK12QResizeEvent7oldSizeEv(void *that)
 
+// QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
+QNativeGestureEvent* dector_ZN19QNativeGestureEventC1EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, double value, unsigned long sequenceId, unsigned long long intArgument)
 {
-  QResizeEvent *cthat = (QResizeEvent *)that;
-  return &cthat->oldSize();
+  // static_assert(sizeof(QNativeGestureEvent) == 32, "tyszerr");
+  QNativeGestureEvent* rthis = new QNativeGestureEvent(type, localPos, windowPos, screenPos, value, sequenceId, intArgument);
+  return rthis;
 }
 
-  // proto:  const QSize & QResizeEvent::size();
-const QSize * _ZNK12QResizeEvent4sizeEv(void *that)
-
+// ~QResizeEvent()
+void dedtor_ZN12QResizeEventD0Ev(QResizeEvent* that)
 {
-  QResizeEvent *cthat = (QResizeEvent *)that;
-  return &cthat->size();
+  QResizeEvent* rthis = (QResizeEvent*)that;
+  delete rthis;
 }
-
-  // proto:  QString QStatusTipEvent::tip();
-QString* _ZNK15QStatusTipEvent3tipEv(void *that)
 
+// QResizeEvent(const class QSize &, const class QSize &)
+QResizeEvent* dector_ZN12QResizeEventC1ERK5QSizeS2_(const QSize & size, const QSize & oldSize)
 {
-  QStatusTipEvent *cthat = (QStatusTipEvent *)that;
-  auto recret = cthat->tip();
-  return new QString(recret);
+  // static_assert(sizeof(QResizeEvent) == 40, "tyszerr");
+  QResizeEvent* rthis = new QResizeEvent(size, oldSize);
+  return rthis;
 }
 
-  // proto:  int QEnterEvent::y();
-int _ZNK11QEnterEvent1yEv(void *that)
-
+// ~QStatusTipEvent()
+void dedtor_ZN15QStatusTipEventD0Ev(QStatusTipEvent* that)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  return cthat->y();
+  QStatusTipEvent* rthis = (QStatusTipEvent*)that;
+  delete rthis;
 }
 
-  // proto:  QPoint QEnterEvent::pos();
-QPoint* _ZNK11QEnterEvent3posEv(void *that)
-
+// QStatusTipEvent(const class QString &)
+QStatusTipEvent* dector_ZN15QStatusTipEventC1ERK7QString(const QString & tip)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
+  // static_assert(sizeof(QStatusTipEvent) == 32, "tyszerr");
+  QStatusTipEvent* rthis = new QStatusTipEvent(tip);
+  return rthis;
 }
-
-  // proto:  int QEnterEvent::globalX();
-int _ZNK11QEnterEvent7globalXEv(void *that)
 
+// ~QEnterEvent()
+void dedtor_ZN11QEnterEventD0Ev(QEnterEvent* that)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  return cthat->globalX();
+  QEnterEvent* rthis = (QEnterEvent*)that;
+  delete rthis;
 }
 
-  // proto:  int QEnterEvent::x();
-int _ZNK11QEnterEvent1xEv(void *that)
-
+// QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
+QEnterEvent* dector_ZN11QEnterEventC1ERK7QPointFS2_S2_(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  return cthat->x();
+  // static_assert(sizeof(QEnterEvent) == 72, "tyszerr");
+  QEnterEvent* rthis = new QEnterEvent(localPos, windowPos, screenPos);
+  return rthis;
 }
 
-  // proto:  QPoint QEnterEvent::globalPos();
-QPoint* _ZNK11QEnterEvent9globalPosEv(void *that)
-
+// ~QMoveEvent()
+void dedtor_ZN10QMoveEventD0Ev(QMoveEvent* that)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  auto recret = cthat->globalPos();
-  return new QPoint(recret);
+  QMoveEvent* rthis = (QMoveEvent*)that;
+  delete rthis;
 }
-
-  // proto:  int QEnterEvent::globalY();
-int _ZNK11QEnterEvent7globalYEv(void *that)
 
+// QMoveEvent(const class QPoint &, const class QPoint &)
+QMoveEvent* dector_ZN10QMoveEventC1ERK6QPointS2_(const QPoint & pos, const QPoint & oldPos)
 {
-  QEnterEvent *cthat = (QEnterEvent *)that;
-  return cthat->globalY();
+  // static_assert(sizeof(QMoveEvent) == 40, "tyszerr");
+  QMoveEvent* rthis = new QMoveEvent(pos, oldPos);
+  return rthis;
 }
 
-  // proto:  const QPoint & QMoveEvent::oldPos();
-const QPoint * _ZNK10QMoveEvent6oldPosEv(void *that)
-
+// QHideEvent()
+QHideEvent* dector_ZN10QHideEventC1Ev()
 {
-  QMoveEvent *cthat = (QMoveEvent *)that;
-  return &cthat->oldPos();
+  // static_assert(sizeof(QHideEvent) == 32, "tyszerr");
+  QHideEvent* rthis = new QHideEvent();
+  return rthis;
 }
 
-  // proto:  const QPoint & QMoveEvent::pos();
-const QPoint * _ZNK10QMoveEvent3posEv(void *that)
-
+// ~QHideEvent()
+void dedtor_ZN10QHideEventD0Ev(QHideEvent* that)
 {
-  QMoveEvent *cthat = (QMoveEvent *)that;
-  return &cthat->pos();
+  QHideEvent* rthis = (QHideEvent*)that;
+  delete rthis;
 }
-
-  // proto:  QPoint QDropEvent::pos();
-QPoint* _ZNK10QDropEvent3posEv(void *that)
 
+// ~QDragLeaveEvent()
+void dedtor_ZN15QDragLeaveEventD0Ev(QDragLeaveEvent* that)
 {
-  QDropEvent *cthat = (QDropEvent *)that;
-  auto recret = cthat->pos();
-  return new QPoint(recret);
+  QDragLeaveEvent* rthis = (QDragLeaveEvent*)that;
+  delete rthis;
 }
 
-  // proto:  const QMimeData * QDropEvent::mimeData();
-const QMimeData * _ZNK10QDropEvent8mimeDataEv(void *that)
-
+// QDragLeaveEvent()
+QDragLeaveEvent* dector_ZN15QDragLeaveEventC1Ev()
 {
-  QDropEvent *cthat = (QDropEvent *)that;
-  return cthat->mimeData();
+  // static_assert(sizeof(QDragLeaveEvent) == 32, "tyszerr");
+  QDragLeaveEvent* rthis = new QDragLeaveEvent();
+  return rthis;
 }
-
-  // proto:  void QDropEvent::acceptProposedAction();
-void _ZN10QDropEvent20acceptProposedActionEv(void *that)
 
+// QDropEvent(const class QPointF &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
+QDropEvent* dector_ZN10QDropEventC1ERK7QPointF6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(const QPointF & pos, Qt::DropActions actions, const QMimeData * data, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, QEvent::Type type)
 {
-  QDropEvent *cthat = (QDropEvent *)that;
-   cthat->acceptProposedAction();
+  // static_assert(sizeof(QDropEvent) == 32, "tyszerr");
+  QDropEvent* rthis = new QDropEvent(pos, actions, data, buttons, modifiers, type);
+  return rthis;
 }
 
-  // proto:  const QPointF & QDropEvent::posF();
-const QPointF * _ZNK10QDropEvent4posFEv(void *that)
-
+// ~QDropEvent()
+void dedtor_ZN10QDropEventD0Ev(QDropEvent* that)
 {
-  QDropEvent *cthat = (QDropEvent *)that;
-  return &cthat->posF();
+  QDropEvent* rthis = (QDropEvent*)that;
+  delete rthis;
 }
 
-  // proto:  void QInputEvent::setTimestamp(ulong atimestamp);
-void _ZN11QInputEvent12setTimestampEm(void *that, unsigned long atimestamp)
-
+// QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
+QInputEvent* dector_ZN11QInputEventC1EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type, Qt::KeyboardModifiers modifiers)
 {
-  QInputEvent *cthat = (QInputEvent *)that;
-   cthat->setTimestamp(atimestamp);
+  // static_assert(sizeof(QInputEvent) == 32, "tyszerr");
+  QInputEvent* rthis = new QInputEvent(type, modifiers);
+  return rthis;
 }
-
-  // proto:  void QInputEvent::setModifiers(Qt::KeyboardModifiers amodifiers);
-void _ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *that, Qt::KeyboardModifiers amodifiers)
 
+// ~QInputEvent()
+void dedtor_ZN11QInputEventD0Ev(QInputEvent* that)
 {
-  QInputEvent *cthat = (QInputEvent *)that;
-   cthat->setModifiers(amodifiers);
+  QInputEvent* rthis = (QInputEvent*)that;
+  delete rthis;
 }
 
-  // proto:  ulong QInputEvent::timestamp();
-ulong _ZNK11QInputEvent9timestampEv(void *that)
-
+// QApplicationStateChangeEvent(Qt::ApplicationState)
+QApplicationStateChangeEvent* dector_ZN28QApplicationStateChangeEventC1EN2Qt16ApplicationStateE(Qt::ApplicationState state)
 {
-  QInputEvent *cthat = (QInputEvent *)that;
-  return cthat->timestamp();
+  // static_assert(sizeof(QApplicationStateChangeEvent) == 32, "tyszerr");
+  QApplicationStateChangeEvent* rthis = new QApplicationStateChangeEvent(state);
+  return rthis;
 }
-
-  // proto:  int QKeyEvent::count();
-int _ZNK9QKeyEvent5countEv(void *that)
 
+// QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
+QKeyEvent* dector_ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt(QEvent::Type type, int key, Qt::KeyboardModifiers modifiers, const QString & text, bool autorep, unsigned short count)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  return cthat->count();
+  // static_assert(sizeof(QKeyEvent) == 32, "tyszerr");
+  QKeyEvent* rthis = new QKeyEvent(type, key, modifiers, text, autorep, count);
+  return rthis;
 }
 
-  // proto:  QString QKeyEvent::text();
-QString* _ZNK9QKeyEvent4textEv(void *that)
-
+// ~QKeyEvent()
+void dedtor_ZN9QKeyEventD0Ev(QKeyEvent* that)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  auto recret = cthat->text();
-  return new QString(recret);
+  QKeyEvent* rthis = (QKeyEvent*)that;
+  delete rthis;
 }
 
-  // proto:  quint32 QKeyEvent::nativeVirtualKey();
-quint32 _ZNK9QKeyEvent16nativeVirtualKeyEv(void *that)
-
+// QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const class QString &, _Bool, ushort)
+QKeyEvent* dector_ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt(QEvent::Type type, int key, Qt::KeyboardModifiers modifiers, unsigned int nativeScanCode, unsigned int nativeVirtualKey, unsigned int nativeModifiers, const QString & text, bool autorep, unsigned short count)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  return cthat->nativeVirtualKey();
+  // static_assert(sizeof(QKeyEvent) == 32, "tyszerr");
+  QKeyEvent* rthis = new QKeyEvent(type, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count);
+  return rthis;
 }
-
-  // proto:  bool QKeyEvent::isAutoRepeat();
-bool _ZNK9QKeyEvent12isAutoRepeatEv(void *that)
 
+// QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
+QContextMenuEvent* dector_ZN17QContextMenuEventC1ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  return cthat->isAutoRepeat();
+  // static_assert(sizeof(QContextMenuEvent) == 32, "tyszerr");
+  QContextMenuEvent* rthis = new QContextMenuEvent(reason, pos, globalPos);
+  return rthis;
 }
 
-  // proto:  quint32 QKeyEvent::nativeModifiers();
-quint32 _ZNK9QKeyEvent15nativeModifiersEv(void *that)
-
+// QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)
+QContextMenuEvent* dector_ZN17QContextMenuEventC1ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos, Qt::KeyboardModifiers modifiers)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  return cthat->nativeModifiers();
+  // static_assert(sizeof(QContextMenuEvent) == 32, "tyszerr");
+  QContextMenuEvent* rthis = new QContextMenuEvent(reason, pos, globalPos, modifiers);
+  return rthis;
 }
-
-  // proto:  quint32 QKeyEvent::nativeScanCode();
-quint32 _ZNK9QKeyEvent14nativeScanCodeEv(void *that)
 
+// QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
+QContextMenuEvent* dector_ZN17QContextMenuEventC1ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, const QPoint & pos)
 {
-  QKeyEvent *cthat = (QKeyEvent *)that;
-  return cthat->nativeScanCode();
+  // static_assert(sizeof(QContextMenuEvent) == 32, "tyszerr");
+  QContextMenuEvent* rthis = new QContextMenuEvent(reason, pos);
+  return rthis;
 }
 
-  // proto:  const QPoint & QContextMenuEvent::globalPos();
-const QPoint * _ZNK17QContextMenuEvent9globalPosEv(void *that)
-
+// ~QContextMenuEvent()
+void dedtor_ZN17QContextMenuEventD0Ev(QContextMenuEvent* that)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return &cthat->globalPos();
+  QContextMenuEvent* rthis = (QContextMenuEvent*)that;
+  delete rthis;
 }
 
-  // proto:  int QContextMenuEvent::globalY();
-int _ZNK17QContextMenuEvent7globalYEv(void *that)
-
+// QScrollPrepareEvent(const class QPointF &)
+QScrollPrepareEvent* dector_ZN19QScrollPrepareEventC1ERK7QPointF(const QPointF & startPos)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return cthat->globalY();
+  // static_assert(sizeof(QScrollPrepareEvent) == 112, "tyszerr");
+  QScrollPrepareEvent* rthis = new QScrollPrepareEvent(startPos);
+  return rthis;
 }
-
-  // proto:  int QContextMenuEvent::globalX();
-int _ZNK17QContextMenuEvent7globalXEv(void *that)
 
+// ~QScrollPrepareEvent()
+void dedtor_ZN19QScrollPrepareEventD0Ev(QScrollPrepareEvent* that)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return cthat->globalX();
+  QScrollPrepareEvent* rthis = (QScrollPrepareEvent*)that;
+  delete rthis;
 }
 
-  // proto:  const QPoint & QContextMenuEvent::pos();
-const QPoint * _ZNK17QContextMenuEvent3posEv(void *that)
-
+// ~QShortcutEvent()
+void dedtor_ZN14QShortcutEventD0Ev(QShortcutEvent* that)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return &cthat->pos();
+  QShortcutEvent* rthis = (QShortcutEvent*)that;
+  delete rthis;
 }
 
-  // proto:  int QContextMenuEvent::y();
-int _ZNK17QContextMenuEvent1yEv(void *that)
-
+// QShortcutEvent(const class QKeySequence &, int, _Bool)
+QShortcutEvent* dector_ZN14QShortcutEventC1ERK12QKeySequenceib(const QKeySequence & key, int id, bool ambiguous)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return cthat->y();
+  // static_assert(sizeof(QShortcutEvent) == 40, "tyszerr");
+  QShortcutEvent* rthis = new QShortcutEvent(key, id, ambiguous);
+  return rthis;
 }
-
-  // proto:  int QContextMenuEvent::x();
-int _ZNK17QContextMenuEvent1xEv(void *that)
 
+// ~QWindowStateChangeEvent()
+void dedtor_ZN23QWindowStateChangeEventD0Ev(QWindowStateChangeEvent* that)
 {
-  QContextMenuEvent *cthat = (QContextMenuEvent *)that;
-  return cthat->x();
+  QWindowStateChangeEvent* rthis = (QWindowStateChangeEvent*)that;
+  delete rthis;
 }
 
-  // proto:  const QKeySequence & QShortcutEvent::key();
-const QKeySequence * _ZNK14QShortcutEvent3keyEv(void *that)
-
+// QWindowStateChangeEvent(Qt::WindowStates, _Bool)
+QWindowStateChangeEvent* dector_ZN23QWindowStateChangeEventC1E6QFlagsIN2Qt11WindowStateEEb(Qt::WindowStates aOldState, bool isOverride)
 {
-  QShortcutEvent *cthat = (QShortcutEvent *)that;
-  return &cthat->key();
+  // static_assert(sizeof(QWindowStateChangeEvent) == 32, "tyszerr");
+  QWindowStateChangeEvent* rthis = new QWindowStateChangeEvent(aOldState, isOverride);
+  return rthis;
 }
 
-  // proto:  bool QShortcutEvent::isAmbiguous();
-bool _ZNK14QShortcutEvent11isAmbiguousEv(void *that)
-
+// ~QInputMethodQueryEvent()
+void dedtor_ZN22QInputMethodQueryEventD0Ev(QInputMethodQueryEvent* that)
 {
-  QShortcutEvent *cthat = (QShortcutEvent *)that;
-  return cthat->isAmbiguous();
+  QInputMethodQueryEvent* rthis = (QInputMethodQueryEvent*)that;
+  delete rthis;
 }
-
-  // proto:  int QShortcutEvent::shortcutId();
-int _ZNK14QShortcutEvent10shortcutIdEv(void *that)
 
+// QInputMethodQueryEvent(Qt::InputMethodQueries)
+QInputMethodQueryEvent* dector_ZN22QInputMethodQueryEventC1E6QFlagsIN2Qt16InputMethodQueryEE(Qt::InputMethodQueries queries)
 {
-  QShortcutEvent *cthat = (QShortcutEvent *)that;
-  return cthat->shortcutId();
+  // static_assert(sizeof(QInputMethodQueryEvent) == 32, "tyszerr");
+  QInputMethodQueryEvent* rthis = new QInputMethodQueryEvent(queries);
+  return rthis;
 }
 
 }; // <= extern "C" block end

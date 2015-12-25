@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qapplication.h
 // dst-file: /src/widgets/qapplication.cxx
 //
@@ -9,20 +9,19 @@
 
 extern "C" {
 
-  // proto: static QWidget * QApplication::widgetAt(int x, int y);
-QWidget * _ZN12QApplication8widgetAtEii(void *that, int x, int y)
-
+// QApplication(int &, char **, int)
+QApplication* dector_ZN12QApplicationC1ERiPPci(int & argc, char ** argv, int arg3)
 {
-  QApplication *cthat = (QApplication *)that;
-  return cthat->widgetAt(x, y);
+  // static_assert(sizeof(QApplication) == 32, "tyszerr");
+  QApplication* rthis = new QApplication(argc, argv, arg3);
+  return rthis;
 }
 
-  // proto: static QWidget * QApplication::topLevelAt(int x, int y);
-QWidget * _ZN12QApplication10topLevelAtEii(void *that, int x, int y)
-
+// ~QApplication()
+void dedtor_ZN12QApplicationD0Ev(QApplication* that)
 {
-  QApplication *cthat = (QApplication *)that;
-  return cthat->topLevelAt(x, y);
+  QApplication* rthis = (QApplication*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

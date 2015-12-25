@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qcoreevent.h
 // dst-file: /src/core/qcoreevent.cxx
 //
@@ -9,53 +9,87 @@
 
 extern "C" {
 
-  // proto:  QByteArray QDynamicPropertyChangeEvent::propertyName();
-QByteArray* _ZNK27QDynamicPropertyChangeEvent12propertyNameEv(void *that)
-
+// ~QDeferredDeleteEvent()
+void dedtor_ZN20QDeferredDeleteEventD0Ev(QDeferredDeleteEvent* that)
 {
-  QDynamicPropertyChangeEvent *cthat = (QDynamicPropertyChangeEvent *)that;
-  auto recret = cthat->propertyName();
-  return new QByteArray(recret);
+  QDeferredDeleteEvent* rthis = (QDeferredDeleteEvent*)that;
+  delete rthis;
 }
 
-  // proto:  void QEvent::setAccepted(bool accepted);
-void _ZN6QEvent11setAcceptedEb(void *that, bool accepted)
-
+// QDeferredDeleteEvent()
+QDeferredDeleteEvent* dector_ZN20QDeferredDeleteEventC1Ev()
 {
-  QEvent *cthat = (QEvent *)that;
-   cthat->setAccepted(accepted);
+  // static_assert(sizeof(QDeferredDeleteEvent) == 32, "tyszerr");
+  QDeferredDeleteEvent* rthis = new QDeferredDeleteEvent();
+  return rthis;
 }
 
-  // proto:  void QEvent::ignore();
-void _ZN6QEvent6ignoreEv(void *that)
-
+// ~QDynamicPropertyChangeEvent()
+void dedtor_ZN27QDynamicPropertyChangeEventD0Ev(QDynamicPropertyChangeEvent* that)
 {
-  QEvent *cthat = (QEvent *)that;
-   cthat->ignore();
+  QDynamicPropertyChangeEvent* rthis = (QDynamicPropertyChangeEvent*)that;
+  delete rthis;
 }
 
-  // proto:  bool QEvent::isAccepted();
-bool _ZNK6QEvent10isAcceptedEv(void *that)
-
+// QDynamicPropertyChangeEvent(const class QByteArray &)
+QDynamicPropertyChangeEvent* dector_ZN27QDynamicPropertyChangeEventC1ERK10QByteArray(const QByteArray & name)
 {
-  QEvent *cthat = (QEvent *)that;
-  return cthat->isAccepted();
+  // static_assert(sizeof(QDynamicPropertyChangeEvent) == 32, "tyszerr");
+  QDynamicPropertyChangeEvent* rthis = new QDynamicPropertyChangeEvent(name);
+  return rthis;
 }
 
-  // proto:  void QEvent::accept();
-void _ZN6QEvent6acceptEv(void *that)
-
+// QTimerEvent(int)
+QTimerEvent* dector_ZN11QTimerEventC1Ei(int timerId)
 {
-  QEvent *cthat = (QEvent *)that;
-   cthat->accept();
+  // static_assert(sizeof(QTimerEvent) == 32, "tyszerr");
+  QTimerEvent* rthis = new QTimerEvent(timerId);
+  return rthis;
 }
 
-  // proto:  bool QEvent::spontaneous();
-bool _ZNK6QEvent11spontaneousEv(void *that)
-
+// ~QTimerEvent()
+void dedtor_ZN11QTimerEventD0Ev(QTimerEvent* that)
 {
-  QEvent *cthat = (QEvent *)that;
-  return cthat->spontaneous();
+  QTimerEvent* rthis = (QTimerEvent*)that;
+  delete rthis;
+}
+
+// QChildEvent(enum QEvent::Type, class QObject *)
+QChildEvent* dector_ZN11QChildEventC1EN6QEvent4TypeEP7QObject(QEvent::Type type, QObject * child)
+{
+  // static_assert(sizeof(QChildEvent) == 32, "tyszerr");
+  QChildEvent* rthis = new QChildEvent(type, child);
+  return rthis;
+}
+
+// ~QChildEvent()
+void dedtor_ZN11QChildEventD0Ev(QChildEvent* that)
+{
+  QChildEvent* rthis = (QChildEvent*)that;
+  delete rthis;
+}
+
+// QEvent(enum QEvent::Type)
+QEvent* dector_ZN6QEventC1ENS_4TypeE(QEvent::Type type)
+{
+  // static_assert(sizeof(QEvent) == 32, "tyszerr");
+  QEvent* rthis = new QEvent(type);
+  return rthis;
+}
+
+// ~QEvent()
+void dedtor_ZN6QEventD0Ev(QEvent* that)
+{
+  QEvent* rthis = (QEvent*)that;
+  delete rthis;
+}
+
+// QEvent(const class QEvent &)
+QEvent* dector_ZN6QEventC1ERKS_(const QEvent & other)
+{
+  // static_assert(sizeof(QEvent) == 32, "tyszerr");
+  QEvent* rthis = new QEvent(other);
+  return rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qdir.h
 // dst-file: /src/core/qdir.cxx
 //
@@ -9,64 +9,35 @@
 
 extern "C" {
 
-  // proto: static bool QDir::isAbsolutePath(const QString & path);
-bool _ZN4QDir14isAbsolutePathERK7QString(void *that, const QString & path)
-
+// QDir(const class QString &)
+QDir* dector_ZN4QDirC1ERK7QString(const QString & path)
 {
-  QDir *cthat = (QDir *)that;
-  return cthat->isAbsolutePath(path);
+  // static_assert(sizeof(QDir) == 32, "tyszerr");
+  QDir* rthis = new QDir(path);
+  return rthis;
 }
 
-  // proto: static QDir QDir::root();
-QDir* _ZN4QDir4rootEv(void *that)
-
+// QDir(const class QString &, const class QString &, SortFlags, Filters)
+QDir* dector_ZN4QDirC1ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(const QString & path, const QString & nameFilter, QDir::SortFlag sort, QDir::Filter filter)
 {
-  QDir *cthat = (QDir *)that;
-  auto recret = cthat->root();
-  return new QDir(recret);
+  // static_assert(sizeof(QDir) == 32, "tyszerr");
+  QDir* rthis = new QDir(path, nameFilter, sort, filter);
+  return rthis;
 }
 
-  // proto: static QDir QDir::current();
-QDir* _ZN4QDir7currentEv(void *that)
-
+// ~QDir()
+void dedtor_ZN4QDirD0Ev(QDir* that)
 {
-  QDir *cthat = (QDir *)that;
-  auto recret = cthat->current();
-  return new QDir(recret);
+  QDir* rthis = (QDir*)that;
+  delete rthis;
 }
 
-  // proto: static QDir QDir::home();
-QDir* _ZN4QDir4homeEv(void *that)
-
+// QDir(const class QDir &)
+QDir* dector_ZN4QDirC1ERKS_(const QDir & arg1)
 {
-  QDir *cthat = (QDir *)that;
-  auto recret = cthat->home();
-  return new QDir(recret);
-}
-
-  // proto:  void QDir::swap(QDir & other);
-void _ZN4QDir4swapERS_(void *that, QDir & other)
-
-{
-  QDir *cthat = (QDir *)that;
-   cthat->swap(other);
-}
-
-  // proto: static QDir QDir::temp();
-QDir* _ZN4QDir4tempEv(void *that)
-
-{
-  QDir *cthat = (QDir *)that;
-  auto recret = cthat->temp();
-  return new QDir(recret);
-}
-
-  // proto:  bool QDir::isAbsolute();
-bool _ZNK4QDir10isAbsoluteEv(void *that)
-
-{
-  QDir *cthat = (QDir *)that;
-  return cthat->isAbsolute();
+  // static_assert(sizeof(QDir) == 32, "tyszerr");
+  QDir* rthis = new QDir(arg1);
+  return rthis;
 }
 
 }; // <= extern "C" block end

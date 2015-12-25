@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qtimeline.h
 // dst-file: /src/core/qtimeline.cxx
 //
@@ -8,6 +8,21 @@
 #include <qtimeline.h>
 
 extern "C" {
+
+// ~QTimeLine()
+void dedtor_ZN9QTimeLineD0Ev(QTimeLine* that)
+{
+  QTimeLine* rthis = (QTimeLine*)that;
+  delete rthis;
+}
+
+// QTimeLine(int, class QObject *)
+QTimeLine* dector_ZN9QTimeLineC1EiP7QObject(int duration, QObject * parent)
+{
+  // static_assert(sizeof(QTimeLine) == 32, "tyszerr");
+  QTimeLine* rthis = new QTimeLine(duration, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

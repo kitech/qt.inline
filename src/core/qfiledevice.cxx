@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qfiledevice.h
 // dst-file: /src/core/qfiledevice.cxx
 //
@@ -8,6 +8,13 @@
 #include <qfiledevice.h>
 
 extern "C" {
+
+// ~QFileDevice()
+void dedtor_ZN11QFileDeviceD0Ev(QFileDevice* that)
+{
+  QFileDevice* rthis = (QFileDevice*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

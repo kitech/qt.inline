@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -9,40 +9,43 @@
 
 extern "C" {
 
-  // proto:  QString QFile::symLinkTarget();
-QString* _ZNK5QFile13symLinkTargetEv(void *that)
-
+// QFile()
+QFile* dector_ZN5QFileC1Ev()
 {
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->symLinkTarget();
-  return new QString(recret);
+  // static_assert(sizeof(QFile) == 32, "tyszerr");
+  QFile* rthis = new QFile();
+  return rthis;
 }
 
-  // proto: static QByteArray QFile::encodeName(const QString & fileName);
-QByteArray* _ZN5QFile10encodeNameERK7QString(void *that, const QString & fileName)
-
+// QFile(class QObject *)
+QFile* dector_ZN5QFileC1EP7QObject(QObject * parent)
 {
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->encodeName(fileName);
-  return new QByteArray(recret);
+  // static_assert(sizeof(QFile) == 32, "tyszerr");
+  QFile* rthis = new QFile(parent);
+  return rthis;
 }
 
-  // proto: static QString QFile::decodeName(const char * localFileName);
-QString* _ZN5QFile10decodeNameEPKc(void *that, const char * localFileName)
-
+// ~QFile()
+void dedtor_ZN5QFileD0Ev(QFile* that)
 {
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->decodeName(localFileName);
-  return new QString(recret);
+  QFile* rthis = (QFile*)that;
+  delete rthis;
 }
 
-  // proto: static QString QFile::symLinkTarget(const QString & fileName);
-QString* _ZN5QFile13symLinkTargetERK7QString(void *that, const QString & fileName)
-
+// QFile(const class QString &, class QObject *)
+QFile* dector_ZN5QFileC1ERK7QStringP7QObject(const QString & name, QObject * parent)
 {
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->symLinkTarget(fileName);
-  return new QString(recret);
+  // static_assert(sizeof(QFile) == 32, "tyszerr");
+  QFile* rthis = new QFile(name, parent);
+  return rthis;
+}
+
+// QFile(const class QString &)
+QFile* dector_ZN5QFileC1ERK7QString(const QString & name)
+{
+  // static_assert(sizeof(QFile) == 32, "tyszerr");
+  QFile* rthis = new QFile(name);
+  return rthis;
 }
 
 }; // <= extern "C" block end

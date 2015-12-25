@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qtextboundaryfinder.h
 // dst-file: /src/core/qtextboundaryfinder.cxx
 //
@@ -9,12 +9,43 @@
 
 extern "C" {
 
-  // proto:  bool QTextBoundaryFinder::isValid();
-bool _ZNK19QTextBoundaryFinder7isValidEv(void *that)
-
+// QTextBoundaryFinder(const class QTextBoundaryFinder &)
+QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1ERKS_(const QTextBoundaryFinder & other)
 {
-  QTextBoundaryFinder *cthat = (QTextBoundaryFinder *)that;
-  return cthat->isValid();
+  // static_assert(sizeof(QTextBoundaryFinder) == 48, "tyszerr");
+  QTextBoundaryFinder* rthis = new QTextBoundaryFinder(other);
+  return rthis;
+}
+
+// QTextBoundaryFinder()
+QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1Ev()
+{
+  // static_assert(sizeof(QTextBoundaryFinder) == 48, "tyszerr");
+  QTextBoundaryFinder* rthis = new QTextBoundaryFinder();
+  return rthis;
+}
+
+// QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
+QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type, const QChar * chars, int length, unsigned char * buffer, int bufferSize)
+{
+  // static_assert(sizeof(QTextBoundaryFinder) == 48, "tyszerr");
+  QTextBoundaryFinder* rthis = new QTextBoundaryFinder(type, chars, length, buffer, bufferSize);
+  return rthis;
+}
+
+// ~QTextBoundaryFinder()
+void dedtor_ZN19QTextBoundaryFinderD0Ev(QTextBoundaryFinder* that)
+{
+  QTextBoundaryFinder* rthis = (QTextBoundaryFinder*)that;
+  delete rthis;
+}
+
+// QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
+QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type, const QString & string)
+{
+  // static_assert(sizeof(QTextBoundaryFinder) == 48, "tyszerr");
+  QTextBoundaryFinder* rthis = new QTextBoundaryFinder(type, string);
+  return rthis;
 }
 
 }; // <= extern "C" block end

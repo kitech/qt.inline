@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qprogressbar.h
 // dst-file: /src/widgets/qprogressbar.cxx
 //
@@ -8,6 +8,21 @@
 #include <qprogressbar.h>
 
 extern "C" {
+
+// QProgressBar(class QWidget *)
+QProgressBar* dector_ZN12QProgressBarC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QProgressBar) == 32, "tyszerr");
+  QProgressBar* rthis = new QProgressBar(parent);
+  return rthis;
+}
+
+// ~QProgressBar()
+void dedtor_ZN12QProgressBarD0Ev(QProgressBar* that)
+{
+  QProgressBar* rthis = (QProgressBar*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

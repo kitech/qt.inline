@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -9,17 +9,32 @@
 
 extern "C" {
 
-  // proto:  void QMatrix::QMatrix(Qt::Initialization );
-void _ZN7QMatrixC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
-
+// QMatrix()
+QMatrix* dector_ZN7QMatrixC1Ev()
 {
-  QMatrix *cthat = (QMatrix *)that;
-  auto _o = new(that) QMatrix(arg1);
+  // static_assert(sizeof(QMatrix) == 48, "tyszerr");
+  QMatrix* rthis = new QMatrix();
+  return rthis;
+}
+
+// QMatrix(const class QMatrix &)
+QMatrix* dector_ZN7QMatrixC1ERKS_(const QMatrix & matrix)
+{
+  // static_assert(sizeof(QMatrix) == 48, "tyszerr");
+  QMatrix* rthis = new QMatrix(matrix);
+  return rthis;
+}
+
+// QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
+QMatrix* dector_ZN7QMatrixC1Edddddd(double m11, double m12, double m21, double m22, double dx, double dy)
+{
+  // static_assert(sizeof(QMatrix) == 48, "tyszerr");
+  QMatrix* rthis = new QMatrix(m11, m12, m21, m22, dx, dy);
+  return rthis;
 }
 
   // proto:  bool QMatrix::isIdentity();
 bool _ZNK7QMatrix10isIdentityEv(void *that)
-
 {
   QMatrix *cthat = (QMatrix *)that;
   return cthat->isIdentity();

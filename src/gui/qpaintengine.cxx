@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qpaintengine.h
 // dst-file: /src/gui/qpaintengine.cxx
 //
@@ -11,7 +11,6 @@ extern "C" {
 
   // proto:  void QPaintEngine::clearDirty(DirtyFlags df);
 void _ZN12QPaintEngine10clearDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngine::DirtyFlag df)
-
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
    cthat->clearDirty(df);
@@ -19,7 +18,6 @@ void _ZN12QPaintEngine10clearDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEng
 
   // proto:  bool QPaintEngine::testDirty(DirtyFlags df);
 bool _ZN12QPaintEngine9testDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngine::DirtyFlag df)
-
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
   return cthat->testDirty(df);
@@ -27,7 +25,6 @@ bool _ZN12QPaintEngine9testDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngin
 
   // proto:  void QPaintEngine::setDirty(DirtyFlags df);
 void _ZN12QPaintEngine8setDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngine::DirtyFlag df)
-
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
    cthat->setDirty(df);
@@ -35,18 +32,9 @@ void _ZN12QPaintEngine8setDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngine
 
   // proto:  void QPaintEngine::fix_neg_rect(int * x, int * y, int * w, int * h);
 void _ZN12QPaintEngine12fix_neg_rectEPiS0_S0_S0_(void *that, int * x, int * y, int * w, int * h)
-
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
    cthat->fix_neg_rect(x, y, w, h);
-}
-
-  // proto:  bool QPaintEngine::isExtended();
-bool _ZNK12QPaintEngine10isExtendedEv(void *that)
-
-{
-  QPaintEngine *cthat = (QPaintEngine *)that;
-  return cthat->isExtended();
 }
 
 }; // <= extern "C" block end

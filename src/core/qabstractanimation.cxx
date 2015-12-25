@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qabstractanimation.h
 // dst-file: /src/core/qabstractanimation.cxx
 //
@@ -8,6 +8,21 @@
 #include <qabstractanimation.h>
 
 extern "C" {
+
+// ~QAnimationDriver()
+void dedtor_ZN16QAnimationDriverD0Ev(QAnimationDriver* that)
+{
+  QAnimationDriver* rthis = (QAnimationDriver*)that;
+  delete rthis;
+}
+
+// QAnimationDriver(class QObject *)
+QAnimationDriver* dector_ZN16QAnimationDriverC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QAnimationDriver) == 32, "tyszerr");
+  QAnimationDriver* rthis = new QAnimationDriver(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

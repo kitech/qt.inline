@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qundogroup.h
 // dst-file: /src/widgets/qundogroup.cxx
 //
@@ -8,6 +8,21 @@
 #include <qundogroup.h>
 
 extern "C" {
+
+// QUndoGroup(class QObject *)
+QUndoGroup* dector_ZN10QUndoGroupC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QUndoGroup) == 32, "tyszerr");
+  QUndoGroup* rthis = new QUndoGroup(parent);
+  return rthis;
+}
+
+// ~QUndoGroup()
+void dedtor_ZN10QUndoGroupD0Ev(QUndoGroup* that)
+{
+  QUndoGroup* rthis = (QUndoGroup*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

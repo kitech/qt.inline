@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qlockfile.h
 // dst-file: /src/core/qlockfile.cxx
 //
@@ -8,6 +8,21 @@
 #include <qlockfile.h>
 
 extern "C" {
+
+// ~QLockFile()
+void dedtor_ZN9QLockFileD0Ev(QLockFile* that)
+{
+  QLockFile* rthis = (QLockFile*)that;
+  delete rthis;
+}
+
+// QLockFile(const class QString &)
+QLockFile* dector_ZN9QLockFileC1ERK7QString(const QString & fileName)
+{
+  // static_assert(sizeof(QLockFile) == 32, "tyszerr");
+  QLockFile* rthis = new QLockFile(fileName);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qeasingcurve.h
 // dst-file: /src/core/qeasingcurve.cxx
 //
@@ -9,12 +9,27 @@
 
 extern "C" {
 
-  // proto:  void QEasingCurve::swap(QEasingCurve & other);
-void _ZN12QEasingCurve4swapERS_(void *that, QEasingCurve & other)
-
+// QEasingCurve(enum QEasingCurve::Type)
+QEasingCurve* dector_ZN12QEasingCurveC1ENS_4TypeE(QEasingCurve::Type type)
 {
-  QEasingCurve *cthat = (QEasingCurve *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QEasingCurve) == 32, "tyszerr");
+  QEasingCurve* rthis = new QEasingCurve(type);
+  return rthis;
+}
+
+// ~QEasingCurve()
+void dedtor_ZN12QEasingCurveD0Ev(QEasingCurve* that)
+{
+  QEasingCurve* rthis = (QEasingCurve*)that;
+  delete rthis;
+}
+
+// QEasingCurve(const class QEasingCurve &)
+QEasingCurve* dector_ZN12QEasingCurveC1ERKS_(const QEasingCurve & other)
+{
+  // static_assert(sizeof(QEasingCurve) == 32, "tyszerr");
+  QEasingCurve* rthis = new QEasingCurve(other);
+  return rthis;
 }
 
 }; // <= extern "C" block end

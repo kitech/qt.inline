@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -9,15 +9,34 @@
 
 extern "C" {
 
-  // proto:  void QLayoutItem::QLayoutItem(Qt::Alignment alignment);
-    /*
-void _ZN11QLayoutItemC1E6QFlagsIN2Qt13AlignmentFlagEE(void *that, Qt::Alignment alignment)
-
+// ~QSpacerItem()
+void dedtor_ZN11QSpacerItemD0Ev(QSpacerItem* that)
 {
-  QLayoutItem *cthat = (QLayoutItem *)that;
-  auto _o = new(that) QLayoutItem(alignment);
+  QSpacerItem* rthis = (QSpacerItem*)that;
+  delete rthis;
 }
-    */
+
+// ~QWidgetItem()
+void dedtor_ZN11QWidgetItemD0Ev(QWidgetItem* that)
+{
+  QWidgetItem* rthis = (QWidgetItem*)that;
+  delete rthis;
+}
+
+// ~QWidgetItemV2()
+void dedtor_ZN13QWidgetItemV2D0Ev(QWidgetItemV2* that)
+{
+  QWidgetItemV2* rthis = (QWidgetItemV2*)that;
+  delete rthis;
+}
+
+// QWidgetItemV2(class QWidget *)
+QWidgetItemV2* dector_ZN13QWidgetItemV2C1EP7QWidget(QWidget * widget)
+{
+  // static_assert(sizeof(QWidgetItemV2) == 32, "tyszerr");
+  QWidgetItemV2* rthis = new QWidgetItemV2(widget);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

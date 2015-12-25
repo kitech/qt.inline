@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qiodevice.h
 // dst-file: /src/core/qiodevice.cxx
 //
@@ -8,14 +8,6 @@
 #include <qiodevice.h>
 
 extern "C" {
-
-  // proto:  qint64 QIODevice::write(const QByteArray & data);
-qint64 _ZN9QIODevice5writeERK10QByteArray(void *that, const QByteArray & data)
-
-{
-  QIODevice *cthat = (QIODevice *)that;
-  return cthat->write(data);
-}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qsavefile.h
 // dst-file: /src/core/qsavefile.cxx
 //
@@ -8,6 +8,37 @@
 #include <qsavefile.h>
 
 extern "C" {
+
+// QSaveFile(const class QString &, class QObject *)
+QSaveFile* dector_ZN9QSaveFileC1ERK7QStringP7QObject(const QString & name, QObject * parent)
+{
+  // static_assert(sizeof(QSaveFile) == 32, "tyszerr");
+  QSaveFile* rthis = new QSaveFile(name, parent);
+  return rthis;
+}
+
+// QSaveFile(class QObject *)
+QSaveFile* dector_ZN9QSaveFileC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QSaveFile) == 32, "tyszerr");
+  QSaveFile* rthis = new QSaveFile(parent);
+  return rthis;
+}
+
+// ~QSaveFile()
+void dedtor_ZN9QSaveFileD0Ev(QSaveFile* that)
+{
+  QSaveFile* rthis = (QSaveFile*)that;
+  delete rthis;
+}
+
+// QSaveFile(const class QString &)
+QSaveFile* dector_ZN9QSaveFileC1ERK7QString(const QString & name)
+{
+  // static_assert(sizeof(QSaveFile) == 32, "tyszerr");
+  QSaveFile* rthis = new QSaveFile(name);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

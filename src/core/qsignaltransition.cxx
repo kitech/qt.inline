@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qsignaltransition.h
 // dst-file: /src/core/qsignaltransition.cxx
 //
@@ -8,6 +8,29 @@
 #include <qsignaltransition.h>
 
 extern "C" {
+
+// QSignalTransition(const class QObject *, const char *, class QState *)
+QSignalTransition* dector_ZN17QSignalTransitionC1EPK7QObjectPKcP6QState(const QObject * sender, const char * signal, QState * sourceState)
+{
+  // static_assert(sizeof(QSignalTransition) == 32, "tyszerr");
+  QSignalTransition* rthis = new QSignalTransition(sender, signal, sourceState);
+  return rthis;
+}
+
+// QSignalTransition(class QState *)
+QSignalTransition* dector_ZN17QSignalTransitionC1EP6QState(QState * sourceState)
+{
+  // static_assert(sizeof(QSignalTransition) == 32, "tyszerr");
+  QSignalTransition* rthis = new QSignalTransition(sourceState);
+  return rthis;
+}
+
+// ~QSignalTransition()
+void dedtor_ZN17QSignalTransitionD0Ev(QSignalTransition* that)
+{
+  QSignalTransition* rthis = (QSignalTransition*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

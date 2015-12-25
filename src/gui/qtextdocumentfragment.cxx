@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qtextdocumentfragment.h
 // dst-file: /src/gui/qtextdocumentfragment.cxx
 //
@@ -8,6 +8,45 @@
 #include <qtextdocumentfragment.h>
 
 extern "C" {
+
+// QTextDocumentFragment(const class QTextDocumentFragment &)
+QTextDocumentFragment* dector_ZN21QTextDocumentFragmentC1ERKS_(const QTextDocumentFragment & rhs)
+{
+  // static_assert(sizeof(QTextDocumentFragment) == 32, "tyszerr");
+  QTextDocumentFragment* rthis = new QTextDocumentFragment(rhs);
+  return rthis;
+}
+
+// ~QTextDocumentFragment()
+void dedtor_ZN21QTextDocumentFragmentD0Ev(QTextDocumentFragment* that)
+{
+  QTextDocumentFragment* rthis = (QTextDocumentFragment*)that;
+  delete rthis;
+}
+
+// QTextDocumentFragment()
+QTextDocumentFragment* dector_ZN21QTextDocumentFragmentC1Ev()
+{
+  // static_assert(sizeof(QTextDocumentFragment) == 32, "tyszerr");
+  QTextDocumentFragment* rthis = new QTextDocumentFragment();
+  return rthis;
+}
+
+// QTextDocumentFragment(const class QTextCursor &)
+QTextDocumentFragment* dector_ZN21QTextDocumentFragmentC1ERK11QTextCursor(const QTextCursor & range)
+{
+  // static_assert(sizeof(QTextDocumentFragment) == 32, "tyszerr");
+  QTextDocumentFragment* rthis = new QTextDocumentFragment(range);
+  return rthis;
+}
+
+// QTextDocumentFragment(const class QTextDocument *)
+QTextDocumentFragment* dector_ZN21QTextDocumentFragmentC1EPK13QTextDocument(const QTextDocument * document)
+{
+  // static_assert(sizeof(QTextDocumentFragment) == 32, "tyszerr");
+  QTextDocumentFragment* rthis = new QTextDocumentFragment(document);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

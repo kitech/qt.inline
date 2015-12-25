@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qjsonvalue.h
 // dst-file: /src/core/qjsonvalue.cxx
 //
@@ -9,198 +9,91 @@
 
 extern "C" {
 
-  // proto:  bool QJsonValue::isDouble();
-bool _ZNK10QJsonValue8isDoubleEv(void *that)
-
+// QJsonValue(enum QJsonValue::Type)
+QJsonValue* dector_ZN10QJsonValueC1ENS_4TypeE(QJsonValue::Type arg1)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isDouble();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(arg1);
+  return rthis;
 }
 
-  // proto:  bool QJsonValue::isArray();
-bool _ZNK10QJsonValue7isArrayEv(void *that)
-
+// QJsonValue(const class QString &)
+QJsonValue* dector_ZN10QJsonValueC1ERK7QString(const QString & s)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isArray();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(s);
+  return rthis;
 }
 
-  // proto:  void QJsonValue::QJsonValue(const char * s);
-void _ZN10QJsonValueC1EPKc(void *that, const char * s)
-
+// QJsonValue(const class QJsonArray &)
+QJsonValue* dector_ZN10QJsonValueC1ERK10QJsonArray(const QJsonArray & a)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  auto _o = new(that) QJsonValue(s);
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(a);
+  return rthis;
 }
 
-  // proto:  bool QJsonValue::isObject();
-bool _ZNK10QJsonValue8isObjectEv(void *that)
-
+// QJsonValue(class QLatin1String)
+QJsonValue* dector_ZN10QJsonValueC1E13QLatin1String(QLatin1String s)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isObject();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(s);
+  return rthis;
 }
 
-  // proto:  bool QJsonValue::isBool();
-bool _ZNK10QJsonValue6isBoolEv(void *that)
-
+// ~QJsonValue()
+void dedtor_ZN10QJsonValueD0Ev(QJsonValue* that)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isBool();
+  QJsonValue* rthis = (QJsonValue*)that;
+  delete rthis;
 }
 
-  // proto:  bool QJsonValue::isUndefined();
-bool _ZNK10QJsonValue11isUndefinedEv(void *that)
-
+// QJsonValue(const class QJsonValue &)
+QJsonValue* dector_ZN10QJsonValueC1ERKS_(const QJsonValue & other)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isUndefined();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(other);
+  return rthis;
 }
 
-  // proto:  bool QJsonValue::isNull();
-bool _ZNK10QJsonValue6isNullEv(void *that)
-
+// QJsonValue(double)
+QJsonValue* dector_ZN10QJsonValueC1Ed(double n)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isNull();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(n);
+  return rthis;
 }
 
-  // proto:  bool QJsonValue::isString();
-bool _ZNK10QJsonValue8isStringEv(void *that)
-
+// QJsonValue(_Bool)
+QJsonValue* dector_ZN10QJsonValueC1Eb(bool b)
 {
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isString();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(b);
+  return rthis;
 }
 
-  // proto:  bool QJsonValueRef::isBool();
-bool _ZNK13QJsonValueRef6isBoolEv(void *that)
-
+// QJsonValue(int)
+QJsonValue* dector_ZN10QJsonValueC1Ei(int n)
 {
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isBool();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(n);
+  return rthis;
 }
 
-  // proto:  bool QJsonValueRef::isDouble();
-bool _ZNK13QJsonValueRef8isDoubleEv(void *that)
-
+// QJsonValue(const class QJsonObject &)
+QJsonValue* dector_ZN10QJsonValueC1ERK11QJsonObject(const QJsonObject & o)
 {
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isDouble();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(o);
+  return rthis;
 }
 
-  // proto:  double QJsonValueRef::toDouble();
-double _ZNK13QJsonValueRef8toDoubleEv(void *that)
-
+// QJsonValue(qint64)
+QJsonValue* dector_ZN10QJsonValueC1Ex(long long n)
 {
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toDouble();
-}
-
-  // proto:  bool QJsonValueRef::toBool(bool defaultValue);
-bool _ZNK13QJsonValueRef6toBoolEb(void *that, bool defaultValue)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toBool(defaultValue);
-}
-
-  // proto:  double QJsonValueRef::toDouble(double defaultValue);
-double _ZNK13QJsonValueRef8toDoubleEd(void *that, double defaultValue)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toDouble(defaultValue);
-}
-
-  // proto:  bool QJsonValueRef::toBool();
-bool _ZNK13QJsonValueRef6toBoolEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toBool();
-}
-
-  // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
-QString* _ZNK13QJsonValueRef8toStringERK7QString(void *that, const QString & defaultValue)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto recret = cthat->toString(defaultValue);
-  return new QString(recret);
-}
-
-  // proto:  bool QJsonValueRef::isObject();
-bool _ZNK13QJsonValueRef8isObjectEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isObject();
-}
-
-  // proto:  bool QJsonValueRef::isString();
-bool _ZNK13QJsonValueRef8isStringEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isString();
-}
-
-  // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
-void _ZN13QJsonValueRefC1EP11QJsonObjecti(void *that, QJsonObject * object, int idx)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto _o = new(that) QJsonValueRef(object, idx);
-}
-
-  // proto:  QString QJsonValueRef::toString();
-QString* _ZNK13QJsonValueRef8toStringEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto recret = cthat->toString();
-  return new QString(recret);
-}
-
-  // proto:  int QJsonValueRef::toInt(int defaultValue);
-int _ZNK13QJsonValueRef5toIntEi(void *that, int defaultValue)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toInt(defaultValue);
-}
-
-  // proto:  bool QJsonValueRef::isArray();
-bool _ZNK13QJsonValueRef7isArrayEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isArray();
-}
-
-  // proto:  bool QJsonValueRef::isNull();
-bool _ZNK13QJsonValueRef6isNullEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isNull();
-}
-
-  // proto:  int QJsonValueRef::toInt();
-int _ZNK13QJsonValueRef5toIntEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toInt();
-}
-
-  // proto:  bool QJsonValueRef::isUndefined();
-bool _ZNK13QJsonValueRef11isUndefinedEv(void *that)
-
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isUndefined();
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(n);
+  return rthis;
 }
 
 }; // <= extern "C" block end

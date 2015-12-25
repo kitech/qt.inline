@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qstorageinfo.h
 // dst-file: /src/core/qstorageinfo.cxx
 //
@@ -9,20 +9,50 @@
 
 extern "C" {
 
+// QStorageInfo(const class QStorageInfo &)
+QStorageInfo* dector_ZN12QStorageInfoC1ERKS_(const QStorageInfo & other)
+{
+  // static_assert(sizeof(QStorageInfo) == 32, "tyszerr");
+  QStorageInfo* rthis = new QStorageInfo(other);
+  return rthis;
+}
+
+// ~QStorageInfo()
+void dedtor_ZN12QStorageInfoD0Ev(QStorageInfo* that)
+{
+  QStorageInfo* rthis = (QStorageInfo*)that;
+  delete rthis;
+}
+
+// QStorageInfo()
+QStorageInfo* dector_ZN12QStorageInfoC1Ev()
+{
+  // static_assert(sizeof(QStorageInfo) == 32, "tyszerr");
+  QStorageInfo* rthis = new QStorageInfo();
+  return rthis;
+}
+
+// QStorageInfo(const class QDir &)
+QStorageInfo* dector_ZN12QStorageInfoC1ERK4QDir(const QDir & dir)
+{
+  // static_assert(sizeof(QStorageInfo) == 32, "tyszerr");
+  QStorageInfo* rthis = new QStorageInfo(dir);
+  return rthis;
+}
+
+// QStorageInfo(const class QString &)
+QStorageInfo* dector_ZN12QStorageInfoC1ERK7QString(const QString & path)
+{
+  // static_assert(sizeof(QStorageInfo) == 32, "tyszerr");
+  QStorageInfo* rthis = new QStorageInfo(path);
+  return rthis;
+}
+
   // proto:  bool QStorageInfo::isRoot();
 bool _ZNK12QStorageInfo6isRootEv(void *that)
-
 {
   QStorageInfo *cthat = (QStorageInfo *)that;
   return cthat->isRoot();
-}
-
-  // proto:  void QStorageInfo::swap(QStorageInfo & other);
-void _ZN12QStorageInfo4swapERS_(void *that, QStorageInfo & other)
-
-{
-  QStorageInfo *cthat = (QStorageInfo *)that;
-   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

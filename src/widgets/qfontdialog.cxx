@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qfontdialog.h
 // dst-file: /src/widgets/qfontdialog.cxx
 //
@@ -8,6 +8,29 @@
 #include <qfontdialog.h>
 
 extern "C" {
+
+// QFontDialog(class QWidget *)
+QFontDialog* dector_ZN11QFontDialogC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QFontDialog) == 32, "tyszerr");
+  QFontDialog* rthis = new QFontDialog(parent);
+  return rthis;
+}
+
+// QFontDialog(const class QFont &, class QWidget *)
+QFontDialog* dector_ZN11QFontDialogC1ERK5QFontP7QWidget(const QFont & initial, QWidget * parent)
+{
+  // static_assert(sizeof(QFontDialog) == 32, "tyszerr");
+  QFontDialog* rthis = new QFontDialog(initial, parent);
+  return rthis;
+}
+
+// ~QFontDialog()
+void dedtor_ZN11QFontDialogD0Ev(QFontDialog* that)
+{
+  QFontDialog* rthis = (QFontDialog*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qtoolbutton.h
 // dst-file: /src/widgets/qtoolbutton.cxx
 //
@@ -8,6 +8,21 @@
 #include <qtoolbutton.h>
 
 extern "C" {
+
+// ~QToolButton()
+void dedtor_ZN11QToolButtonD0Ev(QToolButton* that)
+{
+  QToolButton* rthis = (QToolButton*)that;
+  delete rthis;
+}
+
+// QToolButton(class QWidget *)
+QToolButton* dector_ZN11QToolButtonC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QToolButton) == 32, "tyszerr");
+  QToolButton* rthis = new QToolButton(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

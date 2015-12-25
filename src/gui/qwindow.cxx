@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qwindow.h
 // dst-file: /src/gui/qwindow.cxx
 //
@@ -9,86 +9,27 @@
 
 extern "C" {
 
-  // proto:  int QWindow::minimumHeight();
-int _ZNK7QWindow13minimumHeightEv(void *that)
-
+// ~QWindow()
+void dedtor_ZN7QWindowD0Ev(QWindow* that)
 {
-  QWindow *cthat = (QWindow *)that;
-  return cthat->minimumHeight();
+  QWindow* rthis = (QWindow*)that;
+  delete rthis;
 }
 
-  // proto:  int QWindow::maximumHeight();
-int _ZNK7QWindow13maximumHeightEv(void *that)
-
+// QWindow(class QScreen *)
+QWindow* dector_ZN7QWindowC1EP7QScreen(QScreen * screen)
 {
-  QWindow *cthat = (QWindow *)that;
-  return cthat->maximumHeight();
+  // static_assert(sizeof(QWindow) == 32, "tyszerr");
+  QWindow* rthis = new QWindow(screen);
+  return rthis;
 }
 
-  // proto:  int QWindow::y();
-int _ZNK7QWindow1yEv(void *that)
-
+// QWindow(class QWindow *)
+QWindow* dector_ZN7QWindowC1EPS_(QWindow * parent)
 {
-  QWindow *cthat = (QWindow *)that;
-  return cthat->y();
-}
-
-  // proto:  int QWindow::width();
-int _ZNK7QWindow5widthEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->width();
-}
-
-  // proto:  int QWindow::minimumWidth();
-int _ZNK7QWindow12minimumWidthEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->minimumWidth();
-}
-
-  // proto:  int QWindow::x();
-int _ZNK7QWindow1xEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->x();
-}
-
-  // proto:  int QWindow::height();
-int _ZNK7QWindow6heightEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->height();
-}
-
-  // proto:  QSize QWindow::size();
-QSize* _ZNK7QWindow4sizeEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  auto recret = cthat->size();
-  return new QSize(recret);
-}
-
-  // proto:  int QWindow::maximumWidth();
-int _ZNK7QWindow12maximumWidthEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->maximumWidth();
-}
-
-  // proto:  QPoint QWindow::position();
-QPoint* _ZNK7QWindow8positionEv(void *that)
-
-{
-  QWindow *cthat = (QWindow *)that;
-  auto recret = cthat->position();
-  return new QPoint(recret);
+  // static_assert(sizeof(QWindow) == 32, "tyszerr");
+  QWindow* rthis = new QWindow(parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

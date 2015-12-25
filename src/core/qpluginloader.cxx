@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qpluginloader.h
 // dst-file: /src/core/qpluginloader.cxx
 //
@@ -8,6 +8,29 @@
 #include <qpluginloader.h>
 
 extern "C" {
+
+// QPluginLoader(const class QString &, class QObject *)
+QPluginLoader* dector_ZN13QPluginLoaderC1ERK7QStringP7QObject(const QString & fileName, QObject * parent)
+{
+  // static_assert(sizeof(QPluginLoader) == 32, "tyszerr");
+  QPluginLoader* rthis = new QPluginLoader(fileName, parent);
+  return rthis;
+}
+
+// QPluginLoader(class QObject *)
+QPluginLoader* dector_ZN13QPluginLoaderC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QPluginLoader) == 32, "tyszerr");
+  QPluginLoader* rthis = new QPluginLoader(parent);
+  return rthis;
+}
+
+// ~QPluginLoader()
+void dedtor_ZN13QPluginLoaderD0Ev(QPluginLoader* that)
+{
+  QPluginLoader* rthis = (QPluginLoader*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qsignalmapper.h
 // dst-file: /src/core/qsignalmapper.cxx
 //
@@ -8,6 +8,21 @@
 #include <qsignalmapper.h>
 
 extern "C" {
+
+// QSignalMapper(class QObject *)
+QSignalMapper* dector_ZN13QSignalMapperC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QSignalMapper) == 32, "tyszerr");
+  QSignalMapper* rthis = new QSignalMapper(parent);
+  return rthis;
+}
+
+// ~QSignalMapper()
+void dedtor_ZN13QSignalMapperD0Ev(QSignalMapper* that)
+{
+  QSignalMapper* rthis = (QSignalMapper*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

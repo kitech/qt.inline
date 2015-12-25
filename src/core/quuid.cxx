@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/quuid.h
 // dst-file: /src/core/quuid.cxx
 //
@@ -9,22 +9,28 @@
 
 extern "C" {
 
-  // proto: static QUuid QUuid::createUuidV5(const QUuid & ns, const QString & baseData);
-QUuid* _ZN5QUuid12createUuidV5ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
-
+// QUuid(const class QString &)
+QUuid* dector_ZN5QUuidC1ERK7QString(const QString & arg1)
 {
-  QUuid *cthat = (QUuid *)that;
-  auto recret = cthat->createUuidV5(ns, baseData);
-  return new QUuid(recret);
+  // static_assert(sizeof(QUuid) == 32, "tyszerr");
+  QUuid* rthis = new QUuid(arg1);
+  return rthis;
 }
 
-  // proto: static QUuid QUuid::createUuidV3(const QUuid & ns, const QString & baseData);
-QUuid* _ZN5QUuid12createUuidV3ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
-
+// QUuid(const class QByteArray &)
+QUuid* dector_ZN5QUuidC1ERK10QByteArray(const QByteArray & arg1)
 {
-  QUuid *cthat = (QUuid *)that;
-  auto recret = cthat->createUuidV3(ns, baseData);
-  return new QUuid(recret);
+  // static_assert(sizeof(QUuid) == 32, "tyszerr");
+  QUuid* rthis = new QUuid(arg1);
+  return rthis;
+}
+
+// QUuid(const char *)
+QUuid* dector_ZN5QUuidC1EPKc(const char * arg1)
+{
+  // static_assert(sizeof(QUuid) == 32, "tyszerr");
+  QUuid* rthis = new QUuid(arg1);
+  return rthis;
 }
 
 }; // <= extern "C" block end

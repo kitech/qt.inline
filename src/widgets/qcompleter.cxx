@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qcompleter.h
 // dst-file: /src/widgets/qcompleter.cxx
 //
@@ -8,6 +8,37 @@
 #include <qcompleter.h>
 
 extern "C" {
+
+// QCompleter(class QObject *)
+QCompleter* dector_ZN10QCompleterC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QCompleter) == 32, "tyszerr");
+  QCompleter* rthis = new QCompleter(parent);
+  return rthis;
+}
+
+// QCompleter(const class QStringList &, class QObject *)
+QCompleter* dector_ZN10QCompleterC1ERK11QStringListP7QObject(const QStringList & completions, QObject * parent)
+{
+  // static_assert(sizeof(QCompleter) == 32, "tyszerr");
+  QCompleter* rthis = new QCompleter(completions, parent);
+  return rthis;
+}
+
+// ~QCompleter()
+void dedtor_ZN10QCompleterD0Ev(QCompleter* that)
+{
+  QCompleter* rthis = (QCompleter*)that;
+  delete rthis;
+}
+
+// QCompleter(class QAbstractItemModel *, class QObject *)
+QCompleter* dector_ZN10QCompleterC1EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent)
+{
+  // static_assert(sizeof(QCompleter) == 32, "tyszerr");
+  QCompleter* rthis = new QCompleter(model, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

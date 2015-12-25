@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qloggingcategory.h
 // dst-file: /src/core/qloggingcategory.cxx
 //
@@ -8,6 +8,29 @@
 #include <qloggingcategory.h>
 
 extern "C" {
+
+// QLoggingCategory(const char *, enum QtMsgType)
+QLoggingCategory* dector_ZN16QLoggingCategoryC1EPKc9QtMsgType(const char * category, QtMsgType severityLevel)
+{
+  // static_assert(sizeof(QLoggingCategory) == 32, "tyszerr");
+  QLoggingCategory* rthis = new QLoggingCategory(category, severityLevel);
+  return rthis;
+}
+
+// ~QLoggingCategory()
+void dedtor_ZN16QLoggingCategoryD0Ev(QLoggingCategory* that)
+{
+  QLoggingCategory* rthis = (QLoggingCategory*)that;
+  delete rthis;
+}
+
+// QLoggingCategory(const char *)
+QLoggingCategory* dector_ZN16QLoggingCategoryC1EPKc(const char * category)
+{
+  // static_assert(sizeof(QLoggingCategory) == 32, "tyszerr");
+  QLoggingCategory* rthis = new QLoggingCategory(category);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

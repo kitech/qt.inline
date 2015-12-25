@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qdial.h
 // dst-file: /src/widgets/qdial.cxx
 //
@@ -8,6 +8,21 @@
 #include <qdial.h>
 
 extern "C" {
+
+// ~QDial()
+void dedtor_ZN5QDialD0Ev(QDial* that)
+{
+  QDial* rthis = (QDial*)that;
+  delete rthis;
+}
+
+// QDial(class QWidget *)
+QDial* dector_ZN5QDialC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QDial) == 32, "tyszerr");
+  QDial* rthis = new QDial(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qxmlstream.h
 // dst-file: /src/core/qxmlstream.cxx
 //
@@ -9,323 +9,213 @@
 
 extern "C" {
 
-  // proto:  int QXmlStreamStringRef::size();
-int _ZNK19QXmlStreamStringRef4sizeEv(void *that)
-
+// QXmlStreamReader(const class QByteArray &)
+QXmlStreamReader* dector_ZN16QXmlStreamReaderC1ERK10QByteArray(const QByteArray & data)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  return cthat->size();
+  // static_assert(sizeof(QXmlStreamReader) == 32, "tyszerr");
+  QXmlStreamReader* rthis = new QXmlStreamReader(data);
+  return rthis;
 }
 
-  // proto:  void QXmlStreamStringRef::clear();
-void _ZN19QXmlStreamStringRef5clearEv(void *that)
-
+// QXmlStreamReader(class QIODevice *)
+QXmlStreamReader* dector_ZN16QXmlStreamReaderC1EP9QIODevice(QIODevice * device)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-   cthat->clear();
+  // static_assert(sizeof(QXmlStreamReader) == 32, "tyszerr");
+  QXmlStreamReader* rthis = new QXmlStreamReader(device);
+  return rthis;
 }
 
-  // proto:  void QXmlStreamStringRef::QXmlStreamStringRef(const QStringRef & aString);
-void _ZN19QXmlStreamStringRefC1ERK10QStringRef(void *that, const QStringRef & aString)
-
+// QXmlStreamReader()
+QXmlStreamReader* dector_ZN16QXmlStreamReaderC1Ev()
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  auto _o = new(that) QXmlStreamStringRef(aString);
+  // static_assert(sizeof(QXmlStreamReader) == 32, "tyszerr");
+  QXmlStreamReader* rthis = new QXmlStreamReader();
+  return rthis;
 }
 
-  // proto:  const QString * QXmlStreamStringRef::string();
-const QString * _ZNK19QXmlStreamStringRef6stringEv(void *that)
-
+// QXmlStreamReader(const class QString &)
+QXmlStreamReader* dector_ZN16QXmlStreamReaderC1ERK7QString(const QString & data)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  return cthat->string();
+  // static_assert(sizeof(QXmlStreamReader) == 32, "tyszerr");
+  QXmlStreamReader* rthis = new QXmlStreamReader(data);
+  return rthis;
 }
 
-  // proto:  void QXmlStreamStringRef::QXmlStreamStringRef(const QString & aString);
-void _ZN19QXmlStreamStringRefC1ERK7QString(void *that, const QString & aString)
-
+// ~QXmlStreamReader()
+void dedtor_ZN16QXmlStreamReaderD0Ev(QXmlStreamReader* that)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  auto _o = new(that) QXmlStreamStringRef(aString);
+  QXmlStreamReader* rthis = (QXmlStreamReader*)that;
+  delete rthis;
 }
 
-  // proto:  void QXmlStreamStringRef::~QXmlStreamStringRef();
-void _ZN19QXmlStreamStringRefD0Ev(void *that)
-
+// QXmlStreamReader(const char *)
+QXmlStreamReader* dector_ZN16QXmlStreamReaderC1EPKc(const char * data)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-   cthat->~QXmlStreamStringRef();
+  // static_assert(sizeof(QXmlStreamReader) == 32, "tyszerr");
+  QXmlStreamReader* rthis = new QXmlStreamReader(data);
+  return rthis;
 }
 
-  // proto:  void QXmlStreamStringRef::QXmlStreamStringRef();
-void _ZN19QXmlStreamStringRefC1Ev(void *that)
-
+// ~QXmlStreamEntityResolver()
+void dedtor_ZN24QXmlStreamEntityResolverD0Ev(QXmlStreamEntityResolver* that)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  auto _o = new(that) QXmlStreamStringRef();
+  QXmlStreamEntityResolver* rthis = (QXmlStreamEntityResolver*)that;
+  delete rthis;
 }
 
-  // proto:  int QXmlStreamStringRef::position();
-int _ZNK19QXmlStreamStringRef8positionEv(void *that)
-
+// ~QXmlStreamNamespaceDeclaration()
+void dedtor_ZN30QXmlStreamNamespaceDeclarationD0Ev(QXmlStreamNamespaceDeclaration* that)
 {
-  QXmlStreamStringRef *cthat = (QXmlStreamStringRef *)that;
-  return cthat->position();
+  QXmlStreamNamespaceDeclaration* rthis = (QXmlStreamNamespaceDeclaration*)that;
+  delete rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isStartElement();
-bool _ZNK16QXmlStreamReader14isStartElementEv(void *that)
-
+// QXmlStreamNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
+QXmlStreamNamespaceDeclaration* dector_ZN30QXmlStreamNamespaceDeclarationC1ERKS_(const QXmlStreamNamespaceDeclaration & arg1)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isStartElement();
+  // static_assert(sizeof(QXmlStreamNamespaceDeclaration) == 40, "tyszerr");
+  QXmlStreamNamespaceDeclaration* rthis = new QXmlStreamNamespaceDeclaration(arg1);
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isDTD();
-bool _ZNK16QXmlStreamReader5isDTDEv(void *that)
-
+// QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
+QXmlStreamNamespaceDeclaration* dector_ZN30QXmlStreamNamespaceDeclarationC1ERK7QStringS2_(const QString & prefix, const QString & namespaceUri)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isDTD();
+  // static_assert(sizeof(QXmlStreamNamespaceDeclaration) == 40, "tyszerr");
+  QXmlStreamNamespaceDeclaration* rthis = new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isStartDocument();
-bool _ZNK16QXmlStreamReader15isStartDocumentEv(void *that)
-
+// QXmlStreamNamespaceDeclaration()
+QXmlStreamNamespaceDeclaration* dector_ZN30QXmlStreamNamespaceDeclarationC1Ev()
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isStartDocument();
+  // static_assert(sizeof(QXmlStreamNamespaceDeclaration) == 40, "tyszerr");
+  QXmlStreamNamespaceDeclaration* rthis = new QXmlStreamNamespaceDeclaration();
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isProcessingInstruction();
-bool _ZNK16QXmlStreamReader23isProcessingInstructionEv(void *that)
-
+// ~QXmlStreamEntityDeclaration()
+void dedtor_ZN27QXmlStreamEntityDeclarationD0Ev(QXmlStreamEntityDeclaration* that)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isProcessingInstruction();
+  QXmlStreamEntityDeclaration* rthis = (QXmlStreamEntityDeclaration*)that;
+  delete rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isCharacters();
-bool _ZNK16QXmlStreamReader12isCharactersEv(void *that)
-
+// QXmlStreamEntityDeclaration(const class QXmlStreamEntityDeclaration &)
+QXmlStreamEntityDeclaration* dector_ZN27QXmlStreamEntityDeclarationC1ERKS_(const QXmlStreamEntityDeclaration & arg1)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isCharacters();
+  // static_assert(sizeof(QXmlStreamEntityDeclaration) == 88, "tyszerr");
+  QXmlStreamEntityDeclaration* rthis = new QXmlStreamEntityDeclaration(arg1);
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::hasError();
-bool _ZNK16QXmlStreamReader8hasErrorEv(void *that)
-
+// QXmlStreamEntityDeclaration()
+QXmlStreamEntityDeclaration* dector_ZN27QXmlStreamEntityDeclarationC1Ev()
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->hasError();
+  // static_assert(sizeof(QXmlStreamEntityDeclaration) == 88, "tyszerr");
+  QXmlStreamEntityDeclaration* rthis = new QXmlStreamEntityDeclaration();
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isEndElement();
-bool _ZNK16QXmlStreamReader12isEndElementEv(void *that)
-
+// QXmlStreamWriter()
+QXmlStreamWriter* dector_ZN16QXmlStreamWriterC1Ev()
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isEndElement();
+  // static_assert(sizeof(QXmlStreamWriter) == 32, "tyszerr");
+  QXmlStreamWriter* rthis = new QXmlStreamWriter();
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isEndDocument();
-bool _ZNK16QXmlStreamReader13isEndDocumentEv(void *that)
-
+// QXmlStreamWriter(class QString *)
+QXmlStreamWriter* dector_ZN16QXmlStreamWriterC1EP7QString(QString * string)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isEndDocument();
+  // static_assert(sizeof(QXmlStreamWriter) == 32, "tyszerr");
+  QXmlStreamWriter* rthis = new QXmlStreamWriter(string);
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isComment();
-bool _ZNK16QXmlStreamReader9isCommentEv(void *that)
-
+// ~QXmlStreamWriter()
+void dedtor_ZN16QXmlStreamWriterD0Ev(QXmlStreamWriter* that)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isComment();
+  QXmlStreamWriter* rthis = (QXmlStreamWriter*)that;
+  delete rthis;
 }
 
-  // proto:  bool QXmlStreamReader::isEntityReference();
-bool _ZNK16QXmlStreamReader17isEntityReferenceEv(void *that)
-
+// QXmlStreamWriter(class QByteArray *)
+QXmlStreamWriter* dector_ZN16QXmlStreamWriterC1EP10QByteArray(QByteArray * array)
 {
-  QXmlStreamReader *cthat = (QXmlStreamReader *)that;
-  return cthat->isEntityReference();
+  // static_assert(sizeof(QXmlStreamWriter) == 32, "tyszerr");
+  QXmlStreamWriter* rthis = new QXmlStreamWriter(array);
+  return rthis;
 }
 
-  // proto:  QStringRef QXmlStreamNamespaceDeclaration::namespaceUri();
-QStringRef* _ZNK30QXmlStreamNamespaceDeclaration12namespaceUriEv(void *that)
-
+// QXmlStreamWriter(class QIODevice *)
+QXmlStreamWriter* dector_ZN16QXmlStreamWriterC1EP9QIODevice(QIODevice * device)
 {
-  QXmlStreamNamespaceDeclaration *cthat = (QXmlStreamNamespaceDeclaration *)that;
-  auto recret = cthat->namespaceUri();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamWriter) == 32, "tyszerr");
+  QXmlStreamWriter* rthis = new QXmlStreamWriter(device);
+  return rthis;
 }
 
-  // proto:  QStringRef QXmlStreamNamespaceDeclaration::prefix();
-QStringRef* _ZNK30QXmlStreamNamespaceDeclaration6prefixEv(void *that)
-
+// QXmlStreamNotationDeclaration(const class QXmlStreamNotationDeclaration &)
+QXmlStreamNotationDeclaration* dector_ZN29QXmlStreamNotationDeclarationC1ERKS_(const QXmlStreamNotationDeclaration & arg1)
 {
-  QXmlStreamNamespaceDeclaration *cthat = (QXmlStreamNamespaceDeclaration *)that;
-  auto recret = cthat->prefix();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamNotationDeclaration) == 56, "tyszerr");
+  QXmlStreamNotationDeclaration* rthis = new QXmlStreamNotationDeclaration(arg1);
+  return rthis;
 }
 
-  // proto:  QStringRef QXmlStreamEntityDeclaration::publicId();
-QStringRef* _ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *that)
-
+// QXmlStreamNotationDeclaration()
+QXmlStreamNotationDeclaration* dector_ZN29QXmlStreamNotationDeclarationC1Ev()
 {
-  QXmlStreamEntityDeclaration *cthat = (QXmlStreamEntityDeclaration *)that;
-  auto recret = cthat->publicId();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamNotationDeclaration) == 56, "tyszerr");
+  QXmlStreamNotationDeclaration* rthis = new QXmlStreamNotationDeclaration();
+  return rthis;
 }
 
-  // proto:  QStringRef QXmlStreamEntityDeclaration::name();
-QStringRef* _ZNK27QXmlStreamEntityDeclaration4nameEv(void *that)
-
+// ~QXmlStreamNotationDeclaration()
+void dedtor_ZN29QXmlStreamNotationDeclarationD0Ev(QXmlStreamNotationDeclaration* that)
 {
-  QXmlStreamEntityDeclaration *cthat = (QXmlStreamEntityDeclaration *)that;
-  auto recret = cthat->name();
-  return new QStringRef(recret);
+  QXmlStreamNotationDeclaration* rthis = (QXmlStreamNotationDeclaration*)that;
+  delete rthis;
 }
 
-  // proto:  QStringRef QXmlStreamEntityDeclaration::value();
-QStringRef* _ZNK27QXmlStreamEntityDeclaration5valueEv(void *that)
-
+// QXmlStreamAttribute(const class QString &, const class QString &)
+QXmlStreamAttribute* dector_ZN19QXmlStreamAttributeC1ERK7QStringS2_(const QString & qualifiedName, const QString & value)
 {
-  QXmlStreamEntityDeclaration *cthat = (QXmlStreamEntityDeclaration *)that;
-  auto recret = cthat->value();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamAttribute) == 80, "tyszerr");
+  QXmlStreamAttribute* rthis = new QXmlStreamAttribute(qualifiedName, value);
+  return rthis;
 }
 
-  // proto:  QStringRef QXmlStreamEntityDeclaration::notationName();
-QStringRef* _ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *that)
-
+// ~QXmlStreamAttribute()
+void dedtor_ZN19QXmlStreamAttributeD0Ev(QXmlStreamAttribute* that)
 {
-  QXmlStreamEntityDeclaration *cthat = (QXmlStreamEntityDeclaration *)that;
-  auto recret = cthat->notationName();
-  return new QStringRef(recret);
+  QXmlStreamAttribute* rthis = (QXmlStreamAttribute*)that;
+  delete rthis;
 }
 
-  // proto:  QStringRef QXmlStreamEntityDeclaration::systemId();
-QStringRef* _ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *that)
-
+// QXmlStreamAttribute()
+QXmlStreamAttribute* dector_ZN19QXmlStreamAttributeC1Ev()
 {
-  QXmlStreamEntityDeclaration *cthat = (QXmlStreamEntityDeclaration *)that;
-  auto recret = cthat->systemId();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamAttribute) == 80, "tyszerr");
+  QXmlStreamAttribute* rthis = new QXmlStreamAttribute();
+  return rthis;
 }
 
-  // proto:  void QXmlStreamAttributes::QXmlStreamAttributes();
-void _ZN20QXmlStreamAttributesC1Ev(void *that)
-
+// QXmlStreamAttribute(const class QXmlStreamAttribute &)
+QXmlStreamAttribute* dector_ZN19QXmlStreamAttributeC1ERKS_(const QXmlStreamAttribute & arg1)
 {
-  QXmlStreamAttributes *cthat = (QXmlStreamAttributes *)that;
-  auto _o = new(that) QXmlStreamAttributes();
+  // static_assert(sizeof(QXmlStreamAttribute) == 80, "tyszerr");
+  QXmlStreamAttribute* rthis = new QXmlStreamAttribute(arg1);
+  return rthis;
 }
 
-  // proto:  bool QXmlStreamAttributes::hasAttribute(const QString & qualifiedName);
-bool _ZNK20QXmlStreamAttributes12hasAttributeERK7QString(void *that, const QString & qualifiedName)
-
+// QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
+QXmlStreamAttribute* dector_ZN19QXmlStreamAttributeC1ERK7QStringS2_S2_(const QString & namespaceUri, const QString & name, const QString & value)
 {
-  QXmlStreamAttributes *cthat = (QXmlStreamAttributes *)that;
-  return cthat->hasAttribute(qualifiedName);
-}
-
-  // proto:  bool QXmlStreamAttributes::hasAttribute(const QString & namespaceUri, const QString & name);
-bool _ZNK20QXmlStreamAttributes12hasAttributeERK7QStringS2_(void *that, const QString & namespaceUri, const QString & name)
-
-{
-  QXmlStreamAttributes *cthat = (QXmlStreamAttributes *)that;
-  return cthat->hasAttribute(namespaceUri, name);
-}
-
-  // proto:  bool QXmlStreamAttributes::hasAttribute(QLatin1String qualifiedName);
-bool _ZNK20QXmlStreamAttributes12hasAttributeE13QLatin1String(void *that, QLatin1String qualifiedName)
-
-{
-  QXmlStreamAttributes *cthat = (QXmlStreamAttributes *)that;
-  return cthat->hasAttribute(qualifiedName);
-}
-
-  // proto:  QStringRef QXmlStreamNotationDeclaration::publicId();
-QStringRef* _ZNK29QXmlStreamNotationDeclaration8publicIdEv(void *that)
-
-{
-  QXmlStreamNotationDeclaration *cthat = (QXmlStreamNotationDeclaration *)that;
-  auto recret = cthat->publicId();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamNotationDeclaration::name();
-QStringRef* _ZNK29QXmlStreamNotationDeclaration4nameEv(void *that)
-
-{
-  QXmlStreamNotationDeclaration *cthat = (QXmlStreamNotationDeclaration *)that;
-  auto recret = cthat->name();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamNotationDeclaration::systemId();
-QStringRef* _ZNK29QXmlStreamNotationDeclaration8systemIdEv(void *that)
-
-{
-  QXmlStreamNotationDeclaration *cthat = (QXmlStreamNotationDeclaration *)that;
-  auto recret = cthat->systemId();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamAttribute::qualifiedName();
-QStringRef* _ZNK19QXmlStreamAttribute13qualifiedNameEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  auto recret = cthat->qualifiedName();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamAttribute::value();
-QStringRef* _ZNK19QXmlStreamAttribute5valueEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  auto recret = cthat->value();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamAttribute::namespaceUri();
-QStringRef* _ZNK19QXmlStreamAttribute12namespaceUriEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  auto recret = cthat->namespaceUri();
-  return new QStringRef(recret);
-}
-
-  // proto:  bool QXmlStreamAttribute::isDefault();
-bool _ZNK19QXmlStreamAttribute9isDefaultEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  return cthat->isDefault();
-}
-
-  // proto:  QStringRef QXmlStreamAttribute::prefix();
-QStringRef* _ZNK19QXmlStreamAttribute6prefixEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  auto recret = cthat->prefix();
-  return new QStringRef(recret);
-}
-
-  // proto:  QStringRef QXmlStreamAttribute::name();
-QStringRef* _ZNK19QXmlStreamAttribute4nameEv(void *that)
-
-{
-  QXmlStreamAttribute *cthat = (QXmlStreamAttribute *)that;
-  auto recret = cthat->name();
-  return new QStringRef(recret);
+  // static_assert(sizeof(QXmlStreamAttribute) == 80, "tyszerr");
+  QXmlStreamAttribute* rthis = new QXmlStreamAttribute(namespaceUri, name, value);
+  return rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qmenu.h
 // dst-file: /src/widgets/qmenu.cxx
 //
@@ -8,6 +8,29 @@
 #include <qmenu.h>
 
 extern "C" {
+
+// QMenu(class QWidget *)
+QMenu* dector_ZN5QMenuC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QMenu) == 32, "tyszerr");
+  QMenu* rthis = new QMenu(parent);
+  return rthis;
+}
+
+// QMenu(const class QString &, class QWidget *)
+QMenu* dector_ZN5QMenuC1ERK7QStringP7QWidget(const QString & title, QWidget * parent)
+{
+  // static_assert(sizeof(QMenu) == 32, "tyszerr");
+  QMenu* rthis = new QMenu(title, parent);
+  return rthis;
+}
+
+// ~QMenu()
+void dedtor_ZN5QMenuD0Ev(QMenu* that)
+{
+  QMenu* rthis = (QMenu*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

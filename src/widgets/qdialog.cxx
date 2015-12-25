@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qdialog.h
 // dst-file: /src/widgets/qdialog.cxx
 //
@@ -8,6 +8,21 @@
 #include <qdialog.h>
 
 extern "C" {
+
+// ~QDialog()
+void dedtor_ZN7QDialogD0Ev(QDialog* that)
+{
+  QDialog* rthis = (QDialog*)that;
+  delete rthis;
+}
+
+// QDialog(class QWidget *, Qt::WindowFlags)
+QDialog* dector_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
+{
+  // static_assert(sizeof(QDialog) == 32, "tyszerr");
+  QDialog* rthis = new QDialog(parent, f);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

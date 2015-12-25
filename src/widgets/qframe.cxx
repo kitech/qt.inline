@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qframe.h
 // dst-file: /src/widgets/qframe.cxx
 //
@@ -8,6 +8,21 @@
 #include <qframe.h>
 
 extern "C" {
+
+// QFrame(class QWidget *, Qt::WindowFlags)
+QFrame* dector_ZN6QFrameC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
+{
+  // static_assert(sizeof(QFrame) == 32, "tyszerr");
+  QFrame* rthis = new QFrame(parent, f);
+  return rthis;
+}
+
+// ~QFrame()
+void dedtor_ZN6QFrameD0Ev(QFrame* that)
+{
+  QFrame* rthis = (QFrame*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

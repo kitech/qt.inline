@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qmargins.h
 // dst-file: /src/core/qmargins.cxx
 //
@@ -8,6 +8,46 @@
 #include <qmargins.h>
 
 extern "C" {
+
+// QMarginsF()
+QMarginsF* dector_ZN9QMarginsFC1Ev()
+{
+  // static_assert(sizeof(QMarginsF) == 32, "tyszerr");
+  QMarginsF* rthis = new QMarginsF();
+  return rthis;
+}
+
+// QMarginsF(qreal, qreal, qreal, qreal)
+QMarginsF* dector_ZN9QMarginsFC1Edddd(double left, double top, double right, double bottom)
+{
+  // static_assert(sizeof(QMarginsF) == 32, "tyszerr");
+  QMarginsF* rthis = new QMarginsF(left, top, right, bottom);
+  return rthis;
+}
+
+// QMarginsF(const class QMargins &)
+QMarginsF* dector_ZN9QMarginsFC1ERK8QMargins(const QMargins & margins)
+{
+  // static_assert(sizeof(QMarginsF) == 32, "tyszerr");
+  QMarginsF* rthis = new QMarginsF(margins);
+  return rthis;
+}
+
+// QMargins()
+QMargins* dector_ZN8QMarginsC1Ev()
+{
+  // static_assert(sizeof(QMargins) == 32, "tyszerr");
+  QMargins* rthis = new QMargins();
+  return rthis;
+}
+
+// QMargins(int, int, int, int)
+QMargins* dector_ZN8QMarginsC1Eiiii(int left, int top, int right, int bottom)
+{
+  // static_assert(sizeof(QMargins) == 32, "tyszerr");
+  QMargins* rthis = new QMargins(left, top, right, bottom);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

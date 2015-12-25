@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgridlayout.h
 // dst-file: /src/widgets/qgridlayout.cxx
 //
@@ -9,12 +9,27 @@
 
 extern "C" {
 
-  // proto:  void QGridLayout::addWidget(QWidget * w);
-void _ZN11QGridLayout9addWidgetEP7QWidget(void *that, QWidget * w)
-
+// QGridLayout(class QWidget *)
+QGridLayout* dector_ZN11QGridLayoutC1EP7QWidget(QWidget * parent)
 {
-  QGridLayout *cthat = (QGridLayout *)that;
-   cthat->addWidget(w);
+  // static_assert(sizeof(QGridLayout) == 32, "tyszerr");
+  QGridLayout* rthis = new QGridLayout(parent);
+  return rthis;
+}
+
+// QGridLayout()
+QGridLayout* dector_ZN11QGridLayoutC1Ev()
+{
+  // static_assert(sizeof(QGridLayout) == 32, "tyszerr");
+  QGridLayout* rthis = new QGridLayout();
+  return rthis;
+}
+
+// ~QGridLayout()
+void dedtor_ZN11QGridLayoutD0Ev(QGridLayout* that)
+{
+  QGridLayout* rthis = (QGridLayout*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

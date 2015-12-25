@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qsize.h
 // dst-file: /src/core/qsize.cxx
 //
@@ -9,9 +9,24 @@
 
 extern "C" {
 
+// QSize()
+QSize* dector_ZN5QSizeC1Ev()
+{
+  // static_assert(sizeof(QSize) == 32, "tyszerr");
+  QSize* rthis = new QSize();
+  return rthis;
+}
+
+// QSize(int, int)
+QSize* dector_ZN5QSizeC1Eii(int w, int h)
+{
+  // static_assert(sizeof(QSize) == 32, "tyszerr");
+  QSize* rthis = new QSize(w, h);
+  return rthis;
+}
+
   // proto:  int & QSize::rheight();
 int * _ZN5QSize7rheightEv(void *that)
-
 {
   QSize *cthat = (QSize *)that;
   return &cthat->rheight();
@@ -19,7 +34,6 @@ int * _ZN5QSize7rheightEv(void *that)
 
   // proto:  void QSize::scale(const QSize & s, Qt::AspectRatioMode mode);
 void _ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *that, const QSize & s, Qt::AspectRatioMode mode)
-
 {
   QSize *cthat = (QSize *)that;
    cthat->scale(s, mode);
@@ -27,7 +41,6 @@ void _ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *that, const QSize & s, Qt:
 
   // proto:  void QSize::scale(int w, int h, Qt::AspectRatioMode mode);
 void _ZN5QSize5scaleEiiN2Qt15AspectRatioModeE(void *that, int w, int h, Qt::AspectRatioMode mode)
-
 {
   QSize *cthat = (QSize *)that;
    cthat->scale(w, h, mode);
@@ -35,7 +48,6 @@ void _ZN5QSize5scaleEiiN2Qt15AspectRatioModeE(void *that, int w, int h, Qt::Aspe
 
   // proto:  int & QSize::rwidth();
 int * _ZN5QSize6rwidthEv(void *that)
-
 {
   QSize *cthat = (QSize *)that;
   return &cthat->rwidth();
@@ -43,7 +55,6 @@ int * _ZN5QSize6rwidthEv(void *that)
 
   // proto:  void QSize::setHeight(int h);
 void _ZN5QSize9setHeightEi(void *that, int h)
-
 {
   QSize *cthat = (QSize *)that;
    cthat->setHeight(h);
@@ -51,15 +62,37 @@ void _ZN5QSize9setHeightEi(void *that, int h)
 
   // proto:  void QSize::setWidth(int w);
 void _ZN5QSize8setWidthEi(void *that, int w)
-
 {
   QSize *cthat = (QSize *)that;
    cthat->setWidth(w);
 }
 
+// QSizeF()
+QSizeF* dector_ZN6QSizeFC1Ev()
+{
+  // static_assert(sizeof(QSizeF) == 32, "tyszerr");
+  QSizeF* rthis = new QSizeF();
+  return rthis;
+}
+
+// QSizeF(const class QSize &)
+QSizeF* dector_ZN6QSizeFC1ERK5QSize(const QSize & sz)
+{
+  // static_assert(sizeof(QSizeF) == 32, "tyszerr");
+  QSizeF* rthis = new QSizeF(sz);
+  return rthis;
+}
+
+// QSizeF(qreal, qreal)
+QSizeF* dector_ZN6QSizeFC1Edd(double w, double h)
+{
+  // static_assert(sizeof(QSizeF) == 32, "tyszerr");
+  QSizeF* rthis = new QSizeF(w, h);
+  return rthis;
+}
+
   // proto:  qreal & QSizeF::rheight();
 qreal * _ZN6QSizeF7rheightEv(void *that)
-
 {
   QSizeF *cthat = (QSizeF *)that;
   return &cthat->rheight();
@@ -67,7 +100,6 @@ qreal * _ZN6QSizeF7rheightEv(void *that)
 
   // proto:  qreal & QSizeF::rwidth();
 qreal * _ZN6QSizeF6rwidthEv(void *that)
-
 {
   QSizeF *cthat = (QSizeF *)that;
   return &cthat->rwidth();
@@ -75,7 +107,6 @@ qreal * _ZN6QSizeF6rwidthEv(void *that)
 
   // proto:  void QSizeF::setHeight(qreal h);
 void _ZN6QSizeF9setHeightEd(void *that, double h)
-
 {
   QSizeF *cthat = (QSizeF *)that;
    cthat->setHeight(h);
@@ -83,7 +114,6 @@ void _ZN6QSizeF9setHeightEd(void *that, double h)
 
   // proto:  bool QSizeF::isNull();
 bool _ZNK6QSizeF6isNullEv(void *that)
-
 {
   QSizeF *cthat = (QSizeF *)that;
   return cthat->isNull();
@@ -91,7 +121,6 @@ bool _ZNK6QSizeF6isNullEv(void *that)
 
   // proto:  void QSizeF::scale(qreal w, qreal h, Qt::AspectRatioMode mode);
 void _ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *that, double w, double h, Qt::AspectRatioMode mode)
-
 {
   QSizeF *cthat = (QSizeF *)that;
    cthat->scale(w, h, mode);
@@ -99,7 +128,6 @@ void _ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *that, double w, double h, Q
 
   // proto:  void QSizeF::setWidth(qreal w);
 void _ZN6QSizeF8setWidthEd(void *that, double w)
-
 {
   QSizeF *cthat = (QSizeF *)that;
    cthat->setWidth(w);
@@ -107,7 +135,6 @@ void _ZN6QSizeF8setWidthEd(void *that, double w)
 
   // proto:  void QSizeF::scale(const QSizeF & s, Qt::AspectRatioMode mode);
 void _ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *that, const QSizeF & s, Qt::AspectRatioMode mode)
-
 {
   QSizeF *cthat = (QSizeF *)that;
    cthat->scale(s, mode);

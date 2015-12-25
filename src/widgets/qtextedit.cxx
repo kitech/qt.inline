@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qtextedit.h
 // dst-file: /src/widgets/qtextedit.cxx
 //
@@ -9,37 +9,27 @@
 
 extern "C" {
 
-  // proto:  void QTextEdit::setDocumentTitle(const QString & title);
-void _ZN9QTextEdit16setDocumentTitleERK7QString(void *that, const QString & title)
-
+// ~QTextEdit()
+void dedtor_ZN9QTextEditD0Ev(QTextEdit* that)
 {
-  QTextEdit *cthat = (QTextEdit *)that;
-   cthat->setDocumentTitle(title);
+  QTextEdit* rthis = (QTextEdit*)that;
+  delete rthis;
 }
 
-  // proto:  QString QTextEdit::documentTitle();
-QString* _ZNK9QTextEdit13documentTitleEv(void *that)
-
+// QTextEdit(const class QString &, class QWidget *)
+QTextEdit* dector_ZN9QTextEditC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
 {
-  QTextEdit *cthat = (QTextEdit *)that;
-  auto recret = cthat->documentTitle();
-  return new QString(recret);
+  // static_assert(sizeof(QTextEdit) == 32, "tyszerr");
+  QTextEdit* rthis = new QTextEdit(text, parent);
+  return rthis;
 }
 
-  // proto:  bool QTextEdit::isUndoRedoEnabled();
-bool _ZNK9QTextEdit17isUndoRedoEnabledEv(void *that)
-
+// QTextEdit(class QWidget *)
+QTextEdit* dector_ZN9QTextEditC1EP7QWidget(QWidget * parent)
 {
-  QTextEdit *cthat = (QTextEdit *)that;
-  return cthat->isUndoRedoEnabled();
-}
-
-  // proto:  void QTextEdit::setUndoRedoEnabled(bool enable);
-void _ZN9QTextEdit18setUndoRedoEnabledEb(void *that, bool enable)
-
-{
-  QTextEdit *cthat = (QTextEdit *)that;
-   cthat->setUndoRedoEnabled(enable);
+  // static_assert(sizeof(QTextEdit) == 32, "tyszerr");
+  QTextEdit* rthis = new QTextEdit(parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

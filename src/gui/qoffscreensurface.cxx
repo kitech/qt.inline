@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qoffscreensurface.h
 // dst-file: /src/gui/qoffscreensurface.cxx
 //
@@ -8,6 +8,21 @@
 #include <qoffscreensurface.h>
 
 extern "C" {
+
+// ~QOffscreenSurface()
+void dedtor_ZN17QOffscreenSurfaceD0Ev(QOffscreenSurface* that)
+{
+  QOffscreenSurface* rthis = (QOffscreenSurface*)that;
+  delete rthis;
+}
+
+// QOffscreenSurface(class QScreen *)
+QOffscreenSurface* dector_ZN17QOffscreenSurfaceC1EP7QScreen(QScreen * screen)
+{
+  // static_assert(sizeof(QOffscreenSurface) == 32, "tyszerr");
+  QOffscreenSurface* rthis = new QOffscreenSurface(screen);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

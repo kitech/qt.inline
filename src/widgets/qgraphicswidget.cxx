@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -9,26 +9,23 @@
 
 extern "C" {
 
-  // proto:  QRectF QGraphicsWidget::rect();
-QRectF* _ZNK15QGraphicsWidget4rectEv(void *that)
-
+// QGraphicsWidget(class QGraphicsItem *, Qt::WindowFlags)
+QGraphicsWidget* dector_ZN15QGraphicsWidgetC1EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, Qt::WindowFlags wFlags)
 {
-  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
-  auto recret = cthat->rect();
-  return new QRectF(recret);
+  // static_assert(sizeof(QGraphicsWidget) == 32, "tyszerr");
+  QGraphicsWidget* rthis = new QGraphicsWidget(parent, wFlags);
+  return rthis;
 }
 
-  // proto:  void QGraphicsWidget::resize(qreal w, qreal h);
-void _ZN15QGraphicsWidget6resizeEdd(void *that, double w, double h)
-
+// ~QGraphicsWidget()
+void dedtor_ZN15QGraphicsWidgetD0Ev(QGraphicsWidget* that)
 {
-  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
-   cthat->resize(w, h);
+  QGraphicsWidget* rthis = (QGraphicsWidget*)that;
+  delete rthis;
 }
 
   // proto:  void QGraphicsWidget::setGeometry(qreal x, qreal y, qreal w, qreal h);
 void _ZN15QGraphicsWidget11setGeometryEdddd(void *that, double x, double y, double w, double h)
-
 {
   QGraphicsWidget *cthat = (QGraphicsWidget *)that;
    cthat->setGeometry(x, y, w, h);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicseffect.h
 // dst-file: /src/widgets/qgraphicseffect.cxx
 //
@@ -9,52 +9,64 @@
 
 extern "C" {
 
-  // proto:  void QGraphicsDropShadowEffect::setYOffset(qreal dy);
-void _ZN25QGraphicsDropShadowEffect10setYOffsetEd(void *that, double dy)
-
+// QGraphicsColorizeEffect(class QObject *)
+QGraphicsColorizeEffect* dector_ZN23QGraphicsColorizeEffectC1EP7QObject(QObject * parent)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-   cthat->setYOffset(dy);
+  // static_assert(sizeof(QGraphicsColorizeEffect) == 32, "tyszerr");
+  QGraphicsColorizeEffect* rthis = new QGraphicsColorizeEffect(parent);
+  return rthis;
 }
 
-  // proto:  qreal QGraphicsDropShadowEffect::xOffset();
-qreal _ZNK25QGraphicsDropShadowEffect7xOffsetEv(void *that)
-
+// ~QGraphicsColorizeEffect()
+void dedtor_ZN23QGraphicsColorizeEffectD0Ev(QGraphicsColorizeEffect* that)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-  return cthat->xOffset();
+  QGraphicsColorizeEffect* rthis = (QGraphicsColorizeEffect*)that;
+  delete rthis;
 }
 
-  // proto:  void QGraphicsDropShadowEffect::setOffset(qreal dx, qreal dy);
-void _ZN25QGraphicsDropShadowEffect9setOffsetEdd(void *that, double dx, double dy)
-
+// QGraphicsDropShadowEffect(class QObject *)
+QGraphicsDropShadowEffect* dector_ZN25QGraphicsDropShadowEffectC1EP7QObject(QObject * parent)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-   cthat->setOffset(dx, dy);
+  // static_assert(sizeof(QGraphicsDropShadowEffect) == 32, "tyszerr");
+  QGraphicsDropShadowEffect* rthis = new QGraphicsDropShadowEffect(parent);
+  return rthis;
 }
 
-  // proto:  void QGraphicsDropShadowEffect::setOffset(qreal d);
-void _ZN25QGraphicsDropShadowEffect9setOffsetEd(void *that, double d)
-
+// ~QGraphicsDropShadowEffect()
+void dedtor_ZN25QGraphicsDropShadowEffectD0Ev(QGraphicsDropShadowEffect* that)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-   cthat->setOffset(d);
+  QGraphicsDropShadowEffect* rthis = (QGraphicsDropShadowEffect*)that;
+  delete rthis;
 }
 
-  // proto:  qreal QGraphicsDropShadowEffect::yOffset();
-qreal _ZNK25QGraphicsDropShadowEffect7yOffsetEv(void *that)
-
+// QGraphicsOpacityEffect(class QObject *)
+QGraphicsOpacityEffect* dector_ZN22QGraphicsOpacityEffectC1EP7QObject(QObject * parent)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-  return cthat->yOffset();
+  // static_assert(sizeof(QGraphicsOpacityEffect) == 32, "tyszerr");
+  QGraphicsOpacityEffect* rthis = new QGraphicsOpacityEffect(parent);
+  return rthis;
 }
 
-  // proto:  void QGraphicsDropShadowEffect::setXOffset(qreal dx);
-void _ZN25QGraphicsDropShadowEffect10setXOffsetEd(void *that, double dx)
-
+// ~QGraphicsOpacityEffect()
+void dedtor_ZN22QGraphicsOpacityEffectD0Ev(QGraphicsOpacityEffect* that)
 {
-  QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
-   cthat->setXOffset(dx);
+  QGraphicsOpacityEffect* rthis = (QGraphicsOpacityEffect*)that;
+  delete rthis;
+}
+
+// ~QGraphicsBlurEffect()
+void dedtor_ZN19QGraphicsBlurEffectD0Ev(QGraphicsBlurEffect* that)
+{
+  QGraphicsBlurEffect* rthis = (QGraphicsBlurEffect*)that;
+  delete rthis;
+}
+
+// QGraphicsBlurEffect(class QObject *)
+QGraphicsBlurEffect* dector_ZN19QGraphicsBlurEffectC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QGraphicsBlurEffect) == 32, "tyszerr");
+  QGraphicsBlurEffect* rthis = new QGraphicsBlurEffect(parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

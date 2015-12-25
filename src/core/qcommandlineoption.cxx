@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qcommandlineoption.h
 // dst-file: /src/core/qcommandlineoption.cxx
 //
@@ -9,12 +9,51 @@
 
 extern "C" {
 
-  // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
-void _ZN18QCommandLineOption4swapERS_(void *that, QCommandLineOption & other)
-
+// QCommandLineOption(const class QCommandLineOption &)
+QCommandLineOption* dector_ZN18QCommandLineOptionC1ERKS_(const QCommandLineOption & other)
 {
-  QCommandLineOption *cthat = (QCommandLineOption *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
+  QCommandLineOption* rthis = new QCommandLineOption(other);
+  return rthis;
+}
+
+// QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
+QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK7QStringS2_S2_S2_(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue)
+{
+  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
+  QCommandLineOption* rthis = new QCommandLineOption(name, description, valueName, defaultValue);
+  return rthis;
+}
+
+// QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
+QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK11QStringListRK7QStringS5_S5_(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue)
+{
+  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
+  QCommandLineOption* rthis = new QCommandLineOption(names, description, valueName, defaultValue);
+  return rthis;
+}
+
+// ~QCommandLineOption()
+void dedtor_ZN18QCommandLineOptionD0Ev(QCommandLineOption* that)
+{
+  QCommandLineOption* rthis = (QCommandLineOption*)that;
+  delete rthis;
+}
+
+// QCommandLineOption(const class QStringList &)
+QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK11QStringList(const QStringList & names)
+{
+  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
+  QCommandLineOption* rthis = new QCommandLineOption(names);
+  return rthis;
+}
+
+// QCommandLineOption(const class QString &)
+QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK7QString(const QString & name)
+{
+  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
+  QCommandLineOption* rthis = new QCommandLineOption(name);
+  return rthis;
 }
 
 }; // <= extern "C" block end

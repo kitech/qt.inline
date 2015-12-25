@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qmimedatabase.h
 // dst-file: /src/core/qmimedatabase.cxx
 //
@@ -8,6 +8,21 @@
 #include <qmimedatabase.h>
 
 extern "C" {
+
+// QMimeDatabase()
+QMimeDatabase* dector_ZN13QMimeDatabaseC1Ev()
+{
+  // static_assert(sizeof(QMimeDatabase) == 32, "tyszerr");
+  QMimeDatabase* rthis = new QMimeDatabase();
+  return rthis;
+}
+
+// ~QMimeDatabase()
+void dedtor_ZN13QMimeDatabaseD0Ev(QMimeDatabase* that)
+{
+  QMimeDatabase* rthis = (QMimeDatabase*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

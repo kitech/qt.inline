@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qdrag.h
 // dst-file: /src/gui/qdrag.cxx
 //
@@ -8,6 +8,21 @@
 #include <qdrag.h>
 
 extern "C" {
+
+// QDrag(class QObject *)
+QDrag* dector_ZN5QDragC1EP7QObject(QObject * dragSource)
+{
+  // static_assert(sizeof(QDrag) == 32, "tyszerr");
+  QDrag* rthis = new QDrag(dragSource);
+  return rthis;
+}
+
+// ~QDrag()
+void dedtor_ZN5QDragD0Ev(QDrag* that)
+{
+  QDrag* rthis = (QDrag*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

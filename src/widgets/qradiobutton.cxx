@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qradiobutton.h
 // dst-file: /src/widgets/qradiobutton.cxx
 //
@@ -8,6 +8,29 @@
 #include <qradiobutton.h>
 
 extern "C" {
+
+// QRadioButton(class QWidget *)
+QRadioButton* dector_ZN12QRadioButtonC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QRadioButton) == 32, "tyszerr");
+  QRadioButton* rthis = new QRadioButton(parent);
+  return rthis;
+}
+
+// ~QRadioButton()
+void dedtor_ZN12QRadioButtonD0Ev(QRadioButton* that)
+{
+  QRadioButton* rthis = (QRadioButton*)that;
+  delete rthis;
+}
+
+// QRadioButton(const class QString &, class QWidget *)
+QRadioButton* dector_ZN12QRadioButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
+{
+  // static_assert(sizeof(QRadioButton) == 32, "tyszerr");
+  QRadioButton* rthis = new QRadioButton(text, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

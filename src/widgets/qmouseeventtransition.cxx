@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qmouseeventtransition.h
 // dst-file: /src/widgets/qmouseeventtransition.cxx
 //
@@ -8,6 +8,29 @@
 #include <qmouseeventtransition.h>
 
 extern "C" {
+
+// QMouseEventTransition(class QState *)
+QMouseEventTransition* dector_ZN21QMouseEventTransitionC1EP6QState(QState * sourceState)
+{
+  // static_assert(sizeof(QMouseEventTransition) == 32, "tyszerr");
+  QMouseEventTransition* rthis = new QMouseEventTransition(sourceState);
+  return rthis;
+}
+
+// QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
+QMouseEventTransition* dector_ZN21QMouseEventTransitionC1EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState)
+{
+  // static_assert(sizeof(QMouseEventTransition) == 32, "tyszerr");
+  QMouseEventTransition* rthis = new QMouseEventTransition(object, type, button, sourceState);
+  return rthis;
+}
+
+// ~QMouseEventTransition()
+void dedtor_ZN21QMouseEventTransitionD0Ev(QMouseEventTransition* that)
+{
+  QMouseEventTransition* rthis = (QMouseEventTransition*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

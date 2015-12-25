@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qjsonobject.h
 // dst-file: /src/core/qjsonobject.cxx
 //
@@ -9,28 +9,27 @@
 
 extern "C" {
 
-  // proto:  int QJsonObject::length();
-int _ZNK11QJsonObject6lengthEv(void *that)
-
+// ~QJsonObject()
+void dedtor_ZN11QJsonObjectD0Ev(QJsonObject* that)
 {
-  QJsonObject *cthat = (QJsonObject *)that;
-  return cthat->length();
+  QJsonObject* rthis = (QJsonObject*)that;
+  delete rthis;
 }
 
-  // proto:  int QJsonObject::count();
-int _ZNK11QJsonObject5countEv(void *that)
-
+// QJsonObject()
+QJsonObject* dector_ZN11QJsonObjectC1Ev()
 {
-  QJsonObject *cthat = (QJsonObject *)that;
-  return cthat->count();
+  // static_assert(sizeof(QJsonObject) == 32, "tyszerr");
+  QJsonObject* rthis = new QJsonObject();
+  return rthis;
 }
 
-  // proto:  bool QJsonObject::empty();
-bool _ZNK11QJsonObject5emptyEv(void *that)
-
+// QJsonObject(const class QJsonObject &)
+QJsonObject* dector_ZN11QJsonObjectC1ERKS_(const QJsonObject & other)
 {
-  QJsonObject *cthat = (QJsonObject *)that;
-  return cthat->empty();
+  // static_assert(sizeof(QJsonObject) == 32, "tyszerr");
+  QJsonObject* rthis = new QJsonObject(other);
+  return rthis;
 }
 
 }; // <= extern "C" block end

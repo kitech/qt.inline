@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qactiongroup.h
 // dst-file: /src/widgets/qactiongroup.cxx
 //
@@ -9,12 +9,19 @@
 
 extern "C" {
 
-  // proto:  void QActionGroup::setDisabled(bool b);
-void _ZN12QActionGroup11setDisabledEb(void *that, bool b)
-
+// QActionGroup(class QObject *)
+QActionGroup* dector_ZN12QActionGroupC1EP7QObject(QObject * parent)
 {
-  QActionGroup *cthat = (QActionGroup *)that;
-   cthat->setDisabled(b);
+  // static_assert(sizeof(QActionGroup) == 32, "tyszerr");
+  QActionGroup* rthis = new QActionGroup(parent);
+  return rthis;
+}
+
+// ~QActionGroup()
+void dedtor_ZN12QActionGroupD0Ev(QActionGroup* that)
+{
+  QActionGroup* rthis = (QActionGroup*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

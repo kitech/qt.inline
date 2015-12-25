@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qcolordialog.h
 // dst-file: /src/widgets/qcolordialog.cxx
 //
@@ -8,6 +8,29 @@
 #include <qcolordialog.h>
 
 extern "C" {
+
+// QColorDialog(const class QColor &, class QWidget *)
+QColorDialog* dector_ZN12QColorDialogC1ERK6QColorP7QWidget(const QColor & initial, QWidget * parent)
+{
+  // static_assert(sizeof(QColorDialog) == 32, "tyszerr");
+  QColorDialog* rthis = new QColorDialog(initial, parent);
+  return rthis;
+}
+
+// ~QColorDialog()
+void dedtor_ZN12QColorDialogD0Ev(QColorDialog* that)
+{
+  QColorDialog* rthis = (QColorDialog*)that;
+  delete rthis;
+}
+
+// QColorDialog(class QWidget *)
+QColorDialog* dector_ZN12QColorDialogC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QColorDialog) == 32, "tyszerr");
+  QColorDialog* rthis = new QColorDialog(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

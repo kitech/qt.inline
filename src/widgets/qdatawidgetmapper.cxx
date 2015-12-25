@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qdatawidgetmapper.h
 // dst-file: /src/widgets/qdatawidgetmapper.cxx
 //
@@ -8,6 +8,21 @@
 #include <qdatawidgetmapper.h>
 
 extern "C" {
+
+// ~QDataWidgetMapper()
+void dedtor_ZN17QDataWidgetMapperD0Ev(QDataWidgetMapper* that)
+{
+  QDataWidgetMapper* rthis = (QDataWidgetMapper*)that;
+  delete rthis;
+}
+
+// QDataWidgetMapper(class QObject *)
+QDataWidgetMapper* dector_ZN17QDataWidgetMapperC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QDataWidgetMapper) == 32, "tyszerr");
+  QDataWidgetMapper* rthis = new QDataWidgetMapper(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

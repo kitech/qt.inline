@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qguiapplication.h
 // dst-file: /src/gui/qguiapplication.cxx
 //
@@ -9,20 +9,19 @@
 
 extern "C" {
 
-  // proto: static bool QGuiApplication::isRightToLeft();
-bool _ZN15QGuiApplication13isRightToLeftEv(void *that)
-
+// ~QGuiApplication()
+void dedtor_ZN15QGuiApplicationD0Ev(QGuiApplication* that)
 {
-  QGuiApplication *cthat = (QGuiApplication *)that;
-  return cthat->isRightToLeft();
+  QGuiApplication* rthis = (QGuiApplication*)that;
+  delete rthis;
 }
 
-  // proto: static bool QGuiApplication::isLeftToRight();
-bool _ZN15QGuiApplication13isLeftToRightEv(void *that)
-
+// QGuiApplication(int &, char **, int)
+QGuiApplication* dector_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int arg3)
 {
-  QGuiApplication *cthat = (QGuiApplication *)that;
-  return cthat->isLeftToRight();
+  // static_assert(sizeof(QGuiApplication) == 32, "tyszerr");
+  QGuiApplication* rthis = new QGuiApplication(argc, argv, arg3);
+  return rthis;
 }
 
 }; // <= extern "C" block end

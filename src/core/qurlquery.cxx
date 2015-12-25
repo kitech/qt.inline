@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qurlquery.h
 // dst-file: /src/core/qurlquery.cxx
 //
@@ -8,6 +8,45 @@
 #include <qurlquery.h>
 
 extern "C" {
+
+// QUrlQuery(const class QString &)
+QUrlQuery* dector_ZN9QUrlQueryC1ERK7QString(const QString & queryString)
+{
+  // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
+  QUrlQuery* rthis = new QUrlQuery(queryString);
+  return rthis;
+}
+
+// ~QUrlQuery()
+void dedtor_ZN9QUrlQueryD0Ev(QUrlQuery* that)
+{
+  QUrlQuery* rthis = (QUrlQuery*)that;
+  delete rthis;
+}
+
+// QUrlQuery()
+QUrlQuery* dector_ZN9QUrlQueryC1Ev()
+{
+  // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
+  QUrlQuery* rthis = new QUrlQuery();
+  return rthis;
+}
+
+// QUrlQuery(const class QUrl &)
+QUrlQuery* dector_ZN9QUrlQueryC1ERK4QUrl(const QUrl & url)
+{
+  // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
+  QUrlQuery* rthis = new QUrlQuery(url);
+  return rthis;
+}
+
+// QUrlQuery(const class QUrlQuery &)
+QUrlQuery* dector_ZN9QUrlQueryC1ERKS_(const QUrlQuery & other)
+{
+  // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
+  QUrlQuery* rthis = new QUrlQuery(other);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

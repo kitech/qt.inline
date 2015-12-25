@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qmimedata.h
 // dst-file: /src/core/qmimedata.cxx
 //
@@ -8,6 +8,21 @@
 #include <qmimedata.h>
 
 extern "C" {
+
+// ~QMimeData()
+void dedtor_ZN9QMimeDataD0Ev(QMimeData* that)
+{
+  QMimeData* rthis = (QMimeData*)that;
+  delete rthis;
+}
+
+// QMimeData()
+QMimeData* dector_ZN9QMimeDataC1Ev()
+{
+  // static_assert(sizeof(QMimeData) == 32, "tyszerr");
+  QMimeData* rthis = new QMimeData();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

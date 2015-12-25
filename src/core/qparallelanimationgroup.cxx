@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qparallelanimationgroup.h
 // dst-file: /src/core/qparallelanimationgroup.cxx
 //
@@ -8,6 +8,21 @@
 #include <qparallelanimationgroup.h>
 
 extern "C" {
+
+// ~QParallelAnimationGroup()
+void dedtor_ZN23QParallelAnimationGroupD0Ev(QParallelAnimationGroup* that)
+{
+  QParallelAnimationGroup* rthis = (QParallelAnimationGroup*)that;
+  delete rthis;
+}
+
+// QParallelAnimationGroup(class QObject *)
+QParallelAnimationGroup* dector_ZN23QParallelAnimationGroupC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QParallelAnimationGroup) == 32, "tyszerr");
+  QParallelAnimationGroup* rthis = new QParallelAnimationGroup(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

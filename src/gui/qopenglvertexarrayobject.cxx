@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qopenglvertexarrayobject.h
 // dst-file: /src/gui/qopenglvertexarrayobject.cxx
 //
@@ -8,6 +8,21 @@
 #include <qopenglvertexarrayobject.h>
 
 extern "C" {
+
+// QOpenGLVertexArrayObject(class QObject *)
+QOpenGLVertexArrayObject* dector_ZN24QOpenGLVertexArrayObjectC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QOpenGLVertexArrayObject) == 32, "tyszerr");
+  QOpenGLVertexArrayObject* rthis = new QOpenGLVertexArrayObject(parent);
+  return rthis;
+}
+
+// ~QOpenGLVertexArrayObject()
+void dedtor_ZN24QOpenGLVertexArrayObjectD0Ev(QOpenGLVertexArrayObject* that)
+{
+  QOpenGLVertexArrayObject* rthis = (QOpenGLVertexArrayObject*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qfileselector.h
 // dst-file: /src/core/qfileselector.cxx
 //
@@ -8,6 +8,21 @@
 #include <qfileselector.h>
 
 extern "C" {
+
+// QFileSelector(class QObject *)
+QFileSelector* dector_ZN13QFileSelectorC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QFileSelector) == 32, "tyszerr");
+  QFileSelector* rthis = new QFileSelector(parent);
+  return rthis;
+}
+
+// ~QFileSelector()
+void dedtor_ZN13QFileSelectorD0Ev(QFileSelector* that)
+{
+  QFileSelector* rthis = (QFileSelector*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

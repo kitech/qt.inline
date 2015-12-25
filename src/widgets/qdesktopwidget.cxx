@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -8,6 +8,21 @@
 #include <qdesktopwidget.h>
 
 extern "C" {
+
+// ~QDesktopWidget()
+void dedtor_ZN14QDesktopWidgetD0Ev(QDesktopWidget* that)
+{
+  QDesktopWidget* rthis = (QDesktopWidget*)that;
+  delete rthis;
+}
+
+// QDesktopWidget()
+QDesktopWidget* dector_ZN14QDesktopWidgetC1Ev()
+{
+  // static_assert(sizeof(QDesktopWidget) == 32, "tyszerr");
+  QDesktopWidget* rthis = new QDesktopWidget();
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

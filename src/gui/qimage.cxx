@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -9,55 +9,51 @@
 
 extern "C" {
 
-  // proto: static QImage QImage::fromData(const QByteArray & data, const char * format);
-QImage* _ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * format)
-
+// QImage(const class QSize &, enum QImage::Format)
+QImage* dector_ZN6QImageC1ERK5QSizeNS_6FormatE(const QSize & size, QImage::Format format)
 {
-  QImage *cthat = (QImage *)that;
-  auto recret = cthat->fromData(data, format);
-  return new QImage(recret);
+  // static_assert(sizeof(QImage) == 32, "tyszerr");
+  QImage* rthis = new QImage(size, format);
+  return rthis;
 }
 
-  // proto:  QImage QImage::copy(int x, int y, int w, int h);
-QImage* _ZNK6QImage4copyEiiii(void *that, int x, int y, int w, int h)
-
+// QImage(int, int, enum QImage::Format)
+QImage* dector_ZN6QImageC1EiiNS_6FormatE(int width, int height, QImage::Format format)
 {
-  QImage *cthat = (QImage *)that;
-  auto recret = cthat->copy(x, y, w, h);
-  return new QImage(recret);
+  // static_assert(sizeof(QImage) == 32, "tyszerr");
+  QImage* rthis = new QImage(width, height, format);
+  return rthis;
 }
 
-  // proto:  QImage QImage::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-QImage* _ZNK6QImage6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
-
+// QImage(const class QString &, const char *)
+QImage* dector_ZN6QImageC1ERK7QStringPKc(const QString & fileName, const char * format)
 {
-  QImage *cthat = (QImage *)that;
-  auto recret = cthat->scaled(w, h, aspectMode, mode);
-  return new QImage(recret);
+  // static_assert(sizeof(QImage) == 32, "tyszerr");
+  QImage* rthis = new QImage(fileName, format);
+  return rthis;
 }
 
-  // proto:  bool QImage::loadFromData(const QByteArray & data, const char * aformat);
-bool _ZN6QImage12loadFromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * aformat)
-
+// QImage(const class QImage &)
+QImage* dector_ZN6QImageC1ERKS_(const QImage & arg1)
 {
-  QImage *cthat = (QImage *)that;
-  return cthat->loadFromData(data, aformat);
+  // static_assert(sizeof(QImage) == 32, "tyszerr");
+  QImage* rthis = new QImage(arg1);
+  return rthis;
 }
 
-  // proto:  void QImage::swap(QImage & other);
-void _ZN6QImage4swapERS_(void *that, QImage & other)
-
+// QImage()
+QImage* dector_ZN6QImageC1Ev()
 {
-  QImage *cthat = (QImage *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QImage) == 32, "tyszerr");
+  QImage* rthis = new QImage();
+  return rthis;
 }
 
-  // proto:  void QImage::QImage(QImage && other);
-void _ZN6QImageC1EOS_(void *that, QImage && other)
-
+// ~QImage()
+void dedtor_ZN6QImageD0Ev(QImage* that)
 {
-  QImage *cthat = (QImage *)that;
-  auto _o = new(that) QImage(other);
+  QImage* rthis = (QImage*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

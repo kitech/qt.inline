@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qfilesystemwatcher.h
 // dst-file: /src/core/qfilesystemwatcher.cxx
 //
@@ -8,6 +8,29 @@
 #include <qfilesystemwatcher.h>
 
 extern "C" {
+
+// ~QFileSystemWatcher()
+void dedtor_ZN18QFileSystemWatcherD0Ev(QFileSystemWatcher* that)
+{
+  QFileSystemWatcher* rthis = (QFileSystemWatcher*)that;
+  delete rthis;
+}
+
+// QFileSystemWatcher(class QObject *)
+QFileSystemWatcher* dector_ZN18QFileSystemWatcherC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QFileSystemWatcher) == 32, "tyszerr");
+  QFileSystemWatcher* rthis = new QFileSystemWatcher(parent);
+  return rthis;
+}
+
+// QFileSystemWatcher(const class QStringList &, class QObject *)
+QFileSystemWatcher* dector_ZN18QFileSystemWatcherC1ERK11QStringListP7QObject(const QStringList & paths, QObject * parent)
+{
+  // static_assert(sizeof(QFileSystemWatcher) == 32, "tyszerr");
+  QFileSystemWatcher* rthis = new QFileSystemWatcher(paths, parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

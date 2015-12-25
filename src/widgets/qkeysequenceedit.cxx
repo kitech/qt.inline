@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qkeysequenceedit.h
 // dst-file: /src/widgets/qkeysequenceedit.cxx
 //
@@ -8,6 +8,29 @@
 #include <qkeysequenceedit.h>
 
 extern "C" {
+
+// QKeySequenceEdit(const class QKeySequence &, class QWidget *)
+QKeySequenceEdit* dector_ZN16QKeySequenceEditC1ERK12QKeySequenceP7QWidget(const QKeySequence & keySequence, QWidget * parent)
+{
+  // static_assert(sizeof(QKeySequenceEdit) == 32, "tyszerr");
+  QKeySequenceEdit* rthis = new QKeySequenceEdit(keySequence, parent);
+  return rthis;
+}
+
+// ~QKeySequenceEdit()
+void dedtor_ZN16QKeySequenceEditD0Ev(QKeySequenceEdit* that)
+{
+  QKeySequenceEdit* rthis = (QKeySequenceEdit*)that;
+  delete rthis;
+}
+
+// QKeySequenceEdit(class QWidget *)
+QKeySequenceEdit* dector_ZN16QKeySequenceEditC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QKeySequenceEdit) == 32, "tyszerr");
+  QKeySequenceEdit* rthis = new QKeySequenceEdit(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qcolormap.h
 // dst-file: /src/widgets/qcolormap.cxx
 //
@@ -8,6 +8,21 @@
 #include <qcolormap.h>
 
 extern "C" {
+
+// ~QColormap()
+void dedtor_ZN9QColormapD0Ev(QColormap* that)
+{
+  QColormap* rthis = (QColormap*)that;
+  delete rthis;
+}
+
+// QColormap(const class QColormap &)
+QColormap* dector_ZN9QColormapC1ERKS_(const QColormap & colormap)
+{
+  // static_assert(sizeof(QColormap) == 32, "tyszerr");
+  QColormap* rthis = new QColormap(colormap);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

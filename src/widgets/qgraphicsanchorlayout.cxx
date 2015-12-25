@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicsanchorlayout.h
 // dst-file: /src/widgets/qgraphicsanchorlayout.cxx
 //
@@ -8,6 +8,28 @@
 #include <qgraphicsanchorlayout.h>
 
 extern "C" {
+
+// QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
+QGraphicsAnchorLayout* dector_ZN21QGraphicsAnchorLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent)
+{
+  // static_assert(sizeof(QGraphicsAnchorLayout) == 32, "tyszerr");
+  QGraphicsAnchorLayout* rthis = new QGraphicsAnchorLayout(parent);
+  return rthis;
+}
+
+// ~QGraphicsAnchorLayout()
+void dedtor_ZN21QGraphicsAnchorLayoutD0Ev(QGraphicsAnchorLayout* that)
+{
+  QGraphicsAnchorLayout* rthis = (QGraphicsAnchorLayout*)that;
+  delete rthis;
+}
+
+// ~QGraphicsAnchor()
+void dedtor_ZN15QGraphicsAnchorD0Ev(QGraphicsAnchor* that)
+{
+  QGraphicsAnchor* rthis = (QGraphicsAnchor*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

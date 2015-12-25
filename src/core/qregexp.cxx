@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qregexp.h
 // dst-file: /src/core/qregexp.cxx
 //
@@ -9,12 +9,35 @@
 
 extern "C" {
 
-  // proto:  void QRegExp::swap(QRegExp & other);
-void _ZN7QRegExp4swapERS_(void *that, QRegExp & other)
-
+// QRegExp(const class QRegExp &)
+QRegExp* dector_ZN7QRegExpC1ERKS_(const QRegExp & rx)
 {
-  QRegExp *cthat = (QRegExp *)that;
-   cthat->swap(other);
+  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
+  QRegExp* rthis = new QRegExp(rx);
+  return rthis;
+}
+
+// ~QRegExp()
+void dedtor_ZN7QRegExpD0Ev(QRegExp* that)
+{
+  QRegExp* rthis = (QRegExp*)that;
+  delete rthis;
+}
+
+// QRegExp()
+QRegExp* dector_ZN7QRegExpC1Ev()
+{
+  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
+  QRegExp* rthis = new QRegExp();
+  return rthis;
+}
+
+// QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
+QRegExp* dector_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax)
+{
+  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
+  QRegExp* rthis = new QRegExp(pattern, cs, syntax);
+  return rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
@@ -9,12 +9,42 @@
 
 extern "C" {
 
-  // proto:  void QOpenGLDebugMessage::swap(QOpenGLDebugMessage & debugMessage);
-void _ZN19QOpenGLDebugMessage4swapERS_(void *that, QOpenGLDebugMessage & debugMessage)
-
+// QOpenGLDebugMessage()
+QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1Ev()
 {
-  QOpenGLDebugMessage *cthat = (QOpenGLDebugMessage *)that;
-   cthat->swap(debugMessage);
+  // static_assert(sizeof(QOpenGLDebugMessage) == 32, "tyszerr");
+  QOpenGLDebugMessage* rthis = new QOpenGLDebugMessage();
+  return rthis;
+}
+
+// ~QOpenGLDebugMessage()
+void dedtor_ZN19QOpenGLDebugMessageD0Ev(QOpenGLDebugMessage* that)
+{
+  QOpenGLDebugMessage* rthis = (QOpenGLDebugMessage*)that;
+  delete rthis;
+}
+
+// QOpenGLDebugMessage(const class QOpenGLDebugMessage &)
+QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1ERKS_(const QOpenGLDebugMessage & debugMessage)
+{
+  // static_assert(sizeof(QOpenGLDebugMessage) == 32, "tyszerr");
+  QOpenGLDebugMessage* rthis = new QOpenGLDebugMessage(debugMessage);
+  return rthis;
+}
+
+// ~QOpenGLDebugLogger()
+void dedtor_ZN18QOpenGLDebugLoggerD0Ev(QOpenGLDebugLogger* that)
+{
+  QOpenGLDebugLogger* rthis = (QOpenGLDebugLogger*)that;
+  delete rthis;
+}
+
+// QOpenGLDebugLogger(class QObject *)
+QOpenGLDebugLogger* dector_ZN18QOpenGLDebugLoggerC1EP7QObject(QObject * parent)
+{
+  // static_assert(sizeof(QOpenGLDebugLogger) == 32, "tyszerr");
+  QOpenGLDebugLogger* rthis = new QOpenGLDebugLogger(parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

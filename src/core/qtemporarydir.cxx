@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtCore/qtemporarydir.h
 // dst-file: /src/core/qtemporarydir.cxx
 //
@@ -8,6 +8,29 @@
 #include <qtemporarydir.h>
 
 extern "C" {
+
+// ~QTemporaryDir()
+void dedtor_ZN13QTemporaryDirD0Ev(QTemporaryDir* that)
+{
+  QTemporaryDir* rthis = (QTemporaryDir*)that;
+  delete rthis;
+}
+
+// QTemporaryDir()
+QTemporaryDir* dector_ZN13QTemporaryDirC1Ev()
+{
+  // static_assert(sizeof(QTemporaryDir) == 32, "tyszerr");
+  QTemporaryDir* rthis = new QTemporaryDir();
+  return rthis;
+}
+
+// QTemporaryDir(const class QString &)
+QTemporaryDir* dector_ZN13QTemporaryDirC1ERK7QString(const QString & templateName)
+{
+  // static_assert(sizeof(QTemporaryDir) == 32, "tyszerr");
+  QTemporaryDir* rthis = new QTemporaryDir(templateName);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

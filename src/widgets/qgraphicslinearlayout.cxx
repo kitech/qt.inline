@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicslinearlayout.h
 // dst-file: /src/widgets/qgraphicslinearlayout.cxx
 //
@@ -9,20 +9,27 @@
 
 extern "C" {
 
-  // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
-void _ZN21QGraphicsLinearLayout10addStretchEi(void *that, int stretch)
-
+// QGraphicsLinearLayout(class QGraphicsLayoutItem *)
+QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent)
 {
-  QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
-   cthat->addStretch(stretch);
+  // static_assert(sizeof(QGraphicsLinearLayout) == 32, "tyszerr");
+  QGraphicsLinearLayout* rthis = new QGraphicsLinearLayout(parent);
+  return rthis;
 }
 
-  // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
-void _ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *that, QGraphicsLayoutItem * item)
-
+// ~QGraphicsLinearLayout()
+void dedtor_ZN21QGraphicsLinearLayoutD0Ev(QGraphicsLinearLayout* that)
 {
-  QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
-   cthat->addItem(item);
+  QGraphicsLinearLayout* rthis = (QGraphicsLinearLayout*)that;
+  delete rthis;
+}
+
+// QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
+QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent)
+{
+  // static_assert(sizeof(QGraphicsLinearLayout) == 32, "tyszerr");
+  QGraphicsLinearLayout* rthis = new QGraphicsLinearLayout(orientation, parent);
+  return rthis;
 }
 
 }; // <= extern "C" block end

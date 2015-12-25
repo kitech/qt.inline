@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qlcdnumber.h
 // dst-file: /src/widgets/qlcdnumber.cxx
 //
@@ -8,6 +8,29 @@
 #include <qlcdnumber.h>
 
 extern "C" {
+
+// ~QLCDNumber()
+void dedtor_ZN10QLCDNumberD0Ev(QLCDNumber* that)
+{
+  QLCDNumber* rthis = (QLCDNumber*)that;
+  delete rthis;
+}
+
+// QLCDNumber(uint, class QWidget *)
+QLCDNumber* dector_ZN10QLCDNumberC1EjP7QWidget(unsigned int numDigits, QWidget * parent)
+{
+  // static_assert(sizeof(QLCDNumber) == 32, "tyszerr");
+  QLCDNumber* rthis = new QLCDNumber(numDigits, parent);
+  return rthis;
+}
+
+// QLCDNumber(class QWidget *)
+QLCDNumber* dector_ZN10QLCDNumberC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QLCDNumber) == 32, "tyszerr");
+  QLCDNumber* rthis = new QLCDNumber(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

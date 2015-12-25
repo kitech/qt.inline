@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qfocusframe.h
 // dst-file: /src/widgets/qfocusframe.cxx
 //
@@ -8,6 +8,21 @@
 #include <qfocusframe.h>
 
 extern "C" {
+
+// ~QFocusFrame()
+void dedtor_ZN11QFocusFrameD0Ev(QFocusFrame* that)
+{
+  QFocusFrame* rthis = (QFocusFrame*)that;
+  delete rthis;
+}
+
+// QFocusFrame(class QWidget *)
+QFocusFrame* dector_ZN11QFocusFrameC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QFocusFrame) == 32, "tyszerr");
+  QFocusFrame* rthis = new QFocusFrame(parent);
+  return rthis;
+}
 
 }; // <= extern "C" block end
 

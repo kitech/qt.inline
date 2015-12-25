@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtGui/qsurfaceformat.h
 // dst-file: /src/gui/qsurfaceformat.cxx
 //
@@ -8,6 +8,37 @@
 #include <qsurfaceformat.h>
 
 extern "C" {
+
+// QSurfaceFormat(const class QSurfaceFormat &)
+QSurfaceFormat* dector_ZN14QSurfaceFormatC1ERKS_(const QSurfaceFormat & other)
+{
+  // static_assert(sizeof(QSurfaceFormat) == 32, "tyszerr");
+  QSurfaceFormat* rthis = new QSurfaceFormat(other);
+  return rthis;
+}
+
+// QSurfaceFormat(FormatOptions)
+QSurfaceFormat* dector_ZN14QSurfaceFormatC1E6QFlagsINS_12FormatOptionEE(QSurfaceFormat::FormatOption options)
+{
+  // static_assert(sizeof(QSurfaceFormat) == 32, "tyszerr");
+  QSurfaceFormat* rthis = new QSurfaceFormat(options);
+  return rthis;
+}
+
+// QSurfaceFormat()
+QSurfaceFormat* dector_ZN14QSurfaceFormatC1Ev()
+{
+  // static_assert(sizeof(QSurfaceFormat) == 32, "tyszerr");
+  QSurfaceFormat* rthis = new QSurfaceFormat();
+  return rthis;
+}
+
+// ~QSurfaceFormat()
+void dedtor_ZN14QSurfaceFormatD0Ev(QSurfaceFormat* that)
+{
+  QSurfaceFormat* rthis = (QSurfaceFormat*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

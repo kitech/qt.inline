@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
@@ -8,6 +8,21 @@
 #include <qmainwindow.h>
 
 extern "C" {
+
+// QMainWindow(class QWidget *, Qt::WindowFlags)
+QMainWindow* dector_ZN11QMainWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
+{
+  // static_assert(sizeof(QMainWindow) == 32, "tyszerr");
+  QMainWindow* rthis = new QMainWindow(parent, flags);
+  return rthis;
+}
+
+// ~QMainWindow()
+void dedtor_ZN11QMainWindowD0Ev(QMainWindow* that)
+{
+  QMainWindow* rthis = (QMainWindow*)that;
+  delete rthis;
+}
 
 }; // <= extern "C" block end
 

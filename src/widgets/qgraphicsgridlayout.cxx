@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Thu Dec 24 22:25:43 2015
+// created: Fri Dec 25 23:55:48 2015
 // src-file: /QtWidgets/qgraphicsgridlayout.h
 // dst-file: /src/widgets/qgraphicsgridlayout.cxx
 //
@@ -9,9 +9,23 @@
 
 extern "C" {
 
+// ~QGraphicsGridLayout()
+void dedtor_ZN19QGraphicsGridLayoutD0Ev(QGraphicsGridLayout* that)
+{
+  QGraphicsGridLayout* rthis = (QGraphicsGridLayout*)that;
+  delete rthis;
+}
+
+// QGraphicsGridLayout(class QGraphicsLayoutItem *)
+QGraphicsGridLayout* dector_ZN19QGraphicsGridLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent)
+{
+  // static_assert(sizeof(QGraphicsGridLayout) == 32, "tyszerr");
+  QGraphicsGridLayout* rthis = new QGraphicsGridLayout(parent);
+  return rthis;
+}
+
   // proto:  void QGraphicsGridLayout::addItem(QGraphicsLayoutItem * item, int row, int column, Qt::Alignment alignment);
 void _ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemii6QFlagsIN2Qt13AlignmentFlagEE(void *that, QGraphicsLayoutItem * item, int row, int column, Qt::Alignment alignment)
-
 {
   QGraphicsGridLayout *cthat = (QGraphicsGridLayout *)that;
    cthat->addItem(item, row, column, alignment);
