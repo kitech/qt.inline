@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qsizepolicy.h
 // dst-file: /src/widgets/qsizepolicy.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsizepolicy.h>
 
 extern "C" {
+
+int QSizePolicy_Class_Size()
+{
+  return sizeof(QSizePolicy);
+}
 
 }; // <= extern "C" block end
 

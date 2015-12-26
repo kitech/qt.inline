@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qkeysequenceedit.h
 // dst-file: /src/widgets/qkeysequenceedit.cxx
 //
@@ -8,6 +8,11 @@
 #include <qkeysequenceedit.h>
 
 extern "C" {
+
+int QKeySequenceEdit_Class_Size()
+{
+  return sizeof(QKeySequenceEdit);
+}
 
 // QKeySequenceEdit(const class QKeySequence &, class QWidget *)
 QKeySequenceEdit* dector_ZN16QKeySequenceEditC1ERK12QKeySequenceP7QWidget(const QKeySequence & keySequence, QWidget * parent)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsplashscreen.h>
 
 extern "C" {
+
+int QSplashScreen_Class_Size()
+{
+  return sizeof(QSplashScreen);
+}
 
 // ~QSplashScreen()
 void dedtor_ZN13QSplashScreenD0Ev(QSplashScreen* that)

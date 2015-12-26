@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qfontinfo.h
 // dst-file: /src/gui/qfontinfo.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfontinfo.h>
 
 extern "C" {
+
+int QFontInfo_Class_Size()
+{
+  return sizeof(QFontInfo);
+}
 
 // QFontInfo(const class QFontInfo &)
 QFontInfo* dector_ZN9QFontInfoC1ERKS_(const QFontInfo & arg1)

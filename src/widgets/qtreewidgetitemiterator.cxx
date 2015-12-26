@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtreewidgetitemiterator.h
 // dst-file: /src/widgets/qtreewidgetitemiterator.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtreewidgetitemiterator.h>
 
 extern "C" {
+
+int QTreeWidgetItemIterator_Class_Size()
+{
+  return sizeof(QTreeWidgetItemIterator);
+}
 
 // QTreeWidgetItemIterator(class QTreeWidget *, IteratorFlags)
 QTreeWidgetItemIterator* dector_ZN23QTreeWidgetItemIteratorC1EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * widget, QTreeWidgetItemIterator::IteratorFlag flags)

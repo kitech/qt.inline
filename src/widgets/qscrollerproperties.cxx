@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qscrollerproperties.h
 // dst-file: /src/widgets/qscrollerproperties.cxx
 //
@@ -8,6 +8,11 @@
 #include <qscrollerproperties.h>
 
 extern "C" {
+
+int QScrollerProperties_Class_Size()
+{
+  return sizeof(QScrollerProperties);
+}
 
 // QScrollerProperties(const class QScrollerProperties &)
 QScrollerProperties* dector_ZN19QScrollerPropertiesC1ERKS_(const QScrollerProperties & sp)

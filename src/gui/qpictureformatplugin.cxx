@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpictureformatplugin.h
 // dst-file: /src/gui/qpictureformatplugin.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpictureformatplugin.h>
 
 extern "C" {
+
+int QPictureFormatPlugin_Class_Size()
+{
+  return sizeof(QPictureFormatPlugin);
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qfontdialog.h
 // dst-file: /src/widgets/qfontdialog.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfontdialog.h>
 
 extern "C" {
+
+int QFontDialog_Class_Size()
+{
+  return sizeof(QFontDialog);
+}
 
 // QFontDialog(class QWidget *)
 QFontDialog* dector_ZN11QFontDialogC1EP7QWidget(QWidget * parent)

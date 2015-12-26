@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qregexp.h
 // dst-file: /src/core/qregexp.cxx
 //
@@ -8,6 +8,11 @@
 #include <qregexp.h>
 
 extern "C" {
+
+int QRegExp_Class_Size()
+{
+  return sizeof(QRegExp);
+}
 
 // QRegExp(const class QRegExp &)
 QRegExp* dector_ZN7QRegExpC1ERKS_(const QRegExp & rx)

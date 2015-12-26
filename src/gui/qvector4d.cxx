@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qvector4d.h
 // dst-file: /src/gui/qvector4d.cxx
 //
@@ -8,6 +8,11 @@
 #include <qvector4d.h>
 
 extern "C" {
+
+int QVector4D_Class_Size()
+{
+  return sizeof(QVector4D);
+}
 
 // QVector4D(const class QVector2D &, float, float)
 QVector4D* dector_ZN9QVector4DC1ERK9QVector2Dff(const QVector2D & vector, float zpos, float wpos)

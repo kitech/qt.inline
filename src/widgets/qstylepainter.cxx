@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstylepainter.h
 // dst-file: /src/widgets/qstylepainter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstylepainter.h>
 
 extern "C" {
+
+int QStylePainter_Class_Size()
+{
+  return sizeof(QStylePainter);
+}
 
   // proto:  void QStylePainter::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex & opt);
 void _ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyleOptionComplex(void *that, QStyle::ComplexControl cc, const QStyleOptionComplex & opt)

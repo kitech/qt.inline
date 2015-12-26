@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qabstractitemmodel.h>
 
 extern "C" {
+
+int QModelIndex_Class_Size()
+{
+  return sizeof(QModelIndex);
+}
 
   // proto:  QModelIndex QModelIndex::parent();
 QModelIndex* _ZNK11QModelIndex6parentEv(void *that)
@@ -41,6 +46,11 @@ QModelIndex* _ZNK11QModelIndex5childEii(void *that, int row, int column)
   return new QModelIndex(recret);
 }
 
+int QPersistentModelIndex_Class_Size()
+{
+  return sizeof(QPersistentModelIndex);
+}
+
 // ~QPersistentModelIndex()
 void dedtor_ZN21QPersistentModelIndexD0Ev(QPersistentModelIndex* that)
 {
@@ -70,6 +80,16 @@ QPersistentModelIndex* dector_ZN21QPersistentModelIndexC1ERKS_(const QPersistent
   // static_assert(sizeof(QPersistentModelIndex) == 32, "tyszerr");
   QPersistentModelIndex* rthis = new QPersistentModelIndex(other);
   return rthis;
+}
+
+int QAbstractTableModel_Class_Size()
+{
+  return sizeof(QAbstractTableModel);
+}
+
+int QAbstractItemModel_Class_Size()
+{
+  return sizeof(QAbstractItemModel);
 }
 
   // proto:  bool QAbstractItemModel::moveColumn(const QModelIndex & sourceParent, int sourceColumn, const QModelIndex & destinationParent, int destinationChild);
@@ -112,6 +132,11 @@ bool _ZN18QAbstractItemModel12insertColumnEiRK11QModelIndex(void *that, int colu
 {
   QAbstractItemModel *cthat = (QAbstractItemModel *)that;
   return cthat->insertColumn(column, parent);
+}
+
+int QAbstractListModel_Class_Size()
+{
+  return sizeof(QAbstractListModel);
 }
 
 }; // <= extern "C" block end

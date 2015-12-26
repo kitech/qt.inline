@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qcommandlinkbutton.h
 // dst-file: /src/widgets/qcommandlinkbutton.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcommandlinkbutton.h>
 
 extern "C" {
+
+int QCommandLinkButton_Class_Size()
+{
+  return sizeof(QCommandLinkButton);
+}
 
 // QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
 QCommandLinkButton* dector_ZN18QCommandLinkButtonC1ERK7QStringS2_P7QWidget(const QString & text, const QString & description, QWidget * parent)

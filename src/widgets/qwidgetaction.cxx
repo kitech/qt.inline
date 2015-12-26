@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qwidgetaction.h
 // dst-file: /src/widgets/qwidgetaction.cxx
 //
@@ -8,6 +8,11 @@
 #include <qwidgetaction.h>
 
 extern "C" {
+
+int QWidgetAction_Class_Size()
+{
+  return sizeof(QWidgetAction);
+}
 
 // ~QWidgetAction()
 void dedtor_ZN13QWidgetActionD0Ev(QWidgetAction* that)

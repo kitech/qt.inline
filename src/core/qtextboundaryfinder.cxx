@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qtextboundaryfinder.h
 // dst-file: /src/core/qtextboundaryfinder.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextboundaryfinder.h>
 
 extern "C" {
+
+int QTextBoundaryFinder_Class_Size()
+{
+  return sizeof(QTextBoundaryFinder);
+}
 
 // QTextBoundaryFinder(const class QTextBoundaryFinder &)
 QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1ERKS_(const QTextBoundaryFinder & other)

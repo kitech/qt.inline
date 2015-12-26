@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglframebufferobject.h
 // dst-file: /src/gui/qopenglframebufferobject.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopenglframebufferobject.h>
 
 extern "C" {
+
+int QOpenGLFramebufferObjectFormat_Class_Size()
+{
+  return sizeof(QOpenGLFramebufferObjectFormat);
+}
 
 // ~QOpenGLFramebufferObjectFormat()
 void dedtor_ZN30QOpenGLFramebufferObjectFormatD0Ev(QOpenGLFramebufferObjectFormat* that)
@@ -30,6 +35,11 @@ QOpenGLFramebufferObjectFormat* dector_ZN30QOpenGLFramebufferObjectFormatC1Ev()
   // static_assert(sizeof(QOpenGLFramebufferObjectFormat) == 32, "tyszerr");
   QOpenGLFramebufferObjectFormat* rthis = new QOpenGLFramebufferObjectFormat();
   return rthis;
+}
+
+int QOpenGLFramebufferObject_Class_Size()
+{
+  return sizeof(QOpenGLFramebufferObject);
 }
 
 // QOpenGLFramebufferObject(int, int, enum QOpenGLFramebufferObject::Attachment, GLenum, GLenum)

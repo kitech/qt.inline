@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qfileinfo.h
 // dst-file: /src/core/qfileinfo.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfileinfo.h>
 
 extern "C" {
+
+int QFileInfo_Class_Size()
+{
+  return sizeof(QFileInfo);
+}
 
 // QFileInfo()
 QFileInfo* dector_ZN9QFileInfoC1Ev()

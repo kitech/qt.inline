@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstatusbar.h
 // dst-file: /src/widgets/qstatusbar.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstatusbar.h>
 
 extern "C" {
+
+int QStatusBar_Class_Size()
+{
+  return sizeof(QStatusBar);
+}
 
 // ~QStatusBar()
 void dedtor_ZN10QStatusBarD0Ev(QStatusBar* that)

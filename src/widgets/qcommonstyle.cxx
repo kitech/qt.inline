@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qcommonstyle.h
 // dst-file: /src/widgets/qcommonstyle.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcommonstyle.h>
 
 extern "C" {
+
+int QCommonStyle_Class_Size()
+{
+  return sizeof(QCommonStyle);
+}
 
 // QCommonStyle()
 QCommonStyle* dector_ZN12QCommonStyleC1Ev()

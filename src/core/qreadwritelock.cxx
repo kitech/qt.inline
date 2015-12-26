@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qreadwritelock.h
 // dst-file: /src/core/qreadwritelock.cxx
 //
@@ -8,6 +8,11 @@
 #include <qreadwritelock.h>
 
 extern "C" {
+
+int QWriteLocker_Class_Size()
+{
+  return sizeof(QWriteLocker);
+}
 
 // QWriteLocker(class QReadWriteLock *)
 QWriteLocker* dector_ZN12QWriteLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock)
@@ -24,6 +29,11 @@ void _ZN12QWriteLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWrit
   auto _o = new(that) QWriteLocker(readWriteLock);
 }
 
+int QReadWriteLock_Class_Size()
+{
+  return sizeof(QReadWriteLock);
+}
+
 // ~QReadWriteLock()
 void dedtor_ZN14QReadWriteLockD0Ev(QReadWriteLock* that)
 {
@@ -37,6 +47,11 @@ QReadWriteLock* dector_ZN14QReadWriteLockC1ENS_13RecursionModeE(QReadWriteLock::
   // static_assert(sizeof(QReadWriteLock) == 32, "tyszerr");
   QReadWriteLock* rthis = new QReadWriteLock(recursionMode);
   return rthis;
+}
+
+int QReadLocker_Class_Size()
+{
+  return sizeof(QReadLocker);
 }
 
 // QReadLocker(class QReadWriteLock *)

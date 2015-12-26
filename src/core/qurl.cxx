@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -8,6 +8,11 @@
 #include <qurl.h>
 
 extern "C" {
+
+int QUrl_Class_Size()
+{
+  return sizeof(QUrl);
+}
 
 // ~QUrl()
 void dedtor_ZN4QUrlD0Ev(QUrl* that)

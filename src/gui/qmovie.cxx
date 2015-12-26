@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qmovie.h
 // dst-file: /src/gui/qmovie.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmovie.h>
 
 extern "C" {
+
+int QMovie_Class_Size()
+{
+  return sizeof(QMovie);
+}
 
 // QMovie(class QObject *)
 QMovie* dector_ZN6QMovieC1EP7QObject(QObject * parent)

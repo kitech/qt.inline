@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlcdnumber.h
 // dst-file: /src/widgets/qlcdnumber.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlcdnumber.h>
 
 extern "C" {
+
+int QLCDNumber_Class_Size()
+{
+  return sizeof(QLCDNumber);
+}
 
 // ~QLCDNumber()
 void dedtor_ZN10QLCDNumberD0Ev(QLCDNumber* that)

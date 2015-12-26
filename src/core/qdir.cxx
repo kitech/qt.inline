@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qdir.h
 // dst-file: /src/core/qdir.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdir.h>
 
 extern "C" {
+
+int QDir_Class_Size()
+{
+  return sizeof(QDir);
+}
 
 // QDir(const class QString &)
 QDir* dector_ZN4QDirC1ERK7QString(const QString & path)

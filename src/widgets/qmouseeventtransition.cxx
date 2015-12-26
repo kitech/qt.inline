@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmouseeventtransition.h
 // dst-file: /src/widgets/qmouseeventtransition.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmouseeventtransition.h>
 
 extern "C" {
+
+int QMouseEventTransition_Class_Size()
+{
+  return sizeof(QMouseEventTransition);
+}
 
 // QMouseEventTransition(class QState *)
 QMouseEventTransition* dector_ZN21QMouseEventTransitionC1EP6QState(QState * sourceState)

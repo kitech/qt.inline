@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsavefile.h
 // dst-file: /src/core/qsavefile.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsavefile.h>
 
 extern "C" {
+
+int QSaveFile_Class_Size()
+{
+  return sizeof(QSaveFile);
+}
 
 // QSaveFile(const class QString &, class QObject *)
 QSaveFile* dector_ZN9QSaveFileC1ERK7QStringP7QObject(const QString & name, QObject * parent)

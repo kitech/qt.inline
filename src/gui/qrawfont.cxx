@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qrawfont.h
 // dst-file: /src/gui/qrawfont.cxx
 //
@@ -8,6 +8,11 @@
 #include <qrawfont.h>
 
 extern "C" {
+
+int QRawFont_Class_Size()
+{
+  return sizeof(QRawFont);
+}
 
 // QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
 QRawFont* dector_ZN8QRawFontC1ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray & fontData, double pixelSize, QFont::HintingPreference hintingPreference)

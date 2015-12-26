@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qlocale.h
 // dst-file: /src/core/qlocale.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlocale.h>
 
 extern "C" {
+
+int QLocale_Class_Size()
+{
+  return sizeof(QLocale);
+}
 
 // QLocale(enum QLocale::Language, enum QLocale::Country)
 QLocale* dector_ZN7QLocaleC1ENS_8LanguageENS_7CountryE(QLocale::Language language, QLocale::Country country)

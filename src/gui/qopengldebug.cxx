@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopengldebug.h>
 
 extern "C" {
+
+int QOpenGLDebugMessage_Class_Size()
+{
+  return sizeof(QOpenGLDebugMessage);
+}
 
 // QOpenGLDebugMessage()
 QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1Ev()
@@ -30,6 +35,11 @@ QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1ERKS_(const QOpenGLDebugMes
   // static_assert(sizeof(QOpenGLDebugMessage) == 32, "tyszerr");
   QOpenGLDebugMessage* rthis = new QOpenGLDebugMessage(debugMessage);
   return rthis;
+}
+
+int QOpenGLDebugLogger_Class_Size()
+{
+  return sizeof(QOpenGLDebugLogger);
 }
 
 // ~QOpenGLDebugLogger()

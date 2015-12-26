@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qspinbox.h
 // dst-file: /src/widgets/qspinbox.cxx
 //
@@ -8,6 +8,11 @@
 #include <qspinbox.h>
 
 extern "C" {
+
+int QSpinBox_Class_Size()
+{
+  return sizeof(QSpinBox);
+}
 
 // ~QSpinBox()
 void dedtor_ZN8QSpinBoxD0Ev(QSpinBox* that)
@@ -22,6 +27,11 @@ QSpinBox* dector_ZN8QSpinBoxC1EP7QWidget(QWidget * parent)
   // static_assert(sizeof(QSpinBox) == 32, "tyszerr");
   QSpinBox* rthis = new QSpinBox(parent);
   return rthis;
+}
+
+int QDoubleSpinBox_Class_Size()
+{
+  return sizeof(QDoubleSpinBox);
 }
 
 // ~QDoubleSpinBox()

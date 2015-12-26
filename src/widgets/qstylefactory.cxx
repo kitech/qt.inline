@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstylefactory.h
 // dst-file: /src/widgets/qstylefactory.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstylefactory.h>
 
 extern "C" {
+
+int QStyleFactory_Class_Size()
+{
+  return sizeof(QStyleFactory);
+}
 
 }; // <= extern "C" block end
 

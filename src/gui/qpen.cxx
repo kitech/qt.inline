@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpen.h>
 
 extern "C" {
+
+int QPen_Class_Size()
+{
+  return sizeof(QPen);
+}
 
 // ~QPen()
 void dedtor_ZN4QPenD0Ev(QPen* that)

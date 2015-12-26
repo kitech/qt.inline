@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qregularexpression.h
 // dst-file: /src/core/qregularexpression.cxx
 //
@@ -8,6 +8,11 @@
 #include <qregularexpression.h>
 
 extern "C" {
+
+int QRegularExpressionMatchIterator_Class_Size()
+{
+  return sizeof(QRegularExpressionMatchIterator);
+}
 
 // QRegularExpressionMatchIterator()
 QRegularExpressionMatchIterator* dector_ZN31QRegularExpressionMatchIteratorC1Ev()
@@ -30,6 +35,11 @@ void dedtor_ZN31QRegularExpressionMatchIteratorD0Ev(QRegularExpressionMatchItera
 {
   QRegularExpressionMatchIterator* rthis = (QRegularExpressionMatchIterator*)that;
   delete rthis;
+}
+
+int QRegularExpression_Class_Size()
+{
+  return sizeof(QRegularExpression);
 }
 
 // ~QRegularExpression()
@@ -61,6 +71,11 @@ QRegularExpression* dector_ZN18QRegularExpressionC1ERKS_(const QRegularExpressio
   // static_assert(sizeof(QRegularExpression) == 32, "tyszerr");
   QRegularExpression* rthis = new QRegularExpression(re);
   return rthis;
+}
+
+int QRegularExpressionMatch_Class_Size()
+{
+  return sizeof(QRegularExpressionMatch);
 }
 
 // QRegularExpressionMatch()

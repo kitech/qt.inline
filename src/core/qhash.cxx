@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qhash.h
 // dst-file: /src/core/qhash.cxx
 //
@@ -8,6 +8,16 @@
 #include <qhash.h>
 
 extern "C" {
+
+int QHashDummyValue_Class_Size()
+{
+  return sizeof(QHashDummyValue);
+}
+
+int QHashData_Class_Size()
+{
+  return sizeof(QHashData);
+}
 
 }; // <= extern "C" block end
 

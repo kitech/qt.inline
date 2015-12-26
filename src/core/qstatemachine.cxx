@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstatemachine.h
 // dst-file: /src/core/qstatemachine.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstatemachine.h>
 
 extern "C" {
+
+int QStateMachine_Class_Size()
+{
+  return sizeof(QStateMachine);
+}
 
 // QStateMachine(class QState::ChildMode, class QObject *)
 QStateMachine* dector_ZN13QStateMachineC1EN6QState9ChildModeEP7QObject(QState::ChildMode childMode, QObject * parent)

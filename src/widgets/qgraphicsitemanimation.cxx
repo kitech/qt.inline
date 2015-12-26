@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicsitemanimation.h
 // dst-file: /src/widgets/qgraphicsitemanimation.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicsitemanimation.h>
 
 extern "C" {
+
+int QGraphicsItemAnimation_Class_Size()
+{
+  return sizeof(QGraphicsItemAnimation);
+}
 
 // QGraphicsItemAnimation(class QObject *)
 QGraphicsItemAnimation* dector_ZN22QGraphicsItemAnimationC1EP7QObject(QObject * parent)

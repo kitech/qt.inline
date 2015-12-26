@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qfont.h
 // dst-file: /src/gui/qfont.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfont.h>
 
 extern "C" {
+
+int QFont_Class_Size()
+{
+  return sizeof(QFont);
+}
 
 // QFont(const class QString &, int, int, _Bool)
 QFont* dector_ZN5QFontC1ERK7QStringiib(const QString & family, int pointSize, int weight, bool italic)

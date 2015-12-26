@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicsitem.h
 // dst-file: /src/widgets/qgraphicsitem.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicsitem.h>
 
 extern "C" {
+
+int QGraphicsTextItem_Class_Size()
+{
+  return sizeof(QGraphicsTextItem);
+}
 
 // QGraphicsTextItem(const class QString &, class QGraphicsItem *)
 QGraphicsTextItem* dector_ZN17QGraphicsTextItemC1ERK7QStringP13QGraphicsItem(const QString & text, QGraphicsItem * parent)
@@ -30,6 +35,11 @@ QGraphicsTextItem* dector_ZN17QGraphicsTextItemC1EP13QGraphicsItem(QGraphicsItem
   // static_assert(sizeof(QGraphicsTextItem) == 32, "tyszerr");
   QGraphicsTextItem* rthis = new QGraphicsTextItem(parent);
   return rthis;
+}
+
+int QGraphicsPixmapItem_Class_Size()
+{
+  return sizeof(QGraphicsPixmapItem);
 }
 
 // QGraphicsPixmapItem(class QGraphicsItem *)
@@ -60,6 +70,11 @@ void _ZN19QGraphicsPixmapItem9setOffsetEdd(void *that, double x, double y)
 {
   QGraphicsPixmapItem *cthat = (QGraphicsPixmapItem *)that;
    cthat->setOffset(x, y);
+}
+
+int QGraphicsRectItem_Class_Size()
+{
+  return sizeof(QGraphicsRectItem);
 }
 
 // ~QGraphicsRectItem()
@@ -100,6 +115,11 @@ void _ZN17QGraphicsRectItem7setRectEdddd(void *that, double x, double y, double 
    cthat->setRect(x, y, w, h);
 }
 
+int QGraphicsEllipseItem_Class_Size()
+{
+  return sizeof(QGraphicsEllipseItem);
+}
+
 // QGraphicsEllipseItem(const class QRectF &, class QGraphicsItem *)
 QGraphicsEllipseItem* dector_ZN20QGraphicsEllipseItemC1ERK6QRectFP13QGraphicsItem(const QRectF & rect, QGraphicsItem * parent)
 {
@@ -138,6 +158,11 @@ void _ZN20QGraphicsEllipseItem7setRectEdddd(void *that, double x, double y, doub
    cthat->setRect(x, y, w, h);
 }
 
+int QGraphicsPolygonItem_Class_Size()
+{
+  return sizeof(QGraphicsPolygonItem);
+}
+
 // QGraphicsPolygonItem(class QGraphicsItem *)
 QGraphicsPolygonItem* dector_ZN20QGraphicsPolygonItemC1EP13QGraphicsItem(QGraphicsItem * parent)
 {
@@ -161,6 +186,11 @@ QGraphicsPolygonItem* dector_ZN20QGraphicsPolygonItemC1ERK9QPolygonFP13QGraphics
   return rthis;
 }
 
+int QGraphicsPathItem_Class_Size()
+{
+  return sizeof(QGraphicsPathItem);
+}
+
 // QGraphicsPathItem(const class QPainterPath &, class QGraphicsItem *)
 QGraphicsPathItem* dector_ZN17QGraphicsPathItemC1ERK12QPainterPathP13QGraphicsItem(const QPainterPath & path, QGraphicsItem * parent)
 {
@@ -182,6 +212,11 @@ QGraphicsPathItem* dector_ZN17QGraphicsPathItemC1EP13QGraphicsItem(QGraphicsItem
   // static_assert(sizeof(QGraphicsPathItem) == 32, "tyszerr");
   QGraphicsPathItem* rthis = new QGraphicsPathItem(parent);
   return rthis;
+}
+
+int QGraphicsLineItem_Class_Size()
+{
+  return sizeof(QGraphicsLineItem);
 }
 
 // QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
@@ -215,6 +250,11 @@ void dedtor_ZN17QGraphicsLineItemD0Ev(QGraphicsLineItem* that)
   delete rthis;
 }
 
+int QGraphicsItemGroup_Class_Size()
+{
+  return sizeof(QGraphicsItemGroup);
+}
+
 // ~QGraphicsItemGroup()
 void dedtor_ZN18QGraphicsItemGroupD0Ev(QGraphicsItemGroup* that)
 {
@@ -228,6 +268,16 @@ QGraphicsItemGroup* dector_ZN18QGraphicsItemGroupC1EP13QGraphicsItem(QGraphicsIt
   // static_assert(sizeof(QGraphicsItemGroup) == 32, "tyszerr");
   QGraphicsItemGroup* rthis = new QGraphicsItemGroup(parent);
   return rthis;
+}
+
+int QAbstractGraphicsShapeItem_Class_Size()
+{
+  return sizeof(QAbstractGraphicsShapeItem);
+}
+
+int QGraphicsItem_Class_Size()
+{
+  return sizeof(QGraphicsItem);
 }
 
   // proto:  QPolygonF QGraphicsItem::mapFromItem(const QGraphicsItem * item, qreal x, qreal y, qreal w, qreal h);
@@ -402,11 +452,21 @@ QRectF* _ZNK13QGraphicsItem14mapRectToSceneEdddd(void *that, double x, double y,
   return new QRectF(recret);
 }
 
+int QGraphicsObject_Class_Size()
+{
+  return sizeof(QGraphicsObject);
+}
+
 // ~QGraphicsObject()
 void dedtor_ZN15QGraphicsObjectD0Ev(QGraphicsObject* that)
 {
   QGraphicsObject* rthis = (QGraphicsObject*)that;
   delete rthis;
+}
+
+int QGraphicsSimpleTextItem_Class_Size()
+{
+  return sizeof(QGraphicsSimpleTextItem);
 }
 
 // ~QGraphicsSimpleTextItem()

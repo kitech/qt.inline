@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qpoint.h
 // dst-file: /src/core/qpoint.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpoint.h>
 
 extern "C" {
+
+int QPoint_Class_Size()
+{
+  return sizeof(QPoint);
+}
 
 // QPoint(int, int)
 QPoint* dector_ZN6QPointC1Eii(int xpos, int ypos)
@@ -51,6 +56,11 @@ int * _ZN6QPoint2rxEv(void *that)
 {
   QPoint *cthat = (QPoint *)that;
   return &cthat->rx();
+}
+
+int QPointF_Class_Size()
+{
+  return sizeof(QPointF);
 }
 
 // QPointF(qreal, qreal)

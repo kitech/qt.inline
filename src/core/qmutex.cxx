@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmutex.h
 // dst-file: /src/core/qmutex.cxx
 //
@@ -8,6 +8,21 @@
 #include <qmutex.h>
 
 extern "C" {
+
+int QMutexLocker_Class_Size()
+{
+  return sizeof(QMutexLocker);
+}
+
+int QBasicMutex_Class_Size()
+{
+  return sizeof(QBasicMutex);
+}
+
+int QMutex_Class_Size()
+{
+  return sizeof(QMutex);
+}
 
 // QMutex(enum QMutex::RecursionMode)
 QMutex* dector_ZN6QMutexC1ENS_13RecursionModeE(QMutex::RecursionMode mode)

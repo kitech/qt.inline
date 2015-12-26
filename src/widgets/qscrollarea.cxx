@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qscrollarea.h
 // dst-file: /src/widgets/qscrollarea.cxx
 //
@@ -8,6 +8,11 @@
 #include <qscrollarea.h>
 
 extern "C" {
+
+int QScrollArea_Class_Size()
+{
+  return sizeof(QScrollArea);
+}
 
 // QScrollArea(class QWidget *)
 QScrollArea* dector_ZN11QScrollAreaC1EP7QWidget(QWidget * parent)

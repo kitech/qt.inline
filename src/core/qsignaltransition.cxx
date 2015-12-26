@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsignaltransition.h
 // dst-file: /src/core/qsignaltransition.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsignaltransition.h>
 
 extern "C" {
+
+int QSignalTransition_Class_Size()
+{
+  return sizeof(QSignalTransition);
+}
 
 // QSignalTransition(const class QObject *, const char *, class QState *)
 QSignalTransition* dector_ZN17QSignalTransitionC1EPK7QObjectPKcP6QState(const QObject * sender, const char * signal, QState * sourceState)

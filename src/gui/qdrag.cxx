@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qdrag.h
 // dst-file: /src/gui/qdrag.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdrag.h>
 
 extern "C" {
+
+int QDrag_Class_Size()
+{
+  return sizeof(QDrag);
+}
 
 // QDrag(class QObject *)
 QDrag* dector_ZN5QDragC1EP7QObject(QObject * dragSource)

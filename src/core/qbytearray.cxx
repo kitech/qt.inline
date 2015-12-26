@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
@@ -8,6 +8,16 @@
 #include <qbytearray.h>
 
 extern "C" {
+
+int QByteRef_Class_Size()
+{
+  return sizeof(QByteRef);
+}
+
+int QByteArray_Class_Size()
+{
+  return sizeof(QByteArray);
+}
 
 // ~QByteArray()
 void dedtor_ZN10QByteArrayD0Ev(QByteArray* that)
@@ -104,6 +114,11 @@ void _ZN10QByteArrayC1ERKS_(void *that, const QByteArray & arg1)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(arg1);
+}
+
+int QByteArrayDataPtr_Class_Size()
+{
+  return sizeof(QByteArrayDataPtr);
 }
 
 }; // <= extern "C" block end

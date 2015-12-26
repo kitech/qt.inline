@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qdatetimeedit.h
 // dst-file: /src/widgets/qdatetimeedit.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdatetimeedit.h>
 
 extern "C" {
+
+int QTimeEdit_Class_Size()
+{
+  return sizeof(QTimeEdit);
+}
 
 // QTimeEdit(class QWidget *)
 QTimeEdit* dector_ZN9QTimeEditC1EP7QWidget(QWidget * parent)
@@ -32,6 +37,11 @@ void dedtor_ZN9QTimeEditD0Ev(QTimeEdit* that)
   delete rthis;
 }
 
+int QDateEdit_Class_Size()
+{
+  return sizeof(QDateEdit);
+}
+
 // QDateEdit(const class QDate &, class QWidget *)
 QDateEdit* dector_ZN9QDateEditC1ERK5QDateP7QWidget(const QDate & date, QWidget * parent)
 {
@@ -53,6 +63,11 @@ void dedtor_ZN9QDateEditD0Ev(QDateEdit* that)
 {
   QDateEdit* rthis = (QDateEdit*)that;
   delete rthis;
+}
+
+int QDateTimeEdit_Class_Size()
+{
+  return sizeof(QDateTimeEdit);
 }
 
 // QDateTimeEdit(const class QTime &, class QWidget *)

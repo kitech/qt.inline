@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdesktopwidget.h>
 
 extern "C" {
+
+int QDesktopWidget_Class_Size()
+{
+  return sizeof(QDesktopWidget);
+}
 
 // ~QDesktopWidget()
 void dedtor_ZN14QDesktopWidgetD0Ev(QDesktopWidget* that)

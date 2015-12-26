@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfile.h>
 
 extern "C" {
+
+int QFile_Class_Size()
+{
+  return sizeof(QFile);
+}
 
 // QFile()
 QFile* dector_ZN5QFileC1Ev()

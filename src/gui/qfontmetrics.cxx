@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfontmetrics.h>
 
 extern "C" {
+
+int QFontMetrics_Class_Size()
+{
+  return sizeof(QFontMetrics);
+}
 
 // ~QFontMetrics()
 void dedtor_ZN12QFontMetricsD0Ev(QFontMetrics* that)
@@ -38,6 +43,11 @@ QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFont(const QFont & arg1)
   // static_assert(sizeof(QFontMetrics) == 32, "tyszerr");
   QFontMetrics* rthis = new QFontMetrics(arg1);
   return rthis;
+}
+
+int QFontMetricsF_Class_Size()
+{
+  return sizeof(QFontMetricsF);
 }
 
 // ~QFontMetricsF()

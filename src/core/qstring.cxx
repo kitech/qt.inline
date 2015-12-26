@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstring.h
 // dst-file: /src/core/qstring.cxx
 //
@@ -8,6 +8,16 @@
 #include <qstring.h>
 
 extern "C" {
+
+int QStringDataPtr_Class_Size()
+{
+  return sizeof(QStringDataPtr);
+}
+
+int QString_Class_Size()
+{
+  return sizeof(QString);
+}
 
 // QString(class QChar)
 QString* dector_ZN7QStringC1E5QChar(QChar c)
@@ -260,6 +270,16 @@ void _ZN7QString7reserveEi(void *that, int size)
    cthat->reserve(size);
 }
 
+int QLatin1String_Class_Size()
+{
+  return sizeof(QLatin1String);
+}
+
+int QCharRef_Class_Size()
+{
+  return sizeof(QCharRef);
+}
+
   // proto:  void QCharRef::setCell(uchar cell);
 void _ZN8QCharRef7setCellEh(void *that, unsigned char cell)
 {
@@ -272,6 +292,11 @@ void _ZN8QCharRef6setRowEh(void *that, unsigned char row)
 {
   QCharRef *cthat = (QCharRef *)that;
    cthat->setRow(row);
+}
+
+int QStringRef_Class_Size()
+{
+  return sizeof(QStringRef);
 }
 
 // QStringRef(const class QString *)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstringlist.h
 // dst-file: /src/core/qstringlist.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstringlist.h>
 
 extern "C" {
+
+int QStringList_Class_Size()
+{
+  return sizeof(QStringList);
+}
 
   // proto:  int QStringList::indexOf(QRegExp & rx, int from);
 int _ZNK11QStringList7indexOfER7QRegExpi(void *that, QRegExp & rx, int from)

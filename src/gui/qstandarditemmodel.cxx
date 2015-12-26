@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qstandarditemmodel.h
 // dst-file: /src/gui/qstandarditemmodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstandarditemmodel.h>
 
 extern "C" {
+
+int QStandardItemModel_Class_Size()
+{
+  return sizeof(QStandardItemModel);
+}
 
 // QStandardItemModel(int, int, class QObject *)
 QStandardItemModel* dector_ZN18QStandardItemModelC1EiiP7QObject(int rows, int columns, QObject * parent)
@@ -65,6 +70,11 @@ void _ZN18QStandardItemModel9appendRowEP13QStandardItem(void *that, QStandardIte
 {
   QStandardItemModel *cthat = (QStandardItemModel *)that;
    cthat->appendRow(item);
+}
+
+int QStandardItem_Class_Size()
+{
+  return sizeof(QStandardItem);
 }
 
 // QStandardItem()

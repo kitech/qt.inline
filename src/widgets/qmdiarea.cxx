@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmdiarea.h
 // dst-file: /src/widgets/qmdiarea.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmdiarea.h>
 
 extern "C" {
+
+int QMdiArea_Class_Size()
+{
+  return sizeof(QMdiArea);
+}
 
 // ~QMdiArea()
 void dedtor_ZN8QMdiAreaD0Ev(QMdiArea* that)

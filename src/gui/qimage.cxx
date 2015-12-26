@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -8,6 +8,11 @@
 #include <qimage.h>
 
 extern "C" {
+
+int QImage_Class_Size()
+{
+  return sizeof(QImage);
+}
 
 // QImage(const class QSize &, enum QImage::Format)
 QImage* dector_ZN6QImageC1ERK5QSizeNS_6FormatE(const QSize & size, QImage::Format format)

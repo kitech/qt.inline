@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qimagereader.h
 // dst-file: /src/gui/qimagereader.cxx
 //
@@ -8,6 +8,11 @@
 #include <qimagereader.h>
 
 extern "C" {
+
+int QImageReader_Class_Size()
+{
+  return sizeof(QImageReader);
+}
 
 // ~QImageReader()
 void dedtor_ZN12QImageReaderD0Ev(QImageReader* that)

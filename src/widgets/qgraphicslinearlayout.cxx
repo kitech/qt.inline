@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicslinearlayout.h
 // dst-file: /src/widgets/qgraphicslinearlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicslinearlayout.h>
 
 extern "C" {
+
+int QGraphicsLinearLayout_Class_Size()
+{
+  return sizeof(QGraphicsLinearLayout);
+}
 
 // QGraphicsLinearLayout(class QGraphicsLayoutItem *)
 QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent)

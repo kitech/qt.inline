@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmatrix.h>
 
 extern "C" {
+
+int QMatrix_Class_Size()
+{
+  return sizeof(QMatrix);
+}
 
 // QMatrix()
 QMatrix* dector_ZN7QMatrixC1Ev()

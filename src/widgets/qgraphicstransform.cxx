@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicstransform.h
 // dst-file: /src/widgets/qgraphicstransform.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicstransform.h>
 
 extern "C" {
+
+int QGraphicsRotation_Class_Size()
+{
+  return sizeof(QGraphicsRotation);
+}
 
 // ~QGraphicsRotation()
 void dedtor_ZN17QGraphicsRotationD0Ev(QGraphicsRotation* that)
@@ -24,6 +29,11 @@ QGraphicsRotation* dector_ZN17QGraphicsRotationC1EP7QObject(QObject * parent)
   return rthis;
 }
 
+int QGraphicsScale_Class_Size()
+{
+  return sizeof(QGraphicsScale);
+}
+
 // QGraphicsScale(class QObject *)
 QGraphicsScale* dector_ZN14QGraphicsScaleC1EP7QObject(QObject * parent)
 {
@@ -37,6 +47,11 @@ void dedtor_ZN14QGraphicsScaleD0Ev(QGraphicsScale* that)
 {
   QGraphicsScale* rthis = (QGraphicsScale*)that;
   delete rthis;
+}
+
+int QGraphicsTransform_Class_Size()
+{
+  return sizeof(QGraphicsTransform);
 }
 
 }; // <= extern "C" block end

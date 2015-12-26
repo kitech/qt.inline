@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qjsonvalue.h
 // dst-file: /src/core/qjsonvalue.cxx
 //
@@ -8,6 +8,21 @@
 #include <qjsonvalue.h>
 
 extern "C" {
+
+int QJsonValueRefPtr_Class_Size()
+{
+  return sizeof(QJsonValueRefPtr);
+}
+
+int QJsonValuePtr_Class_Size()
+{
+  return sizeof(QJsonValuePtr);
+}
+
+int QJsonValue_Class_Size()
+{
+  return sizeof(QJsonValue);
+}
 
 // QJsonValue(enum QJsonValue::Type)
 QJsonValue* dector_ZN10QJsonValueC1ENS_4TypeE(QJsonValue::Type arg1)
@@ -94,6 +109,11 @@ QJsonValue* dector_ZN10QJsonValueC1Ex(long long n)
   // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
   QJsonValue* rthis = new QJsonValue(n);
   return rthis;
+}
+
+int QJsonValueRef_Class_Size()
+{
+  return sizeof(QJsonValueRef);
 }
 
 }; // <= extern "C" block end

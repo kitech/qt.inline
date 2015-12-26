@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qdiriterator.h
 // dst-file: /src/core/qdiriterator.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdiriterator.h>
 
 extern "C" {
+
+int QDirIterator_Class_Size()
+{
+  return sizeof(QDirIterator);
+}
 
 // QDirIterator(const class QString &, IteratorFlags)
 QDirIterator* dector_ZN12QDirIteratorC1ERK7QString6QFlagsINS_12IteratorFlagEE(const QString & path, QDirIterator::IteratorFlag flags)

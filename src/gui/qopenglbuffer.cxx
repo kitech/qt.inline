@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglbuffer.h
 // dst-file: /src/gui/qopenglbuffer.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopenglbuffer.h>
 
 extern "C" {
+
+int QOpenGLBuffer_Class_Size()
+{
+  return sizeof(QOpenGLBuffer);
+}
 
 // QOpenGLBuffer(const class QOpenGLBuffer &)
 QOpenGLBuffer* dector_ZN13QOpenGLBufferC1ERKS_(const QOpenGLBuffer & other)

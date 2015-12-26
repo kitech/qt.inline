@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -9,12 +9,22 @@
 
 extern "C" {
 
+int QTime_Class_Size()
+{
+  return sizeof(QTime);
+}
+
 // QTime(int, int, int, int)
 QTime* dector_ZN5QTimeC1Eiiii(int h, int m, int s, int ms)
 {
   // static_assert(sizeof(QTime) == 32, "tyszerr");
   QTime* rthis = new QTime(h, m, s, ms);
   return rthis;
+}
+
+int QDateTime_Class_Size()
+{
+  return sizeof(QDateTime);
 }
 
 // QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
@@ -70,6 +80,11 @@ void dedtor_ZN9QDateTimeD0Ev(QDateTime* that)
 {
   QDateTime* rthis = (QDateTime*)that;
   delete rthis;
+}
+
+int QDate_Class_Size()
+{
+  return sizeof(QDate);
 }
 
 // QDate(int, int, int)

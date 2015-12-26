@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpalette.h
 // dst-file: /src/gui/qpalette.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpalette.h>
 
 extern "C" {
+
+int QPalette_Class_Size()
+{
+  return sizeof(QPalette);
+}
 
 // QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
 QPalette* dector_ZN8QPaletteC1ERK6QColorS2_S2_S2_S2_S2_S2_(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base)

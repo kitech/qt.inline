@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsortfilterproxymodel.h
 // dst-file: /src/core/qsortfilterproxymodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsortfilterproxymodel.h>
 
 extern "C" {
+
+int QSortFilterProxyModel_Class_Size()
+{
+  return sizeof(QSortFilterProxyModel);
+}
 
 // ~QSortFilterProxyModel()
 void dedtor_ZN21QSortFilterProxyModelD0Ev(QSortFilterProxyModel* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qcryptographichash.h
 // dst-file: /src/core/qcryptographichash.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcryptographichash.h>
 
 extern "C" {
+
+int QCryptographicHash_Class_Size()
+{
+  return sizeof(QCryptographicHash);
+}
 
 // ~QCryptographicHash()
 void dedtor_ZN18QCryptographicHashD0Ev(QCryptographicHash* that)

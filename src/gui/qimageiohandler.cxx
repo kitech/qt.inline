@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qimageiohandler.h
 // dst-file: /src/gui/qimageiohandler.cxx
 //
@@ -8,6 +8,16 @@
 #include <qimageiohandler.h>
 
 extern "C" {
+
+int QImageIOHandler_Class_Size()
+{
+  return sizeof(QImageIOHandler);
+}
+
+int QImageIOPlugin_Class_Size()
+{
+  return sizeof(QImageIOPlugin);
+}
 
 }; // <= extern "C" block end
 

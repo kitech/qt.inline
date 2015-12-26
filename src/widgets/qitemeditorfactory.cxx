@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qitemeditorfactory.h
 // dst-file: /src/widgets/qitemeditorfactory.cxx
 //
@@ -8,6 +8,16 @@
 #include <qitemeditorfactory.h>
 
 extern "C" {
+
+int QItemEditorCreatorBase_Class_Size()
+{
+  return sizeof(QItemEditorCreatorBase);
+}
+
+int QItemEditorFactory_Class_Size()
+{
+  return sizeof(QItemEditorFactory);
+}
 
 // ~QItemEditorFactory()
 void dedtor_ZN18QItemEditorFactoryD0Ev(QItemEditorFactory* that)

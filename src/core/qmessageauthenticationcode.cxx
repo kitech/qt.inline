@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmessageauthenticationcode.h
 // dst-file: /src/core/qmessageauthenticationcode.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmessageauthenticationcode.h>
 
 extern "C" {
+
+int QMessageAuthenticationCode_Class_Size()
+{
+  return sizeof(QMessageAuthenticationCode);
+}
 
 // QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)
 QMessageAuthenticationCode* dector_ZN26QMessageAuthenticationCodeC1EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, const QByteArray & key)

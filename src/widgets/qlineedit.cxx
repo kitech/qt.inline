@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlineedit.h
 // dst-file: /src/widgets/qlineedit.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlineedit.h>
 
 extern "C" {
+
+int QLineEdit_Class_Size()
+{
+  return sizeof(QLineEdit);
+}
 
 // QLineEdit(const class QString &, class QWidget *)
 QLineEdit* dector_ZN9QLineEditC1ERK7QStringP7QWidget(const QString & arg1, QWidget * parent)

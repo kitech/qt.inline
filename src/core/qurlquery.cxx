@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qurlquery.h
 // dst-file: /src/core/qurlquery.cxx
 //
@@ -8,6 +8,11 @@
 #include <qurlquery.h>
 
 extern "C" {
+
+int QUrlQuery_Class_Size()
+{
+  return sizeof(QUrlQuery);
+}
 
 // QUrlQuery(const class QString &)
 QUrlQuery* dector_ZN9QUrlQueryC1ERK7QString(const QString & queryString)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qcollator.h
 // dst-file: /src/core/qcollator.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcollator.h>
 
 extern "C" {
+
+int QCollator_Class_Size()
+{
+  return sizeof(QCollator);
+}
 
 // QCollator(const class QLocale &)
 QCollator* dector_ZN9QCollatorC1ERK7QLocale(const QLocale & locale)
@@ -30,6 +35,11 @@ QCollator* dector_ZN9QCollatorC1ERKS_(const QCollator & arg1)
   // static_assert(sizeof(QCollator) == 32, "tyszerr");
   QCollator* rthis = new QCollator(arg1);
   return rthis;
+}
+
+int QCollatorSortKey_Class_Size()
+{
+  return sizeof(QCollatorSortKey);
 }
 
 // ~QCollatorSortKey()

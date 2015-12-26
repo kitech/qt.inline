@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglcontext.h
 // dst-file: /src/gui/qopenglcontext.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopenglcontext.h>
 
 extern "C" {
+
+int QOpenGLVersionProfile_Class_Size()
+{
+  return sizeof(QOpenGLVersionProfile);
+}
 
 // ~QOpenGLVersionProfile()
 void dedtor_ZN21QOpenGLVersionProfileD0Ev(QOpenGLVersionProfile* that)
@@ -40,6 +45,11 @@ QOpenGLVersionProfile* dector_ZN21QOpenGLVersionProfileC1Ev()
   return rthis;
 }
 
+int QOpenGLContext_Class_Size()
+{
+  return sizeof(QOpenGLContext);
+}
+
 // QOpenGLContext(class QObject *)
 QOpenGLContext* dector_ZN14QOpenGLContextC1EP7QObject(QObject * parent)
 {
@@ -53,6 +63,11 @@ void dedtor_ZN14QOpenGLContextD0Ev(QOpenGLContext* that)
 {
   QOpenGLContext* rthis = (QOpenGLContext*)that;
   delete rthis;
+}
+
+int QOpenGLContextGroup_Class_Size()
+{
+  return sizeof(QOpenGLContextGroup);
 }
 
 // ~QOpenGLContextGroup()

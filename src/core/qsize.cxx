@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsize.h
 // dst-file: /src/core/qsize.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsize.h>
 
 extern "C" {
+
+int QSize_Class_Size()
+{
+  return sizeof(QSize);
+}
 
 // QSize()
 QSize* dector_ZN5QSizeC1Ev()
@@ -65,6 +70,11 @@ void _ZN5QSize8setWidthEi(void *that, int w)
 {
   QSize *cthat = (QSize *)that;
    cthat->setWidth(w);
+}
+
+int QSizeF_Class_Size()
+{
+  return sizeof(QSizeF);
 }
 
 // QSizeF()

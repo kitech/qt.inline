@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicsview.h
 // dst-file: /src/widgets/qgraphicsview.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicsview.h>
 
 extern "C" {
+
+int QGraphicsView_Class_Size()
+{
+  return sizeof(QGraphicsView);
+}
 
 // QGraphicsView(class QGraphicsScene *, class QWidget *)
 QGraphicsView* dector_ZN13QGraphicsViewC1EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, QWidget * parent)

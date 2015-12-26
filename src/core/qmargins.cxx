@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmargins.h
 // dst-file: /src/core/qmargins.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmargins.h>
 
 extern "C" {
+
+int QMarginsF_Class_Size()
+{
+  return sizeof(QMarginsF);
+}
 
 // QMarginsF()
 QMarginsF* dector_ZN9QMarginsFC1Ev()
@@ -31,6 +36,11 @@ QMarginsF* dector_ZN9QMarginsFC1ERK8QMargins(const QMargins & margins)
   // static_assert(sizeof(QMarginsF) == 32, "tyszerr");
   QMarginsF* rthis = new QMarginsF(margins);
   return rthis;
+}
+
+int QMargins_Class_Size()
+{
+  return sizeof(QMargins);
 }
 
 // QMargins()

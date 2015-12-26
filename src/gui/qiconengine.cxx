@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qiconengine.h
 // dst-file: /src/gui/qiconengine.cxx
 //
@@ -8,6 +8,11 @@
 #include <qiconengine.h>
 
 extern "C" {
+
+int QIconEngine_Class_Size()
+{
+  return sizeof(QIconEngine);
+}
 
 }; // <= extern "C" block end
 

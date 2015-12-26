@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicsgridlayout.h
 // dst-file: /src/widgets/qgraphicsgridlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicsgridlayout.h>
 
 extern "C" {
+
+int QGraphicsGridLayout_Class_Size()
+{
+  return sizeof(QGraphicsGridLayout);
+}
 
 // ~QGraphicsGridLayout()
 void dedtor_ZN19QGraphicsGridLayoutD0Ev(QGraphicsGridLayout* that)

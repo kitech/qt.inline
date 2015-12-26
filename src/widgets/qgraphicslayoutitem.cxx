@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicslayoutitem.h
 // dst-file: /src/widgets/qgraphicslayoutitem.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicslayoutitem.h>
 
 extern "C" {
+
+int QGraphicsLayoutItem_Class_Size()
+{
+  return sizeof(QGraphicsLayoutItem);
+}
 
   // proto:  qreal QGraphicsLayoutItem::minimumWidth();
 qreal _ZNK19QGraphicsLayoutItem12minimumWidthEv(void *that)

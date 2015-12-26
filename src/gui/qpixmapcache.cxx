@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpixmapcache.h
 // dst-file: /src/gui/qpixmapcache.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpixmapcache.h>
 
 extern "C" {
+
+int QPixmapCache_Class_Size()
+{
+  return sizeof(QPixmapCache);
+}
 
 }; // <= extern "C" block end
 

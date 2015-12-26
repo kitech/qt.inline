@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qhistorystate.h
 // dst-file: /src/core/qhistorystate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qhistorystate.h>
 
 extern "C" {
+
+int QHistoryState_Class_Size()
+{
+  return sizeof(QHistoryState);
+}
 
 // ~QHistoryState()
 void dedtor_ZN13QHistoryStateD0Ev(QHistoryState* that)

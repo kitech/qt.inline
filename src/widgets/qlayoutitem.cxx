@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -9,6 +9,16 @@
 
 extern "C" {
 
+int QLayoutItem_Class_Size()
+{
+  return sizeof(QLayoutItem);
+}
+
+int QSpacerItem_Class_Size()
+{
+  return sizeof(QSpacerItem);
+}
+
 // ~QSpacerItem()
 void dedtor_ZN11QSpacerItemD0Ev(QSpacerItem* that)
 {
@@ -16,11 +26,21 @@ void dedtor_ZN11QSpacerItemD0Ev(QSpacerItem* that)
   delete rthis;
 }
 
+int QWidgetItem_Class_Size()
+{
+  return sizeof(QWidgetItem);
+}
+
 // ~QWidgetItem()
 void dedtor_ZN11QWidgetItemD0Ev(QWidgetItem* that)
 {
   QWidgetItem* rthis = (QWidgetItem*)that;
   delete rthis;
+}
+
+int QWidgetItemV2_Class_Size()
+{
+  return sizeof(QWidgetItemV2);
 }
 
 // ~QWidgetItemV2()

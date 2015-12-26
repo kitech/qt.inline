@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qcheckbox.h
 // dst-file: /src/widgets/qcheckbox.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcheckbox.h>
 
 extern "C" {
+
+int QCheckBox_Class_Size()
+{
+  return sizeof(QCheckBox);
+}
 
 // ~QCheckBox()
 void dedtor_ZN9QCheckBoxD0Ev(QCheckBox* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qwidget.h>
 
 extern "C" {
+
+int QWidget_Class_Size()
+{
+  return sizeof(QWidget);
+}
 
 // QWidget(class QWidget *, Qt::WindowFlags)
 QWidget* dector_ZN7QWidgetC1EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
@@ -93,6 +98,11 @@ int _ZNK7QWidget6heightEv(void *that)
 {
   QWidget *cthat = (QWidget *)that;
   return cthat->height();
+}
+
+int QWidgetData_Class_Size()
+{
+  return sizeof(QWidgetData);
 }
 
 }; // <= extern "C" block end

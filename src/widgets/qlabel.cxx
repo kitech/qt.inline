@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlabel.h
 // dst-file: /src/widgets/qlabel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlabel.h>
 
 extern "C" {
+
+int QLabel_Class_Size()
+{
+  return sizeof(QLabel);
+}
 
 // QLabel(const class QString &, class QWidget *, Qt::WindowFlags)
 QLabel* dector_ZN6QLabelC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & text, QWidget * parent, Qt::WindowFlags f)

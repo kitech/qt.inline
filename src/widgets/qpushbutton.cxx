@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qpushbutton.h
 // dst-file: /src/widgets/qpushbutton.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpushbutton.h>
 
 extern "C" {
+
+int QPushButton_Class_Size()
+{
+  return sizeof(QPushButton);
+}
 
 // ~QPushButton()
 void dedtor_ZN11QPushButtonD0Ev(QPushButton* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qtextstream.h
 // dst-file: /src/core/qtextstream.cxx
 //
@@ -8,6 +8,16 @@
 #include <qtextstream.h>
 
 extern "C" {
+
+int QTextStreamManipulator_Class_Size()
+{
+  return sizeof(QTextStreamManipulator);
+}
+
+int QTextStream_Class_Size()
+{
+  return sizeof(QTextStream);
+}
 
 // QTextStream(class QIODevice *)
 QTextStream* dector_ZN11QTextStreamC1EP9QIODevice(QIODevice * device)

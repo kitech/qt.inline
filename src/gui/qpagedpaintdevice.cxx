@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpagedpaintdevice.h
 // dst-file: /src/gui/qpagedpaintdevice.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpagedpaintdevice.h>
 
 extern "C" {
+
+int QPagedPaintDevice_Class_Size()
+{
+  return sizeof(QPagedPaintDevice);
+}
 
 }; // <= extern "C" block end
 

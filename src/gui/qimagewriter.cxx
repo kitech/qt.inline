@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qimagewriter.h
 // dst-file: /src/gui/qimagewriter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qimagewriter.h>
 
 extern "C" {
+
+int QImageWriter_Class_Size()
+{
+  return sizeof(QImageWriter);
+}
 
 // ~QImageWriter()
 void dedtor_ZN12QImageWriterD0Ev(QImageWriter* that)

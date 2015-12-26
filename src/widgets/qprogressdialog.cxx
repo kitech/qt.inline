@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qprogressdialog.h
 // dst-file: /src/widgets/qprogressdialog.cxx
 //
@@ -8,6 +8,11 @@
 #include <qprogressdialog.h>
 
 extern "C" {
+
+int QProgressDialog_Class_Size()
+{
+  return sizeof(QProgressDialog);
+}
 
 // QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
 QProgressDialog* dector_ZN15QProgressDialogC1ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, Qt::WindowFlags flags)

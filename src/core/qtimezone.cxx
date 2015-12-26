@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qtimezone.h
 // dst-file: /src/core/qtimezone.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtimezone.h>
 
 extern "C" {
+
+int QTimeZone_Class_Size()
+{
+  return sizeof(QTimeZone);
+}
 
 // QTimeZone(int)
 QTimeZone* dector_ZN9QTimeZoneC1Ei(int offsetSeconds)

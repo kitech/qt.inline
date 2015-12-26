@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qabstractitemview.h
 // dst-file: /src/widgets/qabstractitemview.cxx
 //
@@ -8,6 +8,11 @@
 #include <qabstractitemview.h>
 
 extern "C" {
+
+int QAbstractItemView_Class_Size()
+{
+  return sizeof(QAbstractItemView);
+}
 
 }; // <= extern "C" block end
 

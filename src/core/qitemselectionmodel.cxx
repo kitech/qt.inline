@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qitemselectionmodel.h
 // dst-file: /src/core/qitemselectionmodel.cxx
 //
@@ -9,12 +9,22 @@
 
 extern "C" {
 
+int QItemSelection_Class_Size()
+{
+  return sizeof(QItemSelection);
+}
+
 // QItemSelection(const class QModelIndex &, const class QModelIndex &)
 QItemSelection* dector_ZN14QItemSelectionC1ERK11QModelIndexS2_(const QModelIndex & topLeft, const QModelIndex & bottomRight)
 {
   // static_assert(sizeof(QItemSelection) == 32, "tyszerr");
   QItemSelection* rthis = new QItemSelection(topLeft, bottomRight);
   return rthis;
+}
+
+int QItemSelectionRange_Class_Size()
+{
+  return sizeof(QItemSelectionRange);
 }
 
 // QItemSelectionRange(const class QModelIndex &, const class QModelIndex &)
@@ -30,6 +40,11 @@ void _ZN19QItemSelectionRangeC1ERK11QModelIndexS2_(void *that, const QModelIndex
 {
   QItemSelectionRange *cthat = (QItemSelectionRange *)that;
   auto _o = new(that) QItemSelectionRange(topLeft, bottomRight);
+}
+
+int QItemSelectionModel_Class_Size()
+{
+  return sizeof(QItemSelectionModel);
 }
 
 // QItemSelectionModel(class QAbstractItemModel *)

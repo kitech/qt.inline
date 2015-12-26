@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qguiapplication.h
 // dst-file: /src/gui/qguiapplication.cxx
 //
@@ -8,6 +8,11 @@
 #include <qguiapplication.h>
 
 extern "C" {
+
+int QGuiApplication_Class_Size()
+{
+  return sizeof(QGuiApplication);
+}
 
 // ~QGuiApplication()
 void dedtor_ZN15QGuiApplicationD0Ev(QGuiApplication* that)

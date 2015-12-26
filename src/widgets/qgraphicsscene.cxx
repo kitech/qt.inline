@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicsscene.h
 // dst-file: /src/widgets/qgraphicsscene.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicsscene.h>
 
 extern "C" {
+
+int QGraphicsScene_Class_Size()
+{
+  return sizeof(QGraphicsScene);
+}
 
 // QGraphicsScene(const class QRectF &, class QObject *)
 QGraphicsScene* dector_ZN14QGraphicsSceneC1ERK6QRectFP7QObject(const QRectF & sceneRect, QObject * parent)

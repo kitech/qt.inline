@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtableview.h
 // dst-file: /src/widgets/qtableview.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtableview.h>
 
 extern "C" {
+
+int QTableView_Class_Size()
+{
+  return sizeof(QTableView);
+}
 
 // ~QTableView()
 void dedtor_ZN10QTableViewD0Ev(QTableView* that)

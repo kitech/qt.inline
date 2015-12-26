@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmessagebox.h
 // dst-file: /src/widgets/qmessagebox.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmessagebox.h>
 
 extern "C" {
+
+int QMessageBox_Class_Size()
+{
+  return sizeof(QMessageBox);
+}
 
 // ~QMessageBox()
 void dedtor_ZN11QMessageBoxD0Ev(QMessageBox* that)

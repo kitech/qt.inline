@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qsurfaceformat.h
 // dst-file: /src/gui/qsurfaceformat.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsurfaceformat.h>
 
 extern "C" {
+
+int QSurfaceFormat_Class_Size()
+{
+  return sizeof(QSurfaceFormat);
+}
 
 // QSurfaceFormat(const class QSurfaceFormat &)
 QSurfaceFormat* dector_ZN14QSurfaceFormatC1ERKS_(const QSurfaceFormat & other)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstringlistmodel.h
 // dst-file: /src/core/qstringlistmodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstringlistmodel.h>
 
 extern "C" {
+
+int QStringListModel_Class_Size()
+{
+  return sizeof(QStringListModel);
+}
 
 // QStringListModel(const class QStringList &, class QObject *)
 QStringListModel* dector_ZN16QStringListModelC1ERK11QStringListP7QObject(const QStringList & strings, QObject * parent)

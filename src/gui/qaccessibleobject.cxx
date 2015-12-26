@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qaccessibleobject.h
 // dst-file: /src/gui/qaccessibleobject.cxx
 //
@@ -9,12 +9,22 @@
 
 extern "C" {
 
+int QAccessibleApplication_Class_Size()
+{
+  return sizeof(QAccessibleApplication);
+}
+
 // QAccessibleApplication()
 QAccessibleApplication* dector_ZN22QAccessibleApplicationC1Ev()
 {
   // static_assert(sizeof(QAccessibleApplication) == 32, "tyszerr");
   QAccessibleApplication* rthis = new QAccessibleApplication();
   return rthis;
+}
+
+int QAccessibleObject_Class_Size()
+{
+  return sizeof(QAccessibleObject);
 }
 
 }; // <= extern "C" block end

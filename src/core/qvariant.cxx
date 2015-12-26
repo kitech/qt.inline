@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qvariant.h
 // dst-file: /src/core/qvariant.cxx
 //
@@ -8,6 +8,16 @@
 #include <qvariant.h>
 
 extern "C" {
+
+int QVariantComparisonHelper_Class_Size()
+{
+  return sizeof(QVariantComparisonHelper);
+}
+
+int QVariant_Class_Size()
+{
+  return sizeof(QVariant);
+}
 
 // QVariant(const char *)
 QVariant* dector_ZN8QVariantC1EPKc(const char * str)
@@ -390,12 +400,22 @@ bool _ZNK8QVariant10isDetachedEv(void *that)
   return cthat->isDetached();
 }
 
+int QSequentialIterable_Class_Size()
+{
+  return sizeof(QSequentialIterable);
+}
+
 // QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
 QSequentialIterable* dector_ZN19QSequentialIterableC1EN17QtMetaTypePrivate23QSequentialIterableImplE(QtMetaTypePrivate::QSequentialIterableImpl impl)
 {
   // static_assert(sizeof(QSequentialIterable) == 104, "tyszerr");
   QSequentialIterable* rthis = new QSequentialIterable(impl);
   return rthis;
+}
+
+int QAssociativeIterable_Class_Size()
+{
+  return sizeof(QAssociativeIterable);
 }
 
 // QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)

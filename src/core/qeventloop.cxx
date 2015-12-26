@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qeventloop.h
 // dst-file: /src/core/qeventloop.cxx
 //
@@ -8,6 +8,11 @@
 #include <qeventloop.h>
 
 extern "C" {
+
+int QEventLoop_Class_Size()
+{
+  return sizeof(QEventLoop);
+}
 
 // QEventLoop(class QObject *)
 QEventLoop* dector_ZN10QEventLoopC1EP7QObject(QObject * parent)
@@ -22,6 +27,11 @@ void dedtor_ZN10QEventLoopD0Ev(QEventLoop* that)
 {
   QEventLoop* rthis = (QEventLoop*)that;
   delete rthis;
+}
+
+int QEventLoopLocker_Class_Size()
+{
+  return sizeof(QEventLoopLocker);
 }
 
 // QEventLoopLocker(class QThread *)

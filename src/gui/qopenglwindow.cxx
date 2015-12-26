@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglwindow.h
 // dst-file: /src/gui/qopenglwindow.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopenglwindow.h>
 
 extern "C" {
+
+int QOpenGLWindow_Class_Size()
+{
+  return sizeof(QOpenGLWindow);
+}
 
 // QOpenGLWindow(enum QOpenGLWindow::UpdateBehavior, class QWindow *)
 QOpenGLWindow* dector_ZN13QOpenGLWindowC1ENS_14UpdateBehaviorEP7QWindow(QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)

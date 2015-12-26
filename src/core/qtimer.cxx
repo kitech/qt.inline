@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qtimer.h
 // dst-file: /src/core/qtimer.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtimer.h>
 
 extern "C" {
+
+int QTimer_Class_Size()
+{
+  return sizeof(QTimer);
+}
 
 // ~QTimer()
 void dedtor_ZN6QTimerD0Ev(QTimer* that)

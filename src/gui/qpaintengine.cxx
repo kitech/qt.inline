@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpaintengine.h
 // dst-file: /src/gui/qpaintengine.cxx
 //
@@ -8,6 +8,21 @@
 #include <qpaintengine.h>
 
 extern "C" {
+
+int QTextItem_Class_Size()
+{
+  return sizeof(QTextItem);
+}
+
+int QPaintEngineState_Class_Size()
+{
+  return sizeof(QPaintEngineState);
+}
+
+int QPaintEngine_Class_Size()
+{
+  return sizeof(QPaintEngine);
+}
 
   // proto:  void QPaintEngine::clearDirty(DirtyFlags df);
 void _ZN12QPaintEngine10clearDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPaintEngine::DirtyFlag df)

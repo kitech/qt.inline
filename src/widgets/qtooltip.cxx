@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtooltip.h
 // dst-file: /src/widgets/qtooltip.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtooltip.h>
 
 extern "C" {
+
+int QToolTip_Class_Size()
+{
+  return sizeof(QToolTip);
+}
 
 }; // <= extern "C" block end
 

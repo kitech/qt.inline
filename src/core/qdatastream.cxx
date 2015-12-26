@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qdatastream.h
 // dst-file: /src/core/qdatastream.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdatastream.h>
 
 extern "C" {
+
+int QDataStream_Class_Size()
+{
+  return sizeof(QDataStream);
+}
 
 // QDataStream(class QIODevice *)
 QDataStream* dector_ZN11QDataStreamC1EP9QIODevice(QIODevice * arg1)

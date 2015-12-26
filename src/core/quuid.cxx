@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/quuid.h
 // dst-file: /src/core/quuid.cxx
 //
@@ -8,6 +8,11 @@
 #include <quuid.h>
 
 extern "C" {
+
+int QUuid_Class_Size()
+{
+  return sizeof(QUuid);
+}
 
 // QUuid(const class QString &)
 QUuid* dector_ZN5QUuidC1ERK7QString(const QString & arg1)

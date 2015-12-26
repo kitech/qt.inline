@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qdialogbuttonbox.h
 // dst-file: /src/widgets/qdialogbuttonbox.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdialogbuttonbox.h>
 
 extern "C" {
+
+int QDialogButtonBox_Class_Size()
+{
+  return sizeof(QDialogButtonBox);
+}
 
 // ~QDialogButtonBox()
 void dedtor_ZN16QDialogButtonBoxD0Ev(QDialogButtonBox* that)

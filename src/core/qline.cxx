@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -8,6 +8,11 @@
 #include <qline.h>
 
 extern "C" {
+
+int QLine_Class_Size()
+{
+  return sizeof(QLine);
+}
 
 // QLine(const class QPoint &, const class QPoint &)
 QLine* dector_ZN5QLineC1ERK6QPointS2_(const QPoint & pt1, const QPoint & pt2)
@@ -73,6 +78,11 @@ void _ZN5QLine5setP1ERK6QPoint(void *that, const QPoint & p1)
 {
   QLine *cthat = (QLine *)that;
    cthat->setP1(p1);
+}
+
+int QLineF_Class_Size()
+{
+  return sizeof(QLineF);
 }
 
 // QLineF(const class QPointF &, const class QPointF &)

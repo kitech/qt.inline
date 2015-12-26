@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmimedata.h
 // dst-file: /src/core/qmimedata.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmimedata.h>
 
 extern "C" {
+
+int QMimeData_Class_Size()
+{
+  return sizeof(QMimeData);
+}
 
 // ~QMimeData()
 void dedtor_ZN9QMimeDataD0Ev(QMimeData* that)

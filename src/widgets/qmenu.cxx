@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmenu.h
 // dst-file: /src/widgets/qmenu.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmenu.h>
 
 extern "C" {
+
+int QMenu_Class_Size()
+{
+  return sizeof(QMenu);
+}
 
 // QMenu(class QWidget *)
 QMenu* dector_ZN5QMenuC1EP7QWidget(QWidget * parent)

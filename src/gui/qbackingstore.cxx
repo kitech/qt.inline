@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qbackingstore.h
 // dst-file: /src/gui/qbackingstore.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbackingstore.h>
 
 extern "C" {
+
+int QBackingStore_Class_Size()
+{
+  return sizeof(QBackingStore);
+}
 
 // ~QBackingStore()
 void dedtor_ZN13QBackingStoreD0Ev(QBackingStore* that)

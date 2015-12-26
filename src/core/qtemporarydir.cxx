@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qtemporarydir.h
 // dst-file: /src/core/qtemporarydir.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtemporarydir.h>
 
 extern "C" {
+
+int QTemporaryDir_Class_Size()
+{
+  return sizeof(QTemporaryDir);
+}
 
 // ~QTemporaryDir()
 void dedtor_ZN13QTemporaryDirD0Ev(QTemporaryDir* that)

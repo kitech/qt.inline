@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtextedit.h
 // dst-file: /src/widgets/qtextedit.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextedit.h>
 
 extern "C" {
+
+int QTextEdit_Class_Size()
+{
+  return sizeof(QTextEdit);
+}
 
 // ~QTextEdit()
 void dedtor_ZN9QTextEditD0Ev(QTextEdit* that)

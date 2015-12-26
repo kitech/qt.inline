@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qicon.h
 // dst-file: /src/gui/qicon.cxx
 //
@@ -8,6 +8,11 @@
 #include <qicon.h>
 
 extern "C" {
+
+int QIcon_Class_Size()
+{
+  return sizeof(QIcon);
+}
 
 // QIcon(const class QIcon &)
 QIcon* dector_ZN5QIconC1ERKS_(const QIcon & other)

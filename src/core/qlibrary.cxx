@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlibrary.h>
 
 extern "C" {
+
+int QLibrary_Class_Size()
+{
+  return sizeof(QLibrary);
+}
 
 // QLibrary(const class QString &, const class QString &, class QObject *)
 QLibrary* dector_ZN8QLibraryC1ERK7QStringS2_P7QObject(const QString & fileName, const QString & version, QObject * parent)

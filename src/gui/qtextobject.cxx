@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -9,6 +9,16 @@
 
 extern "C" {
 
+int QTextObject_Class_Size()
+{
+  return sizeof(QTextObject);
+}
+
+int QTextBlockUserData_Class_Size()
+{
+  return sizeof(QTextBlockUserData);
+}
+
 // ~QTextBlockUserData()
 void dedtor_ZN18QTextBlockUserDataD0Ev(QTextBlockUserData* that)
 {
@@ -16,11 +26,36 @@ void dedtor_ZN18QTextBlockUserDataD0Ev(QTextBlockUserData* that)
   delete rthis;
 }
 
+int QTextFragment_Class_Size()
+{
+  return sizeof(QTextFragment);
+}
+
+int QTextFrameLayoutData_Class_Size()
+{
+  return sizeof(QTextFrameLayoutData);
+}
+
 // ~QTextFrameLayoutData()
 void dedtor_ZN20QTextFrameLayoutDataD0Ev(QTextFrameLayoutData* that)
 {
   QTextFrameLayoutData* rthis = (QTextFrameLayoutData*)that;
   delete rthis;
+}
+
+int QTextBlock_Class_Size()
+{
+  return sizeof(QTextBlock);
+}
+
+int QTextBlockGroup_Class_Size()
+{
+  return sizeof(QTextBlockGroup);
+}
+
+int QTextFrame_Class_Size()
+{
+  return sizeof(QTextFrame);
 }
 
 // QTextFrame(class QTextDocument *)

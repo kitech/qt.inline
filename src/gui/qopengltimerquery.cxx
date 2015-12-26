@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopengltimerquery.h
 // dst-file: /src/gui/qopengltimerquery.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopengltimerquery.h>
 
 extern "C" {
+
+int QOpenGLTimerQuery_Class_Size()
+{
+  return sizeof(QOpenGLTimerQuery);
+}
 
 // ~QOpenGLTimerQuery()
 void dedtor_ZN17QOpenGLTimerQueryD0Ev(QOpenGLTimerQuery* that)
@@ -22,6 +27,11 @@ QOpenGLTimerQuery* dector_ZN17QOpenGLTimerQueryC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QOpenGLTimerQuery) == 32, "tyszerr");
   QOpenGLTimerQuery* rthis = new QOpenGLTimerQuery(parent);
   return rthis;
+}
+
+int QOpenGLTimeMonitor_Class_Size()
+{
+  return sizeof(QOpenGLTimeMonitor);
 }
 
 // ~QOpenGLTimeMonitor()

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qitemdelegate.h
 // dst-file: /src/widgets/qitemdelegate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qitemdelegate.h>
 
 extern "C" {
+
+int QItemDelegate_Class_Size()
+{
+  return sizeof(QItemDelegate);
+}
 
 // QItemDelegate(class QObject *)
 QItemDelegate* dector_ZN13QItemDelegateC1EP7QObject(QObject * parent)

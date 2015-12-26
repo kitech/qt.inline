@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qsyntaxhighlighter.h
 // dst-file: /src/gui/qsyntaxhighlighter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsyntaxhighlighter.h>
 
 extern "C" {
+
+int QSyntaxHighlighter_Class_Size()
+{
+  return sizeof(QSyntaxHighlighter);
+}
 
 }; // <= extern "C" block end
 

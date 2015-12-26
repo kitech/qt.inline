@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qprogressbar.h
 // dst-file: /src/widgets/qprogressbar.cxx
 //
@@ -8,6 +8,11 @@
 #include <qprogressbar.h>
 
 extern "C" {
+
+int QProgressBar_Class_Size()
+{
+  return sizeof(QProgressBar);
+}
 
 // QProgressBar(class QWidget *)
 QProgressBar* dector_ZN12QProgressBarC1EP7QWidget(QWidget * parent)

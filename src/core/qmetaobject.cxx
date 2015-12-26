@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmetaobject.h
 // dst-file: /src/core/qmetaobject.cxx
 //
@@ -8,6 +8,26 @@
 #include <qmetaobject.h>
 
 extern "C" {
+
+int QMetaEnum_Class_Size()
+{
+  return sizeof(QMetaEnum);
+}
+
+int QMetaClassInfo_Class_Size()
+{
+  return sizeof(QMetaClassInfo);
+}
+
+int QMetaMethod_Class_Size()
+{
+  return sizeof(QMetaMethod);
+}
+
+int QMetaProperty_Class_Size()
+{
+  return sizeof(QMetaProperty);
+}
 
 // QMetaProperty()
 QMetaProperty* dector_ZN13QMetaPropertyC1Ev()

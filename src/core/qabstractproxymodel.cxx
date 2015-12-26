@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qabstractproxymodel.h
 // dst-file: /src/core/qabstractproxymodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qabstractproxymodel.h>
 
 extern "C" {
+
+int QAbstractProxyModel_Class_Size()
+{
+  return sizeof(QAbstractProxyModel);
+}
 
 }; // <= extern "C" block end
 

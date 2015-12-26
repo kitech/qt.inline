@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qvector3d.h
 // dst-file: /src/gui/qvector3d.cxx
 //
@@ -8,6 +8,11 @@
 #include <qvector3d.h>
 
 extern "C" {
+
+int QVector3D_Class_Size()
+{
+  return sizeof(QVector3D);
+}
 
 // QVector3D(const class QPointF &)
 QVector3D* dector_ZN9QVector3DC1ERK7QPointF(const QPointF & point)

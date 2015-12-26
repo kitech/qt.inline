@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qflags.h
 // dst-file: /src/core/qflags.cxx
 //
@@ -9,12 +9,22 @@
 
 extern "C" {
 
+int QIncompatibleFlag_Class_Size()
+{
+  return sizeof(QIncompatibleFlag);
+}
+
 // QIncompatibleFlag(int)
 QIncompatibleFlag* dector_ZN17QIncompatibleFlagC1Ei(int i)
 {
   // static_assert(sizeof(QIncompatibleFlag) == 32, "tyszerr");
   QIncompatibleFlag* rthis = new QIncompatibleFlag(i);
   return rthis;
+}
+
+int QFlag_Class_Size()
+{
+  return sizeof(QFlag);
 }
 
 }; // <= extern "C" block end

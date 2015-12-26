@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglfunctions.h
 // dst-file: /src/gui/qopenglfunctions.cxx
 //
@@ -9,28 +9,14 @@
 
 extern "C" {
 
-// QOpenGLFunctionsPrivate(class QOpenGLContext *)
-QOpenGLFunctionsPrivate* dector_ZN23QOpenGLFunctionsPrivateC1EP14QOpenGLContext(QOpenGLContext * ctx)
+int QOpenGLFunctionsPrivate_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctionsPrivate) == 1152, "tyszerr");
-  QOpenGLFunctionsPrivate* rthis = new QOpenGLFunctionsPrivate(ctx);
-  return rthis;
+  return sizeof(QOpenGLFunctionsPrivate);
 }
 
-// QOpenGLFunctions(class QOpenGLContext *)
-QOpenGLFunctions* dector_ZN16QOpenGLFunctionsC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions) == 32, "tyszerr");
-  QOpenGLFunctions* rthis = new QOpenGLFunctions(context);
-  return rthis;
-}
-
-// QOpenGLFunctions()
-QOpenGLFunctions* dector_ZN16QOpenGLFunctionsC1Ev()
-{
-  // static_assert(sizeof(QOpenGLFunctions) == 32, "tyszerr");
-  QOpenGLFunctions* rthis = new QOpenGLFunctions();
-  return rthis;
+  return sizeof(QOpenGLFunctions);
 }
 
 }; // <= extern "C" block end

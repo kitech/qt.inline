@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmenubar.h
 // dst-file: /src/widgets/qmenubar.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmenubar.h>
 
 extern "C" {
+
+int QMenuBar_Class_Size()
+{
+  return sizeof(QMenuBar);
+}
 
 // ~QMenuBar()
 void dedtor_ZN8QMenuBarD0Ev(QMenuBar* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qsystemtrayicon.h
 // dst-file: /src/widgets/qsystemtrayicon.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsystemtrayicon.h>
 
 extern "C" {
+
+int QSystemTrayIcon_Class_Size()
+{
+  return sizeof(QSystemTrayIcon);
+}
 
 // ~QSystemTrayIcon()
 void dedtor_ZN15QSystemTrayIconD0Ev(QSystemTrayIcon* that)

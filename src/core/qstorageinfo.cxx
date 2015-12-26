@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstorageinfo.h
 // dst-file: /src/core/qstorageinfo.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstorageinfo.h>
 
 extern "C" {
+
+int QStorageInfo_Class_Size()
+{
+  return sizeof(QStorageInfo);
+}
 
 // QStorageInfo(const class QStorageInfo &)
 QStorageInfo* dector_ZN12QStorageInfoC1ERKS_(const QStorageInfo & other)

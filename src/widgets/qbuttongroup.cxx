@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qbuttongroup.h
 // dst-file: /src/widgets/qbuttongroup.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbuttongroup.h>
 
 extern "C" {
+
+int QButtonGroup_Class_Size()
+{
+  return sizeof(QButtonGroup);
+}
 
 // ~QButtonGroup()
 void dedtor_ZN12QButtonGroupD0Ev(QButtonGroup* that)

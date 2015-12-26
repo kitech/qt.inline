@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextformat.h
 // dst-file: /src/gui/qtextformat.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextformat.h>
 
 extern "C" {
+
+int QTextLength_Class_Size()
+{
+  return sizeof(QTextLength);
+}
 
 // QTextLength(enum QTextLength::Type, qreal)
 QTextLength* dector_ZN11QTextLengthC1ENS_4TypeEd(QTextLength::Type type, double value)
@@ -22,6 +27,11 @@ void _ZN11QTextLengthC1ENS_4TypeEd(void *that, QTextLength::Type type, double va
 {
   QTextLength *cthat = (QTextLength *)that;
   auto _o = new(that) QTextLength(type, value);
+}
+
+int QTextImageFormat_Class_Size()
+{
+  return sizeof(QTextImageFormat);
 }
 
 // QTextImageFormat()
@@ -51,6 +61,11 @@ void _ZN16QTextImageFormat8setWidthEd(void *that, double width)
 {
   QTextImageFormat *cthat = (QTextImageFormat *)that;
    cthat->setWidth(width);
+}
+
+int QTextFormat_Class_Size()
+{
+  return sizeof(QTextFormat);
 }
 
 // ~QTextFormat()
@@ -91,6 +106,11 @@ void _ZN11QTextFormat13setObjectTypeEi(void *that, int type)
    cthat->setObjectType(type);
 }
 
+int QTextBlockFormat_Class_Size()
+{
+  return sizeof(QTextBlockFormat);
+}
+
 // QTextBlockFormat()
 QTextBlockFormat* dector_ZN16QTextBlockFormatC1Ev()
 {
@@ -120,6 +140,11 @@ qreal _ZNK16QTextBlockFormat10lineHeightEdd(void *that, double scriptLineHeight,
   return cthat->lineHeight(scriptLineHeight, scaling);
 }
 
+int QTextCharFormat_Class_Size()
+{
+  return sizeof(QTextCharFormat);
+}
+
 // QTextCharFormat()
 QTextCharFormat* dector_ZN15QTextCharFormatC1Ev()
 {
@@ -140,6 +165,11 @@ void _ZN15QTextCharFormat19setTableCellRowSpanEi(void *that, int tableCellRowSpa
 {
   QTextCharFormat *cthat = (QTextCharFormat *)that;
    cthat->setTableCellRowSpan(tableCellRowSpan);
+}
+
+int QTextTableFormat_Class_Size()
+{
+  return sizeof(QTextTableFormat);
 }
 
 // QTextTableFormat()
@@ -169,6 +199,11 @@ void _ZN16QTextTableFormat14setCellPaddingEd(void *that, double padding)
 {
   QTextTableFormat *cthat = (QTextTableFormat *)that;
    cthat->setCellPadding(padding);
+}
+
+int QTextTableCellFormat_Class_Size()
+{
+  return sizeof(QTextTableCellFormat);
 }
 
 // QTextTableCellFormat()
@@ -242,6 +277,11 @@ void _ZN20QTextTableCellFormat16setBottomPaddingEd(void *that, double padding)
    cthat->setBottomPadding(padding);
 }
 
+int QTextListFormat_Class_Size()
+{
+  return sizeof(QTextListFormat);
+}
+
 // QTextListFormat()
 QTextListFormat* dector_ZN15QTextListFormatC1Ev()
 {
@@ -276,6 +316,11 @@ void _ZN15QTextListFormat8setStyleENS_5StyleE(void *that, QTextListFormat::Style
 {
   QTextListFormat *cthat = (QTextListFormat *)that;
    cthat->setStyle(style);
+}
+
+int QTextFrameFormat_Class_Size()
+{
+  return sizeof(QTextFrameFormat);
 }
 
 // QTextFrameFormat()

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextdocumentfragment.h
 // dst-file: /src/gui/qtextdocumentfragment.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextdocumentfragment.h>
 
 extern "C" {
+
+int QTextDocumentFragment_Class_Size()
+{
+  return sizeof(QTextDocumentFragment);
+}
 
 // QTextDocumentFragment(const class QTextDocumentFragment &)
 QTextDocumentFragment* dector_ZN21QTextDocumentFragmentC1ERKS_(const QTextDocumentFragment & rhs)

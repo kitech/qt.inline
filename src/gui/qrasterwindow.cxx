@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qrasterwindow.h
 // dst-file: /src/gui/qrasterwindow.cxx
 //
@@ -8,6 +8,11 @@
 #include <qrasterwindow.h>
 
 extern "C" {
+
+int QRasterWindow_Class_Size()
+{
+  return sizeof(QRasterWindow);
+}
 
 // QRasterWindow(class QWindow *)
 QRasterWindow* dector_ZN13QRasterWindowC1EP7QWindow(QWindow * parent)

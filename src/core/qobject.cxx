@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qobject.h
 // dst-file: /src/core/qobject.cxx
 //
@@ -8,6 +8,11 @@
 #include <qobject.h>
 
 extern "C" {
+
+int QSignalBlocker_Class_Size()
+{
+  return sizeof(QSignalBlocker);
+}
 
   // proto:  void QSignalBlocker::unblock();
 void _ZN14QSignalBlocker7unblockEv(void *that)
@@ -30,11 +35,26 @@ void _ZN14QSignalBlockerD0Ev(void *that)
    cthat->~QSignalBlocker();
 }
 
+int QObjectData_Class_Size()
+{
+  return sizeof(QObjectData);
+}
+
+int QObjectUserData_Class_Size()
+{
+  return sizeof(QObjectUserData);
+}
+
 // ~QObjectUserData()
 void dedtor_ZN15QObjectUserDataD0Ev(QObjectUserData* that)
 {
   QObjectUserData* rthis = (QObjectUserData*)that;
   delete rthis;
+}
+
+int QObject_Class_Size()
+{
+  return sizeof(QObject);
 }
 
 // ~QObject()

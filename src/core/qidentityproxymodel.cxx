@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qidentityproxymodel.h
 // dst-file: /src/core/qidentityproxymodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qidentityproxymodel.h>
 
 extern "C" {
+
+int QIdentityProxyModel_Class_Size()
+{
+  return sizeof(QIdentityProxyModel);
+}
 
 // ~QIdentityProxyModel()
 void dedtor_ZN19QIdentityProxyModelD0Ev(QIdentityProxyModel* that)

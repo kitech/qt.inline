@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -8,6 +8,16 @@
 #include <qtextlayout.h>
 
 extern "C" {
+
+int QTextLine_Class_Size()
+{
+  return sizeof(QTextLine);
+}
+
+int QTextLayout_Class_Size()
+{
+  return sizeof(QTextLayout);
+}
 
 // QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
 QTextLayout* dector_ZN11QTextLayoutC1ERK7QStringRK5QFontP12QPaintDevice(const QString & text, const QFont & font, QPaintDevice * paintdevice)
@@ -46,6 +56,11 @@ QTextLayout* dector_ZN11QTextLayoutC1Ev()
   // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
   QTextLayout* rthis = new QTextLayout();
   return rthis;
+}
+
+int QTextInlineObject_Class_Size()
+{
+  return sizeof(QTextInlineObject);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmainwindow.h>
 
 extern "C" {
+
+int QMainWindow_Class_Size()
+{
+  return sizeof(QMainWindow);
+}
 
 // QMainWindow(class QWidget *, Qt::WindowFlags)
 QMainWindow* dector_ZN11QMainWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)

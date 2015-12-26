@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglversionfunctions.h
 // dst-file: /src/gui/qopenglversionfunctions.cxx
 //
@@ -9,220 +9,159 @@
 
 extern "C" {
 
-// QOpenGLFunctions_4_5_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_5_DeprecatedBackend* dector_ZN38QOpenGLFunctions_4_5_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QAbstractOpenGLFunctionsPrivate_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_5_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_5_DeprecatedBackend* rthis = new QOpenGLFunctions_4_5_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QAbstractOpenGLFunctionsPrivate);
 }
 
-// QOpenGLFunctions_1_2_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_2_DeprecatedBackend* dector_ZN38QOpenGLFunctions_1_2_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_5_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_2_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_2_DeprecatedBackend* rthis = new QOpenGLFunctions_1_2_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_5_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_4_1_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_1_CoreBackend* dector_ZN32QOpenGLFunctions_4_1_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_2_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_1_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_1_CoreBackend* rthis = new QOpenGLFunctions_4_1_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_2_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_3_3_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_3_CoreBackend* dector_ZN32QOpenGLFunctions_3_3_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_1_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_3_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_3_CoreBackend* rthis = new QOpenGLFunctions_3_3_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_1_CoreBackend);
 }
 
-// QOpenGLFunctions_1_5_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_5_CoreBackend* dector_ZN32QOpenGLFunctions_1_5_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_3_3_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_5_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_5_CoreBackend* rthis = new QOpenGLFunctions_1_5_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_3_3_CoreBackend);
 }
 
-// QOpenGLFunctions_4_5_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_5_CoreBackend* dector_ZN32QOpenGLFunctions_4_5_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_5_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_5_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_5_CoreBackend* rthis = new QOpenGLFunctions_4_5_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_5_CoreBackend);
 }
 
-// QOpenGLFunctions_4_4_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_4_CoreBackend* dector_ZN32QOpenGLFunctions_4_4_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_5_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_4_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_4_CoreBackend* rthis = new QOpenGLFunctions_4_4_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_5_CoreBackend);
 }
 
-// QOpenGLFunctions_4_3_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_3_CoreBackend* dector_ZN32QOpenGLFunctions_4_3_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_4_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_3_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_3_CoreBackend* rthis = new QOpenGLFunctions_4_3_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_4_CoreBackend);
 }
 
-// QOpenGLFunctions_3_0_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_0_DeprecatedBackend* dector_ZN38QOpenGLFunctions_3_0_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_3_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_0_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_0_DeprecatedBackend* rthis = new QOpenGLFunctions_3_0_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_3_CoreBackend);
 }
 
-// QOpenGLFunctions_2_1_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_2_1_CoreBackend* dector_ZN32QOpenGLFunctions_2_1_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_3_0_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_2_1_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_2_1_CoreBackend* rthis = new QOpenGLFunctions_2_1_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_3_0_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_1_0_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_0_DeprecatedBackend* dector_ZN38QOpenGLFunctions_1_0_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_2_1_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_0_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_0_DeprecatedBackend* rthis = new QOpenGLFunctions_1_0_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_2_1_CoreBackend);
 }
 
-// QOpenGLFunctions_3_0_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_0_CoreBackend* dector_ZN32QOpenGLFunctions_3_0_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_0_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_0_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_0_CoreBackend* rthis = new QOpenGLFunctions_3_0_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_0_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_1_2_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_2_CoreBackend* dector_ZN32QOpenGLFunctions_1_2_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_3_0_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_2_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_2_CoreBackend* rthis = new QOpenGLFunctions_1_2_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_3_0_CoreBackend);
 }
 
-// QOpenGLFunctions_1_1_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_1_DeprecatedBackend* dector_ZN38QOpenGLFunctions_1_1_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_2_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_1_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_1_DeprecatedBackend* rthis = new QOpenGLFunctions_1_1_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_2_CoreBackend);
 }
 
-// QOpenGLFunctions_4_2_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_2_CoreBackend* dector_ZN32QOpenGLFunctions_4_2_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_1_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_2_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_2_CoreBackend* rthis = new QOpenGLFunctions_4_2_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_1_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_2_0_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_2_0_CoreBackend* dector_ZN32QOpenGLFunctions_2_0_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_4_2_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_2_0_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_2_0_CoreBackend* rthis = new QOpenGLFunctions_2_0_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_4_2_CoreBackend);
 }
 
-// QOpenGLFunctions_3_2_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_2_CoreBackend* dector_ZN32QOpenGLFunctions_3_2_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_2_0_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_2_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_2_CoreBackend* rthis = new QOpenGLFunctions_3_2_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_2_0_CoreBackend);
 }
 
-// QOpenGLFunctions_2_0_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_2_0_DeprecatedBackend* dector_ZN38QOpenGLFunctions_2_0_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_3_2_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_2_0_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_2_0_DeprecatedBackend* rthis = new QOpenGLFunctions_2_0_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_3_2_CoreBackend);
 }
 
-// QOpenGLFunctions_1_3_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_3_DeprecatedBackend* dector_ZN38QOpenGLFunctions_1_3_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLVersionFunctionsBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_3_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_3_DeprecatedBackend* rthis = new QOpenGLFunctions_1_3_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLVersionFunctionsBackend);
 }
 
-// QOpenGLFunctions_1_4_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_4_DeprecatedBackend* dector_ZN38QOpenGLFunctions_1_4_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QAbstractOpenGLFunctions_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_4_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_4_DeprecatedBackend* rthis = new QOpenGLFunctions_1_4_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QAbstractOpenGLFunctions);
 }
 
-// QOpenGLFunctions_1_3_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_3_CoreBackend* dector_ZN32QOpenGLFunctions_1_3_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_2_0_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_3_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_3_CoreBackend* rthis = new QOpenGLFunctions_1_3_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_2_0_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_1_0_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_0_CoreBackend* dector_ZN32QOpenGLFunctions_1_0_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_3_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_0_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_0_CoreBackend* rthis = new QOpenGLFunctions_1_0_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_3_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_3_1_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_1_CoreBackend* dector_ZN32QOpenGLFunctions_3_1_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_4_DeprecatedBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_1_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_1_CoreBackend* rthis = new QOpenGLFunctions_3_1_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_4_DeprecatedBackend);
 }
 
-// QOpenGLFunctions_1_1_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_1_CoreBackend* dector_ZN32QOpenGLFunctions_1_1_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_3_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_1_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_1_CoreBackend* rthis = new QOpenGLFunctions_1_1_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_3_CoreBackend);
 }
 
-// QOpenGLFunctions_1_4_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_1_4_CoreBackend* dector_ZN32QOpenGLFunctions_1_4_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLVersionStatus_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_1_4_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_1_4_CoreBackend* rthis = new QOpenGLFunctions_1_4_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLVersionStatus);
 }
 
-// QOpenGLFunctions_4_0_CoreBackend(class QOpenGLContext *)
-QOpenGLFunctions_4_0_CoreBackend* dector_ZN32QOpenGLFunctions_4_0_CoreBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_1_0_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_4_0_CoreBackend) == 32, "tyszerr");
-  QOpenGLFunctions_4_0_CoreBackend* rthis = new QOpenGLFunctions_4_0_CoreBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_1_0_CoreBackend);
 }
 
-// QOpenGLFunctions_3_3_DeprecatedBackend(class QOpenGLContext *)
-QOpenGLFunctions_3_3_DeprecatedBackend* dector_ZN38QOpenGLFunctions_3_3_DeprecatedBackendC1EP14QOpenGLContext(QOpenGLContext * context)
+int QOpenGLFunctions_3_1_CoreBackend_Class_Size()
 {
-  // static_assert(sizeof(QOpenGLFunctions_3_3_DeprecatedBackend) == 32, "tyszerr");
-  QOpenGLFunctions_3_3_DeprecatedBackend* rthis = new QOpenGLFunctions_3_3_DeprecatedBackend(context);
-  return rthis;
+  return sizeof(QOpenGLFunctions_3_1_CoreBackend);
+}
+
+int QOpenGLFunctions_1_1_CoreBackend_Class_Size()
+{
+  return sizeof(QOpenGLFunctions_1_1_CoreBackend);
+}
+
+int QOpenGLFunctions_1_4_CoreBackend_Class_Size()
+{
+  return sizeof(QOpenGLFunctions_1_4_CoreBackend);
+}
+
+int QOpenGLFunctions_4_0_CoreBackend_Class_Size()
+{
+  return sizeof(QOpenGLFunctions_4_0_CoreBackend);
+}
+
+int QOpenGLFunctions_3_3_DeprecatedBackend_Class_Size()
+{
+  return sizeof(QOpenGLFunctions_3_3_DeprecatedBackend);
 }
 
 }; // <= extern "C" block end

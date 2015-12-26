@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qthreadstorage.h
 // dst-file: /src/core/qthreadstorage.cxx
 //
@@ -8,6 +8,11 @@
 #include <qthreadstorage.h>
 
 extern "C" {
+
+int QThreadStorageData_Class_Size()
+{
+  return sizeof(QThreadStorageData);
+}
 
 // ~QThreadStorageData()
 void dedtor_ZN18QThreadStorageDataD0Ev(QThreadStorageData* that)

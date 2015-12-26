@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qfileiconprovider.h
 // dst-file: /src/widgets/qfileiconprovider.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfileiconprovider.h>
 
 extern "C" {
+
+int QFileIconProvider_Class_Size()
+{
+  return sizeof(QFileIconProvider);
+}
 
 // QFileIconProvider()
 QFileIconProvider* dector_ZN17QFileIconProviderC1Ev()

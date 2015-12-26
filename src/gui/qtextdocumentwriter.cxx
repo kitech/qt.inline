@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextdocumentwriter.h
 // dst-file: /src/gui/qtextdocumentwriter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextdocumentwriter.h>
 
 extern "C" {
+
+int QTextDocumentWriter_Class_Size()
+{
+  return sizeof(QTextDocumentWriter);
+}
 
 // QTextDocumentWriter(class QIODevice *, const class QByteArray &)
 QTextDocumentWriter* dector_ZN19QTextDocumentWriterC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format)

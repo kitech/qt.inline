@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qcolor.h
 // dst-file: /src/gui/qcolor.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcolor.h>
 
 extern "C" {
+
+int QColor_Class_Size()
+{
+  return sizeof(QColor);
+}
 
 // QColor()
 QColor* dector_ZN6QColorC1Ev()

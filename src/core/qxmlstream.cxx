@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qxmlstream.h
 // dst-file: /src/core/qxmlstream.cxx
 //
@@ -8,6 +8,16 @@
 #include <qxmlstream.h>
 
 extern "C" {
+
+int QXmlStreamStringRef_Class_Size()
+{
+  return sizeof(QXmlStreamStringRef);
+}
+
+int QXmlStreamReader_Class_Size()
+{
+  return sizeof(QXmlStreamReader);
+}
 
 // QXmlStreamReader(const class QByteArray &)
 QXmlStreamReader* dector_ZN16QXmlStreamReaderC1ERK10QByteArray(const QByteArray & data)
@@ -56,11 +66,21 @@ QXmlStreamReader* dector_ZN16QXmlStreamReaderC1EPKc(const char * data)
   return rthis;
 }
 
+int QXmlStreamEntityResolver_Class_Size()
+{
+  return sizeof(QXmlStreamEntityResolver);
+}
+
 // ~QXmlStreamEntityResolver()
 void dedtor_ZN24QXmlStreamEntityResolverD0Ev(QXmlStreamEntityResolver* that)
 {
   QXmlStreamEntityResolver* rthis = (QXmlStreamEntityResolver*)that;
   delete rthis;
+}
+
+int QXmlStreamNamespaceDeclaration_Class_Size()
+{
+  return sizeof(QXmlStreamNamespaceDeclaration);
 }
 
 // ~QXmlStreamNamespaceDeclaration()
@@ -94,6 +114,11 @@ QXmlStreamNamespaceDeclaration* dector_ZN30QXmlStreamNamespaceDeclarationC1Ev()
   return rthis;
 }
 
+int QXmlStreamEntityDeclaration_Class_Size()
+{
+  return sizeof(QXmlStreamEntityDeclaration);
+}
+
 // ~QXmlStreamEntityDeclaration()
 void dedtor_ZN27QXmlStreamEntityDeclarationD0Ev(QXmlStreamEntityDeclaration* that)
 {
@@ -115,6 +140,16 @@ QXmlStreamEntityDeclaration* dector_ZN27QXmlStreamEntityDeclarationC1Ev()
   // static_assert(sizeof(QXmlStreamEntityDeclaration) == 88, "tyszerr");
   QXmlStreamEntityDeclaration* rthis = new QXmlStreamEntityDeclaration();
   return rthis;
+}
+
+int QXmlStreamAttributes_Class_Size()
+{
+  return sizeof(QXmlStreamAttributes);
+}
+
+int QXmlStreamWriter_Class_Size()
+{
+  return sizeof(QXmlStreamWriter);
 }
 
 // QXmlStreamWriter()
@@ -156,6 +191,11 @@ QXmlStreamWriter* dector_ZN16QXmlStreamWriterC1EP9QIODevice(QIODevice * device)
   return rthis;
 }
 
+int QXmlStreamNotationDeclaration_Class_Size()
+{
+  return sizeof(QXmlStreamNotationDeclaration);
+}
+
 // QXmlStreamNotationDeclaration(const class QXmlStreamNotationDeclaration &)
 QXmlStreamNotationDeclaration* dector_ZN29QXmlStreamNotationDeclarationC1ERKS_(const QXmlStreamNotationDeclaration & arg1)
 {
@@ -177,6 +217,11 @@ void dedtor_ZN29QXmlStreamNotationDeclarationD0Ev(QXmlStreamNotationDeclaration*
 {
   QXmlStreamNotationDeclaration* rthis = (QXmlStreamNotationDeclaration*)that;
   delete rthis;
+}
+
+int QXmlStreamAttribute_Class_Size()
+{
+  return sizeof(QXmlStreamAttribute);
 }
 
 // QXmlStreamAttribute(const class QString &, const class QString &)

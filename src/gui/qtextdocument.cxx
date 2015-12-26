@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextdocument.h
 // dst-file: /src/gui/qtextdocument.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextdocument.h>
 
 extern "C" {
+
+int QTextDocument_Class_Size()
+{
+  return sizeof(QTextDocument);
+}
 
 // QTextDocument(class QObject *)
 QTextDocument* dector_ZN13QTextDocumentC1EP7QObject(QObject * parent)
@@ -30,6 +35,11 @@ void dedtor_ZN13QTextDocumentD0Ev(QTextDocument* that)
 {
   QTextDocument* rthis = (QTextDocument*)that;
   delete rthis;
+}
+
+int QAbstractUndoItem_Class_Size()
+{
+  return sizeof(QAbstractUndoItem);
 }
 
 }; // <= extern "C" block end

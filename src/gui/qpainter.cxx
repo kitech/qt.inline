@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpainter.h
 // dst-file: /src/gui/qpainter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpainter.h>
 
 extern "C" {
+
+int QPainter_Class_Size()
+{
+  return sizeof(QPainter);
+}
 
 // QPainter(class QPaintDevice *)
 QPainter* dector_ZN8QPainterC1EP12QPaintDevice(QPaintDevice * arg1)

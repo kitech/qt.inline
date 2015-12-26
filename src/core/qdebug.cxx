@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qdebug.h
 // dst-file: /src/core/qdebug.cxx
 //
@@ -8,6 +8,16 @@
 #include <qdebug.h>
 
 extern "C" {
+
+int QNoDebug_Class_Size()
+{
+  return sizeof(QNoDebug);
+}
+
+int QDebugStateSaver_Class_Size()
+{
+  return sizeof(QDebugStateSaver);
+}
 
 // QDebugStateSaver(class QDebug &)
 QDebugStateSaver* dector_ZN16QDebugStateSaverC1ER6QDebug(QDebug & dbg)
@@ -22,6 +32,11 @@ void dedtor_ZN16QDebugStateSaverD0Ev(QDebugStateSaver* that)
 {
   QDebugStateSaver* rthis = (QDebugStateSaver*)that;
   delete rthis;
+}
+
+int QDebug_Class_Size()
+{
+  return sizeof(QDebug);
 }
 
 // ~QDebug()

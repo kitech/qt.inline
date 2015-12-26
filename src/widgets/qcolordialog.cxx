@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qcolordialog.h
 // dst-file: /src/widgets/qcolordialog.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcolordialog.h>
 
 extern "C" {
+
+int QColorDialog_Class_Size()
+{
+  return sizeof(QColorDialog);
+}
 
 // QColorDialog(const class QColor &, class QWidget *)
 QColorDialog* dector_ZN12QColorDialogC1ERK6QColorP7QWidget(const QColor & initial, QWidget * parent)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qstatictext.h
 // dst-file: /src/gui/qstatictext.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstatictext.h>
 
 extern "C" {
+
+int QStaticText_Class_Size()
+{
+  return sizeof(QStaticText);
+}
 
 // QStaticText(const class QString &)
 QStaticText* dector_ZN11QStaticTextC1ERK7QString(const QString & text)

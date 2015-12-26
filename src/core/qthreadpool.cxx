@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qthreadpool.h
 // dst-file: /src/core/qthreadpool.cxx
 //
@@ -8,6 +8,11 @@
 #include <qthreadpool.h>
 
 extern "C" {
+
+int QThreadPool_Class_Size()
+{
+  return sizeof(QThreadPool);
+}
 
 // ~QThreadPool()
 void dedtor_ZN11QThreadPoolD0Ev(QThreadPool* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qmdisubwindow.h
 // dst-file: /src/widgets/qmdisubwindow.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmdisubwindow.h>
 
 extern "C" {
+
+int QMdiSubWindow_Class_Size()
+{
+  return sizeof(QMdiSubWindow);
+}
 
 // ~QMdiSubWindow()
 void dedtor_ZN13QMdiSubWindowD0Ev(QMdiSubWindow* that)

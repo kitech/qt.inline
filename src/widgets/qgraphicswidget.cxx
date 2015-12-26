@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicswidget.h>
 
 extern "C" {
+
+int QGraphicsWidget_Class_Size()
+{
+  return sizeof(QGraphicsWidget);
+}
 
 // QGraphicsWidget(class QGraphicsItem *, Qt::WindowFlags)
 QGraphicsWidget* dector_ZN15QGraphicsWidgetC1EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, Qt::WindowFlags wFlags)

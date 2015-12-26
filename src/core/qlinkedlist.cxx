@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qlinkedlist.h
 // dst-file: /src/core/qlinkedlist.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlinkedlist.h>
 
 extern "C" {
+
+int QLinkedListData_Class_Size()
+{
+  return sizeof(QLinkedListData);
+}
 
 }; // <= extern "C" block end
 

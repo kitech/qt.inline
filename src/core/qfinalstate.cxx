@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qfinalstate.h
 // dst-file: /src/core/qfinalstate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfinalstate.h>
 
 extern "C" {
+
+int QFinalState_Class_Size()
+{
+  return sizeof(QFinalState);
+}
 
 // QFinalState(class QState *)
 QFinalState* dector_ZN11QFinalStateC1EP6QState(QState * parent)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qaction.h
 // dst-file: /src/widgets/qaction.cxx
 //
@@ -8,6 +8,11 @@
 #include <qaction.h>
 
 extern "C" {
+
+int QAction_Class_Size()
+{
+  return sizeof(QAction);
+}
 
 // QAction(const class QString &, class QObject *)
 QAction* dector_ZN7QActionC1ERK7QStringP7QObject(const QString & text, QObject * parent)

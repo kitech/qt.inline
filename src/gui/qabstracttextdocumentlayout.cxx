@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qabstracttextdocumentlayout.h
 // dst-file: /src/gui/qabstracttextdocumentlayout.cxx
 //
@@ -8,6 +8,16 @@
 #include <qabstracttextdocumentlayout.h>
 
 extern "C" {
+
+int QTextObjectInterface_Class_Size()
+{
+  return sizeof(QTextObjectInterface);
+}
+
+int QAbstractTextDocumentLayout_Class_Size()
+{
+  return sizeof(QAbstractTextDocumentLayout);
+}
 
 }; // <= extern "C" block end
 

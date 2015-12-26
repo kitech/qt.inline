@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qchar.h
 // dst-file: /src/core/qchar.cxx
 //
@@ -8,6 +8,16 @@
 #include <qchar.h>
 
 extern "C" {
+
+int QLatin1Char_Class_Size()
+{
+  return sizeof(QLatin1Char);
+}
+
+int QChar_Class_Size()
+{
+  return sizeof(QChar);
+}
 
   // proto: static bool QChar::isNumber(uint ucs4);
 bool _ZN5QChar8isNumberEj(void *that, unsigned int ucs4)

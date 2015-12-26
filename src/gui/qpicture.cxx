@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpicture.h
 // dst-file: /src/gui/qpicture.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpicture.h>
 
 extern "C" {
+
+int QPictureIO_Class_Size()
+{
+  return sizeof(QPictureIO);
+}
 
 // QPictureIO(const class QString &, const char *)
 QPictureIO* dector_ZN10QPictureIOC1ERK7QStringPKc(const QString & fileName, const char * format)
@@ -38,6 +43,11 @@ QPictureIO* dector_ZN10QPictureIOC1Ev()
   // static_assert(sizeof(QPictureIO) == 32, "tyszerr");
   QPictureIO* rthis = new QPictureIO();
   return rthis;
+}
+
+int QPicture_Class_Size()
+{
+  return sizeof(QPicture);
 }
 
 // QPicture(int)

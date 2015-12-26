@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qapplication.h
 // dst-file: /src/widgets/qapplication.cxx
 //
@@ -8,6 +8,11 @@
 #include <qapplication.h>
 
 extern "C" {
+
+int QApplication_Class_Size()
+{
+  return sizeof(QApplication);
+}
 
 // QApplication(int &, char **, int)
 QApplication* dector_ZN12QApplicationC1ERiPPci(int & argc, char ** argv, int arg3)

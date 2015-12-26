@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qundogroup.h
 // dst-file: /src/widgets/qundogroup.cxx
 //
@@ -8,6 +8,11 @@
 #include <qundogroup.h>
 
 extern "C" {
+
+int QUndoGroup_Class_Size()
+{
+  return sizeof(QUndoGroup);
+}
 
 // QUndoGroup(class QObject *)
 QUndoGroup* dector_ZN10QUndoGroupC1EP7QObject(QObject * parent)

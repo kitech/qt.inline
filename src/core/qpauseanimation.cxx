@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qpauseanimation.h
 // dst-file: /src/core/qpauseanimation.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpauseanimation.h>
 
 extern "C" {
+
+int QPauseAnimation_Class_Size()
+{
+  return sizeof(QPauseAnimation);
+}
 
 // QPauseAnimation(class QObject *)
 QPauseAnimation* dector_ZN15QPauseAnimationC1EP7QObject(QObject * parent)

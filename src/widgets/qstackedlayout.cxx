@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstackedlayout.h
 // dst-file: /src/widgets/qstackedlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstackedlayout.h>
 
 extern "C" {
+
+int QStackedLayout_Class_Size()
+{
+  return sizeof(QStackedLayout);
+}
 
 // QStackedLayout(class QWidget *)
 QStackedLayout* dector_ZN14QStackedLayoutC1EP7QWidget(QWidget * parent)

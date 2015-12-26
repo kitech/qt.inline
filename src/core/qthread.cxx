@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qthread.h
 // dst-file: /src/core/qthread.cxx
 //
@@ -8,6 +8,11 @@
 #include <qthread.h>
 
 extern "C" {
+
+int QThread_Class_Size()
+{
+  return sizeof(QThread);
+}
 
 // QThread(class QObject *)
 QThread* dector_ZN7QThreadC1EP7QObject(QObject * parent)

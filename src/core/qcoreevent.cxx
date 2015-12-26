@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qcoreevent.h
 // dst-file: /src/core/qcoreevent.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcoreevent.h>
 
 extern "C" {
+
+int QDeferredDeleteEvent_Class_Size()
+{
+  return sizeof(QDeferredDeleteEvent);
+}
 
 // ~QDeferredDeleteEvent()
 void dedtor_ZN20QDeferredDeleteEventD0Ev(QDeferredDeleteEvent* that)
@@ -22,6 +27,11 @@ QDeferredDeleteEvent* dector_ZN20QDeferredDeleteEventC1Ev()
   // static_assert(sizeof(QDeferredDeleteEvent) == 32, "tyszerr");
   QDeferredDeleteEvent* rthis = new QDeferredDeleteEvent();
   return rthis;
+}
+
+int QDynamicPropertyChangeEvent_Class_Size()
+{
+  return sizeof(QDynamicPropertyChangeEvent);
 }
 
 // ~QDynamicPropertyChangeEvent()
@@ -39,6 +49,11 @@ QDynamicPropertyChangeEvent* dector_ZN27QDynamicPropertyChangeEventC1ERK10QByteA
   return rthis;
 }
 
+int QTimerEvent_Class_Size()
+{
+  return sizeof(QTimerEvent);
+}
+
 // QTimerEvent(int)
 QTimerEvent* dector_ZN11QTimerEventC1Ei(int timerId)
 {
@@ -54,6 +69,11 @@ void dedtor_ZN11QTimerEventD0Ev(QTimerEvent* that)
   delete rthis;
 }
 
+int QChildEvent_Class_Size()
+{
+  return sizeof(QChildEvent);
+}
+
 // QChildEvent(enum QEvent::Type, class QObject *)
 QChildEvent* dector_ZN11QChildEventC1EN6QEvent4TypeEP7QObject(QEvent::Type type, QObject * child)
 {
@@ -67,6 +87,11 @@ void dedtor_ZN11QChildEventD0Ev(QChildEvent* that)
 {
   QChildEvent* rthis = (QChildEvent*)that;
   delete rthis;
+}
+
+int QEvent_Class_Size()
+{
+  return sizeof(QEvent);
 }
 
 // QEvent(enum QEvent::Type)

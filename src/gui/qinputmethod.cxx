@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qinputmethod.h
 // dst-file: /src/gui/qinputmethod.cxx
 //
@@ -8,6 +8,11 @@
 #include <qinputmethod.h>
 
 extern "C" {
+
+int QInputMethod_Class_Size()
+{
+  return sizeof(QInputMethod);
+}
 
 }; // <= extern "C" block end
 

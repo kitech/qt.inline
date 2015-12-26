@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qabstractanimation.h
 // dst-file: /src/core/qabstractanimation.cxx
 //
@@ -8,6 +8,16 @@
 #include <qabstractanimation.h>
 
 extern "C" {
+
+int QAbstractAnimation_Class_Size()
+{
+  return sizeof(QAbstractAnimation);
+}
+
+int QAnimationDriver_Class_Size()
+{
+  return sizeof(QAnimationDriver);
+}
 
 // ~QAnimationDriver()
 void dedtor_ZN16QAnimationDriverD0Ev(QAnimationDriver* that)

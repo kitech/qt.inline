@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdockwidget.h>
 
 extern "C" {
+
+int QDockWidget_Class_Size()
+{
+  return sizeof(QDockWidget);
+}
 
 // ~QDockWidget()
 void dedtor_ZN11QDockWidgetD0Ev(QDockWidget* that)

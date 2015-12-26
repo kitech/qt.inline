@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qjsonobject.h
 // dst-file: /src/core/qjsonobject.cxx
 //
@@ -8,6 +8,11 @@
 #include <qjsonobject.h>
 
 extern "C" {
+
+int QJsonObject_Class_Size()
+{
+  return sizeof(QJsonObject);
+}
 
 // ~QJsonObject()
 void dedtor_ZN11QJsonObjectD0Ev(QJsonObject* that)

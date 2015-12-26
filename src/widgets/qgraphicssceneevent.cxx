@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicssceneevent.h
 // dst-file: /src/widgets/qgraphicssceneevent.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicssceneevent.h>
 
 extern "C" {
+
+int QGraphicsSceneMoveEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneMoveEvent);
+}
 
 // ~QGraphicsSceneMoveEvent()
 void dedtor_ZN23QGraphicsSceneMoveEventD0Ev(QGraphicsSceneMoveEvent* that)
@@ -22,6 +27,11 @@ QGraphicsSceneMoveEvent* dector_ZN23QGraphicsSceneMoveEventC1Ev()
   // static_assert(sizeof(QGraphicsSceneMoveEvent) == 32, "tyszerr");
   QGraphicsSceneMoveEvent* rthis = new QGraphicsSceneMoveEvent();
   return rthis;
+}
+
+int QGraphicsSceneContextMenuEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneContextMenuEvent);
 }
 
 // ~QGraphicsSceneContextMenuEvent()
@@ -39,6 +49,11 @@ QGraphicsSceneContextMenuEvent* dector_ZN30QGraphicsSceneContextMenuEventC1EN6QE
   return rthis;
 }
 
+int QGraphicsSceneMouseEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneMouseEvent);
+}
+
 // QGraphicsSceneMouseEvent(enum QEvent::Type)
 QGraphicsSceneMouseEvent* dector_ZN24QGraphicsSceneMouseEventC1EN6QEvent4TypeE(QEvent::Type type)
 {
@@ -52,6 +67,11 @@ void dedtor_ZN24QGraphicsSceneMouseEventD0Ev(QGraphicsSceneMouseEvent* that)
 {
   QGraphicsSceneMouseEvent* rthis = (QGraphicsSceneMouseEvent*)that;
   delete rthis;
+}
+
+int QGraphicsSceneHelpEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneHelpEvent);
 }
 
 // ~QGraphicsSceneHelpEvent()
@@ -69,6 +89,11 @@ QGraphicsSceneHelpEvent* dector_ZN23QGraphicsSceneHelpEventC1EN6QEvent4TypeE(QEv
   return rthis;
 }
 
+int QGraphicsSceneHoverEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneHoverEvent);
+}
+
 // ~QGraphicsSceneHoverEvent()
 void dedtor_ZN24QGraphicsSceneHoverEventD0Ev(QGraphicsSceneHoverEvent* that)
 {
@@ -82,6 +107,11 @@ QGraphicsSceneHoverEvent* dector_ZN24QGraphicsSceneHoverEventC1EN6QEvent4TypeE(Q
   // static_assert(sizeof(QGraphicsSceneHoverEvent) == 32, "tyszerr");
   QGraphicsSceneHoverEvent* rthis = new QGraphicsSceneHoverEvent(type);
   return rthis;
+}
+
+int QGraphicsSceneWheelEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneWheelEvent);
 }
 
 // ~QGraphicsSceneWheelEvent()
@@ -99,6 +129,11 @@ QGraphicsSceneWheelEvent* dector_ZN24QGraphicsSceneWheelEventC1EN6QEvent4TypeE(Q
   return rthis;
 }
 
+int QGraphicsSceneDragDropEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneDragDropEvent);
+}
+
 // ~QGraphicsSceneDragDropEvent()
 void dedtor_ZN27QGraphicsSceneDragDropEventD0Ev(QGraphicsSceneDragDropEvent* that)
 {
@@ -114,6 +149,11 @@ QGraphicsSceneDragDropEvent* dector_ZN27QGraphicsSceneDragDropEventC1EN6QEvent4T
   return rthis;
 }
 
+int QGraphicsSceneEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneEvent);
+}
+
 // QGraphicsSceneEvent(enum QEvent::Type)
 QGraphicsSceneEvent* dector_ZN19QGraphicsSceneEventC1EN6QEvent4TypeE(QEvent::Type type)
 {
@@ -127,6 +167,11 @@ void dedtor_ZN19QGraphicsSceneEventD0Ev(QGraphicsSceneEvent* that)
 {
   QGraphicsSceneEvent* rthis = (QGraphicsSceneEvent*)that;
   delete rthis;
+}
+
+int QGraphicsSceneResizeEvent_Class_Size()
+{
+  return sizeof(QGraphicsSceneResizeEvent);
 }
 
 // ~QGraphicsSceneResizeEvent()

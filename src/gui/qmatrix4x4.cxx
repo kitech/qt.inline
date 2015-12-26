@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qmatrix4x4.h
 // dst-file: /src/gui/qmatrix4x4.cxx
 //
@@ -8,6 +8,11 @@
 #include <qmatrix4x4.h>
 
 extern "C" {
+
+int QMatrix4x4_Class_Size()
+{
+  return sizeof(QMatrix4x4);
+}
 
 // QMatrix4x4(const class QTransform &)
 QMatrix4x4* dector_ZN10QMatrix4x4C1ERK10QTransform(const QTransform & transform)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qeventtransition.h
 // dst-file: /src/core/qeventtransition.cxx
 //
@@ -8,6 +8,11 @@
 #include <qeventtransition.h>
 
 extern "C" {
+
+int QEventTransition_Class_Size()
+{
+  return sizeof(QEventTransition);
+}
 
 // QEventTransition(class QObject *, class QEvent::Type, class QState *)
 QEventTransition* dector_ZN16QEventTransitionC1EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState)

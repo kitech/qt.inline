@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qaccessiblebridge.h
 // dst-file: /src/gui/qaccessiblebridge.cxx
 //
@@ -8,6 +8,16 @@
 #include <qaccessiblebridge.h>
 
 extern "C" {
+
+int QAccessibleBridgePlugin_Class_Size()
+{
+  return sizeof(QAccessibleBridgePlugin);
+}
+
+int QAccessibleBridge_Class_Size()
+{
+  return sizeof(QAccessibleBridge);
+}
 
 }; // <= extern "C" block end
 

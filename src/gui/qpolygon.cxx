@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpolygon.h
 // dst-file: /src/gui/qpolygon.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpolygon.h>
 
 extern "C" {
+
+int QPolygon_Class_Size()
+{
+  return sizeof(QPolygon);
+}
 
 // QPolygon(int, const int *)
 QPolygon* dector_ZN8QPolygonC1EiPKi(int nPoints, const int * points)
@@ -46,6 +51,11 @@ QPolygon* _ZNK8QPolygon10translatedERK6QPoint(void *that, const QPoint & offset)
   QPolygon *cthat = (QPolygon *)that;
   auto recret = cthat->translated(offset);
   return new QPolygon(recret);
+}
+
+int QPolygonF_Class_Size()
+{
+  return sizeof(QPolygonF);
 }
 
 // QPolygonF(const class QPolygon &)

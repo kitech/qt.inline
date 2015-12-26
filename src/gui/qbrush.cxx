@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qbrush.h
 // dst-file: /src/gui/qbrush.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbrush.h>
 
 extern "C" {
+
+int QRadialGradient_Class_Size()
+{
+  return sizeof(QRadialGradient);
+}
 
 // QRadialGradient(qreal, qreal, qreal, qreal, qreal)
 QRadialGradient* dector_ZN15QRadialGradientC1Eddddd(double cx, double cy, double radius, double fx, double fy)
@@ -65,6 +70,11 @@ QRadialGradient* dector_ZN15QRadialGradientC1Eddd(double cx, double cy, double r
   return rthis;
 }
 
+int QConicalGradient_Class_Size()
+{
+  return sizeof(QConicalGradient);
+}
+
 // QConicalGradient(const class QPointF &, qreal)
 QConicalGradient* dector_ZN16QConicalGradientC1ERK7QPointFd(const QPointF & center, double startAngle)
 {
@@ -87,6 +97,11 @@ QConicalGradient* dector_ZN16QConicalGradientC1Ev()
   // static_assert(sizeof(QConicalGradient) == 32, "tyszerr");
   QConicalGradient* rthis = new QConicalGradient();
   return rthis;
+}
+
+int QBrush_Class_Size()
+{
+  return sizeof(QBrush);
 }
 
 // QBrush(Qt::GlobalColor, Qt::BrushStyle)
@@ -212,6 +227,11 @@ const QColor * _ZNK6QBrush5colorEv(void *that)
   return &cthat->color();
 }
 
+int QGradient_Class_Size()
+{
+  return sizeof(QGradient);
+}
+
 // QGradient()
 QGradient* dector_ZN9QGradientC1Ev()
 {
@@ -225,6 +245,16 @@ void _ZN9QGradient9setSpreadENS_6SpreadE(void *that, QGradient::Spread spread)
 {
   QGradient *cthat = (QGradient *)that;
    cthat->setSpread(spread);
+}
+
+int QBrushData_Class_Size()
+{
+  return sizeof(QBrushData);
+}
+
+int QLinearGradient_Class_Size()
+{
+  return sizeof(QLinearGradient);
 }
 
 // QLinearGradient(qreal, qreal, qreal, qreal)

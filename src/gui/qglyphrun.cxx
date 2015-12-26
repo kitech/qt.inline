@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qglyphrun.h
 // dst-file: /src/gui/qglyphrun.cxx
 //
@@ -8,6 +8,11 @@
 #include <qglyphrun.h>
 
 extern "C" {
+
+int QGlyphRun_Class_Size()
+{
+  return sizeof(QGlyphRun);
+}
 
 // ~QGlyphRun()
 void dedtor_ZN9QGlyphRunD0Ev(QGlyphRun* that)

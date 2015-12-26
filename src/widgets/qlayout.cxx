@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlayout.h
 // dst-file: /src/widgets/qlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlayout.h>
 
 extern "C" {
+
+int QLayout_Class_Size()
+{
+  return sizeof(QLayout);
+}
 
 }; // <= extern "C" block end
 

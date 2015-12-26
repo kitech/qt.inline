@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcoreapplication.h>
 
 extern "C" {
+
+int QCoreApplication_Class_Size()
+{
+  return sizeof(QCoreApplication);
+}
 
 // ~QCoreApplication()
 void dedtor_ZN16QCoreApplicationD0Ev(QCoreApplication* that)

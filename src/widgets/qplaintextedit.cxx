@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qplaintextedit.h
 // dst-file: /src/widgets/qplaintextedit.cxx
 //
@@ -8,6 +8,11 @@
 #include <qplaintextedit.h>
 
 extern "C" {
+
+int QPlainTextDocumentLayout_Class_Size()
+{
+  return sizeof(QPlainTextDocumentLayout);
+}
 
 // ~QPlainTextDocumentLayout()
 void dedtor_ZN24QPlainTextDocumentLayoutD0Ev(QPlainTextDocumentLayout* that)
@@ -22,6 +27,11 @@ QPlainTextDocumentLayout* dector_ZN24QPlainTextDocumentLayoutC1EP13QTextDocument
   // static_assert(sizeof(QPlainTextDocumentLayout) == 32, "tyszerr");
   QPlainTextDocumentLayout* rthis = new QPlainTextDocumentLayout(document);
   return rthis;
+}
+
+int QPlainTextEdit_Class_Size()
+{
+  return sizeof(QPlainTextEdit);
 }
 
 // QPlainTextEdit(const class QString &, class QWidget *)

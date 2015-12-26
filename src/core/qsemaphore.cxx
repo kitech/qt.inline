@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsemaphore.h
 // dst-file: /src/core/qsemaphore.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsemaphore.h>
 
 extern "C" {
+
+int QSemaphore_Class_Size()
+{
+  return sizeof(QSemaphore);
+}
 
 // QSemaphore(int)
 QSemaphore* dector_ZN10QSemaphoreC1Ei(int n)

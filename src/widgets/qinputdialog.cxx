@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qinputdialog.h
 // dst-file: /src/widgets/qinputdialog.cxx
 //
@@ -8,6 +8,11 @@
 #include <qinputdialog.h>
 
 extern "C" {
+
+int QInputDialog_Class_Size()
+{
+  return sizeof(QInputDialog);
+}
 
 // QInputDialog(class QWidget *, Qt::WindowFlags)
 QInputDialog* dector_ZN12QInputDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qgenericpluginfactory.h
 // dst-file: /src/gui/qgenericpluginfactory.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgenericpluginfactory.h>
 
 extern "C" {
+
+int QGenericPluginFactory_Class_Size()
+{
+  return sizeof(QGenericPluginFactory);
+}
 
 }; // <= extern "C" block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlistwidget.h
 // dst-file: /src/widgets/qlistwidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlistwidget.h>
 
 extern "C" {
+
+int QListWidgetItem_Class_Size()
+{
+  return sizeof(QListWidgetItem);
+}
 
 // ~QListWidgetItem()
 void dedtor_ZN15QListWidgetItemD0Ev(QListWidgetItem* that)
@@ -116,6 +121,11 @@ void _ZN15QListWidgetItem10setToolTipERK7QString(void *that, const QString & too
 {
   QListWidgetItem *cthat = (QListWidgetItem *)that;
    cthat->setToolTip(toolTip);
+}
+
+int QListWidget_Class_Size()
+{
+  return sizeof(QListWidget);
 }
 
 // QListWidget(class QWidget *)

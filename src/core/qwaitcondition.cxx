@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qwaitcondition.h
 // dst-file: /src/core/qwaitcondition.cxx
 //
@@ -8,6 +8,11 @@
 #include <qwaitcondition.h>
 
 extern "C" {
+
+int QWaitCondition_Class_Size()
+{
+  return sizeof(QWaitCondition);
+}
 
 // ~QWaitCondition()
 void dedtor_ZN14QWaitConditionD0Ev(QWaitCondition* that)

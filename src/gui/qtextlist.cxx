@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextlist.h>
 
 extern "C" {
+
+int QTextList_Class_Size()
+{
+  return sizeof(QTextList);
+}
 
 // ~QTextList()
 void dedtor_ZN9QTextListD0Ev(QTextList* that)

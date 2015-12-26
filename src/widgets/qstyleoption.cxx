@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstyleoption.h
 // dst-file: /src/widgets/qstyleoption.cxx
 //
@@ -9,6 +9,11 @@
 
 extern "C" {
 
+int QStyleOptionComboBox_Class_Size()
+{
+  return sizeof(QStyleOptionComboBox);
+}
+
 // QStyleOptionComboBox()
 QStyleOptionComboBox* dector_ZN20QStyleOptionComboBoxC1Ev()
 {
@@ -17,12 +22,22 @@ QStyleOptionComboBox* dector_ZN20QStyleOptionComboBoxC1Ev()
   return rthis;
 }
 
+int QStyleOptionMenuItem_Class_Size()
+{
+  return sizeof(QStyleOptionMenuItem);
+}
+
 // QStyleOptionMenuItem()
 QStyleOptionMenuItem* dector_ZN20QStyleOptionMenuItemC1Ev()
 {
   // static_assert(sizeof(QStyleOptionMenuItem) == 32, "tyszerr");
   QStyleOptionMenuItem* rthis = new QStyleOptionMenuItem();
   return rthis;
+}
+
+int QStyleHintReturnVariant_Class_Size()
+{
+  return sizeof(QStyleHintReturnVariant);
 }
 
 // ~QStyleHintReturnVariant()
@@ -40,6 +55,11 @@ QStyleHintReturnVariant* dector_ZN23QStyleHintReturnVariantC1Ev()
   return rthis;
 }
 
+int QStyleOptionTitleBar_Class_Size()
+{
+  return sizeof(QStyleOptionTitleBar);
+}
+
 // QStyleOptionTitleBar()
 QStyleOptionTitleBar* dector_ZN20QStyleOptionTitleBarC1Ev()
 {
@@ -48,12 +68,22 @@ QStyleOptionTitleBar* dector_ZN20QStyleOptionTitleBarC1Ev()
   return rthis;
 }
 
+int QStyleOptionGraphicsItem_Class_Size()
+{
+  return sizeof(QStyleOptionGraphicsItem);
+}
+
 // QStyleOptionGraphicsItem()
 QStyleOptionGraphicsItem* dector_ZN24QStyleOptionGraphicsItemC1Ev()
 {
   // static_assert(sizeof(QStyleOptionGraphicsItem) == 32, "tyszerr");
   QStyleOptionGraphicsItem* rthis = new QStyleOptionGraphicsItem();
   return rthis;
+}
+
+int QStyleOption_Class_Size()
+{
+  return sizeof(QStyleOption);
 }
 
 // QStyleOption(const class QStyleOption &)
@@ -79,12 +109,22 @@ QStyleOption* dector_ZN12QStyleOptionC1Eii(int version, int type)
   return rthis;
 }
 
+int QStyleOptionDockWidget_Class_Size()
+{
+  return sizeof(QStyleOptionDockWidget);
+}
+
 // QStyleOptionDockWidget()
 QStyleOptionDockWidget* dector_ZN22QStyleOptionDockWidgetC1Ev()
 {
   // static_assert(sizeof(QStyleOptionDockWidget) == 32, "tyszerr");
   QStyleOptionDockWidget* rthis = new QStyleOptionDockWidget();
   return rthis;
+}
+
+int QStyleOptionProgressBar_Class_Size()
+{
+  return sizeof(QStyleOptionProgressBar);
 }
 
 // QStyleOptionProgressBar()
@@ -95,12 +135,22 @@ QStyleOptionProgressBar* dector_ZN23QStyleOptionProgressBarC1Ev()
   return rthis;
 }
 
+int QStyleOptionSlider_Class_Size()
+{
+  return sizeof(QStyleOptionSlider);
+}
+
 // QStyleOptionSlider()
 QStyleOptionSlider* dector_ZN18QStyleOptionSliderC1Ev()
 {
   // static_assert(sizeof(QStyleOptionSlider) == 32, "tyszerr");
   QStyleOptionSlider* rthis = new QStyleOptionSlider();
   return rthis;
+}
+
+int QStyleOptionFrame_Class_Size()
+{
+  return sizeof(QStyleOptionFrame);
 }
 
 // QStyleOptionFrame()
@@ -111,12 +161,22 @@ QStyleOptionFrame* dector_ZN17QStyleOptionFrameC1Ev()
   return rthis;
 }
 
+int QStyleOptionComplex_Class_Size()
+{
+  return sizeof(QStyleOptionComplex);
+}
+
 // QStyleOptionComplex(int, int)
 QStyleOptionComplex* dector_ZN19QStyleOptionComplexC1Eii(int version, int type)
 {
   // static_assert(sizeof(QStyleOptionComplex) == 32, "tyszerr");
   QStyleOptionComplex* rthis = new QStyleOptionComplex(version, type);
   return rthis;
+}
+
+int QStyleHintReturn_Class_Size()
+{
+  return sizeof(QStyleHintReturn);
 }
 
 // ~QStyleHintReturn()
@@ -134,12 +194,22 @@ QStyleHintReturn* dector_ZN16QStyleHintReturnC1Eii(int version, int type)
   return rthis;
 }
 
+int QStyleOptionHeader_Class_Size()
+{
+  return sizeof(QStyleOptionHeader);
+}
+
 // QStyleOptionHeader()
 QStyleOptionHeader* dector_ZN18QStyleOptionHeaderC1Ev()
 {
   // static_assert(sizeof(QStyleOptionHeader) == 32, "tyszerr");
   QStyleOptionHeader* rthis = new QStyleOptionHeader();
   return rthis;
+}
+
+int QStyleOptionToolBox_Class_Size()
+{
+  return sizeof(QStyleOptionToolBox);
 }
 
 // QStyleOptionToolBox()
@@ -150,12 +220,22 @@ QStyleOptionToolBox* dector_ZN19QStyleOptionToolBoxC1Ev()
   return rthis;
 }
 
+int QStyleOptionFocusRect_Class_Size()
+{
+  return sizeof(QStyleOptionFocusRect);
+}
+
 // QStyleOptionFocusRect()
 QStyleOptionFocusRect* dector_ZN21QStyleOptionFocusRectC1Ev()
 {
   // static_assert(sizeof(QStyleOptionFocusRect) == 32, "tyszerr");
   QStyleOptionFocusRect* rthis = new QStyleOptionFocusRect();
   return rthis;
+}
+
+int QStyleOptionGroupBox_Class_Size()
+{
+  return sizeof(QStyleOptionGroupBox);
 }
 
 // QStyleOptionGroupBox()
@@ -166,12 +246,22 @@ QStyleOptionGroupBox* dector_ZN20QStyleOptionGroupBoxC1Ev()
   return rthis;
 }
 
+int QStyleOptionTab_Class_Size()
+{
+  return sizeof(QStyleOptionTab);
+}
+
 // QStyleOptionTab()
 QStyleOptionTab* dector_ZN15QStyleOptionTabC1Ev()
 {
   // static_assert(sizeof(QStyleOptionTab) == 32, "tyszerr");
   QStyleOptionTab* rthis = new QStyleOptionTab();
   return rthis;
+}
+
+int QStyleOptionTabBarBase_Class_Size()
+{
+  return sizeof(QStyleOptionTabBarBase);
 }
 
 // QStyleOptionTabBarBase()
@@ -182,6 +272,11 @@ QStyleOptionTabBarBase* dector_ZN22QStyleOptionTabBarBaseC1Ev()
   return rthis;
 }
 
+int QStyleOptionRubberBand_Class_Size()
+{
+  return sizeof(QStyleOptionRubberBand);
+}
+
 // QStyleOptionRubberBand()
 QStyleOptionRubberBand* dector_ZN22QStyleOptionRubberBandC1Ev()
 {
@@ -190,12 +285,22 @@ QStyleOptionRubberBand* dector_ZN22QStyleOptionRubberBandC1Ev()
   return rthis;
 }
 
+int QStyleOptionButton_Class_Size()
+{
+  return sizeof(QStyleOptionButton);
+}
+
 // QStyleOptionButton()
 QStyleOptionButton* dector_ZN18QStyleOptionButtonC1Ev()
 {
   // static_assert(sizeof(QStyleOptionButton) == 32, "tyszerr");
   QStyleOptionButton* rthis = new QStyleOptionButton();
   return rthis;
+}
+
+int QStyleHintReturnMask_Class_Size()
+{
+  return sizeof(QStyleHintReturnMask);
 }
 
 // QStyleHintReturnMask()
@@ -213,12 +318,22 @@ void dedtor_ZN20QStyleHintReturnMaskD0Ev(QStyleHintReturnMask* that)
   delete rthis;
 }
 
+int QStyleOptionToolButton_Class_Size()
+{
+  return sizeof(QStyleOptionToolButton);
+}
+
 // QStyleOptionToolButton()
 QStyleOptionToolButton* dector_ZN22QStyleOptionToolButtonC1Ev()
 {
   // static_assert(sizeof(QStyleOptionToolButton) == 32, "tyszerr");
   QStyleOptionToolButton* rthis = new QStyleOptionToolButton();
   return rthis;
+}
+
+int QStyleOptionSizeGrip_Class_Size()
+{
+  return sizeof(QStyleOptionSizeGrip);
 }
 
 // QStyleOptionSizeGrip()
@@ -229,12 +344,22 @@ QStyleOptionSizeGrip* dector_ZN20QStyleOptionSizeGripC1Ev()
   return rthis;
 }
 
+int QStyleOptionViewItem_Class_Size()
+{
+  return sizeof(QStyleOptionViewItem);
+}
+
 // QStyleOptionViewItem()
 QStyleOptionViewItem* dector_ZN20QStyleOptionViewItemC1Ev()
 {
   // static_assert(sizeof(QStyleOptionViewItem) == 32, "tyszerr");
   QStyleOptionViewItem* rthis = new QStyleOptionViewItem();
   return rthis;
+}
+
+int QStyleOptionSpinBox_Class_Size()
+{
+  return sizeof(QStyleOptionSpinBox);
 }
 
 // QStyleOptionSpinBox()
@@ -245,12 +370,22 @@ QStyleOptionSpinBox* dector_ZN19QStyleOptionSpinBoxC1Ev()
   return rthis;
 }
 
+int QStyleOptionToolBar_Class_Size()
+{
+  return sizeof(QStyleOptionToolBar);
+}
+
 // QStyleOptionToolBar()
 QStyleOptionToolBar* dector_ZN19QStyleOptionToolBarC1Ev()
 {
   // static_assert(sizeof(QStyleOptionToolBar) == 32, "tyszerr");
   QStyleOptionToolBar* rthis = new QStyleOptionToolBar();
   return rthis;
+}
+
+int QStyleOptionTabWidgetFrame_Class_Size()
+{
+  return sizeof(QStyleOptionTabWidgetFrame);
 }
 
 // QStyleOptionTabWidgetFrame()

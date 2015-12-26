@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qobjectcleanuphandler.h
 // dst-file: /src/core/qobjectcleanuphandler.cxx
 //
@@ -8,6 +8,11 @@
 #include <qobjectcleanuphandler.h>
 
 extern "C" {
+
+int QObjectCleanupHandler_Class_Size()
+{
+  return sizeof(QObjectCleanupHandler);
+}
 
 // ~QObjectCleanupHandler()
 void dedtor_ZN21QObjectCleanupHandlerD0Ev(QObjectCleanupHandler* that)

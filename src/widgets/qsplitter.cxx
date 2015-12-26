@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qsplitter.h
 // dst-file: /src/widgets/qsplitter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsplitter.h>
 
 extern "C" {
+
+int QSplitter_Class_Size()
+{
+  return sizeof(QSplitter);
+}
 
 // QSplitter(class QWidget *)
 QSplitter* dector_ZN9QSplitterC1EP7QWidget(QWidget * parent)
@@ -30,6 +35,11 @@ void dedtor_ZN9QSplitterD0Ev(QSplitter* that)
 {
   QSplitter* rthis = (QSplitter*)that;
   delete rthis;
+}
+
+int QSplitterHandle_Class_Size()
+{
+  return sizeof(QSplitterHandle);
 }
 
 // QSplitterHandle(Qt::Orientation, class QSplitter *)

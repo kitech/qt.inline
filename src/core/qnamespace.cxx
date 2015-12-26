@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qnamespace.h
 // dst-file: /src/core/qnamespace.cxx
 //
@@ -8,6 +8,11 @@
 #include <qnamespace.h>
 
 extern "C" {
+
+int QInternal_Class_Size()
+{
+  return sizeof(QInternal);
+}
 
 }; // <= extern "C" block end
 

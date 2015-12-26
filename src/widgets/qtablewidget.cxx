@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtablewidget.h
 // dst-file: /src/widgets/qtablewidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtablewidget.h>
 
 extern "C" {
+
+int QTableWidgetSelectionRange_Class_Size()
+{
+  return sizeof(QTableWidgetSelectionRange);
+}
 
 // QTableWidgetSelectionRange(int, int, int, int)
 QTableWidgetSelectionRange* dector_ZN26QTableWidgetSelectionRangeC1Eiiii(int top, int left, int bottom, int right)
@@ -38,6 +43,11 @@ void dedtor_ZN26QTableWidgetSelectionRangeD0Ev(QTableWidgetSelectionRange* that)
 {
   QTableWidgetSelectionRange* rthis = (QTableWidgetSelectionRange*)that;
   delete rthis;
+}
+
+int QTableWidget_Class_Size()
+{
+  return sizeof(QTableWidget);
 }
 
 // ~QTableWidget()
@@ -75,6 +85,11 @@ QTableWidgetItem * _ZNK12QTableWidget6itemAtEii(void *that, int x, int y)
 {
   QTableWidget *cthat = (QTableWidget *)that;
   return cthat->itemAt(x, y);
+}
+
+int QTableWidgetItem_Class_Size()
+{
+  return sizeof(QTableWidgetItem);
 }
 
 // ~QTableWidgetItem()

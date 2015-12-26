@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qboxlayout.h>
 
 extern "C" {
+
+int QHBoxLayout_Class_Size()
+{
+  return sizeof(QHBoxLayout);
+}
 
 // QHBoxLayout(class QWidget *)
 QHBoxLayout* dector_ZN11QHBoxLayoutC1EP7QWidget(QWidget * parent)
@@ -32,6 +37,11 @@ QHBoxLayout* dector_ZN11QHBoxLayoutC1Ev()
   return rthis;
 }
 
+int QBoxLayout_Class_Size()
+{
+  return sizeof(QBoxLayout);
+}
+
 // ~QBoxLayout()
 void dedtor_ZN10QBoxLayoutD0Ev(QBoxLayout* that)
 {
@@ -45,6 +55,11 @@ QBoxLayout* dector_ZN10QBoxLayoutC1ENS_9DirectionEP7QWidget(QBoxLayout::Directio
   // static_assert(sizeof(QBoxLayout) == 32, "tyszerr");
   QBoxLayout* rthis = new QBoxLayout(arg1, parent);
   return rthis;
+}
+
+int QVBoxLayout_Class_Size()
+{
+  return sizeof(QVBoxLayout);
 }
 
 // QVBoxLayout()

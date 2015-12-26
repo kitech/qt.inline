@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpdfwriter.h
 // dst-file: /src/gui/qpdfwriter.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpdfwriter.h>
 
 extern "C" {
+
+int QPdfWriter_Class_Size()
+{
+  return sizeof(QPdfWriter);
+}
 
 // ~QPdfWriter()
 void dedtor_ZN10QPdfWriterD0Ev(QPdfWriter* that)

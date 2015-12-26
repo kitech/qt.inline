@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qdatawidgetmapper.h
 // dst-file: /src/widgets/qdatawidgetmapper.cxx
 //
@@ -8,6 +8,11 @@
 #include <qdatawidgetmapper.h>
 
 extern "C" {
+
+int QDataWidgetMapper_Class_Size()
+{
+  return sizeof(QDataWidgetMapper);
+}
 
 // ~QDataWidgetMapper()
 void dedtor_ZN17QDataWidgetMapperD0Ev(QDataWidgetMapper* that)

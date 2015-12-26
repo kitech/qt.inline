@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qkeysequence.h
 // dst-file: /src/gui/qkeysequence.cxx
 //
@@ -8,6 +8,11 @@
 #include <qkeysequence.h>
 
 extern "C" {
+
+int QKeySequence_Class_Size()
+{
+  return sizeof(QKeySequence);
+}
 
 // QKeySequence(const class QKeySequence &)
 QKeySequence* dector_ZN12QKeySequenceC1ERKS_(const QKeySequence & ks)

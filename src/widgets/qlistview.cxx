@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qlistview.h
 // dst-file: /src/widgets/qlistview.cxx
 //
@@ -8,6 +8,11 @@
 #include <qlistview.h>
 
 extern "C" {
+
+int QListView_Class_Size()
+{
+  return sizeof(QListView);
+}
 
 // QListView(class QWidget *)
 QListView* dector_ZN9QListViewC1EP7QWidget(QWidget * parent)

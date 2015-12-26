@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qfilesystemmodel.h
 // dst-file: /src/widgets/qfilesystemmodel.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfilesystemmodel.h>
 
 extern "C" {
+
+int QFileSystemModel_Class_Size()
+{
+  return sizeof(QFileSystemModel);
+}
 
 // ~QFileSystemModel()
 void dedtor_ZN16QFileSystemModelD0Ev(QFileSystemModel* that)

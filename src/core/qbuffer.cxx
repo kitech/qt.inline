@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbuffer.h>
 
 extern "C" {
+
+int QBuffer_Class_Size()
+{
+  return sizeof(QBuffer);
+}
 
 // ~QBuffer()
 void dedtor_ZN7QBufferD0Ev(QBuffer* that)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qmap.h
 // dst-file: /src/core/qmap.cxx
 //
@@ -8,6 +8,16 @@
 #include <qmap.h>
 
 extern "C" {
+
+int QMapDataBase_Class_Size()
+{
+  return sizeof(QMapDataBase);
+}
+
+int QMapNodeBase_Class_Size()
+{
+  return sizeof(QMapNodeBase);
+}
 
 }; // <= extern "C" block end
 

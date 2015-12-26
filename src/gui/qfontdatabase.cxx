@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qfontdatabase.h
 // dst-file: /src/gui/qfontdatabase.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfontdatabase.h>
 
 extern "C" {
+
+int QFontDatabase_Class_Size()
+{
+  return sizeof(QFontDatabase);
+}
 
 // QFontDatabase()
 QFontDatabase* dector_ZN13QFontDatabaseC1Ev()

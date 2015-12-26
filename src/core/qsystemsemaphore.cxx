@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qsystemsemaphore.h
 // dst-file: /src/core/qsystemsemaphore.cxx
 //
@@ -8,6 +8,11 @@
 #include <qsystemsemaphore.h>
 
 extern "C" {
+
+int QSystemSemaphore_Class_Size()
+{
+  return sizeof(QSystemSemaphore);
+}
 
 // QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
 QSystemSemaphore* dector_ZN16QSystemSemaphoreC1ERK7QStringiNS_10AccessModeE(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode)

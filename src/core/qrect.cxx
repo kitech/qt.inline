@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qrect.h
 // dst-file: /src/core/qrect.cxx
 //
@@ -8,6 +8,11 @@
 #include <qrect.h>
 
 extern "C" {
+
+int QRect_Class_Size()
+{
+  return sizeof(QRect);
+}
 
 // QRect(const class QPoint &, const class QPoint &)
 QRect* dector_ZN5QRectC1ERK6QPointS2_(const QPoint & topleft, const QPoint & bottomright)
@@ -278,6 +283,11 @@ void _ZN5QRect8moveLeftEi(void *that, int pos)
 {
   QRect *cthat = (QRect *)that;
    cthat->moveLeft(pos);
+}
+
+int QRectF_Class_Size()
+{
+  return sizeof(QRectF);
 }
 
 // QRectF(const class QPointF &, const class QSizeF &)

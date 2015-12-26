@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qeasingcurve.h
 // dst-file: /src/core/qeasingcurve.cxx
 //
@@ -8,6 +8,11 @@
 #include <qeasingcurve.h>
 
 extern "C" {
+
+int QEasingCurve_Class_Size()
+{
+  return sizeof(QEasingCurve);
+}
 
 // QEasingCurve(enum QEasingCurve::Type)
 QEasingCurve* dector_ZN12QEasingCurveC1ENS_4TypeE(QEasingCurve::Type type)

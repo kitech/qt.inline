@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -8,6 +8,11 @@
 #include <qshortcut.h>
 
 extern "C" {
+
+int QShortcut_Class_Size()
+{
+  return sizeof(QShortcut);
+}
 
 // QShortcut(const class QKeySequence &, class QWidget *, const char *, const char *, Qt::ShortcutContext)
 QShortcut* dector_ZN9QShortcutC1ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutContextE(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context)

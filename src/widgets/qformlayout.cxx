@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qformlayout.h
 // dst-file: /src/widgets/qformlayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qformlayout.h>
 
 extern "C" {
+
+int QFormLayout_Class_Size()
+{
+  return sizeof(QFormLayout);
+}
 
 // QFormLayout(class QWidget *)
 QFormLayout* dector_ZN11QFormLayoutC1EP7QWidget(QWidget * parent)

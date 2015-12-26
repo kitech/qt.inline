@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qcursor.h
 // dst-file: /src/gui/qcursor.cxx
 //
@@ -8,6 +8,11 @@
 #include <qcursor.h>
 
 extern "C" {
+
+int QCursor_Class_Size()
+{
+  return sizeof(QCursor);
+}
 
 // QCursor(const class QBitmap &, const class QBitmap &, int, int)
 QCursor* dector_ZN7QCursorC1ERK7QBitmapS2_ii(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY)

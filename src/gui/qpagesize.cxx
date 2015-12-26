@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpagesize.h
 // dst-file: /src/gui/qpagesize.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpagesize.h>
 
 extern "C" {
+
+int QPageSize_Class_Size()
+{
+  return sizeof(QPageSize);
+}
 
 // QPageSize()
 QPageSize* dector_ZN9QPageSizeC1Ev()

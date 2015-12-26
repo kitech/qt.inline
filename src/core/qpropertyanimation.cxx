@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qpropertyanimation.h
 // dst-file: /src/core/qpropertyanimation.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpropertyanimation.h>
 
 extern "C" {
+
+int QPropertyAnimation_Class_Size()
+{
+  return sizeof(QPropertyAnimation);
+}
 
 // QPropertyAnimation(class QObject *)
 QPropertyAnimation* dector_ZN18QPropertyAnimationC1EP7QObject(QObject * parent)

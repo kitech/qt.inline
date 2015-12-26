@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qobjectdefs.h
 // dst-file: /src/core/qobjectdefs.cxx
 //
@@ -8,6 +8,11 @@
 #include <qobjectdefs.h>
 
 extern "C" {
+
+int Connection_Class_Size()
+{
+  return sizeof(QMetaObject::Connection);
+}
 
 // ~Connection()
 void dedtor_ZN11QMetaObject10ConnectionD0Ev(QMetaObject::Connection* that)
@@ -30,6 +35,21 @@ QMetaObject::Connection* dector_ZN11QMetaObject10ConnectionC1Ev()
   // static_assert(sizeof(Connection) == 32, "tyszerr");
   QMetaObject::Connection* rthis = new QMetaObject::Connection();
   return rthis;
+}
+
+int QGenericReturnArgument_Class_Size()
+{
+  return sizeof(QGenericReturnArgument);
+}
+
+int QMetaObject_Class_Size()
+{
+  return sizeof(QMetaObject);
+}
+
+int QGenericArgument_Class_Size()
+{
+  return sizeof(QGenericArgument);
 }
 
 }; // <= extern "C" block end

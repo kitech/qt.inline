@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qfutureinterface.h
 // dst-file: /src/core/qfutureinterface.cxx
 //
@@ -8,6 +8,11 @@
 #include <qfutureinterface.h>
 
 extern "C" {
+
+int QFutureInterfaceBase_Class_Size()
+{
+  return sizeof(QFutureInterfaceBase);
+}
 
 // ~QFutureInterfaceBase()
 void dedtor_ZN20QFutureInterfaceBaseD0Ev(QFutureInterfaceBase* that)

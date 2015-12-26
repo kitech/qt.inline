@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qprocess.h
 // dst-file: /src/core/qprocess.cxx
 //
@@ -8,6 +8,11 @@
 #include <qprocess.h>
 
 extern "C" {
+
+int QProcess_Class_Size()
+{
+  return sizeof(QProcess);
+}
 
 // ~QProcess()
 void dedtor_ZN8QProcessD0Ev(QProcess* that)
@@ -22,6 +27,11 @@ QProcess* dector_ZN8QProcessC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QProcess) == 32, "tyszerr");
   QProcess* rthis = new QProcess(parent);
   return rthis;
+}
+
+int QProcessEnvironment_Class_Size()
+{
+  return sizeof(QProcessEnvironment);
 }
 
 // ~QProcessEnvironment()

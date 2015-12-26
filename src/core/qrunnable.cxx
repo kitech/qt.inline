@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qrunnable.h
 // dst-file: /src/core/qrunnable.cxx
 //
@@ -8,6 +8,11 @@
 #include <qrunnable.h>
 
 extern "C" {
+
+int QRunnable_Class_Size()
+{
+  return sizeof(QRunnable);
+}
 
 }; // <= extern "C" block end
 

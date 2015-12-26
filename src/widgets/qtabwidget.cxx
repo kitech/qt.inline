@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtabwidget.h
 // dst-file: /src/widgets/qtabwidget.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtabwidget.h>
 
 extern "C" {
+
+int QTabWidget_Class_Size()
+{
+  return sizeof(QTabWidget);
+}
 
 // QTabWidget(class QWidget *)
 QTabWidget* dector_ZN10QTabWidgetC1EP7QWidget(QWidget * parent)

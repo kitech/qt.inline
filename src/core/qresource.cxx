@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qresource.h
 // dst-file: /src/core/qresource.cxx
 //
@@ -8,6 +8,11 @@
 #include <qresource.h>
 
 extern "C" {
+
+int QResource_Class_Size()
+{
+  return sizeof(QResource);
+}
 
 // QResource(const class QString &, const class QLocale &)
 QResource* dector_ZN9QResourceC1ERK7QStringRK7QLocale(const QString & file, const QLocale & locale)

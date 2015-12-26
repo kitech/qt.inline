@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qscroller.h
 // dst-file: /src/widgets/qscroller.cxx
 //
@@ -8,6 +8,11 @@
 #include <qscroller.h>
 
 extern "C" {
+
+int QScroller_Class_Size()
+{
+  return sizeof(QScroller);
+}
 
 }; // <= extern "C" block end
 

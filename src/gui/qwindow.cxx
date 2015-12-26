@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qwindow.h
 // dst-file: /src/gui/qwindow.cxx
 //
@@ -8,6 +8,11 @@
 #include <qwindow.h>
 
 extern "C" {
+
+int QWindow_Class_Size()
+{
+  return sizeof(QWindow);
+}
 
 // ~QWindow()
 void dedtor_ZN7QWindowD0Ev(QWindow* that)

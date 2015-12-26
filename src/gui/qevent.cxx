@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qevent.h
 // dst-file: /src/gui/qevent.cxx
 //
@@ -8,6 +8,11 @@
 #include <qevent.h>
 
 extern "C" {
+
+int QWhatsThisClickedEvent_Class_Size()
+{
+  return sizeof(QWhatsThisClickedEvent);
+}
 
 // ~QWhatsThisClickedEvent()
 void dedtor_ZN22QWhatsThisClickedEventD0Ev(QWhatsThisClickedEvent* that)
@@ -24,6 +29,11 @@ QWhatsThisClickedEvent* dector_ZN22QWhatsThisClickedEventC1ERK7QString(const QSt
   return rthis;
 }
 
+int QExposeEvent_Class_Size()
+{
+  return sizeof(QExposeEvent);
+}
+
 // QExposeEvent(const class QRegion &)
 QExposeEvent* dector_ZN12QExposeEventC1ERK7QRegion(const QRegion & rgn)
 {
@@ -37,6 +47,11 @@ void dedtor_ZN12QExposeEventD0Ev(QExposeEvent* that)
 {
   QExposeEvent* rthis = (QExposeEvent*)that;
   delete rthis;
+}
+
+int QInputMethodEvent_Class_Size()
+{
+  return sizeof(QInputMethodEvent);
 }
 
 // QInputMethodEvent(const class QString &, const QList<class QInputMethodEvent::Attribute> &)
@@ -63,6 +78,11 @@ QInputMethodEvent* dector_ZN17QInputMethodEventC1Ev()
   return rthis;
 }
 
+int QHelpEvent_Class_Size()
+{
+  return sizeof(QHelpEvent);
+}
+
 // ~QHelpEvent()
 void dedtor_ZN10QHelpEventD0Ev(QHelpEvent* that)
 {
@@ -78,6 +98,11 @@ QHelpEvent* dector_ZN10QHelpEventC1EN6QEvent4TypeERK6QPointS4_(QEvent::Type type
   return rthis;
 }
 
+int QActionEvent_Class_Size()
+{
+  return sizeof(QActionEvent);
+}
+
 // QActionEvent(int, class QAction *, class QAction *)
 QActionEvent* dector_ZN12QActionEventC1EiP7QActionS1_(int type, QAction * action, QAction * before)
 {
@@ -91,6 +116,11 @@ void dedtor_ZN12QActionEventD0Ev(QActionEvent* that)
 {
   QActionEvent* rthis = (QActionEvent*)that;
   delete rthis;
+}
+
+int QMouseEvent_Class_Size()
+{
+  return sizeof(QMouseEvent);
 }
 
 // QMouseEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
@@ -124,6 +154,11 @@ QMouseEvent* dector_ZN11QMouseEventC1EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseB
   return rthis;
 }
 
+int QFileOpenEvent_Class_Size()
+{
+  return sizeof(QFileOpenEvent);
+}
+
 // QFileOpenEvent(const class QString &)
 QFileOpenEvent* dector_ZN14QFileOpenEventC1ERK7QString(const QString & file)
 {
@@ -147,6 +182,11 @@ void dedtor_ZN14QFileOpenEventD0Ev(QFileOpenEvent* that)
   delete rthis;
 }
 
+int QToolBarChangeEvent_Class_Size()
+{
+  return sizeof(QToolBarChangeEvent);
+}
+
 // QToolBarChangeEvent(_Bool)
 QToolBarChangeEvent* dector_ZN19QToolBarChangeEventC1Eb(bool t)
 {
@@ -160,6 +200,11 @@ void dedtor_ZN19QToolBarChangeEventD0Ev(QToolBarChangeEvent* that)
 {
   QToolBarChangeEvent* rthis = (QToolBarChangeEvent*)that;
   delete rthis;
+}
+
+int QTabletEvent_Class_Size()
+{
+  return sizeof(QTabletEvent);
 }
 
 // ~QTabletEvent()
@@ -185,6 +230,11 @@ QTabletEvent* dector_ZN12QTabletEventC1EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFla
   return rthis;
 }
 
+int QTouchEvent_Class_Size()
+{
+  return sizeof(QTouchEvent);
+}
+
 // QTouchEvent(class QEvent::Type, class QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<class QTouchEvent::TouchPoint> &)
 QTouchEvent* dector_ZN11QTouchEventC1EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardModifierEES4_INS5_15TouchPointStateEERK5QListINS_10TouchPointEE(QEvent::Type eventType, QTouchDevice * device, Qt::KeyboardModifiers modifiers, Qt::TouchPointStates touchPointStates, const QList<QTouchEvent::TouchPoint> & touchPoints)
 {
@@ -198,6 +248,11 @@ void dedtor_ZN11QTouchEventD0Ev(QTouchEvent* that)
 {
   QTouchEvent* rthis = (QTouchEvent*)that;
   delete rthis;
+}
+
+int QScreenOrientationChangeEvent_Class_Size()
+{
+  return sizeof(QScreenOrientationChangeEvent);
 }
 
 // ~QScreenOrientationChangeEvent()
@@ -215,6 +270,11 @@ QScreenOrientationChangeEvent* dector_ZN29QScreenOrientationChangeEventC1EP7QScr
   return rthis;
 }
 
+int QIconDragEvent_Class_Size()
+{
+  return sizeof(QIconDragEvent);
+}
+
 // ~QIconDragEvent()
 void dedtor_ZN14QIconDragEventD0Ev(QIconDragEvent* that)
 {
@@ -228,6 +288,11 @@ QIconDragEvent* dector_ZN14QIconDragEventC1Ev()
   // static_assert(sizeof(QIconDragEvent) == 32, "tyszerr");
   QIconDragEvent* rthis = new QIconDragEvent();
   return rthis;
+}
+
+int QCloseEvent_Class_Size()
+{
+  return sizeof(QCloseEvent);
 }
 
 // ~QCloseEvent()
@@ -245,6 +310,11 @@ QCloseEvent* dector_ZN11QCloseEventC1Ev()
   return rthis;
 }
 
+int QDragEnterEvent_Class_Size()
+{
+  return sizeof(QDragEnterEvent);
+}
+
 // ~QDragEnterEvent()
 void dedtor_ZN15QDragEnterEventD0Ev(QDragEnterEvent* that)
 {
@@ -258,6 +328,11 @@ QDragEnterEvent* dector_ZN15QDragEnterEventC1ERK6QPoint6QFlagsIN2Qt10DropActionE
   // static_assert(sizeof(QDragEnterEvent) == 32, "tyszerr");
   QDragEnterEvent* rthis = new QDragEnterEvent(pos, actions, data, buttons, modifiers);
   return rthis;
+}
+
+int QWheelEvent_Class_Size()
+{
+  return sizeof(QWheelEvent);
 }
 
 // QWheelEvent(const class QPointF &, const class QPointF &, class QPoint, class QPoint, int, Qt::Orientation, Qt::MouseButtons, Qt::KeyboardModifiers)
@@ -307,6 +382,11 @@ QWheelEvent* dector_ZN11QWheelEventC1ERK7QPointFS2_6QPointS3_iN2Qt11OrientationE
   return rthis;
 }
 
+int QScrollEvent_Class_Size()
+{
+  return sizeof(QScrollEvent);
+}
+
 // ~QScrollEvent()
 void dedtor_ZN12QScrollEventD0Ev(QScrollEvent* that)
 {
@@ -320,6 +400,11 @@ QScrollEvent* dector_ZN12QScrollEventC1ERK7QPointFS2_NS_11ScrollStateE(const QPo
   // static_assert(sizeof(QScrollEvent) == 64, "tyszerr");
   QScrollEvent* rthis = new QScrollEvent(contentPos, overshoot, scrollState);
   return rthis;
+}
+
+int QHoverEvent_Class_Size()
+{
+  return sizeof(QHoverEvent);
 }
 
 // QHoverEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::KeyboardModifiers)
@@ -337,6 +422,11 @@ void dedtor_ZN11QHoverEventD0Ev(QHoverEvent* that)
   delete rthis;
 }
 
+int QDragMoveEvent_Class_Size()
+{
+  return sizeof(QDragMoveEvent);
+}
+
 // QDragMoveEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
 QDragMoveEvent* dector_ZN14QDragMoveEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(const QPoint & pos, Qt::DropActions actions, const QMimeData * data, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers, QEvent::Type type)
 {
@@ -350,6 +440,11 @@ void dedtor_ZN14QDragMoveEventD0Ev(QDragMoveEvent* that)
 {
   QDragMoveEvent* rthis = (QDragMoveEvent*)that;
   delete rthis;
+}
+
+int QShowEvent_Class_Size()
+{
+  return sizeof(QShowEvent);
 }
 
 // ~QShowEvent()
@@ -367,6 +462,11 @@ QShowEvent* dector_ZN10QShowEventC1Ev()
   return rthis;
 }
 
+int QPlatformSurfaceEvent_Class_Size()
+{
+  return sizeof(QPlatformSurfaceEvent);
+}
+
 // QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
 QPlatformSurfaceEvent* dector_ZN21QPlatformSurfaceEventC1ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType)
 {
@@ -380,6 +480,11 @@ void dedtor_ZN21QPlatformSurfaceEventD0Ev(QPlatformSurfaceEvent* that)
 {
   QPlatformSurfaceEvent* rthis = (QPlatformSurfaceEvent*)that;
   delete rthis;
+}
+
+int QPaintEvent_Class_Size()
+{
+  return sizeof(QPaintEvent);
 }
 
 // ~QPaintEvent()
@@ -405,6 +510,11 @@ QPaintEvent* dector_ZN11QPaintEventC1ERK7QRegion(const QRegion & paintRegion)
   return rthis;
 }
 
+int QFocusEvent_Class_Size()
+{
+  return sizeof(QFocusEvent);
+}
+
 // QFocusEvent(enum QEvent::Type, Qt::FocusReason)
 QFocusEvent* dector_ZN11QFocusEventC1EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type, Qt::FocusReason reason)
 {
@@ -420,12 +530,22 @@ void dedtor_ZN11QFocusEventD0Ev(QFocusEvent* that)
   delete rthis;
 }
 
+int QNativeGestureEvent_Class_Size()
+{
+  return sizeof(QNativeGestureEvent);
+}
+
 // QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
 QNativeGestureEvent* dector_ZN19QNativeGestureEventC1EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, double value, unsigned long sequenceId, unsigned long long intArgument)
 {
   // static_assert(sizeof(QNativeGestureEvent) == 32, "tyszerr");
   QNativeGestureEvent* rthis = new QNativeGestureEvent(type, localPos, windowPos, screenPos, value, sequenceId, intArgument);
   return rthis;
+}
+
+int QResizeEvent_Class_Size()
+{
+  return sizeof(QResizeEvent);
 }
 
 // ~QResizeEvent()
@@ -443,6 +563,11 @@ QResizeEvent* dector_ZN12QResizeEventC1ERK5QSizeS2_(const QSize & size, const QS
   return rthis;
 }
 
+int QStatusTipEvent_Class_Size()
+{
+  return sizeof(QStatusTipEvent);
+}
+
 // ~QStatusTipEvent()
 void dedtor_ZN15QStatusTipEventD0Ev(QStatusTipEvent* that)
 {
@@ -456,6 +581,11 @@ QStatusTipEvent* dector_ZN15QStatusTipEventC1ERK7QString(const QString & tip)
   // static_assert(sizeof(QStatusTipEvent) == 32, "tyszerr");
   QStatusTipEvent* rthis = new QStatusTipEvent(tip);
   return rthis;
+}
+
+int QEnterEvent_Class_Size()
+{
+  return sizeof(QEnterEvent);
 }
 
 // ~QEnterEvent()
@@ -473,6 +603,11 @@ QEnterEvent* dector_ZN11QEnterEventC1ERK7QPointFS2_S2_(const QPointF & localPos,
   return rthis;
 }
 
+int QMoveEvent_Class_Size()
+{
+  return sizeof(QMoveEvent);
+}
+
 // ~QMoveEvent()
 void dedtor_ZN10QMoveEventD0Ev(QMoveEvent* that)
 {
@@ -486,6 +621,11 @@ QMoveEvent* dector_ZN10QMoveEventC1ERK6QPointS2_(const QPoint & pos, const QPoin
   // static_assert(sizeof(QMoveEvent) == 40, "tyszerr");
   QMoveEvent* rthis = new QMoveEvent(pos, oldPos);
   return rthis;
+}
+
+int QHideEvent_Class_Size()
+{
+  return sizeof(QHideEvent);
 }
 
 // QHideEvent()
@@ -503,6 +643,11 @@ void dedtor_ZN10QHideEventD0Ev(QHideEvent* that)
   delete rthis;
 }
 
+int QDragLeaveEvent_Class_Size()
+{
+  return sizeof(QDragLeaveEvent);
+}
+
 // ~QDragLeaveEvent()
 void dedtor_ZN15QDragLeaveEventD0Ev(QDragLeaveEvent* that)
 {
@@ -516,6 +661,11 @@ QDragLeaveEvent* dector_ZN15QDragLeaveEventC1Ev()
   // static_assert(sizeof(QDragLeaveEvent) == 32, "tyszerr");
   QDragLeaveEvent* rthis = new QDragLeaveEvent();
   return rthis;
+}
+
+int QDropEvent_Class_Size()
+{
+  return sizeof(QDropEvent);
 }
 
 // QDropEvent(const class QPointF &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
@@ -533,6 +683,11 @@ void dedtor_ZN10QDropEventD0Ev(QDropEvent* that)
   delete rthis;
 }
 
+int QInputEvent_Class_Size()
+{
+  return sizeof(QInputEvent);
+}
+
 // QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
 QInputEvent* dector_ZN11QInputEventC1EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type, Qt::KeyboardModifiers modifiers)
 {
@@ -548,12 +703,22 @@ void dedtor_ZN11QInputEventD0Ev(QInputEvent* that)
   delete rthis;
 }
 
+int QApplicationStateChangeEvent_Class_Size()
+{
+  return sizeof(QApplicationStateChangeEvent);
+}
+
 // QApplicationStateChangeEvent(Qt::ApplicationState)
 QApplicationStateChangeEvent* dector_ZN28QApplicationStateChangeEventC1EN2Qt16ApplicationStateE(Qt::ApplicationState state)
 {
   // static_assert(sizeof(QApplicationStateChangeEvent) == 32, "tyszerr");
   QApplicationStateChangeEvent* rthis = new QApplicationStateChangeEvent(state);
   return rthis;
+}
+
+int QKeyEvent_Class_Size()
+{
+  return sizeof(QKeyEvent);
 }
 
 // QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
@@ -577,6 +742,11 @@ QKeyEvent* dector_ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEE
   // static_assert(sizeof(QKeyEvent) == 32, "tyszerr");
   QKeyEvent* rthis = new QKeyEvent(type, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count);
   return rthis;
+}
+
+int QContextMenuEvent_Class_Size()
+{
+  return sizeof(QContextMenuEvent);
 }
 
 // QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
@@ -610,6 +780,11 @@ void dedtor_ZN17QContextMenuEventD0Ev(QContextMenuEvent* that)
   delete rthis;
 }
 
+int QScrollPrepareEvent_Class_Size()
+{
+  return sizeof(QScrollPrepareEvent);
+}
+
 // QScrollPrepareEvent(const class QPointF &)
 QScrollPrepareEvent* dector_ZN19QScrollPrepareEventC1ERK7QPointF(const QPointF & startPos)
 {
@@ -623,6 +798,11 @@ void dedtor_ZN19QScrollPrepareEventD0Ev(QScrollPrepareEvent* that)
 {
   QScrollPrepareEvent* rthis = (QScrollPrepareEvent*)that;
   delete rthis;
+}
+
+int QShortcutEvent_Class_Size()
+{
+  return sizeof(QShortcutEvent);
 }
 
 // ~QShortcutEvent()
@@ -640,6 +820,11 @@ QShortcutEvent* dector_ZN14QShortcutEventC1ERK12QKeySequenceib(const QKeySequenc
   return rthis;
 }
 
+int QWindowStateChangeEvent_Class_Size()
+{
+  return sizeof(QWindowStateChangeEvent);
+}
+
 // ~QWindowStateChangeEvent()
 void dedtor_ZN23QWindowStateChangeEventD0Ev(QWindowStateChangeEvent* that)
 {
@@ -653,6 +838,11 @@ QWindowStateChangeEvent* dector_ZN23QWindowStateChangeEventC1E6QFlagsIN2Qt11Wind
   // static_assert(sizeof(QWindowStateChangeEvent) == 32, "tyszerr");
   QWindowStateChangeEvent* rthis = new QWindowStateChangeEvent(aOldState, isOverride);
   return rthis;
+}
+
+int QInputMethodQueryEvent_Class_Size()
+{
+  return sizeof(QInputMethodQueryEvent);
 }
 
 // ~QInputMethodQueryEvent()

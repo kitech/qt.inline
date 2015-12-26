@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicseffect.h
 // dst-file: /src/widgets/qgraphicseffect.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicseffect.h>
 
 extern "C" {
+
+int QGraphicsColorizeEffect_Class_Size()
+{
+  return sizeof(QGraphicsColorizeEffect);
+}
 
 // QGraphicsColorizeEffect(class QObject *)
 QGraphicsColorizeEffect* dector_ZN23QGraphicsColorizeEffectC1EP7QObject(QObject * parent)
@@ -22,6 +27,16 @@ void dedtor_ZN23QGraphicsColorizeEffectD0Ev(QGraphicsColorizeEffect* that)
 {
   QGraphicsColorizeEffect* rthis = (QGraphicsColorizeEffect*)that;
   delete rthis;
+}
+
+int QGraphicsEffect_Class_Size()
+{
+  return sizeof(QGraphicsEffect);
+}
+
+int QGraphicsDropShadowEffect_Class_Size()
+{
+  return sizeof(QGraphicsDropShadowEffect);
 }
 
 // QGraphicsDropShadowEffect(class QObject *)
@@ -39,6 +54,11 @@ void dedtor_ZN25QGraphicsDropShadowEffectD0Ev(QGraphicsDropShadowEffect* that)
   delete rthis;
 }
 
+int QGraphicsOpacityEffect_Class_Size()
+{
+  return sizeof(QGraphicsOpacityEffect);
+}
+
 // QGraphicsOpacityEffect(class QObject *)
 QGraphicsOpacityEffect* dector_ZN22QGraphicsOpacityEffectC1EP7QObject(QObject * parent)
 {
@@ -52,6 +72,11 @@ void dedtor_ZN22QGraphicsOpacityEffectD0Ev(QGraphicsOpacityEffect* that)
 {
   QGraphicsOpacityEffect* rthis = (QGraphicsOpacityEffect*)that;
   delete rthis;
+}
+
+int QGraphicsBlurEffect_Class_Size()
+{
+  return sizeof(QGraphicsBlurEffect);
 }
 
 // ~QGraphicsBlurEffect()

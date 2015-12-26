@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qatomic.h
 // dst-file: /src/core/qatomic.cxx
 //
@@ -8,6 +8,11 @@
 #include <qatomic.h>
 
 extern "C" {
+
+int QAtomicInt_Class_Size()
+{
+  return sizeof(QAtomicInt);
+}
 
 }; // <= extern "C" block end
 

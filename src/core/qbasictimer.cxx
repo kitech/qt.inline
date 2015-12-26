@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qbasictimer.h
 // dst-file: /src/core/qbasictimer.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbasictimer.h>
 
 extern "C" {
+
+int QBasicTimer_Class_Size()
+{
+  return sizeof(QBasicTimer);
+}
 
 }; // <= extern "C" block end
 

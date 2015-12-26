@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qabstractstate.h
 // dst-file: /src/core/qabstractstate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qabstractstate.h>
 
 extern "C" {
+
+int QAbstractState_Class_Size()
+{
+  return sizeof(QAbstractState);
+}
 
 }; // <= extern "C" block end
 

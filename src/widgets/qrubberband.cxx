@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qrubberband.h
 // dst-file: /src/widgets/qrubberband.cxx
 //
@@ -8,6 +8,11 @@
 #include <qrubberband.h>
 
 extern "C" {
+
+int QRubberBand_Class_Size()
+{
+  return sizeof(QRubberBand);
+}
 
 // QRubberBand(enum QRubberBand::Shape, class QWidget *)
 QRubberBand* dector_ZN11QRubberBandC1ENS_5ShapeEP7QWidget(QRubberBand::Shape arg1, QWidget * arg2)

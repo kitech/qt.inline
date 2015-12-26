@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qstate.h
 // dst-file: /src/core/qstate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstate.h>
 
 extern "C" {
+
+int QState_Class_Size()
+{
+  return sizeof(QState);
+}
 
 // ~QState()
 void dedtor_ZN6QStateD0Ev(QState* that)

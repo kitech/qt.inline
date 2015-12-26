@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qstyleditemdelegate.h
 // dst-file: /src/widgets/qstyleditemdelegate.cxx
 //
@@ -8,6 +8,11 @@
 #include <qstyleditemdelegate.h>
 
 extern "C" {
+
+int QStyledItemDelegate_Class_Size()
+{
+  return sizeof(QStyledItemDelegate);
+}
 
 // ~QStyledItemDelegate()
 void dedtor_ZN19QStyledItemDelegateD0Ev(QStyledItemDelegate* that)

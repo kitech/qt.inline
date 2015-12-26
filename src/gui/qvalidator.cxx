@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -8,6 +8,11 @@
 #include <qvalidator.h>
 
 extern "C" {
+
+int QRegularExpressionValidator_Class_Size()
+{
+  return sizeof(QRegularExpressionValidator);
+}
 
 // ~QRegularExpressionValidator()
 void dedtor_ZN27QRegularExpressionValidatorD0Ev(QRegularExpressionValidator* that)
@@ -30,6 +35,11 @@ QRegularExpressionValidator* dector_ZN27QRegularExpressionValidatorC1EP7QObject(
   // static_assert(sizeof(QRegularExpressionValidator) == 32, "tyszerr");
   QRegularExpressionValidator* rthis = new QRegularExpressionValidator(parent);
   return rthis;
+}
+
+int QDoubleValidator_Class_Size()
+{
+  return sizeof(QDoubleValidator);
 }
 
 // QDoubleValidator(class QObject *)
@@ -55,6 +65,11 @@ QDoubleValidator* dector_ZN16QDoubleValidatorC1EddiP7QObject(double bottom, doub
   return rthis;
 }
 
+int QIntValidator_Class_Size()
+{
+  return sizeof(QIntValidator);
+}
+
 // QIntValidator(class QObject *)
 QIntValidator* dector_ZN13QIntValidatorC1EP7QObject(QObject * parent)
 {
@@ -76,6 +91,16 @@ QIntValidator* dector_ZN13QIntValidatorC1EiiP7QObject(int bottom, int top, QObje
   // static_assert(sizeof(QIntValidator) == 32, "tyszerr");
   QIntValidator* rthis = new QIntValidator(bottom, top, parent);
   return rthis;
+}
+
+int QValidator_Class_Size()
+{
+  return sizeof(QValidator);
+}
+
+int QRegExpValidator_Class_Size()
+{
+  return sizeof(QRegExpValidator);
 }
 
 // QRegExpValidator(const class QRegExp &, class QObject *)

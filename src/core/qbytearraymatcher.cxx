@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qbytearraymatcher.h
 // dst-file: /src/core/qbytearraymatcher.cxx
 //
@@ -8,6 +8,11 @@
 #include <qbytearraymatcher.h>
 
 extern "C" {
+
+int QByteArrayMatcher_Class_Size()
+{
+  return sizeof(QByteArrayMatcher);
+}
 
 // QByteArrayMatcher()
 QByteArrayMatcher* dector_ZN17QByteArrayMatcherC1Ev()

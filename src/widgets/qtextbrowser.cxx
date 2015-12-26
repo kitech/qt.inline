@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qtextbrowser.h
 // dst-file: /src/widgets/qtextbrowser.cxx
 //
@@ -8,6 +8,11 @@
 #include <qtextbrowser.h>
 
 extern "C" {
+
+int QTextBrowser_Class_Size()
+{
+  return sizeof(QTextBrowser);
+}
 
 // QTextBrowser(class QWidget *)
 QTextBrowser* dector_ZN12QTextBrowserC1EP7QWidget(QWidget * parent)

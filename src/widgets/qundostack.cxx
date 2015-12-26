@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qundostack.h
 // dst-file: /src/widgets/qundostack.cxx
 //
@@ -8,6 +8,11 @@
 #include <qundostack.h>
 
 extern "C" {
+
+int QUndoStack_Class_Size()
+{
+  return sizeof(QUndoStack);
+}
 
 // ~QUndoStack()
 void dedtor_ZN10QUndoStackD0Ev(QUndoStack* that)
@@ -22,6 +27,11 @@ QUndoStack* dector_ZN10QUndoStackC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QUndoStack) == 32, "tyszerr");
   QUndoStack* rthis = new QUndoStack(parent);
   return rthis;
+}
+
+int QUndoCommand_Class_Size()
+{
+  return sizeof(QUndoCommand);
 }
 
 // QUndoCommand(class QUndoCommand *)

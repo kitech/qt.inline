@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgraphicslayout.h
 // dst-file: /src/widgets/qgraphicslayout.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgraphicslayout.h>
 
 extern "C" {
+
+int QGraphicsLayout_Class_Size()
+{
+  return sizeof(QGraphicsLayout);
+}
 
 }; // <= extern "C" block end
 

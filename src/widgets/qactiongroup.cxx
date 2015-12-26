@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qactiongroup.h
 // dst-file: /src/widgets/qactiongroup.cxx
 //
@@ -8,6 +8,11 @@
 #include <qactiongroup.h>
 
 extern "C" {
+
+int QActionGroup_Class_Size()
+{
+  return sizeof(QActionGroup);
+}
 
 // QActionGroup(class QObject *)
 QActionGroup* dector_ZN12QActionGroupC1EP7QObject(QObject * parent)

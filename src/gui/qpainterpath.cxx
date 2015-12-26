@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qpainterpath.h
 // dst-file: /src/gui/qpainterpath.cxx
 //
@@ -8,6 +8,11 @@
 #include <qpainterpath.h>
 
 extern "C" {
+
+int QPainterPath_Class_Size()
+{
+  return sizeof(QPainterPath);
+}
 
 // ~QPainterPath()
 void dedtor_ZN12QPainterPathD0Ev(QPainterPath* that)
@@ -151,6 +156,11 @@ void _ZN12QPainterPath7addRectEdddd(void *that, double x, double y, double w, do
 {
   QPainterPath *cthat = (QPainterPath *)that;
    cthat->addRect(x, y, w, h);
+}
+
+int QPainterPathStroker_Class_Size()
+{
+  return sizeof(QPainterPathStroker);
 }
 
 // QPainterPathStroker()

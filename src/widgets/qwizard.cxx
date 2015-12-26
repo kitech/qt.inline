@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qwizard.h
 // dst-file: /src/widgets/qwizard.cxx
 //
@@ -8,6 +8,11 @@
 #include <qwizard.h>
 
 extern "C" {
+
+int QWizardPage_Class_Size()
+{
+  return sizeof(QWizardPage);
+}
 
 // QWizardPage(class QWidget *)
 QWizardPage* dector_ZN11QWizardPageC1EP7QWidget(QWidget * parent)
@@ -22,6 +27,11 @@ void dedtor_ZN11QWizardPageD0Ev(QWizardPage* that)
 {
   QWizardPage* rthis = (QWizardPage*)that;
   delete rthis;
+}
+
+int QWizard_Class_Size()
+{
+  return sizeof(QWizard);
 }
 
 // ~QWizard()

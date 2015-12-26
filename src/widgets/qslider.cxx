@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qslider.h
 // dst-file: /src/widgets/qslider.cxx
 //
@@ -8,6 +8,11 @@
 #include <qslider.h>
 
 extern "C" {
+
+int QSlider_Class_Size()
+{
+  return sizeof(QSlider);
+}
 
 // ~QSlider()
 void dedtor_ZN7QSliderD0Ev(QSlider* that)

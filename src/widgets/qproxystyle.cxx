@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qproxystyle.h
 // dst-file: /src/widgets/qproxystyle.cxx
 //
@@ -8,6 +8,11 @@
 #include <qproxystyle.h>
 
 extern "C" {
+
+int QProxyStyle_Class_Size()
+{
+  return sizeof(QProxyStyle);
+}
 
 // QProxyStyle(const class QString &)
 QProxyStyle* dector_ZN11QProxyStyleC1ERK7QString(const QString & key)

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtWidgets/qgroupbox.h
 // dst-file: /src/widgets/qgroupbox.cxx
 //
@@ -8,6 +8,11 @@
 #include <qgroupbox.h>
 
 extern "C" {
+
+int QGroupBox_Class_Size()
+{
+  return sizeof(QGroupBox);
+}
 
 // ~QGroupBox()
 void dedtor_ZN9QGroupBoxD0Ev(QGroupBox* that)

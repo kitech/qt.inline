@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtCore/qloggingcategory.h
 // dst-file: /src/core/qloggingcategory.cxx
 //
@@ -8,6 +8,11 @@
 #include <qloggingcategory.h>
 
 extern "C" {
+
+int QLoggingCategory_Class_Size()
+{
+  return sizeof(QLoggingCategory);
+}
 
 // QLoggingCategory(const char *, enum QtMsgType)
 QLoggingCategory* dector_ZN16QLoggingCategoryC1EPKc9QtMsgType(const char * category, QtMsgType severityLevel)

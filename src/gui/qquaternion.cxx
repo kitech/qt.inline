@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -8,6 +8,11 @@
 #include <qquaternion.h>
 
 extern "C" {
+
+int QQuaternion_Class_Size()
+{
+  return sizeof(QQuaternion);
+}
 
 // QQuaternion(const class QVector4D &)
 QQuaternion* dector_ZN11QQuaternionC1ERK9QVector4D(const QVector4D & vector)

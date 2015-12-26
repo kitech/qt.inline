@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Dec 25 23:55:48 2015
+// created: Sat Dec 26 09:13:20 2015
 // src-file: /QtGui/qopenglshaderprogram.h
 // dst-file: /src/gui/qopenglshaderprogram.cxx
 //
@@ -8,6 +8,11 @@
 #include <qopenglshaderprogram.h>
 
 extern "C" {
+
+int QOpenGLShader_Class_Size()
+{
+  return sizeof(QOpenGLShader);
+}
 
 // ~QOpenGLShader()
 void dedtor_ZN13QOpenGLShaderD0Ev(QOpenGLShader* that)
@@ -22,6 +27,11 @@ QOpenGLShader* dector_ZN13QOpenGLShaderC1E6QFlagsINS_13ShaderTypeBitEEP7QObject(
   // static_assert(sizeof(QOpenGLShader) == 32, "tyszerr");
   QOpenGLShader* rthis = new QOpenGLShader(type, parent);
   return rthis;
+}
+
+int QOpenGLShaderProgram_Class_Size()
+{
+  return sizeof(QOpenGLShaderProgram);
 }
 
 // ~QOpenGLShaderProgram()
