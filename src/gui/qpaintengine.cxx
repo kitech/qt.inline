@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpaintengine.h
 // dst-file: /src/gui/qpaintengine.cxx
 //
@@ -50,6 +50,13 @@ void _ZN12QPaintEngine12fix_neg_rectEPiS0_S0_S0_(void *that, int * x, int * y, i
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
    cthat->fix_neg_rect(x, y, w, h);
+}
+
+  // proto:  bool QPaintEngine::isExtended();
+bool _ZNK12QPaintEngine10isExtendedEv(void *that)
+{
+  QPaintEngine *cthat = (QPaintEngine *)that;
+  return cthat->isExtended();
 }
 
 }; // <= extern "C" block end

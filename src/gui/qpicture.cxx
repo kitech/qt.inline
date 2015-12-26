@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpicture.h
 // dst-file: /src/gui/qpicture.cxx
 //
@@ -71,6 +71,13 @@ void dedtor_ZN8QPictureD0Ev(QPicture* that)
 {
   QPicture* rthis = (QPicture*)that;
   delete rthis;
+}
+
+  // proto:  void QPicture::swap(QPicture & other);
+void _ZN8QPicture4swapERS_(void *that, QPicture & other)
+{
+  QPicture *cthat = (QPicture *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

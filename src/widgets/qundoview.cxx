@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qundoview.h
 // dst-file: /src/widgets/qundoview.cxx
 //
@@ -14,19 +14,19 @@ int QUndoView_Class_Size()
   return sizeof(QUndoView);
 }
 
-// QUndoView(class QWidget *)
-QUndoView* dector_ZN9QUndoViewC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QUndoView) == 32, "tyszerr");
-  QUndoView* rthis = new QUndoView(parent);
-  return rthis;
-}
-
 // QUndoView(class QUndoGroup *, class QWidget *)
 QUndoView* dector_ZN9QUndoViewC1EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent)
 {
   // static_assert(sizeof(QUndoView) == 32, "tyszerr");
   QUndoView* rthis = new QUndoView(group, parent);
+  return rthis;
+}
+
+// QUndoView(class QWidget *)
+QUndoView* dector_ZN9QUndoViewC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QUndoView) == 32, "tyszerr");
+  QUndoView* rthis = new QUndoView(parent);
   return rthis;
 }
 

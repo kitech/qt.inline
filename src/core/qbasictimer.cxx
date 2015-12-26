@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qbasictimer.h
 // dst-file: /src/core/qbasictimer.cxx
 //
@@ -12,6 +12,49 @@ extern "C" {
 int QBasicTimer_Class_Size()
 {
   return sizeof(QBasicTimer);
+}
+
+// ~QBasicTimer()
+void dedtor_ZN11QBasicTimerD0Ev(QBasicTimer* that)
+{
+  QBasicTimer* rthis = (QBasicTimer*)that;
+  delete rthis;
+}
+
+// QBasicTimer()
+QBasicTimer* dector_ZN11QBasicTimerC1Ev()
+{
+  // static_assert(sizeof(QBasicTimer) == 32, "tyszerr");
+  QBasicTimer* rthis = new QBasicTimer();
+  return rthis;
+}
+
+  // proto:  void QBasicTimer::~QBasicTimer();
+void _ZN11QBasicTimerD0Ev(void *that)
+{
+  QBasicTimer *cthat = (QBasicTimer *)that;
+   cthat->~QBasicTimer();
+}
+
+  // proto:  int QBasicTimer::timerId();
+int _ZNK11QBasicTimer7timerIdEv(void *that)
+{
+  QBasicTimer *cthat = (QBasicTimer *)that;
+  return cthat->timerId();
+}
+
+  // proto:  bool QBasicTimer::isActive();
+bool _ZNK11QBasicTimer8isActiveEv(void *that)
+{
+  QBasicTimer *cthat = (QBasicTimer *)that;
+  return cthat->isActive();
+}
+
+  // proto:  void QBasicTimer::QBasicTimer();
+void _ZN11QBasicTimerC1Ev(void *that)
+{
+  QBasicTimer *cthat = (QBasicTimer *)that;
+  auto _o = new(that) QBasicTimer();
 }
 
 }; // <= extern "C" block end

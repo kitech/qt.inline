@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qtransform.h
 // dst-file: /src/gui/qtransform.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QTransform_Class_Size()
 {
   return sizeof(QTransform);
+}
+
+// QTransform(Qt::Initialization)
+QTransform* dector_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QTransform) == 88, "tyszerr");
+  QTransform* rthis = new QTransform(arg1);
+  return rthis;
 }
 
 // QTransform()
@@ -44,6 +52,13 @@ QTransform* dector_ZN10QTransformC1Eddddddddd(double h11, double h12, double h13
   // static_assert(sizeof(QTransform) == 88, "tyszerr");
   QTransform* rthis = new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
   return rthis;
+}
+
+  // proto:  void QTransform::QTransform(Qt::Initialization );
+void _ZN10QTransformC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
+{
+  QTransform *cthat = (QTransform *)that;
+  auto _o = new(that) QTransform(arg1);
 }
 
   // proto:  qreal QTransform::determinant();

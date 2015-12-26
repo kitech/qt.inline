@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
@@ -14,13 +14,6 @@ int QTextList_Class_Size()
   return sizeof(QTextList);
 }
 
-// ~QTextList()
-void dedtor_ZN9QTextListD0Ev(QTextList* that)
-{
-  QTextList* rthis = (QTextList*)that;
-  delete rthis;
-}
-
 // QTextList(class QTextDocument *)
 QTextList* dector_ZN9QTextListC1EP13QTextDocument(QTextDocument * doc)
 {
@@ -29,11 +22,25 @@ QTextList* dector_ZN9QTextListC1EP13QTextDocument(QTextDocument * doc)
   return rthis;
 }
 
+// ~QTextList()
+void dedtor_ZN9QTextListD0Ev(QTextList* that)
+{
+  QTextList* rthis = (QTextList*)that;
+  delete rthis;
+}
+
   // proto:  void QTextList::setFormat(const QTextListFormat & format);
 void _ZN9QTextList9setFormatERK15QTextListFormat(void *that, const QTextListFormat & format)
 {
   QTextList *cthat = (QTextList *)that;
    cthat->setFormat(format);
+}
+
+  // proto:  bool QTextList::isEmpty();
+bool _ZNK9QTextList7isEmptyEv(void *that)
+{
+  QTextList *cthat = (QTextList *)that;
+  return cthat->isEmpty();
 }
 
 }; // <= extern "C" block end

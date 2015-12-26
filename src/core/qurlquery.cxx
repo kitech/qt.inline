@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qurlquery.h
 // dst-file: /src/core/qurlquery.cxx
 //
@@ -22,19 +22,19 @@ QUrlQuery* dector_ZN9QUrlQueryC1ERK7QString(const QString & queryString)
   return rthis;
 }
 
-// ~QUrlQuery()
-void dedtor_ZN9QUrlQueryD0Ev(QUrlQuery* that)
-{
-  QUrlQuery* rthis = (QUrlQuery*)that;
-  delete rthis;
-}
-
 // QUrlQuery()
 QUrlQuery* dector_ZN9QUrlQueryC1Ev()
 {
   // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
   QUrlQuery* rthis = new QUrlQuery();
   return rthis;
+}
+
+// ~QUrlQuery()
+void dedtor_ZN9QUrlQueryD0Ev(QUrlQuery* that)
+{
+  QUrlQuery* rthis = (QUrlQuery*)that;
+  delete rthis;
 }
 
 // QUrlQuery(const class QUrl &)

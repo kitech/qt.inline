@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qopenglversionfunctions.h
 // dst-file: /src/gui/qopenglversionfunctions.cxx
 //
@@ -104,6 +104,14 @@ int QOpenGLVersionFunctionsBackend_Class_Size()
   return sizeof(QOpenGLVersionFunctionsBackend);
 }
 
+// QOpenGLVersionFunctionsBackend(class QOpenGLContext *)
+QOpenGLVersionFunctionsBackend* dector_ZN30QOpenGLVersionFunctionsBackendC1EP14QOpenGLContext(QOpenGLContext * ctx)
+{
+  // static_assert(sizeof(QOpenGLVersionFunctionsBackend) == 32, "tyszerr");
+  QOpenGLVersionFunctionsBackend* rthis = new QOpenGLVersionFunctionsBackend(ctx);
+  return rthis;
+}
+
 int QAbstractOpenGLFunctions_Class_Size()
 {
   return sizeof(QAbstractOpenGLFunctions);
@@ -132,6 +140,22 @@ int QOpenGLFunctions_1_3_CoreBackend_Class_Size()
 int QOpenGLVersionStatus_Class_Size()
 {
   return sizeof(QOpenGLVersionStatus);
+}
+
+// QOpenGLVersionStatus()
+QOpenGLVersionStatus* dector_ZN20QOpenGLVersionStatusC1Ev()
+{
+  // static_assert(sizeof(QOpenGLVersionStatus) == 32, "tyszerr");
+  QOpenGLVersionStatus* rthis = new QOpenGLVersionStatus();
+  return rthis;
+}
+
+// QOpenGLVersionStatus(int, int, struct QOpenGLVersionStatus::OpenGLStatus)
+QOpenGLVersionStatus* dector_ZN20QOpenGLVersionStatusC1EiiNS_12OpenGLStatusE(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus)
+{
+  // static_assert(sizeof(QOpenGLVersionStatus) == 32, "tyszerr");
+  QOpenGLVersionStatus* rthis = new QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus);
+  return rthis;
 }
 
 int QOpenGLFunctions_1_0_CoreBackend_Class_Size()

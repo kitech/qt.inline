@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qvector3d.h
 // dst-file: /src/gui/qvector3d.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QVector3D_Class_Size()
 {
   return sizeof(QVector3D);
+}
+
+// QVector3D(Qt::Initialization)
+QVector3D* dector_ZN9QVector3DC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QVector3D) == 32, "tyszerr");
+  QVector3D* rthis = new QVector3D(arg1);
+  return rthis;
 }
 
 // QVector3D(const class QPointF &)
@@ -51,6 +59,14 @@ QVector3D* dector_ZN9QVector3DC1Ev()
 {
   // static_assert(sizeof(QVector3D) == 32, "tyszerr");
   QVector3D* rthis = new QVector3D();
+  return rthis;
+}
+
+// QVector3D(float, float, float)
+QVector3D* dector_ZN9QVector3DC1Efff(float xpos, float ypos, float zpos)
+{
+  // static_assert(sizeof(QVector3D) == 32, "tyszerr");
+  QVector3D* rthis = new QVector3D(xpos, ypos, zpos);
   return rthis;
 }
 

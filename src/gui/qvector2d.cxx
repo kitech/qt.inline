@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qvector2d.h
 // dst-file: /src/gui/qvector2d.cxx
 //
@@ -59,6 +59,14 @@ QVector2D* dector_ZN9QVector2DC1ERK7QPointF(const QPointF & point)
 {
   // static_assert(sizeof(QVector2D) == 32, "tyszerr");
   QVector2D* rthis = new QVector2D(point);
+  return rthis;
+}
+
+// QVector2D(Qt::Initialization)
+QVector2D* dector_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
+  QVector2D* rthis = new QVector2D(arg1);
   return rthis;
 }
 

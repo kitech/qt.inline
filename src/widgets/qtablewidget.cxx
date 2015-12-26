@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qtablewidget.h
 // dst-file: /src/widgets/qtablewidget.cxx
 //
@@ -22,12 +22,11 @@ QTableWidgetSelectionRange* dector_ZN26QTableWidgetSelectionRangeC1Eiiii(int top
   return rthis;
 }
 
-// QTableWidgetSelectionRange(const class QTableWidgetSelectionRange &)
-QTableWidgetSelectionRange* dector_ZN26QTableWidgetSelectionRangeC1ERKS_(const QTableWidgetSelectionRange & other)
+// ~QTableWidgetSelectionRange()
+void dedtor_ZN26QTableWidgetSelectionRangeD0Ev(QTableWidgetSelectionRange* that)
 {
-  // static_assert(sizeof(QTableWidgetSelectionRange) == 32, "tyszerr");
-  QTableWidgetSelectionRange* rthis = new QTableWidgetSelectionRange(other);
-  return rthis;
+  QTableWidgetSelectionRange* rthis = (QTableWidgetSelectionRange*)that;
+  delete rthis;
 }
 
 // QTableWidgetSelectionRange()
@@ -38,11 +37,54 @@ QTableWidgetSelectionRange* dector_ZN26QTableWidgetSelectionRangeC1Ev()
   return rthis;
 }
 
-// ~QTableWidgetSelectionRange()
-void dedtor_ZN26QTableWidgetSelectionRangeD0Ev(QTableWidgetSelectionRange* that)
+// QTableWidgetSelectionRange(const class QTableWidgetSelectionRange &)
+QTableWidgetSelectionRange* dector_ZN26QTableWidgetSelectionRangeC1ERKS_(const QTableWidgetSelectionRange & other)
 {
-  QTableWidgetSelectionRange* rthis = (QTableWidgetSelectionRange*)that;
-  delete rthis;
+  // static_assert(sizeof(QTableWidgetSelectionRange) == 32, "tyszerr");
+  QTableWidgetSelectionRange* rthis = new QTableWidgetSelectionRange(other);
+  return rthis;
+}
+
+  // proto:  int QTableWidgetSelectionRange::columnCount();
+int _ZNK26QTableWidgetSelectionRange11columnCountEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->columnCount();
+}
+
+  // proto:  int QTableWidgetSelectionRange::rowCount();
+int _ZNK26QTableWidgetSelectionRange8rowCountEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->rowCount();
+}
+
+  // proto:  int QTableWidgetSelectionRange::leftColumn();
+int _ZNK26QTableWidgetSelectionRange10leftColumnEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->leftColumn();
+}
+
+  // proto:  int QTableWidgetSelectionRange::topRow();
+int _ZNK26QTableWidgetSelectionRange6topRowEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->topRow();
+}
+
+  // proto:  int QTableWidgetSelectionRange::rightColumn();
+int _ZNK26QTableWidgetSelectionRange11rightColumnEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->rightColumn();
+}
+
+  // proto:  int QTableWidgetSelectionRange::bottomRow();
+int _ZNK26QTableWidgetSelectionRange9bottomRowEv(void *that)
+{
+  QTableWidgetSelectionRange *cthat = (QTableWidgetSelectionRange *)that;
+  return cthat->bottomRow();
 }
 
 int QTableWidget_Class_Size()
@@ -131,6 +173,14 @@ QTableWidgetItem* dector_ZN16QTableWidgetItemC1ERK5QIconRK7QStringi(const QIcon 
   return rthis;
 }
 
+  // proto:  QColor QTableWidgetItem::backgroundColor();
+QColor* _ZNK16QTableWidgetItem15backgroundColorEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->backgroundColor();
+  return new QColor(recret);
+}
+
   // proto:  void QTableWidgetItem::setSelected(bool select);
 void _ZN16QTableWidgetItem11setSelectedEb(void *that, bool select)
 {
@@ -145,11 +195,87 @@ void _ZN16QTableWidgetItem12setStatusTipERK7QString(void *that, const QString & 
    cthat->setStatusTip(statusTip);
 }
 
+  // proto:  QColor QTableWidgetItem::textColor();
+QColor* _ZNK16QTableWidgetItem9textColorEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->textColor();
+  return new QColor(recret);
+}
+
+  // proto:  void QTableWidgetItem::setCheckState(Qt::CheckState state);
+void _ZN16QTableWidgetItem13setCheckStateEN2Qt10CheckStateE(void *that, Qt::CheckState state)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setCheckState(state);
+}
+
+  // proto:  QString QTableWidgetItem::text();
+QString* _ZNK16QTableWidgetItem4textEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->text();
+  return new QString(recret);
+}
+
+  // proto:  void QTableWidgetItem::setSizeHint(const QSize & size);
+void _ZN16QTableWidgetItem11setSizeHintERK5QSize(void *that, const QSize & size)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setSizeHint(size);
+}
+
+  // proto:  QBrush QTableWidgetItem::foreground();
+QBrush* _ZNK16QTableWidgetItem10foregroundEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->foreground();
+  return new QBrush(recret);
+}
+
+  // proto:  int QTableWidgetItem::type();
+int _ZNK16QTableWidgetItem4typeEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  return cthat->type();
+}
+
   // proto:  int QTableWidgetItem::column();
 int _ZNK16QTableWidgetItem6columnEv(void *that)
 {
   QTableWidgetItem *cthat = (QTableWidgetItem *)that;
   return cthat->column();
+}
+
+  // proto:  void QTableWidgetItem::setTextAlignment(int alignment);
+void _ZN16QTableWidgetItem16setTextAlignmentEi(void *that, int alignment)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setTextAlignment(alignment);
+}
+
+  // proto:  QFont QTableWidgetItem::font();
+QFont* _ZNK16QTableWidgetItem4fontEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->font();
+  return new QFont(recret);
+}
+
+  // proto:  QIcon QTableWidgetItem::icon();
+QIcon* _ZNK16QTableWidgetItem4iconEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->icon();
+  return new QIcon(recret);
+}
+
+  // proto:  QBrush QTableWidgetItem::background();
+QBrush* _ZNK16QTableWidgetItem10backgroundEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->background();
+  return new QBrush(recret);
 }
 
   // proto:  void QTableWidgetItem::setIcon(const QIcon & icon);
@@ -159,11 +285,34 @@ void _ZN16QTableWidgetItem7setIconERK5QIcon(void *that, const QIcon & icon)
    cthat->setIcon(icon);
 }
 
+  // proto:  QString QTableWidgetItem::statusTip();
+QString* _ZNK16QTableWidgetItem9statusTipEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->statusTip();
+  return new QString(recret);
+}
+
   // proto:  void QTableWidgetItem::setWhatsThis(const QString & whatsThis);
 void _ZN16QTableWidgetItem12setWhatsThisERK7QString(void *that, const QString & whatsThis)
 {
   QTableWidgetItem *cthat = (QTableWidgetItem *)that;
    cthat->setWhatsThis(whatsThis);
+}
+
+  // proto:  QSize QTableWidgetItem::sizeHint();
+QSize* _ZNK16QTableWidgetItem8sizeHintEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->sizeHint();
+  return new QSize(recret);
+}
+
+  // proto:  void QTableWidgetItem::setForeground(const QBrush & brush);
+void _ZN16QTableWidgetItem13setForegroundERK6QBrush(void *that, const QBrush & brush)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setForeground(brush);
 }
 
   // proto:  int QTableWidgetItem::row();
@@ -173,11 +322,47 @@ int _ZNK16QTableWidgetItem3rowEv(void *that)
   return cthat->row();
 }
 
+  // proto:  QTableWidget * QTableWidgetItem::tableWidget();
+QTableWidget * _ZNK16QTableWidgetItem11tableWidgetEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  return cthat->tableWidget();
+}
+
+  // proto:  int QTableWidgetItem::textAlignment();
+int _ZNK16QTableWidgetItem13textAlignmentEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  return cthat->textAlignment();
+}
+
+  // proto:  QString QTableWidgetItem::toolTip();
+QString* _ZNK16QTableWidgetItem7toolTipEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->toolTip();
+  return new QString(recret);
+}
+
   // proto:  bool QTableWidgetItem::isSelected();
 bool _ZNK16QTableWidgetItem10isSelectedEv(void *that)
 {
   QTableWidgetItem *cthat = (QTableWidgetItem *)that;
   return cthat->isSelected();
+}
+
+  // proto:  void QTableWidgetItem::setBackgroundColor(const QColor & color);
+void _ZN16QTableWidgetItem18setBackgroundColorERK6QColor(void *that, const QColor & color)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setBackgroundColor(color);
+}
+
+  // proto:  void QTableWidgetItem::setBackground(const QBrush & brush);
+void _ZN16QTableWidgetItem13setBackgroundERK6QBrush(void *that, const QBrush & brush)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setBackground(brush);
 }
 
   // proto:  void QTableWidgetItem::setFont(const QFont & font);
@@ -187,11 +372,26 @@ void _ZN16QTableWidgetItem7setFontERK5QFont(void *that, const QFont & font)
    cthat->setFont(font);
 }
 
+  // proto:  void QTableWidgetItem::setTextColor(const QColor & color);
+void _ZN16QTableWidgetItem12setTextColorERK6QColor(void *that, const QColor & color)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+   cthat->setTextColor(color);
+}
+
   // proto:  void QTableWidgetItem::setText(const QString & text);
 void _ZN16QTableWidgetItem7setTextERK7QString(void *that, const QString & text)
 {
   QTableWidgetItem *cthat = (QTableWidgetItem *)that;
    cthat->setText(text);
+}
+
+  // proto:  QString QTableWidgetItem::whatsThis();
+QString* _ZNK16QTableWidgetItem9whatsThisEv(void *that)
+{
+  QTableWidgetItem *cthat = (QTableWidgetItem *)that;
+  auto recret = cthat->whatsThis();
+  return new QString(recret);
 }
 
   // proto:  void QTableWidgetItem::setToolTip(const QString & toolTip);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -30,12 +30,27 @@ QMatrix* dector_ZN7QMatrixC1ERKS_(const QMatrix & matrix)
   return rthis;
 }
 
+// QMatrix(Qt::Initialization)
+QMatrix* dector_ZN7QMatrixC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QMatrix) == 48, "tyszerr");
+  QMatrix* rthis = new QMatrix(arg1);
+  return rthis;
+}
+
 // QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 QMatrix* dector_ZN7QMatrixC1Edddddd(double m11, double m12, double m21, double m22, double dx, double dy)
 {
   // static_assert(sizeof(QMatrix) == 48, "tyszerr");
   QMatrix* rthis = new QMatrix(m11, m12, m21, m22, dx, dy);
   return rthis;
+}
+
+  // proto:  void QMatrix::QMatrix(Qt::Initialization );
+void _ZN7QMatrixC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  auto _o = new(that) QMatrix(arg1);
 }
 
   // proto:  bool QMatrix::isIdentity();

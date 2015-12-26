@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -22,6 +22,13 @@ QShortcut* dector_ZN9QShortcutC1ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutCo
   return rthis;
 }
 
+// ~QShortcut()
+void dedtor_ZN9QShortcutD0Ev(QShortcut* that)
+{
+  QShortcut* rthis = (QShortcut*)that;
+  delete rthis;
+}
+
 // QShortcut(class QWidget *)
 QShortcut* dector_ZN9QShortcutC1EP7QWidget(QWidget * parent)
 {
@@ -30,11 +37,11 @@ QShortcut* dector_ZN9QShortcutC1EP7QWidget(QWidget * parent)
   return rthis;
 }
 
-// ~QShortcut()
-void dedtor_ZN9QShortcutD0Ev(QShortcut* that)
+  // proto:  QWidget * QShortcut::parentWidget();
+QWidget * _ZNK9QShortcut12parentWidgetEv(void *that)
 {
-  QShortcut* rthis = (QShortcut*)that;
-  delete rthis;
+  QShortcut *cthat = (QShortcut *)that;
+  return cthat->parentWidget();
 }
 
 }; // <= extern "C" block end

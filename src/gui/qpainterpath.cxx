@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpainterpath.h
 // dst-file: /src/gui/qpainterpath.cxx
 //
@@ -123,6 +123,13 @@ void _ZN12QPainterPath12addRoundRectEddddii(void *that, double x, double y, doub
    cthat->addRoundRect(x, y, w, h, xRnd, yRnd);
 }
 
+  // proto:  void QPainterPath::swap(QPainterPath & other);
+void _ZN12QPainterPath4swapERS_(void *that, QPainterPath & other)
+{
+  QPainterPath *cthat = (QPainterPath *)that;
+   cthat->swap(other);
+}
+
   // proto:  void QPainterPath::moveTo(qreal x, qreal y);
 void _ZN12QPainterPath6moveToEdd(void *that, double x, double y)
 {
@@ -163,12 +170,11 @@ int QPainterPathStroker_Class_Size()
   return sizeof(QPainterPathStroker);
 }
 
-// QPainterPathStroker()
-QPainterPathStroker* dector_ZN19QPainterPathStrokerC1Ev()
+// ~QPainterPathStroker()
+void dedtor_ZN19QPainterPathStrokerD0Ev(QPainterPathStroker* that)
 {
-  // static_assert(sizeof(QPainterPathStroker) == 32, "tyszerr");
-  QPainterPathStroker* rthis = new QPainterPathStroker();
-  return rthis;
+  QPainterPathStroker* rthis = (QPainterPathStroker*)that;
+  delete rthis;
 }
 
 // QPainterPathStroker(const class QPen &)
@@ -179,11 +185,12 @@ QPainterPathStroker* dector_ZN19QPainterPathStrokerC1ERK4QPen(const QPen & pen)
   return rthis;
 }
 
-// ~QPainterPathStroker()
-void dedtor_ZN19QPainterPathStrokerD0Ev(QPainterPathStroker* that)
+// QPainterPathStroker()
+QPainterPathStroker* dector_ZN19QPainterPathStrokerC1Ev()
 {
-  QPainterPathStroker* rthis = (QPainterPathStroker*)that;
-  delete rthis;
+  // static_assert(sizeof(QPainterPathStroker) == 32, "tyszerr");
+  QPainterPathStroker* rthis = new QPainterPathStroker();
+  return rthis;
 }
 
 }; // <= extern "C" block end

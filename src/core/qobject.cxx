@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qobject.h
 // dst-file: /src/core/qobject.cxx
 //
@@ -70,6 +70,62 @@ QObject* dector_ZN7QObjectC1EPS_(QObject * parent)
   // static_assert(sizeof(QObject) == 32, "tyszerr");
   QObject* rthis = new QObject(parent);
   return rthis;
+}
+
+  // proto:  bool QObject::inherits(const char * classname);
+bool _ZNK7QObject8inheritsEPKc(void *that, const char * classname)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->inherits(classname);
+}
+
+  // proto:  bool QObject::isWidgetType();
+bool _ZNK7QObject12isWidgetTypeEv(void *that)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->isWidgetType();
+}
+
+  // proto:  bool QObject::disconnect(const QObject * receiver, const char * member);
+bool _ZNK7QObject10disconnectEPKS_PKc(void *that, const QObject * receiver, const char * member)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->disconnect(receiver, member);
+}
+
+  // proto:  const QObjectList & QObject::children();
+const QObjectList * _ZNK7QObject8childrenEv(void *that)
+{
+  QObject *cthat = (QObject *)that;
+  return &cthat->children();
+}
+
+  // proto:  bool QObject::isWindowType();
+bool _ZNK7QObject12isWindowTypeEv(void *that)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->isWindowType();
+}
+
+  // proto:  bool QObject::disconnect(const char * signal, const QObject * receiver, const char * member);
+bool _ZNK7QObject10disconnectEPKcPKS_S1_(void *that, const char * signal, const QObject * receiver, const char * member)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->disconnect(signal, receiver, member);
+}
+
+  // proto:  bool QObject::signalsBlocked();
+bool _ZNK7QObject14signalsBlockedEv(void *that)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->signalsBlocked();
+}
+
+  // proto:  QObject * QObject::parent();
+QObject * _ZNK7QObject6parentEv(void *that)
+{
+  QObject *cthat = (QObject *)that;
+  return cthat->parent();
 }
 
 }; // <= extern "C" block end

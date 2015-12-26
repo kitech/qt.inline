@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qmatrix4x4.h
 // dst-file: /src/gui/qmatrix4x4.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QMatrix4x4_Class_Size()
 {
   return sizeof(QMatrix4x4);
+}
+
+// QMatrix4x4()
+QMatrix4x4* dector_ZN10QMatrix4x4C1Ev()
+{
+  // static_assert(sizeof(QMatrix4x4) == 68, "tyszerr");
+  QMatrix4x4* rthis = new QMatrix4x4();
+  return rthis;
 }
 
 // QMatrix4x4(const class QTransform &)
@@ -27,6 +35,14 @@ QMatrix4x4* dector_ZN10QMatrix4x4C1ERK7QMatrix(const QMatrix & matrix)
 {
   // static_assert(sizeof(QMatrix4x4) == 68, "tyszerr");
   QMatrix4x4* rthis = new QMatrix4x4(matrix);
+  return rthis;
+}
+
+// QMatrix4x4(Qt::Initialization)
+QMatrix4x4* dector_ZN10QMatrix4x4C1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QMatrix4x4) == 68, "tyszerr");
+  QMatrix4x4* rthis = new QMatrix4x4(arg1);
   return rthis;
 }
 
@@ -54,11 +70,25 @@ QMatrix4x4* dector_ZN10QMatrix4x4C1EPKfii(const float * values, int cols, int ro
   return rthis;
 }
 
+  // proto:  const float * QMatrix4x4::constData();
+const float * _ZNK10QMatrix4x49constDataEv(void *that)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  return cthat->constData();
+}
+
   // proto:  float * QMatrix4x4::data();
 float * _ZN10QMatrix4x44dataEv(void *that)
 {
   QMatrix4x4 *cthat = (QMatrix4x4 *)that;
   return cthat->data();
+}
+
+  // proto:  void QMatrix4x4::QMatrix4x4();
+void _ZN10QMatrix4x4C1Ev(void *that)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto _o = new(that) QMatrix4x4();
 }
 
   // proto:  void QMatrix4x4::setColumn(int index, const QVector4D & value);
@@ -95,6 +125,13 @@ bool _ZNK10QMatrix4x48isAffineEv(void *that)
 {
   QMatrix4x4 *cthat = (QMatrix4x4 *)that;
   return cthat->isAffine();
+}
+
+  // proto:  const float * QMatrix4x4::data();
+const float * _ZNK10QMatrix4x44dataEv(void *that)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  return cthat->data();
 }
 
   // proto:  void QMatrix4x4::setToIdentity();

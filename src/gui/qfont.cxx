@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qfont.h
 // dst-file: /src/gui/qfont.cxx
 //
@@ -67,6 +67,13 @@ void _ZN5QFont9setItalicEb(void *that, bool b)
    cthat->setItalic(b);
 }
 
+  // proto:  void QFont::resolve(uint mask);
+void _ZN5QFont7resolveEj(void *that, unsigned int mask)
+{
+  QFont *cthat = (QFont *)that;
+   cthat->resolve(mask);
+}
+
   // proto:  void QFont::setBold(bool );
 void _ZN5QFont7setBoldEb(void *that, bool arg1)
 {
@@ -79,6 +86,13 @@ bool _ZNK5QFont4boldEv(void *that)
 {
   QFont *cthat = (QFont *)that;
   return cthat->bold();
+}
+
+  // proto:  uint QFont::resolve();
+uint _ZNK5QFont7resolveEv(void *that)
+{
+  QFont *cthat = (QFont *)that;
+  return cthat->resolve();
 }
 
 }; // <= extern "C" block end

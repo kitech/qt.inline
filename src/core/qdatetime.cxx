@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -20,6 +20,22 @@ QTime* dector_ZN5QTimeC1Eiiii(int h, int m, int s, int ms)
   // static_assert(sizeof(QTime) == 32, "tyszerr");
   QTime* rthis = new QTime(h, m, s, ms);
   return rthis;
+}
+
+// QTime()
+QTime* dector_ZN5QTimeC1Ev()
+{
+  // static_assert(sizeof(QTime) == 32, "tyszerr");
+  QTime* rthis = new QTime();
+  return rthis;
+}
+
+  // proto: static QTime QTime::fromMSecsSinceStartOfDay(int msecs);
+QTime* _ZN5QTime24fromMSecsSinceStartOfDayEi(void *that, int msecs)
+{
+  QTime *cthat = (QTime *)that;
+  auto recret = cthat->fromMSecsSinceStartOfDay(msecs);
+  return new QTime(recret);
 }
 
 int QDateTime_Class_Size()
@@ -82,9 +98,40 @@ void dedtor_ZN9QDateTimeD0Ev(QDateTime* that)
   delete rthis;
 }
 
+  // proto:  QDateTime QDateTime::toLocalTime();
+QDateTime* _ZNK9QDateTime11toLocalTimeEv(void *that)
+{
+  QDateTime *cthat = (QDateTime *)that;
+  auto recret = cthat->toLocalTime();
+  return new QDateTime(recret);
+}
+
+  // proto:  void QDateTime::swap(QDateTime & other);
+void _ZN9QDateTime4swapERS_(void *that, QDateTime & other)
+{
+  QDateTime *cthat = (QDateTime *)that;
+   cthat->swap(other);
+}
+
+  // proto:  QDateTime QDateTime::toUTC();
+QDateTime* _ZNK9QDateTime5toUTCEv(void *that)
+{
+  QDateTime *cthat = (QDateTime *)that;
+  auto recret = cthat->toUTC();
+  return new QDateTime(recret);
+}
+
 int QDate_Class_Size()
 {
   return sizeof(QDate);
+}
+
+// QDate()
+QDate* dector_ZN5QDateC1Ev()
+{
+  // static_assert(sizeof(QDate) == 32, "tyszerr");
+  QDate* rthis = new QDate();
+  return rthis;
 }
 
 // QDate(int, int, int)
@@ -93,6 +140,14 @@ QDate* dector_ZN5QDateC1Eiii(int y, int m, int d)
   // static_assert(sizeof(QDate) == 32, "tyszerr");
   QDate* rthis = new QDate(y, m, d);
   return rthis;
+}
+
+  // proto: static QDate QDate::fromJulianDay(qint64 jd);
+QDate* _ZN5QDate13fromJulianDayEx(void *that, long long jd)
+{
+  QDate *cthat = (QDate *)that;
+  auto recret = cthat->fromJulianDay(jd);
+  return new QDate(recret);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qrect.h
 // dst-file: /src/core/qrect.cxx
 //
@@ -35,6 +35,14 @@ QRect* dector_ZN5QRectC1Eiiii(int left, int top, int width, int height)
 {
   // static_assert(sizeof(QRect) == 32, "tyszerr");
   QRect* rthis = new QRect(left, top, width, height);
+  return rthis;
+}
+
+// QRect()
+QRect* dector_ZN5QRectC1Ev()
+{
+  // static_assert(sizeof(QRect) == 32, "tyszerr");
+  QRect* rthis = new QRect();
   return rthis;
 }
 
@@ -180,6 +188,13 @@ void _ZN5QRect9translateERK6QPoint(void *that, const QPoint & p)
    cthat->translate(p);
 }
 
+  // proto:  void QRect::moveBottom(int pos);
+void _ZN5QRect10moveBottomEi(void *that, int pos)
+{
+  QRect *cthat = (QRect *)that;
+   cthat->moveBottom(pos);
+}
+
   // proto:  void QRect::setBottomLeft(const QPoint & p);
 void _ZN5QRect13setBottomLeftERK6QPoint(void *that, const QPoint & p)
 {
@@ -227,13 +242,6 @@ void _ZN5QRect6setTopEi(void *that, int pos)
 {
   QRect *cthat = (QRect *)that;
    cthat->setTop(pos);
-}
-
-  // proto:  void QRect::moveBottom(int pos);
-void _ZN5QRect10moveBottomEi(void *that, int pos)
-{
-  QRect *cthat = (QRect *)that;
-   cthat->moveBottom(pos);
 }
 
   // proto:  void QRect::setWidth(int w);
@@ -290,6 +298,22 @@ int QRectF_Class_Size()
   return sizeof(QRectF);
 }
 
+// QRectF()
+QRectF* dector_ZN6QRectFC1Ev()
+{
+  // static_assert(sizeof(QRectF) == 32, "tyszerr");
+  QRectF* rthis = new QRectF();
+  return rthis;
+}
+
+// QRectF(const class QPointF &, const class QPointF &)
+QRectF* dector_ZN6QRectFC1ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight)
+{
+  // static_assert(sizeof(QRectF) == 32, "tyszerr");
+  QRectF* rthis = new QRectF(topleft, bottomRight);
+  return rthis;
+}
+
 // QRectF(const class QPointF &, const class QSizeF &)
 QRectF* dector_ZN6QRectFC1ERK7QPointFRK6QSizeF(const QPointF & topleft, const QSizeF & size)
 {
@@ -306,14 +330,6 @@ QRectF* dector_ZN6QRectFC1Edddd(double left, double top, double width, double he
   return rthis;
 }
 
-// QRectF(const class QPointF &, const class QPointF &)
-QRectF* dector_ZN6QRectFC1ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight)
-{
-  // static_assert(sizeof(QRectF) == 32, "tyszerr");
-  QRectF* rthis = new QRectF(topleft, bottomRight);
-  return rthis;
-}
-
 // QRectF(const class QRect &)
 QRectF* dector_ZN6QRectFC1ERK5QRect(const QRect & rect)
 {
@@ -327,6 +343,13 @@ void _ZN6QRectF15moveBottomRightERK7QPointF(void *that, const QPointF & p)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->moveBottomRight(p);
+}
+
+  // proto:  void QRectF::moveTo(qreal x, qreal y);
+void _ZN6QRectF6moveToEdd(void *that, double x, double y)
+{
+  QRectF *cthat = (QRectF *)that;
+   cthat->moveTo(x, y);
 }
 
   // proto:  void QRectF::setHeight(qreal h);
@@ -364,13 +387,6 @@ void _ZN6QRectF13setBottomLeftERK7QPointF(void *that, const QPointF & p)
    cthat->setBottomLeft(p);
 }
 
-  // proto:  void QRectF::moveTo(qreal x, qreal y);
-void _ZN6QRectF6moveToEdd(void *that, double x, double y)
-{
-  QRectF *cthat = (QRectF *)that;
-   cthat->moveTo(x, y);
-}
-
   // proto:  void QRectF::adjust(qreal x1, qreal y1, qreal x2, qreal y2);
 void _ZN6QRectF6adjustEdddd(void *that, double x1, double y1, double x2, double y2)
 {
@@ -392,6 +408,13 @@ void _ZN6QRectF9setBottomEd(void *that, double pos)
    cthat->setBottom(pos);
 }
 
+  // proto:  void QRectF::moveBottomLeft(const QPointF & p);
+void _ZN6QRectF14moveBottomLeftERK7QPointF(void *that, const QPointF & p)
+{
+  QRectF *cthat = (QRectF *)that;
+   cthat->moveBottomLeft(p);
+}
+
   // proto:  void QRectF::moveBottom(qreal pos);
 void _ZN6QRectF10moveBottomEd(void *that, double pos)
 {
@@ -404,13 +427,6 @@ void _ZNK6QRectF7getRectEPdS0_S0_S0_(void *that, qreal * x, qreal * y, qreal * w
 {
   QRectF *cthat = (QRectF *)that;
    cthat->getRect(x, y, w, h);
-}
-
-  // proto:  void QRectF::moveBottomLeft(const QPointF & p);
-void _ZN6QRectF14moveBottomLeftERK7QPointF(void *that, const QPointF & p)
-{
-  QRectF *cthat = (QRectF *)that;
-   cthat->moveBottomLeft(p);
 }
 
   // proto:  void QRectF::setWidth(qreal w);
@@ -441,6 +457,13 @@ bool _ZNK6QRectF8containsEdd(void *that, double x, double y)
   return cthat->contains(x, y);
 }
 
+  // proto:  void QRectF::setX(qreal pos);
+void _ZN6QRectF4setXEd(void *that, double pos)
+{
+  QRectF *cthat = (QRectF *)that;
+   cthat->setX(pos);
+}
+
   // proto:  void QRectF::setRect(qreal x, qreal y, qreal w, qreal h);
 void _ZN6QRectF7setRectEdddd(void *that, double x, double y, double w, double h)
 {
@@ -461,6 +484,13 @@ QRectF* _ZNK6QRectF11intersectedERKS_(void *that, const QRectF & other)
   QRectF *cthat = (QRectF *)that;
   auto recret = cthat->intersected(other);
   return new QRectF(recret);
+}
+
+  // proto:  void QRectF::setY(qreal pos);
+void _ZN6QRectF4setYEd(void *that, double pos)
+{
+  QRectF *cthat = (QRectF *)that;
+   cthat->setY(pos);
 }
 
   // proto:  void QRectF::moveTopLeft(const QPointF & p);

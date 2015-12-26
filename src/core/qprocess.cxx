@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qprocess.h
 // dst-file: /src/core/qprocess.cxx
 //
@@ -55,6 +55,13 @@ QProcessEnvironment* dector_ZN19QProcessEnvironmentC1Ev()
   // static_assert(sizeof(QProcessEnvironment) == 32, "tyszerr");
   QProcessEnvironment* rthis = new QProcessEnvironment();
   return rthis;
+}
+
+  // proto:  void QProcessEnvironment::swap(QProcessEnvironment & other);
+void _ZN19QProcessEnvironment4swapERS_(void *that, QProcessEnvironment & other)
+{
+  QProcessEnvironment *cthat = (QProcessEnvironment *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

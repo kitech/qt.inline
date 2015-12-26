@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qstringlist.h
 // dst-file: /src/core/qstringlist.cxx
 //
@@ -14,25 +14,44 @@ int QStringList_Class_Size()
   return sizeof(QStringList);
 }
 
-  // proto:  int QStringList::indexOf(QRegExp & rx, int from);
-int _ZNK11QStringList7indexOfER7QRegExpi(void *that, QRegExp & rx, int from)
+// QStringList()
+QStringList* dector_ZN11QStringListC1Ev()
 {
-  QStringList *cthat = (QStringList *)that;
-  return cthat->indexOf(rx, from);
+  // static_assert(sizeof(QStringList) == 32, "tyszerr");
+  QStringList* rthis = new QStringList();
+  return rthis;
 }
 
-  // proto:  int QStringList::lastIndexOf(const QRegExp & rx, int from);
-int _ZNK11QStringList11lastIndexOfERK7QRegExpi(void *that, const QRegExp & rx, int from)
+// QStringList(QList<class QString> &&)
+QStringList* dector_ZN11QStringListC1EO5QListI7QStringE(QList<QString> && l)
 {
-  QStringList *cthat = (QStringList *)that;
-  return cthat->lastIndexOf(rx, from);
+  // static_assert(sizeof(QStringList) == 32, "tyszerr");
+  QStringList* rthis = new QStringList(l);
+  return rthis;
 }
 
-  // proto:  int QStringList::indexOf(const QRegularExpression & re, int from);
-int _ZNK11QStringList7indexOfERK18QRegularExpressioni(void *that, const QRegularExpression & re, int from)
+// QStringList(std::initializer_list<QString>)
+QStringList* dector_ZN11QStringListC1ESt16initializer_listI7QStringE(std::initializer_list<QString> args)
 {
-  QStringList *cthat = (QStringList *)that;
-  return cthat->indexOf(re, from);
+  // static_assert(sizeof(QStringList) == 32, "tyszerr");
+  QStringList* rthis = new QStringList(args);
+  return rthis;
+}
+
+// QStringList(const class QString &)
+QStringList* dector_ZN11QStringListC1ERK7QString(const QString & i)
+{
+  // static_assert(sizeof(QStringList) == 32, "tyszerr");
+  QStringList* rthis = new QStringList(i);
+  return rthis;
+}
+
+// QStringList(const QList<class QString> &)
+QStringList* dector_ZN11QStringListC1ERK5QListI7QStringE(const QList<QString> & l)
+{
+  // static_assert(sizeof(QStringList) == 32, "tyszerr");
+  QStringList* rthis = new QStringList(l);
+  return rthis;
 }
 
   // proto:  int QStringList::lastIndexOf(const QRegularExpression & re, int from);
@@ -49,6 +68,13 @@ bool _ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE(void *that, con
   return cthat->contains(str, cs);
 }
 
+  // proto:  void QStringList::QStringList();
+void _ZN11QStringListC1Ev(void *that)
+{
+  QStringList *cthat = (QStringList *)that;
+  auto _o = new(that) QStringList();
+}
+
   // proto:  int QStringList::indexOf(const QRegExp & rx, int from);
 int _ZNK11QStringList7indexOfERK7QRegExpi(void *that, const QRegExp & rx, int from)
 {
@@ -56,11 +82,60 @@ int _ZNK11QStringList7indexOfERK7QRegExpi(void *that, const QRegExp & rx, int fr
   return cthat->indexOf(rx, from);
 }
 
+  // proto:  void QStringList::QStringList(QList<QString> && l);
+void _ZN11QStringListC1EO5QListI7QStringE(void *that, QList<QString> && l)
+{
+  QStringList *cthat = (QStringList *)that;
+  auto _o = new(that) QStringList(l);
+}
+
+  // proto:  int QStringList::indexOf(QRegExp & rx, int from);
+int _ZNK11QStringList7indexOfER7QRegExpi(void *that, QRegExp & rx, int from)
+{
+  QStringList *cthat = (QStringList *)that;
+  return cthat->indexOf(rx, from);
+}
+
+  // proto:  int QStringList::indexOf(const QRegularExpression & re, int from);
+int _ZNK11QStringList7indexOfERK18QRegularExpressioni(void *that, const QRegularExpression & re, int from)
+{
+  QStringList *cthat = (QStringList *)that;
+  return cthat->indexOf(re, from);
+}
+
+  // proto:  int QStringList::lastIndexOf(const QRegExp & rx, int from);
+int _ZNK11QStringList11lastIndexOfERK7QRegExpi(void *that, const QRegExp & rx, int from)
+{
+  QStringList *cthat = (QStringList *)that;
+  return cthat->lastIndexOf(rx, from);
+}
+
   // proto:  int QStringList::lastIndexOf(QRegExp & rx, int from);
 int _ZNK11QStringList11lastIndexOfER7QRegExpi(void *that, QRegExp & rx, int from)
 {
   QStringList *cthat = (QStringList *)that;
   return cthat->lastIndexOf(rx, from);
+}
+
+  // proto:  void QStringList::QStringList(std::initializer_list<QString> args);
+void _ZN11QStringListC1ESt16initializer_listI7QStringE(void *that, std::initializer_list<QString> args)
+{
+  QStringList *cthat = (QStringList *)that;
+  auto _o = new(that) QStringList(args);
+}
+
+  // proto:  void QStringList::QStringList(const QString & i);
+void _ZN11QStringListC1ERK7QString(void *that, const QString & i)
+{
+  QStringList *cthat = (QStringList *)that;
+  auto _o = new(that) QStringList(i);
+}
+
+  // proto:  void QStringList::QStringList(const QList<QString> & l);
+void _ZN11QStringListC1ERK5QListI7QStringE(void *that, const QList<QString> & l)
+{
+  QStringList *cthat = (QStringList *)that;
+  auto _o = new(that) QStringList(l);
 }
 
 }; // <= extern "C" block end

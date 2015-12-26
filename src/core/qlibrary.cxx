@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
@@ -22,14 +22,6 @@ QLibrary* dector_ZN8QLibraryC1ERK7QStringS2_P7QObject(const QString & fileName, 
   return rthis;
 }
 
-// QLibrary(const class QString &, int, class QObject *)
-QLibrary* dector_ZN8QLibraryC1ERK7QStringiP7QObject(const QString & fileName, int verNum, QObject * parent)
-{
-  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
-  QLibrary* rthis = new QLibrary(fileName, verNum, parent);
-  return rthis;
-}
-
 // QLibrary(class QObject *)
 QLibrary* dector_ZN8QLibraryC1EP7QObject(QObject * parent)
 {
@@ -43,6 +35,14 @@ QLibrary* dector_ZN8QLibraryC1ERK7QStringP7QObject(const QString & fileName, QOb
 {
   // static_assert(sizeof(QLibrary) == 32, "tyszerr");
   QLibrary* rthis = new QLibrary(fileName, parent);
+  return rthis;
+}
+
+// QLibrary(const class QString &, int, class QObject *)
+QLibrary* dector_ZN8QLibraryC1ERK7QStringiP7QObject(const QString & fileName, int verNum, QObject * parent)
+{
+  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
+  QLibrary* rthis = new QLibrary(fileName, verNum, parent);
   return rthis;
 }
 

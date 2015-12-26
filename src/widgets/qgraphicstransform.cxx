@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qgraphicstransform.h
 // dst-file: /src/widgets/qgraphicstransform.cxx
 //
@@ -14,19 +14,19 @@ int QGraphicsRotation_Class_Size()
   return sizeof(QGraphicsRotation);
 }
 
-// ~QGraphicsRotation()
-void dedtor_ZN17QGraphicsRotationD0Ev(QGraphicsRotation* that)
-{
-  QGraphicsRotation* rthis = (QGraphicsRotation*)that;
-  delete rthis;
-}
-
 // QGraphicsRotation(class QObject *)
 QGraphicsRotation* dector_ZN17QGraphicsRotationC1EP7QObject(QObject * parent)
 {
   // static_assert(sizeof(QGraphicsRotation) == 32, "tyszerr");
   QGraphicsRotation* rthis = new QGraphicsRotation(parent);
   return rthis;
+}
+
+// ~QGraphicsRotation()
+void dedtor_ZN17QGraphicsRotationD0Ev(QGraphicsRotation* that)
+{
+  QGraphicsRotation* rthis = (QGraphicsRotation*)that;
+  delete rthis;
 }
 
 int QGraphicsScale_Class_Size()

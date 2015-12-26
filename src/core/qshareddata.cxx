@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qshareddata.h
 // dst-file: /src/core/qshareddata.cxx
 //
@@ -12,6 +12,36 @@ extern "C" {
 int QSharedData_Class_Size()
 {
   return sizeof(QSharedData);
+}
+
+// QSharedData()
+QSharedData* dector_ZN11QSharedDataC1Ev()
+{
+  // static_assert(sizeof(QSharedData) == 32, "tyszerr");
+  QSharedData* rthis = new QSharedData();
+  return rthis;
+}
+
+// QSharedData(const class QSharedData &)
+QSharedData* dector_ZN11QSharedDataC1ERKS_(const QSharedData & arg1)
+{
+  // static_assert(sizeof(QSharedData) == 32, "tyszerr");
+  QSharedData* rthis = new QSharedData(arg1);
+  return rthis;
+}
+
+  // proto:  void QSharedData::QSharedData();
+void _ZN11QSharedDataC1Ev(void *that)
+{
+  QSharedData *cthat = (QSharedData *)that;
+  auto _o = new(that) QSharedData();
+}
+
+  // proto:  void QSharedData::QSharedData(const QSharedData & );
+void _ZN11QSharedDataC1ERKS_(void *that, const QSharedData & arg1)
+{
+  QSharedData *cthat = (QSharedData *)that;
+  auto _o = new(that) QSharedData(arg1);
 }
 
 }; // <= extern "C" block end

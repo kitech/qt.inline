@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
@@ -45,9 +45,25 @@ QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFont(const QFont & arg1)
   return rthis;
 }
 
+  // proto:  QRect QFontMetrics::boundingRect(int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray);
+QRect* _ZNK12QFontMetrics12boundingRectEiiiiiRK7QStringiPi(void *that, int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray)
+{
+  QFontMetrics *cthat = (QFontMetrics *)that;
+  auto recret = cthat->boundingRect(x, y, w, h, flags, text, tabstops, tabarray);
+  return new QRect(recret);
+}
+
 int QFontMetricsF_Class_Size()
 {
   return sizeof(QFontMetricsF);
+}
+
+// QFontMetricsF(const class QFontMetricsF &)
+QFontMetricsF* dector_ZN13QFontMetricsFC1ERKS_(const QFontMetricsF & arg1)
+{
+  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
+  QFontMetricsF* rthis = new QFontMetricsF(arg1);
+  return rthis;
 }
 
 // ~QFontMetricsF()
@@ -59,14 +75,6 @@ void dedtor_ZN13QFontMetricsFD0Ev(QFontMetricsF* that)
 
 // QFontMetricsF(const class QFontMetrics &)
 QFontMetricsF* dector_ZN13QFontMetricsFC1ERK12QFontMetrics(const QFontMetrics & arg1)
-{
-  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
-  QFontMetricsF* rthis = new QFontMetricsF(arg1);
-  return rthis;
-}
-
-// QFontMetricsF(const class QFontMetricsF &)
-QFontMetricsF* dector_ZN13QFontMetricsFC1ERKS_(const QFontMetricsF & arg1)
 {
   // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
   QFontMetricsF* rthis = new QFontMetricsF(arg1);

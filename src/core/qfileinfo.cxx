@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qfileinfo.h
 // dst-file: /src/core/qfileinfo.cxx
 //
@@ -67,6 +67,28 @@ QFileInfo* dector_ZN9QFileInfoC1EP16QFileInfoPrivate(QFileInfoPrivate * d)
   // static_assert(sizeof(QFileInfo) == 32, "tyszerr");
   QFileInfo* rthis = new QFileInfo(d);
   return rthis;
+}
+
+  // proto:  QString QFileInfo::symLinkTarget();
+QString* _ZNK9QFileInfo13symLinkTargetEv(void *that)
+{
+  QFileInfo *cthat = (QFileInfo *)that;
+  auto recret = cthat->symLinkTarget();
+  return new QString(recret);
+}
+
+  // proto:  bool QFileInfo::isAbsolute();
+bool _ZNK9QFileInfo10isAbsoluteEv(void *that)
+{
+  QFileInfo *cthat = (QFileInfo *)that;
+  return cthat->isAbsolute();
+}
+
+  // proto:  void QFileInfo::swap(QFileInfo & other);
+void _ZN9QFileInfo4swapERS_(void *that, QFileInfo & other)
+{
+  QFileInfo *cthat = (QFileInfo *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

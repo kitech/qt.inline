@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qicon.h
 // dst-file: /src/gui/qicon.cxx
 //
@@ -22,6 +22,14 @@ QIcon* dector_ZN5QIconC1ERKS_(const QIcon & other)
   return rthis;
 }
 
+// QIcon(class QIcon &&)
+QIcon* dector_ZN5QIconC1EOS_(QIcon && other)
+{
+  // static_assert(sizeof(QIcon) == 32, "tyszerr");
+  QIcon* rthis = new QIcon(other);
+  return rthis;
+}
+
 // QIcon(const class QPixmap &)
 QIcon* dector_ZN5QIconC1ERK7QPixmap(const QPixmap & pixmap)
 {
@@ -30,19 +38,19 @@ QIcon* dector_ZN5QIconC1ERK7QPixmap(const QPixmap & pixmap)
   return rthis;
 }
 
-// QIcon(class QIconEngine *)
-QIcon* dector_ZN5QIconC1EP11QIconEngine(QIconEngine * engine)
-{
-  // static_assert(sizeof(QIcon) == 32, "tyszerr");
-  QIcon* rthis = new QIcon(engine);
-  return rthis;
-}
-
 // QIcon()
 QIcon* dector_ZN5QIconC1Ev()
 {
   // static_assert(sizeof(QIcon) == 32, "tyszerr");
   QIcon* rthis = new QIcon();
+  return rthis;
+}
+
+// QIcon(class QIconEngine *)
+QIcon* dector_ZN5QIconC1EP11QIconEngine(QIconEngine * engine)
+{
+  // static_assert(sizeof(QIcon) == 32, "tyszerr");
+  QIcon* rthis = new QIcon(engine);
   return rthis;
 }
 
@@ -59,6 +67,36 @@ QIcon* dector_ZN5QIconC1ERK7QString(const QString & fileName)
   // static_assert(sizeof(QIcon) == 32, "tyszerr");
   QIcon* rthis = new QIcon(fileName);
   return rthis;
+}
+
+  // proto:  QPixmap QIcon::pixmap(int extent, QIcon::Mode mode, QIcon::State state);
+QPixmap* _ZNK5QIcon6pixmapEiNS_4ModeENS_5StateE(void *that, int extent, QIcon::Mode mode, QIcon::State state)
+{
+  QIcon *cthat = (QIcon *)that;
+  auto recret = cthat->pixmap(extent, mode, state);
+  return new QPixmap(recret);
+}
+
+  // proto:  void QIcon::paint(QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment, QIcon::Mode mode, QIcon::State state);
+void _ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *that, QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment, QIcon::Mode mode, QIcon::State state)
+{
+  QIcon *cthat = (QIcon *)that;
+   cthat->paint(painter, x, y, w, h, alignment, mode, state);
+}
+
+  // proto:  QPixmap QIcon::pixmap(int w, int h, QIcon::Mode mode, QIcon::State state);
+QPixmap* _ZNK5QIcon6pixmapEiiNS_4ModeENS_5StateE(void *that, int w, int h, QIcon::Mode mode, QIcon::State state)
+{
+  QIcon *cthat = (QIcon *)that;
+  auto recret = cthat->pixmap(w, h, mode, state);
+  return new QPixmap(recret);
+}
+
+  // proto:  void QIcon::swap(QIcon & other);
+void _ZN5QIcon4swapERS_(void *that, QIcon & other)
+{
+  QIcon *cthat = (QIcon *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

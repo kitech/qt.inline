@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qsizegrip.h
 // dst-file: /src/widgets/qsizegrip.cxx
 //
@@ -14,19 +14,19 @@ int QSizeGrip_Class_Size()
   return sizeof(QSizeGrip);
 }
 
-// ~QSizeGrip()
-void dedtor_ZN9QSizeGripD0Ev(QSizeGrip* that)
-{
-  QSizeGrip* rthis = (QSizeGrip*)that;
-  delete rthis;
-}
-
 // QSizeGrip(class QWidget *)
 QSizeGrip* dector_ZN9QSizeGripC1EP7QWidget(QWidget * parent)
 {
   // static_assert(sizeof(QSizeGrip) == 32, "tyszerr");
   QSizeGrip* rthis = new QSizeGrip(parent);
   return rthis;
+}
+
+// ~QSizeGrip()
+void dedtor_ZN9QSizeGripD0Ev(QSizeGrip* that)
+{
+  QSizeGrip* rthis = (QSizeGrip*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qstorageinfo.h
 // dst-file: /src/core/qstorageinfo.cxx
 //
@@ -58,6 +58,13 @@ bool _ZNK12QStorageInfo6isRootEv(void *that)
 {
   QStorageInfo *cthat = (QStorageInfo *)that;
   return cthat->isRoot();
+}
+
+  // proto:  void QStorageInfo::swap(QStorageInfo & other);
+void _ZN12QStorageInfo4swapERS_(void *that, QStorageInfo & other)
+{
+  QStorageInfo *cthat = (QStorageInfo *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

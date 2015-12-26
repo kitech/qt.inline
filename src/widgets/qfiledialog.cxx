@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qfiledialog.h
 // dst-file: /src/widgets/qfiledialog.cxx
 //
@@ -14,6 +14,14 @@ int QFileDialog_Class_Size()
   return sizeof(QFileDialog);
 }
 
+// QFileDialog(class QWidget *, Qt::WindowFlags)
+QFileDialog* dector_ZN11QFileDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
+{
+  // static_assert(sizeof(QFileDialog) == 32, "tyszerr");
+  QFileDialog* rthis = new QFileDialog(parent, f);
+  return rthis;
+}
+
 // ~QFileDialog()
 void dedtor_ZN11QFileDialogD0Ev(QFileDialog* that)
 {
@@ -26,14 +34,6 @@ QFileDialog* dector_ZN11QFileDialogC1EP7QWidgetRK7QStringS4_S4_(QWidget * parent
 {
   // static_assert(sizeof(QFileDialog) == 32, "tyszerr");
   QFileDialog* rthis = new QFileDialog(parent, caption, directory, filter);
-  return rthis;
-}
-
-// QFileDialog(class QWidget *, Qt::WindowFlags)
-QFileDialog* dector_ZN11QFileDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
-{
-  // static_assert(sizeof(QFileDialog) == 32, "tyszerr");
-  QFileDialog* rthis = new QFileDialog(parent, f);
   return rthis;
 }
 

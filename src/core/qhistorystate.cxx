@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qhistorystate.h
 // dst-file: /src/core/qhistorystate.cxx
 //
@@ -12,13 +12,6 @@ extern "C" {
 int QHistoryState_Class_Size()
 {
   return sizeof(QHistoryState);
-}
-
-// ~QHistoryState()
-void dedtor_ZN13QHistoryStateD0Ev(QHistoryState* that)
-{
-  QHistoryState* rthis = (QHistoryState*)that;
-  delete rthis;
 }
 
 // QHistoryState(enum QHistoryState::HistoryType, class QState *)
@@ -35,6 +28,13 @@ QHistoryState* dector_ZN13QHistoryStateC1EP6QState(QState * parent)
   // static_assert(sizeof(QHistoryState) == 32, "tyszerr");
   QHistoryState* rthis = new QHistoryState(parent);
   return rthis;
+}
+
+// ~QHistoryState()
+void dedtor_ZN13QHistoryStateD0Ev(QHistoryState* that)
+{
+  QHistoryState* rthis = (QHistoryState*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qimagereader.h
 // dst-file: /src/gui/qimagereader.cxx
 //
@@ -29,19 +29,19 @@ QImageReader* dector_ZN12QImageReaderC1ERK7QStringRK10QByteArray(const QString &
   return rthis;
 }
 
-// QImageReader()
-QImageReader* dector_ZN12QImageReaderC1Ev()
-{
-  // static_assert(sizeof(QImageReader) == 32, "tyszerr");
-  QImageReader* rthis = new QImageReader();
-  return rthis;
-}
-
 // QImageReader(class QIODevice *, const class QByteArray &)
 QImageReader* dector_ZN12QImageReaderC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format)
 {
   // static_assert(sizeof(QImageReader) == 32, "tyszerr");
   QImageReader* rthis = new QImageReader(device, format);
+  return rthis;
+}
+
+// QImageReader()
+QImageReader* dector_ZN12QImageReaderC1Ev()
+{
+  // static_assert(sizeof(QImageReader) == 32, "tyszerr");
+  QImageReader* rthis = new QImageReader();
   return rthis;
 }
 

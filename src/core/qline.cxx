@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -38,11 +38,18 @@ QLine* dector_ZN5QLineC1Ev()
   return rthis;
 }
 
-  // proto:  void QLine::setLine(int x1, int y1, int x2, int y2);
-void _ZN5QLine7setLineEiiii(void *that, int x1, int y1, int x2, int y2)
+  // proto:  void QLine::setP2(const QPoint & p2);
+void _ZN5QLine5setP2ERK6QPoint(void *that, const QPoint & p2)
 {
   QLine *cthat = (QLine *)that;
-   cthat->setLine(x1, y1, x2, y2);
+   cthat->setP2(p2);
+}
+
+  // proto:  void QLine::setP1(const QPoint & p1);
+void _ZN5QLine5setP1ERK6QPoint(void *that, const QPoint & p1)
+{
+  QLine *cthat = (QLine *)that;
+   cthat->setP1(p1);
 }
 
   // proto:  void QLine::translate(const QPoint & p);
@@ -50,13 +57,6 @@ void _ZN5QLine9translateERK6QPoint(void *that, const QPoint & p)
 {
   QLine *cthat = (QLine *)that;
    cthat->translate(p);
-}
-
-  // proto:  void QLine::setP2(const QPoint & p2);
-void _ZN5QLine5setP2ERK6QPoint(void *that, const QPoint & p2)
-{
-  QLine *cthat = (QLine *)that;
-   cthat->setP2(p2);
 }
 
   // proto:  void QLine::translate(int dx, int dy);
@@ -73,11 +73,11 @@ void _ZN5QLine9setPointsERK6QPointS2_(void *that, const QPoint & p1, const QPoin
    cthat->setPoints(p1, p2);
 }
 
-  // proto:  void QLine::setP1(const QPoint & p1);
-void _ZN5QLine5setP1ERK6QPoint(void *that, const QPoint & p1)
+  // proto:  void QLine::setLine(int x1, int y1, int x2, int y2);
+void _ZN5QLine7setLineEiiii(void *that, int x1, int y1, int x2, int y2)
 {
   QLine *cthat = (QLine *)that;
-   cthat->setP1(p1);
+   cthat->setLine(x1, y1, x2, y2);
 }
 
 int QLineF_Class_Size()
@@ -90,6 +90,14 @@ QLineF* dector_ZN6QLineFC1ERK7QPointFS2_(const QPointF & pt1, const QPointF & pt
 {
   // static_assert(sizeof(QLineF) == 32, "tyszerr");
   QLineF* rthis = new QLineF(pt1, pt2);
+  return rthis;
+}
+
+// QLineF(const class QLine &)
+QLineF* dector_ZN6QLineFC1ERK5QLine(const QLine & line)
+{
+  // static_assert(sizeof(QLineF) == 32, "tyszerr");
+  QLineF* rthis = new QLineF(line);
   return rthis;
 }
 

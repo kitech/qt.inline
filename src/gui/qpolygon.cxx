@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpolygon.h
 // dst-file: /src/gui/qpolygon.cxx
 //
@@ -12,6 +12,29 @@ extern "C" {
 int QPolygon_Class_Size()
 {
   return sizeof(QPolygon);
+}
+
+// ~QPolygon()
+void dedtor_ZN8QPolygonD0Ev(QPolygon* that)
+{
+  QPolygon* rthis = (QPolygon*)that;
+  delete rthis;
+}
+
+// QPolygon(const QVector<class QPoint> &)
+QPolygon* dector_ZN8QPolygonC1ERK7QVectorI6QPointE(const QVector<QPoint> & v)
+{
+  // static_assert(sizeof(QPolygon) == 32, "tyszerr");
+  QPolygon* rthis = new QPolygon(v);
+  return rthis;
+}
+
+// QPolygon(const class QPolygon &)
+QPolygon* dector_ZN8QPolygonC1ERKS_(const QPolygon & a)
+{
+  // static_assert(sizeof(QPolygon) == 32, "tyszerr");
+  QPolygon* rthis = new QPolygon(a);
+  return rthis;
 }
 
 // QPolygon(int, const int *)
@@ -30,12 +53,56 @@ QPolygon* dector_ZN8QPolygonC1Ei(int size)
   return rthis;
 }
 
+// QPolygon()
+QPolygon* dector_ZN8QPolygonC1Ev()
+{
+  // static_assert(sizeof(QPolygon) == 32, "tyszerr");
+  QPolygon* rthis = new QPolygon();
+  return rthis;
+}
+
 // QPolygon(const class QRect &, _Bool)
 QPolygon* dector_ZN8QPolygonC1ERK5QRectb(const QRect & r, bool closed)
 {
   // static_assert(sizeof(QPolygon) == 32, "tyszerr");
   QPolygon* rthis = new QPolygon(r, closed);
   return rthis;
+}
+
+  // proto:  void QPolygon::~QPolygon();
+void _ZN8QPolygonD0Ev(void *that)
+{
+  QPolygon *cthat = (QPolygon *)that;
+   cthat->~QPolygon();
+}
+
+  // proto:  QPolygon QPolygon::translated(const QPoint & offset);
+QPolygon* _ZNK8QPolygon10translatedERK6QPoint(void *that, const QPoint & offset)
+{
+  QPolygon *cthat = (QPolygon *)that;
+  auto recret = cthat->translated(offset);
+  return new QPolygon(recret);
+}
+
+  // proto:  void QPolygon::QPolygon(const QVector<QPoint> & v);
+void _ZN8QPolygonC1ERK7QVectorI6QPointE(void *that, const QVector<QPoint> & v)
+{
+  QPolygon *cthat = (QPolygon *)that;
+  auto _o = new(that) QPolygon(v);
+}
+
+  // proto:  void QPolygon::swap(QPolygon & other);
+void _ZN8QPolygon4swapERS_(void *that, QPolygon & other)
+{
+  QPolygon *cthat = (QPolygon *)that;
+   cthat->swap(other);
+}
+
+  // proto:  void QPolygon::QPolygon(const QPolygon & a);
+void _ZN8QPolygonC1ERKS_(void *that, const QPolygon & a)
+{
+  QPolygon *cthat = (QPolygon *)that;
+  auto _o = new(that) QPolygon(a);
 }
 
   // proto:  void QPolygon::QPolygon(int size);
@@ -45,12 +112,11 @@ void _ZN8QPolygonC1Ei(void *that, int size)
   auto _o = new(that) QPolygon(size);
 }
 
-  // proto:  QPolygon QPolygon::translated(const QPoint & offset);
-QPolygon* _ZNK8QPolygon10translatedERK6QPoint(void *that, const QPoint & offset)
+  // proto:  void QPolygon::QPolygon();
+void _ZN8QPolygonC1Ev(void *that)
 {
   QPolygon *cthat = (QPolygon *)that;
-  auto recret = cthat->translated(offset);
-  return new QPolygon(recret);
+  auto _o = new(that) QPolygon();
 }
 
 int QPolygonF_Class_Size()
@@ -66,12 +132,27 @@ QPolygonF* dector_ZN9QPolygonFC1ERK8QPolygon(const QPolygon & a)
   return rthis;
 }
 
+// QPolygonF(const QVector<class QPointF> &)
+QPolygonF* dector_ZN9QPolygonFC1ERK7QVectorI7QPointFE(const QVector<QPointF> & v)
+{
+  // static_assert(sizeof(QPolygonF) == 32, "tyszerr");
+  QPolygonF* rthis = new QPolygonF(v);
+  return rthis;
+}
+
 // QPolygonF(const class QRectF &)
 QPolygonF* dector_ZN9QPolygonFC1ERK6QRectF(const QRectF & r)
 {
   // static_assert(sizeof(QPolygonF) == 32, "tyszerr");
   QPolygonF* rthis = new QPolygonF(r);
   return rthis;
+}
+
+// ~QPolygonF()
+void dedtor_ZN9QPolygonFD0Ev(QPolygonF* that)
+{
+  QPolygonF* rthis = (QPolygonF*)that;
+  delete rthis;
 }
 
 // QPolygonF(int)
@@ -82,6 +163,36 @@ QPolygonF* dector_ZN9QPolygonFC1Ei(int size)
   return rthis;
 }
 
+// QPolygonF()
+QPolygonF* dector_ZN9QPolygonFC1Ev()
+{
+  // static_assert(sizeof(QPolygonF) == 32, "tyszerr");
+  QPolygonF* rthis = new QPolygonF();
+  return rthis;
+}
+
+// QPolygonF(const class QPolygonF &)
+QPolygonF* dector_ZN9QPolygonFC1ERKS_(const QPolygonF & a)
+{
+  // static_assert(sizeof(QPolygonF) == 32, "tyszerr");
+  QPolygonF* rthis = new QPolygonF(a);
+  return rthis;
+}
+
+  // proto:  void QPolygonF::QPolygonF(const QVector<QPointF> & v);
+void _ZN9QPolygonFC1ERK7QVectorI7QPointFE(void *that, const QVector<QPointF> & v)
+{
+  QPolygonF *cthat = (QPolygonF *)that;
+  auto _o = new(that) QPolygonF(v);
+}
+
+  // proto:  void QPolygonF::~QPolygonF();
+void _ZN9QPolygonFD0Ev(void *that)
+{
+  QPolygonF *cthat = (QPolygonF *)that;
+   cthat->~QPolygonF();
+}
+
   // proto:  void QPolygonF::QPolygonF(int size);
 void _ZN9QPolygonFC1Ei(void *that, int size)
 {
@@ -89,11 +200,32 @@ void _ZN9QPolygonFC1Ei(void *that, int size)
   auto _o = new(that) QPolygonF(size);
 }
 
+  // proto:  void QPolygonF::QPolygonF();
+void _ZN9QPolygonFC1Ev(void *that)
+{
+  QPolygonF *cthat = (QPolygonF *)that;
+  auto _o = new(that) QPolygonF();
+}
+
+  // proto:  void QPolygonF::swap(QPolygonF & other);
+void _ZN9QPolygonF4swapERS_(void *that, QPolygonF & other)
+{
+  QPolygonF *cthat = (QPolygonF *)that;
+   cthat->swap(other);
+}
+
   // proto:  void QPolygonF::translate(qreal dx, qreal dy);
 void _ZN9QPolygonF9translateEdd(void *that, double dx, double dy)
 {
   QPolygonF *cthat = (QPolygonF *)that;
    cthat->translate(dx, dy);
+}
+
+  // proto:  void QPolygonF::QPolygonF(const QPolygonF & a);
+void _ZN9QPolygonFC1ERKS_(void *that, const QPolygonF & a)
+{
+  QPolygonF *cthat = (QPolygonF *)that;
+  auto _o = new(that) QPolygonF(a);
 }
 
   // proto:  QPolygonF QPolygonF::translated(qreal dx, qreal dy);

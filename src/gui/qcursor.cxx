@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qcursor.h
 // dst-file: /src/gui/qcursor.cxx
 //
@@ -45,6 +45,14 @@ QCursor* dector_ZN7QCursorC1ERKS_(const QCursor & cursor)
   return rthis;
 }
 
+// QCursor(class QCursor &&)
+QCursor* dector_ZN7QCursorC1EOS_(QCursor && other)
+{
+  // static_assert(sizeof(QCursor) == 32, "tyszerr");
+  QCursor* rthis = new QCursor(other);
+  return rthis;
+}
+
 // QCursor(Qt::CursorShape)
 QCursor* dector_ZN7QCursorC1EN2Qt11CursorShapeE(Qt::CursorShape shape)
 {
@@ -59,6 +67,27 @@ QCursor* dector_ZN7QCursorC1Ev()
   // static_assert(sizeof(QCursor) == 32, "tyszerr");
   QCursor* rthis = new QCursor();
   return rthis;
+}
+
+  // proto: static void QCursor::setPos(QScreen * screen, const QPoint & p);
+void _ZN7QCursor6setPosEP7QScreenRK6QPoint(void *that, QScreen * screen, const QPoint & p)
+{
+  QCursor *cthat = (QCursor *)that;
+   cthat->setPos(screen, p);
+}
+
+  // proto: static void QCursor::setPos(const QPoint & p);
+void _ZN7QCursor6setPosERK6QPoint(void *that, const QPoint & p)
+{
+  QCursor *cthat = (QCursor *)that;
+   cthat->setPos(p);
+}
+
+  // proto:  void QCursor::QCursor(QCursor && other);
+void _ZN7QCursorC1EOS_(void *that, QCursor && other)
+{
+  QCursor *cthat = (QCursor *)that;
+  auto _o = new(that) QCursor(other);
 }
 
 }; // <= extern "C" block end

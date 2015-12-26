@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -27,6 +27,21 @@ void dedtor_ZN15QGraphicsWidgetD0Ev(QGraphicsWidget* that)
 {
   QGraphicsWidget* rthis = (QGraphicsWidget*)that;
   delete rthis;
+}
+
+  // proto:  QRectF QGraphicsWidget::rect();
+QRectF* _ZNK15QGraphicsWidget4rectEv(void *that)
+{
+  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
+  auto recret = cthat->rect();
+  return new QRectF(recret);
+}
+
+  // proto:  void QGraphicsWidget::resize(qreal w, qreal h);
+void _ZN15QGraphicsWidget6resizeEdd(void *that, double w, double h)
+{
+  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
+   cthat->resize(w, h);
 }
 
   // proto:  void QGraphicsWidget::setGeometry(qreal x, qreal y, qreal w, qreal h);

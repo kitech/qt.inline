@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qcollator.h
 // dst-file: /src/core/qcollator.cxx
 //
@@ -34,6 +34,14 @@ QCollator* dector_ZN9QCollatorC1ERKS_(const QCollator & arg1)
 {
   // static_assert(sizeof(QCollator) == 32, "tyszerr");
   QCollator* rthis = new QCollator(arg1);
+  return rthis;
+}
+
+// QCollator(class QCollator &&)
+QCollator* dector_ZN9QCollatorC1EOS_(QCollator && other)
+{
+  // static_assert(sizeof(QCollator) == 32, "tyszerr");
+  QCollator* rthis = new QCollator(other);
   return rthis;
 }
 

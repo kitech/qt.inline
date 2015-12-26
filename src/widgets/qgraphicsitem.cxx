@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qgraphicsitem.h
 // dst-file: /src/widgets/qgraphicsitem.cxx
 //
@@ -219,6 +219,14 @@ int QGraphicsLineItem_Class_Size()
   return sizeof(QGraphicsLineItem);
 }
 
+// QGraphicsLineItem(class QGraphicsItem *)
+QGraphicsLineItem* dector_ZN17QGraphicsLineItemC1EP13QGraphicsItem(QGraphicsItem * parent)
+{
+  // static_assert(sizeof(QGraphicsLineItem) == 32, "tyszerr");
+  QGraphicsLineItem* rthis = new QGraphicsLineItem(parent);
+  return rthis;
+}
+
 // QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
 QGraphicsLineItem* dector_ZN17QGraphicsLineItemC1ERK6QLineFP13QGraphicsItem(const QLineF & line, QGraphicsItem * parent)
 {
@@ -235,19 +243,18 @@ QGraphicsLineItem* dector_ZN17QGraphicsLineItemC1EddddP13QGraphicsItem(double x1
   return rthis;
 }
 
-// QGraphicsLineItem(class QGraphicsItem *)
-QGraphicsLineItem* dector_ZN17QGraphicsLineItemC1EP13QGraphicsItem(QGraphicsItem * parent)
-{
-  // static_assert(sizeof(QGraphicsLineItem) == 32, "tyszerr");
-  QGraphicsLineItem* rthis = new QGraphicsLineItem(parent);
-  return rthis;
-}
-
 // ~QGraphicsLineItem()
 void dedtor_ZN17QGraphicsLineItemD0Ev(QGraphicsLineItem* that)
 {
   QGraphicsLineItem* rthis = (QGraphicsLineItem*)that;
   delete rthis;
+}
+
+  // proto:  void QGraphicsLineItem::setLine(qreal x1, qreal y1, qreal x2, qreal y2);
+void _ZN17QGraphicsLineItem7setLineEdddd(void *that, double x1, double y1, double x2, double y2)
+{
+  QGraphicsLineItem *cthat = (QGraphicsLineItem *)that;
+   cthat->setLine(x1, y1, x2, y2);
 }
 
 int QGraphicsItemGroup_Class_Size()
@@ -405,6 +412,28 @@ QRectF* _ZNK13QGraphicsItem16mapRectFromSceneEdddd(void *that, double x, double 
   return new QRectF(recret);
 }
 
+  // proto:  void QGraphicsItem::setTransformOriginPoint(qreal ax, qreal ay);
+void _ZN13QGraphicsItem23setTransformOriginPointEdd(void *that, double ax, double ay)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+   cthat->setTransformOriginPoint(ax, ay);
+}
+
+  // proto:  void QGraphicsItem::moveBy(qreal dx, qreal dy);
+void _ZN13QGraphicsItem6moveByEdd(void *that, double dx, double dy)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+   cthat->moveBy(dx, dy);
+}
+
+  // proto:  QPointF QGraphicsItem::mapFromScene(qreal x, qreal y);
+QPointF* _ZNK13QGraphicsItem12mapFromSceneEdd(void *that, double x, double y)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+  auto recret = cthat->mapFromScene(x, y);
+  return new QPointF(recret);
+}
+
   // proto:  QPolygonF QGraphicsItem::mapToParent(qreal x, qreal y, qreal w, qreal h);
 QPolygonF* _ZNK13QGraphicsItem11mapToParentEdddd(void *that, double x, double y, double w, double h)
 {
@@ -419,6 +448,20 @@ QRectF* _ZNK13QGraphicsItem17mapRectFromParentEdddd(void *that, double x, double
   QGraphicsItem *cthat = (QGraphicsItem *)that;
   auto recret = cthat->mapRectFromParent(x, y, w, h);
   return new QRectF(recret);
+}
+
+  // proto:  void QGraphicsItem::show();
+void _ZN13QGraphicsItem4showEv(void *that)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+   cthat->show();
+}
+
+  // proto:  qreal QGraphicsItem::y();
+qreal _ZNK13QGraphicsItem1yEv(void *that)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+  return cthat->y();
 }
 
   // proto:  void QGraphicsItem::setPos(qreal x, qreal y);
@@ -436,12 +479,11 @@ QPointF* _ZNK13QGraphicsItem11mapToParentEdd(void *that, double x, double y)
   return new QPointF(recret);
 }
 
-  // proto:  QPointF QGraphicsItem::mapFromScene(qreal x, qreal y);
-QPointF* _ZNK13QGraphicsItem12mapFromSceneEdd(void *that, double x, double y)
+  // proto:  void QGraphicsItem::hide();
+void _ZN13QGraphicsItem4hideEv(void *that)
 {
   QGraphicsItem *cthat = (QGraphicsItem *)that;
-  auto recret = cthat->mapFromScene(x, y);
-  return new QPointF(recret);
+   cthat->hide();
 }
 
   // proto:  QRectF QGraphicsItem::mapRectToScene(qreal x, qreal y, qreal w, qreal h);
@@ -450,6 +492,13 @@ QRectF* _ZNK13QGraphicsItem14mapRectToSceneEdddd(void *that, double x, double y,
   QGraphicsItem *cthat = (QGraphicsItem *)that;
   auto recret = cthat->mapRectToScene(x, y, w, h);
   return new QRectF(recret);
+}
+
+  // proto:  qreal QGraphicsItem::x();
+qreal _ZNK13QGraphicsItem1xEv(void *that)
+{
+  QGraphicsItem *cthat = (QGraphicsItem *)that;
+  return cthat->x();
 }
 
 int QGraphicsObject_Class_Size()

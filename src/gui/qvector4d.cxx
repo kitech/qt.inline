@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qvector4d.h
 // dst-file: /src/gui/qvector4d.cxx
 //
@@ -43,6 +43,14 @@ QVector4D* dector_ZN9QVector4DC1ERK9QVector3Df(const QVector3D & vector, float w
 {
   // static_assert(sizeof(QVector4D) == 32, "tyszerr");
   QVector4D* rthis = new QVector4D(vector, wpos);
+  return rthis;
+}
+
+// QVector4D(Qt::Initialization)
+QVector4D* dector_ZN9QVector4DC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QVector4D) == 32, "tyszerr");
+  QVector4D* rthis = new QVector4D(arg1);
   return rthis;
 }
 

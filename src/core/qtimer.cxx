@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qtimer.h
 // dst-file: /src/core/qtimer.cxx
 //
@@ -34,6 +34,20 @@ void _ZN6QTimer13setSingleShotEb(void *that, bool singleShot)
 {
   QTimer *cthat = (QTimer *)that;
    cthat->setSingleShot(singleShot);
+}
+
+  // proto:  bool QTimer::isSingleShot();
+bool _ZNK6QTimer12isSingleShotEv(void *that)
+{
+  QTimer *cthat = (QTimer *)that;
+  return cthat->isSingleShot();
+}
+
+  // proto:  bool QTimer::isActive();
+bool _ZNK6QTimer8isActiveEv(void *that)
+{
+  QTimer *cthat = (QTimer *)that;
+  return cthat->isActive();
 }
 
 }; // <= extern "C" block end

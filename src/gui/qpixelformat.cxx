@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpixelformat.h
 // dst-file: /src/gui/qpixelformat.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QPixelFormat_Class_Size()
 {
   return sizeof(QPixelFormat);
+}
+
+// QPixelFormat()
+QPixelFormat* dector_ZN12QPixelFormatC1Ev()
+{
+  // static_assert(sizeof(QPixelFormat) == 32, "tyszerr");
+  QPixelFormat* rthis = new QPixelFormat();
+  return rthis;
 }
 
 // QPixelFormat(enum QPixelFormat::ColorModel, uchar, uchar, uchar, uchar, uchar, uchar, enum QPixelFormat::AlphaUsage, enum QPixelFormat::AlphaPosition, enum QPixelFormat::AlphaPremultiplied, enum QPixelFormat::TypeInterpretation, enum QPixelFormat::ByteOrder, uchar)

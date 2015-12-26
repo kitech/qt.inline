@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qtextboundaryfinder.h
 // dst-file: /src/core/qtextboundaryfinder.cxx
 //
@@ -51,6 +51,13 @@ QTextBoundaryFinder* dector_ZN19QTextBoundaryFinderC1ENS_12BoundaryTypeERK7QStri
   // static_assert(sizeof(QTextBoundaryFinder) == 48, "tyszerr");
   QTextBoundaryFinder* rthis = new QTextBoundaryFinder(type, string);
   return rthis;
+}
+
+  // proto:  bool QTextBoundaryFinder::isValid();
+bool _ZNK19QTextBoundaryFinder7isValidEv(void *that)
+{
+  QTextBoundaryFinder *cthat = (QTextBoundaryFinder *)that;
+  return cthat->isValid();
 }
 
 }; // <= extern "C" block end

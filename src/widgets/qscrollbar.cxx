@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qscrollbar.h
 // dst-file: /src/widgets/qscrollbar.cxx
 //
@@ -14,6 +14,14 @@ int QScrollBar_Class_Size()
   return sizeof(QScrollBar);
 }
 
+// QScrollBar(class QWidget *)
+QScrollBar* dector_ZN10QScrollBarC1EP7QWidget(QWidget * parent)
+{
+  // static_assert(sizeof(QScrollBar) == 32, "tyszerr");
+  QScrollBar* rthis = new QScrollBar(parent);
+  return rthis;
+}
+
 // ~QScrollBar()
 void dedtor_ZN10QScrollBarD0Ev(QScrollBar* that)
 {
@@ -26,14 +34,6 @@ QScrollBar* dector_ZN10QScrollBarC1EN2Qt11OrientationEP7QWidget(Qt::Orientation 
 {
   // static_assert(sizeof(QScrollBar) == 32, "tyszerr");
   QScrollBar* rthis = new QScrollBar(arg1, parent);
-  return rthis;
-}
-
-// QScrollBar(class QWidget *)
-QScrollBar* dector_ZN10QScrollBarC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QScrollBar) == 32, "tyszerr");
-  QScrollBar* rthis = new QScrollBar(parent);
   return rthis;
 }
 

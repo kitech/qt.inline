@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -42,19 +42,19 @@ int QDoubleValidator_Class_Size()
   return sizeof(QDoubleValidator);
 }
 
+// ~QDoubleValidator()
+void dedtor_ZN16QDoubleValidatorD0Ev(QDoubleValidator* that)
+{
+  QDoubleValidator* rthis = (QDoubleValidator*)that;
+  delete rthis;
+}
+
 // QDoubleValidator(class QObject *)
 QDoubleValidator* dector_ZN16QDoubleValidatorC1EP7QObject(QObject * parent)
 {
   // static_assert(sizeof(QDoubleValidator) == 32, "tyszerr");
   QDoubleValidator* rthis = new QDoubleValidator(parent);
   return rthis;
-}
-
-// ~QDoubleValidator()
-void dedtor_ZN16QDoubleValidatorD0Ev(QDoubleValidator* that)
-{
-  QDoubleValidator* rthis = (QDoubleValidator*)that;
-  delete rthis;
 }
 
 // QDoubleValidator(double, double, int, class QObject *)
@@ -103,6 +103,13 @@ int QRegExpValidator_Class_Size()
   return sizeof(QRegExpValidator);
 }
 
+// ~QRegExpValidator()
+void dedtor_ZN16QRegExpValidatorD0Ev(QRegExpValidator* that)
+{
+  QRegExpValidator* rthis = (QRegExpValidator*)that;
+  delete rthis;
+}
+
 // QRegExpValidator(const class QRegExp &, class QObject *)
 QRegExpValidator* dector_ZN16QRegExpValidatorC1ERK7QRegExpP7QObject(const QRegExp & rx, QObject * parent)
 {
@@ -117,13 +124,6 @@ QRegExpValidator* dector_ZN16QRegExpValidatorC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QRegExpValidator) == 32, "tyszerr");
   QRegExpValidator* rthis = new QRegExpValidator(parent);
   return rthis;
-}
-
-// ~QRegExpValidator()
-void dedtor_ZN16QRegExpValidatorD0Ev(QRegExpValidator* that)
-{
-  QRegExpValidator* rthis = (QRegExpValidator*)that;
-  delete rthis;
 }
 
 }; // <= extern "C" block end

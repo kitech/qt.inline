@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qvariant.h
 // dst-file: /src/core/qvariant.cxx
 //
@@ -12,6 +12,21 @@ extern "C" {
 int QVariantComparisonHelper_Class_Size()
 {
   return sizeof(QVariantComparisonHelper);
+}
+
+// QVariantComparisonHelper(const class QVariant &)
+QVariantComparisonHelper* dector_ZN24QVariantComparisonHelperC1ERK8QVariant(const QVariant & var)
+{
+  // static_assert(sizeof(QVariantComparisonHelper) == 32, "tyszerr");
+  QVariantComparisonHelper* rthis = new QVariantComparisonHelper(var);
+  return rthis;
+}
+
+  // proto:  void QVariantComparisonHelper::QVariantComparisonHelper(const QVariant & var);
+void _ZN24QVariantComparisonHelperC1ERK8QVariant(void *that, const QVariant & var)
+{
+  QVariantComparisonHelper *cthat = (QVariantComparisonHelper *)that;
+  auto _o = new(that) QVariantComparisonHelper(var);
 }
 
 int QVariant_Class_Size()
@@ -48,6 +63,14 @@ QVariant* dector_ZN8QVariantC1ERK7QString(const QString & string)
 {
   // static_assert(sizeof(QVariant) == 32, "tyszerr");
   QVariant* rthis = new QVariant(string);
+  return rthis;
+}
+
+// QVariant(const class QJsonObject &)
+QVariant* dector_ZN8QVariantC1ERK11QJsonObject(const QJsonObject & jsonObject)
+{
+  // static_assert(sizeof(QVariant) == 32, "tyszerr");
+  QVariant* rthis = new QVariant(jsonObject);
   return rthis;
 }
 
@@ -171,14 +194,6 @@ QVariant* dector_ZN8QVariantC1ERK5QRect(const QRect & rect)
   return rthis;
 }
 
-// QVariant(const class QVariant &)
-QVariant* dector_ZN8QVariantC1ERKS_(const QVariant & other)
-{
-  // static_assert(sizeof(QVariant) == 32, "tyszerr");
-  QVariant* rthis = new QVariant(other);
-  return rthis;
-}
-
 // QVariant(int, const void *, uint)
 QVariant* dector_ZN8QVariantC1EiPKvj(int typeId, const void * copy, unsigned int flags)
 {
@@ -266,14 +281,6 @@ QVariant* dector_ZN8QVariantC1ERK9QDateTime(const QDateTime & datetime)
   return rthis;
 }
 
-// QVariant(const class QJsonObject &)
-QVariant* dector_ZN8QVariantC1ERK11QJsonObject(const QJsonObject & jsonObject)
-{
-  // static_assert(sizeof(QVariant) == 32, "tyszerr");
-  QVariant* rthis = new QVariant(jsonObject);
-  return rthis;
-}
-
 // QVariant(class QChar)
 QVariant* dector_ZN8QVariantC1E5QChar(QChar qchar)
 {
@@ -306,11 +313,27 @@ QVariant* dector_ZN8QVariantC1ERK10QByteArray(const QByteArray & bytearray)
   return rthis;
 }
 
+// QVariant(qlonglong)
+QVariant* dector_ZN8QVariantC1Ex(qint64 ll)
+{
+  // static_assert(sizeof(QVariant) == 32, "tyszerr");
+  QVariant* rthis = new QVariant(ll);
+  return rthis;
+}
+
 // QVariant(qulonglong)
 QVariant* dector_ZN8QVariantC1Ey(quint64 ull)
 {
   // static_assert(sizeof(QVariant) == 32, "tyszerr");
   QVariant* rthis = new QVariant(ull);
+  return rthis;
+}
+
+// QVariant()
+QVariant* dector_ZN8QVariantC1Ev()
+{
+  // static_assert(sizeof(QVariant) == 32, "tyszerr");
+  QVariant* rthis = new QVariant();
   return rthis;
 }
 
@@ -362,11 +385,11 @@ QVariant* dector_ZN8QVariantC1ERK4QUrl(const QUrl & url)
   return rthis;
 }
 
-// QVariant(qlonglong)
-QVariant* dector_ZN8QVariantC1Ex(qint64 ll)
+// QVariant(const class QVariant &)
+QVariant* dector_ZN8QVariantC1ERKS_(const QVariant & other)
 {
   // static_assert(sizeof(QVariant) == 32, "tyszerr");
-  QVariant* rthis = new QVariant(ll);
+  QVariant* rthis = new QVariant(other);
   return rthis;
 }
 
@@ -386,6 +409,14 @@ QVariant* dector_ZN8QVariantC1ERK11QStringList(const QStringList & stringlist)
   return rthis;
 }
 
+// QVariant(class QVariant &&)
+QVariant* dector_ZN8QVariantC1EOS_(QVariant && other)
+{
+  // static_assert(sizeof(QVariant) == 32, "tyszerr");
+  QVariant* rthis = new QVariant(other);
+  return rthis;
+}
+
   // proto:  bool QVariant::isValid();
 bool _ZNK8QVariant7isValidEv(void *that)
 {
@@ -393,11 +424,32 @@ bool _ZNK8QVariant7isValidEv(void *that)
   return cthat->isValid();
 }
 
+  // proto:  const void * QVariant::data();
+const void * _ZNK8QVariant4dataEv(void *that)
+{
+  QVariant *cthat = (QVariant *)that;
+  return cthat->data();
+}
+
+  // proto:  void QVariant::swap(QVariant & other);
+void _ZN8QVariant4swapERS_(void *that, QVariant & other)
+{
+  QVariant *cthat = (QVariant *)that;
+   cthat->swap(other);
+}
+
   // proto:  bool QVariant::isDetached();
 bool _ZNK8QVariant10isDetachedEv(void *that)
 {
   QVariant *cthat = (QVariant *)that;
   return cthat->isDetached();
+}
+
+  // proto:  void QVariant::QVariant(QVariant && other);
+void _ZN8QVariantC1EOS_(void *that, QVariant && other)
+{
+  QVariant *cthat = (QVariant *)that;
+  auto _o = new(that) QVariant(other);
 }
 
 int QSequentialIterable_Class_Size()

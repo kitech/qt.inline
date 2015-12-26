@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -12,6 +12,35 @@ extern "C" {
 int QTextLine_Class_Size()
 {
   return sizeof(QTextLine);
+}
+
+// QTextLine()
+QTextLine* dector_ZN9QTextLineC1Ev()
+{
+  // static_assert(sizeof(QTextLine) == 32, "tyszerr");
+  QTextLine* rthis = new QTextLine();
+  return rthis;
+}
+
+  // proto:  qreal QTextLine::cursorToX(int cursorPos, QTextLine::Edge edge);
+qreal _ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextLine::Edge edge)
+{
+  QTextLine *cthat = (QTextLine *)that;
+  return cthat->cursorToX(cursorPos, edge);
+}
+
+  // proto:  void QTextLine::QTextLine();
+void _ZN9QTextLineC1Ev(void *that)
+{
+  QTextLine *cthat = (QTextLine *)that;
+  auto _o = new(that) QTextLine();
+}
+
+  // proto:  bool QTextLine::isValid();
+bool _ZNK9QTextLine7isValidEv(void *that)
+{
+  QTextLine *cthat = (QTextLine *)that;
+  return cthat->isValid();
 }
 
 int QTextLayout_Class_Size()
@@ -61,6 +90,43 @@ QTextLayout* dector_ZN11QTextLayoutC1Ev()
 int QTextInlineObject_Class_Size()
 {
   return sizeof(QTextInlineObject);
+}
+
+// QTextInlineObject(int, class QTextEngine *)
+QTextInlineObject* dector_ZN17QTextInlineObjectC1EiP11QTextEngine(int i, QTextEngine * e)
+{
+  // static_assert(sizeof(QTextInlineObject) == 32, "tyszerr");
+  QTextInlineObject* rthis = new QTextInlineObject(i, e);
+  return rthis;
+}
+
+// QTextInlineObject()
+QTextInlineObject* dector_ZN17QTextInlineObjectC1Ev()
+{
+  // static_assert(sizeof(QTextInlineObject) == 32, "tyszerr");
+  QTextInlineObject* rthis = new QTextInlineObject();
+  return rthis;
+}
+
+  // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
+void _ZN17QTextInlineObjectC1EiP11QTextEngine(void *that, int i, QTextEngine * e)
+{
+  QTextInlineObject *cthat = (QTextInlineObject *)that;
+  auto _o = new(that) QTextInlineObject(i, e);
+}
+
+  // proto:  bool QTextInlineObject::isValid();
+bool _ZNK17QTextInlineObject7isValidEv(void *that)
+{
+  QTextInlineObject *cthat = (QTextInlineObject *)that;
+  return cthat->isValid();
+}
+
+  // proto:  void QTextInlineObject::QTextInlineObject();
+void _ZN17QTextInlineObjectC1Ev(void *that)
+{
+  QTextInlineObject *cthat = (QTextInlineObject *)that;
+  auto _o = new(that) QTextInlineObject();
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -43,6 +43,28 @@ QUrl* dector_ZN4QUrlC1ERK7QStringNS_11ParsingModeE(const QString & url, QUrl::Pa
   // static_assert(sizeof(QUrl) == 32, "tyszerr");
   QUrl* rthis = new QUrl(url, mode);
   return rthis;
+}
+
+// QUrl(class QUrl &&)
+QUrl* dector_ZN4QUrlC1EOS_(QUrl && other)
+{
+  // static_assert(sizeof(QUrl) == 32, "tyszerr");
+  QUrl* rthis = new QUrl(other);
+  return rthis;
+}
+
+  // proto:  void QUrl::swap(QUrl & other);
+void _ZN4QUrl4swapERS_(void *that, QUrl & other)
+{
+  QUrl *cthat = (QUrl *)that;
+   cthat->swap(other);
+}
+
+  // proto:  void QUrl::QUrl(QUrl && other);
+void _ZN4QUrlC1EOS_(void *that, QUrl && other)
+{
+  QUrl *cthat = (QUrl *)that;
+  auto _o = new(that) QUrl(other);
 }
 
 }; // <= extern "C" block end

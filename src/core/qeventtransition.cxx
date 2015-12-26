@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qeventtransition.h
 // dst-file: /src/core/qeventtransition.cxx
 //
@@ -12,6 +12,13 @@ extern "C" {
 int QEventTransition_Class_Size()
 {
   return sizeof(QEventTransition);
+}
+
+// ~QEventTransition()
+void dedtor_ZN16QEventTransitionD0Ev(QEventTransition* that)
+{
+  QEventTransition* rthis = (QEventTransition*)that;
+  delete rthis;
 }
 
 // QEventTransition(class QObject *, class QEvent::Type, class QState *)
@@ -28,13 +35,6 @@ QEventTransition* dector_ZN16QEventTransitionC1EP6QState(QState * sourceState)
   // static_assert(sizeof(QEventTransition) == 32, "tyszerr");
   QEventTransition* rthis = new QEventTransition(sourceState);
   return rthis;
-}
-
-// ~QEventTransition()
-void dedtor_ZN16QEventTransitionD0Ev(QEventTransition* that)
-{
-  QEventTransition* rthis = (QEventTransition*)that;
-  delete rthis;
 }
 
 }; // <= extern "C" block end

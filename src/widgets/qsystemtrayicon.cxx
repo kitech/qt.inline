@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qsystemtrayicon.h
 // dst-file: /src/widgets/qsystemtrayicon.cxx
 //
@@ -35,6 +35,20 @@ QSystemTrayIcon* dector_ZN15QSystemTrayIconC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QSystemTrayIcon) == 32, "tyszerr");
   QSystemTrayIcon* rthis = new QSystemTrayIcon(parent);
   return rthis;
+}
+
+  // proto:  void QSystemTrayIcon::hide();
+void _ZN15QSystemTrayIcon4hideEv(void *that)
+{
+  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
+   cthat->hide();
+}
+
+  // proto:  void QSystemTrayIcon::show();
+void _ZN15QSystemTrayIcon4showEv(void *that)
+{
+  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
+   cthat->show();
 }
 
 }; // <= extern "C" block end

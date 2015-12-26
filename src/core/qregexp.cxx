@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qregexp.h
 // dst-file: /src/core/qregexp.cxx
 //
@@ -43,6 +43,13 @@ QRegExp* dector_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE
   // static_assert(sizeof(QRegExp) == 32, "tyszerr");
   QRegExp* rthis = new QRegExp(pattern, cs, syntax);
   return rthis;
+}
+
+  // proto:  void QRegExp::swap(QRegExp & other);
+void _ZN7QRegExp4swapERS_(void *that, QRegExp & other)
+{
+  QRegExp *cthat = (QRegExp *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

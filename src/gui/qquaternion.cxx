@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -43,6 +43,14 @@ QQuaternion* dector_ZN11QQuaternionC1EfRK9QVector3D(float scalar, const QVector3
 {
   // static_assert(sizeof(QQuaternion) == 32, "tyszerr");
   QQuaternion* rthis = new QQuaternion(scalar, vector);
+  return rthis;
+}
+
+// QQuaternion(Qt::Initialization)
+QQuaternion* dector_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization arg1)
+{
+  // static_assert(sizeof(QQuaternion) == 32, "tyszerr");
+  QQuaternion* rthis = new QQuaternion(arg1);
   return rthis;
 }
 

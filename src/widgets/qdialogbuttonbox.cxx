@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qdialogbuttonbox.h
 // dst-file: /src/widgets/qdialogbuttonbox.cxx
 //
@@ -12,13 +12,6 @@ extern "C" {
 int QDialogButtonBox_Class_Size()
 {
   return sizeof(QDialogButtonBox);
-}
-
-// ~QDialogButtonBox()
-void dedtor_ZN16QDialogButtonBoxD0Ev(QDialogButtonBox* that)
-{
-  QDialogButtonBox* rthis = (QDialogButtonBox*)that;
-  delete rthis;
 }
 
 // QDialogButtonBox(Qt::Orientation, class QWidget *)
@@ -35,6 +28,13 @@ QDialogButtonBox* dector_ZN16QDialogButtonBoxC1E6QFlagsINS_14StandardButtonEEN2Q
   // static_assert(sizeof(QDialogButtonBox) == 32, "tyszerr");
   QDialogButtonBox* rthis = new QDialogButtonBox(buttons, orientation, parent);
   return rthis;
+}
+
+// ~QDialogButtonBox()
+void dedtor_ZN16QDialogButtonBoxD0Ev(QDialogButtonBox* that)
+{
+  QDialogButtonBox* rthis = (QDialogButtonBox*)that;
+  delete rthis;
 }
 
 // QDialogButtonBox(class QWidget *)

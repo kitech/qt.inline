@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qopenglfunctions.h
 // dst-file: /src/gui/qopenglfunctions.cxx
 //
@@ -17,6 +17,13 @@ int QOpenGLFunctionsPrivate_Class_Size()
 int QOpenGLFunctions_Class_Size()
 {
   return sizeof(QOpenGLFunctions);
+}
+
+// ~QOpenGLFunctions()
+void dedtor_ZN16QOpenGLFunctionsD0Ev(QOpenGLFunctions* that)
+{
+  QOpenGLFunctions* rthis = (QOpenGLFunctions*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

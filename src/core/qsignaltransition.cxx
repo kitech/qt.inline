@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qsignaltransition.h
 // dst-file: /src/core/qsignaltransition.cxx
 //
@@ -12,6 +12,13 @@ extern "C" {
 int QSignalTransition_Class_Size()
 {
   return sizeof(QSignalTransition);
+}
+
+// ~QSignalTransition()
+void dedtor_ZN17QSignalTransitionD0Ev(QSignalTransition* that)
+{
+  QSignalTransition* rthis = (QSignalTransition*)that;
+  delete rthis;
 }
 
 // QSignalTransition(const class QObject *, const char *, class QState *)
@@ -28,13 +35,6 @@ QSignalTransition* dector_ZN17QSignalTransitionC1EP6QState(QState * sourceState)
   // static_assert(sizeof(QSignalTransition) == 32, "tyszerr");
   QSignalTransition* rthis = new QSignalTransition(sourceState);
   return rthis;
-}
-
-// ~QSignalTransition()
-void dedtor_ZN17QSignalTransitionD0Ev(QSignalTransition* that)
-{
-  QSignalTransition* rthis = (QSignalTransition*)that;
-  delete rthis;
 }
 
 }; // <= extern "C" block end

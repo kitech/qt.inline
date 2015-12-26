@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qgesture.h
 // dst-file: /src/widgets/qgesture.cxx
 //
@@ -94,19 +94,19 @@ int QTapAndHoldGesture_Class_Size()
   return sizeof(QTapAndHoldGesture);
 }
 
-// ~QTapAndHoldGesture()
-void dedtor_ZN18QTapAndHoldGestureD0Ev(QTapAndHoldGesture* that)
-{
-  QTapAndHoldGesture* rthis = (QTapAndHoldGesture*)that;
-  delete rthis;
-}
-
 // QTapAndHoldGesture(class QObject *)
 QTapAndHoldGesture* dector_ZN18QTapAndHoldGestureC1EP7QObject(QObject * parent)
 {
   // static_assert(sizeof(QTapAndHoldGesture) == 32, "tyszerr");
   QTapAndHoldGesture* rthis = new QTapAndHoldGesture(parent);
   return rthis;
+}
+
+// ~QTapAndHoldGesture()
+void dedtor_ZN18QTapAndHoldGestureD0Ev(QTapAndHoldGesture* that)
+{
+  QTapAndHoldGesture* rthis = (QTapAndHoldGesture*)that;
+  delete rthis;
 }
 
 int QTapGesture_Class_Size()

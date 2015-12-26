@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qpushbutton.h
 // dst-file: /src/widgets/qpushbutton.cxx
 //
@@ -29,19 +29,19 @@ QPushButton* dector_ZN11QPushButtonC1ERK5QIconRK7QStringP7QWidget(const QIcon & 
   return rthis;
 }
 
-// QPushButton(const class QString &, class QWidget *)
-QPushButton* dector_ZN11QPushButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
-{
-  // static_assert(sizeof(QPushButton) == 32, "tyszerr");
-  QPushButton* rthis = new QPushButton(text, parent);
-  return rthis;
-}
-
 // QPushButton(class QWidget *)
 QPushButton* dector_ZN11QPushButtonC1EP7QWidget(QWidget * parent)
 {
   // static_assert(sizeof(QPushButton) == 32, "tyszerr");
   QPushButton* rthis = new QPushButton(parent);
+  return rthis;
+}
+
+// QPushButton(const class QString &, class QWidget *)
+QPushButton* dector_ZN11QPushButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
+{
+  // static_assert(sizeof(QPushButton) == 32, "tyszerr");
+  QPushButton* rthis = new QPushButton(text, parent);
   return rthis;
 }
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qaction.h
 // dst-file: /src/widgets/qaction.cxx
 //
@@ -43,6 +43,13 @@ QAction* dector_ZN7QActionC1ERK5QIconRK7QStringP7QObject(const QIcon & icon, con
   // static_assert(sizeof(QAction) == 32, "tyszerr");
   QAction* rthis = new QAction(icon, text, parent);
   return rthis;
+}
+
+  // proto:  void QAction::setDisabled(bool b);
+void _ZN7QAction11setDisabledEb(void *that, bool b)
+{
+  QAction *cthat = (QAction *)that;
+   cthat->setDisabled(b);
 }
 
 }; // <= extern "C" block end

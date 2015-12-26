@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
@@ -24,6 +24,14 @@ void dedtor_ZN10QByteArrayD0Ev(QByteArray* that)
 {
   QByteArray* rthis = (QByteArray*)that;
   delete rthis;
+}
+
+// QByteArray(class QByteArray &&)
+QByteArray* dector_ZN10QByteArrayC1EOS_(QByteArray && other)
+{
+  // static_assert(sizeof(QByteArray) == 32, "tyszerr");
+  QByteArray* rthis = new QByteArray(other);
+  return rthis;
 }
 
 // QByteArray()
@@ -66,11 +74,26 @@ QByteArray* dector_ZN10QByteArrayC1EiN2Qt14InitializationE(int size, Qt::Initial
   return rthis;
 }
 
+// QByteArray(struct QByteArrayDataPtr)
+QByteArray* dector_ZN10QByteArrayC1E17QByteArrayDataPtr(QByteArrayDataPtr dd)
+{
+  // static_assert(sizeof(QByteArray) == 32, "tyszerr");
+  QByteArray* rthis = new QByteArray(dd);
+  return rthis;
+}
+
   // proto:  void QByteArray::~QByteArray();
 void _ZN10QByteArrayD0Ev(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
    cthat->~QByteArray();
+}
+
+  // proto:  void QByteArray::QByteArray(QByteArray && other);
+void _ZN10QByteArrayC1EOS_(void *that, QByteArray && other)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto _o = new(that) QByteArray(other);
 }
 
   // proto:  void QByteArray::QByteArray();
@@ -88,11 +111,25 @@ QByteArray* _ZN10QByteArray13fromStdStringERKi(void *that, const std::string & s
   return new QByteArray(recret);
 }
 
+  // proto:  int QByteArray::count();
+int _ZNK10QByteArray5countEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  return cthat->count();
+}
+
   // proto:  void QByteArray::detach();
 void _ZN10QByteArray6detachEv(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
    cthat->detach();
+}
+
+  // proto:  bool QByteArray::isSharedWith(const QByteArray & other);
+bool _ZNK10QByteArray12isSharedWithERKS_(void *that, const QByteArray & other)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  return cthat->isSharedWith(other);
 }
 
   // proto:  int QByteArray::size();
@@ -114,6 +151,20 @@ void _ZN10QByteArrayC1ERKS_(void *that, const QByteArray & arg1)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(arg1);
+}
+
+  // proto:  void QByteArray::swap(QByteArray & other);
+void _ZN10QByteArray4swapERS_(void *that, QByteArray & other)
+{
+  QByteArray *cthat = (QByteArray *)that;
+   cthat->swap(other);
+}
+
+  // proto:  void QByteArray::QByteArray(QByteArrayDataPtr dd);
+void _ZN10QByteArrayC1E17QByteArrayDataPtr(void *that, QByteArrayDataPtr dd)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto _o = new(that) QByteArray(dd);
 }
 
 int QByteArrayDataPtr_Class_Size()

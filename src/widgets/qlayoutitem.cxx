@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -26,6 +26,14 @@ void dedtor_ZN11QSpacerItemD0Ev(QSpacerItem* that)
   delete rthis;
 }
 
+// QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
+QSpacerItem* dector_ZN11QSpacerItemC1EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData)
+{
+  // static_assert(sizeof(QSpacerItem) == 32, "tyszerr");
+  QSpacerItem* rthis = new QSpacerItem(w, h, hData, vData);
+  return rthis;
+}
+
 int QWidgetItem_Class_Size()
 {
   return sizeof(QWidgetItem);
@@ -36,6 +44,14 @@ void dedtor_ZN11QWidgetItemD0Ev(QWidgetItem* that)
 {
   QWidgetItem* rthis = (QWidgetItem*)that;
   delete rthis;
+}
+
+// QWidgetItem(class QWidget *)
+QWidgetItem* dector_ZN11QWidgetItemC1EP7QWidget(QWidget * w)
+{
+  // static_assert(sizeof(QWidgetItem) == 32, "tyszerr");
+  QWidgetItem* rthis = new QWidgetItem(w);
+  return rthis;
 }
 
 int QWidgetItemV2_Class_Size()

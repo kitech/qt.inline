@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qgridlayout.h
 // dst-file: /src/widgets/qgridlayout.cxx
 //
@@ -35,6 +35,13 @@ void dedtor_ZN11QGridLayoutD0Ev(QGridLayout* that)
 {
   QGridLayout* rthis = (QGridLayout*)that;
   delete rthis;
+}
+
+  // proto:  void QGridLayout::addWidget(QWidget * w);
+void _ZN11QGridLayout9addWidgetEP7QWidget(void *that, QWidget * w)
+{
+  QGridLayout *cthat = (QGridLayout *)that;
+   cthat->addWidget(w);
 }
 
 }; // <= extern "C" block end

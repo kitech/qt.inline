@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qatomic.h
 // dst-file: /src/core/qatomic.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QAtomicInt_Class_Size()
 {
   return sizeof(QAtomicInt);
+}
+
+// QAtomicInt(int)
+QAtomicInt* dector_ZN10QAtomicIntC1Ei(int value)
+{
+  // static_assert(sizeof(QAtomicInt) == 32, "tyszerr");
+  QAtomicInt* rthis = new QAtomicInt(value);
+  return rthis;
 }
 
 }; // <= extern "C" block end

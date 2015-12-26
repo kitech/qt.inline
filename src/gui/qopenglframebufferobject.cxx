@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qopenglframebufferobject.h
 // dst-file: /src/gui/qopenglframebufferobject.cxx
 //
@@ -43,7 +43,7 @@ int QOpenGLFramebufferObject_Class_Size()
 }
 
 // QOpenGLFramebufferObject(int, int, enum QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1EiiNS_10AttachmentEjj(int width, int height, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internal_format)
+QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1EiiNS_10AttachmentEjj(int width, int height, QOpenGLFramebufferObject::Attachment attachment, unsigned int target, unsigned int internal_format)
 {
   // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
   QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(width, height, attachment, target, internal_format);
@@ -51,7 +51,7 @@ QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1EiiNS_10Attachmen
 }
 
 // QOpenGLFramebufferObject(const class QSize &, enum QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1ERK5QSizeNS_10AttachmentEjj(const QSize & size, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internal_format)
+QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1ERK5QSizeNS_10AttachmentEjj(const QSize & size, QOpenGLFramebufferObject::Attachment attachment, unsigned int target, unsigned int internal_format)
 {
   // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
   QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(size, attachment, target, internal_format);

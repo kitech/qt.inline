@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
@@ -29,14 +29,6 @@ QPen* dector_ZN4QPenC1ERK6QColor(const QColor & color)
   return rthis;
 }
 
-// QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
-QPen* dector_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, double width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(brush, width, s, c, j);
-  return rthis;
-}
-
 // QPen(Qt::PenStyle)
 QPen* dector_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle arg1)
 {
@@ -58,6 +50,22 @@ QPen* dector_ZN4QPenC1Ev()
 {
   // static_assert(sizeof(QPen) == 32, "tyszerr");
   QPen* rthis = new QPen();
+  return rthis;
+}
+
+// QPen(class QPen &&)
+QPen* dector_ZN4QPenC1EOS_(QPen && other)
+{
+  // static_assert(sizeof(QPen) == 32, "tyszerr");
+  QPen* rthis = new QPen(other);
+  return rthis;
+}
+
+// QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
+QPen* dector_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, double width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j)
+{
+  // static_assert(sizeof(QPen) == 32, "tyszerr");
+  QPen* rthis = new QPen(brush, width, s, c, j);
   return rthis;
 }
 

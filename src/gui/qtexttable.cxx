@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -12,6 +12,36 @@ extern "C" {
 int QTextTableCell_Class_Size()
 {
   return sizeof(QTextTableCell);
+}
+
+// QTextTableCell(const class QTextTableCell &)
+QTextTableCell* dector_ZN14QTextTableCellC1ERKS_(const QTextTableCell & o)
+{
+  // static_assert(sizeof(QTextTableCell) == 32, "tyszerr");
+  QTextTableCell* rthis = new QTextTableCell(o);
+  return rthis;
+}
+
+// ~QTextTableCell()
+void dedtor_ZN14QTextTableCellD0Ev(QTextTableCell* that)
+{
+  QTextTableCell* rthis = (QTextTableCell*)that;
+  delete rthis;
+}
+
+// QTextTableCell()
+QTextTableCell* dector_ZN14QTextTableCellC1Ev()
+{
+  // static_assert(sizeof(QTextTableCell) == 32, "tyszerr");
+  QTextTableCell* rthis = new QTextTableCell();
+  return rthis;
+}
+
+  // proto:  bool QTextTableCell::isValid();
+bool _ZNK14QTextTableCell7isValidEv(void *that)
+{
+  QTextTableCell *cthat = (QTextTableCell *)that;
+  return cthat->isValid();
 }
 
 int QTextTable_Class_Size()

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qjsonobject.h
 // dst-file: /src/core/qjsonobject.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QJsonObject_Class_Size()
 {
   return sizeof(QJsonObject);
+}
+
+// QJsonObject(std::initializer_list<QPair<QString, QJsonValue> >)
+QJsonObject* dector_ZN11QJsonObjectC1ESt16initializer_listI5QPairI7QString10QJsonValueEE(std::initializer_list<QPair<QString, QJsonValue> > args)
+{
+  // static_assert(sizeof(QJsonObject) == 32, "tyszerr");
+  QJsonObject* rthis = new QJsonObject(args);
+  return rthis;
 }
 
 // ~QJsonObject()
@@ -35,6 +43,27 @@ QJsonObject* dector_ZN11QJsonObjectC1ERKS_(const QJsonObject & other)
   // static_assert(sizeof(QJsonObject) == 32, "tyszerr");
   QJsonObject* rthis = new QJsonObject(other);
   return rthis;
+}
+
+  // proto:  int QJsonObject::length();
+int _ZNK11QJsonObject6lengthEv(void *that)
+{
+  QJsonObject *cthat = (QJsonObject *)that;
+  return cthat->length();
+}
+
+  // proto:  int QJsonObject::count();
+int _ZNK11QJsonObject5countEv(void *that)
+{
+  QJsonObject *cthat = (QJsonObject *)that;
+  return cthat->count();
+}
+
+  // proto:  bool QJsonObject::empty();
+bool _ZNK11QJsonObject5emptyEv(void *that)
+{
+  QJsonObject *cthat = (QJsonObject *)that;
+  return cthat->empty();
 }
 
 }; // <= extern "C" block end

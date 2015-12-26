@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qelapsedtimer.h
 // dst-file: /src/core/qelapsedtimer.cxx
 //
@@ -12,6 +12,14 @@ extern "C" {
 int QElapsedTimer_Class_Size()
 {
   return sizeof(QElapsedTimer);
+}
+
+// QElapsedTimer()
+QElapsedTimer* dector_ZN13QElapsedTimerC1Ev()
+{
+  // static_assert(sizeof(QElapsedTimer) == 32, "tyszerr");
+  QElapsedTimer* rthis = new QElapsedTimer();
+  return rthis;
 }
 
 }; // <= extern "C" block end

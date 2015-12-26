@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qfontinfo.h
 // dst-file: /src/gui/qfontinfo.cxx
 //
@@ -35,6 +35,13 @@ void dedtor_ZN9QFontInfoD0Ev(QFontInfo* that)
 {
   QFontInfo* rthis = (QFontInfo*)that;
   delete rthis;
+}
+
+  // proto:  bool QFontInfo::bold();
+bool _ZNK9QFontInfo4boldEv(void *that)
+{
+  QFontInfo *cthat = (QFontInfo *)that;
+  return cthat->bold();
 }
 
 }; // <= extern "C" block end

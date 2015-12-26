@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qpainter.h
 // dst-file: /src/gui/qpainter.cxx
 //
@@ -267,6 +267,13 @@ void _ZN8QPainter8drawRectERK6QRectF(void *that, const QRectF & rect)
 {
   QPainter *cthat = (QPainter *)that;
    cthat->drawRect(rect);
+}
+
+  // proto:  bool QPainter::testRenderHint(QPainter::RenderHint hint);
+bool _ZNK8QPainter14testRenderHintENS_10RenderHintE(void *that, QPainter::RenderHint hint)
+{
+  QPainter *cthat = (QPainter *)that;
+  return cthat->testRenderHint(hint);
 }
 
   // proto:  void QPainter::drawLine(const QLineF & line);

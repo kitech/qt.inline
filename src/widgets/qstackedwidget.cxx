@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtWidgets/qstackedwidget.h
 // dst-file: /src/widgets/qstackedwidget.cxx
 //
@@ -14,19 +14,19 @@ int QStackedWidget_Class_Size()
   return sizeof(QStackedWidget);
 }
 
-// ~QStackedWidget()
-void dedtor_ZN14QStackedWidgetD0Ev(QStackedWidget* that)
-{
-  QStackedWidget* rthis = (QStackedWidget*)that;
-  delete rthis;
-}
-
 // QStackedWidget(class QWidget *)
 QStackedWidget* dector_ZN14QStackedWidgetC1EP7QWidget(QWidget * parent)
 {
   // static_assert(sizeof(QStackedWidget) == 32, "tyszerr");
   QStackedWidget* rthis = new QStackedWidget(parent);
   return rthis;
+}
+
+// ~QStackedWidget()
+void dedtor_ZN14QStackedWidgetD0Ev(QStackedWidget* that)
+{
+  QStackedWidget* rthis = (QStackedWidget*)that;
+  delete rthis;
 }
 
 }; // <= extern "C" block end

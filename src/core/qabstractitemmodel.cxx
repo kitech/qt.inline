@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -12,6 +12,29 @@ extern "C" {
 int QModelIndex_Class_Size()
 {
   return sizeof(QModelIndex);
+}
+
+// QModelIndex()
+QModelIndex* dector_ZN11QModelIndexC1Ev()
+{
+  // static_assert(sizeof(QModelIndex) == 32, "tyszerr");
+  QModelIndex* rthis = new QModelIndex();
+  return rthis;
+}
+
+  // proto:  QModelIndex QModelIndex::child(int row, int column);
+QModelIndex* _ZNK11QModelIndex5childEii(void *that, int row, int column)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  auto recret = cthat->child(row, column);
+  return new QModelIndex(recret);
+}
+
+  // proto:  void * QModelIndex::internalPointer();
+void * _ZNK11QModelIndex15internalPointerEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->internalPointer();
 }
 
   // proto:  QModelIndex QModelIndex::parent();
@@ -38,17 +61,25 @@ QVariant* _ZNK11QModelIndex4dataEi(void *that, int role)
   return new QVariant(recret);
 }
 
-  // proto:  QModelIndex QModelIndex::child(int row, int column);
-QModelIndex* _ZNK11QModelIndex5childEii(void *that, int row, int column)
-{
-  QModelIndex *cthat = (QModelIndex *)that;
-  auto recret = cthat->child(row, column);
-  return new QModelIndex(recret);
-}
-
 int QPersistentModelIndex_Class_Size()
 {
   return sizeof(QPersistentModelIndex);
+}
+
+// QPersistentModelIndex(const class QPersistentModelIndex &)
+QPersistentModelIndex* dector_ZN21QPersistentModelIndexC1ERKS_(const QPersistentModelIndex & other)
+{
+  // static_assert(sizeof(QPersistentModelIndex) == 32, "tyszerr");
+  QPersistentModelIndex* rthis = new QPersistentModelIndex(other);
+  return rthis;
+}
+
+// QPersistentModelIndex(class QPersistentModelIndex &&)
+QPersistentModelIndex* dector_ZN21QPersistentModelIndexC1EOS_(QPersistentModelIndex && other)
+{
+  // static_assert(sizeof(QPersistentModelIndex) == 32, "tyszerr");
+  QPersistentModelIndex* rthis = new QPersistentModelIndex(other);
+  return rthis;
 }
 
 // ~QPersistentModelIndex()
@@ -74,12 +105,18 @@ QPersistentModelIndex* dector_ZN21QPersistentModelIndexC1Ev()
   return rthis;
 }
 
-// QPersistentModelIndex(const class QPersistentModelIndex &)
-QPersistentModelIndex* dector_ZN21QPersistentModelIndexC1ERKS_(const QPersistentModelIndex & other)
+  // proto:  void QPersistentModelIndex::QPersistentModelIndex(QPersistentModelIndex && other);
+void _ZN21QPersistentModelIndexC1EOS_(void *that, QPersistentModelIndex && other)
 {
-  // static_assert(sizeof(QPersistentModelIndex) == 32, "tyszerr");
-  QPersistentModelIndex* rthis = new QPersistentModelIndex(other);
-  return rthis;
+  QPersistentModelIndex *cthat = (QPersistentModelIndex *)that;
+  auto _o = new(that) QPersistentModelIndex(other);
+}
+
+  // proto:  void QPersistentModelIndex::swap(QPersistentModelIndex & other);
+void _ZN21QPersistentModelIndex4swapERS_(void *that, QPersistentModelIndex & other)
+{
+  QPersistentModelIndex *cthat = (QPersistentModelIndex *)that;
+   cthat->swap(other);
 }
 
 int QAbstractTableModel_Class_Size()

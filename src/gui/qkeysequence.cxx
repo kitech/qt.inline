@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtGui/qkeysequence.h
 // dst-file: /src/gui/qkeysequence.cxx
 //
@@ -59,6 +59,13 @@ QKeySequence* dector_ZN12QKeySequenceC1ENS_11StandardKeyE(QKeySequence::Standard
   // static_assert(sizeof(QKeySequence) == 32, "tyszerr");
   QKeySequence* rthis = new QKeySequence(key);
   return rthis;
+}
+
+  // proto:  void QKeySequence::swap(QKeySequence & other);
+void _ZN12QKeySequence4swapERS_(void *that, QKeySequence & other)
+{
+  QKeySequence *cthat = (QKeySequence *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

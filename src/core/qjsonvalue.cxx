@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 09:13:20 2015
+// created: Sat Dec 26 11:30:23 2015
 // src-file: /QtCore/qjsonvalue.h
 // dst-file: /src/core/qjsonvalue.cxx
 //
@@ -14,9 +14,33 @@ int QJsonValueRefPtr_Class_Size()
   return sizeof(QJsonValueRefPtr);
 }
 
+// QJsonValueRefPtr(class QJsonArray *, int)
+QJsonValueRefPtr* dector_ZN16QJsonValueRefPtrC1EP10QJsonArrayi(QJsonArray * array, int idx)
+{
+  // static_assert(sizeof(QJsonValueRefPtr) == 32, "tyszerr");
+  QJsonValueRefPtr* rthis = new QJsonValueRefPtr(array, idx);
+  return rthis;
+}
+
+// QJsonValueRefPtr(class QJsonObject *, int)
+QJsonValueRefPtr* dector_ZN16QJsonValueRefPtrC1EP11QJsonObjecti(QJsonObject * object, int idx)
+{
+  // static_assert(sizeof(QJsonValueRefPtr) == 32, "tyszerr");
+  QJsonValueRefPtr* rthis = new QJsonValueRefPtr(object, idx);
+  return rthis;
+}
+
 int QJsonValuePtr_Class_Size()
 {
   return sizeof(QJsonValuePtr);
+}
+
+// QJsonValuePtr(const class QJsonValue &)
+QJsonValuePtr* dector_ZN13QJsonValuePtrC1ERK10QJsonValue(const QJsonValue & val)
+{
+  // static_assert(sizeof(QJsonValuePtr) == 32, "tyszerr");
+  QJsonValuePtr* rthis = new QJsonValuePtr(val);
+  return rthis;
 }
 
 int QJsonValue_Class_Size()
@@ -56,19 +80,19 @@ QJsonValue* dector_ZN10QJsonValueC1E13QLatin1String(QLatin1String s)
   return rthis;
 }
 
+// QJsonValue(const char *)
+QJsonValue* dector_ZN10QJsonValueC1EPKc(const char * s)
+{
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(s);
+  return rthis;
+}
+
 // ~QJsonValue()
 void dedtor_ZN10QJsonValueD0Ev(QJsonValue* that)
 {
   QJsonValue* rthis = (QJsonValue*)that;
   delete rthis;
-}
-
-// QJsonValue(const class QJsonValue &)
-QJsonValue* dector_ZN10QJsonValueC1ERKS_(const QJsonValue & other)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(other);
-  return rthis;
 }
 
 // QJsonValue(double)
@@ -84,6 +108,14 @@ QJsonValue* dector_ZN10QJsonValueC1Eb(bool b)
 {
   // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
   QJsonValue* rthis = new QJsonValue(b);
+  return rthis;
+}
+
+// QJsonValue(const class QJsonValue &)
+QJsonValue* dector_ZN10QJsonValueC1ERKS_(const QJsonValue & other)
+{
+  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
+  QJsonValue* rthis = new QJsonValue(other);
   return rthis;
 }
 
@@ -111,9 +143,195 @@ QJsonValue* dector_ZN10QJsonValueC1Ex(long long n)
   return rthis;
 }
 
+  // proto:  bool QJsonValue::isDouble();
+bool _ZNK10QJsonValue8isDoubleEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isDouble();
+}
+
+  // proto:  bool QJsonValue::isArray();
+bool _ZNK10QJsonValue7isArrayEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isArray();
+}
+
+  // proto:  void QJsonValue::QJsonValue(const char * s);
+void _ZN10QJsonValueC1EPKc(void *that, const char * s)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  auto _o = new(that) QJsonValue(s);
+}
+
+  // proto:  bool QJsonValue::isObject();
+bool _ZNK10QJsonValue8isObjectEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isObject();
+}
+
+  // proto:  bool QJsonValue::isBool();
+bool _ZNK10QJsonValue6isBoolEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isBool();
+}
+
+  // proto:  bool QJsonValue::isUndefined();
+bool _ZNK10QJsonValue11isUndefinedEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isUndefined();
+}
+
+  // proto:  bool QJsonValue::isNull();
+bool _ZNK10QJsonValue6isNullEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isNull();
+}
+
+  // proto:  bool QJsonValue::isString();
+bool _ZNK10QJsonValue8isStringEv(void *that)
+{
+  QJsonValue *cthat = (QJsonValue *)that;
+  return cthat->isString();
+}
+
 int QJsonValueRef_Class_Size()
 {
   return sizeof(QJsonValueRef);
+}
+
+// QJsonValueRef(class QJsonArray *, int)
+QJsonValueRef* dector_ZN13QJsonValueRefC1EP10QJsonArrayi(QJsonArray * array, int idx)
+{
+  // static_assert(sizeof(QJsonValueRef) == 32, "tyszerr");
+  QJsonValueRef* rthis = new QJsonValueRef(array, idx);
+  return rthis;
+}
+
+// QJsonValueRef(class QJsonObject *, int)
+QJsonValueRef* dector_ZN13QJsonValueRefC1EP11QJsonObjecti(QJsonObject * object, int idx)
+{
+  // static_assert(sizeof(QJsonValueRef) == 32, "tyszerr");
+  QJsonValueRef* rthis = new QJsonValueRef(object, idx);
+  return rthis;
+}
+
+  // proto:  bool QJsonValueRef::isBool();
+bool _ZNK13QJsonValueRef6isBoolEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isBool();
+}
+
+  // proto:  bool QJsonValueRef::isDouble();
+bool _ZNK13QJsonValueRef8isDoubleEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isDouble();
+}
+
+  // proto:  double QJsonValueRef::toDouble();
+double _ZNK13QJsonValueRef8toDoubleEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toDouble();
+}
+
+  // proto:  bool QJsonValueRef::toBool(bool defaultValue);
+bool _ZNK13QJsonValueRef6toBoolEb(void *that, bool defaultValue)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toBool(defaultValue);
+}
+
+  // proto:  double QJsonValueRef::toDouble(double defaultValue);
+double _ZNK13QJsonValueRef8toDoubleEd(void *that, double defaultValue)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toDouble(defaultValue);
+}
+
+  // proto:  bool QJsonValueRef::toBool();
+bool _ZNK13QJsonValueRef6toBoolEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toBool();
+}
+
+  // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
+QString* _ZNK13QJsonValueRef8toStringERK7QString(void *that, const QString & defaultValue)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  auto recret = cthat->toString(defaultValue);
+  return new QString(recret);
+}
+
+  // proto:  bool QJsonValueRef::isObject();
+bool _ZNK13QJsonValueRef8isObjectEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isObject();
+}
+
+  // proto:  bool QJsonValueRef::isString();
+bool _ZNK13QJsonValueRef8isStringEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isString();
+}
+
+  // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
+void _ZN13QJsonValueRefC1EP11QJsonObjecti(void *that, QJsonObject * object, int idx)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  auto _o = new(that) QJsonValueRef(object, idx);
+}
+
+  // proto:  QString QJsonValueRef::toString();
+QString* _ZNK13QJsonValueRef8toStringEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  auto recret = cthat->toString();
+  return new QString(recret);
+}
+
+  // proto:  int QJsonValueRef::toInt(int defaultValue);
+int _ZNK13QJsonValueRef5toIntEi(void *that, int defaultValue)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toInt(defaultValue);
+}
+
+  // proto:  bool QJsonValueRef::isArray();
+bool _ZNK13QJsonValueRef7isArrayEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isArray();
+}
+
+  // proto:  bool QJsonValueRef::isNull();
+bool _ZNK13QJsonValueRef6isNullEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isNull();
+}
+
+  // proto:  int QJsonValueRef::toInt();
+int _ZNK13QJsonValueRef5toIntEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->toInt();
+}
+
+  // proto:  bool QJsonValueRef::isUndefined();
+bool _ZNK13QJsonValueRef11isUndefinedEv(void *that)
+{
+  QJsonValueRef *cthat = (QJsonValueRef *)that;
+  return cthat->isUndefined();
 }
 
 }; // <= extern "C" block end
