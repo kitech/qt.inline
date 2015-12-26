@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -38,7 +38,7 @@ QTextTableCell* dector_ZN14QTextTableCellC1Ev()
 }
 
   // proto:  bool QTextTableCell::isValid();
-bool _ZNK14QTextTableCell7isValidEv(void *that)
+bool demth_ZNK14QTextTableCell7isValidEv(void *that)
 {
   QTextTableCell *cthat = (QTextTableCell *)that;
   return cthat->isValid();

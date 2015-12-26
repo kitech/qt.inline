@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qreadwritelock.h
 // dst-file: /src/core/qreadwritelock.cxx
 //
@@ -30,35 +30,35 @@ void dedtor_ZN12QWriteLockerD0Ev(QWriteLocker* that)
 }
 
   // proto:  QReadWriteLock * QWriteLocker::readWriteLock();
-QReadWriteLock * _ZNK12QWriteLocker13readWriteLockEv(void *that)
+QReadWriteLock * demth_ZNK12QWriteLocker13readWriteLockEv(void *that)
 {
   QWriteLocker *cthat = (QWriteLocker *)that;
   return cthat->readWriteLock();
 }
 
   // proto:  void QWriteLocker::QWriteLocker(QReadWriteLock * readWriteLock);
-void _ZN12QWriteLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
+void demth_ZN12QWriteLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
 {
   QWriteLocker *cthat = (QWriteLocker *)that;
   auto _o = new(that) QWriteLocker(readWriteLock);
 }
 
   // proto:  void QWriteLocker::unlock();
-void _ZN12QWriteLocker6unlockEv(void *that)
+void demth_ZN12QWriteLocker6unlockEv(void *that)
 {
   QWriteLocker *cthat = (QWriteLocker *)that;
    cthat->unlock();
 }
 
   // proto:  void QWriteLocker::~QWriteLocker();
-void _ZN12QWriteLockerD0Ev(void *that)
+void demth_ZN12QWriteLockerD0Ev(void *that)
 {
   QWriteLocker *cthat = (QWriteLocker *)that;
    cthat->~QWriteLocker();
 }
 
   // proto:  void QWriteLocker::relock();
-void _ZN12QWriteLocker6relockEv(void *that)
+void demth_ZN12QWriteLocker6relockEv(void *that)
 {
   QWriteLocker *cthat = (QWriteLocker *)that;
    cthat->relock();
@@ -105,35 +105,35 @@ QReadLocker* dector_ZN11QReadLockerC1EP14QReadWriteLock(QReadWriteLock * readWri
 }
 
   // proto:  QReadWriteLock * QReadLocker::readWriteLock();
-QReadWriteLock * _ZNK11QReadLocker13readWriteLockEv(void *that)
+QReadWriteLock * demth_ZNK11QReadLocker13readWriteLockEv(void *that)
 {
   QReadLocker *cthat = (QReadLocker *)that;
   return cthat->readWriteLock();
 }
 
   // proto:  void QReadLocker::~QReadLocker();
-void _ZN11QReadLockerD0Ev(void *that)
+void demth_ZN11QReadLockerD0Ev(void *that)
 {
   QReadLocker *cthat = (QReadLocker *)that;
    cthat->~QReadLocker();
 }
 
   // proto:  void QReadLocker::QReadLocker(QReadWriteLock * readWriteLock);
-void _ZN11QReadLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
+void demth_ZN11QReadLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
 {
   QReadLocker *cthat = (QReadLocker *)that;
   auto _o = new(that) QReadLocker(readWriteLock);
 }
 
   // proto:  void QReadLocker::relock();
-void _ZN11QReadLocker6relockEv(void *that)
+void demth_ZN11QReadLocker6relockEv(void *that)
 {
   QReadLocker *cthat = (QReadLocker *)that;
    cthat->relock();
 }
 
   // proto:  void QReadLocker::unlock();
-void _ZN11QReadLocker6unlockEv(void *that)
+void demth_ZN11QReadLocker6unlockEv(void *that)
 {
   QReadLocker *cthat = (QReadLocker *)that;
    cthat->unlock();

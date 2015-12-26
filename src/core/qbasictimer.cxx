@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qbasictimer.h
 // dst-file: /src/core/qbasictimer.cxx
 //
@@ -30,28 +30,28 @@ QBasicTimer* dector_ZN11QBasicTimerC1Ev()
 }
 
   // proto:  void QBasicTimer::~QBasicTimer();
-void _ZN11QBasicTimerD0Ev(void *that)
+void demth_ZN11QBasicTimerD0Ev(void *that)
 {
   QBasicTimer *cthat = (QBasicTimer *)that;
    cthat->~QBasicTimer();
 }
 
   // proto:  int QBasicTimer::timerId();
-int _ZNK11QBasicTimer7timerIdEv(void *that)
+int demth_ZNK11QBasicTimer7timerIdEv(void *that)
 {
   QBasicTimer *cthat = (QBasicTimer *)that;
   return cthat->timerId();
 }
 
   // proto:  bool QBasicTimer::isActive();
-bool _ZNK11QBasicTimer8isActiveEv(void *that)
+bool demth_ZNK11QBasicTimer8isActiveEv(void *that)
 {
   QBasicTimer *cthat = (QBasicTimer *)that;
   return cthat->isActive();
 }
 
   // proto:  void QBasicTimer::QBasicTimer();
-void _ZN11QBasicTimerC1Ev(void *that)
+void demth_ZN11QBasicTimerC1Ev(void *that)
 {
   QBasicTimer *cthat = (QBasicTimer *)that;
   auto _o = new(that) QBasicTimer();

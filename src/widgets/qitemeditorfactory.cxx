@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qitemeditorfactory.h
 // dst-file: /src/widgets/qitemeditorfactory.cxx
 //
@@ -35,7 +35,7 @@ void dedtor_ZN18QItemEditorFactoryD0Ev(QItemEditorFactory* that)
 }
 
   // proto:  void QItemEditorFactory::QItemEditorFactory();
-void _ZN18QItemEditorFactoryC1Ev(void *that)
+void demth_ZN18QItemEditorFactoryC1Ev(void *that)
 {
   QItemEditorFactory *cthat = (QItemEditorFactory *)that;
   auto _o = new(that) QItemEditorFactory();

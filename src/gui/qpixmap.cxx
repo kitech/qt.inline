@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qpixmap.h
 // dst-file: /src/gui/qpixmap.cxx
 //
@@ -70,21 +70,21 @@ void dedtor_ZN7QPixmapD0Ev(QPixmap* that)
 }
 
   // proto:  void QPixmap::swap(QPixmap & other);
-void _ZN7QPixmap4swapERS_(void *that, QPixmap & other)
+void demth_ZN7QPixmap4swapERS_(void *that, QPixmap & other)
 {
   QPixmap *cthat = (QPixmap *)that;
    cthat->swap(other);
 }
 
   // proto:  void QPixmap::fill(const QPaintDevice * device, int xofs, int yofs);
-void _ZN7QPixmap4fillEPK12QPaintDeviceii(void *that, const QPaintDevice * device, int xofs, int yofs)
+void demth_ZN7QPixmap4fillEPK12QPaintDeviceii(void *that, const QPaintDevice * device, int xofs, int yofs)
 {
   QPixmap *cthat = (QPixmap *)that;
    cthat->fill(device, xofs, yofs);
 }
 
   // proto:  QPixmap QPixmap::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-QPixmap* _ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
+QPixmap* demth_ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
 {
   QPixmap *cthat = (QPixmap *)that;
   auto recret = cthat->scaled(w, h, aspectMode, mode);
@@ -92,14 +92,14 @@ QPixmap* _ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(v
 }
 
   // proto:  void QPixmap::scroll(int dx, int dy, int x, int y, int width, int height, QRegion * exposed);
-void _ZN7QPixmap6scrollEiiiiiiP7QRegion(void *that, int dx, int dy, int x, int y, int width, int height, QRegion * exposed)
+void demth_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *that, int dx, int dy, int x, int y, int width, int height, QRegion * exposed)
 {
   QPixmap *cthat = (QPixmap *)that;
    cthat->scroll(dx, dy, x, y, width, height, exposed);
 }
 
   // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);
-QPixmap* _ZNK7QPixmap4copyEiiii(void *that, int x, int y, int width, int height)
+QPixmap* demth_ZNK7QPixmap4copyEiiii(void *that, int x, int y, int width, int height)
 {
   QPixmap *cthat = (QPixmap *)that;
   auto recret = cthat->copy(x, y, width, height);
@@ -107,14 +107,14 @@ QPixmap* _ZNK7QPixmap4copyEiiii(void *that, int x, int y, int width, int height)
 }
 
   // proto:  bool QPixmap::loadFromData(const QByteArray & data, const char * format, Qt::ImageConversionFlags flags);
-bool _ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *that, const QByteArray & data, const char * format, Qt::ImageConversionFlags flags)
+bool demth_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *that, const QByteArray & data, const char * format, Qt::ImageConversionFlags flags)
 {
   QPixmap *cthat = (QPixmap *)that;
   return cthat->loadFromData(data, format, flags);
 }
 
   // proto: static QPixmap QPixmap::grabWidget(QObject * widget, int x, int y, int w, int h);
-QPixmap* _ZN7QPixmap10grabWidgetEP7QObjectiiii(void *that, QObject * widget, int x, int y, int w, int h)
+QPixmap* demth_ZN7QPixmap10grabWidgetEP7QObjectiiii(void *that, QObject * widget, int x, int y, int w, int h)
 {
   QPixmap *cthat = (QPixmap *)that;
   auto recret = cthat->grabWidget(widget, x, y, w, h);

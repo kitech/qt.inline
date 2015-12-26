@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qbytearraymatcher.h
 // dst-file: /src/core/qbytearraymatcher.cxx
 //
@@ -54,7 +54,7 @@ void dedtor_ZN17QByteArrayMatcherD0Ev(QByteArrayMatcher* that)
 }
 
   // proto:  QByteArray QByteArrayMatcher::pattern();
-QByteArray* _ZNK17QByteArrayMatcher7patternEv(void *that)
+QByteArray* demth_ZNK17QByteArrayMatcher7patternEv(void *that)
 {
   QByteArrayMatcher *cthat = (QByteArrayMatcher *)that;
   auto recret = cthat->pattern();

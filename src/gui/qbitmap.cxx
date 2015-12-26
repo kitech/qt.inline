@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qbitmap.h
 // dst-file: /src/gui/qbitmap.cxx
 //
@@ -62,14 +62,14 @@ QBitmap* dector_ZN7QBitmapC1Ev()
 }
 
   // proto:  void QBitmap::swap(QBitmap & other);
-void _ZN7QBitmap4swapERS_(void *that, QBitmap & other)
+void demth_ZN7QBitmap4swapERS_(void *that, QBitmap & other)
 {
   QBitmap *cthat = (QBitmap *)that;
    cthat->swap(other);
 }
 
   // proto:  void QBitmap::clear();
-void _ZN7QBitmap5clearEv(void *that)
+void demth_ZN7QBitmap5clearEv(void *that)
 {
   QBitmap *cthat = (QBitmap *)that;
    cthat->clear();

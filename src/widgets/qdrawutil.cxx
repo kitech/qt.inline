@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qdrawutil.h
 // dst-file: /src/widgets/qdrawutil.cxx
 //
@@ -31,14 +31,14 @@ QTileRules* dector_ZN10QTileRulesC1EN2Qt8TileRuleE(Qt::TileRule rule)
 }
 
   // proto:  void QTileRules::QTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule);
-void _ZN10QTileRulesC1EN2Qt8TileRuleES1_(void *that, Qt::TileRule horizontalRule, Qt::TileRule verticalRule)
+void demth_ZN10QTileRulesC1EN2Qt8TileRuleES1_(void *that, Qt::TileRule horizontalRule, Qt::TileRule verticalRule)
 {
   QTileRules *cthat = (QTileRules *)that;
   auto _o = new(that) QTileRules(horizontalRule, verticalRule);
 }
 
   // proto:  void QTileRules::QTileRules(Qt::TileRule rule);
-void _ZN10QTileRulesC1EN2Qt8TileRuleE(void *that, Qt::TileRule rule)
+void demth_ZN10QTileRulesC1EN2Qt8TileRuleE(void *that, Qt::TileRule rule)
 {
   QTileRules *cthat = (QTileRules *)that;
   auto _o = new(that) QTileRules(rule);

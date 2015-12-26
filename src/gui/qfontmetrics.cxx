@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
@@ -46,7 +46,7 @@ QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFont(const QFont & arg1)
 }
 
   // proto:  QRect QFontMetrics::boundingRect(int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray);
-QRect* _ZNK12QFontMetrics12boundingRectEiiiiiRK7QStringiPi(void *that, int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray)
+QRect* demth_ZNK12QFontMetrics12boundingRectEiiiiiRK7QStringiPi(void *that, int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray)
 {
   QFontMetrics *cthat = (QFontMetrics *)that;
   auto recret = cthat->boundingRect(x, y, w, h, flags, text, tabstops, tabarray);

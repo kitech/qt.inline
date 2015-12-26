@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qtoolbar.h
 // dst-file: /src/widgets/qtoolbar.cxx
 //
@@ -38,14 +38,14 @@ void dedtor_ZN8QToolBarD0Ev(QToolBar* that)
 }
 
   // proto:  QAction * QToolBar::actionAt(int x, int y);
-QAction * _ZNK8QToolBar8actionAtEii(void *that, int x, int y)
+QAction * demth_ZNK8QToolBar8actionAtEii(void *that, int x, int y)
 {
   QToolBar *cthat = (QToolBar *)that;
   return cthat->actionAt(x, y);
 }
 
   // proto:  bool QToolBar::isAreaAllowed(Qt::ToolBarArea area);
-bool _ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *that, Qt::ToolBarArea area)
+bool demth_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *that, Qt::ToolBarArea area)
 {
   QToolBar *cthat = (QToolBar *)that;
   return cthat->isAreaAllowed(area);

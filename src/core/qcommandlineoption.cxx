@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qcommandlineoption.h
 // dst-file: /src/core/qcommandlineoption.cxx
 //
@@ -62,7 +62,7 @@ QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK7QString(const QString & n
 }
 
   // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
-void _ZN18QCommandLineOption4swapERS_(void *that, QCommandLineOption & other)
+void demth_ZN18QCommandLineOption4swapERS_(void *that, QCommandLineOption & other)
 {
   QCommandLineOption *cthat = (QCommandLineOption *)that;
    cthat->swap(other);

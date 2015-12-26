@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qdir.h
 // dst-file: /src/core/qdir.cxx
 //
@@ -46,14 +46,14 @@ QDir* dector_ZN4QDirC1ERKS_(const QDir & arg1)
 }
 
   // proto: static bool QDir::isAbsolutePath(const QString & path);
-bool _ZN4QDir14isAbsolutePathERK7QString(void *that, const QString & path)
+bool demth_ZN4QDir14isAbsolutePathERK7QString(void *that, const QString & path)
 {
   QDir *cthat = (QDir *)that;
   return cthat->isAbsolutePath(path);
 }
 
   // proto: static QDir QDir::root();
-QDir* _ZN4QDir4rootEv(void *that)
+QDir* demth_ZN4QDir4rootEv(void *that)
 {
   QDir *cthat = (QDir *)that;
   auto recret = cthat->root();
@@ -61,7 +61,7 @@ QDir* _ZN4QDir4rootEv(void *that)
 }
 
   // proto: static QDir QDir::current();
-QDir* _ZN4QDir7currentEv(void *that)
+QDir* demth_ZN4QDir7currentEv(void *that)
 {
   QDir *cthat = (QDir *)that;
   auto recret = cthat->current();
@@ -69,7 +69,7 @@ QDir* _ZN4QDir7currentEv(void *that)
 }
 
   // proto: static QDir QDir::home();
-QDir* _ZN4QDir4homeEv(void *that)
+QDir* demth_ZN4QDir4homeEv(void *that)
 {
   QDir *cthat = (QDir *)that;
   auto recret = cthat->home();
@@ -77,14 +77,14 @@ QDir* _ZN4QDir4homeEv(void *that)
 }
 
   // proto:  void QDir::swap(QDir & other);
-void _ZN4QDir4swapERS_(void *that, QDir & other)
+void demth_ZN4QDir4swapERS_(void *that, QDir & other)
 {
   QDir *cthat = (QDir *)that;
    cthat->swap(other);
 }
 
   // proto: static QDir QDir::temp();
-QDir* _ZN4QDir4tempEv(void *that)
+QDir* demth_ZN4QDir4tempEv(void *that)
 {
   QDir *cthat = (QDir *)that;
   auto recret = cthat->temp();
@@ -92,7 +92,7 @@ QDir* _ZN4QDir4tempEv(void *that)
 }
 
   // proto:  bool QDir::isAbsolute();
-bool _ZNK4QDir10isAbsoluteEv(void *that)
+bool demth_ZNK4QDir10isAbsoluteEv(void *that)
 {
   QDir *cthat = (QDir *)that;
   return cthat->isAbsolute();

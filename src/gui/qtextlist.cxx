@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
@@ -30,14 +30,14 @@ void dedtor_ZN9QTextListD0Ev(QTextList* that)
 }
 
   // proto:  void QTextList::setFormat(const QTextListFormat & format);
-void _ZN9QTextList9setFormatERK15QTextListFormat(void *that, const QTextListFormat & format)
+void demth_ZN9QTextList9setFormatERK15QTextListFormat(void *that, const QTextListFormat & format)
 {
   QTextList *cthat = (QTextList *)that;
    cthat->setFormat(format);
 }
 
   // proto:  bool QTextList::isEmpty();
-bool _ZNK9QTextList7isEmptyEv(void *that)
+bool demth_ZNK9QTextList7isEmptyEv(void *that)
 {
   QTextList *cthat = (QTextList *)that;
   return cthat->isEmpty();

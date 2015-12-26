@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -30,7 +30,7 @@ void dedtor_ZN15QGraphicsWidgetD0Ev(QGraphicsWidget* that)
 }
 
   // proto:  QRectF QGraphicsWidget::rect();
-QRectF* _ZNK15QGraphicsWidget4rectEv(void *that)
+QRectF* demth_ZNK15QGraphicsWidget4rectEv(void *that)
 {
   QGraphicsWidget *cthat = (QGraphicsWidget *)that;
   auto recret = cthat->rect();
@@ -38,14 +38,14 @@ QRectF* _ZNK15QGraphicsWidget4rectEv(void *that)
 }
 
   // proto:  void QGraphicsWidget::resize(qreal w, qreal h);
-void _ZN15QGraphicsWidget6resizeEdd(void *that, double w, double h)
+void demth_ZN15QGraphicsWidget6resizeEdd(void *that, double w, double h)
 {
   QGraphicsWidget *cthat = (QGraphicsWidget *)that;
    cthat->resize(w, h);
 }
 
   // proto:  void QGraphicsWidget::setGeometry(qreal x, qreal y, qreal w, qreal h);
-void _ZN15QGraphicsWidget11setGeometryEdddd(void *that, double x, double y, double w, double h)
+void demth_ZN15QGraphicsWidget11setGeometryEdddd(void *that, double x, double y, double w, double h)
 {
   QGraphicsWidget *cthat = (QGraphicsWidget *)that;
    cthat->setGeometry(x, y, w, h);

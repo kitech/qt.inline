@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qscopedpointer.h
 // dst-file: /src/core/qscopedpointer.cxx
 //
@@ -15,7 +15,7 @@ int QScopedPointerPodDeleter_Class_Size()
 }
 
   // proto: static void QScopedPointerPodDeleter::cleanup(void * pointer);
-void _ZN24QScopedPointerPodDeleter7cleanupEPv(void *that, void * pointer)
+void demth_ZN24QScopedPointerPodDeleter7cleanupEPv(void *that, void * pointer)
 {
   QScopedPointerPodDeleter *cthat = (QScopedPointerPodDeleter *)that;
    cthat->cleanup(pointer);

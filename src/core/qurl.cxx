@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -54,14 +54,14 @@ QUrl* dector_ZN4QUrlC1EOS_(QUrl && other)
 }
 
   // proto:  void QUrl::swap(QUrl & other);
-void _ZN4QUrl4swapERS_(void *that, QUrl & other)
+void demth_ZN4QUrl4swapERS_(void *that, QUrl & other)
 {
   QUrl *cthat = (QUrl *)that;
    cthat->swap(other);
 }
 
   // proto:  void QUrl::QUrl(QUrl && other);
-void _ZN4QUrlC1EOS_(void *that, QUrl && other)
+void demth_ZN4QUrlC1EOS_(void *that, QUrl && other)
 {
   QUrl *cthat = (QUrl *)that;
   auto _o = new(that) QUrl(other);

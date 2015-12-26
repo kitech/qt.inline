@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qicon.h
 // dst-file: /src/gui/qicon.cxx
 //
@@ -70,7 +70,7 @@ QIcon* dector_ZN5QIconC1ERK7QString(const QString & fileName)
 }
 
   // proto:  QPixmap QIcon::pixmap(int extent, QIcon::Mode mode, QIcon::State state);
-QPixmap* _ZNK5QIcon6pixmapEiNS_4ModeENS_5StateE(void *that, int extent, QIcon::Mode mode, QIcon::State state)
+QPixmap* demth_ZNK5QIcon6pixmapEiNS_4ModeENS_5StateE(void *that, int extent, QIcon::Mode mode, QIcon::State state)
 {
   QIcon *cthat = (QIcon *)that;
   auto recret = cthat->pixmap(extent, mode, state);
@@ -78,14 +78,14 @@ QPixmap* _ZNK5QIcon6pixmapEiNS_4ModeENS_5StateE(void *that, int extent, QIcon::M
 }
 
   // proto:  void QIcon::paint(QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment, QIcon::Mode mode, QIcon::State state);
-void _ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *that, QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment, QIcon::Mode mode, QIcon::State state)
+void demth_ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *that, QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment, QIcon::Mode mode, QIcon::State state)
 {
   QIcon *cthat = (QIcon *)that;
    cthat->paint(painter, x, y, w, h, alignment, mode, state);
 }
 
   // proto:  QPixmap QIcon::pixmap(int w, int h, QIcon::Mode mode, QIcon::State state);
-QPixmap* _ZNK5QIcon6pixmapEiiNS_4ModeENS_5StateE(void *that, int w, int h, QIcon::Mode mode, QIcon::State state)
+QPixmap* demth_ZNK5QIcon6pixmapEiiNS_4ModeENS_5StateE(void *that, int w, int h, QIcon::Mode mode, QIcon::State state)
 {
   QIcon *cthat = (QIcon *)that;
   auto recret = cthat->pixmap(w, h, mode, state);
@@ -93,7 +93,7 @@ QPixmap* _ZNK5QIcon6pixmapEiiNS_4ModeENS_5StateE(void *that, int w, int h, QIcon
 }
 
   // proto:  void QIcon::swap(QIcon & other);
-void _ZN5QIcon4swapERS_(void *that, QIcon & other)
+void demth_ZN5QIcon4swapERS_(void *that, QIcon & other)
 {
   QIcon *cthat = (QIcon *)that;
    cthat->swap(other);

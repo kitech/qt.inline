@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qgraphicslinearlayout.h
 // dst-file: /src/widgets/qgraphicslinearlayout.cxx
 //
@@ -38,14 +38,14 @@ QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EN2Qt11OrientationEP19Q
 }
 
   // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
-void _ZN21QGraphicsLinearLayout10addStretchEi(void *that, int stretch)
+void demth_ZN21QGraphicsLinearLayout10addStretchEi(void *that, int stretch)
 {
   QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
    cthat->addStretch(stretch);
 }
 
   // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
-void _ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *that, QGraphicsLayoutItem * item)
+void demth_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *that, QGraphicsLayoutItem * item)
 {
   QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
    cthat->addItem(item);

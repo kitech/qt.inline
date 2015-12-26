@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qbrush.h
 // dst-file: /src/gui/qbrush.cxx
 //
@@ -71,14 +71,14 @@ QRadialGradient* dector_ZN15QRadialGradientC1Eddd(double cx, double cy, double r
 }
 
   // proto:  void QRadialGradient::setFocalPoint(qreal x, qreal y);
-void _ZN15QRadialGradient13setFocalPointEdd(void *that, double x, double y)
+void demth_ZN15QRadialGradient13setFocalPointEdd(void *that, double x, double y)
 {
   QRadialGradient *cthat = (QRadialGradient *)that;
    cthat->setFocalPoint(x, y);
 }
 
   // proto:  void QRadialGradient::setCenter(qreal x, qreal y);
-void _ZN15QRadialGradient9setCenterEdd(void *that, double x, double y)
+void demth_ZN15QRadialGradient9setCenterEdd(void *that, double x, double y)
 {
   QRadialGradient *cthat = (QRadialGradient *)that;
    cthat->setCenter(x, y);
@@ -114,7 +114,7 @@ QConicalGradient* dector_ZN16QConicalGradientC1Eddd(double cx, double cy, double
 }
 
   // proto:  void QConicalGradient::setCenter(qreal x, qreal y);
-void _ZN16QConicalGradient9setCenterEdd(void *that, double x, double y)
+void demth_ZN16QConicalGradient9setCenterEdd(void *that, double x, double y)
 {
   QConicalGradient *cthat = (QConicalGradient *)that;
    cthat->setCenter(x, y);
@@ -213,7 +213,7 @@ QBrush* dector_ZN6QBrushC1ERK6QColorN2Qt10BrushStyleE(const QColor & color, Qt::
 }
 
   // proto:  QTransform QBrush::transform();
-QTransform* _ZNK6QBrush9transformEv(void *that)
+QTransform* demth_ZNK6QBrush9transformEv(void *that)
 {
   QBrush *cthat = (QBrush *)that;
   auto recret = cthat->transform();
@@ -221,35 +221,35 @@ QTransform* _ZNK6QBrush9transformEv(void *that)
 }
 
   // proto:  const QMatrix & QBrush::matrix();
-const QMatrix * _ZNK6QBrush6matrixEv(void *that)
+const QMatrix * demth_ZNK6QBrush6matrixEv(void *that)
 {
   QBrush *cthat = (QBrush *)that;
   return &cthat->matrix();
 }
 
   // proto:  bool QBrush::isDetached();
-bool _ZNK6QBrush10isDetachedEv(void *that)
+bool demth_ZNK6QBrush10isDetachedEv(void *that)
 {
   QBrush *cthat = (QBrush *)that;
   return cthat->isDetached();
 }
 
   // proto:  void QBrush::swap(QBrush & other);
-void _ZN6QBrush4swapERS_(void *that, QBrush & other)
+void demth_ZN6QBrush4swapERS_(void *that, QBrush & other)
 {
   QBrush *cthat = (QBrush *)that;
    cthat->swap(other);
 }
 
   // proto:  void QBrush::setColor(Qt::GlobalColor color);
-void _ZN6QBrush8setColorEN2Qt11GlobalColorE(void *that, Qt::GlobalColor color)
+void demth_ZN6QBrush8setColorEN2Qt11GlobalColorE(void *that, Qt::GlobalColor color)
 {
   QBrush *cthat = (QBrush *)that;
    cthat->setColor(color);
 }
 
   // proto:  const QColor & QBrush::color();
-const QColor * _ZNK6QBrush5colorEv(void *that)
+const QColor * demth_ZNK6QBrush5colorEv(void *that)
 {
   QBrush *cthat = (QBrush *)that;
   return &cthat->color();
@@ -269,7 +269,7 @@ QGradient* dector_ZN9QGradientC1Ev()
 }
 
   // proto:  void QGradient::setSpread(QGradient::Spread spread);
-void _ZN9QGradient9setSpreadENS_6SpreadE(void *that, QGradient::Spread spread)
+void demth_ZN9QGradient9setSpreadENS_6SpreadE(void *that, QGradient::Spread spread)
 {
   QGradient *cthat = (QGradient *)that;
    cthat->setSpread(spread);
@@ -310,14 +310,14 @@ QLinearGradient* dector_ZN15QLinearGradientC1Ev()
 }
 
   // proto:  void QLinearGradient::setFinalStop(qreal x, qreal y);
-void _ZN15QLinearGradient12setFinalStopEdd(void *that, double x, double y)
+void demth_ZN15QLinearGradient12setFinalStopEdd(void *that, double x, double y)
 {
   QLinearGradient *cthat = (QLinearGradient *)that;
    cthat->setFinalStop(x, y);
 }
 
   // proto:  void QLinearGradient::setStart(qreal x, qreal y);
-void _ZN15QLinearGradient8setStartEdd(void *that, double x, double y)
+void demth_ZN15QLinearGradient8setStartEdd(void *that, double x, double y)
 {
   QLinearGradient *cthat = (QLinearGradient *)that;
    cthat->setStart(x, y);

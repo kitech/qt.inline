@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qgraphicseffect.h
 // dst-file: /src/widgets/qgraphicseffect.cxx
 //
@@ -55,42 +55,42 @@ void dedtor_ZN25QGraphicsDropShadowEffectD0Ev(QGraphicsDropShadowEffect* that)
 }
 
   // proto:  void QGraphicsDropShadowEffect::setYOffset(qreal dy);
-void _ZN25QGraphicsDropShadowEffect10setYOffsetEd(void *that, double dy)
+void demth_ZN25QGraphicsDropShadowEffect10setYOffsetEd(void *that, double dy)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
    cthat->setYOffset(dy);
 }
 
   // proto:  qreal QGraphicsDropShadowEffect::xOffset();
-qreal _ZNK25QGraphicsDropShadowEffect7xOffsetEv(void *that)
+qreal demth_ZNK25QGraphicsDropShadowEffect7xOffsetEv(void *that)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
   return cthat->xOffset();
 }
 
   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal dx, qreal dy);
-void _ZN25QGraphicsDropShadowEffect9setOffsetEdd(void *that, double dx, double dy)
+void demth_ZN25QGraphicsDropShadowEffect9setOffsetEdd(void *that, double dx, double dy)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
    cthat->setOffset(dx, dy);
 }
 
   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal d);
-void _ZN25QGraphicsDropShadowEffect9setOffsetEd(void *that, double d)
+void demth_ZN25QGraphicsDropShadowEffect9setOffsetEd(void *that, double d)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
    cthat->setOffset(d);
 }
 
   // proto:  qreal QGraphicsDropShadowEffect::yOffset();
-qreal _ZNK25QGraphicsDropShadowEffect7yOffsetEv(void *that)
+qreal demth_ZNK25QGraphicsDropShadowEffect7yOffsetEv(void *that)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
   return cthat->yOffset();
 }
 
   // proto:  void QGraphicsDropShadowEffect::setXOffset(qreal dx);
-void _ZN25QGraphicsDropShadowEffect10setXOffsetEd(void *that, double dx)
+void demth_ZN25QGraphicsDropShadowEffect10setXOffsetEd(void *that, double dx)
 {
   QGraphicsDropShadowEffect *cthat = (QGraphicsDropShadowEffect *)that;
    cthat->setXOffset(dx);

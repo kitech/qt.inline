@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qjsonobject.h
 // dst-file: /src/core/qjsonobject.cxx
 //
@@ -46,21 +46,21 @@ QJsonObject* dector_ZN11QJsonObjectC1ERKS_(const QJsonObject & other)
 }
 
   // proto:  int QJsonObject::length();
-int _ZNK11QJsonObject6lengthEv(void *that)
+int demth_ZNK11QJsonObject6lengthEv(void *that)
 {
   QJsonObject *cthat = (QJsonObject *)that;
   return cthat->length();
 }
 
   // proto:  int QJsonObject::count();
-int _ZNK11QJsonObject5countEv(void *that)
+int demth_ZNK11QJsonObject5countEv(void *that)
 {
   QJsonObject *cthat = (QJsonObject *)that;
   return cthat->count();
 }
 
   // proto:  bool QJsonObject::empty();
-bool _ZNK11QJsonObject5emptyEv(void *that)
+bool demth_ZNK11QJsonObject5emptyEv(void *that)
 {
   QJsonObject *cthat = (QJsonObject *)that;
   return cthat->empty();

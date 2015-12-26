@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -54,7 +54,7 @@ QFile* dector_ZN5QFileC1ERK7QString(const QString & name)
 }
 
   // proto:  QString QFile::symLinkTarget();
-QString* _ZNK5QFile13symLinkTargetEv(void *that)
+QString* demth_ZNK5QFile13symLinkTargetEv(void *that)
 {
   QFile *cthat = (QFile *)that;
   auto recret = cthat->symLinkTarget();
@@ -62,7 +62,7 @@ QString* _ZNK5QFile13symLinkTargetEv(void *that)
 }
 
   // proto: static QByteArray QFile::encodeName(const QString & fileName);
-QByteArray* _ZN5QFile10encodeNameERK7QString(void *that, const QString & fileName)
+QByteArray* demth_ZN5QFile10encodeNameERK7QString(void *that, const QString & fileName)
 {
   QFile *cthat = (QFile *)that;
   auto recret = cthat->encodeName(fileName);
@@ -70,7 +70,7 @@ QByteArray* _ZN5QFile10encodeNameERK7QString(void *that, const QString & fileNam
 }
 
   // proto: static QString QFile::decodeName(const char * localFileName);
-QString* _ZN5QFile10decodeNameEPKc(void *that, const char * localFileName)
+QString* demth_ZN5QFile10decodeNameEPKc(void *that, const char * localFileName)
 {
   QFile *cthat = (QFile *)that;
   auto recret = cthat->decodeName(localFileName);
@@ -78,7 +78,7 @@ QString* _ZN5QFile10decodeNameEPKc(void *that, const char * localFileName)
 }
 
   // proto: static QString QFile::symLinkTarget(const QString & fileName);
-QString* _ZN5QFile13symLinkTargetERK7QString(void *that, const QString & fileName)
+QString* demth_ZN5QFile13symLinkTargetERK7QString(void *that, const QString & fileName)
 {
   QFile *cthat = (QFile *)that;
   auto recret = cthat->symLinkTarget(fileName);

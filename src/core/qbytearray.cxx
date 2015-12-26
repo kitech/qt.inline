@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
@@ -83,28 +83,28 @@ QByteArray* dector_ZN10QByteArrayC1E17QByteArrayDataPtr(QByteArrayDataPtr dd)
 }
 
   // proto:  void QByteArray::~QByteArray();
-void _ZN10QByteArrayD0Ev(void *that)
+void demth_ZN10QByteArrayD0Ev(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
    cthat->~QByteArray();
 }
 
   // proto:  void QByteArray::QByteArray(QByteArray && other);
-void _ZN10QByteArrayC1EOS_(void *that, QByteArray && other)
+void demth_ZN10QByteArrayC1EOS_(void *that, QByteArray && other)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(other);
 }
 
   // proto:  void QByteArray::QByteArray();
-void _ZN10QByteArrayC1Ev(void *that)
+void demth_ZN10QByteArrayC1Ev(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray();
 }
 
   // proto: static QByteArray QByteArray::fromStdString(const std::string & s);
-QByteArray* _ZN10QByteArray13fromStdStringERKi(void *that, const std::string & s)
+QByteArray* demth_ZN10QByteArray13fromStdStringERKi(void *that, const std::string & s)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto recret = cthat->fromStdString(s);
@@ -112,56 +112,56 @@ QByteArray* _ZN10QByteArray13fromStdStringERKi(void *that, const std::string & s
 }
 
   // proto:  int QByteArray::count();
-int _ZNK10QByteArray5countEv(void *that)
+int demth_ZNK10QByteArray5countEv(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->count();
 }
 
   // proto:  void QByteArray::detach();
-void _ZN10QByteArray6detachEv(void *that)
+void demth_ZN10QByteArray6detachEv(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
    cthat->detach();
 }
 
   // proto:  bool QByteArray::isSharedWith(const QByteArray & other);
-bool _ZNK10QByteArray12isSharedWithERKS_(void *that, const QByteArray & other)
+bool demth_ZNK10QByteArray12isSharedWithERKS_(void *that, const QByteArray & other)
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->isSharedWith(other);
 }
 
   // proto:  int QByteArray::size();
-int _ZNK10QByteArray4sizeEv(void *that)
+int demth_ZNK10QByteArray4sizeEv(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->size();
 }
 
   // proto:  const char * QByteArray::constData();
-const char * _ZNK10QByteArray9constDataEv(void *that)
+const char * demth_ZNK10QByteArray9constDataEv(void *that)
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->constData();
 }
 
   // proto:  void QByteArray::QByteArray(const QByteArray & );
-void _ZN10QByteArrayC1ERKS_(void *that, const QByteArray & arg1)
+void demth_ZN10QByteArrayC1ERKS_(void *that, const QByteArray & arg1)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(arg1);
 }
 
   // proto:  void QByteArray::swap(QByteArray & other);
-void _ZN10QByteArray4swapERS_(void *that, QByteArray & other)
+void demth_ZN10QByteArray4swapERS_(void *that, QByteArray & other)
 {
   QByteArray *cthat = (QByteArray *)that;
    cthat->swap(other);
 }
 
   // proto:  void QByteArray::QByteArray(QByteArrayDataPtr dd);
-void _ZN10QByteArrayC1E17QByteArrayDataPtr(void *that, QByteArrayDataPtr dd)
+void demth_ZN10QByteArrayC1E17QByteArrayDataPtr(void *that, QByteArrayDataPtr dd)
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(dd);

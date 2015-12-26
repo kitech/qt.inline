@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qcoreevent.h
 // dst-file: /src/core/qcoreevent.cxx
 //
@@ -50,7 +50,7 @@ QDynamicPropertyChangeEvent* dector_ZN27QDynamicPropertyChangeEventC1ERK10QByteA
 }
 
   // proto:  QByteArray QDynamicPropertyChangeEvent::propertyName();
-QByteArray* _ZNK27QDynamicPropertyChangeEvent12propertyNameEv(void *that)
+QByteArray* demth_ZNK27QDynamicPropertyChangeEvent12propertyNameEv(void *that)
 {
   QDynamicPropertyChangeEvent *cthat = (QDynamicPropertyChangeEvent *)that;
   auto recret = cthat->propertyName();
@@ -126,35 +126,35 @@ QEvent* dector_ZN6QEventC1ERKS_(const QEvent & other)
 }
 
   // proto:  void QEvent::setAccepted(bool accepted);
-void _ZN6QEvent11setAcceptedEb(void *that, bool accepted)
+void demth_ZN6QEvent11setAcceptedEb(void *that, bool accepted)
 {
   QEvent *cthat = (QEvent *)that;
    cthat->setAccepted(accepted);
 }
 
   // proto:  void QEvent::ignore();
-void _ZN6QEvent6ignoreEv(void *that)
+void demth_ZN6QEvent6ignoreEv(void *that)
 {
   QEvent *cthat = (QEvent *)that;
    cthat->ignore();
 }
 
   // proto:  bool QEvent::isAccepted();
-bool _ZNK6QEvent10isAcceptedEv(void *that)
+bool demth_ZNK6QEvent10isAcceptedEv(void *that)
 {
   QEvent *cthat = (QEvent *)that;
   return cthat->isAccepted();
 }
 
   // proto:  void QEvent::accept();
-void _ZN6QEvent6acceptEv(void *that)
+void demth_ZN6QEvent6acceptEv(void *that)
 {
   QEvent *cthat = (QEvent *)that;
    cthat->accept();
 }
 
   // proto:  bool QEvent::spontaneous();
-bool _ZNK6QEvent11spontaneousEv(void *that)
+bool demth_ZNK6QEvent11spontaneousEv(void *that)
 {
   QEvent *cthat = (QEvent *)that;
   return cthat->spontaneous();

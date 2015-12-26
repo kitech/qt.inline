@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qactiongroup.h
 // dst-file: /src/widgets/qactiongroup.cxx
 //
@@ -30,7 +30,7 @@ void dedtor_ZN12QActionGroupD0Ev(QActionGroup* that)
 }
 
   // proto:  void QActionGroup::setDisabled(bool b);
-void _ZN12QActionGroup11setDisabledEb(void *that, bool b)
+void demth_ZN12QActionGroup11setDisabledEb(void *that, bool b)
 {
   QActionGroup *cthat = (QActionGroup *)that;
    cthat->setDisabled(b);

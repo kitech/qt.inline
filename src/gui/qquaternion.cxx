@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -55,7 +55,7 @@ QQuaternion* dector_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization a
 }
 
   // proto:  QVector3D QQuaternion::toEulerAngles();
-QVector3D* _ZNK11QQuaternion13toEulerAnglesEv(void *that)
+QVector3D* demth_ZNK11QQuaternion13toEulerAnglesEv(void *that)
 {
   QQuaternion *cthat = (QQuaternion *)that;
   auto recret = cthat->toEulerAngles();
@@ -63,7 +63,7 @@ QVector3D* _ZNK11QQuaternion13toEulerAnglesEv(void *that)
 }
 
   // proto:  QQuaternion QQuaternion::inverted();
-QQuaternion* _ZNK11QQuaternion8invertedEv(void *that)
+QQuaternion* demth_ZNK11QQuaternion8invertedEv(void *that)
 {
   QQuaternion *cthat = (QQuaternion *)that;
   auto recret = cthat->inverted();
@@ -71,14 +71,14 @@ QQuaternion* _ZNK11QQuaternion8invertedEv(void *that)
 }
 
   // proto:  void QQuaternion::getAxisAndAngle(QVector3D * axis, float * angle);
-void _ZNK11QQuaternion15getAxisAndAngleEP9QVector3DPf(void *that, QVector3D * axis, float * angle)
+void demth_ZNK11QQuaternion15getAxisAndAngleEP9QVector3DPf(void *that, QVector3D * axis, float * angle)
 {
   QQuaternion *cthat = (QQuaternion *)that;
    cthat->getAxisAndAngle(axis, angle);
 }
 
   // proto: static QQuaternion QQuaternion::fromEulerAngles(const QVector3D & eulerAngles);
-QQuaternion* _ZN11QQuaternion15fromEulerAnglesERK9QVector3D(void *that, const QVector3D & eulerAngles)
+QQuaternion* demth_ZN11QQuaternion15fromEulerAnglesERK9QVector3D(void *that, const QVector3D & eulerAngles)
 {
   QQuaternion *cthat = (QQuaternion *)that;
   auto recret = cthat->fromEulerAngles(eulerAngles);

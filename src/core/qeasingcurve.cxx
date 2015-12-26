@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qeasingcurve.h
 // dst-file: /src/core/qeasingcurve.cxx
 //
@@ -46,7 +46,7 @@ QEasingCurve* dector_ZN12QEasingCurveC1ENS_4TypeE(QEasingCurve::Type type)
 }
 
   // proto:  void QEasingCurve::swap(QEasingCurve & other);
-void _ZN12QEasingCurve4swapERS_(void *that, QEasingCurve & other)
+void demth_ZN12QEasingCurve4swapERS_(void *that, QEasingCurve & other)
 {
   QEasingCurve *cthat = (QEasingCurve *)that;
    cthat->swap(other);

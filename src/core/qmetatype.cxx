@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qmetatype.h
 // dst-file: /src/core/qmetatype.cxx
 //
@@ -30,63 +30,63 @@ QMetaType* dector_ZN9QMetaTypeC1Ei(const int type)
 }
 
   // proto:  const QMetaObject * QMetaType::metaObject();
-const QMetaObject * _ZNK9QMetaType10metaObjectEv(void *that)
+const QMetaObject * demth_ZNK9QMetaType10metaObjectEv(void *that)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->metaObject();
 }
 
   // proto:  void QMetaType::destroy(void * data);
-void _ZNK9QMetaType7destroyEPv(void *that, void * data)
+void demth_ZNK9QMetaType7destroyEPv(void *that, void * data)
 {
   QMetaType *cthat = (QMetaType *)that;
    cthat->destroy(data);
 }
 
   // proto:  bool QMetaType::isValid();
-bool _ZNK9QMetaType7isValidEv(void *that)
+bool demth_ZNK9QMetaType7isValidEv(void *that)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->isValid();
 }
 
   // proto:  void * QMetaType::construct(void * where, const void * copy);
-void * _ZNK9QMetaType9constructEPvPKv(void *that, void * where, const void * copy)
+void * demth_ZNK9QMetaType9constructEPvPKv(void *that, void * where, const void * copy)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->construct(where, copy);
 }
 
   // proto:  void * QMetaType::create(const void * copy);
-void * _ZNK9QMetaType6createEPKv(void *that, const void * copy)
+void * demth_ZNK9QMetaType6createEPKv(void *that, const void * copy)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->create(copy);
 }
 
   // proto:  void QMetaType::destruct(void * data);
-void _ZNK9QMetaType8destructEPv(void *that, void * data)
+void demth_ZNK9QMetaType8destructEPv(void *that, void * data)
 {
   QMetaType *cthat = (QMetaType *)that;
    cthat->destruct(data);
 }
 
   // proto:  void QMetaType::~QMetaType();
-void _ZN9QMetaTypeD0Ev(void *that)
+void demth_ZN9QMetaTypeD0Ev(void *that)
 {
   QMetaType *cthat = (QMetaType *)that;
    cthat->~QMetaType();
 }
 
   // proto:  int QMetaType::sizeOf();
-int _ZNK9QMetaType6sizeOfEv(void *that)
+int demth_ZNK9QMetaType6sizeOfEv(void *that)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->sizeOf();
 }
 
   // proto:  bool QMetaType::isRegistered();
-bool _ZNK9QMetaType12isRegisteredEv(void *that)
+bool demth_ZNK9QMetaType12isRegisteredEv(void *that)
 {
   QMetaType *cthat = (QMetaType *)that;
   return cthat->isRegistered();

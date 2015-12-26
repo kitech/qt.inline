@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qiodevice.h
 // dst-file: /src/core/qiodevice.cxx
 //
@@ -15,7 +15,7 @@ int QIODevice_Class_Size()
 }
 
   // proto:  qint64 QIODevice::write(const QByteArray & data);
-qint64 _ZN9QIODevice5writeERK10QByteArray(void *that, const QByteArray & data)
+qint64 demth_ZN9QIODevice5writeERK10QByteArray(void *that, const QByteArray & data)
 {
   QIODevice *cthat = (QIODevice *)that;
   return cthat->write(data);

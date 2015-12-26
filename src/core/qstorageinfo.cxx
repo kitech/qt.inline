@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qstorageinfo.h
 // dst-file: /src/core/qstorageinfo.cxx
 //
@@ -54,14 +54,14 @@ QStorageInfo* dector_ZN12QStorageInfoC1ERK7QString(const QString & path)
 }
 
   // proto:  bool QStorageInfo::isRoot();
-bool _ZNK12QStorageInfo6isRootEv(void *that)
+bool demth_ZNK12QStorageInfo6isRootEv(void *that)
 {
   QStorageInfo *cthat = (QStorageInfo *)that;
   return cthat->isRoot();
 }
 
   // proto:  void QStorageInfo::swap(QStorageInfo & other);
-void _ZN12QStorageInfo4swapERS_(void *that, QStorageInfo & other)
+void demth_ZN12QStorageInfo4swapERS_(void *that, QStorageInfo & other)
 {
   QStorageInfo *cthat = (QStorageInfo *)that;
    cthat->swap(other);

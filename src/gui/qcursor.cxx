@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qcursor.h
 // dst-file: /src/gui/qcursor.cxx
 //
@@ -70,21 +70,21 @@ QCursor* dector_ZN7QCursorC1Ev()
 }
 
   // proto: static void QCursor::setPos(QScreen * screen, const QPoint & p);
-void _ZN7QCursor6setPosEP7QScreenRK6QPoint(void *that, QScreen * screen, const QPoint & p)
+void demth_ZN7QCursor6setPosEP7QScreenRK6QPoint(void *that, QScreen * screen, const QPoint & p)
 {
   QCursor *cthat = (QCursor *)that;
    cthat->setPos(screen, p);
 }
 
   // proto: static void QCursor::setPos(const QPoint & p);
-void _ZN7QCursor6setPosERK6QPoint(void *that, const QPoint & p)
+void demth_ZN7QCursor6setPosERK6QPoint(void *that, const QPoint & p)
 {
   QCursor *cthat = (QCursor *)that;
    cthat->setPos(p);
 }
 
   // proto:  void QCursor::QCursor(QCursor && other);
-void _ZN7QCursorC1EOS_(void *that, QCursor && other)
+void demth_ZN7QCursorC1EOS_(void *that, QCursor && other)
 {
   QCursor *cthat = (QCursor *)that;
   auto _o = new(that) QCursor(other);

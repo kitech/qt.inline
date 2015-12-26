@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qobject.h
 // dst-file: /src/core/qobject.cxx
 //
@@ -15,21 +15,21 @@ int QSignalBlocker_Class_Size()
 }
 
   // proto:  void QSignalBlocker::unblock();
-void _ZN14QSignalBlocker7unblockEv(void *that)
+void demth_ZN14QSignalBlocker7unblockEv(void *that)
 {
   QSignalBlocker *cthat = (QSignalBlocker *)that;
    cthat->unblock();
 }
 
   // proto:  void QSignalBlocker::reblock();
-void _ZN14QSignalBlocker7reblockEv(void *that)
+void demth_ZN14QSignalBlocker7reblockEv(void *that)
 {
   QSignalBlocker *cthat = (QSignalBlocker *)that;
    cthat->reblock();
 }
 
   // proto:  void QSignalBlocker::~QSignalBlocker();
-void _ZN14QSignalBlockerD0Ev(void *that)
+void demth_ZN14QSignalBlockerD0Ev(void *that)
 {
   QSignalBlocker *cthat = (QSignalBlocker *)that;
    cthat->~QSignalBlocker();
@@ -73,56 +73,56 @@ QObject* dector_ZN7QObjectC1EPS_(QObject * parent)
 }
 
   // proto:  bool QObject::inherits(const char * classname);
-bool _ZNK7QObject8inheritsEPKc(void *that, const char * classname)
+bool demth_ZNK7QObject8inheritsEPKc(void *that, const char * classname)
 {
   QObject *cthat = (QObject *)that;
   return cthat->inherits(classname);
 }
 
   // proto:  bool QObject::isWidgetType();
-bool _ZNK7QObject12isWidgetTypeEv(void *that)
+bool demth_ZNK7QObject12isWidgetTypeEv(void *that)
 {
   QObject *cthat = (QObject *)that;
   return cthat->isWidgetType();
 }
 
   // proto:  bool QObject::disconnect(const QObject * receiver, const char * member);
-bool _ZNK7QObject10disconnectEPKS_PKc(void *that, const QObject * receiver, const char * member)
+bool demth_ZNK7QObject10disconnectEPKS_PKc(void *that, const QObject * receiver, const char * member)
 {
   QObject *cthat = (QObject *)that;
   return cthat->disconnect(receiver, member);
 }
 
   // proto:  const QObjectList & QObject::children();
-const QObjectList * _ZNK7QObject8childrenEv(void *that)
+const QObjectList * demth_ZNK7QObject8childrenEv(void *that)
 {
   QObject *cthat = (QObject *)that;
   return &cthat->children();
 }
 
   // proto:  bool QObject::isWindowType();
-bool _ZNK7QObject12isWindowTypeEv(void *that)
+bool demth_ZNK7QObject12isWindowTypeEv(void *that)
 {
   QObject *cthat = (QObject *)that;
   return cthat->isWindowType();
 }
 
   // proto:  bool QObject::disconnect(const char * signal, const QObject * receiver, const char * member);
-bool _ZNK7QObject10disconnectEPKcPKS_S1_(void *that, const char * signal, const QObject * receiver, const char * member)
+bool demth_ZNK7QObject10disconnectEPKcPKS_S1_(void *that, const char * signal, const QObject * receiver, const char * member)
 {
   QObject *cthat = (QObject *)that;
   return cthat->disconnect(signal, receiver, member);
 }
 
   // proto:  bool QObject::signalsBlocked();
-bool _ZNK7QObject14signalsBlockedEv(void *that)
+bool demth_ZNK7QObject14signalsBlockedEv(void *that)
 {
   QObject *cthat = (QObject *)that;
   return cthat->signalsBlocked();
 }
 
   // proto:  QObject * QObject::parent();
-QObject * _ZNK7QObject6parentEv(void *that)
+QObject * demth_ZNK7QObject6parentEv(void *that)
 {
   QObject *cthat = (QObject *)that;
   return cthat->parent();

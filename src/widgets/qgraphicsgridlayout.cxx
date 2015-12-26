@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qgraphicsgridlayout.h
 // dst-file: /src/widgets/qgraphicsgridlayout.cxx
 //
@@ -30,7 +30,7 @@ QGraphicsGridLayout* dector_ZN19QGraphicsGridLayoutC1EP19QGraphicsLayoutItem(QGr
 }
 
   // proto:  void QGraphicsGridLayout::addItem(QGraphicsLayoutItem * item, int row, int column, Qt::Alignment alignment);
-void _ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemii6QFlagsIN2Qt13AlignmentFlagEE(void *that, QGraphicsLayoutItem * item, int row, int column, Qt::Alignment alignment)
+void demth_ZN19QGraphicsGridLayout7addItemEP19QGraphicsLayoutItemii6QFlagsIN2Qt13AlignmentFlagEE(void *that, QGraphicsLayoutItem * item, int row, int column, Qt::Alignment alignment)
 {
   QGraphicsGridLayout *cthat = (QGraphicsGridLayout *)that;
    cthat->addItem(item, row, column, alignment);

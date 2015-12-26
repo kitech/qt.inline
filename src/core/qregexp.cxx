@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qregexp.h
 // dst-file: /src/core/qregexp.cxx
 //
@@ -46,7 +46,7 @@ QRegExp* dector_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE
 }
 
   // proto:  void QRegExp::swap(QRegExp & other);
-void _ZN7QRegExp4swapERS_(void *that, QRegExp & other)
+void demth_ZN7QRegExp4swapERS_(void *that, QRegExp & other)
 {
   QRegExp *cthat = (QRegExp *)that;
    cthat->swap(other);

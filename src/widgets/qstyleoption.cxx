@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qstyleoption.h
 // dst-file: /src/widgets/qstyleoption.cxx
 //
@@ -142,7 +142,7 @@ QStyleOption* dector_ZN12QStyleOptionC1Eii(int version, int type)
 }
 
   // proto:  void QStyleOption::initFrom(const QWidget * w);
-void _ZN12QStyleOption8initFromEPK7QWidget(void *that, const QWidget * w)
+void demth_ZN12QStyleOption8initFromEPK7QWidget(void *that, const QWidget * w)
 {
   QStyleOption *cthat = (QStyleOption *)that;
    cthat->initFrom(w);
@@ -588,7 +588,7 @@ QStyleOptionTabWidgetFrame* dector_ZN26QStyleOptionTabWidgetFrameC1Ev()
 }
 
   // proto:  void QStyleOptionTabWidgetFrame::QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other);
-void _ZN26QStyleOptionTabWidgetFrameC1ERKS_(void *that, const QStyleOptionTabWidgetFrame & other)
+void demth_ZN26QStyleOptionTabWidgetFrameC1ERKS_(void *that, const QStyleOptionTabWidgetFrame & other)
 {
   QStyleOptionTabWidgetFrame *cthat = (QStyleOptionTabWidgetFrame *)that;
   auto _o = new(that) QStyleOptionTabWidgetFrame(other);

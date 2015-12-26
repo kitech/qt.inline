@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -38,7 +38,7 @@ QShortcut* dector_ZN9QShortcutC1EP7QWidget(QWidget * parent)
 }
 
   // proto:  QWidget * QShortcut::parentWidget();
-QWidget * _ZNK9QShortcut12parentWidgetEv(void *that)
+QWidget * demth_ZNK9QShortcut12parentWidgetEv(void *that)
 {
   QShortcut *cthat = (QShortcut *)that;
   return cthat->parentWidget();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
@@ -38,14 +38,14 @@ QDockWidget* dector_ZN11QDockWidgetC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTyp
 }
 
   // proto:  bool QDockWidget::isFloating();
-bool _ZNK11QDockWidget10isFloatingEv(void *that)
+bool demth_ZNK11QDockWidget10isFloatingEv(void *that)
 {
   QDockWidget *cthat = (QDockWidget *)that;
   return cthat->isFloating();
 }
 
   // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
-bool _ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *that, Qt::DockWidgetArea area)
+bool demth_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *that, Qt::DockWidgetArea area)
 {
   QDockWidget *cthat = (QDockWidget *)that;
   return cthat->isAreaAllowed(area);

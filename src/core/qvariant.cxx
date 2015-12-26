@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qvariant.h
 // dst-file: /src/core/qvariant.cxx
 //
@@ -23,7 +23,7 @@ QVariantComparisonHelper* dector_ZN24QVariantComparisonHelperC1ERK8QVariant(cons
 }
 
   // proto:  void QVariantComparisonHelper::QVariantComparisonHelper(const QVariant & var);
-void _ZN24QVariantComparisonHelperC1ERK8QVariant(void *that, const QVariant & var)
+void demth_ZN24QVariantComparisonHelperC1ERK8QVariant(void *that, const QVariant & var)
 {
   QVariantComparisonHelper *cthat = (QVariantComparisonHelper *)that;
   auto _o = new(that) QVariantComparisonHelper(var);
@@ -418,35 +418,35 @@ QVariant* dector_ZN8QVariantC1EOS_(QVariant && other)
 }
 
   // proto:  bool QVariant::isValid();
-bool _ZNK8QVariant7isValidEv(void *that)
+bool demth_ZNK8QVariant7isValidEv(void *that)
 {
   QVariant *cthat = (QVariant *)that;
   return cthat->isValid();
 }
 
   // proto:  const void * QVariant::data();
-const void * _ZNK8QVariant4dataEv(void *that)
+const void * demth_ZNK8QVariant4dataEv(void *that)
 {
   QVariant *cthat = (QVariant *)that;
   return cthat->data();
 }
 
   // proto:  void QVariant::swap(QVariant & other);
-void _ZN8QVariant4swapERS_(void *that, QVariant & other)
+void demth_ZN8QVariant4swapERS_(void *that, QVariant & other)
 {
   QVariant *cthat = (QVariant *)that;
    cthat->swap(other);
 }
 
   // proto:  bool QVariant::isDetached();
-bool _ZNK8QVariant10isDetachedEv(void *that)
+bool demth_ZNK8QVariant10isDetachedEv(void *that)
 {
   QVariant *cthat = (QVariant *)that;
   return cthat->isDetached();
 }
 
   // proto:  void QVariant::QVariant(QVariant && other);
-void _ZN8QVariantC1EOS_(void *that, QVariant && other)
+void demth_ZN8QVariantC1EOS_(void *that, QVariant && other)
 {
   QVariant *cthat = (QVariant *)that;
   auto _o = new(that) QVariant(other);

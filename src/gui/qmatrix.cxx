@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -47,14 +47,14 @@ QMatrix* dector_ZN7QMatrixC1Edddddd(double m11, double m12, double m21, double m
 }
 
   // proto:  void QMatrix::QMatrix(Qt::Initialization );
-void _ZN7QMatrixC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
+void demth_ZN7QMatrixC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
 {
   QMatrix *cthat = (QMatrix *)that;
   auto _o = new(that) QMatrix(arg1);
 }
 
   // proto:  bool QMatrix::isIdentity();
-bool _ZNK7QMatrix10isIdentityEv(void *that)
+bool demth_ZNK7QMatrix10isIdentityEv(void *that)
 {
   QMatrix *cthat = (QMatrix *)that;
   return cthat->isIdentity();

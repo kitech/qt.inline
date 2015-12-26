@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qopenglbuffer.h
 // dst-file: /src/gui/qopenglbuffer.cxx
 //
@@ -46,7 +46,7 @@ QOpenGLBuffer* dector_ZN13QOpenGLBufferC1ENS_4TypeE(QOpenGLBuffer::Type type)
 }
 
   // proto:  void QOpenGLBuffer::allocate(int count);
-void _ZN13QOpenGLBuffer8allocateEi(void *that, int count)
+void demth_ZN13QOpenGLBuffer8allocateEi(void *that, int count)
 {
   QOpenGLBuffer *cthat = (QOpenGLBuffer *)that;
    cthat->allocate(count);

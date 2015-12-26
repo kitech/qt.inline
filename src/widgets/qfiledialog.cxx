@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qfiledialog.h
 // dst-file: /src/widgets/qfiledialog.cxx
 //
@@ -38,7 +38,7 @@ QFileDialog* dector_ZN11QFileDialogC1EP7QWidgetRK7QStringS4_S4_(QWidget * parent
 }
 
   // proto:  void QFileDialog::setDirectory(const QDir & directory);
-void _ZN11QFileDialog12setDirectoryERK4QDir(void *that, const QDir & directory)
+void demth_ZN11QFileDialog12setDirectoryERK4QDir(void *that, const QDir & directory)
 {
   QFileDialog *cthat = (QFileDialog *)that;
    cthat->setDirectory(directory);

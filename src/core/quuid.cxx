@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/quuid.h
 // dst-file: /src/core/quuid.cxx
 //
@@ -55,7 +55,7 @@ QUuid* dector_ZN5QUuidC1EPKc(const char * arg1)
 }
 
   // proto: static QUuid QUuid::createUuidV5(const QUuid & ns, const QString & baseData);
-QUuid* _ZN5QUuid12createUuidV5ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
+QUuid* demth_ZN5QUuid12createUuidV5ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
 {
   QUuid *cthat = (QUuid *)that;
   auto recret = cthat->createUuidV5(ns, baseData);
@@ -63,7 +63,7 @@ QUuid* _ZN5QUuid12createUuidV5ERKS_RK7QString(void *that, const QUuid & ns, cons
 }
 
   // proto: static QUuid QUuid::createUuidV3(const QUuid & ns, const QString & baseData);
-QUuid* _ZN5QUuid12createUuidV3ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
+QUuid* demth_ZN5QUuid12createUuidV3ERKS_RK7QString(void *that, const QUuid & ns, const QString & baseData)
 {
   QUuid *cthat = (QUuid *)that;
   auto recret = cthat->createUuidV3(ns, baseData);

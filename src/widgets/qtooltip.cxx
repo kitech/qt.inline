@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qtooltip.h
 // dst-file: /src/widgets/qtooltip.cxx
 //
@@ -15,7 +15,7 @@ int QToolTip_Class_Size()
 }
 
   // proto: static void QToolTip::hideText();
-void _ZN8QToolTip8hideTextEv(void *that)
+void demth_ZN8QToolTip8hideTextEv(void *that)
 {
   QToolTip *cthat = (QToolTip *)that;
    cthat->hideText();

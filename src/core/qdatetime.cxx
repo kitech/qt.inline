@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -31,7 +31,7 @@ QTime* dector_ZN5QTimeC1Ev()
 }
 
   // proto: static QTime QTime::fromMSecsSinceStartOfDay(int msecs);
-QTime* _ZN5QTime24fromMSecsSinceStartOfDayEi(void *that, int msecs)
+QTime* demth_ZN5QTime24fromMSecsSinceStartOfDayEi(void *that, int msecs)
 {
   QTime *cthat = (QTime *)that;
   auto recret = cthat->fromMSecsSinceStartOfDay(msecs);
@@ -99,7 +99,7 @@ void dedtor_ZN9QDateTimeD0Ev(QDateTime* that)
 }
 
   // proto:  QDateTime QDateTime::toLocalTime();
-QDateTime* _ZNK9QDateTime11toLocalTimeEv(void *that)
+QDateTime* demth_ZNK9QDateTime11toLocalTimeEv(void *that)
 {
   QDateTime *cthat = (QDateTime *)that;
   auto recret = cthat->toLocalTime();
@@ -107,14 +107,14 @@ QDateTime* _ZNK9QDateTime11toLocalTimeEv(void *that)
 }
 
   // proto:  void QDateTime::swap(QDateTime & other);
-void _ZN9QDateTime4swapERS_(void *that, QDateTime & other)
+void demth_ZN9QDateTime4swapERS_(void *that, QDateTime & other)
 {
   QDateTime *cthat = (QDateTime *)that;
    cthat->swap(other);
 }
 
   // proto:  QDateTime QDateTime::toUTC();
-QDateTime* _ZNK9QDateTime5toUTCEv(void *that)
+QDateTime* demth_ZNK9QDateTime5toUTCEv(void *that)
 {
   QDateTime *cthat = (QDateTime *)that;
   auto recret = cthat->toUTC();
@@ -143,7 +143,7 @@ QDate* dector_ZN5QDateC1Eiii(int y, int m, int d)
 }
 
   // proto: static QDate QDate::fromJulianDay(qint64 jd);
-QDate* _ZN5QDate13fromJulianDayEx(void *that, long long jd)
+QDate* demth_ZN5QDate13fromJulianDayEx(void *that, long long jd)
 {
   QDate *cthat = (QDate *)that;
   auto recret = cthat->fromJulianDay(jd);

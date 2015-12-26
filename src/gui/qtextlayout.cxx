@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -23,21 +23,21 @@ QTextLine* dector_ZN9QTextLineC1Ev()
 }
 
   // proto:  qreal QTextLine::cursorToX(int cursorPos, QTextLine::Edge edge);
-qreal _ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextLine::Edge edge)
+qreal demth_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextLine::Edge edge)
 {
   QTextLine *cthat = (QTextLine *)that;
   return cthat->cursorToX(cursorPos, edge);
 }
 
   // proto:  void QTextLine::QTextLine();
-void _ZN9QTextLineC1Ev(void *that)
+void demth_ZN9QTextLineC1Ev(void *that)
 {
   QTextLine *cthat = (QTextLine *)that;
   auto _o = new(that) QTextLine();
 }
 
   // proto:  bool QTextLine::isValid();
-bool _ZNK9QTextLine7isValidEv(void *that)
+bool demth_ZNK9QTextLine7isValidEv(void *that)
 {
   QTextLine *cthat = (QTextLine *)that;
   return cthat->isValid();
@@ -109,21 +109,21 @@ QTextInlineObject* dector_ZN17QTextInlineObjectC1Ev()
 }
 
   // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
-void _ZN17QTextInlineObjectC1EiP11QTextEngine(void *that, int i, QTextEngine * e)
+void demth_ZN17QTextInlineObjectC1EiP11QTextEngine(void *that, int i, QTextEngine * e)
 {
   QTextInlineObject *cthat = (QTextInlineObject *)that;
   auto _o = new(that) QTextInlineObject(i, e);
 }
 
   // proto:  bool QTextInlineObject::isValid();
-bool _ZNK17QTextInlineObject7isValidEv(void *that)
+bool demth_ZNK17QTextInlineObject7isValidEv(void *that)
 {
   QTextInlineObject *cthat = (QTextInlineObject *)that;
   return cthat->isValid();
 }
 
   // proto:  void QTextInlineObject::QTextInlineObject();
-void _ZN17QTextInlineObjectC1Ev(void *that)
+void demth_ZN17QTextInlineObjectC1Ev(void *that)
 {
   QTextInlineObject *cthat = (QTextInlineObject *)that;
   auto _o = new(that) QTextInlineObject();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
@@ -38,7 +38,7 @@ QBuffer* dector_ZN7QBufferC1EP10QByteArrayP7QObject(QByteArray * buf, QObject * 
 }
 
   // proto:  void QBuffer::setData(const char * data, int len);
-void _ZN7QBuffer7setDataEPKci(void *that, const char * data, int len)
+void demth_ZN7QBuffer7setDataEPKci(void *that, const char * data, int len)
 {
   QBuffer *cthat = (QBuffer *)that;
    cthat->setData(data, len);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -70,7 +70,7 @@ QImage* dector_ZN6QImageC1EOS_(QImage && other)
 }
 
   // proto: static QImage QImage::fromData(const QByteArray & data, const char * format);
-QImage* _ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * format)
+QImage* demth_ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * format)
 {
   QImage *cthat = (QImage *)that;
   auto recret = cthat->fromData(data, format);
@@ -78,7 +78,7 @@ QImage* _ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray & dat
 }
 
   // proto:  QImage QImage::copy(int x, int y, int w, int h);
-QImage* _ZNK6QImage4copyEiiii(void *that, int x, int y, int w, int h)
+QImage* demth_ZNK6QImage4copyEiiii(void *that, int x, int y, int w, int h)
 {
   QImage *cthat = (QImage *)that;
   auto recret = cthat->copy(x, y, w, h);
@@ -86,7 +86,7 @@ QImage* _ZNK6QImage4copyEiiii(void *that, int x, int y, int w, int h)
 }
 
   // proto:  QImage QImage::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-QImage* _ZNK6QImage6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
+QImage* demth_ZNK6QImage6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
 {
   QImage *cthat = (QImage *)that;
   auto recret = cthat->scaled(w, h, aspectMode, mode);
@@ -94,21 +94,21 @@ QImage* _ZNK6QImage6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(voi
 }
 
   // proto:  bool QImage::loadFromData(const QByteArray & data, const char * aformat);
-bool _ZN6QImage12loadFromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * aformat)
+bool demth_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * aformat)
 {
   QImage *cthat = (QImage *)that;
   return cthat->loadFromData(data, aformat);
 }
 
   // proto:  void QImage::swap(QImage & other);
-void _ZN6QImage4swapERS_(void *that, QImage & other)
+void demth_ZN6QImage4swapERS_(void *that, QImage & other)
 {
   QImage *cthat = (QImage *)that;
    cthat->swap(other);
 }
 
   // proto:  void QImage::QImage(QImage && other);
-void _ZN6QImageC1EOS_(void *that, QImage && other)
+void demth_ZN6QImageC1EOS_(void *that, QImage && other)
 {
   QImage *cthat = (QImage *)that;
   auto _o = new(that) QImage(other);

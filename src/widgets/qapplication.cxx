@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qapplication.h
 // dst-file: /src/widgets/qapplication.cxx
 //
@@ -30,14 +30,14 @@ void dedtor_ZN12QApplicationD0Ev(QApplication* that)
 }
 
   // proto: static QWidget * QApplication::widgetAt(int x, int y);
-QWidget * _ZN12QApplication8widgetAtEii(void *that, int x, int y)
+QWidget * demth_ZN12QApplication8widgetAtEii(void *that, int x, int y)
 {
   QApplication *cthat = (QApplication *)that;
   return cthat->widgetAt(x, y);
 }
 
   // proto: static QWidget * QApplication::topLevelAt(int x, int y);
-QWidget * _ZN12QApplication10topLevelAtEii(void *that, int x, int y)
+QWidget * demth_ZN12QApplication10topLevelAtEii(void *that, int x, int y)
 {
   QApplication *cthat = (QApplication *)that;
   return cthat->topLevelAt(x, y);

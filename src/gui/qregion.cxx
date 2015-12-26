@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qregion.h
 // dst-file: /src/gui/qregion.cxx
 //
@@ -70,7 +70,7 @@ QRegion* dector_ZN7QRegionC1EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QR
 }
 
   // proto:  QRegion QRegion::translated(const QPoint & p);
-QRegion* _ZNK7QRegion10translatedERK6QPoint(void *that, const QPoint & p)
+QRegion* demth_ZNK7QRegion10translatedERK6QPoint(void *that, const QPoint & p)
 {
   QRegion *cthat = (QRegion *)that;
   auto recret = cthat->translated(p);
@@ -78,14 +78,14 @@ QRegion* _ZNK7QRegion10translatedERK6QPoint(void *that, const QPoint & p)
 }
 
   // proto:  void QRegion::swap(QRegion & other);
-void _ZN7QRegion4swapERS_(void *that, QRegion & other)
+void demth_ZN7QRegion4swapERS_(void *that, QRegion & other)
 {
   QRegion *cthat = (QRegion *)that;
    cthat->swap(other);
 }
 
   // proto:  void QRegion::translate(const QPoint & p);
-void _ZN7QRegion9translateERK6QPoint(void *that, const QPoint & p)
+void demth_ZN7QRegion9translateERK6QPoint(void *that, const QPoint & p)
 {
   QRegion *cthat = (QRegion *)that;
    cthat->translate(p);

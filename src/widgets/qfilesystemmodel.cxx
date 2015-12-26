@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtWidgets/qfilesystemmodel.h
 // dst-file: /src/widgets/qfilesystemmodel.cxx
 //
@@ -30,7 +30,7 @@ QFileSystemModel* dector_ZN16QFileSystemModelC1EP7QObject(QObject * parent)
 }
 
   // proto:  QString QFileSystemModel::fileName(const QModelIndex & index);
-QString* _ZNK16QFileSystemModel8fileNameERK11QModelIndex(void *that, const QModelIndex & index)
+QString* demth_ZNK16QFileSystemModel8fileNameERK11QModelIndex(void *that, const QModelIndex & index)
 {
   QFileSystemModel *cthat = (QFileSystemModel *)that;
   auto recret = cthat->fileName(index);
@@ -38,7 +38,7 @@ QString* _ZNK16QFileSystemModel8fileNameERK11QModelIndex(void *that, const QMode
 }
 
   // proto:  QIcon QFileSystemModel::fileIcon(const QModelIndex & index);
-QIcon* _ZNK16QFileSystemModel8fileIconERK11QModelIndex(void *that, const QModelIndex & index)
+QIcon* demth_ZNK16QFileSystemModel8fileIconERK11QModelIndex(void *that, const QModelIndex & index)
 {
   QFileSystemModel *cthat = (QFileSystemModel *)that;
   auto recret = cthat->fileIcon(index);
@@ -46,7 +46,7 @@ QIcon* _ZNK16QFileSystemModel8fileIconERK11QModelIndex(void *that, const QModelI
 }
 
   // proto:  QFileInfo QFileSystemModel::fileInfo(const QModelIndex & index);
-QFileInfo* _ZNK16QFileSystemModel8fileInfoERK11QModelIndex(void *that, const QModelIndex & index)
+QFileInfo* demth_ZNK16QFileSystemModel8fileInfoERK11QModelIndex(void *that, const QModelIndex & index)
 {
   QFileSystemModel *cthat = (QFileSystemModel *)that;
   auto recret = cthat->fileInfo(index);

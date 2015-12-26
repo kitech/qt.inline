@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qrawfont.h
 // dst-file: /src/gui/qrawfont.cxx
 //
@@ -54,14 +54,14 @@ void dedtor_ZN8QRawFontD0Ev(QRawFont* that)
 }
 
   // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes, LayoutFlags layoutFlags);
-QVector<QPointF> _ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *that, const QVector<quint32> & glyphIndexes, QRawFont::LayoutFlag layoutFlags)
+QVector<QPointF> demth_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *that, const QVector<quint32> & glyphIndexes, QRawFont::LayoutFlag layoutFlags)
 {
   QRawFont *cthat = (QRawFont *)that;
   return cthat->advancesForGlyphIndexes(glyphIndexes, layoutFlags);
 }
 
   // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes);
-QVector<QPointF> _ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *that, const QVector<quint32> & glyphIndexes)
+QVector<QPointF> demth_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *that, const QVector<quint32> & glyphIndexes)
 {
   QRawFont *cthat = (QRawFont *)that;
   return cthat->advancesForGlyphIndexes(glyphIndexes);

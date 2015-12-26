@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtGui/qtransform.h
 // dst-file: /src/gui/qtransform.cxx
 //
@@ -55,14 +55,14 @@ QTransform* dector_ZN10QTransformC1Eddddddddd(double h11, double h12, double h13
 }
 
   // proto:  void QTransform::QTransform(Qt::Initialization );
-void _ZN10QTransformC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
+void demth_ZN10QTransformC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
 {
   QTransform *cthat = (QTransform *)that;
   auto _o = new(that) QTransform(arg1);
 }
 
   // proto:  qreal QTransform::determinant();
-qreal _ZNK10QTransform11determinantEv(void *that)
+qreal demth_ZNK10QTransform11determinantEv(void *that)
 {
   QTransform *cthat = (QTransform *)that;
   return cthat->determinant();

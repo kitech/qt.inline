@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 11:30:23 2015
+// created: Sat Dec 26 12:03:58 2015
 // src-file: /QtCore/qlocale.h
 // dst-file: /src/core/qlocale.cxx
 //
@@ -62,7 +62,7 @@ QLocale* dector_ZN7QLocaleC1Ev()
 }
 
   // proto:  QString QLocale::toCurrencyString(uint , const QString & symbol);
-QString* _ZNK7QLocale16toCurrencyStringEjRK7QString(void *that, unsigned int arg1, const QString & symbol)
+QString* demth_ZNK7QLocale16toCurrencyStringEjRK7QString(void *that, unsigned int arg1, const QString & symbol)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toCurrencyString(arg1, symbol);
@@ -70,7 +70,7 @@ QString* _ZNK7QLocale16toCurrencyStringEjRK7QString(void *that, unsigned int arg
 }
 
   // proto:  QString QLocale::toString(float i, char f, int prec);
-QString* _ZNK7QLocale8toStringEfci(void *that, float i, char f, int prec)
+QString* demth_ZNK7QLocale8toStringEfci(void *that, float i, char f, int prec)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toString(i, f, prec);
@@ -78,7 +78,7 @@ QString* _ZNK7QLocale8toStringEfci(void *that, float i, char f, int prec)
 }
 
   // proto:  QString QLocale::toCurrencyString(short , const QString & symbol);
-QString* _ZNK7QLocale16toCurrencyStringEsRK7QString(void *that, short arg1, const QString & symbol)
+QString* demth_ZNK7QLocale16toCurrencyStringEsRK7QString(void *that, short arg1, const QString & symbol)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toCurrencyString(arg1, symbol);
@@ -86,7 +86,7 @@ QString* _ZNK7QLocale16toCurrencyStringEsRK7QString(void *that, short arg1, cons
 }
 
   // proto:  QString QLocale::toCurrencyString(ushort , const QString & symbol);
-QString* _ZNK7QLocale16toCurrencyStringEtRK7QString(void *that, unsigned short arg1, const QString & symbol)
+QString* demth_ZNK7QLocale16toCurrencyStringEtRK7QString(void *that, unsigned short arg1, const QString & symbol)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toCurrencyString(arg1, symbol);
@@ -94,7 +94,7 @@ QString* _ZNK7QLocale16toCurrencyStringEtRK7QString(void *that, unsigned short a
 }
 
   // proto:  QString QLocale::toCurrencyString(float , const QString & symbol);
-QString* _ZNK7QLocale16toCurrencyStringEfRK7QString(void *that, float arg1, const QString & symbol)
+QString* demth_ZNK7QLocale16toCurrencyStringEfRK7QString(void *that, float arg1, const QString & symbol)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toCurrencyString(arg1, symbol);
@@ -102,7 +102,7 @@ QString* _ZNK7QLocale16toCurrencyStringEfRK7QString(void *that, float arg1, cons
 }
 
   // proto:  QString QLocale::toString(int i);
-QString* _ZNK7QLocale8toStringEi(void *that, int i)
+QString* demth_ZNK7QLocale8toStringEi(void *that, int i)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toString(i);
@@ -110,7 +110,7 @@ QString* _ZNK7QLocale8toStringEi(void *that, int i)
 }
 
   // proto:  QString QLocale::toString(uint i);
-QString* _ZNK7QLocale8toStringEj(void *that, unsigned int i)
+QString* demth_ZNK7QLocale8toStringEj(void *that, unsigned int i)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toString(i);
@@ -118,7 +118,7 @@ QString* _ZNK7QLocale8toStringEj(void *that, unsigned int i)
 }
 
   // proto:  QString QLocale::toString(ushort i);
-QString* _ZNK7QLocale8toStringEt(void *that, unsigned short i)
+QString* demth_ZNK7QLocale8toStringEt(void *that, unsigned short i)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toString(i);
@@ -126,7 +126,7 @@ QString* _ZNK7QLocale8toStringEt(void *that, unsigned short i)
 }
 
   // proto:  QString QLocale::toCurrencyString(int , const QString & symbol);
-QString* _ZNK7QLocale16toCurrencyStringEiRK7QString(void *that, int arg1, const QString & symbol)
+QString* demth_ZNK7QLocale16toCurrencyStringEiRK7QString(void *that, int arg1, const QString & symbol)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toCurrencyString(arg1, symbol);
@@ -134,7 +134,7 @@ QString* _ZNK7QLocale16toCurrencyStringEiRK7QString(void *that, int arg1, const 
 }
 
   // proto:  QString QLocale::toString(short i);
-QString* _ZNK7QLocale8toStringEs(void *that, short i)
+QString* demth_ZNK7QLocale8toStringEs(void *that, short i)
 {
   QLocale *cthat = (QLocale *)that;
   auto recret = cthat->toString(i);
