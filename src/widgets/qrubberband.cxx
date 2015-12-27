@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qrubberband.h
 // dst-file: /src/widgets/qrubberband.cxx
 //
@@ -78,5 +78,22 @@ void demth_ZN11QRubberBand6resizeEii(void *that, int w, int h)
 // <= ext block end
 
 // body block begin =>
+// QRubberBand_SlotProxy here
+class QRubberBand_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QRubberBand_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qrubberband.moc"
+
+extern "C" {
+  QRubberBand_SlotProxy* QRubberBand_SlotProxy_new()
+  {
+    return new QRubberBand_SlotProxy();
+  }
+};
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qparallelanimationgroup.h
 // dst-file: /src/core/qparallelanimationgroup.cxx
 //
@@ -43,5 +43,22 @@ QParallelAnimationGroup* dector_ZN23QParallelAnimationGroupC1EP7QObject(QObject 
 // <= ext block end
 
 // body block begin =>
+// QParallelAnimationGroup_SlotProxy here
+class QParallelAnimationGroup_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QParallelAnimationGroup_SlotProxy():QObject(){}
+
+};
+#include "src/core/qparallelanimationgroup.moc"
+
+extern "C" {
+  QParallelAnimationGroup_SlotProxy* QParallelAnimationGroup_SlotProxy_new()
+  {
+    return new QParallelAnimationGroup_SlotProxy();
+  }
+};
+
 // <= body block end
 

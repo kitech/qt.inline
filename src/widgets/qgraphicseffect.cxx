@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgraphicseffect.h
 // dst-file: /src/widgets/qgraphicseffect.cxx
 //
@@ -150,5 +150,326 @@ QGraphicsBlurEffect* dector_ZN19QGraphicsBlurEffectC1EP7QObject(QObject * parent
 // <= ext block end
 
 // body block begin =>
+// QGraphicsColorizeEffect_SlotProxy here
+class QGraphicsColorizeEffect_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsColorizeEffect_SlotProxy():QObject(){}
+
+public slots:
+  // colorChanged(const class QColor &)
+  void slot_proxy_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(const QColor & arg0);
+public:
+  void (*slot_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor)(const QColor & arg0) = NULL;
+public slots:
+  // strengthChanged(qreal)
+  void slot_proxy_func__ZN23QGraphicsColorizeEffect15strengthChangedEd(qreal arg0);
+public:
+  void (*slot_func__ZN23QGraphicsColorizeEffect15strengthChangedEd)(qreal arg0) = NULL;
+};
+
+extern "C" {
+  QGraphicsColorizeEffect_SlotProxy* QGraphicsColorizeEffect_SlotProxy_new()
+  {
+    return new QGraphicsColorizeEffect_SlotProxy();
+  }
+};
+
+void QGraphicsColorizeEffect_SlotProxy::slot_proxy_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(const QColor & arg0) {
+  if (this->slot_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor != NULL) {
+    // do smth...
+    this->slot_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(arg0);
+  }
+}
+extern "C"
+void* QGraphicsColorizeEffect_SlotProxy_connect__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(QObject* sender, void* fptr){
+  auto that = new QGraphicsColorizeEffect_SlotProxy();
+  that->slot_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor = (decltype(that->slot_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor))fptr;
+  QObject::connect((QGraphicsColorizeEffect*)sender, SIGNAL(colorChanged(const class QColor &)), that, SLOT(slot_proxy_func__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(const QColor & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsColorizeEffect_SlotProxy_disconnect__ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(QGraphicsColorizeEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsColorizeEffect_SlotProxy::slot_proxy_func__ZN23QGraphicsColorizeEffect15strengthChangedEd(qreal arg0) {
+  if (this->slot_func__ZN23QGraphicsColorizeEffect15strengthChangedEd != NULL) {
+    // do smth...
+    this->slot_func__ZN23QGraphicsColorizeEffect15strengthChangedEd(arg0);
+  }
+}
+extern "C"
+void* QGraphicsColorizeEffect_SlotProxy_connect__ZN23QGraphicsColorizeEffect15strengthChangedEd(QObject* sender, void* fptr){
+  auto that = new QGraphicsColorizeEffect_SlotProxy();
+  that->slot_func__ZN23QGraphicsColorizeEffect15strengthChangedEd = (decltype(that->slot_func__ZN23QGraphicsColorizeEffect15strengthChangedEd))fptr;
+  QObject::connect((QGraphicsColorizeEffect*)sender, SIGNAL(strengthChanged(qreal)), that, SLOT(slot_proxy_func__ZN23QGraphicsColorizeEffect15strengthChangedEd(qreal arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsColorizeEffect_SlotProxy_disconnect__ZN23QGraphicsColorizeEffect15strengthChangedEd(QGraphicsColorizeEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QGraphicsEffect_SlotProxy here
+class QGraphicsEffect_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsEffect_SlotProxy():QObject(){}
+
+public slots:
+  // enabledChanged(_Bool)
+  void slot_proxy_func__ZN15QGraphicsEffect14enabledChangedEb(bool arg0);
+public:
+  void (*slot_func__ZN15QGraphicsEffect14enabledChangedEb)(bool arg0) = NULL;
+};
+
+extern "C" {
+  QGraphicsEffect_SlotProxy* QGraphicsEffect_SlotProxy_new()
+  {
+    return new QGraphicsEffect_SlotProxy();
+  }
+};
+
+void QGraphicsEffect_SlotProxy::slot_proxy_func__ZN15QGraphicsEffect14enabledChangedEb(bool arg0) {
+  if (this->slot_func__ZN15QGraphicsEffect14enabledChangedEb != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsEffect14enabledChangedEb(arg0);
+  }
+}
+extern "C"
+void* QGraphicsEffect_SlotProxy_connect__ZN15QGraphicsEffect14enabledChangedEb(QObject* sender, void* fptr){
+  auto that = new QGraphicsEffect_SlotProxy();
+  that->slot_func__ZN15QGraphicsEffect14enabledChangedEb = (decltype(that->slot_func__ZN15QGraphicsEffect14enabledChangedEb))fptr;
+  QObject::connect((QGraphicsEffect*)sender, SIGNAL(enabledChanged(_Bool)), that, SLOT(slot_proxy_func__ZN15QGraphicsEffect14enabledChangedEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsEffect_SlotProxy_disconnect__ZN15QGraphicsEffect14enabledChangedEb(QGraphicsEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QGraphicsDropShadowEffect_SlotProxy here
+class QGraphicsDropShadowEffect_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsDropShadowEffect_SlotProxy():QObject(){}
+
+public slots:
+  // offsetChanged(const class QPointF &)
+  void slot_proxy_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(const QPointF & arg0);
+public:
+  void (*slot_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF)(const QPointF & arg0) = NULL;
+public slots:
+  // blurRadiusChanged(qreal)
+  void slot_proxy_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(qreal arg0);
+public:
+  void (*slot_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd)(qreal arg0) = NULL;
+public slots:
+  // colorChanged(const class QColor &)
+  void slot_proxy_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(const QColor & arg0);
+public:
+  void (*slot_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor)(const QColor & arg0) = NULL;
+};
+
+extern "C" {
+  QGraphicsDropShadowEffect_SlotProxy* QGraphicsDropShadowEffect_SlotProxy_new()
+  {
+    return new QGraphicsDropShadowEffect_SlotProxy();
+  }
+};
+
+void QGraphicsDropShadowEffect_SlotProxy::slot_proxy_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(const QPointF & arg0) {
+  if (this->slot_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF != NULL) {
+    // do smth...
+    this->slot_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(arg0);
+  }
+}
+extern "C"
+void* QGraphicsDropShadowEffect_SlotProxy_connect__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(QObject* sender, void* fptr){
+  auto that = new QGraphicsDropShadowEffect_SlotProxy();
+  that->slot_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF = (decltype(that->slot_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF))fptr;
+  QObject::connect((QGraphicsDropShadowEffect*)sender, SIGNAL(offsetChanged(const class QPointF &)), that, SLOT(slot_proxy_func__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(const QPointF & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsDropShadowEffect_SlotProxy_disconnect__ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(QGraphicsDropShadowEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsDropShadowEffect_SlotProxy::slot_proxy_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(qreal arg0) {
+  if (this->slot_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd != NULL) {
+    // do smth...
+    this->slot_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(arg0);
+  }
+}
+extern "C"
+void* QGraphicsDropShadowEffect_SlotProxy_connect__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(QObject* sender, void* fptr){
+  auto that = new QGraphicsDropShadowEffect_SlotProxy();
+  that->slot_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd = (decltype(that->slot_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd))fptr;
+  QObject::connect((QGraphicsDropShadowEffect*)sender, SIGNAL(blurRadiusChanged(qreal)), that, SLOT(slot_proxy_func__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(qreal arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsDropShadowEffect_SlotProxy_disconnect__ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(QGraphicsDropShadowEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsDropShadowEffect_SlotProxy::slot_proxy_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(const QColor & arg0) {
+  if (this->slot_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor != NULL) {
+    // do smth...
+    this->slot_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(arg0);
+  }
+}
+extern "C"
+void* QGraphicsDropShadowEffect_SlotProxy_connect__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(QObject* sender, void* fptr){
+  auto that = new QGraphicsDropShadowEffect_SlotProxy();
+  that->slot_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor = (decltype(that->slot_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor))fptr;
+  QObject::connect((QGraphicsDropShadowEffect*)sender, SIGNAL(colorChanged(const class QColor &)), that, SLOT(slot_proxy_func__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(const QColor & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsDropShadowEffect_SlotProxy_disconnect__ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(QGraphicsDropShadowEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QGraphicsOpacityEffect_SlotProxy here
+class QGraphicsOpacityEffect_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsOpacityEffect_SlotProxy():QObject(){}
+
+public slots:
+  // opacityChanged(qreal)
+  void slot_proxy_func__ZN22QGraphicsOpacityEffect14opacityChangedEd(qreal arg0);
+public:
+  void (*slot_func__ZN22QGraphicsOpacityEffect14opacityChangedEd)(qreal arg0) = NULL;
+public slots:
+  // opacityMaskChanged(const class QBrush &)
+  void slot_proxy_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(const QBrush & arg0);
+public:
+  void (*slot_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush)(const QBrush & arg0) = NULL;
+};
+
+extern "C" {
+  QGraphicsOpacityEffect_SlotProxy* QGraphicsOpacityEffect_SlotProxy_new()
+  {
+    return new QGraphicsOpacityEffect_SlotProxy();
+  }
+};
+
+void QGraphicsOpacityEffect_SlotProxy::slot_proxy_func__ZN22QGraphicsOpacityEffect14opacityChangedEd(qreal arg0) {
+  if (this->slot_func__ZN22QGraphicsOpacityEffect14opacityChangedEd != NULL) {
+    // do smth...
+    this->slot_func__ZN22QGraphicsOpacityEffect14opacityChangedEd(arg0);
+  }
+}
+extern "C"
+void* QGraphicsOpacityEffect_SlotProxy_connect__ZN22QGraphicsOpacityEffect14opacityChangedEd(QObject* sender, void* fptr){
+  auto that = new QGraphicsOpacityEffect_SlotProxy();
+  that->slot_func__ZN22QGraphicsOpacityEffect14opacityChangedEd = (decltype(that->slot_func__ZN22QGraphicsOpacityEffect14opacityChangedEd))fptr;
+  QObject::connect((QGraphicsOpacityEffect*)sender, SIGNAL(opacityChanged(qreal)), that, SLOT(slot_proxy_func__ZN22QGraphicsOpacityEffect14opacityChangedEd(qreal arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsOpacityEffect_SlotProxy_disconnect__ZN22QGraphicsOpacityEffect14opacityChangedEd(QGraphicsOpacityEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsOpacityEffect_SlotProxy::slot_proxy_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(const QBrush & arg0) {
+  if (this->slot_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush != NULL) {
+    // do smth...
+    this->slot_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(arg0);
+  }
+}
+extern "C"
+void* QGraphicsOpacityEffect_SlotProxy_connect__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(QObject* sender, void* fptr){
+  auto that = new QGraphicsOpacityEffect_SlotProxy();
+  that->slot_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush = (decltype(that->slot_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush))fptr;
+  QObject::connect((QGraphicsOpacityEffect*)sender, SIGNAL(opacityMaskChanged(const class QBrush &)), that, SLOT(slot_proxy_func__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(const QBrush & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsOpacityEffect_SlotProxy_disconnect__ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(QGraphicsOpacityEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QGraphicsBlurEffect_SlotProxy here
+class QGraphicsBlurEffect_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsBlurEffect_SlotProxy():QObject(){}
+
+public slots:
+  // blurRadiusChanged(qreal)
+  void slot_proxy_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(qreal arg0);
+public:
+  void (*slot_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd)(qreal arg0) = NULL;
+public slots:
+  // blurHintsChanged(BlurHints)
+  void slot_proxy_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(QGraphicsBlurEffect::BlurHints arg0);
+public:
+  void (*slot_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE)(QGraphicsBlurEffect::BlurHints arg0) = NULL;
+};
+#include "src/widgets/qgraphicseffect.moc"
+
+extern "C" {
+  QGraphicsBlurEffect_SlotProxy* QGraphicsBlurEffect_SlotProxy_new()
+  {
+    return new QGraphicsBlurEffect_SlotProxy();
+  }
+};
+
+void QGraphicsBlurEffect_SlotProxy::slot_proxy_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(qreal arg0) {
+  if (this->slot_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd != NULL) {
+    // do smth...
+    this->slot_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(arg0);
+  }
+}
+extern "C"
+void* QGraphicsBlurEffect_SlotProxy_connect__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(QObject* sender, void* fptr){
+  auto that = new QGraphicsBlurEffect_SlotProxy();
+  that->slot_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd = (decltype(that->slot_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd))fptr;
+  QObject::connect((QGraphicsBlurEffect*)sender, SIGNAL(blurRadiusChanged(qreal)), that, SLOT(slot_proxy_func__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(qreal arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsBlurEffect_SlotProxy_disconnect__ZN19QGraphicsBlurEffect17blurRadiusChangedEd(QGraphicsBlurEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsBlurEffect_SlotProxy::slot_proxy_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(QGraphicsBlurEffect::BlurHints arg0) {
+  if (this->slot_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE != NULL) {
+    // do smth...
+    this->slot_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(arg0);
+  }
+}
+extern "C"
+void* QGraphicsBlurEffect_SlotProxy_connect__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(QObject* sender, void* fptr){
+  auto that = new QGraphicsBlurEffect_SlotProxy();
+  that->slot_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE = (decltype(that->slot_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE))fptr;
+  QObject::connect((QGraphicsBlurEffect*)sender, SIGNAL(blurHintsChanged(BlurHints)), that, SLOT(slot_proxy_func__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(QGraphicsBlurEffect::BlurHints arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsBlurEffect_SlotProxy_disconnect__ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(QGraphicsBlurEffect_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

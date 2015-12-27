@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qsizegrip.h
 // dst-file: /src/widgets/qsizegrip.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN9QSizeGripD0Ev(QSizeGrip* that)
 // <= ext block end
 
 // body block begin =>
+// QSizeGrip_SlotProxy here
+class QSizeGrip_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSizeGrip_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qsizegrip.moc"
+
+extern "C" {
+  QSizeGrip_SlotProxy* QSizeGrip_SlotProxy_new()
+  {
+    return new QSizeGrip_SlotProxy();
+  }
+};
+
 // <= body block end
 

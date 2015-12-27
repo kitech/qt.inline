@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -78,5 +78,22 @@ QTextTable* dector_ZN10QTextTableC1EP13QTextDocument(QTextDocument * doc)
 // <= ext block end
 
 // body block begin =>
+// QTextTable_SlotProxy here
+class QTextTable_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTextTable_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qtexttable.moc"
+
+extern "C" {
+  QTextTable_SlotProxy* QTextTable_SlotProxy_new()
+  {
+    return new QTextTable_SlotProxy();
+  }
+};
+
 // <= body block end
 

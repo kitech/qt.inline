@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qtreewidget.h
 // dst-file: /src/widgets/qtreewidget.cxx
 //
@@ -460,5 +460,262 @@ bool demth_ZNK15QTreeWidgetItem10isSelectedEv(void *that)
 // <= ext block end
 
 // body block begin =>
+// QTreeWidget_SlotProxy here
+class QTreeWidget_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTreeWidget_SlotProxy():QObject(){}
+
+public slots:
+  // itemPressed(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemClicked(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemDoubleClicked(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemActivated(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemEntered(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemChanged(class QTreeWidgetItem *, int)
+  void slot_proxy_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi)(QTreeWidgetItem * arg0, int arg1) = NULL;
+public slots:
+  // itemExpanded(class QTreeWidgetItem *)
+  void slot_proxy_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(QTreeWidgetItem * arg0);
+public:
+  void (*slot_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem)(QTreeWidgetItem * arg0) = NULL;
+public slots:
+  // itemCollapsed(class QTreeWidgetItem *)
+  void slot_proxy_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(QTreeWidgetItem * arg0);
+public:
+  void (*slot_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem)(QTreeWidgetItem * arg0) = NULL;
+public slots:
+  // currentItemChanged(class QTreeWidgetItem *, class QTreeWidgetItem *)
+  void slot_proxy_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(QTreeWidgetItem * arg0, QTreeWidgetItem * arg1);
+public:
+  void (*slot_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_)(QTreeWidgetItem * arg0, QTreeWidgetItem * arg1) = NULL;
+public slots:
+  // itemSelectionChanged()
+  void slot_proxy_func__ZN11QTreeWidget20itemSelectionChangedEv();
+public:
+  void (*slot_func__ZN11QTreeWidget20itemSelectionChangedEv)() = NULL;
+};
+#include "src/widgets/qtreewidget.moc"
+
+extern "C" {
+  QTreeWidget_SlotProxy* QTreeWidget_SlotProxy_new()
+  {
+    return new QTreeWidget_SlotProxy();
+  }
+};
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemPressed(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget11itemPressedEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemClicked(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget11itemClickedEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemDoubleClicked(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget17itemDoubleClickedEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemActivated(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget13itemActivatedEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemEntered(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget11itemEnteredEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1) {
+  if (this->slot_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi = (decltype(that->slot_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemChanged(class QTreeWidgetItem *, int)), that, SLOT(slot_proxy_func__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(QTreeWidgetItem * arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget11itemChangedEP15QTreeWidgetItemi(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(QTreeWidgetItem * arg0) {
+  if (this->slot_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(arg0);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem = (decltype(that->slot_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemExpanded(class QTreeWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(QTreeWidgetItem * arg0)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget12itemExpandedEP15QTreeWidgetItem(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(QTreeWidgetItem * arg0) {
+  if (this->slot_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(arg0);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem = (decltype(that->slot_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemCollapsed(class QTreeWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(QTreeWidgetItem * arg0)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget13itemCollapsedEP15QTreeWidgetItem(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(QTreeWidgetItem * arg0, QTreeWidgetItem * arg1) {
+  if (this->slot_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_ != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(arg0, arg1);
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_ = (decltype(that->slot_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(currentItemChanged(class QTreeWidgetItem *, class QTreeWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(QTreeWidgetItem * arg0, QTreeWidgetItem * arg1)));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget18currentItemChangedEP15QTreeWidgetItemS1_(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTreeWidget_SlotProxy::slot_proxy_func__ZN11QTreeWidget20itemSelectionChangedEv() {
+  if (this->slot_func__ZN11QTreeWidget20itemSelectionChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN11QTreeWidget20itemSelectionChangedEv();
+  }
+}
+extern "C"
+void* QTreeWidget_SlotProxy_connect__ZN11QTreeWidget20itemSelectionChangedEv(QObject* sender, void* fptr){
+  auto that = new QTreeWidget_SlotProxy();
+  that->slot_func__ZN11QTreeWidget20itemSelectionChangedEv = (decltype(that->slot_func__ZN11QTreeWidget20itemSelectionChangedEv))fptr;
+  QObject::connect((QTreeWidget*)sender, SIGNAL(itemSelectionChanged()), that, SLOT(slot_proxy_func__ZN11QTreeWidget20itemSelectionChangedEv()));
+  return that;
+}
+extern "C"
+void QTreeWidget_SlotProxy_disconnect__ZN11QTreeWidget20itemSelectionChangedEv(QTreeWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

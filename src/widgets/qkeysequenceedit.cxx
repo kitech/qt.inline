@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qkeysequenceedit.h
 // dst-file: /src/widgets/qkeysequenceedit.cxx
 //
@@ -51,5 +51,70 @@ QKeySequenceEdit* dector_ZN16QKeySequenceEditC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QKeySequenceEdit_SlotProxy here
+class QKeySequenceEdit_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QKeySequenceEdit_SlotProxy():QObject(){}
+
+public slots:
+  // editingFinished()
+  void slot_proxy_func__ZN16QKeySequenceEdit15editingFinishedEv();
+public:
+  void (*slot_func__ZN16QKeySequenceEdit15editingFinishedEv)() = NULL;
+public slots:
+  // keySequenceChanged(const class QKeySequence &)
+  void slot_proxy_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(const QKeySequence & arg0);
+public:
+  void (*slot_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence)(const QKeySequence & arg0) = NULL;
+};
+#include "src/widgets/qkeysequenceedit.moc"
+
+extern "C" {
+  QKeySequenceEdit_SlotProxy* QKeySequenceEdit_SlotProxy_new()
+  {
+    return new QKeySequenceEdit_SlotProxy();
+  }
+};
+
+void QKeySequenceEdit_SlotProxy::slot_proxy_func__ZN16QKeySequenceEdit15editingFinishedEv() {
+  if (this->slot_func__ZN16QKeySequenceEdit15editingFinishedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN16QKeySequenceEdit15editingFinishedEv();
+  }
+}
+extern "C"
+void* QKeySequenceEdit_SlotProxy_connect__ZN16QKeySequenceEdit15editingFinishedEv(QObject* sender, void* fptr){
+  auto that = new QKeySequenceEdit_SlotProxy();
+  that->slot_func__ZN16QKeySequenceEdit15editingFinishedEv = (decltype(that->slot_func__ZN16QKeySequenceEdit15editingFinishedEv))fptr;
+  QObject::connect((QKeySequenceEdit*)sender, SIGNAL(editingFinished()), that, SLOT(slot_proxy_func__ZN16QKeySequenceEdit15editingFinishedEv()));
+  return that;
+}
+extern "C"
+void QKeySequenceEdit_SlotProxy_disconnect__ZN16QKeySequenceEdit15editingFinishedEv(QKeySequenceEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QKeySequenceEdit_SlotProxy::slot_proxy_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(const QKeySequence & arg0) {
+  if (this->slot_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence != NULL) {
+    // do smth...
+    this->slot_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(arg0);
+  }
+}
+extern "C"
+void* QKeySequenceEdit_SlotProxy_connect__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(QObject* sender, void* fptr){
+  auto that = new QKeySequenceEdit_SlotProxy();
+  that->slot_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence = (decltype(that->slot_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence))fptr;
+  QObject::connect((QKeySequenceEdit*)sender, SIGNAL(keySequenceChanged(const class QKeySequence &)), that, SLOT(slot_proxy_func__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(const QKeySequence & arg0)));
+  return that;
+}
+extern "C"
+void QKeySequenceEdit_SlotProxy_disconnect__ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(QKeySequenceEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

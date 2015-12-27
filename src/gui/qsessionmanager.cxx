@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qsessionmanager.h
 // dst-file: /src/gui/qsessionmanager.cxx
 //
@@ -28,5 +28,22 @@ int QSessionManager_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QSessionManager_SlotProxy here
+class QSessionManager_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSessionManager_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qsessionmanager.moc"
+
+extern "C" {
+  QSessionManager_SlotProxy* QSessionManager_SlotProxy_new()
+  {
+    return new QSessionManager_SlotProxy();
+  }
+};
+
 // <= body block end
 

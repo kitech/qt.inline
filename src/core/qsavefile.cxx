@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qsavefile.h
 // dst-file: /src/core/qsavefile.cxx
 //
@@ -59,5 +59,22 @@ void dedtor_ZN9QSaveFileD0Ev(QSaveFile* that)
 // <= ext block end
 
 // body block begin =>
+// QSaveFile_SlotProxy here
+class QSaveFile_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSaveFile_SlotProxy():QObject(){}
+
+};
+#include "src/core/qsavefile.moc"
+
+extern "C" {
+  QSaveFile_SlotProxy* QSaveFile_SlotProxy_new()
+  {
+    return new QSaveFile_SlotProxy();
+  }
+};
+
 // <= body block end
 

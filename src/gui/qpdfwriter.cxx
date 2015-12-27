@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qpdfwriter.h
 // dst-file: /src/gui/qpdfwriter.cxx
 //
@@ -51,5 +51,22 @@ QPdfWriter* dector_ZN10QPdfWriterC1EP9QIODevice(QIODevice * device)
 // <= ext block end
 
 // body block begin =>
+// QPdfWriter_SlotProxy here
+class QPdfWriter_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPdfWriter_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qpdfwriter.moc"
+
+extern "C" {
+  QPdfWriter_SlotProxy* QPdfWriter_SlotProxy_new()
+  {
+    return new QPdfWriter_SlotProxy();
+  }
+};
+
 // <= body block end
 

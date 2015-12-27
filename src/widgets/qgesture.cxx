@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgesture.h
 // dst-file: /src/widgets/qgesture.cxx
 //
@@ -163,5 +163,102 @@ void dedtor_ZN13QPinchGestureD0Ev(QPinchGesture* that)
 // <= ext block end
 
 // body block begin =>
+// QSwipeGesture_SlotProxy here
+class QSwipeGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSwipeGesture_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QSwipeGesture_SlotProxy* QSwipeGesture_SlotProxy_new()
+  {
+    return new QSwipeGesture_SlotProxy();
+  }
+};
+
+// QGesture_SlotProxy here
+class QGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGesture_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QGesture_SlotProxy* QGesture_SlotProxy_new()
+  {
+    return new QGesture_SlotProxy();
+  }
+};
+
+// QPanGesture_SlotProxy here
+class QPanGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPanGesture_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QPanGesture_SlotProxy* QPanGesture_SlotProxy_new()
+  {
+    return new QPanGesture_SlotProxy();
+  }
+};
+
+// QTapAndHoldGesture_SlotProxy here
+class QTapAndHoldGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTapAndHoldGesture_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QTapAndHoldGesture_SlotProxy* QTapAndHoldGesture_SlotProxy_new()
+  {
+    return new QTapAndHoldGesture_SlotProxy();
+  }
+};
+
+// QTapGesture_SlotProxy here
+class QTapGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTapGesture_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QTapGesture_SlotProxy* QTapGesture_SlotProxy_new()
+  {
+    return new QTapGesture_SlotProxy();
+  }
+};
+
+// QPinchGesture_SlotProxy here
+class QPinchGesture_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPinchGesture_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qgesture.moc"
+
+extern "C" {
+  QPinchGesture_SlotProxy* QPinchGesture_SlotProxy_new()
+  {
+    return new QPinchGesture_SlotProxy();
+  }
+};
+
 // <= body block end
 

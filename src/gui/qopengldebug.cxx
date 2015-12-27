@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
@@ -78,5 +78,46 @@ QOpenGLDebugLogger* dector_ZN18QOpenGLDebugLoggerC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QOpenGLDebugLogger_SlotProxy here
+class QOpenGLDebugLogger_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLDebugLogger_SlotProxy():QObject(){}
+
+public slots:
+  // messageLogged(const class QOpenGLDebugMessage &)
+  void slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0);
+public:
+  void (*slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage)(const QOpenGLDebugMessage & arg0) = NULL;
+};
+#include "src/gui/qopengldebug.moc"
+
+extern "C" {
+  QOpenGLDebugLogger_SlotProxy* QOpenGLDebugLogger_SlotProxy_new()
+  {
+    return new QOpenGLDebugLogger_SlotProxy();
+  }
+};
+
+void QOpenGLDebugLogger_SlotProxy::slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0) {
+  if (this->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage != NULL) {
+    // do smth...
+    this->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(arg0);
+  }
+}
+extern "C"
+void* QOpenGLDebugLogger_SlotProxy_connect__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(QObject* sender, void* fptr){
+  auto that = new QOpenGLDebugLogger_SlotProxy();
+  that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage = (decltype(that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage))fptr;
+  QObject::connect((QOpenGLDebugLogger*)sender, SIGNAL(messageLogged(const class QOpenGLDebugMessage &)), that, SLOT(slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0)));
+  return that;
+}
+extern "C"
+void QOpenGLDebugLogger_SlotProxy_disconnect__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(QOpenGLDebugLogger_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

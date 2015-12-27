@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qtimer.h
 // dst-file: /src/core/qtimer.cxx
 //
@@ -64,5 +64,22 @@ bool demth_ZNK6QTimer8isActiveEv(void *that)
 // <= ext block end
 
 // body block begin =>
+// QTimer_SlotProxy here
+class QTimer_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTimer_SlotProxy():QObject(){}
+
+};
+#include "src/core/qtimer.moc"
+
+extern "C" {
+  QTimer_SlotProxy* QTimer_SlotProxy_new()
+  {
+    return new QTimer_SlotProxy();
+  }
+};
+
 // <= body block end
 

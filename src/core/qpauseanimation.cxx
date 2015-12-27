@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qpauseanimation.h
 // dst-file: /src/core/qpauseanimation.cxx
 //
@@ -51,5 +51,22 @@ void dedtor_ZN15QPauseAnimationD0Ev(QPauseAnimation* that)
 // <= ext block end
 
 // body block begin =>
+// QPauseAnimation_SlotProxy here
+class QPauseAnimation_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPauseAnimation_SlotProxy():QObject(){}
+
+};
+#include "src/core/qpauseanimation.moc"
+
+extern "C" {
+  QPauseAnimation_SlotProxy* QPauseAnimation_SlotProxy_new()
+  {
+    return new QPauseAnimation_SlotProxy();
+  }
+};
+
 // <= body block end
 

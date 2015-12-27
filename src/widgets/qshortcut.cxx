@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -58,5 +58,70 @@ QWidget * demth_ZNK9QShortcut12parentWidgetEv(void *that)
 // <= ext block end
 
 // body block begin =>
+// QShortcut_SlotProxy here
+class QShortcut_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QShortcut_SlotProxy():QObject(){}
+
+public slots:
+  // activated()
+  void slot_proxy_func__ZN9QShortcut9activatedEv();
+public:
+  void (*slot_func__ZN9QShortcut9activatedEv)() = NULL;
+public slots:
+  // activatedAmbiguously()
+  void slot_proxy_func__ZN9QShortcut20activatedAmbiguouslyEv();
+public:
+  void (*slot_func__ZN9QShortcut20activatedAmbiguouslyEv)() = NULL;
+};
+#include "src/widgets/qshortcut.moc"
+
+extern "C" {
+  QShortcut_SlotProxy* QShortcut_SlotProxy_new()
+  {
+    return new QShortcut_SlotProxy();
+  }
+};
+
+void QShortcut_SlotProxy::slot_proxy_func__ZN9QShortcut9activatedEv() {
+  if (this->slot_func__ZN9QShortcut9activatedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN9QShortcut9activatedEv();
+  }
+}
+extern "C"
+void* QShortcut_SlotProxy_connect__ZN9QShortcut9activatedEv(QObject* sender, void* fptr){
+  auto that = new QShortcut_SlotProxy();
+  that->slot_func__ZN9QShortcut9activatedEv = (decltype(that->slot_func__ZN9QShortcut9activatedEv))fptr;
+  QObject::connect((QShortcut*)sender, SIGNAL(activated()), that, SLOT(slot_proxy_func__ZN9QShortcut9activatedEv()));
+  return that;
+}
+extern "C"
+void QShortcut_SlotProxy_disconnect__ZN9QShortcut9activatedEv(QShortcut_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QShortcut_SlotProxy::slot_proxy_func__ZN9QShortcut20activatedAmbiguouslyEv() {
+  if (this->slot_func__ZN9QShortcut20activatedAmbiguouslyEv != NULL) {
+    // do smth...
+    this->slot_func__ZN9QShortcut20activatedAmbiguouslyEv();
+  }
+}
+extern "C"
+void* QShortcut_SlotProxy_connect__ZN9QShortcut20activatedAmbiguouslyEv(QObject* sender, void* fptr){
+  auto that = new QShortcut_SlotProxy();
+  that->slot_func__ZN9QShortcut20activatedAmbiguouslyEv = (decltype(that->slot_func__ZN9QShortcut20activatedAmbiguouslyEv))fptr;
+  QObject::connect((QShortcut*)sender, SIGNAL(activatedAmbiguously()), that, SLOT(slot_proxy_func__ZN9QShortcut20activatedAmbiguouslyEv()));
+  return that;
+}
+extern "C"
+void QShortcut_SlotProxy_disconnect__ZN9QShortcut20activatedAmbiguouslyEv(QShortcut_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

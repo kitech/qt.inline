@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qstandarditemmodel.h
 // dst-file: /src/gui/qstandarditemmodel.cxx
 //
@@ -400,5 +400,46 @@ QString* demth_ZNK13QStandardItem21accessibleDescriptionEv(void *that)
 // <= ext block end
 
 // body block begin =>
+// QStandardItemModel_SlotProxy here
+class QStandardItemModel_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QStandardItemModel_SlotProxy():QObject(){}
+
+public slots:
+  // itemChanged(class QStandardItem *)
+  void slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0);
+public:
+  void (*slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem)(QStandardItem * arg0) = NULL;
+};
+#include "src/gui/qstandarditemmodel.moc"
+
+extern "C" {
+  QStandardItemModel_SlotProxy* QStandardItemModel_SlotProxy_new()
+  {
+    return new QStandardItemModel_SlotProxy();
+  }
+};
+
+void QStandardItemModel_SlotProxy::slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0) {
+  if (this->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem != NULL) {
+    // do smth...
+    this->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(arg0);
+  }
+}
+extern "C"
+void* QStandardItemModel_SlotProxy_connect__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QObject* sender, void* fptr){
+  auto that = new QStandardItemModel_SlotProxy();
+  that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem = (decltype(that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem))fptr;
+  QObject::connect((QStandardItemModel*)sender, SIGNAL(itemChanged(class QStandardItem *)), that, SLOT(slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0)));
+  return that;
+}
+extern "C"
+void QStandardItemModel_SlotProxy_disconnect__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItemModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

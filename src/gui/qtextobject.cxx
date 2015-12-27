@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -205,5 +205,54 @@ void demth_ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *that, const
 // <= ext block end
 
 // body block begin =>
+// QTextObject_SlotProxy here
+class QTextObject_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTextObject_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QTextObject_SlotProxy* QTextObject_SlotProxy_new()
+  {
+    return new QTextObject_SlotProxy();
+  }
+};
+
+// QTextBlockGroup_SlotProxy here
+class QTextBlockGroup_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTextBlockGroup_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QTextBlockGroup_SlotProxy* QTextBlockGroup_SlotProxy_new()
+  {
+    return new QTextBlockGroup_SlotProxy();
+  }
+};
+
+// QTextFrame_SlotProxy here
+class QTextFrame_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTextFrame_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qtextobject.moc"
+
+extern "C" {
+  QTextFrame_SlotProxy* QTextFrame_SlotProxy_new()
+  {
+    return new QTextFrame_SlotProxy();
+  }
+};
+
 // <= body block end
 

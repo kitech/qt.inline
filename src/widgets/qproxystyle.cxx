@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qproxystyle.h
 // dst-file: /src/widgets/qproxystyle.cxx
 //
@@ -51,5 +51,22 @@ QProxyStyle* dector_ZN11QProxyStyleC1EP6QStyle(QStyle * style)
 // <= ext block end
 
 // body block begin =>
+// QProxyStyle_SlotProxy here
+class QProxyStyle_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QProxyStyle_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qproxystyle.moc"
+
+extern "C" {
+  QProxyStyle_SlotProxy* QProxyStyle_SlotProxy_new()
+  {
+    return new QProxyStyle_SlotProxy();
+  }
+};
+
 // <= body block end
 

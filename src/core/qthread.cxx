@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qthread.h
 // dst-file: /src/core/qthread.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN7QThreadD0Ev(QThread* that)
 // <= ext block end
 
 // body block begin =>
+// QThread_SlotProxy here
+class QThread_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QThread_SlotProxy():QObject(){}
+
+};
+#include "src/core/qthread.moc"
+
+extern "C" {
+  QThread_SlotProxy* QThread_SlotProxy_new()
+  {
+    return new QThread_SlotProxy();
+  }
+};
+
 // <= body block end
 

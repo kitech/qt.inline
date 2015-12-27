@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qradiobutton.h
 // dst-file: /src/widgets/qradiobutton.cxx
 //
@@ -51,5 +51,22 @@ QRadioButton* dector_ZN12QRadioButtonC1ERK7QStringP7QWidget(const QString & text
 // <= ext block end
 
 // body block begin =>
+// QRadioButton_SlotProxy here
+class QRadioButton_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QRadioButton_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qradiobutton.moc"
+
+extern "C" {
+  QRadioButton_SlotProxy* QRadioButton_SlotProxy_new()
+  {
+    return new QRadioButton_SlotProxy();
+  }
+};
+
 // <= body block end
 

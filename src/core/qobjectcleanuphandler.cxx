@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qobjectcleanuphandler.h
 // dst-file: /src/core/qobjectcleanuphandler.cxx
 //
@@ -43,5 +43,22 @@ QObjectCleanupHandler* dector_ZN21QObjectCleanupHandlerC1Ev()
 // <= ext block end
 
 // body block begin =>
+// QObjectCleanupHandler_SlotProxy here
+class QObjectCleanupHandler_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QObjectCleanupHandler_SlotProxy():QObject(){}
+
+};
+#include "src/core/qobjectcleanuphandler.moc"
+
+extern "C" {
+  QObjectCleanupHandler_SlotProxy* QObjectCleanupHandler_SlotProxy_new()
+  {
+    return new QObjectCleanupHandler_SlotProxy();
+  }
+};
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qopengltimerquery.h
 // dst-file: /src/gui/qopengltimerquery.cxx
 //
@@ -63,5 +63,38 @@ QOpenGLTimeMonitor* dector_ZN18QOpenGLTimeMonitorC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QOpenGLTimerQuery_SlotProxy here
+class QOpenGLTimerQuery_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLTimerQuery_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QOpenGLTimerQuery_SlotProxy* QOpenGLTimerQuery_SlotProxy_new()
+  {
+    return new QOpenGLTimerQuery_SlotProxy();
+  }
+};
+
+// QOpenGLTimeMonitor_SlotProxy here
+class QOpenGLTimeMonitor_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLTimeMonitor_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qopengltimerquery.moc"
+
+extern "C" {
+  QOpenGLTimeMonitor_SlotProxy* QOpenGLTimeMonitor_SlotProxy_new()
+  {
+    return new QOpenGLTimeMonitor_SlotProxy();
+  }
+};
+
 // <= body block end
 

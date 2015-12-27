@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qitemdelegate.h
 // dst-file: /src/widgets/qitemdelegate.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN13QItemDelegateD0Ev(QItemDelegate* that)
 // <= ext block end
 
 // body block begin =>
+// QItemDelegate_SlotProxy here
+class QItemDelegate_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QItemDelegate_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qitemdelegate.moc"
+
+extern "C" {
+  QItemDelegate_SlotProxy* QItemDelegate_SlotProxy_new()
+  {
+    return new QItemDelegate_SlotProxy();
+  }
+};
+
 // <= body block end
 

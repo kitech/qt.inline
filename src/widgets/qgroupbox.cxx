@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgroupbox.h
 // dst-file: /src/widgets/qgroupbox.cxx
 //
@@ -51,5 +51,70 @@ QGroupBox* dector_ZN9QGroupBoxC1ERK7QStringP7QWidget(const QString & title, QWid
 // <= ext block end
 
 // body block begin =>
+// QGroupBox_SlotProxy here
+class QGroupBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGroupBox_SlotProxy():QObject(){}
+
+public slots:
+  // clicked(_Bool)
+  void slot_proxy_func__ZN9QGroupBox7clickedEb(bool arg0);
+public:
+  void (*slot_func__ZN9QGroupBox7clickedEb)(bool arg0) = NULL;
+public slots:
+  // toggled(_Bool)
+  void slot_proxy_func__ZN9QGroupBox7toggledEb(bool arg0);
+public:
+  void (*slot_func__ZN9QGroupBox7toggledEb)(bool arg0) = NULL;
+};
+#include "src/widgets/qgroupbox.moc"
+
+extern "C" {
+  QGroupBox_SlotProxy* QGroupBox_SlotProxy_new()
+  {
+    return new QGroupBox_SlotProxy();
+  }
+};
+
+void QGroupBox_SlotProxy::slot_proxy_func__ZN9QGroupBox7clickedEb(bool arg0) {
+  if (this->slot_func__ZN9QGroupBox7clickedEb != NULL) {
+    // do smth...
+    this->slot_func__ZN9QGroupBox7clickedEb(arg0);
+  }
+}
+extern "C"
+void* QGroupBox_SlotProxy_connect__ZN9QGroupBox7clickedEb(QObject* sender, void* fptr){
+  auto that = new QGroupBox_SlotProxy();
+  that->slot_func__ZN9QGroupBox7clickedEb = (decltype(that->slot_func__ZN9QGroupBox7clickedEb))fptr;
+  QObject::connect((QGroupBox*)sender, SIGNAL(clicked(_Bool)), that, SLOT(slot_proxy_func__ZN9QGroupBox7clickedEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QGroupBox_SlotProxy_disconnect__ZN9QGroupBox7clickedEb(QGroupBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGroupBox_SlotProxy::slot_proxy_func__ZN9QGroupBox7toggledEb(bool arg0) {
+  if (this->slot_func__ZN9QGroupBox7toggledEb != NULL) {
+    // do smth...
+    this->slot_func__ZN9QGroupBox7toggledEb(arg0);
+  }
+}
+extern "C"
+void* QGroupBox_SlotProxy_connect__ZN9QGroupBox7toggledEb(QObject* sender, void* fptr){
+  auto that = new QGroupBox_SlotProxy();
+  that->slot_func__ZN9QGroupBox7toggledEb = (decltype(that->slot_func__ZN9QGroupBox7toggledEb))fptr;
+  QObject::connect((QGroupBox*)sender, SIGNAL(toggled(_Bool)), that, SLOT(slot_proxy_func__ZN9QGroupBox7toggledEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QGroupBox_SlotProxy_disconnect__ZN9QGroupBox7toggledEb(QGroupBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgridlayout.h
 // dst-file: /src/widgets/qgridlayout.cxx
 //
@@ -58,5 +58,22 @@ void demth_ZN11QGridLayout9addWidgetEP7QWidget(void *that, QWidget * w)
 // <= ext block end
 
 // body block begin =>
+// QGridLayout_SlotProxy here
+class QGridLayout_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGridLayout_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qgridlayout.moc"
+
+extern "C" {
+  QGridLayout_SlotProxy* QGridLayout_SlotProxy_new()
+  {
+    return new QGridLayout_SlotProxy();
+  }
+};
+
 // <= body block end
 

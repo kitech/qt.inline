@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qfontdialog.h
 // dst-file: /src/widgets/qfontdialog.cxx
 //
@@ -51,5 +51,70 @@ void dedtor_ZN11QFontDialogD0Ev(QFontDialog* that)
 // <= ext block end
 
 // body block begin =>
+// QFontDialog_SlotProxy here
+class QFontDialog_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFontDialog_SlotProxy():QObject(){}
+
+public slots:
+  // currentFontChanged(const class QFont &)
+  void slot_proxy_func__ZN11QFontDialog18currentFontChangedERK5QFont(const QFont & arg0);
+public:
+  void (*slot_func__ZN11QFontDialog18currentFontChangedERK5QFont)(const QFont & arg0) = NULL;
+public slots:
+  // fontSelected(const class QFont &)
+  void slot_proxy_func__ZN11QFontDialog12fontSelectedERK5QFont(const QFont & arg0);
+public:
+  void (*slot_func__ZN11QFontDialog12fontSelectedERK5QFont)(const QFont & arg0) = NULL;
+};
+#include "src/widgets/qfontdialog.moc"
+
+extern "C" {
+  QFontDialog_SlotProxy* QFontDialog_SlotProxy_new()
+  {
+    return new QFontDialog_SlotProxy();
+  }
+};
+
+void QFontDialog_SlotProxy::slot_proxy_func__ZN11QFontDialog18currentFontChangedERK5QFont(const QFont & arg0) {
+  if (this->slot_func__ZN11QFontDialog18currentFontChangedERK5QFont != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFontDialog18currentFontChangedERK5QFont(arg0);
+  }
+}
+extern "C"
+void* QFontDialog_SlotProxy_connect__ZN11QFontDialog18currentFontChangedERK5QFont(QObject* sender, void* fptr){
+  auto that = new QFontDialog_SlotProxy();
+  that->slot_func__ZN11QFontDialog18currentFontChangedERK5QFont = (decltype(that->slot_func__ZN11QFontDialog18currentFontChangedERK5QFont))fptr;
+  QObject::connect((QFontDialog*)sender, SIGNAL(currentFontChanged(const class QFont &)), that, SLOT(slot_proxy_func__ZN11QFontDialog18currentFontChangedERK5QFont(const QFont & arg0)));
+  return that;
+}
+extern "C"
+void QFontDialog_SlotProxy_disconnect__ZN11QFontDialog18currentFontChangedERK5QFont(QFontDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFontDialog_SlotProxy::slot_proxy_func__ZN11QFontDialog12fontSelectedERK5QFont(const QFont & arg0) {
+  if (this->slot_func__ZN11QFontDialog12fontSelectedERK5QFont != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFontDialog12fontSelectedERK5QFont(arg0);
+  }
+}
+extern "C"
+void* QFontDialog_SlotProxy_connect__ZN11QFontDialog12fontSelectedERK5QFont(QObject* sender, void* fptr){
+  auto that = new QFontDialog_SlotProxy();
+  that->slot_func__ZN11QFontDialog12fontSelectedERK5QFont = (decltype(that->slot_func__ZN11QFontDialog12fontSelectedERK5QFont))fptr;
+  QObject::connect((QFontDialog*)sender, SIGNAL(fontSelected(const class QFont &)), that, SLOT(slot_proxy_func__ZN11QFontDialog12fontSelectedERK5QFont(const QFont & arg0)));
+  return that;
+}
+extern "C"
+void QFontDialog_SlotProxy_disconnect__ZN11QFontDialog12fontSelectedERK5QFont(QFontDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

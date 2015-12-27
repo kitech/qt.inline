@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qslider.h
 // dst-file: /src/widgets/qslider.cxx
 //
@@ -51,5 +51,22 @@ QSlider* dector_ZN7QSliderC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QSlider_SlotProxy here
+class QSlider_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSlider_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qslider.moc"
+
+extern "C" {
+  QSlider_SlotProxy* QSlider_SlotProxy_new()
+  {
+    return new QSlider_SlotProxy();
+  }
+};
+
 // <= body block end
 

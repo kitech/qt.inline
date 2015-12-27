@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgraphicsview.h
 // dst-file: /src/widgets/qgraphicsview.cxx
 //
@@ -132,5 +132,46 @@ void demth_ZN13QGraphicsView9fitInViewEddddN2Qt15AspectRatioModeE(void *that, do
 // <= ext block end
 
 // body block begin =>
+// QGraphicsView_SlotProxy here
+class QGraphicsView_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsView_SlotProxy():QObject(){}
+
+public slots:
+  // rubberBandChanged(class QRect, class QPointF, class QPointF)
+  void slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2);
+public:
+  void (*slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_)(QRect arg0, QPointF arg1, QPointF arg2) = NULL;
+};
+#include "src/widgets/qgraphicsview.moc"
+
+extern "C" {
+  QGraphicsView_SlotProxy* QGraphicsView_SlotProxy_new()
+  {
+    return new QGraphicsView_SlotProxy();
+  }
+};
+
+void QGraphicsView_SlotProxy::slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2) {
+  if (this->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_ != NULL) {
+    // do smth...
+    this->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(arg0, arg1, arg2);
+  }
+}
+extern "C"
+void* QGraphicsView_SlotProxy_connect__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QObject* sender, void* fptr){
+  auto that = new QGraphicsView_SlotProxy();
+  that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_ = (decltype(that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_))fptr;
+  QObject::connect((QGraphicsView*)sender, SIGNAL(rubberBandChanged(class QRect, class QPointF, class QPointF)), that, SLOT(slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2)));
+  return that;
+}
+extern "C"
+void QGraphicsView_SlotProxy_disconnect__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QGraphicsView_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

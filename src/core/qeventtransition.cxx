@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qeventtransition.h
 // dst-file: /src/core/qeventtransition.cxx
 //
@@ -51,5 +51,22 @@ QEventTransition* dector_ZN16QEventTransitionC1EP6QState(QState * sourceState)
 // <= ext block end
 
 // body block begin =>
+// QEventTransition_SlotProxy here
+class QEventTransition_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QEventTransition_SlotProxy():QObject(){}
+
+};
+#include "src/core/qeventtransition.moc"
+
+extern "C" {
+  QEventTransition_SlotProxy* QEventTransition_SlotProxy_new()
+  {
+    return new QEventTransition_SlotProxy();
+  }
+};
+
 // <= body block end
 

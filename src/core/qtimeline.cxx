@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qtimeline.h
 // dst-file: /src/core/qtimeline.cxx
 //
@@ -43,5 +43,22 @@ QTimeLine* dector_ZN9QTimeLineC1EiP7QObject(int duration, QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QTimeLine_SlotProxy here
+class QTimeLine_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTimeLine_SlotProxy():QObject(){}
+
+};
+#include "src/core/qtimeline.moc"
+
+extern "C" {
+  QTimeLine_SlotProxy* QTimeLine_SlotProxy_new()
+  {
+    return new QTimeLine_SlotProxy();
+  }
+};
+
 // <= body block end
 

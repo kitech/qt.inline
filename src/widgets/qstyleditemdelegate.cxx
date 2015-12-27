@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qstyleditemdelegate.h
 // dst-file: /src/widgets/qstyleditemdelegate.cxx
 //
@@ -43,5 +43,22 @@ QStyledItemDelegate* dector_ZN19QStyledItemDelegateC1EP7QObject(QObject * parent
 // <= ext block end
 
 // body block begin =>
+// QStyledItemDelegate_SlotProxy here
+class QStyledItemDelegate_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QStyledItemDelegate_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qstyleditemdelegate.moc"
+
+extern "C" {
+  QStyledItemDelegate_SlotProxy* QStyledItemDelegate_SlotProxy_new()
+  {
+    return new QStyledItemDelegate_SlotProxy();
+  }
+};
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qfilesystemmodel.h
 // dst-file: /src/widgets/qfilesystemmodel.cxx
 //
@@ -67,5 +67,94 @@ QFileInfo* demth_ZNK16QFileSystemModel8fileInfoERK11QModelIndex(void *that, cons
 // <= ext block end
 
 // body block begin =>
+// QFileSystemModel_SlotProxy here
+class QFileSystemModel_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFileSystemModel_SlotProxy():QObject(){}
+
+public slots:
+  // rootPathChanged(const class QString &)
+  void slot_proxy_func__ZN16QFileSystemModel15rootPathChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN16QFileSystemModel15rootPathChangedERK7QString)(const QString & arg0) = NULL;
+public slots:
+  // fileRenamed(const class QString &, const class QString &, const class QString &)
+  void slot_proxy_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(const QString & arg0, const QString & arg1, const QString & arg2);
+public:
+  void (*slot_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_)(const QString & arg0, const QString & arg1, const QString & arg2) = NULL;
+public slots:
+  // directoryLoaded(const class QString &)
+  void slot_proxy_func__ZN16QFileSystemModel15directoryLoadedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN16QFileSystemModel15directoryLoadedERK7QString)(const QString & arg0) = NULL;
+};
+#include "src/widgets/qfilesystemmodel.moc"
+
+extern "C" {
+  QFileSystemModel_SlotProxy* QFileSystemModel_SlotProxy_new()
+  {
+    return new QFileSystemModel_SlotProxy();
+  }
+};
+
+void QFileSystemModel_SlotProxy::slot_proxy_func__ZN16QFileSystemModel15rootPathChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN16QFileSystemModel15rootPathChangedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN16QFileSystemModel15rootPathChangedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QFileSystemModel_SlotProxy_connect__ZN16QFileSystemModel15rootPathChangedERK7QString(QObject* sender, void* fptr){
+  auto that = new QFileSystemModel_SlotProxy();
+  that->slot_func__ZN16QFileSystemModel15rootPathChangedERK7QString = (decltype(that->slot_func__ZN16QFileSystemModel15rootPathChangedERK7QString))fptr;
+  QObject::connect((QFileSystemModel*)sender, SIGNAL(rootPathChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN16QFileSystemModel15rootPathChangedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QFileSystemModel_SlotProxy_disconnect__ZN16QFileSystemModel15rootPathChangedERK7QString(QFileSystemModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileSystemModel_SlotProxy::slot_proxy_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(const QString & arg0, const QString & arg1, const QString & arg2) {
+  if (this->slot_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_ != NULL) {
+    // do smth...
+    this->slot_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(arg0, arg1, arg2);
+  }
+}
+extern "C"
+void* QFileSystemModel_SlotProxy_connect__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(QObject* sender, void* fptr){
+  auto that = new QFileSystemModel_SlotProxy();
+  that->slot_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_ = (decltype(that->slot_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_))fptr;
+  QObject::connect((QFileSystemModel*)sender, SIGNAL(fileRenamed(const class QString &, const class QString &, const class QString &)), that, SLOT(slot_proxy_func__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(const QString & arg0, const QString & arg1, const QString & arg2)));
+  return that;
+}
+extern "C"
+void QFileSystemModel_SlotProxy_disconnect__ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(QFileSystemModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileSystemModel_SlotProxy::slot_proxy_func__ZN16QFileSystemModel15directoryLoadedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN16QFileSystemModel15directoryLoadedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN16QFileSystemModel15directoryLoadedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QFileSystemModel_SlotProxy_connect__ZN16QFileSystemModel15directoryLoadedERK7QString(QObject* sender, void* fptr){
+  auto that = new QFileSystemModel_SlotProxy();
+  that->slot_func__ZN16QFileSystemModel15directoryLoadedERK7QString = (decltype(that->slot_func__ZN16QFileSystemModel15directoryLoadedERK7QString))fptr;
+  QObject::connect((QFileSystemModel*)sender, SIGNAL(directoryLoaded(const class QString &)), that, SLOT(slot_proxy_func__ZN16QFileSystemModel15directoryLoadedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QFileSystemModel_SlotProxy_disconnect__ZN16QFileSystemModel15directoryLoadedERK7QString(QFileSystemModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

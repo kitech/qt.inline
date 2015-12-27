@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -51,5 +51,46 @@ QSplashScreen* dector_ZN13QSplashScreenC1EP7QWidgetRK7QPixmap6QFlagsIN2Qt10Windo
 // <= ext block end
 
 // body block begin =>
+// QSplashScreen_SlotProxy here
+class QSplashScreen_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSplashScreen_SlotProxy():QObject(){}
+
+public slots:
+  // messageChanged(const class QString &)
+  void slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN13QSplashScreen14messageChangedERK7QString)(const QString & arg0) = NULL;
+};
+#include "src/widgets/qsplashscreen.moc"
+
+extern "C" {
+  QSplashScreen_SlotProxy* QSplashScreen_SlotProxy_new()
+  {
+    return new QSplashScreen_SlotProxy();
+  }
+};
+
+void QSplashScreen_SlotProxy::slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN13QSplashScreen14messageChangedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN13QSplashScreen14messageChangedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QSplashScreen_SlotProxy_connect__ZN13QSplashScreen14messageChangedERK7QString(QObject* sender, void* fptr){
+  auto that = new QSplashScreen_SlotProxy();
+  that->slot_func__ZN13QSplashScreen14messageChangedERK7QString = (decltype(that->slot_func__ZN13QSplashScreen14messageChangedERK7QString))fptr;
+  QObject::connect((QSplashScreen*)sender, SIGNAL(messageChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QSplashScreen_SlotProxy_disconnect__ZN13QSplashScreen14messageChangedERK7QString(QSplashScreen_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

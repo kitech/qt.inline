@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qstringlistmodel.h
 // dst-file: /src/core/qstringlistmodel.cxx
 //
@@ -44,5 +44,22 @@ QStringListModel* dector_ZN16QStringListModelC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QStringListModel_SlotProxy here
+class QStringListModel_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QStringListModel_SlotProxy():QObject(){}
+
+};
+#include "src/core/qstringlistmodel.moc"
+
+extern "C" {
+  QStringListModel_SlotProxy* QStringListModel_SlotProxy_new()
+  {
+    return new QStringListModel_SlotProxy();
+  }
+};
+
 // <= body block end
 

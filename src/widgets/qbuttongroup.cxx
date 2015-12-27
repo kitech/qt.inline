@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qbuttongroup.h
 // dst-file: /src/widgets/qbuttongroup.cxx
 //
@@ -43,5 +43,214 @@ QButtonGroup* dector_ZN12QButtonGroupC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QButtonGroup_SlotProxy here
+class QButtonGroup_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QButtonGroup_SlotProxy():QObject(){}
+
+public slots:
+  // buttonClicked(class QAbstractButton *)
+  void slot_proxy_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(QAbstractButton * arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+public slots:
+  // buttonClicked(int)
+  void slot_proxy_func__ZN12QButtonGroup13buttonClickedEi(int arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonClickedEi)(int arg0) = NULL;
+public slots:
+  // buttonPressed(class QAbstractButton *)
+  void slot_proxy_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(QAbstractButton * arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+public slots:
+  // buttonPressed(int)
+  void slot_proxy_func__ZN12QButtonGroup13buttonPressedEi(int arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonPressedEi)(int arg0) = NULL;
+public slots:
+  // buttonReleased(class QAbstractButton *)
+  void slot_proxy_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(QAbstractButton * arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+public slots:
+  // buttonReleased(int)
+  void slot_proxy_func__ZN12QButtonGroup14buttonReleasedEi(int arg0);
+public:
+  void (*slot_func__ZN12QButtonGroup14buttonReleasedEi)(int arg0) = NULL;
+public slots:
+  // buttonToggled(class QAbstractButton *, _Bool)
+  void slot_proxy_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(QAbstractButton * arg0, bool arg1);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb)(QAbstractButton * arg0, bool arg1) = NULL;
+public slots:
+  // buttonToggled(int, _Bool)
+  void slot_proxy_func__ZN12QButtonGroup13buttonToggledEib(int arg0, bool arg1);
+public:
+  void (*slot_func__ZN12QButtonGroup13buttonToggledEib)(int arg0, bool arg1) = NULL;
+};
+#include "src/widgets/qbuttongroup.moc"
+
+extern "C" {
+  QButtonGroup_SlotProxy* QButtonGroup_SlotProxy_new()
+  {
+    return new QButtonGroup_SlotProxy();
+  }
+};
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(QAbstractButton * arg0) {
+  if (this->slot_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton = (decltype(that->slot_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonClicked(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(QAbstractButton * arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonClickedEP15QAbstractButton(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonClickedEi(int arg0) {
+  if (this->slot_func__ZN12QButtonGroup13buttonClickedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonClickedEi(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonClickedEi(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonClickedEi = (decltype(that->slot_func__ZN12QButtonGroup13buttonClickedEi))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonClicked(int)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonClickedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonClickedEi(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(QAbstractButton * arg0) {
+  if (this->slot_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton = (decltype(that->slot_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonPressed(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(QAbstractButton * arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonPressedEP15QAbstractButton(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonPressedEi(int arg0) {
+  if (this->slot_func__ZN12QButtonGroup13buttonPressedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonPressedEi(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonPressedEi(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonPressedEi = (decltype(that->slot_func__ZN12QButtonGroup13buttonPressedEi))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonPressed(int)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonPressedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonPressedEi(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(QAbstractButton * arg0) {
+  if (this->slot_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton = (decltype(that->slot_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonReleased(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(QAbstractButton * arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup14buttonReleasedEi(int arg0) {
+  if (this->slot_func__ZN12QButtonGroup14buttonReleasedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup14buttonReleasedEi(arg0);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup14buttonReleasedEi(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup14buttonReleasedEi = (decltype(that->slot_func__ZN12QButtonGroup14buttonReleasedEi))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonReleased(int)), that, SLOT(slot_proxy_func__ZN12QButtonGroup14buttonReleasedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup14buttonReleasedEi(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(QAbstractButton * arg0, bool arg1) {
+  if (this->slot_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(arg0, arg1);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb = (decltype(that->slot_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonToggled(class QAbstractButton *, _Bool)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(QAbstractButton * arg0, bool arg1)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QButtonGroup_SlotProxy::slot_proxy_func__ZN12QButtonGroup13buttonToggledEib(int arg0, bool arg1) {
+  if (this->slot_func__ZN12QButtonGroup13buttonToggledEib != NULL) {
+    // do smth...
+    this->slot_func__ZN12QButtonGroup13buttonToggledEib(arg0, arg1);
+  }
+}
+extern "C"
+void* QButtonGroup_SlotProxy_connect__ZN12QButtonGroup13buttonToggledEib(QObject* sender, void* fptr){
+  auto that = new QButtonGroup_SlotProxy();
+  that->slot_func__ZN12QButtonGroup13buttonToggledEib = (decltype(that->slot_func__ZN12QButtonGroup13buttonToggledEib))fptr;
+  QObject::connect((QButtonGroup*)sender, SIGNAL(buttonToggled(int, _Bool)), that, SLOT(slot_proxy_func__ZN12QButtonGroup13buttonToggledEib(int arg0, bool arg1)));
+  return that;
+}
+extern "C"
+void QButtonGroup_SlotProxy_disconnect__ZN12QButtonGroup13buttonToggledEib(QButtonGroup_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

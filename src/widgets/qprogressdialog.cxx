@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qprogressdialog.h
 // dst-file: /src/widgets/qprogressdialog.cxx
 //
@@ -51,5 +51,46 @@ QProgressDialog* dector_ZN15QProgressDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeE
 // <= ext block end
 
 // body block begin =>
+// QProgressDialog_SlotProxy here
+class QProgressDialog_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QProgressDialog_SlotProxy():QObject(){}
+
+public slots:
+  // canceled()
+  void slot_proxy_func__ZN15QProgressDialog8canceledEv();
+public:
+  void (*slot_func__ZN15QProgressDialog8canceledEv)() = NULL;
+};
+#include "src/widgets/qprogressdialog.moc"
+
+extern "C" {
+  QProgressDialog_SlotProxy* QProgressDialog_SlotProxy_new()
+  {
+    return new QProgressDialog_SlotProxy();
+  }
+};
+
+void QProgressDialog_SlotProxy::slot_proxy_func__ZN15QProgressDialog8canceledEv() {
+  if (this->slot_func__ZN15QProgressDialog8canceledEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QProgressDialog8canceledEv();
+  }
+}
+extern "C"
+void* QProgressDialog_SlotProxy_connect__ZN15QProgressDialog8canceledEv(QObject* sender, void* fptr){
+  auto that = new QProgressDialog_SlotProxy();
+  that->slot_func__ZN15QProgressDialog8canceledEv = (decltype(that->slot_func__ZN15QProgressDialog8canceledEv))fptr;
+  QObject::connect((QProgressDialog*)sender, SIGNAL(canceled()), that, SLOT(slot_proxy_func__ZN15QProgressDialog8canceledEv()));
+  return that;
+}
+extern "C"
+void QProgressDialog_SlotProxy_disconnect__ZN15QProgressDialog8canceledEv(QProgressDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

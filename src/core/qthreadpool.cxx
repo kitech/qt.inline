@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qthreadpool.h
 // dst-file: /src/core/qthreadpool.cxx
 //
@@ -43,5 +43,22 @@ QThreadPool* dector_ZN11QThreadPoolC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QThreadPool_SlotProxy here
+class QThreadPool_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QThreadPool_SlotProxy():QObject(){}
+
+};
+#include "src/core/qthreadpool.moc"
+
+extern "C" {
+  QThreadPool_SlotProxy* QThreadPool_SlotProxy_new()
+  {
+    return new QThreadPool_SlotProxy();
+  }
+};
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qframe.h
 // dst-file: /src/widgets/qframe.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN6QFrameD0Ev(QFrame* that)
 // <= ext block end
 
 // body block begin =>
+// QFrame_SlotProxy here
+class QFrame_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFrame_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qframe.moc"
+
+extern "C" {
+  QFrame_SlotProxy* QFrame_SlotProxy_new()
+  {
+    return new QFrame_SlotProxy();
+  }
+};
+
 // <= body block end
 

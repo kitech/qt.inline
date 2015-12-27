@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qdialogbuttonbox.h
 // dst-file: /src/widgets/qdialogbuttonbox.cxx
 //
@@ -67,5 +67,118 @@ QDialogButtonBox* dector_ZN16QDialogButtonBoxC1E6QFlagsINS_14StandardButtonEEP7Q
 // <= ext block end
 
 // body block begin =>
+// QDialogButtonBox_SlotProxy here
+class QDialogButtonBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QDialogButtonBox_SlotProxy():QObject(){}
+
+public slots:
+  // clicked(class QAbstractButton *)
+  void slot_proxy_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton(QAbstractButton * arg0);
+public:
+  void (*slot_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+public slots:
+  // accepted()
+  void slot_proxy_func__ZN16QDialogButtonBox8acceptedEv();
+public:
+  void (*slot_func__ZN16QDialogButtonBox8acceptedEv)() = NULL;
+public slots:
+  // helpRequested()
+  void slot_proxy_func__ZN16QDialogButtonBox13helpRequestedEv();
+public:
+  void (*slot_func__ZN16QDialogButtonBox13helpRequestedEv)() = NULL;
+public slots:
+  // rejected()
+  void slot_proxy_func__ZN16QDialogButtonBox8rejectedEv();
+public:
+  void (*slot_func__ZN16QDialogButtonBox8rejectedEv)() = NULL;
+};
+#include "src/widgets/qdialogbuttonbox.moc"
+
+extern "C" {
+  QDialogButtonBox_SlotProxy* QDialogButtonBox_SlotProxy_new()
+  {
+    return new QDialogButtonBox_SlotProxy();
+  }
+};
+
+void QDialogButtonBox_SlotProxy::slot_proxy_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton(QAbstractButton * arg0) {
+  if (this->slot_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton != NULL) {
+    // do smth...
+    this->slot_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton(arg0);
+  }
+}
+extern "C"
+void* QDialogButtonBox_SlotProxy_connect__ZN16QDialogButtonBox7clickedEP15QAbstractButton(QObject* sender, void* fptr){
+  auto that = new QDialogButtonBox_SlotProxy();
+  that->slot_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton = (decltype(that->slot_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton))fptr;
+  QObject::connect((QDialogButtonBox*)sender, SIGNAL(clicked(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN16QDialogButtonBox7clickedEP15QAbstractButton(QAbstractButton * arg0)));
+  return that;
+}
+extern "C"
+void QDialogButtonBox_SlotProxy_disconnect__ZN16QDialogButtonBox7clickedEP15QAbstractButton(QDialogButtonBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDialogButtonBox_SlotProxy::slot_proxy_func__ZN16QDialogButtonBox8acceptedEv() {
+  if (this->slot_func__ZN16QDialogButtonBox8acceptedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN16QDialogButtonBox8acceptedEv();
+  }
+}
+extern "C"
+void* QDialogButtonBox_SlotProxy_connect__ZN16QDialogButtonBox8acceptedEv(QObject* sender, void* fptr){
+  auto that = new QDialogButtonBox_SlotProxy();
+  that->slot_func__ZN16QDialogButtonBox8acceptedEv = (decltype(that->slot_func__ZN16QDialogButtonBox8acceptedEv))fptr;
+  QObject::connect((QDialogButtonBox*)sender, SIGNAL(accepted()), that, SLOT(slot_proxy_func__ZN16QDialogButtonBox8acceptedEv()));
+  return that;
+}
+extern "C"
+void QDialogButtonBox_SlotProxy_disconnect__ZN16QDialogButtonBox8acceptedEv(QDialogButtonBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDialogButtonBox_SlotProxy::slot_proxy_func__ZN16QDialogButtonBox13helpRequestedEv() {
+  if (this->slot_func__ZN16QDialogButtonBox13helpRequestedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN16QDialogButtonBox13helpRequestedEv();
+  }
+}
+extern "C"
+void* QDialogButtonBox_SlotProxy_connect__ZN16QDialogButtonBox13helpRequestedEv(QObject* sender, void* fptr){
+  auto that = new QDialogButtonBox_SlotProxy();
+  that->slot_func__ZN16QDialogButtonBox13helpRequestedEv = (decltype(that->slot_func__ZN16QDialogButtonBox13helpRequestedEv))fptr;
+  QObject::connect((QDialogButtonBox*)sender, SIGNAL(helpRequested()), that, SLOT(slot_proxy_func__ZN16QDialogButtonBox13helpRequestedEv()));
+  return that;
+}
+extern "C"
+void QDialogButtonBox_SlotProxy_disconnect__ZN16QDialogButtonBox13helpRequestedEv(QDialogButtonBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDialogButtonBox_SlotProxy::slot_proxy_func__ZN16QDialogButtonBox8rejectedEv() {
+  if (this->slot_func__ZN16QDialogButtonBox8rejectedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN16QDialogButtonBox8rejectedEv();
+  }
+}
+extern "C"
+void* QDialogButtonBox_SlotProxy_connect__ZN16QDialogButtonBox8rejectedEv(QObject* sender, void* fptr){
+  auto that = new QDialogButtonBox_SlotProxy();
+  that->slot_func__ZN16QDialogButtonBox8rejectedEv = (decltype(that->slot_func__ZN16QDialogButtonBox8rejectedEv))fptr;
+  QObject::connect((QDialogButtonBox*)sender, SIGNAL(rejected()), that, SLOT(slot_proxy_func__ZN16QDialogButtonBox8rejectedEv()));
+  return that;
+}
+extern "C"
+void QDialogButtonBox_SlotProxy_disconnect__ZN16QDialogButtonBox8rejectedEv(QDialogButtonBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

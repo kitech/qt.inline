@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qfontcombobox.h
 // dst-file: /src/widgets/qfontcombobox.cxx
 //
@@ -43,5 +43,46 @@ QFontComboBox* dector_ZN13QFontComboBoxC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QFontComboBox_SlotProxy here
+class QFontComboBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFontComboBox_SlotProxy():QObject(){}
+
+public slots:
+  // currentFontChanged(const class QFont &)
+  void slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0);
+public:
+  void (*slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont)(const QFont & arg0) = NULL;
+};
+#include "src/widgets/qfontcombobox.moc"
+
+extern "C" {
+  QFontComboBox_SlotProxy* QFontComboBox_SlotProxy_new()
+  {
+    return new QFontComboBox_SlotProxy();
+  }
+};
+
+void QFontComboBox_SlotProxy::slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0) {
+  if (this->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont != NULL) {
+    // do smth...
+    this->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont(arg0);
+  }
+}
+extern "C"
+void* QFontComboBox_SlotProxy_connect__ZN13QFontComboBox18currentFontChangedERK5QFont(QObject* sender, void* fptr){
+  auto that = new QFontComboBox_SlotProxy();
+  that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont = (decltype(that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont))fptr;
+  QObject::connect((QFontComboBox*)sender, SIGNAL(currentFontChanged(const class QFont &)), that, SLOT(slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0)));
+  return that;
+}
+extern "C"
+void QFontComboBox_SlotProxy_disconnect__ZN13QFontComboBox18currentFontChangedERK5QFont(QFontComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

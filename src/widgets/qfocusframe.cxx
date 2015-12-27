@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qfocusframe.h
 // dst-file: /src/widgets/qfocusframe.cxx
 //
@@ -43,5 +43,22 @@ QFocusFrame* dector_ZN11QFocusFrameC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QFocusFrame_SlotProxy here
+class QFocusFrame_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFocusFrame_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qfocusframe.moc"
+
+extern "C" {
+  QFocusFrame_SlotProxy* QFocusFrame_SlotProxy_new()
+  {
+    return new QFocusFrame_SlotProxy();
+  }
+};
+
 // <= body block end
 

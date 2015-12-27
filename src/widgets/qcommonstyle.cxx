@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcommonstyle.h
 // dst-file: /src/widgets/qcommonstyle.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN12QCommonStyleD0Ev(QCommonStyle* that)
 // <= ext block end
 
 // body block begin =>
+// QCommonStyle_SlotProxy here
+class QCommonStyle_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QCommonStyle_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qcommonstyle.moc"
+
+extern "C" {
+  QCommonStyle_SlotProxy* QCommonStyle_SlotProxy_new()
+  {
+    return new QCommonStyle_SlotProxy();
+  }
+};
+
 // <= body block end
 

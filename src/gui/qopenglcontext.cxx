@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qopenglcontext.h
 // dst-file: /src/gui/qopenglcontext.cxx
 //
@@ -91,5 +91,62 @@ void dedtor_ZN19QOpenGLContextGroupD0Ev(QOpenGLContextGroup* that)
 // <= ext block end
 
 // body block begin =>
+// QOpenGLContext_SlotProxy here
+class QOpenGLContext_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLContext_SlotProxy():QObject(){}
+
+public slots:
+  // aboutToBeDestroyed()
+  void slot_proxy_func__ZN14QOpenGLContext18aboutToBeDestroyedEv();
+public:
+  void (*slot_func__ZN14QOpenGLContext18aboutToBeDestroyedEv)() = NULL;
+};
+
+extern "C" {
+  QOpenGLContext_SlotProxy* QOpenGLContext_SlotProxy_new()
+  {
+    return new QOpenGLContext_SlotProxy();
+  }
+};
+
+void QOpenGLContext_SlotProxy::slot_proxy_func__ZN14QOpenGLContext18aboutToBeDestroyedEv() {
+  if (this->slot_func__ZN14QOpenGLContext18aboutToBeDestroyedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN14QOpenGLContext18aboutToBeDestroyedEv();
+  }
+}
+extern "C"
+void* QOpenGLContext_SlotProxy_connect__ZN14QOpenGLContext18aboutToBeDestroyedEv(QObject* sender, void* fptr){
+  auto that = new QOpenGLContext_SlotProxy();
+  that->slot_func__ZN14QOpenGLContext18aboutToBeDestroyedEv = (decltype(that->slot_func__ZN14QOpenGLContext18aboutToBeDestroyedEv))fptr;
+  QObject::connect((QOpenGLContext*)sender, SIGNAL(aboutToBeDestroyed()), that, SLOT(slot_proxy_func__ZN14QOpenGLContext18aboutToBeDestroyedEv()));
+  return that;
+}
+extern "C"
+void QOpenGLContext_SlotProxy_disconnect__ZN14QOpenGLContext18aboutToBeDestroyedEv(QOpenGLContext_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QOpenGLContextGroup_SlotProxy here
+class QOpenGLContextGroup_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLContextGroup_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qopenglcontext.moc"
+
+extern "C" {
+  QOpenGLContextGroup_SlotProxy* QOpenGLContextGroup_SlotProxy_new()
+  {
+    return new QOpenGLContextGroup_SlotProxy();
+  }
+};
+
 // <= body block end
 

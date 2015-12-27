@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qmdisubwindow.h
 // dst-file: /src/widgets/qmdisubwindow.cxx
 //
@@ -43,5 +43,70 @@ QMdiSubWindow* dector_ZN13QMdiSubWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QW
 // <= ext block end
 
 // body block begin =>
+// QMdiSubWindow_SlotProxy here
+class QMdiSubWindow_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QMdiSubWindow_SlotProxy():QObject(){}
+
+public slots:
+  // windowStateChanged(Qt::WindowStates, Qt::WindowStates)
+  void slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1);
+public:
+  void (*slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_)(Qt::WindowStates arg0, Qt::WindowStates arg1) = NULL;
+public slots:
+  // aboutToActivate()
+  void slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv();
+public:
+  void (*slot_func__ZN13QMdiSubWindow15aboutToActivateEv)() = NULL;
+};
+#include "src/widgets/qmdisubwindow.moc"
+
+extern "C" {
+  QMdiSubWindow_SlotProxy* QMdiSubWindow_SlotProxy_new()
+  {
+    return new QMdiSubWindow_SlotProxy();
+  }
+};
+
+void QMdiSubWindow_SlotProxy::slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1) {
+  if (this->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_ != NULL) {
+    // do smth...
+    this->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(arg0, arg1);
+  }
+}
+extern "C"
+void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(QObject* sender, void* fptr){
+  auto that = new QMdiSubWindow_SlotProxy();
+  that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_ = (decltype(that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_))fptr;
+  QObject::connect((QMdiSubWindow*)sender, SIGNAL(windowStateChanged(Qt::WindowStates, Qt::WindowStates)), that, SLOT(slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1)));
+  return that;
+}
+extern "C"
+void QMdiSubWindow_SlotProxy_disconnect__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(QMdiSubWindow_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMdiSubWindow_SlotProxy::slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv() {
+  if (this->slot_func__ZN13QMdiSubWindow15aboutToActivateEv != NULL) {
+    // do smth...
+    this->slot_func__ZN13QMdiSubWindow15aboutToActivateEv();
+  }
+}
+extern "C"
+void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow15aboutToActivateEv(QObject* sender, void* fptr){
+  auto that = new QMdiSubWindow_SlotProxy();
+  that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv = (decltype(that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv))fptr;
+  QObject::connect((QMdiSubWindow*)sender, SIGNAL(aboutToActivate()), that, SLOT(slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv()));
+  return that;
+}
+extern "C"
+void QMdiSubWindow_SlotProxy_disconnect__ZN13QMdiSubWindow15aboutToActivateEv(QMdiSubWindow_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

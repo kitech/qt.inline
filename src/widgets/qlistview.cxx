@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qlistview.h
 // dst-file: /src/widgets/qlistview.cxx
 //
@@ -43,5 +43,46 @@ void dedtor_ZN9QListViewD0Ev(QListView* that)
 // <= ext block end
 
 // body block begin =>
+// QListView_SlotProxy here
+class QListView_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QListView_SlotProxy():QObject(){}
+
+public slots:
+  // indexesMoved(const QModelIndexList &)
+  void slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0);
+public:
+  void (*slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE)(const QModelIndexList & arg0) = NULL;
+};
+#include "src/widgets/qlistview.moc"
+
+extern "C" {
+  QListView_SlotProxy* QListView_SlotProxy_new()
+  {
+    return new QListView_SlotProxy();
+  }
+};
+
+void QListView_SlotProxy::slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0) {
+  if (this->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE != NULL) {
+    // do smth...
+    this->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(arg0);
+  }
+}
+extern "C"
+void* QListView_SlotProxy_connect__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(QObject* sender, void* fptr){
+  auto that = new QListView_SlotProxy();
+  that->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE = (decltype(that->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE))fptr;
+  QObject::connect((QListView*)sender, SIGNAL(indexesMoved(const QModelIndexList &)), that, SLOT(slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0)));
+  return that;
+}
+extern "C"
+void QListView_SlotProxy_disconnect__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(QListView_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

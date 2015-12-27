@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
@@ -57,5 +57,22 @@ bool demth_ZNK9QTextList7isEmptyEv(void *that)
 // <= ext block end
 
 // body block begin =>
+// QTextList_SlotProxy here
+class QTextList_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTextList_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qtextlist.moc"
+
+extern "C" {
+  QTextList_SlotProxy* QTextList_SlotProxy_new()
+  {
+    return new QTextList_SlotProxy();
+  }
+};
+
 // <= body block end
 

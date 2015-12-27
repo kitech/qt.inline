@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qhistorystate.h
 // dst-file: /src/core/qhistorystate.cxx
 //
@@ -51,5 +51,22 @@ void dedtor_ZN13QHistoryStateD0Ev(QHistoryState* that)
 // <= ext block end
 
 // body block begin =>
+// QHistoryState_SlotProxy here
+class QHistoryState_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QHistoryState_SlotProxy():QObject(){}
+
+};
+#include "src/core/qhistorystate.moc"
+
+extern "C" {
+  QHistoryState_SlotProxy* QHistoryState_SlotProxy_new()
+  {
+    return new QHistoryState_SlotProxy();
+  }
+};
+
 // <= body block end
 

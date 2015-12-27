@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qabstracttransition.h
 // dst-file: /src/core/qabstracttransition.cxx
 //
@@ -28,5 +28,22 @@ int QAbstractTransition_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QAbstractTransition_SlotProxy here
+class QAbstractTransition_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QAbstractTransition_SlotProxy():QObject(){}
+
+};
+#include "src/core/qabstracttransition.moc"
+
+extern "C" {
+  QAbstractTransition_SlotProxy* QAbstractTransition_SlotProxy_new()
+  {
+    return new QAbstractTransition_SlotProxy();
+  }
+};
+
 // <= body block end
 

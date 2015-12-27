@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcolordialog.h
 // dst-file: /src/widgets/qcolordialog.cxx
 //
@@ -51,5 +51,70 @@ QColorDialog* dector_ZN12QColorDialogC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QColorDialog_SlotProxy here
+class QColorDialog_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QColorDialog_SlotProxy():QObject(){}
+
+public slots:
+  // currentColorChanged(const class QColor &)
+  void slot_proxy_func__ZN12QColorDialog19currentColorChangedERK6QColor(const QColor & arg0);
+public:
+  void (*slot_func__ZN12QColorDialog19currentColorChangedERK6QColor)(const QColor & arg0) = NULL;
+public slots:
+  // colorSelected(const class QColor &)
+  void slot_proxy_func__ZN12QColorDialog13colorSelectedERK6QColor(const QColor & arg0);
+public:
+  void (*slot_func__ZN12QColorDialog13colorSelectedERK6QColor)(const QColor & arg0) = NULL;
+};
+#include "src/widgets/qcolordialog.moc"
+
+extern "C" {
+  QColorDialog_SlotProxy* QColorDialog_SlotProxy_new()
+  {
+    return new QColorDialog_SlotProxy();
+  }
+};
+
+void QColorDialog_SlotProxy::slot_proxy_func__ZN12QColorDialog19currentColorChangedERK6QColor(const QColor & arg0) {
+  if (this->slot_func__ZN12QColorDialog19currentColorChangedERK6QColor != NULL) {
+    // do smth...
+    this->slot_func__ZN12QColorDialog19currentColorChangedERK6QColor(arg0);
+  }
+}
+extern "C"
+void* QColorDialog_SlotProxy_connect__ZN12QColorDialog19currentColorChangedERK6QColor(QObject* sender, void* fptr){
+  auto that = new QColorDialog_SlotProxy();
+  that->slot_func__ZN12QColorDialog19currentColorChangedERK6QColor = (decltype(that->slot_func__ZN12QColorDialog19currentColorChangedERK6QColor))fptr;
+  QObject::connect((QColorDialog*)sender, SIGNAL(currentColorChanged(const class QColor &)), that, SLOT(slot_proxy_func__ZN12QColorDialog19currentColorChangedERK6QColor(const QColor & arg0)));
+  return that;
+}
+extern "C"
+void QColorDialog_SlotProxy_disconnect__ZN12QColorDialog19currentColorChangedERK6QColor(QColorDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QColorDialog_SlotProxy::slot_proxy_func__ZN12QColorDialog13colorSelectedERK6QColor(const QColor & arg0) {
+  if (this->slot_func__ZN12QColorDialog13colorSelectedERK6QColor != NULL) {
+    // do smth...
+    this->slot_func__ZN12QColorDialog13colorSelectedERK6QColor(arg0);
+  }
+}
+extern "C"
+void* QColorDialog_SlotProxy_connect__ZN12QColorDialog13colorSelectedERK6QColor(QObject* sender, void* fptr){
+  auto that = new QColorDialog_SlotProxy();
+  that->slot_func__ZN12QColorDialog13colorSelectedERK6QColor = (decltype(that->slot_func__ZN12QColorDialog13colorSelectedERK6QColor))fptr;
+  QObject::connect((QColorDialog*)sender, SIGNAL(colorSelected(const class QColor &)), that, SLOT(slot_proxy_func__ZN12QColorDialog13colorSelectedERK6QColor(const QColor & arg0)));
+  return that;
+}
+extern "C"
+void QColorDialog_SlotProxy_disconnect__ZN12QColorDialog13colorSelectedERK6QColor(QColorDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

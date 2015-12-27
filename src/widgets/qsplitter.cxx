@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qsplitter.h
 // dst-file: /src/widgets/qsplitter.cxx
 //
@@ -71,5 +71,62 @@ void dedtor_ZN15QSplitterHandleD0Ev(QSplitterHandle* that)
 // <= ext block end
 
 // body block begin =>
+// QSplitter_SlotProxy here
+class QSplitter_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSplitter_SlotProxy():QObject(){}
+
+public slots:
+  // splitterMoved(int, int)
+  void slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1);
+public:
+  void (*slot_func__ZN9QSplitter13splitterMovedEii)(int arg0, int arg1) = NULL;
+};
+
+extern "C" {
+  QSplitter_SlotProxy* QSplitter_SlotProxy_new()
+  {
+    return new QSplitter_SlotProxy();
+  }
+};
+
+void QSplitter_SlotProxy::slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1) {
+  if (this->slot_func__ZN9QSplitter13splitterMovedEii != NULL) {
+    // do smth...
+    this->slot_func__ZN9QSplitter13splitterMovedEii(arg0, arg1);
+  }
+}
+extern "C"
+void* QSplitter_SlotProxy_connect__ZN9QSplitter13splitterMovedEii(QObject* sender, void* fptr){
+  auto that = new QSplitter_SlotProxy();
+  that->slot_func__ZN9QSplitter13splitterMovedEii = (decltype(that->slot_func__ZN9QSplitter13splitterMovedEii))fptr;
+  QObject::connect((QSplitter*)sender, SIGNAL(splitterMoved(int, int)), that, SLOT(slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QSplitter_SlotProxy_disconnect__ZN9QSplitter13splitterMovedEii(QSplitter_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+// QSplitterHandle_SlotProxy here
+class QSplitterHandle_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSplitterHandle_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qsplitter.moc"
+
+extern "C" {
+  QSplitterHandle_SlotProxy* QSplitterHandle_SlotProxy_new()
+  {
+    return new QSplitterHandle_SlotProxy();
+  }
+};
+
 // <= body block end
 

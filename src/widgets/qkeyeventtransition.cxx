@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qkeyeventtransition.h
 // dst-file: /src/widgets/qkeyeventtransition.cxx
 //
@@ -51,5 +51,22 @@ QKeyEventTransition* dector_ZN19QKeyEventTransitionC1EP6QState(QState * sourceSt
 // <= ext block end
 
 // body block begin =>
+// QKeyEventTransition_SlotProxy here
+class QKeyEventTransition_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QKeyEventTransition_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qkeyeventtransition.moc"
+
+extern "C" {
+  QKeyEventTransition_SlotProxy* QKeyEventTransition_SlotProxy_new()
+  {
+    return new QKeyEventTransition_SlotProxy();
+  }
+};
+
 // <= body block end
 

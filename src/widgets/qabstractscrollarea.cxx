@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qabstractscrollarea.h
 // dst-file: /src/widgets/qabstractscrollarea.cxx
 //
@@ -28,5 +28,22 @@ int QAbstractScrollArea_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QAbstractScrollArea_SlotProxy here
+class QAbstractScrollArea_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QAbstractScrollArea_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qabstractscrollarea.moc"
+
+extern "C" {
+  QAbstractScrollArea_SlotProxy* QAbstractScrollArea_SlotProxy_new()
+  {
+    return new QAbstractScrollArea_SlotProxy();
+  }
+};
+
 // <= body block end
 

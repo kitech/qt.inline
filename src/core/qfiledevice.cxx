@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qfiledevice.h
 // dst-file: /src/core/qfiledevice.cxx
 //
@@ -35,5 +35,22 @@ void dedtor_ZN11QFileDeviceD0Ev(QFileDevice* that)
 // <= ext block end
 
 // body block begin =>
+// QFileDevice_SlotProxy here
+class QFileDevice_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFileDevice_SlotProxy():QObject(){}
+
+};
+#include "src/core/qfiledevice.moc"
+
+extern "C" {
+  QFileDevice_SlotProxy* QFileDevice_SlotProxy_new()
+  {
+    return new QFileDevice_SlotProxy();
+  }
+};
+
 // <= body block end
 

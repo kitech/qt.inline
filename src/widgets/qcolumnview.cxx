@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcolumnview.h
 // dst-file: /src/widgets/qcolumnview.cxx
 //
@@ -43,5 +43,46 @@ void dedtor_ZN11QColumnViewD0Ev(QColumnView* that)
 // <= ext block end
 
 // body block begin =>
+// QColumnView_SlotProxy here
+class QColumnView_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QColumnView_SlotProxy():QObject(){}
+
+public slots:
+  // updatePreviewWidget(const class QModelIndex &)
+  void slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0);
+public:
+  void (*slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex)(const QModelIndex & arg0) = NULL;
+};
+#include "src/widgets/qcolumnview.moc"
+
+extern "C" {
+  QColumnView_SlotProxy* QColumnView_SlotProxy_new()
+  {
+    return new QColumnView_SlotProxy();
+  }
+};
+
+void QColumnView_SlotProxy::slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0) {
+  if (this->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex != NULL) {
+    // do smth...
+    this->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(arg0);
+  }
+}
+extern "C"
+void* QColumnView_SlotProxy_connect__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(QObject* sender, void* fptr){
+  auto that = new QColumnView_SlotProxy();
+  that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex = (decltype(that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex))fptr;
+  QObject::connect((QColumnView*)sender, SIGNAL(updatePreviewWidget(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0)));
+  return that;
+}
+extern "C"
+void QColumnView_SlotProxy_disconnect__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(QColumnView_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

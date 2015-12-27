@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qfinalstate.h
 // dst-file: /src/core/qfinalstate.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN11QFinalStateD0Ev(QFinalState* that)
 // <= ext block end
 
 // body block begin =>
+// QFinalState_SlotProxy here
+class QFinalState_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QFinalState_SlotProxy():QObject(){}
+
+};
+#include "src/core/qfinalstate.moc"
+
+extern "C" {
+  QFinalState_SlotProxy* QFinalState_SlotProxy_new()
+  {
+    return new QFinalState_SlotProxy();
+  }
+};
+
 // <= body block end
 

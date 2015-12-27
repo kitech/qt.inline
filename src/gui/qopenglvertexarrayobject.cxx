@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qopenglvertexarrayobject.h
 // dst-file: /src/gui/qopenglvertexarrayobject.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN24QOpenGLVertexArrayObjectD0Ev(QOpenGLVertexArrayObject* that)
 // <= ext block end
 
 // body block begin =>
+// QOpenGLVertexArrayObject_SlotProxy here
+class QOpenGLVertexArrayObject_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QOpenGLVertexArrayObject_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qopenglvertexarrayobject.moc"
+
+extern "C" {
+  QOpenGLVertexArrayObject_SlotProxy* QOpenGLVertexArrayObject_SlotProxy_new()
+  {
+    return new QOpenGLVertexArrayObject_SlotProxy();
+  }
+};
+
 // <= body block end
 

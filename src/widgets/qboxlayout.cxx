@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -99,5 +99,54 @@ void dedtor_ZN11QVBoxLayoutD0Ev(QVBoxLayout* that)
 // <= ext block end
 
 // body block begin =>
+// QHBoxLayout_SlotProxy here
+class QHBoxLayout_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QHBoxLayout_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QHBoxLayout_SlotProxy* QHBoxLayout_SlotProxy_new()
+  {
+    return new QHBoxLayout_SlotProxy();
+  }
+};
+
+// QBoxLayout_SlotProxy here
+class QBoxLayout_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QBoxLayout_SlotProxy():QObject(){}
+
+};
+
+extern "C" {
+  QBoxLayout_SlotProxy* QBoxLayout_SlotProxy_new()
+  {
+    return new QBoxLayout_SlotProxy();
+  }
+};
+
+// QVBoxLayout_SlotProxy here
+class QVBoxLayout_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QVBoxLayout_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qboxlayout.moc"
+
+extern "C" {
+  QVBoxLayout_SlotProxy* QVBoxLayout_SlotProxy_new()
+  {
+    return new QVBoxLayout_SlotProxy();
+  }
+};
+
 // <= body block end
 

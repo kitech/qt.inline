@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qsettings.h
 // dst-file: /src/core/qsettings.cxx
 //
@@ -75,5 +75,22 @@ QSettings* dector_ZN9QSettingsC1ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Sco
 // <= ext block end
 
 // body block begin =>
+// QSettings_SlotProxy here
+class QSettings_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSettings_SlotProxy():QObject(){}
+
+};
+#include "src/core/qsettings.moc"
+
+extern "C" {
+  QSettings_SlotProxy* QSettings_SlotProxy_new()
+  {
+    return new QSettings_SlotProxy();
+  }
+};
+
 // <= body block end
 

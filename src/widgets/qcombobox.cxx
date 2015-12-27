@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcombobox.h
 // dst-file: /src/widgets/qcombobox.cxx
 //
@@ -78,5 +78,214 @@ void demth_ZN9QComboBox10insertItemEiRK7QStringRK8QVariant(void *that, int index
 // <= ext block end
 
 // body block begin =>
+// QComboBox_SlotProxy here
+class QComboBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QComboBox_SlotProxy():QObject(){}
+
+public slots:
+  // editTextChanged(const class QString &)
+  void slot_proxy_func__ZN9QComboBox15editTextChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QComboBox15editTextChangedERK7QString)(const QString & arg0) = NULL;
+public slots:
+  // activated(int)
+  void slot_proxy_func__ZN9QComboBox9activatedEi(int arg0);
+public:
+  void (*slot_func__ZN9QComboBox9activatedEi)(int arg0) = NULL;
+public slots:
+  // activated(const class QString &)
+  void slot_proxy_func__ZN9QComboBox9activatedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QComboBox9activatedERK7QString)(const QString & arg0) = NULL;
+public slots:
+  // highlighted(int)
+  void slot_proxy_func__ZN9QComboBox11highlightedEi(int arg0);
+public:
+  void (*slot_func__ZN9QComboBox11highlightedEi)(int arg0) = NULL;
+public slots:
+  // highlighted(const class QString &)
+  void slot_proxy_func__ZN9QComboBox11highlightedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QComboBox11highlightedERK7QString)(const QString & arg0) = NULL;
+public slots:
+  // currentIndexChanged(int)
+  void slot_proxy_func__ZN9QComboBox19currentIndexChangedEi(int arg0);
+public:
+  void (*slot_func__ZN9QComboBox19currentIndexChangedEi)(int arg0) = NULL;
+public slots:
+  // currentIndexChanged(const class QString &)
+  void slot_proxy_func__ZN9QComboBox19currentIndexChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QComboBox19currentIndexChangedERK7QString)(const QString & arg0) = NULL;
+public slots:
+  // currentTextChanged(const class QString &)
+  void slot_proxy_func__ZN9QComboBox18currentTextChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QComboBox18currentTextChangedERK7QString)(const QString & arg0) = NULL;
+};
+#include "src/widgets/qcombobox.moc"
+
+extern "C" {
+  QComboBox_SlotProxy* QComboBox_SlotProxy_new()
+  {
+    return new QComboBox_SlotProxy();
+  }
+};
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox15editTextChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QComboBox15editTextChangedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox15editTextChangedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox15editTextChangedERK7QString(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox15editTextChangedERK7QString = (decltype(that->slot_func__ZN9QComboBox15editTextChangedERK7QString))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(editTextChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN9QComboBox15editTextChangedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox15editTextChangedERK7QString(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox9activatedEi(int arg0) {
+  if (this->slot_func__ZN9QComboBox9activatedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox9activatedEi(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox9activatedEi(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox9activatedEi = (decltype(that->slot_func__ZN9QComboBox9activatedEi))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(activated(int)), that, SLOT(slot_proxy_func__ZN9QComboBox9activatedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox9activatedEi(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox9activatedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QComboBox9activatedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox9activatedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox9activatedERK7QString(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox9activatedERK7QString = (decltype(that->slot_func__ZN9QComboBox9activatedERK7QString))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(activated(const class QString &)), that, SLOT(slot_proxy_func__ZN9QComboBox9activatedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox9activatedERK7QString(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox11highlightedEi(int arg0) {
+  if (this->slot_func__ZN9QComboBox11highlightedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox11highlightedEi(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox11highlightedEi(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox11highlightedEi = (decltype(that->slot_func__ZN9QComboBox11highlightedEi))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(highlighted(int)), that, SLOT(slot_proxy_func__ZN9QComboBox11highlightedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox11highlightedEi(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox11highlightedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QComboBox11highlightedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox11highlightedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox11highlightedERK7QString(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox11highlightedERK7QString = (decltype(that->slot_func__ZN9QComboBox11highlightedERK7QString))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN9QComboBox11highlightedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox11highlightedERK7QString(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox19currentIndexChangedEi(int arg0) {
+  if (this->slot_func__ZN9QComboBox19currentIndexChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox19currentIndexChangedEi(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox19currentIndexChangedEi(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox19currentIndexChangedEi = (decltype(that->slot_func__ZN9QComboBox19currentIndexChangedEi))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(currentIndexChanged(int)), that, SLOT(slot_proxy_func__ZN9QComboBox19currentIndexChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox19currentIndexChangedEi(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox19currentIndexChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QComboBox19currentIndexChangedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox19currentIndexChangedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox19currentIndexChangedERK7QString(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox19currentIndexChangedERK7QString = (decltype(that->slot_func__ZN9QComboBox19currentIndexChangedERK7QString))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(currentIndexChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN9QComboBox19currentIndexChangedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox19currentIndexChangedERK7QString(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QComboBox_SlotProxy::slot_proxy_func__ZN9QComboBox18currentTextChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QComboBox18currentTextChangedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QComboBox18currentTextChangedERK7QString(arg0);
+  }
+}
+extern "C"
+void* QComboBox_SlotProxy_connect__ZN9QComboBox18currentTextChangedERK7QString(QObject* sender, void* fptr){
+  auto that = new QComboBox_SlotProxy();
+  that->slot_func__ZN9QComboBox18currentTextChangedERK7QString = (decltype(that->slot_func__ZN9QComboBox18currentTextChangedERK7QString))fptr;
+  QObject::connect((QComboBox*)sender, SIGNAL(currentTextChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN9QComboBox18currentTextChangedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QComboBox_SlotProxy_disconnect__ZN9QComboBox18currentTextChangedERK7QString(QComboBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

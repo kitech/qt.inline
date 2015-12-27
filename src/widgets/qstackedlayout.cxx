@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qstackedlayout.h
 // dst-file: /src/widgets/qstackedlayout.cxx
 //
@@ -59,5 +59,70 @@ QStackedLayout* dector_ZN14QStackedLayoutC1Ev()
 // <= ext block end
 
 // body block begin =>
+// QStackedLayout_SlotProxy here
+class QStackedLayout_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QStackedLayout_SlotProxy():QObject(){}
+
+public slots:
+  // widgetRemoved(int)
+  void slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0);
+public:
+  void (*slot_func__ZN14QStackedLayout13widgetRemovedEi)(int arg0) = NULL;
+public slots:
+  // currentChanged(int)
+  void slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0);
+public:
+  void (*slot_func__ZN14QStackedLayout14currentChangedEi)(int arg0) = NULL;
+};
+#include "src/widgets/qstackedlayout.moc"
+
+extern "C" {
+  QStackedLayout_SlotProxy* QStackedLayout_SlotProxy_new()
+  {
+    return new QStackedLayout_SlotProxy();
+  }
+};
+
+void QStackedLayout_SlotProxy::slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0) {
+  if (this->slot_func__ZN14QStackedLayout13widgetRemovedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN14QStackedLayout13widgetRemovedEi(arg0);
+  }
+}
+extern "C"
+void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout13widgetRemovedEi(QObject* sender, void* fptr){
+  auto that = new QStackedLayout_SlotProxy();
+  that->slot_func__ZN14QStackedLayout13widgetRemovedEi = (decltype(that->slot_func__ZN14QStackedLayout13widgetRemovedEi))fptr;
+  QObject::connect((QStackedLayout*)sender, SIGNAL(widgetRemoved(int)), that, SLOT(slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QStackedLayout_SlotProxy_disconnect__ZN14QStackedLayout13widgetRemovedEi(QStackedLayout_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QStackedLayout_SlotProxy::slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0) {
+  if (this->slot_func__ZN14QStackedLayout14currentChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN14QStackedLayout14currentChangedEi(arg0);
+  }
+}
+extern "C"
+void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout14currentChangedEi(QObject* sender, void* fptr){
+  auto that = new QStackedLayout_SlotProxy();
+  that->slot_func__ZN14QStackedLayout14currentChangedEi = (decltype(that->slot_func__ZN14QStackedLayout14currentChangedEi))fptr;
+  QObject::connect((QStackedLayout*)sender, SIGNAL(currentChanged(int)), that, SLOT(slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QStackedLayout_SlotProxy_disconnect__ZN14QStackedLayout14currentChangedEi(QStackedLayout_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qitemselectionmodel.h
 // dst-file: /src/core/qitemselectionmodel.cxx
 //
@@ -229,5 +229,142 @@ QItemSelectionModel* dector_ZN19QItemSelectionModelC1EP18QAbstractItemModelP7QOb
 // <= ext block end
 
 // body block begin =>
+// QItemSelectionModel_SlotProxy here
+class QItemSelectionModel_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QItemSelectionModel_SlotProxy():QObject(){}
+
+public slots:
+  // selectionChanged(const class QItemSelection &, const class QItemSelection &)
+  void slot_proxy_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(const QItemSelection & arg0, const QItemSelection & arg1);
+public:
+  void (*slot_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_)(const QItemSelection & arg0, const QItemSelection & arg1) = NULL;
+public slots:
+  // currentChanged(const class QModelIndex &, const class QModelIndex &)
+  void slot_proxy_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1);
+public:
+  void (*slot_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_)(const QModelIndex & arg0, const QModelIndex & arg1) = NULL;
+public slots:
+  // currentRowChanged(const class QModelIndex &, const class QModelIndex &)
+  void slot_proxy_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1);
+public:
+  void (*slot_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_)(const QModelIndex & arg0, const QModelIndex & arg1) = NULL;
+public slots:
+  // currentColumnChanged(const class QModelIndex &, const class QModelIndex &)
+  void slot_proxy_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1);
+public:
+  void (*slot_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_)(const QModelIndex & arg0, const QModelIndex & arg1) = NULL;
+public slots:
+  // modelChanged(class QAbstractItemModel *)
+  void slot_proxy_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(QAbstractItemModel * arg0);
+public:
+  void (*slot_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel)(QAbstractItemModel * arg0) = NULL;
+};
+#include "src/core/qitemselectionmodel.moc"
+
+extern "C" {
+  QItemSelectionModel_SlotProxy* QItemSelectionModel_SlotProxy_new()
+  {
+    return new QItemSelectionModel_SlotProxy();
+  }
+};
+
+void QItemSelectionModel_SlotProxy::slot_proxy_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(const QItemSelection & arg0, const QItemSelection & arg1) {
+  if (this->slot_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_ != NULL) {
+    // do smth...
+    this->slot_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(arg0, arg1);
+  }
+}
+extern "C"
+void* QItemSelectionModel_SlotProxy_connect__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(QObject* sender, void* fptr){
+  auto that = new QItemSelectionModel_SlotProxy();
+  that->slot_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_ = (decltype(that->slot_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_))fptr;
+  QObject::connect((QItemSelectionModel*)sender, SIGNAL(selectionChanged(const class QItemSelection &, const class QItemSelection &)), that, SLOT(slot_proxy_func__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(const QItemSelection & arg0, const QItemSelection & arg1)));
+  return that;
+}
+extern "C"
+void QItemSelectionModel_SlotProxy_disconnect__ZN19QItemSelectionModel16selectionChangedERK14QItemSelectionS2_(QItemSelectionModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QItemSelectionModel_SlotProxy::slot_proxy_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1) {
+  if (this->slot_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_ != NULL) {
+    // do smth...
+    this->slot_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(arg0, arg1);
+  }
+}
+extern "C"
+void* QItemSelectionModel_SlotProxy_connect__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(QObject* sender, void* fptr){
+  auto that = new QItemSelectionModel_SlotProxy();
+  that->slot_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_ = (decltype(that->slot_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_))fptr;
+  QObject::connect((QItemSelectionModel*)sender, SIGNAL(currentChanged(const class QModelIndex &, const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1)));
+  return that;
+}
+extern "C"
+void QItemSelectionModel_SlotProxy_disconnect__ZN19QItemSelectionModel14currentChangedERK11QModelIndexS2_(QItemSelectionModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QItemSelectionModel_SlotProxy::slot_proxy_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1) {
+  if (this->slot_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_ != NULL) {
+    // do smth...
+    this->slot_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(arg0, arg1);
+  }
+}
+extern "C"
+void* QItemSelectionModel_SlotProxy_connect__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(QObject* sender, void* fptr){
+  auto that = new QItemSelectionModel_SlotProxy();
+  that->slot_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_ = (decltype(that->slot_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_))fptr;
+  QObject::connect((QItemSelectionModel*)sender, SIGNAL(currentRowChanged(const class QModelIndex &, const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1)));
+  return that;
+}
+extern "C"
+void QItemSelectionModel_SlotProxy_disconnect__ZN19QItemSelectionModel17currentRowChangedERK11QModelIndexS2_(QItemSelectionModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QItemSelectionModel_SlotProxy::slot_proxy_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1) {
+  if (this->slot_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_ != NULL) {
+    // do smth...
+    this->slot_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(arg0, arg1);
+  }
+}
+extern "C"
+void* QItemSelectionModel_SlotProxy_connect__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(QObject* sender, void* fptr){
+  auto that = new QItemSelectionModel_SlotProxy();
+  that->slot_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_ = (decltype(that->slot_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_))fptr;
+  QObject::connect((QItemSelectionModel*)sender, SIGNAL(currentColumnChanged(const class QModelIndex &, const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(const QModelIndex & arg0, const QModelIndex & arg1)));
+  return that;
+}
+extern "C"
+void QItemSelectionModel_SlotProxy_disconnect__ZN19QItemSelectionModel20currentColumnChangedERK11QModelIndexS2_(QItemSelectionModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QItemSelectionModel_SlotProxy::slot_proxy_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(QAbstractItemModel * arg0) {
+  if (this->slot_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel != NULL) {
+    // do smth...
+    this->slot_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(arg0);
+  }
+}
+extern "C"
+void* QItemSelectionModel_SlotProxy_connect__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(QObject* sender, void* fptr){
+  auto that = new QItemSelectionModel_SlotProxy();
+  that->slot_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel = (decltype(that->slot_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel))fptr;
+  QObject::connect((QItemSelectionModel*)sender, SIGNAL(modelChanged(class QAbstractItemModel *)), that, SLOT(slot_proxy_func__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(QAbstractItemModel * arg0)));
+  return that;
+}
+extern "C"
+void QItemSelectionModel_SlotProxy_disconnect__ZN19QItemSelectionModel12modelChangedEP18QAbstractItemModel(QItemSelectionModel_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qaccessiblebridge.h
 // dst-file: /src/gui/qaccessiblebridge.cxx
 //
@@ -33,5 +33,22 @@ int QAccessibleBridge_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QAccessibleBridgePlugin_SlotProxy here
+class QAccessibleBridgePlugin_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QAccessibleBridgePlugin_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qaccessiblebridge.moc"
+
+extern "C" {
+  QAccessibleBridgePlugin_SlotProxy* QAccessibleBridgePlugin_SlotProxy_new()
+  {
+    return new QAccessibleBridgePlugin_SlotProxy();
+  }
+};
+
 // <= body block end
 

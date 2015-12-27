@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qsocketnotifier.h
 // dst-file: /src/core/qsocketnotifier.cxx
 //
@@ -43,5 +43,22 @@ void dedtor_ZN15QSocketNotifierD0Ev(QSocketNotifier* that)
 // <= ext block end
 
 // body block begin =>
+// QSocketNotifier_SlotProxy here
+class QSocketNotifier_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSocketNotifier_SlotProxy():QObject(){}
+
+};
+#include "src/core/qsocketnotifier.moc"
+
+extern "C" {
+  QSocketNotifier_SlotProxy* QSocketNotifier_SlotProxy_new()
+  {
+    return new QSocketNotifier_SlotProxy();
+  }
+};
+
 // <= body block end
 

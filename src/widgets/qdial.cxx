@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qdial.h
 // dst-file: /src/widgets/qdial.cxx
 //
@@ -43,5 +43,22 @@ QDial* dector_ZN5QDialC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QDial_SlotProxy here
+class QDial_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QDial_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qdial.moc"
+
+extern "C" {
+  QDial_SlotProxy* QDial_SlotProxy_new()
+  {
+    return new QDial_SlotProxy();
+  }
+};
+
 // <= body block end
 

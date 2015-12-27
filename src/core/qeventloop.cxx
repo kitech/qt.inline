@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qeventloop.h
 // dst-file: /src/core/qeventloop.cxx
 //
@@ -79,5 +79,22 @@ void dedtor_ZN16QEventLoopLockerD0Ev(QEventLoopLocker* that)
 // <= ext block end
 
 // body block begin =>
+// QEventLoop_SlotProxy here
+class QEventLoop_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QEventLoop_SlotProxy():QObject(){}
+
+};
+#include "src/core/qeventloop.moc"
+
+extern "C" {
+  QEventLoop_SlotProxy* QEventLoop_SlotProxy_new()
+  {
+    return new QEventLoop_SlotProxy();
+  }
+};
+
 // <= body block end
 

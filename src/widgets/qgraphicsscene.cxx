@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgraphicsscene.h
 // dst-file: /src/widgets/qgraphicsscene.cxx
 //
@@ -129,5 +129,94 @@ void demth_ZN14QGraphicsScene10invalidateEdddd6QFlagsINS_10SceneLayerEE(void *th
 // <= ext block end
 
 // body block begin =>
+// QGraphicsScene_SlotProxy here
+class QGraphicsScene_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsScene_SlotProxy():QObject(){}
+
+public slots:
+  // sceneRectChanged(const class QRectF &)
+  void slot_proxy_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(const QRectF & arg0);
+public:
+  void (*slot_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF)(const QRectF & arg0) = NULL;
+public slots:
+  // selectionChanged()
+  void slot_proxy_func__ZN14QGraphicsScene16selectionChangedEv();
+public:
+  void (*slot_func__ZN14QGraphicsScene16selectionChangedEv)() = NULL;
+public slots:
+  // focusItemChanged(class QGraphicsItem *, class QGraphicsItem *, Qt::FocusReason)
+  void slot_proxy_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(QGraphicsItem * arg0, QGraphicsItem * arg1, Qt::FocusReason arg2);
+public:
+  void (*slot_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE)(QGraphicsItem * arg0, QGraphicsItem * arg1, Qt::FocusReason arg2) = NULL;
+};
+#include "src/widgets/qgraphicsscene.moc"
+
+extern "C" {
+  QGraphicsScene_SlotProxy* QGraphicsScene_SlotProxy_new()
+  {
+    return new QGraphicsScene_SlotProxy();
+  }
+};
+
+void QGraphicsScene_SlotProxy::slot_proxy_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(const QRectF & arg0) {
+  if (this->slot_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF != NULL) {
+    // do smth...
+    this->slot_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(arg0);
+  }
+}
+extern "C"
+void* QGraphicsScene_SlotProxy_connect__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(QObject* sender, void* fptr){
+  auto that = new QGraphicsScene_SlotProxy();
+  that->slot_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF = (decltype(that->slot_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF))fptr;
+  QObject::connect((QGraphicsScene*)sender, SIGNAL(sceneRectChanged(const class QRectF &)), that, SLOT(slot_proxy_func__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(const QRectF & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsScene_SlotProxy_disconnect__ZN14QGraphicsScene16sceneRectChangedERK6QRectF(QGraphicsScene_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsScene_SlotProxy::slot_proxy_func__ZN14QGraphicsScene16selectionChangedEv() {
+  if (this->slot_func__ZN14QGraphicsScene16selectionChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN14QGraphicsScene16selectionChangedEv();
+  }
+}
+extern "C"
+void* QGraphicsScene_SlotProxy_connect__ZN14QGraphicsScene16selectionChangedEv(QObject* sender, void* fptr){
+  auto that = new QGraphicsScene_SlotProxy();
+  that->slot_func__ZN14QGraphicsScene16selectionChangedEv = (decltype(that->slot_func__ZN14QGraphicsScene16selectionChangedEv))fptr;
+  QObject::connect((QGraphicsScene*)sender, SIGNAL(selectionChanged()), that, SLOT(slot_proxy_func__ZN14QGraphicsScene16selectionChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsScene_SlotProxy_disconnect__ZN14QGraphicsScene16selectionChangedEv(QGraphicsScene_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsScene_SlotProxy::slot_proxy_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(QGraphicsItem * arg0, QGraphicsItem * arg1, Qt::FocusReason arg2) {
+  if (this->slot_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE != NULL) {
+    // do smth...
+    this->slot_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(arg0, arg1, arg2);
+  }
+}
+extern "C"
+void* QGraphicsScene_SlotProxy_connect__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(QObject* sender, void* fptr){
+  auto that = new QGraphicsScene_SlotProxy();
+  that->slot_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE = (decltype(that->slot_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE))fptr;
+  QObject::connect((QGraphicsScene*)sender, SIGNAL(focusItemChanged(class QGraphicsItem *, class QGraphicsItem *, Qt::FocusReason)), that, SLOT(slot_proxy_func__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(QGraphicsItem * arg0, QGraphicsItem * arg1, Qt::FocusReason arg2)));
+  return that;
+}
+extern "C"
+void QGraphicsScene_SlotProxy_disconnect__ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(QGraphicsScene_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

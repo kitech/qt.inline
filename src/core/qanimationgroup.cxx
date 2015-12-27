@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qanimationgroup.h
 // dst-file: /src/core/qanimationgroup.cxx
 //
@@ -28,5 +28,22 @@ int QAnimationGroup_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QAnimationGroup_SlotProxy here
+class QAnimationGroup_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QAnimationGroup_SlotProxy():QObject(){}
+
+};
+#include "src/core/qanimationgroup.moc"
+
+extern "C" {
+  QAnimationGroup_SlotProxy* QAnimationGroup_SlotProxy_new()
+  {
+    return new QAnimationGroup_SlotProxy();
+  }
+};
+
 // <= body block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qsharedmemory.h
 // dst-file: /src/core/qsharedmemory.cxx
 //
@@ -51,5 +51,22 @@ QSharedMemory* dector_ZN13QSharedMemoryC1EP7QObject(QObject * parent)
 // <= ext block end
 
 // body block begin =>
+// QSharedMemory_SlotProxy here
+class QSharedMemory_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QSharedMemory_SlotProxy():QObject(){}
+
+};
+#include "src/core/qsharedmemory.moc"
+
+extern "C" {
+  QSharedMemory_SlotProxy* QSharedMemory_SlotProxy_new()
+  {
+    return new QSharedMemory_SlotProxy();
+  }
+};
+
 // <= body block end
 

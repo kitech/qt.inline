@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcheckbox.h
 // dst-file: /src/widgets/qcheckbox.cxx
 //
@@ -51,5 +51,46 @@ QCheckBox* dector_ZN9QCheckBoxC1ERK7QStringP7QWidget(const QString & text, QWidg
 // <= ext block end
 
 // body block begin =>
+// QCheckBox_SlotProxy here
+class QCheckBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QCheckBox_SlotProxy():QObject(){}
+
+public slots:
+  // stateChanged(int)
+  void slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0);
+public:
+  void (*slot_func__ZN9QCheckBox12stateChangedEi)(int arg0) = NULL;
+};
+#include "src/widgets/qcheckbox.moc"
+
+extern "C" {
+  QCheckBox_SlotProxy* QCheckBox_SlotProxy_new()
+  {
+    return new QCheckBox_SlotProxy();
+  }
+};
+
+void QCheckBox_SlotProxy::slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0) {
+  if (this->slot_func__ZN9QCheckBox12stateChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN9QCheckBox12stateChangedEi(arg0);
+  }
+}
+extern "C"
+void* QCheckBox_SlotProxy_connect__ZN9QCheckBox12stateChangedEi(QObject* sender, void* fptr){
+  auto that = new QCheckBox_SlotProxy();
+  that->slot_func__ZN9QCheckBox12stateChangedEi = (decltype(that->slot_func__ZN9QCheckBox12stateChangedEi))fptr;
+  QObject::connect((QCheckBox*)sender, SIGNAL(stateChanged(int)), that, SLOT(slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QCheckBox_SlotProxy_disconnect__ZN9QCheckBox12stateChangedEi(QCheckBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

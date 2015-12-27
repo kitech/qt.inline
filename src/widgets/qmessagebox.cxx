@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qmessagebox.h
 // dst-file: /src/widgets/qmessagebox.cxx
 //
@@ -80,5 +80,46 @@ int demth_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
 // <= ext block end
 
 // body block begin =>
+// QMessageBox_SlotProxy here
+class QMessageBox_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QMessageBox_SlotProxy():QObject(){}
+
+public slots:
+  // buttonClicked(class QAbstractButton *)
+  void slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0);
+public:
+  void (*slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+};
+#include "src/widgets/qmessagebox.moc"
+
+extern "C" {
+  QMessageBox_SlotProxy* QMessageBox_SlotProxy_new()
+  {
+    return new QMessageBox_SlotProxy();
+  }
+};
+
+void QMessageBox_SlotProxy::slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0) {
+  if (this->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton != NULL) {
+    // do smth...
+    this->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(arg0);
+  }
+}
+extern "C"
+void* QMessageBox_SlotProxy_connect__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QObject* sender, void* fptr){
+  auto that = new QMessageBox_SlotProxy();
+  that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton = (decltype(that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton))fptr;
+  QObject::connect((QMessageBox*)sender, SIGNAL(buttonClicked(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0)));
+  return that;
+}
+extern "C"
+void QMessageBox_SlotProxy_disconnect__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QMessageBox_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

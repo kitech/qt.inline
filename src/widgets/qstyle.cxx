@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qstyle.h
 // dst-file: /src/widgets/qstyle.cxx
 //
@@ -28,5 +28,22 @@ int QStyle_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QStyle_SlotProxy here
+class QStyle_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QStyle_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qstyle.moc"
+
+extern "C" {
+  QStyle_SlotProxy* QStyle_SlotProxy_new()
+  {
+    return new QStyle_SlotProxy();
+  }
+};
+
 // <= body block end
 

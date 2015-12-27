@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
@@ -67,5 +67,22 @@ void dedtor_ZN8QLibraryD0Ev(QLibrary* that)
 // <= ext block end
 
 // body block begin =>
+// QLibrary_SlotProxy here
+class QLibrary_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QLibrary_SlotProxy():QObject(){}
+
+};
+#include "src/core/qlibrary.moc"
+
+extern "C" {
+  QLibrary_SlotProxy* QLibrary_SlotProxy_new()
+  {
+    return new QLibrary_SlotProxy();
+  }
+};
+
 // <= body block end
 

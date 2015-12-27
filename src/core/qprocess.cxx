@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qprocess.h
 // dst-file: /src/core/qprocess.cxx
 //
@@ -78,5 +78,94 @@ void demth_ZN19QProcessEnvironment4swapERS_(void *that, QProcessEnvironment & ot
 // <= ext block end
 
 // body block begin =>
+// QProcess_SlotProxy here
+class QProcess_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QProcess_SlotProxy():QObject(){}
+
+public slots:
+  // finished(int)
+  void slot_proxy_func__ZN8QProcess8finishedEi(int arg0);
+public:
+  void (*slot_func__ZN8QProcess8finishedEi)(int arg0) = NULL;
+public slots:
+  // finished(int, class QProcess::ExitStatus)
+  void slot_proxy_func__ZN8QProcess8finishedEiNS_10ExitStatusE(int arg0, QProcess::ExitStatus arg1);
+public:
+  void (*slot_func__ZN8QProcess8finishedEiNS_10ExitStatusE)(int arg0, QProcess::ExitStatus arg1) = NULL;
+public slots:
+  // error(class QProcess::ProcessError)
+  void slot_proxy_func__ZN8QProcess5errorENS_12ProcessErrorE(QProcess::ProcessError arg0);
+public:
+  void (*slot_func__ZN8QProcess5errorENS_12ProcessErrorE)(QProcess::ProcessError arg0) = NULL;
+};
+#include "src/core/qprocess.moc"
+
+extern "C" {
+  QProcess_SlotProxy* QProcess_SlotProxy_new()
+  {
+    return new QProcess_SlotProxy();
+  }
+};
+
+void QProcess_SlotProxy::slot_proxy_func__ZN8QProcess8finishedEi(int arg0) {
+  if (this->slot_func__ZN8QProcess8finishedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN8QProcess8finishedEi(arg0);
+  }
+}
+extern "C"
+void* QProcess_SlotProxy_connect__ZN8QProcess8finishedEi(QObject* sender, void* fptr){
+  auto that = new QProcess_SlotProxy();
+  that->slot_func__ZN8QProcess8finishedEi = (decltype(that->slot_func__ZN8QProcess8finishedEi))fptr;
+  QObject::connect((QProcess*)sender, SIGNAL(finished(int)), that, SLOT(slot_proxy_func__ZN8QProcess8finishedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QProcess_SlotProxy_disconnect__ZN8QProcess8finishedEi(QProcess_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QProcess_SlotProxy::slot_proxy_func__ZN8QProcess8finishedEiNS_10ExitStatusE(int arg0, QProcess::ExitStatus arg1) {
+  if (this->slot_func__ZN8QProcess8finishedEiNS_10ExitStatusE != NULL) {
+    // do smth...
+    this->slot_func__ZN8QProcess8finishedEiNS_10ExitStatusE(arg0, arg1);
+  }
+}
+extern "C"
+void* QProcess_SlotProxy_connect__ZN8QProcess8finishedEiNS_10ExitStatusE(QObject* sender, void* fptr){
+  auto that = new QProcess_SlotProxy();
+  that->slot_func__ZN8QProcess8finishedEiNS_10ExitStatusE = (decltype(that->slot_func__ZN8QProcess8finishedEiNS_10ExitStatusE))fptr;
+  QObject::connect((QProcess*)sender, SIGNAL(finished(int, class QProcess::ExitStatus)), that, SLOT(slot_proxy_func__ZN8QProcess8finishedEiNS_10ExitStatusE(int arg0, QProcess::ExitStatus arg1)));
+  return that;
+}
+extern "C"
+void QProcess_SlotProxy_disconnect__ZN8QProcess8finishedEiNS_10ExitStatusE(QProcess_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QProcess_SlotProxy::slot_proxy_func__ZN8QProcess5errorENS_12ProcessErrorE(QProcess::ProcessError arg0) {
+  if (this->slot_func__ZN8QProcess5errorENS_12ProcessErrorE != NULL) {
+    // do smth...
+    this->slot_func__ZN8QProcess5errorENS_12ProcessErrorE(arg0);
+  }
+}
+extern "C"
+void* QProcess_SlotProxy_connect__ZN8QProcess5errorENS_12ProcessErrorE(QObject* sender, void* fptr){
+  auto that = new QProcess_SlotProxy();
+  that->slot_func__ZN8QProcess5errorENS_12ProcessErrorE = (decltype(that->slot_func__ZN8QProcess5errorENS_12ProcessErrorE))fptr;
+  QObject::connect((QProcess*)sender, SIGNAL(error(class QProcess::ProcessError)), that, SLOT(slot_proxy_func__ZN8QProcess5errorENS_12ProcessErrorE(QProcess::ProcessError arg0)));
+  return that;
+}
+extern "C"
+void QProcess_SlotProxy_disconnect__ZN8QProcess5errorENS_12ProcessErrorE(QProcess_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // <= body block end
 

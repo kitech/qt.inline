@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qtemporaryfile.h
 // dst-file: /src/core/qtemporaryfile.cxx
 //
@@ -88,5 +88,22 @@ QTemporaryFile * demth_ZN14QTemporaryFile15createLocalFileERK7QString(void *that
 // <= ext block end
 
 // body block begin =>
+// QTemporaryFile_SlotProxy here
+class QTemporaryFile_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTemporaryFile_SlotProxy():QObject(){}
+
+};
+#include "src/core/qtemporaryfile.moc"
+
+extern "C" {
+  QTemporaryFile_SlotProxy* QTemporaryFile_SlotProxy_new()
+  {
+    return new QTemporaryFile_SlotProxy();
+  }
+};
+
 // <= body block end
 

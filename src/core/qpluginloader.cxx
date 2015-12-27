@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtCore/qpluginloader.h
 // dst-file: /src/core/qpluginloader.cxx
 //
@@ -51,5 +51,22 @@ void dedtor_ZN13QPluginLoaderD0Ev(QPluginLoader* that)
 // <= ext block end
 
 // body block begin =>
+// QPluginLoader_SlotProxy here
+class QPluginLoader_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPluginLoader_SlotProxy():QObject(){}
+
+};
+#include "src/core/qpluginloader.moc"
+
+extern "C" {
+  QPluginLoader_SlotProxy* QPluginLoader_SlotProxy_new()
+  {
+    return new QPluginLoader_SlotProxy();
+  }
+};
+
 // <= body block end
 

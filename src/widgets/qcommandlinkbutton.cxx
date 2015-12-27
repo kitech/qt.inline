@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qcommandlinkbutton.h
 // dst-file: /src/widgets/qcommandlinkbutton.cxx
 //
@@ -59,5 +59,22 @@ QCommandLinkButton* dector_ZN18QCommandLinkButtonC1ERK7QStringP7QWidget(const QS
 // <= ext block end
 
 // body block begin =>
+// QCommandLinkButton_SlotProxy here
+class QCommandLinkButton_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QCommandLinkButton_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qcommandlinkbutton.moc"
+
+extern "C" {
+  QCommandLinkButton_SlotProxy* QCommandLinkButton_SlotProxy_new()
+  {
+    return new QCommandLinkButton_SlotProxy();
+  }
+};
+
 // <= body block end
 

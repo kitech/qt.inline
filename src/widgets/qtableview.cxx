@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qtableview.h
 // dst-file: /src/widgets/qtableview.cxx
 //
@@ -43,5 +43,22 @@ QTableView* dector_ZN10QTableViewC1EP7QWidget(QWidget * parent)
 // <= ext block end
 
 // body block begin =>
+// QTableView_SlotProxy here
+class QTableView_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QTableView_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qtableview.moc"
+
+extern "C" {
+  QTableView_SlotProxy* QTableView_SlotProxy_new()
+  {
+    return new QTableView_SlotProxy();
+  }
+};
+
 // <= body block end
 

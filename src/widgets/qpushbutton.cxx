@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qpushbutton.h
 // dst-file: /src/widgets/qpushbutton.cxx
 //
@@ -59,5 +59,22 @@ QPushButton* dector_ZN11QPushButtonC1ERK7QStringP7QWidget(const QString & text, 
 // <= ext block end
 
 // body block begin =>
+// QPushButton_SlotProxy here
+class QPushButton_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPushButton_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qpushbutton.moc"
+
+extern "C" {
+  QPushButton_SlotProxy* QPushButton_SlotProxy_new()
+  {
+    return new QPushButton_SlotProxy();
+  }
+};
+
 // <= body block end
 

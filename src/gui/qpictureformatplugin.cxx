@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtGui/qpictureformatplugin.h
 // dst-file: /src/gui/qpictureformatplugin.cxx
 //
@@ -28,5 +28,22 @@ int QPictureFormatPlugin_Class_Size()
 // <= ext block end
 
 // body block begin =>
+// QPictureFormatPlugin_SlotProxy here
+class QPictureFormatPlugin_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QPictureFormatPlugin_SlotProxy():QObject(){}
+
+};
+#include "src/gui/qpictureformatplugin.moc"
+
+extern "C" {
+  QPictureFormatPlugin_SlotProxy* QPictureFormatPlugin_SlotProxy_new()
+  {
+    return new QPictureFormatPlugin_SlotProxy();
+  }
+};
+
 // <= body block end
 

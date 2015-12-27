@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Dec 26 12:03:58 2015
+// created: Sun Dec 27 14:55:08 2015
 // src-file: /QtWidgets/qgraphicsanchorlayout.h
 // dst-file: /src/widgets/qgraphicsanchorlayout.cxx
 //
@@ -55,5 +55,22 @@ void dedtor_ZN15QGraphicsAnchorD0Ev(QGraphicsAnchor* that)
 // <= ext block end
 
 // body block begin =>
+// QGraphicsAnchor_SlotProxy here
+class QGraphicsAnchor_SlotProxy : public QObject
+{
+Q_OBJECT;
+public:
+   QGraphicsAnchor_SlotProxy():QObject(){}
+
+};
+#include "src/widgets/qgraphicsanchorlayout.moc"
+
+extern "C" {
+  QGraphicsAnchor_SlotProxy* QGraphicsAnchor_SlotProxy_new()
+  {
+    return new QGraphicsAnchor_SlotProxy();
+  }
+};
+
 // <= body block end
 
