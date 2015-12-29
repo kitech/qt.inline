@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmdisubwindow.h
 // dst-file: /src/widgets/qmdisubwindow.cxx
 //
@@ -46,7 +46,7 @@ QMdiSubWindow* dector_ZN13QMdiSubWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QW
 // QMdiSubWindow_SlotProxy here
 class QMdiSubWindow_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMdiSubWindow_SlotProxy():QObject(){}
 
@@ -54,12 +54,13 @@ public slots:
   // windowStateChanged(Qt::WindowStates, Qt::WindowStates)
   void slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1);
 public:
-  void (*slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_)(Qt::WindowStates arg0, Qt::WindowStates arg1) = NULL;
+  void (*slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_)(void* rsfptr, Qt::WindowStates arg0, Qt::WindowStates arg1) = NULL;
 public slots:
   // aboutToActivate()
   void slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv();
 public:
-  void (*slot_func__ZN13QMdiSubWindow15aboutToActivateEv)() = NULL;
+  void (*slot_func__ZN13QMdiSubWindow15aboutToActivateEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmdisubwindow.moc"
 
@@ -73,13 +74,14 @@ extern "C" {
 void QMdiSubWindow_SlotProxy::slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1) {
   if (this->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_ != NULL) {
     // do smth...
-    this->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(arg0, arg1);
+    this->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(this->rsfptr, arg0, arg1);
   }
 }
 extern "C"
-void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(QObject* sender, void* fptr){
+void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMdiSubWindow_SlotProxy();
-  that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_ = (decltype(that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_ = (decltype(that->slot_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_))ffifptr;
   QObject::connect((QMdiSubWindow*)sender, SIGNAL(windowStateChanged(Qt::WindowStates, Qt::WindowStates)), that, SLOT(slot_proxy_func__ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(Qt::WindowStates arg0, Qt::WindowStates arg1)));
   return that;
 }
@@ -92,13 +94,14 @@ void QMdiSubWindow_SlotProxy_disconnect__ZN13QMdiSubWindow18windowStateChangedE6
 void QMdiSubWindow_SlotProxy::slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv() {
   if (this->slot_func__ZN13QMdiSubWindow15aboutToActivateEv != NULL) {
     // do smth...
-    this->slot_func__ZN13QMdiSubWindow15aboutToActivateEv();
+    this->slot_func__ZN13QMdiSubWindow15aboutToActivateEv(this->rsfptr);
   }
 }
 extern "C"
-void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow15aboutToActivateEv(QObject* sender, void* fptr){
+void* QMdiSubWindow_SlotProxy_connect__ZN13QMdiSubWindow15aboutToActivateEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMdiSubWindow_SlotProxy();
-  that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv = (decltype(that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv = (decltype(that->slot_func__ZN13QMdiSubWindow15aboutToActivateEv))ffifptr;
   QObject::connect((QMdiSubWindow*)sender, SIGNAL(aboutToActivate()), that, SLOT(slot_proxy_func__ZN13QMdiSubWindow15aboutToActivateEv()));
   return that;
 }

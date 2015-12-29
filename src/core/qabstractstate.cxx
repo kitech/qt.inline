@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qabstractstate.h
 // dst-file: /src/core/qabstractstate.cxx
 //
@@ -31,7 +31,7 @@ int QAbstractState_Class_Size()
 // QAbstractState_SlotProxy here
 class QAbstractState_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractState_SlotProxy():QObject(){}
 
@@ -39,7 +39,8 @@ public slots:
   // activeChanged(_Bool)
   void slot_proxy_func__ZN14QAbstractState13activeChangedEb(bool arg0);
 public:
-  void (*slot_func__ZN14QAbstractState13activeChangedEb)(bool arg0) = NULL;
+  void (*slot_func__ZN14QAbstractState13activeChangedEb)(void* rsfptr, bool arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/core/qabstractstate.moc"
 
@@ -53,13 +54,14 @@ extern "C" {
 void QAbstractState_SlotProxy::slot_proxy_func__ZN14QAbstractState13activeChangedEb(bool arg0) {
   if (this->slot_func__ZN14QAbstractState13activeChangedEb != NULL) {
     // do smth...
-    this->slot_func__ZN14QAbstractState13activeChangedEb(arg0);
+    this->slot_func__ZN14QAbstractState13activeChangedEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QAbstractState_SlotProxy_connect__ZN14QAbstractState13activeChangedEb(QObject* sender, void* fptr){
+void* QAbstractState_SlotProxy_connect__ZN14QAbstractState13activeChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractState_SlotProxy();
-  that->slot_func__ZN14QAbstractState13activeChangedEb = (decltype(that->slot_func__ZN14QAbstractState13activeChangedEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QAbstractState13activeChangedEb = (decltype(that->slot_func__ZN14QAbstractState13activeChangedEb))ffifptr;
   QObject::connect((QAbstractState*)sender, SIGNAL(activeChanged(_Bool)), that, SLOT(slot_proxy_func__ZN14QAbstractState13activeChangedEb(bool arg0)));
   return that;
 }

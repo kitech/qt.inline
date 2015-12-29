@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmenu.h
 // dst-file: /src/widgets/qmenu.cxx
 //
@@ -54,7 +54,7 @@ void dedtor_ZN5QMenuD0Ev(QMenu* that)
 // QMenu_SlotProxy here
 class QMenu_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMenu_SlotProxy():QObject(){}
 
@@ -62,22 +62,23 @@ public slots:
   // aboutToShow()
   void slot_proxy_func__ZN5QMenu11aboutToShowEv();
 public:
-  void (*slot_func__ZN5QMenu11aboutToShowEv)() = NULL;
-public slots:
-  // aboutToHide()
-  void slot_proxy_func__ZN5QMenu11aboutToHideEv();
-public:
-  void (*slot_func__ZN5QMenu11aboutToHideEv)() = NULL;
-public slots:
-  // triggered(class QAction *)
-  void slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN5QMenu9triggeredEP7QAction)(QAction * arg0) = NULL;
+  void (*slot_func__ZN5QMenu11aboutToShowEv)(void* rsfptr) = NULL;
 public slots:
   // hovered(class QAction *)
   void slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0);
 public:
-  void (*slot_func__ZN5QMenu7hoveredEP7QAction)(QAction * arg0) = NULL;
+  void (*slot_func__ZN5QMenu7hoveredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
+public slots:
+  // aboutToHide()
+  void slot_proxy_func__ZN5QMenu11aboutToHideEv();
+public:
+  void (*slot_func__ZN5QMenu11aboutToHideEv)(void* rsfptr) = NULL;
+public slots:
+  // triggered(class QAction *)
+  void slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0);
+public:
+  void (*slot_func__ZN5QMenu9triggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmenu.moc"
 
@@ -91,13 +92,14 @@ extern "C" {
 void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu11aboutToShowEv() {
   if (this->slot_func__ZN5QMenu11aboutToShowEv != NULL) {
     // do smth...
-    this->slot_func__ZN5QMenu11aboutToShowEv();
+    this->slot_func__ZN5QMenu11aboutToShowEv(this->rsfptr);
   }
 }
 extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToShowEv(QObject* sender, void* fptr){
+void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToShowEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMenu_SlotProxy();
-  that->slot_func__ZN5QMenu11aboutToShowEv = (decltype(that->slot_func__ZN5QMenu11aboutToShowEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN5QMenu11aboutToShowEv = (decltype(that->slot_func__ZN5QMenu11aboutToShowEv))ffifptr;
   QObject::connect((QMenu*)sender, SIGNAL(aboutToShow()), that, SLOT(slot_proxy_func__ZN5QMenu11aboutToShowEv()));
   return that;
 }
@@ -107,16 +109,37 @@ void QMenu_SlotProxy_disconnect__ZN5QMenu11aboutToShowEv(QMenu_SlotProxy* that) 
   delete that;
 }
 
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu11aboutToHideEv() {
-  if (this->slot_func__ZN5QMenu11aboutToHideEv != NULL) {
+void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0) {
+  if (this->slot_func__ZN5QMenu7hoveredEP7QAction != NULL) {
     // do smth...
-    this->slot_func__ZN5QMenu11aboutToHideEv();
+    this->slot_func__ZN5QMenu7hoveredEP7QAction(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToHideEv(QObject* sender, void* fptr){
+void* QMenu_SlotProxy_connect__ZN5QMenu7hoveredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMenu_SlotProxy();
-  that->slot_func__ZN5QMenu11aboutToHideEv = (decltype(that->slot_func__ZN5QMenu11aboutToHideEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN5QMenu7hoveredEP7QAction = (decltype(that->slot_func__ZN5QMenu7hoveredEP7QAction))ffifptr;
+  QObject::connect((QMenu*)sender, SIGNAL(hovered(class QAction *)), that, SLOT(slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0)));
+  return that;
+}
+extern "C"
+void QMenu_SlotProxy_disconnect__ZN5QMenu7hoveredEP7QAction(QMenu_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu11aboutToHideEv() {
+  if (this->slot_func__ZN5QMenu11aboutToHideEv != NULL) {
+    // do smth...
+    this->slot_func__ZN5QMenu11aboutToHideEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToHideEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QMenu_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN5QMenu11aboutToHideEv = (decltype(that->slot_func__ZN5QMenu11aboutToHideEv))ffifptr;
   QObject::connect((QMenu*)sender, SIGNAL(aboutToHide()), that, SLOT(slot_proxy_func__ZN5QMenu11aboutToHideEv()));
   return that;
 }
@@ -129,37 +152,19 @@ void QMenu_SlotProxy_disconnect__ZN5QMenu11aboutToHideEv(QMenu_SlotProxy* that) 
 void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0) {
   if (this->slot_func__ZN5QMenu9triggeredEP7QAction != NULL) {
     // do smth...
-    this->slot_func__ZN5QMenu9triggeredEP7QAction(arg0);
+    this->slot_func__ZN5QMenu9triggeredEP7QAction(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu9triggeredEP7QAction(QObject* sender, void* fptr){
+void* QMenu_SlotProxy_connect__ZN5QMenu9triggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMenu_SlotProxy();
-  that->slot_func__ZN5QMenu9triggeredEP7QAction = (decltype(that->slot_func__ZN5QMenu9triggeredEP7QAction))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN5QMenu9triggeredEP7QAction = (decltype(that->slot_func__ZN5QMenu9triggeredEP7QAction))ffifptr;
   QObject::connect((QMenu*)sender, SIGNAL(triggered(class QAction *)), that, SLOT(slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0)));
   return that;
 }
 extern "C"
 void QMenu_SlotProxy_disconnect__ZN5QMenu9triggeredEP7QAction(QMenu_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN5QMenu7hoveredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN5QMenu7hoveredEP7QAction(arg0);
-  }
-}
-extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu7hoveredEP7QAction(QObject* sender, void* fptr){
-  auto that = new QMenu_SlotProxy();
-  that->slot_func__ZN5QMenu7hoveredEP7QAction = (decltype(that->slot_func__ZN5QMenu7hoveredEP7QAction))fptr;
-  QObject::connect((QMenu*)sender, SIGNAL(hovered(class QAction *)), that, SLOT(slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QMenu_SlotProxy_disconnect__ZN5QMenu7hoveredEP7QAction(QMenu_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

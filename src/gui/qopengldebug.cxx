@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
@@ -81,7 +81,7 @@ QOpenGLDebugLogger* dector_ZN18QOpenGLDebugLoggerC1EP7QObject(QObject * parent)
 // QOpenGLDebugLogger_SlotProxy here
 class QOpenGLDebugLogger_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOpenGLDebugLogger_SlotProxy():QObject(){}
 
@@ -89,7 +89,8 @@ public slots:
   // messageLogged(const class QOpenGLDebugMessage &)
   void slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0);
 public:
-  void (*slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage)(const QOpenGLDebugMessage & arg0) = NULL;
+  void (*slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage)(void* rsfptr, const QOpenGLDebugMessage & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qopengldebug.moc"
 
@@ -103,13 +104,14 @@ extern "C" {
 void QOpenGLDebugLogger_SlotProxy::slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0) {
   if (this->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage != NULL) {
     // do smth...
-    this->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(arg0);
+    this->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QOpenGLDebugLogger_SlotProxy_connect__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(QObject* sender, void* fptr){
+void* QOpenGLDebugLogger_SlotProxy_connect__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QOpenGLDebugLogger_SlotProxy();
-  that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage = (decltype(that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage = (decltype(that->slot_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage))ffifptr;
   QObject::connect((QOpenGLDebugLogger*)sender, SIGNAL(messageLogged(const class QOpenGLDebugMessage &)), that, SLOT(slot_proxy_func__ZN18QOpenGLDebugLogger13messageLoggedERK19QOpenGLDebugMessage(const QOpenGLDebugMessage & arg0)));
   return that;
 }

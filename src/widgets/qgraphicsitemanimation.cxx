@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgraphicsitemanimation.h
 // dst-file: /src/widgets/qgraphicsitemanimation.cxx
 //
@@ -46,10 +46,11 @@ void dedtor_ZN22QGraphicsItemAnimationD0Ev(QGraphicsItemAnimation* that)
 // QGraphicsItemAnimation_SlotProxy here
 class QGraphicsItemAnimation_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsItemAnimation_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qgraphicsitemanimation.moc"
 

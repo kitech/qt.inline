@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgraphicsitem.h
 // dst-file: /src/widgets/qgraphicsitem.cxx
 //
@@ -558,20 +558,21 @@ QGraphicsSimpleTextItem* dector_ZN23QGraphicsSimpleTextItemC1EP13QGraphicsItem(Q
 // QGraphicsTextItem_SlotProxy here
 class QGraphicsTextItem_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsTextItem_SlotProxy():QObject(){}
 
 public slots:
-  // linkActivated(const class QString &)
-  void slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString)(const QString & arg0) = NULL;
-public slots:
   // linkHovered(const class QString &)
   void slot_proxy_func__ZN17QGraphicsTextItem11linkHoveredERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public slots:
+  // linkActivated(const class QString &)
+  void slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -581,35 +582,17 @@ extern "C" {
   }
 };
 
-void QGraphicsTextItem_SlotProxy::slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(arg0);
-  }
-}
-extern "C"
-void* QGraphicsTextItem_SlotProxy_connect__ZN17QGraphicsTextItem13linkActivatedERK7QString(QObject* sender, void* fptr){
-  auto that = new QGraphicsTextItem_SlotProxy();
-  that->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString = (decltype(that->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString))fptr;
-  QObject::connect((QGraphicsTextItem*)sender, SIGNAL(linkActivated(const class QString &)), that, SLOT(slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QGraphicsTextItem_SlotProxy_disconnect__ZN17QGraphicsTextItem13linkActivatedERK7QString(QGraphicsTextItem_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QGraphicsTextItem_SlotProxy::slot_proxy_func__ZN17QGraphicsTextItem11linkHoveredERK7QString(const QString & arg0) {
   if (this->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString(arg0);
+    this->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QGraphicsTextItem_SlotProxy_connect__ZN17QGraphicsTextItem11linkHoveredERK7QString(QObject* sender, void* fptr){
+void* QGraphicsTextItem_SlotProxy_connect__ZN17QGraphicsTextItem11linkHoveredERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsTextItem_SlotProxy();
-  that->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString = (decltype(that->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString = (decltype(that->slot_func__ZN17QGraphicsTextItem11linkHoveredERK7QString))ffifptr;
   QObject::connect((QGraphicsTextItem*)sender, SIGNAL(linkHovered(const class QString &)), that, SLOT(slot_proxy_func__ZN17QGraphicsTextItem11linkHoveredERK7QString(const QString & arg0)));
   return that;
 }
@@ -619,73 +602,94 @@ void QGraphicsTextItem_SlotProxy_disconnect__ZN17QGraphicsTextItem11linkHoveredE
   delete that;
 }
 
+void QGraphicsTextItem_SlotProxy::slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QGraphicsTextItem_SlotProxy_connect__ZN17QGraphicsTextItem13linkActivatedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsTextItem_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString = (decltype(that->slot_func__ZN17QGraphicsTextItem13linkActivatedERK7QString))ffifptr;
+  QObject::connect((QGraphicsTextItem*)sender, SIGNAL(linkActivated(const class QString &)), that, SLOT(slot_proxy_func__ZN17QGraphicsTextItem13linkActivatedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QGraphicsTextItem_SlotProxy_disconnect__ZN17QGraphicsTextItem13linkActivatedERK7QString(QGraphicsTextItem_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // QGraphicsObject_SlotProxy here
 class QGraphicsObject_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsObject_SlotProxy():QObject(){}
 
 public slots:
-  // parentChanged()
-  void slot_proxy_func__ZN15QGraphicsObject13parentChangedEv();
+  // yChanged()
+  void slot_proxy_func__ZN15QGraphicsObject8yChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject13parentChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject8yChangedEv)(void* rsfptr) = NULL;
 public slots:
   // opacityChanged()
   void slot_proxy_func__ZN15QGraphicsObject14opacityChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject14opacityChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject14opacityChangedEv)(void* rsfptr) = NULL;
 public slots:
   // visibleChanged()
   void slot_proxy_func__ZN15QGraphicsObject14visibleChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject14visibleChangedEv)() = NULL;
-public slots:
-  // enabledChanged()
-  void slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject14enabledChangedEv)() = NULL;
-public slots:
-  // xChanged()
-  void slot_proxy_func__ZN15QGraphicsObject8xChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject8xChangedEv)() = NULL;
-public slots:
-  // yChanged()
-  void slot_proxy_func__ZN15QGraphicsObject8yChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject8yChangedEv)() = NULL;
-public slots:
-  // zChanged()
-  void slot_proxy_func__ZN15QGraphicsObject8zChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject8zChangedEv)() = NULL;
-public slots:
-  // rotationChanged()
-  void slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject15rotationChangedEv)() = NULL;
-public slots:
-  // scaleChanged()
-  void slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsObject12scaleChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject14visibleChangedEv)(void* rsfptr) = NULL;
 public slots:
   // childrenChanged()
   void slot_proxy_func__ZN15QGraphicsObject15childrenChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject15childrenChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject15childrenChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // zChanged()
+  void slot_proxy_func__ZN15QGraphicsObject8zChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject8zChangedEv)(void* rsfptr) = NULL;
 public slots:
   // widthChanged()
   void slot_proxy_func__ZN15QGraphicsObject12widthChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject12widthChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject12widthChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // rotationChanged()
+  void slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject15rotationChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // enabledChanged()
+  void slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject14enabledChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // scaleChanged()
+  void slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject12scaleChangedEv)(void* rsfptr) = NULL;
 public slots:
   // heightChanged()
   void slot_proxy_func__ZN15QGraphicsObject13heightChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsObject13heightChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsObject13heightChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // parentChanged()
+  void slot_proxy_func__ZN15QGraphicsObject13parentChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject13parentChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // xChanged()
+  void slot_proxy_func__ZN15QGraphicsObject8xChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsObject8xChangedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qgraphicsitem.moc"
 
@@ -696,21 +700,22 @@ extern "C" {
   }
 };
 
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject13parentChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject13parentChangedEv != NULL) {
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8yChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject8yChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject13parentChangedEv();
+    this->slot_func__ZN15QGraphicsObject8yChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject13parentChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8yChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject13parentChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject13parentChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(parentChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject13parentChangedEv()));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject8yChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8yChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(yChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8yChangedEv()));
   return that;
 }
 extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject13parentChangedEv(QGraphicsObject_SlotProxy* that) {
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8yChangedEv(QGraphicsObject_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -718,13 +723,14 @@ void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject13parentChangedEv(
 void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject14opacityChangedEv() {
   if (this->slot_func__ZN15QGraphicsObject14opacityChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject14opacityChangedEv();
+    this->slot_func__ZN15QGraphicsObject14opacityChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14opacityChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14opacityChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject14opacityChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14opacityChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject14opacityChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14opacityChangedEv))ffifptr;
   QObject::connect((QGraphicsObject*)sender, SIGNAL(opacityChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject14opacityChangedEv()));
   return that;
 }
@@ -737,13 +743,14 @@ void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject14opacityChangedEv
 void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject14visibleChangedEv() {
   if (this->slot_func__ZN15QGraphicsObject14visibleChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject14visibleChangedEv();
+    this->slot_func__ZN15QGraphicsObject14visibleChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14visibleChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14visibleChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject14visibleChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14visibleChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject14visibleChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14visibleChangedEv))ffifptr;
   QObject::connect((QGraphicsObject*)sender, SIGNAL(visibleChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject14visibleChangedEv()));
   return that;
 }
@@ -753,130 +760,17 @@ void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject14visibleChangedEv
   delete that;
 }
 
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject14enabledChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject14enabledChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14enabledChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject14enabledChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14enabledChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(enabledChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject14enabledChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8xChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject8xChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject8xChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8xChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject8xChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8xChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(xChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8xChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8xChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8yChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject8yChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject8yChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8yChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject8yChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8yChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(yChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8yChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8yChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8zChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject8zChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject8zChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8zChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject8zChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8zChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(zChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8zChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8zChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject15rotationChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject15rotationChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject15rotationChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject15rotationChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject15rotationChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(rotationChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject15rotationChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject12scaleChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsObject12scaleChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject12scaleChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject12scaleChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject12scaleChangedEv))fptr;
-  QObject::connect((QGraphicsObject*)sender, SIGNAL(scaleChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject12scaleChangedEv(QGraphicsObject_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject15childrenChangedEv() {
   if (this->slot_func__ZN15QGraphicsObject15childrenChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject15childrenChangedEv();
+    this->slot_func__ZN15QGraphicsObject15childrenChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject15childrenChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject15childrenChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject15childrenChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject15childrenChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject15childrenChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject15childrenChangedEv))ffifptr;
   QObject::connect((QGraphicsObject*)sender, SIGNAL(childrenChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject15childrenChangedEv()));
   return that;
 }
@@ -886,16 +780,37 @@ void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject15childrenChangedE
   delete that;
 }
 
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject12widthChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject12widthChangedEv != NULL) {
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8zChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject8zChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject12widthChangedEv();
+    this->slot_func__ZN15QGraphicsObject8zChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject12widthChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8zChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject12widthChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject12widthChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject8zChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8zChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(zChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8zChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8zChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject12widthChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject12widthChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject12widthChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject12widthChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject12widthChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject12widthChangedEv))ffifptr;
   QObject::connect((QGraphicsObject*)sender, SIGNAL(widthChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject12widthChangedEv()));
   return that;
 }
@@ -905,21 +820,122 @@ void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject12widthChangedEv(Q
   delete that;
 }
 
-void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject13heightChangedEv() {
-  if (this->slot_func__ZN15QGraphicsObject13heightChangedEv != NULL) {
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject15rotationChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsObject13heightChangedEv();
+    this->slot_func__ZN15QGraphicsObject15rotationChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject13heightChangedEv(QObject* sender, void* fptr){
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject15rotationChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsObject_SlotProxy();
-  that->slot_func__ZN15QGraphicsObject13heightChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject13heightChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject15rotationChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject15rotationChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(rotationChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject15rotationChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject15rotationChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject14enabledChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject14enabledChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject14enabledChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject14enabledChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject14enabledChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(enabledChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject14enabledChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject14enabledChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject12scaleChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject12scaleChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject12scaleChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject12scaleChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject12scaleChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(scaleChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject12scaleChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject12scaleChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject13heightChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject13heightChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject13heightChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject13heightChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject13heightChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject13heightChangedEv))ffifptr;
   QObject::connect((QGraphicsObject*)sender, SIGNAL(heightChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject13heightChangedEv()));
   return that;
 }
 extern "C"
 void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject13heightChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject13parentChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject13parentChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject13parentChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject13parentChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject13parentChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject13parentChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(parentChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject13parentChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject13parentChangedEv(QGraphicsObject_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsObject_SlotProxy::slot_proxy_func__ZN15QGraphicsObject8xChangedEv() {
+  if (this->slot_func__ZN15QGraphicsObject8xChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsObject8xChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsObject_SlotProxy_connect__ZN15QGraphicsObject8xChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsObject_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsObject8xChangedEv = (decltype(that->slot_func__ZN15QGraphicsObject8xChangedEv))ffifptr;
+  QObject::connect((QGraphicsObject*)sender, SIGNAL(xChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsObject8xChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsObject_SlotProxy_disconnect__ZN15QGraphicsObject8xChangedEv(QGraphicsObject_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

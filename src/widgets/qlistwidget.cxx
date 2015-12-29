@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qlistwidget.h
 // dst-file: /src/widgets/qlistwidget.cxx
 //
@@ -353,60 +353,61 @@ void demth_ZN11QListWidget7addItemERK7QString(void *that, const QString & label)
 // QListWidget_SlotProxy here
 class QListWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QListWidget_SlotProxy():QObject(){}
 
 public slots:
-  // itemPressed(class QListWidgetItem *)
-  void slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0);
-public:
-  void (*slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
-public slots:
-  // itemClicked(class QListWidgetItem *)
-  void slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0);
-public:
-  void (*slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
-public slots:
   // itemDoubleClicked(class QListWidgetItem *)
   void slot_proxy_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(QListWidgetItem * arg0);
 public:
-  void (*slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
-public slots:
-  // itemActivated(class QListWidgetItem *)
-  void slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0);
-public:
-  void (*slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
+  void (*slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
 public slots:
   // itemEntered(class QListWidgetItem *)
   void slot_proxy_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem(QListWidgetItem * arg0);
 public:
-  void (*slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
+  void (*slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
 public slots:
-  // itemChanged(class QListWidgetItem *)
-  void slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0);
+  // itemClicked(class QListWidgetItem *)
+  void slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0);
 public:
-  void (*slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem)(QListWidgetItem * arg0) = NULL;
+  void (*slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
 public slots:
   // currentItemChanged(class QListWidgetItem *, class QListWidgetItem *)
   void slot_proxy_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(QListWidgetItem * arg0, QListWidgetItem * arg1);
 public:
-  void (*slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_)(QListWidgetItem * arg0, QListWidgetItem * arg1) = NULL;
+  void (*slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_)(void* rsfptr, QListWidgetItem * arg0, QListWidgetItem * arg1) = NULL;
 public slots:
   // currentTextChanged(const class QString &)
   void slot_proxy_func__ZN11QListWidget18currentTextChangedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN11QListWidget18currentTextChangedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN11QListWidget18currentTextChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
-  // currentRowChanged(int)
-  void slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0);
+  // itemChanged(class QListWidgetItem *)
+  void slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0);
 public:
-  void (*slot_func__ZN11QListWidget17currentRowChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
 public slots:
   // itemSelectionChanged()
   void slot_proxy_func__ZN11QListWidget20itemSelectionChangedEv();
 public:
-  void (*slot_func__ZN11QListWidget20itemSelectionChangedEv)() = NULL;
+  void (*slot_func__ZN11QListWidget20itemSelectionChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // itemPressed(class QListWidgetItem *)
+  void slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0);
+public:
+  void (*slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
+public slots:
+  // itemActivated(class QListWidgetItem *)
+  void slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0);
+public:
+  void (*slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem)(void* rsfptr, QListWidgetItem * arg0) = NULL;
+public slots:
+  // currentRowChanged(int)
+  void slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0);
+public:
+  void (*slot_func__ZN11QListWidget17currentRowChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qlistwidget.moc"
 
@@ -417,54 +418,17 @@ extern "C" {
   }
 };
 
-void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0) {
-  if (this->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem != NULL) {
-    // do smth...
-    this->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(arg0);
-  }
-}
-extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemPressedEP15QListWidgetItem(QObject* sender, void* fptr){
-  auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem))fptr;
-  QObject::connect((QListWidget*)sender, SIGNAL(itemPressed(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0)));
-  return that;
-}
-extern "C"
-void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0) {
-  if (this->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem != NULL) {
-    // do smth...
-    this->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(arg0);
-  }
-}
-extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemClickedEP15QListWidgetItem(QObject* sender, void* fptr){
-  auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem))fptr;
-  QObject::connect((QListWidget*)sender, SIGNAL(itemClicked(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0)));
-  return that;
-}
-extern "C"
-void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(QListWidgetItem * arg0) {
   if (this->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(arg0);
+    this->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem))ffifptr;
   QObject::connect((QListWidget*)sender, SIGNAL(itemDoubleClicked(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget17itemDoubleClickedEP15QListWidgetItem(QListWidgetItem * arg0)));
   return that;
 }
@@ -474,35 +438,17 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget17itemDoubleClickedEP15QLi
   delete that;
 }
 
-void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0) {
-  if (this->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem != NULL) {
-    // do smth...
-    this->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(arg0);
-  }
-}
-extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QObject* sender, void* fptr){
-  auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem))fptr;
-  QObject::connect((QListWidget*)sender, SIGNAL(itemActivated(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0)));
-  return that;
-}
-extern "C"
-void QListWidget_SlotProxy_disconnect__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem(QListWidgetItem * arg0) {
   if (this->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem(arg0);
+    this->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemEnteredEP15QListWidgetItem(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemEnteredEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem))ffifptr;
   QObject::connect((QListWidget*)sender, SIGNAL(itemEntered(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemEnteredEP15QListWidgetItem(QListWidgetItem * arg0)));
   return that;
 }
@@ -512,21 +458,22 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemEnteredEP15QListWidg
   delete that;
 }
 
-void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0) {
-  if (this->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem != NULL) {
+void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0) {
+  if (this->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(arg0);
+    this->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemChangedEP15QListWidgetItem(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemClickedEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem))fptr;
-  QObject::connect((QListWidget*)sender, SIGNAL(itemChanged(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemClickedEP15QListWidgetItem))ffifptr;
+  QObject::connect((QListWidget*)sender, SIGNAL(itemClicked(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidgetItem * arg0)));
   return that;
 }
 extern "C"
-void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
+void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemClickedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -534,13 +481,14 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemChangedEP15QListWidg
 void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(QListWidgetItem * arg0, QListWidgetItem * arg1) {
   if (this->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_ != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(arg0, arg1);
+    this->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(this->rsfptr, arg0, arg1);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_ = (decltype(that->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_ = (decltype(that->slot_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_))ffifptr;
   QObject::connect((QListWidget*)sender, SIGNAL(currentItemChanged(class QListWidgetItem *, class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(QListWidgetItem * arg0, QListWidgetItem * arg1)));
   return that;
 }
@@ -553,13 +501,14 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget18currentItemChangedEP15QL
 void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget18currentTextChangedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN11QListWidget18currentTextChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget18currentTextChangedERK7QString(arg0);
+    this->slot_func__ZN11QListWidget18currentTextChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget18currentTextChangedERK7QString(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget18currentTextChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget18currentTextChangedERK7QString = (decltype(that->slot_func__ZN11QListWidget18currentTextChangedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget18currentTextChangedERK7QString = (decltype(that->slot_func__ZN11QListWidget18currentTextChangedERK7QString))ffifptr;
   QObject::connect((QListWidget*)sender, SIGNAL(currentTextChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN11QListWidget18currentTextChangedERK7QString(const QString & arg0)));
   return that;
 }
@@ -569,21 +518,22 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget18currentTextChangedERK7QS
   delete that;
 }
 
-void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0) {
-  if (this->slot_func__ZN11QListWidget17currentRowChangedEi != NULL) {
+void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0) {
+  if (this->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget17currentRowChangedEi(arg0);
+    this->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget17currentRowChangedEi(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemChangedEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget17currentRowChangedEi = (decltype(that->slot_func__ZN11QListWidget17currentRowChangedEi))fptr;
-  QObject::connect((QListWidget*)sender, SIGNAL(currentRowChanged(int)), that, SLOT(slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemChangedEP15QListWidgetItem))ffifptr;
+  QObject::connect((QListWidget*)sender, SIGNAL(itemChanged(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidgetItem * arg0)));
   return that;
 }
 extern "C"
-void QListWidget_SlotProxy_disconnect__ZN11QListWidget17currentRowChangedEi(QListWidget_SlotProxy* that) {
+void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemChangedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -591,18 +541,79 @@ void QListWidget_SlotProxy_disconnect__ZN11QListWidget17currentRowChangedEi(QLis
 void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget20itemSelectionChangedEv() {
   if (this->slot_func__ZN11QListWidget20itemSelectionChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN11QListWidget20itemSelectionChangedEv();
+    this->slot_func__ZN11QListWidget20itemSelectionChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QListWidget_SlotProxy_connect__ZN11QListWidget20itemSelectionChangedEv(QObject* sender, void* fptr){
+void* QListWidget_SlotProxy_connect__ZN11QListWidget20itemSelectionChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QListWidget_SlotProxy();
-  that->slot_func__ZN11QListWidget20itemSelectionChangedEv = (decltype(that->slot_func__ZN11QListWidget20itemSelectionChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget20itemSelectionChangedEv = (decltype(that->slot_func__ZN11QListWidget20itemSelectionChangedEv))ffifptr;
   QObject::connect((QListWidget*)sender, SIGNAL(itemSelectionChanged()), that, SLOT(slot_proxy_func__ZN11QListWidget20itemSelectionChangedEv()));
   return that;
 }
 extern "C"
 void QListWidget_SlotProxy_disconnect__ZN11QListWidget20itemSelectionChangedEv(QListWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0) {
+  if (this->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem != NULL) {
+    // do smth...
+    this->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QListWidget_SlotProxy_connect__ZN11QListWidget11itemPressedEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QListWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget11itemPressedEP15QListWidgetItem))ffifptr;
+  QObject::connect((QListWidget*)sender, SIGNAL(itemPressed(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidgetItem * arg0)));
+  return that;
+}
+extern "C"
+void QListWidget_SlotProxy_disconnect__ZN11QListWidget11itemPressedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0) {
+  if (this->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem != NULL) {
+    // do smth...
+    this->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QListWidget_SlotProxy_connect__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QListWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem = (decltype(that->slot_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem))ffifptr;
+  QObject::connect((QListWidget*)sender, SIGNAL(itemActivated(class QListWidgetItem *)), that, SLOT(slot_proxy_func__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidgetItem * arg0)));
+  return that;
+}
+extern "C"
+void QListWidget_SlotProxy_disconnect__ZN11QListWidget13itemActivatedEP15QListWidgetItem(QListWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QListWidget_SlotProxy::slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0) {
+  if (this->slot_func__ZN11QListWidget17currentRowChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN11QListWidget17currentRowChangedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QListWidget_SlotProxy_connect__ZN11QListWidget17currentRowChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QListWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QListWidget17currentRowChangedEi = (decltype(that->slot_func__ZN11QListWidget17currentRowChangedEi))ffifptr;
+  QObject::connect((QListWidget*)sender, SIGNAL(currentRowChanged(int)), that, SLOT(slot_proxy_func__ZN11QListWidget17currentRowChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QListWidget_SlotProxy_disconnect__ZN11QListWidget17currentRowChangedEi(QListWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

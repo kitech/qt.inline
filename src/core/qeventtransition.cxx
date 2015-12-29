@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qeventtransition.h
 // dst-file: /src/core/qeventtransition.cxx
 //
@@ -54,10 +54,11 @@ QEventTransition* dector_ZN16QEventTransitionC1EP6QState(QState * sourceState)
 // QEventTransition_SlotProxy here
 class QEventTransition_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QEventTransition_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qeventtransition.moc"
 

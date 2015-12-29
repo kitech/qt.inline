@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmouseeventtransition.h
 // dst-file: /src/widgets/qmouseeventtransition.cxx
 //
@@ -54,10 +54,11 @@ void dedtor_ZN21QMouseEventTransitionD0Ev(QMouseEventTransition* that)
 // QMouseEventTransition_SlotProxy here
 class QMouseEventTransition_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMouseEventTransition_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmouseeventtransition.moc"
 

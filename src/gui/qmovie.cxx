@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qmovie.h
 // dst-file: /src/gui/qmovie.cxx
 //
@@ -62,45 +62,46 @@ QMovie* dector_ZN6QMovieC1EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device
 // QMovie_SlotProxy here
 class QMovie_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMovie_SlotProxy():QObject(){}
 
 public slots:
-  // started()
-  void slot_proxy_func__ZN6QMovie7startedEv();
+  // stateChanged(class QMovie::MovieState)
+  void slot_proxy_func__ZN6QMovie12stateChangedENS_10MovieStateE(QMovie::MovieState arg0);
 public:
-  void (*slot_func__ZN6QMovie7startedEv)() = NULL;
+  void (*slot_func__ZN6QMovie12stateChangedENS_10MovieStateE)(void* rsfptr, QMovie::MovieState arg0) = NULL;
 public slots:
   // resized(const class QSize &)
   void slot_proxy_func__ZN6QMovie7resizedERK5QSize(const QSize & arg0);
 public:
-  void (*slot_func__ZN6QMovie7resizedERK5QSize)(const QSize & arg0) = NULL;
-public slots:
-  // updated(const class QRect &)
-  void slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0);
-public:
-  void (*slot_func__ZN6QMovie7updatedERK5QRect)(const QRect & arg0) = NULL;
-public slots:
-  // stateChanged(class QMovie::MovieState)
-  void slot_proxy_func__ZN6QMovie12stateChangedENS_10MovieStateE(QMovie::MovieState arg0);
-public:
-  void (*slot_func__ZN6QMovie12stateChangedENS_10MovieStateE)(QMovie::MovieState arg0) = NULL;
-public slots:
-  // error(class QImageReader::ImageReaderError)
-  void slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0);
-public:
-  void (*slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE)(QImageReader::ImageReaderError arg0) = NULL;
-public slots:
-  // finished()
-  void slot_proxy_func__ZN6QMovie8finishedEv();
-public:
-  void (*slot_func__ZN6QMovie8finishedEv)() = NULL;
+  void (*slot_func__ZN6QMovie7resizedERK5QSize)(void* rsfptr, const QSize & arg0) = NULL;
 public slots:
   // frameChanged(int)
   void slot_proxy_func__ZN6QMovie12frameChangedEi(int arg0);
 public:
-  void (*slot_func__ZN6QMovie12frameChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN6QMovie12frameChangedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // finished()
+  void slot_proxy_func__ZN6QMovie8finishedEv();
+public:
+  void (*slot_func__ZN6QMovie8finishedEv)(void* rsfptr) = NULL;
+public slots:
+  // error(class QImageReader::ImageReaderError)
+  void slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0);
+public:
+  void (*slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE)(void* rsfptr, QImageReader::ImageReaderError arg0) = NULL;
+public slots:
+  // started()
+  void slot_proxy_func__ZN6QMovie7startedEv();
+public:
+  void (*slot_func__ZN6QMovie7startedEv)(void* rsfptr) = NULL;
+public slots:
+  // updated(const class QRect &)
+  void slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0);
+public:
+  void (*slot_func__ZN6QMovie7updatedERK5QRect)(void* rsfptr, const QRect & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qmovie.moc"
 
@@ -111,73 +112,17 @@ extern "C" {
   }
 };
 
-void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7startedEv() {
-  if (this->slot_func__ZN6QMovie7startedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN6QMovie7startedEv();
-  }
-}
-extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie7startedEv(QObject* sender, void* fptr){
-  auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie7startedEv = (decltype(that->slot_func__ZN6QMovie7startedEv))fptr;
-  QObject::connect((QMovie*)sender, SIGNAL(started()), that, SLOT(slot_proxy_func__ZN6QMovie7startedEv()));
-  return that;
-}
-extern "C"
-void QMovie_SlotProxy_disconnect__ZN6QMovie7startedEv(QMovie_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7resizedERK5QSize(const QSize & arg0) {
-  if (this->slot_func__ZN6QMovie7resizedERK5QSize != NULL) {
-    // do smth...
-    this->slot_func__ZN6QMovie7resizedERK5QSize(arg0);
-  }
-}
-extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie7resizedERK5QSize(QObject* sender, void* fptr){
-  auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie7resizedERK5QSize = (decltype(that->slot_func__ZN6QMovie7resizedERK5QSize))fptr;
-  QObject::connect((QMovie*)sender, SIGNAL(resized(const class QSize &)), that, SLOT(slot_proxy_func__ZN6QMovie7resizedERK5QSize(const QSize & arg0)));
-  return that;
-}
-extern "C"
-void QMovie_SlotProxy_disconnect__ZN6QMovie7resizedERK5QSize(QMovie_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0) {
-  if (this->slot_func__ZN6QMovie7updatedERK5QRect != NULL) {
-    // do smth...
-    this->slot_func__ZN6QMovie7updatedERK5QRect(arg0);
-  }
-}
-extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie7updatedERK5QRect(QObject* sender, void* fptr){
-  auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie7updatedERK5QRect = (decltype(that->slot_func__ZN6QMovie7updatedERK5QRect))fptr;
-  QObject::connect((QMovie*)sender, SIGNAL(updated(const class QRect &)), that, SLOT(slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0)));
-  return that;
-}
-extern "C"
-void QMovie_SlotProxy_disconnect__ZN6QMovie7updatedERK5QRect(QMovie_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie12stateChangedENS_10MovieStateE(QMovie::MovieState arg0) {
   if (this->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE != NULL) {
     // do smth...
-    this->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE(arg0);
+    this->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie12stateChangedENS_10MovieStateE(QObject* sender, void* fptr){
+void* QMovie_SlotProxy_connect__ZN6QMovie12stateChangedENS_10MovieStateE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE = (decltype(that->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE = (decltype(that->slot_func__ZN6QMovie12stateChangedENS_10MovieStateE))ffifptr;
   QObject::connect((QMovie*)sender, SIGNAL(stateChanged(class QMovie::MovieState)), that, SLOT(slot_proxy_func__ZN6QMovie12stateChangedENS_10MovieStateE(QMovie::MovieState arg0)));
   return that;
 }
@@ -187,21 +132,42 @@ void QMovie_SlotProxy_disconnect__ZN6QMovie12stateChangedENS_10MovieStateE(QMovi
   delete that;
 }
 
-void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0) {
-  if (this->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE != NULL) {
+void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7resizedERK5QSize(const QSize & arg0) {
+  if (this->slot_func__ZN6QMovie7resizedERK5QSize != NULL) {
     // do smth...
-    this->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(arg0);
+    this->slot_func__ZN6QMovie7resizedERK5QSize(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QObject* sender, void* fptr){
+void* QMovie_SlotProxy_connect__ZN6QMovie7resizedERK5QSize(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE = (decltype(that->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE))fptr;
-  QObject::connect((QMovie*)sender, SIGNAL(error(class QImageReader::ImageReaderError)), that, SLOT(slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie7resizedERK5QSize = (decltype(that->slot_func__ZN6QMovie7resizedERK5QSize))ffifptr;
+  QObject::connect((QMovie*)sender, SIGNAL(resized(const class QSize &)), that, SLOT(slot_proxy_func__ZN6QMovie7resizedERK5QSize(const QSize & arg0)));
   return that;
 }
 extern "C"
-void QMovie_SlotProxy_disconnect__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QMovie_SlotProxy* that) {
+void QMovie_SlotProxy_disconnect__ZN6QMovie7resizedERK5QSize(QMovie_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie12frameChangedEi(int arg0) {
+  if (this->slot_func__ZN6QMovie12frameChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN6QMovie12frameChangedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QMovie_SlotProxy_connect__ZN6QMovie12frameChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QMovie_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie12frameChangedEi = (decltype(that->slot_func__ZN6QMovie12frameChangedEi))ffifptr;
+  QObject::connect((QMovie*)sender, SIGNAL(frameChanged(int)), that, SLOT(slot_proxy_func__ZN6QMovie12frameChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QMovie_SlotProxy_disconnect__ZN6QMovie12frameChangedEi(QMovie_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -209,13 +175,14 @@ void QMovie_SlotProxy_disconnect__ZN6QMovie5errorEN12QImageReader16ImageReaderEr
 void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie8finishedEv() {
   if (this->slot_func__ZN6QMovie8finishedEv != NULL) {
     // do smth...
-    this->slot_func__ZN6QMovie8finishedEv();
+    this->slot_func__ZN6QMovie8finishedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie8finishedEv(QObject* sender, void* fptr){
+void* QMovie_SlotProxy_connect__ZN6QMovie8finishedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie8finishedEv = (decltype(that->slot_func__ZN6QMovie8finishedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie8finishedEv = (decltype(that->slot_func__ZN6QMovie8finishedEv))ffifptr;
   QObject::connect((QMovie*)sender, SIGNAL(finished()), that, SLOT(slot_proxy_func__ZN6QMovie8finishedEv()));
   return that;
 }
@@ -225,21 +192,62 @@ void QMovie_SlotProxy_disconnect__ZN6QMovie8finishedEv(QMovie_SlotProxy* that) {
   delete that;
 }
 
-void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie12frameChangedEi(int arg0) {
-  if (this->slot_func__ZN6QMovie12frameChangedEi != NULL) {
+void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0) {
+  if (this->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE != NULL) {
     // do smth...
-    this->slot_func__ZN6QMovie12frameChangedEi(arg0);
+    this->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMovie_SlotProxy_connect__ZN6QMovie12frameChangedEi(QObject* sender, void* fptr){
+void* QMovie_SlotProxy_connect__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMovie_SlotProxy();
-  that->slot_func__ZN6QMovie12frameChangedEi = (decltype(that->slot_func__ZN6QMovie12frameChangedEi))fptr;
-  QObject::connect((QMovie*)sender, SIGNAL(frameChanged(int)), that, SLOT(slot_proxy_func__ZN6QMovie12frameChangedEi(int arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE = (decltype(that->slot_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE))ffifptr;
+  QObject::connect((QMovie*)sender, SIGNAL(error(class QImageReader::ImageReaderError)), that, SLOT(slot_proxy_func__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QImageReader::ImageReaderError arg0)));
   return that;
 }
 extern "C"
-void QMovie_SlotProxy_disconnect__ZN6QMovie12frameChangedEi(QMovie_SlotProxy* that) {
+void QMovie_SlotProxy_disconnect__ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(QMovie_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7startedEv() {
+  if (this->slot_func__ZN6QMovie7startedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN6QMovie7startedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QMovie_SlotProxy_connect__ZN6QMovie7startedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QMovie_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie7startedEv = (decltype(that->slot_func__ZN6QMovie7startedEv))ffifptr;
+  QObject::connect((QMovie*)sender, SIGNAL(started()), that, SLOT(slot_proxy_func__ZN6QMovie7startedEv()));
+  return that;
+}
+extern "C"
+void QMovie_SlotProxy_disconnect__ZN6QMovie7startedEv(QMovie_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMovie_SlotProxy::slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0) {
+  if (this->slot_func__ZN6QMovie7updatedERK5QRect != NULL) {
+    // do smth...
+    this->slot_func__ZN6QMovie7updatedERK5QRect(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QMovie_SlotProxy_connect__ZN6QMovie7updatedERK5QRect(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QMovie_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QMovie7updatedERK5QRect = (decltype(that->slot_func__ZN6QMovie7updatedERK5QRect))ffifptr;
+  QObject::connect((QMovie*)sender, SIGNAL(updated(const class QRect &)), that, SLOT(slot_proxy_func__ZN6QMovie7updatedERK5QRect(const QRect & arg0)));
+  return that;
+}
+extern "C"
+void QMovie_SlotProxy_disconnect__ZN6QMovie7updatedERK5QRect(QMovie_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

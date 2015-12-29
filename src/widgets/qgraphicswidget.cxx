@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -68,20 +68,21 @@ void demth_ZN15QGraphicsWidget11setGeometryEdddd(void *that, double x, double y,
 // QGraphicsWidget_SlotProxy here
 class QGraphicsWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsWidget_SlotProxy():QObject(){}
 
 public slots:
-  // geometryChanged()
-  void slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv();
-public:
-  void (*slot_func__ZN15QGraphicsWidget15geometryChangedEv)() = NULL;
-public slots:
   // layoutChanged()
   void slot_proxy_func__ZN15QGraphicsWidget13layoutChangedEv();
 public:
-  void (*slot_func__ZN15QGraphicsWidget13layoutChangedEv)() = NULL;
+  void (*slot_func__ZN15QGraphicsWidget13layoutChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // geometryChanged()
+  void slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv();
+public:
+  void (*slot_func__ZN15QGraphicsWidget15geometryChangedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qgraphicswidget.moc"
 
@@ -92,40 +93,42 @@ extern "C" {
   }
 };
 
-void QGraphicsWidget_SlotProxy::slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv() {
-  if (this->slot_func__ZN15QGraphicsWidget15geometryChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGraphicsWidget15geometryChangedEv();
-  }
-}
-extern "C"
-void* QGraphicsWidget_SlotProxy_connect__ZN15QGraphicsWidget15geometryChangedEv(QObject* sender, void* fptr){
-  auto that = new QGraphicsWidget_SlotProxy();
-  that->slot_func__ZN15QGraphicsWidget15geometryChangedEv = (decltype(that->slot_func__ZN15QGraphicsWidget15geometryChangedEv))fptr;
-  QObject::connect((QGraphicsWidget*)sender, SIGNAL(geometryChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv()));
-  return that;
-}
-extern "C"
-void QGraphicsWidget_SlotProxy_disconnect__ZN15QGraphicsWidget15geometryChangedEv(QGraphicsWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QGraphicsWidget_SlotProxy::slot_proxy_func__ZN15QGraphicsWidget13layoutChangedEv() {
   if (this->slot_func__ZN15QGraphicsWidget13layoutChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN15QGraphicsWidget13layoutChangedEv();
+    this->slot_func__ZN15QGraphicsWidget13layoutChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QGraphicsWidget_SlotProxy_connect__ZN15QGraphicsWidget13layoutChangedEv(QObject* sender, void* fptr){
+void* QGraphicsWidget_SlotProxy_connect__ZN15QGraphicsWidget13layoutChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsWidget_SlotProxy();
-  that->slot_func__ZN15QGraphicsWidget13layoutChangedEv = (decltype(that->slot_func__ZN15QGraphicsWidget13layoutChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsWidget13layoutChangedEv = (decltype(that->slot_func__ZN15QGraphicsWidget13layoutChangedEv))ffifptr;
   QObject::connect((QGraphicsWidget*)sender, SIGNAL(layoutChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsWidget13layoutChangedEv()));
   return that;
 }
 extern "C"
 void QGraphicsWidget_SlotProxy_disconnect__ZN15QGraphicsWidget13layoutChangedEv(QGraphicsWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QGraphicsWidget_SlotProxy::slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv() {
+  if (this->slot_func__ZN15QGraphicsWidget15geometryChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QGraphicsWidget15geometryChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QGraphicsWidget_SlotProxy_connect__ZN15QGraphicsWidget15geometryChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QGraphicsWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QGraphicsWidget15geometryChangedEv = (decltype(that->slot_func__ZN15QGraphicsWidget15geometryChangedEv))ffifptr;
+  QObject::connect((QGraphicsWidget*)sender, SIGNAL(geometryChanged()), that, SLOT(slot_proxy_func__ZN15QGraphicsWidget15geometryChangedEv()));
+  return that;
+}
+extern "C"
+void QGraphicsWidget_SlotProxy_disconnect__ZN15QGraphicsWidget15geometryChangedEv(QGraphicsWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

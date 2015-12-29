@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qaccessibleplugin.h
 // dst-file: /src/gui/qaccessibleplugin.cxx
 //
@@ -31,10 +31,11 @@ int QAccessiblePlugin_Class_Size()
 // QAccessiblePlugin_SlotProxy here
 class QAccessiblePlugin_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAccessiblePlugin_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qaccessibleplugin.moc"
 

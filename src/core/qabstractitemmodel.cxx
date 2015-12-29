@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -193,10 +193,11 @@ int QAbstractListModel_Class_Size()
 // QAbstractTableModel_SlotProxy here
 class QAbstractTableModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractTableModel_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -209,7 +210,7 @@ extern "C" {
 // QAbstractItemModel_SlotProxy here
 class QAbstractItemModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractItemModel_SlotProxy():QObject(){}
 
@@ -217,7 +218,8 @@ public slots:
   // headerDataChanged(Qt::Orientation, int, int)
   void slot_proxy_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(Qt::Orientation arg0, int arg1, int arg2);
 public:
-  void (*slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii)(Qt::Orientation arg0, int arg1, int arg2) = NULL;
+  void (*slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii)(void* rsfptr, Qt::Orientation arg0, int arg1, int arg2) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -230,13 +232,14 @@ extern "C" {
 void QAbstractItemModel_SlotProxy::slot_proxy_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(Qt::Orientation arg0, int arg1, int arg2) {
   if (this->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii != NULL) {
     // do smth...
-    this->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(arg0, arg1, arg2);
+    this->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(this->rsfptr, arg0, arg1, arg2);
   }
 }
 extern "C"
-void* QAbstractItemModel_SlotProxy_connect__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(QObject* sender, void* fptr){
+void* QAbstractItemModel_SlotProxy_connect__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractItemModel_SlotProxy();
-  that->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii = (decltype(that->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii = (decltype(that->slot_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii))ffifptr;
   QObject::connect((QAbstractItemModel*)sender, SIGNAL(headerDataChanged(Qt::Orientation, int, int)), that, SLOT(slot_proxy_func__ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii(Qt::Orientation arg0, int arg1, int arg2)));
   return that;
 }
@@ -249,10 +252,11 @@ void QAbstractItemModel_SlotProxy_disconnect__ZN18QAbstractItemModel17headerData
 // QAbstractListModel_SlotProxy here
 class QAbstractListModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractListModel_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qabstractitemmodel.moc"
 

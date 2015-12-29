@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -102,10 +102,11 @@ QString* demth_ZN5QFile13symLinkTargetERK7QString(void *that, const QString & fi
 // QFile_SlotProxy here
 class QFile_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QFile_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qfile.moc"
 

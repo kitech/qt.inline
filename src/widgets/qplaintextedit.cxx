@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qplaintextedit.h
 // dst-file: /src/widgets/qplaintextedit.cxx
 //
@@ -125,10 +125,11 @@ bool demth_ZNK14QPlainTextEdit17isUndoRedoEnabledEv(void *that)
 // QPlainTextDocumentLayout_SlotProxy here
 class QPlainTextDocumentLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QPlainTextDocumentLayout_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -141,55 +142,56 @@ extern "C" {
 // QPlainTextEdit_SlotProxy here
 class QPlainTextEdit_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QPlainTextEdit_SlotProxy():QObject(){}
 
 public slots:
-  // textChanged()
-  void slot_proxy_func__ZN14QPlainTextEdit11textChangedEv();
+  // blockCountChanged(int)
+  void slot_proxy_func__ZN14QPlainTextEdit17blockCountChangedEi(int arg0);
 public:
-  void (*slot_func__ZN14QPlainTextEdit11textChangedEv)() = NULL;
+  void (*slot_func__ZN14QPlainTextEdit17blockCountChangedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // undoAvailable(_Bool)
   void slot_proxy_func__ZN14QPlainTextEdit13undoAvailableEb(bool arg0);
 public:
-  void (*slot_func__ZN14QPlainTextEdit13undoAvailableEb)(bool arg0) = NULL;
-public slots:
-  // redoAvailable(_Bool)
-  void slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN14QPlainTextEdit13redoAvailableEb)(bool arg0) = NULL;
-public slots:
-  // copyAvailable(_Bool)
-  void slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN14QPlainTextEdit13copyAvailableEb)(bool arg0) = NULL;
+  void (*slot_func__ZN14QPlainTextEdit13undoAvailableEb)(void* rsfptr, bool arg0) = NULL;
 public slots:
   // selectionChanged()
   void slot_proxy_func__ZN14QPlainTextEdit16selectionChangedEv();
 public:
-  void (*slot_func__ZN14QPlainTextEdit16selectionChangedEv)() = NULL;
+  void (*slot_func__ZN14QPlainTextEdit16selectionChangedEv)(void* rsfptr) = NULL;
 public slots:
-  // cursorPositionChanged()
-  void slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv();
+  // redoAvailable(_Bool)
+  void slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0);
 public:
-  void (*slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv)() = NULL;
-public slots:
-  // updateRequest(const class QRect &, int)
-  void slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1);
-public:
-  void (*slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti)(const QRect & arg0, int arg1) = NULL;
-public slots:
-  // blockCountChanged(int)
-  void slot_proxy_func__ZN14QPlainTextEdit17blockCountChangedEi(int arg0);
-public:
-  void (*slot_func__ZN14QPlainTextEdit17blockCountChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN14QPlainTextEdit13redoAvailableEb)(void* rsfptr, bool arg0) = NULL;
 public slots:
   // modificationChanged(_Bool)
   void slot_proxy_func__ZN14QPlainTextEdit19modificationChangedEb(bool arg0);
 public:
-  void (*slot_func__ZN14QPlainTextEdit19modificationChangedEb)(bool arg0) = NULL;
+  void (*slot_func__ZN14QPlainTextEdit19modificationChangedEb)(void* rsfptr, bool arg0) = NULL;
+public slots:
+  // updateRequest(const class QRect &, int)
+  void slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1);
+public:
+  void (*slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti)(void* rsfptr, const QRect & arg0, int arg1) = NULL;
+public slots:
+  // textChanged()
+  void slot_proxy_func__ZN14QPlainTextEdit11textChangedEv();
+public:
+  void (*slot_func__ZN14QPlainTextEdit11textChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // cursorPositionChanged()
+  void slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv();
+public:
+  void (*slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // copyAvailable(_Bool)
+  void slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0);
+public:
+  void (*slot_func__ZN14QPlainTextEdit13copyAvailableEb)(void* rsfptr, bool arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qplaintextedit.moc"
 
@@ -200,149 +202,17 @@ extern "C" {
   }
 };
 
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit11textChangedEv() {
-  if (this->slot_func__ZN14QPlainTextEdit11textChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit11textChangedEv();
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit11textChangedEv(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit11textChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit11textChangedEv))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(textChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit11textChangedEv()));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit11textChangedEv(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13undoAvailableEb(bool arg0) {
-  if (this->slot_func__ZN14QPlainTextEdit13undoAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit13undoAvailableEb(arg0);
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13undoAvailableEb(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit13undoAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13undoAvailableEb))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(undoAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13undoAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13undoAvailableEb(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0) {
-  if (this->slot_func__ZN14QPlainTextEdit13redoAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit13redoAvailableEb(arg0);
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13redoAvailableEb(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit13redoAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13redoAvailableEb))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(redoAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13redoAvailableEb(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0) {
-  if (this->slot_func__ZN14QPlainTextEdit13copyAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit13copyAvailableEb(arg0);
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13copyAvailableEb(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit13copyAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13copyAvailableEb))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(copyAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13copyAvailableEb(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit16selectionChangedEv() {
-  if (this->slot_func__ZN14QPlainTextEdit16selectionChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit16selectionChangedEv();
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit16selectionChangedEv(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit16selectionChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit16selectionChangedEv))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(selectionChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit16selectionChangedEv()));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit16selectionChangedEv(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv() {
-  if (this->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv();
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit21cursorPositionChangedEv(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(cursorPositionChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv()));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit21cursorPositionChangedEv(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1) {
-  if (this->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti != NULL) {
-    // do smth...
-    this->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(arg0, arg1);
-  }
-}
-extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13updateRequestERK5QRecti(QObject* sender, void* fptr){
-  auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti = (decltype(that->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti))fptr;
-  QObject::connect((QPlainTextEdit*)sender, SIGNAL(updateRequest(const class QRect &, int)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1)));
-  return that;
-}
-extern "C"
-void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13updateRequestERK5QRecti(QPlainTextEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit17blockCountChangedEi(int arg0) {
   if (this->slot_func__ZN14QPlainTextEdit17blockCountChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN14QPlainTextEdit17blockCountChangedEi(arg0);
+    this->slot_func__ZN14QPlainTextEdit17blockCountChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit17blockCountChangedEi(QObject* sender, void* fptr){
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit17blockCountChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit17blockCountChangedEi = (decltype(that->slot_func__ZN14QPlainTextEdit17blockCountChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit17blockCountChangedEi = (decltype(that->slot_func__ZN14QPlainTextEdit17blockCountChangedEi))ffifptr;
   QObject::connect((QPlainTextEdit*)sender, SIGNAL(blockCountChanged(int)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit17blockCountChangedEi(int arg0)));
   return that;
 }
@@ -352,21 +222,162 @@ void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit17blockCountChangedE
   delete that;
 }
 
-void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit19modificationChangedEb(bool arg0) {
-  if (this->slot_func__ZN14QPlainTextEdit19modificationChangedEb != NULL) {
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13undoAvailableEb(bool arg0) {
+  if (this->slot_func__ZN14QPlainTextEdit13undoAvailableEb != NULL) {
     // do smth...
-    this->slot_func__ZN14QPlainTextEdit19modificationChangedEb(arg0);
+    this->slot_func__ZN14QPlainTextEdit13undoAvailableEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit19modificationChangedEb(QObject* sender, void* fptr){
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13undoAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QPlainTextEdit_SlotProxy();
-  that->slot_func__ZN14QPlainTextEdit19modificationChangedEb = (decltype(that->slot_func__ZN14QPlainTextEdit19modificationChangedEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit13undoAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13undoAvailableEb))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(undoAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13undoAvailableEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13undoAvailableEb(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit16selectionChangedEv() {
+  if (this->slot_func__ZN14QPlainTextEdit16selectionChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit16selectionChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit16selectionChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit16selectionChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit16selectionChangedEv))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(selectionChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit16selectionChangedEv()));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit16selectionChangedEv(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0) {
+  if (this->slot_func__ZN14QPlainTextEdit13redoAvailableEb != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit13redoAvailableEb(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13redoAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit13redoAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13redoAvailableEb))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(redoAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13redoAvailableEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13redoAvailableEb(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit19modificationChangedEb(bool arg0) {
+  if (this->slot_func__ZN14QPlainTextEdit19modificationChangedEb != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit19modificationChangedEb(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit19modificationChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit19modificationChangedEb = (decltype(that->slot_func__ZN14QPlainTextEdit19modificationChangedEb))ffifptr;
   QObject::connect((QPlainTextEdit*)sender, SIGNAL(modificationChanged(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit19modificationChangedEb(bool arg0)));
   return that;
 }
 extern "C"
 void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit19modificationChangedEb(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1) {
+  if (this->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(this->rsfptr, arg0, arg1);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13updateRequestERK5QRecti(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti = (decltype(that->slot_func__ZN14QPlainTextEdit13updateRequestERK5QRecti))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(updateRequest(const class QRect &, int)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13updateRequestERK5QRecti(const QRect & arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13updateRequestERK5QRecti(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit11textChangedEv() {
+  if (this->slot_func__ZN14QPlainTextEdit11textChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit11textChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit11textChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit11textChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit11textChangedEv))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(textChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit11textChangedEv()));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit11textChangedEv(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv() {
+  if (this->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit21cursorPositionChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv = (decltype(that->slot_func__ZN14QPlainTextEdit21cursorPositionChangedEv))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(cursorPositionChanged()), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit21cursorPositionChangedEv()));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit21cursorPositionChangedEv(QPlainTextEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QPlainTextEdit_SlotProxy::slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0) {
+  if (this->slot_func__ZN14QPlainTextEdit13copyAvailableEb != NULL) {
+    // do smth...
+    this->slot_func__ZN14QPlainTextEdit13copyAvailableEb(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QPlainTextEdit_SlotProxy_connect__ZN14QPlainTextEdit13copyAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QPlainTextEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QPlainTextEdit13copyAvailableEb = (decltype(that->slot_func__ZN14QPlainTextEdit13copyAvailableEb))ffifptr;
+  QObject::connect((QPlainTextEdit*)sender, SIGNAL(copyAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN14QPlainTextEdit13copyAvailableEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QPlainTextEdit_SlotProxy_disconnect__ZN14QPlainTextEdit13copyAvailableEb(QPlainTextEdit_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

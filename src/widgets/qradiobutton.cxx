@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qradiobutton.h
 // dst-file: /src/widgets/qradiobutton.cxx
 //
@@ -54,10 +54,11 @@ QRadioButton* dector_ZN12QRadioButtonC1ERK7QStringP7QWidget(const QString & text
 // QRadioButton_SlotProxy here
 class QRadioButton_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QRadioButton_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qradiobutton.moc"
 

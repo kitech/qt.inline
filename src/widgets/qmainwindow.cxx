@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
@@ -46,20 +46,21 @@ void dedtor_ZN11QMainWindowD0Ev(QMainWindow* that)
 // QMainWindow_SlotProxy here
 class QMainWindow_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMainWindow_SlotProxy():QObject(){}
 
 public slots:
-  // iconSizeChanged(const class QSize &)
-  void slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0);
-public:
-  void (*slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize)(const QSize & arg0) = NULL;
-public slots:
   // toolButtonStyleChanged(Qt::ToolButtonStyle)
   void slot_proxy_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0);
 public:
-  void (*slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE)(Qt::ToolButtonStyle arg0) = NULL;
+  void (*slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE)(void* rsfptr, Qt::ToolButtonStyle arg0) = NULL;
+public slots:
+  // iconSizeChanged(const class QSize &)
+  void slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0);
+public:
+  void (*slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize)(void* rsfptr, const QSize & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmainwindow.moc"
 
@@ -70,40 +71,42 @@ extern "C" {
   }
 };
 
-void QMainWindow_SlotProxy::slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0) {
-  if (this->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize != NULL) {
-    // do smth...
-    this->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize(arg0);
-  }
-}
-extern "C"
-void* QMainWindow_SlotProxy_connect__ZN11QMainWindow15iconSizeChangedERK5QSize(QObject* sender, void* fptr){
-  auto that = new QMainWindow_SlotProxy();
-  that->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize = (decltype(that->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize))fptr;
-  QObject::connect((QMainWindow*)sender, SIGNAL(iconSizeChanged(const class QSize &)), that, SLOT(slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0)));
-  return that;
-}
-extern "C"
-void QMainWindow_SlotProxy_disconnect__ZN11QMainWindow15iconSizeChangedERK5QSize(QMainWindow_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QMainWindow_SlotProxy::slot_proxy_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0) {
   if (this->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE != NULL) {
     // do smth...
-    this->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(arg0);
+    this->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMainWindow_SlotProxy_connect__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(QObject* sender, void* fptr){
+void* QMainWindow_SlotProxy_connect__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMainWindow_SlotProxy();
-  that->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE = (decltype(that->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE = (decltype(that->slot_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE))ffifptr;
   QObject::connect((QMainWindow*)sender, SIGNAL(toolButtonStyleChanged(Qt::ToolButtonStyle)), that, SLOT(slot_proxy_func__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0)));
   return that;
 }
 extern "C"
 void QMainWindow_SlotProxy_disconnect__ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(QMainWindow_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QMainWindow_SlotProxy::slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0) {
+  if (this->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize != NULL) {
+    // do smth...
+    this->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QMainWindow_SlotProxy_connect__ZN11QMainWindow15iconSizeChangedERK5QSize(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QMainWindow_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize = (decltype(that->slot_func__ZN11QMainWindow15iconSizeChangedERK5QSize))ffifptr;
+  QObject::connect((QMainWindow*)sender, SIGNAL(iconSizeChanged(const class QSize &)), that, SLOT(slot_proxy_func__ZN11QMainWindow15iconSizeChangedERK5QSize(const QSize & arg0)));
+  return that;
+}
+extern "C"
+void QMainWindow_SlotProxy_disconnect__ZN11QMainWindow15iconSizeChangedERK5QSize(QMainWindow_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

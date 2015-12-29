@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qfiledialog.h
 // dst-file: /src/widgets/qfiledialog.cxx
 //
@@ -61,50 +61,51 @@ void demth_ZN11QFileDialog12setDirectoryERK4QDir(void *that, const QDir & direct
 // QFileDialog_SlotProxy here
 class QFileDialog_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QFileDialog_SlotProxy():QObject(){}
 
 public slots:
+  // directoryUrlEntered(const class QUrl &)
+  void slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0);
+public:
+  void (*slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
+public slots:
   // fileSelected(const class QString &)
   void slot_proxy_func__ZN11QFileDialog12fileSelectedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN11QFileDialog12fileSelectedERK7QString)(const QString & arg0) = NULL;
-public slots:
-  // filesSelected(const class QStringList &)
-  void slot_proxy_func__ZN11QFileDialog13filesSelectedERK11QStringList(const QStringList & arg0);
-public:
-  void (*slot_func__ZN11QFileDialog13filesSelectedERK11QStringList)(const QStringList & arg0) = NULL;
-public slots:
-  // currentChanged(const class QString &)
-  void slot_proxy_func__ZN11QFileDialog14currentChangedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN11QFileDialog14currentChangedERK7QString)(const QString & arg0) = NULL;
-public slots:
-  // directoryEntered(const class QString &)
-  void slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN11QFileDialog16directoryEnteredERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN11QFileDialog12fileSelectedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // urlSelected(const class QUrl &)
   void slot_proxy_func__ZN11QFileDialog11urlSelectedERK4QUrl(const QUrl & arg0);
 public:
-  void (*slot_func__ZN11QFileDialog11urlSelectedERK4QUrl)(const QUrl & arg0) = NULL;
+  void (*slot_func__ZN11QFileDialog11urlSelectedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
+public slots:
+  // directoryEntered(const class QString &)
+  void slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN11QFileDialog16directoryEnteredERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // currentUrlChanged(const class QUrl &)
   void slot_proxy_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(const QUrl & arg0);
 public:
-  void (*slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl)(const QUrl & arg0) = NULL;
+  void (*slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
 public slots:
-  // directoryUrlEntered(const class QUrl &)
-  void slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0);
+  // filesSelected(const class QStringList &)
+  void slot_proxy_func__ZN11QFileDialog13filesSelectedERK11QStringList(const QStringList & arg0);
 public:
-  void (*slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl)(const QUrl & arg0) = NULL;
+  void (*slot_func__ZN11QFileDialog13filesSelectedERK11QStringList)(void* rsfptr, const QStringList & arg0) = NULL;
+public slots:
+  // currentChanged(const class QString &)
+  void slot_proxy_func__ZN11QFileDialog14currentChangedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN11QFileDialog14currentChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // filterSelected(const class QString &)
   void slot_proxy_func__ZN11QFileDialog14filterSelectedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN11QFileDialog14filterSelectedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN11QFileDialog14filterSelectedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qfiledialog.moc"
 
@@ -115,16 +116,37 @@ extern "C" {
   }
 };
 
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog12fileSelectedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN11QFileDialog12fileSelectedERK7QString != NULL) {
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0) {
+  if (this->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl != NULL) {
     // do smth...
-    this->slot_func__ZN11QFileDialog12fileSelectedERK7QString(arg0);
+    this->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog12fileSelectedERK7QString(QObject* sender, void* fptr){
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog12fileSelectedERK7QString = (decltype(that->slot_func__ZN11QFileDialog12fileSelectedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl))ffifptr;
+  QObject::connect((QFileDialog*)sender, SIGNAL(directoryUrlEntered(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0)));
+  return that;
+}
+extern "C"
+void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(QFileDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog12fileSelectedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN11QFileDialog12fileSelectedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFileDialog12fileSelectedERK7QString(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog12fileSelectedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QFileDialog_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog12fileSelectedERK7QString = (decltype(that->slot_func__ZN11QFileDialog12fileSelectedERK7QString))ffifptr;
   QObject::connect((QFileDialog*)sender, SIGNAL(fileSelected(const class QString &)), that, SLOT(slot_proxy_func__ZN11QFileDialog12fileSelectedERK7QString(const QString & arg0)));
   return that;
 }
@@ -134,16 +156,77 @@ void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog12fileSelectedERK7QString(
   delete that;
 }
 
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog13filesSelectedERK11QStringList(const QStringList & arg0) {
-  if (this->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList != NULL) {
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog11urlSelectedERK4QUrl(const QUrl & arg0) {
+  if (this->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl != NULL) {
     // do smth...
-    this->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList(arg0);
+    this->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog13filesSelectedERK11QStringList(QObject* sender, void* fptr){
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog11urlSelectedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList = (decltype(that->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl))ffifptr;
+  QObject::connect((QFileDialog*)sender, SIGNAL(urlSelected(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog11urlSelectedERK4QUrl(const QUrl & arg0)));
+  return that;
+}
+extern "C"
+void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog11urlSelectedERK4QUrl(QFileDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN11QFileDialog16directoryEnteredERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFileDialog16directoryEnteredERK7QString(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog16directoryEnteredERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QFileDialog_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog16directoryEnteredERK7QString = (decltype(that->slot_func__ZN11QFileDialog16directoryEnteredERK7QString))ffifptr;
+  QObject::connect((QFileDialog*)sender, SIGNAL(directoryEntered(const class QString &)), that, SLOT(slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog16directoryEnteredERK7QString(QFileDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(const QUrl & arg0) {
+  if (this->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog17currentUrlChangedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QFileDialog_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl))ffifptr;
+  QObject::connect((QFileDialog*)sender, SIGNAL(currentUrlChanged(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(const QUrl & arg0)));
+  return that;
+}
+extern "C"
+void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog17currentUrlChangedERK4QUrl(QFileDialog_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog13filesSelectedERK11QStringList(const QStringList & arg0) {
+  if (this->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList != NULL) {
+    // do smth...
+    this->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog13filesSelectedERK11QStringList(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QFileDialog_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList = (decltype(that->slot_func__ZN11QFileDialog13filesSelectedERK11QStringList))ffifptr;
   QObject::connect((QFileDialog*)sender, SIGNAL(filesSelected(const class QStringList &)), that, SLOT(slot_proxy_func__ZN11QFileDialog13filesSelectedERK11QStringList(const QStringList & arg0)));
   return that;
 }
@@ -156,13 +239,14 @@ void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog13filesSelectedERK11QStrin
 void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog14currentChangedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN11QFileDialog14currentChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN11QFileDialog14currentChangedERK7QString(arg0);
+    this->slot_func__ZN11QFileDialog14currentChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog14currentChangedERK7QString(QObject* sender, void* fptr){
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog14currentChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog14currentChangedERK7QString = (decltype(that->slot_func__ZN11QFileDialog14currentChangedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog14currentChangedERK7QString = (decltype(that->slot_func__ZN11QFileDialog14currentChangedERK7QString))ffifptr;
   QObject::connect((QFileDialog*)sender, SIGNAL(currentChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN11QFileDialog14currentChangedERK7QString(const QString & arg0)));
   return that;
 }
@@ -172,92 +256,17 @@ void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog14currentChangedERK7QStrin
   delete that;
 }
 
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN11QFileDialog16directoryEnteredERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN11QFileDialog16directoryEnteredERK7QString(arg0);
-  }
-}
-extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog16directoryEnteredERK7QString(QObject* sender, void* fptr){
-  auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog16directoryEnteredERK7QString = (decltype(that->slot_func__ZN11QFileDialog16directoryEnteredERK7QString))fptr;
-  QObject::connect((QFileDialog*)sender, SIGNAL(directoryEntered(const class QString &)), that, SLOT(slot_proxy_func__ZN11QFileDialog16directoryEnteredERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog16directoryEnteredERK7QString(QFileDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog11urlSelectedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl(arg0);
-  }
-}
-extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog11urlSelectedERK4QUrl(QObject* sender, void* fptr){
-  auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog11urlSelectedERK4QUrl))fptr;
-  QObject::connect((QFileDialog*)sender, SIGNAL(urlSelected(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog11urlSelectedERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog11urlSelectedERK4QUrl(QFileDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(arg0);
-  }
-}
-extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog17currentUrlChangedERK4QUrl(QObject* sender, void* fptr){
-  auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog17currentUrlChangedERK4QUrl))fptr;
-  QObject::connect((QFileDialog*)sender, SIGNAL(currentUrlChanged(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog17currentUrlChangedERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog17currentUrlChangedERK4QUrl(QFileDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(arg0);
-  }
-}
-extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(QObject* sender, void* fptr){
-  auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl = (decltype(that->slot_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl))fptr;
-  QObject::connect((QFileDialog*)sender, SIGNAL(directoryUrlEntered(const class QUrl &)), that, SLOT(slot_proxy_func__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QFileDialog_SlotProxy_disconnect__ZN11QFileDialog19directoryUrlEnteredERK4QUrl(QFileDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QFileDialog_SlotProxy::slot_proxy_func__ZN11QFileDialog14filterSelectedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN11QFileDialog14filterSelectedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN11QFileDialog14filterSelectedERK7QString(arg0);
+    this->slot_func__ZN11QFileDialog14filterSelectedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QFileDialog_SlotProxy_connect__ZN11QFileDialog14filterSelectedERK7QString(QObject* sender, void* fptr){
+void* QFileDialog_SlotProxy_connect__ZN11QFileDialog14filterSelectedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QFileDialog_SlotProxy();
-  that->slot_func__ZN11QFileDialog14filterSelectedERK7QString = (decltype(that->slot_func__ZN11QFileDialog14filterSelectedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QFileDialog14filterSelectedERK7QString = (decltype(that->slot_func__ZN11QFileDialog14filterSelectedERK7QString))ffifptr;
   QObject::connect((QFileDialog*)sender, SIGNAL(filterSelected(const class QString &)), that, SLOT(slot_proxy_func__ZN11QFileDialog14filterSelectedERK7QString(const QString & arg0)));
   return that;
 }

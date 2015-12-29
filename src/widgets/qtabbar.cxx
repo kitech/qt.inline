@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qtabbar.h
 // dst-file: /src/widgets/qtabbar.cxx
 //
@@ -46,35 +46,36 @@ void dedtor_ZN7QTabBarD0Ev(QTabBar* that)
 // QTabBar_SlotProxy here
 class QTabBar_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTabBar_SlotProxy():QObject(){}
 
 public slots:
-  // currentChanged(int)
-  void slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar14currentChangedEi)(int arg0) = NULL;
-public slots:
-  // tabCloseRequested(int)
-  void slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar17tabCloseRequestedEi)(int arg0) = NULL;
-public slots:
-  // tabMoved(int, int)
-  void slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1);
-public:
-  void (*slot_func__ZN7QTabBar8tabMovedEii)(int arg0, int arg1) = NULL;
-public slots:
   // tabBarClicked(int)
   void slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0);
 public:
-  void (*slot_func__ZN7QTabBar13tabBarClickedEi)(int arg0) = NULL;
+  void (*slot_func__ZN7QTabBar13tabBarClickedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // tabBarDoubleClicked(int)
   void slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0);
 public:
-  void (*slot_func__ZN7QTabBar19tabBarDoubleClickedEi)(int arg0) = NULL;
+  void (*slot_func__ZN7QTabBar19tabBarDoubleClickedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // tabCloseRequested(int)
+  void slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0);
+public:
+  void (*slot_func__ZN7QTabBar17tabCloseRequestedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // tabMoved(int, int)
+  void slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1);
+public:
+  void (*slot_func__ZN7QTabBar8tabMovedEii)(void* rsfptr, int arg0, int arg1) = NULL;
+public slots:
+  // currentChanged(int)
+  void slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0);
+public:
+  void (*slot_func__ZN7QTabBar14currentChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qtabbar.moc"
 
@@ -85,73 +86,17 @@ extern "C" {
   }
 };
 
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar14currentChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar14currentChangedEi(arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar14currentChangedEi(QObject* sender, void* fptr){
-  auto that = new QTabBar_SlotProxy();
-  that->slot_func__ZN7QTabBar14currentChangedEi = (decltype(that->slot_func__ZN7QTabBar14currentChangedEi))fptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(currentChanged(int)), that, SLOT(slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar14currentChangedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar17tabCloseRequestedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar17tabCloseRequestedEi(arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar17tabCloseRequestedEi(QObject* sender, void* fptr){
-  auto that = new QTabBar_SlotProxy();
-  that->slot_func__ZN7QTabBar17tabCloseRequestedEi = (decltype(that->slot_func__ZN7QTabBar17tabCloseRequestedEi))fptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabCloseRequested(int)), that, SLOT(slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar17tabCloseRequestedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1) {
-  if (this->slot_func__ZN7QTabBar8tabMovedEii != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar8tabMovedEii(arg0, arg1);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar8tabMovedEii(QObject* sender, void* fptr){
-  auto that = new QTabBar_SlotProxy();
-  that->slot_func__ZN7QTabBar8tabMovedEii = (decltype(that->slot_func__ZN7QTabBar8tabMovedEii))fptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabMoved(int, int)), that, SLOT(slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar8tabMovedEii(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0) {
   if (this->slot_func__ZN7QTabBar13tabBarClickedEi != NULL) {
     // do smth...
-    this->slot_func__ZN7QTabBar13tabBarClickedEi(arg0);
+    this->slot_func__ZN7QTabBar13tabBarClickedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar13tabBarClickedEi(QObject* sender, void* fptr){
+void* QTabBar_SlotProxy_connect__ZN7QTabBar13tabBarClickedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTabBar_SlotProxy();
-  that->slot_func__ZN7QTabBar13tabBarClickedEi = (decltype(that->slot_func__ZN7QTabBar13tabBarClickedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QTabBar13tabBarClickedEi = (decltype(that->slot_func__ZN7QTabBar13tabBarClickedEi))ffifptr;
   QObject::connect((QTabBar*)sender, SIGNAL(tabBarClicked(int)), that, SLOT(slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0)));
   return that;
 }
@@ -164,18 +109,79 @@ void QTabBar_SlotProxy_disconnect__ZN7QTabBar13tabBarClickedEi(QTabBar_SlotProxy
 void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0) {
   if (this->slot_func__ZN7QTabBar19tabBarDoubleClickedEi != NULL) {
     // do smth...
-    this->slot_func__ZN7QTabBar19tabBarDoubleClickedEi(arg0);
+    this->slot_func__ZN7QTabBar19tabBarDoubleClickedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar19tabBarDoubleClickedEi(QObject* sender, void* fptr){
+void* QTabBar_SlotProxy_connect__ZN7QTabBar19tabBarDoubleClickedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTabBar_SlotProxy();
-  that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi = (decltype(that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi = (decltype(that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi))ffifptr;
   QObject::connect((QTabBar*)sender, SIGNAL(tabBarDoubleClicked(int)), that, SLOT(slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0)));
   return that;
 }
 extern "C"
 void QTabBar_SlotProxy_disconnect__ZN7QTabBar19tabBarDoubleClickedEi(QTabBar_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0) {
+  if (this->slot_func__ZN7QTabBar17tabCloseRequestedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN7QTabBar17tabCloseRequestedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QTabBar_SlotProxy_connect__ZN7QTabBar17tabCloseRequestedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QTabBar_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QTabBar17tabCloseRequestedEi = (decltype(that->slot_func__ZN7QTabBar17tabCloseRequestedEi))ffifptr;
+  QObject::connect((QTabBar*)sender, SIGNAL(tabCloseRequested(int)), that, SLOT(slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QTabBar_SlotProxy_disconnect__ZN7QTabBar17tabCloseRequestedEi(QTabBar_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1) {
+  if (this->slot_func__ZN7QTabBar8tabMovedEii != NULL) {
+    // do smth...
+    this->slot_func__ZN7QTabBar8tabMovedEii(this->rsfptr, arg0, arg1);
+  }
+}
+extern "C"
+void* QTabBar_SlotProxy_connect__ZN7QTabBar8tabMovedEii(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QTabBar_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QTabBar8tabMovedEii = (decltype(that->slot_func__ZN7QTabBar8tabMovedEii))ffifptr;
+  QObject::connect((QTabBar*)sender, SIGNAL(tabMoved(int, int)), that, SLOT(slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QTabBar_SlotProxy_disconnect__ZN7QTabBar8tabMovedEii(QTabBar_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0) {
+  if (this->slot_func__ZN7QTabBar14currentChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN7QTabBar14currentChangedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QTabBar_SlotProxy_connect__ZN7QTabBar14currentChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QTabBar_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QTabBar14currentChangedEi = (decltype(that->slot_func__ZN7QTabBar14currentChangedEi))ffifptr;
+  QObject::connect((QTabBar*)sender, SIGNAL(currentChanged(int)), that, SLOT(slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QTabBar_SlotProxy_disconnect__ZN7QTabBar14currentChangedEi(QTabBar_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

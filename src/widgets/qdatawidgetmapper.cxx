@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qdatawidgetmapper.h
 // dst-file: /src/widgets/qdatawidgetmapper.cxx
 //
@@ -46,7 +46,7 @@ QDataWidgetMapper* dector_ZN17QDataWidgetMapperC1EP7QObject(QObject * parent)
 // QDataWidgetMapper_SlotProxy here
 class QDataWidgetMapper_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QDataWidgetMapper_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // currentIndexChanged(int)
   void slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0);
 public:
-  void (*slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qdatawidgetmapper.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QDataWidgetMapper_SlotProxy::slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0) {
   if (this->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi(arg0);
+    this->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDataWidgetMapper_SlotProxy_connect__ZN17QDataWidgetMapper19currentIndexChangedEi(QObject* sender, void* fptr){
+void* QDataWidgetMapper_SlotProxy_connect__ZN17QDataWidgetMapper19currentIndexChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDataWidgetMapper_SlotProxy();
-  that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi = (decltype(that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi = (decltype(that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi))ffifptr;
   QObject::connect((QDataWidgetMapper*)sender, SIGNAL(currentIndexChanged(int)), that, SLOT(slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0)));
   return that;
 }

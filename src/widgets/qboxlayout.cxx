@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -102,10 +102,11 @@ void dedtor_ZN11QVBoxLayoutD0Ev(QVBoxLayout* that)
 // QHBoxLayout_SlotProxy here
 class QHBoxLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QHBoxLayout_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -118,10 +119,11 @@ extern "C" {
 // QBoxLayout_SlotProxy here
 class QBoxLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QBoxLayout_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -134,10 +136,11 @@ extern "C" {
 // QVBoxLayout_SlotProxy here
 class QVBoxLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QVBoxLayout_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qboxlayout.moc"
 

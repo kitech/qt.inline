@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qapplication.h
 // dst-file: /src/widgets/qapplication.cxx
 //
@@ -60,7 +60,7 @@ QWidget * demth_ZN12QApplication10topLevelAtEii(void *that, int x, int y)
 // QApplication_SlotProxy here
 class QApplication_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QApplication_SlotProxy():QObject(){}
 
@@ -68,7 +68,8 @@ public slots:
   // focusChanged(class QWidget *, class QWidget *)
   void slot_proxy_func__ZN12QApplication12focusChangedEP7QWidgetS1_(QWidget * arg0, QWidget * arg1);
 public:
-  void (*slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_)(QWidget * arg0, QWidget * arg1) = NULL;
+  void (*slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_)(void* rsfptr, QWidget * arg0, QWidget * arg1) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qapplication.moc"
 
@@ -82,13 +83,14 @@ extern "C" {
 void QApplication_SlotProxy::slot_proxy_func__ZN12QApplication12focusChangedEP7QWidgetS1_(QWidget * arg0, QWidget * arg1) {
   if (this->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_ != NULL) {
     // do smth...
-    this->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_(arg0, arg1);
+    this->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_(this->rsfptr, arg0, arg1);
   }
 }
 extern "C"
-void* QApplication_SlotProxy_connect__ZN12QApplication12focusChangedEP7QWidgetS1_(QObject* sender, void* fptr){
+void* QApplication_SlotProxy_connect__ZN12QApplication12focusChangedEP7QWidgetS1_(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QApplication_SlotProxy();
-  that->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_ = (decltype(that->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_ = (decltype(that->slot_func__ZN12QApplication12focusChangedEP7QWidgetS1_))ffifptr;
   QObject::connect((QApplication*)sender, SIGNAL(focusChanged(class QWidget *, class QWidget *)), that, SLOT(slot_proxy_func__ZN12QApplication12focusChangedEP7QWidgetS1_(QWidget * arg0, QWidget * arg1)));
   return that;
 }

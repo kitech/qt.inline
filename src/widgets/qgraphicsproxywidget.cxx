@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgraphicsproxywidget.h
 // dst-file: /src/widgets/qgraphicsproxywidget.cxx
 //
@@ -46,10 +46,11 @@ QGraphicsProxyWidget* dector_ZN20QGraphicsProxyWidgetC1EP13QGraphicsItem6QFlagsI
 // QGraphicsProxyWidget_SlotProxy here
 class QGraphicsProxyWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsProxyWidget_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qgraphicsproxywidget.moc"
 

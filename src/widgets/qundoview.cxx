@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qundoview.h
 // dst-file: /src/widgets/qundoview.cxx
 //
@@ -62,10 +62,11 @@ QUndoView* dector_ZN9QUndoViewC1EP10QUndoStackP7QWidget(QUndoStack * stack, QWid
 // QUndoView_SlotProxy here
 class QUndoView_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QUndoView_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qundoview.moc"
 

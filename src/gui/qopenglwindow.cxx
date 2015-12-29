@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qopenglwindow.h
 // dst-file: /src/gui/qopenglwindow.cxx
 //
@@ -54,7 +54,7 @@ void dedtor_ZN13QOpenGLWindowD0Ev(QOpenGLWindow* that)
 // QOpenGLWindow_SlotProxy here
 class QOpenGLWindow_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOpenGLWindow_SlotProxy():QObject(){}
 
@@ -62,7 +62,8 @@ public slots:
   // frameSwapped()
   void slot_proxy_func__ZN13QOpenGLWindow12frameSwappedEv();
 public:
-  void (*slot_func__ZN13QOpenGLWindow12frameSwappedEv)() = NULL;
+  void (*slot_func__ZN13QOpenGLWindow12frameSwappedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qopenglwindow.moc"
 
@@ -76,13 +77,14 @@ extern "C" {
 void QOpenGLWindow_SlotProxy::slot_proxy_func__ZN13QOpenGLWindow12frameSwappedEv() {
   if (this->slot_func__ZN13QOpenGLWindow12frameSwappedEv != NULL) {
     // do smth...
-    this->slot_func__ZN13QOpenGLWindow12frameSwappedEv();
+    this->slot_func__ZN13QOpenGLWindow12frameSwappedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QOpenGLWindow_SlotProxy_connect__ZN13QOpenGLWindow12frameSwappedEv(QObject* sender, void* fptr){
+void* QOpenGLWindow_SlotProxy_connect__ZN13QOpenGLWindow12frameSwappedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QOpenGLWindow_SlotProxy();
-  that->slot_func__ZN13QOpenGLWindow12frameSwappedEv = (decltype(that->slot_func__ZN13QOpenGLWindow12frameSwappedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QOpenGLWindow12frameSwappedEv = (decltype(that->slot_func__ZN13QOpenGLWindow12frameSwappedEv))ffifptr;
   QObject::connect((QOpenGLWindow*)sender, SIGNAL(frameSwapped()), that, SLOT(slot_proxy_func__ZN13QOpenGLWindow12frameSwappedEv()));
   return that;
 }

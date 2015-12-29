@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
@@ -150,30 +150,31 @@ int QWidgetData_Class_Size()
 // QWidget_SlotProxy here
 class QWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QWidget_SlotProxy():QObject(){}
 
 public slots:
-  // windowTitleChanged(const class QString &)
-  void slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0);
+  // customContextMenuRequested(const class QPoint &)
+  void slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0);
 public:
-  void (*slot_func__ZN7QWidget18windowTitleChangedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint)(void* rsfptr, const QPoint & arg0) = NULL;
 public slots:
   // windowIconChanged(const class QIcon &)
   void slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0);
 public:
-  void (*slot_func__ZN7QWidget17windowIconChangedERK5QIcon)(const QIcon & arg0) = NULL;
+  void (*slot_func__ZN7QWidget17windowIconChangedERK5QIcon)(void* rsfptr, const QIcon & arg0) = NULL;
 public slots:
   // windowIconTextChanged(const class QString &)
   void slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN7QWidget21windowIconTextChangedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN7QWidget21windowIconTextChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
-  // customContextMenuRequested(const class QPoint &)
-  void slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0);
+  // windowTitleChanged(const class QString &)
+  void slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint)(const QPoint & arg0) = NULL;
+  void (*slot_func__ZN7QWidget18windowTitleChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qwidget.moc"
 
@@ -184,21 +185,22 @@ extern "C" {
   }
 };
 
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN7QWidget18windowTitleChangedERK7QString != NULL) {
+void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0) {
+  if (this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint != NULL) {
     // do smth...
-    this->slot_func__ZN7QWidget18windowTitleChangedERK7QString(arg0);
+    this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget18windowTitleChangedERK7QString(QObject* sender, void* fptr){
+void* QWidget_SlotProxy_connect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWidget_SlotProxy();
-  that->slot_func__ZN7QWidget18windowTitleChangedERK7QString = (decltype(that->slot_func__ZN7QWidget18windowTitleChangedERK7QString))fptr;
-  QObject::connect((QWidget*)sender, SIGNAL(windowTitleChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint = (decltype(that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint))ffifptr;
+  QObject::connect((QWidget*)sender, SIGNAL(customContextMenuRequested(const class QPoint &)), that, SLOT(slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0)));
   return that;
 }
 extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget18windowTitleChangedERK7QString(QWidget_SlotProxy* that) {
+void QWidget_SlotProxy_disconnect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -206,13 +208,14 @@ void QWidget_SlotProxy_disconnect__ZN7QWidget18windowTitleChangedERK7QString(QWi
 void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0) {
   if (this->slot_func__ZN7QWidget17windowIconChangedERK5QIcon != NULL) {
     // do smth...
-    this->slot_func__ZN7QWidget17windowIconChangedERK5QIcon(arg0);
+    this->slot_func__ZN7QWidget17windowIconChangedERK5QIcon(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget17windowIconChangedERK5QIcon(QObject* sender, void* fptr){
+void* QWidget_SlotProxy_connect__ZN7QWidget17windowIconChangedERK5QIcon(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWidget_SlotProxy();
-  that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon = (decltype(that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon = (decltype(that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon))ffifptr;
   QObject::connect((QWidget*)sender, SIGNAL(windowIconChanged(const class QIcon &)), that, SLOT(slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0)));
   return that;
 }
@@ -225,13 +228,14 @@ void QWidget_SlotProxy_disconnect__ZN7QWidget17windowIconChangedERK5QIcon(QWidge
 void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN7QWidget21windowIconTextChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN7QWidget21windowIconTextChangedERK7QString(arg0);
+    this->slot_func__ZN7QWidget21windowIconTextChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget21windowIconTextChangedERK7QString(QObject* sender, void* fptr){
+void* QWidget_SlotProxy_connect__ZN7QWidget21windowIconTextChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWidget_SlotProxy();
-  that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString = (decltype(that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString = (decltype(that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString))ffifptr;
   QObject::connect((QWidget*)sender, SIGNAL(windowIconTextChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0)));
   return that;
 }
@@ -241,21 +245,22 @@ void QWidget_SlotProxy_disconnect__ZN7QWidget21windowIconTextChangedERK7QString(
   delete that;
 }
 
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0) {
-  if (this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint != NULL) {
+void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN7QWidget18windowTitleChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(arg0);
+    this->slot_func__ZN7QWidget18windowTitleChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QObject* sender, void* fptr){
+void* QWidget_SlotProxy_connect__ZN7QWidget18windowTitleChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWidget_SlotProxy();
-  that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint = (decltype(that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint))fptr;
-  QObject::connect((QWidget*)sender, SIGNAL(customContextMenuRequested(const class QPoint &)), that, SLOT(slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWidget18windowTitleChangedERK7QString = (decltype(that->slot_func__ZN7QWidget18windowTitleChangedERK7QString))ffifptr;
+  QObject::connect((QWidget*)sender, SIGNAL(windowTitleChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0)));
   return that;
 }
 extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QWidget_SlotProxy* that) {
+void QWidget_SlotProxy_disconnect__ZN7QWidget18windowTitleChangedERK7QString(QWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

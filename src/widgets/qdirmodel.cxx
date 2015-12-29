@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qdirmodel.h
 // dst-file: /src/widgets/qdirmodel.cxx
 //
@@ -54,10 +54,11 @@ QDirModel* dector_ZN9QDirModelC1EP7QObject(QObject * parent)
 // QDirModel_SlotProxy here
 class QDirModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QDirModel_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qdirmodel.moc"
 

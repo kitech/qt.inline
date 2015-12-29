@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qstackedlayout.h
 // dst-file: /src/widgets/qstackedlayout.cxx
 //
@@ -62,7 +62,7 @@ QStackedLayout* dector_ZN14QStackedLayoutC1Ev()
 // QStackedLayout_SlotProxy here
 class QStackedLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QStackedLayout_SlotProxy():QObject(){}
 
@@ -70,12 +70,13 @@ public slots:
   // widgetRemoved(int)
   void slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0);
 public:
-  void (*slot_func__ZN14QStackedLayout13widgetRemovedEi)(int arg0) = NULL;
+  void (*slot_func__ZN14QStackedLayout13widgetRemovedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // currentChanged(int)
   void slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0);
 public:
-  void (*slot_func__ZN14QStackedLayout14currentChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN14QStackedLayout14currentChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qstackedlayout.moc"
 
@@ -89,13 +90,14 @@ extern "C" {
 void QStackedLayout_SlotProxy::slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0) {
   if (this->slot_func__ZN14QStackedLayout13widgetRemovedEi != NULL) {
     // do smth...
-    this->slot_func__ZN14QStackedLayout13widgetRemovedEi(arg0);
+    this->slot_func__ZN14QStackedLayout13widgetRemovedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout13widgetRemovedEi(QObject* sender, void* fptr){
+void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout13widgetRemovedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QStackedLayout_SlotProxy();
-  that->slot_func__ZN14QStackedLayout13widgetRemovedEi = (decltype(that->slot_func__ZN14QStackedLayout13widgetRemovedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QStackedLayout13widgetRemovedEi = (decltype(that->slot_func__ZN14QStackedLayout13widgetRemovedEi))ffifptr;
   QObject::connect((QStackedLayout*)sender, SIGNAL(widgetRemoved(int)), that, SLOT(slot_proxy_func__ZN14QStackedLayout13widgetRemovedEi(int arg0)));
   return that;
 }
@@ -108,13 +110,14 @@ void QStackedLayout_SlotProxy_disconnect__ZN14QStackedLayout13widgetRemovedEi(QS
 void QStackedLayout_SlotProxy::slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0) {
   if (this->slot_func__ZN14QStackedLayout14currentChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN14QStackedLayout14currentChangedEi(arg0);
+    this->slot_func__ZN14QStackedLayout14currentChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout14currentChangedEi(QObject* sender, void* fptr){
+void* QStackedLayout_SlotProxy_connect__ZN14QStackedLayout14currentChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QStackedLayout_SlotProxy();
-  that->slot_func__ZN14QStackedLayout14currentChangedEi = (decltype(that->slot_func__ZN14QStackedLayout14currentChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QStackedLayout14currentChangedEi = (decltype(that->slot_func__ZN14QStackedLayout14currentChangedEi))ffifptr;
   QObject::connect((QStackedLayout*)sender, SIGNAL(currentChanged(int)), that, SLOT(slot_proxy_func__ZN14QStackedLayout14currentChangedEi(int arg0)));
   return that;
 }

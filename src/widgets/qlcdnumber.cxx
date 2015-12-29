@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qlcdnumber.h
 // dst-file: /src/widgets/qlcdnumber.cxx
 //
@@ -54,7 +54,7 @@ QLCDNumber* dector_ZN10QLCDNumberC1EP7QWidget(QWidget * parent)
 // QLCDNumber_SlotProxy here
 class QLCDNumber_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QLCDNumber_SlotProxy():QObject(){}
 
@@ -62,7 +62,8 @@ public slots:
   // overflow()
   void slot_proxy_func__ZN10QLCDNumber8overflowEv();
 public:
-  void (*slot_func__ZN10QLCDNumber8overflowEv)() = NULL;
+  void (*slot_func__ZN10QLCDNumber8overflowEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qlcdnumber.moc"
 
@@ -76,13 +77,14 @@ extern "C" {
 void QLCDNumber_SlotProxy::slot_proxy_func__ZN10QLCDNumber8overflowEv() {
   if (this->slot_func__ZN10QLCDNumber8overflowEv != NULL) {
     // do smth...
-    this->slot_func__ZN10QLCDNumber8overflowEv();
+    this->slot_func__ZN10QLCDNumber8overflowEv(this->rsfptr);
   }
 }
 extern "C"
-void* QLCDNumber_SlotProxy_connect__ZN10QLCDNumber8overflowEv(QObject* sender, void* fptr){
+void* QLCDNumber_SlotProxy_connect__ZN10QLCDNumber8overflowEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLCDNumber_SlotProxy();
-  that->slot_func__ZN10QLCDNumber8overflowEv = (decltype(that->slot_func__ZN10QLCDNumber8overflowEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QLCDNumber8overflowEv = (decltype(that->slot_func__ZN10QLCDNumber8overflowEv))ffifptr;
   QObject::connect((QLCDNumber*)sender, SIGNAL(overflow()), that, SLOT(slot_proxy_func__ZN10QLCDNumber8overflowEv()));
   return that;
 }

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qabstractproxymodel.h
 // dst-file: /src/core/qabstractproxymodel.cxx
 //
@@ -31,10 +31,11 @@ int QAbstractProxyModel_Class_Size()
 // QAbstractProxyModel_SlotProxy here
 class QAbstractProxyModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractProxyModel_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qabstractproxymodel.moc"
 

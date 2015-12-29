@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -46,25 +46,26 @@ QDesktopWidget* dector_ZN14QDesktopWidgetC1Ev()
 // QDesktopWidget_SlotProxy here
 class QDesktopWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QDesktopWidget_SlotProxy():QObject(){}
 
 public slots:
+  // screenCountChanged(int)
+  void slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0);
+public:
+  void (*slot_func__ZN14QDesktopWidget18screenCountChangedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
   // resized(int)
   void slot_proxy_func__ZN14QDesktopWidget7resizedEi(int arg0);
 public:
-  void (*slot_func__ZN14QDesktopWidget7resizedEi)(int arg0) = NULL;
+  void (*slot_func__ZN14QDesktopWidget7resizedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // workAreaResized(int)
   void slot_proxy_func__ZN14QDesktopWidget15workAreaResizedEi(int arg0);
 public:
-  void (*slot_func__ZN14QDesktopWidget15workAreaResizedEi)(int arg0) = NULL;
-public slots:
-  // screenCountChanged(int)
-  void slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0);
-public:
-  void (*slot_func__ZN14QDesktopWidget18screenCountChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN14QDesktopWidget15workAreaResizedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qdesktopwidget.moc"
 
@@ -75,16 +76,37 @@ extern "C" {
   }
 };
 
-void QDesktopWidget_SlotProxy::slot_proxy_func__ZN14QDesktopWidget7resizedEi(int arg0) {
-  if (this->slot_func__ZN14QDesktopWidget7resizedEi != NULL) {
+void QDesktopWidget_SlotProxy::slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0) {
+  if (this->slot_func__ZN14QDesktopWidget18screenCountChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN14QDesktopWidget7resizedEi(arg0);
+    this->slot_func__ZN14QDesktopWidget18screenCountChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget7resizedEi(QObject* sender, void* fptr){
+void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget18screenCountChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDesktopWidget_SlotProxy();
-  that->slot_func__ZN14QDesktopWidget7resizedEi = (decltype(that->slot_func__ZN14QDesktopWidget7resizedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QDesktopWidget18screenCountChangedEi = (decltype(that->slot_func__ZN14QDesktopWidget18screenCountChangedEi))ffifptr;
+  QObject::connect((QDesktopWidget*)sender, SIGNAL(screenCountChanged(int)), that, SLOT(slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QDesktopWidget_SlotProxy_disconnect__ZN14QDesktopWidget18screenCountChangedEi(QDesktopWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDesktopWidget_SlotProxy::slot_proxy_func__ZN14QDesktopWidget7resizedEi(int arg0) {
+  if (this->slot_func__ZN14QDesktopWidget7resizedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN14QDesktopWidget7resizedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget7resizedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QDesktopWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QDesktopWidget7resizedEi = (decltype(that->slot_func__ZN14QDesktopWidget7resizedEi))ffifptr;
   QObject::connect((QDesktopWidget*)sender, SIGNAL(resized(int)), that, SLOT(slot_proxy_func__ZN14QDesktopWidget7resizedEi(int arg0)));
   return that;
 }
@@ -97,37 +119,19 @@ void QDesktopWidget_SlotProxy_disconnect__ZN14QDesktopWidget7resizedEi(QDesktopW
 void QDesktopWidget_SlotProxy::slot_proxy_func__ZN14QDesktopWidget15workAreaResizedEi(int arg0) {
   if (this->slot_func__ZN14QDesktopWidget15workAreaResizedEi != NULL) {
     // do smth...
-    this->slot_func__ZN14QDesktopWidget15workAreaResizedEi(arg0);
+    this->slot_func__ZN14QDesktopWidget15workAreaResizedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget15workAreaResizedEi(QObject* sender, void* fptr){
+void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget15workAreaResizedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDesktopWidget_SlotProxy();
-  that->slot_func__ZN14QDesktopWidget15workAreaResizedEi = (decltype(that->slot_func__ZN14QDesktopWidget15workAreaResizedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN14QDesktopWidget15workAreaResizedEi = (decltype(that->slot_func__ZN14QDesktopWidget15workAreaResizedEi))ffifptr;
   QObject::connect((QDesktopWidget*)sender, SIGNAL(workAreaResized(int)), that, SLOT(slot_proxy_func__ZN14QDesktopWidget15workAreaResizedEi(int arg0)));
   return that;
 }
 extern "C"
 void QDesktopWidget_SlotProxy_disconnect__ZN14QDesktopWidget15workAreaResizedEi(QDesktopWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QDesktopWidget_SlotProxy::slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0) {
-  if (this->slot_func__ZN14QDesktopWidget18screenCountChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN14QDesktopWidget18screenCountChangedEi(arg0);
-  }
-}
-extern "C"
-void* QDesktopWidget_SlotProxy_connect__ZN14QDesktopWidget18screenCountChangedEi(QObject* sender, void* fptr){
-  auto that = new QDesktopWidget_SlotProxy();
-  that->slot_func__ZN14QDesktopWidget18screenCountChangedEi = (decltype(that->slot_func__ZN14QDesktopWidget18screenCountChangedEi))fptr;
-  QObject::connect((QDesktopWidget*)sender, SIGNAL(screenCountChanged(int)), that, SLOT(slot_proxy_func__ZN14QDesktopWidget18screenCountChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QDesktopWidget_SlotProxy_disconnect__ZN14QDesktopWidget18screenCountChangedEi(QDesktopWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

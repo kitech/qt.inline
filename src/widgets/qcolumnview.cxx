@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qcolumnview.h
 // dst-file: /src/widgets/qcolumnview.cxx
 //
@@ -46,7 +46,7 @@ void dedtor_ZN11QColumnViewD0Ev(QColumnView* that)
 // QColumnView_SlotProxy here
 class QColumnView_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QColumnView_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // updatePreviewWidget(const class QModelIndex &)
   void slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0);
 public:
-  void (*slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex)(const QModelIndex & arg0) = NULL;
+  void (*slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex)(void* rsfptr, const QModelIndex & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qcolumnview.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QColumnView_SlotProxy::slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0) {
   if (this->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex != NULL) {
     // do smth...
-    this->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(arg0);
+    this->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QColumnView_SlotProxy_connect__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(QObject* sender, void* fptr){
+void* QColumnView_SlotProxy_connect__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QColumnView_SlotProxy();
-  that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex = (decltype(that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex = (decltype(that->slot_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex))ffifptr;
   QObject::connect((QColumnView*)sender, SIGNAL(updatePreviewWidget(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(const QModelIndex & arg0)));
   return that;
 }

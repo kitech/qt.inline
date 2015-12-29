@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -143,7 +143,7 @@ QRegExpValidator* dector_ZN16QRegExpValidatorC1EP7QObject(QObject * parent)
 // QRegularExpressionValidator_SlotProxy here
 class QRegularExpressionValidator_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QRegularExpressionValidator_SlotProxy():QObject(){}
 
@@ -151,7 +151,8 @@ public slots:
   // regularExpressionChanged(const class QRegularExpression &)
   void slot_proxy_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(const QRegularExpression & arg0);
 public:
-  void (*slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression)(const QRegularExpression & arg0) = NULL;
+  void (*slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression)(void* rsfptr, const QRegularExpression & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -164,13 +165,14 @@ extern "C" {
 void QRegularExpressionValidator_SlotProxy::slot_proxy_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(const QRegularExpression & arg0) {
   if (this->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression != NULL) {
     // do smth...
-    this->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(arg0);
+    this->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QRegularExpressionValidator_SlotProxy_connect__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(QObject* sender, void* fptr){
+void* QRegularExpressionValidator_SlotProxy_connect__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QRegularExpressionValidator_SlotProxy();
-  that->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression = (decltype(that->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression = (decltype(that->slot_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression))ffifptr;
   QObject::connect((QRegularExpressionValidator*)sender, SIGNAL(regularExpressionChanged(const class QRegularExpression &)), that, SLOT(slot_proxy_func__ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(const QRegularExpression & arg0)));
   return that;
 }
@@ -183,7 +185,7 @@ void QRegularExpressionValidator_SlotProxy_disconnect__ZN27QRegularExpressionVal
 // QDoubleValidator_SlotProxy here
 class QDoubleValidator_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QDoubleValidator_SlotProxy():QObject(){}
 
@@ -191,22 +193,23 @@ public slots:
   // bottomChanged(double)
   void slot_proxy_func__ZN16QDoubleValidator13bottomChangedEd(double arg0);
 public:
-  void (*slot_func__ZN16QDoubleValidator13bottomChangedEd)(double arg0) = NULL;
-public slots:
-  // topChanged(double)
-  void slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0);
-public:
-  void (*slot_func__ZN16QDoubleValidator10topChangedEd)(double arg0) = NULL;
+  void (*slot_func__ZN16QDoubleValidator13bottomChangedEd)(void* rsfptr, double arg0) = NULL;
 public slots:
   // decimalsChanged(int)
   void slot_proxy_func__ZN16QDoubleValidator15decimalsChangedEi(int arg0);
 public:
-  void (*slot_func__ZN16QDoubleValidator15decimalsChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN16QDoubleValidator15decimalsChangedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // notationChanged(class QDoubleValidator::Notation)
   void slot_proxy_func__ZN16QDoubleValidator15notationChangedENS_8NotationE(QDoubleValidator::Notation arg0);
 public:
-  void (*slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE)(QDoubleValidator::Notation arg0) = NULL;
+  void (*slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE)(void* rsfptr, QDoubleValidator::Notation arg0) = NULL;
+public slots:
+  // topChanged(double)
+  void slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0);
+public:
+  void (*slot_func__ZN16QDoubleValidator10topChangedEd)(void* rsfptr, double arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -219,13 +222,14 @@ extern "C" {
 void QDoubleValidator_SlotProxy::slot_proxy_func__ZN16QDoubleValidator13bottomChangedEd(double arg0) {
   if (this->slot_func__ZN16QDoubleValidator13bottomChangedEd != NULL) {
     // do smth...
-    this->slot_func__ZN16QDoubleValidator13bottomChangedEd(arg0);
+    this->slot_func__ZN16QDoubleValidator13bottomChangedEd(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator13bottomChangedEd(QObject* sender, void* fptr){
+void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator13bottomChangedEd(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDoubleValidator_SlotProxy();
-  that->slot_func__ZN16QDoubleValidator13bottomChangedEd = (decltype(that->slot_func__ZN16QDoubleValidator13bottomChangedEd))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QDoubleValidator13bottomChangedEd = (decltype(that->slot_func__ZN16QDoubleValidator13bottomChangedEd))ffifptr;
   QObject::connect((QDoubleValidator*)sender, SIGNAL(bottomChanged(double)), that, SLOT(slot_proxy_func__ZN16QDoubleValidator13bottomChangedEd(double arg0)));
   return that;
 }
@@ -235,35 +239,17 @@ void QDoubleValidator_SlotProxy_disconnect__ZN16QDoubleValidator13bottomChangedE
   delete that;
 }
 
-void QDoubleValidator_SlotProxy::slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0) {
-  if (this->slot_func__ZN16QDoubleValidator10topChangedEd != NULL) {
-    // do smth...
-    this->slot_func__ZN16QDoubleValidator10topChangedEd(arg0);
-  }
-}
-extern "C"
-void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator10topChangedEd(QObject* sender, void* fptr){
-  auto that = new QDoubleValidator_SlotProxy();
-  that->slot_func__ZN16QDoubleValidator10topChangedEd = (decltype(that->slot_func__ZN16QDoubleValidator10topChangedEd))fptr;
-  QObject::connect((QDoubleValidator*)sender, SIGNAL(topChanged(double)), that, SLOT(slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0)));
-  return that;
-}
-extern "C"
-void QDoubleValidator_SlotProxy_disconnect__ZN16QDoubleValidator10topChangedEd(QDoubleValidator_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QDoubleValidator_SlotProxy::slot_proxy_func__ZN16QDoubleValidator15decimalsChangedEi(int arg0) {
   if (this->slot_func__ZN16QDoubleValidator15decimalsChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN16QDoubleValidator15decimalsChangedEi(arg0);
+    this->slot_func__ZN16QDoubleValidator15decimalsChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator15decimalsChangedEi(QObject* sender, void* fptr){
+void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator15decimalsChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDoubleValidator_SlotProxy();
-  that->slot_func__ZN16QDoubleValidator15decimalsChangedEi = (decltype(that->slot_func__ZN16QDoubleValidator15decimalsChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QDoubleValidator15decimalsChangedEi = (decltype(that->slot_func__ZN16QDoubleValidator15decimalsChangedEi))ffifptr;
   QObject::connect((QDoubleValidator*)sender, SIGNAL(decimalsChanged(int)), that, SLOT(slot_proxy_func__ZN16QDoubleValidator15decimalsChangedEi(int arg0)));
   return that;
 }
@@ -276,13 +262,14 @@ void QDoubleValidator_SlotProxy_disconnect__ZN16QDoubleValidator15decimalsChange
 void QDoubleValidator_SlotProxy::slot_proxy_func__ZN16QDoubleValidator15notationChangedENS_8NotationE(QDoubleValidator::Notation arg0) {
   if (this->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE != NULL) {
     // do smth...
-    this->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE(arg0);
+    this->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator15notationChangedENS_8NotationE(QObject* sender, void* fptr){
+void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator15notationChangedENS_8NotationE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDoubleValidator_SlotProxy();
-  that->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE = (decltype(that->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE = (decltype(that->slot_func__ZN16QDoubleValidator15notationChangedENS_8NotationE))ffifptr;
   QObject::connect((QDoubleValidator*)sender, SIGNAL(notationChanged(class QDoubleValidator::Notation)), that, SLOT(slot_proxy_func__ZN16QDoubleValidator15notationChangedENS_8NotationE(QDoubleValidator::Notation arg0)));
   return that;
 }
@@ -292,23 +279,44 @@ void QDoubleValidator_SlotProxy_disconnect__ZN16QDoubleValidator15notationChange
   delete that;
 }
 
+void QDoubleValidator_SlotProxy::slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0) {
+  if (this->slot_func__ZN16QDoubleValidator10topChangedEd != NULL) {
+    // do smth...
+    this->slot_func__ZN16QDoubleValidator10topChangedEd(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QDoubleValidator_SlotProxy_connect__ZN16QDoubleValidator10topChangedEd(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QDoubleValidator_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QDoubleValidator10topChangedEd = (decltype(that->slot_func__ZN16QDoubleValidator10topChangedEd))ffifptr;
+  QObject::connect((QDoubleValidator*)sender, SIGNAL(topChanged(double)), that, SLOT(slot_proxy_func__ZN16QDoubleValidator10topChangedEd(double arg0)));
+  return that;
+}
+extern "C"
+void QDoubleValidator_SlotProxy_disconnect__ZN16QDoubleValidator10topChangedEd(QDoubleValidator_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // QIntValidator_SlotProxy here
 class QIntValidator_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QIntValidator_SlotProxy():QObject(){}
 
 public slots:
-  // bottomChanged(int)
-  void slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0);
-public:
-  void (*slot_func__ZN13QIntValidator13bottomChangedEi)(int arg0) = NULL;
-public slots:
   // topChanged(int)
   void slot_proxy_func__ZN13QIntValidator10topChangedEi(int arg0);
 public:
-  void (*slot_func__ZN13QIntValidator10topChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN13QIntValidator10topChangedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // bottomChanged(int)
+  void slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0);
+public:
+  void (*slot_func__ZN13QIntValidator13bottomChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -318,35 +326,17 @@ extern "C" {
   }
 };
 
-void QIntValidator_SlotProxy::slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0) {
-  if (this->slot_func__ZN13QIntValidator13bottomChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN13QIntValidator13bottomChangedEi(arg0);
-  }
-}
-extern "C"
-void* QIntValidator_SlotProxy_connect__ZN13QIntValidator13bottomChangedEi(QObject* sender, void* fptr){
-  auto that = new QIntValidator_SlotProxy();
-  that->slot_func__ZN13QIntValidator13bottomChangedEi = (decltype(that->slot_func__ZN13QIntValidator13bottomChangedEi))fptr;
-  QObject::connect((QIntValidator*)sender, SIGNAL(bottomChanged(int)), that, SLOT(slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QIntValidator_SlotProxy_disconnect__ZN13QIntValidator13bottomChangedEi(QIntValidator_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QIntValidator_SlotProxy::slot_proxy_func__ZN13QIntValidator10topChangedEi(int arg0) {
   if (this->slot_func__ZN13QIntValidator10topChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN13QIntValidator10topChangedEi(arg0);
+    this->slot_func__ZN13QIntValidator10topChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QIntValidator_SlotProxy_connect__ZN13QIntValidator10topChangedEi(QObject* sender, void* fptr){
+void* QIntValidator_SlotProxy_connect__ZN13QIntValidator10topChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QIntValidator_SlotProxy();
-  that->slot_func__ZN13QIntValidator10topChangedEi = (decltype(that->slot_func__ZN13QIntValidator10topChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QIntValidator10topChangedEi = (decltype(that->slot_func__ZN13QIntValidator10topChangedEi))ffifptr;
   QObject::connect((QIntValidator*)sender, SIGNAL(topChanged(int)), that, SLOT(slot_proxy_func__ZN13QIntValidator10topChangedEi(int arg0)));
   return that;
 }
@@ -356,10 +346,30 @@ void QIntValidator_SlotProxy_disconnect__ZN13QIntValidator10topChangedEi(QIntVal
   delete that;
 }
 
+void QIntValidator_SlotProxy::slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0) {
+  if (this->slot_func__ZN13QIntValidator13bottomChangedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN13QIntValidator13bottomChangedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QIntValidator_SlotProxy_connect__ZN13QIntValidator13bottomChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QIntValidator_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QIntValidator13bottomChangedEi = (decltype(that->slot_func__ZN13QIntValidator13bottomChangedEi))ffifptr;
+  QObject::connect((QIntValidator*)sender, SIGNAL(bottomChanged(int)), that, SLOT(slot_proxy_func__ZN13QIntValidator13bottomChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QIntValidator_SlotProxy_disconnect__ZN13QIntValidator13bottomChangedEi(QIntValidator_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 // QValidator_SlotProxy here
 class QValidator_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QValidator_SlotProxy():QObject(){}
 
@@ -367,7 +377,8 @@ public slots:
   // changed()
   void slot_proxy_func__ZN10QValidator7changedEv();
 public:
-  void (*slot_func__ZN10QValidator7changedEv)() = NULL;
+  void (*slot_func__ZN10QValidator7changedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -380,13 +391,14 @@ extern "C" {
 void QValidator_SlotProxy::slot_proxy_func__ZN10QValidator7changedEv() {
   if (this->slot_func__ZN10QValidator7changedEv != NULL) {
     // do smth...
-    this->slot_func__ZN10QValidator7changedEv();
+    this->slot_func__ZN10QValidator7changedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QValidator_SlotProxy_connect__ZN10QValidator7changedEv(QObject* sender, void* fptr){
+void* QValidator_SlotProxy_connect__ZN10QValidator7changedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QValidator_SlotProxy();
-  that->slot_func__ZN10QValidator7changedEv = (decltype(that->slot_func__ZN10QValidator7changedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QValidator7changedEv = (decltype(that->slot_func__ZN10QValidator7changedEv))ffifptr;
   QObject::connect((QValidator*)sender, SIGNAL(changed()), that, SLOT(slot_proxy_func__ZN10QValidator7changedEv()));
   return that;
 }
@@ -399,7 +411,7 @@ void QValidator_SlotProxy_disconnect__ZN10QValidator7changedEv(QValidator_SlotPr
 // QRegExpValidator_SlotProxy here
 class QRegExpValidator_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QRegExpValidator_SlotProxy():QObject(){}
 
@@ -407,7 +419,8 @@ public slots:
   // regExpChanged(const class QRegExp &)
   void slot_proxy_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp(const QRegExp & arg0);
 public:
-  void (*slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp)(const QRegExp & arg0) = NULL;
+  void (*slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp)(void* rsfptr, const QRegExp & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qvalidator.moc"
 
@@ -421,13 +434,14 @@ extern "C" {
 void QRegExpValidator_SlotProxy::slot_proxy_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp(const QRegExp & arg0) {
   if (this->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp != NULL) {
     // do smth...
-    this->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp(arg0);
+    this->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QRegExpValidator_SlotProxy_connect__ZN16QRegExpValidator13regExpChangedERK7QRegExp(QObject* sender, void* fptr){
+void* QRegExpValidator_SlotProxy_connect__ZN16QRegExpValidator13regExpChangedERK7QRegExp(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QRegExpValidator_SlotProxy();
-  that->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp = (decltype(that->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp = (decltype(that->slot_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp))ffifptr;
   QObject::connect((QRegExpValidator*)sender, SIGNAL(regExpChanged(const class QRegExp &)), that, SLOT(slot_proxy_func__ZN16QRegExpValidator13regExpChangedERK7QRegExp(const QRegExp & arg0)));
   return that;
 }

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qsettings.h
 // dst-file: /src/core/qsettings.cxx
 //
@@ -78,10 +78,11 @@ QSettings* dector_ZN9QSettingsC1ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Sco
 // QSettings_SlotProxy here
 class QSettings_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSettings_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qsettings.moc"
 

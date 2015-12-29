@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
@@ -61,10 +61,11 @@ void demth_ZN7QBuffer7setDataEPKci(void *that, const char * data, int len)
 // QBuffer_SlotProxy here
 class QBuffer_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QBuffer_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qbuffer.moc"
 

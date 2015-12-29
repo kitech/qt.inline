@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -208,10 +208,11 @@ void demth_ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *that, const
 // QTextObject_SlotProxy here
 class QTextObject_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTextObject_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -224,10 +225,11 @@ extern "C" {
 // QTextBlockGroup_SlotProxy here
 class QTextBlockGroup_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTextBlockGroup_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -240,10 +242,11 @@ extern "C" {
 // QTextFrame_SlotProxy here
 class QTextFrame_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTextFrame_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qtextobject.moc"
 

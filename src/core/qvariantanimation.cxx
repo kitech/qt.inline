@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qvariantanimation.h
 // dst-file: /src/core/qvariantanimation.cxx
 //
@@ -46,7 +46,7 @@ QVariantAnimation* dector_ZN17QVariantAnimationC1EP7QObject(QObject * parent)
 // QVariantAnimation_SlotProxy here
 class QVariantAnimation_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QVariantAnimation_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // valueChanged(const class QVariant &)
   void slot_proxy_func__ZN17QVariantAnimation12valueChangedERK8QVariant(const QVariant & arg0);
 public:
-  void (*slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant)(const QVariant & arg0) = NULL;
+  void (*slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant)(void* rsfptr, const QVariant & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/core/qvariantanimation.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QVariantAnimation_SlotProxy::slot_proxy_func__ZN17QVariantAnimation12valueChangedERK8QVariant(const QVariant & arg0) {
   if (this->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant != NULL) {
     // do smth...
-    this->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant(arg0);
+    this->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QVariantAnimation_SlotProxy_connect__ZN17QVariantAnimation12valueChangedERK8QVariant(QObject* sender, void* fptr){
+void* QVariantAnimation_SlotProxy_connect__ZN17QVariantAnimation12valueChangedERK8QVariant(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QVariantAnimation_SlotProxy();
-  that->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant = (decltype(that->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant = (decltype(that->slot_func__ZN17QVariantAnimation12valueChangedERK8QVariant))ffifptr;
   QObject::connect((QVariantAnimation*)sender, SIGNAL(valueChanged(const class QVariant &)), that, SLOT(slot_proxy_func__ZN17QVariantAnimation12valueChangedERK8QVariant(const QVariant & arg0)));
   return that;
 }

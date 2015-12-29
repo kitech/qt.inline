@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qcompleter.h
 // dst-file: /src/widgets/qcompleter.cxx
 //
@@ -62,30 +62,31 @@ QCompleter* dector_ZN10QCompleterC1EP18QAbstractItemModelP7QObject(QAbstractItem
 // QCompleter_SlotProxy here
 class QCompleter_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QCompleter_SlotProxy():QObject(){}
 
 public slots:
+  // highlighted(const class QModelIndex &)
+  void slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0);
+public:
+  void (*slot_func__ZN10QCompleter11highlightedERK11QModelIndex)(void* rsfptr, const QModelIndex & arg0) = NULL;
+public slots:
   // activated(const class QString &)
   void slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN10QCompleter9activatedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN10QCompleter9activatedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // activated(const class QModelIndex &)
   void slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0);
 public:
-  void (*slot_func__ZN10QCompleter9activatedERK11QModelIndex)(const QModelIndex & arg0) = NULL;
+  void (*slot_func__ZN10QCompleter9activatedERK11QModelIndex)(void* rsfptr, const QModelIndex & arg0) = NULL;
 public slots:
   // highlighted(const class QString &)
   void slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN10QCompleter11highlightedERK7QString)(const QString & arg0) = NULL;
-public slots:
-  // highlighted(const class QModelIndex &)
-  void slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0);
-public:
-  void (*slot_func__ZN10QCompleter11highlightedERK11QModelIndex)(const QModelIndex & arg0) = NULL;
+  void (*slot_func__ZN10QCompleter11highlightedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qcompleter.moc"
 
@@ -96,16 +97,37 @@ extern "C" {
   }
 };
 
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN10QCompleter9activatedERK7QString != NULL) {
+void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0) {
+  if (this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex != NULL) {
     // do smth...
-    this->slot_func__ZN10QCompleter9activatedERK7QString(arg0);
+    this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK7QString(QObject* sender, void* fptr){
+void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK11QModelIndex(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QCompleter_SlotProxy();
-  that->slot_func__ZN10QCompleter9activatedERK7QString = (decltype(that->slot_func__ZN10QCompleter9activatedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex))ffifptr;
+  QObject::connect((QCompleter*)sender, SIGNAL(highlighted(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0)));
+  return that;
+}
+extern "C"
+void QCompleter_SlotProxy_disconnect__ZN10QCompleter11highlightedERK11QModelIndex(QCompleter_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN10QCompleter9activatedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN10QCompleter9activatedERK7QString(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QCompleter_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QCompleter9activatedERK7QString = (decltype(that->slot_func__ZN10QCompleter9activatedERK7QString))ffifptr;
   QObject::connect((QCompleter*)sender, SIGNAL(activated(const class QString &)), that, SLOT(slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0)));
   return that;
 }
@@ -118,13 +140,14 @@ void QCompleter_SlotProxy_disconnect__ZN10QCompleter9activatedERK7QString(QCompl
 void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0) {
   if (this->slot_func__ZN10QCompleter9activatedERK11QModelIndex != NULL) {
     // do smth...
-    this->slot_func__ZN10QCompleter9activatedERK11QModelIndex(arg0);
+    this->slot_func__ZN10QCompleter9activatedERK11QModelIndex(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK11QModelIndex(QObject* sender, void* fptr){
+void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK11QModelIndex(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QCompleter_SlotProxy();
-  that->slot_func__ZN10QCompleter9activatedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter9activatedERK11QModelIndex))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QCompleter9activatedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter9activatedERK11QModelIndex))ffifptr;
   QObject::connect((QCompleter*)sender, SIGNAL(activated(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0)));
   return that;
 }
@@ -137,37 +160,19 @@ void QCompleter_SlotProxy_disconnect__ZN10QCompleter9activatedERK11QModelIndex(Q
 void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN10QCompleter11highlightedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN10QCompleter11highlightedERK7QString(arg0);
+    this->slot_func__ZN10QCompleter11highlightedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK7QString(QObject* sender, void* fptr){
+void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QCompleter_SlotProxy();
-  that->slot_func__ZN10QCompleter11highlightedERK7QString = (decltype(that->slot_func__ZN10QCompleter11highlightedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN10QCompleter11highlightedERK7QString = (decltype(that->slot_func__ZN10QCompleter11highlightedERK7QString))ffifptr;
   QObject::connect((QCompleter*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0)));
   return that;
 }
 extern "C"
 void QCompleter_SlotProxy_disconnect__ZN10QCompleter11highlightedERK7QString(QCompleter_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0) {
-  if (this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex != NULL) {
-    // do smth...
-    this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex(arg0);
-  }
-}
-extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK11QModelIndex(QObject* sender, void* fptr){
-  auto that = new QCompleter_SlotProxy();
-  that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex))fptr;
-  QObject::connect((QCompleter*)sender, SIGNAL(highlighted(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0)));
-  return that;
-}
-extern "C"
-void QCompleter_SlotProxy_disconnect__ZN10QCompleter11highlightedERK11QModelIndex(QCompleter_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

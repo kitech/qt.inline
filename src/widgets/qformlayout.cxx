@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qformlayout.h
 // dst-file: /src/widgets/qformlayout.cxx
 //
@@ -46,10 +46,11 @@ void dedtor_ZN11QFormLayoutD0Ev(QFormLayout* that)
 // QFormLayout_SlotProxy here
 class QFormLayout_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QFormLayout_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qformlayout.moc"
 

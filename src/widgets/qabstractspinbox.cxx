@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qabstractspinbox.h
 // dst-file: /src/widgets/qabstractspinbox.cxx
 //
@@ -31,7 +31,7 @@ int QAbstractSpinBox_Class_Size()
 // QAbstractSpinBox_SlotProxy here
 class QAbstractSpinBox_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractSpinBox_SlotProxy():QObject(){}
 
@@ -39,7 +39,8 @@ public slots:
   // editingFinished()
   void slot_proxy_func__ZN16QAbstractSpinBox15editingFinishedEv();
 public:
-  void (*slot_func__ZN16QAbstractSpinBox15editingFinishedEv)() = NULL;
+  void (*slot_func__ZN16QAbstractSpinBox15editingFinishedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qabstractspinbox.moc"
 
@@ -53,13 +54,14 @@ extern "C" {
 void QAbstractSpinBox_SlotProxy::slot_proxy_func__ZN16QAbstractSpinBox15editingFinishedEv() {
   if (this->slot_func__ZN16QAbstractSpinBox15editingFinishedEv != NULL) {
     // do smth...
-    this->slot_func__ZN16QAbstractSpinBox15editingFinishedEv();
+    this->slot_func__ZN16QAbstractSpinBox15editingFinishedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QAbstractSpinBox_SlotProxy_connect__ZN16QAbstractSpinBox15editingFinishedEv(QObject* sender, void* fptr){
+void* QAbstractSpinBox_SlotProxy_connect__ZN16QAbstractSpinBox15editingFinishedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractSpinBox_SlotProxy();
-  that->slot_func__ZN16QAbstractSpinBox15editingFinishedEv = (decltype(that->slot_func__ZN16QAbstractSpinBox15editingFinishedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN16QAbstractSpinBox15editingFinishedEv = (decltype(that->slot_func__ZN16QAbstractSpinBox15editingFinishedEv))ffifptr;
   QObject::connect((QAbstractSpinBox*)sender, SIGNAL(editingFinished()), that, SLOT(slot_proxy_func__ZN16QAbstractSpinBox15editingFinishedEv()));
   return that;
 }

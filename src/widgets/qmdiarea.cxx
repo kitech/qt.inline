@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmdiarea.h
 // dst-file: /src/widgets/qmdiarea.cxx
 //
@@ -46,7 +46,7 @@ QMdiArea* dector_ZN8QMdiAreaC1EP7QWidget(QWidget * parent)
 // QMdiArea_SlotProxy here
 class QMdiArea_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMdiArea_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // subWindowActivated(class QMdiSubWindow *)
   void slot_proxy_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(QMdiSubWindow * arg0);
 public:
-  void (*slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow)(QMdiSubWindow * arg0) = NULL;
+  void (*slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow)(void* rsfptr, QMdiSubWindow * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmdiarea.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QMdiArea_SlotProxy::slot_proxy_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(QMdiSubWindow * arg0) {
   if (this->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow != NULL) {
     // do smth...
-    this->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(arg0);
+    this->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMdiArea_SlotProxy_connect__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(QObject* sender, void* fptr){
+void* QMdiArea_SlotProxy_connect__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMdiArea_SlotProxy();
-  that->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow = (decltype(that->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow = (decltype(that->slot_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow))ffifptr;
   QObject::connect((QMdiArea*)sender, SIGNAL(subWindowActivated(class QMdiSubWindow *)), that, SLOT(slot_proxy_func__ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(QMdiSubWindow * arg0)));
   return that;
 }

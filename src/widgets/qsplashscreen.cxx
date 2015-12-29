@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -54,7 +54,7 @@ QSplashScreen* dector_ZN13QSplashScreenC1EP7QWidgetRK7QPixmap6QFlagsIN2Qt10Windo
 // QSplashScreen_SlotProxy here
 class QSplashScreen_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSplashScreen_SlotProxy():QObject(){}
 
@@ -62,7 +62,8 @@ public slots:
   // messageChanged(const class QString &)
   void slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN13QSplashScreen14messageChangedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN13QSplashScreen14messageChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qsplashscreen.moc"
 
@@ -76,13 +77,14 @@ extern "C" {
 void QSplashScreen_SlotProxy::slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN13QSplashScreen14messageChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN13QSplashScreen14messageChangedERK7QString(arg0);
+    this->slot_func__ZN13QSplashScreen14messageChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QSplashScreen_SlotProxy_connect__ZN13QSplashScreen14messageChangedERK7QString(QObject* sender, void* fptr){
+void* QSplashScreen_SlotProxy_connect__ZN13QSplashScreen14messageChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QSplashScreen_SlotProxy();
-  that->slot_func__ZN13QSplashScreen14messageChangedERK7QString = (decltype(that->slot_func__ZN13QSplashScreen14messageChangedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QSplashScreen14messageChangedERK7QString = (decltype(that->slot_func__ZN13QSplashScreen14messageChangedERK7QString))ffifptr;
   QObject::connect((QSplashScreen*)sender, SIGNAL(messageChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN13QSplashScreen14messageChangedERK7QString(const QString & arg0)));
   return that;
 }

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qopenglshaderprogram.h
 // dst-file: /src/gui/qopenglshaderprogram.cxx
 //
@@ -66,10 +66,11 @@ QOpenGLShaderProgram* dector_ZN20QOpenGLShaderProgramC1EP7QObject(QObject * pare
 // QOpenGLShader_SlotProxy here
 class QOpenGLShader_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOpenGLShader_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -82,10 +83,11 @@ extern "C" {
 // QOpenGLShaderProgram_SlotProxy here
 class QOpenGLShaderProgram_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOpenGLShaderProgram_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qopenglshaderprogram.moc"
 

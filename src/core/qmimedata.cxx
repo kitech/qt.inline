@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qmimedata.h
 // dst-file: /src/core/qmimedata.cxx
 //
@@ -46,10 +46,11 @@ QMimeData* dector_ZN9QMimeDataC1Ev()
 // QMimeData_SlotProxy here
 class QMimeData_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMimeData_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qmimedata.moc"
 

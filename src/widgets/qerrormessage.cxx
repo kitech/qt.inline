@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qerrormessage.h
 // dst-file: /src/widgets/qerrormessage.cxx
 //
@@ -46,10 +46,11 @@ void dedtor_ZN13QErrorMessageD0Ev(QErrorMessage* that)
 // QErrorMessage_SlotProxy here
 class QErrorMessage_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QErrorMessage_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qerrormessage.moc"
 

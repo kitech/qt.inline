@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qstandarditemmodel.h
 // dst-file: /src/gui/qstandarditemmodel.cxx
 //
@@ -403,7 +403,7 @@ QString* demth_ZNK13QStandardItem21accessibleDescriptionEv(void *that)
 // QStandardItemModel_SlotProxy here
 class QStandardItemModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QStandardItemModel_SlotProxy():QObject(){}
 
@@ -411,7 +411,8 @@ public slots:
   // itemChanged(class QStandardItem *)
   void slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0);
 public:
-  void (*slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem)(QStandardItem * arg0) = NULL;
+  void (*slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem)(void* rsfptr, QStandardItem * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qstandarditemmodel.moc"
 
@@ -425,13 +426,14 @@ extern "C" {
 void QStandardItemModel_SlotProxy::slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0) {
   if (this->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem != NULL) {
     // do smth...
-    this->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(arg0);
+    this->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QStandardItemModel_SlotProxy_connect__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QObject* sender, void* fptr){
+void* QStandardItemModel_SlotProxy_connect__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QStandardItemModel_SlotProxy();
-  that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem = (decltype(that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem = (decltype(that->slot_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem))ffifptr;
   QObject::connect((QStandardItemModel*)sender, SIGNAL(itemChanged(class QStandardItem *)), that, SLOT(slot_proxy_func__ZN18QStandardItemModel11itemChangedEP13QStandardItem(QStandardItem * arg0)));
   return that;
 }

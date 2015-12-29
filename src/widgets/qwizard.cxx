@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qwizard.h
 // dst-file: /src/widgets/qwizard.cxx
 //
@@ -66,7 +66,7 @@ QWizard* dector_ZN7QWizardC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * paren
 // QWizardPage_SlotProxy here
 class QWizardPage_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QWizardPage_SlotProxy():QObject(){}
 
@@ -74,7 +74,8 @@ public slots:
   // completeChanged()
   void slot_proxy_func__ZN11QWizardPage15completeChangedEv();
 public:
-  void (*slot_func__ZN11QWizardPage15completeChangedEv)() = NULL;
+  void (*slot_func__ZN11QWizardPage15completeChangedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -87,13 +88,14 @@ extern "C" {
 void QWizardPage_SlotProxy::slot_proxy_func__ZN11QWizardPage15completeChangedEv() {
   if (this->slot_func__ZN11QWizardPage15completeChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN11QWizardPage15completeChangedEv();
+    this->slot_func__ZN11QWizardPage15completeChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QWizardPage_SlotProxy_connect__ZN11QWizardPage15completeChangedEv(QObject* sender, void* fptr){
+void* QWizardPage_SlotProxy_connect__ZN11QWizardPage15completeChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWizardPage_SlotProxy();
-  that->slot_func__ZN11QWizardPage15completeChangedEv = (decltype(that->slot_func__ZN11QWizardPage15completeChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QWizardPage15completeChangedEv = (decltype(that->slot_func__ZN11QWizardPage15completeChangedEv))ffifptr;
   QObject::connect((QWizardPage*)sender, SIGNAL(completeChanged()), that, SLOT(slot_proxy_func__ZN11QWizardPage15completeChangedEv()));
   return that;
 }
@@ -106,35 +108,36 @@ void QWizardPage_SlotProxy_disconnect__ZN11QWizardPage15completeChangedEv(QWizar
 // QWizard_SlotProxy here
 class QWizard_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QWizard_SlotProxy():QObject(){}
 
 public slots:
-  // currentIdChanged(int)
-  void slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0);
-public:
-  void (*slot_func__ZN7QWizard16currentIdChangedEi)(int arg0) = NULL;
-public slots:
   // helpRequested()
   void slot_proxy_func__ZN7QWizard13helpRequestedEv();
 public:
-  void (*slot_func__ZN7QWizard13helpRequestedEv)() = NULL;
+  void (*slot_func__ZN7QWizard13helpRequestedEv)(void* rsfptr) = NULL;
 public slots:
-  // customButtonClicked(int)
-  void slot_proxy_func__ZN7QWizard19customButtonClickedEi(int arg0);
+  // currentIdChanged(int)
+  void slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0);
 public:
-  void (*slot_func__ZN7QWizard19customButtonClickedEi)(int arg0) = NULL;
-public slots:
-  // pageAdded(int)
-  void slot_proxy_func__ZN7QWizard9pageAddedEi(int arg0);
-public:
-  void (*slot_func__ZN7QWizard9pageAddedEi)(int arg0) = NULL;
+  void (*slot_func__ZN7QWizard16currentIdChangedEi)(void* rsfptr, int arg0) = NULL;
 public slots:
   // pageRemoved(int)
   void slot_proxy_func__ZN7QWizard11pageRemovedEi(int arg0);
 public:
-  void (*slot_func__ZN7QWizard11pageRemovedEi)(int arg0) = NULL;
+  void (*slot_func__ZN7QWizard11pageRemovedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // customButtonClicked(int)
+  void slot_proxy_func__ZN7QWizard19customButtonClickedEi(int arg0);
+public:
+  void (*slot_func__ZN7QWizard19customButtonClickedEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // pageAdded(int)
+  void slot_proxy_func__ZN7QWizard9pageAddedEi(int arg0);
+public:
+  void (*slot_func__ZN7QWizard9pageAddedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qwizard.moc"
 
@@ -145,35 +148,17 @@ extern "C" {
   }
 };
 
-void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0) {
-  if (this->slot_func__ZN7QWizard16currentIdChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWizard16currentIdChangedEi(arg0);
-  }
-}
-extern "C"
-void* QWizard_SlotProxy_connect__ZN7QWizard16currentIdChangedEi(QObject* sender, void* fptr){
-  auto that = new QWizard_SlotProxy();
-  that->slot_func__ZN7QWizard16currentIdChangedEi = (decltype(that->slot_func__ZN7QWizard16currentIdChangedEi))fptr;
-  QObject::connect((QWizard*)sender, SIGNAL(currentIdChanged(int)), that, SLOT(slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QWizard_SlotProxy_disconnect__ZN7QWizard16currentIdChangedEi(QWizard_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard13helpRequestedEv() {
   if (this->slot_func__ZN7QWizard13helpRequestedEv != NULL) {
     // do smth...
-    this->slot_func__ZN7QWizard13helpRequestedEv();
+    this->slot_func__ZN7QWizard13helpRequestedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QWizard_SlotProxy_connect__ZN7QWizard13helpRequestedEv(QObject* sender, void* fptr){
+void* QWizard_SlotProxy_connect__ZN7QWizard13helpRequestedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWizard_SlotProxy();
-  that->slot_func__ZN7QWizard13helpRequestedEv = (decltype(that->slot_func__ZN7QWizard13helpRequestedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWizard13helpRequestedEv = (decltype(that->slot_func__ZN7QWizard13helpRequestedEv))ffifptr;
   QObject::connect((QWizard*)sender, SIGNAL(helpRequested()), that, SLOT(slot_proxy_func__ZN7QWizard13helpRequestedEv()));
   return that;
 }
@@ -183,16 +168,57 @@ void QWizard_SlotProxy_disconnect__ZN7QWizard13helpRequestedEv(QWizard_SlotProxy
   delete that;
 }
 
-void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard19customButtonClickedEi(int arg0) {
-  if (this->slot_func__ZN7QWizard19customButtonClickedEi != NULL) {
+void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0) {
+  if (this->slot_func__ZN7QWizard16currentIdChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN7QWizard19customButtonClickedEi(arg0);
+    this->slot_func__ZN7QWizard16currentIdChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWizard_SlotProxy_connect__ZN7QWizard19customButtonClickedEi(QObject* sender, void* fptr){
+void* QWizard_SlotProxy_connect__ZN7QWizard16currentIdChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWizard_SlotProxy();
-  that->slot_func__ZN7QWizard19customButtonClickedEi = (decltype(that->slot_func__ZN7QWizard19customButtonClickedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWizard16currentIdChangedEi = (decltype(that->slot_func__ZN7QWizard16currentIdChangedEi))ffifptr;
+  QObject::connect((QWizard*)sender, SIGNAL(currentIdChanged(int)), that, SLOT(slot_proxy_func__ZN7QWizard16currentIdChangedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QWizard_SlotProxy_disconnect__ZN7QWizard16currentIdChangedEi(QWizard_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard11pageRemovedEi(int arg0) {
+  if (this->slot_func__ZN7QWizard11pageRemovedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN7QWizard11pageRemovedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QWizard_SlotProxy_connect__ZN7QWizard11pageRemovedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QWizard_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWizard11pageRemovedEi = (decltype(that->slot_func__ZN7QWizard11pageRemovedEi))ffifptr;
+  QObject::connect((QWizard*)sender, SIGNAL(pageRemoved(int)), that, SLOT(slot_proxy_func__ZN7QWizard11pageRemovedEi(int arg0)));
+  return that;
+}
+extern "C"
+void QWizard_SlotProxy_disconnect__ZN7QWizard11pageRemovedEi(QWizard_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard19customButtonClickedEi(int arg0) {
+  if (this->slot_func__ZN7QWizard19customButtonClickedEi != NULL) {
+    // do smth...
+    this->slot_func__ZN7QWizard19customButtonClickedEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QWizard_SlotProxy_connect__ZN7QWizard19customButtonClickedEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QWizard_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWizard19customButtonClickedEi = (decltype(that->slot_func__ZN7QWizard19customButtonClickedEi))ffifptr;
   QObject::connect((QWizard*)sender, SIGNAL(customButtonClicked(int)), that, SLOT(slot_proxy_func__ZN7QWizard19customButtonClickedEi(int arg0)));
   return that;
 }
@@ -205,37 +231,19 @@ void QWizard_SlotProxy_disconnect__ZN7QWizard19customButtonClickedEi(QWizard_Slo
 void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard9pageAddedEi(int arg0) {
   if (this->slot_func__ZN7QWizard9pageAddedEi != NULL) {
     // do smth...
-    this->slot_func__ZN7QWizard9pageAddedEi(arg0);
+    this->slot_func__ZN7QWizard9pageAddedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QWizard_SlotProxy_connect__ZN7QWizard9pageAddedEi(QObject* sender, void* fptr){
+void* QWizard_SlotProxy_connect__ZN7QWizard9pageAddedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QWizard_SlotProxy();
-  that->slot_func__ZN7QWizard9pageAddedEi = (decltype(that->slot_func__ZN7QWizard9pageAddedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN7QWizard9pageAddedEi = (decltype(that->slot_func__ZN7QWizard9pageAddedEi))ffifptr;
   QObject::connect((QWizard*)sender, SIGNAL(pageAdded(int)), that, SLOT(slot_proxy_func__ZN7QWizard9pageAddedEi(int arg0)));
   return that;
 }
 extern "C"
 void QWizard_SlotProxy_disconnect__ZN7QWizard9pageAddedEi(QWizard_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QWizard_SlotProxy::slot_proxy_func__ZN7QWizard11pageRemovedEi(int arg0) {
-  if (this->slot_func__ZN7QWizard11pageRemovedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWizard11pageRemovedEi(arg0);
-  }
-}
-extern "C"
-void* QWizard_SlotProxy_connect__ZN7QWizard11pageRemovedEi(QObject* sender, void* fptr){
-  auto that = new QWizard_SlotProxy();
-  that->slot_func__ZN7QWizard11pageRemovedEi = (decltype(that->slot_func__ZN7QWizard11pageRemovedEi))fptr;
-  QObject::connect((QWizard*)sender, SIGNAL(pageRemoved(int)), that, SLOT(slot_proxy_func__ZN7QWizard11pageRemovedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QWizard_SlotProxy_disconnect__ZN7QWizard11pageRemovedEi(QWizard_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

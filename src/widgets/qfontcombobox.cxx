@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qfontcombobox.h
 // dst-file: /src/widgets/qfontcombobox.cxx
 //
@@ -46,7 +46,7 @@ QFontComboBox* dector_ZN13QFontComboBoxC1EP7QWidget(QWidget * parent)
 // QFontComboBox_SlotProxy here
 class QFontComboBox_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QFontComboBox_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // currentFontChanged(const class QFont &)
   void slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0);
 public:
-  void (*slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont)(const QFont & arg0) = NULL;
+  void (*slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont)(void* rsfptr, const QFont & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qfontcombobox.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QFontComboBox_SlotProxy::slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0) {
   if (this->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont != NULL) {
     // do smth...
-    this->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont(arg0);
+    this->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QFontComboBox_SlotProxy_connect__ZN13QFontComboBox18currentFontChangedERK5QFont(QObject* sender, void* fptr){
+void* QFontComboBox_SlotProxy_connect__ZN13QFontComboBox18currentFontChangedERK5QFont(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QFontComboBox_SlotProxy();
-  that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont = (decltype(that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont = (decltype(that->slot_func__ZN13QFontComboBox18currentFontChangedERK5QFont))ffifptr;
   QObject::connect((QFontComboBox*)sender, SIGNAL(currentFontChanged(const class QFont &)), that, SLOT(slot_proxy_func__ZN13QFontComboBox18currentFontChangedERK5QFont(const QFont & arg0)));
   return that;
 }

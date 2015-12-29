@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qslider.h
 // dst-file: /src/widgets/qslider.cxx
 //
@@ -54,10 +54,11 @@ QSlider* dector_ZN7QSliderC1EP7QWidget(QWidget * parent)
 // QSlider_SlotProxy here
 class QSlider_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSlider_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qslider.moc"
 

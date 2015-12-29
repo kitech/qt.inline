@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qprogressbar.h
 // dst-file: /src/widgets/qprogressbar.cxx
 //
@@ -46,7 +46,7 @@ void dedtor_ZN12QProgressBarD0Ev(QProgressBar* that)
 // QProgressBar_SlotProxy here
 class QProgressBar_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QProgressBar_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // valueChanged(int)
   void slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0);
 public:
-  void (*slot_func__ZN12QProgressBar12valueChangedEi)(int arg0) = NULL;
+  void (*slot_func__ZN12QProgressBar12valueChangedEi)(void* rsfptr, int arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qprogressbar.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QProgressBar_SlotProxy::slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0) {
   if (this->slot_func__ZN12QProgressBar12valueChangedEi != NULL) {
     // do smth...
-    this->slot_func__ZN12QProgressBar12valueChangedEi(arg0);
+    this->slot_func__ZN12QProgressBar12valueChangedEi(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QProgressBar_SlotProxy_connect__ZN12QProgressBar12valueChangedEi(QObject* sender, void* fptr){
+void* QProgressBar_SlotProxy_connect__ZN12QProgressBar12valueChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QProgressBar_SlotProxy();
-  that->slot_func__ZN12QProgressBar12valueChangedEi = (decltype(that->slot_func__ZN12QProgressBar12valueChangedEi))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QProgressBar12valueChangedEi = (decltype(that->slot_func__ZN12QProgressBar12valueChangedEi))ffifptr;
   QObject::connect((QProgressBar*)sender, SIGNAL(valueChanged(int)), that, SLOT(slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0)));
   return that;
 }

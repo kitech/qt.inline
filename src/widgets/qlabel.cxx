@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qlabel.h
 // dst-file: /src/widgets/qlabel.cxx
 //
@@ -54,7 +54,7 @@ QLabel* dector_ZN6QLabelC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent,
 // QLabel_SlotProxy here
 class QLabel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QLabel_SlotProxy():QObject(){}
 
@@ -62,12 +62,13 @@ public slots:
   // linkActivated(const class QString &)
   void slot_proxy_func__ZN6QLabel13linkActivatedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN6QLabel13linkActivatedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN6QLabel13linkActivatedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // linkHovered(const class QString &)
   void slot_proxy_func__ZN6QLabel11linkHoveredERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN6QLabel11linkHoveredERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN6QLabel11linkHoveredERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qlabel.moc"
 
@@ -81,13 +82,14 @@ extern "C" {
 void QLabel_SlotProxy::slot_proxy_func__ZN6QLabel13linkActivatedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN6QLabel13linkActivatedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN6QLabel13linkActivatedERK7QString(arg0);
+    this->slot_func__ZN6QLabel13linkActivatedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QLabel_SlotProxy_connect__ZN6QLabel13linkActivatedERK7QString(QObject* sender, void* fptr){
+void* QLabel_SlotProxy_connect__ZN6QLabel13linkActivatedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLabel_SlotProxy();
-  that->slot_func__ZN6QLabel13linkActivatedERK7QString = (decltype(that->slot_func__ZN6QLabel13linkActivatedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QLabel13linkActivatedERK7QString = (decltype(that->slot_func__ZN6QLabel13linkActivatedERK7QString))ffifptr;
   QObject::connect((QLabel*)sender, SIGNAL(linkActivated(const class QString &)), that, SLOT(slot_proxy_func__ZN6QLabel13linkActivatedERK7QString(const QString & arg0)));
   return that;
 }
@@ -100,13 +102,14 @@ void QLabel_SlotProxy_disconnect__ZN6QLabel13linkActivatedERK7QString(QLabel_Slo
 void QLabel_SlotProxy::slot_proxy_func__ZN6QLabel11linkHoveredERK7QString(const QString & arg0) {
   if (this->slot_func__ZN6QLabel11linkHoveredERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN6QLabel11linkHoveredERK7QString(arg0);
+    this->slot_func__ZN6QLabel11linkHoveredERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QLabel_SlotProxy_connect__ZN6QLabel11linkHoveredERK7QString(QObject* sender, void* fptr){
+void* QLabel_SlotProxy_connect__ZN6QLabel11linkHoveredERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLabel_SlotProxy();
-  that->slot_func__ZN6QLabel11linkHoveredERK7QString = (decltype(that->slot_func__ZN6QLabel11linkHoveredERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN6QLabel11linkHoveredERK7QString = (decltype(that->slot_func__ZN6QLabel11linkHoveredERK7QString))ffifptr;
   QObject::connect((QLabel*)sender, SIGNAL(linkHovered(const class QString &)), that, SLOT(slot_proxy_func__ZN6QLabel11linkHoveredERK7QString(const QString & arg0)));
   return that;
 }

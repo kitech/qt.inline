@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgraphicsview.h
 // dst-file: /src/widgets/qgraphicsview.cxx
 //
@@ -135,7 +135,7 @@ void demth_ZN13QGraphicsView9fitInViewEddddN2Qt15AspectRatioModeE(void *that, do
 // QGraphicsView_SlotProxy here
 class QGraphicsView_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QGraphicsView_SlotProxy():QObject(){}
 
@@ -143,7 +143,8 @@ public slots:
   // rubberBandChanged(class QRect, class QPointF, class QPointF)
   void slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2);
 public:
-  void (*slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_)(QRect arg0, QPointF arg1, QPointF arg2) = NULL;
+  void (*slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_)(void* rsfptr, QRect arg0, QPointF arg1, QPointF arg2) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qgraphicsview.moc"
 
@@ -157,13 +158,14 @@ extern "C" {
 void QGraphicsView_SlotProxy::slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2) {
   if (this->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_ != NULL) {
     // do smth...
-    this->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(arg0, arg1, arg2);
+    this->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(this->rsfptr, arg0, arg1, arg2);
   }
 }
 extern "C"
-void* QGraphicsView_SlotProxy_connect__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QObject* sender, void* fptr){
+void* QGraphicsView_SlotProxy_connect__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QGraphicsView_SlotProxy();
-  that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_ = (decltype(that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_ = (decltype(that->slot_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_))ffifptr;
   QObject::connect((QGraphicsView*)sender, SIGNAL(rubberBandChanged(class QRect, class QPointF, class QPointF)), that, SLOT(slot_proxy_func__ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(QRect arg0, QPointF arg1, QPointF arg2)));
   return that;
 }

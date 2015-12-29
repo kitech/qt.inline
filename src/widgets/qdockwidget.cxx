@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
@@ -68,35 +68,36 @@ bool demth_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *that, Qt:
 // QDockWidget_SlotProxy here
 class QDockWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QDockWidget_SlotProxy():QObject(){}
 
 public slots:
+  // dockLocationChanged(Qt::DockWidgetArea)
+  void slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0);
+public:
+  void (*slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE)(void* rsfptr, Qt::DockWidgetArea arg0) = NULL;
+public slots:
   // featuresChanged(class QDockWidget::DockWidgetFeatures)
   void slot_proxy_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QDockWidget::DockWidgetFeatures arg0);
 public:
-  void (*slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE)(QDockWidget::DockWidgetFeatures arg0) = NULL;
-public slots:
-  // topLevelChanged(_Bool)
-  void slot_proxy_func__ZN11QDockWidget15topLevelChangedEb(bool arg0);
-public:
-  void (*slot_func__ZN11QDockWidget15topLevelChangedEb)(bool arg0) = NULL;
-public slots:
-  // allowedAreasChanged(Qt::DockWidgetAreas)
-  void slot_proxy_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(Qt::DockWidgetAreas arg0);
-public:
-  void (*slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE)(Qt::DockWidgetAreas arg0) = NULL;
+  void (*slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE)(void* rsfptr, QDockWidget::DockWidgetFeatures arg0) = NULL;
 public slots:
   // visibilityChanged(_Bool)
   void slot_proxy_func__ZN11QDockWidget17visibilityChangedEb(bool arg0);
 public:
-  void (*slot_func__ZN11QDockWidget17visibilityChangedEb)(bool arg0) = NULL;
+  void (*slot_func__ZN11QDockWidget17visibilityChangedEb)(void* rsfptr, bool arg0) = NULL;
 public slots:
-  // dockLocationChanged(Qt::DockWidgetArea)
-  void slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0);
+  // topLevelChanged(_Bool)
+  void slot_proxy_func__ZN11QDockWidget15topLevelChangedEb(bool arg0);
 public:
-  void (*slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE)(Qt::DockWidgetArea arg0) = NULL;
+  void (*slot_func__ZN11QDockWidget15topLevelChangedEb)(void* rsfptr, bool arg0) = NULL;
+public slots:
+  // allowedAreasChanged(Qt::DockWidgetAreas)
+  void slot_proxy_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(Qt::DockWidgetAreas arg0);
+public:
+  void (*slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE)(void* rsfptr, Qt::DockWidgetAreas arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qdockwidget.moc"
 
@@ -107,16 +108,37 @@ extern "C" {
   }
 };
 
-void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QDockWidget::DockWidgetFeatures arg0) {
-  if (this->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE != NULL) {
+void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0) {
+  if (this->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE != NULL) {
     // do smth...
-    this->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(arg0);
+    this->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDockWidget_SlotProxy_connect__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QObject* sender, void* fptr){
+void* QDockWidget_SlotProxy_connect__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDockWidget_SlotProxy();
-  that->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE = (decltype(that->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE = (decltype(that->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE))ffifptr;
+  QObject::connect((QDockWidget*)sender, SIGNAL(dockLocationChanged(Qt::DockWidgetArea)), that, SLOT(slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0)));
+  return that;
+}
+extern "C"
+void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(QDockWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QDockWidget::DockWidgetFeatures arg0) {
+  if (this->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE != NULL) {
+    // do smth...
+    this->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QDockWidget_SlotProxy_connect__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QDockWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE = (decltype(that->slot_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE))ffifptr;
   QObject::connect((QDockWidget*)sender, SIGNAL(featuresChanged(class QDockWidget::DockWidgetFeatures)), that, SLOT(slot_proxy_func__ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(QDockWidget::DockWidgetFeatures arg0)));
   return that;
 }
@@ -126,16 +148,37 @@ void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget15featuresChangedE6QFlagsI
   delete that;
 }
 
-void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget15topLevelChangedEb(bool arg0) {
-  if (this->slot_func__ZN11QDockWidget15topLevelChangedEb != NULL) {
+void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget17visibilityChangedEb(bool arg0) {
+  if (this->slot_func__ZN11QDockWidget17visibilityChangedEb != NULL) {
     // do smth...
-    this->slot_func__ZN11QDockWidget15topLevelChangedEb(arg0);
+    this->slot_func__ZN11QDockWidget17visibilityChangedEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDockWidget_SlotProxy_connect__ZN11QDockWidget15topLevelChangedEb(QObject* sender, void* fptr){
+void* QDockWidget_SlotProxy_connect__ZN11QDockWidget17visibilityChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDockWidget_SlotProxy();
-  that->slot_func__ZN11QDockWidget15topLevelChangedEb = (decltype(that->slot_func__ZN11QDockWidget15topLevelChangedEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QDockWidget17visibilityChangedEb = (decltype(that->slot_func__ZN11QDockWidget17visibilityChangedEb))ffifptr;
+  QObject::connect((QDockWidget*)sender, SIGNAL(visibilityChanged(_Bool)), that, SLOT(slot_proxy_func__ZN11QDockWidget17visibilityChangedEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget17visibilityChangedEb(QDockWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget15topLevelChangedEb(bool arg0) {
+  if (this->slot_func__ZN11QDockWidget15topLevelChangedEb != NULL) {
+    // do smth...
+    this->slot_func__ZN11QDockWidget15topLevelChangedEb(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QDockWidget_SlotProxy_connect__ZN11QDockWidget15topLevelChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QDockWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QDockWidget15topLevelChangedEb = (decltype(that->slot_func__ZN11QDockWidget15topLevelChangedEb))ffifptr;
   QObject::connect((QDockWidget*)sender, SIGNAL(topLevelChanged(_Bool)), that, SLOT(slot_proxy_func__ZN11QDockWidget15topLevelChangedEb(bool arg0)));
   return that;
 }
@@ -148,56 +191,19 @@ void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget15topLevelChangedEb(QDockW
 void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(Qt::DockWidgetAreas arg0) {
   if (this->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE != NULL) {
     // do smth...
-    this->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(arg0);
+    this->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QDockWidget_SlotProxy_connect__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(QObject* sender, void* fptr){
+void* QDockWidget_SlotProxy_connect__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QDockWidget_SlotProxy();
-  that->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE = (decltype(that->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE = (decltype(that->slot_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE))ffifptr;
   QObject::connect((QDockWidget*)sender, SIGNAL(allowedAreasChanged(Qt::DockWidgetAreas)), that, SLOT(slot_proxy_func__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(Qt::DockWidgetAreas arg0)));
   return that;
 }
 extern "C"
 void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(QDockWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget17visibilityChangedEb(bool arg0) {
-  if (this->slot_func__ZN11QDockWidget17visibilityChangedEb != NULL) {
-    // do smth...
-    this->slot_func__ZN11QDockWidget17visibilityChangedEb(arg0);
-  }
-}
-extern "C"
-void* QDockWidget_SlotProxy_connect__ZN11QDockWidget17visibilityChangedEb(QObject* sender, void* fptr){
-  auto that = new QDockWidget_SlotProxy();
-  that->slot_func__ZN11QDockWidget17visibilityChangedEb = (decltype(that->slot_func__ZN11QDockWidget17visibilityChangedEb))fptr;
-  QObject::connect((QDockWidget*)sender, SIGNAL(visibilityChanged(_Bool)), that, SLOT(slot_proxy_func__ZN11QDockWidget17visibilityChangedEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget17visibilityChangedEb(QDockWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QDockWidget_SlotProxy::slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0) {
-  if (this->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE != NULL) {
-    // do smth...
-    this->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(arg0);
-  }
-}
-extern "C"
-void* QDockWidget_SlotProxy_connect__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(QObject* sender, void* fptr){
-  auto that = new QDockWidget_SlotProxy();
-  that->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE = (decltype(that->slot_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE))fptr;
-  QObject::connect((QDockWidget*)sender, SIGNAL(dockLocationChanged(Qt::DockWidgetArea)), that, SLOT(slot_proxy_func__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(Qt::DockWidgetArea arg0)));
-  return that;
-}
-extern "C"
-void QDockWidget_SlotProxy_disconnect__ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(QDockWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

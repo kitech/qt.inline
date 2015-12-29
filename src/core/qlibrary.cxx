@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
@@ -70,10 +70,11 @@ void dedtor_ZN8QLibraryD0Ev(QLibrary* that)
 // QLibrary_SlotProxy here
 class QLibrary_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QLibrary_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qlibrary.moc"
 

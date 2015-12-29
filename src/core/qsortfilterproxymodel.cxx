@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qsortfilterproxymodel.h
 // dst-file: /src/core/qsortfilterproxymodel.cxx
 //
@@ -46,10 +46,11 @@ QSortFilterProxyModel* dector_ZN21QSortFilterProxyModelC1EP7QObject(QObject * pa
 // QSortFilterProxyModel_SlotProxy here
 class QSortFilterProxyModel_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSortFilterProxyModel_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qsortfilterproxymodel.moc"
 

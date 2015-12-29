@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qtextbrowser.h
 // dst-file: /src/widgets/qtextbrowser.cxx
 //
@@ -46,45 +46,46 @@ void dedtor_ZN12QTextBrowserD0Ev(QTextBrowser* that)
 // QTextBrowser_SlotProxy here
 class QTextBrowser_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTextBrowser_SlotProxy():QObject(){}
 
 public slots:
-  // backwardAvailable(_Bool)
-  void slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser17backwardAvailableEb)(bool arg0) = NULL;
-public slots:
-  // forwardAvailable(_Bool)
-  void slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser16forwardAvailableEb)(bool arg0) = NULL;
-public slots:
   // historyChanged()
   void slot_proxy_func__ZN12QTextBrowser14historyChangedEv();
 public:
-  void (*slot_func__ZN12QTextBrowser14historyChangedEv)() = NULL;
-public slots:
-  // sourceChanged(const class QUrl &)
-  void slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl)(const QUrl & arg0) = NULL;
-public slots:
-  // highlighted(const class QUrl &)
-  void slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser11highlightedERK4QUrl)(const QUrl & arg0) = NULL;
+  void (*slot_func__ZN12QTextBrowser14historyChangedEv)(void* rsfptr) = NULL;
 public slots:
   // highlighted(const class QString &)
   void slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN12QTextBrowser11highlightedERK7QString)(const QString & arg0) = NULL;
+  void (*slot_func__ZN12QTextBrowser11highlightedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public slots:
+  // sourceChanged(const class QUrl &)
+  void slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0);
+public:
+  void (*slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
+public slots:
+  // highlighted(const class QUrl &)
+  void slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0);
+public:
+  void (*slot_func__ZN12QTextBrowser11highlightedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
+public slots:
+  // forwardAvailable(_Bool)
+  void slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0);
+public:
+  void (*slot_func__ZN12QTextBrowser16forwardAvailableEb)(void* rsfptr, bool arg0) = NULL;
 public slots:
   // anchorClicked(const class QUrl &)
   void slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0);
 public:
-  void (*slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl)(const QUrl & arg0) = NULL;
+  void (*slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
+public slots:
+  // backwardAvailable(_Bool)
+  void slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0);
+public:
+  void (*slot_func__ZN12QTextBrowser17backwardAvailableEb)(void* rsfptr, bool arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qtextbrowser.moc"
 
@@ -95,54 +96,17 @@ extern "C" {
   }
 };
 
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0) {
-  if (this->slot_func__ZN12QTextBrowser17backwardAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser17backwardAvailableEb(arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser17backwardAvailableEb(QObject* sender, void* fptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser17backwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser17backwardAvailableEb))fptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(backwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser17backwardAvailableEb(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0) {
-  if (this->slot_func__ZN12QTextBrowser16forwardAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser16forwardAvailableEb(arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser16forwardAvailableEb(QObject* sender, void* fptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser16forwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser16forwardAvailableEb))fptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(forwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser16forwardAvailableEb(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser14historyChangedEv() {
   if (this->slot_func__ZN12QTextBrowser14historyChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN12QTextBrowser14historyChangedEv();
+    this->slot_func__ZN12QTextBrowser14historyChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser14historyChangedEv(QObject* sender, void* fptr){
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser14historyChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser14historyChangedEv = (decltype(that->slot_func__ZN12QTextBrowser14historyChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser14historyChangedEv = (decltype(that->slot_func__ZN12QTextBrowser14historyChangedEv))ffifptr;
   QObject::connect((QTextBrowser*)sender, SIGNAL(historyChanged()), that, SLOT(slot_proxy_func__ZN12QTextBrowser14historyChangedEv()));
   return that;
 }
@@ -152,16 +116,37 @@ void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser14historyChangedEv(QText
   delete that;
 }
 
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl != NULL) {
+void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN12QTextBrowser11highlightedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl(arg0);
+    this->slot_func__ZN12QTextBrowser11highlightedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13sourceChangedERK4QUrl(QObject* sender, void* fptr){
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser11highlightedERK7QString = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK7QString))ffifptr;
+  QObject::connect((QTextBrowser*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK7QString(QTextBrowser_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0) {
+  if (this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl != NULL) {
+    // do smth...
+    this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13sourceChangedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QTextBrowser_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl))ffifptr;
   QObject::connect((QTextBrowser*)sender, SIGNAL(sourceChanged(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0)));
   return that;
 }
@@ -174,13 +159,14 @@ void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser13sourceChangedERK4QUrl(
 void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0) {
   if (this->slot_func__ZN12QTextBrowser11highlightedERK4QUrl != NULL) {
     // do smth...
-    this->slot_func__ZN12QTextBrowser11highlightedERK4QUrl(arg0);
+    this->slot_func__ZN12QTextBrowser11highlightedERK4QUrl(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK4QUrl(QObject* sender, void* fptr){
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl))ffifptr;
   QObject::connect((QTextBrowser*)sender, SIGNAL(highlighted(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0)));
   return that;
 }
@@ -190,21 +176,22 @@ void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK4QUrl(QT
   delete that;
 }
 
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN12QTextBrowser11highlightedERK7QString != NULL) {
+void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0) {
+  if (this->slot_func__ZN12QTextBrowser16forwardAvailableEb != NULL) {
     // do smth...
-    this->slot_func__ZN12QTextBrowser11highlightedERK7QString(arg0);
+    this->slot_func__ZN12QTextBrowser16forwardAvailableEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK7QString(QObject* sender, void* fptr){
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser16forwardAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser11highlightedERK7QString = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK7QString))fptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0)));
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser16forwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser16forwardAvailableEb))ffifptr;
+  QObject::connect((QTextBrowser*)sender, SIGNAL(forwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0)));
   return that;
 }
 extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK7QString(QTextBrowser_SlotProxy* that) {
+void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser16forwardAvailableEb(QTextBrowser_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -212,18 +199,39 @@ void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK7QString
 void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0) {
   if (this->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl != NULL) {
     // do smth...
-    this->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl(arg0);
+    this->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13anchorClickedERK4QUrl(QObject* sender, void* fptr){
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13anchorClickedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QTextBrowser_SlotProxy();
-  that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl))ffifptr;
   QObject::connect((QTextBrowser*)sender, SIGNAL(anchorClicked(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0)));
   return that;
 }
 extern "C"
 void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser13anchorClickedERK4QUrl(QTextBrowser_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0) {
+  if (this->slot_func__ZN12QTextBrowser17backwardAvailableEb != NULL) {
+    // do smth...
+    this->slot_func__ZN12QTextBrowser17backwardAvailableEb(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser17backwardAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QTextBrowser_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QTextBrowser17backwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser17backwardAvailableEb))ffifptr;
+  QObject::connect((QTextBrowser*)sender, SIGNAL(backwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0)));
+  return that;
+}
+extern "C"
+void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser17backwardAvailableEb(QTextBrowser_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

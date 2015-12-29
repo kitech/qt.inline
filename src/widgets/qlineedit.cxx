@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qlineedit.h
 // dst-file: /src/widgets/qlineedit.cxx
 //
@@ -54,7 +54,7 @@ QLineEdit* dector_ZN9QLineEditC1EP7QWidget(QWidget * parent)
 // QLineEdit_SlotProxy here
 class QLineEdit_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QLineEdit_SlotProxy():QObject(){}
 
@@ -62,32 +62,33 @@ public slots:
   // textChanged(const class QString &)
   void slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0);
 public:
-  void (*slot_func__ZN9QLineEdit11textChangedERK7QString)(const QString & arg0) = NULL;
-public slots:
-  // textEdited(const class QString &)
-  void slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN9QLineEdit10textEditedERK7QString)(const QString & arg0) = NULL;
-public slots:
-  // cursorPositionChanged(int, int)
-  void slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1);
-public:
-  void (*slot_func__ZN9QLineEdit21cursorPositionChangedEii)(int arg0, int arg1) = NULL;
-public slots:
-  // returnPressed()
-  void slot_proxy_func__ZN9QLineEdit13returnPressedEv();
-public:
-  void (*slot_func__ZN9QLineEdit13returnPressedEv)() = NULL;
+  void (*slot_func__ZN9QLineEdit11textChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
 public slots:
   // editingFinished()
   void slot_proxy_func__ZN9QLineEdit15editingFinishedEv();
 public:
-  void (*slot_func__ZN9QLineEdit15editingFinishedEv)() = NULL;
+  void (*slot_func__ZN9QLineEdit15editingFinishedEv)(void* rsfptr) = NULL;
 public slots:
   // selectionChanged()
   void slot_proxy_func__ZN9QLineEdit16selectionChangedEv();
 public:
-  void (*slot_func__ZN9QLineEdit16selectionChangedEv)() = NULL;
+  void (*slot_func__ZN9QLineEdit16selectionChangedEv)(void* rsfptr) = NULL;
+public slots:
+  // cursorPositionChanged(int, int)
+  void slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1);
+public:
+  void (*slot_func__ZN9QLineEdit21cursorPositionChangedEii)(void* rsfptr, int arg0, int arg1) = NULL;
+public slots:
+  // returnPressed()
+  void slot_proxy_func__ZN9QLineEdit13returnPressedEv();
+public:
+  void (*slot_func__ZN9QLineEdit13returnPressedEv)(void* rsfptr) = NULL;
+public slots:
+  // textEdited(const class QString &)
+  void slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0);
+public:
+  void (*slot_func__ZN9QLineEdit10textEditedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qlineedit.moc"
 
@@ -101,13 +102,14 @@ extern "C" {
 void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0) {
   if (this->slot_func__ZN9QLineEdit11textChangedERK7QString != NULL) {
     // do smth...
-    this->slot_func__ZN9QLineEdit11textChangedERK7QString(arg0);
+    this->slot_func__ZN9QLineEdit11textChangedERK7QString(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit11textChangedERK7QString(QObject* sender, void* fptr){
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit11textChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit11textChangedERK7QString = (decltype(that->slot_func__ZN9QLineEdit11textChangedERK7QString))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit11textChangedERK7QString = (decltype(that->slot_func__ZN9QLineEdit11textChangedERK7QString))ffifptr;
   QObject::connect((QLineEdit*)sender, SIGNAL(textChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0)));
   return that;
 }
@@ -117,73 +119,17 @@ void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit11textChangedERK7QString(QLineE
   delete that;
 }
 
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN9QLineEdit10textEditedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit10textEditedERK7QString(arg0);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit10textEditedERK7QString(QObject* sender, void* fptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit10textEditedERK7QString = (decltype(that->slot_func__ZN9QLineEdit10textEditedERK7QString))fptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(textEdited(const class QString &)), that, SLOT(slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit10textEditedERK7QString(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1) {
-  if (this->slot_func__ZN9QLineEdit21cursorPositionChangedEii != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit21cursorPositionChangedEii(arg0, arg1);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit21cursorPositionChangedEii(QObject* sender, void* fptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit21cursorPositionChangedEii = (decltype(that->slot_func__ZN9QLineEdit21cursorPositionChangedEii))fptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(cursorPositionChanged(int, int)), that, SLOT(slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1)));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit21cursorPositionChangedEii(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit13returnPressedEv() {
-  if (this->slot_func__ZN9QLineEdit13returnPressedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit13returnPressedEv();
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit13returnPressedEv(QObject* sender, void* fptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit13returnPressedEv = (decltype(that->slot_func__ZN9QLineEdit13returnPressedEv))fptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(returnPressed()), that, SLOT(slot_proxy_func__ZN9QLineEdit13returnPressedEv()));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit13returnPressedEv(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit15editingFinishedEv() {
   if (this->slot_func__ZN9QLineEdit15editingFinishedEv != NULL) {
     // do smth...
-    this->slot_func__ZN9QLineEdit15editingFinishedEv();
+    this->slot_func__ZN9QLineEdit15editingFinishedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit15editingFinishedEv(QObject* sender, void* fptr){
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit15editingFinishedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit15editingFinishedEv = (decltype(that->slot_func__ZN9QLineEdit15editingFinishedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit15editingFinishedEv = (decltype(that->slot_func__ZN9QLineEdit15editingFinishedEv))ffifptr;
   QObject::connect((QLineEdit*)sender, SIGNAL(editingFinished()), that, SLOT(slot_proxy_func__ZN9QLineEdit15editingFinishedEv()));
   return that;
 }
@@ -196,18 +142,79 @@ void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit15editingFinishedEv(QLineEdit_S
 void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit16selectionChangedEv() {
   if (this->slot_func__ZN9QLineEdit16selectionChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN9QLineEdit16selectionChangedEv();
+    this->slot_func__ZN9QLineEdit16selectionChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit16selectionChangedEv(QObject* sender, void* fptr){
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit16selectionChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QLineEdit_SlotProxy();
-  that->slot_func__ZN9QLineEdit16selectionChangedEv = (decltype(that->slot_func__ZN9QLineEdit16selectionChangedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit16selectionChangedEv = (decltype(that->slot_func__ZN9QLineEdit16selectionChangedEv))ffifptr;
   QObject::connect((QLineEdit*)sender, SIGNAL(selectionChanged()), that, SLOT(slot_proxy_func__ZN9QLineEdit16selectionChangedEv()));
   return that;
 }
 extern "C"
 void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit16selectionChangedEv(QLineEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1) {
+  if (this->slot_func__ZN9QLineEdit21cursorPositionChangedEii != NULL) {
+    // do smth...
+    this->slot_func__ZN9QLineEdit21cursorPositionChangedEii(this->rsfptr, arg0, arg1);
+  }
+}
+extern "C"
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit21cursorPositionChangedEii(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QLineEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit21cursorPositionChangedEii = (decltype(that->slot_func__ZN9QLineEdit21cursorPositionChangedEii))ffifptr;
+  QObject::connect((QLineEdit*)sender, SIGNAL(cursorPositionChanged(int, int)), that, SLOT(slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1)));
+  return that;
+}
+extern "C"
+void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit21cursorPositionChangedEii(QLineEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit13returnPressedEv() {
+  if (this->slot_func__ZN9QLineEdit13returnPressedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN9QLineEdit13returnPressedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit13returnPressedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QLineEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit13returnPressedEv = (decltype(that->slot_func__ZN9QLineEdit13returnPressedEv))ffifptr;
+  QObject::connect((QLineEdit*)sender, SIGNAL(returnPressed()), that, SLOT(slot_proxy_func__ZN9QLineEdit13returnPressedEv()));
+  return that;
+}
+extern "C"
+void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit13returnPressedEv(QLineEdit_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0) {
+  if (this->slot_func__ZN9QLineEdit10textEditedERK7QString != NULL) {
+    // do smth...
+    this->slot_func__ZN9QLineEdit10textEditedERK7QString(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QLineEdit_SlotProxy_connect__ZN9QLineEdit10textEditedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QLineEdit_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QLineEdit10textEditedERK7QString = (decltype(that->slot_func__ZN9QLineEdit10textEditedERK7QString))ffifptr;
+  QObject::connect((QLineEdit*)sender, SIGNAL(textEdited(const class QString &)), that, SLOT(slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0)));
+  return that;
+}
+extern "C"
+void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit10textEditedERK7QString(QLineEdit_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

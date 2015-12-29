@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qgesturerecognizer.h
 // dst-file: /src/widgets/qgesturerecognizer.cxx
 //

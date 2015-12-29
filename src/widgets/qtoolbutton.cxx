@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qtoolbutton.h
 // dst-file: /src/widgets/qtoolbutton.cxx
 //
@@ -46,7 +46,7 @@ QToolButton* dector_ZN11QToolButtonC1EP7QWidget(QWidget * parent)
 // QToolButton_SlotProxy here
 class QToolButton_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QToolButton_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // triggered(class QAction *)
   void slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0);
 public:
-  void (*slot_func__ZN11QToolButton9triggeredEP7QAction)(QAction * arg0) = NULL;
+  void (*slot_func__ZN11QToolButton9triggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qtoolbutton.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QToolButton_SlotProxy::slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0) {
   if (this->slot_func__ZN11QToolButton9triggeredEP7QAction != NULL) {
     // do smth...
-    this->slot_func__ZN11QToolButton9triggeredEP7QAction(arg0);
+    this->slot_func__ZN11QToolButton9triggeredEP7QAction(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QToolButton_SlotProxy_connect__ZN11QToolButton9triggeredEP7QAction(QObject* sender, void* fptr){
+void* QToolButton_SlotProxy_connect__ZN11QToolButton9triggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QToolButton_SlotProxy();
-  that->slot_func__ZN11QToolButton9triggeredEP7QAction = (decltype(that->slot_func__ZN11QToolButton9triggeredEP7QAction))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QToolButton9triggeredEP7QAction = (decltype(that->slot_func__ZN11QToolButton9triggeredEP7QAction))ffifptr;
   QObject::connect((QToolButton*)sender, SIGNAL(triggered(class QAction *)), that, SLOT(slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0)));
   return that;
 }

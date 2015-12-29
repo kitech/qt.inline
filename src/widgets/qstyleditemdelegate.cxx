@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qstyleditemdelegate.h
 // dst-file: /src/widgets/qstyleditemdelegate.cxx
 //
@@ -46,10 +46,11 @@ QStyledItemDelegate* dector_ZN19QStyledItemDelegateC1EP7QObject(QObject * parent
 // QStyledItemDelegate_SlotProxy here
 class QStyledItemDelegate_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QStyledItemDelegate_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qstyleditemdelegate.moc"
 

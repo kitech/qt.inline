@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
@@ -60,10 +60,11 @@ bool demth_ZNK9QTextList7isEmptyEv(void *that)
 // QTextList_SlotProxy here
 class QTextList_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QTextList_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qtextlist.moc"
 

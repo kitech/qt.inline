@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qabstractscrollarea.h
 // dst-file: /src/widgets/qabstractscrollarea.cxx
 //
@@ -31,10 +31,11 @@ int QAbstractScrollArea_Class_Size()
 // QAbstractScrollArea_SlotProxy here
 class QAbstractScrollArea_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractScrollArea_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qabstractscrollarea.moc"
 

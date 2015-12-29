@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qopenglwidget.h
 // dst-file: /src/widgets/qopenglwidget.cxx
 //
@@ -46,30 +46,31 @@ QOpenGLWidget* dector_ZN13QOpenGLWidgetC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QW
 // QOpenGLWidget_SlotProxy here
 class QOpenGLWidget_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOpenGLWidget_SlotProxy():QObject(){}
 
 public slots:
-  // aboutToCompose()
-  void slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv();
+  // aboutToResize()
+  void slot_proxy_func__ZN13QOpenGLWidget13aboutToResizeEv();
 public:
-  void (*slot_func__ZN13QOpenGLWidget14aboutToComposeEv)() = NULL;
+  void (*slot_func__ZN13QOpenGLWidget13aboutToResizeEv)(void* rsfptr) = NULL;
 public slots:
   // frameSwapped()
   void slot_proxy_func__ZN13QOpenGLWidget12frameSwappedEv();
 public:
-  void (*slot_func__ZN13QOpenGLWidget12frameSwappedEv)() = NULL;
-public slots:
-  // aboutToResize()
-  void slot_proxy_func__ZN13QOpenGLWidget13aboutToResizeEv();
-public:
-  void (*slot_func__ZN13QOpenGLWidget13aboutToResizeEv)() = NULL;
+  void (*slot_func__ZN13QOpenGLWidget12frameSwappedEv)(void* rsfptr) = NULL;
 public slots:
   // resized()
   void slot_proxy_func__ZN13QOpenGLWidget7resizedEv();
 public:
-  void (*slot_func__ZN13QOpenGLWidget7resizedEv)() = NULL;
+  void (*slot_func__ZN13QOpenGLWidget7resizedEv)(void* rsfptr) = NULL;
+public slots:
+  // aboutToCompose()
+  void slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv();
+public:
+  void (*slot_func__ZN13QOpenGLWidget14aboutToComposeEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qopenglwidget.moc"
 
@@ -80,54 +81,17 @@ extern "C" {
   }
 };
 
-void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv() {
-  if (this->slot_func__ZN13QOpenGLWidget14aboutToComposeEv != NULL) {
-    // do smth...
-    this->slot_func__ZN13QOpenGLWidget14aboutToComposeEv();
-  }
-}
-extern "C"
-void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget14aboutToComposeEv(QObject* sender, void* fptr){
-  auto that = new QOpenGLWidget_SlotProxy();
-  that->slot_func__ZN13QOpenGLWidget14aboutToComposeEv = (decltype(that->slot_func__ZN13QOpenGLWidget14aboutToComposeEv))fptr;
-  QObject::connect((QOpenGLWidget*)sender, SIGNAL(aboutToCompose()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv()));
-  return that;
-}
-extern "C"
-void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget14aboutToComposeEv(QOpenGLWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget12frameSwappedEv() {
-  if (this->slot_func__ZN13QOpenGLWidget12frameSwappedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN13QOpenGLWidget12frameSwappedEv();
-  }
-}
-extern "C"
-void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget12frameSwappedEv(QObject* sender, void* fptr){
-  auto that = new QOpenGLWidget_SlotProxy();
-  that->slot_func__ZN13QOpenGLWidget12frameSwappedEv = (decltype(that->slot_func__ZN13QOpenGLWidget12frameSwappedEv))fptr;
-  QObject::connect((QOpenGLWidget*)sender, SIGNAL(frameSwapped()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget12frameSwappedEv()));
-  return that;
-}
-extern "C"
-void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget12frameSwappedEv(QOpenGLWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget13aboutToResizeEv() {
   if (this->slot_func__ZN13QOpenGLWidget13aboutToResizeEv != NULL) {
     // do smth...
-    this->slot_func__ZN13QOpenGLWidget13aboutToResizeEv();
+    this->slot_func__ZN13QOpenGLWidget13aboutToResizeEv(this->rsfptr);
   }
 }
 extern "C"
-void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget13aboutToResizeEv(QObject* sender, void* fptr){
+void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget13aboutToResizeEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QOpenGLWidget_SlotProxy();
-  that->slot_func__ZN13QOpenGLWidget13aboutToResizeEv = (decltype(that->slot_func__ZN13QOpenGLWidget13aboutToResizeEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QOpenGLWidget13aboutToResizeEv = (decltype(that->slot_func__ZN13QOpenGLWidget13aboutToResizeEv))ffifptr;
   QObject::connect((QOpenGLWidget*)sender, SIGNAL(aboutToResize()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget13aboutToResizeEv()));
   return that;
 }
@@ -137,21 +101,62 @@ void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget13aboutToResizeEv(QOpe
   delete that;
 }
 
-void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget7resizedEv() {
-  if (this->slot_func__ZN13QOpenGLWidget7resizedEv != NULL) {
+void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget12frameSwappedEv() {
+  if (this->slot_func__ZN13QOpenGLWidget12frameSwappedEv != NULL) {
     // do smth...
-    this->slot_func__ZN13QOpenGLWidget7resizedEv();
+    this->slot_func__ZN13QOpenGLWidget12frameSwappedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget7resizedEv(QObject* sender, void* fptr){
+void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget12frameSwappedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QOpenGLWidget_SlotProxy();
-  that->slot_func__ZN13QOpenGLWidget7resizedEv = (decltype(that->slot_func__ZN13QOpenGLWidget7resizedEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QOpenGLWidget12frameSwappedEv = (decltype(that->slot_func__ZN13QOpenGLWidget12frameSwappedEv))ffifptr;
+  QObject::connect((QOpenGLWidget*)sender, SIGNAL(frameSwapped()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget12frameSwappedEv()));
+  return that;
+}
+extern "C"
+void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget12frameSwappedEv(QOpenGLWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget7resizedEv() {
+  if (this->slot_func__ZN13QOpenGLWidget7resizedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN13QOpenGLWidget7resizedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget7resizedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QOpenGLWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QOpenGLWidget7resizedEv = (decltype(that->slot_func__ZN13QOpenGLWidget7resizedEv))ffifptr;
   QObject::connect((QOpenGLWidget*)sender, SIGNAL(resized()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget7resizedEv()));
   return that;
 }
 extern "C"
 void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget7resizedEv(QOpenGLWidget_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QOpenGLWidget_SlotProxy::slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv() {
+  if (this->slot_func__ZN13QOpenGLWidget14aboutToComposeEv != NULL) {
+    // do smth...
+    this->slot_func__ZN13QOpenGLWidget14aboutToComposeEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QOpenGLWidget_SlotProxy_connect__ZN13QOpenGLWidget14aboutToComposeEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QOpenGLWidget_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QOpenGLWidget14aboutToComposeEv = (decltype(that->slot_func__ZN13QOpenGLWidget14aboutToComposeEv))ffifptr;
+  QObject::connect((QOpenGLWidget*)sender, SIGNAL(aboutToCompose()), that, SLOT(slot_proxy_func__ZN13QOpenGLWidget14aboutToComposeEv()));
+  return that;
+}
+extern "C"
+void QOpenGLWidget_SlotProxy_disconnect__ZN13QOpenGLWidget14aboutToComposeEv(QOpenGLWidget_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

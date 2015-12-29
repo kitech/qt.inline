@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qabstractbutton.h
 // dst-file: /src/widgets/qabstractbutton.cxx
 //
@@ -31,30 +31,31 @@ int QAbstractButton_Class_Size()
 // QAbstractButton_SlotProxy here
 class QAbstractButton_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractButton_SlotProxy():QObject(){}
 
 public slots:
-  // pressed()
-  void slot_proxy_func__ZN15QAbstractButton7pressedEv();
-public:
-  void (*slot_func__ZN15QAbstractButton7pressedEv)() = NULL;
-public slots:
-  // released()
-  void slot_proxy_func__ZN15QAbstractButton8releasedEv();
-public:
-  void (*slot_func__ZN15QAbstractButton8releasedEv)() = NULL;
-public slots:
   // clicked(_Bool)
   void slot_proxy_func__ZN15QAbstractButton7clickedEb(bool arg0);
 public:
-  void (*slot_func__ZN15QAbstractButton7clickedEb)(bool arg0) = NULL;
+  void (*slot_func__ZN15QAbstractButton7clickedEb)(void* rsfptr, bool arg0) = NULL;
 public slots:
   // toggled(_Bool)
   void slot_proxy_func__ZN15QAbstractButton7toggledEb(bool arg0);
 public:
-  void (*slot_func__ZN15QAbstractButton7toggledEb)(bool arg0) = NULL;
+  void (*slot_func__ZN15QAbstractButton7toggledEb)(void* rsfptr, bool arg0) = NULL;
+public slots:
+  // pressed()
+  void slot_proxy_func__ZN15QAbstractButton7pressedEv();
+public:
+  void (*slot_func__ZN15QAbstractButton7pressedEv)(void* rsfptr) = NULL;
+public slots:
+  // released()
+  void slot_proxy_func__ZN15QAbstractButton8releasedEv();
+public:
+  void (*slot_func__ZN15QAbstractButton8releasedEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qabstractbutton.moc"
 
@@ -65,54 +66,17 @@ extern "C" {
   }
 };
 
-void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton7pressedEv() {
-  if (this->slot_func__ZN15QAbstractButton7pressedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QAbstractButton7pressedEv();
-  }
-}
-extern "C"
-void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7pressedEv(QObject* sender, void* fptr){
-  auto that = new QAbstractButton_SlotProxy();
-  that->slot_func__ZN15QAbstractButton7pressedEv = (decltype(that->slot_func__ZN15QAbstractButton7pressedEv))fptr;
-  QObject::connect((QAbstractButton*)sender, SIGNAL(pressed()), that, SLOT(slot_proxy_func__ZN15QAbstractButton7pressedEv()));
-  return that;
-}
-extern "C"
-void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton7pressedEv(QAbstractButton_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton8releasedEv() {
-  if (this->slot_func__ZN15QAbstractButton8releasedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QAbstractButton8releasedEv();
-  }
-}
-extern "C"
-void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton8releasedEv(QObject* sender, void* fptr){
-  auto that = new QAbstractButton_SlotProxy();
-  that->slot_func__ZN15QAbstractButton8releasedEv = (decltype(that->slot_func__ZN15QAbstractButton8releasedEv))fptr;
-  QObject::connect((QAbstractButton*)sender, SIGNAL(released()), that, SLOT(slot_proxy_func__ZN15QAbstractButton8releasedEv()));
-  return that;
-}
-extern "C"
-void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton8releasedEv(QAbstractButton_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
 void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton7clickedEb(bool arg0) {
   if (this->slot_func__ZN15QAbstractButton7clickedEb != NULL) {
     // do smth...
-    this->slot_func__ZN15QAbstractButton7clickedEb(arg0);
+    this->slot_func__ZN15QAbstractButton7clickedEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7clickedEb(QObject* sender, void* fptr){
+void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7clickedEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractButton_SlotProxy();
-  that->slot_func__ZN15QAbstractButton7clickedEb = (decltype(that->slot_func__ZN15QAbstractButton7clickedEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QAbstractButton7clickedEb = (decltype(that->slot_func__ZN15QAbstractButton7clickedEb))ffifptr;
   QObject::connect((QAbstractButton*)sender, SIGNAL(clicked(_Bool)), that, SLOT(slot_proxy_func__ZN15QAbstractButton7clickedEb(bool arg0)));
   return that;
 }
@@ -125,18 +89,59 @@ void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton7clickedEb(QAbstra
 void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton7toggledEb(bool arg0) {
   if (this->slot_func__ZN15QAbstractButton7toggledEb != NULL) {
     // do smth...
-    this->slot_func__ZN15QAbstractButton7toggledEb(arg0);
+    this->slot_func__ZN15QAbstractButton7toggledEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7toggledEb(QObject* sender, void* fptr){
+void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7toggledEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractButton_SlotProxy();
-  that->slot_func__ZN15QAbstractButton7toggledEb = (decltype(that->slot_func__ZN15QAbstractButton7toggledEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QAbstractButton7toggledEb = (decltype(that->slot_func__ZN15QAbstractButton7toggledEb))ffifptr;
   QObject::connect((QAbstractButton*)sender, SIGNAL(toggled(_Bool)), that, SLOT(slot_proxy_func__ZN15QAbstractButton7toggledEb(bool arg0)));
   return that;
 }
 extern "C"
 void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton7toggledEb(QAbstractButton_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton7pressedEv() {
+  if (this->slot_func__ZN15QAbstractButton7pressedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QAbstractButton7pressedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton7pressedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QAbstractButton_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QAbstractButton7pressedEv = (decltype(that->slot_func__ZN15QAbstractButton7pressedEv))ffifptr;
+  QObject::connect((QAbstractButton*)sender, SIGNAL(pressed()), that, SLOT(slot_proxy_func__ZN15QAbstractButton7pressedEv()));
+  return that;
+}
+extern "C"
+void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton7pressedEv(QAbstractButton_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QAbstractButton_SlotProxy::slot_proxy_func__ZN15QAbstractButton8releasedEv() {
+  if (this->slot_func__ZN15QAbstractButton8releasedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN15QAbstractButton8releasedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QAbstractButton_SlotProxy_connect__ZN15QAbstractButton8releasedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QAbstractButton_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN15QAbstractButton8releasedEv = (decltype(that->slot_func__ZN15QAbstractButton8releasedEv))ffifptr;
+  QObject::connect((QAbstractButton*)sender, SIGNAL(released()), that, SLOT(slot_proxy_func__ZN15QAbstractButton8releasedEv()));
+  return that;
+}
+extern "C"
+void QAbstractButton_SlotProxy_disconnect__ZN15QAbstractButton8releasedEv(QAbstractButton_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

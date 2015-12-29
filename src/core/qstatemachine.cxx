@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qstatemachine.h
 // dst-file: /src/core/qstatemachine.cxx
 //
@@ -54,7 +54,7 @@ void dedtor_ZN13QStateMachineD0Ev(QStateMachine* that)
 // QStateMachine_SlotProxy here
 class QStateMachine_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QStateMachine_SlotProxy():QObject(){}
 
@@ -62,7 +62,8 @@ public slots:
   // runningChanged(_Bool)
   void slot_proxy_func__ZN13QStateMachine14runningChangedEb(bool arg0);
 public:
-  void (*slot_func__ZN13QStateMachine14runningChangedEb)(bool arg0) = NULL;
+  void (*slot_func__ZN13QStateMachine14runningChangedEb)(void* rsfptr, bool arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/core/qstatemachine.moc"
 
@@ -76,13 +77,14 @@ extern "C" {
 void QStateMachine_SlotProxy::slot_proxy_func__ZN13QStateMachine14runningChangedEb(bool arg0) {
   if (this->slot_func__ZN13QStateMachine14runningChangedEb != NULL) {
     // do smth...
-    this->slot_func__ZN13QStateMachine14runningChangedEb(arg0);
+    this->slot_func__ZN13QStateMachine14runningChangedEb(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QStateMachine_SlotProxy_connect__ZN13QStateMachine14runningChangedEb(QObject* sender, void* fptr){
+void* QStateMachine_SlotProxy_connect__ZN13QStateMachine14runningChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QStateMachine_SlotProxy();
-  that->slot_func__ZN13QStateMachine14runningChangedEb = (decltype(that->slot_func__ZN13QStateMachine14runningChangedEb))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN13QStateMachine14runningChangedEb = (decltype(that->slot_func__ZN13QStateMachine14runningChangedEb))ffifptr;
   QObject::connect((QStateMachine*)sender, SIGNAL(runningChanged(_Bool)), that, SLOT(slot_proxy_func__ZN13QStateMachine14runningChangedEb(bool arg0)));
   return that;
 }

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtGui/qoffscreensurface.h
 // dst-file: /src/gui/qoffscreensurface.cxx
 //
@@ -46,7 +46,7 @@ QOffscreenSurface* dector_ZN17QOffscreenSurfaceC1EP7QScreen(QScreen * screen)
 // QOffscreenSurface_SlotProxy here
 class QOffscreenSurface_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QOffscreenSurface_SlotProxy():QObject(){}
 
@@ -54,7 +54,8 @@ public slots:
   // screenChanged(class QScreen *)
   void slot_proxy_func__ZN17QOffscreenSurface13screenChangedEP7QScreen(QScreen * arg0);
 public:
-  void (*slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen)(QScreen * arg0) = NULL;
+  void (*slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen)(void* rsfptr, QScreen * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/gui/qoffscreensurface.moc"
 
@@ -68,13 +69,14 @@ extern "C" {
 void QOffscreenSurface_SlotProxy::slot_proxy_func__ZN17QOffscreenSurface13screenChangedEP7QScreen(QScreen * arg0) {
   if (this->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen != NULL) {
     // do smth...
-    this->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen(arg0);
+    this->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QOffscreenSurface_SlotProxy_connect__ZN17QOffscreenSurface13screenChangedEP7QScreen(QObject* sender, void* fptr){
+void* QOffscreenSurface_SlotProxy_connect__ZN17QOffscreenSurface13screenChangedEP7QScreen(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QOffscreenSurface_SlotProxy();
-  that->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen = (decltype(that->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen = (decltype(that->slot_func__ZN17QOffscreenSurface13screenChangedEP7QScreen))ffifptr;
   QObject::connect((QOffscreenSurface*)sender, SIGNAL(screenChanged(class QScreen *)), that, SLOT(slot_proxy_func__ZN17QOffscreenSurface13screenChangedEP7QScreen(QScreen * arg0)));
   return that;
 }

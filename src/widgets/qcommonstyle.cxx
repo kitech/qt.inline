@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qcommonstyle.h
 // dst-file: /src/widgets/qcommonstyle.cxx
 //
@@ -46,10 +46,11 @@ void dedtor_ZN12QCommonStyleD0Ev(QCommonStyle* that)
 // QCommonStyle_SlotProxy here
 class QCommonStyle_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QCommonStyle_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qcommonstyle.moc"
 

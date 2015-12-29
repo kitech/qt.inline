@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qmessagebox.h
 // dst-file: /src/widgets/qmessagebox.cxx
 //
@@ -83,7 +83,7 @@ int demth_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
 // QMessageBox_SlotProxy here
 class QMessageBox_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QMessageBox_SlotProxy():QObject(){}
 
@@ -91,7 +91,8 @@ public slots:
   // buttonClicked(class QAbstractButton *)
   void slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0);
 public:
-  void (*slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton)(QAbstractButton * arg0) = NULL;
+  void (*slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton)(void* rsfptr, QAbstractButton * arg0) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qmessagebox.moc"
 
@@ -105,13 +106,14 @@ extern "C" {
 void QMessageBox_SlotProxy::slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0) {
   if (this->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton != NULL) {
     // do smth...
-    this->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(arg0);
+    this->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(this->rsfptr, arg0);
   }
 }
 extern "C"
-void* QMessageBox_SlotProxy_connect__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QObject* sender, void* fptr){
+void* QMessageBox_SlotProxy_connect__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QMessageBox_SlotProxy();
-  that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton = (decltype(that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton = (decltype(that->slot_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton))ffifptr;
   QObject::connect((QMessageBox*)sender, SIGNAL(buttonClicked(class QAbstractButton *)), that, SLOT(slot_proxy_func__ZN11QMessageBox13buttonClickedEP15QAbstractButton(QAbstractButton * arg0)));
   return that;
 }

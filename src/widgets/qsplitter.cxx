@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtWidgets/qsplitter.h
 // dst-file: /src/widgets/qsplitter.cxx
 //
@@ -74,7 +74,7 @@ void dedtor_ZN15QSplitterHandleD0Ev(QSplitterHandle* that)
 // QSplitter_SlotProxy here
 class QSplitter_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSplitter_SlotProxy():QObject(){}
 
@@ -82,7 +82,8 @@ public slots:
   // splitterMoved(int, int)
   void slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1);
 public:
-  void (*slot_func__ZN9QSplitter13splitterMovedEii)(int arg0, int arg1) = NULL;
+  void (*slot_func__ZN9QSplitter13splitterMovedEii)(void* rsfptr, int arg0, int arg1) = NULL;
+public: void* rsfptr = NULL;
 };
 
 extern "C" {
@@ -95,13 +96,14 @@ extern "C" {
 void QSplitter_SlotProxy::slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1) {
   if (this->slot_func__ZN9QSplitter13splitterMovedEii != NULL) {
     // do smth...
-    this->slot_func__ZN9QSplitter13splitterMovedEii(arg0, arg1);
+    this->slot_func__ZN9QSplitter13splitterMovedEii(this->rsfptr, arg0, arg1);
   }
 }
 extern "C"
-void* QSplitter_SlotProxy_connect__ZN9QSplitter13splitterMovedEii(QObject* sender, void* fptr){
+void* QSplitter_SlotProxy_connect__ZN9QSplitter13splitterMovedEii(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QSplitter_SlotProxy();
-  that->slot_func__ZN9QSplitter13splitterMovedEii = (decltype(that->slot_func__ZN9QSplitter13splitterMovedEii))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QSplitter13splitterMovedEii = (decltype(that->slot_func__ZN9QSplitter13splitterMovedEii))ffifptr;
   QObject::connect((QSplitter*)sender, SIGNAL(splitterMoved(int, int)), that, SLOT(slot_proxy_func__ZN9QSplitter13splitterMovedEii(int arg0, int arg1)));
   return that;
 }
@@ -114,10 +116,11 @@ void QSplitter_SlotProxy_disconnect__ZN9QSplitter13splitterMovedEii(QSplitter_Sl
 // QSplitterHandle_SlotProxy here
 class QSplitterHandle_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSplitterHandle_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/widgets/qsplitter.moc"
 

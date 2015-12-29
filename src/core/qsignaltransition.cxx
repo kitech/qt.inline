@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qsignaltransition.h
 // dst-file: /src/core/qsignaltransition.cxx
 //
@@ -54,10 +54,11 @@ QSignalTransition* dector_ZN17QSignalTransitionC1EP6QState(QState * sourceState)
 // QSignalTransition_SlotProxy here
 class QSignalTransition_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QSignalTransition_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qsignaltransition.moc"
 

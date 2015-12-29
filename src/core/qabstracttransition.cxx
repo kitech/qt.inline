@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qabstracttransition.h
 // dst-file: /src/core/qabstracttransition.cxx
 //
@@ -31,10 +31,11 @@ int QAbstractTransition_Class_Size()
 // QAbstractTransition_SlotProxy here
 class QAbstractTransition_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractTransition_SlotProxy():QObject(){}
 
+public: void* rsfptr = NULL;
 };
 #include "src/core/qabstracttransition.moc"
 

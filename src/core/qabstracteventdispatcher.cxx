@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Dec 27 14:55:08 2015
+// created: Tue Dec 29 23:36:58 2015
 // src-file: /QtCore/qabstracteventdispatcher.h
 // dst-file: /src/core/qabstracteventdispatcher.cxx
 //
@@ -31,7 +31,7 @@ int QAbstractEventDispatcher_Class_Size()
 // QAbstractEventDispatcher_SlotProxy here
 class QAbstractEventDispatcher_SlotProxy : public QObject
 {
-Q_OBJECT;
+  Q_OBJECT;
 public:
    QAbstractEventDispatcher_SlotProxy():QObject(){}
 
@@ -39,12 +39,13 @@ public slots:
   // aboutToBlock()
   void slot_proxy_func__ZN24QAbstractEventDispatcher12aboutToBlockEv();
 public:
-  void (*slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv)() = NULL;
+  void (*slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv)(void* rsfptr) = NULL;
 public slots:
   // awake()
   void slot_proxy_func__ZN24QAbstractEventDispatcher5awakeEv();
 public:
-  void (*slot_func__ZN24QAbstractEventDispatcher5awakeEv)() = NULL;
+  void (*slot_func__ZN24QAbstractEventDispatcher5awakeEv)(void* rsfptr) = NULL;
+public: void* rsfptr = NULL;
 };
 #include "src/core/qabstracteventdispatcher.moc"
 
@@ -58,13 +59,14 @@ extern "C" {
 void QAbstractEventDispatcher_SlotProxy::slot_proxy_func__ZN24QAbstractEventDispatcher12aboutToBlockEv() {
   if (this->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv != NULL) {
     // do smth...
-    this->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv();
+    this->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv(this->rsfptr);
   }
 }
 extern "C"
-void* QAbstractEventDispatcher_SlotProxy_connect__ZN24QAbstractEventDispatcher12aboutToBlockEv(QObject* sender, void* fptr){
+void* QAbstractEventDispatcher_SlotProxy_connect__ZN24QAbstractEventDispatcher12aboutToBlockEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractEventDispatcher_SlotProxy();
-  that->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv = (decltype(that->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv = (decltype(that->slot_func__ZN24QAbstractEventDispatcher12aboutToBlockEv))ffifptr;
   QObject::connect((QAbstractEventDispatcher*)sender, SIGNAL(aboutToBlock()), that, SLOT(slot_proxy_func__ZN24QAbstractEventDispatcher12aboutToBlockEv()));
   return that;
 }
@@ -77,13 +79,14 @@ void QAbstractEventDispatcher_SlotProxy_disconnect__ZN24QAbstractEventDispatcher
 void QAbstractEventDispatcher_SlotProxy::slot_proxy_func__ZN24QAbstractEventDispatcher5awakeEv() {
   if (this->slot_func__ZN24QAbstractEventDispatcher5awakeEv != NULL) {
     // do smth...
-    this->slot_func__ZN24QAbstractEventDispatcher5awakeEv();
+    this->slot_func__ZN24QAbstractEventDispatcher5awakeEv(this->rsfptr);
   }
 }
 extern "C"
-void* QAbstractEventDispatcher_SlotProxy_connect__ZN24QAbstractEventDispatcher5awakeEv(QObject* sender, void* fptr){
+void* QAbstractEventDispatcher_SlotProxy_connect__ZN24QAbstractEventDispatcher5awakeEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QAbstractEventDispatcher_SlotProxy();
-  that->slot_func__ZN24QAbstractEventDispatcher5awakeEv = (decltype(that->slot_func__ZN24QAbstractEventDispatcher5awakeEv))fptr;
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN24QAbstractEventDispatcher5awakeEv = (decltype(that->slot_func__ZN24QAbstractEventDispatcher5awakeEv))ffifptr;
   QObject::connect((QAbstractEventDispatcher*)sender, SIGNAL(awake()), that, SLOT(slot_proxy_func__ZN24QAbstractEventDispatcher5awakeEv()));
   return that;
 }
