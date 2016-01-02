@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -136,6 +136,13 @@ void demth_ZN6QLineF5setP2ERK7QPointF(void *that, const QPointF & p2)
 {
   QLineF *cthat = (QLineF *)that;
    cthat->setP2(p2);
+}
+
+  // proto:  void QLineF::setLength(qreal len);
+void demth_ZN6QLineF9setLengthEd(void *that, double len)
+{
+  QLineF *cthat = (QLineF *)that;
+   cthat->setLength(len);
 }
 
   // proto:  void QLineF::translate(const QPointF & p);

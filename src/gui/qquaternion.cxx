@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -54,6 +54,41 @@ QQuaternion* dector_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization a
   return rthis;
 }
 
+  // proto:  float QQuaternion::scalar();
+float demth_ZNK11QQuaternion6scalarEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->scalar();
+}
+
+  // proto:  void QQuaternion::setX(float x);
+void demth_ZN11QQuaternion4setXEf(void *that, float x)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setX(x);
+}
+
+  // proto:  void QQuaternion::setVector(const QVector3D & vector);
+void demth_ZN11QQuaternion9setVectorERK9QVector3D(void *that, const QVector3D & vector)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setVector(vector);
+}
+
+  // proto:  void QQuaternion::QQuaternion(const QVector4D & vector);
+void demth_ZN11QQuaternionC1ERK9QVector4D(void *that, const QVector4D & vector)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto _o = new(that) QQuaternion(vector);
+}
+
+  // proto:  void QQuaternion::setY(float y);
+void demth_ZN11QQuaternion4setYEf(void *that, float y)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setY(y);
+}
+
   // proto:  QVector3D QQuaternion::toEulerAngles();
 QVector3D* demth_ZNK11QQuaternion13toEulerAnglesEv(void *that)
 {
@@ -70,6 +105,50 @@ QQuaternion* demth_ZNK11QQuaternion8invertedEv(void *that)
   return new QQuaternion(recret);
 }
 
+  // proto:  void QQuaternion::setZ(float z);
+void demth_ZN11QQuaternion4setZEf(void *that, float z)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setZ(z);
+}
+
+  // proto:  bool QQuaternion::isIdentity();
+bool demth_ZNK11QQuaternion10isIdentityEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->isIdentity();
+}
+
+  // proto:  void QQuaternion::QQuaternion();
+void demth_ZN11QQuaternionC1Ev(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto _o = new(that) QQuaternion();
+}
+
+  // proto:  QVector4D QQuaternion::toVector4D();
+QVector4D* demth_ZNK11QQuaternion10toVector4DEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto recret = cthat->toVector4D();
+  return new QVector4D(recret);
+}
+
+  // proto:  QQuaternion QQuaternion::conjugate();
+QQuaternion* demth_ZNK11QQuaternion9conjugateEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto recret = cthat->conjugate();
+  return new QQuaternion(recret);
+}
+
+  // proto:  bool QQuaternion::isNull();
+bool demth_ZNK11QQuaternion6isNullEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->isNull();
+}
+
   // proto:  void QQuaternion::getAxisAndAngle(QVector3D * axis, float * angle);
 void demth_ZNK11QQuaternion15getAxisAndAngleEP9QVector3DPf(void *that, QVector3D * axis, float * angle)
 {
@@ -83,6 +162,71 @@ QQuaternion* demth_ZN11QQuaternion15fromEulerAnglesERK9QVector3D(void *that, con
   QQuaternion *cthat = (QQuaternion *)that;
   auto recret = cthat->fromEulerAngles(eulerAngles);
   return new QQuaternion(recret);
+}
+
+  // proto:  void QQuaternion::setScalar(float scalar);
+void demth_ZN11QQuaternion9setScalarEf(void *that, float scalar)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setScalar(scalar);
+}
+
+  // proto:  float QQuaternion::y();
+float demth_ZNK11QQuaternion1yEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->y();
+}
+
+  // proto:  QVector3D QQuaternion::vector();
+QVector3D* demth_ZNK11QQuaternion6vectorEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto recret = cthat->vector();
+  return new QVector3D(recret);
+}
+
+  // proto:  void QQuaternion::setVector(float x, float y, float z);
+void demth_ZN11QQuaternion9setVectorEfff(void *that, float x, float y, float z)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+   cthat->setVector(x, y, z);
+}
+
+  // proto:  void QQuaternion::QQuaternion(float scalar, float xpos, float ypos, float zpos);
+void demth_ZN11QQuaternionC1Effff(void *that, float scalar, float xpos, float ypos, float zpos)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto _o = new(that) QQuaternion(scalar, xpos, ypos, zpos);
+}
+
+  // proto:  void QQuaternion::QQuaternion(float scalar, const QVector3D & vector);
+void demth_ZN11QQuaternionC1EfRK9QVector3D(void *that, float scalar, const QVector3D & vector)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto _o = new(that) QQuaternion(scalar, vector);
+}
+
+  // proto:  QQuaternion QQuaternion::conjugated();
+QQuaternion* demth_ZNK11QQuaternion10conjugatedEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  auto recret = cthat->conjugated();
+  return new QQuaternion(recret);
+}
+
+  // proto:  float QQuaternion::x();
+float demth_ZNK11QQuaternion1xEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->x();
+}
+
+  // proto:  float QQuaternion::z();
+float demth_ZNK11QQuaternion1zEv(void *that)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->z();
 }
 
 }; // <= extern "C" block end

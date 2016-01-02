@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qsurfaceformat.h
 // dst-file: /src/gui/qsurfaceformat.cxx
 //
@@ -43,6 +43,13 @@ void dedtor_ZN14QSurfaceFormatD0Ev(QSurfaceFormat* that)
 {
   QSurfaceFormat* rthis = (QSurfaceFormat*)that;
   delete rthis;
+}
+
+  // proto:  bool QSurfaceFormat::stereo();
+bool demth_ZNK14QSurfaceFormat6stereoEv(void *that)
+{
+  QSurfaceFormat *cthat = (QSurfaceFormat *)that;
+  return cthat->stereo();
 }
 
 }; // <= extern "C" block end

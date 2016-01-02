@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qsessionmanager.h
 // dst-file: /src/gui/qsessionmanager.cxx
 //

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qpaintdevice.h
 // dst-file: /src/gui/qpaintdevice.cxx
 //
@@ -12,6 +12,20 @@ extern "C" {
 int QPaintDevice_Class_Size()
 {
   return sizeof(QPaintDevice);
+}
+
+  // proto:  int QPaintDevice::devType();
+int demth_ZNK12QPaintDevice7devTypeEv(void *that)
+{
+  QPaintDevice *cthat = (QPaintDevice *)that;
+  return cthat->devType();
+}
+
+  // proto:  bool QPaintDevice::paintingActive();
+bool demth_ZNK12QPaintDevice14paintingActiveEv(void *that)
+{
+  QPaintDevice *cthat = (QPaintDevice *)that;
+  return cthat->paintingActive();
 }
 
 }; // <= extern "C" block end

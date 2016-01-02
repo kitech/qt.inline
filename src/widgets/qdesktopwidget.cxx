@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -27,6 +27,13 @@ QDesktopWidget* dector_ZN14QDesktopWidgetC1Ev()
   // static_assert(sizeof(QDesktopWidget) == 32, "tyszerr");
   QDesktopWidget* rthis = new QDesktopWidget();
   return rthis;
+}
+
+  // proto:  int QDesktopWidget::screenCount();
+int demth_ZNK14QDesktopWidget11screenCountEv(void *that)
+{
+  QDesktopWidget *cthat = (QDesktopWidget *)that;
+  return cthat->screenCount();
 }
 
 }; // <= extern "C" block end

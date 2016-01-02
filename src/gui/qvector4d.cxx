@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qvector4d.h
 // dst-file: /src/gui/qvector4d.cxx
 //
@@ -84,6 +84,41 @@ QVector4D* dector_ZN9QVector4DC1ERK9QVector3D(const QVector3D & vector)
   // static_assert(sizeof(QVector4D) == 32, "tyszerr");
   QVector4D* rthis = new QVector4D(vector);
   return rthis;
+}
+
+  // proto:  void QVector4D::setW(float w);
+void demth_ZN9QVector4D4setWEf(void *that, float w)
+{
+  QVector4D *cthat = (QVector4D *)that;
+   cthat->setW(w);
+}
+
+  // proto:  void QVector4D::setZ(float z);
+void demth_ZN9QVector4D4setZEf(void *that, float z)
+{
+  QVector4D *cthat = (QVector4D *)that;
+   cthat->setZ(z);
+}
+
+  // proto:  void QVector4D::setX(float x);
+void demth_ZN9QVector4D4setXEf(void *that, float x)
+{
+  QVector4D *cthat = (QVector4D *)that;
+   cthat->setX(x);
+}
+
+  // proto:  void QVector4D::setY(float y);
+void demth_ZN9QVector4D4setYEf(void *that, float y)
+{
+  QVector4D *cthat = (QVector4D *)that;
+   cthat->setY(y);
+}
+
+  // proto:  bool QVector4D::isNull();
+bool demth_ZNK9QVector4D6isNullEv(void *that)
+{
+  QVector4D *cthat = (QVector4D *)that;
+  return cthat->isNull();
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qbitarray.h
 // dst-file: /src/core/qbitarray.cxx
 //
@@ -58,6 +58,13 @@ bool demth_ZNK9QBitArray7isEmptyEv(void *that)
   return cthat->isEmpty();
 }
 
+  // proto:  void QBitArray::setBit(int i);
+void demth_ZN9QBitArray6setBitEi(void *that, int i)
+{
+  QBitArray *cthat = (QBitArray *)that;
+   cthat->setBit(i);
+}
+
   // proto:  int QBitArray::size();
 int demth_ZNK9QBitArray4sizeEv(void *that)
 {
@@ -100,6 +107,13 @@ void demth_ZN9QBitArrayC1Ev(void *that)
   auto _o = new(that) QBitArray();
 }
 
+  // proto:  bool QBitArray::at(int i);
+bool demth_ZNK9QBitArray2atEi(void *that, int i)
+{
+  QBitArray *cthat = (QBitArray *)that;
+  return cthat->at(i);
+}
+
   // proto:  void QBitArray::clear();
 void demth_ZN9QBitArray5clearEv(void *that)
 {
@@ -107,11 +121,32 @@ void demth_ZN9QBitArray5clearEv(void *that)
    cthat->clear();
 }
 
+  // proto:  void QBitArray::clearBit(int i);
+void demth_ZN9QBitArray8clearBitEi(void *that, int i)
+{
+  QBitArray *cthat = (QBitArray *)that;
+   cthat->clearBit(i);
+}
+
+  // proto:  bool QBitArray::testBit(int i);
+bool demth_ZNK9QBitArray7testBitEi(void *that, int i)
+{
+  QBitArray *cthat = (QBitArray *)that;
+  return cthat->testBit(i);
+}
+
   // proto:  void QBitArray::truncate(int pos);
 void demth_ZN9QBitArray8truncateEi(void *that, int pos)
 {
   QBitArray *cthat = (QBitArray *)that;
    cthat->truncate(pos);
+}
+
+  // proto:  bool QBitArray::toggleBit(int i);
+bool demth_ZN9QBitArray9toggleBitEi(void *that, int i)
+{
+  QBitArray *cthat = (QBitArray *)that;
+  return cthat->toggleBit(i);
 }
 
   // proto:  void QBitArray::QBitArray(const QBitArray & other);
@@ -126,6 +161,13 @@ bool demth_ZNK9QBitArray6isNullEv(void *that)
 {
   QBitArray *cthat = (QBitArray *)that;
   return cthat->isNull();
+}
+
+  // proto:  void QBitArray::setBit(int i, bool val);
+void demth_ZN9QBitArray6setBitEib(void *that, int i, bool val)
+{
+  QBitArray *cthat = (QBitArray *)that;
+   cthat->setBit(i, val);
 }
 
   // proto:  bool QBitArray::isDetached();

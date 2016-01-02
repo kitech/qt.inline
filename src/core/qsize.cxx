@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qsize.h
 // dst-file: /src/core/qsize.cxx
 //
@@ -58,6 +58,14 @@ int * demth_ZN5QSize6rwidthEv(void *that)
   return &cthat->rwidth();
 }
 
+  // proto:  QSize QSize::scaled(int w, int h, Qt::AspectRatioMode mode);
+QSize* demth_ZNK5QSize6scaledEiiN2Qt15AspectRatioModeE(void *that, int w, int h, Qt::AspectRatioMode mode)
+{
+  QSize *cthat = (QSize *)that;
+  auto recret = cthat->scaled(w, h, mode);
+  return new QSize(recret);
+}
+
   // proto:  void QSize::setHeight(int h);
 void demth_ZN5QSize9setHeightEi(void *that, int h)
 {
@@ -106,6 +114,14 @@ qreal * demth_ZN6QSizeF7rheightEv(void *that)
 {
   QSizeF *cthat = (QSizeF *)that;
   return &cthat->rheight();
+}
+
+  // proto:  QSizeF QSizeF::scaled(qreal w, qreal h, Qt::AspectRatioMode mode);
+QSizeF* demth_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE(void *that, double w, double h, Qt::AspectRatioMode mode)
+{
+  QSizeF *cthat = (QSizeF *)that;
+  auto recret = cthat->scaled(w, h, mode);
+  return new QSizeF(recret);
 }
 
   // proto:  qreal & QSizeF::rwidth();

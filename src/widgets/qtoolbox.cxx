@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtWidgets/qtoolbox.h
 // dst-file: /src/widgets/qtoolbox.cxx
 //
@@ -27,6 +27,27 @@ QToolBox* dector_ZN8QToolBoxC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * par
   // static_assert(sizeof(QToolBox) == 32, "tyszerr");
   QToolBox* rthis = new QToolBox(parent, f);
   return rthis;
+}
+
+  // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QString & text);
+int demth_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *that, int index, QWidget * widget, const QString & text)
+{
+  QToolBox *cthat = (QToolBox *)that;
+  return cthat->insertItem(index, widget, text);
+}
+
+  // proto:  int QToolBox::addItem(QWidget * widget, const QString & text);
+int demth_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *that, QWidget * widget, const QString & text)
+{
+  QToolBox *cthat = (QToolBox *)that;
+  return cthat->addItem(widget, text);
+}
+
+  // proto:  int QToolBox::addItem(QWidget * widget, const QIcon & icon, const QString & text);
+int demth_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *that, QWidget * widget, const QIcon & icon, const QString & text)
+{
+  QToolBox *cthat = (QToolBox *)that;
+  return cthat->addItem(widget, icon, text);
 }
 
 }; // <= extern "C" block end

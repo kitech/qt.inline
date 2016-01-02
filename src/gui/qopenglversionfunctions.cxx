@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qopenglversionfunctions.h
 // dst-file: /src/gui/qopenglversionfunctions.cxx
 //
@@ -12,6 +12,13 @@ extern "C" {
 int QAbstractOpenGLFunctionsPrivate_Class_Size()
 {
   return sizeof(QAbstractOpenGLFunctionsPrivate);
+}
+
+  // proto: static QAbstractOpenGLFunctionsPrivate * QAbstractOpenGLFunctionsPrivate::get(QAbstractOpenGLFunctions * q);
+QAbstractOpenGLFunctionsPrivate * demth_ZN31QAbstractOpenGLFunctionsPrivate3getEP24QAbstractOpenGLFunctions(void *that, QAbstractOpenGLFunctions * q)
+{
+  QAbstractOpenGLFunctionsPrivate *cthat = (QAbstractOpenGLFunctionsPrivate *)that;
+  return cthat->get(q);
 }
 
 int QOpenGLFunctions_4_5_DeprecatedBackend_Class_Size()

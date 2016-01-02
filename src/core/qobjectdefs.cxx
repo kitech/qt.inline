@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qobjectdefs.h
 // dst-file: /src/core/qobjectdefs.cxx
 //
@@ -89,6 +89,13 @@ bool demth_ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16Q
 {
   QMetaObject *cthat = (QMetaObject *)that;
   return cthat->invokeMethod(obj, member, ret, val0, val1, val2, val3, val4, val5, val6, val7, val8, val9);
+}
+
+  // proto:  const QMetaObject * QMetaObject::superClass();
+const QMetaObject * demth_ZNK11QMetaObject10superClassEv(void *that)
+{
+  QMetaObject *cthat = (QMetaObject *)that;
+  return cthat->superClass();
 }
 
   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, Qt::ConnectionType type, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);

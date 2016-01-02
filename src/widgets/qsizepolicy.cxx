@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtWidgets/qsizepolicy.h
 // dst-file: /src/widgets/qsizepolicy.cxx
 //
@@ -28,6 +28,13 @@ QSizePolicy* dector_ZN11QSizePolicyC1Ev()
   // static_assert(sizeof(QSizePolicy) == 32, "tyszerr");
   QSizePolicy* rthis = new QSizePolicy();
   return rthis;
+}
+
+  // proto:  void QSizePolicy::transpose();
+void demth_ZN11QSizePolicy9transposeEv(void *that)
+{
+  QSizePolicy *cthat = (QSizePolicy *)that;
+   cthat->transpose();
 }
 
 }; // <= extern "C" block end

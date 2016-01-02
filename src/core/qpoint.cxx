@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qpoint.h
 // dst-file: /src/core/qpoint.cxx
 //
@@ -56,6 +56,13 @@ int * demth_ZN6QPoint2rxEv(void *that)
 {
   QPoint *cthat = (QPoint *)that;
   return &cthat->rx();
+}
+
+  // proto:  int QPoint::manhattanLength();
+int demth_ZNK6QPoint15manhattanLengthEv(void *that)
+{
+  QPoint *cthat = (QPoint *)that;
+  return cthat->manhattanLength();
 }
 
 int QPointF_Class_Size()

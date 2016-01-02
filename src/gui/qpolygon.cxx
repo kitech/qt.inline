@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qpolygon.h
 // dst-file: /src/gui/qpolygon.cxx
 //
@@ -69,6 +69,13 @@ QPolygon* dector_ZN8QPolygonC1ERK5QRectb(const QRect & r, bool closed)
   return rthis;
 }
 
+  // proto:  void QPolygon::setPoint(int index, int x, int y);
+void demth_ZN8QPolygon8setPointEiii(void *that, int index, int x, int y)
+{
+  QPolygon *cthat = (QPolygon *)that;
+   cthat->setPoint(index, x, y);
+}
+
   // proto:  void QPolygon::~QPolygon();
 void demth_ZN8QPolygonD0Ev(void *that)
 {
@@ -91,11 +98,33 @@ void demth_ZN8QPolygonC1ERK7QVectorI6QPointE(void *that, const QVector<QPoint> &
   auto _o = new(that) QPolygon(v);
 }
 
+  // proto:  void QPolygon::setPoint(int index, const QPoint & p);
+void demth_ZN8QPolygon8setPointEiRK6QPoint(void *that, int index, const QPoint & p)
+{
+  QPolygon *cthat = (QPolygon *)that;
+   cthat->setPoint(index, p);
+}
+
+  // proto:  void QPolygon::translate(const QPoint & offset);
+void demth_ZN8QPolygon9translateERK6QPoint(void *that, const QPoint & offset)
+{
+  QPolygon *cthat = (QPolygon *)that;
+   cthat->translate(offset);
+}
+
   // proto:  void QPolygon::swap(QPolygon & other);
 void demth_ZN8QPolygon4swapERS_(void *that, QPolygon & other)
 {
   QPolygon *cthat = (QPolygon *)that;
    cthat->swap(other);
+}
+
+  // proto:  QPoint QPolygon::point(int i);
+QPoint* demth_ZNK8QPolygon5pointEi(void *that, int i)
+{
+  QPolygon *cthat = (QPolygon *)that;
+  auto recret = cthat->point(i);
+  return new QPoint(recret);
 }
 
   // proto:  void QPolygon::QPolygon(const QPolygon & a);

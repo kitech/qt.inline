@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qmatrix4x4.h
 // dst-file: /src/gui/qmatrix4x4.cxx
 //
@@ -84,6 +84,14 @@ float * demth_ZN10QMatrix4x44dataEv(void *that)
   return cthat->data();
 }
 
+  // proto:  QVector3D QMatrix4x4::mapVector(const QVector3D & vector);
+QVector3D* demth_ZNK10QMatrix4x49mapVectorERK9QVector3D(void *that, const QVector3D & vector)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto recret = cthat->mapVector(vector);
+  return new QVector3D(recret);
+}
+
   // proto:  void QMatrix4x4::QMatrix4x4();
 void demth_ZN10QMatrix4x4C1Ev(void *that)
 {
@@ -134,6 +142,14 @@ const float * demth_ZNK10QMatrix4x44dataEv(void *that)
   return cthat->data();
 }
 
+  // proto:  QPoint QMatrix4x4::map(const QPoint & point);
+QPoint* demth_ZNK10QMatrix4x43mapERK6QPoint(void *that, const QPoint & point)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto recret = cthat->map(point);
+  return new QPoint(recret);
+}
+
   // proto:  void QMatrix4x4::setToIdentity();
 void demth_ZN10QMatrix4x413setToIdentityEv(void *that)
 {
@@ -148,6 +164,21 @@ void demth_ZN10QMatrix4x4C1Effffffffffffffff(void *that, float m11, float m12, f
   auto _o = new(that) QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
 }
 
+  // proto:  QVector3D QMatrix4x4::map(const QVector3D & point);
+QVector3D* demth_ZNK10QMatrix4x43mapERK9QVector3D(void *that, const QVector3D & point)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto recret = cthat->map(point);
+  return new QVector3D(recret);
+}
+
+  // proto:  void QMatrix4x4::viewport(const QRectF & rect);
+void demth_ZN10QMatrix4x48viewportERK6QRectF(void *that, const QRectF & rect)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+   cthat->viewport(rect);
+}
+
   // proto:  void QMatrix4x4::fill(float value);
 void demth_ZN10QMatrix4x44fillEf(void *that, float value)
 {
@@ -155,11 +186,27 @@ void demth_ZN10QMatrix4x44fillEf(void *that, float value)
    cthat->fill(value);
 }
 
+  // proto:  QPointF QMatrix4x4::map(const QPointF & point);
+QPointF* demth_ZNK10QMatrix4x43mapERK7QPointF(void *that, const QPointF & point)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto recret = cthat->map(point);
+  return new QPointF(recret);
+}
+
   // proto:  QVector4D QMatrix4x4::row(int index);
 QVector4D* demth_ZNK10QMatrix4x43rowEi(void *that, int index)
 {
   QMatrix4x4 *cthat = (QMatrix4x4 *)that;
   auto recret = cthat->row(index);
+  return new QVector4D(recret);
+}
+
+  // proto:  QVector4D QMatrix4x4::map(const QVector4D & point);
+QVector4D* demth_ZNK10QMatrix4x43mapERK9QVector4D(void *that, const QVector4D & point)
+{
+  QMatrix4x4 *cthat = (QMatrix4x4 *)that;
+  auto recret = cthat->map(point);
   return new QVector4D(recret);
 }
 

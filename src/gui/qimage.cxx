@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -77,6 +77,13 @@ QImage* demth_ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray 
   return new QImage(recret);
 }
 
+  // proto:  QRgb QImage::pixel(const QPoint & pt);
+QRgb demth_ZNK6QImage5pixelERK6QPoint(void *that, const QPoint & pt)
+{
+  QImage *cthat = (QImage *)that;
+  return cthat->pixel(pt);
+}
+
   // proto:  QImage QImage::copy(int x, int y, int w, int h);
 QImage* demth_ZNK6QImage4copyEiiii(void *that, int x, int y, int w, int h)
 {
@@ -93,6 +100,13 @@ QImage* demth_ZNK6QImage6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationMode
   return new QImage(recret);
 }
 
+  // proto:  void QImage::setPixel(const QPoint & pt, uint index_or_rgb);
+void demth_ZN6QImage8setPixelERK6QPointj(void *that, const QPoint & pt, unsigned int index_or_rgb)
+{
+  QImage *cthat = (QImage *)that;
+   cthat->setPixel(pt, index_or_rgb);
+}
+
   // proto:  bool QImage::loadFromData(const QByteArray & data, const char * aformat);
 bool demth_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * aformat)
 {
@@ -105,6 +119,20 @@ void demth_ZN6QImage4swapERS_(void *that, QImage & other)
 {
   QImage *cthat = (QImage *)that;
    cthat->swap(other);
+}
+
+  // proto:  bool QImage::valid(const QPoint & pt);
+bool demth_ZNK6QImage5validERK6QPoint(void *that, const QPoint & pt)
+{
+  QImage *cthat = (QImage *)that;
+  return cthat->valid(pt);
+}
+
+  // proto:  int QImage::pixelIndex(const QPoint & pt);
+int demth_ZNK6QImage10pixelIndexERK6QPoint(void *that, const QPoint & pt)
+{
+  QImage *cthat = (QImage *)that;
+  return cthat->pixelIndex(pt);
 }
 
   // proto:  void QImage::QImage(QImage && other);

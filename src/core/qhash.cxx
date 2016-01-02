@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qhash.h
 // dst-file: /src/core/qhash.cxx
 //
@@ -17,6 +17,20 @@ int QHashDummyValue_Class_Size()
 int QHashData_Class_Size()
 {
   return sizeof(QHashData);
+}
+
+  // proto:  void QHashData::hasShrunk();
+void demth_ZN9QHashData9hasShrunkEv(void *that)
+{
+  QHashData *cthat = (QHashData *)that;
+   cthat->hasShrunk();
+}
+
+  // proto:  bool QHashData::willGrow();
+bool demth_ZN9QHashData8willGrowEv(void *that)
+{
+  QHashData *cthat = (QHashData *)that;
+  return cthat->willGrow();
 }
 
 }; // <= extern "C" block end

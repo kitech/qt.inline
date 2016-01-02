@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qdatastream.h
 // dst-file: /src/core/qdatastream.cxx
 //
@@ -51,6 +51,27 @@ QDataStream* dector_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & arg1)
   // static_assert(sizeof(QDataStream) == 32, "tyszerr");
   QDataStream* rthis = new QDataStream(arg1);
   return rthis;
+}
+
+  // proto:  int QDataStream::version();
+int demth_ZNK11QDataStream7versionEv(void *that)
+{
+  QDataStream *cthat = (QDataStream *)that;
+  return cthat->version();
+}
+
+  // proto:  void QDataStream::setVersion(int );
+void demth_ZN11QDataStream10setVersionEi(void *that, int arg1)
+{
+  QDataStream *cthat = (QDataStream *)that;
+   cthat->setVersion(arg1);
+}
+
+  // proto:  QIODevice * QDataStream::device();
+QIODevice * demth_ZNK11QDataStream6deviceEv(void *that)
+{
+  QDataStream *cthat = (QDataStream *)that;
+  return cthat->device();
 }
 
 }; // <= extern "C" block end

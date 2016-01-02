@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
@@ -27,6 +27,13 @@ QCoreApplication* dector_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv,
   // static_assert(sizeof(QCoreApplication) == 32, "tyszerr");
   QCoreApplication* rthis = new QCoreApplication(argc, argv, arg3);
   return rthis;
+}
+
+  // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);
+bool demth_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent(void *that, QObject * receiver, QEvent * event)
+{
+  QCoreApplication *cthat = (QCoreApplication *)that;
+  return cthat->sendEvent(receiver, event);
 }
 
 }; // <= extern "C" block end

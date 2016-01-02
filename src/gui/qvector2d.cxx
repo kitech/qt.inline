@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qvector2d.h
 // dst-file: /src/gui/qvector2d.cxx
 //
@@ -68,6 +68,27 @@ QVector2D* dector_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg1)
   // static_assert(sizeof(QVector2D) == 32, "tyszerr");
   QVector2D* rthis = new QVector2D(arg1);
   return rthis;
+}
+
+  // proto:  void QVector2D::setX(float x);
+void demth_ZN9QVector2D4setXEf(void *that, float x)
+{
+  QVector2D *cthat = (QVector2D *)that;
+   cthat->setX(x);
+}
+
+  // proto:  void QVector2D::setY(float y);
+void demth_ZN9QVector2D4setYEf(void *that, float y)
+{
+  QVector2D *cthat = (QVector2D *)that;
+   cthat->setY(y);
+}
+
+  // proto:  bool QVector2D::isNull();
+bool demth_ZNK9QVector2D6isNullEv(void *that)
+{
+  QVector2D *cthat = (QVector2D *)that;
+  return cthat->isNull();
 }
 
 }; // <= extern "C" block end

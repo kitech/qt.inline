@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtGui/qtextdocument.h
 // dst-file: /src/gui/qtextdocument.cxx
 //
@@ -40,6 +40,13 @@ void dedtor_ZN13QTextDocumentD0Ev(QTextDocument* that)
 int QAbstractUndoItem_Class_Size()
 {
   return sizeof(QAbstractUndoItem);
+}
+
+  // proto:  void QAbstractUndoItem::~QAbstractUndoItem();
+void demth_ZN17QAbstractUndoItemD0Ev(void *that)
+{
+  QAbstractUndoItem *cthat = (QAbstractUndoItem *)that;
+   cthat->~QAbstractUndoItem();
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Dec 29 23:36:58 2015
+// created: Sat Jan  2 19:51:33 2016
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
@@ -29,11 +29,53 @@ void dedtor_ZN7QWidgetD0Ev(QWidget* that)
   delete rthis;
 }
 
+  // proto:  bool QWidget::isEnabledToTLW();
+bool demth_ZNK7QWidget14isEnabledToTLWEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isEnabledToTLW();
+}
+
+  // proto:  void QWidget::setSizeIncrement(const QSize & );
+void demth_ZN7QWidget16setSizeIncrementERK5QSize(void *that, const QSize & arg1)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->setSizeIncrement(arg1);
+}
+
+  // proto:  bool QWidget::isTopLevel();
+bool demth_ZNK7QWidget10isTopLevelEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isTopLevel();
+}
+
+  // proto:  bool QWidget::isWindow();
+bool demth_ZNK7QWidget8isWindowEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isWindow();
+}
+
+  // proto:  bool QWidget::isVisible();
+bool demth_ZNK7QWidget9isVisibleEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isVisible();
+}
+
   // proto:  void QWidget::setSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical);
 void demth_ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_(void *that, QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical)
 {
   QWidget *cthat = (QWidget *)that;
    cthat->setSizePolicy(horizontal, vertical);
+}
+
+  // proto:  int QWidget::minimumHeight();
+int demth_ZNK7QWidget13minimumHeightEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->minimumHeight();
 }
 
   // proto:  void QWidget::update(int x, int y, int w, int h);
@@ -51,11 +93,39 @@ QRect* demth_ZNK7QWidget4rectEv(void *that)
   return new QRect(recret);
 }
 
+  // proto:  void QWidget::setMinimumSize(const QSize & );
+void demth_ZN7QWidget14setMinimumSizeERK5QSize(void *that, const QSize & arg1)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->setMinimumSize(arg1);
+}
+
   // proto:  void QWidget::setFocus();
 void demth_ZN7QWidget8setFocusEv(void *that)
 {
   QWidget *cthat = (QWidget *)that;
    cthat->setFocus();
+}
+
+  // proto:  bool QWidget::isModal();
+bool demth_ZNK7QWidget7isModalEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isModal();
+}
+
+  // proto:  const QRect & QWidget::geometry();
+const QRect * demth_ZNK7QWidget8geometryEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return &cthat->geometry();
+}
+
+  // proto:  bool QWidget::hasMouseTracking();
+bool demth_ZNK7QWidget16hasMouseTrackingEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->hasMouseTracking();
 }
 
   // proto:  bool QWidget::isHidden();
@@ -86,11 +156,69 @@ int demth_ZNK7QWidget5widthEv(void *that)
   return cthat->width();
 }
 
+  // proto:  bool QWidget::isEnabled();
+bool demth_ZNK7QWidget9isEnabledEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->isEnabled();
+}
+
+  // proto:  int QWidget::minimumWidth();
+int demth_ZNK7QWidget12minimumWidthEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->minimumWidth();
+}
+
+  // proto:  QFontInfo QWidget::fontInfo();
+QFontInfo* demth_ZNK7QWidget8fontInfoEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  auto recret = cthat->fontInfo();
+  return new QFontInfo(recret);
+}
+
+  // proto:  QFontMetrics QWidget::fontMetrics();
+QFontMetrics* demth_ZNK7QWidget11fontMetricsEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  auto recret = cthat->fontMetrics();
+  return new QFontMetrics(recret);
+}
+
   // proto:  bool QWidget::updatesEnabled();
 bool demth_ZNK7QWidget14updatesEnabledEv(void *that)
 {
   QWidget *cthat = (QWidget *)that;
   return cthat->updatesEnabled();
+}
+
+  // proto:  const QFont & QWidget::font();
+const QFont * demth_ZNK7QWidget4fontEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return &cthat->font();
+}
+
+  // proto:  void QWidget::setMaximumSize(const QSize & );
+void demth_ZN7QWidget14setMaximumSizeERK5QSize(void *that, const QSize & arg1)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->setMaximumSize(arg1);
+}
+
+  // proto:  void QWidget::resize(int w, int h);
+void demth_ZN7QWidget6resizeEii(void *that, int w, int h)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->resize(w, h);
+}
+
+  // proto:  QWidget * QWidget::parentWidget();
+QWidget * demth_ZNK7QWidget12parentWidgetEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->parentWidget();
 }
 
   // proto:  void QWidget::setGeometry(int x, int y, int w, int h);
@@ -100,11 +228,46 @@ void demth_ZN7QWidget11setGeometryEiiii(void *that, int x, int y, int w, int h)
    cthat->setGeometry(x, y, w, h);
 }
 
+  // proto:  void QWidget::setMouseTracking(bool enable);
+void demth_ZN7QWidget16setMouseTrackingEb(void *that, bool enable)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->setMouseTracking(enable);
+}
+
+  // proto:  void QWidget::setBaseSize(const QSize & );
+void demth_ZN7QWidget11setBaseSizeERK5QSize(void *that, const QSize & arg1)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->setBaseSize(arg1);
+}
+
+  // proto:  int QWidget::maximumHeight();
+int demth_ZNK7QWidget13maximumHeightEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->maximumHeight();
+}
+
+  // proto:  void QWidget::move(int x, int y);
+void demth_ZN7QWidget4moveEii(void *that, int x, int y)
+{
+  QWidget *cthat = (QWidget *)that;
+   cthat->move(x, y);
+}
+
   // proto:  QWidget * QWidget::topLevelWidget();
 QWidget * demth_ZNK7QWidget14topLevelWidgetEv(void *that)
 {
   QWidget *cthat = (QWidget *)that;
   return cthat->topLevelWidget();
+}
+
+  // proto:  bool QWidget::underMouse();
+bool demth_ZNK7QWidget10underMouseEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->underMouse();
 }
 
   // proto:  bool QWidget::testAttribute(Qt::WidgetAttribute );
@@ -119,6 +282,21 @@ int demth_ZNK7QWidget6heightEv(void *that)
 {
   QWidget *cthat = (QWidget *)that;
   return cthat->height();
+}
+
+  // proto:  QSize QWidget::size();
+QSize* demth_ZNK7QWidget4sizeEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  auto recret = cthat->size();
+  return new QSize(recret);
+}
+
+  // proto:  int QWidget::maximumWidth();
+int demth_ZNK7QWidget12maximumWidthEv(void *that)
+{
+  QWidget *cthat = (QWidget *)that;
+  return cthat->maximumWidth();
 }
 
   // proto:  bool QWidget::isRightToLeft();
