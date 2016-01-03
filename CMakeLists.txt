@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_VERBOSE_MAKEFILE on)
 
 set(CMAKE_CXX_FLAGS "-g -O2 -std=c++11")
+set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined")
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 
@@ -27,9 +28,14 @@ set(CMAKE_INCLUDE_CURRENT_DIR on)
 include(src/core/mod.cmake)
 include(src/gui/mod.cmake)
 include(src/widgets/mod.cmake)
+set(qt5_inline_extra_srcs src/qihotfix.cpp)
 
-
-set(all_qt5_inline_srcs ${qt5_inline_core_srcs} ${qt5_inline_gui_srcs} ${qt5_inline_widgets_srcs})
+set(all_qt5_inline_srcs
+  ${qt5_inline_extra_srcs}
+  ${qt5_inline_core_srcs}
+  ${qt5_inline_gui_srcs}
+  ${qt5_inline_widgets_srcs}
+  )
 
 add_library(QtInline SHARED ${all_qt5_inline_srcs})
 qt5_use_modules(QtInline Core Gui Widgets)
