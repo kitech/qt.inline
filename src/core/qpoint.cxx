@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qpoint.h
 // dst-file: /src/core/qpoint.cxx
 //
@@ -37,11 +37,39 @@ int * demth_ZN6QPoint2ryEv(void *that)
   return &cthat->ry();
 }
 
+  // proto: static int QPoint::dotProduct(const QPoint & p1, const QPoint & p2);
+int demth_ZN6QPoint10dotProductERKS_S1_(void *that, const QPoint & p1, const QPoint & p2)
+{
+  QPoint *cthat = (QPoint *)that;
+  return cthat->dotProduct(p1, p2);
+}
+
+  // proto:  int QPoint::x();
+int demth_ZNK6QPoint1xEv(void *that)
+{
+  QPoint *cthat = (QPoint *)that;
+  return cthat->x();
+}
+
+  // proto:  int QPoint::y();
+int demth_ZNK6QPoint1yEv(void *that)
+{
+  QPoint *cthat = (QPoint *)that;
+  return cthat->y();
+}
+
   // proto:  void QPoint::setX(int x);
 void demth_ZN6QPoint4setXEi(void *that, int x)
 {
   QPoint *cthat = (QPoint *)that;
    cthat->setX(x);
+}
+
+  // proto:  bool QPoint::isNull();
+bool demth_ZNK6QPoint6isNullEv(void *that)
+{
+  QPoint *cthat = (QPoint *)that;
+  return cthat->isNull();
 }
 
   // proto:  void QPoint::setY(int y);
@@ -94,6 +122,21 @@ QPointF* dector_ZN7QPointFC1ERK6QPoint(const QPoint & p)
   return rthis;
 }
 
+  // proto:  qreal QPointF::manhattanLength();
+qreal demth_ZNK7QPointF15manhattanLengthEv(void *that)
+{
+  QPointF *cthat = (QPointF *)that;
+  return cthat->manhattanLength();
+}
+
+  // proto:  QPoint QPointF::toPoint();
+QPoint* demth_ZNK7QPointF7toPointEv(void *that)
+{
+  QPointF *cthat = (QPointF *)that;
+  auto recret = cthat->toPoint();
+  return new QPoint(recret);
+}
+
   // proto:  qreal & QPointF::rx();
 qreal * demth_ZN7QPointF2rxEv(void *that)
 {
@@ -101,11 +144,25 @@ qreal * demth_ZN7QPointF2rxEv(void *that)
   return &cthat->rx();
 }
 
+  // proto:  qreal QPointF::y();
+qreal demth_ZNK7QPointF1yEv(void *that)
+{
+  QPointF *cthat = (QPointF *)that;
+  return cthat->y();
+}
+
   // proto:  bool QPointF::isNull();
 bool demth_ZNK7QPointF6isNullEv(void *that)
 {
   QPointF *cthat = (QPointF *)that;
   return cthat->isNull();
+}
+
+  // proto:  qreal QPointF::x();
+qreal demth_ZNK7QPointF1xEv(void *that)
+{
+  QPointF *cthat = (QPointF *)that;
+  return cthat->x();
 }
 
   // proto:  void QPointF::setX(qreal x);
@@ -120,6 +177,13 @@ qreal * demth_ZN7QPointF2ryEv(void *that)
 {
   QPointF *cthat = (QPointF *)that;
   return &cthat->ry();
+}
+
+  // proto: static qreal QPointF::dotProduct(const QPointF & p1, const QPointF & p2);
+qreal demth_ZN7QPointF10dotProductERKS_S1_(void *that, const QPointF & p1, const QPointF & p2)
+{
+  QPointF *cthat = (QPointF *)that;
+  return cthat->dotProduct(p1, p2);
 }
 
   // proto:  void QPointF::setY(qreal y);

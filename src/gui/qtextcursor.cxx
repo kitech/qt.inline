@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtextcursor.h
 // dst-file: /src/gui/qtextcursor.cxx
 //
@@ -75,6 +75,13 @@ QTextCursor* dector_ZN11QTextCursorC1EP10QTextFrame(QTextFrame * frame)
   // static_assert(sizeof(QTextCursor) == 32, "tyszerr");
   QTextCursor* rthis = new QTextCursor(frame);
   return rthis;
+}
+
+  // proto:  void QTextCursor::swap(QTextCursor & other);
+void demth_ZN11QTextCursor4swapERS_(void *that, QTextCursor & other)
+{
+  QTextCursor *cthat = (QTextCursor *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qcoreevent.h
 // dst-file: /src/core/qcoreevent.cxx
 //
@@ -27,6 +27,13 @@ QDeferredDeleteEvent* dector_ZN20QDeferredDeleteEventC1Ev()
   // static_assert(sizeof(QDeferredDeleteEvent) == 32, "tyszerr");
   QDeferredDeleteEvent* rthis = new QDeferredDeleteEvent();
   return rthis;
+}
+
+  // proto:  int QDeferredDeleteEvent::loopLevel();
+int demth_ZNK20QDeferredDeleteEvent9loopLevelEv(void *that)
+{
+  QDeferredDeleteEvent *cthat = (QDeferredDeleteEvent *)that;
+  return cthat->loopLevel();
 }
 
 int QDynamicPropertyChangeEvent_Class_Size()
@@ -77,6 +84,13 @@ void dedtor_ZN11QTimerEventD0Ev(QTimerEvent* that)
   delete rthis;
 }
 
+  // proto:  int QTimerEvent::timerId();
+int demth_ZNK11QTimerEvent7timerIdEv(void *that)
+{
+  QTimerEvent *cthat = (QTimerEvent *)that;
+  return cthat->timerId();
+}
+
 int QChildEvent_Class_Size()
 {
   return sizeof(QChildEvent);
@@ -95,6 +109,34 @@ QChildEvent* dector_ZN11QChildEventC1EN6QEvent4TypeEP7QObject(QEvent::Type type,
   // static_assert(sizeof(QChildEvent) == 32, "tyszerr");
   QChildEvent* rthis = new QChildEvent(type, child);
   return rthis;
+}
+
+  // proto:  bool QChildEvent::added();
+bool demth_ZNK11QChildEvent5addedEv(void *that)
+{
+  QChildEvent *cthat = (QChildEvent *)that;
+  return cthat->added();
+}
+
+  // proto:  bool QChildEvent::polished();
+bool demth_ZNK11QChildEvent8polishedEv(void *that)
+{
+  QChildEvent *cthat = (QChildEvent *)that;
+  return cthat->polished();
+}
+
+  // proto:  bool QChildEvent::removed();
+bool demth_ZNK11QChildEvent7removedEv(void *that)
+{
+  QChildEvent *cthat = (QChildEvent *)that;
+  return cthat->removed();
+}
+
+  // proto:  QObject * QChildEvent::child();
+QObject * demth_ZNK11QChildEvent5childEv(void *that)
+{
+  QChildEvent *cthat = (QChildEvent *)that;
+  return cthat->child();
 }
 
 int QEvent_Class_Size()

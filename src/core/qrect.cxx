@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qrect.h
 // dst-file: /src/core/qrect.cxx
 //
@@ -46,6 +46,13 @@ QRect* dector_ZN5QRectC1Ev()
   return rthis;
 }
 
+  // proto:  int QRect::right();
+int demth_ZNK5QRect5rightEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->right();
+}
+
   // proto:  void QRect::moveTo(const QPoint & p);
 void demth_ZN5QRect6moveToERK6QPoint(void *that, const QPoint & p)
 {
@@ -67,6 +74,22 @@ void demth_ZN5QRect9moveRightEi(void *that, int pos)
    cthat->moveRight(pos);
 }
 
+  // proto:  QRect QRect::translated(int dx, int dy);
+QRect* demth_ZNK5QRect10translatedEii(void *that, int dx, int dy)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->translated(dx, dy);
+  return new QRect(recret);
+}
+
+  // proto:  QPoint QRect::center();
+QPoint* demth_ZNK5QRect6centerEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->center();
+  return new QPoint(recret);
+}
+
   // proto:  void QRect::moveTopRight(const QPoint & p);
 void demth_ZN5QRect12moveTopRightERK6QPoint(void *that, const QPoint & p)
 {
@@ -79,6 +102,13 @@ void demth_ZN5QRect7setLeftEi(void *that, int pos)
 {
   QRect *cthat = (QRect *)that;
    cthat->setLeft(pos);
+}
+
+  // proto:  int QRect::left();
+int demth_ZNK5QRect4leftEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->left();
 }
 
   // proto:  QRect QRect::intersected(const QRect & other);
@@ -96,6 +126,29 @@ bool demth_ZNK5QRect8containsEiib(void *that, int x, int y, bool proper)
   return cthat->contains(x, y, proper);
 }
 
+  // proto:  QPoint QRect::bottomRight();
+QPoint* demth_ZNK5QRect11bottomRightEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->bottomRight();
+  return new QPoint(recret);
+}
+
+  // proto:  bool QRect::isValid();
+bool demth_ZNK5QRect7isValidEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->isValid();
+}
+
+  // proto:  QSize QRect::size();
+QSize* demth_ZNK5QRect4sizeEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->size();
+  return new QSize(recret);
+}
+
   // proto:  QRect QRect::united(const QRect & other);
 QRect* demth_ZNK5QRect6unitedERKS_(void *that, const QRect & other)
 {
@@ -109,6 +162,13 @@ void demth_ZN5QRect6adjustEiiii(void *that, int x1, int y1, int x2, int y2)
 {
   QRect *cthat = (QRect *)that;
    cthat->adjust(x1, y1, x2, y2);
+}
+
+  // proto:  bool QRect::isNull();
+bool demth_ZNK5QRect6isNullEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->isNull();
 }
 
   // proto:  void QRect::setBottom(int pos);
@@ -125,11 +185,47 @@ void demth_ZN5QRect7setSizeERK5QSize(void *that, const QSize & s)
    cthat->setSize(s);
 }
 
+  // proto:  int QRect::y();
+int demth_ZNK5QRect1yEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->y();
+}
+
+  // proto:  int QRect::x();
+int demth_ZNK5QRect1xEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->x();
+}
+
+  // proto:  QRect QRect::adjusted(int x1, int y1, int x2, int y2);
+QRect* demth_ZNK5QRect8adjustedEiiii(void *that, int x1, int y1, int x2, int y2)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->adjusted(x1, y1, x2, y2);
+  return new QRect(recret);
+}
+
+  // proto:  int QRect::height();
+int demth_ZNK5QRect6heightEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->height();
+}
+
   // proto:  void QRect::moveBottomLeft(const QPoint & p);
 void demth_ZN5QRect14moveBottomLeftERK6QPoint(void *that, const QPoint & p)
 {
   QRect *cthat = (QRect *)that;
    cthat->moveBottomLeft(p);
+}
+
+  // proto:  int QRect::top();
+int demth_ZNK5QRect3topEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->top();
 }
 
   // proto:  void QRect::moveTo(int x, int t);
@@ -146,11 +242,34 @@ void demth_ZNK5QRect7getRectEPiS0_S0_S0_(void *that, int * x, int * y, int * w, 
    cthat->getRect(x, y, w, h);
 }
 
+  // proto:  QRect QRect::marginsRemoved(const QMargins & margins);
+QRect* demth_ZNK5QRect14marginsRemovedERK8QMargins(void *that, const QMargins & margins)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->marginsRemoved(margins);
+  return new QRect(recret);
+}
+
   // proto:  void QRect::translate(int dx, int dy);
 void demth_ZN5QRect9translateEii(void *that, int dx, int dy)
 {
   QRect *cthat = (QRect *)that;
    cthat->translate(dx, dy);
+}
+
+  // proto:  QPoint QRect::topLeft();
+QPoint* demth_ZNK5QRect7topLeftEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->topLeft();
+  return new QPoint(recret);
+}
+
+  // proto:  int QRect::width();
+int demth_ZNK5QRect5widthEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->width();
 }
 
   // proto:  void QRect::setRect(int x, int y, int w, int h);
@@ -209,6 +328,14 @@ void demth_ZNK5QRect9getCoordsEPiS0_S0_S0_(void *that, int * x1, int * y1, int *
    cthat->getCoords(x1, y1, x2, y2);
 }
 
+  // proto:  QPoint QRect::topRight();
+QPoint* demth_ZNK5QRect8topRightEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->topRight();
+  return new QPoint(recret);
+}
+
   // proto:  void QRect::setBottomRight(const QPoint & p);
 void demth_ZN5QRect14setBottomRightERK6QPoint(void *that, const QPoint & p)
 {
@@ -221,6 +348,13 @@ void demth_ZN5QRect9setHeightEi(void *that, int h)
 {
   QRect *cthat = (QRect *)that;
    cthat->setHeight(h);
+}
+
+  // proto:  bool QRect::isEmpty();
+bool demth_ZNK5QRect7isEmptyEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->isEmpty();
 }
 
   // proto:  bool QRect::contains(int x, int y);
@@ -237,11 +371,34 @@ void demth_ZN5QRect15moveBottomRightERK6QPoint(void *that, const QPoint & p)
    cthat->moveBottomRight(p);
 }
 
+  // proto:  QPoint QRect::bottomLeft();
+QPoint* demth_ZNK5QRect10bottomLeftEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->bottomLeft();
+  return new QPoint(recret);
+}
+
   // proto:  void QRect::setTop(int pos);
 void demth_ZN5QRect6setTopEi(void *that, int pos)
 {
   QRect *cthat = (QRect *)that;
    cthat->setTop(pos);
+}
+
+  // proto:  int QRect::bottom();
+int demth_ZNK5QRect6bottomEv(void *that)
+{
+  QRect *cthat = (QRect *)that;
+  return cthat->bottom();
+}
+
+  // proto:  QRect QRect::marginsAdded(const QMargins & margins);
+QRect* demth_ZNK5QRect12marginsAddedERK8QMargins(void *that, const QMargins & margins)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->marginsAdded(margins);
+  return new QRect(recret);
 }
 
   // proto:  void QRect::setWidth(int w);
@@ -291,6 +448,14 @@ void demth_ZN5QRect8moveLeftEi(void *that, int pos)
 {
   QRect *cthat = (QRect *)that;
    cthat->moveLeft(pos);
+}
+
+  // proto:  QRect QRect::translated(const QPoint & p);
+QRect* demth_ZNK5QRect10translatedERK6QPoint(void *that, const QPoint & p)
+{
+  QRect *cthat = (QRect *)that;
+  auto recret = cthat->translated(p);
+  return new QRect(recret);
 }
 
 int QRectF_Class_Size()
@@ -352,6 +517,21 @@ void demth_ZN6QRectF6moveToEdd(void *that, double x, double y)
    cthat->moveTo(x, y);
 }
 
+  // proto:  qreal QRectF::top();
+qreal demth_ZNK6QRectF3topEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->top();
+}
+
+  // proto:  QPointF QRectF::bottomLeft();
+QPointF* demth_ZNK6QRectF10bottomLeftEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->bottomLeft();
+  return new QPointF(recret);
+}
+
   // proto:  void QRectF::setHeight(qreal h);
 void demth_ZN6QRectF9setHeightEd(void *that, double h)
 {
@@ -387,6 +567,22 @@ void demth_ZN6QRectF13setBottomLeftERK7QPointF(void *that, const QPointF & p)
    cthat->setBottomLeft(p);
 }
 
+  // proto:  QPointF QRectF::topRight();
+QPointF* demth_ZNK6QRectF8topRightEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->topRight();
+  return new QPointF(recret);
+}
+
+  // proto:  QSizeF QRectF::size();
+QSizeF* demth_ZNK6QRectF4sizeEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->size();
+  return new QSizeF(recret);
+}
+
   // proto:  void QRectF::adjust(qreal x1, qreal y1, qreal x2, qreal y2);
 void demth_ZN6QRectF6adjustEdddd(void *that, double x1, double y1, double x2, double y2)
 {
@@ -399,6 +595,21 @@ void demth_ZN6QRectF9moveRightEd(void *that, double pos)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->moveRight(pos);
+}
+
+  // proto:  qreal QRectF::y();
+qreal demth_ZNK6QRectF1yEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->y();
+}
+
+  // proto:  QPointF QRectF::bottomRight();
+QPointF* demth_ZNK6QRectF11bottomRightEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->bottomRight();
+  return new QPointF(recret);
 }
 
   // proto:  void QRectF::setBottom(qreal pos);
@@ -429,11 +640,39 @@ void demth_ZNK6QRectF7getRectEPdS0_S0_S0_(void *that, qreal * x, qreal * y, qrea
    cthat->getRect(x, y, w, h);
 }
 
+  // proto:  qreal QRectF::x();
+qreal demth_ZNK6QRectF1xEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->x();
+}
+
+  // proto:  qreal QRectF::bottom();
+qreal demth_ZNK6QRectF6bottomEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->bottom();
+}
+
+  // proto:  bool QRectF::isNull();
+bool demth_ZNK6QRectF6isNullEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->isNull();
+}
+
   // proto:  void QRectF::setWidth(qreal w);
 void demth_ZN6QRectF8setWidthEd(void *that, double w)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->setWidth(w);
+}
+
+  // proto:  qreal QRectF::height();
+qreal demth_ZNK6QRectF6heightEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->height();
 }
 
   // proto:  void QRectF::translate(const QPointF & p);
@@ -448,6 +687,14 @@ void demth_ZN6QRectF10moveCenterERK7QPointF(void *that, const QPointF & p)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->moveCenter(p);
+}
+
+  // proto:  QRectF QRectF::marginsRemoved(const QMarginsF & margins);
+QRectF* demth_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *that, const QMarginsF & margins)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->marginsRemoved(margins);
+  return new QRectF(recret);
 }
 
   // proto:  bool QRectF::contains(qreal x, qreal y);
@@ -471,6 +718,14 @@ void demth_ZN6QRectF7setRectEdddd(void *that, double x, double y, double w, doub
    cthat->setRect(x, y, w, h);
 }
 
+  // proto:  QPointF QRectF::center();
+QPointF* demth_ZNK6QRectF6centerEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->center();
+  return new QPointF(recret);
+}
+
   // proto:  void QRectF::setLeft(qreal pos);
 void demth_ZN6QRectF7setLeftEd(void *that, double pos)
 {
@@ -484,6 +739,21 @@ QRectF* demth_ZNK6QRectF11intersectedERKS_(void *that, const QRectF & other)
   QRectF *cthat = (QRectF *)that;
   auto recret = cthat->intersected(other);
   return new QRectF(recret);
+}
+
+  // proto:  QPointF QRectF::topLeft();
+QPointF* demth_ZNK6QRectF7topLeftEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->topLeft();
+  return new QPointF(recret);
+}
+
+  // proto:  qreal QRectF::left();
+qreal demth_ZNK6QRectF4leftEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->left();
 }
 
   // proto:  void QRectF::setY(qreal pos);
@@ -500,6 +770,13 @@ void demth_ZN6QRectF11moveTopLeftERK7QPointF(void *that, const QPointF & p)
    cthat->moveTopLeft(p);
 }
 
+  // proto:  qreal QRectF::width();
+qreal demth_ZNK6QRectF5widthEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->width();
+}
+
   // proto:  void QRectF::setTop(qreal pos);
 void demth_ZN6QRectF6setTopEd(void *that, double pos)
 {
@@ -507,11 +784,26 @@ void demth_ZN6QRectF6setTopEd(void *that, double pos)
    cthat->setTop(pos);
 }
 
+  // proto:  bool QRectF::isValid();
+bool demth_ZNK6QRectF7isValidEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->isValid();
+}
+
   // proto:  void QRectF::translate(qreal dx, qreal dy);
 void demth_ZN6QRectF9translateEdd(void *that, double dx, double dy)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->translate(dx, dy);
+}
+
+  // proto:  QRect QRectF::toRect();
+QRect* demth_ZNK6QRectF6toRectEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->toRect();
+  return new QRect(recret);
 }
 
   // proto:  void QRectF::moveLeft(qreal pos);
@@ -533,6 +825,22 @@ void demth_ZN6QRectF14setBottomRightERK7QPointF(void *that, const QPointF & p)
 {
   QRectF *cthat = (QRectF *)that;
    cthat->setBottomRight(p);
+}
+
+  // proto:  QRectF QRectF::marginsAdded(const QMarginsF & margins);
+QRectF* demth_ZNK6QRectF12marginsAddedERK9QMarginsF(void *that, const QMarginsF & margins)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->marginsAdded(margins);
+  return new QRectF(recret);
+}
+
+  // proto:  QRectF QRectF::translated(const QPointF & p);
+QRectF* demth_ZNK6QRectF10translatedERK7QPointF(void *that, const QPointF & p)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->translated(p);
+  return new QRectF(recret);
 }
 
   // proto:  void QRectF::getCoords(qreal * x1, qreal * y1, qreal * x2, qreal * y2);
@@ -563,6 +871,21 @@ void demth_ZN6QRectF9setCoordsEdddd(void *that, double x1, double y1, double x2,
    cthat->setCoords(x1, y1, x2, y2);
 }
 
+  // proto:  QRectF QRectF::translated(qreal dx, qreal dy);
+QRectF* demth_ZNK6QRectF10translatedEdd(void *that, double dx, double dy)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->translated(dx, dy);
+  return new QRectF(recret);
+}
+
+  // proto:  bool QRectF::isEmpty();
+bool demth_ZNK6QRectF7isEmptyEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->isEmpty();
+}
+
   // proto:  void QRectF::moveTopRight(const QPointF & p);
 void demth_ZN6QRectF12moveTopRightERK7QPointF(void *that, const QPointF & p)
 {
@@ -575,6 +898,21 @@ QRectF* demth_ZNK6QRectF6unitedERKS_(void *that, const QRectF & other)
 {
   QRectF *cthat = (QRectF *)that;
   auto recret = cthat->united(other);
+  return new QRectF(recret);
+}
+
+  // proto:  qreal QRectF::right();
+qreal demth_ZNK6QRectF5rightEv(void *that)
+{
+  QRectF *cthat = (QRectF *)that;
+  return cthat->right();
+}
+
+  // proto:  QRectF QRectF::adjusted(qreal x1, qreal y1, qreal x2, qreal y2);
+QRectF* demth_ZNK6QRectF8adjustedEdddd(void *that, double x1, double y1, double x2, double y2)
+{
+  QRectF *cthat = (QRectF *)that;
+  auto recret = cthat->adjusted(x1, y1, x2, y2);
   return new QRectF(recret);
 }
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpagelayout.h
 // dst-file: /src/gui/qpagelayout.cxx
 //
@@ -43,6 +43,13 @@ QPageLayout* dector_ZN11QPageLayoutC1ERK9QPageSizeNS_11OrientationERK9QMarginsFN
   // static_assert(sizeof(QPageLayout) == 32, "tyszerr");
   QPageLayout* rthis = new QPageLayout(pageSize, orientation, margins, units, minMargins);
   return rthis;
+}
+
+  // proto:  void QPageLayout::swap(QPageLayout & other);
+void demth_ZN11QPageLayout4swapERS_(void *that, QPageLayout & other)
+{
+  QPageLayout *cthat = (QPageLayout *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

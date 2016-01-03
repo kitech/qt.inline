@@ -1,11 +1,12 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
 
 // header block begin =>
 #include <qbytearray.h>
+#include <qstring.h>
 
 extern "C" {
 
@@ -82,6 +83,14 @@ QByteArray* dector_ZN10QByteArrayC1E17QByteArrayDataPtr(QByteArrayDataPtr dd)
   return rthis;
 }
 
+  // proto:  QByteArray QByteArray::toLower();
+QByteArray* demth_ZNKR10QByteArray7toLowerEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->toLower();
+  return new QByteArray(recret);
+}
+
   // proto:  void QByteArray::push_front(const QByteArray & a);
 void demth_ZN10QByteArray10push_frontERKS_(void *that, const QByteArray & a)
 {
@@ -124,18 +133,41 @@ bool demth_ZNK10QByteArray7isEmptyEv(void *that)
   return cthat->isEmpty();
 }
 
+
+    QByteArray * _ZN10QByteArray6insertEiRK7QString(void *that, int i, const QString & s)
+    {
+
+        QByteArray *cthat = (QByteArray *)that;
+        return &cthat->insert(i, s);
+    }
+
   // proto:  QByteArray & QByteArray::insert(int i, const QString & s);
 QByteArray * demth_ZN10QByteArray6insertEiRK7QString(void *that, int i, const QString & s)
 {
-  QByteArray *cthat = (QByteArray *)that;
+
+    QByteArray *cthat = (QByteArray *)that;
   return &cthat->insert(i, s);
 }
+
+    void abcccccccccc()
+    {
+        QByteArray ba;
+        ba.insert(0, QString("123"));
+    }
 
   // proto:  int QByteArray::lastIndexOf(const QString & s, int from);
 int demth_ZNK10QByteArray11lastIndexOfERK7QStringi(void *that, const QString & s, int from)
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->lastIndexOf(s, from);
+}
+
+  // proto:  QByteArray QByteArray::toUpper();
+QByteArray* demth_ZNO10QByteArray7toUpperEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->toUpper();
+  return new QByteArray(recret);
 }
 
   // proto: static QByteArray QByteArray::fromStdString(const std::string & s);
@@ -181,6 +213,14 @@ int demth_ZNK10QByteArray5countEv(void *that)
   return cthat->count();
 }
 
+  // proto:  QByteArray QByteArray::trimmed();
+QByteArray* demth_ZNO10QByteArray7trimmedEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->trimmed();
+  return new QByteArray(recret);
+}
+
   // proto:  bool QByteArray::contains(const char * a);
 bool demth_ZNK10QByteArray8containsEPKc(void *that, const char * a)
 {
@@ -207,6 +247,14 @@ int demth_ZNK10QByteArray7indexOfERK7QStringi(void *that, const QString & s, int
 {
   QByteArray *cthat = (QByteArray *)that;
   return cthat->indexOf(s, from);
+}
+
+  // proto:  QByteArray QByteArray::simplified();
+QByteArray* demth_ZNKR10QByteArray10simplifiedEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->simplified();
+  return new QByteArray(recret);
 }
 
   // proto:  void QByteArray::detach();
@@ -251,6 +299,14 @@ void demth_ZN10QByteArray10push_frontEc(void *that, char c)
    cthat->push_front(c);
 }
 
+  // proto:  QByteArray QByteArray::toLower();
+QByteArray* demth_ZNO10QByteArray7toLowerEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->toLower();
+  return new QByteArray(recret);
+}
+
   // proto:  QByteArray & QByteArray::setNum(short , int base);
 QByteArray * demth_ZN10QByteArray6setNumEsi(void *that, short arg1, int base)
 {
@@ -286,6 +342,13 @@ void demth_ZN10QByteArrayC1ERKS_(void *that, const QByteArray & arg1)
   auto _o = new(that) QByteArray(arg1);
 }
 
+  // proto:  int QByteArray::length();
+int demth_ZNK10QByteArray6lengthEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  return cthat->length();
+}
+
   // proto:  char QByteArray::at(int i);
 char demth_ZNK10QByteArray2atEi(void *that, int i)
 {
@@ -314,6 +377,14 @@ QByteArray * demth_ZN10QByteArray7replaceERK7QStringPKc(void *that, const QStrin
   return &cthat->replace(before, after);
 }
 
+  // proto:  QByteArray QByteArray::trimmed();
+QByteArray* demth_ZNKR10QByteArray7trimmedEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->trimmed();
+  return new QByteArray(recret);
+}
+
   // proto:  QByteArray & QByteArray::replace(char before, const char * after);
 QByteArray * demth_ZN10QByteArray7replaceEcPKc(void *that, char before, const char * after)
 {
@@ -326,6 +397,14 @@ QByteArray * demth_ZN10QByteArray6appendERK7QString(void *that, const QString & 
 {
   QByteArray *cthat = (QByteArray *)that;
   return &cthat->append(s);
+}
+
+  // proto:  QByteArray QByteArray::toUpper();
+QByteArray* demth_ZNKR10QByteArray7toUpperEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->toUpper();
+  return new QByteArray(recret);
 }
 
   // proto:  void QByteArray::push_back(const QByteArray & a);
@@ -382,6 +461,14 @@ void demth_ZN10QByteArrayC1E17QByteArrayDataPtr(void *that, QByteArrayDataPtr dd
 {
   QByteArray *cthat = (QByteArray *)that;
   auto _o = new(that) QByteArray(dd);
+}
+
+  // proto:  QByteArray QByteArray::simplified();
+QByteArray* demth_ZNO10QByteArray10simplifiedEv(void *that)
+{
+  QByteArray *cthat = (QByteArray *)that;
+  auto recret = cthat->simplified();
+  return new QByteArray(recret);
 }
 
   // proto:  bool QByteArray::contains(const QByteArray & a);

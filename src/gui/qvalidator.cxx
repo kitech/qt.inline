@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -65,6 +65,27 @@ QDoubleValidator* dector_ZN16QDoubleValidatorC1EddiP7QObject(double bottom, doub
   return rthis;
 }
 
+  // proto:  int QDoubleValidator::decimals();
+int demth_ZNK16QDoubleValidator8decimalsEv(void *that)
+{
+  QDoubleValidator *cthat = (QDoubleValidator *)that;
+  return cthat->decimals();
+}
+
+  // proto:  double QDoubleValidator::top();
+double demth_ZNK16QDoubleValidator3topEv(void *that)
+{
+  QDoubleValidator *cthat = (QDoubleValidator *)that;
+  return cthat->top();
+}
+
+  // proto:  double QDoubleValidator::bottom();
+double demth_ZNK16QDoubleValidator6bottomEv(void *that)
+{
+  QDoubleValidator *cthat = (QDoubleValidator *)that;
+  return cthat->bottom();
+}
+
 int QIntValidator_Class_Size()
 {
   return sizeof(QIntValidator);
@@ -91,6 +112,20 @@ QIntValidator* dector_ZN13QIntValidatorC1EiiP7QObject(int bottom, int top, QObje
   // static_assert(sizeof(QIntValidator) == 32, "tyszerr");
   QIntValidator* rthis = new QIntValidator(bottom, top, parent);
   return rthis;
+}
+
+  // proto:  int QIntValidator::top();
+int demth_ZNK13QIntValidator3topEv(void *that)
+{
+  QIntValidator *cthat = (QIntValidator *)that;
+  return cthat->top();
+}
+
+  // proto:  int QIntValidator::bottom();
+int demth_ZNK13QIntValidator6bottomEv(void *that)
+{
+  QIntValidator *cthat = (QIntValidator *)that;
+  return cthat->bottom();
 }
 
 int QValidator_Class_Size()
@@ -124,6 +159,13 @@ QRegExpValidator* dector_ZN16QRegExpValidatorC1EP7QObject(QObject * parent)
   // static_assert(sizeof(QRegExpValidator) == 32, "tyszerr");
   QRegExpValidator* rthis = new QRegExpValidator(parent);
   return rthis;
+}
+
+  // proto:  const QRegExp & QRegExpValidator::regExp();
+const QRegExp * demth_ZNK16QRegExpValidator6regExpEv(void *that)
+{
+  QRegExpValidator *cthat = (QRegExpValidator *)that;
+  return &cthat->regExp();
 }
 
 }; // <= extern "C" block end

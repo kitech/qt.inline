@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -46,6 +46,41 @@ QMatrix* dector_ZN7QMatrixC1Edddddd(double m11, double m12, double m21, double m
   return rthis;
 }
 
+  // proto:  qreal QMatrix::dx();
+qreal demth_ZNK7QMatrix2dxEv(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->dx();
+}
+
+  // proto:  qreal QMatrix::dy();
+qreal demth_ZNK7QMatrix2dyEv(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->dy();
+}
+
+  // proto:  qreal QMatrix::determinant();
+qreal demth_ZNK7QMatrix11determinantEv(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->determinant();
+}
+
+  // proto:  qreal QMatrix::m21();
+qreal demth_ZNK7QMatrix3m21Ev(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->m21();
+}
+
+  // proto:  qreal QMatrix::m11();
+qreal demth_ZNK7QMatrix3m11Ev(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->m11();
+}
+
   // proto:  void QMatrix::QMatrix(Qt::Initialization );
 void demth_ZN7QMatrixC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
 {
@@ -58,6 +93,27 @@ bool demth_ZNK7QMatrix10isIdentityEv(void *that)
 {
   QMatrix *cthat = (QMatrix *)that;
   return cthat->isIdentity();
+}
+
+  // proto:  qreal QMatrix::m12();
+qreal demth_ZNK7QMatrix3m12Ev(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->m12();
+}
+
+  // proto:  bool QMatrix::isInvertible();
+bool demth_ZNK7QMatrix12isInvertibleEv(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->isInvertible();
+}
+
+  // proto:  qreal QMatrix::m22();
+qreal demth_ZNK7QMatrix3m22Ev(void *that)
+{
+  QMatrix *cthat = (QMatrix *)that;
+  return cthat->m22();
 }
 
 }; // <= extern "C" block end

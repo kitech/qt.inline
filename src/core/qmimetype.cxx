@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qmimetype.h
 // dst-file: /src/core/qmimetype.cxx
 //
@@ -43,6 +43,13 @@ QMimeType* dector_ZN9QMimeTypeC1Ev()
   // static_assert(sizeof(QMimeType) == 32, "tyszerr");
   QMimeType* rthis = new QMimeType();
   return rthis;
+}
+
+  // proto:  void QMimeType::swap(QMimeType & other);
+void demth_ZN9QMimeType4swapERS_(void *that, QMimeType & other)
+{
+  QMimeType *cthat = (QMimeType *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qloggingcategory.h
 // dst-file: /src/core/qloggingcategory.cxx
 //
@@ -35,6 +35,41 @@ QLoggingCategory* dector_ZN16QLoggingCategoryC1EPKc(const char * category)
   // static_assert(sizeof(QLoggingCategory) == 32, "tyszerr");
   QLoggingCategory* rthis = new QLoggingCategory(category);
   return rthis;
+}
+
+  // proto:  bool QLoggingCategory::isDebugEnabled();
+bool demth_ZNK16QLoggingCategory14isDebugEnabledEv(void *that)
+{
+  QLoggingCategory *cthat = (QLoggingCategory *)that;
+  return cthat->isDebugEnabled();
+}
+
+  // proto:  bool QLoggingCategory::isWarningEnabled();
+bool demth_ZNK16QLoggingCategory16isWarningEnabledEv(void *that)
+{
+  QLoggingCategory *cthat = (QLoggingCategory *)that;
+  return cthat->isWarningEnabled();
+}
+
+  // proto:  bool QLoggingCategory::isInfoEnabled();
+bool demth_ZNK16QLoggingCategory13isInfoEnabledEv(void *that)
+{
+  QLoggingCategory *cthat = (QLoggingCategory *)that;
+  return cthat->isInfoEnabled();
+}
+
+  // proto:  const char * QLoggingCategory::categoryName();
+const char * demth_ZNK16QLoggingCategory12categoryNameEv(void *that)
+{
+  QLoggingCategory *cthat = (QLoggingCategory *)that;
+  return cthat->categoryName();
+}
+
+  // proto:  bool QLoggingCategory::isCriticalEnabled();
+bool demth_ZNK16QLoggingCategory17isCriticalEnabledEv(void *that)
+{
+  QLoggingCategory *cthat = (QLoggingCategory *)that;
+  return cthat->isCriticalEnabled();
 }
 
 }; // <= extern "C" block end

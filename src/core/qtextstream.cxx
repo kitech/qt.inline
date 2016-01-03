@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qtextstream.h
 // dst-file: /src/core/qtextstream.cxx
 //
@@ -12,6 +12,13 @@ extern "C" {
 int QTextStreamManipulator_Class_Size()
 {
   return sizeof(QTextStreamManipulator);
+}
+
+  // proto:  void QTextStreamManipulator::exec(QTextStream & s);
+void demth_ZN22QTextStreamManipulator4execER11QTextStream(void *that, QTextStream & s)
+{
+  QTextStreamManipulator *cthat = (QTextStreamManipulator *)that;
+   cthat->exec(s);
 }
 
 int QTextStream_Class_Size()

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qopenglpaintdevice.h
 // dst-file: /src/gui/qopenglpaintdevice.cxx
 //
@@ -43,6 +43,13 @@ QOpenGLPaintDevice* dector_ZN18QOpenGLPaintDeviceC1ERK5QSize(const QSize & size)
   // static_assert(sizeof(QOpenGLPaintDevice) == 32, "tyszerr");
   QOpenGLPaintDevice* rthis = new QOpenGLPaintDevice(size);
   return rthis;
+}
+
+  // proto:  int QOpenGLPaintDevice::devType();
+int demth_ZNK18QOpenGLPaintDevice7devTypeEv(void *that)
+{
+  QOpenGLPaintDevice *cthat = (QOpenGLPaintDevice *)that;
+  return cthat->devType();
 }
 
 }; // <= extern "C" block end

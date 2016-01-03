@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtWidgets/qaction.h
 // dst-file: /src/widgets/qaction.cxx
 //
@@ -45,11 +45,25 @@ QAction* dector_ZN7QActionC1ERK5QIconRK7QStringP7QObject(const QIcon & icon, con
   return rthis;
 }
 
+  // proto:  void QAction::trigger();
+void demth_ZN7QAction7triggerEv(void *that)
+{
+  QAction *cthat = (QAction *)that;
+   cthat->trigger();
+}
+
   // proto:  void QAction::setDisabled(bool b);
 void demth_ZN7QAction11setDisabledEb(void *that, bool b)
 {
   QAction *cthat = (QAction *)that;
    cthat->setDisabled(b);
+}
+
+  // proto:  void QAction::hover();
+void demth_ZN7QAction5hoverEv(void *that)
+{
+  QAction *cthat = (QAction *)that;
+   cthat->hover();
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -69,12 +69,42 @@ QImage* dector_ZN6QImageC1EOS_(QImage && other)
   return rthis;
 }
 
+  // proto:  QImage QImage::mirrored(bool horizontally, bool vertically);
+QImage* demth_ZNKR6QImage8mirroredEbb(void *that, bool horizontally, bool vertically)
+{
+  QImage *cthat = (QImage *)that;
+  auto recret = cthat->mirrored(horizontally, vertically);
+  return new QImage(recret);
+}
+
+  // proto:  QImage && QImage::mirrored(bool horizontally, bool vertically);
+QImage && demth_ZNO6QImage8mirroredEbb(void *that, bool horizontally, bool vertically)
+{
+  QImage *cthat = (QImage *)that;
+  return cthat->mirrored(horizontally, vertically);
+}
+
   // proto: static QImage QImage::fromData(const QByteArray & data, const char * format);
 QImage* demth_ZN6QImage8fromDataERK10QByteArrayPKc(void *that, const QByteArray & data, const char * format)
 {
   QImage *cthat = (QImage *)that;
   auto recret = cthat->fromData(data, format);
   return new QImage(recret);
+}
+
+  // proto:  QImage QImage::convertToFormat(QImage::Format f, Qt::ImageConversionFlags flags);
+QImage* demth_ZNO6QImage15convertToFormatENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *that, QImage::Format f, Qt::ImageConversionFlags flags)
+{
+  QImage *cthat = (QImage *)that;
+  auto recret = cthat->convertToFormat(f, flags);
+  return new QImage(recret);
+}
+
+  // proto:  QImage && QImage::rgbSwapped();
+QImage && demth_ZNO6QImage10rgbSwappedEv(void *that)
+{
+  QImage *cthat = (QImage *)that;
+  return cthat->rgbSwapped();
 }
 
   // proto:  QRgb QImage::pixel(const QPoint & pt);
@@ -121,6 +151,14 @@ void demth_ZN6QImage4swapERS_(void *that, QImage & other)
    cthat->swap(other);
 }
 
+  // proto:  QImage QImage::convertToFormat(QImage::Format f, Qt::ImageConversionFlags flags);
+QImage* demth_ZNKR6QImage15convertToFormatENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void *that, QImage::Format f, Qt::ImageConversionFlags flags)
+{
+  QImage *cthat = (QImage *)that;
+  auto recret = cthat->convertToFormat(f, flags);
+  return new QImage(recret);
+}
+
   // proto:  bool QImage::valid(const QPoint & pt);
 bool demth_ZNK6QImage5validERK6QPoint(void *that, const QPoint & pt)
 {
@@ -140,6 +178,14 @@ void demth_ZN6QImageC1EOS_(void *that, QImage && other)
 {
   QImage *cthat = (QImage *)that;
   auto _o = new(that) QImage(other);
+}
+
+  // proto:  QImage QImage::rgbSwapped();
+QImage* demth_ZNKR6QImage10rgbSwappedEv(void *that)
+{
+  QImage *cthat = (QImage *)that;
+  auto recret = cthat->rgbSwapped();
+  return new QImage(recret);
 }
 
 }; // <= extern "C" block end

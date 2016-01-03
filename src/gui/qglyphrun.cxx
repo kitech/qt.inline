@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qglyphrun.h
 // dst-file: /src/gui/qglyphrun.cxx
 //
@@ -35,6 +35,13 @@ QGlyphRun* dector_ZN9QGlyphRunC1ERKS_(const QGlyphRun & other)
   // static_assert(sizeof(QGlyphRun) == 32, "tyszerr");
   QGlyphRun* rthis = new QGlyphRun(other);
   return rthis;
+}
+
+  // proto:  void QGlyphRun::swap(QGlyphRun & other);
+void demth_ZN9QGlyphRun4swapERS_(void *that, QGlyphRun & other)
+{
+  QGlyphRun *cthat = (QGlyphRun *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -184,6 +184,13 @@ QVector3D* demth_ZNK11QQuaternion6vectorEv(void *that)
   QQuaternion *cthat = (QQuaternion *)that;
   auto recret = cthat->vector();
   return new QVector3D(recret);
+}
+
+  // proto: static float QQuaternion::dotProduct(const QQuaternion & q1, const QQuaternion & q2);
+float demth_ZN11QQuaternion10dotProductERKS_S1_(void *that, const QQuaternion & q1, const QQuaternion & q2)
+{
+  QQuaternion *cthat = (QQuaternion *)that;
+  return cthat->dotProduct(q1, q2);
 }
 
   // proto:  void QQuaternion::setVector(float x, float y, float z);

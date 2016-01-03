@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qmutex.h
 // dst-file: /src/core/qmutex.cxx
 //
@@ -74,6 +74,13 @@ void demth_ZN11QBasicMutex4lockEv(void *that)
 {
   QBasicMutex *cthat = (QBasicMutex *)that;
    cthat->lock();
+}
+
+  // proto:  bool QBasicMutex::tryLock();
+bool demth_ZN11QBasicMutex7tryLockEv(void *that)
+{
+  QBasicMutex *cthat = (QBasicMutex *)that;
+  return cthat->tryLock();
 }
 
   // proto:  void QBasicMutex::unlock();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -29,11 +29,27 @@ QDesktopWidget* dector_ZN14QDesktopWidgetC1Ev()
   return rthis;
 }
 
+  // proto:  const QRect QDesktopWidget::screenGeometry(const QPoint & point);
+const QRect* demth_ZNK14QDesktopWidget14screenGeometryERK6QPoint(void *that, const QPoint & point)
+{
+  QDesktopWidget *cthat = (QDesktopWidget *)that;
+  auto recret = cthat->screenGeometry(point);
+  return new const QRect(recret);
+}
+
   // proto:  int QDesktopWidget::screenCount();
 int demth_ZNK14QDesktopWidget11screenCountEv(void *that)
 {
   QDesktopWidget *cthat = (QDesktopWidget *)that;
   return cthat->screenCount();
+}
+
+  // proto:  const QRect QDesktopWidget::availableGeometry(const QPoint & point);
+const QRect* demth_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *that, const QPoint & point)
+{
+  QDesktopWidget *cthat = (QDesktopWidget *)that;
+  auto recret = cthat->availableGeometry(point);
+  return new const QRect(recret);
 }
 
 }; // <= extern "C" block end

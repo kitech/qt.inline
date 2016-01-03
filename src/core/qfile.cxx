@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -67,6 +67,14 @@ QByteArray* demth_ZN5QFile10encodeNameERK7QString(void *that, const QString & fi
   QFile *cthat = (QFile *)that;
   auto recret = cthat->encodeName(fileName);
   return new QByteArray(recret);
+}
+
+  // proto: static QString QFile::decodeName(const QByteArray & localFileName);
+QString* demth_ZN5QFile10decodeNameERK10QByteArray(void *that, const QByteArray & localFileName)
+{
+  QFile *cthat = (QFile *)that;
+  auto recret = cthat->decodeName(localFileName);
+  return new QString(recret);
 }
 
   // proto: static QString QFile::decodeName(const char * localFileName);

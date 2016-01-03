@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qlocale.h
 // dst-file: /src/core/qlocale.cxx
 //
@@ -59,6 +59,14 @@ QLocale* dector_ZN7QLocaleC1Ev()
   // static_assert(sizeof(QLocale) == 32, "tyszerr");
   QLocale* rthis = new QLocale();
   return rthis;
+}
+
+  // proto: static QLocale QLocale::c();
+QLocale* demth_ZN7QLocale1cEv(void *that)
+{
+  QLocale *cthat = (QLocale *)that;
+  auto recret = cthat->c();
+  return new QLocale(recret);
 }
 
   // proto:  QString QLocale::toCurrencyString(uint , const QString & symbol);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qtextcodec.h
 // dst-file: /src/core/qtextcodec.cxx
 //
@@ -40,6 +40,29 @@ QTextEncoder* dector_ZN12QTextEncoderC1EPK10QTextCodec(const QTextCodec * codec)
 int QTextCodec_Class_Size()
 {
   return sizeof(QTextCodec);
+}
+
+  // proto:  QString QTextCodec::toUnicode(const char * in, int length, QTextCodec::ConverterState * state);
+QString* demth_ZNK10QTextCodec9toUnicodeEPKciPNS_14ConverterStateE(void *that, const char * in, int length, QTextCodec::ConverterState * state)
+{
+  QTextCodec *cthat = (QTextCodec *)that;
+  auto recret = cthat->toUnicode(in, length, state);
+  return new QString(recret);
+}
+
+  // proto:  QByteArray QTextCodec::fromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state);
+QByteArray* demth_ZNK10QTextCodec11fromUnicodeEPK5QChariPNS_14ConverterStateE(void *that, const QChar * in, int length, QTextCodec::ConverterState * state)
+{
+  QTextCodec *cthat = (QTextCodec *)that;
+  auto recret = cthat->fromUnicode(in, length, state);
+  return new QByteArray(recret);
+}
+
+  // proto: static QTextCodec * QTextCodec::codecForName(const char * name);
+QTextCodec * demth_ZN10QTextCodec12codecForNameEPKc(void *that, const char * name)
+{
+  QTextCodec *cthat = (QTextCodec *)that;
+  return cthat->codecForName(name);
 }
 
 int QTextDecoder_Class_Size()

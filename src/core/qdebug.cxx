@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qdebug.h
 // dst-file: /src/core/qdebug.cxx
 //
@@ -181,6 +181,13 @@ QDebug * demth_ZN6QDebug7nospaceEv(void *that)
 {
   QDebug *cthat = (QDebug *)that;
   return &cthat->nospace();
+}
+
+  // proto:  bool QDebug::autoInsertSpaces();
+bool demth_ZNK6QDebug16autoInsertSpacesEv(void *that)
+{
+  QDebug *cthat = (QDebug *)that;
+  return cthat->autoInsertSpaces();
 }
 
   // proto:  void QDebug::QDebug(QIODevice * device);

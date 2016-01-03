@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qtemporaryfile.h
 // dst-file: /src/core/qtemporaryfile.cxx
 //
@@ -65,6 +65,13 @@ QTemporaryFile * demth_ZN14QTemporaryFile16createNativeFileERK7QString(void *tha
 {
   QTemporaryFile *cthat = (QTemporaryFile *)that;
   return cthat->createNativeFile(fileName);
+}
+
+  // proto:  bool QTemporaryFile::open();
+bool demth_ZN14QTemporaryFile4openEv(void *that)
+{
+  QTemporaryFile *cthat = (QTemporaryFile *)that;
+  return cthat->open();
 }
 
   // proto: static QTemporaryFile * QTemporaryFile::createLocalFile(const QString & fileName);

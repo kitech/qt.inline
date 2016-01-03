@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -32,6 +32,14 @@ QSpacerItem* dector_ZN11QSpacerItemC1EiiN11QSizePolicy6PolicyES1_(int w, int h, 
   // static_assert(sizeof(QSpacerItem) == 32, "tyszerr");
   QSpacerItem* rthis = new QSpacerItem(w, h, hData, vData);
   return rthis;
+}
+
+  // proto:  QSizePolicy QSpacerItem::sizePolicy();
+QSizePolicy* demth_ZNK11QSpacerItem10sizePolicyEv(void *that)
+{
+  QSpacerItem *cthat = (QSpacerItem *)that;
+  auto recret = cthat->sizePolicy();
+  return new QSizePolicy(recret);
 }
 
 int QWidgetItem_Class_Size()

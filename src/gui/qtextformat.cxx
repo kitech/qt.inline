@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtextformat.h
 // dst-file: /src/gui/qtextformat.cxx
 //
@@ -240,6 +240,13 @@ QBrush* demth_ZNK11QTextFormat10backgroundEv(void *that)
   QTextFormat *cthat = (QTextFormat *)that;
   auto recret = cthat->background();
   return new QBrush(recret);
+}
+
+  // proto:  void QTextFormat::swap(QTextFormat & other);
+void demth_ZN11QTextFormat4swapERS_(void *that, QTextFormat & other)
+{
+  QTextFormat *cthat = (QTextFormat *)that;
+   cthat->swap(other);
 }
 
   // proto:  QBrush QTextFormat::foreground();
@@ -534,6 +541,13 @@ void demth_ZN15QTextCharFormat16setFontUnderlineEb(void *that, bool underline)
 {
   QTextCharFormat *cthat = (QTextCharFormat *)that;
    cthat->setFontUnderline(underline);
+}
+
+  // proto:  bool QTextCharFormat::isValid();
+bool demth_ZNK15QTextCharFormat7isValidEv(void *that)
+{
+  QTextCharFormat *cthat = (QTextCharFormat *)that;
+  return cthat->isValid();
 }
 
   // proto:  bool QTextCharFormat::fontItalic();
@@ -1008,6 +1022,13 @@ QString* demth_ZNK15QTextListFormat12numberPrefixEv(void *that)
   return new QString(recret);
 }
 
+  // proto:  bool QTextListFormat::isValid();
+bool demth_ZNK15QTextListFormat7isValidEv(void *that)
+{
+  QTextListFormat *cthat = (QTextListFormat *)that;
+  return cthat->isValid();
+}
+
   // proto:  void QTextListFormat::setNumberSuffix(const QString & numberSuffix);
 void demth_ZN15QTextListFormat15setNumberSuffixERK7QString(void *that, const QString & numberSuffix)
 {
@@ -1047,6 +1068,13 @@ void demth_ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE(void *that, QT
 {
   QTextFrameFormat *cthat = (QTextFrameFormat *)that;
    cthat->setBorderStyle(style);
+}
+
+  // proto:  bool QTextFrameFormat::isValid();
+bool demth_ZNK16QTextFrameFormat7isValidEv(void *that)
+{
+  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
+  return cthat->isValid();
 }
 
   // proto:  void QTextFrameFormat::setHeight(qreal height);

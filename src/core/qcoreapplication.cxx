@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
@@ -27,6 +27,13 @@ QCoreApplication* dector_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv,
   // static_assert(sizeof(QCoreApplication) == 32, "tyszerr");
   QCoreApplication* rthis = new QCoreApplication(argc, argv, arg3);
   return rthis;
+}
+
+  // proto: static QCoreApplication * QCoreApplication::instance();
+QCoreApplication * demth_ZN16QCoreApplication8instanceEv(void *that)
+{
+  QCoreApplication *cthat = (QCoreApplication *)that;
+  return cthat->instance();
 }
 
   // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);

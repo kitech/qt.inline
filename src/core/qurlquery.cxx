@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qurlquery.h
 // dst-file: /src/core/qurlquery.cxx
 //
@@ -51,6 +51,37 @@ QUrlQuery* dector_ZN9QUrlQueryC1ERKS_(const QUrlQuery & other)
   // static_assert(sizeof(QUrlQuery) == 32, "tyszerr");
   QUrlQuery* rthis = new QUrlQuery(other);
   return rthis;
+}
+
+  // proto: static QChar QUrlQuery::defaultQueryValueDelimiter();
+QChar* demth_ZN9QUrlQuery26defaultQueryValueDelimiterEv(void *that)
+{
+  QUrlQuery *cthat = (QUrlQuery *)that;
+  auto recret = cthat->defaultQueryValueDelimiter();
+  return new QChar(recret);
+}
+
+  // proto:  void QUrlQuery::swap(QUrlQuery & other);
+void demth_ZN9QUrlQuery4swapERS_(void *that, QUrlQuery & other)
+{
+  QUrlQuery *cthat = (QUrlQuery *)that;
+   cthat->swap(other);
+}
+
+  // proto:  QString QUrlQuery::toString(QUrl::ComponentFormattingOptions encoding);
+QString* demth_ZNK9QUrlQuery8toStringE6QFlagsIN4QUrl25ComponentFormattingOptionEE(void *that, QUrl::ComponentFormattingOptions encoding)
+{
+  QUrlQuery *cthat = (QUrlQuery *)that;
+  auto recret = cthat->toString(encoding);
+  return new QString(recret);
+}
+
+  // proto: static QChar QUrlQuery::defaultQueryPairDelimiter();
+QChar* demth_ZN9QUrlQuery25defaultQueryPairDelimiterEv(void *that)
+{
+  QUrlQuery *cthat = (QUrlQuery *)that;
+  auto recret = cthat->defaultQueryPairDelimiter();
+  return new QChar(recret);
 }
 
 }; // <= extern "C" block end

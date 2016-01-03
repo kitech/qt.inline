@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qmap.h
 // dst-file: /src/core/qmap.cxx
 //
@@ -17,6 +17,41 @@ int QMapDataBase_Class_Size()
 int QMapNodeBase_Class_Size()
 {
   return sizeof(QMapNodeBase);
+}
+
+  // proto:  void QMapNodeBase::setParent(QMapNodeBase * pp);
+void demth_ZN12QMapNodeBase9setParentEPS_(void *that, QMapNodeBase * pp)
+{
+  QMapNodeBase *cthat = (QMapNodeBase *)that;
+   cthat->setParent(pp);
+}
+
+  // proto:  QMapNodeBase * QMapNodeBase::previousNode();
+QMapNodeBase * demth_ZN12QMapNodeBase12previousNodeEv(void *that)
+{
+  QMapNodeBase *cthat = (QMapNodeBase *)that;
+  return cthat->previousNode();
+}
+
+  // proto:  void QMapNodeBase::setColor(QMapNodeBase::Color c);
+void demth_ZN12QMapNodeBase8setColorENS_5ColorE(void *that, QMapNodeBase::Color c)
+{
+  QMapNodeBase *cthat = (QMapNodeBase *)that;
+   cthat->setColor(c);
+}
+
+  // proto:  QMapNodeBase * QMapNodeBase::nextNode();
+QMapNodeBase * demth_ZN12QMapNodeBase8nextNodeEv(void *that)
+{
+  QMapNodeBase *cthat = (QMapNodeBase *)that;
+  return cthat->nextNode();
+}
+
+  // proto:  QMapNodeBase * QMapNodeBase::parent();
+QMapNodeBase * demth_ZNK12QMapNodeBase6parentEv(void *that)
+{
+  QMapNodeBase *cthat = (QMapNodeBase *)that;
+  return cthat->parent();
 }
 
 }; // <= extern "C" block end

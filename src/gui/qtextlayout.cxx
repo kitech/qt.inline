@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -27,6 +27,13 @@ qreal demth_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextL
 {
   QTextLine *cthat = (QTextLine *)that;
   return cthat->cursorToX(cursorPos, edge);
+}
+
+  // proto:  int QTextLine::lineNumber();
+int demth_ZNK9QTextLine10lineNumberEv(void *that)
+{
+  QTextLine *cthat = (QTextLine *)that;
+  return cthat->lineNumber();
 }
 
   // proto:  void QTextLine::QTextLine();
@@ -85,6 +92,13 @@ QTextLayout* dector_ZN11QTextLayoutC1Ev()
   // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
   QTextLayout* rthis = new QTextLayout();
   return rthis;
+}
+
+  // proto:  QTextEngine * QTextLayout::engine();
+QTextEngine * demth_ZNK11QTextLayout6engineEv(void *that)
+{
+  QTextLayout *cthat = (QTextLayout *)that;
+  return cthat->engine();
 }
 
 int QTextInlineObject_Class_Size()

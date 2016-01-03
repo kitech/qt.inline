@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qevent.h
 // dst-file: /src/gui/qevent.cxx
 //
@@ -282,11 +282,25 @@ int demth_ZNK11QMouseEvent1xEv(void *that)
   return cthat->x();
 }
 
+  // proto:  const QPointF & QMouseEvent::localPos();
+const QPointF * demth_ZNK11QMouseEvent8localPosEv(void *that)
+{
+  QMouseEvent *cthat = (QMouseEvent *)that;
+  return &cthat->localPos();
+}
+
   // proto:  int QMouseEvent::globalX();
 int demth_ZNK11QMouseEvent7globalXEv(void *that)
 {
   QMouseEvent *cthat = (QMouseEvent *)that;
   return cthat->globalX();
+}
+
+  // proto:  const QPointF & QMouseEvent::windowPos();
+const QPointF * demth_ZNK11QMouseEvent9windowPosEv(void *that)
+{
+  QMouseEvent *cthat = (QMouseEvent *)that;
+  return &cthat->windowPos();
 }
 
   // proto:  int QMouseEvent::globalY();
@@ -338,6 +352,14 @@ QString* demth_ZNK14QFileOpenEvent4fileEv(void *that)
   QFileOpenEvent *cthat = (QFileOpenEvent *)that;
   auto recret = cthat->file();
   return new QString(recret);
+}
+
+  // proto:  QUrl QFileOpenEvent::url();
+QUrl* demth_ZNK14QFileOpenEvent3urlEv(void *that)
+{
+  QFileOpenEvent *cthat = (QFileOpenEvent *)that;
+  auto recret = cthat->url();
+  return new QUrl(recret);
 }
 
 int QToolBarChangeEvent_Class_Size()
@@ -1060,6 +1082,20 @@ QNativeGestureEvent* dector_ZN19QNativeGestureEventC1EN2Qt17NativeGestureTypeERK
   return rthis;
 }
 
+  // proto:  const QPointF & QNativeGestureEvent::localPos();
+const QPointF * demth_ZNK19QNativeGestureEvent8localPosEv(void *that)
+{
+  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
+  return &cthat->localPos();
+}
+
+  // proto:  const QPointF & QNativeGestureEvent::screenPos();
+const QPointF * demth_ZNK19QNativeGestureEvent9screenPosEv(void *that)
+{
+  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
+  return &cthat->screenPos();
+}
+
   // proto:  const QPoint QNativeGestureEvent::pos();
 const QPoint* demth_ZNK19QNativeGestureEvent3posEv(void *that)
 {
@@ -1074,6 +1110,20 @@ const QPoint* demth_ZNK19QNativeGestureEvent9globalPosEv(void *that)
   QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
   auto recret = cthat->globalPos();
   return new const QPoint(recret);
+}
+
+  // proto:  qreal QNativeGestureEvent::value();
+qreal demth_ZNK19QNativeGestureEvent5valueEv(void *that)
+{
+  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
+  return cthat->value();
+}
+
+  // proto:  const QPointF & QNativeGestureEvent::windowPos();
+const QPointF * demth_ZNK19QNativeGestureEvent9windowPosEv(void *that)
+{
+  QNativeGestureEvent *cthat = (QNativeGestureEvent *)that;
+  return &cthat->windowPos();
 }
 
 int QResizeEvent_Class_Size()
@@ -1171,6 +1221,27 @@ QPoint* demth_ZNK11QEnterEvent3posEv(void *that)
   QEnterEvent *cthat = (QEnterEvent *)that;
   auto recret = cthat->pos();
   return new QPoint(recret);
+}
+
+  // proto:  const QPointF & QEnterEvent::screenPos();
+const QPointF * demth_ZNK11QEnterEvent9screenPosEv(void *that)
+{
+  QEnterEvent *cthat = (QEnterEvent *)that;
+  return &cthat->screenPos();
+}
+
+  // proto:  const QPointF & QEnterEvent::localPos();
+const QPointF * demth_ZNK11QEnterEvent8localPosEv(void *that)
+{
+  QEnterEvent *cthat = (QEnterEvent *)that;
+  return &cthat->localPos();
+}
+
+  // proto:  const QPointF & QEnterEvent::windowPos();
+const QPointF * demth_ZNK11QEnterEvent9windowPosEv(void *that)
+{
+  QEnterEvent *cthat = (QEnterEvent *)that;
+  return &cthat->windowPos();
 }
 
   // proto:  int QEnterEvent::globalX();
@@ -1434,6 +1505,13 @@ bool demth_ZNK9QKeyEvent12isAutoRepeatEv(void *that)
 {
   QKeyEvent *cthat = (QKeyEvent *)that;
   return cthat->isAutoRepeat();
+}
+
+  // proto:  int QKeyEvent::key();
+int demth_ZNK9QKeyEvent3keyEv(void *that)
+{
+  QKeyEvent *cthat = (QKeyEvent *)that;
+  return cthat->key();
 }
 
   // proto:  quint32 QKeyEvent::nativeModifiers();

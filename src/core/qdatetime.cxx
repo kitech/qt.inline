@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -36,6 +36,20 @@ QTime* demth_ZN5QTime24fromMSecsSinceStartOfDayEi(void *that, int msecs)
   QTime *cthat = (QTime *)that;
   auto recret = cthat->fromMSecsSinceStartOfDay(msecs);
   return new QTime(recret);
+}
+
+  // proto:  bool QTime::isNull();
+bool demth_ZNK5QTime6isNullEv(void *that)
+{
+  QTime *cthat = (QTime *)that;
+  return cthat->isNull();
+}
+
+  // proto:  int QTime::msecsSinceStartOfDay();
+int demth_ZNK5QTime20msecsSinceStartOfDayEv(void *that)
+{
+  QTime *cthat = (QTime *)that;
+  return cthat->msecsSinceStartOfDay();
 }
 
 int QDateTime_Class_Size()
@@ -142,12 +156,33 @@ QDate* dector_ZN5QDateC1Eiii(int y, int m, int d)
   return rthis;
 }
 
+  // proto:  qint64 QDate::toJulianDay();
+qint64 demth_ZNK5QDate11toJulianDayEv(void *that)
+{
+  QDate *cthat = (QDate *)that;
+  return cthat->toJulianDay();
+}
+
+  // proto:  bool QDate::isNull();
+bool demth_ZNK5QDate6isNullEv(void *that)
+{
+  QDate *cthat = (QDate *)that;
+  return cthat->isNull();
+}
+
   // proto: static QDate QDate::fromJulianDay(qint64 jd);
 QDate* demth_ZN5QDate13fromJulianDayEx(void *that, long long jd)
 {
   QDate *cthat = (QDate *)that;
   auto recret = cthat->fromJulianDay(jd);
   return new QDate(recret);
+}
+
+  // proto:  bool QDate::isValid();
+bool demth_ZNK5QDate7isValidEv(void *that)
+{
+  QDate *cthat = (QDate *)that;
+  return cthat->isValid();
 }
 
 }; // <= extern "C" block end

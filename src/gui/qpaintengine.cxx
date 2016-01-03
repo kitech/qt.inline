@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpaintengine.h
 // dst-file: /src/gui/qpaintengine.cxx
 //
@@ -29,6 +29,27 @@ void demth_ZN12QPaintEngine10clearDirtyE6QFlagsINS_9DirtyFlagEE(void *that, QPai
 {
   QPaintEngine *cthat = (QPaintEngine *)that;
    cthat->clearDirty(df);
+}
+
+  // proto:  bool QPaintEngine::isActive();
+bool demth_ZNK12QPaintEngine8isActiveEv(void *that)
+{
+  QPaintEngine *cthat = (QPaintEngine *)that;
+  return cthat->isActive();
+}
+
+  // proto:  bool QPaintEngine::hasFeature(PaintEngineFeatures feature);
+bool demth_ZNK12QPaintEngine10hasFeatureE6QFlagsINS_18PaintEngineFeatureEE(void *that, QPaintEngine::PaintEngineFeature feature)
+{
+  QPaintEngine *cthat = (QPaintEngine *)that;
+  return cthat->hasFeature(feature);
+}
+
+  // proto:  void QPaintEngine::setActive(bool newState);
+void demth_ZN12QPaintEngine9setActiveEb(void *that, bool newState)
+{
+  QPaintEngine *cthat = (QPaintEngine *)that;
+   cthat->setActive(newState);
 }
 
   // proto:  bool QPaintEngine::testDirty(DirtyFlags df);

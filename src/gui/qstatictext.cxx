@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qstatictext.h
 // dst-file: /src/gui/qstatictext.cxx
 //
@@ -43,6 +43,13 @@ QStaticText* dector_ZN11QStaticTextC1ERKS_(const QStaticText & other)
   // static_assert(sizeof(QStaticText) == 32, "tyszerr");
   QStaticText* rthis = new QStaticText(other);
   return rthis;
+}
+
+  // proto:  void QStaticText::swap(QStaticText & other);
+void demth_ZN11QStaticText4swapERS_(void *that, QStaticText & other)
+{
+  QStaticText *cthat = (QStaticText *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qmargins.h
 // dst-file: /src/core/qmargins.cxx
 //
@@ -38,6 +38,28 @@ QMarginsF* dector_ZN9QMarginsFC1ERK8QMargins(const QMargins & margins)
   return rthis;
 }
 
+  // proto:  QMargins QMarginsF::toMargins();
+QMargins* demth_ZNK9QMarginsF9toMarginsEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  auto recret = cthat->toMargins();
+  return new QMargins(recret);
+}
+
+  // proto:  qreal QMarginsF::right();
+qreal demth_ZNK9QMarginsF5rightEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  return cthat->right();
+}
+
+  // proto:  bool QMarginsF::isNull();
+bool demth_ZNK9QMarginsF6isNullEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  return cthat->isNull();
+}
+
   // proto:  void QMarginsF::setRight(qreal right);
 void demth_ZN9QMarginsF8setRightEd(void *that, double right)
 {
@@ -52,11 +74,32 @@ void demth_ZN9QMarginsF6setTopEd(void *that, double top)
    cthat->setTop(top);
 }
 
+  // proto:  qreal QMarginsF::left();
+qreal demth_ZNK9QMarginsF4leftEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  return cthat->left();
+}
+
+  // proto:  qreal QMarginsF::bottom();
+qreal demth_ZNK9QMarginsF6bottomEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  return cthat->bottom();
+}
+
   // proto:  void QMarginsF::setBottom(qreal bottom);
 void demth_ZN9QMarginsF9setBottomEd(void *that, double bottom)
 {
   QMarginsF *cthat = (QMarginsF *)that;
    cthat->setBottom(bottom);
+}
+
+  // proto:  qreal QMarginsF::top();
+qreal demth_ZNK9QMarginsF3topEv(void *that)
+{
+  QMarginsF *cthat = (QMarginsF *)that;
+  return cthat->top();
 }
 
   // proto:  void QMarginsF::setLeft(qreal left);
@@ -101,6 +144,20 @@ void demth_ZN8QMargins8setRightEi(void *that, int right)
    cthat->setRight(right);
 }
 
+  // proto:  int QMargins::left();
+int demth_ZNK8QMargins4leftEv(void *that)
+{
+  QMargins *cthat = (QMargins *)that;
+  return cthat->left();
+}
+
+  // proto:  int QMargins::top();
+int demth_ZNK8QMargins3topEv(void *that)
+{
+  QMargins *cthat = (QMargins *)that;
+  return cthat->top();
+}
+
   // proto:  void QMargins::setTop(int top);
 void demth_ZN8QMargins6setTopEi(void *that, int top)
 {
@@ -113,6 +170,27 @@ void demth_ZN8QMargins9setBottomEi(void *that, int bottom)
 {
   QMargins *cthat = (QMargins *)that;
    cthat->setBottom(bottom);
+}
+
+  // proto:  int QMargins::right();
+int demth_ZNK8QMargins5rightEv(void *that)
+{
+  QMargins *cthat = (QMargins *)that;
+  return cthat->right();
+}
+
+  // proto:  int QMargins::bottom();
+int demth_ZNK8QMargins6bottomEv(void *that)
+{
+  QMargins *cthat = (QMargins *)that;
+  return cthat->bottom();
+}
+
+  // proto:  bool QMargins::isNull();
+bool demth_ZNK8QMargins6isNullEv(void *that)
+{
+  QMargins *cthat = (QMargins *)that;
+  return cthat->isNull();
 }
 
 }; // <= extern "C" block end

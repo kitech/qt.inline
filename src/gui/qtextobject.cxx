@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -182,6 +182,14 @@ QTextFrame* dector_ZN10QTextFrameC1EP13QTextDocument(QTextDocument * doc)
   // static_assert(sizeof(QTextFrame) == 32, "tyszerr");
   QTextFrame* rthis = new QTextFrame(doc);
   return rthis;
+}
+
+  // proto:  QTextFrameFormat QTextFrame::frameFormat();
+QTextFrameFormat* demth_ZNK10QTextFrame11frameFormatEv(void *that)
+{
+  QTextFrame *cthat = (QTextFrame *)that;
+  auto recret = cthat->frameFormat();
+  return new QTextFrameFormat(recret);
 }
 
   // proto:  void QTextFrame::setFrameFormat(const QTextFrameFormat & format);

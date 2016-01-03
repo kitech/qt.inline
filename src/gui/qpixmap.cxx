@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpixmap.h
 // dst-file: /src/gui/qpixmap.cxx
 //
@@ -96,6 +96,14 @@ void demth_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *that, int dx, int dy, int x, 
 {
   QPixmap *cthat = (QPixmap *)that;
    cthat->scroll(dx, dy, x, y, width, height, exposed);
+}
+
+  // proto: static QPixmap QPixmap::fromImage(QImage && image, Qt::ImageConversionFlags flags);
+QPixmap* demth_ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *that, QImage && image, Qt::ImageConversionFlags flags)
+{
+  QPixmap *cthat = (QPixmap *)that;
+  auto recret = cthat->fromImage(image, flags);
+  return new QPixmap(recret);
 }
 
   // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);

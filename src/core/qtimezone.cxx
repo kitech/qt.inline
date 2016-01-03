@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qtimezone.h
 // dst-file: /src/core/qtimezone.cxx
 //
@@ -59,6 +59,13 @@ QTimeZone* dector_ZN9QTimeZoneC1ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES
   // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
   QTimeZone* rthis = new QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
   return rthis;
+}
+
+  // proto:  void QTimeZone::swap(QTimeZone & other);
+void demth_ZN9QTimeZone4swapERS_(void *that, QTimeZone & other)
+{
+  QTimeZone *cthat = (QTimeZone *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

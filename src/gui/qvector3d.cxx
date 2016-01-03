@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qvector3d.h
 // dst-file: /src/gui/qvector3d.cxx
 //
@@ -78,11 +78,48 @@ QVector3D* dector_ZN9QVector3DC1ERK9QVector2Df(const QVector2D & vector, float z
   return rthis;
 }
 
+  // proto:  float QVector3D::x();
+float demth_ZNK9QVector3D1xEv(void *that)
+{
+  QVector3D *cthat = (QVector3D *)that;
+  return cthat->x();
+}
+
+  // proto:  QPoint QVector3D::toPoint();
+QPoint* demth_ZNK9QVector3D7toPointEv(void *that)
+{
+  QVector3D *cthat = (QVector3D *)that;
+  auto recret = cthat->toPoint();
+  return new QPoint(recret);
+}
+
+  // proto:  float QVector3D::y();
+float demth_ZNK9QVector3D1yEv(void *that)
+{
+  QVector3D *cthat = (QVector3D *)that;
+  return cthat->y();
+}
+
+  // proto:  QPointF QVector3D::toPointF();
+QPointF* demth_ZNK9QVector3D8toPointFEv(void *that)
+{
+  QVector3D *cthat = (QVector3D *)that;
+  auto recret = cthat->toPointF();
+  return new QPointF(recret);
+}
+
   // proto:  void QVector3D::setY(float y);
 void demth_ZN9QVector3D4setYEf(void *that, float y)
 {
   QVector3D *cthat = (QVector3D *)that;
    cthat->setY(y);
+}
+
+  // proto:  float QVector3D::z();
+float demth_ZNK9QVector3D1zEv(void *that)
+{
+  QVector3D *cthat = (QVector3D *)that;
+  return cthat->z();
 }
 
   // proto:  void QVector3D::setZ(float z);

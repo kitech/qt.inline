@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qchar.h
 // dst-file: /src/core/qchar.cxx
 //
@@ -20,6 +20,20 @@ QLatin1Char* dector_ZN11QLatin1CharC1Ec(char c)
   // static_assert(sizeof(QLatin1Char) == 32, "tyszerr");
   QLatin1Char* rthis = new QLatin1Char(c);
   return rthis;
+}
+
+  // proto:  ushort QLatin1Char::unicode();
+ushort demth_ZNK11QLatin1Char7unicodeEv(void *that)
+{
+  QLatin1Char *cthat = (QLatin1Char *)that;
+  return cthat->unicode();
+}
+
+  // proto:  char QLatin1Char::toLatin1();
+char demth_ZNK11QLatin1Char8toLatin1Ev(void *that)
+{
+  QLatin1Char *cthat = (QLatin1Char *)that;
+  return cthat->toLatin1();
 }
 
 int QChar_Class_Size()
@@ -121,6 +135,13 @@ ushort demth_ZN5QChar12lowSurrogateEj(void *that, unsigned int ucs4)
   return cthat->lowSurrogate(ucs4);
 }
 
+  // proto:  uchar QChar::cell();
+uchar demth_ZNK5QChar4cellEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->cell();
+}
+
   // proto: static uint QChar::surrogateToUcs4(QChar high, QChar low);
 uint demth_ZN5QChar15surrogateToUcs4ES_S_(void *that, QChar high, QChar low)
 {
@@ -135,11 +156,25 @@ bool demth_ZN5QChar11isTitleCaseEj(void *that, unsigned int ucs4)
   return cthat->isTitleCase(ucs4);
 }
 
+  // proto:  bool QChar::isNull();
+bool demth_ZNK5QChar6isNullEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isNull();
+}
+
   // proto:  int QChar::digitValue();
 int demth_ZNK5QChar10digitValueEv(void *that)
 {
   QChar *cthat = (QChar *)that;
   return cthat->digitValue();
+}
+
+  // proto:  ushort QChar::unicode();
+ushort demth_ZNK5QChar7unicodeEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->unicode();
 }
 
   // proto:  QChar QChar::toTitleCase();
@@ -157,11 +192,25 @@ bool demth_ZN5QChar7isLowerEj(void *that, unsigned int ucs4)
   return cthat->isLower(ucs4);
 }
 
+  // proto:  bool QChar::isLowSurrogate();
+bool demth_ZNK5QChar14isLowSurrogateEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isLowSurrogate();
+}
+
   // proto:  bool QChar::isSymbol();
 bool demth_ZNK5QChar8isSymbolEv(void *that)
 {
   QChar *cthat = (QChar *)that;
   return cthat->isSymbol();
+}
+
+  // proto:  bool QChar::isLower();
+bool demth_ZNK5QChar7isLowerEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isLower();
 }
 
   // proto:  QChar QChar::mirroredChar();
@@ -170,6 +219,34 @@ QChar* demth_ZNK5QChar12mirroredCharEv(void *that)
   QChar *cthat = (QChar *)that;
   auto recret = cthat->mirroredChar();
   return new QChar(recret);
+}
+
+  // proto:  uchar QChar::row();
+uchar demth_ZNK5QChar3rowEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->row();
+}
+
+  // proto:  bool QChar::isDigit();
+bool demth_ZNK5QChar7isDigitEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isDigit();
+}
+
+  // proto:  bool QChar::isSurrogate();
+bool demth_ZNK5QChar11isSurrogateEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isSurrogate();
+}
+
+  // proto:  bool QChar::isNumber();
+bool demth_ZNK5QChar8isNumberEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isNumber();
 }
 
   // proto: static bool QChar::isHighSurrogate(uint ucs4);
@@ -236,6 +313,27 @@ bool demth_ZNK5QChar7isPunctEv(void *that)
   return cthat->isPunct();
 }
 
+  // proto:  bool QChar::isSpace();
+bool demth_ZNK5QChar7isSpaceEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isSpace();
+}
+
+  // proto:  bool QChar::isUpper();
+bool demth_ZNK5QChar7isUpperEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isUpper();
+}
+
+  // proto:  bool QChar::isNonCharacter();
+bool demth_ZNK5QChar14isNonCharacterEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isNonCharacter();
+}
+
   // proto: static bool QChar::isLetterOrNumber(uint ucs4);
 bool demth_ZN5QChar16isLetterOrNumberEj(void *that, unsigned int ucs4)
 {
@@ -250,11 +348,32 @@ bool demth_ZN5QChar7isDigitEj(void *that, unsigned int ucs4)
   return cthat->isDigit(ucs4);
 }
 
+  // proto:  bool QChar::isTitleCase();
+bool demth_ZNK5QChar11isTitleCaseEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isTitleCase();
+}
+
+  // proto:  bool QChar::isLetter();
+bool demth_ZNK5QChar8isLetterEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isLetter();
+}
+
   // proto:  unsigned char QChar::combiningClass();
 unsigned char demth_ZNK5QChar14combiningClassEv(void *that)
 {
   QChar *cthat = (QChar *)that;
   return cthat->combiningClass();
+}
+
+  // proto:  bool QChar::isHighSurrogate();
+bool demth_ZNK5QChar15isHighSurrogateEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isHighSurrogate();
 }
 
   // proto: static ushort QChar::highSurrogate(uint ucs4);
@@ -269,6 +388,13 @@ bool demth_ZN5QChar18requiresSurrogatesEj(void *that, unsigned int ucs4)
 {
   QChar *cthat = (QChar *)that;
   return cthat->requiresSurrogates(ucs4);
+}
+
+  // proto:  bool QChar::isLetterOrNumber();
+bool demth_ZNK5QChar16isLetterOrNumberEv(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->isLetterOrNumber();
 }
 
   // proto:  ushort & QChar::unicode();
@@ -322,6 +448,14 @@ bool demth_ZN5QChar7isSpaceEj(void *that, unsigned int ucs4)
   return cthat->isSpace(ucs4);
 }
 
+  // proto: static QChar QChar::fromLatin1(char c);
+QChar* demth_ZN5QChar10fromLatin1Ec(void *that, char c)
+{
+  QChar *cthat = (QChar *)that;
+  auto recret = cthat->fromLatin1(c);
+  return new QChar(recret);
+}
+
   // proto: static bool QChar::isSurrogate(uint ucs4);
 bool demth_ZN5QChar11isSurrogateEj(void *that, unsigned int ucs4)
 {
@@ -334,6 +468,13 @@ bool demth_ZN5QChar14isNonCharacterEj(void *that, unsigned int ucs4)
 {
   QChar *cthat = (QChar *)that;
   return cthat->isNonCharacter(ucs4);
+}
+
+  // proto:  char QChar::toLatin1();
+char demth_ZNK5QChar8toLatin1Ev(void *that)
+{
+  QChar *cthat = (QChar *)that;
+  return cthat->toLatin1();
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qopenglframebufferobject.h
 // dst-file: /src/gui/qopenglframebufferobject.cxx
 //
@@ -79,6 +79,20 @@ void dedtor_ZN24QOpenGLFramebufferObjectD0Ev(QOpenGLFramebufferObject* that)
 {
   QOpenGLFramebufferObject* rthis = (QOpenGLFramebufferObject*)that;
   delete rthis;
+}
+
+  // proto:  int QOpenGLFramebufferObject::height();
+int demth_ZNK24QOpenGLFramebufferObject6heightEv(void *that)
+{
+  QOpenGLFramebufferObject *cthat = (QOpenGLFramebufferObject *)that;
+  return cthat->height();
+}
+
+  // proto:  int QOpenGLFramebufferObject::width();
+int demth_ZNK24QOpenGLFramebufferObject5widthEv(void *that)
+{
+  QOpenGLFramebufferObject *cthat = (QOpenGLFramebufferObject *)that;
+  return cthat->width();
 }
 
 }; // <= extern "C" block end

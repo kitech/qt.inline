@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qrunnable.h
 // dst-file: /src/core/qrunnable.cxx
 //
@@ -12,6 +12,20 @@ extern "C" {
 int QRunnable_Class_Size()
 {
   return sizeof(QRunnable);
+}
+
+  // proto:  void QRunnable::setAutoDelete(bool _autoDelete);
+void demth_ZN9QRunnable13setAutoDeleteEb(void *that, bool _autoDelete)
+{
+  QRunnable *cthat = (QRunnable *)that;
+   cthat->setAutoDelete(_autoDelete);
+}
+
+  // proto:  bool QRunnable::autoDelete();
+bool demth_ZNK9QRunnable10autoDeleteEv(void *that)
+{
+  QRunnable *cthat = (QRunnable *)that;
+  return cthat->autoDelete();
 }
 
 }; // <= extern "C" block end

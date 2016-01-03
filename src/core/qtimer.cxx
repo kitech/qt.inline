@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qtimer.h
 // dst-file: /src/core/qtimer.cxx
 //
@@ -29,11 +29,32 @@ QTimer* dector_ZN6QTimerC1EP7QObject(QObject * parent)
   return rthis;
 }
 
+  // proto:  int QTimer::timerId();
+int demth_ZNK6QTimer7timerIdEv(void *that)
+{
+  QTimer *cthat = (QTimer *)that;
+  return cthat->timerId();
+}
+
   // proto:  void QTimer::setSingleShot(bool singleShot);
 void demth_ZN6QTimer13setSingleShotEb(void *that, bool singleShot)
 {
   QTimer *cthat = (QTimer *)that;
    cthat->setSingleShot(singleShot);
+}
+
+  // proto:  int QTimer::interval();
+int demth_ZNK6QTimer8intervalEv(void *that)
+{
+  QTimer *cthat = (QTimer *)that;
+  return cthat->interval();
+}
+
+  // proto:  void QTimer::setTimerType(Qt::TimerType atype);
+void demth_ZN6QTimer12setTimerTypeEN2Qt9TimerTypeE(void *that, Qt::TimerType atype)
+{
+  QTimer *cthat = (QTimer *)that;
+   cthat->setTimerType(atype);
 }
 
   // proto:  bool QTimer::isSingleShot();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qrawfont.h
 // dst-file: /src/gui/qrawfont.cxx
 //
@@ -58,6 +58,13 @@ QVector<QPointF> demth_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlag
 {
   QRawFont *cthat = (QRawFont *)that;
   return cthat->advancesForGlyphIndexes(glyphIndexes, layoutFlags);
+}
+
+  // proto:  void QRawFont::swap(QRawFont & other);
+void demth_ZN8QRawFont4swapERS_(void *that, QRawFont & other)
+{
+  QRawFont *cthat = (QRawFont *)that;
+   cthat->swap(other);
 }
 
   // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpagesize.h
 // dst-file: /src/gui/qpagesize.cxx
 //
@@ -59,6 +59,13 @@ QPageSize* dector_ZN9QPageSizeC1ENS_10PageSizeIdE(QPageSize::PageSizeId pageSize
   // static_assert(sizeof(QPageSize) == 32, "tyszerr");
   QPageSize* rthis = new QPageSize(pageSizeId);
   return rthis;
+}
+
+  // proto:  void QPageSize::swap(QPageSize & other);
+void demth_ZN9QPageSize4swapERS_(void *that, QPageSize & other)
+{
+  QPageSize *cthat = (QPageSize *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

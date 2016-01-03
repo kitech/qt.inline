@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpalette.h
 // dst-file: /src/gui/qpalette.cxx
 //
@@ -125,6 +125,13 @@ void demth_ZN8QPalette7resolveEj(void *that, unsigned int mask)
 {
   QPalette *cthat = (QPalette *)that;
    cthat->resolve(mask);
+}
+
+  // proto:  void QPalette::swap(QPalette & other);
+void demth_ZN8QPalette4swapERS_(void *that, QPalette & other)
+{
+  QPalette *cthat = (QPalette *)that;
+   cthat->swap(other);
 }
 
   // proto:  uint QPalette::resolve();

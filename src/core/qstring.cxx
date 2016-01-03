@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qstring.h
 // dst-file: /src/core/qstring.cxx
 //
@@ -224,6 +224,14 @@ int demth_ZNK7QString5countEv(void *that)
   return cthat->count();
 }
 
+  // proto:  QString QString::toUpper();
+QString* demth_ZNKR7QString7toUpperEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toUpper();
+  return new QString(recret);
+}
+
   // proto: static QString QString::fromStdWString(const std::wstring & s);
 QString* demth_ZN7QString14fromStdWStringERKi(void *that, const std::wstring & s)
 {
@@ -239,6 +247,14 @@ void demth_ZN7QString9push_backE5QChar(void *that, QChar c)
    cthat->push_back(c);
 }
 
+  // proto:  QString QString::trimmed();
+QString* demth_ZNKR7QString7trimmedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->trimmed();
+  return new QString(recret);
+}
+
   // proto:  QString & QString::setNum(float , char f, int prec);
 QString * demth_ZN7QString6setNumEfci(void *that, float arg1, char f, int prec)
 {
@@ -246,11 +262,35 @@ QString * demth_ZN7QString6setNumEfci(void *that, float arg1, char f, int prec)
   return &cthat->setNum(arg1, f, prec);
 }
 
+  // proto:  QString QString::toCaseFolded();
+QString* demth_ZNKR7QString12toCaseFoldedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toCaseFolded();
+  return new QString(recret);
+}
+
   // proto:  int QString::size();
 int demth_ZNK7QString4sizeEv(void *that)
 {
   QString *cthat = (QString *)that;
   return cthat->size();
+}
+
+  // proto:  QString QString::simplified();
+QString* demth_ZNKR7QString10simplifiedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->simplified();
+  return new QString(recret);
+}
+
+  // proto:  QString QString::trimmed();
+QString* demth_ZNO7QString7trimmedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->trimmed();
+  return new QString(recret);
 }
 
   // proto:  QString & QString::insert(int i, const QString & s);
@@ -280,6 +320,14 @@ QString * demth_ZN7QString7prependERKS_(void *that, const QString & s)
 {
   QString *cthat = (QString *)that;
   return &cthat->prepend(s);
+}
+
+  // proto:  QByteArray QString::toLocal8Bit();
+QByteArray* demth_ZNKR7QString11toLocal8BitEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLocal8Bit();
+  return new QByteArray(recret);
 }
 
   // proto:  bool QString::isDetached();
@@ -312,6 +360,14 @@ QString* demth_ZN7QString8fromUtf8ERK10QByteArray(void *that, const QByteArray &
   return new QString(recret);
 }
 
+  // proto: static QString QString::fromUcs4(const char32_t * str, int size);
+QString* demth_ZN7QString8fromUcs4EPKDii(void *that, const char32_t * str, int size)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->fromUcs4(str, size);
+  return new QString(recret);
+}
+
   // proto:  void QString::push_back(const QString & s);
 void demth_ZN7QString9push_backERKS_(void *that, const QString & s)
 {
@@ -327,6 +383,14 @@ QString* demth_ZNK7QString3argERKS_S1_S1_(void *that, const QString & a1, const 
   return new QString(recret);
 }
 
+  // proto:  QByteArray QString::toUtf8();
+QByteArray* demth_ZNO7QString6toUtf8Ev(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toUtf8();
+  return new QByteArray(recret);
+}
+
   // proto:  QChar * QString::data();
 QChar * demth_ZN7QString4dataEv(void *that)
 {
@@ -334,11 +398,26 @@ QChar * demth_ZN7QString4dataEv(void *that)
   return cthat->data();
 }
 
+  // proto:  QString QString::toCaseFolded();
+QString* demth_ZNO7QString12toCaseFoldedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toCaseFolded();
+  return new QString(recret);
+}
+
   // proto:  QString & QString::setNum(uint , int base);
 QString * demth_ZN7QString6setNumEji(void *that, unsigned int arg1, int base)
 {
   QString *cthat = (QString *)that;
   return &cthat->setNum(arg1, base);
+}
+
+  // proto: static int QString::localeAwareCompare(const QString & s1, const QString & s2);
+int demth_ZN7QString18localeAwareCompareERKS_S1_(void *that, const QString & s1, const QString & s2)
+{
+  QString *cthat = (QString *)that;
+  return cthat->localeAwareCompare(s1, s2);
 }
 
   // proto:  bool QString::contains(QLatin1String s, Qt::CaseSensitivity cs);
@@ -353,6 +432,22 @@ void demth_ZN7QStringC1EPKc(void *that, const char * ch)
 {
   QString *cthat = (QString *)that;
   auto _o = new(that) QString(ch);
+}
+
+  // proto: static QString QString::fromUtf16(const char16_t * str, int size);
+QString* demth_ZN7QString9fromUtf16EPKDsi(void *that, const char16_t * str, int size)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->fromUtf16(str, size);
+  return new QString(recret);
+}
+
+  // proto:  QString QString::toLower();
+QString* demth_ZNO7QString7toLowerEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLower();
+  return new QString(recret);
 }
 
   // proto: static int QString::compare(QLatin1String s1, const QString & s2, Qt::CaseSensitivity cs);
@@ -508,6 +603,14 @@ const QChar * demth_ZNK7QString9constDataEv(void *that)
   return cthat->constData();
 }
 
+  // proto:  QString QString::toUpper();
+QString* demth_ZNO7QString7toUpperEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toUpper();
+  return new QString(recret);
+}
+
   // proto:  int QString::length();
 int demth_ZNK7QString6lengthEv(void *that)
 {
@@ -520,6 +623,14 @@ QString* demth_ZN7QString8fromUtf8EPKci(void *that, const char * str, int size)
 {
   QString *cthat = (QString *)that;
   auto recret = cthat->fromUtf8(str, size);
+  return new QString(recret);
+}
+
+  // proto:  QString QString::simplified();
+QString* demth_ZNO7QString10simplifiedEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->simplified();
   return new QString(recret);
 }
 
@@ -597,6 +708,22 @@ const QChar* demth_ZNK7QString2atEi(void *that, int i)
   return new const QChar(recret);
 }
 
+  // proto:  QString QString::toLower();
+QString* demth_ZNKR7QString7toLowerEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLower();
+  return new QString(recret);
+}
+
+  // proto:  QByteArray QString::toLatin1();
+QByteArray* demth_ZNO7QString8toLatin1Ev(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLatin1();
+  return new QByteArray(recret);
+}
+
   // proto:  QString & QString::setNum(ulong , int base);
 QString * demth_ZN7QString6setNumEmi(void *that, unsigned long arg1, int base)
 {
@@ -656,6 +783,14 @@ const QChar * demth_ZNK7QString4dataEv(void *that)
   return cthat->data();
 }
 
+  // proto:  QByteArray QString::toLocal8Bit();
+QByteArray* demth_ZNO7QString11toLocal8BitEv(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLocal8Bit();
+  return new QByteArray(recret);
+}
+
   // proto:  QString QString::arg(ushort a, int fieldWidth, int base, QChar fillChar);
 QString* demth_ZNK7QString3argEtii5QChar(void *that, unsigned short a, int fieldWidth, int base, QChar fillChar)
 {
@@ -677,6 +812,14 @@ QString* demth_ZNK7QString3argEsii5QChar(void *that, short a, int fieldWidth, in
   QString *cthat = (QString *)that;
   auto recret = cthat->arg(a, fieldWidth, base, fillChar);
   return new QString(recret);
+}
+
+  // proto:  QByteArray QString::toUtf8();
+QByteArray* demth_ZNKR7QString6toUtf8Ev(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toUtf8();
+  return new QByteArray(recret);
 }
 
   // proto:  void QString::QString(const QByteArray & a);
@@ -734,6 +877,14 @@ QString * demth_ZN7QString6removeERK7QRegExp(void *that, const QRegExp & rx)
 {
   QString *cthat = (QString *)that;
   return &cthat->remove(rx);
+}
+
+  // proto:  QByteArray QString::toLatin1();
+QByteArray* demth_ZNKR7QString8toLatin1Ev(void *that)
+{
+  QString *cthat = (QString *)that;
+  auto recret = cthat->toLatin1();
+  return new QByteArray(recret);
 }
 
   // proto:  bool QString::isEmpty();
@@ -841,6 +992,13 @@ bool demth_ZNK8QCharRef7isDigitEv(void *that)
   return cthat->isDigit();
 }
 
+  // proto:  char QCharRef::toLatin1();
+char demth_ZNK8QCharRef8toLatin1Ev(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  return cthat->toLatin1();
+}
+
   // proto:  void QCharRef::setCell(uchar cell);
 void demth_ZN8QCharRef7setCellEh(void *that, unsigned char cell)
 {
@@ -883,6 +1041,14 @@ bool demth_ZNK8QCharRef7isPrintEv(void *that)
   return cthat->isPrint();
 }
 
+  // proto:  QChar QCharRef::toLower();
+QChar* demth_ZNK8QCharRef7toLowerEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  auto recret = cthat->toLower();
+  return new QChar(recret);
+}
+
   // proto:  void QCharRef::setRow(uchar row);
 void demth_ZN8QCharRef6setRowEh(void *that, unsigned char row)
 {
@@ -897,11 +1063,33 @@ bool demth_ZNK8QCharRef6isNullEv(void *that)
   return cthat->isNull();
 }
 
+  // proto:  QChar QCharRef::toTitleCase();
+QChar* demth_ZNK8QCharRef11toTitleCaseEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  auto recret = cthat->toTitleCase();
+  return new QChar(recret);
+}
+
+  // proto:  bool QCharRef::hasMirrored();
+bool demth_ZNK8QCharRef11hasMirroredEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  return cthat->hasMirrored();
+}
+
   // proto:  uchar QCharRef::row();
 uchar demth_ZNK8QCharRef3rowEv(void *that)
 {
   QCharRef *cthat = (QCharRef *)that;
   return cthat->row();
+}
+
+  // proto:  ushort & QCharRef::unicode();
+ushort * demth_ZN8QCharRef7unicodeEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  return &cthat->unicode();
 }
 
   // proto:  bool QCharRef::isTitleCase();
@@ -925,11 +1113,34 @@ uchar demth_ZNK8QCharRef4cellEv(void *that)
   return cthat->cell();
 }
 
+  // proto:  ushort QCharRef::unicode();
+ushort demth_ZNK8QCharRef7unicodeEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  return cthat->unicode();
+}
+
+  // proto:  QString QCharRef::decomposition();
+QString* demth_ZNK8QCharRef13decompositionEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  auto recret = cthat->decomposition();
+  return new QString(recret);
+}
+
   // proto:  uchar QCharRef::combiningClass();
 uchar demth_ZNK8QCharRef14combiningClassEv(void *that)
 {
   QCharRef *cthat = (QCharRef *)that;
   return cthat->combiningClass();
+}
+
+  // proto:  QChar QCharRef::mirroredChar();
+QChar* demth_ZNK8QCharRef12mirroredCharEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  auto recret = cthat->mirroredChar();
+  return new QChar(recret);
 }
 
   // proto:  bool QCharRef::isSpace();
@@ -944,6 +1155,14 @@ bool demth_ZNK8QCharRef7isPunctEv(void *that)
 {
   QCharRef *cthat = (QCharRef *)that;
   return cthat->isPunct();
+}
+
+  // proto:  QChar QCharRef::toUpper();
+QChar* demth_ZNK8QCharRef7toUpperEv(void *that)
+{
+  QCharRef *cthat = (QCharRef *)that;
+  auto recret = cthat->toUpper();
+  return new QChar(recret);
 }
 
   // proto:  bool QCharRef::isLower();

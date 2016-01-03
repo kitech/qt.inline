@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -22,6 +22,20 @@ QModelIndex* dector_ZN11QModelIndexC1Ev()
   return rthis;
 }
 
+  // proto:  int QModelIndex::column();
+int demth_ZNK11QModelIndex6columnEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->column();
+}
+
+  // proto:  quintptr QModelIndex::internalId();
+quintptr demth_ZNK11QModelIndex10internalIdEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->internalId();
+}
+
   // proto:  QModelIndex QModelIndex::child(int row, int column);
 QModelIndex* demth_ZNK11QModelIndex5childEii(void *that, int row, int column)
 {
@@ -35,6 +49,13 @@ void * demth_ZNK11QModelIndex15internalPointerEv(void *that)
 {
   QModelIndex *cthat = (QModelIndex *)that;
   return cthat->internalPointer();
+}
+
+  // proto:  bool QModelIndex::isValid();
+bool demth_ZNK11QModelIndex7isValidEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->isValid();
 }
 
   // proto:  QModelIndex QModelIndex::parent();
@@ -53,12 +74,26 @@ QModelIndex* demth_ZNK11QModelIndex7siblingEii(void *that, int row, int column)
   return new QModelIndex(recret);
 }
 
+  // proto:  const QAbstractItemModel * QModelIndex::model();
+const QAbstractItemModel * demth_ZNK11QModelIndex5modelEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->model();
+}
+
   // proto:  QVariant QModelIndex::data(int role);
 QVariant* demth_ZNK11QModelIndex4dataEi(void *that, int role)
 {
   QModelIndex *cthat = (QModelIndex *)that;
   auto recret = cthat->data(role);
   return new QVariant(recret);
+}
+
+  // proto:  int QModelIndex::row();
+int demth_ZNK11QModelIndex3rowEv(void *that)
+{
+  QModelIndex *cthat = (QModelIndex *)that;
+  return cthat->row();
 }
 
 int QPersistentModelIndex_Class_Size()

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
@@ -43,6 +43,13 @@ QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFont(const QFont & arg1)
   // static_assert(sizeof(QFontMetrics) == 32, "tyszerr");
   QFontMetrics* rthis = new QFontMetrics(arg1);
   return rthis;
+}
+
+  // proto:  void QFontMetrics::swap(QFontMetrics & other);
+void demth_ZN12QFontMetrics4swapERS_(void *that, QFontMetrics & other)
+{
+  QFontMetrics *cthat = (QFontMetrics *)that;
+   cthat->swap(other);
 }
 
   // proto:  QRect QFontMetrics::boundingRect(int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray);
@@ -95,6 +102,13 @@ QFontMetricsF* dector_ZN13QFontMetricsFC1ERK5QFont(const QFont & arg1)
   // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
   QFontMetricsF* rthis = new QFontMetricsF(arg1);
   return rthis;
+}
+
+  // proto:  void QFontMetricsF::swap(QFontMetricsF & other);
+void demth_ZN13QFontMetricsF4swapERS_(void *that, QFontMetricsF & other)
+{
+  QFontMetricsF *cthat = (QFontMetricsF *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

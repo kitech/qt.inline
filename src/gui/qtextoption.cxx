@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtextoption.h
 // dst-file: /src/gui/qtextoption.cxx
 //
@@ -66,11 +66,25 @@ qreal demth_ZNK11QTextOption7tabStopEv(void *that)
   return cthat->tabStop();
 }
 
+  // proto:  void QTextOption::setUseDesignMetrics(bool b);
+void demth_ZN11QTextOption19setUseDesignMetricsEb(void *that, bool b)
+{
+  QTextOption *cthat = (QTextOption *)that;
+   cthat->setUseDesignMetrics(b);
+}
+
   // proto:  void QTextOption::setTabStop(qreal tabStop);
 void demth_ZN11QTextOption10setTabStopEd(void *that, double tabStop)
 {
   QTextOption *cthat = (QTextOption *)that;
    cthat->setTabStop(tabStop);
+}
+
+  // proto:  bool QTextOption::useDesignMetrics();
+bool demth_ZNK11QTextOption16useDesignMetricsEv(void *that)
+{
+  QTextOption *cthat = (QTextOption *)that;
+  return cthat->useDesignMetrics();
 }
 
   // proto:  void QTextOption::setTextDirection(Qt::LayoutDirection aDirection);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qfont.h
 // dst-file: /src/gui/qfont.cxx
 //
@@ -86,6 +86,13 @@ bool demth_ZNK5QFont4boldEv(void *that)
 {
   QFont *cthat = (QFont *)that;
   return cthat->bold();
+}
+
+  // proto:  void QFont::swap(QFont & other);
+void demth_ZN5QFont4swapERS_(void *that, QFont & other)
+{
+  QFont *cthat = (QFont *)that;
+   cthat->swap(other);
 }
 
   // proto:  uint QFont::resolve();

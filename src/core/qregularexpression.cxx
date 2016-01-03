@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtCore/qregularexpression.h
 // dst-file: /src/core/qregularexpression.cxx
 //
@@ -35,6 +35,13 @@ void dedtor_ZN31QRegularExpressionMatchIteratorD0Ev(QRegularExpressionMatchItera
 {
   QRegularExpressionMatchIterator* rthis = (QRegularExpressionMatchIterator*)that;
   delete rthis;
+}
+
+  // proto:  void QRegularExpressionMatchIterator::swap(QRegularExpressionMatchIterator & other);
+void demth_ZN31QRegularExpressionMatchIterator4swapERS_(void *that, QRegularExpressionMatchIterator & other)
+{
+  QRegularExpressionMatchIterator *cthat = (QRegularExpressionMatchIterator *)that;
+   cthat->swap(other);
 }
 
 int QRegularExpression_Class_Size()
@@ -73,6 +80,13 @@ QRegularExpression* dector_ZN18QRegularExpressionC1ERKS_(const QRegularExpressio
   return rthis;
 }
 
+  // proto:  void QRegularExpression::swap(QRegularExpression & other);
+void demth_ZN18QRegularExpression4swapERS_(void *that, QRegularExpression & other)
+{
+  QRegularExpression *cthat = (QRegularExpression *)that;
+   cthat->swap(other);
+}
+
 int QRegularExpressionMatch_Class_Size()
 {
   return sizeof(QRegularExpressionMatch);
@@ -99,6 +113,13 @@ void dedtor_ZN23QRegularExpressionMatchD0Ev(QRegularExpressionMatch* that)
 {
   QRegularExpressionMatch* rthis = (QRegularExpressionMatch*)that;
   delete rthis;
+}
+
+  // proto:  void QRegularExpressionMatch::swap(QRegularExpressionMatch & other);
+void demth_ZN23QRegularExpressionMatch4swapERS_(void *that, QRegularExpressionMatch & other)
+{
+  QRegularExpressionMatch *cthat = (QRegularExpressionMatch *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

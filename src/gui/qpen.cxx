@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
@@ -67,6 +67,13 @@ QPen* dector_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinSt
   // static_assert(sizeof(QPen) == 32, "tyszerr");
   QPen* rthis = new QPen(brush, width, s, c, j);
   return rthis;
+}
+
+  // proto:  void QPen::swap(QPen & other);
+void demth_ZN4QPen4swapERS_(void *that, QPen & other)
+{
+  QPen *cthat = (QPen *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

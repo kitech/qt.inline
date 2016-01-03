@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qopenglpixeltransferoptions.h
 // dst-file: /src/gui/qopenglpixeltransferoptions.cxx
 //
@@ -35,6 +35,13 @@ QOpenGLPixelTransferOptions* dector_ZN27QOpenGLPixelTransferOptionsC1ERKS_(const
   // static_assert(sizeof(QOpenGLPixelTransferOptions) == 32, "tyszerr");
   QOpenGLPixelTransferOptions* rthis = new QOpenGLPixelTransferOptions(arg1);
   return rthis;
+}
+
+  // proto:  void QOpenGLPixelTransferOptions::swap(QOpenGLPixelTransferOptions & other);
+void demth_ZN27QOpenGLPixelTransferOptions4swapERS_(void *that, QOpenGLPixelTransferOptions & other)
+{
+  QOpenGLPixelTransferOptions *cthat = (QOpenGLPixelTransferOptions *)that;
+   cthat->swap(other);
 }
 
 }; // <= extern "C" block end

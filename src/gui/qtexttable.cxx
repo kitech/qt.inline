@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -62,6 +62,14 @@ QTextTable* dector_ZN10QTextTableC1EP13QTextDocument(QTextDocument * doc)
   // static_assert(sizeof(QTextTable) == 32, "tyszerr");
   QTextTable* rthis = new QTextTable(doc);
   return rthis;
+}
+
+  // proto:  QTextTableFormat QTextTable::format();
+QTextTableFormat* demth_ZNK10QTextTable6formatEv(void *that)
+{
+  QTextTable *cthat = (QTextTable *)that;
+  auto recret = cthat->format();
+  return new QTextTableFormat(recret);
 }
 
 }; // <= extern "C" block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sat Jan  2 19:51:33 2016
+// created: Sun Jan  3 01:22:04 2016
 // src-file: /QtGui/qvector2d.h
 // dst-file: /src/gui/qvector2d.cxx
 //
@@ -70,11 +70,27 @@ QVector2D* dector_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg1)
   return rthis;
 }
 
+  // proto:  QPointF QVector2D::toPointF();
+QPointF* demth_ZNK9QVector2D8toPointFEv(void *that)
+{
+  QVector2D *cthat = (QVector2D *)that;
+  auto recret = cthat->toPointF();
+  return new QPointF(recret);
+}
+
   // proto:  void QVector2D::setX(float x);
 void demth_ZN9QVector2D4setXEf(void *that, float x)
 {
   QVector2D *cthat = (QVector2D *)that;
    cthat->setX(x);
+}
+
+  // proto:  QPoint QVector2D::toPoint();
+QPoint* demth_ZNK9QVector2D7toPointEv(void *that)
+{
+  QVector2D *cthat = (QVector2D *)that;
+  auto recret = cthat->toPoint();
+  return new QPoint(recret);
 }
 
   // proto:  void QVector2D::setY(float y);
@@ -89,6 +105,20 @@ bool demth_ZNK9QVector2D6isNullEv(void *that)
 {
   QVector2D *cthat = (QVector2D *)that;
   return cthat->isNull();
+}
+
+  // proto:  float QVector2D::y();
+float demth_ZNK9QVector2D1yEv(void *that)
+{
+  QVector2D *cthat = (QVector2D *)that;
+  return cthat->y();
+}
+
+  // proto:  float QVector2D::x();
+float demth_ZNK9QVector2D1xEv(void *that)
+{
+  QVector2D *cthat = (QVector2D *)that;
+  return cthat->x();
 }
 
 }; // <= extern "C" block end
