@@ -4,10 +4,13 @@ cmake_minimum_required(VERSION 3.0)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 
-set(CMAKE_CXX_FLAGS "-g -O2 -std=c++11")
+set(CMAKE_CXX_FLAGS "-g -O0 -std=c++11")
 set(CMAKE_SHARED_LINKER_FLAGS "-Wl,-z,defs --no-undefined")
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
+
+# max effort for keep inline functions/methods.
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-inline")
 
 set(CMAKE_AUTOMOC on)
 find_package(Qt5Core)
@@ -24,6 +27,7 @@ find_package(Qt5Widgets)
 # set(qt5_inline_widgets_srcs "")
 
 set(CMAKE_INCLUDE_CURRENT_DIR on)
+include_directories("./src")
 
 include(src/core/mod.cmake)
 include(src/gui/mod.cmake)
