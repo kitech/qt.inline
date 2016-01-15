@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qabstracteventdispatcher.h
 // dst-file: /src/core/qabstracteventdispatcher.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qabstracteventdispatcher.h>
 
 extern "C" {
@@ -19,6 +20,9 @@ int QAbstractEventDispatcher_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qabstracteventdispatcher_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

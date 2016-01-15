@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglwindow.h
 // dst-file: /src/gui/qopenglwindow.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglwindow.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QOpenGLWindow_Class_Size()
   return sizeof(QOpenGLWindow);
 }
 
-// QOpenGLWindow(enum QOpenGLWindow::UpdateBehavior, class QWindow *)
-QOpenGLWindow* dector_ZN13QOpenGLWindowC1ENS_14UpdateBehaviorEP7QWindow(QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)
-{
-  // static_assert(sizeof(QOpenGLWindow) == 32, "tyszerr");
-  QOpenGLWindow* rthis = new QOpenGLWindow(updateBehavior, parent);
-  return rthis;
-}
-
-// QOpenGLWindow(class QOpenGLContext *, enum QOpenGLWindow::UpdateBehavior, class QWindow *)
-QOpenGLWindow* dector_ZN13QOpenGLWindowC1EP14QOpenGLContextNS_14UpdateBehaviorEP7QWindow(QOpenGLContext * shareContext, QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)
-{
-  // static_assert(sizeof(QOpenGLWindow) == 32, "tyszerr");
-  QOpenGLWindow* rthis = new QOpenGLWindow(shareContext, updateBehavior, parent);
-  return rthis;
-}
-
-// ~QOpenGLWindow()
-void dedtor_ZN13QOpenGLWindowD0Ev(QOpenGLWindow* that)
-{
-  QOpenGLWindow* rthis = (QOpenGLWindow*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglwindow_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

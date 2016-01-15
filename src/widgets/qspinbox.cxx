@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qspinbox.h
 // dst-file: /src/widgets/qspinbox.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qspinbox.h>
 
 extern "C" {
@@ -14,39 +15,9 @@ int QSpinBox_Class_Size()
   return sizeof(QSpinBox);
 }
 
-// ~QSpinBox()
-void dedtor_ZN8QSpinBoxD0Ev(QSpinBox* that)
-{
-  QSpinBox* rthis = (QSpinBox*)that;
-  delete rthis;
-}
-
-// QSpinBox(class QWidget *)
-QSpinBox* dector_ZN8QSpinBoxC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QSpinBox) == 32, "tyszerr");
-  QSpinBox* rthis = new QSpinBox(parent);
-  return rthis;
-}
-
 int QDoubleSpinBox_Class_Size()
 {
   return sizeof(QDoubleSpinBox);
-}
-
-// ~QDoubleSpinBox()
-void dedtor_ZN14QDoubleSpinBoxD0Ev(QDoubleSpinBox* that)
-{
-  QDoubleSpinBox* rthis = (QDoubleSpinBox*)that;
-  delete rthis;
-}
-
-// QDoubleSpinBox(class QWidget *)
-QDoubleSpinBox* dector_ZN14QDoubleSpinBoxC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QDoubleSpinBox) == 32, "tyszerr");
-  QDoubleSpinBox* rthis = new QDoubleSpinBox(parent);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -54,6 +25,9 @@ QDoubleSpinBox* dector_ZN14QDoubleSpinBoxC1EP7QWidget(QWidget * parent)
 // <= header block end
 
 // main block begin =>
+void __keep_qspinbox_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

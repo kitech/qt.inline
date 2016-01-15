@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qitemdelegate.h
 // dst-file: /src/widgets/qitemdelegate.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qitemdelegate.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QItemDelegate_Class_Size()
   return sizeof(QItemDelegate);
 }
 
-// QItemDelegate(class QObject *)
-QItemDelegate* dector_ZN13QItemDelegateC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QItemDelegate) == 32, "tyszerr");
-  QItemDelegate* rthis = new QItemDelegate(parent);
-  return rthis;
-}
-
-// ~QItemDelegate()
-void dedtor_ZN13QItemDelegateD0Ev(QItemDelegate* that)
-{
-  QItemDelegate* rthis = (QItemDelegate*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qitemdelegate_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

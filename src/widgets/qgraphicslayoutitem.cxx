@@ -1,10 +1,12 @@
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qgraphicslayoutitem.h
 // dst-file: /src/widgets/qgraphicslayoutitem.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qgraphicslayoutitem.h>
 
 extern "C" {
@@ -14,74 +16,86 @@ int QGraphicsLayoutItem_Class_Size()
   return sizeof(QGraphicsLayoutItem);
 }
 
-  // proto:  qreal QGraphicsLayoutItem::minimumWidth();
-qreal demth_ZNK19QGraphicsLayoutItem12minimumWidthEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->minimumWidth();
-}
-
-  // proto:  qreal QGraphicsLayoutItem::preferredWidth();
-qreal demth_ZNK19QGraphicsLayoutItem14preferredWidthEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->preferredWidth();
-}
-
-  // proto:  qreal QGraphicsLayoutItem::minimumHeight();
-qreal demth_ZNK19QGraphicsLayoutItem13minimumHeightEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->minimumHeight();
-}
-
-  // proto:  qreal QGraphicsLayoutItem::preferredHeight();
-qreal demth_ZNK19QGraphicsLayoutItem15preferredHeightEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->preferredHeight();
-}
-
-  // proto:  qreal QGraphicsLayoutItem::maximumHeight();
-qreal demth_ZNK19QGraphicsLayoutItem13maximumHeightEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->maximumHeight();
-}
-
-  // proto:  qreal QGraphicsLayoutItem::maximumWidth();
-qreal demth_ZNK19QGraphicsLayoutItem12maximumWidthEv(void *that)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-  return cthat->maximumWidth();
-}
-
-  // proto:  void QGraphicsLayoutItem::setMinimumSize(qreal w, qreal h);
-void demth_ZN19QGraphicsLayoutItem14setMinimumSizeEdd(void *that, double w, double h)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-   cthat->setMinimumSize(w, h);
-}
-
-  // proto:  void QGraphicsLayoutItem::setPreferredSize(qreal w, qreal h);
-void demth_ZN19QGraphicsLayoutItem16setPreferredSizeEdd(void *that, double w, double h)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-   cthat->setPreferredSize(w, h);
-}
-
-  // proto:  void QGraphicsLayoutItem::setMaximumSize(qreal w, qreal h);
-void demth_ZN19QGraphicsLayoutItem14setMaximumSizeEdd(void *that, double w, double h)
-{
-  QGraphicsLayoutItem *cthat = (QGraphicsLayoutItem *)that;
-   cthat->setMaximumSize(w, h);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qgraphicslayoutitem_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 62, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::minimumWidth();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->minimumWidth();
+  };
+}
+// _ZNK19QGraphicsLayoutItem12minimumWidthEv minimumWidth()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 70, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::preferredWidth();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->preferredWidth();
+  };
+}
+// _ZNK19QGraphicsLayoutItem14preferredWidthEv preferredWidth()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 64, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::minimumHeight();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->minimumHeight();
+  };
+}
+// _ZNK19QGraphicsLayoutItem13minimumHeightEv minimumHeight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 72, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::preferredHeight();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->preferredHeight();
+  };
+}
+// _ZNK19QGraphicsLayoutItem15preferredHeightEv preferredHeight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 80, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::maximumHeight();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->maximumHeight();
+  };
+}
+// _ZNK19QGraphicsLayoutItem13maximumHeightEv maximumHeight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 78, column 18>
+//   // proto:  qreal QGraphicsLayoutItem::maximumWidth();
+if (false) {
+  auto f = []() {
+    ((QGraphicsLayoutItem*)0)->maximumWidth();
+  };
+}
+// _ZNK19QGraphicsLayoutItem12maximumWidthEv maximumWidth()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 59, column 17>
+//   // proto:  void QGraphicsLayoutItem::setMinimumSize(qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2) {
+    ((QGraphicsLayoutItem*)0)->setMinimumSize(arg1, arg2);
+  };
+}
+// _ZN19QGraphicsLayoutItem14setMinimumSizeEdd setMinimumSize(qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 67, column 17>
+//   // proto:  void QGraphicsLayoutItem::setPreferredSize(qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2) {
+    ((QGraphicsLayoutItem*)0)->setPreferredSize(arg1, arg2);
+  };
+}
+// _ZN19QGraphicsLayoutItem16setPreferredSizeEdd setPreferredSize(qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 75, column 17>
+//   // proto:  void QGraphicsLayoutItem::setMaximumSize(qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2) {
+    ((QGraphicsLayoutItem*)0)->setMaximumSize(arg1, arg2);
+  };
+}
+// _ZN19QGraphicsLayoutItem14setMaximumSizeEdd setMaximumSize(qreal, qreal)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

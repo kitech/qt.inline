@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdockwidget.h>
 
 extern "C" {
@@ -14,48 +15,30 @@ int QDockWidget_Class_Size()
   return sizeof(QDockWidget);
 }
 
-// ~QDockWidget()
-void dedtor_ZN11QDockWidgetD0Ev(QDockWidget* that)
-{
-  QDockWidget* rthis = (QDockWidget*)that;
-  delete rthis;
-}
-
-// QDockWidget(class QWidget *, Qt::WindowFlags)
-QDockWidget* dector_ZN11QDockWidgetC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QDockWidget) == 32, "tyszerr");
-  QDockWidget* rthis = new QDockWidget(parent, flags);
-  return rthis;
-}
-
-// QDockWidget(const class QString &, class QWidget *, Qt::WindowFlags)
-QDockWidget* dector_ZN11QDockWidgetC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QDockWidget) == 32, "tyszerr");
-  QDockWidget* rthis = new QDockWidget(title, parent, flags);
-  return rthis;
-}
-
-  // proto:  bool QDockWidget::isFloating();
-bool demth_ZNK11QDockWidget10isFloatingEv(void *that)
-{
-  QDockWidget *cthat = (QDockWidget *)that;
-  return cthat->isFloating();
-}
-
-  // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
-bool demth_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *that, Qt::DockWidgetArea area)
-{
-  QDockWidget *cthat = (QDockWidget *)that;
-  return cthat->isAreaAllowed(area);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdockwidget_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 86, column 17>
+//   // proto:  bool QDockWidget::isFloating();
+if (false) {
+  auto f = []() {
+    ((QDockWidget*)0)->isFloating();
+  };
+}
+// _ZNK11QDockWidget10isFloatingEv isFloating()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 94, column 17>
+//   // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
+if (false) {
+  auto f = [](Qt::DockWidgetArea arg1) {
+    ((QDockWidget*)0)->isAreaAllowed(arg1);
+  };
+}
+// _ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE isAreaAllowed(Qt::DockWidgetArea)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

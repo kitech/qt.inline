@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qmovie.h
 // dst-file: /src/gui/qmovie.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmovie.h>
 
 extern "C" {
@@ -14,42 +15,14 @@ int QMovie_Class_Size()
   return sizeof(QMovie);
 }
 
-// QMovie(class QObject *)
-QMovie* dector_ZN6QMovieC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QMovie) == 32, "tyszerr");
-  QMovie* rthis = new QMovie(parent);
-  return rthis;
-}
-
-// QMovie(const class QString &, const class QByteArray &, class QObject *)
-QMovie* dector_ZN6QMovieC1ERK7QStringRK10QByteArrayP7QObject(const QString & fileName, const QByteArray & format, QObject * parent)
-{
-  // static_assert(sizeof(QMovie) == 32, "tyszerr");
-  QMovie* rthis = new QMovie(fileName, format, parent);
-  return rthis;
-}
-
-// ~QMovie()
-void dedtor_ZN6QMovieD0Ev(QMovie* that)
-{
-  QMovie* rthis = (QMovie*)that;
-  delete rthis;
-}
-
-// QMovie(class QIODevice *, const class QByteArray &, class QObject *)
-QMovie* dector_ZN6QMovieC1EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, const QByteArray & format, QObject * parent)
-{
-  // static_assert(sizeof(QMovie) == 32, "tyszerr");
-  QMovie* rthis = new QMovie(device, format, parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmovie_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

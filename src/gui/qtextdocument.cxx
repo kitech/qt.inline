@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextdocument.h
 // dst-file: /src/gui/qtextdocument.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextdocument.h>
 
 extern "C" {
@@ -14,39 +15,9 @@ int QTextDocument_Class_Size()
   return sizeof(QTextDocument);
 }
 
-// QTextDocument(class QObject *)
-QTextDocument* dector_ZN13QTextDocumentC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QTextDocument) == 32, "tyszerr");
-  QTextDocument* rthis = new QTextDocument(parent);
-  return rthis;
-}
-
-// QTextDocument(const class QString &, class QObject *)
-QTextDocument* dector_ZN13QTextDocumentC1ERK7QStringP7QObject(const QString & text, QObject * parent)
-{
-  // static_assert(sizeof(QTextDocument) == 32, "tyszerr");
-  QTextDocument* rthis = new QTextDocument(text, parent);
-  return rthis;
-}
-
-// ~QTextDocument()
-void dedtor_ZN13QTextDocumentD0Ev(QTextDocument* that)
-{
-  QTextDocument* rthis = (QTextDocument*)that;
-  delete rthis;
-}
-
 int QAbstractUndoItem_Class_Size()
 {
   return sizeof(QAbstractUndoItem);
-}
-
-  // proto:  void QAbstractUndoItem::~QAbstractUndoItem();
-void demth_ZN17QAbstractUndoItemD0Ev(void *that)
-{
-  QAbstractUndoItem *cthat = (QAbstractUndoItem *)that;
-   cthat->~QAbstractUndoItem();
 }
 
 }; // <= extern "C" block end
@@ -54,6 +25,13 @@ void demth_ZN17QAbstractUndoItemD0Ev(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qtextdocument_inline_symbols() {
+//   // proto:  void QAbstractUndoItem::~QAbstractUndoItem();
+if (false) {
+  delete ((QAbstractUndoItem*)0);
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

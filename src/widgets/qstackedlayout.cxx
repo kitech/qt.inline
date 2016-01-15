@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qstackedlayout.h
 // dst-file: /src/widgets/qstackedlayout.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstackedlayout.h>
 
 extern "C" {
@@ -14,42 +15,14 @@ int QStackedLayout_Class_Size()
   return sizeof(QStackedLayout);
 }
 
-// QStackedLayout(class QLayout *)
-QStackedLayout* dector_ZN14QStackedLayoutC1EP7QLayout(QLayout * parentLayout)
-{
-  // static_assert(sizeof(QStackedLayout) == 32, "tyszerr");
-  QStackedLayout* rthis = new QStackedLayout(parentLayout);
-  return rthis;
-}
-
-// QStackedLayout(class QWidget *)
-QStackedLayout* dector_ZN14QStackedLayoutC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QStackedLayout) == 32, "tyszerr");
-  QStackedLayout* rthis = new QStackedLayout(parent);
-  return rthis;
-}
-
-// ~QStackedLayout()
-void dedtor_ZN14QStackedLayoutD0Ev(QStackedLayout* that)
-{
-  QStackedLayout* rthis = (QStackedLayout*)that;
-  delete rthis;
-}
-
-// QStackedLayout()
-QStackedLayout* dector_ZN14QStackedLayoutC1Ev()
-{
-  // static_assert(sizeof(QStackedLayout) == 32, "tyszerr");
-  QStackedLayout* rthis = new QStackedLayout();
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qstackedlayout_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

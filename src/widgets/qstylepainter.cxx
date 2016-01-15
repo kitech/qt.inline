@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qstylepainter.h
 // dst-file: /src/widgets/qstylepainter.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstylepainter.h>
 
 extern "C" {
@@ -14,112 +15,99 @@ int QStylePainter_Class_Size()
   return sizeof(QStylePainter);
 }
 
-// QStylePainter(class QWidget *)
-QStylePainter* dector_ZN13QStylePainterC1EP7QWidget(QWidget * w)
-{
-  // static_assert(sizeof(QStylePainter) == 32, "tyszerr");
-  QStylePainter* rthis = new QStylePainter(w);
-  return rthis;
-}
-
-// QStylePainter(class QPaintDevice *, class QWidget *)
-QStylePainter* dector_ZN13QStylePainterC1EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget * w)
-{
-  // static_assert(sizeof(QStylePainter) == 32, "tyszerr");
-  QStylePainter* rthis = new QStylePainter(pd, w);
-  return rthis;
-}
-
-// QStylePainter()
-QStylePainter* dector_ZN13QStylePainterC1Ev()
-{
-  // static_assert(sizeof(QStylePainter) == 32, "tyszerr");
-  QStylePainter* rthis = new QStylePainter();
-  return rthis;
-}
-
-  // proto:  void QStylePainter::QStylePainter(QWidget * w);
-void demth_ZN13QStylePainterC1EP7QWidget(void *that, QWidget * w)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  auto _o = new(that) QStylePainter(w);
-}
-
-  // proto:  void QStylePainter::QStylePainter(QPaintDevice * pd, QWidget * w);
-void demth_ZN13QStylePainterC1EP12QPaintDeviceP7QWidget(void *that, QPaintDevice * pd, QWidget * w)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  auto _o = new(that) QStylePainter(pd, w);
-}
-
-  // proto:  void QStylePainter::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex & opt);
-void demth_ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyleOptionComplex(void *that, QStyle::ComplexControl cc, const QStyleOptionComplex & opt)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-   cthat->drawComplexControl(cc, opt);
-}
-
-  // proto:  void QStylePainter::QStylePainter();
-void demth_ZN13QStylePainterC1Ev(void *that)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  auto _o = new(that) QStylePainter();
-}
-
-  // proto:  bool QStylePainter::begin(QPaintDevice * pd, QWidget * w);
-bool demth_ZN13QStylePainter5beginEP12QPaintDeviceP7QWidget(void *that, QPaintDevice * pd, QWidget * w)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  return cthat->begin(pd, w);
-}
-
-  // proto:  void QStylePainter::drawItemText(const QRect & r, int flags, const QPalette & pal, bool enabled, const QString & text, QPalette::ColorRole textRole);
-void demth_ZN13QStylePainter12drawItemTextERK5QRectiRK8QPalettebRK7QStringNS3_9ColorRoleE(void *that, const QRect & r, int flags, const QPalette & pal, bool enabled, const QString & text, QPalette::ColorRole textRole)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-   cthat->drawItemText(r, flags, pal, enabled, text, textRole);
-}
-
-  // proto:  bool QStylePainter::begin(QWidget * w);
-bool demth_ZN13QStylePainter5beginEP7QWidget(void *that, QWidget * w)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  return cthat->begin(w);
-}
-
-  // proto:  void QStylePainter::drawItemPixmap(const QRect & r, int flags, const QPixmap & pixmap);
-void demth_ZN13QStylePainter14drawItemPixmapERK5QRectiRK7QPixmap(void *that, const QRect & r, int flags, const QPixmap & pixmap)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-   cthat->drawItemPixmap(r, flags, pixmap);
-}
-
-  // proto:  QStyle * QStylePainter::style();
-QStyle * demth_ZNK13QStylePainter5styleEv(void *that)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-  return cthat->style();
-}
-
-  // proto:  void QStylePainter::drawControl(QStyle::ControlElement ce, const QStyleOption & opt);
-void demth_ZN13QStylePainter11drawControlEN6QStyle14ControlElementERK12QStyleOption(void *that, QStyle::ControlElement ce, const QStyleOption & opt)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-   cthat->drawControl(ce, opt);
-}
-
-  // proto:  void QStylePainter::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption & opt);
-void demth_ZN13QStylePainter13drawPrimitiveEN6QStyle16PrimitiveElementERK12QStyleOption(void *that, QStyle::PrimitiveElement pe, const QStyleOption & opt)
-{
-  QStylePainter *cthat = (QStylePainter *)that;
-   cthat->drawPrimitive(pe, opt);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qstylepainter_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 48, column 21>
+//   // proto:  void QStylePainter::QStylePainter(QWidget * w);
+if (false) {
+  auto f = [](QWidget * arg1) {
+    new QStylePainter(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 49, column 12>
+//   // proto:  void QStylePainter::QStylePainter(QPaintDevice * pd, QWidget * w);
+if (false) {
+  auto f = [](QPaintDevice * arg1, QWidget * arg2) {
+    new QStylePainter(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 59, column 17>
+//   // proto:  void QStylePainter::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex & opt);
+if (false) {
+  auto f = [](QStyle::ComplexControl arg1, const QStyleOptionComplex & arg2) {
+    ((QStylePainter*)0)->drawComplexControl(arg1, arg2);
+  };
+}
+// _ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyleOptionComplex drawComplexControl(class QStyle::ComplexControl, const class QStyleOptionComplex &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 47, column 12>
+//   // proto:  void QStylePainter::QStylePainter();
+if (false) {
+  auto f = []() {
+    new QStylePainter();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 51, column 17>
+//   // proto:  bool QStylePainter::begin(QPaintDevice * pd, QWidget * w);
+if (false) {
+  auto f = [](QPaintDevice * arg1, QWidget * arg2) {
+    ((QStylePainter*)0)->begin(arg1, arg2);
+  };
+}
+// _ZN13QStylePainter5beginEP12QPaintDeviceP7QWidget begin(class QPaintDevice *, class QWidget *)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 60, column 17>
+//   // proto:  void QStylePainter::drawItemText(const QRect & r, int flags, const QPalette & pal, bool enabled, const QString & text, QPalette::ColorRole textRole);
+if (false) {
+  auto f = [](const QRect & arg1, int arg2, const QPalette & arg3, bool arg4, const QString & arg5, QPalette::ColorRole arg6) {
+    ((QStylePainter*)0)->drawItemText(arg1, arg2, arg3, arg4, arg5, arg6);
+  };
+}
+// _ZN13QStylePainter12drawItemTextERK5QRectiRK8QPalettebRK7QStringNS3_9ColorRoleE drawItemText(const class QRect &, int, const class QPalette &, _Bool, const class QString &, class QPalette::ColorRole)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 50, column 17>
+//   // proto:  bool QStylePainter::begin(QWidget * w);
+if (false) {
+  auto f = [](QWidget * arg1) {
+    ((QStylePainter*)0)->begin(arg1);
+  };
+}
+// _ZN13QStylePainter5beginEP7QWidget begin(class QWidget *)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 62, column 17>
+//   // proto:  void QStylePainter::drawItemPixmap(const QRect & r, int flags, const QPixmap & pixmap);
+if (false) {
+  auto f = [](const QRect & arg1, int arg2, const QPixmap & arg3) {
+    ((QStylePainter*)0)->drawItemPixmap(arg1, arg2, arg3);
+  };
+}
+// _ZN13QStylePainter14drawItemPixmapERK5QRectiRK7QPixmap drawItemPixmap(const class QRect &, int, const class QPixmap &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 63, column 20>
+//   // proto:  QStyle * QStylePainter::style();
+if (false) {
+  auto f = []() {
+    ((QStylePainter*)0)->style();
+  };
+}
+// _ZNK13QStylePainter5styleEv style()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 58, column 17>
+//   // proto:  void QStylePainter::drawControl(QStyle::ControlElement ce, const QStyleOption & opt);
+if (false) {
+  auto f = [](QStyle::ControlElement arg1, const QStyleOption & arg2) {
+    ((QStylePainter*)0)->drawControl(arg1, arg2);
+  };
+}
+// _ZN13QStylePainter11drawControlEN6QStyle14ControlElementERK12QStyleOption drawControl(class QStyle::ControlElement, const class QStyleOption &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 57, column 17>
+//   // proto:  void QStylePainter::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption & opt);
+if (false) {
+  auto f = [](QStyle::PrimitiveElement arg1, const QStyleOption & arg2) {
+    ((QStylePainter*)0)->drawPrimitive(arg1, arg2);
+  };
+}
+// _ZN13QStylePainter13drawPrimitiveEN6QStyle16PrimitiveElementERK12QStyleOption drawPrimitive(class QStyle::PrimitiveElement, const class QStyleOption &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

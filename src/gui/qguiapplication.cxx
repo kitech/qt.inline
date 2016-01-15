@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qguiapplication.h
 // dst-file: /src/gui/qguiapplication.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qguiapplication.h>
 
 extern "C" {
@@ -14,40 +15,30 @@ int QGuiApplication_Class_Size()
   return sizeof(QGuiApplication);
 }
 
-// ~QGuiApplication()
-void dedtor_ZN15QGuiApplicationD0Ev(QGuiApplication* that)
-{
-  QGuiApplication* rthis = (QGuiApplication*)that;
-  delete rthis;
-}
-
-// QGuiApplication(int &, char **, int)
-QGuiApplication* dector_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int arg3)
-{
-  // static_assert(sizeof(QGuiApplication) == 32, "tyszerr");
-  QGuiApplication* rthis = new QGuiApplication(argc, argv, arg3);
-  return rthis;
-}
-
-  // proto: static bool QGuiApplication::isRightToLeft();
-bool demth_ZN15QGuiApplication13isRightToLeftEv(void *that)
-{
-  QGuiApplication *cthat = (QGuiApplication *)that;
-  return cthat->isRightToLeft();
-}
-
-  // proto: static bool QGuiApplication::isLeftToRight();
-bool demth_ZN15QGuiApplication13isLeftToRightEv(void *that)
-{
-  QGuiApplication *cthat = (QGuiApplication *)that;
-  return cthat->isLeftToRight();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qguiapplication_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 127, column 24>
+//   // proto: static bool QGuiApplication::isRightToLeft();
+if (false) {
+  auto f = []() {
+    ((QGuiApplication*)0)->isRightToLeft();
+  };
+}
+// _ZN15QGuiApplication13isRightToLeftEv isRightToLeft()
+// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 128, column 24>
+//   // proto: static bool QGuiApplication::isLeftToRight();
+if (false) {
+  auto f = []() {
+    ((QGuiApplication*)0)->isLeftToRight();
+  };
+}
+// _ZN15QGuiApplication13isLeftToRightEv isLeftToRight()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

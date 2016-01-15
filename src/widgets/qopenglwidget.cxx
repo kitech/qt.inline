@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qopenglwidget.h
 // dst-file: /src/widgets/qopenglwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglwidget.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QOpenGLWidget_Class_Size()
   return sizeof(QOpenGLWidget);
 }
 
-// ~QOpenGLWidget()
-void dedtor_ZN13QOpenGLWidgetD0Ev(QOpenGLWidget* that)
-{
-  QOpenGLWidget* rthis = (QOpenGLWidget*)that;
-  delete rthis;
-}
-
-// QOpenGLWidget(class QWidget *, Qt::WindowFlags)
-QOpenGLWidget* dector_ZN13QOpenGLWidgetC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
-{
-  // static_assert(sizeof(QOpenGLWidget) == 32, "tyszerr");
-  QOpenGLWidget* rthis = new QOpenGLWidget(parent, f);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglwidget_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

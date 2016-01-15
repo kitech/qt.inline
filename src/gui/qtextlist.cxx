@@ -1,10 +1,12 @@
+#include <qtextformat.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextlist.h>
 
 extern "C" {
@@ -14,48 +16,38 @@ int QTextList_Class_Size()
   return sizeof(QTextList);
 }
 
-// QTextList(class QTextDocument *)
-QTextList* dector_ZN9QTextListC1EP13QTextDocument(QTextDocument * doc)
-{
-  // static_assert(sizeof(QTextList) == 32, "tyszerr");
-  QTextList* rthis = new QTextList(doc);
-  return rthis;
-}
-
-// ~QTextList()
-void dedtor_ZN9QTextListD0Ev(QTextList* that)
-{
-  QTextList* rthis = (QTextList*)that;
-  delete rthis;
-}
-
-  // proto:  void QTextList::setFormat(const QTextListFormat & format);
-void demth_ZN9QTextList9setFormatERK15QTextListFormat(void *that, const QTextListFormat & format)
-{
-  QTextList *cthat = (QTextList *)that;
-   cthat->setFormat(format);
-}
-
-  // proto:  QTextListFormat QTextList::format();
-QTextListFormat* demth_ZNK9QTextList6formatEv(void *that)
-{
-  QTextList *cthat = (QTextList *)that;
-  auto recret = cthat->format();
-  return new QTextListFormat(recret);
-}
-
-  // proto:  bool QTextList::isEmpty();
-bool demth_ZNK9QTextList7isEmptyEv(void *that)
-{
-  QTextList *cthat = (QTextList *)that;
-  return cthat->isEmpty();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextlist_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 68, column 17>
+//   // proto:  void QTextList::setFormat(const QTextListFormat & format);
+if (false) {
+  auto f = [](const QTextListFormat & arg1) {
+    ((QTextList*)0)->setFormat(arg1);
+  };
+}
+// _ZN9QTextList9setFormatERK15QTextListFormat setFormat(const class QTextListFormat &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 69, column 21>
+//   // proto:  QTextListFormat QTextList::format();
+if (false) {
+  auto f = []() {
+    ((QTextList*)0)->format();
+  };
+}
+// _ZNK9QTextList6formatEv format()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 55, column 17>
+//   // proto:  bool QTextList::isEmpty();
+if (false) {
+  auto f = []() {
+    ((QTextList*)0)->isEmpty();
+  };
+}
+// _ZNK9QTextList7isEmptyEv isEmpty()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qstatictext.h
 // dst-file: /src/gui/qstatictext.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstatictext.h>
 
 extern "C" {
@@ -14,49 +15,22 @@ int QStaticText_Class_Size()
   return sizeof(QStaticText);
 }
 
-// QStaticText(const class QString &)
-QStaticText* dector_ZN11QStaticTextC1ERK7QString(const QString & text)
-{
-  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
-  QStaticText* rthis = new QStaticText(text);
-  return rthis;
-}
-
-// ~QStaticText()
-void dedtor_ZN11QStaticTextD0Ev(QStaticText* that)
-{
-  QStaticText* rthis = (QStaticText*)that;
-  delete rthis;
-}
-
-// QStaticText()
-QStaticText* dector_ZN11QStaticTextC1Ev()
-{
-  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
-  QStaticText* rthis = new QStaticText();
-  return rthis;
-}
-
-// QStaticText(const class QStaticText &)
-QStaticText* dector_ZN11QStaticTextC1ERKS_(const QStaticText & other)
-{
-  // static_assert(sizeof(QStaticText) == 32, "tyszerr");
-  QStaticText* rthis = new QStaticText(other);
-  return rthis;
-}
-
-  // proto:  void QStaticText::swap(QStaticText & other);
-void demth_ZN11QStaticText4swapERS_(void *that, QStaticText & other)
-{
-  QStaticText *cthat = (QStaticText *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qstatictext_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 62, column 10>
+//   // proto:  void QStaticText::swap(QStaticText & other);
+if (false) {
+  auto f = [](QStaticText & arg1) {
+    ((QStaticText*)0)->swap(arg1);
+  };
+}
+// _ZN11QStaticText4swapERS_ swap(class QStaticText &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpagesize.h
 // dst-file: /src/gui/qpagesize.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpagesize.h>
 
 extern "C" {
@@ -14,65 +15,22 @@ int QPageSize_Class_Size()
   return sizeof(QPageSize);
 }
 
-// QPageSize()
-QPageSize* dector_ZN9QPageSizeC1Ev()
-{
-  // static_assert(sizeof(QPageSize) == 32, "tyszerr");
-  QPageSize* rthis = new QPageSize();
-  return rthis;
-}
-
-// QPageSize(const class QSizeF &, enum QPageSize::Unit, const class QString &, enum QPageSize::SizeMatchPolicy)
-QPageSize* dector_ZN9QPageSizeC1ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)
-{
-  // static_assert(sizeof(QPageSize) == 32, "tyszerr");
-  QPageSize* rthis = new QPageSize(size, units, name, matchPolicy);
-  return rthis;
-}
-
-// ~QPageSize()
-void dedtor_ZN9QPageSizeD0Ev(QPageSize* that)
-{
-  QPageSize* rthis = (QPageSize*)that;
-  delete rthis;
-}
-
-// QPageSize(const class QSize &, const class QString &, enum QPageSize::SizeMatchPolicy)
-QPageSize* dector_ZN9QPageSizeC1ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)
-{
-  // static_assert(sizeof(QPageSize) == 32, "tyszerr");
-  QPageSize* rthis = new QPageSize(pointSize, name, matchPolicy);
-  return rthis;
-}
-
-// QPageSize(const class QPageSize &)
-QPageSize* dector_ZN9QPageSizeC1ERKS_(const QPageSize & other)
-{
-  // static_assert(sizeof(QPageSize) == 32, "tyszerr");
-  QPageSize* rthis = new QPageSize(other);
-  return rthis;
-}
-
-// QPageSize(enum QPageSize::PageSizeId)
-QPageSize* dector_ZN9QPageSizeC1ENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId)
-{
-  // static_assert(sizeof(QPageSize) == 32, "tyszerr");
-  QPageSize* rthis = new QPageSize(pageSizeId);
-  return rthis;
-}
-
-  // proto:  void QPageSize::swap(QPageSize & other);
-void demth_ZN9QPageSize4swapERS_(void *that, QPageSize & other)
-{
-  QPageSize *cthat = (QPageSize *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpagesize_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qpagesize.h', line 239, column 10>
+//   // proto:  void QPageSize::swap(QPageSize & other);
+if (false) {
+  auto f = [](QPageSize & arg1) {
+    ((QPageSize*)0)->swap(arg1);
+  };
+}
+// _ZN9QPageSize4swapERS_ swap(class QPageSize &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

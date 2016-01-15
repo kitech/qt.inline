@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qcryptographichash.h
 // dst-file: /src/core/qcryptographichash.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcryptographichash.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QCryptographicHash_Class_Size()
   return sizeof(QCryptographicHash);
 }
 
-// ~QCryptographicHash()
-void dedtor_ZN18QCryptographicHashD0Ev(QCryptographicHash* that)
-{
-  QCryptographicHash* rthis = (QCryptographicHash*)that;
-  delete rthis;
-}
-
-// QCryptographicHash(enum QCryptographicHash::Algorithm)
-QCryptographicHash* dector_ZN18QCryptographicHashC1ENS_9AlgorithmE(QCryptographicHash::Algorithm method)
-{
-  // static_assert(sizeof(QCryptographicHash) == 32, "tyszerr");
-  QCryptographicHash* rthis = new QCryptographicHash(method);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcryptographichash_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

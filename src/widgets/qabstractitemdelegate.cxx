@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qabstractitemdelegate.h
 // dst-file: /src/widgets/qabstractitemdelegate.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qabstractitemdelegate.h>
 
 extern "C" {
@@ -19,6 +20,9 @@ int QAbstractItemDelegate_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qabstractitemdelegate_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

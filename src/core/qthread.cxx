@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qthread.h
 // dst-file: /src/core/qthread.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qthread.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QThread_Class_Size()
   return sizeof(QThread);
 }
 
-// QThread(class QObject *)
-QThread* dector_ZN7QThreadC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QThread) == 32, "tyszerr");
-  QThread* rthis = new QThread(parent);
-  return rthis;
-}
-
-// ~QThread()
-void dedtor_ZN7QThreadD0Ev(QThread* that)
-{
-  QThread* rthis = (QThread*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qthread_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

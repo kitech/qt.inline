@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qelapsedtimer.h
 // dst-file: /src/core/qelapsedtimer.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qelapsedtimer.h>
 
 extern "C" {
@@ -14,19 +15,21 @@ int QElapsedTimer_Class_Size()
   return sizeof(QElapsedTimer);
 }
 
-// QElapsedTimer()
-QElapsedTimer* dector_ZN13QElapsedTimerC1Ev()
-{
-  // static_assert(sizeof(QElapsedTimer) == 32, "tyszerr");
-  QElapsedTimer* rthis = new QElapsedTimer();
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qelapsedtimer_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 53, column 22>
+//   // proto:  void QElapsedTimer::QElapsedTimer();
+if (false) {
+  auto f = []() {
+    new QElapsedTimer();
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

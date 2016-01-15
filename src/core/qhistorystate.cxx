@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qhistorystate.h
 // dst-file: /src/core/qhistorystate.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qhistorystate.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QHistoryState_Class_Size()
   return sizeof(QHistoryState);
 }
 
-// QHistoryState(enum QHistoryState::HistoryType, class QState *)
-QHistoryState* dector_ZN13QHistoryStateC1ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType type, QState * parent)
-{
-  // static_assert(sizeof(QHistoryState) == 32, "tyszerr");
-  QHistoryState* rthis = new QHistoryState(type, parent);
-  return rthis;
-}
-
-// QHistoryState(class QState *)
-QHistoryState* dector_ZN13QHistoryStateC1EP6QState(QState * parent)
-{
-  // static_assert(sizeof(QHistoryState) == 32, "tyszerr");
-  QHistoryState* rthis = new QHistoryState(parent);
-  return rthis;
-}
-
-// ~QHistoryState()
-void dedtor_ZN13QHistoryStateD0Ev(QHistoryState* that)
-{
-  QHistoryState* rthis = (QHistoryState*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qhistorystate_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

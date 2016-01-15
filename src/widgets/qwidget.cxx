@@ -1,10 +1,18 @@
+#include <qsize.h>
+#include <qwindowdefs.h>
+#include <qfont.h>
+#include <qfontmetrics.h>
+#include <qfontinfo.h>
+#include <qnamespace.h>
+#include <qrect.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qwidget.h>
 
 extern "C" {
@@ -12,298 +20,6 @@ extern "C" {
 int QWidget_Class_Size()
 {
   return sizeof(QWidget);
-}
-
-// QWidget(class QWidget *, Qt::WindowFlags)
-QWidget* dector_ZN7QWidgetC1EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
-{
-  // static_assert(sizeof(QWidget) == 32, "tyszerr");
-  QWidget* rthis = new QWidget(parent, f);
-  return rthis;
-}
-
-// ~QWidget()
-void dedtor_ZN7QWidgetD0Ev(QWidget* that)
-{
-  QWidget* rthis = (QWidget*)that;
-  delete rthis;
-}
-
-  // proto:  bool QWidget::isEnabledToTLW();
-bool demth_ZNK7QWidget14isEnabledToTLWEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isEnabledToTLW();
-}
-
-  // proto:  void QWidget::setSizeIncrement(const QSize & );
-void demth_ZN7QWidget16setSizeIncrementERK5QSize(void *that, const QSize & arg1)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setSizeIncrement(arg1);
-}
-
-  // proto:  bool QWidget::isTopLevel();
-bool demth_ZNK7QWidget10isTopLevelEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isTopLevel();
-}
-
-  // proto:  bool QWidget::isWindow();
-bool demth_ZNK7QWidget8isWindowEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isWindow();
-}
-
-  // proto:  bool QWidget::isVisible();
-bool demth_ZNK7QWidget9isVisibleEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isVisible();
-}
-
-  // proto:  void QWidget::setSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical);
-void demth_ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_(void *that, QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setSizePolicy(horizontal, vertical);
-}
-
-  // proto:  int QWidget::minimumHeight();
-int demth_ZNK7QWidget13minimumHeightEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->minimumHeight();
-}
-
-  // proto:  void QWidget::update(int x, int y, int w, int h);
-void demth_ZN7QWidget6updateEiiii(void *that, int x, int y, int w, int h)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->update(x, y, w, h);
-}
-
-  // proto:  QRect QWidget::rect();
-QRect* demth_ZNK7QWidget4rectEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  auto recret = cthat->rect();
-  return new QRect(recret);
-}
-
-  // proto:  void QWidget::setMinimumSize(const QSize & );
-void demth_ZN7QWidget14setMinimumSizeERK5QSize(void *that, const QSize & arg1)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setMinimumSize(arg1);
-}
-
-  // proto:  void QWidget::setFocus();
-void demth_ZN7QWidget8setFocusEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setFocus();
-}
-
-  // proto:  bool QWidget::isModal();
-bool demth_ZNK7QWidget7isModalEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isModal();
-}
-
-  // proto:  const QRect & QWidget::geometry();
-const QRect * demth_ZNK7QWidget8geometryEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return &cthat->geometry();
-}
-
-  // proto:  bool QWidget::hasMouseTracking();
-bool demth_ZNK7QWidget16hasMouseTrackingEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->hasMouseTracking();
-}
-
-  // proto:  bool QWidget::isHidden();
-bool demth_ZNK7QWidget8isHiddenEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isHidden();
-}
-
-  // proto:  QWidget * QWidget::childAt(int x, int y);
-QWidget * demth_ZNK7QWidget7childAtEii(void *that, int x, int y)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->childAt(x, y);
-}
-
-  // proto:  bool QWidget::isLeftToRight();
-bool demth_ZNK7QWidget13isLeftToRightEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isLeftToRight();
-}
-
-  // proto:  int QWidget::width();
-int demth_ZNK7QWidget5widthEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->width();
-}
-
-  // proto:  bool QWidget::isEnabled();
-bool demth_ZNK7QWidget9isEnabledEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isEnabled();
-}
-
-  // proto:  int QWidget::minimumWidth();
-int demth_ZNK7QWidget12minimumWidthEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->minimumWidth();
-}
-
-  // proto:  QFontInfo QWidget::fontInfo();
-QFontInfo* demth_ZNK7QWidget8fontInfoEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  auto recret = cthat->fontInfo();
-  return new QFontInfo(recret);
-}
-
-  // proto:  QFontMetrics QWidget::fontMetrics();
-QFontMetrics* demth_ZNK7QWidget11fontMetricsEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  auto recret = cthat->fontMetrics();
-  return new QFontMetrics(recret);
-}
-
-  // proto:  bool QWidget::updatesEnabled();
-bool demth_ZNK7QWidget14updatesEnabledEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->updatesEnabled();
-}
-
-  // proto:  const QFont & QWidget::font();
-const QFont * demth_ZNK7QWidget4fontEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return &cthat->font();
-}
-
-  // proto:  void QWidget::setMaximumSize(const QSize & );
-void demth_ZN7QWidget14setMaximumSizeERK5QSize(void *that, const QSize & arg1)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setMaximumSize(arg1);
-}
-
-  // proto:  void QWidget::resize(int w, int h);
-void demth_ZN7QWidget6resizeEii(void *that, int w, int h)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->resize(w, h);
-}
-
-  // proto:  QWidget * QWidget::parentWidget();
-QWidget * demth_ZNK7QWidget12parentWidgetEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->parentWidget();
-}
-
-  // proto:  void QWidget::setGeometry(int x, int y, int w, int h);
-void demth_ZN7QWidget11setGeometryEiiii(void *that, int x, int y, int w, int h)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setGeometry(x, y, w, h);
-}
-
-  // proto:  void QWidget::setMouseTracking(bool enable);
-void demth_ZN7QWidget16setMouseTrackingEb(void *that, bool enable)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setMouseTracking(enable);
-}
-
-  // proto:  void QWidget::setBaseSize(const QSize & );
-void demth_ZN7QWidget11setBaseSizeERK5QSize(void *that, const QSize & arg1)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->setBaseSize(arg1);
-}
-
-  // proto:  int QWidget::maximumHeight();
-int demth_ZNK7QWidget13maximumHeightEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->maximumHeight();
-}
-
-  // proto:  void QWidget::move(int x, int y);
-void demth_ZN7QWidget4moveEii(void *that, int x, int y)
-{
-  QWidget *cthat = (QWidget *)that;
-   cthat->move(x, y);
-}
-
-  // proto:  QWidget * QWidget::topLevelWidget();
-QWidget * demth_ZNK7QWidget14topLevelWidgetEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->topLevelWidget();
-}
-
-  // proto:  bool QWidget::underMouse();
-bool demth_ZNK7QWidget10underMouseEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->underMouse();
-}
-
-  // proto:  bool QWidget::testAttribute(Qt::WidgetAttribute );
-bool demth_ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE(void *that, Qt::WidgetAttribute arg1)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->testAttribute(arg1);
-}
-
-  // proto:  int QWidget::height();
-int demth_ZNK7QWidget6heightEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->height();
-}
-
-  // proto:  QSize QWidget::size();
-QSize* demth_ZNK7QWidget4sizeEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  auto recret = cthat->size();
-  return new QSize(recret);
-}
-
-  // proto:  int QWidget::maximumWidth();
-int demth_ZNK7QWidget12maximumWidthEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->maximumWidth();
-}
-
-  // proto:  bool QWidget::isRightToLeft();
-bool demth_ZNK7QWidget13isRightToLeftEv(void *that)
-{
-  QWidget *cthat = (QWidget *)that;
-  return cthat->isRightToLeft();
 }
 
 int QWidgetData_Class_Size()
@@ -316,6 +32,345 @@ int QWidgetData_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qwidget_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 227, column 10>
+//   // proto:  bool QWidget::isEnabledToTLW();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isEnabledToTLW();
+  };
+}
+// _ZNK7QWidget14isEnabledToTLWEv isEnabledToTLW()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 272, column 10>
+//   // proto:  void QWidget::setSizeIncrement(const QSize & );
+if (false) {
+  auto f = [](const QSize & arg1) {
+    ((QWidget*)0)->setSizeIncrement(arg1);
+  };
+}
+// _ZN7QWidget16setSizeIncrementERK5QSize setSizeIncrement(const class QSize &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 218, column 10>
+//   // proto:  bool QWidget::isTopLevel();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isTopLevel();
+  };
+}
+// _ZNK7QWidget10isTopLevelEv isTopLevel()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 219, column 10>
+//   // proto:  bool QWidget::isWindow();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isWindow();
+  };
+}
+// _ZNK7QWidget8isWindowEv isWindow()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 485, column 10>
+//   // proto:  bool QWidget::isVisible();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isVisible();
+  };
+}
+// _ZNK7QWidget9isVisibleEv isVisible()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 502, column 17>
+//   // proto:  void QWidget::setSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical);
+if (false) {
+  auto f = [](QSizePolicy::Policy arg1, QSizePolicy::Policy arg2) {
+    ((QWidget*)0)->setSizePolicy(arg1, arg2);
+  };
+}
+// _ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_ setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 255, column 9>
+//   // proto:  int QWidget::minimumHeight();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->minimumHeight();
+  };
+}
+// _ZNK7QWidget13minimumHeightEv minimumHeight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 449, column 17>
+//   // proto:  void QWidget::update(int x, int y, int w, int h);
+if (false) {
+  auto f = [](int arg1, int arg2, int arg3, int arg4) {
+    ((QWidget*)0)->update(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZN7QWidget6updateEiiii update(int, int, int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 248, column 18>
+//   // proto:  QRect QWidget::rect();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->rect();
+  };
+}
+// _ZNK7QWidget4rectEv rect()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 258, column 10>
+//   // proto:  void QWidget::setMinimumSize(const QSize & );
+if (false) {
+  auto f = [](const QSize & arg1) {
+    ((QWidget*)0)->setMinimumSize(arg1);
+  };
+}
+// _ZN7QWidget14setMinimumSizeERK5QSize setMinimumSize(const class QSize &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 402, column 17>
+//   // proto:  void QWidget::setFocus();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->setFocus();
+  };
+}
+// _ZN7QWidget8setFocusEv setFocus()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 553, column 28>
+//   // proto:  Qt::WindowFlags QWidget::windowFlags();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->windowFlags();
+  };
+}
+// _ZNK7QWidget11windowFlagsEv windowFlags()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 221, column 10>
+//   // proto:  bool QWidget::isModal();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isModal();
+  };
+}
+// _ZNK7QWidget7isModalEv isModal()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 238, column 18>
+//   // proto:  const QRect & QWidget::geometry();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->geometry();
+  };
+}
+// _ZNK7QWidget8geometryEv geometry()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 318, column 10>
+//   // proto:  bool QWidget::hasMouseTracking();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->hasMouseTracking();
+  };
+}
+// _ZNK7QWidget16hasMouseTrackingEv hasMouseTracking()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 487, column 17>
+//   // proto:  bool QWidget::isHidden();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isHidden();
+  };
+}
+// _ZNK7QWidget8isHiddenEv isHidden()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 559, column 21>
+//   // proto:  QWidget * QWidget::childAt(int x, int y);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QWidget*)0)->childAt(arg1, arg2);
+  };
+}
+// _ZNK7QWidget7childAtEii childAt(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 399, column 17>
+//   // proto:  bool QWidget::isLeftToRight();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isLeftToRight();
+  };
+}
+// _ZNK7QWidget13isLeftToRightEv isLeftToRight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 246, column 16>
+//   // proto:  int QWidget::width();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->width();
+  };
+}
+// _ZNK7QWidget5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 225, column 10>
+//   // proto:  bool QWidget::isEnabled();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isEnabled();
+  };
+}
+// _ZNK7QWidget9isEnabledEv isEnabled()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 556, column 27>
+//   // proto:  Qt::WindowType QWidget::windowType();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->windowType();
+  };
+}
+// _ZNK7QWidget10windowTypeEv windowType()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 254, column 9>
+//   // proto:  int QWidget::minimumWidth();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->minimumWidth();
+  };
+}
+// _ZNK7QWidget12minimumWidthEv minimumWidth()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 309, column 15>
+//   // proto:  QFontInfo QWidget::fontInfo();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->fontInfo();
+  };
+}
+// _ZNK7QWidget8fontInfoEv fontInfo()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 308, column 18>
+//   // proto:  QFontMetrics QWidget::fontMetrics();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->fontMetrics();
+  };
+}
+// _ZNK7QWidget11fontMetricsEv fontMetrics()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 437, column 17>
+//   // proto:  bool QWidget::updatesEnabled();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->updatesEnabled();
+  };
+}
+// _ZNK7QWidget14updatesEnabledEv updatesEnabled()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 306, column 18>
+//   // proto:  const QFont & QWidget::font();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->font();
+  };
+}
+// _ZNK7QWidget4fontEv font()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 210, column 16>
+//   // proto:  WId QWidget::internalWinId();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->internalWinId();
+  };
+}
+// _ZNK7QWidget13internalWinIdEv internalWinId()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 260, column 10>
+//   // proto:  void QWidget::setMaximumSize(const QSize & );
+if (false) {
+  auto f = [](const QSize & arg1) {
+    ((QWidget*)0)->setMaximumSize(arg1);
+  };
+}
+// _ZN7QWidget14setMaximumSizeERK5QSize setMaximumSize(const class QSize &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 478, column 10>
+//   // proto:  void QWidget::resize(int w, int h);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QWidget*)0)->resize(arg1, arg2);
+  };
+}
+// _ZN7QWidget6resizeEii resize(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 550, column 14>
+//   // proto:  QWidget * QWidget::parentWidget();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->parentWidget();
+  };
+}
+// _ZNK7QWidget12parentWidgetEv parentWidget()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 480, column 17>
+//   // proto:  void QWidget::setGeometry(int x, int y, int w, int h);
+if (false) {
+  auto f = [](int arg1, int arg2, int arg3, int arg4) {
+    ((QWidget*)0)->setGeometry(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZN7QWidget11setGeometryEiiii setGeometry(int, int, int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 317, column 10>
+//   // proto:  void QWidget::setMouseTracking(bool enable);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QWidget*)0)->setMouseTracking(arg1);
+  };
+}
+// _ZN7QWidget16setMouseTrackingEb setMouseTracking(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 275, column 10>
+//   // proto:  void QWidget::setBaseSize(const QSize & );
+if (false) {
+  auto f = [](const QSize & arg1) {
+    ((QWidget*)0)->setBaseSize(arg1);
+  };
+}
+// _ZN7QWidget11setBaseSizeERK5QSize setBaseSize(const class QSize &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 257, column 9>
+//   // proto:  int QWidget::maximumHeight();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->maximumHeight();
+  };
+}
+// _ZNK7QWidget13maximumHeightEv maximumHeight()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 476, column 10>
+//   // proto:  void QWidget::move(int x, int y);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QWidget*)0)->move(arg1, arg2);
+  };
+}
+// _ZN7QWidget4moveEii move(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 294, column 21>
+//   // proto:  QWidget * QWidget::topLevelWidget();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->topLevelWidget();
+  };
+}
+// _ZNK7QWidget14topLevelWidgetEv topLevelWidget()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 319, column 10>
+//   // proto:  bool QWidget::underMouse();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->underMouse();
+  };
+}
+// _ZNK7QWidget10underMouseEv underMouse()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 573, column 17>
+//   // proto:  bool QWidget::testAttribute(Qt::WidgetAttribute );
+if (false) {
+  auto f = [](Qt::WidgetAttribute arg1) {
+    ((QWidget*)0)->testAttribute(arg1);
+  };
+}
+// _ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE testAttribute(Qt::WidgetAttribute)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 247, column 16>
+//   // proto:  int QWidget::height();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->height();
+  };
+}
+// _ZNK7QWidget6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 245, column 11>
+//   // proto:  QSize QWidget::size();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->size();
+  };
+}
+// _ZNK7QWidget4sizeEv size()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 256, column 9>
+//   // proto:  int QWidget::maximumWidth();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->maximumWidth();
+  };
+}
+// _ZNK7QWidget12maximumWidthEv maximumWidth()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 398, column 17>
+//   // proto:  bool QWidget::isRightToLeft();
+if (false) {
+  auto f = []() {
+    ((QWidget*)0)->isRightToLeft();
+  };
+}
+// _ZNK7QWidget13isRightToLeftEv isRightToLeft()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

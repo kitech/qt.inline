@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qfileiconprovider.h
 // dst-file: /src/widgets/qfileiconprovider.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfileiconprovider.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QFileIconProvider_Class_Size()
   return sizeof(QFileIconProvider);
 }
 
-// QFileIconProvider()
-QFileIconProvider* dector_ZN17QFileIconProviderC1Ev()
-{
-  // static_assert(sizeof(QFileIconProvider) == 32, "tyszerr");
-  QFileIconProvider* rthis = new QFileIconProvider();
-  return rthis;
-}
-
-// ~QFileIconProvider()
-void dedtor_ZN17QFileIconProviderD0Ev(QFileIconProvider* that)
-{
-  QFileIconProvider* rthis = (QFileIconProvider*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfileiconprovider_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

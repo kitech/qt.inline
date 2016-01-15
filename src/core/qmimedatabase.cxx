@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qmimedatabase.h
 // dst-file: /src/core/qmimedatabase.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmimedatabase.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QMimeDatabase_Class_Size()
   return sizeof(QMimeDatabase);
 }
 
-// QMimeDatabase()
-QMimeDatabase* dector_ZN13QMimeDatabaseC1Ev()
-{
-  // static_assert(sizeof(QMimeDatabase) == 32, "tyszerr");
-  QMimeDatabase* rthis = new QMimeDatabase();
-  return rthis;
-}
-
-// ~QMimeDatabase()
-void dedtor_ZN13QMimeDatabaseD0Ev(QMimeDatabase* that)
-{
-  QMimeDatabase* rthis = (QMimeDatabase*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmimedatabase_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

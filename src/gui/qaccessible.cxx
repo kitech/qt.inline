@@ -1,10 +1,13 @@
+#include <qvariant.h>
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qaccessible.h
 // dst-file: /src/gui/qaccessible.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qaccessible.h>
 
 extern "C" {
@@ -19,99 +22,6 @@ int QAccessibleTableModelChangeEvent_Class_Size()
   return sizeof(QAccessibleTableModelChangeEvent);
 }
 
-// QAccessibleTableModelChangeEvent(class QObject *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
-QAccessibleTableModelChangeEvent* dector_ZN32QAccessibleTableModelChangeEventC1EP7QObjectNS_15ModelChangeTypeE(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType)
-{
-  // static_assert(sizeof(QAccessibleTableModelChangeEvent) == 48, "tyszerr");
-  QAccessibleTableModelChangeEvent* rthis = new QAccessibleTableModelChangeEvent(obj, changeType);
-  return rthis;
-}
-
-// QAccessibleTableModelChangeEvent(class QAccessibleInterface *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
-QAccessibleTableModelChangeEvent* dector_ZN32QAccessibleTableModelChangeEventC1EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType)
-{
-  // static_assert(sizeof(QAccessibleTableModelChangeEvent) == 48, "tyszerr");
-  QAccessibleTableModelChangeEvent* rthis = new QAccessibleTableModelChangeEvent(iface, changeType);
-  return rthis;
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::setFirstColumn(int col);
-void demth_ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi(void *that, int col)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-   cthat->setFirstColumn(col);
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::setFirstRow(int row);
-void demth_ZN32QAccessibleTableModelChangeEvent11setFirstRowEi(void *that, int row)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-   cthat->setFirstRow(row);
-}
-
-  // proto:  int QAccessibleTableModelChangeEvent::firstRow();
-int demth_ZNK32QAccessibleTableModelChangeEvent8firstRowEv(void *that)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  return cthat->firstRow();
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
-void demth_ZN32QAccessibleTableModelChangeEventC1EP7QObjectNS_15ModelChangeTypeE(void *that, QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  auto _o = new(that) QAccessibleTableModelChangeEvent(obj, changeType);
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
-void demth_ZN32QAccessibleTableModelChangeEventC1EP20QAccessibleInterfaceNS_15ModelChangeTypeE(void *that, QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  auto _o = new(that) QAccessibleTableModelChangeEvent(iface, changeType);
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::setLastColumn(int col);
-void demth_ZN32QAccessibleTableModelChangeEvent13setLastColumnEi(void *that, int col)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-   cthat->setLastColumn(col);
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType changeType);
-void demth_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE(void *that, QAccessibleTableModelChangeEvent::ModelChangeType changeType)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-   cthat->setModelChangeType(changeType);
-}
-
-  // proto:  int QAccessibleTableModelChangeEvent::firstColumn();
-int demth_ZNK32QAccessibleTableModelChangeEvent11firstColumnEv(void *that)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  return cthat->firstColumn();
-}
-
-  // proto:  int QAccessibleTableModelChangeEvent::lastColumn();
-int demth_ZNK32QAccessibleTableModelChangeEvent10lastColumnEv(void *that)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  return cthat->lastColumn();
-}
-
-  // proto:  void QAccessibleTableModelChangeEvent::setLastRow(int row);
-void demth_ZN32QAccessibleTableModelChangeEvent10setLastRowEi(void *that, int row)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-   cthat->setLastRow(row);
-}
-
-  // proto:  int QAccessibleTableModelChangeEvent::lastRow();
-int demth_ZNK32QAccessibleTableModelChangeEvent7lastRowEv(void *that)
-{
-  QAccessibleTableModelChangeEvent *cthat = (QAccessibleTableModelChangeEvent *)that;
-  return cthat->lastRow();
-}
-
 int QAccessibleTextInterface_Class_Size()
 {
   return sizeof(QAccessibleTextInterface);
@@ -122,64 +32,6 @@ int QAccessibleEvent_Class_Size()
   return sizeof(QAccessibleEvent);
 }
 
-// QAccessibleEvent(class QObject *, class QAccessible::Event)
-QAccessibleEvent* dector_ZN16QAccessibleEventC1EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ)
-{
-  // static_assert(sizeof(QAccessibleEvent) == 32, "tyszerr");
-  QAccessibleEvent* rthis = new QAccessibleEvent(obj, typ);
-  return rthis;
-}
-
-// ~QAccessibleEvent()
-void dedtor_ZN16QAccessibleEventD0Ev(QAccessibleEvent* that)
-{
-  QAccessibleEvent* rthis = (QAccessibleEvent*)that;
-  delete rthis;
-}
-
-// QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
-QAccessibleEvent* dector_ZN16QAccessibleEventC1EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ)
-{
-  // static_assert(sizeof(QAccessibleEvent) == 32, "tyszerr");
-  QAccessibleEvent* rthis = new QAccessibleEvent(iface, typ);
-  return rthis;
-}
-
-  // proto:  void QAccessibleEvent::QAccessibleEvent(QObject * obj, QAccessible::Event typ);
-void demth_ZN16QAccessibleEventC1EP7QObjectN11QAccessible5EventE(void *that, QObject * obj, QAccessible::Event typ)
-{
-  QAccessibleEvent *cthat = (QAccessibleEvent *)that;
-  auto _o = new(that) QAccessibleEvent(obj, typ);
-}
-
-  // proto:  QObject * QAccessibleEvent::object();
-QObject * demth_ZNK16QAccessibleEvent6objectEv(void *that)
-{
-  QAccessibleEvent *cthat = (QAccessibleEvent *)that;
-  return cthat->object();
-}
-
-  // proto:  void QAccessibleEvent::setChild(int chld);
-void demth_ZN16QAccessibleEvent8setChildEi(void *that, int chld)
-{
-  QAccessibleEvent *cthat = (QAccessibleEvent *)that;
-   cthat->setChild(chld);
-}
-
-  // proto:  int QAccessibleEvent::child();
-int demth_ZNK16QAccessibleEvent5childEv(void *that)
-{
-  QAccessibleEvent *cthat = (QAccessibleEvent *)that;
-  return cthat->child();
-}
-
-  // proto:  void QAccessibleEvent::QAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ);
-void demth_ZN16QAccessibleEventC1EP20QAccessibleInterfaceN11QAccessible5EventE(void *that, QAccessibleInterface * iface, QAccessible::Event typ)
-{
-  QAccessibleEvent *cthat = (QAccessibleEvent *)that;
-  auto _o = new(that) QAccessibleEvent(iface, typ);
-}
-
 int QAccessibleActionInterface_Class_Size()
 {
   return sizeof(QAccessibleActionInterface);
@@ -188,62 +40,6 @@ int QAccessibleActionInterface_Class_Size()
 int QAccessibleInterface_Class_Size()
 {
   return sizeof(QAccessibleInterface);
-}
-
-  // proto:  QAccessibleImageInterface * QAccessibleInterface::imageInterface();
-QAccessibleImageInterface * demth_ZN20QAccessibleInterface14imageInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->imageInterface();
-}
-
-  // proto:  QAccessibleTableInterface * QAccessibleInterface::tableInterface();
-QAccessibleTableInterface * demth_ZN20QAccessibleInterface14tableInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->tableInterface();
-}
-
-  // proto:  QAccessibleEditableTextInterface * QAccessibleInterface::editableTextInterface();
-QAccessibleEditableTextInterface * demth_ZN20QAccessibleInterface21editableTextInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->editableTextInterface();
-}
-
-  // proto:  QAccessibleValueInterface * QAccessibleInterface::valueInterface();
-QAccessibleValueInterface * demth_ZN20QAccessibleInterface14valueInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->valueInterface();
-}
-
-  // proto:  void * QAccessibleInterface::interface_cast(QAccessible::InterfaceType );
-void * demth_ZN20QAccessibleInterface14interface_castEN11QAccessible13InterfaceTypeE(void *that, QAccessible::InterfaceType arg1)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->interface_cast(arg1);
-}
-
-  // proto:  QAccessibleActionInterface * QAccessibleInterface::actionInterface();
-QAccessibleActionInterface * demth_ZN20QAccessibleInterface15actionInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->actionInterface();
-}
-
-  // proto:  QAccessibleTableCellInterface * QAccessibleInterface::tableCellInterface();
-QAccessibleTableCellInterface * demth_ZN20QAccessibleInterface18tableCellInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->tableCellInterface();
-}
-
-  // proto:  QAccessibleTextInterface * QAccessibleInterface::textInterface();
-QAccessibleTextInterface * demth_ZN20QAccessibleInterface13textInterfaceEv(void *that)
-{
-  QAccessibleInterface *cthat = (QAccessibleInterface *)that;
-  return cthat->textInterface();
 }
 
 int QAccessibleEditableTextInterface_Class_Size()
@@ -266,92 +62,9 @@ int QAccessibleTextUpdateEvent_Class_Size()
   return sizeof(QAccessibleTextUpdateEvent);
 }
 
-// QAccessibleTextUpdateEvent(class QAccessibleInterface *, int, const class QString &, const class QString &)
-QAccessibleTextUpdateEvent* dector_ZN26QAccessibleTextUpdateEventC1EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextUpdateEvent) == 56, "tyszerr");
-  QAccessibleTextUpdateEvent* rthis = new QAccessibleTextUpdateEvent(iface, position, oldText, text);
-  return rthis;
-}
-
-// QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)
-QAccessibleTextUpdateEvent* dector_ZN26QAccessibleTextUpdateEventC1EP7QObjectiRK7QStringS4_(QObject * obj, int position, const QString & oldText, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextUpdateEvent) == 56, "tyszerr");
-  QAccessibleTextUpdateEvent* rthis = new QAccessibleTextUpdateEvent(obj, position, oldText, text);
-  return rthis;
-}
-
-  // proto:  QString QAccessibleTextUpdateEvent::textInserted();
-QString* demth_ZNK26QAccessibleTextUpdateEvent12textInsertedEv(void *that)
-{
-  QAccessibleTextUpdateEvent *cthat = (QAccessibleTextUpdateEvent *)that;
-  auto recret = cthat->textInserted();
-  return new QString(recret);
-}
-
-  // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
-void demth_ZN26QAccessibleTextUpdateEventC1EP20QAccessibleInterfaceiRK7QStringS4_(void *that, QAccessibleInterface * iface, int position, const QString & oldText, const QString & text)
-{
-  QAccessibleTextUpdateEvent *cthat = (QAccessibleTextUpdateEvent *)that;
-  auto _o = new(that) QAccessibleTextUpdateEvent(iface, position, oldText, text);
-}
-
-  // proto:  QString QAccessibleTextUpdateEvent::textRemoved();
-QString* demth_ZNK26QAccessibleTextUpdateEvent11textRemovedEv(void *that)
-{
-  QAccessibleTextUpdateEvent *cthat = (QAccessibleTextUpdateEvent *)that;
-  auto recret = cthat->textRemoved();
-  return new QString(recret);
-}
-
-  // proto:  int QAccessibleTextUpdateEvent::changePosition();
-int demth_ZNK26QAccessibleTextUpdateEvent14changePositionEv(void *that)
-{
-  QAccessibleTextUpdateEvent *cthat = (QAccessibleTextUpdateEvent *)that;
-  return cthat->changePosition();
-}
-
-  // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
-void demth_ZN26QAccessibleTextUpdateEventC1EP7QObjectiRK7QStringS4_(void *that, QObject * obj, int position, const QString & oldText, const QString & text)
-{
-  QAccessibleTextUpdateEvent *cthat = (QAccessibleTextUpdateEvent *)that;
-  auto _o = new(that) QAccessibleTextUpdateEvent(obj, position, oldText, text);
-}
-
 int QAccessibleStateChangeEvent_Class_Size()
 {
   return sizeof(QAccessibleStateChangeEvent);
-}
-
-// QAccessibleStateChangeEvent(class QAccessibleInterface *, class QAccessible::State)
-QAccessibleStateChangeEvent* dector_ZN27QAccessibleStateChangeEventC1EP20QAccessibleInterfaceN11QAccessible5StateE(QAccessibleInterface * iface, QAccessible::State state)
-{
-  // static_assert(sizeof(QAccessibleStateChangeEvent) == 40, "tyszerr");
-  QAccessibleStateChangeEvent* rthis = new QAccessibleStateChangeEvent(iface, state);
-  return rthis;
-}
-
-// QAccessibleStateChangeEvent(class QObject *, class QAccessible::State)
-QAccessibleStateChangeEvent* dector_ZN27QAccessibleStateChangeEventC1EP7QObjectN11QAccessible5StateE(QObject * obj, QAccessible::State state)
-{
-  // static_assert(sizeof(QAccessibleStateChangeEvent) == 40, "tyszerr");
-  QAccessibleStateChangeEvent* rthis = new QAccessibleStateChangeEvent(obj, state);
-  return rthis;
-}
-
-  // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state);
-void demth_ZN27QAccessibleStateChangeEventC1EP20QAccessibleInterfaceN11QAccessible5StateE(void *that, QAccessibleInterface * iface, QAccessible::State state)
-{
-  QAccessibleStateChangeEvent *cthat = (QAccessibleStateChangeEvent *)that;
-  auto _o = new(that) QAccessibleStateChangeEvent(iface, state);
-}
-
-  // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QObject * obj, QAccessible::State state);
-void demth_ZN27QAccessibleStateChangeEventC1EP7QObjectN11QAccessible5StateE(void *that, QObject * obj, QAccessible::State state)
-{
-  QAccessibleStateChangeEvent *cthat = (QAccessibleStateChangeEvent *)that;
-  auto _o = new(that) QAccessibleStateChangeEvent(obj, state);
 }
 
 int QAccessibleImageInterface_Class_Size()
@@ -364,51 +77,6 @@ int QAccessibleTextInsertEvent_Class_Size()
   return sizeof(QAccessibleTextInsertEvent);
 }
 
-// QAccessibleTextInsertEvent(class QAccessibleInterface *, int, const class QString &)
-QAccessibleTextInsertEvent* dector_ZN26QAccessibleTextInsertEventC1EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextInsertEvent) == 48, "tyszerr");
-  QAccessibleTextInsertEvent* rthis = new QAccessibleTextInsertEvent(iface, position, text);
-  return rthis;
-}
-
-// QAccessibleTextInsertEvent(class QObject *, int, const class QString &)
-QAccessibleTextInsertEvent* dector_ZN26QAccessibleTextInsertEventC1EP7QObjectiRK7QString(QObject * obj, int position, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextInsertEvent) == 48, "tyszerr");
-  QAccessibleTextInsertEvent* rthis = new QAccessibleTextInsertEvent(obj, position, text);
-  return rthis;
-}
-
-  // proto:  QString QAccessibleTextInsertEvent::textInserted();
-QString* demth_ZNK26QAccessibleTextInsertEvent12textInsertedEv(void *that)
-{
-  QAccessibleTextInsertEvent *cthat = (QAccessibleTextInsertEvent *)that;
-  auto recret = cthat->textInserted();
-  return new QString(recret);
-}
-
-  // proto:  int QAccessibleTextInsertEvent::changePosition();
-int demth_ZNK26QAccessibleTextInsertEvent14changePositionEv(void *that)
-{
-  QAccessibleTextInsertEvent *cthat = (QAccessibleTextInsertEvent *)that;
-  return cthat->changePosition();
-}
-
-  // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text);
-void demth_ZN26QAccessibleTextInsertEventC1EP20QAccessibleInterfaceiRK7QString(void *that, QAccessibleInterface * iface, int position, const QString & text)
-{
-  QAccessibleTextInsertEvent *cthat = (QAccessibleTextInsertEvent *)that;
-  auto _o = new(that) QAccessibleTextInsertEvent(iface, position, text);
-}
-
-  // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QObject * obj, int position, const QString & text);
-void demth_ZN26QAccessibleTextInsertEventC1EP7QObjectiRK7QString(void *that, QObject * obj, int position, const QString & text)
-{
-  QAccessibleTextInsertEvent *cthat = (QAccessibleTextInsertEvent *)that;
-  auto _o = new(that) QAccessibleTextInsertEvent(obj, position, text);
-}
-
 int QAccessibleValueInterface_Class_Size()
 {
   return sizeof(QAccessibleValueInterface);
@@ -419,105 +87,9 @@ int QAccessibleTextRemoveEvent_Class_Size()
   return sizeof(QAccessibleTextRemoveEvent);
 }
 
-// QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)
-QAccessibleTextRemoveEvent* dector_ZN26QAccessibleTextRemoveEventC1EP7QObjectiRK7QString(QObject * obj, int position, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextRemoveEvent) == 48, "tyszerr");
-  QAccessibleTextRemoveEvent* rthis = new QAccessibleTextRemoveEvent(obj, position, text);
-  return rthis;
-}
-
-// QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
-QAccessibleTextRemoveEvent* dector_ZN26QAccessibleTextRemoveEventC1EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, const QString & text)
-{
-  // static_assert(sizeof(QAccessibleTextRemoveEvent) == 48, "tyszerr");
-  QAccessibleTextRemoveEvent* rthis = new QAccessibleTextRemoveEvent(iface, position, text);
-  return rthis;
-}
-
-  // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text);
-void demth_ZN26QAccessibleTextRemoveEventC1EP7QObjectiRK7QString(void *that, QObject * obj, int position, const QString & text)
-{
-  QAccessibleTextRemoveEvent *cthat = (QAccessibleTextRemoveEvent *)that;
-  auto _o = new(that) QAccessibleTextRemoveEvent(obj, position, text);
-}
-
-  // proto:  QString QAccessibleTextRemoveEvent::textRemoved();
-QString* demth_ZNK26QAccessibleTextRemoveEvent11textRemovedEv(void *that)
-{
-  QAccessibleTextRemoveEvent *cthat = (QAccessibleTextRemoveEvent *)that;
-  auto recret = cthat->textRemoved();
-  return new QString(recret);
-}
-
-  // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text);
-void demth_ZN26QAccessibleTextRemoveEventC1EP20QAccessibleInterfaceiRK7QString(void *that, QAccessibleInterface * iface, int position, const QString & text)
-{
-  QAccessibleTextRemoveEvent *cthat = (QAccessibleTextRemoveEvent *)that;
-  auto _o = new(that) QAccessibleTextRemoveEvent(iface, position, text);
-}
-
-  // proto:  int QAccessibleTextRemoveEvent::changePosition();
-int demth_ZNK26QAccessibleTextRemoveEvent14changePositionEv(void *that)
-{
-  QAccessibleTextRemoveEvent *cthat = (QAccessibleTextRemoveEvent *)that;
-  return cthat->changePosition();
-}
-
 int QAccessibleTextSelectionEvent_Class_Size()
 {
   return sizeof(QAccessibleTextSelectionEvent);
-}
-
-// QAccessibleTextSelectionEvent(class QAccessibleInterface *, int, int)
-QAccessibleTextSelectionEvent* dector_ZN29QAccessibleTextSelectionEventC1EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end)
-{
-  // static_assert(sizeof(QAccessibleTextSelectionEvent) == 40, "tyszerr");
-  QAccessibleTextSelectionEvent* rthis = new QAccessibleTextSelectionEvent(iface, start, end);
-  return rthis;
-}
-
-// QAccessibleTextSelectionEvent(class QObject *, int, int)
-QAccessibleTextSelectionEvent* dector_ZN29QAccessibleTextSelectionEventC1EP7QObjectii(QObject * obj, int start, int end)
-{
-  // static_assert(sizeof(QAccessibleTextSelectionEvent) == 40, "tyszerr");
-  QAccessibleTextSelectionEvent* rthis = new QAccessibleTextSelectionEvent(obj, start, end);
-  return rthis;
-}
-
-  // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
-int demth_ZNK29QAccessibleTextSelectionEvent12selectionEndEv(void *that)
-{
-  QAccessibleTextSelectionEvent *cthat = (QAccessibleTextSelectionEvent *)that;
-  return cthat->selectionEnd();
-}
-
-  // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
-void demth_ZN29QAccessibleTextSelectionEventC1EP20QAccessibleInterfaceii(void *that, QAccessibleInterface * iface, int start, int end)
-{
-  QAccessibleTextSelectionEvent *cthat = (QAccessibleTextSelectionEvent *)that;
-  auto _o = new(that) QAccessibleTextSelectionEvent(iface, start, end);
-}
-
-  // proto:  int QAccessibleTextSelectionEvent::selectionStart();
-int demth_ZNK29QAccessibleTextSelectionEvent14selectionStartEv(void *that)
-{
-  QAccessibleTextSelectionEvent *cthat = (QAccessibleTextSelectionEvent *)that;
-  return cthat->selectionStart();
-}
-
-  // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
-void demth_ZN29QAccessibleTextSelectionEventC1EP7QObjectii(void *that, QObject * obj, int start, int end)
-{
-  QAccessibleTextSelectionEvent *cthat = (QAccessibleTextSelectionEvent *)that;
-  auto _o = new(that) QAccessibleTextSelectionEvent(obj, start, end);
-}
-
-  // proto:  void QAccessibleTextSelectionEvent::setSelection(int start, int end);
-void demth_ZN29QAccessibleTextSelectionEvent12setSelectionEii(void *that, int start, int end)
-{
-  QAccessibleTextSelectionEvent *cthat = (QAccessibleTextSelectionEvent *)that;
-   cthat->setSelection(start, end);
 }
 
 int QAccessibleTextCursorEvent_Class_Size()
@@ -525,98 +97,9 @@ int QAccessibleTextCursorEvent_Class_Size()
   return sizeof(QAccessibleTextCursorEvent);
 }
 
-// QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
-QAccessibleTextCursorEvent* dector_ZN26QAccessibleTextCursorEventC1EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos)
-{
-  // static_assert(sizeof(QAccessibleTextCursorEvent) == 32, "tyszerr");
-  QAccessibleTextCursorEvent* rthis = new QAccessibleTextCursorEvent(iface, cursorPos);
-  return rthis;
-}
-
-// QAccessibleTextCursorEvent(class QObject *, int)
-QAccessibleTextCursorEvent* dector_ZN26QAccessibleTextCursorEventC1EP7QObjecti(QObject * obj, int cursorPos)
-{
-  // static_assert(sizeof(QAccessibleTextCursorEvent) == 32, "tyszerr");
-  QAccessibleTextCursorEvent* rthis = new QAccessibleTextCursorEvent(obj, cursorPos);
-  return rthis;
-}
-
-  // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos);
-void demth_ZN26QAccessibleTextCursorEventC1EP20QAccessibleInterfacei(void *that, QAccessibleInterface * iface, int cursorPos)
-{
-  QAccessibleTextCursorEvent *cthat = (QAccessibleTextCursorEvent *)that;
-  auto _o = new(that) QAccessibleTextCursorEvent(iface, cursorPos);
-}
-
-  // proto:  void QAccessibleTextCursorEvent::setCursorPosition(int position);
-void demth_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *that, int position)
-{
-  QAccessibleTextCursorEvent *cthat = (QAccessibleTextCursorEvent *)that;
-   cthat->setCursorPosition(position);
-}
-
-  // proto:  int QAccessibleTextCursorEvent::cursorPosition();
-int demth_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *that)
-{
-  QAccessibleTextCursorEvent *cthat = (QAccessibleTextCursorEvent *)that;
-  return cthat->cursorPosition();
-}
-
-  // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
-void demth_ZN26QAccessibleTextCursorEventC1EP7QObjecti(void *that, QObject * obj, int cursorPos)
-{
-  QAccessibleTextCursorEvent *cthat = (QAccessibleTextCursorEvent *)that;
-  auto _o = new(that) QAccessibleTextCursorEvent(obj, cursorPos);
-}
-
 int QAccessibleValueChangeEvent_Class_Size()
 {
   return sizeof(QAccessibleValueChangeEvent);
-}
-
-// QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
-QAccessibleValueChangeEvent* dector_ZN27QAccessibleValueChangeEventC1EP7QObjectRK8QVariant(QObject * obj, const QVariant & val)
-{
-  // static_assert(sizeof(QAccessibleValueChangeEvent) == 48, "tyszerr");
-  QAccessibleValueChangeEvent* rthis = new QAccessibleValueChangeEvent(obj, val);
-  return rthis;
-}
-
-// QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
-QAccessibleValueChangeEvent* dector_ZN27QAccessibleValueChangeEventC1EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, const QVariant & val)
-{
-  // static_assert(sizeof(QAccessibleValueChangeEvent) == 48, "tyszerr");
-  QAccessibleValueChangeEvent* rthis = new QAccessibleValueChangeEvent(iface, val);
-  return rthis;
-}
-
-  // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QObject * obj, const QVariant & val);
-void demth_ZN27QAccessibleValueChangeEventC1EP7QObjectRK8QVariant(void *that, QObject * obj, const QVariant & val)
-{
-  QAccessibleValueChangeEvent *cthat = (QAccessibleValueChangeEvent *)that;
-  auto _o = new(that) QAccessibleValueChangeEvent(obj, val);
-}
-
-  // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val);
-void demth_ZN27QAccessibleValueChangeEventC1EP20QAccessibleInterfaceRK8QVariant(void *that, QAccessibleInterface * iface, const QVariant & val)
-{
-  QAccessibleValueChangeEvent *cthat = (QAccessibleValueChangeEvent *)that;
-  auto _o = new(that) QAccessibleValueChangeEvent(iface, val);
-}
-
-  // proto:  void QAccessibleValueChangeEvent::setValue(const QVariant & val);
-void demth_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *that, const QVariant & val)
-{
-  QAccessibleValueChangeEvent *cthat = (QAccessibleValueChangeEvent *)that;
-   cthat->setValue(val);
-}
-
-  // proto:  QVariant QAccessibleValueChangeEvent::value();
-QVariant* demth_ZNK27QAccessibleValueChangeEvent5valueEv(void *that)
-{
-  QAccessibleValueChangeEvent *cthat = (QAccessibleValueChangeEvent *)that;
-  auto recret = cthat->value();
-  return new QVariant(recret);
 }
 
 }; // <= extern "C" block end
@@ -624,6 +107,431 @@ QVariant* demth_ZNK27QAccessibleValueChangeEvent5valueEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qaccessible_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 933, column 10>
+//   // proto:  void QAccessibleTableModelChangeEvent::setFirstColumn(int col);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleTableModelChangeEvent*)0)->setFirstColumn(arg1);
+  };
+}
+// _ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi setFirstColumn(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 930, column 21>
+//   // proto:  QAccessibleTableModelChangeEvent::ModelChangeType QAccessibleTableModelChangeEvent::modelChangeType();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTableModelChangeEvent*)0)->modelChangeType();
+  };
+}
+// _ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv modelChangeType()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 932, column 10>
+//   // proto:  void QAccessibleTableModelChangeEvent::setFirstRow(int row);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleTableModelChangeEvent*)0)->setFirstRow(arg1);
+  };
+}
+// _ZN32QAccessibleTableModelChangeEvent11setFirstRowEi setFirstRow(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 936, column 9>
+//   // proto:  int QAccessibleTableModelChangeEvent::firstRow();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTableModelChangeEvent*)0)->firstRow();
+  };
+}
+// _ZNK32QAccessibleTableModelChangeEvent8firstRowEv firstRow()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 914, column 12>
+//   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
+if (false) {
+  auto f = [](QObject * arg1, QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
+    new QAccessibleTableModelChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 921, column 12>
+//   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
+    new QAccessibleTableModelChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 935, column 10>
+//   // proto:  void QAccessibleTableModelChangeEvent::setLastColumn(int col);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleTableModelChangeEvent*)0)->setLastColumn(arg1);
+  };
+}
+// _ZN32QAccessibleTableModelChangeEvent13setLastColumnEi setLastColumn(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 929, column 10>
+//   // proto:  void QAccessibleTableModelChangeEvent::setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType changeType);
+if (false) {
+  auto f = [](QAccessibleTableModelChangeEvent::ModelChangeType arg1) {
+    ((QAccessibleTableModelChangeEvent*)0)->setModelChangeType(arg1);
+  };
+}
+// _ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE setModelChangeType(enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 937, column 9>
+//   // proto:  int QAccessibleTableModelChangeEvent::firstColumn();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTableModelChangeEvent*)0)->firstColumn();
+  };
+}
+// _ZNK32QAccessibleTableModelChangeEvent11firstColumnEv firstColumn()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 939, column 9>
+//   // proto:  int QAccessibleTableModelChangeEvent::lastColumn();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTableModelChangeEvent*)0)->lastColumn();
+  };
+}
+// _ZNK32QAccessibleTableModelChangeEvent10lastColumnEv lastColumn()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 934, column 10>
+//   // proto:  void QAccessibleTableModelChangeEvent::setLastRow(int row);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleTableModelChangeEvent*)0)->setLastRow(arg1);
+  };
+}
+// _ZN32QAccessibleTableModelChangeEvent10setLastRowEi setLastRow(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 938, column 9>
+//   // proto:  int QAccessibleTableModelChangeEvent::lastRow();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTableModelChangeEvent*)0)->lastRow();
+  };
+}
+// _ZNK32QAccessibleTableModelChangeEvent7lastRowEv lastRow()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 663, column 12>
+//   // proto:  void QAccessibleEvent::QAccessibleEvent(QObject * obj, QAccessible::Event typ);
+if (false) {
+  auto f = [](QObject * arg1, QAccessible::Event arg2) {
+    new QAccessibleEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 698, column 14>
+//   // proto:  QObject * QAccessibleEvent::object();
+if (false) {
+  auto f = []() {
+    ((QAccessibleEvent*)0)->object();
+  };
+}
+// _ZNK16QAccessibleEvent6objectEv object()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 701, column 10>
+//   // proto:  void QAccessibleEvent::setChild(int chld);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleEvent*)0)->setChild(arg1);
+  };
+}
+// _ZN16QAccessibleEvent8setChildEi setChild(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 697, column 24>
+//   // proto:  QAccessible::Event QAccessibleEvent::type();
+if (false) {
+  auto f = []() {
+    ((QAccessibleEvent*)0)->type();
+  };
+}
+// _ZNK16QAccessibleEvent4typeEv type()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 702, column 9>
+//   // proto:  int QAccessibleEvent::child();
+if (false) {
+  auto f = []() {
+    ((QAccessibleEvent*)0)->child();
+  };
+}
+// _ZNK16QAccessibleEvent5childEv child()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 679, column 12>
+//   // proto:  void QAccessibleEvent::QAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, QAccessible::Event arg2) {
+    new QAccessibleEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 496, column 39>
+//   // proto:  QAccessibleImageInterface * QAccessibleInterface::imageInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->imageInterface();
+  };
+}
+// _ZN20QAccessibleInterface14imageInterfaceEv imageInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 499, column 39>
+//   // proto:  QAccessibleTableInterface * QAccessibleInterface::tableInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->tableInterface();
+  };
+}
+// _ZN20QAccessibleInterface14tableInterfaceEv tableInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 487, column 46>
+//   // proto:  QAccessibleEditableTextInterface * QAccessibleInterface::editableTextInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->editableTextInterface();
+  };
+}
+// _ZN20QAccessibleInterface21editableTextInterfaceEv editableTextInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 490, column 39>
+//   // proto:  QAccessibleValueInterface * QAccessibleInterface::valueInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->valueInterface();
+  };
+}
+// _ZN20QAccessibleInterface14valueInterfaceEv valueInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 507, column 19>
+//   // proto:  void * QAccessibleInterface::interface_cast(QAccessible::InterfaceType );
+if (false) {
+  auto f = [](QAccessible::InterfaceType arg1) {
+    ((QAccessibleInterface*)0)->interface_cast(arg1);
+  };
+}
+// _ZN20QAccessibleInterface14interface_castEN11QAccessible13InterfaceTypeE interface_cast(class QAccessible::InterfaceType)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 493, column 40>
+//   // proto:  QAccessibleActionInterface * QAccessibleInterface::actionInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->actionInterface();
+  };
+}
+// _ZN20QAccessibleInterface15actionInterfaceEv actionInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 502, column 43>
+//   // proto:  QAccessibleTableCellInterface * QAccessibleInterface::tableCellInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->tableCellInterface();
+  };
+}
+// _ZN20QAccessibleInterface18tableCellInterfaceEv tableCellInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 484, column 38>
+//   // proto:  QAccessibleTextInterface * QAccessibleInterface::textInterface();
+if (false) {
+  auto f = []() {
+    ((QAccessibleInterface*)0)->textInterface();
+  };
+}
+// _ZN20QAccessibleInterface13textInterfaceEv textInterface()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 866, column 13>
+//   // proto:  QString QAccessibleTextUpdateEvent::textInserted();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextUpdateEvent*)0)->textInserted();
+  };
+}
+// _ZNK26QAccessibleTextUpdateEvent12textInsertedEv textInserted()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 857, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3, const QString & arg4) {
+    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 863, column 13>
+//   // proto:  QString QAccessibleTextUpdateEvent::textRemoved();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextUpdateEvent*)0)->textRemoved();
+  };
+}
+// _ZNK26QAccessibleTextUpdateEvent11textRemovedEv textRemoved()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 869, column 9>
+//   // proto:  int QAccessibleTextUpdateEvent::changePosition();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextUpdateEvent*)0)->changePosition();
+  };
+}
+// _ZNK26QAccessibleTextUpdateEvent14changePositionEv changePosition()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 851, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
+if (false) {
+  auto f = [](QObject * arg1, int arg2, const QString & arg3, const QString & arg4) {
+    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 724, column 12>
+//   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, QAccessible::State arg2) {
+    new QAccessibleStateChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 730, column 24>
+//   // proto:  QAccessible::State QAccessibleStateChangeEvent::changedStates();
+if (false) {
+  auto f = []() {
+    ((QAccessibleStateChangeEvent*)0)->changedStates();
+  };
+}
+// _ZNK27QAccessibleStateChangeEvent13changedStatesEv changedStates()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 719, column 12>
+//   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QObject * obj, QAccessible::State state);
+if (false) {
+  auto f = [](QObject * arg1, QAccessible::State arg2) {
+    new QAccessibleStateChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 808, column 13>
+//   // proto:  QString QAccessibleTextInsertEvent::textInserted();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextInsertEvent*)0)->textInserted();
+  };
+}
+// _ZNK26QAccessibleTextInsertEvent12textInsertedEv textInserted()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 811, column 9>
+//   // proto:  int QAccessibleTextInsertEvent::changePosition();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextInsertEvent*)0)->changePosition();
+  };
+}
+// _ZNK26QAccessibleTextInsertEvent14changePositionEv changePosition()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 801, column 12>
+//   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3) {
+    new QAccessibleTextInsertEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 795, column 12>
+//   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QObject * obj, int position, const QString & text);
+if (false) {
+  auto f = [](QObject * arg1, int arg2, const QString & arg3) {
+    new QAccessibleTextInsertEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 823, column 12>
+//   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text);
+if (false) {
+  auto f = [](QObject * arg1, int arg2, const QString & arg3) {
+    new QAccessibleTextRemoveEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 836, column 13>
+//   // proto:  QString QAccessibleTextRemoveEvent::textRemoved();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextRemoveEvent*)0)->textRemoved();
+  };
+}
+// _ZNK26QAccessibleTextRemoveEvent11textRemovedEv textRemoved()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 829, column 12>
+//   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3) {
+    new QAccessibleTextRemoveEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 839, column 9>
+//   // proto:  int QAccessibleTextRemoveEvent::changePosition();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextRemoveEvent*)0)->changePosition();
+  };
+}
+// _ZNK26QAccessibleTextRemoveEvent14changePositionEv changePosition()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 785, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextSelectionEvent*)0)->selectionEnd();
+  };
+}
+// _ZNK29QAccessibleTextSelectionEvent12selectionEndEv selectionEnd()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 772, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, int arg3) {
+    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 784, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionStart();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextSelectionEvent*)0)->selectionStart();
+  };
+}
+// _ZNK29QAccessibleTextSelectionEvent14selectionStartEv selectionStart()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 766, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
+if (false) {
+  auto f = [](QObject * arg1, int arg2, int arg3) {
+    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 10>
+//   // proto:  void QAccessibleTextSelectionEvent::setSelection(int start, int end);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QAccessibleTextSelectionEvent*)0)->setSelection(arg1, arg2);
+  };
+}
+// _ZN29QAccessibleTextSelectionEvent12setSelectionEii setSelection(int, int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 748, column 12>
+//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, int arg2) {
+    new QAccessibleTextCursorEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 755, column 10>
+//   // proto:  void QAccessibleTextCursorEvent::setCursorPosition(int position);
+if (false) {
+  auto f = [](int arg1) {
+    ((QAccessibleTextCursorEvent*)0)->setCursorPosition(arg1);
+  };
+}
+// _ZN26QAccessibleTextCursorEvent17setCursorPositionEi setCursorPosition(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 756, column 9>
+//   // proto:  int QAccessibleTextCursorEvent::cursorPosition();
+if (false) {
+  auto f = []() {
+    ((QAccessibleTextCursorEvent*)0)->cursorPosition();
+  };
+}
+// _ZNK26QAccessibleTextCursorEvent14cursorPositionEv cursorPosition()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 742, column 12>
+//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
+if (false) {
+  auto f = [](QObject * arg1, int arg2) {
+    new QAccessibleTextCursorEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 12>
+//   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QObject * obj, const QVariant & val);
+if (false) {
+  auto f = [](QObject * arg1, const QVariant & arg2) {
+    new QAccessibleValueChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 888, column 12>
+//   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val);
+if (false) {
+  auto f = [](QAccessibleInterface * arg1, const QVariant & arg2) {
+    new QAccessibleValueChangeEvent(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 895, column 10>
+//   // proto:  void QAccessibleValueChangeEvent::setValue(const QVariant & val);
+if (false) {
+  auto f = [](const QVariant & arg1) {
+    ((QAccessibleValueChangeEvent*)0)->setValue(arg1);
+  };
+}
+// _ZN27QAccessibleValueChangeEvent8setValueERK8QVariant setValue(const class QVariant &)
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 896, column 14>
+//   // proto:  QVariant QAccessibleValueChangeEvent::value();
+if (false) {
+  auto f = []() {
+    ((QAccessibleValueChangeEvent*)0)->value();
+  };
+}
+// _ZNK27QAccessibleValueChangeEvent5valueEv value()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

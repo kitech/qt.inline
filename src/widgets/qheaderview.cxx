@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qheaderview.h
 // dst-file: /src/widgets/qheaderview.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qheaderview.h>
 
 extern "C" {
@@ -14,54 +15,46 @@ int QHeaderView_Class_Size()
   return sizeof(QHeaderView);
 }
 
-// ~QHeaderView()
-void dedtor_ZN11QHeaderViewD0Ev(QHeaderView* that)
-{
-  QHeaderView* rthis = (QHeaderView*)that;
-  delete rthis;
-}
-
-// QHeaderView(Qt::Orientation, class QWidget *)
-QHeaderView* dector_ZN11QHeaderViewC1EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent)
-{
-  // static_assert(sizeof(QHeaderView) == 32, "tyszerr");
-  QHeaderView* rthis = new QHeaderView(orientation, parent);
-  return rthis;
-}
-
-  // proto:  void QHeaderView::hideSection(int logicalIndex);
-void demth_ZN11QHeaderView11hideSectionEi(void *that, int logicalIndex)
-{
-  QHeaderView *cthat = (QHeaderView *)that;
-   cthat->hideSection(logicalIndex);
-}
-
-  // proto:  int QHeaderView::logicalIndexAt(const QPoint & pos);
-int demth_ZNK11QHeaderView14logicalIndexAtERK6QPoint(void *that, const QPoint & pos)
-{
-  QHeaderView *cthat = (QHeaderView *)that;
-  return cthat->logicalIndexAt(pos);
-}
-
-  // proto:  void QHeaderView::showSection(int logicalIndex);
-void demth_ZN11QHeaderView11showSectionEi(void *that, int logicalIndex)
-{
-  QHeaderView *cthat = (QHeaderView *)that;
-   cthat->showSection(logicalIndex);
-}
-
-  // proto:  int QHeaderView::logicalIndexAt(int x, int y);
-int demth_ZNK11QHeaderView14logicalIndexAtEii(void *that, int x, int y)
-{
-  QHeaderView *cthat = (QHeaderView *)that;
-  return cthat->logicalIndexAt(x, y);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qheaderview_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qheaderview.h', line 102, column 17>
+//   // proto:  void QHeaderView::hideSection(int logicalIndex);
+if (false) {
+  auto f = [](int arg1) {
+    ((QHeaderView*)0)->hideSection(arg1);
+  };
+}
+// _ZN11QHeaderView11hideSectionEi hideSection(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qheaderview.h', line 87, column 16>
+//   // proto:  int QHeaderView::logicalIndexAt(const QPoint & pos);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    ((QHeaderView*)0)->logicalIndexAt(arg1);
+  };
+}
+// _ZNK11QHeaderView14logicalIndexAtERK6QPoint logicalIndexAt(const class QPoint &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qheaderview.h', line 103, column 17>
+//   // proto:  void QHeaderView::showSection(int logicalIndex);
+if (false) {
+  auto f = [](int arg1) {
+    ((QHeaderView*)0)->showSection(arg1);
+  };
+}
+// _ZN11QHeaderView11showSectionEi showSection(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qheaderview.h', line 86, column 16>
+//   // proto:  int QHeaderView::logicalIndexAt(int x, int y);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QHeaderView*)0)->logicalIndexAt(arg1, arg2);
+  };
+}
+// _ZNK11QHeaderView14logicalIndexAtEii logicalIndexAt(int, int)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtoolbar.h
 // dst-file: /src/widgets/qtoolbar.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtoolbar.h>
 
 extern "C" {
@@ -14,48 +15,30 @@ int QToolBar_Class_Size()
   return sizeof(QToolBar);
 }
 
-// QToolBar(const class QString &, class QWidget *)
-QToolBar* dector_ZN8QToolBarC1ERK7QStringP7QWidget(const QString & title, QWidget * parent)
-{
-  // static_assert(sizeof(QToolBar) == 32, "tyszerr");
-  QToolBar* rthis = new QToolBar(title, parent);
-  return rthis;
-}
-
-// QToolBar(class QWidget *)
-QToolBar* dector_ZN8QToolBarC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QToolBar) == 32, "tyszerr");
-  QToolBar* rthis = new QToolBar(parent);
-  return rthis;
-}
-
-// ~QToolBar()
-void dedtor_ZN8QToolBarD0Ev(QToolBar* that)
-{
-  QToolBar* rthis = (QToolBar*)that;
-  delete rthis;
-}
-
-  // proto:  QAction * QToolBar::actionAt(int x, int y);
-QAction * demth_ZNK8QToolBar8actionAtEii(void *that, int x, int y)
-{
-  QToolBar *cthat = (QToolBar *)that;
-  return cthat->actionAt(x, y);
-}
-
-  // proto:  bool QToolBar::isAreaAllowed(Qt::ToolBarArea area);
-bool demth_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *that, Qt::ToolBarArea area)
-{
-  QToolBar *cthat = (QToolBar *)that;
-  return cthat->isAreaAllowed(area);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtoolbar_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 104, column 21>
+//   // proto:  QAction * QToolBar::actionAt(int x, int y);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QToolBar*)0)->actionAt(arg1, arg2);
+  };
+}
+// _ZNK8QToolBar8actionAtEii actionAt(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 81, column 17>
+//   // proto:  bool QToolBar::isAreaAllowed(Qt::ToolBarArea area);
+if (false) {
+  auto f = [](Qt::ToolBarArea arg1) {
+    ((QToolBar*)0)->isAreaAllowed(arg1);
+  };
+}
+// _ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE isAreaAllowed(Qt::ToolBarArea)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

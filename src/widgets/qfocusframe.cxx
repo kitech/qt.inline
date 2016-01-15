@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qfocusframe.h
 // dst-file: /src/widgets/qfocusframe.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfocusframe.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QFocusFrame_Class_Size()
   return sizeof(QFocusFrame);
 }
 
-// ~QFocusFrame()
-void dedtor_ZN11QFocusFrameD0Ev(QFocusFrame* that)
-{
-  QFocusFrame* rthis = (QFocusFrame*)that;
-  delete rthis;
-}
-
-// QFocusFrame(class QWidget *)
-QFocusFrame* dector_ZN11QFocusFrameC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QFocusFrame) == 32, "tyszerr");
-  QFocusFrame* rthis = new QFocusFrame(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfocusframe_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

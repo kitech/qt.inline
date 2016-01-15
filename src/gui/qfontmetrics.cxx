@@ -1,10 +1,12 @@
+#include <qrect.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfontmetrics.h>
 
 extern "C" {
@@ -14,101 +16,9 @@ int QFontMetrics_Class_Size()
   return sizeof(QFontMetrics);
 }
 
-// ~QFontMetrics()
-void dedtor_ZN12QFontMetricsD0Ev(QFontMetrics* that)
-{
-  QFontMetrics* rthis = (QFontMetrics*)that;
-  delete rthis;
-}
-
-// QFontMetrics(const class QFontMetrics &)
-QFontMetrics* dector_ZN12QFontMetricsC1ERKS_(const QFontMetrics & arg1)
-{
-  // static_assert(sizeof(QFontMetrics) == 32, "tyszerr");
-  QFontMetrics* rthis = new QFontMetrics(arg1);
-  return rthis;
-}
-
-// QFontMetrics(const class QFont &, class QPaintDevice *)
-QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFontP12QPaintDevice(const QFont & arg1, QPaintDevice * pd)
-{
-  // static_assert(sizeof(QFontMetrics) == 32, "tyszerr");
-  QFontMetrics* rthis = new QFontMetrics(arg1, pd);
-  return rthis;
-}
-
-// QFontMetrics(const class QFont &)
-QFontMetrics* dector_ZN12QFontMetricsC1ERK5QFont(const QFont & arg1)
-{
-  // static_assert(sizeof(QFontMetrics) == 32, "tyszerr");
-  QFontMetrics* rthis = new QFontMetrics(arg1);
-  return rthis;
-}
-
-  // proto:  void QFontMetrics::swap(QFontMetrics & other);
-void demth_ZN12QFontMetrics4swapERS_(void *that, QFontMetrics & other)
-{
-  QFontMetrics *cthat = (QFontMetrics *)that;
-   cthat->swap(other);
-}
-
-  // proto:  QRect QFontMetrics::boundingRect(int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray);
-QRect* demth_ZNK12QFontMetrics12boundingRectEiiiiiRK7QStringiPi(void *that, int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray)
-{
-  QFontMetrics *cthat = (QFontMetrics *)that;
-  auto recret = cthat->boundingRect(x, y, w, h, flags, text, tabstops, tabarray);
-  return new QRect(recret);
-}
-
 int QFontMetricsF_Class_Size()
 {
   return sizeof(QFontMetricsF);
-}
-
-// QFontMetricsF(const class QFontMetricsF &)
-QFontMetricsF* dector_ZN13QFontMetricsFC1ERKS_(const QFontMetricsF & arg1)
-{
-  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
-  QFontMetricsF* rthis = new QFontMetricsF(arg1);
-  return rthis;
-}
-
-// ~QFontMetricsF()
-void dedtor_ZN13QFontMetricsFD0Ev(QFontMetricsF* that)
-{
-  QFontMetricsF* rthis = (QFontMetricsF*)that;
-  delete rthis;
-}
-
-// QFontMetricsF(const class QFontMetrics &)
-QFontMetricsF* dector_ZN13QFontMetricsFC1ERK12QFontMetrics(const QFontMetrics & arg1)
-{
-  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
-  QFontMetricsF* rthis = new QFontMetricsF(arg1);
-  return rthis;
-}
-
-// QFontMetricsF(const class QFont &, class QPaintDevice *)
-QFontMetricsF* dector_ZN13QFontMetricsFC1ERK5QFontP12QPaintDevice(const QFont & arg1, QPaintDevice * pd)
-{
-  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
-  QFontMetricsF* rthis = new QFontMetricsF(arg1, pd);
-  return rthis;
-}
-
-// QFontMetricsF(const class QFont &)
-QFontMetricsF* dector_ZN13QFontMetricsFC1ERK5QFont(const QFont & arg1)
-{
-  // static_assert(sizeof(QFontMetricsF) == 32, "tyszerr");
-  QFontMetricsF* rthis = new QFontMetricsF(arg1);
-  return rthis;
-}
-
-  // proto:  void QFontMetricsF::swap(QFontMetricsF & other);
-void demth_ZN13QFontMetricsF4swapERS_(void *that, QFontMetricsF & other)
-{
-  QFontMetricsF *cthat = (QFontMetricsF *)that;
-   cthat->swap(other);
 }
 
 }; // <= extern "C" block end
@@ -116,6 +26,33 @@ void demth_ZN13QFontMetricsF4swapERS_(void *that, QFontMetricsF & other)
 // <= header block end
 
 // main block begin =>
+void __keep_qfontmetrics_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qfontmetrics.h', line 65, column 10>
+//   // proto:  void QFontMetrics::swap(QFontMetrics & other);
+if (false) {
+  auto f = [](QFontMetrics & arg1) {
+    ((QFontMetrics*)0)->swap(arg1);
+  };
+}
+// _ZN12QFontMetrics4swapERS_ swap(class QFontMetrics &)
+// <SourceLocation file '/usr/include/qt/QtGui/qfontmetrics.h', line 97, column 18>
+//   // proto:  QRect QFontMetrics::boundingRect(int x, int y, int w, int h, int flags, const QString & text, int tabstops, int * tabarray);
+if (false) {
+  auto f = [](int arg1, int arg2, int arg3, int arg4, int arg5, const QString & arg6, int arg7, int * arg8) {
+    ((QFontMetrics*)0)->boundingRect(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+  };
+}
+// _ZNK12QFontMetrics12boundingRectEiiiiiRK7QStringiPi boundingRect(int, int, int, int, int, const class QString &, int, int *)
+// <SourceLocation file '/usr/include/qt/QtGui/qfontmetrics.h', line 139, column 10>
+//   // proto:  void QFontMetricsF::swap(QFontMetricsF & other);
+if (false) {
+  auto f = [](QFontMetricsF & arg1) {
+    ((QFontMetricsF*)0)->swap(arg1);
+  };
+}
+// _ZN13QFontMetricsF4swapERS_ swap(class QFontMetricsF &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

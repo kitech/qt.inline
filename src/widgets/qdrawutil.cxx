@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdrawutil.h
 // dst-file: /src/widgets/qdrawutil.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdrawutil.h>
 
 extern "C" {
@@ -14,41 +15,28 @@ int QTileRules_Class_Size()
   return sizeof(QTileRules);
 }
 
-// QTileRules(Qt::TileRule, Qt::TileRule)
-QTileRules* dector_ZN10QTileRulesC1EN2Qt8TileRuleES1_(Qt::TileRule horizontalRule, Qt::TileRule verticalRule)
-{
-  // static_assert(sizeof(QTileRules) == 32, "tyszerr");
-  QTileRules* rthis = new QTileRules(horizontalRule, verticalRule);
-  return rthis;
-}
-
-// QTileRules(Qt::TileRule)
-QTileRules* dector_ZN10QTileRulesC1EN2Qt8TileRuleE(Qt::TileRule rule)
-{
-  // static_assert(sizeof(QTileRules) == 32, "tyszerr");
-  QTileRules* rthis = new QTileRules(rule);
-  return rthis;
-}
-
-  // proto:  void QTileRules::QTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule);
-void demth_ZN10QTileRulesC1EN2Qt8TileRuleES1_(void *that, Qt::TileRule horizontalRule, Qt::TileRule verticalRule)
-{
-  QTileRules *cthat = (QTileRules *)that;
-  auto _o = new(that) QTileRules(horizontalRule, verticalRule);
-}
-
-  // proto:  void QTileRules::QTileRules(Qt::TileRule rule);
-void demth_ZN10QTileRulesC1EN2Qt8TileRuleE(void *that, Qt::TileRule rule)
-{
-  QTileRules *cthat = (QTileRules *)that;
-  auto _o = new(that) QTileRules(rule);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdrawutil_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 107, column 12>
+//   // proto:  void QTileRules::QTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule);
+if (false) {
+  auto f = [](Qt::TileRule arg1, Qt::TileRule arg2) {
+    new QTileRules(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 109, column 12>
+//   // proto:  void QTileRules::QTileRules(Qt::TileRule rule);
+if (false) {
+  auto f = [](Qt::TileRule arg1) {
+    new QTileRules(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

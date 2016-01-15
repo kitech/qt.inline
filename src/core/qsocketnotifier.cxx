@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qsocketnotifier.h
 // dst-file: /src/core/qsocketnotifier.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qsocketnotifier.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QSocketNotifier_Class_Size()
   return sizeof(QSocketNotifier);
 }
 
-// QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
-QSocketNotifier* dector_ZN15QSocketNotifierC1EiNS_4TypeEP7QObject(qptrdiff socket, QSocketNotifier::Type arg2, QObject * parent)
-{
-  // static_assert(sizeof(QSocketNotifier) == 32, "tyszerr");
-  QSocketNotifier* rthis = new QSocketNotifier(socket, arg2, parent);
-  return rthis;
-}
-
-// ~QSocketNotifier()
-void dedtor_ZN15QSocketNotifierD0Ev(QSocketNotifier* that)
-{
-  QSocketNotifier* rthis = (QSocketNotifier*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qsocketnotifier_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

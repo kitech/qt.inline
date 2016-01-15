@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopengldebug.h>
 
 extern "C" {
@@ -14,54 +15,9 @@ int QOpenGLDebugMessage_Class_Size()
   return sizeof(QOpenGLDebugMessage);
 }
 
-// QOpenGLDebugMessage()
-QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1Ev()
-{
-  // static_assert(sizeof(QOpenGLDebugMessage) == 32, "tyszerr");
-  QOpenGLDebugMessage* rthis = new QOpenGLDebugMessage();
-  return rthis;
-}
-
-// ~QOpenGLDebugMessage()
-void dedtor_ZN19QOpenGLDebugMessageD0Ev(QOpenGLDebugMessage* that)
-{
-  QOpenGLDebugMessage* rthis = (QOpenGLDebugMessage*)that;
-  delete rthis;
-}
-
-// QOpenGLDebugMessage(const class QOpenGLDebugMessage &)
-QOpenGLDebugMessage* dector_ZN19QOpenGLDebugMessageC1ERKS_(const QOpenGLDebugMessage & debugMessage)
-{
-  // static_assert(sizeof(QOpenGLDebugMessage) == 32, "tyszerr");
-  QOpenGLDebugMessage* rthis = new QOpenGLDebugMessage(debugMessage);
-  return rthis;
-}
-
-  // proto:  void QOpenGLDebugMessage::swap(QOpenGLDebugMessage & debugMessage);
-void demth_ZN19QOpenGLDebugMessage4swapERS_(void *that, QOpenGLDebugMessage & debugMessage)
-{
-  QOpenGLDebugMessage *cthat = (QOpenGLDebugMessage *)that;
-   cthat->swap(debugMessage);
-}
-
 int QOpenGLDebugLogger_Class_Size()
 {
   return sizeof(QOpenGLDebugLogger);
-}
-
-// ~QOpenGLDebugLogger()
-void dedtor_ZN18QOpenGLDebugLoggerD0Ev(QOpenGLDebugLogger* that)
-{
-  QOpenGLDebugLogger* rthis = (QOpenGLDebugLogger*)that;
-  delete rthis;
-}
-
-// QOpenGLDebugLogger(class QObject *)
-QOpenGLDebugLogger* dector_ZN18QOpenGLDebugLoggerC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QOpenGLDebugLogger) == 32, "tyszerr");
-  QOpenGLDebugLogger* rthis = new QOpenGLDebugLogger(parent);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -69,6 +25,17 @@ QOpenGLDebugLogger* dector_ZN18QOpenGLDebugLoggerC1EP7QObject(QObject * parent)
 // <= header block end
 
 // main block begin =>
+void __keep_qopengldebug_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qopengldebug.h', line 107, column 17>
+//   // proto:  void QOpenGLDebugMessage::swap(QOpenGLDebugMessage & debugMessage);
+if (false) {
+  auto f = [](QOpenGLDebugMessage & arg1) {
+    ((QOpenGLDebugMessage*)0)->swap(arg1);
+  };
+}
+// _ZN19QOpenGLDebugMessage4swapERS_ swap(class QOpenGLDebugMessage &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

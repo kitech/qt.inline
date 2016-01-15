@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglpixeltransferoptions.h
 // dst-file: /src/gui/qopenglpixeltransferoptions.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglpixeltransferoptions.h>
 
 extern "C" {
@@ -14,41 +15,22 @@ int QOpenGLPixelTransferOptions_Class_Size()
   return sizeof(QOpenGLPixelTransferOptions);
 }
 
-// QOpenGLPixelTransferOptions()
-QOpenGLPixelTransferOptions* dector_ZN27QOpenGLPixelTransferOptionsC1Ev()
-{
-  // static_assert(sizeof(QOpenGLPixelTransferOptions) == 32, "tyszerr");
-  QOpenGLPixelTransferOptions* rthis = new QOpenGLPixelTransferOptions();
-  return rthis;
-}
-
-// ~QOpenGLPixelTransferOptions()
-void dedtor_ZN27QOpenGLPixelTransferOptionsD0Ev(QOpenGLPixelTransferOptions* that)
-{
-  QOpenGLPixelTransferOptions* rthis = (QOpenGLPixelTransferOptions*)that;
-  delete rthis;
-}
-
-// QOpenGLPixelTransferOptions(const class QOpenGLPixelTransferOptions &)
-QOpenGLPixelTransferOptions* dector_ZN27QOpenGLPixelTransferOptionsC1ERKS_(const QOpenGLPixelTransferOptions & arg1)
-{
-  // static_assert(sizeof(QOpenGLPixelTransferOptions) == 32, "tyszerr");
-  QOpenGLPixelTransferOptions* rthis = new QOpenGLPixelTransferOptions(arg1);
-  return rthis;
-}
-
-  // proto:  void QOpenGLPixelTransferOptions::swap(QOpenGLPixelTransferOptions & other);
-void demth_ZN27QOpenGLPixelTransferOptions4swapERS_(void *that, QOpenGLPixelTransferOptions & other)
-{
-  QOpenGLPixelTransferOptions *cthat = (QOpenGLPixelTransferOptions *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglpixeltransferoptions_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglpixeltransferoptions.h', line 60, column 10>
+//   // proto:  void QOpenGLPixelTransferOptions::swap(QOpenGLPixelTransferOptions & other);
+if (false) {
+  auto f = [](QOpenGLPixelTransferOptions & arg1) {
+    ((QOpenGLPixelTransferOptions*)0)->swap(arg1);
+  };
+}
+// _ZN27QOpenGLPixelTransferOptions4swapERS_ swap(class QOpenGLPixelTransferOptions &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglpaintdevice.h
 // dst-file: /src/gui/qopenglpaintdevice.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglpaintdevice.h>
 
 extern "C" {
@@ -14,49 +15,22 @@ int QOpenGLPaintDevice_Class_Size()
   return sizeof(QOpenGLPaintDevice);
 }
 
-// ~QOpenGLPaintDevice()
-void dedtor_ZN18QOpenGLPaintDeviceD0Ev(QOpenGLPaintDevice* that)
-{
-  QOpenGLPaintDevice* rthis = (QOpenGLPaintDevice*)that;
-  delete rthis;
-}
-
-// QOpenGLPaintDevice(int, int)
-QOpenGLPaintDevice* dector_ZN18QOpenGLPaintDeviceC1Eii(int width, int height)
-{
-  // static_assert(sizeof(QOpenGLPaintDevice) == 32, "tyszerr");
-  QOpenGLPaintDevice* rthis = new QOpenGLPaintDevice(width, height);
-  return rthis;
-}
-
-// QOpenGLPaintDevice()
-QOpenGLPaintDevice* dector_ZN18QOpenGLPaintDeviceC1Ev()
-{
-  // static_assert(sizeof(QOpenGLPaintDevice) == 32, "tyszerr");
-  QOpenGLPaintDevice* rthis = new QOpenGLPaintDevice();
-  return rthis;
-}
-
-// QOpenGLPaintDevice(const class QSize &)
-QOpenGLPaintDevice* dector_ZN18QOpenGLPaintDeviceC1ERK5QSize(const QSize & size)
-{
-  // static_assert(sizeof(QOpenGLPaintDevice) == 32, "tyszerr");
-  QOpenGLPaintDevice* rthis = new QOpenGLPaintDevice(size);
-  return rthis;
-}
-
-  // proto:  int QOpenGLPaintDevice::devType();
-int demth_ZNK18QOpenGLPaintDevice7devTypeEv(void *that)
-{
-  QOpenGLPaintDevice *cthat = (QOpenGLPaintDevice *)that;
-  return cthat->devType();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglpaintdevice_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglpaintdevice.h', line 58, column 9>
+//   // proto:  int QOpenGLPaintDevice::devType();
+if (false) {
+  auto f = []() {
+    ((QOpenGLPaintDevice*)0)->devType();
+  };
+}
+// _ZNK18QOpenGLPaintDevice7devTypeEv devType()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

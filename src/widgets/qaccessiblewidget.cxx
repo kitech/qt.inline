@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qaccessiblewidget.h
 // dst-file: /src/widgets/qaccessiblewidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qaccessiblewidget.h>
 
 extern "C" {
@@ -14,19 +15,14 @@ int QAccessibleWidget_Class_Size()
   return sizeof(QAccessibleWidget);
 }
 
-// QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)
-QAccessibleWidget* dector_ZN17QAccessibleWidgetC1EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * o, QAccessible::Role r, const QString & name)
-{
-  // static_assert(sizeof(QAccessibleWidget) == 32, "tyszerr");
-  QAccessibleWidget* rthis = new QAccessibleWidget(o, r, name);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qaccessiblewidget_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

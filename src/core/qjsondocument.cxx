@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qjsondocument.h
 // dst-file: /src/core/qjsondocument.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qjsondocument.h>
 
 extern "C" {
@@ -12,45 +13,6 @@ extern "C" {
 int QJsonDocument_Class_Size()
 {
   return sizeof(QJsonDocument);
-}
-
-// QJsonDocument(const class QJsonDocument &)
-QJsonDocument* dector_ZN13QJsonDocumentC1ERKS_(const QJsonDocument & other)
-{
-  // static_assert(sizeof(QJsonDocument) == 32, "tyszerr");
-  QJsonDocument* rthis = new QJsonDocument(other);
-  return rthis;
-}
-
-// QJsonDocument()
-QJsonDocument* dector_ZN13QJsonDocumentC1Ev()
-{
-  // static_assert(sizeof(QJsonDocument) == 32, "tyszerr");
-  QJsonDocument* rthis = new QJsonDocument();
-  return rthis;
-}
-
-// QJsonDocument(const class QJsonObject &)
-QJsonDocument* dector_ZN13QJsonDocumentC1ERK11QJsonObject(const QJsonObject & object)
-{
-  // static_assert(sizeof(QJsonDocument) == 32, "tyszerr");
-  QJsonDocument* rthis = new QJsonDocument(object);
-  return rthis;
-}
-
-// QJsonDocument(const class QJsonArray &)
-QJsonDocument* dector_ZN13QJsonDocumentC1ERK10QJsonArray(const QJsonArray & array)
-{
-  // static_assert(sizeof(QJsonDocument) == 32, "tyszerr");
-  QJsonDocument* rthis = new QJsonDocument(array);
-  return rthis;
-}
-
-// ~QJsonDocument()
-void dedtor_ZN13QJsonDocumentD0Ev(QJsonDocument* that)
-{
-  QJsonDocument* rthis = (QJsonDocument*)that;
-  delete rthis;
 }
 
 int QJsonParseError_Class_Size()
@@ -63,6 +25,9 @@ int QJsonParseError_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qjsondocument_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

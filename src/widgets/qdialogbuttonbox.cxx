@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdialogbuttonbox.h
 // dst-file: /src/widgets/qdialogbuttonbox.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdialogbuttonbox.h>
 
 extern "C" {
@@ -14,50 +15,14 @@ int QDialogButtonBox_Class_Size()
   return sizeof(QDialogButtonBox);
 }
 
-// QDialogButtonBox(Qt::Orientation, class QWidget *)
-QDialogButtonBox* dector_ZN16QDialogButtonBoxC1EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent)
-{
-  // static_assert(sizeof(QDialogButtonBox) == 32, "tyszerr");
-  QDialogButtonBox* rthis = new QDialogButtonBox(orientation, parent);
-  return rthis;
-}
-
-// QDialogButtonBox(StandardButtons, Qt::Orientation, class QWidget *)
-QDialogButtonBox* dector_ZN16QDialogButtonBoxC1E6QFlagsINS_14StandardButtonEEN2Qt11OrientationEP7QWidget(QDialogButtonBox::StandardButton buttons, Qt::Orientation orientation, QWidget * parent)
-{
-  // static_assert(sizeof(QDialogButtonBox) == 32, "tyszerr");
-  QDialogButtonBox* rthis = new QDialogButtonBox(buttons, orientation, parent);
-  return rthis;
-}
-
-// ~QDialogButtonBox()
-void dedtor_ZN16QDialogButtonBoxD0Ev(QDialogButtonBox* that)
-{
-  QDialogButtonBox* rthis = (QDialogButtonBox*)that;
-  delete rthis;
-}
-
-// QDialogButtonBox(class QWidget *)
-QDialogButtonBox* dector_ZN16QDialogButtonBoxC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QDialogButtonBox) == 32, "tyszerr");
-  QDialogButtonBox* rthis = new QDialogButtonBox(parent);
-  return rthis;
-}
-
-// QDialogButtonBox(StandardButtons, class QWidget *)
-QDialogButtonBox* dector_ZN16QDialogButtonBoxC1E6QFlagsINS_14StandardButtonEEP7QWidget(QDialogButtonBox::StandardButton buttons, QWidget * parent)
-{
-  // static_assert(sizeof(QDialogButtonBox) == 32, "tyszerr");
-  QDialogButtonBox* rthis = new QDialogButtonBox(buttons, parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdialogbuttonbox_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

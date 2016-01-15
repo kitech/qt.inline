@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qmenu.h
 // dst-file: /src/widgets/qmenu.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmenu.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QMenu_Class_Size()
   return sizeof(QMenu);
 }
 
-// QMenu(class QWidget *)
-QMenu* dector_ZN5QMenuC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QMenu) == 32, "tyszerr");
-  QMenu* rthis = new QMenu(parent);
-  return rthis;
-}
-
-// QMenu(const class QString &, class QWidget *)
-QMenu* dector_ZN5QMenuC1ERK7QStringP7QWidget(const QString & title, QWidget * parent)
-{
-  // static_assert(sizeof(QMenu) == 32, "tyszerr");
-  QMenu* rthis = new QMenu(title, parent);
-  return rthis;
-}
-
-// ~QMenu()
-void dedtor_ZN5QMenuD0Ev(QMenu* that)
-{
-  QMenu* rthis = (QMenu*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmenu_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

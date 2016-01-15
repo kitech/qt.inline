@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qaccessibleobject.h
 // dst-file: /src/gui/qaccessibleobject.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qaccessibleobject.h>
 
 extern "C" {
@@ -12,14 +13,6 @@ extern "C" {
 int QAccessibleApplication_Class_Size()
 {
   return sizeof(QAccessibleApplication);
-}
-
-// QAccessibleApplication()
-QAccessibleApplication* dector_ZN22QAccessibleApplicationC1Ev()
-{
-  // static_assert(sizeof(QAccessibleApplication) == 32, "tyszerr");
-  QAccessibleApplication* rthis = new QAccessibleApplication();
-  return rthis;
 }
 
 int QAccessibleObject_Class_Size()
@@ -32,6 +25,9 @@ int QAccessibleObject_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qaccessibleobject_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

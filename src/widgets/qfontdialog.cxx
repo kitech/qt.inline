@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qfontdialog.h
 // dst-file: /src/widgets/qfontdialog.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfontdialog.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QFontDialog_Class_Size()
   return sizeof(QFontDialog);
 }
 
-// QFontDialog(class QWidget *)
-QFontDialog* dector_ZN11QFontDialogC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QFontDialog) == 32, "tyszerr");
-  QFontDialog* rthis = new QFontDialog(parent);
-  return rthis;
-}
-
-// QFontDialog(const class QFont &, class QWidget *)
-QFontDialog* dector_ZN11QFontDialogC1ERK5QFontP7QWidget(const QFont & initial, QWidget * parent)
-{
-  // static_assert(sizeof(QFontDialog) == 32, "tyszerr");
-  QFontDialog* rthis = new QFontDialog(initial, parent);
-  return rthis;
-}
-
-// ~QFontDialog()
-void dedtor_ZN11QFontDialogD0Ev(QFontDialog* that)
-{
-  QFontDialog* rthis = (QFontDialog*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfontdialog_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

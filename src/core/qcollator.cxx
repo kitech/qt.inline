@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qcollator.h
 // dst-file: /src/core/qcollator.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcollator.h>
 
 extern "C" {
@@ -14,69 +15,9 @@ int QCollator_Class_Size()
   return sizeof(QCollator);
 }
 
-// QCollator(const class QLocale &)
-QCollator* dector_ZN9QCollatorC1ERK7QLocale(const QLocale & locale)
-{
-  // static_assert(sizeof(QCollator) == 32, "tyszerr");
-  QCollator* rthis = new QCollator(locale);
-  return rthis;
-}
-
-// ~QCollator()
-void dedtor_ZN9QCollatorD0Ev(QCollator* that)
-{
-  QCollator* rthis = (QCollator*)that;
-  delete rthis;
-}
-
-// QCollator(const class QCollator &)
-QCollator* dector_ZN9QCollatorC1ERKS_(const QCollator & arg1)
-{
-  // static_assert(sizeof(QCollator) == 32, "tyszerr");
-  QCollator* rthis = new QCollator(arg1);
-  return rthis;
-}
-
-// QCollator(class QCollator &&)
-QCollator* dector_ZN9QCollatorC1EOS_(QCollator && other)
-{
-  // static_assert(sizeof(QCollator) == 32, "tyszerr");
-  QCollator* rthis = new QCollator(other);
-  return rthis;
-}
-
-  // proto:  void QCollator::swap(QCollator & other);
-void demth_ZN9QCollator4swapERS_(void *that, QCollator & other)
-{
-  QCollator *cthat = (QCollator *)that;
-   cthat->swap(other);
-}
-
 int QCollatorSortKey_Class_Size()
 {
   return sizeof(QCollatorSortKey);
-}
-
-// ~QCollatorSortKey()
-void dedtor_ZN16QCollatorSortKeyD0Ev(QCollatorSortKey* that)
-{
-  QCollatorSortKey* rthis = (QCollatorSortKey*)that;
-  delete rthis;
-}
-
-// QCollatorSortKey(const class QCollatorSortKey &)
-QCollatorSortKey* dector_ZN16QCollatorSortKeyC1ERKS_(const QCollatorSortKey & other)
-{
-  // static_assert(sizeof(QCollatorSortKey) == 32, "tyszerr");
-  QCollatorSortKey* rthis = new QCollatorSortKey(other);
-  return rthis;
-}
-
-  // proto:  void QCollatorSortKey::swap(QCollatorSortKey & other);
-void demth_ZN16QCollatorSortKey4swapERS_(void *that, QCollatorSortKey & other)
-{
-  QCollatorSortKey *cthat = (QCollatorSortKey *)that;
-   cthat->swap(other);
 }
 
 }; // <= extern "C" block end
@@ -84,6 +25,32 @@ void demth_ZN16QCollatorSortKey4swapERS_(void *that, QCollatorSortKey & other)
 // <= header block end
 
 // main block begin =>
+void __keep_qcollator_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 91, column 10>
+//   // proto:  void QCollator::swap(QCollator & other);
+if (false) {
+  auto f = [](QCollator & arg1) {
+    ((QCollator*)0)->swap(arg1);
+  };
+}
+// _ZN9QCollator4swapERS_ swap(class QCollator &)
+// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 85, column 5>
+//   // proto:  void QCollator::QCollator(QCollator && other);
+if (false) {
+  auto f = [](QCollator && arg1) {
+    new QCollator(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 58, column 10>
+//   // proto:  void QCollatorSortKey::swap(QCollatorSortKey & other);
+if (false) {
+  auto f = [](QCollatorSortKey & arg1) {
+    ((QCollatorSortKey*)0)->swap(arg1);
+  };
+}
+// _ZN16QCollatorSortKey4swapERS_ swap(class QCollatorSortKey &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

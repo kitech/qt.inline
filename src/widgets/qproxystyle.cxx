@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qproxystyle.h
 // dst-file: /src/widgets/qproxystyle.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qproxystyle.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QProxyStyle_Class_Size()
   return sizeof(QProxyStyle);
 }
 
-// QProxyStyle(const class QString &)
-QProxyStyle* dector_ZN11QProxyStyleC1ERK7QString(const QString & key)
-{
-  // static_assert(sizeof(QProxyStyle) == 32, "tyszerr");
-  QProxyStyle* rthis = new QProxyStyle(key);
-  return rthis;
-}
-
-// ~QProxyStyle()
-void dedtor_ZN11QProxyStyleD0Ev(QProxyStyle* that)
-{
-  QProxyStyle* rthis = (QProxyStyle*)that;
-  delete rthis;
-}
-
-// QProxyStyle(class QStyle *)
-QProxyStyle* dector_ZN11QProxyStyleC1EP6QStyle(QStyle * style)
-{
-  // static_assert(sizeof(QProxyStyle) == 32, "tyszerr");
-  QProxyStyle* rthis = new QProxyStyle(style);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qproxystyle_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

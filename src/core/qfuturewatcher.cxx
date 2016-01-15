@@ -1,10 +1,12 @@
+#include <qfuture.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qfuturewatcher.h
 // dst-file: /src/core/qfuturewatcher.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfuturewatcher.h>
 
 extern "C" {
@@ -14,11 +16,42 @@ int QFutureWatcherBase_Class_Size()
   return sizeof(QFutureWatcherBase);
 }
 
+int QFutureWatcher_void__Class_Size()
+{
+  return sizeof(QFutureWatcher<void>);
+}
+
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfuturewatcher_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 182, column 14>
+//   // proto:  void QFutureWatcher<void>::QFutureWatcher(QObject * _parent);
+if (false) {
+  auto f = [](QObject * arg1) {
+    new QFutureWatcher<void>(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 189, column 19>
+//   // proto:  QFuture<void> QFutureWatcher<void>::future();
+if (false) {
+  auto f = []() {
+    ((QFutureWatcher<void>*)0)->future();
+  };
+}
+// _ZNK14QFutureWatcherIvE6futureEv future()
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 188, column 10>
+//   // proto:  void QFutureWatcher<void>::setFuture(const QFuture<void> & future);
+if (false) {
+  auto f = [](const QFuture<void> & arg1) {
+    ((QFutureWatcher<void>*)0)->setFuture(arg1);
+  };
+}
+// _ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE setFuture(const QFuture<void> &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>
@@ -87,7 +120,6 @@ public:
   void (*slot_func__ZN18QFutureWatcherBase14resultsReadyAtEii)(void* rsfptr, int arg0, int arg1) = NULL;
 public: void* rsfptr = NULL;
 };
-#include "src/core/qfuturewatcher.moc"
 
 extern "C" {
   QFutureWatcherBase_SlotProxy* QFutureWatcherBase_SlotProxy_new()
@@ -295,6 +327,24 @@ void QFutureWatcherBase_SlotProxy_disconnect__ZN18QFutureWatcherBase14resultsRea
   that->disconnect();
   delete that;
 }
+
+// QFutureWatcher_SlotProxy here
+class QFutureWatcher_SlotProxy : public QObject
+{
+  Q_OBJECT;
+public:
+   QFutureWatcher_SlotProxy():QObject(){}
+
+public: void* rsfptr = NULL;
+};
+#include "src/core/qfuturewatcher.moc"
+
+extern "C" {
+  QFutureWatcher_SlotProxy* QFutureWatcher_SlotProxy_new()
+  {
+    return new QFutureWatcher_SlotProxy();
+  }
+};
 
 // <= body block end
 

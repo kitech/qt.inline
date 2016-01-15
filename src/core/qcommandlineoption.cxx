@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qcommandlineoption.h
 // dst-file: /src/core/qcommandlineoption.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcommandlineoption.h>
 
 extern "C" {
@@ -14,65 +15,22 @@ int QCommandLineOption_Class_Size()
   return sizeof(QCommandLineOption);
 }
 
-// QCommandLineOption(const class QCommandLineOption &)
-QCommandLineOption* dector_ZN18QCommandLineOptionC1ERKS_(const QCommandLineOption & other)
-{
-  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
-  QCommandLineOption* rthis = new QCommandLineOption(other);
-  return rthis;
-}
-
-// QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
-QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK7QStringS2_S2_S2_(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue)
-{
-  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
-  QCommandLineOption* rthis = new QCommandLineOption(name, description, valueName, defaultValue);
-  return rthis;
-}
-
-// QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
-QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK11QStringListRK7QStringS5_S5_(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue)
-{
-  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
-  QCommandLineOption* rthis = new QCommandLineOption(names, description, valueName, defaultValue);
-  return rthis;
-}
-
-// ~QCommandLineOption()
-void dedtor_ZN18QCommandLineOptionD0Ev(QCommandLineOption* that)
-{
-  QCommandLineOption* rthis = (QCommandLineOption*)that;
-  delete rthis;
-}
-
-// QCommandLineOption(const class QStringList &)
-QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK11QStringList(const QStringList & names)
-{
-  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
-  QCommandLineOption* rthis = new QCommandLineOption(names);
-  return rthis;
-}
-
-// QCommandLineOption(const class QString &)
-QCommandLineOption* dector_ZN18QCommandLineOptionC1ERK7QString(const QString & name)
-{
-  // static_assert(sizeof(QCommandLineOption) == 32, "tyszerr");
-  QCommandLineOption* rthis = new QCommandLineOption(name);
-  return rthis;
-}
-
-  // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
-void demth_ZN18QCommandLineOption4swapERS_(void *that, QCommandLineOption & other)
-{
-  QCommandLineOption *cthat = (QCommandLineOption *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcommandlineoption_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 65, column 17>
+//   // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
+if (false) {
+  auto f = [](QCommandLineOption & arg1) {
+    ((QCommandLineOption*)0)->swap(arg1);
+  };
+}
+// _ZN18QCommandLineOption4swapERS_ swap(class QCommandLineOption &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

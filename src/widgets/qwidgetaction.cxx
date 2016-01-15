@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qwidgetaction.h
 // dst-file: /src/widgets/qwidgetaction.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qwidgetaction.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QWidgetAction_Class_Size()
   return sizeof(QWidgetAction);
 }
 
-// ~QWidgetAction()
-void dedtor_ZN13QWidgetActionD0Ev(QWidgetAction* that)
-{
-  QWidgetAction* rthis = (QWidgetAction*)that;
-  delete rthis;
-}
-
-// QWidgetAction(class QObject *)
-QWidgetAction* dector_ZN13QWidgetActionC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QWidgetAction) == 32, "tyszerr");
-  QWidgetAction* rthis = new QWidgetAction(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qwidgetaction_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

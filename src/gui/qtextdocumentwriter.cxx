@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextdocumentwriter.h
 // dst-file: /src/gui/qtextdocumentwriter.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextdocumentwriter.h>
 
 extern "C" {
@@ -14,42 +15,14 @@ int QTextDocumentWriter_Class_Size()
   return sizeof(QTextDocumentWriter);
 }
 
-// QTextDocumentWriter(class QIODevice *, const class QByteArray &)
-QTextDocumentWriter* dector_ZN19QTextDocumentWriterC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format)
-{
-  // static_assert(sizeof(QTextDocumentWriter) == 32, "tyszerr");
-  QTextDocumentWriter* rthis = new QTextDocumentWriter(device, format);
-  return rthis;
-}
-
-// QTextDocumentWriter(const class QString &, const class QByteArray &)
-QTextDocumentWriter* dector_ZN19QTextDocumentWriterC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format)
-{
-  // static_assert(sizeof(QTextDocumentWriter) == 32, "tyszerr");
-  QTextDocumentWriter* rthis = new QTextDocumentWriter(fileName, format);
-  return rthis;
-}
-
-// QTextDocumentWriter()
-QTextDocumentWriter* dector_ZN19QTextDocumentWriterC1Ev()
-{
-  // static_assert(sizeof(QTextDocumentWriter) == 32, "tyszerr");
-  QTextDocumentWriter* rthis = new QTextDocumentWriter();
-  return rthis;
-}
-
-// ~QTextDocumentWriter()
-void dedtor_ZN19QTextDocumentWriterD0Ev(QTextDocumentWriter* that)
-{
-  QTextDocumentWriter* rthis = (QTextDocumentWriter*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextdocumentwriter_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

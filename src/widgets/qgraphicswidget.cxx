@@ -1,10 +1,12 @@
+#include <qrect.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qgraphicswidget.h>
 
 extern "C" {
@@ -14,48 +16,38 @@ int QGraphicsWidget_Class_Size()
   return sizeof(QGraphicsWidget);
 }
 
-// QGraphicsWidget(class QGraphicsItem *, Qt::WindowFlags)
-QGraphicsWidget* dector_ZN15QGraphicsWidgetC1EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, Qt::WindowFlags wFlags)
-{
-  // static_assert(sizeof(QGraphicsWidget) == 32, "tyszerr");
-  QGraphicsWidget* rthis = new QGraphicsWidget(parent, wFlags);
-  return rthis;
-}
-
-// ~QGraphicsWidget()
-void dedtor_ZN15QGraphicsWidgetD0Ev(QGraphicsWidget* that)
-{
-  QGraphicsWidget* rthis = (QGraphicsWidget*)that;
-  delete rthis;
-}
-
-  // proto:  QRectF QGraphicsWidget::rect();
-QRectF* demth_ZNK15QGraphicsWidget4rectEv(void *that)
-{
-  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
-  auto recret = cthat->rect();
-  return new QRectF(recret);
-}
-
-  // proto:  void QGraphicsWidget::resize(qreal w, qreal h);
-void demth_ZN15QGraphicsWidget6resizeEdd(void *that, double w, double h)
-{
-  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
-   cthat->resize(w, h);
-}
-
-  // proto:  void QGraphicsWidget::setGeometry(qreal x, qreal y, qreal w, qreal h);
-void demth_ZN15QGraphicsWidget11setGeometryEdddd(void *that, double x, double y, double w, double h)
-{
-  QGraphicsWidget *cthat = (QGraphicsWidget *)that;
-   cthat->setGeometry(x, y, w, h);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qgraphicswidget_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicswidget.h', line 105, column 19>
+//   // proto:  QRectF QGraphicsWidget::rect();
+if (false) {
+  auto f = []() {
+    ((QGraphicsWidget*)0)->rect();
+  };
+}
+// _ZNK15QGraphicsWidget4rectEv rect()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicswidget.h', line 100, column 17>
+//   // proto:  void QGraphicsWidget::resize(qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2) {
+    ((QGraphicsWidget*)0)->resize(arg1, arg2);
+  };
+}
+// _ZN15QGraphicsWidget6resizeEdd resize(qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicswidget.h', line 104, column 17>
+//   // proto:  void QGraphicsWidget::setGeometry(qreal x, qreal y, qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
+    ((QGraphicsWidget*)0)->setGeometry(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZN15QGraphicsWidget11setGeometryEdddd setGeometry(qreal, qreal, qreal, qreal)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

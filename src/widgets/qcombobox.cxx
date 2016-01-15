@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qcombobox.h
 // dst-file: /src/widgets/qcombobox.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcombobox.h>
 
 extern "C" {
@@ -14,61 +15,54 @@ int QComboBox_Class_Size()
   return sizeof(QComboBox);
 }
 
-// QComboBox(class QWidget *)
-QComboBox* dector_ZN9QComboBoxC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QComboBox) == 32, "tyszerr");
-  QComboBox* rthis = new QComboBox(parent);
-  return rthis;
-}
-
-// ~QComboBox()
-void dedtor_ZN9QComboBoxD0Ev(QComboBox* that)
-{
-  QComboBox* rthis = (QComboBox*)that;
-  delete rthis;
-}
-
-  // proto:  void QComboBox::addItem(const QIcon & icon, const QString & text, const QVariant & userData);
-void demth_ZN9QComboBox7addItemERK5QIconRK7QStringRK8QVariant(void *that, const QIcon & icon, const QString & text, const QVariant & userData)
-{
-  QComboBox *cthat = (QComboBox *)that;
-   cthat->addItem(icon, text, userData);
-}
-
-  // proto:  int QComboBox::findText(const QString & text, Qt::MatchFlags flags);
-int demth_ZNK9QComboBox8findTextERK7QString6QFlagsIN2Qt9MatchFlagEE(void *that, const QString & text, Qt::MatchFlags flags)
-{
-  QComboBox *cthat = (QComboBox *)that;
-  return cthat->findText(text, flags);
-}
-
-  // proto:  void QComboBox::addItem(const QString & text, const QVariant & userData);
-void demth_ZN9QComboBox7addItemERK7QStringRK8QVariant(void *that, const QString & text, const QVariant & userData)
-{
-  QComboBox *cthat = (QComboBox *)that;
-   cthat->addItem(text, userData);
-}
-
-  // proto:  void QComboBox::addItems(const QStringList & texts);
-void demth_ZN9QComboBox8addItemsERK11QStringList(void *that, const QStringList & texts)
-{
-  QComboBox *cthat = (QComboBox *)that;
-   cthat->addItems(texts);
-}
-
-  // proto:  void QComboBox::insertItem(int index, const QString & text, const QVariant & userData);
-void demth_ZN9QComboBox10insertItemEiRK7QStringRK8QVariant(void *that, int index, const QString & text, const QVariant & userData)
-{
-  QComboBox *cthat = (QComboBox *)that;
-   cthat->insertItem(index, text, userData);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcombobox_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcombobox.h', line 171, column 17>
+//   // proto:  void QComboBox::addItem(const QIcon & icon, const QString & text, const QVariant & userData);
+if (false) {
+  auto f = [](const QIcon & arg1, const QString & arg2, const QVariant & arg3) {
+    ((QComboBox*)0)->addItem(arg1, arg2, arg3);
+  };
+}
+// _ZN9QComboBox7addItemERK5QIconRK7QStringRK8QVariant addItem(const class QIcon &, const class QString &, const class QVariant &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcombobox.h', line 101, column 16>
+//   // proto:  int QComboBox::findText(const QString & text, Qt::MatchFlags flags);
+if (false) {
+  auto f = [](const QString & arg1, Qt::MatchFlags arg2) {
+    ((QComboBox*)0)->findText(arg1, arg2);
+  };
+}
+// _ZNK9QComboBox8findTextERK7QString6QFlagsIN2Qt9MatchFlagEE findText(const class QString &, Qt::MatchFlags)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcombobox.h', line 170, column 17>
+//   // proto:  void QComboBox::addItem(const QString & text, const QVariant & userData);
+if (false) {
+  auto f = [](const QString & arg1, const QVariant & arg2) {
+    ((QComboBox*)0)->addItem(arg1, arg2);
+  };
+}
+// _ZN9QComboBox7addItemERK7QStringRK8QVariant addItem(const class QString &, const class QVariant &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcombobox.h', line 173, column 17>
+//   // proto:  void QComboBox::addItems(const QStringList & texts);
+if (false) {
+  auto f = [](const QStringList & arg1) {
+    ((QComboBox*)0)->addItems(arg1);
+  };
+}
+// _ZN9QComboBox8addItemsERK11QStringList addItems(const class QStringList &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcombobox.h', line 176, column 17>
+//   // proto:  void QComboBox::insertItem(int index, const QString & text, const QVariant & userData);
+if (false) {
+  auto f = [](int arg1, const QString & arg2, const QVariant & arg3) {
+    ((QComboBox*)0)->insertItem(arg1, arg2, arg3);
+  };
+}
+// _ZN9QComboBox10insertItemEiRK7QStringRK8QVariant insertItem(int, const class QString &, const class QVariant &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

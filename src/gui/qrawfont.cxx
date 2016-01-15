@@ -1,10 +1,12 @@
+#include <qvector.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qrawfont.h
 // dst-file: /src/gui/qrawfont.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qrawfont.h>
 
 extern "C" {
@@ -14,71 +16,38 @@ int QRawFont_Class_Size()
   return sizeof(QRawFont);
 }
 
-// QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
-QRawFont* dector_ZN8QRawFontC1ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray & fontData, double pixelSize, QFont::HintingPreference hintingPreference)
-{
-  // static_assert(sizeof(QRawFont) == 32, "tyszerr");
-  QRawFont* rthis = new QRawFont(fontData, pixelSize, hintingPreference);
-  return rthis;
-}
-
-// QRawFont()
-QRawFont* dector_ZN8QRawFontC1Ev()
-{
-  // static_assert(sizeof(QRawFont) == 32, "tyszerr");
-  QRawFont* rthis = new QRawFont();
-  return rthis;
-}
-
-// QRawFont(const class QString &, qreal, class QFont::HintingPreference)
-QRawFont* dector_ZN8QRawFontC1ERK7QStringdN5QFont17HintingPreferenceE(const QString & fileName, double pixelSize, QFont::HintingPreference hintingPreference)
-{
-  // static_assert(sizeof(QRawFont) == 32, "tyszerr");
-  QRawFont* rthis = new QRawFont(fileName, pixelSize, hintingPreference);
-  return rthis;
-}
-
-// QRawFont(const class QRawFont &)
-QRawFont* dector_ZN8QRawFontC1ERKS_(const QRawFont & other)
-{
-  // static_assert(sizeof(QRawFont) == 32, "tyszerr");
-  QRawFont* rthis = new QRawFont(other);
-  return rthis;
-}
-
-// ~QRawFont()
-void dedtor_ZN8QRawFontD0Ev(QRawFont* that)
-{
-  QRawFont* rthis = (QRawFont*)that;
-  delete rthis;
-}
-
-  // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes, LayoutFlags layoutFlags);
-QVector<QPointF> demth_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE(void *that, const QVector<quint32> & glyphIndexes, QRawFont::LayoutFlag layoutFlags)
-{
-  QRawFont *cthat = (QRawFont *)that;
-  return cthat->advancesForGlyphIndexes(glyphIndexes, layoutFlags);
-}
-
-  // proto:  void QRawFont::swap(QRawFont & other);
-void demth_ZN8QRawFont4swapERS_(void *that, QRawFont & other)
-{
-  QRawFont *cthat = (QRawFont *)that;
-   cthat->swap(other);
-}
-
-  // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes);
-QVector<QPointF> demth_ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE(void *that, const QVector<quint32> & glyphIndexes)
-{
-  QRawFont *cthat = (QRawFont *)that;
-  return cthat->advancesForGlyphIndexes(glyphIndexes);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qrawfont_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qrawfont.h', line 95, column 29>
+//   // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes, LayoutFlags layoutFlags);
+if (false) {
+  auto f = [](const QVector<quint32> & arg1, QRawFont::LayoutFlags arg2) {
+    ((QRawFont*)0)->advancesForGlyphIndexes(arg1, arg2);
+  };
+}
+// _ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE6QFlagsINS_10LayoutFlagEE advancesForGlyphIndexes(const QVector<quint32> &, LayoutFlags)
+// <SourceLocation file '/usr/include/qt/QtGui/qrawfont.h', line 81, column 10>
+//   // proto:  void QRawFont::swap(QRawFont & other);
+if (false) {
+  auto f = [](QRawFont & arg1) {
+    ((QRawFont*)0)->swap(arg1);
+  };
+}
+// _ZN8QRawFont4swapERS_ swap(class QRawFont &)
+// <SourceLocation file '/usr/include/qt/QtGui/qrawfont.h', line 94, column 29>
+//   // proto:  QVector<QPointF> QRawFont::advancesForGlyphIndexes(const QVector<quint32> & glyphIndexes);
+if (false) {
+  auto f = [](const QVector<quint32> & arg1) {
+    ((QRawFont*)0)->advancesForGlyphIndexes(arg1);
+  };
+}
+// _ZNK8QRawFont23advancesForGlyphIndexesERK7QVectorIjE advancesForGlyphIndexes(const QVector<quint32> &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

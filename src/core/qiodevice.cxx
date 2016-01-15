@@ -1,10 +1,12 @@
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qiodevice.h
 // dst-file: /src/core/qiodevice.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qiodevice.h>
 
 extern "C" {
@@ -14,18 +16,22 @@ int QIODevice_Class_Size()
   return sizeof(QIODevice);
 }
 
-  // proto:  qint64 QIODevice::write(const QByteArray & data);
-qint64 demth_ZN9QIODevice5writeERK10QByteArray(void *that, const QByteArray & data)
-{
-  QIODevice *cthat = (QIODevice *)that;
-  return cthat->write(data);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qiodevice_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 116, column 19>
+//   // proto:  qint64 QIODevice::write(const QByteArray & data);
+if (false) {
+  auto f = [](const QByteArray & arg1) {
+    ((QIODevice*)0)->write(arg1);
+  };
+}
+// _ZN9QIODevice5writeERK10QByteArray write(const class QByteArray &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

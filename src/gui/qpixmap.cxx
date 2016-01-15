@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpixmap.h
 // dst-file: /src/gui/qpixmap.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpixmap.h>
 
 extern "C" {
@@ -14,126 +15,86 @@ int QPixmap_Class_Size()
   return sizeof(QPixmap);
 }
 
-// QPixmap(class QPlatformPixmap *)
-QPixmap* dector_ZN7QPixmapC1EP15QPlatformPixmap(QPlatformPixmap * data)
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap(data);
-  return rthis;
-}
-
-// QPixmap(const class QSize &)
-QPixmap* dector_ZN7QPixmapC1ERK5QSize(const QSize & arg1)
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap(arg1);
-  return rthis;
-}
-
-// QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
-QPixmap* dector_ZN7QPixmapC1ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString & fileName, const char * format, Qt::ImageConversionFlags flags)
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap(fileName, format, flags);
-  return rthis;
-}
-
-// QPixmap(int, int)
-QPixmap* dector_ZN7QPixmapC1Eii(int w, int h)
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap(w, h);
-  return rthis;
-}
-
-// QPixmap()
-QPixmap* dector_ZN7QPixmapC1Ev()
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap();
-  return rthis;
-}
-
-// QPixmap(const class QPixmap &)
-QPixmap* dector_ZN7QPixmapC1ERKS_(const QPixmap & arg1)
-{
-  // static_assert(sizeof(QPixmap) == 32, "tyszerr");
-  QPixmap* rthis = new QPixmap(arg1);
-  return rthis;
-}
-
-// ~QPixmap()
-void dedtor_ZN7QPixmapD0Ev(QPixmap* that)
-{
-  QPixmap* rthis = (QPixmap*)that;
-  delete rthis;
-}
-
-  // proto:  void QPixmap::swap(QPixmap & other);
-void demth_ZN7QPixmap4swapERS_(void *that, QPixmap & other)
-{
-  QPixmap *cthat = (QPixmap *)that;
-   cthat->swap(other);
-}
-
-  // proto:  void QPixmap::fill(const QPaintDevice * device, int xofs, int yofs);
-void demth_ZN7QPixmap4fillEPK12QPaintDeviceii(void *that, const QPaintDevice * device, int xofs, int yofs)
-{
-  QPixmap *cthat = (QPixmap *)that;
-   cthat->fill(device, xofs, yofs);
-}
-
-  // proto:  QPixmap QPixmap::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-QPixmap* demth_ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *that, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode)
-{
-  QPixmap *cthat = (QPixmap *)that;
-  auto recret = cthat->scaled(w, h, aspectMode, mode);
-  return new QPixmap(recret);
-}
-
-  // proto:  void QPixmap::scroll(int dx, int dy, int x, int y, int width, int height, QRegion * exposed);
-void demth_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *that, int dx, int dy, int x, int y, int width, int height, QRegion * exposed)
-{
-  QPixmap *cthat = (QPixmap *)that;
-   cthat->scroll(dx, dy, x, y, width, height, exposed);
-}
-
-  // proto: static QPixmap QPixmap::fromImage(QImage && image, Qt::ImageConversionFlags flags);
-QPixmap* demth_ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *that, QImage && image, Qt::ImageConversionFlags flags)
-{
-  QPixmap *cthat = (QPixmap *)that;
-  auto recret = cthat->fromImage(image, flags);
-  return new QPixmap(recret);
-}
-
-  // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);
-QPixmap* demth_ZNK7QPixmap4copyEiiii(void *that, int x, int y, int width, int height)
-{
-  QPixmap *cthat = (QPixmap *)that;
-  auto recret = cthat->copy(x, y, width, height);
-  return new QPixmap(recret);
-}
-
-  // proto:  bool QPixmap::loadFromData(const QByteArray & data, const char * format, Qt::ImageConversionFlags flags);
-bool demth_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *that, const QByteArray & data, const char * format, Qt::ImageConversionFlags flags)
-{
-  QPixmap *cthat = (QPixmap *)that;
-  return cthat->loadFromData(data, format, flags);
-}
-
-  // proto: static QPixmap QPixmap::grabWidget(QObject * widget, int x, int y, int w, int h);
-QPixmap* demth_ZN7QPixmap10grabWidgetEP7QObjectiiii(void *that, QObject * widget, int x, int y, int w, int h)
-{
-  QPixmap *cthat = (QPixmap *)that;
-  auto recret = cthat->grabWidget(widget, x, y, w, h);
-  return new QPixmap(recret);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpixmap_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 73, column 17>
+//   // proto:  void QPixmap::swap(QPixmap & other);
+if (false) {
+  auto f = [](QPixmap & arg1) {
+    ((QPixmap*)0)->swap(arg1);
+  };
+}
+// _ZN7QPixmap4swapERS_ swap(class QPixmap &)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 195, column 21>
+//   // proto:  DataPtr & QPixmap::data_ptr();
+if (false) {
+  auto f = []() {
+    ((QPixmap*)0)->data_ptr();
+  };
+}
+// _ZN7QPixmap8data_ptrEv data_ptr()
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 91, column 17>
+//   // proto:  void QPixmap::fill(const QPaintDevice * device, int xofs, int yofs);
+if (false) {
+  auto f = [](const QPaintDevice * arg1, int arg2, int arg3) {
+    ((QPixmap*)0)->fill(arg1, arg2, arg3);
+  };
+}
+// _ZN7QPixmap4fillEPK12QPaintDeviceii fill(const class QPaintDevice *, int, int)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 112, column 20>
+//   // proto:  QPixmap QPixmap::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
+if (false) {
+  auto f = [](int arg1, int arg2, Qt::AspectRatioMode arg3, Qt::TransformationMode arg4) {
+    ((QPixmap*)0)->scaled(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE scaled(int, int, Qt::AspectRatioMode, Qt::TransformationMode)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 145, column 17>
+//   // proto:  void QPixmap::scroll(int dx, int dy, int x, int y, int width, int height, QRegion * exposed);
+if (false) {
+  auto f = [](int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, QRegion * arg7) {
+    ((QPixmap*)0)->scroll(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+  };
+}
+// _ZN7QPixmap6scrollEiiiiiiP7QRegion scroll(int, int, int, int, int, int, class QRegion *)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 128, column 20>
+//   // proto: static QPixmap QPixmap::fromImage(QImage && image, Qt::ImageConversionFlags flags);
+if (false) {
+  auto f = [](QImage && arg1, Qt::ImageConversionFlags arg2) {
+    ((QPixmap*)0)->fromImage(arg1, arg2);
+  };
+}
+// _ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE fromImage(class QImage &&, Qt::ImageConversionFlags)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 142, column 20>
+//   // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);
+if (false) {
+  auto f = [](int arg1, int arg2, int arg3, int arg4) {
+    ((QPixmap*)0)->copy(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZNK7QPixmap4copyEiiii copy(int, int, int, int)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 136, column 17>
+//   // proto:  bool QPixmap::loadFromData(const QByteArray & data, const char * format, Qt::ImageConversionFlags flags);
+if (false) {
+  auto f = [](const QByteArray & arg1, const char * arg2, Qt::ImageConversionFlags arg3) {
+    ((QPixmap*)0)->loadFromData(arg1, arg2, arg3);
+  };
+}
+// _ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE loadFromData(const class QByteArray &, const char *, Qt::ImageConversionFlags)
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 109, column 27>
+//   // proto: static QPixmap QPixmap::grabWidget(QObject * widget, int x, int y, int w, int h);
+if (false) {
+  auto f = [](QObject * arg1, int arg2, int arg3, int arg4, int arg5) {
+    ((QPixmap*)0)->grabWidget(arg1, arg2, arg3, arg4, arg5);
+  };
+}
+// _ZN7QPixmap10grabWidgetEP7QObjectiiii grabWidget(class QObject *, int, int, int, int)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qtimezone.h
 // dst-file: /src/core/qtimezone.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtimezone.h>
 
 extern "C" {
@@ -14,65 +15,22 @@ int QTimeZone_Class_Size()
   return sizeof(QTimeZone);
 }
 
-// QTimeZone(int)
-QTimeZone* dector_ZN9QTimeZoneC1Ei(int offsetSeconds)
-{
-  // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
-  QTimeZone* rthis = new QTimeZone(offsetSeconds);
-  return rthis;
-}
-
-// QTimeZone()
-QTimeZone* dector_ZN9QTimeZoneC1Ev()
-{
-  // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
-  QTimeZone* rthis = new QTimeZone();
-  return rthis;
-}
-
-// QTimeZone(const class QByteArray &)
-QTimeZone* dector_ZN9QTimeZoneC1ERK10QByteArray(const QByteArray & ianaId)
-{
-  // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
-  QTimeZone* rthis = new QTimeZone(ianaId);
-  return rthis;
-}
-
-// QTimeZone(const class QTimeZone &)
-QTimeZone* dector_ZN9QTimeZoneC1ERKS_(const QTimeZone & other)
-{
-  // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
-  QTimeZone* rthis = new QTimeZone(other);
-  return rthis;
-}
-
-// ~QTimeZone()
-void dedtor_ZN9QTimeZoneD0Ev(QTimeZone* that)
-{
-  QTimeZone* rthis = (QTimeZone*)that;
-  delete rthis;
-}
-
-// QTimeZone(const class QByteArray &, int, const class QString &, const class QString &, class QLocale::Country, const class QString &)
-QTimeZone* dector_ZN9QTimeZoneC1ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment)
-{
-  // static_assert(sizeof(QTimeZone) == 32, "tyszerr");
-  QTimeZone* rthis = new QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
-  return rthis;
-}
-
-  // proto:  void QTimeZone::swap(QTimeZone & other);
-void demth_ZN9QTimeZone4swapERS_(void *that, QTimeZone & other)
-{
-  QTimeZone *cthat = (QTimeZone *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtimezone_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 85, column 10>
+//   // proto:  void QTimeZone::swap(QTimeZone & other);
+if (false) {
+  auto f = [](QTimeZone & arg1) {
+    ((QTimeZone*)0)->swap(arg1);
+  };
+}
+// _ZN9QTimeZone4swapERS_ swap(class QTimeZone &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

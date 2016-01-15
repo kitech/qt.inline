@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qcommonstyle.h
 // dst-file: /src/widgets/qcommonstyle.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcommonstyle.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QCommonStyle_Class_Size()
   return sizeof(QCommonStyle);
 }
 
-// QCommonStyle()
-QCommonStyle* dector_ZN12QCommonStyleC1Ev()
-{
-  // static_assert(sizeof(QCommonStyle) == 32, "tyszerr");
-  QCommonStyle* rthis = new QCommonStyle();
-  return rthis;
-}
-
-// ~QCommonStyle()
-void dedtor_ZN12QCommonStyleD0Ev(QCommonStyle* that)
-{
-  QCommonStyle* rthis = (QCommonStyle*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcommonstyle_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

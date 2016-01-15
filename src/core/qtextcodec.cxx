@@ -1,10 +1,13 @@
+#include <qbytearray.h>
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qtextcodec.h
 // dst-file: /src/core/qtextcodec.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextcodec.h>
 
 extern "C" {
@@ -14,55 +17,9 @@ int QTextEncoder_Class_Size()
   return sizeof(QTextEncoder);
 }
 
-// ~QTextEncoder()
-void dedtor_ZN12QTextEncoderD0Ev(QTextEncoder* that)
-{
-  QTextEncoder* rthis = (QTextEncoder*)that;
-  delete rthis;
-}
-
-// QTextEncoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
-QTextEncoder* dector_ZN12QTextEncoderC1EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QTextCodec::ConversionFlags flags)
-{
-  // static_assert(sizeof(QTextEncoder) == 32, "tyszerr");
-  QTextEncoder* rthis = new QTextEncoder(codec, flags);
-  return rthis;
-}
-
-// QTextEncoder(const class QTextCodec *)
-QTextEncoder* dector_ZN12QTextEncoderC1EPK10QTextCodec(const QTextCodec * codec)
-{
-  // static_assert(sizeof(QTextEncoder) == 32, "tyszerr");
-  QTextEncoder* rthis = new QTextEncoder(codec);
-  return rthis;
-}
-
 int QTextCodec_Class_Size()
 {
   return sizeof(QTextCodec);
-}
-
-  // proto:  QString QTextCodec::toUnicode(const char * in, int length, QTextCodec::ConverterState * state);
-QString* demth_ZNK10QTextCodec9toUnicodeEPKciPNS_14ConverterStateE(void *that, const char * in, int length, QTextCodec::ConverterState * state)
-{
-  QTextCodec *cthat = (QTextCodec *)that;
-  auto recret = cthat->toUnicode(in, length, state);
-  return new QString(recret);
-}
-
-  // proto:  QByteArray QTextCodec::fromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state);
-QByteArray* demth_ZNK10QTextCodec11fromUnicodeEPK5QChariPNS_14ConverterStateE(void *that, const QChar * in, int length, QTextCodec::ConverterState * state)
-{
-  QTextCodec *cthat = (QTextCodec *)that;
-  auto recret = cthat->fromUnicode(in, length, state);
-  return new QByteArray(recret);
-}
-
-  // proto: static QTextCodec * QTextCodec::codecForName(const char * name);
-QTextCodec * demth_ZN10QTextCodec12codecForNameEPKc(void *that, const char * name)
-{
-  QTextCodec *cthat = (QTextCodec *)that;
-  return cthat->codecForName(name);
 }
 
 int QTextDecoder_Class_Size()
@@ -70,34 +27,52 @@ int QTextDecoder_Class_Size()
   return sizeof(QTextDecoder);
 }
 
-// QTextDecoder(const class QTextCodec *)
-QTextDecoder* dector_ZN12QTextDecoderC1EPK10QTextCodec(const QTextCodec * codec)
-{
-  // static_assert(sizeof(QTextDecoder) == 32, "tyszerr");
-  QTextDecoder* rthis = new QTextDecoder(codec);
-  return rthis;
-}
-
-// QTextDecoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
-QTextDecoder* dector_ZN12QTextDecoderC1EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QTextCodec::ConversionFlags flags)
-{
-  // static_assert(sizeof(QTextDecoder) == 32, "tyszerr");
-  QTextDecoder* rthis = new QTextDecoder(codec, flags);
-  return rthis;
-}
-
-// ~QTextDecoder()
-void dedtor_ZN12QTextDecoderD0Ev(QTextDecoder* that)
-{
-  QTextDecoder* rthis = (QTextDecoder*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextcodec_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 129, column 14>
+//   // proto:  void QTextEncoder::QTextEncoder(const QTextCodec * codec);
+if (false) {
+  auto f = [](const QTextCodec * arg1) {
+    new QTextEncoder(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 102, column 13>
+//   // proto:  QString QTextCodec::toUnicode(const char * in, int length, QTextCodec::ConverterState * state);
+if (false) {
+  auto f = [](const char * arg1, int arg2, QTextCodec::ConverterState * arg3) {
+    ((QTextCodec*)0)->toUnicode(arg1, arg2, arg3);
+  };
+}
+// _ZNK10QTextCodec9toUnicodeEPKciPNS_14ConverterStateE toUnicode(const char *, int, struct QTextCodec::ConverterState *)
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 104, column 16>
+//   // proto:  QByteArray QTextCodec::fromUnicode(const QChar * in, int length, QTextCodec::ConverterState * state);
+if (false) {
+  auto f = [](const QChar * arg1, int arg2, QTextCodec::ConverterState * arg3) {
+    ((QTextCodec*)0)->fromUnicode(arg1, arg2, arg3);
+  };
+}
+// _ZNK10QTextCodec11fromUnicodeEPK5QChariPNS_14ConverterStateE fromUnicode(const class QChar *, int, struct QTextCodec::ConverterState *)
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 56, column 24>
+//   // proto: static QTextCodec * QTextCodec::codecForName(const char * name);
+if (false) {
+  auto f = [](const char * arg1) {
+    ((QTextCodec*)0)->codecForName(arg1);
+  };
+}
+// _ZN10QTextCodec12codecForNameEPKc codecForName(const char *)
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 143, column 14>
+//   // proto:  void QTextDecoder::QTextDecoder(const QTextCodec * codec);
+if (false) {
+  auto f = [](const QTextCodec * arg1) {
+    new QTextDecoder(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

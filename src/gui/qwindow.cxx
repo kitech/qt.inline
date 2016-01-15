@@ -1,10 +1,13 @@
+#include <qpoint.h>
+#include <qsize.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qwindow.h
 // dst-file: /src/gui/qwindow.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qwindow.h>
 
 extern "C" {
@@ -14,106 +17,94 @@ int QWindow_Class_Size()
   return sizeof(QWindow);
 }
 
-// ~QWindow()
-void dedtor_ZN7QWindowD0Ev(QWindow* that)
-{
-  QWindow* rthis = (QWindow*)that;
-  delete rthis;
-}
-
-// QWindow(class QScreen *)
-QWindow* dector_ZN7QWindowC1EP7QScreen(QScreen * screen)
-{
-  // static_assert(sizeof(QWindow) == 32, "tyszerr");
-  QWindow* rthis = new QWindow(screen);
-  return rthis;
-}
-
-// QWindow(class QWindow *)
-QWindow* dector_ZN7QWindowC1EPS_(QWindow * parent)
-{
-  // static_assert(sizeof(QWindow) == 32, "tyszerr");
-  QWindow* rthis = new QWindow(parent);
-  return rthis;
-}
-
-  // proto:  int QWindow::minimumHeight();
-int demth_ZNK7QWindow13minimumHeightEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->minimumHeight();
-}
-
-  // proto:  int QWindow::maximumHeight();
-int demth_ZNK7QWindow13maximumHeightEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->maximumHeight();
-}
-
-  // proto:  int QWindow::y();
-int demth_ZNK7QWindow1yEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->y();
-}
-
-  // proto:  int QWindow::width();
-int demth_ZNK7QWindow5widthEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->width();
-}
-
-  // proto:  int QWindow::minimumWidth();
-int demth_ZNK7QWindow12minimumWidthEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->minimumWidth();
-}
-
-  // proto:  int QWindow::x();
-int demth_ZNK7QWindow1xEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->x();
-}
-
-  // proto:  int QWindow::height();
-int demth_ZNK7QWindow6heightEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->height();
-}
-
-  // proto:  QSize QWindow::size();
-QSize* demth_ZNK7QWindow4sizeEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  auto recret = cthat->size();
-  return new QSize(recret);
-}
-
-  // proto:  int QWindow::maximumWidth();
-int demth_ZNK7QWindow12maximumWidthEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  return cthat->maximumWidth();
-}
-
-  // proto:  QPoint QWindow::position();
-QPoint* demth_ZNK7QWindow8positionEv(void *that)
-{
-  QWindow *cthat = (QWindow *)that;
-  auto recret = cthat->position();
-  return new QPoint(recret);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qwindow_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 189, column 16>
+//   // proto:  int QWindow::minimumHeight();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->minimumHeight();
+  };
+}
+// _ZNK7QWindow13minimumHeightEv minimumHeight()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 191, column 16>
+//   // proto:  int QWindow::maximumHeight();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->maximumHeight();
+  };
+}
+// _ZNK7QWindow13maximumHeightEv maximumHeight()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 216, column 16>
+//   // proto:  int QWindow::y();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->y();
+  };
+}
+// _ZNK7QWindow1yEv y()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 213, column 16>
+//   // proto:  int QWindow::width();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->width();
+  };
+}
+// _ZNK7QWindow5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 188, column 16>
+//   // proto:  int QWindow::minimumWidth();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->minimumWidth();
+  };
+}
+// _ZNK7QWindow12minimumWidthEv minimumWidth()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 215, column 16>
+//   // proto:  int QWindow::x();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->x();
+  };
+}
+// _ZNK7QWindow1xEv x()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 214, column 16>
+//   // proto:  int QWindow::height();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->height();
+  };
+}
+// _ZNK7QWindow6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 218, column 11>
+//   // proto:  QSize QWindow::size();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->size();
+  };
+}
+// _ZNK7QWindow4sizeEv size()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 190, column 16>
+//   // proto:  int QWindow::maximumWidth();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->maximumWidth();
+  };
+}
+// _ZNK7QWindow12maximumWidthEv maximumWidth()
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 219, column 19>
+//   // proto:  QPoint QWindow::position();
+if (false) {
+  auto f = []() {
+    ((QWindow*)0)->position();
+  };
+}
+// _ZNK7QWindow8positionEv position()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

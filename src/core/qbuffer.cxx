@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qbuffer.h>
 
 extern "C" {
@@ -14,41 +15,22 @@ int QBuffer_Class_Size()
   return sizeof(QBuffer);
 }
 
-// ~QBuffer()
-void dedtor_ZN7QBufferD0Ev(QBuffer* that)
-{
-  QBuffer* rthis = (QBuffer*)that;
-  delete rthis;
-}
-
-// QBuffer(class QObject *)
-QBuffer* dector_ZN7QBufferC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QBuffer) == 32, "tyszerr");
-  QBuffer* rthis = new QBuffer(parent);
-  return rthis;
-}
-
-// QBuffer(class QByteArray *, class QObject *)
-QBuffer* dector_ZN7QBufferC1EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent)
-{
-  // static_assert(sizeof(QBuffer) == 32, "tyszerr");
-  QBuffer* rthis = new QBuffer(buf, parent);
-  return rthis;
-}
-
-  // proto:  void QBuffer::setData(const char * data, int len);
-void demth_ZN7QBuffer7setDataEPKci(void *that, const char * data, int len)
-{
-  QBuffer *cthat = (QBuffer *)that;
-   cthat->setData(data, len);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qbuffer_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 67, column 17>
+//   // proto:  void QBuffer::setData(const char * data, int len);
+if (false) {
+  auto f = [](const char * arg1, int arg2) {
+    ((QBuffer*)0)->setData(arg1, arg2);
+  };
+}
+// _ZN7QBuffer7setDataEPKci setData(const char *, int)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

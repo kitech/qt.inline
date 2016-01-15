@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qtimeline.h
 // dst-file: /src/core/qtimeline.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtimeline.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QTimeLine_Class_Size()
   return sizeof(QTimeLine);
 }
 
-// ~QTimeLine()
-void dedtor_ZN9QTimeLineD0Ev(QTimeLine* that)
-{
-  QTimeLine* rthis = (QTimeLine*)that;
-  delete rthis;
-}
-
-// QTimeLine(int, class QObject *)
-QTimeLine* dector_ZN9QTimeLineC1EiP7QObject(int duration, QObject * parent)
-{
-  // static_assert(sizeof(QTimeLine) == 32, "tyszerr");
-  QTimeLine* rthis = new QTimeLine(duration, parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtimeline_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

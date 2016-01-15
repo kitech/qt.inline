@@ -1,10 +1,12 @@
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdatetime.h>
 
 extern "C" {
@@ -14,125 +16,9 @@ int QTime_Class_Size()
   return sizeof(QTime);
 }
 
-// QTime(int, int, int, int)
-QTime* dector_ZN5QTimeC1Eiiii(int h, int m, int s, int ms)
-{
-  // static_assert(sizeof(QTime) == 32, "tyszerr");
-  QTime* rthis = new QTime(h, m, s, ms);
-  return rthis;
-}
-
-// QTime()
-QTime* dector_ZN5QTimeC1Ev()
-{
-  // static_assert(sizeof(QTime) == 32, "tyszerr");
-  QTime* rthis = new QTime();
-  return rthis;
-}
-
-  // proto: static QTime QTime::fromMSecsSinceStartOfDay(int msecs);
-QTime* demth_ZN5QTime24fromMSecsSinceStartOfDayEi(void *that, int msecs)
-{
-  QTime *cthat = (QTime *)that;
-  auto recret = cthat->fromMSecsSinceStartOfDay(msecs);
-  return new QTime(recret);
-}
-
-  // proto:  bool QTime::isNull();
-bool demth_ZNK5QTime6isNullEv(void *that)
-{
-  QTime *cthat = (QTime *)that;
-  return cthat->isNull();
-}
-
-  // proto:  int QTime::msecsSinceStartOfDay();
-int demth_ZNK5QTime20msecsSinceStartOfDayEv(void *that)
-{
-  QTime *cthat = (QTime *)that;
-  return cthat->msecsSinceStartOfDay();
-}
-
 int QDateTime_Class_Size()
 {
   return sizeof(QDateTime);
-}
-
-// QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
-QDateTime* dector_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecEi(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds)
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime(date, time, spec, offsetSeconds);
-  return rthis;
-}
-
-// QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
-QDateTime* dector_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & arg1, const QTime & arg2, Qt::TimeSpec spec)
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime(arg1, arg2, spec);
-  return rthis;
-}
-
-// QDateTime(const class QDateTime &)
-QDateTime* dector_ZN9QDateTimeC1ERKS_(const QDateTime & other)
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime(other);
-  return rthis;
-}
-
-// QDateTime()
-QDateTime* dector_ZN9QDateTimeC1Ev()
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime();
-  return rthis;
-}
-
-// QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
-QDateTime* dector_ZN9QDateTimeC1ERK5QDateRK5QTimeRK9QTimeZone(const QDate & date, const QTime & time, const QTimeZone & timeZone)
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime(date, time, timeZone);
-  return rthis;
-}
-
-// QDateTime(const class QDate &)
-QDateTime* dector_ZN9QDateTimeC1ERK5QDate(const QDate & arg1)
-{
-  // static_assert(sizeof(QDateTime) == 32, "tyszerr");
-  QDateTime* rthis = new QDateTime(arg1);
-  return rthis;
-}
-
-// ~QDateTime()
-void dedtor_ZN9QDateTimeD0Ev(QDateTime* that)
-{
-  QDateTime* rthis = (QDateTime*)that;
-  delete rthis;
-}
-
-  // proto:  QDateTime QDateTime::toLocalTime();
-QDateTime* demth_ZNK9QDateTime11toLocalTimeEv(void *that)
-{
-  QDateTime *cthat = (QDateTime *)that;
-  auto recret = cthat->toLocalTime();
-  return new QDateTime(recret);
-}
-
-  // proto:  void QDateTime::swap(QDateTime & other);
-void demth_ZN9QDateTime4swapERS_(void *that, QDateTime & other)
-{
-  QDateTime *cthat = (QDateTime *)that;
-   cthat->swap(other);
-}
-
-  // proto:  QDateTime QDateTime::toUTC();
-QDateTime* demth_ZNK9QDateTime5toUTCEv(void *that)
-{
-  QDateTime *cthat = (QDateTime *)that;
-  auto recret = cthat->toUTC();
-  return new QDateTime(recret);
 }
 
 int QDate_Class_Size()
@@ -140,56 +26,108 @@ int QDate_Class_Size()
   return sizeof(QDate);
 }
 
-// QDate()
-QDate* dector_ZN5QDateC1Ev()
-{
-  // static_assert(sizeof(QDate) == 32, "tyszerr");
-  QDate* rthis = new QDate();
-  return rthis;
-}
-
-// QDate(int, int, int)
-QDate* dector_ZN5QDateC1Eiii(int y, int m, int d)
-{
-  // static_assert(sizeof(QDate) == 32, "tyszerr");
-  QDate* rthis = new QDate(y, m, d);
-  return rthis;
-}
-
-  // proto:  qint64 QDate::toJulianDay();
-qint64 demth_ZNK5QDate11toJulianDayEv(void *that)
-{
-  QDate *cthat = (QDate *)that;
-  return cthat->toJulianDay();
-}
-
-  // proto:  bool QDate::isNull();
-bool demth_ZNK5QDate6isNullEv(void *that)
-{
-  QDate *cthat = (QDate *)that;
-  return cthat->isNull();
-}
-
-  // proto: static QDate QDate::fromJulianDay(qint64 jd);
-QDate* demth_ZN5QDate13fromJulianDayEx(void *that, long long jd)
-{
-  QDate *cthat = (QDate *)that;
-  auto recret = cthat->fromJulianDay(jd);
-  return new QDate(recret);
-}
-
-  // proto:  bool QDate::isValid();
-bool demth_ZNK5QDate7isValidEv(void *that)
-{
-  QDate *cthat = (QDate *)that;
-  return cthat->isValid();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdatetime_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 179, column 42>
+//   // proto: static QTime QTime::fromMSecsSinceStartOfDay(int msecs);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTime*)0)->fromMSecsSinceStartOfDay(arg1);
+  };
+}
+// _ZN5QTime24fromMSecsSinceStartOfDayEi fromMSecsSinceStartOfDay(int)
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 154, column 27>
+//   // proto:  bool QTime::isNull();
+if (false) {
+  auto f = []() {
+    ((QTime*)0)->isNull();
+  };
+}
+// _ZNK5QTime6isNullEv isNull()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 180, column 33>
+//   // proto:  int QTime::msecsSinceStartOfDay();
+if (false) {
+  auto f = []() {
+    ((QTime*)0)->msecsSinceStartOfDay();
+  };
+}
+// _ZNK5QTime20msecsSinceStartOfDayEv msecsSinceStartOfDay()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 147, column 22>
+//   // proto:  void QTime::QTime();
+if (false) {
+  auto f = []() {
+    new QTime();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 268, column 22>
+//   // proto:  QDateTime QDateTime::toLocalTime();
+if (false) {
+  auto f = []() {
+    ((QDateTime*)0)->toLocalTime();
+  };
+}
+// _ZNK9QDateTime11toLocalTimeEv toLocalTime()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 227, column 17>
+//   // proto:  void QDateTime::swap(QDateTime & other);
+if (false) {
+  auto f = [](QDateTime & arg1) {
+    ((QDateTime*)0)->swap(arg1);
+  };
+}
+// _ZN9QDateTime4swapERS_ swap(class QDateTime &)
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 269, column 22>
+//   // proto:  QDateTime QDateTime::toUTC();
+if (false) {
+  auto f = []() {
+    ((QDateTime*)0)->toUTC();
+  };
+}
+// _ZNK9QDateTime5toUTCEv toUTC()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 120, column 36>
+//   // proto:  qint64 QDate::toJulianDay();
+if (false) {
+  auto f = []() {
+    ((QDate*)0)->toJulianDay();
+  };
+}
+// _ZNK5QDate11toJulianDayEv toJulianDay()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 64, column 22>
+//   // proto:  void QDate::QDate();
+if (false) {
+  auto f = []() {
+    new QDate();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 67, column 27>
+//   // proto:  bool QDate::isNull();
+if (false) {
+  auto f = []() {
+    ((QDate*)0)->isNull();
+  };
+}
+// _ZNK5QDate6isNullEv isNull()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 118, column 42>
+//   // proto: static QDate QDate::fromJulianDay(qint64 jd);
+if (false) {
+  auto f = [](qint64 arg1) {
+    ((QDate*)0)->fromJulianDay(arg1);
+  };
+}
+// _ZN5QDate13fromJulianDayEx fromJulianDay(qint64)
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 68, column 27>
+//   // proto:  bool QDate::isValid();
+if (false) {
+  auto f = []() {
+    ((QDate*)0)->isValid();
+  };
+}
+// _ZNK5QDate7isValidEv isValid()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

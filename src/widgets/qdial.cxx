@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdial.h
 // dst-file: /src/widgets/qdial.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdial.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QDial_Class_Size()
   return sizeof(QDial);
 }
 
-// ~QDial()
-void dedtor_ZN5QDialD0Ev(QDial* that)
-{
-  QDial* rthis = (QDial*)that;
-  delete rthis;
-}
-
-// QDial(class QWidget *)
-QDial* dector_ZN5QDialC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QDial) == 32, "tyszerr");
-  QDial* rthis = new QDial(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdial_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

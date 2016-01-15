@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qundogroup.h
 // dst-file: /src/widgets/qundogroup.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qundogroup.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QUndoGroup_Class_Size()
   return sizeof(QUndoGroup);
 }
 
-// QUndoGroup(class QObject *)
-QUndoGroup* dector_ZN10QUndoGroupC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QUndoGroup) == 32, "tyszerr");
-  QUndoGroup* rthis = new QUndoGroup(parent);
-  return rthis;
-}
-
-// ~QUndoGroup()
-void dedtor_ZN10QUndoGroupD0Ev(QUndoGroup* that)
-{
-  QUndoGroup* rthis = (QUndoGroup*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qundogroup_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

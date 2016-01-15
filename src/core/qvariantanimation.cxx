@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qvariantanimation.h
 // dst-file: /src/core/qvariantanimation.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qvariantanimation.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QVariantAnimation_Class_Size()
   return sizeof(QVariantAnimation);
 }
 
-// ~QVariantAnimation()
-void dedtor_ZN17QVariantAnimationD0Ev(QVariantAnimation* that)
-{
-  QVariantAnimation* rthis = (QVariantAnimation*)that;
-  delete rthis;
-}
-
-// QVariantAnimation(class QObject *)
-QVariantAnimation* dector_ZN17QVariantAnimationC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QVariantAnimation) == 32, "tyszerr");
-  QVariantAnimation* rthis = new QVariantAnimation(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qvariantanimation_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

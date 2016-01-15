@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qcolumnview.h
 // dst-file: /src/widgets/qcolumnview.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcolumnview.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QColumnView_Class_Size()
   return sizeof(QColumnView);
 }
 
-// QColumnView(class QWidget *)
-QColumnView* dector_ZN11QColumnViewC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QColumnView) == 32, "tyszerr");
-  QColumnView* rthis = new QColumnView(parent);
-  return rthis;
-}
-
-// ~QColumnView()
-void dedtor_ZN11QColumnViewD0Ev(QColumnView* that)
-{
-  QColumnView* rthis = (QColumnView*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcolumnview_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

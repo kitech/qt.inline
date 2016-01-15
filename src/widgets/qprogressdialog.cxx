@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qprogressdialog.h
 // dst-file: /src/widgets/qprogressdialog.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qprogressdialog.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QProgressDialog_Class_Size()
   return sizeof(QProgressDialog);
 }
 
-// QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
-QProgressDialog* dector_ZN15QProgressDialogC1ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QProgressDialog) == 32, "tyszerr");
-  QProgressDialog* rthis = new QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags);
-  return rthis;
-}
-
-// ~QProgressDialog()
-void dedtor_ZN15QProgressDialogD0Ev(QProgressDialog* that)
-{
-  QProgressDialog* rthis = (QProgressDialog*)that;
-  delete rthis;
-}
-
-// QProgressDialog(class QWidget *, Qt::WindowFlags)
-QProgressDialog* dector_ZN15QProgressDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QProgressDialog) == 32, "tyszerr");
-  QProgressDialog* rthis = new QProgressDialog(parent, flags);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qprogressdialog_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

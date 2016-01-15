@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qdebug.h
 // dst-file: /src/core/qdebug.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdebug.h>
 
 extern "C" {
@@ -14,66 +15,9 @@ int QNoDebug_Class_Size()
   return sizeof(QNoDebug);
 }
 
-  // proto:  QNoDebug & QNoDebug::maybeQuote(const char );
-QNoDebug * demth_ZN8QNoDebug10maybeQuoteEc(void *that, const char arg1)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->maybeQuote(arg1);
-}
-
-  // proto:  QNoDebug & QNoDebug::quote();
-QNoDebug * demth_ZN8QNoDebug5quoteEv(void *that)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->quote();
-}
-
-  // proto:  QNoDebug & QNoDebug::space();
-QNoDebug * demth_ZN8QNoDebug5spaceEv(void *that)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->space();
-}
-
-  // proto:  QNoDebug & QNoDebug::nospace();
-QNoDebug * demth_ZN8QNoDebug7nospaceEv(void *that)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->nospace();
-}
-
-  // proto:  QNoDebug & QNoDebug::noquote();
-QNoDebug * demth_ZN8QNoDebug7noquoteEv(void *that)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->noquote();
-}
-
-  // proto:  QNoDebug & QNoDebug::maybeSpace();
-QNoDebug * demth_ZN8QNoDebug10maybeSpaceEv(void *that)
-{
-  QNoDebug *cthat = (QNoDebug *)that;
-  return &cthat->maybeSpace();
-}
-
 int QDebugStateSaver_Class_Size()
 {
   return sizeof(QDebugStateSaver);
-}
-
-// QDebugStateSaver(class QDebug &)
-QDebugStateSaver* dector_ZN16QDebugStateSaverC1ER6QDebug(QDebug & dbg)
-{
-  // static_assert(sizeof(QDebugStateSaver) == 32, "tyszerr");
-  QDebugStateSaver* rthis = new QDebugStateSaver(dbg);
-  return rthis;
-}
-
-// ~QDebugStateSaver()
-void dedtor_ZN16QDebugStateSaverD0Ev(QDebugStateSaver* that)
-{
-  QDebugStateSaver* rthis = (QDebugStateSaver*)that;
-  delete rthis;
 }
 
 int QDebug_Class_Size()
@@ -81,141 +25,162 @@ int QDebug_Class_Size()
   return sizeof(QDebug);
 }
 
-// ~QDebug()
-void dedtor_ZN6QDebugD0Ev(QDebug* that)
-{
-  QDebug* rthis = (QDebug*)that;
-  delete rthis;
-}
-
-// QDebug(const class QDebug &)
-QDebug* dector_ZN6QDebugC1ERKS_(const QDebug & o)
-{
-  // static_assert(sizeof(QDebug) == 32, "tyszerr");
-  QDebug* rthis = new QDebug(o);
-  return rthis;
-}
-
-// QDebug(enum QtMsgType)
-QDebug* dector_ZN6QDebugC1E9QtMsgType(QtMsgType t)
-{
-  // static_assert(sizeof(QDebug) == 32, "tyszerr");
-  QDebug* rthis = new QDebug(t);
-  return rthis;
-}
-
-// QDebug(class QString *)
-QDebug* dector_ZN6QDebugC1EP7QString(QString * string)
-{
-  // static_assert(sizeof(QDebug) == 32, "tyszerr");
-  QDebug* rthis = new QDebug(string);
-  return rthis;
-}
-
-// QDebug(class QIODevice *)
-QDebug* dector_ZN6QDebugC1EP9QIODevice(QIODevice * device)
-{
-  // static_assert(sizeof(QDebug) == 32, "tyszerr");
-  QDebug* rthis = new QDebug(device);
-  return rthis;
-}
-
-  // proto:  QDebug & QDebug::noquote();
-QDebug * demth_ZN6QDebug7noquoteEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->noquote();
-}
-
-  // proto:  void QDebug::QDebug(const QDebug & o);
-void demth_ZN6QDebugC1ERKS_(void *that, const QDebug & o)
-{
-  QDebug *cthat = (QDebug *)that;
-  auto _o = new(that) QDebug(o);
-}
-
-  // proto:  QDebug & QDebug::space();
-QDebug * demth_ZN6QDebug5spaceEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->space();
-}
-
-  // proto:  void QDebug::QDebug(QtMsgType t);
-void demth_ZN6QDebugC1E9QtMsgType(void *that, QtMsgType t)
-{
-  QDebug *cthat = (QDebug *)that;
-  auto _o = new(that) QDebug(t);
-}
-
-  // proto:  QDebug & QDebug::maybeSpace();
-QDebug * demth_ZN6QDebug10maybeSpaceEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->maybeSpace();
-}
-
-  // proto:  void QDebug::setAutoInsertSpaces(bool b);
-void demth_ZN6QDebug19setAutoInsertSpacesEb(void *that, bool b)
-{
-  QDebug *cthat = (QDebug *)that;
-   cthat->setAutoInsertSpaces(b);
-}
-
-  // proto:  void QDebug::QDebug(QString * string);
-void demth_ZN6QDebugC1EP7QString(void *that, QString * string)
-{
-  QDebug *cthat = (QDebug *)that;
-  auto _o = new(that) QDebug(string);
-}
-
-  // proto:  void QDebug::swap(QDebug & other);
-void demth_ZN6QDebug4swapERS_(void *that, QDebug & other)
-{
-  QDebug *cthat = (QDebug *)that;
-   cthat->swap(other);
-}
-
-  // proto:  QDebug & QDebug::nospace();
-QDebug * demth_ZN6QDebug7nospaceEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->nospace();
-}
-
-  // proto:  bool QDebug::autoInsertSpaces();
-bool demth_ZNK6QDebug16autoInsertSpacesEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return cthat->autoInsertSpaces();
-}
-
-  // proto:  void QDebug::QDebug(QIODevice * device);
-void demth_ZN6QDebugC1EP9QIODevice(void *that, QIODevice * device)
-{
-  QDebug *cthat = (QDebug *)that;
-  auto _o = new(that) QDebug(device);
-}
-
-  // proto:  QDebug & QDebug::quote();
-QDebug * demth_ZN6QDebug5quoteEv(void *that)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->quote();
-}
-
-  // proto:  QDebug & QDebug::maybeQuote(char c);
-QDebug * demth_ZN6QDebug10maybeQuoteEc(void *that, char c)
-{
-  QDebug *cthat = (QDebug *)that;
-  return &cthat->maybeQuote(c);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdebug_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 165, column 22>
+//   // proto:  QNoDebug & QNoDebug::maybeQuote(const char );
+if (false) {
+  auto f = [](const char arg1) {
+    ((QNoDebug*)0)->maybeQuote(arg1);
+  };
+}
+// _ZN8QNoDebug10maybeQuoteEc maybeQuote(const char)
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 163, column 22>
+//   // proto:  QNoDebug & QNoDebug::quote();
+if (false) {
+  auto f = []() {
+    ((QNoDebug*)0)->quote();
+  };
+}
+// _ZN8QNoDebug5quoteEv quote()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 160, column 22>
+//   // proto:  QNoDebug & QNoDebug::space();
+if (false) {
+  auto f = []() {
+    ((QNoDebug*)0)->space();
+  };
+}
+// _ZN8QNoDebug5spaceEv space()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 161, column 22>
+//   // proto:  QNoDebug & QNoDebug::nospace();
+if (false) {
+  auto f = []() {
+    ((QNoDebug*)0)->nospace();
+  };
+}
+// _ZN8QNoDebug7nospaceEv nospace()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 164, column 22>
+//   // proto:  QNoDebug & QNoDebug::noquote();
+if (false) {
+  auto f = []() {
+    ((QNoDebug*)0)->noquote();
+  };
+}
+// _ZN8QNoDebug7noquoteEv noquote()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 162, column 22>
+//   // proto:  QNoDebug & QNoDebug::maybeSpace();
+if (false) {
+  auto f = []() {
+    ((QNoDebug*)0)->maybeSpace();
+  };
+}
+// _ZN8QNoDebug10maybeSpaceEv maybeSpace()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 104, column 20>
+//   // proto:  QDebug & QDebug::noquote();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->noquote();
+  };
+}
+// _ZN6QDebug7noquoteEv noquote()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 89, column 12>
+//   // proto:  void QDebug::QDebug(const QDebug & o);
+if (false) {
+  auto f = [](const QDebug & arg1) {
+    new QDebug(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 96, column 20>
+//   // proto:  QDebug & QDebug::space();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->space();
+  };
+}
+// _ZN6QDebug5spaceEv space()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 88, column 12>
+//   // proto:  void QDebug::QDebug(QtMsgType t);
+if (false) {
+  auto f = [](QtMsgType arg1) {
+    new QDebug(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 98, column 20>
+//   // proto:  QDebug & QDebug::maybeSpace();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->maybeSpace();
+  };
+}
+// _ZN6QDebug10maybeSpaceEv maybeSpace()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 101, column 10>
+//   // proto:  void QDebug::setAutoInsertSpaces(bool b);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QDebug*)0)->setAutoInsertSpaces(arg1);
+  };
+}
+// _ZN6QDebug19setAutoInsertSpacesEb setAutoInsertSpaces(_Bool)
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 87, column 12>
+//   // proto:  void QDebug::QDebug(QString * string);
+if (false) {
+  auto f = [](QString * arg1) {
+    new QDebug(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 92, column 17>
+//   // proto:  void QDebug::swap(QDebug & other);
+if (false) {
+  auto f = [](QDebug & arg1) {
+    ((QDebug*)0)->swap(arg1);
+  };
+}
+// _ZN6QDebug4swapERS_ swap(class QDebug &)
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 97, column 20>
+//   // proto:  QDebug & QDebug::nospace();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->nospace();
+  };
+}
+// _ZN6QDebug7nospaceEv nospace()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 100, column 10>
+//   // proto:  bool QDebug::autoInsertSpaces();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->autoInsertSpaces();
+  };
+}
+// _ZNK6QDebug16autoInsertSpacesEv autoInsertSpaces()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 86, column 12>
+//   // proto:  void QDebug::QDebug(QIODevice * device);
+if (false) {
+  auto f = [](QIODevice * arg1) {
+    new QDebug(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 103, column 20>
+//   // proto:  QDebug & QDebug::quote();
+if (false) {
+  auto f = []() {
+    ((QDebug*)0)->quote();
+  };
+}
+// _ZN6QDebug5quoteEv quote()
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 105, column 20>
+//   // proto:  QDebug & QDebug::maybeQuote(char c);
+if (false) {
+  auto f = [](char arg1) {
+    ((QDebug*)0)->maybeQuote(arg1);
+  };
+}
+// _ZN6QDebug10maybeQuoteEc maybeQuote(char)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

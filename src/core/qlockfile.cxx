@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qlockfile.h
 // dst-file: /src/core/qlockfile.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qlockfile.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QLockFile_Class_Size()
   return sizeof(QLockFile);
 }
 
-// ~QLockFile()
-void dedtor_ZN9QLockFileD0Ev(QLockFile* that)
-{
-  QLockFile* rthis = (QLockFile*)that;
-  delete rthis;
-}
-
-// QLockFile(const class QString &)
-QLockFile* dector_ZN9QLockFileC1ERK7QString(const QString & fileName)
-{
-  // static_assert(sizeof(QLockFile) == 32, "tyszerr");
-  QLockFile* rthis = new QLockFile(fileName);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qlockfile_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

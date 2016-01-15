@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpaintdevicewindow.h
 // dst-file: /src/gui/qpaintdevicewindow.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpaintdevicewindow.h>
 
 extern "C" {
@@ -19,6 +20,9 @@ int QPaintDeviceWindow_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qpaintdevicewindow_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

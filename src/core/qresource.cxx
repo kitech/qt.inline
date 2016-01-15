@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qresource.h
 // dst-file: /src/core/qresource.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qresource.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QResource_Class_Size()
   return sizeof(QResource);
 }
 
-// QResource(const class QString &, const class QLocale &)
-QResource* dector_ZN9QResourceC1ERK7QStringRK7QLocale(const QString & file, const QLocale & locale)
-{
-  // static_assert(sizeof(QResource) == 32, "tyszerr");
-  QResource* rthis = new QResource(file, locale);
-  return rthis;
-}
-
-// ~QResource()
-void dedtor_ZN9QResourceD0Ev(QResource* that)
-{
-  QResource* rthis = (QResource*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qresource_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

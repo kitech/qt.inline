@@ -1,10 +1,14 @@
+#include <qglobal.h>
+#include <qfontdatabase.h>
+#include <qlist.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qgraphicsscene.h
 // dst-file: /src/widgets/qgraphicsscene.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qgraphicsscene.h>
 
 extern "C" {
@@ -14,112 +18,94 @@ int QGraphicsScene_Class_Size()
   return sizeof(QGraphicsScene);
 }
 
-// QGraphicsScene(const class QRectF &, class QObject *)
-QGraphicsScene* dector_ZN14QGraphicsSceneC1ERK6QRectFP7QObject(const QRectF & sceneRect, QObject * parent)
-{
-  // static_assert(sizeof(QGraphicsScene) == 32, "tyszerr");
-  QGraphicsScene* rthis = new QGraphicsScene(sceneRect, parent);
-  return rthis;
-}
-
-// QGraphicsScene(class QObject *)
-QGraphicsScene* dector_ZN14QGraphicsSceneC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QGraphicsScene) == 32, "tyszerr");
-  QGraphicsScene* rthis = new QGraphicsScene(parent);
-  return rthis;
-}
-
-// ~QGraphicsScene()
-void dedtor_ZN14QGraphicsSceneD0Ev(QGraphicsScene* that)
-{
-  QGraphicsScene* rthis = (QGraphicsScene*)that;
-  delete rthis;
-}
-
-// QGraphicsScene(qreal, qreal, qreal, qreal, class QObject *)
-QGraphicsScene* dector_ZN14QGraphicsSceneC1EddddP7QObject(double x, double y, double width, double height, QObject * parent)
-{
-  // static_assert(sizeof(QGraphicsScene) == 32, "tyszerr");
-  QGraphicsScene* rthis = new QGraphicsScene(x, y, width, height, parent);
-  return rthis;
-}
-
-  // proto:  QList<QGraphicsItem *> QGraphicsScene::items(qreal x, qreal y, qreal w, qreal h, Qt::ItemSelectionMode mode, Qt::SortOrder order, const QTransform & deviceTransform);
-QList<QGraphicsItem *> demth_ZNK14QGraphicsScene5itemsEddddN2Qt17ItemSelectionModeENS0_9SortOrderERK10QTransform(void *that, double x, double y, double w, double h, Qt::ItemSelectionMode mode, Qt::SortOrder order, const QTransform & deviceTransform)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->items(x, y, w, h, mode, order, deviceTransform);
-}
-
-  // proto:  QGraphicsLineItem * QGraphicsScene::addLine(qreal x1, qreal y1, qreal x2, qreal y2, const QPen & pen);
-QGraphicsLineItem * demth_ZN14QGraphicsScene7addLineEddddRK4QPen(void *that, double x1, double y1, double x2, double y2, const QPen & pen)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->addLine(x1, y1, x2, y2, pen);
-}
-
-  // proto:  QGraphicsItem * QGraphicsScene::itemAt(qreal x, qreal y, const QTransform & deviceTransform);
-QGraphicsItem * demth_ZNK14QGraphicsScene6itemAtEddRK10QTransform(void *that, double x, double y, const QTransform & deviceTransform)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->itemAt(x, y, deviceTransform);
-}
-
-  // proto:  QGraphicsRectItem * QGraphicsScene::addRect(qreal x, qreal y, qreal w, qreal h, const QPen & pen, const QBrush & brush);
-QGraphicsRectItem * demth_ZN14QGraphicsScene7addRectEddddRK4QPenRK6QBrush(void *that, double x, double y, double w, double h, const QPen & pen, const QBrush & brush)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->addRect(x, y, w, h, pen, brush);
-}
-
-  // proto:  void QGraphicsScene::setSceneRect(qreal x, qreal y, qreal w, qreal h);
-void demth_ZN14QGraphicsScene12setSceneRectEdddd(void *that, double x, double y, double w, double h)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-   cthat->setSceneRect(x, y, w, h);
-}
-
-  // proto:  qreal QGraphicsScene::height();
-qreal demth_ZNK14QGraphicsScene6heightEv(void *that)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->height();
-}
-
-  // proto:  QGraphicsEllipseItem * QGraphicsScene::addEllipse(qreal x, qreal y, qreal w, qreal h, const QPen & pen, const QBrush & brush);
-QGraphicsEllipseItem * demth_ZN14QGraphicsScene10addEllipseEddddRK4QPenRK6QBrush(void *that, double x, double y, double w, double h, const QPen & pen, const QBrush & brush)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->addEllipse(x, y, w, h, pen, brush);
-}
-
-  // proto:  qreal QGraphicsScene::width();
-qreal demth_ZNK14QGraphicsScene5widthEv(void *that)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-  return cthat->width();
-}
-
-  // proto:  void QGraphicsScene::update(qreal x, qreal y, qreal w, qreal h);
-void demth_ZN14QGraphicsScene6updateEdddd(void *that, double x, double y, double w, double h)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-   cthat->update(x, y, w, h);
-}
-
-  // proto:  void QGraphicsScene::invalidate(qreal x, qreal y, qreal w, qreal h, SceneLayers layers);
-void demth_ZN14QGraphicsScene10invalidateEdddd6QFlagsINS_10SceneLayerEE(void *that, double x, double y, double w, double h, QGraphicsScene::SceneLayer layers)
-{
-  QGraphicsScene *cthat = (QGraphicsScene *)that;
-   cthat->invalidate(x, y, w, h, layers);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qgraphicsscene_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 164, column 35>
+//   // proto:  QList<QGraphicsItem *> QGraphicsScene::items(qreal x, qreal y, qreal w, qreal h, Qt::ItemSelectionMode mode, Qt::SortOrder order, const QTransform & deviceTransform);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4, Qt::ItemSelectionMode arg5, Qt::SortOrder arg6, const QTransform & arg7) {
+    ((QGraphicsScene*)0)->items(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+  };
+}
+// _ZNK14QGraphicsScene5itemsEddddN2Qt17ItemSelectionModeENS0_9SortOrderERK10QTransform items(qreal, qreal, qreal, qreal, Qt::ItemSelectionMode, Qt::SortOrder, const class QTransform &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 198, column 31>
+//   // proto:  QGraphicsLineItem * QGraphicsScene::addLine(qreal x1, qreal y1, qreal x2, qreal y2, const QPen & pen);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4, const QPen & arg5) {
+    ((QGraphicsScene*)0)->addLine(arg1, arg2, arg3, arg4, arg5);
+  };
+}
+// _ZN14QGraphicsScene7addLineEddddRK4QPen addLine(qreal, qreal, qreal, qreal, const class QPen &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 173, column 27>
+//   // proto:  QGraphicsItem * QGraphicsScene::itemAt(qreal x, qreal y, const QTransform & deviceTransform);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, const QTransform & arg3) {
+    ((QGraphicsScene*)0)->itemAt(arg1, arg2, arg3);
+  };
+}
+// _ZNK14QGraphicsScene6itemAtEddRK10QTransform itemAt(qreal, qreal, const class QTransform &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 200, column 31>
+//   // proto:  QGraphicsRectItem * QGraphicsScene::addRect(qreal x, qreal y, qreal w, qreal h, const QPen & pen, const QBrush & brush);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4, const QPen & arg5, const QBrush & arg6) {
+    ((QGraphicsScene*)0)->addRect(arg1, arg2, arg3, arg4, arg5, arg6);
+  };
+}
+// _ZN14QGraphicsScene7addRectEddddRK4QPenRK6QBrush addRect(qreal, qreal, qreal, qreal, const class QPen &, const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 127, column 17>
+//   // proto:  void QGraphicsScene::setSceneRect(qreal x, qreal y, qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
+    ((QGraphicsScene*)0)->setSceneRect(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZN14QGraphicsScene12setSceneRectEdddd setSceneRect(qreal, qreal, qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 125, column 18>
+//   // proto:  qreal QGraphicsScene::height();
+if (false) {
+  auto f = []() {
+    ((QGraphicsScene*)0)->height();
+  };
+}
+// _ZNK14QGraphicsScene6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 196, column 34>
+//   // proto:  QGraphicsEllipseItem * QGraphicsScene::addEllipse(qreal x, qreal y, qreal w, qreal h, const QPen & pen, const QBrush & brush);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4, const QPen & arg5, const QBrush & arg6) {
+    ((QGraphicsScene*)0)->addEllipse(arg1, arg2, arg3, arg4, arg5, arg6);
+  };
+}
+// _ZN14QGraphicsScene10addEllipseEddddRK4QPenRK6QBrush addEllipse(qreal, qreal, qreal, qreal, const class QPen &, const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 124, column 18>
+//   // proto:  qreal QGraphicsScene::width();
+if (false) {
+  auto f = []() {
+    ((QGraphicsScene*)0)->width();
+  };
+}
+// _ZNK14QGraphicsScene5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 225, column 17>
+//   // proto:  void QGraphicsScene::update(qreal x, qreal y, qreal w, qreal h);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
+    ((QGraphicsScene*)0)->update(arg1, arg2, arg3, arg4);
+  };
+}
+// _ZN14QGraphicsScene6updateEdddd update(qreal, qreal, qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 227, column 17>
+//   // proto:  void QGraphicsScene::invalidate(qreal x, qreal y, qreal w, qreal h, SceneLayers layers);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4, QGraphicsScene::SceneLayers arg5) {
+    ((QGraphicsScene*)0)->invalidate(arg1, arg2, arg3, arg4, arg5);
+  };
+}
+// _ZN14QGraphicsScene10invalidateEdddd6QFlagsINS_10SceneLayerEE invalidate(qreal, qreal, qreal, qreal, SceneLayers)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

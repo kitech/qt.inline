@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qbasictimer.h
 // dst-file: /src/core/qbasictimer.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qbasictimer.h>
 
 extern "C" {
@@ -14,54 +15,41 @@ int QBasicTimer_Class_Size()
   return sizeof(QBasicTimer);
 }
 
-// ~QBasicTimer()
-void dedtor_ZN11QBasicTimerD0Ev(QBasicTimer* that)
-{
-  QBasicTimer* rthis = (QBasicTimer*)that;
-  delete rthis;
-}
-
-// QBasicTimer()
-QBasicTimer* dector_ZN11QBasicTimerC1Ev()
-{
-  // static_assert(sizeof(QBasicTimer) == 32, "tyszerr");
-  QBasicTimer* rthis = new QBasicTimer();
-  return rthis;
-}
-
-  // proto:  void QBasicTimer::~QBasicTimer();
-void demth_ZN11QBasicTimerD0Ev(void *that)
-{
-  QBasicTimer *cthat = (QBasicTimer *)that;
-   cthat->~QBasicTimer();
-}
-
-  // proto:  int QBasicTimer::timerId();
-int demth_ZNK11QBasicTimer7timerIdEv(void *that)
-{
-  QBasicTimer *cthat = (QBasicTimer *)that;
-  return cthat->timerId();
-}
-
-  // proto:  bool QBasicTimer::isActive();
-bool demth_ZNK11QBasicTimer8isActiveEv(void *that)
-{
-  QBasicTimer *cthat = (QBasicTimer *)that;
-  return cthat->isActive();
-}
-
-  // proto:  void QBasicTimer::QBasicTimer();
-void demth_ZN11QBasicTimerC1Ev(void *that)
-{
-  QBasicTimer *cthat = (QBasicTimer *)that;
-  auto _o = new(that) QBasicTimer();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qbasictimer_inline_symbols() {
+//   // proto:  void QBasicTimer::~QBasicTimer();
+if (false) {
+  delete ((QBasicTimer*)0);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 53, column 16>
+//   // proto:  int QBasicTimer::timerId();
+if (false) {
+  auto f = []() {
+    ((QBasicTimer*)0)->timerId();
+  };
+}
+// _ZNK11QBasicTimer7timerIdEv timerId()
+// <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 52, column 17>
+//   // proto:  bool QBasicTimer::isActive();
+if (false) {
+  auto f = []() {
+    ((QBasicTimer*)0)->isActive();
+  };
+}
+// _ZNK11QBasicTimer8isActiveEv isActive()
+// <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 49, column 12>
+//   // proto:  void QBasicTimer::QBasicTimer();
+if (false) {
+  auto f = []() {
+    new QBasicTimer();
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

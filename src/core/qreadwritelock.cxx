@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qreadwritelock.h
 // dst-file: /src/core/qreadwritelock.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qreadwritelock.h>
 
 extern "C" {
@@ -14,74 +15,9 @@ int QWriteLocker_Class_Size()
   return sizeof(QWriteLocker);
 }
 
-// QWriteLocker(class QReadWriteLock *)
-QWriteLocker* dector_ZN12QWriteLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock)
-{
-  // static_assert(sizeof(QWriteLocker) == 32, "tyszerr");
-  QWriteLocker* rthis = new QWriteLocker(readWriteLock);
-  return rthis;
-}
-
-// ~QWriteLocker()
-void dedtor_ZN12QWriteLockerD0Ev(QWriteLocker* that)
-{
-  QWriteLocker* rthis = (QWriteLocker*)that;
-  delete rthis;
-}
-
-  // proto:  QReadWriteLock * QWriteLocker::readWriteLock();
-QReadWriteLock * demth_ZNK12QWriteLocker13readWriteLockEv(void *that)
-{
-  QWriteLocker *cthat = (QWriteLocker *)that;
-  return cthat->readWriteLock();
-}
-
-  // proto:  void QWriteLocker::QWriteLocker(QReadWriteLock * readWriteLock);
-void demth_ZN12QWriteLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
-{
-  QWriteLocker *cthat = (QWriteLocker *)that;
-  auto _o = new(that) QWriteLocker(readWriteLock);
-}
-
-  // proto:  void QWriteLocker::unlock();
-void demth_ZN12QWriteLocker6unlockEv(void *that)
-{
-  QWriteLocker *cthat = (QWriteLocker *)that;
-   cthat->unlock();
-}
-
-  // proto:  void QWriteLocker::~QWriteLocker();
-void demth_ZN12QWriteLockerD0Ev(void *that)
-{
-  QWriteLocker *cthat = (QWriteLocker *)that;
-   cthat->~QWriteLocker();
-}
-
-  // proto:  void QWriteLocker::relock();
-void demth_ZN12QWriteLocker6relockEv(void *that)
-{
-  QWriteLocker *cthat = (QWriteLocker *)that;
-   cthat->relock();
-}
-
 int QReadWriteLock_Class_Size()
 {
   return sizeof(QReadWriteLock);
-}
-
-// ~QReadWriteLock()
-void dedtor_ZN14QReadWriteLockD0Ev(QReadWriteLock* that)
-{
-  QReadWriteLock* rthis = (QReadWriteLock*)that;
-  delete rthis;
-}
-
-// QReadWriteLock(enum QReadWriteLock::RecursionMode)
-QReadWriteLock* dector_ZN14QReadWriteLockC1ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode)
-{
-  // static_assert(sizeof(QReadWriteLock) == 32, "tyszerr");
-  QReadWriteLock* rthis = new QReadWriteLock(recursionMode);
-  return rthis;
 }
 
 int QReadLocker_Class_Size()
@@ -89,61 +25,84 @@ int QReadLocker_Class_Size()
   return sizeof(QReadLocker);
 }
 
-// ~QReadLocker()
-void dedtor_ZN11QReadLockerD0Ev(QReadLocker* that)
-{
-  QReadLocker* rthis = (QReadLocker*)that;
-  delete rthis;
-}
-
-// QReadLocker(class QReadWriteLock *)
-QReadLocker* dector_ZN11QReadLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock)
-{
-  // static_assert(sizeof(QReadLocker) == 32, "tyszerr");
-  QReadLocker* rthis = new QReadLocker(readWriteLock);
-  return rthis;
-}
-
-  // proto:  QReadWriteLock * QReadLocker::readWriteLock();
-QReadWriteLock * demth_ZNK11QReadLocker13readWriteLockEv(void *that)
-{
-  QReadLocker *cthat = (QReadLocker *)that;
-  return cthat->readWriteLock();
-}
-
-  // proto:  void QReadLocker::~QReadLocker();
-void demth_ZN11QReadLockerD0Ev(void *that)
-{
-  QReadLocker *cthat = (QReadLocker *)that;
-   cthat->~QReadLocker();
-}
-
-  // proto:  void QReadLocker::QReadLocker(QReadWriteLock * readWriteLock);
-void demth_ZN11QReadLockerC1EP14QReadWriteLock(void *that, QReadWriteLock * readWriteLock)
-{
-  QReadLocker *cthat = (QReadLocker *)that;
-  auto _o = new(that) QReadLocker(readWriteLock);
-}
-
-  // proto:  void QReadLocker::relock();
-void demth_ZN11QReadLocker6relockEv(void *that)
-{
-  QReadLocker *cthat = (QReadLocker *)that;
-   cthat->relock();
-}
-
-  // proto:  void QReadLocker::unlock();
-void demth_ZN11QReadLocker6unlockEv(void *that)
-{
-  QReadLocker *cthat = (QReadLocker *)that;
-   cthat->unlock();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qreadwritelock_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 148, column 28>
+//   // proto:  QReadWriteLock * QWriteLocker::readWriteLock();
+if (false) {
+  auto f = []() {
+    ((QWriteLocker*)0)->readWriteLock();
+  };
+}
+// _ZNK12QWriteLocker13readWriteLockEv readWriteLock()
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 123, column 12>
+//   // proto:  void QWriteLocker::QWriteLocker(QReadWriteLock * readWriteLock);
+if (false) {
+  auto f = [](QReadWriteLock * arg1) {
+    new QWriteLocker(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 128, column 17>
+//   // proto:  void QWriteLocker::unlock();
+if (false) {
+  auto f = []() {
+    ((QWriteLocker*)0)->unlock();
+  };
+}
+// _ZN12QWriteLocker6unlockEv unlock()
+//   // proto:  void QWriteLocker::~QWriteLocker();
+if (false) {
+  delete ((QWriteLocker*)0);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 138, column 17>
+//   // proto:  void QWriteLocker::relock();
+if (false) {
+  auto f = []() {
+    ((QWriteLocker*)0)->relock();
+  };
+}
+// _ZN12QWriteLocker6relockEv relock()
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 104, column 28>
+//   // proto:  QReadWriteLock * QReadLocker::readWriteLock();
+if (false) {
+  auto f = []() {
+    ((QReadLocker*)0)->readWriteLock();
+  };
+}
+// _ZNK11QReadLocker13readWriteLockEv readWriteLock()
+//   // proto:  void QReadLocker::~QReadLocker();
+if (false) {
+  delete ((QReadLocker*)0);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 79, column 12>
+//   // proto:  void QReadLocker::QReadLocker(QReadWriteLock * readWriteLock);
+if (false) {
+  auto f = [](QReadWriteLock * arg1) {
+    new QReadLocker(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 94, column 17>
+//   // proto:  void QReadLocker::relock();
+if (false) {
+  auto f = []() {
+    ((QReadLocker*)0)->relock();
+  };
+}
+// _ZN11QReadLocker6relockEv relock()
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 84, column 17>
+//   // proto:  void QReadLocker::unlock();
+if (false) {
+  auto f = []() {
+    ((QReadLocker*)0)->unlock();
+  };
+}
+// _ZN11QReadLocker6unlockEv unlock()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

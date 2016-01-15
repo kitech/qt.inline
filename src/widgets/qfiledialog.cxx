@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qfiledialog.h
 // dst-file: /src/widgets/qfiledialog.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfiledialog.h>
 
 extern "C" {
@@ -14,41 +15,22 @@ int QFileDialog_Class_Size()
   return sizeof(QFileDialog);
 }
 
-// QFileDialog(class QWidget *, Qt::WindowFlags)
-QFileDialog* dector_ZN11QFileDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
-{
-  // static_assert(sizeof(QFileDialog) == 32, "tyszerr");
-  QFileDialog* rthis = new QFileDialog(parent, f);
-  return rthis;
-}
-
-// ~QFileDialog()
-void dedtor_ZN11QFileDialogD0Ev(QFileDialog* that)
-{
-  QFileDialog* rthis = (QFileDialog*)that;
-  delete rthis;
-}
-
-// QFileDialog(class QWidget *, const class QString &, const class QString &, const class QString &)
-QFileDialog* dector_ZN11QFileDialogC1EP7QWidgetRK7QStringS4_S4_(QWidget * parent, const QString & caption, const QString & directory, const QString & filter)
-{
-  // static_assert(sizeof(QFileDialog) == 32, "tyszerr");
-  QFileDialog* rthis = new QFileDialog(parent, caption, directory, filter);
-  return rthis;
-}
-
-  // proto:  void QFileDialog::setDirectory(const QDir & directory);
-void demth_ZN11QFileDialog12setDirectoryERK4QDir(void *that, const QDir & directory)
-{
-  QFileDialog *cthat = (QFileDialog *)that;
-   cthat->setDirectory(directory);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfiledialog_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfiledialog.h', line 101, column 17>
+//   // proto:  void QFileDialog::setDirectory(const QDir & directory);
+if (false) {
+  auto f = [](const QDir & arg1) {
+    ((QFileDialog*)0)->setDirectory(arg1);
+  };
+}
+// _ZN11QFileDialog12setDirectoryERK4QDir setDirectory(const class QDir &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,20 @@
+#include <qimage.h>
+#include <qvector.h>
+#include <qpen.h>
+#include <qcolor.h>
+#include <qfont.h>
+#include <qbrush.h>
+#include <qnamespace.h>
+#include <qstring.h>
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextformat.h
 // dst-file: /src/gui/qtextformat.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextformat.h>
 
 extern "C" {
@@ -14,111 +24,9 @@ int QTextLength_Class_Size()
   return sizeof(QTextLength);
 }
 
-// QTextLength(enum QTextLength::Type, qreal)
-QTextLength* dector_ZN11QTextLengthC1ENS_4TypeEd(QTextLength::Type type, double value)
-{
-  // static_assert(sizeof(QTextLength) == 32, "tyszerr");
-  QTextLength* rthis = new QTextLength(type, value);
-  return rthis;
-}
-
-// QTextLength()
-QTextLength* dector_ZN11QTextLengthC1Ev()
-{
-  // static_assert(sizeof(QTextLength) == 32, "tyszerr");
-  QTextLength* rthis = new QTextLength();
-  return rthis;
-}
-
-  // proto:  void QTextLength::QTextLength(QTextLength::Type type, qreal value);
-void demth_ZN11QTextLengthC1ENS_4TypeEd(void *that, QTextLength::Type type, double value)
-{
-  QTextLength *cthat = (QTextLength *)that;
-  auto _o = new(that) QTextLength(type, value);
-}
-
-  // proto:  qreal QTextLength::value(qreal maximumLength);
-qreal demth_ZNK11QTextLength5valueEd(void *that, double maximumLength)
-{
-  QTextLength *cthat = (QTextLength *)that;
-  return cthat->value(maximumLength);
-}
-
-  // proto:  void QTextLength::QTextLength();
-void demth_ZN11QTextLengthC1Ev(void *that)
-{
-  QTextLength *cthat = (QTextLength *)that;
-  auto _o = new(that) QTextLength();
-}
-
-  // proto:  qreal QTextLength::rawValue();
-qreal demth_ZNK11QTextLength8rawValueEv(void *that)
-{
-  QTextLength *cthat = (QTextLength *)that;
-  return cthat->rawValue();
-}
-
 int QTextImageFormat_Class_Size()
 {
   return sizeof(QTextImageFormat);
-}
-
-// QTextImageFormat()
-QTextImageFormat* dector_ZN16QTextImageFormatC1Ev()
-{
-  // static_assert(sizeof(QTextImageFormat) == 32, "tyszerr");
-  QTextImageFormat* rthis = new QTextImageFormat();
-  return rthis;
-}
-
-  // proto:  bool QTextImageFormat::isValid();
-bool demth_ZNK16QTextImageFormat7isValidEv(void *that)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  qreal QTextImageFormat::width();
-qreal demth_ZNK16QTextImageFormat5widthEv(void *that)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-  return cthat->width();
-}
-
-  // proto:  void QTextImageFormat::setHeight(qreal height);
-void demth_ZN16QTextImageFormat9setHeightEd(void *that, double height)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-   cthat->setHeight(height);
-}
-
-  // proto:  void QTextImageFormat::setWidth(qreal width);
-void demth_ZN16QTextImageFormat8setWidthEd(void *that, double width)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-   cthat->setWidth(width);
-}
-
-  // proto:  void QTextImageFormat::setName(const QString & name);
-void demth_ZN16QTextImageFormat7setNameERK7QString(void *that, const QString & name)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-   cthat->setName(name);
-}
-
-  // proto:  QString QTextImageFormat::name();
-QString* demth_ZNK16QTextImageFormat4nameEv(void *that)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-  auto recret = cthat->name();
-  return new QString(recret);
-}
-
-  // proto:  qreal QTextImageFormat::height();
-qreal demth_ZNK16QTextImageFormat6heightEv(void *that)
-{
-  QTextImageFormat *cthat = (QTextImageFormat *)that;
-  return cthat->height();
 }
 
 int QTextFormat_Class_Size()
@@ -126,330 +34,9 @@ int QTextFormat_Class_Size()
   return sizeof(QTextFormat);
 }
 
-// ~QTextFormat()
-void dedtor_ZN11QTextFormatD0Ev(QTextFormat* that)
-{
-  QTextFormat* rthis = (QTextFormat*)that;
-  delete rthis;
-}
-
-// QTextFormat(const class QTextFormat &)
-QTextFormat* dector_ZN11QTextFormatC1ERKS_(const QTextFormat & rhs)
-{
-  // static_assert(sizeof(QTextFormat) == 32, "tyszerr");
-  QTextFormat* rthis = new QTextFormat(rhs);
-  return rthis;
-}
-
-// QTextFormat()
-QTextFormat* dector_ZN11QTextFormatC1Ev()
-{
-  // static_assert(sizeof(QTextFormat) == 32, "tyszerr");
-  QTextFormat* rthis = new QTextFormat();
-  return rthis;
-}
-
-// QTextFormat(int)
-QTextFormat* dector_ZN11QTextFormatC1Ei(int type)
-{
-  // static_assert(sizeof(QTextFormat) == 32, "tyszerr");
-  QTextFormat* rthis = new QTextFormat(type);
-  return rthis;
-}
-
-  // proto:  void QTextFormat::setLayoutDirection(Qt::LayoutDirection direction);
-void demth_ZN11QTextFormat18setLayoutDirectionEN2Qt15LayoutDirectionE(void *that, Qt::LayoutDirection direction)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->setLayoutDirection(direction);
-}
-
-  // proto:  void QTextFormat::clearForeground();
-void demth_ZN11QTextFormat15clearForegroundEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->clearForeground();
-}
-
-  // proto:  bool QTextFormat::isTableCellFormat();
-bool demth_ZNK11QTextFormat17isTableCellFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isTableCellFormat();
-}
-
-  // proto:  bool QTextFormat::isValid();
-bool demth_ZNK11QTextFormat7isValidEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextFormat::setForeground(const QBrush & brush);
-void demth_ZN11QTextFormat13setForegroundERK6QBrush(void *that, const QBrush & brush)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->setForeground(brush);
-}
-
-  // proto:  bool QTextFormat::isListFormat();
-bool demth_ZNK11QTextFormat12isListFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isListFormat();
-}
-
-  // proto:  bool QTextFormat::isImageFormat();
-bool demth_ZNK11QTextFormat13isImageFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isImageFormat();
-}
-
-  // proto:  bool QTextFormat::isTableFormat();
-bool demth_ZNK11QTextFormat13isTableFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isTableFormat();
-}
-
-  // proto:  bool QTextFormat::isCharFormat();
-bool demth_ZNK11QTextFormat12isCharFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isCharFormat();
-}
-
-  // proto:  void QTextFormat::clearBackground();
-void demth_ZN11QTextFormat15clearBackgroundEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->clearBackground();
-}
-
-  // proto:  bool QTextFormat::isBlockFormat();
-bool demth_ZNK11QTextFormat13isBlockFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isBlockFormat();
-}
-
-  // proto:  QBrush QTextFormat::background();
-QBrush* demth_ZNK11QTextFormat10backgroundEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  auto recret = cthat->background();
-  return new QBrush(recret);
-}
-
-  // proto:  void QTextFormat::swap(QTextFormat & other);
-void demth_ZN11QTextFormat4swapERS_(void *that, QTextFormat & other)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->swap(other);
-}
-
-  // proto:  QBrush QTextFormat::foreground();
-QBrush* demth_ZNK11QTextFormat10foregroundEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  auto recret = cthat->foreground();
-  return new QBrush(recret);
-}
-
-  // proto:  void QTextFormat::setObjectType(int type);
-void demth_ZN11QTextFormat13setObjectTypeEi(void *that, int type)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->setObjectType(type);
-}
-
-  // proto:  void QTextFormat::setBackground(const QBrush & brush);
-void demth_ZN11QTextFormat13setBackgroundERK6QBrush(void *that, const QBrush & brush)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-   cthat->setBackground(brush);
-}
-
-  // proto:  bool QTextFormat::isFrameFormat();
-bool demth_ZNK11QTextFormat13isFrameFormatEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isFrameFormat();
-}
-
-  // proto:  bool QTextFormat::isEmpty();
-bool demth_ZNK11QTextFormat7isEmptyEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->isEmpty();
-}
-
-  // proto:  int QTextFormat::objectType();
-int demth_ZNK11QTextFormat10objectTypeEv(void *that)
-{
-  QTextFormat *cthat = (QTextFormat *)that;
-  return cthat->objectType();
-}
-
 int QTextBlockFormat_Class_Size()
 {
   return sizeof(QTextBlockFormat);
-}
-
-// QTextBlockFormat()
-QTextBlockFormat* dector_ZN16QTextBlockFormatC1Ev()
-{
-  // static_assert(sizeof(QTextBlockFormat) == 32, "tyszerr");
-  QTextBlockFormat* rthis = new QTextBlockFormat();
-  return rthis;
-}
-
-  // proto:  int QTextBlockFormat::indent();
-int demth_ZNK16QTextBlockFormat6indentEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->indent();
-}
-
-  // proto:  void QTextBlockFormat::setTextIndent(qreal aindent);
-void demth_ZN16QTextBlockFormat13setTextIndentEd(void *that, double aindent)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setTextIndent(aindent);
-}
-
-  // proto:  void QTextBlockFormat::setNonBreakableLines(bool b);
-void demth_ZN16QTextBlockFormat20setNonBreakableLinesEb(void *that, bool b)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setNonBreakableLines(b);
-}
-
-  // proto:  void QTextBlockFormat::setIndent(int indent);
-void demth_ZN16QTextBlockFormat9setIndentEi(void *that, int indent)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setIndent(indent);
-}
-
-  // proto:  qreal QTextBlockFormat::textIndent();
-qreal demth_ZNK16QTextBlockFormat10textIndentEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->textIndent();
-}
-
-  // proto:  qreal QTextBlockFormat::lineHeight();
-qreal demth_ZNK16QTextBlockFormat10lineHeightEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->lineHeight();
-}
-
-  // proto:  void QTextBlockFormat::setPageBreakPolicy(PageBreakFlags flags);
-void demth_ZN16QTextBlockFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBreakFlagEE(void *that, QTextFormat::PageBreakFlag flags)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setPageBreakPolicy(flags);
-}
-
-  // proto:  qreal QTextBlockFormat::lineHeight(qreal scriptLineHeight, qreal scaling);
-qreal demth_ZNK16QTextBlockFormat10lineHeightEdd(void *that, double scriptLineHeight, double scaling)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->lineHeight(scriptLineHeight, scaling);
-}
-
-  // proto:  void QTextBlockFormat::setRightMargin(qreal margin);
-void demth_ZN16QTextBlockFormat14setRightMarginEd(void *that, double margin)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setRightMargin(margin);
-}
-
-  // proto:  qreal QTextBlockFormat::topMargin();
-qreal demth_ZNK16QTextBlockFormat9topMarginEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->topMargin();
-}
-
-  // proto:  qreal QTextBlockFormat::rightMargin();
-qreal demth_ZNK16QTextBlockFormat11rightMarginEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->rightMargin();
-}
-
-  // proto:  qreal QTextBlockFormat::bottomMargin();
-qreal demth_ZNK16QTextBlockFormat12bottomMarginEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->bottomMargin();
-}
-
-  // proto:  void QTextBlockFormat::setTopMargin(qreal margin);
-void demth_ZN16QTextBlockFormat12setTopMarginEd(void *that, double margin)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setTopMargin(margin);
-}
-
-  // proto:  qreal QTextBlockFormat::leftMargin();
-qreal demth_ZNK16QTextBlockFormat10leftMarginEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->leftMargin();
-}
-
-  // proto:  void QTextBlockFormat::setAlignment(Qt::Alignment alignment);
-void demth_ZN16QTextBlockFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *that, Qt::Alignment alignment)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setAlignment(alignment);
-}
-
-  // proto:  void QTextBlockFormat::setLineHeight(qreal height, int heightType);
-void demth_ZN16QTextBlockFormat13setLineHeightEdi(void *that, double height, int heightType)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setLineHeight(height, heightType);
-}
-
-  // proto:  void QTextBlockFormat::setBottomMargin(qreal margin);
-void demth_ZN16QTextBlockFormat15setBottomMarginEd(void *that, double margin)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setBottomMargin(margin);
-}
-
-  // proto:  int QTextBlockFormat::lineHeightType();
-int demth_ZNK16QTextBlockFormat14lineHeightTypeEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->lineHeightType();
-}
-
-  // proto:  void QTextBlockFormat::setLeftMargin(qreal margin);
-void demth_ZN16QTextBlockFormat13setLeftMarginEd(void *that, double margin)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-   cthat->setLeftMargin(margin);
-}
-
-  // proto:  bool QTextBlockFormat::isValid();
-bool demth_ZNK16QTextBlockFormat7isValidEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  bool QTextBlockFormat::nonBreakableLines();
-bool demth_ZNK16QTextBlockFormat17nonBreakableLinesEv(void *that)
-{
-  QTextBlockFormat *cthat = (QTextBlockFormat *)that;
-  return cthat->nonBreakableLines();
 }
 
 int QTextCharFormat_Class_Size()
@@ -457,443 +44,9 @@ int QTextCharFormat_Class_Size()
   return sizeof(QTextCharFormat);
 }
 
-// QTextCharFormat()
-QTextCharFormat* dector_ZN15QTextCharFormatC1Ev()
-{
-  // static_assert(sizeof(QTextCharFormat) == 32, "tyszerr");
-  QTextCharFormat* rthis = new QTextCharFormat();
-  return rthis;
-}
-
-  // proto:  void QTextCharFormat::setFontCapitalization(QFont::Capitalization capitalization);
-void demth_ZN15QTextCharFormat21setFontCapitalizationEN5QFont14CapitalizationE(void *that, QFont::Capitalization capitalization)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontCapitalization(capitalization);
-}
-
-  // proto:  void QTextCharFormat::setFontLetterSpacing(qreal spacing);
-void demth_ZN15QTextCharFormat20setFontLetterSpacingEd(void *that, double spacing)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontLetterSpacing(spacing);
-}
-
-  // proto:  bool QTextCharFormat::isAnchor();
-bool demth_ZNK15QTextCharFormat8isAnchorEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->isAnchor();
-}
-
-  // proto:  void QTextCharFormat::setFontHintingPreference(QFont::HintingPreference hintingPreference);
-void demth_ZN15QTextCharFormat24setFontHintingPreferenceEN5QFont17HintingPreferenceE(void *that, QFont::HintingPreference hintingPreference)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontHintingPreference(hintingPreference);
-}
-
-  // proto:  bool QTextCharFormat::fontOverline();
-bool demth_ZNK15QTextCharFormat12fontOverlineEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontOverline();
-}
-
-  // proto:  QString QTextCharFormat::fontFamily();
-QString* demth_ZNK15QTextCharFormat10fontFamilyEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  auto recret = cthat->fontFamily();
-  return new QString(recret);
-}
-
-  // proto:  bool QTextCharFormat::fontStrikeOut();
-bool demth_ZNK15QTextCharFormat13fontStrikeOutEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontStrikeOut();
-}
-
-  // proto:  void QTextCharFormat::setFontPointSize(qreal size);
-void demth_ZN15QTextCharFormat16setFontPointSizeEd(void *that, double size)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontPointSize(size);
-}
-
-  // proto:  void QTextCharFormat::setUnderlineColor(const QColor & color);
-void demth_ZN15QTextCharFormat17setUnderlineColorERK6QColor(void *that, const QColor & color)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setUnderlineColor(color);
-}
-
-  // proto:  int QTextCharFormat::tableCellRowSpan();
-int demth_ZNK15QTextCharFormat16tableCellRowSpanEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->tableCellRowSpan();
-}
-
-  // proto:  void QTextCharFormat::setFontUnderline(bool underline);
-void demth_ZN15QTextCharFormat16setFontUnderlineEb(void *that, bool underline)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontUnderline(underline);
-}
-
-  // proto:  bool QTextCharFormat::isValid();
-bool demth_ZNK15QTextCharFormat7isValidEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  bool QTextCharFormat::fontItalic();
-bool demth_ZNK15QTextCharFormat10fontItalicEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontItalic();
-}
-
-  // proto:  void QTextCharFormat::setToolTip(const QString & tip);
-void demth_ZN15QTextCharFormat10setToolTipERK7QString(void *that, const QString & tip)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setToolTip(tip);
-}
-
-  // proto:  void QTextCharFormat::setTextOutline(const QPen & pen);
-void demth_ZN15QTextCharFormat14setTextOutlineERK4QPen(void *that, const QPen & pen)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setTextOutline(pen);
-}
-
-  // proto:  void QTextCharFormat::setTableCellRowSpan(int tableCellRowSpan);
-void demth_ZN15QTextCharFormat19setTableCellRowSpanEi(void *that, int tableCellRowSpan)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setTableCellRowSpan(tableCellRowSpan);
-}
-
-  // proto:  void QTextCharFormat::setVerticalAlignment(QTextCharFormat::VerticalAlignment alignment);
-void demth_ZN15QTextCharFormat20setVerticalAlignmentENS_17VerticalAlignmentE(void *that, QTextCharFormat::VerticalAlignment alignment)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setVerticalAlignment(alignment);
-}
-
-  // proto:  void QTextCharFormat::setAnchor(bool anchor);
-void demth_ZN15QTextCharFormat9setAnchorEb(void *that, bool anchor)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setAnchor(anchor);
-}
-
-  // proto:  qreal QTextCharFormat::fontPointSize();
-qreal demth_ZNK15QTextCharFormat13fontPointSizeEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontPointSize();
-}
-
-  // proto:  void QTextCharFormat::setFontStrikeOut(bool strikeOut);
-void demth_ZN15QTextCharFormat16setFontStrikeOutEb(void *that, bool strikeOut)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontStrikeOut(strikeOut);
-}
-
-  // proto:  qreal QTextCharFormat::fontWordSpacing();
-qreal demth_ZNK15QTextCharFormat15fontWordSpacingEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontWordSpacing();
-}
-
-  // proto:  QString QTextCharFormat::toolTip();
-QString* demth_ZNK15QTextCharFormat7toolTipEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  auto recret = cthat->toolTip();
-  return new QString(recret);
-}
-
-  // proto:  void QTextCharFormat::setAnchorNames(const QStringList & names);
-void demth_ZN15QTextCharFormat14setAnchorNamesERK11QStringList(void *that, const QStringList & names)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setAnchorNames(names);
-}
-
-  // proto:  void QTextCharFormat::setFontFixedPitch(bool fixedPitch);
-void demth_ZN15QTextCharFormat17setFontFixedPitchEb(void *that, bool fixedPitch)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontFixedPitch(fixedPitch);
-}
-
-  // proto:  void QTextCharFormat::setFontStyleStrategy(QFont::StyleStrategy strategy);
-void demth_ZN15QTextCharFormat20setFontStyleStrategyEN5QFont13StyleStrategyE(void *that, QFont::StyleStrategy strategy)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontStyleStrategy(strategy);
-}
-
-  // proto:  void QTextCharFormat::setFontItalic(bool italic);
-void demth_ZN15QTextCharFormat13setFontItalicEb(void *that, bool italic)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontItalic(italic);
-}
-
-  // proto:  void QTextCharFormat::setFontFamily(const QString & family);
-void demth_ZN15QTextCharFormat13setFontFamilyERK7QString(void *that, const QString & family)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontFamily(family);
-}
-
-  // proto:  bool QTextCharFormat::fontFixedPitch();
-bool demth_ZNK15QTextCharFormat14fontFixedPitchEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontFixedPitch();
-}
-
-  // proto:  void QTextCharFormat::setAnchorHref(const QString & value);
-void demth_ZN15QTextCharFormat13setAnchorHrefERK7QString(void *that, const QString & value)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setAnchorHref(value);
-}
-
-  // proto:  int QTextCharFormat::fontStretch();
-int demth_ZNK15QTextCharFormat11fontStretchEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontStretch();
-}
-
-  // proto:  void QTextCharFormat::setFontKerning(bool enable);
-void demth_ZN15QTextCharFormat14setFontKerningEb(void *that, bool enable)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontKerning(enable);
-}
-
-  // proto:  int QTextCharFormat::tableCellColumnSpan();
-int demth_ZNK15QTextCharFormat19tableCellColumnSpanEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->tableCellColumnSpan();
-}
-
-  // proto:  qreal QTextCharFormat::fontLetterSpacing();
-qreal demth_ZNK15QTextCharFormat17fontLetterSpacingEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontLetterSpacing();
-}
-
-  // proto:  void QTextCharFormat::setFontLetterSpacingType(QFont::SpacingType letterSpacingType);
-void demth_ZN15QTextCharFormat24setFontLetterSpacingTypeEN5QFont11SpacingTypeE(void *that, QFont::SpacingType letterSpacingType)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontLetterSpacingType(letterSpacingType);
-}
-
-  // proto:  QString QTextCharFormat::anchorHref();
-QString* demth_ZNK15QTextCharFormat10anchorHrefEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  auto recret = cthat->anchorHref();
-  return new QString(recret);
-}
-
-  // proto:  void QTextCharFormat::setFontStretch(int factor);
-void demth_ZN15QTextCharFormat14setFontStretchEi(void *that, int factor)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontStretch(factor);
-}
-
-  // proto:  void QTextCharFormat::setAnchorName(const QString & name);
-void demth_ZN15QTextCharFormat13setAnchorNameERK7QString(void *that, const QString & name)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setAnchorName(name);
-}
-
-  // proto:  bool QTextCharFormat::fontKerning();
-bool demth_ZNK15QTextCharFormat11fontKerningEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontKerning();
-}
-
-  // proto:  void QTextCharFormat::setFontWeight(int weight);
-void demth_ZN15QTextCharFormat13setFontWeightEi(void *that, int weight)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontWeight(weight);
-}
-
-  // proto:  void QTextCharFormat::setFontStyleHint(QFont::StyleHint hint, QFont::StyleStrategy strategy);
-void demth_ZN15QTextCharFormat16setFontStyleHintEN5QFont9StyleHintENS0_13StyleStrategyE(void *that, QFont::StyleHint hint, QFont::StyleStrategy strategy)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontStyleHint(hint, strategy);
-}
-
-  // proto:  void QTextCharFormat::setFontWordSpacing(qreal spacing);
-void demth_ZN15QTextCharFormat18setFontWordSpacingEd(void *that, double spacing)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontWordSpacing(spacing);
-}
-
-  // proto:  QColor QTextCharFormat::underlineColor();
-QColor* demth_ZNK15QTextCharFormat14underlineColorEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  auto recret = cthat->underlineColor();
-  return new QColor(recret);
-}
-
-  // proto:  int QTextCharFormat::fontWeight();
-int demth_ZNK15QTextCharFormat10fontWeightEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  return cthat->fontWeight();
-}
-
-  // proto:  void QTextCharFormat::setFontOverline(bool overline);
-void demth_ZN15QTextCharFormat15setFontOverlineEb(void *that, bool overline)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setFontOverline(overline);
-}
-
-  // proto:  void QTextCharFormat::setTableCellColumnSpan(int tableCellColumnSpan);
-void demth_ZN15QTextCharFormat22setTableCellColumnSpanEi(void *that, int tableCellColumnSpan)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-   cthat->setTableCellColumnSpan(tableCellColumnSpan);
-}
-
-  // proto:  QPen QTextCharFormat::textOutline();
-QPen* demth_ZNK15QTextCharFormat11textOutlineEv(void *that)
-{
-  QTextCharFormat *cthat = (QTextCharFormat *)that;
-  auto recret = cthat->textOutline();
-  return new QPen(recret);
-}
-
 int QTextTableFormat_Class_Size()
 {
   return sizeof(QTextTableFormat);
-}
-
-// QTextTableFormat()
-QTextTableFormat* dector_ZN16QTextTableFormatC1Ev()
-{
-  // static_assert(sizeof(QTextTableFormat) == 32, "tyszerr");
-  QTextTableFormat* rthis = new QTextTableFormat();
-  return rthis;
-}
-
-  // proto:  bool QTextTableFormat::isValid();
-bool demth_ZNK16QTextTableFormat7isValidEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextTableFormat::setColumnWidthConstraints(const QVector<QTextLength> & constraints);
-void demth_ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE(void *that, const QVector<QTextLength> & constraints)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setColumnWidthConstraints(constraints);
-}
-
-  // proto:  int QTextTableFormat::headerRowCount();
-int demth_ZNK16QTextTableFormat14headerRowCountEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->headerRowCount();
-}
-
-  // proto:  int QTextTableFormat::columns();
-int demth_ZNK16QTextTableFormat7columnsEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->columns();
-}
-
-  // proto:  QVector<QTextLength> QTextTableFormat::columnWidthConstraints();
-QVector<QTextLength> demth_ZNK16QTextTableFormat22columnWidthConstraintsEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->columnWidthConstraints();
-}
-
-  // proto:  void QTextTableFormat::setAlignment(Qt::Alignment alignment);
-void demth_ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *that, Qt::Alignment alignment)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setAlignment(alignment);
-}
-
-  // proto:  void QTextTableFormat::setCellPadding(qreal padding);
-void demth_ZN16QTextTableFormat14setCellPaddingEd(void *that, double padding)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setCellPadding(padding);
-}
-
-  // proto:  qreal QTextTableFormat::cellPadding();
-qreal demth_ZNK16QTextTableFormat11cellPaddingEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->cellPadding();
-}
-
-  // proto:  void QTextTableFormat::setCellSpacing(qreal spacing);
-void demth_ZN16QTextTableFormat14setCellSpacingEd(void *that, double spacing)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setCellSpacing(spacing);
-}
-
-  // proto:  void QTextTableFormat::setColumns(int columns);
-void demth_ZN16QTextTableFormat10setColumnsEi(void *that, int columns)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setColumns(columns);
-}
-
-  // proto:  void QTextTableFormat::clearColumnWidthConstraints();
-void demth_ZN16QTextTableFormat27clearColumnWidthConstraintsEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->clearColumnWidthConstraints();
-}
-
-  // proto:  void QTextTableFormat::setHeaderRowCount(int count);
-void demth_ZN16QTextTableFormat17setHeaderRowCountEi(void *that, int count)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-   cthat->setHeaderRowCount(count);
-}
-
-  // proto:  qreal QTextTableFormat::cellSpacing();
-qreal demth_ZNK16QTextTableFormat11cellSpacingEv(void *that)
-{
-  QTextTableFormat *cthat = (QTextTableFormat *)that;
-  return cthat->cellSpacing();
 }
 
 int QTextTableCellFormat_Class_Size()
@@ -901,153 +54,9 @@ int QTextTableCellFormat_Class_Size()
   return sizeof(QTextTableCellFormat);
 }
 
-// QTextTableCellFormat()
-QTextTableCellFormat* dector_ZN20QTextTableCellFormatC1Ev()
-{
-  // static_assert(sizeof(QTextTableCellFormat) == 32, "tyszerr");
-  QTextTableCellFormat* rthis = new QTextTableCellFormat();
-  return rthis;
-}
-
-  // proto:  void QTextTableCellFormat::setLeftPadding(qreal padding);
-void demth_ZN20QTextTableCellFormat14setLeftPaddingEd(void *that, double padding)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-   cthat->setLeftPadding(padding);
-}
-
-  // proto:  bool QTextTableCellFormat::isValid();
-bool demth_ZNK20QTextTableCellFormat7isValidEv(void *that)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextTableCellFormat::setTopPadding(qreal padding);
-void demth_ZN20QTextTableCellFormat13setTopPaddingEd(void *that, double padding)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-   cthat->setTopPadding(padding);
-}
-
-  // proto:  qreal QTextTableCellFormat::leftPadding();
-qreal demth_ZNK20QTextTableCellFormat11leftPaddingEv(void *that)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-  return cthat->leftPadding();
-}
-
-  // proto:  void QTextTableCellFormat::setPadding(qreal padding);
-void demth_ZN20QTextTableCellFormat10setPaddingEd(void *that, double padding)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-   cthat->setPadding(padding);
-}
-
-  // proto:  qreal QTextTableCellFormat::topPadding();
-qreal demth_ZNK20QTextTableCellFormat10topPaddingEv(void *that)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-  return cthat->topPadding();
-}
-
-  // proto:  qreal QTextTableCellFormat::rightPadding();
-qreal demth_ZNK20QTextTableCellFormat12rightPaddingEv(void *that)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-  return cthat->rightPadding();
-}
-
-  // proto:  qreal QTextTableCellFormat::bottomPadding();
-qreal demth_ZNK20QTextTableCellFormat13bottomPaddingEv(void *that)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-  return cthat->bottomPadding();
-}
-
-  // proto:  void QTextTableCellFormat::setRightPadding(qreal padding);
-void demth_ZN20QTextTableCellFormat15setRightPaddingEd(void *that, double padding)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-   cthat->setRightPadding(padding);
-}
-
-  // proto:  void QTextTableCellFormat::setBottomPadding(qreal padding);
-void demth_ZN20QTextTableCellFormat16setBottomPaddingEd(void *that, double padding)
-{
-  QTextTableCellFormat *cthat = (QTextTableCellFormat *)that;
-   cthat->setBottomPadding(padding);
-}
-
 int QTextListFormat_Class_Size()
 {
   return sizeof(QTextListFormat);
-}
-
-// QTextListFormat()
-QTextListFormat* dector_ZN15QTextListFormatC1Ev()
-{
-  // static_assert(sizeof(QTextListFormat) == 32, "tyszerr");
-  QTextListFormat* rthis = new QTextListFormat();
-  return rthis;
-}
-
-  // proto:  int QTextListFormat::indent();
-int demth_ZNK15QTextListFormat6indentEv(void *that)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-  return cthat->indent();
-}
-
-  // proto:  void QTextListFormat::setIndent(int indent);
-void demth_ZN15QTextListFormat9setIndentEi(void *that, int indent)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-   cthat->setIndent(indent);
-}
-
-  // proto:  QString QTextListFormat::numberSuffix();
-QString* demth_ZNK15QTextListFormat12numberSuffixEv(void *that)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-  auto recret = cthat->numberSuffix();
-  return new QString(recret);
-}
-
-  // proto:  QString QTextListFormat::numberPrefix();
-QString* demth_ZNK15QTextListFormat12numberPrefixEv(void *that)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-  auto recret = cthat->numberPrefix();
-  return new QString(recret);
-}
-
-  // proto:  bool QTextListFormat::isValid();
-bool demth_ZNK15QTextListFormat7isValidEv(void *that)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextListFormat::setNumberSuffix(const QString & numberSuffix);
-void demth_ZN15QTextListFormat15setNumberSuffixERK7QString(void *that, const QString & numberSuffix)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-   cthat->setNumberSuffix(numberSuffix);
-}
-
-  // proto:  void QTextListFormat::setNumberPrefix(const QString & numberPrefix);
-void demth_ZN15QTextListFormat15setNumberPrefixERK7QString(void *that, const QString & numberPrefix)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-   cthat->setNumberPrefix(numberPrefix);
-}
-
-  // proto:  void QTextListFormat::setStyle(QTextListFormat::Style style);
-void demth_ZN15QTextListFormat8setStyleENS_5StyleE(void *that, QTextListFormat::Style style)
-{
-  QTextListFormat *cthat = (QTextListFormat *)that;
-   cthat->setStyle(style);
 }
 
 int QTextFrameFormat_Class_Size()
@@ -1055,169 +64,1332 @@ int QTextFrameFormat_Class_Size()
   return sizeof(QTextFrameFormat);
 }
 
-// QTextFrameFormat()
-QTextFrameFormat* dector_ZN16QTextFrameFormatC1Ev()
-{
-  // static_assert(sizeof(QTextFrameFormat) == 32, "tyszerr");
-  QTextFrameFormat* rthis = new QTextFrameFormat();
-  return rthis;
-}
-
-  // proto:  void QTextFrameFormat::setBorderStyle(QTextFrameFormat::BorderStyle style);
-void demth_ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE(void *that, QTextFrameFormat::BorderStyle style)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setBorderStyle(style);
-}
-
-  // proto:  bool QTextFrameFormat::isValid();
-bool demth_ZNK16QTextFrameFormat7isValidEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextFrameFormat::setHeight(qreal height);
-void demth_ZN16QTextFrameFormat9setHeightEd(void *that, double height)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setHeight(height);
-}
-
-  // proto:  void QTextFrameFormat::setBorderBrush(const QBrush & brush);
-void demth_ZN16QTextFrameFormat14setBorderBrushERK6QBrush(void *that, const QBrush & brush)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setBorderBrush(brush);
-}
-
-  // proto:  qreal QTextFrameFormat::margin();
-qreal demth_ZNK16QTextFrameFormat6marginEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  return cthat->margin();
-}
-
-  // proto:  QBrush QTextFrameFormat::borderBrush();
-QBrush* demth_ZNK16QTextFrameFormat11borderBrushEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  auto recret = cthat->borderBrush();
-  return new QBrush(recret);
-}
-
-  // proto:  void QTextFrameFormat::setRightMargin(qreal margin);
-void demth_ZN16QTextFrameFormat14setRightMarginEd(void *that, double margin)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setRightMargin(margin);
-}
-
-  // proto:  void QTextFrameFormat::setBorder(qreal border);
-void demth_ZN16QTextFrameFormat9setBorderEd(void *that, double border)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setBorder(border);
-}
-
-  // proto:  void QTextFrameFormat::setHeight(const QTextLength & height);
-void demth_ZN16QTextFrameFormat9setHeightERK11QTextLength(void *that, const QTextLength & height)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setHeight(height);
-}
-
-  // proto:  void QTextFrameFormat::setWidth(const QTextLength & length);
-void demth_ZN16QTextFrameFormat8setWidthERK11QTextLength(void *that, const QTextLength & length)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setWidth(length);
-}
-
-  // proto:  void QTextFrameFormat::setPosition(QTextFrameFormat::Position f);
-void demth_ZN16QTextFrameFormat11setPositionENS_8PositionE(void *that, QTextFrameFormat::Position f)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setPosition(f);
-}
-
-  // proto:  void QTextFrameFormat::setBottomMargin(qreal margin);
-void demth_ZN16QTextFrameFormat15setBottomMarginEd(void *that, double margin)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setBottomMargin(margin);
-}
-
-  // proto:  void QTextFrameFormat::setPageBreakPolicy(PageBreakFlags flags);
-void demth_ZN16QTextFrameFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBreakFlagEE(void *that, QTextFormat::PageBreakFlag flags)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setPageBreakPolicy(flags);
-}
-
-  // proto:  QTextLength QTextFrameFormat::height();
-QTextLength* demth_ZNK16QTextFrameFormat6heightEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  auto recret = cthat->height();
-  return new QTextLength(recret);
-}
-
-  // proto:  void QTextFrameFormat::setWidth(qreal width);
-void demth_ZN16QTextFrameFormat8setWidthEd(void *that, double width)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setWidth(width);
-}
-
-  // proto:  void QTextFrameFormat::setPadding(qreal padding);
-void demth_ZN16QTextFrameFormat10setPaddingEd(void *that, double padding)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setPadding(padding);
-}
-
-  // proto:  void QTextFrameFormat::setTopMargin(qreal margin);
-void demth_ZN16QTextFrameFormat12setTopMarginEd(void *that, double margin)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setTopMargin(margin);
-}
-
-  // proto:  QTextLength QTextFrameFormat::width();
-QTextLength* demth_ZNK16QTextFrameFormat5widthEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  auto recret = cthat->width();
-  return new QTextLength(recret);
-}
-
-  // proto:  qreal QTextFrameFormat::padding();
-qreal demth_ZNK16QTextFrameFormat7paddingEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  return cthat->padding();
-}
-
-  // proto:  void QTextFrameFormat::setLeftMargin(qreal margin);
-void demth_ZN16QTextFrameFormat13setLeftMarginEd(void *that, double margin)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-   cthat->setLeftMargin(margin);
-}
-
-  // proto:  qreal QTextFrameFormat::border();
-qreal demth_ZNK16QTextFrameFormat6borderEv(void *that)
-{
-  QTextFrameFormat *cthat = (QTextFrameFormat *)that;
-  return cthat->border();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextformat_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 84, column 21>
+//   // proto:  void QTextLength::QTextLength(QTextLength::Type type, qreal value);
+if (false) {
+  auto f = [](QTextLength::Type arg1, qreal arg2) {
+    new QTextLength(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 87, column 18>
+//   // proto:  qreal QTextLength::value(qreal maximumLength);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextLength*)0)->value(arg1);
+  };
+}
+// _ZNK11QTextLength5valueEd value(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 82, column 12>
+//   // proto:  void QTextLength::QTextLength();
+if (false) {
+  auto f = []() {
+    new QTextLength();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 97, column 18>
+//   // proto:  qreal QTextLength::rawValue();
+if (false) {
+  auto f = []() {
+    ((QTextLength*)0)->rawValue();
+  };
+}
+// _ZNK11QTextLength8rawValueEv rawValue()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 86, column 17>
+//   // proto:  QTextLength::Type QTextLength::type();
+if (false) {
+  auto f = []() {
+    ((QTextLength*)0)->type();
+  };
+}
+// _ZNK11QTextLength4typeEv type()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 729, column 10>
+//   // proto:  bool QTextImageFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextImageFormat*)0)->isValid();
+  };
+}
+// _ZNK16QTextImageFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 736, column 18>
+//   // proto:  qreal QTextImageFormat::width();
+if (false) {
+  auto f = []() {
+    ((QTextImageFormat*)0)->width();
+  };
+}
+// _ZNK16QTextImageFormat5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 739, column 17>
+//   // proto:  void QTextImageFormat::setHeight(qreal height);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextImageFormat*)0)->setHeight(arg1);
+  };
+}
+// _ZN16QTextImageFormat9setHeightEd setHeight(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 735, column 17>
+//   // proto:  void QTextImageFormat::setWidth(qreal width);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextImageFormat*)0)->setWidth(arg1);
+  };
+}
+// _ZN16QTextImageFormat8setWidthEd setWidth(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 731, column 17>
+//   // proto:  void QTextImageFormat::setName(const QString & name);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextImageFormat*)0)->setName(arg1);
+  };
+}
+// _ZN16QTextImageFormat7setNameERK7QString setName(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 732, column 20>
+//   // proto:  QString QTextImageFormat::name();
+if (false) {
+  auto f = []() {
+    ((QTextImageFormat*)0)->name();
+  };
+}
+// _ZNK16QTextImageFormat4nameEv name()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 740, column 18>
+//   // proto:  qreal QTextImageFormat::height();
+if (false) {
+  auto f = []() {
+    ((QTextImageFormat*)0)->height();
+  };
+}
+// _ZNK16QTextImageFormat6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 345, column 17>
+//   // proto:  void QTextFormat::setLayoutDirection(Qt::LayoutDirection direction);
+if (false) {
+  auto f = [](Qt::LayoutDirection arg1) {
+    ((QTextFormat*)0)->setLayoutDirection(arg1);
+  };
+}
+// _ZN11QTextFormat18setLayoutDirectionEN2Qt15LayoutDirectionE setLayoutDirection(Qt::LayoutDirection)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 347, column 32>
+//   // proto:  Qt::LayoutDirection QTextFormat::layoutDirection();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->layoutDirection();
+  };
+}
+// _ZNK11QTextFormat15layoutDirectionEv layoutDirection()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 361, column 17>
+//   // proto:  void QTextFormat::clearForeground();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->clearForeground();
+  };
+}
+// _ZN11QTextFormat15clearForegroundEv clearForeground()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 331, column 17>
+//   // proto:  bool QTextFormat::isTableCellFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isTableCellFormat();
+  };
+}
+// _ZNK11QTextFormat17isTableCellFormatEv isTableCellFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 293, column 17>
+//   // proto:  bool QTextFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isValid();
+  };
+}
+// _ZNK11QTextFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 357, column 17>
+//   // proto:  void QTextFormat::setForeground(const QBrush & brush);
+if (false) {
+  auto f = [](const QBrush & arg1) {
+    ((QTextFormat*)0)->setForeground(arg1);
+  };
+}
+// _ZN11QTextFormat13setForegroundERK6QBrush setForeground(const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 327, column 17>
+//   // proto:  bool QTextFormat::isListFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isListFormat();
+  };
+}
+// _ZNK11QTextFormat12isListFormatEv isListFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 329, column 17>
+//   // proto:  bool QTextFormat::isImageFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isImageFormat();
+  };
+}
+// _ZNK11QTextFormat13isImageFormatEv isImageFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 330, column 17>
+//   // proto:  bool QTextFormat::isTableFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isTableFormat();
+  };
+}
+// _ZNK11QTextFormat13isTableFormatEv isTableFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 325, column 17>
+//   // proto:  bool QTextFormat::isCharFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isCharFormat();
+  };
+}
+// _ZNK11QTextFormat12isCharFormatEv isCharFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 354, column 17>
+//   // proto:  void QTextFormat::clearBackground();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->clearBackground();
+  };
+}
+// _ZN11QTextFormat15clearBackgroundEv clearBackground()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 326, column 17>
+//   // proto:  bool QTextFormat::isBlockFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isBlockFormat();
+  };
+}
+// _ZNK11QTextFormat13isBlockFormatEv isBlockFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 352, column 19>
+//   // proto:  QBrush QTextFormat::background();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->background();
+  };
+}
+// _ZNK11QTextFormat10backgroundEv background()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 288, column 10>
+//   // proto:  void QTextFormat::swap(QTextFormat & other);
+if (false) {
+  auto f = [](QTextFormat & arg1) {
+    ((QTextFormat*)0)->swap(arg1);
+  };
+}
+// _ZN11QTextFormat4swapERS_ swap(class QTextFormat &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 359, column 19>
+//   // proto:  QBrush QTextFormat::foreground();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->foreground();
+  };
+}
+// _ZNK11QTextFormat10foregroundEv foreground()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 321, column 17>
+//   // proto:  void QTextFormat::setObjectType(int type);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextFormat*)0)->setObjectType(arg1);
+  };
+}
+// _ZN11QTextFormat13setObjectTypeEi setObjectType(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 350, column 17>
+//   // proto:  void QTextFormat::setBackground(const QBrush & brush);
+if (false) {
+  auto f = [](const QBrush & arg1) {
+    ((QTextFormat*)0)->setBackground(arg1);
+  };
+}
+// _ZN11QTextFormat13setBackgroundERK6QBrush setBackground(const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 328, column 17>
+//   // proto:  bool QTextFormat::isFrameFormat();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isFrameFormat();
+  };
+}
+// _ZNK11QTextFormat13isFrameFormatEv isFrameFormat()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 294, column 17>
+//   // proto:  bool QTextFormat::isEmpty();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->isEmpty();
+  };
+}
+// _ZNK11QTextFormat7isEmptyEv isEmpty()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 322, column 16>
+//   // proto:  int QTextFormat::objectType();
+if (false) {
+  auto f = []() {
+    ((QTextFormat*)0)->objectType();
+  };
+}
+// _ZNK11QTextFormat10objectTypeEv objectType()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 616, column 16>
+//   // proto:  int QTextBlockFormat::indent();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->indent();
+  };
+}
+// _ZNK16QTextBlockFormat6indentEv indent()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 610, column 17>
+//   // proto:  void QTextBlockFormat::setTextIndent(qreal aindent);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextBlockFormat*)0)->setTextIndent(arg1);
+  };
+}
+// _ZN16QTextBlockFormat13setTextIndentEd setTextIndent(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 627, column 17>
+//   // proto:  void QTextBlockFormat::setNonBreakableLines(bool b);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextBlockFormat*)0)->setNonBreakableLines(arg1);
+  };
+}
+// _ZN16QTextBlockFormat20setNonBreakableLinesEb setNonBreakableLines(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 615, column 17>
+//   // proto:  void QTextBlockFormat::setIndent(int indent);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextBlockFormat*)0)->setIndent(arg1);
+  };
+}
+// _ZN16QTextBlockFormat9setIndentEi setIndent(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 612, column 18>
+//   // proto:  qreal QTextBlockFormat::textIndent();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->textIndent();
+  };
+}
+// _ZNK16QTextBlockFormat10textIndentEv textIndent()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 622, column 18>
+//   // proto:  qreal QTextBlockFormat::lineHeight();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->lineHeight();
+  };
+}
+// _ZNK16QTextBlockFormat10lineHeightEv lineHeight()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 634, column 27>
+//   // proto:  PageBreakFlags QTextBlockFormat::pageBreakPolicy();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->pageBreakPolicy();
+  };
+}
+// _ZNK16QTextBlockFormat15pageBreakPolicyEv pageBreakPolicy()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 632, column 17>
+//   // proto:  void QTextBlockFormat::setPageBreakPolicy(PageBreakFlags flags);
+if (false) {
+  auto f = [](QTextFormat::PageBreakFlags arg1) {
+    ((QTextBlockFormat*)0)->setPageBreakPolicy(arg1);
+  };
+}
+// _ZN16QTextBlockFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBreakFlagEE setPageBreakPolicy(PageBreakFlags)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 587, column 26>
+//   // proto:  Qt::Alignment QTextBlockFormat::alignment();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->alignment();
+  };
+}
+// _ZNK16QTextBlockFormat9alignmentEv alignment()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 621, column 18>
+//   // proto:  qreal QTextBlockFormat::lineHeight(qreal scriptLineHeight, qreal scaling);
+if (false) {
+  auto f = [](qreal arg1, qreal arg2) {
+    ((QTextBlockFormat*)0)->lineHeight(arg1, arg2);
+  };
+}
+// _ZNK16QTextBlockFormat10lineHeightEdd lineHeight(qreal, qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 605, column 17>
+//   // proto:  void QTextBlockFormat::setRightMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextBlockFormat*)0)->setRightMargin(arg1);
+  };
+}
+// _ZN16QTextBlockFormat14setRightMarginEd setRightMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 592, column 18>
+//   // proto:  qreal QTextBlockFormat::topMargin();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->topMargin();
+  };
+}
+// _ZNK16QTextBlockFormat9topMarginEv topMargin()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 607, column 18>
+//   // proto:  qreal QTextBlockFormat::rightMargin();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->rightMargin();
+  };
+}
+// _ZNK16QTextBlockFormat11rightMarginEv rightMargin()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 597, column 18>
+//   // proto:  qreal QTextBlockFormat::bottomMargin();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->bottomMargin();
+  };
+}
+// _ZNK16QTextBlockFormat12bottomMarginEv bottomMargin()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 590, column 17>
+//   // proto:  void QTextBlockFormat::setTopMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextBlockFormat*)0)->setTopMargin(arg1);
+  };
+}
+// _ZN16QTextBlockFormat12setTopMarginEd setTopMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 602, column 18>
+//   // proto:  qreal QTextBlockFormat::leftMargin();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->leftMargin();
+  };
+}
+// _ZNK16QTextBlockFormat10leftMarginEv leftMargin()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 586, column 17>
+//   // proto:  void QTextBlockFormat::setAlignment(Qt::Alignment alignment);
+if (false) {
+  auto f = [](Qt::Alignment arg1) {
+    ((QTextBlockFormat*)0)->setAlignment(arg1);
+  };
+}
+// _ZN16QTextBlockFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 619, column 17>
+//   // proto:  void QTextBlockFormat::setLineHeight(qreal height, int heightType);
+if (false) {
+  auto f = [](qreal arg1, int arg2) {
+    ((QTextBlockFormat*)0)->setLineHeight(arg1, arg2);
+  };
+}
+// _ZN16QTextBlockFormat13setLineHeightEdi setLineHeight(qreal, int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 595, column 17>
+//   // proto:  void QTextBlockFormat::setBottomMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextBlockFormat*)0)->setBottomMargin(arg1);
+  };
+}
+// _ZN16QTextBlockFormat15setBottomMarginEd setBottomMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 624, column 16>
+//   // proto:  int QTextBlockFormat::lineHeightType();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->lineHeightType();
+  };
+}
+// _ZNK16QTextBlockFormat14lineHeightTypeEv lineHeightType()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 600, column 17>
+//   // proto:  void QTextBlockFormat::setLeftMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextBlockFormat*)0)->setLeftMargin(arg1);
+  };
+}
+// _ZN16QTextBlockFormat13setLeftMarginEd setLeftMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 584, column 10>
+//   // proto:  bool QTextBlockFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->isValid();
+  };
+}
+// _ZNK16QTextBlockFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 629, column 17>
+//   // proto:  bool QTextBlockFormat::nonBreakableLines();
+if (false) {
+  auto f = []() {
+    ((QTextBlockFormat*)0)->nonBreakableLines();
+  };
+}
+// _ZNK16QTextBlockFormat17nonBreakableLinesEv nonBreakableLines()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 434, column 17>
+//   // proto:  void QTextCharFormat::setFontCapitalization(QFont::Capitalization capitalization);
+if (false) {
+  auto f = [](QFont::Capitalization arg1) {
+    ((QTextCharFormat*)0)->setFontCapitalization(arg1);
+  };
+}
+// _ZN15QTextCharFormat21setFontCapitalizationEN5QFont14CapitalizationE setFontCapitalization(class QFont::Capitalization)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 442, column 17>
+//   // proto:  void QTextCharFormat::setFontLetterSpacing(qreal spacing);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextCharFormat*)0)->setFontLetterSpacing(arg1);
+  };
+}
+// _ZN15QTextCharFormat20setFontLetterSpacingEd setFontLetterSpacing(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 525, column 17>
+//   // proto:  bool QTextCharFormat::isAnchor();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->isAnchor();
+  };
+}
+// _ZNK15QTextCharFormat8isAnchorEv isAnchor()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 489, column 17>
+//   // proto:  void QTextCharFormat::setFontHintingPreference(QFont::HintingPreference hintingPreference);
+if (false) {
+  auto f = [](QFont::HintingPreference arg1) {
+    ((QTextCharFormat*)0)->setFontHintingPreference(arg1);
+  };
+}
+// _ZN15QTextCharFormat24setFontHintingPreferenceEN5QFont17HintingPreferenceE setFontHintingPreference(class QFont::HintingPreference)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 457, column 17>
+//   // proto:  bool QTextCharFormat::fontOverline();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontOverline();
+  };
+}
+// _ZNK15QTextCharFormat12fontOverlineEv fontOverline()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 418, column 20>
+//   // proto:  QString QTextCharFormat::fontFamily();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontFamily();
+  };
+}
+// _ZNK15QTextCharFormat10fontFamilyEv fontFamily()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 462, column 17>
+//   // proto:  bool QTextCharFormat::fontStrikeOut();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontStrikeOut();
+  };
+}
+// _ZNK15QTextCharFormat13fontStrikeOutEv fontStrikeOut()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 421, column 17>
+//   // proto:  void QTextCharFormat::setFontPointSize(qreal size);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextCharFormat*)0)->setFontPointSize(arg1);
+  };
+}
+// _ZN15QTextCharFormat16setFontPointSizeEd setFontPointSize(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 465, column 17>
+//   // proto:  void QTextCharFormat::setUnderlineColor(const QColor & color);
+if (false) {
+  auto f = [](const QColor & arg1) {
+    ((QTextCharFormat*)0)->setUnderlineColor(arg1);
+  };
+}
+// _ZN15QTextCharFormat17setUnderlineColorERK6QColor setUnderlineColor(const class QColor &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 542, column 16>
+//   // proto:  int QTextCharFormat::tableCellRowSpan();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->tableCellRowSpan();
+  };
+}
+// _ZNK15QTextCharFormat16tableCellRowSpanEv tableCellRowSpan()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 451, column 17>
+//   // proto:  void QTextCharFormat::setFontUnderline(bool underline);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontUnderline(arg1);
+  };
+}
+// _ZN15QTextCharFormat16setFontUnderlineEb setFontUnderline(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 406, column 10>
+//   // proto:  bool QTextCharFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->isValid();
+  };
+}
+// _ZNK15QTextCharFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 432, column 17>
+//   // proto:  bool QTextCharFormat::fontItalic();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontItalic();
+  };
+}
+// _ZNK15QTextCharFormat10fontItalicEv fontItalic()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 510, column 30>
+//   // proto:  QTextCharFormat::VerticalAlignment QTextCharFormat::verticalAlignment();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->verticalAlignment();
+  };
+}
+// _ZNK15QTextCharFormat17verticalAlignmentEv verticalAlignment()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 518, column 17>
+//   // proto:  void QTextCharFormat::setToolTip(const QString & tip);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextCharFormat*)0)->setToolTip(arg1);
+  };
+}
+// _ZN15QTextCharFormat10setToolTipERK7QString setToolTip(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 513, column 17>
+//   // proto:  void QTextCharFormat::setTextOutline(const QPen & pen);
+if (false) {
+  auto f = [](const QPen & arg1) {
+    ((QTextCharFormat*)0)->setTextOutline(arg1);
+  };
+}
+// _ZN15QTextCharFormat14setTextOutlineERK4QPen setTextOutline(const class QPen &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 436, column 34>
+//   // proto:  QFont::Capitalization QTextCharFormat::fontCapitalization();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontCapitalization();
+  };
+}
+// _ZNK15QTextCharFormat18fontCapitalizationEv fontCapitalization()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 541, column 17>
+//   // proto:  void QTextCharFormat::setTableCellRowSpan(int tableCellRowSpan);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextCharFormat*)0)->setTableCellRowSpan(arg1);
+  };
+}
+// _ZN15QTextCharFormat19setTableCellRowSpanEi setTableCellRowSpan(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 508, column 17>
+//   // proto:  void QTextCharFormat::setVerticalAlignment(QTextCharFormat::VerticalAlignment alignment);
+if (false) {
+  auto f = [](QTextCharFormat::VerticalAlignment arg1) {
+    ((QTextCharFormat*)0)->setVerticalAlignment(arg1);
+  };
+}
+// _ZN15QTextCharFormat20setVerticalAlignmentENS_17VerticalAlignmentE setVerticalAlignment(enum QTextCharFormat::VerticalAlignment)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 486, column 26>
+//   // proto:  QFont::StyleStrategy QTextCharFormat::fontStyleStrategy();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontStyleStrategy();
+  };
+}
+// _ZNK15QTextCharFormat17fontStyleStrategyEv fontStyleStrategy()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 505, column 27>
+//   // proto:  QTextCharFormat::UnderlineStyle QTextCharFormat::underlineStyle();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->underlineStyle();
+  };
+}
+// _ZNK15QTextCharFormat14underlineStyleEv underlineStyle()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 523, column 17>
+//   // proto:  void QTextCharFormat::setAnchor(bool anchor);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setAnchor(arg1);
+  };
+}
+// _ZN15QTextCharFormat9setAnchorEb setAnchor(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 423, column 18>
+//   // proto:  qreal QTextCharFormat::fontPointSize();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontPointSize();
+  };
+}
+// _ZNK15QTextCharFormat13fontPointSizeEv fontPointSize()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 460, column 17>
+//   // proto:  void QTextCharFormat::setFontStrikeOut(bool strikeOut);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontStrikeOut(arg1);
+  };
+}
+// _ZN15QTextCharFormat16setFontStrikeOutEb setFontStrikeOut(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 448, column 18>
+//   // proto:  qreal QTextCharFormat::fontWordSpacing();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontWordSpacing();
+  };
+}
+// _ZNK15QTextCharFormat15fontWordSpacingEv fontWordSpacing()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 520, column 20>
+//   // proto:  QString QTextCharFormat::toolTip();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->toolTip();
+  };
+}
+// _ZNK15QTextCharFormat7toolTipEv toolTip()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 537, column 17>
+//   // proto:  void QTextCharFormat::setAnchorNames(const QStringList & names);
+if (false) {
+  auto f = [](const QStringList & arg1) {
+    ((QTextCharFormat*)0)->setAnchorNames(arg1);
+  };
+}
+// _ZN15QTextCharFormat14setAnchorNamesERK11QStringList setAnchorNames(const class QStringList &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 494, column 37>
+//   // proto:  QFont::HintingPreference QTextCharFormat::fontHintingPreference();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontHintingPreference();
+  };
+}
+// _ZNK15QTextCharFormat21fontHintingPreferenceEv fontHintingPreference()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 470, column 17>
+//   // proto:  void QTextCharFormat::setFontFixedPitch(bool fixedPitch);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontFixedPitch(arg1);
+  };
+}
+// _ZN15QTextCharFormat17setFontFixedPitchEb setFontFixedPitch(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 482, column 17>
+//   // proto:  void QTextCharFormat::setFontStyleStrategy(QFont::StyleStrategy strategy);
+if (false) {
+  auto f = [](QFont::StyleStrategy arg1) {
+    ((QTextCharFormat*)0)->setFontStyleStrategy(arg1);
+  };
+}
+// _ZN15QTextCharFormat20setFontStyleStrategyEN5QFont13StyleStrategyE setFontStyleStrategy(class QFont::StyleStrategy)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 430, column 17>
+//   // proto:  void QTextCharFormat::setFontItalic(bool italic);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontItalic(arg1);
+  };
+}
+// _ZN15QTextCharFormat13setFontItalicEb setFontItalic(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 416, column 17>
+//   // proto:  void QTextCharFormat::setFontFamily(const QString & family);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextCharFormat*)0)->setFontFamily(arg1);
+  };
+}
+// _ZN15QTextCharFormat13setFontFamilyERK7QString setFontFamily(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 472, column 17>
+//   // proto:  bool QTextCharFormat::fontFixedPitch();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontFixedPitch();
+  };
+}
+// _ZNK15QTextCharFormat14fontFixedPitchEv fontFixedPitch()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 528, column 17>
+//   // proto:  void QTextCharFormat::setAnchorHref(const QString & value);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextCharFormat*)0)->setAnchorHref(arg1);
+  };
+}
+// _ZN15QTextCharFormat13setAnchorHrefERK7QString setAnchorHref(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 477, column 16>
+//   // proto:  int QTextCharFormat::fontStretch();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontStretch();
+  };
+}
+// _ZNK15QTextCharFormat11fontStretchEv fontStretch()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 440, column 31>
+//   // proto:  QFont::SpacingType QTextCharFormat::fontLetterSpacingType();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontLetterSpacingType();
+  };
+}
+// _ZNK15QTextCharFormat21fontLetterSpacingTypeEv fontLetterSpacingType()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 499, column 17>
+//   // proto:  void QTextCharFormat::setFontKerning(bool enable);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontKerning(arg1);
+  };
+}
+// _ZN15QTextCharFormat14setFontKerningEb setFontKerning(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 545, column 16>
+//   // proto:  int QTextCharFormat::tableCellColumnSpan();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->tableCellColumnSpan();
+  };
+}
+// _ZNK15QTextCharFormat19tableCellColumnSpanEv tableCellColumnSpan()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 444, column 18>
+//   // proto:  qreal QTextCharFormat::fontLetterSpacing();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontLetterSpacing();
+  };
+}
+// _ZNK15QTextCharFormat17fontLetterSpacingEv fontLetterSpacing()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 438, column 17>
+//   // proto:  void QTextCharFormat::setFontLetterSpacingType(QFont::SpacingType letterSpacingType);
+if (false) {
+  auto f = [](QFont::SpacingType arg1) {
+    ((QTextCharFormat*)0)->setFontLetterSpacingType(arg1);
+  };
+}
+// _ZN15QTextCharFormat24setFontLetterSpacingTypeEN5QFont11SpacingTypeE setFontLetterSpacingType(class QFont::SpacingType)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 530, column 20>
+//   // proto:  QString QTextCharFormat::anchorHref();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->anchorHref();
+  };
+}
+// _ZNK15QTextCharFormat10anchorHrefEv anchorHref()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 475, column 17>
+//   // proto:  void QTextCharFormat::setFontStretch(int factor);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextCharFormat*)0)->setFontStretch(arg1);
+  };
+}
+// _ZN15QTextCharFormat14setFontStretchEi setFontStretch(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 533, column 17>
+//   // proto:  void QTextCharFormat::setAnchorName(const QString & name);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextCharFormat*)0)->setAnchorName(arg1);
+  };
+}
+// _ZN15QTextCharFormat13setAnchorNameERK7QString setAnchorName(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 484, column 22>
+//   // proto:  QFont::StyleHint QTextCharFormat::fontStyleHint();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontStyleHint();
+  };
+}
+// _ZNK15QTextCharFormat13fontStyleHintEv fontStyleHint()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 501, column 17>
+//   // proto:  bool QTextCharFormat::fontKerning();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontKerning();
+  };
+}
+// _ZNK15QTextCharFormat11fontKerningEv fontKerning()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 426, column 17>
+//   // proto:  void QTextCharFormat::setFontWeight(int weight);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextCharFormat*)0)->setFontWeight(arg1);
+  };
+}
+// _ZN15QTextCharFormat13setFontWeightEi setFontWeight(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 480, column 17>
+//   // proto:  void QTextCharFormat::setFontStyleHint(QFont::StyleHint hint, QFont::StyleStrategy strategy);
+if (false) {
+  auto f = [](QFont::StyleHint arg1, QFont::StyleStrategy arg2) {
+    ((QTextCharFormat*)0)->setFontStyleHint(arg1, arg2);
+  };
+}
+// _ZN15QTextCharFormat16setFontStyleHintEN5QFont9StyleHintENS0_13StyleStrategyE setFontStyleHint(class QFont::StyleHint, class QFont::StyleStrategy)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 446, column 17>
+//   // proto:  void QTextCharFormat::setFontWordSpacing(qreal spacing);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextCharFormat*)0)->setFontWordSpacing(arg1);
+  };
+}
+// _ZN15QTextCharFormat18setFontWordSpacingEd setFontWordSpacing(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 467, column 19>
+//   // proto:  QColor QTextCharFormat::underlineColor();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->underlineColor();
+  };
+}
+// _ZNK15QTextCharFormat14underlineColorEv underlineColor()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 428, column 16>
+//   // proto:  int QTextCharFormat::fontWeight();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->fontWeight();
+  };
+}
+// _ZNK15QTextCharFormat10fontWeightEv fontWeight()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 455, column 17>
+//   // proto:  void QTextCharFormat::setFontOverline(bool overline);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextCharFormat*)0)->setFontOverline(arg1);
+  };
+}
+// _ZN15QTextCharFormat15setFontOverlineEb setFontOverline(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 544, column 17>
+//   // proto:  void QTextCharFormat::setTableCellColumnSpan(int tableCellColumnSpan);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextCharFormat*)0)->setTableCellColumnSpan(arg1);
+  };
+}
+// _ZN15QTextCharFormat22setTableCellColumnSpanEi setTableCellColumnSpan(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 515, column 17>
+//   // proto:  QPen QTextCharFormat::textOutline();
+if (false) {
+  auto f = []() {
+    ((QTextCharFormat*)0)->textOutline();
+  };
+}
+// _ZNK15QTextCharFormat11textOutlineEv textOutline()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 881, column 17>
+//   // proto:  bool QTextTableFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->isValid();
+  };
+}
+// _ZNK16QTextTableFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 887, column 17>
+//   // proto:  void QTextTableFormat::setColumnWidthConstraints(const QVector<QTextLength> & constraints);
+if (false) {
+  auto f = [](const QVector<QTextLength> & arg1) {
+    ((QTextTableFormat*)0)->setColumnWidthConstraints(arg1);
+  };
+}
+// _ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE setColumnWidthConstraints(const QVector<class QTextLength> &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 911, column 16>
+//   // proto:  int QTextTableFormat::headerRowCount();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->headerRowCount();
+  };
+}
+// _ZNK16QTextTableFormat14headerRowCountEv headerRowCount()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 883, column 16>
+//   // proto:  int QTextTableFormat::columns();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->columns();
+  };
+}
+// _ZNK16QTextTableFormat7columnsEv columns()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 890, column 33>
+//   // proto:  QVector<QTextLength> QTextTableFormat::columnWidthConstraints();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->columnWidthConstraints();
+  };
+}
+// _ZNK16QTextTableFormat22columnWidthConstraintsEv columnWidthConstraints()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 905, column 17>
+//   // proto:  void QTextTableFormat::setAlignment(Qt::Alignment alignment);
+if (false) {
+  auto f = [](Qt::Alignment arg1) {
+    ((QTextTableFormat*)0)->setAlignment(arg1);
+  };
+}
+// _ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 903, column 17>
+//   // proto:  void QTextTableFormat::setCellPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableFormat*)0)->setCellPadding(arg1);
+  };
+}
+// _ZN16QTextTableFormat14setCellPaddingEd setCellPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 901, column 18>
+//   // proto:  qreal QTextTableFormat::cellPadding();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->cellPadding();
+  };
+}
+// _ZNK16QTextTableFormat11cellPaddingEv cellPadding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 906, column 26>
+//   // proto:  Qt::Alignment QTextTableFormat::alignment();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->alignment();
+  };
+}
+// _ZNK16QTextTableFormat9alignmentEv alignment()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 898, column 17>
+//   // proto:  void QTextTableFormat::setCellSpacing(qreal spacing);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableFormat*)0)->setCellSpacing(arg1);
+  };
+}
+// _ZN16QTextTableFormat14setCellSpacingEd setCellSpacing(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 885, column 17>
+//   // proto:  void QTextTableFormat::setColumns(int columns);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextTableFormat*)0)->setColumns(arg1);
+  };
+}
+// _ZN16QTextTableFormat10setColumnsEi setColumns(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 893, column 17>
+//   // proto:  void QTextTableFormat::clearColumnWidthConstraints();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->clearColumnWidthConstraints();
+  };
+}
+// _ZN16QTextTableFormat27clearColumnWidthConstraintsEv clearColumnWidthConstraints()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 909, column 17>
+//   // proto:  void QTextTableFormat::setHeaderRowCount(int count);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextTableFormat*)0)->setHeaderRowCount(arg1);
+  };
+}
+// _ZN16QTextTableFormat17setHeaderRowCountEi setHeaderRowCount(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 896, column 18>
+//   // proto:  qreal QTextTableFormat::cellSpacing();
+if (false) {
+  auto f = []() {
+    ((QTextTableFormat*)0)->cellSpacing();
+  };
+}
+// _ZNK16QTextTableFormat11cellSpacingEv cellSpacing()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 947, column 17>
+//   // proto:  void QTextTableCellFormat::setLeftPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableCellFormat*)0)->setLeftPadding(arg1);
+  };
+}
+// _ZN20QTextTableCellFormat14setLeftPaddingEd setLeftPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 939, column 17>
+//   // proto:  bool QTextTableCellFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextTableCellFormat*)0)->isValid();
+  };
+}
+// _ZNK20QTextTableCellFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 941, column 17>
+//   // proto:  void QTextTableCellFormat::setTopPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableCellFormat*)0)->setTopPadding(arg1);
+  };
+}
+// _ZN20QTextTableCellFormat13setTopPaddingEd setTopPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 948, column 18>
+//   // proto:  qreal QTextTableCellFormat::leftPadding();
+if (false) {
+  auto f = []() {
+    ((QTextTableCellFormat*)0)->leftPadding();
+  };
+}
+// _ZNK20QTextTableCellFormat11leftPaddingEv leftPadding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 953, column 17>
+//   // proto:  void QTextTableCellFormat::setPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableCellFormat*)0)->setPadding(arg1);
+  };
+}
+// _ZN20QTextTableCellFormat10setPaddingEd setPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 942, column 18>
+//   // proto:  qreal QTextTableCellFormat::topPadding();
+if (false) {
+  auto f = []() {
+    ((QTextTableCellFormat*)0)->topPadding();
+  };
+}
+// _ZNK20QTextTableCellFormat10topPaddingEv topPadding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 951, column 18>
+//   // proto:  qreal QTextTableCellFormat::rightPadding();
+if (false) {
+  auto f = []() {
+    ((QTextTableCellFormat*)0)->rightPadding();
+  };
+}
+// _ZNK20QTextTableCellFormat12rightPaddingEv rightPadding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 945, column 18>
+//   // proto:  qreal QTextTableCellFormat::bottomPadding();
+if (false) {
+  auto f = []() {
+    ((QTextTableCellFormat*)0)->bottomPadding();
+  };
+}
+// _ZNK20QTextTableCellFormat13bottomPaddingEv bottomPadding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 950, column 17>
+//   // proto:  void QTextTableCellFormat::setRightPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableCellFormat*)0)->setRightPadding(arg1);
+  };
+}
+// _ZN20QTextTableCellFormat15setRightPaddingEd setRightPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 944, column 17>
+//   // proto:  void QTextTableCellFormat::setBottomPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextTableCellFormat*)0)->setBottomPadding(arg1);
+  };
+}
+// _ZN20QTextTableCellFormat16setBottomPaddingEd setBottomPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 690, column 18>
+//   // proto:  QTextListFormat::Style QTextListFormat::style();
+if (false) {
+  auto f = []() {
+    ((QTextListFormat*)0)->style();
+  };
+}
+// _ZNK15QTextListFormat5styleEv style()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 694, column 16>
+//   // proto:  int QTextListFormat::indent();
+if (false) {
+  auto f = []() {
+    ((QTextListFormat*)0)->indent();
+  };
+}
+// _ZNK15QTextListFormat6indentEv indent()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 693, column 17>
+//   // proto:  void QTextListFormat::setIndent(int indent);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTextListFormat*)0)->setIndent(arg1);
+  };
+}
+// _ZN15QTextListFormat9setIndentEi setIndent(int)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 702, column 20>
+//   // proto:  QString QTextListFormat::numberSuffix();
+if (false) {
+  auto f = []() {
+    ((QTextListFormat*)0)->numberSuffix();
+  };
+}
+// _ZNK15QTextListFormat12numberSuffixEv numberSuffix()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 698, column 20>
+//   // proto:  QString QTextListFormat::numberPrefix();
+if (false) {
+  auto f = []() {
+    ((QTextListFormat*)0)->numberPrefix();
+  };
+}
+// _ZNK15QTextListFormat12numberPrefixEv numberPrefix()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 675, column 10>
+//   // proto:  bool QTextListFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextListFormat*)0)->isValid();
+  };
+}
+// _ZNK15QTextListFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 701, column 17>
+//   // proto:  void QTextListFormat::setNumberSuffix(const QString & numberSuffix);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextListFormat*)0)->setNumberSuffix(arg1);
+  };
+}
+// _ZN15QTextListFormat15setNumberSuffixERK7QString setNumberSuffix(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 697, column 17>
+//   // proto:  void QTextListFormat::setNumberPrefix(const QString & numberPrefix);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTextListFormat*)0)->setNumberPrefix(arg1);
+  };
+}
+// _ZN15QTextListFormat15setNumberPrefixERK7QString setNumberPrefix(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 689, column 17>
+//   // proto:  void QTextListFormat::setStyle(QTextListFormat::Style style);
+if (false) {
+  auto f = [](QTextListFormat::Style arg1) {
+    ((QTextListFormat*)0)->setStyle(arg1);
+  };
+}
+// _ZN15QTextListFormat8setStyleENS_5StyleE setStyle(enum QTextListFormat::Style)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 802, column 17>
+//   // proto:  void QTextFrameFormat::setBorderStyle(QTextFrameFormat::BorderStyle style);
+if (false) {
+  auto f = [](QTextFrameFormat::BorderStyle arg1) {
+    ((QTextFrameFormat*)0)->setBorderStyle(arg1);
+  };
+}
+// _ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE setBorderStyle(enum QTextFrameFormat::BorderStyle)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 764, column 10>
+//   // proto:  bool QTextFrameFormat::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->isValid();
+  };
+}
+// _ZNK16QTextFrameFormat7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 833, column 17>
+//   // proto:  void QTextFrameFormat::setHeight(qreal height);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setHeight(arg1);
+  };
+}
+// _ZN16QTextFrameFormat9setHeightEd setHeight(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 797, column 17>
+//   // proto:  void QTextFrameFormat::setBorderBrush(const QBrush & brush);
+if (false) {
+  auto f = [](const QBrush & arg1) {
+    ((QTextFrameFormat*)0)->setBorderBrush(arg1);
+  };
+}
+// _ZN16QTextFrameFormat14setBorderBrushERK6QBrush setBorderBrush(const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 808, column 18>
+//   // proto:  qreal QTextFrameFormat::margin();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->margin();
+  };
+}
+// _ZNK16QTextFrameFormat6marginEv margin()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 799, column 19>
+//   // proto:  QBrush QTextFrameFormat::borderBrush();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->borderBrush();
+  };
+}
+// _ZNK16QTextFrameFormat11borderBrushEv borderBrush()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 840, column 27>
+//   // proto:  PageBreakFlags QTextFrameFormat::pageBreakPolicy();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->pageBreakPolicy();
+  };
+}
+// _ZNK16QTextFrameFormat15pageBreakPolicyEv pageBreakPolicy()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 820, column 17>
+//   // proto:  void QTextFrameFormat::setRightMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setRightMargin(arg1);
+  };
+}
+// _ZN16QTextFrameFormat14setRightMarginEd setRightMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 793, column 17>
+//   // proto:  void QTextFrameFormat::setBorder(qreal border);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setBorder(arg1);
+  };
+}
+// _ZN16QTextFrameFormat9setBorderEd setBorder(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 834, column 17>
+//   // proto:  void QTextFrameFormat::setHeight(const QTextLength & height);
+if (false) {
+  auto f = [](const QTextLength & arg1) {
+    ((QTextFrameFormat*)0)->setHeight(arg1);
+  };
+}
+// _ZN16QTextFrameFormat9setHeightERK11QTextLength setHeight(const class QTextLength &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 804, column 24>
+//   // proto:  QTextFrameFormat::BorderStyle QTextFrameFormat::borderStyle();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->borderStyle();
+  };
+}
+// _ZNK16QTextFrameFormat11borderStyleEv borderStyle()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 828, column 17>
+//   // proto:  void QTextFrameFormat::setWidth(const QTextLength & length);
+if (false) {
+  auto f = [](const QTextLength & arg1) {
+    ((QTextFrameFormat*)0)->setWidth(arg1);
+  };
+}
+// _ZN16QTextFrameFormat8setWidthERK11QTextLength setWidth(const class QTextLength &)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 788, column 17>
+//   // proto:  void QTextFrameFormat::setPosition(QTextFrameFormat::Position f);
+if (false) {
+  auto f = [](QTextFrameFormat::Position arg1) {
+    ((QTextFrameFormat*)0)->setPosition(arg1);
+  };
+}
+// _ZN16QTextFrameFormat11setPositionENS_8PositionE setPosition(enum QTextFrameFormat::Position)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 814, column 17>
+//   // proto:  void QTextFrameFormat::setBottomMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setBottomMargin(arg1);
+  };
+}
+// _ZN16QTextFrameFormat15setBottomMarginEd setBottomMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 838, column 17>
+//   // proto:  void QTextFrameFormat::setPageBreakPolicy(PageBreakFlags flags);
+if (false) {
+  auto f = [](QTextFormat::PageBreakFlags arg1) {
+    ((QTextFrameFormat*)0)->setPageBreakPolicy(arg1);
+  };
+}
+// _ZN16QTextFrameFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBreakFlagEE setPageBreakPolicy(PageBreakFlags)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 835, column 24>
+//   // proto:  QTextLength QTextFrameFormat::height();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->height();
+  };
+}
+// _ZNK16QTextFrameFormat6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 827, column 17>
+//   // proto:  void QTextFrameFormat::setWidth(qreal width);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setWidth(arg1);
+  };
+}
+// _ZN16QTextFrameFormat8setWidthEd setWidth(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 823, column 17>
+//   // proto:  void QTextFrameFormat::setPadding(qreal padding);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setPadding(arg1);
+  };
+}
+// _ZN16QTextFrameFormat10setPaddingEd setPadding(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 811, column 17>
+//   // proto:  void QTextFrameFormat::setTopMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setTopMargin(arg1);
+  };
+}
+// _ZN16QTextFrameFormat12setTopMarginEd setTopMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 790, column 21>
+//   // proto:  QTextFrameFormat::Position QTextFrameFormat::position();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->position();
+  };
+}
+// _ZNK16QTextFrameFormat8positionEv position()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 830, column 24>
+//   // proto:  QTextLength QTextFrameFormat::width();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->width();
+  };
+}
+// _ZNK16QTextFrameFormat5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 824, column 18>
+//   // proto:  qreal QTextFrameFormat::padding();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->padding();
+  };
+}
+// _ZNK16QTextFrameFormat7paddingEv padding()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 817, column 17>
+//   // proto:  void QTextFrameFormat::setLeftMargin(qreal margin);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextFrameFormat*)0)->setLeftMargin(arg1);
+  };
+}
+// _ZN16QTextFrameFormat13setLeftMarginEd setLeftMargin(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 794, column 18>
+//   // proto:  qreal QTextFrameFormat::border();
+if (false) {
+  auto f = []() {
+    ((QTextFrameFormat*)0)->border();
+  };
+}
+// _ZNK16QTextFrameFormat6borderEv border()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

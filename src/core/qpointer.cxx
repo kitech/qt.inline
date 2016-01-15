@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qpointer.h
 // dst-file: /src/core/qpointer.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpointer.h>
 
 extern "C" {
@@ -14,6 +15,9 @@ extern "C" {
 // <= header block end
 
 // main block begin =>
+void __keep_qpointer_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

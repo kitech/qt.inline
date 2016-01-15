@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qwizard.h
 // dst-file: /src/widgets/qwizard.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qwizard.h>
 
 extern "C" {
@@ -14,39 +15,9 @@ int QWizardPage_Class_Size()
   return sizeof(QWizardPage);
 }
 
-// QWizardPage(class QWidget *)
-QWizardPage* dector_ZN11QWizardPageC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QWizardPage) == 32, "tyszerr");
-  QWizardPage* rthis = new QWizardPage(parent);
-  return rthis;
-}
-
-// ~QWizardPage()
-void dedtor_ZN11QWizardPageD0Ev(QWizardPage* that)
-{
-  QWizardPage* rthis = (QWizardPage*)that;
-  delete rthis;
-}
-
 int QWizard_Class_Size()
 {
   return sizeof(QWizard);
-}
-
-// ~QWizard()
-void dedtor_ZN7QWizardD0Ev(QWizard* that)
-{
-  QWizard* rthis = (QWizard*)that;
-  delete rthis;
-}
-
-// QWizard(class QWidget *, Qt::WindowFlags)
-QWizard* dector_ZN7QWizardC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QWizard) == 32, "tyszerr");
-  QWizard* rthis = new QWizard(parent, flags);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -54,6 +25,9 @@ QWizard* dector_ZN7QWizardC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * paren
 // <= header block end
 
 // main block begin =>
+void __keep_qwizard_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

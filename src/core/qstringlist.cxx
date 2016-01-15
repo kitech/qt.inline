@@ -1,10 +1,12 @@
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qstringlist.h
 // dst-file: /src/core/qstringlist.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstringlist.h>
 
 extern "C" {
@@ -14,128 +16,9 @@ int QStringList_Class_Size()
   return sizeof(QStringList);
 }
 
-// QStringList()
-QStringList* dector_ZN11QStringListC1Ev()
+int QListSpecialMethods_QString__Class_Size()
 {
-  // static_assert(sizeof(QStringList) == 32, "tyszerr");
-  QStringList* rthis = new QStringList();
-  return rthis;
-}
-
-// QStringList(QList<class QString> &&)
-QStringList* dector_ZN11QStringListC1EO5QListI7QStringE(QList<QString> && l)
-{
-  // static_assert(sizeof(QStringList) == 32, "tyszerr");
-  QStringList* rthis = new QStringList(l);
-  return rthis;
-}
-
-// QStringList(std::initializer_list<QString>)
-QStringList* dector_ZN11QStringListC1ESt16initializer_listI7QStringE(std::initializer_list<QString> args)
-{
-  // static_assert(sizeof(QStringList) == 32, "tyszerr");
-  QStringList* rthis = new QStringList(args);
-  return rthis;
-}
-
-// QStringList(const class QString &)
-QStringList* dector_ZN11QStringListC1ERK7QString(const QString & i)
-{
-  // static_assert(sizeof(QStringList) == 32, "tyszerr");
-  QStringList* rthis = new QStringList(i);
-  return rthis;
-}
-
-// QStringList(const QList<class QString> &)
-QStringList* dector_ZN11QStringListC1ERK5QListI7QStringE(const QList<QString> & l)
-{
-  // static_assert(sizeof(QStringList) == 32, "tyszerr");
-  QStringList* rthis = new QStringList(l);
-  return rthis;
-}
-
-  // proto:  int QStringList::lastIndexOf(const QRegularExpression & re, int from);
-int demth_ZNK11QStringList11lastIndexOfERK18QRegularExpressioni(void *that, const QRegularExpression & re, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->lastIndexOf(re, from);
-}
-
-  // proto:  bool QStringList::contains(const QString & str, Qt::CaseSensitivity cs);
-bool demth_ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE(void *that, const QString & str, Qt::CaseSensitivity cs)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->contains(str, cs);
-}
-
-  // proto:  void QStringList::QStringList();
-void demth_ZN11QStringListC1Ev(void *that)
-{
-  QStringList *cthat = (QStringList *)that;
-  auto _o = new(that) QStringList();
-}
-
-  // proto:  int QStringList::indexOf(const QRegExp & rx, int from);
-int demth_ZNK11QStringList7indexOfERK7QRegExpi(void *that, const QRegExp & rx, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->indexOf(rx, from);
-}
-
-  // proto:  void QStringList::QStringList(QList<QString> && l);
-void demth_ZN11QStringListC1EO5QListI7QStringE(void *that, QList<QString> && l)
-{
-  QStringList *cthat = (QStringList *)that;
-  auto _o = new(that) QStringList(l);
-}
-
-  // proto:  int QStringList::indexOf(QRegExp & rx, int from);
-int demth_ZNK11QStringList7indexOfER7QRegExpi(void *that, QRegExp & rx, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->indexOf(rx, from);
-}
-
-  // proto:  int QStringList::indexOf(const QRegularExpression & re, int from);
-int demth_ZNK11QStringList7indexOfERK18QRegularExpressioni(void *that, const QRegularExpression & re, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->indexOf(re, from);
-}
-
-  // proto:  int QStringList::lastIndexOf(const QRegExp & rx, int from);
-int demth_ZNK11QStringList11lastIndexOfERK7QRegExpi(void *that, const QRegExp & rx, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->lastIndexOf(rx, from);
-}
-
-  // proto:  int QStringList::lastIndexOf(QRegExp & rx, int from);
-int demth_ZNK11QStringList11lastIndexOfER7QRegExpi(void *that, QRegExp & rx, int from)
-{
-  QStringList *cthat = (QStringList *)that;
-  return cthat->lastIndexOf(rx, from);
-}
-
-  // proto:  void QStringList::QStringList(std::initializer_list<QString> args);
-void demth_ZN11QStringListC1ESt16initializer_listI7QStringE(void *that, std::initializer_list<QString> args)
-{
-  QStringList *cthat = (QStringList *)that;
-  auto _o = new(that) QStringList(args);
-}
-
-  // proto:  void QStringList::QStringList(const QString & i);
-void demth_ZN11QStringListC1ERK7QString(void *that, const QString & i)
-{
-  QStringList *cthat = (QStringList *)that;
-  auto _o = new(that) QStringList(i);
-}
-
-  // proto:  void QStringList::QStringList(const QList<QString> & l);
-void demth_ZN11QStringListC1ERK5QListI7QStringE(void *that, const QList<QString> & l)
-{
-  QStringList *cthat = (QStringList *)that;
-  auto _o = new(that) QStringList(l);
+  return sizeof(QListSpecialMethods<QString>);
 }
 
 }; // <= extern "C" block end
@@ -143,6 +26,180 @@ void demth_ZN11QStringListC1ERK5QListI7QStringE(void *that, const QList<QString>
 // <= header block end
 
 // main block begin =>
+void __keep_qstringlist_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 135, column 16>
+//   // proto:  int QStringList::lastIndexOf(const QRegularExpression & re, int from);
+if (false) {
+  auto f = [](const QRegularExpression & arg1, int arg2) {
+    ((QStringList*)0)->lastIndexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList11lastIndexOfERK18QRegularExpressioni lastIndexOf(const class QRegularExpression &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 114, column 17>
+//   // proto:  bool QStringList::contains(const QString & str, Qt::CaseSensitivity cs);
+if (false) {
+  auto f = [](const QString & arg1, Qt::CaseSensitivity arg2) {
+    ((QStringList*)0)->contains(arg1, arg2);
+  };
+}
+// _ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE contains(const class QString &, Qt::CaseSensitivity)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 97, column 12>
+//   // proto:  void QStringList::QStringList();
+if (false) {
+  auto f = []() {
+    new QStringList();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 126, column 16>
+//   // proto:  int QStringList::indexOf(const QRegExp & rx, int from);
+if (false) {
+  auto f = [](const QRegExp & arg1, int arg2) {
+    ((QStringList*)0)->indexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList7indexOfERK7QRegExpi indexOf(const class QRegExp &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 101, column 12>
+//   // proto:  void QStringList::QStringList(QList<QString> && l);
+if (false) {
+  auto f = [](QList<QString> && arg1) {
+    new QStringList(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 128, column 16>
+//   // proto:  int QStringList::indexOf(QRegExp & rx, int from);
+if (false) {
+  auto f = [](QRegExp & arg1, int arg2) {
+    ((QStringList*)0)->indexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList7indexOfER7QRegExpi indexOf(class QRegExp &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 134, column 16>
+//   // proto:  int QStringList::indexOf(const QRegularExpression & re, int from);
+if (false) {
+  auto f = [](const QRegularExpression & arg1, int arg2) {
+    ((QStringList*)0)->indexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList7indexOfERK18QRegularExpressioni indexOf(const class QRegularExpression &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 127, column 16>
+//   // proto:  int QStringList::lastIndexOf(const QRegExp & rx, int from);
+if (false) {
+  auto f = [](const QRegExp & arg1, int arg2) {
+    ((QStringList*)0)->lastIndexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList11lastIndexOfERK7QRegExpi lastIndexOf(const class QRegExp &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 129, column 16>
+//   // proto:  int QStringList::lastIndexOf(QRegExp & rx, int from);
+if (false) {
+  auto f = [](QRegExp & arg1, int arg2) {
+    ((QStringList*)0)->lastIndexOf(arg1, arg2);
+  };
+}
+// _ZNK11QStringList11lastIndexOfER7QRegExpi lastIndexOf(class QRegExp &, int)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 104, column 12>
+//   // proto:  void QStringList::QStringList(std::initializer_list<QString> args);
+if (false) {
+  auto f = [](std::initializer_list<QString> arg1) {
+    new QStringList(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 98, column 21>
+//   // proto:  void QStringList::QStringList(const QString & i);
+if (false) {
+  auto f = [](const QString & arg1) {
+    new QStringList(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 99, column 12>
+//   // proto:  void QStringList::QStringList(const QList<QString> & l);
+if (false) {
+  auto f = [](const QList<QString> & arg1) {
+    new QStringList(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 82, column 25>
+//   // proto:  QStringList & QListSpecialMethods<QString>::replaceInStrings(const QRegularExpression & re, const QString & after);
+if (false) {
+  auto f = [](const QRegularExpression & arg1, const QString & arg2) {
+    ((QListSpecialMethods<QString>*)0)->replaceInStrings(arg1, arg2);
+  };
+}
+// _ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK18QRegularExpressionRKS0_ replaceInStrings(const class QRegularExpression &, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 71, column 24>
+//   // proto:  QStringList QListSpecialMethods<QString>::filter(const QString & str, Qt::CaseSensitivity cs);
+if (false) {
+  auto f = [](const QString & arg1, Qt::CaseSensitivity arg2) {
+    ((QListSpecialMethods<QString>*)0)->filter(arg1, arg2);
+  };
+}
+// _ZNK19QListSpecialMethodsI7QStringE6filterERKS0_N2Qt15CaseSensitivityE filter(const class QString &, Qt::CaseSensitivity)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 65, column 17>
+//   // proto:  void QListSpecialMethods<QString>::sort(Qt::CaseSensitivity cs);
+if (false) {
+  auto f = [](Qt::CaseSensitivity arg1) {
+    ((QListSpecialMethods<QString>*)0)->sort(arg1);
+  };
+}
+// _ZN19QListSpecialMethodsI7QStringE4sortEN2Qt15CaseSensitivityE sort(Qt::CaseSensitivity)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 72, column 25>
+//   // proto:  QStringList & QListSpecialMethods<QString>::replaceInStrings(const QString & before, const QString & after, Qt::CaseSensitivity cs);
+if (false) {
+  auto f = [](const QString & arg1, const QString & arg2, Qt::CaseSensitivity arg3) {
+    ((QListSpecialMethods<QString>*)0)->replaceInStrings(arg1, arg2, arg3);
+  };
+}
+// _ZN19QListSpecialMethodsI7QStringE16replaceInStringsERKS0_S3_N2Qt15CaseSensitivityE replaceInStrings(const class QString &, const class QString &, Qt::CaseSensitivity)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 68, column 20>
+//   // proto:  QString QListSpecialMethods<QString>::join(const QString & sep);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QListSpecialMethods<QString>*)0)->join(arg1);
+  };
+}
+// _ZNK19QListSpecialMethodsI7QStringE4joinERKS0_ join(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 81, column 24>
+//   // proto:  QStringList QListSpecialMethods<QString>::filter(const QRegularExpression & re);
+if (false) {
+  auto f = [](const QRegularExpression & arg1) {
+    ((QListSpecialMethods<QString>*)0)->filter(arg1);
+  };
+}
+// _ZNK19QListSpecialMethodsI7QStringE6filterERK18QRegularExpression filter(const class QRegularExpression &)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 66, column 16>
+//   // proto:  int QListSpecialMethods<QString>::removeDuplicates();
+if (false) {
+  auto f = []() {
+    ((QListSpecialMethods<QString>*)0)->removeDuplicates();
+  };
+}
+// _ZN19QListSpecialMethodsI7QStringE16removeDuplicatesEv removeDuplicates()
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 76, column 25>
+//   // proto:  QStringList & QListSpecialMethods<QString>::replaceInStrings(const QRegExp & rx, const QString & after);
+if (false) {
+  auto f = [](const QRegExp & arg1, const QString & arg2) {
+    ((QListSpecialMethods<QString>*)0)->replaceInStrings(arg1, arg2);
+  };
+}
+// _ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK7QRegExpRKS0_ replaceInStrings(const class QRegExp &, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 75, column 24>
+//   // proto:  QStringList QListSpecialMethods<QString>::filter(const QRegExp & rx);
+if (false) {
+  auto f = [](const QRegExp & arg1) {
+    ((QListSpecialMethods<QString>*)0)->filter(arg1);
+  };
+}
+// _ZNK19QListSpecialMethodsI7QStringE6filterERK7QRegExp filter(const class QRegExp &)
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 69, column 20>
+//   // proto:  QString QListSpecialMethods<QString>::join(QChar sep);
+if (false) {
+  auto f = [](QChar arg1) {
+    ((QListSpecialMethods<QString>*)0)->join(arg1);
+  };
+}
+// _ZNK19QListSpecialMethodsI7QStringE4joinE5QChar join(class QChar)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

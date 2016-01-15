@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qdatastream.h
 // dst-file: /src/core/qdatastream.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdatastream.h>
 
 extern "C" {
@@ -14,71 +15,46 @@ int QDataStream_Class_Size()
   return sizeof(QDataStream);
 }
 
-// QDataStream(class QIODevice *)
-QDataStream* dector_ZN11QDataStreamC1EP9QIODevice(QIODevice * arg1)
-{
-  // static_assert(sizeof(QDataStream) == 32, "tyszerr");
-  QDataStream* rthis = new QDataStream(arg1);
-  return rthis;
-}
-
-// QDataStream(class QByteArray *, class QIODevice::OpenMode)
-QDataStream* dector_ZN11QDataStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg1, QIODevice::OpenMode flags)
-{
-  // static_assert(sizeof(QDataStream) == 32, "tyszerr");
-  QDataStream* rthis = new QDataStream(arg1, flags);
-  return rthis;
-}
-
-// ~QDataStream()
-void dedtor_ZN11QDataStreamD0Ev(QDataStream* that)
-{
-  QDataStream* rthis = (QDataStream*)that;
-  delete rthis;
-}
-
-// QDataStream()
-QDataStream* dector_ZN11QDataStreamC1Ev()
-{
-  // static_assert(sizeof(QDataStream) == 32, "tyszerr");
-  QDataStream* rthis = new QDataStream();
-  return rthis;
-}
-
-// QDataStream(const class QByteArray &)
-QDataStream* dector_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & arg1)
-{
-  // static_assert(sizeof(QDataStream) == 32, "tyszerr");
-  QDataStream* rthis = new QDataStream(arg1);
-  return rthis;
-}
-
-  // proto:  int QDataStream::version();
-int demth_ZNK11QDataStream7versionEv(void *that)
-{
-  QDataStream *cthat = (QDataStream *)that;
-  return cthat->version();
-}
-
-  // proto:  void QDataStream::setVersion(int );
-void demth_ZN11QDataStream10setVersionEi(void *that, int arg1)
-{
-  QDataStream *cthat = (QDataStream *)that;
-   cthat->setVersion(arg1);
-}
-
-  // proto:  QIODevice * QDataStream::device();
-QIODevice * demth_ZNK11QDataStream6deviceEv(void *that)
-{
-  QDataStream *cthat = (QDataStream *)that;
-  return cthat->device();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdatastream_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 131, column 9>
+//   // proto:  int QDataStream::version();
+if (false) {
+  auto f = []() {
+    ((QDataStream*)0)->version();
+  };
+}
+// _ZNK11QDataStream7versionEv version()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 128, column 15>
+//   // proto:  QDataStream::ByteOrder QDataStream::byteOrder();
+if (false) {
+  auto f = []() {
+    ((QDataStream*)0)->byteOrder();
+  };
+}
+// _ZNK11QDataStream9byteOrderEv byteOrder()
+// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 132, column 10>
+//   // proto:  void QDataStream::setVersion(int );
+if (false) {
+  auto f = [](int arg1) {
+    ((QDataStream*)0)->setVersion(arg1);
+  };
+}
+// _ZN11QDataStream10setVersionEi setVersion(int)
+// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 115, column 16>
+//   // proto:  QIODevice * QDataStream::device();
+if (false) {
+  auto f = []() {
+    ((QDataStream*)0)->device();
+  };
+}
+// _ZNK11QDataStream6deviceEv device()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

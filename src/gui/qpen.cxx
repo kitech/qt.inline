@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpen.h>
 
 extern "C" {
@@ -14,73 +15,37 @@ int QPen_Class_Size()
   return sizeof(QPen);
 }
 
-// ~QPen()
-void dedtor_ZN4QPenD0Ev(QPen* that)
-{
-  QPen* rthis = (QPen*)that;
-  delete rthis;
-}
-
-// QPen(const class QColor &)
-QPen* dector_ZN4QPenC1ERK6QColor(const QColor & color)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(color);
-  return rthis;
-}
-
-// QPen(Qt::PenStyle)
-QPen* dector_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle arg1)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(arg1);
-  return rthis;
-}
-
-// QPen(const class QPen &)
-QPen* dector_ZN4QPenC1ERKS_(const QPen & pen)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(pen);
-  return rthis;
-}
-
-// QPen()
-QPen* dector_ZN4QPenC1Ev()
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen();
-  return rthis;
-}
-
-// QPen(class QPen &&)
-QPen* dector_ZN4QPenC1EOS_(QPen && other)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(other);
-  return rthis;
-}
-
-// QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
-QPen* dector_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, double width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j)
-{
-  // static_assert(sizeof(QPen) == 32, "tyszerr");
-  QPen* rthis = new QPen(brush, width, s, c, j);
-  return rthis;
-}
-
-  // proto:  void QPen::swap(QPen & other);
-void demth_ZN4QPen4swapERS_(void *that, QPen & other)
-{
-  QPen *cthat = (QPen *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpen_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 123, column 21>
+//   // proto:  DataPtr & QPen::data_ptr();
+if (false) {
+  auto f = []() {
+    ((QPen*)0)->data_ptr();
+  };
+}
+// _ZN4QPen8data_ptrEv data_ptr()
+// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 72, column 10>
+//   // proto:  void QPen::swap(QPen & other);
+if (false) {
+  auto f = [](QPen & arg1) {
+    ((QPen*)0)->swap(arg1);
+  };
+}
+// _ZN4QPen4swapERS_ swap(class QPen &)
+// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 67, column 5>
+//   // proto:  void QPen::QPen(QPen && other);
+if (false) {
+  auto f = [](QPen && arg1) {
+    new QPen(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

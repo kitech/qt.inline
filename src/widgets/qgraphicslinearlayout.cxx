@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qgraphicslinearlayout.h
 // dst-file: /src/widgets/qgraphicslinearlayout.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qgraphicslinearlayout.h>
 
 extern "C" {
@@ -14,48 +15,30 @@ int QGraphicsLinearLayout_Class_Size()
   return sizeof(QGraphicsLinearLayout);
 }
 
-// QGraphicsLinearLayout(class QGraphicsLayoutItem *)
-QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent)
-{
-  // static_assert(sizeof(QGraphicsLinearLayout) == 32, "tyszerr");
-  QGraphicsLinearLayout* rthis = new QGraphicsLinearLayout(parent);
-  return rthis;
-}
-
-// ~QGraphicsLinearLayout()
-void dedtor_ZN21QGraphicsLinearLayoutD0Ev(QGraphicsLinearLayout* that)
-{
-  QGraphicsLinearLayout* rthis = (QGraphicsLinearLayout*)that;
-  delete rthis;
-}
-
-// QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
-QGraphicsLinearLayout* dector_ZN21QGraphicsLinearLayoutC1EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent)
-{
-  // static_assert(sizeof(QGraphicsLinearLayout) == 32, "tyszerr");
-  QGraphicsLinearLayout* rthis = new QGraphicsLinearLayout(orientation, parent);
-  return rthis;
-}
-
-  // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
-void demth_ZN21QGraphicsLinearLayout10addStretchEi(void *that, int stretch)
-{
-  QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
-   cthat->addStretch(stretch);
-}
-
-  // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
-void demth_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *that, QGraphicsLayoutItem * item)
-{
-  QGraphicsLinearLayout *cthat = (QGraphicsLinearLayout *)that;
-   cthat->addItem(item);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qgraphicslinearlayout_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 58, column 17>
+//   // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
+if (false) {
+  auto f = [](int arg1) {
+    ((QGraphicsLinearLayout*)0)->addStretch(arg1);
+  };
+}
+// _ZN21QGraphicsLinearLayout10addStretchEi addStretch(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 57, column 17>
+//   // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
+if (false) {
+  auto f = [](QGraphicsLayoutItem * arg1) {
+    ((QGraphicsLinearLayout*)0)->addItem(arg1);
+  };
+}
+// _ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem addItem(class QGraphicsLayoutItem *)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

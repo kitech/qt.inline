@@ -1,10 +1,12 @@
+#include <qrect.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdesktopwidget.h>
 
 extern "C" {
@@ -14,49 +16,38 @@ int QDesktopWidget_Class_Size()
   return sizeof(QDesktopWidget);
 }
 
-// ~QDesktopWidget()
-void dedtor_ZN14QDesktopWidgetD0Ev(QDesktopWidget* that)
-{
-  QDesktopWidget* rthis = (QDesktopWidget*)that;
-  delete rthis;
-}
-
-// QDesktopWidget()
-QDesktopWidget* dector_ZN14QDesktopWidgetC1Ev()
-{
-  // static_assert(sizeof(QDesktopWidget) == 32, "tyszerr");
-  QDesktopWidget* rthis = new QDesktopWidget();
-  return rthis;
-}
-
-  // proto:  const QRect QDesktopWidget::screenGeometry(const QPoint & point);
-const QRect* demth_ZNK14QDesktopWidget14screenGeometryERK6QPoint(void *that, const QPoint & point)
-{
-  QDesktopWidget *cthat = (QDesktopWidget *)that;
-  auto recret = cthat->screenGeometry(point);
-  return new const QRect(recret);
-}
-
-  // proto:  int QDesktopWidget::screenCount();
-int demth_ZNK14QDesktopWidget11screenCountEv(void *that)
-{
-  QDesktopWidget *cthat = (QDesktopWidget *)that;
-  return cthat->screenCount();
-}
-
-  // proto:  const QRect QDesktopWidget::availableGeometry(const QPoint & point);
-const QRect* demth_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *that, const QPoint & point)
-{
-  QDesktopWidget *cthat = (QDesktopWidget *)that;
-  auto recret = cthat->availableGeometry(point);
-  return new const QRect(recret);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdesktopwidget_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 68, column 17>
+//   // proto:  const QRect QDesktopWidget::screenGeometry(const QPoint & point);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    ((QDesktopWidget*)0)->screenGeometry(arg1);
+  };
+}
+// _ZNK14QDesktopWidget14screenGeometryERK6QPoint screenGeometry(const class QPoint &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 58, column 9>
+//   // proto:  int QDesktopWidget::screenCount();
+if (false) {
+  auto f = []() {
+    ((QDesktopWidget*)0)->screenCount();
+  };
+}
+// _ZNK14QDesktopWidget11screenCountEv screenCount()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 73, column 17>
+//   // proto:  const QRect QDesktopWidget::availableGeometry(const QPoint & point);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    ((QDesktopWidget*)0)->availableGeometry(arg1);
+  };
+}
+// _ZNK14QDesktopWidget17availableGeometryERK6QPoint availableGeometry(const class QPoint &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

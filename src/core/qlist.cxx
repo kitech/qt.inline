@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qlist.h
 // dst-file: /src/core/qlist.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qlist.h>
 
 extern "C" {
@@ -14,53 +15,62 @@ int QListData_Class_Size()
   return sizeof(QListData);
 }
 
-  // proto:  void ** QListData::end();
-void ** demth_ZNK9QListData3endEv(void *that)
-{
-  QListData *cthat = (QListData *)that;
-  return cthat->end();
-}
-
-  // proto:  void QListData::dispose();
-void demth_ZN9QListData7disposeEv(void *that)
-{
-  QListData *cthat = (QListData *)that;
-   cthat->dispose();
-}
-
-  // proto:  int QListData::size();
-int demth_ZNK9QListData4sizeEv(void *that)
-{
-  QListData *cthat = (QListData *)that;
-  return cthat->size();
-}
-
-  // proto:  bool QListData::isEmpty();
-bool demth_ZNK9QListData7isEmptyEv(void *that)
-{
-  QListData *cthat = (QListData *)that;
-  return cthat->isEmpty();
-}
-
-  // proto:  void ** QListData::at(int i);
-void ** demth_ZNK9QListData2atEi(void *that, int i)
-{
-  QListData *cthat = (QListData *)that;
-  return cthat->at(i);
-}
-
-  // proto:  void ** QListData::begin();
-void ** demth_ZNK9QListData5beginEv(void *that)
-{
-  QListData *cthat = (QListData *)that;
-  return cthat->begin();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qlist_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 109, column 19>
+//   // proto:  void ** QListData::end();
+if (false) {
+  auto f = []() {
+    ((QListData*)0)->end();
+  };
+}
+// _ZNK9QListData3endEv end()
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 92, column 17>
+//   // proto:  void QListData::dispose();
+if (false) {
+  auto f = []() {
+    ((QListData*)0)->dispose();
+  };
+}
+// _ZN9QListData7disposeEv dispose()
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 105, column 16>
+//   // proto:  int QListData::size();
+if (false) {
+  auto f = []() {
+    ((QListData*)0)->size();
+  };
+}
+// _ZNK9QListData4sizeEv size()
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 106, column 17>
+//   // proto:  bool QListData::isEmpty();
+if (false) {
+  auto f = []() {
+    ((QListData*)0)->isEmpty();
+  };
+}
+// _ZNK9QListData7isEmptyEv isEmpty()
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 107, column 19>
+//   // proto:  void ** QListData::at(int i);
+if (false) {
+  auto f = [](int arg1) {
+    ((QListData*)0)->at(arg1);
+  };
+}
+// _ZNK9QListData2atEi at(int)
+// <SourceLocation file '/usr/include/qt/QtCore/qlist.h', line 108, column 19>
+//   // proto:  void ** QListData::begin();
+if (false) {
+  auto f = []() {
+    ((QListData*)0)->begin();
+  };
+}
+// _ZNK9QListData5beginEv begin()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

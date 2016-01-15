@@ -1,10 +1,12 @@
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextlayout.h>
 
 extern "C" {
@@ -14,91 +16,9 @@ int QTextLine_Class_Size()
   return sizeof(QTextLine);
 }
 
-// QTextLine()
-QTextLine* dector_ZN9QTextLineC1Ev()
-{
-  // static_assert(sizeof(QTextLine) == 32, "tyszerr");
-  QTextLine* rthis = new QTextLine();
-  return rthis;
-}
-
-  // proto:  qreal QTextLine::cursorToX(int cursorPos, QTextLine::Edge edge);
-qreal demth_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *that, int cursorPos, QTextLine::Edge edge)
-{
-  QTextLine *cthat = (QTextLine *)that;
-  return cthat->cursorToX(cursorPos, edge);
-}
-
-  // proto:  int QTextLine::lineNumber();
-int demth_ZNK9QTextLine10lineNumberEv(void *that)
-{
-  QTextLine *cthat = (QTextLine *)that;
-  return cthat->lineNumber();
-}
-
-  // proto:  void QTextLine::QTextLine();
-void demth_ZN9QTextLineC1Ev(void *that)
-{
-  QTextLine *cthat = (QTextLine *)that;
-  auto _o = new(that) QTextLine();
-}
-
-  // proto:  bool QTextLine::isValid();
-bool demth_ZNK9QTextLine7isValidEv(void *that)
-{
-  QTextLine *cthat = (QTextLine *)that;
-  return cthat->isValid();
-}
-
 int QTextLayout_Class_Size()
 {
   return sizeof(QTextLayout);
-}
-
-// QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
-QTextLayout* dector_ZN11QTextLayoutC1ERK7QStringRK5QFontP12QPaintDevice(const QString & text, const QFont & font, QPaintDevice * paintdevice)
-{
-  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
-  QTextLayout* rthis = new QTextLayout(text, font, paintdevice);
-  return rthis;
-}
-
-// ~QTextLayout()
-void dedtor_ZN11QTextLayoutD0Ev(QTextLayout* that)
-{
-  QTextLayout* rthis = (QTextLayout*)that;
-  delete rthis;
-}
-
-// QTextLayout(const class QTextBlock &)
-QTextLayout* dector_ZN11QTextLayoutC1ERK10QTextBlock(const QTextBlock & b)
-{
-  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
-  QTextLayout* rthis = new QTextLayout(b);
-  return rthis;
-}
-
-// QTextLayout(const class QString &)
-QTextLayout* dector_ZN11QTextLayoutC1ERK7QString(const QString & text)
-{
-  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
-  QTextLayout* rthis = new QTextLayout(text);
-  return rthis;
-}
-
-// QTextLayout()
-QTextLayout* dector_ZN11QTextLayoutC1Ev()
-{
-  // static_assert(sizeof(QTextLayout) == 32, "tyszerr");
-  QTextLayout* rthis = new QTextLayout();
-  return rthis;
-}
-
-  // proto:  QTextEngine * QTextLayout::engine();
-QTextEngine * demth_ZNK11QTextLayout6engineEv(void *that)
-{
-  QTextLayout *cthat = (QTextLayout *)that;
-  return cthat->engine();
 }
 
 int QTextInlineObject_Class_Size()
@@ -106,48 +26,75 @@ int QTextInlineObject_Class_Size()
   return sizeof(QTextInlineObject);
 }
 
-// QTextInlineObject(int, class QTextEngine *)
-QTextInlineObject* dector_ZN17QTextInlineObjectC1EiP11QTextEngine(int i, QTextEngine * e)
-{
-  // static_assert(sizeof(QTextInlineObject) == 32, "tyszerr");
-  QTextInlineObject* rthis = new QTextInlineObject(i, e);
-  return rthis;
-}
-
-// QTextInlineObject()
-QTextInlineObject* dector_ZN17QTextInlineObjectC1Ev()
-{
-  // static_assert(sizeof(QTextInlineObject) == 32, "tyszerr");
-  QTextInlineObject* rthis = new QTextInlineObject();
-  return rthis;
-}
-
-  // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
-void demth_ZN17QTextInlineObjectC1EiP11QTextEngine(void *that, int i, QTextEngine * e)
-{
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  auto _o = new(that) QTextInlineObject(i, e);
-}
-
-  // proto:  bool QTextInlineObject::isValid();
-bool demth_ZNK17QTextInlineObject7isValidEv(void *that)
-{
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  return cthat->isValid();
-}
-
-  // proto:  void QTextInlineObject::QTextInlineObject();
-void demth_ZN17QTextInlineObjectC1Ev(void *that)
-{
-  QTextInlineObject *cthat = (QTextInlineObject *)that;
-  auto _o = new(that) QTextInlineObject();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextlayout_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 225, column 18>
+//   // proto:  qreal QTextLine::cursorToX(int cursorPos, QTextLine::Edge edge);
+if (false) {
+  auto f = [](int arg1, QTextLine::Edge arg2) {
+    ((QTextLine*)0)->cursorToX(arg1, arg2);
+  };
+}
+// _ZNK9QTextLine9cursorToXEiNS_4EdgeE cursorToX(int, enum QTextLine::Edge)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 238, column 9>
+//   // proto:  int QTextLine::lineNumber();
+if (false) {
+  auto f = []() {
+    ((QTextLine*)0)->lineNumber();
+  };
+}
+// _ZNK9QTextLine10lineNumberEv lineNumber()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 195, column 12>
+//   // proto:  void QTextLine::QTextLine();
+if (false) {
+  auto f = []() {
+    new QTextLine();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 196, column 17>
+//   // proto:  bool QTextLine::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextLine*)0)->isValid();
+  };
+}
+// _ZNK9QTextLine7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 176, column 18>
+//   // proto:  QTextEngine * QTextLayout::engine();
+if (false) {
+  auto f = []() {
+    ((QTextLayout*)0)->engine();
+  };
+}
+// _ZNK11QTextLayout6engineEv engine()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 64, column 5>
+//   // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
+if (false) {
+  auto f = [](int arg1, QTextEngine * arg2) {
+    new QTextInlineObject(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 66, column 17>
+//   // proto:  bool QTextInlineObject::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextInlineObject*)0)->isValid();
+  };
+}
+// _ZNK17QTextInlineObject7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 65, column 12>
+//   // proto:  void QTextInlineObject::QTextInlineObject();
+if (false) {
+  auto f = []() {
+    new QTextInlineObject();
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

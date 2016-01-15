@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qoffscreensurface.h
 // dst-file: /src/gui/qoffscreensurface.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qoffscreensurface.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QOffscreenSurface_Class_Size()
   return sizeof(QOffscreenSurface);
 }
 
-// ~QOffscreenSurface()
-void dedtor_ZN17QOffscreenSurfaceD0Ev(QOffscreenSurface* that)
-{
-  QOffscreenSurface* rthis = (QOffscreenSurface*)that;
-  delete rthis;
-}
-
-// QOffscreenSurface(class QScreen *)
-QOffscreenSurface* dector_ZN17QOffscreenSurfaceC1EP7QScreen(QScreen * screen)
-{
-  // static_assert(sizeof(QOffscreenSurface) == 32, "tyszerr");
-  QOffscreenSurface* rthis = new QOffscreenSurface(screen);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qoffscreensurface_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

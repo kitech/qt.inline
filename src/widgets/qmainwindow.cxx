@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmainwindow.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QMainWindow_Class_Size()
   return sizeof(QMainWindow);
 }
 
-// QMainWindow(class QWidget *, Qt::WindowFlags)
-QMainWindow* dector_ZN11QMainWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags flags)
-{
-  // static_assert(sizeof(QMainWindow) == 32, "tyszerr");
-  QMainWindow* rthis = new QMainWindow(parent, flags);
-  return rthis;
-}
-
-// ~QMainWindow()
-void dedtor_ZN11QMainWindowD0Ev(QMainWindow* that)
-{
-  QMainWindow* rthis = (QMainWindow*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmainwindow_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

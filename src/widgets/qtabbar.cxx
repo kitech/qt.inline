@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtabbar.h
 // dst-file: /src/widgets/qtabbar.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtabbar.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QTabBar_Class_Size()
   return sizeof(QTabBar);
 }
 
-// QTabBar(class QWidget *)
-QTabBar* dector_ZN7QTabBarC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QTabBar) == 32, "tyszerr");
-  QTabBar* rthis = new QTabBar(parent);
-  return rthis;
-}
-
-// ~QTabBar()
-void dedtor_ZN7QTabBarD0Ev(QTabBar* that)
-{
-  QTabBar* rthis = (QTabBar*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtabbar_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

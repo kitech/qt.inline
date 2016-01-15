@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qabstractanimation.h
 // dst-file: /src/core/qabstractanimation.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qabstractanimation.h>
 
 extern "C" {
@@ -19,26 +20,14 @@ int QAnimationDriver_Class_Size()
   return sizeof(QAnimationDriver);
 }
 
-// ~QAnimationDriver()
-void dedtor_ZN16QAnimationDriverD0Ev(QAnimationDriver* that)
-{
-  QAnimationDriver* rthis = (QAnimationDriver*)that;
-  delete rthis;
-}
-
-// QAnimationDriver(class QObject *)
-QAnimationDriver* dector_ZN16QAnimationDriverC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QAnimationDriver) == 32, "tyszerr");
-  QAnimationDriver* rthis = new QAnimationDriver(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qabstractanimation_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

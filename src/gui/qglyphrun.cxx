@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qglyphrun.h
 // dst-file: /src/gui/qglyphrun.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qglyphrun.h>
 
 extern "C" {
@@ -14,41 +15,22 @@ int QGlyphRun_Class_Size()
   return sizeof(QGlyphRun);
 }
 
-// ~QGlyphRun()
-void dedtor_ZN9QGlyphRunD0Ev(QGlyphRun* that)
-{
-  QGlyphRun* rthis = (QGlyphRun*)that;
-  delete rthis;
-}
-
-// QGlyphRun()
-QGlyphRun* dector_ZN9QGlyphRunC1Ev()
-{
-  // static_assert(sizeof(QGlyphRun) == 32, "tyszerr");
-  QGlyphRun* rthis = new QGlyphRun();
-  return rthis;
-}
-
-// QGlyphRun(const class QGlyphRun &)
-QGlyphRun* dector_ZN9QGlyphRunC1ERKS_(const QGlyphRun & other)
-{
-  // static_assert(sizeof(QGlyphRun) == 32, "tyszerr");
-  QGlyphRun* rthis = new QGlyphRun(other);
-  return rthis;
-}
-
-  // proto:  void QGlyphRun::swap(QGlyphRun & other);
-void demth_ZN9QGlyphRun4swapERS_(void *that, QGlyphRun & other)
-{
-  QGlyphRun *cthat = (QGlyphRun *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qglyphrun_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 64, column 10>
+//   // proto:  void QGlyphRun::swap(QGlyphRun & other);
+if (false) {
+  auto f = [](QGlyphRun & arg1) {
+    ((QGlyphRun*)0)->swap(arg1);
+  };
+}
+// _ZN9QGlyphRun4swapERS_ swap(class QGlyphRun &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

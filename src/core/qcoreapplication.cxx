@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcoreapplication.h>
 
 extern "C" {
@@ -14,40 +15,30 @@ int QCoreApplication_Class_Size()
   return sizeof(QCoreApplication);
 }
 
-// ~QCoreApplication()
-void dedtor_ZN16QCoreApplicationD0Ev(QCoreApplication* that)
-{
-  QCoreApplication* rthis = (QCoreApplication*)that;
-  delete rthis;
-}
-
-// QCoreApplication(int &, char **, int)
-QCoreApplication* dector_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv, int arg3)
-{
-  // static_assert(sizeof(QCoreApplication) == 32, "tyszerr");
-  QCoreApplication* rthis = new QCoreApplication(argc, argv, arg3);
-  return rthis;
-}
-
-  // proto: static QCoreApplication * QCoreApplication::instance();
-QCoreApplication * demth_ZN16QCoreApplication8instanceEv(void *that)
-{
-  QCoreApplication *cthat = (QCoreApplication *)that;
-  return cthat->instance();
-}
-
-  // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);
-bool demth_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent(void *that, QObject * receiver, QEvent * event)
-{
-  QCoreApplication *cthat = (QCoreApplication *)that;
-  return cthat->sendEvent(receiver, event);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcoreapplication_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 110, column 30>
+//   // proto: static QCoreApplication * QCoreApplication::instance();
+if (false) {
+  auto f = []() {
+    ((QCoreApplication*)0)->instance();
+  };
+}
+// _ZN16QCoreApplication8instanceEv instance()
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 118, column 17>
+//   // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);
+if (false) {
+  auto f = [](QObject * arg1, QEvent * arg2) {
+    ((QCoreApplication*)0)->sendEvent(arg1, arg2);
+  };
+}
+// _ZN16QCoreApplication9sendEventEP7QObjectP6QEvent sendEvent(class QObject *, class QEvent *)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

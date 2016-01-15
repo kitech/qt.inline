@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qprocess.h
 // dst-file: /src/core/qprocess.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qprocess.h>
 
 extern "C" {
@@ -14,54 +15,9 @@ int QProcess_Class_Size()
   return sizeof(QProcess);
 }
 
-// ~QProcess()
-void dedtor_ZN8QProcessD0Ev(QProcess* that)
-{
-  QProcess* rthis = (QProcess*)that;
-  delete rthis;
-}
-
-// QProcess(class QObject *)
-QProcess* dector_ZN8QProcessC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QProcess) == 32, "tyszerr");
-  QProcess* rthis = new QProcess(parent);
-  return rthis;
-}
-
 int QProcessEnvironment_Class_Size()
 {
   return sizeof(QProcessEnvironment);
-}
-
-// ~QProcessEnvironment()
-void dedtor_ZN19QProcessEnvironmentD0Ev(QProcessEnvironment* that)
-{
-  QProcessEnvironment* rthis = (QProcessEnvironment*)that;
-  delete rthis;
-}
-
-// QProcessEnvironment(const class QProcessEnvironment &)
-QProcessEnvironment* dector_ZN19QProcessEnvironmentC1ERKS_(const QProcessEnvironment & other)
-{
-  // static_assert(sizeof(QProcessEnvironment) == 32, "tyszerr");
-  QProcessEnvironment* rthis = new QProcessEnvironment(other);
-  return rthis;
-}
-
-// QProcessEnvironment()
-QProcessEnvironment* dector_ZN19QProcessEnvironmentC1Ev()
-{
-  // static_assert(sizeof(QProcessEnvironment) == 32, "tyszerr");
-  QProcessEnvironment* rthis = new QProcessEnvironment();
-  return rthis;
-}
-
-  // proto:  void QProcessEnvironment::swap(QProcessEnvironment & other);
-void demth_ZN19QProcessEnvironment4swapERS_(void *that, QProcessEnvironment & other)
-{
-  QProcessEnvironment *cthat = (QProcessEnvironment *)that;
-   cthat->swap(other);
 }
 
 }; // <= extern "C" block end
@@ -69,6 +25,17 @@ void demth_ZN19QProcessEnvironment4swapERS_(void *that, QProcessEnvironment & ot
 // <= header block end
 
 // main block begin =>
+void __keep_qprocess_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qprocess.h', line 65, column 17>
+//   // proto:  void QProcessEnvironment::swap(QProcessEnvironment & other);
+if (false) {
+  auto f = [](QProcessEnvironment & arg1) {
+    ((QProcessEnvironment*)0)->swap(arg1);
+  };
+}
+// _ZN19QProcessEnvironment4swapERS_ swap(class QProcessEnvironment &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

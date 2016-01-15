@@ -1,10 +1,12 @@
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtransform.h
 // dst-file: /src/gui/qtransform.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtransform.h>
 
 extern "C" {
@@ -14,191 +16,173 @@ int QTransform_Class_Size()
   return sizeof(QTransform);
 }
 
-// QTransform(Qt::Initialization)
-QTransform* dector_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization arg1)
-{
-  // static_assert(sizeof(QTransform) == 88, "tyszerr");
-  QTransform* rthis = new QTransform(arg1);
-  return rthis;
-}
-
-// QTransform()
-QTransform* dector_ZN10QTransformC1Ev()
-{
-  // static_assert(sizeof(QTransform) == 88, "tyszerr");
-  QTransform* rthis = new QTransform();
-  return rthis;
-}
-
-// QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
-QTransform* dector_ZN10QTransformC1Edddddd(double h11, double h12, double h21, double h22, double dx, double dy)
-{
-  // static_assert(sizeof(QTransform) == 88, "tyszerr");
-  QTransform* rthis = new QTransform(h11, h12, h21, h22, dx, dy);
-  return rthis;
-}
-
-// QTransform(const class QMatrix &)
-QTransform* dector_ZN10QTransformC1ERK7QMatrix(const QMatrix & mtx)
-{
-  // static_assert(sizeof(QTransform) == 88, "tyszerr");
-  QTransform* rthis = new QTransform(mtx);
-  return rthis;
-}
-
-// QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
-QTransform* dector_ZN10QTransformC1Eddddddddd(double h11, double h12, double h13, double h21, double h22, double h23, double h31, double h32, double h33)
-{
-  // static_assert(sizeof(QTransform) == 88, "tyszerr");
-  QTransform* rthis = new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
-  return rthis;
-}
-
-  // proto:  qreal QTransform::det();
-qreal demth_ZNK10QTransform3detEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->det();
-}
-
-  // proto:  void QTransform::QTransform(Qt::Initialization );
-void demth_ZN10QTransformC1EN2Qt14InitializationE(void *that, Qt::Initialization arg1)
-{
-  QTransform *cthat = (QTransform *)that;
-  auto _o = new(that) QTransform(arg1);
-}
-
-  // proto:  qreal QTransform::determinant();
-qreal demth_ZNK10QTransform11determinantEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->determinant();
-}
-
-  // proto:  bool QTransform::isTranslating();
-bool demth_ZNK10QTransform13isTranslatingEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isTranslating();
-}
-
-  // proto:  qreal QTransform::m22();
-qreal demth_ZNK10QTransform3m22Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m22();
-}
-
-  // proto:  qreal QTransform::m32();
-qreal demth_ZNK10QTransform3m32Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m32();
-}
-
-  // proto:  bool QTransform::isInvertible();
-bool demth_ZNK10QTransform12isInvertibleEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isInvertible();
-}
-
-  // proto:  qreal QTransform::m31();
-qreal demth_ZNK10QTransform3m31Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m31();
-}
-
-  // proto:  bool QTransform::isRotating();
-bool demth_ZNK10QTransform10isRotatingEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isRotating();
-}
-
-  // proto:  qreal QTransform::m33();
-qreal demth_ZNK10QTransform3m33Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m33();
-}
-
-  // proto:  qreal QTransform::m13();
-qreal demth_ZNK10QTransform3m13Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m13();
-}
-
-  // proto:  qreal QTransform::m21();
-qreal demth_ZNK10QTransform3m21Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m21();
-}
-
-  // proto:  bool QTransform::isScaling();
-bool demth_ZNK10QTransform9isScalingEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isScaling();
-}
-
-  // proto:  bool QTransform::isAffine();
-bool demth_ZNK10QTransform8isAffineEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isAffine();
-}
-
-  // proto:  qreal QTransform::m11();
-qreal demth_ZNK10QTransform3m11Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m11();
-}
-
-  // proto:  bool QTransform::isIdentity();
-bool demth_ZNK10QTransform10isIdentityEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->isIdentity();
-}
-
-  // proto:  qreal QTransform::dx();
-qreal demth_ZNK10QTransform2dxEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->dx();
-}
-
-  // proto:  qreal QTransform::m23();
-qreal demth_ZNK10QTransform3m23Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m23();
-}
-
-  // proto:  qreal QTransform::dy();
-qreal demth_ZNK10QTransform2dyEv(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->dy();
-}
-
-  // proto:  qreal QTransform::m12();
-qreal demth_ZNK10QTransform3m12Ev(void *that)
-{
-  QTransform *cthat = (QTransform *)that;
-  return cthat->m12();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtransform_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 81, column 11>
+//   // proto:  qreal QTransform::det();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->det();
+  };
+}
+// _ZNK10QTransform3detEv det()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 62, column 21>
+//   // proto:  void QTransform::QTransform(Qt::Initialization );
+if (false) {
+  auto f = [](Qt::Initialization arg1) {
+    new QTransform(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 80, column 18>
+//   // proto:  qreal QTransform::determinant();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->determinant();
+  };
+}
+// _ZNK10QTransform11determinantEv determinant()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 76, column 10>
+//   // proto:  bool QTransform::isTranslating();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isTranslating();
+  };
+}
+// _ZNK10QTransform13isTranslatingEv isTranslating()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 87, column 11>
+//   // proto:  qreal QTransform::m22();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m22();
+  };
+}
+// _ZNK10QTransform3m22Ev m22()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 90, column 11>
+//   // proto:  qreal QTransform::m32();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m32();
+  };
+}
+// _ZNK10QTransform3m32Ev m32()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 73, column 10>
+//   // proto:  bool QTransform::isInvertible();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isInvertible();
+  };
+}
+// _ZNK10QTransform12isInvertibleEv isInvertible()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 89, column 11>
+//   // proto:  qreal QTransform::m31();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m31();
+  };
+}
+// _ZNK10QTransform3m31Ev m31()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 75, column 10>
+//   // proto:  bool QTransform::isRotating();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isRotating();
+  };
+}
+// _ZNK10QTransform10isRotatingEv isRotating()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 91, column 11>
+//   // proto:  qreal QTransform::m33();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m33();
+  };
+}
+// _ZNK10QTransform3m33Ev m33()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 85, column 11>
+//   // proto:  qreal QTransform::m13();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m13();
+  };
+}
+// _ZNK10QTransform3m13Ev m13()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 86, column 11>
+//   // proto:  qreal QTransform::m21();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m21();
+  };
+}
+// _ZNK10QTransform3m21Ev m21()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 74, column 10>
+//   // proto:  bool QTransform::isScaling();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isScaling();
+  };
+}
+// _ZNK10QTransform9isScalingEv isScaling()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 71, column 10>
+//   // proto:  bool QTransform::isAffine();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isAffine();
+  };
+}
+// _ZNK10QTransform8isAffineEv isAffine()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 83, column 11>
+//   // proto:  qreal QTransform::m11();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m11();
+  };
+}
+// _ZNK10QTransform3m11Ev m11()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 72, column 10>
+//   // proto:  bool QTransform::isIdentity();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->isIdentity();
+  };
+}
+// _ZNK10QTransform10isIdentityEv isIdentity()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 92, column 11>
+//   // proto:  qreal QTransform::dx();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->dx();
+  };
+}
+// _ZNK10QTransform2dxEv dx()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 88, column 11>
+//   // proto:  qreal QTransform::m23();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m23();
+  };
+}
+// _ZNK10QTransform3m23Ev m23()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 93, column 11>
+//   // proto:  qreal QTransform::dy();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->dy();
+  };
+}
+// _ZNK10QTransform2dyEv dy()
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 84, column 11>
+//   // proto:  qreal QTransform::m12();
+if (false) {
+  auto f = []() {
+    ((QTransform*)0)->m12();
+  };
+}
+// _ZNK10QTransform3m12Ev m12()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

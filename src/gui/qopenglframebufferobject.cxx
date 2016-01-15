@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglframebufferobject.h
 // dst-file: /src/gui/qopenglframebufferobject.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglframebufferobject.h>
 
 extern "C" {
@@ -14,85 +15,9 @@ int QOpenGLFramebufferObjectFormat_Class_Size()
   return sizeof(QOpenGLFramebufferObjectFormat);
 }
 
-// ~QOpenGLFramebufferObjectFormat()
-void dedtor_ZN30QOpenGLFramebufferObjectFormatD0Ev(QOpenGLFramebufferObjectFormat* that)
-{
-  QOpenGLFramebufferObjectFormat* rthis = (QOpenGLFramebufferObjectFormat*)that;
-  delete rthis;
-}
-
-// QOpenGLFramebufferObjectFormat(const class QOpenGLFramebufferObjectFormat &)
-QOpenGLFramebufferObjectFormat* dector_ZN30QOpenGLFramebufferObjectFormatC1ERKS_(const QOpenGLFramebufferObjectFormat & other)
-{
-  // static_assert(sizeof(QOpenGLFramebufferObjectFormat) == 32, "tyszerr");
-  QOpenGLFramebufferObjectFormat* rthis = new QOpenGLFramebufferObjectFormat(other);
-  return rthis;
-}
-
-// QOpenGLFramebufferObjectFormat()
-QOpenGLFramebufferObjectFormat* dector_ZN30QOpenGLFramebufferObjectFormatC1Ev()
-{
-  // static_assert(sizeof(QOpenGLFramebufferObjectFormat) == 32, "tyszerr");
-  QOpenGLFramebufferObjectFormat* rthis = new QOpenGLFramebufferObjectFormat();
-  return rthis;
-}
-
 int QOpenGLFramebufferObject_Class_Size()
 {
   return sizeof(QOpenGLFramebufferObject);
-}
-
-// QOpenGLFramebufferObject(int, int, enum QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1EiiNS_10AttachmentEjj(int width, int height, QOpenGLFramebufferObject::Attachment attachment, unsigned int target, unsigned int internal_format)
-{
-  // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
-  QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(width, height, attachment, target, internal_format);
-  return rthis;
-}
-
-// QOpenGLFramebufferObject(const class QSize &, enum QOpenGLFramebufferObject::Attachment, GLenum, GLenum)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1ERK5QSizeNS_10AttachmentEjj(const QSize & size, QOpenGLFramebufferObject::Attachment attachment, unsigned int target, unsigned int internal_format)
-{
-  // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
-  QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(size, attachment, target, internal_format);
-  return rthis;
-}
-
-// QOpenGLFramebufferObject(const class QSize &, const class QOpenGLFramebufferObjectFormat &)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1ERK5QSizeRK30QOpenGLFramebufferObjectFormat(const QSize & size, const QOpenGLFramebufferObjectFormat & format)
-{
-  // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
-  QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(size, format);
-  return rthis;
-}
-
-// QOpenGLFramebufferObject(int, int, const class QOpenGLFramebufferObjectFormat &)
-QOpenGLFramebufferObject* dector_ZN24QOpenGLFramebufferObjectC1EiiRK30QOpenGLFramebufferObjectFormat(int width, int height, const QOpenGLFramebufferObjectFormat & format)
-{
-  // static_assert(sizeof(QOpenGLFramebufferObject) == 32, "tyszerr");
-  QOpenGLFramebufferObject* rthis = new QOpenGLFramebufferObject(width, height, format);
-  return rthis;
-}
-
-// ~QOpenGLFramebufferObject()
-void dedtor_ZN24QOpenGLFramebufferObjectD0Ev(QOpenGLFramebufferObject* that)
-{
-  QOpenGLFramebufferObject* rthis = (QOpenGLFramebufferObject*)that;
-  delete rthis;
-}
-
-  // proto:  int QOpenGLFramebufferObject::height();
-int demth_ZNK24QOpenGLFramebufferObject6heightEv(void *that)
-{
-  QOpenGLFramebufferObject *cthat = (QOpenGLFramebufferObject *)that;
-  return cthat->height();
-}
-
-  // proto:  int QOpenGLFramebufferObject::width();
-int demth_ZNK24QOpenGLFramebufferObject5widthEv(void *that)
-{
-  QOpenGLFramebufferObject *cthat = (QOpenGLFramebufferObject *)that;
-  return cthat->width();
 }
 
 }; // <= extern "C" block end
@@ -100,6 +25,25 @@ int demth_ZNK24QOpenGLFramebufferObject5widthEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglframebufferobject_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 83, column 9>
+//   // proto:  int QOpenGLFramebufferObject::height();
+if (false) {
+  auto f = []() {
+    ((QOpenGLFramebufferObject*)0)->height();
+  };
+}
+// _ZNK24QOpenGLFramebufferObject6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 82, column 9>
+//   // proto:  int QOpenGLFramebufferObject::width();
+if (false) {
+  auto f = []() {
+    ((QOpenGLFramebufferObject*)0)->width();
+  };
+}
+// _ZNK24QOpenGLFramebufferObject5widthEv width()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

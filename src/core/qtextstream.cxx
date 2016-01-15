@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qtextstream.h
 // dst-file: /src/core/qtextstream.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextstream.h>
 
 extern "C" {
@@ -14,71 +15,9 @@ int QTextStreamManipulator_Class_Size()
   return sizeof(QTextStreamManipulator);
 }
 
-  // proto:  void QTextStreamManipulator::exec(QTextStream & s);
-void demth_ZN22QTextStreamManipulator4execER11QTextStream(void *that, QTextStream & s)
-{
-  QTextStreamManipulator *cthat = (QTextStreamManipulator *)that;
-   cthat->exec(s);
-}
-
 int QTextStream_Class_Size()
 {
   return sizeof(QTextStream);
-}
-
-// QTextStream(class QIODevice *)
-QTextStream* dector_ZN11QTextStreamC1EP9QIODevice(QIODevice * device)
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream(device);
-  return rthis;
-}
-
-// QTextStream()
-QTextStream* dector_ZN11QTextStreamC1Ev()
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream();
-  return rthis;
-}
-
-// QTextStream(class QByteArray *, class QIODevice::OpenMode)
-QTextStream* dector_ZN11QTextStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * array, QIODevice::OpenMode openMode)
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream(array, openMode);
-  return rthis;
-}
-
-// QTextStream(FILE *, class QIODevice::OpenMode)
-QTextStream* dector_ZN11QTextStreamC1EP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEE(FILE * fileHandle, QIODevice::OpenMode openMode)
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream(fileHandle, openMode);
-  return rthis;
-}
-
-// ~QTextStream()
-void dedtor_ZN11QTextStreamD0Ev(QTextStream* that)
-{
-  QTextStream* rthis = (QTextStream*)that;
-  delete rthis;
-}
-
-// QTextStream(class QString *, class QIODevice::OpenMode)
-QTextStream* dector_ZN11QTextStreamC1EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString * string, QIODevice::OpenMode openMode)
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream(string, openMode);
-  return rthis;
-}
-
-// QTextStream(const class QByteArray &, class QIODevice::OpenMode)
-QTextStream* dector_ZN11QTextStreamC1ERK10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(const QByteArray & array, QIODevice::OpenMode openMode)
-{
-  // static_assert(sizeof(QTextStream) == 32, "tyszerr");
-  QTextStream* rthis = new QTextStream(array, openMode);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -86,6 +25,31 @@ QTextStream* dector_ZN11QTextStreamC1ERK10QByteArray6QFlagsIN9QIODevice12OpenMod
 // <= header block end
 
 // main block begin =>
+void __keep_qtextstream_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 210, column 10>
+//   // proto:  void QTextStreamManipulator::exec(QTextStream & s);
+if (false) {
+  auto f = [](QTextStream & arg1) {
+    ((QTextStreamManipulator*)0)->exec(arg1);
+  };
+}
+// _ZN22QTextStreamManipulator4execER11QTextStream exec(class QTextStream &)
+// <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 208, column 5>
+//   // proto:  void QTextStreamManipulator::QTextStreamManipulator(QTSMFI m, int a);
+if (false) {
+  auto f = [](QTSMFI arg1, int arg2) {
+    new QTextStreamManipulator(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 209, column 5>
+//   // proto:  void QTextStreamManipulator::QTextStreamManipulator(QTSMFC m, QChar c);
+if (false) {
+  auto f = [](QTSMFC arg1, QChar arg2) {
+    new QTextStreamManipulator(arg1, arg2);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

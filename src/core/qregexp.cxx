@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qregexp.h
 // dst-file: /src/core/qregexp.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qregexp.h>
 
 extern "C" {
@@ -14,49 +15,22 @@ int QRegExp_Class_Size()
   return sizeof(QRegExp);
 }
 
-// QRegExp(const class QRegExp &)
-QRegExp* dector_ZN7QRegExpC1ERKS_(const QRegExp & rx)
-{
-  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
-  QRegExp* rthis = new QRegExp(rx);
-  return rthis;
-}
-
-// ~QRegExp()
-void dedtor_ZN7QRegExpD0Ev(QRegExp* that)
-{
-  QRegExp* rthis = (QRegExp*)that;
-  delete rthis;
-}
-
-// QRegExp()
-QRegExp* dector_ZN7QRegExpC1Ev()
-{
-  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
-  QRegExp* rthis = new QRegExp();
-  return rthis;
-}
-
-// QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
-QRegExp* dector_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax)
-{
-  // static_assert(sizeof(QRegExp) == 32, "tyszerr");
-  QRegExp* rthis = new QRegExp(pattern, cs, syntax);
-  return rthis;
-}
-
-  // proto:  void QRegExp::swap(QRegExp & other);
-void demth_ZN7QRegExp4swapERS_(void *that, QRegExp & other)
-{
-  QRegExp *cthat = (QRegExp *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qregexp_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qregexp.h', line 71, column 17>
+//   // proto:  void QRegExp::swap(QRegExp & other);
+if (false) {
+  auto f = [](QRegExp & arg1) {
+    ((QRegExp*)0)->swap(arg1);
+  };
+}
+// _ZN7QRegExp4swapERS_ swap(class QRegExp &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qdatawidgetmapper.h
 // dst-file: /src/widgets/qdatawidgetmapper.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qdatawidgetmapper.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QDataWidgetMapper_Class_Size()
   return sizeof(QDataWidgetMapper);
 }
 
-// ~QDataWidgetMapper()
-void dedtor_ZN17QDataWidgetMapperD0Ev(QDataWidgetMapper* that)
-{
-  QDataWidgetMapper* rthis = (QDataWidgetMapper*)that;
-  delete rthis;
-}
-
-// QDataWidgetMapper(class QObject *)
-QDataWidgetMapper* dector_ZN17QDataWidgetMapperC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QDataWidgetMapper) == 32, "tyszerr");
-  QDataWidgetMapper* rthis = new QDataWidgetMapper(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qdatawidgetmapper_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

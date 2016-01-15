@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qmdiarea.h
 // dst-file: /src/widgets/qmdiarea.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmdiarea.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QMdiArea_Class_Size()
   return sizeof(QMdiArea);
 }
 
-// ~QMdiArea()
-void dedtor_ZN8QMdiAreaD0Ev(QMdiArea* that)
-{
-  QMdiArea* rthis = (QMdiArea*)that;
-  delete rthis;
-}
-
-// QMdiArea(class QWidget *)
-QMdiArea* dector_ZN8QMdiAreaC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QMdiArea) == 32, "tyszerr");
-  QMdiArea* rthis = new QMdiArea(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmdiarea_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

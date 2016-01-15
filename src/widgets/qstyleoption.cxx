@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qstyleoption.h
 // dst-file: /src/widgets/qstyleoption.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstyleoption.h>
 
 extern "C" {
@@ -14,41 +15,9 @@ int QStyleOptionComboBox_Class_Size()
   return sizeof(QStyleOptionComboBox);
 }
 
-// QStyleOptionComboBox(const class QStyleOptionComboBox &)
-QStyleOptionComboBox* dector_ZN20QStyleOptionComboBoxC1ERKS_(const QStyleOptionComboBox & other)
-{
-  // static_assert(sizeof(QStyleOptionComboBox) == 32, "tyszerr");
-  QStyleOptionComboBox* rthis = new QStyleOptionComboBox(other);
-  return rthis;
-}
-
-// QStyleOptionComboBox()
-QStyleOptionComboBox* dector_ZN20QStyleOptionComboBoxC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionComboBox) == 32, "tyszerr");
-  QStyleOptionComboBox* rthis = new QStyleOptionComboBox();
-  return rthis;
-}
-
 int QStyleOptionMenuItem_Class_Size()
 {
   return sizeof(QStyleOptionMenuItem);
-}
-
-// QStyleOptionMenuItem(const class QStyleOptionMenuItem &)
-QStyleOptionMenuItem* dector_ZN20QStyleOptionMenuItemC1ERKS_(const QStyleOptionMenuItem & other)
-{
-  // static_assert(sizeof(QStyleOptionMenuItem) == 32, "tyszerr");
-  QStyleOptionMenuItem* rthis = new QStyleOptionMenuItem(other);
-  return rthis;
-}
-
-// QStyleOptionMenuItem()
-QStyleOptionMenuItem* dector_ZN20QStyleOptionMenuItemC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionMenuItem) == 32, "tyszerr");
-  QStyleOptionMenuItem* rthis = new QStyleOptionMenuItem();
-  return rthis;
 }
 
 int QStyleHintReturnVariant_Class_Size()
@@ -56,40 +25,9 @@ int QStyleHintReturnVariant_Class_Size()
   return sizeof(QStyleHintReturnVariant);
 }
 
-// ~QStyleHintReturnVariant()
-void dedtor_ZN23QStyleHintReturnVariantD0Ev(QStyleHintReturnVariant* that)
-{
-  QStyleHintReturnVariant* rthis = (QStyleHintReturnVariant*)that;
-  delete rthis;
-}
-
-// QStyleHintReturnVariant()
-QStyleHintReturnVariant* dector_ZN23QStyleHintReturnVariantC1Ev()
-{
-  // static_assert(sizeof(QStyleHintReturnVariant) == 32, "tyszerr");
-  QStyleHintReturnVariant* rthis = new QStyleHintReturnVariant();
-  return rthis;
-}
-
 int QStyleOptionTitleBar_Class_Size()
 {
   return sizeof(QStyleOptionTitleBar);
-}
-
-// QStyleOptionTitleBar(const class QStyleOptionTitleBar &)
-QStyleOptionTitleBar* dector_ZN20QStyleOptionTitleBarC1ERKS_(const QStyleOptionTitleBar & other)
-{
-  // static_assert(sizeof(QStyleOptionTitleBar) == 32, "tyszerr");
-  QStyleOptionTitleBar* rthis = new QStyleOptionTitleBar(other);
-  return rthis;
-}
-
-// QStyleOptionTitleBar()
-QStyleOptionTitleBar* dector_ZN20QStyleOptionTitleBarC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionTitleBar) == 32, "tyszerr");
-  QStyleOptionTitleBar* rthis = new QStyleOptionTitleBar();
-  return rthis;
 }
 
 int QStyleOptionGraphicsItem_Class_Size()
@@ -97,55 +35,9 @@ int QStyleOptionGraphicsItem_Class_Size()
   return sizeof(QStyleOptionGraphicsItem);
 }
 
-// QStyleOptionGraphicsItem()
-QStyleOptionGraphicsItem* dector_ZN24QStyleOptionGraphicsItemC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionGraphicsItem) == 32, "tyszerr");
-  QStyleOptionGraphicsItem* rthis = new QStyleOptionGraphicsItem();
-  return rthis;
-}
-
-// QStyleOptionGraphicsItem(const class QStyleOptionGraphicsItem &)
-QStyleOptionGraphicsItem* dector_ZN24QStyleOptionGraphicsItemC1ERKS_(const QStyleOptionGraphicsItem & other)
-{
-  // static_assert(sizeof(QStyleOptionGraphicsItem) == 32, "tyszerr");
-  QStyleOptionGraphicsItem* rthis = new QStyleOptionGraphicsItem(other);
-  return rthis;
-}
-
 int QStyleOption_Class_Size()
 {
   return sizeof(QStyleOption);
-}
-
-// ~QStyleOption()
-void dedtor_ZN12QStyleOptionD0Ev(QStyleOption* that)
-{
-  QStyleOption* rthis = (QStyleOption*)that;
-  delete rthis;
-}
-
-// QStyleOption(const class QStyleOption &)
-QStyleOption* dector_ZN12QStyleOptionC1ERKS_(const QStyleOption & other)
-{
-  // static_assert(sizeof(QStyleOption) == 32, "tyszerr");
-  QStyleOption* rthis = new QStyleOption(other);
-  return rthis;
-}
-
-// QStyleOption(int, int)
-QStyleOption* dector_ZN12QStyleOptionC1Eii(int version, int type)
-{
-  // static_assert(sizeof(QStyleOption) == 32, "tyszerr");
-  QStyleOption* rthis = new QStyleOption(version, type);
-  return rthis;
-}
-
-  // proto:  void QStyleOption::initFrom(const QWidget * w);
-void demth_ZN12QStyleOption8initFromEPK7QWidget(void *that, const QWidget * w)
-{
-  QStyleOption *cthat = (QStyleOption *)that;
-   cthat->initFrom(w);
 }
 
 int QStyleOptionDockWidget_Class_Size()
@@ -153,41 +45,9 @@ int QStyleOptionDockWidget_Class_Size()
   return sizeof(QStyleOptionDockWidget);
 }
 
-// QStyleOptionDockWidget()
-QStyleOptionDockWidget* dector_ZN22QStyleOptionDockWidgetC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionDockWidget) == 32, "tyszerr");
-  QStyleOptionDockWidget* rthis = new QStyleOptionDockWidget();
-  return rthis;
-}
-
-// QStyleOptionDockWidget(const class QStyleOptionDockWidget &)
-QStyleOptionDockWidget* dector_ZN22QStyleOptionDockWidgetC1ERKS_(const QStyleOptionDockWidget & other)
-{
-  // static_assert(sizeof(QStyleOptionDockWidget) == 32, "tyszerr");
-  QStyleOptionDockWidget* rthis = new QStyleOptionDockWidget(other);
-  return rthis;
-}
-
 int QStyleOptionProgressBar_Class_Size()
 {
   return sizeof(QStyleOptionProgressBar);
-}
-
-// QStyleOptionProgressBar(const class QStyleOptionProgressBar &)
-QStyleOptionProgressBar* dector_ZN23QStyleOptionProgressBarC1ERKS_(const QStyleOptionProgressBar & other)
-{
-  // static_assert(sizeof(QStyleOptionProgressBar) == 32, "tyszerr");
-  QStyleOptionProgressBar* rthis = new QStyleOptionProgressBar(other);
-  return rthis;
-}
-
-// QStyleOptionProgressBar()
-QStyleOptionProgressBar* dector_ZN23QStyleOptionProgressBarC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionProgressBar) == 32, "tyszerr");
-  QStyleOptionProgressBar* rthis = new QStyleOptionProgressBar();
-  return rthis;
 }
 
 int QStyleOptionSlider_Class_Size()
@@ -195,41 +55,9 @@ int QStyleOptionSlider_Class_Size()
   return sizeof(QStyleOptionSlider);
 }
 
-// QStyleOptionSlider(const class QStyleOptionSlider &)
-QStyleOptionSlider* dector_ZN18QStyleOptionSliderC1ERKS_(const QStyleOptionSlider & other)
-{
-  // static_assert(sizeof(QStyleOptionSlider) == 32, "tyszerr");
-  QStyleOptionSlider* rthis = new QStyleOptionSlider(other);
-  return rthis;
-}
-
-// QStyleOptionSlider()
-QStyleOptionSlider* dector_ZN18QStyleOptionSliderC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionSlider) == 32, "tyszerr");
-  QStyleOptionSlider* rthis = new QStyleOptionSlider();
-  return rthis;
-}
-
 int QStyleOptionFrame_Class_Size()
 {
   return sizeof(QStyleOptionFrame);
-}
-
-// QStyleOptionFrame()
-QStyleOptionFrame* dector_ZN17QStyleOptionFrameC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionFrame) == 32, "tyszerr");
-  QStyleOptionFrame* rthis = new QStyleOptionFrame();
-  return rthis;
-}
-
-// QStyleOptionFrame(const class QStyleOptionFrame &)
-QStyleOptionFrame* dector_ZN17QStyleOptionFrameC1ERKS_(const QStyleOptionFrame & other)
-{
-  // static_assert(sizeof(QStyleOptionFrame) == 32, "tyszerr");
-  QStyleOptionFrame* rthis = new QStyleOptionFrame(other);
-  return rthis;
 }
 
 int QStyleOptionComplex_Class_Size()
@@ -237,40 +65,9 @@ int QStyleOptionComplex_Class_Size()
   return sizeof(QStyleOptionComplex);
 }
 
-// QStyleOptionComplex(int, int)
-QStyleOptionComplex* dector_ZN19QStyleOptionComplexC1Eii(int version, int type)
-{
-  // static_assert(sizeof(QStyleOptionComplex) == 32, "tyszerr");
-  QStyleOptionComplex* rthis = new QStyleOptionComplex(version, type);
-  return rthis;
-}
-
-// QStyleOptionComplex(const class QStyleOptionComplex &)
-QStyleOptionComplex* dector_ZN19QStyleOptionComplexC1ERKS_(const QStyleOptionComplex & other)
-{
-  // static_assert(sizeof(QStyleOptionComplex) == 32, "tyszerr");
-  QStyleOptionComplex* rthis = new QStyleOptionComplex(other);
-  return rthis;
-}
-
 int QStyleHintReturn_Class_Size()
 {
   return sizeof(QStyleHintReturn);
-}
-
-// ~QStyleHintReturn()
-void dedtor_ZN16QStyleHintReturnD0Ev(QStyleHintReturn* that)
-{
-  QStyleHintReturn* rthis = (QStyleHintReturn*)that;
-  delete rthis;
-}
-
-// QStyleHintReturn(int, int)
-QStyleHintReturn* dector_ZN16QStyleHintReturnC1Eii(int version, int type)
-{
-  // static_assert(sizeof(QStyleHintReturn) == 32, "tyszerr");
-  QStyleHintReturn* rthis = new QStyleHintReturn(version, type);
-  return rthis;
 }
 
 int QStyleOptionHeader_Class_Size()
@@ -278,41 +75,9 @@ int QStyleOptionHeader_Class_Size()
   return sizeof(QStyleOptionHeader);
 }
 
-// QStyleOptionHeader()
-QStyleOptionHeader* dector_ZN18QStyleOptionHeaderC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionHeader) == 32, "tyszerr");
-  QStyleOptionHeader* rthis = new QStyleOptionHeader();
-  return rthis;
-}
-
-// QStyleOptionHeader(const class QStyleOptionHeader &)
-QStyleOptionHeader* dector_ZN18QStyleOptionHeaderC1ERKS_(const QStyleOptionHeader & other)
-{
-  // static_assert(sizeof(QStyleOptionHeader) == 32, "tyszerr");
-  QStyleOptionHeader* rthis = new QStyleOptionHeader(other);
-  return rthis;
-}
-
 int QStyleOptionToolBox_Class_Size()
 {
   return sizeof(QStyleOptionToolBox);
-}
-
-// QStyleOptionToolBox()
-QStyleOptionToolBox* dector_ZN19QStyleOptionToolBoxC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionToolBox) == 32, "tyszerr");
-  QStyleOptionToolBox* rthis = new QStyleOptionToolBox();
-  return rthis;
-}
-
-// QStyleOptionToolBox(const class QStyleOptionToolBox &)
-QStyleOptionToolBox* dector_ZN19QStyleOptionToolBoxC1ERKS_(const QStyleOptionToolBox & other)
-{
-  // static_assert(sizeof(QStyleOptionToolBox) == 32, "tyszerr");
-  QStyleOptionToolBox* rthis = new QStyleOptionToolBox(other);
-  return rthis;
 }
 
 int QStyleOptionFocusRect_Class_Size()
@@ -320,41 +85,9 @@ int QStyleOptionFocusRect_Class_Size()
   return sizeof(QStyleOptionFocusRect);
 }
 
-// QStyleOptionFocusRect()
-QStyleOptionFocusRect* dector_ZN21QStyleOptionFocusRectC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionFocusRect) == 32, "tyszerr");
-  QStyleOptionFocusRect* rthis = new QStyleOptionFocusRect();
-  return rthis;
-}
-
-// QStyleOptionFocusRect(const class QStyleOptionFocusRect &)
-QStyleOptionFocusRect* dector_ZN21QStyleOptionFocusRectC1ERKS_(const QStyleOptionFocusRect & other)
-{
-  // static_assert(sizeof(QStyleOptionFocusRect) == 32, "tyszerr");
-  QStyleOptionFocusRect* rthis = new QStyleOptionFocusRect(other);
-  return rthis;
-}
-
 int QStyleOptionGroupBox_Class_Size()
 {
   return sizeof(QStyleOptionGroupBox);
-}
-
-// QStyleOptionGroupBox(const class QStyleOptionGroupBox &)
-QStyleOptionGroupBox* dector_ZN20QStyleOptionGroupBoxC1ERKS_(const QStyleOptionGroupBox & other)
-{
-  // static_assert(sizeof(QStyleOptionGroupBox) == 32, "tyszerr");
-  QStyleOptionGroupBox* rthis = new QStyleOptionGroupBox(other);
-  return rthis;
-}
-
-// QStyleOptionGroupBox()
-QStyleOptionGroupBox* dector_ZN20QStyleOptionGroupBoxC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionGroupBox) == 32, "tyszerr");
-  QStyleOptionGroupBox* rthis = new QStyleOptionGroupBox();
-  return rthis;
 }
 
 int QStyleOptionTab_Class_Size()
@@ -362,41 +95,9 @@ int QStyleOptionTab_Class_Size()
   return sizeof(QStyleOptionTab);
 }
 
-// QStyleOptionTab(const class QStyleOptionTab &)
-QStyleOptionTab* dector_ZN15QStyleOptionTabC1ERKS_(const QStyleOptionTab & other)
-{
-  // static_assert(sizeof(QStyleOptionTab) == 32, "tyszerr");
-  QStyleOptionTab* rthis = new QStyleOptionTab(other);
-  return rthis;
-}
-
-// QStyleOptionTab()
-QStyleOptionTab* dector_ZN15QStyleOptionTabC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionTab) == 32, "tyszerr");
-  QStyleOptionTab* rthis = new QStyleOptionTab();
-  return rthis;
-}
-
 int QStyleOptionTabBarBase_Class_Size()
 {
   return sizeof(QStyleOptionTabBarBase);
-}
-
-// QStyleOptionTabBarBase()
-QStyleOptionTabBarBase* dector_ZN22QStyleOptionTabBarBaseC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionTabBarBase) == 32, "tyszerr");
-  QStyleOptionTabBarBase* rthis = new QStyleOptionTabBarBase();
-  return rthis;
-}
-
-// QStyleOptionTabBarBase(const class QStyleOptionTabBarBase &)
-QStyleOptionTabBarBase* dector_ZN22QStyleOptionTabBarBaseC1ERKS_(const QStyleOptionTabBarBase & other)
-{
-  // static_assert(sizeof(QStyleOptionTabBarBase) == 32, "tyszerr");
-  QStyleOptionTabBarBase* rthis = new QStyleOptionTabBarBase(other);
-  return rthis;
 }
 
 int QStyleOptionRubberBand_Class_Size()
@@ -404,41 +105,9 @@ int QStyleOptionRubberBand_Class_Size()
   return sizeof(QStyleOptionRubberBand);
 }
 
-// QStyleOptionRubberBand()
-QStyleOptionRubberBand* dector_ZN22QStyleOptionRubberBandC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionRubberBand) == 32, "tyszerr");
-  QStyleOptionRubberBand* rthis = new QStyleOptionRubberBand();
-  return rthis;
-}
-
-// QStyleOptionRubberBand(const class QStyleOptionRubberBand &)
-QStyleOptionRubberBand* dector_ZN22QStyleOptionRubberBandC1ERKS_(const QStyleOptionRubberBand & other)
-{
-  // static_assert(sizeof(QStyleOptionRubberBand) == 32, "tyszerr");
-  QStyleOptionRubberBand* rthis = new QStyleOptionRubberBand(other);
-  return rthis;
-}
-
 int QStyleOptionButton_Class_Size()
 {
   return sizeof(QStyleOptionButton);
-}
-
-// QStyleOptionButton()
-QStyleOptionButton* dector_ZN18QStyleOptionButtonC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionButton) == 32, "tyszerr");
-  QStyleOptionButton* rthis = new QStyleOptionButton();
-  return rthis;
-}
-
-// QStyleOptionButton(const class QStyleOptionButton &)
-QStyleOptionButton* dector_ZN18QStyleOptionButtonC1ERKS_(const QStyleOptionButton & other)
-{
-  // static_assert(sizeof(QStyleOptionButton) == 32, "tyszerr");
-  QStyleOptionButton* rthis = new QStyleOptionButton(other);
-  return rthis;
 }
 
 int QStyleHintReturnMask_Class_Size()
@@ -446,40 +115,9 @@ int QStyleHintReturnMask_Class_Size()
   return sizeof(QStyleHintReturnMask);
 }
 
-// QStyleHintReturnMask()
-QStyleHintReturnMask* dector_ZN20QStyleHintReturnMaskC1Ev()
-{
-  // static_assert(sizeof(QStyleHintReturnMask) == 32, "tyszerr");
-  QStyleHintReturnMask* rthis = new QStyleHintReturnMask();
-  return rthis;
-}
-
-// ~QStyleHintReturnMask()
-void dedtor_ZN20QStyleHintReturnMaskD0Ev(QStyleHintReturnMask* that)
-{
-  QStyleHintReturnMask* rthis = (QStyleHintReturnMask*)that;
-  delete rthis;
-}
-
 int QStyleOptionToolButton_Class_Size()
 {
   return sizeof(QStyleOptionToolButton);
-}
-
-// QStyleOptionToolButton()
-QStyleOptionToolButton* dector_ZN22QStyleOptionToolButtonC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionToolButton) == 32, "tyszerr");
-  QStyleOptionToolButton* rthis = new QStyleOptionToolButton();
-  return rthis;
-}
-
-// QStyleOptionToolButton(const class QStyleOptionToolButton &)
-QStyleOptionToolButton* dector_ZN22QStyleOptionToolButtonC1ERKS_(const QStyleOptionToolButton & other)
-{
-  // static_assert(sizeof(QStyleOptionToolButton) == 32, "tyszerr");
-  QStyleOptionToolButton* rthis = new QStyleOptionToolButton(other);
-  return rthis;
 }
 
 int QStyleOptionSizeGrip_Class_Size()
@@ -487,41 +125,9 @@ int QStyleOptionSizeGrip_Class_Size()
   return sizeof(QStyleOptionSizeGrip);
 }
 
-// QStyleOptionSizeGrip()
-QStyleOptionSizeGrip* dector_ZN20QStyleOptionSizeGripC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionSizeGrip) == 32, "tyszerr");
-  QStyleOptionSizeGrip* rthis = new QStyleOptionSizeGrip();
-  return rthis;
-}
-
-// QStyleOptionSizeGrip(const class QStyleOptionSizeGrip &)
-QStyleOptionSizeGrip* dector_ZN20QStyleOptionSizeGripC1ERKS_(const QStyleOptionSizeGrip & other)
-{
-  // static_assert(sizeof(QStyleOptionSizeGrip) == 32, "tyszerr");
-  QStyleOptionSizeGrip* rthis = new QStyleOptionSizeGrip(other);
-  return rthis;
-}
-
 int QStyleOptionViewItem_Class_Size()
 {
   return sizeof(QStyleOptionViewItem);
-}
-
-// QStyleOptionViewItem(const class QStyleOptionViewItem &)
-QStyleOptionViewItem* dector_ZN20QStyleOptionViewItemC1ERKS_(const QStyleOptionViewItem & other)
-{
-  // static_assert(sizeof(QStyleOptionViewItem) == 32, "tyszerr");
-  QStyleOptionViewItem* rthis = new QStyleOptionViewItem(other);
-  return rthis;
-}
-
-// QStyleOptionViewItem()
-QStyleOptionViewItem* dector_ZN20QStyleOptionViewItemC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionViewItem) == 32, "tyszerr");
-  QStyleOptionViewItem* rthis = new QStyleOptionViewItem();
-  return rthis;
 }
 
 int QStyleOptionSpinBox_Class_Size()
@@ -529,41 +135,9 @@ int QStyleOptionSpinBox_Class_Size()
   return sizeof(QStyleOptionSpinBox);
 }
 
-// QStyleOptionSpinBox()
-QStyleOptionSpinBox* dector_ZN19QStyleOptionSpinBoxC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionSpinBox) == 32, "tyszerr");
-  QStyleOptionSpinBox* rthis = new QStyleOptionSpinBox();
-  return rthis;
-}
-
-// QStyleOptionSpinBox(const class QStyleOptionSpinBox &)
-QStyleOptionSpinBox* dector_ZN19QStyleOptionSpinBoxC1ERKS_(const QStyleOptionSpinBox & other)
-{
-  // static_assert(sizeof(QStyleOptionSpinBox) == 32, "tyszerr");
-  QStyleOptionSpinBox* rthis = new QStyleOptionSpinBox(other);
-  return rthis;
-}
-
 int QStyleOptionToolBar_Class_Size()
 {
   return sizeof(QStyleOptionToolBar);
-}
-
-// QStyleOptionToolBar(const class QStyleOptionToolBar &)
-QStyleOptionToolBar* dector_ZN19QStyleOptionToolBarC1ERKS_(const QStyleOptionToolBar & other)
-{
-  // static_assert(sizeof(QStyleOptionToolBar) == 32, "tyszerr");
-  QStyleOptionToolBar* rthis = new QStyleOptionToolBar(other);
-  return rthis;
-}
-
-// QStyleOptionToolBar()
-QStyleOptionToolBar* dector_ZN19QStyleOptionToolBarC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionToolBar) == 32, "tyszerr");
-  QStyleOptionToolBar* rthis = new QStyleOptionToolBar();
-  return rthis;
 }
 
 int QStyleOptionTabWidgetFrame_Class_Size()
@@ -571,34 +145,183 @@ int QStyleOptionTabWidgetFrame_Class_Size()
   return sizeof(QStyleOptionTabWidgetFrame);
 }
 
-// QStyleOptionTabWidgetFrame(const class QStyleOptionTabWidgetFrame &)
-QStyleOptionTabWidgetFrame* dector_ZN26QStyleOptionTabWidgetFrameC1ERKS_(const QStyleOptionTabWidgetFrame & other)
-{
-  // static_assert(sizeof(QStyleOptionTabWidgetFrame) == 32, "tyszerr");
-  QStyleOptionTabWidgetFrame* rthis = new QStyleOptionTabWidgetFrame(other);
-  return rthis;
-}
-
-// QStyleOptionTabWidgetFrame()
-QStyleOptionTabWidgetFrame* dector_ZN26QStyleOptionTabWidgetFrameC1Ev()
-{
-  // static_assert(sizeof(QStyleOptionTabWidgetFrame) == 32, "tyszerr");
-  QStyleOptionTabWidgetFrame* rthis = new QStyleOptionTabWidgetFrame();
-  return rthis;
-}
-
-  // proto:  void QStyleOptionTabWidgetFrame::QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other);
-void demth_ZN26QStyleOptionTabWidgetFrameC1ERKS_(void *that, const QStyleOptionTabWidgetFrame & other)
-{
-  QStyleOptionTabWidgetFrame *cthat = (QStyleOptionTabWidgetFrame *)that;
-  auto _o = new(that) QStyleOptionTabWidgetFrame(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qstyleoption_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 584, column 5>
+//   // proto:  void QStyleOptionComboBox::QStyleOptionComboBox(const QStyleOptionComboBox & other);
+if (false) {
+  auto f = [](const QStyleOptionComboBox & arg1) {
+    new QStyleOptionComboBox(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 355, column 5>
+//   // proto:  void QStyleOptionMenuItem::QStyleOptionMenuItem(const QStyleOptionMenuItem & other);
+if (false) {
+  auto f = [](const QStyleOptionMenuItem & arg1) {
+    new QStyleOptionMenuItem(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 602, column 5>
+//   // proto:  void QStyleOptionTitleBar::QStyleOptionTitleBar(const QStyleOptionTitleBar & other);
+if (false) {
+  auto f = [](const QStyleOptionTitleBar & arg1) {
+    new QStyleOptionTitleBar(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 652, column 5>
+//   // proto:  void QStyleOptionGraphicsItem::QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other);
+if (false) {
+  auto f = [](const QStyleOptionGraphicsItem & arg1) {
+    new QStyleOptionGraphicsItem(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 89, column 17>
+//   // proto:  void QStyleOption::initFrom(const QWidget * w);
+if (false) {
+  auto f = [](const QWidget * arg1) {
+    ((QStyleOption*)0)->initFrom(arg1);
+  };
+}
+// _ZN12QStyleOption8initFromEPK7QWidget initFrom(const class QWidget *)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 374, column 5>
+//   // proto:  void QStyleOptionDockWidget::QStyleOptionDockWidget(const QStyleOptionDockWidget & other);
+if (false) {
+  auto f = [](const QStyleOptionDockWidget & arg1) {
+    new QStyleOptionDockWidget(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 325, column 5>
+//   // proto:  void QStyleOptionProgressBar::QStyleOptionProgressBar(const QStyleOptionProgressBar & other);
+if (false) {
+  auto f = [](const QStyleOptionProgressBar & arg1) {
+    new QStyleOptionProgressBar(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 516, column 5>
+//   // proto:  void QStyleOptionSlider::QStyleOptionSlider(const QStyleOptionSlider & other);
+if (false) {
+  auto f = [](const QStyleOptionSlider & arg1) {
+    new QStyleOptionSlider(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 126, column 5>
+//   // proto:  void QStyleOptionFrame::QStyleOptionFrame(const QStyleOptionFrame & other);
+if (false) {
+  auto f = [](const QStyleOptionFrame & arg1) {
+    new QStyleOptionFrame(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 492, column 5>
+//   // proto:  void QStyleOptionComplex::QStyleOptionComplex(const QStyleOptionComplex & other);
+if (false) {
+  auto f = [](const QStyleOptionComplex & arg1) {
+    new QStyleOptionComplex(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 209, column 5>
+//   // proto:  void QStyleOptionHeader::QStyleOptionHeader(const QStyleOptionHeader & other);
+if (false) {
+  auto f = [](const QStyleOptionHeader & arg1) {
+    new QStyleOptionHeader(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 455, column 5>
+//   // proto:  void QStyleOptionToolBox::QStyleOptionToolBox(const QStyleOptionToolBox & other);
+if (false) {
+  auto f = [](const QStyleOptionToolBox & arg1) {
+    new QStyleOptionToolBox(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 102, column 5>
+//   // proto:  void QStyleOptionFocusRect::QStyleOptionFocusRect(const QStyleOptionFocusRect & other);
+if (false) {
+  auto f = [](const QStyleOptionFocusRect & arg1) {
+    new QStyleOptionFocusRect(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 622, column 5>
+//   // proto:  void QStyleOptionGroupBox::QStyleOptionGroupBox(const QStyleOptionGroupBox & other);
+if (false) {
+  auto f = [](const QStyleOptionGroupBox & arg1) {
+    new QStyleOptionGroupBox(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 268, column 5>
+//   // proto:  void QStyleOptionTab::QStyleOptionTab(const QStyleOptionTab & other);
+if (false) {
+  auto f = [](const QStyleOptionTab & arg1) {
+    new QStyleOptionTab(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 178, column 5>
+//   // proto:  void QStyleOptionTabBarBase::QStyleOptionTabBarBase(const QStyleOptionTabBarBase & other);
+if (false) {
+  auto f = [](const QStyleOptionTabBarBase & arg1) {
+    new QStyleOptionTabBarBase(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 474, column 5>
+//   // proto:  void QStyleOptionRubberBand::QStyleOptionRubberBand(const QStyleOptionRubberBand & other);
+if (false) {
+  auto f = [](const QStyleOptionRubberBand & arg1) {
+    new QStyleOptionRubberBand(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 231, column 5>
+//   // proto:  void QStyleOptionButton::QStyleOptionButton(const QStyleOptionButton & other);
+if (false) {
+  auto f = [](const QStyleOptionButton & arg1) {
+    new QStyleOptionButton(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 562, column 5>
+//   // proto:  void QStyleOptionToolButton::QStyleOptionToolButton(const QStyleOptionToolButton & other);
+if (false) {
+  auto f = [](const QStyleOptionToolButton & arg1) {
+    new QStyleOptionToolButton(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 636, column 5>
+//   // proto:  void QStyleOptionSizeGrip::QStyleOptionSizeGrip(const QStyleOptionSizeGrip & other);
+if (false) {
+  auto f = [](const QStyleOptionSizeGrip & arg1) {
+    new QStyleOptionSizeGrip(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 425, column 5>
+//   // proto:  void QStyleOptionViewItem::QStyleOptionViewItem(const QStyleOptionViewItem & other);
+if (false) {
+  auto f = [](const QStyleOptionViewItem & arg1) {
+    new QStyleOptionViewItem(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 535, column 5>
+//   // proto:  void QStyleOptionSpinBox::QStyleOptionSpinBox(const QStyleOptionSpinBox & other);
+if (false) {
+  auto f = [](const QStyleOptionSpinBox & arg1) {
+    new QStyleOptionSpinBox(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 298, column 5>
+//   // proto:  void QStyleOptionToolBar::QStyleOptionToolBar(const QStyleOptionToolBar & other);
+if (false) {
+  auto f = [](const QStyleOptionToolBar & arg1) {
+    new QStyleOptionToolBar(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 154, column 12>
+//   // proto:  void QStyleOptionTabWidgetFrame::QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other);
+if (false) {
+  auto f = [](const QStyleOptionTabWidgetFrame & arg1) {
+    new QStyleOptionTabWidgetFrame(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

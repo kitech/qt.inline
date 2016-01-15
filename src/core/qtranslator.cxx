@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qtranslator.h
 // dst-file: /src/core/qtranslator.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtranslator.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QTranslator_Class_Size()
   return sizeof(QTranslator);
 }
 
-// QTranslator(class QObject *)
-QTranslator* dector_ZN11QTranslatorC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QTranslator) == 32, "tyszerr");
-  QTranslator* rthis = new QTranslator(parent);
-  return rthis;
-}
-
-// ~QTranslator()
-void dedtor_ZN11QTranslatorD0Ev(QTranslator* that)
-{
-  QTranslator* rthis = (QTranslator*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtranslator_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

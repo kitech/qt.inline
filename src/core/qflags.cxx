@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qflags.h
 // dst-file: /src/core/qflags.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qflags.h>
 
 extern "C" {
@@ -14,49 +15,9 @@ int QIncompatibleFlag_Class_Size()
   return sizeof(QIncompatibleFlag);
 }
 
-// QIncompatibleFlag(int)
-QIncompatibleFlag* dector_ZN17QIncompatibleFlagC1Ei(int i)
-{
-  // static_assert(sizeof(QIncompatibleFlag) == 32, "tyszerr");
-  QIncompatibleFlag* rthis = new QIncompatibleFlag(i);
-  return rthis;
-}
-
 int QFlag_Class_Size()
 {
   return sizeof(QFlag);
-}
-
-// QFlag(ushort)
-QFlag* dector_ZN5QFlagC1Et(unsigned short ai)
-{
-  // static_assert(sizeof(QFlag) == 32, "tyszerr");
-  QFlag* rthis = new QFlag(ai);
-  return rthis;
-}
-
-// QFlag(int)
-QFlag* dector_ZN5QFlagC1Ei(int ai)
-{
-  // static_assert(sizeof(QFlag) == 32, "tyszerr");
-  QFlag* rthis = new QFlag(ai);
-  return rthis;
-}
-
-// QFlag(short)
-QFlag* dector_ZN5QFlagC1Es(short ai)
-{
-  // static_assert(sizeof(QFlag) == 32, "tyszerr");
-  QFlag* rthis = new QFlag(ai);
-  return rthis;
-}
-
-// QFlag(uint)
-QFlag* dector_ZN5QFlagC1Ej(unsigned int ai)
-{
-  // static_assert(sizeof(QFlag) == 32, "tyszerr");
-  QFlag* rthis = new QFlag(ai);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -64,6 +25,44 @@ QFlag* dector_ZN5QFlagC1Ej(unsigned int ai)
 // <= header block end
 
 // main block begin =>
+void __keep_qflags_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 75, column 38>
+//   // proto:  void QIncompatibleFlag::QIncompatibleFlag(int i);
+if (false) {
+  auto f = [](int arg1) {
+    new QIncompatibleFlag(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 65, column 29>
+//   // proto:  void QFlag::QFlag(ushort ai);
+if (false) {
+  auto f = [](ushort arg1) {
+    new QFlag(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 52, column 29>
+//   // proto:  void QFlag::QFlag(int ai);
+if (false) {
+  auto f = [](int arg1) {
+    new QFlag(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 64, column 29>
+//   // proto:  void QFlag::QFlag(short ai);
+if (false) {
+  auto f = [](short arg1) {
+    new QFlag(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 63, column 29>
+//   // proto:  void QFlag::QFlag(uint ai);
+if (false) {
+  auto f = [](uint arg1) {
+    new QFlag(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

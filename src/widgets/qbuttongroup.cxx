@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qbuttongroup.h
 // dst-file: /src/widgets/qbuttongroup.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qbuttongroup.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QButtonGroup_Class_Size()
   return sizeof(QButtonGroup);
 }
 
-// ~QButtonGroup()
-void dedtor_ZN12QButtonGroupD0Ev(QButtonGroup* that)
-{
-  QButtonGroup* rthis = (QButtonGroup*)that;
-  delete rthis;
-}
-
-// QButtonGroup(class QObject *)
-QButtonGroup* dector_ZN12QButtonGroupC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QButtonGroup) == 32, "tyszerr");
-  QButtonGroup* rthis = new QButtonGroup(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qbuttongroup_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

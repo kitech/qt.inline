@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qsystemtrayicon.h
 // dst-file: /src/widgets/qsystemtrayicon.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qsystemtrayicon.h>
 
 extern "C" {
@@ -14,48 +15,30 @@ int QSystemTrayIcon_Class_Size()
   return sizeof(QSystemTrayIcon);
 }
 
-// ~QSystemTrayIcon()
-void dedtor_ZN15QSystemTrayIconD0Ev(QSystemTrayIcon* that)
-{
-  QSystemTrayIcon* rthis = (QSystemTrayIcon*)that;
-  delete rthis;
-}
-
-// QSystemTrayIcon(const class QIcon &, class QObject *)
-QSystemTrayIcon* dector_ZN15QSystemTrayIconC1ERK5QIconP7QObject(const QIcon & icon, QObject * parent)
-{
-  // static_assert(sizeof(QSystemTrayIcon) == 32, "tyszerr");
-  QSystemTrayIcon* rthis = new QSystemTrayIcon(icon, parent);
-  return rthis;
-}
-
-// QSystemTrayIcon(class QObject *)
-QSystemTrayIcon* dector_ZN15QSystemTrayIconC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QSystemTrayIcon) == 32, "tyszerr");
-  QSystemTrayIcon* rthis = new QSystemTrayIcon(parent);
-  return rthis;
-}
-
-  // proto:  void QSystemTrayIcon::hide();
-void demth_ZN15QSystemTrayIcon4hideEv(void *that)
-{
-  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
-   cthat->hide();
-}
-
-  // proto:  void QSystemTrayIcon::show();
-void demth_ZN15QSystemTrayIcon4showEv(void *that)
-{
-  QSystemTrayIcon *cthat = (QSystemTrayIcon *)that;
-   cthat->show();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qsystemtrayicon_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 96, column 17>
+//   // proto:  void QSystemTrayIcon::hide();
+if (false) {
+  auto f = []() {
+    ((QSystemTrayIcon*)0)->hide();
+  };
+}
+// _ZN15QSystemTrayIcon4hideEv hide()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 95, column 17>
+//   // proto:  void QSystemTrayIcon::show();
+if (false) {
+  auto f = []() {
+    ((QSystemTrayIcon*)0)->show();
+  };
+}
+// _ZN15QSystemTrayIcon4showEv show()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

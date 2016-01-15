@@ -1,10 +1,14 @@
+#include <qfileinfo.h>
+#include <qicon.h>
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qfilesystemmodel.h
 // dst-file: /src/widgets/qfilesystemmodel.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfilesystemmodel.h>
 
 extern "C" {
@@ -14,50 +18,38 @@ int QFileSystemModel_Class_Size()
   return sizeof(QFileSystemModel);
 }
 
-// ~QFileSystemModel()
-void dedtor_ZN16QFileSystemModelD0Ev(QFileSystemModel* that)
-{
-  QFileSystemModel* rthis = (QFileSystemModel*)that;
-  delete rthis;
-}
-
-// QFileSystemModel(class QObject *)
-QFileSystemModel* dector_ZN16QFileSystemModelC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QFileSystemModel) == 32, "tyszerr");
-  QFileSystemModel* rthis = new QFileSystemModel(parent);
-  return rthis;
-}
-
-  // proto:  QString QFileSystemModel::fileName(const QModelIndex & index);
-QString* demth_ZNK16QFileSystemModel8fileNameERK11QModelIndex(void *that, const QModelIndex & index)
-{
-  QFileSystemModel *cthat = (QFileSystemModel *)that;
-  auto recret = cthat->fileName(index);
-  return new QString(recret);
-}
-
-  // proto:  QIcon QFileSystemModel::fileIcon(const QModelIndex & index);
-QIcon* demth_ZNK16QFileSystemModel8fileIconERK11QModelIndex(void *that, const QModelIndex & index)
-{
-  QFileSystemModel *cthat = (QFileSystemModel *)that;
-  auto recret = cthat->fileIcon(index);
-  return new QIcon(recret);
-}
-
-  // proto:  QFileInfo QFileSystemModel::fileInfo(const QModelIndex & index);
-QFileInfo* demth_ZNK16QFileSystemModel8fileInfoERK11QModelIndex(void *that, const QModelIndex & index)
-{
-  QFileSystemModel *cthat = (QFileSystemModel *)that;
-  auto recret = cthat->fileInfo(index);
-  return new QFileInfo(recret);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfilesystemmodel_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfilesystemmodel.h', line 132, column 20>
+//   // proto:  QString QFileSystemModel::fileName(const QModelIndex & index);
+if (false) {
+  auto f = [](const QModelIndex & arg1) {
+    ((QFileSystemModel*)0)->fileName(arg1);
+  };
+}
+// _ZNK16QFileSystemModel8fileNameERK11QModelIndex fileName(const class QModelIndex &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfilesystemmodel.h', line 133, column 18>
+//   // proto:  QIcon QFileSystemModel::fileIcon(const QModelIndex & index);
+if (false) {
+  auto f = [](const QModelIndex & arg1) {
+    ((QFileSystemModel*)0)->fileIcon(arg1);
+  };
+}
+// _ZNK16QFileSystemModel8fileIconERK11QModelIndex fileIcon(const class QModelIndex &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfilesystemmodel.h', line 135, column 22>
+//   // proto:  QFileInfo QFileSystemModel::fileInfo(const QModelIndex & index);
+if (false) {
+  auto f = [](const QModelIndex & arg1) {
+    ((QFileSystemModel*)0)->fileInfo(arg1);
+  };
+}
+// _ZNK16QFileSystemModel8fileInfoERK11QModelIndex fileInfo(const class QModelIndex &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

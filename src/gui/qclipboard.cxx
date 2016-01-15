@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qclipboard.h
 // dst-file: /src/gui/qclipboard.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qclipboard.h>
 
 extern "C" {
@@ -19,6 +20,9 @@ int QClipboard_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qclipboard_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

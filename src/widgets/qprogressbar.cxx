@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qprogressbar.h
 // dst-file: /src/widgets/qprogressbar.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qprogressbar.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QProgressBar_Class_Size()
   return sizeof(QProgressBar);
 }
 
-// QProgressBar(class QWidget *)
-QProgressBar* dector_ZN12QProgressBarC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QProgressBar) == 32, "tyszerr");
-  QProgressBar* rthis = new QProgressBar(parent);
-  return rthis;
-}
-
-// ~QProgressBar()
-void dedtor_ZN12QProgressBarD0Ev(QProgressBar* that)
-{
-  QProgressBar* rthis = (QProgressBar*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qprogressbar_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

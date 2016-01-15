@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtabwidget.h
 // dst-file: /src/widgets/qtabwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtabwidget.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QTabWidget_Class_Size()
   return sizeof(QTabWidget);
 }
 
-// QTabWidget(class QWidget *)
-QTabWidget* dector_ZN10QTabWidgetC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QTabWidget) == 32, "tyszerr");
-  QTabWidget* rthis = new QTabWidget(parent);
-  return rthis;
-}
-
-// ~QTabWidget()
-void dedtor_ZN10QTabWidgetD0Ev(QTabWidget* that)
-{
-  QTabWidget* rthis = (QTabWidget*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtabwidget_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

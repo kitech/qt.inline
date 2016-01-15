@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpdfwriter.h
 // dst-file: /src/gui/qpdfwriter.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpdfwriter.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QPdfWriter_Class_Size()
   return sizeof(QPdfWriter);
 }
 
-// ~QPdfWriter()
-void dedtor_ZN10QPdfWriterD0Ev(QPdfWriter* that)
-{
-  QPdfWriter* rthis = (QPdfWriter*)that;
-  delete rthis;
-}
-
-// QPdfWriter(const class QString &)
-QPdfWriter* dector_ZN10QPdfWriterC1ERK7QString(const QString & filename)
-{
-  // static_assert(sizeof(QPdfWriter) == 32, "tyszerr");
-  QPdfWriter* rthis = new QPdfWriter(filename);
-  return rthis;
-}
-
-// QPdfWriter(class QIODevice *)
-QPdfWriter* dector_ZN10QPdfWriterC1EP9QIODevice(QIODevice * device)
-{
-  // static_assert(sizeof(QPdfWriter) == 32, "tyszerr");
-  QPdfWriter* rthis = new QPdfWriter(device);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpdfwriter_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

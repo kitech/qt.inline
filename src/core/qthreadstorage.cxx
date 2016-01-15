@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qthreadstorage.h
 // dst-file: /src/core/qthreadstorage.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qthreadstorage.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QThreadStorageData_Class_Size()
   return sizeof(QThreadStorageData);
 }
 
-// ~QThreadStorageData()
-void dedtor_ZN18QThreadStorageDataD0Ev(QThreadStorageData* that)
-{
-  QThreadStorageData* rthis = (QThreadStorageData*)that;
-  delete rthis;
-}
-
-// QThreadStorageData(void (*)(void *))
-QThreadStorageData* dector_ZN18QThreadStorageDataC1EPFvPvE(void (*func)(void *))
-{
-  // static_assert(sizeof(QThreadStorageData) == 32, "tyszerr");
-  QThreadStorageData* rthis = new QThreadStorageData(func);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qthreadstorage_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

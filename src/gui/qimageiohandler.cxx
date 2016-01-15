@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qimageiohandler.h
 // dst-file: /src/gui/qimageiohandler.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qimageiohandler.h>
 
 extern "C" {
@@ -24,6 +25,9 @@ int QImageIOPlugin_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qimageiohandler_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

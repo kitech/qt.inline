@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglcontext.h
 // dst-file: /src/gui/qopenglcontext.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglcontext.h>
 
 extern "C" {
@@ -14,55 +15,9 @@ int QOpenGLVersionProfile_Class_Size()
   return sizeof(QOpenGLVersionProfile);
 }
 
-// ~QOpenGLVersionProfile()
-void dedtor_ZN21QOpenGLVersionProfileD0Ev(QOpenGLVersionProfile* that)
-{
-  QOpenGLVersionProfile* rthis = (QOpenGLVersionProfile*)that;
-  delete rthis;
-}
-
-// QOpenGLVersionProfile(const class QSurfaceFormat &)
-QOpenGLVersionProfile* dector_ZN21QOpenGLVersionProfileC1ERK14QSurfaceFormat(const QSurfaceFormat & format)
-{
-  // static_assert(sizeof(QOpenGLVersionProfile) == 32, "tyszerr");
-  QOpenGLVersionProfile* rthis = new QOpenGLVersionProfile(format);
-  return rthis;
-}
-
-// QOpenGLVersionProfile(const class QOpenGLVersionProfile &)
-QOpenGLVersionProfile* dector_ZN21QOpenGLVersionProfileC1ERKS_(const QOpenGLVersionProfile & other)
-{
-  // static_assert(sizeof(QOpenGLVersionProfile) == 32, "tyszerr");
-  QOpenGLVersionProfile* rthis = new QOpenGLVersionProfile(other);
-  return rthis;
-}
-
-// QOpenGLVersionProfile()
-QOpenGLVersionProfile* dector_ZN21QOpenGLVersionProfileC1Ev()
-{
-  // static_assert(sizeof(QOpenGLVersionProfile) == 32, "tyszerr");
-  QOpenGLVersionProfile* rthis = new QOpenGLVersionProfile();
-  return rthis;
-}
-
 int QOpenGLContext_Class_Size()
 {
   return sizeof(QOpenGLContext);
-}
-
-// QOpenGLContext(class QObject *)
-QOpenGLContext* dector_ZN14QOpenGLContextC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QOpenGLContext) == 32, "tyszerr");
-  QOpenGLContext* rthis = new QOpenGLContext(parent);
-  return rthis;
-}
-
-// ~QOpenGLContext()
-void dedtor_ZN14QOpenGLContextD0Ev(QOpenGLContext* that)
-{
-  QOpenGLContext* rthis = (QOpenGLContext*)that;
-  delete rthis;
 }
 
 int QOpenGLContextGroup_Class_Size()
@@ -70,18 +25,14 @@ int QOpenGLContextGroup_Class_Size()
   return sizeof(QOpenGLContextGroup);
 }
 
-// ~QOpenGLContextGroup()
-void dedtor_ZN19QOpenGLContextGroupD0Ev(QOpenGLContextGroup* that)
-{
-  QOpenGLContextGroup* rthis = (QOpenGLContextGroup*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglcontext_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

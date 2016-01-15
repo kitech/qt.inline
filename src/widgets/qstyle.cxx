@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qstyle.h
 // dst-file: /src/widgets/qstyle.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qstyle.h>
 
 extern "C" {
@@ -19,6 +20,9 @@ int QStyle_Class_Size()
 // <= header block end
 
 // main block begin =>
+void __keep_qstyle_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

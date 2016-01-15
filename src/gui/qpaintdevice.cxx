@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpaintdevice.h
 // dst-file: /src/gui/qpaintdevice.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpaintdevice.h>
 
 extern "C" {
@@ -14,102 +15,118 @@ int QPaintDevice_Class_Size()
   return sizeof(QPaintDevice);
 }
 
-  // proto:  int QPaintDevice::physicalDpiY();
-int demth_ZNK12QPaintDevice12physicalDpiYEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->physicalDpiY();
-}
-
-  // proto:  int QPaintDevice::heightMM();
-int demth_ZNK12QPaintDevice8heightMMEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->heightMM();
-}
-
-  // proto:  int QPaintDevice::colorCount();
-int demth_ZNK12QPaintDevice10colorCountEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->colorCount();
-}
-
-  // proto:  int QPaintDevice::physicalDpiX();
-int demth_ZNK12QPaintDevice12physicalDpiXEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->physicalDpiX();
-}
-
-  // proto:  int QPaintDevice::widthMM();
-int demth_ZNK12QPaintDevice7widthMMEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->widthMM();
-}
-
-  // proto:  int QPaintDevice::devType();
-int demth_ZNK12QPaintDevice7devTypeEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->devType();
-}
-
-  // proto:  bool QPaintDevice::paintingActive();
-bool demth_ZNK12QPaintDevice14paintingActiveEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->paintingActive();
-}
-
-  // proto:  int QPaintDevice::width();
-int demth_ZNK12QPaintDevice5widthEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->width();
-}
-
-  // proto:  int QPaintDevice::devicePixelRatio();
-int demth_ZNK12QPaintDevice16devicePixelRatioEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->devicePixelRatio();
-}
-
-  // proto:  int QPaintDevice::height();
-int demth_ZNK12QPaintDevice6heightEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->height();
-}
-
-  // proto:  int QPaintDevice::depth();
-int demth_ZNK12QPaintDevice5depthEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->depth();
-}
-
-  // proto:  int QPaintDevice::logicalDpiY();
-int demth_ZNK12QPaintDevice11logicalDpiYEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->logicalDpiY();
-}
-
-  // proto:  int QPaintDevice::logicalDpiX();
-int demth_ZNK12QPaintDevice11logicalDpiXEv(void *that)
-{
-  QPaintDevice *cthat = (QPaintDevice *)that;
-  return cthat->logicalDpiX();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpaintdevice_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 77, column 9>
+//   // proto:  int QPaintDevice::physicalDpiY();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->physicalDpiY();
+  };
+}
+// _ZNK12QPaintDevice12physicalDpiYEv physicalDpiY()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 73, column 9>
+//   // proto:  int QPaintDevice::heightMM();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->heightMM();
+  };
+}
+// _ZNK12QPaintDevice8heightMMEv heightMM()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 79, column 9>
+//   // proto:  int QPaintDevice::colorCount();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->colorCount();
+  };
+}
+// _ZNK12QPaintDevice10colorCountEv colorCount()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 76, column 9>
+//   // proto:  int QPaintDevice::physicalDpiX();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->physicalDpiX();
+  };
+}
+// _ZNK12QPaintDevice12physicalDpiXEv physicalDpiX()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 72, column 9>
+//   // proto:  int QPaintDevice::widthMM();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->widthMM();
+  };
+}
+// _ZNK12QPaintDevice7widthMMEv widthMM()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 66, column 17>
+//   // proto:  int QPaintDevice::devType();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->devType();
+  };
+}
+// _ZNK12QPaintDevice7devTypeEv devType()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 67, column 10>
+//   // proto:  bool QPaintDevice::paintingActive();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->paintingActive();
+  };
+}
+// _ZNK12QPaintDevice14paintingActiveEv paintingActive()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 70, column 9>
+//   // proto:  int QPaintDevice::width();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->width();
+  };
+}
+// _ZNK12QPaintDevice5widthEv width()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 78, column 9>
+//   // proto:  int QPaintDevice::devicePixelRatio();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->devicePixelRatio();
+  };
+}
+// _ZNK12QPaintDevice16devicePixelRatioEv devicePixelRatio()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 71, column 9>
+//   // proto:  int QPaintDevice::height();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->height();
+  };
+}
+// _ZNK12QPaintDevice6heightEv height()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 80, column 9>
+//   // proto:  int QPaintDevice::depth();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->depth();
+  };
+}
+// _ZNK12QPaintDevice5depthEv depth()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 75, column 9>
+//   // proto:  int QPaintDevice::logicalDpiY();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->logicalDpiY();
+  };
+}
+// _ZNK12QPaintDevice11logicalDpiYEv logicalDpiY()
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevice.h', line 74, column 9>
+//   // proto:  int QPaintDevice::logicalDpiX();
+if (false) {
+  auto f = []() {
+    ((QPaintDevice*)0)->logicalDpiX();
+  };
+}
+// _ZNK12QPaintDevice11logicalDpiXEv logicalDpiX()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

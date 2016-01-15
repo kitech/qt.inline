@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qpagelayout.h
 // dst-file: /src/gui/qpagelayout.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpagelayout.h>
 
 extern "C" {
@@ -14,49 +15,22 @@ int QPageLayout_Class_Size()
   return sizeof(QPageLayout);
 }
 
-// QPageLayout()
-QPageLayout* dector_ZN11QPageLayoutC1Ev()
-{
-  // static_assert(sizeof(QPageLayout) == 32, "tyszerr");
-  QPageLayout* rthis = new QPageLayout();
-  return rthis;
-}
-
-// QPageLayout(const class QPageLayout &)
-QPageLayout* dector_ZN11QPageLayoutC1ERKS_(const QPageLayout & other)
-{
-  // static_assert(sizeof(QPageLayout) == 32, "tyszerr");
-  QPageLayout* rthis = new QPageLayout(other);
-  return rthis;
-}
-
-// ~QPageLayout()
-void dedtor_ZN11QPageLayoutD0Ev(QPageLayout* that)
-{
-  QPageLayout* rthis = (QPageLayout*)that;
-  delete rthis;
-}
-
-// QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
-QPageLayout* dector_ZN11QPageLayoutC1ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins)
-{
-  // static_assert(sizeof(QPageLayout) == 32, "tyszerr");
-  QPageLayout* rthis = new QPageLayout(pageSize, orientation, margins, units, minMargins);
-  return rthis;
-}
-
-  // proto:  void QPageLayout::swap(QPageLayout & other);
-void demth_ZN11QPageLayout4swapERS_(void *that, QPageLayout & other)
-{
-  QPageLayout *cthat = (QPageLayout *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpagelayout_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 85, column 10>
+//   // proto:  void QPageLayout::swap(QPageLayout & other);
+if (false) {
+  auto f = [](QPageLayout & arg1) {
+    ((QPageLayout*)0)->swap(arg1);
+  };
+}
+// _ZN11QPageLayout4swapERS_ swap(class QPageLayout &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qregion.h
 // dst-file: /src/gui/qregion.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qregion.h>
 
 extern "C" {
@@ -14,88 +15,38 @@ int QRegion_Class_Size()
   return sizeof(QRegion);
 }
 
-// QRegion(const class QRegion &)
-QRegion* dector_ZN7QRegionC1ERKS_(const QRegion & region)
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion(region);
-  return rthis;
-}
-
-// QRegion(const class QBitmap &)
-QRegion* dector_ZN7QRegionC1ERK7QBitmap(const QBitmap & bitmap)
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion(bitmap);
-  return rthis;
-}
-
-// ~QRegion()
-void dedtor_ZN7QRegionD0Ev(QRegion* that)
-{
-  QRegion* rthis = (QRegion*)that;
-  delete rthis;
-}
-
-// QRegion(const class QPolygon &, Qt::FillRule)
-QRegion* dector_ZN7QRegionC1ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule)
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion(pa, fillRule);
-  return rthis;
-}
-
-// QRegion()
-QRegion* dector_ZN7QRegionC1Ev()
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion();
-  return rthis;
-}
-
-// QRegion(const class QRect &, enum QRegion::RegionType)
-QRegion* dector_ZN7QRegionC1ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t)
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion(r, t);
-  return rthis;
-}
-
-// QRegion(int, int, int, int, enum QRegion::RegionType)
-QRegion* dector_ZN7QRegionC1EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::RegionType t)
-{
-  // static_assert(sizeof(QRegion) == 32, "tyszerr");
-  QRegion* rthis = new QRegion(x, y, w, h, t);
-  return rthis;
-}
-
-  // proto:  QRegion QRegion::translated(const QPoint & p);
-QRegion* demth_ZNK7QRegion10translatedERK6QPoint(void *that, const QPoint & p)
-{
-  QRegion *cthat = (QRegion *)that;
-  auto recret = cthat->translated(p);
-  return new QRegion(recret);
-}
-
-  // proto:  void QRegion::swap(QRegion & other);
-void demth_ZN7QRegion4swapERS_(void *that, QRegion & other)
-{
-  QRegion *cthat = (QRegion *)that;
-   cthat->swap(other);
-}
-
-  // proto:  void QRegion::translate(const QPoint & p);
-void demth_ZN7QRegion9translateERK6QPoint(void *that, const QPoint & p)
-{
-  QRegion *cthat = (QRegion *)that;
-   cthat->translate(p);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qregion_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 82, column 20>
+//   // proto:  QRegion QRegion::translated(const QPoint & p);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    ((QRegion*)0)->translated(arg1);
+  };
+}
+// _ZNK7QRegion10translatedERK6QPoint translated(const class QPoint &)
+// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 72, column 17>
+//   // proto:  void QRegion::swap(QRegion & other);
+if (false) {
+  auto f = [](QRegion & arg1) {
+    ((QRegion*)0)->swap(arg1);
+  };
+}
+// _ZN7QRegion4swapERS_ swap(class QRegion &)
+// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 80, column 17>
+//   // proto:  void QRegion::translate(const QPoint & p);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    ((QRegion*)0)->translate(arg1);
+  };
+}
+// _ZN7QRegion9translateERK6QPoint translate(const class QPoint &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

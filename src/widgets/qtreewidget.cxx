@@ -1,10 +1,18 @@
+#include <qbrush.h>
+#include <qnamespace.h>
+#include <qicon.h>
+#include <qsize.h>
+#include <qcolor.h>
+#include <qstring.h>
+#include <qfont.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtreewidget.h
 // dst-file: /src/widgets/qtreewidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtreewidget.h>
 
 extern "C" {
@@ -14,436 +22,9 @@ int QTreeWidget_Class_Size()
   return sizeof(QTreeWidget);
 }
 
-// ~QTreeWidget()
-void dedtor_ZN11QTreeWidgetD0Ev(QTreeWidget* that)
-{
-  QTreeWidget* rthis = (QTreeWidget*)that;
-  delete rthis;
-}
-
-// QTreeWidget(class QWidget *)
-QTreeWidget* dector_ZN11QTreeWidgetC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QTreeWidget) == 32, "tyszerr");
-  QTreeWidget* rthis = new QTreeWidget(parent);
-  return rthis;
-}
-
-  // proto:  QTreeWidgetItem * QTreeWidget::itemAt(int x, int y);
-QTreeWidgetItem * demth_ZNK11QTreeWidget6itemAtEii(void *that, int x, int y)
-{
-  QTreeWidget *cthat = (QTreeWidget *)that;
-  return cthat->itemAt(x, y);
-}
-
-  // proto:  void QTreeWidget::removeItemWidget(QTreeWidgetItem * item, int column);
-void demth_ZN11QTreeWidget16removeItemWidgetEP15QTreeWidgetItemi(void *that, QTreeWidgetItem * item, int column)
-{
-  QTreeWidget *cthat = (QTreeWidget *)that;
-   cthat->removeItemWidget(item, column);
-}
-
-  // proto:  void QTreeWidget::setHeaderLabel(const QString & label);
-void demth_ZN11QTreeWidget14setHeaderLabelERK7QString(void *that, const QString & label)
-{
-  QTreeWidget *cthat = (QTreeWidget *)that;
-   cthat->setHeaderLabel(label);
-}
-
 int QTreeWidgetItem_Class_Size()
 {
   return sizeof(QTreeWidgetItem);
-}
-
-// QTreeWidgetItem(class QTreeWidgetItem *, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EPS_i(QTreeWidgetItem * parent, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(parent, type);
-  return rthis;
-}
-
-// QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(parent, after, type);
-  return rthis;
-}
-
-// QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidgetItem * after, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(view, after, type);
-  return rthis;
-}
-
-// QTreeWidgetItem(const class QTreeWidgetItem &)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1ERKS_(const QTreeWidgetItem & other)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(other);
-  return rthis;
-}
-
-// QTreeWidgetItem(int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1Ei(int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(type);
-  return rthis;
-}
-
-// QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EP11QTreeWidgetRK11QStringListi(QTreeWidget * view, const QStringList & strings, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(view, strings, type);
-  return rthis;
-}
-
-// QTreeWidgetItem(const class QStringList &, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1ERK11QStringListi(const QStringList & strings, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(strings, type);
-  return rthis;
-}
-
-// ~QTreeWidgetItem()
-void dedtor_ZN15QTreeWidgetItemD0Ev(QTreeWidgetItem* that)
-{
-  QTreeWidgetItem* rthis = (QTreeWidgetItem*)that;
-  delete rthis;
-}
-
-// QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EPS_RK11QStringListi(QTreeWidgetItem * parent, const QStringList & strings, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(parent, strings, type);
-  return rthis;
-}
-
-// QTreeWidgetItem(class QTreeWidget *, int)
-QTreeWidgetItem* dector_ZN15QTreeWidgetItemC1EP11QTreeWidgeti(QTreeWidget * view, int type)
-{
-  // static_assert(sizeof(QTreeWidgetItem) == 32, "tyszerr");
-  QTreeWidgetItem* rthis = new QTreeWidgetItem(view, type);
-  return rthis;
-}
-
-  // proto:  void QTreeWidgetItem::setFirstColumnSpanned(bool span);
-void demth_ZN15QTreeWidgetItem21setFirstColumnSpannedEb(void *that, bool span)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setFirstColumnSpanned(span);
-}
-
-  // proto:  int QTreeWidgetItem::indexOfChild(QTreeWidgetItem * child);
-int demth_ZNK15QTreeWidgetItem12indexOfChildEPS_(void *that, QTreeWidgetItem * child)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->indexOfChild(child);
-}
-
-  // proto:  QTreeWidgetItem * QTreeWidgetItem::parent();
-QTreeWidgetItem * demth_ZNK15QTreeWidgetItem6parentEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->parent();
-}
-
-  // proto:  void QTreeWidgetItem::setFont(int column, const QFont & font);
-void demth_ZN15QTreeWidgetItem7setFontEiRK5QFont(void *that, int column, const QFont & font)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setFont(column, font);
-}
-
-  // proto:  QFont QTreeWidgetItem::font(int column);
-QFont* demth_ZNK15QTreeWidgetItem4fontEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->font(column);
-  return new QFont(recret);
-}
-
-  // proto:  void QTreeWidgetItem::setStatusTip(int column, const QString & statusTip);
-void demth_ZN15QTreeWidgetItem12setStatusTipEiRK7QString(void *that, int column, const QString & statusTip)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setStatusTip(column, statusTip);
-}
-
-  // proto:  void QTreeWidgetItem::setExpanded(bool expand);
-void demth_ZN15QTreeWidgetItem11setExpandedEb(void *that, bool expand)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setExpanded(expand);
-}
-
-  // proto:  bool QTreeWidgetItem::isExpanded();
-bool demth_ZNK15QTreeWidgetItem10isExpandedEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->isExpanded();
-}
-
-  // proto:  void QTreeWidgetItem::setIcon(int column, const QIcon & icon);
-void demth_ZN15QTreeWidgetItem7setIconEiRK5QIcon(void *that, int column, const QIcon & icon)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setIcon(column, icon);
-}
-
-  // proto:  QString QTreeWidgetItem::toolTip(int column);
-QString* demth_ZNK15QTreeWidgetItem7toolTipEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->toolTip(column);
-  return new QString(recret);
-}
-
-  // proto:  QColor QTreeWidgetItem::backgroundColor(int column);
-QColor* demth_ZNK15QTreeWidgetItem15backgroundColorEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->backgroundColor(column);
-  return new QColor(recret);
-}
-
-  // proto:  QString QTreeWidgetItem::text(int column);
-QString* demth_ZNK15QTreeWidgetItem4textEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->text(column);
-  return new QString(recret);
-}
-
-  // proto:  bool QTreeWidgetItem::isHidden();
-bool demth_ZNK15QTreeWidgetItem8isHiddenEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->isHidden();
-}
-
-  // proto:  void QTreeWidgetItem::setTextAlignment(int column, int alignment);
-void demth_ZN15QTreeWidgetItem16setTextAlignmentEii(void *that, int column, int alignment)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setTextAlignment(column, alignment);
-}
-
-  // proto:  bool QTreeWidgetItem::isDisabled();
-bool demth_ZNK15QTreeWidgetItem10isDisabledEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->isDisabled();
-}
-
-  // proto:  void QTreeWidgetItem::setText(int column, const QString & text);
-void demth_ZN15QTreeWidgetItem7setTextEiRK7QString(void *that, int column, const QString & text)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setText(column, text);
-}
-
-  // proto:  void QTreeWidgetItem::setTextColor(int column, const QColor & color);
-void demth_ZN15QTreeWidgetItem12setTextColorEiRK6QColor(void *that, int column, const QColor & color)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setTextColor(column, color);
-}
-
-  // proto:  QSize QTreeWidgetItem::sizeHint(int column);
-QSize* demth_ZNK15QTreeWidgetItem8sizeHintEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->sizeHint(column);
-  return new QSize(recret);
-}
-
-  // proto:  QString QTreeWidgetItem::whatsThis(int column);
-QString* demth_ZNK15QTreeWidgetItem9whatsThisEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->whatsThis(column);
-  return new QString(recret);
-}
-
-  // proto:  void QTreeWidgetItem::setWhatsThis(int column, const QString & whatsThis);
-void demth_ZN15QTreeWidgetItem12setWhatsThisEiRK7QString(void *that, int column, const QString & whatsThis)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setWhatsThis(column, whatsThis);
-}
-
-  // proto:  void QTreeWidgetItem::sortChildren(int column, Qt::SortOrder order);
-void demth_ZN15QTreeWidgetItem12sortChildrenEiN2Qt9SortOrderE(void *that, int column, Qt::SortOrder order)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->sortChildren(column, order);
-}
-
-  // proto:  QColor QTreeWidgetItem::textColor(int column);
-QColor* demth_ZNK15QTreeWidgetItem9textColorEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->textColor(column);
-  return new QColor(recret);
-}
-
-  // proto:  QIcon QTreeWidgetItem::icon(int column);
-QIcon* demth_ZNK15QTreeWidgetItem4iconEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->icon(column);
-  return new QIcon(recret);
-}
-
-  // proto:  void QTreeWidgetItem::setToolTip(int column, const QString & toolTip);
-void demth_ZN15QTreeWidgetItem10setToolTipEiRK7QString(void *that, int column, const QString & toolTip)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setToolTip(column, toolTip);
-}
-
-  // proto:  bool QTreeWidgetItem::isFirstColumnSpanned();
-bool demth_ZNK15QTreeWidgetItem20isFirstColumnSpannedEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->isFirstColumnSpanned();
-}
-
-  // proto:  int QTreeWidgetItem::textAlignment(int column);
-int demth_ZNK15QTreeWidgetItem13textAlignmentEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->textAlignment(column);
-}
-
-  // proto:  QTreeWidgetItem * QTreeWidgetItem::child(int index);
-QTreeWidgetItem * demth_ZNK15QTreeWidgetItem5childEi(void *that, int index)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->child(index);
-}
-
-  // proto:  void QTreeWidgetItem::setSelected(bool select);
-void demth_ZN15QTreeWidgetItem11setSelectedEb(void *that, bool select)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setSelected(select);
-}
-
-  // proto:  void QTreeWidgetItem::setHidden(bool hide);
-void demth_ZN15QTreeWidgetItem9setHiddenEb(void *that, bool hide)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setHidden(hide);
-}
-
-  // proto:  int QTreeWidgetItem::columnCount();
-int demth_ZNK15QTreeWidgetItem11columnCountEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->columnCount();
-}
-
-  // proto:  void QTreeWidgetItem::setDisabled(bool disabled);
-void demth_ZN15QTreeWidgetItem11setDisabledEb(void *that, bool disabled)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setDisabled(disabled);
-}
-
-  // proto:  void QTreeWidgetItem::setBackground(int column, const QBrush & brush);
-void demth_ZN15QTreeWidgetItem13setBackgroundEiRK6QBrush(void *that, int column, const QBrush & brush)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setBackground(column, brush);
-}
-
-  // proto:  void QTreeWidgetItem::setSizeHint(int column, const QSize & size);
-void demth_ZN15QTreeWidgetItem11setSizeHintEiRK5QSize(void *that, int column, const QSize & size)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setSizeHint(column, size);
-}
-
-  // proto:  void QTreeWidgetItem::setCheckState(int column, Qt::CheckState state);
-void demth_ZN15QTreeWidgetItem13setCheckStateEiN2Qt10CheckStateE(void *that, int column, Qt::CheckState state)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setCheckState(column, state);
-}
-
-  // proto:  QBrush QTreeWidgetItem::foreground(int column);
-QBrush* demth_ZNK15QTreeWidgetItem10foregroundEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->foreground(column);
-  return new QBrush(recret);
-}
-
-  // proto:  int QTreeWidgetItem::childCount();
-int demth_ZNK15QTreeWidgetItem10childCountEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->childCount();
-}
-
-  // proto:  void QTreeWidgetItem::setBackgroundColor(int column, const QColor & color);
-void demth_ZN15QTreeWidgetItem18setBackgroundColorEiRK6QColor(void *that, int column, const QColor & color)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setBackgroundColor(column, color);
-}
-
-  // proto:  QString QTreeWidgetItem::statusTip(int column);
-QString* demth_ZNK15QTreeWidgetItem9statusTipEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->statusTip(column);
-  return new QString(recret);
-}
-
-  // proto:  QBrush QTreeWidgetItem::background(int column);
-QBrush* demth_ZNK15QTreeWidgetItem10backgroundEi(void *that, int column)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  auto recret = cthat->background(column);
-  return new QBrush(recret);
-}
-
-  // proto:  int QTreeWidgetItem::type();
-int demth_ZNK15QTreeWidgetItem4typeEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->type();
-}
-
-  // proto:  QTreeWidget * QTreeWidgetItem::treeWidget();
-QTreeWidget * demth_ZNK15QTreeWidgetItem10treeWidgetEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->treeWidget();
-}
-
-  // proto:  void QTreeWidgetItem::setForeground(int column, const QBrush & brush);
-void demth_ZN15QTreeWidgetItem13setForegroundEiRK6QBrush(void *that, int column, const QBrush & brush)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-   cthat->setForeground(column, brush);
-}
-
-  // proto:  bool QTreeWidgetItem::isSelected();
-bool demth_ZNK15QTreeWidgetItem10isSelectedEv(void *that)
-{
-  QTreeWidgetItem *cthat = (QTreeWidgetItem *)that;
-  return cthat->isSelected();
 }
 
 }; // <= extern "C" block end
@@ -451,6 +32,385 @@ bool demth_ZNK15QTreeWidgetItem10isSelectedEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qtreewidget_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 287, column 29>
+//   // proto:  QTreeWidgetItem * QTreeWidget::itemAt(int x, int y);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QTreeWidget*)0)->itemAt(arg1, arg2);
+  };
+}
+// _ZNK11QTreeWidget6itemAtEii itemAt(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 299, column 17>
+//   // proto:  void QTreeWidget::removeItemWidget(QTreeWidgetItem * item, int column);
+if (false) {
+  auto f = [](QTreeWidgetItem * arg1, int arg2) {
+    ((QTreeWidget*)0)->removeItemWidget(arg1, arg2);
+  };
+}
+// _ZN11QTreeWidget16removeItemWidgetEP15QTreeWidgetItemi removeItemWidget(class QTreeWidgetItem *, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 278, column 17>
+//   // proto:  void QTreeWidget::setHeaderLabel(const QString & label);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QTreeWidget*)0)->setHeaderLabel(arg1);
+  };
+}
+// _ZN11QTreeWidget14setHeaderLabelERK7QString setHeaderLabel(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 85, column 17>
+//   // proto:  void QTreeWidgetItem::setFirstColumnSpanned(bool span);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTreeWidgetItem*)0)->setFirstColumnSpanned(arg1);
+  };
+}
+// _ZN15QTreeWidgetItem21setFirstColumnSpannedEb setFirstColumnSpanned(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 181, column 16>
+//   // proto:  int QTreeWidgetItem::indexOfChild(QTreeWidgetItem * child);
+if (false) {
+  auto f = [](QTreeWidgetItem * arg1) {
+    ((QTreeWidgetItem*)0)->indexOfChild(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem12indexOfChildEPS_ indexOfChild(class QTreeWidgetItem *)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 172, column 29>
+//   // proto:  QTreeWidgetItem * QTreeWidgetItem::parent();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->parent();
+  };
+}
+// _ZNK15QTreeWidgetItem6parentEv parent()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 124, column 17>
+//   // proto:  void QTreeWidgetItem::setFont(int column, const QFont & font);
+if (false) {
+  auto f = [](int arg1, const QFont & arg2) {
+    ((QTreeWidgetItem*)0)->setFont(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem7setFontEiRK5QFont setFont(int, const class QFont &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 122, column 18>
+//   // proto:  QFont QTreeWidgetItem::font(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->font(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem4fontEi font(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 108, column 17>
+//   // proto:  void QTreeWidgetItem::setStatusTip(int column, const QString & statusTip);
+if (false) {
+  auto f = [](int arg1, const QString & arg2) {
+    ((QTreeWidgetItem*)0)->setStatusTip(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem12setStatusTipEiRK7QString setStatusTip(int, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 82, column 17>
+//   // proto:  void QTreeWidgetItem::setExpanded(bool expand);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTreeWidgetItem*)0)->setExpanded(arg1);
+  };
+}
+// _ZN15QTreeWidgetItem11setExpandedEb setExpanded(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 83, column 17>
+//   // proto:  bool QTreeWidgetItem::isExpanded();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->isExpanded();
+  };
+}
+// _ZNK15QTreeWidgetItem10isExpandedEv isExpanded()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 104, column 17>
+//   // proto:  void QTreeWidgetItem::setIcon(int column, const QIcon & icon);
+if (false) {
+  auto f = [](int arg1, const QIcon & arg2) {
+    ((QTreeWidgetItem*)0)->setIcon(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem7setIconEiRK5QIcon setIcon(int, const class QIcon &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 111, column 20>
+//   // proto:  QString QTreeWidgetItem::toolTip(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->toolTip(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem7toolTipEi toolTip(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 131, column 19>
+//   // proto:  QColor QTreeWidgetItem::backgroundColor(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->backgroundColor(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem15backgroundColorEi backgroundColor(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 98, column 20>
+//   // proto:  QString QTreeWidgetItem::text(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->text(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem4textEi text(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 80, column 17>
+//   // proto:  bool QTreeWidgetItem::isHidden();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->isHidden();
+  };
+}
+// _ZNK15QTreeWidgetItem8isHiddenEv isHidden()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 128, column 17>
+//   // proto:  void QTreeWidgetItem::setTextAlignment(int column, int alignment);
+if (false) {
+  auto f = [](int arg1, int arg2) {
+    ((QTreeWidgetItem*)0)->setTextAlignment(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem16setTextAlignmentEii setTextAlignment(int, int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 89, column 17>
+//   // proto:  bool QTreeWidgetItem::isDisabled();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->isDisabled();
+  };
+}
+// _ZNK15QTreeWidgetItem10isDisabledEv isDisabled()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 100, column 17>
+//   // proto:  void QTreeWidgetItem::setText(int column, const QString & text);
+if (false) {
+  auto f = [](int arg1, const QString & arg2) {
+    ((QTreeWidgetItem*)0)->setText(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem7setTextEiRK7QString setText(int, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 143, column 17>
+//   // proto:  void QTreeWidgetItem::setTextColor(int column, const QColor & color);
+if (false) {
+  auto f = [](int arg1, const QColor & arg2) {
+    ((QTreeWidgetItem*)0)->setTextColor(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem12setTextColorEiRK6QColor setTextColor(int, const class QColor &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 156, column 18>
+//   // proto:  QSize QTreeWidgetItem::sizeHint(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->sizeHint(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem8sizeHintEi sizeHint(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 117, column 20>
+//   // proto:  QString QTreeWidgetItem::whatsThis(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->whatsThis(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem9whatsThisEi whatsThis(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 119, column 17>
+//   // proto:  void QTreeWidgetItem::setWhatsThis(int column, const QString & whatsThis);
+if (false) {
+  auto f = [](int arg1, const QString & arg2) {
+    ((QTreeWidgetItem*)0)->setWhatsThis(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem12setWhatsThisEiRK7QString setWhatsThis(int, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 193, column 17>
+//   // proto:  void QTreeWidgetItem::sortChildren(int column, Qt::SortOrder order);
+if (false) {
+  auto f = [](int arg1, Qt::SortOrder arg2) {
+    ((QTreeWidgetItem*)0)->sortChildren(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem12sortChildrenEiN2Qt9SortOrderE sortChildren(int, Qt::SortOrder)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 141, column 19>
+//   // proto:  QColor QTreeWidgetItem::textColor(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->textColor(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem9textColorEi textColor(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 102, column 18>
+//   // proto:  QIcon QTreeWidgetItem::icon(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->icon(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem4iconEi icon(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 113, column 17>
+//   // proto:  void QTreeWidgetItem::setToolTip(int column, const QString & toolTip);
+if (false) {
+  auto f = [](int arg1, const QString & arg2) {
+    ((QTreeWidgetItem*)0)->setToolTip(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem10setToolTipEiRK7QString setToolTip(int, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 86, column 17>
+//   // proto:  bool QTreeWidgetItem::isFirstColumnSpanned();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->isFirstColumnSpanned();
+  };
+}
+// _ZNK15QTreeWidgetItem20isFirstColumnSpannedEv isFirstColumnSpanned()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 126, column 16>
+//   // proto:  int QTreeWidgetItem::textAlignment(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->textAlignment(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem13textAlignmentEi textAlignment(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 173, column 29>
+//   // proto:  QTreeWidgetItem * QTreeWidgetItem::child(int index);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->child(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem5childEi child(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 76, column 17>
+//   // proto:  void QTreeWidgetItem::setSelected(bool select);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTreeWidgetItem*)0)->setSelected(arg1);
+  };
+}
+// _ZN15QTreeWidgetItem11setSelectedEb setSelected(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 79, column 17>
+//   // proto:  void QTreeWidgetItem::setHidden(bool hide);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTreeWidgetItem*)0)->setHidden(arg1);
+  };
+}
+// _ZN15QTreeWidgetItem9setHiddenEb setHidden(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 180, column 16>
+//   // proto:  int QTreeWidgetItem::columnCount();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->columnCount();
+  };
+}
+// _ZNK15QTreeWidgetItem11columnCountEv columnCount()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 151, column 27>
+//   // proto:  Qt::CheckState QTreeWidgetItem::checkState(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->checkState(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem10checkStateEi checkState(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 88, column 17>
+//   // proto:  void QTreeWidgetItem::setDisabled(bool disabled);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTreeWidgetItem*)0)->setDisabled(arg1);
+  };
+}
+// _ZN15QTreeWidgetItem11setDisabledEb setDisabled(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 138, column 17>
+//   // proto:  void QTreeWidgetItem::setBackground(int column, const QBrush & brush);
+if (false) {
+  auto f = [](int arg1, const QBrush & arg2) {
+    ((QTreeWidgetItem*)0)->setBackground(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem13setBackgroundEiRK6QBrush setBackground(int, const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 158, column 17>
+//   // proto:  void QTreeWidgetItem::setSizeHint(int column, const QSize & size);
+if (false) {
+  auto f = [](int arg1, const QSize & arg2) {
+    ((QTreeWidgetItem*)0)->setSizeHint(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem11setSizeHintEiRK5QSize setSizeHint(int, const class QSize &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 153, column 17>
+//   // proto:  void QTreeWidgetItem::setCheckState(int column, Qt::CheckState state);
+if (false) {
+  auto f = [](int arg1, Qt::CheckState arg2) {
+    ((QTreeWidgetItem*)0)->setCheckState(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem13setCheckStateEiN2Qt10CheckStateE setCheckState(int, Qt::CheckState)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 146, column 19>
+//   // proto:  QBrush QTreeWidgetItem::foreground(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->foreground(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem10foregroundEi foreground(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 179, column 16>
+//   // proto:  int QTreeWidgetItem::childCount();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->childCount();
+  };
+}
+// _ZNK15QTreeWidgetItem10childCountEv childCount()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 133, column 17>
+//   // proto:  void QTreeWidgetItem::setBackgroundColor(int column, const QColor & color);
+if (false) {
+  auto f = [](int arg1, const QColor & arg2) {
+    ((QTreeWidgetItem*)0)->setBackgroundColor(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem18setBackgroundColorEiRK6QColor setBackgroundColor(int, const class QColor &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 106, column 20>
+//   // proto:  QString QTreeWidgetItem::statusTip(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->statusTip(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem9statusTipEi statusTip(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 136, column 19>
+//   // proto:  QBrush QTreeWidgetItem::background(int column);
+if (false) {
+  auto f = [](int arg1) {
+    ((QTreeWidgetItem*)0)->background(arg1);
+  };
+}
+// _ZNK15QTreeWidgetItem10backgroundEi background(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 192, column 16>
+//   // proto:  int QTreeWidgetItem::type();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->type();
+  };
+}
+// _ZNK15QTreeWidgetItem4typeEv type()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 74, column 25>
+//   // proto:  QTreeWidget * QTreeWidgetItem::treeWidget();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->treeWidget();
+  };
+}
+// _ZNK15QTreeWidgetItem10treeWidgetEv treeWidget()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 148, column 17>
+//   // proto:  void QTreeWidgetItem::setForeground(int column, const QBrush & brush);
+if (false) {
+  auto f = [](int arg1, const QBrush & arg2) {
+    ((QTreeWidgetItem*)0)->setForeground(arg1, arg2);
+  };
+}
+// _ZN15QTreeWidgetItem13setForegroundEiRK6QBrush setForeground(int, const class QBrush &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 77, column 17>
+//   // proto:  bool QTreeWidgetItem::isSelected();
+if (false) {
+  auto f = []() {
+    ((QTreeWidgetItem*)0)->isSelected();
+  };
+}
+// _ZNK15QTreeWidgetItem10isSelectedEv isSelected()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

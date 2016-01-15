@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qobjectcleanuphandler.h
 // dst-file: /src/core/qobjectcleanuphandler.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qobjectcleanuphandler.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QObjectCleanupHandler_Class_Size()
   return sizeof(QObjectCleanupHandler);
 }
 
-// ~QObjectCleanupHandler()
-void dedtor_ZN21QObjectCleanupHandlerD0Ev(QObjectCleanupHandler* that)
-{
-  QObjectCleanupHandler* rthis = (QObjectCleanupHandler*)that;
-  delete rthis;
-}
-
-// QObjectCleanupHandler()
-QObjectCleanupHandler* dector_ZN21QObjectCleanupHandlerC1Ev()
-{
-  // static_assert(sizeof(QObjectCleanupHandler) == 32, "tyszerr");
-  QObjectCleanupHandler* rthis = new QObjectCleanupHandler();
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qobjectcleanuphandler_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

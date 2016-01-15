@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qopenglshaderprogram.h
 // dst-file: /src/gui/qopenglshaderprogram.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qopenglshaderprogram.h>
 
 extern "C" {
@@ -14,39 +15,9 @@ int QOpenGLShader_Class_Size()
   return sizeof(QOpenGLShader);
 }
 
-// ~QOpenGLShader()
-void dedtor_ZN13QOpenGLShaderD0Ev(QOpenGLShader* that)
-{
-  QOpenGLShader* rthis = (QOpenGLShader*)that;
-  delete rthis;
-}
-
-// QOpenGLShader(class QOpenGLShader::ShaderType, class QObject *)
-QOpenGLShader* dector_ZN13QOpenGLShaderC1E6QFlagsINS_13ShaderTypeBitEEP7QObject(QOpenGLShader::ShaderType type, QObject * parent)
-{
-  // static_assert(sizeof(QOpenGLShader) == 32, "tyszerr");
-  QOpenGLShader* rthis = new QOpenGLShader(type, parent);
-  return rthis;
-}
-
 int QOpenGLShaderProgram_Class_Size()
 {
   return sizeof(QOpenGLShaderProgram);
-}
-
-// ~QOpenGLShaderProgram()
-void dedtor_ZN20QOpenGLShaderProgramD0Ev(QOpenGLShaderProgram* that)
-{
-  QOpenGLShaderProgram* rthis = (QOpenGLShaderProgram*)that;
-  delete rthis;
-}
-
-// QOpenGLShaderProgram(class QObject *)
-QOpenGLShaderProgram* dector_ZN20QOpenGLShaderProgramC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QOpenGLShaderProgram) == 32, "tyszerr");
-  QOpenGLShaderProgram* rthis = new QOpenGLShaderProgram(parent);
-  return rthis;
 }
 
 }; // <= extern "C" block end
@@ -54,6 +25,9 @@ QOpenGLShaderProgram* dector_ZN20QOpenGLShaderProgramC1EP7QObject(QObject * pare
 // <= header block end
 
 // main block begin =>
+void __keep_qopenglshaderprogram_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

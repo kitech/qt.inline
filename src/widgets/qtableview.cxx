@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtableview.h
 // dst-file: /src/widgets/qtableview.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtableview.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QTableView_Class_Size()
   return sizeof(QTableView);
 }
 
-// ~QTableView()
-void dedtor_ZN10QTableViewD0Ev(QTableView* that)
-{
-  QTableView* rthis = (QTableView*)that;
-  delete rthis;
-}
-
-// QTableView(class QWidget *)
-QTableView* dector_ZN10QTableViewC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QTableView) == 32, "tyszerr");
-  QTableView* rthis = new QTableView(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtableview_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

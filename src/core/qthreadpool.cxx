@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qthreadpool.h
 // dst-file: /src/core/qthreadpool.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qthreadpool.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QThreadPool_Class_Size()
   return sizeof(QThreadPool);
 }
 
-// ~QThreadPool()
-void dedtor_ZN11QThreadPoolD0Ev(QThreadPool* that)
-{
-  QThreadPool* rthis = (QThreadPool*)that;
-  delete rthis;
-}
-
-// QThreadPool(class QObject *)
-QThreadPool* dector_ZN11QThreadPoolC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QThreadPool) == 32, "tyszerr");
-  QThreadPool* rthis = new QThreadPool(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qthreadpool_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

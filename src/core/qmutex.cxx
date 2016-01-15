@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qmutex.h
 // dst-file: /src/core/qmutex.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmutex.h>
 
 extern "C" {
@@ -14,80 +15,9 @@ int QMutexLocker_Class_Size()
   return sizeof(QMutexLocker);
 }
 
-// QMutexLocker(class QBasicMutex *)
-QMutexLocker* dector_ZN12QMutexLockerC1EP11QBasicMutex(QBasicMutex * m)
-{
-  // static_assert(sizeof(QMutexLocker) == 32, "tyszerr");
-  QMutexLocker* rthis = new QMutexLocker(m);
-  return rthis;
-}
-
-// ~QMutexLocker()
-void dedtor_ZN12QMutexLockerD0Ev(QMutexLocker* that)
-{
-  QMutexLocker* rthis = (QMutexLocker*)that;
-  delete rthis;
-}
-
-  // proto:  void QMutexLocker::QMutexLocker(QBasicMutex * m);
-void demth_ZN12QMutexLockerC1EP11QBasicMutex(void *that, QBasicMutex * m)
-{
-  QMutexLocker *cthat = (QMutexLocker *)that;
-  auto _o = new(that) QMutexLocker(m);
-}
-
-  // proto:  QMutex * QMutexLocker::mutex();
-QMutex * demth_ZNK12QMutexLocker5mutexEv(void *that)
-{
-  QMutexLocker *cthat = (QMutexLocker *)that;
-  return cthat->mutex();
-}
-
-  // proto:  void QMutexLocker::relock();
-void demth_ZN12QMutexLocker6relockEv(void *that)
-{
-  QMutexLocker *cthat = (QMutexLocker *)that;
-   cthat->relock();
-}
-
-  // proto:  void QMutexLocker::unlock();
-void demth_ZN12QMutexLocker6unlockEv(void *that)
-{
-  QMutexLocker *cthat = (QMutexLocker *)that;
-   cthat->unlock();
-}
-
-  // proto:  void QMutexLocker::~QMutexLocker();
-void demth_ZN12QMutexLockerD0Ev(void *that)
-{
-  QMutexLocker *cthat = (QMutexLocker *)that;
-   cthat->~QMutexLocker();
-}
-
 int QBasicMutex_Class_Size()
 {
   return sizeof(QBasicMutex);
-}
-
-  // proto:  void QBasicMutex::lock();
-void demth_ZN11QBasicMutex4lockEv(void *that)
-{
-  QBasicMutex *cthat = (QBasicMutex *)that;
-   cthat->lock();
-}
-
-  // proto:  bool QBasicMutex::tryLock();
-bool demth_ZN11QBasicMutex7tryLockEv(void *that)
-{
-  QBasicMutex *cthat = (QBasicMutex *)that;
-  return cthat->tryLock();
-}
-
-  // proto:  void QBasicMutex::unlock();
-void demth_ZN11QBasicMutex6unlockEv(void *that)
-{
-  QBasicMutex *cthat = (QBasicMutex *)that;
-   cthat->unlock();
 }
 
 int QMutex_Class_Size()
@@ -95,26 +25,73 @@ int QMutex_Class_Size()
   return sizeof(QMutex);
 }
 
-// QMutex(enum QMutex::RecursionMode)
-QMutex* dector_ZN6QMutexC1ENS_13RecursionModeE(QMutex::RecursionMode mode)
-{
-  // static_assert(sizeof(QMutex) == 32, "tyszerr");
-  QMutex* rthis = new QMutex(mode);
-  return rthis;
-}
-
-// ~QMutex()
-void dedtor_ZN6QMutexD0Ev(QMutex* that)
-{
-  QMutex* rthis = (QMutex*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmutex_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 121, column 21>
+//   // proto:  void QMutexLocker::QMutexLocker(QBasicMutex * m);
+if (false) {
+  auto f = [](QBasicMutex * arg1) {
+    new QMutexLocker(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 157, column 20>
+//   // proto:  QMutex * QMutexLocker::mutex();
+if (false) {
+  auto f = []() {
+    ((QMutexLocker*)0)->mutex();
+  };
+}
+// _ZNK12QMutexLocker5mutexEv mutex()
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 142, column 17>
+//   // proto:  void QMutexLocker::relock();
+if (false) {
+  auto f = []() {
+    ((QMutexLocker*)0)->relock();
+  };
+}
+// _ZN12QMutexLocker6relockEv relock()
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 134, column 17>
+//   // proto:  void QMutexLocker::unlock();
+if (false) {
+  auto f = []() {
+    ((QMutexLocker*)0)->unlock();
+  };
+}
+// _ZN12QMutexLocker6unlockEv unlock()
+//   // proto:  void QMutexLocker::~QMutexLocker();
+if (false) {
+  delete ((QMutexLocker*)0);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 57, column 17>
+//   // proto:  void QBasicMutex::lock();
+if (false) {
+  auto f = []() {
+    ((QBasicMutex*)0)->lock();
+  };
+}
+// _ZN11QBasicMutex4lockEv lock()
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 68, column 10>
+//   // proto:  bool QBasicMutex::tryLock();
+if (false) {
+  auto f = []() {
+    ((QBasicMutex*)0)->tryLock();
+  };
+}
+// _ZN11QBasicMutex7tryLockEv tryLock()
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 62, column 17>
+//   // proto:  void QBasicMutex::unlock();
+if (false) {
+  auto f = []() {
+    ((QBasicMutex*)0)->unlock();
+  };
+}
+// _ZN11QBasicMutex6unlockEv unlock()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

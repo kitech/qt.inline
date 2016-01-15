@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qcolordialog.h
 // dst-file: /src/widgets/qcolordialog.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcolordialog.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QColorDialog_Class_Size()
   return sizeof(QColorDialog);
 }
 
-// QColorDialog(const class QColor &, class QWidget *)
-QColorDialog* dector_ZN12QColorDialogC1ERK6QColorP7QWidget(const QColor & initial, QWidget * parent)
-{
-  // static_assert(sizeof(QColorDialog) == 32, "tyszerr");
-  QColorDialog* rthis = new QColorDialog(initial, parent);
-  return rthis;
-}
-
-// ~QColorDialog()
-void dedtor_ZN12QColorDialogD0Ev(QColorDialog* that)
-{
-  QColorDialog* rthis = (QColorDialog*)that;
-  delete rthis;
-}
-
-// QColorDialog(class QWidget *)
-QColorDialog* dector_ZN12QColorDialogC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QColorDialog) == 32, "tyszerr");
-  QColorDialog* rthis = new QColorDialog(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcolordialog_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

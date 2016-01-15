@@ -1,10 +1,13 @@
+#include <qsizepolicy.h>
+#include <qnamespace.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qlayoutitem.h>
 
 extern "C" {
@@ -19,47 +22,9 @@ int QSpacerItem_Class_Size()
   return sizeof(QSpacerItem);
 }
 
-// ~QSpacerItem()
-void dedtor_ZN11QSpacerItemD0Ev(QSpacerItem* that)
-{
-  QSpacerItem* rthis = (QSpacerItem*)that;
-  delete rthis;
-}
-
-// QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
-QSpacerItem* dector_ZN11QSpacerItemC1EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData)
-{
-  // static_assert(sizeof(QSpacerItem) == 32, "tyszerr");
-  QSpacerItem* rthis = new QSpacerItem(w, h, hData, vData);
-  return rthis;
-}
-
-  // proto:  QSizePolicy QSpacerItem::sizePolicy();
-QSizePolicy* demth_ZNK11QSpacerItem10sizePolicyEv(void *that)
-{
-  QSpacerItem *cthat = (QSpacerItem *)that;
-  auto recret = cthat->sizePolicy();
-  return new QSizePolicy(recret);
-}
-
 int QWidgetItem_Class_Size()
 {
   return sizeof(QWidgetItem);
-}
-
-// ~QWidgetItem()
-void dedtor_ZN11QWidgetItemD0Ev(QWidgetItem* that)
-{
-  QWidgetItem* rthis = (QWidgetItem*)that;
-  delete rthis;
-}
-
-// QWidgetItem(class QWidget *)
-QWidgetItem* dector_ZN11QWidgetItemC1EP7QWidget(QWidget * w)
-{
-  // static_assert(sizeof(QWidgetItem) == 32, "tyszerr");
-  QWidgetItem* rthis = new QWidgetItem(w);
-  return rthis;
 }
 
 int QWidgetItemV2_Class_Size()
@@ -67,26 +32,51 @@ int QWidgetItemV2_Class_Size()
   return sizeof(QWidgetItemV2);
 }
 
-// ~QWidgetItemV2()
-void dedtor_ZN13QWidgetItemV2D0Ev(QWidgetItemV2* that)
-{
-  QWidgetItemV2* rthis = (QWidgetItemV2*)that;
-  delete rthis;
-}
-
-// QWidgetItemV2(class QWidget *)
-QWidgetItemV2* dector_ZN13QWidgetItemV2C1EP7QWidget(QWidget * widget)
-{
-  // static_assert(sizeof(QWidgetItemV2) == 32, "tyszerr");
-  QWidgetItemV2* rthis = new QWidgetItemV2(widget);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qlayoutitem_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 56, column 21>
+//   // proto:  void QLayoutItem::QLayoutItem(Qt::Alignment alignment);
+if (false) {
+  auto f = [](Qt::Alignment arg1) {
+    // new QLayoutItem(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 74, column 19>
+//   // proto:  Qt::Alignment QLayoutItem::alignment();
+if (false) {
+  auto f = []() {
+    ((QLayoutItem*)0)->alignment();
+  };
+}
+// _ZNK11QLayoutItem9alignmentEv alignment()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 105, column 17>
+//   // proto:  QSizePolicy QSpacerItem::sizePolicy();
+if (false) {
+  auto f = []() {
+    ((QSpacerItem*)0)->sizePolicy();
+  };
+}
+// _ZNK11QSpacerItem10sizePolicyEv sizePolicy()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 88, column 5>
+//   // proto:  void QSpacerItem::QSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData);
+if (false) {
+  auto f = [](int arg1, int arg2, QSizePolicy::Policy arg3, QSizePolicy::Policy arg4) {
+    new QSpacerItem(arg1, arg2, arg3, arg4);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 119, column 14>
+//   // proto:  void QWidgetItem::QWidgetItem(QWidget * w);
+if (false) {
+  auto f = [](QWidget * arg1) {
+    new QWidgetItem(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

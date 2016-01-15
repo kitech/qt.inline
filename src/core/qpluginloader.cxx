@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qpluginloader.h
 // dst-file: /src/core/qpluginloader.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qpluginloader.h>
 
 extern "C" {
@@ -14,34 +15,14 @@ int QPluginLoader_Class_Size()
   return sizeof(QPluginLoader);
 }
 
-// QPluginLoader(const class QString &, class QObject *)
-QPluginLoader* dector_ZN13QPluginLoaderC1ERK7QStringP7QObject(const QString & fileName, QObject * parent)
-{
-  // static_assert(sizeof(QPluginLoader) == 32, "tyszerr");
-  QPluginLoader* rthis = new QPluginLoader(fileName, parent);
-  return rthis;
-}
-
-// QPluginLoader(class QObject *)
-QPluginLoader* dector_ZN13QPluginLoaderC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QPluginLoader) == 32, "tyszerr");
-  QPluginLoader* rthis = new QPluginLoader(parent);
-  return rthis;
-}
-
-// ~QPluginLoader()
-void dedtor_ZN13QPluginLoaderD0Ev(QPluginLoader* that)
-{
-  QPluginLoader* rthis = (QPluginLoader*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qpluginloader_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,12 @@
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qjsonvalue.h
 // dst-file: /src/core/qjsonvalue.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qjsonvalue.h>
 
 extern "C" {
@@ -14,33 +16,9 @@ int QJsonValueRefPtr_Class_Size()
   return sizeof(QJsonValueRefPtr);
 }
 
-// QJsonValueRefPtr(class QJsonArray *, int)
-QJsonValueRefPtr* dector_ZN16QJsonValueRefPtrC1EP10QJsonArrayi(QJsonArray * array, int idx)
-{
-  // static_assert(sizeof(QJsonValueRefPtr) == 32, "tyszerr");
-  QJsonValueRefPtr* rthis = new QJsonValueRefPtr(array, idx);
-  return rthis;
-}
-
-// QJsonValueRefPtr(class QJsonObject *, int)
-QJsonValueRefPtr* dector_ZN16QJsonValueRefPtrC1EP11QJsonObjecti(QJsonObject * object, int idx)
-{
-  // static_assert(sizeof(QJsonValueRefPtr) == 32, "tyszerr");
-  QJsonValueRefPtr* rthis = new QJsonValueRefPtr(object, idx);
-  return rthis;
-}
-
 int QJsonValuePtr_Class_Size()
 {
   return sizeof(QJsonValuePtr);
-}
-
-// QJsonValuePtr(const class QJsonValue &)
-QJsonValuePtr* dector_ZN13QJsonValuePtrC1ERK10QJsonValue(const QJsonValue & val)
-{
-  // static_assert(sizeof(QJsonValuePtr) == 32, "tyszerr");
-  QJsonValuePtr* rthis = new QJsonValuePtr(val);
-  return rthis;
 }
 
 int QJsonValue_Class_Size()
@@ -48,290 +26,9 @@ int QJsonValue_Class_Size()
   return sizeof(QJsonValue);
 }
 
-// QJsonValue(enum QJsonValue::Type)
-QJsonValue* dector_ZN10QJsonValueC1ENS_4TypeE(QJsonValue::Type arg1)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(arg1);
-  return rthis;
-}
-
-// QJsonValue(const class QString &)
-QJsonValue* dector_ZN10QJsonValueC1ERK7QString(const QString & s)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(s);
-  return rthis;
-}
-
-// QJsonValue(const class QJsonArray &)
-QJsonValue* dector_ZN10QJsonValueC1ERK10QJsonArray(const QJsonArray & a)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(a);
-  return rthis;
-}
-
-// QJsonValue(class QLatin1String)
-QJsonValue* dector_ZN10QJsonValueC1E13QLatin1String(QLatin1String s)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(s);
-  return rthis;
-}
-
-// QJsonValue(const char *)
-QJsonValue* dector_ZN10QJsonValueC1EPKc(const char * s)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(s);
-  return rthis;
-}
-
-// ~QJsonValue()
-void dedtor_ZN10QJsonValueD0Ev(QJsonValue* that)
-{
-  QJsonValue* rthis = (QJsonValue*)that;
-  delete rthis;
-}
-
-// QJsonValue(double)
-QJsonValue* dector_ZN10QJsonValueC1Ed(double n)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(n);
-  return rthis;
-}
-
-// QJsonValue(_Bool)
-QJsonValue* dector_ZN10QJsonValueC1Eb(bool b)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(b);
-  return rthis;
-}
-
-// QJsonValue(const class QJsonValue &)
-QJsonValue* dector_ZN10QJsonValueC1ERKS_(const QJsonValue & other)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(other);
-  return rthis;
-}
-
-// QJsonValue(int)
-QJsonValue* dector_ZN10QJsonValueC1Ei(int n)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(n);
-  return rthis;
-}
-
-// QJsonValue(const class QJsonObject &)
-QJsonValue* dector_ZN10QJsonValueC1ERK11QJsonObject(const QJsonObject & o)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(o);
-  return rthis;
-}
-
-// QJsonValue(qint64)
-QJsonValue* dector_ZN10QJsonValueC1Ex(long long n)
-{
-  // static_assert(sizeof(QJsonValue) == 32, "tyszerr");
-  QJsonValue* rthis = new QJsonValue(n);
-  return rthis;
-}
-
-  // proto:  bool QJsonValue::isDouble();
-bool demth_ZNK10QJsonValue8isDoubleEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isDouble();
-}
-
-  // proto:  bool QJsonValue::isArray();
-bool demth_ZNK10QJsonValue7isArrayEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isArray();
-}
-
-  // proto:  void QJsonValue::QJsonValue(const char * s);
-void demth_ZN10QJsonValueC1EPKc(void *that, const char * s)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  auto _o = new(that) QJsonValue(s);
-}
-
-  // proto:  bool QJsonValue::isObject();
-bool demth_ZNK10QJsonValue8isObjectEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isObject();
-}
-
-  // proto:  bool QJsonValue::isBool();
-bool demth_ZNK10QJsonValue6isBoolEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isBool();
-}
-
-  // proto:  bool QJsonValue::isUndefined();
-bool demth_ZNK10QJsonValue11isUndefinedEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isUndefined();
-}
-
-  // proto:  bool QJsonValue::isNull();
-bool demth_ZNK10QJsonValue6isNullEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isNull();
-}
-
-  // proto:  bool QJsonValue::isString();
-bool demth_ZNK10QJsonValue8isStringEv(void *that)
-{
-  QJsonValue *cthat = (QJsonValue *)that;
-  return cthat->isString();
-}
-
 int QJsonValueRef_Class_Size()
 {
   return sizeof(QJsonValueRef);
-}
-
-// QJsonValueRef(class QJsonArray *, int)
-QJsonValueRef* dector_ZN13QJsonValueRefC1EP10QJsonArrayi(QJsonArray * array, int idx)
-{
-  // static_assert(sizeof(QJsonValueRef) == 32, "tyszerr");
-  QJsonValueRef* rthis = new QJsonValueRef(array, idx);
-  return rthis;
-}
-
-// QJsonValueRef(class QJsonObject *, int)
-QJsonValueRef* dector_ZN13QJsonValueRefC1EP11QJsonObjecti(QJsonObject * object, int idx)
-{
-  // static_assert(sizeof(QJsonValueRef) == 32, "tyszerr");
-  QJsonValueRef* rthis = new QJsonValueRef(object, idx);
-  return rthis;
-}
-
-  // proto:  bool QJsonValueRef::isBool();
-bool demth_ZNK13QJsonValueRef6isBoolEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isBool();
-}
-
-  // proto:  bool QJsonValueRef::isDouble();
-bool demth_ZNK13QJsonValueRef8isDoubleEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isDouble();
-}
-
-  // proto:  double QJsonValueRef::toDouble();
-double demth_ZNK13QJsonValueRef8toDoubleEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toDouble();
-}
-
-  // proto:  bool QJsonValueRef::toBool(bool defaultValue);
-bool demth_ZNK13QJsonValueRef6toBoolEb(void *that, bool defaultValue)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toBool(defaultValue);
-}
-
-  // proto:  double QJsonValueRef::toDouble(double defaultValue);
-double demth_ZNK13QJsonValueRef8toDoubleEd(void *that, double defaultValue)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toDouble(defaultValue);
-}
-
-  // proto:  bool QJsonValueRef::toBool();
-bool demth_ZNK13QJsonValueRef6toBoolEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toBool();
-}
-
-  // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
-QString* demth_ZNK13QJsonValueRef8toStringERK7QString(void *that, const QString & defaultValue)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto recret = cthat->toString(defaultValue);
-  return new QString(recret);
-}
-
-  // proto:  bool QJsonValueRef::isObject();
-bool demth_ZNK13QJsonValueRef8isObjectEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isObject();
-}
-
-  // proto:  bool QJsonValueRef::isString();
-bool demth_ZNK13QJsonValueRef8isStringEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isString();
-}
-
-  // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
-void demth_ZN13QJsonValueRefC1EP11QJsonObjecti(void *that, QJsonObject * object, int idx)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto _o = new(that) QJsonValueRef(object, idx);
-}
-
-  // proto:  QString QJsonValueRef::toString();
-QString* demth_ZNK13QJsonValueRef8toStringEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  auto recret = cthat->toString();
-  return new QString(recret);
-}
-
-  // proto:  int QJsonValueRef::toInt(int defaultValue);
-int demth_ZNK13QJsonValueRef5toIntEi(void *that, int defaultValue)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toInt(defaultValue);
-}
-
-  // proto:  bool QJsonValueRef::isArray();
-bool demth_ZNK13QJsonValueRef7isArrayEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isArray();
-}
-
-  // proto:  bool QJsonValueRef::isNull();
-bool demth_ZNK13QJsonValueRef6isNullEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isNull();
-}
-
-  // proto:  int QJsonValueRef::toInt();
-int demth_ZNK13QJsonValueRef5toIntEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->toInt();
-}
-
-  // proto:  bool QJsonValueRef::isUndefined();
-bool demth_ZNK13QJsonValueRef11isUndefinedEv(void *that)
-{
-  QJsonValueRef *cthat = (QJsonValueRef *)that;
-  return cthat->isUndefined();
 }
 
 }; // <= extern "C" block end
@@ -339,6 +36,235 @@ bool demth_ZNK13QJsonValueRef11isUndefinedEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qjsonvalue_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 203, column 5>
+//   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonArray * array, int idx);
+if (false) {
+  auto f = [](QJsonArray * arg1, int arg2) {
+    new QJsonValueRefPtr(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 205, column 5>
+//   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonObject * object, int idx);
+if (false) {
+  auto f = [](QJsonObject * arg1, int arg2) {
+    new QJsonValueRefPtr(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 192, column 14>
+//   // proto:  void QJsonValuePtr::QJsonValuePtr(const QJsonValue & val);
+if (false) {
+  auto f = [](const QJsonValue & arg1) {
+    new QJsonValuePtr(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 95, column 17>
+//   // proto:  bool QJsonValue::isDouble();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isDouble();
+  };
+}
+// _ZNK10QJsonValue8isDoubleEv isDouble()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 97, column 17>
+//   // proto:  bool QJsonValue::isArray();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isArray();
+  };
+}
+// _ZNK10QJsonValue7isArrayEv isArray()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 78, column 31>
+//   // proto:  void QJsonValue::QJsonValue(const char * s);
+if (false) {
+  auto f = [](const char * arg1) {
+    new QJsonValue(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 98, column 17>
+//   // proto:  bool QJsonValue::isObject();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isObject();
+  };
+}
+// _ZNK10QJsonValue8isObjectEv isObject()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 94, column 17>
+//   // proto:  bool QJsonValue::isBool();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isBool();
+  };
+}
+// _ZNK10QJsonValue6isBoolEv isBool()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 99, column 17>
+//   // proto:  bool QJsonValue::isUndefined();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isUndefined();
+  };
+}
+// _ZNK10QJsonValue11isUndefinedEv isUndefined()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 93, column 17>
+//   // proto:  bool QJsonValue::isNull();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isNull();
+  };
+}
+// _ZNK10QJsonValue6isNullEv isNull()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 96, column 17>
+//   // proto:  bool QJsonValue::isString();
+if (false) {
+  auto f = []() {
+    ((QJsonValue*)0)->isString();
+  };
+}
+// _ZNK10QJsonValue8isStringEv isString()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 152, column 17>
+//   // proto:  bool QJsonValueRef::isBool();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isBool();
+  };
+}
+// _ZNK13QJsonValueRef6isBoolEv isBool()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 153, column 17>
+//   // proto:  bool QJsonValueRef::isDouble();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isDouble();
+  };
+}
+// _ZNK13QJsonValueRef8isDoubleEv isDouble()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 161, column 19>
+//   // proto:  double QJsonValueRef::toDouble();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->toDouble();
+  };
+}
+// _ZNK13QJsonValueRef8toDoubleEv toDouble()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 167, column 17>
+//   // proto:  bool QJsonValueRef::toBool(bool defaultValue);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QJsonValueRef*)0)->toBool(arg1);
+  };
+}
+// _ZNK13QJsonValueRef6toBoolEb toBool(_Bool)
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 169, column 19>
+//   // proto:  double QJsonValueRef::toDouble(double defaultValue);
+if (false) {
+  auto f = [](double arg1) {
+    ((QJsonValueRef*)0)->toDouble(arg1);
+  };
+}
+// _ZNK13QJsonValueRef8toDoubleEd toDouble(double)
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 159, column 17>
+//   // proto:  bool QJsonValueRef::toBool();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->toBool();
+  };
+}
+// _ZNK13QJsonValueRef6toBoolEv toBool()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 170, column 20>
+//   // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QJsonValueRef*)0)->toString(arg1);
+  };
+}
+// _ZNK13QJsonValueRef8toStringERK7QString toString(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 156, column 17>
+//   // proto:  bool QJsonValueRef::isObject();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isObject();
+  };
+}
+// _ZNK13QJsonValueRef8isObjectEv isObject()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 140, column 5>
+//   // proto:  void QJsonValueRef::QJsonValueRef(QJsonArray * array, int idx);
+if (false) {
+  auto f = [](QJsonArray * arg1, int arg2) {
+    new QJsonValueRef(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 154, column 17>
+//   // proto:  bool QJsonValueRef::isString();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isString();
+  };
+}
+// _ZNK13QJsonValueRef8isStringEv isString()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 142, column 5>
+//   // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
+if (false) {
+  auto f = [](QJsonObject * arg1, int arg2) {
+    new QJsonValueRef(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 162, column 20>
+//   // proto:  QString QJsonValueRef::toString();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->toString();
+  };
+}
+// _ZNK13QJsonValueRef8toStringEv toString()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 168, column 16>
+//   // proto:  int QJsonValueRef::toInt(int defaultValue);
+if (false) {
+  auto f = [](int arg1) {
+    ((QJsonValueRef*)0)->toInt(arg1);
+  };
+}
+// _ZNK13QJsonValueRef5toIntEi toInt(int)
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 155, column 17>
+//   // proto:  bool QJsonValueRef::isArray();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isArray();
+  };
+}
+// _ZNK13QJsonValueRef7isArrayEv isArray()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 151, column 17>
+//   // proto:  bool QJsonValueRef::isNull();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isNull();
+  };
+}
+// _ZNK13QJsonValueRef6isNullEv isNull()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 150, column 29>
+//   // proto:  QJsonValue::Type QJsonValueRef::type();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->type();
+  };
+}
+// _ZNK13QJsonValueRef4typeEv type()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 160, column 16>
+//   // proto:  int QJsonValueRef::toInt();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->toInt();
+  };
+}
+// _ZNK13QJsonValueRef5toIntEv toInt()
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 157, column 17>
+//   // proto:  bool QJsonValueRef::isUndefined();
+if (false) {
+  auto f = []() {
+    ((QJsonValueRef*)0)->isUndefined();
+  };
+}
+// _ZNK13QJsonValueRef11isUndefinedEv isUndefined()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

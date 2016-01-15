@@ -1,10 +1,12 @@
+#include <qtextformat.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtexttable.h>
 
 extern "C" {
@@ -14,62 +16,9 @@ int QTextTableCell_Class_Size()
   return sizeof(QTextTableCell);
 }
 
-// QTextTableCell(const class QTextTableCell &)
-QTextTableCell* dector_ZN14QTextTableCellC1ERKS_(const QTextTableCell & o)
-{
-  // static_assert(sizeof(QTextTableCell) == 32, "tyszerr");
-  QTextTableCell* rthis = new QTextTableCell(o);
-  return rthis;
-}
-
-// ~QTextTableCell()
-void dedtor_ZN14QTextTableCellD0Ev(QTextTableCell* that)
-{
-  QTextTableCell* rthis = (QTextTableCell*)that;
-  delete rthis;
-}
-
-// QTextTableCell()
-QTextTableCell* dector_ZN14QTextTableCellC1Ev()
-{
-  // static_assert(sizeof(QTextTableCell) == 32, "tyszerr");
-  QTextTableCell* rthis = new QTextTableCell();
-  return rthis;
-}
-
-  // proto:  bool QTextTableCell::isValid();
-bool demth_ZNK14QTextTableCell7isValidEv(void *that)
-{
-  QTextTableCell *cthat = (QTextTableCell *)that;
-  return cthat->isValid();
-}
-
 int QTextTable_Class_Size()
 {
   return sizeof(QTextTable);
-}
-
-// ~QTextTable()
-void dedtor_ZN10QTextTableD0Ev(QTextTable* that)
-{
-  QTextTable* rthis = (QTextTable*)that;
-  delete rthis;
-}
-
-// QTextTable(class QTextDocument *)
-QTextTable* dector_ZN10QTextTableC1EP13QTextDocument(QTextDocument * doc)
-{
-  // static_assert(sizeof(QTextTable) == 32, "tyszerr");
-  QTextTable* rthis = new QTextTable(doc);
-  return rthis;
-}
-
-  // proto:  QTextTableFormat QTextTable::format();
-QTextTableFormat* demth_ZNK10QTextTable6formatEv(void *that)
-{
-  QTextTable *cthat = (QTextTable *)that;
-  auto recret = cthat->format();
-  return new QTextTableFormat(recret);
 }
 
 }; // <= extern "C" block end
@@ -77,6 +26,39 @@ QTextTableFormat* demth_ZNK10QTextTable6formatEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qtexttable_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 53, column 5>
+//   // proto:  void QTextTableCell::QTextTableCell(const QTextTableCell & o);
+if (false) {
+  auto f = [](const QTextTableCell & arg1) {
+    new QTextTableCell(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 66, column 17>
+//   // proto:  bool QTextTableCell::isValid();
+if (false) {
+  auto f = []() {
+    ((QTextTableCell*)0)->isValid();
+  };
+}
+// _ZNK14QTextTableCell7isValidEv isValid()
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 51, column 5>
+//   // proto:  void QTextTableCell::QTextTableCell();
+if (false) {
+  auto f = []() {
+    new QTextTableCell();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 122, column 22>
+//   // proto:  QTextTableFormat QTextTable::format();
+if (false) {
+  auto f = []() {
+    ((QTextTable*)0)->format();
+  };
+}
+// _ZNK10QTextTable6formatEv format()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

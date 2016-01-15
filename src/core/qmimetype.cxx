@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qmimetype.h
 // dst-file: /src/core/qmimetype.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qmimetype.h>
 
 extern "C" {
@@ -14,49 +15,22 @@ int QMimeType_Class_Size()
   return sizeof(QMimeType);
 }
 
-// ~QMimeType()
-void dedtor_ZN9QMimeTypeD0Ev(QMimeType* that)
-{
-  QMimeType* rthis = (QMimeType*)that;
-  delete rthis;
-}
-
-// QMimeType(const class QMimeType &)
-QMimeType* dector_ZN9QMimeTypeC1ERKS_(const QMimeType & other)
-{
-  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
-  QMimeType* rthis = new QMimeType(other);
-  return rthis;
-}
-
-// QMimeType(const class QMimeTypePrivate &)
-QMimeType* dector_ZN9QMimeTypeC1ERK16QMimeTypePrivate(const QMimeTypePrivate & dd)
-{
-  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
-  QMimeType* rthis = new QMimeType(dd);
-  return rthis;
-}
-
-// QMimeType()
-QMimeType* dector_ZN9QMimeTypeC1Ev()
-{
-  // static_assert(sizeof(QMimeType) == 32, "tyszerr");
-  QMimeType* rthis = new QMimeType();
-  return rthis;
-}
-
-  // proto:  void QMimeType::swap(QMimeType & other);
-void demth_ZN9QMimeType4swapERS_(void *that, QMimeType & other)
-{
-  QMimeType *cthat = (QMimeType *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qmimetype_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 64, column 10>
+//   // proto:  void QMimeType::swap(QMimeType & other);
+if (false) {
+  auto f = [](QMimeType & arg1) {
+    ((QMimeType*)0)->swap(arg1);
+  };
+}
+// _ZN9QMimeType4swapERS_ swap(class QMimeType &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

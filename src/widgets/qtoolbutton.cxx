@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtoolbutton.h
 // dst-file: /src/widgets/qtoolbutton.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtoolbutton.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QToolButton_Class_Size()
   return sizeof(QToolButton);
 }
 
-// ~QToolButton()
-void dedtor_ZN11QToolButtonD0Ev(QToolButton* that)
-{
-  QToolButton* rthis = (QToolButton*)that;
-  delete rthis;
-}
-
-// QToolButton(class QWidget *)
-QToolButton* dector_ZN11QToolButtonC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QToolButton) == 32, "tyszerr");
-  QToolButton* rthis = new QToolButton(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtoolbutton_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

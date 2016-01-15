@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qaction.h
 // dst-file: /src/widgets/qaction.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qaction.h>
 
 extern "C" {
@@ -14,63 +15,38 @@ int QAction_Class_Size()
   return sizeof(QAction);
 }
 
-// QAction(const class QString &, class QObject *)
-QAction* dector_ZN7QActionC1ERK7QStringP7QObject(const QString & text, QObject * parent)
-{
-  // static_assert(sizeof(QAction) == 32, "tyszerr");
-  QAction* rthis = new QAction(text, parent);
-  return rthis;
-}
-
-// ~QAction()
-void dedtor_ZN7QActionD0Ev(QAction* that)
-{
-  QAction* rthis = (QAction*)that;
-  delete rthis;
-}
-
-// QAction(class QObject *)
-QAction* dector_ZN7QActionC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QAction) == 32, "tyszerr");
-  QAction* rthis = new QAction(parent);
-  return rthis;
-}
-
-// QAction(const class QIcon &, const class QString &, class QObject *)
-QAction* dector_ZN7QActionC1ERK5QIconRK7QStringP7QObject(const QIcon & icon, const QString & text, QObject * parent)
-{
-  // static_assert(sizeof(QAction) == 32, "tyszerr");
-  QAction* rthis = new QAction(icon, text, parent);
-  return rthis;
-}
-
-  // proto:  void QAction::trigger();
-void demth_ZN7QAction7triggerEv(void *that)
-{
-  QAction *cthat = (QAction *)that;
-   cthat->trigger();
-}
-
-  // proto:  void QAction::setDisabled(bool b);
-void demth_ZN7QAction11setDisabledEb(void *that, bool b)
-{
-  QAction *cthat = (QAction *)that;
-   cthat->setDisabled(b);
-}
-
-  // proto:  void QAction::hover();
-void demth_ZN7QAction5hoverEv(void *that)
-{
-  QAction *cthat = (QAction *)that;
-   cthat->hover();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qaction_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qaction.h', line 177, column 10>
+//   // proto:  void QAction::trigger();
+if (false) {
+  auto f = []() {
+    ((QAction*)0)->trigger();
+  };
+}
+// _ZN7QAction7triggerEv trigger()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qaction.h', line 182, column 17>
+//   // proto:  void QAction::setDisabled(bool b);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QAction*)0)->setDisabled(arg1);
+  };
+}
+// _ZN7QAction11setDisabledEb setDisabled(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qaction.h', line 178, column 10>
+//   // proto:  void QAction::hover();
+if (false) {
+  auto f = []() {
+    ((QAction*)0)->hover();
+  };
+}
+// _ZN7QAction5hoverEv hover()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

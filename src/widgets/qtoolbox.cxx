@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qtoolbox.h
 // dst-file: /src/widgets/qtoolbox.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtoolbox.h>
 
 extern "C" {
@@ -14,47 +15,38 @@ int QToolBox_Class_Size()
   return sizeof(QToolBox);
 }
 
-// ~QToolBox()
-void dedtor_ZN8QToolBoxD0Ev(QToolBox* that)
-{
-  QToolBox* rthis = (QToolBox*)that;
-  delete rthis;
-}
-
-// QToolBox(class QWidget *, Qt::WindowFlags)
-QToolBox* dector_ZN8QToolBoxC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, Qt::WindowFlags f)
-{
-  // static_assert(sizeof(QToolBox) == 32, "tyszerr");
-  QToolBox* rthis = new QToolBox(parent, f);
-  return rthis;
-}
-
-  // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QString & text);
-int demth_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *that, int index, QWidget * widget, const QString & text)
-{
-  QToolBox *cthat = (QToolBox *)that;
-  return cthat->insertItem(index, widget, text);
-}
-
-  // proto:  int QToolBox::addItem(QWidget * widget, const QString & text);
-int demth_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *that, QWidget * widget, const QString & text)
-{
-  QToolBox *cthat = (QToolBox *)that;
-  return cthat->addItem(widget, text);
-}
-
-  // proto:  int QToolBox::addItem(QWidget * widget, const QIcon & icon, const QString & text);
-int demth_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *that, QWidget * widget, const QIcon & icon, const QString & text)
-{
-  QToolBox *cthat = (QToolBox *)that;
-  return cthat->addItem(widget, icon, text);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtoolbox_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 59, column 9>
+//   // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QString & text);
+if (false) {
+  auto f = [](int arg1, QWidget * arg2, const QString & arg3) {
+    ((QToolBox*)0)->insertItem(arg1, arg2, arg3);
+  };
+}
+// _ZN8QToolBox10insertItemEiP7QWidgetRK7QString insertItem(int, class QWidget *, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 57, column 9>
+//   // proto:  int QToolBox::addItem(QWidget * widget, const QString & text);
+if (false) {
+  auto f = [](QWidget * arg1, const QString & arg2) {
+    ((QToolBox*)0)->addItem(arg1, arg2);
+  };
+}
+// _ZN8QToolBox7addItemEP7QWidgetRK7QString addItem(class QWidget *, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 58, column 9>
+//   // proto:  int QToolBox::addItem(QWidget * widget, const QIcon & icon, const QString & text);
+if (false) {
+  auto f = [](QWidget * arg1, const QIcon & arg2, const QString & arg3) {
+    ((QToolBox*)0)->addItem(arg1, arg2, arg3);
+  };
+}
+// _ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString addItem(class QWidget *, const class QIcon &, const class QString &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qlibrary.h>
 
 extern "C" {
@@ -14,50 +15,14 @@ int QLibrary_Class_Size()
   return sizeof(QLibrary);
 }
 
-// QLibrary(const class QString &, const class QString &, class QObject *)
-QLibrary* dector_ZN8QLibraryC1ERK7QStringS2_P7QObject(const QString & fileName, const QString & version, QObject * parent)
-{
-  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
-  QLibrary* rthis = new QLibrary(fileName, version, parent);
-  return rthis;
-}
-
-// QLibrary(class QObject *)
-QLibrary* dector_ZN8QLibraryC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
-  QLibrary* rthis = new QLibrary(parent);
-  return rthis;
-}
-
-// QLibrary(const class QString &, class QObject *)
-QLibrary* dector_ZN8QLibraryC1ERK7QStringP7QObject(const QString & fileName, QObject * parent)
-{
-  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
-  QLibrary* rthis = new QLibrary(fileName, parent);
-  return rthis;
-}
-
-// QLibrary(const class QString &, int, class QObject *)
-QLibrary* dector_ZN8QLibraryC1ERK7QStringiP7QObject(const QString & fileName, int verNum, QObject * parent)
-{
-  // static_assert(sizeof(QLibrary) == 32, "tyszerr");
-  QLibrary* rthis = new QLibrary(fileName, verNum, parent);
-  return rthis;
-}
-
-// ~QLibrary()
-void dedtor_ZN8QLibraryD0Ev(QLibrary* that)
-{
-  QLibrary* rthis = (QLibrary*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qlibrary_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

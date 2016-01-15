@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qcommandlineparser.h
 // dst-file: /src/core/qcommandlineparser.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcommandlineparser.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QCommandLineParser_Class_Size()
   return sizeof(QCommandLineParser);
 }
 
-// ~QCommandLineParser()
-void dedtor_ZN18QCommandLineParserD0Ev(QCommandLineParser* that)
-{
-  QCommandLineParser* rthis = (QCommandLineParser*)that;
-  delete rthis;
-}
-
-// QCommandLineParser()
-QCommandLineParser* dector_ZN18QCommandLineParserC1Ev()
-{
-  // static_assert(sizeof(QCommandLineParser) == 32, "tyszerr");
-  QCommandLineParser* rthis = new QCommandLineParser();
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcommandlineparser_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

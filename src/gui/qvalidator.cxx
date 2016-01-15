@@ -1,10 +1,12 @@
+#include <qregexp.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qvalidator.h>
 
 extern "C" {
@@ -14,118 +16,14 @@ int QRegularExpressionValidator_Class_Size()
   return sizeof(QRegularExpressionValidator);
 }
 
-// ~QRegularExpressionValidator()
-void dedtor_ZN27QRegularExpressionValidatorD0Ev(QRegularExpressionValidator* that)
-{
-  QRegularExpressionValidator* rthis = (QRegularExpressionValidator*)that;
-  delete rthis;
-}
-
-// QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
-QRegularExpressionValidator* dector_ZN27QRegularExpressionValidatorC1ERK18QRegularExpressionP7QObject(const QRegularExpression & re, QObject * parent)
-{
-  // static_assert(sizeof(QRegularExpressionValidator) == 32, "tyszerr");
-  QRegularExpressionValidator* rthis = new QRegularExpressionValidator(re, parent);
-  return rthis;
-}
-
-// QRegularExpressionValidator(class QObject *)
-QRegularExpressionValidator* dector_ZN27QRegularExpressionValidatorC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QRegularExpressionValidator) == 32, "tyszerr");
-  QRegularExpressionValidator* rthis = new QRegularExpressionValidator(parent);
-  return rthis;
-}
-
 int QDoubleValidator_Class_Size()
 {
   return sizeof(QDoubleValidator);
 }
 
-// ~QDoubleValidator()
-void dedtor_ZN16QDoubleValidatorD0Ev(QDoubleValidator* that)
-{
-  QDoubleValidator* rthis = (QDoubleValidator*)that;
-  delete rthis;
-}
-
-// QDoubleValidator(class QObject *)
-QDoubleValidator* dector_ZN16QDoubleValidatorC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QDoubleValidator) == 32, "tyszerr");
-  QDoubleValidator* rthis = new QDoubleValidator(parent);
-  return rthis;
-}
-
-// QDoubleValidator(double, double, int, class QObject *)
-QDoubleValidator* dector_ZN16QDoubleValidatorC1EddiP7QObject(double bottom, double top, int decimals, QObject * parent)
-{
-  // static_assert(sizeof(QDoubleValidator) == 32, "tyszerr");
-  QDoubleValidator* rthis = new QDoubleValidator(bottom, top, decimals, parent);
-  return rthis;
-}
-
-  // proto:  int QDoubleValidator::decimals();
-int demth_ZNK16QDoubleValidator8decimalsEv(void *that)
-{
-  QDoubleValidator *cthat = (QDoubleValidator *)that;
-  return cthat->decimals();
-}
-
-  // proto:  double QDoubleValidator::top();
-double demth_ZNK16QDoubleValidator3topEv(void *that)
-{
-  QDoubleValidator *cthat = (QDoubleValidator *)that;
-  return cthat->top();
-}
-
-  // proto:  double QDoubleValidator::bottom();
-double demth_ZNK16QDoubleValidator6bottomEv(void *that)
-{
-  QDoubleValidator *cthat = (QDoubleValidator *)that;
-  return cthat->bottom();
-}
-
 int QIntValidator_Class_Size()
 {
   return sizeof(QIntValidator);
-}
-
-// QIntValidator(class QObject *)
-QIntValidator* dector_ZN13QIntValidatorC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QIntValidator) == 32, "tyszerr");
-  QIntValidator* rthis = new QIntValidator(parent);
-  return rthis;
-}
-
-// ~QIntValidator()
-void dedtor_ZN13QIntValidatorD0Ev(QIntValidator* that)
-{
-  QIntValidator* rthis = (QIntValidator*)that;
-  delete rthis;
-}
-
-// QIntValidator(int, int, class QObject *)
-QIntValidator* dector_ZN13QIntValidatorC1EiiP7QObject(int bottom, int top, QObject * parent)
-{
-  // static_assert(sizeof(QIntValidator) == 32, "tyszerr");
-  QIntValidator* rthis = new QIntValidator(bottom, top, parent);
-  return rthis;
-}
-
-  // proto:  int QIntValidator::top();
-int demth_ZNK13QIntValidator3topEv(void *that)
-{
-  QIntValidator *cthat = (QIntValidator *)that;
-  return cthat->top();
-}
-
-  // proto:  int QIntValidator::bottom();
-int demth_ZNK13QIntValidator6bottomEv(void *that)
-{
-  QIntValidator *cthat = (QIntValidator *)that;
-  return cthat->bottom();
 }
 
 int QValidator_Class_Size()
@@ -138,41 +36,62 @@ int QRegExpValidator_Class_Size()
   return sizeof(QRegExpValidator);
 }
 
-// ~QRegExpValidator()
-void dedtor_ZN16QRegExpValidatorD0Ev(QRegExpValidator* that)
-{
-  QRegExpValidator* rthis = (QRegExpValidator*)that;
-  delete rthis;
-}
-
-// QRegExpValidator(const class QRegExp &, class QObject *)
-QRegExpValidator* dector_ZN16QRegExpValidatorC1ERK7QRegExpP7QObject(const QRegExp & rx, QObject * parent)
-{
-  // static_assert(sizeof(QRegExpValidator) == 32, "tyszerr");
-  QRegExpValidator* rthis = new QRegExpValidator(rx, parent);
-  return rthis;
-}
-
-// QRegExpValidator(class QObject *)
-QRegExpValidator* dector_ZN16QRegExpValidatorC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QRegExpValidator) == 32, "tyszerr");
-  QRegExpValidator* rthis = new QRegExpValidator(parent);
-  return rthis;
-}
-
-  // proto:  const QRegExp & QRegExpValidator::regExp();
-const QRegExp * demth_ZNK16QRegExpValidator6regExpEv(void *that)
-{
-  QRegExpValidator *cthat = (QRegExpValidator *)that;
-  return &cthat->regExp();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qvalidator_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 145, column 9>
+//   // proto:  int QDoubleValidator::decimals();
+if (false) {
+  auto f = []() {
+    ((QDoubleValidator*)0)->decimals();
+  };
+}
+// _ZNK16QDoubleValidator8decimalsEv decimals()
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 144, column 12>
+//   // proto:  double QDoubleValidator::top();
+if (false) {
+  auto f = []() {
+    ((QDoubleValidator*)0)->top();
+  };
+}
+// _ZNK16QDoubleValidator3topEv top()
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 143, column 12>
+//   // proto:  double QDoubleValidator::bottom();
+if (false) {
+  auto f = []() {
+    ((QDoubleValidator*)0)->bottom();
+  };
+}
+// _ZNK16QDoubleValidator6bottomEv bottom()
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 101, column 9>
+//   // proto:  int QIntValidator::top();
+if (false) {
+  auto f = []() {
+    ((QIntValidator*)0)->top();
+  };
+}
+// _ZNK13QIntValidator3topEv top()
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 100, column 9>
+//   // proto:  int QIntValidator::bottom();
+if (false) {
+  auto f = []() {
+    ((QIntValidator*)0)->bottom();
+  };
+}
+// _ZNK13QIntValidator6bottomEv bottom()
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 177, column 20>
+//   // proto:  const QRegExp & QRegExpValidator::regExp();
+if (false) {
+  auto f = []() {
+    ((QRegExpValidator*)0)->regExp();
+  };
+}
+// _ZNK16QRegExpValidator6regExpEv regExp()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

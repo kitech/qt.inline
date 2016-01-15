@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qsequentialanimationgroup.h
 // dst-file: /src/core/qsequentialanimationgroup.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qsequentialanimationgroup.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QSequentialAnimationGroup_Class_Size()
   return sizeof(QSequentialAnimationGroup);
 }
 
-// QSequentialAnimationGroup(class QObject *)
-QSequentialAnimationGroup* dector_ZN25QSequentialAnimationGroupC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QSequentialAnimationGroup) == 32, "tyszerr");
-  QSequentialAnimationGroup* rthis = new QSequentialAnimationGroup(parent);
-  return rthis;
-}
-
-// ~QSequentialAnimationGroup()
-void dedtor_ZN25QSequentialAnimationGroupD0Ev(QSequentialAnimationGroup* that)
-{
-  QSequentialAnimationGroup* rthis = (QSequentialAnimationGroup*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qsequentialanimationgroup_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

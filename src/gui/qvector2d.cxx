@@ -1,10 +1,12 @@
+#include <qpoint.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qvector2d.h
 // dst-file: /src/gui/qvector2d.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qvector2d.h>
 
 extern "C" {
@@ -14,118 +16,105 @@ int QVector2D_Class_Size()
   return sizeof(QVector2D);
 }
 
-// QVector2D(const class QVector4D &)
-QVector2D* dector_ZN9QVector2DC1ERK9QVector4D(const QVector4D & vector)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(vector);
-  return rthis;
-}
-
-// QVector2D(const class QPoint &)
-QVector2D* dector_ZN9QVector2DC1ERK6QPoint(const QPoint & point)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(point);
-  return rthis;
-}
-
-// QVector2D(float, float)
-QVector2D* dector_ZN9QVector2DC1Eff(float xpos, float ypos)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(xpos, ypos);
-  return rthis;
-}
-
-// QVector2D()
-QVector2D* dector_ZN9QVector2DC1Ev()
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D();
-  return rthis;
-}
-
-// QVector2D(const class QVector3D &)
-QVector2D* dector_ZN9QVector2DC1ERK9QVector3D(const QVector3D & vector)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(vector);
-  return rthis;
-}
-
-// QVector2D(const class QPointF &)
-QVector2D* dector_ZN9QVector2DC1ERK7QPointF(const QPointF & point)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(point);
-  return rthis;
-}
-
-// QVector2D(Qt::Initialization)
-QVector2D* dector_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg1)
-{
-  // static_assert(sizeof(QVector2D) == 32, "tyszerr");
-  QVector2D* rthis = new QVector2D(arg1);
-  return rthis;
-}
-
-  // proto:  QPointF QVector2D::toPointF();
-QPointF* demth_ZNK9QVector2D8toPointFEv(void *that)
-{
-  QVector2D *cthat = (QVector2D *)that;
-  auto recret = cthat->toPointF();
-  return new QPointF(recret);
-}
-
-  // proto:  void QVector2D::setX(float x);
-void demth_ZN9QVector2D4setXEf(void *that, float x)
-{
-  QVector2D *cthat = (QVector2D *)that;
-   cthat->setX(x);
-}
-
-  // proto:  QPoint QVector2D::toPoint();
-QPoint* demth_ZNK9QVector2D7toPointEv(void *that)
-{
-  QVector2D *cthat = (QVector2D *)that;
-  auto recret = cthat->toPoint();
-  return new QPoint(recret);
-}
-
-  // proto:  void QVector2D::setY(float y);
-void demth_ZN9QVector2D4setYEf(void *that, float y)
-{
-  QVector2D *cthat = (QVector2D *)that;
-   cthat->setY(y);
-}
-
-  // proto:  bool QVector2D::isNull();
-bool demth_ZNK9QVector2D6isNullEv(void *that)
-{
-  QVector2D *cthat = (QVector2D *)that;
-  return cthat->isNull();
-}
-
-  // proto:  float QVector2D::y();
-float demth_ZNK9QVector2D1yEv(void *that)
-{
-  QVector2D *cthat = (QVector2D *)that;
-  return cthat->y();
-}
-
-  // proto:  float QVector2D::x();
-float demth_ZNK9QVector2D1xEv(void *that)
-{
-  QVector2D *cthat = (QVector2D *)that;
-  return cthat->x();
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qvector2d_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 114, column 30>
+//   // proto:  QPointF QVector2D::toPointF();
+if (false) {
+  auto f = []() {
+    ((QVector2D*)0)->toPointF();
+  };
+}
+// _ZNK9QVector2D8toPointFEv toPointF()
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 69, column 10>
+//   // proto:  void QVector2D::setX(float x);
+if (false) {
+  auto f = [](float arg1) {
+    ((QVector2D*)0)->setX(arg1);
+  };
+}
+// _ZN9QVector2D4setXEf setX(float)
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 113, column 29>
+//   // proto:  QPoint QVector2D::toPoint();
+if (false) {
+  auto f = []() {
+    ((QVector2D*)0)->toPoint();
+  };
+}
+// _ZNK9QVector2D7toPointEv toPoint()
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 70, column 10>
+//   // proto:  void QVector2D::setY(float y);
+if (false) {
+  auto f = [](float arg1) {
+    ((QVector2D*)0)->setY(arg1);
+  };
+}
+// _ZN9QVector2D4setYEf setY(float)
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 55, column 31>
+//   // proto:  void QVector2D::QVector2D(const QPoint & point);
+if (false) {
+  auto f = [](const QPoint & arg1) {
+    new QVector2D(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 54, column 22>
+//   // proto:  void QVector2D::QVector2D(float xpos, float ypos);
+if (false) {
+  auto f = [](float arg1, float arg2) {
+    new QVector2D(arg1, arg2);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 64, column 10>
+//   // proto:  bool QVector2D::isNull();
+if (false) {
+  auto f = []() {
+    ((QVector2D*)0)->isNull();
+  };
+}
+// _ZNK9QVector2D6isNullEv isNull()
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 52, column 22>
+//   // proto:  void QVector2D::QVector2D();
+if (false) {
+  auto f = []() {
+    new QVector2D();
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 67, column 28>
+//   // proto:  float QVector2D::y();
+if (false) {
+  auto f = []() {
+    ((QVector2D*)0)->y();
+  };
+}
+// _ZNK9QVector2D1yEv y()
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 66, column 28>
+//   // proto:  float QVector2D::x();
+if (false) {
+  auto f = []() {
+    ((QVector2D*)0)->x();
+  };
+}
+// _ZNK9QVector2D1xEv x()
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 56, column 31>
+//   // proto:  void QVector2D::QVector2D(const QPointF & point);
+if (false) {
+  auto f = [](const QPointF & arg1) {
+    new QVector2D(arg1);
+  };
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 53, column 14>
+//   // proto:  void QVector2D::QVector2D(Qt::Initialization );
+if (false) {
+  auto f = [](Qt::Initialization arg1) {
+    new QVector2D(arg1);
+  };
+}
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

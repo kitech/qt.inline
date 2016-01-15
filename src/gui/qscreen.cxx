@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qscreen.h
 // dst-file: /src/gui/qscreen.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qscreen.h>
 
 extern "C" {
@@ -14,18 +15,14 @@ int QScreen_Class_Size()
   return sizeof(QScreen);
 }
 
-// ~QScreen()
-void dedtor_ZN7QScreenD0Ev(QScreen* that)
-{
-  QScreen* rthis = (QScreen*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qscreen_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qidentityproxymodel.h
 // dst-file: /src/core/qidentityproxymodel.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qidentityproxymodel.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QIdentityProxyModel_Class_Size()
   return sizeof(QIdentityProxyModel);
 }
 
-// ~QIdentityProxyModel()
-void dedtor_ZN19QIdentityProxyModelD0Ev(QIdentityProxyModel* that)
-{
-  QIdentityProxyModel* rthis = (QIdentityProxyModel*)that;
-  delete rthis;
-}
-
-// QIdentityProxyModel(class QObject *)
-QIdentityProxyModel* dector_ZN19QIdentityProxyModelC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QIdentityProxyModel) == 32, "tyszerr");
-  QIdentityProxyModel* rthis = new QIdentityProxyModel(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qidentityproxymodel_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

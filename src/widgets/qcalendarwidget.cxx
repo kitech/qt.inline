@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qcalendarwidget.h
 // dst-file: /src/widgets/qcalendarwidget.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qcalendarwidget.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QCalendarWidget_Class_Size()
   return sizeof(QCalendarWidget);
 }
 
-// ~QCalendarWidget()
-void dedtor_ZN15QCalendarWidgetD0Ev(QCalendarWidget* that)
-{
-  QCalendarWidget* rthis = (QCalendarWidget*)that;
-  delete rthis;
-}
-
-// QCalendarWidget(class QWidget *)
-QCalendarWidget* dector_ZN15QCalendarWidgetC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QCalendarWidget) == 32, "tyszerr");
-  QCalendarWidget* rthis = new QCalendarWidget(parent);
-  return rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qcalendarwidget_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

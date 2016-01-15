@@ -1,10 +1,13 @@
+#include <qnamespace.h>
+#include <qglobal.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qtextoption.h
 // dst-file: /src/gui/qtextoption.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qtextoption.h>
 
 extern "C" {
@@ -14,98 +17,110 @@ int QTextOption_Class_Size()
   return sizeof(QTextOption);
 }
 
-// QTextOption(const class QTextOption &)
-QTextOption* dector_ZN11QTextOptionC1ERKS_(const QTextOption & o)
-{
-  // static_assert(sizeof(QTextOption) == 32, "tyszerr");
-  QTextOption* rthis = new QTextOption(o);
-  return rthis;
-}
-
-// QTextOption(Qt::Alignment)
-QTextOption* dector_ZN11QTextOptionC1E6QFlagsIN2Qt13AlignmentFlagEE(Qt::Alignment alignment)
-{
-  // static_assert(sizeof(QTextOption) == 32, "tyszerr");
-  QTextOption* rthis = new QTextOption(alignment);
-  return rthis;
-}
-
-// QTextOption()
-QTextOption* dector_ZN11QTextOptionC1Ev()
-{
-  // static_assert(sizeof(QTextOption) == 32, "tyszerr");
-  QTextOption* rthis = new QTextOption();
-  return rthis;
-}
-
-// ~QTextOption()
-void dedtor_ZN11QTextOptionD0Ev(QTextOption* that)
-{
-  QTextOption* rthis = (QTextOption*)that;
-  delete rthis;
-}
-
-  // proto:  void QTextOption::setFlags(Flags flags);
-void demth_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE(void *that, QTextOption::Flag flags)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setFlags(flags);
-}
-
-  // proto:  void QTextOption::setWrapMode(QTextOption::WrapMode wrap);
-void demth_ZN11QTextOption11setWrapModeENS_8WrapModeE(void *that, QTextOption::WrapMode wrap)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setWrapMode(wrap);
-}
-
-  // proto:  qreal QTextOption::tabStop();
-qreal demth_ZNK11QTextOption7tabStopEv(void *that)
-{
-  QTextOption *cthat = (QTextOption *)that;
-  return cthat->tabStop();
-}
-
-  // proto:  void QTextOption::setUseDesignMetrics(bool b);
-void demth_ZN11QTextOption19setUseDesignMetricsEb(void *that, bool b)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setUseDesignMetrics(b);
-}
-
-  // proto:  void QTextOption::setTabStop(qreal tabStop);
-void demth_ZN11QTextOption10setTabStopEd(void *that, double tabStop)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setTabStop(tabStop);
-}
-
-  // proto:  bool QTextOption::useDesignMetrics();
-bool demth_ZNK11QTextOption16useDesignMetricsEv(void *that)
-{
-  QTextOption *cthat = (QTextOption *)that;
-  return cthat->useDesignMetrics();
-}
-
-  // proto:  void QTextOption::setTextDirection(Qt::LayoutDirection aDirection);
-void demth_ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE(void *that, Qt::LayoutDirection aDirection)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setTextDirection(aDirection);
-}
-
-  // proto:  void QTextOption::setAlignment(Qt::Alignment alignment);
-void demth_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *that, Qt::Alignment alignment)
-{
-  QTextOption *cthat = (QTextOption *)that;
-   cthat->setAlignment(alignment);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qtextoption_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 109, column 17>
+//   // proto:  void QTextOption::setFlags(Flags flags);
+if (false) {
+  auto f = [](QTextOption::Flags arg1) {
+    ((QTextOption*)0)->setFlags(arg1);
+  };
+}
+// _ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 98, column 17>
+//   // proto:  void QTextOption::setWrapMode(QTextOption::WrapMode wrap);
+if (false) {
+  auto f = [](QTextOption::WrapMode arg1) {
+    ((QTextOption*)0)->setWrapMode(arg1);
+  };
+}
+// _ZN11QTextOption11setWrapModeENS_8WrapModeE setWrapMode(enum QTextOption::WrapMode)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 113, column 18>
+//   // proto:  qreal QTextOption::tabStop();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->tabStop();
+  };
+}
+// _ZNK11QTextOption7tabStopEv tabStop()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 121, column 10>
+//   // proto:  void QTextOption::setUseDesignMetrics(bool b);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QTextOption*)0)->setUseDesignMetrics(arg1);
+  };
+}
+// _ZN11QTextOption19setUseDesignMetricsEb setUseDesignMetrics(_Bool)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 112, column 17>
+//   // proto:  void QTextOption::setTabStop(qreal tabStop);
+if (false) {
+  auto f = [](qreal arg1) {
+    ((QTextOption*)0)->setTabStop(arg1);
+  };
+}
+// _ZN11QTextOption10setTabStopEd setTabStop(qreal)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 122, column 10>
+//   // proto:  bool QTextOption::useDesignMetrics();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->useDesignMetrics();
+  };
+}
+// _ZNK11QTextOption16useDesignMetricsEv useDesignMetrics()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 88, column 17>
+//   // proto:  void QTextOption::setTextDirection(Qt::LayoutDirection aDirection);
+if (false) {
+  auto f = [](Qt::LayoutDirection arg1) {
+    ((QTextOption*)0)->setTextDirection(arg1);
+  };
+}
+// _ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE setTextDirection(Qt::LayoutDirection)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 110, column 18>
+//   // proto:  Flags QTextOption::flags();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->flags();
+  };
+}
+// _ZNK11QTextOption5flagsEv flags()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 86, column 26>
+//   // proto:  Qt::Alignment QTextOption::alignment();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->alignment();
+  };
+}
+// _ZNK11QTextOption9alignmentEv alignment()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 99, column 21>
+//   // proto:  QTextOption::WrapMode QTextOption::wrapMode();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->wrapMode();
+  };
+}
+// _ZNK11QTextOption8wrapModeEv wrapMode()
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 85, column 17>
+//   // proto:  void QTextOption::setAlignment(Qt::Alignment alignment);
+if (false) {
+  auto f = [](Qt::Alignment arg1) {
+    ((QTextOption*)0)->setAlignment(arg1);
+  };
+}
+// _ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 89, column 32>
+//   // proto:  Qt::LayoutDirection QTextOption::textDirection();
+if (false) {
+  auto f = []() {
+    ((QTextOption*)0)->textDirection();
+  };
+}
+// _ZNK11QTextOption13textDirectionEv textDirection()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

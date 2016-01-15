@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtGui/qfontinfo.h
 // dst-file: /src/gui/qfontinfo.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfontinfo.h>
 
 extern "C" {
@@ -14,48 +15,30 @@ int QFontInfo_Class_Size()
   return sizeof(QFontInfo);
 }
 
-// QFontInfo(const class QFontInfo &)
-QFontInfo* dector_ZN9QFontInfoC1ERKS_(const QFontInfo & arg1)
-{
-  // static_assert(sizeof(QFontInfo) == 32, "tyszerr");
-  QFontInfo* rthis = new QFontInfo(arg1);
-  return rthis;
-}
-
-// QFontInfo(const class QFont &)
-QFontInfo* dector_ZN9QFontInfoC1ERK5QFont(const QFont & arg1)
-{
-  // static_assert(sizeof(QFontInfo) == 32, "tyszerr");
-  QFontInfo* rthis = new QFontInfo(arg1);
-  return rthis;
-}
-
-// ~QFontInfo()
-void dedtor_ZN9QFontInfoD0Ev(QFontInfo* that)
-{
-  QFontInfo* rthis = (QFontInfo*)that;
-  delete rthis;
-}
-
-  // proto:  bool QFontInfo::bold();
-bool demth_ZNK9QFontInfo4boldEv(void *that)
-{
-  QFontInfo *cthat = (QFontInfo *)that;
-  return cthat->bold();
-}
-
-  // proto:  void QFontInfo::swap(QFontInfo & other);
-void demth_ZN9QFontInfo4swapERS_(void *that, QFontInfo & other)
-{
-  QFontInfo *cthat = (QFontInfo *)that;
-   cthat->swap(other);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfontinfo_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 62, column 17>
+//   // proto:  bool QFontInfo::bold();
+if (false) {
+  auto f = []() {
+    ((QFontInfo*)0)->bold();
+  };
+}
+// _ZNK9QFontInfo4boldEv bold()
+// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 52, column 10>
+//   // proto:  void QFontInfo::swap(QFontInfo & other);
+if (false) {
+  auto f = [](QFontInfo & arg1) {
+    ((QFontInfo*)0)->swap(arg1);
+  };
+}
+// _ZN9QFontInfo4swapERS_ swap(class QFontInfo &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

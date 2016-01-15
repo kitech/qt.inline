@@ -1,10 +1,11 @@
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qsystemsemaphore.h
 // dst-file: /src/core/qsystemsemaphore.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qsystemsemaphore.h>
 
 extern "C" {
@@ -14,26 +15,14 @@ int QSystemSemaphore_Class_Size()
   return sizeof(QSystemSemaphore);
 }
 
-// QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
-QSystemSemaphore* dector_ZN16QSystemSemaphoreC1ERK7QStringiNS_10AccessModeE(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode)
-{
-  // static_assert(sizeof(QSystemSemaphore) == 32, "tyszerr");
-  QSystemSemaphore* rthis = new QSystemSemaphore(key, initialValue, mode);
-  return rthis;
-}
-
-// ~QSystemSemaphore()
-void dedtor_ZN16QSystemSemaphoreD0Ev(QSystemSemaphore* that)
-{
-  QSystemSemaphore* rthis = (QSystemSemaphore*)that;
-  delete rthis;
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qsystemsemaphore_inline_symbols() {
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

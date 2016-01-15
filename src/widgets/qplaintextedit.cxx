@@ -1,10 +1,12 @@
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtWidgets/qplaintextedit.h
 // dst-file: /src/widgets/qplaintextedit.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qplaintextedit.h>
 
 extern "C" {
@@ -14,98 +16,9 @@ int QPlainTextDocumentLayout_Class_Size()
   return sizeof(QPlainTextDocumentLayout);
 }
 
-// ~QPlainTextDocumentLayout()
-void dedtor_ZN24QPlainTextDocumentLayoutD0Ev(QPlainTextDocumentLayout* that)
-{
-  QPlainTextDocumentLayout* rthis = (QPlainTextDocumentLayout*)that;
-  delete rthis;
-}
-
-// QPlainTextDocumentLayout(class QTextDocument *)
-QPlainTextDocumentLayout* dector_ZN24QPlainTextDocumentLayoutC1EP13QTextDocument(QTextDocument * document)
-{
-  // static_assert(sizeof(QPlainTextDocumentLayout) == 32, "tyszerr");
-  QPlainTextDocumentLayout* rthis = new QPlainTextDocumentLayout(document);
-  return rthis;
-}
-
 int QPlainTextEdit_Class_Size()
 {
   return sizeof(QPlainTextEdit);
-}
-
-// QPlainTextEdit(const class QString &, class QWidget *)
-QPlainTextEdit* dector_ZN14QPlainTextEditC1ERK7QStringP7QWidget(const QString & text, QWidget * parent)
-{
-  // static_assert(sizeof(QPlainTextEdit) == 32, "tyszerr");
-  QPlainTextEdit* rthis = new QPlainTextEdit(text, parent);
-  return rthis;
-}
-
-// ~QPlainTextEdit()
-void dedtor_ZN14QPlainTextEditD0Ev(QPlainTextEdit* that)
-{
-  QPlainTextEdit* rthis = (QPlainTextEdit*)that;
-  delete rthis;
-}
-
-// QPlainTextEdit(class QWidget *)
-QPlainTextEdit* dector_ZN14QPlainTextEditC1EP7QWidget(QWidget * parent)
-{
-  // static_assert(sizeof(QPlainTextEdit) == 32, "tyszerr");
-  QPlainTextEdit* rthis = new QPlainTextEdit(parent);
-  return rthis;
-}
-
-  // proto:  QString QPlainTextEdit::toPlainText();
-QString* demth_ZNK14QPlainTextEdit11toPlainTextEv(void *that)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-  auto recret = cthat->toPlainText();
-  return new QString(recret);
-}
-
-  // proto:  int QPlainTextEdit::maximumBlockCount();
-int demth_ZNK14QPlainTextEdit17maximumBlockCountEv(void *that)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-  return cthat->maximumBlockCount();
-}
-
-  // proto:  void QPlainTextEdit::setMaximumBlockCount(int maximum);
-void demth_ZN14QPlainTextEdit20setMaximumBlockCountEi(void *that, int maximum)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-   cthat->setMaximumBlockCount(maximum);
-}
-
-  // proto:  QString QPlainTextEdit::documentTitle();
-QString* demth_ZNK14QPlainTextEdit13documentTitleEv(void *that)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-  auto recret = cthat->documentTitle();
-  return new QString(recret);
-}
-
-  // proto:  void QPlainTextEdit::setUndoRedoEnabled(bool enable);
-void demth_ZN14QPlainTextEdit18setUndoRedoEnabledEb(void *that, bool enable)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-   cthat->setUndoRedoEnabled(enable);
-}
-
-  // proto:  void QPlainTextEdit::setDocumentTitle(const QString & title);
-void demth_ZN14QPlainTextEdit16setDocumentTitleERK7QString(void *that, const QString & title)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-   cthat->setDocumentTitle(title);
-}
-
-  // proto:  bool QPlainTextEdit::isUndoRedoEnabled();
-bool demth_ZNK14QPlainTextEdit17isUndoRedoEnabledEv(void *that)
-{
-  QPlainTextEdit *cthat = (QPlainTextEdit *)that;
-  return cthat->isUndoRedoEnabled();
 }
 
 }; // <= extern "C" block end
@@ -113,6 +26,65 @@ bool demth_ZNK14QPlainTextEdit17isUndoRedoEnabledEv(void *that)
 // <= header block end
 
 // main block begin =>
+void __keep_qplaintextedit_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 144, column 20>
+//   // proto:  QString QPlainTextEdit::toPlainText();
+if (false) {
+  auto f = []() {
+    ((QPlainTextEdit*)0)->toPlainText();
+  };
+}
+// _ZNK14QPlainTextEdit11toPlainTextEv toPlainText()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 123, column 16>
+//   // proto:  int QPlainTextEdit::maximumBlockCount();
+if (false) {
+  auto f = []() {
+    ((QPlainTextEdit*)0)->maximumBlockCount();
+  };
+}
+// _ZNK14QPlainTextEdit17maximumBlockCountEv maximumBlockCount()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 121, column 17>
+//   // proto:  void QPlainTextEdit::setMaximumBlockCount(int maximum);
+if (false) {
+  auto f = [](int arg1) {
+    ((QPlainTextEdit*)0)->setMaximumBlockCount(arg1);
+  };
+}
+// _ZN14QPlainTextEdit20setMaximumBlockCountEi setMaximumBlockCount(int)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 113, column 20>
+//   // proto:  QString QPlainTextEdit::documentTitle();
+if (false) {
+  auto f = []() {
+    ((QPlainTextEdit*)0)->documentTitle();
+  };
+}
+// _ZNK14QPlainTextEdit13documentTitleEv documentTitle()
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 118, column 17>
+//   // proto:  void QPlainTextEdit::setUndoRedoEnabled(bool enable);
+if (false) {
+  auto f = [](bool arg1) {
+    ((QPlainTextEdit*)0)->setUndoRedoEnabled(arg1);
+  };
+}
+// _ZN14QPlainTextEdit18setUndoRedoEnabledEb setUndoRedoEnabled(_Bool)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 111, column 17>
+//   // proto:  void QPlainTextEdit::setDocumentTitle(const QString & title);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QPlainTextEdit*)0)->setDocumentTitle(arg1);
+  };
+}
+// _ZN14QPlainTextEdit16setDocumentTitleERK7QString setDocumentTitle(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 116, column 17>
+//   // proto:  bool QPlainTextEdit::isUndoRedoEnabled();
+if (false) {
+  auto f = []() {
+    ((QPlainTextEdit*)0)->isUndoRedoEnabled();
+  };
+}
+// _ZNK14QPlainTextEdit17isUndoRedoEnabledEv isUndoRedoEnabled()
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>

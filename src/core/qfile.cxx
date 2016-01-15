@@ -1,10 +1,13 @@
+#include <qbytearray.h>
+#include <qstring.h>
 // auto generated, do not modify.
-// created: Sun Jan  3 01:22:04 2016
+// created: Fri Jan 15 23:52:53 2016
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
 
 // header block begin =>
+#include <qatomic.h>
 #include <qfile.h>
 
 extern "C" {
@@ -14,90 +17,54 @@ int QFile_Class_Size()
   return sizeof(QFile);
 }
 
-// QFile()
-QFile* dector_ZN5QFileC1Ev()
-{
-  // static_assert(sizeof(QFile) == 32, "tyszerr");
-  QFile* rthis = new QFile();
-  return rthis;
-}
-
-// QFile(class QObject *)
-QFile* dector_ZN5QFileC1EP7QObject(QObject * parent)
-{
-  // static_assert(sizeof(QFile) == 32, "tyszerr");
-  QFile* rthis = new QFile(parent);
-  return rthis;
-}
-
-// ~QFile()
-void dedtor_ZN5QFileD0Ev(QFile* that)
-{
-  QFile* rthis = (QFile*)that;
-  delete rthis;
-}
-
-// QFile(const class QString &, class QObject *)
-QFile* dector_ZN5QFileC1ERK7QStringP7QObject(const QString & name, QObject * parent)
-{
-  // static_assert(sizeof(QFile) == 32, "tyszerr");
-  QFile* rthis = new QFile(name, parent);
-  return rthis;
-}
-
-// QFile(const class QString &)
-QFile* dector_ZN5QFileC1ERK7QString(const QString & name)
-{
-  // static_assert(sizeof(QFile) == 32, "tyszerr");
-  QFile* rthis = new QFile(name);
-  return rthis;
-}
-
-  // proto:  QString QFile::symLinkTarget();
-QString* demth_ZNK5QFile13symLinkTargetEv(void *that)
-{
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->symLinkTarget();
-  return new QString(recret);
-}
-
-  // proto: static QByteArray QFile::encodeName(const QString & fileName);
-QByteArray* demth_ZN5QFile10encodeNameERK7QString(void *that, const QString & fileName)
-{
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->encodeName(fileName);
-  return new QByteArray(recret);
-}
-
-  // proto: static QString QFile::decodeName(const QByteArray & localFileName);
-QString* demth_ZN5QFile10decodeNameERK10QByteArray(void *that, const QByteArray & localFileName)
-{
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->decodeName(localFileName);
-  return new QString(recret);
-}
-
-  // proto: static QString QFile::decodeName(const char * localFileName);
-QString* demth_ZN5QFile10decodeNameEPKc(void *that, const char * localFileName)
-{
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->decodeName(localFileName);
-  return new QString(recret);
-}
-
-  // proto: static QString QFile::symLinkTarget(const QString & fileName);
-QString* demth_ZN5QFile13symLinkTargetERK7QString(void *that, const QString & fileName)
-{
-  QFile *cthat = (QFile *)that;
-  auto recret = cthat->symLinkTarget(fileName);
-  return new QString(recret);
-}
-
 }; // <= extern "C" block end
 
 // <= header block end
 
 // main block begin =>
+void __keep_qfile_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 104, column 20>
+//   // proto:  QString QFile::symLinkTarget();
+if (false) {
+  auto f = []() {
+    ((QFile*)0)->symLinkTarget();
+  };
+}
+// _ZNK5QFile13symLinkTargetEv symLinkTarget()
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 80, column 30>
+//   // proto: static QByteArray QFile::encodeName(const QString & fileName);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QFile*)0)->encodeName(arg1);
+  };
+}
+// _ZN5QFile10encodeNameERK7QString encodeName(const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 84, column 20>
+//   // proto: static QString QFile::decodeName(const QByteArray & localFileName);
+if (false) {
+  auto f = [](const QByteArray & arg1) {
+    ((QFile*)0)->decodeName(arg1);
+  };
+}
+// _ZN5QFile10decodeNameERK10QByteArray decodeName(const class QByteArray &)
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 89, column 27>
+//   // proto: static QString QFile::decodeName(const char * localFileName);
+if (false) {
+  auto f = [](const char * arg1) {
+    ((QFile*)0)->decodeName(arg1);
+  };
+}
+// _ZN5QFile10decodeNameEPKc decodeName(const char *)
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 105, column 27>
+//   // proto: static QString QFile::symLinkTarget(const QString & fileName);
+if (false) {
+  auto f = [](const QString & arg1) {
+    ((QFile*)0)->symLinkTarget(arg1);
+  };
+}
+// _ZN5QFile13symLinkTargetERK7QString symLinkTarget(const class QString &)
+} // <= main block end
+
 // <= main block end
 
 // use block begin =>
