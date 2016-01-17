@@ -10,7 +10,7 @@ set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 
 # max effort for keep inline functions/methods.
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-inline")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=0 -fno-inline")
 
 set(CMAKE_AUTOMOC on)
 find_package(Qt5Core)
