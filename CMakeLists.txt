@@ -17,6 +17,8 @@ find_package(Qt5Core)
 find_package(Qt5Gui)
 find_package(Qt5Widgets)
 find_package(Qt5Network)
+find_package(Qt5Qml)
+find_package(Qt5Quick)
 
 # set(qt5_inline_core_srcs "src/core/qobject.cxx")
 # set(qt5_inline_gui_srcs "src/gui/qevent.cxx")
@@ -34,6 +36,8 @@ include(src/core/mod.cmake)
 include(src/gui/mod.cmake)
 include(src/widgets/mod.cmake)
 include(src/network/mod.cmake)
+include(src/qml/mod.cmake)
+include(src/quick/mod.cmake)
 set(qt5_inline_extra_srcs src/qihotfix.cpp)
 
 set(all_qt5_inline_srcs
@@ -41,9 +45,11 @@ set(all_qt5_inline_srcs
   ${qt5_inline_core_srcs}
   ${qt5_inline_gui_srcs}
   ${qt5_inline_network_srcs}
+  ${qt5_inline_qml_srcs}
+  ${qt5_inline_quick_srcs}
   ${qt5_inline_widgets_srcs}
   )
 
 add_library(QtInline SHARED ${all_qt5_inline_srcs})
-qt5_use_modules(QtInline Core Gui Widgets Network)
+qt5_use_modules(QtInline Core Gui Widgets Network Qml Quick)
 
