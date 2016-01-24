@@ -1,40 +1,42 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qdockwidget.h>
 
-extern "C" {
 
-int QDockWidget_Class_Size()
-{
-  return sizeof(QDockWidget);
-}
-
-}; // <= extern "C" block end
-
+#include <qnamespace.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qdockwidget_inline_symbols() {
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 86, column 17>
 //   // proto:  bool QDockWidget::isFloating();
-if (false) {
-  auto f = []() {
+if (true) {
+  auto f = [](QDockWidget flythis) {
     ((QDockWidget*)0)->isFloating();
+    flythis.isFloating();
   };
+  if (f == nullptr){}
 }
 // _ZNK11QDockWidget10isFloatingEv isFloating()
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 94, column 17>
 //   // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
-if (false) {
-  auto f = [](Qt::DockWidgetArea arg1) {
+if (true) {
+  auto f = [](QDockWidget flythis, Qt::DockWidgetArea arg1) {
     ((QDockWidget*)0)->isAreaAllowed(arg1);
+    flythis.isAreaAllowed(arg1);
   };
+  if (f == nullptr){}
 }
 // _ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE isAreaAllowed(Qt::DockWidgetArea)
 } // <= main block end
@@ -42,9 +44,213 @@ if (false) {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QDockWidget_Class_Size()
+{
+  return sizeof(QDockWidget);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 89, column 25>
+//   // proto:  Qt::DockWidgetAreas QDockWidget::allowedAreas();
+// _ZNK11QDockWidget12allowedAreasEv allowedAreas()
+extern "C"
+QFlags<Qt::DockWidgetArea>*
+C_ZNK11QDockWidget12allowedAreasEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->allowedAreas();
+  return new QFlags<Qt::DockWidgetArea>(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 65, column 14>
+//   // proto:  QWidget * QDockWidget::widget();
+// _ZNK11QDockWidget6widgetEv widget()
+extern "C"
+void*
+C_ZNK11QDockWidget6widgetEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->widget();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 85, column 10>
+//   // proto:  void QDockWidget::setFloating(bool floating);
+// _ZN11QDockWidget11setFloatingEb setFloating(_Bool)
+extern "C"
+void
+C_ZN11QDockWidget11setFloatingEb(void *qthis,
+bool arg1) {
+  ((QDockWidget*)qthis)->setFloating(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 106, column 10>
+//   // proto:  void QDockWidget::dockLocationChanged(Qt::DockWidgetArea area);
+// _ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE dockLocationChanged(Qt::DockWidgetArea)
+extern "C"
+void
+C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *qthis,
+Qt::DockWidgetArea* arg1) {
+  ((QDockWidget*)qthis)->dockLocationChanged(*((Qt::DockWidgetArea*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 92, column 14>
+//   // proto:  QWidget * QDockWidget::titleBarWidget();
+// _ZNK11QDockWidget14titleBarWidgetEv titleBarWidget()
+extern "C"
+void*
+C_ZNK11QDockWidget14titleBarWidgetEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->titleBarWidget();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 104, column 10>
+//   // proto:  void QDockWidget::allowedAreasChanged(Qt::DockWidgetAreas allowedAreas);
+// _ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE allowedAreasChanged(Qt::DockWidgetAreas)
+extern "C"
+void
+C_ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(void *qthis,
+Qt::DockWidgetAreas* arg1) {
+  ((QDockWidget*)qthis)->allowedAreasChanged(*((Qt::DockWidgetAreas*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 103, column 10>
+//   // proto:  void QDockWidget::topLevelChanged(bool topLevel);
+// _ZN11QDockWidget15topLevelChangedEb topLevelChanged(_Bool)
+extern "C"
+void
+C_ZN11QDockWidget15topLevelChangedEb(void *qthis,
+bool arg1) {
+  ((QDockWidget*)qthis)->topLevelChanged(arg1);
+}
+//   // proto:  void QDockWidget::~QDockWidget();
+extern "C"
+void C_ZN11QDockWidgetD2Ev(void *qthis) {
+  delete (QDockWidget*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 88, column 10>
+//   // proto:  void QDockWidget::setAllowedAreas(Qt::DockWidgetAreas areas);
+// _ZN11QDockWidget15setAllowedAreasE6QFlagsIN2Qt14DockWidgetAreaEE setAllowedAreas(Qt::DockWidgetAreas)
+extern "C"
+void
+C_ZN11QDockWidget15setAllowedAreasE6QFlagsIN2Qt14DockWidgetAreaEE(void *qthis,
+Qt::DockWidgetAreas* arg1) {
+  ((QDockWidget*)qthis)->setAllowedAreas(*((Qt::DockWidgetAreas*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 62, column 14>
+//   // proto:  void QDockWidget::QDockWidget(QWidget * parent, Qt::WindowFlags flags);
+extern "C"
+QDockWidget*
+C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
+Qt::WindowFlags* arg2) {
+  auto ret = new QDockWidget(arg1,
+*((Qt::WindowFlags*)arg2));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 82, column 10>
+//   // proto:  void QDockWidget::setFeatures(DockWidgetFeatures features);
+// _ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE setFeatures(DockWidgetFeatures)
+extern "C"
+void
+C_ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE(void *qthis,
+QDockWidget::DockWidgetFeatures arg1) {
+  ((QDockWidget*)qthis)->setFeatures(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 61, column 14>
+//   // proto:  void QDockWidget::QDockWidget(const QString & title, QWidget * parent, Qt::WindowFlags flags);
+extern "C"
+QDockWidget*
+C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString* arg1,
+QWidget * arg2,
+Qt::WindowFlags* arg3) {
+  auto ret = new QDockWidget(*((const QString*)arg1),
+arg2,
+*((Qt::WindowFlags*)arg3));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 66, column 10>
+//   // proto:  void QDockWidget::setWidget(QWidget * widget);
+// _ZN11QDockWidget9setWidgetEP7QWidget setWidget(class QWidget *)
+extern "C"
+void
+C_ZN11QDockWidget9setWidgetEP7QWidget(void *qthis,
+QWidget * arg1) {
+  ((QDockWidget*)qthis)->setWidget(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 102, column 10>
+//   // proto:  void QDockWidget::featuresChanged(QDockWidget::DockWidgetFeatures features);
+// _ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE featuresChanged(class QDockWidget::DockWidgetFeatures)
+extern "C"
+void
+C_ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(void *qthis,
+QDockWidget::DockWidgetFeatures* arg1) {
+  ((QDockWidget*)qthis)->featuresChanged(*((QDockWidget::DockWidgetFeatures*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 86, column 17>
+//   // proto:  bool QDockWidget::isFloating();
+// _ZNK11QDockWidget10isFloatingEv isFloating()
+extern "C"
+bool
+C_ZNK11QDockWidget10isFloatingEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->isFloating();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 98, column 14>
+//   // proto:  QAction * QDockWidget::toggleViewAction();
+// _ZNK11QDockWidget16toggleViewActionEv toggleViewAction()
+extern "C"
+void*
+C_ZNK11QDockWidget16toggleViewActionEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->toggleViewAction();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 83, column 24>
+//   // proto:  DockWidgetFeatures QDockWidget::features();
+// _ZNK11QDockWidget8featuresEv features()
+extern "C"
+QFlags<QDockWidget::DockWidgetFeature>*
+C_ZNK11QDockWidget8featuresEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->features();
+  return new QFlags<QDockWidget::DockWidgetFeature>(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 91, column 10>
+//   // proto:  void QDockWidget::setTitleBarWidget(QWidget * widget);
+// _ZN11QDockWidget17setTitleBarWidgetEP7QWidget setTitleBarWidget(class QWidget *)
+extern "C"
+void
+C_ZN11QDockWidget17setTitleBarWidgetEP7QWidget(void *qthis,
+QWidget * arg1) {
+  ((QDockWidget*)qthis)->setTitleBarWidget(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 51, column 5>
+//   // proto:  const QMetaObject * QDockWidget::metaObject();
+// _ZNK11QDockWidget10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK11QDockWidget10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QDockWidget*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 94, column 17>
+//   // proto:  bool QDockWidget::isAreaAllowed(Qt::DockWidgetArea area);
+// _ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE isAreaAllowed(Qt::DockWidgetArea)
+extern "C"
+bool
+C_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *qthis,
+Qt::DockWidgetArea* arg1) {
+  auto ret =
+  ((QDockWidget*)qthis)->isAreaAllowed(*((Qt::DockWidgetArea*)arg1));
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 105, column 10>
+//   // proto:  void QDockWidget::visibilityChanged(bool visible);
+// _ZN11QDockWidget17visibilityChangedEb visibilityChanged(_Bool)
+extern "C"
+void
+C_ZN11QDockWidget17visibilityChangedEb(void *qthis,
+bool arg1) {
+  ((QDockWidget*)qthis)->visibilityChanged(arg1);
+}
 // <= ext block end
 
 // body block begin =>

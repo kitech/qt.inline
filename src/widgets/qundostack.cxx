@@ -1,27 +1,20 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtWidgets/qundostack.h
 // dst-file: /src/widgets/qundostack.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qundostack.h>
 
-extern "C" {
 
-int QUndoStack_Class_Size()
-{
-  return sizeof(QUndoStack);
-}
-
-int QUndoCommand_Class_Size()
-{
-  return sizeof(QUndoCommand);
-}
-
-}; // <= extern "C" block end
-
+#include <qstring.h>
 // <= header block end
 
 // main block begin =>
@@ -31,9 +24,441 @@ void __keep_qundostack_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QUndoStack_Class_Size()
+{
+  return sizeof(QUndoStack);
+}
+
+extern "C"
+int QUndoCommand_Class_Size()
+{
+  return sizeof(QUndoCommand);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 118, column 9>
+//   // proto:  int QUndoStack::undoLimit();
+// _ZNK10QUndoStack9undoLimitEv undoLimit()
+extern "C"
+int
+C_ZNK10QUndoStack9undoLimitEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->undoLimit();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 134, column 10>
+//   // proto:  void QUndoStack::undoTextChanged(const QString & undoText);
+// _ZN10QUndoStack15undoTextChangedERK7QString undoTextChanged(const class QString &)
+extern "C"
+void
+C_ZN10QUndoStack15undoTextChangedERK7QString(void *qthis,
+const QString* arg1) {
+  ((QUndoStack*)qthis)->undoTextChanged(*((const QString*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 135, column 10>
+//   // proto:  void QUndoStack::redoTextChanged(const QString & redoText);
+// _ZN10QUndoStack15redoTextChangedERK7QString redoTextChanged(const class QString &)
+extern "C"
+void
+C_ZN10QUndoStack15redoTextChangedERK7QString(void *qthis,
+const QString* arg1) {
+  ((QUndoStack*)qthis)->redoTextChanged(*((const QString*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 120, column 25>
+//   // proto:  const QUndoCommand * QUndoStack::command(int index);
+// _ZNK10QUndoStack7commandEi command(int)
+extern "C"
+void*
+C_ZNK10QUndoStack7commandEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QUndoStack*)qthis)->command(arg1);
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 95, column 10>
+//   // proto:  bool QUndoStack::canRedo();
+// _ZNK10QUndoStack7canRedoEv canRedo()
+extern "C"
+bool
+C_ZNK10QUndoStack7canRedoEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->canRedo();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 82, column 5>
+//   // proto:  const QMetaObject * QUndoStack::metaObject();
+// _ZNK10QUndoStack10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK10QUndoStack10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 97, column 13>
+//   // proto:  QString QUndoStack::redoText();
+// _ZNK10QUndoStack8redoTextEv redoText()
+extern "C"
+QString*
+C_ZNK10QUndoStack8redoTextEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->redoText();
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 104, column 14>
+//   // proto:  QAction * QUndoStack::createUndoAction(QObject * parent, const QString & prefix);
+// _ZNK10QUndoStack16createUndoActionEP7QObjectRK7QString createUndoAction(class QObject *, const class QString &)
+extern "C"
+void*
+C_ZNK10QUndoStack16createUndoActionEP7QObjectRK7QString(void *qthis,
+QObject * arg1,
+const QString* arg2) {
+  auto ret =
+  ((QUndoStack*)qthis)->createUndoAction(arg1,
+*((const QString*)arg2));
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 99, column 9>
+//   // proto:  int QUndoStack::count();
+// _ZNK10QUndoStack5countEv count()
+extern "C"
+int
+C_ZNK10QUndoStack5countEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->count();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 106, column 14>
+//   // proto:  QAction * QUndoStack::createRedoAction(QObject * parent, const QString & prefix);
+// _ZNK10QUndoStack16createRedoActionEP7QObjectRK7QString createRedoAction(class QObject *, const class QString &)
+extern "C"
+void*
+C_ZNK10QUndoStack16createRedoActionEP7QObjectRK7QString(void *qthis,
+QObject * arg1,
+const QString* arg2) {
+  auto ret =
+  ((QUndoStack*)qthis)->createRedoAction(arg1,
+*((const QString*)arg2));
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 100, column 9>
+//   // proto:  int QUndoStack::index();
+// _ZNK10QUndoStack5indexEv index()
+extern "C"
+int
+C_ZNK10QUndoStack5indexEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->index();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 90, column 10>
+//   // proto:  void QUndoStack::clear();
+// _ZN10QUndoStack5clearEv clear()
+extern "C"
+void
+C_ZN10QUndoStack5clearEv(void *qthis) {
+  ((QUndoStack*)qthis)->clear();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 125, column 10>
+//   // proto:  void QUndoStack::undo();
+// _ZN10QUndoStack4undoEv undo()
+extern "C"
+void
+C_ZN10QUndoStack4undoEv(void *qthis) {
+  ((QUndoStack*)qthis)->undo();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 133, column 10>
+//   // proto:  void QUndoStack::canRedoChanged(bool canRedo);
+// _ZN10QUndoStack14canRedoChangedEb canRedoChanged(_Bool)
+extern "C"
+void
+C_ZN10QUndoStack14canRedoChangedEb(void *qthis,
+bool arg1) {
+  ((QUndoStack*)qthis)->canRedoChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 94, column 10>
+//   // proto:  bool QUndoStack::canUndo();
+// _ZNK10QUndoStack7canUndoEv canUndo()
+extern "C"
+bool
+C_ZNK10QUndoStack7canUndoEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->canUndo();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 110, column 10>
+//   // proto:  bool QUndoStack::isActive();
+// _ZNK10QUndoStack8isActiveEv isActive()
+extern "C"
+bool
+C_ZNK10QUndoStack8isActiveEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->isActive();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 131, column 10>
+//   // proto:  void QUndoStack::cleanChanged(bool clean);
+// _ZN10QUndoStack12cleanChangedEb cleanChanged(_Bool)
+extern "C"
+void
+C_ZN10QUndoStack12cleanChangedEb(void *qthis,
+bool arg1) {
+  ((QUndoStack*)qthis)->cleanChanged(arg1);
+}
+//   // proto:  void QUndoStack::~QUndoStack();
+extern "C"
+void C_ZN10QUndoStackD2Ev(void *qthis) {
+  delete (QUndoStack*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 88, column 14>
+//   // proto:  void QUndoStack::QUndoStack(QObject * parent);
+extern "C"
+QUndoStack*
+C_ZN10QUndoStackC2EP7QObject(QObject * arg1) {
+  auto ret = new QUndoStack(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 130, column 10>
+//   // proto:  void QUndoStack::indexChanged(int idx);
+// _ZN10QUndoStack12indexChangedEi indexChanged(int)
+extern "C"
+void
+C_ZN10QUndoStack12indexChangedEi(void *qthis,
+int arg1) {
+  ((QUndoStack*)qthis)->indexChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 132, column 10>
+//   // proto:  void QUndoStack::canUndoChanged(bool canUndo);
+// _ZN10QUndoStack14canUndoChangedEb canUndoChanged(_Bool)
+extern "C"
+void
+C_ZN10QUndoStack14canUndoChangedEb(void *qthis,
+bool arg1) {
+  ((QUndoStack*)qthis)->canUndoChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 111, column 10>
+//   // proto:  bool QUndoStack::isClean();
+// _ZNK10QUndoStack7isCleanEv isClean()
+extern "C"
+bool
+C_ZNK10QUndoStack7isCleanEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->isClean();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 126, column 10>
+//   // proto:  void QUndoStack::redo();
+// _ZN10QUndoStack4redoEv redo()
+extern "C"
+void
+C_ZN10QUndoStack4redoEv(void *qthis) {
+  ((QUndoStack*)qthis)->redo();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 114, column 10>
+//   // proto:  void QUndoStack::beginMacro(const QString & text);
+// _ZN10QUndoStack10beginMacroERK7QString beginMacro(const class QString &)
+extern "C"
+void
+C_ZN10QUndoStack10beginMacroERK7QString(void *qthis,
+const QString* arg1) {
+  ((QUndoStack*)qthis)->beginMacro(*((const QString*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 127, column 10>
+//   // proto:  void QUndoStack::setActive(bool active);
+// _ZN10QUndoStack9setActiveEb setActive(_Bool)
+extern "C"
+void
+C_ZN10QUndoStack9setActiveEb(void *qthis,
+bool arg1) {
+  ((QUndoStack*)qthis)->setActive(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 96, column 13>
+//   // proto:  QString QUndoStack::undoText();
+// _ZNK10QUndoStack8undoTextEv undoText()
+extern "C"
+QString*
+C_ZNK10QUndoStack8undoTextEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->undoText();
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 112, column 9>
+//   // proto:  int QUndoStack::cleanIndex();
+// _ZNK10QUndoStack10cleanIndexEv cleanIndex()
+extern "C"
+int
+C_ZNK10QUndoStack10cleanIndexEv(void *qthis) {
+  auto ret =
+  ((QUndoStack*)qthis)->cleanIndex();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 124, column 10>
+//   // proto:  void QUndoStack::setIndex(int idx);
+// _ZN10QUndoStack8setIndexEi setIndex(int)
+extern "C"
+void
+C_ZN10QUndoStack8setIndexEi(void *qthis,
+int arg1) {
+  ((QUndoStack*)qthis)->setIndex(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 115, column 10>
+//   // proto:  void QUndoStack::endMacro();
+// _ZN10QUndoStack8endMacroEv endMacro()
+extern "C"
+void
+C_ZN10QUndoStack8endMacroEv(void *qthis) {
+  ((QUndoStack*)qthis)->endMacro();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 117, column 10>
+//   // proto:  void QUndoStack::setUndoLimit(int limit);
+// _ZN10QUndoStack12setUndoLimitEi setUndoLimit(int)
+extern "C"
+void
+C_ZN10QUndoStack12setUndoLimitEi(void *qthis,
+int arg1) {
+  ((QUndoStack*)qthis)->setUndoLimit(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 123, column 10>
+//   // proto:  void QUndoStack::setClean();
+// _ZN10QUndoStack8setCleanEv setClean()
+extern "C"
+void
+C_ZN10QUndoStack8setCleanEv(void *qthis) {
+  ((QUndoStack*)qthis)->setClean();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 101, column 13>
+//   // proto:  QString QUndoStack::text(int idx);
+// _ZNK10QUndoStack4textEi text(int)
+extern "C"
+QString*
+C_ZNK10QUndoStack4textEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QUndoStack*)qthis)->text(arg1);
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 92, column 10>
+//   // proto:  void QUndoStack::push(QUndoCommand * cmd);
+// _ZN10QUndoStack4pushEP12QUndoCommand push(class QUndoCommand *)
+extern "C"
+void
+C_ZN10QUndoStack4pushEP12QUndoCommand(void *qthis,
+QUndoCommand * arg1) {
+  ((QUndoStack*)qthis)->push(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 65, column 17>
+//   // proto:  int QUndoCommand::id();
+// _ZNK12QUndoCommand2idEv id()
+extern "C"
+int
+C_ZNK12QUndoCommand2idEv(void *qthis) {
+  auto ret =
+  ((QUndoCommand*)qthis)->id();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 59, column 18>
+//   // proto:  void QUndoCommand::redo();
+// _ZN12QUndoCommand4redoEv redo()
+extern "C"
+void
+C_ZN12QUndoCommand4redoEv(void *qthis) {
+  ((QUndoCommand*)qthis)->redo();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 54, column 14>
+//   // proto:  void QUndoCommand::QUndoCommand(QUndoCommand * parent);
+extern "C"
+QUndoCommand*
+C_ZN12QUndoCommandC2EPS_(QUndoCommand * arg1) {
+  auto ret = new QUndoCommand(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 58, column 18>
+//   // proto:  void QUndoCommand::undo();
+// _ZN12QUndoCommand4undoEv undo()
+extern "C"
+void
+C_ZN12QUndoCommand4undoEv(void *qthis) {
+  ((QUndoCommand*)qthis)->undo();
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 55, column 14>
+//   // proto:  void QUndoCommand::QUndoCommand(const QString & text, QUndoCommand * parent);
+extern "C"
+QUndoCommand*
+C_ZN12QUndoCommandC2ERK7QStringPS_(const QString* arg1,
+QUndoCommand * arg2) {
+  auto ret = new QUndoCommand(*((const QString*)arg1),
+arg2);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 66, column 18>
+//   // proto:  bool QUndoCommand::mergeWith(const QUndoCommand * other);
+// _ZN12QUndoCommand9mergeWithEPKS_ mergeWith(const class QUndoCommand *)
+extern "C"
+bool
+C_ZN12QUndoCommand9mergeWithEPKS_(void *qthis,
+const QUndoCommand * arg1) {
+  auto ret =
+  ((QUndoCommand*)qthis)->mergeWith(arg1);
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 61, column 13>
+//   // proto:  QString QUndoCommand::text();
+// _ZNK12QUndoCommand4textEv text()
+extern "C"
+QString*
+C_ZNK12QUndoCommand4textEv(void *qthis) {
+  auto ret =
+  ((QUndoCommand*)qthis)->text();
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 68, column 9>
+//   // proto:  int QUndoCommand::childCount();
+// _ZNK12QUndoCommand10childCountEv childCount()
+extern "C"
+int
+C_ZNK12QUndoCommand10childCountEv(void *qthis) {
+  auto ret =
+  ((QUndoCommand*)qthis)->childCount();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 62, column 13>
+//   // proto:  QString QUndoCommand::actionText();
+// _ZNK12QUndoCommand10actionTextEv actionText()
+extern "C"
+QString*
+C_ZNK12QUndoCommand10actionTextEv(void *qthis) {
+  auto ret =
+  ((QUndoCommand*)qthis)->actionText();
+  return new QString(ret); // 5
+}
+//   // proto:  void QUndoCommand::~QUndoCommand();
+extern "C"
+void C_ZN12QUndoCommandD2Ev(void *qthis) {
+  delete (QUndoCommand*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 69, column 25>
+//   // proto:  const QUndoCommand * QUndoCommand::child(int index);
+// _ZNK12QUndoCommand5childEi child(int)
+extern "C"
+void*
+C_ZNK12QUndoCommand5childEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QUndoCommand*)qthis)->child(arg1);
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 63, column 10>
+//   // proto:  void QUndoCommand::setText(const QString & text);
+// _ZN12QUndoCommand7setTextERK7QString setText(const class QString &)
+extern "C"
+void
+C_ZN12QUndoCommand7setTextERK7QString(void *qthis,
+const QString* arg1) {
+  ((QUndoCommand*)qthis)->setText(*((const QString*)arg1));
+}
 // <= ext block end
 
 // body block begin =>

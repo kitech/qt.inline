@@ -1,22 +1,22 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtWidgets/qfontcombobox.h
 // dst-file: /src/widgets/qfontcombobox.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qfontcombobox.h>
 
-extern "C" {
 
-int QFontComboBox_Class_Size()
-{
-  return sizeof(QFontComboBox);
-}
-
-}; // <= extern "C" block end
-
+#include <qfontdatabase.h>
+#include <qsize.h>
+#include <qfont.h>
 // <= header block end
 
 // main block begin =>
@@ -26,9 +26,114 @@ void __keep_qfontcombobox_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QFontComboBox_Class_Size()
+{
+  return sizeof(QFontComboBox);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 59, column 10>
+//   // proto:  void QFontComboBox::setWritingSystem(QFontDatabase::WritingSystem );
+// _ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE setWritingSystem(class QFontDatabase::WritingSystem)
+extern "C"
+void
+C_ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE(void *qthis,
+QFontDatabase::WritingSystem* arg1) {
+  ((QFontComboBox*)qthis)->setWritingSystem(*((QFontDatabase::WritingSystem*)arg1));
+}
+//   // proto:  void QFontComboBox::~QFontComboBox();
+extern "C"
+void C_ZN13QFontComboBoxD2Ev(void *qthis) {
+  delete (QFontComboBox*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 71, column 10>
+//   // proto:  void QFontComboBox::setFontFilters(FontFilters filters);
+// _ZN13QFontComboBox14setFontFiltersE6QFlagsINS_10FontFilterEE setFontFilters(FontFilters)
+extern "C"
+void
+C_ZN13QFontComboBox14setFontFiltersE6QFlagsINS_10FontFilterEE(void *qthis,
+QFontComboBox::FontFilters arg1) {
+  ((QFontComboBox*)qthis)->setFontFilters(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 49, column 5>
+//   // proto:  const QMetaObject * QFontComboBox::metaObject();
+// _ZNK13QFontComboBox10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK13QFontComboBox10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QFontComboBox*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 60, column 34>
+//   // proto:  QFontDatabase::WritingSystem QFontComboBox::writingSystem();
+// _ZNK13QFontComboBox13writingSystemEv writingSystem()
+extern "C"
+QFontDatabase::WritingSystem
+C_ZNK13QFontComboBox13writingSystemEv(void *qthis) {
+  auto ret =
+  ((QFontComboBox*)qthis)->writingSystem();
+  return ret; // 0 TypeKind.ENUM
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 56, column 14>
+//   // proto:  void QFontComboBox::QFontComboBox(QWidget * parent);
+extern "C"
+QFontComboBox*
+C_ZN13QFontComboBoxC2EP7QWidget(QWidget * arg1) {
+  auto ret = new QFontComboBox(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 75, column 11>
+//   // proto:  QSize QFontComboBox::sizeHint();
+// _ZNK13QFontComboBox8sizeHintEv sizeHint()
+extern "C"
+QSize*
+C_ZNK13QFontComboBox8sizeHintEv(void *qthis) {
+  auto ret =
+  ((QFontComboBox*)qthis)->sizeHint();
+  return new QSize(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 72, column 17>
+//   // proto:  FontFilters QFontComboBox::fontFilters();
+// _ZNK13QFontComboBox11fontFiltersEv fontFilters()
+extern "C"
+QFlags<QFontComboBox::FontFilter>*
+C_ZNK13QFontComboBox11fontFiltersEv(void *qthis) {
+  auto ret =
+  ((QFontComboBox*)qthis)->fontFilters();
+  return new QFlags<QFontComboBox::FontFilter>(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 74, column 11>
+//   // proto:  QFont QFontComboBox::currentFont();
+// _ZNK13QFontComboBox11currentFontEv currentFont()
+extern "C"
+QFont*
+C_ZNK13QFontComboBox11currentFontEv(void *qthis) {
+  auto ret =
+  ((QFontComboBox*)qthis)->currentFont();
+  return new QFont(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 81, column 10>
+//   // proto:  void QFontComboBox::currentFontChanged(const QFont & f);
+// _ZN13QFontComboBox18currentFontChangedERK5QFont currentFontChanged(const class QFont &)
+extern "C"
+void
+C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *qthis,
+const QFont* arg1) {
+  ((QFontComboBox*)qthis)->currentFontChanged(*((const QFont*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontcombobox.h', line 78, column 10>
+//   // proto:  void QFontComboBox::setCurrentFont(const QFont & f);
+// _ZN13QFontComboBox14setCurrentFontERK5QFont setCurrentFont(const class QFont &)
+extern "C"
+void
+C_ZN13QFontComboBox14setCurrentFontERK5QFont(void *qthis,
+const QFont* arg1) {
+  ((QFontComboBox*)qthis)->setCurrentFont(*((const QFont*)arg1));
+}
 // <= ext block end
 
 // body block begin =>
