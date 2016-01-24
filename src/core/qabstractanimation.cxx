@@ -1,27 +1,20 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtCore/qabstractanimation.h
 // dst-file: /src/core/qabstractanimation.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qabstractanimation.h>
 
-extern "C" {
 
-int QAbstractAnimation_Class_Size()
-{
-  return sizeof(QAbstractAnimation);
-}
-
-int QAnimationDriver_Class_Size()
-{
-  return sizeof(QAnimationDriver);
-}
-
-}; // <= extern "C" block end
-
+#include <qglobal.h>
 // <= header block end
 
 // main block begin =>
@@ -31,9 +24,341 @@ void __keep_qabstractanimation_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QAbstractAnimation_Class_Size()
+{
+  return sizeof(QAbstractAnimation);
+}
+
+extern "C"
+int QAnimationDriver_Class_Size()
+{
+  return sizeof(QAnimationDriver);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 102, column 10>
+//   // proto:  void QAbstractAnimation::currentLoopChanged(int currentLoop);
+// _ZN18QAbstractAnimation18currentLoopChangedEi currentLoopChanged(int)
+extern "C"
+void
+C_ZN18QAbstractAnimation18currentLoopChangedEi(void *qthis,
+int arg1) {
+  ((QAbstractAnimation*)qthis)->currentLoopChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 108, column 10>
+//   // proto:  void QAbstractAnimation::resume();
+// _ZN18QAbstractAnimation6resumeEv resume()
+extern "C"
+void
+C_ZN18QAbstractAnimation6resumeEv(void *qthis) {
+  ((QAbstractAnimation*)qthis)->resume();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 86, column 15>
+//   // proto:  QAbstractAnimation::Direction QAbstractAnimation::direction();
+// _ZNK18QAbstractAnimation9directionEv direction()
+extern "C"
+QAbstractAnimation::Direction
+C_ZNK18QAbstractAnimation9directionEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->direction();
+  return ret; // 0 TypeKind.ENUM
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 79, column 5>
+//   // proto:  void QAbstractAnimation::QAbstractAnimation(QObject * parent);
+extern "C"
+QAbstractAnimation*
+C_ZN18QAbstractAnimationC2EP7QObject(QObject * arg1) {
+  // auto ret = new QAbstractAnimation(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 110, column 10>
+//   // proto:  void QAbstractAnimation::stop();
+// _ZN18QAbstractAnimation4stopEv stop()
+extern "C"
+void
+C_ZN18QAbstractAnimation4stopEv(void *qthis) {
+  ((QAbstractAnimation*)qthis)->stop();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 107, column 10>
+//   // proto:  void QAbstractAnimation::pause();
+// _ZN18QAbstractAnimation5pauseEv pause()
+extern "C"
+void
+C_ZN18QAbstractAnimation5pauseEv(void *qthis) {
+  ((QAbstractAnimation*)qthis)->pause();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 82, column 11>
+//   // proto:  QAbstractAnimation::State QAbstractAnimation::state();
+// _ZNK18QAbstractAnimation5stateEv state()
+extern "C"
+QAbstractAnimation::State
+C_ZNK18QAbstractAnimation5stateEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->state();
+  return ret; // 0 TypeKind.ENUM
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 101, column 10>
+//   // proto:  void QAbstractAnimation::stateChanged(QAbstractAnimation::State newState, QAbstractAnimation::State oldState);
+// _ZN18QAbstractAnimation12stateChangedENS_5StateES0_ stateChanged(class QAbstractAnimation::State, class QAbstractAnimation::State)
+extern "C"
+void
+C_ZN18QAbstractAnimation12stateChangedENS_5StateES0_(void *qthis,
+QAbstractAnimation::State* arg1,
+QAbstractAnimation::State* arg2) {
+  ((QAbstractAnimation*)qthis)->stateChanged(*((QAbstractAnimation::State*)arg1),
+*((QAbstractAnimation::State*)arg2));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 93, column 10>
+//   // proto:  void QAbstractAnimation::setLoopCount(int loopCount);
+// _ZN18QAbstractAnimation12setLoopCountEi setLoopCount(int)
+extern "C"
+void
+C_ZN18QAbstractAnimation12setLoopCountEi(void *qthis,
+int arg1) {
+  ((QAbstractAnimation*)qthis)->setLoopCount(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 106, column 10>
+//   // proto:  void QAbstractAnimation::start(QAbstractAnimation::DeletionPolicy policy);
+// _ZN18QAbstractAnimation5startENS_14DeletionPolicyE start(class QAbstractAnimation::DeletionPolicy)
+extern "C"
+void
+C_ZN18QAbstractAnimation5startENS_14DeletionPolicyE(void *qthis,
+QAbstractAnimation::DeletionPolicy* arg1) {
+  ((QAbstractAnimation*)qthis)->start(*((QAbstractAnimation::DeletionPolicy*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 94, column 9>
+//   // proto:  int QAbstractAnimation::currentLoop();
+// _ZNK18QAbstractAnimation11currentLoopEv currentLoop()
+extern "C"
+int
+C_ZNK18QAbstractAnimation11currentLoopEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->currentLoop();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 84, column 22>
+//   // proto:  QAnimationGroup * QAbstractAnimation::group();
+// _ZNK18QAbstractAnimation5groupEv group()
+extern "C"
+void*
+C_ZNK18QAbstractAnimation5groupEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->group();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 109, column 10>
+//   // proto:  void QAbstractAnimation::setPaused(bool );
+// _ZN18QAbstractAnimation9setPausedEb setPaused(_Bool)
+extern "C"
+void
+C_ZN18QAbstractAnimation9setPausedEb(void *qthis,
+bool arg1) {
+  ((QAbstractAnimation*)qthis)->setPaused(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 97, column 9>
+//   // proto:  int QAbstractAnimation::totalDuration();
+// _ZNK18QAbstractAnimation13totalDurationEv totalDuration()
+extern "C"
+int
+C_ZNK18QAbstractAnimation13totalDurationEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->totalDuration();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 103, column 10>
+//   // proto:  void QAbstractAnimation::directionChanged(QAbstractAnimation::Direction );
+// _ZN18QAbstractAnimation16directionChangedENS_9DirectionE directionChanged(class QAbstractAnimation::Direction)
+extern "C"
+void
+C_ZN18QAbstractAnimation16directionChangedENS_9DirectionE(void *qthis,
+QAbstractAnimation::Direction* arg1) {
+  ((QAbstractAnimation*)qthis)->directionChanged(*((QAbstractAnimation::Direction*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 96, column 17>
+//   // proto:  int QAbstractAnimation::duration();
+// _ZNK18QAbstractAnimation8durationEv duration()
+extern "C"
+int
+C_ZNK18QAbstractAnimation8durationEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->duration();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 51, column 5>
+//   // proto:  const QMetaObject * QAbstractAnimation::metaObject();
+// _ZNK18QAbstractAnimation10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK18QAbstractAnimation10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 90, column 9>
+//   // proto:  int QAbstractAnimation::currentLoopTime();
+// _ZNK18QAbstractAnimation15currentLoopTimeEv currentLoopTime()
+extern "C"
+int
+C_ZNK18QAbstractAnimation15currentLoopTimeEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->currentLoopTime();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 87, column 10>
+//   // proto:  void QAbstractAnimation::setDirection(QAbstractAnimation::Direction direction);
+// _ZN18QAbstractAnimation12setDirectionENS_9DirectionE setDirection(enum QAbstractAnimation::Direction)
+extern "C"
+void
+C_ZN18QAbstractAnimation12setDirectionENS_9DirectionE(void *qthis,
+QAbstractAnimation::Direction arg1) {
+  ((QAbstractAnimation*)qthis)->setDirection(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 89, column 9>
+//   // proto:  int QAbstractAnimation::currentTime();
+// _ZNK18QAbstractAnimation11currentTimeEv currentTime()
+extern "C"
+int
+C_ZNK18QAbstractAnimation11currentTimeEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->currentTime();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 111, column 10>
+//   // proto:  void QAbstractAnimation::setCurrentTime(int msecs);
+// _ZN18QAbstractAnimation14setCurrentTimeEi setCurrentTime(int)
+extern "C"
+void
+C_ZN18QAbstractAnimation14setCurrentTimeEi(void *qthis,
+int arg1) {
+  ((QAbstractAnimation*)qthis)->setCurrentTime(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 100, column 10>
+//   // proto:  void QAbstractAnimation::finished();
+// _ZN18QAbstractAnimation8finishedEv finished()
+extern "C"
+void
+C_ZN18QAbstractAnimation8finishedEv(void *qthis) {
+  ((QAbstractAnimation*)qthis)->finished();
+}
+//   // proto:  void QAbstractAnimation::~QAbstractAnimation();
+extern "C"
+void C_ZN18QAbstractAnimationD2Ev(void *qthis) {
+  delete (QAbstractAnimation*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 92, column 9>
+//   // proto:  int QAbstractAnimation::loopCount();
+// _ZNK18QAbstractAnimation9loopCountEv loopCount()
+extern "C"
+int
+C_ZNK18QAbstractAnimation9loopCountEv(void *qthis) {
+  auto ret =
+  ((QAbstractAnimation*)qthis)->loopCount();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 136, column 18>
+//   // proto:  void QAnimationDriver::advance();
+// _ZN16QAnimationDriver7advanceEv advance()
+extern "C"
+void
+C_ZN16QAnimationDriver7advanceEv(void *qthis) {
+  ((QAnimationDriver*)qthis)->advance();
+}
+//   // proto:  void QAnimationDriver::~QAnimationDriver();
+extern "C"
+void C_ZN16QAnimationDriverD2Ev(void *qthis) {
+  delete (QAnimationDriver*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 133, column 5>
+//   // proto:  void QAnimationDriver::QAnimationDriver(QObject * parent);
+extern "C"
+QAnimationDriver*
+C_ZN16QAnimationDriverC2EP7QObject(QObject * arg1) {
+  auto ret = new QAnimationDriver(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 143, column 20>
+//   // proto:  qint64 QAnimationDriver::elapsed();
+// _ZNK16QAnimationDriver7elapsedEv elapsed()
+extern "C"
+long long
+C_ZNK16QAnimationDriver7elapsedEv(void *qthis) {
+  auto ret =
+  ((QAnimationDriver*)qthis)->elapsed();
+  return ret; // 0 TypeKind.LONGLONG
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 138, column 10>
+//   // proto:  void QAnimationDriver::install();
+// _ZN16QAnimationDriver7installEv install()
+extern "C"
+void
+C_ZN16QAnimationDriver7installEv(void *qthis) {
+  ((QAnimationDriver*)qthis)->install();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 129, column 5>
+//   // proto:  const QMetaObject * QAnimationDriver::metaObject();
+// _ZNK16QAnimationDriver10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK16QAnimationDriver10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QAnimationDriver*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 139, column 10>
+//   // proto:  void QAnimationDriver::uninstall();
+// _ZN16QAnimationDriver9uninstallEv uninstall()
+extern "C"
+void
+C_ZN16QAnimationDriver9uninstallEv(void *qthis) {
+  ((QAnimationDriver*)qthis)->uninstall();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 151, column 10>
+//   // proto:  void QAnimationDriver::stopped();
+// _ZN16QAnimationDriver7stoppedEv stopped()
+extern "C"
+void
+C_ZN16QAnimationDriver7stoppedEv(void *qthis) {
+  ((QAnimationDriver*)qthis)->stopped();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 141, column 10>
+//   // proto:  bool QAnimationDriver::isRunning();
+// _ZNK16QAnimationDriver9isRunningEv isRunning()
+extern "C"
+bool
+C_ZNK16QAnimationDriver9isRunningEv(void *qthis) {
+  auto ret =
+  ((QAnimationDriver*)qthis)->isRunning();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 150, column 10>
+//   // proto:  void QAnimationDriver::started();
+// _ZN16QAnimationDriver7startedEv started()
+extern "C"
+void
+C_ZN16QAnimationDriver7startedEv(void *qthis) {
+  ((QAnimationDriver*)qthis)->started();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 147, column 12>
+//   // proto:  qint64 QAnimationDriver::startTime();
+// _ZNK16QAnimationDriver9startTimeEv startTime()
+extern "C"
+long long
+C_ZNK16QAnimationDriver9startTimeEv(void *qthis) {
+  auto ret =
+  ((QAnimationDriver*)qthis)->startTime();
+  return ret; // 0 TypeKind.LONGLONG
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractanimation.h', line 146, column 10>
+//   // proto:  void QAnimationDriver::setStartTime(qint64 startTime);
+// _ZN16QAnimationDriver12setStartTimeEx setStartTime(qint64)
+extern "C"
+void
+C_ZN16QAnimationDriver12setStartTimeEx(void *qthis,
+qint64 arg1) {
+  ((QAnimationDriver*)qthis)->setStartTime(arg1);
+}
 // <= ext block end
 
 // body block begin =>

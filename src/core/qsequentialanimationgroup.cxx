@@ -1,21 +1,18 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtCore/qsequentialanimationgroup.h
 // dst-file: /src/core/qsequentialanimationgroup.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qsequentialanimationgroup.h>
 
-extern "C" {
-
-int QSequentialAnimationGroup_Class_Size()
-{
-  return sizeof(QSequentialAnimationGroup);
-}
-
-}; // <= extern "C" block end
 
 // <= header block end
 
@@ -26,9 +23,91 @@ void __keep_qsequentialanimationgroup_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QSequentialAnimationGroup_Class_Size()
+{
+  return sizeof(QSequentialAnimationGroup);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 57, column 22>
+//   // proto:  QPauseAnimation * QSequentialAnimationGroup::insertPause(int index, int msecs);
+// _ZN25QSequentialAnimationGroup11insertPauseEii insertPause(int, int)
+extern "C"
+void*
+C_ZN25QSequentialAnimationGroup11insertPauseEii(void *qthis,
+int arg1,
+int arg2) {
+  auto ret =
+  ((QSequentialAnimationGroup*)qthis)->insertPause(arg1,
+arg2);
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 63, column 10>
+//   // proto:  void QSequentialAnimationGroup::currentAnimationChanged(QAbstractAnimation * current);
+// _ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation currentAnimationChanged(class QAbstractAnimation *)
+extern "C"
+void
+C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation(void *qthis,
+QAbstractAnimation * arg1) {
+  ((QSequentialAnimationGroup*)qthis)->currentAnimationChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 53, column 5>
+//   // proto:  void QSequentialAnimationGroup::QSequentialAnimationGroup(QObject * parent);
+extern "C"
+QSequentialAnimationGroup*
+C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * arg1) {
+  auto ret = new QSequentialAnimationGroup(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 56, column 22>
+//   // proto:  QPauseAnimation * QSequentialAnimationGroup::addPause(int msecs);
+// _ZN25QSequentialAnimationGroup8addPauseEi addPause(int)
+extern "C"
+void*
+C_ZN25QSequentialAnimationGroup8addPauseEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QSequentialAnimationGroup*)qthis)->addPause(arg1);
+  return (void*)ret;
+}
+//   // proto:  void QSequentialAnimationGroup::~QSequentialAnimationGroup();
+extern "C"
+void C_ZN25QSequentialAnimationGroupD2Ev(void *qthis) {
+  delete (QSequentialAnimationGroup*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 49, column 5>
+//   // proto:  const QMetaObject * QSequentialAnimationGroup::metaObject();
+// _ZNK25QSequentialAnimationGroup10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QSequentialAnimationGroup*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 59, column 25>
+//   // proto:  QAbstractAnimation * QSequentialAnimationGroup::currentAnimation();
+// _ZNK25QSequentialAnimationGroup16currentAnimationEv currentAnimation()
+extern "C"
+void*
+C_ZNK25QSequentialAnimationGroup16currentAnimationEv(void *qthis) {
+  auto ret =
+  ((QSequentialAnimationGroup*)qthis)->currentAnimation();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 60, column 9>
+//   // proto:  int QSequentialAnimationGroup::duration();
+// _ZNK25QSequentialAnimationGroup8durationEv duration()
+extern "C"
+int
+C_ZNK25QSequentialAnimationGroup8durationEv(void *qthis) {
+  auto ret =
+  ((QSequentialAnimationGroup*)qthis)->duration();
+  return ret; // 0 TypeKind.INT
+}
 // <= ext block end
 
 // body block begin =>

@@ -1,21 +1,18 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtCore/qlinkedlist.h
 // dst-file: /src/core/qlinkedlist.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qlinkedlist.h>
 
-extern "C" {
-
-int QLinkedListData_Class_Size()
-{
-  return sizeof(QLinkedListData);
-}
-
-}; // <= extern "C" block end
 
 // <= header block end
 
@@ -26,6 +23,12 @@ void __keep_qlinkedlist_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QLinkedListData_Class_Size()
+{
+  return sizeof(QLinkedListData);
+}
+
 // <= use block end
 
 // ext block begin =>

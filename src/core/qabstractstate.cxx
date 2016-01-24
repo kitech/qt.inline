@@ -1,21 +1,18 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtCore/qabstractstate.h
 // dst-file: /src/core/qabstractstate.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qabstractstate.h>
 
-extern "C" {
-
-int QAbstractState_Class_Size()
-{
-  return sizeof(QAbstractState);
-}
-
-}; // <= extern "C" block end
 
 // <= header block end
 
@@ -26,9 +23,69 @@ void __keep_qabstractstate_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QAbstractState_Class_Size()
+{
+  return sizeof(QAbstractState);
+}
+
 // <= use block end
 
 // ext block begin =>
+//   // proto:  void QAbstractState::~QAbstractState();
+extern "C"
+void C_ZN14QAbstractStateD2Ev(void *qthis) {
+  delete (QAbstractState*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractstate.h', line 50, column 5>
+//   // proto:  const QMetaObject * QAbstractState::metaObject();
+// _ZNK14QAbstractState10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK14QAbstractState10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QAbstractState*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractstate.h', line 55, column 13>
+//   // proto:  QState * QAbstractState::parentState();
+// _ZNK14QAbstractState11parentStateEv parentState()
+extern "C"
+void*
+C_ZNK14QAbstractState11parentStateEv(void *qthis) {
+  auto ret =
+  ((QAbstractState*)qthis)->parentState();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractstate.h', line 56, column 20>
+//   // proto:  QStateMachine * QAbstractState::machine();
+// _ZNK14QAbstractState7machineEv machine()
+extern "C"
+void*
+C_ZNK14QAbstractState7machineEv(void *qthis) {
+  auto ret =
+  ((QAbstractState*)qthis)->machine();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractstate.h', line 63, column 10>
+//   // proto:  void QAbstractState::activeChanged(bool active);
+// _ZN14QAbstractState13activeChangedEb activeChanged(_Bool)
+extern "C"
+void
+C_ZN14QAbstractState13activeChangedEb(void *qthis,
+bool arg1) {
+  ((QAbstractState*)qthis)->activeChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractstate.h', line 58, column 10>
+//   // proto:  bool QAbstractState::active();
+// _ZNK14QAbstractState6activeEv active()
+extern "C"
+bool
+C_ZNK14QAbstractState6activeEv(void *qthis) {
+  auto ret =
+  ((QAbstractState*)qthis)->active();
+  return ret; // 0 TypeKind.BOOL
+}
 // <= ext block end
 
 // body block begin =>
