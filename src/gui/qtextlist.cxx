@@ -1,49 +1,54 @@
-#include <qtextformat.h>
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtGui/qtextlist.h
 // dst-file: /src/gui/qtextlist.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qtextlist.h>
 
-extern "C" {
 
-int QTextList_Class_Size()
-{
-  return sizeof(QTextList);
-}
-
-}; // <= extern "C" block end
-
+#include <qtextobject.h>
+#include <qstring.h>
+#include <qtextformat.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qtextlist_inline_symbols() {
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 68, column 17>
 //   // proto:  void QTextList::setFormat(const QTextListFormat & format);
-if (false) {
-  auto f = [](const QTextListFormat & arg1) {
+if (true) {
+  auto f = [](QTextList flythis, const QTextListFormat & arg1) {
     ((QTextList*)0)->setFormat(arg1);
+    flythis.setFormat(arg1);
   };
+  if (f == nullptr){}
 }
 // _ZN9QTextList9setFormatERK15QTextListFormat setFormat(const class QTextListFormat &)
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 69, column 21>
 //   // proto:  QTextListFormat QTextList::format();
-if (false) {
-  auto f = []() {
+if (true) {
+  auto f = [](QTextList flythis) {
     ((QTextList*)0)->format();
+    flythis.format();
   };
+  if (f == nullptr){}
 }
 // _ZNK9QTextList6formatEv format()
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 55, column 17>
 //   // proto:  bool QTextList::isEmpty();
-if (false) {
-  auto f = []() {
+if (true) {
+  auto f = [](QTextList flythis) {
     ((QTextList*)0)->isEmpty();
+    flythis.isEmpty();
   };
+  if (f == nullptr){}
 }
 // _ZNK9QTextList7isEmptyEv isEmpty()
 } // <= main block end
@@ -51,9 +56,137 @@ if (false) {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QTextList_Class_Size()
+{
+  return sizeof(QTextList);
+}
+
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 58, column 16>
+//   // proto:  QTextBlock QTextList::item(int i);
+// _ZNK9QTextList4itemEi item(int)
+extern "C"
+QTextBlock*
+C_ZNK9QTextList4itemEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QTextList*)qthis)->item(arg1);
+  return new QTextBlock(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 64, column 10>
+//   // proto:  void QTextList::remove(const QTextBlock & );
+// _ZN9QTextList6removeERK10QTextBlock remove(const class QTextBlock &)
+extern "C"
+void
+C_ZN9QTextList6removeERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  ((QTextList*)qthis)->remove(*((const QTextBlock*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 68, column 17>
+//   // proto:  void QTextList::setFormat(const QTextListFormat & format);
+// _ZN9QTextList9setFormatERK15QTextListFormat setFormat(const class QTextListFormat &)
+extern "C"
+void
+C_ZN9QTextList9setFormatERK15QTextListFormat(void *qthis,
+const QTextListFormat* arg1) {
+  ((QTextList*)qthis)->setFormat(*((const QTextListFormat*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 50, column 14>
+//   // proto:  void QTextList::QTextList(QTextDocument * doc);
+extern "C"
+QTextList*
+C_ZN9QTextListC2EP13QTextDocument(QTextDocument * arg1) {
+  auto ret = new QTextList(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 66, column 10>
+//   // proto:  void QTextList::add(const QTextBlock & block);
+// _ZN9QTextList3addERK10QTextBlock add(const class QTextBlock &)
+extern "C"
+void
+C_ZN9QTextList3addERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  ((QTextList*)qthis)->add(*((const QTextBlock*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 61, column 13>
+//   // proto:  QString QTextList::itemText(const QTextBlock & );
+// _ZNK9QTextList8itemTextERK10QTextBlock itemText(const class QTextBlock &)
+extern "C"
+QString*
+C_ZNK9QTextList8itemTextERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  auto ret =
+  ((QTextList*)qthis)->itemText(*((const QTextBlock*)arg1));
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 63, column 10>
+//   // proto:  void QTextList::removeItem(int i);
+// _ZN9QTextList10removeItemEi removeItem(int)
+extern "C"
+void
+C_ZN9QTextList10removeItemEi(void *qthis,
+int arg1) {
+  ((QTextList*)qthis)->removeItem(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 60, column 9>
+//   // proto:  int QTextList::itemNumber(const QTextBlock & );
+// _ZNK9QTextList10itemNumberERK10QTextBlock itemNumber(const class QTextBlock &)
+extern "C"
+int
+C_ZNK9QTextList10itemNumberERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  auto ret =
+  ((QTextList*)qthis)->itemNumber(*((const QTextBlock*)arg1));
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 53, column 9>
+//   // proto:  int QTextList::count();
+// _ZNK9QTextList5countEv count()
+extern "C"
+int
+C_ZNK9QTextList5countEv(void *qthis) {
+  auto ret =
+  ((QTextList*)qthis)->count();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 69, column 21>
+//   // proto:  QTextListFormat QTextList::format();
+// _ZNK9QTextList6formatEv format()
+extern "C"
+QTextListFormat*
+C_ZNK9QTextList6formatEv(void *qthis) {
+  auto ret =
+  ((QTextList*)qthis)->format();
+  return new QTextListFormat(ret); // 5
+}
+//   // proto:  void QTextList::~QTextList();
+extern "C"
+void C_ZN9QTextListD2Ev(void *qthis) {
+  delete (QTextList*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 55, column 17>
+//   // proto:  bool QTextList::isEmpty();
+// _ZNK9QTextList7isEmptyEv isEmpty()
+extern "C"
+bool
+C_ZNK9QTextList7isEmptyEv(void *qthis) {
+  auto ret =
+  ((QTextList*)qthis)->isEmpty();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlist.h', line 48, column 5>
+//   // proto:  const QMetaObject * QTextList::metaObject();
+// _ZNK9QTextList10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK9QTextList10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QTextList*)qthis)->metaObject();
+  return (void*)ret;
+}
 // <= ext block end
 
 // body block begin =>

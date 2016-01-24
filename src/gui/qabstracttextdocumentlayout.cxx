@@ -1,27 +1,22 @@
 // auto generated, do not modify.
-// created: Fri Jan 15 23:52:53 2016
+// created: Sun Jan 24 17:25:06 2016
 // src-file: /QtGui/qabstracttextdocumentlayout.h
 // dst-file: /src/gui/qabstracttextdocumentlayout.cxx
 //
 
 // header block begin =>
 #include <qatomic.h>
+#include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qabstracttextdocumentlayout.h>
 
-extern "C" {
 
-int QTextObjectInterface_Class_Size()
-{
-  return sizeof(QTextObjectInterface);
-}
-
-int QAbstractTextDocumentLayout_Class_Size()
-{
-  return sizeof(QAbstractTextDocumentLayout);
-}
-
-}; // <= extern "C" block end
-
+#include <qsize.h>
+#include <qstring.h>
+#include <qrect.h>
 // <= header block end
 
 // main block begin =>
@@ -31,9 +26,255 @@ void __keep_qabstracttextdocumentlayout_inline_symbols() {
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QTextObjectInterface_Class_Size()
+{
+  return sizeof(QTextObjectInterface);
+}
+
+extern "C"
+int QAbstractTextDocumentLayout_Class_Size()
+{
+  return sizeof(QAbstractTextDocumentLayout);
+}
+
 // <= use block end
 
 // ext block begin =>
+//   // proto:  void QTextObjectInterface::~QTextObjectInterface();
+extern "C"
+void C_ZN20QTextObjectInterfaceD2Ev(void *qthis) {
+  delete (QTextObjectInterface*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 130, column 20>
+//   // proto:  QSizeF QTextObjectInterface::intrinsicSize(QTextDocument * doc, int posInDocument, const QTextFormat & format);
+// _ZN20QTextObjectInterface13intrinsicSizeEP13QTextDocumentiRK11QTextFormat intrinsicSize(class QTextDocument *, int, const class QTextFormat &)
+extern "C"
+QSizeF*
+C_ZN20QTextObjectInterface13intrinsicSizeEP13QTextDocumentiRK11QTextFormat(void *qthis,
+QTextDocument * arg1,
+int arg2,
+const QTextFormat* arg3) {
+  auto ret =
+  ((QTextObjectInterface*)qthis)->intrinsicSize(arg1,
+arg2,
+*((const QTextFormat*)arg3));
+  return new QSizeF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 131, column 18>
+//   // proto:  void QTextObjectInterface::drawObject(QPainter * painter, const QRectF & rect, QTextDocument * doc, int posInDocument, const QTextFormat & format);
+// _ZN20QTextObjectInterface10drawObjectEP8QPainterRK6QRectFP13QTextDocumentiRK11QTextFormat drawObject(class QPainter *, const class QRectF &, class QTextDocument *, int, const class QTextFormat &)
+extern "C"
+void
+C_ZN20QTextObjectInterface10drawObjectEP8QPainterRK6QRectFP13QTextDocumentiRK11QTextFormat(void *qthis,
+QPainter * arg1,
+const QRectF* arg2,
+QTextDocument * arg3,
+int arg4,
+const QTextFormat* arg5) {
+  ((QTextObjectInterface*)qthis)->drawObject(arg1,
+*((const QRectF*)arg2),
+arg3,
+arg4,
+*((const QTextFormat*)arg5));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 53, column 5>
+//   // proto:  const QMetaObject * QAbstractTextDocumentLayout::metaObject();
+// _ZNK27QAbstractTextDocumentLayout10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK27QAbstractTextDocumentLayout10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->metaObject();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 92, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::registerHandler(int objectType, QObject * component);
+// _ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject registerHandler(int, class QObject *)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject(void *qthis,
+int arg1,
+QObject * arg2) {
+  ((QAbstractTextDocumentLayout*)qthis)->registerHandler(arg1,
+arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 81, column 17>
+//   // proto:  int QAbstractTextDocumentLayout::pageCount();
+// _ZNK27QAbstractTextDocumentLayout9pageCountEv pageCount()
+extern "C"
+int
+C_ZNK27QAbstractTextDocumentLayout9pageCountEv(void *qthis) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->pageCount();
+  return ret; // 0 TypeKind.INT
+}
+//   // proto:  void QAbstractTextDocumentLayout::~QAbstractTextDocumentLayout();
+extern "C"
+void C_ZN27QAbstractTextDocumentLayoutD2Ev(void *qthis) {
+  delete (QAbstractTextDocumentLayout*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 78, column 17>
+//   // proto:  int QAbstractTextDocumentLayout::hitTest(const QPointF & point, Qt::HitTestAccuracy accuracy);
+// _ZNK27QAbstractTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE hitTest(const class QPointF &, Qt::HitTestAccuracy)
+extern "C"
+int
+C_ZNK27QAbstractTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *qthis,
+const QPointF* arg1,
+Qt::HitTestAccuracy* arg2) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->hitTest(*((const QPointF*)arg1),
+*((Qt::HitTestAccuracy*)arg2));
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 87, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::setPaintDevice(QPaintDevice * device);
+// _ZN27QAbstractTextDocumentLayout14setPaintDeviceEP12QPaintDevice setPaintDevice(class QPaintDevice *)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout14setPaintDeviceEP12QPaintDevice(void *qthis,
+QPaintDevice * arg1) {
+  ((QAbstractTextDocumentLayout*)qthis)->setPaintDevice(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 100, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::pageCountChanged(int newPages);
+// _ZN27QAbstractTextDocumentLayout16pageCountChangedEi pageCountChanged(int)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout16pageCountChangedEi(void *qthis,
+int arg1) {
+  ((QAbstractTextDocumentLayout*)qthis)->pageCountChanged(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 90, column 20>
+//   // proto:  QTextDocument * QAbstractTextDocumentLayout::document();
+// _ZNK27QAbstractTextDocumentLayout8documentEv document()
+extern "C"
+void*
+C_ZNK27QAbstractTextDocumentLayout8documentEv(void *qthis) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->document();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 97, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::update(const QRectF & );
+// _ZN27QAbstractTextDocumentLayout6updateERK6QRectF update(const class QRectF &)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout6updateERK6QRectF(void *qthis,
+const QRectF* arg1) {
+  ((QAbstractTextDocumentLayout*)qthis)->update(*((const QRectF*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 98, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::updateBlock(const QTextBlock & block);
+// _ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock updateBlock(const class QTextBlock &)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  ((QAbstractTextDocumentLayout*)qthis)->updateBlock(*((const QTextBlock*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 93, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::unregisterHandler(int objectType, QObject * component);
+// _ZN27QAbstractTextDocumentLayout17unregisterHandlerEiP7QObject unregisterHandler(int, class QObject *)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout17unregisterHandlerEiP7QObject(void *qthis,
+int arg1,
+QObject * arg2) {
+  ((QAbstractTextDocumentLayout*)qthis)->unregisterHandler(arg1,
+arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 57, column 14>
+//   // proto:  void QAbstractTextDocumentLayout::QAbstractTextDocumentLayout(QTextDocument * doc);
+extern "C"
+QAbstractTextDocumentLayout*
+C_ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument(QTextDocument * arg1) {
+  // auto ret = new QAbstractTextDocumentLayout(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 82, column 20>
+//   // proto:  QSizeF QAbstractTextDocumentLayout::documentSize();
+// _ZNK27QAbstractTextDocumentLayout12documentSizeEv documentSize()
+extern "C"
+QSizeF*
+C_ZNK27QAbstractTextDocumentLayout12documentSizeEv(void *qthis) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->documentSize();
+  return new QSizeF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 88, column 19>
+//   // proto:  QPaintDevice * QAbstractTextDocumentLayout::paintDevice();
+// _ZNK27QAbstractTextDocumentLayout11paintDeviceEv paintDevice()
+extern "C"
+void*
+C_ZNK27QAbstractTextDocumentLayout11paintDeviceEv(void *qthis) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->paintDevice();
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 79, column 13>
+//   // proto:  QString QAbstractTextDocumentLayout::anchorAt(const QPointF & pos);
+// _ZNK27QAbstractTextDocumentLayout8anchorAtERK7QPointF anchorAt(const class QPointF &)
+extern "C"
+QString*
+C_ZNK27QAbstractTextDocumentLayout8anchorAtERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->anchorAt(*((const QPointF*)arg1));
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 94, column 27>
+//   // proto:  QTextObjectInterface * QAbstractTextDocumentLayout::handlerForObject(int objectType);
+// _ZNK27QAbstractTextDocumentLayout16handlerForObjectEi handlerForObject(int)
+extern "C"
+void*
+C_ZNK27QAbstractTextDocumentLayout16handlerForObjectEi(void *qthis,
+int arg1) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->handlerForObject(arg1);
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 84, column 20>
+//   // proto:  QRectF QAbstractTextDocumentLayout::frameBoundingRect(QTextFrame * frame);
+// _ZNK27QAbstractTextDocumentLayout17frameBoundingRectEP10QTextFrame frameBoundingRect(class QTextFrame *)
+extern "C"
+QRectF*
+C_ZNK27QAbstractTextDocumentLayout17frameBoundingRectEP10QTextFrame(void *qthis,
+QTextFrame * arg1) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->frameBoundingRect(arg1);
+  return new QRectF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 77, column 18>
+//   // proto:  void QAbstractTextDocumentLayout::draw(QPainter * painter, const QAbstractTextDocumentLayout::PaintContext & context);
+// _ZN27QAbstractTextDocumentLayout4drawEP8QPainterRKNS_12PaintContextE draw(class QPainter *, const struct QAbstractTextDocumentLayout::PaintContext &)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout4drawEP8QPainterRKNS_12PaintContextE(void *qthis,
+QPainter * arg1,
+const QAbstractTextDocumentLayout::PaintContext* arg2) {
+  ((QAbstractTextDocumentLayout*)qthis)->draw(arg1,
+*((const QAbstractTextDocumentLayout::PaintContext*)arg2));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 99, column 10>
+//   // proto:  void QAbstractTextDocumentLayout::documentSizeChanged(const QSizeF & newSize);
+// _ZN27QAbstractTextDocumentLayout19documentSizeChangedERK6QSizeF documentSizeChanged(const class QSizeF &)
+extern "C"
+void
+C_ZN27QAbstractTextDocumentLayout19documentSizeChangedERK6QSizeF(void *qthis,
+const QSizeF* arg1) {
+  ((QAbstractTextDocumentLayout*)qthis)->documentSizeChanged(*((const QSizeF*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qabstracttextdocumentlayout.h', line 85, column 20>
+//   // proto:  QRectF QAbstractTextDocumentLayout::blockBoundingRect(const QTextBlock & block);
+// _ZNK27QAbstractTextDocumentLayout17blockBoundingRectERK10QTextBlock blockBoundingRect(const class QTextBlock &)
+extern "C"
+QRectF*
+C_ZNK27QAbstractTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *qthis,
+const QTextBlock* arg1) {
+  auto ret =
+  ((QAbstractTextDocumentLayout*)qthis)->blockBoundingRect(*((const QTextBlock*)arg1));
+  return new QRectF(ret); // 5
+}
 // <= ext block end
 
 // body block begin =>
