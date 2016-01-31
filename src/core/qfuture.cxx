@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qfuture.h
 // dst-file: /src/core/qfuture.cxx
 //
@@ -271,6 +271,14 @@ void
 C_ZN7QFutureIvE12togglePausedEv(void *qthis) {
   ((QFuture<void>*)qthis)->togglePaused();
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qfuture.h', line 192, column 5>
+//   // proto:  void QFuture<void>::QFuture(const QFuture<void> & other);
+extern "C"
+QFuture<void>*
+C_ZN7QFutureIvEC2ERKS0_(const QFuture<void>* arg1) {
+  auto ret = new QFuture<void>(*((const QFuture<void>*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qfuture.h', line 230, column 9>
 //   // proto:  int QFuture<void>::progressValue();
 // _ZNK7QFutureIvE13progressValueEv progressValue()
@@ -333,6 +341,22 @@ extern "C"
 void
 C_ZN7QFutureIvE5pauseEv(void *qthis) {
   ((QFuture<void>*)qthis)->pause();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qfuture.h', line 189, column 14>
+//   // proto:  void QFuture<void>::QFuture(QFutureInterfaceBase * p);
+extern "C"
+QFuture<void>*
+C_ZN7QFutureIvEC2EP20QFutureInterfaceBase(QFutureInterfaceBase * arg1) {
+  auto ret = new QFuture<void>(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qfuture.h', line 186, column 5>
+//   // proto:  void QFuture<void>::QFuture();
+extern "C"
+QFuture<void>*
+C_ZN7QFutureIvEC2Ev() {
+  auto ret = new QFuture<void>();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qfuture.h', line 225, column 10>
 //   // proto:  bool QFuture<void>::isStarted();

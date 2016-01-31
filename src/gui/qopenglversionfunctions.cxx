@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qopenglversionfunctions.h
 // dst-file: /src/gui/qopenglversionfunctions.cxx
 //
@@ -68,6 +68,14 @@ int QOpenGLVersionStatus_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglversionfunctions.h', line 109, column 5>
+//   // proto:  void QOpenGLVersionFunctionsBackend::QOpenGLVersionFunctionsBackend(QOpenGLContext * ctx);
+extern "C"
+QOpenGLVersionFunctionsBackend*
+C_ZN30QOpenGLVersionFunctionsBackendC2EP14QOpenGLContext(QOpenGLContext * arg1) {
+  auto ret = new QOpenGLVersionFunctionsBackend(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglversionfunctions.h', line 147, column 18>
 //   // proto:  bool QAbstractOpenGLFunctions::initializeOpenGLFunctions();
 // _ZN24QAbstractOpenGLFunctions25initializeOpenGLFunctionsEv initializeOpenGLFunctions()
@@ -102,6 +110,26 @@ C_ZNK24QAbstractOpenGLFunctions6d_funcEv(void *qthis) {
 extern "C"
 void C_ZN24QAbstractOpenGLFunctionsD2Ev(void *qthis) {
   delete (QAbstractOpenGLFunctions*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglversionfunctions.h', line 76, column 22>
+//   // proto:  void QOpenGLVersionStatus::QOpenGLVersionStatus();
+extern "C"
+QOpenGLVersionStatus*
+C_ZN20QOpenGLVersionStatusC2Ev() {
+  auto ret = new QOpenGLVersionStatus();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qopenglversionfunctions.h', line 81, column 22>
+//   // proto:  void QOpenGLVersionStatus::QOpenGLVersionStatus(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus);
+extern "C"
+QOpenGLVersionStatus*
+C_ZN20QOpenGLVersionStatusC2EiiNS_12OpenGLStatusE(int arg1,
+int arg2,
+QOpenGLVersionStatus::OpenGLStatus* arg3) {
+  auto ret = new QOpenGLVersionStatus(arg1,
+arg2,
+*((QOpenGLVersionStatus::OpenGLStatus*)arg3));
+  return ret;
 }
 // <= ext block end
 

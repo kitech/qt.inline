@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -419,6 +419,14 @@ const QRectF* arg1) {
   auto ret =
   ((QMatrix*)qthis)->mapRect(*((const QRectF*)arg1));
   return new QRectF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 53, column 21>
+//   // proto:  void QMatrix::QMatrix(Qt::Initialization );
+extern "C"
+QMatrix*
+C_ZN7QMatrixC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QMatrix(*((Qt::Initialization*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 85, column 17>
 //   // proto:  bool QMatrix::isIdentity();

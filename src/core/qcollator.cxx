@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qcollator.h
 // dst-file: /src/core/qcollator.cxx
 //
@@ -218,6 +218,14 @@ void
 C_ZN9QCollator4swapERS_(void *qthis,
 QCollator* arg1) {
   ((QCollator*)qthis)->swap(*((QCollator*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 85, column 5>
+//   // proto:  void QCollator::QCollator(QCollator && other);
+extern "C"
+QCollator*
+C_ZN9QCollatorC2EOS_(QCollator* arg1) {
+  auto ret = new QCollator(*((QCollator*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 103, column 10>
 //   // proto:  void QCollator::setIgnorePunctuation(bool on);

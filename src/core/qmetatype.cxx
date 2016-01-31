@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qmetatype.h
 // dst-file: /src/core/qmetatype.cxx
 //
@@ -437,6 +437,11 @@ QMetaType::LoadOperator arg3) {
   QMetaType::registerStreamOperators(arg1,
 arg2,
 arg3);
+}
+//   // proto:  void QMetaType::~QMetaType();
+extern "C"
+void C_ZN9QMetaTypeD2Ev(void *qthis) {
+  delete (QMetaType*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmetatype.h', line 502, column 16>
 //   // proto: static int QMetaType::type(const char * typeName);

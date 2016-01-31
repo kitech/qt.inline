@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
@@ -321,6 +321,14 @@ C_ZNK4QPen10isCosmeticEv(void *qthis) {
   auto ret =
   ((QPen*)qthis)->isCosmetic();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 67, column 5>
+//   // proto:  void QPen::QPen(QPen && other);
+extern "C"
+QPen*
+C_ZN4QPenC2EOS_(QPen* arg1) {
+  auto ret = new QPen(*((QPen*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 81, column 10>
 //   // proto:  void QPen::setDashOffset(qreal doffset);

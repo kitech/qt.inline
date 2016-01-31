@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qlogging.h
 // dst-file: /src/core/qlogging.cxx
 //
@@ -89,6 +89,20 @@ int QMessageLogger_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 61, column 22>
+//   // proto:  void QMessageLogContext::QMessageLogContext(const char * fileName, int lineNumber, const char * functionName, const char * categoryName);
+extern "C"
+QMessageLogContext*
+C_ZN18QMessageLogContextC2EPKciS1_S1_(const char * arg1,
+int arg2,
+const char * arg3,
+const char * arg4) {
+  auto ret = new QMessageLogContext(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 64, column 10>
 //   // proto:  void QMessageLogContext::copy(const QMessageLogContext & logContext);
 // _ZN18QMessageLogContext4copyERKS_ copy(const class QMessageLogContext &)
@@ -97,6 +111,14 @@ void
 C_ZN18QMessageLogContext4copyERKS_(void *qthis,
 const QMessageLogContext* arg1) {
   ((QMessageLogContext*)qthis)->copy(*((const QMessageLogContext*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 60, column 22>
+//   // proto:  void QMessageLogContext::QMessageLogContext();
+extern "C"
+QMessageLogContext*
+C_ZN18QMessageLogContextC2Ev() {
+  auto ret = new QMessageLogContext();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 100, column 10>
 //   // proto:  void QMessageLogger::info(const QLoggingCategory & cat, const char * msg);
@@ -202,6 +224,14 @@ const char * arg2) {
   ((QMessageLogger*)qthis)->info(arg1,
 arg2);
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 83, column 22>
+//   // proto:  void QMessageLogger::QMessageLogger();
+extern "C"
+QMessageLogger*
+C_ZN14QMessageLoggerC2Ev() {
+  auto ret = new QMessageLogger();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 116, column 12>
 //   // proto:  QDebug QMessageLogger::info();
 // _ZNK14QMessageLogger4infoEv info()
@@ -274,6 +304,18 @@ QMessageLogger::CategoryFunction arg1,
 const char * arg2) {
   ((QMessageLogger*)qthis)->critical(arg1,
 arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 84, column 22>
+//   // proto:  void QMessageLogger::QMessageLogger(const char * file, int line, const char * function);
+extern "C"
+QMessageLogger*
+C_ZN14QMessageLoggerC2EPKciS1_(const char * arg1,
+int arg2,
+const char * arg3) {
+  auto ret = new QMessageLogger(arg1,
+arg2,
+arg3);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 113, column 12>
 //   // proto:  QDebug QMessageLogger::debug();
@@ -377,6 +419,20 @@ const QLoggingCategory* arg1,
 const char * arg2) {
   ((QMessageLogger*)qthis)->critical(*((const QLoggingCategory*)arg1),
 arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 86, column 22>
+//   // proto:  void QMessageLogger::QMessageLogger(const char * file, int line, const char * function, const char * category);
+extern "C"
+QMessageLogger*
+C_ZN14QMessageLoggerC2EPKciS1_S1_(const char * arg1,
+int arg2,
+const char * arg3,
+const char * arg4) {
+  auto ret = new QMessageLogger(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
 }
 // <= ext block end
 

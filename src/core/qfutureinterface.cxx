@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qfutureinterface.h
 // dst-file: /src/core/qfutureinterface.cxx
 //
@@ -502,6 +502,22 @@ const QVector<void>* arg1,
 int arg2) {
   ((QFutureInterface<void>*)qthis)->reportResults(*((const QVector<void>*)arg1),
 arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qfutureinterface.h', line 285, column 5>
+//   // proto:  void QFutureInterface<void>::QFutureInterface(const QFutureInterface<void> & other);
+extern "C"
+QFutureInterface<void>*
+C_ZN16QFutureInterfaceIvEC2ERKS0_(const QFutureInterface<void>* arg1) {
+  auto ret = new QFutureInterface<void>(*((const QFutureInterface<void>*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qfutureinterface.h', line 282, column 5>
+//   // proto:  void QFutureInterface<void>::QFutureInterface(QFutureInterfaceBase::State initialState);
+extern "C"
+QFutureInterface<void>*
+C_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE(QFutureInterfaceBase::State arg1) {
+  auto ret = new QFutureInterface<void>(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qfutureinterface.h', line 289, column 35>
 //   // proto: static QFutureInterface<void> QFutureInterface<void>::canceledResult();

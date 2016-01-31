@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtextformat.h
 // dst-file: /src/gui/qtextformat.cxx
 //
@@ -1741,6 +1741,16 @@ int QTextFrameFormat_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 84, column 21>
+//   // proto:  void QTextLength::QTextLength(QTextLength::Type type, qreal value);
+extern "C"
+QTextLength*
+C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type arg1,
+qreal arg2) {
+  auto ret = new QTextLength(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 87, column 18>
 //   // proto:  qreal QTextLength::value(qreal maximumLength);
 // _ZNK11QTextLength5valueEd value(qreal)
@@ -1751,6 +1761,14 @@ qreal arg1) {
   auto ret =
   ((QTextLength*)qthis)->value(arg1);
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 82, column 12>
+//   // proto:  void QTextLength::QTextLength();
+extern "C"
+QTextLength*
+C_ZN11QTextLengthC2Ev() {
+  auto ret = new QTextLength();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextformat.h', line 97, column 18>
 //   // proto:  qreal QTextLength::rawValue();

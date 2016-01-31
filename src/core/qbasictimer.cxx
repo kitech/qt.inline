@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qbasictimer.h
 // dst-file: /src/core/qbasictimer.cxx
 //
@@ -77,6 +77,11 @@ QObject * arg3) {
 *((Qt::TimerType*)arg2),
 arg3);
 }
+//   // proto:  void QBasicTimer::~QBasicTimer();
+extern "C"
+void C_ZN11QBasicTimerD2Ev(void *qthis) {
+  delete (QBasicTimer*)qthis;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 57, column 10>
 //   // proto:  void QBasicTimer::stop();
 // _ZN11QBasicTimer4stopEv stop()
@@ -104,6 +109,14 @@ C_ZNK11QBasicTimer8isActiveEv(void *qthis) {
   auto ret =
   ((QBasicTimer*)qthis)->isActive();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 49, column 12>
+//   // proto:  void QBasicTimer::QBasicTimer();
+extern "C"
+QBasicTimer*
+C_ZN11QBasicTimerC2Ev() {
+  auto ret = new QBasicTimer();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbasictimer.h', line 55, column 10>
 //   // proto:  void QBasicTimer::start(int msec, QObject * obj);

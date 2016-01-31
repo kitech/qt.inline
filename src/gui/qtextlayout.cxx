@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -316,6 +316,14 @@ C_ZNK9QTextLine4rectEv(void *qthis) {
   ((QTextLine*)qthis)->rect();
   return new QRectF(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 195, column 12>
+//   // proto:  void QTextLine::QTextLine();
+extern "C"
+QTextLine*
+C_ZN9QTextLineC2Ev() {
+  auto ret = new QTextLine();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 229, column 10>
 //   // proto:  void QTextLine::setNumColumns(int columns);
 // _ZN9QTextLine13setNumColumnsEi setNumColumns(int)
@@ -549,11 +557,11 @@ arg2);
 //   // proto:  const QTextOption & QTextLayout::textOption();
 // _ZNK11QTextLayout10textOptionEv textOption()
 extern "C"
-const QTextOption*
+QTextOption*
 C_ZNK11QTextLayout10textOptionEv(void *qthis) {
   auto& ret =
   ((QTextLayout*)qthis)->textOption();
-  return new const QTextOption(ret); // 5
+  return new QTextOption(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 176, column 18>
 //   // proto:  QTextEngine * QTextLayout::engine();
@@ -862,6 +870,16 @@ int arg2) {
 arg2);
   return new QList<QGlyphRun>(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 64, column 5>
+//   // proto:  void QTextInlineObject::QTextInlineObject(int i, QTextEngine * e);
+extern "C"
+QTextInlineObject*
+C_ZN17QTextInlineObjectC2EiP11QTextEngine(int arg1,
+QTextEngine * arg2) {
+  auto ret = new QTextInlineObject(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 77, column 10>
 //   // proto:  void QTextInlineObject::setAscent(qreal a);
 // _ZN17QTextInlineObject9setAscentEd setAscent(qreal)
@@ -939,6 +957,14 @@ C_ZNK17QTextInlineObject7isValidEv(void *qthis) {
   auto ret =
   ((QTextInlineObject*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 65, column 12>
+//   // proto:  void QTextInlineObject::QTextInlineObject();
+extern "C"
+QTextInlineObject*
+C_ZN17QTextInlineObjectC2Ev() {
+  auto ret = new QTextInlineObject();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 74, column 25>
 //   // proto:  Qt::LayoutDirection QTextInlineObject::textDirection();

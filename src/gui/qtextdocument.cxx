@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtextdocument.h
 // dst-file: /src/gui/qtextdocument.cxx
 //
@@ -1013,6 +1013,11 @@ extern "C"
 void
 C_ZN17QAbstractUndoItem4redoEv(void *qthis) {
   ((QAbstractUndoItem*)qthis)->redo();
+}
+//   // proto:  void QAbstractUndoItem::~QAbstractUndoItem();
+extern "C"
+void C_ZN17QAbstractUndoItemD2Ev(void *qthis) {
+  delete (QAbstractUndoItem*)qthis;
 }
 // <= ext block end
 

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -77,6 +77,14 @@ int QTextTable_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 53, column 5>
+//   // proto:  void QTextTableCell::QTextTableCell(const QTextTableCell & o);
+extern "C"
+QTextTableCell*
+C_ZN14QTextTableCellC2ERKS_(const QTextTableCell* arg1) {
+  auto ret = new QTextTableCell(*((const QTextTableCell*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 57, column 10>
 //   // proto:  void QTextTableCell::setFormat(const QTextCharFormat & format);
 // _ZN14QTextTableCell9setFormatERK15QTextCharFormat setFormat(const class QTextCharFormat &)
@@ -220,6 +228,14 @@ C_ZNK14QTextTableCell19firstCursorPositionEv(void *qthis) {
   auto ret =
   ((QTextTableCell*)qthis)->firstCursorPosition();
   return new QTextCursor(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 51, column 5>
+//   // proto:  void QTextTableCell::QTextTableCell();
+extern "C"
+QTextTableCell*
+C_ZN14QTextTableCellC2Ev() {
+  auto ret = new QTextTableCell();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 114, column 20>
 //   // proto:  QTextTableCell QTextTable::cellAt(int row, int col);

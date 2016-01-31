@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qdesktopwidget.h
 // dst-file: /src/widgets/qdesktopwidget.cxx
 //
@@ -67,12 +67,12 @@ int QDesktopWidget_Class_Size()
 //   // proto:  const QRect QDesktopWidget::screenGeometry(const QPoint & point);
 // _ZNK14QDesktopWidget14screenGeometryERK6QPoint screenGeometry(const class QPoint &)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget14screenGeometryERK6QPoint(void *qthis,
 const QPoint* arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->screenGeometry(*((const QPoint*)arg1));
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 64, column 14>
 //   // proto:  QWidget * QDesktopWidget::screen(int screen);
@@ -89,12 +89,12 @@ int arg1) {
 //   // proto:  const QRect QDesktopWidget::screenGeometry(const QWidget * widget);
 // _ZNK14QDesktopWidget14screenGeometryEPK7QWidget screenGeometry(const class QWidget *)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget14screenGeometryEPK7QWidget(void *qthis,
 const QWidget * arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->screenGeometry(arg1);
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 79, column 10>
 //   // proto:  void QDesktopWidget::screenCountChanged(int );
@@ -124,23 +124,23 @@ void C_ZN14QDesktopWidgetD2Ev(void *qthis) {
 //   // proto:  const QRect QDesktopWidget::screenGeometry(int screen);
 // _ZNK14QDesktopWidget14screenGeometryEi screenGeometry(int)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget14screenGeometryEi(void *qthis,
 int arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->screenGeometry(arg1);
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 72, column 17>
 //   // proto:  const QRect QDesktopWidget::availableGeometry(const QWidget * widget);
 // _ZNK14QDesktopWidget17availableGeometryEPK7QWidget availableGeometry(const class QWidget *)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget17availableGeometryEPK7QWidget(void *qthis,
 const QWidget * arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->availableGeometry(arg1);
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 77, column 10>
 //   // proto:  void QDesktopWidget::resized(int );
@@ -215,23 +215,23 @@ C_ZN14QDesktopWidgetC2Ev() {
 //   // proto:  const QRect QDesktopWidget::availableGeometry(const QPoint & point);
 // _ZNK14QDesktopWidget17availableGeometryERK6QPoint availableGeometry(const class QPoint &)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *qthis,
 const QPoint* arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->availableGeometry(*((const QPoint*)arg1));
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 71, column 17>
 //   // proto:  const QRect QDesktopWidget::availableGeometry(int screen);
 // _ZNK14QDesktopWidget17availableGeometryEi availableGeometry(int)
 extern "C"
-const QRect*
+QRect*
 C_ZNK14QDesktopWidget17availableGeometryEi(void *qthis,
 int arg1) {
   auto ret =
   ((QDesktopWidget*)qthis)->availableGeometry(arg1);
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdesktopwidget.h', line 47, column 5>
 //   // proto:  const QMetaObject * QDesktopWidget::metaObject();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtransform.h
 // dst-file: /src/gui/qtransform.cxx
 //
@@ -310,15 +310,23 @@ arg7,
 arg8,
 arg9);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 62, column 21>
+//   // proto:  void QTransform::QTransform(Qt::Initialization );
+extern "C"
+QTransform*
+C_ZN10QTransformC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QTransform(*((Qt::Initialization*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 140, column 20>
 //   // proto:  const QMatrix & QTransform::toAffine();
 // _ZNK10QTransform8toAffineEv toAffine()
 extern "C"
-const QMatrix*
+QMatrix*
 C_ZNK10QTransform8toAffineEv(void *qthis) {
   auto& ret =
   ((QTransform*)qthis)->toAffine();
-  return new const QMatrix(ret); // 5
+  return new QMatrix(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 125, column 10>
 //   // proto:  void QTransform::reset();

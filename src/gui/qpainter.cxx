@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpainter.h
 // dst-file: /src/gui/qpainter.cxx
 //
@@ -926,11 +926,11 @@ const QPicture* arg2) {
 //   // proto:  const QMatrix & QPainter::worldMatrix();
 // _ZNK8QPainter11worldMatrixEv worldMatrix()
 extern "C"
-const QMatrix*
+QMatrix*
 C_ZNK8QPainter11worldMatrixEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->worldMatrix();
-  return new const QMatrix(ret); // 5
+  return new QMatrix(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 409, column 10>
 //   // proto:  void QPainter::drawText(const QPointF & p, const QString & str, int tf, int justificationPadding);
@@ -968,11 +968,11 @@ arg4,
 //   // proto:  const QMatrix & QPainter::matrix();
 // _ZNK8QPainter6matrixEv matrix()
 extern "C"
-const QMatrix*
+QMatrix*
 C_ZNK8QPainter6matrixEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->matrix();
-  return new const QMatrix(ret); // 5
+  return new QMatrix(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 202, column 11>
 //   // proto:  qreal QPainter::opacity();
@@ -1215,11 +1215,11 @@ arg2);
 //   // proto:  const QTransform & QPainter::worldTransform();
 // _ZNK8QPainter14worldTransformEv worldTransform()
 extern "C"
-const QTransform*
+QTransform*
 C_ZNK8QPainter14worldTransformEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->worldTransform();
-  return new const QTransform(ret); // 5
+  return new QTransform(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 305, column 10>
 //   // proto:  void QPainter::drawRects(const QRect * rects, int rectCount);
@@ -1497,11 +1497,11 @@ const QRect* arg1) {
 //   // proto:  const QMatrix & QPainter::deviceMatrix();
 // _ZNK8QPainter12deviceMatrixEv deviceMatrix()
 extern "C"
-const QMatrix*
+QMatrix*
 C_ZNK8QPainter12deviceMatrixEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->deviceMatrix();
-  return new const QMatrix(ret); // 5
+  return new QMatrix(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 215, column 10>
 //   // proto:  void QPainter::setClipPath(const QPainterPath & path, Qt::ClipOperation op);
@@ -2298,21 +2298,21 @@ arg4);
 //   // proto:  const QFont & QPainter::font();
 // _ZNK8QPainter4fontEv font()
 extern "C"
-const QFont*
+QFont*
 C_ZNK8QPainter4fontEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->font();
-  return new const QFont(ret); // 5
+  return new QFont(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 233, column 23>
 //   // proto:  const QTransform & QPainter::deviceTransform();
 // _ZNK8QPainter15deviceTransformEv deviceTransform()
 extern "C"
-const QTransform*
+QTransform*
 C_ZNK8QPainter15deviceTransformEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->deviceTransform();
-  return new const QTransform(ret); // 5
+  return new QTransform(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 444, column 17>
 //   // proto:  void QPainter::eraseRect(int x, int y, int w, int h);
@@ -2563,11 +2563,11 @@ arg2);
 //   // proto:  const QTransform & QPainter::transform();
 // _ZNK8QPainter9transformEv transform()
 extern "C"
-const QTransform*
+QTransform*
 C_ZNK8QPainter9transformEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->transform();
-  return new const QTransform(ret); // 5
+  return new QTransform(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 454, column 17>
 //   // proto: static void QPainter::setRedirected(const QPaintDevice * device, QPaintDevice * replacement, const QPoint & offset);
@@ -2698,11 +2698,11 @@ const QBrush* arg2) {
 //   // proto:  const QBrush & QPainter::brush();
 // _ZNK8QPainter5brushEv brush()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPainter5brushEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->brush();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 //   // proto:  void QPainter::~QPainter();
 extern "C"
@@ -2887,11 +2887,11 @@ arg2);
 //   // proto:  const QBrush & QPainter::background();
 // _ZNK8QPainter10backgroundEv background()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPainter10backgroundEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->background();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 350, column 17>
 //   // proto:  void QPainter::drawRoundRect(int x, int y, int w, int h, int , int );
@@ -3199,11 +3199,11 @@ const QImage* arg2) {
 //   // proto:  const QPen & QPainter::pen();
 // _ZNK8QPainter3penEv pen()
 extern "C"
-const QPen*
+QPen*
 C_ZNK8QPainter3penEv(void *qthis) {
   auto& ret =
   ((QPainter*)qthis)->pen();
-  return new const QPen(ret); // 5
+  return new QPen(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpainter.h', line 253, column 10>
 //   // proto:  void QPainter::rotate(qreal a);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
@@ -1013,11 +1013,11 @@ C_ZNK7QWidget16isWindowModifiedEv(void *qthis) {
 //   // proto:  const QRect & QWidget::geometry();
 // _ZNK7QWidget8geometryEv geometry()
 extern "C"
-const QRect*
+QRect*
 C_ZNK7QWidget8geometryEv(void *qthis) {
   auto& ret =
   ((QWidget*)qthis)->geometry();
-  return new const QRect(ret); // 5
+  return new QRect(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 521, column 10>
 //   // proto:  void QWidget::setParent(QWidget * parent, Qt::WindowFlags f);
@@ -1724,11 +1724,11 @@ C_ZN7QWidget4findEi(WId arg1) {
 //   // proto:  const QPalette & QWidget::palette();
 // _ZNK7QWidget7paletteEv palette()
 extern "C"
-const QPalette*
+QPalette*
 C_ZNK7QWidget7paletteEv(void *qthis) {
   auto& ret =
   ((QWidget*)qthis)->palette();
-  return new const QPalette(ret); // 5
+  return new QPalette(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 501, column 10>
 //   // proto:  void QWidget::setSizePolicy(QSizePolicy );
@@ -1926,11 +1926,11 @@ C_ZNK7QWidget9whatsThisEv(void *qthis) {
 //   // proto:  const QFont & QWidget::font();
 // _ZNK7QWidget4fontEv font()
 extern "C"
-const QFont*
+QFont*
 C_ZNK7QWidget4fontEv(void *qthis) {
   auto& ret =
   ((QWidget*)qthis)->font();
-  return new const QFont(ret); // 5
+  return new QFont(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 259, column 10>
 //   // proto:  void QWidget::setMinimumSize(int minw, int minh);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qtextcodec.h
 // dst-file: /src/core/qtextcodec.cxx
 //
@@ -126,6 +126,14 @@ C_ZNK12QTextEncoder10hasFailureEv(void *qthis) {
   auto ret =
   ((QTextEncoder*)qthis)->hasFailure();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 129, column 14>
+//   // proto:  void QTextEncoder::QTextEncoder(const QTextCodec * codec);
+extern "C"
+QTextEncoder*
+C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * arg1) {
+  auto ret = new QTextEncoder(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 133, column 16>
 //   // proto:  QByteArray QTextEncoder::fromUnicode(const QChar * uc, int len);
@@ -401,6 +409,14 @@ int arg2) {
   ((QTextDecoder*)qthis)->toUnicode(arg1,
 arg2);
   return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 143, column 14>
+//   // proto:  void QTextDecoder::QTextDecoder(const QTextCodec * codec);
+extern "C"
+QTextDecoder*
+C_ZN12QTextDecoderC2EPK10QTextCodec(const QTextCodec * arg1) {
+  auto ret = new QTextDecoder(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 144, column 5>
 //   // proto:  void QTextDecoder::QTextDecoder(const QTextCodec * codec, QTextCodec::ConversionFlags flags);

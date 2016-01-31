@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qcolor.h
 // dst-file: /src/gui/qcolor.cxx
 //
@@ -277,6 +277,22 @@ C_ZNK6QColor5toHslEv(void *qthis) {
   auto ret =
   ((QColor*)qthis)->toHsl();
   return new QColor(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 62, column 5>
+//   // proto:  void QColor::QColor();
+extern "C"
+QColor*
+C_ZN6QColorC2Ev() {
+  auto ret = new QColor();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 67, column 5>
+//   // proto:  void QColor::QColor(const char * name);
+extern "C"
+QColor*
+C_ZN6QColorC2EPKc(const char * arg1) {
+  auto ret = new QColor(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 94, column 10>
 //   // proto:  void QColor::setBlue(int blue);
@@ -631,6 +647,14 @@ C_ZNK6QColor5toHsvEv(void *qthis) {
   ((QColor*)qthis)->toHsv();
   return new QColor(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 68, column 5>
+//   // proto:  void QColor::QColor(const QColor & color);
+extern "C"
+QColor*
+C_ZN6QColorC2ERKS_(const QColor* arg1) {
+  auto ret = new QColor(*((const QColor*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 176, column 19>
 //   // proto: static QColor QColor::fromHsv(int h, int s, int v, int a);
 // _ZN6QColor7fromHsvEiiii fromHsv(int, int, int, int)
@@ -880,6 +904,14 @@ C_ZN6QColorC2ENS_4SpecE(QColor::Spec arg1) {
   auto ret = new QColor(arg1);
   return ret;
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 66, column 5>
+//   // proto:  void QColor::QColor(const QString & name);
+extern "C"
+QColor*
+C_ZN6QColorC2ERK7QString(const QString* arg1) {
+  auto ret = new QColor(*((const QString*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 171, column 19>
 //   // proto: static QColor QColor::fromRgba(QRgb rgba);
 // _ZN6QColor8fromRgbaEj fromRgba(QRgb)
@@ -939,6 +971,20 @@ C_ZNK6QColor10saturationEv(void *qthis) {
   auto ret =
   ((QColor*)qthis)->saturation();
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 64, column 5>
+//   // proto:  void QColor::QColor(int r, int g, int b, int a);
+extern "C"
+QColor*
+C_ZN6QColorC2Eiiii(int arg1,
+int arg2,
+int arg3,
+int arg4) {
+  auto ret = new QColor(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 86, column 11>
 //   // proto:  qreal QColor::alphaF();

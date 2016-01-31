@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qchar.h
 // dst-file: /src/core/qchar.cxx
 //
@@ -728,6 +728,14 @@ C_ZNK11QLatin1Char7unicodeEv(void *qthis) {
   ((QLatin1Char*)qthis)->unicode();
   return ret; // 0 TypeKind.USHORT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 47, column 38>
+//   // proto:  void QLatin1Char::QLatin1Char(char c);
+extern "C"
+QLatin1Char*
+C_ZN11QLatin1CharC2Ec(char arg1) {
+  auto ret = new QLatin1Char(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 48, column 34>
 //   // proto:  char QLatin1Char::toLatin1();
 // _ZNK11QLatin1Char8toLatin1Ev toLatin1()
@@ -879,6 +887,14 @@ C_ZNK5QChar11toTitleCaseEv(void *qthis) {
   auto ret =
   ((QChar*)qthis)->toTitleCase();
   return new QChar(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 82, column 22>
+//   // proto:  void QChar::QChar(QLatin1Char ch);
+extern "C"
+QChar*
+C_ZN5QCharC2E11QLatin1Char(QLatin1Char* arg1) {
+  auto ret = new QChar(*((QLatin1Char*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 517, column 41>
 //   // proto: static bool QChar::isLower(uint ucs4);
@@ -1190,6 +1206,16 @@ C_ZN5QChar7isUpperEj(uint arg1) {
   QChar::isUpper(arg1);
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 77, column 22>
+//   // proto:  void QChar::QChar(uchar c, uchar r);
+extern "C"
+QChar*
+C_ZN5QCharC2Ehh(uchar arg1,
+uchar arg2) {
+  auto ret = new QChar(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 401, column 18>
 //   // proto:  QChar QChar::toCaseFolded();
 // _ZNK5QChar12toCaseFoldedEv toCaseFolded()
@@ -1209,6 +1235,14 @@ C_ZNK5QChar7isPrintEv(void *qthis) {
   auto ret =
   ((QChar*)qthis)->isPrint();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 85, column 50>
+//   // proto:  void QChar::QChar(char c);
+extern "C"
+QChar*
+C_ZN5QCharC2Ec(char arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 425, column 17>
 //   // proto:  bool QChar::isPunct();
@@ -1230,6 +1264,22 @@ C_ZNK5QChar13decompositionEv(void *qthis) {
   ((QChar*)qthis)->decomposition();
   return new QString(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 79, column 22>
+//   // proto:  void QChar::QChar(uint rc);
+extern "C"
+QChar*
+C_ZN5QCharC2Ej(uint arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 80, column 22>
+//   // proto:  void QChar::QChar(int rc);
+extern "C"
+QChar*
+C_ZN5QCharC2Ei(int arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 373, column 22>
 //   // proto:  QChar::Direction QChar::direction();
 // _ZNK5QChar9directionEv direction()
@@ -1250,6 +1300,14 @@ C_ZNK5QChar7isSpaceEv(void *qthis) {
   ((QChar*)qthis)->isSpace();
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 78, column 22>
+//   // proto:  void QChar::QChar(short rc);
+extern "C"
+QChar*
+C_ZN5QCharC2Es(short arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 502, column 31>
 //   // proto: static QChar::Script QChar::script(uint ucs4);
 // _ZN5QChar6scriptEj script(uint)
@@ -1259,6 +1317,22 @@ C_ZN5QChar6scriptEj(uint arg1) {
   auto ret =
   QChar::script(arg1);
   return ret; // 0 TypeKind.ENUM
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 75, column 22>
+//   // proto:  void QChar::QChar();
+extern "C"
+QChar*
+C_ZN5QCharC2Ev() {
+  auto ret = new QChar();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 76, column 22>
+//   // proto:  void QChar::QChar(ushort rc);
+extern "C"
+QChar*
+C_ZN5QCharC2Et(ushort arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 432, column 34>
 //   // proto:  bool QChar::isUpper();
@@ -1309,6 +1383,14 @@ C_ZN5QChar7isDigitEj(uint arg1) {
   auto ret =
   QChar::isDigit(arg1);
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 81, column 22>
+//   // proto:  void QChar::QChar(QChar::SpecialCharacter s);
+extern "C"
+QChar*
+C_ZN5QCharC2ENS_16SpecialCharacterE(QChar::SpecialCharacter arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 511, column 29>
 //   // proto: static bool QChar::isPunct(uint ucs4);
@@ -1439,6 +1521,14 @@ C_ZNK5QChar7toLowerEv(void *qthis) {
   auto ret =
   ((QChar*)qthis)->toLower();
   return new QChar(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 87, column 50>
+//   // proto:  void QChar::QChar(uchar c);
+extern "C"
+QChar*
+C_ZN5QCharC2Eh(uchar arg1) {
+  auto ret = new QChar(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 513, column 41>
 //   // proto: static bool QChar::isLetter(uint ucs4);

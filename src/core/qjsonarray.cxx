@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qjsonarray.h
 // dst-file: /src/core/qjsonarray.cxx
 //
@@ -389,6 +389,14 @@ extern "C"
 QJsonArray*
 C_ZN10QJsonArrayC2Ev() {
   auto ret = new QJsonArray();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 56, column 5>
+//   // proto:  void QJsonArray::QJsonArray(std::initializer_list<QJsonValue> args);
+extern "C"
+QJsonArray*
+C_ZN10QJsonArrayC2ESt16initializer_listI10QJsonValueE(std::initializer_list<QJsonValue>* arg1) {
+  auto ret = new QJsonArray(*((std::initializer_list<QJsonValue>*)arg1));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 88, column 10>

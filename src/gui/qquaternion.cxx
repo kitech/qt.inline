@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qquaternion.h
 // dst-file: /src/gui/qquaternion.cxx
 //
@@ -328,6 +328,14 @@ C_ZN11QQuaternion9setVectorERK9QVector3D(void *qthis,
 const QVector3D* arg1) {
   ((QQuaternion*)qthis)->setVector(*((const QVector3D*)arg1));
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 59, column 14>
+//   // proto:  void QQuaternion::QQuaternion(const QVector4D & vector);
+extern "C"
+QQuaternion*
+C_ZN11QQuaternionC2ERK9QVector4D(const QVector4D* arg1) {
+  auto ret = new QQuaternion(*((const QVector4D*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 146, column 24>
 //   // proto: static QQuaternion QQuaternion::rotationTo(const QVector3D & from, const QVector3D & to);
 // _ZN11QQuaternion10rotationToERK9QVector3DS2_ rotationTo(const class QVector3D &, const class QVector3D &)
@@ -477,6 +485,14 @@ const QVector3D* arg2) {
   QQuaternion::fromDirection(*((const QVector3D*)arg1),
 *((const QVector3D*)arg2));
   return new QQuaternion(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 52, column 5>
+//   // proto:  void QQuaternion::QQuaternion();
+extern "C"
+QQuaternion*
+C_ZN11QQuaternionC2Ev() {
+  auto ret = new QQuaternion();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 86, column 17>
 //   // proto:  QQuaternion QQuaternion::normalized();
@@ -638,6 +654,20 @@ float arg3) {
 arg2,
 arg3);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 54, column 5>
+//   // proto:  void QQuaternion::QQuaternion(float scalar, float xpos, float ypos, float zpos);
+extern "C"
+QQuaternion*
+C_ZN11QQuaternionC2Effff(float arg1,
+float arg2,
+float arg3,
+float arg4) {
+  auto ret = new QQuaternion(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 124, column 24>
 //   // proto: static QQuaternion QQuaternion::fromAxisAndAngle(const QVector3D & axis, float angle);
 // _ZN11QQuaternion16fromAxisAndAngleERK9QVector3Df fromAxisAndAngle(const class QVector3D &, float)
@@ -649,6 +679,16 @@ float arg2) {
   QQuaternion::fromAxisAndAngle(*((const QVector3D*)arg1),
 arg2);
   return new QQuaternion(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 56, column 5>
+//   // proto:  void QQuaternion::QQuaternion(float scalar, const QVector3D & vector);
+extern "C"
+QQuaternion*
+C_ZN11QQuaternionC2EfRK9QVector3D(float arg1,
+const QVector3D* arg2) {
+  auto ret = new QQuaternion(arg1,
+*((const QVector3D*)arg2));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 83, column 11>
 //   // proto:  float QQuaternion::length();
@@ -693,6 +733,14 @@ arg2,
 arg3,
 arg4);
   return new QQuaternion(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 53, column 14>
+//   // proto:  void QQuaternion::QQuaternion(Qt::Initialization );
+extern "C"
+QQuaternion*
+C_ZN11QQuaternionC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QQuaternion(*((Qt::Initialization*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qquaternion.h', line 71, column 11>
 //   // proto:  float QQuaternion::x();

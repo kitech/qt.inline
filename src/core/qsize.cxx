@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qsize.h
 // dst-file: /src/core/qsize.cxx
 //
@@ -420,6 +420,14 @@ C_ZNK5QSize6isNullEv(void *qthis) {
   ((QSize*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 45, column 22>
+//   // proto:  void QSize::QSize();
+extern "C"
+QSize*
+C_ZN5QSizeC2Ev() {
+  auto ret = new QSize();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 64, column 35>
 //   // proto:  QSize QSize::expandedTo(const QSize & );
 // _ZNK5QSize10expandedToERKS_ expandedTo(const class QSize &)
@@ -461,6 +469,16 @@ const QSize* arg1,
 Qt::AspectRatioMode* arg2) {
   ((QSize*)qthis)->scale(*((const QSize*)arg1),
 *((Qt::AspectRatioMode*)arg2));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 46, column 22>
+//   // proto:  void QSize::QSize(int w, int h);
+extern "C"
+QSize*
+C_ZN5QSizeC2Eii(int arg1,
+int arg2) {
+  auto ret = new QSize(arg1,
+arg2);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 62, column 11>
 //   // proto:  QSize QSize::scaled(const QSize & s, Qt::AspectRatioMode mode);
@@ -646,6 +664,14 @@ Qt::AspectRatioMode* arg2) {
 *((Qt::AspectRatioMode*)arg2));
   return new QSizeF(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 204, column 22>
+//   // proto:  void QSizeF::QSizeF();
+extern "C"
+QSizeF*
+C_ZN6QSizeFC2Ev() {
+  auto ret = new QSizeF();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 212, column 35>
 //   // proto:  qreal QSizeF::width();
 // _ZNK6QSizeF5widthEv width()
@@ -694,6 +720,14 @@ extern "C"
 void
 C_ZN6QSizeF9transposeEv(void *qthis) {
   ((QSizeF*)qthis)->transpose();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 205, column 22>
+//   // proto:  void QSizeF::QSizeF(const QSize & sz);
+extern "C"
+QSizeF*
+C_ZN6QSizeFC2ERK5QSize(const QSize* arg1) {
+  auto ret = new QSizeF(*((const QSize*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 219, column 17>
 //   // proto:  void QSizeF::scale(qreal w, qreal h, Qt::AspectRatioMode mode);
@@ -758,6 +792,16 @@ C_ZNK6QSizeF6toSizeEv(void *qthis) {
   auto ret =
   ((QSizeF*)qthis)->toSize();
   return new QSize(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsize.h', line 206, column 22>
+//   // proto:  void QSizeF::QSizeF(qreal w, qreal h);
+extern "C"
+QSizeF*
+C_ZN6QSizeFC2Edd(qreal arg1,
+qreal arg2) {
+  auto ret = new QSizeF(arg1,
+arg2);
+  return ret;
 }
 // <= ext block end
 

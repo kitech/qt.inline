@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qvariant.h
 // dst-file: /src/core/qvariant.cxx
 //
@@ -140,6 +140,14 @@ int QAssociativeIterable_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 554, column 12>
+//   // proto:  void QVariantComparisonHelper::QVariantComparisonHelper(const QVariant & var);
+extern "C"
+QVariantComparisonHelper*
+C_ZN24QVariantComparisonHelperC2ERK8QVariant(const QVariant* arg1) {
+  auto ret = new QVariantComparisonHelper(*((const QVariant*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 286, column 12>
 //   // proto:  double QVariant::toDouble(bool * ok);
 // _ZNK8QVariant8toDoubleEPb toDouble(_Bool *)
@@ -930,6 +938,14 @@ C_ZN8QVariantC2Ey(qulonglong arg1) {
   auto ret = new QVariant(arg1);
   return ret;
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 193, column 5>
+//   // proto:  void QVariant::QVariant();
+extern "C"
+QVariant*
+C_ZN8QVariantC2Ev() {
+  auto ret = new QVariant();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 285, column 10>
 //   // proto:  bool QVariant::toBool();
 // _ZNK8QVariant6toBoolEv toBool()
@@ -1081,6 +1097,14 @@ extern "C"
 QVariant*
 C_ZN8QVariantC2ERK11QStringList(const QStringList* arg1) {
   auto ret = new QVariant(*((const QStringList*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 258, column 12>
+//   // proto:  void QVariant::QVariant(QVariant && other);
+extern "C"
+QVariant*
+C_ZN8QVariantC2EOS_(QVariant* arg1) {
+  auto ret = new QVariant(*((QVariant*)arg1));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 616, column 9>

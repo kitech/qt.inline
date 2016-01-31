@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qstring.h
 // dst-file: /src/core/qstring.cxx
 //
@@ -2167,6 +2167,14 @@ C_ZN7QString10push_frontE5QChar(void *qthis,
 QChar* arg1) {
   ((QString*)qthis)->push_front(*((QChar*)arg1));
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 213, column 12>
+//   // proto:  void QString::QString();
+extern "C"
+QString*
+C_ZN7QStringC2Ev() {
+  auto ret = new QString();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 603, column 12>
 //   // proto:  double QString::toDouble(bool * ok);
 // _ZNK7QString8toDoubleEPb toDouble(_Bool *)
@@ -2375,6 +2383,14 @@ C_ZN7QStringC2EiN2Qt14InitializationE(int arg1,
 Qt::Initialization* arg2) {
   auto ret = new QString(arg1,
 *((Qt::Initialization*)arg2));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 224, column 12>
+//   // proto:  void QString::QString(QString && other);
+extern "C"
+QString*
+C_ZN7QStringC2EOS_(QString* arg1) {
+  auto ret = new QString(*((QString*)arg1));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 263, column 13>
@@ -2625,6 +2641,14 @@ const QString* arg5) {
 *((const QString*)arg4),
 *((const QString*)arg5));
   return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 217, column 12>
+//   // proto:  void QString::QString(QLatin1String latin1);
+extern "C"
+QString*
+C_ZN7QStringC2E13QLatin1String(QLatin1String* arg1) {
+  auto ret = new QString(*((QLatin1String*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 565, column 14>
 //   // proto:  QString & QString::setRawData(const QChar * unicode, int size);
@@ -3101,6 +3125,14 @@ Qt::CaseSensitivity* arg2) {
 *((Qt::CaseSensitivity*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 649, column 31>
+//   // proto:  void QString::QString(const char * ch);
+extern "C"
+QString*
+C_ZN7QStringC2EPKc(const char * arg1) {
+  auto ret = new QString(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 460, column 14>
 //   // proto:  QString & QString::replace(QChar c, QLatin1String after, Qt::CaseSensitivity cs);
 // _ZN7QString7replaceE5QChar13QLatin1StringN2Qt15CaseSensitivityE replace(class QChar, class QLatin1String, Qt::CaseSensitivity)
@@ -3293,6 +3325,11 @@ C_ZNK7QString12toStdWStringB5cxx11Ev(void *qthis) {
   auto ret =
   ((QString*)qthis)->toStdWString();
   return new std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(ret); // 5
+}
+//   // proto:  void QString::~QString();
+extern "C"
+void C_ZN7QStringD2Ev(void *qthis) {
+  delete (QString*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 468, column 21>
 //   // proto:  QString & QString::remove(const QRegularExpression & re);
@@ -3702,6 +3739,14 @@ C_ZNO7QString10simplifiedEv(void *qthis) {
   ((QString*)qthis)->simplified();
   return new QString(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 756, column 12>
+//   // proto:  void QString::QString(const QString::Null & );
+extern "C"
+QString*
+C_ZN7QStringC2ERKNS_4NullE(const QString::Null* arg1) {
+  auto ret = new QString(*((const QString::Null*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 359, column 13>
 //   // proto:  QString QString::section(const QRegularExpression & re, int start, int end, SectionFlags flags);
 // _ZNK7QString7sectionERK18QRegularExpressionii6QFlagsINS_11SectionFlagEE section(const class QRegularExpression &, int, int, SectionFlags)
@@ -3968,6 +4013,14 @@ const QStringRef* arg1) {
   ((QString*)qthis)->localeAwareCompare(*((const QStringRef*)arg1));
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 765, column 29>
+//   // proto:  void QString::QString(QStringDataPtr dd);
+extern "C"
+QString*
+C_ZN7QStringC2E14QStringDataPtr(QStringDataPtr* arg1) {
+  auto ret = new QString(*((QStringDataPtr*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 335, column 9>
 //   // proto:  int QString::indexOf(const QRegularExpression & re, int from);
 // _ZNK7QString7indexOfERK18QRegularExpressioni indexOf(const class QRegularExpression &, int)
@@ -4034,12 +4087,12 @@ C_ZN7QString13fromLocal8BitERK10QByteArray(const QByteArray* arg1) {
 //   // proto:  const QChar QString::at(int i);
 // _ZNK7QString2atEi at(int)
 extern "C"
-const QChar*
+QChar*
 C_ZNK7QString2atEi(void *qthis,
 int arg1) {
   auto ret =
   ((QString*)qthis)->at(arg1);
-  return new const QChar(ret); // 5
+  return new QChar(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 304, column 20>
 //   // proto: static QString QString::asprintf(const char * format);
@@ -4398,6 +4451,14 @@ arg3,
 *((QChar*)arg4));
   return new QString(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 218, column 12>
+//   // proto:  void QString::QString(const QString & );
+extern "C"
+QString*
+C_ZN7QStringC2ERKS_(const QString* arg1) {
+  auto ret = new QString(*((const QString*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 271, column 13>
 //   // proto:  QString QString::arg(short a, int fieldWidth, int base, QChar fillChar);
 // _ZNK7QString3argEsii5QChar arg(short, int, int, class QChar)
@@ -4439,6 +4500,14 @@ Qt::CaseSensitivity* arg3) {
 arg2,
 *((Qt::CaseSensitivity*)arg3));
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 652, column 31>
+//   // proto:  void QString::QString(const QByteArray & a);
+extern "C"
+QString*
+C_ZN7QStringC2ERK10QByteArray(const QByteArray* arg1) {
+  auto ret = new QString(*((const QByteArray*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 303, column 20>
 //   // proto: static QString QString::vasprintf(const char * format, va_list ap);
@@ -4959,6 +5028,14 @@ C_ZNK13QLatin1String4dataEv(void *qthis) {
   ((QLatin1String*)qthis)->data();
   return (void*)ret;
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 85, column 38>
+//   // proto:  void QLatin1String::QLatin1String(const char * s);
+extern "C"
+QLatin1String*
+C_ZN13QLatin1StringC2EPKc(const char * arg1) {
+  auto ret = new QLatin1String(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 90, column 16>
 //   // proto:  int QLatin1String::size();
 // _ZNK13QLatin1String4sizeEv size()
@@ -4969,6 +5046,14 @@ C_ZNK13QLatin1String4sizeEv(void *qthis) {
   ((QLatin1String*)qthis)->size();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 87, column 21>
+//   // proto:  void QLatin1String::QLatin1String(const QByteArray & s);
+extern "C"
+QLatin1String*
+C_ZN13QLatin1StringC2ERK10QByteArray(const QByteArray* arg1) {
+  auto ret = new QLatin1String(*((const QByteArray*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 89, column 24>
 //   // proto:  const char * QLatin1String::latin1();
 // _ZNK13QLatin1String6latin1Ev latin1()
@@ -4978,6 +5063,16 @@ C_ZNK13QLatin1String6latin1Ev(void *qthis) {
   auto ret =
   ((QLatin1String*)qthis)->latin1();
   return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 86, column 38>
+//   // proto:  void QLatin1String::QLatin1String(const char * s, int sz);
+extern "C"
+QLatin1String*
+C_ZN13QLatin1StringC2EPKci(const char * arg1,
+int arg2) {
+  auto ret = new QLatin1String(arg1,
+arg2);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 995, column 17>
 //   // proto:  bool QCharRef::isLetterOrNumber();
@@ -5343,6 +5438,14 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.SHORT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1348, column 12>
+//   // proto:  void QStringRef::QStringRef(const QString * string);
+extern "C"
+QStringRef*
+C_ZN10QStringRefC2EPK7QString(const QString * arg1) {
+  auto ret = new QStringRef(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1471, column 16>
 //   // proto:  qulonglong QStringRef::toULongLong(bool * ok, int base);
 // _ZNK10QStringRef11toULongLongEPbi toULongLong(_Bool *, int)
@@ -5622,6 +5725,14 @@ int arg1) {
   ((QStringRef*)qthis)->left(arg1);
   return new QStringRef(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1351, column 12>
+//   // proto:  void QStringRef::QStringRef(const QStringRef & other);
+extern "C"
+QStringRef*
+C_ZN10QStringRefC2ERKS_(const QStringRef* arg1) {
+  auto ret = new QStringRef(*((const QStringRef*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1448, column 9>
 //   // proto:  int QStringRef::compare(const QString & s, Qt::CaseSensitivity cs);
 // _ZNK10QStringRef7compareERK7QStringN2Qt15CaseSensitivityE compare(const class QString &, Qt::CaseSensitivity)
@@ -5670,6 +5781,18 @@ arg2,
 *((Qt::CaseSensitivity*)arg3));
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1347, column 12>
+//   // proto:  void QStringRef::QStringRef(const QString * string, int position, int size);
+extern "C"
+QStringRef*
+C_ZN10QStringRefC2EPK7QStringii(const QString * arg1,
+int arg2,
+int arg3) {
+  auto ret = new QStringRef(arg1,
+arg2,
+arg3);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1375, column 9>
 //   // proto:  int QStringRef::lastIndexOf(const QStringRef & str, int from, Qt::CaseSensitivity cs);
 // _ZNK10QStringRef11lastIndexOfERKS_iN2Qt15CaseSensitivityE lastIndexOf(const class QStringRef &, int, Qt::CaseSensitivity)
@@ -5697,6 +5820,14 @@ Qt::CaseSensitivity* arg2) {
   ((QStringRef*)qthis)->startsWith(*((const QString*)arg1),
 *((Qt::CaseSensitivity*)arg2));
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1346, column 12>
+//   // proto:  void QStringRef::QStringRef();
+extern "C"
+QStringRef*
+C_ZN10QStringRefC2Ev() {
+  auto ret = new QStringRef();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1403, column 10>
 //   // proto:  bool QStringRef::endsWith(const QStringRef & c, Qt::CaseSensitivity cs);
@@ -5739,12 +5870,12 @@ Qt::CaseSensitivity* arg2) {
 //   // proto:  const QChar QStringRef::at(int i);
 // _ZNK10QStringRef2atEi at(int)
 extern "C"
-const QChar*
+QChar*
 C_ZNK10QStringRef2atEi(void *qthis,
 int arg1) {
   auto ret =
   ((QStringRef*)qthis)->at(arg1);
-  return new const QChar(ret); // 5
+  return new QChar(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1388, column 25>
 //   // proto:  QVector<QStringRef> QStringRef::split(QChar sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs);
@@ -6078,6 +6209,11 @@ Qt::CaseSensitivity* arg3) {
 arg2,
 *((Qt::CaseSensitivity*)arg3));
   return ret; // 0 TypeKind.INT
+}
+//   // proto:  void QStringRef::~QStringRef();
+extern "C"
+void C_ZN10QStringRefD2Ev(void *qthis) {
+  delete (QStringRef*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1401, column 10>
 //   // proto:  bool QStringRef::endsWith(QLatin1String s, Qt::CaseSensitivity cs);

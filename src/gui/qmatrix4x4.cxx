@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qmatrix4x4.h
 // dst-file: /src/gui/qmatrix4x4.cxx
 //
@@ -326,6 +326,14 @@ arg4,
 arg5,
 arg6);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 55, column 12>
+//   // proto:  void QMatrix4x4::QMatrix4x4();
+extern "C"
+QMatrix4x4*
+C_ZN10QMatrix4x4C2Ev() {
+  auto ret = new QMatrix4x4();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 152, column 13>
 //   // proto:  QMatrix QMatrix4x4::toAffine();
 // _ZNK10QMatrix4x48toAffineEv toAffine()
@@ -567,6 +575,14 @@ const QPoint* arg1) {
   ((QMatrix4x4*)qthis)->map(*((const QPoint*)arg1));
   return new QPoint(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 56, column 14>
+//   // proto:  void QMatrix4x4::QMatrix4x4(Qt::Initialization );
+extern "C"
+QMatrix4x4*
+C_ZN10QMatrix4x4C2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QMatrix4x4(*((Qt::Initialization*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 175, column 10>
 //   // proto:  void QMatrix4x4::optimize();
 // _ZN10QMatrix4x48optimizeEv optimize()
@@ -623,6 +639,44 @@ float arg1,
 float arg2) {
   ((QMatrix4x4*)qthis)->scale(arg1,
 arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 58, column 12>
+//   // proto:  void QMatrix4x4::QMatrix4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);
+extern "C"
+QMatrix4x4*
+C_ZN10QMatrix4x4C2Effffffffffffffff(float arg1,
+float arg2,
+float arg3,
+float arg4,
+float arg5,
+float arg6,
+float arg7,
+float arg8,
+float arg9,
+float arg10,
+float arg11,
+float arg12,
+float arg13,
+float arg14,
+float arg15,
+float arg16) {
+  auto ret = new QMatrix4x4(arg1,
+arg2,
+arg3,
+arg4,
+arg5,
+arg6,
+arg7,
+arg8,
+arg9,
+arg10,
+arg11,
+arg12,
+arg13,
+arg14,
+arg15,
+arg16);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 159, column 15>
 //   // proto:  QVector3D QMatrix4x4::map(const QVector3D & point);

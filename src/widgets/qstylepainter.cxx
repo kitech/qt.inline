@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qstylepainter.h
 // dst-file: /src/widgets/qstylepainter.cxx
 //
@@ -136,6 +136,24 @@ int QStylePainter_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 48, column 21>
+//   // proto:  void QStylePainter::QStylePainter(QWidget * w);
+extern "C"
+QStylePainter*
+C_ZN13QStylePainterC2EP7QWidget(QWidget * arg1) {
+  auto ret = new QStylePainter(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 49, column 12>
+//   // proto:  void QStylePainter::QStylePainter(QPaintDevice * pd, QWidget * w);
+extern "C"
+QStylePainter*
+C_ZN13QStylePainterC2EP12QPaintDeviceP7QWidget(QPaintDevice * arg1,
+QWidget * arg2) {
+  auto ret = new QStylePainter(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 59, column 17>
 //   // proto:  void QStylePainter::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex & opt);
 // _ZN13QStylePainter18drawComplexControlEN6QStyle14ComplexControlERK19QStyleOptionComplex drawComplexControl(class QStyle::ComplexControl, const class QStyleOptionComplex &)
@@ -146,6 +164,14 @@ QStyle::ComplexControl* arg1,
 const QStyleOptionComplex* arg2) {
   ((QStylePainter*)qthis)->drawComplexControl(*((QStyle::ComplexControl*)arg1),
 *((const QStyleOptionComplex*)arg2));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 47, column 12>
+//   // proto:  void QStylePainter::QStylePainter();
+extern "C"
+QStylePainter*
+C_ZN13QStylePainterC2Ev() {
+  auto ret = new QStylePainter();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qstylepainter.h', line 51, column 17>
 //   // proto:  bool QStylePainter::begin(QPaintDevice * pd, QWidget * w);

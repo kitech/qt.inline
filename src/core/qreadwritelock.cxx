@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qreadwritelock.h
 // dst-file: /src/core/qreadwritelock.cxx
 //
@@ -138,6 +138,14 @@ C_ZNK12QWriteLocker13readWriteLockEv(void *qthis) {
   ((QWriteLocker*)qthis)->readWriteLock();
   return (void*)ret;
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 123, column 12>
+//   // proto:  void QWriteLocker::QWriteLocker(QReadWriteLock * readWriteLock);
+extern "C"
+QWriteLocker*
+C_ZN12QWriteLockerC2EP14QReadWriteLock(QReadWriteLock * arg1) {
+  auto ret = new QWriteLocker(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 128, column 17>
 //   // proto:  void QWriteLocker::unlock();
 // _ZN12QWriteLocker6unlockEv unlock()
@@ -145,6 +153,11 @@ extern "C"
 void
 C_ZN12QWriteLocker6unlockEv(void *qthis) {
   ((QWriteLocker*)qthis)->unlock();
+}
+//   // proto:  void QWriteLocker::~QWriteLocker();
+extern "C"
+void C_ZN12QWriteLockerD2Ev(void *qthis) {
+  delete (QWriteLocker*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 138, column 17>
 //   // proto:  void QWriteLocker::relock();
@@ -242,6 +255,19 @@ C_ZNK11QReadLocker13readWriteLockEv(void *qthis) {
   auto ret =
   ((QReadLocker*)qthis)->readWriteLock();
   return (void*)ret;
+}
+//   // proto:  void QReadLocker::~QReadLocker();
+extern "C"
+void C_ZN11QReadLockerD2Ev(void *qthis) {
+  delete (QReadLocker*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 79, column 12>
+//   // proto:  void QReadLocker::QReadLocker(QReadWriteLock * readWriteLock);
+extern "C"
+QReadLocker*
+C_ZN11QReadLockerC2EP14QReadWriteLock(QReadWriteLock * arg1) {
+  auto ret = new QReadLocker(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qreadwritelock.h', line 94, column 17>
 //   // proto:  void QReadLocker::relock();

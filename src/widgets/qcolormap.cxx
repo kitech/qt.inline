@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qcolormap.h
 // dst-file: /src/widgets/qcolormap.cxx
 //
@@ -60,12 +60,12 @@ C_ZNK9QColormap8colormapEv(void *qthis) {
 //   // proto:  const QColor QColormap::colorAt(uint pixel);
 // _ZNK9QColormap7colorAtEj colorAt(uint)
 extern "C"
-const QColor*
+QColor*
 C_ZNK9QColormap7colorAtEj(void *qthis,
 uint arg1) {
   auto ret =
   ((QColormap*)qthis)->colorAt(arg1);
-  return new const QColor(ret); // 5
+  return new QColor(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qcolormap.h', line 63, column 10>
 //   // proto:  QColormap::Mode QColormap::mode();

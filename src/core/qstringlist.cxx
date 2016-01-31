@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qstringlist.h
 // dst-file: /src/core/qstringlist.cxx
 //
@@ -275,6 +275,14 @@ Qt::CaseSensitivity* arg2) {
 *((Qt::CaseSensitivity*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 97, column 12>
+//   // proto:  void QStringList::QStringList();
+extern "C"
+QStringList*
+C_ZN11QStringListC2Ev() {
+  auto ret = new QStringList();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 126, column 16>
 //   // proto:  int QStringList::indexOf(const QRegExp & rx, int from);
 // _ZNK11QStringList7indexOfERK7QRegExpi indexOf(const class QRegExp &, int)
@@ -287,6 +295,14 @@ int arg2) {
   ((QStringList*)qthis)->indexOf(*((const QRegExp*)arg1),
 arg2);
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 101, column 12>
+//   // proto:  void QStringList::QStringList(QList<QString> && l);
+extern "C"
+QStringList*
+C_ZN11QStringListC2EO5QListI7QStringE(QList<QString>* arg1) {
+  auto ret = new QStringList(*((QList<QString>*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 128, column 16>
 //   // proto:  int QStringList::indexOf(QRegExp & rx, int from);
@@ -339,6 +355,30 @@ int arg2) {
   ((QStringList*)qthis)->lastIndexOf(*((QRegExp*)arg1),
 arg2);
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 104, column 12>
+//   // proto:  void QStringList::QStringList(std::initializer_list<QString> args);
+extern "C"
+QStringList*
+C_ZN11QStringListC2ESt16initializer_listI7QStringE(std::initializer_list<QString>* arg1) {
+  auto ret = new QStringList(*((std::initializer_list<QString>*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 98, column 21>
+//   // proto:  void QStringList::QStringList(const QString & i);
+extern "C"
+QStringList*
+C_ZN11QStringListC2ERK7QString(const QString* arg1) {
+  auto ret = new QStringList(*((const QString*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 99, column 12>
+//   // proto:  void QStringList::QStringList(const QList<QString> & l);
+extern "C"
+QStringList*
+C_ZN11QStringListC2ERK5QListI7QStringE(const QList<QString>* arg1) {
+  auto ret = new QStringList(*((const QList<QString>*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstringlist.h', line 82, column 25>
 //   // proto:  QStringList & QListSpecialMethods<QString>::replaceInStrings(const QRegularExpression & re, const QString & after);

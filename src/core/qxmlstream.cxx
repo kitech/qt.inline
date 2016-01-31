@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qxmlstream.h
 // dst-file: /src/core/qxmlstream.cxx
 //
@@ -466,6 +466,14 @@ void
 C_ZN19QXmlStreamStringRef5clearEv(void *qthis) {
   ((QXmlStreamStringRef*)qthis)->clear();
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 53, column 12>
+//   // proto:  void QXmlStreamStringRef::QXmlStreamStringRef(const QStringRef & aString);
+extern "C"
+QXmlStreamStringRef*
+C_ZN19QXmlStreamStringRefC2ERK10QStringRef(const QStringRef* arg1) {
+  auto ret = new QXmlStreamStringRef(*((const QStringRef*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 59, column 27>
 //   // proto:  const QString * QXmlStreamStringRef::string();
 // _ZNK19QXmlStreamStringRef6stringEv string()
@@ -475,6 +483,27 @@ C_ZNK19QXmlStreamStringRef6stringEv(void *qthis) {
   auto ret =
   ((QXmlStreamStringRef*)qthis)->string();
   return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 55, column 12>
+//   // proto:  void QXmlStreamStringRef::QXmlStreamStringRef(const QString & aString);
+extern "C"
+QXmlStreamStringRef*
+C_ZN19QXmlStreamStringRefC2ERK7QString(const QString* arg1) {
+  auto ret = new QXmlStreamStringRef(*((const QString*)arg1));
+  return ret;
+}
+//   // proto:  void QXmlStreamStringRef::~QXmlStreamStringRef();
+extern "C"
+void C_ZN19QXmlStreamStringRefD2Ev(void *qthis) {
+  delete (QXmlStreamStringRef*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 52, column 12>
+//   // proto:  void QXmlStreamStringRef::QXmlStreamStringRef();
+extern "C"
+QXmlStreamStringRef*
+C_ZN19QXmlStreamStringRefC2Ev() {
+  auto ret = new QXmlStreamStringRef();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 60, column 16>
 //   // proto:  int QXmlStreamStringRef::position();
@@ -1220,6 +1249,14 @@ const QString* arg1) {
   auto ret =
   ((QXmlStreamAttributes*)qthis)->value(*((const QString*)arg1));
   return new QStringRef(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 104, column 12>
+//   // proto:  void QXmlStreamAttributes::QXmlStreamAttributes();
+extern "C"
+QXmlStreamAttributes*
+C_ZN20QXmlStreamAttributesC2Ev() {
+  auto ret = new QXmlStreamAttributes();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 113, column 17>
 //   // proto:  bool QXmlStreamAttributes::hasAttribute(const QString & qualifiedName);

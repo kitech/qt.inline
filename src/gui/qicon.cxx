@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qicon.h
 // dst-file: /src/gui/qicon.cxx
 //
@@ -168,6 +168,14 @@ QIcon::State arg4) {
 arg3,
 arg4);
   return new QPixmap(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qicon.h', line 58, column 5>
+//   // proto:  void QIcon::QIcon(QIcon && other);
+extern "C"
+QIcon*
+C_ZN5QIconC2EOS_(QIcon* arg1) {
+  auto ret = new QIcon(*((QIcon*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qicon.h', line 93, column 10>
 //   // proto:  void QIcon::detach();

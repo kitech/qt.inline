@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qdebug.h
 // dst-file: /src/core/qdebug.cxx
 //
@@ -315,6 +315,14 @@ extern "C"
 void C_ZN6QDebugD2Ev(void *qthis) {
   delete (QDebug*)qthis;
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 89, column 12>
+//   // proto:  void QDebug::QDebug(const QDebug & o);
+extern "C"
+QDebug*
+C_ZN6QDebugC2ERKS_(const QDebug* arg1) {
+  auto ret = new QDebug(*((const QDebug*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 96, column 20>
 //   // proto:  QDebug & QDebug::space();
 // _ZN6QDebug5spaceEv space()
@@ -324,6 +332,14 @@ C_ZN6QDebug5spaceEv(void *qthis) {
   auto& ret =
   ((QDebug*)qthis)->space();
   return new QDebug(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 88, column 12>
+//   // proto:  void QDebug::QDebug(QtMsgType t);
+extern "C"
+QDebug*
+C_ZN6QDebugC2E9QtMsgType(QtMsgType arg1) {
+  auto ret = new QDebug(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 98, column 20>
 //   // proto:  QDebug & QDebug::maybeSpace();
@@ -354,6 +370,14 @@ C_ZN6QDebug19setAutoInsertSpacesEb(void *qthis,
 bool arg1) {
   ((QDebug*)qthis)->setAutoInsertSpaces(arg1);
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 87, column 12>
+//   // proto:  void QDebug::QDebug(QString * string);
+extern "C"
+QDebug*
+C_ZN6QDebugC2EP7QString(QString * arg1) {
+  auto ret = new QDebug(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 92, column 17>
 //   // proto:  void QDebug::swap(QDebug & other);
 // _ZN6QDebug4swapERS_ swap(class QDebug &)
@@ -382,6 +406,14 @@ C_ZNK6QDebug16autoInsertSpacesEv(void *qthis) {
   auto ret =
   ((QDebug*)qthis)->autoInsertSpaces();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 86, column 12>
+//   // proto:  void QDebug::QDebug(QIODevice * device);
+extern "C"
+QDebug*
+C_ZN6QDebugC2EP9QIODevice(QIODevice * arg1) {
+  auto ret = new QDebug(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdebug.h', line 103, column 20>
 //   // proto:  QDebug & QDebug::quote();

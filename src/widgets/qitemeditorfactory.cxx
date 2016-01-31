@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qitemeditorfactory.h
 // dst-file: /src/widgets/qitemeditorfactory.cxx
 //
@@ -72,6 +72,14 @@ QWidget * arg1) {
 extern "C"
 void C_ZN22QItemEditorCreatorBaseD2Ev(void *qthis) {
   delete (QItemEditorCreatorBase*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 92, column 12>
+//   // proto:  void QItemEditorFactory::QItemEditorFactory();
+extern "C"
+QItemEditorFactory*
+C_ZN18QItemEditorFactoryC2Ev() {
+  auto ret = new QItemEditorFactory();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 96, column 24>
 //   // proto:  QByteArray QItemEditorFactory::valuePropertyName(int userType);

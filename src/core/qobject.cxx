@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qobject.h
 // dst-file: /src/core/qobject.cxx
 //
@@ -194,6 +194,22 @@ void
 C_ZN14QSignalBlocker7unblockEv(void *qthis) {
   ((QSignalBlocker*)qthis)->unblock();
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qobject.h', line 552, column 21>
+//   // proto:  void QSignalBlocker::QSignalBlocker(QObject & o);
+extern "C"
+QSignalBlocker*
+C_ZN14QSignalBlockerC2ER7QObject(QObject* arg1) {
+  auto ret = new QSignalBlocker(*((QObject*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qobject.h', line 551, column 21>
+//   // proto:  void QSignalBlocker::QSignalBlocker(QObject * o);
+extern "C"
+QSignalBlocker*
+C_ZN14QSignalBlockerC2EP7QObject(QObject * arg1) {
+  auto ret = new QSignalBlocker(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qobject.h', line 560, column 17>
 //   // proto:  void QSignalBlocker::reblock();
 // _ZN14QSignalBlocker7reblockEv reblock()
@@ -201,6 +217,11 @@ extern "C"
 void
 C_ZN14QSignalBlocker7reblockEv(void *qthis) {
   ((QSignalBlocker*)qthis)->reblock();
+}
+//   // proto:  void QSignalBlocker::~QSignalBlocker();
+extern "C"
+void C_ZN14QSignalBlockerD2Ev(void *qthis) {
+  delete (QSignalBlocker*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qobject.h', line 102, column 18>
 //   // proto:  QMetaObject * QObjectData::dynamicMetaObject();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qmetaobject.h
 // dst-file: /src/core/qmetaobject.cxx
 //
@@ -262,6 +262,14 @@ int arg1) {
   ((QMetaEnum*)qthis)->valueToKeys(arg1);
   return new QByteArray(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 207, column 29>
+//   // proto:  void QMetaEnum::QMetaEnum();
+extern "C"
+QMetaEnum*
+C_ZN9QMetaEnumC2Ev() {
+  auto ret = new QMetaEnum();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 220, column 9>
 //   // proto:  int QMetaEnum::keysToValue(const char * keys, bool * ok);
 // _ZNK9QMetaEnum11keysToValueEPKcPb keysToValue(const char *, _Bool *)
@@ -316,6 +324,14 @@ C_ZNK9QMetaEnum7isValidEv(void *qthis) {
   auto ret =
   ((QMetaEnum*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 300, column 29>
+//   // proto:  void QMetaClassInfo::QMetaClassInfo();
+extern "C"
+QMetaClassInfo*
+C_ZN14QMetaClassInfoC2Ev() {
+  auto ret = new QMetaClassInfo();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 303, column 31>
 //   // proto:  const QMetaObject * QMetaClassInfo::enclosingMetaObject();
@@ -491,6 +507,14 @@ void
 C_ZNK11QMetaMethod17getParameterTypesEPi(void *qthis,
 int * arg1) {
   ((QMetaMethod*)qthis)->getParameterTypes(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 51, column 29>
+//   // proto:  void QMetaMethod::QMetaMethod();
+extern "C"
+QMetaMethod*
+C_ZN11QMetaMethodC2Ev() {
+  auto ret = new QMetaMethod();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmetaobject.h', line 103, column 17>
 //   // proto:  bool QMetaMethod::invoke(QObject * object, Qt::ConnectionType connectionType, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);

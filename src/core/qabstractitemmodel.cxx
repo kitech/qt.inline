@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -254,6 +254,14 @@ int QAbstractListModel_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 52, column 29>
+//   // proto:  void QModelIndex::QModelIndex();
+extern "C"
+QModelIndex*
+C_ZN11QModelIndexC2Ev() {
+  auto ret = new QModelIndex();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 55, column 33>
 //   // proto:  int QModelIndex::column();
 // _ZNK11QModelIndex6columnEv column()
@@ -432,6 +440,14 @@ C_ZNK21QPersistentModelIndex15internalPointerEv(void *qthis) {
   auto ret =
   ((QPersistentModelIndex*)qthis)->internalPointer();
   return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 109, column 12>
+//   // proto:  void QPersistentModelIndex::QPersistentModelIndex(QPersistentModelIndex && other);
+extern "C"
+QPersistentModelIndex*
+C_ZN21QPersistentModelIndexC2EOS_(QPersistentModelIndex* arg1) {
+  auto ret = new QPersistentModelIndex(*((QPersistentModelIndex*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 119, column 9>
 //   // proto:  int QPersistentModelIndex::row();

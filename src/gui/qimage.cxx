@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -1226,6 +1226,14 @@ int arg3) {
 arg2,
 arg3);
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 139, column 12>
+//   // proto:  void QImage::QImage(QImage && other);
+extern "C"
+QImage*
+C_ZN6QImageC2EOS_(QImage* arg1) {
+  auto ret = new QImage(*((QImage*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 194, column 10>
 //   // proto:  void QImage::setColor(int i, QRgb c);

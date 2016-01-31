@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpicture.h
 // dst-file: /src/gui/qpicture.cxx
 //
@@ -210,11 +210,11 @@ int arg1) {
 //   // proto:  const QPicture & QPictureIO::picture();
 // _ZNK10QPictureIO7pictureEv picture()
 extern "C"
-const QPicture*
+QPicture*
 C_ZNK10QPictureIO7pictureEv(void *qthis) {
   auto& ret =
   ((QPictureIO*)qthis)->picture();
-  return new const QPicture(ret); // 5
+  return new QPicture(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpicture.h', line 142, column 10>
 //   // proto:  void QPictureIO::setFormat(const char * );

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qcursor.h
 // dst-file: /src/gui/qcursor.cxx
 //
@@ -171,6 +171,14 @@ C_ZNK7QCursor5shapeEv(void *qthis) {
   auto ret =
   ((QCursor*)qthis)->shape();
   return ret; // 0 TypeKind.ENUM
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 83, column 5>
+//   // proto:  void QCursor::QCursor(QCursor && other);
+extern "C"
+QCursor*
+C_ZN7QCursorC2EOS_(QCursor* arg1) {
+  auto ret = new QCursor(*((QCursor*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 92, column 20>
 //   // proto:  const QBitmap * QCursor::bitmap();

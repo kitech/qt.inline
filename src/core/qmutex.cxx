@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qmutex.h
 // dst-file: /src/core/qmutex.cxx
 //
@@ -116,6 +116,14 @@ int QMutex_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 121, column 21>
+//   // proto:  void QMutexLocker::QMutexLocker(QBasicMutex * m);
+extern "C"
+QMutexLocker*
+C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * arg1) {
+  auto ret = new QMutexLocker(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 157, column 20>
 //   // proto:  QMutex * QMutexLocker::mutex();
 // _ZNK12QMutexLocker5mutexEv mutex()
@@ -141,6 +149,11 @@ extern "C"
 void
 C_ZN12QMutexLocker6unlockEv(void *qthis) {
   ((QMutexLocker*)qthis)->unlock();
+}
+//   // proto:  void QMutexLocker::~QMutexLocker();
+extern "C"
+void C_ZN12QMutexLockerD2Ev(void *qthis) {
+  delete (QMutexLocker*)qthis;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmutex.h', line 57, column 17>
 //   // proto:  void QBasicMutex::lock();

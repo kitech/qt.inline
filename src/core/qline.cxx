@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -516,6 +516,16 @@ C_ZNK5QLine2x2Ev(void *qthis) {
   ((QLine*)qthis)->x2();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 50, column 29>
+//   // proto:  void QLine::QLine(const QPoint & pt1, const QPoint & pt2);
+extern "C"
+QLine*
+C_ZN5QLineC2ERK6QPointS2_(const QPoint* arg1,
+const QPoint* arg2) {
+  auto ret = new QLine(*((const QPoint*)arg1),
+*((const QPoint*)arg2));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
 //   // proto:  void QLine::setP1(const QPoint & p1);
 // _ZN5QLine5setP1ERK6QPoint setP1(const class QPoint &)
@@ -594,6 +604,20 @@ C_ZNK5QLine2p2Ev(void *qthis) {
   ((QLine*)qthis)->p2();
   return new QPoint(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 51, column 29>
+//   // proto:  void QLine::QLine(int x1, int y1, int x2, int y2);
+extern "C"
+QLine*
+C_ZN5QLineC2Eiiii(int arg1,
+int arg2,
+int arg3,
+int arg4) {
+  auto ret = new QLine(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 17>
 //   // proto:  void QLine::translate(int dx, int dy);
 // _ZN5QLine9translateEii translate(int, int)
@@ -653,6 +677,14 @@ C_ZNK5QLine2x1Ev(void *qthis) {
   auto ret =
   ((QLine*)qthis)->x1();
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 49, column 29>
+//   // proto:  void QLine::QLine();
+extern "C"
+QLine*
+C_ZN5QLineC2Ev() {
+  auto ret = new QLine();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 245, column 17>
 //   // proto:  void QLineF::translate(qreal dx, qreal dy);
@@ -727,6 +759,16 @@ C_ZNK6QLineF5angleEv(void *qthis) {
   ((QLineF*)qthis)->angle();
   return ret; // 0 TypeKind.DOUBLE
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 207, column 29>
+//   // proto:  void QLineF::QLineF(const QPointF & pt1, const QPointF & pt2);
+extern "C"
+QLineF*
+C_ZN6QLineFC2ERK7QPointFS2_(const QPointF* arg1,
+const QPointF* arg2) {
+  auto ret = new QLineF(*((const QPointF*)arg1),
+*((const QPointF*)arg2));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 227, column 11>
 //   // proto:  qreal QLineF::length();
 // _ZNK6QLineF6lengthEv length()
@@ -736,6 +778,14 @@ C_ZNK6QLineF6lengthEv(void *qthis) {
   auto ret =
   ((QLineF*)qthis)->length();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 209, column 29>
+//   // proto:  void QLineF::QLineF(const QLine & line);
+extern "C"
+QLineF*
+C_ZN6QLineFC2ERK5QLine(const QLine* arg1) {
+  auto ret = new QLineF(*((const QLine*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 231, column 10>
 //   // proto:  void QLineF::setAngle(qreal angle);
@@ -774,6 +824,14 @@ C_ZNK6QLineF2dxEv(void *qthis) {
   auto ret =
   ((QLineF*)qthis)->dx();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 206, column 29>
+//   // proto:  void QLineF::QLineF();
+extern "C"
+QLineF*
+C_ZN6QLineFC2Ev() {
+  auto ret = new QLineF();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 215, column 37>
 //   // proto:  QPointF QLineF::p1();
@@ -835,6 +893,20 @@ C_ZNK6QLineF2y2Ev(void *qthis) {
   auto ret =
   ((QLineF*)qthis)->y2();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 208, column 29>
+//   // proto:  void QLineF::QLineF(qreal x1, qreal y1, qreal x2, qreal y2);
+extern "C"
+QLineF*
+C_ZN6QLineFC2Edddd(qreal arg1,
+qreal arg2,
+qreal arg3,
+qreal arg4) {
+  auto ret = new QLineF(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>
 //   // proto:  qreal QLineF::dy();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qmargins.h
 // dst-file: /src/core/qmargins.cxx
 //
@@ -327,6 +327,28 @@ C_ZNK9QMarginsF4leftEv(void *qthis) {
   ((QMarginsF*)qthis)->left();
   return ret; // 0 TypeKind.DOUBLE
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 282, column 22>
+//   // proto:  void QMarginsF::QMarginsF();
+extern "C"
+QMarginsF*
+C_ZN9QMarginsFC2Ev() {
+  auto ret = new QMarginsF();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 283, column 22>
+//   // proto:  void QMarginsF::QMarginsF(qreal left, qreal top, qreal right, qreal bottom);
+extern "C"
+QMarginsF*
+C_ZN9QMarginsFC2Edddd(qreal arg1,
+qreal arg2,
+qreal arg3,
+qreal arg4) {
+  auto ret = new QMarginsF(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 291, column 28>
 //   // proto:  qreal QMarginsF::bottom();
 // _ZNK9QMarginsF6bottomEv bottom()
@@ -336,6 +358,14 @@ C_ZNK9QMarginsF6bottomEv(void *qthis) {
   auto ret =
   ((QMarginsF*)qthis)->bottom();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 284, column 22>
+//   // proto:  void QMarginsF::QMarginsF(const QMargins & margins);
+extern "C"
+QMarginsF*
+C_ZN9QMarginsFC2ERK8QMargins(const QMargins* arg1) {
+  auto ret = new QMarginsF(*((const QMargins*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 296, column 35>
 //   // proto:  void QMarginsF::setBottom(qreal bottom);
@@ -450,6 +480,28 @@ C_ZNK8QMargins6isNullEv(void *qthis) {
   auto ret =
   ((QMargins*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 48, column 22>
+//   // proto:  void QMargins::QMargins();
+extern "C"
+QMargins*
+C_ZN8QMarginsC2Ev() {
+  auto ret = new QMargins();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 49, column 22>
+//   // proto:  void QMargins::QMargins(int left, int top, int right, int bottom);
+extern "C"
+QMargins*
+C_ZN8QMarginsC2Eiiii(int arg1,
+int arg2,
+int arg3,
+int arg4) {
+  auto ret = new QMargins(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
 }
 // <= ext block end
 

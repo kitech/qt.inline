@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpolygon.h
 // dst-file: /src/gui/qpolygon.cxx
 //
@@ -235,6 +235,11 @@ int arg3) {
 arg2,
 arg3);
 }
+//   // proto:  void QPolygon::~QPolygon();
+extern "C"
+void C_ZN8QPolygonD2Ev(void *qthis) {
+  delete (QPolygon*)qthis;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 79, column 10>
 //   // proto:  void QPolygon::putPoints(int index, int nPoints, const QPolygon & from, int fromIndex);
 // _ZN8QPolygon9putPointsEiiRKS_i putPoints(int, int, const class QPolygon &, int)
@@ -271,6 +276,14 @@ const QPolygon* arg1) {
   auto ret =
   ((QPolygon*)qthis)->subtracted(*((const QPolygon*)arg1));
   return new QPolygon(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 56, column 25>
+//   // proto:  void QPolygon::QPolygon(const QVector<QPoint> & v);
+extern "C"
+QPolygon*
+C_ZN8QPolygonC2ERK7QVectorI6QPointE(const QVector<QPoint>* arg1) {
+  auto ret = new QPolygon(*((const QVector<QPoint>*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 84, column 14>
 //   // proto:  QPolygon QPolygon::intersected(const QPolygon & r);
@@ -375,6 +388,14 @@ int arg1) {
   ((QPolygon*)qthis)->point(arg1);
   return new QPoint(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 55, column 12>
+//   // proto:  void QPolygon::QPolygon(const QPolygon & a);
+extern "C"
+QPolygon*
+C_ZN8QPolygonC2ERKS_(const QPolygon* arg1) {
+  auto ret = new QPolygon(*((const QPolygon*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 81, column 10>
 //   // proto:  bool QPolygon::containsPoint(const QPoint & pt, Qt::FillRule fillRule);
 // _ZNK8QPolygon13containsPointERK6QPointN2Qt8FillRuleE containsPoint(const class QPoint &, Qt::FillRule)
@@ -446,6 +467,22 @@ const int * arg2) {
   ((QPolygon*)qthis)->setPoints(arg1,
 arg2);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 54, column 21>
+//   // proto:  void QPolygon::QPolygon(int size);
+extern "C"
+QPolygon*
+C_ZN8QPolygonC2Ei(int arg1) {
+  auto ret = new QPolygon(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 52, column 12>
+//   // proto:  void QPolygon::QPolygon();
+extern "C"
+QPolygon*
+C_ZN8QPolygonC2Ev() {
+  auto ret = new QPolygon();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 57, column 5>
 //   // proto:  void QPolygon::QPolygon(const QRect & r, bool closed);
 extern "C"
@@ -485,6 +522,14 @@ C_ZN9QPolygonFC2ERK8QPolygon(const QPolygon* arg1) {
   auto ret = new QPolygonF(*((const QPolygon*)arg1));
   return ret;
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 130, column 25>
+//   // proto:  void QPolygonF::QPolygonF(const QVector<QPointF> & v);
+extern "C"
+QPolygonF*
+C_ZN9QPolygonFC2ERK7QVectorI7QPointFE(const QVector<QPointF>* arg1) {
+  auto ret = new QPolygonF(*((const QVector<QPointF>*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 131, column 5>
 //   // proto:  void QPolygonF::QPolygonF(const QRectF & r);
 extern "C"
@@ -503,6 +548,19 @@ C_ZNK9QPolygonF9toPolygonEv(void *qthis) {
   ((QPolygonF*)qthis)->toPolygon();
   return new QPolygon(ret); // 5
 }
+//   // proto:  void QPolygonF::~QPolygonF();
+extern "C"
+void C_ZN9QPolygonFD2Ev(void *qthis) {
+  delete (QPolygonF*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 128, column 21>
+//   // proto:  void QPolygonF::QPolygonF(int size);
+extern "C"
+QPolygonF*
+C_ZN9QPolygonFC2Ei(int arg1) {
+  auto ret = new QPolygonF(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 153, column 15>
 //   // proto:  QPolygonF QPolygonF::subtracted(const QPolygonF & r);
 // _ZNK9QPolygonF10subtractedERKS_ subtracted(const class QPolygonF &)
@@ -513,6 +571,14 @@ const QPolygonF* arg1) {
   auto ret =
   ((QPolygonF*)qthis)->subtracted(*((const QPolygonF*)arg1));
   return new QPolygonF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 126, column 12>
+//   // proto:  void QPolygonF::QPolygonF();
+extern "C"
+QPolygonF*
+C_ZN9QPolygonFC2Ev() {
+  auto ret = new QPolygonF();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 138, column 10>
 //   // proto:  void QPolygonF::translate(const QPointF & offset);
@@ -566,6 +632,14 @@ qreal arg1,
 qreal arg2) {
   ((QPolygonF*)qthis)->translate(arg1,
 arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 129, column 12>
+//   // proto:  void QPolygonF::QPolygonF(const QPolygonF & a);
+extern "C"
+QPolygonF*
+C_ZN9QPolygonFC2ERKS_(const QPolygonF* arg1) {
+  auto ret = new QPolygonF(*((const QPolygonF*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 140, column 22>
 //   // proto:  QPolygonF QPolygonF::translated(qreal dx, qreal dy);

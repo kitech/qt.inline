@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qsizepolicy.h
 // dst-file: /src/widgets/qsizepolicy.cxx
 //
@@ -322,6 +322,18 @@ C_ZNK11QSizePolicy17horizontalStretchEv(void *qthis) {
   ((QSizePolicy*)qthis)->horizontalStretch();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizepolicy.h', line 89, column 5>
+//   // proto:  void QSizePolicy::QSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type);
+extern "C"
+QSizePolicy*
+C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy arg1,
+QSizePolicy::Policy arg2,
+QSizePolicy::ControlType arg3) {
+  auto ret = new QSizePolicy(arg1,
+arg2,
+arg3);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtWidgets/qsizepolicy.h', line 119, column 10>
 //   // proto:  void QSizePolicy::setHorizontalStretch(int stretchFactor);
 // _ZN11QSizePolicy20setHorizontalStretchEi setHorizontalStretch(int)
@@ -359,6 +371,14 @@ void
 C_ZN11QSizePolicy17setVerticalPolicyENS_6PolicyE(void *qthis,
 QSizePolicy::Policy arg1) {
   ((QSizePolicy*)qthis)->setVerticalPolicy(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizepolicy.h', line 87, column 5>
+//   // proto:  void QSizePolicy::QSizePolicy();
+extern "C"
+QSizePolicy*
+C_ZN11QSizePolicyC2Ev() {
+  auto ret = new QSizePolicy();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qsizepolicy.h', line 101, column 10>
 //   // proto:  void QSizePolicy::setControlType(QSizePolicy::ControlType type);

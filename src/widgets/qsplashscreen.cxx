@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -71,11 +71,11 @@ C_ZN13QSplashScreen12clearMessageEv(void *qthis) {
 //   // proto:  const QPixmap QSplashScreen::pixmap();
 // _ZNK13QSplashScreen6pixmapEv pixmap()
 extern "C"
-const QPixmap*
+QPixmap*
 C_ZNK13QSplashScreen6pixmapEv(void *qthis) {
   auto ret =
   ((QSplashScreen*)qthis)->pixmap();
-  return new const QPixmap(ret); // 5
+  return new QPixmap(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 66, column 10>
 //   // proto:  void QSplashScreen::messageChanged(const QString & message);

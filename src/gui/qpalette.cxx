@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpalette.h
 // dst-file: /src/gui/qpalette.cxx
 //
@@ -387,12 +387,12 @@ const QColor* arg7) {
 //   // proto:  const QColor & QPalette::color(QPalette::ColorRole cr);
 // _ZNK8QPalette5colorENS_9ColorRoleE color(enum QPalette::ColorRole)
 extern "C"
-const QColor*
+QColor*
 C_ZNK8QPalette5colorENS_9ColorRoleE(void *qthis,
 QPalette::ColorRole arg1) {
   auto& ret =
   ((QPalette*)qthis)->color(arg1);
-  return new const QColor(ret); // 5
+  return new QColor(ret); // 5
 }
 //   // proto:  void QPalette::~QPalette();
 extern "C"
@@ -403,44 +403,44 @@ void C_ZN8QPaletteD2Ev(void *qthis) {
 //   // proto:  const QBrush & QPalette::button();
 // _ZNK8QPalette6buttonEv button()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette6buttonEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->button();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 116, column 26>
 //   // proto:  const QBrush & QPalette::foreground();
 // _ZNK8QPalette10foregroundEv foreground()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette10foregroundEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->foreground();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 102, column 19>
 //   // proto:  const QBrush & QPalette::brush(QPalette::ColorGroup cg, QPalette::ColorRole cr);
 // _ZNK8QPalette5brushENS_10ColorGroupENS_9ColorRoleE brush(enum QPalette::ColorGroup, enum QPalette::ColorRole)
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette5brushENS_10ColorGroupENS_9ColorRoleE(void *qthis,
 QPalette::ColorGroup arg1,
 QPalette::ColorRole arg2) {
   auto& ret =
   ((QPalette*)qthis)->brush(arg1,
 arg2);
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 127, column 26>
 //   // proto:  const QBrush & QPalette::background();
 // _ZNK8QPalette10backgroundEv background()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette10backgroundEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->background();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 105, column 17>
 //   // proto:  void QPalette::setBrush(QPalette::ColorRole cr, const QBrush & brush);
@@ -573,45 +573,45 @@ const QColor* arg2) {
 //   // proto:  const QBrush & QPalette::window();
 // _ZNK8QPalette6windowEv window()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette6windowEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->window();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 115, column 26>
 //   // proto:  const QBrush & QPalette::brush(QPalette::ColorRole cr);
 // _ZNK8QPalette5brushENS_9ColorRoleE brush(enum QPalette::ColorRole)
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette5brushENS_9ColorRoleE(void *qthis,
 QPalette::ColorRole arg1) {
   auto& ret =
   ((QPalette*)qthis)->brush(arg1);
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 100, column 26>
 //   // proto:  const QColor & QPalette::color(QPalette::ColorGroup cg, QPalette::ColorRole cr);
 // _ZNK8QPalette5colorENS_10ColorGroupENS_9ColorRoleE color(enum QPalette::ColorGroup, enum QPalette::ColorRole)
 extern "C"
-const QColor*
+QColor*
 C_ZNK8QPalette5colorENS_10ColorGroupENS_9ColorRoleE(void *qthis,
 QPalette::ColorGroup arg1,
 QPalette::ColorRole arg2) {
   auto& ret =
   ((QPalette*)qthis)->color(arg1,
 arg2);
-  return new const QColor(ret); // 5
+  return new QColor(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 134, column 26>
 //   // proto:  const QBrush & QPalette::highlightedText();
 // _ZNK8QPalette15highlightedTextEv highlightedText()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette15highlightedTextEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->highlightedText();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 53, column 5>
 //   // proto:  void QPalette::QPalette(Qt::GlobalColor button);
@@ -635,21 +635,21 @@ const QColor* arg2) {
 //   // proto:  const QBrush & QPalette::text();
 // _ZNK8QPalette4textEv text()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette4textEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->text();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 119, column 26>
 //   // proto:  const QBrush & QPalette::light();
 // _ZNK8QPalette5lightEv light()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette5lightEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->light();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 147, column 14>
 //   // proto:  QPalette QPalette::resolve(const QPalette & );
@@ -666,11 +666,11 @@ const QPalette* arg1) {
 //   // proto:  const QBrush & QPalette::link();
 // _ZNK8QPalette4linkEv link()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette4linkEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->link();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 145, column 12>
 //   // proto:  qint64 QPalette::cacheKey();
@@ -686,31 +686,31 @@ C_ZNK8QPalette8cacheKeyEv(void *qthis) {
 //   // proto:  const QBrush & QPalette::base();
 // _ZNK8QPalette4baseEv base()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette4baseEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->base();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 120, column 26>
 //   // proto:  const QBrush & QPalette::dark();
 // _ZNK8QPalette4darkEv dark()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette4darkEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->dark();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 133, column 26>
 //   // proto:  const QBrush & QPalette::highlight();
 // _ZNK8QPalette9highlightEv highlight()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette9highlightEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->highlight();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 103, column 17>
 //   // proto:  void QPalette::setColor(QPalette::ColorGroup cg, QPalette::ColorRole cr, const QColor & color);
@@ -738,11 +738,11 @@ QPalette::ColorGroup arg1) {
 //   // proto:  const QBrush & QPalette::mid();
 // _ZNK8QPalette3midEv mid()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette3midEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->mid();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 107, column 10>
 //   // proto:  void QPalette::setBrush(QPalette::ColorGroup cg, QPalette::ColorRole cr, const QBrush & brush);
@@ -769,71 +769,79 @@ C_ZN8QPaletteC2ERKS_(const QPalette* arg1) {
 //   // proto:  const QBrush & QPalette::shadow();
 // _ZNK8QPalette6shadowEv shadow()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette6shadowEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->shadow();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 64, column 5>
+//   // proto:  void QPalette::QPalette(QPalette && other);
+extern "C"
+QPalette*
+C_ZN8QPaletteC2EOS_(QPalette* arg1) {
+  auto ret = new QPalette(*((QPalette*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 131, column 26>
 //   // proto:  const QBrush & QPalette::buttonText();
 // _ZNK8QPalette10buttonTextEv buttonText()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette10buttonTextEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->buttonText();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 125, column 26>
 //   // proto:  const QBrush & QPalette::toolTipBase();
 // _ZNK8QPalette11toolTipBaseEv toolTipBase()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette11toolTipBaseEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->toolTipBase();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 129, column 26>
 //   // proto:  const QBrush & QPalette::midlight();
 // _ZNK8QPalette8midlightEv midlight()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette8midlightEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->midlight();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 130, column 26>
 //   // proto:  const QBrush & QPalette::brightText();
 // _ZNK8QPalette10brightTextEv brightText()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette10brightTextEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->brightText();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 136, column 26>
 //   // proto:  const QBrush & QPalette::linkVisited();
 // _ZNK8QPalette11linkVisitedEv linkVisited()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette11linkVisitedEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->linkVisited();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 124, column 26>
 //   // proto:  const QBrush & QPalette::alternateBase();
 // _ZNK8QPalette13alternateBaseEv alternateBase()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette13alternateBaseEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->alternateBase();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 106, column 10>
 //   // proto:  bool QPalette::isBrushSet(QPalette::ColorGroup cg, QPalette::ColorRole cr);
@@ -876,21 +884,21 @@ const QBrush* arg9) {
 //   // proto:  const QBrush & QPalette::windowText();
 // _ZNK8QPalette10windowTextEv windowText()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette10windowTextEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->windowText();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 126, column 26>
 //   // proto:  const QBrush & QPalette::toolTipText();
 // _ZNK8QPalette11toolTipTextEv toolTipText()
 extern "C"
-const QBrush*
+QBrush*
 C_ZNK8QPalette11toolTipTextEv(void *qthis) {
   auto& ret =
   ((QPalette*)qthis)->toolTipText();
-  return new const QBrush(ret); // 5
+  return new QBrush(ret); // 5
 }
 // <= ext block end
 

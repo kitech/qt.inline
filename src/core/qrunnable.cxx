@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qrunnable.h
 // dst-file: /src/core/qrunnable.cxx
 //
@@ -71,6 +71,13 @@ void
 C_ZN9QRunnable13setAutoDeleteEb(void *qthis,
 bool arg1) {
   ((QRunnable*)qthis)->setAutoDelete(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qrunnable.h', line 53, column 5>
+//   // proto:  void QRunnable::QRunnable();
+extern "C"
+QRunnable*
+C_ZN9QRunnableC2Ev() {
+  // auto ret = new QRunnable();
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrunnable.h', line 51, column 18>
 //   // proto:  void QRunnable::run();

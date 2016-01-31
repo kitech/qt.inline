@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qbrush.h
 // dst-file: /src/gui/qbrush.cxx
 //
@@ -689,11 +689,11 @@ C_ZN6QBrushC2ERKS_(const QBrush* arg1) {
 //   // proto:  const QMatrix & QBrush::matrix();
 // _ZNK6QBrush6matrixEv matrix()
 extern "C"
-const QMatrix*
+QMatrix*
 C_ZNK6QBrush6matrixEv(void *qthis) {
   auto& ret =
   ((QBrush*)qthis)->matrix();
-  return new const QMatrix(ret); // 5
+  return new QMatrix(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 96, column 12>
 //   // proto:  QImage QBrush::textureImage();
@@ -737,11 +737,11 @@ Qt::GlobalColor* arg1) {
 //   // proto:  const QColor & QBrush::color();
 // _ZNK6QBrush5colorEv color()
 extern "C"
-const QColor*
+QColor*
 C_ZNK6QBrush5colorEv(void *qthis) {
   auto& ret =
   ((QBrush*)qthis)->color();
-  return new const QColor(ret); // 5
+  return new QColor(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 67, column 5>
 //   // proto:  void QBrush::QBrush(const QImage & image);

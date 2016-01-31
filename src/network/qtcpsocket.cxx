@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Tue Jan 19 21:43:55 2016
+// created: Fri Jan 22 22:26:45 2016
 // src-file: /QtNetwork/qtcpsocket.h
 // dst-file: /src/network/qtcpsocket.cxx
 //
@@ -22,6 +22,28 @@ int QTcpSocket_Class_Size()
 
 // main block begin =>
 void __keep_qtcpsocket_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtNetwork/qtcpsocket.h', line 47, column 5>
+//   // proto:  const QMetaObject * QTcpSocket::metaObject();
+if (true) {
+  auto f = [](QTcpSocket flythis) {
+    ((QTcpSocket*)0)->metaObject();
+    flythis.metaObject();
+  };
+  if (f == nullptr){}
+}
+// _ZNK10QTcpSocket10metaObjectEv metaObject()
+//   // proto:  void QTcpSocket::~QTcpSocket();
+if (true) {
+  delete ((QTcpSocket*)0);
+}
+// <SourceLocation file '/usr/include/qt/QtNetwork/qtcpsocket.h', line 49, column 14>
+//   // proto:  void QTcpSocket::QTcpSocket(QObject * parent);
+if (true) {
+  auto f = [](QObject * arg1) {
+    new QTcpSocket(arg1);
+  };
+  if (f == nullptr){}
+}
 } // <= main block end
 
 // <= main block end
@@ -30,6 +52,24 @@ void __keep_qtcpsocket_inline_symbols() {
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtNetwork/qtcpsocket.h', line 47, column 5>
+//   // proto:  const QMetaObject * QTcpSocket::metaObject();
+extern "C"
+void C_ZNK10QTcpSocket10metaObjectEv(void *qthis) {
+  ((QTcpSocket*)qthis)->metaObject();
+}
+// _ZNK10QTcpSocket10metaObjectEv metaObject()
+//   // proto:  void QTcpSocket::~QTcpSocket();
+extern "C"
+void C_ZN10QTcpSocketD2Ev(void *qthis) {
+  delete (QTcpSocket*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtNetwork/qtcpsocket.h', line 49, column 14>
+//   // proto:  void QTcpSocket::QTcpSocket(QObject * parent);
+extern "C"
+void C_ZN10QTcpSocketC2EP7QObject(QObject * arg1) {
+  new QTcpSocket(arg1);
+}
 // <= ext block end
 
 // body block begin =>

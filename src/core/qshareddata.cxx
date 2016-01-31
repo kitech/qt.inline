@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qshareddata.h
 // dst-file: /src/core/qshareddata.cxx
 //
@@ -48,6 +48,22 @@ int QSharedData_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qshareddata.h', line 51, column 12>
+//   // proto:  void QSharedData::QSharedData();
+extern "C"
+QSharedData*
+C_ZN11QSharedDataC2Ev() {
+  auto ret = new QSharedData();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qshareddata.h', line 52, column 12>
+//   // proto:  void QSharedData::QSharedData(const QSharedData & );
+extern "C"
+QSharedData*
+C_ZN11QSharedDataC2ERKS_(const QSharedData* arg1) {
+  auto ret = new QSharedData(*((const QSharedData*)arg1));
+  return ret;
+}
 // <= ext block end
 
 // body block begin =>

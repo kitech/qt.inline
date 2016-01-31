@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qeasingcurve.h
 // dst-file: /src/core/qeasingcurve.cxx
 //
@@ -188,6 +188,14 @@ void
 C_ZN12QEasingCurve4swapERS_(void *qthis,
 QEasingCurve* arg1) {
   ((QEasingCurve*)qthis)->swap(*((QEasingCurve*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 78, column 5>
+//   // proto:  void QEasingCurve::QEasingCurve(QEasingCurve && other);
+extern "C"
+QEasingCurve*
+C_ZN12QEasingCurveC2EOS_(QEasingCurve* arg1) {
+  auto ret = new QEasingCurve(*((QEasingCurve*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 96, column 10>
 //   // proto:  void QEasingCurve::setOvershoot(qreal overshoot);

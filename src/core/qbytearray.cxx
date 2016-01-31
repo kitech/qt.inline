@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
@@ -789,6 +789,11 @@ const QByteArray* arg1) {
   ((QByteArray*)qthis)->count(*((const QByteArray*)arg1));
   return ret; // 0 TypeKind.INT
 }
+//   // proto:  void QByteArray::~QByteArray();
+extern "C"
+void C_ZN10QByteArrayD2Ev(void *qthis) {
+  delete (QByteArray*)qthis;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 400, column 14>
 //   // proto:  iterator QByteArray::end();
 // _ZN10QByteArray3endEv end()
@@ -798,6 +803,22 @@ C_ZN10QByteArray3endEv(void *qthis) {
   auto ret =
   ((QByteArray*)qthis)->end();
   return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 187, column 12>
+//   // proto:  void QByteArray::QByteArray(QByteArray && other);
+extern "C"
+QByteArray*
+C_ZN10QByteArrayC2EOS_(QByteArray* arg1) {
+  auto ret = new QByteArray(*((QByteArray*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 177, column 12>
+//   // proto:  void QByteArray::QByteArray();
+extern "C"
+QByteArray*
+C_ZN10QByteArrayC2Ev() {
+  auto ret = new QByteArray();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 311, column 17>
 //   // proto:  QByteArray & QByteArray::replace(const char * before, const QByteArray & after);
@@ -1673,6 +1694,14 @@ C_ZNK10QByteArray9constDataEv(void *qthis) {
   ((QByteArray*)qthis)->constData();
   return (void*)ret;
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 181, column 12>
+//   // proto:  void QByteArray::QByteArray(const QByteArray & );
+extern "C"
+QByteArray*
+C_ZN10QByteArrayC2ERKS_(const QByteArray* arg1) {
+  auto ret = new QByteArray(*((const QByteArray*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 424, column 9>
 //   // proto:  int QByteArray::length();
 // _ZNK10QByteArray6lengthEv length()
@@ -2194,6 +2223,14 @@ void
 C_ZN10QByteArray9push_backEPKc(void *qthis,
 const char * arg1) {
   ((QByteArray*)qthis)->push_back(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 427, column 12>
+//   // proto:  void QByteArray::QByteArray(QByteArrayDataPtr dd);
+extern "C"
+QByteArray*
+C_ZN10QByteArrayC2E17QByteArrayDataPtr(QByteArrayDataPtr* arg1) {
+  auto ret = new QByteArray(*((QByteArrayDataPtr*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 274, column 16>
 //   // proto:  QByteArray QByteArray::simplified();

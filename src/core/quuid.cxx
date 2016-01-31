@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/quuid.h
 // dst-file: /src/core/quuid.cxx
 //
@@ -140,6 +140,34 @@ C_ZNK5QUuid7versionEv(void *qthis) {
   ((QUuid*)qthis)->version();
   return ret; // 0 TypeKind.ENUM
 }
+// <SourceLocation file '/usr/include/qt/QtCore/quuid.h', line 80, column 22>
+//   // proto:  void QUuid::QUuid(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8);
+extern "C"
+QUuid*
+C_ZN5QUuidC2Ejtthhhhhhhh(uint arg1,
+ushort arg2,
+ushort arg3,
+uchar arg4,
+uchar arg5,
+uchar arg6,
+uchar arg7,
+uchar arg8,
+uchar arg9,
+uchar arg10,
+uchar arg11) {
+  auto ret = new QUuid(arg1,
+arg2,
+arg3,
+arg4,
+arg5,
+arg6,
+arg7,
+arg8,
+arg9,
+arg10,
+arg11);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/quuid.h', line 111, column 5>
 //   // proto:  void QUuid::QUuid(const QByteArray & );
 extern "C"
@@ -159,6 +187,14 @@ const QString* arg2) {
   QUuid::createUuidV3(*((const QUuid*)arg1),
 *((const QString*)arg2));
   return new QUuid(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/quuid.h', line 78, column 22>
+//   // proto:  void QUuid::QUuid();
+extern "C"
+QUuid*
+C_ZN5QUuidC2Ev() {
+  auto ret = new QUuid();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/quuid.h', line 112, column 16>
 //   // proto:  QByteArray QUuid::toByteArray();

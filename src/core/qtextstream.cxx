@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qtextstream.h
 // dst-file: /src/core/qtextstream.cxx
 //
@@ -76,6 +76,26 @@ void
 C_ZN22QTextStreamManipulator4execER11QTextStream(void *qthis,
 QTextStream* arg1) {
   ((QTextStreamManipulator*)qthis)->exec(*((QTextStream*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 208, column 5>
+//   // proto:  void QTextStreamManipulator::QTextStreamManipulator(QTSMFI m, int a);
+extern "C"
+QTextStreamManipulator*
+C_ZN22QTextStreamManipulatorC2EM11QTextStreamFviEi(QTSMFI arg1,
+int arg2) {
+  auto ret = new QTextStreamManipulator(arg1,
+arg2);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 209, column 5>
+//   // proto:  void QTextStreamManipulator::QTextStreamManipulator(QTSMFC m, QChar c);
+extern "C"
+QTextStreamManipulator*
+C_ZN22QTextStreamManipulatorC2EM11QTextStreamFv5QCharES1_(QTSMFC arg1,
+QChar* arg2) {
+  auto ret = new QTextStreamManipulator(arg1,
+*((QChar*)arg2));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 98, column 17>
 //   // proto:  QTextCodec * QTextStream::codec();

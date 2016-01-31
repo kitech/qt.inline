@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qbitarray.h
 // dst-file: /src/core/qbitarray.cxx
 //
@@ -280,6 +280,14 @@ C_ZNK9QBitArray5countEv(void *qthis) {
   ((QBitArray*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 56, column 12>
+//   // proto:  void QBitArray::QBitArray(QBitArray && other);
+extern "C"
+QBitArray*
+C_ZN9QBitArrayC2EOS_(QBitArray* arg1) {
+  auto ret = new QBitArray(*((QBitArray*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 65, column 9>
 //   // proto:  int QBitArray::count(bool on);
 // _ZNK9QBitArray5countEb count(_Bool)
@@ -298,6 +306,14 @@ extern "C"
 void
 C_ZN9QBitArray6detachEv(void *qthis) {
   ((QBitArray*)qthis)->detach();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 51, column 12>
+//   // proto:  void QBitArray::QBitArray();
+extern "C"
+QBitArray*
+C_ZN9QBitArrayC2Ev() {
+  auto ret = new QBitArray();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 82, column 10>
 //   // proto:  bool QBitArray::at(int i);
@@ -357,6 +373,14 @@ int arg1) {
   auto ret =
   ((QBitArray*)qthis)->toggleBit(arg1);
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 53, column 5>
+//   // proto:  void QBitArray::QBitArray(const QBitArray & other);
+extern "C"
+QBitArray*
+C_ZN9QBitArrayC2ERKS_(const QBitArray* arg1) {
+  auto ret = new QBitArray(*((const QBitArray*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 97, column 10>
 //   // proto:  void QBitArray::fill(bool val, int first, int last);

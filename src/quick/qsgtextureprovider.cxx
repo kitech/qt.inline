@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Wed Jan 20 00:16:23 2016
+// created: Fri Jan 22 22:26:45 2016
 // src-file: /QtQuick/qsgtextureprovider.h
 // dst-file: /src/quick/qsgtextureprovider.cxx
 //
@@ -22,6 +22,33 @@ int QSGTextureProvider_Class_Size()
 
 // main block begin =>
 void __keep_qsgtextureprovider_inline_symbols() {
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 49, column 10>
+//   // proto:  void QSGTextureProvider::textureChanged();
+if (true) {
+  auto f = []() {
+    ((QSGTextureProvider*)0)->textureChanged();
+  };
+  if (f == nullptr){}
+}
+// _ZN18QSGTextureProvider14textureChangedEv textureChanged()
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 46, column 25>
+//   // proto:  QSGTexture * QSGTextureProvider::texture();
+if (true) {
+  auto f = []() {
+    ((QSGTextureProvider*)0)->texture();
+  };
+  if (f == nullptr){}
+}
+// _ZNK18QSGTextureProvider7textureEv texture()
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 44, column 5>
+//   // proto:  const QMetaObject * QSGTextureProvider::metaObject();
+if (true) {
+  auto f = []() {
+    ((QSGTextureProvider*)0)->metaObject();
+  };
+  if (f == nullptr){}
+}
+// _ZNK18QSGTextureProvider10metaObjectEv metaObject()
 } // <= main block end
 
 // <= main block end
@@ -30,6 +57,27 @@ void __keep_qsgtextureprovider_inline_symbols() {
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 49, column 10>
+//   // proto:  void QSGTextureProvider::textureChanged();
+extern "C"
+void C_ZN18QSGTextureProvider14textureChangedEv(void *qthis) {
+  ((QSGTextureProvider*)qthis)->textureChanged();
+}
+// _ZN18QSGTextureProvider14textureChangedEv textureChanged()
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 46, column 25>
+//   // proto:  QSGTexture * QSGTextureProvider::texture();
+extern "C"
+void C_ZNK18QSGTextureProvider7textureEv(void *qthis) {
+  ((QSGTextureProvider*)qthis)->texture();
+}
+// _ZNK18QSGTextureProvider7textureEv texture()
+// <SourceLocation file '/usr/include/qt/QtQuick/qsgtextureprovider.h', line 44, column 5>
+//   // proto:  const QMetaObject * QSGTextureProvider::metaObject();
+extern "C"
+void C_ZNK18QSGTextureProvider10metaObjectEv(void *qthis) {
+  ((QSGTextureProvider*)qthis)->metaObject();
+}
+// _ZNK18QSGTextureProvider10metaObjectEv metaObject()
 // <= ext block end
 
 // body block begin =>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qitemselectionmodel.h
 // dst-file: /src/core/qitemselectionmodel.cxx
 //
@@ -248,6 +248,14 @@ QItemSelectionModel::SelectionFlags* arg2) {
   ((QItemSelection*)qthis)->merge(*((const QItemSelection*)arg1),
 *((QItemSelectionModel::SelectionFlags*)arg2));
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 238, column 5>
+//   // proto:  void QItemSelection::QItemSelection();
+extern "C"
+QItemSelection*
+C_ZN14QItemSelectionC2Ev() {
+  auto ret = new QItemSelection();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 241, column 10>
 //   // proto:  bool QItemSelection::contains(const QModelIndex & index);
 // _ZNK14QItemSelection8containsERK11QModelIndex contains(const class QModelIndex &)
@@ -382,6 +390,14 @@ C_ZNK19QItemSelectionRange6parentEv(void *qthis) {
   ((QItemSelectionRange*)qthis)->parent();
   return new QModelIndex(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 51, column 12>
+//   // proto:  void QItemSelectionRange::QItemSelectionRange();
+extern "C"
+QItemSelectionRange*
+C_ZN19QItemSelectionRangeC2Ev() {
+  auto ret = new QItemSelectionRange();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 62, column 16>
 //   // proto:  int QItemSelectionRange::width();
 // _ZNK19QItemSelectionRange5widthEv width()
@@ -392,15 +408,25 @@ C_ZNK19QItemSelectionRange5widthEv(void *qthis) {
   ((QItemSelectionRange*)qthis)->width();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 54, column 12>
+//   // proto:  void QItemSelectionRange::QItemSelectionRange(const QModelIndex & topLeft, const QModelIndex & bottomRight);
+extern "C"
+QItemSelectionRange*
+C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(const QModelIndex* arg1,
+const QModelIndex* arg2) {
+  auto ret = new QItemSelectionRange(*((const QModelIndex*)arg1),
+*((const QModelIndex*)arg2));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 65, column 41>
 //   // proto:  const QPersistentModelIndex & QItemSelectionRange::topLeft();
 // _ZNK19QItemSelectionRange7topLeftEv topLeft()
 extern "C"
-const QPersistentModelIndex*
+QPersistentModelIndex*
 C_ZNK19QItemSelectionRange7topLeftEv(void *qthis) {
   auto& ret =
   ((QItemSelectionRange*)qthis)->topLeft();
-  return new const QPersistentModelIndex(ret); // 5
+  return new QPersistentModelIndex(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 77, column 17>
 //   // proto:  bool QItemSelectionRange::contains(int row, int column, const QModelIndex & parentIndex);
@@ -417,6 +443,14 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 55, column 21>
+//   // proto:  void QItemSelectionRange::QItemSelectionRange(const QModelIndex & index);
+extern "C"
+QItemSelectionRange*
+C_ZN19QItemSelectionRangeC2ERK11QModelIndex(const QModelIndex* arg1) {
+  auto ret = new QItemSelectionRange(*((const QModelIndex*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 84, column 10>
 //   // proto:  bool QItemSelectionRange::intersects(const QItemSelectionRange & other);
 // _ZNK19QItemSelectionRange10intersectsERKS_ intersects(const class QItemSelectionRange &)
@@ -432,11 +466,11 @@ const QItemSelectionRange* arg1) {
 //   // proto:  const QPersistentModelIndex & QItemSelectionRange::bottomRight();
 // _ZNK19QItemSelectionRange11bottomRightEv bottomRight()
 extern "C"
-const QPersistentModelIndex*
+QPersistentModelIndex*
 C_ZNK19QItemSelectionRange11bottomRightEv(void *qthis) {
   auto& ret =
   ((QItemSelectionRange*)qthis)->bottomRight();
-  return new const QPersistentModelIndex(ret); // 5
+  return new QPersistentModelIndex(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 58, column 16>
 //   // proto:  int QItemSelectionRange::top();
@@ -457,6 +491,14 @@ C_ZNK19QItemSelectionRange7isEmptyEv(void *qthis) {
   auto ret =
   ((QItemSelectionRange*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 52, column 12>
+//   // proto:  void QItemSelectionRange::QItemSelectionRange(const QItemSelectionRange & other);
+extern "C"
+QItemSelectionRange*
+C_ZN19QItemSelectionRangeC2ERKS_(const QItemSelectionRange* arg1) {
+  auto ret = new QItemSelectionRange(*((const QItemSelectionRange*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 213, column 10>
 //   // proto:  void QItemSelectionModel::currentColumnChanged(const QModelIndex & current, const QModelIndex & previous);
@@ -503,11 +545,11 @@ QAbstractItemModel * arg1) {
 //   // proto:  const QItemSelection QItemSelectionModel::selection();
 // _ZNK19QItemSelectionModel9selectionEv selection()
 extern "C"
-const QItemSelection*
+QItemSelection*
 C_ZNK19QItemSelectionModel9selectionEv(void *qthis) {
   auto ret =
   ((QItemSelectionModel*)qthis)->selection();
-  return new const QItemSelection(ret); // 5
+  return new QItemSelection(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 179, column 22>
 //   // proto:  bool QItemSelectionModel::isSelected(const QModelIndex & index);

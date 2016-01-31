@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -572,11 +572,11 @@ void C_ZN16QRegExpValidatorD2Ev(void *qthis) {
 //   // proto:  const QRegExp & QRegExpValidator::regExp();
 // _ZNK16QRegExpValidator6regExpEv regExp()
 extern "C"
-const QRegExp*
+QRegExp*
 C_ZNK16QRegExpValidator6regExpEv(void *qthis) {
   auto& ret =
   ((QRegExpValidator*)qthis)->regExp();
-  return new const QRegExp(ret); // 5
+  return new QRegExp(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 166, column 5>
 //   // proto:  const QMetaObject * QRegExpValidator::metaObject();

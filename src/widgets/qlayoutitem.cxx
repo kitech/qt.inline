@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -126,6 +126,13 @@ C_ZNK11QLayoutItem11minimumSizeEv(void *qthis) {
   auto ret =
   ((QLayoutItem*)qthis)->minimumSize();
   return new QSize(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 56, column 21>
+//   // proto:  void QLayoutItem::QLayoutItem(Qt::Alignment alignment);
+extern "C"
+QLayoutItem*
+C_ZN11QLayoutItemC2E6QFlagsIN2Qt13AlignmentFlagEE(Qt::Alignment* arg1) {
+  // auto ret = new QLayoutItem(*((Qt::Alignment*)arg1));
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 70, column 22>
 //   // proto:  QWidget * QLayoutItem::widget();
@@ -310,6 +317,20 @@ arg2,
 *((QSizePolicy::Policy*)arg3),
 *((QSizePolicy::Policy*)arg4));
 }
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 88, column 5>
+//   // proto:  void QSpacerItem::QSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData);
+extern "C"
+QSpacerItem*
+C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int arg1,
+int arg2,
+QSizePolicy::Policy* arg3,
+QSizePolicy::Policy* arg4) {
+  auto ret = new QSpacerItem(arg1,
+arg2,
+*((QSizePolicy::Policy*)arg3),
+*((QSizePolicy::Policy*)arg4));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 97, column 11>
 //   // proto:  QSize QSpacerItem::sizeHint();
 // _ZNK11QSpacerItem8sizeHintEv sizeHint()
@@ -413,6 +434,14 @@ C_ZNK11QWidgetItem17hasHeightForWidthEv(void *qthis) {
 extern "C"
 void C_ZN11QWidgetItemD2Ev(void *qthis) {
   delete (QWidgetItem*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 119, column 14>
+//   // proto:  void QWidgetItem::QWidgetItem(QWidget * w);
+extern "C"
+QWidgetItem*
+C_ZN11QWidgetItemC2EP7QWidget(QWidget * arg1) {
+  auto ret = new QWidgetItem(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 129, column 22>
 //   // proto:  QWidget * QWidgetItem::widget();

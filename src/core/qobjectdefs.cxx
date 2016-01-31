@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qobjectdefs.h
 // dst-file: /src/core/qobjectdefs.cxx
 //
@@ -155,6 +155,24 @@ extern "C"
 QMetaObject::Connection*
 C_ZN11QMetaObject10ConnectionC2ERKS0_(const QMetaObject::Connection* arg1) {
   auto ret = new QMetaObject::Connection(*((const QMetaObject::Connection*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 489, column 12>
+//   // proto:  void QMetaObject::Connection::Connection(QMetaObject::Connection && o);
+extern "C"
+QMetaObject::Connection*
+C_ZN11QMetaObject10ConnectionC2EOS0_(QMetaObject::Connection* arg1) {
+  auto ret = new QMetaObject::Connection(*((QMetaObject::Connection*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 270, column 12>
+//   // proto:  void QGenericReturnArgument::QGenericReturnArgument(const char * aName, void * aData);
+extern "C"
+QGenericReturnArgument*
+C_ZN22QGenericReturnArgumentC2EPKcPv(const char * arg1,
+void * arg2) {
+  auto ret = new QGenericReturnArgument(arg1,
+arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 344, column 23>
@@ -790,6 +808,16 @@ C_ZNK16QGenericArgument4dataEv(void *qthis) {
   auto ret =
   ((QGenericArgument*)qthis)->data();
   return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 257, column 12>
+//   // proto:  void QGenericArgument::QGenericArgument(const char * aName, const void * aData);
+extern "C"
+QGenericArgument*
+C_ZN16QGenericArgumentC2EPKcPKv(const char * arg1,
+const void * arg2) {
+  auto ret = new QGenericArgument(arg1,
+arg2);
+  return ret;
 }
 // <= ext block end
 

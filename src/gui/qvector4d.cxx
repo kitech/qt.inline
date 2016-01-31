@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qvector4d.h
 // dst-file: /src/gui/qvector4d.cxx
 //
@@ -271,6 +271,20 @@ void
 C_ZN9QVector4D9normalizeEv(void *qthis) {
   ((QVector4D*)qthis)->normalize();
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 54, column 22>
+//   // proto:  void QVector4D::QVector4D(float xpos, float ypos, float zpos, float wpos);
+extern "C"
+QVector4D*
+C_ZN9QVector4DC2Effff(float arg1,
+float arg2,
+float arg3,
+float arg4) {
+  auto ret = new QVector4D(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 63, column 5>
 //   // proto:  void QVector4D::QVector4D(const QVector3D & vector, float wpos);
 extern "C"
@@ -279,6 +293,22 @@ C_ZN9QVector4DC2ERK9QVector3Df(const QVector3D* arg1,
 float arg2) {
   auto ret = new QVector4D(*((const QVector3D*)arg1),
 arg2);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 53, column 14>
+//   // proto:  void QVector4D::QVector4D(Qt::Initialization );
+extern "C"
+QVector4D*
+C_ZN9QVector4DC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QVector4D(*((Qt::Initialization*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 56, column 31>
+//   // proto:  void QVector4D::QVector4D(const QPointF & point);
+extern "C"
+QVector4D*
+C_ZN9QVector4DC2ERK7QPointF(const QPointF* arg1) {
+  auto ret = new QVector4D(*((const QPointF*)arg1));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 70, column 28>
@@ -290,6 +320,14 @@ C_ZNK9QVector4D1zEv(void *qthis) {
   auto ret =
   ((QVector4D*)qthis)->z();
   return ret; // 0 TypeKind.FLOAT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 52, column 22>
+//   // proto:  void QVector4D::QVector4D();
+extern "C"
+QVector4D*
+C_ZN9QVector4DC2Ev() {
+  auto ret = new QVector4D();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 73, column 10>
 //   // proto:  void QVector4D::setX(float x);
@@ -308,6 +346,14 @@ void
 C_ZN9QVector4D4setYEf(void *qthis,
 float arg1) {
   ((QVector4D*)qthis)->setY(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 55, column 31>
+//   // proto:  void QVector4D::QVector4D(const QPoint & point);
+extern "C"
+QVector4D*
+C_ZN9QVector4DC2ERK6QPoint(const QPoint* arg1) {
+  auto ret = new QVector4D(*((const QPoint*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 114, column 15>
 //   // proto:  QVector3D QVector4D::toVector3D();

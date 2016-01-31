@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qatomic.h
 // dst-file: /src/core/qatomic.cxx
 //
@@ -40,6 +40,14 @@ int QAtomicInt_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qatomic.h', line 155, column 5>
+//   // proto:  void QAtomicInt::QAtomicInt(int value);
+extern "C"
+QAtomicInt*
+C_ZN10QAtomicIntC2Ei(int arg1) {
+  auto ret = new QAtomicInt(arg1);
+  return ret;
+}
 // <= ext block end
 
 // body block begin =>

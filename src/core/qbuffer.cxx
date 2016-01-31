@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qbuffer.h
 // dst-file: /src/core/qbuffer.cxx
 //
@@ -94,21 +94,21 @@ const QByteArray* arg1) {
 //   // proto:  const QByteArray & QBuffer::data();
 // _ZNK7QBuffer4dataEv data()
 extern "C"
-const QByteArray*
+QByteArray*
 C_ZNK7QBuffer4dataEv(void *qthis) {
   auto& ret =
   ((QBuffer*)qthis)->data();
-  return new const QByteArray(ret); // 5
+  return new QByteArray(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 63, column 23>
 //   // proto:  const QByteArray & QBuffer::buffer();
 // _ZNK7QBuffer6bufferEv buffer()
 extern "C"
-const QByteArray*
+QByteArray*
 C_ZNK7QBuffer6bufferEv(void *qthis) {
   auto& ret =
   ((QBuffer*)qthis)->buffer();
-  return new const QByteArray(ret); // 5
+  return new QByteArray(ret); // 5
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 54, column 15>
 //   // proto:  void QBuffer::QBuffer(QObject * parent);

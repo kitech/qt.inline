@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -330,6 +330,14 @@ const QTime* arg1) {
   auto ret =
   ((QTime*)qthis)->secsTo(*((const QTime*)arg1));
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 147, column 22>
+//   // proto:  void QTime::QTime();
+extern "C"
+QTime*
+C_ZN5QTimeC2Ev() {
+  auto ret = new QTime();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 165, column 10>
 //   // proto:  bool QTime::setHMS(int h, int m, int s, int ms);
@@ -1053,6 +1061,14 @@ C_ZNK5QDate11toJulianDayEv(void *qthis) {
   auto ret =
   ((QDate*)qthis)->toJulianDay();
   return ret; // 0 TypeKind.LONGLONG
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 64, column 22>
+//   // proto:  void QDate::QDate();
+extern "C"
+QDate*
+C_ZN5QDateC2Ev() {
+  auto ret = new QDate();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 96, column 10>
 //   // proto:  void QDate::getDate(int * year, int * month, int * day);

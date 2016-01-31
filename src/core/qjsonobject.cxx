@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qjsonobject.h
 // dst-file: /src/core/qjsonobject.cxx
 //
@@ -170,6 +170,14 @@ void
 C_ZN11QJsonObject6removeERK7QString(void *qthis,
 const QString* arg1) {
   ((QJsonObject*)qthis)->remove(*((const QString*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 58, column 5>
+//   // proto:  void QJsonObject::QJsonObject(std::initializer_list<QPair<QString, QJsonValue> > args);
+extern "C"
+QJsonObject*
+C_ZN11QJsonObjectC2ESt16initializer_listI5QPairI7QString10QJsonValueEE(std::initializer_list<QPair<QString, QJsonValue> >* arg1) {
+  auto ret = new QJsonObject(*((std::initializer_list<QPair<QString, QJsonValue> >*)arg1));
+  return ret;
 }
 //   // proto:  void QJsonObject::~QJsonObject();
 extern "C"

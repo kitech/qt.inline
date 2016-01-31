@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qpoint.h
 // dst-file: /src/core/qpoint.cxx
 //
@@ -301,6 +301,16 @@ C_ZNK6QPoint1xEv(void *qthis) {
   ((QPoint*)qthis)->x();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 46, column 22>
+//   // proto:  void QPoint::QPoint(int xpos, int ypos);
+extern "C"
+QPoint*
+C_ZN6QPointC2Eii(int arg1,
+int arg2) {
+  auto ret = new QPoint(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 51, column 33>
 //   // proto:  int QPoint::y();
 // _ZNK6QPoint1yEv y()
@@ -330,6 +340,14 @@ C_ZNK6QPoint6isNullEv(void *qthis) {
   ((QPoint*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 45, column 22>
+//   // proto:  void QPoint::QPoint();
+extern "C"
+QPoint*
+C_ZN6QPointC2Ev() {
+  auto ret = new QPoint();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 53, column 42>
 //   // proto:  void QPoint::setY(int y);
 // _ZN6QPoint4setYEi setY(int)
@@ -358,6 +376,24 @@ C_ZNK6QPoint15manhattanLengthEv(void *qthis) {
   auto ret =
   ((QPoint*)qthis)->manhattanLength();
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 210, column 22>
+//   // proto:  void QPointF::QPointF(qreal xpos, qreal ypos);
+extern "C"
+QPointF*
+C_ZN7QPointFC2Edd(qreal arg1,
+qreal arg2) {
+  auto ret = new QPointF(arg1,
+arg2);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 208, column 22>
+//   // proto:  void QPointF::QPointF();
+extern "C"
+QPointF*
+C_ZN7QPointFC2Ev() {
+  auto ret = new QPointF();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 212, column 35>
 //   // proto:  qreal QPointF::manhattanLength();
@@ -418,6 +454,14 @@ C_ZNK7QPointF1xEv(void *qthis) {
   auto ret =
   ((QPointF*)qthis)->x();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 209, column 22>
+//   // proto:  void QPointF::QPointF(const QPoint & p);
+extern "C"
+QPointF*
+C_ZN7QPointFC2ERK6QPoint(const QPoint* arg1) {
+  auto ret = new QPointF(*((const QPoint*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 218, column 42>
 //   // proto:  void QPointF::setX(qreal x);

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -679,6 +679,14 @@ extern "C"
 void
 C_ZN4QUrl5clearEv(void *qthis) {
   ((QUrl*)qthis)->clear();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qurl.h', line 176, column 5>
+//   // proto:  void QUrl::QUrl(QUrl && other);
+extern "C"
+QUrl*
+C_ZN4QUrlC2EOS_(QUrl* arg1) {
+  auto ret = new QUrl(*((QUrl*)arg1));
+  return ret;
 }
 // <= ext block end
 

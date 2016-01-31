@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qstringbuilder.h
 // dst-file: /src/core/qstringbuilder.cxx
 //
@@ -606,6 +606,24 @@ QChar ** arg2) {
   QConcatenable<QChar>::appendTo(*((const QChar*)arg1),
 *((QChar **)arg2));
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 154, column 9>
+//   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QByteArray & a_, const QByteArray & b_);
+extern "C"
+QStringBuilder<QByteArray, QByteArray>*
+C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS0_S3_(const QByteArray* arg1,
+const QByteArray* arg2) {
+  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QByteArray*)arg1),
+*((const QByteArray*)arg2));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 155, column 9>
+//   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QStringBuilder<QByteArray, QByteArray> & other);
+extern "C"
+QStringBuilder<QByteArray, QByteArray>*
+C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS1_(const QStringBuilder<QByteArray, QByteArray>* arg1) {
+  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QStringBuilder<QByteArray, QByteArray>*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 319, column 43>
 //   // proto: static void QConcatenable<const char *>::appendTo(const char * a, QChar *& out);
 // _ZN13QConcatenableIPKcE8appendToES1_RP5QChar appendTo(const char *, class QChar *&)
@@ -635,6 +653,24 @@ C_ZN13QConcatenableIPKcE4sizeES1_(const char * arg1) {
   auto ret =
   QConcatenable<const char *>::size(arg1);
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 138, column 9>
+//   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QStringBuilder<QString, QString> & other);
+extern "C"
+QStringBuilder<QString, QString>*
+C_ZN14QStringBuilderI7QStringS0_EC2ERKS1_(const QStringBuilder<QString, QString>* arg1) {
+  auto ret = new QStringBuilder<QString, QString>(*((const QStringBuilder<QString, QString>*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 137, column 9>
+//   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QString & a_, const QString & b_);
+extern "C"
+QStringBuilder<QString, QString>*
+C_ZN14QStringBuilderI7QStringS0_EC2ERKS0_S3_(const QString* arg1,
+const QString* arg2) {
+  auto ret = new QStringBuilder<QString, QString>(*((const QString*)arg1),
+*((const QString*)arg2));
+  return ret;
 }
 // <= ext block end
 

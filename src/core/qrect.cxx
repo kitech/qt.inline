@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qrect.h
 // dst-file: /src/core/qrect.cxx
 //
@@ -1290,6 +1290,16 @@ C_ZN5QRect9moveRightEi(void *qthis,
 int arg1) {
   ((QRect*)qthis)->moveRight(arg1);
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 51, column 22>
+//   // proto:  void QRect::QRect(const QPoint & topleft, const QPoint & bottomright);
+extern "C"
+QRect*
+C_ZN5QRectC2ERK6QPointS2_(const QPoint* arg1,
+const QPoint* arg2) {
+  auto ret = new QRect(*((const QPoint*)arg1),
+*((const QPoint*)arg2));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 97, column 35>
 //   // proto:  QRect QRect::translated(int dx, int dy);
 // _ZNK5QRect10translatedEii translated(int, int)
@@ -1488,6 +1498,16 @@ arg3,
 arg4);
   return new QRect(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 52, column 22>
+//   // proto:  void QRect::QRect(const QPoint & topleft, const QSize & size);
+extern "C"
+QRect*
+C_ZN5QRectC2ERK6QPointRK5QSize(const QPoint* arg1,
+const QSize* arg2) {
+  auto ret = new QRect(*((const QPoint*)arg1),
+*((const QSize*)arg2));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 114, column 33>
 //   // proto:  int QRect::height();
 // _ZNK5QRect6heightEv height()
@@ -1497,6 +1517,20 @@ C_ZNK5QRect6heightEv(void *qthis) {
   auto ret =
   ((QRect*)qthis)->height();
   return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 53, column 22>
+//   // proto:  void QRect::QRect(int left, int top, int width, int height);
+extern "C"
+QRect*
+C_ZN5QRectC2Eiiii(int arg1,
+int arg2,
+int arg3,
+int arg4) {
+  auto ret = new QRect(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 92, column 42>
 //   // proto:  void QRect::moveBottomLeft(const QPoint & p);
@@ -1801,6 +1835,14 @@ C_ZNK5QRect6bottomEv(void *qthis) {
   ((QRect*)qthis)->bottom();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 50, column 22>
+//   // proto:  void QRect::QRect();
+extern "C"
+QRect*
+C_ZN5QRectC2Ev() {
+  auto ret = new QRect();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 132, column 35>
 //   // proto:  QRect QRect::marginsAdded(const QMargins & margins);
 // _ZNK5QRect12marginsAddedERK8QMargins marginsAdded(const class QMargins &)
@@ -1896,6 +1938,14 @@ const QPoint* arg1) {
   ((QRect*)qthis)->translated(*((const QPoint*)arg1));
   return new QRect(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 496, column 22>
+//   // proto:  void QRectF::QRectF();
+extern "C"
+QRectF*
+C_ZN6QRectFC2Ev() {
+  auto ret = new QRectF();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 537, column 42>
 //   // proto:  void QRectF::moveBottomRight(const QPointF & p);
 // _ZN6QRectF15moveBottomRightERK7QPointF moveBottomRight(const class QPointF &)
@@ -1953,6 +2003,16 @@ void
 C_ZN6QRectF7setSizeERK6QSizeF(void *qthis,
 const QSizeF* arg1) {
   ((QRectF*)qthis)->setSize(*((const QSizeF*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 498, column 22>
+//   // proto:  void QRectF::QRectF(const QPointF & topleft, const QPointF & bottomRight);
+extern "C"
+QRectF*
+C_ZN6QRectFC2ERK7QPointFS2_(const QPointF* arg1,
+const QPointF* arg2) {
+  auto ret = new QRectF(*((const QPointF*)arg1),
+*((const QPointF*)arg2));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 549, column 42>
 //   // proto:  void QRectF::moveTo(const QPointF & p);
@@ -2126,6 +2186,16 @@ C_ZNK6QRectF6isNullEv(void *qthis) {
   auto ret =
   ((QRectF*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 497, column 22>
+//   // proto:  void QRectF::QRectF(const QPointF & topleft, const QSizeF & size);
+extern "C"
+QRectF*
+C_ZN6QRectFC2ERK7QPointFRK6QSizeF(const QPointF* arg1,
+const QSizeF* arg2) {
+  auto ret = new QRectF(*((const QPointF*)arg1),
+*((const QSizeF*)arg2));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 563, column 42>
 //   // proto:  void QRectF::setWidth(qreal w);
@@ -2331,6 +2401,20 @@ qreal arg2) {
   ((QRectF*)qthis)->translate(arg1,
 arg2);
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 499, column 22>
+//   // proto:  void QRectF::QRectF(qreal left, qreal top, qreal width, qreal height);
+extern "C"
+QRectF*
+C_ZN6QRectFC2Edddd(qreal arg1,
+qreal arg2,
+qreal arg3,
+qreal arg4) {
+  auto ret = new QRectF(arg1,
+arg2,
+arg3,
+arg4);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 592, column 35>
 //   // proto:  QRect QRectF::toRect();
 // _ZNK6QRectF6toRectEv toRect()
@@ -2522,6 +2606,14 @@ C_ZNK6QRectF5rightEv(void *qthis) {
   auto ret =
   ((QRectF*)qthis)->right();
   return ret; // 0 TypeKind.DOUBLE
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 500, column 22>
+//   // proto:  void QRectF::QRectF(const QRect & rect);
+extern "C"
+QRectF*
+C_ZN6QRectFC2ERK5QRect(const QRect* arg1) {
+  auto ret = new QRectF(*((const QRect*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 558, column 36>
 //   // proto:  QRectF QRectF::adjusted(qreal x1, qreal y1, qreal x2, qreal y2);

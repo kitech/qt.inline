@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qvector2d.h
 // dst-file: /src/gui/qvector2d.cxx
 //
@@ -201,6 +201,24 @@ C_ZN9QVector2D4setYEf(void *qthis,
 float arg1) {
   ((QVector2D*)qthis)->setY(arg1);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 55, column 31>
+//   // proto:  void QVector2D::QVector2D(const QPoint & point);
+extern "C"
+QVector2D*
+C_ZN9QVector2DC2ERK6QPoint(const QPoint* arg1) {
+  auto ret = new QVector2D(*((const QPoint*)arg1));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 54, column 22>
+//   // proto:  void QVector2D::QVector2D(float xpos, float ypos);
+extern "C"
+QVector2D*
+C_ZN9QVector2DC2Eff(float arg1,
+float arg2) {
+  auto ret = new QVector2D(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 64, column 10>
 //   // proto:  bool QVector2D::isNull();
 // _ZNK9QVector2D6isNullEv isNull()
@@ -223,6 +241,14 @@ const QVector2D* arg2) {
   ((QVector2D*)qthis)->distanceToLine(*((const QVector2D*)arg1),
 *((const QVector2D*)arg2));
   return ret; // 0 TypeKind.FLOAT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 52, column 22>
+//   // proto:  void QVector2D::QVector2D();
+extern "C"
+QVector2D*
+C_ZN9QVector2DC2Ev() {
+  auto ret = new QVector2D();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 107, column 15>
 //   // proto:  QVector3D QVector2D::toVector3D();
@@ -272,6 +298,14 @@ C_ZNK9QVector2D1xEv(void *qthis) {
   ((QVector2D*)qthis)->x();
   return ret; // 0 TypeKind.FLOAT
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 56, column 31>
+//   // proto:  void QVector2D::QVector2D(const QPointF & point);
+extern "C"
+QVector2D*
+C_ZN9QVector2DC2ERK7QPointF(const QPointF* arg1) {
+  auto ret = new QVector2D(*((const QPointF*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 81, column 11>
 //   // proto:  float QVector2D::distanceToPoint(const QVector2D & point);
 // _ZNK9QVector2D15distanceToPointERKS_ distanceToPoint(const class QVector2D &)
@@ -310,6 +344,14 @@ extern "C"
 void
 C_ZN9QVector2D9normalizeEv(void *qthis) {
   ((QVector2D*)qthis)->normalize();
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 53, column 14>
+//   // proto:  void QVector2D::QVector2D(Qt::Initialization );
+extern "C"
+QVector2D*
+C_ZN9QVector2DC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
+  auto ret = new QVector2D(*((Qt::Initialization*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector2d.h', line 91, column 18>
 //   // proto: static float QVector2D::dotProduct(const QVector2D & v1, const QVector2D & v2);

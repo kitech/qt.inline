@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qelapsedtimer.h
 // dst-file: /src/core/qelapsedtimer.cxx
 //
@@ -76,6 +76,14 @@ C_ZN13QElapsedTimer11isMonotonicEv() {
   auto ret =
   QElapsedTimer::isMonotonic();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 53, column 22>
+//   // proto:  void QElapsedTimer::QElapsedTimer();
+extern "C"
+QElapsedTimer*
+C_ZN13QElapsedTimerC2Ev() {
+  auto ret = new QElapsedTimer();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 72, column 12>
 //   // proto:  qint64 QElapsedTimer::msecsTo(const QElapsedTimer & other);

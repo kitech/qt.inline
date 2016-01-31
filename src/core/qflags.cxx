@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qflags.h
 // dst-file: /src/core/qflags.cxx
 //
@@ -78,6 +78,46 @@ int QFlag_Class_Size()
 // <= use block end
 
 // ext block begin =>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 75, column 38>
+//   // proto:  void QIncompatibleFlag::QIncompatibleFlag(int i);
+extern "C"
+QIncompatibleFlag*
+C_ZN17QIncompatibleFlagC2Ei(int arg1) {
+  auto ret = new QIncompatibleFlag(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 65, column 29>
+//   // proto:  void QFlag::QFlag(ushort ai);
+extern "C"
+QFlag*
+C_ZN5QFlagC2Et(ushort arg1) {
+  auto ret = new QFlag(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 52, column 29>
+//   // proto:  void QFlag::QFlag(int ai);
+extern "C"
+QFlag*
+C_ZN5QFlagC2Ei(int arg1) {
+  auto ret = new QFlag(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 64, column 29>
+//   // proto:  void QFlag::QFlag(short ai);
+extern "C"
+QFlag*
+C_ZN5QFlagC2Es(short arg1) {
+  auto ret = new QFlag(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 63, column 29>
+//   // proto:  void QFlag::QFlag(uint ai);
+extern "C"
+QFlag*
+C_ZN5QFlagC2Ej(uint arg1) {
+  auto ret = new QFlag(arg1);
+  return ret;
+}
 // <= ext block end
 
 // body block begin =>

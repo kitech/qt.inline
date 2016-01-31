@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qpixelformat.h
 // dst-file: /src/gui/qpixelformat.cxx
 //
@@ -279,6 +279,14 @@ C_ZNK12QPixelFormat9blackSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->blackSize();
   return ret; // 0 TypeKind.UCHAR
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 157, column 29>
+//   // proto:  void QPixelFormat::QPixelFormat();
+extern "C"
+QPixelFormat*
+C_ZN12QPixelFormatC2Ev() {
+  auto ret = new QPixelFormat();
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 205, column 48>
 //   // proto:  QPixelFormat::AlphaPremultiplied QPixelFormat::premultiplied();
 // _ZNK12QPixelFormat13premultipliedEv premultiplied()
@@ -358,6 +366,38 @@ C_ZNK12QPixelFormat11magentaSizeEv(void *qthis) {
   auto ret =
   ((QPixelFormat*)qthis)->magentaSize();
   return ret; // 0 TypeKind.UCHAR
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 158, column 29>
+//   // proto:  void QPixelFormat::QPixelFormat(QPixelFormat::ColorModel colorModel, uchar firstSize, uchar secondSize, uchar thirdSize, uchar fourthSize, uchar fifthSize, uchar alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, uchar subEnum);
+extern "C"
+QPixelFormat*
+C_ZN12QPixelFormatC2ENS_10ColorModelEhhhhhhNS_10AlphaUsageENS_13AlphaPositionENS_18AlphaPremultipliedENS_18TypeInterpretationENS_9ByteOrderEh(QPixelFormat::ColorModel arg1,
+uchar arg2,
+uchar arg3,
+uchar arg4,
+uchar arg5,
+uchar arg6,
+uchar arg7,
+QPixelFormat::AlphaUsage arg8,
+QPixelFormat::AlphaPosition arg9,
+QPixelFormat::AlphaPremultiplied arg10,
+QPixelFormat::TypeInterpretation arg11,
+QPixelFormat::ByteOrder arg12,
+uchar arg13) {
+  auto ret = new QPixelFormat(arg1,
+arg2,
+arg3,
+arg4,
+arg5,
+arg6,
+arg7,
+arg8,
+arg9,
+arg10,
+arg11,
+arg12,
+arg13);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 39>
 //   // proto:  QPixelFormat::YUVLayout QPixelFormat::yuvLayout();

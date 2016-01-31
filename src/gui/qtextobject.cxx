@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -259,6 +259,14 @@ C_ZNK13QTextFragment8positionEv(void *qthis) {
   ((QTextFragment*)qthis)->position();
   return ret; // 0 TypeKind.INT
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 293, column 12>
+//   // proto:  void QTextFragment::QTextFragment(const QTextFragment & o);
+extern "C"
+QTextFragment*
+C_ZN13QTextFragmentC2ERKS_(const QTextFragment* arg1) {
+  auto ret = new QTextFragment(*((const QTextFragment*)arg1));
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 304, column 10>
 //   // proto:  bool QTextFragment::contains(int position);
 // _ZNK13QTextFragment8containsEi contains(int)
@@ -269,6 +277,14 @@ int arg1) {
   auto ret =
   ((QTextFragment*)qthis)->contains(arg1);
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 292, column 12>
+//   // proto:  void QTextFragment::QTextFragment();
+extern "C"
+QTextFragment*
+C_ZN13QTextFragmentC2Ev() {
+  auto ret = new QTextFragment();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 308, column 13>
 //   // proto:  QString QTextFragment::text();
@@ -302,6 +318,18 @@ C_ZNK13QTextFragment7isValidEv(void *qthis) {
   auto ret =
   ((QTextFragment*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 291, column 12>
+//   // proto:  void QTextFragment::QTextFragment(const QTextDocumentPrivate * priv, int f, int fe);
+extern "C"
+QTextFragment*
+C_ZN13QTextFragmentC2EPK20QTextDocumentPrivateii(const QTextDocumentPrivate * arg1,
+int arg2,
+int arg3) {
+  auto ret = new QTextFragment(arg1,
+arg2,
+arg3);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 306, column 21>
 //   // proto:  QTextCharFormat QTextFragment::charFormat();
@@ -377,6 +405,14 @@ C_ZNK10QTextBlock3endEv(void *qthis) {
   auto ret =
   ((QTextBlock*)qthis)->end();
   return new QTextBlock::iterator(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 194, column 12>
+//   // proto:  void QTextBlock::QTextBlock(const QTextBlock & o);
+extern "C"
+QTextBlock*
+C_ZN10QTextBlockC2ERKS_(const QTextBlock* arg1) {
+  auto ret = new QTextBlock(*((const QTextBlock*)arg1));
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 216, column 13>
 //   // proto:  QString QTextBlock::text();
@@ -573,6 +609,16 @@ C_ZN10QTextBlock12setUserStateEi(void *qthis,
 int arg1) {
   ((QTextBlock*)qthis)->setUserState(arg1);
 }
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 192, column 12>
+//   // proto:  void QTextBlock::QTextBlock(QTextDocumentPrivate * priv, int b);
+extern "C"
+QTextBlock*
+C_ZN10QTextBlockC2EP20QTextDocumentPrivatei(QTextDocumentPrivate * arg1,
+int arg2) {
+  auto ret = new QTextBlock(arg1,
+arg2);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 214, column 25>
 //   // proto:  Qt::LayoutDirection QTextBlock::textDirection();
 // _ZNK10QTextBlock13textDirectionEv textDirection()
@@ -631,6 +677,14 @@ C_ZNK10QTextBlock11blockFormatEv(void *qthis) {
   auto ret =
   ((QTextBlock*)qthis)->blockFormat();
   return new QTextBlockFormat(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 193, column 12>
+//   // proto:  void QTextBlock::QTextBlock();
+extern "C"
+QTextBlock*
+C_ZN10QTextBlockC2Ev() {
+  auto ret = new QTextBlock();
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 237, column 9>
 //   // proto:  int QTextBlock::firstLineNumber();

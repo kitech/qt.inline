@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 24 17:25:06 2016
+// created: Sun Jan 31 12:42:06 2016
 // src-file: /QtCore/qfuturewatcher.h
 // dst-file: /src/core/qfuturewatcher.cxx
 //
@@ -333,6 +333,14 @@ void
 C_ZN18QFutureWatcherBase15waitForFinishedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->waitForFinished();
 }
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 182, column 14>
+//   // proto:  void QFutureWatcher<void>::QFutureWatcher(QObject * _parent);
+extern "C"
+QFutureWatcher<void>*
+C_ZN14QFutureWatcherIvEC2EP7QObject(QObject * arg1) {
+  auto ret = new QFutureWatcher<void>(arg1);
+  return ret;
+}
 // <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 189, column 19>
 //   // proto:  QFuture<void> QFutureWatcher<void>::future();
 // _ZNK14QFutureWatcherIvE6futureEv future()
@@ -628,20 +636,20 @@ void QFutureWatcherBase_SlotProxy_disconnect__ZN18QFutureWatcherBase14resultsRea
 }
 
 // QFutureWatcher<void>_SlotProxy here
-class QFutureWatcher_void__SlotProxy : public QObject
+class QFutureWatcherLvoidG_SlotProxy : public QObject
 {
   Q_OBJECT;
 public:
-   QFutureWatcher_void__SlotProxy():QObject(){}
+   QFutureWatcherLvoidG_SlotProxy():QObject(){}
 
 public: void* rsfptr = NULL;
 };
 #include "src/core/qfuturewatcher.moc"
 
 extern "C" {
-  QFutureWatcher_void__SlotProxy* QFutureWatcher_void__SlotProxy_new()
+  QFutureWatcherLvoidG_SlotProxy* QFutureWatcherLvoidG_SlotProxy_new()
   {
-    return new QFutureWatcher_void__SlotProxy();
+    return new QFutureWatcherLvoidG_SlotProxy();
   }
 };
 
