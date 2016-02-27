@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qcommandlinkbutton.h
 // dst-file: /src/widgets/qcommandlinkbutton.cxx
 //
@@ -40,9 +40,7 @@ QCommandLinkButton*
 C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(const QString* arg1,
 const QString* arg2,
 QWidget * arg3) {
-  auto ret = new QCommandLinkButton(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QCommandLinkButton(*((const QString*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 46, column 5>
@@ -84,8 +82,7 @@ extern "C"
 QCommandLinkButton*
 C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QCommandLinkButton(*((const QString*)arg1),
-arg2);
+  auto ret = new QCommandLinkButton(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 58, column 10>

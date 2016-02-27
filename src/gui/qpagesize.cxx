@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpagesize.h
 // dst-file: /src/gui/qpagesize.cxx
 //
@@ -61,10 +61,7 @@ C_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(const QSizeF*
 QPageSize::Unit arg2,
 const QString* arg3,
 QPageSize::SizeMatchPolicy arg4) {
-  auto ret = new QPageSize(*((const QSizeF*)arg1),
-arg2,
-*((const QString*)arg3),
-arg4);
+  auto ret = new QPageSize(*((const QSizeF*)arg1), arg2, *((const QString*)arg3), arg4);
   return ret;
 }
 //   // proto:  void QPageSize::~QPageSize();
@@ -154,9 +151,7 @@ QPageSize*
 C_ZN9QPageSizeC2ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(const QSize* arg1,
 const QString* arg2,
 QPageSize::SizeMatchPolicy arg3) {
-  auto ret = new QPageSize(*((const QSize*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QPageSize(*((const QSize*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpagesize.h', line 239, column 10>

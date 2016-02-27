@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qslider.h
 // dst-file: /src/widgets/qslider.cxx
 //
@@ -113,8 +113,7 @@ extern "C"
 QSlider*
 C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
 QWidget * arg2) {
-  auto ret = new QSlider(*((Qt::Orientation*)arg1),
-arg2);
+  auto ret = new QSlider(*((Qt::Orientation*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 64, column 14>

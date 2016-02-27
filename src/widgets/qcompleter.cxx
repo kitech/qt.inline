@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qcompleter.h
 // dst-file: /src/widgets/qcompleter.cxx
 //
@@ -116,8 +116,7 @@ extern "C"
 QCompleter*
 C_ZN10QCompleterC2ERK11QStringListP7QObject(const QStringList* arg1,
 QObject * arg2) {
-  auto ret = new QCompleter(*((const QStringList*)arg1),
-arg2);
+  auto ret = new QCompleter(*((const QStringList*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 122, column 17>
@@ -373,8 +372,7 @@ extern "C"
 QCompleter*
 C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * arg1,
 QObject * arg2) {
-  auto ret = new QCompleter(arg1,
-arg2);
+  auto ret = new QCompleter(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 99, column 10>

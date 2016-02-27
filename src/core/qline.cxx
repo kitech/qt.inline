@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -522,8 +522,7 @@ extern "C"
 QLine*
 C_ZN5QLineC2ERK6QPointS2_(const QPoint* arg1,
 const QPoint* arg2) {
-  auto ret = new QLine(*((const QPoint*)arg1),
-*((const QPoint*)arg2));
+  auto ret = new QLine(*((const QPoint*)arg1), *((const QPoint*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
@@ -612,10 +611,7 @@ C_ZN5QLineC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QLine(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QLine(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 17>
@@ -765,8 +761,7 @@ extern "C"
 QLineF*
 C_ZN6QLineFC2ERK7QPointFS2_(const QPointF* arg1,
 const QPointF* arg2) {
-  auto ret = new QLineF(*((const QPointF*)arg1),
-*((const QPointF*)arg2));
+  auto ret = new QLineF(*((const QPointF*)arg1), *((const QPointF*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 227, column 11>
@@ -902,10 +897,7 @@ C_ZN6QLineFC2Edddd(qreal arg1,
 qreal arg2,
 qreal arg3,
 qreal arg4) {
-  auto ret = new QLineF(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QLineF(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qtreewidget.h
 // dst-file: /src/widgets/qtreewidget.cxx
 //
@@ -14,6 +14,7 @@
 #include <qtreewidget.h>
 
 
+#include <qtreewidget.h>
 #include <qlist.h>
 #include <qgraphicsscene.h>
 #include <qrect.h>
@@ -1306,8 +1307,7 @@ extern "C"
 QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EPS_i(QTreeWidgetItem * arg1,
 int arg2) {
-  auto ret = new QTreeWidgetItem(arg1,
-arg2);
+  auto ret = new QTreeWidgetItem(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 104, column 17>
@@ -1328,9 +1328,7 @@ QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EPS_S0_i(QTreeWidgetItem * arg1,
 QTreeWidgetItem * arg2,
 int arg3) {
-  auto ret = new QTreeWidgetItem(arg1,
-arg2,
-arg3);
+  auto ret = new QTreeWidgetItem(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 111, column 20>
@@ -1392,9 +1390,7 @@ QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i(QTreeWidget * arg1,
 QTreeWidgetItem * arg2,
 int arg3) {
-  auto ret = new QTreeWidgetItem(arg1,
-arg2,
-arg3);
+  auto ret = new QTreeWidgetItem(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 128, column 17>
@@ -1561,9 +1557,7 @@ QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi(QTreeWidget * arg1,
 const QStringList* arg2,
 int arg3) {
-  auto ret = new QTreeWidgetItem(arg1,
-*((const QStringList*)arg2),
-arg3);
+  auto ret = new QTreeWidgetItem(arg1, *((const QStringList*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 86, column 17>
@@ -1604,8 +1598,7 @@ extern "C"
 QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2ERK11QStringListi(const QStringList* arg1,
 int arg2) {
-  auto ret = new QTreeWidgetItem(*((const QStringList*)arg1),
-arg2);
+  auto ret = new QTreeWidgetItem(*((const QStringList*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 76, column 17>
@@ -1670,9 +1663,7 @@ QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EPS_RK11QStringListi(QTreeWidgetItem * arg1,
 const QStringList* arg2,
 int arg3) {
-  auto ret = new QTreeWidgetItem(arg1,
-*((const QStringList*)arg2),
-arg3);
+  auto ret = new QTreeWidgetItem(arg1, *((const QStringList*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 88, column 17>
@@ -1738,8 +1729,7 @@ extern "C"
 QTreeWidgetItem*
 C_ZN15QTreeWidgetItemC2EP11QTreeWidgeti(QTreeWidget * arg1,
 int arg2) {
-  auto ret = new QTreeWidgetItem(arg1,
-arg2);
+  auto ret = new QTreeWidgetItem(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidget.h', line 158, column 17>

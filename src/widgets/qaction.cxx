@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qaction.h
 // dst-file: /src/widgets/qaction.cxx
 //
@@ -14,12 +14,14 @@
 #include <qaction.h>
 
 
+#include <qwidget.h>
 #include <qlist.h>
 #include <qwindowdefs.h>
 #include <qstring.h>
 #include <qfont.h>
 #include <qkeysequence.h>
 #include <qicon.h>
+#include <qgraphicswidget.h>
 #include <qgraphicsscene.h>
 #include <qvariant.h>
 #include <qnamespace.h>
@@ -106,8 +108,7 @@ extern "C"
 QAction*
 C_ZN7QActionC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QAction(*((const QString*)arg1),
-arg2);
+  auto ret = new QAction(*((const QString*)arg1), arg2);
   return ret;
 }
 //   // proto:  void QAction::~QAction();
@@ -345,9 +346,7 @@ QAction*
 C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(const QIcon* arg1,
 const QString* arg2,
 QObject * arg3) {
-  auto ret = new QAction(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QAction(*((const QIcon*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qaction.h', line 179, column 10>

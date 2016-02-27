@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qpauseanimation.h
 // dst-file: /src/core/qpauseanimation.cxx
 //
@@ -55,8 +55,7 @@ extern "C"
 QPauseAnimation*
 C_ZN15QPauseAnimationC2EiP7QObject(int arg1,
 QObject * arg2) {
-  auto ret = new QPauseAnimation(arg1,
-arg2);
+  auto ret = new QPauseAnimation(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 55, column 9>

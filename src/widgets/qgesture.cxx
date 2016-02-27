@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgesture.h
 // dst-file: /src/widgets/qgesture.cxx
 //
@@ -17,6 +17,7 @@
 #include <qglobal.h>
 #include <qpoint.h>
 #include <qnamespace.h>
+#include <qgesture.h>
 #include <qlist.h>
 #include <qapplication.h>
 // <= header block end

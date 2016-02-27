@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopenglpaintdevice.h
 // dst-file: /src/gui/qopenglpaintdevice.cxx
 //
@@ -84,8 +84,7 @@ extern "C"
 QOpenGLPaintDevice*
 C_ZN18QOpenGLPaintDeviceC2Eii(int arg1,
 int arg2) {
-  auto ret = new QOpenGLPaintDevice(arg1,
-arg2);
+  auto ret = new QOpenGLPaintDevice(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglpaintdevice.h', line 61, column 21>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -172,8 +172,7 @@ extern "C"
 QBoxLayout*
 C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg1,
 QWidget * arg2) {
-  auto ret = new QBoxLayout(arg1,
-arg2);
+  auto ret = new QBoxLayout(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 73, column 10>

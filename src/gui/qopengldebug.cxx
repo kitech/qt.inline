@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopengldebug.h
 // dst-file: /src/gui/qopengldebug.cxx
 //
@@ -16,6 +16,7 @@
 
 #include <qstring.h>
 #include <qglobal.h>
+#include <qopengldebug.h>
 #include <qlist.h>
 #include <qstandarditemmodel.h>
 // <= header block end

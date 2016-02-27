@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgroupbox.h
 // dst-file: /src/widgets/qgroupbox.cxx
 //
@@ -178,8 +178,7 @@ extern "C"
 QGroupBox*
 C_ZN9QGroupBoxC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QGroupBox(*((const QString*)arg1),
-arg2);
+  auto ret = new QGroupBox(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 78, column 10>

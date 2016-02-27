@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qbitarray.h
 // dst-file: /src/core/qbitarray.cxx
 //
@@ -228,8 +228,7 @@ extern "C"
 QBitArray*
 C_ZN9QBitArrayC2Eib(int arg1,
 bool arg2) {
-  auto ret = new QBitArray(arg1,
-arg2);
+  auto ret = new QBitArray(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 67, column 17>

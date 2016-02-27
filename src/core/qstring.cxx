@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qstring.h
 // dst-file: /src/core/qstring.cxx
 //
@@ -17,6 +17,7 @@
 #include <qglobal.h>
 #include <qstringlist.h>
 #include <qbytearray.h>
+#include <qstring.h>
 #include <qvector.h>
 #include <qchar.h>
 // <= header block end
@@ -2266,8 +2267,7 @@ extern "C"
 QString*
 C_ZN7QStringC2EPK5QChari(const QChar * arg1,
 int arg2) {
-  auto ret = new QString(arg1,
-arg2);
+  auto ret = new QString(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 353, column 13>
@@ -2381,8 +2381,7 @@ extern "C"
 QString*
 C_ZN7QStringC2EiN2Qt14InitializationE(int arg1,
 Qt::Initialization* arg2) {
-  auto ret = new QString(arg1,
-*((Qt::Initialization*)arg2));
+  auto ret = new QString(arg1, *((Qt::Initialization*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 224, column 12>
@@ -4120,8 +4119,7 @@ extern "C"
 QString*
 C_ZN7QStringC2Ei5QChar(int arg1,
 QChar* arg2) {
-  auto ret = new QString(arg1,
-*((QChar*)arg2));
+  auto ret = new QString(arg1, *((QChar*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 505, column 16>
@@ -5070,8 +5068,7 @@ extern "C"
 QLatin1String*
 C_ZN13QLatin1StringC2EPKci(const char * arg1,
 int arg2) {
-  auto ret = new QLatin1String(arg1,
-arg2);
+  auto ret = new QLatin1String(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 995, column 17>
@@ -5788,9 +5785,7 @@ QStringRef*
 C_ZN10QStringRefC2EPK7QStringii(const QString * arg1,
 int arg2,
 int arg3) {
-  auto ret = new QStringRef(arg1,
-arg2,
-arg3);
+  auto ret = new QStringRef(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstring.h', line 1375, column 9>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qeventtransition.h
 // dst-file: /src/core/qeventtransition.cxx
 //
@@ -54,9 +54,7 @@ QEventTransition*
 C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * arg1,
 QEvent::Type* arg2,
 QState * arg3) {
-  auto ret = new QEventTransition(arg1,
-*((QEvent::Type*)arg2),
-arg3);
+  auto ret = new QEventTransition(arg1, *((QEvent::Type*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 59, column 18>

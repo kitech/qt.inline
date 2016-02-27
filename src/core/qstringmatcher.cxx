@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qstringmatcher.h
 // dst-file: /src/core/qstringmatcher.cxx
 //
@@ -109,8 +109,7 @@ extern "C"
 QStringMatcher*
 C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(const QString* arg1,
 Qt::CaseSensitivity* arg2) {
-  auto ret = new QStringMatcher(*((const QString*)arg1),
-*((Qt::CaseSensitivity*)arg2));
+  auto ret = new QStringMatcher(*((const QString*)arg1), *((Qt::CaseSensitivity*)arg2));
   return ret;
 }
 //   // proto:  void QStringMatcher::~QStringMatcher();
@@ -125,9 +124,7 @@ QStringMatcher*
 C_ZN14QStringMatcherC2EPK5QChariN2Qt15CaseSensitivityE(const QChar * arg1,
 int arg2,
 Qt::CaseSensitivity* arg3) {
-  auto ret = new QStringMatcher(arg1,
-arg2,
-*((Qt::CaseSensitivity*)arg3));
+  auto ret = new QStringMatcher(arg1, arg2, *((Qt::CaseSensitivity*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstringmatcher.h', line 60, column 9>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qdatastream.h
 // dst-file: /src/core/qdatastream.cxx
 //
@@ -116,8 +116,7 @@ extern "C"
 QDataStream*
 C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg1,
 QIODevice::OpenMode* arg2) {
-  auto ret = new QDataStream(arg1,
-*((QIODevice::OpenMode*)arg2));
+  auto ret = new QDataStream(arg1, *((QIODevice::OpenMode*)arg2));
   return ret;
 }
 //   // proto:  void QDataStream::~QDataStream();

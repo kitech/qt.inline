@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qimage.h
 // dst-file: /src/gui/qimage.cxx
 //
@@ -232,8 +232,7 @@ extern "C"
 QImage*
 C_ZN6QImageC2ERK5QSizeNS_6FormatE(const QSize* arg1,
 QImage::Format arg2) {
-  auto ret = new QImage(*((const QSize*)arg1),
-arg2);
+  auto ret = new QImage(*((const QSize*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 241, column 12>
@@ -350,13 +349,7 @@ int arg4,
 QImage::Format arg5,
 QImageCleanupFunction arg6,
 void * arg7) {
-  auto ret = new QImage(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7);
+  auto ret = new QImage(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 261, column 14>
@@ -454,12 +447,7 @@ int arg3,
 QImage::Format arg4,
 QImageCleanupFunction arg5,
 void * arg6) {
-  auto ret = new QImage(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+  auto ret = new QImage(arg1, arg2, arg3, arg4, arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 253, column 12>
@@ -681,12 +669,7 @@ int arg3,
 QImage::Format arg4,
 QImageCleanupFunction arg5,
 void * arg6) {
-  auto ret = new QImage(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+  auto ret = new QImage(arg1, arg2, arg3, arg4, arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 299, column 12>
@@ -813,9 +796,7 @@ QImage*
 C_ZN6QImageC2EiiNS_6FormatE(int arg1,
 int arg2,
 QImage::Format arg3) {
-  auto ret = new QImage(arg1,
-arg2,
-arg3);
+  auto ret = new QImage(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 191, column 9>
@@ -848,13 +829,7 @@ int arg4,
 QImage::Format arg5,
 QImageCleanupFunction arg6,
 void * arg7) {
-  auto ret = new QImage(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7);
+  auto ret = new QImage(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 160, column 10>
@@ -884,8 +859,7 @@ extern "C"
 QImage*
 C_ZN6QImageC2ERK7QStringPKc(const QString* arg1,
 const char * arg2) {
-  auto ret = new QImage(*((const QString*)arg1),
-arg2);
+  auto ret = new QImage(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimage.h', line 292, column 19>

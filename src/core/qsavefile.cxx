@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qsavefile.h
 // dst-file: /src/core/qsavefile.cxx
 //
@@ -55,8 +55,7 @@ extern "C"
 QSaveFile*
 C_ZN9QSaveFileC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QSaveFile(*((const QString*)arg1),
-arg2);
+  auto ret = new QSaveFile(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 65, column 13>

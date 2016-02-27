@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicsproxywidget.h
 // dst-file: /src/widgets/qgraphicsproxywidget.cxx
 //
@@ -127,8 +127,7 @@ extern "C"
 QGraphicsProxyWidget*
 C_ZN20QGraphicsProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QGraphicsProxyWidget(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QGraphicsProxyWidget(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <= ext block end

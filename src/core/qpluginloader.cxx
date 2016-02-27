@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qpluginloader.h
 // dst-file: /src/core/qpluginloader.cxx
 //
@@ -14,6 +14,7 @@
 #include <qpluginloader.h>
 
 
+#include <qplugin.h>
 #include <qvector.h>
 #include <qdatastream.h>
 #include <qobject.h>
@@ -64,8 +65,7 @@ extern "C"
 QPluginLoader*
 C_ZN13QPluginLoaderC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QPluginLoader(*((const QString*)arg1),
-arg2);
+  auto ret = new QPluginLoader(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 63, column 10>

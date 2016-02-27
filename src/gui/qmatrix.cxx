@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qmatrix.h
 // dst-file: /src/gui/qmatrix.cxx
 //
@@ -479,12 +479,7 @@ qreal arg3,
 qreal arg4,
 qreal arg5,
 qreal arg6) {
-  auto ret = new QMatrix(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+  auto ret = new QMatrix(arg1, arg2, arg3, arg4, arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 65, column 11>

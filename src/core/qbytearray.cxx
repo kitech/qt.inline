@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qbytearray.h
 // dst-file: /src/core/qbytearray.cxx
 //
@@ -15,6 +15,7 @@
 
 
 #include <qglobal.h>
+#include <qbytearray.h>
 #include <qlist.h>
 // <= header block end
 
@@ -1057,8 +1058,7 @@ extern "C"
 QByteArray*
 C_ZN10QByteArrayC2Eic(int arg1,
 char arg2) {
-  auto ret = new QByteArray(arg1,
-arg2);
+  auto ret = new QByteArray(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 225, column 9>
@@ -1293,8 +1293,7 @@ extern "C"
 QByteArray*
 C_ZN10QByteArrayC2EPKci(const char * arg1,
 int arg2) {
-  auto ret = new QByteArray(arg1,
-arg2);
+  auto ret = new QByteArray(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 329, column 28>
@@ -2172,8 +2171,7 @@ extern "C"
 QByteArray*
 C_ZN10QByteArrayC2EiN2Qt14InitializationE(int arg1,
 Qt::Initialization* arg2) {
-  auto ret = new QByteArray(arg1,
-*((Qt::Initialization*)arg2));
+  auto ret = new QByteArray(arg1, *((Qt::Initialization*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearray.h', line 298, column 17>

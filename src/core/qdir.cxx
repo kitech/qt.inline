@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qdir.h
 // dst-file: /src/core/qdir.cxx
 //
@@ -255,10 +255,7 @@ C_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(const QString* a
 const QString* arg2,
 QDir::SortFlags arg3,
 QDir::Filters arg4) {
-  auto ret = new QDir(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4);
+  auto ret = new QDir(*((const QString*)arg1), *((const QString*)arg2), arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 175, column 10>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -55,8 +55,7 @@ extern "C"
 QSplashScreen*
 C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(const QPixmap* arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QSplashScreen(*((const QPixmap*)arg1),
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QSplashScreen(*((const QPixmap*)arg1), *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 63, column 10>
@@ -142,9 +141,7 @@ QSplashScreen*
 C_ZN13QSplashScreenC2EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 const QPixmap* arg2,
 Qt::WindowFlags* arg3) {
-  auto ret = new QSplashScreen(arg1,
-*((const QPixmap*)arg2),
-*((Qt::WindowFlags*)arg3));
+  auto ret = new QSplashScreen(arg1, *((const QPixmap*)arg2), *((Qt::WindowFlags*)arg3));
   return ret;
 }
 // <= ext block end

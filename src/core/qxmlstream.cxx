@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qxmlstream.h
 // dst-file: /src/core/qxmlstream.cxx
 //
@@ -1159,8 +1159,7 @@ extern "C"
 QXmlStreamNamespaceDeclaration*
 C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(const QString* arg1,
 const QString* arg2) {
-  auto ret = new QXmlStreamNamespaceDeclaration(*((const QString*)arg1),
-*((const QString*)arg2));
+  auto ret = new QXmlStreamNamespaceDeclaration(*((const QString*)arg1), *((const QString*)arg2));
   return ret;
 }
 //   // proto:  void QXmlStreamNamespaceDeclaration::~QXmlStreamNamespaceDeclaration();
@@ -1791,8 +1790,7 @@ extern "C"
 QXmlStreamAttribute*
 C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(const QString* arg1,
 const QString* arg2) {
-  auto ret = new QXmlStreamAttribute(*((const QString*)arg1),
-*((const QString*)arg2));
+  auto ret = new QXmlStreamAttribute(*((const QString*)arg1), *((const QString*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 82, column 23>
@@ -1853,9 +1851,7 @@ QXmlStreamAttribute*
 C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(const QString* arg1,
 const QString* arg2,
 const QString* arg3) {
-  auto ret = new QXmlStreamAttribute(*((const QString*)arg1),
-*((const QString*)arg2),
-*((const QString*)arg3));
+  auto ret = new QXmlStreamAttribute(*((const QString*)arg1), *((const QString*)arg2), *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qxmlstream.h', line 89, column 17>

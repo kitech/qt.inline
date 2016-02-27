@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qscrollbar.h
 // dst-file: /src/widgets/qscrollbar.cxx
 //
@@ -83,8 +83,7 @@ extern "C"
 QScrollBar*
 C_ZN10QScrollBarC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
 QWidget * arg2) {
-  auto ret = new QScrollBar(*((Qt::Orientation*)arg1),
-arg2);
+  auto ret = new QScrollBar(*((Qt::Orientation*)arg1), arg2);
   return ret;
 }
 // <= ext block end

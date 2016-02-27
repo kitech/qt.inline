@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdockwidget.h
 // dst-file: /src/widgets/qdockwidget.cxx
 //
@@ -139,8 +139,7 @@ extern "C"
 QDockWidget*
 C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QDockWidget(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QDockWidget(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 82, column 10>
@@ -159,9 +158,7 @@ QDockWidget*
 C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString* arg1,
 QWidget * arg2,
 Qt::WindowFlags* arg3) {
-  auto ret = new QDockWidget(*((const QString*)arg1),
-arg2,
-*((Qt::WindowFlags*)arg3));
+  auto ret = new QDockWidget(*((const QString*)arg1), arg2, *((Qt::WindowFlags*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdockwidget.h', line 66, column 10>

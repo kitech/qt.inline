@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qtablewidget.h
 // dst-file: /src/widgets/qtablewidget.cxx
 //
@@ -14,6 +14,7 @@
 #include <qtablewidget.h>
 
 
+#include <qtablewidget.h>
 #include <qlist.h>
 #include <qgraphicsscene.h>
 #include <qrect.h>
@@ -473,10 +474,7 @@ C_ZN26QTableWidgetSelectionRangeC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QTableWidgetSelectionRange(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QTableWidgetSelectionRange(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtablewidget.h', line 60, column 16>
@@ -806,9 +804,7 @@ QTableWidget*
 C_ZN12QTableWidgetC2EiiP7QWidget(int arg1,
 int arg2,
 QWidget * arg3) {
-  auto ret = new QTableWidget(arg1,
-arg2,
-arg3);
+  auto ret = new QTableWidget(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtablewidget.h', line 272, column 9>
@@ -1517,8 +1513,7 @@ extern "C"
 QTableWidgetItem*
 C_ZN16QTableWidgetItemC2ERK7QStringi(const QString* arg1,
 int arg2) {
-  auto ret = new QTableWidgetItem(*((const QString*)arg1),
-arg2);
+  auto ret = new QTableWidgetItem(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtablewidget.h', line 104, column 20>
@@ -1615,9 +1610,7 @@ QTableWidgetItem*
 C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(const QIcon* arg1,
 const QString* arg2,
 int arg3) {
-  auto ret = new QTableWidgetItem(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QTableWidgetItem(*((const QIcon*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtablewidget.h', line 124, column 16>

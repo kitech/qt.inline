@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpixmap.h
 // dst-file: /src/gui/qpixmap.cxx
 //
@@ -255,9 +255,7 @@ QPixmap*
 C_ZN7QPixmapC2ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString* arg1,
 const char * arg2,
 Qt::ImageConversionFlags* arg3) {
-  auto ret = new QPixmap(*((const QString*)arg1),
-arg2,
-*((Qt::ImageConversionFlags*)arg3));
+  auto ret = new QPixmap(*((const QString*)arg1), arg2, *((Qt::ImageConversionFlags*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 119, column 13>
@@ -347,8 +345,7 @@ extern "C"
 QPixmap*
 C_ZN7QPixmapC2Eii(int arg1,
 int arg2) {
-  auto ret = new QPixmap(arg1,
-arg2);
+  auto ret = new QPixmap(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 118, column 13>

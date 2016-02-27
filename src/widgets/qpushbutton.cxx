@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qpushbutton.h
 // dst-file: /src/widgets/qpushbutton.cxx
 //
@@ -101,9 +101,7 @@ QPushButton*
 C_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget(const QIcon* arg1,
 const QString* arg2,
 QWidget * arg3) {
-  auto ret = new QPushButton(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QPushButton(*((const QIcon*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 63, column 10>
@@ -168,8 +166,7 @@ extern "C"
 QPushButton*
 C_ZN11QPushButtonC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QPushButton(*((const QString*)arg1),
-arg2);
+  auto ret = new QPushButton(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 74, column 10>

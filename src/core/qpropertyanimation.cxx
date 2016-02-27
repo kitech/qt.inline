@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qpropertyanimation.h
 // dst-file: /src/core/qpropertyanimation.cxx
 //
@@ -92,9 +92,7 @@ QPropertyAnimation*
 C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * arg1,
 const QByteArray* arg2,
 QObject * arg3) {
-  auto ret = new QPropertyAnimation(arg1,
-*((const QByteArray*)arg2),
-arg3);
+  auto ret = new QPropertyAnimation(arg1, *((const QByteArray*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 60, column 10>

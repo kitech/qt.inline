@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdialog.h
 // dst-file: /src/widgets/qdialog.cxx
 //
@@ -127,8 +127,7 @@ extern "C"
 QDialog*
 C_ZN7QDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QDialog(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QDialog(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 70, column 11>

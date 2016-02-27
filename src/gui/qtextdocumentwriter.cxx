@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtextdocumentwriter.h
 // dst-file: /src/gui/qtextdocumentwriter.cxx
 //
@@ -50,8 +50,7 @@ extern "C"
 QTextDocumentWriter*
 C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * arg1,
 const QByteArray* arg2) {
-  auto ret = new QTextDocumentWriter(arg1,
-*((const QByteArray*)arg2));
+  auto ret = new QTextDocumentWriter(arg1, *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 60, column 10>
@@ -88,8 +87,7 @@ extern "C"
 QTextDocumentWriter*
 C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(const QString* arg1,
 const QByteArray* arg2) {
-  auto ret = new QTextDocumentWriter(*((const QString*)arg1),
-*((const QByteArray*)arg2));
+  auto ret = new QTextDocumentWriter(*((const QString*)arg1), *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 55, column 10>

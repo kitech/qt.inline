@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -91,11 +91,7 @@ QWidget * arg2,
 const char * arg3,
 const char * arg4,
 Qt::ShortcutContext* arg5) {
-  auto ret = new QShortcut(*((const QKeySequence*)arg1),
-arg2,
-arg3,
-arg4,
-*((Qt::ShortcutContext*)arg5));
+  auto ret = new QShortcut(*((const QKeySequence*)arg1), arg2, arg3, arg4, *((Qt::ShortcutContext*)arg5));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 74, column 10>

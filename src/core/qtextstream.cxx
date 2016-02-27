@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtextstream.h
 // dst-file: /src/core/qtextstream.cxx
 //
@@ -83,8 +83,7 @@ extern "C"
 QTextStreamManipulator*
 C_ZN22QTextStreamManipulatorC2EM11QTextStreamFviEi(QTSMFI arg1,
 int arg2) {
-  auto ret = new QTextStreamManipulator(arg1,
-arg2);
+  auto ret = new QTextStreamManipulator(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 209, column 5>
@@ -93,8 +92,7 @@ extern "C"
 QTextStreamManipulator*
 C_ZN22QTextStreamManipulatorC2EM11QTextStreamFv5QCharES1_(QTSMFC arg1,
 QChar* arg2) {
-  auto ret = new QTextStreamManipulator(arg1,
-*((QChar*)arg2));
+  auto ret = new QTextStreamManipulator(arg1, *((QChar*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 98, column 17>
@@ -219,8 +217,7 @@ extern "C"
 QTextStream*
 C_ZN11QTextStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg1,
 QIODevice::OpenMode* arg2) {
-  auto ret = new QTextStream(arg1,
-*((QIODevice::OpenMode*)arg2));
+  auto ret = new QTextStream(arg1, *((QIODevice::OpenMode*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 112, column 14>
@@ -313,8 +310,7 @@ extern "C"
 QTextStream*
 C_ZN11QTextStreamC2EP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEE(FILE * arg1,
 QIODevice::OpenMode* arg2) {
-  auto ret = new QTextStream(arg1,
-*((QIODevice::OpenMode*)arg2));
+  auto ret = new QTextStream(arg1, *((QIODevice::OpenMode*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 100, column 10>
@@ -508,8 +504,7 @@ extern "C"
 QTextStream*
 C_ZN11QTextStreamC2EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString * arg1,
 QIODevice::OpenMode* arg2) {
-  auto ret = new QTextStream(arg1,
-*((QIODevice::OpenMode*)arg2));
+  auto ret = new QTextStream(arg1, *((QIODevice::OpenMode*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextstream.h', line 126, column 13>
@@ -539,8 +534,7 @@ extern "C"
 QTextStream*
 C_ZN11QTextStreamC2ERK10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(const QByteArray* arg1,
 QIODevice::OpenMode* arg2) {
-  auto ret = new QTextStream(*((const QByteArray*)arg1),
-*((QIODevice::OpenMode*)arg2));
+  auto ret = new QTextStream(*((const QByteArray*)arg1), *((QIODevice::OpenMode*)arg2));
   return ret;
 }
 // <= ext block end

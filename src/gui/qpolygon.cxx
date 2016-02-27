@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpolygon.h
 // dst-file: /src/gui/qpolygon.cxx
 //
@@ -415,8 +415,7 @@ extern "C"
 QPolygon*
 C_ZN8QPolygonC2EiPKi(int arg1,
 const int * arg2) {
-  auto ret = new QPolygon(arg1,
-arg2);
+  auto ret = new QPolygon(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 83, column 14>
@@ -489,8 +488,7 @@ extern "C"
 QPolygon*
 C_ZN8QPolygonC2ERK5QRectb(const QRect* arg1,
 bool arg2) {
-  auto ret = new QPolygon(*((const QRect*)arg1),
-arg2);
+  auto ret = new QPolygon(*((const QRect*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpolygon.h', line 147, column 12>

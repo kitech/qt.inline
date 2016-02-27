@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtextlayout.h
 // dst-file: /src/gui/qtextlayout.cxx
 //
@@ -17,6 +17,7 @@
 #include <qglobal.h>
 #include <qrect.h>
 #include <qpoint.h>
+#include <qglyphrun.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qnamespace.h>
@@ -502,9 +503,7 @@ QTextLayout*
 C_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice(const QString* arg1,
 const QFont* arg2,
 QPaintDevice * arg3) {
-  auto ret = new QTextLayout(*((const QString*)arg1),
-*((const QFont*)arg2),
-arg3);
+  auto ret = new QTextLayout(*((const QString*)arg1), *((const QFont*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 155, column 9>
@@ -876,8 +875,7 @@ extern "C"
 QTextInlineObject*
 C_ZN17QTextInlineObjectC2EiP11QTextEngine(int arg1,
 QTextEngine * arg2) {
-  auto ret = new QTextInlineObject(arg1,
-arg2);
+  auto ret = new QTextInlineObject(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextlayout.h', line 77, column 10>

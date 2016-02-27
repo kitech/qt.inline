@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpen.h
 // dst-file: /src/gui/qpen.cxx
 //
@@ -348,11 +348,7 @@ qreal arg2,
 Qt::PenStyle* arg3,
 Qt::PenCapStyle* arg4,
 Qt::PenJoinStyle* arg5) {
-  auto ret = new QPen(*((const QBrush*)arg1),
-arg2,
-*((Qt::PenStyle*)arg3),
-*((Qt::PenCapStyle*)arg4),
-*((Qt::PenJoinStyle*)arg5));
+  auto ret = new QPen(*((const QBrush*)arg1), arg2, *((Qt::PenStyle*)arg3), *((Qt::PenCapStyle*)arg4), *((Qt::PenJoinStyle*)arg5));
   return ret;
 }
 // <= ext block end

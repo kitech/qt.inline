@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qmimedata.h
 // dst-file: /src/core/qmimedata.cxx
 //
@@ -16,6 +16,7 @@
 
 #include <qvariant.h>
 #include <qstring.h>
+#include <qurl.h>
 #include <qlist.h>
 #include <qdatastream.h>
 #include <qbytearray.h>

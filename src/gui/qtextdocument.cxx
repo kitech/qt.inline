@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtextdocument.h
 // dst-file: /src/gui/qtextdocument.cxx
 //
@@ -18,6 +18,7 @@
 #include <qsize.h>
 #include <qtextobject.h>
 #include <qglobal.h>
+#include <qtextformat.h>
 #include <qvector.h>
 #include <qtextcursor.h>
 #include <qurl.h>
@@ -429,8 +430,7 @@ extern "C"
 QTextDocument*
 C_ZN13QTextDocumentC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QTextDocument(*((const QString*)arg1),
-arg2);
+  auto ret = new QTextDocument(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextdocument.h', line 169, column 17>

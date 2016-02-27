@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdrawutil.h
 // dst-file: /src/widgets/qdrawutil.cxx
 //
@@ -54,8 +54,7 @@ extern "C"
 QTileRules*
 C_ZN10QTileRulesC2EN2Qt8TileRuleES1_(Qt::TileRule* arg1,
 Qt::TileRule* arg2) {
-  auto ret = new QTileRules(*((Qt::TileRule*)arg1),
-*((Qt::TileRule*)arg2));
+  auto ret = new QTileRules(*((Qt::TileRule*)arg1), *((Qt::TileRule*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 109, column 12>

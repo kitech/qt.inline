@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdirmodel.h
 // dst-file: /src/widgets/qdirmodel.cxx
 //
@@ -101,10 +101,7 @@ C_ZN9QDirModelC2ERK11QStringList6QFlagsIN4QDir6FilterEES3_INS4_8SortFlagEEP7QObj
 QDir::Filters* arg2,
 QDir::SortFlags* arg3,
 QObject * arg4) {
-  auto ret = new QDirModel(*((const QStringList*)arg1),
-*((QDir::Filters*)arg2),
-*((QDir::SortFlags*)arg3),
-arg4);
+  auto ret = new QDirModel(*((const QStringList*)arg1), *((QDir::Filters*)arg2), *((QDir::SortFlags*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdirmodel.h', line 95, column 17>

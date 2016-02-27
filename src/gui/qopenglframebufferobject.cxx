@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopenglframebufferobject.h
 // dst-file: /src/gui/qopenglframebufferobject.cxx
 //
@@ -195,11 +195,7 @@ int arg2,
 QOpenGLFramebufferObject::Attachment arg3,
 GLenum arg4,
 GLenum arg5) {
-  auto ret = new QOpenGLFramebufferObject(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QOpenGLFramebufferObject(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 65, column 5>
@@ -210,10 +206,7 @@ C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeNS_10AttachmentEjj(const QSize* arg1,
 QOpenGLFramebufferObject::Attachment arg2,
 GLenum arg3,
 GLenum arg4) {
-  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1),
-arg2,
-arg3,
-arg4);
+  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1), arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 86, column 12>
@@ -232,8 +225,7 @@ extern "C"
 QOpenGLFramebufferObject*
 C_ZN24QOpenGLFramebufferObjectC2ERK5QSizeRK30QOpenGLFramebufferObjectFormat(const QSize* arg1,
 const QOpenGLFramebufferObjectFormat* arg2) {
-  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1),
-*((const QOpenGLFramebufferObjectFormat*)arg2));
+  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1), *((const QOpenGLFramebufferObjectFormat*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 96, column 17>
@@ -281,8 +273,7 @@ extern "C"
 QOpenGLFramebufferObject*
 C_ZN24QOpenGLFramebufferObjectC2ERK5QSizej(const QSize* arg1,
 GLenum arg2) {
-  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1),
-arg2);
+  auto ret = new QOpenGLFramebufferObject(*((const QSize*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 80, column 10>
@@ -357,9 +348,7 @@ QOpenGLFramebufferObject*
 C_ZN24QOpenGLFramebufferObjectC2EiiRK30QOpenGLFramebufferObjectFormat(int arg1,
 int arg2,
 const QOpenGLFramebufferObjectFormat* arg3) {
-  auto ret = new QOpenGLFramebufferObject(arg1,
-arg2,
-*((const QOpenGLFramebufferObjectFormat*)arg3));
+  auto ret = new QOpenGLFramebufferObject(arg1, arg2, *((const QOpenGLFramebufferObjectFormat*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 101, column 17>
@@ -452,9 +441,7 @@ QOpenGLFramebufferObject*
 C_ZN24QOpenGLFramebufferObjectC2Eiij(int arg1,
 int arg2,
 GLenum arg3) {
-  auto ret = new QOpenGLFramebufferObject(arg1,
-arg2,
-arg3);
+  auto ret = new QOpenGLFramebufferObject(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglframebufferobject.h', line 90, column 16>

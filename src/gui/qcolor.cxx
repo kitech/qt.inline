@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qcolor.h
 // dst-file: /src/gui/qcolor.cxx
 //
@@ -980,10 +980,7 @@ C_ZN6QColorC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QColor(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QColor(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qcolor.h', line 86, column 11>

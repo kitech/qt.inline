@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qhistorystate.h
 // dst-file: /src/core/qhistorystate.cxx
 //
@@ -76,8 +76,7 @@ extern "C"
 QHistoryState*
 C_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType arg1,
 QState * arg2) {
-  auto ret = new QHistoryState(arg1,
-arg2);
+  auto ret = new QHistoryState(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qhistorystate.h', line 57, column 5>

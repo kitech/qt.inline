@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qsocketnotifier.h
 // dst-file: /src/core/qsocketnotifier.cxx
 //
@@ -79,9 +79,7 @@ QSocketNotifier*
 C_ZN15QSocketNotifierC2EiNS_4TypeEP7QObject(qintptr arg1,
 QSocketNotifier::Type arg2,
 QObject * arg3) {
-  auto ret = new QSocketNotifier(arg1,
-arg2,
-arg3);
+  auto ret = new QSocketNotifier(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 44, column 5>

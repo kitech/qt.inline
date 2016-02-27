@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qvariant.h
 // dst-file: /src/core/qvariant.cxx
 //
@@ -23,6 +23,7 @@
 #include <qline.h>
 #include <qjsonarray.h>
 #include <qstringlist.h>
+#include <qvariant.h>
 #include <qlist.h>
 #include <qcontainerfwd.h>
 #include <quuid.h>
@@ -630,9 +631,7 @@ QVariant*
 C_ZN8QVariantC2EiPKvj(int arg1,
 const void * arg2,
 uint arg3) {
-  auto ret = new QVariant(arg1,
-arg2,
-arg3);
+  auto ret = new QVariant(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 308, column 12>
@@ -884,8 +883,7 @@ extern "C"
 QVariant*
 C_ZN8QVariantC2EiPKv(int arg1,
 const void * arg2) {
-  auto ret = new QVariant(arg1,
-arg2);
+  auto ret = new QVariant(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qvariant.h', line 246, column 5>

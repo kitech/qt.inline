@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qimagereader.h
 // dst-file: /src/gui/qimagereader.cxx
 //
@@ -410,8 +410,7 @@ extern "C"
 QImageReader*
 C_ZN12QImageReaderC2ERK7QStringRK10QByteArray(const QString* arg1,
 const QByteArray* arg2) {
-  auto ret = new QImageReader(*((const QString*)arg1),
-*((const QByteArray*)arg2));
+  auto ret = new QImageReader(*((const QString*)arg1), *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 134, column 23>
@@ -467,8 +466,7 @@ extern "C"
 QImageReader*
 C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * arg1,
 const QByteArray* arg2) {
-  auto ret = new QImageReader(arg1,
-*((const QByteArray*)arg2));
+  auto ret = new QImageReader(arg1, *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 72, column 10>

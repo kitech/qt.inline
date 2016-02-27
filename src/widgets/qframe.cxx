@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qframe.h
 // dst-file: /src/widgets/qframe.cxx
 //
@@ -68,8 +68,7 @@ extern "C"
 QFrame*
 C_ZN6QFrameC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QFrame(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QFrame(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 89, column 11>

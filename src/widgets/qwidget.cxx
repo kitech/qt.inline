@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qwidget.h
 // dst-file: /src/widgets/qwidget.cxx
 //
@@ -24,6 +24,7 @@
 #include <qpixmap.h>
 #include <qbytearray.h>
 #include <qregion.h>
+#include <qaction.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qfontinfo.h>
@@ -904,8 +905,7 @@ extern "C"
 QWidget*
 C_ZN7QWidgetC2EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QWidget(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QWidget(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 349, column 10>

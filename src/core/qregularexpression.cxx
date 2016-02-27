@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qregularexpression.h
 // dst-file: /src/core/qregularexpression.cxx
 //
@@ -242,8 +242,7 @@ extern "C"
 QRegularExpression*
 C_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE(const QString* arg1,
 QRegularExpression::PatternOptions arg2) {
-  auto ret = new QRegularExpression(*((const QString*)arg1),
-arg2);
+  auto ret = new QRegularExpression(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 70, column 20>

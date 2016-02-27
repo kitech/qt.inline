@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qkeysequenceedit.h
 // dst-file: /src/widgets/qkeysequenceedit.cxx
 //
@@ -39,8 +39,7 @@ extern "C"
 QKeySequenceEdit*
 C_ZN16QKeySequenceEditC2ERK12QKeySequenceP7QWidget(const QKeySequence* arg1,
 QWidget * arg2) {
-  auto ret = new QKeySequenceEdit(*((const QKeySequence*)arg1),
-arg2);
+  auto ret = new QKeySequenceEdit(*((const QKeySequence*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 59, column 10>

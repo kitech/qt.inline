@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/quuid.h
 // dst-file: /src/core/quuid.cxx
 //
@@ -155,17 +155,7 @@ uchar arg8,
 uchar arg9,
 uchar arg10,
 uchar arg11) {
-  auto ret = new QUuid(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11);
+  auto ret = new QUuid(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/quuid.h', line 111, column 5>

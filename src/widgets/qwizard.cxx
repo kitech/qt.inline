@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qwizard.h
 // dst-file: /src/widgets/qwizard.cxx
 //
@@ -709,8 +709,7 @@ extern "C"
 QWizard*
 C_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QWizard(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QWizard(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <= ext block end

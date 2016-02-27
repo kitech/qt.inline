@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtextboundaryfinder.h
 // dst-file: /src/core/qtextboundaryfinder.cxx
 //
@@ -135,11 +135,7 @@ const QChar * arg2,
 int arg3,
 unsigned char * arg4,
 int arg5) {
-  auto ret = new QTextBoundaryFinder(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QTextBoundaryFinder(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 73, column 17>
@@ -201,8 +197,7 @@ extern "C"
 QTextBoundaryFinder*
 C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType arg1,
 const QString* arg2) {
-  auto ret = new QTextBoundaryFinder(arg1,
-*((const QString*)arg2));
+  auto ret = new QTextBoundaryFinder(arg1, *((const QString*)arg2));
   return ret;
 }
 // <= ext block end

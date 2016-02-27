@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicsscene.h
 // dst-file: /src/widgets/qgraphicsscene.cxx
 //
@@ -17,11 +17,13 @@
 #include <qrect.h>
 #include <qglobal.h>
 #include <qpainterpath.h>
+#include <qgraphicsitem.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qpalette.h>
 #include <qvariant.h>
 #include <qbrush.h>
+#include <qgraphicsview.h>
 #include <qfont.h>
 // <= header block end
 
@@ -380,8 +382,7 @@ extern "C"
 QGraphicsScene*
 C_ZN14QGraphicsSceneC2ERK6QRectFP7QObject(const QRectF* arg1,
 QObject * arg2) {
-  auto ret = new QGraphicsScene(*((const QRectF*)arg1),
-arg2);
+  auto ret = new QGraphicsScene(*((const QRectF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 221, column 22>
@@ -774,11 +775,7 @@ qreal arg2,
 qreal arg3,
 qreal arg4,
 QObject * arg5) {
-  auto ret = new QGraphicsScene(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QGraphicsScene(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsscene.h', line 213, column 20>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qprogressdialog.h
 // dst-file: /src/widgets/qprogressdialog.cxx
 //
@@ -91,12 +91,7 @@ int arg3,
 int arg4,
 QWidget * arg5,
 Qt::WindowFlags* arg6) {
-  auto ret = new QProgressDialog(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4,
-arg5,
-*((Qt::WindowFlags*)arg6));
+  auto ret = new QProgressDialog(*((const QString*)arg1), *((const QString*)arg2), arg3, arg4, arg5, *((Qt::WindowFlags*)arg6));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 73, column 10>
@@ -204,8 +199,7 @@ extern "C"
 QProgressDialog*
 C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QProgressDialog(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QProgressDialog(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 98, column 10>

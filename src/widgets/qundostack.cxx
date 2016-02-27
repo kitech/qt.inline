@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qundostack.h
 // dst-file: /src/widgets/qundostack.cxx
 //
@@ -389,8 +389,7 @@ extern "C"
 QUndoCommand*
 C_ZN12QUndoCommandC2ERK7QStringPS_(const QString* arg1,
 QUndoCommand * arg2) {
-  auto ret = new QUndoCommand(*((const QString*)arg1),
-arg2);
+  auto ret = new QUndoCommand(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qundostack.h', line 66, column 18>

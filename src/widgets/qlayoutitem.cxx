@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -325,10 +325,7 @@ C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int arg1,
 int arg2,
 QSizePolicy::Policy* arg3,
 QSizePolicy::Policy* arg4) {
-  auto ret = new QSpacerItem(arg1,
-arg2,
-*((QSizePolicy::Policy*)arg3),
-*((QSizePolicy::Policy*)arg4));
+  auto ret = new QSpacerItem(arg1, arg2, *((QSizePolicy::Policy*)arg3), *((QSizePolicy::Policy*)arg4));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 97, column 11>

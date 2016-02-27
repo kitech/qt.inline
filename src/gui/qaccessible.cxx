@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qaccessible.h
 // dst-file: /src/gui/qaccessible.cxx
 //
@@ -21,6 +21,7 @@
 #include <qcolor.h>
 #include <qvector.h>
 #include <qregion.h>
+#include <qaccessible.h>
 #include <qlist.h>
 #include <qwindowdefs.h>
 #include <qmetatype.h>
@@ -851,8 +852,7 @@ extern "C"
 QAccessibleTableModelChangeEvent*
 C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QObject * arg1,
 QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
-  auto ret = new QAccessibleTableModelChangeEvent(arg1,
-arg2);
+  auto ret = new QAccessibleTableModelChangeEvent(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 921, column 12>
@@ -861,8 +861,7 @@ extern "C"
 QAccessibleTableModelChangeEvent*
 C_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * arg1,
 QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
-  auto ret = new QAccessibleTableModelChangeEvent(arg1,
-arg2);
+  auto ret = new QAccessibleTableModelChangeEvent(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 935, column 10>
@@ -1130,8 +1129,7 @@ extern "C"
 QAccessibleEvent*
 C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * arg1,
 QAccessible::Event* arg2) {
-  auto ret = new QAccessibleEvent(arg1,
-*((QAccessible::Event*)arg2));
+  auto ret = new QAccessibleEvent(arg1, *((QAccessible::Event*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 698, column 14>
@@ -1204,8 +1202,7 @@ extern "C"
 QAccessibleEvent*
 C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * arg1,
 QAccessible::Event* arg2) {
-  auto ret = new QAccessibleEvent(arg1,
-*((QAccessible::Event*)arg2));
+  auto ret = new QAccessibleEvent(arg1, *((QAccessible::Event*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 641, column 20>
@@ -2013,10 +2010,7 @@ C_ZN26QAccessibleTextUpdateEventC2EP20QAccessibleInterfaceiRK7QStringS4_(QAccess
 int arg2,
 const QString* arg3,
 const QString* arg4) {
-  auto ret = new QAccessibleTextUpdateEvent(arg1,
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4));
+  auto ret = new QAccessibleTextUpdateEvent(arg1, arg2, *((const QString*)arg3), *((const QString*)arg4));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 863, column 13>
@@ -2047,10 +2041,7 @@ C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * arg1,
 int arg2,
 const QString* arg3,
 const QString* arg4) {
-  auto ret = new QAccessibleTextUpdateEvent(arg1,
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4));
+  auto ret = new QAccessibleTextUpdateEvent(arg1, arg2, *((const QString*)arg3), *((const QString*)arg4));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 724, column 12>
@@ -2059,8 +2050,7 @@ extern "C"
 QAccessibleStateChangeEvent*
 C_ZN27QAccessibleStateChangeEventC2EP20QAccessibleInterfaceN11QAccessible5StateE(QAccessibleInterface * arg1,
 QAccessible::State* arg2) {
-  auto ret = new QAccessibleStateChangeEvent(arg1,
-*((QAccessible::State*)arg2));
+  auto ret = new QAccessibleStateChangeEvent(arg1, *((QAccessible::State*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 730, column 24>
@@ -2079,8 +2069,7 @@ extern "C"
 QAccessibleStateChangeEvent*
 C_ZN27QAccessibleStateChangeEventC2EP7QObjectN11QAccessible5StateE(QObject * arg1,
 QAccessible::State* arg2) {
-  auto ret = new QAccessibleStateChangeEvent(arg1,
-*((QAccessible::State*)arg2));
+  auto ret = new QAccessibleStateChangeEvent(arg1, *((QAccessible::State*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 652, column 21>
@@ -2145,9 +2134,7 @@ QAccessibleTextInsertEvent*
 C_ZN26QAccessibleTextInsertEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextInsertEvent(arg1,
-arg2,
-*((const QString*)arg3));
+  auto ret = new QAccessibleTextInsertEvent(arg1, arg2, *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 795, column 12>
@@ -2157,9 +2144,7 @@ QAccessibleTextInsertEvent*
 C_ZN26QAccessibleTextInsertEventC2EP7QObjectiRK7QString(QObject * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextInsertEvent(arg1,
-arg2,
-*((const QString*)arg3));
+  auto ret = new QAccessibleTextInsertEvent(arg1, arg2, *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 565, column 22>
@@ -2223,9 +2208,7 @@ QAccessibleTextRemoveEvent*
 C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextRemoveEvent(arg1,
-arg2,
-*((const QString*)arg3));
+  auto ret = new QAccessibleTextRemoveEvent(arg1, arg2, *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 836, column 13>
@@ -2245,9 +2228,7 @@ QAccessibleTextRemoveEvent*
 C_ZN26QAccessibleTextRemoveEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextRemoveEvent(arg1,
-arg2,
-*((const QString*)arg3));
+  auto ret = new QAccessibleTextRemoveEvent(arg1, arg2, *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 839, column 9>
@@ -2277,9 +2258,7 @@ QAccessibleTextSelectionEvent*
 C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * arg1,
 int arg2,
 int arg3) {
-  auto ret = new QAccessibleTextSelectionEvent(arg1,
-arg2,
-arg3);
+  auto ret = new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 784, column 9>
@@ -2299,9 +2278,7 @@ QAccessibleTextSelectionEvent*
 C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * arg1,
 int arg2,
 int arg3) {
-  auto ret = new QAccessibleTextSelectionEvent(arg1,
-arg2,
-arg3);
+  auto ret = new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 10>
@@ -2321,8 +2298,7 @@ extern "C"
 QAccessibleTextCursorEvent*
 C_ZN26QAccessibleTextCursorEventC2EP20QAccessibleInterfacei(QAccessibleInterface * arg1,
 int arg2) {
-  auto ret = new QAccessibleTextCursorEvent(arg1,
-arg2);
+  auto ret = new QAccessibleTextCursorEvent(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 755, column 10>
@@ -2350,8 +2326,7 @@ extern "C"
 QAccessibleTextCursorEvent*
 C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * arg1,
 int arg2) {
-  auto ret = new QAccessibleTextCursorEvent(arg1,
-arg2);
+  auto ret = new QAccessibleTextCursorEvent(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 12>
@@ -2360,8 +2335,7 @@ extern "C"
 QAccessibleValueChangeEvent*
 C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * arg1,
 const QVariant* arg2) {
-  auto ret = new QAccessibleValueChangeEvent(arg1,
-*((const QVariant*)arg2));
+  auto ret = new QAccessibleValueChangeEvent(arg1, *((const QVariant*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 888, column 12>
@@ -2370,8 +2344,7 @@ extern "C"
 QAccessibleValueChangeEvent*
 C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * arg1,
 const QVariant* arg2) {
-  auto ret = new QAccessibleValueChangeEvent(arg1,
-*((const QVariant*)arg2));
+  auto ret = new QAccessibleValueChangeEvent(arg1, *((const QVariant*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 895, column 10>

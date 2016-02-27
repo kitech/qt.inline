@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicslayoutitem.h
 // dst-file: /src/widgets/qgraphicslayoutitem.cxx
 //
@@ -203,7 +203,6 @@ QGraphicsLayoutItem*
 C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * arg1,
 bool arg2) {
   // auto ret = new QGraphicsLayoutItem(arg1, arg2);
-    return NULL;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayoutitem.h', line 64, column 18>
 //   // proto:  qreal QGraphicsLayoutItem::minimumHeight();

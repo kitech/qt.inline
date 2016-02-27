@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qstringbuilder.h
 // dst-file: /src/core/qstringbuilder.cxx
 //
@@ -612,8 +612,7 @@ extern "C"
 QStringBuilder<QByteArray, QByteArray>*
 C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS0_S3_(const QByteArray* arg1,
 const QByteArray* arg2) {
-  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QByteArray*)arg1),
-*((const QByteArray*)arg2));
+  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QByteArray*)arg1), *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 155, column 9>
@@ -668,8 +667,7 @@ extern "C"
 QStringBuilder<QString, QString>*
 C_ZN14QStringBuilderI7QStringS0_EC2ERKS0_S3_(const QString* arg1,
 const QString* arg2) {
-  auto ret = new QStringBuilder<QString, QString>(*((const QString*)arg1),
-*((const QString*)arg2));
+  auto ret = new QStringBuilder<QString, QString>(*((const QString*)arg1), *((const QString*)arg2));
   return ret;
 }
 // <= ext block end

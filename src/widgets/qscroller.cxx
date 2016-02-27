@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qscroller.h
 // dst-file: /src/widgets/qscroller.cxx
 //
@@ -15,6 +15,7 @@
 
 
 #include <qpoint.h>
+#include <qscroller.h>
 #include <qlist.h>
 #include <qapplication.h>
 #include <qscrollerproperties.h>

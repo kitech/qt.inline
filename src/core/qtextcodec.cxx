@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtextcodec.h
 // dst-file: /src/core/qtextcodec.cxx
 //
@@ -113,8 +113,7 @@ extern "C"
 QTextEncoder*
 C_ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * arg1,
 QTextCodec::ConversionFlags* arg2) {
-  auto ret = new QTextEncoder(arg1,
-*((QTextCodec::ConversionFlags*)arg2));
+  auto ret = new QTextEncoder(arg1, *((QTextCodec::ConversionFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 134, column 10>
@@ -424,8 +423,7 @@ extern "C"
 QTextDecoder*
 C_ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * arg1,
 QTextCodec::ConversionFlags* arg2) {
-  auto ret = new QTextDecoder(arg1,
-*((QTextCodec::ConversionFlags*)arg2));
+  auto ret = new QTextDecoder(arg1, *((QTextCodec::ConversionFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtextcodec.h', line 149, column 10>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qobjectdefs.h
 // dst-file: /src/core/qobjectdefs.cxx
 //
@@ -171,8 +171,7 @@ extern "C"
 QGenericReturnArgument*
 C_ZN22QGenericReturnArgumentC2EPKcPv(const char * arg1,
 void * arg2) {
-  auto ret = new QGenericReturnArgument(arg1,
-arg2);
+  auto ret = new QGenericReturnArgument(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 344, column 23>
@@ -815,8 +814,7 @@ extern "C"
 QGenericArgument*
 C_ZN16QGenericArgumentC2EPKcPKv(const char * arg1,
 const void * arg2) {
-  auto ret = new QGenericArgument(arg1,
-arg2);
+  auto ret = new QGenericArgument(arg1, arg2);
   return ret;
 }
 // <= ext block end

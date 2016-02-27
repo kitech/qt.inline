@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtextobject.h
 // dst-file: /src/gui/qtextobject.cxx
 //
@@ -16,11 +16,13 @@
 
 #include <qtextformat.h>
 #include <qstring.h>
+#include <qglyphrun.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qvector.h>
 #include <qimage.h>
 #include <qnamespace.h>
+#include <qtextobject.h>
 #include <qtextcursor.h>
 // <= header block end
 
@@ -326,9 +328,7 @@ QTextFragment*
 C_ZN13QTextFragmentC2EPK20QTextDocumentPrivateii(const QTextDocumentPrivate * arg1,
 int arg2,
 int arg3) {
-  auto ret = new QTextFragment(arg1,
-arg2,
-arg3);
+  auto ret = new QTextFragment(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 306, column 21>
@@ -615,8 +615,7 @@ extern "C"
 QTextBlock*
 C_ZN10QTextBlockC2EP20QTextDocumentPrivatei(QTextDocumentPrivate * arg1,
 int arg2) {
-  auto ret = new QTextBlock(arg1,
-arg2);
+  auto ret = new QTextBlock(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextobject.h', line 214, column 25>

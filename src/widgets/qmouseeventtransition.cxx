@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qmouseeventtransition.h
 // dst-file: /src/widgets/qmouseeventtransition.cxx
 //
@@ -79,10 +79,7 @@ C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(
 QEvent::Type* arg2,
 Qt::MouseButton* arg3,
 QState * arg4) {
-  auto ret = new QMouseEventTransition(arg1,
-*((QEvent::Type*)arg2),
-*((Qt::MouseButton*)arg3),
-arg4);
+  auto ret = new QMouseEventTransition(arg1, *((QEvent::Type*)arg2), *((Qt::MouseButton*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 61, column 10>

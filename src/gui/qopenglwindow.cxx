@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopenglwindow.h
 // dst-file: /src/gui/qopenglwindow.cxx
 //
@@ -39,8 +39,7 @@ extern "C"
 QOpenGLWindow*
 C_ZN13QOpenGLWindowC2ENS_14UpdateBehaviorEP7QWindow(QOpenGLWindow::UpdateBehavior arg1,
 QWindow * arg2) {
-  auto ret = new QOpenGLWindow(arg1,
-arg2);
+  auto ret = new QOpenGLWindow(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglwindow.h', line 66, column 10>
@@ -106,9 +105,7 @@ QOpenGLWindow*
 C_ZN13QOpenGLWindowC2EP14QOpenGLContextNS_14UpdateBehaviorEP7QWindow(QOpenGLContext * arg1,
 QOpenGLWindow::UpdateBehavior arg2,
 QWindow * arg3) {
-  auto ret = new QOpenGLWindow(arg1,
-arg2,
-arg3);
+  auto ret = new QOpenGLWindow(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopenglwindow.h', line 69, column 10>

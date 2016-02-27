@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
@@ -516,9 +516,7 @@ QCoreApplication*
 C_ZN16QCoreApplicationC2ERiPPci(int* arg1,
 char ** arg2,
 int arg3) {
-  auto ret = new QCoreApplication(*((int*)arg1),
-arg2,
-arg3);
+  auto ret = new QCoreApplication(*((int*)arg1), arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 104, column 17>

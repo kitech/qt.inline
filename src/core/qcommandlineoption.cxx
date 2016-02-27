@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qcommandlineoption.h
 // dst-file: /src/core/qcommandlineoption.cxx
 //
@@ -88,10 +88,7 @@ C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(const QString* arg1,
 const QString* arg2,
 const QString* arg3,
 const QString* arg4) {
-  auto ret = new QCommandLineOption(*((const QString*)arg1),
-*((const QString*)arg2),
-*((const QString*)arg3),
-*((const QString*)arg4));
+  auto ret = new QCommandLineOption(*((const QString*)arg1), *((const QString*)arg2), *((const QString*)arg3), *((const QString*)arg4));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 71, column 13>
@@ -112,10 +109,7 @@ C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(const QStringList* ar
 const QString* arg2,
 const QString* arg3,
 const QString* arg4) {
-  auto ret = new QCommandLineOption(*((const QStringList*)arg1),
-*((const QString*)arg2),
-*((const QString*)arg3),
-*((const QString*)arg4));
+  auto ret = new QCommandLineOption(*((const QStringList*)arg1), *((const QString*)arg2), *((const QString*)arg3), *((const QString*)arg4));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 65, column 17>

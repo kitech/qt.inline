@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qchar.h
 // dst-file: /src/core/qchar.cxx
 //
@@ -1212,8 +1212,7 @@ extern "C"
 QChar*
 C_ZN5QCharC2Ehh(uchar arg1,
 uchar arg2) {
-  auto ret = new QChar(arg1,
-arg2);
+  auto ret = new QChar(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qchar.h', line 401, column 18>

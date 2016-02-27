@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qurl.h
 // dst-file: /src/core/qurl.cxx
 //
@@ -16,6 +16,7 @@
 
 #include <qstring.h>
 #include <qstringlist.h>
+#include <qurl.h>
 #include <qlist.h>
 #include <qdatastream.h>
 #include <qbytearray.h>
@@ -549,8 +550,7 @@ extern "C"
 QUrl*
 C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(const QString* arg1,
 QUrl::ParsingMode arg2) {
-  auto ret = new QUrl(*((const QString*)arg1),
-arg2);
+  auto ret = new QUrl(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qurl.h', line 350, column 24>

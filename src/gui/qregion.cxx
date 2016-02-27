@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qregion.h
 // dst-file: /src/gui/qregion.cxx
 //
@@ -163,8 +163,7 @@ extern "C"
 QRegion*
 C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(const QPolygon* arg1,
 Qt::FillRule* arg2) {
-  auto ret = new QRegion(*((const QPolygon*)arg1),
-*((Qt::FillRule*)arg2));
+  auto ret = new QRegion(*((const QPolygon*)arg1), *((Qt::FillRule*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 80, column 17>
@@ -201,8 +200,7 @@ extern "C"
 QRegion*
 C_ZN7QRegionC2ERK5QRectNS_10RegionTypeE(const QRect* arg1,
 QRegion::RegionType arg2) {
-  auto ret = new QRegion(*((const QRect*)arg1),
-arg2);
+  auto ret = new QRegion(*((const QRect*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 73, column 10>
@@ -224,11 +222,7 @@ int arg2,
 int arg3,
 int arg4,
 QRegion::RegionType arg5) {
-  auto ret = new QRegion(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QRegion(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 87, column 13>

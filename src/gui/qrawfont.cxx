@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qrawfont.h
 // dst-file: /src/gui/qrawfont.cxx
 //
@@ -17,6 +17,7 @@
 #include <qglobal.h>
 #include <qfont.h>
 #include <qrect.h>
+#include <qpoint.h>
 #include <qvector.h>
 #include <qstring.h>
 #include <qimage.h>
@@ -196,9 +197,7 @@ QRawFont*
 C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray* arg1,
 qreal arg2,
 QFont::HintingPreference* arg3) {
-  auto ret = new QRawFont(*((const QByteArray*)arg1),
-arg2,
-*((QFont::HintingPreference*)arg3));
+  auto ret = new QRawFont(*((const QByteArray*)arg1), arg2, *((QFont::HintingPreference*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qrawfont.h', line 126, column 10>
@@ -310,9 +309,7 @@ QRawFont*
 C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(const QString* arg1,
 qreal arg2,
 QFont::HintingPreference* arg3) {
-  auto ret = new QRawFont(*((const QString*)arg1),
-arg2,
-*((QFont::HintingPreference*)arg3));
+  auto ret = new QRawFont(*((const QString*)arg1), arg2, *((QFont::HintingPreference*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qrawfont.h', line 109, column 30>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopenglcontext.h
 // dst-file: /src/gui/qopenglcontext.cxx
 //
@@ -16,10 +16,12 @@
 
 #include <qsurfaceformat.h>
 #include <qpair.h>
+#include <qbytearray.h>
 #include <qset.h>
 #include <qwindowdefs.h>
 #include <qvariant.h>
 #include <qglobal.h>
+#include <qopenglcontext.h>
 #include <qlist.h>
 #include <qstandarditemmodel.h>
 // <= header block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtimeline.h
 // dst-file: /src/core/qtimeline.cxx
 //
@@ -129,8 +129,7 @@ extern "C"
 QTimeLine*
 C_ZN9QTimeLineC2EiP7QObject(int arg1,
 QObject * arg2) {
-  auto ret = new QTimeLine(arg1,
-arg2);
+  auto ret = new QTimeLine(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 111, column 10>

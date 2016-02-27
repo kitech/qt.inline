@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qcursor.h
 // dst-file: /src/gui/qcursor.cxx
 //
@@ -93,10 +93,7 @@ C_ZN7QCursorC2ERK7QBitmapS2_ii(const QBitmap* arg1,
 const QBitmap* arg2,
 int arg3,
 int arg4) {
-  auto ret = new QCursor(*((const QBitmap*)arg1),
-*((const QBitmap*)arg2),
-arg3,
-arg4);
+  auto ret = new QCursor(*((const QBitmap*)arg1), *((const QBitmap*)arg2), arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 78, column 5>
@@ -106,9 +103,7 @@ QCursor*
 C_ZN7QCursorC2ERK7QPixmapii(const QPixmap* arg1,
 int arg2,
 int arg3) {
-  auto ret = new QCursor(*((const QPixmap*)arg1),
-arg2,
-arg3);
+  auto ret = new QCursor(*((const QPixmap*)arg1), arg2, arg3);
   return ret;
 }
 //   // proto:  void QCursor::~QCursor();

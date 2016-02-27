@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdatetimeedit.h
 // dst-file: /src/widgets/qdatetimeedit.cxx
 //
@@ -81,8 +81,7 @@ extern "C"
 QTimeEdit*
 C_ZN9QTimeEditC2ERK5QTimeP7QWidget(const QTime* arg1,
 QWidget * arg2) {
-  auto ret = new QTimeEdit(*((const QTime*)arg1),
-arg2);
+  auto ret = new QTimeEdit(*((const QTime*)arg1), arg2);
   return ret;
 }
 //   // proto:  void QTimeEdit::~QTimeEdit();
@@ -96,8 +95,7 @@ extern "C"
 QDateEdit*
 C_ZN9QDateEditC2ERK5QDateP7QWidget(const QDate* arg1,
 QWidget * arg2) {
-  auto ret = new QDateEdit(*((const QDate*)arg1),
-arg2);
+  auto ret = new QDateEdit(*((const QDate*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdatetimeedit.h', line 219, column 10>
@@ -183,8 +181,7 @@ extern "C"
 QDateTimeEdit*
 C_ZN13QDateTimeEditC2ERK5QTimeP7QWidget(const QTime* arg1,
 QWidget * arg2) {
-  auto ret = new QDateTimeEdit(*((const QTime*)arg1),
-arg2);
+  auto ret = new QDateTimeEdit(*((const QTime*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdatetimeedit.h', line 168, column 10>
@@ -221,8 +218,7 @@ extern "C"
 QDateTimeEdit*
 C_ZN13QDateTimeEditC2ERK5QDateP7QWidget(const QDate* arg1,
 QWidget * arg2) {
-  auto ret = new QDateTimeEdit(*((const QDate*)arg1),
-arg2);
+  auto ret = new QDateTimeEdit(*((const QDate*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdatetimeedit.h', line 131, column 13>
@@ -537,8 +533,7 @@ extern "C"
 QDateTimeEdit*
 C_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget(const QDateTime* arg1,
 QWidget * arg2) {
-  auto ret = new QDateTimeEdit(*((const QDateTime*)arg1),
-arg2);
+  auto ret = new QDateTimeEdit(*((const QDateTime*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdatetimeedit.h', line 146, column 13>

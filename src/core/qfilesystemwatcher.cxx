@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qfilesystemwatcher.h
 // dst-file: /src/core/qfilesystemwatcher.cxx
 //
@@ -126,8 +126,7 @@ extern "C"
 QFileSystemWatcher*
 C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(const QStringList* arg1,
 QObject * arg2) {
-  auto ret = new QFileSystemWatcher(*((const QStringList*)arg1),
-arg2);
+  auto ret = new QFileSystemWatcher(*((const QStringList*)arg1), arg2);
   return ret;
 }
 // <= ext block end

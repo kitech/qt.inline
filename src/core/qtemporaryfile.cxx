@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtemporaryfile.h
 // dst-file: /src/core/qtemporaryfile.cxx
 //
@@ -216,8 +216,7 @@ extern "C"
 QTemporaryFile*
 C_ZN14QTemporaryFileC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QTemporaryFile(*((const QString*)arg1),
-arg2);
+  auto ret = new QTemporaryFile(*((const QString*)arg1), arg2);
   return ret;
 }
 // <= ext block end

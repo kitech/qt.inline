@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qdiriterator.h
 // dst-file: /src/core/qdiriterator.cxx
 //
@@ -50,8 +50,7 @@ extern "C"
 QDirIterator*
 C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(const QString* arg1,
 QDirIterator::IteratorFlags arg2) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-arg2);
+  auto ret = new QDirIterator(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 71, column 13>
@@ -70,8 +69,7 @@ extern "C"
 QDirIterator*
 C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir* arg1,
 QDirIterator::IteratorFlags arg2) {
-  auto ret = new QDirIterator(*((const QDir*)arg1),
-arg2);
+  auto ret = new QDirIterator(*((const QDir*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 65, column 13>
@@ -106,9 +104,7 @@ QDirIterator*
 C_ZN12QDirIteratorC2ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFlagEE(const QString* arg1,
 QDir::Filters* arg2,
 QDirIterator::IteratorFlags arg3) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-*((QDir::Filters*)arg2),
-arg3);
+  auto ret = new QDirIterator(*((const QString*)arg1), *((QDir::Filters*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 58, column 5>
@@ -119,10 +115,7 @@ C_ZN12QDirIteratorC2ERK7QStringRK11QStringList6QFlagsIN4QDir6FilterEES6_INS_12It
 const QStringList* arg2,
 QDir::Filters* arg3,
 QDirIterator::IteratorFlags arg4) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-*((const QStringList*)arg2),
-*((QDir::Filters*)arg3),
-arg4);
+  auto ret = new QDirIterator(*((const QString*)arg1), *((const QStringList*)arg2), *((QDir::Filters*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 70, column 15>

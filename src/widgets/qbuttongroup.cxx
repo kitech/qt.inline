@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qbuttongroup.h
 // dst-file: /src/widgets/qbuttongroup.cxx
 //
@@ -14,6 +14,7 @@
 #include <qbuttongroup.h>
 
 
+#include <qabstractbutton.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 // <= header block end

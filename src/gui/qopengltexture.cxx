@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopengltexture.h
 // dst-file: /src/gui/qopengltexture.cxx
 //
@@ -421,8 +421,7 @@ extern "C"
 QOpenGLTexture*
 C_ZN14QOpenGLTextureC2ERK6QImageNS_16MipMapGenerationE(const QImage* arg1,
 QOpenGLTexture::MipMapGeneration arg2) {
-  auto ret = new QOpenGLTexture(*((const QImage*)arg1),
-arg2);
+  auto ret = new QOpenGLTexture(*((const QImage*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qopengltexture.h', line 405, column 10>

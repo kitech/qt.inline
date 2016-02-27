@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qlcdnumber.h
 // dst-file: /src/widgets/qlcdnumber.cxx
 //
@@ -137,8 +137,7 @@ extern "C"
 QLCDNumber*
 C_ZN10QLCDNumberC2EjP7QWidget(uint arg1,
 QWidget * arg2) {
-  auto ret = new QLCDNumber(arg1,
-arg2);
+  auto ret = new QLCDNumber(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 73, column 10>

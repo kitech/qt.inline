@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qlistwidget.h
 // dst-file: /src/widgets/qlistwidget.cxx
 //
@@ -22,6 +22,7 @@
 #include <qbrush.h>
 #include <qvariant.h>
 #include <qsize.h>
+#include <qlistwidget.h>
 #include <qlist.h>
 #include <qgraphicsscene.h>
 #include <qrect.h>
@@ -498,8 +499,7 @@ extern "C"
 QListWidgetItem*
 C_ZN15QListWidgetItemC2EP11QListWidgeti(QListWidget * arg1,
 int arg2) {
-  auto ret = new QListWidgetItem(arg1,
-arg2);
+  auto ret = new QListWidgetItem(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlistwidget.h', line 148, column 18>
@@ -539,10 +539,7 @@ C_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti(const QIcon* arg1,
 const QString* arg2,
 QListWidget * arg3,
 int arg4) {
-  auto ret = new QListWidgetItem(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4);
+  auto ret = new QListWidgetItem(*((const QIcon*)arg1), *((const QString*)arg2), arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlistwidget.h', line 82, column 18>
@@ -668,9 +665,7 @@ QListWidgetItem*
 C_ZN15QListWidgetItemC2ERK7QStringP11QListWidgeti(const QString* arg1,
 QListWidget * arg2,
 int arg3) {
-  auto ret = new QListWidgetItem(*((const QString*)arg1),
-arg2,
-arg3);
+  auto ret = new QListWidgetItem(*((const QString*)arg1), arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qlistwidget.h', line 141, column 22>

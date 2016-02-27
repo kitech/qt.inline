@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qopenglversionfunctions.h
 // dst-file: /src/gui/qopenglversionfunctions.cxx
 //
@@ -126,9 +126,7 @@ QOpenGLVersionStatus*
 C_ZN20QOpenGLVersionStatusC2EiiNS_12OpenGLStatusE(int arg1,
 int arg2,
 QOpenGLVersionStatus::OpenGLStatus* arg3) {
-  auto ret = new QOpenGLVersionStatus(arg1,
-arg2,
-*((QOpenGLVersionStatus::OpenGLStatus*)arg3));
+  auto ret = new QOpenGLVersionStatus(arg1, arg2, *((QOpenGLVersionStatus::OpenGLStatus*)arg3));
   return ret;
 }
 // <= ext block end

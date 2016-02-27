@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpixelformat.h
 // dst-file: /src/gui/qpixelformat.cxx
 //
@@ -384,19 +384,7 @@ QPixelFormat::AlphaPremultiplied arg10,
 QPixelFormat::TypeInterpretation arg11,
 QPixelFormat::ByteOrder arg12,
 uchar arg13) {
-  auto ret = new QPixelFormat(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11,
-arg12,
-arg13);
+  auto ret = new QPixelFormat(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 39>

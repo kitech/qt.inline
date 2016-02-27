@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qundoview.h
 // dst-file: /src/widgets/qundoview.cxx
 //
@@ -40,8 +40,7 @@ extern "C"
 QUndoView*
 C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * arg1,
 QWidget * arg2) {
-  auto ret = new QUndoView(arg1,
-arg2);
+  auto ret = new QUndoView(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 77, column 10>
@@ -149,8 +148,7 @@ extern "C"
 QUndoView*
 C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * arg1,
 QWidget * arg2) {
-  auto ret = new QUndoView(arg1,
-arg2);
+  auto ret = new QUndoView(arg1, arg2);
   return ret;
 }
 // <= ext block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qkeyeventtransition.h
 // dst-file: /src/widgets/qkeyeventtransition.cxx
 //
@@ -94,10 +94,7 @@ C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * arg1,
 QEvent::Type* arg2,
 int arg3,
 QState * arg4) {
-  auto ret = new QKeyEventTransition(arg1,
-*((QEvent::Type*)arg2),
-arg3,
-arg4);
+  auto ret = new QKeyEventTransition(arg1, *((QEvent::Type*)arg2), arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 51, column 5>

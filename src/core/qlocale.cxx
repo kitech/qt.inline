@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qlocale.h
 // dst-file: /src/core/qlocale.cxx
 //
@@ -22,6 +22,7 @@
 #include <qdatastream.h>
 #include <qnamespace.h>
 #include <qstringlist.h>
+#include <qlocale.h>
 // <= header block end
 
 // main block begin =>
@@ -589,8 +590,7 @@ extern "C"
 QLocale*
 C_ZN7QLocaleC2ENS_8LanguageENS_7CountryE(QLocale::Language arg1,
 QLocale::Country arg2) {
-  auto ret = new QLocale(arg1,
-arg2);
+  auto ret = new QLocale(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 946, column 13>
@@ -1044,9 +1044,7 @@ QLocale*
 C_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language arg1,
 QLocale::Script arg2,
 QLocale::Country arg3) {
-  auto ret = new QLocale(arg1,
-arg2,
-arg3);
+  auto ret = new QLocale(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 893, column 20>

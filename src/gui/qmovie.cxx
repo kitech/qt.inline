@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qmovie.h
 // dst-file: /src/gui/qmovie.cxx
 //
@@ -15,8 +15,8 @@
 
 
 #include <qimage.h>
-#include <qlist.h>
 #include <qbytearray.h>
+#include <qlist.h>
 #include <qrect.h>
 #include <qsize.h>
 #include <qpixmap.h>
@@ -141,9 +141,7 @@ QMovie*
 C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(const QString* arg1,
 const QByteArray* arg2,
 QObject * arg3) {
-  auto ret = new QMovie(*((const QString*)arg1),
-*((const QByteArray*)arg2),
-arg3);
+  auto ret = new QMovie(*((const QString*)arg1), *((const QByteArray*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 95, column 16>
@@ -204,9 +202,7 @@ QMovie*
 C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * arg1,
 const QByteArray* arg2,
 QObject * arg3) {
-  auto ret = new QMovie(arg1,
-*((const QByteArray*)arg2),
-arg3);
+  auto ret = new QMovie(arg1, *((const QByteArray*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 114, column 15>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qmessageauthenticationcode.h
 // dst-file: /src/core/qmessageauthenticationcode.cxx
 //
@@ -58,8 +58,7 @@ extern "C"
 QMessageAuthenticationCode*
 C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm* arg1,
 const QByteArray* arg2) {
-  auto ret = new QMessageAuthenticationCode(*((QCryptographicHash::Algorithm*)arg1),
-*((const QByteArray*)arg2));
+  auto ret = new QMessageAuthenticationCode(*((QCryptographicHash::Algorithm*)arg1), *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 56, column 10>

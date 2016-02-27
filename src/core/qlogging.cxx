@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qlogging.h
 // dst-file: /src/core/qlogging.cxx
 //
@@ -97,10 +97,7 @@ C_ZN18QMessageLogContextC2EPKciS1_S1_(const char * arg1,
 int arg2,
 const char * arg3,
 const char * arg4) {
-  auto ret = new QMessageLogContext(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QMessageLogContext(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 64, column 10>
@@ -312,9 +309,7 @@ QMessageLogger*
 C_ZN14QMessageLoggerC2EPKciS1_(const char * arg1,
 int arg2,
 const char * arg3) {
-  auto ret = new QMessageLogger(arg1,
-arg2,
-arg3);
+  auto ret = new QMessageLogger(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlogging.h', line 113, column 12>
@@ -428,10 +423,7 @@ C_ZN14QMessageLoggerC2EPKciS1_S1_(const char * arg1,
 int arg2,
 const char * arg3,
 const char * arg4) {
-  auto ret = new QMessageLogger(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QMessageLogger(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <= ext block end

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtransform.h
 // dst-file: /src/gui/qtransform.cxx
 //
@@ -469,12 +469,7 @@ qreal arg3,
 qreal arg4,
 qreal arg5,
 qreal arg6) {
-  auto ret = new QTransform(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+  auto ret = new QTransform(arg1, arg2, arg3, arg4, arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 104, column 17>
@@ -681,15 +676,7 @@ qreal arg6,
 qreal arg7,
 qreal arg8,
 qreal arg9) {
-  auto ret = new QTransform(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9);
+  auto ret = new QTransform(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 132, column 18>

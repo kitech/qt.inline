@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qplaintextedit.h
 // dst-file: /src/widgets/qplaintextedit.cxx
 //
@@ -493,8 +493,7 @@ extern "C"
 QPlainTextEdit*
 C_ZN14QPlainTextEditC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QPlainTextEdit(*((const QString*)arg1),
-arg2);
+  auto ret = new QPlainTextEdit(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qplaintextedit.h', line 162, column 10>

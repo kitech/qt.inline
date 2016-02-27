@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qundogroup.h
 // dst-file: /src/widgets/qundogroup.cxx
 //
@@ -14,6 +14,7 @@
 #include <qundogroup.h>
 
 
+#include <qundostack.h>
 #include <qlist.h>
 #include <qapplication.h>
 #include <qstring.h>

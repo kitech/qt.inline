@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qaccessiblewidget.h
 // dst-file: /src/widgets/qaccessiblewidget.cxx
 //
@@ -56,9 +56,7 @@ QAccessibleWidget*
 C_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * arg1,
 QAccessible::Role* arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleWidget(arg1,
-*((QAccessible::Role*)arg2),
-*((const QString*)arg3));
+  auto ret = new QAccessibleWidget(arg1, *((QAccessible::Role*)arg2), *((const QString*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 61, column 27>

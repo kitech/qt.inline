@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qitemselectionmodel.h
 // dst-file: /src/core/qitemselectionmodel.cxx
 //
@@ -284,8 +284,7 @@ extern "C"
 QItemSelection*
 C_ZN14QItemSelectionC2ERK11QModelIndexS2_(const QModelIndex* arg1,
 const QModelIndex* arg2) {
-  auto ret = new QItemSelection(*((const QModelIndex*)arg1),
-*((const QModelIndex*)arg2));
+  auto ret = new QItemSelection(*((const QModelIndex*)arg1), *((const QModelIndex*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 59, column 16>
@@ -414,8 +413,7 @@ extern "C"
 QItemSelectionRange*
 C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(const QModelIndex* arg1,
 const QModelIndex* arg2) {
-  auto ret = new QItemSelectionRange(*((const QModelIndex*)arg1),
-*((const QModelIndex*)arg2));
+  auto ret = new QItemSelectionRange(*((const QModelIndex*)arg1), *((const QModelIndex*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 65, column 41>
@@ -740,8 +738,7 @@ extern "C"
 QItemSelectionModel*
 C_ZN19QItemSelectionModelC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * arg1,
 QObject * arg2) {
-  auto ret = new QItemSelectionModel(arg1,
-arg2);
+  auto ret = new QItemSelectionModel(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qitemselectionmodel.h', line 203, column 18>

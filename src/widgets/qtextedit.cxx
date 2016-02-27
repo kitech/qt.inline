@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qtextedit.h
 // dst-file: /src/widgets/qtextedit.cxx
 //
@@ -916,8 +916,7 @@ extern "C"
 QTextEdit*
 C_ZN9QTextEditC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QTextEdit(*((const QString*)arg1),
-arg2);
+  auto ret = new QTextEdit(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtextedit.h', line 204, column 10>

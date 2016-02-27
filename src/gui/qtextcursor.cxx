@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qtextcursor.h
 // dst-file: /src/gui/qtextcursor.cxx
 //
@@ -224,8 +224,7 @@ extern "C"
 QTextCursor*
 C_ZN11QTextCursorC2EP20QTextDocumentPrivatei(QTextDocumentPrivate * arg1,
 int arg2) {
-  auto ret = new QTextCursor(arg1,
-arg2);
+  auto ret = new QTextCursor(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qtextcursor.h', line 189, column 17>

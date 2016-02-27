@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qfontmetrics.h
 // dst-file: /src/gui/qfontmetrics.cxx
 //
@@ -334,8 +334,7 @@ extern "C"
 QFontMetrics*
 C_ZN12QFontMetricsC2ERK5QFontP12QPaintDevice(const QFont* arg1,
 QPaintDevice * arg2) {
-  auto ret = new QFontMetrics(*((const QFont*)arg1),
-arg2);
+  auto ret = new QFontMetrics(*((const QFont*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qfontmetrics.h', line 74, column 9>
@@ -698,8 +697,7 @@ extern "C"
 QFontMetricsF*
 C_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice(const QFont* arg1,
 QPaintDevice * arg2) {
-  auto ret = new QFontMetricsF(*((const QFont*)arg1),
-arg2);
+  auto ret = new QFontMetricsF(*((const QFont*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qfontmetrics.h', line 144, column 11>

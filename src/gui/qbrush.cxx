@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qbrush.h
 // dst-file: /src/gui/qbrush.cxx
 //
@@ -229,11 +229,7 @@ qreal arg2,
 qreal arg3,
 qreal arg4,
 qreal arg5) {
-  auto ret = new QRadialGradient(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QRadialGradient(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 283, column 17>
@@ -262,9 +258,7 @@ QRadialGradient*
 C_ZN15QRadialGradientC2ERK7QPointFdS2_(const QPointF* arg1,
 qreal arg2,
 const QPointF* arg3) {
-  auto ret = new QRadialGradient(*((const QPointF*)arg1),
-arg2,
-*((const QPointF*)arg3));
+  auto ret = new QRadialGradient(*((const QPointF*)arg1), arg2, *((const QPointF*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 285, column 11>
@@ -294,10 +288,7 @@ C_ZN15QRadialGradientC2ERK7QPointFdS2_d(const QPointF* arg1,
 qreal arg2,
 const QPointF* arg3,
 qreal arg4) {
-  auto ret = new QRadialGradient(*((const QPointF*)arg1),
-arg2,
-*((const QPointF*)arg3),
-arg4);
+  auto ret = new QRadialGradient(*((const QPointF*)arg1), arg2, *((const QPointF*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 275, column 5>
@@ -310,12 +301,7 @@ qreal arg3,
 qreal arg4,
 qreal arg5,
 qreal arg6) {
-  auto ret = new QRadialGradient(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+  auto ret = new QRadialGradient(arg1, arg2, arg3, arg4, arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 288, column 11>
@@ -373,8 +359,7 @@ extern "C"
 QRadialGradient*
 C_ZN15QRadialGradientC2ERK7QPointFd(const QPointF* arg1,
 qreal arg2) {
-  auto ret = new QRadialGradient(*((const QPointF*)arg1),
-arg2);
+  auto ret = new QRadialGradient(*((const QPointF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 289, column 10>
@@ -411,9 +396,7 @@ QRadialGradient*
 C_ZN15QRadialGradientC2Eddd(qreal arg1,
 qreal arg2,
 qreal arg3) {
-  auto ret = new QRadialGradient(arg1,
-arg2,
-arg3);
+  auto ret = new QRadialGradient(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 279, column 17>
@@ -453,8 +436,7 @@ extern "C"
 QConicalGradient*
 C_ZN16QConicalGradientC2ERK7QPointFd(const QPointF* arg1,
 qreal arg2) {
-  auto ret = new QConicalGradient(*((const QPointF*)arg1),
-arg2);
+  auto ret = new QConicalGradient(*((const QPointF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 299, column 5>
@@ -501,9 +483,7 @@ QConicalGradient*
 C_ZN16QConicalGradientC2Eddd(qreal arg1,
 qreal arg2,
 qreal arg3) {
-  auto ret = new QConicalGradient(arg1,
-arg2,
-arg3);
+  auto ret = new QConicalGradient(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 62, column 5>
@@ -512,8 +492,7 @@ extern "C"
 QBrush*
 C_ZN6QBrushC2EN2Qt11GlobalColorENS0_10BrushStyleE(Qt::GlobalColor* arg1,
 Qt::BrushStyle* arg2) {
-  auto ret = new QBrush(*((Qt::GlobalColor*)arg1),
-*((Qt::BrushStyle*)arg2));
+  auto ret = new QBrush(*((Qt::GlobalColor*)arg1), *((Qt::BrushStyle*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 59, column 5>
@@ -556,8 +535,7 @@ extern "C"
 QBrush*
 C_ZN6QBrushC2ERK6QColorRK7QPixmap(const QColor* arg1,
 const QPixmap* arg2) {
-  auto ret = new QBrush(*((const QColor*)arg1),
-*((const QPixmap*)arg2));
+  auto ret = new QBrush(*((const QColor*)arg1), *((const QPixmap*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 60, column 5>
@@ -640,8 +618,7 @@ extern "C"
 QBrush*
 C_ZN6QBrushC2EN2Qt11GlobalColorERK7QPixmap(Qt::GlobalColor* arg1,
 const QPixmap* arg2) {
-  auto ret = new QBrush(*((Qt::GlobalColor*)arg1),
-*((const QPixmap*)arg2));
+  auto ret = new QBrush(*((Qt::GlobalColor*)arg1), *((const QPixmap*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 103, column 22>
@@ -757,8 +734,7 @@ extern "C"
 QBrush*
 C_ZN6QBrushC2ERK6QColorN2Qt10BrushStyleE(const QColor* arg1,
 Qt::BrushStyle* arg2) {
-  auto ret = new QBrush(*((const QColor*)arg1),
-*((Qt::BrushStyle*)arg2));
+  auto ret = new QBrush(*((const QColor*)arg1), *((Qt::BrushStyle*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 212, column 10>
@@ -895,10 +871,7 @@ C_ZN15QLinearGradientC2Edddd(qreal arg1,
 qreal arg2,
 qreal arg3,
 qreal arg4) {
-  auto ret = new QLinearGradient(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QLinearGradient(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 251, column 5>
@@ -907,8 +880,7 @@ extern "C"
 QLinearGradient*
 C_ZN15QLinearGradientC2ERK7QPointFS2_(const QPointF* arg1,
 const QPointF* arg2) {
-  auto ret = new QLinearGradient(*((const QPointF*)arg1),
-*((const QPointF*)arg2));
+  auto ret = new QLinearGradient(*((const QPointF*)arg1), *((const QPointF*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qbrush.h', line 256, column 17>

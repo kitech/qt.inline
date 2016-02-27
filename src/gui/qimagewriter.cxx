@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qimagewriter.h
 // dst-file: /src/gui/qimagewriter.cxx
 //
@@ -251,8 +251,7 @@ extern "C"
 QImageWriter*
 C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(const QString* arg1,
 const QByteArray* arg2) {
-  auto ret = new QImageWriter(*((const QString*)arg1),
-*((const QByteArray*)arg2));
+  auto ret = new QImageWriter(*((const QString*)arg1), *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimagewriter.h', line 104, column 22>
@@ -339,8 +338,7 @@ extern "C"
 QImageWriter*
 C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * arg1,
 const QByteArray* arg2) {
-  auto ret = new QImageWriter(arg1,
-*((const QByteArray*)arg2));
+  auto ret = new QImageWriter(arg1, *((const QByteArray*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qimagewriter.h', line 77, column 9>

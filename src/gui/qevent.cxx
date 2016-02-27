@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qevent.h
 // dst-file: /src/gui/qevent.cxx
 //
@@ -1745,8 +1745,7 @@ extern "C"
 QInputMethodEvent*
 C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(const QString* arg1,
 const QList<QInputMethodEvent::Attribute>* arg2) {
-  auto ret = new QInputMethodEvent(*((const QString*)arg1),
-*((const QList<QInputMethodEvent::Attribute>*)arg2));
+  auto ret = new QInputMethodEvent(*((const QString*)arg1), *((const QList<QInputMethodEvent::Attribute>*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 539, column 5>
@@ -1827,9 +1826,7 @@ QHelpEvent*
 C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type arg1,
 const QPoint* arg2,
 const QPoint* arg3) {
-  auto ret = new QHelpEvent(arg1,
-*((const QPoint*)arg2),
-*((const QPoint*)arg3));
+  auto ret = new QHelpEvent(arg1, *((const QPoint*)arg2), *((const QPoint*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 658, column 26>
@@ -1884,9 +1881,7 @@ QActionEvent*
 C_ZN12QActionEventC2EiP7QActionS1_(int arg1,
 QAction * arg2,
 QAction * arg3) {
-  auto ret = new QActionEvent(arg1,
-arg2,
-arg3);
+  auto ret = new QActionEvent(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 701, column 21>
@@ -1944,12 +1939,7 @@ const QPointF* arg3,
 Qt::MouseButton* arg4,
 Qt::MouseButtons* arg5,
 Qt::KeyboardModifiers* arg6) {
-  auto ret = new QMouseEvent(arg1,
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-*((Qt::MouseButton*)arg4),
-*((Qt::MouseButtons*)arg5),
-*((Qt::KeyboardModifiers*)arg6));
+  auto ret = new QMouseEvent(arg1, *((const QPointF*)arg2), *((const QPointF*)arg3), *((Qt::MouseButton*)arg4), *((Qt::MouseButtons*)arg5), *((Qt::KeyboardModifiers*)arg6));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 121, column 20>
@@ -2041,11 +2031,7 @@ const QPointF* arg2,
 Qt::MouseButton* arg3,
 Qt::MouseButtons* arg4,
 Qt::KeyboardModifiers* arg5) {
-  auto ret = new QMouseEvent(arg1,
-*((const QPointF*)arg2),
-*((Qt::MouseButton*)arg3),
-*((Qt::MouseButtons*)arg4),
-*((Qt::KeyboardModifiers*)arg5));
+  auto ret = new QMouseEvent(arg1, *((const QPointF*)arg2), *((Qt::MouseButton*)arg3), *((Qt::MouseButtons*)arg4), *((Qt::KeyboardModifiers*)arg5));
   return ret;
 }
 //   // proto:  void QMouseEvent::~QMouseEvent();
@@ -2074,13 +2060,7 @@ const QPointF* arg4,
 Qt::MouseButton* arg5,
 Qt::MouseButtons* arg6,
 Qt::KeyboardModifiers* arg7) {
-  auto ret = new QMouseEvent(arg1,
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-*((const QPointF*)arg4),
-*((Qt::MouseButton*)arg5),
-*((Qt::MouseButtons*)arg6),
-*((Qt::KeyboardModifiers*)arg7));
+  auto ret = new QMouseEvent(arg1, *((const QPointF*)arg2), *((const QPointF*)arg3), *((const QPointF*)arg4), *((Qt::MouseButton*)arg5), *((Qt::MouseButtons*)arg6), *((Qt::KeyboardModifiers*)arg7));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 117, column 16>
@@ -2312,19 +2292,7 @@ qreal arg10,
 int arg11,
 Qt::KeyboardModifiers* arg12,
 qint64 arg13) {
-  auto ret = new QTabletEvent(arg1,
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11,
-*((Qt::KeyboardModifiers*)arg12),
-arg13);
+  auto ret = new QTabletEvent(arg1, *((const QPointF*)arg2), *((const QPointF*)arg3), arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, *((Qt::KeyboardModifiers*)arg12), arg13);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 263, column 18>
@@ -2396,21 +2364,7 @@ Qt::KeyboardModifiers* arg12,
 qint64 arg13,
 Qt::MouseButton* arg14,
 Qt::MouseButtons* arg15) {
-  auto ret = new QTabletEvent(arg1,
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11,
-*((Qt::KeyboardModifiers*)arg12),
-arg13,
-*((Qt::MouseButton*)arg14),
-*((Qt::MouseButtons*)arg15));
+  auto ret = new QTabletEvent(arg1, *((const QPointF*)arg2), *((const QPointF*)arg3), arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, *((Qt::KeyboardModifiers*)arg12), arg13, *((Qt::MouseButton*)arg14), *((Qt::MouseButtons*)arg15));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 254, column 16>
@@ -2481,11 +2435,7 @@ QTouchDevice * arg2,
 Qt::KeyboardModifiers* arg3,
 Qt::TouchPointStates* arg4,
 const QList<QTouchEvent::TouchPoint>* arg5) {
-  auto ret = new QTouchEvent(*((QEvent::Type*)arg1),
-arg2,
-*((Qt::KeyboardModifiers*)arg3),
-*((Qt::TouchPointStates*)arg4),
-*((const QList<QTouchEvent::TouchPoint>*)arg5));
+  auto ret = new QTouchEvent(*((QEvent::Type*)arg1), arg2, *((Qt::KeyboardModifiers*)arg3), *((Qt::TouchPointStates*)arg4), *((const QList<QTouchEvent::TouchPoint>*)arg5));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 880, column 21>
@@ -2610,8 +2560,7 @@ extern "C"
 QScreenOrientationChangeEvent*
 C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * arg1,
 Qt::ScreenOrientation* arg2) {
-  auto ret = new QScreenOrientationChangeEvent(arg1,
-*((Qt::ScreenOrientation*)arg2));
+  auto ret = new QScreenOrientationChangeEvent(arg1, *((Qt::ScreenOrientation*)arg2));
   return ret;
 }
 //   // proto:  void QIconDragEvent::~QIconDragEvent();
@@ -2654,11 +2603,7 @@ Qt::DropActions* arg2,
 const QMimeData * arg3,
 Qt::MouseButtons* arg4,
 Qt::KeyboardModifiers* arg5) {
-  auto ret = new QDragEnterEvent(*((const QPoint*)arg1),
-*((Qt::DropActions*)arg2),
-arg3,
-*((Qt::MouseButtons*)arg4),
-*((Qt::KeyboardModifiers*)arg5));
+  auto ret = new QDragEnterEvent(*((const QPoint*)arg1), *((Qt::DropActions*)arg2), arg3, *((Qt::MouseButtons*)arg4), *((Qt::KeyboardModifiers*)arg5));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 194, column 16>
@@ -2723,14 +2668,7 @@ int arg5,
 Qt::Orientation* arg6,
 Qt::MouseButtons* arg7,
 Qt::KeyboardModifiers* arg8) {
-  auto ret = new QWheelEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-*((QPoint*)arg3),
-*((QPoint*)arg4),
-arg5,
-*((Qt::Orientation*)arg6),
-*((Qt::MouseButtons*)arg7),
-*((Qt::KeyboardModifiers*)arg8));
+  auto ret = new QWheelEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), *((QPoint*)arg3), *((QPoint*)arg4), arg5, *((Qt::Orientation*)arg6), *((Qt::MouseButtons*)arg7), *((Qt::KeyboardModifiers*)arg8));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 170, column 5>
@@ -2743,12 +2681,7 @@ int arg3,
 Qt::MouseButtons* arg4,
 Qt::KeyboardModifiers* arg5,
 Qt::Orientation* arg6) {
-  auto ret = new QWheelEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-arg3,
-*((Qt::MouseButtons*)arg4),
-*((Qt::KeyboardModifiers*)arg5),
-*((Qt::Orientation*)arg6));
+  auto ret = new QWheelEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), arg3, *((Qt::MouseButtons*)arg4), *((Qt::KeyboardModifiers*)arg5), *((Qt::Orientation*)arg6));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 179, column 5>
@@ -2765,16 +2698,7 @@ Qt::MouseButtons* arg7,
 Qt::KeyboardModifiers* arg8,
 Qt::ScrollPhase* arg9,
 Qt::MouseEventSource* arg10) {
-  auto ret = new QWheelEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-*((QPoint*)arg3),
-*((QPoint*)arg4),
-arg5,
-*((Qt::Orientation*)arg6),
-*((Qt::MouseButtons*)arg7),
-*((Qt::KeyboardModifiers*)arg8),
-*((Qt::ScrollPhase*)arg9),
-*((Qt::MouseEventSource*)arg10));
+  auto ret = new QWheelEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), *((QPoint*)arg3), *((QPoint*)arg4), arg5, *((Qt::Orientation*)arg6), *((Qt::MouseButtons*)arg7), *((Qt::KeyboardModifiers*)arg8), *((Qt::ScrollPhase*)arg9), *((Qt::MouseEventSource*)arg10));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 197, column 16>
@@ -2881,11 +2805,7 @@ int arg2,
 Qt::MouseButtons* arg3,
 Qt::KeyboardModifiers* arg4,
 Qt::Orientation* arg5) {
-  auto ret = new QWheelEvent(*((const QPointF*)arg1),
-arg2,
-*((Qt::MouseButtons*)arg3),
-*((Qt::KeyboardModifiers*)arg4),
-*((Qt::Orientation*)arg5));
+  auto ret = new QWheelEvent(*((const QPointF*)arg1), arg2, *((Qt::MouseButtons*)arg3), *((Qt::KeyboardModifiers*)arg4), *((Qt::Orientation*)arg5));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 202, column 29>
@@ -2911,15 +2831,7 @@ Qt::Orientation* arg6,
 Qt::MouseButtons* arg7,
 Qt::KeyboardModifiers* arg8,
 Qt::ScrollPhase* arg9) {
-  auto ret = new QWheelEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-*((QPoint*)arg3),
-*((QPoint*)arg4),
-arg5,
-*((Qt::Orientation*)arg6),
-*((Qt::MouseButtons*)arg7),
-*((Qt::KeyboardModifiers*)arg8),
-*((Qt::ScrollPhase*)arg9));
+  auto ret = new QWheelEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), *((QPoint*)arg3), *((QPoint*)arg4), arg5, *((Qt::Orientation*)arg6), *((Qt::MouseButtons*)arg7), *((Qt::KeyboardModifiers*)arg8), *((Qt::ScrollPhase*)arg9));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 953, column 13>
@@ -2954,9 +2866,7 @@ QScrollEvent*
 C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(const QPointF* arg1,
 const QPointF* arg2,
 QScrollEvent::ScrollState arg3) {
-  auto ret = new QScrollEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-arg3);
+  auto ret = new QScrollEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 955, column 17>
@@ -2977,10 +2887,7 @@ C_ZN11QHoverEventC2EN6QEvent4TypeERK7QPointFS4_6QFlagsIN2Qt16KeyboardModifierEE(
 const QPointF* arg2,
 const QPointF* arg3,
 Qt::KeyboardModifiers* arg4) {
-  auto ret = new QHoverEvent(arg1,
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-*((Qt::KeyboardModifiers*)arg4));
+  auto ret = new QHoverEvent(arg1, *((const QPointF*)arg2), *((const QPointF*)arg3), *((Qt::KeyboardModifiers*)arg4));
   return ret;
 }
 //   // proto:  void QHoverEvent::~QHoverEvent();
@@ -3047,12 +2954,7 @@ const QMimeData * arg3,
 Qt::MouseButtons* arg4,
 Qt::KeyboardModifiers* arg5,
 QEvent::Type arg6) {
-  auto ret = new QDragMoveEvent(*((const QPoint*)arg1),
-*((Qt::DropActions*)arg2),
-arg3,
-*((Qt::MouseButtons*)arg4),
-*((Qt::KeyboardModifiers*)arg5),
-arg6);
+  auto ret = new QDragMoveEvent(*((const QPoint*)arg1), *((Qt::DropActions*)arg2), arg3, *((Qt::MouseButtons*)arg4), *((Qt::KeyboardModifiers*)arg5), arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 616, column 18>
@@ -3208,8 +3110,7 @@ extern "C"
 QFocusEvent*
 C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type arg1,
 Qt::FocusReason* arg2) {
-  auto ret = new QFocusEvent(arg1,
-*((Qt::FocusReason*)arg2));
+  auto ret = new QFocusEvent(arg1, *((Qt::FocusReason*)arg2));
   return ret;
 }
 //   // proto:  void QFocusEvent::~QFocusEvent();
@@ -3288,13 +3189,7 @@ const QPointF* arg4,
 qreal arg5,
 ulong arg6,
 quint64 arg7) {
-  auto ret = new QNativeGestureEvent(*((Qt::NativeGestureType*)arg1),
-*((const QPointF*)arg2),
-*((const QPointF*)arg3),
-*((const QPointF*)arg4),
-arg5,
-arg6,
-arg7);
+  auto ret = new QNativeGestureEvent(*((Qt::NativeGestureType*)arg1), *((const QPointF*)arg2), *((const QPointF*)arg3), *((const QPointF*)arg4), arg5, arg6, arg7);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 296, column 20>
@@ -3338,8 +3233,7 @@ extern "C"
 QResizeEvent*
 C_ZN12QResizeEventC2ERK5QSizeS2_(const QSize* arg1,
 const QSize* arg2) {
-  auto ret = new QResizeEvent(*((const QSize*)arg1),
-*((const QSize*)arg2));
+  auto ret = new QResizeEvent(*((const QSize*)arg1), *((const QSize*)arg2));
   return ret;
 }
 //   // proto:  void QStatusTipEvent::~QStatusTipEvent();
@@ -3467,9 +3361,7 @@ QEnterEvent*
 C_ZN11QEnterEventC2ERK7QPointFS2_S2_(const QPointF* arg1,
 const QPointF* arg2,
 const QPointF* arg3) {
-  auto ret = new QEnterEvent(*((const QPointF*)arg1),
-*((const QPointF*)arg2),
-*((const QPointF*)arg3));
+  auto ret = new QEnterEvent(*((const QPointF*)arg1), *((const QPointF*)arg2), *((const QPointF*)arg3));
   return ret;
 }
 //   // proto:  void QMoveEvent::~QMoveEvent();
@@ -3493,8 +3385,7 @@ extern "C"
 QMoveEvent*
 C_ZN10QMoveEventC2ERK6QPointS2_(const QPoint* arg1,
 const QPoint* arg2) {
-  auto ret = new QMoveEvent(*((const QPoint*)arg1),
-*((const QPoint*)arg2));
+  auto ret = new QMoveEvent(*((const QPoint*)arg1), *((const QPoint*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 399, column 26>
@@ -3627,12 +3518,7 @@ const QMimeData * arg3,
 Qt::MouseButtons* arg4,
 Qt::KeyboardModifiers* arg5,
 QEvent::Type arg6) {
-  auto ret = new QDropEvent(*((const QPointF*)arg1),
-*((Qt::DropActions*)arg2),
-arg3,
-*((Qt::MouseButtons*)arg4),
-*((Qt::KeyboardModifiers*)arg5),
-arg6);
+  auto ret = new QDropEvent(*((const QPointF*)arg1), *((Qt::DropActions*)arg2), arg3, *((Qt::MouseButtons*)arg4), *((Qt::KeyboardModifiers*)arg5), arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 589, column 17>
@@ -3707,8 +3593,7 @@ extern "C"
 QInputEvent*
 C_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type arg1,
 Qt::KeyboardModifiers* arg2) {
-  auto ret = new QInputEvent(arg1,
-*((Qt::KeyboardModifiers*)arg2));
+  auto ret = new QInputEvent(arg1, *((Qt::KeyboardModifiers*)arg2));
   return ret;
 }
 //   // proto:  void QInputEvent::~QInputEvent();
@@ -3819,12 +3704,7 @@ Qt::KeyboardModifiers* arg3,
 const QString* arg4,
 bool arg5,
 ushort arg6) {
-  auto ret = new QKeyEvent(arg1,
-arg2,
-*((Qt::KeyboardModifiers*)arg3),
-*((const QString*)arg4),
-arg5,
-arg6);
+  auto ret = new QKeyEvent(arg1, arg2, *((Qt::KeyboardModifiers*)arg3), *((const QString*)arg4), arg5, arg6);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 322, column 10>
@@ -3861,15 +3741,7 @@ quint32 arg6,
 const QString* arg7,
 bool arg8,
 ushort arg9) {
-  auto ret = new QKeyEvent(arg1,
-arg2,
-*((Qt::KeyboardModifiers*)arg3),
-arg4,
-arg5,
-arg6,
-*((const QString*)arg7),
-arg8,
-arg9);
+  auto ret = new QKeyEvent(arg1, arg2, *((Qt::KeyboardModifiers*)arg3), arg4, arg5, arg6, *((const QString*)arg7), arg8, arg9);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 488, column 5>
@@ -3879,9 +3751,7 @@ QContextMenuEvent*
 C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason arg1,
 const QPoint* arg2,
 const QPoint* arg3) {
-  auto ret = new QContextMenuEvent(arg1,
-*((const QPoint*)arg2),
-*((const QPoint*)arg3));
+  auto ret = new QContextMenuEvent(arg1, *((const QPoint*)arg2), *((const QPoint*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 498, column 26>
@@ -3962,10 +3832,7 @@ C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierE
 const QPoint* arg2,
 const QPoint* arg3,
 Qt::KeyboardModifiers* arg4) {
-  auto ret = new QContextMenuEvent(arg1,
-*((const QPoint*)arg2),
-*((const QPoint*)arg3),
-*((Qt::KeyboardModifiers*)arg4));
+  auto ret = new QContextMenuEvent(arg1, *((const QPoint*)arg2), *((const QPoint*)arg3), *((Qt::KeyboardModifiers*)arg4));
   return ret;
 }
 //   // proto:  void QContextMenuEvent::~QContextMenuEvent();
@@ -3979,8 +3846,7 @@ extern "C"
 QContextMenuEvent*
 C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason arg1,
 const QPoint* arg2) {
-  auto ret = new QContextMenuEvent(arg1,
-*((const QPoint*)arg2));
+  auto ret = new QContextMenuEvent(arg1, *((const QPoint*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 928, column 10>
@@ -4095,9 +3961,7 @@ QShortcutEvent*
 C_ZN14QShortcutEventC2ERK12QKeySequenceib(const QKeySequence* arg1,
 int arg2,
 bool arg3) {
-  auto ret = new QShortcutEvent(*((const QKeySequence*)arg1),
-arg2,
-arg3);
+  auto ret = new QShortcutEvent(*((const QKeySequence*)arg1), arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 741, column 16>
@@ -4141,8 +4005,7 @@ extern "C"
 QWindowStateChangeEvent*
 C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(Qt::WindowStates* arg1,
 bool arg2) {
-  auto ret = new QWindowStateChangeEvent(*((Qt::WindowStates*)arg1),
-arg2);
+  auto ret = new QWindowStateChangeEvent(*((Qt::WindowStates*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qevent.h', line 556, column 28>

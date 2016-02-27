@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qabstractbutton.h
 // dst-file: /src/widgets/qabstractbutton.cxx
 //
@@ -67,8 +67,6 @@ void
 C_ZN15QAbstractButton10setCheckedEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setChecked(arg1);
-  //
-  // ffff
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 79, column 18>
 //   // proto:  QKeySequence QAbstractButton::shortcut();

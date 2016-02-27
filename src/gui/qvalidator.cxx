@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -140,8 +140,7 @@ extern "C"
 QRegularExpressionValidator*
 C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(const QRegularExpression* arg1,
 QObject * arg2) {
-  auto ret = new QRegularExpressionValidator(*((const QRegularExpression*)arg1),
-arg2);
+  auto ret = new QRegularExpressionValidator(*((const QRegularExpression*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 196, column 5>
@@ -334,10 +333,7 @@ C_ZN16QDoubleValidatorC2EddiP7QObject(double arg1,
 double arg2,
 int arg3,
 QObject * arg4) {
-  auto ret = new QDoubleValidator(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QDoubleValidator(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 150, column 10>
@@ -487,9 +483,7 @@ QIntValidator*
 C_ZN13QIntValidatorC2EiiP7QObject(int arg1,
 int arg2,
 QObject * arg3) {
-  auto ret = new QIntValidator(arg1,
-arg2,
-arg3);
+  auto ret = new QIntValidator(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 53, column 5>
@@ -594,8 +588,7 @@ extern "C"
 QRegExpValidator*
 C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(const QRegExp* arg1,
 QObject * arg2) {
-  auto ret = new QRegExpValidator(*((const QRegExp*)arg1),
-arg2);
+  auto ret = new QRegExpValidator(*((const QRegExp*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 176, column 10>

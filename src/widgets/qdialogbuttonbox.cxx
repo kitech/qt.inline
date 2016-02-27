@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qdialogbuttonbox.h
 // dst-file: /src/widgets/qdialogbuttonbox.cxx
 //
@@ -14,6 +14,7 @@
 #include <qdialogbuttonbox.h>
 
 
+#include <qabstractbutton.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qnamespace.h>
@@ -74,8 +75,7 @@ extern "C"
 QDialogButtonBox*
 C_ZN16QDialogButtonBoxC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
 QWidget * arg2) {
-  auto ret = new QDialogButtonBox(*((Qt::Orientation*)arg1),
-arg2);
+  auto ret = new QDialogButtonBox(*((Qt::Orientation*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdialogbuttonbox.h', line 117, column 21>
@@ -184,9 +184,7 @@ QDialogButtonBox*
 C_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEN2Qt11OrientationEP7QWidget(QDialogButtonBox::StandardButtons arg1,
 Qt::Orientation* arg2,
 QWidget * arg3) {
-  auto ret = new QDialogButtonBox(arg1,
-*((Qt::Orientation*)arg2),
-arg3);
+  auto ret = new QDialogButtonBox(arg1, *((Qt::Orientation*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdialogbuttonbox.h', line 121, column 18>
@@ -239,8 +237,7 @@ extern "C"
 QDialogButtonBox*
 C_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEP7QWidget(QDialogButtonBox::StandardButtons arg1,
 QWidget * arg2) {
-  auto ret = new QDialogButtonBox(arg1,
-arg2);
+  auto ret = new QDialogButtonBox(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qdialogbuttonbox.h', line 138, column 10>

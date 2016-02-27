@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qfiledialog.h
 // dst-file: /src/widgets/qfiledialog.cxx
 //
@@ -550,8 +550,7 @@ extern "C"
 QFileDialog*
 C_ZN11QFileDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QFileDialog(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QFileDialog(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qfiledialog.h', line 164, column 10>
@@ -853,10 +852,7 @@ C_ZN11QFileDialogC2EP7QWidgetRK7QStringS4_S4_(QWidget * arg1,
 const QString* arg2,
 const QString* arg3,
 const QString* arg4) {
-  auto ret = new QFileDialog(arg1,
-*((const QString*)arg2),
-*((const QString*)arg3),
-*((const QString*)arg4));
+  auto ret = new QFileDialog(arg1, *((const QString*)arg2), *((const QString*)arg3), *((const QString*)arg4));
   return ret;
 }
 // <= ext block end

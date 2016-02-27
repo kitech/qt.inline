@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qstatemachine.h
 // dst-file: /src/core/qstatemachine.cxx
 //
@@ -14,9 +14,11 @@
 #include <qstatemachine.h>
 
 
+#include <qabstractanimation.h>
 #include <qlist.h>
 #include <qmetaobject.h>
 #include <qstate.h>
+#include <qabstractstate.h>
 #include <qset.h>
 #include <qstring.h>
 // <= header block end
@@ -43,8 +45,7 @@ extern "C"
 QStateMachine*
 C_ZN13QStateMachineC2EN6QState9ChildModeEP7QObject(QState::ChildMode* arg1,
 QObject * arg2) {
-  auto ret = new QStateMachine(*((QState::ChildMode*)arg1),
-arg2);
+  auto ret = new QStateMachine(*((QState::ChildMode*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstatemachine.h', line 125, column 33>

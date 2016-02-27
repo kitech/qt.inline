@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qsignaltransition.h
 // dst-file: /src/core/qsignaltransition.cxx
 //
@@ -64,9 +64,7 @@ QSignalTransition*
 C_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState(const QObject * arg1,
 const char * arg2,
 QState * arg3) {
-  auto ret = new QSignalTransition(arg1,
-arg2,
-arg3);
+  auto ret = new QSignalTransition(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsignaltransition.h', line 57, column 14>

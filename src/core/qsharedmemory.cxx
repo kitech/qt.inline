@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qsharedmemory.h
 // dst-file: /src/core/qsharedmemory.cxx
 //
@@ -68,8 +68,7 @@ extern "C"
 QSharedMemory*
 C_ZN13QSharedMemoryC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QSharedMemory(*((const QString*)arg1),
-arg2);
+  auto ret = new QSharedMemory(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsharedmemory.h', line 96, column 23>

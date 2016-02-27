@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicswidget.h
 // dst-file: /src/widgets/qgraphicswidget.cxx
 //
@@ -21,6 +21,7 @@
 #include <qpainterpath.h>
 #include <qstring.h>
 #include <qfont.h>
+#include <qaction.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 // <= header block end
@@ -154,8 +155,7 @@ extern "C"
 QGraphicsWidget*
 C_ZN15QGraphicsWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QGraphicsWidget(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QGraphicsWidget(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicswidget.h', line 132, column 10>

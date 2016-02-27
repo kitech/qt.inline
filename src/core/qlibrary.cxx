@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qlibrary.h
 // dst-file: /src/core/qlibrary.cxx
 //
@@ -55,9 +55,7 @@ QLibrary*
 C_ZN8QLibraryC2ERK7QStringS2_P7QObject(const QString* arg1,
 const QString* arg2,
 QObject * arg3) {
-  auto ret = new QLibrary(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QLibrary(*((const QString*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlibrary.h', line 47, column 5>
@@ -116,8 +114,7 @@ extern "C"
 QLibrary*
 C_ZN8QLibraryC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QLibrary(*((const QString*)arg1),
-arg2);
+  auto ret = new QLibrary(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qlibrary.h', line 80, column 13>
@@ -208,9 +205,7 @@ QLibrary*
 C_ZN8QLibraryC2ERK7QStringiP7QObject(const QString* arg1,
 int arg2,
 QObject * arg3) {
-  auto ret = new QLibrary(*((const QString*)arg1),
-arg2,
-arg3);
+  auto ret = new QLibrary(*((const QString*)arg1), arg2, arg3);
   return ret;
 }
 //   // proto:  void QLibrary::~QLibrary();

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qsettings.h
 // dst-file: /src/core/qsettings.cxx
 //
@@ -128,9 +128,7 @@ QSettings*
 C_ZN9QSettingsC2ERK7QStringS2_P7QObject(const QString* arg1,
 const QString* arg2,
 QObject * arg3) {
-  auto ret = new QSettings(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3);
+  auto ret = new QSettings(*((const QString*)arg1), *((const QString*)arg2), arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 111, column 5>
@@ -142,11 +140,7 @@ QSettings::Scope arg2,
 const QString* arg3,
 const QString* arg4,
 QObject * arg5) {
-  auto ret = new QSettings(arg1,
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4),
-arg5);
+  auto ret = new QSettings(arg1, arg2, *((const QString*)arg3), *((const QString*)arg4), arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 160, column 10>
@@ -218,9 +212,7 @@ QSettings*
 C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(const QString* arg1,
 QSettings::Format arg2,
 QObject * arg3) {
-  auto ret = new QSettings(*((const QString*)arg1),
-arg2,
-arg3);
+  auto ret = new QSettings(*((const QString*)arg1), arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 175, column 19>
@@ -413,10 +405,7 @@ C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope arg1,
 const QString* arg2,
 const QString* arg3,
 QObject * arg4) {
-  auto ret = new QSettings(arg1,
-*((const QString*)arg2),
-*((const QString*)arg3),
-arg4);
+  auto ret = new QSettings(arg1, *((const QString*)arg2), *((const QString*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 167, column 17>

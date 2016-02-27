@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qtoolbar.h
 // dst-file: /src/widgets/qtoolbar.cxx
 //
@@ -156,8 +156,7 @@ extern "C"
 QToolBar*
 C_ZN8QToolBarC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QToolBar(*((const QString*)arg1),
-arg2);
+  auto ret = new QToolBar(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 75, column 10>

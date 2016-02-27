@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qheaderview.h
 // dst-file: /src/widgets/qheaderview.cxx
 //
@@ -585,8 +585,7 @@ extern "C"
 QHeaderView*
 C_ZN11QHeaderViewC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
 QWidget * arg2) {
-  auto ret = new QHeaderView(*((Qt::Orientation*)arg1),
-arg2);
+  auto ret = new QHeaderView(*((Qt::Orientation*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qheaderview.h', line 171, column 10>

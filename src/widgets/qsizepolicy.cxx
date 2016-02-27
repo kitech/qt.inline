@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qsizepolicy.h
 // dst-file: /src/widgets/qsizepolicy.cxx
 //
@@ -329,9 +329,7 @@ QSizePolicy*
 C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy arg1,
 QSizePolicy::Policy arg2,
 QSizePolicy::ControlType arg3) {
-  auto ret = new QSizePolicy(arg1,
-arg2,
-arg3);
+  auto ret = new QSizePolicy(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qsizepolicy.h', line 119, column 10>

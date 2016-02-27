@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qpalette.h
 // dst-file: /src/gui/qpalette.cxx
 //
@@ -374,13 +374,7 @@ const QColor* arg4,
 const QColor* arg5,
 const QColor* arg6,
 const QColor* arg7) {
-  auto ret = new QPalette(*((const QColor*)arg1),
-*((const QColor*)arg2),
-*((const QColor*)arg3),
-*((const QColor*)arg4),
-*((const QColor*)arg5),
-*((const QColor*)arg6),
-*((const QColor*)arg7));
+  auto ret = new QPalette(*((const QColor*)arg1), *((const QColor*)arg2), *((const QColor*)arg3), *((const QColor*)arg4), *((const QColor*)arg5), *((const QColor*)arg6), *((const QColor*)arg7));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 114, column 26>
@@ -627,8 +621,7 @@ extern "C"
 QPalette*
 C_ZN8QPaletteC2ERK6QColorS2_(const QColor* arg1,
 const QColor* arg2) {
-  auto ret = new QPalette(*((const QColor*)arg1),
-*((const QColor*)arg2));
+  auto ret = new QPalette(*((const QColor*)arg1), *((const QColor*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 122, column 26>
@@ -869,15 +862,7 @@ const QBrush* arg6,
 const QBrush* arg7,
 const QBrush* arg8,
 const QBrush* arg9) {
-  auto ret = new QPalette(*((const QBrush*)arg1),
-*((const QBrush*)arg2),
-*((const QBrush*)arg3),
-*((const QBrush*)arg4),
-*((const QBrush*)arg5),
-*((const QBrush*)arg6),
-*((const QBrush*)arg7),
-*((const QBrush*)arg8),
-*((const QBrush*)arg9));
+  auto ret = new QPalette(*((const QBrush*)arg1), *((const QBrush*)arg2), *((const QBrush*)arg3), *((const QBrush*)arg4), *((const QBrush*)arg5), *((const QBrush*)arg6), *((const QBrush*)arg7), *((const QBrush*)arg8), *((const QBrush*)arg9));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qpalette.h', line 117, column 26>

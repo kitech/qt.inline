@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qscreen.h
 // dst-file: /src/gui/qscreen.cxx
 //
@@ -19,6 +19,7 @@
 #include <qpixmap.h>
 #include <qsize.h>
 #include <qnamespace.h>
+#include <qscreen.h>
 #include <qlist.h>
 #include <qstandarditemmodel.h>
 #include <qtransform.h>

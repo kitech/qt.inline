@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qvector3d.h
 // dst-file: /src/gui/qvector3d.cxx
 //
@@ -478,9 +478,7 @@ QVector3D*
 C_ZN9QVector3DC2Efff(float arg1,
 float arg2,
 float arg3) {
-  auto ret = new QVector3D(arg1,
-arg2,
-arg3);
+  auto ret = new QVector3D(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 125, column 15>
@@ -499,8 +497,7 @@ extern "C"
 QVector3D*
 C_ZN9QVector3DC2ERK9QVector2Df(const QVector2D* arg1,
 float arg2) {
-  auto ret = new QVector3D(*((const QVector2D*)arg1),
-arg2);
+  auto ret = new QVector3D(*((const QVector2D*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 73, column 10>

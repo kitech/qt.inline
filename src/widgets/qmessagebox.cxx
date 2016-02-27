@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qmessagebox.h
 // dst-file: /src/widgets/qmessagebox.cxx
 //
@@ -16,6 +16,7 @@
 
 #include <qstring.h>
 #include <qnamespace.h>
+#include <qabstractbutton.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qpixmap.h>
@@ -672,14 +673,7 @@ int arg5,
 int arg6,
 QWidget * arg7,
 Qt::WindowFlags* arg8) {
-  auto ret = new QMessageBox(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-*((Qt::WindowFlags*)arg8));
+  auto ret = new QMessageBox(*((const QString*)arg1), *((const QString*)arg2), arg3, arg4, arg5, arg6, arg7, *((Qt::WindowFlags*)arg8));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qmessagebox.h', line 276, column 10>
@@ -858,12 +852,7 @@ const QString* arg3,
 QMessageBox::StandardButtons arg4,
 QWidget * arg5,
 Qt::WindowFlags* arg6) {
-  auto ret = new QMessageBox(arg1,
-*((const QString*)arg2),
-*((const QString*)arg3),
-arg4,
-arg5,
-*((Qt::WindowFlags*)arg6));
+  auto ret = new QMessageBox(arg1, *((const QString*)arg2), *((const QString*)arg3), arg4, arg5, *((Qt::WindowFlags*)arg6));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qmessagebox.h', line 177, column 30>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qglyphrun.h
 // dst-file: /src/gui/qglyphrun.cxx
 //
@@ -14,6 +14,7 @@
 #include <qglyphrun.h>
 
 
+#include <qpoint.h>
 #include <qvector.h>
 #include <qrawfont.h>
 #include <qstring.h>

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qdatetime.h
 // dst-file: /src/core/qdatetime.cxx
 //
@@ -314,10 +314,7 @@ C_ZN5QTimeC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QTime(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QTime(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 168, column 9>
@@ -435,10 +432,7 @@ C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi(const QDate* arg1,
 const QTime* arg2,
 Qt::TimeSpec* arg3,
 int arg4) {
-  auto ret = new QDateTime(*((const QDate*)arg1),
-*((const QTime*)arg2),
-*((Qt::TimeSpec*)arg3),
-arg4);
+  auto ret = new QDateTime(*((const QDate*)arg1), *((const QTime*)arg2), *((Qt::TimeSpec*)arg3), arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 248, column 10>
@@ -530,9 +524,7 @@ QDateTime*
 C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate* arg1,
 const QTime* arg2,
 Qt::TimeSpec* arg3) {
-  auto ret = new QDateTime(*((const QDate*)arg1),
-*((const QTime*)arg2),
-*((Qt::TimeSpec*)arg3));
+  auto ret = new QDateTime(*((const QDate*)arg1), *((const QTime*)arg2), *((Qt::TimeSpec*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 255, column 10>
@@ -673,9 +665,7 @@ QDateTime*
 C_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone(const QDate* arg1,
 const QTime* arg2,
 const QTimeZone* arg3) {
-  auto ret = new QDateTime(*((const QDate*)arg1),
-*((const QTime*)arg2),
-*((const QTimeZone*)arg3));
+  auto ret = new QDateTime(*((const QDate*)arg1), *((const QTime*)arg2), *((const QTimeZone*)arg3));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 267, column 15>
@@ -1100,9 +1090,7 @@ QDate*
 C_ZN5QDateC2Eiii(int arg1,
 int arg2,
 int arg3) {
-  auto ret = new QDate(arg1,
-arg2,
-arg3);
+  auto ret = new QDate(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qdatetime.h', line 77, column 9>

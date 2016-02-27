@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qrect.h
 // dst-file: /src/core/qrect.cxx
 //
@@ -1296,8 +1296,7 @@ extern "C"
 QRect*
 C_ZN5QRectC2ERK6QPointS2_(const QPoint* arg1,
 const QPoint* arg2) {
-  auto ret = new QRect(*((const QPoint*)arg1),
-*((const QPoint*)arg2));
+  auto ret = new QRect(*((const QPoint*)arg1), *((const QPoint*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 97, column 35>
@@ -1504,8 +1503,7 @@ extern "C"
 QRect*
 C_ZN5QRectC2ERK6QPointRK5QSize(const QPoint* arg1,
 const QSize* arg2) {
-  auto ret = new QRect(*((const QPoint*)arg1),
-*((const QSize*)arg2));
+  auto ret = new QRect(*((const QPoint*)arg1), *((const QSize*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 114, column 33>
@@ -1526,10 +1524,7 @@ C_ZN5QRectC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QRect(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QRect(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 92, column 42>
@@ -2010,8 +2005,7 @@ extern "C"
 QRectF*
 C_ZN6QRectFC2ERK7QPointFS2_(const QPointF* arg1,
 const QPointF* arg2) {
-  auto ret = new QRectF(*((const QPointF*)arg1),
-*((const QPointF*)arg2));
+  auto ret = new QRectF(*((const QPointF*)arg1), *((const QPointF*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 549, column 42>
@@ -2193,8 +2187,7 @@ extern "C"
 QRectF*
 C_ZN6QRectFC2ERK7QPointFRK6QSizeF(const QPointF* arg1,
 const QSizeF* arg2) {
-  auto ret = new QRectF(*((const QPointF*)arg1),
-*((const QSizeF*)arg2));
+  auto ret = new QRectF(*((const QPointF*)arg1), *((const QSizeF*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 563, column 42>
@@ -2409,10 +2402,7 @@ C_ZN6QRectFC2Edddd(qreal arg1,
 qreal arg2,
 qreal arg3,
 qreal arg4) {
-  auto ret = new QRectF(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QRectF(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qrect.h', line 592, column 35>

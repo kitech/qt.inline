@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qbytearraymatcher.h
 // dst-file: /src/core/qbytearraymatcher.cxx
 //
@@ -91,8 +91,7 @@ extern "C"
 QByteArrayMatcher*
 C_ZN17QByteArrayMatcherC2EPKci(const char * arg1,
 int arg2) {
-  auto ret = new QByteArrayMatcher(arg1,
-arg2);
+  auto ret = new QByteArrayMatcher(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 48, column 14>

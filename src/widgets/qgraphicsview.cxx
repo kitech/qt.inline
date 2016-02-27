@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicsview.h
 // dst-file: /src/widgets/qgraphicsview.cxx
 //
@@ -23,6 +23,7 @@
 #include <qnamespace.h>
 #include <qvariant.h>
 #include <qtransform.h>
+#include <qgraphicsitem.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qsize.h>
@@ -500,8 +501,7 @@ extern "C"
 QGraphicsView*
 C_ZN13QGraphicsViewC2EP14QGraphicsSceneP7QWidget(QGraphicsScene * arg1,
 QWidget * arg2) {
-  auto ret = new QGraphicsView(arg1,
-arg2);
+  auto ret = new QGraphicsView(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsview.h', line 111, column 5>

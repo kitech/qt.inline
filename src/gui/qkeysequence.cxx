@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qkeysequence.h
 // dst-file: /src/gui/qkeysequence.cxx
 //
@@ -15,6 +15,7 @@
 
 
 #include <qstring.h>
+#include <qkeysequence.h>
 #include <qlist.h>
 #include <qwindowdefs.h>
 // <= header block end
@@ -92,10 +93,7 @@ C_ZN12QKeySequenceC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QKeySequence(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QKeySequence(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 153, column 9>
@@ -169,8 +167,7 @@ extern "C"
 QKeySequence*
 C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(const QString* arg1,
 QKeySequence::SequenceFormat arg2) {
-  auto ret = new QKeySequence(*((const QString*)arg1),
-arg2);
+  auto ret = new QKeySequence(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 146, column 5>

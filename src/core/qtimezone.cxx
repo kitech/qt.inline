@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qtimezone.h
 // dst-file: /src/core/qtimezone.cxx
 //
@@ -14,8 +14,8 @@
 #include <qtimezone.h>
 
 
-#include <qlist.h>
 #include <qbytearray.h>
+#include <qlist.h>
 #include <qlocale.h>
 #include <qstring.h>
 // <= header block end
@@ -375,12 +375,7 @@ const QString* arg3,
 const QString* arg4,
 QLocale::Country* arg5,
 const QString* arg6) {
-  auto ret = new QTimeZone(*((const QByteArray*)arg1),
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4),
-*((QLocale::Country*)arg5),
-*((const QString*)arg6));
+  auto ret = new QTimeZone(*((const QByteArray*)arg1), arg2, *((const QString*)arg3), *((const QString*)arg4), *((QLocale::Country*)arg5), *((const QString*)arg6));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 106, column 9>

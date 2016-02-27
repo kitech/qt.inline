@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qresource.h
 // dst-file: /src/core/qresource.cxx
 //
@@ -42,8 +42,7 @@ extern "C"
 QResource*
 C_ZN9QResourceC2ERK7QStringRK7QLocale(const QString* arg1,
 const QLocale* arg2) {
-  auto ret = new QResource(*((const QString*)arg1),
-*((const QLocale*)arg2));
+  auto ret = new QResource(*((const QString*)arg1), *((const QLocale*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 58, column 13>

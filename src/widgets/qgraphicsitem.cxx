@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qgraphicsitem.h
 // dst-file: /src/widgets/qgraphicsitem.cxx
 //
@@ -30,10 +30,12 @@
 #include <qbrush.h>
 #include <qregion.h>
 #include <qtransform.h>
+#include <qgraphicstransform.h>
 #include <qlist.h>
 #include <qfontdatabase.h>
 #include <qmatrix.h>
 #include <qvariant.h>
+#include <qgraphicsitem.h>
 #include <qcursor.h>
 // <= header block end
 
@@ -485,8 +487,7 @@ extern "C"
 QGraphicsTextItem*
 C_ZN17QGraphicsTextItemC2ERK7QStringP13QGraphicsItem(const QString* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsTextItem(*((const QString*)arg1),
-arg2);
+  auto ret = new QGraphicsTextItem(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 867, column 5>
@@ -749,8 +750,7 @@ extern "C"
 QGraphicsPixmapItem*
 C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(const QPixmap* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsPixmapItem(*((const QPixmap*)arg1),
-arg2);
+  auto ret = new QGraphicsPixmapItem(*((const QPixmap*)arg1), arg2);
   return ret;
 }
 //   // proto:  void QGraphicsPixmapItem::~QGraphicsPixmapItem();
@@ -982,8 +982,7 @@ extern "C"
 QGraphicsRectItem*
 C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(const QRectF* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsRectItem(*((const QRectF*)arg1),
-arg2);
+  auto ret = new QGraphicsRectItem(*((const QRectF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 672, column 18>
@@ -1061,11 +1060,7 @@ qreal arg2,
 qreal arg3,
 qreal arg4,
 QGraphicsItem * arg5) {
-  auto ret = new QGraphicsRectItem(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QGraphicsRectItem(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 704, column 10>
@@ -1094,8 +1089,7 @@ extern "C"
 QGraphicsEllipseItem*
 C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(const QRectF* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsEllipseItem(*((const QRectF*)arg1),
-arg2);
+  auto ret = new QGraphicsEllipseItem(*((const QRectF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 700, column 10>
@@ -1170,11 +1164,7 @@ qreal arg2,
 qreal arg3,
 qreal arg4,
 QGraphicsItem * arg5) {
-  auto ret = new QGraphicsEllipseItem(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QGraphicsEllipseItem(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 701, column 17>
@@ -1366,8 +1356,7 @@ extern "C"
 QGraphicsPolygonItem*
 C_ZN20QGraphicsPolygonItemC2ERK9QPolygonFP13QGraphicsItem(const QPolygonF* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsPolygonItem(*((const QPolygonF*)arg1),
-arg2);
+  auto ret = new QGraphicsPolygonItem(*((const QPolygonF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 751, column 10>
@@ -1405,8 +1394,7 @@ extern "C"
 QGraphicsPathItem*
 C_ZN17QGraphicsPathItemC2ERK12QPainterPathP13QGraphicsItem(const QPainterPath* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsPathItem(*((const QPainterPath*)arg1),
-arg2);
+  auto ret = new QGraphicsPathItem(*((const QPainterPath*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 632, column 10>
@@ -1541,8 +1529,7 @@ extern "C"
 QGraphicsLineItem*
 C_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem(const QLineF* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsLineItem(*((const QLineF*)arg1),
-arg2);
+  auto ret = new QGraphicsLineItem(*((const QLineF*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 783, column 12>
@@ -1651,11 +1638,7 @@ qreal arg2,
 qreal arg3,
 qreal arg4,
 QGraphicsItem * arg5) {
-  auto ret = new QGraphicsLineItem(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
+  auto ret = new QGraphicsLineItem(arg1, arg2, arg3, arg4, arg5);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 790, column 10>
@@ -3900,9 +3883,7 @@ C_ZN15QGraphicsObject14opacityChangedEv(void *qthis) {
 extern "C"
 QGraphicsObject*
 C_ZN15QGraphicsObjectC2EP13QGraphicsItem(QGraphicsItem * arg1) {
-    // auto ret = new QGraphicsObject(arg1);
-    // return ret;
-    return NULL;
+  // auto ret = new QGraphicsObject(arg1);
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 574, column 10>
 //   // proto:  void QGraphicsObject::xChanged();
@@ -4042,8 +4023,7 @@ extern "C"
 QGraphicsSimpleTextItem*
 C_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem(const QString* arg1,
 QGraphicsItem * arg2) {
-  auto ret = new QGraphicsSimpleTextItem(*((const QString*)arg1),
-arg2);
+  auto ret = new QGraphicsSimpleTextItem(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitem.h', line 979, column 10>

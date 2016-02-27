@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qvector4d.h
 // dst-file: /src/gui/qvector4d.cxx
 //
@@ -211,9 +211,7 @@ QVector4D*
 C_ZN9QVector4DC2ERK9QVector2Dff(const QVector2D* arg1,
 float arg2,
 float arg3) {
-  auto ret = new QVector4D(*((const QVector2D*)arg1),
-arg2,
-arg3);
+  auto ret = new QVector4D(*((const QVector2D*)arg1), arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 119, column 30>
@@ -279,10 +277,7 @@ C_ZN9QVector4DC2Effff(float arg1,
 float arg2,
 float arg3,
 float arg4) {
-  auto ret = new QVector4D(arg1,
-arg2,
-arg3,
-arg4);
+  auto ret = new QVector4D(arg1, arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 63, column 5>
@@ -291,8 +286,7 @@ extern "C"
 QVector4D*
 C_ZN9QVector4DC2ERK9QVector3Df(const QVector3D* arg1,
 float arg2) {
-  auto ret = new QVector4D(*((const QVector3D*)arg1),
-arg2);
+  auto ret = new QVector4D(*((const QVector3D*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 53, column 14>

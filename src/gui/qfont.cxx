@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qfont.h
 // dst-file: /src/gui/qfont.cxx
 //
@@ -286,10 +286,7 @@ C_ZN5QFontC2ERK7QStringiib(const QString* arg1,
 int arg2,
 int arg3,
 bool arg4) {
-  auto ret = new QFont(*((const QString*)arg1),
-arg2,
-arg3,
-arg4);
+  auto ret = new QFont(*((const QString*)arg1), arg2, arg3, arg4);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 214, column 10>
@@ -622,8 +619,7 @@ extern "C"
 QFont*
 C_ZN5QFontC2ERKS_P12QPaintDevice(const QFont* arg1,
 QPaintDevice * arg2) {
-  auto ret = new QFont(*((const QFont*)arg1),
-arg2);
+  auto ret = new QFont(*((const QFont*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 255, column 20>

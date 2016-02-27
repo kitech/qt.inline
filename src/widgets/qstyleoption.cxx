@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qstyleoption.h
 // dst-file: /src/widgets/qstyleoption.cxx
 //
@@ -498,8 +498,7 @@ extern "C"
 QStyleOption*
 C_ZN12QStyleOptionC2Eii(int arg1,
 int arg2) {
-  auto ret = new QStyleOption(arg1,
-arg2);
+  auto ret = new QStyleOption(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 89, column 17>
@@ -581,8 +580,7 @@ extern "C"
 QStyleOptionComplex*
 C_ZN19QStyleOptionComplexC2Eii(int arg1,
 int arg2) {
-  auto ret = new QStyleOptionComplex(arg1,
-arg2);
+  auto ret = new QStyleOptionComplex(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 492, column 5>
@@ -604,8 +602,7 @@ extern "C"
 QStyleHintReturn*
 C_ZN16QStyleHintReturnC2Eii(int arg1,
 int arg2) {
-  auto ret = new QStyleHintReturn(arg1,
-arg2);
+  auto ret = new QStyleHintReturn(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qstyleoption.h', line 208, column 5>

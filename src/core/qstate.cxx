@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qstate.h
 // dst-file: /src/core/qstate.cxx
 //
@@ -14,6 +14,7 @@
 #include <qstate.h>
 
 
+#include <qabstracttransition.h>
 #include <qlist.h>
 #include <qmetaobject.h>
 // <= header block end
@@ -97,8 +98,7 @@ extern "C"
 QState*
 C_ZN6QStateC2ENS_9ChildModeEPS_(QState::ChildMode arg1,
 QState * arg2) {
-  auto ret = new QState(arg1,
-arg2);
+  auto ret = new QState(arg1, arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qstate.h', line 69, column 5>

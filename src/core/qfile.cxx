@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -393,8 +393,7 @@ extern "C"
 QFile*
 C_ZN5QFileC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QFile(*((const QString*)arg1),
-arg2);
+  auto ret = new QFile(*((const QString*)arg1), arg2);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 105, column 27>

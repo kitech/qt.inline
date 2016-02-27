@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtGui/qmatrix4x4.h
 // dst-file: /src/gui/qmatrix4x4.cxx
 //
@@ -660,22 +660,7 @@ float arg13,
 float arg14,
 float arg15,
 float arg16) {
-  auto ret = new QMatrix4x4(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11,
-arg12,
-arg13,
-arg14,
-arg15,
-arg16);
+  auto ret = new QMatrix4x4(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 159, column 15>
@@ -751,9 +736,7 @@ QMatrix4x4*
 C_ZN10QMatrix4x4C2EPKfii(const float * arg1,
 int arg2,
 int arg3) {
-  auto ret = new QMatrix4x4(arg1,
-arg2,
-arg3);
+  auto ret = new QMatrix4x4(arg1, arg2, arg3);
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 154, column 16>

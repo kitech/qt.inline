@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Sun Jan 31 12:42:06 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
@@ -18,6 +18,7 @@
 #include <qtabwidget.h>
 #include <qbytearray.h>
 #include <qsize.h>
+#include <qdockwidget.h>
 #include <qlist.h>
 #include <qapplication.h>
 // <= header block end
@@ -180,8 +181,7 @@ extern "C"
 QMainWindow*
 C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QMainWindow(arg1,
-*((Qt::WindowFlags*)arg2));
+  auto ret = new QMainWindow(arg1, *((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 108, column 10>
