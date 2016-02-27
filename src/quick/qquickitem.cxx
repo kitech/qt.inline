@@ -1,19 +1,5 @@
-#include <qstring.h>
-#include <qnamespace.h>
-#include <qsharedpointer_impl.h>
-#include <qsharedpointer.h>
-#include <qtransform.h>
-#include <qnetworkinterface.h>
-#include <qlist.h>
-#include <qcursor.h>
-#include <qrect.h>
-#include <qpoint.h>
-#include <qqmllist.h>
-#include <qqmllistproperty.h>
-#include <qvariant.h>
-#include <qglobal.h>
 // auto generated, do not modify.
-// created: Fri Jan 22 22:26:45 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtQuick/qquickitem.h
 // dst-file: /src/quick/qquickitem.cxx
 //
@@ -21,1421 +7,48 @@
 // header block begin =>
 #include <qatomic.h>
 #include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qquickitem.h>
 
-extern "C" {
 
-int QQuickTransform_Class_Size()
-{
-  return sizeof(QQuickTransform);
-}
-
-int QQuickItem_Class_Size()
-{
-  return sizeof(QQuickItem);
-}
-
-}; // <= extern "C" block end
-
+#include <qglobal.h>
+#include <qvariant.h>
+#include <qquickitem.h>
+#include <qqmllist.h>
+#include <qpoint.h>
+#include <qrect.h>
+#include <qcursor.h>
+#include <qlist.h>
+#include <qnetworkinterface.h>
+#include <qtransform.h>
+#include <qquickitemgrabresult.h>
+#include <qsharedpointer.h>
+#include <qnamespace.h>
+#include <qstring.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qquickitem_inline_symbols() {
-//   // proto:  void QQuickTransform::~QQuickTransform();
-if (true) {
-  delete ((QQuickTransform*)0);
-}
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 54, column 5>
-//   // proto:  const QMetaObject * QQuickTransform::metaObject();
-if (true) {
-  auto f = []() {
-    ((QQuickTransform*)0)->metaObject();
-  };
-  if (f == nullptr){}
-}
-// _ZNK15QQuickTransform10metaObjectEv metaObject()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 56, column 5>
-//   // proto:  void QQuickTransform::QQuickTransform(QObject * parent);
-if (true) {
-  auto f = [](QObject * arg1) {
-    // new QQuickTransform(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 59, column 10>
-//   // proto:  void QQuickTransform::appendToItem(QQuickItem * );
-if (true) {
-  auto f = [](QQuickItem * arg1) {
-    ((QQuickTransform*)0)->appendToItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN15QQuickTransform12appendToItemEP10QQuickItem appendToItem(class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 62, column 18>
-//   // proto:  void QQuickTransform::applyTo(QMatrix4x4 * matrix);
-if (true) {
-  auto f = [](QMatrix4x4 * arg1) {
-    ((QQuickTransform*)0)->applyTo(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK15QQuickTransform7applyToEP10QMatrix4x4 applyTo(class QMatrix4x4 *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 60, column 10>
-//   // proto:  void QQuickTransform::prependToItem(QQuickItem * );
-if (true) {
-  auto f = [](QQuickItem * arg1) {
-    ((QQuickTransform*)0)->prependToItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN15QQuickTransform13prependToItemEP10QQuickItem prependToItem(class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 225, column 11>
-//   // proto:  qreal QQuickItem::implicitWidth();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->implicitWidth();
-    flythis.implicitWidth();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem13implicitWidthEv implicitWidth()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 235, column 21>
-//   // proto:  QQuickItem::TransformOrigin QQuickItem::transformOrigin();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->transformOrigin();
-    flythis.transformOrigin();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem15transformOriginEv transformOrigin()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 224, column 10>
-//   // proto:  void QQuickItem::setImplicitWidth(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setImplicitWidth(arg1);
-    flythis.setImplicitWidth(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem16setImplicitWidthEd setImplicitWidth(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 282, column 10>
-//   // proto:  void QQuickItem::setAcceptedMouseButtons(Qt::MouseButtons buttons);
-if (true) {
-  auto f = [](QQuickItem flythis, Qt::MouseButtons arg1) {
-    ((QQuickItem*)0)->setAcceptedMouseButtons(arg1);
-    flythis.setAcceptedMouseButtons(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE setAcceptedMouseButtons(Qt::MouseButtons)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 210, column 10>
-//   // proto:  void QQuickItem::setBaselineOffset(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setBaselineOffset(arg1);
-    flythis.setBaselineOffset(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem17setBaselineOffsetEd setBaselineOffset(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 223, column 10>
-//   // proto:  void QQuickItem::resetWidth();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->resetWidth();
-    flythis.resetWidth();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem10resetWidthEv resetWidth()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 215, column 11>
-//   // proto:  qreal QQuickItem::y();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->y();
-    flythis.y();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem1yEv y()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 348, column 10>
-//   // proto:  void QQuickItem::childrenRectChanged(const QRectF & );
-if (true) {
-  auto f = [](QQuickItem flythis, const QRectF & arg1) {
-    ((QQuickItem*)0)->childrenRectChanged(arg1);
-    flythis.childrenRectChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem19childrenRectChangedERK6QRectF childrenRectChanged(const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 376, column 10>
-//   // proto:  void QQuickItem::implicitHeightChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->implicitHeightChanged();
-    flythis.implicitHeightChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem21implicitHeightChangedEv implicitHeightChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 331, column 22>
-//   // proto:  QVariant QQuickItem::inputMethodQuery(Qt::InputMethodQuery query);
-if (true) {
-  auto f = [](QQuickItem flythis, Qt::InputMethodQuery arg1) {
-    ((QQuickItem*)0)->inputMethodQuery(arg1);
-    flythis.inputMethodQuery(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem16inputMethodQueryEN2Qt16InputMethodQueryE inputMethodQuery(Qt::InputMethodQuery)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 370, column 10>
-//   // proto:  void QQuickItem::xChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->xChanged();
-    flythis.xChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8xChangedEv xChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 267, column 11>
-//   // proto:  Flags QQuickItem::flags();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->flags();
-    flythis.flags();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem5flagsEv flags()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 358, column 10>
-//   // proto:  void QQuickItem::clipChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->clipChanged(arg1);
-    flythis.clipChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11clipChangedEb clipChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 325, column 22>
-//   // proto:  void QQuickItem::forceActiveFocus();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->forceActiveFocus();
-    flythis.forceActiveFocus();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem16forceActiveFocusEv forceActiveFocus()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 204, column 10>
-//   // proto:  void QQuickItem::setClip(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setClip(arg1);
-    flythis.setClip(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem7setClipEb setClip(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 228, column 10>
-//   // proto:  void QQuickItem::setHeight(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setHeight(arg1);
-    flythis.setHeight(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem9setHeightEd setHeight(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 218, column 10>
-//   // proto:  void QQuickItem::setY(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setY(arg1);
-    flythis.setY(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem4setYEd setY(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 243, column 11>
-//   // proto:  qreal QQuickItem::rotation();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->rotation();
-    flythis.rotation();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem8rotationEv rotation()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 248, column 11>
-//   // proto:  qreal QQuickItem::opacity();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->opacity();
-    flythis.opacity();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem7opacityEv opacity()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 277, column 10>
-//   // proto:  void QQuickItem::setFocus(bool focus, Qt::FocusReason reason);
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1, Qt::FocusReason arg2) {
-    ((QQuickItem*)0)->setFocus(arg1, arg2);
-    flythis.setFocus(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setFocusEbN2Qt11FocusReasonE setFocus(_Bool, Qt::FocusReason)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 231, column 11>
-//   // proto:  qreal QQuickItem::implicitHeight();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->implicitHeight();
-    flythis.implicitHeight();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem14implicitHeightEv implicitHeight()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 341, column 18>
-//   // proto:  bool QQuickItem::isTextureProvider();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->isTextureProvider();
-    flythis.isTextureProvider();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem17isTextureProviderEv isTextureProvider()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 368, column 10>
-//   // proto:  void QQuickItem::scaleChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->scaleChanged();
-    flythis.scaleChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem12scaleChangedEv scaleChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 375, column 10>
-//   // proto:  void QQuickItem::implicitWidthChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->implicitWidthChanged();
-    flythis.implicitWidthChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem20implicitWidthChangedEv implicitWidthChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 257, column 10>
-//   // proto:  bool QQuickItem::smooth();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->smooth();
-    flythis.smooth();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem6smoothEv smooth()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 212, column 39>
-//   // proto:  QQmlListProperty<QQuickTransform> QQuickItem::transform();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->transform();
-    flythis.transform();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem9transformEv transform()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 197, column 10>
-//   // proto:  void QQuickItem::stackBefore(const QQuickItem * );
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1) {
-    ((QQuickItem*)0)->stackBefore(arg1);
-    flythis.stackBefore(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11stackBeforeEPKS_ stackBefore(const class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 261, column 10>
-//   // proto:  void QQuickItem::setActiveFocusOnTab(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setActiveFocusOnTab(arg1);
-    flythis.setActiveFocusOnTab(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem19setActiveFocusOnTabEb setActiveFocusOnTab(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 245, column 11>
-//   // proto:  qreal QQuickItem::scale();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->scale();
-    flythis.scale();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem5scaleEv scale()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 255, column 10>
-//   // proto:  void QQuickItem::setEnabled(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setEnabled(arg1);
-    flythis.setEnabled(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem10setEnabledEb setEnabled(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 230, column 10>
-//   // proto:  void QQuickItem::setImplicitHeight(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setImplicitHeight(arg1);
-    flythis.setImplicitHeight(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem17setImplicitHeightEd setImplicitHeight(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 219, column 10>
-//   // proto:  void QQuickItem::setPosition(const QPointF & );
-if (true) {
-  auto f = [](QQuickItem flythis, const QPointF & arg1) {
-    ((QQuickItem*)0)->setPosition(arg1);
-    flythis.setPosition(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11setPositionERK7QPointF setPosition(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 258, column 10>
-//   // proto:  void QQuickItem::setSmooth(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setSmooth(arg1);
-    flythis.setSmooth(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem9setSmoothEb setSmooth(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 373, column 10>
-//   // proto:  void QQuickItem::heightChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->heightChanged();
-    flythis.heightChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem13heightChangedEv heightChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 371, column 10>
-//   // proto:  void QQuickItem::yChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->yChanged();
-    flythis.yChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8yChangedEv yChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 317, column 13>
-//   // proto:  QPointF QQuickItem::mapFromScene(const QPointF & point);
-if (true) {
-  auto f = [](QQuickItem flythis, const QPointF & arg1) {
-    ((QQuickItem*)0)->mapFromScene(arg1);
-    flythis.mapFromScene(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem12mapFromSceneERK7QPointF mapFromScene(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 357, column 10>
-//   // proto:  void QQuickItem::antialiasingChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->antialiasingChanged(arg1);
-    flythis.antialiasingChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem19antialiasingChangedEb antialiasingChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 284, column 10>
-//   // proto:  void QQuickItem::setAcceptHoverEvents(bool enabled);
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setAcceptHoverEvents(arg1);
-    flythis.setAcceptHoverEvents(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem20setAcceptHoverEventsEb setAcceptHoverEvents(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 352, column 10>
-//   // proto:  void QQuickItem::activeFocusChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->activeFocusChanged(arg1);
-    flythis.activeFocusChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem18activeFocusChangedEb activeFocusChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 372, column 10>
-//   // proto:  void QQuickItem::widthChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->widthChanged();
-    flythis.widthChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem12widthChangedEv widthChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 237, column 13>
-//   // proto:  QPointF QQuickItem::transformOriginPoint();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->transformOriginPoint();
-    flythis.transformOriginPoint();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem20transformOriginPointEv transformOriginPoint()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 207, column 10>
-//   // proto:  void QQuickItem::setState(const QString & );
-if (true) {
-  auto f = [](QQuickItem flythis, const QString & arg1) {
-    ((QQuickItem*)0)->setState(arg1);
-    flythis.setState(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setStateERK7QString setState(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 195, column 17>
-//   // proto:  QQuickItem * QQuickItem::parentItem();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->parentItem();
-    flythis.parentItem();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem10parentItemEv parentItem()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 278, column 10>
-//   // proto:  bool QQuickItem::isFocusScope();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->isFocusScope();
-    flythis.isFocusScope();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem12isFocusScopeEv isFocusScope()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 309, column 30>
-//   // proto:  bool QQuickItem::contains(const QPointF & point);
-if (true) {
-  auto f = [](QQuickItem flythis, const QPointF & arg1) {
-    ((QQuickItem*)0)->contains(arg1);
-    flythis.contains(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem8containsERK7QPointF contains(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 271, column 20>
-//   // proto:  QRectF QQuickItem::boundingRect();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->boundingRect();
-    flythis.boundingRect();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem12boundingRectEv boundingRect()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 265, column 10>
-//   // proto:  void QQuickItem::resetAntialiasing();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->resetAntialiasing();
-    flythis.resetAntialiasing();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem17resetAntialiasingEv resetAntialiasing()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 314, column 12>
-//   // proto:  QRectF QQuickItem::mapRectToItem(const QQuickItem * item, const QRectF & rect);
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1, const QRectF & arg2) {
-    ((QQuickItem*)0)->mapRectToItem(arg1, arg2);
-    flythis.mapRectToItem(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem13mapRectToItemEPKS_RK6QRectF mapRectToItem(const class QQuickItem *, const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 214, column 11>
-//   // proto:  qreal QQuickItem::x();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->x();
-    flythis.x();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem1xEv x()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 316, column 13>
-//   // proto:  QPointF QQuickItem::mapFromItem(const QQuickItem * item, const QPointF & point);
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1, const QPointF & arg2) {
-    ((QQuickItem*)0)->mapFromItem(arg1, arg2);
-    flythis.mapFromItem(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem11mapFromItemEPKS_RK7QPointF mapFromItem(const class QQuickItem *, const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 251, column 10>
-//   // proto:  bool QQuickItem::isVisible();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->isVisible();
-    flythis.isVisible();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem9isVisibleEv isVisible()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 359, column 24>
-//   // proto:  void QQuickItem::windowChanged(QQuickWindow * window);
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickWindow * arg1) {
-    ((QQuickItem*)0)->windowChanged(arg1);
-    flythis.windowChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem13windowChangedEP12QQuickWindow windowChanged(class QQuickWindow *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 342, column 33>
-//   // proto:  QSGTextureProvider * QQuickItem::textureProvider();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->textureProvider();
-    flythis.textureProvider();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem15textureProviderEv textureProvider()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 241, column 10>
-//   // proto:  void QQuickItem::setZ(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setZ(arg1);
-    flythis.setZ(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem4setZEd setZ(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 289, column 10>
-//   // proto:  void QQuickItem::unsetCursor();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->unsetCursor();
-    flythis.unsetCursor();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11unsetCursorEv unsetCursor()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 283, column 10>
-//   // proto:  bool QQuickItem::acceptHoverEvents();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->acceptHoverEvents();
-    flythis.acceptHoverEvents();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem17acceptHoverEventsEv acceptHoverEvents()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 298, column 10>
-//   // proto:  void QQuickItem::setFiltersChildMouseEvents(bool filter);
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setFiltersChildMouseEvents(arg1);
-    flythis.setFiltersChildMouseEvents(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem26setFiltersChildMouseEventsEb setFiltersChildMouseEvents(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 254, column 10>
-//   // proto:  bool QQuickItem::isEnabled();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->isEnabled();
-    flythis.isEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem9isEnabledEv isEnabled()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 312, column 13>
-//   // proto:  QPointF QQuickItem::mapToItem(const QQuickItem * item, const QPointF & point);
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1, const QPointF & arg2) {
-    ((QQuickItem*)0)->mapToItem(arg1, arg2);
-    flythis.mapToItem(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem9mapToItemEPKS_RK7QPointF mapToItem(const class QQuickItem *, const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 221, column 11>
-//   // proto:  qreal QQuickItem::width();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->width();
-    flythis.width();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem5widthEv width()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 313, column 13>
-//   // proto:  QPointF QQuickItem::mapToScene(const QPointF & point);
-if (true) {
-  auto f = [](QQuickItem flythis, const QPointF & arg1) {
-    ((QQuickItem*)0)->mapToScene(arg1);
-    flythis.mapToScene(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem10mapToSceneERK7QPointF mapToScene(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 302, column 10>
-//   // proto:  bool QQuickItem::keepTouchGrab();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->keepTouchGrab();
-    flythis.keepTouchGrab();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem13keepTouchGrabEv keepTouchGrab()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 200, column 12>
-//   // proto:  QRectF QQuickItem::childrenRect();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->childrenRect();
-    flythis.childrenRect();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem12childrenRectEv childrenRect()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 92, column 5>
-//   // proto:  const QMetaObject * QQuickItem::metaObject();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->metaObject();
-    flythis.metaObject();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem10metaObjectEv metaObject()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 296, column 10>
-//   // proto:  void QQuickItem::setKeepMouseGrab(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setKeepMouseGrab(arg1);
-    flythis.setKeepMouseGrab(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem16setKeepMouseGrabEb setKeepMouseGrab(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 297, column 10>
-//   // proto:  bool QQuickItem::filtersChildMouseEvents();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->filtersChildMouseEvents();
-    flythis.filtersChildMouseEvents();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem23filtersChildMouseEventsEv filtersChildMouseEvents()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 274, column 10>
-//   // proto:  bool QQuickItem::hasActiveFocus();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->hasActiveFocus();
-    flythis.hasActiveFocus();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem14hasActiveFocusEv hasActiveFocus()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 236, column 10>
-//   // proto:  void QQuickItem::setTransformOrigin(QQuickItem::TransformOrigin );
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem::TransformOrigin arg1) {
-    ((QQuickItem*)0)->setTransformOrigin(arg1);
-    flythis.setTransformOrigin(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem18setTransformOriginENS_15TransformOriginE setTransformOrigin(enum QQuickItem::TransformOrigin)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 292, column 10>
-//   // proto:  bool QQuickItem::isUnderMouse();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->isUnderMouse();
-    flythis.isUnderMouse();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem12isUnderMouseEv isUnderMouse()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 367, column 10>
-//   // proto:  void QQuickItem::rotationChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->rotationChanged();
-    flythis.rotationChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem15rotationChangedEv rotationChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 238, column 10>
-//   // proto:  void QQuickItem::setTransformOriginPoint(const QPointF & );
-if (true) {
-  auto f = [](QQuickItem flythis, const QPointF & arg1) {
-    ((QQuickItem*)0)->setTransformOriginPoint(arg1);
-    flythis.setTransformOriginPoint(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem23setTransformOriginPointERK7QPointF setTransformOriginPoint(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 321, column 10>
-//   // proto:  void QQuickItem::polish();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->polish();
-    flythis.polish();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem6polishEv polish()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 362, column 10>
-//   // proto:  void QQuickItem::childrenChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->childrenChanged();
-    flythis.childrenChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem15childrenChangedEv childrenChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 364, column 10>
-//   // proto:  void QQuickItem::enabledChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->enabledChanged();
-    flythis.enabledChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem14enabledChangedEv enabledChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 196, column 10>
-//   // proto:  void QQuickItem::setParentItem(QQuickItem * parent);
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem * arg1) {
-    ((QQuickItem*)0)->setParentItem(arg1);
-    flythis.setParentItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem13setParentItemEPS_ setParentItem(class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 191, column 5>
-//   // proto:  void QQuickItem::QQuickItem(QQuickItem * parent);
-if (true) {
-  auto f = [](QQuickItem * arg1) {
-    new QQuickItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 222, column 10>
-//   // proto:  void QQuickItem::setWidth(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setWidth(arg1);
-    flythis.setWidth(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setWidthEd setWidth(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 354, column 10>
-//   // proto:  void QQuickItem::parentChanged(QQuickItem * );
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem * arg1) {
-    ((QQuickItem*)0)->parentChanged(arg1);
-    flythis.parentChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem13parentChangedEPS_ parentChanged(class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 353, column 24>
-//   // proto:  void QQuickItem::activeFocusOnTabChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->activeFocusOnTabChanged(arg1);
-    flythis.activeFocusOnTabChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem23activeFocusOnTabChangedEb activeFocusOnTabChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 326, column 22>
-//   // proto:  void QQuickItem::forceActiveFocus(Qt::FocusReason reason);
-if (true) {
-  auto f = [](QQuickItem flythis, Qt::FocusReason arg1) {
-    ((QQuickItem*)0)->forceActiveFocus(arg1);
-    flythis.forceActiveFocus(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE forceActiveFocus(Qt::FocusReason)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 327, column 43>
-//   // proto:  QQuickItem * QQuickItem::nextItemInFocusChain(bool forward);
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->nextItemInFocusChain(arg1);
-    flythis.nextItemInFocusChain(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem20nextItemInFocusChainEb nextItemInFocusChain(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 301, column 10>
-//   // proto:  void QQuickItem::ungrabTouchPoints();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->ungrabTouchPoints();
-    flythis.ungrabTouchPoints();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem17ungrabTouchPointsEv ungrabTouchPoints()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 295, column 10>
-//   // proto:  bool QQuickItem::keepMouseGrab();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->keepMouseGrab();
-    flythis.keepMouseGrab();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem13keepMouseGrabEv keepMouseGrab()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 319, column 12>
-//   // proto:  QRectF QQuickItem::mapRectFromScene(const QRectF & rect);
-if (true) {
-  auto f = [](QQuickItem flythis, const QRectF & arg1) {
-    ((QQuickItem*)0)->mapRectFromScene(arg1);
-    flythis.mapRectFromScene(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem16mapRectFromSceneERK6QRectF mapRectFromScene(const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 350, column 10>
-//   // proto:  void QQuickItem::stateChanged(const QString & );
-if (true) {
-  auto f = [](QQuickItem flythis, const QString & arg1) {
-    ((QQuickItem*)0)->stateChanged(arg1);
-    flythis.stateChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem12stateChangedERK7QString stateChanged(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 351, column 10>
-//   // proto:  void QQuickItem::focusChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->focusChanged(arg1);
-    flythis.focusChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem12focusChangedEb focusChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 216, column 13>
-//   // proto:  QPointF QQuickItem::position();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->position();
-    flythis.position();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem8positionEv position()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 227, column 11>
-//   // proto:  qreal QQuickItem::height();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->height();
-    flythis.height();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem6heightEv height()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 328, column 29>
-//   // proto:  QQuickItem * QQuickItem::childAt(qreal x, qreal y);
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1, qreal arg2) {
-    ((QQuickItem*)0)->childAt(arg1, arg2);
-    flythis.childAt(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem7childAtEdd childAt(qreal, qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 287, column 13>
-//   // proto:  QCursor QQuickItem::cursor();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->cursor();
-    flythis.cursor();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem6cursorEv cursor()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 203, column 10>
-//   // proto:  bool QQuickItem::clip();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->clip();
-    flythis.clip();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem4clipEv clip()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 263, column 10>
-//   // proto:  bool QQuickItem::antialiasing();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->antialiasing();
-    flythis.antialiasing();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem12antialiasingEv antialiasing()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 194, column 19>
-//   // proto:  QQuickWindow * QQuickItem::window();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->window();
-    flythis.window();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem6windowEv window()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 318, column 12>
-//   // proto:  QRectF QQuickItem::mapRectFromItem(const QQuickItem * item, const QRectF & rect);
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1, const QRectF & arg2) {
-    ((QQuickItem*)0)->mapRectFromItem(arg1, arg2);
-    flythis.mapRectFromItem(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem15mapRectFromItemEPKS_RK6QRectF mapRectFromItem(const class QQuickItem *, const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 252, column 10>
-//   // proto:  void QQuickItem::setVisible(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setVisible(arg1);
-    flythis.setVisible(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem10setVisibleEb setVisible(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 268, column 10>
-//   // proto:  void QQuickItem::setFlag(QQuickItem::Flag flag, bool enabled);
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem::Flag arg1, bool arg2) {
-    ((QQuickItem*)0)->setFlag(arg1, arg2);
-    flythis.setFlag(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem7setFlagENS_4FlagEb setFlag(enum QQuickItem::Flag, _Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 276, column 10>
-//   // proto:  void QQuickItem::setFocus(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setFocus(arg1);
-    flythis.setFocus(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setFocusEb setFocus(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 260, column 10>
-//   // proto:  bool QQuickItem::activeFocusOnTab();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->activeFocusOnTab();
-    flythis.activeFocusOnTab();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem16activeFocusOnTabEv activeFocusOnTab()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 363, column 10>
-//   // proto:  void QQuickItem::opacityChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->opacityChanged();
-    flythis.opacityChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem14opacityChangedEv opacityChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 365, column 10>
-//   // proto:  void QQuickItem::visibleChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->visibleChanged();
-    flythis.visibleChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem14visibleChangedEv visibleChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 240, column 11>
-//   // proto:  qreal QQuickItem::z();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->z();
-    flythis.z();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem1zEv z()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 249, column 10>
-//   // proto:  void QQuickItem::setOpacity(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setOpacity(arg1);
-    flythis.setOpacity(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem10setOpacityEd setOpacity(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 269, column 10>
-//   // proto:  void QQuickItem::setFlags(Flags flags);
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem::Flags arg1) {
-    ((QQuickItem*)0)->setFlags(arg1);
-    flythis.setFlags(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 264, column 10>
-//   // proto:  void QQuickItem::setAntialiasing(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setAntialiasing(arg1);
-    flythis.setAntialiasing(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem15setAntialiasingEb setAntialiasing(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 366, column 10>
-//   // proto:  void QQuickItem::visibleChildrenChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->visibleChildrenChanged();
-    flythis.visibleChildrenChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem22visibleChildrenChangedEv visibleChildrenChanged()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 201, column 25>
-//   // proto:  QList<QQuickItem *> QQuickItem::childItems();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->childItems();
-    flythis.childItems();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem10childItemsEv childItems()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 233, column 10>
-//   // proto:  void QQuickItem::setSize(const QSizeF & size);
-if (true) {
-  auto f = [](QQuickItem flythis, const QSizeF & arg1) {
-    ((QQuickItem*)0)->setSize(arg1);
-    flythis.setSize(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem7setSizeERK6QSizeF setSize(const class QSizeF &)
-//   // proto:  void QQuickItem::~QQuickItem();
-if (true) {
-  delete ((QQuickItem*)0);
-}
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 279, column 17>
-//   // proto:  QQuickItem * QQuickItem::scopedFocusItem();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->scopedFocusItem();
-    flythis.scopedFocusItem();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem15scopedFocusItemEv scopedFocusItem()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 306, column 36>
-//   // proto:  bool QQuickItem::grabToImage(const QJSValue & callback, const QSize & targetSize);
-if (true) {
-  auto f = [](QQuickItem flythis, const QJSValue & arg1, const QSize & arg2) {
-    ((QQuickItem*)0)->grabToImage(arg1, arg2);
-    flythis.grabToImage(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize grabToImage(const class QJSValue &, const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 355, column 10>
-//   // proto:  void QQuickItem::transformOriginChanged(QQuickItem::TransformOrigin );
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem::TransformOrigin arg1) {
-    ((QQuickItem*)0)->transformOriginChanged(arg1);
-    flythis.transformOriginChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE transformOriginChanged(enum QQuickItem::TransformOrigin)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 311, column 16>
-//   // proto:  QTransform QQuickItem::itemTransform(QQuickItem * , bool * );
-if (true) {
-  auto f = [](QQuickItem flythis, QQuickItem * arg1, bool * arg2) {
-    ((QQuickItem*)0)->itemTransform(arg1, arg2);
-    flythis.itemTransform(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem13itemTransformEPS_Pb itemTransform(class QQuickItem *, _Bool *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 345, column 10>
-//   // proto:  void QQuickItem::update();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->update();
-    flythis.update();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem6updateEv update()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 288, column 10>
-//   // proto:  void QQuickItem::setCursor(const QCursor & cursor);
-if (true) {
-  auto f = [](QQuickItem flythis, const QCursor & arg1) {
-    ((QQuickItem*)0)->setCursor(arg1);
-    flythis.setCursor(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem9setCursorERK7QCursor setCursor(const class QCursor &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 300, column 10>
-//   // proto:  void QQuickItem::grabTouchPoints(const QVector<int> & ids);
-if (true) {
-  auto f = [](QQuickItem flythis, const QVector<int> & arg1) {
-    ((QQuickItem*)0)->grabTouchPoints(arg1);
-    flythis.grabTouchPoints(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem15grabTouchPointsERK7QVectorIiE grabTouchPoints(const QVector<int> &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 307, column 42>
-//   // proto:  QSharedPointer<QQuickItemGrabResult> QQuickItem::grabToImage(const QSize & targetSize);
-if (true) {
-  auto f = [](QQuickItem flythis, const QSize & arg1) {
-    ((QQuickItem*)0)->grabToImage(arg1);
-    flythis.grabToImage(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11grabToImageERK5QSize grabToImage(const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 324, column 22>
-//   // proto:  void QQuickItem::mapToItem(QQmlV4Function * );
-if (true) {
-  auto f = [](QQuickItem flythis, QQmlV4Function * arg1) {
-    ((QQuickItem*)0)->mapToItem(arg1);
-    flythis.mapToItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem9mapToItemEP14QQmlV4Function mapToItem(class QQmlV4Function *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 272, column 20>
-//   // proto:  QRectF QQuickItem::clipRect();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->clipRect();
-    flythis.clipRect();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem8clipRectEv clipRect()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 281, column 22>
-//   // proto:  Qt::MouseButtons QQuickItem::acceptedMouseButtons();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->acceptedMouseButtons();
-    flythis.acceptedMouseButtons();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem20acceptedMouseButtonsEv acceptedMouseButtons()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 294, column 10>
-//   // proto:  void QQuickItem::ungrabMouse();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->ungrabMouse();
-    flythis.ungrabMouse();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11ungrabMouseEv ungrabMouse()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 315, column 12>
-//   // proto:  QRectF QQuickItem::mapRectToScene(const QRectF & rect);
-if (true) {
-  auto f = [](QQuickItem flythis, const QRectF & arg1) {
-    ((QQuickItem*)0)->mapRectToScene(arg1);
-    flythis.mapRectToScene(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem14mapRectToSceneERK6QRectF mapRectToScene(const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 244, column 10>
-//   // proto:  void QQuickItem::setRotation(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setRotation(arg1);
-    flythis.setRotation(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11setRotationEd setRotation(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 356, column 10>
-//   // proto:  void QQuickItem::smoothChanged(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->smoothChanged(arg1);
-    flythis.smoothChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem13smoothChangedEb smoothChanged(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 323, column 22>
-//   // proto:  void QQuickItem::mapFromItem(QQmlV4Function * );
-if (true) {
-  auto f = [](QQuickItem flythis, QQmlV4Function * arg1) {
-    ((QQuickItem*)0)->mapFromItem(arg1);
-    flythis.mapFromItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem11mapFromItemEP14QQmlV4Function mapFromItem(class QQmlV4Function *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 275, column 10>
-//   // proto:  bool QQuickItem::hasFocus();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->hasFocus();
-    flythis.hasFocus();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem8hasFocusEv hasFocus()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 217, column 10>
-//   // proto:  void QQuickItem::setX(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setX(arg1);
-    flythis.setX(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem4setXEd setX(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 206, column 13>
-//   // proto:  QString QQuickItem::state();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->state();
-    flythis.state();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem5stateEv state()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 246, column 10>
-//   // proto:  void QQuickItem::setScale(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->setScale(arg1);
-    flythis.setScale(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8setScaleEd setScale(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 229, column 10>
-//   // proto:  void QQuickItem::resetHeight();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->resetHeight();
-    flythis.resetHeight();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem11resetHeightEv resetHeight()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 293, column 10>
-//   // proto:  void QQuickItem::grabMouse();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->grabMouse();
-    flythis.grabMouse();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem9grabMouseEv grabMouse()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 303, column 10>
-//   // proto:  void QQuickItem::setKeepTouchGrab(bool );
-if (true) {
-  auto f = [](QQuickItem flythis, bool arg1) {
-    ((QQuickItem*)0)->setKeepTouchGrab(arg1);
-    flythis.setKeepTouchGrab(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem16setKeepTouchGrabEb setKeepTouchGrab(_Bool)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 349, column 10>
-//   // proto:  void QQuickItem::baselineOffsetChanged(qreal );
-if (true) {
-  auto f = [](QQuickItem flythis, qreal arg1) {
-    ((QQuickItem*)0)->baselineOffsetChanged(arg1);
-    flythis.baselineOffsetChanged(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem21baselineOffsetChangedEd baselineOffsetChanged(qreal)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 198, column 10>
-//   // proto:  void QQuickItem::stackAfter(const QQuickItem * );
-if (true) {
-  auto f = [](QQuickItem flythis, const QQuickItem * arg1) {
-    ((QQuickItem*)0)->stackAfter(arg1);
-    flythis.stackAfter(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem10stackAfterEPKS_ stackAfter(const class QQuickItem *)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 209, column 11>
-//   // proto:  qreal QQuickItem::baselineOffset();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->baselineOffset();
-    flythis.baselineOffset();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QQuickItem14baselineOffsetEv baselineOffset()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 374, column 10>
-//   // proto:  void QQuickItem::zChanged();
-if (true) {
-  auto f = [](QQuickItem flythis) {
-    ((QQuickItem*)0)->zChanged();
-    flythis.zChanged();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QQuickItem8zChangedEv zChanged()
 } // <= main block end
 
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QQuickTransform_Class_Size()
+{
+  return sizeof(QQuickTransform);
+}
+
+extern "C"
+int QQuickItem_Class_Size()
+{
+  return sizeof(QQuickItem);
+}
+
 // <= use block end
 
 // ext block begin =>
@@ -1446,786 +59,1064 @@ void C_ZN15QQuickTransformD2Ev(void *qthis) {
 }
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 54, column 5>
 //   // proto:  const QMetaObject * QQuickTransform::metaObject();
-extern "C"
-void C_ZNK15QQuickTransform10metaObjectEv(void *qthis) {
-  ((QQuickTransform*)qthis)->metaObject();
-}
 // _ZNK15QQuickTransform10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK15QQuickTransform10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QQuickTransform*)qthis)->metaObject();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 56, column 5>
 //   // proto:  void QQuickTransform::QQuickTransform(QObject * parent);
 extern "C"
-void C_ZN15QQuickTransformC2EP7QObject(QObject * arg1) {
-  // new QQuickTransform(arg1);
+QQuickTransform*
+C_ZN15QQuickTransformC2EP7QObject(QObject * arg1) {
+  // auto ret = new QQuickTransform(arg1);
 }
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 59, column 10>
 //   // proto:  void QQuickTransform::appendToItem(QQuickItem * );
+// _ZN15QQuickTransform12appendToItemEP10QQuickItem appendToItem(class QQuickItem *)
 extern "C"
-void C_ZN15QQuickTransform12appendToItemEP10QQuickItem(void *qthis, QQuickItem * arg1) {
+void
+C_ZN15QQuickTransform12appendToItemEP10QQuickItem(void *qthis,
+QQuickItem * arg1) {
   ((QQuickTransform*)qthis)->appendToItem(arg1);
 }
-// _ZN15QQuickTransform12appendToItemEP10QQuickItem appendToItem(class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 62, column 18>
 //   // proto:  void QQuickTransform::applyTo(QMatrix4x4 * matrix);
+// _ZNK15QQuickTransform7applyToEP10QMatrix4x4 applyTo(class QMatrix4x4 *)
 extern "C"
-void C_ZNK15QQuickTransform7applyToEP10QMatrix4x4(void *qthis, QMatrix4x4 * arg1) {
+void
+C_ZNK15QQuickTransform7applyToEP10QMatrix4x4(void *qthis,
+QMatrix4x4 * arg1) {
   ((QQuickTransform*)qthis)->applyTo(arg1);
 }
-// _ZNK15QQuickTransform7applyToEP10QMatrix4x4 applyTo(class QMatrix4x4 *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 60, column 10>
 //   // proto:  void QQuickTransform::prependToItem(QQuickItem * );
+// _ZN15QQuickTransform13prependToItemEP10QQuickItem prependToItem(class QQuickItem *)
 extern "C"
-void C_ZN15QQuickTransform13prependToItemEP10QQuickItem(void *qthis, QQuickItem * arg1) {
+void
+C_ZN15QQuickTransform13prependToItemEP10QQuickItem(void *qthis,
+QQuickItem * arg1) {
   ((QQuickTransform*)qthis)->prependToItem(arg1);
 }
-// _ZN15QQuickTransform13prependToItemEP10QQuickItem prependToItem(class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 225, column 11>
 //   // proto:  qreal QQuickItem::implicitWidth();
-extern "C"
-void C_ZNK10QQuickItem13implicitWidthEv(void *qthis) {
-  ((QQuickItem*)qthis)->implicitWidth();
-}
 // _ZNK10QQuickItem13implicitWidthEv implicitWidth()
+extern "C"
+double
+C_ZNK10QQuickItem13implicitWidthEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->implicitWidth();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 235, column 21>
 //   // proto:  QQuickItem::TransformOrigin QQuickItem::transformOrigin();
-extern "C"
-void C_ZNK10QQuickItem15transformOriginEv(void *qthis) {
-  ((QQuickItem*)qthis)->transformOrigin();
-}
 // _ZNK10QQuickItem15transformOriginEv transformOrigin()
+extern "C"
+QQuickItem::TransformOrigin
+C_ZNK10QQuickItem15transformOriginEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->transformOrigin();
+  return ret; // 0 TypeKind.ENUM
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 224, column 10>
 //   // proto:  void QQuickItem::setImplicitWidth(qreal );
+// _ZN10QQuickItem16setImplicitWidthEd setImplicitWidth(qreal)
 extern "C"
-void C_ZN10QQuickItem16setImplicitWidthEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem16setImplicitWidthEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setImplicitWidth(arg1);
 }
-// _ZN10QQuickItem16setImplicitWidthEd setImplicitWidth(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 282, column 10>
 //   // proto:  void QQuickItem::setAcceptedMouseButtons(Qt::MouseButtons buttons);
-extern "C"
-void C_ZN10QQuickItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE(void *qthis, Qt::MouseButtons arg1) {
-  ((QQuickItem*)qthis)->setAcceptedMouseButtons(arg1);
-}
 // _ZN10QQuickItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE setAcceptedMouseButtons(Qt::MouseButtons)
+extern "C"
+void
+C_ZN10QQuickItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE(void *qthis,
+Qt::MouseButtons* arg1) {
+  ((QQuickItem*)qthis)->setAcceptedMouseButtons(*((Qt::MouseButtons*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 210, column 10>
 //   // proto:  void QQuickItem::setBaselineOffset(qreal );
+// _ZN10QQuickItem17setBaselineOffsetEd setBaselineOffset(qreal)
 extern "C"
-void C_ZN10QQuickItem17setBaselineOffsetEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem17setBaselineOffsetEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setBaselineOffset(arg1);
 }
-// _ZN10QQuickItem17setBaselineOffsetEd setBaselineOffset(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 223, column 10>
 //   // proto:  void QQuickItem::resetWidth();
+// _ZN10QQuickItem10resetWidthEv resetWidth()
 extern "C"
-void C_ZN10QQuickItem10resetWidthEv(void *qthis) {
+void
+C_ZN10QQuickItem10resetWidthEv(void *qthis) {
   ((QQuickItem*)qthis)->resetWidth();
 }
-// _ZN10QQuickItem10resetWidthEv resetWidth()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 215, column 11>
 //   // proto:  qreal QQuickItem::y();
-extern "C"
-void C_ZNK10QQuickItem1yEv(void *qthis) {
-  ((QQuickItem*)qthis)->y();
-}
 // _ZNK10QQuickItem1yEv y()
+extern "C"
+double
+C_ZNK10QQuickItem1yEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->y();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 348, column 10>
 //   // proto:  void QQuickItem::childrenRectChanged(const QRectF & );
-extern "C"
-void C_ZN10QQuickItem19childrenRectChangedERK6QRectF(void *qthis, const QRectF & arg1) {
-  ((QQuickItem*)qthis)->childrenRectChanged(arg1);
-}
 // _ZN10QQuickItem19childrenRectChangedERK6QRectF childrenRectChanged(const class QRectF &)
+extern "C"
+void
+C_ZN10QQuickItem19childrenRectChangedERK6QRectF(void *qthis,
+const QRectF* arg1) {
+  ((QQuickItem*)qthis)->childrenRectChanged(*((const QRectF*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 376, column 10>
 //   // proto:  void QQuickItem::implicitHeightChanged();
+// _ZN10QQuickItem21implicitHeightChangedEv implicitHeightChanged()
 extern "C"
-void C_ZN10QQuickItem21implicitHeightChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem21implicitHeightChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->implicitHeightChanged();
 }
-// _ZN10QQuickItem21implicitHeightChangedEv implicitHeightChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 331, column 22>
 //   // proto:  QVariant QQuickItem::inputMethodQuery(Qt::InputMethodQuery query);
-extern "C"
-void C_ZNK10QQuickItem16inputMethodQueryEN2Qt16InputMethodQueryE(void *qthis, Qt::InputMethodQuery arg1) {
-  ((QQuickItem*)qthis)->inputMethodQuery(arg1);
-}
 // _ZNK10QQuickItem16inputMethodQueryEN2Qt16InputMethodQueryE inputMethodQuery(Qt::InputMethodQuery)
+extern "C"
+QVariant*
+C_ZNK10QQuickItem16inputMethodQueryEN2Qt16InputMethodQueryE(void *qthis,
+Qt::InputMethodQuery* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->inputMethodQuery(*((Qt::InputMethodQuery*)arg1));
+  return new QVariant(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 370, column 10>
 //   // proto:  void QQuickItem::xChanged();
+// _ZN10QQuickItem8xChangedEv xChanged()
 extern "C"
-void C_ZN10QQuickItem8xChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem8xChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->xChanged();
 }
-// _ZN10QQuickItem8xChangedEv xChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 267, column 11>
 //   // proto:  Flags QQuickItem::flags();
-extern "C"
-void C_ZNK10QQuickItem5flagsEv(void *qthis) {
-  ((QQuickItem*)qthis)->flags();
-}
 // _ZNK10QQuickItem5flagsEv flags()
+extern "C"
+QFlags<QQuickItem::Flag>*
+C_ZNK10QQuickItem5flagsEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->flags();
+  return new QFlags<QQuickItem::Flag>(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 358, column 10>
 //   // proto:  void QQuickItem::clipChanged(bool );
+// _ZN10QQuickItem11clipChangedEb clipChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem11clipChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem11clipChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->clipChanged(arg1);
 }
-// _ZN10QQuickItem11clipChangedEb clipChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 325, column 22>
 //   // proto:  void QQuickItem::forceActiveFocus();
+// _ZN10QQuickItem16forceActiveFocusEv forceActiveFocus()
 extern "C"
-void C_ZN10QQuickItem16forceActiveFocusEv(void *qthis) {
+void
+C_ZN10QQuickItem16forceActiveFocusEv(void *qthis) {
   ((QQuickItem*)qthis)->forceActiveFocus();
 }
-// _ZN10QQuickItem16forceActiveFocusEv forceActiveFocus()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 204, column 10>
 //   // proto:  void QQuickItem::setClip(bool );
+// _ZN10QQuickItem7setClipEb setClip(_Bool)
 extern "C"
-void C_ZN10QQuickItem7setClipEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem7setClipEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setClip(arg1);
 }
-// _ZN10QQuickItem7setClipEb setClip(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 228, column 10>
 //   // proto:  void QQuickItem::setHeight(qreal );
+// _ZN10QQuickItem9setHeightEd setHeight(qreal)
 extern "C"
-void C_ZN10QQuickItem9setHeightEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem9setHeightEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setHeight(arg1);
 }
-// _ZN10QQuickItem9setHeightEd setHeight(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 218, column 10>
 //   // proto:  void QQuickItem::setY(qreal );
+// _ZN10QQuickItem4setYEd setY(qreal)
 extern "C"
-void C_ZN10QQuickItem4setYEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem4setYEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setY(arg1);
 }
-// _ZN10QQuickItem4setYEd setY(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 243, column 11>
 //   // proto:  qreal QQuickItem::rotation();
-extern "C"
-void C_ZNK10QQuickItem8rotationEv(void *qthis) {
-  ((QQuickItem*)qthis)->rotation();
-}
 // _ZNK10QQuickItem8rotationEv rotation()
+extern "C"
+double
+C_ZNK10QQuickItem8rotationEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->rotation();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 248, column 11>
 //   // proto:  qreal QQuickItem::opacity();
-extern "C"
-void C_ZNK10QQuickItem7opacityEv(void *qthis) {
-  ((QQuickItem*)qthis)->opacity();
-}
 // _ZNK10QQuickItem7opacityEv opacity()
+extern "C"
+double
+C_ZNK10QQuickItem7opacityEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->opacity();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 277, column 10>
 //   // proto:  void QQuickItem::setFocus(bool focus, Qt::FocusReason reason);
-extern "C"
-void C_ZN10QQuickItem8setFocusEbN2Qt11FocusReasonE(void *qthis, bool arg1, Qt::FocusReason arg2) {
-  ((QQuickItem*)qthis)->setFocus(arg1, arg2);
-}
 // _ZN10QQuickItem8setFocusEbN2Qt11FocusReasonE setFocus(_Bool, Qt::FocusReason)
+extern "C"
+void
+C_ZN10QQuickItem8setFocusEbN2Qt11FocusReasonE(void *qthis,
+bool arg1,
+Qt::FocusReason* arg2) {
+  ((QQuickItem*)qthis)->setFocus(arg1,
+*((Qt::FocusReason*)arg2));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 231, column 11>
 //   // proto:  qreal QQuickItem::implicitHeight();
-extern "C"
-void C_ZNK10QQuickItem14implicitHeightEv(void *qthis) {
-  ((QQuickItem*)qthis)->implicitHeight();
-}
 // _ZNK10QQuickItem14implicitHeightEv implicitHeight()
+extern "C"
+double
+C_ZNK10QQuickItem14implicitHeightEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->implicitHeight();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 341, column 18>
 //   // proto:  bool QQuickItem::isTextureProvider();
-extern "C"
-void C_ZNK10QQuickItem17isTextureProviderEv(void *qthis) {
-  ((QQuickItem*)qthis)->isTextureProvider();
-}
 // _ZNK10QQuickItem17isTextureProviderEv isTextureProvider()
+extern "C"
+bool
+C_ZNK10QQuickItem17isTextureProviderEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->isTextureProvider();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 368, column 10>
 //   // proto:  void QQuickItem::scaleChanged();
+// _ZN10QQuickItem12scaleChangedEv scaleChanged()
 extern "C"
-void C_ZN10QQuickItem12scaleChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem12scaleChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->scaleChanged();
 }
-// _ZN10QQuickItem12scaleChangedEv scaleChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 375, column 10>
 //   // proto:  void QQuickItem::implicitWidthChanged();
+// _ZN10QQuickItem20implicitWidthChangedEv implicitWidthChanged()
 extern "C"
-void C_ZN10QQuickItem20implicitWidthChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem20implicitWidthChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->implicitWidthChanged();
 }
-// _ZN10QQuickItem20implicitWidthChangedEv implicitWidthChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 257, column 10>
 //   // proto:  bool QQuickItem::smooth();
-extern "C"
-void C_ZNK10QQuickItem6smoothEv(void *qthis) {
-  ((QQuickItem*)qthis)->smooth();
-}
 // _ZNK10QQuickItem6smoothEv smooth()
+extern "C"
+bool
+C_ZNK10QQuickItem6smoothEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->smooth();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 212, column 39>
 //   // proto:  QQmlListProperty<QQuickTransform> QQuickItem::transform();
-extern "C"
-void C_ZN10QQuickItem9transformEv(void *qthis) {
-  ((QQuickItem*)qthis)->transform();
-}
 // _ZN10QQuickItem9transformEv transform()
+extern "C"
+QQmlListProperty<QQuickTransform>*
+C_ZN10QQuickItem9transformEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->transform();
+  return new QQmlListProperty<QQuickTransform>(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 197, column 10>
 //   // proto:  void QQuickItem::stackBefore(const QQuickItem * );
+// _ZN10QQuickItem11stackBeforeEPKS_ stackBefore(const class QQuickItem *)
 extern "C"
-void C_ZN10QQuickItem11stackBeforeEPKS_(void *qthis, const QQuickItem * arg1) {
+void
+C_ZN10QQuickItem11stackBeforeEPKS_(void *qthis,
+const QQuickItem * arg1) {
   ((QQuickItem*)qthis)->stackBefore(arg1);
 }
-// _ZN10QQuickItem11stackBeforeEPKS_ stackBefore(const class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 261, column 10>
 //   // proto:  void QQuickItem::setActiveFocusOnTab(bool );
+// _ZN10QQuickItem19setActiveFocusOnTabEb setActiveFocusOnTab(_Bool)
 extern "C"
-void C_ZN10QQuickItem19setActiveFocusOnTabEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem19setActiveFocusOnTabEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setActiveFocusOnTab(arg1);
 }
-// _ZN10QQuickItem19setActiveFocusOnTabEb setActiveFocusOnTab(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 245, column 11>
 //   // proto:  qreal QQuickItem::scale();
-extern "C"
-void C_ZNK10QQuickItem5scaleEv(void *qthis) {
-  ((QQuickItem*)qthis)->scale();
-}
 // _ZNK10QQuickItem5scaleEv scale()
+extern "C"
+double
+C_ZNK10QQuickItem5scaleEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->scale();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 255, column 10>
 //   // proto:  void QQuickItem::setEnabled(bool );
+// _ZN10QQuickItem10setEnabledEb setEnabled(_Bool)
 extern "C"
-void C_ZN10QQuickItem10setEnabledEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem10setEnabledEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setEnabled(arg1);
 }
-// _ZN10QQuickItem10setEnabledEb setEnabled(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 230, column 10>
 //   // proto:  void QQuickItem::setImplicitHeight(qreal );
+// _ZN10QQuickItem17setImplicitHeightEd setImplicitHeight(qreal)
 extern "C"
-void C_ZN10QQuickItem17setImplicitHeightEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem17setImplicitHeightEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setImplicitHeight(arg1);
 }
-// _ZN10QQuickItem17setImplicitHeightEd setImplicitHeight(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 219, column 10>
 //   // proto:  void QQuickItem::setPosition(const QPointF & );
-extern "C"
-void C_ZN10QQuickItem11setPositionERK7QPointF(void *qthis, const QPointF & arg1) {
-  ((QQuickItem*)qthis)->setPosition(arg1);
-}
 // _ZN10QQuickItem11setPositionERK7QPointF setPosition(const class QPointF &)
+extern "C"
+void
+C_ZN10QQuickItem11setPositionERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  ((QQuickItem*)qthis)->setPosition(*((const QPointF*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 258, column 10>
 //   // proto:  void QQuickItem::setSmooth(bool );
+// _ZN10QQuickItem9setSmoothEb setSmooth(_Bool)
 extern "C"
-void C_ZN10QQuickItem9setSmoothEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem9setSmoothEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setSmooth(arg1);
 }
-// _ZN10QQuickItem9setSmoothEb setSmooth(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 373, column 10>
 //   // proto:  void QQuickItem::heightChanged();
+// _ZN10QQuickItem13heightChangedEv heightChanged()
 extern "C"
-void C_ZN10QQuickItem13heightChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem13heightChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->heightChanged();
 }
-// _ZN10QQuickItem13heightChangedEv heightChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 371, column 10>
 //   // proto:  void QQuickItem::yChanged();
+// _ZN10QQuickItem8yChangedEv yChanged()
 extern "C"
-void C_ZN10QQuickItem8yChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem8yChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->yChanged();
 }
-// _ZN10QQuickItem8yChangedEv yChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 317, column 13>
 //   // proto:  QPointF QQuickItem::mapFromScene(const QPointF & point);
-extern "C"
-void C_ZNK10QQuickItem12mapFromSceneERK7QPointF(void *qthis, const QPointF & arg1) {
-  ((QQuickItem*)qthis)->mapFromScene(arg1);
-}
 // _ZNK10QQuickItem12mapFromSceneERK7QPointF mapFromScene(const class QPointF &)
+extern "C"
+QPointF*
+C_ZNK10QQuickItem12mapFromSceneERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapFromScene(*((const QPointF*)arg1));
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 357, column 10>
 //   // proto:  void QQuickItem::antialiasingChanged(bool );
+// _ZN10QQuickItem19antialiasingChangedEb antialiasingChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem19antialiasingChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem19antialiasingChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->antialiasingChanged(arg1);
 }
-// _ZN10QQuickItem19antialiasingChangedEb antialiasingChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 284, column 10>
 //   // proto:  void QQuickItem::setAcceptHoverEvents(bool enabled);
+// _ZN10QQuickItem20setAcceptHoverEventsEb setAcceptHoverEvents(_Bool)
 extern "C"
-void C_ZN10QQuickItem20setAcceptHoverEventsEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem20setAcceptHoverEventsEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setAcceptHoverEvents(arg1);
 }
-// _ZN10QQuickItem20setAcceptHoverEventsEb setAcceptHoverEvents(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 352, column 10>
 //   // proto:  void QQuickItem::activeFocusChanged(bool );
+// _ZN10QQuickItem18activeFocusChangedEb activeFocusChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem18activeFocusChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem18activeFocusChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->activeFocusChanged(arg1);
 }
-// _ZN10QQuickItem18activeFocusChangedEb activeFocusChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 372, column 10>
 //   // proto:  void QQuickItem::widthChanged();
+// _ZN10QQuickItem12widthChangedEv widthChanged()
 extern "C"
-void C_ZN10QQuickItem12widthChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem12widthChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->widthChanged();
 }
-// _ZN10QQuickItem12widthChangedEv widthChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 237, column 13>
 //   // proto:  QPointF QQuickItem::transformOriginPoint();
-extern "C"
-void C_ZNK10QQuickItem20transformOriginPointEv(void *qthis) {
-  ((QQuickItem*)qthis)->transformOriginPoint();
-}
 // _ZNK10QQuickItem20transformOriginPointEv transformOriginPoint()
+extern "C"
+QPointF*
+C_ZNK10QQuickItem20transformOriginPointEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->transformOriginPoint();
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 207, column 10>
 //   // proto:  void QQuickItem::setState(const QString & );
-extern "C"
-void C_ZN10QQuickItem8setStateERK7QString(void *qthis, const QString & arg1) {
-  ((QQuickItem*)qthis)->setState(arg1);
-}
 // _ZN10QQuickItem8setStateERK7QString setState(const class QString &)
+extern "C"
+void
+C_ZN10QQuickItem8setStateERK7QString(void *qthis,
+const QString* arg1) {
+  ((QQuickItem*)qthis)->setState(*((const QString*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 195, column 17>
 //   // proto:  QQuickItem * QQuickItem::parentItem();
-extern "C"
-void C_ZNK10QQuickItem10parentItemEv(void *qthis) {
-  ((QQuickItem*)qthis)->parentItem();
-}
 // _ZNK10QQuickItem10parentItemEv parentItem()
+extern "C"
+void*
+C_ZNK10QQuickItem10parentItemEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->parentItem();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 278, column 10>
 //   // proto:  bool QQuickItem::isFocusScope();
-extern "C"
-void C_ZNK10QQuickItem12isFocusScopeEv(void *qthis) {
-  ((QQuickItem*)qthis)->isFocusScope();
-}
 // _ZNK10QQuickItem12isFocusScopeEv isFocusScope()
+extern "C"
+bool
+C_ZNK10QQuickItem12isFocusScopeEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->isFocusScope();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 309, column 30>
 //   // proto:  bool QQuickItem::contains(const QPointF & point);
-extern "C"
-void C_ZNK10QQuickItem8containsERK7QPointF(void *qthis, const QPointF & arg1) {
-  ((QQuickItem*)qthis)->contains(arg1);
-}
 // _ZNK10QQuickItem8containsERK7QPointF contains(const class QPointF &)
+extern "C"
+bool
+C_ZNK10QQuickItem8containsERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->contains(*((const QPointF*)arg1));
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 271, column 20>
 //   // proto:  QRectF QQuickItem::boundingRect();
-extern "C"
-void C_ZNK10QQuickItem12boundingRectEv(void *qthis) {
-  ((QQuickItem*)qthis)->boundingRect();
-}
 // _ZNK10QQuickItem12boundingRectEv boundingRect()
+extern "C"
+QRectF*
+C_ZNK10QQuickItem12boundingRectEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->boundingRect();
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 265, column 10>
 //   // proto:  void QQuickItem::resetAntialiasing();
+// _ZN10QQuickItem17resetAntialiasingEv resetAntialiasing()
 extern "C"
-void C_ZN10QQuickItem17resetAntialiasingEv(void *qthis) {
+void
+C_ZN10QQuickItem17resetAntialiasingEv(void *qthis) {
   ((QQuickItem*)qthis)->resetAntialiasing();
 }
-// _ZN10QQuickItem17resetAntialiasingEv resetAntialiasing()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 314, column 12>
 //   // proto:  QRectF QQuickItem::mapRectToItem(const QQuickItem * item, const QRectF & rect);
-extern "C"
-void C_ZNK10QQuickItem13mapRectToItemEPKS_RK6QRectF(void *qthis, const QQuickItem * arg1, const QRectF & arg2) {
-  ((QQuickItem*)qthis)->mapRectToItem(arg1, arg2);
-}
 // _ZNK10QQuickItem13mapRectToItemEPKS_RK6QRectF mapRectToItem(const class QQuickItem *, const class QRectF &)
+extern "C"
+QRectF*
+C_ZNK10QQuickItem13mapRectToItemEPKS_RK6QRectF(void *qthis,
+const QQuickItem * arg1,
+const QRectF* arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapRectToItem(arg1,
+*((const QRectF*)arg2));
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 214, column 11>
 //   // proto:  qreal QQuickItem::x();
-extern "C"
-void C_ZNK10QQuickItem1xEv(void *qthis) {
-  ((QQuickItem*)qthis)->x();
-}
 // _ZNK10QQuickItem1xEv x()
+extern "C"
+double
+C_ZNK10QQuickItem1xEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->x();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 316, column 13>
 //   // proto:  QPointF QQuickItem::mapFromItem(const QQuickItem * item, const QPointF & point);
-extern "C"
-void C_ZNK10QQuickItem11mapFromItemEPKS_RK7QPointF(void *qthis, const QQuickItem * arg1, const QPointF & arg2) {
-  ((QQuickItem*)qthis)->mapFromItem(arg1, arg2);
-}
 // _ZNK10QQuickItem11mapFromItemEPKS_RK7QPointF mapFromItem(const class QQuickItem *, const class QPointF &)
+extern "C"
+QPointF*
+C_ZNK10QQuickItem11mapFromItemEPKS_RK7QPointF(void *qthis,
+const QQuickItem * arg1,
+const QPointF* arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapFromItem(arg1,
+*((const QPointF*)arg2));
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 251, column 10>
 //   // proto:  bool QQuickItem::isVisible();
-extern "C"
-void C_ZNK10QQuickItem9isVisibleEv(void *qthis) {
-  ((QQuickItem*)qthis)->isVisible();
-}
 // _ZNK10QQuickItem9isVisibleEv isVisible()
+extern "C"
+bool
+C_ZNK10QQuickItem9isVisibleEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->isVisible();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 359, column 24>
 //   // proto:  void QQuickItem::windowChanged(QQuickWindow * window);
+// _ZN10QQuickItem13windowChangedEP12QQuickWindow windowChanged(class QQuickWindow *)
 extern "C"
-void C_ZN10QQuickItem13windowChangedEP12QQuickWindow(void *qthis, QQuickWindow * arg1) {
+void
+C_ZN10QQuickItem13windowChangedEP12QQuickWindow(void *qthis,
+QQuickWindow * arg1) {
   ((QQuickItem*)qthis)->windowChanged(arg1);
 }
-// _ZN10QQuickItem13windowChangedEP12QQuickWindow windowChanged(class QQuickWindow *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 342, column 33>
 //   // proto:  QSGTextureProvider * QQuickItem::textureProvider();
-extern "C"
-void C_ZNK10QQuickItem15textureProviderEv(void *qthis) {
-  ((QQuickItem*)qthis)->textureProvider();
-}
 // _ZNK10QQuickItem15textureProviderEv textureProvider()
+extern "C"
+void*
+C_ZNK10QQuickItem15textureProviderEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->textureProvider();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 241, column 10>
 //   // proto:  void QQuickItem::setZ(qreal );
+// _ZN10QQuickItem4setZEd setZ(qreal)
 extern "C"
-void C_ZN10QQuickItem4setZEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem4setZEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setZ(arg1);
 }
-// _ZN10QQuickItem4setZEd setZ(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 289, column 10>
 //   // proto:  void QQuickItem::unsetCursor();
+// _ZN10QQuickItem11unsetCursorEv unsetCursor()
 extern "C"
-void C_ZN10QQuickItem11unsetCursorEv(void *qthis) {
+void
+C_ZN10QQuickItem11unsetCursorEv(void *qthis) {
   ((QQuickItem*)qthis)->unsetCursor();
 }
-// _ZN10QQuickItem11unsetCursorEv unsetCursor()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 283, column 10>
 //   // proto:  bool QQuickItem::acceptHoverEvents();
-extern "C"
-void C_ZNK10QQuickItem17acceptHoverEventsEv(void *qthis) {
-  ((QQuickItem*)qthis)->acceptHoverEvents();
-}
 // _ZNK10QQuickItem17acceptHoverEventsEv acceptHoverEvents()
+extern "C"
+bool
+C_ZNK10QQuickItem17acceptHoverEventsEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->acceptHoverEvents();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 298, column 10>
 //   // proto:  void QQuickItem::setFiltersChildMouseEvents(bool filter);
+// _ZN10QQuickItem26setFiltersChildMouseEventsEb setFiltersChildMouseEvents(_Bool)
 extern "C"
-void C_ZN10QQuickItem26setFiltersChildMouseEventsEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem26setFiltersChildMouseEventsEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setFiltersChildMouseEvents(arg1);
 }
-// _ZN10QQuickItem26setFiltersChildMouseEventsEb setFiltersChildMouseEvents(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 254, column 10>
 //   // proto:  bool QQuickItem::isEnabled();
-extern "C"
-void C_ZNK10QQuickItem9isEnabledEv(void *qthis) {
-  ((QQuickItem*)qthis)->isEnabled();
-}
 // _ZNK10QQuickItem9isEnabledEv isEnabled()
+extern "C"
+bool
+C_ZNK10QQuickItem9isEnabledEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->isEnabled();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 312, column 13>
 //   // proto:  QPointF QQuickItem::mapToItem(const QQuickItem * item, const QPointF & point);
-extern "C"
-void C_ZNK10QQuickItem9mapToItemEPKS_RK7QPointF(void *qthis, const QQuickItem * arg1, const QPointF & arg2) {
-  ((QQuickItem*)qthis)->mapToItem(arg1, arg2);
-}
 // _ZNK10QQuickItem9mapToItemEPKS_RK7QPointF mapToItem(const class QQuickItem *, const class QPointF &)
+extern "C"
+QPointF*
+C_ZNK10QQuickItem9mapToItemEPKS_RK7QPointF(void *qthis,
+const QQuickItem * arg1,
+const QPointF* arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapToItem(arg1,
+*((const QPointF*)arg2));
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 221, column 11>
 //   // proto:  qreal QQuickItem::width();
-extern "C"
-void C_ZNK10QQuickItem5widthEv(void *qthis) {
-  ((QQuickItem*)qthis)->width();
-}
 // _ZNK10QQuickItem5widthEv width()
+extern "C"
+double
+C_ZNK10QQuickItem5widthEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->width();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 313, column 13>
 //   // proto:  QPointF QQuickItem::mapToScene(const QPointF & point);
-extern "C"
-void C_ZNK10QQuickItem10mapToSceneERK7QPointF(void *qthis, const QPointF & arg1) {
-  ((QQuickItem*)qthis)->mapToScene(arg1);
-}
 // _ZNK10QQuickItem10mapToSceneERK7QPointF mapToScene(const class QPointF &)
+extern "C"
+QPointF*
+C_ZNK10QQuickItem10mapToSceneERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapToScene(*((const QPointF*)arg1));
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 302, column 10>
 //   // proto:  bool QQuickItem::keepTouchGrab();
-extern "C"
-void C_ZNK10QQuickItem13keepTouchGrabEv(void *qthis) {
-  ((QQuickItem*)qthis)->keepTouchGrab();
-}
 // _ZNK10QQuickItem13keepTouchGrabEv keepTouchGrab()
+extern "C"
+bool
+C_ZNK10QQuickItem13keepTouchGrabEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->keepTouchGrab();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 200, column 12>
 //   // proto:  QRectF QQuickItem::childrenRect();
-extern "C"
-void C_ZN10QQuickItem12childrenRectEv(void *qthis) {
-  ((QQuickItem*)qthis)->childrenRect();
-}
 // _ZN10QQuickItem12childrenRectEv childrenRect()
+extern "C"
+QRectF*
+C_ZN10QQuickItem12childrenRectEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->childrenRect();
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 92, column 5>
 //   // proto:  const QMetaObject * QQuickItem::metaObject();
-extern "C"
-void C_ZNK10QQuickItem10metaObjectEv(void *qthis) {
-  ((QQuickItem*)qthis)->metaObject();
-}
 // _ZNK10QQuickItem10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK10QQuickItem10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->metaObject();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 296, column 10>
 //   // proto:  void QQuickItem::setKeepMouseGrab(bool );
+// _ZN10QQuickItem16setKeepMouseGrabEb setKeepMouseGrab(_Bool)
 extern "C"
-void C_ZN10QQuickItem16setKeepMouseGrabEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem16setKeepMouseGrabEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setKeepMouseGrab(arg1);
 }
-// _ZN10QQuickItem16setKeepMouseGrabEb setKeepMouseGrab(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 297, column 10>
 //   // proto:  bool QQuickItem::filtersChildMouseEvents();
-extern "C"
-void C_ZNK10QQuickItem23filtersChildMouseEventsEv(void *qthis) {
-  ((QQuickItem*)qthis)->filtersChildMouseEvents();
-}
 // _ZNK10QQuickItem23filtersChildMouseEventsEv filtersChildMouseEvents()
+extern "C"
+bool
+C_ZNK10QQuickItem23filtersChildMouseEventsEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->filtersChildMouseEvents();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 274, column 10>
 //   // proto:  bool QQuickItem::hasActiveFocus();
-extern "C"
-void C_ZNK10QQuickItem14hasActiveFocusEv(void *qthis) {
-  ((QQuickItem*)qthis)->hasActiveFocus();
-}
 // _ZNK10QQuickItem14hasActiveFocusEv hasActiveFocus()
+extern "C"
+bool
+C_ZNK10QQuickItem14hasActiveFocusEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->hasActiveFocus();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 236, column 10>
 //   // proto:  void QQuickItem::setTransformOrigin(QQuickItem::TransformOrigin );
+// _ZN10QQuickItem18setTransformOriginENS_15TransformOriginE setTransformOrigin(enum QQuickItem::TransformOrigin)
 extern "C"
-void C_ZN10QQuickItem18setTransformOriginENS_15TransformOriginE(void *qthis, QQuickItem::TransformOrigin arg1) {
+void
+C_ZN10QQuickItem18setTransformOriginENS_15TransformOriginE(void *qthis,
+QQuickItem::TransformOrigin arg1) {
   ((QQuickItem*)qthis)->setTransformOrigin(arg1);
 }
-// _ZN10QQuickItem18setTransformOriginENS_15TransformOriginE setTransformOrigin(enum QQuickItem::TransformOrigin)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 292, column 10>
 //   // proto:  bool QQuickItem::isUnderMouse();
-extern "C"
-void C_ZNK10QQuickItem12isUnderMouseEv(void *qthis) {
-  ((QQuickItem*)qthis)->isUnderMouse();
-}
 // _ZNK10QQuickItem12isUnderMouseEv isUnderMouse()
+extern "C"
+bool
+C_ZNK10QQuickItem12isUnderMouseEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->isUnderMouse();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 367, column 10>
 //   // proto:  void QQuickItem::rotationChanged();
+// _ZN10QQuickItem15rotationChangedEv rotationChanged()
 extern "C"
-void C_ZN10QQuickItem15rotationChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem15rotationChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->rotationChanged();
 }
-// _ZN10QQuickItem15rotationChangedEv rotationChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 238, column 10>
 //   // proto:  void QQuickItem::setTransformOriginPoint(const QPointF & );
-extern "C"
-void C_ZN10QQuickItem23setTransformOriginPointERK7QPointF(void *qthis, const QPointF & arg1) {
-  ((QQuickItem*)qthis)->setTransformOriginPoint(arg1);
-}
 // _ZN10QQuickItem23setTransformOriginPointERK7QPointF setTransformOriginPoint(const class QPointF &)
+extern "C"
+void
+C_ZN10QQuickItem23setTransformOriginPointERK7QPointF(void *qthis,
+const QPointF* arg1) {
+  ((QQuickItem*)qthis)->setTransformOriginPoint(*((const QPointF*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 321, column 10>
 //   // proto:  void QQuickItem::polish();
+// _ZN10QQuickItem6polishEv polish()
 extern "C"
-void C_ZN10QQuickItem6polishEv(void *qthis) {
+void
+C_ZN10QQuickItem6polishEv(void *qthis) {
   ((QQuickItem*)qthis)->polish();
 }
-// _ZN10QQuickItem6polishEv polish()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 362, column 10>
 //   // proto:  void QQuickItem::childrenChanged();
+// _ZN10QQuickItem15childrenChangedEv childrenChanged()
 extern "C"
-void C_ZN10QQuickItem15childrenChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem15childrenChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->childrenChanged();
 }
-// _ZN10QQuickItem15childrenChangedEv childrenChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 364, column 10>
 //   // proto:  void QQuickItem::enabledChanged();
+// _ZN10QQuickItem14enabledChangedEv enabledChanged()
 extern "C"
-void C_ZN10QQuickItem14enabledChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem14enabledChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->enabledChanged();
 }
-// _ZN10QQuickItem14enabledChangedEv enabledChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 196, column 10>
 //   // proto:  void QQuickItem::setParentItem(QQuickItem * parent);
+// _ZN10QQuickItem13setParentItemEPS_ setParentItem(class QQuickItem *)
 extern "C"
-void C_ZN10QQuickItem13setParentItemEPS_(void *qthis, QQuickItem * arg1) {
+void
+C_ZN10QQuickItem13setParentItemEPS_(void *qthis,
+QQuickItem * arg1) {
   ((QQuickItem*)qthis)->setParentItem(arg1);
 }
-// _ZN10QQuickItem13setParentItemEPS_ setParentItem(class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 191, column 5>
 //   // proto:  void QQuickItem::QQuickItem(QQuickItem * parent);
 extern "C"
-void C_ZN10QQuickItemC2EPS_(QQuickItem * arg1) {
-  new QQuickItem(arg1);
+QQuickItem*
+C_ZN10QQuickItemC2EPS_(QQuickItem * arg1) {
+  auto ret = new QQuickItem(arg1);
+  return ret;
 }
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 222, column 10>
 //   // proto:  void QQuickItem::setWidth(qreal );
+// _ZN10QQuickItem8setWidthEd setWidth(qreal)
 extern "C"
-void C_ZN10QQuickItem8setWidthEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem8setWidthEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setWidth(arg1);
 }
-// _ZN10QQuickItem8setWidthEd setWidth(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 354, column 10>
 //   // proto:  void QQuickItem::parentChanged(QQuickItem * );
+// _ZN10QQuickItem13parentChangedEPS_ parentChanged(class QQuickItem *)
 extern "C"
-void C_ZN10QQuickItem13parentChangedEPS_(void *qthis, QQuickItem * arg1) {
+void
+C_ZN10QQuickItem13parentChangedEPS_(void *qthis,
+QQuickItem * arg1) {
   ((QQuickItem*)qthis)->parentChanged(arg1);
 }
-// _ZN10QQuickItem13parentChangedEPS_ parentChanged(class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 353, column 24>
 //   // proto:  void QQuickItem::activeFocusOnTabChanged(bool );
+// _ZN10QQuickItem23activeFocusOnTabChangedEb activeFocusOnTabChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem23activeFocusOnTabChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem23activeFocusOnTabChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->activeFocusOnTabChanged(arg1);
 }
-// _ZN10QQuickItem23activeFocusOnTabChangedEb activeFocusOnTabChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 326, column 22>
 //   // proto:  void QQuickItem::forceActiveFocus(Qt::FocusReason reason);
-extern "C"
-void C_ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE(void *qthis, Qt::FocusReason arg1) {
-  ((QQuickItem*)qthis)->forceActiveFocus(arg1);
-}
 // _ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE forceActiveFocus(Qt::FocusReason)
+extern "C"
+void
+C_ZN10QQuickItem16forceActiveFocusEN2Qt11FocusReasonE(void *qthis,
+Qt::FocusReason* arg1) {
+  ((QQuickItem*)qthis)->forceActiveFocus(*((Qt::FocusReason*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 327, column 43>
 //   // proto:  QQuickItem * QQuickItem::nextItemInFocusChain(bool forward);
-extern "C"
-void C_ZN10QQuickItem20nextItemInFocusChainEb(void *qthis, bool arg1) {
-  ((QQuickItem*)qthis)->nextItemInFocusChain(arg1);
-}
 // _ZN10QQuickItem20nextItemInFocusChainEb nextItemInFocusChain(_Bool)
+extern "C"
+void*
+C_ZN10QQuickItem20nextItemInFocusChainEb(void *qthis,
+bool arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->nextItemInFocusChain(arg1);
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 301, column 10>
 //   // proto:  void QQuickItem::ungrabTouchPoints();
+// _ZN10QQuickItem17ungrabTouchPointsEv ungrabTouchPoints()
 extern "C"
-void C_ZN10QQuickItem17ungrabTouchPointsEv(void *qthis) {
+void
+C_ZN10QQuickItem17ungrabTouchPointsEv(void *qthis) {
   ((QQuickItem*)qthis)->ungrabTouchPoints();
 }
-// _ZN10QQuickItem17ungrabTouchPointsEv ungrabTouchPoints()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 295, column 10>
 //   // proto:  bool QQuickItem::keepMouseGrab();
-extern "C"
-void C_ZNK10QQuickItem13keepMouseGrabEv(void *qthis) {
-  ((QQuickItem*)qthis)->keepMouseGrab();
-}
 // _ZNK10QQuickItem13keepMouseGrabEv keepMouseGrab()
+extern "C"
+bool
+C_ZNK10QQuickItem13keepMouseGrabEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->keepMouseGrab();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 319, column 12>
 //   // proto:  QRectF QQuickItem::mapRectFromScene(const QRectF & rect);
-extern "C"
-void C_ZNK10QQuickItem16mapRectFromSceneERK6QRectF(void *qthis, const QRectF & arg1) {
-  ((QQuickItem*)qthis)->mapRectFromScene(arg1);
-}
 // _ZNK10QQuickItem16mapRectFromSceneERK6QRectF mapRectFromScene(const class QRectF &)
+extern "C"
+QRectF*
+C_ZNK10QQuickItem16mapRectFromSceneERK6QRectF(void *qthis,
+const QRectF* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapRectFromScene(*((const QRectF*)arg1));
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 350, column 10>
 //   // proto:  void QQuickItem::stateChanged(const QString & );
-extern "C"
-void C_ZN10QQuickItem12stateChangedERK7QString(void *qthis, const QString & arg1) {
-  ((QQuickItem*)qthis)->stateChanged(arg1);
-}
 // _ZN10QQuickItem12stateChangedERK7QString stateChanged(const class QString &)
+extern "C"
+void
+C_ZN10QQuickItem12stateChangedERK7QString(void *qthis,
+const QString* arg1) {
+  ((QQuickItem*)qthis)->stateChanged(*((const QString*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 351, column 10>
 //   // proto:  void QQuickItem::focusChanged(bool );
+// _ZN10QQuickItem12focusChangedEb focusChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem12focusChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem12focusChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->focusChanged(arg1);
 }
-// _ZN10QQuickItem12focusChangedEb focusChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 216, column 13>
 //   // proto:  QPointF QQuickItem::position();
-extern "C"
-void C_ZNK10QQuickItem8positionEv(void *qthis) {
-  ((QQuickItem*)qthis)->position();
-}
 // _ZNK10QQuickItem8positionEv position()
+extern "C"
+QPointF*
+C_ZNK10QQuickItem8positionEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->position();
+  return new QPointF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 227, column 11>
 //   // proto:  qreal QQuickItem::height();
-extern "C"
-void C_ZNK10QQuickItem6heightEv(void *qthis) {
-  ((QQuickItem*)qthis)->height();
-}
 // _ZNK10QQuickItem6heightEv height()
+extern "C"
+double
+C_ZNK10QQuickItem6heightEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->height();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 328, column 29>
 //   // proto:  QQuickItem * QQuickItem::childAt(qreal x, qreal y);
-extern "C"
-void C_ZNK10QQuickItem7childAtEdd(void *qthis, qreal arg1, qreal arg2) {
-  ((QQuickItem*)qthis)->childAt(arg1, arg2);
-}
 // _ZNK10QQuickItem7childAtEdd childAt(qreal, qreal)
+extern "C"
+void*
+C_ZNK10QQuickItem7childAtEdd(void *qthis,
+qreal arg1,
+qreal arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->childAt(arg1,
+arg2);
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 287, column 13>
 //   // proto:  QCursor QQuickItem::cursor();
-extern "C"
-void C_ZNK10QQuickItem6cursorEv(void *qthis) {
-  ((QQuickItem*)qthis)->cursor();
-}
 // _ZNK10QQuickItem6cursorEv cursor()
+extern "C"
+QCursor*
+C_ZNK10QQuickItem6cursorEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->cursor();
+  return new QCursor(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 203, column 10>
 //   // proto:  bool QQuickItem::clip();
-extern "C"
-void C_ZNK10QQuickItem4clipEv(void *qthis) {
-  ((QQuickItem*)qthis)->clip();
-}
 // _ZNK10QQuickItem4clipEv clip()
+extern "C"
+bool
+C_ZNK10QQuickItem4clipEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->clip();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 263, column 10>
 //   // proto:  bool QQuickItem::antialiasing();
-extern "C"
-void C_ZNK10QQuickItem12antialiasingEv(void *qthis) {
-  ((QQuickItem*)qthis)->antialiasing();
-}
 // _ZNK10QQuickItem12antialiasingEv antialiasing()
+extern "C"
+bool
+C_ZNK10QQuickItem12antialiasingEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->antialiasing();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 194, column 19>
 //   // proto:  QQuickWindow * QQuickItem::window();
-extern "C"
-void C_ZNK10QQuickItem6windowEv(void *qthis) {
-  ((QQuickItem*)qthis)->window();
-}
 // _ZNK10QQuickItem6windowEv window()
+extern "C"
+void*
+C_ZNK10QQuickItem6windowEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->window();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 318, column 12>
 //   // proto:  QRectF QQuickItem::mapRectFromItem(const QQuickItem * item, const QRectF & rect);
-extern "C"
-void C_ZNK10QQuickItem15mapRectFromItemEPKS_RK6QRectF(void *qthis, const QQuickItem * arg1, const QRectF & arg2) {
-  ((QQuickItem*)qthis)->mapRectFromItem(arg1, arg2);
-}
 // _ZNK10QQuickItem15mapRectFromItemEPKS_RK6QRectF mapRectFromItem(const class QQuickItem *, const class QRectF &)
+extern "C"
+QRectF*
+C_ZNK10QQuickItem15mapRectFromItemEPKS_RK6QRectF(void *qthis,
+const QQuickItem * arg1,
+const QRectF* arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapRectFromItem(arg1,
+*((const QRectF*)arg2));
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 252, column 10>
 //   // proto:  void QQuickItem::setVisible(bool );
+// _ZN10QQuickItem10setVisibleEb setVisible(_Bool)
 extern "C"
-void C_ZN10QQuickItem10setVisibleEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem10setVisibleEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setVisible(arg1);
 }
-// _ZN10QQuickItem10setVisibleEb setVisible(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 268, column 10>
 //   // proto:  void QQuickItem::setFlag(QQuickItem::Flag flag, bool enabled);
-extern "C"
-void C_ZN10QQuickItem7setFlagENS_4FlagEb(void *qthis, QQuickItem::Flag arg1, bool arg2) {
-  ((QQuickItem*)qthis)->setFlag(arg1, arg2);
-}
 // _ZN10QQuickItem7setFlagENS_4FlagEb setFlag(enum QQuickItem::Flag, _Bool)
+extern "C"
+void
+C_ZN10QQuickItem7setFlagENS_4FlagEb(void *qthis,
+QQuickItem::Flag arg1,
+bool arg2) {
+  ((QQuickItem*)qthis)->setFlag(arg1,
+arg2);
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 276, column 10>
 //   // proto:  void QQuickItem::setFocus(bool );
+// _ZN10QQuickItem8setFocusEb setFocus(_Bool)
 extern "C"
-void C_ZN10QQuickItem8setFocusEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem8setFocusEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setFocus(arg1);
 }
-// _ZN10QQuickItem8setFocusEb setFocus(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 260, column 10>
 //   // proto:  bool QQuickItem::activeFocusOnTab();
-extern "C"
-void C_ZNK10QQuickItem16activeFocusOnTabEv(void *qthis) {
-  ((QQuickItem*)qthis)->activeFocusOnTab();
-}
 // _ZNK10QQuickItem16activeFocusOnTabEv activeFocusOnTab()
+extern "C"
+bool
+C_ZNK10QQuickItem16activeFocusOnTabEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->activeFocusOnTab();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 363, column 10>
 //   // proto:  void QQuickItem::opacityChanged();
+// _ZN10QQuickItem14opacityChangedEv opacityChanged()
 extern "C"
-void C_ZN10QQuickItem14opacityChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem14opacityChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->opacityChanged();
 }
-// _ZN10QQuickItem14opacityChangedEv opacityChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 365, column 10>
 //   // proto:  void QQuickItem::visibleChanged();
+// _ZN10QQuickItem14visibleChangedEv visibleChanged()
 extern "C"
-void C_ZN10QQuickItem14visibleChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem14visibleChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->visibleChanged();
 }
-// _ZN10QQuickItem14visibleChangedEv visibleChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 240, column 11>
 //   // proto:  qreal QQuickItem::z();
-extern "C"
-void C_ZNK10QQuickItem1zEv(void *qthis) {
-  ((QQuickItem*)qthis)->z();
-}
 // _ZNK10QQuickItem1zEv z()
+extern "C"
+double
+C_ZNK10QQuickItem1zEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->z();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 249, column 10>
 //   // proto:  void QQuickItem::setOpacity(qreal );
+// _ZN10QQuickItem10setOpacityEd setOpacity(qreal)
 extern "C"
-void C_ZN10QQuickItem10setOpacityEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem10setOpacityEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setOpacity(arg1);
 }
-// _ZN10QQuickItem10setOpacityEd setOpacity(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 269, column 10>
 //   // proto:  void QQuickItem::setFlags(Flags flags);
+// _ZN10QQuickItem8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
 extern "C"
-void C_ZN10QQuickItem8setFlagsE6QFlagsINS_4FlagEE(void *qthis, QQuickItem::Flags arg1) {
+void
+C_ZN10QQuickItem8setFlagsE6QFlagsINS_4FlagEE(void *qthis,
+QQuickItem::Flags arg1) {
   ((QQuickItem*)qthis)->setFlags(arg1);
 }
-// _ZN10QQuickItem8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 264, column 10>
 //   // proto:  void QQuickItem::setAntialiasing(bool );
+// _ZN10QQuickItem15setAntialiasingEb setAntialiasing(_Bool)
 extern "C"
-void C_ZN10QQuickItem15setAntialiasingEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem15setAntialiasingEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setAntialiasing(arg1);
 }
-// _ZN10QQuickItem15setAntialiasingEb setAntialiasing(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 366, column 10>
 //   // proto:  void QQuickItem::visibleChildrenChanged();
+// _ZN10QQuickItem22visibleChildrenChangedEv visibleChildrenChanged()
 extern "C"
-void C_ZN10QQuickItem22visibleChildrenChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem22visibleChildrenChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->visibleChildrenChanged();
 }
-// _ZN10QQuickItem22visibleChildrenChangedEv visibleChildrenChanged()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 201, column 25>
 //   // proto:  QList<QQuickItem *> QQuickItem::childItems();
-extern "C"
-void C_ZNK10QQuickItem10childItemsEv(void *qthis) {
-  ((QQuickItem*)qthis)->childItems();
-}
 // _ZNK10QQuickItem10childItemsEv childItems()
+extern "C"
+QList<QQuickItem *>*
+C_ZNK10QQuickItem10childItemsEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->childItems();
+  return new QList<QQuickItem *>(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 233, column 10>
 //   // proto:  void QQuickItem::setSize(const QSizeF & size);
-extern "C"
-void C_ZN10QQuickItem7setSizeERK6QSizeF(void *qthis, const QSizeF & arg1) {
-  ((QQuickItem*)qthis)->setSize(arg1);
-}
 // _ZN10QQuickItem7setSizeERK6QSizeF setSize(const class QSizeF &)
+extern "C"
+void
+C_ZN10QQuickItem7setSizeERK6QSizeF(void *qthis,
+const QSizeF* arg1) {
+  ((QQuickItem*)qthis)->setSize(*((const QSizeF*)arg1));
+}
 //   // proto:  void QQuickItem::~QQuickItem();
 extern "C"
 void C_ZN10QQuickItemD2Ev(void *qthis) {
@@ -2233,193 +1124,260 @@ void C_ZN10QQuickItemD2Ev(void *qthis) {
 }
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 279, column 17>
 //   // proto:  QQuickItem * QQuickItem::scopedFocusItem();
-extern "C"
-void C_ZNK10QQuickItem15scopedFocusItemEv(void *qthis) {
-  ((QQuickItem*)qthis)->scopedFocusItem();
-}
 // _ZNK10QQuickItem15scopedFocusItemEv scopedFocusItem()
+extern "C"
+void*
+C_ZNK10QQuickItem15scopedFocusItemEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->scopedFocusItem();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 306, column 36>
 //   // proto:  bool QQuickItem::grabToImage(const QJSValue & callback, const QSize & targetSize);
-extern "C"
-void C_ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize(void *qthis, const QJSValue & arg1, const QSize & arg2) {
-  ((QQuickItem*)qthis)->grabToImage(arg1, arg2);
-}
 // _ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize grabToImage(const class QJSValue &, const class QSize &)
+extern "C"
+bool
+C_ZN10QQuickItem11grabToImageERK8QJSValueRK5QSize(void *qthis,
+const QJSValue* arg1,
+const QSize* arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->grabToImage(*((const QJSValue*)arg1),
+*((const QSize*)arg2));
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 355, column 10>
 //   // proto:  void QQuickItem::transformOriginChanged(QQuickItem::TransformOrigin );
+// _ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE transformOriginChanged(enum QQuickItem::TransformOrigin)
 extern "C"
-void C_ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE(void *qthis, QQuickItem::TransformOrigin arg1) {
+void
+C_ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE(void *qthis,
+QQuickItem::TransformOrigin arg1) {
   ((QQuickItem*)qthis)->transformOriginChanged(arg1);
 }
-// _ZN10QQuickItem22transformOriginChangedENS_15TransformOriginE transformOriginChanged(enum QQuickItem::TransformOrigin)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 311, column 16>
 //   // proto:  QTransform QQuickItem::itemTransform(QQuickItem * , bool * );
-extern "C"
-void C_ZNK10QQuickItem13itemTransformEPS_Pb(void *qthis, QQuickItem * arg1, bool * arg2) {
-  ((QQuickItem*)qthis)->itemTransform(arg1, arg2);
-}
 // _ZNK10QQuickItem13itemTransformEPS_Pb itemTransform(class QQuickItem *, _Bool *)
+extern "C"
+QTransform*
+C_ZNK10QQuickItem13itemTransformEPS_Pb(void *qthis,
+QQuickItem * arg1,
+bool * arg2) {
+  auto ret =
+  ((QQuickItem*)qthis)->itemTransform(arg1,
+arg2);
+  return new QTransform(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 345, column 10>
 //   // proto:  void QQuickItem::update();
+// _ZN10QQuickItem6updateEv update()
 extern "C"
-void C_ZN10QQuickItem6updateEv(void *qthis) {
+void
+C_ZN10QQuickItem6updateEv(void *qthis) {
   ((QQuickItem*)qthis)->update();
 }
-// _ZN10QQuickItem6updateEv update()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 288, column 10>
 //   // proto:  void QQuickItem::setCursor(const QCursor & cursor);
-extern "C"
-void C_ZN10QQuickItem9setCursorERK7QCursor(void *qthis, const QCursor & arg1) {
-  ((QQuickItem*)qthis)->setCursor(arg1);
-}
 // _ZN10QQuickItem9setCursorERK7QCursor setCursor(const class QCursor &)
+extern "C"
+void
+C_ZN10QQuickItem9setCursorERK7QCursor(void *qthis,
+const QCursor* arg1) {
+  ((QQuickItem*)qthis)->setCursor(*((const QCursor*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 300, column 10>
 //   // proto:  void QQuickItem::grabTouchPoints(const QVector<int> & ids);
-extern "C"
-void C_ZN10QQuickItem15grabTouchPointsERK7QVectorIiE(void *qthis, const QVector<int> & arg1) {
-  ((QQuickItem*)qthis)->grabTouchPoints(arg1);
-}
 // _ZN10QQuickItem15grabTouchPointsERK7QVectorIiE grabTouchPoints(const QVector<int> &)
+extern "C"
+void
+C_ZN10QQuickItem15grabTouchPointsERK7QVectorIiE(void *qthis,
+const QVector<int>* arg1) {
+  ((QQuickItem*)qthis)->grabTouchPoints(*((const QVector<int>*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 307, column 42>
 //   // proto:  QSharedPointer<QQuickItemGrabResult> QQuickItem::grabToImage(const QSize & targetSize);
-extern "C"
-void C_ZN10QQuickItem11grabToImageERK5QSize(void *qthis, const QSize & arg1) {
-  ((QQuickItem*)qthis)->grabToImage(arg1);
-}
 // _ZN10QQuickItem11grabToImageERK5QSize grabToImage(const class QSize &)
+extern "C"
+QSharedPointer<QQuickItemGrabResult>*
+C_ZN10QQuickItem11grabToImageERK5QSize(void *qthis,
+const QSize* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->grabToImage(*((const QSize*)arg1));
+  return new QSharedPointer<QQuickItemGrabResult>(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 324, column 22>
 //   // proto:  void QQuickItem::mapToItem(QQmlV4Function * );
+// _ZNK10QQuickItem9mapToItemEP14QQmlV4Function mapToItem(class QQmlV4Function *)
 extern "C"
-void C_ZNK10QQuickItem9mapToItemEP14QQmlV4Function(void *qthis, QQmlV4Function * arg1) {
+void
+C_ZNK10QQuickItem9mapToItemEP14QQmlV4Function(void *qthis,
+QQmlV4Function * arg1) {
   ((QQuickItem*)qthis)->mapToItem(arg1);
 }
-// _ZNK10QQuickItem9mapToItemEP14QQmlV4Function mapToItem(class QQmlV4Function *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 272, column 20>
 //   // proto:  QRectF QQuickItem::clipRect();
-extern "C"
-void C_ZNK10QQuickItem8clipRectEv(void *qthis) {
-  ((QQuickItem*)qthis)->clipRect();
-}
 // _ZNK10QQuickItem8clipRectEv clipRect()
+extern "C"
+QRectF*
+C_ZNK10QQuickItem8clipRectEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->clipRect();
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 281, column 22>
 //   // proto:  Qt::MouseButtons QQuickItem::acceptedMouseButtons();
-extern "C"
-void C_ZNK10QQuickItem20acceptedMouseButtonsEv(void *qthis) {
-  ((QQuickItem*)qthis)->acceptedMouseButtons();
-}
 // _ZNK10QQuickItem20acceptedMouseButtonsEv acceptedMouseButtons()
+extern "C"
+QFlags<Qt::MouseButton>*
+C_ZNK10QQuickItem20acceptedMouseButtonsEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->acceptedMouseButtons();
+  return new QFlags<Qt::MouseButton>(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 294, column 10>
 //   // proto:  void QQuickItem::ungrabMouse();
+// _ZN10QQuickItem11ungrabMouseEv ungrabMouse()
 extern "C"
-void C_ZN10QQuickItem11ungrabMouseEv(void *qthis) {
+void
+C_ZN10QQuickItem11ungrabMouseEv(void *qthis) {
   ((QQuickItem*)qthis)->ungrabMouse();
 }
-// _ZN10QQuickItem11ungrabMouseEv ungrabMouse()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 315, column 12>
 //   // proto:  QRectF QQuickItem::mapRectToScene(const QRectF & rect);
-extern "C"
-void C_ZNK10QQuickItem14mapRectToSceneERK6QRectF(void *qthis, const QRectF & arg1) {
-  ((QQuickItem*)qthis)->mapRectToScene(arg1);
-}
 // _ZNK10QQuickItem14mapRectToSceneERK6QRectF mapRectToScene(const class QRectF &)
+extern "C"
+QRectF*
+C_ZNK10QQuickItem14mapRectToSceneERK6QRectF(void *qthis,
+const QRectF* arg1) {
+  auto ret =
+  ((QQuickItem*)qthis)->mapRectToScene(*((const QRectF*)arg1));
+  return new QRectF(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 244, column 10>
 //   // proto:  void QQuickItem::setRotation(qreal );
+// _ZN10QQuickItem11setRotationEd setRotation(qreal)
 extern "C"
-void C_ZN10QQuickItem11setRotationEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem11setRotationEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setRotation(arg1);
 }
-// _ZN10QQuickItem11setRotationEd setRotation(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 356, column 10>
 //   // proto:  void QQuickItem::smoothChanged(bool );
+// _ZN10QQuickItem13smoothChangedEb smoothChanged(_Bool)
 extern "C"
-void C_ZN10QQuickItem13smoothChangedEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem13smoothChangedEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->smoothChanged(arg1);
 }
-// _ZN10QQuickItem13smoothChangedEb smoothChanged(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 323, column 22>
 //   // proto:  void QQuickItem::mapFromItem(QQmlV4Function * );
+// _ZNK10QQuickItem11mapFromItemEP14QQmlV4Function mapFromItem(class QQmlV4Function *)
 extern "C"
-void C_ZNK10QQuickItem11mapFromItemEP14QQmlV4Function(void *qthis, QQmlV4Function * arg1) {
+void
+C_ZNK10QQuickItem11mapFromItemEP14QQmlV4Function(void *qthis,
+QQmlV4Function * arg1) {
   ((QQuickItem*)qthis)->mapFromItem(arg1);
 }
-// _ZNK10QQuickItem11mapFromItemEP14QQmlV4Function mapFromItem(class QQmlV4Function *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 275, column 10>
 //   // proto:  bool QQuickItem::hasFocus();
-extern "C"
-void C_ZNK10QQuickItem8hasFocusEv(void *qthis) {
-  ((QQuickItem*)qthis)->hasFocus();
-}
 // _ZNK10QQuickItem8hasFocusEv hasFocus()
+extern "C"
+bool
+C_ZNK10QQuickItem8hasFocusEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->hasFocus();
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 217, column 10>
 //   // proto:  void QQuickItem::setX(qreal );
+// _ZN10QQuickItem4setXEd setX(qreal)
 extern "C"
-void C_ZN10QQuickItem4setXEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem4setXEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setX(arg1);
 }
-// _ZN10QQuickItem4setXEd setX(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 206, column 13>
 //   // proto:  QString QQuickItem::state();
-extern "C"
-void C_ZNK10QQuickItem5stateEv(void *qthis) {
-  ((QQuickItem*)qthis)->state();
-}
 // _ZNK10QQuickItem5stateEv state()
+extern "C"
+QString*
+C_ZNK10QQuickItem5stateEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->state();
+  return new QString(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 246, column 10>
 //   // proto:  void QQuickItem::setScale(qreal );
+// _ZN10QQuickItem8setScaleEd setScale(qreal)
 extern "C"
-void C_ZN10QQuickItem8setScaleEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem8setScaleEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->setScale(arg1);
 }
-// _ZN10QQuickItem8setScaleEd setScale(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 229, column 10>
 //   // proto:  void QQuickItem::resetHeight();
+// _ZN10QQuickItem11resetHeightEv resetHeight()
 extern "C"
-void C_ZN10QQuickItem11resetHeightEv(void *qthis) {
+void
+C_ZN10QQuickItem11resetHeightEv(void *qthis) {
   ((QQuickItem*)qthis)->resetHeight();
 }
-// _ZN10QQuickItem11resetHeightEv resetHeight()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 293, column 10>
 //   // proto:  void QQuickItem::grabMouse();
+// _ZN10QQuickItem9grabMouseEv grabMouse()
 extern "C"
-void C_ZN10QQuickItem9grabMouseEv(void *qthis) {
+void
+C_ZN10QQuickItem9grabMouseEv(void *qthis) {
   ((QQuickItem*)qthis)->grabMouse();
 }
-// _ZN10QQuickItem9grabMouseEv grabMouse()
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 303, column 10>
 //   // proto:  void QQuickItem::setKeepTouchGrab(bool );
+// _ZN10QQuickItem16setKeepTouchGrabEb setKeepTouchGrab(_Bool)
 extern "C"
-void C_ZN10QQuickItem16setKeepTouchGrabEb(void *qthis, bool arg1) {
+void
+C_ZN10QQuickItem16setKeepTouchGrabEb(void *qthis,
+bool arg1) {
   ((QQuickItem*)qthis)->setKeepTouchGrab(arg1);
 }
-// _ZN10QQuickItem16setKeepTouchGrabEb setKeepTouchGrab(_Bool)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 349, column 10>
 //   // proto:  void QQuickItem::baselineOffsetChanged(qreal );
+// _ZN10QQuickItem21baselineOffsetChangedEd baselineOffsetChanged(qreal)
 extern "C"
-void C_ZN10QQuickItem21baselineOffsetChangedEd(void *qthis, qreal arg1) {
+void
+C_ZN10QQuickItem21baselineOffsetChangedEd(void *qthis,
+qreal arg1) {
   ((QQuickItem*)qthis)->baselineOffsetChanged(arg1);
 }
-// _ZN10QQuickItem21baselineOffsetChangedEd baselineOffsetChanged(qreal)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 198, column 10>
 //   // proto:  void QQuickItem::stackAfter(const QQuickItem * );
+// _ZN10QQuickItem10stackAfterEPKS_ stackAfter(const class QQuickItem *)
 extern "C"
-void C_ZN10QQuickItem10stackAfterEPKS_(void *qthis, const QQuickItem * arg1) {
+void
+C_ZN10QQuickItem10stackAfterEPKS_(void *qthis,
+const QQuickItem * arg1) {
   ((QQuickItem*)qthis)->stackAfter(arg1);
 }
-// _ZN10QQuickItem10stackAfterEPKS_ stackAfter(const class QQuickItem *)
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 209, column 11>
 //   // proto:  qreal QQuickItem::baselineOffset();
-extern "C"
-void C_ZNK10QQuickItem14baselineOffsetEv(void *qthis) {
-  ((QQuickItem*)qthis)->baselineOffset();
-}
 // _ZNK10QQuickItem14baselineOffsetEv baselineOffset()
+extern "C"
+double
+C_ZNK10QQuickItem14baselineOffsetEv(void *qthis) {
+  auto ret =
+  ((QQuickItem*)qthis)->baselineOffset();
+  return ret; // 0 TypeKind.DOUBLE
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitem.h', line 374, column 10>
 //   // proto:  void QQuickItem::zChanged();
+// _ZN10QQuickItem8zChangedEv zChanged()
 extern "C"
-void C_ZN10QQuickItem8zChangedEv(void *qthis) {
+void
+C_ZN10QQuickItem8zChangedEv(void *qthis) {
   ((QQuickItem*)qthis)->zChanged();
 }
-// _ZN10QQuickItem8zChangedEv zChanged()
 // <= ext block end
 
 // body block begin =>

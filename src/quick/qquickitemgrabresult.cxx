@@ -1,7 +1,5 @@
-#include <qimage.h>
-#include <qurl.h>
 // auto generated, do not modify.
-// created: Fri Jan 22 22:26:45 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtQuick/qquickitemgrabresult.h
 // dst-file: /src/quick/qquickitemgrabresult.cxx
 //
@@ -9,114 +7,82 @@
 // header block begin =>
 #include <qatomic.h>
 #include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qquickitemgrabresult.h>
 
-extern "C" {
 
-int QQuickItemGrabResult_Class_Size()
-{
-  return sizeof(QQuickItemGrabResult);
-}
-
-}; // <= extern "C" block end
-
+#include <qurl.h>
+#include <qimage.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qquickitemgrabresult_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 61, column 22>
-//   // proto:  bool QQuickItemGrabResult::saveToFile(const QString & fileName);
-if (true) {
-  auto f = [](QQuickItemGrabResult flythis, const QString & arg1) {
-    ((QQuickItemGrabResult*)0)->saveToFile(arg1);
-    flythis.saveToFile(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN20QQuickItemGrabResult10saveToFileERK7QString saveToFile(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 59, column 10>
-//   // proto:  QUrl QQuickItemGrabResult::url();
-if (true) {
-  auto f = [](QQuickItemGrabResult flythis) {
-    ((QQuickItemGrabResult*)0)->url();
-    flythis.url();
-  };
-  if (f == nullptr){}
-}
-// _ZNK20QQuickItemGrabResult3urlEv url()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 58, column 12>
-//   // proto:  QImage QQuickItemGrabResult::image();
-if (true) {
-  auto f = [](QQuickItemGrabResult flythis) {
-    ((QQuickItemGrabResult*)0)->image();
-    flythis.image();
-  };
-  if (f == nullptr){}
-}
-// _ZNK20QQuickItemGrabResult5imageEv image()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 52, column 5>
-//   // proto:  const QMetaObject * QQuickItemGrabResult::metaObject();
-if (true) {
-  auto f = [](QQuickItemGrabResult flythis) {
-    ((QQuickItemGrabResult*)0)->metaObject();
-    flythis.metaObject();
-  };
-  if (f == nullptr){}
-}
-// _ZNK20QQuickItemGrabResult10metaObjectEv metaObject()
-// <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 67, column 10>
-//   // proto:  void QQuickItemGrabResult::ready();
-if (true) {
-  auto f = [](QQuickItemGrabResult flythis) {
-    ((QQuickItemGrabResult*)0)->ready();
-    flythis.ready();
-  };
-  if (f == nullptr){}
-}
-// _ZN20QQuickItemGrabResult5readyEv ready()
 } // <= main block end
 
 // <= main block end
 
 // use block begin =>
+extern "C"
+int QQuickItemGrabResult_Class_Size()
+{
+  return sizeof(QQuickItemGrabResult);
+}
+
 // <= use block end
 
 // ext block begin =>
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 61, column 22>
 //   // proto:  bool QQuickItemGrabResult::saveToFile(const QString & fileName);
-extern "C"
-void C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *qthis, const QString & arg1) {
-  ((QQuickItemGrabResult*)qthis)->saveToFile(arg1);
-}
 // _ZN20QQuickItemGrabResult10saveToFileERK7QString saveToFile(const class QString &)
+extern "C"
+bool
+C_ZN20QQuickItemGrabResult10saveToFileERK7QString(void *qthis,
+const QString* arg1) {
+  auto ret =
+  ((QQuickItemGrabResult*)qthis)->saveToFile(*((const QString*)arg1));
+  return ret; // 0 TypeKind.BOOL
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 59, column 10>
 //   // proto:  QUrl QQuickItemGrabResult::url();
-extern "C"
-void C_ZNK20QQuickItemGrabResult3urlEv(void *qthis) {
-  ((QQuickItemGrabResult*)qthis)->url();
-}
 // _ZNK20QQuickItemGrabResult3urlEv url()
+extern "C"
+QUrl*
+C_ZNK20QQuickItemGrabResult3urlEv(void *qthis) {
+  auto ret =
+  ((QQuickItemGrabResult*)qthis)->url();
+  return new QUrl(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 58, column 12>
 //   // proto:  QImage QQuickItemGrabResult::image();
-extern "C"
-void C_ZNK20QQuickItemGrabResult5imageEv(void *qthis) {
-  ((QQuickItemGrabResult*)qthis)->image();
-}
 // _ZNK20QQuickItemGrabResult5imageEv image()
+extern "C"
+QImage*
+C_ZNK20QQuickItemGrabResult5imageEv(void *qthis) {
+  auto ret =
+  ((QQuickItemGrabResult*)qthis)->image();
+  return new QImage(ret); // 5
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 52, column 5>
 //   // proto:  const QMetaObject * QQuickItemGrabResult::metaObject();
-extern "C"
-void C_ZNK20QQuickItemGrabResult10metaObjectEv(void *qthis) {
-  ((QQuickItemGrabResult*)qthis)->metaObject();
-}
 // _ZNK20QQuickItemGrabResult10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK20QQuickItemGrabResult10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QQuickItemGrabResult*)qthis)->metaObject();
+  return (void*)ret;
+}
 // <SourceLocation file '/usr/include/qt/QtQuick/qquickitemgrabresult.h', line 67, column 10>
 //   // proto:  void QQuickItemGrabResult::ready();
+// _ZN20QQuickItemGrabResult5readyEv ready()
 extern "C"
-void C_ZN20QQuickItemGrabResult5readyEv(void *qthis) {
+void
+C_ZN20QQuickItemGrabResult5readyEv(void *qthis) {
   ((QQuickItemGrabResult*)qthis)->ready();
 }
-// _ZN20QQuickItemGrabResult5readyEv ready()
 // <= ext block end
 
 // body block begin =>

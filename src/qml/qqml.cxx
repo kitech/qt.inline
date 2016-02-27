@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Jan 22 22:26:45 2016
+// created: Fri Feb 26 23:38:18 2016
 // src-file: /QtQml/qqml.h
 // dst-file: /src/qml/qqml.cxx
 //
@@ -7,11 +7,12 @@
 // header block begin =>
 #include <qatomic.h>
 #include <qstring.h>
+#include <qfuture.h>
+#include <qpoint.h>
+#include <qurl.h>
+#include <qopengl.h>
 #include <qqml.h>
 
-extern "C" {
-
-}; // <= extern "C" block end
 
 // <= header block end
 
