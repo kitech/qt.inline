@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qpoint.h
 // dst-file: /src/core/qpoint.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qpoint_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 58, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 64, column 42>
 //   // proto:  int & QPoint::ry();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -29,7 +29,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QPoint2ryEv ry()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 69, column 40>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 75, column 40>
 //   // proto: static int QPoint::dotProduct(const QPoint & p1, const QPoint & p2);
 if (true) {
   auto f = [](QPoint flythis, const QPoint & arg1, const QPoint & arg2) {
@@ -39,7 +39,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QPoint10dotProductERKS_S1_ dotProduct(const class QPoint &, const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 50, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 56, column 33>
 //   // proto:  int QPoint::x();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -49,7 +49,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QPoint1xEv x()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 46, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 52, column 22>
 //   // proto:  void QPoint::QPoint(int xpos, int ypos);
 if (true) {
   auto f = [](int arg1, int arg2) {
@@ -57,7 +57,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 51, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 57, column 33>
 //   // proto:  int QPoint::y();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -67,7 +67,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QPoint1yEv y()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 52, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 58, column 42>
 //   // proto:  void QPoint::setX(int x);
 if (true) {
   auto f = [](QPoint flythis, int arg1) {
@@ -77,7 +77,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QPoint4setXEi setX(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 48, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 54, column 34>
 //   // proto:  bool QPoint::isNull();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -87,7 +87,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QPoint6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 45, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 51, column 22>
 //   // proto:  void QPoint::QPoint();
 if (true) {
   auto f = []() {
@@ -95,7 +95,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 53, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 59, column 42>
 //   // proto:  void QPoint::setY(int y);
 if (true) {
   auto f = [](QPoint flythis, int arg1) {
@@ -105,7 +105,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QPoint4setYEi setY(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 57, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 63, column 42>
 //   // proto:  int & QPoint::rx();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -115,7 +115,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QPoint2rxEv rx()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 55, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 61, column 33>
 //   // proto:  int QPoint::manhattanLength();
 if (true) {
   auto f = [](QPoint flythis) {
@@ -125,7 +125,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QPoint15manhattanLengthEv manhattanLength()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 210, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 216, column 22>
 //   // proto:  void QPointF::QPointF(qreal xpos, qreal ypos);
 if (true) {
   auto f = [](qreal arg1, qreal arg2) {
@@ -133,7 +133,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 208, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 214, column 22>
 //   // proto:  void QPointF::QPointF();
 if (true) {
   auto f = []() {
@@ -141,7 +141,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 212, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 218, column 35>
 //   // proto:  qreal QPointF::manhattanLength();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -151,7 +151,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QPointF15manhattanLengthEv manhattanLength()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 242, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 248, column 29>
 //   // proto:  QPoint QPointF::toPoint();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -161,7 +161,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QPointF7toPointEv toPoint()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 221, column 44>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 227, column 44>
 //   // proto:  qreal & QPointF::rx();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -171,7 +171,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN7QPointF2rxEv rx()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 217, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 223, column 35>
 //   // proto:  qreal QPointF::y();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -181,7 +181,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QPointF1yEv y()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 214, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 220, column 17>
 //   // proto:  bool QPointF::isNull();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -191,7 +191,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QPointF6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 216, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 222, column 35>
 //   // proto:  qreal QPointF::x();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -201,7 +201,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QPointF1xEv x()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 209, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 215, column 22>
 //   // proto:  void QPointF::QPointF(const QPoint & p);
 if (true) {
   auto f = [](const QPoint & arg1) {
@@ -209,7 +209,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 218, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 224, column 42>
 //   // proto:  void QPointF::setX(qreal x);
 if (true) {
   auto f = [](QPointF flythis, qreal arg1) {
@@ -219,7 +219,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN7QPointF4setXEd setX(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 222, column 44>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 228, column 44>
 //   // proto:  qreal & QPointF::ry();
 if (true) {
   auto f = [](QPointF flythis) {
@@ -229,7 +229,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN7QPointF2ryEv ry()
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 229, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 235, column 42>
 //   // proto: static qreal QPointF::dotProduct(const QPointF & p1, const QPointF & p2);
 if (true) {
   auto f = [](QPointF flythis, const QPointF & arg1, const QPointF & arg2) {
@@ -239,7 +239,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN7QPointF10dotProductERKS_S1_ dotProduct(const class QPointF &, const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 219, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 225, column 42>
 //   // proto:  void QPointF::setY(qreal y);
 if (true) {
   auto f = [](QPointF flythis, qreal arg1) {
@@ -269,7 +269,7 @@ int QPointF_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 58, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 64, column 42>
 //   // proto:  int & QPoint::ry();
 // _ZN6QPoint2ryEv ry()
 extern "C"
@@ -279,7 +279,7 @@ C_ZN6QPoint2ryEv(void *qthis) {
   ((QPoint*)qthis)->ry();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 69, column 40>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 75, column 40>
 //   // proto: static int QPoint::dotProduct(const QPoint & p1, const QPoint & p2);
 // _ZN6QPoint10dotProductERKS_S1_ dotProduct(const class QPoint &, const class QPoint &)
 extern "C"
@@ -291,7 +291,7 @@ const QPoint* arg2) {
 *((const QPoint*)arg2));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 50, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 56, column 33>
 //   // proto:  int QPoint::x();
 // _ZNK6QPoint1xEv x()
 extern "C"
@@ -301,16 +301,17 @@ C_ZNK6QPoint1xEv(void *qthis) {
   ((QPoint*)qthis)->x();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 46, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 52, column 22>
 //   // proto:  void QPoint::QPoint(int xpos, int ypos);
 extern "C"
 QPoint*
 C_ZN6QPointC2Eii(int arg1,
 int arg2) {
-  auto ret = new QPoint(arg1, arg2);
+  auto ret = new QPoint(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 51, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 57, column 33>
 //   // proto:  int QPoint::y();
 // _ZNK6QPoint1yEv y()
 extern "C"
@@ -320,7 +321,7 @@ C_ZNK6QPoint1yEv(void *qthis) {
   ((QPoint*)qthis)->y();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 52, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 58, column 42>
 //   // proto:  void QPoint::setX(int x);
 // _ZN6QPoint4setXEi setX(int)
 extern "C"
@@ -329,7 +330,7 @@ C_ZN6QPoint4setXEi(void *qthis,
 int arg1) {
   ((QPoint*)qthis)->setX(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 48, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 54, column 34>
 //   // proto:  bool QPoint::isNull();
 // _ZNK6QPoint6isNullEv isNull()
 extern "C"
@@ -339,7 +340,7 @@ C_ZNK6QPoint6isNullEv(void *qthis) {
   ((QPoint*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 45, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 51, column 22>
 //   // proto:  void QPoint::QPoint();
 extern "C"
 QPoint*
@@ -347,7 +348,7 @@ C_ZN6QPointC2Ev() {
   auto ret = new QPoint();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 53, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 59, column 42>
 //   // proto:  void QPoint::setY(int y);
 // _ZN6QPoint4setYEi setY(int)
 extern "C"
@@ -356,7 +357,7 @@ C_ZN6QPoint4setYEi(void *qthis,
 int arg1) {
   ((QPoint*)qthis)->setY(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 57, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 63, column 42>
 //   // proto:  int & QPoint::rx();
 // _ZN6QPoint2rxEv rx()
 extern "C"
@@ -366,7 +367,7 @@ C_ZN6QPoint2rxEv(void *qthis) {
   ((QPoint*)qthis)->rx();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 55, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 61, column 33>
 //   // proto:  int QPoint::manhattanLength();
 // _ZNK6QPoint15manhattanLengthEv manhattanLength()
 extern "C"
@@ -376,16 +377,17 @@ C_ZNK6QPoint15manhattanLengthEv(void *qthis) {
   ((QPoint*)qthis)->manhattanLength();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 210, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 216, column 22>
 //   // proto:  void QPointF::QPointF(qreal xpos, qreal ypos);
 extern "C"
 QPointF*
 C_ZN7QPointFC2Edd(qreal arg1,
 qreal arg2) {
-  auto ret = new QPointF(arg1, arg2);
+  auto ret = new QPointF(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 208, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 214, column 22>
 //   // proto:  void QPointF::QPointF();
 extern "C"
 QPointF*
@@ -393,7 +395,7 @@ C_ZN7QPointFC2Ev() {
   auto ret = new QPointF();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 212, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 218, column 35>
 //   // proto:  qreal QPointF::manhattanLength();
 // _ZNK7QPointF15manhattanLengthEv manhattanLength()
 extern "C"
@@ -403,7 +405,7 @@ C_ZNK7QPointF15manhattanLengthEv(void *qthis) {
   ((QPointF*)qthis)->manhattanLength();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 242, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 248, column 29>
 //   // proto:  QPoint QPointF::toPoint();
 // _ZNK7QPointF7toPointEv toPoint()
 extern "C"
@@ -413,7 +415,7 @@ C_ZNK7QPointF7toPointEv(void *qthis) {
   ((QPointF*)qthis)->toPoint();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 221, column 44>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 227, column 44>
 //   // proto:  qreal & QPointF::rx();
 // _ZN7QPointF2rxEv rx()
 extern "C"
@@ -423,7 +425,7 @@ C_ZN7QPointF2rxEv(void *qthis) {
   ((QPointF*)qthis)->rx();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 217, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 223, column 35>
 //   // proto:  qreal QPointF::y();
 // _ZNK7QPointF1yEv y()
 extern "C"
@@ -433,7 +435,7 @@ C_ZNK7QPointF1yEv(void *qthis) {
   ((QPointF*)qthis)->y();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 214, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 220, column 17>
 //   // proto:  bool QPointF::isNull();
 // _ZNK7QPointF6isNullEv isNull()
 extern "C"
@@ -443,7 +445,7 @@ C_ZNK7QPointF6isNullEv(void *qthis) {
   ((QPointF*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 216, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 222, column 35>
 //   // proto:  qreal QPointF::x();
 // _ZNK7QPointF1xEv x()
 extern "C"
@@ -453,7 +455,7 @@ C_ZNK7QPointF1xEv(void *qthis) {
   ((QPointF*)qthis)->x();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 209, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 215, column 22>
 //   // proto:  void QPointF::QPointF(const QPoint & p);
 extern "C"
 QPointF*
@@ -461,7 +463,7 @@ C_ZN7QPointFC2ERK6QPoint(const QPoint* arg1) {
   auto ret = new QPointF(*((const QPoint*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 218, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 224, column 42>
 //   // proto:  void QPointF::setX(qreal x);
 // _ZN7QPointF4setXEd setX(qreal)
 extern "C"
@@ -470,7 +472,7 @@ C_ZN7QPointF4setXEd(void *qthis,
 qreal arg1) {
   ((QPointF*)qthis)->setX(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 222, column 44>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 228, column 44>
 //   // proto:  qreal & QPointF::ry();
 // _ZN7QPointF2ryEv ry()
 extern "C"
@@ -480,7 +482,7 @@ C_ZN7QPointF2ryEv(void *qthis) {
   ((QPointF*)qthis)->ry();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 229, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 235, column 42>
 //   // proto: static qreal QPointF::dotProduct(const QPointF & p1, const QPointF & p2);
 // _ZN7QPointF10dotProductERKS_S1_ dotProduct(const class QPointF &, const class QPointF &)
 extern "C"
@@ -492,7 +494,7 @@ const QPointF* arg2) {
 *((const QPointF*)arg2));
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 219, column 42>
+// <SourceLocation file '/usr/include/qt/QtCore/qpoint.h', line 225, column 42>
 //   // proto:  void QPointF::setY(qreal y);
 // _ZN7QPointF4setYEd setY(qreal)
 extern "C"

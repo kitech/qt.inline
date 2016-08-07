@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpixmapcache.h
 // dst-file: /src/gui/qpixmapcache.cxx
 //
@@ -32,7 +32,7 @@ int QPixmapCache_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 77, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 86, column 17>
 //   // proto: static void QPixmapCache::remove(const QPixmapCache::Key & key);
 // _ZN12QPixmapCache6removeERKNS_3KeyE remove(const class QPixmapCache::Key &)
 extern "C"
@@ -40,7 +40,7 @@ void
 C_ZN12QPixmapCache6removeERKNS_3KeyE(const QPixmapCache::Key* arg1) {
   QPixmapCache::remove(*((const QPixmapCache::Key*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 67, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 76, column 16>
 //   // proto: static int QPixmapCache::cacheLimit();
 // _ZN12QPixmapCache10cacheLimitEv cacheLimit()
 extern "C"
@@ -50,7 +50,7 @@ C_ZN12QPixmapCache10cacheLimitEv() {
   QPixmapCache::cacheLimit();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 78, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 87, column 17>
 //   // proto: static void QPixmapCache::clear();
 // _ZN12QPixmapCache5clearEv clear()
 extern "C"
@@ -58,19 +58,7 @@ void
 C_ZN12QPixmapCache5clearEv() {
   QPixmapCache::clear();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 73, column 17>
-//   // proto: static bool QPixmapCache::insert(const QString & key, const QPixmap & pixmap);
-// _ZN12QPixmapCache6insertERK7QStringRK7QPixmap insert(const class QString &, const class QPixmap &)
-extern "C"
-bool
-C_ZN12QPixmapCache6insertERK7QStringRK7QPixmap(const QString* arg1,
-const QPixmap* arg2) {
-  auto ret =
-  QPixmapCache::insert(*((const QString*)arg1),
-*((const QPixmap*)arg2));
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 75, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 84, column 17>
 //   // proto: static bool QPixmapCache::replace(const QPixmapCache::Key & key, const QPixmap & pixmap);
 // _ZN12QPixmapCache7replaceERKNS_3KeyERK7QPixmap replace(const class QPixmapCache::Key &, const class QPixmap &)
 extern "C"
@@ -82,7 +70,7 @@ const QPixmap* arg2) {
 *((const QPixmap*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 70, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 79, column 17>
 //   // proto: static bool QPixmapCache::find(const QString & key, QPixmap & pixmap);
 // _ZN12QPixmapCache4findERK7QStringR7QPixmap find(const class QString &, class QPixmap &)
 extern "C"
@@ -94,7 +82,7 @@ QPixmap* arg2) {
 *((QPixmap*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 72, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 81, column 17>
 //   // proto: static bool QPixmapCache::find(const QPixmapCache::Key & key, QPixmap * pixmap);
 // _ZN12QPixmapCache4findERKNS_3KeyEP7QPixmap find(const class QPixmapCache::Key &, class QPixmap *)
 extern "C"
@@ -106,7 +94,7 @@ QPixmap * arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 69, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 78, column 21>
 //   // proto: static QPixmap * QPixmapCache::find(const QString & key);
 // _ZN12QPixmapCache4findERK7QString find(const class QString &)
 extern "C"
@@ -116,17 +104,7 @@ C_ZN12QPixmapCache4findERK7QString(const QString* arg1) {
   QPixmapCache::find(*((const QString*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 74, column 16>
-//   // proto: static QPixmapCache::Key QPixmapCache::insert(const QPixmap & pixmap);
-// _ZN12QPixmapCache6insertERK7QPixmap insert(const class QPixmap &)
-extern "C"
-QPixmapCache::Key*
-C_ZN12QPixmapCache6insertERK7QPixmap(const QPixmap* arg1) {
-  auto ret =
-  QPixmapCache::insert(*((const QPixmap*)arg1));
-  return new QPixmapCache::Key(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 71, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 80, column 17>
 //   // proto: static bool QPixmapCache::find(const QString & key, QPixmap * pixmap);
 // _ZN12QPixmapCache4findERK7QStringP7QPixmap find(const class QString &, class QPixmap *)
 extern "C"
@@ -138,7 +116,7 @@ QPixmap * arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 76, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 85, column 17>
 //   // proto: static void QPixmapCache::remove(const QString & key);
 // _ZN12QPixmapCache6removeERK7QString remove(const class QString &)
 extern "C"
@@ -146,7 +124,7 @@ void
 C_ZN12QPixmapCache6removeERK7QString(const QString* arg1) {
   QPixmapCache::remove(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixmapcache.h', line 77, column 17>
 //   // proto: static void QPixmapCache::setCacheLimit(int );
 // _ZN12QPixmapCache13setCacheLimitEi setCacheLimit(int)
 extern "C"

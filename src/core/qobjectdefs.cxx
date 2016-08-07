@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qobjectdefs.h
 // dst-file: /src/core/qobjectdefs.cxx
 //
@@ -20,7 +20,7 @@
 
 // main block begin =>
 void __keep_qobjectdefs_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 489, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 539, column 12>
 //   // proto:  void QMetaObject::Connection::Connection(QMetaObject::Connection && o);
 if (true) {
   auto f = [](QMetaObject::Connection && arg1) {
@@ -28,7 +28,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 270, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 319, column 12>
 //   // proto:  void QGenericReturnArgument::QGenericReturnArgument(const char * aName, void * aData);
 if (true) {
   auto f = [](const char * arg1, void * arg2) {
@@ -36,7 +36,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 412, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 462, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 if (true) {
   auto f = [](QMetaObject flythis, QObject * arg1, const char * arg2, QGenericArgument arg3, QGenericArgument arg4, QGenericArgument arg5, QGenericArgument arg6, QGenericArgument arg7, QGenericArgument arg8, QGenericArgument arg9, QGenericArgument arg10, QGenericArgument arg11, QGenericArgument arg12) {
@@ -46,7 +46,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKc16QGenericArgumentS4_S4_S4_S4_S4_S4_S4_S4_S4_ invokeMethod(class QObject *, const char *, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 378, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 428, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, QGenericReturnArgument ret, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 if (true) {
   auto f = [](QMetaObject flythis, QObject * arg1, const char * arg2, QGenericReturnArgument arg3, QGenericArgument arg4, QGenericArgument arg5, QGenericArgument arg6, QGenericArgument arg7, QGenericArgument arg8, QGenericArgument arg9, QGenericArgument arg10, QGenericArgument arg11, QGenericArgument arg12, QGenericArgument arg13) {
@@ -56,7 +56,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16QGenericArgumentS5_S5_S5_S5_S5_S5_S5_S5_S5_ invokeMethod(class QObject *, const char *, class QGenericReturnArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 306, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 355, column 24>
 //   // proto:  const QMetaObject * QMetaObject::superClass();
 if (true) {
   auto f = [](QMetaObject flythis) {
@@ -66,7 +66,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QMetaObject10superClassEv superClass()
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 395, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 445, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, Qt::ConnectionType type, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 if (true) {
   auto f = [](QMetaObject flythis, QObject * arg1, const char * arg2, Qt::ConnectionType arg3, QGenericArgument arg4, QGenericArgument arg5, QGenericArgument arg6, QGenericArgument arg7, QGenericArgument arg8, QGenericArgument arg9, QGenericArgument arg10, QGenericArgument arg11, QGenericArgument arg12, QGenericArgument arg13) {
@@ -76,7 +76,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_ invokeMethod(class QObject *, const char *, Qt::ConnectionType, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 260, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 309, column 24>
 //   // proto:  const char * QGenericArgument::name();
 if (true) {
   auto f = [](QGenericArgument flythis) {
@@ -86,7 +86,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QGenericArgument4nameEv name()
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 259, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 308, column 18>
 //   // proto:  void * QGenericArgument::data();
 if (true) {
   auto f = [](QGenericArgument flythis) {
@@ -96,7 +96,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QGenericArgument4dataEv data()
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 257, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 306, column 12>
 //   // proto:  void QGenericArgument::QGenericArgument(const char * aName, const void * aData);
 if (true) {
   auto f = [](const char * arg1, const void * arg2) {
@@ -136,7 +136,7 @@ int QGenericArgument_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 478, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 528, column 5>
 //   // proto:  void QMetaObject::Connection::Connection();
 extern "C"
 QMetaObject::Connection*
@@ -149,7 +149,7 @@ extern "C"
 void C_ZN11QMetaObject10ConnectionD2Ev(void *qthis) {
   delete (QMetaObject::Connection*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 479, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 529, column 5>
 //   // proto:  void QMetaObject::Connection::Connection(const QMetaObject::Connection & other);
 extern "C"
 QMetaObject::Connection*
@@ -157,7 +157,7 @@ C_ZN11QMetaObject10ConnectionC2ERKS0_(const QMetaObject::Connection* arg1) {
   auto ret = new QMetaObject::Connection(*((const QMetaObject::Connection*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 489, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 539, column 12>
 //   // proto:  void QMetaObject::Connection::Connection(QMetaObject::Connection && o);
 extern "C"
 QMetaObject::Connection*
@@ -165,16 +165,17 @@ C_ZN11QMetaObject10ConnectionC2EOS0_(QMetaObject::Connection* arg1) {
   auto ret = new QMetaObject::Connection(*((QMetaObject::Connection*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 270, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 319, column 12>
 //   // proto:  void QGenericReturnArgument::QGenericReturnArgument(const char * aName, void * aData);
 extern "C"
 QGenericReturnArgument*
 C_ZN22QGenericReturnArgumentC2EPKcPv(const char * arg1,
 void * arg2) {
-  auto ret = new QGenericReturnArgument(arg1, arg2);
+  auto ret = new QGenericReturnArgument(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 344, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 394, column 23>
 //   // proto: static QByteArray QMetaObject::normalizedSignature(const char * method);
 // _ZN11QMetaObject19normalizedSignatureEPKc normalizedSignature(const char *)
 extern "C"
@@ -184,7 +185,7 @@ C_ZN11QMetaObject19normalizedSignatureEPKc(const char * arg1) {
   QMetaObject::normalizedSignature(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 412, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 462, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKc16QGenericArgumentS4_S4_S4_S4_S4_S4_S4_S4_S4_ invokeMethod(class QObject *, const char *, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
@@ -216,7 +217,17 @@ arg2,
 *((QGenericArgument*)arg12));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 354, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 389, column 19>
+//   // proto:  QMetaProperty QMetaObject::userProperty();
+// _ZNK11QMetaObject12userPropertyEv userProperty()
+extern "C"
+QMetaProperty*
+C_ZNK11QMetaObject12userPropertyEv(void *qthis) {
+  auto ret =
+  ((QMetaObject*)qthis)->userProperty();
+  return new QMetaProperty(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 404, column 17>
 //   // proto: static bool QMetaObject::disconnectOne(const QObject * sender, int signal_index, const QObject * receiver, int method_index);
 // _ZN11QMetaObject13disconnectOneEPK7QObjectiS2_i disconnectOne(const class QObject *, int, const class QObject *, int)
 extern "C"
@@ -232,7 +243,7 @@ arg3,
 arg4);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 329, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 379, column 9>
 //   // proto:  int QMetaObject::indexOfSlot(const char * slot);
 // _ZNK11QMetaObject11indexOfSlotEPKc indexOfSlot(const char *)
 extern "C"
@@ -243,7 +254,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfSlot(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 326, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 376, column 9>
 //   // proto:  int QMetaObject::indexOfConstructor(const char * constructor);
 // _ZNK11QMetaObject18indexOfConstructorEPKc indexOfConstructor(const char *)
 extern "C"
@@ -254,7 +265,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfConstructor(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 336, column 15>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 386, column 15>
 //   // proto:  QMetaEnum QMetaObject::enumerator(int index);
 // _ZNK11QMetaObject10enumeratorEi enumerator(int)
 extern "C"
@@ -265,7 +276,7 @@ int arg1) {
   ((QMetaObject*)qthis)->enumerator(arg1);
   return new QMetaEnum(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 456, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 506, column 16>
 //   // proto: static int QMetaObject::metacall(QObject * , QMetaObject::Call , int , void ** );
 // _ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv metacall(class QObject *, enum QMetaObject::Call, int, void **)
 extern "C"
@@ -281,7 +292,7 @@ arg3,
 arg4);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 327, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 377, column 9>
 //   // proto:  int QMetaObject::indexOfMethod(const char * method);
 // _ZNK11QMetaObject13indexOfMethodEPKc indexOfMethod(const char *)
 extern "C"
@@ -292,7 +303,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfMethod(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 334, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 384, column 17>
 //   // proto:  QMetaMethod QMetaObject::constructor(int index);
 // _ZNK11QMetaObject11constructorEi constructor(int)
 extern "C"
@@ -303,7 +314,7 @@ int arg1) {
   ((QMetaObject*)qthis)->constructor(arg1);
   return new QMetaMethod(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 341, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 391, column 17>
 //   // proto: static bool QMetaObject::checkConnectArgs(const char * signal, const char * method);
 // _ZN11QMetaObject16checkConnectArgsEPKcS1_ checkConnectArgs(const char *, const char *)
 extern "C"
@@ -315,7 +326,7 @@ const char * arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 316, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 366, column 9>
 //   // proto:  int QMetaObject::enumeratorOffset();
 // _ZNK11QMetaObject16enumeratorOffsetEv enumeratorOffset()
 extern "C"
@@ -325,7 +336,7 @@ C_ZNK11QMetaObject16enumeratorOffsetEv(void *qthis) {
   ((QMetaObject*)qthis)->enumeratorOffset();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 337, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 387, column 19>
 //   // proto:  QMetaProperty QMetaObject::property(int index);
 // _ZNK11QMetaObject8propertyEi property(int)
 extern "C"
@@ -336,7 +347,7 @@ int arg1) {
   ((QMetaObject*)qthis)->property(arg1);
   return new QMetaProperty(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 357, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 407, column 17>
 //   // proto: static void QMetaObject::connectSlotsByName(QObject * o);
 // _ZN11QMetaObject18connectSlotsByNameEP7QObject connectSlotsByName(class QObject *)
 extern "C"
@@ -344,17 +355,18 @@ void
 C_ZN11QMetaObject18connectSlotsByNameEP7QObject(QObject * arg1) {
   QMetaObject::connectSlotsByName(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 339, column 19>
-//   // proto:  QMetaProperty QMetaObject::userProperty();
-// _ZNK11QMetaObject12userPropertyEv userProperty()
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 357, column 10>
+//   // proto:  bool QMetaObject::inherits(const QMetaObject * metaObject);
+// _ZNK11QMetaObject8inheritsEPKS_ inherits(const struct QMetaObject *)
 extern "C"
-QMetaProperty*
-C_ZNK11QMetaObject12userPropertyEv(void *qthis) {
+bool
+C_ZNK11QMetaObject8inheritsEPKS_(void *qthis,
+const QMetaObject * arg1) {
   auto ret =
-  ((QMetaObject*)qthis)->userProperty();
-  return new QMetaProperty(ret); // 5
+  ((QMetaObject*)qthis)->inherits(arg1);
+  return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 331, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 381, column 9>
 //   // proto:  int QMetaObject::indexOfProperty(const char * name);
 // _ZNK11QMetaObject15indexOfPropertyEPKc indexOfProperty(const char *)
 extern "C"
@@ -365,7 +377,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfProperty(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 332, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 382, column 9>
 //   // proto:  int QMetaObject::indexOfClassInfo(const char * name);
 // _ZNK11QMetaObject16indexOfClassInfoEPKc indexOfClassInfo(const char *)
 extern "C"
@@ -376,7 +388,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfClassInfo(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 348, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 398, column 23>
 //   // proto: static QMetaObject::Connection QMetaObject::connect(const QObject * sender, int signal_index, const QObject * receiver, int method_index, int type, int * types);
 // _ZN11QMetaObject7connectEPK7QObjectiS2_iiPi connect(const class QObject *, int, const class QObject *, int, int, int *)
 extern "C"
@@ -396,7 +408,7 @@ arg5,
 arg6);
   return new QMetaObject::Connection(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 378, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 428, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, QGenericReturnArgument ret, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16QGenericArgumentS5_S5_S5_S5_S5_S5_S5_S5_S5_ invokeMethod(class QObject *, const char *, class QGenericReturnArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
@@ -430,7 +442,7 @@ arg2,
 *((QGenericArgument*)arg13));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 361, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 411, column 17>
 //   // proto: static void QMetaObject::activate(QObject * sender, const QMetaObject * , int local_signal_index, void ** argv);
 // _ZN11QMetaObject8activateEP7QObjectPKS_iPPv activate(class QObject *, const struct QMetaObject *, int, void **)
 extern "C"
@@ -444,7 +456,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 309, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 359, column 20>
 //   // proto:  const QObject * QMetaObject::cast(const QObject * obj);
 // _ZNK11QMetaObject4castEPK7QObject cast(const class QObject *)
 extern "C"
@@ -455,7 +467,7 @@ const QObject * arg1) {
   ((QMetaObject*)qthis)->cast(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 335, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 385, column 17>
 //   // proto:  QMetaMethod QMetaObject::method(int index);
 // _ZNK11QMetaObject6methodEi method(int)
 extern "C"
@@ -466,7 +478,7 @@ int arg1) {
   ((QMetaObject*)qthis)->method(arg1);
   return new QMetaMethod(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 428, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 478, column 14>
 //   // proto:  QObject * QMetaObject::newInstance(QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 // _ZNK11QMetaObject11newInstanceE16QGenericArgumentS0_S0_S0_S0_S0_S0_S0_S0_S0_ newInstance(class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
@@ -495,7 +507,7 @@ QGenericArgument* arg10) {
 *((QGenericArgument*)arg10));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 306, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 355, column 24>
 //   // proto:  const QMetaObject * QMetaObject::superClass();
 // _ZNK11QMetaObject10superClassEv superClass()
 extern "C"
@@ -505,7 +517,7 @@ C_ZNK11QMetaObject10superClassEv(void *qthis) {
   ((QMetaObject*)qthis)->superClass();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 308, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 358, column 14>
 //   // proto:  QObject * QMetaObject::cast(QObject * obj);
 // _ZNK11QMetaObject4castEP7QObject cast(class QObject *)
 extern "C"
@@ -516,7 +528,7 @@ QObject * arg1) {
   ((QMetaObject*)qthis)->cast(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 362, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 412, column 17>
 //   // proto: static void QMetaObject::activate(QObject * sender, int signal_offset, int local_signal_index, void ** argv);
 // _ZN11QMetaObject8activateEP7QObjectiiPPv activate(class QObject *, int, int, void **)
 extern "C"
@@ -530,7 +542,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 395, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 445, column 24>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, Qt::ConnectionType type, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_ invokeMethod(class QObject *, const char *, Qt::ConnectionType, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
@@ -564,7 +576,7 @@ arg2,
 *((QGenericArgument*)arg13));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 323, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 373, column 9>
 //   // proto:  int QMetaObject::propertyCount();
 // _ZNK11QMetaObject13propertyCountEv propertyCount()
 extern "C"
@@ -574,7 +586,7 @@ C_ZNK11QMetaObject13propertyCountEv(void *qthis) {
   ((QMetaObject*)qthis)->propertyCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 338, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 388, column 20>
 //   // proto:  QMetaClassInfo QMetaObject::classInfo(int index);
 // _ZNK11QMetaObject9classInfoEi classInfo(int)
 extern "C"
@@ -585,7 +597,7 @@ int arg1) {
   ((QMetaObject*)qthis)->classInfo(arg1);
   return new QMetaClassInfo(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 364, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 414, column 17>
 //   // proto: static bool QMetaObject::invokeMethod(QObject * obj, const char * member, Qt::ConnectionType , QGenericReturnArgument ret, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9);
 // _ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE22QGenericReturnArgument16QGenericArgumentS7_S7_S7_S7_S7_S7_S7_S7_S7_ invokeMethod(class QObject *, const char *, Qt::ConnectionType, class QGenericReturnArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument, class QGenericArgument)
 extern "C"
@@ -621,7 +633,7 @@ arg2,
 *((QGenericArgument*)arg14));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 455, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 505, column 9>
 //   // proto:  int QMetaObject::static_metacall(QMetaObject::Call , int , void ** );
 // _ZNK11QMetaObject15static_metacallENS_4CallEiPPv static_metacall(enum QMetaObject::Call, int, void **)
 extern "C"
@@ -636,7 +648,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 342, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 392, column 17>
 //   // proto: static bool QMetaObject::checkConnectArgs(const QMetaMethod & signal, const QMetaMethod & method);
 // _ZN11QMetaObject16checkConnectArgsERK11QMetaMethodS2_ checkConnectArgs(const class QMetaMethod &, const class QMetaMethod &)
 extern "C"
@@ -648,7 +660,7 @@ const QMetaMethod* arg2) {
 *((const QMetaMethod*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 305, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 354, column 17>
 //   // proto:  const char * QMetaObject::className();
 // _ZNK11QMetaObject9classNameEv className()
 extern "C"
@@ -658,7 +670,7 @@ C_ZNK11QMetaObject9classNameEv(void *qthis) {
   ((QMetaObject*)qthis)->className();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 328, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 378, column 9>
 //   // proto:  int QMetaObject::indexOfSignal(const char * signal);
 // _ZNK11QMetaObject13indexOfSignalEPKc indexOfSignal(const char *)
 extern "C"
@@ -669,7 +681,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfSignal(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 345, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 395, column 23>
 //   // proto: static QByteArray QMetaObject::normalizedType(const char * type);
 // _ZN11QMetaObject14normalizedTypeEPKc normalizedType(const char *)
 extern "C"
@@ -679,7 +691,7 @@ C_ZN11QMetaObject14normalizedTypeEPKc(const char * arg1) {
   QMetaObject::normalizedType(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 320, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 370, column 9>
 //   // proto:  int QMetaObject::constructorCount();
 // _ZNK11QMetaObject16constructorCountEv constructorCount()
 extern "C"
@@ -689,7 +701,7 @@ C_ZNK11QMetaObject16constructorCountEv(void *qthis) {
   ((QMetaObject*)qthis)->constructorCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 317, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 367, column 9>
 //   // proto:  int QMetaObject::propertyOffset();
 // _ZNK11QMetaObject14propertyOffsetEv propertyOffset()
 extern "C"
@@ -699,7 +711,7 @@ C_ZNK11QMetaObject14propertyOffsetEv(void *qthis) {
   ((QMetaObject*)qthis)->propertyOffset();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 352, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 402, column 17>
 //   // proto: static bool QMetaObject::disconnect(const QObject * sender, int signal_index, const QObject * receiver, int method_index);
 // _ZN11QMetaObject10disconnectEPK7QObjectiS2_i disconnect(const class QObject *, int, const class QObject *, int)
 extern "C"
@@ -715,7 +727,7 @@ arg3,
 arg4);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 360, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 410, column 17>
 //   // proto: static void QMetaObject::activate(QObject * sender, int signal_index, void ** argv);
 // _ZN11QMetaObject8activateEP7QObjectiPPv activate(class QObject *, int, void **)
 extern "C"
@@ -727,7 +739,7 @@ void ** arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 322, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 372, column 9>
 //   // proto:  int QMetaObject::enumeratorCount();
 // _ZNK11QMetaObject15enumeratorCountEv enumeratorCount()
 extern "C"
@@ -737,7 +749,7 @@ C_ZNK11QMetaObject15enumeratorCountEv(void *qthis) {
   ((QMetaObject*)qthis)->enumeratorCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 318, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 368, column 9>
 //   // proto:  int QMetaObject::classInfoOffset();
 // _ZNK11QMetaObject15classInfoOffsetEv classInfoOffset()
 extern "C"
@@ -747,7 +759,7 @@ C_ZNK11QMetaObject15classInfoOffsetEv(void *qthis) {
   ((QMetaObject*)qthis)->classInfoOffset();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 315, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 365, column 9>
 //   // proto:  int QMetaObject::methodOffset();
 // _ZNK11QMetaObject12methodOffsetEv methodOffset()
 extern "C"
@@ -757,7 +769,7 @@ C_ZNK11QMetaObject12methodOffsetEv(void *qthis) {
   ((QMetaObject*)qthis)->methodOffset();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 330, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 380, column 9>
 //   // proto:  int QMetaObject::indexOfEnumerator(const char * name);
 // _ZNK11QMetaObject17indexOfEnumeratorEPKc indexOfEnumerator(const char *)
 extern "C"
@@ -768,7 +780,7 @@ const char * arg1) {
   ((QMetaObject*)qthis)->indexOfEnumerator(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 321, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 371, column 9>
 //   // proto:  int QMetaObject::methodCount();
 // _ZNK11QMetaObject11methodCountEv methodCount()
 extern "C"
@@ -778,7 +790,7 @@ C_ZNK11QMetaObject11methodCountEv(void *qthis) {
   ((QMetaObject*)qthis)->methodCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 324, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 374, column 9>
 //   // proto:  int QMetaObject::classInfoCount();
 // _ZNK11QMetaObject14classInfoCountEv classInfoCount()
 extern "C"
@@ -788,7 +800,7 @@ C_ZNK11QMetaObject14classInfoCountEv(void *qthis) {
   ((QMetaObject*)qthis)->classInfoCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 260, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 309, column 24>
 //   // proto:  const char * QGenericArgument::name();
 // _ZNK16QGenericArgument4nameEv name()
 extern "C"
@@ -798,7 +810,7 @@ C_ZNK16QGenericArgument4nameEv(void *qthis) {
   ((QGenericArgument*)qthis)->name();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 259, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 308, column 18>
 //   // proto:  void * QGenericArgument::data();
 // _ZNK16QGenericArgument4dataEv data()
 extern "C"
@@ -808,13 +820,14 @@ C_ZNK16QGenericArgument4dataEv(void *qthis) {
   ((QGenericArgument*)qthis)->data();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 257, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectdefs.h', line 306, column 12>
 //   // proto:  void QGenericArgument::QGenericArgument(const char * aName, const void * aData);
 extern "C"
 QGenericArgument*
 C_ZN16QGenericArgumentC2EPKcPKv(const char * arg1,
 const void * arg2) {
-  auto ret = new QGenericArgument(arg1, arg2);
+  auto ret = new QGenericArgument(arg1,
+arg2);
   return ret;
 }
 // <= ext block end

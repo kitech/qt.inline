@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qscopedpointer.h
 // dst-file: /src/core/qscopedpointer.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qscopedpointer_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qscopedpointer.h', line 75, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qscopedpointer.h', line 81, column 24>
 //   // proto: static void QScopedPointerPodDeleter::cleanup(void * pointer);
 if (true) {
   auto f = [](QScopedPointerPodDeleter flythis, void * arg1) {
@@ -42,7 +42,7 @@ int QScopedPointerPodDeleter_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qscopedpointer.h', line 75, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qscopedpointer.h', line 81, column 24>
 //   // proto: static void QScopedPointerPodDeleter::cleanup(void * pointer);
 // _ZN24QScopedPointerPodDeleter7cleanupEPv cleanup(void *)
 extern "C"

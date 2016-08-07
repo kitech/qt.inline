@@ -11,7 +11,8 @@
 #include <qpoint.h>
 #include <qurl.h>
 #include <qopengl.h>
-#include <designersupport.h>
+// #include <designersupport.h>
+#include <QtQuick>
 
 
 #include <qobject.h>

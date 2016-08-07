@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qgraphicslayout.h
 // dst-file: /src/widgets/qgraphicslayout.cxx
 //
@@ -32,7 +32,7 @@ int QGraphicsLayout_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 60, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 66, column 18>
 //   // proto:  void QGraphicsLayout::updateGeometry();
 // _ZN15QGraphicsLayout14updateGeometryEv updateGeometry()
 extern "C"
@@ -40,7 +40,7 @@ void
 C_ZN15QGraphicsLayout14updateGeometryEv(void *qthis) {
   ((QGraphicsLayout*)qthis)->updateGeometry();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 64, column 10>
 //   // proto:  bool QGraphicsLayout::isActivated();
 // _ZNK15QGraphicsLayout11isActivatedEv isActivated()
 extern "C"
@@ -50,7 +50,7 @@ C_ZNK15QGraphicsLayout11isActivatedEv(void *qthis) {
   ((QGraphicsLayout*)qthis)->isActivated();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 59, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 65, column 18>
 //   // proto:  void QGraphicsLayout::invalidate();
 // _ZN15QGraphicsLayout10invalidateEv invalidate()
 extern "C"
@@ -58,7 +58,7 @@ void
 C_ZN15QGraphicsLayout10invalidateEv(void *qthis) {
   ((QGraphicsLayout*)qthis)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 66, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 72, column 18>
 //   // proto:  void QGraphicsLayout::removeAt(int index);
 // _ZN15QGraphicsLayout8removeAtEi removeAt(int)
 extern "C"
@@ -67,7 +67,7 @@ C_ZN15QGraphicsLayout8removeAtEi(void *qthis,
 int arg1) {
   ((QGraphicsLayout*)qthis)->removeAt(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 65, column 34>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 71, column 34>
 //   // proto:  QGraphicsLayoutItem * QGraphicsLayout::itemAt(int i);
 // _ZNK15QGraphicsLayout6itemAtEi itemAt(int)
 extern "C"
@@ -78,7 +78,7 @@ int arg1) {
   ((QGraphicsLayout*)qthis)->itemAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 55, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 61, column 10>
 //   // proto:  void QGraphicsLayout::getContentsMargins(qreal * left, qreal * top, qreal * right, qreal * bottom);
 // _ZNK15QGraphicsLayout18getContentsMarginsEPdS0_S0_S0_ getContentsMargins(qreal *, qreal *, qreal *, qreal *)
 extern "C"
@@ -93,7 +93,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 60, column 10>
 //   // proto:  void QGraphicsLayout::setContentsMargins(qreal left, qreal top, qreal right, qreal bottom);
 // _ZN15QGraphicsLayout18setContentsMarginsEdddd setContentsMargins(qreal, qreal, qreal, qreal)
 extern "C"
@@ -108,7 +108,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 62, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 68, column 18>
 //   // proto:  void QGraphicsLayout::widgetEvent(QEvent * e);
 // _ZN15QGraphicsLayout11widgetEventEP6QEvent widgetEvent(class QEvent *)
 extern "C"
@@ -117,7 +117,7 @@ C_ZN15QGraphicsLayout11widgetEventEP6QEvent(void *qthis,
 QEvent * arg1) {
   ((QGraphicsLayout*)qthis)->widgetEvent(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 69, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 75, column 17>
 //   // proto: static bool QGraphicsLayout::instantInvalidatePropagation();
 // _ZN15QGraphicsLayout28instantInvalidatePropagationEv instantInvalidatePropagation()
 extern "C"
@@ -127,7 +127,7 @@ C_ZN15QGraphicsLayout28instantInvalidatePropagationEv() {
   QGraphicsLayout::instantInvalidatePropagation();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 74, column 17>
 //   // proto: static void QGraphicsLayout::setInstantInvalidatePropagation(bool enable);
 // _ZN15QGraphicsLayout31setInstantInvalidatePropagationEb setInstantInvalidatePropagation(_Bool)
 extern "C"
@@ -140,7 +140,7 @@ extern "C"
 void C_ZN15QGraphicsLayoutD2Ev(void *qthis) {
   delete (QGraphicsLayout*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 63, column 10>
 //   // proto:  void QGraphicsLayout::activate();
 // _ZN15QGraphicsLayout8activateEv activate()
 extern "C"
@@ -148,7 +148,7 @@ void
 C_ZN15QGraphicsLayout8activateEv(void *qthis) {
   ((QGraphicsLayout*)qthis)->activate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 64, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 70, column 17>
 //   // proto:  int QGraphicsLayout::count();
 // _ZNK15QGraphicsLayout5countEv count()
 extern "C"
@@ -158,7 +158,7 @@ C_ZNK15QGraphicsLayout5countEv(void *qthis) {
   ((QGraphicsLayout*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslayout.h', line 57, column 5>
 //   // proto:  void QGraphicsLayout::QGraphicsLayout(QGraphicsLayoutItem * parent);
 extern "C"
 QGraphicsLayout*

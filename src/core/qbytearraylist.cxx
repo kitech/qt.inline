@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qbytearraylist.h
 // dst-file: /src/core/qbytearraylist.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qbytearraylist_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 67, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 74, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join(char sep);
 if (true) {
   auto f = [](QListSpecialMethods<QByteArray> flythis, char arg1) {
@@ -29,7 +29,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK19QListSpecialMethodsI10QByteArrayE4joinEc join(char)
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 63, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 70, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join();
 if (true) {
   auto f = [](QListSpecialMethods<QByteArray> flythis) {
@@ -39,7 +39,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK19QListSpecialMethodsI10QByteArrayE4joinEv join()
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 65, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 72, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join(const QByteArray & sep);
 if (true) {
   auto f = [](QListSpecialMethods<QByteArray> flythis, const QByteArray & arg1) {
@@ -63,7 +63,7 @@ int QListSpecialMethods_QByteArray__Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 67, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 74, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join(char sep);
 // _ZNK19QListSpecialMethodsI10QByteArrayE4joinEc join(char)
 extern "C"
@@ -74,7 +74,7 @@ char arg1) {
   ((QListSpecialMethods<QByteArray>*)qthis)->join(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 63, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 70, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join();
 // _ZNK19QListSpecialMethodsI10QByteArrayE4joinEv join()
 extern "C"
@@ -84,7 +84,7 @@ C_ZNK19QListSpecialMethodsI10QByteArrayE4joinEv(void *qthis) {
   ((QListSpecialMethods<QByteArray>*)qthis)->join();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 65, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraylist.h', line 72, column 23>
 //   // proto:  QByteArray QListSpecialMethods<QByteArray>::join(const QByteArray & sep);
 // _ZNK19QListSpecialMethodsI10QByteArrayE4joinERKS0_ join(const class QByteArray &)
 extern "C"

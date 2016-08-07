@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpixelformat.h
 // dst-file: /src/gui/qpixelformat.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qpixelformat_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 187, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 193, column 35>
 //   // proto:  uchar QPixelFormat::blackSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -29,7 +29,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat9blackSizeEv blackSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 157, column 29>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 163, column 29>
 //   // proto:  void QPixelFormat::QPixelFormat();
 if (true) {
   auto f = []() {
@@ -37,7 +37,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 205, column 48>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 211, column 48>
 //   // proto:  QPixelFormat::AlphaPremultiplied QPixelFormat::premultiplied();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -47,7 +47,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat13premultipliedEv premultiplied()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 210, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 216, column 35>
 //   // proto:  uchar QPixelFormat::subEnum();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -57,7 +57,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat7subEnumEv subEnum()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 181, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 187, column 35>
 //   // proto:  uchar QPixelFormat::greenSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -67,7 +67,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat9greenSizeEv greenSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 206, column 48>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 212, column 48>
 //   // proto:  QPixelFormat::TypeInterpretation QPixelFormat::typeInterpretation();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -77,7 +77,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat18typeInterpretationEv typeInterpretation()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 191, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 197, column 35>
 //   // proto:  uchar QPixelFormat::lightnessSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -87,7 +87,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat13lightnessSizeEv lightnessSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 196, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 202, column 35>
 //   // proto:  uchar QPixelFormat::bitsPerPixel();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -97,7 +97,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat12bitsPerPixelEv bitsPerPixel()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 194, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 200, column 35>
 //   // proto:  uchar QPixelFormat::alphaSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -107,7 +107,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat9alphaSizeEv alphaSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 185, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 191, column 35>
 //   // proto:  uchar QPixelFormat::magentaSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -117,7 +117,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat11magentaSizeEv magentaSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 158, column 29>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 164, column 29>
 //   // proto:  void QPixelFormat::QPixelFormat(QPixelFormat::ColorModel colorModel, uchar firstSize, uchar secondSize, uchar thirdSize, uchar fourthSize, uchar fifthSize, uchar alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, uchar subEnum);
 if (true) {
   auto f = [](QPixelFormat::ColorModel arg1, uchar arg2, uchar arg3, uchar arg4, uchar arg5, uchar arg6, uchar arg7, QPixelFormat::AlphaUsage arg8, QPixelFormat::AlphaPosition arg9, QPixelFormat::AlphaPremultiplied arg10, QPixelFormat::TypeInterpretation arg11, QPixelFormat::ByteOrder arg12, uchar arg13) {
@@ -125,7 +125,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 215, column 39>
 //   // proto:  QPixelFormat::YUVLayout QPixelFormat::yuvLayout();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -135,7 +135,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat9yuvLayoutEv yuvLayout()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 189, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 195, column 35>
 //   // proto:  uchar QPixelFormat::hueSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -145,7 +145,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat7hueSizeEv hueSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 190, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 196, column 35>
 //   // proto:  uchar QPixelFormat::saturationSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -155,7 +155,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat14saturationSizeEv saturationSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 204, column 43>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 210, column 43>
 //   // proto:  QPixelFormat::AlphaPosition QPixelFormat::alphaPosition();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -165,7 +165,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat13alphaPositionEv alphaPosition()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 192, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 198, column 35>
 //   // proto:  uchar QPixelFormat::brightnessSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -175,7 +175,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat14brightnessSizeEv brightnessSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 186, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 192, column 35>
 //   // proto:  uchar QPixelFormat::yellowSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -185,7 +185,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat10yellowSizeEv yellowSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 180, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 186, column 35>
 //   // proto:  uchar QPixelFormat::redSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -195,7 +195,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat7redSizeEv redSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 207, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 213, column 39>
 //   // proto:  QPixelFormat::ByteOrder QPixelFormat::byteOrder();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -205,7 +205,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat9byteOrderEv byteOrder()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 182, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 188, column 35>
 //   // proto:  uchar QPixelFormat::blueSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -215,7 +215,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat8blueSizeEv blueSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 184, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 190, column 35>
 //   // proto:  uchar QPixelFormat::cyanSize();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -225,7 +225,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat8cyanSizeEv cyanSize()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 203, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 40>
 //   // proto:  QPixelFormat::AlphaUsage QPixelFormat::alphaUsage();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -235,7 +235,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat10alphaUsageEv alphaUsage()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 172, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 178, column 40>
 //   // proto:  QPixelFormat::ColorModel QPixelFormat::colorModel();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -245,7 +245,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QPixelFormat10colorModelEv colorModel()
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 173, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 179, column 35>
 //   // proto:  uchar QPixelFormat::channelCount();
 if (true) {
   auto f = [](QPixelFormat flythis) {
@@ -269,7 +269,7 @@ int QPixelFormat_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 187, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 193, column 35>
 //   // proto:  uchar QPixelFormat::blackSize();
 // _ZNK12QPixelFormat9blackSizeEv blackSize()
 extern "C"
@@ -279,7 +279,7 @@ C_ZNK12QPixelFormat9blackSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->blackSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 157, column 29>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 163, column 29>
 //   // proto:  void QPixelFormat::QPixelFormat();
 extern "C"
 QPixelFormat*
@@ -287,7 +287,7 @@ C_ZN12QPixelFormatC2Ev() {
   auto ret = new QPixelFormat();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 205, column 48>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 211, column 48>
 //   // proto:  QPixelFormat::AlphaPremultiplied QPixelFormat::premultiplied();
 // _ZNK12QPixelFormat13premultipliedEv premultiplied()
 extern "C"
@@ -297,7 +297,7 @@ C_ZNK12QPixelFormat13premultipliedEv(void *qthis) {
   ((QPixelFormat*)qthis)->premultiplied();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 210, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 216, column 35>
 //   // proto:  uchar QPixelFormat::subEnum();
 // _ZNK12QPixelFormat7subEnumEv subEnum()
 extern "C"
@@ -307,7 +307,7 @@ C_ZNK12QPixelFormat7subEnumEv(void *qthis) {
   ((QPixelFormat*)qthis)->subEnum();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 181, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 187, column 35>
 //   // proto:  uchar QPixelFormat::greenSize();
 // _ZNK12QPixelFormat9greenSizeEv greenSize()
 extern "C"
@@ -317,7 +317,7 @@ C_ZNK12QPixelFormat9greenSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->greenSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 206, column 48>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 212, column 48>
 //   // proto:  QPixelFormat::TypeInterpretation QPixelFormat::typeInterpretation();
 // _ZNK12QPixelFormat18typeInterpretationEv typeInterpretation()
 extern "C"
@@ -327,7 +327,7 @@ C_ZNK12QPixelFormat18typeInterpretationEv(void *qthis) {
   ((QPixelFormat*)qthis)->typeInterpretation();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 191, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 197, column 35>
 //   // proto:  uchar QPixelFormat::lightnessSize();
 // _ZNK12QPixelFormat13lightnessSizeEv lightnessSize()
 extern "C"
@@ -337,7 +337,7 @@ C_ZNK12QPixelFormat13lightnessSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->lightnessSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 196, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 202, column 35>
 //   // proto:  uchar QPixelFormat::bitsPerPixel();
 // _ZNK12QPixelFormat12bitsPerPixelEv bitsPerPixel()
 extern "C"
@@ -347,7 +347,7 @@ C_ZNK12QPixelFormat12bitsPerPixelEv(void *qthis) {
   ((QPixelFormat*)qthis)->bitsPerPixel();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 194, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 200, column 35>
 //   // proto:  uchar QPixelFormat::alphaSize();
 // _ZNK12QPixelFormat9alphaSizeEv alphaSize()
 extern "C"
@@ -357,7 +357,7 @@ C_ZNK12QPixelFormat9alphaSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->alphaSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 185, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 191, column 35>
 //   // proto:  uchar QPixelFormat::magentaSize();
 // _ZNK12QPixelFormat11magentaSizeEv magentaSize()
 extern "C"
@@ -367,7 +367,7 @@ C_ZNK12QPixelFormat11magentaSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->magentaSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 158, column 29>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 164, column 29>
 //   // proto:  void QPixelFormat::QPixelFormat(QPixelFormat::ColorModel colorModel, uchar firstSize, uchar secondSize, uchar thirdSize, uchar fourthSize, uchar fifthSize, uchar alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, uchar subEnum);
 extern "C"
 QPixelFormat*
@@ -384,10 +384,22 @@ QPixelFormat::AlphaPremultiplied arg10,
 QPixelFormat::TypeInterpretation arg11,
 QPixelFormat::ByteOrder arg12,
 uchar arg13) {
-  auto ret = new QPixelFormat(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+  auto ret = new QPixelFormat(arg1,
+arg2,
+arg3,
+arg4,
+arg5,
+arg6,
+arg7,
+arg8,
+arg9,
+arg10,
+arg11,
+arg12,
+arg13);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 215, column 39>
 //   // proto:  QPixelFormat::YUVLayout QPixelFormat::yuvLayout();
 // _ZNK12QPixelFormat9yuvLayoutEv yuvLayout()
 extern "C"
@@ -397,7 +409,7 @@ C_ZNK12QPixelFormat9yuvLayoutEv(void *qthis) {
   ((QPixelFormat*)qthis)->yuvLayout();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 189, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 195, column 35>
 //   // proto:  uchar QPixelFormat::hueSize();
 // _ZNK12QPixelFormat7hueSizeEv hueSize()
 extern "C"
@@ -407,7 +419,7 @@ C_ZNK12QPixelFormat7hueSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->hueSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 190, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 196, column 35>
 //   // proto:  uchar QPixelFormat::saturationSize();
 // _ZNK12QPixelFormat14saturationSizeEv saturationSize()
 extern "C"
@@ -417,7 +429,7 @@ C_ZNK12QPixelFormat14saturationSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->saturationSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 204, column 43>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 210, column 43>
 //   // proto:  QPixelFormat::AlphaPosition QPixelFormat::alphaPosition();
 // _ZNK12QPixelFormat13alphaPositionEv alphaPosition()
 extern "C"
@@ -427,7 +439,7 @@ C_ZNK12QPixelFormat13alphaPositionEv(void *qthis) {
   ((QPixelFormat*)qthis)->alphaPosition();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 192, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 198, column 35>
 //   // proto:  uchar QPixelFormat::brightnessSize();
 // _ZNK12QPixelFormat14brightnessSizeEv brightnessSize()
 extern "C"
@@ -437,7 +449,7 @@ C_ZNK12QPixelFormat14brightnessSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->brightnessSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 186, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 192, column 35>
 //   // proto:  uchar QPixelFormat::yellowSize();
 // _ZNK12QPixelFormat10yellowSizeEv yellowSize()
 extern "C"
@@ -447,7 +459,7 @@ C_ZNK12QPixelFormat10yellowSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->yellowSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 180, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 186, column 35>
 //   // proto:  uchar QPixelFormat::redSize();
 // _ZNK12QPixelFormat7redSizeEv redSize()
 extern "C"
@@ -457,7 +469,7 @@ C_ZNK12QPixelFormat7redSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->redSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 207, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 213, column 39>
 //   // proto:  QPixelFormat::ByteOrder QPixelFormat::byteOrder();
 // _ZNK12QPixelFormat9byteOrderEv byteOrder()
 extern "C"
@@ -467,7 +479,7 @@ C_ZNK12QPixelFormat9byteOrderEv(void *qthis) {
   ((QPixelFormat*)qthis)->byteOrder();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 182, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 188, column 35>
 //   // proto:  uchar QPixelFormat::blueSize();
 // _ZNK12QPixelFormat8blueSizeEv blueSize()
 extern "C"
@@ -477,7 +489,7 @@ C_ZNK12QPixelFormat8blueSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->blueSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 184, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 190, column 35>
 //   // proto:  uchar QPixelFormat::cyanSize();
 // _ZNK12QPixelFormat8cyanSizeEv cyanSize()
 extern "C"
@@ -487,7 +499,7 @@ C_ZNK12QPixelFormat8cyanSizeEv(void *qthis) {
   ((QPixelFormat*)qthis)->cyanSize();
   return ret; // 0 TypeKind.UCHAR
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 203, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 209, column 40>
 //   // proto:  QPixelFormat::AlphaUsage QPixelFormat::alphaUsage();
 // _ZNK12QPixelFormat10alphaUsageEv alphaUsage()
 extern "C"
@@ -497,7 +509,7 @@ C_ZNK12QPixelFormat10alphaUsageEv(void *qthis) {
   ((QPixelFormat*)qthis)->alphaUsage();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 172, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 178, column 40>
 //   // proto:  QPixelFormat::ColorModel QPixelFormat::colorModel();
 // _ZNK12QPixelFormat10colorModelEv colorModel()
 extern "C"
@@ -507,7 +519,7 @@ C_ZNK12QPixelFormat10colorModelEv(void *qthis) {
   ((QPixelFormat*)qthis)->colorModel();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 173, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qpixelformat.h', line 179, column 35>
 //   // proto:  uchar QPixelFormat::channelCount();
 // _ZNK12QPixelFormat12channelCountEv channelCount()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qmdiarea.h
 // dst-file: /src/widgets/qmdiarea.cxx
 //
@@ -15,7 +15,6 @@
 
 
 #include <qtabwidget.h>
-#include <qmdisubwindow.h>
 #include <qlist.h>
 #include <qapplication.h>
 #include <qsize.h>
@@ -38,7 +37,7 @@ int QMdiArea_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 134, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 140, column 10>
 //   // proto:  void QMdiArea::activateNextSubWindow();
 // _ZN8QMdiArea21activateNextSubWindowEv activateNextSubWindow()
 extern "C"
@@ -46,7 +45,7 @@ void
 C_ZN8QMdiArea21activateNextSubWindowEv(void *qthis) {
   ((QMdiArea*)qthis)->activateNextSubWindow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 102, column 10>
 //   // proto:  void QMdiArea::setBackground(const QBrush & background);
 // _ZN8QMdiArea13setBackgroundERK6QBrush setBackground(const class QBrush &)
 extern "C"
@@ -60,7 +59,7 @@ extern "C"
 void C_ZN8QMdiAreaD2Ev(void *qthis) {
   delete (QMdiArea*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 108, column 10>
 //   // proto:  bool QMdiArea::testOption(QMdiArea::AreaOption opton);
 // _ZNK8QMdiArea10testOptionENS_10AreaOptionE testOption(enum QMdiArea::AreaOption)
 extern "C"
@@ -71,7 +70,7 @@ QMdiArea::AreaOption arg1) {
   ((QMdiArea*)qthis)->testOption(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 105, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 111, column 14>
 //   // proto:  QMdiArea::ViewMode QMdiArea::viewMode();
 // _ZNK8QMdiArea8viewModeEv viewMode()
 extern "C"
@@ -81,7 +80,7 @@ C_ZNK8QMdiArea8viewModeEv(void *qthis) {
   ((QMdiArea*)qthis)->viewMode();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 99, column 10>
 //   // proto:  void QMdiArea::removeSubWindow(QWidget * widget);
 // _ZN8QMdiArea15removeSubWindowEP7QWidget removeSubWindow(class QWidget *)
 extern "C"
@@ -90,7 +89,7 @@ C_ZN8QMdiArea15removeSubWindowEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QMdiArea*)qthis)->removeSubWindow(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 111, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 117, column 10>
 //   // proto:  void QMdiArea::setTabsClosable(bool closable);
 // _ZN8QMdiArea15setTabsClosableEb setTabsClosable(_Bool)
 extern "C"
@@ -99,7 +98,7 @@ C_ZN8QMdiArea15setTabsClosableEb(void *qthis,
 bool arg1) {
   ((QMdiArea*)qthis)->setTabsClosable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 88, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 94, column 20>
 //   // proto:  QMdiSubWindow * QMdiArea::currentSubWindow();
 // _ZNK8QMdiArea16currentSubWindowEv currentSubWindow()
 extern "C"
@@ -109,7 +108,7 @@ C_ZNK8QMdiArea16currentSubWindowEv(void *qthis) {
   ((QMdiArea*)qthis)->currentSubWindow();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 92, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 98, column 20>
 //   // proto:  QMdiSubWindow * QMdiArea::addSubWindow(QWidget * widget, Qt::WindowFlags flags);
 // _ZN8QMdiArea12addSubWindowEP7QWidget6QFlagsIN2Qt10WindowTypeEE addSubWindow(class QWidget *, Qt::WindowFlags)
 extern "C"
@@ -122,7 +121,7 @@ Qt::WindowFlags* arg2) {
 *((Qt::WindowFlags*)arg2));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 107, column 10>
 //   // proto:  void QMdiArea::setOption(QMdiArea::AreaOption option, bool on);
 // _ZN8QMdiArea9setOptionENS_10AreaOptionEb setOption(enum QMdiArea::AreaOption, _Bool)
 extern "C"
@@ -133,7 +132,7 @@ bool arg2) {
   ((QMdiArea*)qthis)->setOption(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 119, column 26>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 125, column 26>
 //   // proto:  QTabWidget::TabShape QMdiArea::tabShape();
 // _ZNK8QMdiArea8tabShapeEv tabShape()
 extern "C"
@@ -143,7 +142,7 @@ C_ZNK8QMdiArea8tabShapeEv(void *qthis) {
   ((QMdiArea*)qthis)->tabShape();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 105, column 10>
 //   // proto:  void QMdiArea::setActivationOrder(QMdiArea::WindowOrder order);
 // _ZN8QMdiArea18setActivationOrderENS_11WindowOrderE setActivationOrder(enum QMdiArea::WindowOrder)
 extern "C"
@@ -152,7 +151,7 @@ C_ZN8QMdiArea18setActivationOrderENS_11WindowOrderE(void *qthis,
 QMdiArea::WindowOrder arg1) {
   ((QMdiArea*)qthis)->setActivationOrder(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 122, column 29>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 128, column 29>
 //   // proto:  QTabWidget::TabPosition QMdiArea::tabPosition();
 // _ZNK8QMdiArea11tabPositionEv tabPosition()
 extern "C"
@@ -162,7 +161,7 @@ C_ZNK8QMdiArea11tabPositionEv(void *qthis) {
   ((QMdiArea*)qthis)->tabPosition();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 104, column 17>
 //   // proto:  QMdiArea::WindowOrder QMdiArea::activationOrder();
 // _ZNK8QMdiArea15activationOrderEv activationOrder()
 extern "C"
@@ -172,7 +171,7 @@ C_ZNK8QMdiArea15activationOrderEv(void *qthis) {
   ((QMdiArea*)qthis)->activationOrder();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 121, column 10>
 //   // proto:  bool QMdiArea::tabsMovable();
 // _ZNK8QMdiArea11tabsMovableEv tabsMovable()
 extern "C"
@@ -182,7 +181,7 @@ C_ZNK8QMdiArea11tabsMovableEv(void *qthis) {
   ((QMdiArea*)qthis)->tabsMovable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 135, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 141, column 10>
 //   // proto:  void QMdiArea::activatePreviousSubWindow();
 // _ZN8QMdiArea25activatePreviousSubWindowEv activatePreviousSubWindow()
 extern "C"
@@ -190,7 +189,7 @@ void
 C_ZN8QMdiArea25activatePreviousSubWindowEv(void *qthis) {
   ((QMdiArea*)qthis)->activatePreviousSubWindow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 115, column 10>
 //   // proto:  void QMdiArea::setDocumentMode(bool enabled);
 // _ZN8QMdiArea15setDocumentModeEb setDocumentMode(_Bool)
 extern "C"
@@ -199,7 +198,7 @@ C_ZN8QMdiArea15setDocumentModeEb(void *qthis,
 bool arg1) {
   ((QMdiArea*)qthis)->setDocumentMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 114, column 10>
 //   // proto:  bool QMdiArea::documentMode();
 // _ZNK8QMdiArea12documentModeEv documentMode()
 extern "C"
@@ -209,7 +208,7 @@ C_ZNK8QMdiArea12documentModeEv(void *qthis) {
   ((QMdiArea*)qthis)->documentMode();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 90, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 96, column 28>
 //   // proto:  QList<QMdiSubWindow *> QMdiArea::subWindowList(QMdiArea::WindowOrder order);
 // _ZNK8QMdiArea13subWindowListENS_11WindowOrderE subWindowList(enum QMdiArea::WindowOrder)
 extern "C"
@@ -220,7 +219,7 @@ QMdiArea::WindowOrder arg1) {
   ((QMdiArea*)qthis)->subWindowList(arg1);
   return new QList<QMdiSubWindow *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 129, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 135, column 10>
 //   // proto:  void QMdiArea::setActiveSubWindow(QMdiSubWindow * window);
 // _ZN8QMdiArea18setActiveSubWindowEP13QMdiSubWindow setActiveSubWindow(class QMdiSubWindow *)
 extern "C"
@@ -229,7 +228,7 @@ C_ZN8QMdiArea18setActiveSubWindowEP13QMdiSubWindow(void *qthis,
 QMdiSubWindow * arg1) {
   ((QMdiArea*)qthis)->setActiveSubWindow(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 104, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 110, column 10>
 //   // proto:  void QMdiArea::setViewMode(QMdiArea::ViewMode mode);
 // _ZN8QMdiArea11setViewModeENS_8ViewModeE setViewMode(enum QMdiArea::ViewMode)
 extern "C"
@@ -238,7 +237,7 @@ C_ZN8QMdiArea11setViewModeENS_8ViewModeE(void *qthis,
 QMdiArea::ViewMode arg1) {
   ((QMdiArea*)qthis)->setViewMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 89, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 95, column 20>
 //   // proto:  QMdiSubWindow * QMdiArea::activeSubWindow();
 // _ZNK8QMdiArea15activeSubWindowEv activeSubWindow()
 extern "C"
@@ -248,7 +247,7 @@ C_ZNK8QMdiArea15activeSubWindowEv(void *qthis) {
   ((QMdiArea*)qthis)->activeSubWindow();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 114, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 120, column 10>
 //   // proto:  void QMdiArea::setTabsMovable(bool movable);
 // _ZN8QMdiArea14setTabsMovableEb setTabsMovable(_Bool)
 extern "C"
@@ -257,7 +256,7 @@ C_ZN8QMdiArea14setTabsMovableEb(void *qthis,
 bool arg1) {
   ((QMdiArea*)qthis)->setTabsMovable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 56, column 5>
 //   // proto:  const QMetaObject * QMdiArea::metaObject();
 // _ZNK8QMdiArea10metaObjectEv metaObject()
 extern "C"
@@ -267,7 +266,7 @@ C_ZNK8QMdiArea10metaObjectEv(void *qthis) {
   ((QMdiArea*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 82, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 88, column 5>
 //   // proto:  void QMdiArea::QMdiArea(QWidget * parent);
 extern "C"
 QMdiArea*
@@ -275,7 +274,7 @@ C_ZN8QMdiAreaC2EP7QWidget(QWidget * arg1) {
   auto ret = new QMdiArea(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 85, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 91, column 11>
 //   // proto:  QSize QMdiArea::sizeHint();
 // _ZNK8QMdiArea8sizeHintEv sizeHint()
 extern "C"
@@ -285,7 +284,7 @@ C_ZNK8QMdiArea8sizeHintEv(void *qthis) {
   ((QMdiArea*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 133, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 139, column 10>
 //   // proto:  void QMdiArea::closeAllSubWindows();
 // _ZN8QMdiArea18closeAllSubWindowsEv closeAllSubWindows()
 extern "C"
@@ -293,7 +292,7 @@ void
 C_ZN8QMdiArea18closeAllSubWindowsEv(void *qthis) {
   ((QMdiArea*)qthis)->closeAllSubWindows();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 132, column 10>
 //   // proto:  void QMdiArea::subWindowActivated(QMdiSubWindow * );
 // _ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow subWindowActivated(class QMdiSubWindow *)
 extern "C"
@@ -302,7 +301,7 @@ C_ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(void *qthis,
 QMdiSubWindow * arg1) {
   ((QMdiArea*)qthis)->subWindowActivated(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 124, column 10>
 //   // proto:  void QMdiArea::setTabShape(QTabWidget::TabShape shape);
 // _ZN8QMdiArea11setTabShapeEN10QTabWidget8TabShapeE setTabShape(class QTabWidget::TabShape)
 extern "C"
@@ -311,7 +310,7 @@ C_ZN8QMdiArea11setTabShapeEN10QTabWidget8TabShapeE(void *qthis,
 QTabWidget::TabShape* arg1) {
   ((QMdiArea*)qthis)->setTabShape(*((QTabWidget::TabShape*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 137, column 10>
 //   // proto:  void QMdiArea::cascadeSubWindows();
 // _ZN8QMdiArea17cascadeSubWindowsEv cascadeSubWindows()
 extern "C"
@@ -319,7 +318,7 @@ void
 C_ZN8QMdiArea17cascadeSubWindowsEv(void *qthis) {
   ((QMdiArea*)qthis)->cascadeSubWindows();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 132, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 138, column 10>
 //   // proto:  void QMdiArea::closeActiveSubWindow();
 // _ZN8QMdiArea20closeActiveSubWindowEv closeActiveSubWindow()
 extern "C"
@@ -327,7 +326,7 @@ void
 C_ZN8QMdiArea20closeActiveSubWindowEv(void *qthis) {
   ((QMdiArea*)qthis)->closeActiveSubWindow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 95, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 101, column 12>
 //   // proto:  QBrush QMdiArea::background();
 // _ZNK8QMdiArea10backgroundEv background()
 extern "C"
@@ -337,7 +336,7 @@ C_ZNK8QMdiArea10backgroundEv(void *qthis) {
   ((QMdiArea*)qthis)->background();
   return new QBrush(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 136, column 10>
 //   // proto:  void QMdiArea::tileSubWindows();
 // _ZN8QMdiArea14tileSubWindowsEv tileSubWindows()
 extern "C"
@@ -345,7 +344,7 @@ void
 C_ZN8QMdiArea14tileSubWindowsEv(void *qthis) {
   ((QMdiArea*)qthis)->tileSubWindows();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 112, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 118, column 10>
 //   // proto:  bool QMdiArea::tabsClosable();
 // _ZNK8QMdiArea12tabsClosableEv tabsClosable()
 extern "C"
@@ -355,7 +354,7 @@ C_ZNK8QMdiArea12tabsClosableEv(void *qthis) {
   ((QMdiArea*)qthis)->tabsClosable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 127, column 10>
 //   // proto:  void QMdiArea::setTabPosition(QTabWidget::TabPosition position);
 // _ZN8QMdiArea14setTabPositionEN10QTabWidget11TabPositionE setTabPosition(class QTabWidget::TabPosition)
 extern "C"
@@ -364,7 +363,7 @@ C_ZN8QMdiArea14setTabPositionEN10QTabWidget11TabPositionE(void *qthis,
 QTabWidget::TabPosition* arg1) {
   ((QMdiArea*)qthis)->setTabPosition(*((QTabWidget::TabPosition*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 86, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmdiarea.h', line 92, column 11>
 //   // proto:  QSize QMdiArea::minimumSizeHint();
 // _ZNK8QMdiArea15minimumSizeHintEv minimumSizeHint()
 extern "C"

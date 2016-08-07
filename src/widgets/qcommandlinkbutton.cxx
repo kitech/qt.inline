@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qcommandlinkbutton.h
 // dst-file: /src/widgets/qcommandlinkbutton.cxx
 //
@@ -33,17 +33,19 @@ int QCommandLinkButton_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 54, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 60, column 14>
 //   // proto:  void QCommandLinkButton::QCommandLinkButton(const QString & text, const QString & description, QWidget * parent);
 extern "C"
 QCommandLinkButton*
 C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(const QString* arg1,
 const QString* arg2,
 QWidget * arg3) {
-  auto ret = new QCommandLinkButton(*((const QString*)arg1), *((const QString*)arg2), arg3);
+  auto ret = new QCommandLinkButton(*((const QString*)arg1),
+*((const QString*)arg2),
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 46, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 52, column 5>
 //   // proto:  const QMetaObject * QCommandLinkButton::metaObject();
 // _ZNK18QCommandLinkButton10metaObjectEv metaObject()
 extern "C"
@@ -58,7 +60,7 @@ extern "C"
 void C_ZN18QCommandLinkButtonD2Ev(void *qthis) {
   delete (QCommandLinkButton*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 58, column 14>
 //   // proto:  void QCommandLinkButton::QCommandLinkButton(QWidget * parent);
 extern "C"
 QCommandLinkButton*
@@ -66,7 +68,7 @@ C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * arg1) {
   auto ret = new QCommandLinkButton(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 57, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 63, column 13>
 //   // proto:  QString QCommandLinkButton::description();
 // _ZNK18QCommandLinkButton11descriptionEv description()
 extern "C"
@@ -76,16 +78,17 @@ C_ZNK18QCommandLinkButton11descriptionEv(void *qthis) {
   ((QCommandLinkButton*)qthis)->description();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 59, column 14>
 //   // proto:  void QCommandLinkButton::QCommandLinkButton(const QString & text, QWidget * parent);
 extern "C"
 QCommandLinkButton*
 C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QCommandLinkButton(*((const QString*)arg1), arg2);
+  auto ret = new QCommandLinkButton(*((const QString*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommandlinkbutton.h', line 64, column 10>
 //   // proto:  void QCommandLinkButton::setDescription(const QString & description);
 // _ZN18QCommandLinkButton14setDescriptionERK7QString setDescription(const class QString &)
 extern "C"

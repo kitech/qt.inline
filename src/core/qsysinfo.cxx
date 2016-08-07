@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qsysinfo.h
 // dst-file: /src/core/qsysinfo.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qsysinfo_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 118, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 125, column 23>
 //   // proto: static QSysInfo::WinVersion QSysInfo::windowsVersion();
 if (true) {
   auto f = [](QSysInfo flythis) {
@@ -29,7 +29,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QSysInfo14windowsVersionEv windowsVersion()
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 177, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 184, column 23>
 //   // proto: static QSysInfo::MacVersion QSysInfo::macVersion();
 if (true) {
   auto f = [](QSysInfo flythis) {
@@ -53,7 +53,7 @@ int QSysInfo_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 184, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 191, column 20>
 //   // proto: static QString QSysInfo::kernelType();
 // _ZN8QSysInfo10kernelTypeEv kernelType()
 extern "C"
@@ -63,7 +63,17 @@ C_ZN8QSysInfo10kernelTypeEv() {
   QSysInfo::kernelType();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 118, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 197, column 20>
+//   // proto: static QString QSysInfo::machineHostName();
+// _ZN8QSysInfo15machineHostNameEv machineHostName()
+extern "C"
+QString*
+C_ZN8QSysInfo15machineHostNameEv() {
+  auto ret =
+  QSysInfo::machineHostName();
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 125, column 23>
 //   // proto: static QSysInfo::WinVersion QSysInfo::windowsVersion();
 // _ZN8QSysInfo14windowsVersionEv windowsVersion()
 extern "C"
@@ -73,7 +83,7 @@ C_ZN8QSysInfo14windowsVersionEv() {
   QSysInfo::windowsVersion();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 177, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 184, column 23>
 //   // proto: static QSysInfo::MacVersion QSysInfo::macVersion();
 // _ZN8QSysInfo10macVersionEv macVersion()
 extern "C"
@@ -83,7 +93,7 @@ C_ZN8QSysInfo10macVersionEv() {
   QSysInfo::macVersion();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 186, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 193, column 20>
 //   // proto: static QString QSysInfo::productType();
 // _ZN8QSysInfo11productTypeEv productType()
 extern "C"
@@ -93,7 +103,7 @@ C_ZN8QSysInfo11productTypeEv() {
   QSysInfo::productType();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 188, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 195, column 20>
 //   // proto: static QString QSysInfo::prettyProductName();
 // _ZN8QSysInfo17prettyProductNameEv prettyProductName()
 extern "C"
@@ -103,7 +113,7 @@ C_ZN8QSysInfo17prettyProductNameEv() {
   QSysInfo::prettyProductName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 181, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 188, column 20>
 //   // proto: static QString QSysInfo::currentCpuArchitecture();
 // _ZN8QSysInfo22currentCpuArchitectureEv currentCpuArchitecture()
 extern "C"
@@ -113,7 +123,7 @@ C_ZN8QSysInfo22currentCpuArchitectureEv() {
   QSysInfo::currentCpuArchitecture();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 180, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 187, column 20>
 //   // proto: static QString QSysInfo::buildCpuArchitecture();
 // _ZN8QSysInfo20buildCpuArchitectureEv buildCpuArchitecture()
 extern "C"
@@ -123,7 +133,7 @@ C_ZN8QSysInfo20buildCpuArchitectureEv() {
   QSysInfo::buildCpuArchitecture();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 185, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 192, column 20>
 //   // proto: static QString QSysInfo::kernelVersion();
 // _ZN8QSysInfo13kernelVersionEv kernelVersion()
 extern "C"
@@ -133,7 +143,7 @@ C_ZN8QSysInfo13kernelVersionEv() {
   QSysInfo::kernelVersion();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 187, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 194, column 20>
 //   // proto: static QString QSysInfo::productVersion();
 // _ZN8QSysInfo14productVersionEv productVersion()
 extern "C"
@@ -143,7 +153,7 @@ C_ZN8QSysInfo14productVersionEv() {
   QSysInfo::productVersion();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 182, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qsysinfo.h', line 189, column 20>
 //   // proto: static QString QSysInfo::buildAbi();
 // _ZN8QSysInfo8buildAbiEv buildAbi()
 extern "C"

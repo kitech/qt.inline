@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstackedwidget.h
 // dst-file: /src/widgets/qstackedwidget.cxx
 //
@@ -32,7 +32,7 @@ int QStackedWidget_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 74, column 10>
 //   // proto:  void QStackedWidget::setCurrentIndex(int index);
 // _ZN14QStackedWidget15setCurrentIndexEi setCurrentIndex(int)
 extern "C"
@@ -41,7 +41,7 @@ C_ZN14QStackedWidget15setCurrentIndexEi(void *qthis,
 int arg1) {
   ((QStackedWidget*)qthis)->setCurrentIndex(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 59, column 14>
 //   // proto:  void QStackedWidget::QStackedWidget(QWidget * parent);
 extern "C"
 QStackedWidget*
@@ -49,7 +49,7 @@ C_ZN14QStackedWidgetC2EP7QWidget(QWidget * arg1) {
   auto ret = new QStackedWidget(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 60, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 66, column 14>
 //   // proto:  QWidget * QStackedWidget::currentWidget();
 // _ZNK14QStackedWidget13currentWidgetEv currentWidget()
 extern "C"
@@ -59,7 +59,7 @@ C_ZNK14QStackedWidget13currentWidgetEv(void *qthis) {
   ((QStackedWidget*)qthis)->currentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 79, column 10>
 //   // proto:  void QStackedWidget::widgetRemoved(int index);
 // _ZN14QStackedWidget13widgetRemovedEi widgetRemoved(int)
 extern "C"
@@ -68,7 +68,7 @@ C_ZN14QStackedWidget13widgetRemovedEi(void *qthis,
 int arg1) {
   ((QStackedWidget*)qthis)->widgetRemoved(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 57, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 63, column 9>
 //   // proto:  int QStackedWidget::insertWidget(int index, QWidget * w);
 // _ZN14QStackedWidget12insertWidgetEiP7QWidget insertWidget(int, class QWidget *)
 extern "C"
@@ -81,7 +81,7 @@ QWidget * arg2) {
 arg2);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 63, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 69, column 9>
 //   // proto:  int QStackedWidget::indexOf(QWidget * );
 // _ZNK14QStackedWidget7indexOfEP7QWidget indexOf(class QWidget *)
 extern "C"
@@ -92,7 +92,7 @@ QWidget * arg1) {
   ((QStackedWidget*)qthis)->indexOf(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 64, column 10>
 //   // proto:  void QStackedWidget::removeWidget(QWidget * w);
 // _ZN14QStackedWidget12removeWidgetEP7QWidget removeWidget(class QWidget *)
 extern "C"
@@ -101,7 +101,7 @@ C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QStackedWidget*)qthis)->removeWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 64, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 70, column 14>
 //   // proto:  QWidget * QStackedWidget::widget(int );
 // _ZNK14QStackedWidget6widgetEi widget(int)
 extern "C"
@@ -112,7 +112,7 @@ int arg1) {
   ((QStackedWidget*)qthis)->widget(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 78, column 10>
 //   // proto:  void QStackedWidget::currentChanged(int );
 // _ZN14QStackedWidget14currentChangedEi currentChanged(int)
 extern "C"
@@ -121,7 +121,7 @@ C_ZN14QStackedWidget14currentChangedEi(void *qthis,
 int arg1) {
   ((QStackedWidget*)qthis)->currentChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 56, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 62, column 9>
 //   // proto:  int QStackedWidget::addWidget(QWidget * w);
 // _ZN14QStackedWidget9addWidgetEP7QWidget addWidget(class QWidget *)
 extern "C"
@@ -132,7 +132,7 @@ QWidget * arg1) {
   ((QStackedWidget*)qthis)->addWidget(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 61, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 67, column 9>
 //   // proto:  int QStackedWidget::currentIndex();
 // _ZNK14QStackedWidget12currentIndexEv currentIndex()
 extern "C"
@@ -142,7 +142,7 @@ C_ZNK14QStackedWidget12currentIndexEv(void *qthis) {
   ((QStackedWidget*)qthis)->currentIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 65, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 71, column 9>
 //   // proto:  int QStackedWidget::count();
 // _ZNK14QStackedWidget5countEv count()
 extern "C"
@@ -152,7 +152,7 @@ C_ZNK14QStackedWidget5countEv(void *qthis) {
   ((QStackedWidget*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 75, column 10>
 //   // proto:  void QStackedWidget::setCurrentWidget(QWidget * w);
 // _ZN14QStackedWidget16setCurrentWidgetEP7QWidget setCurrentWidget(class QWidget *)
 extern "C"
@@ -166,7 +166,7 @@ extern "C"
 void C_ZN14QStackedWidgetD2Ev(void *qthis) {
   delete (QStackedWidget*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedwidget.h', line 54, column 5>
 //   // proto:  const QMetaObject * QStackedWidget::metaObject();
 // _ZNK14QStackedWidget10metaObjectEv metaObject()
 extern "C"

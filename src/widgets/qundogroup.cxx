@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qundogroup.h
 // dst-file: /src/widgets/qundogroup.cxx
 //
@@ -14,7 +14,6 @@
 #include <qundogroup.h>
 
 
-#include <qundostack.h>
 #include <qlist.h>
 #include <qapplication.h>
 #include <qstring.h>
@@ -36,7 +35,7 @@ int QUndoGroup_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 64, column 10>
 //   // proto:  void QUndoGroup::addStack(QUndoStack * stack);
 // _ZN10QUndoGroup8addStackEP10QUndoStack addStack(class QUndoStack *)
 extern "C"
@@ -45,7 +44,7 @@ C_ZN10QUndoGroup8addStackEP10QUndoStack(void *qthis,
 QUndoStack * arg1) {
   ((QUndoGroup*)qthis)->addStack(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 82, column 10>
 //   // proto:  void QUndoGroup::undo();
 // _ZN10QUndoGroup4undoEv undo()
 extern "C"
@@ -53,7 +52,7 @@ void
 C_ZN10QUndoGroup4undoEv(void *qthis) {
   ((QUndoGroup*)qthis)->undo();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 60, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 66, column 24>
 //   // proto:  QList<QUndoStack *> QUndoGroup::stacks();
 // _ZNK10QUndoGroup6stacksEv stacks()
 extern "C"
@@ -63,7 +62,7 @@ C_ZNK10QUndoGroup6stacksEv(void *qthis) {
   ((QUndoGroup*)qthis)->stacks();
   return new QList<QUndoStack *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 91, column 10>
 //   // proto:  void QUndoGroup::canRedoChanged(bool canRedo);
 // _ZN10QUndoGroup14canRedoChangedEb canRedoChanged(_Bool)
 extern "C"
@@ -72,7 +71,7 @@ C_ZN10QUndoGroup14canRedoChangedEb(void *qthis,
 bool arg1) {
   ((QUndoGroup*)qthis)->canRedoChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 89, column 10>
 //   // proto:  void QUndoGroup::cleanChanged(bool clean);
 // _ZN10QUndoGroup12cleanChangedEb cleanChanged(_Bool)
 extern "C"
@@ -81,7 +80,7 @@ C_ZN10QUndoGroup12cleanChangedEb(void *qthis,
 bool arg1) {
   ((QUndoGroup*)qthis)->cleanChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 90, column 10>
 //   // proto:  void QUndoGroup::canUndoChanged(bool canUndo);
 // _ZN10QUndoGroup14canUndoChangedEb canUndoChanged(_Bool)
 extern "C"
@@ -90,7 +89,7 @@ C_ZN10QUndoGroup14canUndoChangedEb(void *qthis,
 bool arg1) {
   ((QUndoGroup*)qthis)->canUndoChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 83, column 10>
 //   // proto:  void QUndoGroup::redo();
 // _ZN10QUndoGroup4redoEv redo()
 extern "C"
@@ -98,7 +97,7 @@ void
 C_ZN10QUndoGroup4redoEv(void *qthis) {
   ((QUndoGroup*)qthis)->redo();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 61, column 14>
 //   // proto:  void QUndoGroup::QUndoGroup(QObject * parent);
 extern "C"
 QUndoGroup*
@@ -106,7 +105,7 @@ C_ZN10QUndoGroupC2EP7QObject(QObject * arg1) {
   auto ret = new QUndoGroup(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 84, column 10>
 //   // proto:  void QUndoGroup::setActiveStack(QUndoStack * stack);
 // _ZN10QUndoGroup14setActiveStackEP10QUndoStack setActiveStack(class QUndoStack *)
 extern "C"
@@ -115,7 +114,7 @@ C_ZN10QUndoGroup14setActiveStackEP10QUndoStack(void *qthis,
 QUndoStack * arg1) {
   ((QUndoGroup*)qthis)->setActiveStack(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 66, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 72, column 14>
 //   // proto:  QAction * QUndoGroup::createRedoAction(QObject * parent, const QString & prefix);
 // _ZNK10QUndoGroup16createRedoActionEP7QObjectRK7QString createRedoAction(class QObject *, const class QString &)
 extern "C"
@@ -128,7 +127,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 57, column 5>
 //   // proto:  const QMetaObject * QUndoGroup::metaObject();
 // _ZNK10QUndoGroup10metaObjectEv metaObject()
 extern "C"
@@ -138,7 +137,7 @@ C_ZNK10QUndoGroup10metaObjectEv(void *qthis) {
   ((QUndoGroup*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 76, column 10>
 //   // proto:  bool QUndoGroup::canRedo();
 // _ZNK10QUndoGroup7canRedoEv canRedo()
 extern "C"
@@ -148,7 +147,7 @@ C_ZNK10QUndoGroup7canRedoEv(void *qthis) {
   ((QUndoGroup*)qthis)->canRedo();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 72, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 78, column 13>
 //   // proto:  QString QUndoGroup::redoText();
 // _ZNK10QUndoGroup8redoTextEv redoText()
 extern "C"
@@ -158,7 +157,7 @@ C_ZNK10QUndoGroup8redoTextEv(void *qthis) {
   ((QUndoGroup*)qthis)->redoText();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 61, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 67, column 17>
 //   // proto:  QUndoStack * QUndoGroup::activeStack();
 // _ZNK10QUndoGroup11activeStackEv activeStack()
 extern "C"
@@ -168,7 +167,7 @@ C_ZNK10QUndoGroup11activeStackEv(void *qthis) {
   ((QUndoGroup*)qthis)->activeStack();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 71, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 77, column 13>
 //   // proto:  QString QUndoGroup::undoText();
 // _ZNK10QUndoGroup8undoTextEv undoText()
 extern "C"
@@ -178,7 +177,7 @@ C_ZNK10QUndoGroup8undoTextEv(void *qthis) {
   ((QUndoGroup*)qthis)->undoText();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 88, column 10>
 //   // proto:  void QUndoGroup::indexChanged(int idx);
 // _ZN10QUndoGroup12indexChangedEi indexChanged(int)
 extern "C"
@@ -187,7 +186,7 @@ C_ZN10QUndoGroup12indexChangedEi(void *qthis,
 int arg1) {
   ((QUndoGroup*)qthis)->indexChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 75, column 10>
 //   // proto:  bool QUndoGroup::canUndo();
 // _ZNK10QUndoGroup7canUndoEv canUndo()
 extern "C"
@@ -202,7 +201,7 @@ extern "C"
 void C_ZN10QUndoGroupD2Ev(void *qthis) {
   delete (QUndoGroup*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 87, column 10>
 //   // proto:  void QUndoGroup::activeStackChanged(QUndoStack * stack);
 // _ZN10QUndoGroup18activeStackChangedEP10QUndoStack activeStackChanged(class QUndoStack *)
 extern "C"
@@ -211,7 +210,7 @@ C_ZN10QUndoGroup18activeStackChangedEP10QUndoStack(void *qthis,
 QUndoStack * arg1) {
   ((QUndoGroup*)qthis)->activeStackChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 92, column 10>
 //   // proto:  void QUndoGroup::undoTextChanged(const QString & undoText);
 // _ZN10QUndoGroup15undoTextChangedERK7QString undoTextChanged(const class QString &)
 extern "C"
@@ -220,7 +219,7 @@ C_ZN10QUndoGroup15undoTextChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QUndoGroup*)qthis)->undoTextChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 79, column 10>
 //   // proto:  bool QUndoGroup::isClean();
 // _ZNK10QUndoGroup7isCleanEv isClean()
 extern "C"
@@ -230,7 +229,7 @@ C_ZNK10QUndoGroup7isCleanEv(void *qthis) {
   ((QUndoGroup*)qthis)->isClean();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 87, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 93, column 10>
 //   // proto:  void QUndoGroup::redoTextChanged(const QString & redoText);
 // _ZN10QUndoGroup15redoTextChangedERK7QString redoTextChanged(const class QString &)
 extern "C"
@@ -239,7 +238,7 @@ C_ZN10QUndoGroup15redoTextChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QUndoGroup*)qthis)->redoTextChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 64, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 70, column 14>
 //   // proto:  QAction * QUndoGroup::createUndoAction(QObject * parent, const QString & prefix);
 // _ZNK10QUndoGroup16createUndoActionEP7QObjectRK7QString createUndoAction(class QObject *, const class QString &)
 extern "C"
@@ -252,7 +251,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qundogroup.h', line 65, column 10>
 //   // proto:  void QUndoGroup::removeStack(QUndoStack * stack);
 // _ZN10QUndoGroup11removeStackEP10QUndoStack removeStack(class QUndoStack *)
 extern "C"

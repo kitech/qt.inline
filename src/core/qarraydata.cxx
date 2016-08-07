@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qarraydata.h
 // dst-file: /src/core/qarraydata.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qarraydata_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 116, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 122, column 24>
 //   // proto: static QArrayData * QArrayData::sharedNull();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -28,7 +28,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN10QArrayData10sharedNullEv sharedNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 58, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 64, column 17>
 //   // proto:  const void * QArrayData::data();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -38,7 +38,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QArrayData4dataEv data()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 101, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 107, column 23>
 //   // proto:  AllocationOptions QArrayData::cloneFlags();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -48,7 +48,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QArrayData10cloneFlagsEv cloneFlags()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 51, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 57, column 11>
 //   // proto:  void * QArrayData::data();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -58,7 +58,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN10QArrayData4dataEv data()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 74, column 10>
 //   // proto:  bool QArrayData::isMutable();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -68,7 +68,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QArrayData9isMutableEv isMutable()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 93, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 99, column 23>
 //   // proto:  AllocationOptions QArrayData::detachFlags();
 if (true) {
   auto f = [](QArrayData flythis) {
@@ -78,7 +78,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QArrayData11detachFlagsEv detachFlags()
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 86, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 92, column 12>
 //   // proto:  int QArrayData::detachCapacity(int newSize);
 if (true) {
   auto f = [](QArrayData flythis, int arg1) {
@@ -102,7 +102,7 @@ int QArrayData_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 116, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 122, column 24>
 //   // proto: static QArrayData * QArrayData::sharedNull();
 // _ZN10QArrayData10sharedNullEv sharedNull()
 extern "C"
@@ -112,7 +112,7 @@ C_ZN10QArrayData10sharedNullEv() {
   QArrayData::sharedNull();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 109, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 115, column 24>
 //   // proto: static QArrayData * QArrayData::allocate(int objectSize, int alignment, int capacity, AllocationOptions options);
 // _ZN10QArrayData8allocateEiii6QFlagsINS_16AllocationOptionEE allocate(int, int, int, AllocationOptions)
 extern "C"
@@ -128,7 +128,7 @@ arg3,
 arg4);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 58, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 64, column 17>
 //   // proto:  const void * QArrayData::data();
 // _ZNK10QArrayData4dataEv data()
 extern "C"
@@ -138,7 +138,7 @@ C_ZNK10QArrayData4dataEv(void *qthis) {
   ((QArrayData*)qthis)->data();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 101, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 107, column 23>
 //   // proto:  AllocationOptions QArrayData::cloneFlags();
 // _ZNK10QArrayData10cloneFlagsEv cloneFlags()
 extern "C"
@@ -148,7 +148,7 @@ C_ZNK10QArrayData10cloneFlagsEv(void *qthis) {
   ((QArrayData*)qthis)->cloneFlags();
   return new QFlags<QArrayData::AllocationOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 51, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 57, column 11>
 //   // proto:  void * QArrayData::data();
 // _ZN10QArrayData4dataEv data()
 extern "C"
@@ -158,7 +158,7 @@ C_ZN10QArrayData4dataEv(void *qthis) {
   ((QArrayData*)qthis)->data();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 112, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 118, column 17>
 //   // proto: static void QArrayData::deallocate(QArrayData * data, int objectSize, int alignment);
 // _ZN10QArrayData10deallocateEPS_ii deallocate(struct QArrayData *, int, int)
 extern "C"
@@ -170,7 +170,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 74, column 10>
 //   // proto:  bool QArrayData::isMutable();
 // _ZNK10QArrayData9isMutableEv isMutable()
 extern "C"
@@ -180,7 +180,7 @@ C_ZNK10QArrayData9isMutableEv(void *qthis) {
   ((QArrayData*)qthis)->isMutable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 93, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 99, column 23>
 //   // proto:  AllocationOptions QArrayData::detachFlags();
 // _ZNK10QArrayData11detachFlagsEv detachFlags()
 extern "C"
@@ -190,7 +190,7 @@ C_ZNK10QArrayData11detachFlagsEv(void *qthis) {
   ((QArrayData*)qthis)->detachFlags();
   return new QFlags<QArrayData::AllocationOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 86, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qarraydata.h', line 92, column 12>
 //   // proto:  int QArrayData::detachCapacity(int newSize);
 // _ZNK10QArrayData14detachCapacityEi detachCapacity(int)
 extern "C"

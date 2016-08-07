@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qsystemtrayicon.h
 // dst-file: /src/widgets/qsystemtrayicon.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qsystemtrayicon_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 102, column 17>
 //   // proto:  void QSystemTrayIcon::hide();
 if (true) {
   auto f = [](QSystemTrayIcon flythis) {
@@ -31,7 +31,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN15QSystemTrayIcon4hideEv hide()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 95, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 101, column 17>
 //   // proto:  void QSystemTrayIcon::show();
 if (true) {
   auto f = [](QSystemTrayIcon flythis) {
@@ -60,7 +60,7 @@ extern "C"
 void C_ZN15QSystemTrayIconD2Ev(void *qthis) {
   delete (QSystemTrayIcon*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 94, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 100, column 10>
 //   // proto:  void QSystemTrayIcon::setVisible(bool visible);
 // _ZN15QSystemTrayIcon10setVisibleEb setVisible(_Bool)
 extern "C"
@@ -69,7 +69,7 @@ C_ZN15QSystemTrayIcon10setVisibleEb(void *qthis,
 bool arg1) {
   ((QSystemTrayIcon*)qthis)->setVisible(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 82, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 88, column 13>
 //   // proto:  QString QSystemTrayIcon::toolTip();
 // _ZNK15QSystemTrayIcon7toolTipEv toolTip()
 extern "C"
@@ -79,16 +79,17 @@ C_ZNK15QSystemTrayIcon7toolTipEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->toolTip();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 63, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 69, column 5>
 //   // proto:  void QSystemTrayIcon::QSystemTrayIcon(const QIcon & icon, QObject * parent);
 extern "C"
 QSystemTrayIcon*
 C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(const QIcon* arg1,
 QObject * arg2) {
-  auto ret = new QSystemTrayIcon(*((const QIcon*)arg1), arg2);
+  auto ret = new QSystemTrayIcon(*((const QIcon*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 102, column 17>
 //   // proto:  void QSystemTrayIcon::hide();
 // _ZN15QSystemTrayIcon4hideEv hide()
 extern "C"
@@ -96,7 +97,7 @@ void
 C_ZN15QSystemTrayIcon4hideEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->hide();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 56, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 62, column 5>
 //   // proto:  const QMetaObject * QSystemTrayIcon::metaObject();
 // _ZNK15QSystemTrayIcon10metaObjectEv metaObject()
 extern "C"
@@ -106,7 +107,7 @@ C_ZNK15QSystemTrayIcon10metaObjectEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 86, column 10>
 //   // proto:  void QSystemTrayIcon::setIcon(const QIcon & icon);
 // _ZN15QSystemTrayIcon7setIconERK5QIcon setIcon(const class QIcon &)
 extern "C"
@@ -115,7 +116,7 @@ C_ZN15QSystemTrayIcon7setIconERK5QIcon(void *qthis,
 const QIcon* arg1) {
   ((QSystemTrayIcon*)qthis)->setIcon(*((const QIcon*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 107, column 10>
 //   // proto:  void QSystemTrayIcon::activated(QSystemTrayIcon::ActivationReason reason);
 // _ZN15QSystemTrayIcon9activatedENS_16ActivationReasonE activated(class QSystemTrayIcon::ActivationReason)
 extern "C"
@@ -124,7 +125,7 @@ C_ZN15QSystemTrayIcon9activatedENS_16ActivationReasonE(void *qthis,
 QSystemTrayIcon::ActivationReason* arg1) {
   ((QSystemTrayIcon*)qthis)->activated(*((QSystemTrayIcon::ActivationReason*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 97, column 10>
 //   // proto:  bool QSystemTrayIcon::isVisible();
 // _ZNK15QSystemTrayIcon9isVisibleEv isVisible()
 extern "C"
@@ -134,7 +135,7 @@ C_ZNK15QSystemTrayIcon9isVisibleEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->isVisible();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 62, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 68, column 5>
 //   // proto:  void QSystemTrayIcon::QSystemTrayIcon(QObject * parent);
 extern "C"
 QSystemTrayIcon*
@@ -142,7 +143,7 @@ C_ZN15QSystemTrayIconC2EP7QObject(QObject * arg1) {
   auto ret = new QSystemTrayIcon(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 95, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 101, column 17>
 //   // proto:  void QSystemTrayIcon::show();
 // _ZN15QSystemTrayIcon4showEv show()
 extern "C"
@@ -150,7 +151,7 @@ void
 C_ZN15QSystemTrayIcon4showEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->show();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 86, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 92, column 17>
 //   // proto: static bool QSystemTrayIcon::supportsMessages();
 // _ZN15QSystemTrayIcon16supportsMessagesEv supportsMessages()
 extern "C"
@@ -160,7 +161,7 @@ C_ZN15QSystemTrayIcon16supportsMessagesEv() {
   QSystemTrayIcon::supportsMessages();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 108, column 10>
 //   // proto:  void QSystemTrayIcon::messageClicked();
 // _ZN15QSystemTrayIcon14messageClickedEv messageClicked()
 extern "C"
@@ -168,7 +169,7 @@ void
 C_ZN15QSystemTrayIcon14messageClickedEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->messageClicked();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 81, column 10>
 //   // proto:  void QSystemTrayIcon::setContextMenu(QMenu * menu);
 // _ZN15QSystemTrayIcon14setContextMenuEP5QMenu setContextMenu(class QMenu *)
 extern "C"
@@ -177,7 +178,7 @@ C_ZN15QSystemTrayIcon14setContextMenuEP5QMenu(void *qthis,
 QMenu * arg1) {
   ((QSystemTrayIcon*)qthis)->setContextMenu(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 97, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 103, column 10>
 //   // proto:  void QSystemTrayIcon::showMessage(const QString & title, const QString & msg, QSystemTrayIcon::MessageIcon icon, int msecs);
 // _ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi showMessage(const class QString &, const class QString &, class QSystemTrayIcon::MessageIcon, int)
 extern "C"
@@ -192,7 +193,7 @@ int arg4) {
 *((QSystemTrayIcon::MessageIcon*)arg3),
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 90, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 96, column 11>
 //   // proto:  QRect QSystemTrayIcon::geometry();
 // _ZNK15QSystemTrayIcon8geometryEv geometry()
 extern "C"
@@ -202,7 +203,7 @@ C_ZNK15QSystemTrayIcon8geometryEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 89, column 10>
 //   // proto:  void QSystemTrayIcon::setToolTip(const QString & tip);
 // _ZN15QSystemTrayIcon10setToolTipERK7QString setToolTip(const class QString &)
 extern "C"
@@ -211,7 +212,7 @@ C_ZN15QSystemTrayIcon10setToolTipERK7QString(void *qthis,
 const QString* arg1) {
   ((QSystemTrayIcon*)qthis)->setToolTip(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 79, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 85, column 11>
 //   // proto:  QIcon QSystemTrayIcon::icon();
 // _ZNK15QSystemTrayIcon4iconEv icon()
 extern "C"
@@ -221,7 +222,7 @@ C_ZNK15QSystemTrayIcon4iconEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->icon();
   return new QIcon(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 76, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 82, column 12>
 //   // proto:  QMenu * QSystemTrayIcon::contextMenu();
 // _ZNK15QSystemTrayIcon11contextMenuEv contextMenu()
 extern "C"
@@ -231,7 +232,7 @@ C_ZNK15QSystemTrayIcon11contextMenuEv(void *qthis) {
   ((QSystemTrayIcon*)qthis)->contextMenu();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 85, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsystemtrayicon.h', line 91, column 17>
 //   // proto: static bool QSystemTrayIcon::isSystemTrayAvailable();
 // _ZN15QSystemTrayIcon21isSystemTrayAvailableEv isSystemTrayAvailable()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qsplashscreen.h
 // dst-file: /src/widgets/qsplashscreen.cxx
 //
@@ -34,7 +34,7 @@ int QSplashScreen_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 54, column 5>
 //   // proto:  const QMetaObject * QSplashScreen::metaObject();
 // _ZNK13QSplashScreen10metaObjectEv metaObject()
 extern "C"
@@ -49,16 +49,17 @@ extern "C"
 void C_ZN13QSplashScreenD2Ev(void *qthis) {
   delete (QSplashScreen*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 50, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 56, column 14>
 //   // proto:  void QSplashScreen::QSplashScreen(const QPixmap & pixmap, Qt::WindowFlags f);
 extern "C"
 QSplashScreen*
 C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(const QPixmap* arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QSplashScreen(*((const QPixmap*)arg1), *((Qt::WindowFlags*)arg2));
+  auto ret = new QSplashScreen(*((const QPixmap*)arg1),
+*((Qt::WindowFlags*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 69, column 10>
 //   // proto:  void QSplashScreen::clearMessage();
 // _ZN13QSplashScreen12clearMessageEv clearMessage()
 extern "C"
@@ -66,7 +67,7 @@ void
 C_ZN13QSplashScreen12clearMessageEv(void *qthis) {
   ((QSplashScreen*)qthis)->clearMessage();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 55, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 61, column 19>
 //   // proto:  const QPixmap QSplashScreen::pixmap();
 // _ZNK13QSplashScreen6pixmapEv pixmap()
 extern "C"
@@ -76,7 +77,7 @@ C_ZNK13QSplashScreen6pixmapEv(void *qthis) {
   ((QSplashScreen*)qthis)->pixmap();
   return new QPixmap(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 72, column 10>
 //   // proto:  void QSplashScreen::messageChanged(const QString & message);
 // _ZN13QSplashScreen14messageChangedERK7QString messageChanged(const class QString &)
 extern "C"
@@ -85,7 +86,7 @@ C_ZN13QSplashScreen14messageChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QSplashScreen*)qthis)->messageChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 67, column 10>
 //   // proto:  void QSplashScreen::showMessage(const QString & message, int alignment, const QColor & color);
 // _ZN13QSplashScreen11showMessageERK7QStringiRK6QColor showMessage(const class QString &, int, const class QColor &)
 extern "C"
@@ -98,7 +99,7 @@ const QColor* arg3) {
 arg2,
 *((const QColor*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 60, column 10>
 //   // proto:  void QSplashScreen::setPixmap(const QPixmap & pixmap);
 // _ZN13QSplashScreen9setPixmapERK7QPixmap setPixmap(const class QPixmap &)
 extern "C"
@@ -107,7 +108,7 @@ C_ZN13QSplashScreen9setPixmapERK7QPixmap(void *qthis,
 const QPixmap* arg1) {
   ((QSplashScreen*)qthis)->setPixmap(*((const QPixmap*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 58, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 64, column 13>
 //   // proto:  QString QSplashScreen::message();
 // _ZNK13QSplashScreen7messageEv message()
 extern "C"
@@ -117,7 +118,7 @@ C_ZNK13QSplashScreen7messageEv(void *qthis) {
   ((QSplashScreen*)qthis)->message();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 63, column 10>
 //   // proto:  void QSplashScreen::repaint();
 // _ZN13QSplashScreen7repaintEv repaint()
 extern "C"
@@ -125,7 +126,7 @@ void
 C_ZN13QSplashScreen7repaintEv(void *qthis) {
   ((QSplashScreen*)qthis)->repaint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 62, column 10>
 //   // proto:  void QSplashScreen::finish(QWidget * w);
 // _ZN13QSplashScreen6finishEP7QWidget finish(class QWidget *)
 extern "C"
@@ -134,14 +135,16 @@ C_ZN13QSplashScreen6finishEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QSplashScreen*)qthis)->finish(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsplashscreen.h', line 57, column 5>
 //   // proto:  void QSplashScreen::QSplashScreen(QWidget * parent, const QPixmap & pixmap, Qt::WindowFlags f);
 extern "C"
 QSplashScreen*
 C_ZN13QSplashScreenC2EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 const QPixmap* arg2,
 Qt::WindowFlags* arg3) {
-  auto ret = new QSplashScreen(arg1, *((const QPixmap*)arg2), *((Qt::WindowFlags*)arg3));
+  auto ret = new QSplashScreen(arg1,
+*((const QPixmap*)arg2),
+*((Qt::WindowFlags*)arg3));
   return ret;
 }
 // <= ext block end

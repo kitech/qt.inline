@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qgenericpluginfactory.h
 // dst-file: /src/gui/qgenericpluginfactory.cxx
 //
@@ -33,7 +33,7 @@ int QGenericPluginFactory_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qgenericpluginfactory.h', line 49, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qgenericpluginfactory.h', line 55, column 21>
 //   // proto: static QObject * QGenericPluginFactory::create(const QString & , const QString & );
 // _ZN21QGenericPluginFactory6createERK7QStringS2_ create(const class QString &, const class QString &)
 extern "C"
@@ -45,7 +45,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qgenericpluginfactory.h', line 48, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qgenericpluginfactory.h', line 54, column 24>
 //   // proto: static QStringList QGenericPluginFactory::keys();
 // _ZN21QGenericPluginFactory4keysEv keys()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qfontdialog.h
 // dst-file: /src/widgets/qfontdialog.cxx
 //
@@ -33,7 +33,7 @@ int QFontDialog_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 68, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 74, column 14>
 //   // proto:  void QFontDialog::QFontDialog(QWidget * parent);
 extern "C"
 QFontDialog*
@@ -41,7 +41,7 @@ C_ZN11QFontDialogC2EP7QWidget(QWidget * arg1) {
   auto ret = new QFontDialog(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 85, column 10>
 //   // proto:  void QFontDialog::setOptions(FontDialogOptions options);
 // _ZN11QFontDialog10setOptionsE6QFlagsINS_16FontDialogOptionEE setOptions(FontDialogOptions)
 extern "C"
@@ -50,7 +50,7 @@ C_ZN11QFontDialog10setOptionsE6QFlagsINS_16FontDialogOptionEE(void *qthis,
 QFontDialog::FontDialogOptions arg1) {
   ((QFontDialog*)qthis)->setOptions(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 84, column 10>
 //   // proto:  bool QFontDialog::testOption(QFontDialog::FontDialogOption option);
 // _ZNK11QFontDialog10testOptionENS_16FontDialogOptionE testOption(enum QFontDialog::FontDialogOption)
 extern "C"
@@ -61,7 +61,7 @@ QFontDialog::FontDialogOption arg1) {
   ((QFontDialog*)qthis)->testOption(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 80, column 23>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 86, column 23>
 //   // proto:  FontDialogOptions QFontDialog::options();
 // _ZNK11QFontDialog7optionsEv options()
 extern "C"
@@ -71,7 +71,7 @@ C_ZNK11QFontDialog7optionsEv(void *qthis) {
   ((QFontDialog*)qthis)->options();
   return new QFlags<QFontDialog::FontDialogOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 98, column 10>
 //   // proto:  void QFontDialog::currentFontChanged(const QFont & font);
 // _ZN11QFontDialog18currentFontChangedERK5QFont currentFontChanged(const class QFont &)
 extern "C"
@@ -80,7 +80,7 @@ C_ZN11QFontDialog18currentFontChangedERK5QFont(void *qthis,
 const QFont* arg1) {
   ((QFontDialog*)qthis)->currentFontChanged(*((const QFont*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 89, column 10>
 //   // proto:  void QFontDialog::open(QObject * receiver, const char * member);
 // _ZN11QFontDialog4openEP7QObjectPKc open(class QObject *, const char *)
 extern "C"
@@ -91,16 +91,17 @@ const char * arg2) {
   ((QFontDialog*)qthis)->open(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 69, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 75, column 14>
 //   // proto:  void QFontDialog::QFontDialog(const QFont & initial, QWidget * parent);
 extern "C"
 QFontDialog*
 C_ZN11QFontDialogC2ERK5QFontP7QWidget(const QFont* arg1,
 QWidget * arg2) {
-  auto ret = new QFontDialog(*((const QFont*)arg1), arg2);
+  auto ret = new QFontDialog(*((const QFont*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 73, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 79, column 11>
 //   // proto:  QFont QFontDialog::currentFont();
 // _ZNK11QFontDialog11currentFontEv currentFont()
 extern "C"
@@ -110,7 +111,7 @@ C_ZNK11QFontDialog11currentFontEv(void *qthis) {
   ((QFontDialog*)qthis)->currentFont();
   return new QFont(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 91, column 10>
 //   // proto:  void QFontDialog::setVisible(bool visible);
 // _ZN11QFontDialog10setVisibleEb setVisible(_Bool)
 extern "C"
@@ -124,7 +125,7 @@ extern "C"
 void C_ZN11QFontDialogD2Ev(void *qthis) {
   delete (QFontDialog*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 88, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 94, column 18>
 //   // proto: static QFont QFontDialog::getFont(bool * ok, const QFont & initial, QWidget * parent, const QString & title, FontDialogOptions options);
 // _ZN11QFontDialog7getFontEPbRK5QFontP7QWidgetRK7QString6QFlagsINS_16FontDialogOptionEE getFont(_Bool *, const class QFont &, class QWidget *, const class QString &, FontDialogOptions)
 extern "C"
@@ -142,7 +143,7 @@ arg3,
 arg5);
   return new QFont(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 99, column 10>
 //   // proto:  void QFontDialog::fontSelected(const QFont & font);
 // _ZN11QFontDialog12fontSelectedERK5QFont fontSelected(const class QFont &)
 extern "C"
@@ -151,7 +152,7 @@ C_ZN11QFontDialog12fontSelectedERK5QFont(void *qthis,
 const QFont* arg1) {
   ((QFontDialog*)qthis)->fontSelected(*((const QFont*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 87, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 93, column 18>
 //   // proto: static QFont QFontDialog::getFont(bool * ok, QWidget * parent);
 // _ZN11QFontDialog7getFontEPbP7QWidget getFont(_Bool *, class QWidget *)
 extern "C"
@@ -163,7 +164,7 @@ QWidget * arg2) {
 arg2);
   return new QFont(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 56, column 5>
 //   // proto:  const QMetaObject * QFontDialog::metaObject();
 // _ZNK11QFontDialog10metaObjectEv metaObject()
 extern "C"
@@ -173,7 +174,7 @@ C_ZNK11QFontDialog10metaObjectEv(void *qthis) {
   ((QFontDialog*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 83, column 10>
 //   // proto:  void QFontDialog::setOption(QFontDialog::FontDialogOption option, bool on);
 // _ZN11QFontDialog9setOptionENS_16FontDialogOptionEb setOption(enum QFontDialog::FontDialogOption, _Bool)
 extern "C"
@@ -184,7 +185,7 @@ bool arg2) {
   ((QFontDialog*)qthis)->setOption(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 75, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 81, column 11>
 //   // proto:  QFont QFontDialog::selectedFont();
 // _ZNK11QFontDialog12selectedFontEv selectedFont()
 extern "C"
@@ -194,7 +195,7 @@ C_ZNK11QFontDialog12selectedFontEv(void *qthis) {
   ((QFontDialog*)qthis)->selectedFont();
   return new QFont(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfontdialog.h', line 78, column 10>
 //   // proto:  void QFontDialog::setCurrentFont(const QFont & font);
 // _ZN11QFontDialog14setCurrentFontERK5QFont setCurrentFont(const class QFont &)
 extern "C"

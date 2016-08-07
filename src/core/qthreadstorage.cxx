@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qthreadstorage.h
 // dst-file: /src/core/qthreadstorage.cxx
 //
@@ -32,7 +32,7 @@ int QThreadStorageData_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 51, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 57, column 12>
 //   // proto:  void ** QThreadStorageData::set(void * p);
 // _ZN18QThreadStorageData3setEPv set(void *)
 extern "C"
@@ -43,7 +43,7 @@ void * arg1) {
   ((QThreadStorageData*)qthis)->set(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 50, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 56, column 12>
 //   // proto:  void ** QThreadStorageData::get();
 // _ZNK18QThreadStorageData3getEv get()
 extern "C"
@@ -53,7 +53,7 @@ C_ZNK18QThreadStorageData3getEv(void *qthis) {
   ((QThreadStorageData*)qthis)->get();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 53, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 59, column 17>
 //   // proto: static void QThreadStorageData::finish(void ** );
 // _ZN18QThreadStorageData6finishEPPv finish(void **)
 extern "C"
@@ -66,7 +66,7 @@ extern "C"
 void C_ZN18QThreadStorageDataD2Ev(void *qthis) {
   delete (QThreadStorageData*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 47, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 53, column 14>
 //   // proto:  void QThreadStorageData::QThreadStorageData(void (*)(void *) func);
 extern "C"
 QThreadStorageData*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qabstractitemmodel.h
 // dst-file: /src/core/qabstractitemmodel.cxx
 //
@@ -26,7 +26,7 @@
 
 // main block begin =>
 void __keep_qabstractitemmodel_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 52, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 58, column 29>
 //   // proto:  void QModelIndex::QModelIndex();
 if (true) {
   auto f = []() {
@@ -34,7 +34,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 55, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 61, column 33>
 //   // proto:  int QModelIndex::column();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -44,7 +44,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex6columnEv column()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 56, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 62, column 38>
 //   // proto:  quintptr QModelIndex::internalId();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -54,7 +54,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex10internalIdEv internalId()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 60, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 66, column 24>
 //   // proto:  QModelIndex QModelIndex::child(int row, int column);
 if (true) {
   auto f = [](QModelIndex flythis, int arg1, int arg2) {
@@ -64,7 +64,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex5childEii child(int, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 57, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 63, column 18>
 //   // proto:  void * QModelIndex::internalPointer();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -74,7 +74,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex15internalPointerEv internalPointer()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 64, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 70, column 34>
 //   // proto:  bool QModelIndex::isValid();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -84,7 +84,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex7isValidEv isValid()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 58, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 64, column 24>
 //   // proto:  QModelIndex QModelIndex::parent();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -94,7 +94,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex6parentEv parent()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 59, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 65, column 24>
 //   // proto:  QModelIndex QModelIndex::sibling(int row, int column);
 if (true) {
   auto f = [](QModelIndex flythis, int arg1, int arg2) {
@@ -104,7 +104,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex7siblingEii sibling(int, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 63, column 55>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 69, column 55>
 //   // proto:  const QAbstractItemModel * QModelIndex::model();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -114,7 +114,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex5modelEv model()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 61, column 21>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 67, column 21>
 //   // proto:  QVariant QModelIndex::data(int role);
 if (true) {
   auto f = [](QModelIndex flythis, int arg1) {
@@ -124,7 +124,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex4dataEi data(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 62, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 68, column 26>
 //   // proto:  Qt::ItemFlags QModelIndex::flags();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -134,7 +134,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex5flagsEv flags()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 54, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 60, column 33>
 //   // proto:  int QModelIndex::row();
 if (true) {
   auto f = [](QModelIndex flythis) {
@@ -144,7 +144,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QModelIndex3rowEv row()
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 109, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 115, column 12>
 //   // proto:  void QPersistentModelIndex::QPersistentModelIndex(QPersistentModelIndex && other);
 if (true) {
   auto f = [](QPersistentModelIndex && arg1) {
@@ -152,7 +152,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 114, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 120, column 17>
 //   // proto:  void QPersistentModelIndex::swap(QPersistentModelIndex & other);
 if (true) {
   auto f = [](QPersistentModelIndex flythis, QPersistentModelIndex & arg1) {
@@ -162,7 +162,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN21QPersistentModelIndex4swapERS_ swap(class QPersistentModelIndex &)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 217, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 223, column 17>
 //   // proto:  bool QAbstractItemModel::moveColumn(const QModelIndex & sourceParent, int sourceColumn, const QModelIndex & destinationParent, int destinationChild);
 if (true) {
   auto f = [](const QModelIndex & arg1, int arg2, const QModelIndex & arg3, int arg4) {
@@ -171,7 +171,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QAbstractItemModel10moveColumnERK11QModelIndexiS2_i moveColumn(const class QModelIndex &, int, const class QModelIndex &, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 211, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 217, column 17>
 //   // proto:  bool QAbstractItemModel::insertRow(int row, const QModelIndex & parent);
 if (true) {
   auto f = [](int arg1, const QModelIndex & arg2) {
@@ -180,7 +180,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QAbstractItemModel9insertRowEiRK11QModelIndex insertRow(int, const class QModelIndex &)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 213, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 219, column 17>
 //   // proto:  bool QAbstractItemModel::removeRow(int row, const QModelIndex & parent);
 if (true) {
   auto f = [](int arg1, const QModelIndex & arg2) {
@@ -189,7 +189,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QAbstractItemModel9removeRowEiRK11QModelIndex removeRow(int, const class QModelIndex &)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 215, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 221, column 17>
 //   // proto:  bool QAbstractItemModel::moveRow(const QModelIndex & sourceParent, int sourceRow, const QModelIndex & destinationParent, int destinationChild);
 if (true) {
   auto f = [](const QModelIndex & arg1, int arg2, const QModelIndex & arg3, int arg4) {
@@ -198,7 +198,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QAbstractItemModel7moveRowERK11QModelIndexiS2_i moveRow(const class QModelIndex &, int, const class QModelIndex &, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 214, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 220, column 17>
 //   // proto:  bool QAbstractItemModel::removeColumn(int column, const QModelIndex & parent);
 if (true) {
   auto f = [](int arg1, const QModelIndex & arg2) {
@@ -207,7 +207,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QAbstractItemModel12removeColumnEiRK11QModelIndex removeColumn(int, const class QModelIndex &)
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 212, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 218, column 17>
 //   // proto:  bool QAbstractItemModel::insertColumn(int column, const QModelIndex & parent);
 if (true) {
   auto f = [](int arg1, const QModelIndex & arg2) {
@@ -254,7 +254,7 @@ int QAbstractListModel_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 52, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 58, column 29>
 //   // proto:  void QModelIndex::QModelIndex();
 extern "C"
 QModelIndex*
@@ -262,7 +262,7 @@ C_ZN11QModelIndexC2Ev() {
   auto ret = new QModelIndex();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 55, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 61, column 33>
 //   // proto:  int QModelIndex::column();
 // _ZNK11QModelIndex6columnEv column()
 extern "C"
@@ -272,7 +272,7 @@ C_ZNK11QModelIndex6columnEv(void *qthis) {
   ((QModelIndex*)qthis)->column();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 56, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 62, column 38>
 //   // proto:  quintptr QModelIndex::internalId();
 // _ZNK11QModelIndex10internalIdEv internalId()
 extern "C"
@@ -282,7 +282,7 @@ C_ZNK11QModelIndex10internalIdEv(void *qthis) {
   ((QModelIndex*)qthis)->internalId();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 60, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 66, column 24>
 //   // proto:  QModelIndex QModelIndex::child(int row, int column);
 // _ZNK11QModelIndex5childEii child(int, int)
 extern "C"
@@ -295,7 +295,7 @@ int arg2) {
 arg2);
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 57, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 63, column 18>
 //   // proto:  void * QModelIndex::internalPointer();
 // _ZNK11QModelIndex15internalPointerEv internalPointer()
 extern "C"
@@ -305,7 +305,7 @@ C_ZNK11QModelIndex15internalPointerEv(void *qthis) {
   ((QModelIndex*)qthis)->internalPointer();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 64, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 70, column 34>
 //   // proto:  bool QModelIndex::isValid();
 // _ZNK11QModelIndex7isValidEv isValid()
 extern "C"
@@ -315,7 +315,7 @@ C_ZNK11QModelIndex7isValidEv(void *qthis) {
   ((QModelIndex*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 58, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 64, column 24>
 //   // proto:  QModelIndex QModelIndex::parent();
 // _ZNK11QModelIndex6parentEv parent()
 extern "C"
@@ -325,7 +325,7 @@ C_ZNK11QModelIndex6parentEv(void *qthis) {
   ((QModelIndex*)qthis)->parent();
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 59, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 65, column 24>
 //   // proto:  QModelIndex QModelIndex::sibling(int row, int column);
 // _ZNK11QModelIndex7siblingEii sibling(int, int)
 extern "C"
@@ -338,7 +338,7 @@ int arg2) {
 arg2);
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 63, column 55>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 69, column 55>
 //   // proto:  const QAbstractItemModel * QModelIndex::model();
 // _ZNK11QModelIndex5modelEv model()
 extern "C"
@@ -348,7 +348,7 @@ C_ZNK11QModelIndex5modelEv(void *qthis) {
   ((QModelIndex*)qthis)->model();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 61, column 21>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 67, column 21>
 //   // proto:  QVariant QModelIndex::data(int role);
 // _ZNK11QModelIndex4dataEi data(int)
 extern "C"
@@ -359,7 +359,7 @@ int arg1) {
   ((QModelIndex*)qthis)->data(arg1);
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 62, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 68, column 26>
 //   // proto:  Qt::ItemFlags QModelIndex::flags();
 // _ZNK11QModelIndex5flagsEv flags()
 extern "C"
@@ -369,7 +369,7 @@ C_ZNK11QModelIndex5flagsEv(void *qthis) {
   ((QModelIndex*)qthis)->flags();
   return new QFlags<Qt::ItemFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 54, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 60, column 33>
 //   // proto:  int QModelIndex::row();
 // _ZNK11QModelIndex3rowEv row()
 extern "C"
@@ -379,7 +379,7 @@ C_ZNK11QModelIndex3rowEv(void *qthis) {
   ((QModelIndex*)qthis)->row();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 124, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 130, column 17>
 //   // proto:  QModelIndex QPersistentModelIndex::sibling(int row, int column);
 // _ZNK21QPersistentModelIndex7siblingEii sibling(int, int)
 extern "C"
@@ -392,7 +392,7 @@ int arg2) {
 arg2);
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 126, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 132, column 14>
 //   // proto:  QVariant QPersistentModelIndex::data(int role);
 // _ZNK21QPersistentModelIndex4dataEi data(int)
 extern "C"
@@ -403,7 +403,7 @@ int arg1) {
   ((QPersistentModelIndex*)qthis)->data(arg1);
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 127, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 133, column 19>
 //   // proto:  Qt::ItemFlags QPersistentModelIndex::flags();
 // _ZNK21QPersistentModelIndex5flagsEv flags()
 extern "C"
@@ -413,7 +413,7 @@ C_ZNK21QPersistentModelIndex5flagsEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->flags();
   return new QFlags<Qt::ItemFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 123, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 129, column 17>
 //   // proto:  QModelIndex QPersistentModelIndex::parent();
 // _ZNK21QPersistentModelIndex6parentEv parent()
 extern "C"
@@ -423,7 +423,7 @@ C_ZNK21QPersistentModelIndex6parentEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->parent();
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 101, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 107, column 5>
 //   // proto:  void QPersistentModelIndex::QPersistentModelIndex(const QPersistentModelIndex & other);
 extern "C"
 QPersistentModelIndex*
@@ -431,7 +431,7 @@ C_ZN21QPersistentModelIndexC2ERKS_(const QPersistentModelIndex* arg1) {
   auto ret = new QPersistentModelIndex(*((const QPersistentModelIndex*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 121, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 127, column 11>
 //   // proto:  void * QPersistentModelIndex::internalPointer();
 // _ZNK21QPersistentModelIndex15internalPointerEv internalPointer()
 extern "C"
@@ -441,7 +441,7 @@ C_ZNK21QPersistentModelIndex15internalPointerEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->internalPointer();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 109, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 115, column 12>
 //   // proto:  void QPersistentModelIndex::QPersistentModelIndex(QPersistentModelIndex && other);
 extern "C"
 QPersistentModelIndex*
@@ -449,7 +449,7 @@ C_ZN21QPersistentModelIndexC2EOS_(QPersistentModelIndex* arg1) {
   auto ret = new QPersistentModelIndex(*((QPersistentModelIndex*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 119, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 125, column 9>
 //   // proto:  int QPersistentModelIndex::row();
 // _ZNK21QPersistentModelIndex3rowEv row()
 extern "C"
@@ -459,7 +459,7 @@ C_ZNK21QPersistentModelIndex3rowEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->row();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 122, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 128, column 14>
 //   // proto:  quintptr QPersistentModelIndex::internalId();
 // _ZNK21QPersistentModelIndex10internalIdEv internalId()
 extern "C"
@@ -469,7 +469,7 @@ C_ZNK21QPersistentModelIndex10internalIdEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->internalId();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 128, column 31>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 134, column 31>
 //   // proto:  const QAbstractItemModel * QPersistentModelIndex::model();
 // _ZNK21QPersistentModelIndex5modelEv model()
 extern "C"
@@ -484,7 +484,7 @@ extern "C"
 void C_ZN21QPersistentModelIndexD2Ev(void *qthis) {
   delete (QPersistentModelIndex*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 100, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 106, column 5>
 //   // proto:  void QPersistentModelIndex::QPersistentModelIndex(const QModelIndex & index);
 extern "C"
 QPersistentModelIndex*
@@ -492,7 +492,7 @@ C_ZN21QPersistentModelIndexC2ERK11QModelIndex(const QModelIndex* arg1) {
   auto ret = new QPersistentModelIndex(*((const QModelIndex*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 99, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 105, column 5>
 //   // proto:  void QPersistentModelIndex::QPersistentModelIndex();
 extern "C"
 QPersistentModelIndex*
@@ -500,7 +500,7 @@ C_ZN21QPersistentModelIndexC2Ev() {
   auto ret = new QPersistentModelIndex();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 120, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 126, column 9>
 //   // proto:  int QPersistentModelIndex::column();
 // _ZNK21QPersistentModelIndex6columnEv column()
 extern "C"
@@ -510,7 +510,7 @@ C_ZNK21QPersistentModelIndex6columnEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->column();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 114, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 120, column 17>
 //   // proto:  void QPersistentModelIndex::swap(QPersistentModelIndex & other);
 // _ZN21QPersistentModelIndex4swapERS_ swap(class QPersistentModelIndex &)
 extern "C"
@@ -519,7 +519,7 @@ C_ZN21QPersistentModelIndex4swapERS_(void *qthis,
 QPersistentModelIndex* arg1) {
   ((QPersistentModelIndex*)qthis)->swap(*((QPersistentModelIndex*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 125, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 131, column 17>
 //   // proto:  QModelIndex QPersistentModelIndex::child(int row, int column);
 // _ZNK21QPersistentModelIndex5childEii child(int, int)
 extern "C"
@@ -532,7 +532,7 @@ int arg2) {
 arg2);
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 129, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 135, column 10>
 //   // proto:  bool QPersistentModelIndex::isValid();
 // _ZNK21QPersistentModelIndex7isValidEv isValid()
 extern "C"
@@ -542,7 +542,7 @@ C_ZNK21QPersistentModelIndex7isValidEv(void *qthis) {
   ((QPersistentModelIndex*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 368, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 374, column 19>
 //   // proto:  Qt::ItemFlags QAbstractTableModel::flags(const QModelIndex & index);
 // _ZNK19QAbstractTableModel5flagsERK11QModelIndex flags(const class QModelIndex &)
 extern "C"
@@ -553,14 +553,14 @@ const QModelIndex* arg1) {
   ((QAbstractTableModel*)qthis)->flags(*((const QModelIndex*)arg1));
   return new QFlags<Qt::ItemFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 360, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 366, column 14>
 //   // proto:  void QAbstractTableModel::QAbstractTableModel(QObject * parent);
 extern "C"
 QAbstractTableModel*
 C_ZN19QAbstractTableModelC2EP7QObject(QObject * arg1) {
   // auto ret = new QAbstractTableModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 363, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 369, column 17>
 //   // proto:  QModelIndex QAbstractTableModel::index(int row, int column, const QModelIndex & parent);
 // _ZNK19QAbstractTableModel5indexEiiRK11QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
@@ -575,7 +575,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 364, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 370, column 17>
 //   // proto:  QModelIndex QAbstractTableModel::sibling(int row, int column, const QModelIndex & idx);
 // _ZNK19QAbstractTableModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
@@ -595,7 +595,7 @@ extern "C"
 void C_ZN19QAbstractTableModelD2Ev(void *qthis) {
   delete (QAbstractTableModel*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 357, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 363, column 5>
 //   // proto:  const QMetaObject * QAbstractTableModel::metaObject();
 // _ZNK19QAbstractTableModel10metaObjectEv metaObject()
 extern "C"
@@ -605,7 +605,7 @@ C_ZNK19QAbstractTableModel10metaObjectEv(void *qthis) {
   ((QAbstractTableModel*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 365, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 371, column 10>
 //   // proto:  bool QAbstractTableModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
 // _ZN19QAbstractTableModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -624,7 +624,7 @@ arg4,
 *((const QModelIndex*)arg5));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 205, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 211, column 18>
 //   // proto:  bool QAbstractItemModel::removeColumns(int column, int count, const QModelIndex & parent);
 // _ZN18QAbstractItemModel13removeColumnsEiiRK11QModelIndex removeColumns(int, int, const class QModelIndex &)
 extern "C"
@@ -639,7 +639,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 223, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 229, column 18>
 //   // proto:  void QAbstractItemModel::sort(int column, Qt::SortOrder order);
 // _ZN18QAbstractItemModel4sortEiN2Qt9SortOrderE sort(int, Qt::SortOrder)
 extern "C"
@@ -650,7 +650,7 @@ Qt::SortOrder* arg2) {
   ((QAbstractItemModel*)qthis)->sort(arg1,
 *((Qt::SortOrder*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 190, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 196, column 18>
 //   // proto:  bool QAbstractItemModel::canDropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
 // _ZNK18QAbstractItemModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex canDropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -669,7 +669,7 @@ arg4,
 *((const QModelIndex*)arg5));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 189, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 195, column 24>
 //   // proto:  QMimeData * QAbstractItemModel::mimeData(const QModelIndexList & indexes);
 // _ZNK18QAbstractItemModel8mimeDataERK5QListI11QModelIndexE mimeData(const QModelIndexList &)
 extern "C"
@@ -680,7 +680,7 @@ const QModelIndexList* arg1) {
   ((QAbstractItemModel*)qthis)->mimeData(*((const QModelIndexList*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 244, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 250, column 10>
 //   // proto:  void QAbstractItemModel::dataChanged(const QModelIndex & topLeft, const QModelIndex & bottomRight, const QVector<int> & roles);
 // _ZN18QAbstractItemModel11dataChangedERK11QModelIndexS2_RK7QVectorIiE dataChanged(const class QModelIndex &, const class QModelIndex &, const QVector<int> &)
 extern "C"
@@ -698,7 +698,7 @@ extern "C"
 void C_ZN18QAbstractItemModelD2Ev(void *qthis) {
   delete (QAbstractItemModel*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 221, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 227, column 30>
 //   // proto:  bool QAbstractItemModel::canFetchMore(const QModelIndex & parent);
 // _ZNK18QAbstractItemModel12canFetchMoreERK11QModelIndex canFetchMore(const class QModelIndex &)
 extern "C"
@@ -709,7 +709,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->canFetchMore(*((const QModelIndex*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 271, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 277, column 18>
 //   // proto:  bool QAbstractItemModel::submit();
 // _ZN18QAbstractItemModel6submitEv submit()
 extern "C"
@@ -719,7 +719,7 @@ C_ZN18QAbstractItemModel6submitEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->submit();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 167, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 173, column 22>
 //   // proto:  bool QAbstractItemModel::hasIndex(int row, int column, const QModelIndex & parent);
 // _ZNK18QAbstractItemModel8hasIndexEiiRK11QModelIndex hasIndex(int, int, const class QModelIndex &)
 extern "C"
@@ -734,7 +734,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 222, column 39>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 228, column 39>
 //   // proto:  Qt::ItemFlags QAbstractItemModel::flags(const QModelIndex & index);
 // _ZNK18QAbstractItemModel5flagsERK11QModelIndex flags(const class QModelIndex &)
 extern "C"
@@ -745,7 +745,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->flags(*((const QModelIndex*)arg1));
   return new QFlags<Qt::ItemFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 194, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 200, column 29>
 //   // proto:  Qt::DropActions QAbstractItemModel::supportedDropActions();
 // _ZNK18QAbstractItemModel20supportedDropActionsEv supportedDropActions()
 extern "C"
@@ -755,7 +755,7 @@ C_ZNK18QAbstractItemModel20supportedDropActionsEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->supportedDropActions();
   return new QFlags<Qt::DropAction>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 246, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 252, column 10>
 //   // proto:  void QAbstractItemModel::layoutChanged(const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint);
 // _ZN18QAbstractItemModel13layoutChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE layoutChanged(const QList<class QPersistentModelIndex> &, class QAbstractItemModel::LayoutChangeHint)
 extern "C"
@@ -766,7 +766,7 @@ QAbstractItemModel::LayoutChangeHint* arg2) {
   ((QAbstractItemModel*)qthis)->layoutChanged(*((const QList<QPersistentModelIndex>*)arg1),
 *((QAbstractItemModel::LayoutChangeHint*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 231, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 237, column 35>
 //   // proto:  QHash<int, QByteArray> QAbstractItemModel::roleNames();
 // _ZNK18QAbstractItemModel9roleNamesEv roleNames()
 extern "C"
@@ -776,7 +776,7 @@ C_ZNK18QAbstractItemModel9roleNamesEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->roleNames();
   return new QHash<int, QByteArray>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 217, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 223, column 17>
 //   // proto:  bool QAbstractItemModel::moveColumn(const QModelIndex & sourceParent, int sourceColumn, const QModelIndex & destinationParent, int destinationChild);
 // _ZN18QAbstractItemModel10moveColumnERK11QModelIndexiS2_i moveColumn(const class QModelIndex &, int, const class QModelIndex &, int)
 extern "C"
@@ -793,7 +793,7 @@ arg2,
 arg4);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 220, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 226, column 30>
 //   // proto:  void QAbstractItemModel::fetchMore(const QModelIndex & parent);
 // _ZN18QAbstractItemModel9fetchMoreERK11QModelIndex fetchMore(const class QModelIndex &)
 extern "C"
@@ -802,7 +802,7 @@ C_ZN18QAbstractItemModel9fetchMoreERK11QModelIndex(void *qthis,
 const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->fetchMore(*((const QModelIndex*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 245, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 251, column 10>
 //   // proto:  void QAbstractItemModel::headerDataChanged(Qt::Orientation orientation, int first, int last);
 // _ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii headerDataChanged(Qt::Orientation, int, int)
 extern "C"
@@ -815,7 +815,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 202, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 208, column 18>
 //   // proto:  bool QAbstractItemModel::insertRows(int row, int count, const QModelIndex & parent);
 // _ZN18QAbstractItemModel10insertRowsEiiRK11QModelIndex insertRows(int, int, const class QModelIndex &)
 extern "C"
@@ -830,7 +830,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 229, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 235, column 19>
 //   // proto:  QSize QAbstractItemModel::span(const QModelIndex & index);
 // _ZNK18QAbstractItemModel4spanERK11QModelIndex span(const class QModelIndex &)
 extern "C"
@@ -841,7 +841,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->span(*((const QModelIndex*)arg1));
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 186, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 192, column 18>
 //   // proto:  bool QAbstractItemModel::setItemData(const QModelIndex & index, const QMap<int, QVariant> & roles);
 // _ZN18QAbstractItemModel11setItemDataERK11QModelIndexRK4QMapIi8QVariantE setItemData(const class QModelIndex &, const QMap<int, class QVariant> &)
 extern "C"
@@ -854,14 +854,14 @@ const QMap<int, QVariant>* arg2) {
 *((const QMap<int, QVariant>*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 164, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 170, column 14>
 //   // proto:  void QAbstractItemModel::QAbstractItemModel(QObject * parent);
 extern "C"
 QAbstractItemModel*
 C_ZN18QAbstractItemModelC2EP7QObject(QObject * arg1) {
   // auto ret = new QAbstractItemModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 182, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 188, column 18>
 //   // proto:  bool QAbstractItemModel::setHeaderData(int section, Qt::Orientation orientation, const QVariant & value, int role);
 // _ZN18QAbstractItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti setHeaderData(int, Qt::Orientation, const class QVariant &, int)
 extern "C"
@@ -878,7 +878,7 @@ int arg4) {
 arg4);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 168, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 174, column 37>
 //   // proto:  QModelIndex QAbstractItemModel::index(int row, int column, const QModelIndex & parent);
 // _ZNK18QAbstractItemModel5indexEiiRK11QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
@@ -893,7 +893,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 211, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 217, column 17>
 //   // proto:  bool QAbstractItemModel::insertRow(int row, const QModelIndex & parent);
 // _ZN18QAbstractItemModel9insertRowEiRK11QModelIndex insertRow(int, const class QModelIndex &)
 extern "C"
@@ -906,7 +906,7 @@ const QModelIndex* arg2) {
 *((const QModelIndex*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 157, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 163, column 5>
 //   // proto:  const QMetaObject * QAbstractItemModel::metaObject();
 // _ZNK18QAbstractItemModel10metaObjectEv metaObject()
 extern "C"
@@ -916,7 +916,7 @@ C_ZNK18QAbstractItemModel10metaObjectEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 213, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 219, column 17>
 //   // proto:  bool QAbstractItemModel::removeRow(int row, const QModelIndex & parent);
 // _ZN18QAbstractItemModel9removeRowEiRK11QModelIndex removeRow(int, const class QModelIndex &)
 extern "C"
@@ -929,7 +929,7 @@ const QModelIndex* arg2) {
 *((const QModelIndex*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 178, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 184, column 30>
 //   // proto:  bool QAbstractItemModel::setData(const QModelIndex & index, const QVariant & value, int role);
 // _ZN18QAbstractItemModel7setDataERK11QModelIndexRK8QVarianti setData(const class QModelIndex &, const class QVariant &, int)
 extern "C"
@@ -944,7 +944,7 @@ int arg3) {
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 196, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 202, column 29>
 //   // proto:  Qt::DropActions QAbstractItemModel::supportedDragActions();
 // _ZNK18QAbstractItemModel20supportedDragActionsEv supportedDragActions()
 extern "C"
@@ -954,7 +954,7 @@ C_ZNK18QAbstractItemModel20supportedDragActionsEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->supportedDragActions();
   return new QFlags<Qt::DropAction>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 173, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 179, column 29>
 //   // proto:  int QAbstractItemModel::rowCount(const QModelIndex & parent);
 // _ZNK18QAbstractItemModel8rowCountERK11QModelIndex rowCount(const class QModelIndex &)
 extern "C"
@@ -965,7 +965,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->rowCount(*((const QModelIndex*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 204, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 210, column 18>
 //   // proto:  bool QAbstractItemModel::removeRows(int row, int count, const QModelIndex & parent);
 // _ZN18QAbstractItemModel10removeRowsEiiRK11QModelIndex removeRows(int, int, const class QModelIndex &)
 extern "C"
@@ -980,7 +980,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 175, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 181, column 30>
 //   // proto:  bool QAbstractItemModel::hasChildren(const QModelIndex & parent);
 // _ZNK18QAbstractItemModel11hasChildrenERK11QModelIndex hasChildren(const class QModelIndex &)
 extern "C"
@@ -991,7 +991,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->hasChildren(*((const QModelIndex*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 247, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 253, column 10>
 //   // proto:  void QAbstractItemModel::layoutAboutToBeChanged(const QList<QPersistentModelIndex> & parents, QAbstractItemModel::LayoutChangeHint hint);
 // _ZN18QAbstractItemModel22layoutAboutToBeChangedERK5QListI21QPersistentModelIndexENS_16LayoutChangeHintE layoutAboutToBeChanged(const QList<class QPersistentModelIndex> &, class QAbstractItemModel::LayoutChangeHint)
 extern "C"
@@ -1002,7 +1002,7 @@ QAbstractItemModel::LayoutChangeHint* arg2) {
   ((QAbstractItemModel*)qthis)->layoutAboutToBeChanged(*((const QList<QPersistentModelIndex>*)arg1),
 *((QAbstractItemModel::LayoutChangeHint*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 215, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 221, column 17>
 //   // proto:  bool QAbstractItemModel::moveRow(const QModelIndex & sourceParent, int sourceRow, const QModelIndex & destinationParent, int destinationChild);
 // _ZN18QAbstractItemModel7moveRowERK11QModelIndexiS2_i moveRow(const class QModelIndex &, int, const class QModelIndex &, int)
 extern "C"
@@ -1019,7 +1019,7 @@ arg2,
 arg4);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 192, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 198, column 18>
 //   // proto:  bool QAbstractItemModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
 // _ZN18QAbstractItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -1038,7 +1038,7 @@ arg4,
 *((const QModelIndex*)arg5));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 272, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 278, column 18>
 //   // proto:  void QAbstractItemModel::revert();
 // _ZN18QAbstractItemModel6revertEv revert()
 extern "C"
@@ -1046,7 +1046,7 @@ void
 C_ZN18QAbstractItemModel6revertEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->revert();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 225, column 41>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 231, column 41>
 //   // proto:  QModelIndexList QAbstractItemModel::match(const QModelIndex & start, int role, const QVariant & value, int hits, Qt::MatchFlags flags);
 // _ZNK18QAbstractItemModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
 extern "C"
@@ -1065,7 +1065,7 @@ arg4,
 *((Qt::MatchFlags*)arg5));
   return new QList<QModelIndex>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 214, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 220, column 17>
 //   // proto:  bool QAbstractItemModel::removeColumn(int column, const QModelIndex & parent);
 // _ZN18QAbstractItemModel12removeColumnEiRK11QModelIndex removeColumn(int, const class QModelIndex &)
 extern "C"
@@ -1078,7 +1078,7 @@ const QModelIndex* arg2) {
 *((const QModelIndex*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 203, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 209, column 18>
 //   // proto:  bool QAbstractItemModel::insertColumns(int column, int count, const QModelIndex & parent);
 // _ZN18QAbstractItemModel13insertColumnsEiiRK11QModelIndex insertColumns(int, int, const class QModelIndex &)
 extern "C"
@@ -1093,7 +1093,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 212, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 218, column 17>
 //   // proto:  bool QAbstractItemModel::insertColumn(int column, const QModelIndex & parent);
 // _ZN18QAbstractItemModel12insertColumnEiRK11QModelIndex insertColumn(int, const class QModelIndex &)
 extern "C"
@@ -1106,7 +1106,7 @@ const QModelIndex* arg2) {
 *((const QModelIndex*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 208, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 214, column 18>
 //   // proto:  bool QAbstractItemModel::moveColumns(const QModelIndex & sourceParent, int sourceColumn, int count, const QModelIndex & destinationParent, int destinationChild);
 // _ZN18QAbstractItemModel11moveColumnsERK11QModelIndexiiS2_i moveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
@@ -1125,7 +1125,7 @@ arg3,
 arg5);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 185, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 191, column 33>
 //   // proto:  QMap<int, QVariant> QAbstractItemModel::itemData(const QModelIndex & index);
 // _ZNK18QAbstractItemModel8itemDataERK11QModelIndex itemData(const class QModelIndex &)
 extern "C"
@@ -1136,7 +1136,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->itemData(*((const QModelIndex*)arg1));
   return new QMap<int, QVariant>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 180, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 186, column 34>
 //   // proto:  QVariant QAbstractItemModel::headerData(int section, Qt::Orientation orientation, int role);
 // _ZNK18QAbstractItemModel10headerDataEiN2Qt11OrientationEi headerData(int, Qt::Orientation, int)
 extern "C"
@@ -1151,7 +1151,7 @@ int arg3) {
 arg3);
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 188, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 194, column 25>
 //   // proto:  QStringList QAbstractItemModel::mimeTypes();
 // _ZNK18QAbstractItemModel9mimeTypesEv mimeTypes()
 extern "C"
@@ -1161,7 +1161,7 @@ C_ZNK18QAbstractItemModel9mimeTypesEv(void *qthis) {
   ((QAbstractItemModel*)qthis)->mimeTypes();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 170, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 176, column 37>
 //   // proto:  QModelIndex QAbstractItemModel::parent(const QModelIndex & child);
 // _ZNK18QAbstractItemModel6parentERK11QModelIndex parent(const class QModelIndex &)
 extern "C"
@@ -1172,7 +1172,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->parent(*((const QModelIndex*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 224, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 230, column 25>
 //   // proto:  QModelIndex QAbstractItemModel::buddy(const QModelIndex & index);
 // _ZNK18QAbstractItemModel5buddyERK11QModelIndex buddy(const class QModelIndex &)
 extern "C"
@@ -1183,7 +1183,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->buddy(*((const QModelIndex*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 174, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 180, column 29>
 //   // proto:  int QAbstractItemModel::columnCount(const QModelIndex & parent);
 // _ZNK18QAbstractItemModel11columnCountERK11QModelIndex columnCount(const class QModelIndex &)
 extern "C"
@@ -1194,7 +1194,7 @@ const QModelIndex* arg1) {
   ((QAbstractItemModel*)qthis)->columnCount(*((const QModelIndex*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 177, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 183, column 34>
 //   // proto:  QVariant QAbstractItemModel::data(const QModelIndex & index, int role);
 // _ZNK18QAbstractItemModel4dataERK11QModelIndexi data(const class QModelIndex &, int)
 extern "C"
@@ -1207,7 +1207,7 @@ int arg2) {
 arg2);
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 172, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 178, column 37>
 //   // proto:  QModelIndex QAbstractItemModel::sibling(int row, int column, const QModelIndex & idx);
 // _ZNK18QAbstractItemModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
@@ -1222,7 +1222,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 206, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 212, column 18>
 //   // proto:  bool QAbstractItemModel::moveRows(const QModelIndex & sourceParent, int sourceRow, int count, const QModelIndex & destinationParent, int destinationChild);
 // _ZN18QAbstractItemModel8moveRowsERK11QModelIndexiiS2_i moveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
@@ -1241,7 +1241,7 @@ arg3,
 arg5);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 391, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 397, column 10>
 //   // proto:  bool QAbstractListModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
 // _ZN18QAbstractListModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -1260,7 +1260,7 @@ arg4,
 *((const QModelIndex*)arg5));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 390, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 396, column 17>
 //   // proto:  QModelIndex QAbstractListModel::sibling(int row, int column, const QModelIndex & idx);
 // _ZNK18QAbstractListModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
@@ -1275,14 +1275,14 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 386, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 392, column 14>
 //   // proto:  void QAbstractListModel::QAbstractListModel(QObject * parent);
 extern "C"
 QAbstractListModel*
 C_ZN18QAbstractListModelC2EP7QObject(QObject * arg1) {
   // auto ret = new QAbstractListModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 394, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 400, column 19>
 //   // proto:  Qt::ItemFlags QAbstractListModel::flags(const QModelIndex & index);
 // _ZNK18QAbstractListModel5flagsERK11QModelIndex flags(const class QModelIndex &)
 extern "C"
@@ -1293,7 +1293,7 @@ const QModelIndex* arg1) {
   ((QAbstractListModel*)qthis)->flags(*((const QModelIndex*)arg1));
   return new QFlags<Qt::ItemFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 383, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 389, column 5>
 //   // proto:  const QMetaObject * QAbstractListModel::metaObject();
 // _ZNK18QAbstractListModel10metaObjectEv metaObject()
 extern "C"
@@ -1303,7 +1303,7 @@ C_ZNK18QAbstractListModel10metaObjectEv(void *qthis) {
   ((QAbstractListModel*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 389, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractitemmodel.h', line 395, column 17>
 //   // proto:  QModelIndex QAbstractListModel::index(int row, int column, const QModelIndex & parent);
 // _ZNK18QAbstractListModel5indexEiiRK11QModelIndex index(int, int, const class QModelIndex &)
 extern "C"

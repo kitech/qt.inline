@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstyleplugin.h
 // dst-file: /src/widgets/qstyleplugin.cxx
 //
@@ -32,7 +32,7 @@ int QStylePlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 54, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 60, column 21>
 //   // proto:  QStyle * QStylePlugin::create(const QString & key);
 // _ZN12QStylePlugin6createERK7QString create(const class QString &)
 extern "C"
@@ -43,7 +43,7 @@ const QString* arg1) {
   ((QStylePlugin*)qthis)->create(*((const QString*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 55, column 5>
 //   // proto:  const QMetaObject * QStylePlugin::metaObject();
 // _ZNK12QStylePlugin10metaObjectEv metaObject()
 extern "C"
@@ -53,7 +53,7 @@ C_ZNK12QStylePlugin10metaObjectEv(void *qthis) {
   ((QStylePlugin*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleplugin.h', line 57, column 14>
 //   // proto:  void QStylePlugin::QStylePlugin(QObject * parent);
 extern "C"
 QStylePlugin*

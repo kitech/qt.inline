@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qanimationgroup.h
 // dst-file: /src/core/qanimationgroup.cxx
 //
@@ -32,7 +32,7 @@ int QAnimationGroup_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 53, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 59, column 25>
 //   // proto:  QAbstractAnimation * QAnimationGroup::animationAt(int index);
 // _ZNK15QAnimationGroup11animationAtEi animationAt(int)
 extern "C"
@@ -48,7 +48,7 @@ extern "C"
 void C_ZN15QAnimationGroupD2Ev(void *qthis) {
   delete (QAnimationGroup*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 64, column 10>
 //   // proto:  void QAnimationGroup::removeAnimation(QAbstractAnimation * animation);
 // _ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation removeAnimation(class QAbstractAnimation *)
 extern "C"
@@ -57,7 +57,7 @@ C_ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation(void *qthis,
 QAbstractAnimation * arg1) {
   ((QAnimationGroup*)qthis)->removeAnimation(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 54, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 60, column 9>
 //   // proto:  int QAnimationGroup::animationCount();
 // _ZNK15QAnimationGroup14animationCountEv animationCount()
 extern "C"
@@ -67,7 +67,7 @@ C_ZNK15QAnimationGroup14animationCountEv(void *qthis) {
   ((QAnimationGroup*)qthis)->animationCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 62, column 10>
 //   // proto:  void QAnimationGroup::addAnimation(QAbstractAnimation * animation);
 // _ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation addAnimation(class QAbstractAnimation *)
 extern "C"
@@ -76,7 +76,7 @@ C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *qthis,
 QAbstractAnimation * arg1) {
   ((QAnimationGroup*)qthis)->addAnimation(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 66, column 10>
 //   // proto:  void QAnimationGroup::clear();
 // _ZN15QAnimationGroup5clearEv clear()
 extern "C"
@@ -84,7 +84,7 @@ void
 C_ZN15QAnimationGroup5clearEv(void *qthis) {
   ((QAnimationGroup*)qthis)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 59, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 65, column 25>
 //   // proto:  QAbstractAnimation * QAnimationGroup::takeAnimation(int index);
 // _ZN15QAnimationGroup13takeAnimationEi takeAnimation(int)
 extern "C"
@@ -95,7 +95,7 @@ int arg1) {
   ((QAnimationGroup*)qthis)->takeAnimation(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 63, column 10>
 //   // proto:  void QAnimationGroup::insertAnimation(int index, QAbstractAnimation * animation);
 // _ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation insertAnimation(int, class QAbstractAnimation *)
 extern "C"
@@ -106,7 +106,7 @@ QAbstractAnimation * arg2) {
   ((QAnimationGroup*)qthis)->insertAnimation(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 53, column 5>
 //   // proto:  const QMetaObject * QAnimationGroup::metaObject();
 // _ZNK15QAnimationGroup10metaObjectEv metaObject()
 extern "C"
@@ -116,7 +116,7 @@ C_ZNK15QAnimationGroup10metaObjectEv(void *qthis) {
   ((QAnimationGroup*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 55, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qanimationgroup.h', line 61, column 9>
 //   // proto:  int QAnimationGroup::indexOfAnimation(QAbstractAnimation * animation);
 // _ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation indexOfAnimation(class QAbstractAnimation *)
 extern "C"

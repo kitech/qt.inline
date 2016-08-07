@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qaccessible.h
 // dst-file: /src/gui/qaccessible.cxx
 //
@@ -15,16 +15,15 @@
 
 
 #include <qpair.h>
+#include <qmetatype.h>
 #include <qstring.h>
 #include <qrect.h>
 #include <qstringlist.h>
 #include <qcolor.h>
 #include <qvector.h>
 #include <qregion.h>
-#include <qaccessible.h>
 #include <qlist.h>
 #include <qwindowdefs.h>
-#include <qmetatype.h>
 #include <qpoint.h>
 #include <qsize.h>
 #include <qvariant.h>
@@ -32,7 +31,7 @@
 
 // main block begin =>
 void __keep_qaccessible_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 933, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 953, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setFirstColumn(int col);
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis, int arg1) {
@@ -42,7 +41,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi setFirstColumn(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 930, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 950, column 21>
 //   // proto:  QAccessibleTableModelChangeEvent::ModelChangeType QAccessibleTableModelChangeEvent::modelChangeType();
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis) {
@@ -52,7 +51,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv modelChangeType()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 932, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 952, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setFirstRow(int row);
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis, int arg1) {
@@ -62,7 +61,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN32QAccessibleTableModelChangeEvent11setFirstRowEi setFirstRow(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 936, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 956, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::firstRow();
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis) {
@@ -72,7 +71,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK32QAccessibleTableModelChangeEvent8firstRowEv firstRow()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 914, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 932, column 12>
 //   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 if (true) {
   auto f = [](QObject * arg1, QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
@@ -80,7 +79,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 921, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 939, column 12>
 //   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
@@ -88,7 +87,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 935, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 955, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setLastColumn(int col);
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis, int arg1) {
@@ -98,7 +97,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN32QAccessibleTableModelChangeEvent13setLastColumnEi setLastColumn(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 929, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 949, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis, QAccessibleTableModelChangeEvent::ModelChangeType arg1) {
@@ -108,7 +107,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE setModelChangeType(enum QAccessibleTableModelChangeEvent::ModelChangeType)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 937, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 957, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::firstColumn();
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis) {
@@ -118,7 +117,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK32QAccessibleTableModelChangeEvent11firstColumnEv firstColumn()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 939, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 959, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::lastColumn();
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis) {
@@ -128,7 +127,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK32QAccessibleTableModelChangeEvent10lastColumnEv lastColumn()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 934, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 954, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setLastRow(int row);
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis, int arg1) {
@@ -138,7 +137,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN32QAccessibleTableModelChangeEvent10setLastRowEi setLastRow(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 938, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 958, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::lastRow();
 if (true) {
   auto f = [](QAccessibleTableModelChangeEvent flythis) {
@@ -148,7 +147,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK32QAccessibleTableModelChangeEvent7lastRowEv lastRow()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 663, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 668, column 12>
 //   // proto:  void QAccessibleEvent::QAccessibleEvent(QObject * obj, QAccessible::Event typ);
 if (true) {
   auto f = [](QObject * arg1, QAccessible::Event arg2) {
@@ -156,7 +155,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 698, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 702, column 14>
 //   // proto:  QObject * QAccessibleEvent::object();
 if (true) {
   auto f = [](QAccessibleEvent flythis) {
@@ -166,7 +165,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QAccessibleEvent6objectEv object()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 701, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 705, column 10>
 //   // proto:  void QAccessibleEvent::setChild(int chld);
 if (true) {
   auto f = [](QAccessibleEvent flythis, int arg1) {
@@ -176,7 +175,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN16QAccessibleEvent8setChildEi setChild(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 697, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 701, column 24>
 //   // proto:  QAccessible::Event QAccessibleEvent::type();
 if (true) {
   auto f = [](QAccessibleEvent flythis) {
@@ -186,7 +185,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QAccessibleEvent4typeEv type()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 702, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 706, column 9>
 //   // proto:  int QAccessibleEvent::child();
 if (true) {
   auto f = [](QAccessibleEvent flythis) {
@@ -196,7 +195,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QAccessibleEvent5childEv child()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 679, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 684, column 12>
 //   // proto:  void QAccessibleEvent::QAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, QAccessible::Event arg2) {
@@ -204,7 +203,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 496, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 502, column 39>
 //   // proto:  QAccessibleImageInterface * QAccessibleInterface::imageInterface();
 if (true) {
   auto f = []() {
@@ -213,7 +212,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface14imageInterfaceEv imageInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 499, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 505, column 39>
 //   // proto:  QAccessibleTableInterface * QAccessibleInterface::tableInterface();
 if (true) {
   auto f = []() {
@@ -222,7 +221,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface14tableInterfaceEv tableInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 487, column 46>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 493, column 46>
 //   // proto:  QAccessibleEditableTextInterface * QAccessibleInterface::editableTextInterface();
 if (true) {
   auto f = []() {
@@ -231,7 +230,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface21editableTextInterfaceEv editableTextInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 490, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 496, column 39>
 //   // proto:  QAccessibleValueInterface * QAccessibleInterface::valueInterface();
 if (true) {
   auto f = []() {
@@ -240,7 +239,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface14valueInterfaceEv valueInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 507, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 513, column 19>
 //   // proto:  void * QAccessibleInterface::interface_cast(QAccessible::InterfaceType );
 if (true) {
   auto f = [](QAccessible::InterfaceType arg1) {
@@ -249,7 +248,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface14interface_castEN11QAccessible13InterfaceTypeE interface_cast(class QAccessible::InterfaceType)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 493, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 499, column 40>
 //   // proto:  QAccessibleActionInterface * QAccessibleInterface::actionInterface();
 if (true) {
   auto f = []() {
@@ -258,7 +257,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface15actionInterfaceEv actionInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 502, column 43>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 508, column 43>
 //   // proto:  QAccessibleTableCellInterface * QAccessibleInterface::tableCellInterface();
 if (true) {
   auto f = []() {
@@ -267,7 +266,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface18tableCellInterfaceEv tableCellInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 484, column 38>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 490, column 38>
 //   // proto:  QAccessibleTextInterface * QAccessibleInterface::textInterface();
 if (true) {
   auto f = []() {
@@ -276,7 +275,15 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN20QAccessibleInterface13textInterfaceEv textInterface()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 866, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 870, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
+if (true) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3, const QString & arg4) {
+    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
+  };
+  if (f == nullptr){}
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 13>
 //   // proto:  QString QAccessibleTextUpdateEvent::textInserted();
 if (true) {
   auto f = [](QAccessibleTextUpdateEvent flythis) {
@@ -286,15 +293,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextUpdateEvent12textInsertedEv textInserted()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 857, column 12>
-//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
-if (true) {
-  auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3, const QString & arg4) {
-    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 863, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 879, column 13>
 //   // proto:  QString QAccessibleTextUpdateEvent::textRemoved();
 if (true) {
   auto f = [](QAccessibleTextUpdateEvent flythis) {
@@ -304,7 +303,15 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextUpdateEvent11textRemovedEv textRemoved()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 869, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 864, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
+if (true) {
+  auto f = [](QObject * arg1, int arg2, const QString & arg3, const QString & arg4) {
+    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
+  };
+  if (f == nullptr){}
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 885, column 9>
 //   // proto:  int QAccessibleTextUpdateEvent::changePosition();
 if (true) {
   auto f = [](QAccessibleTextUpdateEvent flythis) {
@@ -314,15 +321,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextUpdateEvent14changePositionEv changePosition()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 851, column 12>
-//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
-if (true) {
-  auto f = [](QObject * arg1, int arg2, const QString & arg3, const QString & arg4) {
-    new QAccessibleTextUpdateEvent(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 724, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 728, column 12>
 //   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, QAccessible::State arg2) {
@@ -330,7 +329,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 730, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 735, column 24>
 //   // proto:  QAccessible::State QAccessibleStateChangeEvent::changedStates();
 if (true) {
   auto f = [](QAccessibleStateChangeEvent flythis) {
@@ -340,7 +339,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK27QAccessibleStateChangeEvent13changedStatesEv changedStates()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 719, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 723, column 12>
 //   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QObject * obj, QAccessible::State state);
 if (true) {
   auto f = [](QObject * arg1, QAccessible::State arg2) {
@@ -348,7 +347,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 808, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 819, column 13>
 //   // proto:  QString QAccessibleTextInsertEvent::textInserted();
 if (true) {
   auto f = [](QAccessibleTextInsertEvent flythis) {
@@ -358,7 +357,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextInsertEvent12textInsertedEv textInserted()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 811, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 822, column 9>
 //   // proto:  int QAccessibleTextInsertEvent::changePosition();
 if (true) {
   auto f = [](QAccessibleTextInsertEvent flythis) {
@@ -368,7 +367,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextInsertEvent14changePositionEv changePosition()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 801, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 810, column 12>
 //   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3) {
@@ -376,7 +375,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 795, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 804, column 12>
 //   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QObject * obj, int position, const QString & text);
 if (true) {
   auto f = [](QObject * arg1, int arg2, const QString & arg3) {
@@ -384,7 +383,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 823, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 834, column 12>
 //   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text);
 if (true) {
   auto f = [](QObject * arg1, int arg2, const QString & arg3) {
@@ -392,7 +391,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 836, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 849, column 13>
 //   // proto:  QString QAccessibleTextRemoveEvent::textRemoved();
 if (true) {
   auto f = [](QAccessibleTextRemoveEvent flythis) {
@@ -402,7 +401,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextRemoveEvent11textRemovedEv textRemoved()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 829, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 840, column 12>
 //   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, int arg2, const QString & arg3) {
@@ -410,7 +409,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 839, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 852, column 9>
 //   // proto:  int QAccessibleTextRemoveEvent::changePosition();
 if (true) {
   auto f = [](QAccessibleTextRemoveEvent flythis) {
@@ -420,43 +419,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextRemoveEvent14changePositionEv changePosition()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 785, column 9>
-//   // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
-if (true) {
-  auto f = [](QAccessibleTextSelectionEvent flythis) {
-    ((QAccessibleTextSelectionEvent*)0)->selectionEnd();
-    flythis.selectionEnd();
-  };
-  if (f == nullptr){}
-}
-// _ZNK29QAccessibleTextSelectionEvent12selectionEndEv selectionEnd()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 772, column 12>
-//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
-if (true) {
-  auto f = [](QAccessibleInterface * arg1, int arg2, int arg3) {
-    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 784, column 9>
-//   // proto:  int QAccessibleTextSelectionEvent::selectionStart();
-if (true) {
-  auto f = [](QAccessibleTextSelectionEvent flythis) {
-    ((QAccessibleTextSelectionEvent*)0)->selectionStart();
-    flythis.selectionStart();
-  };
-  if (f == nullptr){}
-}
-// _ZNK29QAccessibleTextSelectionEvent14selectionStartEv selectionStart()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 766, column 12>
-//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
-if (true) {
-  auto f = [](QObject * arg1, int arg2, int arg3) {
-    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 788, column 10>
 //   // proto:  void QAccessibleTextSelectionEvent::setSelection(int start, int end);
 if (true) {
   auto f = [](QAccessibleTextSelectionEvent flythis, int arg1, int arg2) {
@@ -466,7 +429,43 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN29QAccessibleTextSelectionEvent12setSelectionEii setSelection(int, int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 748, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 794, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
+if (true) {
+  auto f = [](QAccessibleTextSelectionEvent flythis) {
+    ((QAccessibleTextSelectionEvent*)0)->selectionEnd();
+    flythis.selectionEnd();
+  };
+  if (f == nullptr){}
+}
+// _ZNK29QAccessibleTextSelectionEvent12selectionEndEv selectionEnd()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 793, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionStart();
+if (true) {
+  auto f = [](QAccessibleTextSelectionEvent flythis) {
+    ((QAccessibleTextSelectionEvent*)0)->selectionStart();
+    flythis.selectionStart();
+  };
+  if (f == nullptr){}
+}
+// _ZNK29QAccessibleTextSelectionEvent14selectionStartEv selectionStart()
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 773, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
+if (true) {
+  auto f = [](QObject * arg1, int arg2, int arg3) {
+    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
+  };
+  if (f == nullptr){}
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
+if (true) {
+  auto f = [](QAccessibleInterface * arg1, int arg2, int arg3) {
+    new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
+  };
+  if (f == nullptr){}
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 753, column 12>
 //   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, int arg2) {
@@ -474,7 +473,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 755, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 762, column 10>
 //   // proto:  void QAccessibleTextCursorEvent::setCursorPosition(int position);
 if (true) {
   auto f = [](QAccessibleTextCursorEvent flythis, int arg1) {
@@ -484,7 +483,15 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN26QAccessibleTextCursorEvent17setCursorPositionEi setCursorPosition(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 756, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 747, column 12>
+//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
+if (true) {
+  auto f = [](QObject * arg1, int arg2) {
+    new QAccessibleTextCursorEvent(arg1, arg2);
+  };
+  if (f == nullptr){}
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 763, column 9>
 //   // proto:  int QAccessibleTextCursorEvent::cursorPosition();
 if (true) {
   auto f = [](QAccessibleTextCursorEvent flythis) {
@@ -494,15 +501,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK26QAccessibleTextCursorEvent14cursorPositionEv cursorPosition()
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 742, column 12>
-//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
-if (true) {
-  auto f = [](QObject * arg1, int arg2) {
-    new QAccessibleTextCursorEvent(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 898, column 12>
 //   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QObject * obj, const QVariant & val);
 if (true) {
   auto f = [](QObject * arg1, const QVariant & arg2) {
@@ -510,7 +509,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 888, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 904, column 12>
 //   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val);
 if (true) {
   auto f = [](QAccessibleInterface * arg1, const QVariant & arg2) {
@@ -518,7 +517,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 895, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 913, column 10>
 //   // proto:  void QAccessibleValueChangeEvent::setValue(const QVariant & val);
 if (true) {
   auto f = [](QAccessibleValueChangeEvent flythis, const QVariant & arg1) {
@@ -528,7 +527,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN27QAccessibleValueChangeEvent8setValueERK8QVariant setValue(const class QVariant &)
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 896, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 914, column 14>
 //   // proto:  QVariant QAccessibleValueChangeEvent::value();
 if (true) {
   auto f = [](QAccessibleValueChangeEvent flythis) {
@@ -654,7 +653,7 @@ int QAccessibleValueChangeEvent_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 420, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 426, column 17>
 //   // proto: static bool QAccessible::isActive();
 // _ZN11QAccessible8isActiveEv isActive()
 extern "C"
@@ -664,7 +663,7 @@ C_ZN11QAccessible8isActiveEv() {
   QAccessible::isActive();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 409, column 15>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 415, column 15>
 //   // proto: static Id QAccessible::uniqueId(QAccessibleInterface * iface);
 // _ZN11QAccessible8uniqueIdEP20QAccessibleInterface uniqueId(class QAccessibleInterface *)
 extern "C"
@@ -674,7 +673,7 @@ C_ZN11QAccessible8uniqueIdEP20QAccessibleInterface(QAccessibleInterface * arg1) 
   QAccessible::uniqueId(arg1);
   return ret; // 0 TypeKind.UINT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 426, column 30>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 432, column 30>
 //   // proto: static QPair<int, int> QAccessible::qAccessibleTextBoundaryHelper(const QTextCursor & cursor, QAccessible::TextBoundaryType boundaryType);
 // _ZN11QAccessible29qAccessibleTextBoundaryHelperERK11QTextCursorNS_16TextBoundaryTypeE qAccessibleTextBoundaryHelper(const class QTextCursor &, enum QAccessible::TextBoundaryType)
 extern "C"
@@ -686,7 +685,7 @@ QAccessible::TextBoundaryType arg2) {
 arg2);
   return new QPair<int, int>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 411, column 15>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 417, column 15>
 //   // proto: static Id QAccessible::registerAccessibleInterface(QAccessibleInterface * iface);
 // _ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface registerAccessibleInterface(class QAccessibleInterface *)
 extern "C"
@@ -696,7 +695,7 @@ C_ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface(QAccessib
   QAccessible::registerAccessibleInterface(arg1);
   return ret; // 0 TypeKind.UINT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 421, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 427, column 17>
 //   // proto: static void QAccessible::setActive(bool active);
 // _ZN11QAccessible9setActiveEb setActive(_Bool)
 extern "C"
@@ -704,7 +703,7 @@ void
 C_ZN11QAccessible9setActiveEb(bool arg1) {
   QAccessible::setActive(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 405, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 411, column 17>
 //   // proto: static void QAccessible::installActivationObserver(QAccessible::ActivationObserver * );
 // _ZN11QAccessible25installActivationObserverEPNS_18ActivationObserverE installActivationObserver(class QAccessible::ActivationObserver *)
 extern "C"
@@ -712,7 +711,7 @@ void
 C_ZN11QAccessible25installActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg1) {
   QAccessible::installActivationObserver(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 408, column 34>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 414, column 34>
 //   // proto: static QAccessibleInterface * QAccessible::queryAccessibleInterface(QObject * );
 // _ZN11QAccessible24queryAccessibleInterfaceEP7QObject queryAccessibleInterface(class QObject *)
 extern "C"
@@ -722,7 +721,7 @@ C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg1) {
   QAccessible::queryAccessibleInterface(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 397, column 30>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 403, column 30>
 //   // proto: static RootObjectHandler QAccessible::installRootObjectHandler(RootObjectHandler );
 // _ZN11QAccessible24installRootObjectHandlerEPFvP7QObjectE installRootObjectHandler(RootObjectHandler)
 extern "C"
@@ -732,7 +731,7 @@ C_ZN11QAccessible24installRootObjectHandlerEPFvP7QObjectE(QAccessible::RootObjec
   QAccessible::installRootObjectHandler(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 418, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 424, column 17>
 //   // proto: static void QAccessible::updateAccessibility(QAccessibleEvent * event);
 // _ZN11QAccessible19updateAccessibilityEP16QAccessibleEvent updateAccessibility(class QAccessibleEvent *)
 extern "C"
@@ -740,7 +739,7 @@ void
 C_ZN11QAccessible19updateAccessibilityEP16QAccessibleEvent(QAccessibleEvent * arg1) {
   QAccessible::updateAccessibility(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 424, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 430, column 17>
 //   // proto: static void QAccessible::cleanup();
 // _ZN11QAccessible7cleanupEv cleanup()
 extern "C"
@@ -748,7 +747,7 @@ void
 C_ZN11QAccessible7cleanupEv() {
   QAccessible::cleanup();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 394, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 400, column 17>
 //   // proto: static void QAccessible::installFactory(InterfaceFactory );
 // _ZN11QAccessible14installFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE installFactory(InterfaceFactory)
 extern "C"
@@ -756,7 +755,7 @@ void
 C_ZN11QAccessible14installFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE(QAccessible::InterfaceFactory arg1) {
   QAccessible::installFactory(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 396, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 402, column 26>
 //   // proto: static UpdateHandler QAccessible::installUpdateHandler(UpdateHandler );
 // _ZN11QAccessible20installUpdateHandlerEPFvP16QAccessibleEventE installUpdateHandler(UpdateHandler)
 extern "C"
@@ -766,7 +765,7 @@ C_ZN11QAccessible20installUpdateHandlerEPFvP16QAccessibleEventE(QAccessible::Upd
   QAccessible::installUpdateHandler(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 406, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 412, column 17>
 //   // proto: static void QAccessible::removeActivationObserver(QAccessible::ActivationObserver * );
 // _ZN11QAccessible24removeActivationObserverEPNS_18ActivationObserverE removeActivationObserver(class QAccessible::ActivationObserver *)
 extern "C"
@@ -774,7 +773,7 @@ void
 C_ZN11QAccessible24removeActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg1) {
   QAccessible::removeActivationObserver(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 422, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 428, column 17>
 //   // proto: static void QAccessible::setRootObject(QObject * object);
 // _ZN11QAccessible13setRootObjectEP7QObject setRootObject(class QObject *)
 extern "C"
@@ -782,7 +781,7 @@ void
 C_ZN11QAccessible13setRootObjectEP7QObject(QObject * arg1) {
   QAccessible::setRootObject(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 395, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 401, column 17>
 //   // proto: static void QAccessible::removeFactory(InterfaceFactory );
 // _ZN11QAccessible13removeFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE removeFactory(InterfaceFactory)
 extern "C"
@@ -790,7 +789,7 @@ void
 C_ZN11QAccessible13removeFactoryEPFP20QAccessibleInterfaceRK7QStringP7QObjectE(QAccessible::InterfaceFactory arg1) {
   QAccessible::removeFactory(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 412, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 418, column 17>
 //   // proto: static void QAccessible::deleteAccessibleInterface(Id uniqueId);
 // _ZN11QAccessible25deleteAccessibleInterfaceEj deleteAccessibleInterface(Id)
 extern "C"
@@ -798,7 +797,7 @@ void
 C_ZN11QAccessible25deleteAccessibleInterfaceEj(QAccessible::Id arg1) {
   QAccessible::deleteAccessibleInterface(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 410, column 34>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 416, column 34>
 //   // proto: static QAccessibleInterface * QAccessible::accessibleInterface(Id uniqueId);
 // _ZN11QAccessible19accessibleInterfaceEj accessibleInterface(Id)
 extern "C"
@@ -808,7 +807,7 @@ C_ZN11QAccessible19accessibleInterfaceEj(QAccessible::Id arg1) {
   QAccessible::accessibleInterface(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 933, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 953, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setFirstColumn(int col);
 // _ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi setFirstColumn(int)
 extern "C"
@@ -817,7 +816,7 @@ C_ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi(void *qthis,
 int arg1) {
   ((QAccessibleTableModelChangeEvent*)qthis)->setFirstColumn(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 930, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 950, column 21>
 //   // proto:  QAccessibleTableModelChangeEvent::ModelChangeType QAccessibleTableModelChangeEvent::modelChangeType();
 // _ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv modelChangeType()
 extern "C"
@@ -827,7 +826,7 @@ C_ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv(void *qthis) {
   ((QAccessibleTableModelChangeEvent*)qthis)->modelChangeType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 932, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 952, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setFirstRow(int row);
 // _ZN32QAccessibleTableModelChangeEvent11setFirstRowEi setFirstRow(int)
 extern "C"
@@ -836,7 +835,12 @@ C_ZN32QAccessibleTableModelChangeEvent11setFirstRowEi(void *qthis,
 int arg1) {
   ((QAccessibleTableModelChangeEvent*)qthis)->setFirstRow(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 936, column 9>
+//   // proto:  void QAccessibleTableModelChangeEvent::~QAccessibleTableModelChangeEvent();
+extern "C"
+void C_ZN32QAccessibleTableModelChangeEventD2Ev(void *qthis) {
+  delete (QAccessibleTableModelChangeEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 956, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::firstRow();
 // _ZNK32QAccessibleTableModelChangeEvent8firstRowEv firstRow()
 extern "C"
@@ -846,25 +850,27 @@ C_ZNK32QAccessibleTableModelChangeEvent8firstRowEv(void *qthis) {
   ((QAccessibleTableModelChangeEvent*)qthis)->firstRow();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 914, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 932, column 12>
 //   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 extern "C"
 QAccessibleTableModelChangeEvent*
 C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QObject * arg1,
 QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
-  auto ret = new QAccessibleTableModelChangeEvent(arg1, arg2);
+  auto ret = new QAccessibleTableModelChangeEvent(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 921, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 939, column 12>
 //   // proto:  void QAccessibleTableModelChangeEvent::QAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 extern "C"
 QAccessibleTableModelChangeEvent*
 C_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * arg1,
 QAccessibleTableModelChangeEvent::ModelChangeType arg2) {
-  auto ret = new QAccessibleTableModelChangeEvent(arg1, arg2);
+  auto ret = new QAccessibleTableModelChangeEvent(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 935, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 955, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setLastColumn(int col);
 // _ZN32QAccessibleTableModelChangeEvent13setLastColumnEi setLastColumn(int)
 extern "C"
@@ -873,7 +879,7 @@ C_ZN32QAccessibleTableModelChangeEvent13setLastColumnEi(void *qthis,
 int arg1) {
   ((QAccessibleTableModelChangeEvent*)qthis)->setLastColumn(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 929, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 949, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType changeType);
 // _ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE setModelChangeType(enum QAccessibleTableModelChangeEvent::ModelChangeType)
 extern "C"
@@ -882,7 +888,7 @@ C_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE
 QAccessibleTableModelChangeEvent::ModelChangeType arg1) {
   ((QAccessibleTableModelChangeEvent*)qthis)->setModelChangeType(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 937, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 957, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::firstColumn();
 // _ZNK32QAccessibleTableModelChangeEvent11firstColumnEv firstColumn()
 extern "C"
@@ -892,7 +898,7 @@ C_ZNK32QAccessibleTableModelChangeEvent11firstColumnEv(void *qthis) {
   ((QAccessibleTableModelChangeEvent*)qthis)->firstColumn();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 939, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 959, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::lastColumn();
 // _ZNK32QAccessibleTableModelChangeEvent10lastColumnEv lastColumn()
 extern "C"
@@ -902,7 +908,7 @@ C_ZNK32QAccessibleTableModelChangeEvent10lastColumnEv(void *qthis) {
   ((QAccessibleTableModelChangeEvent*)qthis)->lastColumn();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 934, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 954, column 10>
 //   // proto:  void QAccessibleTableModelChangeEvent::setLastRow(int row);
 // _ZN32QAccessibleTableModelChangeEvent10setLastRowEi setLastRow(int)
 extern "C"
@@ -911,7 +917,7 @@ C_ZN32QAccessibleTableModelChangeEvent10setLastRowEi(void *qthis,
 int arg1) {
   ((QAccessibleTableModelChangeEvent*)qthis)->setLastRow(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 938, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 958, column 9>
 //   // proto:  int QAccessibleTableModelChangeEvent::lastRow();
 // _ZNK32QAccessibleTableModelChangeEvent7lastRowEv lastRow()
 extern "C"
@@ -921,7 +927,7 @@ C_ZNK32QAccessibleTableModelChangeEvent7lastRowEv(void *qthis) {
   ((QAccessibleTableModelChangeEvent*)qthis)->lastRow();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 519, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 525, column 18>
 //   // proto:  void QAccessibleTextInterface::selection(int selectionIndex, int * startOffset, int * endOffset);
 // _ZNK24QAccessibleTextInterface9selectionEiPiS0_ selection(int, int *, int *)
 extern "C"
@@ -934,7 +940,7 @@ int * arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 527, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 533, column 18>
 //   // proto:  void QAccessibleTextInterface::setCursorPosition(int position);
 // _ZN24QAccessibleTextInterface17setCursorPositionEi setCursorPosition(int)
 extern "C"
@@ -943,7 +949,7 @@ C_ZN24QAccessibleTextInterface17setCursorPositionEi(void *qthis,
 int arg1) {
   ((QAccessibleTextInterface*)qthis)->setCursorPosition(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 531, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 537, column 21>
 //   // proto:  QString QAccessibleTextInterface::textBeforeOffset(int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset);
 // _ZNK24QAccessibleTextInterface16textBeforeOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_ textBeforeOffset(int, class QAccessible::TextBoundaryType, int *, int *)
 extern "C"
@@ -960,7 +966,7 @@ arg3,
 arg4);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 541, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 547, column 17>
 //   // proto:  int QAccessibleTextInterface::offsetAtPoint(const QPoint & point);
 // _ZNK24QAccessibleTextInterface13offsetAtPointERK6QPoint offsetAtPoint(const class QPoint &)
 extern "C"
@@ -971,7 +977,7 @@ const QPoint* arg1) {
   ((QAccessibleTextInterface*)qthis)->offsetAtPoint(*((const QPoint*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 544, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 550, column 21>
 //   // proto:  QString QAccessibleTextInterface::attributes(int offset, int * startOffset, int * endOffset);
 // _ZNK24QAccessibleTextInterface10attributesEiPiS0_ attributes(int, int *, int *)
 extern "C"
@@ -986,7 +992,7 @@ arg2,
 arg3);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 520, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 526, column 17>
 //   // proto:  int QAccessibleTextInterface::selectionCount();
 // _ZNK24QAccessibleTextInterface14selectionCountEv selectionCount()
 extern "C"
@@ -996,7 +1002,7 @@ C_ZNK24QAccessibleTextInterface14selectionCountEv(void *qthis) {
   ((QAccessibleTextInterface*)qthis)->selectionCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 537, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 543, column 17>
 //   // proto:  int QAccessibleTextInterface::characterCount();
 // _ZNK24QAccessibleTextInterface14characterCountEv characterCount()
 extern "C"
@@ -1011,7 +1017,7 @@ extern "C"
 void C_ZN24QAccessibleTextInterfaceD2Ev(void *qthis) {
   delete (QAccessibleTextInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 530, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 536, column 21>
 //   // proto:  QString QAccessibleTextInterface::text(int startOffset, int endOffset);
 // _ZNK24QAccessibleTextInterface4textEii text(int, int)
 extern "C"
@@ -1024,7 +1030,7 @@ int arg2) {
 arg2);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 533, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 539, column 21>
 //   // proto:  QString QAccessibleTextInterface::textAfterOffset(int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset);
 // _ZNK24QAccessibleTextInterface15textAfterOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_ textAfterOffset(int, class QAccessible::TextBoundaryType, int *, int *)
 extern "C"
@@ -1041,7 +1047,7 @@ arg3,
 arg4);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 540, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 546, column 19>
 //   // proto:  QRect QAccessibleTextInterface::characterRect(int offset);
 // _ZNK24QAccessibleTextInterface13characterRectEi characterRect(int)
 extern "C"
@@ -1052,7 +1058,7 @@ int arg1) {
   ((QAccessibleTextInterface*)qthis)->characterRect(arg1);
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 522, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 528, column 18>
 //   // proto:  void QAccessibleTextInterface::removeSelection(int selectionIndex);
 // _ZN24QAccessibleTextInterface15removeSelectionEi removeSelection(int)
 extern "C"
@@ -1061,7 +1067,7 @@ C_ZN24QAccessibleTextInterface15removeSelectionEi(void *qthis,
 int arg1) {
   ((QAccessibleTextInterface*)qthis)->removeSelection(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 535, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 541, column 21>
 //   // proto:  QString QAccessibleTextInterface::textAtOffset(int offset, QAccessible::TextBoundaryType boundaryType, int * startOffset, int * endOffset);
 // _ZNK24QAccessibleTextInterface12textAtOffsetEiN11QAccessible16TextBoundaryTypeEPiS2_ textAtOffset(int, class QAccessible::TextBoundaryType, int *, int *)
 extern "C"
@@ -1078,7 +1084,7 @@ arg3,
 arg4);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 521, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 527, column 18>
 //   // proto:  void QAccessibleTextInterface::addSelection(int startOffset, int endOffset);
 // _ZN24QAccessibleTextInterface12addSelectionEii addSelection(int, int)
 extern "C"
@@ -1089,7 +1095,7 @@ int arg2) {
   ((QAccessibleTextInterface*)qthis)->addSelection(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 543, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 549, column 18>
 //   // proto:  void QAccessibleTextInterface::scrollToSubstring(int startIndex, int endIndex);
 // _ZN24QAccessibleTextInterface17scrollToSubstringEii scrollToSubstring(int, int)
 extern "C"
@@ -1100,7 +1106,7 @@ int arg2) {
   ((QAccessibleTextInterface*)qthis)->scrollToSubstring(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 526, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 532, column 17>
 //   // proto:  int QAccessibleTextInterface::cursorPosition();
 // _ZNK24QAccessibleTextInterface14cursorPositionEv cursorPosition()
 extern "C"
@@ -1110,7 +1116,7 @@ C_ZNK24QAccessibleTextInterface14cursorPositionEv(void *qthis) {
   ((QAccessibleTextInterface*)qthis)->cursorPosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 523, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 529, column 18>
 //   // proto:  void QAccessibleTextInterface::setSelection(int selectionIndex, int startOffset, int endOffset);
 // _ZN24QAccessibleTextInterface12setSelectionEiii setSelection(int, int, int)
 extern "C"
@@ -1123,16 +1129,17 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 663, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 668, column 12>
 //   // proto:  void QAccessibleEvent::QAccessibleEvent(QObject * obj, QAccessible::Event typ);
 extern "C"
 QAccessibleEvent*
 C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * arg1,
 QAccessible::Event* arg2) {
-  auto ret = new QAccessibleEvent(arg1, *((QAccessible::Event*)arg2));
+  auto ret = new QAccessibleEvent(arg1,
+*((QAccessible::Event*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 698, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 702, column 14>
 //   // proto:  QObject * QAccessibleEvent::object();
 // _ZNK16QAccessibleEvent6objectEv object()
 extern "C"
@@ -1142,7 +1149,7 @@ C_ZNK16QAccessibleEvent6objectEv(void *qthis) {
   ((QAccessibleEvent*)qthis)->object();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 701, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 705, column 10>
 //   // proto:  void QAccessibleEvent::setChild(int chld);
 // _ZN16QAccessibleEvent8setChildEi setChild(int)
 extern "C"
@@ -1151,7 +1158,7 @@ C_ZN16QAccessibleEvent8setChildEi(void *qthis,
 int arg1) {
   ((QAccessibleEvent*)qthis)->setChild(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 697, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 701, column 24>
 //   // proto:  QAccessible::Event QAccessibleEvent::type();
 // _ZNK16QAccessibleEvent4typeEv type()
 extern "C"
@@ -1161,7 +1168,7 @@ C_ZNK16QAccessibleEvent4typeEv(void *qthis) {
   ((QAccessibleEvent*)qthis)->type();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 704, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 708, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleEvent::accessibleInterface();
 // _ZNK16QAccessibleEvent19accessibleInterfaceEv accessibleInterface()
 extern "C"
@@ -1171,7 +1178,7 @@ C_ZNK16QAccessibleEvent19accessibleInterfaceEv(void *qthis) {
   ((QAccessibleEvent*)qthis)->accessibleInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 699, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 703, column 21>
 //   // proto:  QAccessible::Id QAccessibleEvent::uniqueId();
 // _ZNK16QAccessibleEvent8uniqueIdEv uniqueId()
 extern "C"
@@ -1181,7 +1188,7 @@ C_ZNK16QAccessibleEvent8uniqueIdEv(void *qthis) {
   ((QAccessibleEvent*)qthis)->uniqueId();
   return ret; // 0 TypeKind.UINT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 702, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 706, column 9>
 //   // proto:  int QAccessibleEvent::child();
 // _ZNK16QAccessibleEvent5childEv child()
 extern "C"
@@ -1196,16 +1203,17 @@ extern "C"
 void C_ZN16QAccessibleEventD2Ev(void *qthis) {
   delete (QAccessibleEvent*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 679, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 684, column 12>
 //   // proto:  void QAccessibleEvent::QAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ);
 extern "C"
 QAccessibleEvent*
 C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * arg1,
 QAccessible::Event* arg2) {
-  auto ret = new QAccessibleEvent(arg1, *((QAccessible::Event*)arg2));
+  auto ret = new QAccessibleEvent(arg1,
+*((QAccessible::Event*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 641, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 646, column 20>
 //   // proto: static QString QAccessibleActionInterface::scrollUpAction();
 // _ZN26QAccessibleActionInterface14scrollUpActionEv scrollUpAction()
 extern "C"
@@ -1215,7 +1223,7 @@ C_ZN26QAccessibleActionInterface14scrollUpActionEv() {
   QAccessibleActionInterface::scrollUpAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 627, column 25>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 632, column 25>
 //   // proto:  QStringList QAccessibleActionInterface::actionNames();
 // _ZNK26QAccessibleActionInterface11actionNamesEv actionNames()
 extern "C"
@@ -1225,7 +1233,7 @@ C_ZNK26QAccessibleActionInterface11actionNamesEv(void *qthis) {
   ((QAccessibleActionInterface*)qthis)->actionNames();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 635, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 640, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::decreaseAction();
 // _ZN26QAccessibleActionInterface14decreaseActionEv decreaseAction()
 extern "C"
@@ -1235,7 +1243,7 @@ C_ZN26QAccessibleActionInterface14decreaseActionEv() {
   QAccessibleActionInterface::decreaseAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 638, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 643, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::toggleAction();
 // _ZN26QAccessibleActionInterface12toggleActionEv toggleAction()
 extern "C"
@@ -1245,7 +1253,7 @@ C_ZN26QAccessibleActionInterface12toggleActionEv() {
   QAccessibleActionInterface::toggleAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 628, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 633, column 21>
 //   // proto:  QString QAccessibleActionInterface::localizedActionName(const QString & name);
 // _ZNK26QAccessibleActionInterface19localizedActionNameERK7QString localizedActionName(const class QString &)
 extern "C"
@@ -1256,7 +1264,7 @@ const QString* arg1) {
   ((QAccessibleActionInterface*)qthis)->localizedActionName(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 629, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 634, column 21>
 //   // proto:  QString QAccessibleActionInterface::localizedActionDescription(const QString & name);
 // _ZNK26QAccessibleActionInterface26localizedActionDescriptionERK7QString localizedActionDescription(const class QString &)
 extern "C"
@@ -1267,7 +1275,7 @@ const QString* arg1) {
   ((QAccessibleActionInterface*)qthis)->localizedActionDescription(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 639, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 644, column 20>
 //   // proto: static QString QAccessibleActionInterface::scrollLeftAction();
 // _ZN26QAccessibleActionInterface16scrollLeftActionEv scrollLeftAction()
 extern "C"
@@ -1277,7 +1285,7 @@ C_ZN26QAccessibleActionInterface16scrollLeftActionEv() {
   QAccessibleActionInterface::scrollLeftAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 644, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 649, column 20>
 //   // proto: static QString QAccessibleActionInterface::previousPageAction();
 // _ZN26QAccessibleActionInterface18previousPageActionEv previousPageAction()
 extern "C"
@@ -1287,7 +1295,7 @@ C_ZN26QAccessibleActionInterface18previousPageActionEv() {
   QAccessibleActionInterface::previousPageAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 636, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 641, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::showMenuAction();
 // _ZN26QAccessibleActionInterface14showMenuActionEv showMenuAction()
 extern "C"
@@ -1297,7 +1305,7 @@ C_ZN26QAccessibleActionInterface14showMenuActionEv() {
   QAccessibleActionInterface::showMenuAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 640, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 645, column 20>
 //   // proto: static QString QAccessibleActionInterface::scrollRightAction();
 // _ZN26QAccessibleActionInterface17scrollRightActionEv scrollRightAction()
 extern "C"
@@ -1307,7 +1315,7 @@ C_ZN26QAccessibleActionInterface17scrollRightActionEv() {
   QAccessibleActionInterface::scrollRightAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 637, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 642, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::setFocusAction();
 // _ZN26QAccessibleActionInterface14setFocusActionEv setFocusAction()
 extern "C"
@@ -1317,7 +1325,7 @@ C_ZN26QAccessibleActionInterface14setFocusActionEv() {
   QAccessibleActionInterface::setFocusAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 643, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 648, column 20>
 //   // proto: static QString QAccessibleActionInterface::nextPageAction();
 // _ZN26QAccessibleActionInterface14nextPageActionEv nextPageAction()
 extern "C"
@@ -1332,7 +1340,7 @@ extern "C"
 void C_ZN26QAccessibleActionInterfaceD2Ev(void *qthis) {
   delete (QAccessibleActionInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 633, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 638, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::pressAction();
 // _ZN26QAccessibleActionInterface11pressActionEv pressAction()
 extern "C"
@@ -1342,7 +1350,7 @@ C_ZN26QAccessibleActionInterface11pressActionEv() {
   QAccessibleActionInterface::pressAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 630, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 635, column 18>
 //   // proto:  void QAccessibleActionInterface::doAction(const QString & actionName);
 // _ZN26QAccessibleActionInterface8doActionERK7QString doAction(const class QString &)
 extern "C"
@@ -1351,7 +1359,7 @@ C_ZN26QAccessibleActionInterface8doActionERK7QString(void *qthis,
 const QString* arg1) {
   ((QAccessibleActionInterface*)qthis)->doAction(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 634, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 639, column 27>
 //   // proto: static const QString & QAccessibleActionInterface::increaseAction();
 // _ZN26QAccessibleActionInterface14increaseActionEv increaseAction()
 extern "C"
@@ -1361,7 +1369,7 @@ C_ZN26QAccessibleActionInterface14increaseActionEv() {
   QAccessibleActionInterface::increaseAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 631, column 25>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 636, column 25>
 //   // proto:  QStringList QAccessibleActionInterface::keyBindingsForAction(const QString & actionName);
 // _ZNK26QAccessibleActionInterface20keyBindingsForActionERK7QString keyBindingsForAction(const class QString &)
 extern "C"
@@ -1372,7 +1380,7 @@ const QString* arg1) {
   ((QAccessibleActionInterface*)qthis)->keyBindingsForAction(*((const QString*)arg1));
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 642, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 647, column 20>
 //   // proto: static QString QAccessibleActionInterface::scrollDownAction();
 // _ZN26QAccessibleActionInterface16scrollDownActionEv scrollDownAction()
 extern "C"
@@ -1382,7 +1390,7 @@ C_ZN26QAccessibleActionInterface16scrollDownActionEv() {
   QAccessibleActionInterface::scrollDownAction();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 496, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 502, column 39>
 //   // proto:  QAccessibleImageInterface * QAccessibleInterface::imageInterface();
 // _ZN20QAccessibleInterface14imageInterfaceEv imageInterface()
 extern "C"
@@ -1392,7 +1400,7 @@ C_ZN20QAccessibleInterface14imageInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->imageInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 499, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 505, column 39>
 //   // proto:  QAccessibleTableInterface * QAccessibleInterface::tableInterface();
 // _ZN20QAccessibleInterface14tableInterfaceEv tableInterface()
 extern "C"
@@ -1402,7 +1410,7 @@ C_ZN20QAccessibleInterface14tableInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->tableInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 487, column 46>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 493, column 46>
 //   // proto:  QAccessibleEditableTextInterface * QAccessibleInterface::editableTextInterface();
 // _ZN20QAccessibleInterface21editableTextInterfaceEv editableTextInterface()
 extern "C"
@@ -1412,7 +1420,7 @@ C_ZN20QAccessibleInterface21editableTextInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->editableTextInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 490, column 39>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 496, column 39>
 //   // proto:  QAccessibleValueInterface * QAccessibleInterface::valueInterface();
 // _ZN20QAccessibleInterface14valueInterfaceEv valueInterface()
 extern "C"
@@ -1422,7 +1430,7 @@ C_ZN20QAccessibleInterface14valueInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->valueInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 507, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 513, column 19>
 //   // proto:  void * QAccessibleInterface::interface_cast(QAccessible::InterfaceType );
 // _ZN20QAccessibleInterface14interface_castEN11QAccessible13InterfaceTypeE interface_cast(class QAccessible::InterfaceType)
 extern "C"
@@ -1433,7 +1441,7 @@ QAccessible::InterfaceType* arg1) {
   ((QAccessibleInterface*)qthis)->interface_cast(*((QAccessible::InterfaceType*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 477, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 483, column 19>
 //   // proto:  QRect QAccessibleInterface::rect();
 // _ZNK20QAccessibleInterface4rectEv rect()
 extern "C"
@@ -1443,7 +1451,7 @@ C_ZNK20QAccessibleInterface4rectEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->rect();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 476, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 482, column 18>
 //   // proto:  void QAccessibleInterface::setText(QAccessible::Text t, const QString & text);
 // _ZN20QAccessibleInterface7setTextEN11QAccessible4TextERK7QString setText(class QAccessible::Text, const class QString &)
 extern "C"
@@ -1454,7 +1462,7 @@ const QString* arg2) {
   ((QAccessibleInterface*)qthis)->setText(*((QAccessible::Text*)arg1),
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 459, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 465, column 22>
 //   // proto:  QObject * QAccessibleInterface::object();
 // _ZNK20QAccessibleInterface6objectEv object()
 extern "C"
@@ -1464,7 +1472,7 @@ C_ZNK20QAccessibleInterface6objectEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->object();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 493, column 40>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 499, column 40>
 //   // proto:  QAccessibleActionInterface * QAccessibleInterface::actionInterface();
 // _ZN20QAccessibleInterface15actionInterfaceEv actionInterface()
 extern "C"
@@ -1474,7 +1482,7 @@ C_ZN20QAccessibleInterface15actionInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->actionInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 469, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 475, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleInterface::parent();
 // _ZNK20QAccessibleInterface6parentEv parent()
 extern "C"
@@ -1484,7 +1492,7 @@ C_ZNK20QAccessibleInterface6parentEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->parent();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 466, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 472, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleInterface::childAt(int x, int y);
 // _ZNK20QAccessibleInterface7childAtEii childAt(int, int)
 extern "C"
@@ -1497,7 +1505,7 @@ int arg2) {
 arg2);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 471, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 477, column 17>
 //   // proto:  int QAccessibleInterface::childCount();
 // _ZNK20QAccessibleInterface10childCountEv childCount()
 extern "C"
@@ -1507,7 +1515,7 @@ C_ZNK20QAccessibleInterface10childCountEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->childCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 502, column 43>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 508, column 43>
 //   // proto:  QAccessibleTableCellInterface * QAccessibleInterface::tableCellInterface();
 // _ZN20QAccessibleInterface18tableCellInterfaceEv tableCellInterface()
 extern "C"
@@ -1517,7 +1525,7 @@ C_ZN20QAccessibleInterface18tableCellInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->tableCellInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 472, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 478, column 17>
 //   // proto:  int QAccessibleInterface::indexOfChild(const QAccessibleInterface * );
 // _ZNK20QAccessibleInterface12indexOfChildEPKS_ indexOfChild(const class QAccessibleInterface *)
 extern "C"
@@ -1528,7 +1536,7 @@ const QAccessibleInterface * arg1) {
   ((QAccessibleInterface*)qthis)->indexOfChild(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 481, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 487, column 20>
 //   // proto:  QColor QAccessibleInterface::foregroundColor();
 // _ZNK20QAccessibleInterface15foregroundColorEv foregroundColor()
 extern "C"
@@ -1538,7 +1546,7 @@ C_ZNK20QAccessibleInterface15foregroundColorEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->foregroundColor();
   return new QColor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 479, column 32>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 485, column 32>
 //   // proto:  QAccessible::State QAccessibleInterface::state();
 // _ZNK20QAccessibleInterface5stateEv state()
 extern "C"
@@ -1548,7 +1556,7 @@ C_ZNK20QAccessibleInterface5stateEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->state();
   return new QAccessible::State(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 458, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 464, column 18>
 //   // proto:  bool QAccessibleInterface::isValid();
 // _ZNK20QAccessibleInterface7isValidEv isValid()
 extern "C"
@@ -1558,7 +1566,7 @@ C_ZNK20QAccessibleInterface7isValidEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 460, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 466, column 22>
 //   // proto:  QWindow * QAccessibleInterface::window();
 // _ZNK20QAccessibleInterface6windowEv window()
 extern "C"
@@ -1568,7 +1576,7 @@ C_ZNK20QAccessibleInterface6windowEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->window();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 505, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 511, column 18>
 //   // proto:  void QAccessibleInterface::virtual_hook(int id, void * data);
 // _ZN20QAccessibleInterface12virtual_hookEiPv virtual_hook(int, void *)
 extern "C"
@@ -1579,7 +1587,7 @@ void * arg2) {
   ((QAccessibleInterface*)qthis)->virtual_hook(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 475, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 481, column 21>
 //   // proto:  QString QAccessibleInterface::text(QAccessible::Text t);
 // _ZNK20QAccessibleInterface4textEN11QAccessible4TextE text(class QAccessible::Text)
 extern "C"
@@ -1590,7 +1598,7 @@ QAccessible::Text* arg1) {
   ((QAccessibleInterface*)qthis)->text(*((QAccessible::Text*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 464, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 470, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleInterface::focusChild();
 // _ZNK20QAccessibleInterface10focusChildEv focusChild()
 extern "C"
@@ -1600,7 +1608,7 @@ C_ZNK20QAccessibleInterface10focusChildEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->focusChild();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 470, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 476, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleInterface::child(int index);
 // _ZNK20QAccessibleInterface5childEi child(int)
 extern "C"
@@ -1611,7 +1619,7 @@ int arg1) {
   ((QAccessibleInterface*)qthis)->child(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 484, column 38>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 490, column 38>
 //   // proto:  QAccessibleTextInterface * QAccessibleInterface::textInterface();
 // _ZN20QAccessibleInterface13textInterfaceEv textInterface()
 extern "C"
@@ -1621,7 +1629,7 @@ C_ZN20QAccessibleInterface13textInterfaceEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->textInterface();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 482, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 488, column 20>
 //   // proto:  QColor QAccessibleInterface::backgroundColor();
 // _ZNK20QAccessibleInterface15backgroundColorEv backgroundColor()
 extern "C"
@@ -1631,7 +1639,7 @@ C_ZNK20QAccessibleInterface15backgroundColorEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->backgroundColor();
   return new QColor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 463, column 75>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 469, column 75>
 //   // proto:  QVector<QPair<QAccessibleInterface *, QAccessible::Relation> > QAccessibleInterface::relations(QAccessible::Relation match);
 // _ZNK20QAccessibleInterface9relationsE6QFlagsIN11QAccessible12RelationFlagEE relations(class QAccessible::Relation)
 extern "C"
@@ -1642,7 +1650,7 @@ QAccessible::Relation* arg1) {
   ((QAccessibleInterface*)qthis)->relations(*((QAccessible::Relation*)arg1));
   return new QVector<QPair<QAccessibleInterface *, QFlags<QAccessible::RelationFlag> > >(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 478, column 31>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 484, column 31>
 //   // proto:  QAccessible::Role QAccessibleInterface::role();
 // _ZNK20QAccessibleInterface4roleEv role()
 extern "C"
@@ -1652,7 +1660,7 @@ C_ZNK20QAccessibleInterface4roleEv(void *qthis) {
   ((QAccessibleInterface*)qthis)->role();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 553, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 559, column 18>
 //   // proto:  void QAccessibleEditableTextInterface::insertText(int offset, const QString & text);
 // _ZN32QAccessibleEditableTextInterface10insertTextEiRK7QString insertText(int, const class QString &)
 extern "C"
@@ -1663,7 +1671,7 @@ const QString* arg2) {
   ((QAccessibleEditableTextInterface*)qthis)->insertText(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 554, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 560, column 18>
 //   // proto:  void QAccessibleEditableTextInterface::replaceText(int startOffset, int endOffset, const QString & text);
 // _ZN32QAccessibleEditableTextInterface11replaceTextEiiRK7QString replaceText(int, int, const class QString &)
 extern "C"
@@ -1676,7 +1684,7 @@ const QString* arg3) {
 arg2,
 *((const QString*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 552, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 558, column 18>
 //   // proto:  void QAccessibleEditableTextInterface::deleteText(int startOffset, int endOffset);
 // _ZN32QAccessibleEditableTextInterface10deleteTextEii deleteText(int, int)
 extern "C"
@@ -1692,7 +1700,7 @@ extern "C"
 void C_ZN32QAccessibleEditableTextInterfaceD2Ev(void *qthis) {
   delete (QAccessibleEditableTextInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 579, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 584, column 17>
 //   // proto:  int QAccessibleTableCellInterface::columnIndex();
 // _ZNK29QAccessibleTableCellInterface11columnIndexEv columnIndex()
 extern "C"
@@ -1707,7 +1715,7 @@ extern "C"
 void C_ZN29QAccessibleTableCellInterfaceD2Ev(void *qthis) {
   delete (QAccessibleTableCellInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 581, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 586, column 17>
 //   // proto:  int QAccessibleTableCellInterface::columnExtent();
 // _ZNK29QAccessibleTableCellInterface12columnExtentEv columnExtent()
 extern "C"
@@ -1717,7 +1725,7 @@ C_ZNK29QAccessibleTableCellInterface12columnExtentEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->columnExtent();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 580, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 585, column 17>
 //   // proto:  int QAccessibleTableCellInterface::rowIndex();
 // _ZNK29QAccessibleTableCellInterface8rowIndexEv rowIndex()
 extern "C"
@@ -1727,7 +1735,7 @@ C_ZNK29QAccessibleTableCellInterface8rowIndexEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->rowIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 584, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 589, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleTableCellInterface::table();
 // _ZNK29QAccessibleTableCellInterface5tableEv table()
 extern "C"
@@ -1737,7 +1745,7 @@ C_ZNK29QAccessibleTableCellInterface5tableEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->table();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 582, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 587, column 17>
 //   // proto:  int QAccessibleTableCellInterface::rowExtent();
 // _ZNK29QAccessibleTableCellInterface9rowExtentEv rowExtent()
 extern "C"
@@ -1747,7 +1755,7 @@ C_ZNK29QAccessibleTableCellInterface9rowExtentEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->rowExtent();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 578, column 42>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 583, column 42>
 //   // proto:  QList<QAccessibleInterface *> QAccessibleTableCellInterface::rowHeaderCells();
 // _ZNK29QAccessibleTableCellInterface14rowHeaderCellsEv rowHeaderCells()
 extern "C"
@@ -1757,7 +1765,7 @@ C_ZNK29QAccessibleTableCellInterface14rowHeaderCellsEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->rowHeaderCells();
   return new QList<QAccessibleInterface *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 577, column 42>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 582, column 42>
 //   // proto:  QList<QAccessibleInterface *> QAccessibleTableCellInterface::columnHeaderCells();
 // _ZNK29QAccessibleTableCellInterface17columnHeaderCellsEv columnHeaderCells()
 extern "C"
@@ -1767,7 +1775,7 @@ C_ZNK29QAccessibleTableCellInterface17columnHeaderCellsEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->columnHeaderCells();
   return new QList<QAccessibleInterface *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 575, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 580, column 18>
 //   // proto:  bool QAccessibleTableCellInterface::isSelected();
 // _ZNK29QAccessibleTableCellInterface10isSelectedEv isSelected()
 extern "C"
@@ -1777,7 +1785,7 @@ C_ZNK29QAccessibleTableCellInterface10isSelectedEv(void *qthis) {
   ((QAccessibleTableCellInterface*)qthis)->isSelected();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 612, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 617, column 18>
 //   // proto:  bool QAccessibleTableInterface::unselectColumn(int column);
 // _ZN25QAccessibleTableInterface14unselectColumnEi unselectColumn(int)
 extern "C"
@@ -1788,7 +1796,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->unselectColumn(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 599, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 604, column 21>
 //   // proto:  QString QAccessibleTableInterface::columnDescription(int column);
 // _ZNK25QAccessibleTableInterface17columnDescriptionEi columnDescription(int)
 extern "C"
@@ -1799,7 +1807,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->columnDescription(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 596, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 601, column 17>
 //   // proto:  int QAccessibleTableInterface::selectedCellCount();
 // _ZNK25QAccessibleTableInterface17selectedCellCountEv selectedCellCount()
 extern "C"
@@ -1809,7 +1817,7 @@ C_ZNK25QAccessibleTableInterface17selectedCellCountEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->selectedCellCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 597, column 42>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 602, column 42>
 //   // proto:  QList<QAccessibleInterface *> QAccessibleTableInterface::selectedCells();
 // _ZNK25QAccessibleTableInterface13selectedCellsEv selectedCells()
 extern "C"
@@ -1819,7 +1827,7 @@ C_ZNK25QAccessibleTableInterface13selectedCellsEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->selectedCells();
   return new QList<QAccessibleInterface *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 609, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 614, column 18>
 //   // proto:  bool QAccessibleTableInterface::selectRow(int row);
 // _ZN25QAccessibleTableInterface9selectRowEi selectRow(int)
 extern "C"
@@ -1830,7 +1838,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->selectRow(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 602, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 607, column 17>
 //   // proto:  int QAccessibleTableInterface::selectedRowCount();
 // _ZNK25QAccessibleTableInterface16selectedRowCountEv selectedRowCount()
 extern "C"
@@ -1845,7 +1853,7 @@ extern "C"
 void C_ZN25QAccessibleTableInterfaceD2Ev(void *qthis) {
   delete (QAccessibleTableInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 605, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 610, column 24>
 //   // proto:  QList<int> QAccessibleTableInterface::selectedColumns();
 // _ZNK25QAccessibleTableInterface15selectedColumnsEv selectedColumns()
 extern "C"
@@ -1855,7 +1863,7 @@ C_ZNK25QAccessibleTableInterface15selectedColumnsEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->selectedColumns();
   return new QList<int>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 595, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 600, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleTableInterface::cellAt(int row, int column);
 // _ZNK25QAccessibleTableInterface6cellAtEii cellAt(int, int)
 extern "C"
@@ -1868,7 +1876,7 @@ int arg2) {
 arg2);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 606, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 611, column 24>
 //   // proto:  QList<int> QAccessibleTableInterface::selectedRows();
 // _ZNK25QAccessibleTableInterface12selectedRowsEv selectedRows()
 extern "C"
@@ -1878,7 +1886,7 @@ C_ZNK25QAccessibleTableInterface12selectedRowsEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->selectedRows();
   return new QList<int>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 614, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 619, column 18>
 //   // proto:  void QAccessibleTableInterface::modelChange(QAccessibleTableModelChangeEvent * event);
 // _ZN25QAccessibleTableInterface11modelChangeEP32QAccessibleTableModelChangeEvent modelChange(class QAccessibleTableModelChangeEvent *)
 extern "C"
@@ -1887,7 +1895,7 @@ C_ZN25QAccessibleTableInterface11modelChangeEP32QAccessibleTableModelChangeEvent
 QAccessibleTableModelChangeEvent * arg1) {
   ((QAccessibleTableInterface*)qthis)->modelChange(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 603, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 608, column 17>
 //   // proto:  int QAccessibleTableInterface::columnCount();
 // _ZNK25QAccessibleTableInterface11columnCountEv columnCount()
 extern "C"
@@ -1897,7 +1905,7 @@ C_ZNK25QAccessibleTableInterface11columnCountEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->columnCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 610, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 615, column 18>
 //   // proto:  bool QAccessibleTableInterface::selectColumn(int column);
 // _ZN25QAccessibleTableInterface12selectColumnEi selectColumn(int)
 extern "C"
@@ -1908,7 +1916,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->selectColumn(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 611, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 616, column 18>
 //   // proto:  bool QAccessibleTableInterface::unselectRow(int row);
 // _ZN25QAccessibleTableInterface11unselectRowEi unselectRow(int)
 extern "C"
@@ -1919,7 +1927,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->unselectRow(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 604, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 609, column 17>
 //   // proto:  int QAccessibleTableInterface::rowCount();
 // _ZNK25QAccessibleTableInterface8rowCountEv rowCount()
 extern "C"
@@ -1929,7 +1937,7 @@ C_ZNK25QAccessibleTableInterface8rowCountEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->rowCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 600, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 605, column 21>
 //   // proto:  QString QAccessibleTableInterface::rowDescription(int row);
 // _ZNK25QAccessibleTableInterface14rowDescriptionEi rowDescription(int)
 extern "C"
@@ -1940,7 +1948,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->rowDescription(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 593, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 598, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleTableInterface::summary();
 // _ZNK25QAccessibleTableInterface7summaryEv summary()
 extern "C"
@@ -1950,7 +1958,7 @@ C_ZNK25QAccessibleTableInterface7summaryEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->summary();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 607, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 612, column 18>
 //   // proto:  bool QAccessibleTableInterface::isColumnSelected(int column);
 // _ZNK25QAccessibleTableInterface16isColumnSelectedEi isColumnSelected(int)
 extern "C"
@@ -1961,7 +1969,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->isColumnSelected(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 592, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 597, column 35>
 //   // proto:  QAccessibleInterface * QAccessibleTableInterface::caption();
 // _ZNK25QAccessibleTableInterface7captionEv caption()
 extern "C"
@@ -1971,7 +1979,7 @@ C_ZNK25QAccessibleTableInterface7captionEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->caption();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 608, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 613, column 18>
 //   // proto:  bool QAccessibleTableInterface::isRowSelected(int row);
 // _ZNK25QAccessibleTableInterface13isRowSelectedEi isRowSelected(int)
 extern "C"
@@ -1982,7 +1990,7 @@ int arg1) {
   ((QAccessibleTableInterface*)qthis)->isRowSelected(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 601, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 606, column 17>
 //   // proto:  int QAccessibleTableInterface::selectedColumnCount();
 // _ZNK25QAccessibleTableInterface19selectedColumnCountEv selectedColumnCount()
 extern "C"
@@ -1992,7 +2000,21 @@ C_ZNK25QAccessibleTableInterface19selectedColumnCountEv(void *qthis) {
   ((QAccessibleTableInterface*)qthis)->selectedColumnCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 866, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 870, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
+extern "C"
+QAccessibleTextUpdateEvent*
+C_ZN26QAccessibleTextUpdateEventC2EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * arg1,
+int arg2,
+const QString* arg3,
+const QString* arg4) {
+  auto ret = new QAccessibleTextUpdateEvent(arg1,
+arg2,
+*((const QString*)arg3),
+*((const QString*)arg4));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 13>
 //   // proto:  QString QAccessibleTextUpdateEvent::textInserted();
 // _ZNK26QAccessibleTextUpdateEvent12textInsertedEv textInserted()
 extern "C"
@@ -2002,18 +2024,7 @@ C_ZNK26QAccessibleTextUpdateEvent12textInsertedEv(void *qthis) {
   ((QAccessibleTextUpdateEvent*)qthis)->textInserted();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 857, column 12>
-//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text);
-extern "C"
-QAccessibleTextUpdateEvent*
-C_ZN26QAccessibleTextUpdateEventC2EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * arg1,
-int arg2,
-const QString* arg3,
-const QString* arg4) {
-  auto ret = new QAccessibleTextUpdateEvent(arg1, arg2, *((const QString*)arg3), *((const QString*)arg4));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 863, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 879, column 13>
 //   // proto:  QString QAccessibleTextUpdateEvent::textRemoved();
 // _ZNK26QAccessibleTextUpdateEvent11textRemovedEv textRemoved()
 extern "C"
@@ -2023,7 +2034,21 @@ C_ZNK26QAccessibleTextUpdateEvent11textRemovedEv(void *qthis) {
   ((QAccessibleTextUpdateEvent*)qthis)->textRemoved();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 869, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 864, column 12>
+//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
+extern "C"
+QAccessibleTextUpdateEvent*
+C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * arg1,
+int arg2,
+const QString* arg3,
+const QString* arg4) {
+  auto ret = new QAccessibleTextUpdateEvent(arg1,
+arg2,
+*((const QString*)arg3),
+*((const QString*)arg4));
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 885, column 9>
 //   // proto:  int QAccessibleTextUpdateEvent::changePosition();
 // _ZNK26QAccessibleTextUpdateEvent14changePositionEv changePosition()
 extern "C"
@@ -2033,27 +2058,22 @@ C_ZNK26QAccessibleTextUpdateEvent14changePositionEv(void *qthis) {
   ((QAccessibleTextUpdateEvent*)qthis)->changePosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 851, column 12>
-//   // proto:  void QAccessibleTextUpdateEvent::QAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text);
+//   // proto:  void QAccessibleTextUpdateEvent::~QAccessibleTextUpdateEvent();
 extern "C"
-QAccessibleTextUpdateEvent*
-C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * arg1,
-int arg2,
-const QString* arg3,
-const QString* arg4) {
-  auto ret = new QAccessibleTextUpdateEvent(arg1, arg2, *((const QString*)arg3), *((const QString*)arg4));
-  return ret;
+void C_ZN26QAccessibleTextUpdateEventD2Ev(void *qthis) {
+  delete (QAccessibleTextUpdateEvent*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 724, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 728, column 12>
 //   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state);
 extern "C"
 QAccessibleStateChangeEvent*
 C_ZN27QAccessibleStateChangeEventC2EP20QAccessibleInterfaceN11QAccessible5StateE(QAccessibleInterface * arg1,
 QAccessible::State* arg2) {
-  auto ret = new QAccessibleStateChangeEvent(arg1, *((QAccessible::State*)arg2));
+  auto ret = new QAccessibleStateChangeEvent(arg1,
+*((QAccessible::State*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 730, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 735, column 24>
 //   // proto:  QAccessible::State QAccessibleStateChangeEvent::changedStates();
 // _ZNK27QAccessibleStateChangeEvent13changedStatesEv changedStates()
 extern "C"
@@ -2063,16 +2083,22 @@ C_ZNK27QAccessibleStateChangeEvent13changedStatesEv(void *qthis) {
   ((QAccessibleStateChangeEvent*)qthis)->changedStates();
   return new QAccessible::State(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 719, column 12>
+//   // proto:  void QAccessibleStateChangeEvent::~QAccessibleStateChangeEvent();
+extern "C"
+void C_ZN27QAccessibleStateChangeEventD2Ev(void *qthis) {
+  delete (QAccessibleStateChangeEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 723, column 12>
 //   // proto:  void QAccessibleStateChangeEvent::QAccessibleStateChangeEvent(QObject * obj, QAccessible::State state);
 extern "C"
 QAccessibleStateChangeEvent*
 C_ZN27QAccessibleStateChangeEventC2EP7QObjectN11QAccessible5StateE(QObject * arg1,
 QAccessible::State* arg2) {
-  auto ret = new QAccessibleStateChangeEvent(arg1, *((QAccessible::State*)arg2));
+  auto ret = new QAccessibleStateChangeEvent(arg1,
+*((QAccessible::State*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 652, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 657, column 21>
 //   // proto:  QString QAccessibleImageInterface::imageDescription();
 // _ZNK25QAccessibleImageInterface16imageDescriptionEv imageDescription()
 extern "C"
@@ -2082,7 +2108,7 @@ C_ZNK25QAccessibleImageInterface16imageDescriptionEv(void *qthis) {
   ((QAccessibleImageInterface*)qthis)->imageDescription();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 654, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 659, column 20>
 //   // proto:  QPoint QAccessibleImageInterface::imagePosition();
 // _ZNK25QAccessibleImageInterface13imagePositionEv imagePosition()
 extern "C"
@@ -2097,7 +2123,7 @@ extern "C"
 void C_ZN25QAccessibleImageInterfaceD2Ev(void *qthis) {
   delete (QAccessibleImageInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 653, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 658, column 19>
 //   // proto:  QSize QAccessibleImageInterface::imageSize();
 // _ZNK25QAccessibleImageInterface9imageSizeEv imageSize()
 extern "C"
@@ -2107,7 +2133,7 @@ C_ZNK25QAccessibleImageInterface9imageSizeEv(void *qthis) {
   ((QAccessibleImageInterface*)qthis)->imageSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 808, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 819, column 13>
 //   // proto:  QString QAccessibleTextInsertEvent::textInserted();
 // _ZNK26QAccessibleTextInsertEvent12textInsertedEv textInserted()
 extern "C"
@@ -2117,7 +2143,7 @@ C_ZNK26QAccessibleTextInsertEvent12textInsertedEv(void *qthis) {
   ((QAccessibleTextInsertEvent*)qthis)->textInserted();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 811, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 822, column 9>
 //   // proto:  int QAccessibleTextInsertEvent::changePosition();
 // _ZNK26QAccessibleTextInsertEvent14changePositionEv changePosition()
 extern "C"
@@ -2127,27 +2153,36 @@ C_ZNK26QAccessibleTextInsertEvent14changePositionEv(void *qthis) {
   ((QAccessibleTextInsertEvent*)qthis)->changePosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 801, column 12>
+//   // proto:  void QAccessibleTextInsertEvent::~QAccessibleTextInsertEvent();
+extern "C"
+void C_ZN26QAccessibleTextInsertEventD2Ev(void *qthis) {
+  delete (QAccessibleTextInsertEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 810, column 12>
 //   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text);
 extern "C"
 QAccessibleTextInsertEvent*
 C_ZN26QAccessibleTextInsertEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextInsertEvent(arg1, arg2, *((const QString*)arg3));
+  auto ret = new QAccessibleTextInsertEvent(arg1,
+arg2,
+*((const QString*)arg3));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 795, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 804, column 12>
 //   // proto:  void QAccessibleTextInsertEvent::QAccessibleTextInsertEvent(QObject * obj, int position, const QString & text);
 extern "C"
 QAccessibleTextInsertEvent*
 C_ZN26QAccessibleTextInsertEventC2EP7QObjectiRK7QString(QObject * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextInsertEvent(arg1, arg2, *((const QString*)arg3));
+  auto ret = new QAccessibleTextInsertEvent(arg1,
+arg2,
+*((const QString*)arg3));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 565, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 570, column 22>
 //   // proto:  QVariant QAccessibleValueInterface::maximumValue();
 // _ZNK25QAccessibleValueInterface12maximumValueEv maximumValue()
 extern "C"
@@ -2157,7 +2192,7 @@ C_ZNK25QAccessibleValueInterface12maximumValueEv(void *qthis) {
   ((QAccessibleValueInterface*)qthis)->maximumValue();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 567, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 572, column 22>
 //   // proto:  QVariant QAccessibleValueInterface::minimumStepSize();
 // _ZNK25QAccessibleValueInterface15minimumStepSizeEv minimumStepSize()
 extern "C"
@@ -2167,7 +2202,7 @@ C_ZNK25QAccessibleValueInterface15minimumStepSizeEv(void *qthis) {
   ((QAccessibleValueInterface*)qthis)->minimumStepSize();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 563, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 568, column 22>
 //   // proto:  QVariant QAccessibleValueInterface::currentValue();
 // _ZNK25QAccessibleValueInterface12currentValueEv currentValue()
 extern "C"
@@ -2177,7 +2212,7 @@ C_ZNK25QAccessibleValueInterface12currentValueEv(void *qthis) {
   ((QAccessibleValueInterface*)qthis)->currentValue();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 566, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 571, column 22>
 //   // proto:  QVariant QAccessibleValueInterface::minimumValue();
 // _ZNK25QAccessibleValueInterface12minimumValueEv minimumValue()
 extern "C"
@@ -2192,7 +2227,7 @@ extern "C"
 void C_ZN25QAccessibleValueInterfaceD2Ev(void *qthis) {
   delete (QAccessibleValueInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 564, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 569, column 18>
 //   // proto:  void QAccessibleValueInterface::setCurrentValue(const QVariant & value);
 // _ZN25QAccessibleValueInterface15setCurrentValueERK8QVariant setCurrentValue(const class QVariant &)
 extern "C"
@@ -2201,17 +2236,19 @@ C_ZN25QAccessibleValueInterface15setCurrentValueERK8QVariant(void *qthis,
 const QVariant* arg1) {
   ((QAccessibleValueInterface*)qthis)->setCurrentValue(*((const QVariant*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 823, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 834, column 12>
 //   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text);
 extern "C"
 QAccessibleTextRemoveEvent*
 C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextRemoveEvent(arg1, arg2, *((const QString*)arg3));
+  auto ret = new QAccessibleTextRemoveEvent(arg1,
+arg2,
+*((const QString*)arg3));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 836, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 849, column 13>
 //   // proto:  QString QAccessibleTextRemoveEvent::textRemoved();
 // _ZNK26QAccessibleTextRemoveEvent11textRemovedEv textRemoved()
 extern "C"
@@ -2221,17 +2258,24 @@ C_ZNK26QAccessibleTextRemoveEvent11textRemovedEv(void *qthis) {
   ((QAccessibleTextRemoveEvent*)qthis)->textRemoved();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 829, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 840, column 12>
 //   // proto:  void QAccessibleTextRemoveEvent::QAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text);
 extern "C"
 QAccessibleTextRemoveEvent*
 C_ZN26QAccessibleTextRemoveEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * arg1,
 int arg2,
 const QString* arg3) {
-  auto ret = new QAccessibleTextRemoveEvent(arg1, arg2, *((const QString*)arg3));
+  auto ret = new QAccessibleTextRemoveEvent(arg1,
+arg2,
+*((const QString*)arg3));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 839, column 9>
+//   // proto:  void QAccessibleTextRemoveEvent::~QAccessibleTextRemoveEvent();
+extern "C"
+void C_ZN26QAccessibleTextRemoveEventD2Ev(void *qthis) {
+  delete (QAccessibleTextRemoveEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 852, column 9>
 //   // proto:  int QAccessibleTextRemoveEvent::changePosition();
 // _ZNK26QAccessibleTextRemoveEvent14changePositionEv changePosition()
 extern "C"
@@ -2241,47 +2285,7 @@ C_ZNK26QAccessibleTextRemoveEvent14changePositionEv(void *qthis) {
   ((QAccessibleTextRemoveEvent*)qthis)->changePosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 785, column 9>
-//   // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
-// _ZNK29QAccessibleTextSelectionEvent12selectionEndEv selectionEnd()
-extern "C"
-int
-C_ZNK29QAccessibleTextSelectionEvent12selectionEndEv(void *qthis) {
-  auto ret =
-  ((QAccessibleTextSelectionEvent*)qthis)->selectionEnd();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 772, column 12>
-//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
-extern "C"
-QAccessibleTextSelectionEvent*
-C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * arg1,
-int arg2,
-int arg3) {
-  auto ret = new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 784, column 9>
-//   // proto:  int QAccessibleTextSelectionEvent::selectionStart();
-// _ZNK29QAccessibleTextSelectionEvent14selectionStartEv selectionStart()
-extern "C"
-int
-C_ZNK29QAccessibleTextSelectionEvent14selectionStartEv(void *qthis) {
-  auto ret =
-  ((QAccessibleTextSelectionEvent*)qthis)->selectionStart();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 766, column 12>
-//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
-extern "C"
-QAccessibleTextSelectionEvent*
-C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * arg1,
-int arg2,
-int arg3) {
-  auto ret = new QAccessibleTextSelectionEvent(arg1, arg2, arg3);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 788, column 10>
 //   // proto:  void QAccessibleTextSelectionEvent::setSelection(int start, int end);
 // _ZN29QAccessibleTextSelectionEvent12setSelectionEii setSelection(int, int)
 extern "C"
@@ -2292,16 +2296,66 @@ int arg2) {
   ((QAccessibleTextSelectionEvent*)qthis)->setSelection(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 748, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::~QAccessibleTextSelectionEvent();
+extern "C"
+void C_ZN29QAccessibleTextSelectionEventD2Ev(void *qthis) {
+  delete (QAccessibleTextSelectionEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 794, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionEnd();
+// _ZNK29QAccessibleTextSelectionEvent12selectionEndEv selectionEnd()
+extern "C"
+int
+C_ZNK29QAccessibleTextSelectionEvent12selectionEndEv(void *qthis) {
+  auto ret =
+  ((QAccessibleTextSelectionEvent*)qthis)->selectionEnd();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 793, column 9>
+//   // proto:  int QAccessibleTextSelectionEvent::selectionStart();
+// _ZNK29QAccessibleTextSelectionEvent14selectionStartEv selectionStart()
+extern "C"
+int
+C_ZNK29QAccessibleTextSelectionEvent14selectionStartEv(void *qthis) {
+  auto ret =
+  ((QAccessibleTextSelectionEvent*)qthis)->selectionStart();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 773, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QObject * obj, int start, int end);
+extern "C"
+QAccessibleTextSelectionEvent*
+C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * arg1,
+int arg2,
+int arg3) {
+  auto ret = new QAccessibleTextSelectionEvent(arg1,
+arg2,
+arg3);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 779, column 12>
+//   // proto:  void QAccessibleTextSelectionEvent::QAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end);
+extern "C"
+QAccessibleTextSelectionEvent*
+C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * arg1,
+int arg2,
+int arg3) {
+  auto ret = new QAccessibleTextSelectionEvent(arg1,
+arg2,
+arg3);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 753, column 12>
 //   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos);
 extern "C"
 QAccessibleTextCursorEvent*
 C_ZN26QAccessibleTextCursorEventC2EP20QAccessibleInterfacei(QAccessibleInterface * arg1,
 int arg2) {
-  auto ret = new QAccessibleTextCursorEvent(arg1, arg2);
+  auto ret = new QAccessibleTextCursorEvent(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 755, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 762, column 10>
 //   // proto:  void QAccessibleTextCursorEvent::setCursorPosition(int position);
 // _ZN26QAccessibleTextCursorEvent17setCursorPositionEi setCursorPosition(int)
 extern "C"
@@ -2310,7 +2364,22 @@ C_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *qthis,
 int arg1) {
   ((QAccessibleTextCursorEvent*)qthis)->setCursorPosition(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 756, column 9>
+//   // proto:  void QAccessibleTextCursorEvent::~QAccessibleTextCursorEvent();
+extern "C"
+void C_ZN26QAccessibleTextCursorEventD2Ev(void *qthis) {
+  delete (QAccessibleTextCursorEvent*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 747, column 12>
+//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
+extern "C"
+QAccessibleTextCursorEvent*
+C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * arg1,
+int arg2) {
+  auto ret = new QAccessibleTextCursorEvent(arg1,
+arg2);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 763, column 9>
 //   // proto:  int QAccessibleTextCursorEvent::cursorPosition();
 // _ZNK26QAccessibleTextCursorEvent14cursorPositionEv cursorPosition()
 extern "C"
@@ -2320,34 +2389,32 @@ C_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *qthis) {
   ((QAccessibleTextCursorEvent*)qthis)->cursorPosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 742, column 12>
-//   // proto:  void QAccessibleTextCursorEvent::QAccessibleTextCursorEvent(QObject * obj, int cursorPos);
+//   // proto:  void QAccessibleValueChangeEvent::~QAccessibleValueChangeEvent();
 extern "C"
-QAccessibleTextCursorEvent*
-C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * arg1,
-int arg2) {
-  auto ret = new QAccessibleTextCursorEvent(arg1, arg2);
-  return ret;
+void C_ZN27QAccessibleValueChangeEventD2Ev(void *qthis) {
+  delete (QAccessibleValueChangeEvent*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 882, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 898, column 12>
 //   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QObject * obj, const QVariant & val);
 extern "C"
 QAccessibleValueChangeEvent*
 C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * arg1,
 const QVariant* arg2) {
-  auto ret = new QAccessibleValueChangeEvent(arg1, *((const QVariant*)arg2));
+  auto ret = new QAccessibleValueChangeEvent(arg1,
+*((const QVariant*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 888, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 904, column 12>
 //   // proto:  void QAccessibleValueChangeEvent::QAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val);
 extern "C"
 QAccessibleValueChangeEvent*
 C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * arg1,
 const QVariant* arg2) {
-  auto ret = new QAccessibleValueChangeEvent(arg1, *((const QVariant*)arg2));
+  auto ret = new QAccessibleValueChangeEvent(arg1,
+*((const QVariant*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 895, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 913, column 10>
 //   // proto:  void QAccessibleValueChangeEvent::setValue(const QVariant & val);
 // _ZN27QAccessibleValueChangeEvent8setValueERK8QVariant setValue(const class QVariant &)
 extern "C"
@@ -2356,7 +2423,7 @@ C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *qthis,
 const QVariant* arg1) {
   ((QAccessibleValueChangeEvent*)qthis)->setValue(*((const QVariant*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 896, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessible.h', line 914, column 14>
 //   // proto:  QVariant QAccessibleValueChangeEvent::value();
 // _ZNK27QAccessibleValueChangeEvent5valueEv value()
 extern "C"

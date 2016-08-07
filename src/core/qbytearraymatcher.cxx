@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qbytearraymatcher.h
 // dst-file: /src/core/qbytearraymatcher.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qbytearraymatcher_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 59, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 65, column 23>
 //   // proto:  QByteArray QByteArrayMatcher::pattern();
 if (true) {
   auto f = [](QByteArrayMatcher flythis) {
@@ -43,7 +43,7 @@ int QByteArrayMatcher_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 59, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 65, column 23>
 //   // proto:  QByteArray QByteArrayMatcher::pattern();
 // _ZNK17QByteArrayMatcher7patternEv pattern()
 extern "C"
@@ -53,7 +53,7 @@ C_ZNK17QByteArrayMatcher7patternEv(void *qthis) {
   ((QByteArrayMatcher*)qthis)->pattern();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 58, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 64, column 9>
 //   // proto:  int QByteArrayMatcher::indexIn(const char * str, int len, int from);
 // _ZNK17QByteArrayMatcher7indexInEPKcii indexIn(const char *, int, int)
 extern "C"
@@ -68,7 +68,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 55, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 61, column 10>
 //   // proto:  void QByteArrayMatcher::setPattern(const QByteArray & pattern);
 // _ZN17QByteArrayMatcher10setPatternERK10QByteArray setPattern(const class QByteArray &)
 extern "C"
@@ -77,7 +77,7 @@ C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *qthis,
 const QByteArray* arg1) {
   ((QByteArrayMatcher*)qthis)->setPattern(*((const QByteArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 53, column 5>
 //   // proto:  void QByteArrayMatcher::QByteArrayMatcher();
 extern "C"
 QByteArrayMatcher*
@@ -85,16 +85,17 @@ C_ZN17QByteArrayMatcherC2Ev() {
   auto ret = new QByteArrayMatcher();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 49, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 55, column 14>
 //   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const char * pattern, int length);
 extern "C"
 QByteArrayMatcher*
 C_ZN17QByteArrayMatcherC2EPKci(const char * arg1,
 int arg2) {
-  auto ret = new QByteArrayMatcher(arg1, arg2);
+  auto ret = new QByteArrayMatcher(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 48, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 54, column 14>
 //   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const QByteArray & pattern);
 extern "C"
 QByteArrayMatcher*
@@ -102,7 +103,7 @@ C_ZN17QByteArrayMatcherC2ERK10QByteArray(const QByteArray* arg1) {
   auto ret = new QByteArrayMatcher(*((const QByteArray*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 57, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 63, column 9>
 //   // proto:  int QByteArrayMatcher::indexIn(const QByteArray & ba, int from);
 // _ZNK17QByteArrayMatcher7indexInERK10QByteArrayi indexIn(const class QByteArray &, int)
 extern "C"
@@ -115,7 +116,7 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 56, column 5>
 //   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const QByteArrayMatcher & other);
 extern "C"
 QByteArrayMatcher*

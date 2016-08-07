@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qparallelanimationgroup.h
 // dst-file: /src/core/qparallelanimationgroup.cxx
 //
@@ -37,7 +37,7 @@ extern "C"
 void C_ZN23QParallelAnimationGroupD2Ev(void *qthis) {
   delete (QParallelAnimationGroup*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 53, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 59, column 9>
 //   // proto:  int QParallelAnimationGroup::duration();
 // _ZNK23QParallelAnimationGroup8durationEv duration()
 extern "C"
@@ -47,7 +47,7 @@ C_ZNK23QParallelAnimationGroup8durationEv(void *qthis) {
   ((QParallelAnimationGroup*)qthis)->duration();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 56, column 5>
 //   // proto:  void QParallelAnimationGroup::QParallelAnimationGroup(QObject * parent);
 extern "C"
 QParallelAnimationGroup*
@@ -55,7 +55,7 @@ C_ZN23QParallelAnimationGroupC2EP7QObject(QObject * arg1) {
   auto ret = new QParallelAnimationGroup(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qparallelanimationgroup.h', line 53, column 5>
 //   // proto:  const QMetaObject * QParallelAnimationGroup::metaObject();
 // _ZNK23QParallelAnimationGroup10metaObjectEv metaObject()
 extern "C"

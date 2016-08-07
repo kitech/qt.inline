@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qsequentialanimationgroup.h
 // dst-file: /src/core/qsequentialanimationgroup.cxx
 //
@@ -32,7 +32,7 @@ int QSequentialAnimationGroup_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 57, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 63, column 22>
 //   // proto:  QPauseAnimation * QSequentialAnimationGroup::insertPause(int index, int msecs);
 // _ZN25QSequentialAnimationGroup11insertPauseEii insertPause(int, int)
 extern "C"
@@ -45,7 +45,7 @@ int arg2) {
 arg2);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 69, column 10>
 //   // proto:  void QSequentialAnimationGroup::currentAnimationChanged(QAbstractAnimation * current);
 // _ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation currentAnimationChanged(class QAbstractAnimation *)
 extern "C"
@@ -54,7 +54,7 @@ C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation(v
 QAbstractAnimation * arg1) {
   ((QSequentialAnimationGroup*)qthis)->currentAnimationChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 59, column 5>
 //   // proto:  void QSequentialAnimationGroup::QSequentialAnimationGroup(QObject * parent);
 extern "C"
 QSequentialAnimationGroup*
@@ -62,7 +62,7 @@ C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * arg1) {
   auto ret = new QSequentialAnimationGroup(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 56, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 62, column 22>
 //   // proto:  QPauseAnimation * QSequentialAnimationGroup::addPause(int msecs);
 // _ZN25QSequentialAnimationGroup8addPauseEi addPause(int)
 extern "C"
@@ -78,7 +78,7 @@ extern "C"
 void C_ZN25QSequentialAnimationGroupD2Ev(void *qthis) {
   delete (QSequentialAnimationGroup*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 55, column 5>
 //   // proto:  const QMetaObject * QSequentialAnimationGroup::metaObject();
 // _ZNK25QSequentialAnimationGroup10metaObjectEv metaObject()
 extern "C"
@@ -88,7 +88,7 @@ C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *qthis) {
   ((QSequentialAnimationGroup*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 59, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 65, column 25>
 //   // proto:  QAbstractAnimation * QSequentialAnimationGroup::currentAnimation();
 // _ZNK25QSequentialAnimationGroup16currentAnimationEv currentAnimation()
 extern "C"
@@ -98,7 +98,7 @@ C_ZNK25QSequentialAnimationGroup16currentAnimationEv(void *qthis) {
   ((QSequentialAnimationGroup*)qthis)->currentAnimation();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 60, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qsequentialanimationgroup.h', line 66, column 9>
 //   // proto:  int QSequentialAnimationGroup::duration();
 // _ZNK25QSequentialAnimationGroup8durationEv duration()
 extern "C"

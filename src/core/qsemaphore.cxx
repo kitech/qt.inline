@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qsemaphore.h
 // dst-file: /src/core/qsemaphore.cxx
 //
@@ -32,7 +32,7 @@ int QSemaphore_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 58, column 10>
 //   // proto:  void QSemaphore::acquire(int n);
 // _ZN10QSemaphore7acquireEi acquire(int)
 extern "C"
@@ -41,7 +41,7 @@ C_ZN10QSemaphore7acquireEi(void *qthis,
 int arg1) {
   ((QSemaphore*)qthis)->acquire(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 62, column 10>
 //   // proto:  void QSemaphore::release(int n);
 // _ZN10QSemaphore7releaseEi release(int)
 extern "C"
@@ -50,7 +50,7 @@ C_ZN10QSemaphore7releaseEi(void *qthis,
 int arg1) {
   ((QSemaphore*)qthis)->release(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 58, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 64, column 9>
 //   // proto:  int QSemaphore::available();
 // _ZNK10QSemaphore9availableEv available()
 extern "C"
@@ -60,7 +60,7 @@ C_ZNK10QSemaphore9availableEv(void *qthis) {
   ((QSemaphore*)qthis)->available();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 60, column 10>
 //   // proto:  bool QSemaphore::tryAcquire(int n, int timeout);
 // _ZN10QSemaphore10tryAcquireEii tryAcquire(int, int)
 extern "C"
@@ -73,7 +73,7 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 53, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 59, column 10>
 //   // proto:  bool QSemaphore::tryAcquire(int n);
 // _ZN10QSemaphore10tryAcquireEi tryAcquire(int)
 extern "C"
@@ -84,7 +84,7 @@ int arg1) {
   ((QSemaphore*)qthis)->tryAcquire(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 49, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 55, column 14>
 //   // proto:  void QSemaphore::QSemaphore(int n);
 extern "C"
 QSemaphore*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qnamespace.h
 // dst-file: /src/core/qnamespace.cxx
 //
@@ -32,7 +32,7 @@ int QInternal_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1775, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1815, column 17>
 //   // proto: static bool QInternal::unregisterCallback(QInternal::Callback , qInternalCallback );
 // _ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE unregisterCallback(enum QInternal::Callback, qInternalCallback)
 extern "C"
@@ -44,7 +44,7 @@ qInternalCallback arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1776, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1816, column 17>
 //   // proto: static bool QInternal::activateCallbacks(QInternal::Callback , void ** );
 // _ZN9QInternal17activateCallbacksENS_8CallbackEPPv activateCallbacks(enum QInternal::Callback, void **)
 extern "C"
@@ -56,7 +56,7 @@ void ** arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1774, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1814, column 17>
 //   // proto: static bool QInternal::registerCallback(QInternal::Callback , qInternalCallback );
 // _ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE registerCallback(enum QInternal::Callback, qInternalCallback)
 extern "C"

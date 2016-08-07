@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qobjectcleanuphandler.h
 // dst-file: /src/core/qobjectcleanuphandler.cxx
 //
@@ -32,7 +32,7 @@ int QObjectCleanupHandler_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 53, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 59, column 10>
 //   // proto:  void QObjectCleanupHandler::clear();
 // _ZN21QObjectCleanupHandler5clearEv clear()
 extern "C"
@@ -40,7 +40,7 @@ void
 C_ZN21QObjectCleanupHandler5clearEv(void *qthis) {
   ((QObjectCleanupHandler*)qthis)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 58, column 10>
 //   // proto:  bool QObjectCleanupHandler::isEmpty();
 // _ZNK21QObjectCleanupHandler7isEmptyEv isEmpty()
 extern "C"
@@ -55,7 +55,7 @@ extern "C"
 void C_ZN21QObjectCleanupHandlerD2Ev(void *qthis) {
   delete (QObjectCleanupHandler*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 44, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 50, column 5>
 //   // proto:  const QMetaObject * QObjectCleanupHandler::metaObject();
 // _ZNK21QObjectCleanupHandler10metaObjectEv metaObject()
 extern "C"
@@ -65,7 +65,7 @@ C_ZNK21QObjectCleanupHandler10metaObjectEv(void *qthis) {
   ((QObjectCleanupHandler*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 51, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 57, column 10>
 //   // proto:  void QObjectCleanupHandler::remove(QObject * object);
 // _ZN21QObjectCleanupHandler6removeEP7QObject remove(class QObject *)
 extern "C"
@@ -74,7 +74,7 @@ C_ZN21QObjectCleanupHandler6removeEP7QObject(void *qthis,
 QObject * arg1) {
   ((QObjectCleanupHandler*)qthis)->remove(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 50, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 56, column 14>
 //   // proto:  QObject * QObjectCleanupHandler::add(QObject * object);
 // _ZN21QObjectCleanupHandler3addEP7QObject add(class QObject *)
 extern "C"
@@ -85,7 +85,7 @@ QObject * arg1) {
   ((QObjectCleanupHandler*)qthis)->add(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 53, column 5>
 //   // proto:  void QObjectCleanupHandler::QObjectCleanupHandler();
 extern "C"
 QObjectCleanupHandler*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qeasingcurve.h
 // dst-file: /src/core/qeasingcurve.cxx
 //
@@ -15,13 +15,12 @@
 
 
 #include <qglobal.h>
-#include <qpoint.h>
 #include <qvector.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qeasingcurve_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 83, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 89, column 10>
 //   // proto:  void QEasingCurve::swap(QEasingCurve & other);
 if (true) {
   auto f = [](QEasingCurve flythis, QEasingCurve & arg1) {
@@ -31,7 +30,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN12QEasingCurve4swapERS_ swap(class QEasingCurve &)
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 78, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 84, column 5>
 //   // proto:  void QEasingCurve::QEasingCurve(QEasingCurve && other);
 if (true) {
   auto f = [](QEasingCurve && arg1) {
@@ -53,7 +52,7 @@ int QEasingCurve_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 72, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 78, column 5>
 //   // proto:  void QEasingCurve::QEasingCurve(const QEasingCurve & other);
 extern "C"
 QEasingCurve*
@@ -61,7 +60,7 @@ C_ZN12QEasingCurveC2ERKS_(const QEasingCurve* arg1) {
   auto ret = new QEasingCurve(*((const QEasingCurve*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 105, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 111, column 10>
 //   // proto:  QEasingCurve::Type QEasingCurve::type();
 // _ZNK12QEasingCurve4typeEv type()
 extern "C"
@@ -76,7 +75,7 @@ extern "C"
 void C_ZN12QEasingCurveD2Ev(void *qthis) {
   delete (QEasingCurve*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 109, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 115, column 20>
 //   // proto:  EasingFunction QEasingCurve::customType();
 // _ZNK12QEasingCurve10customTypeEv customType()
 extern "C"
@@ -86,7 +85,7 @@ C_ZNK12QEasingCurve10customTypeEv(void *qthis) {
   ((QEasingCurve*)qthis)->customType();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 114, column 10>
 //   // proto:  void QEasingCurve::setCustomType(EasingFunction func);
 // _ZN12QEasingCurve13setCustomTypeEPFddE setCustomType(EasingFunction)
 extern "C"
@@ -95,7 +94,7 @@ C_ZN12QEasingCurve13setCustomTypeEPFddE(void *qthis,
 QEasingCurve::EasingFunction arg1) {
   ((QEasingCurve*)qthis)->setCustomType(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 95, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 101, column 11>
 //   // proto:  qreal QEasingCurve::overshoot();
 // _ZNK12QEasingCurve9overshootEv overshoot()
 extern "C"
@@ -105,7 +104,7 @@ C_ZNK12QEasingCurve9overshootEv(void *qthis) {
   ((QEasingCurve*)qthis)->overshoot();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 99, column 10>
 //   // proto:  void QEasingCurve::setPeriod(qreal period);
 // _ZN12QEasingCurve9setPeriodEd setPeriod(qreal)
 extern "C"
@@ -114,7 +113,7 @@ C_ZN12QEasingCurve9setPeriodEd(void *qthis,
 qreal arg1) {
   ((QEasingCurve*)qthis)->setPeriod(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 105, column 10>
 //   // proto:  void QEasingCurve::addTCBSegment(const QPointF & nextPoint, qreal t, qreal c, qreal b);
 // _ZN12QEasingCurve13addTCBSegmentERK7QPointFddd addTCBSegment(const class QPointF &, qreal, qreal, qreal)
 extern "C"
@@ -129,7 +128,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 98, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 104, column 10>
 //   // proto:  void QEasingCurve::addCubicBezierSegment(const QPointF & c1, const QPointF & c2, const QPointF & endPoint);
 // _ZN12QEasingCurve21addCubicBezierSegmentERK7QPointFS2_S2_ addCubicBezierSegment(const class QPointF &, const class QPointF &, const class QPointF &)
 extern "C"
@@ -142,7 +141,7 @@ const QPointF* arg3) {
 *((const QPointF*)arg2),
 *((const QPointF*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 106, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 112, column 10>
 //   // proto:  void QEasingCurve::setType(QEasingCurve::Type type);
 // _ZN12QEasingCurve7setTypeENS_4TypeE setType(enum QEasingCurve::Type)
 extern "C"
@@ -151,7 +150,7 @@ C_ZN12QEasingCurve7setTypeENS_4TypeE(void *qthis,
 QEasingCurve::Type arg1) {
   ((QEasingCurve*)qthis)->setType(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 92, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 98, column 11>
 //   // proto:  qreal QEasingCurve::period();
 // _ZNK12QEasingCurve6periodEv period()
 extern "C"
@@ -161,7 +160,7 @@ C_ZNK12QEasingCurve6periodEv(void *qthis) {
   ((QEasingCurve*)qthis)->period();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 111, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 117, column 11>
 //   // proto:  qreal QEasingCurve::valueForProgress(qreal progress);
 // _ZNK12QEasingCurve16valueForProgressEd valueForProgress(qreal)
 extern "C"
@@ -172,7 +171,7 @@ qreal arg1) {
   ((QEasingCurve*)qthis)->valueForProgress(arg1);
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 96, column 10>
 //   // proto:  void QEasingCurve::setAmplitude(qreal amplitude);
 // _ZN12QEasingCurve12setAmplitudeEd setAmplitude(qreal)
 extern "C"
@@ -181,7 +180,7 @@ C_ZN12QEasingCurve12setAmplitudeEd(void *qthis,
 qreal arg1) {
   ((QEasingCurve*)qthis)->setAmplitude(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 83, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 89, column 10>
 //   // proto:  void QEasingCurve::swap(QEasingCurve & other);
 // _ZN12QEasingCurve4swapERS_ swap(class QEasingCurve &)
 extern "C"
@@ -190,7 +189,7 @@ C_ZN12QEasingCurve4swapERS_(void *qthis,
 QEasingCurve* arg1) {
   ((QEasingCurve*)qthis)->swap(*((QEasingCurve*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 78, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 84, column 5>
 //   // proto:  void QEasingCurve::QEasingCurve(QEasingCurve && other);
 extern "C"
 QEasingCurve*
@@ -198,7 +197,7 @@ C_ZN12QEasingCurveC2EOS_(QEasingCurve* arg1) {
   auto ret = new QEasingCurve(*((QEasingCurve*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 102, column 10>
 //   // proto:  void QEasingCurve::setOvershoot(qreal overshoot);
 // _ZN12QEasingCurve12setOvershootEd setOvershoot(qreal)
 extern "C"
@@ -207,7 +206,7 @@ C_ZN12QEasingCurve12setOvershootEd(void *qthis,
 qreal arg1) {
   ((QEasingCurve*)qthis)->setOvershoot(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 71, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 77, column 5>
 //   // proto:  void QEasingCurve::QEasingCurve(QEasingCurve::Type type);
 extern "C"
 QEasingCurve*
@@ -215,7 +214,7 @@ C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type arg1) {
   auto ret = new QEasingCurve(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 100, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 106, column 22>
 //   // proto:  QVector<QPointF> QEasingCurve::toCubicSpline();
 // _ZNK12QEasingCurve13toCubicSplineEv toCubicSpline()
 extern "C"
@@ -225,7 +224,7 @@ C_ZNK12QEasingCurve13toCubicSplineEv(void *qthis) {
   ((QEasingCurve*)qthis)->toCubicSpline();
   return new QVector<QPointF>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 89, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qeasingcurve.h', line 95, column 11>
 //   // proto:  qreal QEasingCurve::amplitude();
 // _ZNK12QEasingCurve9amplitudeEv amplitude()
 extern "C"

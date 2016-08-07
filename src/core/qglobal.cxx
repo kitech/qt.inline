@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qglobal.h
 // dst-file: /src/core/qglobal.cxx
 //
@@ -39,6 +39,12 @@ extern "C"
 int QIntegerForSize_2__Class_Size()
 {
   return sizeof(QIntegerForSize<2>);
+}
+
+extern "C"
+int QIntegerForSize_16__Class_Size()
+{
+  return sizeof(QIntegerForSize<16>);
 }
 
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qpauseanimation.h
 // dst-file: /src/core/qpauseanimation.cxx
 //
@@ -32,7 +32,7 @@ int QPauseAnimation_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 62, column 10>
 //   // proto:  void QPauseAnimation::setDuration(int msecs);
 // _ZN15QPauseAnimation11setDurationEi setDuration(int)
 extern "C"
@@ -41,7 +41,7 @@ C_ZN15QPauseAnimation11setDurationEi(void *qthis,
 int arg1) {
   ((QPauseAnimation*)qthis)->setDuration(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 57, column 5>
 //   // proto:  void QPauseAnimation::QPauseAnimation(QObject * parent);
 extern "C"
 QPauseAnimation*
@@ -49,16 +49,17 @@ C_ZN15QPauseAnimationC2EP7QObject(QObject * arg1) {
   auto ret = new QPauseAnimation(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 58, column 5>
 //   // proto:  void QPauseAnimation::QPauseAnimation(int msecs, QObject * parent);
 extern "C"
 QPauseAnimation*
 C_ZN15QPauseAnimationC2EiP7QObject(int arg1,
 QObject * arg2) {
-  auto ret = new QPauseAnimation(arg1, arg2);
+  auto ret = new QPauseAnimation(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 55, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 61, column 9>
 //   // proto:  int QPauseAnimation::duration();
 // _ZNK15QPauseAnimation8durationEv duration()
 extern "C"
@@ -68,7 +69,7 @@ C_ZNK15QPauseAnimation8durationEv(void *qthis) {
   ((QPauseAnimation*)qthis)->duration();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 54, column 5>
 //   // proto:  const QMetaObject * QPauseAnimation::metaObject();
 // _ZNK15QPauseAnimation10metaObjectEv metaObject()
 extern "C"

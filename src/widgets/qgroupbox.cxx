@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qgroupbox.h
 // dst-file: /src/widgets/qgroupbox.cxx
 //
@@ -35,7 +35,7 @@ int QGroupBox_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 76, column 10>
 //   // proto:  bool QGroupBox::isCheckable();
 // _ZNK9QGroupBox11isCheckableEv isCheckable()
 extern "C"
@@ -45,7 +45,7 @@ C_ZNK9QGroupBox11isCheckableEv(void *qthis) {
   ((QGroupBox*)qthis)->isCheckable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 77, column 10>
 //   // proto:  void QGroupBox::setCheckable(bool checkable);
 // _ZN9QGroupBox12setCheckableEb setCheckable(_Bool)
 extern "C"
@@ -54,7 +54,7 @@ C_ZN9QGroupBox12setCheckableEb(void *qthis,
 bool arg1) {
   ((QGroupBox*)qthis)->setCheckable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 54, column 5>
 //   // proto:  const QMetaObject * QGroupBox::metaObject();
 // _ZNK9QGroupBox10metaObjectEv metaObject()
 extern "C"
@@ -64,7 +64,7 @@ C_ZNK9QGroupBox10metaObjectEv(void *qthis) {
   ((QGroupBox*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 74, column 10>
 //   // proto:  bool QGroupBox::isFlat();
 // _ZNK9QGroupBox6isFlatEv isFlat()
 extern "C"
@@ -74,7 +74,7 @@ C_ZNK9QGroupBox6isFlatEv(void *qthis) {
   ((QGroupBox*)qthis)->isFlat();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 66, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 72, column 11>
 //   // proto:  QSize QGroupBox::minimumSizeHint();
 // _ZNK9QGroupBox15minimumSizeHintEv minimumSizeHint()
 extern "C"
@@ -84,7 +84,7 @@ C_ZNK9QGroupBox15minimumSizeHintEv(void *qthis) {
   ((QGroupBox*)qthis)->minimumSizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 63, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 69, column 19>
 //   // proto:  Qt::Alignment QGroupBox::alignment();
 // _ZNK9QGroupBox9alignmentEv alignment()
 extern "C"
@@ -94,7 +94,7 @@ C_ZNK9QGroupBox9alignmentEv(void *qthis) {
   ((QGroupBox*)qthis)->alignment();
   return new QFlags<Qt::AlignmentFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 75, column 10>
 //   // proto:  void QGroupBox::setFlat(bool flat);
 // _ZN9QGroupBox7setFlatEb setFlat(_Bool)
 extern "C"
@@ -108,7 +108,7 @@ extern "C"
 void C_ZN9QGroupBoxD2Ev(void *qthis) {
   delete (QGroupBox*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 62, column 14>
 //   // proto:  void QGroupBox::QGroupBox(QWidget * parent);
 extern "C"
 QGroupBox*
@@ -116,7 +116,7 @@ C_ZN9QGroupBoxC2EP7QWidget(QWidget * arg1) {
   auto ret = new QGroupBox(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 85, column 10>
 //   // proto:  void QGroupBox::toggled(bool );
 // _ZN9QGroupBox7toggledEb toggled(_Bool)
 extern "C"
@@ -125,7 +125,7 @@ C_ZN9QGroupBox7toggledEb(void *qthis,
 bool arg1) {
   ((QGroupBox*)qthis)->toggled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 78, column 10>
 //   // proto:  bool QGroupBox::isChecked();
 // _ZNK9QGroupBox9isCheckedEv isChecked()
 extern "C"
@@ -135,7 +135,7 @@ C_ZNK9QGroupBox9isCheckedEv(void *qthis) {
   ((QGroupBox*)qthis)->isChecked();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 81, column 10>
 //   // proto:  void QGroupBox::setChecked(bool checked);
 // _ZN9QGroupBox10setCheckedEb setChecked(_Bool)
 extern "C"
@@ -144,7 +144,7 @@ C_ZN9QGroupBox10setCheckedEb(void *qthis,
 bool arg1) {
   ((QGroupBox*)qthis)->setChecked(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 60, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 66, column 13>
 //   // proto:  QString QGroupBox::title();
 // _ZNK9QGroupBox5titleEv title()
 extern "C"
@@ -154,7 +154,7 @@ C_ZNK9QGroupBox5titleEv(void *qthis) {
   ((QGroupBox*)qthis)->title();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 70, column 10>
 //   // proto:  void QGroupBox::setAlignment(int alignment);
 // _ZN9QGroupBox12setAlignmentEi setAlignment(int)
 extern "C"
@@ -163,7 +163,7 @@ C_ZN9QGroupBox12setAlignmentEi(void *qthis,
 int arg1) {
   ((QGroupBox*)qthis)->setAlignment(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 67, column 10>
 //   // proto:  void QGroupBox::setTitle(const QString & title);
 // _ZN9QGroupBox8setTitleERK7QString setTitle(const class QString &)
 extern "C"
@@ -172,16 +172,17 @@ C_ZN9QGroupBox8setTitleERK7QString(void *qthis,
 const QString* arg1) {
   ((QGroupBox*)qthis)->setTitle(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 57, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 63, column 14>
 //   // proto:  void QGroupBox::QGroupBox(const QString & title, QWidget * parent);
 extern "C"
 QGroupBox*
 C_ZN9QGroupBoxC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QGroupBox(*((const QString*)arg1), arg2);
+  auto ret = new QGroupBox(*((const QString*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgroupbox.h', line 84, column 10>
 //   // proto:  void QGroupBox::clicked(bool checked);
 // _ZN9QGroupBox7clickedEb clicked(_Bool)
 extern "C"

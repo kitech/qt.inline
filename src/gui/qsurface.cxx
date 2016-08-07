@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qsurface.h
 // dst-file: /src/gui/qsurface.cxx
 //
@@ -34,7 +34,7 @@ int QSurface_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 77, column 10>
 //   // proto:  bool QSurface::supportsOpenGL();
 // _ZNK8QSurface14supportsOpenGLEv supportsOpenGL()
 extern "C"
@@ -44,7 +44,7 @@ C_ZNK8QSurface14supportsOpenGLEv(void *qthis) {
   ((QSurface*)qthis)->supportsOpenGL();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 70, column 25>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 76, column 25>
 //   // proto:  QSurface::SurfaceType QSurface::surfaceType();
 // _ZNK8QSurface11surfaceTypeEv surfaceType()
 extern "C"
@@ -54,7 +54,7 @@ C_ZNK8QSurface11surfaceTypeEv(void *qthis) {
   ((QSurface*)qthis)->surfaceType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 67, column 28>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 73, column 28>
 //   // proto:  QSurfaceFormat QSurface::format();
 // _ZNK8QSurface6formatEv format()
 extern "C"
@@ -64,7 +64,7 @@ C_ZNK8QSurface6formatEv(void *qthis) {
   ((QSurface*)qthis)->format();
   return new QSurfaceFormat(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 68, column 31>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 74, column 31>
 //   // proto:  QPlatformSurface * QSurface::surfaceHandle();
 // _ZNK8QSurface13surfaceHandleEv surfaceHandle()
 extern "C"
@@ -74,7 +74,7 @@ C_ZNK8QSurface13surfaceHandleEv(void *qthis) {
   ((QSurface*)qthis)->surfaceHandle();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 73, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 79, column 19>
 //   // proto:  QSize QSurface::size();
 // _ZNK8QSurface4sizeEv size()
 extern "C"
@@ -89,7 +89,7 @@ extern "C"
 void C_ZN8QSurfaceD2Ev(void *qthis) {
   delete (QSurface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 65, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qsurface.h', line 71, column 18>
 //   // proto:  QSurface::SurfaceClass QSurface::surfaceClass();
 // _ZNK8QSurface12surfaceClassEv surfaceClass()
 extern "C"

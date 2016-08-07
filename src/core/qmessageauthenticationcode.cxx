@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qmessageauthenticationcode.h
 // dst-file: /src/core/qmessageauthenticationcode.cxx
 //
@@ -33,7 +33,7 @@ int QMessageAuthenticationCode_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 60, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 66, column 16>
 //   // proto:  QByteArray QMessageAuthenticationCode::result();
 // _ZNK26QMessageAuthenticationCode6resultEv result()
 extern "C"
@@ -43,7 +43,7 @@ C_ZNK26QMessageAuthenticationCode6resultEv(void *qthis) {
   ((QMessageAuthenticationCode*)qthis)->result();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 63, column 10>
 //   // proto:  void QMessageAuthenticationCode::addData(const QByteArray & data);
 // _ZN26QMessageAuthenticationCode7addDataERK10QByteArray addData(const class QByteArray &)
 extern "C"
@@ -52,16 +52,17 @@ C_ZN26QMessageAuthenticationCode7addDataERK10QByteArray(void *qthis,
 const QByteArray* arg1) {
   ((QMessageAuthenticationCode*)qthis)->addData(*((const QByteArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 48, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 54, column 14>
 //   // proto:  void QMessageAuthenticationCode::QMessageAuthenticationCode(QCryptographicHash::Algorithm method, const QByteArray & key);
 extern "C"
 QMessageAuthenticationCode*
 C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm* arg1,
 const QByteArray* arg2) {
-  auto ret = new QMessageAuthenticationCode(*((QCryptographicHash::Algorithm*)arg1), *((const QByteArray*)arg2));
+  auto ret = new QMessageAuthenticationCode(*((QCryptographicHash::Algorithm*)arg1),
+*((const QByteArray*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 62, column 10>
 //   // proto:  void QMessageAuthenticationCode::addData(const char * data, int length);
 // _ZN26QMessageAuthenticationCode7addDataEPKci addData(const char *, int)
 extern "C"
@@ -77,7 +78,7 @@ extern "C"
 void C_ZN26QMessageAuthenticationCodeD2Ev(void *qthis) {
   delete (QMessageAuthenticationCode*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 58, column 10>
 //   // proto:  void QMessageAuthenticationCode::reset();
 // _ZN26QMessageAuthenticationCode5resetEv reset()
 extern "C"
@@ -85,7 +86,7 @@ void
 C_ZN26QMessageAuthenticationCode5resetEv(void *qthis) {
   ((QMessageAuthenticationCode*)qthis)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 64, column 10>
 //   // proto:  bool QMessageAuthenticationCode::addData(QIODevice * device);
 // _ZN26QMessageAuthenticationCode7addDataEP9QIODevice addData(class QIODevice *)
 extern "C"
@@ -96,7 +97,7 @@ QIODevice * arg1) {
   ((QMessageAuthenticationCode*)qthis)->addData(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 60, column 10>
 //   // proto:  void QMessageAuthenticationCode::setKey(const QByteArray & key);
 // _ZN26QMessageAuthenticationCode6setKeyERK10QByteArray setKey(const class QByteArray &)
 extern "C"
@@ -105,7 +106,7 @@ C_ZN26QMessageAuthenticationCode6setKeyERK10QByteArray(void *qthis,
 const QByteArray* arg1) {
   ((QMessageAuthenticationCode*)qthis)->setKey(*((const QByteArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 62, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qmessageauthenticationcode.h', line 68, column 23>
 //   // proto: static QByteArray QMessageAuthenticationCode::hash(const QByteArray & message, const QByteArray & key, QCryptographicHash::Algorithm method);
 // _ZN26QMessageAuthenticationCode4hashERK10QByteArrayS2_N18QCryptographicHash9AlgorithmE hash(const class QByteArray &, const class QByteArray &, class QCryptographicHash::Algorithm)
 extern "C"

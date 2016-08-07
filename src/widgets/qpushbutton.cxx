@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qpushbutton.h
 // dst-file: /src/widgets/qpushbutton.cxx
 //
@@ -33,7 +33,7 @@ int QPushButton_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 75, column 10>
 //   // proto:  void QPushButton::setMenu(QMenu * menu);
 // _ZN11QPushButton7setMenuEP5QMenu setMenu(class QMenu *)
 extern "C"
@@ -42,7 +42,7 @@ C_ZN11QPushButton7setMenuEP5QMenu(void *qthis,
 QMenu * arg1) {
   ((QPushButton*)qthis)->setMenu(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 79, column 10>
 //   // proto:  void QPushButton::setFlat(bool );
 // _ZN11QPushButton7setFlatEb setFlat(_Bool)
 extern "C"
@@ -51,7 +51,7 @@ C_ZN11QPushButton7setFlatEb(void *qthis,
 bool arg1) {
   ((QPushButton*)qthis)->setFlat(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 70, column 10>
 //   // proto:  void QPushButton::setAutoDefault(bool );
 // _ZN11QPushButton14setAutoDefaultEb setAutoDefault(_Bool)
 extern "C"
@@ -60,7 +60,7 @@ C_ZN11QPushButton14setAutoDefaultEb(void *qthis,
 bool arg1) {
   ((QPushButton*)qthis)->setAutoDefault(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 61, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 67, column 11>
 //   // proto:  QSize QPushButton::minimumSizeHint();
 // _ZNK11QPushButton15minimumSizeHintEv minimumSizeHint()
 extern "C"
@@ -70,7 +70,7 @@ C_ZNK11QPushButton15minimumSizeHintEv(void *qthis) {
   ((QPushButton*)qthis)->minimumSizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 72, column 10>
 //   // proto:  void QPushButton::setDefault(bool );
 // _ZN11QPushButton10setDefaultEb setDefault(_Bool)
 extern "C"
@@ -84,7 +84,7 @@ extern "C"
 void C_ZN11QPushButtonD2Ev(void *qthis) {
   delete (QPushButton*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 71, column 10>
 //   // proto:  bool QPushButton::isDefault();
 // _ZNK11QPushButton9isDefaultEv isDefault()
 extern "C"
@@ -94,17 +94,19 @@ C_ZNK11QPushButton9isDefaultEv(void *qthis) {
   ((QPushButton*)qthis)->isDefault();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 57, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 63, column 5>
 //   // proto:  void QPushButton::QPushButton(const QIcon & icon, const QString & text, QWidget * parent);
 extern "C"
 QPushButton*
 C_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget(const QIcon* arg1,
 const QString* arg2,
 QWidget * arg3) {
-  auto ret = new QPushButton(*((const QIcon*)arg1), *((const QString*)arg2), arg3);
+  auto ret = new QPushButton(*((const QIcon*)arg1),
+*((const QString*)arg2),
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 69, column 10>
 //   // proto:  bool QPushButton::autoDefault();
 // _ZNK11QPushButton11autoDefaultEv autoDefault()
 extern "C"
@@ -114,7 +116,7 @@ C_ZNK11QPushButton11autoDefaultEv(void *qthis) {
   ((QPushButton*)qthis)->autoDefault();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 60, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 66, column 11>
 //   // proto:  QSize QPushButton::sizeHint();
 // _ZNK11QPushButton8sizeHintEv sizeHint()
 extern "C"
@@ -124,7 +126,7 @@ C_ZNK11QPushButton8sizeHintEv(void *qthis) {
   ((QPushButton*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 54, column 5>
 //   // proto:  const QMetaObject * QPushButton::metaObject();
 // _ZNK11QPushButton10metaObjectEv metaObject()
 extern "C"
@@ -134,7 +136,7 @@ C_ZNK11QPushButton10metaObjectEv(void *qthis) {
   ((QPushButton*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 70, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 76, column 12>
 //   // proto:  QMenu * QPushButton::menu();
 // _ZNK11QPushButton4menuEv menu()
 extern "C"
@@ -144,7 +146,7 @@ C_ZNK11QPushButton4menuEv(void *qthis) {
   ((QPushButton*)qthis)->menu();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 61, column 14>
 //   // proto:  void QPushButton::QPushButton(QWidget * parent);
 extern "C"
 QPushButton*
@@ -152,7 +154,7 @@ C_ZN11QPushButtonC2EP7QWidget(QWidget * arg1) {
   auto ret = new QPushButton(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 84, column 10>
 //   // proto:  void QPushButton::showMenu();
 // _ZN11QPushButton8showMenuEv showMenu()
 extern "C"
@@ -160,16 +162,17 @@ void
 C_ZN11QPushButton8showMenuEv(void *qthis) {
   ((QPushButton*)qthis)->showMenu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 62, column 14>
 //   // proto:  void QPushButton::QPushButton(const QString & text, QWidget * parent);
 extern "C"
 QPushButton*
 C_ZN11QPushButtonC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QPushButton(*((const QString*)arg1), arg2);
+  auto ret = new QPushButton(*((const QString*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qpushbutton.h', line 80, column 10>
 //   // proto:  bool QPushButton::isFlat();
 // _ZNK11QPushButton6isFlatEv isFlat()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qjsondocument.h
 // dst-file: /src/core/qjsondocument.cxx
 //
@@ -43,7 +43,7 @@ int QJsonParseError_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 87, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 93, column 5>
 //   // proto:  void QJsonDocument::QJsonDocument(const QJsonDocument & other);
 extern "C"
 QJsonDocument*
@@ -51,7 +51,7 @@ C_ZN13QJsonDocumentC2ERKS_(const QJsonDocument* arg1) {
   auto ret = new QJsonDocument(*((const QJsonDocument*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 122, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 128, column 17>
 //   // proto:  QJsonObject QJsonDocument::object();
 // _ZNK13QJsonDocument6objectEv object()
 extern "C"
@@ -61,7 +61,7 @@ C_ZNK13QJsonDocument6objectEv(void *qthis) {
   ((QJsonDocument*)qthis)->object();
   return new QJsonObject(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 101, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 107, column 26>
 //   // proto: static QJsonDocument QJsonDocument::fromVariant(const QVariant & variant);
 // _ZN13QJsonDocument11fromVariantERK8QVariant fromVariant(const class QVariant &)
 extern "C"
@@ -71,7 +71,7 @@ C_ZN13QJsonDocument11fromVariantERK8QVariant(const QVariant* arg1) {
   QJsonDocument::fromVariant(*((const QVariant*)arg1));
   return new QJsonDocument(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 123, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 129, column 16>
 //   // proto:  QJsonArray QJsonDocument::array();
 // _ZNK13QJsonDocument5arrayEv array()
 extern "C"
@@ -81,7 +81,7 @@ C_ZNK13QJsonDocument5arrayEv(void *qthis) {
   ((QJsonDocument*)qthis)->array();
   return new QJsonArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 98, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 104, column 26>
 //   // proto: static QJsonDocument QJsonDocument::fromBinaryData(const QByteArray & data, QJsonDocument::DataValidation validation);
 // _ZN13QJsonDocument14fromBinaryDataERK10QByteArrayNS_14DataValidationE fromBinaryData(const class QByteArray &, enum QJsonDocument::DataValidation)
 extern "C"
@@ -93,7 +93,7 @@ QJsonDocument::DataValidation arg2) {
 arg2);
   return new QJsonDocument(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 114, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 120, column 16>
 //   // proto:  QByteArray QJsonDocument::toJson();
 // _ZNK13QJsonDocument6toJsonEv toJson()
 extern "C"
@@ -103,7 +103,7 @@ C_ZNK13QJsonDocument6toJsonEv(void *qthis) {
   ((QJsonDocument*)qthis)->toJson();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 109, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 115, column 26>
 //   // proto: static QJsonDocument QJsonDocument::fromJson(const QByteArray & json, QJsonParseError * error);
 // _ZN13QJsonDocument8fromJsonERK10QByteArrayP15QJsonParseError fromJson(const class QByteArray &, struct QJsonParseError *)
 extern "C"
@@ -115,7 +115,7 @@ QJsonParseError * arg2) {
 arg2);
   return new QJsonDocument(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 137, column 10>
 //   // proto:  bool QJsonDocument::isNull();
 // _ZNK13QJsonDocument6isNullEv isNull()
 extern "C"
@@ -125,7 +125,7 @@ C_ZNK13QJsonDocument6isNullEv(void *qthis) {
   ((QJsonDocument*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 82, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 88, column 5>
 //   // proto:  void QJsonDocument::QJsonDocument();
 extern "C"
 QJsonDocument*
@@ -133,7 +133,7 @@ C_ZN13QJsonDocumentC2Ev() {
   auto ret = new QJsonDocument();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 102, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 108, column 14>
 //   // proto:  QVariant QJsonDocument::toVariant();
 // _ZNK13QJsonDocument9toVariantEv toVariant()
 extern "C"
@@ -143,7 +143,7 @@ C_ZNK13QJsonDocument9toVariantEv(void *qthis) {
   ((QJsonDocument*)qthis)->toVariant();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 125, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 131, column 10>
 //   // proto:  void QJsonDocument::setObject(const QJsonObject & object);
 // _ZN13QJsonDocument9setObjectERK11QJsonObject setObject(const class QJsonObject &)
 extern "C"
@@ -152,7 +152,7 @@ C_ZN13QJsonDocument9setObjectERK11QJsonObject(void *qthis,
 const QJsonObject* arg1) {
   ((QJsonDocument*)qthis)->setObject(*((const QJsonObject*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 115, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 121, column 16>
 //   // proto:  QByteArray QJsonDocument::toJson(QJsonDocument::JsonFormat format);
 // _ZNK13QJsonDocument6toJsonENS_10JsonFormatE toJson(enum QJsonDocument::JsonFormat)
 extern "C"
@@ -163,7 +163,7 @@ QJsonDocument::JsonFormat arg1) {
   ((QJsonDocument*)qthis)->toJson(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 83, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 89, column 14>
 //   // proto:  void QJsonDocument::QJsonDocument(const QJsonObject & object);
 extern "C"
 QJsonDocument*
@@ -171,7 +171,7 @@ C_ZN13QJsonDocumentC2ERK11QJsonObject(const QJsonObject* arg1) {
   auto ret = new QJsonDocument(*((const QJsonObject*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 84, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 90, column 14>
 //   // proto:  void QJsonDocument::QJsonDocument(const QJsonArray & array);
 extern "C"
 QJsonDocument*
@@ -179,7 +179,7 @@ C_ZN13QJsonDocumentC2ERK10QJsonArray(const QJsonArray* arg1) {
   auto ret = new QJsonDocument(*((const QJsonArray*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 124, column 10>
 //   // proto:  bool QJsonDocument::isEmpty();
 // _ZNK13QJsonDocument7isEmptyEv isEmpty()
 extern "C"
@@ -189,7 +189,7 @@ C_ZNK13QJsonDocument7isEmptyEv(void *qthis) {
   ((QJsonDocument*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 102, column 17>
 //   // proto:  const char * QJsonDocument::rawData(int * size);
 // _ZNK13QJsonDocument7rawDataEPi rawData(int *)
 extern "C"
@@ -200,7 +200,7 @@ int * arg1) {
   ((QJsonDocument*)qthis)->rawData(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 95, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 101, column 26>
 //   // proto: static QJsonDocument QJsonDocument::fromRawData(const char * data, int size, QJsonDocument::DataValidation validation);
 // _ZN13QJsonDocument11fromRawDataEPKciNS_14DataValidationE fromRawData(const char *, int, enum QJsonDocument::DataValidation)
 extern "C"
@@ -214,7 +214,7 @@ arg2,
 arg3);
   return new QJsonDocument(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 120, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 126, column 10>
 //   // proto:  bool QJsonDocument::isObject();
 // _ZNK13QJsonDocument8isObjectEv isObject()
 extern "C"
@@ -229,7 +229,7 @@ extern "C"
 void C_ZN13QJsonDocumentD2Ev(void *qthis) {
   delete (QJsonDocument*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 119, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 125, column 10>
 //   // proto:  bool QJsonDocument::isArray();
 // _ZNK13QJsonDocument7isArrayEv isArray()
 extern "C"
@@ -239,7 +239,7 @@ C_ZNK13QJsonDocument7isArrayEv(void *qthis) {
   ((QJsonDocument*)qthis)->isArray();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 99, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 105, column 16>
 //   // proto:  QByteArray QJsonDocument::toBinaryData();
 // _ZNK13QJsonDocument12toBinaryDataEv toBinaryData()
 extern "C"
@@ -249,7 +249,7 @@ C_ZNK13QJsonDocument12toBinaryDataEv(void *qthis) {
   ((QJsonDocument*)qthis)->toBinaryData();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 132, column 10>
 //   // proto:  void QJsonDocument::setArray(const QJsonArray & array);
 // _ZN13QJsonDocument8setArrayERK10QJsonArray setArray(const class QJsonArray &)
 extern "C"
@@ -258,7 +258,7 @@ C_ZN13QJsonDocument8setArrayERK10QJsonArray(void *qthis,
 const QJsonArray* arg1) {
   ((QJsonDocument*)qthis)->setArray(*((const QJsonArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 67, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsondocument.h', line 73, column 16>
 //   // proto:  QString QJsonParseError::errorString();
 // _ZNK15QJsonParseError11errorStringEv errorString()
 extern "C"

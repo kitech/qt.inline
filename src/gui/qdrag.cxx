@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qdrag.h
 // dst-file: /src/gui/qdrag.cxx
 //
@@ -35,7 +35,7 @@ int QDrag_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 71, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 77, column 20>
 //   // proto:  Qt::DropAction QDrag::exec(Qt::DropActions supportedActions);
 // _ZN5QDrag4execE6QFlagsIN2Qt10DropActionEE exec(Qt::DropActions)
 extern "C"
@@ -46,7 +46,7 @@ Qt::DropActions* arg1) {
   ((QDrag*)qthis)->exec(*((Qt::DropActions*)arg1));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 68, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 74, column 14>
 //   // proto:  QObject * QDrag::target();
 // _ZNK5QDrag6targetEv target()
 extern "C"
@@ -56,7 +56,7 @@ C_ZNK5QDrag6targetEv(void *qthis) {
   ((QDrag*)qthis)->target();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 59, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 65, column 16>
 //   // proto:  QMimeData * QDrag::mimeData();
 // _ZNK5QDrag8mimeDataEv mimeData()
 extern "C"
@@ -66,7 +66,7 @@ C_ZNK5QDrag8mimeDataEv(void *qthis) {
   ((QDrag*)qthis)->mimeData();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 61, column 14>
 //   // proto:  void QDrag::QDrag(QObject * dragSource);
 extern "C"
 QDrag*
@@ -74,7 +74,7 @@ C_ZN5QDragC2EP7QObject(QObject * arg1) {
   auto ret = new QDrag(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 75, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 81, column 13>
 //   // proto:  QPixmap QDrag::dragCursor(Qt::DropAction action);
 // _ZNK5QDrag10dragCursorEN2Qt10DropActionE dragCursor(Qt::DropAction)
 extern "C"
@@ -90,7 +90,15 @@ extern "C"
 void C_ZN5QDragD2Ev(void *qthis) {
   delete (QDrag*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 72, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 86, column 17>
+//   // proto: static void QDrag::cancel();
+// _ZN5QDrag6cancelEv cancel()
+extern "C"
+void
+C_ZN5QDrag6cancelEv() {
+  QDrag::cancel();
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 78, column 20>
 //   // proto:  Qt::DropAction QDrag::exec(Qt::DropActions supportedActions, Qt::DropAction defaultAction);
 // _ZN5QDrag4execE6QFlagsIN2Qt10DropActionEES2_ exec(Qt::DropActions, Qt::DropAction)
 extern "C"
@@ -103,7 +111,7 @@ Qt::DropAction* arg2) {
 *((Qt::DropAction*)arg2));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 80, column 10>
 //   // proto:  void QDrag::setDragCursor(const QPixmap & cursor, Qt::DropAction action);
 // _ZN5QDrag13setDragCursorERK7QPixmapN2Qt10DropActionE setDragCursor(const class QPixmap &, Qt::DropAction)
 extern "C"
@@ -114,7 +122,7 @@ Qt::DropAction* arg2) {
   ((QDrag*)qthis)->setDragCursor(*((const QPixmap*)arg1),
 *((Qt::DropAction*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 78, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 84, column 20>
 //   // proto:  Qt::DropAction QDrag::defaultAction();
 // _ZNK5QDrag13defaultActionEv defaultAction()
 extern "C"
@@ -124,7 +132,7 @@ C_ZNK5QDrag13defaultActionEv(void *qthis) {
   ((QDrag*)qthis)->defaultAction();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 70, column 10>
 //   // proto:  void QDrag::setHotSpot(const QPoint & hotspot);
 // _ZN5QDrag10setHotSpotERK6QPoint setHotSpot(const class QPoint &)
 extern "C"
@@ -133,7 +141,7 @@ C_ZN5QDrag10setHotSpotERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QDrag*)qthis)->setHotSpot(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 58, column 5>
 //   // proto:  const QMetaObject * QDrag::metaObject();
 // _ZNK5QDrag10metaObjectEv metaObject()
 extern "C"
@@ -143,7 +151,7 @@ C_ZNK5QDrag10metaObjectEv(void *qthis) {
   ((QDrag*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 64, column 10>
 //   // proto:  void QDrag::setMimeData(QMimeData * data);
 // _ZN5QDrag11setMimeDataEP9QMimeData setMimeData(class QMimeData *)
 extern "C"
@@ -152,7 +160,7 @@ C_ZN5QDrag11setMimeDataEP9QMimeData(void *qthis,
 QMimeData * arg1) {
   ((QDrag*)qthis)->setMimeData(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 62, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 68, column 13>
 //   // proto:  QPixmap QDrag::pixmap();
 // _ZNK5QDrag6pixmapEv pixmap()
 extern "C"
@@ -162,7 +170,7 @@ C_ZNK5QDrag6pixmapEv(void *qthis) {
   ((QDrag*)qthis)->pixmap();
   return new QPixmap(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 77, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 83, column 21>
 //   // proto:  Qt::DropActions QDrag::supportedActions();
 // _ZNK5QDrag16supportedActionsEv supportedActions()
 extern "C"
@@ -172,7 +180,7 @@ C_ZNK5QDrag16supportedActionsEv(void *qthis) {
   ((QDrag*)qthis)->supportedActions();
   return new QFlags<Qt::DropAction>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 65, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 71, column 12>
 //   // proto:  QPoint QDrag::hotSpot();
 // _ZNK5QDrag7hotSpotEv hotSpot()
 extern "C"
@@ -182,7 +190,7 @@ C_ZNK5QDrag7hotSpotEv(void *qthis) {
   ((QDrag*)qthis)->hotSpot();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 89, column 10>
 //   // proto:  void QDrag::actionChanged(Qt::DropAction action);
 // _ZN5QDrag13actionChangedEN2Qt10DropActionE actionChanged(Qt::DropAction)
 extern "C"
@@ -191,7 +199,7 @@ C_ZN5QDrag13actionChangedEN2Qt10DropActionE(void *qthis,
 Qt::DropAction* arg1) {
   ((QDrag*)qthis)->actionChanged(*((Qt::DropAction*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 67, column 10>
 //   // proto:  void QDrag::setPixmap(const QPixmap & );
 // _ZN5QDrag9setPixmapERK7QPixmap setPixmap(const class QPixmap &)
 extern "C"
@@ -200,7 +208,7 @@ C_ZN5QDrag9setPixmapERK7QPixmap(void *qthis,
 const QPixmap* arg1) {
   ((QDrag*)qthis)->setPixmap(*((const QPixmap*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 67, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 73, column 14>
 //   // proto:  QObject * QDrag::source();
 // _ZNK5QDrag6sourceEv source()
 extern "C"
@@ -210,7 +218,7 @@ C_ZNK5QDrag6sourceEv(void *qthis) {
   ((QDrag*)qthis)->source();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 90, column 10>
 //   // proto:  void QDrag::targetChanged(QObject * newTarget);
 // _ZN5QDrag13targetChangedEP7QObject targetChanged(class QObject *)
 extern "C"
@@ -219,7 +227,7 @@ C_ZN5QDrag13targetChangedEP7QObject(void *qthis,
 QObject * arg1) {
   ((QDrag*)qthis)->targetChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 70, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qdrag.h', line 76, column 20>
 //   // proto:  Qt::DropAction QDrag::start(Qt::DropActions supportedActions);
 // _ZN5QDrag5startE6QFlagsIN2Qt10DropActionEE start(Qt::DropActions)
 extern "C"

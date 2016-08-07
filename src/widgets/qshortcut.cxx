@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qshortcut.h
 // dst-file: /src/widgets/qshortcut.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qshortcut_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 79, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 85, column 21>
 //   // proto:  QWidget * QShortcut::parentWidget();
 if (true) {
   auto f = [](QShortcut flythis) {
@@ -45,7 +45,7 @@ int QShortcut_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 68, column 10>
 //   // proto:  void QShortcut::setKey(const QKeySequence & key);
 // _ZN9QShortcut6setKeyERK12QKeySequence setKey(const class QKeySequence &)
 extern "C"
@@ -54,7 +54,7 @@ C_ZN9QShortcut6setKeyERK12QKeySequence(void *qthis,
 const QKeySequence* arg1) {
   ((QShortcut*)qthis)->setKey(*((const QKeySequence*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 89, column 10>
 //   // proto:  void QShortcut::activated();
 // _ZN9QShortcut9activatedEv activated()
 extern "C"
@@ -62,7 +62,7 @@ void
 C_ZN9QShortcut9activatedEv(void *qthis) {
   ((QShortcut*)qthis)->activated();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 54, column 5>
 //   // proto:  const QMetaObject * QShortcut::metaObject();
 // _ZNK9QShortcut10metaObjectEv metaObject()
 extern "C"
@@ -72,7 +72,7 @@ C_ZNK9QShortcut10metaObjectEv(void *qthis) {
   ((QShortcut*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 79, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 85, column 21>
 //   // proto:  QWidget * QShortcut::parentWidget();
 // _ZNK9QShortcut12parentWidgetEv parentWidget()
 extern "C"
@@ -82,7 +82,7 @@ C_ZNK9QShortcut12parentWidgetEv(void *qthis) {
   ((QShortcut*)qthis)->parentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 57, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 63, column 5>
 //   // proto:  void QShortcut::QShortcut(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context);
 extern "C"
 QShortcut*
@@ -91,10 +91,14 @@ QWidget * arg2,
 const char * arg3,
 const char * arg4,
 Qt::ShortcutContext* arg5) {
-  auto ret = new QShortcut(*((const QKeySequence*)arg1), arg2, arg3, arg4, *((Qt::ShortcutContext*)arg5));
+  auto ret = new QShortcut(*((const QKeySequence*)arg1),
+arg2,
+arg3,
+arg4,
+*((Qt::ShortcutContext*)arg5));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 80, column 10>
 //   // proto:  void QShortcut::setAutoRepeat(bool on);
 // _ZN9QShortcut13setAutoRepeatEb setAutoRepeat(_Bool)
 extern "C"
@@ -103,7 +107,7 @@ C_ZN9QShortcut13setAutoRepeatEb(void *qthis,
 bool arg1) {
   ((QShortcut*)qthis)->setAutoRepeat(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 72, column 10>
 //   // proto:  bool QShortcut::isEnabled();
 // _ZNK9QShortcut9isEnabledEv isEnabled()
 extern "C"
@@ -113,7 +117,7 @@ C_ZNK9QShortcut9isEnabledEv(void *qthis) {
   ((QShortcut*)qthis)->isEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 63, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 69, column 18>
 //   // proto:  QKeySequence QShortcut::key();
 // _ZNK9QShortcut3keyEv key()
 extern "C"
@@ -128,7 +132,7 @@ extern "C"
 void C_ZN9QShortcutD2Ev(void *qthis) {
   delete (QShortcut*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 77, column 10>
 //   // proto:  void QShortcut::setWhatsThis(const QString & text);
 // _ZN9QShortcut12setWhatsThisERK7QString setWhatsThis(const class QString &)
 extern "C"
@@ -137,7 +141,7 @@ C_ZN9QShortcut12setWhatsThisERK7QString(void *qthis,
 const QString* arg1) {
   ((QShortcut*)qthis)->setWhatsThis(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 71, column 10>
 //   // proto:  void QShortcut::setEnabled(bool enable);
 // _ZN9QShortcut10setEnabledEb setEnabled(_Bool)
 extern "C"
@@ -146,7 +150,7 @@ C_ZN9QShortcut10setEnabledEb(void *qthis,
 bool arg1) {
   ((QShortcut*)qthis)->setEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 77, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 83, column 9>
 //   // proto:  int QShortcut::id();
 // _ZNK9QShortcut2idEv id()
 extern "C"
@@ -156,7 +160,7 @@ C_ZNK9QShortcut2idEv(void *qthis) {
   ((QShortcut*)qthis)->id();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 74, column 10>
 //   // proto:  void QShortcut::setContext(Qt::ShortcutContext context);
 // _ZN9QShortcut10setContextEN2Qt15ShortcutContextE setContext(Qt::ShortcutContext)
 extern "C"
@@ -165,7 +169,7 @@ C_ZN9QShortcut10setContextEN2Qt15ShortcutContextE(void *qthis,
 Qt::ShortcutContext* arg1) {
   ((QShortcut*)qthis)->setContext(*((Qt::ShortcutContext*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 69, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 75, column 25>
 //   // proto:  Qt::ShortcutContext QShortcut::context();
 // _ZNK9QShortcut7contextEv context()
 extern "C"
@@ -175,7 +179,7 @@ C_ZNK9QShortcut7contextEv(void *qthis) {
   ((QShortcut*)qthis)->context();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 72, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 78, column 13>
 //   // proto:  QString QShortcut::whatsThis();
 // _ZNK9QShortcut9whatsThisEv whatsThis()
 extern "C"
@@ -185,7 +189,7 @@ C_ZNK9QShortcut9whatsThisEv(void *qthis) {
   ((QShortcut*)qthis)->whatsThis();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 62, column 14>
 //   // proto:  void QShortcut::QShortcut(QWidget * parent);
 extern "C"
 QShortcut*
@@ -193,7 +197,7 @@ C_ZN9QShortcutC2EP7QWidget(QWidget * arg1) {
   auto ret = new QShortcut(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 90, column 10>
 //   // proto:  void QShortcut::activatedAmbiguously();
 // _ZN9QShortcut20activatedAmbiguouslyEv activatedAmbiguously()
 extern "C"
@@ -201,7 +205,7 @@ void
 C_ZN9QShortcut20activatedAmbiguouslyEv(void *qthis) {
   ((QShortcut*)qthis)->activatedAmbiguously();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qshortcut.h', line 81, column 10>
 //   // proto:  bool QShortcut::autoRepeat();
 // _ZNK9QShortcut10autoRepeatEv autoRepeat()
 extern "C"

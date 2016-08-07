@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qcommonstyle.h
 // dst-file: /src/widgets/qcommonstyle.cxx
 //
@@ -37,7 +37,7 @@ int QCommonStyle_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 77, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 83, column 9>
 //   // proto:  int QCommonStyle::layoutSpacing(QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget);
 // _ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget layoutSpacing(class QSizePolicy::ControlType, class QSizePolicy::ControlType, Qt::Orientation, const class QStyleOption *, const class QWidget *)
 extern "C"
@@ -56,7 +56,7 @@ arg4,
 arg5);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 62, column 10>
 //   // proto:  void QCommonStyle::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPainter * p, const QWidget * w);
 // _ZNK12QCommonStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget drawComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, class QPainter *, const class QWidget *)
 extern "C"
@@ -71,7 +71,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 89, column 10>
 //   // proto:  void QCommonStyle::polish(QWidget * widget);
 // _ZN12QCommonStyle6polishEP7QWidget polish(class QWidget *)
 extern "C"
@@ -80,7 +80,7 @@ C_ZN12QCommonStyle6polishEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QCommonStyle*)qthis)->polish(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 75, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 81, column 13>
 //   // proto:  QPixmap QCommonStyle::generatedIconPixmap(QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt);
 // _ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
 extern "C"
@@ -95,7 +95,7 @@ const QStyleOption * arg3) {
 arg3);
   return new QPixmap(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 70, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 76, column 11>
 //   // proto:  QIcon QCommonStyle::standardIcon(QStyle::StandardPixmap standardIcon, const QStyleOption * opt, const QWidget * widget);
 // _ZNK12QCommonStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget standardIcon(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
 extern "C"
@@ -110,7 +110,7 @@ arg2,
 arg3);
   return new QIcon(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 60, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 66, column 11>
 //   // proto:  QRect QCommonStyle::subControlRect(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QStyle::SubControl sc, const QWidget * w);
 // _ZNK12QCommonStyle14subControlRectEN6QStyle14ComplexControlEPK19QStyleOptionComplexNS0_10SubControlEPK7QWidget subControlRect(enum QStyle::ComplexControl, const class QStyleOptionComplex *, enum QStyle::SubControl, const class QWidget *)
 extern "C"
@@ -127,7 +127,7 @@ arg3,
 arg4);
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 87, column 10>
 //   // proto:  void QCommonStyle::polish(QPalette & );
 // _ZN12QCommonStyle6polishER8QPalette polish(class QPalette &)
 extern "C"
@@ -136,7 +136,7 @@ C_ZN12QCommonStyle6polishER8QPalette(void *qthis,
 QPalette* arg1) {
   ((QCommonStyle*)qthis)->polish(*((QPalette*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 90, column 10>
 //   // proto:  void QCommonStyle::unpolish(QWidget * widget);
 // _ZN12QCommonStyle8unpolishEP7QWidget unpolish(class QWidget *)
 extern "C"
@@ -145,7 +145,7 @@ C_ZN12QCommonStyle8unpolishEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QCommonStyle*)qthis)->unpolish(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 62, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 68, column 11>
 //   // proto:  QSize QCommonStyle::sizeFromContents(QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * widget);
 // _ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
@@ -162,7 +162,7 @@ arg2,
 arg4);
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 91, column 10>
 //   // proto:  void QCommonStyle::unpolish(QApplication * application);
 // _ZN12QCommonStyle8unpolishEP12QApplication unpolish(class QApplication *)
 extern "C"
@@ -171,7 +171,7 @@ C_ZN12QCommonStyle8unpolishEP12QApplication(void *qthis,
 QApplication * arg1) {
   ((QCommonStyle*)qthis)->unpolish(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 67, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 73, column 9>
 //   // proto:  int QCommonStyle::styleHint(QStyle::StyleHint sh, const QStyleOption * opt, const QWidget * w, QStyleHintReturn * shret);
 // _ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn styleHint(enum QStyle::StyleHint, const class QStyleOption *, const class QWidget *, class QStyleHintReturn *)
 extern "C"
@@ -188,7 +188,7 @@ arg3,
 arg4);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 88, column 10>
 //   // proto:  void QCommonStyle::polish(QApplication * app);
 // _ZN12QCommonStyle6polishEP12QApplication polish(class QApplication *)
 extern "C"
@@ -197,7 +197,7 @@ C_ZN12QCommonStyle6polishEP12QApplication(void *qthis,
 QApplication * arg1) {
   ((QCommonStyle*)qthis)->polish(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 54, column 5>
 //   // proto:  void QCommonStyle::QCommonStyle();
 extern "C"
 QCommonStyle*
@@ -205,7 +205,7 @@ C_ZN12QCommonStyleC2Ev() {
   auto ret = new QCommonStyle();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 51, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 57, column 10>
 //   // proto:  void QCommonStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption * opt, QPainter * p, const QWidget * w);
 // _ZNK12QCommonStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget drawPrimitive(enum QStyle::PrimitiveElement, const class QStyleOption *, class QPainter *, const class QWidget *)
 extern "C"
@@ -220,7 +220,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 55, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 61, column 11>
 //   // proto:  QRect QCommonStyle::subElementRect(QStyle::SubElement r, const QStyleOption * opt, const QWidget * widget);
 // _ZNK12QCommonStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget subElementRect(enum QStyle::SubElement, const class QStyleOption *, const class QWidget *)
 extern "C"
@@ -235,7 +235,7 @@ arg2,
 arg3);
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 58, column 16>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 64, column 16>
 //   // proto:  QStyle::SubControl QCommonStyle::hitTestComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * w);
 // _ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
 extern "C"
@@ -252,7 +252,7 @@ arg2,
 arg4);
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 65, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 71, column 9>
 //   // proto:  int QCommonStyle::pixelMetric(QStyle::PixelMetric m, const QStyleOption * opt, const QWidget * widget);
 // _ZNK12QCommonStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget pixelMetric(enum QStyle::PixelMetric, const class QStyleOption *, const class QWidget *)
 extern "C"
@@ -267,7 +267,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 45, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 51, column 5>
 //   // proto:  const QMetaObject * QCommonStyle::metaObject();
 // _ZNK12QCommonStyle10metaObjectEv metaObject()
 extern "C"
@@ -282,7 +282,7 @@ extern "C"
 void C_ZN12QCommonStyleD2Ev(void *qthis) {
   delete (QCommonStyle*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 72, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 78, column 13>
 //   // proto:  QPixmap QCommonStyle::standardPixmap(QStyle::StandardPixmap sp, const QStyleOption * opt, const QWidget * widget);
 // _ZNK12QCommonStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget standardPixmap(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
 extern "C"
@@ -297,7 +297,7 @@ arg2,
 arg3);
   return new QPixmap(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 53, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 59, column 10>
 //   // proto:  void QCommonStyle::drawControl(QStyle::ControlElement element, const QStyleOption * opt, QPainter * p, const QWidget * w);
 // _ZNK12QCommonStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget drawControl(enum QStyle::ControlElement, const class QStyleOption *, class QPainter *, const class QWidget *)
 extern "C"

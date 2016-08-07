@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qlibraryinfo.h
 // dst-file: /src/core/qlibraryinfo.cxx
 //
@@ -35,7 +35,7 @@ int QLibraryInfo_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 97, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 103, column 24>
 //   // proto: static QStringList QLibraryInfo::platformPluginArguments(const QString & platformName);
 // _ZN12QLibraryInfo23platformPluginArgumentsERK7QString platformPluginArguments(const class QString &)
 extern "C"
@@ -45,7 +45,7 @@ C_ZN12QLibraryInfo23platformPluginArgumentsERK7QString(const QString* arg1) {
   QLibraryInfo::platformPluginArguments(*((const QString*)arg1));
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 47, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 53, column 20>
 //   // proto: static QString QLibraryInfo::licensee();
 // _ZN12QLibraryInfo8licenseeEv licensee()
 extern "C"
@@ -55,7 +55,7 @@ C_ZN12QLibraryInfo8licenseeEv() {
   QLibraryInfo::licensee();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 48, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 54, column 20>
 //   // proto: static QString QLibraryInfo::licensedProducts();
 // _ZN12QLibraryInfo16licensedProductsEv licensedProducts()
 extern "C"
@@ -65,7 +65,7 @@ C_ZN12QLibraryInfo16licensedProductsEv() {
   QLibraryInfo::licensedProducts();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 58, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 64, column 17>
 //   // proto: static bool QLibraryInfo::isDebugBuild();
 // _ZN12QLibraryInfo12isDebugBuildEv isDebugBuild()
 extern "C"
@@ -75,7 +75,7 @@ C_ZN12QLibraryInfo12isDebugBuildEv() {
   QLibraryInfo::isDebugBuild();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 56, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 62, column 25>
 //   // proto: static const char * QLibraryInfo::build();
 // _ZN12QLibraryInfo5buildEv build()
 extern "C"
@@ -85,7 +85,7 @@ C_ZN12QLibraryInfo5buildEv() {
   QLibraryInfo::build();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 91, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 97, column 20>
 //   // proto: static QString QLibraryInfo::location(QLibraryInfo::LibraryLocation );
 // _ZN12QLibraryInfo8locationENS_15LibraryLocationE location(enum QLibraryInfo::LibraryLocation)
 extern "C"
@@ -95,7 +95,7 @@ C_ZN12QLibraryInfo8locationENS_15LibraryLocationE(QLibraryInfo::LibraryLocation 
   QLibraryInfo::location(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 52, column 32>
+// <SourceLocation file '/usr/include/qt/QtCore/qlibraryinfo.h', line 58, column 32>
 //   // proto: static QDate QLibraryInfo::buildDate();
 // _ZN12QLibraryInfo9buildDateEv buildDate()
 extern "C"

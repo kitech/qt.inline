@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qregularexpression.h
 // dst-file: /src/core/qregularexpression.cxx
 //
@@ -20,7 +20,7 @@
 
 // main block begin =>
 void __keep_qregularexpression_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 232, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 242, column 10>
 //   // proto:  void QRegularExpressionMatchIterator::swap(QRegularExpressionMatchIterator & other);
 if (true) {
   auto f = [](QRegularExpressionMatchIterator flythis, QRegularExpressionMatchIterator & arg1) {
@@ -30,7 +30,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN31QRegularExpressionMatchIterator4swapERS_ swap(class QRegularExpressionMatchIterator &)
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 93, column 10>
 //   // proto:  void QRegularExpression::swap(QRegularExpression & other);
 if (true) {
   auto f = [](QRegularExpression flythis, QRegularExpression & arg1) {
@@ -40,7 +40,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN18QRegularExpression4swapERS_ swap(class QRegularExpression &)
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 175, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 185, column 10>
 //   // proto:  void QRegularExpressionMatch::swap(QRegularExpressionMatch & other);
 if (true) {
   auto f = [](QRegularExpressionMatch flythis, QRegularExpressionMatch & arg1) {
@@ -76,7 +76,7 @@ int QRegularExpressionMatch_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 236, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 246, column 10>
 //   // proto:  bool QRegularExpressionMatchIterator::hasNext();
 // _ZNK31QRegularExpressionMatchIterator7hasNextEv hasNext()
 extern "C"
@@ -86,7 +86,7 @@ C_ZNK31QRegularExpressionMatchIterator7hasNextEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->hasNext();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 234, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 244, column 10>
 //   // proto:  bool QRegularExpressionMatchIterator::isValid();
 // _ZNK31QRegularExpressionMatchIterator7isValidEv isValid()
 extern "C"
@@ -96,7 +96,7 @@ C_ZNK31QRegularExpressionMatchIterator7isValidEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 238, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 248, column 29>
 //   // proto:  QRegularExpressionMatch QRegularExpressionMatchIterator::peekNext();
 // _ZNK31QRegularExpressionMatchIterator8peekNextEv peekNext()
 extern "C"
@@ -106,7 +106,7 @@ C_ZNK31QRegularExpressionMatchIterator8peekNextEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->peekNext();
   return new QRegularExpressionMatch(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 224, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 234, column 5>
 //   // proto:  void QRegularExpressionMatchIterator::QRegularExpressionMatchIterator();
 extern "C"
 QRegularExpressionMatchIterator*
@@ -114,7 +114,7 @@ C_ZN31QRegularExpressionMatchIteratorC2Ev() {
   auto ret = new QRegularExpressionMatchIterator();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 241, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 251, column 35>
 //   // proto:  QRegularExpression::MatchType QRegularExpressionMatchIterator::matchType();
 // _ZNK31QRegularExpressionMatchIterator9matchTypeEv matchType()
 extern "C"
@@ -124,7 +124,7 @@ C_ZNK31QRegularExpressionMatchIterator9matchTypeEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->matchType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 240, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 250, column 24>
 //   // proto:  QRegularExpression QRegularExpressionMatchIterator::regularExpression();
 // _ZNK31QRegularExpressionMatchIterator17regularExpressionEv regularExpression()
 extern "C"
@@ -134,7 +134,7 @@ C_ZNK31QRegularExpressionMatchIterator17regularExpressionEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->regularExpression();
   return new QRegularExpression(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 226, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 236, column 5>
 //   // proto:  void QRegularExpressionMatchIterator::QRegularExpressionMatchIterator(const QRegularExpressionMatchIterator & iterator);
 extern "C"
 QRegularExpressionMatchIterator*
@@ -147,7 +147,7 @@ extern "C"
 void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *qthis) {
   delete (QRegularExpressionMatchIterator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 237, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 247, column 29>
 //   // proto:  QRegularExpressionMatch QRegularExpressionMatchIterator::next();
 // _ZN31QRegularExpressionMatchIterator4nextEv next()
 extern "C"
@@ -157,7 +157,7 @@ C_ZN31QRegularExpressionMatchIterator4nextEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->next();
   return new QRegularExpressionMatch(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 242, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 252, column 38>
 //   // proto:  QRegularExpression::MatchOptions QRegularExpressionMatchIterator::matchOptions();
 // _ZNK31QRegularExpressionMatchIterator12matchOptionsEv matchOptions()
 extern "C"
@@ -167,7 +167,7 @@ C_ZNK31QRegularExpressionMatchIterator12matchOptionsEv(void *qthis) {
   ((QRegularExpressionMatchIterator*)qthis)->matchOptions();
   return new QFlags<QRegularExpression::MatchOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 232, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 242, column 10>
 //   // proto:  void QRegularExpressionMatchIterator::swap(QRegularExpressionMatchIterator & other);
 // _ZN31QRegularExpressionMatchIterator4swapERS_ swap(class QRegularExpressionMatchIterator &)
 extern "C"
@@ -176,7 +176,7 @@ C_ZN31QRegularExpressionMatchIterator4swapERS_(void *qthis,
 QRegularExpressionMatchIterator* arg1) {
   ((QRegularExpressionMatchIterator*)qthis)->swap(*((QRegularExpressionMatchIterator*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 90, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 99, column 9>
 //   // proto:  int QRegularExpression::patternErrorOffset();
 // _ZNK18QRegularExpression18patternErrorOffsetEv patternErrorOffset()
 extern "C"
@@ -186,7 +186,7 @@ C_ZNK18QRegularExpression18patternErrorOffsetEv(void *qthis) {
   ((QRegularExpression*)qthis)->patternErrorOffset();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 86, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 95, column 13>
 //   // proto:  QString QRegularExpression::pattern();
 // _ZNK18QRegularExpression7patternEv pattern()
 extern "C"
@@ -201,7 +201,7 @@ extern "C"
 void C_ZN18QRegularExpressionD2Ev(void *qthis) {
   delete (QRegularExpression*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 139, column 10>
 //   // proto:  void QRegularExpression::optimize();
 // _ZNK18QRegularExpression8optimizeEv optimize()
 extern "C"
@@ -209,7 +209,7 @@ void
 C_ZNK18QRegularExpression8optimizeEv(void *qthis) {
   ((QRegularExpression*)qthis)->optimize();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 132, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 141, column 20>
 //   // proto: static QString QRegularExpression::escape(const QString & str);
 // _ZN18QRegularExpression6escapeERK7QString escape(const class QString &)
 extern "C"
@@ -219,7 +219,7 @@ C_ZN18QRegularExpression6escapeERK7QString(const QString* arg1) {
   QRegularExpression::escape(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 73, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 82, column 5>
 //   // proto:  void QRegularExpression::QRegularExpression();
 extern "C"
 QRegularExpression*
@@ -227,7 +227,7 @@ C_ZN18QRegularExpressionC2Ev() {
   auto ret = new QRegularExpression();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 93, column 10>
 //   // proto:  void QRegularExpression::swap(QRegularExpression & other);
 // _ZN18QRegularExpression4swapERS_ swap(class QRegularExpression &)
 extern "C"
@@ -236,16 +236,17 @@ C_ZN18QRegularExpression4swapERS_(void *qthis,
 QRegularExpression* arg1) {
   ((QRegularExpression*)qthis)->swap(*((QRegularExpression*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 74, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 83, column 14>
 //   // proto:  void QRegularExpression::QRegularExpression(const QString & pattern, PatternOptions options);
 extern "C"
 QRegularExpression*
 C_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE(const QString* arg1,
 QRegularExpression::PatternOptions arg2) {
-  auto ret = new QRegularExpression(*((const QString*)arg1), arg2);
+  auto ret = new QRegularExpression(*((const QString*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 70, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 79, column 20>
 //   // proto:  PatternOptions QRegularExpression::patternOptions();
 // _ZNK18QRegularExpression14patternOptionsEv patternOptions()
 extern "C"
@@ -255,7 +256,7 @@ C_ZNK18QRegularExpression14patternOptionsEv(void *qthis) {
   ((QRegularExpression*)qthis)->patternOptions();
   return new QFlags<QRegularExpression::PatternOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 91, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 100, column 13>
 //   // proto:  QString QRegularExpression::errorString();
 // _ZNK18QRegularExpression11errorStringEv errorString()
 extern "C"
@@ -265,7 +266,7 @@ C_ZNK18QRegularExpression11errorStringEv(void *qthis) {
   ((QRegularExpression*)qthis)->errorString();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 115, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 124, column 29>
 //   // proto:  QRegularExpressionMatch QRegularExpression::match(const QStringRef & subjectRef, int offset, QRegularExpression::MatchType matchType, MatchOptions matchOptions);
 // _ZNK18QRegularExpression5matchERK10QStringRefiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE match(const class QStringRef &, int, enum QRegularExpression::MatchType, MatchOptions)
 extern "C"
@@ -282,7 +283,7 @@ arg3,
 arg4);
   return new QRegularExpressionMatch(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 125, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 134, column 37>
 //   // proto:  QRegularExpressionMatchIterator QRegularExpression::globalMatch(const QStringRef & subjectRef, int offset, QRegularExpression::MatchType matchType, MatchOptions matchOptions);
 // _ZNK18QRegularExpression11globalMatchERK10QStringRefiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE globalMatch(const class QStringRef &, int, enum QRegularExpression::MatchType, MatchOptions)
 extern "C"
@@ -299,7 +300,7 @@ arg3,
 arg4);
   return new QRegularExpressionMatchIterator(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 98, column 10>
 //   // proto:  bool QRegularExpression::isValid();
 // _ZNK18QRegularExpression7isValidEv isValid()
 extern "C"
@@ -309,7 +310,7 @@ C_ZNK18QRegularExpression7isValidEv(void *qthis) {
   ((QRegularExpression*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 110, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 119, column 29>
 //   // proto:  QRegularExpressionMatch QRegularExpression::match(const QString & subject, int offset, QRegularExpression::MatchType matchType, MatchOptions matchOptions);
 // _ZNK18QRegularExpression5matchERK7QStringiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE match(const class QString &, int, enum QRegularExpression::MatchType, MatchOptions)
 extern "C"
@@ -326,7 +327,7 @@ arg3,
 arg4);
   return new QRegularExpressionMatch(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 75, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 84, column 5>
 //   // proto:  void QRegularExpression::QRegularExpression(const QRegularExpression & re);
 extern "C"
 QRegularExpression*
@@ -334,7 +335,7 @@ C_ZN18QRegularExpressionC2ERKS_(const QRegularExpression* arg1) {
   auto ret = new QRegularExpression(*((const QRegularExpression*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 80, column 10>
 //   // proto:  void QRegularExpression::setPatternOptions(PatternOptions options);
 // _ZN18QRegularExpression17setPatternOptionsE6QFlagsINS_13PatternOptionEE setPatternOptions(PatternOptions)
 extern "C"
@@ -343,7 +344,7 @@ C_ZN18QRegularExpression17setPatternOptionsE6QFlagsINS_13PatternOptionEE(void *q
 QRegularExpression::PatternOptions arg1) {
   ((QRegularExpression*)qthis)->setPatternOptions(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 94, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 103, column 17>
 //   // proto:  QStringList QRegularExpression::namedCaptureGroups();
 // _ZNK18QRegularExpression18namedCaptureGroupsEv namedCaptureGroups()
 extern "C"
@@ -353,7 +354,7 @@ C_ZNK18QRegularExpression18namedCaptureGroupsEv(void *qthis) {
   ((QRegularExpression*)qthis)->namedCaptureGroups();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 93, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 102, column 9>
 //   // proto:  int QRegularExpression::captureCount();
 // _ZNK18QRegularExpression12captureCountEv captureCount()
 extern "C"
@@ -363,7 +364,7 @@ C_ZNK18QRegularExpression12captureCountEv(void *qthis) {
   ((QRegularExpression*)qthis)->captureCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 120, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 129, column 37>
 //   // proto:  QRegularExpressionMatchIterator QRegularExpression::globalMatch(const QString & subject, int offset, QRegularExpression::MatchType matchType, MatchOptions matchOptions);
 // _ZNK18QRegularExpression11globalMatchERK7QStringiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE globalMatch(const class QString &, int, enum QRegularExpression::MatchType, MatchOptions)
 extern "C"
@@ -380,7 +381,7 @@ arg3,
 arg4);
   return new QRegularExpressionMatchIterator(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 87, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 96, column 10>
 //   // proto:  void QRegularExpression::setPattern(const QString & pattern);
 // _ZN18QRegularExpression10setPatternERK7QString setPattern(const class QString &)
 extern "C"
@@ -389,7 +390,7 @@ C_ZN18QRegularExpression10setPatternERK7QString(void *qthis,
 const QString* arg1) {
   ((QRegularExpression*)qthis)->setPattern(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 186, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 196, column 9>
 //   // proto:  int QRegularExpressionMatch::lastCapturedIndex();
 // _ZNK23QRegularExpressionMatch17lastCapturedIndexEv lastCapturedIndex()
 extern "C"
@@ -399,7 +400,7 @@ C_ZNK23QRegularExpressionMatch17lastCapturedIndexEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->lastCapturedIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 166, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 176, column 5>
 //   // proto:  void QRegularExpressionMatch::QRegularExpressionMatch();
 extern "C"
 QRegularExpressionMatch*
@@ -407,7 +408,7 @@ C_ZN23QRegularExpressionMatchC2Ev() {
   auto ret = new QRegularExpressionMatch();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 184, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 194, column 10>
 //   // proto:  bool QRegularExpressionMatch::isValid();
 // _ZNK23QRegularExpressionMatch7isValidEv isValid()
 extern "C"
@@ -417,7 +418,7 @@ C_ZNK23QRegularExpressionMatch7isValidEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 197, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 207, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedLength(int nth);
 // _ZNK23QRegularExpressionMatch14capturedLengthEi capturedLength(int)
 extern "C"
@@ -428,7 +429,7 @@ int arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedLength(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 201, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 211, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedLength(const QString & name);
 // _ZNK23QRegularExpressionMatch14capturedLengthERK7QString capturedLength(const class QString &)
 extern "C"
@@ -439,7 +440,7 @@ const QString* arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedLength(*((const QString*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 189, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 199, column 16>
 //   // proto:  QStringRef QRegularExpressionMatch::capturedRef(int nth);
 // _ZNK23QRegularExpressionMatch11capturedRefEi capturedRef(int)
 extern "C"
@@ -450,7 +451,7 @@ int arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedRef(arg1);
   return new QStringRef(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 202, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 212, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedEnd(const QString & name);
 // _ZNK23QRegularExpressionMatch11capturedEndERK7QString capturedEnd(const class QString &)
 extern "C"
@@ -461,7 +462,7 @@ const QString* arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedEnd(*((const QString*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 191, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 201, column 13>
 //   // proto:  QString QRegularExpressionMatch::captured(const QString & name);
 // _ZNK23QRegularExpressionMatch8capturedERK7QString captured(const class QString &)
 extern "C"
@@ -472,7 +473,7 @@ const QString* arg1) {
   ((QRegularExpressionMatch*)qthis)->captured(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 194, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 204, column 17>
 //   // proto:  QStringList QRegularExpressionMatch::capturedTexts();
 // _ZNK23QRegularExpressionMatch13capturedTextsEv capturedTexts()
 extern "C"
@@ -482,7 +483,7 @@ C_ZNK23QRegularExpressionMatch13capturedTextsEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->capturedTexts();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 168, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 178, column 5>
 //   // proto:  void QRegularExpressionMatch::QRegularExpressionMatch(const QRegularExpressionMatch & match);
 extern "C"
 QRegularExpressionMatch*
@@ -490,7 +491,7 @@ C_ZN23QRegularExpressionMatchC2ERKS_(const QRegularExpressionMatch* arg1) {
   auto ret = new QRegularExpressionMatch(*((const QRegularExpressionMatch*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 175, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 185, column 10>
 //   // proto:  void QRegularExpressionMatch::swap(QRegularExpressionMatch & other);
 // _ZN23QRegularExpressionMatch4swapERS_ swap(class QRegularExpressionMatch &)
 extern "C"
@@ -504,7 +505,7 @@ extern "C"
 void C_ZN23QRegularExpressionMatchD2Ev(void *qthis) {
   delete (QRegularExpressionMatch*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 198, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 208, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedEnd(int nth);
 // _ZNK23QRegularExpressionMatch11capturedEndEi capturedEnd(int)
 extern "C"
@@ -515,7 +516,7 @@ int arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedEnd(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 178, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 188, column 35>
 //   // proto:  QRegularExpression::MatchType QRegularExpressionMatch::matchType();
 // _ZNK23QRegularExpressionMatch9matchTypeEv matchType()
 extern "C"
@@ -525,7 +526,7 @@ C_ZNK23QRegularExpressionMatch9matchTypeEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->matchType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 179, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 189, column 38>
 //   // proto:  QRegularExpression::MatchOptions QRegularExpressionMatch::matchOptions();
 // _ZNK23QRegularExpressionMatch12matchOptionsEv matchOptions()
 extern "C"
@@ -535,7 +536,7 @@ C_ZNK23QRegularExpressionMatch12matchOptionsEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->matchOptions();
   return new QFlags<QRegularExpression::MatchOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 192, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 202, column 16>
 //   // proto:  QStringRef QRegularExpressionMatch::capturedRef(const QString & name);
 // _ZNK23QRegularExpressionMatch11capturedRefERK7QString capturedRef(const class QString &)
 extern "C"
@@ -546,7 +547,7 @@ const QString* arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedRef(*((const QString*)arg1));
   return new QStringRef(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 181, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 191, column 10>
 //   // proto:  bool QRegularExpressionMatch::hasMatch();
 // _ZNK23QRegularExpressionMatch8hasMatchEv hasMatch()
 extern "C"
@@ -556,7 +557,7 @@ C_ZNK23QRegularExpressionMatch8hasMatchEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->hasMatch();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 200, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 210, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedStart(const QString & name);
 // _ZNK23QRegularExpressionMatch13capturedStartERK7QString capturedStart(const class QString &)
 extern "C"
@@ -567,7 +568,7 @@ const QString* arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedStart(*((const QString*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 177, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 187, column 24>
 //   // proto:  QRegularExpression QRegularExpressionMatch::regularExpression();
 // _ZNK23QRegularExpressionMatch17regularExpressionEv regularExpression()
 extern "C"
@@ -577,7 +578,7 @@ C_ZNK23QRegularExpressionMatch17regularExpressionEv(void *qthis) {
   ((QRegularExpressionMatch*)qthis)->regularExpression();
   return new QRegularExpression(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 188, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 198, column 13>
 //   // proto:  QString QRegularExpressionMatch::captured(int nth);
 // _ZNK23QRegularExpressionMatch8capturedEi captured(int)
 extern "C"
@@ -588,7 +589,7 @@ int arg1) {
   ((QRegularExpressionMatch*)qthis)->captured(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 196, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 206, column 9>
 //   // proto:  int QRegularExpressionMatch::capturedStart(int nth);
 // _ZNK23QRegularExpressionMatch13capturedStartEi capturedStart(int)
 extern "C"
@@ -599,7 +600,7 @@ int arg1) {
   ((QRegularExpressionMatch*)qthis)->capturedStart(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 182, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qregularexpression.h', line 192, column 10>
 //   // proto:  bool QRegularExpressionMatch::hasPartialMatch();
 // _ZNK23QRegularExpressionMatch15hasPartialMatchEv hasPartialMatch()
 extern "C"

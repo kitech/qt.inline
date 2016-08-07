@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qline.h
 // dst-file: /src/core/qline.cxx
 //
@@ -20,7 +20,7 @@
 
 // main block begin =>
 void __keep_qline_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 53, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 59, column 34>
 //   // proto:  bool QLine::isNull();
 if (true) {
   auto f = [](QLine flythis) {
@@ -30,7 +30,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 70, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 76, column 35>
 //   // proto:  QLine QLine::translated(const QPoint & p);
 if (true) {
   auto f = [](QLine flythis, const QPoint & arg1) {
@@ -40,7 +40,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine10translatedERK6QPoint translated(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 74, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 80, column 17>
 //   // proto:  void QLine::setP2(const QPoint & p2);
 if (true) {
   auto f = [](QLine flythis, const QPoint & arg1) {
@@ -50,7 +50,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine5setP2ERK6QPoint setP2(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 61, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 67, column 33>
 //   // proto:  int QLine::x2();
 if (true) {
   auto f = [](QLine flythis) {
@@ -60,7 +60,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2x2Ev x2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 50, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 56, column 29>
 //   // proto:  void QLine::QLine(const QPoint & pt1, const QPoint & pt2);
 if (true) {
   auto f = [](const QPoint & arg1, const QPoint & arg2) {
@@ -68,7 +68,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 79, column 17>
 //   // proto:  void QLine::setP1(const QPoint & p1);
 if (true) {
   auto f = [](QLine flythis, const QPoint & arg1) {
@@ -78,7 +78,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine5setP1ERK6QPoint setP1(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 67, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
 //   // proto:  void QLine::translate(const QPoint & p);
 if (true) {
   auto f = [](QLine flythis, const QPoint & arg1) {
@@ -88,7 +88,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine9translateERK6QPoint translate(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 64, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 70, column 33>
 //   // proto:  int QLine::dx();
 if (true) {
   auto f = [](QLine flythis) {
@@ -98,7 +98,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2dxEv dx()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 62, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 33>
 //   // proto:  int QLine::y2();
 if (true) {
   auto f = [](QLine flythis) {
@@ -108,7 +108,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2y2Ev y2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 65, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 71, column 33>
 //   // proto:  int QLine::dy();
 if (true) {
   auto f = [](QLine flythis) {
@@ -118,7 +118,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2dyEv dy()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 59, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 65, column 33>
 //   // proto:  int QLine::y1();
 if (true) {
   auto f = [](QLine flythis) {
@@ -128,7 +128,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2y1Ev y1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 55, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 61, column 36>
 //   // proto:  QPoint QLine::p1();
 if (true) {
   auto f = [](QLine flythis) {
@@ -138,7 +138,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2p1Ev p1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 56, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 62, column 36>
 //   // proto:  QPoint QLine::p2();
 if (true) {
   auto f = [](QLine flythis) {
@@ -148,7 +148,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2p2Ev p2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 51, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 57, column 29>
 //   // proto:  void QLine::QLine(int x1, int y1, int x2, int y2);
 if (true) {
   auto f = [](int arg1, int arg2, int arg3, int arg4) {
@@ -156,7 +156,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 74, column 17>
 //   // proto:  void QLine::translate(int dx, int dy);
 if (true) {
   auto f = [](QLine flythis, int arg1, int arg2) {
@@ -166,7 +166,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine9translateEii translate(int, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 71, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 77, column 35>
 //   // proto:  QLine QLine::translated(int dx, int dy);
 if (true) {
   auto f = [](QLine flythis, int arg1, int arg2) {
@@ -176,7 +176,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine10translatedEii translated(int, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 75, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 81, column 17>
 //   // proto:  void QLine::setPoints(const QPoint & p1, const QPoint & p2);
 if (true) {
   auto f = [](QLine flythis, const QPoint & arg1, const QPoint & arg2) {
@@ -186,7 +186,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine9setPointsERK6QPointS2_ setPoints(const class QPoint &, const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 76, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 82, column 17>
 //   // proto:  void QLine::setLine(int x1, int y1, int x2, int y2);
 if (true) {
   auto f = [](QLine flythis, int arg1, int arg2, int arg3, int arg4) {
@@ -196,7 +196,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QLine7setLineEiiii setLine(int, int, int, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 58, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 64, column 33>
 //   // proto:  int QLine::x1();
 if (true) {
   auto f = [](QLine flythis) {
@@ -206,7 +206,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QLine2x1Ev x1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 49, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 55, column 29>
 //   // proto:  void QLine::QLine();
 if (true) {
   auto f = []() {
@@ -214,7 +214,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 245, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 251, column 17>
 //   // proto:  void QLineF::translate(qreal dx, qreal dy);
 if (true) {
   auto f = [](QLineF flythis, qreal arg1, qreal arg2) {
@@ -224,7 +224,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF9translateEdd translate(qreal, qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 252, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 258, column 17>
 //   // proto:  void QLineF::setPoints(const QPointF & p1, const QPointF & p2);
 if (true) {
   auto f = [](QLineF flythis, const QPointF & arg1, const QPointF & arg2) {
@@ -234,7 +234,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF9setPointsERK7QPointFS2_ setPoints(const class QPointF &, const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 251, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 257, column 17>
 //   // proto:  void QLineF::setP2(const QPointF & p2);
 if (true) {
   auto f = [](QLineF flythis, const QPointF & arg1) {
@@ -244,7 +244,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF5setP2ERK7QPointF setP2(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 248, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 254, column 36>
 //   // proto:  QLineF QLineF::translated(qreal dx, qreal dy);
 if (true) {
   auto f = [](QLineF flythis, qreal arg1, qreal arg2) {
@@ -254,7 +254,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF10translatedEdd translated(qreal, qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 228, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 234, column 10>
 //   // proto:  void QLineF::setLength(qreal len);
 if (true) {
   auto f = [](QLineF flythis, qreal arg1) {
@@ -264,7 +264,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF9setLengthEd setLength(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 218, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 224, column 35>
 //   // proto:  qreal QLineF::x1();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -274,7 +274,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2x1Ev x1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 207, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 213, column 29>
 //   // proto:  void QLineF::QLineF(const QPointF & pt1, const QPointF & pt2);
 if (true) {
   auto f = [](const QPointF & arg1, const QPointF & arg2) {
@@ -282,7 +282,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 209, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 215, column 29>
 //   // proto:  void QLineF::QLineF(const QLine & line);
 if (true) {
   auto f = [](const QLine & arg1) {
@@ -290,7 +290,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 221, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 227, column 35>
 //   // proto:  qreal QLineF::x2();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -300,7 +300,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2x2Ev x2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 244, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 250, column 17>
 //   // proto:  void QLineF::translate(const QPointF & p);
 if (true) {
   auto f = [](QLineF flythis, const QPointF & arg1) {
@@ -310,7 +310,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF9translateERK7QPointF translate(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 224, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 230, column 35>
 //   // proto:  qreal QLineF::dx();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -320,7 +320,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2dxEv dx()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 206, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 212, column 29>
 //   // proto:  void QLineF::QLineF();
 if (true) {
   auto f = []() {
@@ -328,7 +328,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 215, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 221, column 37>
 //   // proto:  QPointF QLineF::p1();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -338,7 +338,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2p1Ev p1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 236, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 242, column 36>
 //   // proto:  QLineF QLineF::normalVector();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -348,7 +348,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF12normalVectorEv normalVector()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 258, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 264, column 28>
 //   // proto:  QLine QLineF::toLine();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -358,7 +358,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF6toLineEv toLine()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 243, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 249, column 37>
 //   // proto:  QPointF QLineF::pointAt(qreal t);
 if (true) {
   auto f = [](QLineF flythis, qreal arg1) {
@@ -368,7 +368,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF7pointAtEd pointAt(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 216, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 222, column 37>
 //   // proto:  QPointF QLineF::p2();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -378,7 +378,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2p2Ev p2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 222, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 228, column 35>
 //   // proto:  qreal QLineF::y2();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -388,7 +388,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2y2Ev y2()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 208, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 214, column 29>
 //   // proto:  void QLineF::QLineF(qreal x1, qreal y1, qreal x2, qreal y2);
 if (true) {
   auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
@@ -396,7 +396,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 231, column 35>
 //   // proto:  qreal QLineF::dy();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -406,7 +406,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2dyEv dy()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 213, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 219, column 27>
 //   // proto:  bool QLineF::isNull();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -416,7 +416,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 219, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>
 //   // proto:  qreal QLineF::y1();
 if (true) {
   auto f = [](QLineF flythis) {
@@ -426,7 +426,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF2y1Ev y1()
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 247, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 253, column 36>
 //   // proto:  QLineF QLineF::translated(const QPointF & p);
 if (true) {
   auto f = [](QLineF flythis, const QPointF & arg1) {
@@ -436,7 +436,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK6QLineF10translatedERK7QPointF translated(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 253, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 259, column 17>
 //   // proto:  void QLineF::setLine(qreal x1, qreal y1, qreal x2, qreal y2);
 if (true) {
   auto f = [](QLineF flythis, qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
@@ -446,7 +446,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN6QLineF7setLineEdddd setLine(qreal, qreal, qreal, qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 250, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 256, column 17>
 //   // proto:  void QLineF::setP1(const QPointF & p1);
 if (true) {
   auto f = [](QLineF flythis, const QPointF & arg1) {
@@ -476,7 +476,7 @@ int QLineF_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 53, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 59, column 34>
 //   // proto:  bool QLine::isNull();
 // _ZNK5QLine6isNullEv isNull()
 extern "C"
@@ -486,7 +486,7 @@ C_ZNK5QLine6isNullEv(void *qthis) {
   ((QLine*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 70, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 76, column 35>
 //   // proto:  QLine QLine::translated(const QPoint & p);
 // _ZNK5QLine10translatedERK6QPoint translated(const class QPoint &)
 extern "C"
@@ -497,7 +497,7 @@ const QPoint* arg1) {
   ((QLine*)qthis)->translated(*((const QPoint*)arg1));
   return new QLine(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 74, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 80, column 17>
 //   // proto:  void QLine::setP2(const QPoint & p2);
 // _ZN5QLine5setP2ERK6QPoint setP2(const class QPoint &)
 extern "C"
@@ -506,7 +506,7 @@ C_ZN5QLine5setP2ERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QLine*)qthis)->setP2(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 61, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 67, column 33>
 //   // proto:  int QLine::x2();
 // _ZNK5QLine2x2Ev x2()
 extern "C"
@@ -516,16 +516,17 @@ C_ZNK5QLine2x2Ev(void *qthis) {
   ((QLine*)qthis)->x2();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 50, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 56, column 29>
 //   // proto:  void QLine::QLine(const QPoint & pt1, const QPoint & pt2);
 extern "C"
 QLine*
 C_ZN5QLineC2ERK6QPointS2_(const QPoint* arg1,
 const QPoint* arg2) {
-  auto ret = new QLine(*((const QPoint*)arg1), *((const QPoint*)arg2));
+  auto ret = new QLine(*((const QPoint*)arg1),
+*((const QPoint*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 79, column 17>
 //   // proto:  void QLine::setP1(const QPoint & p1);
 // _ZN5QLine5setP1ERK6QPoint setP1(const class QPoint &)
 extern "C"
@@ -534,7 +535,7 @@ C_ZN5QLine5setP1ERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QLine*)qthis)->setP1(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 67, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 73, column 17>
 //   // proto:  void QLine::translate(const QPoint & p);
 // _ZN5QLine9translateERK6QPoint translate(const class QPoint &)
 extern "C"
@@ -543,7 +544,7 @@ C_ZN5QLine9translateERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QLine*)qthis)->translate(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 64, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 70, column 33>
 //   // proto:  int QLine::dx();
 // _ZNK5QLine2dxEv dx()
 extern "C"
@@ -553,7 +554,7 @@ C_ZNK5QLine2dxEv(void *qthis) {
   ((QLine*)qthis)->dx();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 62, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 33>
 //   // proto:  int QLine::y2();
 // _ZNK5QLine2y2Ev y2()
 extern "C"
@@ -563,7 +564,7 @@ C_ZNK5QLine2y2Ev(void *qthis) {
   ((QLine*)qthis)->y2();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 65, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 71, column 33>
 //   // proto:  int QLine::dy();
 // _ZNK5QLine2dyEv dy()
 extern "C"
@@ -573,7 +574,7 @@ C_ZNK5QLine2dyEv(void *qthis) {
   ((QLine*)qthis)->dy();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 59, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 65, column 33>
 //   // proto:  int QLine::y1();
 // _ZNK5QLine2y1Ev y1()
 extern "C"
@@ -583,7 +584,7 @@ C_ZNK5QLine2y1Ev(void *qthis) {
   ((QLine*)qthis)->y1();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 55, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 61, column 36>
 //   // proto:  QPoint QLine::p1();
 // _ZNK5QLine2p1Ev p1()
 extern "C"
@@ -593,7 +594,7 @@ C_ZNK5QLine2p1Ev(void *qthis) {
   ((QLine*)qthis)->p1();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 56, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 62, column 36>
 //   // proto:  QPoint QLine::p2();
 // _ZNK5QLine2p2Ev p2()
 extern "C"
@@ -603,7 +604,7 @@ C_ZNK5QLine2p2Ev(void *qthis) {
   ((QLine*)qthis)->p2();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 51, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 57, column 29>
 //   // proto:  void QLine::QLine(int x1, int y1, int x2, int y2);
 extern "C"
 QLine*
@@ -611,10 +612,13 @@ C_ZN5QLineC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QLine(arg1, arg2, arg3, arg4);
+  auto ret = new QLine(arg1,
+arg2,
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 74, column 17>
 //   // proto:  void QLine::translate(int dx, int dy);
 // _ZN5QLine9translateEii translate(int, int)
 extern "C"
@@ -625,7 +629,7 @@ int arg2) {
   ((QLine*)qthis)->translate(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 71, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 77, column 35>
 //   // proto:  QLine QLine::translated(int dx, int dy);
 // _ZNK5QLine10translatedEii translated(int, int)
 extern "C"
@@ -638,7 +642,7 @@ int arg2) {
 arg2);
   return new QLine(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 75, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 81, column 17>
 //   // proto:  void QLine::setPoints(const QPoint & p1, const QPoint & p2);
 // _ZN5QLine9setPointsERK6QPointS2_ setPoints(const class QPoint &, const class QPoint &)
 extern "C"
@@ -649,7 +653,7 @@ const QPoint* arg2) {
   ((QLine*)qthis)->setPoints(*((const QPoint*)arg1),
 *((const QPoint*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 76, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 82, column 17>
 //   // proto:  void QLine::setLine(int x1, int y1, int x2, int y2);
 // _ZN5QLine7setLineEiiii setLine(int, int, int, int)
 extern "C"
@@ -664,7 +668,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 58, column 33>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 64, column 33>
 //   // proto:  int QLine::x1();
 // _ZNK5QLine2x1Ev x1()
 extern "C"
@@ -674,7 +678,7 @@ C_ZNK5QLine2x1Ev(void *qthis) {
   ((QLine*)qthis)->x1();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 49, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 55, column 29>
 //   // proto:  void QLine::QLine();
 extern "C"
 QLine*
@@ -682,7 +686,7 @@ C_ZN5QLineC2Ev() {
   auto ret = new QLine();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 245, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 251, column 17>
 //   // proto:  void QLineF::translate(qreal dx, qreal dy);
 // _ZN6QLineF9translateEdd translate(qreal, qreal)
 extern "C"
@@ -693,7 +697,7 @@ qreal arg2) {
   ((QLineF*)qthis)->translate(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 252, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 258, column 17>
 //   // proto:  void QLineF::setPoints(const QPointF & p1, const QPointF & p2);
 // _ZN6QLineF9setPointsERK7QPointFS2_ setPoints(const class QPointF &, const class QPointF &)
 extern "C"
@@ -704,7 +708,7 @@ const QPointF* arg2) {
   ((QLineF*)qthis)->setPoints(*((const QPointF*)arg1),
 *((const QPointF*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 251, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 257, column 17>
 //   // proto:  void QLineF::setP2(const QPointF & p2);
 // _ZN6QLineF5setP2ERK7QPointF setP2(const class QPointF &)
 extern "C"
@@ -713,7 +717,7 @@ C_ZN6QLineF5setP2ERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QLineF*)qthis)->setP2(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 248, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 254, column 36>
 //   // proto:  QLineF QLineF::translated(qreal dx, qreal dy);
 // _ZNK6QLineF10translatedEdd translated(qreal, qreal)
 extern "C"
@@ -726,7 +730,7 @@ qreal arg2) {
 arg2);
   return new QLineF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 228, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 234, column 10>
 //   // proto:  void QLineF::setLength(qreal len);
 // _ZN6QLineF9setLengthEd setLength(qreal)
 extern "C"
@@ -735,7 +739,7 @@ C_ZN6QLineF9setLengthEd(void *qthis,
 qreal arg1) {
   ((QLineF*)qthis)->setLength(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 218, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 224, column 35>
 //   // proto:  qreal QLineF::x1();
 // _ZNK6QLineF2x1Ev x1()
 extern "C"
@@ -745,7 +749,7 @@ C_ZNK6QLineF2x1Ev(void *qthis) {
   ((QLineF*)qthis)->x1();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 230, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 236, column 11>
 //   // proto:  qreal QLineF::angle();
 // _ZNK6QLineF5angleEv angle()
 extern "C"
@@ -755,16 +759,17 @@ C_ZNK6QLineF5angleEv(void *qthis) {
   ((QLineF*)qthis)->angle();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 207, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 213, column 29>
 //   // proto:  void QLineF::QLineF(const QPointF & pt1, const QPointF & pt2);
 extern "C"
 QLineF*
 C_ZN6QLineFC2ERK7QPointFS2_(const QPointF* arg1,
 const QPointF* arg2) {
-  auto ret = new QLineF(*((const QPointF*)arg1), *((const QPointF*)arg2));
+  auto ret = new QLineF(*((const QPointF*)arg1),
+*((const QPointF*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 227, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 233, column 11>
 //   // proto:  qreal QLineF::length();
 // _ZNK6QLineF6lengthEv length()
 extern "C"
@@ -774,7 +779,7 @@ C_ZNK6QLineF6lengthEv(void *qthis) {
   ((QLineF*)qthis)->length();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 209, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 215, column 29>
 //   // proto:  void QLineF::QLineF(const QLine & line);
 extern "C"
 QLineF*
@@ -782,7 +787,7 @@ C_ZN6QLineFC2ERK5QLine(const QLine* arg1) {
   auto ret = new QLineF(*((const QLine*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 231, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 237, column 10>
 //   // proto:  void QLineF::setAngle(qreal angle);
 // _ZN6QLineF8setAngleEd setAngle(qreal)
 extern "C"
@@ -791,7 +796,7 @@ C_ZN6QLineF8setAngleEd(void *qthis,
 qreal arg1) {
   ((QLineF*)qthis)->setAngle(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 221, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 227, column 35>
 //   // proto:  qreal QLineF::x2();
 // _ZNK6QLineF2x2Ev x2()
 extern "C"
@@ -801,7 +806,7 @@ C_ZNK6QLineF2x2Ev(void *qthis) {
   ((QLineF*)qthis)->x2();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 244, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 250, column 17>
 //   // proto:  void QLineF::translate(const QPointF & p);
 // _ZN6QLineF9translateERK7QPointF translate(const class QPointF &)
 extern "C"
@@ -810,7 +815,7 @@ C_ZN6QLineF9translateERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QLineF*)qthis)->translate(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 224, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 230, column 35>
 //   // proto:  qreal QLineF::dx();
 // _ZNK6QLineF2dxEv dx()
 extern "C"
@@ -820,7 +825,7 @@ C_ZNK6QLineF2dxEv(void *qthis) {
   ((QLineF*)qthis)->dx();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 206, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 212, column 29>
 //   // proto:  void QLineF::QLineF();
 extern "C"
 QLineF*
@@ -828,7 +833,7 @@ C_ZN6QLineFC2Ev() {
   auto ret = new QLineF();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 215, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 221, column 37>
 //   // proto:  QPointF QLineF::p1();
 // _ZNK6QLineF2p1Ev p1()
 extern "C"
@@ -838,7 +843,7 @@ C_ZNK6QLineF2p1Ev(void *qthis) {
   ((QLineF*)qthis)->p1();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 236, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 242, column 36>
 //   // proto:  QLineF QLineF::normalVector();
 // _ZNK6QLineF12normalVectorEv normalVector()
 extern "C"
@@ -848,7 +853,7 @@ C_ZNK6QLineF12normalVectorEv(void *qthis) {
   ((QLineF*)qthis)->normalVector();
   return new QLineF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 258, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 264, column 28>
 //   // proto:  QLine QLineF::toLine();
 // _ZNK6QLineF6toLineEv toLine()
 extern "C"
@@ -858,7 +863,7 @@ C_ZNK6QLineF6toLineEv(void *qthis) {
   ((QLineF*)qthis)->toLine();
   return new QLine(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 243, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 249, column 37>
 //   // proto:  QPointF QLineF::pointAt(qreal t);
 // _ZNK6QLineF7pointAtEd pointAt(qreal)
 extern "C"
@@ -869,7 +874,7 @@ qreal arg1) {
   ((QLineF*)qthis)->pointAt(arg1);
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 216, column 37>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 222, column 37>
 //   // proto:  QPointF QLineF::p2();
 // _ZNK6QLineF2p2Ev p2()
 extern "C"
@@ -879,7 +884,7 @@ C_ZNK6QLineF2p2Ev(void *qthis) {
   ((QLineF*)qthis)->p2();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 222, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 228, column 35>
 //   // proto:  qreal QLineF::y2();
 // _ZNK6QLineF2y2Ev y2()
 extern "C"
@@ -889,7 +894,7 @@ C_ZNK6QLineF2y2Ev(void *qthis) {
   ((QLineF*)qthis)->y2();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 208, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 214, column 29>
 //   // proto:  void QLineF::QLineF(qreal x1, qreal y1, qreal x2, qreal y2);
 extern "C"
 QLineF*
@@ -897,10 +902,13 @@ C_ZN6QLineFC2Edddd(qreal arg1,
 qreal arg2,
 qreal arg3,
 qreal arg4) {
-  auto ret = new QLineF(arg1, arg2, arg3, arg4);
+  auto ret = new QLineF(arg1,
+arg2,
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 231, column 35>
 //   // proto:  qreal QLineF::dy();
 // _ZNK6QLineF2dyEv dy()
 extern "C"
@@ -910,7 +918,7 @@ C_ZNK6QLineF2dyEv(void *qthis) {
   ((QLineF*)qthis)->dy();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 239, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 245, column 19>
 //   // proto:  QLineF::IntersectType QLineF::intersect(const QLineF & l, QPointF * intersectionPoint);
 // _ZNK6QLineF9intersectERKS_P7QPointF intersect(const class QLineF &, class QPointF *)
 extern "C"
@@ -923,7 +931,7 @@ QPointF * arg2) {
 arg2);
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 235, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 241, column 12>
 //   // proto:  QLineF QLineF::unitVector();
 // _ZNK6QLineF10unitVectorEv unitVector()
 extern "C"
@@ -933,7 +941,7 @@ C_ZNK6QLineF10unitVectorEv(void *qthis) {
   ((QLineF*)qthis)->unitVector();
   return new QLineF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 213, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 219, column 27>
 //   // proto:  bool QLineF::isNull();
 // _ZNK6QLineF6isNullEv isNull()
 extern "C"
@@ -943,7 +951,7 @@ C_ZNK6QLineF6isNullEv(void *qthis) {
   ((QLineF*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 219, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 225, column 35>
 //   // proto:  qreal QLineF::y1();
 // _ZNK6QLineF2y1Ev y1()
 extern "C"
@@ -953,7 +961,7 @@ C_ZNK6QLineF2y1Ev(void *qthis) {
   ((QLineF*)qthis)->y1();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 233, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 239, column 11>
 //   // proto:  qreal QLineF::angleTo(const QLineF & l);
 // _ZNK6QLineF7angleToERKS_ angleTo(const class QLineF &)
 extern "C"
@@ -964,7 +972,7 @@ const QLineF* arg1) {
   ((QLineF*)qthis)->angleTo(*((const QLineF*)arg1));
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 247, column 36>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 253, column 36>
 //   // proto:  QLineF QLineF::translated(const QPointF & p);
 // _ZNK6QLineF10translatedERK7QPointF translated(const class QPointF &)
 extern "C"
@@ -975,7 +983,7 @@ const QPointF* arg1) {
   ((QLineF*)qthis)->translated(*((const QPointF*)arg1));
   return new QLineF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 253, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 259, column 17>
 //   // proto:  void QLineF::setLine(qreal x1, qreal y1, qreal x2, qreal y2);
 // _ZN6QLineF7setLineEdddd setLine(qreal, qreal, qreal, qreal)
 extern "C"
@@ -990,7 +998,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 211, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 217, column 19>
 //   // proto: static QLineF QLineF::fromPolar(qreal length, qreal angle);
 // _ZN6QLineF9fromPolarEdd fromPolar(qreal, qreal)
 extern "C"
@@ -1002,7 +1010,7 @@ qreal arg2) {
 arg2);
   return new QLineF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 250, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 256, column 17>
 //   // proto:  void QLineF::setP1(const QPointF & p1);
 // _ZN6QLineF5setP1ERK7QPointF setP1(const class QPointF &)
 extern "C"
@@ -1011,7 +1019,7 @@ C_ZN6QLineF5setP1ERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QLineF*)qthis)->setP1(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 241, column 11>
+// <SourceLocation file '/usr/include/qt/QtCore/qline.h', line 247, column 11>
 //   // proto:  qreal QLineF::angle(const QLineF & l);
 // _ZNK6QLineF5angleERKS_ angle(const class QLineF &)
 extern "C"

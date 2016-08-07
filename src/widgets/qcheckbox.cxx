@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qcheckbox.h
 // dst-file: /src/widgets/qcheckbox.cxx
 //
@@ -34,7 +34,7 @@ int QCheckBox_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 53, column 5>
 //   // proto:  const QMetaObject * QCheckBox::metaObject();
 // _ZNK9QCheckBox10metaObjectEv metaObject()
 extern "C"
@@ -44,7 +44,7 @@ C_ZNK9QCheckBox10metaObjectEv(void *qthis) {
   ((QCheckBox*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 57, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 63, column 11>
 //   // proto:  QSize QCheckBox::minimumSizeHint();
 // _ZNK9QCheckBox15minimumSizeHintEv minimumSizeHint()
 extern "C"
@@ -59,7 +59,7 @@ extern "C"
 void C_ZN9QCheckBoxD2Ev(void *qthis) {
   delete (QCheckBox*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 56, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 62, column 11>
 //   // proto:  QSize QCheckBox::sizeHint();
 // _ZNK9QCheckBox8sizeHintEv sizeHint()
 extern "C"
@@ -69,7 +69,7 @@ C_ZNK9QCheckBox8sizeHintEv(void *qthis) {
   ((QCheckBox*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 72, column 10>
 //   // proto:  void QCheckBox::stateChanged(int );
 // _ZN9QCheckBox12stateChangedEi stateChanged(int)
 extern "C"
@@ -78,7 +78,7 @@ C_ZN9QCheckBox12stateChangedEi(void *qthis,
 int arg1) {
   ((QCheckBox*)qthis)->stateChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 62, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 68, column 20>
 //   // proto:  Qt::CheckState QCheckBox::checkState();
 // _ZNK9QCheckBox10checkStateEv checkState()
 extern "C"
@@ -88,7 +88,7 @@ C_ZNK9QCheckBox10checkStateEv(void *qthis) {
   ((QCheckBox*)qthis)->checkState();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 69, column 10>
 //   // proto:  void QCheckBox::setCheckState(Qt::CheckState state);
 // _ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE setCheckState(Qt::CheckState)
 extern "C"
@@ -97,7 +97,7 @@ C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *qthis,
 Qt::CheckState* arg1) {
   ((QCheckBox*)qthis)->setCheckState(*((Qt::CheckState*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 65, column 10>
 //   // proto:  void QCheckBox::setTristate(bool y);
 // _ZN9QCheckBox11setTristateEb setTristate(_Bool)
 extern "C"
@@ -106,7 +106,7 @@ C_ZN9QCheckBox11setTristateEb(void *qthis,
 bool arg1) {
   ((QCheckBox*)qthis)->setTristate(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 58, column 14>
 //   // proto:  void QCheckBox::QCheckBox(QWidget * parent);
 extern "C"
 QCheckBox*
@@ -114,7 +114,7 @@ C_ZN9QCheckBoxC2EP7QWidget(QWidget * arg1) {
   auto ret = new QCheckBox(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 66, column 10>
 //   // proto:  bool QCheckBox::isTristate();
 // _ZNK9QCheckBox10isTristateEv isTristate()
 extern "C"
@@ -124,13 +124,14 @@ C_ZNK9QCheckBox10isTristateEv(void *qthis) {
   ((QCheckBox*)qthis)->isTristate();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 59, column 14>
 //   // proto:  void QCheckBox::QCheckBox(const QString & text, QWidget * parent);
 extern "C"
 QCheckBox*
 C_ZN9QCheckBoxC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QCheckBox(*((const QString*)arg1), arg2);
+  auto ret = new QCheckBox(*((const QString*)arg1),
+arg2);
   return ret;
 }
 // <= ext block end

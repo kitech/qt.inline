@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qframe.h
 // dst-file: /src/widgets/qframe.cxx
 //
@@ -34,7 +34,7 @@ int QFrame_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 107, column 10>
 //   // proto:  void QFrame::setFrameRect(const QRect & );
 // _ZN6QFrame12setFrameRectERK5QRect setFrameRect(const class QRect &)
 extern "C"
@@ -43,7 +43,7 @@ C_ZN6QFrame12setFrameRectERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QFrame*)qthis)->setFrameRect(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 94, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 100, column 9>
 //   // proto:  int QFrame::lineWidth();
 // _ZNK6QFrame9lineWidthEv lineWidth()
 extern "C"
@@ -53,7 +53,7 @@ C_ZNK6QFrame9lineWidthEv(void *qthis) {
   ((QFrame*)qthis)->lineWidth();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 67, column 10>
 //   // proto:  void QFrame::setFrameStyle(int );
 // _ZN6QFrame13setFrameStyleEi setFrameStyle(int)
 extern "C"
@@ -62,16 +62,17 @@ C_ZN6QFrame13setFrameStyleEi(void *qthis,
 int arg1) {
   ((QFrame*)qthis)->setFrameStyle(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 57, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 63, column 14>
 //   // proto:  void QFrame::QFrame(QWidget * parent, Qt::WindowFlags f);
 extern "C"
 QFrame*
 C_ZN6QFrameC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QFrame(arg1, *((Qt::WindowFlags*)arg2));
+  auto ret = new QFrame(arg1,
+*((Qt::WindowFlags*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 89, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 95, column 11>
 //   // proto:  QFrame::Shape QFrame::frameShape();
 // _ZNK6QFrame10frameShapeEv frameShape()
 extern "C"
@@ -81,7 +82,7 @@ C_ZNK6QFrame10frameShapeEv(void *qthis) {
   ((QFrame*)qthis)->frameShape();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 100, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 106, column 11>
 //   // proto:  QRect QFrame::frameRect();
 // _ZNK6QFrame9frameRectEv frameRect()
 extern "C"
@@ -91,7 +92,7 @@ C_ZNK6QFrame9frameRectEv(void *qthis) {
   ((QFrame*)qthis)->frameRect();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 65, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 71, column 11>
 //   // proto:  QSize QFrame::sizeHint();
 // _ZNK6QFrame8sizeHintEv sizeHint()
 extern "C"
@@ -101,7 +102,7 @@ C_ZNK6QFrame8sizeHintEv(void *qthis) {
   ((QFrame*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 60, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 66, column 9>
 //   // proto:  int QFrame::frameStyle();
 // _ZNK6QFrame10frameStyleEv frameStyle()
 extern "C"
@@ -111,7 +112,7 @@ C_ZNK6QFrame10frameStyleEv(void *qthis) {
   ((QFrame*)qthis)->frameStyle();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 97, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 103, column 9>
 //   // proto:  int QFrame::midLineWidth();
 // _ZNK6QFrame12midLineWidthEv midLineWidth()
 extern "C"
@@ -121,7 +122,7 @@ C_ZNK6QFrame12midLineWidthEv(void *qthis) {
   ((QFrame*)qthis)->midLineWidth();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 95, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 101, column 10>
 //   // proto:  void QFrame::setLineWidth(int );
 // _ZN6QFrame12setLineWidthEi setLineWidth(int)
 extern "C"
@@ -130,7 +131,7 @@ C_ZN6QFrame12setLineWidthEi(void *qthis,
 int arg1) {
   ((QFrame*)qthis)->setLineWidth(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 98, column 10>
 //   // proto:  void QFrame::setFrameShadow(QFrame::Shadow );
 // _ZN6QFrame14setFrameShadowENS_6ShadowE setFrameShadow(enum QFrame::Shadow)
 extern "C"
@@ -139,7 +140,7 @@ C_ZN6QFrame14setFrameShadowENS_6ShadowE(void *qthis,
 QFrame::Shadow arg1) {
   ((QFrame*)qthis)->setFrameShadow(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 98, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 104, column 10>
 //   // proto:  void QFrame::setMidLineWidth(int );
 // _ZN6QFrame15setMidLineWidthEi setMidLineWidth(int)
 extern "C"
@@ -148,7 +149,7 @@ C_ZN6QFrame15setMidLineWidthEi(void *qthis,
 int arg1) {
   ((QFrame*)qthis)->setMidLineWidth(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 53, column 5>
 //   // proto:  const QMetaObject * QFrame::metaObject();
 // _ZNK6QFrame10metaObjectEv metaObject()
 extern "C"
@@ -158,7 +159,7 @@ C_ZNK6QFrame10metaObjectEv(void *qthis) {
   ((QFrame*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 63, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 69, column 9>
 //   // proto:  int QFrame::frameWidth();
 // _ZNK6QFrame10frameWidthEv frameWidth()
 extern "C"
@@ -168,7 +169,7 @@ C_ZNK6QFrame10frameWidthEv(void *qthis) {
   ((QFrame*)qthis)->frameWidth();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 91, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 97, column 12>
 //   // proto:  QFrame::Shadow QFrame::frameShadow();
 // _ZNK6QFrame11frameShadowEv frameShadow()
 extern "C"
@@ -183,7 +184,7 @@ extern "C"
 void C_ZN6QFrameD2Ev(void *qthis) {
   delete (QFrame*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qframe.h', line 96, column 10>
 //   // proto:  void QFrame::setFrameShape(QFrame::Shape );
 // _ZN6QFrame13setFrameShapeENS_5ShapeE setFrameShape(enum QFrame::Shape)
 extern "C"

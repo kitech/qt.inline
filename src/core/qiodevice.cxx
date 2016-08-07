@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qiodevice.h
 // dst-file: /src/core/qiodevice.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qiodevice_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 116, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 134, column 19>
 //   // proto:  qint64 QIODevice::write(const QByteArray & data);
 if (true) {
   auto f = [](const QByteArray & arg1) {
@@ -44,7 +44,27 @@ int QIODevice_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 125, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 154, column 10>
+//   // proto:  void QIODevice::channelBytesWritten(int channel, qint64 bytes);
+// _ZN9QIODevice19channelBytesWrittenEix channelBytesWritten(int, qint64)
+extern "C"
+void
+C_ZN9QIODevice19channelBytesWrittenEix(void *qthis,
+int arg1,
+qint64 arg2) {
+  ((QIODevice*)qthis)->channelBytesWritten(arg1,
+arg2);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 104, column 10>
+//   // proto:  void QIODevice::setCurrentWriteChannel(int channel);
+// _ZN9QIODevice22setCurrentWriteChannelEi setCurrentWriteChannel(int)
+extern "C"
+void
+C_ZN9QIODevice22setCurrentWriteChannelEi(void *qthis,
+int arg1) {
+  ((QIODevice*)qthis)->setCurrentWriteChannel(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 143, column 10>
 //   // proto:  void QIODevice::ungetChar(char c);
 // _ZN9QIODevice9ungetCharEc ungetChar(char)
 extern "C"
@@ -53,7 +73,7 @@ C_ZN9QIODevice9ungetCharEc(void *qthis,
 char arg1) {
   ((QIODevice*)qthis)->ungetChar(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 129, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 147, column 13>
 //   // proto:  QString QIODevice::errorString();
 // _ZNK9QIODevice11errorStringEv errorString()
 extern "C"
@@ -63,7 +83,27 @@ C_ZNK9QIODevice11errorStringEv(void *qthis) {
   ((QIODevice*)qthis)->errorString();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 116, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 101, column 9>
+//   // proto:  int QIODevice::currentReadChannel();
+// _ZNK9QIODevice18currentReadChannelEv currentReadChannel()
+extern "C"
+int
+C_ZNK9QIODevice18currentReadChannelEv(void *qthis) {
+  auto ret =
+  ((QIODevice*)qthis)->currentReadChannel();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 100, column 9>
+//   // proto:  int QIODevice::writeChannelCount();
+// _ZNK9QIODevice17writeChannelCountEv writeChannelCount()
+extern "C"
+int
+C_ZNK9QIODevice17writeChannelCountEv(void *qthis) {
+  auto ret =
+  ((QIODevice*)qthis)->writeChannelCount();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 134, column 19>
 //   // proto:  qint64 QIODevice::write(const QByteArray & data);
 // _ZN9QIODevice5writeERK10QByteArray write(const class QByteArray &)
 extern "C"
@@ -74,7 +114,7 @@ const QByteArray* arg1) {
   ((QIODevice*)qthis)->write(*((const QByteArray*)arg1));
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 115, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 133, column 12>
 //   // proto:  qint64 QIODevice::write(const char * data);
 // _ZN9QIODevice5writeEPKc write(const char *)
 extern "C"
@@ -85,7 +125,7 @@ const char * arg1) {
   ((QIODevice*)qthis)->write(arg1);
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 95, column 10>
 //   // proto:  bool QIODevice::isReadable();
 // _ZNK9QIODevice10isReadableEv isReadable()
 extern "C"
@@ -95,7 +135,7 @@ C_ZNK9QIODevice10isReadableEv(void *qthis) {
   ((QIODevice*)qthis)->isReadable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 133, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 151, column 10>
 //   // proto:  void QIODevice::readyRead();
 // _ZN9QIODevice9readyReadEv readyRead()
 extern "C"
@@ -103,7 +143,15 @@ void
 C_ZN9QIODevice9readyReadEv(void *qthis) {
   ((QIODevice*)qthis)->readyRead();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 110, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 127, column 10>
+//   // proto:  void QIODevice::startTransaction();
+// _ZN9QIODevice16startTransactionEv startTransaction()
+extern "C"
+void
+C_ZN9QIODevice16startTransactionEv(void *qthis) {
+  ((QIODevice*)qthis)->startTransaction();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 123, column 12>
 //   // proto:  qint64 QIODevice::readLine(char * data, qint64 maxlen);
 // _ZN9QIODevice8readLineEPcx readLine(char *, qint64)
 extern "C"
@@ -116,7 +164,7 @@ qint64 arg2) {
 arg2);
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 83, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 89, column 14>
 //   // proto:  OpenMode QIODevice::openMode();
 // _ZNK9QIODevice8openModeEv openMode()
 extern "C"
@@ -126,7 +174,7 @@ C_ZNK9QIODevice8openModeEv(void *qthis) {
   ((QIODevice*)qthis)->openMode();
   return new QFlags<QIODevice::OpenModeFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 111, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 124, column 16>
 //   // proto:  QByteArray QIODevice::readLine(qint64 maxlen);
 // _ZN9QIODevice8readLineEx readLine(qint64)
 extern "C"
@@ -137,7 +185,7 @@ qint64 arg1) {
   ((QIODevice*)qthis)->readLine(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 122, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 140, column 18>
 //   // proto:  bool QIODevice::waitForReadyRead(int msecs);
 // _ZN9QIODevice16waitForReadyReadEi waitForReadyRead(int)
 extern "C"
@@ -148,7 +196,7 @@ int arg1) {
   ((QIODevice*)qthis)->waitForReadyRead(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 135, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 155, column 10>
 //   // proto:  void QIODevice::aboutToClose();
 // _ZN9QIODevice12aboutToCloseEv aboutToClose()
 extern "C"
@@ -156,7 +204,15 @@ void
 C_ZN9QIODevice12aboutToCloseEv(void *qthis) {
   ((QIODevice*)qthis)->aboutToClose();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 99, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 129, column 10>
+//   // proto:  void QIODevice::rollbackTransaction();
+// _ZN9QIODevice19rollbackTransactionEv rollbackTransaction()
+extern "C"
+void
+C_ZN9QIODevice19rollbackTransactionEv(void *qthis) {
+  ((QIODevice*)qthis)->rollbackTransaction();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 112, column 20>
 //   // proto:  qint64 QIODevice::size();
 // _ZNK9QIODevice4sizeEv size()
 extern "C"
@@ -166,7 +222,27 @@ C_ZNK9QIODevice4sizeEv(void *qthis) {
   ((QIODevice*)qthis)->size();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 127, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 102, column 10>
+//   // proto:  void QIODevice::setCurrentReadChannel(int channel);
+// _ZN9QIODevice21setCurrentReadChannelEi setCurrentReadChannel(int)
+extern "C"
+void
+C_ZN9QIODevice21setCurrentReadChannelEi(void *qthis,
+int arg1) {
+  ((QIODevice*)qthis)->setCurrentReadChannel(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 121, column 16>
+//   // proto:  QByteArray QIODevice::read(qint64 maxlen);
+// _ZN9QIODevice4readEx read(qint64)
+extern "C"
+QByteArray*
+C_ZN9QIODevice4readEx(void *qthis,
+qint64 arg1) {
+  auto ret =
+  ((QIODevice*)qthis)->read(arg1);
+  return new QByteArray(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 145, column 10>
 //   // proto:  bool QIODevice::getChar(char * c);
 // _ZN9QIODevice7getCharEPc getChar(char *)
 extern "C"
@@ -177,7 +253,7 @@ char * arg1) {
   ((QIODevice*)qthis)->getChar(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 144, column 10>
 //   // proto:  bool QIODevice::putChar(char c);
 // _ZN9QIODevice7putCharEc putChar(char)
 extern "C"
@@ -188,7 +264,7 @@ char arg1) {
   ((QIODevice*)qthis)->putChar(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 92, column 10>
 //   // proto:  bool QIODevice::isTextModeEnabled();
 // _ZNK9QIODevice17isTextModeEnabledEv isTextModeEnabled()
 extern "C"
@@ -198,7 +274,7 @@ C_ZNK9QIODevice17isTextModeEnabledEv(void *qthis) {
   ((QIODevice*)qthis)->isTextModeEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 91, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 97, column 18>
 //   // proto:  bool QIODevice::isSequential();
 // _ZNK9QIODevice12isSequentialEv isSequential()
 extern "C"
@@ -208,7 +284,7 @@ C_ZNK9QIODevice12isSequentialEv(void *qthis) {
   ((QIODevice*)qthis)->isSequential();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 104, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 117, column 20>
 //   // proto:  qint64 QIODevice::bytesAvailable();
 // _ZNK9QIODevice14bytesAvailableEv bytesAvailable()
 extern "C"
@@ -218,7 +294,7 @@ C_ZNK9QIODevice14bytesAvailableEv(void *qthis) {
   ((QIODevice*)qthis)->bytesAvailable();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 114, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 132, column 12>
 //   // proto:  qint64 QIODevice::write(const char * data, qint64 len);
 // _ZN9QIODevice5writeEPKcx write(const char *, qint64)
 extern "C"
@@ -231,7 +307,15 @@ qint64 arg2) {
 arg2);
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 94, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 128, column 10>
+//   // proto:  void QIODevice::commitTransaction();
+// _ZN9QIODevice17commitTransactionEv commitTransaction()
+extern "C"
+void
+C_ZN9QIODevice17commitTransactionEv(void *qthis) {
+  ((QIODevice*)qthis)->commitTransaction();
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 107, column 18>
 //   // proto:  void QIODevice::close();
 // _ZN9QIODevice5closeEv close()
 extern "C"
@@ -239,7 +323,7 @@ void
 C_ZN9QIODevice5closeEv(void *qthis) {
   ((QIODevice*)qthis)->close();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 109, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 122, column 16>
 //   // proto:  QByteArray QIODevice::readAll();
 // _ZN9QIODevice7readAllEv readAll()
 extern "C"
@@ -249,7 +333,16 @@ C_ZN9QIODevice7readAllEv(void *qthis) {
   ((QIODevice*)qthis)->readAll();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 101, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 152, column 10>
+//   // proto:  void QIODevice::channelReadyRead(int channel);
+// _ZN9QIODevice16channelReadyReadEi channelReadyRead(int)
+extern "C"
+void
+C_ZN9QIODevice16channelReadyReadEi(void *qthis,
+int arg1) {
+  ((QIODevice*)qthis)->channelReadyRead(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 114, column 18>
 //   // proto:  bool QIODevice::atEnd();
 // _ZNK9QIODevice5atEndEv atEnd()
 extern "C"
@@ -259,7 +352,27 @@ C_ZNK9QIODevice5atEndEv(void *qthis) {
   ((QIODevice*)qthis)->atEnd();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 100, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 130, column 10>
+//   // proto:  bool QIODevice::isTransactionStarted();
+// _ZNK9QIODevice20isTransactionStartedEv isTransactionStarted()
+extern "C"
+bool
+C_ZNK9QIODevice20isTransactionStartedEv(void *qthis) {
+  auto ret =
+  ((QIODevice*)qthis)->isTransactionStarted();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 103, column 9>
+//   // proto:  int QIODevice::currentWriteChannel();
+// _ZNK9QIODevice19currentWriteChannelEv currentWriteChannel()
+extern "C"
+int
+C_ZNK9QIODevice19currentWriteChannelEv(void *qthis) {
+  auto ret =
+  ((QIODevice*)qthis)->currentWriteChannel();
+  return ret; // 0 TypeKind.INT
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 113, column 18>
 //   // proto:  bool QIODevice::seek(qint64 pos);
 // _ZN9QIODevice4seekEx seek(qint64)
 extern "C"
@@ -270,7 +383,7 @@ qint64 arg1) {
   ((QIODevice*)qthis)->seek(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 98, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 111, column 20>
 //   // proto:  qint64 QIODevice::pos();
 // _ZNK9QIODevice3posEv pos()
 extern "C"
@@ -280,7 +393,7 @@ C_ZNK9QIODevice3posEv(void *qthis) {
   ((QIODevice*)qthis)->pos();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 136, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 156, column 10>
 //   // proto:  void QIODevice::readChannelFinished();
 // _ZN9QIODevice19readChannelFinishedEv readChannelFinished()
 extern "C"
@@ -288,18 +401,17 @@ void
 C_ZN9QIODevice19readChannelFinishedEv(void *qthis) {
   ((QIODevice*)qthis)->readChannelFinished();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 108, column 16>
-//   // proto:  QByteArray QIODevice::read(qint64 maxlen);
-// _ZN9QIODevice4readEx read(qint64)
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 99, column 9>
+//   // proto:  int QIODevice::readChannelCount();
+// _ZNK9QIODevice16readChannelCountEv readChannelCount()
 extern "C"
-QByteArray*
-C_ZN9QIODevice4readEx(void *qthis,
-qint64 arg1) {
+int
+C_ZNK9QIODevice16readChannelCountEv(void *qthis) {
   auto ret =
-  ((QIODevice*)qthis)->read(arg1);
-  return new QByteArray(ret); // 5
+  ((QIODevice*)qthis)->readChannelCount();
+  return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 93, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 106, column 18>
 //   // proto:  bool QIODevice::open(OpenMode mode);
 // _ZN9QIODevice4openE6QFlagsINS_12OpenModeFlagEE open(OpenMode)
 extern "C"
@@ -310,7 +422,7 @@ QIODevice::OpenMode arg1) {
   ((QIODevice*)qthis)->open(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 119, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 137, column 12>
 //   // proto:  qint64 QIODevice::peek(char * data, qint64 maxlen);
 // _ZN9QIODevice4peekEPcx peek(char *, qint64)
 extern "C"
@@ -323,7 +435,7 @@ qint64 arg2) {
 arg2);
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 107, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 120, column 12>
 //   // proto:  qint64 QIODevice::read(char * data, qint64 maxlen);
 // _ZN9QIODevice4readEPcx read(char *, qint64)
 extern "C"
@@ -336,7 +448,7 @@ qint64 arg2) {
 arg2);
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 134, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 153, column 10>
 //   // proto:  void QIODevice::bytesWritten(qint64 bytes);
 // _ZN9QIODevice12bytesWrittenEx bytesWritten(qint64)
 extern "C"
@@ -345,7 +457,7 @@ C_ZN9QIODevice12bytesWrittenEx(void *qthis,
 qint64 arg1) {
   ((QIODevice*)qthis)->bytesWritten(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 123, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 141, column 18>
 //   // proto:  bool QIODevice::waitForBytesWritten(int msecs);
 // _ZN9QIODevice19waitForBytesWrittenEi waitForBytesWritten(int)
 extern "C"
@@ -356,7 +468,7 @@ int arg1) {
   ((QIODevice*)qthis)->waitForBytesWritten(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 105, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 118, column 20>
 //   // proto:  qint64 QIODevice::bytesToWrite();
 // _ZNK9QIODevice12bytesToWriteEv bytesToWrite()
 extern "C"
@@ -366,7 +478,7 @@ C_ZNK9QIODevice12bytesToWriteEv(void *qthis) {
   ((QIODevice*)qthis)->bytesToWrite();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 102, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 115, column 18>
 //   // proto:  bool QIODevice::reset();
 // _ZN9QIODevice5resetEv reset()
 extern "C"
@@ -376,7 +488,7 @@ C_ZN9QIODevice5resetEv(void *qthis) {
   ((QIODevice*)qthis)->reset();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 96, column 10>
 //   // proto:  bool QIODevice::isWritable();
 // _ZNK9QIODevice10isWritableEv isWritable()
 extern "C"
@@ -386,7 +498,7 @@ C_ZNK9QIODevice10isWritableEv(void *qthis) {
   ((QIODevice*)qthis)->isWritable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 120, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 138, column 16>
 //   // proto:  QByteArray QIODevice::peek(qint64 maxlen);
 // _ZN9QIODevice4peekEx peek(qint64)
 extern "C"
@@ -397,14 +509,14 @@ qint64 arg1) {
   ((QIODevice*)qthis)->peek(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 79, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 85, column 14>
 //   // proto:  void QIODevice::QIODevice(QObject * parent);
 extern "C"
 QIODevice*
 C_ZN9QIODeviceC2EP7QObject(QObject * arg1) {
   // auto ret = new QIODevice(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 62, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 68, column 5>
 //   // proto:  const QMetaObject * QIODevice::metaObject();
 // _ZNK9QIODevice10metaObjectEv metaObject()
 extern "C"
@@ -414,7 +526,7 @@ C_ZNK9QIODevice10metaObjectEv(void *qthis) {
   ((QIODevice*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 91, column 10>
 //   // proto:  void QIODevice::setTextModeEnabled(bool enabled);
 // _ZN9QIODevice18setTextModeEnabledEb setTextModeEnabled(_Bool)
 extern "C"
@@ -423,14 +535,14 @@ C_ZN9QIODevice18setTextModeEnabledEb(void *qthis,
 bool arg1) {
   ((QIODevice*)qthis)->setTextModeEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 77, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 83, column 5>
 //   // proto:  void QIODevice::QIODevice();
 extern "C"
 QIODevice*
 C_ZN9QIODeviceC2Ev() {
   // auto ret = new QIODevice();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 94, column 10>
 //   // proto:  bool QIODevice::isOpen();
 // _ZNK9QIODevice6isOpenEv isOpen()
 extern "C"
@@ -440,7 +552,7 @@ C_ZNK9QIODevice6isOpenEv(void *qthis) {
   ((QIODevice*)qthis)->isOpen();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 112, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qiodevice.h', line 125, column 18>
 //   // proto:  bool QIODevice::canReadLine();
 // _ZNK9QIODevice11canReadLineEv canReadLine()
 extern "C"
@@ -471,20 +583,30 @@ public slots:
 public:
   void (*slot_func__ZN9QIODevice12bytesWrittenEx)(void* rsfptr, qint64 arg0) = NULL;
 public slots:
+  // readChannelFinished()
+  void slot_proxy_func__ZN9QIODevice19readChannelFinishedEv();
+public:
+  void (*slot_func__ZN9QIODevice19readChannelFinishedEv)(void* rsfptr) = NULL;
+public slots:
   // aboutToClose()
   void slot_proxy_func__ZN9QIODevice12aboutToCloseEv();
 public:
   void (*slot_func__ZN9QIODevice12aboutToCloseEv)(void* rsfptr) = NULL;
 public slots:
+  // channelReadyRead(int)
+  void slot_proxy_func__ZN9QIODevice16channelReadyReadEi(int arg0);
+public:
+  void (*slot_func__ZN9QIODevice16channelReadyReadEi)(void* rsfptr, int arg0) = NULL;
+public slots:
+  // channelBytesWritten(int, qint64)
+  void slot_proxy_func__ZN9QIODevice19channelBytesWrittenEix(int arg0, qint64 arg1);
+public:
+  void (*slot_func__ZN9QIODevice19channelBytesWrittenEix)(void* rsfptr, int arg0, qint64 arg1) = NULL;
+public slots:
   // readyRead()
   void slot_proxy_func__ZN9QIODevice9readyReadEv();
 public:
   void (*slot_func__ZN9QIODevice9readyReadEv)(void* rsfptr) = NULL;
-public slots:
-  // readChannelFinished()
-  void slot_proxy_func__ZN9QIODevice19readChannelFinishedEv();
-public:
-  void (*slot_func__ZN9QIODevice19readChannelFinishedEv)(void* rsfptr) = NULL;
 public: void* rsfptr = NULL;
 };
 #include "src/core/qiodevice.moc"
@@ -516,6 +638,26 @@ void QIODevice_SlotProxy_disconnect__ZN9QIODevice12bytesWrittenEx(QIODevice_Slot
   delete that;
 }
 
+void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice19readChannelFinishedEv() {
+  if (this->slot_func__ZN9QIODevice19readChannelFinishedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN9QIODevice19readChannelFinishedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QIODevice_SlotProxy_connect__ZN9QIODevice19readChannelFinishedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QIODevice_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QIODevice19readChannelFinishedEv = (decltype(that->slot_func__ZN9QIODevice19readChannelFinishedEv))ffifptr;
+  QObject::connect((QIODevice*)sender, SIGNAL(readChannelFinished()), that, SLOT(slot_proxy_func__ZN9QIODevice19readChannelFinishedEv()));
+  return that;
+}
+extern "C"
+void QIODevice_SlotProxy_disconnect__ZN9QIODevice19readChannelFinishedEv(QIODevice_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice12aboutToCloseEv() {
   if (this->slot_func__ZN9QIODevice12aboutToCloseEv != NULL) {
     // do smth...
@@ -536,6 +678,46 @@ void QIODevice_SlotProxy_disconnect__ZN9QIODevice12aboutToCloseEv(QIODevice_Slot
   delete that;
 }
 
+void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice16channelReadyReadEi(int arg0) {
+  if (this->slot_func__ZN9QIODevice16channelReadyReadEi != NULL) {
+    // do smth...
+    this->slot_func__ZN9QIODevice16channelReadyReadEi(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QIODevice_SlotProxy_connect__ZN9QIODevice16channelReadyReadEi(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QIODevice_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QIODevice16channelReadyReadEi = (decltype(that->slot_func__ZN9QIODevice16channelReadyReadEi))ffifptr;
+  QObject::connect((QIODevice*)sender, SIGNAL(channelReadyRead(int)), that, SLOT(slot_proxy_func__ZN9QIODevice16channelReadyReadEi(int arg0)));
+  return that;
+}
+extern "C"
+void QIODevice_SlotProxy_disconnect__ZN9QIODevice16channelReadyReadEi(QIODevice_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice19channelBytesWrittenEix(int arg0, qint64 arg1) {
+  if (this->slot_func__ZN9QIODevice19channelBytesWrittenEix != NULL) {
+    // do smth...
+    this->slot_func__ZN9QIODevice19channelBytesWrittenEix(this->rsfptr, arg0, arg1);
+  }
+}
+extern "C"
+void* QIODevice_SlotProxy_connect__ZN9QIODevice19channelBytesWrittenEix(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QIODevice_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN9QIODevice19channelBytesWrittenEix = (decltype(that->slot_func__ZN9QIODevice19channelBytesWrittenEix))ffifptr;
+  QObject::connect((QIODevice*)sender, SIGNAL(channelBytesWritten(int, qint64)), that, SLOT(slot_proxy_func__ZN9QIODevice19channelBytesWrittenEix(int arg0, qint64 arg1)));
+  return that;
+}
+extern "C"
+void QIODevice_SlotProxy_disconnect__ZN9QIODevice19channelBytesWrittenEix(QIODevice_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice9readyReadEv() {
   if (this->slot_func__ZN9QIODevice9readyReadEv != NULL) {
     // do smth...
@@ -552,26 +734,6 @@ void* QIODevice_SlotProxy_connect__ZN9QIODevice9readyReadEv(QObject* sender, voi
 }
 extern "C"
 void QIODevice_SlotProxy_disconnect__ZN9QIODevice9readyReadEv(QIODevice_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QIODevice_SlotProxy::slot_proxy_func__ZN9QIODevice19readChannelFinishedEv() {
-  if (this->slot_func__ZN9QIODevice19readChannelFinishedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN9QIODevice19readChannelFinishedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QIODevice_SlotProxy_connect__ZN9QIODevice19readChannelFinishedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QIODevice_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QIODevice19readChannelFinishedEv = (decltype(that->slot_func__ZN9QIODevice19readChannelFinishedEv))ffifptr;
-  QObject::connect((QIODevice*)sender, SIGNAL(readChannelFinished()), that, SLOT(slot_proxy_func__ZN9QIODevice19readChannelFinishedEv()));
-  return that;
-}
-extern "C"
-void QIODevice_SlotProxy_disconnect__ZN9QIODevice19readChannelFinishedEv(QIODevice_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

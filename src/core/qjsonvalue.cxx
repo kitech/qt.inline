@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qjsonvalue.h
 // dst-file: /src/core/qjsonvalue.cxx
 //
@@ -22,7 +22,7 @@
 
 // main block begin =>
 void __keep_qjsonvalue_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 203, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 210, column 5>
 //   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonArray * array, int idx);
 if (true) {
   auto f = [](QJsonArray * arg1, int arg2) {
@@ -30,7 +30,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 205, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 212, column 5>
 //   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonObject * object, int idx);
 if (true) {
   auto f = [](QJsonObject * arg1, int arg2) {
@@ -38,7 +38,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 192, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 199, column 14>
 //   // proto:  void QJsonValuePtr::QJsonValuePtr(const QJsonValue & val);
 if (true) {
   auto f = [](const QJsonValue & arg1) {
@@ -46,7 +46,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 95, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 101, column 17>
 //   // proto:  bool QJsonValue::isDouble();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -56,7 +56,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue8isDoubleEv isDouble()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 97, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 103, column 17>
 //   // proto:  bool QJsonValue::isArray();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -66,7 +66,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue7isArrayEv isArray()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 78, column 31>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 84, column 31>
 //   // proto:  void QJsonValue::QJsonValue(const char * s);
 if (true) {
   auto f = [](const char * arg1) {
@@ -74,7 +74,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 104, column 17>
 //   // proto:  bool QJsonValue::isObject();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -84,7 +84,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue8isObjectEv isObject()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 94, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 100, column 17>
 //   // proto:  bool QJsonValue::isBool();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -94,7 +94,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue6isBoolEv isBool()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 99, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 105, column 17>
 //   // proto:  bool QJsonValue::isUndefined();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -104,7 +104,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue11isUndefinedEv isUndefined()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 93, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 99, column 17>
 //   // proto:  bool QJsonValue::isNull();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -114,7 +114,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 102, column 17>
 //   // proto:  bool QJsonValue::isString();
 if (true) {
   auto f = [](QJsonValue flythis) {
@@ -124,7 +124,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK10QJsonValue8isStringEv isString()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 152, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 159, column 17>
 //   // proto:  bool QJsonValueRef::isBool();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -134,7 +134,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef6isBoolEv isBool()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 153, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 160, column 17>
 //   // proto:  bool QJsonValueRef::isDouble();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -144,7 +144,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8isDoubleEv isDouble()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 161, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 168, column 19>
 //   // proto:  double QJsonValueRef::toDouble();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -154,7 +154,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8toDoubleEv toDouble()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 167, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 174, column 17>
 //   // proto:  bool QJsonValueRef::toBool(bool defaultValue);
 if (true) {
   auto f = [](QJsonValueRef flythis, bool arg1) {
@@ -164,7 +164,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef6toBoolEb toBool(_Bool)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 169, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 176, column 19>
 //   // proto:  double QJsonValueRef::toDouble(double defaultValue);
 if (true) {
   auto f = [](QJsonValueRef flythis, double arg1) {
@@ -174,7 +174,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8toDoubleEd toDouble(double)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 159, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 166, column 17>
 //   // proto:  bool QJsonValueRef::toBool();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -184,7 +184,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef6toBoolEv toBool()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 170, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 177, column 20>
 //   // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
 if (true) {
   auto f = [](QJsonValueRef flythis, const QString & arg1) {
@@ -194,7 +194,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8toStringERK7QString toString(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 156, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 163, column 17>
 //   // proto:  bool QJsonValueRef::isObject();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -204,7 +204,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8isObjectEv isObject()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 140, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 147, column 5>
 //   // proto:  void QJsonValueRef::QJsonValueRef(QJsonArray * array, int idx);
 if (true) {
   auto f = [](QJsonArray * arg1, int arg2) {
@@ -212,7 +212,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 154, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 161, column 17>
 //   // proto:  bool QJsonValueRef::isString();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -222,7 +222,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8isStringEv isString()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 142, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 149, column 5>
 //   // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
 if (true) {
   auto f = [](QJsonObject * arg1, int arg2) {
@@ -230,7 +230,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 162, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 169, column 20>
 //   // proto:  QString QJsonValueRef::toString();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -240,7 +240,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef8toStringEv toString()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 168, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 175, column 16>
 //   // proto:  int QJsonValueRef::toInt(int defaultValue);
 if (true) {
   auto f = [](QJsonValueRef flythis, int arg1) {
@@ -250,7 +250,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef5toIntEi toInt(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 155, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 162, column 17>
 //   // proto:  bool QJsonValueRef::isArray();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -260,7 +260,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef7isArrayEv isArray()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 151, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 158, column 17>
 //   // proto:  bool QJsonValueRef::isNull();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -270,7 +270,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 150, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 157, column 29>
 //   // proto:  QJsonValue::Type QJsonValueRef::type();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -280,7 +280,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef4typeEv type()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 160, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 167, column 16>
 //   // proto:  int QJsonValueRef::toInt();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -290,7 +290,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QJsonValueRef5toIntEv toInt()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 157, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 164, column 17>
 //   // proto:  bool QJsonValueRef::isUndefined();
 if (true) {
   auto f = [](QJsonValueRef flythis) {
@@ -332,25 +332,27 @@ int QJsonValueRef_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 203, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 210, column 5>
 //   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonArray * array, int idx);
 extern "C"
 QJsonValueRefPtr*
 C_ZN16QJsonValueRefPtrC2EP10QJsonArrayi(QJsonArray * arg1,
 int arg2) {
-  auto ret = new QJsonValueRefPtr(arg1, arg2);
+  auto ret = new QJsonValueRefPtr(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 205, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 212, column 5>
 //   // proto:  void QJsonValueRefPtr::QJsonValueRefPtr(QJsonObject * object, int idx);
 extern "C"
 QJsonValueRefPtr*
 C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * arg1,
 int arg2) {
-  auto ret = new QJsonValueRefPtr(arg1, arg2);
+  auto ret = new QJsonValueRefPtr(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 192, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 199, column 14>
 //   // proto:  void QJsonValuePtr::QJsonValuePtr(const QJsonValue & val);
 extern "C"
 QJsonValuePtr*
@@ -358,7 +360,7 @@ C_ZN13QJsonValuePtrC2ERK10QJsonValue(const QJsonValue* arg1) {
   auto ret = new QJsonValuePtr(*((const QJsonValue*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 107, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 114, column 17>
 //   // proto:  QJsonObject QJsonValue::toObject();
 // _ZNK10QJsonValue8toObjectEv toObject()
 extern "C"
@@ -368,7 +370,7 @@ C_ZNK10QJsonValue8toObjectEv(void *qthis) {
   ((QJsonValue*)qthis)->toObject();
   return new QJsonObject(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 70, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 76, column 5>
 //   // proto:  void QJsonValue::QJsonValue(QJsonValue::Type );
 extern "C"
 QJsonValue*
@@ -376,7 +378,7 @@ C_ZN10QJsonValueC2ENS_4TypeE(QJsonValue::Type arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 106, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 113, column 16>
 //   // proto:  QJsonArray QJsonValue::toArray(const QJsonArray & defaultValue);
 // _ZNK10QJsonValue7toArrayERK10QJsonArray toArray(const class QJsonArray &)
 extern "C"
@@ -387,7 +389,7 @@ const QJsonArray* arg1) {
   ((QJsonValue*)qthis)->toArray(*((const QJsonArray*)arg1));
   return new QJsonArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 95, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 101, column 17>
 //   // proto:  bool QJsonValue::isDouble();
 // _ZNK10QJsonValue8isDoubleEv isDouble()
 extern "C"
@@ -397,7 +399,7 @@ C_ZNK10QJsonValue8isDoubleEv(void *qthis) {
   ((QJsonValue*)qthis)->isDouble();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 75, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 81, column 5>
 //   // proto:  void QJsonValue::QJsonValue(const QString & s);
 extern "C"
 QJsonValue*
@@ -405,7 +407,7 @@ C_ZN10QJsonValueC2ERK7QString(const QString* arg1) {
   auto ret = new QJsonValue(*((const QString*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 81, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 87, column 5>
 //   // proto:  void QJsonValue::QJsonValue(const QJsonArray & a);
 extern "C"
 QJsonValue*
@@ -413,7 +415,7 @@ C_ZN10QJsonValueC2ERK10QJsonArray(const QJsonArray* arg1) {
   auto ret = new QJsonValue(*((const QJsonArray*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 98, column 10>
 //   // proto:  QJsonValue::Type QJsonValue::type();
 // _ZNK10QJsonValue4typeEv type()
 extern "C"
@@ -423,7 +425,7 @@ C_ZNK10QJsonValue4typeEv(void *qthis) {
   ((QJsonValue*)qthis)->type();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 102, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 108, column 9>
 //   // proto:  int QJsonValue::toInt(int defaultValue);
 // _ZNK10QJsonValue5toIntEi toInt(int)
 extern "C"
@@ -434,7 +436,7 @@ int arg1) {
   ((QJsonValue*)qthis)->toInt(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 105, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 112, column 16>
 //   // proto:  QJsonArray QJsonValue::toArray();
 // _ZNK10QJsonValue7toArrayEv toArray()
 extern "C"
@@ -444,7 +446,7 @@ C_ZNK10QJsonValue7toArrayEv(void *qthis) {
   ((QJsonValue*)qthis)->toArray();
   return new QJsonArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 97, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 103, column 17>
 //   // proto:  bool QJsonValue::isArray();
 // _ZNK10QJsonValue7isArrayEv isArray()
 extern "C"
@@ -454,7 +456,7 @@ C_ZNK10QJsonValue7isArrayEv(void *qthis) {
   ((QJsonValue*)qthis)->isArray();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 76, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 82, column 5>
 //   // proto:  void QJsonValue::QJsonValue(QLatin1String s);
 extern "C"
 QJsonValue*
@@ -462,7 +464,7 @@ C_ZN10QJsonValueC2E13QLatin1String(QLatin1String* arg1) {
   auto ret = new QJsonValue(*((QLatin1String*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 78, column 31>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 84, column 31>
 //   // proto:  void QJsonValue::QJsonValue(const char * s);
 extern "C"
 QJsonValue*
@@ -470,7 +472,7 @@ C_ZN10QJsonValueC2EPKc(const char * arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 104, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 111, column 13>
 //   // proto:  QString QJsonValue::toString(const QString & defaultValue);
 // _ZNK10QJsonValue8toStringERK7QString toString(const class QString &)
 extern "C"
@@ -481,7 +483,7 @@ const QString* arg1) {
   ((QJsonValue*)qthis)->toString(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 103, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 109, column 12>
 //   // proto:  double QJsonValue::toDouble(double defaultValue);
 // _ZNK10QJsonValue8toDoubleEd toDouble(double)
 extern "C"
@@ -497,7 +499,7 @@ extern "C"
 void C_ZN10QJsonValueD2Ev(void *qthis) {
   delete (QJsonValue*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 90, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 96, column 14>
 //   // proto:  QVariant QJsonValue::toVariant();
 // _ZNK10QJsonValue9toVariantEv toVariant()
 extern "C"
@@ -507,7 +509,7 @@ C_ZNK10QJsonValue9toVariantEv(void *qthis) {
   ((QJsonValue*)qthis)->toVariant();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 104, column 17>
 //   // proto:  bool QJsonValue::isObject();
 // _ZNK10QJsonValue8isObjectEv isObject()
 extern "C"
@@ -517,7 +519,7 @@ C_ZNK10QJsonValue8isObjectEv(void *qthis) {
   ((QJsonValue*)qthis)->isObject();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 89, column 23>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 95, column 23>
 //   // proto: static QJsonValue QJsonValue::fromVariant(const QVariant & variant);
 // _ZN10QJsonValue11fromVariantERK8QVariant fromVariant(const class QVariant &)
 extern "C"
@@ -527,7 +529,7 @@ C_ZN10QJsonValue11fromVariantERK8QVariant(const QVariant* arg1) {
   QJsonValue::fromVariant(*((const QVariant*)arg1));
   return new QJsonValue(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 107, column 10>
 //   // proto:  bool QJsonValue::toBool(bool defaultValue);
 // _ZNK10QJsonValue6toBoolEb toBool(_Bool)
 extern "C"
@@ -538,7 +540,7 @@ bool arg1) {
   ((QJsonValue*)qthis)->toBool(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 108, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 115, column 17>
 //   // proto:  QJsonObject QJsonValue::toObject(const QJsonObject & defaultValue);
 // _ZNK10QJsonValue8toObjectERK11QJsonObject toObject(const class QJsonObject &)
 extern "C"
@@ -549,7 +551,7 @@ const QJsonObject* arg1) {
   ((QJsonValue*)qthis)->toObject(*((const QJsonObject*)arg1));
   return new QJsonObject(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 72, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 78, column 5>
 //   // proto:  void QJsonValue::QJsonValue(double n);
 extern "C"
 QJsonValue*
@@ -557,7 +559,7 @@ C_ZN10QJsonValueC2Ed(double arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 94, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 100, column 17>
 //   // proto:  bool QJsonValue::isBool();
 // _ZNK10QJsonValue6isBoolEv isBool()
 extern "C"
@@ -567,7 +569,7 @@ C_ZNK10QJsonValue6isBoolEv(void *qthis) {
   ((QJsonValue*)qthis)->isBool();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 71, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 77, column 5>
 //   // proto:  void QJsonValue::QJsonValue(bool b);
 extern "C"
 QJsonValue*
@@ -575,7 +577,7 @@ C_ZN10QJsonValueC2Eb(bool arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 99, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 105, column 17>
 //   // proto:  bool QJsonValue::isUndefined();
 // _ZNK10QJsonValue11isUndefinedEv isUndefined()
 extern "C"
@@ -585,7 +587,7 @@ C_ZNK10QJsonValue11isUndefinedEv(void *qthis) {
   ((QJsonValue*)qthis)->isUndefined();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 93, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 99, column 17>
 //   // proto:  bool QJsonValue::isNull();
 // _ZNK10QJsonValue6isNullEv isNull()
 extern "C"
@@ -595,7 +597,7 @@ C_ZNK10QJsonValue6isNullEv(void *qthis) {
   ((QJsonValue*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 102, column 17>
 //   // proto:  bool QJsonValue::isString();
 // _ZNK10QJsonValue8isStringEv isString()
 extern "C"
@@ -605,7 +607,7 @@ C_ZNK10QJsonValue8isStringEv(void *qthis) {
   ((QJsonValue*)qthis)->isString();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 86, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 92, column 5>
 //   // proto:  void QJsonValue::QJsonValue(const QJsonValue & other);
 extern "C"
 QJsonValue*
@@ -613,7 +615,7 @@ C_ZN10QJsonValueC2ERKS_(const QJsonValue* arg1) {
   auto ret = new QJsonValue(*((const QJsonValue*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 73, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 79, column 5>
 //   // proto:  void QJsonValue::QJsonValue(int n);
 extern "C"
 QJsonValue*
@@ -621,7 +623,17 @@ C_ZN10QJsonValueC2Ei(int arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 82, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 110, column 13>
+//   // proto:  QString QJsonValue::toString();
+// _ZNK10QJsonValue8toStringEv toString()
+extern "C"
+QString*
+C_ZNK10QJsonValue8toStringEv(void *qthis) {
+  auto ret =
+  ((QJsonValue*)qthis)->toString();
+  return new QString(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 88, column 5>
 //   // proto:  void QJsonValue::QJsonValue(const QJsonObject & o);
 extern "C"
 QJsonValue*
@@ -629,7 +641,7 @@ C_ZN10QJsonValueC2ERK11QJsonObject(const QJsonObject* arg1) {
   auto ret = new QJsonValue(*((const QJsonObject*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 74, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 80, column 5>
 //   // proto:  void QJsonValue::QJsonValue(qint64 n);
 extern "C"
 QJsonValue*
@@ -637,7 +649,7 @@ C_ZN10QJsonValueC2Ex(qint64 arg1) {
   auto ret = new QJsonValue(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 163, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 170, column 16>
 //   // proto:  QJsonArray QJsonValueRef::toArray();
 // _ZNK13QJsonValueRef7toArrayEv toArray()
 extern "C"
@@ -647,7 +659,7 @@ C_ZNK13QJsonValueRef7toArrayEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toArray();
   return new QJsonArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 164, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 171, column 17>
 //   // proto:  QJsonObject QJsonValueRef::toObject();
 // _ZNK13QJsonValueRef8toObjectEv toObject()
 extern "C"
@@ -657,7 +669,7 @@ C_ZNK13QJsonValueRef8toObjectEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toObject();
   return new QJsonObject(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 152, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 159, column 17>
 //   // proto:  bool QJsonValueRef::isBool();
 // _ZNK13QJsonValueRef6isBoolEv isBool()
 extern "C"
@@ -667,7 +679,7 @@ C_ZNK13QJsonValueRef6isBoolEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isBool();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 153, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 160, column 17>
 //   // proto:  bool QJsonValueRef::isDouble();
 // _ZNK13QJsonValueRef8isDoubleEv isDouble()
 extern "C"
@@ -677,7 +689,7 @@ C_ZNK13QJsonValueRef8isDoubleEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isDouble();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 161, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 168, column 19>
 //   // proto:  double QJsonValueRef::toDouble();
 // _ZNK13QJsonValueRef8toDoubleEv toDouble()
 extern "C"
@@ -687,7 +699,7 @@ C_ZNK13QJsonValueRef8toDoubleEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toDouble();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 167, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 174, column 17>
 //   // proto:  bool QJsonValueRef::toBool(bool defaultValue);
 // _ZNK13QJsonValueRef6toBoolEb toBool(_Bool)
 extern "C"
@@ -698,7 +710,7 @@ bool arg1) {
   ((QJsonValueRef*)qthis)->toBool(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 169, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 176, column 19>
 //   // proto:  double QJsonValueRef::toDouble(double defaultValue);
 // _ZNK13QJsonValueRef8toDoubleEd toDouble(double)
 extern "C"
@@ -709,7 +721,7 @@ double arg1) {
   ((QJsonValueRef*)qthis)->toDouble(arg1);
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 159, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 166, column 17>
 //   // proto:  bool QJsonValueRef::toBool();
 // _ZNK13QJsonValueRef6toBoolEv toBool()
 extern "C"
@@ -719,7 +731,7 @@ C_ZNK13QJsonValueRef6toBoolEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toBool();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 149, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 156, column 14>
 //   // proto:  QVariant QJsonValueRef::toVariant();
 // _ZNK13QJsonValueRef9toVariantEv toVariant()
 extern "C"
@@ -729,7 +741,7 @@ C_ZNK13QJsonValueRef9toVariantEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toVariant();
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 170, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 177, column 20>
 //   // proto:  QString QJsonValueRef::toString(const QString & defaultValue);
 // _ZNK13QJsonValueRef8toStringERK7QString toString(const class QString &)
 extern "C"
@@ -740,7 +752,7 @@ const QString* arg1) {
   ((QJsonValueRef*)qthis)->toString(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 156, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 163, column 17>
 //   // proto:  bool QJsonValueRef::isObject();
 // _ZNK13QJsonValueRef8isObjectEv isObject()
 extern "C"
@@ -750,16 +762,17 @@ C_ZNK13QJsonValueRef8isObjectEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isObject();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 140, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 147, column 5>
 //   // proto:  void QJsonValueRef::QJsonValueRef(QJsonArray * array, int idx);
 extern "C"
 QJsonValueRef*
 C_ZN13QJsonValueRefC2EP10QJsonArrayi(QJsonArray * arg1,
 int arg2) {
-  auto ret = new QJsonValueRef(arg1, arg2);
+  auto ret = new QJsonValueRef(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 154, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 161, column 17>
 //   // proto:  bool QJsonValueRef::isString();
 // _ZNK13QJsonValueRef8isStringEv isString()
 extern "C"
@@ -769,16 +782,17 @@ C_ZNK13QJsonValueRef8isStringEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isString();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 142, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 149, column 5>
 //   // proto:  void QJsonValueRef::QJsonValueRef(QJsonObject * object, int idx);
 extern "C"
 QJsonValueRef*
 C_ZN13QJsonValueRefC2EP11QJsonObjecti(QJsonObject * arg1,
 int arg2) {
-  auto ret = new QJsonValueRef(arg1, arg2);
+  auto ret = new QJsonValueRef(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 162, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 169, column 20>
 //   // proto:  QString QJsonValueRef::toString();
 // _ZNK13QJsonValueRef8toStringEv toString()
 extern "C"
@@ -788,7 +802,7 @@ C_ZNK13QJsonValueRef8toStringEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toString();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 168, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 175, column 16>
 //   // proto:  int QJsonValueRef::toInt(int defaultValue);
 // _ZNK13QJsonValueRef5toIntEi toInt(int)
 extern "C"
@@ -799,7 +813,7 @@ int arg1) {
   ((QJsonValueRef*)qthis)->toInt(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 155, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 162, column 17>
 //   // proto:  bool QJsonValueRef::isArray();
 // _ZNK13QJsonValueRef7isArrayEv isArray()
 extern "C"
@@ -809,7 +823,7 @@ C_ZNK13QJsonValueRef7isArrayEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isArray();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 151, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 158, column 17>
 //   // proto:  bool QJsonValueRef::isNull();
 // _ZNK13QJsonValueRef6isNullEv isNull()
 extern "C"
@@ -819,7 +833,7 @@ C_ZNK13QJsonValueRef6isNullEv(void *qthis) {
   ((QJsonValueRef*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 150, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 157, column 29>
 //   // proto:  QJsonValue::Type QJsonValueRef::type();
 // _ZNK13QJsonValueRef4typeEv type()
 extern "C"
@@ -829,7 +843,7 @@ C_ZNK13QJsonValueRef4typeEv(void *qthis) {
   ((QJsonValueRef*)qthis)->type();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 160, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 167, column 16>
 //   // proto:  int QJsonValueRef::toInt();
 // _ZNK13QJsonValueRef5toIntEv toInt()
 extern "C"
@@ -839,7 +853,7 @@ C_ZNK13QJsonValueRef5toIntEv(void *qthis) {
   ((QJsonValueRef*)qthis)->toInt();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 157, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qjsonvalue.h', line 164, column 17>
 //   // proto:  bool QJsonValueRef::isUndefined();
 // _ZNK13QJsonValueRef11isUndefinedEv isUndefined()
 extern "C"

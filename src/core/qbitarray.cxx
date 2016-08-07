@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qbitarray.h
 // dst-file: /src/core/qbitarray.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qbitarray_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 67, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 73, column 17>
 //   // proto:  bool QBitArray::isEmpty();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -28,7 +28,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray7isEmptyEv isEmpty()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 83, column 10>
 //   // proto:  void QBitArray::setBit(int i);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -38,7 +38,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray6setBitEi setBit(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 63, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 69, column 16>
 //   // proto:  int QBitArray::size();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -48,7 +48,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray4sizeEv size()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 61, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 67, column 17>
 //   // proto:  void QBitArray::swap(QBitArray & other);
 if (true) {
   auto f = [](QBitArray flythis, QBitArray & arg1) {
@@ -58,7 +58,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray4swapERS_ swap(class QBitArray &)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 64, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 70, column 16>
 //   // proto:  int QBitArray::count();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -68,7 +68,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray5countEv count()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 56, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 62, column 12>
 //   // proto:  void QBitArray::QBitArray(QBitArray && other);
 if (true) {
   auto f = [](QBitArray && arg1) {
@@ -76,7 +76,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 72, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 78, column 17>
 //   // proto:  void QBitArray::detach();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -86,7 +86,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray6detachEv detach()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 51, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 57, column 12>
 //   // proto:  void QBitArray::QBitArray();
 if (true) {
   auto f = []() {
@@ -94,7 +94,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 88, column 10>
 //   // proto:  bool QBitArray::at(int i);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -104,7 +104,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray2atEi at(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 74, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 80, column 17>
 //   // proto:  void QBitArray::clear();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -114,7 +114,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray5clearEv clear()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 85, column 10>
 //   // proto:  void QBitArray::clearBit(int i);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -124,7 +124,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray8clearBitEi clearBit(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 82, column 10>
 //   // proto:  bool QBitArray::testBit(int i);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -134,7 +134,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray7testBitEi testBit(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 99, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 105, column 17>
 //   // proto:  void QBitArray::truncate(int pos);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -144,7 +144,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray8truncateEi truncate(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 86, column 10>
 //   // proto:  bool QBitArray::toggleBit(int i);
 if (true) {
   auto f = [](QBitArray flythis, int arg1) {
@@ -154,7 +154,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray9toggleBitEi toggleBit(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 59, column 5>
 //   // proto:  void QBitArray::QBitArray(const QBitArray & other);
 if (true) {
   auto f = [](const QBitArray & arg1) {
@@ -162,7 +162,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 74, column 17>
 //   // proto:  bool QBitArray::isNull();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -172,7 +172,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 84, column 10>
 //   // proto:  void QBitArray::setBit(int i, bool val);
 if (true) {
   auto f = [](QBitArray flythis, int arg1, bool arg2) {
@@ -182,7 +182,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QBitArray6setBitEib setBit(int, _Bool)
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 73, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 79, column 17>
 //   // proto:  bool QBitArray::isDetached();
 if (true) {
   auto f = [](QBitArray flythis) {
@@ -192,7 +192,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QBitArray10isDetachedEv isDetached()
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 102, column 17>
 //   // proto:  bool QBitArray::fill(bool val, int size);
 if (true) {
   auto f = [](QBitArray flythis, bool arg1, int arg2) {
@@ -222,16 +222,17 @@ int QBitArray_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 58, column 14>
 //   // proto:  void QBitArray::QBitArray(int size, bool val);
 extern "C"
 QBitArray*
 C_ZN9QBitArrayC2Eib(int arg1,
 bool arg2) {
-  auto ret = new QBitArray(arg1, arg2);
+  auto ret = new QBitArray(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 67, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 73, column 17>
 //   // proto:  bool QBitArray::isEmpty();
 // _ZNK9QBitArray7isEmptyEv isEmpty()
 extern "C"
@@ -241,7 +242,7 @@ C_ZNK9QBitArray7isEmptyEv(void *qthis) {
   ((QBitArray*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 83, column 10>
 //   // proto:  void QBitArray::setBit(int i);
 // _ZN9QBitArray6setBitEi setBit(int)
 extern "C"
@@ -250,7 +251,7 @@ C_ZN9QBitArray6setBitEi(void *qthis,
 int arg1) {
   ((QBitArray*)qthis)->setBit(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 63, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 69, column 16>
 //   // proto:  int QBitArray::size();
 // _ZNK9QBitArray4sizeEv size()
 extern "C"
@@ -260,7 +261,7 @@ C_ZNK9QBitArray4sizeEv(void *qthis) {
   ((QBitArray*)qthis)->size();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 61, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 67, column 17>
 //   // proto:  void QBitArray::swap(QBitArray & other);
 // _ZN9QBitArray4swapERS_ swap(class QBitArray &)
 extern "C"
@@ -269,7 +270,7 @@ C_ZN9QBitArray4swapERS_(void *qthis,
 QBitArray* arg1) {
   ((QBitArray*)qthis)->swap(*((QBitArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 64, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 70, column 16>
 //   // proto:  int QBitArray::count();
 // _ZNK9QBitArray5countEv count()
 extern "C"
@@ -279,7 +280,7 @@ C_ZNK9QBitArray5countEv(void *qthis) {
   ((QBitArray*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 56, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 62, column 12>
 //   // proto:  void QBitArray::QBitArray(QBitArray && other);
 extern "C"
 QBitArray*
@@ -287,7 +288,7 @@ C_ZN9QBitArrayC2EOS_(QBitArray* arg1) {
   auto ret = new QBitArray(*((QBitArray*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 65, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 71, column 9>
 //   // proto:  int QBitArray::count(bool on);
 // _ZNK9QBitArray5countEb count(_Bool)
 extern "C"
@@ -298,7 +299,7 @@ bool arg1) {
   ((QBitArray*)qthis)->count(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 72, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 78, column 17>
 //   // proto:  void QBitArray::detach();
 // _ZN9QBitArray6detachEv detach()
 extern "C"
@@ -306,7 +307,7 @@ void
 C_ZN9QBitArray6detachEv(void *qthis) {
   ((QBitArray*)qthis)->detach();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 51, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 57, column 12>
 //   // proto:  void QBitArray::QBitArray();
 extern "C"
 QBitArray*
@@ -314,7 +315,7 @@ C_ZN9QBitArrayC2Ev() {
   auto ret = new QBitArray();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 88, column 10>
 //   // proto:  bool QBitArray::at(int i);
 // _ZNK9QBitArray2atEi at(int)
 extern "C"
@@ -325,7 +326,7 @@ int arg1) {
   ((QBitArray*)qthis)->at(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 74, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 80, column 17>
 //   // proto:  void QBitArray::clear();
 // _ZN9QBitArray5clearEv clear()
 extern "C"
@@ -333,7 +334,7 @@ void
 C_ZN9QBitArray5clearEv(void *qthis) {
   ((QBitArray*)qthis)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 85, column 10>
 //   // proto:  void QBitArray::clearBit(int i);
 // _ZN9QBitArray8clearBitEi clearBit(int)
 extern "C"
@@ -342,7 +343,7 @@ C_ZN9QBitArray8clearBitEi(void *qthis,
 int arg1) {
   ((QBitArray*)qthis)->clearBit(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 82, column 10>
 //   // proto:  bool QBitArray::testBit(int i);
 // _ZNK9QBitArray7testBitEi testBit(int)
 extern "C"
@@ -353,7 +354,7 @@ int arg1) {
   ((QBitArray*)qthis)->testBit(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 99, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 105, column 17>
 //   // proto:  void QBitArray::truncate(int pos);
 // _ZN9QBitArray8truncateEi truncate(int)
 extern "C"
@@ -362,7 +363,7 @@ C_ZN9QBitArray8truncateEi(void *qthis,
 int arg1) {
   ((QBitArray*)qthis)->truncate(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 86, column 10>
 //   // proto:  bool QBitArray::toggleBit(int i);
 // _ZN9QBitArray9toggleBitEi toggleBit(int)
 extern "C"
@@ -373,7 +374,7 @@ int arg1) {
   ((QBitArray*)qthis)->toggleBit(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 59, column 5>
 //   // proto:  void QBitArray::QBitArray(const QBitArray & other);
 extern "C"
 QBitArray*
@@ -381,7 +382,7 @@ C_ZN9QBitArrayC2ERKS_(const QBitArray* arg1) {
   auto ret = new QBitArray(*((const QBitArray*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 97, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 103, column 10>
 //   // proto:  void QBitArray::fill(bool val, int first, int last);
 // _ZN9QBitArray4fillEbii fill(_Bool, int, int)
 extern "C"
@@ -394,7 +395,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 74, column 17>
 //   // proto:  bool QBitArray::isNull();
 // _ZNK9QBitArray6isNullEv isNull()
 extern "C"
@@ -404,7 +405,7 @@ C_ZNK9QBitArray6isNullEv(void *qthis) {
   ((QBitArray*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 84, column 10>
 //   // proto:  void QBitArray::setBit(int i, bool val);
 // _ZN9QBitArray6setBitEib setBit(int, _Bool)
 extern "C"
@@ -415,7 +416,7 @@ bool arg2) {
   ((QBitArray*)qthis)->setBit(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 76, column 10>
 //   // proto:  void QBitArray::resize(int size);
 // _ZN9QBitArray6resizeEi resize(int)
 extern "C"
@@ -424,7 +425,7 @@ C_ZN9QBitArray6resizeEi(void *qthis,
 int arg1) {
   ((QBitArray*)qthis)->resize(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 73, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 79, column 17>
 //   // proto:  bool QBitArray::isDetached();
 // _ZNK9QBitArray10isDetachedEv isDetached()
 extern "C"
@@ -434,7 +435,7 @@ C_ZNK9QBitArray10isDetachedEv(void *qthis) {
   ((QBitArray*)qthis)->isDetached();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qbitarray.h', line 102, column 17>
 //   // proto:  bool QBitArray::fill(bool val, int size);
 // _ZN9QBitArray4fillEbi fill(_Bool, int)
 extern "C"

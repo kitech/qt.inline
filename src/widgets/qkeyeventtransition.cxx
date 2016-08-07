@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qkeyeventtransition.h
 // dst-file: /src/widgets/qkeyeventtransition.cxx
 //
@@ -33,7 +33,7 @@ int QKeyEventTransition_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 63, column 10>
 //   // proto:  void QKeyEventTransition::setKey(int key);
 // _ZN19QKeyEventTransition6setKeyEi setKey(int)
 extern "C"
@@ -42,7 +42,7 @@ C_ZN19QKeyEventTransition6setKeyEi(void *qthis,
 int arg1) {
   ((QKeyEventTransition*)qthis)->setKey(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 53, column 5>
 //   // proto:  const QMetaObject * QKeyEventTransition::metaObject();
 // _ZNK19QKeyEventTransition10metaObjectEv metaObject()
 extern "C"
@@ -52,7 +52,7 @@ C_ZNK19QKeyEventTransition10metaObjectEv(void *qthis) {
   ((QKeyEventTransition*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 66, column 10>
 //   // proto:  void QKeyEventTransition::setModifierMask(Qt::KeyboardModifiers modifiers);
 // _ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE setModifierMask(Qt::KeyboardModifiers)
 extern "C"
@@ -61,7 +61,7 @@ C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void
 Qt::KeyboardModifiers* arg1) {
   ((QKeyEventTransition*)qthis)->setModifierMask(*((Qt::KeyboardModifiers*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 59, column 27>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 65, column 27>
 //   // proto:  Qt::KeyboardModifiers QKeyEventTransition::modifierMask();
 // _ZNK19QKeyEventTransition12modifierMaskEv modifierMask()
 extern "C"
@@ -76,7 +76,7 @@ extern "C"
 void C_ZN19QKeyEventTransitionD2Ev(void *qthis) {
   delete (QKeyEventTransition*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 56, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 62, column 9>
 //   // proto:  int QKeyEventTransition::key();
 // _ZNK19QKeyEventTransition3keyEv key()
 extern "C"
@@ -86,7 +86,7 @@ C_ZNK19QKeyEventTransition3keyEv(void *qthis) {
   ((QKeyEventTransition*)qthis)->key();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 58, column 5>
 //   // proto:  void QKeyEventTransition::QKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sourceState);
 extern "C"
 QKeyEventTransition*
@@ -94,10 +94,13 @@ C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * arg1,
 QEvent::Type* arg2,
 int arg3,
 QState * arg4) {
-  auto ret = new QKeyEventTransition(arg1, *((QEvent::Type*)arg2), arg3, arg4);
+  auto ret = new QKeyEventTransition(arg1,
+*((QEvent::Type*)arg2),
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 57, column 5>
 //   // proto:  void QKeyEventTransition::QKeyEventTransition(QState * sourceState);
 extern "C"
 QKeyEventTransition*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qsizegrip.h
 // dst-file: /src/widgets/qsizegrip.cxx
 //
@@ -33,7 +33,7 @@ int QSizeGrip_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 48, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 54, column 14>
 //   // proto:  void QSizeGrip::QSizeGrip(QWidget * parent);
 extern "C"
 QSizeGrip*
@@ -46,7 +46,7 @@ extern "C"
 void C_ZN9QSizeGripD2Ev(void *qthis) {
   delete (QSizeGrip*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 58, column 10>
 //   // proto:  void QSizeGrip::setVisible(bool );
 // _ZN9QSizeGrip10setVisibleEb setVisible(_Bool)
 extern "C"
@@ -55,7 +55,7 @@ C_ZN9QSizeGrip10setVisibleEb(void *qthis,
 bool arg1) {
   ((QSizeGrip*)qthis)->setVisible(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 46, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 52, column 5>
 //   // proto:  const QMetaObject * QSizeGrip::metaObject();
 // _ZNK9QSizeGrip10metaObjectEv metaObject()
 extern "C"
@@ -65,7 +65,7 @@ C_ZNK9QSizeGrip10metaObjectEv(void *qthis) {
   ((QSizeGrip*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 51, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 57, column 11>
 //   // proto:  QSize QSizeGrip::sizeHint();
 // _ZNK9QSizeGrip8sizeHintEv sizeHint()
 extern "C"

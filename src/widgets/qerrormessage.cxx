@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qerrormessage.h
 // dst-file: /src/widgets/qerrormessage.cxx
 //
@@ -32,7 +32,7 @@ int QErrorMessage_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 54, column 5>
 //   // proto:  const QMetaObject * QErrorMessage::metaObject();
 // _ZNK13QErrorMessage10metaObjectEv metaObject()
 extern "C"
@@ -42,7 +42,7 @@ C_ZNK13QErrorMessage10metaObjectEv(void *qthis) {
   ((QErrorMessage*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 57, column 14>
 //   // proto:  void QErrorMessage::QErrorMessage(QWidget * parent);
 extern "C"
 QErrorMessage*
@@ -50,7 +50,7 @@ C_ZN13QErrorMessageC2EP7QWidget(QWidget * arg1) {
   auto ret = new QErrorMessage(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 54, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 60, column 28>
 //   // proto: static QErrorMessage * QErrorMessage::qtHandler();
 // _ZN13QErrorMessage9qtHandlerEv qtHandler()
 extern "C"
@@ -60,7 +60,7 @@ C_ZN13QErrorMessage9qtHandlerEv() {
   QErrorMessage::qtHandler();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 64, column 10>
 //   // proto:  void QErrorMessage::showMessage(const QString & message, const QString & type);
 // _ZN13QErrorMessage11showMessageERK7QStringS2_ showMessage(const class QString &, const class QString &)
 extern "C"
@@ -71,7 +71,7 @@ const QString* arg2) {
   ((QErrorMessage*)qthis)->showMessage(*((const QString*)arg1),
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 63, column 10>
 //   // proto:  void QErrorMessage::showMessage(const QString & message);
 // _ZN13QErrorMessage11showMessageERK7QString showMessage(const class QString &)
 extern "C"

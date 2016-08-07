@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qcontiguouscache.h
 // dst-file: /src/core/qcontiguouscache.cxx
 //
@@ -32,7 +32,7 @@ int QContiguousCacheData_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qcontiguouscache.h', line 61, column 34>
+// <SourceLocation file '/usr/include/qt/QtCore/qcontiguouscache.h', line 67, column 34>
 //   // proto: static QContiguousCacheData * QContiguousCacheData::allocateData(int size, int alignment);
 // _ZN20QContiguousCacheData12allocateDataEii allocateData(int, int)
 extern "C"
@@ -44,7 +44,7 @@ int arg2) {
 arg2);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcontiguouscache.h', line 62, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcontiguouscache.h', line 68, column 17>
 //   // proto: static void QContiguousCacheData::freeData(QContiguousCacheData * data);
 // _ZN20QContiguousCacheData8freeDataEPS_ freeData(struct QContiguousCacheData *)
 extern "C"

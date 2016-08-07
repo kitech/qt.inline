@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpictureformatplugin.h
 // dst-file: /src/gui/qpictureformatplugin.cxx
 //
@@ -32,7 +32,7 @@ int QPictureFormatPlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 59, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 65, column 18>
 //   // proto:  bool QPictureFormatPlugin::loadPicture(const QString & format, const QString & filename, QPicture * pic);
 // _ZN20QPictureFormatPlugin11loadPictureERK7QStringS2_P8QPicture loadPicture(const class QString &, const class QString &, class QPicture *)
 extern "C"
@@ -47,7 +47,7 @@ QPicture * arg3) {
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 60, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 66, column 18>
 //   // proto:  bool QPictureFormatPlugin::savePicture(const QString & format, const QString & filename, const QPicture & pic);
 // _ZN20QPictureFormatPlugin11savePictureERK7QStringS2_RK8QPicture savePicture(const class QString &, const class QString &, const class QPicture &)
 extern "C"
@@ -67,14 +67,14 @@ extern "C"
 void C_ZN20QPictureFormatPluginD2Ev(void *qthis) {
   delete (QPictureFormatPlugin*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 62, column 14>
 //   // proto:  void QPictureFormatPlugin::QPictureFormatPlugin(QObject * parent);
 extern "C"
 QPictureFormatPlugin*
 C_ZN20QPictureFormatPluginC2EP7QObject(QObject * arg1) {
   // auto ret = new QPictureFormatPlugin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 61, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 67, column 18>
 //   // proto:  bool QPictureFormatPlugin::installIOHandler(const QString & format);
 // _ZN20QPictureFormatPlugin16installIOHandlerERK7QString installIOHandler(const class QString &)
 extern "C"
@@ -85,7 +85,7 @@ const QString* arg1) {
   ((QPictureFormatPlugin*)qthis)->installIOHandler(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 54, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qpictureformatplugin.h', line 60, column 5>
 //   // proto:  const QMetaObject * QPictureFormatPlugin::metaObject();
 // _ZNK20QPictureFormatPlugin10metaObjectEv metaObject()
 extern "C"

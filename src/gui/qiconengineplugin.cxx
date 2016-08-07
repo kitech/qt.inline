@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qiconengineplugin.h
 // dst-file: /src/gui/qiconengineplugin.cxx
 //
@@ -32,7 +32,7 @@ int QIconEnginePlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 55, column 5>
 //   // proto:  const QMetaObject * QIconEnginePlugin::metaObject();
 // _ZNK17QIconEnginePlugin10metaObjectEv metaObject()
 extern "C"
@@ -42,14 +42,14 @@ C_ZNK17QIconEnginePlugin10metaObjectEv(void *qthis) {
   ((QIconEnginePlugin*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 57, column 5>
 //   // proto:  void QIconEnginePlugin::QIconEnginePlugin(QObject * parent);
 extern "C"
 QIconEnginePlugin*
 C_ZN17QIconEnginePluginC2EP7QObject(QObject * arg1) {
   // auto ret = new QIconEnginePlugin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 54, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qiconengineplugin.h', line 60, column 26>
 //   // proto:  QIconEngine * QIconEnginePlugin::create(const QString & filename);
 // _ZN17QIconEnginePlugin6createERK7QString create(const class QString &)
 extern "C"

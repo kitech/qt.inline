@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstylefactory.h
 // dst-file: /src/widgets/qstylefactory.cxx
 //
@@ -33,7 +33,7 @@ int QStyleFactory_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstylefactory.h', line 48, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylefactory.h', line 54, column 20>
 //   // proto: static QStyle * QStyleFactory::create(const QString & );
 // _ZN13QStyleFactory6createERK7QString create(const class QString &)
 extern "C"
@@ -43,7 +43,7 @@ C_ZN13QStyleFactory6createERK7QString(const QString* arg1) {
   QStyleFactory::create(*((const QString*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstylefactory.h', line 47, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstylefactory.h', line 53, column 24>
 //   // proto: static QStringList QStyleFactory::keys();
 // _ZN13QStyleFactory4keysEv keys()
 extern "C"

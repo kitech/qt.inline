@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qfiledevice.h
 // dst-file: /src/core/qfiledevice.cxx
 //
@@ -34,7 +34,7 @@ int QFileDevice_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 101, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 107, column 12>
 //   // proto:  qint64 QFileDevice::size();
 // _ZNK11QFileDevice4sizeEv size()
 extern "C"
@@ -44,7 +44,7 @@ C_ZNK11QFileDevice4sizeEv(void *qthis) {
   ((QFileDevice*)qthis)->size();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 97, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 103, column 10>
 //   // proto:  bool QFileDevice::seek(qint64 offset);
 // _ZN11QFileDevice4seekEx seek(qint64)
 extern "C"
@@ -55,7 +55,7 @@ qint64 arg1) {
   ((QFileDevice*)qthis)->seek(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 114, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 120, column 10>
 //   // proto:  bool QFileDevice::unmap(uchar * address);
 // _ZN11QFileDevice5unmapEPh unmap(uchar *)
 extern "C"
@@ -66,7 +66,7 @@ uchar * arg1) {
   ((QFileDevice*)qthis)->unmap(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 89, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 95, column 18>
 //   // proto:  void QFileDevice::close();
 // _ZN11QFileDevice5closeEv close()
 extern "C"
@@ -74,7 +74,7 @@ void
 C_ZN11QFileDevice5closeEv(void *qthis) {
   ((QFileDevice*)qthis)->close();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 96, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 102, column 12>
 //   // proto:  qint64 QFileDevice::pos();
 // _ZNK11QFileDevice3posEv pos()
 extern "C"
@@ -84,7 +84,7 @@ C_ZNK11QFileDevice3posEv(void *qthis) {
   ((QFileDevice*)qthis)->pos();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 93, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 99, column 9>
 //   // proto:  int QFileDevice::handle();
 // _ZNK11QFileDevice6handleEv handle()
 extern "C"
@@ -94,7 +94,7 @@ C_ZNK11QFileDevice6handleEv(void *qthis) {
   ((QFileDevice*)qthis)->handle();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 94, column 21>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 100, column 21>
 //   // proto:  QString QFileDevice::fileName();
 // _ZNK11QFileDevice8fileNameEv fileName()
 extern "C"
@@ -109,7 +109,7 @@ extern "C"
 void C_ZN11QFileDeviceD2Ev(void *qthis) {
   delete (QFileDevice*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 98, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 104, column 10>
 //   // proto:  bool QFileDevice::atEnd();
 // _ZNK11QFileDevice5atEndEv atEnd()
 extern "C"
@@ -119,7 +119,7 @@ C_ZNK11QFileDevice5atEndEv(void *qthis) {
   ((QFileDevice*)qthis)->atEnd();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 97, column 10>
 //   // proto:  bool QFileDevice::isSequential();
 // _ZNK11QFileDevice12isSequentialEv isSequential()
 extern "C"
@@ -129,7 +129,7 @@ C_ZNK11QFileDevice12isSequentialEv(void *qthis) {
   ((QFileDevice*)qthis)->isSequential();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 105, column 10>
 //   // proto:  bool QFileDevice::flush();
 // _ZN11QFileDevice5flushEv flush()
 extern "C"
@@ -139,7 +139,7 @@ C_ZN11QFileDevice5flushEv(void *qthis) {
   ((QFileDevice*)qthis)->flush();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 113, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 119, column 12>
 //   // proto:  uchar * QFileDevice::map(qint64 offset, qint64 size, QFileDevice::MemoryMapFlags flags);
 // _ZN11QFileDevice3mapExxNS_14MemoryMapFlagsE map(qint64, qint64, enum QFileDevice::MemoryMapFlags)
 extern "C"
@@ -154,7 +154,7 @@ arg2,
 arg3);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 87, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 93, column 10>
 //   // proto:  void QFileDevice::unsetError();
 // _ZN11QFileDevice10unsetErrorEv unsetError()
 extern "C"
@@ -162,7 +162,7 @@ void
 C_ZN11QFileDevice10unsetErrorEv(void *qthis) {
   ((QFileDevice*)qthis)->unsetError();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 104, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 110, column 25>
 //   // proto:  Permissions QFileDevice::permissions();
 // _ZNK11QFileDevice11permissionsEv permissions()
 extern "C"
@@ -172,7 +172,7 @@ C_ZNK11QFileDevice11permissionsEv(void *qthis) {
   ((QFileDevice*)qthis)->permissions();
   return new QFlags<QFileDevice::Permission>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 86, column 15>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 92, column 15>
 //   // proto:  QFileDevice::FileError QFileDevice::error();
 // _ZNK11QFileDevice5errorEv error()
 extern "C"
@@ -182,7 +182,7 @@ C_ZNK11QFileDevice5errorEv(void *qthis) {
   ((QFileDevice*)qthis)->error();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 53, column 5>
 //   // proto:  const QMetaObject * QFileDevice::metaObject();
 // _ZNK11QFileDevice10metaObjectEv metaObject()
 extern "C"
@@ -192,7 +192,7 @@ C_ZNK11QFileDevice10metaObjectEv(void *qthis) {
   ((QFileDevice*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 105, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 111, column 18>
 //   // proto:  bool QFileDevice::setPermissions(Permissions permissionSpec);
 // _ZN11QFileDevice14setPermissionsE6QFlagsINS_10PermissionEE setPermissions(Permissions)
 extern "C"
@@ -203,7 +203,7 @@ QFileDevice::Permissions arg1) {
   ((QFileDevice*)qthis)->setPermissions(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 103, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qfiledevice.h', line 109, column 18>
 //   // proto:  bool QFileDevice::resize(qint64 sz);
 // _ZN11QFileDevice6resizeEx resize(qint64)
 extern "C"

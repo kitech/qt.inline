@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qscroller.h
 // dst-file: /src/widgets/qscroller.cxx
 //
@@ -15,7 +15,6 @@
 
 
 #include <qpoint.h>
-#include <qscroller.h>
 #include <qlist.h>
 #include <qapplication.h>
 #include <qscrollerproperties.h>
@@ -38,7 +37,7 @@ int QScroller_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 123, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 129, column 10>
 //   // proto:  void QScroller::stateChanged(QScroller::State newstate);
 // _ZN9QScroller12stateChangedENS_5StateE stateChanged(class QScroller::State)
 extern "C"
@@ -47,7 +46,7 @@ C_ZN9QScroller12stateChangedENS_5StateE(void *qthis,
 QScroller::State* arg1) {
   ((QScroller*)qthis)->stateChanged(*((QScroller::State*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 112, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 118, column 10>
 //   // proto:  void QScroller::setSnapPositionsY(qreal first, qreal interval);
 // _ZN9QScroller17setSnapPositionsYEdd setSnapPositionsY(qreal, qreal)
 extern "C"
@@ -58,7 +57,7 @@ qreal arg2) {
   ((QScroller*)qthis)->setSnapPositionsY(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 104, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 110, column 13>
 //   // proto:  QPointF QScroller::finalPosition();
 // _ZNK9QScroller13finalPositionEv finalPosition()
 extern "C"
@@ -68,7 +67,7 @@ C_ZNK9QScroller13finalPositionEv(void *qthis) {
   ((QScroller*)qthis)->finalPosition();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 94, column 31>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 100, column 31>
 //   // proto: static QList<QScroller *> QScroller::activeScrollers();
 // _ZN9QScroller15activeScrollersEv activeScrollers()
 extern "C"
@@ -78,7 +77,7 @@ C_ZN9QScroller15activeScrollersEv() {
   QScroller::activeScrollers();
   return new QList<QScroller *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 121, column 10>
 //   // proto:  void QScroller::setScrollerProperties(const QScrollerProperties & prop);
 // _ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties setScrollerProperties(const class QScrollerProperties &)
 extern "C"
@@ -87,7 +86,7 @@ C_ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties(void *qthis,
 const QScrollerProperties* arg1) {
   ((QScroller*)qthis)->setScrollerProperties(*((const QScrollerProperties*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 106, column 10>
 //   // proto:  bool QScroller::handleInput(QScroller::Input input, const QPointF & position, qint64 timestamp);
 // _ZN9QScroller11handleInputENS_5InputERK7QPointFx handleInput(enum QScroller::Input, const class QPointF &, qint64)
 extern "C"
@@ -102,7 +101,7 @@ qint64 arg3) {
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 98, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 104, column 11>
 //   // proto:  QScroller::State QScroller::state();
 // _ZNK9QScroller5stateEv state()
 extern "C"
@@ -112,7 +111,7 @@ C_ZNK9QScroller5stateEv(void *qthis) {
   ((QScroller*)qthis)->state();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 54, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 60, column 5>
 //   // proto:  const QMetaObject * QScroller::metaObject();
 // _ZNK9QScroller10metaObjectEv metaObject()
 extern "C"
@@ -122,7 +121,7 @@ C_ZNK9QScroller10metaObjectEv(void *qthis) {
   ((QScroller*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 103, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 109, column 13>
 //   // proto:  QPointF QScroller::velocity();
 // _ZNK9QScroller8velocityEv velocity()
 extern "C"
@@ -132,7 +131,7 @@ C_ZNK9QScroller8velocityEv(void *qthis) {
   ((QScroller*)qthis)->velocity();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 120, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 126, column 10>
 //   // proto:  void QScroller::resendPrepareEvent();
 // _ZN9QScroller18resendPrepareEventEv resendPrepareEvent()
 extern "C"
@@ -140,7 +139,7 @@ void
 C_ZN9QScroller18resendPrepareEventEv(void *qthis) {
   ((QScroller*)qthis)->resendPrepareEvent();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 124, column 10>
 //   // proto:  void QScroller::ensureVisible(const QRectF & rect, qreal xmargin, qreal ymargin);
 // _ZN9QScroller13ensureVisibleERK6QRectFdd ensureVisible(const class QRectF &, qreal, qreal)
 extern "C"
@@ -153,7 +152,7 @@ qreal arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 110, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 116, column 10>
 //   // proto:  void QScroller::setSnapPositionsX(qreal first, qreal interval);
 // _ZN9QScroller17setSnapPositionsXEdd setSnapPositionsX(qreal, qreal)
 extern "C"
@@ -164,7 +163,7 @@ qreal arg2) {
   ((QScroller*)qthis)->setSnapPositionsX(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 83, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 89, column 17>
 //   // proto: static bool QScroller::hasScroller(QObject * target);
 // _ZN9QScroller11hasScrollerEP7QObject hasScroller(class QObject *)
 extern "C"
@@ -174,7 +173,7 @@ C_ZN9QScroller11hasScrollerEP7QObject(QObject * arg1) {
   QScroller::hasScroller(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 117, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 123, column 10>
 //   // proto:  void QScroller::scrollTo(const QPointF & pos, int scrollTime);
 // _ZN9QScroller8scrollToERK7QPointFi scrollTo(const class QPointF &, int)
 extern "C"
@@ -185,7 +184,7 @@ int arg2) {
   ((QScroller*)qthis)->scrollTo(*((const QPointF*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 108, column 10>
 //   // proto:  void QScroller::stop();
 // _ZN9QScroller4stopEv stop()
 extern "C"
@@ -193,7 +192,7 @@ void
 C_ZN9QScroller4stopEv(void *qthis) {
   ((QScroller*)qthis)->stop();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 119, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 125, column 10>
 //   // proto:  void QScroller::ensureVisible(const QRectF & rect, qreal xmargin, qreal ymargin, int scrollTime);
 // _ZN9QScroller13ensureVisibleERK6QRectFddi ensureVisible(const class QRectF &, qreal, qreal, int)
 extern "C"
@@ -208,7 +207,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 115, column 10>
 //   // proto:  void QScroller::setSnapPositionsX(const QList<qreal> & positions);
 // _ZN9QScroller17setSnapPositionsXERK5QListIdE setSnapPositionsX(const QList<qreal> &)
 extern "C"
@@ -217,7 +216,7 @@ C_ZN9QScroller17setSnapPositionsXERK5QListIdE(void *qthis,
 const QList<qreal>* arg1) {
   ((QScroller*)qthis)->setSnapPositionsX(*((const QList<qreal>*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 91, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 97, column 17>
 //   // proto: static void QScroller::ungrabGesture(QObject * target);
 // _ZN9QScroller13ungrabGestureEP7QObject ungrabGesture(class QObject *)
 extern "C"
@@ -225,7 +224,7 @@ void
 C_ZN9QScroller13ungrabGestureEP7QObject(QObject * arg1) {
   QScroller::ungrabGesture(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 124, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 130, column 10>
 //   // proto:  void QScroller::scrollerPropertiesChanged(const QScrollerProperties & );
 // _ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties scrollerPropertiesChanged(const class QScrollerProperties &)
 extern "C"
@@ -234,7 +233,7 @@ C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *qthis,
 const QScrollerProperties* arg1) {
   ((QScroller*)qthis)->scrollerPropertiesChanged(*((const QScrollerProperties*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 107, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 113, column 25>
 //   // proto:  QScrollerProperties QScroller::scrollerProperties();
 // _ZNK9QScroller18scrollerPropertiesEv scrollerProperties()
 extern "C"
@@ -244,7 +243,7 @@ C_ZNK9QScroller18scrollerPropertiesEv(void *qthis) {
   ((QScroller*)qthis)->scrollerProperties();
   return new QScrollerProperties(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 90, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 96, column 28>
 //   // proto: static Qt::GestureType QScroller::grabbedGesture(QObject * target);
 // _ZN9QScroller14grabbedGestureEP7QObject grabbedGesture(class QObject *)
 extern "C"
@@ -254,7 +253,7 @@ C_ZN9QScroller14grabbedGestureEP7QObject(QObject * arg1) {
   QScroller::grabbedGesture(arg1);
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 111, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 117, column 10>
 //   // proto:  void QScroller::setSnapPositionsY(const QList<qreal> & positions);
 // _ZN9QScroller17setSnapPositionsYERK5QListIdE setSnapPositionsY(const QList<qreal> &)
 extern "C"
@@ -263,7 +262,7 @@ C_ZN9QScroller17setSnapPositionsYERK5QListIdE(void *qthis,
 const QList<qreal>* arg1) {
   ((QScroller*)qthis)->setSnapPositionsY(*((const QList<qreal>*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 85, column 23>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 91, column 23>
 //   // proto: static QScroller * QScroller::scroller(QObject * target);
 // _ZN9QScroller8scrollerEP7QObject scroller(class QObject *)
 extern "C"
@@ -273,7 +272,7 @@ C_ZN9QScroller8scrollerEP7QObject(QObject * arg1) {
   QScroller::scroller(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 86, column 29>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 92, column 29>
 //   // proto: static const QScroller * QScroller::scroller(const QObject * target);
 // _ZN9QScroller8scrollerEPK7QObject scroller(const class QObject *)
 extern "C"
@@ -283,7 +282,7 @@ C_ZN9QScroller8scrollerEPK7QObject(const QObject * arg1) {
   QScroller::scroller(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 116, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 122, column 10>
 //   // proto:  void QScroller::scrollTo(const QPointF & pos);
 // _ZN9QScroller8scrollToERK7QPointF scrollTo(const class QPointF &)
 extern "C"
@@ -292,7 +291,7 @@ C_ZN9QScroller8scrollToERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QScroller*)qthis)->scrollTo(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 96, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 102, column 14>
 //   // proto:  QObject * QScroller::target();
 // _ZNK9QScroller6targetEv target()
 extern "C"
@@ -302,7 +301,7 @@ C_ZNK9QScroller6targetEv(void *qthis) {
   ((QScroller*)qthis)->target();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 105, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 111, column 13>
 //   // proto:  QPointF QScroller::pixelPerMeter();
 // _ZNK9QScroller13pixelPerMeterEv pixelPerMeter()
 extern "C"
@@ -312,7 +311,7 @@ C_ZNK9QScroller13pixelPerMeterEv(void *qthis) {
   ((QScroller*)qthis)->pixelPerMeter();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 89, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscroller.h', line 95, column 28>
 //   // proto: static Qt::GestureType QScroller::grabGesture(QObject * target, QScroller::ScrollerGestureType gestureType);
 // _ZN9QScroller11grabGestureEP7QObjectNS_19ScrollerGestureTypeE grabGesture(class QObject *, enum QScroller::ScrollerGestureType)
 extern "C"

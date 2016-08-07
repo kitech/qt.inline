@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qlayout.h
 // dst-file: /src/widgets/qlayout.cxx
 //
@@ -37,7 +37,7 @@ int QLayout_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 89, column 10>
 //   // proto:  void QLayout::setContentsMargins(int left, int top, int right, int bottom);
 // _ZN7QLayout18setContentsMarginsEiiii setContentsMargins(int, int, int, int)
 extern "C"
@@ -52,7 +52,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 96, column 10>
 //   // proto:  bool QLayout::setAlignment(QLayout * l, Qt::Alignment alignment);
 // _ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE setAlignment(class QLayout *, Qt::Alignment)
 extern "C"
@@ -65,7 +65,7 @@ Qt::Alignment* arg2) {
 *((Qt::Alignment*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 78, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 84, column 9>
 //   // proto:  int QLayout::spacing();
 // _ZNK7QLayout7spacingEv spacing()
 extern "C"
@@ -75,14 +75,14 @@ C_ZNK7QLayout7spacingEv(void *qthis) {
   ((QLayout*)qthis)->spacing();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 74, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 80, column 5>
 //   // proto:  void QLayout::QLayout();
 extern "C"
 QLayout*
 C_ZN7QLayoutC2Ev() {
   // auto ret = new QLayout();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 101, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 107, column 11>
 //   // proto:  QRect QLayout::geometry();
 // _ZNK7QLayout8geometryEv geometry()
 extern "C"
@@ -92,7 +92,7 @@ C_ZNK7QLayout8geometryEv(void *qthis) {
   ((QLayout*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 118, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 124, column 17>
 //   // proto:  int QLayout::count();
 // _ZNK7QLayout5countEv count()
 extern "C"
@@ -102,7 +102,7 @@ C_ZNK7QLayout5countEv(void *qthis) {
   ((QLayout*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 113, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 119, column 11>
 //   // proto:  QSize QLayout::maximumSize();
 // _ZNK7QLayout11maximumSizeEv maximumSize()
 extern "C"
@@ -112,7 +112,7 @@ C_ZNK7QLayout11maximumSizeEv(void *qthis) {
   ((QLayout*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 95, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 101, column 10>
 //   // proto:  void QLayout::setMenuBar(QWidget * w);
 // _ZN7QLayout10setMenuBarEP7QWidget setMenuBar(class QWidget *)
 extern "C"
@@ -121,7 +121,7 @@ C_ZN7QLayout10setMenuBarEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QLayout*)qthis)->setMenuBar(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 117, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 123, column 17>
 //   // proto:  int QLayout::indexOf(QWidget * );
 // _ZNK7QLayout7indexOfEP7QWidget indexOf(class QWidget *)
 extern "C"
@@ -132,7 +132,7 @@ QWidget * arg1) {
   ((QLayout*)qthis)->indexOf(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 137, column 10>
 //   // proto:  void QLayout::setEnabled(bool );
 // _ZN7QLayout10setEnabledEb setEnabled(_Bool)
 extern "C"
@@ -141,7 +141,7 @@ C_ZN7QLayout10setEnabledEb(void *qthis,
 bool arg1) {
   ((QLayout*)qthis)->setEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 112, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 118, column 11>
 //   // proto:  QSize QLayout::minimumSize();
 // _ZNK7QLayout11minimumSizeEv minimumSize()
 extern "C"
@@ -151,7 +151,7 @@ C_ZNK7QLayout11minimumSizeEv(void *qthis) {
   ((QLayout*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 116, column 26>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 122, column 26>
 //   // proto:  QLayoutItem * QLayout::takeAt(int index);
 // _ZN7QLayout6takeAtEi takeAt(int)
 extern "C"
@@ -162,7 +162,7 @@ int arg1) {
   ((QLayout*)qthis)->takeAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 120, column 31>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 126, column 31>
 //   // proto:  QSizePolicy::ControlTypes QLayout::controlTypes();
 // _ZNK7QLayout12controlTypesEv controlTypes()
 extern "C"
@@ -172,7 +172,7 @@ C_ZNK7QLayout12controlTypesEv(void *qthis) {
   ((QLayout*)qthis)->controlTypes();
   return new QFlags<QSizePolicy::ControlType>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 127, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 133, column 11>
 //   // proto:  QSize QLayout::totalMaximumSize();
 // _ZNK7QLayout16totalMaximumSizeEv totalMaximumSize()
 extern "C"
@@ -182,7 +182,7 @@ C_ZNK7QLayout16totalMaximumSizeEv(void *qthis) {
   ((QLayout*)qthis)->totalMaximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 106, column 10>
 //   // proto:  void QLayout::invalidate();
 // _ZN7QLayout10invalidateEv invalidate()
 extern "C"
@@ -190,7 +190,7 @@ void
 C_ZN7QLayout10invalidateEv(void *qthis) {
   ((QLayout*)qthis)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 103, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 109, column 10>
 //   // proto:  void QLayout::update();
 // _ZN7QLayout6updateEv update()
 extern "C"
@@ -198,7 +198,7 @@ void
 C_ZN7QLayout6updateEv(void *qthis) {
   ((QLayout*)qthis)->update();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 87, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 93, column 11>
 //   // proto:  QRect QLayout::contentsRect();
 // _ZNK7QLayout12contentsRectEv contentsRect()
 extern "C"
@@ -208,7 +208,7 @@ C_ZNK7QLayout12contentsRectEv(void *qthis) {
   ((QLayout*)qthis)->contentsRect();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 128, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 134, column 11>
 //   // proto:  QSize QLayout::totalSizeHint();
 // _ZNK7QLayout13totalSizeHintEv totalSizeHint()
 extern "C"
@@ -218,14 +218,14 @@ C_ZNK7QLayout13totalSizeHintEv(void *qthis) {
   ((QLayout*)qthis)->totalSizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 73, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 79, column 5>
 //   // proto:  void QLayout::QLayout(QWidget * parent);
 extern "C"
 QLayout*
 C_ZN7QLayoutC2EP7QWidget(QWidget * arg1) {
   // auto ret = new QLayout(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 95, column 10>
 //   // proto:  bool QLayout::setAlignment(QWidget * w, Qt::Alignment alignment);
 // _ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE setAlignment(class QWidget *, Qt::Alignment)
 extern "C"
@@ -238,7 +238,7 @@ Qt::Alignment* arg2) {
 *((Qt::Alignment*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 106, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 112, column 18>
 //   // proto:  void QLayout::addItem(QLayoutItem * );
 // _ZN7QLayout7addItemEP11QLayoutItem addItem(class QLayoutItem *)
 extern "C"
@@ -247,7 +247,7 @@ C_ZN7QLayout7addItemEP11QLayoutItem(void *qthis,
 QLayoutItem * arg1) {
   ((QLayout*)qthis)->addItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 125, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 131, column 9>
 //   // proto:  int QLayout::totalHeightForWidth(int w);
 // _ZNK7QLayout19totalHeightForWidthEi totalHeightForWidth(int)
 extern "C"
@@ -258,7 +258,7 @@ int arg1) {
   ((QLayout*)qthis)->totalHeightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 86, column 10>
 //   // proto:  void QLayout::setMargin(int );
 // _ZN7QLayout9setMarginEi setMargin(int)
 extern "C"
@@ -267,7 +267,7 @@ C_ZN7QLayout9setMarginEi(void *qthis,
 int arg1) {
   ((QLayout*)qthis)->setMargin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 119, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 125, column 10>
 //   // proto:  bool QLayout::isEmpty();
 // _ZNK7QLayout7isEmptyEv isEmpty()
 extern "C"
@@ -277,7 +277,7 @@ C_ZNK7QLayout7isEmptyEv(void *qthis) {
   ((QLayout*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 105, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 111, column 10>
 //   // proto:  void QLayout::addWidget(QWidget * w);
 // _ZN7QLayout9addWidgetEP7QWidget addWidget(class QWidget *)
 extern "C"
@@ -286,7 +286,7 @@ C_ZN7QLayout9addWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QLayout*)qthis)->addWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 99, column 10>
 //   // proto:  void QLayout::setSizeConstraint(QLayout::SizeConstraint );
 // _ZN7QLayout17setSizeConstraintENS_14SizeConstraintE setSizeConstraint(enum QLayout::SizeConstraint)
 extern "C"
@@ -295,7 +295,7 @@ C_ZN7QLayout17setSizeConstraintENS_14SizeConstraintE(void *qthis,
 QLayout::SizeConstraint arg1) {
   ((QLayout*)qthis)->setSizeConstraint(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 91, column 10>
 //   // proto:  void QLayout::getContentsMargins(int * left, int * top, int * right, int * bottom);
 // _ZNK7QLayout18getContentsMarginsEPiS0_S0_S0_ getContentsMargins(int *, int *, int *, int *)
 extern "C"
@@ -310,7 +310,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 123, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 129, column 18>
 //   // proto:  QLayoutItem * QLayout::replaceWidget(QWidget * from, QWidget * to, Qt::FindChildOptions options);
 // _ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE replaceWidget(class QWidget *, class QWidget *, Qt::FindChildOptions)
 extern "C"
@@ -325,7 +325,7 @@ arg2,
 *((Qt::FindChildOptions*)arg3));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 129, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 135, column 14>
 //   // proto:  QLayout * QLayout::layout();
 // _ZN7QLayout6layoutEv layout()
 extern "C"
@@ -335,7 +335,7 @@ C_ZN7QLayout6layoutEv(void *qthis) {
   ((QLayout*)qthis)->layout();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 108, column 10>
 //   // proto:  bool QLayout::activate();
 // _ZN7QLayout8activateEv activate()
 extern "C"
@@ -345,7 +345,7 @@ C_ZN7QLayout8activateEv(void *qthis) {
   ((QLayout*)qthis)->activate();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 132, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 138, column 10>
 //   // proto:  bool QLayout::isEnabled();
 // _ZNK7QLayout9isEnabledEv isEnabled()
 extern "C"
@@ -360,7 +360,7 @@ extern "C"
 void C_ZN7QLayoutD2Ev(void *qthis) {
   delete (QLayout*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 77, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 83, column 9>
 //   // proto:  int QLayout::margin();
 // _ZNK7QLayout6marginEv margin()
 extern "C"
@@ -370,7 +370,7 @@ C_ZNK7QLayout6marginEv(void *qthis) {
   ((QLayout*)qthis)->margin();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 111, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 117, column 22>
 //   // proto:  Qt::Orientations QLayout::expandingDirections();
 // _ZNK7QLayout19expandingDirectionsEv expandingDirections()
 extern "C"
@@ -380,7 +380,7 @@ C_ZNK7QLayout19expandingDirectionsEv(void *qthis) {
   ((QLayout*)qthis)->expandingDirections();
   return new QFlags<Qt::Orientation>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 87, column 10>
 //   // proto:  void QLayout::setSpacing(int );
 // _ZN7QLayout10setSpacingEi setSpacing(int)
 extern "C"
@@ -389,7 +389,7 @@ C_ZN7QLayout10setSpacingEi(void *qthis,
 int arg1) {
   ((QLayout*)qthis)->setSpacing(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 96, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 102, column 14>
 //   // proto:  QWidget * QLayout::menuBar();
 // _ZNK7QLayout7menuBarEv menuBar()
 extern "C"
@@ -399,7 +399,7 @@ C_ZNK7QLayout7menuBarEv(void *qthis) {
   ((QLayout*)qthis)->menuBar();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 56, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 62, column 5>
 //   // proto:  const QMetaObject * QLayout::metaObject();
 // _ZNK7QLayout10metaObjectEv metaObject()
 extern "C"
@@ -409,7 +409,7 @@ C_ZNK7QLayout10metaObjectEv(void *qthis) {
   ((QLayout*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 115, column 26>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 121, column 26>
 //   // proto:  QLayoutItem * QLayout::itemAt(int index);
 // _ZNK7QLayout6itemAtEi itemAt(int)
 extern "C"
@@ -420,7 +420,7 @@ int arg1) {
   ((QLayout*)qthis)->itemAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 98, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 104, column 14>
 //   // proto:  QWidget * QLayout::parentWidget();
 // _ZNK7QLayout12parentWidgetEv parentWidget()
 extern "C"
@@ -430,7 +430,7 @@ C_ZNK7QLayout12parentWidgetEv(void *qthis) {
   ((QLayout*)qthis)->parentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 114, column 10>
 //   // proto:  void QLayout::removeWidget(QWidget * w);
 // _ZN7QLayout12removeWidgetEP7QWidget removeWidget(class QWidget *)
 extern "C"
@@ -439,7 +439,7 @@ C_ZN7QLayout12removeWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QLayout*)qthis)->removeWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 94, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 100, column 20>
 //   // proto:  QLayout::SizeConstraint QLayout::sizeConstraint();
 // _ZNK7QLayout14sizeConstraintEv sizeConstraint()
 extern "C"
@@ -449,7 +449,7 @@ C_ZNK7QLayout14sizeConstraintEv(void *qthis) {
   ((QLayout*)qthis)->sizeConstraint();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 115, column 10>
 //   // proto:  void QLayout::removeItem(QLayoutItem * );
 // _ZN7QLayout10removeItemEP11QLayoutItem removeItem(class QLayoutItem *)
 extern "C"
@@ -458,7 +458,7 @@ C_ZN7QLayout10removeItemEP11QLayoutItem(void *qthis,
 QLayoutItem * arg1) {
   ((QLayout*)qthis)->removeItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 86, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 92, column 14>
 //   // proto:  QMargins QLayout::contentsMargins();
 // _ZNK7QLayout15contentsMarginsEv contentsMargins()
 extern "C"
@@ -468,7 +468,7 @@ C_ZNK7QLayout15contentsMarginsEv(void *qthis) {
   ((QLayout*)qthis)->contentsMargins();
   return new QMargins(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 126, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 132, column 11>
 //   // proto:  QSize QLayout::totalMinimumSize();
 // _ZNK7QLayout16totalMinimumSizeEv totalMinimumSize()
 extern "C"
@@ -478,7 +478,7 @@ C_ZNK7QLayout16totalMinimumSizeEv(void *qthis) {
   ((QLayout*)qthis)->totalMinimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 114, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 120, column 18>
 //   // proto:  void QLayout::setGeometry(const QRect & );
 // _ZN7QLayout11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -487,7 +487,7 @@ C_ZN7QLayout11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QLayout*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 135, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 141, column 18>
 //   // proto: static QSize QLayout::closestAcceptableSize(const QWidget * w, const QSize & s);
 // _ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize closestAcceptableSize(const class QWidget *, const class QSize &)
 extern "C"
@@ -499,7 +499,7 @@ const QSize* arg2) {
 *((const QSize*)arg2));
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayout.h', line 90, column 10>
 //   // proto:  void QLayout::setContentsMargins(const QMargins & margins);
 // _ZN7QLayout18setContentsMarginsERK8QMargins setContentsMargins(const class QMargins &)
 extern "C"

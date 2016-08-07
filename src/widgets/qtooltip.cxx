@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qtooltip.h
 // dst-file: /src/widgets/qtooltip.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qtooltip_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 52, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 58, column 24>
 //   // proto: static void QToolTip::hideText();
 if (true) {
   auto f = [](QToolTip flythis) {
@@ -45,7 +45,7 @@ int QToolTip_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 60, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 66, column 17>
 //   // proto: static void QToolTip::setFont(const QFont & );
 // _ZN8QToolTip7setFontERK5QFont setFont(const class QFont &)
 extern "C"
@@ -53,7 +53,7 @@ void
 C_ZN8QToolTip7setFontERK5QFont(const QFont* arg1) {
   QToolTip::setFont(*((const QFont*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 57, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 63, column 21>
 //   // proto: static QPalette QToolTip::palette();
 // _ZN8QToolTip7paletteEv palette()
 extern "C"
@@ -63,7 +63,7 @@ C_ZN8QToolTip7paletteEv() {
   QToolTip::palette();
   return new QPalette(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 52, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 58, column 24>
 //   // proto: static void QToolTip::hideText();
 // _ZN8QToolTip8hideTextEv hideText()
 extern "C"
@@ -71,7 +71,7 @@ void
 C_ZN8QToolTip8hideTextEv() {
   QToolTip::hideText();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 50, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 56, column 17>
 //   // proto: static void QToolTip::showText(const QPoint & pos, const QString & text, QWidget * w, const QRect & rect);
 // _ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRect showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &)
 extern "C"
@@ -85,7 +85,7 @@ const QRect* arg4) {
 arg3,
 *((const QRect*)arg4));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 51, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 57, column 17>
 //   // proto: static void QToolTip::showText(const QPoint & pos, const QString & text, QWidget * w, const QRect & rect, int msecShowTime);
 // _ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRecti showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &, int)
 extern "C"
@@ -101,7 +101,7 @@ arg3,
 *((const QRect*)arg4),
 arg5);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 55, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 61, column 20>
 //   // proto: static QString QToolTip::text();
 // _ZN8QToolTip4textEv text()
 extern "C"
@@ -111,7 +111,7 @@ C_ZN8QToolTip4textEv() {
   QToolTip::text();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 59, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 65, column 18>
 //   // proto: static QFont QToolTip::font();
 // _ZN8QToolTip4fontEv font()
 extern "C"
@@ -121,7 +121,7 @@ C_ZN8QToolTip4fontEv() {
   QToolTip::font();
   return new QFont(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 58, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 64, column 17>
 //   // proto: static void QToolTip::setPalette(const QPalette & );
 // _ZN8QToolTip10setPaletteERK8QPalette setPalette(const class QPalette &)
 extern "C"
@@ -129,7 +129,7 @@ void
 C_ZN8QToolTip10setPaletteERK8QPalette(const QPalette* arg1) {
   QToolTip::setPalette(*((const QPalette*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 49, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 55, column 17>
 //   // proto: static void QToolTip::showText(const QPoint & pos, const QString & text, QWidget * w);
 // _ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidget showText(const class QPoint &, const class QString &, class QWidget *)
 extern "C"
@@ -141,7 +141,7 @@ QWidget * arg3) {
 *((const QString*)arg2),
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 54, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtooltip.h', line 60, column 17>
 //   // proto: static bool QToolTip::isVisible();
 // _ZN8QToolTip9isVisibleEv isVisible()
 extern "C"

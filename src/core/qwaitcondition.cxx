@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qwaitcondition.h
 // dst-file: /src/core/qwaitcondition.cxx
 //
@@ -32,7 +32,7 @@ int QWaitCondition_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 63, column 10>
 //   // proto:  bool QWaitCondition::wait(QReadWriteLock * lockedReadWriteLock, unsigned long time);
 // _ZN14QWaitCondition4waitEP14QReadWriteLockm wait(class QReadWriteLock *, unsigned long)
 extern "C"
@@ -45,7 +45,7 @@ unsigned long arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 62, column 10>
 //   // proto:  bool QWaitCondition::wait(QMutex * lockedMutex, unsigned long time);
 // _ZN14QWaitCondition4waitEP6QMutexm wait(class QMutex *, unsigned long)
 extern "C"
@@ -58,7 +58,7 @@ unsigned long arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 66, column 10>
 //   // proto:  void QWaitCondition::wakeAll();
 // _ZN14QWaitCondition7wakeAllEv wakeAll()
 extern "C"
@@ -66,7 +66,7 @@ void
 C_ZN14QWaitCondition7wakeAllEv(void *qthis) {
   ((QWaitCondition*)qthis)->wakeAll();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 65, column 10>
 //   // proto:  void QWaitCondition::wakeOne();
 // _ZN14QWaitCondition7wakeOneEv wakeOne()
 extern "C"
@@ -79,7 +79,7 @@ extern "C"
 void C_ZN14QWaitConditionD2Ev(void *qthis) {
   delete (QWaitCondition*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 59, column 5>
 //   // proto:  void QWaitCondition::QWaitCondition();
 extern "C"
 QWaitCondition*

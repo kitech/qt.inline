@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qfinalstate.h
 // dst-file: /src/core/qfinalstate.cxx
 //
@@ -32,7 +32,7 @@ int QFinalState_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 54, column 5>
 //   // proto:  void QFinalState::QFinalState(QState * parent);
 extern "C"
 QFinalState*
@@ -45,7 +45,7 @@ extern "C"
 void C_ZN11QFinalStateD2Ev(void *qthis) {
   delete (QFinalState*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 52, column 5>
 //   // proto:  const QMetaObject * QFinalState::metaObject();
 // _ZNK11QFinalState10metaObjectEv metaObject()
 extern "C"

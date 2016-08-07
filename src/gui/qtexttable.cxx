@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qtexttable.h
 // dst-file: /src/gui/qtexttable.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qtexttable_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 59, column 5>
 //   // proto:  void QTextTableCell::QTextTableCell(const QTextTableCell & o);
 if (true) {
   auto f = [](const QTextTableCell & arg1) {
@@ -29,7 +29,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 66, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 72, column 17>
 //   // proto:  bool QTextTableCell::isValid();
 if (true) {
   auto f = [](QTextTableCell flythis) {
@@ -39,7 +39,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK14QTextTableCell7isValidEv isValid()
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 57, column 5>
 //   // proto:  void QTextTableCell::QTextTableCell();
 if (true) {
   auto f = []() {
@@ -47,7 +47,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 122, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 128, column 22>
 //   // proto:  QTextTableFormat QTextTable::format();
 if (true) {
   auto f = [](QTextTable flythis) {
@@ -77,7 +77,7 @@ int QTextTable_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 59, column 5>
 //   // proto:  void QTextTableCell::QTextTableCell(const QTextTableCell & o);
 extern "C"
 QTextTableCell*
@@ -85,7 +85,7 @@ C_ZN14QTextTableCellC2ERKS_(const QTextTableCell* arg1) {
   auto ret = new QTextTableCell(*((const QTextTableCell*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 63, column 10>
 //   // proto:  void QTextTableCell::setFormat(const QTextCharFormat & format);
 // _ZN14QTextTableCell9setFormatERK15QTextCharFormat setFormat(const class QTextCharFormat &)
 extern "C"
@@ -94,7 +94,7 @@ C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *qthis,
 const QTextCharFormat* arg1) {
   ((QTextTableCell*)qthis)->setFormat(*((const QTextCharFormat*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 71, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 77, column 9>
 //   // proto:  int QTextTableCell::lastPosition();
 // _ZNK14QTextTableCell12lastPositionEv lastPosition()
 extern "C"
@@ -109,7 +109,7 @@ extern "C"
 void C_ZN14QTextTableCellD2Ev(void *qthis) {
   delete (QTextTableCell*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 63, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 69, column 9>
 //   // proto:  int QTextTableCell::rowSpan();
 // _ZNK14QTextTableCell7rowSpanEv rowSpan()
 extern "C"
@@ -119,7 +119,7 @@ C_ZNK14QTextTableCell7rowSpanEv(void *qthis) {
   ((QTextTableCell*)qthis)->rowSpan();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 70, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 76, column 9>
 //   // proto:  int QTextTableCell::firstPosition();
 // _ZNK14QTextTableCell13firstPositionEv firstPosition()
 extern "C"
@@ -129,7 +129,7 @@ C_ZNK14QTextTableCell13firstPositionEv(void *qthis) {
   ((QTextTableCell*)qthis)->firstPosition();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 78, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 84, column 26>
 //   // proto:  QTextFrame::iterator QTextTableCell::begin();
 // _ZNK14QTextTableCell5beginEv begin()
 extern "C"
@@ -139,7 +139,7 @@ C_ZNK14QTextTableCell5beginEv(void *qthis) {
   ((QTextTableCell*)qthis)->begin();
   return new QTextFrame::iterator(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 79, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 85, column 26>
 //   // proto:  QTextFrame::iterator QTextTableCell::end();
 // _ZNK14QTextTableCell3endEv end()
 extern "C"
@@ -149,7 +149,7 @@ C_ZNK14QTextTableCell3endEv(void *qthis) {
   ((QTextTableCell*)qthis)->end();
   return new QTextFrame::iterator(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 81, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 87, column 9>
 //   // proto:  int QTextTableCell::tableCellFormatIndex();
 // _ZNK14QTextTableCell20tableCellFormatIndexEv tableCellFormatIndex()
 extern "C"
@@ -159,7 +159,7 @@ C_ZNK14QTextTableCell20tableCellFormatIndexEv(void *qthis) {
   ((QTextTableCell*)qthis)->tableCellFormatIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 64, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 70, column 9>
 //   // proto:  int QTextTableCell::columnSpan();
 // _ZNK14QTextTableCell10columnSpanEv columnSpan()
 extern "C"
@@ -169,7 +169,7 @@ C_ZNK14QTextTableCell10columnSpanEv(void *qthis) {
   ((QTextTableCell*)qthis)->columnSpan();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 58, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 64, column 21>
 //   // proto:  QTextCharFormat QTextTableCell::format();
 // _ZNK14QTextTableCell6formatEv format()
 extern "C"
@@ -179,7 +179,7 @@ C_ZNK14QTextTableCell6formatEv(void *qthis) {
   ((QTextTableCell*)qthis)->format();
   return new QTextCharFormat(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 60, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 66, column 9>
 //   // proto:  int QTextTableCell::row();
 // _ZNK14QTextTableCell3rowEv row()
 extern "C"
@@ -189,7 +189,7 @@ C_ZNK14QTextTableCell3rowEv(void *qthis) {
   ((QTextTableCell*)qthis)->row();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 66, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 72, column 17>
 //   // proto:  bool QTextTableCell::isValid();
 // _ZNK14QTextTableCell7isValidEv isValid()
 extern "C"
@@ -199,7 +199,7 @@ C_ZNK14QTextTableCell7isValidEv(void *qthis) {
   ((QTextTableCell*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 69, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 75, column 17>
 //   // proto:  QTextCursor QTextTableCell::lastCursorPosition();
 // _ZNK14QTextTableCell18lastCursorPositionEv lastCursorPosition()
 extern "C"
@@ -209,7 +209,7 @@ C_ZNK14QTextTableCell18lastCursorPositionEv(void *qthis) {
   ((QTextTableCell*)qthis)->lastCursorPosition();
   return new QTextCursor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 61, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 67, column 9>
 //   // proto:  int QTextTableCell::column();
 // _ZNK14QTextTableCell6columnEv column()
 extern "C"
@@ -219,7 +219,7 @@ C_ZNK14QTextTableCell6columnEv(void *qthis) {
   ((QTextTableCell*)qthis)->column();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 74, column 17>
 //   // proto:  QTextCursor QTextTableCell::firstCursorPosition();
 // _ZNK14QTextTableCell19firstCursorPositionEv firstCursorPosition()
 extern "C"
@@ -229,7 +229,7 @@ C_ZNK14QTextTableCell19firstCursorPositionEv(void *qthis) {
   ((QTextTableCell*)qthis)->firstCursorPosition();
   return new QTextCursor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 57, column 5>
 //   // proto:  void QTextTableCell::QTextTableCell();
 extern "C"
 QTextTableCell*
@@ -237,7 +237,7 @@ C_ZN14QTextTableCellC2Ev() {
   auto ret = new QTextTableCell();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 114, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 120, column 20>
 //   // proto:  QTextTableCell QTextTable::cellAt(int row, int col);
 // _ZNK10QTextTable6cellAtEii cellAt(int, int)
 extern "C"
@@ -250,7 +250,7 @@ int arg2) {
 arg2);
   return new QTextTableCell(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 111, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 117, column 9>
 //   // proto:  int QTextTable::rows();
 // _ZNK10QTextTable4rowsEv rows()
 extern "C"
@@ -260,7 +260,7 @@ C_ZNK10QTextTable4rowsEv(void *qthis) {
   ((QTextTable*)qthis)->rows();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 104, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 110, column 10>
 //   // proto:  void QTextTable::removeRows(int pos, int num);
 // _ZN10QTextTable10removeRowsEii removeRows(int, int)
 extern "C"
@@ -271,7 +271,7 @@ int arg2) {
   ((QTextTable*)qthis)->removeRows(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 112, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 118, column 9>
 //   // proto:  int QTextTable::columns();
 // _ZNK10QTextTable7columnsEv columns()
 extern "C"
@@ -281,7 +281,7 @@ C_ZNK10QTextTable7columnsEv(void *qthis) {
   ((QTextTable*)qthis)->columns();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 108, column 10>
 //   // proto:  void QTextTable::appendRows(int count);
 // _ZN10QTextTable10appendRowsEi appendRows(int)
 extern "C"
@@ -290,7 +290,7 @@ C_ZN10QTextTable10appendRowsEi(void *qthis,
 int arg1) {
   ((QTextTable*)qthis)->appendRows(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 105, column 10>
 //   // proto:  void QTextTable::resize(int rows, int cols);
 // _ZN10QTextTable6resizeEii resize(int, int)
 extern "C"
@@ -301,7 +301,7 @@ int arg2) {
   ((QTextTable*)qthis)->resize(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 116, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 122, column 20>
 //   // proto:  QTextTableCell QTextTable::cellAt(const QTextCursor & c);
 // _ZNK10QTextTable6cellAtERK11QTextCursor cellAt(const class QTextCursor &)
 extern "C"
@@ -312,7 +312,7 @@ const QTextCursor* arg1) {
   ((QTextTable*)qthis)->cellAt(*((const QTextCursor*)arg1));
   return new QTextTableCell(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 127, column 10>
 //   // proto:  void QTextTable::setFormat(const QTextTableFormat & format);
 // _ZN10QTextTable9setFormatERK16QTextTableFormat setFormat(const class QTextTableFormat &)
 extern "C"
@@ -321,7 +321,7 @@ C_ZN10QTextTable9setFormatERK16QTextTableFormat(void *qthis,
 const QTextTableFormat* arg1) {
   ((QTextTable*)qthis)->setFormat(*((const QTextTableFormat*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 107, column 10>
 //   // proto:  void QTextTable::insertColumns(int pos, int num);
 // _ZN10QTextTable13insertColumnsEii insertColumns(int, int)
 extern "C"
@@ -332,7 +332,7 @@ int arg2) {
   ((QTextTable*)qthis)->insertColumns(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 115, column 10>
 //   // proto:  void QTextTable::splitCell(int row, int col, int numRows, int numCols);
 // _ZN10QTextTable9splitCellEiiii splitCell(int, int, int, int)
 extern "C"
@@ -347,7 +347,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 107, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 113, column 10>
 //   // proto:  void QTextTable::mergeCells(int row, int col, int numRows, int numCols);
 // _ZN10QTextTable10mergeCellsEiiii mergeCells(int, int, int, int)
 extern "C"
@@ -362,7 +362,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 106, column 10>
 //   // proto:  void QTextTable::insertRows(int pos, int num);
 // _ZN10QTextTable10insertRowsEii insertRows(int, int)
 extern "C"
@@ -378,7 +378,7 @@ extern "C"
 void C_ZN10QTextTableD2Ev(void *qthis) {
   delete (QTextTable*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 96, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 102, column 14>
 //   // proto:  void QTextTable::QTextTable(QTextDocument * doc);
 extern "C"
 QTextTable*
@@ -386,7 +386,7 @@ C_ZN10QTextTableC2EP13QTextDocument(QTextDocument * arg1) {
   auto ret = new QTextTable(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 115, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 121, column 20>
 //   // proto:  QTextTableCell QTextTable::cellAt(int position);
 // _ZNK10QTextTable6cellAtEi cellAt(int)
 extern "C"
@@ -397,7 +397,7 @@ int arg1) {
   ((QTextTable*)qthis)->cellAt(arg1);
   return new QTextTableCell(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 118, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 124, column 17>
 //   // proto:  QTextCursor QTextTable::rowStart(const QTextCursor & c);
 // _ZNK10QTextTable8rowStartERK11QTextCursor rowStart(const class QTextCursor &)
 extern "C"
@@ -408,7 +408,7 @@ const QTextCursor* arg1) {
   ((QTextTable*)qthis)->rowStart(*((const QTextCursor*)arg1));
   return new QTextCursor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 122, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 128, column 22>
 //   // proto:  QTextTableFormat QTextTable::format();
 // _ZNK10QTextTable6formatEv format()
 extern "C"
@@ -418,7 +418,7 @@ C_ZNK10QTextTable6formatEv(void *qthis) {
   ((QTextTable*)qthis)->format();
   return new QTextTableFormat(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 119, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 125, column 17>
 //   // proto:  QTextCursor QTextTable::rowEnd(const QTextCursor & c);
 // _ZNK10QTextTable6rowEndERK11QTextCursor rowEnd(const class QTextCursor &)
 extern "C"
@@ -429,7 +429,7 @@ const QTextCursor* arg1) {
   ((QTextTable*)qthis)->rowEnd(*((const QTextCursor*)arg1));
   return new QTextCursor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 94, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 100, column 5>
 //   // proto:  const QMetaObject * QTextTable::metaObject();
 // _ZNK10QTextTable10metaObjectEv metaObject()
 extern "C"
@@ -439,7 +439,7 @@ C_ZNK10QTextTable10metaObjectEv(void *qthis) {
   ((QTextTable*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 105, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 111, column 10>
 //   // proto:  void QTextTable::removeColumns(int pos, int num);
 // _ZN10QTextTable13removeColumnsEii removeColumns(int, int)
 extern "C"
@@ -450,7 +450,7 @@ int arg2) {
   ((QTextTable*)qthis)->removeColumns(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 103, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 109, column 10>
 //   // proto:  void QTextTable::appendColumns(int count);
 // _ZN10QTextTable13appendColumnsEi appendColumns(int)
 extern "C"
@@ -459,7 +459,7 @@ C_ZN10QTextTable13appendColumnsEi(void *qthis,
 int arg1) {
   ((QTextTable*)qthis)->appendColumns(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtexttable.h', line 114, column 10>
 //   // proto:  void QTextTable::mergeCells(const QTextCursor & cursor);
 // _ZN10QTextTable10mergeCellsERK11QTextCursor mergeCells(const class QTextCursor &)
 extern "C"

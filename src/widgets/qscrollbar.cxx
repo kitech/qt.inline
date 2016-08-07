@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qscrollbar.h
 // dst-file: /src/widgets/qscrollbar.cxx
 //
@@ -33,7 +33,7 @@ int QScrollBar_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 63, column 10>
 //   // proto:  bool QScrollBar::event(QEvent * event);
 // _ZN10QScrollBar5eventEP6QEvent event(class QEvent *)
 extern "C"
@@ -44,7 +44,7 @@ QEvent * arg1) {
   ((QScrollBar*)qthis)->event(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 56, column 5>
 //   // proto:  const QMetaObject * QScrollBar::metaObject();
 // _ZNK10QScrollBar10metaObjectEv metaObject()
 extern "C"
@@ -54,7 +54,7 @@ C_ZNK10QScrollBar10metaObjectEv(void *qthis) {
   ((QScrollBar*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 56, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 62, column 11>
 //   // proto:  QSize QScrollBar::sizeHint();
 // _ZNK10QScrollBar8sizeHintEv sizeHint()
 extern "C"
@@ -64,7 +64,7 @@ C_ZNK10QScrollBar8sizeHintEv(void *qthis) {
   ((QScrollBar*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 58, column 14>
 //   // proto:  void QScrollBar::QScrollBar(QWidget * parent);
 extern "C"
 QScrollBar*
@@ -77,13 +77,14 @@ extern "C"
 void C_ZN10QScrollBarD2Ev(void *qthis) {
   delete (QScrollBar*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollbar.h', line 59, column 14>
 //   // proto:  void QScrollBar::QScrollBar(Qt::Orientation , QWidget * parent);
 extern "C"
 QScrollBar*
 C_ZN10QScrollBarC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
 QWidget * arg2) {
-  auto ret = new QScrollBar(*((Qt::Orientation*)arg1), arg2);
+  auto ret = new QScrollBar(*((Qt::Orientation*)arg1),
+arg2);
   return ret;
 }
 // <= ext block end

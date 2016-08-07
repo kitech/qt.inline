@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qfuturewatcher.h
 // dst-file: /src/core/qfuturewatcher.cxx
 //
@@ -20,7 +20,7 @@
 
 // main block begin =>
 void __keep_qfuturewatcher_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 182, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 188, column 14>
 //   // proto:  void QFutureWatcher<void>::QFutureWatcher(QObject * _parent);
 if (true) {
   auto f = [](QObject * arg1) {
@@ -28,7 +28,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 189, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 195, column 19>
 //   // proto:  QFuture<void> QFutureWatcher<void>::future();
 if (true) {
   auto f = [](QFutureWatcher<void> flythis) {
@@ -38,7 +38,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK14QFutureWatcherIvE6futureEv future()
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 188, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 194, column 10>
 //   // proto:  void QFutureWatcher<void>::setFuture(const QFuture<void> & future);
 if (true) {
   auto f = [](QFutureWatcher<void> flythis, const QFuture<void> & arg1) {
@@ -68,7 +68,7 @@ int QFutureWatcher_void__Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 83, column 10>
 //   // proto:  void QFutureWatcherBase::finished();
 // _ZN18QFutureWatcherBase8finishedEv finished()
 extern "C"
@@ -76,7 +76,7 @@ void
 C_ZN18QFutureWatcherBase8finishedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->finished();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 71, column 10>
 //   // proto:  bool QFutureWatcherBase::isRunning();
 // _ZNK18QFutureWatcherBase9isRunningEv isRunning()
 extern "C"
@@ -86,7 +86,7 @@ C_ZNK18QFutureWatcherBase9isRunningEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->isRunning();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 95, column 10>
 //   // proto:  void QFutureWatcherBase::setPaused(bool paused);
 // _ZN18QFutureWatcherBase9setPausedEb setPaused(_Bool)
 extern "C"
@@ -95,7 +95,7 @@ C_ZN18QFutureWatcherBase9setPausedEb(void *qthis,
 bool arg1) {
   ((QFutureWatcherBase*)qthis)->setPaused(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 59, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 65, column 9>
 //   // proto:  int QFutureWatcherBase::progressMinimum();
 // _ZNK18QFutureWatcherBase15progressMinimumEv progressMinimum()
 extern "C"
@@ -105,7 +105,7 @@ C_ZNK18QFutureWatcherBase15progressMinimumEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->progressMinimum();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 97, column 10>
 //   // proto:  void QFutureWatcherBase::resume();
 // _ZN18QFutureWatcherBase6resumeEv resume()
 extern "C"
@@ -113,7 +113,7 @@ void
 C_ZN18QFutureWatcherBase6resumeEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->resume();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 57, column 5>
 //   // proto:  const QMetaObject * QFutureWatcherBase::metaObject();
 // _ZNK18QFutureWatcherBase10metaObjectEv metaObject()
 extern "C"
@@ -123,7 +123,7 @@ C_ZNK18QFutureWatcherBase10metaObjectEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 88, column 10>
 //   // proto:  void QFutureWatcherBase::resultsReadyAt(int beginIndex, int endIndex);
 // _ZN18QFutureWatcherBase14resultsReadyAtEii resultsReadyAt(int, int)
 extern "C"
@@ -134,7 +134,7 @@ int arg2) {
   ((QFutureWatcherBase*)qthis)->resultsReadyAt(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 70, column 10>
 //   // proto:  bool QFutureWatcherBase::isFinished();
 // _ZNK18QFutureWatcherBase10isFinishedEv isFinished()
 extern "C"
@@ -144,7 +144,7 @@ C_ZNK18QFutureWatcherBase10isFinishedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->isFinished();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 90, column 10>
 //   // proto:  void QFutureWatcherBase::progressValueChanged(int progressValue);
 // _ZN18QFutureWatcherBase20progressValueChangedEi progressValueChanged(int)
 extern "C"
@@ -153,7 +153,7 @@ C_ZN18QFutureWatcherBase20progressValueChangedEi(void *qthis,
 int arg1) {
   ((QFutureWatcherBase*)qthis)->progressValueChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 60, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 66, column 9>
 //   // proto:  int QFutureWatcherBase::progressMaximum();
 // _ZNK18QFutureWatcherBase15progressMaximumEv progressMaximum()
 extern "C"
@@ -163,7 +163,7 @@ C_ZNK18QFutureWatcherBase15progressMaximumEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->progressMaximum();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 79, column 10>
 //   // proto:  bool QFutureWatcherBase::event(QEvent * event);
 // _ZN18QFutureWatcherBase5eventEP6QEvent event(class QEvent *)
 extern "C"
@@ -174,7 +174,7 @@ QEvent * arg1) {
   ((QFutureWatcherBase*)qthis)->event(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 91, column 10>
 //   // proto:  void QFutureWatcherBase::progressTextChanged(const QString & progressText);
 // _ZN18QFutureWatcherBase19progressTextChangedERK7QString progressTextChanged(const class QString &)
 extern "C"
@@ -183,7 +183,7 @@ C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QFutureWatcherBase*)qthis)->progressTextChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 72, column 10>
 //   // proto:  bool QFutureWatcherBase::isCanceled();
 // _ZNK18QFutureWatcherBase10isCanceledEv isCanceled()
 extern "C"
@@ -193,7 +193,7 @@ C_ZNK18QFutureWatcherBase10isCanceledEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->isCanceled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 87, column 10>
 //   // proto:  void QFutureWatcherBase::resultReadyAt(int resultIndex);
 // _ZN18QFutureWatcherBase13resultReadyAtEi resultReadyAt(int)
 extern "C"
@@ -202,7 +202,7 @@ C_ZN18QFutureWatcherBase13resultReadyAtEi(void *qthis,
 int arg1) {
   ((QFutureWatcherBase*)qthis)->resultReadyAt(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 58, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 64, column 9>
 //   // proto:  int QFutureWatcherBase::progressValue();
 // _ZNK18QFutureWatcherBase13progressValueEv progressValue()
 extern "C"
@@ -212,7 +212,7 @@ C_ZNK18QFutureWatcherBase13progressValueEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->progressValue();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 69, column 10>
 //   // proto:  bool QFutureWatcherBase::isStarted();
 // _ZNK18QFutureWatcherBase9isStartedEv isStarted()
 extern "C"
@@ -222,7 +222,7 @@ C_ZNK18QFutureWatcherBase9isStartedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->isStarted();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 85, column 10>
 //   // proto:  void QFutureWatcherBase::paused();
 // _ZN18QFutureWatcherBase6pausedEv paused()
 extern "C"
@@ -230,7 +230,7 @@ void
 C_ZN18QFutureWatcherBase6pausedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->paused();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 82, column 10>
 //   // proto:  void QFutureWatcherBase::started();
 // _ZN18QFutureWatcherBase7startedEv started()
 extern "C"
@@ -238,7 +238,7 @@ void
 C_ZN18QFutureWatcherBase7startedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->started();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 77, column 10>
 //   // proto:  void QFutureWatcherBase::setPendingResultsLimit(int limit);
 // _ZN18QFutureWatcherBase22setPendingResultsLimitEi setPendingResultsLimit(int)
 extern "C"
@@ -247,7 +247,7 @@ C_ZN18QFutureWatcherBase22setPendingResultsLimitEi(void *qthis,
 int arg1) {
   ((QFutureWatcherBase*)qthis)->setPendingResultsLimit(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 86, column 10>
 //   // proto:  void QFutureWatcherBase::resumed();
 // _ZN18QFutureWatcherBase7resumedEv resumed()
 extern "C"
@@ -255,7 +255,7 @@ void
 C_ZN18QFutureWatcherBase7resumedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->resumed();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 94, column 10>
 //   // proto:  void QFutureWatcherBase::cancel();
 // _ZN18QFutureWatcherBase6cancelEv cancel()
 extern "C"
@@ -263,7 +263,7 @@ void
 C_ZN18QFutureWatcherBase6cancelEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->cancel();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 89, column 10>
 //   // proto:  void QFutureWatcherBase::progressRangeChanged(int minimum, int maximum);
 // _ZN18QFutureWatcherBase20progressRangeChangedEii progressRangeChanged(int, int)
 extern "C"
@@ -274,7 +274,7 @@ int arg2) {
   ((QFutureWatcherBase*)qthis)->progressRangeChanged(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 84, column 10>
 //   // proto:  void QFutureWatcherBase::canceled();
 // _ZN18QFutureWatcherBase8canceledEv canceled()
 extern "C"
@@ -282,7 +282,7 @@ void
 C_ZN18QFutureWatcherBase8canceledEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->canceled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 73, column 10>
 //   // proto:  bool QFutureWatcherBase::isPaused();
 // _ZNK18QFutureWatcherBase8isPausedEv isPaused()
 extern "C"
@@ -292,7 +292,7 @@ C_ZNK18QFutureWatcherBase8isPausedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->isPaused();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 96, column 10>
 //   // proto:  void QFutureWatcherBase::pause();
 // _ZN18QFutureWatcherBase5pauseEv pause()
 extern "C"
@@ -300,7 +300,7 @@ void
 C_ZN18QFutureWatcherBase5pauseEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->pause();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 61, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 67, column 13>
 //   // proto:  QString QFutureWatcherBase::progressText();
 // _ZNK18QFutureWatcherBase12progressTextEv progressText()
 extern "C"
@@ -310,14 +310,14 @@ C_ZNK18QFutureWatcherBase12progressTextEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->progressText();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 61, column 14>
 //   // proto:  void QFutureWatcherBase::QFutureWatcherBase(QObject * parent);
 extern "C"
 QFutureWatcherBase*
 C_ZN18QFutureWatcherBaseC2EP7QObject(QObject * arg1) {
   // auto ret = new QFutureWatcherBase(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 98, column 10>
 //   // proto:  void QFutureWatcherBase::togglePaused();
 // _ZN18QFutureWatcherBase12togglePausedEv togglePaused()
 extern "C"
@@ -325,7 +325,7 @@ void
 C_ZN18QFutureWatcherBase12togglePausedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->togglePaused();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 75, column 10>
 //   // proto:  void QFutureWatcherBase::waitForFinished();
 // _ZN18QFutureWatcherBase15waitForFinishedEv waitForFinished()
 extern "C"
@@ -333,7 +333,7 @@ void
 C_ZN18QFutureWatcherBase15waitForFinishedEv(void *qthis) {
   ((QFutureWatcherBase*)qthis)->waitForFinished();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 182, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 188, column 14>
 //   // proto:  void QFutureWatcher<void>::QFutureWatcher(QObject * _parent);
 extern "C"
 QFutureWatcher<void>*
@@ -341,7 +341,7 @@ C_ZN14QFutureWatcherIvEC2EP7QObject(QObject * arg1) {
   auto ret = new QFutureWatcher<void>(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 189, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 195, column 19>
 //   // proto:  QFuture<void> QFutureWatcher<void>::future();
 // _ZNK14QFutureWatcherIvE6futureEv future()
 extern "C"
@@ -356,7 +356,7 @@ extern "C"
 void C_ZN14QFutureWatcherIvED2Ev(void *qthis) {
   delete (QFutureWatcher<void>*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 188, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfuturewatcher.h', line 194, column 10>
 //   // proto:  void QFutureWatcher<void>::setFuture(const QFuture<void> & future);
 // _ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE setFuture(const QFuture<void> &)
 extern "C"

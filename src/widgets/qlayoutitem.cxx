@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qlayoutitem.h
 // dst-file: /src/widgets/qlayoutitem.cxx
 //
@@ -22,7 +22,7 @@
 
 // main block begin =>
 void __keep_qlayoutitem_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 56, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 62, column 21>
 //   // proto:  void QLayoutItem::QLayoutItem(Qt::Alignment alignment);
 if (true) {
   auto f = [](Qt::Alignment arg1) {
@@ -30,7 +30,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 74, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 80, column 19>
 //   // proto:  Qt::Alignment QLayoutItem::alignment();
 if (true) {
   auto f = []() {
@@ -39,7 +39,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QLayoutItem9alignmentEv alignment()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 105, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 111, column 17>
 //   // proto:  QSizePolicy QSpacerItem::sizePolicy();
 if (true) {
   auto f = [](QSpacerItem flythis) {
@@ -49,7 +49,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QSpacerItem10sizePolicyEv sizePolicy()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 88, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 94, column 5>
 //   // proto:  void QSpacerItem::QSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData);
 if (true) {
   auto f = [](int arg1, int arg2, QSizePolicy::Policy arg3, QSizePolicy::Policy arg4) {
@@ -57,7 +57,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 119, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 125, column 14>
 //   // proto:  void QWidgetItem::QWidgetItem(QWidget * w);
 if (true) {
   auto f = [](QWidget * arg1) {
@@ -97,7 +97,7 @@ int QWidgetItemV2_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 72, column 26>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 78, column 26>
 //   // proto:  QSpacerItem * QLayoutItem::spacerItem();
 // _ZN11QLayoutItem10spacerItemEv spacerItem()
 extern "C"
@@ -107,7 +107,7 @@ C_ZN11QLayoutItem10spacerItemEv(void *qthis) {
   ((QLayoutItem*)qthis)->spacerItem();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 76, column 39>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 82, column 39>
 //   // proto:  QSizePolicy::ControlTypes QLayoutItem::controlTypes();
 // _ZNK11QLayoutItem12controlTypesEv controlTypes()
 extern "C"
@@ -117,7 +117,7 @@ C_ZNK11QLayoutItem12controlTypesEv(void *qthis) {
   ((QLayoutItem*)qthis)->controlTypes();
   return new QFlags<QSizePolicy::ControlType>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 59, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 65, column 19>
 //   // proto:  QSize QLayoutItem::minimumSize();
 // _ZNK11QLayoutItem11minimumSizeEv minimumSize()
 extern "C"
@@ -127,14 +127,14 @@ C_ZNK11QLayoutItem11minimumSizeEv(void *qthis) {
   ((QLayoutItem*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 56, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 62, column 21>
 //   // proto:  void QLayoutItem::QLayoutItem(Qt::Alignment alignment);
 extern "C"
 QLayoutItem*
 C_ZN11QLayoutItemC2E6QFlagsIN2Qt13AlignmentFlagEE(Qt::Alignment* arg1) {
   // auto ret = new QLayoutItem(*((Qt::Alignment*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 70, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 76, column 22>
 //   // proto:  QWidget * QLayoutItem::widget();
 // _ZN11QLayoutItem6widgetEv widget()
 extern "C"
@@ -144,7 +144,7 @@ C_ZN11QLayoutItem6widgetEv(void *qthis) {
   ((QLayoutItem*)qthis)->widget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 68, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 74, column 18>
 //   // proto:  void QLayoutItem::invalidate();
 // _ZN11QLayoutItem10invalidateEv invalidate()
 extern "C"
@@ -152,7 +152,7 @@ void
 C_ZN11QLayoutItem10invalidateEv(void *qthis) {
   ((QLayoutItem*)qthis)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 62, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 68, column 18>
 //   // proto:  void QLayoutItem::setGeometry(const QRect & );
 // _ZN11QLayoutItem11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -161,7 +161,7 @@ C_ZN11QLayoutItem11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QLayoutItem*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 61, column 30>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 67, column 30>
 //   // proto:  Qt::Orientations QLayoutItem::expandingDirections();
 // _ZNK11QLayoutItem19expandingDirectionsEv expandingDirections()
 extern "C"
@@ -171,7 +171,7 @@ C_ZNK11QLayoutItem19expandingDirectionsEv(void *qthis) {
   ((QLayoutItem*)qthis)->expandingDirections();
   return new QFlags<Qt::Orientation>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 71, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 77, column 22>
 //   // proto:  QLayout * QLayoutItem::layout();
 // _ZN11QLayoutItem6layoutEv layout()
 extern "C"
@@ -181,7 +181,7 @@ C_ZN11QLayoutItem6layoutEv(void *qthis) {
   ((QLayoutItem*)qthis)->layout();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 74, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 80, column 19>
 //   // proto:  Qt::Alignment QLayoutItem::alignment();
 // _ZNK11QLayoutItem9alignmentEv alignment()
 extern "C"
@@ -191,7 +191,7 @@ C_ZNK11QLayoutItem9alignmentEv(void *qthis) {
   ((QLayoutItem*)qthis)->alignment();
   return new QFlags<Qt::AlignmentFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 64, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 70, column 18>
 //   // proto:  bool QLayoutItem::isEmpty();
 // _ZNK11QLayoutItem7isEmptyEv isEmpty()
 extern "C"
@@ -201,7 +201,7 @@ C_ZNK11QLayoutItem7isEmptyEv(void *qthis) {
   ((QLayoutItem*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 58, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 64, column 19>
 //   // proto:  QSize QLayoutItem::sizeHint();
 // _ZNK11QLayoutItem8sizeHintEv sizeHint()
 extern "C"
@@ -216,7 +216,7 @@ extern "C"
 void C_ZN11QLayoutItemD2Ev(void *qthis) {
   delete (QLayoutItem*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 65, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 71, column 18>
 //   // proto:  bool QLayoutItem::hasHeightForWidth();
 // _ZNK11QLayoutItem17hasHeightForWidthEv hasHeightForWidth()
 extern "C"
@@ -226,7 +226,7 @@ C_ZNK11QLayoutItem17hasHeightForWidthEv(void *qthis) {
   ((QLayoutItem*)qthis)->hasHeightForWidth();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 81, column 10>
 //   // proto:  void QLayoutItem::setAlignment(Qt::Alignment a);
 // _ZN11QLayoutItem12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
 extern "C"
@@ -235,7 +235,7 @@ C_ZN11QLayoutItem12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
 Qt::Alignment* arg1) {
   ((QLayoutItem*)qthis)->setAlignment(*((Qt::Alignment*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 66, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 72, column 17>
 //   // proto:  int QLayoutItem::heightForWidth(int );
 // _ZNK11QLayoutItem14heightForWidthEi heightForWidth(int)
 extern "C"
@@ -246,7 +246,7 @@ int arg1) {
   ((QLayoutItem*)qthis)->heightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 63, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 69, column 19>
 //   // proto:  QRect QLayoutItem::geometry();
 // _ZNK11QLayoutItem8geometryEv geometry()
 extern "C"
@@ -256,7 +256,7 @@ C_ZNK11QLayoutItem8geometryEv(void *qthis) {
   ((QLayoutItem*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 60, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 66, column 19>
 //   // proto:  QSize QLayoutItem::maximumSize();
 // _ZNK11QLayoutItem11maximumSizeEv maximumSize()
 extern "C"
@@ -266,7 +266,7 @@ C_ZNK11QLayoutItem11maximumSizeEv(void *qthis) {
   ((QLayoutItem*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 67, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 73, column 17>
 //   // proto:  int QLayoutItem::minimumHeightForWidth(int );
 // _ZNK11QLayoutItem21minimumHeightForWidthEi minimumHeightForWidth(int)
 extern "C"
@@ -277,7 +277,7 @@ int arg1) {
   ((QLayoutItem*)qthis)->minimumHeightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 98, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 104, column 11>
 //   // proto:  QSize QSpacerItem::minimumSize();
 // _ZNK11QSpacerItem11minimumSizeEv minimumSize()
 extern "C"
@@ -287,7 +287,7 @@ C_ZNK11QSpacerItem11minimumSizeEv(void *qthis) {
   ((QSpacerItem*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 105, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 111, column 17>
 //   // proto:  QSizePolicy QSpacerItem::sizePolicy();
 // _ZNK11QSpacerItem10sizePolicyEv sizePolicy()
 extern "C"
@@ -302,7 +302,7 @@ extern "C"
 void C_ZN11QSpacerItemD2Ev(void *qthis) {
   delete (QSpacerItem*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 94, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 100, column 10>
 //   // proto:  void QSpacerItem::changeSize(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData);
 // _ZN11QSpacerItem10changeSizeEiiN11QSizePolicy6PolicyES1_ changeSize(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
 extern "C"
@@ -317,7 +317,7 @@ arg2,
 *((QSizePolicy::Policy*)arg3),
 *((QSizePolicy::Policy*)arg4));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 88, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 94, column 5>
 //   // proto:  void QSpacerItem::QSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData);
 extern "C"
 QSpacerItem*
@@ -325,10 +325,13 @@ C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int arg1,
 int arg2,
 QSizePolicy::Policy* arg3,
 QSizePolicy::Policy* arg4) {
-  auto ret = new QSpacerItem(arg1, arg2, *((QSizePolicy::Policy*)arg3), *((QSizePolicy::Policy*)arg4));
+  auto ret = new QSpacerItem(arg1,
+arg2,
+*((QSizePolicy::Policy*)arg3),
+*((QSizePolicy::Policy*)arg4));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 97, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 103, column 11>
 //   // proto:  QSize QSpacerItem::sizeHint();
 // _ZNK11QSpacerItem8sizeHintEv sizeHint()
 extern "C"
@@ -338,7 +341,7 @@ C_ZNK11QSpacerItem8sizeHintEv(void *qthis) {
   ((QSpacerItem*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 99, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 105, column 11>
 //   // proto:  QSize QSpacerItem::maximumSize();
 // _ZNK11QSpacerItem11maximumSizeEv maximumSize()
 extern "C"
@@ -348,7 +351,7 @@ C_ZNK11QSpacerItem11maximumSizeEv(void *qthis) {
   ((QSpacerItem*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 107, column 10>
 //   // proto:  bool QSpacerItem::isEmpty();
 // _ZNK11QSpacerItem7isEmptyEv isEmpty()
 extern "C"
@@ -358,7 +361,7 @@ C_ZNK11QSpacerItem7isEmptyEv(void *qthis) {
   ((QSpacerItem*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 103, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 109, column 11>
 //   // proto:  QRect QSpacerItem::geometry();
 // _ZNK11QSpacerItem8geometryEv geometry()
 extern "C"
@@ -368,7 +371,7 @@ C_ZNK11QSpacerItem8geometryEv(void *qthis) {
   ((QSpacerItem*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 100, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 106, column 22>
 //   // proto:  Qt::Orientations QSpacerItem::expandingDirections();
 // _ZNK11QSpacerItem19expandingDirectionsEv expandingDirections()
 extern "C"
@@ -378,7 +381,7 @@ C_ZNK11QSpacerItem19expandingDirectionsEv(void *qthis) {
   ((QSpacerItem*)qthis)->expandingDirections();
   return new QFlags<Qt::Orientation>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 108, column 10>
 //   // proto:  void QSpacerItem::setGeometry(const QRect & );
 // _ZN11QSpacerItem11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -387,7 +390,7 @@ C_ZN11QSpacerItem11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QSpacerItem*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 104, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 110, column 18>
 //   // proto:  QSpacerItem * QSpacerItem::spacerItem();
 // _ZN11QSpacerItem10spacerItemEv spacerItem()
 extern "C"
@@ -397,7 +400,7 @@ C_ZN11QSpacerItem10spacerItemEv(void *qthis) {
   ((QSpacerItem*)qthis)->spacerItem();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 122, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 128, column 11>
 //   // proto:  QSize QWidgetItem::sizeHint();
 // _ZNK11QWidgetItem8sizeHintEv sizeHint()
 extern "C"
@@ -407,7 +410,7 @@ C_ZNK11QWidgetItem8sizeHintEv(void *qthis) {
   ((QWidgetItem*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 123, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 129, column 11>
 //   // proto:  QSize QWidgetItem::minimumSize();
 // _ZNK11QWidgetItem11minimumSizeEv minimumSize()
 extern "C"
@@ -417,7 +420,7 @@ C_ZNK11QWidgetItem11minimumSizeEv(void *qthis) {
   ((QWidgetItem*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 137, column 10>
 //   // proto:  bool QWidgetItem::hasHeightForWidth();
 // _ZNK11QWidgetItem17hasHeightForWidthEv hasHeightForWidth()
 extern "C"
@@ -432,7 +435,7 @@ extern "C"
 void C_ZN11QWidgetItemD2Ev(void *qthis) {
   delete (QWidgetItem*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 119, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 125, column 14>
 //   // proto:  void QWidgetItem::QWidgetItem(QWidget * w);
 extern "C"
 QWidgetItem*
@@ -440,7 +443,7 @@ C_ZN11QWidgetItemC2EP7QWidget(QWidget * arg1) {
   auto ret = new QWidgetItem(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 129, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 135, column 22>
 //   // proto:  QWidget * QWidgetItem::widget();
 // _ZN11QWidgetItem6widgetEv widget()
 extern "C"
@@ -450,7 +453,7 @@ C_ZN11QWidgetItem6widgetEv(void *qthis) {
   ((QWidgetItem*)qthis)->widget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 127, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 133, column 10>
 //   // proto:  void QWidgetItem::setGeometry(const QRect & );
 // _ZN11QWidgetItem11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -459,7 +462,7 @@ C_ZN11QWidgetItem11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QWidgetItem*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 125, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 131, column 22>
 //   // proto:  Qt::Orientations QWidgetItem::expandingDirections();
 // _ZNK11QWidgetItem19expandingDirectionsEv expandingDirections()
 extern "C"
@@ -469,7 +472,7 @@ C_ZNK11QWidgetItem19expandingDirectionsEv(void *qthis) {
   ((QWidgetItem*)qthis)->expandingDirections();
   return new QFlags<Qt::Orientation>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 132, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 138, column 9>
 //   // proto:  int QWidgetItem::heightForWidth(int );
 // _ZNK11QWidgetItem14heightForWidthEi heightForWidth(int)
 extern "C"
@@ -480,7 +483,7 @@ int arg1) {
   ((QWidgetItem*)qthis)->heightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 124, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 130, column 11>
 //   // proto:  QSize QWidgetItem::maximumSize();
 // _ZNK11QWidgetItem11maximumSizeEv maximumSize()
 extern "C"
@@ -490,7 +493,7 @@ C_ZNK11QWidgetItem11maximumSizeEv(void *qthis) {
   ((QWidgetItem*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 132, column 10>
 //   // proto:  bool QWidgetItem::isEmpty();
 // _ZNK11QWidgetItem7isEmptyEv isEmpty()
 extern "C"
@@ -500,7 +503,7 @@ C_ZNK11QWidgetItem7isEmptyEv(void *qthis) {
   ((QWidgetItem*)qthis)->isEmpty();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 128, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 134, column 11>
 //   // proto:  QRect QWidgetItem::geometry();
 // _ZNK11QWidgetItem8geometryEv geometry()
 extern "C"
@@ -510,7 +513,7 @@ C_ZNK11QWidgetItem8geometryEv(void *qthis) {
   ((QWidgetItem*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 133, column 31>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 139, column 31>
 //   // proto:  QSizePolicy::ControlTypes QWidgetItem::controlTypes();
 // _ZNK11QWidgetItem12controlTypesEv controlTypes()
 extern "C"
@@ -520,7 +523,7 @@ C_ZNK11QWidgetItem12controlTypesEv(void *qthis) {
   ((QWidgetItem*)qthis)->controlTypes();
   return new QFlags<QSizePolicy::ControlType>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 144, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 150, column 11>
 //   // proto:  QSize QWidgetItemV2::sizeHint();
 // _ZNK13QWidgetItemV28sizeHintEv sizeHint()
 extern "C"
@@ -530,7 +533,7 @@ C_ZNK13QWidgetItemV28sizeHintEv(void *qthis) {
   ((QWidgetItemV2*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 145, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 151, column 11>
 //   // proto:  QSize QWidgetItemV2::minimumSize();
 // _ZNK13QWidgetItemV211minimumSizeEv minimumSize()
 extern "C"
@@ -540,7 +543,7 @@ C_ZNK13QWidgetItemV211minimumSizeEv(void *qthis) {
   ((QWidgetItemV2*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 147, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 153, column 9>
 //   // proto:  int QWidgetItemV2::heightForWidth(int width);
 // _ZNK13QWidgetItemV214heightForWidthEi heightForWidth(int)
 extern "C"
@@ -556,7 +559,7 @@ extern "C"
 void C_ZN13QWidgetItemV2D2Ev(void *qthis) {
   delete (QWidgetItemV2*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 141, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 147, column 14>
 //   // proto:  void QWidgetItemV2::QWidgetItemV2(QWidget * widget);
 extern "C"
 QWidgetItemV2*
@@ -564,7 +567,7 @@ C_ZN13QWidgetItemV2C2EP7QWidget(QWidget * arg1) {
   auto ret = new QWidgetItemV2(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 146, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qlayoutitem.h', line 152, column 11>
 //   // proto:  QSize QWidgetItemV2::maximumSize();
 // _ZNK13QWidgetItemV211maximumSizeEv maximumSize()
 extern "C"

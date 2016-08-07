@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qmovie.h
 // dst-file: /src/gui/qmovie.cxx
 //
@@ -15,8 +15,8 @@
 
 
 #include <qimage.h>
-#include <qbytearray.h>
 #include <qlist.h>
+#include <qbytearray.h>
 #include <qrect.h>
 #include <qsize.h>
 #include <qpixmap.h>
@@ -40,7 +40,7 @@ int QMovie_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 76, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 82, column 14>
 //   // proto:  void QMovie::QMovie(QObject * parent);
 extern "C"
 QMovie*
@@ -48,7 +48,7 @@ C_ZN6QMovieC2EP7QObject(QObject * arg1) {
   auto ret = new QMovie(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 109, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 115, column 9>
 //   // proto:  int QMovie::speed();
 // _ZNK6QMovie5speedEv speed()
 extern "C"
@@ -58,7 +58,7 @@ C_ZNK6QMovie5speedEv(void *qthis) {
   ((QMovie*)qthis)->speed();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 128, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 134, column 10>
 //   // proto:  bool QMovie::jumpToNextFrame();
 // _ZN6QMovie15jumpToNextFrameEv jumpToNextFrame()
 extern "C"
@@ -68,7 +68,7 @@ C_ZN6QMovie15jumpToNextFrameEv(void *qthis) {
   ((QMovie*)qthis)->jumpToNextFrame();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 124, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 130, column 10>
 //   // proto:  void QMovie::frameChanged(int frameNumber);
 // _ZN6QMovie12frameChangedEi frameChanged(int)
 extern "C"
@@ -77,7 +77,7 @@ C_ZN6QMovie12frameChangedEi(void *qthis,
 int arg1) {
   ((QMovie*)qthis)->frameChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 105, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 111, column 9>
 //   // proto:  int QMovie::frameCount();
 // _ZNK6QMovie10frameCountEv frameCount()
 extern "C"
@@ -87,7 +87,7 @@ C_ZNK6QMovie10frameCountEv(void *qthis) {
   ((QMovie*)qthis)->frameCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 112, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 118, column 10>
 //   // proto:  void QMovie::setScaledSize(const QSize & size);
 // _ZN6QMovie13setScaledSizeERK5QSize setScaledSize(const class QSize &)
 extern "C"
@@ -96,7 +96,7 @@ C_ZN6QMovie13setScaledSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QMovie*)qthis)->setScaledSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 89, column 10>
 //   // proto:  void QMovie::setDevice(QIODevice * device);
 // _ZN6QMovie9setDeviceEP9QIODevice setDevice(class QIODevice *)
 extern "C"
@@ -105,7 +105,7 @@ C_ZN6QMovie9setDeviceEP9QIODevice(void *qthis,
 QIODevice * arg1) {
   ((QMovie*)qthis)->setDevice(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 98, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 104, column 12>
 //   // proto:  QImage QMovie::currentImage();
 // _ZNK6QMovie12currentImageEv currentImage()
 extern "C"
@@ -115,7 +115,7 @@ C_ZNK6QMovie12currentImageEv(void *qthis) {
   ((QMovie*)qthis)->currentImage();
   return new QImage(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 103, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 109, column 10>
 //   // proto:  bool QMovie::jumpToFrame(int frameNumber);
 // _ZN6QMovie11jumpToFrameEi jumpToFrame(int)
 extern "C"
@@ -126,7 +126,7 @@ int arg1) {
   ((QMovie*)qthis)->jumpToFrame(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 124, column 10>
 //   // proto:  void QMovie::started();
 // _ZN6QMovie7startedEv started()
 extern "C"
@@ -134,17 +134,19 @@ void
 C_ZN6QMovie7startedEv(void *qthis) {
   ((QMovie*)qthis)->started();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 78, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 84, column 14>
 //   // proto:  void QMovie::QMovie(const QString & fileName, const QByteArray & format, QObject * parent);
 extern "C"
 QMovie*
 C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(const QString* arg1,
 const QByteArray* arg2,
 QObject * arg3) {
-  auto ret = new QMovie(*((const QString*)arg1), *((const QByteArray*)arg2), arg3);
+  auto ret = new QMovie(*((const QString*)arg1),
+*((const QByteArray*)arg2),
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 95, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 101, column 16>
 //   // proto:  QMovie::MovieState QMovie::state();
 // _ZNK6QMovie5stateEv state()
 extern "C"
@@ -154,7 +156,7 @@ C_ZNK6QMovie5stateEv(void *qthis) {
   ((QMovie*)qthis)->state();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 123, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 129, column 10>
 //   // proto:  void QMovie::finished();
 // _ZN6QMovie8finishedEv finished()
 extern "C"
@@ -162,7 +164,7 @@ void
 C_ZN6QMovie8finishedEv(void *qthis) {
   ((QMovie*)qthis)->finished();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 59, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 65, column 5>
 //   // proto:  const QMetaObject * QMovie::metaObject();
 // _ZNK6QMovie10metaObjectEv metaObject()
 extern "C"
@@ -177,7 +179,7 @@ extern "C"
 void C_ZN6QMovieD2Ev(void *qthis) {
   delete (QMovie*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 127, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 133, column 10>
 //   // proto:  void QMovie::start();
 // _ZN6QMovie5startEv start()
 extern "C"
@@ -185,7 +187,7 @@ void
 C_ZN6QMovie5startEv(void *qthis) {
   ((QMovie*)qthis)->start();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 104, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 110, column 9>
 //   // proto:  int QMovie::loopCount();
 // _ZNK6QMovie9loopCountEv loopCount()
 extern "C"
@@ -195,17 +197,19 @@ C_ZNK6QMovie9loopCountEv(void *qthis) {
   ((QMovie*)qthis)->loopCount();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 77, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 83, column 14>
 //   // proto:  void QMovie::QMovie(QIODevice * device, const QByteArray & format, QObject * parent);
 extern "C"
 QMovie*
 C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * arg1,
 const QByteArray* arg2,
 QObject * arg3) {
-  auto ret = new QMovie(arg1, *((const QByteArray*)arg2), arg3);
+  auto ret = new QMovie(arg1,
+*((const QByteArray*)arg2),
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 114, column 15>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 120, column 15>
 //   // proto:  QMovie::CacheMode QMovie::cacheMode();
 // _ZNK6QMovie9cacheModeEv cacheMode()
 extern "C"
@@ -215,7 +219,7 @@ C_ZNK6QMovie9cacheModeEv(void *qthis) {
   ((QMovie*)qthis)->cacheMode();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 95, column 10>
 //   // proto:  void QMovie::setFormat(const QByteArray & format);
 // _ZN6QMovie9setFormatERK10QByteArray setFormat(const class QByteArray &)
 extern "C"
@@ -224,7 +228,7 @@ C_ZN6QMovie9setFormatERK10QByteArray(void *qthis,
 const QByteArray* arg1) {
   ((QMovie*)qthis)->setFormat(*((const QByteArray*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 119, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 125, column 10>
 //   // proto:  void QMovie::resized(const QSize & size);
 // _ZN6QMovie7resizedERK5QSize resized(const class QSize &)
 extern "C"
@@ -233,7 +237,7 @@ C_ZN6QMovie7resizedERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QMovie*)qthis)->resized(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 81, column 30>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 87, column 30>
 //   // proto: static QList<QByteArray> QMovie::supportedFormats();
 // _ZN6QMovie16supportedFormatsEv supportedFormats()
 extern "C"
@@ -243,7 +247,7 @@ C_ZN6QMovie16supportedFormatsEv() {
   QMovie::supportedFormats();
   return new QList<QByteArray>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 97, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 103, column 11>
 //   // proto:  QRect QMovie::frameRect();
 // _ZNK6QMovie9frameRectEv frameRect()
 extern "C"
@@ -253,7 +257,7 @@ C_ZNK6QMovie9frameRectEv(void *qthis) {
   ((QMovie*)qthis)->frameRect();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 121, column 10>
 //   // proto:  void QMovie::setCacheMode(QMovie::CacheMode mode);
 // _ZN6QMovie12setCacheModeENS_9CacheModeE setCacheMode(enum QMovie::CacheMode)
 extern "C"
@@ -262,7 +266,7 @@ C_ZN6QMovie12setCacheModeENS_9CacheModeE(void *qthis,
 QMovie::CacheMode arg1) {
   ((QMovie*)qthis)->setCacheMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 129, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 135, column 10>
 //   // proto:  void QMovie::setPaused(bool paused);
 // _ZN6QMovie9setPausedEb setPaused(_Bool)
 extern "C"
@@ -271,7 +275,7 @@ C_ZN6QMovie9setPausedEb(void *qthis,
 bool arg1) {
   ((QMovie*)qthis)->setPaused(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 111, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 117, column 11>
 //   // proto:  QSize QMovie::scaledSize();
 // _ZN6QMovie10scaledSizeEv scaledSize()
 extern "C"
@@ -281,7 +285,7 @@ C_ZN6QMovie10scaledSizeEv(void *qthis) {
   ((QMovie*)qthis)->scaledSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 127, column 10>
 //   // proto:  void QMovie::stateChanged(QMovie::MovieState state);
 // _ZN6QMovie12stateChangedENS_10MovieStateE stateChanged(class QMovie::MovieState)
 extern "C"
@@ -290,7 +294,7 @@ C_ZN6QMovie12stateChangedENS_10MovieStateE(void *qthis,
 QMovie::MovieState* arg1) {
   ((QMovie*)qthis)->stateChanged(*((QMovie::MovieState*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 84, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 90, column 16>
 //   // proto:  QIODevice * QMovie::device();
 // _ZNK6QMovie6deviceEv device()
 extern "C"
@@ -300,7 +304,7 @@ C_ZNK6QMovie6deviceEv(void *qthis) {
   ((QMovie*)qthis)->device();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 98, column 10>
 //   // proto:  void QMovie::setBackgroundColor(const QColor & color);
 // _ZN6QMovie18setBackgroundColorERK6QColor setBackgroundColor(const class QColor &)
 extern "C"
@@ -309,7 +313,7 @@ C_ZN6QMovie18setBackgroundColorERK6QColor(void *qthis,
 const QColor* arg1) {
   ((QMovie*)qthis)->setBackgroundColor(*((const QColor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 107, column 10>
 //   // proto:  bool QMovie::isValid();
 // _ZNK6QMovie7isValidEv isValid()
 extern "C"
@@ -319,7 +323,7 @@ C_ZNK6QMovie7isValidEv(void *qthis) {
   ((QMovie*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 137, column 10>
 //   // proto:  void QMovie::setSpeed(int percentSpeed);
 // _ZN6QMovie8setSpeedEi setSpeed(int)
 extern "C"
@@ -328,7 +332,7 @@ C_ZN6QMovie8setSpeedEi(void *qthis,
 int arg1) {
   ((QMovie*)qthis)->setSpeed(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 136, column 10>
 //   // proto:  void QMovie::stop();
 // _ZN6QMovie4stopEv stop()
 extern "C"
@@ -336,7 +340,7 @@ void
 C_ZN6QMovie4stopEv(void *qthis) {
   ((QMovie*)qthis)->stop();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 107, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 113, column 9>
 //   // proto:  int QMovie::currentFrameNumber();
 // _ZNK6QMovie18currentFrameNumberEv currentFrameNumber()
 extern "C"
@@ -346,7 +350,7 @@ C_ZNK6QMovie18currentFrameNumberEv(void *qthis) {
   ((QMovie*)qthis)->currentFrameNumber();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 106, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 112, column 9>
 //   // proto:  int QMovie::nextFrameDelay();
 // _ZNK6QMovie14nextFrameDelayEv nextFrameDelay()
 extern "C"
@@ -356,7 +360,7 @@ C_ZNK6QMovie14nextFrameDelayEv(void *qthis) {
   ((QMovie*)qthis)->nextFrameDelay();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 99, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 105, column 13>
 //   // proto:  QPixmap QMovie::currentPixmap();
 // _ZNK6QMovie13currentPixmapEv currentPixmap()
 extern "C"
@@ -366,7 +370,7 @@ C_ZNK6QMovie13currentPixmapEv(void *qthis) {
   ((QMovie*)qthis)->currentPixmap();
   return new QPixmap(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 122, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 128, column 10>
 //   // proto:  void QMovie::error(QImageReader::ImageReaderError error);
 // _ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE error(class QImageReader::ImageReaderError)
 extern "C"
@@ -375,7 +379,7 @@ C_ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(void *qthis,
 QImageReader::ImageReaderError* arg1) {
   ((QMovie*)qthis)->error(*((QImageReader::ImageReaderError*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 90, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 96, column 16>
 //   // proto:  QByteArray QMovie::format();
 // _ZNK6QMovie6formatEv format()
 extern "C"
@@ -385,7 +389,7 @@ C_ZNK6QMovie6formatEv(void *qthis) {
   ((QMovie*)qthis)->format();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 87, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 93, column 13>
 //   // proto:  QString QMovie::fileName();
 // _ZNK6QMovie8fileNameEv fileName()
 extern "C"
@@ -395,7 +399,7 @@ C_ZNK6QMovie8fileNameEv(void *qthis) {
   ((QMovie*)qthis)->fileName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 120, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 126, column 10>
 //   // proto:  void QMovie::updated(const QRect & rect);
 // _ZN6QMovie7updatedERK5QRect updated(const class QRect &)
 extern "C"
@@ -404,7 +408,7 @@ C_ZN6QMovie7updatedERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QMovie*)qthis)->updated(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 93, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 99, column 12>
 //   // proto:  QColor QMovie::backgroundColor();
 // _ZNK6QMovie15backgroundColorEv backgroundColor()
 extern "C"
@@ -414,7 +418,7 @@ C_ZNK6QMovie15backgroundColorEv(void *qthis) {
   ((QMovie*)qthis)->backgroundColor();
   return new QColor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qmovie.h', line 92, column 10>
 //   // proto:  void QMovie::setFileName(const QString & fileName);
 // _ZN6QMovie11setFileNameERK7QString setFileName(const class QString &)
 extern "C"

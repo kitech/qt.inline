@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qrasterwindow.h
 // dst-file: /src/gui/qrasterwindow.cxx
 //
@@ -32,7 +32,7 @@ int QRasterWindow_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qrasterwindow.h', line 49, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qrasterwindow.h', line 55, column 14>
 //   // proto:  void QRasterWindow::QRasterWindow(QWindow * parent);
 extern "C"
 QRasterWindow*
@@ -40,7 +40,7 @@ C_ZN13QRasterWindowC2EP7QWindow(QWindow * arg1) {
   auto ret = new QRasterWindow(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qrasterwindow.h', line 45, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qrasterwindow.h', line 51, column 5>
 //   // proto:  const QMetaObject * QRasterWindow::metaObject();
 // _ZNK13QRasterWindow10metaObjectEv metaObject()
 extern "C"

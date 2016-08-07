@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qsocketnotifier.h
 // dst-file: /src/core/qsocketnotifier.cxx
 //
@@ -33,7 +33,7 @@ int QSocketNotifier_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 53, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 59, column 13>
 //   // proto:  qintptr QSocketNotifier::socket();
 // _ZNK15QSocketNotifier6socketEv socket()
 extern "C"
@@ -43,7 +43,7 @@ C_ZNK15QSocketNotifier6socketEv(void *qthis) {
   ((QSocketNotifier*)qthis)->socket();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 62, column 10>
 //   // proto:  bool QSocketNotifier::isEnabled();
 // _ZNK15QSocketNotifier9isEnabledEv isEnabled()
 extern "C"
@@ -53,7 +53,7 @@ C_ZNK15QSocketNotifier9isEnabledEv(void *qthis) {
   ((QSocketNotifier*)qthis)->isEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 65, column 10>
 //   // proto:  void QSocketNotifier::setEnabled(bool );
 // _ZN15QSocketNotifier10setEnabledEb setEnabled(_Bool)
 extern "C"
@@ -62,7 +62,7 @@ C_ZN15QSocketNotifier10setEnabledEb(void *qthis,
 bool arg1) {
   ((QSocketNotifier*)qthis)->setEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 60, column 10>
 //   // proto:  QSocketNotifier::Type QSocketNotifier::type();
 // _ZNK15QSocketNotifier4typeEv type()
 extern "C"
@@ -72,17 +72,19 @@ C_ZNK15QSocketNotifier4typeEv(void *qthis) {
   ((QSocketNotifier*)qthis)->type();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 56, column 5>
 //   // proto:  void QSocketNotifier::QSocketNotifier(qintptr socket, QSocketNotifier::Type , QObject * parent);
 extern "C"
 QSocketNotifier*
 C_ZN15QSocketNotifierC2EiNS_4TypeEP7QObject(qintptr arg1,
 QSocketNotifier::Type arg2,
 QObject * arg3) {
-  auto ret = new QSocketNotifier(arg1, arg2, arg3);
+  auto ret = new QSocketNotifier(arg1,
+arg2,
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 44, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 50, column 5>
 //   // proto:  const QMetaObject * QSocketNotifier::metaObject();
 // _ZNK15QSocketNotifier10metaObjectEv metaObject()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstackedlayout.h
 // dst-file: /src/widgets/qstackedlayout.cxx
 //
@@ -33,7 +33,7 @@ int QStackedLayout_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 94, column 10>
 //   // proto:  void QStackedLayout::currentChanged(int index);
 // _ZN14QStackedLayout14currentChangedEi currentChanged(int)
 extern "C"
@@ -42,7 +42,7 @@ C_ZN14QStackedLayout14currentChangedEi(void *qthis,
 int arg1) {
   ((QStackedLayout*)qthis)->currentChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 65, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 71, column 9>
 //   // proto:  int QStackedLayout::insertWidget(int index, QWidget * w);
 // _ZN14QStackedLayout12insertWidgetEiP7QWidget insertWidget(int, class QWidget *)
 extern "C"
@@ -55,7 +55,7 @@ QWidget * arg2) {
 arg2);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 61, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 67, column 14>
 //   // proto:  void QStackedLayout::QStackedLayout(QLayout * parentLayout);
 extern "C"
 QStackedLayout*
@@ -63,7 +63,7 @@ C_ZN14QStackedLayoutC2EP7QLayout(QLayout * arg1) {
   auto ret = new QStackedLayout(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 80, column 10>
 //   // proto:  void QStackedLayout::setStackingMode(QStackedLayout::StackingMode stackingMode);
 // _ZN14QStackedLayout15setStackingModeENS_12StackingModeE setStackingMode(enum QStackedLayout::StackingMode)
 extern "C"
@@ -72,7 +72,7 @@ C_ZN14QStackedLayout15setStackingModeENS_12StackingModeE(void *qthis,
 QStackedLayout::StackingMode arg1) {
   ((QStackedLayout*)qthis)->setStackingMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 60, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 66, column 14>
 //   // proto:  void QStackedLayout::QStackedLayout(QWidget * parent);
 extern "C"
 QStackedLayout*
@@ -80,7 +80,7 @@ C_ZN14QStackedLayoutC2EP7QWidget(QWidget * arg1) {
   auto ret = new QStackedLayout(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 88, column 10>
 //   // proto:  void QStackedLayout::setGeometry(const QRect & rect);
 // _ZN14QStackedLayout11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -89,7 +89,7 @@ C_ZN14QStackedLayout11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QStackedLayout*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 73, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 79, column 18>
 //   // proto:  QStackedLayout::StackingMode QStackedLayout::stackingMode();
 // _ZNK14QStackedLayout12stackingModeEv stackingMode()
 extern "C"
@@ -99,7 +99,7 @@ C_ZNK14QStackedLayout12stackingModeEv(void *qthis) {
   ((QStackedLayout*)qthis)->stackingMode();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 67, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 73, column 14>
 //   // proto:  QWidget * QStackedLayout::currentWidget();
 // _ZNK14QStackedLayout13currentWidgetEv currentWidget()
 extern "C"
@@ -109,7 +109,7 @@ C_ZNK14QStackedLayout13currentWidgetEv(void *qthis) {
   ((QStackedLayout*)qthis)->currentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 81, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 87, column 18>
 //   // proto:  QLayoutItem * QStackedLayout::takeAt(int );
 // _ZN14QStackedLayout6takeAtEi takeAt(int)
 extern "C"
@@ -120,7 +120,7 @@ int arg1) {
   ((QStackedLayout*)qthis)->takeAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 79, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 85, column 11>
 //   // proto:  QSize QStackedLayout::minimumSize();
 // _ZNK14QStackedLayout11minimumSizeEv minimumSize()
 extern "C"
@@ -130,7 +130,7 @@ C_ZNK14QStackedLayout11minimumSizeEv(void *qthis) {
   ((QStackedLayout*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 78, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 84, column 11>
 //   // proto:  QSize QStackedLayout::sizeHint();
 // _ZNK14QStackedLayout8sizeHintEv sizeHint()
 extern "C"
@@ -140,7 +140,7 @@ C_ZNK14QStackedLayout8sizeHintEv(void *qthis) {
   ((QStackedLayout*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 68, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 74, column 9>
 //   // proto:  int QStackedLayout::currentIndex();
 // _ZNK14QStackedLayout12currentIndexEv currentIndex()
 extern "C"
@@ -150,7 +150,7 @@ C_ZNK14QStackedLayout12currentIndexEv(void *qthis) {
   ((QStackedLayout*)qthis)->currentIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 71, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 77, column 9>
 //   // proto:  int QStackedLayout::count();
 // _ZNK14QStackedLayout5countEv count()
 extern "C"
@@ -160,7 +160,7 @@ C_ZNK14QStackedLayout5countEv(void *qthis) {
   ((QStackedLayout*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 83, column 10>
 //   // proto:  void QStackedLayout::addItem(QLayoutItem * item);
 // _ZN14QStackedLayout7addItemEP11QLayoutItem addItem(class QLayoutItem *)
 extern "C"
@@ -169,7 +169,7 @@ C_ZN14QStackedLayout7addItemEP11QLayoutItem(void *qthis,
 QLayoutItem * arg1) {
   ((QStackedLayout*)qthis)->addItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 98, column 10>
 //   // proto:  void QStackedLayout::setCurrentWidget(QWidget * w);
 // _ZN14QStackedLayout16setCurrentWidgetEP7QWidget setCurrentWidget(class QWidget *)
 extern "C"
@@ -178,7 +178,7 @@ C_ZN14QStackedLayout16setCurrentWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QStackedLayout*)qthis)->setCurrentWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 46, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 52, column 5>
 //   // proto:  const QMetaObject * QStackedLayout::metaObject();
 // _ZNK14QStackedLayout10metaObjectEv metaObject()
 extern "C"
@@ -188,7 +188,7 @@ C_ZNK14QStackedLayout10metaObjectEv(void *qthis) {
   ((QStackedLayout*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 97, column 10>
 //   // proto:  void QStackedLayout::setCurrentIndex(int index);
 // _ZN14QStackedLayout15setCurrentIndexEi setCurrentIndex(int)
 extern "C"
@@ -197,7 +197,7 @@ C_ZN14QStackedLayout15setCurrentIndexEi(void *qthis,
 int arg1) {
   ((QStackedLayout*)qthis)->setCurrentIndex(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 87, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 93, column 10>
 //   // proto:  void QStackedLayout::widgetRemoved(int index);
 // _ZN14QStackedLayout13widgetRemovedEi widgetRemoved(int)
 extern "C"
@@ -206,7 +206,7 @@ C_ZN14QStackedLayout13widgetRemovedEi(void *qthis,
 int arg1) {
   ((QStackedLayout*)qthis)->widgetRemoved(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 80, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 86, column 18>
 //   // proto:  QLayoutItem * QStackedLayout::itemAt(int );
 // _ZNK14QStackedLayout6itemAtEi itemAt(int)
 extern "C"
@@ -222,7 +222,7 @@ extern "C"
 void C_ZN14QStackedLayoutD2Ev(void *qthis) {
   delete (QStackedLayout*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 64, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 70, column 9>
 //   // proto:  int QStackedLayout::addWidget(QWidget * w);
 // _ZN14QStackedLayout9addWidgetEP7QWidget addWidget(class QWidget *)
 extern "C"
@@ -233,7 +233,7 @@ QWidget * arg1) {
   ((QStackedLayout*)qthis)->addWidget(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 84, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 90, column 9>
 //   // proto:  int QStackedLayout::heightForWidth(int width);
 // _ZNK14QStackedLayout14heightForWidthEi heightForWidth(int)
 extern "C"
@@ -244,7 +244,7 @@ int arg1) {
   ((QStackedLayout*)qthis)->heightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 89, column 10>
 //   // proto:  bool QStackedLayout::hasHeightForWidth();
 // _ZNK14QStackedLayout17hasHeightForWidthEv hasHeightForWidth()
 extern "C"
@@ -254,7 +254,7 @@ C_ZNK14QStackedLayout17hasHeightForWidthEv(void *qthis) {
   ((QStackedLayout*)qthis)->hasHeightForWidth();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 59, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 65, column 5>
 //   // proto:  void QStackedLayout::QStackedLayout();
 extern "C"
 QStackedLayout*
@@ -262,7 +262,7 @@ C_ZN14QStackedLayoutC2Ev() {
   auto ret = new QStackedLayout();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 70, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstackedlayout.h', line 76, column 14>
 //   // proto:  QWidget * QStackedLayout::widget(int );
 // _ZNK14QStackedLayout6widgetEi widget(int)
 extern "C"

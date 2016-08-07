@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qfactoryinterface.h
 // dst-file: /src/core/qfactoryinterface.cxx
 //
@@ -38,7 +38,7 @@ extern "C"
 void C_ZN17QFactoryInterfaceD2Ev(void *qthis) {
   delete (QFactoryInterface*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfactoryinterface.h', line 46, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qfactoryinterface.h', line 52, column 25>
 //   // proto:  QStringList QFactoryInterface::keys();
 // _ZNK17QFactoryInterface4keysEv keys()
 extern "C"

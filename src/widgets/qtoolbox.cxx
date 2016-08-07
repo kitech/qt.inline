@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qtoolbox.h
 // dst-file: /src/widgets/qtoolbox.cxx
 //
@@ -20,7 +20,7 @@
 
 // main block begin =>
 void __keep_qtoolbox_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 59, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 65, column 9>
 //   // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QString & text);
 if (true) {
   auto f = [](QToolBox flythis, int arg1, QWidget * arg2, const QString & arg3) {
@@ -30,7 +30,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QToolBox10insertItemEiP7QWidgetRK7QString insertItem(int, class QWidget *, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 57, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 63, column 9>
 //   // proto:  int QToolBox::addItem(QWidget * widget, const QString & text);
 if (true) {
   auto f = [](QToolBox flythis, QWidget * arg1, const QString & arg2) {
@@ -40,7 +40,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QToolBox7addItemEP7QWidgetRK7QString addItem(class QWidget *, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 58, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 64, column 9>
 //   // proto:  int QToolBox::addItem(QWidget * widget, const QIcon & icon, const QString & text);
 if (true) {
   auto f = [](QToolBox flythis, QWidget * arg1, const QIcon & arg2, const QString & arg3) {
@@ -64,7 +64,7 @@ int QToolBox_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 68, column 10>
 //   // proto:  void QToolBox::removeItem(int index);
 // _ZN8QToolBox10removeItemEi removeItem(int)
 extern "C"
@@ -73,7 +73,7 @@ C_ZN8QToolBox10removeItemEi(void *qthis,
 int arg1) {
   ((QToolBox*)qthis)->removeItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 59, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 65, column 9>
 //   // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QString & text);
 // _ZN8QToolBox10insertItemEiP7QWidgetRK7QString insertItem(int, class QWidget *, const class QString &)
 extern "C"
@@ -88,7 +88,7 @@ arg2,
 *((const QString*)arg3));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 68, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 74, column 13>
 //   // proto:  QString QToolBox::itemText(int index);
 // _ZNK8QToolBox8itemTextEi itemText(int)
 extern "C"
@@ -99,7 +99,7 @@ int arg1) {
   ((QToolBox*)qthis)->itemText(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 81, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 87, column 9>
 //   // proto:  int QToolBox::indexOf(QWidget * widget);
 // _ZNK8QToolBox7indexOfEP7QWidget indexOf(class QWidget *)
 extern "C"
@@ -110,7 +110,7 @@ QWidget * arg1) {
   ((QToolBox*)qthis)->indexOf(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 75, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 81, column 13>
 //   // proto:  QString QToolBox::itemToolTip(int index);
 // _ZNK8QToolBox11itemToolTipEi itemToolTip(int)
 extern "C"
@@ -121,7 +121,7 @@ int arg1) {
   ((QToolBox*)qthis)->itemToolTip(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 92, column 10>
 //   // proto:  void QToolBox::setCurrentWidget(QWidget * widget);
 // _ZN8QToolBox16setCurrentWidgetEP7QWidget setCurrentWidget(class QWidget *)
 extern "C"
@@ -130,7 +130,7 @@ C_ZN8QToolBox16setCurrentWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QToolBox*)qthis)->setCurrentWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 91, column 10>
 //   // proto:  void QToolBox::setCurrentIndex(int index);
 // _ZN8QToolBox15setCurrentIndexEi setCurrentIndex(int)
 extern "C"
@@ -139,7 +139,7 @@ C_ZN8QToolBox15setCurrentIndexEi(void *qthis,
 int arg1) {
   ((QToolBox*)qthis)->setCurrentIndex(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 76, column 10>
 //   // proto:  void QToolBox::setItemIcon(int index, const QIcon & icon);
 // _ZN8QToolBox11setItemIconEiRK5QIcon setItemIcon(int, const class QIcon &)
 extern "C"
@@ -150,7 +150,7 @@ const QIcon* arg2) {
   ((QToolBox*)qthis)->setItemIcon(arg1,
 *((const QIcon*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 73, column 10>
 //   // proto:  void QToolBox::setItemText(int index, const QString & text);
 // _ZN8QToolBox11setItemTextEiRK7QString setItemText(int, const class QString &)
 extern "C"
@@ -161,7 +161,7 @@ const QString* arg2) {
   ((QToolBox*)qthis)->setItemText(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 82, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 88, column 9>
 //   // proto:  int QToolBox::count();
 // _ZNK8QToolBox5countEv count()
 extern "C"
@@ -171,7 +171,7 @@ C_ZNK8QToolBox5countEv(void *qthis) {
   ((QToolBox*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 55, column 5>
 //   // proto:  const QMetaObject * QToolBox::metaObject();
 // _ZNK8QToolBox10metaObjectEv metaObject()
 extern "C"
@@ -181,7 +181,7 @@ C_ZNK8QToolBox10metaObjectEv(void *qthis) {
   ((QToolBox*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 80, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 86, column 14>
 //   // proto:  QWidget * QToolBox::widget(int index);
 // _ZNK8QToolBox6widgetEi widget(int)
 extern "C"
@@ -192,7 +192,7 @@ int arg1) {
   ((QToolBox*)qthis)->widget(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 80, column 10>
 //   // proto:  void QToolBox::setItemToolTip(int index, const QString & toolTip);
 // _ZN8QToolBox14setItemToolTipEiRK7QString setItemToolTip(int, const class QString &)
 extern "C"
@@ -203,7 +203,7 @@ const QString* arg2) {
   ((QToolBox*)qthis)->setItemToolTip(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 78, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 84, column 9>
 //   // proto:  int QToolBox::currentIndex();
 // _ZNK8QToolBox12currentIndexEv currentIndex()
 extern "C"
@@ -213,7 +213,7 @@ C_ZNK8QToolBox12currentIndexEv(void *qthis) {
   ((QToolBox*)qthis)->currentIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 79, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 85, column 14>
 //   // proto:  QWidget * QToolBox::currentWidget();
 // _ZNK8QToolBox13currentWidgetEv currentWidget()
 extern "C"
@@ -223,7 +223,7 @@ C_ZNK8QToolBox13currentWidgetEv(void *qthis) {
   ((QToolBox*)qthis)->currentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 57, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 63, column 9>
 //   // proto:  int QToolBox::addItem(QWidget * widget, const QString & text);
 // _ZN8QToolBox7addItemEP7QWidgetRK7QString addItem(class QWidget *, const class QString &)
 extern "C"
@@ -236,7 +236,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 71, column 10>
 //   // proto:  bool QToolBox::isItemEnabled(int index);
 // _ZNK8QToolBox13isItemEnabledEi isItemEnabled(int)
 extern "C"
@@ -247,7 +247,7 @@ int arg1) {
   ((QToolBox*)qthis)->isItemEnabled(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 70, column 10>
 //   // proto:  void QToolBox::setItemEnabled(int index, bool enabled);
 // _ZN8QToolBox14setItemEnabledEib setItemEnabled(int, _Bool)
 extern "C"
@@ -258,7 +258,7 @@ bool arg2) {
   ((QToolBox*)qthis)->setItemEnabled(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 95, column 10>
 //   // proto:  void QToolBox::currentChanged(int index);
 // _ZN8QToolBox14currentChangedEi currentChanged(int)
 extern "C"
@@ -267,7 +267,7 @@ C_ZN8QToolBox14currentChangedEi(void *qthis,
 int arg1) {
   ((QToolBox*)qthis)->currentChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 71, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 77, column 11>
 //   // proto:  QIcon QToolBox::itemIcon(int index);
 // _ZNK8QToolBox8itemIconEi itemIcon(int)
 extern "C"
@@ -283,7 +283,7 @@ extern "C"
 void C_ZN8QToolBoxD2Ev(void *qthis) {
   delete (QToolBox*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 58, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 64, column 9>
 //   // proto:  int QToolBox::addItem(QWidget * widget, const QIcon & icon, const QString & text);
 // _ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString addItem(class QWidget *, const class QIcon &, const class QString &)
 extern "C"
@@ -298,7 +298,7 @@ const QString* arg3) {
 *((const QString*)arg3));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 60, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 66, column 9>
 //   // proto:  int QToolBox::insertItem(int index, QWidget * widget, const QIcon & icon, const QString & text);
 // _ZN8QToolBox10insertItemEiP7QWidgetRK5QIconRK7QString insertItem(int, class QWidget *, const class QIcon &, const class QString &)
 extern "C"
@@ -315,13 +315,14 @@ arg2,
 *((const QString*)arg4));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 54, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbox.h', line 60, column 14>
 //   // proto:  void QToolBox::QToolBox(QWidget * parent, Qt::WindowFlags f);
 extern "C"
 QToolBox*
 C_ZN8QToolBoxC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QToolBox(arg1, *((Qt::WindowFlags*)arg2));
+  auto ret = new QToolBox(arg1,
+*((Qt::WindowFlags*)arg2));
   return ret;
 }
 // <= ext block end

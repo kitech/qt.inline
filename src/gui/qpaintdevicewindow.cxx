@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpaintdevicewindow.h
 // dst-file: /src/gui/qpaintdevicewindow.cxx
 //
@@ -32,7 +32,7 @@ int QPaintDeviceWindow_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 58, column 10>
 //   // proto:  void QPaintDeviceWindow::update(const QRegion & region);
 // _ZN18QPaintDeviceWindow6updateERK7QRegion update(const class QRegion &)
 extern "C"
@@ -41,7 +41,7 @@ C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *qthis,
 const QRegion* arg1) {
   ((QPaintDeviceWindow*)qthis)->update(*((const QRegion*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 65, column 10>
 //   // proto:  void QPaintDeviceWindow::update();
 // _ZN18QPaintDeviceWindow6updateEv update()
 extern "C"
@@ -49,7 +49,7 @@ void
 C_ZN18QPaintDeviceWindow6updateEv(void *qthis) {
   ((QPaintDeviceWindow*)qthis)->update();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 53, column 5>
 //   // proto:  const QMetaObject * QPaintDeviceWindow::metaObject();
 // _ZNK18QPaintDeviceWindow10metaObjectEv metaObject()
 extern "C"
@@ -59,7 +59,7 @@ C_ZNK18QPaintDeviceWindow10metaObjectEv(void *qthis) {
   ((QPaintDeviceWindow*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 51, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 57, column 10>
 //   // proto:  void QPaintDeviceWindow::update(const QRect & rect);
 // _ZN18QPaintDeviceWindow6updateERK5QRect update(const class QRect &)
 extern "C"

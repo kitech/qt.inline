@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qcoreapplication.h
 // dst-file: /src/core/qcoreapplication.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qcoreapplication_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 110, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 116, column 30>
 //   // proto: static QCoreApplication * QCoreApplication::instance();
 if (true) {
   auto f = [](QCoreApplication flythis) {
@@ -31,7 +31,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN16QCoreApplication8instanceEv instance()
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 118, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 124, column 17>
 //   // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);
 if (true) {
   auto f = [](QCoreApplication flythis, QObject * arg1, QEvent * arg2) {
@@ -55,7 +55,7 @@ int QCoreApplication_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 120, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 126, column 17>
 //   // proto: static void QCoreApplication::sendPostedEvents(QObject * receiver, int event_type);
 // _ZN16QCoreApplication16sendPostedEventsEP7QObjecti sendPostedEvents(class QObject *, int)
 extern "C"
@@ -65,7 +65,7 @@ int arg2) {
   QCoreApplication::sendPostedEvents(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 141, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 147, column 17>
 //   // proto: static void QCoreApplication::addLibraryPath(const QString & );
 // _ZN16QCoreApplication14addLibraryPathERK7QString addLibraryPath(const class QString &)
 extern "C"
@@ -73,7 +73,7 @@ void
 C_ZN16QCoreApplication14addLibraryPathERK7QString(const QString* arg1) {
   QCoreApplication::addLibraryPath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 136, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 142, column 19>
 //   // proto: static qint64 QCoreApplication::applicationPid();
 // _ZN16QCoreApplication14applicationPidEv applicationPid()
 extern "C"
@@ -83,7 +83,7 @@ C_ZN16QCoreApplication14applicationPidEv() {
   QCoreApplication::applicationPid();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 102, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 108, column 17>
 //   // proto: static void QCoreApplication::setApplicationName(const QString & application);
 // _ZN16QCoreApplication18setApplicationNameERK7QString setApplicationName(const class QString &)
 extern "C"
@@ -91,7 +91,7 @@ void
 C_ZN16QCoreApplication18setApplicationNameERK7QString(const QString* arg1) {
   QCoreApplication::setApplicationName(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 101, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 107, column 20>
 //   // proto: static QString QCoreApplication::organizationName();
 // _ZN16QCoreApplication16organizationNameEv organizationName()
 extern "C"
@@ -101,7 +101,7 @@ C_ZN16QCoreApplication16organizationNameEv() {
   QCoreApplication::organizationName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 164, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 170, column 10>
 //   // proto:  void QCoreApplication::installNativeEventFilter(QAbstractNativeEventFilter * filterObj);
 // _ZN16QCoreApplication24installNativeEventFilterEP26QAbstractNativeEventFilter installNativeEventFilter(class QAbstractNativeEventFilter *)
 extern "C"
@@ -110,7 +110,7 @@ C_ZN16QCoreApplication24installNativeEventFilterEP26QAbstractNativeEventFilter(v
 QAbstractNativeEventFilter * arg1) {
   ((QCoreApplication*)qthis)->installNativeEventFilter(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 110, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 116, column 30>
 //   // proto: static QCoreApplication * QCoreApplication::instance();
 // _ZN16QCoreApplication8instanceEv instance()
 extern "C"
@@ -120,7 +120,7 @@ C_ZN16QCoreApplication8instanceEv() {
   QCoreApplication::instance();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 108, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 114, column 17>
 //   // proto: static bool QCoreApplication::isSetuidAllowed();
 // _ZN16QCoreApplication15isSetuidAllowedEv isSetuidAllowed()
 extern "C"
@@ -130,7 +130,7 @@ C_ZN16QCoreApplication15isSetuidAllowedEv() {
   QCoreApplication::isSetuidAllowed();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 179, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 185, column 10>
 //   // proto:  void QCoreApplication::applicationVersionChanged();
 // _ZN16QCoreApplication25applicationVersionChangedEv applicationVersionChanged()
 extern "C"
@@ -138,7 +138,7 @@ void
 C_ZN16QCoreApplication25applicationVersionChangedEv(void *qthis) {
   ((QCoreApplication*)qthis)->applicationVersionChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 103, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 109, column 20>
 //   // proto: static QString QCoreApplication::applicationName();
 // _ZN16QCoreApplication15applicationNameEv applicationName()
 extern "C"
@@ -148,7 +148,7 @@ C_ZN16QCoreApplication15applicationNameEv() {
   QCoreApplication::applicationName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 107, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 113, column 17>
 //   // proto: static void QCoreApplication::setSetuidAllowed(bool allow);
 // _ZN16QCoreApplication16setSetuidAllowedEb setSetuidAllowed(_Bool)
 extern "C"
@@ -156,7 +156,7 @@ void
 C_ZN16QCoreApplication16setSetuidAllowedEb(bool arg1) {
   QCoreApplication::setSetuidAllowed(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 114, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 120, column 17>
 //   // proto: static void QCoreApplication::processEvents(QEventLoop::ProcessEventsFlags flags);
 // _ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE processEvents(class QEventLoop::ProcessEventsFlags)
 extern "C"
@@ -164,7 +164,7 @@ void
 C_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE(QEventLoop::ProcessEventsFlags* arg1) {
   QCoreApplication::processEvents(*((QEventLoop::ProcessEventsFlags*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 119, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 125, column 17>
 //   // proto: static void QCoreApplication::postEvent(QObject * receiver, QEvent * event, int priority);
 // _ZN16QCoreApplication9postEventEP7QObjectP6QEventi postEvent(class QObject *, class QEvent *, int)
 extern "C"
@@ -176,7 +176,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 95, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 101, column 17>
 //   // proto: static void QCoreApplication::setAttribute(Qt::ApplicationAttribute attribute, bool on);
 // _ZN16QCoreApplication12setAttributeEN2Qt20ApplicationAttributeEb setAttribute(Qt::ApplicationAttribute, _Bool)
 extern "C"
@@ -186,7 +186,7 @@ bool arg2) {
   QCoreApplication::setAttribute(*((Qt::ApplicationAttribute*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 140, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 146, column 24>
 //   // proto: static QStringList QCoreApplication::libraryPaths();
 // _ZN16QCoreApplication12libraryPathsEv libraryPaths()
 extern "C"
@@ -196,7 +196,7 @@ C_ZN16QCoreApplication12libraryPathsEv() {
   QCoreApplication::libraryPaths();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 178, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 184, column 10>
 //   // proto:  void QCoreApplication::applicationNameChanged();
 // _ZN16QCoreApplication22applicationNameChangedEv applicationNameChanged()
 extern "C"
@@ -204,7 +204,7 @@ void
 C_ZN16QCoreApplication22applicationNameChangedEv(void *qthis) {
   ((QCoreApplication*)qthis)->applicationNameChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 142, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 148, column 17>
 //   // proto: static void QCoreApplication::removeLibraryPath(const QString & );
 // _ZN16QCoreApplication17removeLibraryPathERK7QString removeLibraryPath(const class QString &)
 extern "C"
@@ -212,7 +212,7 @@ void
 C_ZN16QCoreApplication17removeLibraryPathERK7QString(const QString* arg1) {
   QCoreApplication::removeLibraryPath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 150, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 156, column 20>
 //   // proto: static QString QCoreApplication::translate(const char * context, const char * key, const char * disambiguation, int n);
 // _ZN16QCoreApplication9translateEPKcS1_S1_i translate(const char *, const char *, const char *, int)
 extern "C"
@@ -228,7 +228,7 @@ arg3,
 arg4);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 135, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 141, column 20>
 //   // proto: static QString QCoreApplication::applicationFilePath();
 // _ZN16QCoreApplication19applicationFilePathEv applicationFilePath()
 extern "C"
@@ -238,7 +238,7 @@ C_ZN16QCoreApplication19applicationFilePathEv() {
   QCoreApplication::applicationFilePath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 96, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 102, column 17>
 //   // proto: static bool QCoreApplication::testAttribute(Qt::ApplicationAttribute attribute);
 // _ZN16QCoreApplication13testAttributeEN2Qt20ApplicationAttributeE testAttribute(Qt::ApplicationAttribute)
 extern "C"
@@ -248,7 +248,7 @@ C_ZN16QCoreApplication13testAttributeEN2Qt20ApplicationAttributeE(Qt::Applicatio
   QCoreApplication::testAttribute(*((Qt::ApplicationAttribute*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 147, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 153, column 17>
 //   // proto: static bool QCoreApplication::removeTranslator(QTranslator * messageFile);
 // _ZN16QCoreApplication16removeTranslatorEP11QTranslator removeTranslator(class QTranslator *)
 extern "C"
@@ -258,7 +258,7 @@ C_ZN16QCoreApplication16removeTranslatorEP11QTranslator(QTranslator * arg1) {
   QCoreApplication::removeTranslator(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 100, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 106, column 17>
 //   // proto: static void QCoreApplication::setOrganizationName(const QString & orgName);
 // _ZN16QCoreApplication19setOrganizationNameERK7QString setOrganizationName(const class QString &)
 extern "C"
@@ -266,7 +266,7 @@ void
 C_ZN16QCoreApplication19setOrganizationNameERK7QString(const QString* arg1) {
   QCoreApplication::setOrganizationName(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 116, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 122, column 17>
 //   // proto: static void QCoreApplication::exit(int retcode);
 // _ZN16QCoreApplication4exitEi exit(int)
 extern "C"
@@ -274,7 +274,7 @@ void
 C_ZN16QCoreApplication4exitEi(int arg1) {
   QCoreApplication::exit(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 105, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 111, column 20>
 //   // proto: static QString QCoreApplication::applicationVersion();
 // _ZN16QCoreApplication18applicationVersionEv applicationVersion()
 extern "C"
@@ -284,7 +284,7 @@ C_ZN16QCoreApplication18applicationVersionEv() {
   QCoreApplication::applicationVersion();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 171, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 177, column 17>
 //   // proto: static void QCoreApplication::quit();
 // _ZN16QCoreApplication4quitEv quit()
 extern "C"
@@ -292,7 +292,7 @@ void
 C_ZN16QCoreApplication4quitEv() {
   QCoreApplication::quit();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 131, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 137, column 17>
 //   // proto: static bool QCoreApplication::closingDown();
 // _ZN16QCoreApplication11closingDownEv closingDown()
 extern "C"
@@ -302,7 +302,7 @@ C_ZN16QCoreApplication11closingDownEv() {
   QCoreApplication::closingDown();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 168, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 174, column 17>
 //   // proto: static void QCoreApplication::setQuitLockEnabled(bool enabled);
 // _ZN16QCoreApplication18setQuitLockEnabledEb setQuitLockEnabled(_Bool)
 extern "C"
@@ -310,7 +310,7 @@ void
 C_ZN16QCoreApplication18setQuitLockEnabledEb(bool arg1) {
   QCoreApplication::setQuitLockEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 123, column 31>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 129, column 31>
 //   // proto: static bool QCoreApplication::hasPendingEvents();
 // _ZN16QCoreApplication16hasPendingEventsEv hasPendingEvents()
 extern "C"
@@ -320,7 +320,7 @@ C_ZN16QCoreApplication16hasPendingEventsEv() {
   QCoreApplication::hasPendingEvents();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 104, column 17>
 //   // proto: static void QCoreApplication::setOrganizationDomain(const QString & orgDomain);
 // _ZN16QCoreApplication21setOrganizationDomainERK7QString setOrganizationDomain(const class QString &)
 extern "C"
@@ -333,7 +333,7 @@ extern "C"
 void C_ZN16QCoreApplicationD2Ev(void *qthis) {
   delete (QCoreApplication*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 177, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 183, column 10>
 //   // proto:  void QCoreApplication::organizationDomainChanged();
 // _ZN16QCoreApplication25organizationDomainChangedEv organizationDomainChanged()
 extern "C"
@@ -341,7 +341,7 @@ void
 C_ZN16QCoreApplication25organizationDomainChangedEv(void *qthis) {
   ((QCoreApplication*)qthis)->organizationDomainChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 165, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 171, column 10>
 //   // proto:  void QCoreApplication::removeNativeEventFilter(QAbstractNativeEventFilter * filterObj);
 // _ZN16QCoreApplication23removeNativeEventFilterEP26QAbstractNativeEventFilter removeNativeEventFilter(class QAbstractNativeEventFilter *)
 extern "C"
@@ -350,7 +350,7 @@ C_ZN16QCoreApplication23removeNativeEventFilterEP26QAbstractNativeEventFilter(vo
 QAbstractNativeEventFilter * arg1) {
   ((QCoreApplication*)qthis)->removeNativeEventFilter(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 99, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 105, column 20>
 //   // proto: static QString QCoreApplication::organizationDomain();
 // _ZN16QCoreApplication18organizationDomainEv organizationDomain()
 extern "C"
@@ -360,7 +360,7 @@ C_ZN16QCoreApplication18organizationDomainEv() {
   QCoreApplication::organizationDomain();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 146, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 152, column 17>
 //   // proto: static bool QCoreApplication::installTranslator(QTranslator * messageFile);
 // _ZN16QCoreApplication17installTranslatorEP11QTranslator installTranslator(class QTranslator *)
 extern "C"
@@ -370,7 +370,7 @@ C_ZN16QCoreApplication17installTranslatorEP11QTranslator(QTranslator * arg1) {
   QCoreApplication::installTranslator(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 134, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 140, column 20>
 //   // proto: static QString QCoreApplication::applicationDirPath();
 // _ZN16QCoreApplication18applicationDirPathEv applicationDirPath()
 extern "C"
@@ -380,7 +380,7 @@ C_ZN16QCoreApplication18applicationDirPathEv() {
   QCoreApplication::applicationDirPath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 162, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 168, column 17>
 //   // proto: static void QCoreApplication::flush();
 // _ZN16QCoreApplication5flushEv flush()
 extern "C"
@@ -388,7 +388,7 @@ void
 C_ZN16QCoreApplication5flushEv() {
   QCoreApplication::flush();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 113, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 119, column 16>
 //   // proto: static int QCoreApplication::exec();
 // _ZN16QCoreApplication4execEv exec()
 extern "C"
@@ -398,7 +398,7 @@ C_ZN16QCoreApplication4execEv() {
   QCoreApplication::exec();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 93, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 99, column 24>
 //   // proto: static QStringList QCoreApplication::arguments();
 // _ZN16QCoreApplication9argumentsEv arguments()
 extern "C"
@@ -408,7 +408,7 @@ C_ZN16QCoreApplication9argumentsEv() {
   QCoreApplication::arguments();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 139, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 145, column 17>
 //   // proto: static void QCoreApplication::setLibraryPaths(const QStringList & );
 // _ZN16QCoreApplication15setLibraryPathsERK11QStringList setLibraryPaths(const class QStringList &)
 extern "C"
@@ -416,7 +416,7 @@ void
 C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(const QStringList* arg1) {
   QCoreApplication::setLibraryPaths(*((const QStringList*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 125, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 131, column 38>
 //   // proto: static QAbstractEventDispatcher * QCoreApplication::eventDispatcher();
 // _ZN16QCoreApplication15eventDispatcherEv eventDispatcher()
 extern "C"
@@ -426,7 +426,7 @@ C_ZN16QCoreApplication15eventDispatcherEv() {
   QCoreApplication::eventDispatcher();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 130, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 136, column 17>
 //   // proto: static bool QCoreApplication::startingUp();
 // _ZN16QCoreApplication10startingUpEv startingUp()
 extern "C"
@@ -436,7 +436,7 @@ C_ZN16QCoreApplication10startingUpEv() {
   QCoreApplication::startingUp();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 118, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 124, column 17>
 //   // proto: static bool QCoreApplication::sendEvent(QObject * receiver, QEvent * event);
 // _ZN16QCoreApplication9sendEventEP7QObjectP6QEvent sendEvent(class QObject *, class QEvent *)
 extern "C"
@@ -448,7 +448,7 @@ QEvent * arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 128, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 134, column 18>
 //   // proto:  bool QCoreApplication::notify(QObject * , QEvent * );
 // _ZN16QCoreApplication6notifyEP7QObjectP6QEvent notify(class QObject *, class QEvent *)
 extern "C"
@@ -461,7 +461,7 @@ QEvent * arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 167, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 173, column 17>
 //   // proto: static bool QCoreApplication::isQuitLockEnabled();
 // _ZN16QCoreApplication17isQuitLockEnabledEv isQuitLockEnabled()
 extern "C"
@@ -471,7 +471,7 @@ C_ZN16QCoreApplication17isQuitLockEnabledEv() {
   QCoreApplication::isQuitLockEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 176, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 182, column 10>
 //   // proto:  void QCoreApplication::organizationNameChanged();
 // _ZN16QCoreApplication23organizationNameChangedEv organizationNameChanged()
 extern "C"
@@ -479,7 +479,7 @@ void
 C_ZN16QCoreApplication23organizationNameChangedEv(void *qthis) {
   ((QCoreApplication*)qthis)->organizationNameChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 121, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 127, column 17>
 //   // proto: static void QCoreApplication::removePostedEvents(QObject * receiver, int eventType);
 // _ZN16QCoreApplication18removePostedEventsEP7QObjecti removePostedEvents(class QObject *, int)
 extern "C"
@@ -489,7 +489,7 @@ int arg2) {
   QCoreApplication::removePostedEvents(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 72, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 78, column 5>
 //   // proto:  const QMetaObject * QCoreApplication::metaObject();
 // _ZNK16QCoreApplication10metaObjectEv metaObject()
 extern "C"
@@ -499,7 +499,7 @@ C_ZNK16QCoreApplication10metaObjectEv(void *qthis) {
   ((QCoreApplication*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 115, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 121, column 17>
 //   // proto: static void QCoreApplication::processEvents(QEventLoop::ProcessEventsFlags flags, int maxtime);
 // _ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEEi processEvents(class QEventLoop::ProcessEventsFlags, int)
 extern "C"
@@ -509,17 +509,19 @@ int arg2) {
   QCoreApplication::processEvents(*((QEventLoop::ProcessEventsFlags*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 85, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 91, column 5>
 //   // proto:  void QCoreApplication::QCoreApplication(int & argc, char ** argv, int );
 extern "C"
 QCoreApplication*
 C_ZN16QCoreApplicationC2ERiPPci(int* arg1,
 char ** arg2,
 int arg3) {
-  auto ret = new QCoreApplication(*((int*)arg1), arg2, arg3);
+  auto ret = new QCoreApplication(*((int*)arg1),
+arg2,
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 104, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 110, column 17>
 //   // proto: static void QCoreApplication::setApplicationVersion(const QString & version);
 // _ZN16QCoreApplication21setApplicationVersionERK7QString setApplicationVersion(const class QString &)
 extern "C"
@@ -527,7 +529,7 @@ void
 C_ZN16QCoreApplication21setApplicationVersionERK7QString(const QString* arg1) {
   QCoreApplication::setApplicationVersion(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 126, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qcoreapplication.h', line 132, column 17>
 //   // proto: static void QCoreApplication::setEventDispatcher(QAbstractEventDispatcher * eventDispatcher);
 // _ZN16QCoreApplication18setEventDispatcherEP24QAbstractEventDispatcher setEventDispatcher(class QAbstractEventDispatcher *)
 extern "C"

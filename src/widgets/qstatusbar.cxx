@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstatusbar.h
 // dst-file: /src/widgets/qstatusbar.cxx
 //
@@ -38,7 +38,7 @@ extern "C"
 void C_ZN10QStatusBarD2Ev(void *qthis) {
   delete (QStatusBar*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 59, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 65, column 9>
 //   // proto:  int QStatusBar::insertPermanentWidget(int index, QWidget * widget, int stretch);
 // _ZN10QStatusBar21insertPermanentWidgetEiP7QWidgeti insertPermanentWidget(int, class QWidget *, int)
 extern "C"
@@ -53,7 +53,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 66, column 10>
 //   // proto:  void QStatusBar::removeWidget(QWidget * widget);
 // _ZN10QStatusBar12removeWidgetEP7QWidget removeWidget(class QWidget *)
 extern "C"
@@ -62,7 +62,7 @@ C_ZN10QStatusBar12removeWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QStatusBar*)qthis)->removeWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 68, column 10>
 //   // proto:  void QStatusBar::setSizeGripEnabled(bool );
 // _ZN10QStatusBar18setSizeGripEnabledEb setSizeGripEnabled(_Bool)
 extern "C"
@@ -71,7 +71,7 @@ C_ZN10QStatusBar18setSizeGripEnabledEb(void *qthis,
 bool arg1) {
   ((QStatusBar*)qthis)->setSizeGripEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 64, column 10>
 //   // proto:  void QStatusBar::addPermanentWidget(QWidget * widget, int stretch);
 // _ZN10QStatusBar18addPermanentWidgetEP7QWidgeti addPermanentWidget(class QWidget *, int)
 extern "C"
@@ -82,7 +82,7 @@ int arg2) {
   ((QStatusBar*)qthis)->addPermanentWidget(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 69, column 10>
 //   // proto:  bool QStatusBar::isSizeGripEnabled();
 // _ZNK10QStatusBar17isSizeGripEnabledEv isSizeGripEnabled()
 extern "C"
@@ -92,7 +92,7 @@ C_ZNK10QStatusBar17isSizeGripEnabledEv(void *qthis) {
   ((QStatusBar*)qthis)->isSizeGripEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 75, column 10>
 //   // proto:  void QStatusBar::clearMessage();
 // _ZN10QStatusBar12clearMessageEv clearMessage()
 extern "C"
@@ -100,7 +100,7 @@ void
 C_ZN10QStatusBar12clearMessageEv(void *qthis) {
   ((QStatusBar*)qthis)->clearMessage();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 65, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 71, column 13>
 //   // proto:  QString QStatusBar::currentMessage();
 // _ZNK10QStatusBar14currentMessageEv currentMessage()
 extern "C"
@@ -110,7 +110,7 @@ C_ZNK10QStatusBar14currentMessageEv(void *qthis) {
   ((QStatusBar*)qthis)->currentMessage();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 54, column 5>
 //   // proto:  const QMetaObject * QStatusBar::metaObject();
 // _ZNK10QStatusBar10metaObjectEv metaObject()
 extern "C"
@@ -120,7 +120,7 @@ C_ZNK10QStatusBar10metaObjectEv(void *qthis) {
   ((QStatusBar*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 79, column 10>
 //   // proto:  void QStatusBar::messageChanged(const QString & text);
 // _ZN10QStatusBar14messageChangedERK7QString messageChanged(const class QString &)
 extern "C"
@@ -129,7 +129,7 @@ C_ZN10QStatusBar14messageChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QStatusBar*)qthis)->messageChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 74, column 10>
 //   // proto:  void QStatusBar::showMessage(const QString & text, int timeout);
 // _ZN10QStatusBar11showMessageERK7QStringi showMessage(const class QString &, int)
 extern "C"
@@ -140,7 +140,7 @@ int arg2) {
   ((QStatusBar*)qthis)->showMessage(*((const QString*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 57, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 63, column 9>
 //   // proto:  int QStatusBar::insertWidget(int index, QWidget * widget, int stretch);
 // _ZN10QStatusBar12insertWidgetEiP7QWidgeti insertWidget(int, class QWidget *, int)
 extern "C"
@@ -155,7 +155,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 56, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 62, column 10>
 //   // proto:  void QStatusBar::addWidget(QWidget * widget, int stretch);
 // _ZN10QStatusBar9addWidgetEP7QWidgeti addWidget(class QWidget *, int)
 extern "C"
@@ -166,7 +166,7 @@ int arg2) {
   ((QStatusBar*)qthis)->addWidget(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstatusbar.h', line 59, column 14>
 //   // proto:  void QStatusBar::QStatusBar(QWidget * parent);
 extern "C"
 QStatusBar*

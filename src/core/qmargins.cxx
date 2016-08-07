@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qmargins.h
 // dst-file: /src/core/qmargins.cxx
 //
@@ -19,7 +19,7 @@
 
 // main block begin =>
 void __keep_qmargins_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 305, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 311, column 38>
 //   // proto:  QMargins QMarginsF::toMargins();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -29,7 +29,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF9toMarginsEv toMargins()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 290, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 296, column 28>
 //   // proto:  qreal QMarginsF::right();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -39,7 +39,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF5rightEv right()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 286, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 292, column 27>
 //   // proto:  bool QMarginsF::isNull();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -49,7 +49,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 295, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 301, column 35>
 //   // proto:  void QMarginsF::setRight(qreal right);
 if (true) {
   auto f = [](QMarginsF flythis, qreal arg1) {
@@ -59,7 +59,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QMarginsF8setRightEd setRight(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 294, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 300, column 35>
 //   // proto:  void QMarginsF::setTop(qreal top);
 if (true) {
   auto f = [](QMarginsF flythis, qreal arg1) {
@@ -69,7 +69,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QMarginsF6setTopEd setTop(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 288, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 294, column 28>
 //   // proto:  qreal QMarginsF::left();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -79,7 +79,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF4leftEv left()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 282, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 288, column 22>
 //   // proto:  void QMarginsF::QMarginsF();
 if (true) {
   auto f = []() {
@@ -87,7 +87,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 283, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 289, column 22>
 //   // proto:  void QMarginsF::QMarginsF(qreal left, qreal top, qreal right, qreal bottom);
 if (true) {
   auto f = [](qreal arg1, qreal arg2, qreal arg3, qreal arg4) {
@@ -95,7 +95,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 291, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 297, column 28>
 //   // proto:  qreal QMarginsF::bottom();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -105,7 +105,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF6bottomEv bottom()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 284, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 290, column 22>
 //   // proto:  void QMarginsF::QMarginsF(const QMargins & margins);
 if (true) {
   auto f = [](const QMargins & arg1) {
@@ -113,7 +113,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 296, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 302, column 35>
 //   // proto:  void QMarginsF::setBottom(qreal bottom);
 if (true) {
   auto f = [](QMarginsF flythis, qreal arg1) {
@@ -123,7 +123,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QMarginsF9setBottomEd setBottom(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 289, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 295, column 28>
 //   // proto:  qreal QMarginsF::top();
 if (true) {
   auto f = [](QMarginsF flythis) {
@@ -133,7 +133,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK9QMarginsF3topEv top()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 293, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 299, column 35>
 //   // proto:  void QMarginsF::setLeft(qreal left);
 if (true) {
   auto f = [](QMarginsF flythis, qreal arg1) {
@@ -143,7 +143,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN9QMarginsF7setLeftEd setLeft(qreal)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 58, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 64, column 35>
 //   // proto:  void QMargins::setLeft(int left);
 if (true) {
   auto f = [](QMargins flythis, int arg1) {
@@ -153,7 +153,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QMargins7setLeftEi setLeft(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 60, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 66, column 35>
 //   // proto:  void QMargins::setRight(int right);
 if (true) {
   auto f = [](QMargins flythis, int arg1) {
@@ -163,7 +163,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QMargins8setRightEi setRight(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 53, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 59, column 26>
 //   // proto:  int QMargins::left();
 if (true) {
   auto f = [](QMargins flythis) {
@@ -173,7 +173,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK8QMargins4leftEv left()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 54, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 60, column 26>
 //   // proto:  int QMargins::top();
 if (true) {
   auto f = [](QMargins flythis) {
@@ -183,7 +183,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK8QMargins3topEv top()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 59, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 65, column 35>
 //   // proto:  void QMargins::setTop(int top);
 if (true) {
   auto f = [](QMargins flythis, int arg1) {
@@ -193,7 +193,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QMargins6setTopEi setTop(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 61, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 67, column 35>
 //   // proto:  void QMargins::setBottom(int bottom);
 if (true) {
   auto f = [](QMargins flythis, int arg1) {
@@ -203,7 +203,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN8QMargins9setBottomEi setBottom(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 55, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 61, column 26>
 //   // proto:  int QMargins::right();
 if (true) {
   auto f = [](QMargins flythis) {
@@ -213,7 +213,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK8QMargins5rightEv right()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 56, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 62, column 26>
 //   // proto:  int QMargins::bottom();
 if (true) {
   auto f = [](QMargins flythis) {
@@ -223,7 +223,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK8QMargins6bottomEv bottom()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 51, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 57, column 27>
 //   // proto:  bool QMargins::isNull();
 if (true) {
   auto f = [](QMargins flythis) {
@@ -233,7 +233,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK8QMargins6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 48, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 54, column 22>
 //   // proto:  void QMargins::QMargins();
 if (true) {
   auto f = []() {
@@ -241,7 +241,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 49, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 55, column 22>
 //   // proto:  void QMargins::QMargins(int left, int top, int right, int bottom);
 if (true) {
   auto f = [](int arg1, int arg2, int arg3, int arg4) {
@@ -269,7 +269,7 @@ int QMargins_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 305, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 311, column 38>
 //   // proto:  QMargins QMarginsF::toMargins();
 // _ZNK9QMarginsF9toMarginsEv toMargins()
 extern "C"
@@ -279,7 +279,7 @@ C_ZNK9QMarginsF9toMarginsEv(void *qthis) {
   ((QMarginsF*)qthis)->toMargins();
   return new QMargins(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 290, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 296, column 28>
 //   // proto:  qreal QMarginsF::right();
 // _ZNK9QMarginsF5rightEv right()
 extern "C"
@@ -289,7 +289,7 @@ C_ZNK9QMarginsF5rightEv(void *qthis) {
   ((QMarginsF*)qthis)->right();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 286, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 292, column 27>
 //   // proto:  bool QMarginsF::isNull();
 // _ZNK9QMarginsF6isNullEv isNull()
 extern "C"
@@ -299,7 +299,7 @@ C_ZNK9QMarginsF6isNullEv(void *qthis) {
   ((QMarginsF*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 295, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 301, column 35>
 //   // proto:  void QMarginsF::setRight(qreal right);
 // _ZN9QMarginsF8setRightEd setRight(qreal)
 extern "C"
@@ -308,7 +308,7 @@ C_ZN9QMarginsF8setRightEd(void *qthis,
 qreal arg1) {
   ((QMarginsF*)qthis)->setRight(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 294, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 300, column 35>
 //   // proto:  void QMarginsF::setTop(qreal top);
 // _ZN9QMarginsF6setTopEd setTop(qreal)
 extern "C"
@@ -317,7 +317,7 @@ C_ZN9QMarginsF6setTopEd(void *qthis,
 qreal arg1) {
   ((QMarginsF*)qthis)->setTop(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 288, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 294, column 28>
 //   // proto:  qreal QMarginsF::left();
 // _ZNK9QMarginsF4leftEv left()
 extern "C"
@@ -327,7 +327,7 @@ C_ZNK9QMarginsF4leftEv(void *qthis) {
   ((QMarginsF*)qthis)->left();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 282, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 288, column 22>
 //   // proto:  void QMarginsF::QMarginsF();
 extern "C"
 QMarginsF*
@@ -335,7 +335,7 @@ C_ZN9QMarginsFC2Ev() {
   auto ret = new QMarginsF();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 283, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 289, column 22>
 //   // proto:  void QMarginsF::QMarginsF(qreal left, qreal top, qreal right, qreal bottom);
 extern "C"
 QMarginsF*
@@ -343,10 +343,13 @@ C_ZN9QMarginsFC2Edddd(qreal arg1,
 qreal arg2,
 qreal arg3,
 qreal arg4) {
-  auto ret = new QMarginsF(arg1, arg2, arg3, arg4);
+  auto ret = new QMarginsF(arg1,
+arg2,
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 291, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 297, column 28>
 //   // proto:  qreal QMarginsF::bottom();
 // _ZNK9QMarginsF6bottomEv bottom()
 extern "C"
@@ -356,7 +359,7 @@ C_ZNK9QMarginsF6bottomEv(void *qthis) {
   ((QMarginsF*)qthis)->bottom();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 284, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 290, column 22>
 //   // proto:  void QMarginsF::QMarginsF(const QMargins & margins);
 extern "C"
 QMarginsF*
@@ -364,7 +367,7 @@ C_ZN9QMarginsFC2ERK8QMargins(const QMargins* arg1) {
   auto ret = new QMarginsF(*((const QMargins*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 296, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 302, column 35>
 //   // proto:  void QMarginsF::setBottom(qreal bottom);
 // _ZN9QMarginsF9setBottomEd setBottom(qreal)
 extern "C"
@@ -373,7 +376,7 @@ C_ZN9QMarginsF9setBottomEd(void *qthis,
 qreal arg1) {
   ((QMarginsF*)qthis)->setBottom(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 289, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 295, column 28>
 //   // proto:  qreal QMarginsF::top();
 // _ZNK9QMarginsF3topEv top()
 extern "C"
@@ -383,7 +386,7 @@ C_ZNK9QMarginsF3topEv(void *qthis) {
   ((QMarginsF*)qthis)->top();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 293, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 299, column 35>
 //   // proto:  void QMarginsF::setLeft(qreal left);
 // _ZN9QMarginsF7setLeftEd setLeft(qreal)
 extern "C"
@@ -392,7 +395,7 @@ C_ZN9QMarginsF7setLeftEd(void *qthis,
 qreal arg1) {
   ((QMarginsF*)qthis)->setLeft(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 58, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 64, column 35>
 //   // proto:  void QMargins::setLeft(int left);
 // _ZN8QMargins7setLeftEi setLeft(int)
 extern "C"
@@ -401,7 +404,7 @@ C_ZN8QMargins7setLeftEi(void *qthis,
 int arg1) {
   ((QMargins*)qthis)->setLeft(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 60, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 66, column 35>
 //   // proto:  void QMargins::setRight(int right);
 // _ZN8QMargins8setRightEi setRight(int)
 extern "C"
@@ -410,7 +413,7 @@ C_ZN8QMargins8setRightEi(void *qthis,
 int arg1) {
   ((QMargins*)qthis)->setRight(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 53, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 59, column 26>
 //   // proto:  int QMargins::left();
 // _ZNK8QMargins4leftEv left()
 extern "C"
@@ -420,7 +423,7 @@ C_ZNK8QMargins4leftEv(void *qthis) {
   ((QMargins*)qthis)->left();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 54, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 60, column 26>
 //   // proto:  int QMargins::top();
 // _ZNK8QMargins3topEv top()
 extern "C"
@@ -430,7 +433,7 @@ C_ZNK8QMargins3topEv(void *qthis) {
   ((QMargins*)qthis)->top();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 59, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 65, column 35>
 //   // proto:  void QMargins::setTop(int top);
 // _ZN8QMargins6setTopEi setTop(int)
 extern "C"
@@ -439,7 +442,7 @@ C_ZN8QMargins6setTopEi(void *qthis,
 int arg1) {
   ((QMargins*)qthis)->setTop(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 61, column 35>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 67, column 35>
 //   // proto:  void QMargins::setBottom(int bottom);
 // _ZN8QMargins9setBottomEi setBottom(int)
 extern "C"
@@ -448,7 +451,7 @@ C_ZN8QMargins9setBottomEi(void *qthis,
 int arg1) {
   ((QMargins*)qthis)->setBottom(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 55, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 61, column 26>
 //   // proto:  int QMargins::right();
 // _ZNK8QMargins5rightEv right()
 extern "C"
@@ -458,7 +461,7 @@ C_ZNK8QMargins5rightEv(void *qthis) {
   ((QMargins*)qthis)->right();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 56, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 62, column 26>
 //   // proto:  int QMargins::bottom();
 // _ZNK8QMargins6bottomEv bottom()
 extern "C"
@@ -468,7 +471,7 @@ C_ZNK8QMargins6bottomEv(void *qthis) {
   ((QMargins*)qthis)->bottom();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 51, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 57, column 27>
 //   // proto:  bool QMargins::isNull();
 // _ZNK8QMargins6isNullEv isNull()
 extern "C"
@@ -478,7 +481,7 @@ C_ZNK8QMargins6isNullEv(void *qthis) {
   ((QMargins*)qthis)->isNull();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 48, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 54, column 22>
 //   // proto:  void QMargins::QMargins();
 extern "C"
 QMargins*
@@ -486,7 +489,7 @@ C_ZN8QMarginsC2Ev() {
   auto ret = new QMargins();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 49, column 22>
+// <SourceLocation file '/usr/include/qt/QtCore/qmargins.h', line 55, column 22>
 //   // proto:  void QMargins::QMargins(int left, int top, int right, int bottom);
 extern "C"
 QMargins*
@@ -494,7 +497,10 @@ C_ZN8QMarginsC2Eiiii(int arg1,
 int arg2,
 int arg3,
 int arg4) {
-  auto ret = new QMargins(arg1, arg2, arg3, arg4);
+  auto ret = new QMargins(arg1,
+arg2,
+arg3,
+arg4);
   return ret;
 }
 // <= ext block end

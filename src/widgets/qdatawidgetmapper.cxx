@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qdatawidgetmapper.h
 // dst-file: /src/widgets/qdatawidgetmapper.cxx
 //
@@ -35,7 +35,7 @@ int QDataWidgetMapper_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 86, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 92, column 9>
 //   // proto:  int QDataWidgetMapper::currentIndex();
 // _ZNK17QDataWidgetMapper12currentIndexEv currentIndex()
 extern "C"
@@ -45,7 +45,7 @@ C_ZNK17QDataWidgetMapper12currentIndexEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->currentIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 85, column 10>
 //   // proto:  void QDataWidgetMapper::addMapping(QWidget * widget, int section, const QByteArray & propertyName);
 // _ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray addMapping(class QWidget *, int, const class QByteArray &)
 extern "C"
@@ -58,7 +58,7 @@ const QByteArray* arg3) {
 arg2,
 *((const QByteArray*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 74, column 17>
 //   // proto:  QModelIndex QDataWidgetMapper::rootIndex();
 // _ZNK17QDataWidgetMapper9rootIndexEv rootIndex()
 extern "C"
@@ -68,7 +68,7 @@ C_ZNK17QDataWidgetMapper9rootIndexEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->rootIndex();
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 96, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 102, column 18>
 //   // proto:  void QDataWidgetMapper::setCurrentIndex(int index);
 // _ZN17QDataWidgetMapper15setCurrentIndexEi setCurrentIndex(int)
 extern "C"
@@ -77,7 +77,7 @@ C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *qthis,
 int arg1) {
   ((QDataWidgetMapper*)qthis)->setCurrentIndex(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 67, column 10>
 //   // proto:  void QDataWidgetMapper::setModel(QAbstractItemModel * model);
 // _ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel setModel(class QAbstractItemModel *)
 extern "C"
@@ -86,7 +86,7 @@ C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *qthis,
 QAbstractItemModel * arg1) {
   ((QDataWidgetMapper*)qthis)->setModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 76, column 10>
 //   // proto:  void QDataWidgetMapper::setOrientation(Qt::Orientation aOrientation);
 // _ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
 extern "C"
@@ -95,7 +95,7 @@ C_ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE(void *qthis,
 Qt::Orientation* arg1) {
   ((QDataWidgetMapper*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 76, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 82, column 18>
 //   // proto:  QDataWidgetMapper::SubmitPolicy QDataWidgetMapper::submitPolicy();
 // _ZNK17QDataWidgetMapper12submitPolicyEv submitPolicy()
 extern "C"
@@ -105,7 +105,7 @@ C_ZNK17QDataWidgetMapper12submitPolicyEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->submitPolicy();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 83, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 89, column 14>
 //   // proto:  QWidget * QDataWidgetMapper::mappedWidgetAt(int section);
 // _ZNK17QDataWidgetMapper14mappedWidgetAtEi mappedWidgetAt(int)
 extern "C"
@@ -116,7 +116,7 @@ int arg1) {
   ((QDataWidgetMapper*)qthis)->mappedWidgetAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 86, column 10>
 //   // proto:  void QDataWidgetMapper::removeMapping(QWidget * widget);
 // _ZN17QDataWidgetMapper13removeMappingEP7QWidget removeMapping(class QWidget *)
 extern "C"
@@ -125,7 +125,7 @@ C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QDataWidgetMapper*)qthis)->removeMapping(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 98, column 10>
 //   // proto:  void QDataWidgetMapper::toFirst();
 // _ZN17QDataWidgetMapper7toFirstEv toFirst()
 extern "C"
@@ -133,7 +133,7 @@ void
 C_ZN17QDataWidgetMapper7toFirstEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->toFirst();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 106, column 10>
 //   // proto:  void QDataWidgetMapper::currentIndexChanged(int index);
 // _ZN17QDataWidgetMapper19currentIndexChangedEi currentIndexChanged(int)
 extern "C"
@@ -142,7 +142,7 @@ C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *qthis,
 int arg1) {
   ((QDataWidgetMapper*)qthis)->currentIndexChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 95, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 101, column 10>
 //   // proto:  void QDataWidgetMapper::toPrevious();
 // _ZN17QDataWidgetMapper10toPreviousEv toPrevious()
 extern "C"
@@ -150,7 +150,7 @@ void
 C_ZN17QDataWidgetMapper10toPreviousEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->toPrevious();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 73, column 10>
 //   // proto:  void QDataWidgetMapper::setRootIndex(const QModelIndex & index);
 // _ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex setRootIndex(const class QModelIndex &)
 extern "C"
@@ -159,7 +159,7 @@ C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *qthis,
 const QModelIndex* arg1) {
   ((QDataWidgetMapper*)qthis)->setRootIndex(*((const QModelIndex*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 89, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 95, column 10>
 //   // proto:  void QDataWidgetMapper::revert();
 // _ZN17QDataWidgetMapper6revertEv revert()
 extern "C"
@@ -167,7 +167,7 @@ void
 C_ZN17QDataWidgetMapper6revertEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->revert();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 90, column 10>
 //   // proto:  void QDataWidgetMapper::clearMapping();
 // _ZN17QDataWidgetMapper12clearMappingEv clearMapping()
 extern "C"
@@ -175,7 +175,7 @@ void
 C_ZN17QDataWidgetMapper12clearMappingEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->clearMapping();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 71, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 77, column 21>
 //   // proto:  Qt::Orientation QDataWidgetMapper::orientation();
 // _ZNK17QDataWidgetMapper11orientationEv orientation()
 extern "C"
@@ -185,7 +185,7 @@ C_ZNK17QDataWidgetMapper11orientationEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->orientation();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 81, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 87, column 9>
 //   // proto:  int QDataWidgetMapper::mappedSection(QWidget * widget);
 // _ZNK17QDataWidgetMapper13mappedSectionEP7QWidget mappedSection(class QWidget *)
 extern "C"
@@ -196,7 +196,7 @@ QWidget * arg1) {
   ((QDataWidgetMapper*)qthis)->mappedSection(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 82, column 16>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 88, column 16>
 //   // proto:  QByteArray QDataWidgetMapper::mappedPropertyName(QWidget * widget);
 // _ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget mappedPropertyName(class QWidget *)
 extern "C"
@@ -207,7 +207,7 @@ QWidget * arg1) {
   ((QDataWidgetMapper*)qthis)->mappedPropertyName(arg1);
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 70, column 10>
 //   // proto:  void QDataWidgetMapper::setItemDelegate(QAbstractItemDelegate * delegate);
 // _ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate setItemDelegate(class QAbstractItemDelegate *)
 extern "C"
@@ -216,7 +216,7 @@ C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *qthis,
 QAbstractItemDelegate * arg1) {
   ((QDataWidgetMapper*)qthis)->setItemDelegate(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 97, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 103, column 10>
 //   // proto:  void QDataWidgetMapper::setCurrentModelIndex(const QModelIndex & index);
 // _ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex setCurrentModelIndex(const class QModelIndex &)
 extern "C"
@@ -230,7 +230,7 @@ extern "C"
 void C_ZN17QDataWidgetMapperD2Ev(void *qthis) {
   delete (QDataWidgetMapper*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 84, column 10>
 //   // proto:  void QDataWidgetMapper::addMapping(QWidget * widget, int section);
 // _ZN17QDataWidgetMapper10addMappingEP7QWidgeti addMapping(class QWidget *, int)
 extern "C"
@@ -241,7 +241,7 @@ int arg2) {
   ((QDataWidgetMapper*)qthis)->addMapping(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 58, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 64, column 14>
 //   // proto:  void QDataWidgetMapper::QDataWidgetMapper(QObject * parent);
 extern "C"
 QDataWidgetMapper*
@@ -249,7 +249,7 @@ C_ZN17QDataWidgetMapperC2EP7QObject(QObject * arg1) {
   auto ret = new QDataWidgetMapper(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 81, column 10>
 //   // proto:  void QDataWidgetMapper::setSubmitPolicy(QDataWidgetMapper::SubmitPolicy policy);
 // _ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE setSubmitPolicy(enum QDataWidgetMapper::SubmitPolicy)
 extern "C"
@@ -258,7 +258,7 @@ C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *qthis,
 QDataWidgetMapper::SubmitPolicy arg1) {
   ((QDataWidgetMapper*)qthis)->setSubmitPolicy(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 57, column 5>
 //   // proto:  const QMetaObject * QDataWidgetMapper::metaObject();
 // _ZNK17QDataWidgetMapper10metaObjectEv metaObject()
 extern "C"
@@ -268,7 +268,7 @@ C_ZNK17QDataWidgetMapper10metaObjectEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 99, column 10>
 //   // proto:  void QDataWidgetMapper::toLast();
 // _ZN17QDataWidgetMapper6toLastEv toLast()
 extern "C"
@@ -276,7 +276,7 @@ void
 C_ZN17QDataWidgetMapper6toLastEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->toLast();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 62, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 68, column 25>
 //   // proto:  QAbstractItemModel * QDataWidgetMapper::model();
 // _ZNK17QDataWidgetMapper5modelEv model()
 extern "C"
@@ -286,7 +286,7 @@ C_ZNK17QDataWidgetMapper5modelEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->model();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 65, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 71, column 28>
 //   // proto:  QAbstractItemDelegate * QDataWidgetMapper::itemDelegate();
 // _ZNK17QDataWidgetMapper12itemDelegateEv itemDelegate()
 extern "C"
@@ -296,7 +296,7 @@ C_ZNK17QDataWidgetMapper12itemDelegateEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->itemDelegate();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 96, column 10>
 //   // proto:  bool QDataWidgetMapper::submit();
 // _ZN17QDataWidgetMapper6submitEv submit()
 extern "C"
@@ -306,7 +306,7 @@ C_ZN17QDataWidgetMapper6submitEv(void *qthis) {
   ((QDataWidgetMapper*)qthis)->submit();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 94, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 100, column 10>
 //   // proto:  void QDataWidgetMapper::toNext();
 // _ZN17QDataWidgetMapper6toNextEv toNext()
 extern "C"

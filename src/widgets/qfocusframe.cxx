@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qfocusframe.h
 // dst-file: /src/widgets/qfocusframe.cxx
 //
@@ -37,7 +37,7 @@ extern "C"
 void C_ZN11QFocusFrameD2Ev(void *qthis) {
   delete (QFocusFrame*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 53, column 5>
 //   // proto:  const QMetaObject * QFocusFrame::metaObject();
 // _ZNK11QFocusFrame10metaObjectEv metaObject()
 extern "C"
@@ -47,7 +47,7 @@ C_ZNK11QFocusFrame10metaObjectEv(void *qthis) {
   ((QFocusFrame*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 53, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 59, column 14>
 //   // proto:  QWidget * QFocusFrame::widget();
 // _ZNK11QFocusFrame6widgetEv widget()
 extern "C"
@@ -57,7 +57,7 @@ C_ZNK11QFocusFrame6widgetEv(void *qthis) {
   ((QFocusFrame*)qthis)->widget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 55, column 5>
 //   // proto:  void QFocusFrame::QFocusFrame(QWidget * parent);
 extern "C"
 QFocusFrame*
@@ -65,7 +65,7 @@ C_ZN11QFocusFrameC2EP7QWidget(QWidget * arg1) {
   auto ret = new QFocusFrame(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 58, column 10>
 //   // proto:  void QFocusFrame::setWidget(QWidget * widget);
 // _ZN11QFocusFrame9setWidgetEP7QWidget setWidget(class QWidget *)
 extern "C"

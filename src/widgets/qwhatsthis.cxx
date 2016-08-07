@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qwhatsthis.h
 // dst-file: /src/widgets/qwhatsthis.cxx
 //
@@ -32,7 +32,7 @@ int QWhatsThis_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 57, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 63, column 17>
 //   // proto: static void QWhatsThis::hideText();
 // _ZN10QWhatsThis8hideTextEv hideText()
 extern "C"
@@ -40,7 +40,7 @@ void
 C_ZN10QWhatsThis8hideTextEv() {
   QWhatsThis::hideText();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 52, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 58, column 17>
 //   // proto: static void QWhatsThis::enterWhatsThisMode();
 // _ZN10QWhatsThis18enterWhatsThisModeEv enterWhatsThisMode()
 extern "C"
@@ -48,7 +48,7 @@ void
 C_ZN10QWhatsThis18enterWhatsThisModeEv() {
   QWhatsThis::enterWhatsThisMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 53, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 59, column 17>
 //   // proto: static bool QWhatsThis::inWhatsThisMode();
 // _ZN10QWhatsThis15inWhatsThisModeEv inWhatsThisMode()
 extern "C"
@@ -58,7 +58,7 @@ C_ZN10QWhatsThis15inWhatsThisModeEv() {
   QWhatsThis::inWhatsThisMode();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 54, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 60, column 17>
 //   // proto: static void QWhatsThis::leaveWhatsThisMode();
 // _ZN10QWhatsThis18leaveWhatsThisModeEv leaveWhatsThisMode()
 extern "C"
@@ -66,7 +66,7 @@ void
 C_ZN10QWhatsThis18leaveWhatsThisModeEv() {
   QWhatsThis::leaveWhatsThisMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 56, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 62, column 17>
 //   // proto: static void QWhatsThis::showText(const QPoint & pos, const QString & text, QWidget * w);
 // _ZN10QWhatsThis8showTextERK6QPointRK7QStringP7QWidget showText(const class QPoint &, const class QString &, class QWidget *)
 extern "C"
@@ -78,7 +78,7 @@ QWidget * arg3) {
 *((const QString*)arg2),
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 59, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwhatsthis.h', line 65, column 21>
 //   // proto: static QAction * QWhatsThis::createAction(QObject * parent);
 // _ZN10QWhatsThis12createActionEP7QObject createAction(class QObject *)
 extern "C"

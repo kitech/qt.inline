@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qabstractnativeeventfilter.h
 // dst-file: /src/core/qabstractnativeeventfilter.cxx
 //
@@ -32,7 +32,7 @@ int QAbstractNativeEventFilter_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractnativeeventfilter.h', line 49, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractnativeeventfilter.h', line 55, column 18>
 //   // proto:  bool QAbstractNativeEventFilter::nativeEventFilter(const QByteArray & eventType, void * message, long * result);
 // _ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl nativeEventFilter(const class QByteArray &, void *, long *)
 extern "C"
@@ -47,7 +47,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstractnativeeventfilter.h', line 46, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstractnativeeventfilter.h', line 52, column 5>
 //   // proto:  void QAbstractNativeEventFilter::QAbstractNativeEventFilter();
 extern "C"
 QAbstractNativeEventFilter*

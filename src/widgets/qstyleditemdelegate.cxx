@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qstyleditemdelegate.h
 // dst-file: /src/widgets/qstyleditemdelegate.cxx
 //
@@ -34,7 +34,7 @@ int QStyledItemDelegate_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 61, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 67, column 11>
 //   // proto:  QSize QStyledItemDelegate::sizeHint(const QStyleOptionViewItem & option, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex sizeHint(const class QStyleOptionViewItem &, const class QModelIndex &)
 extern "C"
@@ -47,7 +47,7 @@ const QModelIndex* arg2) {
 *((const QModelIndex*)arg2));
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 65, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 71, column 14>
 //   // proto:  QWidget * QStyledItemDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex createEditor(class QWidget *, const class QStyleOptionViewItem &, const class QModelIndex &)
 extern "C"
@@ -67,7 +67,7 @@ extern "C"
 void C_ZN19QStyledItemDelegateD2Ev(void *qthis) {
   delete (QStyledItemDelegate*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 80, column 10>
 //   // proto:  void QStyledItemDelegate::updateEditorGeometry(QWidget * editor, const QStyleOptionViewItem & option, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex updateEditorGeometry(class QWidget *, const class QStyleOptionViewItem &, const class QModelIndex &)
 extern "C"
@@ -80,7 +80,7 @@ const QModelIndex* arg3) {
 *((const QStyleOptionViewItem*)arg2),
 *((const QModelIndex*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 75, column 10>
 //   // proto:  void QStyledItemDelegate::setEditorData(QWidget * editor, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex setEditorData(class QWidget *, const class QModelIndex &)
 extern "C"
@@ -91,7 +91,7 @@ const QModelIndex* arg2) {
   ((QStyledItemDelegate*)qthis)->setEditorData(arg1,
 *((const QModelIndex*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 76, column 10>
 //   // proto:  void QStyledItemDelegate::setModelData(QWidget * editor, QAbstractItemModel * model, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK11QModelIndex setModelData(class QWidget *, class QAbstractItemModel *, const class QModelIndex &)
 extern "C"
@@ -104,7 +104,7 @@ const QModelIndex* arg3) {
 arg2,
 *((const QModelIndex*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 86, column 10>
 //   // proto:  void QStyledItemDelegate::setItemEditorFactory(QItemEditorFactory * factory);
 // _ZN19QStyledItemDelegate20setItemEditorFactoryEP18QItemEditorFactory setItemEditorFactory(class QItemEditorFactory *)
 extern "C"
@@ -113,7 +113,7 @@ C_ZN19QStyledItemDelegate20setItemEditorFactoryEP18QItemEditorFactory(void *qthi
 QItemEditorFactory * arg1) {
   ((QStyledItemDelegate*)qthis)->setItemEditorFactory(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 65, column 10>
 //   // proto:  void QStyledItemDelegate::paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index);
 // _ZNK19QStyledItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex paint(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
 extern "C"
@@ -126,7 +126,7 @@ const QModelIndex* arg3) {
 *((const QStyleOptionViewItem*)arg2),
 *((const QModelIndex*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 79, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 85, column 25>
 //   // proto:  QItemEditorFactory * QStyledItemDelegate::itemEditorFactory();
 // _ZNK19QStyledItemDelegate17itemEditorFactoryEv itemEditorFactory()
 extern "C"
@@ -136,7 +136,7 @@ C_ZNK19QStyledItemDelegate17itemEditorFactoryEv(void *qthis) {
   ((QStyledItemDelegate*)qthis)->itemEditorFactory();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 61, column 14>
 //   // proto:  void QStyledItemDelegate::QStyledItemDelegate(QObject * parent);
 extern "C"
 QStyledItemDelegate*
@@ -144,7 +144,7 @@ C_ZN19QStyledItemDelegateC2EP7QObject(QObject * arg1) {
   auto ret = new QStyledItemDelegate(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 82, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 88, column 21>
 //   // proto:  QString QStyledItemDelegate::displayText(const QVariant & value, const QLocale & locale);
 // _ZNK19QStyledItemDelegate11displayTextERK8QVariantRK7QLocale displayText(const class QVariant &, const class QLocale &)
 extern "C"
@@ -157,7 +157,7 @@ const QLocale* arg2) {
 *((const QLocale*)arg2));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qstyleditemdelegate.h', line 58, column 5>
 //   // proto:  const QMetaObject * QStyledItemDelegate::metaObject();
 // _ZNK19QStyledItemDelegate10metaObjectEv metaObject()
 extern "C"

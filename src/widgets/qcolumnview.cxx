@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qcolumnview.h
 // dst-file: /src/widgets/qcolumnview.cxx
 //
@@ -37,7 +37,7 @@ int QColumnView_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 61, column 14>
 //   // proto:  void QColumnView::QColumnView(QWidget * parent);
 extern "C"
 QColumnView*
@@ -45,7 +45,7 @@ C_ZN11QColumnViewC2EP7QWidget(QWidget * arg1) {
   auto ret = new QColumnView(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 72, column 10>
 //   // proto:  void QColumnView::selectAll();
 // _ZN11QColumnView9selectAllEv selectAll()
 extern "C"
@@ -53,7 +53,7 @@ void
 C_ZN11QColumnView9selectAllEv(void *qthis) {
   ((QColumnView*)qthis)->selectAll();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 79, column 10>
 //   // proto:  void QColumnView::setPreviewWidget(QWidget * widget);
 // _ZN11QColumnView16setPreviewWidgetEP7QWidget setPreviewWidget(class QWidget *)
 extern "C"
@@ -62,7 +62,7 @@ C_ZN11QColumnView16setPreviewWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QColumnView*)qthis)->setPreviewWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 59, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 65, column 17>
 //   // proto:  QModelIndex QColumnView::indexAt(const QPoint & point);
 // _ZNK11QColumnView7indexAtERK6QPoint indexAt(const class QPoint &)
 extern "C"
@@ -73,7 +73,7 @@ const QPoint* arg1) {
   ((QColumnView*)qthis)->indexAt(*((const QPoint*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 48, column 1>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 54, column 1>
 //   // proto:  const QMetaObject * QColumnView::metaObject();
 // _ZNK11QColumnView10metaObjectEv metaObject()
 extern "C"
@@ -83,7 +83,7 @@ C_ZNK11QColumnView10metaObjectEv(void *qthis) {
   ((QColumnView*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 61, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 67, column 11>
 //   // proto:  QSize QColumnView::sizeHint();
 // _ZNK11QColumnView8sizeHintEv sizeHint()
 extern "C"
@@ -93,7 +93,7 @@ C_ZNK11QColumnView8sizeHintEv(void *qthis) {
   ((QColumnView*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 76, column 16>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 82, column 16>
 //   // proto:  QList<int> QColumnView::columnWidths();
 // _ZNK11QColumnView12columnWidthsEv columnWidths()
 extern "C"
@@ -103,7 +103,7 @@ C_ZNK11QColumnView12columnWidthsEv(void *qthis) {
   ((QColumnView*)qthis)->columnWidths();
   return new QList<int>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 81, column 10>
 //   // proto:  void QColumnView::setColumnWidths(const QList<int> & list);
 // _ZN11QColumnView15setColumnWidthsERK5QListIiE setColumnWidths(const QList<int> &)
 extern "C"
@@ -112,7 +112,7 @@ C_ZN11QColumnView15setColumnWidthsERK5QListIiE(void *qthis,
 const QList<int>* arg1) {
   ((QColumnView*)qthis)->setColumnWidths(*((const QList<int>*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 75, column 10>
 //   // proto:  void QColumnView::setResizeGripsVisible(bool visible);
 // _ZN11QColumnView21setResizeGripsVisibleEb setResizeGripsVisible(_Bool)
 extern "C"
@@ -121,7 +121,7 @@ C_ZN11QColumnView21setResizeGripsVisibleEb(void *qthis,
 bool arg1) {
   ((QColumnView*)qthis)->setResizeGripsVisible(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 76, column 10>
 //   // proto:  bool QColumnView::resizeGripsVisible();
 // _ZNK11QColumnView18resizeGripsVisibleEv resizeGripsVisible()
 extern "C"
@@ -131,7 +131,7 @@ C_ZNK11QColumnView18resizeGripsVisibleEv(void *qthis) {
   ((QColumnView*)qthis)->resizeGripsVisible();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 66, column 10>
 //   // proto:  void QColumnView::scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint);
 // _ZN11QColumnView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
 extern "C"
@@ -142,7 +142,7 @@ QAbstractItemView::ScrollHint arg2) {
   ((QColumnView*)qthis)->scrollTo(*((const QModelIndex*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 69, column 10>
 //   // proto:  void QColumnView::setModel(QAbstractItemModel * model);
 // _ZN11QColumnView8setModelEP18QAbstractItemModel setModel(class QAbstractItemModel *)
 extern "C"
@@ -151,7 +151,7 @@ C_ZN11QColumnView8setModelEP18QAbstractItemModel(void *qthis,
 QAbstractItemModel * arg1) {
   ((QColumnView*)qthis)->setModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 58, column 10>
 //   // proto:  void QColumnView::updatePreviewWidget(const QModelIndex & index);
 // _ZN11QColumnView19updatePreviewWidgetERK11QModelIndex updatePreviewWidget(const class QModelIndex &)
 extern "C"
@@ -160,7 +160,7 @@ C_ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(void *qthis,
 const QModelIndex* arg1) {
   ((QColumnView*)qthis)->updatePreviewWidget(*((const QModelIndex*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 71, column 10>
 //   // proto:  void QColumnView::setRootIndex(const QModelIndex & index);
 // _ZN11QColumnView12setRootIndexERK11QModelIndex setRootIndex(const class QModelIndex &)
 extern "C"
@@ -169,7 +169,7 @@ C_ZN11QColumnView12setRootIndexERK11QModelIndex(void *qthis,
 const QModelIndex* arg1) {
   ((QColumnView*)qthis)->setRootIndex(*((const QModelIndex*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 72, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 78, column 14>
 //   // proto:  QWidget * QColumnView::previewWidget();
 // _ZNK11QColumnView13previewWidgetEv previewWidget()
 extern "C"
@@ -179,7 +179,7 @@ C_ZNK11QColumnView13previewWidgetEv(void *qthis) {
   ((QColumnView*)qthis)->previewWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 70, column 10>
 //   // proto:  void QColumnView::setSelectionModel(QItemSelectionModel * selectionModel);
 // _ZN11QColumnView17setSelectionModelEP19QItemSelectionModel setSelectionModel(class QItemSelectionModel *)
 extern "C"
@@ -188,7 +188,7 @@ C_ZN11QColumnView17setSelectionModelEP19QItemSelectionModel(void *qthis,
 QItemSelectionModel * arg1) {
   ((QColumnView*)qthis)->setSelectionModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 62, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qcolumnview.h', line 68, column 11>
 //   // proto:  QRect QColumnView::visualRect(const QModelIndex & index);
 // _ZNK11QColumnView10visualRectERK11QModelIndex visualRect(const class QModelIndex &)
 extern "C"

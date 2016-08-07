@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qaccessibleplugin.h
 // dst-file: /src/gui/qaccessibleplugin.cxx
 //
@@ -32,14 +32,14 @@ int QAccessiblePlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 62, column 14>
 //   // proto:  void QAccessiblePlugin::QAccessiblePlugin(QObject * parent);
 extern "C"
 QAccessiblePlugin*
 C_ZN17QAccessiblePluginC2EP7QObject(QObject * arg1) {
   // auto ret = new QAccessiblePlugin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 54, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 60, column 5>
 //   // proto:  const QMetaObject * QAccessiblePlugin::metaObject();
 // _ZNK17QAccessiblePlugin10metaObjectEv metaObject()
 extern "C"
@@ -54,7 +54,7 @@ extern "C"
 void C_ZN17QAccessiblePluginD2Ev(void *qthis) {
   delete (QAccessiblePlugin*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 59, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleplugin.h', line 65, column 35>
 //   // proto:  QAccessibleInterface * QAccessiblePlugin::create(const QString & key, QObject * object);
 // _ZN17QAccessiblePlugin6createERK7QStringP7QObject create(const class QString &, class QObject *)
 extern "C"

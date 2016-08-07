@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qgraphicseffect.h
 // dst-file: /src/widgets/qgraphicseffect.cxx
 //
@@ -23,7 +23,7 @@
 
 // main block begin =>
 void __keep_qgraphicseffect_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 224, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 230, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setYOffset(qreal dy);
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis, qreal arg1) {
@@ -33,7 +33,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN25QGraphicsDropShadowEffect10setYOffsetEd setYOffset(qreal)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 203, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 209, column 18>
 //   // proto:  qreal QGraphicsDropShadowEffect::xOffset();
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis) {
@@ -43,7 +43,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK25QGraphicsDropShadowEffect7xOffsetEv xOffset()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 215, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 221, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal dx, qreal dy);
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis, qreal arg1, qreal arg2) {
@@ -53,7 +53,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN25QGraphicsDropShadowEffect9setOffsetEdd setOffset(qreal, qreal)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 218, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 224, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal d);
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis, qreal arg1) {
@@ -63,7 +63,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN25QGraphicsDropShadowEffect9setOffsetEd setOffset(qreal)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 206, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 212, column 18>
 //   // proto:  qreal QGraphicsDropShadowEffect::yOffset();
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis) {
@@ -73,7 +73,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK25QGraphicsDropShadowEffect7yOffsetEv yOffset()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 221, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 227, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setXOffset(qreal dx);
 if (true) {
   auto f = [](QGraphicsDropShadowEffect flythis, qreal arg1) {
@@ -121,7 +121,7 @@ int QGraphicsBlurEffect_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 132, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 138, column 10>
 //   // proto:  void QGraphicsColorizeEffect::setColor(const QColor & c);
 // _ZN23QGraphicsColorizeEffect8setColorERK6QColor setColor(const class QColor &)
 extern "C"
@@ -130,7 +130,7 @@ C_ZN23QGraphicsColorizeEffect8setColorERK6QColor(void *qthis,
 const QColor* arg1) {
   ((QGraphicsColorizeEffect*)qthis)->setColor(*((const QColor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 137, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 143, column 10>
 //   // proto:  void QGraphicsColorizeEffect::strengthChanged(qreal strength);
 // _ZN23QGraphicsColorizeEffect15strengthChangedEd strengthChanged(qreal)
 extern "C"
@@ -139,7 +139,7 @@ C_ZN23QGraphicsColorizeEffect15strengthChangedEd(void *qthis,
 qreal arg1) {
   ((QGraphicsColorizeEffect*)qthis)->strengthChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 133, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 139, column 10>
 //   // proto:  void QGraphicsColorizeEffect::setStrength(qreal strength);
 // _ZN23QGraphicsColorizeEffect11setStrengthEd setStrength(qreal)
 extern "C"
@@ -148,7 +148,7 @@ C_ZN23QGraphicsColorizeEffect11setStrengthEd(void *qthis,
 qreal arg1) {
   ((QGraphicsColorizeEffect*)qthis)->setStrength(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 125, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 131, column 5>
 //   // proto:  void QGraphicsColorizeEffect::QGraphicsColorizeEffect(QObject * parent);
 extern "C"
 QGraphicsColorizeEffect*
@@ -156,7 +156,7 @@ C_ZN23QGraphicsColorizeEffectC2EP7QObject(QObject * arg1) {
   auto ret = new QGraphicsColorizeEffect(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 129, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 135, column 11>
 //   // proto:  qreal QGraphicsColorizeEffect::strength();
 // _ZNK23QGraphicsColorizeEffect8strengthEv strength()
 extern "C"
@@ -171,7 +171,7 @@ extern "C"
 void C_ZN23QGraphicsColorizeEffectD2Ev(void *qthis) {
   delete (QGraphicsColorizeEffect*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 136, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 142, column 10>
 //   // proto:  void QGraphicsColorizeEffect::colorChanged(const QColor & color);
 // _ZN23QGraphicsColorizeEffect12colorChangedERK6QColor colorChanged(const class QColor &)
 extern "C"
@@ -180,7 +180,7 @@ C_ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(void *qthis,
 const QColor* arg1) {
   ((QGraphicsColorizeEffect*)qthis)->colorChanged(*((const QColor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 128, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 134, column 12>
 //   // proto:  QColor QGraphicsColorizeEffect::color();
 // _ZNK23QGraphicsColorizeEffect5colorEv color()
 extern "C"
@@ -190,7 +190,7 @@ C_ZNK23QGraphicsColorizeEffect5colorEv(void *qthis) {
   ((QGraphicsColorizeEffect*)qthis)->color();
   return new QColor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 121, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 127, column 5>
 //   // proto:  const QMetaObject * QGraphicsColorizeEffect::metaObject();
 // _ZNK23QGraphicsColorizeEffect10metaObjectEv metaObject()
 extern "C"
@@ -200,7 +200,7 @@ C_ZNK23QGraphicsColorizeEffect10metaObjectEv(void *qthis) {
   ((QGraphicsColorizeEffect*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 78, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 84, column 20>
 //   // proto:  QRectF QGraphicsEffect::boundingRectFor(const QRectF & sourceRect);
 // _ZNK15QGraphicsEffect15boundingRectForERK6QRectF boundingRectFor(const class QRectF &)
 extern "C"
@@ -211,7 +211,7 @@ const QRectF* arg1) {
   ((QGraphicsEffect*)qthis)->boundingRectFor(*((const QRectF*)arg1));
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 113, column 28>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 119, column 28>
 //   // proto:  QGraphicsEffectSource * QGraphicsEffect::source();
 // _ZNK15QGraphicsEffect6sourceEv source()
 extern "C"
@@ -221,7 +221,7 @@ C_ZNK15QGraphicsEffect6sourceEv(void *qthis) {
   ((QGraphicsEffect*)qthis)->source();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 91, column 10>
 //   // proto:  void QGraphicsEffect::update();
 // _ZN15QGraphicsEffect6updateEv update()
 extern "C"
@@ -229,7 +229,7 @@ void
 C_ZN15QGraphicsEffect6updateEv(void *qthis) {
   ((QGraphicsEffect*)qthis)->update();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 90, column 10>
 //   // proto:  void QGraphicsEffect::setEnabled(bool enable);
 // _ZN15QGraphicsEffect10setEnabledEb setEnabled(_Bool)
 extern "C"
@@ -238,7 +238,7 @@ C_ZN15QGraphicsEffect10setEnabledEb(void *qthis,
 bool arg1) {
   ((QGraphicsEffect*)qthis)->setEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 94, column 10>
 //   // proto:  void QGraphicsEffect::enabledChanged(bool enabled);
 // _ZN15QGraphicsEffect14enabledChangedEb enabledChanged(_Bool)
 extern "C"
@@ -247,7 +247,7 @@ C_ZN15QGraphicsEffect14enabledChangedEb(void *qthis,
 bool arg1) {
   ((QGraphicsEffect*)qthis)->enabledChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 57, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 63, column 5>
 //   // proto:  const QMetaObject * QGraphicsEffect::metaObject();
 // _ZNK15QGraphicsEffect10metaObjectEv metaObject()
 extern "C"
@@ -257,7 +257,7 @@ C_ZNK15QGraphicsEffect10metaObjectEv(void *qthis) {
   ((QGraphicsEffect*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 87, column 10>
 //   // proto:  bool QGraphicsEffect::isEnabled();
 // _ZNK15QGraphicsEffect9isEnabledEv isEnabled()
 extern "C"
@@ -267,7 +267,7 @@ C_ZNK15QGraphicsEffect9isEnabledEv(void *qthis) {
   ((QGraphicsEffect*)qthis)->isEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 79, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 85, column 12>
 //   // proto:  QRectF QGraphicsEffect::boundingRect();
 // _ZNK15QGraphicsEffect12boundingRectEv boundingRect()
 extern "C"
@@ -282,14 +282,14 @@ extern "C"
 void C_ZN15QGraphicsEffectD2Ev(void *qthis) {
   delete (QGraphicsEffect*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 75, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 81, column 5>
 //   // proto:  void QGraphicsEffect::QGraphicsEffect(QObject * parent);
 extern "C"
 QGraphicsEffect*
 C_ZN15QGraphicsEffectC2EP7QObject(QObject * arg1) {
   // auto ret = new QGraphicsEffect(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 232, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 238, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::blurRadiusChanged(qreal blurRadius);
 // _ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd blurRadiusChanged(qreal)
 extern "C"
@@ -298,7 +298,7 @@ C_ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(void *qthis,
 qreal arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->blurRadiusChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 190, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 196, column 5>
 //   // proto:  const QMetaObject * QGraphicsDropShadowEffect::metaObject();
 // _ZNK25QGraphicsDropShadowEffect10metaObjectEv metaObject()
 extern "C"
@@ -308,7 +308,7 @@ C_ZNK25QGraphicsDropShadowEffect10metaObjectEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 200, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 206, column 12>
 //   // proto:  QRectF QGraphicsDropShadowEffect::boundingRectFor(const QRectF & rect);
 // _ZNK25QGraphicsDropShadowEffect15boundingRectForERK6QRectF boundingRectFor(const class QRectF &)
 extern "C"
@@ -319,7 +319,7 @@ const QRectF* arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->boundingRectFor(*((const QRectF*)arg1));
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 197, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 203, column 5>
 //   // proto:  void QGraphicsDropShadowEffect::QGraphicsDropShadowEffect(QObject * parent);
 extern "C"
 QGraphicsDropShadowEffect*
@@ -327,7 +327,7 @@ C_ZN25QGraphicsDropShadowEffectC2EP7QObject(QObject * arg1) {
   auto ret = new QGraphicsDropShadowEffect(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 201, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 207, column 13>
 //   // proto:  QPointF QGraphicsDropShadowEffect::offset();
 // _ZNK25QGraphicsDropShadowEffect6offsetEv offset()
 extern "C"
@@ -337,7 +337,7 @@ C_ZNK25QGraphicsDropShadowEffect6offsetEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->offset();
   return new QPointF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 224, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 230, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setYOffset(qreal dy);
 // _ZN25QGraphicsDropShadowEffect10setYOffsetEd setYOffset(qreal)
 extern "C"
@@ -346,7 +346,7 @@ C_ZN25QGraphicsDropShadowEffect10setYOffsetEd(void *qthis,
 qreal arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->setYOffset(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 203, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 209, column 18>
 //   // proto:  qreal QGraphicsDropShadowEffect::xOffset();
 // _ZNK25QGraphicsDropShadowEffect7xOffsetEv xOffset()
 extern "C"
@@ -356,7 +356,7 @@ C_ZNK25QGraphicsDropShadowEffect7xOffsetEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->xOffset();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 209, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 215, column 11>
 //   // proto:  qreal QGraphicsDropShadowEffect::blurRadius();
 // _ZNK25QGraphicsDropShadowEffect10blurRadiusEv blurRadius()
 extern "C"
@@ -366,7 +366,7 @@ C_ZNK25QGraphicsDropShadowEffect10blurRadiusEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->blurRadius();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 210, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 216, column 12>
 //   // proto:  QColor QGraphicsDropShadowEffect::color();
 // _ZNK25QGraphicsDropShadowEffect5colorEv color()
 extern "C"
@@ -376,7 +376,7 @@ C_ZNK25QGraphicsDropShadowEffect5colorEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->color();
   return new QColor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 228, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 234, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::setColor(const QColor & color);
 // _ZN25QGraphicsDropShadowEffect8setColorERK6QColor setColor(const class QColor &)
 extern "C"
@@ -385,7 +385,7 @@ C_ZN25QGraphicsDropShadowEffect8setColorERK6QColor(void *qthis,
 const QColor* arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->setColor(*((const QColor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 213, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 219, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::setOffset(const QPointF & ofs);
 // _ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF setOffset(const class QPointF &)
 extern "C"
@@ -394,7 +394,7 @@ C_ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->setOffset(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 231, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 237, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::offsetChanged(const QPointF & offset);
 // _ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF offsetChanged(const class QPointF &)
 extern "C"
@@ -403,7 +403,7 @@ C_ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(void *qthis,
 const QPointF* arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->offsetChanged(*((const QPointF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 215, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 221, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal dx, qreal dy);
 // _ZN25QGraphicsDropShadowEffect9setOffsetEdd setOffset(qreal, qreal)
 extern "C"
@@ -414,7 +414,7 @@ qreal arg2) {
   ((QGraphicsDropShadowEffect*)qthis)->setOffset(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 218, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 224, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setOffset(qreal d);
 // _ZN25QGraphicsDropShadowEffect9setOffsetEd setOffset(qreal)
 extern "C"
@@ -423,7 +423,7 @@ C_ZN25QGraphicsDropShadowEffect9setOffsetEd(void *qthis,
 qreal arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->setOffset(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 233, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 239, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::colorChanged(const QColor & color);
 // _ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor colorChanged(const class QColor &)
 extern "C"
@@ -432,7 +432,7 @@ C_ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(void *qthis,
 const QColor* arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->colorChanged(*((const QColor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 206, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 212, column 18>
 //   // proto:  qreal QGraphicsDropShadowEffect::yOffset();
 // _ZNK25QGraphicsDropShadowEffect7yOffsetEv yOffset()
 extern "C"
@@ -442,7 +442,7 @@ C_ZNK25QGraphicsDropShadowEffect7yOffsetEv(void *qthis) {
   ((QGraphicsDropShadowEffect*)qthis)->yOffset();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 221, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 227, column 17>
 //   // proto:  void QGraphicsDropShadowEffect::setXOffset(qreal dx);
 // _ZN25QGraphicsDropShadowEffect10setXOffsetEd setXOffset(qreal)
 extern "C"
@@ -451,7 +451,7 @@ C_ZN25QGraphicsDropShadowEffect10setXOffsetEd(void *qthis,
 qreal arg1) {
   ((QGraphicsDropShadowEffect*)qthis)->setXOffset(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 227, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 233, column 10>
 //   // proto:  void QGraphicsDropShadowEffect::setBlurRadius(qreal blurRadius);
 // _ZN25QGraphicsDropShadowEffect13setBlurRadiusEd setBlurRadius(qreal)
 extern "C"
@@ -465,7 +465,7 @@ extern "C"
 void C_ZN25QGraphicsDropShadowEffectD2Ev(void *qthis) {
   delete (QGraphicsDropShadowEffect*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 250, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 256, column 5>
 //   // proto:  void QGraphicsOpacityEffect::QGraphicsOpacityEffect(QObject * parent);
 extern "C"
 QGraphicsOpacityEffect*
@@ -478,7 +478,7 @@ extern "C"
 void C_ZN22QGraphicsOpacityEffectD2Ev(void *qthis) {
   delete (QGraphicsOpacityEffect*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 258, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 264, column 10>
 //   // proto:  void QGraphicsOpacityEffect::setOpacityMask(const QBrush & mask);
 // _ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush setOpacityMask(const class QBrush &)
 extern "C"
@@ -487,7 +487,7 @@ C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *qthis,
 const QBrush* arg1) {
   ((QGraphicsOpacityEffect*)qthis)->setOpacityMask(*((const QBrush*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 254, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 260, column 12>
 //   // proto:  QBrush QGraphicsOpacityEffect::opacityMask();
 // _ZNK22QGraphicsOpacityEffect11opacityMaskEv opacityMask()
 extern "C"
@@ -497,7 +497,7 @@ C_ZNK22QGraphicsOpacityEffect11opacityMaskEv(void *qthis) {
   ((QGraphicsOpacityEffect*)qthis)->opacityMask();
   return new QBrush(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 261, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 267, column 10>
 //   // proto:  void QGraphicsOpacityEffect::opacityChanged(qreal opacity);
 // _ZN22QGraphicsOpacityEffect14opacityChangedEd opacityChanged(qreal)
 extern "C"
@@ -506,7 +506,7 @@ C_ZN22QGraphicsOpacityEffect14opacityChangedEd(void *qthis,
 qreal arg1) {
   ((QGraphicsOpacityEffect*)qthis)->opacityChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 262, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 268, column 10>
 //   // proto:  void QGraphicsOpacityEffect::opacityMaskChanged(const QBrush & mask);
 // _ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush opacityMaskChanged(const class QBrush &)
 extern "C"
@@ -515,7 +515,7 @@ C_ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(void *qthis,
 const QBrush* arg1) {
   ((QGraphicsOpacityEffect*)qthis)->opacityMaskChanged(*((const QBrush*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 246, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 252, column 5>
 //   // proto:  const QMetaObject * QGraphicsOpacityEffect::metaObject();
 // _ZNK22QGraphicsOpacityEffect10metaObjectEv metaObject()
 extern "C"
@@ -525,7 +525,7 @@ C_ZNK22QGraphicsOpacityEffect10metaObjectEv(void *qthis) {
   ((QGraphicsOpacityEffect*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 253, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 259, column 11>
 //   // proto:  qreal QGraphicsOpacityEffect::opacity();
 // _ZNK22QGraphicsOpacityEffect7opacityEv opacity()
 extern "C"
@@ -535,7 +535,7 @@ C_ZNK22QGraphicsOpacityEffect7opacityEv(void *qthis) {
   ((QGraphicsOpacityEffect*)qthis)->opacity();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 257, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 263, column 10>
 //   // proto:  void QGraphicsOpacityEffect::setOpacity(qreal opacity);
 // _ZN22QGraphicsOpacityEffect10setOpacityEd setOpacity(qreal)
 extern "C"
@@ -544,7 +544,7 @@ C_ZN22QGraphicsOpacityEffect10setOpacityEd(void *qthis,
 qreal arg1) {
   ((QGraphicsOpacityEffect*)qthis)->setOpacity(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 167, column 15>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 173, column 15>
 //   // proto:  BlurHints QGraphicsBlurEffect::blurHints();
 // _ZNK19QGraphicsBlurEffect9blurHintsEv blurHints()
 extern "C"
@@ -554,7 +554,7 @@ C_ZNK19QGraphicsBlurEffect9blurHintsEv(void *qthis) {
   ((QGraphicsBlurEffect*)qthis)->blurHints();
   return new QFlags<QGraphicsBlurEffect::BlurHint>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 171, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 177, column 10>
 //   // proto:  void QGraphicsBlurEffect::setBlurHints(BlurHints hints);
 // _ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE setBlurHints(BlurHints)
 extern "C"
@@ -563,7 +563,7 @@ C_ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE(void *qthis,
 QGraphicsBlurEffect::BlurHints arg1) {
   ((QGraphicsBlurEffect*)qthis)->setBlurHints(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 166, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 172, column 11>
 //   // proto:  qreal QGraphicsBlurEffect::blurRadius();
 // _ZNK19QGraphicsBlurEffect10blurRadiusEv blurRadius()
 extern "C"
@@ -573,7 +573,7 @@ C_ZNK19QGraphicsBlurEffect10blurRadiusEv(void *qthis) {
   ((QGraphicsBlurEffect*)qthis)->blurRadius();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 170, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 176, column 10>
 //   // proto:  void QGraphicsBlurEffect::setBlurRadius(qreal blurRadius);
 // _ZN19QGraphicsBlurEffect13setBlurRadiusEd setBlurRadius(qreal)
 extern "C"
@@ -587,7 +587,7 @@ extern "C"
 void C_ZN19QGraphicsBlurEffectD2Ev(void *qthis) {
   delete (QGraphicsBlurEffect*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 150, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 156, column 5>
 //   // proto:  const QMetaObject * QGraphicsBlurEffect::metaObject();
 // _ZNK19QGraphicsBlurEffect10metaObjectEv metaObject()
 extern "C"
@@ -597,7 +597,7 @@ C_ZNK19QGraphicsBlurEffect10metaObjectEv(void *qthis) {
   ((QGraphicsBlurEffect*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 165, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 171, column 12>
 //   // proto:  QRectF QGraphicsBlurEffect::boundingRectFor(const QRectF & rect);
 // _ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF boundingRectFor(const class QRectF &)
 extern "C"
@@ -608,7 +608,7 @@ const QRectF* arg1) {
   ((QGraphicsBlurEffect*)qthis)->boundingRectFor(*((const QRectF*)arg1));
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 175, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 181, column 10>
 //   // proto:  void QGraphicsBlurEffect::blurHintsChanged(BlurHints hints);
 // _ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE blurHintsChanged(BlurHints)
 extern "C"
@@ -617,7 +617,7 @@ C_ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(void *qthis,
 QGraphicsBlurEffect::BlurHints arg1) {
   ((QGraphicsBlurEffect*)qthis)->blurHintsChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 162, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 168, column 5>
 //   // proto:  void QGraphicsBlurEffect::QGraphicsBlurEffect(QObject * parent);
 extern "C"
 QGraphicsBlurEffect*
@@ -625,7 +625,7 @@ C_ZN19QGraphicsBlurEffectC2EP7QObject(QObject * arg1) {
   auto ret = new QGraphicsBlurEffect(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 174, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicseffect.h', line 180, column 10>
 //   // proto:  void QGraphicsBlurEffect::blurRadiusChanged(qreal blurRadius);
 // _ZN19QGraphicsBlurEffect17blurRadiusChangedEd blurRadiusChanged(qreal)
 extern "C"

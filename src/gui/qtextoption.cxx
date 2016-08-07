@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qtextoption.h
 // dst-file: /src/gui/qtextoption.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qtextoption_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 109, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 116, column 17>
 //   // proto:  void QTextOption::setFlags(Flags flags);
 if (true) {
   auto f = [](QTextOption flythis, QTextOption::Flags arg1) {
@@ -31,7 +31,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 104, column 17>
 //   // proto:  void QTextOption::setWrapMode(QTextOption::WrapMode wrap);
 if (true) {
   auto f = [](QTextOption flythis, QTextOption::WrapMode arg1) {
@@ -41,7 +41,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption11setWrapModeENS_8WrapModeE setWrapMode(enum QTextOption::WrapMode)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 113, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 120, column 18>
 //   // proto:  qreal QTextOption::tabStop();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -51,7 +51,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QTextOption7tabStopEv tabStop()
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 128, column 10>
 //   // proto:  void QTextOption::setUseDesignMetrics(bool b);
 if (true) {
   auto f = [](QTextOption flythis, bool arg1) {
@@ -61,7 +61,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption19setUseDesignMetricsEb setUseDesignMetrics(_Bool)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 112, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 119, column 17>
 //   // proto:  void QTextOption::setTabStop(qreal tabStop);
 if (true) {
   auto f = [](QTextOption flythis, qreal arg1) {
@@ -71,7 +71,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption10setTabStopEd setTabStop(qreal)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 122, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 129, column 10>
 //   // proto:  bool QTextOption::useDesignMetrics();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -81,7 +81,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QTextOption16useDesignMetricsEv useDesignMetrics()
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 88, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 94, column 17>
 //   // proto:  void QTextOption::setTextDirection(Qt::LayoutDirection aDirection);
 if (true) {
   auto f = [](QTextOption flythis, Qt::LayoutDirection arg1) {
@@ -91,7 +91,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE setTextDirection(Qt::LayoutDirection)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 110, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 117, column 18>
 //   // proto:  Flags QTextOption::flags();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -101,7 +101,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QTextOption5flagsEv flags()
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 86, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 92, column 26>
 //   // proto:  Qt::Alignment QTextOption::alignment();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -111,7 +111,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QTextOption9alignmentEv alignment()
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 99, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 105, column 21>
 //   // proto:  QTextOption::WrapMode QTextOption::wrapMode();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -121,7 +121,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK11QTextOption8wrapModeEv wrapMode()
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 85, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 91, column 17>
 //   // proto:  void QTextOption::setAlignment(Qt::Alignment alignment);
 if (true) {
   auto f = [](QTextOption flythis, Qt::Alignment arg1) {
@@ -131,7 +131,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 89, column 32>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 95, column 32>
 //   // proto:  Qt::LayoutDirection QTextOption::textDirection();
 if (true) {
   auto f = [](QTextOption flythis) {
@@ -155,7 +155,7 @@ int QTextOption_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 119, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 126, column 16>
 //   // proto:  QList<QTextOption::Tab> QTextOption::tabs();
 // _ZNK11QTextOption4tabsEv tabs()
 extern "C"
@@ -165,7 +165,7 @@ C_ZNK11QTextOption4tabsEv(void *qthis) {
   ((QTextOption*)qthis)->tabs();
   return new QList<QTextOption::Tab>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 82, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 88, column 5>
 //   // proto:  void QTextOption::QTextOption(const QTextOption & o);
 extern "C"
 QTextOption*
@@ -173,7 +173,7 @@ C_ZN11QTextOptionC2ERKS_(const QTextOption* arg1) {
   auto ret = new QTextOption(*((const QTextOption*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 109, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 116, column 17>
 //   // proto:  void QTextOption::setFlags(Flags flags);
 // _ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE setFlags(Flags)
 extern "C"
@@ -182,7 +182,7 @@ C_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE(void *qthis,
 QTextOption::Flags arg1) {
   ((QTextOption*)qthis)->setFlags(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 98, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 104, column 17>
 //   // proto:  void QTextOption::setWrapMode(QTextOption::WrapMode wrap);
 // _ZN11QTextOption11setWrapModeENS_8WrapModeE setWrapMode(enum QTextOption::WrapMode)
 extern "C"
@@ -191,7 +191,7 @@ C_ZN11QTextOption11setWrapModeENS_8WrapModeE(void *qthis,
 QTextOption::WrapMode arg1) {
   ((QTextOption*)qthis)->setWrapMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 79, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 85, column 18>
 //   // proto:  void QTextOption::QTextOption(Qt::Alignment alignment);
 extern "C"
 QTextOption*
@@ -199,7 +199,7 @@ C_ZN11QTextOptionC2E6QFlagsIN2Qt13AlignmentFlagEE(Qt::Alignment* arg1) {
   auto ret = new QTextOption(*((Qt::Alignment*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 113, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 120, column 18>
 //   // proto:  qreal QTextOption::tabStop();
 // _ZNK11QTextOption7tabStopEv tabStop()
 extern "C"
@@ -209,7 +209,7 @@ C_ZNK11QTextOption7tabStopEv(void *qthis) {
   ((QTextOption*)qthis)->tabStop();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 128, column 10>
 //   // proto:  void QTextOption::setUseDesignMetrics(bool b);
 // _ZN11QTextOption19setUseDesignMetricsEb setUseDesignMetrics(_Bool)
 extern "C"
@@ -218,7 +218,7 @@ C_ZN11QTextOption19setUseDesignMetricsEb(void *qthis,
 bool arg1) {
   ((QTextOption*)qthis)->setUseDesignMetrics(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 112, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 119, column 17>
 //   // proto:  void QTextOption::setTabStop(qreal tabStop);
 // _ZN11QTextOption10setTabStopEd setTabStop(qreal)
 extern "C"
@@ -227,7 +227,7 @@ C_ZN11QTextOption10setTabStopEd(void *qthis,
 qreal arg1) {
   ((QTextOption*)qthis)->setTabStop(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 122, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 129, column 10>
 //   // proto:  bool QTextOption::useDesignMetrics();
 // _ZNK11QTextOption16useDesignMetricsEv useDesignMetrics()
 extern "C"
@@ -237,7 +237,7 @@ C_ZNK11QTextOption16useDesignMetricsEv(void *qthis) {
   ((QTextOption*)qthis)->useDesignMetrics();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 122, column 10>
 //   // proto:  void QTextOption::setTabArray(const QList<qreal> & tabStops);
 // _ZN11QTextOption11setTabArrayERK5QListIdE setTabArray(const QList<qreal> &)
 extern "C"
@@ -246,7 +246,7 @@ C_ZN11QTextOption11setTabArrayERK5QListIdE(void *qthis,
 const QList<qreal>* arg1) {
   ((QTextOption*)qthis)->setTabArray(*((const QList<qreal>*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 88, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 94, column 17>
 //   // proto:  void QTextOption::setTextDirection(Qt::LayoutDirection aDirection);
 // _ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE setTextDirection(Qt::LayoutDirection)
 extern "C"
@@ -255,7 +255,7 @@ C_ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE(void *qthis,
 Qt::LayoutDirection* arg1) {
   ((QTextOption*)qthis)->setTextDirection(*((Qt::LayoutDirection*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 110, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 117, column 18>
 //   // proto:  Flags QTextOption::flags();
 // _ZNK11QTextOption5flagsEv flags()
 extern "C"
@@ -265,7 +265,7 @@ C_ZNK11QTextOption5flagsEv(void *qthis) {
   ((QTextOption*)qthis)->flags();
   return new QFlags<QTextOption::Flag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 86, column 26>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 92, column 26>
 //   // proto:  Qt::Alignment QTextOption::alignment();
 // _ZNK11QTextOption9alignmentEv alignment()
 extern "C"
@@ -275,7 +275,7 @@ C_ZNK11QTextOption9alignmentEv(void *qthis) {
   ((QTextOption*)qthis)->alignment();
   return new QFlags<Qt::AlignmentFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 99, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 105, column 21>
 //   // proto:  QTextOption::WrapMode QTextOption::wrapMode();
 // _ZNK11QTextOption8wrapModeEv wrapMode()
 extern "C"
@@ -285,7 +285,7 @@ C_ZNK11QTextOption8wrapModeEv(void *qthis) {
   ((QTextOption*)qthis)->wrapMode();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 85, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 91, column 17>
 //   // proto:  void QTextOption::setAlignment(Qt::Alignment alignment);
 // _ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
 extern "C"
@@ -294,7 +294,7 @@ C_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
 Qt::Alignment* arg1) {
   ((QTextOption*)qthis)->setAlignment(*((Qt::Alignment*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 78, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 84, column 5>
 //   // proto:  void QTextOption::QTextOption();
 extern "C"
 QTextOption*
@@ -302,7 +302,7 @@ C_ZN11QTextOptionC2Ev() {
   auto ret = new QTextOption();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 89, column 32>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 95, column 32>
 //   // proto:  Qt::LayoutDirection QTextOption::textDirection();
 // _ZNK11QTextOption13textDirectionEv textDirection()
 extern "C"
@@ -312,7 +312,7 @@ C_ZNK11QTextOption13textDirectionEv(void *qthis) {
   ((QTextOption*)qthis)->textDirection();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 116, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 123, column 18>
 //   // proto:  QList<qreal> QTextOption::tabArray();
 // _ZNK11QTextOption8tabArrayEv tabArray()
 extern "C"
@@ -327,7 +327,7 @@ extern "C"
 void C_ZN11QTextOptionD2Ev(void *qthis) {
   delete (QTextOption*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qtextoption.h', line 125, column 10>
 //   // proto:  void QTextOption::setTabs(const QList<QTextOption::Tab> & tabStops);
 // _ZN11QTextOption7setTabsERK5QListINS_3TabEE setTabs(const QList<struct QTextOption::Tab> &)
 extern "C"

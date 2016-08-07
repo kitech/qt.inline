@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qlockfile.h
 // dst-file: /src/core/qlockfile.cxx
 //
@@ -32,7 +32,7 @@ int QLockFile_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 65, column 10>
 //   // proto:  bool QLockFile::removeStaleLockFile();
 // _ZN9QLockFile19removeStaleLockFileEv removeStaleLockFile()
 extern "C"
@@ -42,7 +42,7 @@ C_ZN9QLockFile19removeStaleLockFileEv(void *qthis) {
   ((QLockFile*)qthis)->removeStaleLockFile();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 55, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 61, column 9>
 //   // proto:  int QLockFile::staleLockTime();
 // _ZNK9QLockFile13staleLockTimeEv staleLockTime()
 extern "C"
@@ -52,7 +52,7 @@ C_ZNK9QLockFile13staleLockTimeEv(void *qthis) {
   ((QLockFile*)qthis)->staleLockTime();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 57, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 63, column 10>
 //   // proto:  bool QLockFile::isLocked();
 // _ZNK9QLockFile8isLockedEv isLocked()
 extern "C"
@@ -67,7 +67,7 @@ extern "C"
 void C_ZN9QLockFileD2Ev(void *qthis) {
   delete (QLockFile*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 67, column 15>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 73, column 15>
 //   // proto:  QLockFile::LockError QLockFile::error();
 // _ZNK9QLockFile5errorEv error()
 extern "C"
@@ -77,7 +77,7 @@ C_ZNK9QLockFile5errorEv(void *qthis) {
   ((QLockFile*)qthis)->error();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 58, column 10>
 //   // proto:  void QLockFile::unlock();
 // _ZN9QLockFile6unlockEv unlock()
 extern "C"
@@ -85,7 +85,7 @@ void
 C_ZN9QLockFile6unlockEv(void *qthis) {
   ((QLockFile*)qthis)->unlock();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 51, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 57, column 10>
 //   // proto:  bool QLockFile::tryLock(int timeout);
 // _ZN9QLockFile7tryLockEi tryLock(int)
 extern "C"
@@ -96,7 +96,7 @@ int arg1) {
   ((QLockFile*)qthis)->tryLock(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 50, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 56, column 10>
 //   // proto:  bool QLockFile::lock();
 // _ZN9QLockFile4lockEv lock()
 extern "C"
@@ -106,7 +106,7 @@ C_ZN9QLockFile4lockEv(void *qthis) {
   ((QLockFile*)qthis)->lock();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 60, column 10>
 //   // proto:  void QLockFile::setStaleLockTime(int );
 // _ZN9QLockFile16setStaleLockTimeEi setStaleLockTime(int)
 extern "C"
@@ -115,7 +115,7 @@ C_ZN9QLockFile16setStaleLockTimeEi(void *qthis,
 int arg1) {
   ((QLockFile*)qthis)->setStaleLockTime(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 64, column 10>
 //   // proto:  bool QLockFile::getLockInfo(qint64 * pid, QString * hostname, QString * appname);
 // _ZNK9QLockFile11getLockInfoEPxP7QStringS2_ getLockInfo(qint64 *, class QString *, class QString *)
 extern "C"
@@ -130,7 +130,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 53, column 5>
 //   // proto:  void QLockFile::QLockFile(const QString & fileName);
 extern "C"
 QLockFile*

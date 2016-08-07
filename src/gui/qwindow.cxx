@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qwindow.h
 // dst-file: /src/gui/qwindow.cxx
 //
@@ -31,7 +31,7 @@
 
 // main block begin =>
 void __keep_qwindow_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 189, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 198, column 16>
 //   // proto:  int QWindow::minimumHeight();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -41,7 +41,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow13minimumHeightEv minimumHeight()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 191, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 200, column 16>
 //   // proto:  int QWindow::maximumHeight();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -51,7 +51,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow13maximumHeightEv maximumHeight()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 216, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 225, column 16>
 //   // proto:  int QWindow::y();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -61,7 +61,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow1yEv y()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 213, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 222, column 16>
 //   // proto:  int QWindow::width();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -71,7 +71,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow5widthEv width()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 188, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 197, column 16>
 //   // proto:  int QWindow::minimumWidth();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -81,7 +81,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow12minimumWidthEv minimumWidth()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 215, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 224, column 16>
 //   // proto:  int QWindow::x();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -91,7 +91,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow1xEv x()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 214, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 223, column 16>
 //   // proto:  int QWindow::height();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -101,7 +101,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow6heightEv height()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 218, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 227, column 11>
 //   // proto:  QSize QWindow::size();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -111,7 +111,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow4sizeEv size()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 190, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 199, column 16>
 //   // proto:  int QWindow::maximumWidth();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -121,7 +121,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK7QWindow12maximumWidthEv maximumWidth()
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 219, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 228, column 19>
 //   // proto:  QPoint QWindow::position();
 if (true) {
   auto f = [](QWindow flythis) {
@@ -145,7 +145,7 @@ int QWindow_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 296, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 305, column 10>
 //   // proto:  void QWindow::xChanged(int arg);
 // _ZN7QWindow8xChangedEi xChanged(int)
 extern "C"
@@ -154,7 +154,7 @@ C_ZN7QWindow8xChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->xChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 252, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 261, column 10>
 //   // proto:  void QWindow::unsetCursor();
 // _ZN7QWindow11unsetCursorEv unsetCursor()
 extern "C"
@@ -162,7 +162,7 @@ void
 C_ZN7QWindow11unsetCursorEv(void *qthis) {
   ((QWindow*)qthis)->unsetCursor();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 132, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 141, column 10>
 //   // proto:  bool QWindow::isVisible();
 // _ZNK7QWindow9isVisibleEv isVisible()
 extern "C"
@@ -172,7 +172,7 @@ C_ZNK7QWindow9isVisibleEv(void *qthis) {
   ((QWindow*)qthis)->isVisible();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 241, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 250, column 10>
 //   // proto:  void QWindow::setScreen(QScreen * screen);
 // _ZN7QWindow9setScreenEP7QScreen setScreen(class QScreen *)
 extern "C"
@@ -181,7 +181,7 @@ C_ZN7QWindow9setScreenEP7QScreen(void *qthis,
 QScreen * arg1) {
   ((QWindow*)qthis)->setScreen(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 194, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 203, column 11>
 //   // proto:  QSize QWindow::maximumSize();
 // _ZNK7QWindow11maximumSizeEv maximumSize()
 extern "C"
@@ -191,7 +191,7 @@ C_ZNK7QWindow11maximumSizeEv(void *qthis) {
   ((QWindow*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 176, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 185, column 10>
 //   // proto:  void QWindow::setTransientParent(QWindow * parent);
 // _ZN7QWindow18setTransientParentEPS_ setTransientParent(class QWindow *)
 extern "C"
@@ -200,7 +200,7 @@ C_ZN7QWindow18setTransientParentEPS_(void *qthis,
 QWindow * arg1) {
   ((QWindow*)qthis)->setTransientParent(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 151, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 160, column 20>
 //   // proto:  QSurfaceFormat QWindow::format();
 // _ZNK7QWindow6formatEv format()
 extern "C"
@@ -210,7 +210,7 @@ C_ZNK7QWindow6formatEv(void *qthis) {
   ((QWindow*)qthis)->format();
   return new QSurfaceFormat(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 144, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 153, column 10>
 //   // proto:  bool QWindow::isTopLevel();
 // _ZNK7QWindow10isTopLevelEv isTopLevel()
 extern "C"
@@ -220,7 +220,7 @@ C_ZNK7QWindow10isTopLevelEv(void *qthis) {
   ((QWindow*)qthis)->isTopLevel();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 230, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 239, column 10>
 //   // proto:  void QWindow::setIcon(const QIcon & icon);
 // _ZN7QWindow7setIconERK5QIcon setIcon(const class QIcon &)
 extern "C"
@@ -229,7 +229,7 @@ C_ZN7QWindow7setIconERK5QIcon(void *qthis,
 const QIcon* arg1) {
   ((QWindow*)qthis)->setIcon(*((const QIcon*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 161, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 170, column 11>
 //   // proto:  qreal QWindow::opacity();
 // _ZNK7QWindow7opacityEv opacity()
 extern "C"
@@ -239,7 +239,7 @@ C_ZNK7QWindow7opacityEv(void *qthis) {
   ((QWindow*)qthis)->opacity();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 198, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 207, column 10>
 //   // proto:  void QWindow::setMinimumSize(const QSize & size);
 // _ZN7QWindow14setMinimumSizeERK5QSize setMinimumSize(const class QSize &)
 extern "C"
@@ -248,7 +248,7 @@ C_ZN7QWindow14setMinimumSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QWindow*)qthis)->setMinimumSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 189, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 198, column 16>
 //   // proto:  int QWindow::minimumHeight();
 // _ZNK7QWindow13minimumHeightEv minimumHeight()
 extern "C"
@@ -258,7 +258,7 @@ C_ZNK7QWindow13minimumHeightEv(void *qthis) {
   ((QWindow*)qthis)->minimumHeight();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 196, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 205, column 11>
 //   // proto:  QSize QWindow::sizeIncrement();
 // _ZNK7QWindow13sizeIncrementEv sizeIncrement()
 extern "C"
@@ -268,7 +268,7 @@ C_ZNK7QWindow13sizeIncrementEv(void *qthis) {
   ((QWindow*)qthis)->sizeIncrement();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 224, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 233, column 10>
 //   // proto:  void QWindow::resize(const QSize & newSize);
 // _ZN7QWindow6resizeERK5QSize resize(const class QSize &)
 extern "C"
@@ -277,7 +277,7 @@ C_ZN7QWindow6resizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QWindow*)qthis)->resize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 291, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 300, column 10>
 //   // proto:  void QWindow::screenChanged(QScreen * screen);
 // _ZN7QWindow13screenChangedEP7QScreen screenChanged(class QScreen *)
 extern "C"
@@ -286,7 +286,7 @@ C_ZN7QWindow13screenChangedEP7QScreen(void *qthis,
 QScreen * arg1) {
   ((QWindow*)qthis)->screenChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 274, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 283, column 10>
 //   // proto:  void QWindow::setTitle(const QString & );
 // _ZN7QWindow8setTitleERK7QString setTitle(const class QString &)
 extern "C"
@@ -295,7 +295,7 @@ C_ZN7QWindow8setTitleERK7QString(void *qthis,
 const QString* arg1) {
   ((QWindow*)qthis)->setTitle(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 271, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 280, column 10>
 //   // proto:  void QWindow::raise();
 // _ZN7QWindow5raiseEv raise()
 extern "C"
@@ -303,7 +303,7 @@ void
 C_ZN7QWindow5raiseEv(void *qthis) {
   ((QWindow*)qthis)->raise();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 139, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 148, column 9>
 //   // proto:  WId QWindow::winId();
 // _ZNK7QWindow5winIdEv winId()
 extern "C"
@@ -313,7 +313,7 @@ C_ZNK7QWindow5winIdEv(void *qthis) {
   ((QWindow*)qthis)->winId();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 135, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 144, column 10>
 //   // proto:  void QWindow::setVisibility(QWindow::Visibility v);
 // _ZN7QWindow13setVisibilityENS_10VisibilityE setVisibility(enum QWindow::Visibility)
 extern "C"
@@ -322,7 +322,7 @@ C_ZN7QWindow13setVisibilityENS_10VisibilityE(void *qthis,
 QWindow::Visibility arg1) {
   ((QWindow*)qthis)->setVisibility(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 193, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 202, column 11>
 //   // proto:  QSize QWindow::minimumSize();
 // _ZNK7QWindow11minimumSizeEv minimumSize()
 extern "C"
@@ -332,7 +332,7 @@ C_ZNK7QWindow11minimumSizeEv(void *qthis) {
   ((QWindow*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 246, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 255, column 12>
 //   // proto:  QPoint QWindow::mapToGlobal(const QPoint & pos);
 // _ZNK7QWindow11mapToGlobalERK6QPoint mapToGlobal(const class QPoint &)
 extern "C"
@@ -343,7 +343,7 @@ const QPoint* arg1) {
   ((QWindow*)qthis)->mapToGlobal(*((const QPoint*)arg1));
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 255, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 264, column 21>
 //   // proto: static QWindow * QWindow::fromWinId(WId id);
 // _ZN7QWindow9fromWinIdEi fromWinId(WId)
 extern "C"
@@ -353,7 +353,7 @@ C_ZN7QWindow9fromWinIdEi(WId arg1) {
   QWindow::fromWinId(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 207, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 216, column 14>
 //   // proto:  QMargins QWindow::frameMargins();
 // _ZNK7QWindow12frameMarginsEv frameMargins()
 extern "C"
@@ -363,7 +363,7 @@ C_ZNK7QWindow12frameMarginsEv(void *qthis) {
   ((QWindow*)qthis)->frameMargins();
   return new QMargins(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 283, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 292, column 10>
 //   // proto:  void QWindow::setMaximumWidth(int w);
 // _ZN7QWindow15setMaximumWidthEi setMaximumWidth(int)
 extern "C"
@@ -372,7 +372,7 @@ C_ZN7QWindow15setMaximumWidthEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setMaximumWidth(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 191, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 200, column 16>
 //   // proto:  int QWindow::maximumHeight();
 // _ZNK7QWindow13maximumHeightEv maximumHeight()
 extern "C"
@@ -382,7 +382,7 @@ C_ZNK7QWindow13maximumHeightEv(void *qthis) {
   ((QWindow*)qthis)->maximumHeight();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 312, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 321, column 10>
 //   // proto:  void QWindow::focusObjectChanged(QObject * object);
 // _ZN7QWindow18focusObjectChangedEP7QObject focusObjectChanged(class QObject *)
 extern "C"
@@ -391,7 +391,7 @@ C_ZN7QWindow18focusObjectChangedEP7QObject(void *qthis,
 QObject * arg1) {
   ((QWindow*)qthis)->focusObjectChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 147, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 156, column 24>
 //   // proto:  Qt::WindowModality QWindow::modality();
 // _ZNK7QWindow8modalityEv modality()
 extern "C"
@@ -401,7 +401,7 @@ C_ZNK7QWindow8modalityEv(void *qthis) {
   ((QWindow*)qthis)->modality();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 146, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 155, column 10>
 //   // proto:  bool QWindow::isModal();
 // _ZNK7QWindow7isModalEv isModal()
 extern "C"
@@ -411,7 +411,7 @@ C_ZNK7QWindow7isModalEv(void *qthis) {
   ((QWindow*)qthis)->isModal();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 304, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 313, column 10>
 //   // proto:  void QWindow::maximumWidthChanged(int arg);
 // _ZN7QWindow19maximumWidthChangedEi maximumWidthChanged(int)
 extern "C"
@@ -420,7 +420,7 @@ C_ZN7QWindow19maximumWidthChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->maximumWidthChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 205, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 214, column 11>
 //   // proto:  QRect QWindow::geometry();
 // _ZNK7QWindow8geometryEv geometry()
 extern "C"
@@ -430,7 +430,7 @@ C_ZNK7QWindow8geometryEv(void *qthis) {
   ((QWindow*)qthis)->geometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 130, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 139, column 17>
 //   // proto:  QSurface::SurfaceType QWindow::surfaceType();
 // _ZNK7QWindow11surfaceTypeEv surfaceType()
 extern "C"
@@ -440,7 +440,7 @@ C_ZNK7QWindow11surfaceTypeEv(void *qthis) {
   ((QWindow*)qthis)->surfaceType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 142, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 151, column 10>
 //   // proto:  void QWindow::setParent(QWindow * parent);
 // _ZN7QWindow9setParentEPS_ setParent(class QWindow *)
 extern "C"
@@ -449,7 +449,7 @@ C_ZN7QWindow9setParentEPS_(void *qthis,
 QWindow * arg1) {
   ((QWindow*)qthis)->setParent(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 208, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 217, column 11>
 //   // proto:  QRect QWindow::frameGeometry();
 // _ZNK7QWindow13frameGeometryEv frameGeometry()
 extern "C"
@@ -459,7 +459,7 @@ C_ZNK7QWindow13frameGeometryEv(void *qthis) {
   ((QWindow*)qthis)->frameGeometry();
   return new QRect(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 152, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 161, column 20>
 //   // proto:  QSurfaceFormat QWindow::requestedFormat();
 // _ZNK7QWindow15requestedFormatEv requestedFormat()
 extern "C"
@@ -469,7 +469,7 @@ C_ZNK7QWindow15requestedFormatEv(void *qthis) {
   ((QWindow*)qthis)->requestedFormat();
   return new QSurfaceFormat(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 279, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 288, column 10>
 //   // proto:  void QWindow::setHeight(int arg);
 // _ZN7QWindow9setHeightEi setHeight(int)
 extern "C"
@@ -478,7 +478,7 @@ C_ZN7QWindow9setHeightEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setHeight(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 258, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 267, column 24>
 //   // proto:  void QWindow::requestActivate();
 // _ZN7QWindow15requestActivateEv requestActivate()
 extern "C"
@@ -486,7 +486,7 @@ void
 C_ZN7QWindow15requestActivateEv(void *qthis) {
   ((QWindow*)qthis)->requestActivate();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 310, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 319, column 10>
 //   // proto:  void QWindow::contentOrientationChanged(Qt::ScreenOrientation orientation);
 // _ZN7QWindow25contentOrientationChangedEN2Qt17ScreenOrientationE contentOrientationChanged(Qt::ScreenOrientation)
 extern "C"
@@ -495,7 +495,7 @@ C_ZN7QWindow25contentOrientationChangedEN2Qt17ScreenOrientationE(void *qthis,
 Qt::ScreenOrientation* arg1) {
   ((QWindow*)qthis)->contentOrientationChanged(*((Qt::ScreenOrientation*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 184, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 193, column 10>
 //   // proto:  bool QWindow::isAncestorOf(const QWindow * child, QWindow::AncestorMode mode);
 // _ZNK7QWindow12isAncestorOfEPKS_NS_12AncestorModeE isAncestorOf(const class QWindow *, enum QWindow::AncestorMode)
 extern "C"
@@ -508,7 +508,7 @@ QWindow::AncestorMode arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 247, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 256, column 12>
 //   // proto:  QPoint QWindow::mapFromGlobal(const QPoint & pos);
 // _ZNK7QWindow13mapFromGlobalERK6QPoint mapFromGlobal(const class QPoint &)
 extern "C"
@@ -519,7 +519,7 @@ const QPoint* arg1) {
   ((QWindow*)qthis)->mapFromGlobal(*((const QPoint*)arg1));
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 293, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 302, column 10>
 //   // proto:  void QWindow::windowStateChanged(Qt::WindowState windowState);
 // _ZN7QWindow18windowStateChangedEN2Qt11WindowStateE windowStateChanged(Qt::WindowState)
 extern "C"
@@ -528,7 +528,7 @@ C_ZN7QWindow18windowStateChangedEN2Qt11WindowStateE(void *qthis,
 Qt::WindowState* arg1) {
   ((QWindow*)qthis)->windowStateChanged(*((Qt::WindowState*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 308, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 317, column 24>
 //   // proto:  void QWindow::visibilityChanged(QWindow::Visibility visibility);
 // _ZN7QWindow17visibilityChangedENS_10VisibilityE visibilityChanged(class QWindow::Visibility)
 extern "C"
@@ -537,7 +537,7 @@ C_ZN7QWindow17visibilityChangedENS_10VisibilityE(void *qthis,
 QWindow::Visibility* arg1) {
   ((QWindow*)qthis)->visibilityChanged(*((QWindow::Visibility*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 294, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 303, column 24>
 //   // proto:  void QWindow::windowTitleChanged(const QString & title);
 // _ZN7QWindow18windowTitleChangedERK7QString windowTitleChanged(const class QString &)
 extern "C"
@@ -546,7 +546,7 @@ C_ZN7QWindow18windowTitleChangedERK7QString(void *qthis,
 const QString* arg1) {
   ((QWindow*)qthis)->windowTitleChanged(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 216, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 225, column 16>
 //   // proto:  int QWindow::y();
 // _ZNK7QWindow1yEv y()
 extern "C"
@@ -556,7 +556,7 @@ C_ZNK7QWindow1yEv(void *qthis) {
   ((QWindow*)qthis)->y();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 213, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 222, column 16>
 //   // proto:  int QWindow::width();
 // _ZNK7QWindow5widthEv width()
 extern "C"
@@ -566,7 +566,7 @@ C_ZNK7QWindow5widthEv(void *qthis) {
   ((QWindow*)qthis)->width();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 227, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 236, column 10>
 //   // proto:  void QWindow::setFilePath(const QString & filePath);
 // _ZN7QWindow11setFilePathERK7QString setFilePath(const class QString &)
 extern "C"
@@ -575,7 +575,7 @@ C_ZN7QWindow11setFilePathERK7QString(void *qthis,
 const QString* arg1) {
   ((QWindow*)qthis)->setFilePath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 251, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 260, column 10>
 //   // proto:  void QWindow::setCursor(const QCursor & );
 // _ZN7QWindow9setCursorERK7QCursor setCursor(const class QCursor &)
 extern "C"
@@ -584,7 +584,7 @@ C_ZN7QWindow9setCursorERK7QCursor(void *qthis,
 const QCursor* arg1) {
   ((QWindow*)qthis)->setCursor(*((const QCursor*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 260, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 269, column 10>
 //   // proto:  void QWindow::setVisible(bool visible);
 // _ZN7QWindow10setVisibleEb setVisible(_Bool)
 extern "C"
@@ -598,7 +598,7 @@ extern "C"
 void C_ZN7QWindowD2Ev(void *qthis) {
   delete (QWindow*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 238, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 247, column 10>
 //   // proto:  bool QWindow::setMouseGrabEnabled(bool grab);
 // _ZN7QWindow19setMouseGrabEnabledEb setMouseGrabEnabled(_Bool)
 extern "C"
@@ -609,7 +609,7 @@ bool arg1) {
   ((QWindow*)qthis)->setMouseGrabEnabled(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 156, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 165, column 20>
 //   // proto:  Qt::WindowType QWindow::type();
 // _ZNK7QWindow4typeEv type()
 extern "C"
@@ -619,7 +619,7 @@ C_ZNK7QWindow4typeEv(void *qthis) {
   ((QWindow*)qthis)->type();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 168, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 177, column 10>
 //   // proto:  void QWindow::reportContentOrientationChange(Qt::ScreenOrientation orientation);
 // _ZN7QWindow30reportContentOrientationChangeEN2Qt17ScreenOrientationE reportContentOrientationChange(Qt::ScreenOrientation)
 extern "C"
@@ -628,7 +628,7 @@ C_ZN7QWindow30reportContentOrientationChangeEN2Qt17ScreenOrientationE(void *qthi
 Qt::ScreenOrientation* arg1) {
   ((QWindow*)qthis)->reportContentOrientationChange(*((Qt::ScreenOrientation*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 169, column 27>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 178, column 27>
 //   // proto:  Qt::ScreenOrientation QWindow::contentOrientation();
 // _ZNK7QWindow18contentOrientationEv contentOrientation()
 extern "C"
@@ -638,7 +638,7 @@ C_ZNK7QWindow18contentOrientationEv(void *qthis) {
   ((QWindow*)qthis)->contentOrientation();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 186, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 195, column 10>
 //   // proto:  bool QWindow::isExposed();
 // _ZNK7QWindow9isExposedEv isExposed()
 extern "C"
@@ -648,7 +648,7 @@ C_ZNK7QWindow9isExposedEv(void *qthis) {
   ((QWindow*)qthis)->isExposed();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 300, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 309, column 10>
 //   // proto:  void QWindow::heightChanged(int arg);
 // _ZN7QWindow13heightChangedEi heightChanged(int)
 extern "C"
@@ -657,7 +657,7 @@ C_ZN7QWindow13heightChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->heightChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 188, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 197, column 16>
 //   // proto:  int QWindow::minimumWidth();
 // _ZNK7QWindow12minimumWidthEv minimumWidth()
 extern "C"
@@ -667,7 +667,7 @@ C_ZNK7QWindow12minimumWidthEv(void *qthis) {
   ((QWindow*)qthis)->minimumWidth();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 221, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 230, column 10>
 //   // proto:  void QWindow::setPosition(const QPoint & pt);
 // _ZN7QWindow11setPositionERK6QPoint setPosition(const class QPoint &)
 extern "C"
@@ -676,7 +676,7 @@ C_ZN7QWindow11setPositionERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QWindow*)qthis)->setPosition(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 270, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 279, column 10>
 //   // proto:  bool QWindow::close();
 // _ZN7QWindow5closeEv close()
 extern "C"
@@ -686,7 +686,7 @@ C_ZN7QWindow5closeEv(void *qthis) {
   ((QWindow*)qthis)->close();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 215, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 224, column 16>
 //   // proto:  int QWindow::x();
 // _ZNK7QWindow1xEv x()
 extern "C"
@@ -696,7 +696,7 @@ C_ZNK7QWindow1xEv(void *qthis) {
   ((QWindow*)qthis)->x();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 292, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 301, column 10>
 //   // proto:  void QWindow::modalityChanged(Qt::WindowModality modality);
 // _ZN7QWindow15modalityChangedEN2Qt14WindowModalityE modalityChanged(Qt::WindowModality)
 extern "C"
@@ -705,7 +705,7 @@ C_ZN7QWindow15modalityChangedEN2Qt14WindowModalityE(void *qthis,
 Qt::WindowModality* arg1) {
   ((QWindow*)qthis)->modalityChanged(*((Qt::WindowModality*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 281, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 290, column 10>
 //   // proto:  void QWindow::setMinimumWidth(int w);
 // _ZN7QWindow15setMinimumWidthEi setMinimumWidth(int)
 extern "C"
@@ -714,7 +714,7 @@ C_ZN7QWindow15setMinimumWidthEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setMinimumWidth(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 164, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 173, column 13>
 //   // proto:  QRegion QWindow::mask();
 // _ZNK7QWindow4maskEv mask()
 extern "C"
@@ -724,7 +724,7 @@ C_ZNK7QWindow4maskEv(void *qthis) {
   ((QWindow*)qthis)->mask();
   return new QRegion(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 299, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 308, column 10>
 //   // proto:  void QWindow::widthChanged(int arg);
 // _ZN7QWindow12widthChangedEi widthChanged(int)
 extern "C"
@@ -733,7 +733,7 @@ C_ZN7QWindow12widthChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->widthChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 141, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 150, column 14>
 //   // proto:  QWindow * QWindow::parent();
 // _ZNK7QWindow6parentEv parent()
 extern "C"
@@ -743,7 +743,7 @@ C_ZNK7QWindow6parentEv(void *qthis) {
   ((QWindow*)qthis)->parent();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 148, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 157, column 10>
 //   // proto:  void QWindow::setModality(Qt::WindowModality modality);
 // _ZN7QWindow11setModalityEN2Qt14WindowModalityE setModality(Qt::WindowModality)
 extern "C"
@@ -752,7 +752,7 @@ C_ZN7QWindow11setModalityEN2Qt14WindowModalityE(void *qthis,
 Qt::WindowModality* arg1) {
   ((QWindow*)qthis)->setModality(*((Qt::WindowModality*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 134, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 143, column 16>
 //   // proto:  QWindow::Visibility QWindow::visibility();
 // _ZNK7QWindow10visibilityEv visibility()
 extern "C"
@@ -762,7 +762,7 @@ C_ZNK7QWindow10visibilityEv(void *qthis) {
   ((QWindow*)qthis)->visibility();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 211, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 220, column 10>
 //   // proto:  void QWindow::setFramePosition(const QPoint & point);
 // _ZN7QWindow16setFramePositionERK6QPoint setFramePosition(const class QPoint &)
 extern "C"
@@ -771,7 +771,7 @@ C_ZN7QWindow16setFramePositionERK6QPoint(void *qthis,
 const QPoint* arg1) {
   ((QWindow*)qthis)->setFramePosition(*((const QPoint*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 125, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 134, column 14>
 //   // proto:  void QWindow::QWindow(QScreen * screen);
 extern "C"
 QWindow*
@@ -779,7 +779,7 @@ C_ZN7QWindowC2EP7QScreen(QScreen * arg1) {
   auto ret = new QWindow(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 203, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 212, column 10>
 //   // proto:  void QWindow::setGeometry(int posx, int posy, int w, int h);
 // _ZN7QWindow11setGeometryEiiii setGeometry(int, int, int, int)
 extern "C"
@@ -794,7 +794,7 @@ arg2,
 arg3,
 arg4);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 237, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 246, column 10>
 //   // proto:  bool QWindow::setKeyboardGrabEnabled(bool grab);
 // _ZN7QWindow22setKeyboardGrabEnabledEb setKeyboardGrabEnabled(_Bool)
 extern "C"
@@ -805,7 +805,7 @@ bool arg1) {
   ((QWindow*)qthis)->setKeyboardGrabEnabled(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 84, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 93, column 5>
 //   // proto:  const QMetaObject * QWindow::metaObject();
 // _ZNK7QWindow10metaObjectEv metaObject()
 extern "C"
@@ -815,7 +815,7 @@ C_ZNK7QWindow10metaObjectEv(void *qthis) {
   ((QWindow*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 126, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 135, column 14>
 //   // proto:  void QWindow::QWindow(QWindow * parent);
 extern "C"
 QWindow*
@@ -823,7 +823,7 @@ C_ZN7QWindowC2EPS_(QWindow * arg1) {
   auto ret = new QWindow(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 309, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 318, column 24>
 //   // proto:  void QWindow::activeChanged();
 // _ZN7QWindow13activeChangedEv activeChanged()
 extern "C"
@@ -831,7 +831,7 @@ void
 C_ZN7QWindow13activeChangedEv(void *qthis) {
   ((QWindow*)qthis)->activeChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 278, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 287, column 10>
 //   // proto:  void QWindow::setWidth(int arg);
 // _ZN7QWindow8setWidthEi setWidth(int)
 extern "C"
@@ -840,7 +840,7 @@ C_ZN7QWindow8setWidthEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setWidth(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 277, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 286, column 10>
 //   // proto:  void QWindow::setY(int arg);
 // _ZN7QWindow4setYEi setY(int)
 extern "C"
@@ -849,7 +849,7 @@ C_ZN7QWindow4setYEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setY(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 171, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 180, column 11>
 //   // proto:  qreal QWindow::devicePixelRatio();
 // _ZNK7QWindow16devicePixelRatioEv devicePixelRatio()
 extern "C"
@@ -859,7 +859,7 @@ C_ZNK7QWindow16devicePixelRatioEv(void *qthis) {
   ((QWindow*)qthis)->devicePixelRatio();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 200, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 209, column 10>
 //   // proto:  void QWindow::setBaseSize(const QSize & size);
 // _ZN7QWindow11setBaseSizeERK5QSize setBaseSize(const class QSize &)
 extern "C"
@@ -868,7 +868,7 @@ C_ZN7QWindow11setBaseSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QWindow*)qthis)->setBaseSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 286, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 295, column 24>
 //   // proto:  void QWindow::alert(int msec);
 // _ZN7QWindow5alertEi alert(int)
 extern "C"
@@ -877,7 +877,7 @@ C_ZN7QWindow5alertEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->alert(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 297, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 306, column 10>
 //   // proto:  void QWindow::yChanged(int arg);
 // _ZN7QWindow8yChangedEi yChanged(int)
 extern "C"
@@ -886,7 +886,7 @@ C_ZN7QWindow8yChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->yChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 235, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 244, column 22>
 //   // proto:  QPlatformWindow * QWindow::handle();
 // _ZNK7QWindow6handleEv handle()
 extern "C"
@@ -896,7 +896,7 @@ C_ZNK7QWindow6handleEv(void *qthis) {
   ((QWindow*)qthis)->handle();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 233, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 242, column 10>
 //   // proto:  void QWindow::destroy();
 // _ZN7QWindow7destroyEv destroy()
 extern "C"
@@ -904,7 +904,7 @@ void
 C_ZN7QWindow7destroyEv(void *qthis) {
   ((QWindow*)qthis)->destroy();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 177, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 186, column 14>
 //   // proto:  QWindow * QWindow::transientParent();
 // _ZNK7QWindow15transientParentEv transientParent()
 extern "C"
@@ -914,7 +914,7 @@ C_ZNK7QWindow15transientParentEv(void *qthis) {
   ((QWindow*)qthis)->transientParent();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 282, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 291, column 10>
 //   // proto:  void QWindow::setMinimumHeight(int h);
 // _ZN7QWindow16setMinimumHeightEi setMinimumHeight(int)
 extern "C"
@@ -923,7 +923,7 @@ C_ZN7QWindow16setMinimumHeightEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setMinimumHeight(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 262, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 271, column 10>
 //   // proto:  void QWindow::show();
 // _ZN7QWindow4showEv show()
 extern "C"
@@ -931,7 +931,7 @@ void
 C_ZN7QWindow4showEv(void *qthis) {
   ((QWindow*)qthis)->show();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 302, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 311, column 10>
 //   // proto:  void QWindow::minimumWidthChanged(int arg);
 // _ZN7QWindow19minimumWidthChangedEi minimumWidthChanged(int)
 extern "C"
@@ -940,7 +940,7 @@ C_ZN7QWindow19minimumWidthChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->minimumWidthChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 195, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 204, column 11>
 //   // proto:  QSize QWindow::baseSize();
 // _ZNK7QWindow8baseSizeEv baseSize()
 extern "C"
@@ -950,7 +950,7 @@ C_ZNK7QWindow8baseSizeEv(void *qthis) {
   ((QWindow*)qthis)->baseSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 158, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 167, column 13>
 //   // proto:  QString QWindow::title();
 // _ZNK7QWindow5titleEv title()
 extern "C"
@@ -960,7 +960,7 @@ C_ZNK7QWindow5titleEv(void *qthis) {
   ((QWindow*)qthis)->title();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 266, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 275, column 10>
 //   // proto:  void QWindow::showMaximized();
 // _ZN7QWindow13showMaximizedEv showMaximized()
 extern "C"
@@ -968,7 +968,7 @@ void
 C_ZN7QWindow13showMaximizedEv(void *qthis) {
   ((QWindow*)qthis)->showMaximized();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 137, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 146, column 10>
 //   // proto:  void QWindow::create();
 // _ZN7QWindow6createEv create()
 extern "C"
@@ -976,7 +976,7 @@ void
 C_ZN7QWindow6createEv(void *qthis) {
   ((QWindow*)qthis)->create();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 225, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 234, column 10>
 //   // proto:  void QWindow::resize(int w, int h);
 // _ZN7QWindow6resizeEii resize(int, int)
 extern "C"
@@ -987,7 +987,7 @@ int arg2) {
   ((QWindow*)qthis)->resize(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 240, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 249, column 14>
 //   // proto:  QScreen * QWindow::screen();
 // _ZNK7QWindow6screenEv screen()
 extern "C"
@@ -997,7 +997,7 @@ C_ZNK7QWindow6screenEv(void *qthis) {
   ((QWindow*)qthis)->screen();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 222, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 231, column 10>
 //   // proto:  void QWindow::setPosition(int posx, int posy);
 // _ZN7QWindow11setPositionEii setPosition(int, int)
 extern "C"
@@ -1008,7 +1008,7 @@ int arg2) {
   ((QWindow*)qthis)->setPosition(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 160, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 169, column 10>
 //   // proto:  void QWindow::setOpacity(qreal level);
 // _ZN7QWindow10setOpacityEd setOpacity(qreal)
 extern "C"
@@ -1017,7 +1017,7 @@ C_ZN7QWindow10setOpacityEd(void *qthis,
 qreal arg1) {
   ((QWindow*)qthis)->setOpacity(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 173, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 182, column 21>
 //   // proto:  Qt::WindowState QWindow::windowState();
 // _ZNK7QWindow11windowStateEv windowState()
 extern "C"
@@ -1027,7 +1027,7 @@ C_ZNK7QWindow11windowStateEv(void *qthis) {
   ((QWindow*)qthis)->windowState();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 174, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 183, column 10>
 //   // proto:  void QWindow::setWindowState(Qt::WindowState state);
 // _ZN7QWindow14setWindowStateEN2Qt11WindowStateE setWindowState(Qt::WindowState)
 extern "C"
@@ -1036,7 +1036,7 @@ C_ZN7QWindow14setWindowStateEN2Qt11WindowStateE(void *qthis,
 Qt::WindowState* arg1) {
   ((QWindow*)qthis)->setWindowState(*((Qt::WindowState*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 204, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 213, column 10>
 //   // proto:  void QWindow::setGeometry(const QRect & rect);
 // _ZN7QWindow11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -1045,7 +1045,7 @@ C_ZN7QWindow11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QWindow*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 201, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 210, column 10>
 //   // proto:  void QWindow::setSizeIncrement(const QSize & size);
 // _ZN7QWindow16setSizeIncrementERK5QSize setSizeIncrement(const class QSize &)
 extern "C"
@@ -1054,7 +1054,7 @@ C_ZN7QWindow16setSizeIncrementERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QWindow*)qthis)->setSizeIncrement(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 265, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 274, column 10>
 //   // proto:  void QWindow::showMinimized();
 // _ZN7QWindow13showMinimizedEv showMinimized()
 extern "C"
@@ -1062,7 +1062,7 @@ void
 C_ZN7QWindow13showMinimizedEv(void *qthis) {
   ((QWindow*)qthis)->showMinimized();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 244, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 253, column 22>
 //   // proto:  QObject * QWindow::focusObject();
 // _ZNK7QWindow11focusObjectEv focusObject()
 extern "C"
@@ -1072,7 +1072,7 @@ C_ZNK7QWindow11focusObjectEv(void *qthis) {
   ((QWindow*)qthis)->focusObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 166, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 175, column 10>
 //   // proto:  bool QWindow::isActive();
 // _ZNK7QWindow8isActiveEv isActive()
 extern "C"
@@ -1082,7 +1082,7 @@ C_ZNK7QWindow8isActiveEv(void *qthis) {
   ((QWindow*)qthis)->isActive();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 154, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 163, column 10>
 //   // proto:  void QWindow::setFlags(Qt::WindowFlags flags);
 // _ZN7QWindow8setFlagsE6QFlagsIN2Qt10WindowTypeEE setFlags(Qt::WindowFlags)
 extern "C"
@@ -1091,7 +1091,7 @@ C_ZN7QWindow8setFlagsE6QFlagsIN2Qt10WindowTypeEE(void *qthis,
 Qt::WindowFlags* arg1) {
   ((QWindow*)qthis)->setFlags(*((Qt::WindowFlags*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 155, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 164, column 21>
 //   // proto:  Qt::WindowFlags QWindow::flags();
 // _ZNK7QWindow5flagsEv flags()
 extern "C"
@@ -1101,7 +1101,7 @@ C_ZNK7QWindow5flagsEv(void *qthis) {
   ((QWindow*)qthis)->flags();
   return new QFlags<Qt::WindowType>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 305, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 314, column 10>
 //   // proto:  void QWindow::maximumHeightChanged(int arg);
 // _ZN7QWindow20maximumHeightChangedEi maximumHeightChanged(int)
 extern "C"
@@ -1110,7 +1110,7 @@ C_ZN7QWindow20maximumHeightChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->maximumHeightChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 243, column 35>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 252, column 35>
 //   // proto:  QAccessibleInterface * QWindow::accessibleRoot();
 // _ZNK7QWindow14accessibleRootEv accessibleRoot()
 extern "C"
@@ -1120,7 +1120,7 @@ C_ZNK7QWindow14accessibleRootEv(void *qthis) {
   ((QWindow*)qthis)->accessibleRoot();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 250, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 259, column 13>
 //   // proto:  QCursor QWindow::cursor();
 // _ZNK7QWindow6cursorEv cursor()
 extern "C"
@@ -1130,7 +1130,7 @@ C_ZNK7QWindow6cursorEv(void *qthis) {
   ((QWindow*)qthis)->cursor();
   return new QCursor(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 150, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 159, column 10>
 //   // proto:  void QWindow::setFormat(const QSurfaceFormat & format);
 // _ZN7QWindow9setFormatERK14QSurfaceFormat setFormat(const class QSurfaceFormat &)
 extern "C"
@@ -1139,7 +1139,7 @@ C_ZN7QWindow9setFormatERK14QSurfaceFormat(void *qthis,
 const QSurfaceFormat* arg1) {
   ((QWindow*)qthis)->setFormat(*((const QSurfaceFormat*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 267, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 276, column 10>
 //   // proto:  void QWindow::showFullScreen();
 // _ZN7QWindow14showFullScreenEv showFullScreen()
 extern "C"
@@ -1147,7 +1147,7 @@ void
 C_ZN7QWindow14showFullScreenEv(void *qthis) {
   ((QWindow*)qthis)->showFullScreen();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 276, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 285, column 10>
 //   // proto:  void QWindow::setX(int arg);
 // _ZN7QWindow4setXEi setX(int)
 extern "C"
@@ -1156,7 +1156,7 @@ C_ZN7QWindow4setXEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setX(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 314, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 323, column 24>
 //   // proto:  void QWindow::opacityChanged(qreal opacity);
 // _ZN7QWindow14opacityChangedEd opacityChanged(qreal)
 extern "C"
@@ -1165,7 +1165,7 @@ C_ZN7QWindow14opacityChangedEd(void *qthis,
 qreal arg1) {
   ((QWindow*)qthis)->opacityChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 272, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 281, column 10>
 //   // proto:  void QWindow::lower();
 // _ZN7QWindow5lowerEv lower()
 extern "C"
@@ -1173,7 +1173,7 @@ void
 C_ZN7QWindow5lowerEv(void *qthis) {
   ((QWindow*)qthis)->lower();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 288, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 297, column 24>
 //   // proto:  void QWindow::requestUpdate();
 // _ZN7QWindow13requestUpdateEv requestUpdate()
 extern "C"
@@ -1181,7 +1181,7 @@ void
 C_ZN7QWindow13requestUpdateEv(void *qthis) {
   ((QWindow*)qthis)->requestUpdate();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 129, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 138, column 10>
 //   // proto:  void QWindow::setSurfaceType(QSurface::SurfaceType surfaceType);
 // _ZN7QWindow14setSurfaceTypeEN8QSurface11SurfaceTypeE setSurfaceType(enum QSurface::SurfaceType)
 extern "C"
@@ -1190,7 +1190,7 @@ C_ZN7QWindow14setSurfaceTypeEN8QSurface11SurfaceTypeE(void *qthis,
 QSurface::SurfaceType arg1) {
   ((QWindow*)qthis)->setSurfaceType(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 263, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 272, column 10>
 //   // proto:  void QWindow::hide();
 // _ZN7QWindow4hideEv hide()
 extern "C"
@@ -1198,7 +1198,7 @@ void
 C_ZN7QWindow4hideEv(void *qthis) {
   ((QWindow*)qthis)->hide();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 303, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 312, column 10>
 //   // proto:  void QWindow::minimumHeightChanged(int arg);
 // _ZN7QWindow20minimumHeightChangedEi minimumHeightChanged(int)
 extern "C"
@@ -1207,7 +1207,7 @@ C_ZN7QWindow20minimumHeightChangedEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->minimumHeightChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 163, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 172, column 10>
 //   // proto:  void QWindow::setMask(const QRegion & region);
 // _ZN7QWindow7setMaskERK7QRegion setMask(const class QRegion &)
 extern "C"
@@ -1216,7 +1216,7 @@ C_ZN7QWindow7setMaskERK7QRegion(void *qthis,
 const QRegion* arg1) {
   ((QWindow*)qthis)->setMask(*((const QRegion*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 199, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 208, column 10>
 //   // proto:  void QWindow::setMaximumSize(const QSize & size);
 // _ZN7QWindow14setMaximumSizeERK5QSize setMaximumSize(const class QSize &)
 extern "C"
@@ -1225,7 +1225,7 @@ C_ZN7QWindow14setMaximumSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QWindow*)qthis)->setMaximumSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 214, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 223, column 16>
 //   // proto:  int QWindow::height();
 // _ZNK7QWindow6heightEv height()
 extern "C"
@@ -1235,7 +1235,7 @@ C_ZNK7QWindow6heightEv(void *qthis) {
   ((QWindow*)qthis)->height();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 218, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 227, column 11>
 //   // proto:  QSize QWindow::size();
 // _ZNK7QWindow4sizeEv size()
 extern "C"
@@ -1245,7 +1245,7 @@ C_ZNK7QWindow4sizeEv(void *qthis) {
   ((QWindow*)qthis)->size();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 190, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 199, column 16>
 //   // proto:  int QWindow::maximumWidth();
 // _ZNK7QWindow12maximumWidthEv maximumWidth()
 extern "C"
@@ -1255,7 +1255,7 @@ C_ZNK7QWindow12maximumWidthEv(void *qthis) {
   ((QWindow*)qthis)->maximumWidth();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 219, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 228, column 19>
 //   // proto:  QPoint QWindow::position();
 // _ZNK7QWindow8positionEv position()
 extern "C"
@@ -1265,7 +1265,7 @@ C_ZNK7QWindow8positionEv(void *qthis) {
   ((QWindow*)qthis)->position();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 284, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 293, column 10>
 //   // proto:  void QWindow::setMaximumHeight(int h);
 // _ZN7QWindow16setMaximumHeightEi setMaximumHeight(int)
 extern "C"
@@ -1274,7 +1274,7 @@ C_ZN7QWindow16setMaximumHeightEi(void *qthis,
 int arg1) {
   ((QWindow*)qthis)->setMaximumHeight(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 228, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 237, column 13>
 //   // proto:  QString QWindow::filePath();
 // _ZNK7QWindow8filePathEv filePath()
 extern "C"
@@ -1284,7 +1284,7 @@ C_ZNK7QWindow8filePathEv(void *qthis) {
   ((QWindow*)qthis)->filePath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 268, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 277, column 10>
 //   // proto:  void QWindow::showNormal();
 // _ZN7QWindow10showNormalEv showNormal()
 extern "C"
@@ -1292,7 +1292,7 @@ void
 C_ZN7QWindow10showNormalEv(void *qthis) {
   ((QWindow*)qthis)->showNormal();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 210, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 219, column 12>
 //   // proto:  QPoint QWindow::framePosition();
 // _ZNK7QWindow13framePositionEv framePosition()
 extern "C"
@@ -1302,7 +1302,7 @@ C_ZNK7QWindow13framePositionEv(void *qthis) {
   ((QWindow*)qthis)->framePosition();
   return new QPoint(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 307, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 316, column 10>
 //   // proto:  void QWindow::visibleChanged(bool arg);
 // _ZN7QWindow14visibleChangedEb visibleChanged(_Bool)
 extern "C"
@@ -1311,7 +1311,7 @@ C_ZN7QWindow14visibleChangedEb(void *qthis,
 bool arg1) {
   ((QWindow*)qthis)->visibleChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 231, column 11>
+// <SourceLocation file '/usr/include/qt/QtGui/qwindow.h', line 240, column 11>
 //   // proto:  QIcon QWindow::icon();
 // _ZNK7QWindow4iconEv icon()
 extern "C"

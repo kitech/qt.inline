@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qstandardpaths.h
 // dst-file: /src/core/qstandardpaths.cxx
 //
@@ -34,7 +34,7 @@ int QStandardPaths_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 83, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 89, column 20>
 //   // proto: static QString QStandardPaths::displayName(QStandardPaths::StandardLocation type);
 // _ZN14QStandardPaths11displayNameENS_16StandardLocationE displayName(enum QStandardPaths::StandardLocation)
 extern "C"
@@ -44,7 +44,7 @@ C_ZN14QStandardPaths11displayNameENS_16StandardLocationE(QStandardPaths::Standar
   QStandardPaths::displayName(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 81, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 87, column 24>
 //   // proto: static QStringList QStandardPaths::locateAll(QStandardPaths::StandardLocation type, const QString & fileName, LocateOptions options);
 // _ZN14QStandardPaths9locateAllENS_16StandardLocationERK7QString6QFlagsINS_12LocateOptionEE locateAll(enum QStandardPaths::StandardLocation, const class QString &, LocateOptions)
 extern "C"
@@ -58,7 +58,7 @@ QStandardPaths::LocateOptions arg3) {
 arg3);
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 80, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 86, column 20>
 //   // proto: static QString QStandardPaths::locate(QStandardPaths::StandardLocation type, const QString & fileName, LocateOptions options);
 // _ZN14QStandardPaths6locateENS_16StandardLocationERK7QString6QFlagsINS_12LocateOptionEE locate(enum QStandardPaths::StandardLocation, const class QString &, LocateOptions)
 extern "C"
@@ -72,7 +72,7 @@ QStandardPaths::LocateOptions arg3) {
 arg3);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 91, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 97, column 17>
 //   // proto: static void QStandardPaths::setTestModeEnabled(bool testMode);
 // _ZN14QStandardPaths18setTestModeEnabledEb setTestModeEnabled(_Bool)
 extern "C"
@@ -80,7 +80,7 @@ void
 C_ZN14QStandardPaths18setTestModeEnabledEb(bool arg1) {
   QStandardPaths::setTestModeEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 86, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 92, column 20>
 //   // proto: static QString QStandardPaths::findExecutable(const QString & executableName, const QStringList & paths);
 // _ZN14QStandardPaths14findExecutableERK7QStringRK11QStringList findExecutable(const class QString &, const class QStringList &)
 extern "C"
@@ -92,7 +92,7 @@ const QStringList* arg2) {
 *((const QStringList*)arg2));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 89, column 31>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 95, column 31>
 //   // proto: static void QStandardPaths::enableTestMode(bool testMode);
 // _ZN14QStandardPaths14enableTestModeEb enableTestMode(_Bool)
 extern "C"
@@ -100,7 +100,7 @@ void
 C_ZN14QStandardPaths14enableTestModeEb(bool arg1) {
   QStandardPaths::enableTestMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 92, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 98, column 17>
 //   // proto: static bool QStandardPaths::isTestModeEnabled();
 // _ZN14QStandardPaths17isTestModeEnabledEv isTestModeEnabled()
 extern "C"
@@ -110,7 +110,7 @@ C_ZN14QStandardPaths17isTestModeEnabledEv() {
   QStandardPaths::isTestModeEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 72, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 78, column 24>
 //   // proto: static QStringList QStandardPaths::standardLocations(QStandardPaths::StandardLocation type);
 // _ZN14QStandardPaths17standardLocationsENS_16StandardLocationE standardLocations(enum QStandardPaths::StandardLocation)
 extern "C"
@@ -120,7 +120,7 @@ C_ZN14QStandardPaths17standardLocationsENS_16StandardLocationE(QStandardPaths::S
   QStandardPaths::standardLocations(arg1);
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 71, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qstandardpaths.h', line 77, column 20>
 //   // proto: static QString QStandardPaths::writableLocation(QStandardPaths::StandardLocation type);
 // _ZN14QStandardPaths16writableLocationENS_16StandardLocationE writableLocation(enum QStandardPaths::StandardLocation)
 extern "C"

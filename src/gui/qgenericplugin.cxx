@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qgenericplugin.h
 // dst-file: /src/gui/qgenericplugin.cxx
 //
@@ -32,14 +32,14 @@ int QGenericPlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 54, column 14>
 //   // proto:  void QGenericPlugin::QGenericPlugin(QObject * parent);
 extern "C"
 QGenericPlugin*
 C_ZN14QGenericPluginC2EP7QObject(QObject * arg1) {
   // auto ret = new QGenericPlugin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 54, column 22>
+// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 57, column 22>
 //   // proto:  QObject * QGenericPlugin::create(const QString & name, const QString & spec);
 // _ZN14QGenericPlugin6createERK7QStringS2_ create(const class QString &, const class QString &)
 extern "C"
@@ -57,7 +57,7 @@ extern "C"
 void C_ZN14QGenericPluginD2Ev(void *qthis) {
   delete (QGenericPlugin*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qgenericplugin.h', line 52, column 5>
 //   // proto:  const QMetaObject * QGenericPlugin::metaObject();
 // _ZNK14QGenericPlugin10metaObjectEv metaObject()
 extern "C"

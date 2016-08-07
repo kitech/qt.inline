@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qtabwidget.h
 // dst-file: /src/widgets/qtabwidget.cxx
 //
@@ -36,7 +36,7 @@ int QTabWidget_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 146, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 152, column 10>
 //   // proto:  void QTabWidget::setCurrentWidget(QWidget * widget);
 // _ZN10QTabWidget16setCurrentWidgetEP7QWidget setCurrentWidget(class QWidget *)
 extern "C"
@@ -45,7 +45,7 @@ C_ZN10QTabWidget16setCurrentWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QTabWidget*)qthis)->setCurrentWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 114, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 120, column 14>
 //   // proto:  QTabWidget::TabShape QTabWidget::tabShape();
 // _ZNK10QTabWidget8tabShapeEv tabShape()
 extern "C"
@@ -55,7 +55,7 @@ C_ZNK10QTabWidget8tabShapeEv(void *qthis) {
   ((QTabWidget*)qthis)->tabShape();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 99, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 105, column 9>
 //   // proto:  int QTabWidget::count();
 // _ZNK10QTabWidget5countEv count()
 extern "C"
@@ -65,7 +65,7 @@ C_ZNK10QTabWidget5countEv(void *qthis) {
   ((QTabWidget*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 150, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 156, column 10>
 //   // proto:  void QTabWidget::tabCloseRequested(int index);
 // _ZN10QTabWidget17tabCloseRequestedEi tabCloseRequested(int)
 extern "C"
@@ -74,7 +74,7 @@ C_ZN10QTabWidget17tabCloseRequestedEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->tabCloseRequested(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 135, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 141, column 10>
 //   // proto:  void QTabWidget::setDocumentMode(bool set);
 // _ZN10QTabWidget15setDocumentModeEb setDocumentMode(_Bool)
 extern "C"
@@ -83,7 +83,7 @@ C_ZN10QTabWidget15setDocumentModeEb(void *qthis,
 bool arg1) {
   ((QTabWidget*)qthis)->setDocumentMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 119, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 125, column 9>
 //   // proto:  int QTabWidget::heightForWidth(int width);
 // _ZNK10QTabWidget14heightForWidthEi heightForWidth(int)
 extern "C"
@@ -94,7 +94,7 @@ int arg1) {
   ((QTabWidget*)qthis)->heightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 68, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 74, column 9>
 //   // proto:  int QTabWidget::addTab(QWidget * widget, const QString & );
 // _ZN10QTabWidget6addTabEP7QWidgetRK7QString addTab(class QWidget *, const class QString &)
 extern "C"
@@ -107,7 +107,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 79, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 85, column 13>
 //   // proto:  QString QTabWidget::tabText(int index);
 // _ZNK10QTabWidget7tabTextEi tabText(int)
 extern "C"
@@ -118,7 +118,7 @@ int arg1) {
   ((QTabWidget*)qthis)->tabText(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 140, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 146, column 10>
 //   // proto:  void QTabWidget::clear();
 // _ZN10QTabWidget5clearEv clear()
 extern "C"
@@ -126,7 +126,7 @@ void
 C_ZN10QTabWidget5clearEv(void *qthis) {
   ((QTabWidget*)qthis)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 120, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 126, column 10>
 //   // proto:  bool QTabWidget::hasHeightForWidth();
 // _ZNK10QTabWidget17hasHeightForWidthEv hasHeightForWidth()
 extern "C"
@@ -136,7 +136,7 @@ C_ZNK10QTabWidget17hasHeightForWidthEv(void *qthis) {
   ((QTabWidget*)qthis)->hasHeightForWidth();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 142, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 148, column 14>
 //   // proto:  QTabBar * QTabWidget::tabBar();
 // _ZNK10QTabWidget6tabBarEv tabBar()
 extern "C"
@@ -146,7 +146,7 @@ C_ZNK10QTabWidget6tabBarEv(void *qthis) {
   ((QTabWidget*)qthis)->tabBar();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 106, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 112, column 10>
 //   // proto:  bool QTabWidget::tabsClosable();
 // _ZNK10QTabWidget12tabsClosableEv tabsClosable()
 extern "C"
@@ -156,7 +156,7 @@ C_ZNK10QTabWidget12tabsClosableEv(void *qthis) {
   ((QTabWidget*)qthis)->tabsClosable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 72, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 78, column 9>
 //   // proto:  int QTabWidget::insertTab(int index, QWidget * widget, const QIcon & icon, const QString & label);
 // _ZN10QTabWidget9insertTabEiP7QWidgetRK5QIconRK7QString insertTab(int, class QWidget *, const class QIcon &, const class QString &)
 extern "C"
@@ -173,7 +173,7 @@ arg2,
 *((const QString*)arg4));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 123, column 15>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 129, column 15>
 //   // proto:  QWidget * QTabWidget::cornerWidget(Qt::Corner corner);
 // _ZNK10QTabWidget12cornerWidgetEN2Qt6CornerE cornerWidget(Qt::Corner)
 extern "C"
@@ -184,7 +184,7 @@ Qt::Corner* arg1) {
   ((QTabWidget*)qthis)->cornerWidget(*((Qt::Corner*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 69, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 75, column 9>
 //   // proto:  int QTabWidget::addTab(QWidget * widget, const QIcon & icon, const QString & label);
 // _ZN10QTabWidget6addTabEP7QWidgetRK5QIconRK7QString addTab(class QWidget *, const class QIcon &, const class QString &)
 extern "C"
@@ -199,7 +199,7 @@ const QString* arg3) {
 *((const QString*)arg3));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 132, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 138, column 10>
 //   // proto:  void QTabWidget::setUsesScrollButtons(bool useButtons);
 // _ZN10QTabWidget20setUsesScrollButtonsEb setUsesScrollButtons(_Bool)
 extern "C"
@@ -208,7 +208,7 @@ C_ZN10QTabWidget20setUsesScrollButtonsEb(void *qthis,
 bool arg1) {
   ((QTabWidget*)qthis)->setUsesScrollButtons(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 57, column 5>
 //   // proto:  const QMetaObject * QTabWidget::metaObject();
 // _ZNK10QTabWidget10metaObjectEv metaObject()
 extern "C"
@@ -218,7 +218,7 @@ C_ZNK10QTabWidget10metaObjectEv(void *qthis) {
   ((QTabWidget*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 87, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 93, column 13>
 //   // proto:  QString QTabWidget::tabToolTip(int index);
 // _ZNK10QTabWidget10tabToolTipEi tabToolTip(int)
 extern "C"
@@ -229,7 +229,7 @@ int arg1) {
   ((QTabWidget*)qthis)->tabToolTip(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 96, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 102, column 14>
 //   // proto:  QWidget * QTabWidget::currentWidget();
 // _ZNK10QTabWidget13currentWidgetEv currentWidget()
 extern "C"
@@ -239,7 +239,7 @@ C_ZNK10QTabWidget13currentWidgetEv(void *qthis) {
   ((QTabWidget*)qthis)->currentWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 129, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 135, column 10>
 //   // proto:  void QTabWidget::setIconSize(const QSize & size);
 // _ZN10QTabWidget11setIconSizeERK5QSize setIconSize(const class QSize &)
 extern "C"
@@ -248,7 +248,7 @@ C_ZN10QTabWidget11setIconSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QTabWidget*)qthis)->setIconSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 132, column 10>
 //   // proto:  void QTabWidget::setElideMode(Qt::TextElideMode );
 // _ZN10QTabWidget12setElideModeEN2Qt13TextElideModeE setElideMode(Qt::TextElideMode)
 extern "C"
@@ -257,7 +257,7 @@ C_ZN10QTabWidget12setElideModeEN2Qt13TextElideModeE(void *qthis,
 Qt::TextElideMode* arg1) {
   ((QTabWidget*)qthis)->setElideMode(*((Qt::TextElideMode*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 97, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 103, column 14>
 //   // proto:  QWidget * QTabWidget::widget(int index);
 // _ZNK10QTabWidget6widgetEi widget(int)
 extern "C"
@@ -268,7 +268,7 @@ int arg1) {
   ((QTabWidget*)qthis)->widget(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 110, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 116, column 10>
 //   // proto:  void QTabWidget::setMovable(bool movable);
 // _ZN10QTabWidget10setMovableEb setMovable(_Bool)
 extern "C"
@@ -277,7 +277,7 @@ C_ZN10QTabWidget10setMovableEb(void *qthis,
 bool arg1) {
   ((QTabWidget*)qthis)->setMovable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 134, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 140, column 10>
 //   // proto:  bool QTabWidget::documentMode();
 // _ZNK10QTabWidget12documentModeEv documentMode()
 extern "C"
@@ -287,7 +287,7 @@ C_ZNK10QTabWidget12documentModeEv(void *qthis) {
   ((QTabWidget*)qthis)->documentMode();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 92, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 98, column 13>
 //   // proto:  QString QTabWidget::tabWhatsThis(int index);
 // _ZNK10QTabWidget12tabWhatsThisEi tabWhatsThis(int)
 extern "C"
@@ -298,7 +298,7 @@ int arg1) {
   ((QTabWidget*)qthis)->tabWhatsThis(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 151, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 157, column 10>
 //   // proto:  void QTabWidget::tabBarClicked(int index);
 // _ZN10QTabWidget13tabBarClickedEi tabBarClicked(int)
 extern "C"
@@ -307,7 +307,7 @@ C_ZN10QTabWidget13tabBarClickedEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->tabBarClicked(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 86, column 10>
 //   // proto:  void QTabWidget::setTabText(int index, const QString & );
 // _ZN10QTabWidget10setTabTextEiRK7QString setTabText(int, const class QString &)
 extern "C"
@@ -318,7 +318,7 @@ const QString* arg2) {
   ((QTabWidget*)qthis)->setTabText(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 65, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 71, column 14>
 //   // proto:  void QTabWidget::QTabWidget(QWidget * parent);
 extern "C"
 QTabWidget*
@@ -326,7 +326,7 @@ C_ZN10QTabWidgetC2EP7QWidget(QWidget * arg1) {
   auto ret = new QTabWidget(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 137, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 143, column 10>
 //   // proto:  bool QTabWidget::tabBarAutoHide();
 // _ZNK10QTabWidget14tabBarAutoHideEv tabBarAutoHide()
 extern "C"
@@ -336,7 +336,7 @@ C_ZNK10QTabWidget14tabBarAutoHideEv(void *qthis) {
   ((QTabWidget*)qthis)->tabBarAutoHide();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 149, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 155, column 10>
 //   // proto:  void QTabWidget::currentChanged(int index);
 // _ZN10QTabWidget14currentChangedEi currentChanged(int)
 extern "C"
@@ -345,7 +345,7 @@ C_ZN10QTabWidget14currentChangedEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->currentChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 89, column 10>
 //   // proto:  void QTabWidget::setTabIcon(int index, const QIcon & icon);
 // _ZN10QTabWidget10setTabIconEiRK5QIcon setTabIcon(int, const class QIcon &)
 extern "C"
@@ -356,7 +356,7 @@ const QIcon* arg2) {
   ((QTabWidget*)qthis)->setTabIcon(arg1,
 *((const QIcon*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 82, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 88, column 11>
 //   // proto:  QIcon QTabWidget::tabIcon(int index);
 // _ZNK10QTabWidget7tabIconEi tabIcon(int)
 extern "C"
@@ -367,7 +367,7 @@ int arg1) {
   ((QTabWidget*)qthis)->tabIcon(arg1);
   return new QIcon(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 103, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 109, column 17>
 //   // proto:  QTabWidget::TabPosition QTabWidget::tabPosition();
 // _ZNK10QTabWidget11tabPositionEv tabPosition()
 extern "C"
@@ -377,7 +377,7 @@ C_ZNK10QTabWidget11tabPositionEv(void *qthis) {
   ((QTabWidget*)qthis)->tabPosition();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 82, column 10>
 //   // proto:  bool QTabWidget::isTabEnabled(int index);
 // _ZNK10QTabWidget12isTabEnabledEi isTabEnabled(int)
 extern "C"
@@ -388,7 +388,7 @@ int arg1) {
   ((QTabWidget*)qthis)->isTabEnabled(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 138, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 144, column 10>
 //   // proto:  void QTabWidget::setTabBarAutoHide(bool enabled);
 // _ZN10QTabWidget17setTabBarAutoHideEb setTabBarAutoHide(_Bool)
 extern "C"
@@ -397,7 +397,7 @@ C_ZN10QTabWidget17setTabBarAutoHideEb(void *qthis,
 bool arg1) {
   ((QTabWidget*)qthis)->setTabBarAutoHide(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 128, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 134, column 11>
 //   // proto:  QSize QTabWidget::iconSize();
 // _ZNK10QTabWidget8iconSizeEv iconSize()
 extern "C"
@@ -407,7 +407,7 @@ C_ZNK10QTabWidget8iconSizeEv(void *qthis) {
   ((QTabWidget*)qthis)->iconSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 107, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 113, column 10>
 //   // proto:  void QTabWidget::setTabsClosable(bool closeable);
 // _ZN10QTabWidget15setTabsClosableEb setTabsClosable(_Bool)
 extern "C"
@@ -416,7 +416,7 @@ C_ZN10QTabWidget15setTabsClosableEb(void *qthis,
 bool arg1) {
   ((QTabWidget*)qthis)->setTabsClosable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 118, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 124, column 11>
 //   // proto:  QSize QTabWidget::minimumSizeHint();
 // _ZNK10QTabWidget15minimumSizeHintEv minimumSizeHint()
 extern "C"
@@ -426,7 +426,7 @@ C_ZNK10QTabWidget15minimumSizeHintEv(void *qthis) {
   ((QTabWidget*)qthis)->minimumSizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 145, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 151, column 10>
 //   // proto:  void QTabWidget::setCurrentIndex(int index);
 // _ZN10QTabWidget15setCurrentIndexEi setCurrentIndex(int)
 extern "C"
@@ -435,7 +435,7 @@ C_ZN10QTabWidget15setCurrentIndexEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->setCurrentIndex(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 104, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 110, column 10>
 //   // proto:  void QTabWidget::setTabPosition(QTabWidget::TabPosition );
 // _ZN10QTabWidget14setTabPositionENS_11TabPositionE setTabPosition(enum QTabWidget::TabPosition)
 extern "C"
@@ -449,7 +449,7 @@ extern "C"
 void C_ZN10QTabWidgetD2Ev(void *qthis) {
   delete (QTabWidget*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 97, column 10>
 //   // proto:  void QTabWidget::setTabWhatsThis(int index, const QString & text);
 // _ZN10QTabWidget15setTabWhatsThisEiRK7QString setTabWhatsThis(int, const class QString &)
 extern "C"
@@ -460,7 +460,7 @@ const QString* arg2) {
   ((QTabWidget*)qthis)->setTabWhatsThis(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 117, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 123, column 11>
 //   // proto:  QSize QTabWidget::sizeHint();
 // _ZNK10QTabWidget8sizeHintEv sizeHint()
 extern "C"
@@ -470,7 +470,7 @@ C_ZNK10QTabWidget8sizeHintEv(void *qthis) {
   ((QTabWidget*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 121, column 10>
 //   // proto:  void QTabWidget::setTabShape(QTabWidget::TabShape s);
 // _ZN10QTabWidget11setTabShapeENS_8TabShapeE setTabShape(enum QTabWidget::TabShape)
 extern "C"
@@ -479,7 +479,7 @@ C_ZN10QTabWidget11setTabShapeENS_8TabShapeE(void *qthis,
 QTabWidget::TabShape arg1) {
   ((QTabWidget*)qthis)->setTabShape(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 98, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 104, column 9>
 //   // proto:  int QTabWidget::indexOf(QWidget * widget);
 // _ZNK10QTabWidget7indexOfEP7QWidget indexOf(class QWidget *)
 extern "C"
@@ -490,7 +490,7 @@ QWidget * arg1) {
   ((QTabWidget*)qthis)->indexOf(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 80, column 10>
 //   // proto:  void QTabWidget::removeTab(int index);
 // _ZN10QTabWidget9removeTabEi removeTab(int)
 extern "C"
@@ -499,7 +499,7 @@ C_ZN10QTabWidget9removeTabEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->removeTab(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 92, column 10>
 //   // proto:  void QTabWidget::setTabToolTip(int index, const QString & tip);
 // _ZN10QTabWidget13setTabToolTipEiRK7QString setTabToolTip(int, const class QString &)
 extern "C"
@@ -510,7 +510,7 @@ const QString* arg2) {
   ((QTabWidget*)qthis)->setTabToolTip(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 115, column 10>
 //   // proto:  bool QTabWidget::isMovable();
 // _ZNK10QTabWidget9isMovableEv isMovable()
 extern "C"
@@ -520,7 +520,7 @@ C_ZNK10QTabWidget9isMovableEv(void *qthis) {
   ((QTabWidget*)qthis)->isMovable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 137, column 10>
 //   // proto:  bool QTabWidget::usesScrollButtons();
 // _ZNK10QTabWidget17usesScrollButtonsEv usesScrollButtons()
 extern "C"
@@ -530,7 +530,7 @@ C_ZNK10QTabWidget17usesScrollButtonsEv(void *qthis) {
   ((QTabWidget*)qthis)->usesScrollButtons();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 152, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 158, column 10>
 //   // proto:  void QTabWidget::tabBarDoubleClicked(int index);
 // _ZN10QTabWidget19tabBarDoubleClickedEi tabBarDoubleClicked(int)
 extern "C"
@@ -539,7 +539,7 @@ C_ZN10QTabWidget19tabBarDoubleClickedEi(void *qthis,
 int arg1) {
   ((QTabWidget*)qthis)->tabBarDoubleClicked(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 95, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 101, column 9>
 //   // proto:  int QTabWidget::currentIndex();
 // _ZNK10QTabWidget12currentIndexEv currentIndex()
 extern "C"
@@ -549,7 +549,7 @@ C_ZNK10QTabWidget12currentIndexEv(void *qthis) {
   ((QTabWidget*)qthis)->currentIndex();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 71, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 77, column 9>
 //   // proto:  int QTabWidget::insertTab(int index, QWidget * widget, const QString & );
 // _ZN10QTabWidget9insertTabEiP7QWidgetRK7QString insertTab(int, class QWidget *, const class QString &)
 extern "C"
@@ -564,7 +564,7 @@ arg2,
 *((const QString*)arg3));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 125, column 23>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 131, column 23>
 //   // proto:  Qt::TextElideMode QTabWidget::elideMode();
 // _ZNK10QTabWidget9elideModeEv elideMode()
 extern "C"
@@ -574,7 +574,7 @@ C_ZNK10QTabWidget9elideModeEv(void *qthis) {
   ((QTabWidget*)qthis)->elideMode();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 122, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 128, column 10>
 //   // proto:  void QTabWidget::setCornerWidget(QWidget * w, Qt::Corner corner);
 // _ZN10QTabWidget15setCornerWidgetEP7QWidgetN2Qt6CornerE setCornerWidget(class QWidget *, Qt::Corner)
 extern "C"
@@ -585,7 +585,7 @@ Qt::Corner* arg2) {
   ((QTabWidget*)qthis)->setCornerWidget(arg1,
 *((Qt::Corner*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qtabwidget.h', line 83, column 10>
 //   // proto:  void QTabWidget::setTabEnabled(int index, bool );
 // _ZN10QTabWidget13setTabEnabledEib setTabEnabled(int, _Bool)
 extern "C"

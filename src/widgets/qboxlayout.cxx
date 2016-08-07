@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qboxlayout.h
 // dst-file: /src/widgets/qboxlayout.cxx
 //
@@ -26,15 +26,15 @@ void __keep_qboxlayout_inline_symbols() {
 
 // use block begin =>
 extern "C"
-int QHBoxLayout_Class_Size()
-{
-  return sizeof(QHBoxLayout);
-}
-
-extern "C"
 int QBoxLayout_Class_Size()
 {
   return sizeof(QBoxLayout);
+}
+
+extern "C"
+int QHBoxLayout_Class_Size()
+{
+  return sizeof(QHBoxLayout);
 }
 
 extern "C"
@@ -46,38 +46,7 @@ int QVBoxLayout_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 111, column 14>
-//   // proto:  void QHBoxLayout::QHBoxLayout(QWidget * parent);
-extern "C"
-QHBoxLayout*
-C_ZN11QHBoxLayoutC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QHBoxLayout(arg1);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 108, column 5>
-//   // proto:  const QMetaObject * QHBoxLayout::metaObject();
-// _ZNK11QHBoxLayout10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK11QHBoxLayout10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QHBoxLayout*)qthis)->metaObject();
-  return (void*)ret;
-}
-//   // proto:  void QHBoxLayout::~QHBoxLayout();
-extern "C"
-void C_ZN11QHBoxLayoutD2Ev(void *qthis) {
-  delete (QHBoxLayout*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 110, column 5>
-//   // proto:  void QHBoxLayout::QHBoxLayout();
-extern "C"
-QHBoxLayout*
-C_ZN11QHBoxLayoutC2Ev() {
-  auto ret = new QHBoxLayout();
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 95, column 22>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 101, column 22>
 //   // proto:  Qt::Orientations QBoxLayout::expandingDirections();
 // _ZNK10QBoxLayout19expandingDirectionsEv expandingDirections()
 extern "C"
@@ -87,7 +56,7 @@ C_ZNK10QBoxLayout19expandingDirectionsEv(void *qthis) {
   ((QBoxLayout*)qthis)->expandingDirections();
   return new QFlags<Qt::Orientation>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 73, column 10>
 //   // proto:  void QBoxLayout::addWidget(QWidget * , int stretch, Qt::Alignment alignment);
 // _ZN10QBoxLayout9addWidgetEP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE addWidget(class QWidget *, int, Qt::Alignment)
 extern "C"
@@ -100,7 +69,7 @@ Qt::Alignment* arg3) {
 arg2,
 *((Qt::Alignment*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 79, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 85, column 9>
 //   // proto:  int QBoxLayout::spacing();
 // _ZNK10QBoxLayout7spacingEv spacing()
 extern "C"
@@ -110,7 +79,7 @@ C_ZNK10QBoxLayout7spacingEv(void *qthis) {
   ((QBoxLayout*)qthis)->spacing();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 97, column 10>
 //   // proto:  bool QBoxLayout::hasHeightForWidth();
 // _ZNK10QBoxLayout17hasHeightForWidthEv hasHeightForWidth()
 extern "C"
@@ -120,7 +89,7 @@ C_ZNK10QBoxLayout17hasHeightForWidthEv(void *qthis) {
   ((QBoxLayout*)qthis)->hasHeightForWidth();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 76, column 10>
 //   // proto:  void QBoxLayout::addItem(QLayoutItem * );
 // _ZN10QBoxLayout7addItemEP11QLayoutItem addItem(class QLayoutItem *)
 extern "C"
@@ -129,7 +98,7 @@ C_ZN10QBoxLayout7addItemEP11QLayoutItem(void *qthis,
 QLayoutItem * arg1) {
   ((QBoxLayout*)qthis)->addItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 87, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 93, column 11>
 //   // proto:  QSize QBoxLayout::sizeHint();
 // _ZNK10QBoxLayout8sizeHintEv sizeHint()
 extern "C"
@@ -144,7 +113,7 @@ extern "C"
 void C_ZN10QBoxLayoutD2Ev(void *qthis) {
   delete (QBoxLayout*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 78, column 10>
 //   // proto:  void QBoxLayout::insertSpacing(int index, int size);
 // _ZN10QBoxLayout13insertSpacingEii insertSpacing(int, int)
 extern "C"
@@ -155,7 +124,7 @@ int arg2) {
   ((QBoxLayout*)qthis)->insertSpacing(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 84, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 90, column 10>
 //   // proto:  void QBoxLayout::setStretch(int index, int stretch);
 // _ZN10QBoxLayout10setStretchEii setStretch(int, int)
 extern "C"
@@ -166,16 +135,17 @@ int arg2) {
   ((QBoxLayout*)qthis)->setStretch(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 57, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 63, column 14>
 //   // proto:  void QBoxLayout::QBoxLayout(QBoxLayout::Direction , QWidget * parent);
 extern "C"
 QBoxLayout*
 C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg1,
 QWidget * arg2) {
-  auto ret = new QBoxLayout(arg1, arg2);
+  auto ret = new QBoxLayout(arg1,
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 79, column 10>
 //   // proto:  void QBoxLayout::insertStretch(int index, int stretch);
 // _ZN10QBoxLayout13insertStretchEii insertStretch(int, int)
 extern "C"
@@ -186,7 +156,7 @@ int arg2) {
   ((QBoxLayout*)qthis)->insertStretch(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 74, column 10>
 //   // proto:  void QBoxLayout::addLayout(QLayout * layout, int stretch);
 // _ZN10QBoxLayout9addLayoutEP7QLayouti addLayout(class QLayout *, int)
 extern "C"
@@ -197,7 +167,7 @@ int arg2) {
   ((QBoxLayout*)qthis)->addLayout(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 88, column 10>
 //   // proto:  bool QBoxLayout::setStretchFactor(QWidget * w, int stretch);
 // _ZN10QBoxLayout16setStretchFactorEP7QWidgeti setStretchFactor(class QWidget *, int)
 extern "C"
@@ -210,7 +180,7 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 102, column 10>
 //   // proto:  void QBoxLayout::invalidate();
 // _ZN10QBoxLayout10invalidateEv invalidate()
 extern "C"
@@ -218,7 +188,7 @@ void
 C_ZN10QBoxLayout10invalidateEv(void *qthis) {
   ((QBoxLayout*)qthis)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 106, column 10>
 //   // proto:  void QBoxLayout::setGeometry(const QRect & );
 // _ZN10QBoxLayout11setGeometryERK5QRect setGeometry(const class QRect &)
 extern "C"
@@ -227,7 +197,7 @@ C_ZN10QBoxLayout11setGeometryERK5QRect(void *qthis,
 const QRect* arg1) {
   ((QBoxLayout*)qthis)->setGeometry(*((const QRect*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 71, column 10>
 //   // proto:  void QBoxLayout::addStretch(int stretch);
 // _ZN10QBoxLayout10addStretchEi addStretch(int)
 extern "C"
@@ -236,7 +206,7 @@ C_ZN10QBoxLayout10addStretchEi(void *qthis,
 int arg1) {
   ((QBoxLayout*)qthis)->addStretch(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 61, column 15>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 67, column 15>
 //   // proto:  QBoxLayout::Direction QBoxLayout::direction();
 // _ZNK10QBoxLayout9directionEv direction()
 extern "C"
@@ -246,7 +216,7 @@ C_ZNK10QBoxLayout9directionEv(void *qthis) {
   ((QBoxLayout*)qthis)->direction();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 68, column 10>
 //   // proto:  void QBoxLayout::setDirection(QBoxLayout::Direction );
 // _ZN10QBoxLayout12setDirectionENS_9DirectionE setDirection(enum QBoxLayout::Direction)
 extern "C"
@@ -255,7 +225,7 @@ C_ZN10QBoxLayout12setDirectionENS_9DirectionE(void *qthis,
 QBoxLayout::Direction arg1) {
   ((QBoxLayout*)qthis)->setDirection(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 82, column 10>
 //   // proto:  void QBoxLayout::insertLayout(int index, QLayout * layout, int stretch);
 // _ZN10QBoxLayout12insertLayoutEiP7QLayouti insertLayout(int, class QLayout *, int)
 extern "C"
@@ -268,7 +238,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 89, column 10>
 //   // proto:  bool QBoxLayout::setStretchFactor(QLayout * l, int stretch);
 // _ZN10QBoxLayout16setStretchFactorEP7QLayouti setStretchFactor(class QLayout *, int)
 extern "C"
@@ -281,7 +251,7 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 99, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 105, column 9>
 //   // proto:  int QBoxLayout::count();
 // _ZNK10QBoxLayout5countEv count()
 extern "C"
@@ -291,7 +261,7 @@ C_ZNK10QBoxLayout5countEv(void *qthis) {
   ((QBoxLayout*)qthis)->count();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 97, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 103, column 18>
 //   // proto:  QLayoutItem * QBoxLayout::itemAt(int );
 // _ZNK10QBoxLayout6itemAtEi itemAt(int)
 extern "C"
@@ -302,7 +272,7 @@ int arg1) {
   ((QBoxLayout*)qthis)->itemAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 57, column 5>
 //   // proto:  const QMetaObject * QBoxLayout::metaObject();
 // _ZNK10QBoxLayout10metaObjectEv metaObject()
 extern "C"
@@ -312,7 +282,7 @@ C_ZNK10QBoxLayout10metaObjectEv(void *qthis) {
   ((QBoxLayout*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 74, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 80, column 10>
 //   // proto:  void QBoxLayout::insertSpacerItem(int index, QSpacerItem * spacerItem);
 // _ZN10QBoxLayout16insertSpacerItemEiP11QSpacerItem insertSpacerItem(int, class QSpacerItem *)
 extern "C"
@@ -323,7 +293,7 @@ QSpacerItem * arg2) {
   ((QBoxLayout*)qthis)->insertSpacerItem(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 92, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 98, column 9>
 //   // proto:  int QBoxLayout::heightForWidth(int );
 // _ZNK10QBoxLayout14heightForWidthEi heightForWidth(int)
 extern "C"
@@ -334,7 +304,7 @@ int arg1) {
   ((QBoxLayout*)qthis)->heightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 75, column 10>
 //   // proto:  void QBoxLayout::addStrut(int );
 // _ZN10QBoxLayout8addStrutEi addStrut(int)
 extern "C"
@@ -343,7 +313,7 @@ C_ZN10QBoxLayout8addStrutEi(void *qthis,
 int arg1) {
   ((QBoxLayout*)qthis)->addStrut(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 89, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 95, column 11>
 //   // proto:  QSize QBoxLayout::maximumSize();
 // _ZNK10QBoxLayout11maximumSizeEv maximumSize()
 extern "C"
@@ -353,7 +323,7 @@ C_ZNK10QBoxLayout11maximumSizeEv(void *qthis) {
   ((QBoxLayout*)qthis)->maximumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 85, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 91, column 9>
 //   // proto:  int QBoxLayout::stretch(int index);
 // _ZNK10QBoxLayout7stretchEi stretch(int)
 extern "C"
@@ -364,7 +334,7 @@ int arg1) {
   ((QBoxLayout*)qthis)->stretch(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 81, column 10>
 //   // proto:  void QBoxLayout::insertWidget(int index, QWidget * widget, int stretch, Qt::Alignment alignment);
 // _ZN10QBoxLayout12insertWidgetEiP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE insertWidget(int, class QWidget *, int, Qt::Alignment)
 extern "C"
@@ -379,7 +349,7 @@ arg2,
 arg3,
 *((Qt::Alignment*)arg4));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 72, column 10>
 //   // proto:  void QBoxLayout::addSpacerItem(QSpacerItem * spacerItem);
 // _ZN10QBoxLayout13addSpacerItemEP11QSpacerItem addSpacerItem(class QSpacerItem *)
 extern "C"
@@ -388,7 +358,7 @@ C_ZN10QBoxLayout13addSpacerItemEP11QSpacerItem(void *qthis,
 QSpacerItem * arg1) {
   ((QBoxLayout*)qthis)->addSpacerItem(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 93, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 99, column 9>
 //   // proto:  int QBoxLayout::minimumHeightForWidth(int );
 // _ZNK10QBoxLayout21minimumHeightForWidthEi minimumHeightForWidth(int)
 extern "C"
@@ -399,7 +369,7 @@ int arg1) {
   ((QBoxLayout*)qthis)->minimumHeightForWidth(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 88, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 94, column 11>
 //   // proto:  QSize QBoxLayout::minimumSize();
 // _ZNK10QBoxLayout11minimumSizeEv minimumSize()
 extern "C"
@@ -409,7 +379,7 @@ C_ZNK10QBoxLayout11minimumSizeEv(void *qthis) {
   ((QBoxLayout*)qthis)->minimumSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 86, column 10>
 //   // proto:  void QBoxLayout::setSpacing(int spacing);
 // _ZN10QBoxLayout10setSpacingEi setSpacing(int)
 extern "C"
@@ -418,7 +388,7 @@ C_ZN10QBoxLayout10setSpacingEi(void *qthis,
 int arg1) {
   ((QBoxLayout*)qthis)->setSpacing(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 98, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 104, column 18>
 //   // proto:  QLayoutItem * QBoxLayout::takeAt(int );
 // _ZN10QBoxLayout6takeAtEi takeAt(int)
 extern "C"
@@ -429,7 +399,7 @@ int arg1) {
   ((QBoxLayout*)qthis)->takeAt(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 83, column 10>
 //   // proto:  void QBoxLayout::insertItem(int index, QLayoutItem * );
 // _ZN10QBoxLayout10insertItemEiP11QLayoutItem insertItem(int, class QLayoutItem *)
 extern "C"
@@ -440,7 +410,7 @@ QLayoutItem * arg2) {
   ((QBoxLayout*)qthis)->insertItem(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 70, column 10>
 //   // proto:  void QBoxLayout::addSpacing(int size);
 // _ZN10QBoxLayout10addSpacingEi addSpacing(int)
 extern "C"
@@ -449,7 +419,38 @@ C_ZN10QBoxLayout10addSpacingEi(void *qthis,
 int arg1) {
   ((QBoxLayout*)qthis)->addSpacing(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 123, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 117, column 14>
+//   // proto:  void QHBoxLayout::QHBoxLayout(QWidget * parent);
+extern "C"
+QHBoxLayout*
+C_ZN11QHBoxLayoutC2EP7QWidget(QWidget * arg1) {
+  auto ret = new QHBoxLayout(arg1);
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 114, column 5>
+//   // proto:  const QMetaObject * QHBoxLayout::metaObject();
+// _ZNK11QHBoxLayout10metaObjectEv metaObject()
+extern "C"
+void*
+C_ZNK11QHBoxLayout10metaObjectEv(void *qthis) {
+  auto ret =
+  ((QHBoxLayout*)qthis)->metaObject();
+  return (void*)ret;
+}
+//   // proto:  void QHBoxLayout::~QHBoxLayout();
+extern "C"
+void C_ZN11QHBoxLayoutD2Ev(void *qthis) {
+  delete (QHBoxLayout*)qthis;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 116, column 5>
+//   // proto:  void QHBoxLayout::QHBoxLayout();
+extern "C"
+QHBoxLayout*
+C_ZN11QHBoxLayoutC2Ev() {
+  auto ret = new QHBoxLayout();
+  return ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 129, column 5>
 //   // proto:  void QVBoxLayout::QVBoxLayout();
 extern "C"
 QVBoxLayout*
@@ -457,7 +458,7 @@ C_ZN11QVBoxLayoutC2Ev() {
   auto ret = new QVBoxLayout();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 121, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 127, column 5>
 //   // proto:  const QMetaObject * QVBoxLayout::metaObject();
 // _ZNK11QVBoxLayout10metaObjectEv metaObject()
 extern "C"
@@ -467,7 +468,7 @@ C_ZNK11QVBoxLayout10metaObjectEv(void *qthis) {
   ((QVBoxLayout*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 124, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qboxlayout.h', line 130, column 14>
 //   // proto:  void QVBoxLayout::QVBoxLayout(QWidget * parent);
 extern "C"
 QVBoxLayout*
@@ -483,23 +484,6 @@ void C_ZN11QVBoxLayoutD2Ev(void *qthis) {
 // <= ext block end
 
 // body block begin =>
-// QHBoxLayout_SlotProxy here
-class QHBoxLayout_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QHBoxLayout_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-
-extern "C" {
-  QHBoxLayout_SlotProxy* QHBoxLayout_SlotProxy_new()
-  {
-    return new QHBoxLayout_SlotProxy();
-  }
-};
-
 // QBoxLayout_SlotProxy here
 class QBoxLayout_SlotProxy : public QObject
 {
@@ -514,6 +498,23 @@ extern "C" {
   QBoxLayout_SlotProxy* QBoxLayout_SlotProxy_new()
   {
     return new QBoxLayout_SlotProxy();
+  }
+};
+
+// QHBoxLayout_SlotProxy here
+class QHBoxLayout_SlotProxy : public QObject
+{
+  Q_OBJECT;
+public:
+   QHBoxLayout_SlotProxy():QObject(){}
+
+public: void* rsfptr = NULL;
+};
+
+extern "C" {
+  QHBoxLayout_SlotProxy* QHBoxLayout_SlotProxy_new()
+  {
+    return new QHBoxLayout_SlotProxy();
   }
 };
 

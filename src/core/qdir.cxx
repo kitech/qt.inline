@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qdir.h
 // dst-file: /src/core/qdir.cxx
 //
@@ -15,15 +15,15 @@
 
 
 #include <qstring.h>
+#include <qchar.h>
 #include <qstringlist.h>
 #include <qfileinfo.h>
 #include <qglobal.h>
-#include <qchar.h>
 // <= header block end
 
 // main block begin =>
 void __keep_qdir_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 166, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 171, column 24>
 //   // proto: static bool QDir::isAbsolutePath(const QString & path);
 if (true) {
   auto f = [](QDir flythis, const QString & arg1) {
@@ -33,7 +33,17 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir14isAbsolutePathERK7QString isAbsolutePath(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 188, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 185, column 42>
+//   // proto: static QChar QDir::listSeparator();
+if (true) {
+  auto f = [](QDir flythis) {
+    ((QDir*)0)->listSeparator();
+    flythis.listSeparator();
+  };
+  if (f == nullptr){}
+}
+// _ZN4QDir13listSeparatorEv listSeparator()
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 202, column 24>
 //   // proto: static QDir QDir::root();
 if (true) {
   auto f = [](QDir flythis) {
@@ -43,7 +53,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir4rootEv root()
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 183, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 197, column 24>
 //   // proto: static QDir QDir::current();
 if (true) {
   auto f = [](QDir flythis) {
@@ -53,7 +63,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir7currentEv current()
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 186, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 200, column 24>
 //   // proto: static QDir QDir::home();
 if (true) {
   auto f = [](QDir flythis) {
@@ -63,7 +73,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir4homeEv home()
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 108, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 113, column 10>
 //   // proto:  void QDir::swap(QDir & other);
 if (true) {
   auto f = [](QDir flythis, QDir & arg1) {
@@ -73,7 +83,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir4swapERS_ swap(class QDir &)
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 190, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 204, column 24>
 //   // proto: static QDir QDir::temp();
 if (true) {
   auto f = [](QDir flythis) {
@@ -83,7 +93,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN4QDir4tempEv temp()
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 168, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 173, column 17>
 //   // proto:  bool QDir::isAbsolute();
 if (true) {
   auto f = [](QDir flythis) {
@@ -107,7 +117,7 @@ int QDir_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 116, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 121, column 17>
 //   // proto: static void QDir::addResourceSearchPath(const QString & path);
 // _ZN4QDir21addResourceSearchPathERK7QString addResourceSearchPath(const class QString &)
 extern "C"
@@ -115,7 +125,7 @@ void
 C_ZN4QDir21addResourceSearchPathERK7QString(const QString* arg1) {
   QDir::addResourceSearchPath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 166, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 171, column 24>
 //   // proto: static bool QDir::isAbsolutePath(const QString & path);
 // _ZN4QDir14isAbsolutePathERK7QString isAbsolutePath(const class QString &)
 extern "C"
@@ -125,7 +135,7 @@ C_ZN4QDir14isAbsolutePathERK7QString(const QString* arg1) {
   QDir::isAbsolutePath(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 125, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 130, column 13>
 //   // proto:  QString QDir::relativeFilePath(const QString & fileName);
 // _ZNK4QDir16relativeFilePathERK7QString relativeFilePath(const class QString &)
 extern "C"
@@ -136,17 +146,17 @@ const QString* arg1) {
   ((QDir*)qthis)->relativeFilePath(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 191, column 20>
-//   // proto: static QString QDir::tempPath();
-// _ZN4QDir8tempPathEv tempPath()
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 185, column 42>
+//   // proto: static QChar QDir::listSeparator();
+// _ZN4QDir13listSeparatorEv listSeparator()
 extern "C"
-QString*
-C_ZN4QDir8tempPathEv() {
+QChar*
+C_ZN4QDir13listSeparatorEv() {
   auto ret =
-  QDir::tempPath();
-  return new QString(ret); // 5
+  QDir::listSeparator();
+  return new QChar(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 96, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 102, column 5>
 //   // proto:  void QDir::QDir(const QString & path);
 extern "C"
 QDir*
@@ -154,7 +164,7 @@ C_ZN4QDirC2ERK7QString(const QString* arg1) {
   auto ret = new QDir(*((const QString*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 133, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 138, column 17>
 //   // proto:  QStringList QDir::nameFilters();
 // _ZNK4QDir11nameFiltersEv nameFilters()
 extern "C"
@@ -164,7 +174,7 @@ C_ZNK4QDir11nameFiltersEv(void *qthis) {
   ((QDir*)qthis)->nameFilters();
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 135, column 10>
 //   // proto:  bool QDir::cd(const QString & dirName);
 // _ZN4QDir2cdERK7QString cd(const class QString &)
 extern "C"
@@ -175,7 +185,7 @@ const QString* arg1) {
   ((QDir*)qthis)->cd(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 178, column 26>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 183, column 26>
 //   // proto: static QFileInfoList QDir::drives();
 // _ZN4QDir6drivesEv drives()
 extern "C"
@@ -185,7 +195,7 @@ C_ZN4QDir6drivesEv() {
   QDir::drives();
   return new QList<QFileInfo>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 182, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 196, column 17>
 //   // proto: static bool QDir::setCurrent(const QString & path);
 // _ZN4QDir10setCurrentERK7QString setCurrent(const class QString &)
 extern "C"
@@ -195,7 +205,7 @@ C_ZN4QDir10setCurrentERK7QString(const QString* arg1) {
   QDir::setCurrent(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 155, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 160, column 10>
 //   // proto:  bool QDir::rmdir(const QString & dirName);
 // _ZNK4QDir5rmdirERK7QString rmdir(const class QString &)
 extern "C"
@@ -206,7 +216,7 @@ const QString* arg1) {
   ((QDir*)qthis)->rmdir(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 131, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 136, column 10>
 //   // proto:  bool QDir::cdUp();
 // _ZN4QDir4cdUpEv cdUp()
 extern "C"
@@ -216,7 +226,7 @@ C_ZN4QDir4cdUpEv(void *qthis) {
   ((QDir*)qthis)->cdUp();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 113, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 118, column 13>
 //   // proto:  QString QDir::absolutePath();
 // _ZNK4QDir12absolutePathEv absolutePath()
 extern "C"
@@ -226,7 +236,7 @@ C_ZNK4QDir12absolutePathEv(void *qthis) {
   ((QDir*)qthis)->absolutePath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 118, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 123, column 17>
 //   // proto: static void QDir::setSearchPaths(const QString & prefix, const QStringList & searchPaths);
 // _ZN4QDir14setSearchPathsERK7QStringRK11QStringList setSearchPaths(const class QString &, const class QStringList &)
 extern "C"
@@ -236,7 +246,7 @@ const QStringList* arg2) {
   QDir::setSearchPaths(*((const QString*)arg1),
 *((const QStringList*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 124, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 129, column 13>
 //   // proto:  QString QDir::absoluteFilePath(const QString & fileName);
 // _ZNK4QDir16absoluteFilePathERK7QString absoluteFilePath(const class QString &)
 extern "C"
@@ -247,7 +257,7 @@ const QString* arg1) {
   ((QDir*)qthis)->absoluteFilePath(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 97, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 103, column 5>
 //   // proto:  void QDir::QDir(const QString & path, const QString & nameFilter, SortFlags sort, Filters filter);
 extern "C"
 QDir*
@@ -255,10 +265,13 @@ C_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(const QString* a
 const QString* arg2,
 QDir::SortFlags arg3,
 QDir::Filters arg4) {
-  auto ret = new QDir(*((const QString*)arg1), *((const QString*)arg2), arg3, arg4);
+  auto ret = new QDir(*((const QString*)arg1),
+*((const QString*)arg2),
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 175, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 180, column 10>
 //   // proto:  bool QDir::rename(const QString & oldName, const QString & newName);
 // _ZN4QDir6renameERK7QStringS2_ rename(const class QString &, const class QString &)
 extern "C"
@@ -271,19 +284,17 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 195, column 17>
-//   // proto: static bool QDir::match(const QString & filter, const QString & fileName);
-// _ZN4QDir5matchERK7QStringS2_ match(const class QString &, const class QString &)
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 205, column 20>
+//   // proto: static QString QDir::tempPath();
+// _ZN4QDir8tempPathEv tempPath()
 extern "C"
-bool
-C_ZN4QDir5matchERK7QStringS2_(const QString* arg1,
-const QString* arg2) {
+QString*
+C_ZN4QDir8tempPathEv() {
   auto ret =
-  QDir::match(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+  QDir::tempPath();
+  return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 199, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 213, column 10>
 //   // proto:  void QDir::refresh();
 // _ZNK4QDir7refreshEv refresh()
 extern "C"
@@ -291,7 +302,7 @@ void
 C_ZNK4QDir7refreshEv(void *qthis) {
   ((QDir*)qthis)->refresh();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 154, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 159, column 10>
 //   // proto:  bool QDir::mkdir(const QString & dirName);
 // _ZNK4QDir5mkdirERK7QString mkdir(const class QString &)
 extern "C"
@@ -302,7 +313,7 @@ const QString* arg1) {
   ((QDir*)qthis)->mkdir(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 141, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 146, column 10>
 //   // proto:  uint QDir::count();
 // _ZNK4QDir5countEv count()
 extern "C"
@@ -312,7 +323,7 @@ C_ZNK4QDir5countEv(void *qthis) {
   ((QDir*)qthis)->count();
   return ret; // 0 TypeKind.UINT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 188, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 202, column 24>
 //   // proto: static QDir QDir::root();
 // _ZN4QDir4rootEv root()
 extern "C"
@@ -322,7 +333,7 @@ C_ZN4QDir4rootEv() {
   QDir::root();
   return new QDir(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 144, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 149, column 24>
 //   // proto: static QStringList QDir::nameFiltersFromString(const QString & nameFilter);
 // _ZN4QDir21nameFiltersFromStringERK7QString nameFiltersFromString(const class QString &)
 extern "C"
@@ -332,7 +343,7 @@ C_ZN4QDir21nameFiltersFromStringERK7QString(const QString* arg1) {
   QDir::nameFiltersFromString(*((const QString*)arg1));
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 123, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 128, column 13>
 //   // proto:  QString QDir::filePath(const QString & fileName);
 // _ZNK4QDir8filePathERK7QString filePath(const class QString &)
 extern "C"
@@ -343,7 +354,7 @@ const QString* arg1) {
   ((QDir*)qthis)->filePath(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 157, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 162, column 10>
 //   // proto:  bool QDir::rmpath(const QString & dirPath);
 // _ZNK4QDir6rmpathERK7QString rmpath(const class QString &)
 extern "C"
@@ -354,7 +365,7 @@ const QString* arg1) {
   ((QDir*)qthis)->rmpath(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 112, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 117, column 13>
 //   // proto:  QString QDir::path();
 // _ZNK4QDir4pathEv path()
 extern "C"
@@ -364,7 +375,7 @@ C_ZNK4QDir4pathEv(void *qthis) {
   ((QDir*)qthis)->path();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 127, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 132, column 20>
 //   // proto: static QString QDir::toNativeSeparators(const QString & pathName);
 // _ZN4QDir18toNativeSeparatorsERK7QString toNativeSeparators(const class QString &)
 extern "C"
@@ -374,7 +385,7 @@ C_ZN4QDir18toNativeSeparatorsERK7QString(const QString* arg1) {
   QDir::toNativeSeparators(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 198, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 212, column 20>
 //   // proto: static QString QDir::cleanPath(const QString & path);
 // _ZN4QDir9cleanPathERK7QString cleanPath(const class QString &)
 extern "C"
@@ -384,7 +395,7 @@ C_ZN4QDir9cleanPathERK7QString(const QString* arg1) {
   QDir::cleanPath(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 162, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 167, column 10>
 //   // proto:  bool QDir::exists();
 // _ZNK4QDir6existsEv exists()
 extern "C"
@@ -394,7 +405,7 @@ C_ZNK4QDir6existsEv(void *qthis) {
   ((QDir*)qthis)->exists();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 174, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 179, column 10>
 //   // proto:  bool QDir::remove(const QString & fileName);
 // _ZN4QDir6removeERK7QString remove(const class QString &)
 extern "C"
@@ -410,7 +421,7 @@ extern "C"
 void C_ZN4QDirD2Ev(void *qthis) {
   delete (QDir*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 151, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 156, column 19>
 //   // proto:  QFileInfoList QDir::entryInfoList(const QStringList & nameFilters, Filters filters, SortFlags sort);
 // _ZNK4QDir13entryInfoListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE entryInfoList(const class QStringList &, Filters, SortFlags)
 extern "C"
@@ -425,7 +436,7 @@ arg2,
 arg3);
   return new QList<QFileInfo>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 189, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 203, column 20>
 //   // proto: static QString QDir::rootPath();
 // _ZN4QDir8rootPathEv rootPath()
 extern "C"
@@ -435,7 +446,7 @@ C_ZN4QDir8rootPathEv() {
   QDir::rootPath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 183, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 197, column 24>
 //   // proto: static QDir QDir::current();
 // _ZN4QDir7currentEv current()
 extern "C"
@@ -445,7 +456,7 @@ C_ZN4QDir7currentEv() {
   QDir::current();
   return new QDir(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 194, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 208, column 17>
 //   // proto: static bool QDir::match(const QStringList & filters, const QString & fileName);
 // _ZN4QDir5matchERK11QStringListRK7QString match(const class QStringList &, const class QString &)
 extern "C"
@@ -457,7 +468,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 128, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 133, column 20>
 //   // proto: static QString QDir::fromNativeSeparators(const QString & pathName);
 // _ZN4QDir20fromNativeSeparatorsERK7QString fromNativeSeparators(const class QString &)
 extern "C"
@@ -467,7 +478,7 @@ C_ZN4QDir20fromNativeSeparatorsERK7QString(const QString* arg1) {
   QDir::fromNativeSeparators(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 186, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 200, column 24>
 //   // proto: static QDir QDir::home();
 // _ZN4QDir4homeEv home()
 extern "C"
@@ -477,7 +488,7 @@ C_ZN4QDir4homeEv() {
   QDir::home();
   return new QDir(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 139, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 144, column 10>
 //   // proto:  void QDir::setSorting(SortFlags sort);
 // _ZN4QDir10setSortingE6QFlagsINS_8SortFlagEE setSorting(SortFlags)
 extern "C"
@@ -486,7 +497,7 @@ C_ZN4QDir10setSortingE6QFlagsINS_8SortFlagEE(void *qthis,
 QDir::SortFlags arg1) {
   ((QDir*)qthis)->setSorting(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 134, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 139, column 10>
 //   // proto:  void QDir::setNameFilters(const QStringList & nameFilters);
 // _ZN4QDir14setNameFiltersERK11QStringList setNameFilters(const class QStringList &)
 extern "C"
@@ -495,7 +506,7 @@ C_ZN4QDir14setNameFiltersERK11QStringList(void *qthis,
 const QStringList* arg1) {
   ((QDir*)qthis)->setNameFilters(*((const QStringList*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 138, column 15>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 143, column 15>
 //   // proto:  SortFlags QDir::sorting();
 // _ZNK4QDir7sortingEv sorting()
 extern "C"
@@ -505,7 +516,7 @@ C_ZNK4QDir7sortingEv(void *qthis) {
   ((QDir*)qthis)->sorting();
   return new QFlags<QDir::SortFlag>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 180, column 18>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 194, column 18>
 //   // proto: static QChar QDir::separator();
 // _ZN4QDir9separatorEv separator()
 extern "C"
@@ -515,7 +526,7 @@ C_ZN4QDir9separatorEv() {
   QDir::separator();
   return new QChar(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 108, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 113, column 10>
 //   // proto:  void QDir::swap(QDir & other);
 // _ZN4QDir4swapERS_ swap(class QDir &)
 extern "C"
@@ -524,7 +535,7 @@ C_ZN4QDir4swapERS_(void *qthis,
 QDir* arg1) {
   ((QDir*)qthis)->swap(*((QDir*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 190, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 204, column 24>
 //   // proto: static QDir QDir::temp();
 // _ZN4QDir4tempEv temp()
 extern "C"
@@ -534,7 +545,7 @@ C_ZN4QDir4tempEv() {
   QDir::temp();
   return new QDir(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 176, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 181, column 10>
 //   // proto:  bool QDir::exists(const QString & name);
 // _ZNK4QDir6existsERK7QString exists(const class QString &)
 extern "C"
@@ -545,7 +556,7 @@ const QString* arg1) {
   ((QDir*)qthis)->exists(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 147, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 152, column 17>
 //   // proto:  QStringList QDir::entryList(const QStringList & nameFilters, Filters filters, SortFlags sort);
 // _ZNK4QDir9entryListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE entryList(const class QStringList &, Filters, SortFlags)
 extern "C"
@@ -560,7 +571,7 @@ arg2,
 arg3);
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 156, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 161, column 10>
 //   // proto:  bool QDir::mkpath(const QString & dirPath);
 // _ZNK4QDir6mkpathERK7QString mkpath(const class QString &)
 extern "C"
@@ -571,7 +582,7 @@ const QString* arg1) {
   ((QDir*)qthis)->mkpath(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 136, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 141, column 13>
 //   // proto:  Filters QDir::filter();
 // _ZNK4QDir6filterEv filter()
 extern "C"
@@ -581,7 +592,7 @@ C_ZNK4QDir6filterEv(void *qthis) {
   ((QDir*)qthis)->filter();
   return new QFlags<QDir::Filter>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 119, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 124, column 17>
 //   // proto: static void QDir::addSearchPath(const QString & prefix, const QString & path);
 // _ZN4QDir13addSearchPathERK7QStringS2_ addSearchPath(const class QString &, const class QString &)
 extern "C"
@@ -591,7 +602,7 @@ const QString* arg2) {
   QDir::addSearchPath(*((const QString*)arg1),
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 122, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 127, column 13>
 //   // proto:  QString QDir::dirName();
 // _ZNK4QDir7dirNameEv dirName()
 extern "C"
@@ -601,7 +612,7 @@ C_ZNK4QDir7dirNameEv(void *qthis) {
   ((QDir*)qthis)->dirName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 120, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 125, column 24>
 //   // proto: static QStringList QDir::searchPaths(const QString & prefix);
 // _ZN4QDir11searchPathsERK7QString searchPaths(const class QString &)
 extern "C"
@@ -611,7 +622,7 @@ C_ZN4QDir11searchPathsERK7QString(const QString* arg1) {
   QDir::searchPaths(*((const QString*)arg1));
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 169, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 174, column 10>
 //   // proto:  bool QDir::makeAbsolute();
 // _ZN4QDir12makeAbsoluteEv makeAbsolute()
 extern "C"
@@ -621,7 +632,7 @@ C_ZN4QDir12makeAbsoluteEv(void *qthis) {
   ((QDir*)qthis)->makeAbsolute();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 150, column 19>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 155, column 19>
 //   // proto:  QFileInfoList QDir::entryInfoList(Filters filters, SortFlags sort);
 // _ZNK4QDir13entryInfoListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE entryInfoList(Filters, SortFlags)
 extern "C"
@@ -634,7 +645,7 @@ QDir::SortFlags arg2) {
 arg2);
   return new QList<QFileInfo>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 137, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 142, column 10>
 //   // proto:  void QDir::setFilter(Filters filter);
 // _ZN4QDir9setFilterE6QFlagsINS_6FilterEE setFilter(Filters)
 extern "C"
@@ -643,7 +654,7 @@ C_ZN4QDir9setFilterE6QFlagsINS_6FilterEE(void *qthis,
 QDir::Filters arg1) {
   ((QDir*)qthis)->setFilter(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 114, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 119, column 13>
 //   // proto:  QString QDir::canonicalPath();
 // _ZNK4QDir13canonicalPathEv canonicalPath()
 extern "C"
@@ -653,7 +664,7 @@ C_ZNK4QDir13canonicalPathEv(void *qthis) {
   ((QDir*)qthis)->canonicalPath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 161, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 166, column 10>
 //   // proto:  bool QDir::isReadable();
 // _ZNK4QDir10isReadableEv isReadable()
 extern "C"
@@ -663,7 +674,7 @@ C_ZNK4QDir10isReadableEv(void *qthis) {
   ((QDir*)qthis)->isReadable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 167, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 172, column 10>
 //   // proto:  bool QDir::isRelative();
 // _ZNK4QDir10isRelativeEv isRelative()
 extern "C"
@@ -673,7 +684,7 @@ C_ZNK4QDir10isRelativeEv(void *qthis) {
   ((QDir*)qthis)->isRelative();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 184, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 198, column 20>
 //   // proto: static QString QDir::currentPath();
 // _ZN4QDir11currentPathEv currentPath()
 extern "C"
@@ -683,7 +694,7 @@ C_ZN4QDir11currentPathEv() {
   QDir::currentPath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 163, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 168, column 10>
 //   // proto:  bool QDir::isRoot();
 // _ZNK4QDir6isRootEv isRoot()
 extern "C"
@@ -693,7 +704,19 @@ C_ZNK4QDir6isRootEv(void *qthis) {
   ((QDir*)qthis)->isRoot();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 159, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 209, column 17>
+//   // proto: static bool QDir::match(const QString & filter, const QString & fileName);
+// _ZN4QDir5matchERK7QStringS2_ match(const class QString &, const class QString &)
+extern "C"
+bool
+C_ZN4QDir5matchERK7QStringS2_(const QString* arg1,
+const QString* arg2) {
+  auto ret =
+  QDir::match(*((const QString*)arg1),
+*((const QString*)arg2));
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 164, column 10>
 //   // proto:  bool QDir::removeRecursively();
 // _ZN4QDir17removeRecursivelyEv removeRecursively()
 extern "C"
@@ -703,7 +726,7 @@ C_ZN4QDir17removeRecursivelyEv(void *qthis) {
   ((QDir*)qthis)->removeRecursively();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 146, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 151, column 17>
 //   // proto:  QStringList QDir::entryList(Filters filters, SortFlags sort);
 // _ZNK4QDir9entryListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE entryList(Filters, SortFlags)
 extern "C"
@@ -716,7 +739,7 @@ QDir::SortFlags arg2) {
 arg2);
   return new QStringList(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 168, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 173, column 17>
 //   // proto:  bool QDir::isAbsolute();
 // _ZNK4QDir10isAbsoluteEv isAbsolute()
 extern "C"
@@ -726,7 +749,7 @@ C_ZNK4QDir10isAbsoluteEv(void *qthis) {
   ((QDir*)qthis)->isAbsolute();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 187, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 201, column 20>
 //   // proto: static QString QDir::homePath();
 // _ZN4QDir8homePathEv homePath()
 extern "C"
@@ -736,7 +759,7 @@ C_ZN4QDir8homePathEv() {
   QDir::homePath();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 95, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 101, column 5>
 //   // proto:  void QDir::QDir(const QDir & );
 extern "C"
 QDir*
@@ -744,7 +767,7 @@ C_ZN4QDirC2ERKS_(const QDir* arg1) {
   auto ret = new QDir(*((const QDir*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 111, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 116, column 10>
 //   // proto:  void QDir::setPath(const QString & path);
 // _ZN4QDir7setPathERK7QString setPath(const class QString &)
 extern "C"
@@ -753,7 +776,7 @@ C_ZN4QDir7setPathERK7QString(void *qthis,
 const QString* arg1) {
   ((QDir*)qthis)->setPath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 165, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qdir.h', line 170, column 17>
 //   // proto: static bool QDir::isRelativePath(const QString & path);
 // _ZN4QDir14isRelativePathERK7QString isRelativePath(const class QString &)
 extern "C"

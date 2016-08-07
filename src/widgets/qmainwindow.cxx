@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qmainwindow.h
 // dst-file: /src/widgets/qmainwindow.cxx
 //
@@ -18,7 +18,6 @@
 #include <qtabwidget.h>
 #include <qbytearray.h>
 #include <qsize.h>
-#include <qdockwidget.h>
 #include <qlist.h>
 #include <qapplication.h>
 // <= header block end
@@ -39,7 +38,7 @@ int QMainWindow_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 125, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 132, column 17>
 //   // proto:  QStatusBar * QMainWindow::statusBar();
 // _ZNK11QMainWindow9statusBarEv statusBar()
 extern "C"
@@ -49,7 +48,7 @@ C_ZNK11QMainWindow9statusBarEv(void *qthis) {
   ((QMainWindow*)qthis)->statusBar();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 178, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 188, column 10>
 //   // proto:  void QMainWindow::setAnimated(bool enabled);
 // _ZN11QMainWindow11setAnimatedEb setAnimated(_Bool)
 extern "C"
@@ -58,7 +57,7 @@ C_ZN11QMainWindow11setAnimatedEb(void *qthis,
 bool arg1) {
   ((QMainWindow*)qthis)->setAnimated(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 179, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 189, column 10>
 //   // proto:  void QMainWindow::setDockNestingEnabled(bool enabled);
 // _ZN11QMainWindow21setDockNestingEnabledEb setDockNestingEnabled(_Bool)
 extern "C"
@@ -67,7 +66,7 @@ C_ZN11QMainWindow21setDockNestingEnabledEb(void *qthis,
 bool arg1) {
   ((QMainWindow*)qthis)->setDockNestingEnabled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 135, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 142, column 10>
 //   // proto:  void QMainWindow::setCorner(Qt::Corner corner, Qt::DockWidgetArea area);
 // _ZN11QMainWindow9setCornerEN2Qt6CornerENS0_14DockWidgetAreaE setCorner(Qt::Corner, Qt::DockWidgetArea)
 extern "C"
@@ -78,7 +77,7 @@ Qt::DockWidgetArea* arg2) {
   ((QMainWindow*)qthis)->setCorner(*((Qt::Corner*)arg1),
 *((Qt::DockWidgetArea*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 152, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 159, column 21>
 //   // proto:  Qt::ToolBarArea QMainWindow::toolBarArea(QToolBar * toolbar);
 // _ZNK11QMainWindow11toolBarAreaEP8QToolBar toolBarArea(class QToolBar *)
 extern "C"
@@ -89,7 +88,7 @@ QToolBar * arg1) {
   ((QMainWindow*)qthis)->toolBarArea(arg1);
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 186, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 196, column 10>
 //   // proto:  void QMainWindow::iconSizeChanged(const QSize & iconSize);
 // _ZN11QMainWindow15iconSizeChangedERK5QSize iconSizeChanged(const class QSize &)
 extern "C"
@@ -98,7 +97,7 @@ C_ZN11QMainWindow15iconSizeChangedERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QMainWindow*)qthis)->iconSizeChanged(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 166, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 173, column 24>
 //   // proto:  Qt::DockWidgetArea QMainWindow::dockWidgetArea(QDockWidget * dockwidget);
 // _ZNK11QMainWindow14dockWidgetAreaEP11QDockWidget dockWidgetArea(class QDockWidget *)
 extern "C"
@@ -109,7 +108,7 @@ QDockWidget * arg1) {
   ((QMainWindow*)qthis)->dockWidgetArea(arg1);
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 159, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 166, column 10>
 //   // proto:  void QMainWindow::splitDockWidget(QDockWidget * after, QDockWidget * dockwidget, Qt::Orientation orientation);
 // _ZN11QMainWindow15splitDockWidgetEP11QDockWidgetS1_N2Qt11OrientationE splitDockWidget(class QDockWidget *, class QDockWidget *, Qt::Orientation)
 extern "C"
@@ -122,7 +121,7 @@ Qt::Orientation* arg3) {
 arg2,
 *((Qt::Orientation*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 150, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 157, column 10>
 //   // proto:  bool QMainWindow::unifiedTitleAndToolBarOnMac();
 // _ZNK11QMainWindow27unifiedTitleAndToolBarOnMacEv unifiedTitleAndToolBarOnMac()
 extern "C"
@@ -132,7 +131,7 @@ C_ZNK11QMainWindow27unifiedTitleAndToolBarOnMacEv(void *qthis) {
   ((QMainWindow*)qthis)->unifiedTitleAndToolBarOnMac();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 156, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 163, column 10>
 //   // proto:  void QMainWindow::addDockWidget(Qt::DockWidgetArea area, QDockWidget * dockwidget);
 // _ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidget addDockWidget(Qt::DockWidgetArea, class QDockWidget *)
 extern "C"
@@ -143,7 +142,7 @@ QDockWidget * arg2) {
   ((QMainWindow*)qthis)->addDockWidget(*((Qt::DockWidgetArea*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 120, column 15>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 127, column 15>
 //   // proto:  QWidget * QMainWindow::menuWidget();
 // _ZNK11QMainWindow10menuWidgetEv menuWidget()
 extern "C"
@@ -153,7 +152,7 @@ C_ZNK11QMainWindow10menuWidgetEv(void *qthis) {
   ((QMainWindow*)qthis)->menuWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 161, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 168, column 10>
 //   // proto:  void QMainWindow::tabifyDockWidget(QDockWidget * first, QDockWidget * second);
 // _ZN11QMainWindow16tabifyDockWidgetEP11QDockWidgetS1_ tabifyDockWidget(class QDockWidget *, class QDockWidget *)
 extern "C"
@@ -164,7 +163,7 @@ QDockWidget * arg2) {
   ((QMainWindow*)qthis)->tabifyDockWidget(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 107, column 29>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 114, column 29>
 //   // proto:  QTabWidget::TabPosition QMainWindow::tabPosition(Qt::DockWidgetArea area);
 // _ZNK11QMainWindow11tabPositionEN2Qt14DockWidgetAreaE tabPosition(Qt::DockWidgetArea)
 extern "C"
@@ -175,16 +174,17 @@ Qt::DockWidgetArea* arg1) {
   ((QMainWindow*)qthis)->tabPosition(*((Qt::DockWidgetArea*)arg1));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 85, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 92, column 14>
 //   // proto:  void QMainWindow::QMainWindow(QWidget * parent, Qt::WindowFlags flags);
 extern "C"
 QMainWindow*
 C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
 Qt::WindowFlags* arg2) {
-  auto ret = new QMainWindow(arg1, *((Qt::WindowFlags*)arg2));
+  auto ret = new QMainWindow(arg1,
+*((Qt::WindowFlags*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 115, column 10>
 //   // proto:  void QMainWindow::setTabPosition(Qt::DockWidgetAreas areas, QTabWidget::TabPosition tabPosition);
 // _ZN11QMainWindow14setTabPositionE6QFlagsIN2Qt14DockWidgetAreaEEN10QTabWidget11TabPositionE setTabPosition(Qt::DockWidgetAreas, class QTabWidget::TabPosition)
 extern "C"
@@ -195,7 +195,7 @@ QTabWidget::TabPosition* arg2) {
   ((QMainWindow*)qthis)->setTabPosition(*((Qt::DockWidgetAreas*)arg1),
 *((QTabWidget::TabPosition*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 108, column 10>
 //   // proto:  void QMainWindow::setDocumentMode(bool enabled);
 // _ZN11QMainWindow15setDocumentModeEb setDocumentMode(_Bool)
 extern "C"
@@ -204,7 +204,7 @@ C_ZN11QMainWindow15setDocumentModeEb(void *qthis,
 bool arg1) {
   ((QMainWindow*)qthis)->setDocumentMode(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 129, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 136, column 14>
 //   // proto:  QWidget * QMainWindow::centralWidget();
 // _ZNK11QMainWindow13centralWidgetEv centralWidget()
 extern "C"
@@ -214,55 +214,7 @@ C_ZNK11QMainWindow13centralWidgetEv(void *qthis) {
   ((QMainWindow*)qthis)->centralWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 106, column 10>
-//   // proto:  void QMainWindow::setTabShape(QTabWidget::TabShape tabShape);
-// _ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE setTabShape(class QTabWidget::TabShape)
-extern "C"
-void
-C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *qthis,
-QTabWidget::TabShape* arg1) {
-  ((QMainWindow*)qthis)->setTabShape(*((QTabWidget::TabShape*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 163, column 10>
-//   // proto:  void QMainWindow::removeDockWidget(QDockWidget * dockwidget);
-// _ZN11QMainWindow16removeDockWidgetEP11QDockWidget removeDockWidget(class QDockWidget *)
-extern "C"
-void
-C_ZN11QMainWindow16removeDockWidgetEP11QDockWidget(void *qthis,
-QDockWidget * arg1) {
-  ((QMainWindow*)qthis)->removeDockWidget(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 95, column 10>
-//   // proto:  bool QMainWindow::isAnimated();
-// _ZNK11QMainWindow10isAnimatedEv isAnimated()
-extern "C"
-bool
-C_ZNK11QMainWindow10isAnimatedEv(void *qthis) {
-  auto ret =
-  ((QMainWindow*)qthis)->isAnimated();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 145, column 15>
-//   // proto:  QToolBar * QMainWindow::addToolBar(const QString & title);
-// _ZN11QMainWindow10addToolBarERK7QString addToolBar(const class QString &)
-extern "C"
-void*
-C_ZN11QMainWindow10addToolBarERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMainWindow*)qthis)->addToolBar(*((const QString*)arg1));
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 89, column 10>
-//   // proto:  void QMainWindow::setIconSize(const QSize & iconSize);
-// _ZN11QMainWindow11setIconSizeERK5QSize setIconSize(const class QSize &)
-extern "C"
-void
-C_ZN11QMainWindow11setIconSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QMainWindow*)qthis)->setIconSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 169, column 16>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 179, column 16>
 //   // proto:  QByteArray QMainWindow::saveState(int version);
 // _ZNK11QMainWindow9saveStateEi saveState(int)
 extern "C"
@@ -273,7 +225,68 @@ int arg1) {
   ((QMainWindow*)qthis)->saveState(arg1);
   return new QByteArray(ret); // 5
 }
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 113, column 10>
+//   // proto:  void QMainWindow::setTabShape(QTabWidget::TabShape tabShape);
+// _ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE setTabShape(class QTabWidget::TabShape)
+extern "C"
+void
+C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *qthis,
+QTabWidget::TabShape* arg1) {
+  ((QMainWindow*)qthis)->setTabShape(*((QTabWidget::TabShape*)arg1));
+}
 // <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 170, column 10>
+//   // proto:  void QMainWindow::removeDockWidget(QDockWidget * dockwidget);
+// _ZN11QMainWindow16removeDockWidgetEP11QDockWidget removeDockWidget(class QDockWidget *)
+extern "C"
+void
+C_ZN11QMainWindow16removeDockWidgetEP11QDockWidget(void *qthis,
+QDockWidget * arg1) {
+  ((QMainWindow*)qthis)->removeDockWidget(arg1);
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 102, column 10>
+//   // proto:  bool QMainWindow::isAnimated();
+// _ZNK11QMainWindow10isAnimatedEv isAnimated()
+extern "C"
+bool
+C_ZNK11QMainWindow10isAnimatedEv(void *qthis) {
+  auto ret =
+  ((QMainWindow*)qthis)->isAnimated();
+  return ret; // 0 TypeKind.BOOL
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 152, column 15>
+//   // proto:  QToolBar * QMainWindow::addToolBar(const QString & title);
+// _ZN11QMainWindow10addToolBarERK7QString addToolBar(const class QString &)
+extern "C"
+void*
+C_ZN11QMainWindow10addToolBarERK7QString(void *qthis,
+const QString* arg1) {
+  auto ret =
+  ((QMainWindow*)qthis)->addToolBar(*((const QString*)arg1));
+  return (void*)ret;
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 96, column 10>
+//   // proto:  void QMainWindow::setIconSize(const QSize & iconSize);
+// _ZN11QMainWindow11setIconSizeERK5QSize setIconSize(const class QSize &)
+extern "C"
+void
+C_ZN11QMainWindow11setIconSizeERK5QSize(void *qthis,
+const QSize* arg1) {
+  ((QMainWindow*)qthis)->setIconSize(*((const QSize*)arg1));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 175, column 10>
+//   // proto:  void QMainWindow::resizeDocks(const QList<QDockWidget *> & docks, const QList<int> & sizes, Qt::Orientation orientation);
+// _ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11OrientationE resizeDocks(const QList<class QDockWidget *> &, const QList<int> &, Qt::Orientation)
+extern "C"
+void
+C_ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11OrientationE(void *qthis,
+const QList<QDockWidget *>* arg1,
+const QList<int>* arg2,
+Qt::Orientation* arg3) {
+  ((QMainWindow*)qthis)->resizeDocks(*((const QList<QDockWidget *>*)arg1),
+*((const QList<int>*)arg2),
+*((Qt::Orientation*)arg3));
+}
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 180, column 10>
 //   // proto:  bool QMainWindow::restoreState(const QByteArray & state, int version);
 // _ZN11QMainWindow12restoreStateERK10QByteArrayi restoreState(const class QByteArray &, int)
 extern "C"
@@ -286,7 +299,7 @@ int arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 157, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 164, column 10>
 //   // proto:  void QMainWindow::addDockWidget(Qt::DockWidgetArea area, QDockWidget * dockwidget, Qt::Orientation orientation);
 // _ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidgetNS0_11OrientationE addDockWidget(Qt::DockWidgetArea, class QDockWidget *, Qt::Orientation)
 extern "C"
@@ -299,7 +312,7 @@ Qt::Orientation* arg3) {
 arg2,
 *((Qt::Orientation*)arg3));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 146, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 153, column 10>
 //   // proto:  void QMainWindow::insertToolBar(QToolBar * before, QToolBar * toolbar);
 // _ZN11QMainWindow13insertToolBarEP8QToolBarS1_ insertToolBar(class QToolBar *, class QToolBar *)
 extern "C"
@@ -310,7 +323,7 @@ QToolBar * arg2) {
   ((QMainWindow*)qthis)->insertToolBar(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 173, column 20>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 183, column 20>
 //   // proto:  QMenu * QMainWindow::createPopupMenu();
 // _ZN11QMainWindow15createPopupMenuEv createPopupMenu()
 extern "C"
@@ -320,7 +333,7 @@ C_ZN11QMainWindow15createPopupMenuEv(void *qthis) {
   ((QMainWindow*)qthis)->createPopupMenu();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 182, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 192, column 10>
 //   // proto:  void QMainWindow::setUnifiedTitleAndToolBarOnMac(bool set);
 // _ZN11QMainWindow30setUnifiedTitleAndToolBarOnMacEb setUnifiedTitleAndToolBarOnMac(_Bool)
 extern "C"
@@ -329,7 +342,7 @@ C_ZN11QMainWindow30setUnifiedTitleAndToolBarOnMacEb(void *qthis,
 bool arg1) {
   ((QMainWindow*)qthis)->setUnifiedTitleAndToolBarOnMac(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 144, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 151, column 10>
 //   // proto:  void QMainWindow::addToolBar(QToolBar * toolbar);
 // _ZN11QMainWindow10addToolBarEP8QToolBar addToolBar(class QToolBar *)
 extern "C"
@@ -338,7 +351,7 @@ C_ZN11QMainWindow10addToolBarEP8QToolBar(void *qthis,
 QToolBar * arg1) {
   ((QMainWindow*)qthis)->addToolBar(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 91, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 98, column 25>
 //   // proto:  Qt::ToolButtonStyle QMainWindow::toolButtonStyle();
 // _ZNK11QMainWindow15toolButtonStyleEv toolButtonStyle()
 extern "C"
@@ -348,7 +361,7 @@ C_ZNK11QMainWindow15toolButtonStyleEv(void *qthis) {
   ((QMainWindow*)qthis)->toolButtonStyle();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 148, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 155, column 10>
 //   // proto:  void QMainWindow::removeToolBarBreak(QToolBar * before);
 // _ZN11QMainWindow18removeToolBarBreakEP8QToolBar removeToolBarBreak(class QToolBar *)
 extern "C"
@@ -357,7 +370,7 @@ C_ZN11QMainWindow18removeToolBarBreakEP8QToolBar(void *qthis,
 QToolBar * arg1) {
   ((QMainWindow*)qthis)->removeToolBarBreak(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 153, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 160, column 10>
 //   // proto:  bool QMainWindow::toolBarBreak(QToolBar * toolbar);
 // _ZNK11QMainWindow12toolBarBreakEP8QToolBar toolBarBreak(class QToolBar *)
 extern "C"
@@ -368,7 +381,7 @@ QToolBar * arg1) {
   ((QMainWindow*)qthis)->toolBarBreak(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 164, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 171, column 10>
 //   // proto:  bool QMainWindow::restoreDockWidget(QDockWidget * dockwidget);
 // _ZN11QMainWindow17restoreDockWidgetEP11QDockWidget restoreDockWidget(class QDockWidget *)
 extern "C"
@@ -379,7 +392,7 @@ QDockWidget * arg1) {
   ((QMainWindow*)qthis)->restoreDockWidget(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 117, column 15>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 124, column 15>
 //   // proto:  QMenuBar * QMainWindow::menuBar();
 // _ZNK11QMainWindow7menuBarEv menuBar()
 extern "C"
@@ -389,7 +402,7 @@ C_ZNK11QMainWindow7menuBarEv(void *qthis) {
   ((QMainWindow*)qthis)->menuBar();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 126, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 133, column 10>
 //   // proto:  void QMainWindow::setStatusBar(QStatusBar * statusbar);
 // _ZN11QMainWindow12setStatusBarEP10QStatusBar setStatusBar(class QStatusBar *)
 extern "C"
@@ -403,7 +416,7 @@ extern "C"
 void C_ZN11QMainWindowD2Ev(void *qthis) {
   delete (QMainWindow*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 114, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 121, column 10>
 //   // proto:  bool QMainWindow::isSeparator(const QPoint & pos);
 // _ZNK11QMainWindow11isSeparatorERK6QPoint isSeparator(const class QPoint &)
 extern "C"
@@ -414,7 +427,7 @@ const QPoint* arg1) {
   ((QMainWindow*)qthis)->isSeparator(*((const QPoint*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 187, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 197, column 10>
 //   // proto:  void QMainWindow::toolButtonStyleChanged(Qt::ToolButtonStyle toolButtonStyle);
 // _ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE toolButtonStyleChanged(Qt::ToolButtonStyle)
 extern "C"
@@ -423,7 +436,7 @@ C_ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *qthis,
 Qt::ToolButtonStyle* arg1) {
   ((QMainWindow*)qthis)->toolButtonStyleChanged(*((Qt::ToolButtonStyle*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 88, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 95, column 11>
 //   // proto:  QSize QMainWindow::iconSize();
 // _ZNK11QMainWindow8iconSizeEv iconSize()
 extern "C"
@@ -433,7 +446,7 @@ C_ZNK11QMainWindow8iconSizeEv(void *qthis) {
   ((QMainWindow*)qthis)->iconSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 99, column 10>
 //   // proto:  void QMainWindow::setToolButtonStyle(Qt::ToolButtonStyle toolButtonStyle);
 // _ZN11QMainWindow18setToolButtonStyleEN2Qt15ToolButtonStyleE setToolButtonStyle(Qt::ToolButtonStyle)
 extern "C"
@@ -442,7 +455,7 @@ C_ZN11QMainWindow18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *qthis,
 Qt::ToolButtonStyle* arg1) {
   ((QMainWindow*)qthis)->setToolButtonStyle(*((Qt::ToolButtonStyle*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 54, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 60, column 5>
 //   // proto:  const QMetaObject * QMainWindow::metaObject();
 // _ZNK11QMainWindow10metaObjectEv metaObject()
 extern "C"
@@ -452,7 +465,7 @@ C_ZNK11QMainWindow10metaObjectEv(void *qthis) {
   ((QMainWindow*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 141, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 148, column 10>
 //   // proto:  void QMainWindow::insertToolBarBreak(QToolBar * before);
 // _ZN11QMainWindow18insertToolBarBreakEP8QToolBar insertToolBarBreak(class QToolBar *)
 extern "C"
@@ -461,7 +474,7 @@ C_ZN11QMainWindow18insertToolBarBreakEP8QToolBar(void *qthis,
 QToolBar * arg1) {
   ((QMainWindow*)qthis)->insertToolBarBreak(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 132, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 139, column 14>
 //   // proto:  QWidget * QMainWindow::takeCentralWidget();
 // _ZN11QMainWindow17takeCentralWidgetEv takeCentralWidget()
 extern "C"
@@ -471,7 +484,7 @@ C_ZN11QMainWindow17takeCentralWidgetEv(void *qthis) {
   ((QMainWindow*)qthis)->takeCentralWidget();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 112, column 17>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 119, column 17>
 //   // proto:  DockOptions QMainWindow::dockOptions();
 // _ZNK11QMainWindow11dockOptionsEv dockOptions()
 extern "C"
@@ -481,7 +494,7 @@ C_ZNK11QMainWindow11dockOptionsEv(void *qthis) {
   ((QMainWindow*)qthis)->dockOptions();
   return new QFlags<QMainWindow::DockOption>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 103, column 10>
 //   // proto:  bool QMainWindow::isDockNestingEnabled();
 // _ZNK11QMainWindow20isDockNestingEnabledEv isDockNestingEnabled()
 extern "C"
@@ -491,7 +504,7 @@ C_ZNK11QMainWindow20isDockNestingEnabledEv(void *qthis) {
   ((QMainWindow*)qthis)->isDockNestingEnabled();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 140, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 147, column 10>
 //   // proto:  void QMainWindow::addToolBarBreak(Qt::ToolBarArea area);
 // _ZN11QMainWindow15addToolBarBreakEN2Qt11ToolBarAreaE addToolBarBreak(Qt::ToolBarArea)
 extern "C"
@@ -500,7 +513,7 @@ C_ZN11QMainWindow15addToolBarBreakEN2Qt11ToolBarAreaE(void *qthis,
 Qt::ToolBarArea* arg1) {
   ((QMainWindow*)qthis)->addToolBarBreak(*((Qt::ToolBarArea*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 111, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 118, column 10>
 //   // proto:  void QMainWindow::setDockOptions(DockOptions options);
 // _ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE setDockOptions(DockOptions)
 extern "C"
@@ -509,7 +522,7 @@ C_ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE(void *qthis,
 QMainWindow::DockOptions arg1) {
   ((QMainWindow*)qthis)->setDockOptions(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 105, column 26>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 112, column 26>
 //   // proto:  QTabWidget::TabShape QMainWindow::tabShape();
 // _ZNK11QMainWindow8tabShapeEv tabShape()
 extern "C"
@@ -519,7 +532,7 @@ C_ZNK11QMainWindow8tabShapeEv(void *qthis) {
   ((QMainWindow*)qthis)->tabShape();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 143, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 150, column 10>
 //   // proto:  void QMainWindow::addToolBar(Qt::ToolBarArea area, QToolBar * toolbar);
 // _ZN11QMainWindow10addToolBarEN2Qt11ToolBarAreaEP8QToolBar addToolBar(Qt::ToolBarArea, class QToolBar *)
 extern "C"
@@ -530,7 +543,7 @@ QToolBar * arg2) {
   ((QMainWindow*)qthis)->addToolBar(*((Qt::ToolBarArea*)arg1),
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 107, column 10>
 //   // proto:  bool QMainWindow::documentMode();
 // _ZNK11QMainWindow12documentModeEv documentMode()
 extern "C"
@@ -540,7 +553,7 @@ C_ZNK11QMainWindow12documentModeEv(void *qthis) {
   ((QMainWindow*)qthis)->documentMode();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 128, column 10>
 //   // proto:  void QMainWindow::setMenuWidget(QWidget * menubar);
 // _ZN11QMainWindow13setMenuWidgetEP7QWidget setMenuWidget(class QWidget *)
 extern "C"
@@ -549,7 +562,7 @@ C_ZN11QMainWindow13setMenuWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QMainWindow*)qthis)->setMenuWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 147, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 154, column 10>
 //   // proto:  void QMainWindow::removeToolBar(QToolBar * toolbar);
 // _ZN11QMainWindow13removeToolBarEP8QToolBar removeToolBar(class QToolBar *)
 extern "C"
@@ -558,7 +571,7 @@ C_ZN11QMainWindow13removeToolBarEP8QToolBar(void *qthis,
 QToolBar * arg1) {
   ((QMainWindow*)qthis)->removeToolBar(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 137, column 10>
 //   // proto:  void QMainWindow::setCentralWidget(QWidget * widget);
 // _ZN11QMainWindow16setCentralWidgetEP7QWidget setCentralWidget(class QWidget *)
 extern "C"
@@ -567,7 +580,7 @@ C_ZN11QMainWindow16setCentralWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QMainWindow*)qthis)->setCentralWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 118, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 125, column 10>
 //   // proto:  void QMainWindow::setMenuBar(QMenuBar * menubar);
 // _ZN11QMainWindow10setMenuBarEP8QMenuBar setMenuBar(class QMenuBar *)
 extern "C"
@@ -576,7 +589,7 @@ C_ZN11QMainWindow10setMenuBarEP8QMenuBar(void *qthis,
 QMenuBar * arg1) {
   ((QMainWindow*)qthis)->setMenuBar(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 136, column 24>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 143, column 24>
 //   // proto:  Qt::DockWidgetArea QMainWindow::corner(Qt::Corner corner);
 // _ZNK11QMainWindow6cornerEN2Qt6CornerE corner(Qt::Corner)
 extern "C"
@@ -587,7 +600,7 @@ Qt::Corner* arg1) {
   ((QMainWindow*)qthis)->corner(*((Qt::Corner*)arg1));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 162, column 25>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmainwindow.h', line 169, column 25>
 //   // proto:  QList<QDockWidget *> QMainWindow::tabifiedDockWidgets(QDockWidget * dockwidget);
 // _ZNK11QMainWindow19tabifiedDockWidgetsEP11QDockWidget tabifiedDockWidgets(class QDockWidget *)
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qflags.h
 // dst-file: /src/core/qflags.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qflags_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 75, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 81, column 38>
 //   // proto:  void QIncompatibleFlag::QIncompatibleFlag(int i);
 if (true) {
   auto f = [](int arg1) {
@@ -26,7 +26,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 65, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 71, column 29>
 //   // proto:  void QFlag::QFlag(ushort ai);
 if (true) {
   auto f = [](ushort arg1) {
@@ -34,7 +34,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 52, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 58, column 29>
 //   // proto:  void QFlag::QFlag(int ai);
 if (true) {
   auto f = [](int arg1) {
@@ -42,7 +42,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 64, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 70, column 29>
 //   // proto:  void QFlag::QFlag(short ai);
 if (true) {
   auto f = [](short arg1) {
@@ -50,7 +50,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 63, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 69, column 29>
 //   // proto:  void QFlag::QFlag(uint ai);
 if (true) {
   auto f = [](uint arg1) {
@@ -78,7 +78,7 @@ int QFlag_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 75, column 38>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 81, column 38>
 //   // proto:  void QIncompatibleFlag::QIncompatibleFlag(int i);
 extern "C"
 QIncompatibleFlag*
@@ -86,7 +86,7 @@ C_ZN17QIncompatibleFlagC2Ei(int arg1) {
   auto ret = new QIncompatibleFlag(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 65, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 71, column 29>
 //   // proto:  void QFlag::QFlag(ushort ai);
 extern "C"
 QFlag*
@@ -94,7 +94,7 @@ C_ZN5QFlagC2Et(ushort arg1) {
   auto ret = new QFlag(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 52, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 58, column 29>
 //   // proto:  void QFlag::QFlag(int ai);
 extern "C"
 QFlag*
@@ -102,7 +102,7 @@ C_ZN5QFlagC2Ei(int arg1) {
   auto ret = new QFlag(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 64, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 70, column 29>
 //   // proto:  void QFlag::QFlag(short ai);
 extern "C"
 QFlag*
@@ -110,7 +110,7 @@ C_ZN5QFlagC2Es(short arg1) {
   auto ret = new QFlag(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 63, column 29>
+// <SourceLocation file '/usr/include/qt/QtCore/qflags.h', line 69, column 29>
 //   // proto:  void QFlag::QFlag(uint ai);
 extern "C"
 QFlag*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qradiobutton.h
 // dst-file: /src/widgets/qradiobutton.cxx
 //
@@ -33,7 +33,7 @@ int QRadioButton_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 53, column 5>
 //   // proto:  const QMetaObject * QRadioButton::metaObject();
 // _ZNK12QRadioButton10metaObjectEv metaObject()
 extern "C"
@@ -43,7 +43,7 @@ C_ZNK12QRadioButton10metaObjectEv(void *qthis) {
   ((QRadioButton*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 50, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 56, column 14>
 //   // proto:  void QRadioButton::QRadioButton(QWidget * parent);
 extern "C"
 QRadioButton*
@@ -51,7 +51,7 @@ C_ZN12QRadioButtonC2EP7QWidget(QWidget * arg1) {
   auto ret = new QRadioButton(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 54, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 60, column 11>
 //   // proto:  QSize QRadioButton::sizeHint();
 // _ZNK12QRadioButton8sizeHintEv sizeHint()
 extern "C"
@@ -61,7 +61,7 @@ C_ZNK12QRadioButton8sizeHintEv(void *qthis) {
   ((QRadioButton*)qthis)->sizeHint();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 55, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 61, column 11>
 //   // proto:  QSize QRadioButton::minimumSizeHint();
 // _ZNK12QRadioButton15minimumSizeHintEv minimumSizeHint()
 extern "C"
@@ -76,13 +76,14 @@ extern "C"
 void C_ZN12QRadioButtonD2Ev(void *qthis) {
   delete (QRadioButton*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 57, column 14>
 //   // proto:  void QRadioButton::QRadioButton(const QString & text, QWidget * parent);
 extern "C"
 QRadioButton*
 C_ZN12QRadioButtonC2ERK7QStringP7QWidget(const QString* arg1,
 QWidget * arg2) {
-  auto ret = new QRadioButton(*((const QString*)arg1), arg2);
+  auto ret = new QRadioButton(*((const QString*)arg1),
+arg2);
   return ret;
 }
 // <= ext block end

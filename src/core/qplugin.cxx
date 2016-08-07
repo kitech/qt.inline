@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qplugin.h
 // dst-file: /src/core/qplugin.cxx
 //
@@ -33,7 +33,7 @@ int QStaticPlugin_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qplugin.h', line 68, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qplugin.h', line 74, column 17>
 //   // proto:  QJsonObject QStaticPlugin::metaData();
 // _ZNK13QStaticPlugin8metaDataEv metaData()
 extern "C"

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qidentityproxymodel.h
 // dst-file: /src/core/qidentityproxymodel.cxx
 //
@@ -35,7 +35,7 @@ int QIdentityProxyModel_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 79, column 10>
 //   // proto:  bool QIdentityProxyModel::removeRows(int row, int count, const QModelIndex & parent);
 // _ZN19QIdentityProxyModel10removeRowsEiiRK11QModelIndex removeRows(int, int, const class QModelIndex &)
 extern "C"
@@ -50,7 +50,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 78, column 10>
 //   // proto:  bool QIdentityProxyModel::removeColumns(int column, int count, const QModelIndex & parent);
 // _ZN19QIdentityProxyModel13removeColumnsEiiRK11QModelIndex removeColumns(int, int, const class QModelIndex &)
 extern "C"
@@ -65,7 +65,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 64, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 71, column 20>
 //   // proto:  QItemSelection QIdentityProxyModel::mapSelectionFromSource(const QItemSelection & selection);
 // _ZNK19QIdentityProxyModel22mapSelectionFromSourceERK14QItemSelection mapSelectionFromSource(const class QItemSelection &)
 extern "C"
@@ -76,7 +76,7 @@ const QItemSelection* arg1) {
   ((QIdentityProxyModel*)qthis)->mapSelectionFromSource(*((const QItemSelection*)arg1));
   return new QItemSelection(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 55, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 61, column 17>
 //   // proto:  QModelIndex QIdentityProxyModel::index(int row, int column, const QModelIndex & parent);
 // _ZNK19QIdentityProxyModel5indexEiiRK11QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
@@ -91,7 +91,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 77, column 10>
 //   // proto:  bool QIdentityProxyModel::insertRows(int row, int count, const QModelIndex & parent);
 // _ZN19QIdentityProxyModel10insertRowsEiiRK11QModelIndex insertRows(int, int, const class QModelIndex &)
 extern "C"
@@ -106,7 +106,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 76, column 10>
 //   // proto:  bool QIdentityProxyModel::insertColumns(int column, int count, const QModelIndex & parent);
 // _ZN19QIdentityProxyModel13insertColumnsEiiRK11QModelIndex insertColumns(int, int, const class QModelIndex &)
 extern "C"
@@ -121,7 +121,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 62, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 69, column 17>
 //   // proto:  QModelIndex QIdentityProxyModel::sibling(int row, int column, const QModelIndex & idx);
 // _ZNK19QIdentityProxyModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
@@ -136,7 +136,7 @@ arg2,
 *((const QModelIndex*)arg3));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 66, column 21>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 73, column 21>
 //   // proto:  QModelIndexList QIdentityProxyModel::match(const QModelIndex & start, int role, const QVariant & value, int hits, Qt::MatchFlags flags);
 // _ZNK19QIdentityProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
 extern "C"
@@ -155,7 +155,7 @@ arg4,
 *((Qt::MatchFlags*)arg5));
   return new QList<QModelIndex>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 55, column 5>
 //   // proto:  const QMetaObject * QIdentityProxyModel::metaObject();
 // _ZNK19QIdentityProxyModel10metaObjectEv metaObject()
 extern "C"
@@ -170,7 +170,7 @@ extern "C"
 void C_ZN19QIdentityProxyModelD2Ev(void *qthis) {
   delete (QIdentityProxyModel*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 58, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 64, column 17>
 //   // proto:  QModelIndex QIdentityProxyModel::parent(const QModelIndex & child);
 // _ZNK19QIdentityProxyModel6parentERK11QModelIndex parent(const class QModelIndex &)
 extern "C"
@@ -181,7 +181,7 @@ const QModelIndex* arg1) {
   ((QIdentityProxyModel*)qthis)->parent(*((const QModelIndex*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 74, column 10>
 //   // proto:  void QIdentityProxyModel::setSourceModel(QAbstractItemModel * sourceModel);
 // _ZN19QIdentityProxyModel14setSourceModelEP18QAbstractItemModel setSourceModel(class QAbstractItemModel *)
 extern "C"
@@ -190,7 +190,7 @@ C_ZN19QIdentityProxyModel14setSourceModelEP18QAbstractItemModel(void *qthis,
 QAbstractItemModel * arg1) {
   ((QIdentityProxyModel*)qthis)->setSourceModel(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 68, column 10>
 //   // proto:  bool QIdentityProxyModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
 // _ZN19QIdentityProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
@@ -209,7 +209,7 @@ arg4,
 *((const QModelIndex*)arg5));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 57, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 63, column 17>
 //   // proto:  QModelIndex QIdentityProxyModel::mapToSource(const QModelIndex & proxyIndex);
 // _ZNK19QIdentityProxyModel11mapToSourceERK11QModelIndex mapToSource(const class QModelIndex &)
 extern "C"
@@ -220,7 +220,7 @@ const QModelIndex* arg1) {
   ((QIdentityProxyModel*)qthis)->mapToSource(*((const QModelIndex*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 56, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 62, column 17>
 //   // proto:  QModelIndex QIdentityProxyModel::mapFromSource(const QModelIndex & sourceIndex);
 // _ZNK19QIdentityProxyModel13mapFromSourceERK11QModelIndex mapFromSource(const class QModelIndex &)
 extern "C"
@@ -231,7 +231,7 @@ const QModelIndex* arg1) {
   ((QIdentityProxyModel*)qthis)->mapFromSource(*((const QModelIndex*)arg1));
   return new QModelIndex(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 57, column 14>
 //   // proto:  void QIdentityProxyModel::QIdentityProxyModel(QObject * parent);
 extern "C"
 QIdentityProxyModel*
@@ -239,7 +239,7 @@ C_ZN19QIdentityProxyModelC2EP7QObject(QObject * arg1) {
   auto ret = new QIdentityProxyModel(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 54, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 60, column 9>
 //   // proto:  int QIdentityProxyModel::columnCount(const QModelIndex & parent);
 // _ZNK19QIdentityProxyModel11columnCountERK11QModelIndex columnCount(const class QModelIndex &)
 extern "C"
@@ -250,7 +250,7 @@ const QModelIndex* arg1) {
   ((QIdentityProxyModel*)qthis)->columnCount(*((const QModelIndex*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 65, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 72, column 20>
 //   // proto:  QItemSelection QIdentityProxyModel::mapSelectionToSource(const QItemSelection & selection);
 // _ZNK19QIdentityProxyModel20mapSelectionToSourceERK14QItemSelection mapSelectionToSource(const class QItemSelection &)
 extern "C"
@@ -261,7 +261,7 @@ const QItemSelection* arg1) {
   ((QIdentityProxyModel*)qthis)->mapSelectionToSource(*((const QItemSelection*)arg1));
   return new QItemSelection(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 60, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 67, column 14>
 //   // proto:  QVariant QIdentityProxyModel::headerData(int section, Qt::Orientation orientation, int role);
 // _ZNK19QIdentityProxyModel10headerDataEiN2Qt11OrientationEi headerData(int, Qt::Orientation, int)
 extern "C"
@@ -276,7 +276,7 @@ int arg3) {
 arg3);
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 59, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qidentityproxymodel.h', line 66, column 9>
 //   // proto:  int QIdentityProxyModel::rowCount(const QModelIndex & parent);
 // _ZNK19QIdentityProxyModel8rowCountERK11QModelIndex rowCount(const class QModelIndex &)
 extern "C"

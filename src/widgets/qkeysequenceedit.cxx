@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qkeysequenceedit.h
 // dst-file: /src/widgets/qkeysequenceedit.cxx
 //
@@ -33,16 +33,17 @@ int QKeySequenceEdit_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 58, column 14>
 //   // proto:  void QKeySequenceEdit::QKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent);
 extern "C"
 QKeySequenceEdit*
 C_ZN16QKeySequenceEditC2ERK12QKeySequenceP7QWidget(const QKeySequence* arg1,
 QWidget * arg2) {
-  auto ret = new QKeySequenceEdit(*((const QKeySequence*)arg1), arg2);
+  auto ret = new QKeySequenceEdit(*((const QKeySequence*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 65, column 10>
 //   // proto:  void QKeySequenceEdit::clear();
 // _ZN16QKeySequenceEdit5clearEv clear()
 extern "C"
@@ -50,7 +51,7 @@ void
 C_ZN16QKeySequenceEdit5clearEv(void *qthis) {
   ((QKeySequenceEdit*)qthis)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 64, column 10>
 //   // proto:  void QKeySequenceEdit::setKeySequence(const QKeySequence & keySequence);
 // _ZN16QKeySequenceEdit14setKeySequenceERK12QKeySequence setKeySequence(const class QKeySequence &)
 extern "C"
@@ -59,7 +60,7 @@ C_ZN16QKeySequenceEdit14setKeySequenceERK12QKeySequence(void *qthis,
 const QKeySequence* arg1) {
   ((QKeySequenceEdit*)qthis)->setKeySequence(*((const QKeySequence*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 55, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 61, column 18>
 //   // proto:  QKeySequence QKeySequenceEdit::keySequence();
 // _ZNK16QKeySequenceEdit11keySequenceEv keySequence()
 extern "C"
@@ -74,7 +75,7 @@ extern "C"
 void C_ZN16QKeySequenceEditD2Ev(void *qthis) {
   delete (QKeySequenceEdit*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 69, column 10>
 //   // proto:  void QKeySequenceEdit::keySequenceChanged(const QKeySequence & keySequence);
 // _ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence keySequenceChanged(const class QKeySequence &)
 extern "C"
@@ -83,7 +84,7 @@ C_ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(void *qthis,
 const QKeySequence* arg1) {
   ((QKeySequenceEdit*)qthis)->keySequenceChanged(*((const QKeySequence*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 68, column 10>
 //   // proto:  void QKeySequenceEdit::editingFinished();
 // _ZN16QKeySequenceEdit15editingFinishedEv editingFinished()
 extern "C"
@@ -91,7 +92,7 @@ void
 C_ZN16QKeySequenceEdit15editingFinishedEv(void *qthis) {
   ((QKeySequenceEdit*)qthis)->editingFinished();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 57, column 14>
 //   // proto:  void QKeySequenceEdit::QKeySequenceEdit(QWidget * parent);
 extern "C"
 QKeySequenceEdit*
@@ -99,7 +100,7 @@ C_ZN16QKeySequenceEditC2EP7QWidget(QWidget * arg1) {
   auto ret = new QKeySequenceEdit(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 47, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qkeysequenceedit.h', line 53, column 5>
 //   // proto:  const QMetaObject * QKeySequenceEdit::metaObject();
 // _ZNK16QKeySequenceEdit10metaObjectEv metaObject()
 extern "C"

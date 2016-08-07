@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qvalidator.h
 // dst-file: /src/gui/qvalidator.cxx
 //
@@ -21,7 +21,7 @@
 
 // main block begin =>
 void __keep_qvalidator_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 145, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 151, column 9>
 //   // proto:  int QDoubleValidator::decimals();
 if (true) {
   auto f = [](QDoubleValidator flythis) {
@@ -31,7 +31,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QDoubleValidator8decimalsEv decimals()
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 144, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 150, column 12>
 //   // proto:  double QDoubleValidator::top();
 if (true) {
   auto f = [](QDoubleValidator flythis) {
@@ -41,7 +41,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QDoubleValidator3topEv top()
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 143, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 149, column 12>
 //   // proto:  double QDoubleValidator::bottom();
 if (true) {
   auto f = [](QDoubleValidator flythis) {
@@ -51,7 +51,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK16QDoubleValidator6bottomEv bottom()
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 101, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 107, column 9>
 //   // proto:  int QIntValidator::top();
 if (true) {
   auto f = [](QIntValidator flythis) {
@@ -61,7 +61,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QIntValidator3topEv top()
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 100, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 106, column 9>
 //   // proto:  int QIntValidator::bottom();
 if (true) {
   auto f = [](QIntValidator flythis) {
@@ -71,7 +71,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK13QIntValidator6bottomEv bottom()
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 177, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 183, column 20>
 //   // proto:  const QRegExp & QRegExpValidator::regExp();
 if (true) {
   auto f = [](QRegExpValidator flythis) {
@@ -119,7 +119,7 @@ int QRegExpValidator_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 206, column 24>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 212, column 24>
 //   // proto:  QRegularExpression QRegularExpressionValidator::regularExpression();
 // _ZNK27QRegularExpressionValidator17regularExpressionEv regularExpression()
 extern "C"
@@ -134,16 +134,17 @@ extern "C"
 void C_ZN27QRegularExpressionValidatorD2Ev(void *qthis) {
   delete (QRegularExpressionValidator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 201, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 207, column 14>
 //   // proto:  void QRegularExpressionValidator::QRegularExpressionValidator(const QRegularExpression & re, QObject * parent);
 extern "C"
 QRegularExpressionValidator*
 C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(const QRegularExpression* arg1,
 QObject * arg2) {
-  auto ret = new QRegularExpressionValidator(*((const QRegularExpression*)arg1), arg2);
+  auto ret = new QRegularExpressionValidator(*((const QRegularExpression*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 196, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 202, column 5>
 //   // proto:  const QMetaObject * QRegularExpressionValidator::metaObject();
 // _ZNK27QRegularExpressionValidator10metaObjectEv metaObject()
 extern "C"
@@ -153,7 +154,7 @@ C_ZNK27QRegularExpressionValidator10metaObjectEv(void *qthis) {
   ((QRegularExpressionValidator*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 200, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 206, column 14>
 //   // proto:  void QRegularExpressionValidator::QRegularExpressionValidator(QObject * parent);
 extern "C"
 QRegularExpressionValidator*
@@ -161,7 +162,7 @@ C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * arg1) {
   auto ret = new QRegularExpressionValidator(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 209, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 215, column 10>
 //   // proto:  void QRegularExpressionValidator::setRegularExpression(const QRegularExpression & re);
 // _ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression setRegularExpression(const class QRegularExpression &)
 extern "C"
@@ -170,7 +171,7 @@ C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression(v
 const QRegularExpression* arg1) {
   ((QRegularExpressionValidator*)qthis)->setRegularExpression(*((const QRegularExpression*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 212, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 218, column 10>
 //   // proto:  void QRegularExpressionValidator::regularExpressionChanged(const QRegularExpression & re);
 // _ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression regularExpressionChanged(const class QRegularExpression &)
 extern "C"
@@ -179,7 +180,7 @@ C_ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpressi
 const QRegularExpression* arg1) {
   ((QRegularExpressionValidator*)qthis)->regularExpressionChanged(*((const QRegularExpression*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 204, column 31>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 210, column 31>
 //   // proto:  QValidator::State QRegularExpressionValidator::validate(QString & input, int & pos);
 // _ZNK27QRegularExpressionValidator8validateER7QStringRi validate(class QString &, int &)
 extern "C"
@@ -192,7 +193,7 @@ int* arg2) {
 *((int*)arg2));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 135, column 23>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 141, column 23>
 //   // proto:  QValidator::State QDoubleValidator::validate(QString & , int & );
 // _ZNK16QDoubleValidator8validateER7QStringRi validate(class QString &, int &)
 extern "C"
@@ -205,7 +206,7 @@ int* arg2) {
 *((int*)arg2));
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 146, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 152, column 14>
 //   // proto:  QDoubleValidator::Notation QDoubleValidator::notation();
 // _ZNK16QDoubleValidator8notationEv notation()
 extern "C"
@@ -215,7 +216,7 @@ C_ZNK16QDoubleValidator8notationEv(void *qthis) {
   ((QDoubleValidator*)qthis)->notation();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 145, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 151, column 9>
 //   // proto:  int QDoubleValidator::decimals();
 // _ZNK16QDoubleValidator8decimalsEv decimals()
 extern "C"
@@ -225,7 +226,7 @@ C_ZNK16QDoubleValidator8decimalsEv(void *qthis) {
   ((QDoubleValidator*)qthis)->decimals();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 151, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 157, column 10>
 //   // proto:  void QDoubleValidator::decimalsChanged(int decimals);
 // _ZN16QDoubleValidator15decimalsChangedEi decimalsChanged(int)
 extern "C"
@@ -239,7 +240,7 @@ extern "C"
 void C_ZN16QDoubleValidatorD2Ev(void *qthis) {
   delete (QDoubleValidator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 144, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 150, column 12>
 //   // proto:  double QDoubleValidator::top();
 // _ZNK16QDoubleValidator3topEv top()
 extern "C"
@@ -249,7 +250,7 @@ C_ZNK16QDoubleValidator3topEv(void *qthis) {
   ((QDoubleValidator*)qthis)->top();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 152, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 158, column 10>
 //   // proto:  void QDoubleValidator::notationChanged(QDoubleValidator::Notation notation);
 // _ZN16QDoubleValidator15notationChangedENS_8NotationE notationChanged(class QDoubleValidator::Notation)
 extern "C"
@@ -258,7 +259,7 @@ C_ZN16QDoubleValidator15notationChangedENS_8NotationE(void *qthis,
 QDoubleValidator::Notation* arg1) {
   ((QDoubleValidator*)qthis)->notationChanged(*((QDoubleValidator::Notation*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 149, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 155, column 10>
 //   // proto:  void QDoubleValidator::bottomChanged(double bottom);
 // _ZN16QDoubleValidator13bottomChangedEd bottomChanged(double)
 extern "C"
@@ -267,7 +268,7 @@ C_ZN16QDoubleValidator13bottomChangedEd(void *qthis,
 double arg1) {
   ((QDoubleValidator*)qthis)->bottomChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 143, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 149, column 12>
 //   // proto:  double QDoubleValidator::bottom();
 // _ZNK16QDoubleValidator6bottomEv bottom()
 extern "C"
@@ -277,7 +278,7 @@ C_ZNK16QDoubleValidator6bottomEv(void *qthis) {
   ((QDoubleValidator*)qthis)->bottom();
   return ret; // 0 TypeKind.DOUBLE
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 140, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 146, column 10>
 //   // proto:  void QDoubleValidator::setDecimals(int );
 // _ZN16QDoubleValidator11setDecimalsEi setDecimals(int)
 extern "C"
@@ -286,7 +287,7 @@ C_ZN16QDoubleValidator11setDecimalsEi(void *qthis,
 int arg1) {
   ((QDoubleValidator*)qthis)->setDecimals(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 138, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 144, column 10>
 //   // proto:  void QDoubleValidator::setBottom(double );
 // _ZN16QDoubleValidator9setBottomEd setBottom(double)
 extern "C"
@@ -295,7 +296,7 @@ C_ZN16QDoubleValidator9setBottomEd(void *qthis,
 double arg1) {
   ((QDoubleValidator*)qthis)->setBottom(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 137, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 143, column 18>
 //   // proto:  void QDoubleValidator::setRange(double bottom, double top, int decimals);
 // _ZN16QDoubleValidator8setRangeEddi setRange(double, double, int)
 extern "C"
@@ -308,7 +309,7 @@ int arg3) {
 arg2,
 arg3);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 141, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 147, column 10>
 //   // proto:  void QDoubleValidator::setNotation(QDoubleValidator::Notation );
 // _ZN16QDoubleValidator11setNotationENS_8NotationE setNotation(enum QDoubleValidator::Notation)
 extern "C"
@@ -317,7 +318,7 @@ C_ZN16QDoubleValidator11setNotationENS_8NotationE(void *qthis,
 QDoubleValidator::Notation arg1) {
   ((QDoubleValidator*)qthis)->setNotation(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 126, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 132, column 14>
 //   // proto:  void QDoubleValidator::QDoubleValidator(QObject * parent);
 extern "C"
 QDoubleValidator*
@@ -325,7 +326,7 @@ C_ZN16QDoubleValidatorC2EP7QObject(QObject * arg1) {
   auto ret = new QDoubleValidator(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 127, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 133, column 5>
 //   // proto:  void QDoubleValidator::QDoubleValidator(double bottom, double top, int decimals, QObject * parent);
 extern "C"
 QDoubleValidator*
@@ -333,10 +334,13 @@ C_ZN16QDoubleValidatorC2EddiP7QObject(double arg1,
 double arg2,
 int arg3,
 QObject * arg4) {
-  auto ret = new QDoubleValidator(arg1, arg2, arg3, arg4);
+  auto ret = new QDoubleValidator(arg1,
+arg2,
+arg3,
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 150, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 156, column 10>
 //   // proto:  void QDoubleValidator::topChanged(double top);
 // _ZN16QDoubleValidator10topChangedEd topChanged(double)
 extern "C"
@@ -345,7 +349,7 @@ C_ZN16QDoubleValidator10topChangedEd(void *qthis,
 double arg1) {
   ((QDoubleValidator*)qthis)->topChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 119, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 125, column 5>
 //   // proto:  const QMetaObject * QDoubleValidator::metaObject();
 // _ZNK16QDoubleValidator10metaObjectEv metaObject()
 extern "C"
@@ -355,7 +359,7 @@ C_ZNK16QDoubleValidator10metaObjectEv(void *qthis) {
   ((QDoubleValidator*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 139, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 145, column 10>
 //   // proto:  void QDoubleValidator::setTop(double );
 // _ZN16QDoubleValidator6setTopEd setTop(double)
 extern "C"
@@ -364,7 +368,7 @@ C_ZN16QDoubleValidator6setTopEd(void *qthis,
 double arg1) {
   ((QDoubleValidator*)qthis)->setTop(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 89, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 95, column 14>
 //   // proto:  void QIntValidator::QIntValidator(QObject * parent);
 extern "C"
 QIntValidator*
@@ -372,7 +376,7 @@ C_ZN13QIntValidatorC2EP7QObject(QObject * arg1) {
   auto ret = new QIntValidator(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 102, column 10>
 //   // proto:  void QIntValidator::setBottom(int );
 // _ZN13QIntValidator9setBottomEi setBottom(int)
 extern "C"
@@ -381,7 +385,7 @@ C_ZN13QIntValidator9setBottomEi(void *qthis,
 int arg1) {
   ((QIntValidator*)qthis)->setBottom(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 98, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 104, column 18>
 //   // proto:  void QIntValidator::setRange(int bottom, int top);
 // _ZN13QIntValidator8setRangeEii setRange(int, int)
 extern "C"
@@ -392,7 +396,7 @@ int arg2) {
   ((QIntValidator*)qthis)->setRange(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 84, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 90, column 5>
 //   // proto:  const QMetaObject * QIntValidator::metaObject();
 // _ZNK13QIntValidator10metaObjectEv metaObject()
 extern "C"
@@ -402,7 +406,7 @@ C_ZNK13QIntValidator10metaObjectEv(void *qthis) {
   ((QIntValidator*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 101, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 107, column 9>
 //   // proto:  int QIntValidator::top();
 // _ZNK13QIntValidator3topEv top()
 extern "C"
@@ -412,7 +416,7 @@ C_ZNK13QIntValidator3topEv(void *qthis) {
   ((QIntValidator*)qthis)->top();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 94, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 100, column 10>
 //   // proto:  void QIntValidator::fixup(QString & input);
 // _ZNK13QIntValidator5fixupER7QString fixup(class QString &)
 extern "C"
@@ -421,7 +425,7 @@ C_ZNK13QIntValidator5fixupER7QString(void *qthis,
 QString* arg1) {
   ((QIntValidator*)qthis)->fixup(*((QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 93, column 23>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 99, column 23>
 //   // proto:  QValidator::State QIntValidator::validate(QString & , int & );
 // _ZNK13QIntValidator8validateER7QStringRi validate(class QString &, int &)
 extern "C"
@@ -439,7 +443,7 @@ extern "C"
 void C_ZN13QIntValidatorD2Ev(void *qthis) {
   delete (QIntValidator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 103, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 109, column 10>
 //   // proto:  void QIntValidator::bottomChanged(int bottom);
 // _ZN13QIntValidator13bottomChangedEi bottomChanged(int)
 extern "C"
@@ -448,7 +452,7 @@ C_ZN13QIntValidator13bottomChangedEi(void *qthis,
 int arg1) {
   ((QIntValidator*)qthis)->bottomChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 104, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 110, column 10>
 //   // proto:  void QIntValidator::topChanged(int top);
 // _ZN13QIntValidator10topChangedEi topChanged(int)
 extern "C"
@@ -457,7 +461,7 @@ C_ZN13QIntValidator10topChangedEi(void *qthis,
 int arg1) {
   ((QIntValidator*)qthis)->topChanged(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 97, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 103, column 10>
 //   // proto:  void QIntValidator::setTop(int );
 // _ZN13QIntValidator6setTopEi setTop(int)
 extern "C"
@@ -466,7 +470,7 @@ C_ZN13QIntValidator6setTopEi(void *qthis,
 int arg1) {
   ((QIntValidator*)qthis)->setTop(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 100, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 106, column 9>
 //   // proto:  int QIntValidator::bottom();
 // _ZNK13QIntValidator6bottomEv bottom()
 extern "C"
@@ -476,17 +480,19 @@ C_ZNK13QIntValidator6bottomEv(void *qthis) {
   ((QIntValidator*)qthis)->bottom();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 90, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 96, column 5>
 //   // proto:  void QIntValidator::QIntValidator(int bottom, int top, QObject * parent);
 extern "C"
 QIntValidator*
 C_ZN13QIntValidatorC2EiiP7QObject(int arg1,
 int arg2,
 QObject * arg3) {
-  auto ret = new QIntValidator(arg1, arg2, arg3);
+  auto ret = new QIntValidator(arg1,
+arg2,
+arg3);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 59, column 5>
 //   // proto:  const QMetaObject * QValidator::metaObject();
 // _ZNK10QValidator10metaObjectEv metaObject()
 extern "C"
@@ -496,7 +502,7 @@ C_ZNK10QValidator10metaObjectEv(void *qthis) {
   ((QValidator*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 70, column 10>
 //   // proto:  void QValidator::setLocale(const QLocale & locale);
 // _ZN10QValidator9setLocaleERK7QLocale setLocale(const class QLocale &)
 extern "C"
@@ -505,7 +511,7 @@ C_ZN10QValidator9setLocaleERK7QLocale(void *qthis,
 const QLocale* arg1) {
   ((QValidator*)qthis)->setLocale(*((const QLocale*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 68, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 74, column 18>
 //   // proto:  void QValidator::fixup(QString & );
 // _ZNK10QValidator5fixupER7QString fixup(class QString &)
 extern "C"
@@ -519,14 +525,14 @@ extern "C"
 void C_ZN10QValidatorD2Ev(void *qthis) {
   delete (QValidator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 61, column 14>
 //   // proto:  void QValidator::QValidator(QObject * parent);
 extern "C"
 QValidator*
 C_ZN10QValidatorC2EP7QObject(QObject * arg1) {
   // auto ret = new QValidator(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 65, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 71, column 13>
 //   // proto:  QLocale QValidator::locale();
 // _ZNK10QValidator6localeEv locale()
 extern "C"
@@ -536,7 +542,7 @@ C_ZNK10QValidator6localeEv(void *qthis) {
   ((QValidator*)qthis)->locale();
   return new QLocale(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 77, column 10>
 //   // proto:  void QValidator::changed();
 // _ZN10QValidator7changedEv changed()
 extern "C"
@@ -544,7 +550,7 @@ void
 C_ZN10QValidator7changedEv(void *qthis) {
   ((QValidator*)qthis)->changed();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 67, column 19>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 73, column 19>
 //   // proto:  QValidator::State QValidator::validate(QString & , int & );
 // _ZNK10QValidator8validateER7QStringRi validate(class QString &, int &)
 extern "C"
@@ -562,7 +568,7 @@ extern "C"
 void C_ZN16QRegExpValidatorD2Ev(void *qthis) {
   delete (QRegExpValidator*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 177, column 20>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 183, column 20>
 //   // proto:  const QRegExp & QRegExpValidator::regExp();
 // _ZNK16QRegExpValidator6regExpEv regExp()
 extern "C"
@@ -572,7 +578,7 @@ C_ZNK16QRegExpValidator6regExpEv(void *qthis) {
   ((QRegExpValidator*)qthis)->regExp();
   return new QRegExp(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 166, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 172, column 5>
 //   // proto:  const QMetaObject * QRegExpValidator::metaObject();
 // _ZNK16QRegExpValidator10metaObjectEv metaObject()
 extern "C"
@@ -582,16 +588,17 @@ C_ZNK16QRegExpValidator10metaObjectEv(void *qthis) {
   ((QRegExpValidator*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 171, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 177, column 14>
 //   // proto:  void QRegExpValidator::QRegExpValidator(const QRegExp & rx, QObject * parent);
 extern "C"
 QRegExpValidator*
 C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(const QRegExp* arg1,
 QObject * arg2) {
-  auto ret = new QRegExpValidator(*((const QRegExp*)arg1), arg2);
+  auto ret = new QRegExpValidator(*((const QRegExp*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 176, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 182, column 10>
 //   // proto:  void QRegExpValidator::setRegExp(const QRegExp & rx);
 // _ZN16QRegExpValidator9setRegExpERK7QRegExp setRegExp(const class QRegExp &)
 extern "C"
@@ -600,7 +607,7 @@ C_ZN16QRegExpValidator9setRegExpERK7QRegExp(void *qthis,
 const QRegExp* arg1) {
   ((QRegExpValidator*)qthis)->setRegExp(*((const QRegExp*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 170, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 176, column 14>
 //   // proto:  void QRegExpValidator::QRegExpValidator(QObject * parent);
 extern "C"
 QRegExpValidator*
@@ -608,7 +615,7 @@ C_ZN16QRegExpValidatorC2EP7QObject(QObject * arg1) {
   auto ret = new QRegExpValidator(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 180, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 186, column 10>
 //   // proto:  void QRegExpValidator::regExpChanged(const QRegExp & regExp);
 // _ZN16QRegExpValidator13regExpChangedERK7QRegExp regExpChanged(const class QRegExp &)
 extern "C"
@@ -617,7 +624,7 @@ C_ZN16QRegExpValidator13regExpChangedERK7QRegExp(void *qthis,
 const QRegExp* arg1) {
   ((QRegExpValidator*)qthis)->regExpChanged(*((const QRegExp*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 174, column 31>
+// <SourceLocation file '/usr/include/qt/QtGui/qvalidator.h', line 180, column 31>
 //   // proto:  QValidator::State QRegExpValidator::validate(QString & input, int & pos);
 // _ZNK16QRegExpValidator8validateER7QStringRi validate(class QString &, int &)
 extern "C"

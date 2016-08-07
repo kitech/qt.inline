@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qaccessiblebridge.h
 // dst-file: /src/gui/qaccessiblebridge.cxx
 //
@@ -38,14 +38,14 @@ int QAccessibleBridge_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 62, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 68, column 14>
 //   // proto:  void QAccessibleBridgePlugin::QAccessibleBridgePlugin(QObject * parent);
 extern "C"
 QAccessibleBridgePlugin*
 C_ZN23QAccessibleBridgePluginC2EP7QObject(QObject * arg1) {
   // auto ret = new QAccessibleBridgePlugin(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 65, column 32>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 71, column 32>
 //   // proto:  QAccessibleBridge * QAccessibleBridgePlugin::create(const QString & key);
 // _ZN23QAccessibleBridgePlugin6createERK7QString create(const class QString &)
 extern "C"
@@ -61,7 +61,7 @@ extern "C"
 void C_ZN23QAccessibleBridgePluginD2Ev(void *qthis) {
   delete (QAccessibleBridgePlugin*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 60, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 66, column 5>
 //   // proto:  const QMetaObject * QAccessibleBridgePlugin::metaObject();
 // _ZNK23QAccessibleBridgePlugin10metaObjectEv metaObject()
 extern "C"
@@ -76,7 +76,7 @@ extern "C"
 void C_ZN17QAccessibleBridgeD2Ev(void *qthis) {
   delete (QAccessibleBridge*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 53, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 59, column 18>
 //   // proto:  void QAccessibleBridge::notifyAccessibilityUpdate(QAccessibleEvent * event);
 // _ZN17QAccessibleBridge25notifyAccessibilityUpdateEP16QAccessibleEvent notifyAccessibilityUpdate(class QAccessibleEvent *)
 extern "C"
@@ -85,7 +85,7 @@ C_ZN17QAccessibleBridge25notifyAccessibilityUpdateEP16QAccessibleEvent(void *qth
 QAccessibleEvent * arg1) {
   ((QAccessibleBridge*)qthis)->notifyAccessibilityUpdate(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 52, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qaccessiblebridge.h', line 58, column 18>
 //   // proto:  void QAccessibleBridge::setRootObject(QAccessibleInterface * );
 // _ZN17QAccessibleBridge13setRootObjectEP20QAccessibleInterface setRootObject(class QAccessibleInterface *)
 extern "C"

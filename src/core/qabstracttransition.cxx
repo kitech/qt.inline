@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qabstracttransition.h
 // dst-file: /src/core/qabstracttransition.cxx
 //
@@ -14,10 +14,8 @@
 #include <qabstracttransition.h>
 
 
-#include <qabstractstate.h>
 #include <qlist.h>
 #include <qmetaobject.h>
-#include <qabstractanimation.h>
 // <= header block end
 
 // main block begin =>
@@ -36,7 +34,7 @@ int QAbstractTransition_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 86, column 10>
 //   // proto:  void QAbstractTransition::setTransitionType(QAbstractTransition::TransitionType type);
 // _ZN19QAbstractTransition17setTransitionTypeENS_14TransitionTypeE setTransitionType(enum QAbstractTransition::TransitionType)
 extern "C"
@@ -45,7 +43,7 @@ C_ZN19QAbstractTransition17setTransitionTypeENS_14TransitionTypeE(void *qthis,
 QAbstractTransition::TransitionType arg1) {
   ((QAbstractTransition*)qthis)->setTransitionType(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 74, column 21>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 80, column 21>
 //   // proto:  QAbstractState * QAbstractTransition::targetState();
 // _ZNK19QAbstractTransition11targetStateEv targetState()
 extern "C"
@@ -55,7 +53,7 @@ C_ZNK19QAbstractTransition11targetStateEv(void *qthis) {
   ((QAbstractTransition*)qthis)->targetState();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 76, column 28>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 82, column 28>
 //   // proto:  QList<QAbstractState *> QAbstractTransition::targetStates();
 // _ZNK19QAbstractTransition12targetStatesEv targetStates()
 extern "C"
@@ -65,7 +63,7 @@ C_ZNK19QAbstractTransition12targetStatesEv(void *qthis) {
   ((QAbstractTransition*)qthis)->targetStates();
   return new QList<QAbstractState *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 79, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 85, column 20>
 //   // proto:  QAbstractTransition::TransitionType QAbstractTransition::transitionType();
 // _ZNK19QAbstractTransition14transitionTypeEv transitionType()
 extern "C"
@@ -75,7 +73,7 @@ C_ZNK19QAbstractTransition14transitionTypeEv(void *qthis) {
   ((QAbstractTransition*)qthis)->transitionType();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 73, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 79, column 13>
 //   // proto:  QState * QAbstractTransition::sourceState();
 // _ZNK19QAbstractTransition11sourceStateEv sourceState()
 extern "C"
@@ -90,14 +88,14 @@ extern "C"
 void C_ZN19QAbstractTransitionD2Ev(void *qthis) {
   delete (QAbstractTransition*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 70, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 76, column 5>
 //   // proto:  void QAbstractTransition::QAbstractTransition(QState * sourceState);
 extern "C"
 QAbstractTransition*
 C_ZN19QAbstractTransitionC2EP6QState(QState * arg1) {
   // auto ret = new QAbstractTransition(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 83, column 10>
 //   // proto:  void QAbstractTransition::setTargetStates(const QList<QAbstractState *> & targets);
 // _ZN19QAbstractTransition15setTargetStatesERK5QListIP14QAbstractStateE setTargetStates(const QList<class QAbstractState *> &)
 extern "C"
@@ -106,7 +104,7 @@ C_ZN19QAbstractTransition15setTargetStatesERK5QListIP14QAbstractStateE(void *qth
 const QList<QAbstractState *>* arg1) {
   ((QAbstractTransition*)qthis)->setTargetStates(*((const QList<QAbstractState *>*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 75, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 81, column 10>
 //   // proto:  void QAbstractTransition::setTargetState(QAbstractState * target);
 // _ZN19QAbstractTransition14setTargetStateEP14QAbstractState setTargetState(class QAbstractState *)
 extern "C"
@@ -115,7 +113,7 @@ C_ZN19QAbstractTransition14setTargetStateEP14QAbstractState(void *qthis,
 QAbstractState * arg1) {
   ((QAbstractTransition*)qthis)->setTargetState(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 91, column 10>
 //   // proto:  void QAbstractTransition::addAnimation(QAbstractAnimation * animation);
 // _ZN19QAbstractTransition12addAnimationEP18QAbstractAnimation addAnimation(class QAbstractAnimation *)
 extern "C"
@@ -124,7 +122,7 @@ C_ZN19QAbstractTransition12addAnimationEP18QAbstractAnimation(void *qthis,
 QAbstractAnimation * arg1) {
   ((QAbstractTransition*)qthis)->addAnimation(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 87, column 32>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 93, column 32>
 //   // proto:  QList<QAbstractAnimation *> QAbstractTransition::animations();
 // _ZNK19QAbstractTransition10animationsEv animations()
 extern "C"
@@ -134,7 +132,7 @@ C_ZNK19QAbstractTransition10animationsEv(void *qthis) {
   ((QAbstractTransition*)qthis)->animations();
   return new QList<QAbstractAnimation *>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 86, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 92, column 10>
 //   // proto:  void QAbstractTransition::removeAnimation(QAbstractAnimation * animation);
 // _ZN19QAbstractTransition15removeAnimationEP18QAbstractAnimation removeAnimation(class QAbstractAnimation *)
 extern "C"
@@ -143,7 +141,7 @@ C_ZN19QAbstractTransition15removeAnimationEP18QAbstractAnimation(void *qthis,
 QAbstractAnimation * arg1) {
   ((QAbstractTransition*)qthis)->removeAnimation(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 58, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 64, column 5>
 //   // proto:  const QMetaObject * QAbstractTransition::metaObject();
 // _ZNK19QAbstractTransition10metaObjectEv metaObject()
 extern "C"
@@ -153,7 +151,7 @@ C_ZNK19QAbstractTransition10metaObjectEv(void *qthis) {
   ((QAbstractTransition*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 82, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qabstracttransition.h', line 88, column 20>
 //   // proto:  QStateMachine * QAbstractTransition::machine();
 // _ZNK19QAbstractTransition7machineEv machine()
 extern "C"

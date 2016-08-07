@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qsignalmapper.h
 // dst-file: /src/core/qsignalmapper.cxx
 //
@@ -32,7 +32,7 @@ int QSignalMapper_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 55, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 61, column 10>
 //   // proto:  void QSignalMapper::removeMappings(QObject * sender);
 // _ZN13QSignalMapper14removeMappingsEP7QObject removeMappings(class QObject *)
 extern "C"
@@ -41,7 +41,7 @@ C_ZN13QSignalMapper14removeMappingsEP7QObject(void *qthis,
 QObject * arg1) {
   ((QSignalMapper*)qthis)->removeMappings(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 70, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 76, column 10>
 //   // proto:  void QSignalMapper::map(QObject * sender);
 // _ZN13QSignalMapper3mapEP7QObject map(class QObject *)
 extern "C"
@@ -50,7 +50,7 @@ C_ZN13QSignalMapper3mapEP7QObject(void *qthis,
 QObject * arg1) {
   ((QSignalMapper*)qthis)->map(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 69, column 10>
 //   // proto:  void QSignalMapper::mapped(int );
 // _ZN13QSignalMapper6mappedEi mapped(int)
 extern "C"
@@ -59,7 +59,7 @@ C_ZN13QSignalMapper6mappedEi(void *qthis,
 int arg1) {
   ((QSignalMapper*)qthis)->mapped(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 45, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 51, column 5>
 //   // proto:  const QMetaObject * QSignalMapper::metaObject();
 // _ZNK13QSignalMapper10metaObjectEv metaObject()
 extern "C"
@@ -69,7 +69,7 @@ C_ZNK13QSignalMapper10metaObjectEv(void *qthis) {
   ((QSignalMapper*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 54, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 60, column 10>
 //   // proto:  void QSignalMapper::setMapping(QObject * sender, QObject * object);
 // _ZN13QSignalMapper10setMappingEP7QObjectS1_ setMapping(class QObject *, class QObject *)
 extern "C"
@@ -80,7 +80,7 @@ QObject * arg2) {
   ((QSignalMapper*)qthis)->setMapping(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 72, column 10>
 //   // proto:  void QSignalMapper::mapped(QObject * );
 // _ZN13QSignalMapper6mappedEP7QObject mapped(class QObject *)
 extern "C"
@@ -89,7 +89,7 @@ C_ZN13QSignalMapper6mappedEP7QObject(void *qthis,
 QObject * arg1) {
   ((QSignalMapper*)qthis)->mapped(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 57, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 63, column 14>
 //   // proto:  QObject * QSignalMapper::mapping(int id);
 // _ZNK13QSignalMapper7mappingEi mapping(int)
 extern "C"
@@ -100,7 +100,7 @@ int arg1) {
   ((QSignalMapper*)qthis)->mapping(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 48, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 54, column 14>
 //   // proto:  void QSignalMapper::QSignalMapper(QObject * parent);
 extern "C"
 QSignalMapper*
@@ -113,7 +113,7 @@ extern "C"
 void C_ZN13QSignalMapperD2Ev(void *qthis) {
   delete (QSignalMapper*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 70, column 10>
 //   // proto:  void QSignalMapper::mapped(const QString & );
 // _ZN13QSignalMapper6mappedERK7QString mapped(const class QString &)
 extern "C"
@@ -122,7 +122,7 @@ C_ZN13QSignalMapper6mappedERK7QString(void *qthis,
 const QString* arg1) {
   ((QSignalMapper*)qthis)->mapped(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 51, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 57, column 10>
 //   // proto:  void QSignalMapper::setMapping(QObject * sender, int id);
 // _ZN13QSignalMapper10setMappingEP7QObjecti setMapping(class QObject *, int)
 extern "C"
@@ -133,7 +133,7 @@ int arg2) {
   ((QSignalMapper*)qthis)->setMapping(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 58, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 64, column 14>
 //   // proto:  QObject * QSignalMapper::mapping(const QString & text);
 // _ZNK13QSignalMapper7mappingERK7QString mapping(const class QString &)
 extern "C"
@@ -144,7 +144,7 @@ const QString* arg1) {
   ((QSignalMapper*)qthis)->mapping(*((const QString*)arg1));
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 75, column 10>
 //   // proto:  void QSignalMapper::map();
 // _ZN13QSignalMapper3mapEv map()
 extern "C"
@@ -152,7 +152,7 @@ void
 C_ZN13QSignalMapper3mapEv(void *qthis) {
   ((QSignalMapper*)qthis)->map();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 60, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 66, column 14>
 //   // proto:  QObject * QSignalMapper::mapping(QObject * object);
 // _ZNK13QSignalMapper7mappingEP7QObject mapping(class QObject *)
 extern "C"
@@ -163,7 +163,7 @@ QObject * arg1) {
   ((QSignalMapper*)qthis)->mapping(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 71, column 10>
 //   // proto:  void QSignalMapper::mapped(QWidget * );
 // _ZN13QSignalMapper6mappedEP7QWidget mapped(class QWidget *)
 extern "C"
@@ -172,7 +172,7 @@ C_ZN13QSignalMapper6mappedEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QSignalMapper*)qthis)->mapped(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 52, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 58, column 10>
 //   // proto:  void QSignalMapper::setMapping(QObject * sender, const QString & text);
 // _ZN13QSignalMapper10setMappingEP7QObjectRK7QString setMapping(class QObject *, const class QString &)
 extern "C"
@@ -183,7 +183,7 @@ const QString* arg2) {
   ((QSignalMapper*)qthis)->setMapping(arg1,
 *((const QString*)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 59, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 65, column 14>
 //   // proto:  QObject * QSignalMapper::mapping(QWidget * widget);
 // _ZNK13QSignalMapper7mappingEP7QWidget mapping(class QWidget *)
 extern "C"
@@ -194,7 +194,7 @@ QWidget * arg1) {
   ((QSignalMapper*)qthis)->mapping(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 53, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qsignalmapper.h', line 59, column 10>
 //   // proto:  void QSignalMapper::setMapping(QObject * sender, QWidget * widget);
 // _ZN13QSignalMapper10setMappingEP7QObjectP7QWidget setMapping(class QObject *, class QWidget *)
 extern "C"

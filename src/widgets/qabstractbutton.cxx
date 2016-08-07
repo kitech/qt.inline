@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qabstractbutton.h
 // dst-file: /src/widgets/qabstractbutton.cxx
 //
@@ -36,7 +36,7 @@ int QAbstractButton_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 75, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 81, column 11>
 //   // proto:  QSize QAbstractButton::iconSize();
 // _ZNK15QAbstractButton8iconSizeEv iconSize()
 extern "C"
@@ -46,7 +46,7 @@ C_ZNK15QAbstractButton8iconSizeEv(void *qthis) {
   ((QAbstractButton*)qthis)->iconSize();
   return new QSize(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 109, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 115, column 10>
 //   // proto:  void QAbstractButton::click();
 // _ZN15QAbstractButton5clickEv click()
 extern "C"
@@ -59,7 +59,7 @@ extern "C"
 void C_ZN15QAbstractButtonD2Ev(void *qthis) {
   delete (QAbstractButton*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 111, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 117, column 10>
 //   // proto:  void QAbstractButton::setChecked(bool );
 // _ZN15QAbstractButton10setCheckedEb setChecked(_Bool)
 extern "C"
@@ -68,7 +68,7 @@ C_ZN15QAbstractButton10setCheckedEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setChecked(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 79, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 85, column 18>
 //   // proto:  QKeySequence QAbstractButton::shortcut();
 // _ZNK15QAbstractButton8shortcutEv shortcut()
 extern "C"
@@ -78,7 +78,7 @@ C_ZNK15QAbstractButton8shortcutEv(void *qthis) {
   ((QAbstractButton*)qthis)->shortcut();
   return new QKeySequence(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 103, column 19>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 109, column 19>
 //   // proto:  QButtonGroup * QAbstractButton::group();
 // _ZNK15QAbstractButton5groupEv group()
 extern "C"
@@ -88,7 +88,7 @@ C_ZNK15QAbstractButton5groupEv(void *qthis) {
   ((QAbstractButton*)qthis)->group();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 89, column 10>
 //   // proto:  bool QAbstractButton::isCheckable();
 // _ZNK15QAbstractButton11isCheckableEv isCheckable()
 extern "C"
@@ -98,14 +98,14 @@ C_ZNK15QAbstractButton11isCheckableEv(void *qthis) {
   ((QAbstractButton*)qthis)->isCheckable();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 66, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 72, column 14>
 //   // proto:  void QAbstractButton::QAbstractButton(QWidget * parent);
 extern "C"
 QAbstractButton*
 C_ZN15QAbstractButtonC2EP7QWidget(QWidget * arg1) {
   // auto ret = new QAbstractButton(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 94, column 10>
 //   // proto:  bool QAbstractButton::isDown();
 // _ZNK15QAbstractButton6isDownEv isDown()
 extern "C"
@@ -115,7 +115,7 @@ C_ZNK15QAbstractButton6isDownEv(void *qthis) {
   ((QAbstractButton*)qthis)->isDown();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 117, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 123, column 10>
 //   // proto:  void QAbstractButton::toggled(bool checked);
 // _ZN15QAbstractButton7toggledEb toggled(_Bool)
 extern "C"
@@ -124,7 +124,7 @@ C_ZN15QAbstractButton7toggledEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->toggled(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 105, column 10>
 //   // proto:  void QAbstractButton::setAutoExclusive(bool );
 // _ZN15QAbstractButton16setAutoExclusiveEb setAutoExclusive(_Bool)
 extern "C"
@@ -133,7 +133,7 @@ C_ZN15QAbstractButton16setAutoExclusiveEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setAutoExclusive(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 55, column 5>
 //   // proto:  const QMetaObject * QAbstractButton::metaObject();
 // _ZNK15QAbstractButton10metaObjectEv metaObject()
 extern "C"
@@ -143,7 +143,7 @@ C_ZNK15QAbstractButton10metaObjectEv(void *qthis) {
   ((QAbstractButton*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 85, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 91, column 10>
 //   // proto:  bool QAbstractButton::isChecked();
 // _ZNK15QAbstractButton9isCheckedEv isChecked()
 extern "C"
@@ -153,7 +153,7 @@ C_ZNK15QAbstractButton9isCheckedEv(void *qthis) {
   ((QAbstractButton*)qthis)->isChecked();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 99, column 10>
 //   // proto:  void QAbstractButton::setAutoRepeatDelay(int );
 // _ZN15QAbstractButton18setAutoRepeatDelayEi setAutoRepeatDelay(int)
 extern "C"
@@ -162,7 +162,7 @@ C_ZN15QAbstractButton18setAutoRepeatDelayEi(void *qthis,
 int arg1) {
   ((QAbstractButton*)qthis)->setAutoRepeatDelay(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 94, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 100, column 9>
 //   // proto:  int QAbstractButton::autoRepeatDelay();
 // _ZNK15QAbstractButton15autoRepeatDelayEv autoRepeatDelay()
 extern "C"
@@ -172,7 +172,7 @@ C_ZNK15QAbstractButton15autoRepeatDelayEv(void *qthis) {
   ((QAbstractButton*)qthis)->autoRepeatDelay();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 106, column 10>
 //   // proto:  bool QAbstractButton::autoExclusive();
 // _ZNK15QAbstractButton13autoExclusiveEv autoExclusive()
 extern "C"
@@ -182,7 +182,7 @@ C_ZNK15QAbstractButton13autoExclusiveEv(void *qthis) {
   ((QAbstractButton*)qthis)->autoExclusive();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 116, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 122, column 10>
 //   // proto:  void QAbstractButton::clicked(bool checked);
 // _ZN15QAbstractButton7clickedEb clicked(_Bool)
 extern "C"
@@ -191,7 +191,7 @@ C_ZN15QAbstractButton7clickedEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->clicked(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 115, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 121, column 10>
 //   // proto:  void QAbstractButton::released();
 // _ZN15QAbstractButton8releasedEv released()
 extern "C"
@@ -199,7 +199,7 @@ void
 C_ZN15QAbstractButton8releasedEv(void *qthis) {
   ((QAbstractButton*)qthis)->released();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 110, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 116, column 10>
 //   // proto:  void QAbstractButton::toggle();
 // _ZN15QAbstractButton6toggleEv toggle()
 extern "C"
@@ -207,7 +207,7 @@ void
 C_ZN15QAbstractButton6toggleEv(void *qthis) {
   ((QAbstractButton*)qthis)->toggle();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 72, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 78, column 10>
 //   // proto:  void QAbstractButton::setIcon(const QIcon & icon);
 // _ZN15QAbstractButton7setIconERK5QIcon setIcon(const class QIcon &)
 extern "C"
@@ -216,7 +216,7 @@ C_ZN15QAbstractButton7setIconERK5QIcon(void *qthis,
 const QIcon* arg1) {
   ((QAbstractButton*)qthis)->setIcon(*((const QIcon*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 96, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 102, column 10>
 //   // proto:  void QAbstractButton::setAutoRepeatInterval(int );
 // _ZN15QAbstractButton21setAutoRepeatIntervalEi setAutoRepeatInterval(int)
 extern "C"
@@ -225,7 +225,7 @@ C_ZN15QAbstractButton21setAutoRepeatIntervalEi(void *qthis,
 int arg1) {
   ((QAbstractButton*)qthis)->setAutoRepeatInterval(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 90, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 96, column 10>
 //   // proto:  void QAbstractButton::setAutoRepeat(bool );
 // _ZN15QAbstractButton13setAutoRepeatEb setAutoRepeat(_Bool)
 extern "C"
@@ -234,7 +234,7 @@ C_ZN15QAbstractButton13setAutoRepeatEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setAutoRepeat(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 108, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 114, column 10>
 //   // proto:  void QAbstractButton::animateClick(int msec);
 // _ZN15QAbstractButton12animateClickEi animateClick(int)
 extern "C"
@@ -243,7 +243,7 @@ C_ZN15QAbstractButton12animateClickEi(void *qthis,
 int arg1) {
   ((QAbstractButton*)qthis)->animateClick(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 87, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 93, column 10>
 //   // proto:  void QAbstractButton::setDown(bool );
 // _ZN15QAbstractButton7setDownEb setDown(_Bool)
 extern "C"
@@ -252,7 +252,7 @@ C_ZN15QAbstractButton7setDownEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setDown(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 70, column 13>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 76, column 13>
 //   // proto:  QString QAbstractButton::text();
 // _ZNK15QAbstractButton4textEv text()
 extern "C"
@@ -262,7 +262,7 @@ C_ZNK15QAbstractButton4textEv(void *qthis) {
   ((QAbstractButton*)qthis)->text();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 84, column 10>
 //   // proto:  void QAbstractButton::setShortcut(const QKeySequence & key);
 // _ZN15QAbstractButton11setShortcutERK12QKeySequence setShortcut(const class QKeySequence &)
 extern "C"
@@ -271,7 +271,7 @@ C_ZN15QAbstractButton11setShortcutERK12QKeySequence(void *qthis,
 const QKeySequence* arg1) {
   ((QAbstractButton*)qthis)->setShortcut(*((const QKeySequence*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 88, column 10>
 //   // proto:  void QAbstractButton::setCheckable(bool );
 // _ZN15QAbstractButton12setCheckableEb setCheckable(_Bool)
 extern "C"
@@ -280,7 +280,7 @@ C_ZN15QAbstractButton12setCheckableEb(void *qthis,
 bool arg1) {
   ((QAbstractButton*)qthis)->setCheckable(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 73, column 11>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 79, column 11>
 //   // proto:  QIcon QAbstractButton::icon();
 // _ZNK15QAbstractButton4iconEv icon()
 extern "C"
@@ -290,7 +290,7 @@ C_ZNK15QAbstractButton4iconEv(void *qthis) {
   ((QAbstractButton*)qthis)->icon();
   return new QIcon(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 75, column 10>
 //   // proto:  void QAbstractButton::setText(const QString & text);
 // _ZN15QAbstractButton7setTextERK7QString setText(const class QString &)
 extern "C"
@@ -299,7 +299,7 @@ C_ZN15QAbstractButton7setTextERK7QString(void *qthis,
 const QString* arg1) {
   ((QAbstractButton*)qthis)->setText(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 97, column 9>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 103, column 9>
 //   // proto:  int QAbstractButton::autoRepeatInterval();
 // _ZNK15QAbstractButton18autoRepeatIntervalEv autoRepeatInterval()
 extern "C"
@@ -309,7 +309,7 @@ C_ZNK15QAbstractButton18autoRepeatIntervalEv(void *qthis) {
   ((QAbstractButton*)qthis)->autoRepeatInterval();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 97, column 10>
 //   // proto:  bool QAbstractButton::autoRepeat();
 // _ZNK15QAbstractButton10autoRepeatEv autoRepeat()
 extern "C"
@@ -319,7 +319,7 @@ C_ZNK15QAbstractButton10autoRepeatEv(void *qthis) {
   ((QAbstractButton*)qthis)->autoRepeat();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 107, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 113, column 10>
 //   // proto:  void QAbstractButton::setIconSize(const QSize & size);
 // _ZN15QAbstractButton11setIconSizeERK5QSize setIconSize(const class QSize &)
 extern "C"
@@ -328,7 +328,7 @@ C_ZN15QAbstractButton11setIconSizeERK5QSize(void *qthis,
 const QSize* arg1) {
   ((QAbstractButton*)qthis)->setIconSize(*((const QSize*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 114, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qabstractbutton.h', line 120, column 10>
 //   // proto:  void QAbstractButton::pressed();
 // _ZN15QAbstractButton7pressedEv pressed()
 extern "C"

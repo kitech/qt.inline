@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qeventloop.h
 // dst-file: /src/core/qeventloop.cxx
 //
@@ -38,7 +38,7 @@ int QEventLoopLocker_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 68, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 74, column 10>
 //   // proto:  void QEventLoop::exit(int returnCode);
 // _ZN10QEventLoop4exitEi exit(int)
 extern "C"
@@ -47,7 +47,7 @@ C_ZN10QEventLoop4exitEi(void *qthis,
 int arg1) {
   ((QEventLoop*)qthis)->exit(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 76, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 82, column 10>
 //   // proto:  void QEventLoop::quit();
 // _ZN10QEventLoop4quitEv quit()
 extern "C"
@@ -55,7 +55,7 @@ void
 C_ZN10QEventLoop4quitEv(void *qthis) {
   ((QEventLoop*)qthis)->quit();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 67, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 73, column 9>
 //   // proto:  int QEventLoop::exec(ProcessEventsFlags flags);
 // _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE exec(ProcessEventsFlags)
 extern "C"
@@ -66,7 +66,7 @@ QEventLoop::ProcessEventsFlags arg1) {
   ((QEventLoop*)qthis)->exec(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 50, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 56, column 14>
 //   // proto:  void QEventLoop::QEventLoop(QObject * parent);
 extern "C"
 QEventLoop*
@@ -74,7 +74,7 @@ C_ZN10QEventLoopC2EP7QObject(QObject * arg1) {
   auto ret = new QEventLoop(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 70, column 10>
 //   // proto:  bool QEventLoop::processEvents(ProcessEventsFlags flags);
 // _ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE processEvents(ProcessEventsFlags)
 extern "C"
@@ -85,7 +85,7 @@ QEventLoop::ProcessEventsFlags arg1) {
   ((QEventLoop*)qthis)->processEvents(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 69, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 75, column 10>
 //   // proto:  bool QEventLoop::isRunning();
 // _ZNK10QEventLoop9isRunningEv isRunning()
 extern "C"
@@ -95,7 +95,7 @@ C_ZNK10QEventLoop9isRunningEv(void *qthis) {
   ((QEventLoop*)qthis)->isRunning();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 46, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 52, column 5>
 //   // proto:  const QMetaObject * QEventLoop::metaObject();
 // _ZNK10QEventLoop10metaObjectEv metaObject()
 extern "C"
@@ -105,7 +105,7 @@ C_ZNK10QEventLoop10metaObjectEv(void *qthis) {
   ((QEventLoop*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 71, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 77, column 10>
 //   // proto:  void QEventLoop::wakeUp();
 // _ZN10QEventLoop6wakeUpEv wakeUp()
 extern "C"
@@ -113,7 +113,7 @@ void
 C_ZN10QEventLoop6wakeUpEv(void *qthis) {
   ((QEventLoop*)qthis)->wakeUp();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 71, column 10>
 //   // proto:  void QEventLoop::processEvents(ProcessEventsFlags flags, int maximumTime);
 // _ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEEi processEvents(ProcessEventsFlags, int)
 extern "C"
@@ -129,7 +129,7 @@ extern "C"
 void C_ZN10QEventLoopD2Ev(void *qthis) {
   delete (QEventLoop*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 73, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 79, column 10>
 //   // proto:  bool QEventLoop::event(QEvent * event);
 // _ZN10QEventLoop5eventEP6QEvent event(class QEvent *)
 extern "C"
@@ -140,7 +140,7 @@ QEvent * arg1) {
   ((QEventLoop*)qthis)->event(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 89, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 95, column 14>
 //   // proto:  void QEventLoopLocker::QEventLoopLocker(QThread * thread);
 extern "C"
 QEventLoopLocker*
@@ -148,7 +148,7 @@ C_ZN16QEventLoopLockerC2EP7QThread(QThread * arg1) {
   auto ret = new QEventLoopLocker(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 88, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 94, column 14>
 //   // proto:  void QEventLoopLocker::QEventLoopLocker(QEventLoop * loop);
 extern "C"
 QEventLoopLocker*
@@ -156,7 +156,7 @@ C_ZN16QEventLoopLockerC2EP10QEventLoop(QEventLoop * arg1) {
   auto ret = new QEventLoopLocker(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 87, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qeventloop.h', line 93, column 5>
 //   // proto:  void QEventLoopLocker::QEventLoopLocker();
 extern "C"
 QEventLoopLocker*

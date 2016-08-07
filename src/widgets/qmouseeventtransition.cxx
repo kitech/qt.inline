@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qmouseeventtransition.h
 // dst-file: /src/widgets/qmouseeventtransition.cxx
 //
@@ -34,7 +34,7 @@ int QMouseEventTransition_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 54, column 5>
 //   // proto:  const QMetaObject * QMouseEventTransition::metaObject();
 // _ZNK21QMouseEventTransition10metaObjectEv metaObject()
 extern "C"
@@ -44,7 +44,7 @@ C_ZNK21QMouseEventTransition10metaObjectEv(void *qthis) {
   ((QMouseEventTransition*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 58, column 5>
 //   // proto:  void QMouseEventTransition::QMouseEventTransition(QState * sourceState);
 extern "C"
 QMouseEventTransition*
@@ -52,7 +52,7 @@ C_ZN21QMouseEventTransitionC2EP6QState(QState * arg1) {
   auto ret = new QMouseEventTransition(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 60, column 27>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 66, column 27>
 //   // proto:  Qt::KeyboardModifiers QMouseEventTransition::modifierMask();
 // _ZNK21QMouseEventTransition12modifierMaskEv modifierMask()
 extern "C"
@@ -62,7 +62,7 @@ C_ZNK21QMouseEventTransition12modifierMaskEv(void *qthis) {
   ((QMouseEventTransition*)qthis)->modifierMask();
   return new QFlags<Qt::KeyboardModifier>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 58, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 64, column 10>
 //   // proto:  void QMouseEventTransition::setButton(Qt::MouseButton button);
 // _ZN21QMouseEventTransition9setButtonEN2Qt11MouseButtonE setButton(Qt::MouseButton)
 extern "C"
@@ -71,7 +71,7 @@ C_ZN21QMouseEventTransition9setButtonEN2Qt11MouseButtonE(void *qthis,
 Qt::MouseButton* arg1) {
   ((QMouseEventTransition*)qthis)->setButton(*((Qt::MouseButton*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 59, column 5>
 //   // proto:  void QMouseEventTransition::QMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState);
 extern "C"
 QMouseEventTransition*
@@ -79,10 +79,13 @@ C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(
 QEvent::Type* arg2,
 Qt::MouseButton* arg3,
 QState * arg4) {
-  auto ret = new QMouseEventTransition(arg1, *((QEvent::Type*)arg2), *((Qt::MouseButton*)arg3), arg4);
+  auto ret = new QMouseEventTransition(arg1,
+*((QEvent::Type*)arg2),
+*((Qt::MouseButton*)arg3),
+arg4);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 61, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 67, column 10>
 //   // proto:  void QMouseEventTransition::setModifierMask(Qt::KeyboardModifiers modifiers);
 // _ZN21QMouseEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE setModifierMask(Qt::KeyboardModifiers)
 extern "C"
@@ -91,7 +94,7 @@ C_ZN21QMouseEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(vo
 Qt::KeyboardModifiers* arg1) {
   ((QMouseEventTransition*)qthis)->setModifierMask(*((Qt::KeyboardModifiers*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 57, column 21>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 63, column 21>
 //   // proto:  Qt::MouseButton QMouseEventTransition::button();
 // _ZNK21QMouseEventTransition6buttonEv button()
 extern "C"
@@ -101,7 +104,7 @@ C_ZNK21QMouseEventTransition6buttonEv(void *qthis) {
   ((QMouseEventTransition*)qthis)->button();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 70, column 10>
 //   // proto:  void QMouseEventTransition::setHitTestPath(const QPainterPath & path);
 // _ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath setHitTestPath(const class QPainterPath &)
 extern "C"
@@ -115,7 +118,7 @@ extern "C"
 void C_ZN21QMouseEventTransitionD2Ev(void *qthis) {
   delete (QMouseEventTransition*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 63, column 18>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qmouseeventtransition.h', line 69, column 18>
 //   // proto:  QPainterPath QMouseEventTransition::hitTestPath();
 // _ZNK21QMouseEventTransition11hitTestPathEv hitTestPath()
 extern "C"

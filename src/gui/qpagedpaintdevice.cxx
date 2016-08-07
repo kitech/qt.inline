@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpagedpaintdevice.h
 // dst-file: /src/gui/qpagedpaintdevice.cxx
 //
@@ -34,7 +34,7 @@ int QPagedPaintDevice_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 221, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 227, column 12>
 //   // proto:  QSizeF QPagedPaintDevice::pageSizeMM();
 // _ZNK17QPagedPaintDevice10pageSizeMMEv pageSizeMM()
 extern "C"
@@ -49,7 +49,7 @@ extern "C"
 void C_ZN17QPagedPaintDeviceD2Ev(void *qthis) {
   delete (QPagedPaintDevice*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 213, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 219, column 10>
 //   // proto:  bool QPagedPaintDevice::setPageMargins(const QMarginsF & margins);
 // _ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsF setPageMargins(const class QMarginsF &)
 extern "C"
@@ -60,7 +60,7 @@ const QMarginsF* arg1) {
   ((QPagedPaintDevice*)qthis)->setPageMargins(*((const QMarginsF*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 231, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 237, column 18>
 //   // proto:  void QPagedPaintDevice::setMargins(const QPagedPaintDevice::Margins & margins);
 // _ZN17QPagedPaintDevice10setMarginsERKNS_7MarginsE setMargins(const struct QPagedPaintDevice::Margins &)
 extern "C"
@@ -69,7 +69,7 @@ C_ZN17QPagedPaintDevice10setMarginsERKNS_7MarginsE(void *qthis,
 const QPagedPaintDevice::Margins* arg1) {
   ((QPagedPaintDevice*)qthis)->setMargins(*((const QPagedPaintDevice::Margins*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 232, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 238, column 13>
 //   // proto:  QPagedPaintDevice::Margins QPagedPaintDevice::margins();
 // _ZNK17QPagedPaintDevice7marginsEv margins()
 extern "C"
@@ -79,7 +79,7 @@ C_ZNK17QPagedPaintDevice7marginsEv(void *qthis) {
   ((QPagedPaintDevice*)qthis)->margins();
   return new QPagedPaintDevice::Margins(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 214, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 220, column 10>
 //   // proto:  bool QPagedPaintDevice::setPageMargins(const QMarginsF & margins, QPageLayout::Unit units);
 // _ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE setPageMargins(const class QMarginsF &, class QPageLayout::Unit)
 extern "C"
@@ -92,7 +92,7 @@ QPageLayout::Unit* arg2) {
 *((QPageLayout::Unit*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 217, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 223, column 18>
 //   // proto:  void QPagedPaintDevice::setPageSize(QPagedPaintDevice::PageSize size);
 // _ZN17QPagedPaintDevice11setPageSizeENS_8PageSizeE setPageSize(enum QPagedPaintDevice::PageSize)
 extern "C"
@@ -101,7 +101,7 @@ C_ZN17QPagedPaintDevice11setPageSizeENS_8PageSizeE(void *qthis,
 QPagedPaintDevice::PageSize arg1) {
   ((QPagedPaintDevice*)qthis)->setPageSize(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 215, column 17>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 221, column 17>
 //   // proto:  QPageLayout QPagedPaintDevice::pageLayout();
 // _ZNK17QPagedPaintDevice10pageLayoutEv pageLayout()
 extern "C"
@@ -111,7 +111,7 @@ C_ZNK17QPagedPaintDevice10pageLayoutEv(void *qthis) {
   ((QPagedPaintDevice*)qthis)->pageLayout();
   return new QPageLayout(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 212, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 218, column 10>
 //   // proto:  bool QPagedPaintDevice::setPageOrientation(QPageLayout::Orientation orientation);
 // _ZN17QPagedPaintDevice18setPageOrientationEN11QPageLayout11OrientationE setPageOrientation(class QPageLayout::Orientation)
 extern "C"
@@ -122,7 +122,7 @@ QPageLayout::Orientation* arg1) {
   ((QPagedPaintDevice*)qthis)->setPageOrientation(*((QPageLayout::Orientation*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 211, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 217, column 10>
 //   // proto:  bool QPagedPaintDevice::setPageSize(const QPageSize & pageSize);
 // _ZN17QPagedPaintDevice11setPageSizeERK9QPageSize setPageSize(const class QPageSize &)
 extern "C"
@@ -133,14 +133,14 @@ const QPageSize* arg1) {
   ((QPagedPaintDevice*)qthis)->setPageSize(*((const QPageSize*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 51, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 57, column 5>
 //   // proto:  void QPagedPaintDevice::QPagedPaintDevice();
 extern "C"
 QPagedPaintDevice*
 C_ZN17QPagedPaintDeviceC2Ev() {
   // auto ret = new QPagedPaintDevice();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 220, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 226, column 18>
 //   // proto:  void QPagedPaintDevice::setPageSizeMM(const QSizeF & size);
 // _ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF setPageSizeMM(const class QSizeF &)
 extern "C"
@@ -149,7 +149,7 @@ C_ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF(void *qthis,
 const QSizeF* arg1) {
   ((QPagedPaintDevice*)qthis)->setPageSizeMM(*((const QSizeF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 210, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 216, column 10>
 //   // proto:  bool QPagedPaintDevice::setPageLayout(const QPageLayout & pageLayout);
 // _ZN17QPagedPaintDevice13setPageLayoutERK11QPageLayout setPageLayout(const class QPageLayout &)
 extern "C"
@@ -160,7 +160,7 @@ const QPageLayout* arg1) {
   ((QPagedPaintDevice*)qthis)->setPageLayout(*((const QPageLayout*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 54, column 18>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 60, column 18>
 //   // proto:  bool QPagedPaintDevice::newPage();
 // _ZN17QPagedPaintDevice7newPageEv newPage()
 extern "C"
@@ -170,7 +170,7 @@ C_ZN17QPagedPaintDevice7newPageEv(void *qthis) {
   ((QPagedPaintDevice*)qthis)->newPage();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 218, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qpagedpaintdevice.h', line 224, column 14>
 //   // proto:  QPagedPaintDevice::PageSize QPagedPaintDevice::pageSize();
 // _ZNK17QPagedPaintDevice8pageSizeEv pageSize()
 extern "C"

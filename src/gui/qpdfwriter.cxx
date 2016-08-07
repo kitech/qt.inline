@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qpdfwriter.h
 // dst-file: /src/gui/qpdfwriter.cxx
 //
@@ -33,7 +33,7 @@ int QPdfWriter_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 86, column 10>
 //   // proto:  void QPdfWriter::setPageSize(QPagedPaintDevice::PageSize size);
 // _ZN10QPdfWriter11setPageSizeEN17QPagedPaintDevice8PageSizeE setPageSize(enum QPagedPaintDevice::PageSize)
 extern "C"
@@ -47,7 +47,7 @@ extern "C"
 void C_ZN10QPdfWriterD2Ev(void *qthis) {
   delete (QPdfWriter*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 62, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 68, column 10>
 //   // proto:  void QPdfWriter::setCreator(const QString & creator);
 // _ZN10QPdfWriter10setCreatorERK7QString setCreator(const class QString &)
 extern "C"
@@ -56,7 +56,7 @@ C_ZN10QPdfWriter10setCreatorERK7QString(void *qthis,
 const QString* arg1) {
   ((QPdfWriter*)qthis)->setCreator(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 81, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 87, column 10>
 //   // proto:  void QPdfWriter::setPageSizeMM(const QSizeF & size);
 // _ZN10QPdfWriter13setPageSizeMMERK6QSizeF setPageSizeMM(const class QSizeF &)
 extern "C"
@@ -65,7 +65,7 @@ C_ZN10QPdfWriter13setPageSizeMMERK6QSizeF(void *qthis,
 const QSizeF* arg1) {
   ((QPdfWriter*)qthis)->setPageSizeMM(*((const QSizeF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 66, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 72, column 10>
 //   // proto:  void QPdfWriter::setResolution(int resolution);
 // _ZN10QPdfWriter13setResolutionEi setResolution(int)
 extern "C"
@@ -74,7 +74,7 @@ C_ZN10QPdfWriter13setResolutionEi(void *qthis,
 int arg1) {
   ((QPdfWriter*)qthis)->setResolution(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 64, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 70, column 10>
 //   // proto:  bool QPdfWriter::newPage();
 // _ZN10QPdfWriter7newPageEv newPage()
 extern "C"
@@ -84,7 +84,7 @@ C_ZN10QPdfWriter7newPageEv(void *qthis) {
   ((QPdfWriter*)qthis)->newPage();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 58, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 64, column 13>
 //   // proto:  QString QPdfWriter::title();
 // _ZNK10QPdfWriter5titleEv title()
 extern "C"
@@ -94,7 +94,7 @@ C_ZNK10QPdfWriter5titleEv(void *qthis) {
   ((QPdfWriter*)qthis)->title();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 61, column 13>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 67, column 13>
 //   // proto:  QString QPdfWriter::creator();
 // _ZNK10QPdfWriter7creatorEv creator()
 extern "C"
@@ -104,7 +104,7 @@ C_ZNK10QPdfWriter7creatorEv(void *qthis) {
   ((QPdfWriter*)qthis)->creator();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 67, column 9>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 73, column 9>
 //   // proto:  int QPdfWriter::resolution();
 // _ZNK10QPdfWriter10resolutionEv resolution()
 extern "C"
@@ -114,7 +114,7 @@ C_ZNK10QPdfWriter10resolutionEv(void *qthis) {
   ((QPdfWriter*)qthis)->resolution();
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 83, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 89, column 10>
 //   // proto:  void QPdfWriter::setMargins(const QPagedPaintDevice::Margins & m);
 // _ZN10QPdfWriter10setMarginsERKN17QPagedPaintDevice7MarginsE setMargins(const struct QPagedPaintDevice::Margins &)
 extern "C"
@@ -123,7 +123,7 @@ C_ZN10QPdfWriter10setMarginsERKN17QPagedPaintDevice7MarginsE(void *qthis,
 const QPagedPaintDevice::Margins* arg1) {
   ((QPdfWriter*)qthis)->setMargins(*((const QPagedPaintDevice::Margins*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 52, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 58, column 5>
 //   // proto:  const QMetaObject * QPdfWriter::metaObject();
 // _ZNK10QPdfWriter10metaObjectEv metaObject()
 extern "C"
@@ -133,7 +133,7 @@ C_ZNK10QPdfWriter10metaObjectEv(void *qthis) {
   ((QPdfWriter*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 54, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 60, column 14>
 //   // proto:  void QPdfWriter::QPdfWriter(const QString & filename);
 extern "C"
 QPdfWriter*
@@ -141,7 +141,7 @@ C_ZN10QPdfWriterC2ERK7QString(const QString* arg1) {
   auto ret = new QPdfWriter(*((const QString*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 55, column 14>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 61, column 14>
 //   // proto:  void QPdfWriter::QPdfWriter(QIODevice * device);
 extern "C"
 QPdfWriter*
@@ -149,7 +149,7 @@ C_ZN10QPdfWriterC2EP9QIODevice(QIODevice * arg1) {
   auto ret = new QPdfWriter(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qpdfwriter.h', line 65, column 10>
 //   // proto:  void QPdfWriter::setTitle(const QString & title);
 // _ZN10QPdfWriter8setTitleERK7QString setTitle(const class QString &)
 extern "C"

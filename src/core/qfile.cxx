@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qfile.h
 // dst-file: /src/core/qfile.cxx
 //
@@ -22,7 +22,7 @@
 
 // main block begin =>
 void __keep_qfile_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 104, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 111, column 20>
 //   // proto:  QString QFile::symLinkTarget();
 if (true) {
   auto f = [](QFile flythis) {
@@ -32,7 +32,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK5QFile13symLinkTargetEv symLinkTarget()
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 80, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 87, column 30>
 //   // proto: static QByteArray QFile::encodeName(const QString & fileName);
 if (true) {
   auto f = [](QFile flythis, const QString & arg1) {
@@ -42,7 +42,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QFile10encodeNameERK7QString encodeName(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 84, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 91, column 20>
 //   // proto: static QString QFile::decodeName(const QByteArray & localFileName);
 if (true) {
   auto f = [](QFile flythis, const QByteArray & arg1) {
@@ -52,7 +52,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QFile10decodeNameERK10QByteArray decodeName(const class QByteArray &)
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 89, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 96, column 27>
 //   // proto: static QString QFile::decodeName(const char * localFileName);
 if (true) {
   auto f = [](QFile flythis, const char * arg1) {
@@ -62,7 +62,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN5QFile10decodeNameEPKc decodeName(const char *)
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 105, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 112, column 27>
 //   // proto: static QString QFile::symLinkTarget(const QString & fileName);
 if (true) {
   auto f = [](QFile flythis, const QString & arg1) {
@@ -86,7 +86,7 @@ int QFile_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 104, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 111, column 20>
 //   // proto:  QString QFile::symLinkTarget();
 // _ZNK5QFile13symLinkTargetEv symLinkTarget()
 extern "C"
@@ -96,7 +96,7 @@ C_ZNK5QFile13symLinkTargetEv(void *qthis) {
   ((QFile*)qthis)->symLinkTarget();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 58, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 65, column 5>
 //   // proto:  void QFile::QFile();
 extern "C"
 QFile*
@@ -104,7 +104,7 @@ C_ZN5QFileC2Ev() {
   auto ret = new QFile();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 61, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 68, column 14>
 //   // proto:  void QFile::QFile(QObject * parent);
 extern "C"
 QFile*
@@ -112,7 +112,7 @@ C_ZN5QFileC2EP7QObject(QObject * arg1) {
   auto ret = new QFile(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 114, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 121, column 17>
 //   // proto: static bool QFile::link(const QString & oldname, const QString & newName);
 // _ZN5QFile4linkERK7QStringS2_ link(const class QString &, const class QString &)
 extern "C"
@@ -124,7 +124,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 111, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 118, column 17>
 //   // proto: static bool QFile::rename(const QString & oldName, const QString & newName);
 // _ZN5QFile6renameERK7QStringS2_ rename(const class QString &, const class QString &)
 extern "C"
@@ -136,7 +136,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 113, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 120, column 10>
 //   // proto:  bool QFile::link(const QString & newName);
 // _ZN5QFile4linkERK7QString link(const class QString &)
 extern "C"
@@ -147,7 +147,7 @@ const QString* arg1) {
   ((QFile*)qthis)->link(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 126, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 133, column 17>
 //   // proto: static bool QFile::resize(const QString & filename, qint64 sz);
 // _ZN5QFile6resizeERK7QStringx resize(const class QString &, qint64)
 extern "C"
@@ -159,7 +159,7 @@ qint64 arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 100, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 107, column 17>
 //   // proto: static bool QFile::exists(const QString & fileName);
 // _ZN5QFile6existsERK7QString exists(const class QString &)
 extern "C"
@@ -174,7 +174,7 @@ extern "C"
 void C_ZN5QFileD2Ev(void *qthis) {
   delete (QFile*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 128, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 135, column 17>
 //   // proto:  Permissions QFile::permissions();
 // _ZNK5QFile11permissionsEv permissions()
 extern "C"
@@ -184,7 +184,7 @@ C_ZNK5QFile11permissionsEv(void *qthis) {
   ((QFile*)qthis)->permissions();
   return new QFlags<QFileDevice::Permission>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 117, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 124, column 17>
 //   // proto: static bool QFile::copy(const QString & fileName, const QString & newName);
 // _ZN5QFile4copyERK7QStringS2_ copy(const class QString &, const class QString &)
 extern "C"
@@ -196,7 +196,7 @@ const QString* arg2) {
 *((const QString*)arg2));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 103, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 110, column 20>
 //   // proto: static QString QFile::readLink(const QString & fileName);
 // _ZN5QFile8readLinkERK7QString readLink(const class QString &)
 extern "C"
@@ -206,7 +206,7 @@ C_ZN5QFile8readLinkERK7QString(const QString* arg1) {
   QFile::readLink(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 106, column 10>
 //   // proto:  bool QFile::exists();
 // _ZNK5QFile6existsEv exists()
 extern "C"
@@ -216,7 +216,7 @@ C_ZNK5QFile6existsEv(void *qthis) {
   ((QFile*)qthis)->exists();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 123, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 130, column 12>
 //   // proto:  qint64 QFile::size();
 // _ZNK5QFile4sizeEv size()
 extern "C"
@@ -226,7 +226,7 @@ C_ZNK5QFile4sizeEv(void *qthis) {
   ((QFile*)qthis)->size();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 125, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 132, column 10>
 //   // proto:  bool QFile::resize(qint64 sz);
 // _ZN5QFile6resizeEx resize(qint64)
 extern "C"
@@ -237,7 +237,7 @@ qint64 arg1) {
   ((QFile*)qthis)->resize(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 67, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 74, column 10>
 //   // proto:  void QFile::setFileName(const QString & name);
 // _ZN5QFile11setFileNameERK7QString setFileName(const class QString &)
 extern "C"
@@ -246,7 +246,7 @@ C_ZN5QFile11setFileNameERK7QString(void *qthis,
 const QString* arg1) {
   ((QFile*)qthis)->setFileName(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 130, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 137, column 10>
 //   // proto:  bool QFile::setPermissions(Permissions permissionSpec);
 // _ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE setPermissions(Permissions)
 extern "C"
@@ -257,7 +257,7 @@ QFileDevice::Permissions arg1) {
   ((QFile*)qthis)->setPermissions(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 107, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 114, column 10>
 //   // proto:  bool QFile::remove();
 // _ZN5QFile6removeEv remove()
 extern "C"
@@ -267,7 +267,7 @@ C_ZN5QFile6removeEv(void *qthis) {
   ((QFile*)qthis)->remove();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 119, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 126, column 10>
 //   // proto:  bool QFile::open(OpenMode flags);
 // _ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE open(OpenMode)
 extern "C"
@@ -278,7 +278,7 @@ QIODevice::OpenMode arg1) {
   ((QFile*)qthis)->open(arg1);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 116, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 123, column 10>
 //   // proto:  bool QFile::copy(const QString & newName);
 // _ZN5QFile4copyERK7QString copy(const class QString &)
 extern "C"
@@ -289,7 +289,7 @@ const QString* arg1) {
   ((QFile*)qthis)->copy(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 80, column 30>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 87, column 30>
 //   // proto: static QByteArray QFile::encodeName(const QString & fileName);
 // _ZN5QFile10encodeNameERK7QString encodeName(const class QString &)
 extern "C"
@@ -299,7 +299,7 @@ C_ZN5QFile10encodeNameERK7QString(const QString* arg1) {
   QFile::encodeName(*((const QString*)arg1));
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 131, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 138, column 17>
 //   // proto: static bool QFile::setPermissions(const QString & filename, Permissions permissionSpec);
 // _ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE setPermissions(const class QString &, Permissions)
 extern "C"
@@ -311,7 +311,7 @@ QFileDevice::Permissions arg2) {
 arg2);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 120, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 127, column 10>
 //   // proto:  bool QFile::open(FILE * f, OpenMode ioFlags, FileHandleFlags handleFlags);
 // _ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDevice14FileHandleFlagEE open(FILE *, OpenMode, FileHandleFlags)
 extern "C"
@@ -326,7 +326,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 84, column 20>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 91, column 20>
 //   // proto: static QString QFile::decodeName(const QByteArray & localFileName);
 // _ZN5QFile10decodeNameERK10QByteArray decodeName(const class QByteArray &)
 extern "C"
@@ -336,7 +336,7 @@ C_ZN5QFile10decodeNameERK10QByteArray(const QByteArray* arg1) {
   QFile::decodeName(*((const QByteArray*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 110, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 117, column 10>
 //   // proto:  bool QFile::rename(const QString & newName);
 // _ZN5QFile6renameERK7QString rename(const class QString &)
 extern "C"
@@ -347,7 +347,7 @@ const QString* arg1) {
   ((QFile*)qthis)->rename(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 66, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 73, column 13>
 //   // proto:  QString QFile::fileName();
 // _ZNK5QFile8fileNameEv fileName()
 extern "C"
@@ -357,7 +357,7 @@ C_ZNK5QFile8fileNameEv(void *qthis) {
   ((QFile*)qthis)->fileName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 89, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 96, column 27>
 //   // proto: static QString QFile::decodeName(const char * localFileName);
 // _ZN5QFile10decodeNameEPKc decodeName(const char *)
 extern "C"
@@ -367,7 +367,7 @@ C_ZN5QFile10decodeNameEPKc(const char * arg1) {
   QFile::decodeName(arg1);
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 60, column 5>
 //   // proto:  const QMetaObject * QFile::metaObject();
 // _ZNK5QFile10metaObjectEv metaObject()
 extern "C"
@@ -377,7 +377,7 @@ C_ZNK5QFile10metaObjectEv(void *qthis) {
   ((QFile*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 129, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 136, column 24>
 //   // proto: static Permissions QFile::permissions(const QString & filename);
 // _ZN5QFile11permissionsERK7QString permissions(const class QString &)
 extern "C"
@@ -387,16 +387,17 @@ C_ZN5QFile11permissionsERK7QString(const QString* arg1) {
   QFile::permissions(*((const QString*)arg1));
   return new QFlags<QFileDevice::Permission>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 62, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 69, column 5>
 //   // proto:  void QFile::QFile(const QString & name, QObject * parent);
 extern "C"
 QFile*
 C_ZN5QFileC2ERK7QStringP7QObject(const QString* arg1,
 QObject * arg2) {
-  auto ret = new QFile(*((const QString*)arg1), arg2);
+  auto ret = new QFile(*((const QString*)arg1),
+arg2);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 105, column 27>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 112, column 27>
 //   // proto: static QString QFile::symLinkTarget(const QString & fileName);
 // _ZN5QFile13symLinkTargetERK7QString symLinkTarget(const class QString &)
 extern "C"
@@ -406,7 +407,7 @@ C_ZN5QFile13symLinkTargetERK7QString(const QString* arg1) {
   QFile::symLinkTarget(*((const QString*)arg1));
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 121, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 128, column 10>
 //   // proto:  bool QFile::open(int fd, OpenMode ioFlags, FileHandleFlags handleFlags);
 // _ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14FileHandleFlagEE open(int, OpenMode, FileHandleFlags)
 extern "C"
@@ -421,7 +422,7 @@ arg2,
 arg3);
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 108, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 115, column 17>
 //   // proto: static bool QFile::remove(const QString & fileName);
 // _ZN5QFile6removeERK7QString remove(const class QString &)
 extern "C"
@@ -431,7 +432,7 @@ C_ZN5QFile6removeERK7QString(const QString* arg1) {
   QFile::remove(*((const QString*)arg1));
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 59, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 66, column 5>
 //   // proto:  void QFile::QFile(const QString & name);
 extern "C"
 QFile*
@@ -439,7 +440,7 @@ C_ZN5QFileC2ERK7QString(const QString* arg1) {
   auto ret = new QFile(*((const QString*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 102, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qfile.h', line 109, column 13>
 //   // proto:  QString QFile::readLink();
 // _ZNK5QFile8readLinkEv readLink()
 extern "C"

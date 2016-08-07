@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qwidgetaction.h
 // dst-file: /src/widgets/qwidgetaction.cxx
 //
@@ -32,7 +32,7 @@ int QWidgetAction_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 48, column 5>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 54, column 5>
 //   // proto:  const QMetaObject * QWidgetAction::metaObject();
 // _ZNK13QWidgetAction10metaObjectEv metaObject()
 extern "C"
@@ -47,7 +47,7 @@ extern "C"
 void C_ZN13QWidgetActionD2Ev(void *qthis) {
   delete (QWidgetAction*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 55, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 61, column 10>
 //   // proto:  void QWidgetAction::setDefaultWidget(QWidget * w);
 // _ZN13QWidgetAction16setDefaultWidgetEP7QWidget setDefaultWidget(class QWidget *)
 extern "C"
@@ -56,7 +56,7 @@ C_ZN13QWidgetAction16setDefaultWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QWidgetAction*)qthis)->setDefaultWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 59, column 10>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 65, column 10>
 //   // proto:  void QWidgetAction::releaseWidget(QWidget * widget);
 // _ZN13QWidgetAction13releaseWidgetEP7QWidget releaseWidget(class QWidget *)
 extern "C"
@@ -65,7 +65,7 @@ C_ZN13QWidgetAction13releaseWidgetEP7QWidget(void *qthis,
 QWidget * arg1) {
   ((QWidgetAction*)qthis)->releaseWidget(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 58, column 14>
 //   // proto:  void QWidgetAction::QWidgetAction(QObject * parent);
 extern "C"
 QWidgetAction*
@@ -73,7 +73,7 @@ C_ZN13QWidgetActionC2EP7QObject(QObject * arg1) {
   auto ret = new QWidgetAction(arg1);
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 58, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 64, column 14>
 //   // proto:  QWidget * QWidgetAction::requestWidget(QWidget * parent);
 // _ZN13QWidgetAction13requestWidgetEP7QWidget requestWidget(class QWidget *)
 extern "C"
@@ -84,7 +84,7 @@ QWidget * arg1) {
   ((QWidgetAction*)qthis)->requestWidget(arg1);
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 56, column 14>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qwidgetaction.h', line 62, column 14>
 //   // proto:  QWidget * QWidgetAction::defaultWidget();
 // _ZNK13QWidgetAction13defaultWidgetEv defaultWidget()
 extern "C"

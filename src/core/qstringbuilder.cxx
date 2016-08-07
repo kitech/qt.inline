@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qstringbuilder.h
 // dst-file: /src/core/qstringbuilder.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qstringbuilder_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 232, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 238, column 24>
 //   // proto: static void QConcatenable<QLatin1String>::appendTo(const QLatin1String a, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QLatin1String> flythis, const QLatin1String arg1, QChar *& arg2) {
@@ -28,7 +28,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI13QLatin1StringE8appendToES0_RP5QChar appendTo(const class QLatin1String, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 231, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 237, column 16>
 //   // proto: static int QConcatenable<QLatin1String>::size(const QLatin1String a);
 if (true) {
   auto f = [](QConcatenable<QLatin1String> flythis, const QLatin1String arg1) {
@@ -38,7 +38,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI13QLatin1StringE4sizeES0_ size(const class QLatin1String)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 237, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 243, column 24>
 //   // proto: static void QConcatenable<QLatin1String>::appendTo(const QLatin1String a, char *& out);
 if (true) {
   auto f = [](QConcatenable<QLatin1String> flythis, const QLatin1String arg1, char *& arg2) {
@@ -48,7 +48,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI13QLatin1StringE8appendToES0_RPc appendTo(const class QLatin1String, char *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 222, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 228, column 24>
 //   // proto: static void QConcatenable<QCharRef>::appendTo(QCharRef c, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QCharRef> flythis, QCharRef arg1, QChar *& arg2) {
@@ -58,7 +58,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI8QCharRefE8appendToES0_RP5QChar appendTo(class QCharRef, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 221, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 227, column 16>
 //   // proto: static int QConcatenable<QCharRef>::size(QCharRef );
 if (true) {
   auto f = [](QConcatenable<QCharRef> flythis, QCharRef arg1) {
@@ -68,7 +68,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI8QCharRefE4sizeES0_ size(class QCharRef)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 265, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 271, column 16>
 //   // proto: static int QConcatenable<QStringRef>::size(const QStringRef & a);
 if (true) {
   auto f = [](QConcatenable<QStringRef> flythis, const QStringRef & arg1) {
@@ -78,7 +78,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI10QStringRefE4sizeERKS0_ size(const class QStringRef &)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 266, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 272, column 24>
 //   // proto: static void QConcatenable<QStringRef>::appendTo(const QStringRef & a, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QStringRef> flythis, const QStringRef & arg1, QChar *& arg2) {
@@ -88,7 +88,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI10QStringRefE8appendToERKS0_RP5QChar appendTo(const class QStringRef &, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 251, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 257, column 16>
 //   // proto: static int QConcatenable<QString>::size(const QString & a);
 if (true) {
   auto f = [](QConcatenable<QString> flythis, const QString & arg1) {
@@ -98,7 +98,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI7QStringE4sizeERKS0_ size(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 252, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 258, column 24>
 //   // proto: static void QConcatenable<QString>::appendTo(const QString & a, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QString> flythis, const QString & arg1, QChar *& arg2) {
@@ -108,7 +108,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI7QStringE8appendToERKS0_RP5QChar appendTo(const class QString &, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 190, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 196, column 24>
 //   // proto: static void QConcatenable<QLatin1Char>::appendTo(const QLatin1Char c, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QLatin1Char> flythis, const QLatin1Char arg1, QChar *& arg2) {
@@ -118,7 +118,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI11QLatin1CharE8appendToES0_RP5QChar appendTo(const struct QLatin1Char, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 192, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 198, column 24>
 //   // proto: static void QConcatenable<QLatin1Char>::appendTo(const QLatin1Char c, char *& out);
 if (true) {
   auto f = [](QConcatenable<QLatin1Char> flythis, const QLatin1Char arg1, char *& arg2) {
@@ -128,7 +128,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI11QLatin1CharE8appendToES0_RPc appendTo(const struct QLatin1Char, char *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 189, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 195, column 16>
 //   // proto: static int QConcatenable<QLatin1Char>::size(const QLatin1Char );
 if (true) {
   auto f = [](QConcatenable<QLatin1Char> flythis, const QLatin1Char arg1) {
@@ -138,7 +138,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI11QLatin1CharE4sizeES0_ size(const struct QLatin1Char)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 175, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 181, column 43>
 //   // proto: static void QConcatenable<char>::appendTo(const char c, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<char> flythis, const char arg1, QChar *& arg2) {
@@ -148,7 +148,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIcE8appendToEcRP5QChar appendTo(const char, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 173, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 179, column 16>
 //   // proto: static int QConcatenable<char>::size(const char );
 if (true) {
   auto f = [](QConcatenable<char> flythis, const char arg1) {
@@ -158,7 +158,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIcE4sizeEc size(const char)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 180, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 186, column 24>
 //   // proto: static void QConcatenable<char>::appendTo(const char c, char *& out);
 if (true) {
   auto f = [](QConcatenable<char> flythis, const char arg1, char *& arg2) {
@@ -168,7 +168,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIcE8appendToEcRPc appendTo(const char, char *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 338, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 344, column 43>
 //   // proto: static void QConcatenable<QByteArray>::appendTo(const QByteArray & ba, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QByteArray> flythis, const QByteArray & arg1, QChar *& arg2) {
@@ -178,7 +178,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar appendTo(const class QByteArray &, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 343, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 349, column 24>
 //   // proto: static void QConcatenable<QByteArray>::appendTo(const QByteArray & ba, char *& out);
 if (true) {
   auto f = [](QConcatenable<QByteArray> flythis, const QByteArray & arg1, char *& arg2) {
@@ -188,7 +188,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI10QByteArrayE8appendToERKS0_RPc appendTo(const class QByteArray &, char *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 336, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 342, column 16>
 //   // proto: static int QConcatenable<QByteArray>::size(const QByteArray & ba);
 if (true) {
   auto f = [](QConcatenable<QByteArray> flythis, const QByteArray & arg1) {
@@ -198,7 +198,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI10QByteArrayE4sizeERKS0_ size(const class QByteArray &)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 212, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 218, column 24>
 //   // proto: static void QConcatenable<QChar::SpecialCharacter>::appendTo(const QChar::SpecialCharacter c, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QChar::SpecialCharacter> flythis, const QChar::SpecialCharacter arg1, QChar *& arg2) {
@@ -208,7 +208,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIN5QChar16SpecialCharacterEE8appendToES1_RPS0_ appendTo(const class QChar::SpecialCharacter, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 211, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 217, column 16>
 //   // proto: static int QConcatenable<QChar::SpecialCharacter>::size(const QChar::SpecialCharacter );
 if (true) {
   auto f = [](QConcatenable<QChar::SpecialCharacter> flythis, const QChar::SpecialCharacter arg1) {
@@ -218,7 +218,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIN5QChar16SpecialCharacterEE4sizeES1_ size(const class QChar::SpecialCharacter)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 201, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 207, column 16>
 //   // proto: static int QConcatenable<QChar>::size(const QChar );
 if (true) {
   auto f = [](QConcatenable<QChar> flythis, const QChar arg1) {
@@ -228,7 +228,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI5QCharE4sizeES0_ size(const class QChar)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 202, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 208, column 24>
 //   // proto: static void QConcatenable<QChar>::appendTo(const QChar c, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<QChar> flythis, const QChar arg1, QChar *& arg2) {
@@ -238,7 +238,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableI5QCharE8appendToES0_RPS0_ appendTo(const class QChar, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 154, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 160, column 9>
 //   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QByteArray & a_, const QByteArray & b_);
 if (true) {
   auto f = [](const QByteArray & arg1, const QByteArray & arg2) {
@@ -246,7 +246,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 155, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 161, column 9>
 //   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QStringBuilder<QByteArray, QByteArray> & other);
 if (true) {
   auto f = [](const QStringBuilder<QByteArray, QByteArray> & arg1) {
@@ -254,7 +254,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 319, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 325, column 43>
 //   // proto: static void QConcatenable<const char *>::appendTo(const char * a, QChar *& out);
 if (true) {
   auto f = [](QConcatenable<const char *> flythis, const char * arg1, QChar *& arg2) {
@@ -264,7 +264,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIPKcE8appendToES1_RP5QChar appendTo(const char *, class QChar *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 322, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 328, column 24>
 //   // proto: static void QConcatenable<const char *>::appendTo(const char * a, char *& out);
 if (true) {
   auto f = [](QConcatenable<const char *> flythis, const char * arg1, char *& arg2) {
@@ -274,7 +274,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIPKcE8appendToES1_RPc appendTo(const char *, char *&)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 317, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 323, column 16>
 //   // proto: static int QConcatenable<const char *>::size(const char * a);
 if (true) {
   auto f = [](QConcatenable<const char *> flythis, const char * arg1) {
@@ -284,7 +284,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZN13QConcatenableIPKcE4sizeES1_ size(const char *)
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 138, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 144, column 9>
 //   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QStringBuilder<QString, QString> & other);
 if (true) {
   auto f = [](const QStringBuilder<QString, QString> & arg1) {
@@ -292,7 +292,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 137, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 143, column 9>
 //   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QString & a_, const QString & b_);
 if (true) {
   auto f = [](const QString & arg1, const QString & arg2) {
@@ -386,7 +386,7 @@ int QStringBuilder_QString__QString__Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 232, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 238, column 24>
 //   // proto: static void QConcatenable<QLatin1String>::appendTo(const QLatin1String a, QChar *& out);
 // _ZN13QConcatenableI13QLatin1StringE8appendToES0_RP5QChar appendTo(const class QLatin1String, class QChar *&)
 extern "C"
@@ -396,7 +396,7 @@ QChar ** arg2) {
   QConcatenable<QLatin1String>::appendTo(*((const QLatin1String*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 231, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 237, column 16>
 //   // proto: static int QConcatenable<QLatin1String>::size(const QLatin1String a);
 // _ZN13QConcatenableI13QLatin1StringE4sizeES0_ size(const class QLatin1String)
 extern "C"
@@ -406,7 +406,7 @@ C_ZN13QConcatenableI13QLatin1StringE4sizeES0_(const QLatin1String* arg1) {
   QConcatenable<QLatin1String>::size(*((const QLatin1String*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 237, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 243, column 24>
 //   // proto: static void QConcatenable<QLatin1String>::appendTo(const QLatin1String a, char *& out);
 // _ZN13QConcatenableI13QLatin1StringE8appendToES0_RPc appendTo(const class QLatin1String, char *&)
 extern "C"
@@ -416,7 +416,7 @@ char ** arg2) {
   QConcatenable<QLatin1String>::appendTo(*((const QLatin1String*)arg1),
 *((char **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 222, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 228, column 24>
 //   // proto: static void QConcatenable<QCharRef>::appendTo(QCharRef c, QChar *& out);
 // _ZN13QConcatenableI8QCharRefE8appendToES0_RP5QChar appendTo(class QCharRef, class QChar *&)
 extern "C"
@@ -426,7 +426,7 @@ QChar ** arg2) {
   QConcatenable<QCharRef>::appendTo(*((QCharRef*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 221, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 227, column 16>
 //   // proto: static int QConcatenable<QCharRef>::size(QCharRef );
 // _ZN13QConcatenableI8QCharRefE4sizeES0_ size(class QCharRef)
 extern "C"
@@ -436,7 +436,7 @@ C_ZN13QConcatenableI8QCharRefE4sizeES0_(QCharRef* arg1) {
   QConcatenable<QCharRef>::size(*((QCharRef*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 265, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 271, column 16>
 //   // proto: static int QConcatenable<QStringRef>::size(const QStringRef & a);
 // _ZN13QConcatenableI10QStringRefE4sizeERKS0_ size(const class QStringRef &)
 extern "C"
@@ -446,7 +446,7 @@ C_ZN13QConcatenableI10QStringRefE4sizeERKS0_(const QStringRef* arg1) {
   QConcatenable<QStringRef>::size(*((const QStringRef*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 266, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 272, column 24>
 //   // proto: static void QConcatenable<QStringRef>::appendTo(const QStringRef & a, QChar *& out);
 // _ZN13QConcatenableI10QStringRefE8appendToERKS0_RP5QChar appendTo(const class QStringRef &, class QChar *&)
 extern "C"
@@ -456,7 +456,7 @@ QChar ** arg2) {
   QConcatenable<QStringRef>::appendTo(*((const QStringRef*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 251, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 257, column 16>
 //   // proto: static int QConcatenable<QString>::size(const QString & a);
 // _ZN13QConcatenableI7QStringE4sizeERKS0_ size(const class QString &)
 extern "C"
@@ -466,7 +466,7 @@ C_ZN13QConcatenableI7QStringE4sizeERKS0_(const QString* arg1) {
   QConcatenable<QString>::size(*((const QString*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 252, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 258, column 24>
 //   // proto: static void QConcatenable<QString>::appendTo(const QString & a, QChar *& out);
 // _ZN13QConcatenableI7QStringE8appendToERKS0_RP5QChar appendTo(const class QString &, class QChar *&)
 extern "C"
@@ -476,7 +476,7 @@ QChar ** arg2) {
   QConcatenable<QString>::appendTo(*((const QString*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 190, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 196, column 24>
 //   // proto: static void QConcatenable<QLatin1Char>::appendTo(const QLatin1Char c, QChar *& out);
 // _ZN13QConcatenableI11QLatin1CharE8appendToES0_RP5QChar appendTo(const struct QLatin1Char, class QChar *&)
 extern "C"
@@ -486,7 +486,7 @@ QChar ** arg2) {
   QConcatenable<QLatin1Char>::appendTo(*((const QLatin1Char*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 192, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 198, column 24>
 //   // proto: static void QConcatenable<QLatin1Char>::appendTo(const QLatin1Char c, char *& out);
 // _ZN13QConcatenableI11QLatin1CharE8appendToES0_RPc appendTo(const struct QLatin1Char, char *&)
 extern "C"
@@ -496,7 +496,7 @@ char ** arg2) {
   QConcatenable<QLatin1Char>::appendTo(*((const QLatin1Char*)arg1),
 *((char **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 189, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 195, column 16>
 //   // proto: static int QConcatenable<QLatin1Char>::size(const QLatin1Char );
 // _ZN13QConcatenableI11QLatin1CharE4sizeES0_ size(const struct QLatin1Char)
 extern "C"
@@ -506,7 +506,7 @@ C_ZN13QConcatenableI11QLatin1CharE4sizeES0_(const QLatin1Char* arg1) {
   QConcatenable<QLatin1Char>::size(*((const QLatin1Char*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 175, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 181, column 43>
 //   // proto: static void QConcatenable<char>::appendTo(const char c, QChar *& out);
 // _ZN13QConcatenableIcE8appendToEcRP5QChar appendTo(const char, class QChar *&)
 extern "C"
@@ -516,7 +516,7 @@ QChar ** arg2) {
   QConcatenable<char>::appendTo(arg1,
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 173, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 179, column 16>
 //   // proto: static int QConcatenable<char>::size(const char );
 // _ZN13QConcatenableIcE4sizeEc size(const char)
 extern "C"
@@ -526,7 +526,7 @@ C_ZN13QConcatenableIcE4sizeEc(const char arg1) {
   QConcatenable<char>::size(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 180, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 186, column 24>
 //   // proto: static void QConcatenable<char>::appendTo(const char c, char *& out);
 // _ZN13QConcatenableIcE8appendToEcRPc appendTo(const char, char *&)
 extern "C"
@@ -536,7 +536,7 @@ char ** arg2) {
   QConcatenable<char>::appendTo(arg1,
 *((char **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 338, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 344, column 43>
 //   // proto: static void QConcatenable<QByteArray>::appendTo(const QByteArray & ba, QChar *& out);
 // _ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar appendTo(const class QByteArray &, class QChar *&)
 extern "C"
@@ -546,7 +546,7 @@ QChar ** arg2) {
   QConcatenable<QByteArray>::appendTo(*((const QByteArray*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 343, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 349, column 24>
 //   // proto: static void QConcatenable<QByteArray>::appendTo(const QByteArray & ba, char *& out);
 // _ZN13QConcatenableI10QByteArrayE8appendToERKS0_RPc appendTo(const class QByteArray &, char *&)
 extern "C"
@@ -556,7 +556,7 @@ char ** arg2) {
   QConcatenable<QByteArray>::appendTo(*((const QByteArray*)arg1),
 *((char **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 336, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 342, column 16>
 //   // proto: static int QConcatenable<QByteArray>::size(const QByteArray & ba);
 // _ZN13QConcatenableI10QByteArrayE4sizeERKS0_ size(const class QByteArray &)
 extern "C"
@@ -566,7 +566,7 @@ C_ZN13QConcatenableI10QByteArrayE4sizeERKS0_(const QByteArray* arg1) {
   QConcatenable<QByteArray>::size(*((const QByteArray*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 212, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 218, column 24>
 //   // proto: static void QConcatenable<QChar::SpecialCharacter>::appendTo(const QChar::SpecialCharacter c, QChar *& out);
 // _ZN13QConcatenableIN5QChar16SpecialCharacterEE8appendToES1_RPS0_ appendTo(const class QChar::SpecialCharacter, class QChar *&)
 extern "C"
@@ -576,7 +576,7 @@ QChar ** arg2) {
   QConcatenable<QChar::SpecialCharacter>::appendTo(*((const QChar::SpecialCharacter*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 211, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 217, column 16>
 //   // proto: static int QConcatenable<QChar::SpecialCharacter>::size(const QChar::SpecialCharacter );
 // _ZN13QConcatenableIN5QChar16SpecialCharacterEE4sizeES1_ size(const class QChar::SpecialCharacter)
 extern "C"
@@ -586,7 +586,7 @@ C_ZN13QConcatenableIN5QChar16SpecialCharacterEE4sizeES1_(const QChar::SpecialCha
   QConcatenable<QChar::SpecialCharacter>::size(*((const QChar::SpecialCharacter*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 201, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 207, column 16>
 //   // proto: static int QConcatenable<QChar>::size(const QChar );
 // _ZN13QConcatenableI5QCharE4sizeES0_ size(const class QChar)
 extern "C"
@@ -596,7 +596,7 @@ C_ZN13QConcatenableI5QCharE4sizeES0_(const QChar* arg1) {
   QConcatenable<QChar>::size(*((const QChar*)arg1));
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 202, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 208, column 24>
 //   // proto: static void QConcatenable<QChar>::appendTo(const QChar c, QChar *& out);
 // _ZN13QConcatenableI5QCharE8appendToES0_RPS0_ appendTo(const class QChar, class QChar *&)
 extern "C"
@@ -606,16 +606,17 @@ QChar ** arg2) {
   QConcatenable<QChar>::appendTo(*((const QChar*)arg1),
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 154, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 160, column 9>
 //   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QByteArray & a_, const QByteArray & b_);
 extern "C"
 QStringBuilder<QByteArray, QByteArray>*
 C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS0_S3_(const QByteArray* arg1,
 const QByteArray* arg2) {
-  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QByteArray*)arg1), *((const QByteArray*)arg2));
+  auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QByteArray*)arg1),
+*((const QByteArray*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 155, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 161, column 9>
 //   // proto:  void QStringBuilder<QByteArray, QByteArray>::QStringBuilder(const QStringBuilder<QByteArray, QByteArray> & other);
 extern "C"
 QStringBuilder<QByteArray, QByteArray>*
@@ -623,7 +624,7 @@ C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS1_(const QStringBuilder<QByteArray, Q
   auto ret = new QStringBuilder<QByteArray, QByteArray>(*((const QStringBuilder<QByteArray, QByteArray>*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 319, column 43>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 325, column 43>
 //   // proto: static void QConcatenable<const char *>::appendTo(const char * a, QChar *& out);
 // _ZN13QConcatenableIPKcE8appendToES1_RP5QChar appendTo(const char *, class QChar *&)
 extern "C"
@@ -633,7 +634,7 @@ QChar ** arg2) {
   QConcatenable<const char *>::appendTo(arg1,
 *((QChar **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 322, column 24>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 328, column 24>
 //   // proto: static void QConcatenable<const char *>::appendTo(const char * a, char *& out);
 // _ZN13QConcatenableIPKcE8appendToES1_RPc appendTo(const char *, char *&)
 extern "C"
@@ -643,7 +644,7 @@ char ** arg2) {
   QConcatenable<const char *>::appendTo(arg1,
 *((char **)arg2));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 317, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 323, column 16>
 //   // proto: static int QConcatenable<const char *>::size(const char * a);
 // _ZN13QConcatenableIPKcE4sizeES1_ size(const char *)
 extern "C"
@@ -653,7 +654,7 @@ C_ZN13QConcatenableIPKcE4sizeES1_(const char * arg1) {
   QConcatenable<const char *>::size(arg1);
   return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 138, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 144, column 9>
 //   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QStringBuilder<QString, QString> & other);
 extern "C"
 QStringBuilder<QString, QString>*
@@ -661,13 +662,14 @@ C_ZN14QStringBuilderI7QStringS0_EC2ERKS1_(const QStringBuilder<QString, QString>
   auto ret = new QStringBuilder<QString, QString>(*((const QStringBuilder<QString, QString>*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 137, column 9>
+// <SourceLocation file '/usr/include/qt/QtCore/qstringbuilder.h', line 143, column 9>
 //   // proto:  void QStringBuilder<QString, QString>::QStringBuilder(const QString & a_, const QString & b_);
 extern "C"
 QStringBuilder<QString, QString>*
 C_ZN14QStringBuilderI7QStringS0_EC2ERKS0_S3_(const QString* arg1,
 const QString* arg2) {
-  auto ret = new QStringBuilder<QString, QString>(*((const QString*)arg1), *((const QString*)arg2));
+  auto ret = new QStringBuilder<QString, QString>(*((const QString*)arg1),
+*((const QString*)arg2));
   return ret;
 }
 // <= ext block end

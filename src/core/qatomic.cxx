@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qatomic.h
 // dst-file: /src/core/qatomic.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qatomic_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qatomic.h', line 155, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qatomic.h', line 162, column 5>
 //   // proto:  void QAtomicInt::QAtomicInt(int value);
 if (true) {
   auto f = [](int arg1) {
@@ -40,7 +40,7 @@ int QAtomicInt_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qatomic.h', line 155, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qatomic.h', line 162, column 5>
 //   // proto:  void QAtomicInt::QAtomicInt(int value);
 extern "C"
 QAtomicInt*

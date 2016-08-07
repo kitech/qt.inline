@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtGui/qinputmethod.h
 // dst-file: /src/gui/qinputmethod.cxx
 //
@@ -16,9 +16,9 @@
 
 #include <qrect.h>
 #include <qtransform.h>
+#include <qlocale.h>
 #include <qnamespace.h>
 #include <qvariant.h>
-#include <qlocale.h>
 // <= header block end
 
 // main block begin =>
@@ -37,7 +37,7 @@ int QInputMethod_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 62, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 70, column 12>
 //   // proto:  QRectF QInputMethod::inputItemRectangle();
 // _ZNK12QInputMethod18inputItemRectangleEv inputItemRectangle()
 extern "C"
@@ -47,7 +47,7 @@ C_ZNK12QInputMethod18inputItemRectangleEv(void *qthis) {
   ((QInputMethod*)qthis)->inputItemRectangle();
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 49, column 5>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 55, column 5>
 //   // proto:  const QMetaObject * QInputMethod::metaObject();
 // _ZNK12QInputMethod10metaObjectEv metaObject()
 extern "C"
@@ -57,7 +57,7 @@ C_ZNK12QInputMethod10metaObjectEv(void *qthis) {
   ((QInputMethod*)qthis)->metaObject();
   return (void*)ret;
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 59, column 16>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 67, column 16>
 //   // proto:  QTransform QInputMethod::inputItemTransform();
 // _ZNK12QInputMethod18inputItemTransformEv inputItemTransform()
 extern "C"
@@ -67,7 +67,15 @@ C_ZNK12QInputMethod18inputItemTransformEv(void *qthis) {
   ((QInputMethod*)qthis)->inputItemTransform();
   return new QTransform(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 100, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 110, column 10>
+//   // proto:  void QInputMethod::anchorRectangleChanged();
+// _ZN12QInputMethod22anchorRectangleChangedEv anchorRectangleChanged()
+extern "C"
+void
+C_ZN12QInputMethod22anchorRectangleChangedEv(void *qthis) {
+  ((QInputMethod*)qthis)->anchorRectangleChanged();
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 113, column 10>
 //   // proto:  void QInputMethod::visibleChanged();
 // _ZN12QInputMethod14visibleChangedEv visibleChanged()
 extern "C"
@@ -75,15 +83,17 @@ void
 C_ZN12QInputMethod14visibleChangedEv(void *qthis) {
   ((QInputMethod*)qthis)->visibleChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 89, column 10>
-//   // proto:  void QInputMethod::hide();
-// _ZN12QInputMethod4hideEv hide()
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 93, column 13>
+//   // proto:  QLocale QInputMethod::locale();
+// _ZNK12QInputMethod6localeEv locale()
 extern "C"
-void
-C_ZN12QInputMethod4hideEv(void *qthis) {
-  ((QInputMethod*)qthis)->hide();
+QLocale*
+C_ZNK12QInputMethod6localeEv(void *qthis) {
+  auto ret =
+  ((QInputMethod*)qthis)->locale();
+  return new QLocale(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 69, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 78, column 12>
 //   // proto:  QRectF QInputMethod::keyboardRectangle();
 // _ZNK12QInputMethod17keyboardRectangleEv keyboardRectangle()
 extern "C"
@@ -93,7 +103,7 @@ C_ZNK12QInputMethod17keyboardRectangleEv(void *qthis) {
   ((QInputMethod*)qthis)->keyboardRectangle();
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 99, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 111, column 10>
 //   // proto:  void QInputMethod::keyboardRectangleChanged();
 // _ZN12QInputMethod24keyboardRectangleChangedEv keyboardRectangleChanged()
 extern "C"
@@ -101,7 +111,7 @@ void
 C_ZN12QInputMethod24keyboardRectangleChangedEv(void *qthis) {
   ((QInputMethod*)qthis)->keyboardRectangleChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 88, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 99, column 10>
 //   // proto:  void QInputMethod::show();
 // _ZN12QInputMethod4showEv show()
 extern "C"
@@ -109,7 +119,7 @@ void
 C_ZN12QInputMethod4showEv(void *qthis) {
   ((QInputMethod*)qthis)->show();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 83, column 25>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 94, column 25>
 //   // proto:  Qt::LayoutDirection QInputMethod::inputDirection();
 // _ZNK12QInputMethod14inputDirectionEv inputDirection()
 extern "C"
@@ -119,7 +129,7 @@ C_ZNK12QInputMethod14inputDirectionEv(void *qthis) {
   ((QInputMethod*)qthis)->inputDirection();
   return ret; // 0 TypeKind.ENUM
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 91, column 10>
 //   // proto:  bool QInputMethod::isAnimating();
 // _ZNK12QInputMethod11isAnimatingEv isAnimating()
 extern "C"
@@ -129,7 +139,7 @@ C_ZNK12QInputMethod11isAnimatingEv(void *qthis) {
   ((QInputMethod*)qthis)->isAnimating();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 85, column 21>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 96, column 21>
 //   // proto: static QVariant QInputMethod::queryFocusObject(Qt::InputMethodQuery query, QVariant argument);
 // _ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant queryFocusObject(Qt::InputMethodQuery, class QVariant)
 extern "C"
@@ -141,7 +151,17 @@ QVariant* arg2) {
 *((QVariant*)arg2));
   return new QVariant(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 101, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 80, column 12>
+//   // proto:  QRectF QInputMethod::inputItemClipRectangle();
+// _ZNK12QInputMethod22inputItemClipRectangleEv inputItemClipRectangle()
+extern "C"
+QRectF*
+C_ZNK12QInputMethod22inputItemClipRectangleEv(void *qthis) {
+  auto ret =
+  ((QInputMethod*)qthis)->inputItemClipRectangle();
+  return new QRectF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 114, column 10>
 //   // proto:  void QInputMethod::animatingChanged();
 // _ZN12QInputMethod16animatingChangedEv animatingChanged()
 extern "C"
@@ -149,7 +169,7 @@ void
 C_ZN12QInputMethod16animatingChangedEv(void *qthis) {
   ((QInputMethod*)qthis)->animatingChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 103, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 116, column 10>
 //   // proto:  void QInputMethod::inputDirectionChanged(Qt::LayoutDirection newDirection);
 // _ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE inputDirectionChanged(Qt::LayoutDirection)
 extern "C"
@@ -158,7 +178,7 @@ C_ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(void *qthis,
 Qt::LayoutDirection* arg1) {
   ((QInputMethod*)qthis)->inputDirectionChanged(*((Qt::LayoutDirection*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 89, column 10>
 //   // proto:  void QInputMethod::setVisible(bool visible);
 // _ZN12QInputMethod10setVisibleEb setVisible(_Bool)
 extern "C"
@@ -167,7 +187,7 @@ C_ZN12QInputMethod10setVisibleEb(void *qthis,
 bool arg1) {
   ((QInputMethod*)qthis)->setVisible(arg1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 63, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 71, column 10>
 //   // proto:  void QInputMethod::setInputItemRectangle(const QRectF & rect);
 // _ZN12QInputMethod21setInputItemRectangleERK6QRectF setInputItemRectangle(const class QRectF &)
 extern "C"
@@ -176,7 +196,7 @@ C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *qthis,
 const QRectF* arg1) {
   ((QInputMethod*)qthis)->setInputItemRectangle(*((const QRectF*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 102, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 115, column 10>
 //   // proto:  void QInputMethod::localeChanged();
 // _ZN12QInputMethod13localeChangedEv localeChanged()
 extern "C"
@@ -184,7 +204,7 @@ void
 C_ZN12QInputMethod13localeChangedEv(void *qthis) {
   ((QInputMethod*)qthis)->localeChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 93, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 104, column 10>
 //   // proto:  void QInputMethod::commit();
 // _ZN12QInputMethod6commitEv commit()
 extern "C"
@@ -192,7 +212,7 @@ void
 C_ZN12QInputMethod6commitEv(void *qthis) {
   ((QInputMethod*)qthis)->commit();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 60, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 68, column 10>
 //   // proto:  void QInputMethod::setInputItemTransform(const QTransform & transform);
 // _ZN12QInputMethod21setInputItemTransformERK10QTransform setInputItemTransform(const class QTransform &)
 extern "C"
@@ -201,7 +221,17 @@ C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *qthis,
 const QTransform* arg1) {
   ((QInputMethod*)qthis)->setInputItemTransform(*((const QTransform*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 95, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 75, column 12>
+//   // proto:  QRectF QInputMethod::anchorRectangle();
+// _ZNK12QInputMethod15anchorRectangleEv anchorRectangle()
+extern "C"
+QRectF*
+C_ZNK12QInputMethod15anchorRectangleEv(void *qthis) {
+  auto ret =
+  ((QInputMethod*)qthis)->anchorRectangle();
+  return new QRectF(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 106, column 10>
 //   // proto:  void QInputMethod::invokeAction(QInputMethod::Action a, int cursorPosition);
 // _ZN12QInputMethod12invokeActionENS_6ActionEi invokeAction(enum QInputMethod::Action, int)
 extern "C"
@@ -212,7 +242,7 @@ int arg2) {
   ((QInputMethod*)qthis)->invokeAction(arg1,
 arg2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 66, column 12>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 74, column 12>
 //   // proto:  QRectF QInputMethod::cursorRectangle();
 // _ZNK12QInputMethod15cursorRectangleEv cursorRectangle()
 extern "C"
@@ -222,7 +252,7 @@ C_ZNK12QInputMethod15cursorRectangleEv(void *qthis) {
   ((QInputMethod*)qthis)->cursorRectangle();
   return new QRectF(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 77, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 88, column 10>
 //   // proto:  bool QInputMethod::isVisible();
 // _ZNK12QInputMethod9isVisibleEv isVisible()
 extern "C"
@@ -232,7 +262,7 @@ C_ZNK12QInputMethod9isVisibleEv(void *qthis) {
   ((QInputMethod*)qthis)->isVisible();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 98, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 109, column 10>
 //   // proto:  void QInputMethod::cursorRectangleChanged();
 // _ZN12QInputMethod22cursorRectangleChangedEv cursorRectangleChanged()
 extern "C"
@@ -240,17 +270,23 @@ void
 C_ZN12QInputMethod22cursorRectangleChangedEv(void *qthis) {
   ((QInputMethod*)qthis)->cursorRectangleChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 82, column 13>
-//   // proto:  QLocale QInputMethod::locale();
-// _ZNK12QInputMethod6localeEv locale()
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 112, column 10>
+//   // proto:  void QInputMethod::inputItemClipRectangleChanged();
+// _ZN12QInputMethod29inputItemClipRectangleChangedEv inputItemClipRectangleChanged()
 extern "C"
-QLocale*
-C_ZNK12QInputMethod6localeEv(void *qthis) {
-  auto ret =
-  ((QInputMethod*)qthis)->locale();
-  return new QLocale(ret); // 5
+void
+C_ZN12QInputMethod29inputItemClipRectangleChangedEv(void *qthis) {
+  ((QInputMethod*)qthis)->inputItemClipRectangleChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 92, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 100, column 10>
+//   // proto:  void QInputMethod::hide();
+// _ZN12QInputMethod4hideEv hide()
+extern "C"
+void
+C_ZN12QInputMethod4hideEv(void *qthis) {
+  ((QInputMethod*)qthis)->hide();
+}
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 103, column 10>
 //   // proto:  void QInputMethod::reset();
 // _ZN12QInputMethod5resetEv reset()
 extern "C"
@@ -258,7 +294,7 @@ void
 C_ZN12QInputMethod5resetEv(void *qthis) {
   ((QInputMethod*)qthis)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 91, column 10>
+// <SourceLocation file '/usr/include/qt/QtGui/qinputmethod.h', line 102, column 10>
 //   // proto:  void QInputMethod::update(Qt::InputMethodQueries queries);
 // _ZN12QInputMethod6updateE6QFlagsIN2Qt16InputMethodQueryEE update(Qt::InputMethodQueries)
 extern "C"
@@ -278,35 +314,45 @@ public:
    QInputMethod_SlotProxy():QObject(){}
 
 public slots:
+  // inputDirectionChanged(Qt::LayoutDirection)
+  void slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0);
+public:
+  void (*slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE)(void* rsfptr, Qt::LayoutDirection arg0) = NULL;
+public slots:
+  // anchorRectangleChanged()
+  void slot_proxy_func__ZN12QInputMethod22anchorRectangleChangedEv();
+public:
+  void (*slot_func__ZN12QInputMethod22anchorRectangleChangedEv)(void* rsfptr) = NULL;
+public slots:
   // cursorRectangleChanged()
   void slot_proxy_func__ZN12QInputMethod22cursorRectangleChangedEv();
 public:
   void (*slot_func__ZN12QInputMethod22cursorRectangleChangedEv)(void* rsfptr) = NULL;
 public slots:
-  // localeChanged()
-  void slot_proxy_func__ZN12QInputMethod13localeChangedEv();
+  // animatingChanged()
+  void slot_proxy_func__ZN12QInputMethod16animatingChangedEv();
 public:
-  void (*slot_func__ZN12QInputMethod13localeChangedEv)(void* rsfptr) = NULL;
+  void (*slot_func__ZN12QInputMethod16animatingChangedEv)(void* rsfptr) = NULL;
 public slots:
   // visibleChanged()
   void slot_proxy_func__ZN12QInputMethod14visibleChangedEv();
 public:
   void (*slot_func__ZN12QInputMethod14visibleChangedEv)(void* rsfptr) = NULL;
 public slots:
+  // inputItemClipRectangleChanged()
+  void slot_proxy_func__ZN12QInputMethod29inputItemClipRectangleChangedEv();
+public:
+  void (*slot_func__ZN12QInputMethod29inputItemClipRectangleChangedEv)(void* rsfptr) = NULL;
+public slots:
   // keyboardRectangleChanged()
   void slot_proxy_func__ZN12QInputMethod24keyboardRectangleChangedEv();
 public:
   void (*slot_func__ZN12QInputMethod24keyboardRectangleChangedEv)(void* rsfptr) = NULL;
 public slots:
-  // inputDirectionChanged(Qt::LayoutDirection)
-  void slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0);
+  // localeChanged()
+  void slot_proxy_func__ZN12QInputMethod13localeChangedEv();
 public:
-  void (*slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE)(void* rsfptr, Qt::LayoutDirection arg0) = NULL;
-public slots:
-  // animatingChanged()
-  void slot_proxy_func__ZN12QInputMethod16animatingChangedEv();
-public:
-  void (*slot_func__ZN12QInputMethod16animatingChangedEv)(void* rsfptr) = NULL;
+  void (*slot_func__ZN12QInputMethod13localeChangedEv)(void* rsfptr) = NULL;
 public: void* rsfptr = NULL;
 };
 #include "src/gui/qinputmethod.moc"
@@ -317,6 +363,46 @@ extern "C" {
     return new QInputMethod_SlotProxy();
   }
 };
+
+void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0) {
+  if (this->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE != NULL) {
+    // do smth...
+    this->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(this->rsfptr, arg0);
+  }
+}
+extern "C"
+void* QInputMethod_SlotProxy_connect__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QInputMethod_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE = (decltype(that->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE))ffifptr;
+  QObject::connect((QInputMethod*)sender, SIGNAL(inputDirectionChanged(Qt::LayoutDirection)), that, SLOT(slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0)));
+  return that;
+}
+extern "C"
+void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(QInputMethod_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
+void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod22anchorRectangleChangedEv() {
+  if (this->slot_func__ZN12QInputMethod22anchorRectangleChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN12QInputMethod22anchorRectangleChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QInputMethod_SlotProxy_connect__ZN12QInputMethod22anchorRectangleChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QInputMethod_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QInputMethod22anchorRectangleChangedEv = (decltype(that->slot_func__ZN12QInputMethod22anchorRectangleChangedEv))ffifptr;
+  QObject::connect((QInputMethod*)sender, SIGNAL(anchorRectangleChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod22anchorRectangleChangedEv()));
+  return that;
+}
+extern "C"
+void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod22anchorRectangleChangedEv(QInputMethod_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
 
 void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod22cursorRectangleChangedEv() {
   if (this->slot_func__ZN12QInputMethod22cursorRectangleChangedEv != NULL) {
@@ -338,22 +424,22 @@ void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod22cursorRectangleChanged
   delete that;
 }
 
-void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod13localeChangedEv() {
-  if (this->slot_func__ZN12QInputMethod13localeChangedEv != NULL) {
+void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod16animatingChangedEv() {
+  if (this->slot_func__ZN12QInputMethod16animatingChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN12QInputMethod13localeChangedEv(this->rsfptr);
+    this->slot_func__ZN12QInputMethod16animatingChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QInputMethod_SlotProxy_connect__ZN12QInputMethod13localeChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+void* QInputMethod_SlotProxy_connect__ZN12QInputMethod16animatingChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QInputMethod_SlotProxy();
   that->rsfptr = rsfptr;
-  that->slot_func__ZN12QInputMethod13localeChangedEv = (decltype(that->slot_func__ZN12QInputMethod13localeChangedEv))ffifptr;
-  QObject::connect((QInputMethod*)sender, SIGNAL(localeChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod13localeChangedEv()));
+  that->slot_func__ZN12QInputMethod16animatingChangedEv = (decltype(that->slot_func__ZN12QInputMethod16animatingChangedEv))ffifptr;
+  QObject::connect((QInputMethod*)sender, SIGNAL(animatingChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod16animatingChangedEv()));
   return that;
 }
 extern "C"
-void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod13localeChangedEv(QInputMethod_SlotProxy* that) {
+void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod16animatingChangedEv(QInputMethod_SlotProxy* that) {
   that->disconnect();
   delete that;
 }
@@ -378,6 +464,26 @@ void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod14visibleChangedEv(QInpu
   delete that;
 }
 
+void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod29inputItemClipRectangleChangedEv() {
+  if (this->slot_func__ZN12QInputMethod29inputItemClipRectangleChangedEv != NULL) {
+    // do smth...
+    this->slot_func__ZN12QInputMethod29inputItemClipRectangleChangedEv(this->rsfptr);
+  }
+}
+extern "C"
+void* QInputMethod_SlotProxy_connect__ZN12QInputMethod29inputItemClipRectangleChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
+  auto that = new QInputMethod_SlotProxy();
+  that->rsfptr = rsfptr;
+  that->slot_func__ZN12QInputMethod29inputItemClipRectangleChangedEv = (decltype(that->slot_func__ZN12QInputMethod29inputItemClipRectangleChangedEv))ffifptr;
+  QObject::connect((QInputMethod*)sender, SIGNAL(inputItemClipRectangleChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod29inputItemClipRectangleChangedEv()));
+  return that;
+}
+extern "C"
+void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod29inputItemClipRectangleChangedEv(QInputMethod_SlotProxy* that) {
+  that->disconnect();
+  delete that;
+}
+
 void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod24keyboardRectangleChangedEv() {
   if (this->slot_func__ZN12QInputMethod24keyboardRectangleChangedEv != NULL) {
     // do smth...
@@ -398,42 +504,22 @@ void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod24keyboardRectangleChang
   delete that;
 }
 
-void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0) {
-  if (this->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE != NULL) {
+void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod13localeChangedEv() {
+  if (this->slot_func__ZN12QInputMethod13localeChangedEv != NULL) {
     // do smth...
-    this->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(this->rsfptr, arg0);
+    this->slot_func__ZN12QInputMethod13localeChangedEv(this->rsfptr);
   }
 }
 extern "C"
-void* QInputMethod_SlotProxy_connect__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(QObject* sender, void* ffifptr, void* rsfptr){
+void* QInputMethod_SlotProxy_connect__ZN12QInputMethod13localeChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
   auto that = new QInputMethod_SlotProxy();
   that->rsfptr = rsfptr;
-  that->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE = (decltype(that->slot_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE))ffifptr;
-  QObject::connect((QInputMethod*)sender, SIGNAL(inputDirectionChanged(Qt::LayoutDirection)), that, SLOT(slot_proxy_func__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0)));
+  that->slot_func__ZN12QInputMethod13localeChangedEv = (decltype(that->slot_func__ZN12QInputMethod13localeChangedEv))ffifptr;
+  QObject::connect((QInputMethod*)sender, SIGNAL(localeChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod13localeChangedEv()));
   return that;
 }
 extern "C"
-void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(QInputMethod_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QInputMethod_SlotProxy::slot_proxy_func__ZN12QInputMethod16animatingChangedEv() {
-  if (this->slot_func__ZN12QInputMethod16animatingChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN12QInputMethod16animatingChangedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QInputMethod_SlotProxy_connect__ZN12QInputMethod16animatingChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QInputMethod_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QInputMethod16animatingChangedEv = (decltype(that->slot_func__ZN12QInputMethod16animatingChangedEv))ffifptr;
-  QObject::connect((QInputMethod*)sender, SIGNAL(animatingChanged()), that, SLOT(slot_proxy_func__ZN12QInputMethod16animatingChangedEv()));
-  return that;
-}
-extern "C"
-void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod16animatingChangedEv(QInputMethod_SlotProxy* that) {
+void QInputMethod_SlotProxy_disconnect__ZN12QInputMethod13localeChangedEv(QInputMethod_SlotProxy* that) {
   that->disconnect();
   delete that;
 }

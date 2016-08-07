@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtWidgets/qdrawutil.h
 // dst-file: /src/widgets/qdrawutil.cxx
 //
@@ -18,7 +18,7 @@
 
 // main block begin =>
 void __keep_qdrawutil_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 107, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 113, column 12>
 //   // proto:  void QTileRules::QTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule);
 if (true) {
   auto f = [](Qt::TileRule arg1, Qt::TileRule arg2) {
@@ -26,7 +26,7 @@ if (true) {
   };
   if (f == nullptr){}
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 109, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 115, column 12>
 //   // proto:  void QTileRules::QTileRules(Qt::TileRule rule);
 if (true) {
   auto f = [](Qt::TileRule arg1) {
@@ -48,16 +48,17 @@ int QTileRules_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 107, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 113, column 12>
 //   // proto:  void QTileRules::QTileRules(Qt::TileRule horizontalRule, Qt::TileRule verticalRule);
 extern "C"
 QTileRules*
 C_ZN10QTileRulesC2EN2Qt8TileRuleES1_(Qt::TileRule* arg1,
 Qt::TileRule* arg2) {
-  auto ret = new QTileRules(*((Qt::TileRule*)arg1), *((Qt::TileRule*)arg2));
+  auto ret = new QTileRules(*((Qt::TileRule*)arg1),
+*((Qt::TileRule*)arg2));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 109, column 12>
+// <SourceLocation file '/usr/include/qt/QtWidgets/qdrawutil.h', line 115, column 12>
 //   // proto:  void QTileRules::QTileRules(Qt::TileRule rule);
 extern "C"
 QTileRules*

@@ -1,5 +1,5 @@
 // auto generated, do not modify.
-// created: Fri Feb 26 23:38:18 2016
+// created: Sun Aug  7 10:37:43 2016
 // src-file: /QtCore/qstorageinfo.h
 // dst-file: /src/core/qstorageinfo.cxx
 //
@@ -16,7 +16,6 @@
 
 #include <qglobal.h>
 #include <qbytearray.h>
-#include <qstorageinfo.h>
 #include <qlist.h>
 #include <qdatastream.h>
 #include <qstring.h>
@@ -24,7 +23,7 @@
 
 // main block begin =>
 void __keep_qstorageinfo_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 77, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 83, column 17>
 //   // proto:  bool QStorageInfo::isRoot();
 if (true) {
   auto f = [](QStorageInfo flythis) {
@@ -34,7 +33,7 @@ if (true) {
   if (f == nullptr){}
 }
 // _ZNK12QStorageInfo6isRootEv isRoot()
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 62, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 67, column 17>
 //   // proto:  void QStorageInfo::swap(QStorageInfo & other);
 if (true) {
   auto f = [](QStorageInfo flythis, QStorageInfo & arg1) {
@@ -58,7 +57,7 @@ int QStorageInfo_Class_Size()
 // <= use block end
 
 // ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 74, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 79, column 12>
 //   // proto:  qint64 QStorageInfo::bytesFree();
 // _ZNK12QStorageInfo9bytesFreeEv bytesFree()
 extern "C"
@@ -68,7 +67,7 @@ C_ZNK12QStorageInfo9bytesFreeEv(void *qthis) {
   ((QStorageInfo*)qthis)->bytesFree();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 53, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 59, column 5>
 //   // proto:  void QStorageInfo::QStorageInfo(const QStorageInfo & other);
 extern "C"
 QStorageInfo*
@@ -76,7 +75,7 @@ C_ZN12QStorageInfoC2ERKS_(const QStorageInfo* arg1) {
   auto ret = new QStorageInfo(*((const QStorageInfo*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 77, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 83, column 17>
 //   // proto:  bool QStorageInfo::isRoot();
 // _ZNK12QStorageInfo6isRootEv isRoot()
 extern "C"
@@ -86,7 +85,7 @@ C_ZNK12QStorageInfo6isRootEv(void *qthis) {
   ((QStorageInfo*)qthis)->isRoot();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 78, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 84, column 10>
 //   // proto:  bool QStorageInfo::isReadOnly();
 // _ZNK12QStorageInfo10isReadOnlyEv isReadOnly()
 extern "C"
@@ -96,7 +95,7 @@ C_ZNK12QStorageInfo10isReadOnlyEv(void *qthis) {
   ((QStorageInfo*)qthis)->isReadOnly();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 69, column 16>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 74, column 16>
 //   // proto:  QByteArray QStorageInfo::fileSystemType();
 // _ZNK12QStorageInfo14fileSystemTypeEv fileSystemType()
 extern "C"
@@ -106,7 +105,7 @@ C_ZNK12QStorageInfo14fileSystemTypeEv(void *qthis) {
   ((QStorageInfo*)qthis)->fileSystemType();
   return new QByteArray(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 65, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 70, column 10>
 //   // proto:  void QStorageInfo::setPath(const QString & path);
 // _ZN12QStorageInfo7setPathERK7QString setPath(const class QString &)
 extern "C"
@@ -115,7 +114,7 @@ C_ZN12QStorageInfo7setPathERK7QString(void *qthis,
 const QString* arg1) {
   ((QStorageInfo*)qthis)->setPath(*((const QString*)arg1));
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 84, column 32>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 90, column 32>
 //   // proto: static QList<QStorageInfo> QStorageInfo::mountedVolumes();
 // _ZN12QStorageInfo14mountedVolumesEv mountedVolumes()
 extern "C"
@@ -125,7 +124,7 @@ C_ZN12QStorageInfo14mountedVolumesEv() {
   QStorageInfo::mountedVolumes();
   return new QList<QStorageInfo>(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 70, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 75, column 13>
 //   // proto:  QString QStorageInfo::name();
 // _ZNK12QStorageInfo4nameEv name()
 extern "C"
@@ -135,7 +134,17 @@ C_ZNK12QStorageInfo4nameEv(void *qthis) {
   ((QStorageInfo*)qthis)->name();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 82, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 73, column 16>
+//   // proto:  QByteArray QStorageInfo::device();
+// _ZNK12QStorageInfo6deviceEv device()
+extern "C"
+QByteArray*
+C_ZNK12QStorageInfo6deviceEv(void *qthis) {
+  auto ret =
+  ((QStorageInfo*)qthis)->device();
+  return new QByteArray(ret); // 5
+}
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 88, column 10>
 //   // proto:  void QStorageInfo::refresh();
 // _ZN12QStorageInfo7refreshEv refresh()
 extern "C"
@@ -143,7 +152,7 @@ void
 C_ZN12QStorageInfo7refreshEv(void *qthis) {
   ((QStorageInfo*)qthis)->refresh();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 80, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 86, column 10>
 //   // proto:  bool QStorageInfo::isValid();
 // _ZNK12QStorageInfo7isValidEv isValid()
 extern "C"
@@ -153,7 +162,7 @@ C_ZNK12QStorageInfo7isValidEv(void *qthis) {
   ((QStorageInfo*)qthis)->isValid();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 79, column 10>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 85, column 10>
 //   // proto:  bool QStorageInfo::isReady();
 // _ZNK12QStorageInfo7isReadyEv isReady()
 extern "C"
@@ -163,7 +172,7 @@ C_ZNK12QStorageInfo7isReadyEv(void *qthis) {
   ((QStorageInfo*)qthis)->isReady();
   return ret; // 0 TypeKind.BOOL
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 73, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 78, column 12>
 //   // proto:  qint64 QStorageInfo::bytesTotal();
 // _ZNK12QStorageInfo10bytesTotalEv bytesTotal()
 extern "C"
@@ -173,7 +182,7 @@ C_ZNK12QStorageInfo10bytesTotalEv(void *qthis) {
   ((QStorageInfo*)qthis)->bytesTotal();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 67, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 72, column 13>
 //   // proto:  QString QStorageInfo::rootPath();
 // _ZNK12QStorageInfo8rootPathEv rootPath()
 extern "C"
@@ -188,7 +197,7 @@ extern "C"
 void C_ZN12QStorageInfoD2Ev(void *qthis) {
   delete (QStorageInfo*)qthis;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 75, column 12>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 80, column 12>
 //   // proto:  qint64 QStorageInfo::bytesAvailable();
 // _ZNK12QStorageInfo14bytesAvailableEv bytesAvailable()
 extern "C"
@@ -198,7 +207,7 @@ C_ZNK12QStorageInfo14bytesAvailableEv(void *qthis) {
   ((QStorageInfo*)qthis)->bytesAvailable();
   return ret; // 0 TypeKind.LONGLONG
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 50, column 5>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 56, column 5>
 //   // proto:  void QStorageInfo::QStorageInfo();
 extern "C"
 QStorageInfo*
@@ -206,7 +215,7 @@ C_ZN12QStorageInfoC2Ev() {
   auto ret = new QStorageInfo();
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 52, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 58, column 14>
 //   // proto:  void QStorageInfo::QStorageInfo(const QDir & dir);
 extern "C"
 QStorageInfo*
@@ -214,7 +223,7 @@ C_ZN12QStorageInfoC2ERK4QDir(const QDir* arg1) {
   auto ret = new QStorageInfo(*((const QDir*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 85, column 25>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 91, column 25>
 //   // proto: static QStorageInfo QStorageInfo::root();
 // _ZN12QStorageInfo4rootEv root()
 extern "C"
@@ -224,7 +233,7 @@ C_ZN12QStorageInfo4rootEv() {
   QStorageInfo::root();
   return new QStorageInfo(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 51, column 14>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 57, column 14>
 //   // proto:  void QStorageInfo::QStorageInfo(const QString & path);
 extern "C"
 QStorageInfo*
@@ -232,17 +241,17 @@ C_ZN12QStorageInfoC2ERK7QString(const QString* arg1) {
   auto ret = new QStorageInfo(*((const QString*)arg1));
   return ret;
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 68, column 16>
-//   // proto:  QByteArray QStorageInfo::device();
-// _ZNK12QStorageInfo6deviceEv device()
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 81, column 9>
+//   // proto:  int QStorageInfo::blockSize();
+// _ZNK12QStorageInfo9blockSizeEv blockSize()
 extern "C"
-QByteArray*
-C_ZNK12QStorageInfo6deviceEv(void *qthis) {
+int
+C_ZNK12QStorageInfo9blockSizeEv(void *qthis) {
   auto ret =
-  ((QStorageInfo*)qthis)->device();
-  return new QByteArray(ret); // 5
+  ((QStorageInfo*)qthis)->blockSize();
+  return ret; // 0 TypeKind.INT
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 71, column 13>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 76, column 13>
 //   // proto:  QString QStorageInfo::displayName();
 // _ZNK12QStorageInfo11displayNameEv displayName()
 extern "C"
@@ -252,7 +261,7 @@ C_ZNK12QStorageInfo11displayNameEv(void *qthis) {
   ((QStorageInfo*)qthis)->displayName();
   return new QString(ret); // 5
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 62, column 17>
+// <SourceLocation file '/usr/include/qt/QtCore/qstorageinfo.h', line 67, column 17>
 //   // proto:  void QStorageInfo::swap(QStorageInfo & other);
 // _ZN12QStorageInfo4swapERS_ swap(class QStorageInfo &)
 extern "C"
