@@ -1,208 +1,101 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qstatictext.h
-// dst-file: /src/gui/qstatictext.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qstatictext.h
 #include <qstatictext.h>
+#include <QtGui>
 
-
-#include <qtextoption.h>
-#include <qstring.h>
-#include <qnamespace.h>
-#include <qsize.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qstatictext_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 72, column 10>
-//   // proto:  void QStaticText::swap(QStaticText & other);
-if (true) {
-  auto f = [](QStaticText flythis, QStaticText & arg1) {
-    ((QStaticText*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN11QStaticText4swapERS_ swap(class QStaticText &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qstatictext.h:63
+// void QStaticText()
 extern "C"
-int QStaticText_Class_Size()
-{
-  return sizeof(QStaticText);
+void* C_ZN11QStaticTextC1Ev() {
+  return new QStaticText();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 74, column 10>
-//   // proto:  void QStaticText::setText(const QString & text);
-// _ZN11QStaticText7setTextERK7QString setText(const class QString &)
+// /usr/include/qt/QtGui/qstatictext.h:64
+// void QStaticText(const class QString &)
 extern "C"
-void
-C_ZN11QStaticText7setTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QStaticText*)qthis)->setText(*((const QString*)arg1));
+void* C_ZN11QStaticTextC1ERK7QString(const QString & text) {
+  return new QStaticText(text);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 72, column 10>
-//   // proto:  void QStaticText::swap(QStaticText & other);
-// _ZN11QStaticText4swapERS_ swap(class QStaticText &)
+// /usr/include/qt/QtGui/qstatictext.h:70
+// void ~QStaticText()
 extern "C"
-void
-C_ZN11QStaticText4swapERS_(void *qthis,
-QStaticText* arg1) {
-  ((QStaticText*)qthis)->swap(*((QStaticText*)arg1));
+void C_ZN11QStaticTextD1Ev(void *this_) {
+  delete (QStaticText*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 84, column 17>
-//   // proto:  QTextOption QStaticText::textOption();
-// _ZNK11QStaticText10textOptionEv textOption()
+// inline
+// /usr/include/qt/QtGui/qstatictext.h:72
+// void swap(class QStaticText &)
 extern "C"
-QTextOption*
-C_ZNK11QStaticText10textOptionEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->textOption();
-  return new QTextOption(ret); // 5
+void C_ZN11QStaticText4swapERS_(void *this_, QStaticText & other) {
+  ((QStaticText*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 65, column 5>
-//   // proto:  void QStaticText::QStaticText(const QStaticText & other);
+// /usr/include/qt/QtGui/qstatictext.h:74
+// void setText(const class QString &)
 extern "C"
-QStaticText*
-C_ZN11QStaticTextC2ERKS_(const QStaticText* arg1) {
-  auto ret = new QStaticText(*((const QStaticText*)arg1));
-  return ret;
+void C_ZN11QStaticText7setTextERK7QString(void *this_, const QString & text) {
+  ((QStaticText*)this_)->setText(text);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 75, column 13>
-//   // proto:  QString QStaticText::text();
-// _ZNK11QStaticText4textEv text()
+// /usr/include/qt/QtGui/qstatictext.h:75
+// QString text()
 extern "C"
-QString*
-C_ZNK11QStaticText4textEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->text();
-  return new QString(ret); // 5
+void C_ZNK11QStaticText4textEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->text();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 63, column 5>
-//   // proto:  void QStaticText::QStaticText();
+// /usr/include/qt/QtGui/qstatictext.h:77
+// void setTextFormat(Qt::TextFormat)
 extern "C"
-QStaticText*
-C_ZN11QStaticTextC2Ev() {
-  auto ret = new QStaticText();
-  return ret;
+void C_ZN11QStaticText13setTextFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat textFormat) {
+  ((QStaticText*)this_)->setTextFormat(textFormat);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 83, column 10>
-//   // proto:  void QStaticText::setTextOption(const QTextOption & textOption);
-// _ZN11QStaticText13setTextOptionERK11QTextOption setTextOption(const class QTextOption &)
+// /usr/include/qt/QtGui/qstatictext.h:78
+// Qt::TextFormat textFormat()
 extern "C"
-void
-C_ZN11QStaticText13setTextOptionERK11QTextOption(void *qthis,
-const QTextOption* arg1) {
-  ((QStaticText*)qthis)->setTextOption(*((const QTextOption*)arg1));
+void C_ZNK11QStaticText10textFormatEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->textFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 64, column 5>
-//   // proto:  void QStaticText::QStaticText(const QString & text);
+// /usr/include/qt/QtGui/qstatictext.h:80
+// void setTextWidth(qreal)
 extern "C"
-QStaticText*
-C_ZN11QStaticTextC2ERK7QString(const QString* arg1) {
-  auto ret = new QStaticText(*((const QString*)arg1));
-  return ret;
+void C_ZN11QStaticText12setTextWidthEd(void *this_, qreal textWidth) {
+  ((QStaticText*)this_)->setTextWidth(textWidth);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 78, column 20>
-//   // proto:  Qt::TextFormat QStaticText::textFormat();
-// _ZNK11QStaticText10textFormatEv textFormat()
+// /usr/include/qt/QtGui/qstatictext.h:81
+// qreal textWidth()
 extern "C"
-Qt::TextFormat
-C_ZNK11QStaticText10textFormatEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->textFormat();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK11QStaticText9textWidthEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->textWidth();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 86, column 12>
-//   // proto:  QSizeF QStaticText::size();
-// _ZNK11QStaticText4sizeEv size()
+// /usr/include/qt/QtGui/qstatictext.h:83
+// void setTextOption(const class QTextOption &)
 extern "C"
-QSizeF*
-C_ZNK11QStaticText4sizeEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->size();
-  return new QSizeF(ret); // 5
+void C_ZN11QStaticText13setTextOptionERK11QTextOption(void *this_, const QTextOption & textOption) {
+  ((QStaticText*)this_)->setTextOption(textOption);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 80, column 10>
-//   // proto:  void QStaticText::setTextWidth(qreal textWidth);
-// _ZN11QStaticText12setTextWidthEd setTextWidth(qreal)
+// /usr/include/qt/QtGui/qstatictext.h:84
+// QTextOption textOption()
 extern "C"
-void
-C_ZN11QStaticText12setTextWidthEd(void *qthis,
-qreal arg1) {
-  ((QStaticText*)qthis)->setTextWidth(arg1);
+void C_ZNK11QStaticText10textOptionEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->textOption();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 81, column 11>
-//   // proto:  qreal QStaticText::textWidth();
-// _ZNK11QStaticText9textWidthEv textWidth()
+// /usr/include/qt/QtGui/qstatictext.h:86
+// QSizeF size()
 extern "C"
-double
-C_ZNK11QStaticText9textWidthEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->textWidth();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK11QStaticText4sizeEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 88, column 10>
-//   // proto:  void QStaticText::prepare(const QTransform & matrix, const QFont & font);
-// _ZN11QStaticText7prepareERK10QTransformRK5QFont prepare(const class QTransform &, const class QFont &)
+// /usr/include/qt/QtGui/qstatictext.h:88
+// void prepare(const class QTransform &, const class QFont &)
 extern "C"
-void
-C_ZN11QStaticText7prepareERK10QTransformRK5QFont(void *qthis,
-const QTransform* arg1,
-const QFont* arg2) {
-  ((QStaticText*)qthis)->prepare(*((const QTransform*)arg1),
-*((const QFont*)arg2));
+void C_ZN11QStaticText7prepareERK10QTransformRK5QFont(void *this_, const QTransform & matrix, const QFont & font) {
+  ((QStaticText*)this_)->prepare(matrix, font);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 90, column 10>
-//   // proto:  void QStaticText::setPerformanceHint(QStaticText::PerformanceHint performanceHint);
-// _ZN11QStaticText18setPerformanceHintENS_15PerformanceHintE setPerformanceHint(enum QStaticText::PerformanceHint)
+// /usr/include/qt/QtGui/qstatictext.h:90
+// void setPerformanceHint(enum QStaticText::PerformanceHint)
 extern "C"
-void
-C_ZN11QStaticText18setPerformanceHintENS_15PerformanceHintE(void *qthis,
-QStaticText::PerformanceHint arg1) {
-  ((QStaticText*)qthis)->setPerformanceHint(arg1);
+void C_ZN11QStaticText18setPerformanceHintENS_15PerformanceHintE(void *this_, QStaticText::PerformanceHint performanceHint) {
+  ((QStaticText*)this_)->setPerformanceHint(performanceHint);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 77, column 10>
-//   // proto:  void QStaticText::setTextFormat(Qt::TextFormat textFormat);
-// _ZN11QStaticText13setTextFormatEN2Qt10TextFormatE setTextFormat(Qt::TextFormat)
+// /usr/include/qt/QtGui/qstatictext.h:91
+// QStaticText::PerformanceHint performanceHint()
 extern "C"
-void
-C_ZN11QStaticText13setTextFormatEN2Qt10TextFormatE(void *qthis,
-Qt::TextFormat* arg1) {
-  ((QStaticText*)qthis)->setTextFormat(*((Qt::TextFormat*)arg1));
+void C_ZNK11QStaticText15performanceHintEv(void *this_) {
+  /*return*/ ((QStaticText*)this_)->performanceHint();
 }
-//   // proto:  void QStaticText::~QStaticText();
-extern "C"
-void C_ZN11QStaticTextD2Ev(void *qthis) {
-  delete (QStaticText*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qstatictext.h', line 91, column 21>
-//   // proto:  QStaticText::PerformanceHint QStaticText::performanceHint();
-// _ZNK11QStaticText15performanceHintEv performanceHint()
-extern "C"
-QStaticText::PerformanceHint
-C_ZNK11QStaticText15performanceHintEv(void *qthis) {
-  auto ret =
-  ((QStaticText*)qthis)->performanceHint();
-  return ret; // 0 TypeKind.ENUM
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

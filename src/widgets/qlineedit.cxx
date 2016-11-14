@@ -1,951 +1,472 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qlineedit.h
-// dst-file: /src/widgets/qlineedit.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qlineedit.h
 #include <qlineedit.h>
+#include <QtWidgets>
 
-
-#include <qvariant.h>
-#include <qnamespace.h>
-#include <qsize.h>
-#include <qstring.h>
-#include <qmargins.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qlineedit_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
-extern "C"
-int QLineEdit_Class_Size()
-{
-  return sizeof(QLineEdit);
-}
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 142, column 10>
-//   // proto:  void QLineEdit::cursorBackward(bool mark, int steps);
-// _ZN9QLineEdit14cursorBackwardEbi cursorBackward(_Bool, int)
-extern "C"
-void
-C_ZN9QLineEdit14cursorBackwardEbi(void *qthis,
-bool arg1,
-int arg2) {
-  ((QLineEdit*)qthis)->cursorBackward(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 147, column 10>
-//   // proto:  void QLineEdit::home(bool mark);
-// _ZN9QLineEdit4homeEb home(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit4homeEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->home(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 156, column 9>
-//   // proto:  int QLineEdit::selectionStart();
-// _ZNK9QLineEdit14selectionStartEv selectionStart()
-extern "C"
-int
-C_ZNK9QLineEdit14selectionStartEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->selectionStart();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 135, column 10>
-//   // proto:  void QLineEdit::setCursorPosition(int );
-// _ZN9QLineEdit17setCursorPositionEi setCursorPosition(int)
-extern "C"
-void
-C_ZN9QLineEdit17setCursorPositionEi(void *qthis,
-int arg1) {
-  ((QLineEdit*)qthis)->setCursorPosition(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 159, column 10>
-//   // proto:  bool QLineEdit::isRedoAvailable();
-// _ZNK9QLineEdit15isRedoAvailableEv isRedoAvailable()
-extern "C"
-bool
-C_ZNK9QLineEdit15isRedoAvailableEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->isRedoAvailable();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 151, column 10>
-//   // proto:  void QLineEdit::setModified(bool );
-// _ZN9QLineEdit11setModifiedEb setModified(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit11setModifiedEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->setModified(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 94, column 14>
-//   // proto:  void QLineEdit::QLineEdit(const QString & , QWidget * parent);
-extern "C"
-QLineEdit*
-C_ZN9QLineEditC2ERK7QStringP7QWidget(const QString* arg1,
-QWidget * arg2) {
-  auto ret = new QLineEdit(*((const QString*)arg1),
-arg2);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 232, column 10>
-//   // proto:  bool QLineEdit::event(QEvent * );
-// _ZN9QLineEdit5eventEP6QEvent event(class QEvent *)
-extern "C"
-bool
-C_ZN9QLineEdit5eventEP6QEvent(void *qthis,
-QEvent * arg1) {
-  auto ret =
-  ((QLineEdit*)qthis)->event(arg1);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 104, column 9>
-//   // proto:  int QLineEdit::maxLength();
-// _ZNK9QLineEdit9maxLengthEv maxLength()
-extern "C"
-int
-C_ZNK9QLineEdit9maxLengthEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->maxLength();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 164, column 10>
-//   // proto:  void QLineEdit::setCursorMoveStyle(Qt::CursorMoveStyle style);
-// _ZN9QLineEdit18setCursorMoveStyleEN2Qt15CursorMoveStyleE setCursorMoveStyle(Qt::CursorMoveStyle)
-extern "C"
-void
-C_ZN9QLineEdit18setCursorMoveStyleEN2Qt15CursorMoveStyleE(void *qthis,
-Qt::CursorMoveStyle* arg1) {
-  ((QLineEdit*)qthis)->setCursorMoveStyle(*((Qt::CursorMoveStyle*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 196, column 12>
-//   // proto:  QMenu * QLineEdit::createStandardContextMenu();
-// _ZN9QLineEdit25createStandardContextMenuEv createStandardContextMenu()
-extern "C"
-void*
-C_ZN9QLineEdit25createStandardContextMenuEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->createStandardContextMenu();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 172, column 10>
-//   // proto:  void QLineEdit::setTextMargins(const QMargins & margins);
-// _ZN9QLineEdit14setTextMarginsERK8QMargins setTextMargins(const class QMargins &)
-extern "C"
-void
-C_ZN9QLineEdit14setTextMarginsERK8QMargins(void *qthis,
-const QMargins* arg1) {
-  ((QLineEdit*)qthis)->setTextMargins(*((const QMargins*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 136, column 9>
-//   // proto:  int QLineEdit::cursorPositionAt(const QPoint & pos);
-// _ZN9QLineEdit16cursorPositionAtERK6QPoint cursorPositionAt(const class QPoint &)
-extern "C"
-int
-C_ZN9QLineEdit16cursorPositionAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QLineEdit*)qthis)->cursorPositionAt(*((const QPoint*)arg1));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 154, column 10>
-//   // proto:  bool QLineEdit::hasSelectedText();
-// _ZNK9QLineEdit15hasSelectedTextEv hasSelectedText()
-extern "C"
-bool
-C_ZNK9QLineEdit15hasSelectedTextEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->hasSelectedText();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 230, column 14>
-//   // proto:  QVariant QLineEdit::inputMethodQuery(Qt::InputMethodQuery );
-// _ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
-QVariant*
-C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *qthis,
-Qt::InputMethodQuery* arg1) {
-  auto ret =
-  ((QLineEdit*)qthis)->inputMethodQuery(*((Qt::InputMethodQuery*)arg1));
-  return new QVariant(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 102, column 10>
-//   // proto:  void QLineEdit::setPlaceholderText(const QString & );
-// _ZN9QLineEdit18setPlaceholderTextERK7QString setPlaceholderText(const class QString &)
-extern "C"
-void
-C_ZN9QLineEdit18setPlaceholderTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLineEdit*)qthis)->setPlaceholderText(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 138, column 10>
-//   // proto:  void QLineEdit::setAlignment(Qt::Alignment flag);
-// _ZN9QLineEdit12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
-extern "C"
-void
-C_ZN9QLineEdit12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-Qt::Alignment* arg1) {
-  ((QLineEdit*)qthis)->setAlignment(*((Qt::Alignment*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 165, column 25>
-//   // proto:  Qt::CursorMoveStyle QLineEdit::cursorMoveStyle();
-// _ZNK9QLineEdit15cursorMoveStyleEv cursorMoveStyle()
-extern "C"
-Qt::CursorMoveStyle
-C_ZNK9QLineEdit15cursorMoveStyleEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->cursorMoveStyle();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 132, column 11>
-//   // proto:  QSize QLineEdit::minimumSizeHint();
-// _ZNK9QLineEdit15minimumSizeHintEv minimumSizeHint()
-extern "C"
-QSize*
-C_ZNK9QLineEdit15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 141, column 10>
-//   // proto:  void QLineEdit::cursorForward(bool mark, int steps);
-// _ZN9QLineEdit13cursorForwardEbi cursorForward(_Bool, int)
-extern "C"
-void
-C_ZN9QLineEdit13cursorForwardEbi(void *qthis,
-bool arg1,
-int arg2) {
-  ((QLineEdit*)qthis)->cursorForward(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 181, column 10>
-//   // proto:  void QLineEdit::setText(const QString & );
-// _ZN9QLineEdit7setTextERK7QString setText(const class QString &)
-extern "C"
-void
-C_ZN9QLineEdit7setTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLineEdit*)qthis)->setText(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 205, column 10>
-//   // proto:  void QLineEdit::selectionChanged();
-// _ZN9QLineEdit16selectionChangedEv selectionChanged()
-extern "C"
-void
-C_ZN9QLineEdit16selectionChangedEv(void *qthis) {
-  ((QLineEdit*)qthis)->selectionChanged();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 123, column 24>
-//   // proto:  const QValidator * QLineEdit::validator();
-// _ZNK9QLineEdit9validatorEv validator()
-extern "C"
-void*
-C_ZNK9QLineEdit9validatorEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->validator();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 193, column 10>
-//   // proto:  void QLineEdit::deselect();
-// _ZN9QLineEdit8deselectEv deselect()
-extern "C"
-void
-C_ZN9QLineEdit8deselectEv(void *qthis) {
-  ((QLineEdit*)qthis)->deselect();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 203, column 10>
-//   // proto:  void QLineEdit::returnPressed();
-// _ZN9QLineEdit13returnPressedEv returnPressed()
-extern "C"
-void
-C_ZN9QLineEdit13returnPressedEv(void *qthis) {
-  ((QLineEdit*)qthis)->returnPressed();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 167, column 13>
-//   // proto:  QString QLineEdit::inputMask();
-// _ZNK9QLineEdit9inputMaskEv inputMask()
-extern "C"
-QString*
-C_ZNK9QLineEdit9inputMaskEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->inputMask();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 101, column 13>
-//   // proto:  QString QLineEdit::placeholderText();
-// _ZNK9QLineEdit15placeholderTextEv placeholderText()
-extern "C"
-QString*
-C_ZNK9QLineEdit15placeholderTextEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->placeholderText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 187, column 10>
-//   // proto:  void QLineEdit::cut();
-// _ZN9QLineEdit3cutEv cut()
-extern "C"
-void
-C_ZN9QLineEdit3cutEv(void *qthis) {
-  ((QLineEdit*)qthis)->cut();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 139, column 19>
-//   // proto:  Qt::Alignment QLineEdit::alignment();
-// _ZNK9QLineEdit9alignmentEv alignment()
-extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK9QLineEdit9alignmentEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->alignment();
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 177, column 10>
-//   // proto:  void QLineEdit::addAction(QAction * action, QLineEdit::ActionPosition position);
-// _ZN9QLineEdit9addActionEP7QActionNS_14ActionPositionE addAction(class QAction *, enum QLineEdit::ActionPosition)
-extern "C"
-void
-C_ZN9QLineEdit9addActionEP7QActionNS_14ActionPositionE(void *qthis,
-QAction * arg1,
-QLineEdit::ActionPosition arg2) {
-  ((QLineEdit*)qthis)->addAction(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 97, column 13>
-//   // proto:  QString QLineEdit::text();
-// _ZNK9QLineEdit4textEv text()
-extern "C"
-QString*
-C_ZNK9QLineEdit4textEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->text();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 65, column 5>
-//   // proto:  const QMetaObject * QLineEdit::metaObject();
-// _ZNK9QLineEdit10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK9QLineEdit10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->metaObject();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 146, column 10>
-//   // proto:  void QLineEdit::del();
-// _ZN9QLineEdit3delEv del()
-extern "C"
-void
-C_ZN9QLineEdit3delEv(void *qthis) {
-  ((QLineEdit*)qthis)->del();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 150, column 10>
-//   // proto:  bool QLineEdit::isModified();
-// _ZNK9QLineEdit10isModifiedEv isModified()
-extern "C"
-bool
-C_ZNK9QLineEdit10isModifiedEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->isModified();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 204, column 10>
-//   // proto:  void QLineEdit::editingFinished();
-// _ZN9QLineEdit15editingFinishedEv editingFinished()
-extern "C"
-void
-C_ZN9QLineEdit15editingFinishedEv(void *qthis) {
-  ((QLineEdit*)qthis)->editingFinished();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 143, column 10>
-//   // proto:  void QLineEdit::cursorWordForward(bool mark);
-// _ZN9QLineEdit17cursorWordForwardEb cursorWordForward(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit17cursorWordForwardEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->cursorWordForward(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 116, column 10>
-//   // proto:  void QLineEdit::setEchoMode(QLineEdit::EchoMode );
-// _ZN9QLineEdit11setEchoModeENS_8EchoModeE setEchoMode(enum QLineEdit::EchoMode)
-extern "C"
-void
-C_ZN9QLineEdit11setEchoModeENS_8EchoModeE(void *qthis,
-QLineEdit::EchoMode arg1) {
-  ((QLineEdit*)qthis)->setEchoMode(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 183, column 10>
-//   // proto:  void QLineEdit::selectAll();
-// _ZN9QLineEdit9selectAllEv selectAll()
-extern "C"
-void
-C_ZN9QLineEdit9selectAllEv(void *qthis) {
-  ((QLineEdit*)qthis)->selectAll();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 153, column 10>
-//   // proto:  void QLineEdit::setSelection(int , int );
-// _ZN9QLineEdit12setSelectionEii setSelection(int, int)
-extern "C"
-void
-C_ZN9QLineEdit12setSelectionEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QLineEdit*)qthis)->setSelection(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 127, column 10>
-//   // proto:  void QLineEdit::setCompleter(QCompleter * completer);
-// _ZN9QLineEdit12setCompleterEP10QCompleter setCompleter(class QCompleter *)
-extern "C"
-void
-C_ZN9QLineEdit12setCompleterEP10QCompleter(void *qthis,
-QCompleter * arg1) {
-  ((QLineEdit*)qthis)->setCompleter(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 105, column 10>
-//   // proto:  void QLineEdit::setMaxLength(int );
-// _ZN9QLineEdit12setMaxLengthEi setMaxLength(int)
-extern "C"
-void
-C_ZN9QLineEdit12setMaxLengthEi(void *qthis,
-int arg1) {
-  ((QLineEdit*)qthis)->setMaxLength(arg1);
-}
-//   // proto:  void QLineEdit::~QLineEdit();
-extern "C"
-void C_ZN9QLineEditD2Ev(void *qthis) {
-  delete (QLineEdit*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 201, column 10>
-//   // proto:  void QLineEdit::textEdited(const QString & );
-// _ZN9QLineEdit10textEditedERK7QString textEdited(const class QString &)
-extern "C"
-void
-C_ZN9QLineEdit10textEditedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLineEdit*)qthis)->textEdited(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 119, column 10>
-//   // proto:  void QLineEdit::setReadOnly(bool );
-// _ZN9QLineEdit11setReadOnlyEb setReadOnly(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit11setReadOnlyEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->setReadOnly(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 99, column 13>
-//   // proto:  QString QLineEdit::displayText();
-// _ZNK9QLineEdit11displayTextEv displayText()
-extern "C"
-QString*
-C_ZNK9QLineEdit11displayTextEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->displayText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 107, column 10>
-//   // proto:  void QLineEdit::setFrame(bool );
-// _ZN9QLineEdit8setFrameEb setFrame(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit8setFrameEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->setFrame(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 169, column 10>
-//   // proto:  bool QLineEdit::hasAcceptableInput();
-// _ZNK9QLineEdit18hasAcceptableInputEv hasAcceptableInput()
-extern "C"
-bool
-C_ZNK9QLineEdit18hasAcceptableInputEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->hasAcceptableInput();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 108, column 10>
-//   // proto:  bool QLineEdit::hasFrame();
-// _ZNK9QLineEdit8hasFrameEv hasFrame()
-extern "C"
-bool
-C_ZNK9QLineEdit8hasFrameEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->hasFrame();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 134, column 9>
-//   // proto:  int QLineEdit::cursorPosition();
-// _ZNK9QLineEdit14cursorPositionEv cursorPosition()
-extern "C"
-int
-C_ZNK9QLineEdit14cursorPositionEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->cursorPosition();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 144, column 10>
-//   // proto:  void QLineEdit::cursorWordBackward(bool mark);
-// _ZN9QLineEdit18cursorWordBackwardEb cursorWordBackward(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit18cursorWordBackwardEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->cursorWordBackward(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 162, column 10>
-//   // proto:  bool QLineEdit::dragEnabled();
-// _ZNK9QLineEdit11dragEnabledEv dragEnabled()
-extern "C"
-bool
-C_ZNK9QLineEdit11dragEnabledEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->dragEnabled();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 200, column 10>
-//   // proto:  void QLineEdit::textChanged(const QString & );
-// _ZN9QLineEdit11textChangedERK7QString textChanged(const class QString &)
-extern "C"
-void
-C_ZN9QLineEdit11textChangedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLineEdit*)qthis)->textChanged(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 131, column 11>
-//   // proto:  QSize QLineEdit::sizeHint();
-// _ZNK9QLineEdit8sizeHintEv sizeHint()
-extern "C"
-QSize*
-C_ZNK9QLineEdit8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->sizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 189, column 10>
-//   // proto:  void QLineEdit::paste();
-// _ZN9QLineEdit5pasteEv paste()
-extern "C"
-void
-C_ZN9QLineEdit5pasteEv(void *qthis) {
-  ((QLineEdit*)qthis)->paste();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 122, column 10>
-//   // proto:  void QLineEdit::setValidator(const QValidator * );
-// _ZN9QLineEdit12setValidatorEPK10QValidator setValidator(const class QValidator *)
-extern "C"
-void
-C_ZN9QLineEdit12setValidatorEPK10QValidator(void *qthis,
-const QValidator * arg1) {
-  ((QLineEdit*)qthis)->setValidator(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 93, column 14>
-//   // proto:  void QLineEdit::QLineEdit(QWidget * parent);
-extern "C"
-QLineEdit*
-C_ZN9QLineEditC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QLineEdit(arg1);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 128, column 17>
-//   // proto:  QCompleter * QLineEdit::completer();
-// _ZNK9QLineEdit9completerEv completer()
-extern "C"
-void*
-C_ZNK9QLineEdit9completerEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->completer();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 174, column 14>
-//   // proto:  QMargins QLineEdit::textMargins();
-// _ZNK9QLineEdit11textMarginsEv textMargins()
-extern "C"
-QMargins*
-C_ZNK9QLineEdit11textMarginsEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->textMargins();
-  return new QMargins(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 110, column 10>
-//   // proto:  void QLineEdit::setClearButtonEnabled(bool enable);
-// _ZN9QLineEdit21setClearButtonEnabledEb setClearButtonEnabled(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit21setClearButtonEnabledEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->setClearButtonEnabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 155, column 13>
-//   // proto:  QString QLineEdit::selectedText();
-// _ZNK9QLineEdit12selectedTextEv selectedText()
-extern "C"
-QString*
-C_ZNK9QLineEdit12selectedTextEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->selectedText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 115, column 14>
-//   // proto:  QLineEdit::EchoMode QLineEdit::echoMode();
-// _ZNK9QLineEdit8echoModeEv echoMode()
-extern "C"
-QLineEdit::EchoMode
-C_ZNK9QLineEdit8echoModeEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->echoMode();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 182, column 10>
-//   // proto:  void QLineEdit::clear();
-// _ZN9QLineEdit5clearEv clear()
-extern "C"
-void
-C_ZN9QLineEdit5clearEv(void *qthis) {
-  ((QLineEdit*)qthis)->clear();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 202, column 10>
-//   // proto:  void QLineEdit::cursorPositionChanged(int , int );
-// _ZN9QLineEdit21cursorPositionChangedEii cursorPositionChanged(int, int)
-extern "C"
-void
-C_ZN9QLineEdit21cursorPositionChangedEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QLineEdit*)qthis)->cursorPositionChanged(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 188, column 10>
-//   // proto:  void QLineEdit::copy();
-// _ZNK9QLineEdit4copyEv copy()
-extern "C"
-void
-C_ZNK9QLineEdit4copyEv(void *qthis) {
-  ((QLineEdit*)qthis)->copy();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 158, column 10>
-//   // proto:  bool QLineEdit::isUndoAvailable();
-// _ZNK9QLineEdit15isUndoAvailableEv isUndoAvailable()
-extern "C"
-bool
-C_ZNK9QLineEdit15isUndoAvailableEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->isUndoAvailable();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 184, column 10>
-//   // proto:  void QLineEdit::undo();
-// _ZN9QLineEdit4undoEv undo()
-extern "C"
-void
-C_ZN9QLineEdit4undoEv(void *qthis) {
-  ((QLineEdit*)qthis)->undo();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 111, column 10>
-//   // proto:  bool QLineEdit::isClearButtonEnabled();
-// _ZNK9QLineEdit20isClearButtonEnabledEv isClearButtonEnabled()
-extern "C"
-bool
-C_ZNK9QLineEdit20isClearButtonEnabledEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->isClearButtonEnabled();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 148, column 10>
-//   // proto:  void QLineEdit::end(bool mark);
-// _ZN9QLineEdit3endEb end(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit3endEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->end(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 178, column 14>
-//   // proto:  QAction * QLineEdit::addAction(const QIcon & icon, QLineEdit::ActionPosition position);
-// _ZN9QLineEdit9addActionERK5QIconNS_14ActionPositionE addAction(const class QIcon &, enum QLineEdit::ActionPosition)
-extern "C"
-void*
-C_ZN9QLineEdit9addActionERK5QIconNS_14ActionPositionE(void *qthis,
-const QIcon* arg1,
-QLineEdit::ActionPosition arg2) {
-  auto ret =
-  ((QLineEdit*)qthis)->addAction(*((const QIcon*)arg1),
-arg2);
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 161, column 10>
-//   // proto:  void QLineEdit::setDragEnabled(bool b);
-// _ZN9QLineEdit14setDragEnabledEb setDragEnabled(_Bool)
-extern "C"
-void
-C_ZN9QLineEdit14setDragEnabledEb(void *qthis,
-bool arg1) {
-  ((QLineEdit*)qthis)->setDragEnabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 145, column 10>
-//   // proto:  void QLineEdit::backspace();
-// _ZN9QLineEdit9backspaceEv backspace()
-extern "C"
-void
-C_ZN9QLineEdit9backspaceEv(void *qthis) {
-  ((QLineEdit*)qthis)->backspace();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 185, column 10>
-//   // proto:  void QLineEdit::redo();
-// _ZN9QLineEdit4redoEv redo()
-extern "C"
-void
-C_ZN9QLineEdit4redoEv(void *qthis) {
-  ((QLineEdit*)qthis)->redo();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 171, column 10>
-//   // proto:  void QLineEdit::setTextMargins(int left, int top, int right, int bottom);
-// _ZN9QLineEdit14setTextMarginsEiiii setTextMargins(int, int, int, int)
-extern "C"
-void
-C_ZN9QLineEdit14setTextMarginsEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QLineEdit*)qthis)->setTextMargins(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 168, column 10>
-//   // proto:  void QLineEdit::setInputMask(const QString & inputMask);
-// _ZN9QLineEdit12setInputMaskERK7QString setInputMask(const class QString &)
-extern "C"
-void
-C_ZN9QLineEdit12setInputMaskERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLineEdit*)qthis)->setInputMask(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 173, column 10>
-//   // proto:  void QLineEdit::getTextMargins(int * left, int * top, int * right, int * bottom);
-// _ZNK9QLineEdit14getTextMarginsEPiS0_S0_S0_ getTextMargins(int *, int *, int *, int *)
-extern "C"
-void
-C_ZNK9QLineEdit14getTextMarginsEPiS0_S0_S0_(void *qthis,
-int * arg1,
-int * arg2,
-int * arg3,
-int * arg4) {
-  ((QLineEdit*)qthis)->getTextMargins(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 231, column 26>
-//   // proto:  QVariant QLineEdit::inputMethodQuery(Qt::InputMethodQuery property, QVariant argument);
-// _ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant inputMethodQuery(Qt::InputMethodQuery, class QVariant)
-extern "C"
-QVariant*
-C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *qthis,
-Qt::InputMethodQuery* arg1,
-QVariant* arg2) {
-  auto ret =
-  ((QLineEdit*)qthis)->inputMethodQuery(*((Qt::InputMethodQuery*)arg1),
-*((QVariant*)arg2));
-  return new QVariant(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlineedit.h', line 118, column 10>
-//   // proto:  bool QLineEdit::isReadOnly();
-// _ZNK9QLineEdit10isReadOnlyEv isReadOnly()
-extern "C"
-bool
-C_ZNK9QLineEdit10isReadOnlyEv(void *qthis) {
-  auto ret =
-  ((QLineEdit*)qthis)->isReadOnly();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// QLineEdit_SlotProxy here
-class QLineEdit_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QLineEdit_SlotProxy():QObject(){}
-
-public slots:
-  // textChanged(const class QString &)
-  void slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN9QLineEdit11textChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public slots:
-  // editingFinished()
-  void slot_proxy_func__ZN9QLineEdit15editingFinishedEv();
-public:
-  void (*slot_func__ZN9QLineEdit15editingFinishedEv)(void* rsfptr) = NULL;
-public slots:
-  // selectionChanged()
-  void slot_proxy_func__ZN9QLineEdit16selectionChangedEv();
-public:
-  void (*slot_func__ZN9QLineEdit16selectionChangedEv)(void* rsfptr) = NULL;
-public slots:
-  // cursorPositionChanged(int, int)
-  void slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1);
-public:
-  void (*slot_func__ZN9QLineEdit21cursorPositionChangedEii)(void* rsfptr, int arg0, int arg1) = NULL;
-public slots:
-  // returnPressed()
-  void slot_proxy_func__ZN9QLineEdit13returnPressedEv();
-public:
-  void (*slot_func__ZN9QLineEdit13returnPressedEv)(void* rsfptr) = NULL;
-public slots:
-  // textEdited(const class QString &)
-  void slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN9QLineEdit10textEditedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qlineedit.moc"
-
-extern "C" {
-  QLineEdit_SlotProxy* QLineEdit_SlotProxy_new()
-  {
-    return new QLineEdit_SlotProxy();
-  }
-};
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN9QLineEdit11textChangedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit11textChangedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit11textChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit11textChangedERK7QString = (decltype(that->slot_func__ZN9QLineEdit11textChangedERK7QString))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(textChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN9QLineEdit11textChangedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit11textChangedERK7QString(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit15editingFinishedEv() {
-  if (this->slot_func__ZN9QLineEdit15editingFinishedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit15editingFinishedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit15editingFinishedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit15editingFinishedEv = (decltype(that->slot_func__ZN9QLineEdit15editingFinishedEv))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(editingFinished()), that, SLOT(slot_proxy_func__ZN9QLineEdit15editingFinishedEv()));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit15editingFinishedEv(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit16selectionChangedEv() {
-  if (this->slot_func__ZN9QLineEdit16selectionChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit16selectionChangedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit16selectionChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit16selectionChangedEv = (decltype(that->slot_func__ZN9QLineEdit16selectionChangedEv))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(selectionChanged()), that, SLOT(slot_proxy_func__ZN9QLineEdit16selectionChangedEv()));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit16selectionChangedEv(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1) {
-  if (this->slot_func__ZN9QLineEdit21cursorPositionChangedEii != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit21cursorPositionChangedEii(this->rsfptr, arg0, arg1);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit21cursorPositionChangedEii(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit21cursorPositionChangedEii = (decltype(that->slot_func__ZN9QLineEdit21cursorPositionChangedEii))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(cursorPositionChanged(int, int)), that, SLOT(slot_proxy_func__ZN9QLineEdit21cursorPositionChangedEii(int arg0, int arg1)));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit21cursorPositionChangedEii(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit13returnPressedEv() {
-  if (this->slot_func__ZN9QLineEdit13returnPressedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit13returnPressedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit13returnPressedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit13returnPressedEv = (decltype(that->slot_func__ZN9QLineEdit13returnPressedEv))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(returnPressed()), that, SLOT(slot_proxy_func__ZN9QLineEdit13returnPressedEv()));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit13returnPressedEv(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QLineEdit_SlotProxy::slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN9QLineEdit10textEditedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN9QLineEdit10textEditedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QLineEdit_SlotProxy_connect__ZN9QLineEdit10textEditedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLineEdit_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QLineEdit10textEditedERK7QString = (decltype(that->slot_func__ZN9QLineEdit10textEditedERK7QString))ffifptr;
-  QObject::connect((QLineEdit*)sender, SIGNAL(textEdited(const class QString &)), that, SLOT(slot_proxy_func__ZN9QLineEdit10textEditedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QLineEdit_SlotProxy_disconnect__ZN9QLineEdit10textEditedERK7QString(QLineEdit_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:65
+// const QMetaObject * metaObject()
+extern "C"
+void C_ZNK9QLineEdit10metaObjectEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->metaObject();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:93
+// void QLineEdit(class QWidget *)
+extern "C"
+void* C_ZN9QLineEditC1EP7QWidget(QWidget * parent) {
+  return new QLineEdit(parent);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:94
+// void QLineEdit(const class QString &, class QWidget *)
+extern "C"
+void* C_ZN9QLineEditC1ERK7QStringP7QWidget(const QString & a0, QWidget * parent) {
+  return new QLineEdit(a0, parent);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:95
+// void ~QLineEdit()
+extern "C"
+void C_ZN9QLineEditD1Ev(void *this_) {
+  delete (QLineEdit*)(this_);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:97
+// QString text()
+extern "C"
+void C_ZNK9QLineEdit4textEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->text();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:99
+// QString displayText()
+extern "C"
+void C_ZNK9QLineEdit11displayTextEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->displayText();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:101
+// QString placeholderText()
+extern "C"
+void C_ZNK9QLineEdit15placeholderTextEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->placeholderText();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:102
+// void setPlaceholderText(const class QString &)
+extern "C"
+void C_ZN9QLineEdit18setPlaceholderTextERK7QString(void *this_, const QString & a0) {
+  ((QLineEdit*)this_)->setPlaceholderText(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:104
+// int maxLength()
+extern "C"
+void C_ZNK9QLineEdit9maxLengthEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->maxLength();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:105
+// void setMaxLength(int)
+extern "C"
+void C_ZN9QLineEdit12setMaxLengthEi(void *this_, int a0) {
+  ((QLineEdit*)this_)->setMaxLength(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:107
+// void setFrame(_Bool)
+extern "C"
+void C_ZN9QLineEdit8setFrameEb(void *this_, bool a0) {
+  ((QLineEdit*)this_)->setFrame(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:108
+// bool hasFrame()
+extern "C"
+void C_ZNK9QLineEdit8hasFrameEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->hasFrame();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:110
+// void setClearButtonEnabled(_Bool)
+extern "C"
+void C_ZN9QLineEdit21setClearButtonEnabledEb(void *this_, bool enable) {
+  ((QLineEdit*)this_)->setClearButtonEnabled(enable);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:111
+// bool isClearButtonEnabled()
+extern "C"
+void C_ZNK9QLineEdit20isClearButtonEnabledEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->isClearButtonEnabled();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:115
+// QLineEdit::EchoMode echoMode()
+extern "C"
+void C_ZNK9QLineEdit8echoModeEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->echoMode();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:116
+// void setEchoMode(enum QLineEdit::EchoMode)
+extern "C"
+void C_ZN9QLineEdit11setEchoModeENS_8EchoModeE(void *this_, QLineEdit::EchoMode a0) {
+  ((QLineEdit*)this_)->setEchoMode(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:118
+// bool isReadOnly()
+extern "C"
+void C_ZNK9QLineEdit10isReadOnlyEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->isReadOnly();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:119
+// void setReadOnly(_Bool)
+extern "C"
+void C_ZN9QLineEdit11setReadOnlyEb(void *this_, bool a0) {
+  ((QLineEdit*)this_)->setReadOnly(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:122
+// void setValidator(const class QValidator *)
+extern "C"
+void C_ZN9QLineEdit12setValidatorEPK10QValidator(void *this_, const QValidator * a0) {
+  ((QLineEdit*)this_)->setValidator(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:123
+// const QValidator * validator()
+extern "C"
+void C_ZNK9QLineEdit9validatorEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->validator();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:127
+// void setCompleter(class QCompleter *)
+extern "C"
+void C_ZN9QLineEdit12setCompleterEP10QCompleter(void *this_, QCompleter * completer) {
+  ((QLineEdit*)this_)->setCompleter(completer);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:128
+// QCompleter * completer()
+extern "C"
+void C_ZNK9QLineEdit9completerEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->completer();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:131
+// QSize sizeHint()
+extern "C"
+void C_ZNK9QLineEdit8sizeHintEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->sizeHint();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:132
+// QSize minimumSizeHint()
+extern "C"
+void C_ZNK9QLineEdit15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->minimumSizeHint();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:134
+// int cursorPosition()
+extern "C"
+void C_ZNK9QLineEdit14cursorPositionEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->cursorPosition();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:135
+// void setCursorPosition(int)
+extern "C"
+void C_ZN9QLineEdit17setCursorPositionEi(void *this_, int a0) {
+  ((QLineEdit*)this_)->setCursorPosition(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:136
+// int cursorPositionAt(const class QPoint &)
+extern "C"
+void C_ZN9QLineEdit16cursorPositionAtERK6QPoint(void *this_, const QPoint & pos) {
+  /*return*/ ((QLineEdit*)this_)->cursorPositionAt(pos);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:138
+// void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN9QLineEdit12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> flag) {
+  ((QLineEdit*)this_)->setAlignment(flag);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:139
+// Qt::Alignment alignment()
+extern "C"
+void C_ZNK9QLineEdit9alignmentEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->alignment();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:141
+// void cursorForward(_Bool, int)
+extern "C"
+void C_ZN9QLineEdit13cursorForwardEbi(void *this_, bool mark, int steps) {
+  ((QLineEdit*)this_)->cursorForward(mark, steps);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:142
+// void cursorBackward(_Bool, int)
+extern "C"
+void C_ZN9QLineEdit14cursorBackwardEbi(void *this_, bool mark, int steps) {
+  ((QLineEdit*)this_)->cursorBackward(mark, steps);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:143
+// void cursorWordForward(_Bool)
+extern "C"
+void C_ZN9QLineEdit17cursorWordForwardEb(void *this_, bool mark) {
+  ((QLineEdit*)this_)->cursorWordForward(mark);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:144
+// void cursorWordBackward(_Bool)
+extern "C"
+void C_ZN9QLineEdit18cursorWordBackwardEb(void *this_, bool mark) {
+  ((QLineEdit*)this_)->cursorWordBackward(mark);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:145
+// void backspace()
+extern "C"
+void C_ZN9QLineEdit9backspaceEv(void *this_) {
+  ((QLineEdit*)this_)->backspace();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:146
+// void del()
+extern "C"
+void C_ZN9QLineEdit3delEv(void *this_) {
+  ((QLineEdit*)this_)->del();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:147
+// void home(_Bool)
+extern "C"
+void C_ZN9QLineEdit4homeEb(void *this_, bool mark) {
+  ((QLineEdit*)this_)->home(mark);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:148
+// void end(_Bool)
+extern "C"
+void C_ZN9QLineEdit3endEb(void *this_, bool mark) {
+  ((QLineEdit*)this_)->end(mark);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:150
+// bool isModified()
+extern "C"
+void C_ZNK9QLineEdit10isModifiedEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->isModified();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:151
+// void setModified(_Bool)
+extern "C"
+void C_ZN9QLineEdit11setModifiedEb(void *this_, bool a0) {
+  ((QLineEdit*)this_)->setModified(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:153
+// void setSelection(int, int)
+extern "C"
+void C_ZN9QLineEdit12setSelectionEii(void *this_, int a0, int a1) {
+  ((QLineEdit*)this_)->setSelection(a0, a1);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:154
+// bool hasSelectedText()
+extern "C"
+void C_ZNK9QLineEdit15hasSelectedTextEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->hasSelectedText();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:155
+// QString selectedText()
+extern "C"
+void C_ZNK9QLineEdit12selectedTextEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->selectedText();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:156
+// int selectionStart()
+extern "C"
+void C_ZNK9QLineEdit14selectionStartEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->selectionStart();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:158
+// bool isUndoAvailable()
+extern "C"
+void C_ZNK9QLineEdit15isUndoAvailableEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->isUndoAvailable();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:159
+// bool isRedoAvailable()
+extern "C"
+void C_ZNK9QLineEdit15isRedoAvailableEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->isRedoAvailable();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:161
+// void setDragEnabled(_Bool)
+extern "C"
+void C_ZN9QLineEdit14setDragEnabledEb(void *this_, bool b) {
+  ((QLineEdit*)this_)->setDragEnabled(b);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:162
+// bool dragEnabled()
+extern "C"
+void C_ZNK9QLineEdit11dragEnabledEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->dragEnabled();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:164
+// void setCursorMoveStyle(Qt::CursorMoveStyle)
+extern "C"
+void C_ZN9QLineEdit18setCursorMoveStyleEN2Qt15CursorMoveStyleE(void *this_, Qt::CursorMoveStyle style) {
+  ((QLineEdit*)this_)->setCursorMoveStyle(style);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:165
+// Qt::CursorMoveStyle cursorMoveStyle()
+extern "C"
+void C_ZNK9QLineEdit15cursorMoveStyleEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->cursorMoveStyle();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:167
+// QString inputMask()
+extern "C"
+void C_ZNK9QLineEdit9inputMaskEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->inputMask();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:168
+// void setInputMask(const class QString &)
+extern "C"
+void C_ZN9QLineEdit12setInputMaskERK7QString(void *this_, const QString & inputMask) {
+  ((QLineEdit*)this_)->setInputMask(inputMask);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:169
+// bool hasAcceptableInput()
+extern "C"
+void C_ZNK9QLineEdit18hasAcceptableInputEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->hasAcceptableInput();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:171
+// void setTextMargins(int, int, int, int)
+extern "C"
+void C_ZN9QLineEdit14setTextMarginsEiiii(void *this_, int left, int top, int right, int bottom) {
+  ((QLineEdit*)this_)->setTextMargins(left, top, right, bottom);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:172
+// void setTextMargins(const class QMargins &)
+extern "C"
+void C_ZN9QLineEdit14setTextMarginsERK8QMargins(void *this_, const QMargins & margins) {
+  ((QLineEdit*)this_)->setTextMargins(margins);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:173
+// void getTextMargins(int *, int *, int *, int *)
+extern "C"
+void C_ZNK9QLineEdit14getTextMarginsEPiS0_S0_S0_(void *this_, int * left, int * top, int * right, int * bottom) {
+  ((QLineEdit*)this_)->getTextMargins(left, top, right, bottom);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:174
+// QMargins textMargins()
+extern "C"
+void C_ZNK9QLineEdit11textMarginsEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->textMargins();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:177
+// void addAction(class QAction *, enum QLineEdit::ActionPosition)
+extern "C"
+void C_ZN9QLineEdit9addActionEP7QActionNS_14ActionPositionE(void *this_, QAction * action, QLineEdit::ActionPosition position) {
+  ((QLineEdit*)this_)->addAction(action, position);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:178
+// QAction * addAction(const class QIcon &, enum QLineEdit::ActionPosition)
+extern "C"
+void C_ZN9QLineEdit9addActionERK5QIconNS_14ActionPositionE(void *this_, const QIcon & icon, QLineEdit::ActionPosition position) {
+  /*return*/ ((QLineEdit*)this_)->addAction(icon, position);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:181
+// void setText(const class QString &)
+extern "C"
+void C_ZN9QLineEdit7setTextERK7QString(void *this_, const QString & a0) {
+  ((QLineEdit*)this_)->setText(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:182
+// void clear()
+extern "C"
+void C_ZN9QLineEdit5clearEv(void *this_) {
+  ((QLineEdit*)this_)->clear();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:183
+// void selectAll()
+extern "C"
+void C_ZN9QLineEdit9selectAllEv(void *this_) {
+  ((QLineEdit*)this_)->selectAll();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:184
+// void undo()
+extern "C"
+void C_ZN9QLineEdit4undoEv(void *this_) {
+  ((QLineEdit*)this_)->undo();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:185
+// void redo()
+extern "C"
+void C_ZN9QLineEdit4redoEv(void *this_) {
+  ((QLineEdit*)this_)->redo();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:187
+// void cut()
+extern "C"
+void C_ZN9QLineEdit3cutEv(void *this_) {
+  ((QLineEdit*)this_)->cut();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:188
+// void copy()
+extern "C"
+void C_ZNK9QLineEdit4copyEv(void *this_) {
+  ((QLineEdit*)this_)->copy();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:189
+// void paste()
+extern "C"
+void C_ZN9QLineEdit5pasteEv(void *this_) {
+  ((QLineEdit*)this_)->paste();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:193
+// void deselect()
+extern "C"
+void C_ZN9QLineEdit8deselectEv(void *this_) {
+  ((QLineEdit*)this_)->deselect();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:196
+// QMenu * createStandardContextMenu()
+extern "C"
+void C_ZN9QLineEdit25createStandardContextMenuEv(void *this_) {
+  /*return*/ ((QLineEdit*)this_)->createStandardContextMenu();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:200
+// void textChanged(const class QString &)
+extern "C"
+void C_ZN9QLineEdit11textChangedERK7QString(void *this_, const QString & a0) {
+  ((QLineEdit*)this_)->textChanged(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:201
+// void textEdited(const class QString &)
+extern "C"
+void C_ZN9QLineEdit10textEditedERK7QString(void *this_, const QString & a0) {
+  ((QLineEdit*)this_)->textEdited(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:202
+// void cursorPositionChanged(int, int)
+extern "C"
+void C_ZN9QLineEdit21cursorPositionChangedEii(void *this_, int a0, int a1) {
+  ((QLineEdit*)this_)->cursorPositionChanged(a0, a1);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:203
+// void returnPressed()
+extern "C"
+void C_ZN9QLineEdit13returnPressedEv(void *this_) {
+  ((QLineEdit*)this_)->returnPressed();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:204
+// void editingFinished()
+extern "C"
+void C_ZN9QLineEdit15editingFinishedEv(void *this_) {
+  ((QLineEdit*)this_)->editingFinished();
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:205
+// void selectionChanged()
+extern "C"
+void C_ZN9QLineEdit16selectionChangedEv(void *this_) {
+  ((QLineEdit*)this_)->selectionChanged();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:230
+// QVariant inputMethodQuery(Qt::InputMethodQuery)
+extern "C"
+void C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery a0) {
+  /*return*/ ((QLineEdit*)this_)->inputMethodQuery(a0);
+}
+// /usr/include/qt/QtWidgets/qlineedit.h:231
+// QVariant inputMethodQuery(Qt::InputMethodQuery, class QVariant)
+extern "C"
+void C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *this_, Qt::InputMethodQuery property, QVariant argument) {
+  /*return*/ ((QLineEdit*)this_)->inputMethodQuery(property, argument);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qlineedit.h:232
+// bool event(class QEvent *)
+extern "C"
+void C_ZN9QLineEdit5eventEP6QEvent(void *this_, QEvent * a0) {
+  /*return*/ ((QLineEdit*)this_)->event(a0);
+}

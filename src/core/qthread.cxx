@@ -1,305 +1,176 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qthread.h
-// dst-file: /src/core/qthread.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qthread.h
 #include <qthread.h>
+#include <QtCore>
 
-
-#include <qglobal.h>
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qthread_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qthread.h:57
+// const QMetaObject * metaObject()
 extern "C"
-int QThread_Class_Size()
-{
-  return sizeof(QThread);
+void C_ZNK7QThread10metaObjectEv(void *this_) {
+  /*return*/ ((QThread*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 64, column 14>
-//   // proto:  void QThread::QThread(QObject * parent);
+// static
+// /usr/include/qt/QtCore/qthread.h:59
+// Qt::HANDLE currentThreadId()
 extern "C"
-QThread*
-C_ZN7QThreadC2EP7QObject(QObject * arg1) {
-  auto ret = new QThread(arg1);
-  return ret;
+void C_ZN7QThread15currentThreadIdEv() {
+  /*return*/ QThread::currentThreadId();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 96, column 10>
-//   // proto:  void QThread::setEventDispatcher(QAbstractEventDispatcher * eventDispatcher);
-// _ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher setEventDispatcher(class QAbstractEventDispatcher *)
+// static
+// /usr/include/qt/QtCore/qthread.h:60
+// QThread * currentThread()
 extern "C"
-void
-C_ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher(void *qthis,
-QAbstractEventDispatcher * arg1) {
-  ((QThread*)qthis)->setEventDispatcher(arg1);
+void C_ZN7QThread13currentThreadEv() {
+  /*return*/ QThread::currentThread();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 57, column 5>
-//   // proto:  const QMetaObject * QThread::metaObject();
-// _ZNK7QThread10metaObjectEv metaObject()
+// static
+// /usr/include/qt/QtCore/qthread.h:61
+// int idealThreadCount()
 extern "C"
-void*
-C_ZNK7QThread10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN7QThread16idealThreadCountEv() {
+  /*return*/ QThread::idealThreadCount();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 81, column 10>
-//   // proto:  void QThread::setPriority(QThread::Priority priority);
-// _ZN7QThread11setPriorityENS_8PriorityE setPriority(enum QThread::Priority)
+// static
+// /usr/include/qt/QtCore/qthread.h:62
+// void yieldCurrentThread()
 extern "C"
-void
-C_ZN7QThread11setPriorityENS_8PriorityE(void *qthis,
-QThread::Priority arg1) {
-  ((QThread*)qthis)->setPriority(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 62, column 17>
-//   // proto: static void QThread::yieldCurrentThread();
-// _ZN7QThread18yieldCurrentThreadEv yieldCurrentThread()
-extern "C"
-void
-C_ZN7QThread18yieldCurrentThreadEv() {
+void C_ZN7QThread18yieldCurrentThreadEv() {
   QThread::yieldCurrentThread();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 88, column 10>
-//   // proto:  bool QThread::isInterruptionRequested();
-// _ZNK7QThread23isInterruptionRequestedEv isInterruptionRequested()
+// /usr/include/qt/QtCore/qthread.h:64
+// void QThread(class QObject *)
 extern "C"
-bool
-C_ZNK7QThread23isInterruptionRequestedEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->isInterruptionRequested();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QThreadC1EP7QObject(QObject * parent) {
+  return new QThread(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 82, column 14>
-//   // proto:  QThread::Priority QThread::priority();
-// _ZNK7QThread8priorityEv priority()
+// virtual
+// /usr/include/qt/QtCore/qthread.h:65
+// void ~QThread()
 extern "C"
-QThread::Priority
-C_ZNK7QThread8priorityEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->priority();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN7QThreadD1Ev(void *this_) {
+  delete (QThread*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 111, column 17>
-//   // proto: static void QThread::msleep(unsigned long );
-// _ZN7QThread6msleepEm msleep(unsigned long)
+// /usr/include/qt/QtCore/qthread.h:81
+// void setPriority(enum QThread::Priority)
 extern "C"
-void
-C_ZN7QThread6msleepEm(unsigned long arg1) {
-  QThread::msleep(arg1);
+void C_ZN7QThread11setPriorityENS_8PriorityE(void *this_, QThread::Priority priority) {
+  ((QThread*)this_)->setPriority(priority);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 87, column 10>
-//   // proto:  void QThread::requestInterruption();
-// _ZN7QThread19requestInterruptionEv requestInterruption()
+// /usr/include/qt/QtCore/qthread.h:82
+// QThread::Priority priority()
 extern "C"
-void
-C_ZN7QThread19requestInterruptionEv(void *qthis) {
-  ((QThread*)qthis)->requestInterruption();
+void C_ZNK7QThread8priorityEv(void *this_) {
+  /*return*/ ((QThread*)this_)->priority();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 93, column 10>
-//   // proto:  void QThread::exit(int retcode);
-// _ZN7QThread4exitEi exit(int)
+// /usr/include/qt/QtCore/qthread.h:84
+// bool isFinished()
 extern "C"
-void
-C_ZN7QThread4exitEi(void *qthis,
-int arg1) {
-  ((QThread*)qthis)->exit(arg1);
+void C_ZNK7QThread10isFinishedEv(void *this_) {
+  /*return*/ ((QThread*)this_)->isFinished();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 98, column 10>
-//   // proto:  bool QThread::event(QEvent * event);
-// _ZN7QThread5eventEP6QEvent event(class QEvent *)
+// /usr/include/qt/QtCore/qthread.h:85
+// bool isRunning()
 extern "C"
-bool
-C_ZN7QThread5eventEP6QEvent(void *qthis,
-QEvent * arg1) {
-  auto ret =
-  ((QThread*)qthis)->event(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QThread9isRunningEv(void *this_) {
+  /*return*/ ((QThread*)this_)->isRunning();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 91, column 10>
-//   // proto:  uint QThread::stackSize();
-// _ZNK7QThread9stackSizeEv stackSize()
+// /usr/include/qt/QtCore/qthread.h:87
+// void requestInterruption()
 extern "C"
-unsigned int
-C_ZNK7QThread9stackSizeEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->stackSize();
-  return ret; // 0 TypeKind.UINT
+void C_ZN7QThread19requestInterruptionEv(void *this_) {
+  ((QThread*)this_)->requestInterruption();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 95, column 31>
-//   // proto:  QAbstractEventDispatcher * QThread::eventDispatcher();
-// _ZNK7QThread15eventDispatcherEv eventDispatcher()
+// /usr/include/qt/QtCore/qthread.h:88
+// bool isInterruptionRequested()
 extern "C"
-void*
-C_ZNK7QThread15eventDispatcherEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->eventDispatcher();
-  return (void*)ret;
+void C_ZNK7QThread23isInterruptionRequestedEv(void *this_) {
+  /*return*/ ((QThread*)this_)->isInterruptionRequested();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 90, column 10>
-//   // proto:  void QThread::setStackSize(uint stackSize);
-// _ZN7QThread12setStackSizeEj setStackSize(uint)
+// /usr/include/qt/QtCore/qthread.h:90
+// void setStackSize(uint)
 extern "C"
-void
-C_ZN7QThread12setStackSizeEj(void *qthis,
-uint arg1) {
-  ((QThread*)qthis)->setStackSize(arg1);
+void C_ZN7QThread12setStackSizeEj(void *this_, uint stackSize) {
+  ((QThread*)this_)->setStackSize(stackSize);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 59, column 23>
-//   // proto: static Qt::HANDLE QThread::currentThreadId();
-// _ZN7QThread15currentThreadIdEv currentThreadId()
+// /usr/include/qt/QtCore/qthread.h:91
+// uint stackSize()
 extern "C"
-void*
-C_ZN7QThread15currentThreadIdEv() {
-  auto ret =
-  QThread::currentThreadId();
-  return (void*)ret;
+void C_ZNK7QThread9stackSizeEv(void *this_) {
+  /*return*/ ((QThread*)this_)->stackSize();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 84, column 10>
-//   // proto:  bool QThread::isFinished();
-// _ZNK7QThread10isFinishedEv isFinished()
+// /usr/include/qt/QtCore/qthread.h:93
+// void exit(int)
 extern "C"
-bool
-C_ZNK7QThread10isFinishedEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->isFinished();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QThread4exitEi(void *this_, int retcode) {
+  ((QThread*)this_)->exit(retcode);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 102, column 10>
-//   // proto:  void QThread::start(QThread::Priority );
-// _ZN7QThread5startENS_8PriorityE start(enum QThread::Priority)
+// /usr/include/qt/QtCore/qthread.h:95
+// QAbstractEventDispatcher * eventDispatcher()
 extern "C"
-void
-C_ZN7QThread5startENS_8PriorityE(void *qthis,
-QThread::Priority arg1) {
-  ((QThread*)qthis)->start(arg1);
+void C_ZNK7QThread15eventDispatcherEv(void *this_) {
+  /*return*/ ((QThread*)this_)->eventDispatcher();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 110, column 17>
-//   // proto: static void QThread::sleep(unsigned long );
-// _ZN7QThread5sleepEm sleep(unsigned long)
+// /usr/include/qt/QtCore/qthread.h:96
+// void setEventDispatcher(class QAbstractEventDispatcher *)
 extern "C"
-void
-C_ZN7QThread5sleepEm(unsigned long arg1) {
-  QThread::sleep(arg1);
+void C_ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher(void *this_, QAbstractEventDispatcher * eventDispatcher) {
+  ((QThread*)this_)->setEventDispatcher(eventDispatcher);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 112, column 17>
-//   // proto: static void QThread::usleep(unsigned long );
-// _ZN7QThread6usleepEm usleep(unsigned long)
+// virtual
+// /usr/include/qt/QtCore/qthread.h:98
+// bool event(class QEvent *)
 extern "C"
-void
-C_ZN7QThread6usleepEm(unsigned long arg1) {
-  QThread::usleep(arg1);
+void C_ZN7QThread5eventEP6QEvent(void *this_, QEvent * event) {
+  /*return*/ ((QThread*)this_)->event(event);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 61, column 16>
-//   // proto: static int QThread::idealThreadCount();
-// _ZN7QThread16idealThreadCountEv idealThreadCount()
+// /usr/include/qt/QtCore/qthread.h:99
+// int loopLevel()
 extern "C"
-int
-C_ZN7QThread16idealThreadCountEv() {
-  auto ret =
-  QThread::idealThreadCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QThread9loopLevelEv(void *this_) {
+  /*return*/ ((QThread*)this_)->loopLevel();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 108, column 10>
-//   // proto:  bool QThread::wait(unsigned long time);
-// _ZN7QThread4waitEm wait(unsigned long)
+// /usr/include/qt/QtCore/qthread.h:102
+// void start(enum QThread::Priority)
 extern "C"
-bool
-C_ZN7QThread4waitEm(void *qthis,
-unsigned long arg1) {
-  auto ret =
-  ((QThread*)qthis)->wait(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QThread5startENS_8PriorityE(void *this_, QThread::Priority a0) {
+  ((QThread*)this_)->start(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 60, column 21>
-//   // proto: static QThread * QThread::currentThread();
-// _ZN7QThread13currentThreadEv currentThread()
+// /usr/include/qt/QtCore/qthread.h:103
+// void terminate()
 extern "C"
-void*
-C_ZN7QThread13currentThreadEv() {
-  auto ret =
-  QThread::currentThread();
-  return (void*)ret;
+void C_ZN7QThread9terminateEv(void *this_) {
+  ((QThread*)this_)->terminate();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 85, column 10>
-//   // proto:  bool QThread::isRunning();
-// _ZNK7QThread9isRunningEv isRunning()
+// /usr/include/qt/QtCore/qthread.h:104
+// void quit()
 extern "C"
-bool
-C_ZNK7QThread9isRunningEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->isRunning();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QThread4quitEv(void *this_) {
+  ((QThread*)this_)->quit();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 103, column 10>
-//   // proto:  void QThread::terminate();
-// _ZN7QThread9terminateEv terminate()
+// /usr/include/qt/QtCore/qthread.h:108
+// bool wait(unsigned long)
 extern "C"
-void
-C_ZN7QThread9terminateEv(void *qthis) {
-  ((QThread*)qthis)->terminate();
+void C_ZN7QThread4waitEm(void *this_, unsigned long time) {
+  /*return*/ ((QThread*)this_)->wait(time);
 }
-//   // proto:  void QThread::~QThread();
+// static
+// /usr/include/qt/QtCore/qthread.h:110
+// void sleep(unsigned long)
 extern "C"
-void C_ZN7QThreadD2Ev(void *qthis) {
-  delete (QThread*)qthis;
+void C_ZN7QThread5sleepEm(unsigned long a0) {
+  QThread::sleep(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 104, column 10>
-//   // proto:  void QThread::quit();
-// _ZN7QThread4quitEv quit()
+// static
+// /usr/include/qt/QtCore/qthread.h:111
+// void msleep(unsigned long)
 extern "C"
-void
-C_ZN7QThread4quitEv(void *qthis) {
-  ((QThread*)qthis)->quit();
+void C_ZN7QThread6msleepEm(unsigned long a0) {
+  QThread::msleep(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthread.h', line 99, column 9>
-//   // proto:  int QThread::loopLevel();
-// _ZNK7QThread9loopLevelEv loopLevel()
+// static
+// /usr/include/qt/QtCore/qthread.h:112
+// void usleep(unsigned long)
 extern "C"
-int
-C_ZNK7QThread9loopLevelEv(void *qthis) {
-  auto ret =
-  ((QThread*)qthis)->loopLevel();
-  return ret; // 0 TypeKind.INT
+void C_ZN7QThread6usleepEm(unsigned long a0) {
+  QThread::usleep(a0);
 }
-// <= ext block end
-
-// body block begin =>
-// QThread_SlotProxy here
-class QThread_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QThread_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qthread.moc"
-
-extern "C" {
-  QThread_SlotProxy* QThread_SlotProxy_new()
-  {
-    return new QThread_SlotProxy();
-  }
-};
-
-// <= body block end
-

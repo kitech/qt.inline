@@ -1,140 +1,67 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qtextdocumentfragment.h
-// dst-file: /src/gui/qtextdocumentfragment.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qtextdocumentfragment.h
 #include <qtextdocumentfragment.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtextdocumentfragment_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:56
+// void QTextDocumentFragment()
 extern "C"
-int QTextDocumentFragment_Class_Size()
-{
-  return sizeof(QTextDocumentFragment);
+void* C_ZN21QTextDocumentFragmentC1Ev() {
+  return new QTextDocumentFragment();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 73, column 34>
-//   // proto: static QTextDocumentFragment QTextDocumentFragment::fromHtml(const QString & html, const QTextDocument * resourceProvider);
-// _ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument fromHtml(const class QString &, const class QTextDocument *)
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:57
+// void QTextDocumentFragment(const class QTextDocument *)
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument(const QString* arg1,
-const QTextDocument * arg2) {
-  auto ret =
-  QTextDocumentFragment::fromHtml(*((const QString*)arg1),
-arg2);
-  return new QTextDocumentFragment(ret); // 5
+void* C_ZN21QTextDocumentFragmentC1EPK13QTextDocument(const QTextDocument * document) {
+  return new QTextDocumentFragment(document);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 59, column 5>
-//   // proto:  void QTextDocumentFragment::QTextDocumentFragment(const QTextDocumentFragment & rhs);
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:58
+// void QTextDocumentFragment(const class QTextCursor &)
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragmentC2ERKS_(const QTextDocumentFragment* arg1) {
-  auto ret = new QTextDocumentFragment(*((const QTextDocumentFragment*)arg1));
-  return ret;
+void* C_ZN21QTextDocumentFragmentC1ERK11QTextCursor(const QTextCursor & range) {
+  return new QTextDocumentFragment(range);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 70, column 34>
-//   // proto: static QTextDocumentFragment QTextDocumentFragment::fromPlainText(const QString & plainText);
-// _ZN21QTextDocumentFragment13fromPlainTextERK7QString fromPlainText(const class QString &)
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:61
+// void ~QTextDocumentFragment()
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragment13fromPlainTextERK7QString(const QString* arg1) {
-  auto ret =
-  QTextDocumentFragment::fromPlainText(*((const QString*)arg1));
-  return new QTextDocumentFragment(ret); // 5
+void C_ZN21QTextDocumentFragmentD1Ev(void *this_) {
+  delete (QTextDocumentFragment*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 67, column 13>
-//   // proto:  QString QTextDocumentFragment::toHtml(const QByteArray & encoding);
-// _ZNK21QTextDocumentFragment6toHtmlERK10QByteArray toHtml(const class QByteArray &)
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:63
+// bool isEmpty()
 extern "C"
-QString*
-C_ZNK21QTextDocumentFragment6toHtmlERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  auto ret =
-  ((QTextDocumentFragment*)qthis)->toHtml(*((const QByteArray*)arg1));
-  return new QString(ret); // 5
+void C_ZNK21QTextDocumentFragment7isEmptyEv(void *this_) {
+  /*return*/ ((QTextDocumentFragment*)this_)->isEmpty();
 }
-//   // proto:  void QTextDocumentFragment::~QTextDocumentFragment();
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:65
+// QString toPlainText()
 extern "C"
-void C_ZN21QTextDocumentFragmentD2Ev(void *qthis) {
-  delete (QTextDocumentFragment*)qthis;
+void C_ZNK21QTextDocumentFragment11toPlainTextEv(void *this_) {
+  /*return*/ ((QTextDocumentFragment*)this_)->toPlainText();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 72, column 34>
-//   // proto: static QTextDocumentFragment QTextDocumentFragment::fromHtml(const QString & html);
-// _ZN21QTextDocumentFragment8fromHtmlERK7QString fromHtml(const class QString &)
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:67
+// QString toHtml(const class QByteArray &)
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragment8fromHtmlERK7QString(const QString* arg1) {
-  auto ret =
-  QTextDocumentFragment::fromHtml(*((const QString*)arg1));
-  return new QTextDocumentFragment(ret); // 5
+void C_ZNK21QTextDocumentFragment6toHtmlERK10QByteArray(void *this_, const QByteArray & encoding) {
+  /*return*/ ((QTextDocumentFragment*)this_)->toHtml(encoding);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 56, column 5>
-//   // proto:  void QTextDocumentFragment::QTextDocumentFragment();
+// static
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:70
+// QTextDocumentFragment fromPlainText(const class QString &)
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragmentC2Ev() {
-  auto ret = new QTextDocumentFragment();
-  return ret;
+void C_ZN21QTextDocumentFragment13fromPlainTextERK7QString(const QString & plainText) {
+  /*return*/ QTextDocumentFragment::fromPlainText(plainText);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 65, column 13>
-//   // proto:  QString QTextDocumentFragment::toPlainText();
-// _ZNK21QTextDocumentFragment11toPlainTextEv toPlainText()
+// static
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:72
+// QTextDocumentFragment fromHtml(const class QString &)
 extern "C"
-QString*
-C_ZNK21QTextDocumentFragment11toPlainTextEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentFragment*)qthis)->toPlainText();
-  return new QString(ret); // 5
+void C_ZN21QTextDocumentFragment8fromHtmlERK7QString(const QString & html) {
+  /*return*/ QTextDocumentFragment::fromHtml(html);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 58, column 14>
-//   // proto:  void QTextDocumentFragment::QTextDocumentFragment(const QTextCursor & range);
+// static
+// /usr/include/qt/QtGui/qtextdocumentfragment.h:73
+// QTextDocumentFragment fromHtml(const class QString &, const class QTextDocument *)
 extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(const QTextCursor* arg1) {
-  auto ret = new QTextDocumentFragment(*((const QTextCursor*)arg1));
-  return ret;
+void C_ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument(const QString & html, const QTextDocument * resourceProvider) {
+  /*return*/ QTextDocumentFragment::fromHtml(html, resourceProvider);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 57, column 14>
-//   // proto:  void QTextDocumentFragment::QTextDocumentFragment(const QTextDocument * document);
-extern "C"
-QTextDocumentFragment*
-C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * arg1) {
-  auto ret = new QTextDocumentFragment(arg1);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentfragment.h', line 63, column 10>
-//   // proto:  bool QTextDocumentFragment::isEmpty();
-// _ZNK21QTextDocumentFragment7isEmptyEv isEmpty()
-extern "C"
-bool
-C_ZNK21QTextDocumentFragment7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentFragment*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

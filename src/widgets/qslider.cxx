@@ -1,160 +1,75 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qslider.h
-// dst-file: /src/widgets/qslider.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qslider.h
 #include <qslider.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qslider_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qslider.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QSlider_Class_Size()
-{
-  return sizeof(QSlider);
+void C_ZNK7QSlider10metaObjectEv(void *this_) {
+  /*return*/ ((QSlider*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 79, column 18>
-//   // proto:  QSlider::TickPosition QSlider::tickPosition();
-// _ZNK7QSlider12tickPositionEv tickPosition()
+// /usr/include/qt/QtWidgets/qslider.h:70
+// void QSlider(class QWidget *)
 extern "C"
-QSlider::TickPosition
-C_ZNK7QSlider12tickPositionEv(void *qthis) {
-  auto ret =
-  ((QSlider*)qthis)->tickPosition();
-  return ret; // 0 TypeKind.ENUM
+void* C_ZN7QSliderC1EP7QWidget(QWidget * parent) {
+  return new QSlider(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 54, column 5>
-//   // proto:  const QMetaObject * QSlider::metaObject();
-// _ZNK7QSlider10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qslider.h:71
+// void QSlider(Qt::Orientation, class QWidget *)
 extern "C"
-void*
-C_ZNK7QSlider10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSlider*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN7QSliderC1EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
+  return new QSlider(orientation, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 78, column 10>
-//   // proto:  void QSlider::setTickPosition(QSlider::TickPosition position);
-// _ZN7QSlider15setTickPositionENS_12TickPositionE setTickPosition(enum QSlider::TickPosition)
+// virtual
+// /usr/include/qt/QtWidgets/qslider.h:73
+// void ~QSlider()
 extern "C"
-void
-C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *qthis,
-QSlider::TickPosition arg1) {
-  ((QSlider*)qthis)->setTickPosition(arg1);
+void C_ZN7QSliderD1Ev(void *this_) {
+  delete (QSlider*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 84, column 10>
-//   // proto:  bool QSlider::event(QEvent * event);
-// _ZN7QSlider5eventEP6QEvent event(class QEvent *)
+// virtual
+// /usr/include/qt/QtWidgets/qslider.h:75
+// QSize sizeHint()
 extern "C"
-bool
-C_ZN7QSlider5eventEP6QEvent(void *qthis,
-QEvent * arg1) {
-  auto ret =
-  ((QSlider*)qthis)->event(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QSlider8sizeHintEv(void *this_) {
+  /*return*/ ((QSlider*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 82, column 9>
-//   // proto:  int QSlider::tickInterval();
-// _ZNK7QSlider12tickIntervalEv tickInterval()
+// virtual
+// /usr/include/qt/QtWidgets/qslider.h:76
+// QSize minimumSizeHint()
 extern "C"
-int
-C_ZNK7QSlider12tickIntervalEv(void *qthis) {
-  auto ret =
-  ((QSlider*)qthis)->tickInterval();
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QSlider15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QSlider*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 75, column 11>
-//   // proto:  QSize QSlider::sizeHint();
-// _ZNK7QSlider8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qslider.h:78
+// void setTickPosition(enum QSlider::TickPosition)
 extern "C"
-QSize*
-C_ZNK7QSlider8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QSlider*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *this_, QSlider::TickPosition position) {
+  ((QSlider*)this_)->setTickPosition(position);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 81, column 10>
-//   // proto:  void QSlider::setTickInterval(int ti);
-// _ZN7QSlider15setTickIntervalEi setTickInterval(int)
+// /usr/include/qt/QtWidgets/qslider.h:79
+// QSlider::TickPosition tickPosition()
 extern "C"
-void
-C_ZN7QSlider15setTickIntervalEi(void *qthis,
-int arg1) {
-  ((QSlider*)qthis)->setTickInterval(arg1);
+void C_ZNK7QSlider12tickPositionEv(void *this_) {
+  /*return*/ ((QSlider*)this_)->tickPosition();
 }
-//   // proto:  void QSlider::~QSlider();
+// /usr/include/qt/QtWidgets/qslider.h:81
+// void setTickInterval(int)
 extern "C"
-void C_ZN7QSliderD2Ev(void *qthis) {
-  delete (QSlider*)qthis;
+void C_ZN7QSlider15setTickIntervalEi(void *this_, int ti) {
+  ((QSlider*)this_)->setTickInterval(ti);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 71, column 14>
-//   // proto:  void QSlider::QSlider(Qt::Orientation orientation, QWidget * parent);
+// /usr/include/qt/QtWidgets/qslider.h:82
+// int tickInterval()
 extern "C"
-QSlider*
-C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation* arg1,
-QWidget * arg2) {
-  auto ret = new QSlider(*((Qt::Orientation*)arg1),
-arg2);
-  return ret;
+void C_ZNK7QSlider12tickIntervalEv(void *this_) {
+  /*return*/ ((QSlider*)this_)->tickInterval();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 70, column 14>
-//   // proto:  void QSlider::QSlider(QWidget * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qslider.h:84
+// bool event(class QEvent *)
 extern "C"
-QSlider*
-C_ZN7QSliderC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QSlider(arg1);
-  return ret;
+void C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
+  /*return*/ ((QSlider*)this_)->event(event);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qslider.h', line 76, column 11>
-//   // proto:  QSize QSlider::minimumSizeHint();
-// _ZNK7QSlider15minimumSizeHintEv minimumSizeHint()
-extern "C"
-QSize*
-C_ZNK7QSlider15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QSlider*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// QSlider_SlotProxy here
-class QSlider_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSlider_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qslider.moc"
-
-extern "C" {
-  QSlider_SlotProxy* QSlider_SlotProxy_new()
-  {
-    return new QSlider_SlotProxy();
-  }
-};
-
-// <= body block end
-

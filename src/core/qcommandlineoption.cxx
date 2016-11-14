@@ -1,212 +1,101 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qcommandlineoption.h
-// dst-file: /src/core/qcommandlineoption.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qcommandlineoption.h
 #include <qcommandlineoption.h>
+#include <QtCore>
 
-
-#include <qstringlist.h>
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcommandlineoption_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 70, column 10>
-//   // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
-if (true) {
-  auto f = [](QCommandLineOption flythis, QCommandLineOption & arg1) {
-    ((QCommandLineOption*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN18QCommandLineOption4swapERS_ swap(class QCommandLineOption &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qcommandlineoption.h:53
+// void QCommandLineOption(const class QString &)
 extern "C"
-int QCommandLineOption_Class_Size()
-{
-  return sizeof(QCommandLineOption);
+void* C_ZN18QCommandLineOptionC1ERK7QString(const QString & name) {
+  return new QCommandLineOption(name);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 75, column 10>
-//   // proto:  void QCommandLineOption::setValueName(const QString & name);
-// _ZN18QCommandLineOption12setValueNameERK7QString setValueName(const class QString &)
+// /usr/include/qt/QtCore/qcommandlineoption.h:54
+// void QCommandLineOption(const class QStringList &)
 extern "C"
-void
-C_ZN18QCommandLineOption12setValueNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCommandLineOption*)qthis)->setValueName(*((const QString*)arg1));
+void* C_ZN18QCommandLineOptionC1ERK11QStringList(const QStringList & names) {
+  return new QCommandLineOption(names);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 73, column 17>
-//   // proto:  QStringList QCommandLineOption::names();
-// _ZNK18QCommandLineOption5namesEv names()
+// /usr/include/qt/QtCore/qcommandlineoption.h:55
+// void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-QStringList*
-C_ZNK18QCommandLineOption5namesEv(void *qthis) {
-  auto ret =
-  ((QCommandLineOption*)qthis)->names();
-  return new QStringList(ret); // 5
+void* C_ZN18QCommandLineOptionC1ERK7QStringS2_S2_S2_(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) {
+  return new QCommandLineOption(name, description, valueName, defaultValue);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 61, column 5>
-//   // proto:  void QCommandLineOption::QCommandLineOption(const QCommandLineOption & other);
+// /usr/include/qt/QtCore/qcommandlineoption.h:58
+// void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
 extern "C"
-QCommandLineOption*
-C_ZN18QCommandLineOptionC2ERKS_(const QCommandLineOption* arg1) {
-  auto ret = new QCommandLineOption(*((const QCommandLineOption*)arg1));
-  return ret;
+void* C_ZN18QCommandLineOptionC1ERK11QStringListRK7QStringS5_S5_(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) {
+  return new QCommandLineOption(names, description, valueName, defaultValue);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 78, column 10>
-//   // proto:  void QCommandLineOption::setDescription(const QString & description);
-// _ZN18QCommandLineOption14setDescriptionERK7QString setDescription(const class QString &)
+// /usr/include/qt/QtCore/qcommandlineoption.h:63
+// void ~QCommandLineOption()
 extern "C"
-void
-C_ZN18QCommandLineOption14setDescriptionERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCommandLineOption*)qthis)->setDescription(*((const QString*)arg1));
+void C_ZN18QCommandLineOptionD1Ev(void *this_) {
+  delete (QCommandLineOption*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 86, column 10>
-//   // proto:  bool QCommandLineOption::isHidden();
-// _ZNK18QCommandLineOption8isHiddenEv isHidden()
+// inline
+// /usr/include/qt/QtCore/qcommandlineoption.h:70
+// void swap(class QCommandLineOption &)
 extern "C"
-bool
-C_ZNK18QCommandLineOption8isHiddenEv(void *qthis) {
-  auto ret =
-  ((QCommandLineOption*)qthis)->isHidden();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN18QCommandLineOption4swapERS_(void *this_, QCommandLineOption & other) {
+  ((QCommandLineOption*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 55, column 18>
-//   // proto:  void QCommandLineOption::QCommandLineOption(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue);
+// /usr/include/qt/QtCore/qcommandlineoption.h:73
+// QStringList names()
 extern "C"
-QCommandLineOption*
-C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(const QString* arg1,
-const QString* arg2,
-const QString* arg3,
-const QString* arg4) {
-  auto ret = new QCommandLineOption(*((const QString*)arg1),
-*((const QString*)arg2),
-*((const QString*)arg3),
-*((const QString*)arg4));
-  return ret;
+void C_ZNK18QCommandLineOption5namesEv(void *this_) {
+  /*return*/ ((QCommandLineOption*)this_)->names();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 76, column 13>
-//   // proto:  QString QCommandLineOption::valueName();
-// _ZNK18QCommandLineOption9valueNameEv valueName()
+// /usr/include/qt/QtCore/qcommandlineoption.h:75
+// void setValueName(const class QString &)
 extern "C"
-QString*
-C_ZNK18QCommandLineOption9valueNameEv(void *qthis) {
-  auto ret =
-  ((QCommandLineOption*)qthis)->valueName();
-  return new QString(ret); // 5
+void C_ZN18QCommandLineOption12setValueNameERK7QString(void *this_, const QString & name) {
+  ((QCommandLineOption*)this_)->setValueName(name);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 58, column 18>
-//   // proto:  void QCommandLineOption::QCommandLineOption(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue);
+// /usr/include/qt/QtCore/qcommandlineoption.h:76
+// QString valueName()
 extern "C"
-QCommandLineOption*
-C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(const QStringList* arg1,
-const QString* arg2,
-const QString* arg3,
-const QString* arg4) {
-  auto ret = new QCommandLineOption(*((const QStringList*)arg1),
-*((const QString*)arg2),
-*((const QString*)arg3),
-*((const QString*)arg4));
-  return ret;
+void C_ZNK18QCommandLineOption9valueNameEv(void *this_) {
+  /*return*/ ((QCommandLineOption*)this_)->valueName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 85, column 10>
-//   // proto:  void QCommandLineOption::setHidden(bool hidden);
-// _ZN18QCommandLineOption9setHiddenEb setHidden(_Bool)
+// /usr/include/qt/QtCore/qcommandlineoption.h:78
+// void setDescription(const class QString &)
 extern "C"
-void
-C_ZN18QCommandLineOption9setHiddenEb(void *qthis,
-bool arg1) {
-  ((QCommandLineOption*)qthis)->setHidden(arg1);
+void C_ZN18QCommandLineOption14setDescriptionERK7QString(void *this_, const QString & description) {
+  ((QCommandLineOption*)this_)->setDescription(description);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 70, column 10>
-//   // proto:  void QCommandLineOption::swap(QCommandLineOption & other);
-// _ZN18QCommandLineOption4swapERS_ swap(class QCommandLineOption &)
+// /usr/include/qt/QtCore/qcommandlineoption.h:79
+// QString description()
 extern "C"
-void
-C_ZN18QCommandLineOption4swapERS_(void *qthis,
-QCommandLineOption* arg1) {
-  ((QCommandLineOption*)qthis)->swap(*((QCommandLineOption*)arg1));
+void C_ZNK18QCommandLineOption11descriptionEv(void *this_) {
+  /*return*/ ((QCommandLineOption*)this_)->description();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 79, column 13>
-//   // proto:  QString QCommandLineOption::description();
-// _ZNK18QCommandLineOption11descriptionEv description()
+// /usr/include/qt/QtCore/qcommandlineoption.h:81
+// void setDefaultValue(const class QString &)
 extern "C"
-QString*
-C_ZNK18QCommandLineOption11descriptionEv(void *qthis) {
-  auto ret =
-  ((QCommandLineOption*)qthis)->description();
-  return new QString(ret); // 5
+void C_ZN18QCommandLineOption15setDefaultValueERK7QString(void *this_, const QString & defaultValue) {
+  ((QCommandLineOption*)this_)->setDefaultValue(defaultValue);
 }
-//   // proto:  void QCommandLineOption::~QCommandLineOption();
+// /usr/include/qt/QtCore/qcommandlineoption.h:82
+// void setDefaultValues(const class QStringList &)
 extern "C"
-void C_ZN18QCommandLineOptionD2Ev(void *qthis) {
-  delete (QCommandLineOption*)qthis;
+void C_ZN18QCommandLineOption16setDefaultValuesERK11QStringList(void *this_, const QStringList & defaultValues) {
+  ((QCommandLineOption*)this_)->setDefaultValues(defaultValues);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 54, column 14>
-//   // proto:  void QCommandLineOption::QCommandLineOption(const QStringList & names);
+// /usr/include/qt/QtCore/qcommandlineoption.h:83
+// QStringList defaultValues()
 extern "C"
-QCommandLineOption*
-C_ZN18QCommandLineOptionC2ERK11QStringList(const QStringList* arg1) {
-  auto ret = new QCommandLineOption(*((const QStringList*)arg1));
-  return ret;
+void C_ZNK18QCommandLineOption13defaultValuesEv(void *this_) {
+  /*return*/ ((QCommandLineOption*)this_)->defaultValues();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 81, column 10>
-//   // proto:  void QCommandLineOption::setDefaultValue(const QString & defaultValue);
-// _ZN18QCommandLineOption15setDefaultValueERK7QString setDefaultValue(const class QString &)
+// /usr/include/qt/QtCore/qcommandlineoption.h:85
+// void setHidden(_Bool)
 extern "C"
-void
-C_ZN18QCommandLineOption15setDefaultValueERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCommandLineOption*)qthis)->setDefaultValue(*((const QString*)arg1));
+void C_ZN18QCommandLineOption9setHiddenEb(void *this_, bool hidden) {
+  ((QCommandLineOption*)this_)->setHidden(hidden);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 82, column 10>
-//   // proto:  void QCommandLineOption::setDefaultValues(const QStringList & defaultValues);
-// _ZN18QCommandLineOption16setDefaultValuesERK11QStringList setDefaultValues(const class QStringList &)
+// /usr/include/qt/QtCore/qcommandlineoption.h:86
+// bool isHidden()
 extern "C"
-void
-C_ZN18QCommandLineOption16setDefaultValuesERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  ((QCommandLineOption*)qthis)->setDefaultValues(*((const QStringList*)arg1));
+void C_ZNK18QCommandLineOption8isHiddenEv(void *this_) {
+  /*return*/ ((QCommandLineOption*)this_)->isHidden();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 53, column 14>
-//   // proto:  void QCommandLineOption::QCommandLineOption(const QString & name);
-extern "C"
-QCommandLineOption*
-C_ZN18QCommandLineOptionC2ERK7QString(const QString* arg1) {
-  auto ret = new QCommandLineOption(*((const QString*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcommandlineoption.h', line 83, column 17>
-//   // proto:  QStringList QCommandLineOption::defaultValues();
-// _ZNK18QCommandLineOption13defaultValuesEv defaultValues()
-extern "C"
-QStringList*
-C_ZNK18QCommandLineOption13defaultValuesEv(void *qthis) {
-  auto ret =
-  ((QCommandLineOption*)qthis)->defaultValues();
-  return new QStringList(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

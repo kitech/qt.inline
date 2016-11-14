@@ -1,290 +1,115 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qactiongroup.h
-// dst-file: /src/widgets/qactiongroup.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qactiongroup.h
 #include <qactiongroup.h>
+#include <QtWidgets>
 
-
-#include <qlist.h>
-#include <qfontdatabase.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qactiongroup_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 79, column 17>
-//   // proto:  void QActionGroup::setDisabled(bool b);
-if (true) {
-  auto f = [](QActionGroup flythis, bool arg1) {
-    ((QActionGroup*)0)->setDisabled(arg1);
-    flythis.setDisabled(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN12QActionGroup11setDisabledEb setDisabled(_Bool)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qactiongroup.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QActionGroup_Class_Size()
-{
-  return sizeof(QActionGroup);
+void C_ZNK12QActionGroup10metaObjectEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 62, column 14>
-//   // proto:  void QActionGroup::QActionGroup(QObject * parent);
+// /usr/include/qt/QtWidgets/qactiongroup.h:62
+// void QActionGroup(class QObject *)
 extern "C"
-QActionGroup*
-C_ZN12QActionGroupC2EP7QObject(QObject * arg1) {
-  auto ret = new QActionGroup(arg1);
-  return ret;
+void* C_ZN12QActionGroupC1EP7QObject(QObject * parent) {
+  return new QActionGroup(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 69, column 21>
-//   // proto:  QList<QAction *> QActionGroup::actions();
-// _ZNK12QActionGroup7actionsEv actions()
+// virtual
+// /usr/include/qt/QtWidgets/qactiongroup.h:63
+// void ~QActionGroup()
 extern "C"
-QList<QAction *>*
-C_ZNK12QActionGroup7actionsEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->actions();
-  return new QList<QAction *>(ret); // 5
+void C_ZN12QActionGroupD1Ev(void *this_) {
+  delete (QActionGroup*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 79, column 17>
-//   // proto:  void QActionGroup::setDisabled(bool b);
-// _ZN12QActionGroup11setDisabledEb setDisabled(_Bool)
+// /usr/include/qt/QtWidgets/qactiongroup.h:65
+// QAction * addAction(class QAction *)
 extern "C"
-void
-C_ZN12QActionGroup11setDisabledEb(void *qthis,
-bool arg1) {
-  ((QActionGroup*)qthis)->setDisabled(arg1);
+void C_ZN12QActionGroup9addActionEP7QAction(void *this_, QAction * a) {
+  /*return*/ ((QActionGroup*)this_)->addAction(a);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 78, column 10>
-//   // proto:  void QActionGroup::setEnabled(bool );
-// _ZN12QActionGroup10setEnabledEb setEnabled(_Bool)
+// /usr/include/qt/QtWidgets/qactiongroup.h:66
+// QAction * addAction(const class QString &)
 extern "C"
-void
-C_ZN12QActionGroup10setEnabledEb(void *qthis,
-bool arg1) {
-  ((QActionGroup*)qthis)->setEnabled(arg1);
+void C_ZN12QActionGroup9addActionERK7QString(void *this_, const QString & text) {
+  /*return*/ ((QActionGroup*)this_)->addAction(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 54, column 5>
-//   // proto:  const QMetaObject * QActionGroup::metaObject();
-// _ZNK12QActionGroup10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qactiongroup.h:67
+// QAction * addAction(const class QIcon &, const class QString &)
 extern "C"
-void*
-C_ZNK12QActionGroup10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
+  /*return*/ ((QActionGroup*)this_)->addAction(icon, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 65, column 14>
-//   // proto:  QAction * QActionGroup::addAction(QAction * a);
-// _ZN12QActionGroup9addActionEP7QAction addAction(class QAction *)
+// /usr/include/qt/QtWidgets/qactiongroup.h:68
+// void removeAction(class QAction *)
 extern "C"
-void*
-C_ZN12QActionGroup9addActionEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QActionGroup*)qthis)->addAction(arg1);
-  return (void*)ret;
+void C_ZN12QActionGroup12removeActionEP7QAction(void *this_, QAction * a) {
+  ((QActionGroup*)this_)->removeAction(a);
 }
-//   // proto:  void QActionGroup::~QActionGroup();
+// /usr/include/qt/QtWidgets/qactiongroup.h:69
+// QList<QAction *> actions()
 extern "C"
-void C_ZN12QActionGroupD2Ev(void *qthis) {
-  delete (QActionGroup*)qthis;
+void C_ZNK12QActionGroup7actionsEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->actions();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 71, column 14>
-//   // proto:  QAction * QActionGroup::checkedAction();
-// _ZNK12QActionGroup13checkedActionEv checkedAction()
+// /usr/include/qt/QtWidgets/qactiongroup.h:71
+// QAction * checkedAction()
 extern "C"
-void*
-C_ZNK12QActionGroup13checkedActionEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->checkedAction();
-  return (void*)ret;
+void C_ZNK12QActionGroup13checkedActionEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->checkedAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 67, column 14>
-//   // proto:  QAction * QActionGroup::addAction(const QIcon & icon, const QString & text);
-// _ZN12QActionGroup9addActionERK5QIconRK7QString addAction(const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qactiongroup.h:72
+// bool isExclusive()
 extern "C"
-void*
-C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QActionGroup*)qthis)->addAction(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZNK12QActionGroup11isExclusiveEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->isExclusive();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 80, column 10>
-//   // proto:  void QActionGroup::setVisible(bool );
-// _ZN12QActionGroup10setVisibleEb setVisible(_Bool)
+// /usr/include/qt/QtWidgets/qactiongroup.h:73
+// bool isEnabled()
 extern "C"
-void
-C_ZN12QActionGroup10setVisibleEb(void *qthis,
-bool arg1) {
-  ((QActionGroup*)qthis)->setVisible(arg1);
+void C_ZNK12QActionGroup9isEnabledEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->isEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 74, column 10>
-//   // proto:  bool QActionGroup::isVisible();
-// _ZNK12QActionGroup9isVisibleEv isVisible()
+// /usr/include/qt/QtWidgets/qactiongroup.h:74
+// bool isVisible()
 extern "C"
-bool
-C_ZNK12QActionGroup9isVisibleEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->isVisible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QActionGroup9isVisibleEv(void *this_) {
+  /*return*/ ((QActionGroup*)this_)->isVisible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 81, column 10>
-//   // proto:  void QActionGroup::setExclusive(bool );
-// _ZN12QActionGroup12setExclusiveEb setExclusive(_Bool)
+// /usr/include/qt/QtWidgets/qactiongroup.h:78
+// void setEnabled(_Bool)
 extern "C"
-void
-C_ZN12QActionGroup12setExclusiveEb(void *qthis,
-bool arg1) {
-  ((QActionGroup*)qthis)->setExclusive(arg1);
+void C_ZN12QActionGroup10setEnabledEb(void *this_, bool a0) {
+  ((QActionGroup*)this_)->setEnabled(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 66, column 14>
-//   // proto:  QAction * QActionGroup::addAction(const QString & text);
-// _ZN12QActionGroup9addActionERK7QString addAction(const class QString &)
+// inline
+// /usr/include/qt/QtWidgets/qactiongroup.h:79
+// void setDisabled(_Bool)
 extern "C"
-void*
-C_ZN12QActionGroup9addActionERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QActionGroup*)qthis)->addAction(*((const QString*)arg1));
-  return (void*)ret;
+void C_ZN12QActionGroup11setDisabledEb(void *this_, bool b) {
+  ((QActionGroup*)this_)->setDisabled(b);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 84, column 10>
-//   // proto:  void QActionGroup::triggered(QAction * );
-// _ZN12QActionGroup9triggeredEP7QAction triggered(class QAction *)
+// /usr/include/qt/QtWidgets/qactiongroup.h:80
+// void setVisible(_Bool)
 extern "C"
-void
-C_ZN12QActionGroup9triggeredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QActionGroup*)qthis)->triggered(arg1);
+void C_ZN12QActionGroup10setVisibleEb(void *this_, bool a0) {
+  ((QActionGroup*)this_)->setVisible(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 73, column 10>
-//   // proto:  bool QActionGroup::isEnabled();
-// _ZNK12QActionGroup9isEnabledEv isEnabled()
+// /usr/include/qt/QtWidgets/qactiongroup.h:81
+// void setExclusive(_Bool)
 extern "C"
-bool
-C_ZNK12QActionGroup9isEnabledEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->isEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QActionGroup12setExclusiveEb(void *this_, bool a0) {
+  ((QActionGroup*)this_)->setExclusive(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 72, column 10>
-//   // proto:  bool QActionGroup::isExclusive();
-// _ZNK12QActionGroup11isExclusiveEv isExclusive()
+// /usr/include/qt/QtWidgets/qactiongroup.h:84
+// void triggered(class QAction *)
 extern "C"
-bool
-C_ZNK12QActionGroup11isExclusiveEv(void *qthis) {
-  auto ret =
-  ((QActionGroup*)qthis)->isExclusive();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QActionGroup9triggeredEP7QAction(void *this_, QAction * a0) {
+  ((QActionGroup*)this_)->triggered(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 68, column 10>
-//   // proto:  void QActionGroup::removeAction(QAction * a);
-// _ZN12QActionGroup12removeActionEP7QAction removeAction(class QAction *)
+// /usr/include/qt/QtWidgets/qactiongroup.h:85
+// void hovered(class QAction *)
 extern "C"
-void
-C_ZN12QActionGroup12removeActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QActionGroup*)qthis)->removeAction(arg1);
+void C_ZN12QActionGroup7hoveredEP7QAction(void *this_, QAction * a0) {
+  ((QActionGroup*)this_)->hovered(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qactiongroup.h', line 85, column 10>
-//   // proto:  void QActionGroup::hovered(QAction * );
-// _ZN12QActionGroup7hoveredEP7QAction hovered(class QAction *)
-extern "C"
-void
-C_ZN12QActionGroup7hoveredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QActionGroup*)qthis)->hovered(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QActionGroup_SlotProxy here
-class QActionGroup_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QActionGroup_SlotProxy():QObject(){}
-
-public slots:
-  // hovered(class QAction *)
-  void slot_proxy_func__ZN12QActionGroup7hoveredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN12QActionGroup7hoveredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public slots:
-  // triggered(class QAction *)
-  void slot_proxy_func__ZN12QActionGroup9triggeredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN12QActionGroup9triggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qactiongroup.moc"
-
-extern "C" {
-  QActionGroup_SlotProxy* QActionGroup_SlotProxy_new()
-  {
-    return new QActionGroup_SlotProxy();
-  }
-};
-
-void QActionGroup_SlotProxy::slot_proxy_func__ZN12QActionGroup7hoveredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN12QActionGroup7hoveredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN12QActionGroup7hoveredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QActionGroup_SlotProxy_connect__ZN12QActionGroup7hoveredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QActionGroup_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QActionGroup7hoveredEP7QAction = (decltype(that->slot_func__ZN12QActionGroup7hoveredEP7QAction))ffifptr;
-  QObject::connect((QActionGroup*)sender, SIGNAL(hovered(class QAction *)), that, SLOT(slot_proxy_func__ZN12QActionGroup7hoveredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QActionGroup_SlotProxy_disconnect__ZN12QActionGroup7hoveredEP7QAction(QActionGroup_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QActionGroup_SlotProxy::slot_proxy_func__ZN12QActionGroup9triggeredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN12QActionGroup9triggeredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN12QActionGroup9triggeredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QActionGroup_SlotProxy_connect__ZN12QActionGroup9triggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QActionGroup_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QActionGroup9triggeredEP7QAction = (decltype(that->slot_func__ZN12QActionGroup9triggeredEP7QAction))ffifptr;
-  QObject::connect((QActionGroup*)sender, SIGNAL(triggered(class QAction *)), that, SLOT(slot_proxy_func__ZN12QActionGroup9triggeredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QActionGroup_SlotProxy_disconnect__ZN12QActionGroup9triggeredEP7QAction(QActionGroup_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

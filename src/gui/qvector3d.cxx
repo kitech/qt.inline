@@ -1,519 +1,216 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qvector3d.h
-// dst-file: /src/gui/qvector3d.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qvector3d.h
 #include <qvector3d.h>
+#include <QtGui>
 
-
-#include <qpoint.h>
-#include <qvector2d.h>
-#include <qvector4d.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qvector3d_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 75, column 28>
-//   // proto:  float QVector3D::x();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->x();
-    flythis.x();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D1xEv x()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 60, column 14>
-//   // proto:  void QVector3D::QVector3D(Qt::Initialization );
-if (true) {
-  auto f = [](Qt::Initialization arg1) {
-    new QVector3D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 134, column 29>
-//   // proto:  QPoint QVector3D::toPoint();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->toPoint();
-    flythis.toPoint();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D7toPointEv toPoint()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 76, column 28>
-//   // proto:  float QVector3D::y();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->y();
-    flythis.y();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D1yEv y()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 135, column 30>
-//   // proto:  QPointF QVector3D::toPointF();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->toPointF();
-    flythis.toPointF();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D8toPointFEv toPointF()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 80, column 10>
-//   // proto:  void QVector3D::setY(float y);
-if (true) {
-  auto f = [](QVector3D flythis, float arg1) {
-    ((QVector3D*)0)->setY(arg1);
-    flythis.setY(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector3D4setYEf setY(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 77, column 28>
-//   // proto:  float QVector3D::z();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->z();
-    flythis.z();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D1zEv z()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 81, column 10>
-//   // proto:  void QVector3D::setZ(float z);
-if (true) {
-  auto f = [](QVector3D flythis, float arg1) {
-    ((QVector3D*)0)->setZ(arg1);
-    flythis.setZ(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector3D4setZEf setZ(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 64, column 31>
-//   // proto:  void QVector3D::QVector3D(const QPointF & point);
-if (true) {
-  auto f = [](const QPointF & arg1) {
-    new QVector3D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 63, column 31>
-//   // proto:  void QVector3D::QVector3D(const QPoint & point);
-if (true) {
-  auto f = [](const QPoint & arg1) {
-    new QVector3D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 73, column 10>
-//   // proto:  bool QVector3D::isNull();
-if (true) {
-  auto f = [](QVector3D flythis) {
-    ((QVector3D*)0)->isNull();
-    flythis.isNull();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector3D6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 59, column 22>
-//   // proto:  void QVector3D::QVector3D();
-if (true) {
-  auto f = []() {
-    new QVector3D();
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 61, column 22>
-//   // proto:  void QVector3D::QVector3D(float xpos, float ypos, float zpos);
-if (true) {
-  auto f = [](float arg1, float arg2, float arg3) {
-    new QVector3D(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 79, column 10>
-//   // proto:  void QVector3D::setX(float x);
-if (true) {
-  auto f = [](QVector3D flythis, float arg1) {
-    ((QVector3D*)0)->setX(arg1);
-    flythis.setX(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector3D4setXEf setX(float)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:59
+// void QVector3D()
 extern "C"
-int QVector3D_Class_Size()
-{
-  return sizeof(QVector3D);
+void* C_ZN9QVector3DC1Ev() {
+  return new QVector3D();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 75, column 28>
-//   // proto:  float QVector3D::x();
-// _ZNK9QVector3D1xEv x()
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:60
+// void QVector3D(Qt::Initialization)
 extern "C"
-float
-C_ZNK9QVector3D1xEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->x();
-  return ret; // 0 TypeKind.FLOAT
+void* C_ZN9QVector3DC1EN2Qt14InitializationE(Qt::Initialization a0) {
+  return new QVector3D(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 60, column 14>
-//   // proto:  void QVector3D::QVector3D(Qt::Initialization );
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:61
+// void QVector3D(float, float, float)
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
-  auto ret = new QVector3D(*((Qt::Initialization*)arg1));
-  return ret;
+void* C_ZN9QVector3DC1Efff(float xpos, float ypos, float zpos) {
+  return new QVector3D(xpos, ypos, zpos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 134, column 29>
-//   // proto:  QPoint QVector3D::toPoint();
-// _ZNK9QVector3D7toPointEv toPoint()
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:63
+// void QVector3D(const class QPoint &)
 extern "C"
-QPoint*
-C_ZNK9QVector3D7toPointEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->toPoint();
-  return new QPoint(ret); // 5
+void* C_ZN9QVector3DC1ERK6QPoint(const QPoint & point) {
+  return new QVector3D(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 112, column 11>
-//   // proto:  float QVector3D::distanceToLine(const QVector3D & point, const QVector3D & direction);
-// _ZNK9QVector3D14distanceToLineERKS_S1_ distanceToLine(const class QVector3D &, const class QVector3D &)
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:64
+// void QVector3D(const class QPointF &)
 extern "C"
-float
-C_ZNK9QVector3D14distanceToLineERKS_S1_(void *qthis,
-const QVector3D* arg1,
-const QVector3D* arg2) {
-  auto ret =
-  ((QVector3D*)qthis)->distanceToLine(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2));
-  return ret; // 0 TypeKind.FLOAT
+void* C_ZN9QVector3DC1ERK7QPointF(const QPointF & point) {
+  return new QVector3D(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 76, column 28>
-//   // proto:  float QVector3D::y();
-// _ZNK9QVector3D1yEv y()
+// /usr/include/qt/QtGui/qvector3d.h:66
+// void QVector3D(const class QVector2D &)
 extern "C"
-float
-C_ZNK9QVector3D1yEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->y();
-  return ret; // 0 TypeKind.FLOAT
+void* C_ZN9QVector3DC1ERK9QVector2D(const QVector2D & vector) {
+  return new QVector3D(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 102, column 22>
-//   // proto: static QVector3D QVector3D::normal(const QVector3D & v1, const QVector3D & v2);
-// _ZN9QVector3D6normalERKS_S1_ normal(const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:67
+// void QVector3D(const class QVector2D &, float)
 extern "C"
-QVector3D*
-C_ZN9QVector3D6normalERKS_S1_(const QVector3D* arg1,
-const QVector3D* arg2) {
-  auto ret =
-  QVector3D::normal(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2));
-  return new QVector3D(ret); // 5
+void* C_ZN9QVector3DC1ERK9QVector2Df(const QVector2D & vector, float zpos) {
+  return new QVector3D(vector, zpos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 135, column 30>
-//   // proto:  QPointF QVector3D::toPointF();
-// _ZNK9QVector3D8toPointFEv toPointF()
+// /usr/include/qt/QtGui/qvector3d.h:70
+// void QVector3D(const class QVector4D &)
 extern "C"
-QPointF*
-C_ZNK9QVector3D8toPointFEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->toPointF();
-  return new QPointF(ret); // 5
+void* C_ZN9QVector3DC1ERK9QVector4D(const QVector4D & vector) {
+  return new QVector3D(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 90, column 10>
-//   // proto:  void QVector3D::normalize();
-// _ZN9QVector3D9normalizeEv normalize()
+// /usr/include/qt/QtGui/qvector3d.h:73
+// bool isNull()
 extern "C"
-void
-C_ZN9QVector3D9normalizeEv(void *qthis) {
-  ((QVector3D*)qthis)->normalize();
+void C_ZNK9QVector3D6isNullEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->isNull();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 107, column 15>
-//   // proto:  QVector3D QVector3D::unproject(const QMatrix4x4 & modelView, const QMatrix4x4 & projection, const QRect & viewport);
-// _ZNK9QVector3D9unprojectERK10QMatrix4x4S2_RK5QRect unproject(const class QMatrix4x4 &, const class QMatrix4x4 &, const class QRect &)
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:75
+// float x()
 extern "C"
-QVector3D*
-C_ZNK9QVector3D9unprojectERK10QMatrix4x4S2_RK5QRect(void *qthis,
-const QMatrix4x4* arg1,
-const QMatrix4x4* arg2,
-const QRect* arg3) {
-  auto ret =
-  ((QVector3D*)qthis)->unproject(*((const QMatrix4x4*)arg1),
-*((const QMatrix4x4*)arg2),
-*((const QRect*)arg3));
-  return new QVector3D(ret); // 5
+void C_ZNK9QVector3D1xEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->x();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 80, column 10>
-//   // proto:  void QVector3D::setY(float y);
-// _ZN9QVector3D4setYEf setY(float)
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:76
+// float y()
 extern "C"
-void
-C_ZN9QVector3D4setYEf(void *qthis,
-float arg1) {
-  ((QVector3D*)qthis)->setY(arg1);
+void C_ZNK9QVector3D1yEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->y();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 106, column 15>
-//   // proto:  QVector3D QVector3D::project(const QMatrix4x4 & modelView, const QMatrix4x4 & projection, const QRect & viewport);
-// _ZNK9QVector3D7projectERK10QMatrix4x4S2_RK5QRect project(const class QMatrix4x4 &, const class QMatrix4x4 &, const class QRect &)
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:77
+// float z()
 extern "C"
-QVector3D*
-C_ZNK9QVector3D7projectERK10QMatrix4x4S2_RK5QRect(void *qthis,
-const QMatrix4x4* arg1,
-const QMatrix4x4* arg2,
-const QRect* arg3) {
-  auto ret =
-  ((QVector3D*)qthis)->project(*((const QMatrix4x4*)arg1),
-*((const QMatrix4x4*)arg2),
-*((const QRect*)arg3));
-  return new QVector3D(ret); // 5
+void C_ZNK9QVector3D1zEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->z();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 100, column 22>
-//   // proto: static QVector3D QVector3D::crossProduct(const QVector3D & v1, const QVector3D & v2);
-// _ZN9QVector3D12crossProductERKS_S1_ crossProduct(const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:79
+// void setX(float)
 extern "C"
-QVector3D*
-C_ZN9QVector3D12crossProductERKS_S1_(const QVector3D* arg1,
-const QVector3D* arg2) {
-  auto ret =
-  QVector3D::crossProduct(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2));
-  return new QVector3D(ret); // 5
+void C_ZN9QVector3D4setXEf(void *this_, float x) {
+  ((QVector3D*)this_)->setX(x);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 77, column 28>
-//   // proto:  float QVector3D::z();
-// _ZNK9QVector3D1zEv z()
+// /usr/include/qt/QtGui/qvector3d.h:80
+// void setY(float)
 extern "C"
-float
-C_ZNK9QVector3D1zEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->z();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZN9QVector3D4setYEf(void *this_, float y) {
+  ((QVector3D*)this_)->setY(y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 81, column 10>
-//   // proto:  void QVector3D::setZ(float z);
-// _ZN9QVector3D4setZEf setZ(float)
+// /usr/include/qt/QtGui/qvector3d.h:81
+// void setZ(float)
 extern "C"
-void
-C_ZN9QVector3D4setZEf(void *qthis,
-float arg1) {
-  ((QVector3D*)qthis)->setZ(arg1);
+void C_ZN9QVector3D4setZEf(void *this_, float z) {
+  ((QVector3D*)this_)->setZ(z);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 128, column 15>
-//   // proto:  QVector2D QVector3D::toVector2D();
-// _ZNK9QVector3D10toVector2DEv toVector2D()
+// /usr/include/qt/QtGui/qvector3d.h:86
+// float length()
 extern "C"
-QVector2D*
-C_ZNK9QVector3D10toVector2DEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->toVector2D();
-  return new QVector2D(ret); // 5
+void C_ZNK9QVector3D6lengthEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->length();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 111, column 11>
-//   // proto:  float QVector3D::distanceToPlane(const QVector3D & plane1, const QVector3D & plane2, const QVector3D & plane3);
-// _ZNK9QVector3D15distanceToPlaneERKS_S1_S1_ distanceToPlane(const class QVector3D &, const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:87
+// float lengthSquared()
 extern "C"
-float
-C_ZNK9QVector3D15distanceToPlaneERKS_S1_S1_(void *qthis,
-const QVector3D* arg1,
-const QVector3D* arg2,
-const QVector3D* arg3) {
-  auto ret =
-  ((QVector3D*)qthis)->distanceToPlane(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2),
-*((const QVector3D*)arg3));
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector3D13lengthSquaredEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->lengthSquared();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 64, column 31>
-//   // proto:  void QVector3D::QVector3D(const QPointF & point);
+// /usr/include/qt/QtGui/qvector3d.h:89
+// QVector3D normalized()
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2ERK7QPointF(const QPointF* arg1) {
-  auto ret = new QVector3D(*((const QPointF*)arg1));
-  return ret;
+void C_ZNK9QVector3D10normalizedEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->normalized();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 109, column 11>
-//   // proto:  float QVector3D::distanceToPoint(const QVector3D & point);
-// _ZNK9QVector3D15distanceToPointERKS_ distanceToPoint(const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:90
+// void normalize()
 extern "C"
-float
-C_ZNK9QVector3D15distanceToPointERKS_(void *qthis,
-const QVector3D* arg1) {
-  auto ret =
-  ((QVector3D*)qthis)->distanceToPoint(*((const QVector3D*)arg1));
-  return ret; // 0 TypeKind.FLOAT
+void C_ZN9QVector3D9normalizeEv(void *this_) {
+  ((QVector3D*)this_)->normalize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 66, column 5>
-//   // proto:  void QVector3D::QVector3D(const QVector2D & vector);
+// static
+// /usr/include/qt/QtGui/qvector3d.h:99
+// float dotProduct(const class QVector3D &, const class QVector3D &)
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2ERK9QVector2D(const QVector2D* arg1) {
-  auto ret = new QVector3D(*((const QVector2D*)arg1));
-  return ret;
+void C_ZN9QVector3D10dotProductERKS_S1_(const QVector3D & v1, const QVector3D & v2) {
+  /*return*/ QVector3D::dotProduct(v1, v2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 63, column 31>
-//   // proto:  void QVector3D::QVector3D(const QPoint & point);
+// static
+// /usr/include/qt/QtGui/qvector3d.h:100
+// QVector3D crossProduct(const class QVector3D &, const class QVector3D &)
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2ERK6QPoint(const QPoint* arg1) {
-  auto ret = new QVector3D(*((const QPoint*)arg1));
-  return ret;
+void C_ZN9QVector3D12crossProductERKS_S1_(const QVector3D & v1, const QVector3D & v2) {
+  /*return*/ QVector3D::crossProduct(v1, v2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 87, column 11>
-//   // proto:  float QVector3D::lengthSquared();
-// _ZNK9QVector3D13lengthSquaredEv lengthSquared()
+// static
+// /usr/include/qt/QtGui/qvector3d.h:102
+// QVector3D normal(const class QVector3D &, const class QVector3D &)
 extern "C"
-float
-C_ZNK9QVector3D13lengthSquaredEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->lengthSquared();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZN9QVector3D6normalERKS_S1_(const QVector3D & v1, const QVector3D & v2) {
+  /*return*/ QVector3D::normal(v1, v2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 103, column 22>
-//   // proto: static QVector3D QVector3D::normal(const QVector3D & v1, const QVector3D & v2, const QVector3D & v3);
-// _ZN9QVector3D6normalERKS_S1_S1_ normal(const class QVector3D &, const class QVector3D &, const class QVector3D &)
+// static
+// /usr/include/qt/QtGui/qvector3d.h:103
+// QVector3D normal(const class QVector3D &, const class QVector3D &, const class QVector3D &)
 extern "C"
-QVector3D*
-C_ZN9QVector3D6normalERKS_S1_S1_(const QVector3D* arg1,
-const QVector3D* arg2,
-const QVector3D* arg3) {
-  auto ret =
-  QVector3D::normal(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2),
-*((const QVector3D*)arg3));
-  return new QVector3D(ret); // 5
+void C_ZN9QVector3D6normalERKS_S1_S1_(const QVector3D & v1, const QVector3D & v2, const QVector3D & v3) {
+  /*return*/ QVector3D::normal(v1, v2, v3);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 110, column 11>
-//   // proto:  float QVector3D::distanceToPlane(const QVector3D & plane, const QVector3D & normal);
-// _ZNK9QVector3D15distanceToPlaneERKS_S1_ distanceToPlane(const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:106
+// QVector3D project(const class QMatrix4x4 &, const class QMatrix4x4 &, const class QRect &)
 extern "C"
-float
-C_ZNK9QVector3D15distanceToPlaneERKS_S1_(void *qthis,
-const QVector3D* arg1,
-const QVector3D* arg2) {
-  auto ret =
-  ((QVector3D*)qthis)->distanceToPlane(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2));
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector3D7projectERK10QMatrix4x4S2_RK5QRect(void *this_, const QMatrix4x4 & modelView, const QMatrix4x4 & projection, const QRect & viewport) {
+  /*return*/ ((QVector3D*)this_)->project(modelView, projection, viewport);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 89, column 15>
-//   // proto:  QVector3D QVector3D::normalized();
-// _ZNK9QVector3D10normalizedEv normalized()
+// /usr/include/qt/QtGui/qvector3d.h:107
+// QVector3D unproject(const class QMatrix4x4 &, const class QMatrix4x4 &, const class QRect &)
 extern "C"
-QVector3D*
-C_ZNK9QVector3D10normalizedEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->normalized();
-  return new QVector3D(ret); // 5
+void C_ZNK9QVector3D9unprojectERK10QMatrix4x4S2_RK5QRect(void *this_, const QMatrix4x4 & modelView, const QMatrix4x4 & projection, const QRect & viewport) {
+  /*return*/ ((QVector3D*)this_)->unproject(modelView, projection, viewport);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 70, column 14>
-//   // proto:  void QVector3D::QVector3D(const QVector4D & vector);
+// /usr/include/qt/QtGui/qvector3d.h:109
+// float distanceToPoint(const class QVector3D &)
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2ERK9QVector4D(const QVector4D* arg1) {
-  auto ret = new QVector3D(*((const QVector4D*)arg1));
-  return ret;
+void C_ZNK9QVector3D15distanceToPointERKS_(void *this_, const QVector3D & point) {
+  /*return*/ ((QVector3D*)this_)->distanceToPoint(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 73, column 10>
-//   // proto:  bool QVector3D::isNull();
-// _ZNK9QVector3D6isNullEv isNull()
+// /usr/include/qt/QtGui/qvector3d.h:110
+// float distanceToPlane(const class QVector3D &, const class QVector3D &)
 extern "C"
-bool
-C_ZNK9QVector3D6isNullEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->isNull();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QVector3D15distanceToPlaneERKS_S1_(void *this_, const QVector3D & plane, const QVector3D & normal) {
+  /*return*/ ((QVector3D*)this_)->distanceToPlane(plane, normal);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 86, column 11>
-//   // proto:  float QVector3D::length();
-// _ZNK9QVector3D6lengthEv length()
+// /usr/include/qt/QtGui/qvector3d.h:111
+// float distanceToPlane(const class QVector3D &, const class QVector3D &, const class QVector3D &)
 extern "C"
-float
-C_ZNK9QVector3D6lengthEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->length();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector3D15distanceToPlaneERKS_S1_S1_(void *this_, const QVector3D & plane1, const QVector3D & plane2, const QVector3D & plane3) {
+  /*return*/ ((QVector3D*)this_)->distanceToPlane(plane1, plane2, plane3);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 99, column 18>
-//   // proto: static float QVector3D::dotProduct(const QVector3D & v1, const QVector3D & v2);
-// _ZN9QVector3D10dotProductERKS_S1_ dotProduct(const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qvector3d.h:112
+// float distanceToLine(const class QVector3D &, const class QVector3D &)
 extern "C"
-float
-C_ZN9QVector3D10dotProductERKS_S1_(const QVector3D* arg1,
-const QVector3D* arg2) {
-  auto ret =
-  QVector3D::dotProduct(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2));
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector3D14distanceToLineERKS_S1_(void *this_, const QVector3D & point, const QVector3D & direction) {
+  /*return*/ ((QVector3D*)this_)->distanceToLine(point, direction);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 59, column 22>
-//   // proto:  void QVector3D::QVector3D();
+// /usr/include/qt/QtGui/qvector3d.h:128
+// QVector2D toVector2D()
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2Ev() {
-  auto ret = new QVector3D();
-  return ret;
+void C_ZNK9QVector3D10toVector2DEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->toVector2D();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 61, column 22>
-//   // proto:  void QVector3D::QVector3D(float xpos, float ypos, float zpos);
+// /usr/include/qt/QtGui/qvector3d.h:131
+// QVector4D toVector4D()
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2Efff(float arg1,
-float arg2,
-float arg3) {
-  auto ret = new QVector3D(arg1,
-arg2,
-arg3);
-  return ret;
+void C_ZNK9QVector3D10toVector4DEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->toVector4D();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 131, column 15>
-//   // proto:  QVector4D QVector3D::toVector4D();
-// _ZNK9QVector3D10toVector4DEv toVector4D()
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:134
+// QPoint toPoint()
 extern "C"
-QVector4D*
-C_ZNK9QVector3D10toVector4DEv(void *qthis) {
-  auto ret =
-  ((QVector3D*)qthis)->toVector4D();
-  return new QVector4D(ret); // 5
+void C_ZNK9QVector3D7toPointEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->toPoint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 67, column 5>
-//   // proto:  void QVector3D::QVector3D(const QVector2D & vector, float zpos);
+// inline
+// /usr/include/qt/QtGui/qvector3d.h:135
+// QPointF toPointF()
 extern "C"
-QVector3D*
-C_ZN9QVector3DC2ERK9QVector2Df(const QVector2D* arg1,
-float arg2) {
-  auto ret = new QVector3D(*((const QVector2D*)arg1),
-arg2);
-  return ret;
+void C_ZNK9QVector3D8toPointFEv(void *this_) {
+  /*return*/ ((QVector3D*)this_)->toPointF();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector3d.h', line 79, column 10>
-//   // proto:  void QVector3D::setX(float x);
-// _ZN9QVector3D4setXEf setX(float)
-extern "C"
-void
-C_ZN9QVector3D4setXEf(void *qthis,
-float arg1) {
-  ((QVector3D*)qthis)->setX(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,184 +1,74 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qcheckbox.h
-// dst-file: /src/widgets/qcheckbox.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qcheckbox.h
 #include <qcheckbox.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcheckbox_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qcheckbox.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QCheckBox_Class_Size()
-{
-  return sizeof(QCheckBox);
+void C_ZNK9QCheckBox10metaObjectEv(void *this_) {
+  /*return*/ ((QCheckBox*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 53, column 5>
-//   // proto:  const QMetaObject * QCheckBox::metaObject();
-// _ZNK9QCheckBox10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qcheckbox.h:58
+// void QCheckBox(class QWidget *)
 extern "C"
-void*
-C_ZNK9QCheckBox10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QCheckBox*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN9QCheckBoxC1EP7QWidget(QWidget * parent) {
+  return new QCheckBox(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 63, column 11>
-//   // proto:  QSize QCheckBox::minimumSizeHint();
-// _ZNK9QCheckBox15minimumSizeHintEv minimumSizeHint()
+// /usr/include/qt/QtWidgets/qcheckbox.h:59
+// void QCheckBox(const class QString &, class QWidget *)
 extern "C"
-QSize*
-C_ZNK9QCheckBox15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QCheckBox*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
+void* C_ZN9QCheckBoxC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  return new QCheckBox(text, parent);
 }
-//   // proto:  void QCheckBox::~QCheckBox();
+// virtual
+// /usr/include/qt/QtWidgets/qcheckbox.h:60
+// void ~QCheckBox()
 extern "C"
-void C_ZN9QCheckBoxD2Ev(void *qthis) {
-  delete (QCheckBox*)qthis;
+void C_ZN9QCheckBoxD1Ev(void *this_) {
+  delete (QCheckBox*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 62, column 11>
-//   // proto:  QSize QCheckBox::sizeHint();
-// _ZNK9QCheckBox8sizeHintEv sizeHint()
+// virtual
+// /usr/include/qt/QtWidgets/qcheckbox.h:62
+// QSize sizeHint()
 extern "C"
-QSize*
-C_ZNK9QCheckBox8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QCheckBox*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZNK9QCheckBox8sizeHintEv(void *this_) {
+  /*return*/ ((QCheckBox*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 72, column 10>
-//   // proto:  void QCheckBox::stateChanged(int );
-// _ZN9QCheckBox12stateChangedEi stateChanged(int)
+// virtual
+// /usr/include/qt/QtWidgets/qcheckbox.h:63
+// QSize minimumSizeHint()
 extern "C"
-void
-C_ZN9QCheckBox12stateChangedEi(void *qthis,
-int arg1) {
-  ((QCheckBox*)qthis)->stateChanged(arg1);
+void C_ZNK9QCheckBox15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QCheckBox*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 68, column 20>
-//   // proto:  Qt::CheckState QCheckBox::checkState();
-// _ZNK9QCheckBox10checkStateEv checkState()
+// /usr/include/qt/QtWidgets/qcheckbox.h:65
+// void setTristate(_Bool)
 extern "C"
-Qt::CheckState
-C_ZNK9QCheckBox10checkStateEv(void *qthis) {
-  auto ret =
-  ((QCheckBox*)qthis)->checkState();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QCheckBox11setTristateEb(void *this_, bool y) {
+  ((QCheckBox*)this_)->setTristate(y);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 69, column 10>
-//   // proto:  void QCheckBox::setCheckState(Qt::CheckState state);
-// _ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE setCheckState(Qt::CheckState)
+// /usr/include/qt/QtWidgets/qcheckbox.h:66
+// bool isTristate()
 extern "C"
-void
-C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *qthis,
-Qt::CheckState* arg1) {
-  ((QCheckBox*)qthis)->setCheckState(*((Qt::CheckState*)arg1));
+void C_ZNK9QCheckBox10isTristateEv(void *this_) {
+  /*return*/ ((QCheckBox*)this_)->isTristate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 65, column 10>
-//   // proto:  void QCheckBox::setTristate(bool y);
-// _ZN9QCheckBox11setTristateEb setTristate(_Bool)
+// /usr/include/qt/QtWidgets/qcheckbox.h:68
+// Qt::CheckState checkState()
 extern "C"
-void
-C_ZN9QCheckBox11setTristateEb(void *qthis,
-bool arg1) {
-  ((QCheckBox*)qthis)->setTristate(arg1);
+void C_ZNK9QCheckBox10checkStateEv(void *this_) {
+  /*return*/ ((QCheckBox*)this_)->checkState();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 58, column 14>
-//   // proto:  void QCheckBox::QCheckBox(QWidget * parent);
+// /usr/include/qt/QtWidgets/qcheckbox.h:69
+// void setCheckState(Qt::CheckState)
 extern "C"
-QCheckBox*
-C_ZN9QCheckBoxC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QCheckBox(arg1);
-  return ret;
+void C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState state) {
+  ((QCheckBox*)this_)->setCheckState(state);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 66, column 10>
-//   // proto:  bool QCheckBox::isTristate();
-// _ZNK9QCheckBox10isTristateEv isTristate()
+// /usr/include/qt/QtWidgets/qcheckbox.h:72
+// void stateChanged(int)
 extern "C"
-bool
-C_ZNK9QCheckBox10isTristateEv(void *qthis) {
-  auto ret =
-  ((QCheckBox*)qthis)->isTristate();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QCheckBox12stateChangedEi(void *this_, int a0) {
+  ((QCheckBox*)this_)->stateChanged(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcheckbox.h', line 59, column 14>
-//   // proto:  void QCheckBox::QCheckBox(const QString & text, QWidget * parent);
-extern "C"
-QCheckBox*
-C_ZN9QCheckBoxC2ERK7QStringP7QWidget(const QString* arg1,
-QWidget * arg2) {
-  auto ret = new QCheckBox(*((const QString*)arg1),
-arg2);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QCheckBox_SlotProxy here
-class QCheckBox_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QCheckBox_SlotProxy():QObject(){}
-
-public slots:
-  // stateChanged(int)
-  void slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0);
-public:
-  void (*slot_func__ZN9QCheckBox12stateChangedEi)(void* rsfptr, int arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qcheckbox.moc"
-
-extern "C" {
-  QCheckBox_SlotProxy* QCheckBox_SlotProxy_new()
-  {
-    return new QCheckBox_SlotProxy();
-  }
-};
-
-void QCheckBox_SlotProxy::slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0) {
-  if (this->slot_func__ZN9QCheckBox12stateChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN9QCheckBox12stateChangedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QCheckBox_SlotProxy_connect__ZN9QCheckBox12stateChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QCheckBox_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QCheckBox12stateChangedEi = (decltype(that->slot_func__ZN9QCheckBox12stateChangedEi))ffifptr;
-  QObject::connect((QCheckBox*)sender, SIGNAL(stateChanged(int)), that, SLOT(slot_proxy_func__ZN9QCheckBox12stateChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QCheckBox_SlotProxy_disconnect__ZN9QCheckBox12stateChangedEi(QCheckBox_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

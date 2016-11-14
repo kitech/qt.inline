@@ -1,69 +1,25 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qdesktopservices.h
-// dst-file: /src/gui/qdesktopservices.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qdesktopservices.h
 #include <qdesktopservices.h>
+#include <QtGui>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qdesktopservices_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// static
+// /usr/include/qt/QtGui/qdesktopservices.h:58
+// bool openUrl(const class QUrl &)
 extern "C"
-int QDesktopServices_Class_Size()
-{
-  return sizeof(QDesktopServices);
+void C_ZN16QDesktopServices7openUrlERK4QUrl(const QUrl & url) {
+  /*return*/ QDesktopServices::openUrl(url);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qdesktopservices.h', line 60, column 17>
-//   // proto: static void QDesktopServices::unsetUrlHandler(const QString & scheme);
-// _ZN16QDesktopServices15unsetUrlHandlerERK7QString unsetUrlHandler(const class QString &)
+// static
+// /usr/include/qt/QtGui/qdesktopservices.h:59
+// void setUrlHandler(const class QString &, class QObject *, const char *)
 extern "C"
-void
-C_ZN16QDesktopServices15unsetUrlHandlerERK7QString(const QString* arg1) {
-  QDesktopServices::unsetUrlHandler(*((const QString*)arg1));
+void C_ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc(const QString & scheme, QObject * receiver, const char * method) {
+  QDesktopServices::setUrlHandler(scheme, receiver, method);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdesktopservices.h', line 58, column 17>
-//   // proto: static bool QDesktopServices::openUrl(const QUrl & url);
-// _ZN16QDesktopServices7openUrlERK4QUrl openUrl(const class QUrl &)
+// static
+// /usr/include/qt/QtGui/qdesktopservices.h:60
+// void unsetUrlHandler(const class QString &)
 extern "C"
-bool
-C_ZN16QDesktopServices7openUrlERK4QUrl(const QUrl* arg1) {
-  auto ret =
-  QDesktopServices::openUrl(*((const QUrl*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN16QDesktopServices15unsetUrlHandlerERK7QString(const QString & scheme) {
+  QDesktopServices::unsetUrlHandler(scheme);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qdesktopservices.h', line 59, column 17>
-//   // proto: static void QDesktopServices::setUrlHandler(const QString & scheme, QObject * receiver, const char * method);
-// _ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc setUrlHandler(const class QString &, class QObject *, const char *)
-extern "C"
-void
-C_ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc(const QString* arg1,
-QObject * arg2,
-const char * arg3) {
-  QDesktopServices::setUrlHandler(*((const QString*)arg1),
-arg2,
-arg3);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

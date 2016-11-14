@@ -1,276 +1,95 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qcollator.h
-// dst-file: /src/core/qcollator.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qcollator.h
 #include <qcollator.h>
+#include <QtCore>
 
-
-#include <qnamespace.h>
-#include <qlocale.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcollator_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 97, column 10>
-//   // proto:  void QCollator::swap(QCollator & other);
-if (true) {
-  auto f = [](QCollator flythis, QCollator & arg1) {
-    ((QCollator*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QCollator4swapERS_ swap(class QCollator &)
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 91, column 5>
-//   // proto:  void QCollator::QCollator(QCollator && other);
-if (true) {
-  auto f = [](QCollator && arg1) {
-    new QCollator(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 64, column 10>
-//   // proto:  void QCollatorSortKey::swap(QCollatorSortKey & other);
-if (true) {
-  auto f = [](QCollatorSortKey flythis, QCollatorSortKey & arg1) {
-    ((QCollatorSortKey*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN16QCollatorSortKey4swapERS_ swap(class QCollatorSortKey &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qcollator.h:86
+// void QCollator(const class QLocale &)
 extern "C"
-int QCollator_Class_Size()
-{
-  return sizeof(QCollator);
+void* C_ZN9QCollatorC1ERK7QLocale(const QLocale & locale) {
+  return new QCollator(locale);
 }
-
+// /usr/include/qt/QtCore/qcollator.h:88
+// void ~QCollator()
 extern "C"
-int QCollatorSortKey_Class_Size()
-{
-  return sizeof(QCollatorSortKey);
+void C_ZN9QCollatorD1Ev(void *this_) {
+  delete (QCollator*)(this_);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 107, column 10>
-//   // proto:  bool QCollator::numericMode();
-// _ZNK9QCollator11numericModeEv numericMode()
+// inline
+// /usr/include/qt/QtCore/qcollator.h:97
+// void swap(class QCollator &)
 extern "C"
-bool
-C_ZNK9QCollator11numericModeEv(void *qthis) {
-  auto ret =
-  ((QCollator*)qthis)->numericMode();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QCollator4swapERS_(void *this_, QCollator & other) {
+  ((QCollator*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 86, column 14>
-//   // proto:  void QCollator::QCollator(const QLocale & locale);
+// /usr/include/qt/QtCore/qcollator.h:100
+// void setLocale(const class QLocale &)
 extern "C"
-QCollator*
-C_ZN9QCollatorC2ERK7QLocale(const QLocale* arg1) {
-  auto ret = new QCollator(*((const QLocale*)arg1));
-  return ret;
+void C_ZN9QCollator9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
+  ((QCollator*)this_)->setLocale(locale);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 100, column 10>
-//   // proto:  void QCollator::setLocale(const QLocale & locale);
-// _ZN9QCollator9setLocaleERK7QLocale setLocale(const class QLocale &)
+// /usr/include/qt/QtCore/qcollator.h:101
+// QLocale locale()
 extern "C"
-void
-C_ZN9QCollator9setLocaleERK7QLocale(void *qthis,
-const QLocale* arg1) {
-  ((QCollator*)qthis)->setLocale(*((const QLocale*)arg1));
+void C_ZNK9QCollator6localeEv(void *this_) {
+  /*return*/ ((QCollator*)this_)->locale();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 106, column 10>
-//   // proto:  void QCollator::setNumericMode(bool on);
-// _ZN9QCollator14setNumericModeEb setNumericMode(_Bool)
+// /usr/include/qt/QtCore/qcollator.h:103
+// Qt::CaseSensitivity caseSensitivity()
 extern "C"
-void
-C_ZN9QCollator14setNumericModeEb(void *qthis,
-bool arg1) {
-  ((QCollator*)qthis)->setNumericMode(arg1);
+void C_ZNK9QCollator15caseSensitivityEv(void *this_) {
+  /*return*/ ((QCollator*)this_)->caseSensitivity();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 113, column 9>
-//   // proto:  int QCollator::compare(const QStringRef & s1, const QStringRef & s2);
-// _ZNK9QCollator7compareERK10QStringRefS2_ compare(const class QStringRef &, const class QStringRef &)
+// /usr/include/qt/QtCore/qcollator.h:104
+// void setCaseSensitivity(Qt::CaseSensitivity)
 extern "C"
-int
-C_ZNK9QCollator7compareERK10QStringRefS2_(void *qthis,
-const QStringRef* arg1,
-const QStringRef* arg2) {
-  auto ret =
-  ((QCollator*)qthis)->compare(*((const QStringRef*)arg1),
-*((const QStringRef*)arg2));
-  return ret; // 0 TypeKind.INT
+void C_ZN9QCollator18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
+  ((QCollator*)this_)->setCaseSensitivity(cs);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 114, column 9>
-//   // proto:  int QCollator::compare(const QChar * s1, int len1, const QChar * s2, int len2);
-// _ZNK9QCollator7compareEPK5QChariS2_i compare(const class QChar *, int, const class QChar *, int)
+// /usr/include/qt/QtCore/qcollator.h:106
+// void setNumericMode(_Bool)
 extern "C"
-int
-C_ZNK9QCollator7compareEPK5QChariS2_i(void *qthis,
-const QChar * arg1,
-int arg2,
-const QChar * arg3,
-int arg4) {
-  auto ret =
-  ((QCollator*)qthis)->compare(arg1,
-arg2,
-arg3,
-arg4);
-  return ret; // 0 TypeKind.INT
+void C_ZN9QCollator14setNumericModeEb(void *this_, bool on) {
+  ((QCollator*)this_)->setNumericMode(on);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 119, column 22>
-//   // proto:  QCollatorSortKey QCollator::sortKey(const QString & string);
-// _ZNK9QCollator7sortKeyERK7QString sortKey(const class QString &)
+// /usr/include/qt/QtCore/qcollator.h:107
+// bool numericMode()
 extern "C"
-QCollatorSortKey*
-C_ZNK9QCollator7sortKeyERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QCollator*)qthis)->sortKey(*((const QString*)arg1));
-  return new QCollatorSortKey(ret); // 5
+void C_ZNK9QCollator11numericModeEv(void *this_) {
+  /*return*/ ((QCollator*)this_)->numericMode();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 103, column 25>
-//   // proto:  Qt::CaseSensitivity QCollator::caseSensitivity();
-// _ZNK9QCollator15caseSensitivityEv caseSensitivity()
+// /usr/include/qt/QtCore/qcollator.h:109
+// void setIgnorePunctuation(_Bool)
 extern "C"
-Qt::CaseSensitivity
-C_ZNK9QCollator15caseSensitivityEv(void *qthis) {
-  auto ret =
-  ((QCollator*)qthis)->caseSensitivity();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QCollator20setIgnorePunctuationEb(void *this_, bool on) {
+  ((QCollator*)this_)->setIgnorePunctuation(on);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 104, column 10>
-//   // proto:  void QCollator::setCaseSensitivity(Qt::CaseSensitivity cs);
-// _ZN9QCollator18setCaseSensitivityEN2Qt15CaseSensitivityE setCaseSensitivity(Qt::CaseSensitivity)
+// /usr/include/qt/QtCore/qcollator.h:110
+// bool ignorePunctuation()
 extern "C"
-void
-C_ZN9QCollator18setCaseSensitivityEN2Qt15CaseSensitivityE(void *qthis,
-Qt::CaseSensitivity* arg1) {
-  ((QCollator*)qthis)->setCaseSensitivity(*((Qt::CaseSensitivity*)arg1));
+void C_ZNK9QCollator17ignorePunctuationEv(void *this_) {
+  /*return*/ ((QCollator*)this_)->ignorePunctuation();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 112, column 9>
-//   // proto:  int QCollator::compare(const QString & s1, const QString & s2);
-// _ZNK9QCollator7compareERK7QStringS2_ compare(const class QString &, const class QString &)
+// /usr/include/qt/QtCore/qcollator.h:112
+// int compare(const class QString &, const class QString &)
 extern "C"
-int
-C_ZNK9QCollator7compareERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QCollator*)qthis)->compare(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QCollator7compareERK7QStringS2_(void *this_, const QString & s1, const QString & s2) {
+  /*return*/ ((QCollator*)this_)->compare(s1, s2);
 }
-//   // proto:  void QCollator::~QCollator();
+// /usr/include/qt/QtCore/qcollator.h:113
+// int compare(const class QStringRef &, const class QStringRef &)
 extern "C"
-void C_ZN9QCollatorD2Ev(void *qthis) {
-  delete (QCollator*)qthis;
+void C_ZNK9QCollator7compareERK10QStringRefS2_(void *this_, const QStringRef & s1, const QStringRef & s2) {
+  /*return*/ ((QCollator*)this_)->compare(s1, s2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 110, column 10>
-//   // proto:  bool QCollator::ignorePunctuation();
-// _ZNK9QCollator17ignorePunctuationEv ignorePunctuation()
+// /usr/include/qt/QtCore/qcollator.h:114
+// int compare(const class QChar *, int, const class QChar *, int)
 extern "C"
-bool
-C_ZNK9QCollator17ignorePunctuationEv(void *qthis) {
-  auto ret =
-  ((QCollator*)qthis)->ignorePunctuation();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QCollator7compareEPK5QChariS2_i(void *this_, const QChar * s1, int len1, const QChar * s2, int len2) {
+  /*return*/ ((QCollator*)this_)->compare(s1, len1, s2, len2);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 87, column 5>
-//   // proto:  void QCollator::QCollator(const QCollator & );
+// /usr/include/qt/QtCore/qcollator.h:119
+// QCollatorSortKey sortKey(const class QString &)
 extern "C"
-QCollator*
-C_ZN9QCollatorC2ERKS_(const QCollator* arg1) {
-  auto ret = new QCollator(*((const QCollator*)arg1));
-  return ret;
+void C_ZNK9QCollator7sortKeyERK7QString(void *this_, const QString & string) {
+  /*return*/ ((QCollator*)this_)->sortKey(string);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 101, column 13>
-//   // proto:  QLocale QCollator::locale();
-// _ZNK9QCollator6localeEv locale()
-extern "C"
-QLocale*
-C_ZNK9QCollator6localeEv(void *qthis) {
-  auto ret =
-  ((QCollator*)qthis)->locale();
-  return new QLocale(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 97, column 10>
-//   // proto:  void QCollator::swap(QCollator & other);
-// _ZN9QCollator4swapERS_ swap(class QCollator &)
-extern "C"
-void
-C_ZN9QCollator4swapERS_(void *qthis,
-QCollator* arg1) {
-  ((QCollator*)qthis)->swap(*((QCollator*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 91, column 5>
-//   // proto:  void QCollator::QCollator(QCollator && other);
-extern "C"
-QCollator*
-C_ZN9QCollatorC2EOS_(QCollator* arg1) {
-  auto ret = new QCollator(*((QCollator*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 109, column 10>
-//   // proto:  void QCollator::setIgnorePunctuation(bool on);
-// _ZN9QCollator20setIgnorePunctuationEb setIgnorePunctuation(_Bool)
-extern "C"
-void
-C_ZN9QCollator20setIgnorePunctuationEb(void *qthis,
-bool arg1) {
-  ((QCollator*)qthis)->setIgnorePunctuation(arg1);
-}
-//   // proto:  void QCollatorSortKey::~QCollatorSortKey();
-extern "C"
-void C_ZN16QCollatorSortKeyD2Ev(void *qthis) {
-  delete (QCollatorSortKey*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 64, column 10>
-//   // proto:  void QCollatorSortKey::swap(QCollatorSortKey & other);
-// _ZN16QCollatorSortKey4swapERS_ swap(class QCollatorSortKey &)
-extern "C"
-void
-C_ZN16QCollatorSortKey4swapERS_(void *qthis,
-QCollatorSortKey* arg1) {
-  ((QCollatorSortKey*)qthis)->swap(*((QCollatorSortKey*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 67, column 9>
-//   // proto:  int QCollatorSortKey::compare(const QCollatorSortKey & key);
-// _ZNK16QCollatorSortKey7compareERKS_ compare(const class QCollatorSortKey &)
-extern "C"
-int
-C_ZNK16QCollatorSortKey7compareERKS_(void *qthis,
-const QCollatorSortKey* arg1) {
-  auto ret =
-  ((QCollatorSortKey*)qthis)->compare(*((const QCollatorSortKey*)arg1));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qcollator.h', line 57, column 5>
-//   // proto:  void QCollatorSortKey::QCollatorSortKey(const QCollatorSortKey & other);
-extern "C"
-QCollatorSortKey*
-C_ZN16QCollatorSortKeyC2ERKS_(const QCollatorSortKey* arg1) {
-  auto ret = new QCollatorSortKey(*((const QCollatorSortKey*)arg1));
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

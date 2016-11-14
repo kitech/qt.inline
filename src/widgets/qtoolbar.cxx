@@ -1,685 +1,248 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qtoolbar.h
-// dst-file: /src/widgets/qtoolbar.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qtoolbar.h
 #include <qtoolbar.h>
+#include <QtWidgets>
 
-
-#include <qnamespace.h>
-#include <qsize.h>
-#include <qrect.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtoolbar_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 156, column 21>
-//   // proto:  QAction * QToolBar::actionAt(int x, int y);
-if (true) {
-  auto f = [](QToolBar flythis, int arg1, int arg2) {
-    ((QToolBar*)0)->actionAt(arg1, arg2);
-    flythis.actionAt(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK8QToolBar8actionAtEii actionAt(int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 88, column 17>
-//   // proto:  bool QToolBar::isAreaAllowed(Qt::ToolBarArea area);
-if (true) {
-  auto f = [](QToolBar flythis, Qt::ToolBarArea arg1) {
-    ((QToolBar*)0)->isAreaAllowed(arg1);
-    flythis.isAreaAllowed(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE isAreaAllowed(Qt::ToolBarArea)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbar.h:60
+// const QMetaObject * metaObject()
 extern "C"
-int QToolBar_Class_Size()
-{
-  return sizeof(QToolBar);
+void C_ZNK8QToolBar10metaObjectEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 100, column 14>
-//   // proto:  QAction * QToolBar::addAction(const QIcon & icon, const QString & text, const QObject * receiver, const char * member);
-// _ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc addAction(const class QIcon &, const class QString &, const class QObject *, const char *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:78
+// void QToolBar(const class QString &, class QWidget *)
 extern "C"
-void*
-C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *qthis,
-const QIcon* arg1,
-const QString* arg2,
-const QObject * arg3,
-const char * arg4) {
-  auto ret =
-  ((QToolBar*)qthis)->addAction(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4);
-  return (void*)ret;
+void* C_ZN8QToolBarC1ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+  return new QToolBar(title, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 165, column 10>
-//   // proto:  bool QToolBar::isFloatable();
-// _ZNK8QToolBar11isFloatableEv isFloatable()
+// /usr/include/qt/QtWidgets/qtoolbar.h:79
+// void QToolBar(class QWidget *)
 extern "C"
-bool
-C_ZNK8QToolBar11isFloatableEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->isFloatable();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN8QToolBarC1EP7QWidget(QWidget * parent) {
+  return new QToolBar(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 86, column 22>
-//   // proto:  Qt::ToolBarAreas QToolBar::allowedAreas();
-// _ZNK8QToolBar12allowedAreasEv allowedAreas()
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbar.h:80
+// void ~QToolBar()
 extern "C"
-QFlags<Qt::ToolBarArea>*
-C_ZNK8QToolBar12allowedAreasEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->allowedAreas();
-  return new QFlags<Qt::ToolBarArea>(ret); // 5
+void C_ZN8QToolBarD1Ev(void *this_) {
+  delete (QToolBar*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 160, column 11>
-//   // proto:  QSize QToolBar::iconSize();
-// _ZNK8QToolBar8iconSizeEv iconSize()
+// /usr/include/qt/QtWidgets/qtoolbar.h:82
+// void setMovable(_Bool)
 extern "C"
-QSize*
-C_ZNK8QToolBar8iconSizeEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->iconSize();
-  return new QSize(ret); // 5
+void C_ZN8QToolBar10setMovableEb(void *this_, bool movable) {
+  ((QToolBar*)this_)->setMovable(movable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 154, column 11>
-//   // proto:  QRect QToolBar::actionGeometry(QAction * action);
-// _ZNK8QToolBar14actionGeometryEP7QAction actionGeometry(class QAction *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:83
+// bool isMovable()
 extern "C"
-QRect*
-C_ZNK8QToolBar14actionGeometryEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->actionGeometry(arg1);
-  return new QRect(ret); // 5
+void C_ZNK8QToolBar9isMovableEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->isMovable();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 163, column 14>
-//   // proto:  QWidget * QToolBar::widgetForAction(QAction * action);
-// _ZNK8QToolBar15widgetForActionEP7QAction widgetForAction(class QAction *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:85
+// void setAllowedAreas(Qt::ToolBarAreas)
 extern "C"
-void*
-C_ZNK8QToolBar15widgetForActionEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->widgetForAction(arg1);
-  return (void*)ret;
+void C_ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> areas) {
+  ((QToolBar*)this_)->setAllowedAreas(areas);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 181, column 10>
-//   // proto:  void QToolBar::visibilityChanged(bool visible);
-// _ZN8QToolBar17visibilityChangedEb visibilityChanged(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbar.h:86
+// Qt::ToolBarAreas allowedAreas()
 extern "C"
-void
-C_ZN8QToolBar17visibilityChangedEb(void *qthis,
-bool arg1) {
-  ((QToolBar*)qthis)->visibilityChanged(arg1);
+void C_ZNK8QToolBar12allowedAreasEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->allowedAreas();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 94, column 10>
-//   // proto:  void QToolBar::clear();
-// _ZN8QToolBar5clearEv clear()
+// inline
+// /usr/include/qt/QtWidgets/qtoolbar.h:88
+// bool isAreaAllowed(Qt::ToolBarArea)
 extern "C"
-void
-C_ZN8QToolBar5clearEv(void *qthis) {
-  ((QToolBar*)qthis)->clear();
+void C_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *this_, Qt::ToolBarArea area) {
+  /*return*/ ((QToolBar*)this_)->isAreaAllowed(area);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 179, column 10>
-//   // proto:  void QToolBar::toolButtonStyleChanged(Qt::ToolButtonStyle toolButtonStyle);
-// _ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE toolButtonStyleChanged(Qt::ToolButtonStyle)
+// /usr/include/qt/QtWidgets/qtoolbar.h:91
+// void setOrientation(Qt::Orientation)
 extern "C"
-void
-C_ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *qthis,
-Qt::ToolButtonStyle* arg1) {
-  ((QToolBar*)qthis)->toolButtonStyleChanged(*((Qt::ToolButtonStyle*)arg1));
+void C_ZN8QToolBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
+  ((QToolBar*)this_)->setOrientation(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 78, column 14>
-//   // proto:  void QToolBar::QToolBar(const QString & title, QWidget * parent);
+// /usr/include/qt/QtWidgets/qtoolbar.h:92
+// Qt::Orientation orientation()
 extern "C"
-QToolBar*
-C_ZN8QToolBarC2ERK7QStringP7QWidget(const QString* arg1,
-QWidget * arg2) {
-  auto ret = new QToolBar(*((const QString*)arg1),
-arg2);
-  return ret;
+void C_ZNK8QToolBar11orientationEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 82, column 10>
-//   // proto:  void QToolBar::setMovable(bool movable);
-// _ZN8QToolBar10setMovableEb setMovable(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbar.h:94
+// void clear()
 extern "C"
-void
-C_ZN8QToolBar10setMovableEb(void *qthis,
-bool arg1) {
-  ((QToolBar*)qthis)->setMovable(arg1);
+void C_ZN8QToolBar5clearEv(void *this_) {
+  ((QToolBar*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 83, column 10>
-//   // proto:  bool QToolBar::isMovable();
-// _ZNK8QToolBar9isMovableEv isMovable()
+// /usr/include/qt/QtWidgets/qtoolbar.h:97
+// QAction * addAction(const class QString &)
 extern "C"
-bool
-C_ZNK8QToolBar9isMovableEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->isMovable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN8QToolBar9addActionERK7QString(void *this_, const QString & text) {
+  /*return*/ ((QToolBar*)this_)->addAction(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 170, column 10>
-//   // proto:  void QToolBar::setIconSize(const QSize & iconSize);
-// _ZN8QToolBar11setIconSizeERK5QSize setIconSize(const class QSize &)
+// /usr/include/qt/QtWidgets/qtoolbar.h:98
+// QAction * addAction(const class QIcon &, const class QString &)
 extern "C"
-void
-C_ZN8QToolBar11setIconSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QToolBar*)qthis)->setIconSize(*((const QSize*)arg1));
+void C_ZN8QToolBar9addActionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
+  /*return*/ ((QToolBar*)this_)->addAction(icon, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 148, column 14>
-//   // proto:  QAction * QToolBar::addSeparator();
-// _ZN8QToolBar12addSeparatorEv addSeparator()
+// /usr/include/qt/QtWidgets/qtoolbar.h:99
+// QAction * addAction(const class QString &, const class QObject *, const char *)
 extern "C"
-void*
-C_ZN8QToolBar12addSeparatorEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->addSeparator();
-  return (void*)ret;
+void C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *this_, const QString & text, const QObject * receiver, const char * member) {
+  /*return*/ ((QToolBar*)this_)->addAction(text, receiver, member);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 166, column 10>
-//   // proto:  void QToolBar::setFloatable(bool floatable);
-// _ZN8QToolBar12setFloatableEb setFloatable(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbar.h:100
+// QAction * addAction(const class QIcon &, const class QString &, const class QObject *, const char *)
 extern "C"
-void
-C_ZN8QToolBar12setFloatableEb(void *qthis,
-bool arg1) {
-  ((QToolBar*)qthis)->setFloatable(arg1);
+void C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *this_, const QIcon & icon, const QString & text, const QObject * receiver, const char * member) {
+  /*return*/ ((QToolBar*)this_)->addAction(icon, text, receiver, member);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 97, column 14>
-//   // proto:  QAction * QToolBar::addAction(const QString & text);
-// _ZN8QToolBar9addActionERK7QString addAction(const class QString &)
+// /usr/include/qt/QtWidgets/qtoolbar.h:148
+// QAction * addSeparator()
 extern "C"
-void*
-C_ZN8QToolBar9addActionERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->addAction(*((const QString*)arg1));
-  return (void*)ret;
+void C_ZN8QToolBar12addSeparatorEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->addSeparator();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 91, column 10>
-//   // proto:  void QToolBar::setOrientation(Qt::Orientation orientation);
-// _ZN8QToolBar14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
+// /usr/include/qt/QtWidgets/qtoolbar.h:149
+// QAction * insertSeparator(class QAction *)
 extern "C"
-void
-C_ZN8QToolBar14setOrientationEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QToolBar*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
+void C_ZN8QToolBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
+  /*return*/ ((QToolBar*)this_)->insertSeparator(before);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 177, column 10>
-//   // proto:  void QToolBar::orientationChanged(Qt::Orientation orientation);
-// _ZN8QToolBar18orientationChangedEN2Qt11OrientationE orientationChanged(Qt::Orientation)
+// /usr/include/qt/QtWidgets/qtoolbar.h:151
+// QAction * addWidget(class QWidget *)
 extern "C"
-void
-C_ZN8QToolBar18orientationChangedEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QToolBar*)qthis)->orientationChanged(*((Qt::Orientation*)arg1));
+void C_ZN8QToolBar9addWidgetEP7QWidget(void *this_, QWidget * widget) {
+  /*return*/ ((QToolBar*)this_)->addWidget(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 161, column 25>
-//   // proto:  Qt::ToolButtonStyle QToolBar::toolButtonStyle();
-// _ZNK8QToolBar15toolButtonStyleEv toolButtonStyle()
+// /usr/include/qt/QtWidgets/qtoolbar.h:152
+// QAction * insertWidget(class QAction *, class QWidget *)
 extern "C"
-Qt::ToolButtonStyle
-C_ZNK8QToolBar15toolButtonStyleEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->toolButtonStyle();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN8QToolBar12insertWidgetEP7QActionP7QWidget(void *this_, QAction * before, QWidget * widget) {
+  /*return*/ ((QToolBar*)this_)->insertWidget(before, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 180, column 10>
-//   // proto:  void QToolBar::topLevelChanged(bool topLevel);
-// _ZN8QToolBar15topLevelChangedEb topLevelChanged(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbar.h:154
+// QRect actionGeometry(class QAction *)
 extern "C"
-void
-C_ZN8QToolBar15topLevelChangedEb(void *qthis,
-bool arg1) {
-  ((QToolBar*)qthis)->topLevelChanged(arg1);
+void C_ZNK8QToolBar14actionGeometryEP7QAction(void *this_, QAction * action) {
+  /*return*/ ((QToolBar*)this_)->actionGeometry(action);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 174, column 10>
-//   // proto:  void QToolBar::actionTriggered(QAction * action);
-// _ZN8QToolBar15actionTriggeredEP7QAction actionTriggered(class QAction *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:155
+// QAction * actionAt(const class QPoint &)
 extern "C"
-void
-C_ZN8QToolBar15actionTriggeredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QToolBar*)qthis)->actionTriggered(arg1);
+void C_ZNK8QToolBar8actionAtERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QToolBar*)this_)->actionAt(p);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 92, column 21>
-//   // proto:  Qt::Orientation QToolBar::orientation();
-// _ZNK8QToolBar11orientationEv orientation()
+// inline
+// /usr/include/qt/QtWidgets/qtoolbar.h:156
+// QAction * actionAt(int, int)
 extern "C"
-Qt::Orientation
-C_ZNK8QToolBar11orientationEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK8QToolBar8actionAtEii(void *this_, int x, int y) {
+  /*return*/ ((QToolBar*)this_)->actionAt(x, y);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 171, column 10>
-//   // proto:  void QToolBar::setToolButtonStyle(Qt::ToolButtonStyle toolButtonStyle);
-// _ZN8QToolBar18setToolButtonStyleEN2Qt15ToolButtonStyleE setToolButtonStyle(Qt::ToolButtonStyle)
+// /usr/include/qt/QtWidgets/qtoolbar.h:158
+// QAction * toggleViewAction()
 extern "C"
-void
-C_ZN8QToolBar18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *qthis,
-Qt::ToolButtonStyle* arg1) {
-  ((QToolBar*)qthis)->setToolButtonStyle(*((Qt::ToolButtonStyle*)arg1));
+void C_ZNK8QToolBar16toggleViewActionEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->toggleViewAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 98, column 14>
-//   // proto:  QAction * QToolBar::addAction(const QIcon & icon, const QString & text);
-// _ZN8QToolBar9addActionERK5QIconRK7QString addAction(const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qtoolbar.h:160
+// QSize iconSize()
 extern "C"
-void*
-C_ZN8QToolBar9addActionERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QToolBar*)qthis)->addAction(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZNK8QToolBar8iconSizeEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->iconSize();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 79, column 14>
-//   // proto:  void QToolBar::QToolBar(QWidget * parent);
+// /usr/include/qt/QtWidgets/qtoolbar.h:161
+// Qt::ToolButtonStyle toolButtonStyle()
 extern "C"
-QToolBar*
-C_ZN8QToolBarC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QToolBar(arg1);
-  return ret;
+void C_ZNK8QToolBar15toolButtonStyleEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->toolButtonStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 155, column 14>
-//   // proto:  QAction * QToolBar::actionAt(const QPoint & p);
-// _ZNK8QToolBar8actionAtERK6QPoint actionAt(const class QPoint &)
+// /usr/include/qt/QtWidgets/qtoolbar.h:163
+// QWidget * widgetForAction(class QAction *)
 extern "C"
-void*
-C_ZNK8QToolBar8actionAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->actionAt(*((const QPoint*)arg1));
-  return (void*)ret;
+void C_ZNK8QToolBar15widgetForActionEP7QAction(void *this_, QAction * action) {
+  /*return*/ ((QToolBar*)this_)->widgetForAction(action);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 175, column 10>
-//   // proto:  void QToolBar::movableChanged(bool movable);
-// _ZN8QToolBar14movableChangedEb movableChanged(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbar.h:165
+// bool isFloatable()
 extern "C"
-void
-C_ZN8QToolBar14movableChangedEb(void *qthis,
-bool arg1) {
-  ((QToolBar*)qthis)->movableChanged(arg1);
+void C_ZNK8QToolBar11isFloatableEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->isFloatable();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 156, column 21>
-//   // proto:  QAction * QToolBar::actionAt(int x, int y);
-// _ZNK8QToolBar8actionAtEii actionAt(int, int)
+// /usr/include/qt/QtWidgets/qtoolbar.h:166
+// void setFloatable(_Bool)
 extern "C"
-void*
-C_ZNK8QToolBar8actionAtEii(void *qthis,
-int arg1,
-int arg2) {
-  auto ret =
-  ((QToolBar*)qthis)->actionAt(arg1,
-arg2);
-  return (void*)ret;
+void C_ZN8QToolBar12setFloatableEb(void *this_, bool floatable) {
+  ((QToolBar*)this_)->setFloatable(floatable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 178, column 10>
-//   // proto:  void QToolBar::iconSizeChanged(const QSize & iconSize);
-// _ZN8QToolBar15iconSizeChangedERK5QSize iconSizeChanged(const class QSize &)
+// /usr/include/qt/QtWidgets/qtoolbar.h:167
+// bool isFloating()
 extern "C"
-void
-C_ZN8QToolBar15iconSizeChangedERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QToolBar*)qthis)->iconSizeChanged(*((const QSize*)arg1));
+void C_ZNK8QToolBar10isFloatingEv(void *this_) {
+  /*return*/ ((QToolBar*)this_)->isFloating();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 176, column 10>
-//   // proto:  void QToolBar::allowedAreasChanged(Qt::ToolBarAreas allowedAreas);
-// _ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE allowedAreasChanged(Qt::ToolBarAreas)
+// /usr/include/qt/QtWidgets/qtoolbar.h:170
+// void setIconSize(const class QSize &)
 extern "C"
-void
-C_ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(void *qthis,
-Qt::ToolBarAreas* arg1) {
-  ((QToolBar*)qthis)->allowedAreasChanged(*((Qt::ToolBarAreas*)arg1));
+void C_ZN8QToolBar11setIconSizeERK5QSize(void *this_, const QSize & iconSize) {
+  ((QToolBar*)this_)->setIconSize(iconSize);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 167, column 10>
-//   // proto:  bool QToolBar::isFloating();
-// _ZNK8QToolBar10isFloatingEv isFloating()
+// /usr/include/qt/QtWidgets/qtoolbar.h:171
+// void setToolButtonStyle(Qt::ToolButtonStyle)
 extern "C"
-bool
-C_ZNK8QToolBar10isFloatingEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->isFloating();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN8QToolBar18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
+  ((QToolBar*)this_)->setToolButtonStyle(toolButtonStyle);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 158, column 14>
-//   // proto:  QAction * QToolBar::toggleViewAction();
-// _ZNK8QToolBar16toggleViewActionEv toggleViewAction()
+// /usr/include/qt/QtWidgets/qtoolbar.h:174
+// void actionTriggered(class QAction *)
 extern "C"
-void*
-C_ZNK8QToolBar16toggleViewActionEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->toggleViewAction();
-  return (void*)ret;
+void C_ZN8QToolBar15actionTriggeredEP7QAction(void *this_, QAction * action) {
+  ((QToolBar*)this_)->actionTriggered(action);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 85, column 10>
-//   // proto:  void QToolBar::setAllowedAreas(Qt::ToolBarAreas areas);
-// _ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE setAllowedAreas(Qt::ToolBarAreas)
+// /usr/include/qt/QtWidgets/qtoolbar.h:175
+// void movableChanged(_Bool)
 extern "C"
-void
-C_ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE(void *qthis,
-Qt::ToolBarAreas* arg1) {
-  ((QToolBar*)qthis)->setAllowedAreas(*((Qt::ToolBarAreas*)arg1));
+void C_ZN8QToolBar14movableChangedEb(void *this_, bool movable) {
+  ((QToolBar*)this_)->movableChanged(movable);
 }
-//   // proto:  void QToolBar::~QToolBar();
+// /usr/include/qt/QtWidgets/qtoolbar.h:176
+// void allowedAreasChanged(Qt::ToolBarAreas)
 extern "C"
-void C_ZN8QToolBarD2Ev(void *qthis) {
-  delete (QToolBar*)qthis;
+void C_ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> allowedAreas) {
+  ((QToolBar*)this_)->allowedAreasChanged(allowedAreas);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 88, column 17>
-//   // proto:  bool QToolBar::isAreaAllowed(Qt::ToolBarArea area);
-// _ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE isAreaAllowed(Qt::ToolBarArea)
+// /usr/include/qt/QtWidgets/qtoolbar.h:177
+// void orientationChanged(Qt::Orientation)
 extern "C"
-bool
-C_ZNK8QToolBar13isAreaAllowedEN2Qt11ToolBarAreaE(void *qthis,
-Qt::ToolBarArea* arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->isAreaAllowed(*((Qt::ToolBarArea*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN8QToolBar18orientationChangedEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
+  ((QToolBar*)this_)->orientationChanged(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 99, column 14>
-//   // proto:  QAction * QToolBar::addAction(const QString & text, const QObject * receiver, const char * member);
-// _ZN8QToolBar9addActionERK7QStringPK7QObjectPKc addAction(const class QString &, const class QObject *, const char *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:178
+// void iconSizeChanged(const class QSize &)
 extern "C"
-void*
-C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *qthis,
-const QString* arg1,
-const QObject * arg2,
-const char * arg3) {
-  auto ret =
-  ((QToolBar*)qthis)->addAction(*((const QString*)arg1),
-arg2,
-arg3);
-  return (void*)ret;
+void C_ZN8QToolBar15iconSizeChangedERK5QSize(void *this_, const QSize & iconSize) {
+  ((QToolBar*)this_)->iconSizeChanged(iconSize);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 152, column 14>
-//   // proto:  QAction * QToolBar::insertWidget(QAction * before, QWidget * widget);
-// _ZN8QToolBar12insertWidgetEP7QActionP7QWidget insertWidget(class QAction *, class QWidget *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:179
+// void toolButtonStyleChanged(Qt::ToolButtonStyle)
 extern "C"
-void*
-C_ZN8QToolBar12insertWidgetEP7QActionP7QWidget(void *qthis,
-QAction * arg1,
-QWidget * arg2) {
-  auto ret =
-  ((QToolBar*)qthis)->insertWidget(arg1,
-arg2);
-  return (void*)ret;
+void C_ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
+  ((QToolBar*)this_)->toolButtonStyleChanged(toolButtonStyle);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 151, column 14>
-//   // proto:  QAction * QToolBar::addWidget(QWidget * widget);
-// _ZN8QToolBar9addWidgetEP7QWidget addWidget(class QWidget *)
+// /usr/include/qt/QtWidgets/qtoolbar.h:180
+// void topLevelChanged(_Bool)
 extern "C"
-void*
-C_ZN8QToolBar9addWidgetEP7QWidget(void *qthis,
-QWidget * arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->addWidget(arg1);
-  return (void*)ret;
+void C_ZN8QToolBar15topLevelChangedEb(void *this_, bool topLevel) {
+  ((QToolBar*)this_)->topLevelChanged(topLevel);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 60, column 5>
-//   // proto:  const QMetaObject * QToolBar::metaObject();
-// _ZNK8QToolBar10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qtoolbar.h:181
+// void visibilityChanged(_Bool)
 extern "C"
-void*
-C_ZNK8QToolBar10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QToolBar*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN8QToolBar17visibilityChangedEb(void *this_, bool visible) {
+  ((QToolBar*)this_)->visibilityChanged(visible);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbar.h', line 149, column 14>
-//   // proto:  QAction * QToolBar::insertSeparator(QAction * before);
-// _ZN8QToolBar15insertSeparatorEP7QAction insertSeparator(class QAction *)
-extern "C"
-void*
-C_ZN8QToolBar15insertSeparatorEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QToolBar*)qthis)->insertSeparator(arg1);
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QToolBar_SlotProxy here
-class QToolBar_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QToolBar_SlotProxy():QObject(){}
-
-public slots:
-  // actionTriggered(class QAction *)
-  void slot_proxy_func__ZN8QToolBar15actionTriggeredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN8QToolBar15actionTriggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public slots:
-  // movableChanged(_Bool)
-  void slot_proxy_func__ZN8QToolBar14movableChangedEb(bool arg0);
-public:
-  void (*slot_func__ZN8QToolBar14movableChangedEb)(void* rsfptr, bool arg0) = NULL;
-public slots:
-  // visibilityChanged(_Bool)
-  void slot_proxy_func__ZN8QToolBar17visibilityChangedEb(bool arg0);
-public:
-  void (*slot_func__ZN8QToolBar17visibilityChangedEb)(void* rsfptr, bool arg0) = NULL;
-public slots:
-  // iconSizeChanged(const class QSize &)
-  void slot_proxy_func__ZN8QToolBar15iconSizeChangedERK5QSize(const QSize & arg0);
-public:
-  void (*slot_func__ZN8QToolBar15iconSizeChangedERK5QSize)(void* rsfptr, const QSize & arg0) = NULL;
-public slots:
-  // orientationChanged(Qt::Orientation)
-  void slot_proxy_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(Qt::Orientation arg0);
-public:
-  void (*slot_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE)(void* rsfptr, Qt::Orientation arg0) = NULL;
-public slots:
-  // toolButtonStyleChanged(Qt::ToolButtonStyle)
-  void slot_proxy_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0);
-public:
-  void (*slot_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE)(void* rsfptr, Qt::ToolButtonStyle arg0) = NULL;
-public slots:
-  // topLevelChanged(_Bool)
-  void slot_proxy_func__ZN8QToolBar15topLevelChangedEb(bool arg0);
-public:
-  void (*slot_func__ZN8QToolBar15topLevelChangedEb)(void* rsfptr, bool arg0) = NULL;
-public slots:
-  // allowedAreasChanged(Qt::ToolBarAreas)
-  void slot_proxy_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(Qt::ToolBarAreas arg0);
-public:
-  void (*slot_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE)(void* rsfptr, Qt::ToolBarAreas arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qtoolbar.moc"
-
-extern "C" {
-  QToolBar_SlotProxy* QToolBar_SlotProxy_new()
-  {
-    return new QToolBar_SlotProxy();
-  }
-};
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar15actionTriggeredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN8QToolBar15actionTriggeredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar15actionTriggeredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar15actionTriggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar15actionTriggeredEP7QAction = (decltype(that->slot_func__ZN8QToolBar15actionTriggeredEP7QAction))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(actionTriggered(class QAction *)), that, SLOT(slot_proxy_func__ZN8QToolBar15actionTriggeredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar15actionTriggeredEP7QAction(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar14movableChangedEb(bool arg0) {
-  if (this->slot_func__ZN8QToolBar14movableChangedEb != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar14movableChangedEb(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar14movableChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar14movableChangedEb = (decltype(that->slot_func__ZN8QToolBar14movableChangedEb))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(movableChanged(_Bool)), that, SLOT(slot_proxy_func__ZN8QToolBar14movableChangedEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar14movableChangedEb(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar17visibilityChangedEb(bool arg0) {
-  if (this->slot_func__ZN8QToolBar17visibilityChangedEb != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar17visibilityChangedEb(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar17visibilityChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar17visibilityChangedEb = (decltype(that->slot_func__ZN8QToolBar17visibilityChangedEb))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(visibilityChanged(_Bool)), that, SLOT(slot_proxy_func__ZN8QToolBar17visibilityChangedEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar17visibilityChangedEb(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar15iconSizeChangedERK5QSize(const QSize & arg0) {
-  if (this->slot_func__ZN8QToolBar15iconSizeChangedERK5QSize != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar15iconSizeChangedERK5QSize(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar15iconSizeChangedERK5QSize(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar15iconSizeChangedERK5QSize = (decltype(that->slot_func__ZN8QToolBar15iconSizeChangedERK5QSize))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(iconSizeChanged(const class QSize &)), that, SLOT(slot_proxy_func__ZN8QToolBar15iconSizeChangedERK5QSize(const QSize & arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar15iconSizeChangedERK5QSize(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(Qt::Orientation arg0) {
-  if (this->slot_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE = (decltype(that->slot_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(orientationChanged(Qt::Orientation)), that, SLOT(slot_proxy_func__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(Qt::Orientation arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar18orientationChangedEN2Qt11OrientationE(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0) {
-  if (this->slot_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE = (decltype(that->slot_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(toolButtonStyleChanged(Qt::ToolButtonStyle)), that, SLOT(slot_proxy_func__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(Qt::ToolButtonStyle arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar15topLevelChangedEb(bool arg0) {
-  if (this->slot_func__ZN8QToolBar15topLevelChangedEb != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar15topLevelChangedEb(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar15topLevelChangedEb(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar15topLevelChangedEb = (decltype(that->slot_func__ZN8QToolBar15topLevelChangedEb))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(topLevelChanged(_Bool)), that, SLOT(slot_proxy_func__ZN8QToolBar15topLevelChangedEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar15topLevelChangedEb(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QToolBar_SlotProxy::slot_proxy_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(Qt::ToolBarAreas arg0) {
-  if (this->slot_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE != NULL) {
-    // do smth...
-    this->slot_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolBar_SlotProxy_connect__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE = (decltype(that->slot_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE))ffifptr;
-  QObject::connect((QToolBar*)sender, SIGNAL(allowedAreasChanged(Qt::ToolBarAreas)), that, SLOT(slot_proxy_func__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(Qt::ToolBarAreas arg0)));
-  return that;
-}
-extern "C"
-void QToolBar_SlotProxy_disconnect__ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(QToolBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

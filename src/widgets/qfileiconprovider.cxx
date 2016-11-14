@@ -1,106 +1,50 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qfileiconprovider.h
-// dst-file: /src/widgets/qfileiconprovider.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qfileiconprovider.h
 #include <qfileiconprovider.h>
+#include <QtWidgets>
 
-
-#include <qstring.h>
-#include <qicon.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfileiconprovider_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:55
+// void QFileIconProvider()
 extern "C"
-int QFileIconProvider_Class_Size()
-{
-  return sizeof(QFileIconProvider);
+void* C_ZN17QFileIconProviderC1Ev() {
+  return new QFileIconProvider();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 68, column 10>
-//   // proto:  void QFileIconProvider::setOptions(Options options);
-// _ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE setOptions(Options)
+// virtual
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:56
+// void ~QFileIconProvider()
 extern "C"
-void
-C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *qthis,
-QFileIconProvider::Options arg1) {
-  ((QFileIconProvider*)qthis)->setOptions(arg1);
+void C_ZN17QFileIconProviderD1Ev(void *this_) {
+  delete (QFileIconProvider*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 69, column 13>
-//   // proto:  Options QFileIconProvider::options();
-// _ZNK17QFileIconProvider7optionsEv options()
+// virtual
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:64
+// QIcon icon(enum QFileIconProvider::IconType)
 extern "C"
-QFlags<QFileIconProvider::Option>*
-C_ZNK17QFileIconProvider7optionsEv(void *qthis) {
-  auto ret =
-  ((QFileIconProvider*)qthis)->options();
-  return new QFlags<QFileIconProvider::Option>(ret); // 5
+void C_ZNK17QFileIconProvider4iconENS_8IconTypeE(void *this_, QFileIconProvider::IconType type) {
+  /*return*/ ((QFileIconProvider*)this_)->icon(type);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 66, column 21>
-//   // proto:  QString QFileIconProvider::type(const QFileInfo & info);
-// _ZNK17QFileIconProvider4typeERK9QFileInfo type(const class QFileInfo &)
+// virtual
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:65
+// QIcon icon(const class QFileInfo &)
 extern "C"
-QString*
-C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *qthis,
-const QFileInfo* arg1) {
-  auto ret =
-  ((QFileIconProvider*)qthis)->type(*((const QFileInfo*)arg1));
-  return new QString(ret); // 5
+void C_ZNK17QFileIconProvider4iconERK9QFileInfo(void *this_, const QFileInfo & info) {
+  /*return*/ ((QFileIconProvider*)this_)->icon(info);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 65, column 19>
-//   // proto:  QIcon QFileIconProvider::icon(const QFileInfo & info);
-// _ZNK17QFileIconProvider4iconERK9QFileInfo icon(const class QFileInfo &)
+// virtual
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:66
+// QString type(const class QFileInfo &)
 extern "C"
-QIcon*
-C_ZNK17QFileIconProvider4iconERK9QFileInfo(void *qthis,
-const QFileInfo* arg1) {
-  auto ret =
-  ((QFileIconProvider*)qthis)->icon(*((const QFileInfo*)arg1));
-  return new QIcon(ret); // 5
+void C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *this_, const QFileInfo & info) {
+  /*return*/ ((QFileIconProvider*)this_)->type(info);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 55, column 5>
-//   // proto:  void QFileIconProvider::QFileIconProvider();
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:68
+// void setOptions(Options)
 extern "C"
-QFileIconProvider*
-C_ZN17QFileIconProviderC2Ev() {
-  auto ret = new QFileIconProvider();
-  return ret;
+void C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *this_, QFlags<QFileIconProvider::Option> options) {
+  ((QFileIconProvider*)this_)->setOptions(options);
 }
-//   // proto:  void QFileIconProvider::~QFileIconProvider();
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:69
+// Options options()
 extern "C"
-void C_ZN17QFileIconProviderD2Ev(void *qthis) {
-  delete (QFileIconProvider*)qthis;
+void C_ZNK17QFileIconProvider7optionsEv(void *this_) {
+  /*return*/ ((QFileIconProvider*)this_)->options();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfileiconprovider.h', line 64, column 19>
-//   // proto:  QIcon QFileIconProvider::icon(QFileIconProvider::IconType type);
-// _ZNK17QFileIconProvider4iconENS_8IconTypeE icon(enum QFileIconProvider::IconType)
-extern "C"
-QIcon*
-C_ZNK17QFileIconProvider4iconENS_8IconTypeE(void *qthis,
-QFileIconProvider::IconType arg1) {
-  auto ret =
-  ((QFileIconProvider*)qthis)->icon(arg1);
-  return new QIcon(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,605 +1,332 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qfileinfo.h
-// dst-file: /src/core/qfileinfo.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qfileinfo.h
 #include <qfileinfo.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-#include <qfiledevice.h>
-#include <qglobal.h>
-#include <qdatetime.h>
-#include <qdir.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfileinfo_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 120, column 20>
-//   // proto:  QString QFileInfo::symLinkTarget();
-if (true) {
-  auto f = [](QFileInfo flythis) {
-    ((QFileInfo*)0)->symLinkTarget();
-    flythis.symLinkTarget();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QFileInfo13symLinkTargetEv symLinkTarget()
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 110, column 17>
-//   // proto:  bool QFileInfo::isAbsolute();
-if (true) {
-  auto f = [](QFileInfo flythis) {
-    ((QFileInfo*)0)->isAbsolute();
-    flythis.isAbsolute();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QFileInfo10isAbsoluteEv isAbsolute()
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 74, column 10>
-//   // proto:  void QFileInfo::swap(QFileInfo & other);
-if (true) {
-  auto f = [](QFileInfo flythis, QFileInfo & arg1) {
-    ((QFileInfo*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QFileInfo4swapERS_ swap(class QFileInfo &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qfileinfo.h:60
+// void QFileInfo(class QFileInfoPrivate *)
 extern "C"
-int QFileInfo_Class_Size()
-{
-  return sizeof(QFileInfo);
+void* C_ZN9QFileInfoC1EP16QFileInfoPrivate(QFileInfoPrivate * d) {
+  return new QFileInfo(d);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 106, column 10>
-//   // proto:  bool QFileInfo::isHidden();
-// _ZNK9QFileInfo8isHiddenEv isHidden()
+// /usr/include/qt/QtCore/qfileinfo.h:62
+// void QFileInfo()
 extern "C"
-bool
-C_ZNK9QFileInfo8isHiddenEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isHidden();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN9QFileInfoC1Ev() {
+  return new QFileInfo();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 62, column 5>
-//   // proto:  void QFileInfo::QFileInfo();
+// /usr/include/qt/QtCore/qfileinfo.h:63
+// void QFileInfo(const class QString &)
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2Ev() {
-  auto ret = new QFileInfo();
-  return ret;
+void* C_ZN9QFileInfoC1ERK7QString(const QString & file) {
+  return new QFileInfo(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 95, column 13>
-//   // proto:  QString QFileInfo::completeSuffix();
-// _ZNK9QFileInfo14completeSuffixEv completeSuffix()
+// /usr/include/qt/QtCore/qfileinfo.h:64
+// void QFileInfo(const class QFile &)
 extern "C"
-QString*
-C_ZNK9QFileInfo14completeSuffixEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->completeSuffix();
-  return new QString(ret); // 5
+void* C_ZN9QFileInfoC1ERK5QFile(const QFile & file) {
+  return new QFileInfo(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 99, column 13>
-//   // proto:  QString QFileInfo::canonicalPath();
-// _ZNK9QFileInfo13canonicalPathEv canonicalPath()
+// /usr/include/qt/QtCore/qfileinfo.h:65
+// void QFileInfo(const class QDir &, const class QString &)
 extern "C"
-QString*
-C_ZNK9QFileInfo13canonicalPathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->canonicalPath();
-  return new QString(ret); // 5
+void* C_ZN9QFileInfoC1ERK4QDirRK7QString(const QDir & dir, const QString & file) {
+  return new QFileInfo(dir, file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 84, column 17>
-//   // proto: static bool QFileInfo::exists(const QString & file);
-// _ZN9QFileInfo6existsERK7QString exists(const class QString &)
+// /usr/include/qt/QtCore/qfileinfo.h:67
+// void ~QFileInfo()
 extern "C"
-bool
-C_ZN9QFileInfo6existsERK7QString(const QString* arg1) {
-  auto ret =
-  QFileInfo::exists(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFileInfoD1Ev(void *this_) {
+  delete (QFileInfo*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 111, column 10>
-//   // proto:  bool QFileInfo::makeAbsolute();
-// _ZN9QFileInfo12makeAbsoluteEv makeAbsolute()
+// inline
+// /usr/include/qt/QtCore/qfileinfo.h:74
+// void swap(class QFileInfo &)
 extern "C"
-bool
-C_ZN9QFileInfo12makeAbsoluteEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->makeAbsolute();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo & other) {
+  ((QFileInfo*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 116, column 10>
-//   // proto:  bool QFileInfo::isRoot();
-// _ZNK9QFileInfo6isRootEv isRoot()
+// /usr/include/qt/QtCore/qfileinfo.h:80
+// void setFile(const class QString &)
 extern "C"
-bool
-C_ZNK9QFileInfo6isRootEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isRoot();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFileInfo7setFileERK7QString(void *this_, const QString & file) {
+  ((QFileInfo*)this_)->setFile(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 89, column 13>
-//   // proto:  QString QFileInfo::canonicalFilePath();
-// _ZNK9QFileInfo17canonicalFilePathEv canonicalFilePath()
+// /usr/include/qt/QtCore/qfileinfo.h:81
+// void setFile(const class QFile &)
 extern "C"
-QString*
-C_ZNK9QFileInfo17canonicalFilePathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->canonicalFilePath();
-  return new QString(ret); // 5
+void C_ZN9QFileInfo7setFileERK5QFile(void *this_, const QFile & file) {
+  ((QFileInfo*)this_)->setFile(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 114, column 10>
-//   // proto:  bool QFileInfo::isDir();
-// _ZNK9QFileInfo5isDirEv isDir()
+// /usr/include/qt/QtCore/qfileinfo.h:82
+// void setFile(const class QDir &, const class QString &)
 extern "C"
-bool
-C_ZNK9QFileInfo5isDirEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isDir();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFileInfo7setFileERK4QDirRK7QString(void *this_, const QDir & dir, const QString & file) {
+  ((QFileInfo*)this_)->setFile(dir, file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 63, column 5>
-//   // proto:  void QFileInfo::QFileInfo(const QString & file);
+// /usr/include/qt/QtCore/qfileinfo.h:83
+// bool exists()
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2ERK7QString(const QString* arg1) {
-  auto ret = new QFileInfo(*((const QString*)arg1));
-  return ret;
+void C_ZNK9QFileInfo6existsEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->exists();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 128, column 24>
-//   // proto:  QFile::Permissions QFileInfo::permissions();
-// _ZNK9QFileInfo11permissionsEv permissions()
+// static
+// /usr/include/qt/QtCore/qfileinfo.h:84
+// bool exists(const class QString &)
 extern "C"
-QFlags<QFileDevice::Permission>*
-C_ZNK9QFileInfo11permissionsEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->permissions();
-  return new QFlags<QFileDevice::Permission>(ret); // 5
+void C_ZN9QFileInfo6existsERK7QString(const QString & file) {
+  /*return*/ QFileInfo::exists(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 120, column 20>
-//   // proto:  QString QFileInfo::symLinkTarget();
-// _ZNK9QFileInfo13symLinkTargetEv symLinkTarget()
+// /usr/include/qt/QtCore/qfileinfo.h:85
+// void refresh()
 extern "C"
-QString*
-C_ZNK9QFileInfo13symLinkTargetEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->symLinkTarget();
-  return new QString(ret); // 5
+void C_ZN9QFileInfo7refreshEv(void *this_) {
+  ((QFileInfo*)this_)->refresh();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 80, column 10>
-//   // proto:  void QFileInfo::setFile(const QString & file);
-// _ZN9QFileInfo7setFileERK7QString setFile(const class QString &)
+// /usr/include/qt/QtCore/qfileinfo.h:87
+// QString filePath()
 extern "C"
-void
-C_ZN9QFileInfo7setFileERK7QString(void *qthis,
-const QString* arg1) {
-  ((QFileInfo*)qthis)->setFile(*((const QString*)arg1));
+void C_ZNK9QFileInfo8filePathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->filePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 113, column 10>
-//   // proto:  bool QFileInfo::isFile();
-// _ZNK9QFileInfo6isFileEv isFile()
+// /usr/include/qt/QtCore/qfileinfo.h:88
+// QString absoluteFilePath()
 extern "C"
-bool
-C_ZNK9QFileInfo6isFileEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isFile();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo16absoluteFilePathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->absoluteFilePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 64, column 5>
-//   // proto:  void QFileInfo::QFileInfo(const QFile & file);
+// /usr/include/qt/QtCore/qfileinfo.h:89
+// QString canonicalFilePath()
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2ERK5QFile(const QFile* arg1) {
-  auto ret = new QFileInfo(*((const QFile*)arg1));
-  return ret;
+void C_ZNK9QFileInfo17canonicalFilePathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->canonicalFilePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 81, column 10>
-//   // proto:  void QFileInfo::setFile(const QFile & file);
-// _ZN9QFileInfo7setFileERK5QFile setFile(const class QFile &)
+// /usr/include/qt/QtCore/qfileinfo.h:90
+// QString fileName()
 extern "C"
-void
-C_ZN9QFileInfo7setFileERK5QFile(void *qthis,
-const QFile* arg1) {
-  ((QFileInfo*)qthis)->setFile(*((const QFile*)arg1));
+void C_ZNK9QFileInfo8fileNameEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 123, column 10>
-//   // proto:  uint QFileInfo::ownerId();
-// _ZNK9QFileInfo7ownerIdEv ownerId()
+// /usr/include/qt/QtCore/qfileinfo.h:91
+// QString baseName()
 extern "C"
-unsigned int
-C_ZNK9QFileInfo7ownerIdEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->ownerId();
-  return ret; // 0 TypeKind.UINT
+void C_ZNK9QFileInfo8baseNameEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->baseName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 119, column 13>
-//   // proto:  QString QFileInfo::readLink();
-// _ZNK9QFileInfo8readLinkEv readLink()
+// /usr/include/qt/QtCore/qfileinfo.h:92
+// QString completeBaseName()
 extern "C"
-QString*
-C_ZNK9QFileInfo8readLinkEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->readLink();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo16completeBaseNameEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->completeBaseName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 87, column 13>
-//   // proto:  QString QFileInfo::filePath();
-// _ZNK9QFileInfo8filePathEv filePath()
+// /usr/include/qt/QtCore/qfileinfo.h:93
+// QString suffix()
 extern "C"
-QString*
-C_ZNK9QFileInfo8filePathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->filePath();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo6suffixEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->suffix();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 66, column 5>
-//   // proto:  void QFileInfo::QFileInfo(const QFileInfo & fileinfo);
+// /usr/include/qt/QtCore/qfileinfo.h:94
+// QString bundleName()
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2ERKS_(const QFileInfo* arg1) {
-  auto ret = new QFileInfo(*((const QFileInfo*)arg1));
-  return ret;
+void C_ZNK9QFileInfo10bundleNameEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->bundleName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 115, column 10>
-//   // proto:  bool QFileInfo::isSymLink();
-// _ZNK9QFileInfo9isSymLinkEv isSymLink()
+// /usr/include/qt/QtCore/qfileinfo.h:95
+// QString completeSuffix()
 extern "C"
-bool
-C_ZNK9QFileInfo9isSymLinkEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isSymLink();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo14completeSuffixEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->completeSuffix();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 134, column 15>
-//   // proto:  QDateTime QFileInfo::lastRead();
-// _ZNK9QFileInfo8lastReadEv lastRead()
+// /usr/include/qt/QtCore/qfileinfo.h:97
+// QString path()
 extern "C"
-QDateTime*
-C_ZNK9QFileInfo8lastReadEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->lastRead();
-  return new QDateTime(ret); // 5
+void C_ZNK9QFileInfo4pathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->path();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 85, column 10>
-//   // proto:  void QFileInfo::refresh();
-// _ZN9QFileInfo7refreshEv refresh()
+// /usr/include/qt/QtCore/qfileinfo.h:98
+// QString absolutePath()
 extern "C"
-void
-C_ZN9QFileInfo7refreshEv(void *qthis) {
-  ((QFileInfo*)qthis)->refresh();
+void C_ZNK9QFileInfo12absolutePathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->absolutePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 65, column 5>
-//   // proto:  void QFileInfo::QFileInfo(const QDir & dir, const QString & file);
+// /usr/include/qt/QtCore/qfileinfo.h:99
+// QString canonicalPath()
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2ERK4QDirRK7QString(const QDir* arg1,
-const QString* arg2) {
-  auto ret = new QFileInfo(*((const QDir*)arg1),
-*((const QString*)arg2));
-  return ret;
+void C_ZNK9QFileInfo13canonicalPathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->canonicalPath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 97, column 13>
-//   // proto:  QString QFileInfo::path();
-// _ZNK9QFileInfo4pathEv path()
+// /usr/include/qt/QtCore/qfileinfo.h:100
+// QDir dir()
 extern "C"
-QString*
-C_ZNK9QFileInfo4pathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->path();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo3dirEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->dir();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 101, column 10>
-//   // proto:  QDir QFileInfo::absoluteDir();
-// _ZNK9QFileInfo11absoluteDirEv absoluteDir()
+// /usr/include/qt/QtCore/qfileinfo.h:101
+// QDir absoluteDir()
 extern "C"
-QDir*
-C_ZNK9QFileInfo11absoluteDirEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->absoluteDir();
-  return new QDir(ret); // 5
+void C_ZNK9QFileInfo11absoluteDirEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->absoluteDir();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 117, column 10>
-//   // proto:  bool QFileInfo::isBundle();
-// _ZNK9QFileInfo8isBundleEv isBundle()
+// /usr/include/qt/QtCore/qfileinfo.h:103
+// bool isReadable()
 extern "C"
-bool
-C_ZNK9QFileInfo8isBundleEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isBundle();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo10isReadableEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isReadable();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 82, column 10>
-//   // proto:  void QFileInfo::setFile(const QDir & dir, const QString & file);
-// _ZN9QFileInfo7setFileERK4QDirRK7QString setFile(const class QDir &, const class QString &)
+// /usr/include/qt/QtCore/qfileinfo.h:104
+// bool isWritable()
 extern "C"
-void
-C_ZN9QFileInfo7setFileERK4QDirRK7QString(void *qthis,
-const QDir* arg1,
-const QString* arg2) {
-  ((QFileInfo*)qthis)->setFile(*((const QDir*)arg1),
-*((const QString*)arg2));
+void C_ZNK9QFileInfo10isWritableEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isWritable();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 109, column 10>
-//   // proto:  bool QFileInfo::isRelative();
-// _ZNK9QFileInfo10isRelativeEv isRelative()
+// /usr/include/qt/QtCore/qfileinfo.h:105
+// bool isExecutable()
 extern "C"
-bool
-C_ZNK9QFileInfo10isRelativeEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isRelative();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo12isExecutableEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isExecutable();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 137, column 10>
-//   // proto:  void QFileInfo::setCaching(bool on);
-// _ZN9QFileInfo10setCachingEb setCaching(_Bool)
+// /usr/include/qt/QtCore/qfileinfo.h:106
+// bool isHidden()
 extern "C"
-void
-C_ZN9QFileInfo10setCachingEb(void *qthis,
-bool arg1) {
-  ((QFileInfo*)qthis)->setCaching(arg1);
+void C_ZNK9QFileInfo8isHiddenEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isHidden();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 132, column 15>
-//   // proto:  QDateTime QFileInfo::created();
-// _ZNK9QFileInfo7createdEv created()
+// /usr/include/qt/QtCore/qfileinfo.h:107
+// bool isNativePath()
 extern "C"
-QDateTime*
-C_ZNK9QFileInfo7createdEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->created();
-  return new QDateTime(ret); // 5
+void C_ZNK9QFileInfo12isNativePathEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isNativePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 136, column 10>
-//   // proto:  bool QFileInfo::caching();
-// _ZNK9QFileInfo7cachingEv caching()
+// /usr/include/qt/QtCore/qfileinfo.h:109
+// bool isRelative()
 extern "C"
-bool
-C_ZNK9QFileInfo7cachingEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->caching();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo10isRelativeEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isRelative();
 }
-//   // proto:  void QFileInfo::~QFileInfo();
+// inline
+// /usr/include/qt/QtCore/qfileinfo.h:110
+// bool isAbsolute()
 extern "C"
-void C_ZN9QFileInfoD2Ev(void *qthis) {
-  delete (QFileInfo*)qthis;
+void C_ZNK9QFileInfo10isAbsoluteEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isAbsolute();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 92, column 13>
-//   // proto:  QString QFileInfo::completeBaseName();
-// _ZNK9QFileInfo16completeBaseNameEv completeBaseName()
+// /usr/include/qt/QtCore/qfileinfo.h:111
+// bool makeAbsolute()
 extern "C"
-QString*
-C_ZNK9QFileInfo16completeBaseNameEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->completeBaseName();
-  return new QString(ret); // 5
+void C_ZN9QFileInfo12makeAbsoluteEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->makeAbsolute();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 91, column 13>
-//   // proto:  QString QFileInfo::baseName();
-// _ZNK9QFileInfo8baseNameEv baseName()
+// /usr/include/qt/QtCore/qfileinfo.h:113
+// bool isFile()
 extern "C"
-QString*
-C_ZNK9QFileInfo8baseNameEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->baseName();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo6isFileEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isFile();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 105, column 10>
-//   // proto:  bool QFileInfo::isExecutable();
-// _ZNK9QFileInfo12isExecutableEv isExecutable()
+// /usr/include/qt/QtCore/qfileinfo.h:114
+// bool isDir()
 extern "C"
-bool
-C_ZNK9QFileInfo12isExecutableEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isExecutable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo5isDirEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isDir();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 94, column 13>
-//   // proto:  QString QFileInfo::bundleName();
-// _ZNK9QFileInfo10bundleNameEv bundleName()
+// /usr/include/qt/QtCore/qfileinfo.h:115
+// bool isSymLink()
 extern "C"
-QString*
-C_ZNK9QFileInfo10bundleNameEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->bundleName();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo9isSymLinkEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isSymLink();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 127, column 10>
-//   // proto:  bool QFileInfo::permission(QFile::Permissions permissions);
-// _ZNK9QFileInfo10permissionE6QFlagsIN11QFileDevice10PermissionEE permission(class QFile::Permissions)
+// /usr/include/qt/QtCore/qfileinfo.h:116
+// bool isRoot()
 extern "C"
-bool
-C_ZNK9QFileInfo10permissionE6QFlagsIN11QFileDevice10PermissionEE(void *qthis,
-QFile::Permissions* arg1) {
-  auto ret =
-  ((QFileInfo*)qthis)->permission(*((QFile::Permissions*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo6isRootEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isRoot();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 125, column 10>
-//   // proto:  uint QFileInfo::groupId();
-// _ZNK9QFileInfo7groupIdEv groupId()
+// /usr/include/qt/QtCore/qfileinfo.h:117
+// bool isBundle()
 extern "C"
-unsigned int
-C_ZNK9QFileInfo7groupIdEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->groupId();
-  return ret; // 0 TypeKind.UINT
+void C_ZNK9QFileInfo8isBundleEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->isBundle();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 90, column 13>
-//   // proto:  QString QFileInfo::fileName();
-// _ZNK9QFileInfo8fileNameEv fileName()
+// /usr/include/qt/QtCore/qfileinfo.h:119
+// QString readLink()
 extern "C"
-QString*
-C_ZNK9QFileInfo8fileNameEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo8readLinkEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->readLink();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 130, column 12>
-//   // proto:  qint64 QFileInfo::size();
-// _ZNK9QFileInfo4sizeEv size()
+// inline
+// /usr/include/qt/QtCore/qfileinfo.h:120
+// QString symLinkTarget()
 extern "C"
-long long
-C_ZNK9QFileInfo4sizeEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->size();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK9QFileInfo13symLinkTargetEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->symLinkTarget();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 88, column 13>
-//   // proto:  QString QFileInfo::absoluteFilePath();
-// _ZNK9QFileInfo16absoluteFilePathEv absoluteFilePath()
+// /usr/include/qt/QtCore/qfileinfo.h:122
+// QString owner()
 extern "C"
-QString*
-C_ZNK9QFileInfo16absoluteFilePathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->absoluteFilePath();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo5ownerEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->owner();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 93, column 13>
-//   // proto:  QString QFileInfo::suffix();
-// _ZNK9QFileInfo6suffixEv suffix()
+// /usr/include/qt/QtCore/qfileinfo.h:123
+// uint ownerId()
 extern "C"
-QString*
-C_ZNK9QFileInfo6suffixEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->suffix();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo7ownerIdEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->ownerId();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 124, column 13>
-//   // proto:  QString QFileInfo::group();
-// _ZNK9QFileInfo5groupEv group()
+// /usr/include/qt/QtCore/qfileinfo.h:124
+// QString group()
 extern "C"
-QString*
-C_ZNK9QFileInfo5groupEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->group();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo5groupEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->group();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 110, column 17>
-//   // proto:  bool QFileInfo::isAbsolute();
-// _ZNK9QFileInfo10isAbsoluteEv isAbsolute()
+// /usr/include/qt/QtCore/qfileinfo.h:125
+// uint groupId()
 extern "C"
-bool
-C_ZNK9QFileInfo10isAbsoluteEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isAbsolute();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo7groupIdEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->groupId();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 107, column 10>
-//   // proto:  bool QFileInfo::isNativePath();
-// _ZNK9QFileInfo12isNativePathEv isNativePath()
+// /usr/include/qt/QtCore/qfileinfo.h:127
+// bool permission(class QFile::Permissions)
 extern "C"
-bool
-C_ZNK9QFileInfo12isNativePathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isNativePath();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo10permissionE6QFlagsIN11QFileDevice10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissions) {
+  /*return*/ ((QFileInfo*)this_)->permission(permissions);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 104, column 10>
-//   // proto:  bool QFileInfo::isWritable();
-// _ZNK9QFileInfo10isWritableEv isWritable()
+// /usr/include/qt/QtCore/qfileinfo.h:128
+// QFile::Permissions permissions()
 extern "C"
-bool
-C_ZNK9QFileInfo10isWritableEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isWritable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo11permissionsEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->permissions();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 122, column 13>
-//   // proto:  QString QFileInfo::owner();
-// _ZNK9QFileInfo5ownerEv owner()
+// /usr/include/qt/QtCore/qfileinfo.h:130
+// qint64 size()
 extern "C"
-QString*
-C_ZNK9QFileInfo5ownerEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->owner();
-  return new QString(ret); // 5
+void C_ZNK9QFileInfo4sizeEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 103, column 10>
-//   // proto:  bool QFileInfo::isReadable();
-// _ZNK9QFileInfo10isReadableEv isReadable()
+// /usr/include/qt/QtCore/qfileinfo.h:132
+// QDateTime created()
 extern "C"
-bool
-C_ZNK9QFileInfo10isReadableEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->isReadable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFileInfo7createdEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->created();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 60, column 14>
-//   // proto:  void QFileInfo::QFileInfo(QFileInfoPrivate * d);
+// /usr/include/qt/QtCore/qfileinfo.h:133
+// QDateTime lastModified()
 extern "C"
-QFileInfo*
-C_ZN9QFileInfoC2EP16QFileInfoPrivate(QFileInfoPrivate * arg1) {
-  auto ret = new QFileInfo(arg1);
-  return ret;
+void C_ZNK9QFileInfo12lastModifiedEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->lastModified();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 100, column 10>
-//   // proto:  QDir QFileInfo::dir();
-// _ZNK9QFileInfo3dirEv dir()
+// /usr/include/qt/QtCore/qfileinfo.h:134
+// QDateTime lastRead()
 extern "C"
-QDir*
-C_ZNK9QFileInfo3dirEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->dir();
-  return new QDir(ret); // 5
+void C_ZNK9QFileInfo8lastReadEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->lastRead();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 74, column 10>
-//   // proto:  void QFileInfo::swap(QFileInfo & other);
-// _ZN9QFileInfo4swapERS_ swap(class QFileInfo &)
+// /usr/include/qt/QtCore/qfileinfo.h:136
+// bool caching()
 extern "C"
-void
-C_ZN9QFileInfo4swapERS_(void *qthis,
-QFileInfo* arg1) {
-  ((QFileInfo*)qthis)->swap(*((QFileInfo*)arg1));
+void C_ZNK9QFileInfo7cachingEv(void *this_) {
+  /*return*/ ((QFileInfo*)this_)->caching();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 83, column 10>
-//   // proto:  bool QFileInfo::exists();
-// _ZNK9QFileInfo6existsEv exists()
+// /usr/include/qt/QtCore/qfileinfo.h:137
+// void setCaching(_Bool)
 extern "C"
-bool
-C_ZNK9QFileInfo6existsEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->exists();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFileInfo10setCachingEb(void *this_, bool on) {
+  ((QFileInfo*)this_)->setCaching(on);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 133, column 15>
-//   // proto:  QDateTime QFileInfo::lastModified();
-// _ZNK9QFileInfo12lastModifiedEv lastModified()
-extern "C"
-QDateTime*
-C_ZNK9QFileInfo12lastModifiedEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->lastModified();
-  return new QDateTime(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qfileinfo.h', line 98, column 13>
-//   // proto:  QString QFileInfo::absolutePath();
-// _ZNK9QFileInfo12absolutePathEv absolutePath()
-extern "C"
-QString*
-C_ZNK9QFileInfo12absolutePathEv(void *qthis) {
-  auto ret =
-  ((QFileInfo*)qthis)->absolutePath();
-  return new QString(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

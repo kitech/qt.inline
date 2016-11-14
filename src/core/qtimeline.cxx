@@ -1,359 +1,199 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qtimeline.h
-// dst-file: /src/core/qtimeline.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qtimeline.h
 #include <qtimeline.h>
+#include <QtCore>
 
-
-#include <qeasingcurve.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtimeline_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qtimeline.h:52
+// const QMetaObject * metaObject()
 extern "C"
-int QTimeLine_Class_Size()
-{
-  return sizeof(QTimeLine);
+void C_ZNK9QTimeLine10metaObjectEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 116, column 10>
-//   // proto:  void QTimeLine::start();
-// _ZN9QTimeLine5startEv start()
+// /usr/include/qt/QtCore/qtimeline.h:79
+// void QTimeLine(int, class QObject *)
 extern "C"
-void
-C_ZN9QTimeLine5startEv(void *qthis) {
-  ((QTimeLine*)qthis)->start();
+void* C_ZN9QTimeLineC1EiP7QObject(int duration, QObject * parent) {
+  return new QTimeLine(duration, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 90, column 9>
-//   // proto:  int QTimeLine::duration();
-// _ZNK9QTimeLine8durationEv duration()
+// virtual
+// /usr/include/qt/QtCore/qtimeline.h:80
+// void ~QTimeLine()
 extern "C"
-int
-C_ZNK9QTimeLine8durationEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->duration();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeLineD1Ev(void *this_) {
+  delete (QTimeLine*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 109, column 9>
-//   // proto:  int QTimeLine::currentFrame();
-// _ZNK9QTimeLine12currentFrameEv currentFrame()
+// /usr/include/qt/QtCore/qtimeline.h:82
+// QTimeLine::State state()
 extern "C"
-int
-C_ZNK9QTimeLine12currentFrameEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->currentFrame();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QTimeLine5stateEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->state();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 52, column 5>
-//   // proto:  const QMetaObject * QTimeLine::metaObject();
-// _ZNK9QTimeLine10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qtimeline.h:84
+// int loopCount()
 extern "C"
-void*
-C_ZNK9QTimeLine10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK9QTimeLine9loopCountEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->loopCount();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 118, column 10>
-//   // proto:  void QTimeLine::stop();
-// _ZN9QTimeLine4stopEv stop()
+// /usr/include/qt/QtCore/qtimeline.h:85
+// void setLoopCount(int)
 extern "C"
-void
-C_ZN9QTimeLine4stopEv(void *qthis) {
-  ((QTimeLine*)qthis)->stop();
+void C_ZN9QTimeLine12setLoopCountEi(void *this_, int count) {
+  ((QTimeLine*)this_)->setLoopCount(count);
 }
-//   // proto:  void QTimeLine::~QTimeLine();
+// /usr/include/qt/QtCore/qtimeline.h:87
+// QTimeLine::Direction direction()
 extern "C"
-void C_ZN9QTimeLineD2Ev(void *qthis) {
-  delete (QTimeLine*)qthis;
+void C_ZNK9QTimeLine9directionEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->direction();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 100, column 10>
-//   // proto:  void QTimeLine::setUpdateInterval(int interval);
-// _ZN9QTimeLine17setUpdateIntervalEi setUpdateInterval(int)
+// /usr/include/qt/QtCore/qtimeline.h:88
+// void setDirection(enum QTimeLine::Direction)
 extern "C"
-void
-C_ZN9QTimeLine17setUpdateIntervalEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setUpdateInterval(arg1);
+void C_ZN9QTimeLine12setDirectionENS_9DirectionE(void *this_, QTimeLine::Direction direction) {
+  ((QTimeLine*)this_)->setDirection(direction);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 105, column 18>
-//   // proto:  QEasingCurve QTimeLine::easingCurve();
-// _ZNK9QTimeLine11easingCurveEv easingCurve()
+// /usr/include/qt/QtCore/qtimeline.h:90
+// int duration()
 extern "C"
-QEasingCurve*
-C_ZNK9QTimeLine11easingCurveEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->easingCurve();
-  return new QEasingCurve(ret); // 5
+void C_ZNK9QTimeLine8durationEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->duration();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 84, column 9>
-//   // proto:  int QTimeLine::loopCount();
-// _ZNK9QTimeLine9loopCountEv loopCount()
+// /usr/include/qt/QtCore/qtimeline.h:91
+// void setDuration(int)
 extern "C"
-int
-C_ZNK9QTimeLine9loopCountEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->loopCount();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeLine11setDurationEi(void *this_, int duration) {
+  ((QTimeLine*)this_)->setDuration(duration);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 94, column 10>
-//   // proto:  void QTimeLine::setStartFrame(int frame);
-// _ZN9QTimeLine13setStartFrameEi setStartFrame(int)
+// /usr/include/qt/QtCore/qtimeline.h:93
+// int startFrame()
 extern "C"
-void
-C_ZN9QTimeLine13setStartFrameEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setStartFrame(arg1);
+void C_ZNK9QTimeLine10startFrameEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->startFrame();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 79, column 14>
-//   // proto:  void QTimeLine::QTimeLine(int duration, QObject * parent);
+// /usr/include/qt/QtCore/qtimeline.h:94
+// void setStartFrame(int)
 extern "C"
-QTimeLine*
-C_ZN9QTimeLineC2EiP7QObject(int arg1,
-QObject * arg2) {
-  auto ret = new QTimeLine(arg1,
-arg2);
-  return ret;
+void C_ZN9QTimeLine13setStartFrameEi(void *this_, int frame) {
+  ((QTimeLine*)this_)->setStartFrame(frame);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 117, column 10>
-//   // proto:  void QTimeLine::resume();
-// _ZN9QTimeLine6resumeEv resume()
+// /usr/include/qt/QtCore/qtimeline.h:95
+// int endFrame()
 extern "C"
-void
-C_ZN9QTimeLine6resumeEv(void *qthis) {
-  ((QTimeLine*)qthis)->resume();
+void C_ZNK9QTimeLine8endFrameEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->endFrame();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 103, column 10>
-//   // proto:  void QTimeLine::setCurveShape(QTimeLine::CurveShape shape);
-// _ZN9QTimeLine13setCurveShapeENS_10CurveShapeE setCurveShape(enum QTimeLine::CurveShape)
+// /usr/include/qt/QtCore/qtimeline.h:96
+// void setEndFrame(int)
 extern "C"
-void
-C_ZN9QTimeLine13setCurveShapeENS_10CurveShapeE(void *qthis,
-QTimeLine::CurveShape arg1) {
-  ((QTimeLine*)qthis)->setCurveShape(arg1);
+void C_ZN9QTimeLine11setEndFrameEi(void *this_, int frame) {
+  ((QTimeLine*)this_)->setEndFrame(frame);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 106, column 10>
-//   // proto:  void QTimeLine::setEasingCurve(const QEasingCurve & curve);
-// _ZN9QTimeLine14setEasingCurveERK12QEasingCurve setEasingCurve(const class QEasingCurve &)
+// /usr/include/qt/QtCore/qtimeline.h:97
+// void setFrameRange(int, int)
 extern "C"
-void
-C_ZN9QTimeLine14setEasingCurveERK12QEasingCurve(void *qthis,
-const QEasingCurve* arg1) {
-  ((QTimeLine*)qthis)->setEasingCurve(*((const QEasingCurve*)arg1));
+void C_ZN9QTimeLine13setFrameRangeEii(void *this_, int startFrame, int endFrame) {
+  ((QTimeLine*)this_)->setFrameRange(startFrame, endFrame);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 93, column 9>
-//   // proto:  int QTimeLine::startFrame();
-// _ZNK9QTimeLine10startFrameEv startFrame()
+// /usr/include/qt/QtCore/qtimeline.h:99
+// int updateInterval()
 extern "C"
-int
-C_ZNK9QTimeLine10startFrameEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->startFrame();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QTimeLine14updateIntervalEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->updateInterval();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 96, column 10>
-//   // proto:  void QTimeLine::setEndFrame(int frame);
-// _ZN9QTimeLine11setEndFrameEi setEndFrame(int)
+// /usr/include/qt/QtCore/qtimeline.h:100
+// void setUpdateInterval(int)
 extern "C"
-void
-C_ZN9QTimeLine11setEndFrameEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setEndFrame(arg1);
+void C_ZN9QTimeLine17setUpdateIntervalEi(void *this_, int interval) {
+  ((QTimeLine*)this_)->setUpdateInterval(interval);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 99, column 9>
-//   // proto:  int QTimeLine::updateInterval();
-// _ZNK9QTimeLine14updateIntervalEv updateInterval()
+// /usr/include/qt/QtCore/qtimeline.h:102
+// QTimeLine::CurveShape curveShape()
 extern "C"
-int
-C_ZNK9QTimeLine14updateIntervalEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->updateInterval();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QTimeLine10curveShapeEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->curveShape();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 85, column 10>
-//   // proto:  void QTimeLine::setLoopCount(int count);
-// _ZN9QTimeLine12setLoopCountEi setLoopCount(int)
+// /usr/include/qt/QtCore/qtimeline.h:103
+// void setCurveShape(enum QTimeLine::CurveShape)
 extern "C"
-void
-C_ZN9QTimeLine12setLoopCountEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setLoopCount(arg1);
+void C_ZN9QTimeLine13setCurveShapeENS_10CurveShapeE(void *this_, QTimeLine::CurveShape shape) {
+  ((QTimeLine*)this_)->setCurveShape(shape);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 120, column 10>
-//   // proto:  void QTimeLine::setCurrentTime(int msec);
-// _ZN9QTimeLine14setCurrentTimeEi setCurrentTime(int)
+// /usr/include/qt/QtCore/qtimeline.h:105
+// QEasingCurve easingCurve()
 extern "C"
-void
-C_ZN9QTimeLine14setCurrentTimeEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setCurrentTime(arg1);
+void C_ZNK9QTimeLine11easingCurveEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->easingCurve();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 108, column 9>
-//   // proto:  int QTimeLine::currentTime();
-// _ZNK9QTimeLine11currentTimeEv currentTime()
+// /usr/include/qt/QtCore/qtimeline.h:106
+// void setEasingCurve(const class QEasingCurve &)
 extern "C"
-int
-C_ZNK9QTimeLine11currentTimeEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->currentTime();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeLine14setEasingCurveERK12QEasingCurve(void *this_, const QEasingCurve & curve) {
+  ((QTimeLine*)this_)->setEasingCurve(curve);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 91, column 10>
-//   // proto:  void QTimeLine::setDuration(int duration);
-// _ZN9QTimeLine11setDurationEi setDuration(int)
+// /usr/include/qt/QtCore/qtimeline.h:108
+// int currentTime()
 extern "C"
-void
-C_ZN9QTimeLine11setDurationEi(void *qthis,
-int arg1) {
-  ((QTimeLine*)qthis)->setDuration(arg1);
+void C_ZNK9QTimeLine11currentTimeEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->currentTime();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 121, column 10>
-//   // proto:  void QTimeLine::toggleDirection();
-// _ZN9QTimeLine15toggleDirectionEv toggleDirection()
+// /usr/include/qt/QtCore/qtimeline.h:109
+// int currentFrame()
 extern "C"
-void
-C_ZN9QTimeLine15toggleDirectionEv(void *qthis) {
-  ((QTimeLine*)qthis)->toggleDirection();
+void C_ZNK9QTimeLine12currentFrameEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->currentFrame();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 82, column 11>
-//   // proto:  QTimeLine::State QTimeLine::state();
-// _ZNK9QTimeLine5stateEv state()
+// /usr/include/qt/QtCore/qtimeline.h:110
+// qreal currentValue()
 extern "C"
-QTimeLine::State
-C_ZNK9QTimeLine5stateEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->state();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QTimeLine12currentValueEv(void *this_) {
+  /*return*/ ((QTimeLine*)this_)->currentValue();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 95, column 9>
-//   // proto:  int QTimeLine::endFrame();
-// _ZNK9QTimeLine8endFrameEv endFrame()
+// /usr/include/qt/QtCore/qtimeline.h:112
+// int frameForTime(int)
 extern "C"
-int
-C_ZNK9QTimeLine8endFrameEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->endFrame();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QTimeLine12frameForTimeEi(void *this_, int msec) {
+  /*return*/ ((QTimeLine*)this_)->frameForTime(msec);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 87, column 15>
-//   // proto:  QTimeLine::Direction QTimeLine::direction();
-// _ZNK9QTimeLine9directionEv direction()
+// virtual
+// /usr/include/qt/QtCore/qtimeline.h:113
+// qreal valueForTime(int)
 extern "C"
-QTimeLine::Direction
-C_ZNK9QTimeLine9directionEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->direction();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QTimeLine12valueForTimeEi(void *this_, int msec) {
+  /*return*/ ((QTimeLine*)this_)->valueForTime(msec);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 119, column 10>
-//   // proto:  void QTimeLine::setPaused(bool paused);
-// _ZN9QTimeLine9setPausedEb setPaused(_Bool)
+// /usr/include/qt/QtCore/qtimeline.h:116
+// void start()
 extern "C"
-void
-C_ZN9QTimeLine9setPausedEb(void *qthis,
-bool arg1) {
-  ((QTimeLine*)qthis)->setPaused(arg1);
+void C_ZN9QTimeLine5startEv(void *this_) {
+  ((QTimeLine*)this_)->start();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 102, column 16>
-//   // proto:  QTimeLine::CurveShape QTimeLine::curveShape();
-// _ZNK9QTimeLine10curveShapeEv curveShape()
+// /usr/include/qt/QtCore/qtimeline.h:117
+// void resume()
 extern "C"
-QTimeLine::CurveShape
-C_ZNK9QTimeLine10curveShapeEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->curveShape();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QTimeLine6resumeEv(void *this_) {
+  ((QTimeLine*)this_)->resume();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 112, column 9>
-//   // proto:  int QTimeLine::frameForTime(int msec);
-// _ZNK9QTimeLine12frameForTimeEi frameForTime(int)
+// /usr/include/qt/QtCore/qtimeline.h:118
+// void stop()
 extern "C"
-int
-C_ZNK9QTimeLine12frameForTimeEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTimeLine*)qthis)->frameForTime(arg1);
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeLine4stopEv(void *this_) {
+  ((QTimeLine*)this_)->stop();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 97, column 10>
-//   // proto:  void QTimeLine::setFrameRange(int startFrame, int endFrame);
-// _ZN9QTimeLine13setFrameRangeEii setFrameRange(int, int)
+// /usr/include/qt/QtCore/qtimeline.h:119
+// void setPaused(_Bool)
 extern "C"
-void
-C_ZN9QTimeLine13setFrameRangeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QTimeLine*)qthis)->setFrameRange(arg1,
-arg2);
+void C_ZN9QTimeLine9setPausedEb(void *this_, bool paused) {
+  ((QTimeLine*)this_)->setPaused(paused);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 113, column 19>
-//   // proto:  qreal QTimeLine::valueForTime(int msec);
-// _ZNK9QTimeLine12valueForTimeEi valueForTime(int)
+// /usr/include/qt/QtCore/qtimeline.h:120
+// void setCurrentTime(int)
 extern "C"
-double
-C_ZNK9QTimeLine12valueForTimeEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTimeLine*)qthis)->valueForTime(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN9QTimeLine14setCurrentTimeEi(void *this_, int msec) {
+  ((QTimeLine*)this_)->setCurrentTime(msec);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 88, column 10>
-//   // proto:  void QTimeLine::setDirection(QTimeLine::Direction direction);
-// _ZN9QTimeLine12setDirectionENS_9DirectionE setDirection(enum QTimeLine::Direction)
+// /usr/include/qt/QtCore/qtimeline.h:121
+// void toggleDirection()
 extern "C"
-void
-C_ZN9QTimeLine12setDirectionENS_9DirectionE(void *qthis,
-QTimeLine::Direction arg1) {
-  ((QTimeLine*)qthis)->setDirection(arg1);
+void C_ZN9QTimeLine15toggleDirectionEv(void *this_) {
+  ((QTimeLine*)this_)->toggleDirection();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimeline.h', line 110, column 11>
-//   // proto:  qreal QTimeLine::currentValue();
-// _ZNK9QTimeLine12currentValueEv currentValue()
-extern "C"
-double
-C_ZNK9QTimeLine12currentValueEv(void *qthis) {
-  auto ret =
-  ((QTimeLine*)qthis)->currentValue();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <= ext block end
-
-// body block begin =>
-// QTimeLine_SlotProxy here
-class QTimeLine_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QTimeLine_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qtimeline.moc"
-
-extern "C" {
-  QTimeLine_SlotProxy* QTimeLine_SlotProxy_new()
-  {
-    return new QTimeLine_SlotProxy();
-  }
-};
-
-// <= body block end
-

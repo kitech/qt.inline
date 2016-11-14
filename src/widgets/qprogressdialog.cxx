@@ -1,362 +1,181 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qprogressdialog.h
-// dst-file: /src/widgets/qprogressdialog.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qprogressdialog.h
 #include <qprogressdialog.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qprogressdialog_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qprogressdialog.h:58
+// const QMetaObject * metaObject()
 extern "C"
-int QProgressDialog_Class_Size()
-{
-  return sizeof(QProgressDialog);
+void C_ZNK15QProgressDialog10metaObjectEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 94, column 10>
-//   // proto:  void QProgressDialog::setAutoClose(bool close);
-// _ZN15QProgressDialog12setAutoCloseEb setAutoClose(_Bool)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:70
+// void QProgressDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
-void
-C_ZN15QProgressDialog12setAutoCloseEb(void *qthis,
-bool arg1) {
-  ((QProgressDialog*)qthis)->setAutoClose(arg1);
+void* C_ZN15QProgressDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  return new QProgressDialog(parent, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 98, column 10>
-//   // proto:  void QProgressDialog::open(QObject * receiver, const char * member);
-// _ZN15QProgressDialog4openEP7QObjectPKc open(class QObject *, const char *)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:71
+// void QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
 extern "C"
-void
-C_ZN15QProgressDialog4openEP7QObjectPKc(void *qthis,
-QObject * arg1,
-const char * arg2) {
-  ((QProgressDialog*)qthis)->open(arg1,
-arg2);
+void* C_ZN15QProgressDialogC1ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) {
+  return new QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 103, column 10>
-//   // proto:  void QProgressDialog::setMaximum(int maximum);
-// _ZN15QProgressDialog10setMaximumEi setMaximum(int)
+// virtual
+// /usr/include/qt/QtWidgets/qprogressdialog.h:74
+// void ~QProgressDialog()
 extern "C"
-void
-C_ZN15QProgressDialog10setMaximumEi(void *qthis,
-int arg1) {
-  ((QProgressDialog*)qthis)->setMaximum(arg1);
+void C_ZN15QProgressDialogD1Ev(void *this_) {
+  delete (QProgressDialog*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 104, column 10>
-//   // proto:  void QProgressDialog::setMinimum(int minimum);
-// _ZN15QProgressDialog10setMinimumEi setMinimum(int)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:76
+// void setLabel(class QLabel *)
 extern "C"
-void
-C_ZN15QProgressDialog10setMinimumEi(void *qthis,
-int arg1) {
-  ((QProgressDialog*)qthis)->setMinimum(arg1);
+void C_ZN15QProgressDialog8setLabelEP6QLabel(void *this_, QLabel * label) {
+  ((QProgressDialog*)this_)->setLabel(label);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 107, column 10>
-//   // proto:  void QProgressDialog::setLabelText(const QString & text);
-// _ZN15QProgressDialog12setLabelTextERK7QString setLabelText(const class QString &)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:77
+// void setCancelButton(class QPushButton *)
 extern "C"
-void
-C_ZN15QProgressDialog12setLabelTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QProgressDialog*)qthis)->setLabelText(*((const QString*)arg1));
+void C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *this_, QPushButton * button) {
+  ((QProgressDialog*)this_)->setCancelButton(button);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 71, column 5>
-//   // proto:  void QProgressDialog::QProgressDialog(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, Qt::WindowFlags flags);
+// /usr/include/qt/QtWidgets/qprogressdialog.h:78
+// void setBar(class QProgressBar *)
 extern "C"
-QProgressDialog*
-C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString* arg1,
-const QString* arg2,
-int arg3,
-int arg4,
-QWidget * arg5,
-Qt::WindowFlags* arg6) {
-  auto ret = new QProgressDialog(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4,
-arg5,
-*((Qt::WindowFlags*)arg6));
-  return ret;
+void C_ZN15QProgressDialog6setBarEP12QProgressBar(void *this_, QProgressBar * bar) {
+  ((QProgressDialog*)this_)->setBar(bar);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 80, column 10>
-//   // proto:  bool QProgressDialog::wasCanceled();
-// _ZNK15QProgressDialog11wasCanceledEv wasCanceled()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:80
+// bool wasCanceled()
 extern "C"
-bool
-C_ZNK15QProgressDialog11wasCanceledEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->wasCanceled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK15QProgressDialog11wasCanceledEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->wasCanceled();
 }
-//   // proto:  void QProgressDialog::~QProgressDialog();
+// /usr/include/qt/QtWidgets/qprogressdialog.h:82
+// int minimum()
 extern "C"
-void C_ZN15QProgressDialogD2Ev(void *qthis) {
-  delete (QProgressDialog*)qthis;
+void C_ZNK15QProgressDialog7minimumEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->minimum();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 90, column 9>
-//   // proto:  int QProgressDialog::minimumDuration();
-// _ZNK15QProgressDialog15minimumDurationEv minimumDuration()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:83
+// int maximum()
 extern "C"
-int
-C_ZNK15QProgressDialog15minimumDurationEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->minimumDuration();
-  return ret; // 0 TypeKind.INT
+void C_ZNK15QProgressDialog7maximumEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->maximum();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 109, column 10>
-//   // proto:  void QProgressDialog::setMinimumDuration(int ms);
-// _ZN15QProgressDialog18setMinimumDurationEi setMinimumDuration(int)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:85
+// int value()
 extern "C"
-void
-C_ZN15QProgressDialog18setMinimumDurationEi(void *qthis,
-int arg1) {
-  ((QProgressDialog*)qthis)->setMinimumDuration(arg1);
+void C_ZNK15QProgressDialog5valueEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->value();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 83, column 9>
-//   // proto:  int QProgressDialog::maximum();
-// _ZNK15QProgressDialog7maximumEv maximum()
+// virtual
+// /usr/include/qt/QtWidgets/qprogressdialog.h:87
+// QSize sizeHint()
 extern "C"
-int
-C_ZNK15QProgressDialog7maximumEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->maximum();
-  return ret; // 0 TypeKind.INT
+void C_ZNK15QProgressDialog8sizeHintEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 78, column 10>
-//   // proto:  void QProgressDialog::setBar(QProgressBar * bar);
-// _ZN15QProgressDialog6setBarEP12QProgressBar setBar(class QProgressBar *)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:89
+// QString labelText()
 extern "C"
-void
-C_ZN15QProgressDialog6setBarEP12QProgressBar(void *qthis,
-QProgressBar * arg1) {
-  ((QProgressDialog*)qthis)->setBar(arg1);
+void C_ZNK15QProgressDialog9labelTextEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->labelText();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 101, column 10>
-//   // proto:  void QProgressDialog::cancel();
-// _ZN15QProgressDialog6cancelEv cancel()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:90
+// int minimumDuration()
 extern "C"
-void
-C_ZN15QProgressDialog6cancelEv(void *qthis) {
-  ((QProgressDialog*)qthis)->cancel();
+void C_ZNK15QProgressDialog15minimumDurationEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->minimumDuration();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 95, column 10>
-//   // proto:  bool QProgressDialog::autoClose();
-// _ZNK15QProgressDialog9autoCloseEv autoClose()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:92
+// void setAutoReset(_Bool)
 extern "C"
-bool
-C_ZNK15QProgressDialog9autoCloseEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->autoClose();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QProgressDialog12setAutoResetEb(void *this_, bool reset) {
+  ((QProgressDialog*)this_)->setAutoReset(reset);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 82, column 9>
-//   // proto:  int QProgressDialog::minimum();
-// _ZNK15QProgressDialog7minimumEv minimum()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:93
+// bool autoReset()
 extern "C"
-int
-C_ZNK15QProgressDialog7minimumEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->minimum();
-  return ret; // 0 TypeKind.INT
+void C_ZNK15QProgressDialog9autoResetEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->autoReset();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 93, column 10>
-//   // proto:  bool QProgressDialog::autoReset();
-// _ZNK15QProgressDialog9autoResetEv autoReset()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:94
+// void setAutoClose(_Bool)
 extern "C"
-bool
-C_ZNK15QProgressDialog9autoResetEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->autoReset();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QProgressDialog12setAutoCloseEb(void *this_, bool close) {
+  ((QProgressDialog*)this_)->setAutoClose(close);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 102, column 10>
-//   // proto:  void QProgressDialog::reset();
-// _ZN15QProgressDialog5resetEv reset()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:95
+// bool autoClose()
 extern "C"
-void
-C_ZN15QProgressDialog5resetEv(void *qthis) {
-  ((QProgressDialog*)qthis)->reset();
+void C_ZNK15QProgressDialog9autoCloseEv(void *this_) {
+  /*return*/ ((QProgressDialog*)this_)->autoClose();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 70, column 14>
-//   // proto:  void QProgressDialog::QProgressDialog(QWidget * parent, Qt::WindowFlags flags);
+// /usr/include/qt/QtWidgets/qprogressdialog.h:98
+// void open(class QObject *, const char *)
 extern "C"
-QProgressDialog*
-C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
-Qt::WindowFlags* arg2) {
-  auto ret = new QProgressDialog(arg1,
-*((Qt::WindowFlags*)arg2));
-  return ret;
+void C_ZN15QProgressDialog4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
+  ((QProgressDialog*)this_)->open(receiver, member);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 105, column 10>
-//   // proto:  void QProgressDialog::setRange(int minimum, int maximum);
-// _ZN15QProgressDialog8setRangeEii setRange(int, int)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:101
+// void cancel()
 extern "C"
-void
-C_ZN15QProgressDialog8setRangeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QProgressDialog*)qthis)->setRange(arg1,
-arg2);
+void C_ZN15QProgressDialog6cancelEv(void *this_) {
+  ((QProgressDialog*)this_)->cancel();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 112, column 10>
-//   // proto:  void QProgressDialog::canceled();
-// _ZN15QProgressDialog8canceledEv canceled()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:102
+// void reset()
 extern "C"
-void
-C_ZN15QProgressDialog8canceledEv(void *qthis) {
-  ((QProgressDialog*)qthis)->canceled();
+void C_ZN15QProgressDialog5resetEv(void *this_) {
+  ((QProgressDialog*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 108, column 10>
-//   // proto:  void QProgressDialog::setCancelButtonText(const QString & text);
-// _ZN15QProgressDialog19setCancelButtonTextERK7QString setCancelButtonText(const class QString &)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:103
+// void setMaximum(int)
 extern "C"
-void
-C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QProgressDialog*)qthis)->setCancelButtonText(*((const QString*)arg1));
+void C_ZN15QProgressDialog10setMaximumEi(void *this_, int maximum) {
+  ((QProgressDialog*)this_)->setMaximum(maximum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 87, column 11>
-//   // proto:  QSize QProgressDialog::sizeHint();
-// _ZNK15QProgressDialog8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:104
+// void setMinimum(int)
 extern "C"
-QSize*
-C_ZNK15QProgressDialog8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN15QProgressDialog10setMinimumEi(void *this_, int minimum) {
+  ((QProgressDialog*)this_)->setMinimum(minimum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 89, column 13>
-//   // proto:  QString QProgressDialog::labelText();
-// _ZNK15QProgressDialog9labelTextEv labelText()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:105
+// void setRange(int, int)
 extern "C"
-QString*
-C_ZNK15QProgressDialog9labelTextEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->labelText();
-  return new QString(ret); // 5
+void C_ZN15QProgressDialog8setRangeEii(void *this_, int minimum, int maximum) {
+  ((QProgressDialog*)this_)->setRange(minimum, maximum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 76, column 10>
-//   // proto:  void QProgressDialog::setLabel(QLabel * label);
-// _ZN15QProgressDialog8setLabelEP6QLabel setLabel(class QLabel *)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:106
+// void setValue(int)
 extern "C"
-void
-C_ZN15QProgressDialog8setLabelEP6QLabel(void *qthis,
-QLabel * arg1) {
-  ((QProgressDialog*)qthis)->setLabel(arg1);
+void C_ZN15QProgressDialog8setValueEi(void *this_, int progress) {
+  ((QProgressDialog*)this_)->setValue(progress);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 58, column 5>
-//   // proto:  const QMetaObject * QProgressDialog::metaObject();
-// _ZNK15QProgressDialog10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:107
+// void setLabelText(const class QString &)
 extern "C"
-void*
-C_ZNK15QProgressDialog10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, const QString & text) {
+  ((QProgressDialog*)this_)->setLabelText(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 92, column 10>
-//   // proto:  void QProgressDialog::setAutoReset(bool reset);
-// _ZN15QProgressDialog12setAutoResetEb setAutoReset(_Bool)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:108
+// void setCancelButtonText(const class QString &)
 extern "C"
-void
-C_ZN15QProgressDialog12setAutoResetEb(void *qthis,
-bool arg1) {
-  ((QProgressDialog*)qthis)->setAutoReset(arg1);
+void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, const QString & text) {
+  ((QProgressDialog*)this_)->setCancelButtonText(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 85, column 9>
-//   // proto:  int QProgressDialog::value();
-// _ZNK15QProgressDialog5valueEv value()
+// /usr/include/qt/QtWidgets/qprogressdialog.h:109
+// void setMinimumDuration(int)
 extern "C"
-int
-C_ZNK15QProgressDialog5valueEv(void *qthis) {
-  auto ret =
-  ((QProgressDialog*)qthis)->value();
-  return ret; // 0 TypeKind.INT
+void C_ZN15QProgressDialog18setMinimumDurationEi(void *this_, int ms) {
+  ((QProgressDialog*)this_)->setMinimumDuration(ms);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 77, column 10>
-//   // proto:  void QProgressDialog::setCancelButton(QPushButton * button);
-// _ZN15QProgressDialog15setCancelButtonEP11QPushButton setCancelButton(class QPushButton *)
+// /usr/include/qt/QtWidgets/qprogressdialog.h:112
+// void canceled()
 extern "C"
-void
-C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *qthis,
-QPushButton * arg1) {
-  ((QProgressDialog*)qthis)->setCancelButton(arg1);
+void C_ZN15QProgressDialog8canceledEv(void *this_) {
+  ((QProgressDialog*)this_)->canceled();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressdialog.h', line 106, column 10>
-//   // proto:  void QProgressDialog::setValue(int progress);
-// _ZN15QProgressDialog8setValueEi setValue(int)
-extern "C"
-void
-C_ZN15QProgressDialog8setValueEi(void *qthis,
-int arg1) {
-  ((QProgressDialog*)qthis)->setValue(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QProgressDialog_SlotProxy here
-class QProgressDialog_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QProgressDialog_SlotProxy():QObject(){}
-
-public slots:
-  // canceled()
-  void slot_proxy_func__ZN15QProgressDialog8canceledEv();
-public:
-  void (*slot_func__ZN15QProgressDialog8canceledEv)(void* rsfptr) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qprogressdialog.moc"
-
-extern "C" {
-  QProgressDialog_SlotProxy* QProgressDialog_SlotProxy_new()
-  {
-    return new QProgressDialog_SlotProxy();
-  }
-};
-
-void QProgressDialog_SlotProxy::slot_proxy_func__ZN15QProgressDialog8canceledEv() {
-  if (this->slot_func__ZN15QProgressDialog8canceledEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QProgressDialog8canceledEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QProgressDialog_SlotProxy_connect__ZN15QProgressDialog8canceledEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QProgressDialog_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QProgressDialog8canceledEv = (decltype(that->slot_func__ZN15QProgressDialog8canceledEv))ffifptr;
-  QObject::connect((QProgressDialog*)sender, SIGNAL(canceled()), that, SLOT(slot_proxy_func__ZN15QProgressDialog8canceledEv()));
-  return that;
-}
-extern "C"
-void QProgressDialog_SlotProxy_disconnect__ZN15QProgressDialog8canceledEv(QProgressDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

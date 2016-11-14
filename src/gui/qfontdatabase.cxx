@@ -1,371 +1,188 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qfontdatabase.h
-// dst-file: /src/gui/qfontdatabase.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qfontdatabase.h
 #include <qfontdatabase.h>
+#include <QtGui>
 
-
-#include <qlist.h>
-#include <qmetatype.h>
-#include <qstring.h>
-#include <qstringlist.h>
-#include <qfont.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfontdatabase_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:115
+// QList<int> standardSizes()
 extern "C"
-int QFontDatabase_Class_Size()
-{
-  return sizeof(QFontDatabase);
+void C_ZN13QFontDatabase13standardSizesEv() {
+  /*return*/ QFontDatabase::standardSizes();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 124, column 16>
-//   // proto:  QList<int> QFontDatabase::pointSizes(const QString & family, const QString & style);
-// _ZN13QFontDatabase10pointSizesERK7QStringS2_ pointSizes(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:117
+// void QFontDatabase()
 extern "C"
-QList<int>*
-C_ZN13QFontDatabase10pointSizesERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->pointSizes(*((const QString*)arg1),
-*((const QString*)arg2));
-  return new QList<int>(ret); // 5
+void* C_ZN13QFontDatabaseC1Ev() {
+  return new QFontDatabase();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 126, column 13>
-//   // proto:  QString QFontDatabase::styleString(const QFont & font);
-// _ZN13QFontDatabase11styleStringERK5QFont styleString(const class QFont &)
+// /usr/include/qt/QtGui/qfontdatabase.h:119
+// QList<QFontDatabase::WritingSystem> writingSystems()
 extern "C"
-QString*
-C_ZN13QFontDatabase11styleStringERK5QFont(void *qthis,
-const QFont* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->styleString(*((const QFont*)arg1));
-  return new QString(ret); // 5
+void C_ZNK13QFontDatabase14writingSystemsEv(void *this_) {
+  /*return*/ ((QFontDatabase*)this_)->writingSystems();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 125, column 16>
-//   // proto:  QList<int> QFontDatabase::smoothSizes(const QString & family, const QString & style);
-// _ZN13QFontDatabase11smoothSizesERK7QStringS2_ smoothSizes(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:120
+// QList<QFontDatabase::WritingSystem> writingSystems(const class QString &)
 extern "C"
-QList<int>*
-C_ZN13QFontDatabase11smoothSizesERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->smoothSizes(*((const QString*)arg1),
-*((const QString*)arg2));
-  return new QList<int>(ret); // 5
+void C_ZNK13QFontDatabase14writingSystemsERK7QString(void *this_, const QString & family) {
+  /*return*/ ((QFontDatabase*)this_)->writingSystems(family);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 123, column 17>
-//   // proto:  QStringList QFontDatabase::styles(const QString & family);
-// _ZNK13QFontDatabase6stylesERK7QString styles(const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:122
+// QStringList families(enum QFontDatabase::WritingSystem)
 extern "C"
-QStringList*
-C_ZNK13QFontDatabase6stylesERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->styles(*((const QString*)arg1));
-  return new QStringList(ret); // 5
+void C_ZNK13QFontDatabase8familiesENS_13WritingSystemE(void *this_, QFontDatabase::WritingSystem writingSystem) {
+  /*return*/ ((QFontDatabase*)this_)->families(writingSystem);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 136, column 10>
-//   // proto:  bool QFontDatabase::italic(const QString & family, const QString & style);
-// _ZNK13QFontDatabase6italicERK7QStringS2_ italic(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:123
+// QStringList styles(const class QString &)
 extern "C"
-bool
-C_ZNK13QFontDatabase6italicERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->italic(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QFontDatabase6stylesERK7QString(void *this_, const QString & family) {
+  /*return*/ ((QFontDatabase*)this_)->styles(family);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 117, column 5>
-//   // proto:  void QFontDatabase::QFontDatabase();
+// /usr/include/qt/QtGui/qfontdatabase.h:124
+// QList<int> pointSizes(const class QString &, const class QString &)
 extern "C"
-QFontDatabase*
-C_ZN13QFontDatabaseC2Ev() {
-  auto ret = new QFontDatabase();
-  return ret;
+void C_ZN13QFontDatabase10pointSizesERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->pointSizes(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 148, column 24>
-//   // proto: static QStringList QFontDatabase::applicationFontFamilies(int id);
-// _ZN13QFontDatabase23applicationFontFamiliesEi applicationFontFamilies(int)
+// /usr/include/qt/QtGui/qfontdatabase.h:125
+// QList<int> smoothSizes(const class QString &, const class QString &)
 extern "C"
-QStringList*
-C_ZN13QFontDatabase23applicationFontFamiliesEi(int arg1) {
-  auto ret =
-  QFontDatabase::applicationFontFamilies(arg1);
-  return new QStringList(ret); // 5
+void C_ZN13QFontDatabase11smoothSizesERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->smoothSizes(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 140, column 10>
-//   // proto:  bool QFontDatabase::hasFamily(const QString & family);
-// _ZNK13QFontDatabase9hasFamilyERK7QString hasFamily(const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:126
+// QString styleString(const class QFont &)
 extern "C"
-bool
-C_ZNK13QFontDatabase9hasFamilyERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->hasFamily(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase11styleStringERK5QFont(void *this_, const QFont & font) {
+  /*return*/ ((QFontDatabase*)this_)->styleString(font);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 134, column 10>
-//   // proto:  bool QFontDatabase::isFixedPitch(const QString & family, const QString & style);
-// _ZNK13QFontDatabase12isFixedPitchERK7QStringS2_ isFixedPitch(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:127
+// QString styleString(const class QFontInfo &)
 extern "C"
-bool
-C_ZNK13QFontDatabase12isFixedPitchERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->isFixedPitch(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase11styleStringERK9QFontInfo(void *this_, const QFontInfo & fontInfo) {
+  /*return*/ ((QFontDatabase*)this_)->styleString(fontInfo);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 144, column 20>
-//   // proto: static QString QFontDatabase::writingSystemSample(QFontDatabase::WritingSystem writingSystem);
-// _ZN13QFontDatabase19writingSystemSampleENS_13WritingSystemE writingSystemSample(enum QFontDatabase::WritingSystem)
+// /usr/include/qt/QtGui/qfontdatabase.h:129
+// QFont font(const class QString &, const class QString &, int)
 extern "C"
-QString*
-C_ZN13QFontDatabase19writingSystemSampleENS_13WritingSystemE(QFontDatabase::WritingSystem arg1) {
-  auto ret =
-  QFontDatabase::writingSystemSample(arg1);
-  return new QString(ret); // 5
+void C_ZNK13QFontDatabase4fontERK7QStringS2_i(void *this_, const QString & family, const QString & style, int pointSize) {
+  /*return*/ ((QFontDatabase*)this_)->font(family, style, pointSize);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 129, column 11>
-//   // proto:  QFont QFontDatabase::font(const QString & family, const QString & style, int pointSize);
-// _ZNK13QFontDatabase4fontERK7QStringS2_i font(const class QString &, const class QString &, int)
+// /usr/include/qt/QtGui/qfontdatabase.h:131
+// bool isBitmapScalable(const class QString &, const class QString &)
 extern "C"
-QFont*
-C_ZNK13QFontDatabase4fontERK7QStringS2_i(void *qthis,
-const QString* arg1,
-const QString* arg2,
-int arg3) {
-  auto ret =
-  ((QFontDatabase*)qthis)->font(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3);
-  return new QFont(ret); // 5
+void C_ZNK13QFontDatabase16isBitmapScalableERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->isBitmapScalable(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 156, column 18>
-//   // proto: static QFont QFontDatabase::systemFont(QFontDatabase::SystemFont type);
-// _ZN13QFontDatabase10systemFontENS_10SystemFontE systemFont(enum QFontDatabase::SystemFont)
+// /usr/include/qt/QtGui/qfontdatabase.h:132
+// bool isSmoothlyScalable(const class QString &, const class QString &)
 extern "C"
-QFont*
-C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont arg1) {
-  auto ret =
-  QFontDatabase::systemFont(arg1);
-  return new QFont(ret); // 5
+void C_ZNK13QFontDatabase18isSmoothlyScalableERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->isSmoothlyScalable(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 138, column 9>
-//   // proto:  int QFontDatabase::weight(const QString & family, const QString & style);
-// _ZNK13QFontDatabase6weightERK7QStringS2_ weight(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:133
+// bool isScalable(const class QString &, const class QString &)
 extern "C"
-int
-C_ZNK13QFontDatabase6weightERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->weight(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.INT
+void C_ZNK13QFontDatabase10isScalableERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->isScalable(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 150, column 17>
-//   // proto: static bool QFontDatabase::removeAllApplicationFonts();
-// _ZN13QFontDatabase25removeAllApplicationFontsEv removeAllApplicationFonts()
+// /usr/include/qt/QtGui/qfontdatabase.h:134
+// bool isFixedPitch(const class QString &, const class QString &)
 extern "C"
-bool
-C_ZN13QFontDatabase25removeAllApplicationFontsEv() {
-  auto ret =
-  QFontDatabase::removeAllApplicationFonts();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QFontDatabase12isFixedPitchERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->isFixedPitch(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 143, column 20>
-//   // proto: static QString QFontDatabase::writingSystemName(QFontDatabase::WritingSystem writingSystem);
-// _ZN13QFontDatabase17writingSystemNameENS_13WritingSystemE writingSystemName(enum QFontDatabase::WritingSystem)
+// /usr/include/qt/QtGui/qfontdatabase.h:136
+// bool italic(const class QString &, const class QString &)
 extern "C"
-QString*
-C_ZN13QFontDatabase17writingSystemNameENS_13WritingSystemE(QFontDatabase::WritingSystem arg1) {
-  auto ret =
-  QFontDatabase::writingSystemName(arg1);
-  return new QString(ret); // 5
+void C_ZNK13QFontDatabase6italicERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->italic(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 147, column 16>
-//   // proto: static int QFontDatabase::addApplicationFontFromData(const QByteArray & fontData);
-// _ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray addApplicationFontFromData(const class QByteArray &)
+// /usr/include/qt/QtGui/qfontdatabase.h:137
+// bool bold(const class QString &, const class QString &)
 extern "C"
-int
-C_ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QFontDatabase::addApplicationFontFromData(*((const QByteArray*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZNK13QFontDatabase4boldERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->bold(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 153, column 31>
-//   // proto: static bool QFontDatabase::supportsThreadedFontRendering();
-// _ZN13QFontDatabase29supportsThreadedFontRenderingEv supportsThreadedFontRendering()
+// /usr/include/qt/QtGui/qfontdatabase.h:138
+// int weight(const class QString &, const class QString &)
 extern "C"
-bool
-C_ZN13QFontDatabase29supportsThreadedFontRenderingEv() {
-  auto ret =
-  QFontDatabase::supportsThreadedFontRendering();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QFontDatabase6weightERK7QStringS2_(void *this_, const QString & family, const QString & style) {
+  /*return*/ ((QFontDatabase*)this_)->weight(family, style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 141, column 10>
-//   // proto:  bool QFontDatabase::isPrivateFamily(const QString & family);
-// _ZNK13QFontDatabase15isPrivateFamilyERK7QString isPrivateFamily(const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:140
+// bool hasFamily(const class QString &)
 extern "C"
-bool
-C_ZNK13QFontDatabase15isPrivateFamilyERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->isPrivateFamily(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QFontDatabase9hasFamilyERK7QString(void *this_, const QString & family) {
+  /*return*/ ((QFontDatabase*)this_)->hasFamily(family);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 120, column 26>
-//   // proto:  QList<QFontDatabase::WritingSystem> QFontDatabase::writingSystems(const QString & family);
-// _ZNK13QFontDatabase14writingSystemsERK7QString writingSystems(const class QString &)
+// /usr/include/qt/QtGui/qfontdatabase.h:141
+// bool isPrivateFamily(const class QString &)
 extern "C"
-QList<QFontDatabase::WritingSystem>*
-C_ZNK13QFontDatabase14writingSystemsERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->writingSystems(*((const QString*)arg1));
-  return new QList<QFontDatabase::WritingSystem>(ret); // 5
+void C_ZNK13QFontDatabase15isPrivateFamilyERK7QString(void *this_, const QString & family) {
+  /*return*/ ((QFontDatabase*)this_)->isPrivateFamily(family);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 133, column 10>
-//   // proto:  bool QFontDatabase::isScalable(const QString & family, const QString & style);
-// _ZNK13QFontDatabase10isScalableERK7QStringS2_ isScalable(const class QString &, const class QString &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:143
+// QString writingSystemName(enum QFontDatabase::WritingSystem)
 extern "C"
-bool
-C_ZNK13QFontDatabase10isScalableERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->isScalable(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase17writingSystemNameENS_13WritingSystemE(QFontDatabase::WritingSystem writingSystem) {
+  /*return*/ QFontDatabase::writingSystemName(writingSystem);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 149, column 17>
-//   // proto: static bool QFontDatabase::removeApplicationFont(int id);
-// _ZN13QFontDatabase21removeApplicationFontEi removeApplicationFont(int)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:144
+// QString writingSystemSample(enum QFontDatabase::WritingSystem)
 extern "C"
-bool
-C_ZN13QFontDatabase21removeApplicationFontEi(int arg1) {
-  auto ret =
-  QFontDatabase::removeApplicationFont(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase19writingSystemSampleENS_13WritingSystemE(QFontDatabase::WritingSystem writingSystem) {
+  /*return*/ QFontDatabase::writingSystemSample(writingSystem);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 127, column 13>
-//   // proto:  QString QFontDatabase::styleString(const QFontInfo & fontInfo);
-// _ZN13QFontDatabase11styleStringERK9QFontInfo styleString(const class QFontInfo &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:146
+// int addApplicationFont(const class QString &)
 extern "C"
-QString*
-C_ZN13QFontDatabase11styleStringERK9QFontInfo(void *qthis,
-const QFontInfo* arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->styleString(*((const QFontInfo*)arg1));
-  return new QString(ret); // 5
+void C_ZN13QFontDatabase18addApplicationFontERK7QString(const QString & fileName) {
+  /*return*/ QFontDatabase::addApplicationFont(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 131, column 10>
-//   // proto:  bool QFontDatabase::isBitmapScalable(const QString & family, const QString & style);
-// _ZNK13QFontDatabase16isBitmapScalableERK7QStringS2_ isBitmapScalable(const class QString &, const class QString &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:147
+// int addApplicationFontFromData(const class QByteArray &)
 extern "C"
-bool
-C_ZNK13QFontDatabase16isBitmapScalableERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->isBitmapScalable(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase26addApplicationFontFromDataERK10QByteArray(const QByteArray & fontData) {
+  /*return*/ QFontDatabase::addApplicationFontFromData(fontData);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 132, column 10>
-//   // proto:  bool QFontDatabase::isSmoothlyScalable(const QString & family, const QString & style);
-// _ZNK13QFontDatabase18isSmoothlyScalableERK7QStringS2_ isSmoothlyScalable(const class QString &, const class QString &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:148
+// QStringList applicationFontFamilies(int)
 extern "C"
-bool
-C_ZNK13QFontDatabase18isSmoothlyScalableERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->isSmoothlyScalable(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase23applicationFontFamiliesEi(int id) {
+  /*return*/ QFontDatabase::applicationFontFamilies(id);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 137, column 10>
-//   // proto:  bool QFontDatabase::bold(const QString & family, const QString & style);
-// _ZNK13QFontDatabase4boldERK7QStringS2_ bold(const class QString &, const class QString &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:149
+// bool removeApplicationFont(int)
 extern "C"
-bool
-C_ZNK13QFontDatabase4boldERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QFontDatabase*)qthis)->bold(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QFontDatabase21removeApplicationFontEi(int id) {
+  /*return*/ QFontDatabase::removeApplicationFont(id);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 146, column 16>
-//   // proto: static int QFontDatabase::addApplicationFont(const QString & fileName);
-// _ZN13QFontDatabase18addApplicationFontERK7QString addApplicationFont(const class QString &)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:150
+// bool removeAllApplicationFonts()
 extern "C"
-int
-C_ZN13QFontDatabase18addApplicationFontERK7QString(const QString* arg1) {
-  auto ret =
-  QFontDatabase::addApplicationFont(*((const QString*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN13QFontDatabase25removeAllApplicationFontsEv() {
+  /*return*/ QFontDatabase::removeAllApplicationFonts();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 122, column 17>
-//   // proto:  QStringList QFontDatabase::families(QFontDatabase::WritingSystem writingSystem);
-// _ZNK13QFontDatabase8familiesENS_13WritingSystemE families(enum QFontDatabase::WritingSystem)
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:153
+// bool supportsThreadedFontRendering()
 extern "C"
-QStringList*
-C_ZNK13QFontDatabase8familiesENS_13WritingSystemE(void *qthis,
-QFontDatabase::WritingSystem arg1) {
-  auto ret =
-  ((QFontDatabase*)qthis)->families(arg1);
-  return new QStringList(ret); // 5
+void C_ZN13QFontDatabase29supportsThreadedFontRenderingEv() {
+  /*return*/ QFontDatabase::supportsThreadedFontRendering();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 115, column 23>
-//   // proto: static QList<int> QFontDatabase::standardSizes();
-// _ZN13QFontDatabase13standardSizesEv standardSizes()
+// static
+// /usr/include/qt/QtGui/qfontdatabase.h:156
+// QFont systemFont(enum QFontDatabase::SystemFont)
 extern "C"
-QList<int>*
-C_ZN13QFontDatabase13standardSizesEv() {
-  auto ret =
-  QFontDatabase::standardSizes();
-  return new QList<int>(ret); // 5
+void C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont type) {
+  /*return*/ QFontDatabase::systemFont(type);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontdatabase.h', line 119, column 26>
-//   // proto:  QList<QFontDatabase::WritingSystem> QFontDatabase::writingSystems();
-// _ZNK13QFontDatabase14writingSystemsEv writingSystems()
-extern "C"
-QList<QFontDatabase::WritingSystem>*
-C_ZNK13QFontDatabase14writingSystemsEv(void *qthis) {
-  auto ret =
-  ((QFontDatabase*)qthis)->writingSystems();
-  return new QList<QFontDatabase::WritingSystem>(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,231 +1,116 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qbuffer.h
-// dst-file: /src/core/qbuffer.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qbuffer.h
 #include <qbuffer.h>
+#include <QtCore>
 
-
-#include <qbytearray.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qbuffer_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 73, column 17>
-//   // proto:  void QBuffer::setData(const char * data, int len);
-if (true) {
-  auto f = [](QBuffer flythis, const char * arg1, int arg2) {
-    ((QBuffer*)0)->setData(arg1, arg2);
-    flythis.setData(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QBuffer7setDataEPKci setData(const char *, int)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:55
+// const QMetaObject * metaObject()
 extern "C"
-int QBuffer_Class_Size()
-{
-  return sizeof(QBuffer);
+void C_ZNK7QBuffer10metaObjectEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 81, column 10>
-//   // proto:  bool QBuffer::seek(qint64 off);
-// _ZN7QBuffer4seekEx seek(qint64)
+// /usr/include/qt/QtCore/qbuffer.h:60
+// void QBuffer(class QObject *)
 extern "C"
-bool
-C_ZN7QBuffer4seekEx(void *qthis,
-qint64 arg1) {
-  auto ret =
-  ((QBuffer*)qthis)->seek(arg1);
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QBufferC1EP7QObject(QObject * parent) {
+  return new QBuffer(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 83, column 10>
-//   // proto:  bool QBuffer::canReadLine();
-// _ZNK7QBuffer11canReadLineEv canReadLine()
+// /usr/include/qt/QtCore/qbuffer.h:61
+// void QBuffer(class QByteArray *, class QObject *)
 extern "C"
-bool
-C_ZNK7QBuffer11canReadLineEv(void *qthis) {
-  auto ret =
-  ((QBuffer*)qthis)->canReadLine();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QBufferC1EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent) {
+  return new QBuffer(buf, parent);
 }
-//   // proto:  void QBuffer::~QBuffer();
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:66
+// void ~QBuffer()
 extern "C"
-void C_ZN7QBufferD2Ev(void *qthis) {
-  delete (QBuffer*)qthis;
+void C_ZN7QBufferD1Ev(void *this_) {
+  delete (QBuffer*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 76, column 10>
-//   // proto:  bool QBuffer::open(OpenMode openMode);
-// _ZN7QBuffer4openE6QFlagsIN9QIODevice12OpenModeFlagEE open(OpenMode)
+// /usr/include/qt/QtCore/qbuffer.h:68
+// QByteArray & buffer()
 extern "C"
-bool
-C_ZN7QBuffer4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *qthis,
-QIODevice::OpenMode arg1) {
-  auto ret =
-  ((QBuffer*)qthis)->open(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QBuffer6bufferEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->buffer();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 72, column 10>
-//   // proto:  void QBuffer::setData(const QByteArray & data);
-// _ZN7QBuffer7setDataERK10QByteArray setData(const class QByteArray &)
+// /usr/include/qt/QtCore/qbuffer.h:69
+// const QByteArray & buffer()
 extern "C"
-void
-C_ZN7QBuffer7setDataERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QBuffer*)qthis)->setData(*((const QByteArray*)arg1));
+void C_ZNK7QBuffer6bufferEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->buffer();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 74, column 23>
-//   // proto:  const QByteArray & QBuffer::data();
-// _ZNK7QBuffer4dataEv data()
+// /usr/include/qt/QtCore/qbuffer.h:70
+// void setBuffer(class QByteArray *)
 extern "C"
-QByteArray*
-C_ZNK7QBuffer4dataEv(void *qthis) {
-  auto& ret =
-  ((QBuffer*)qthis)->data();
-  return new QByteArray(ret); // 5
+void C_ZN7QBuffer9setBufferEP10QByteArray(void *this_, QByteArray * a) {
+  ((QBuffer*)this_)->setBuffer(a);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 69, column 23>
-//   // proto:  const QByteArray & QBuffer::buffer();
-// _ZNK7QBuffer6bufferEv buffer()
+// /usr/include/qt/QtCore/qbuffer.h:72
+// void setData(const class QByteArray &)
 extern "C"
-QByteArray*
-C_ZNK7QBuffer6bufferEv(void *qthis) {
-  auto& ret =
-  ((QBuffer*)qthis)->buffer();
-  return new QByteArray(ret); // 5
+void C_ZN7QBuffer7setDataERK10QByteArray(void *this_, const QByteArray & data) {
+  ((QBuffer*)this_)->setData(data);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 60, column 15>
-//   // proto:  void QBuffer::QBuffer(QObject * parent);
+// inline
+// /usr/include/qt/QtCore/qbuffer.h:73
+// void setData(const char *, int)
 extern "C"
-QBuffer*
-C_ZN7QBufferC2EP7QObject(QObject * arg1) {
-  auto ret = new QBuffer(arg1);
-  return ret;
+void C_ZN7QBuffer7setDataEPKci(void *this_, const char * data, int len) {
+  ((QBuffer*)this_)->setData(data, len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 70, column 10>
-//   // proto:  void QBuffer::setBuffer(QByteArray * a);
-// _ZN7QBuffer9setBufferEP10QByteArray setBuffer(class QByteArray *)
+// /usr/include/qt/QtCore/qbuffer.h:74
+// const QByteArray & data()
 extern "C"
-void
-C_ZN7QBuffer9setBufferEP10QByteArray(void *qthis,
-QByteArray * arg1) {
-  ((QBuffer*)qthis)->setBuffer(arg1);
+void C_ZNK7QBuffer4dataEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->data();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 68, column 17>
-//   // proto:  QByteArray & QBuffer::buffer();
-// _ZN7QBuffer6bufferEv buffer()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:76
+// bool open(OpenMode)
 extern "C"
-QByteArray*
-C_ZN7QBuffer6bufferEv(void *qthis) {
-  auto& ret =
-  ((QBuffer*)qthis)->buffer();
-  return new QByteArray(ret); // 5
+void C_ZN7QBuffer4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
+  /*return*/ ((QBuffer*)this_)->open(openMode);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 80, column 12>
-//   // proto:  qint64 QBuffer::pos();
-// _ZNK7QBuffer3posEv pos()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:78
+// void close()
 extern "C"
-long long
-C_ZNK7QBuffer3posEv(void *qthis) {
-  auto ret =
-  ((QBuffer*)qthis)->pos();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZN7QBuffer5closeEv(void *this_) {
+  ((QBuffer*)this_)->close();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 78, column 10>
-//   // proto:  void QBuffer::close();
-// _ZN7QBuffer5closeEv close()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:79
+// qint64 size()
 extern "C"
-void
-C_ZN7QBuffer5closeEv(void *qthis) {
-  ((QBuffer*)qthis)->close();
+void C_ZNK7QBuffer4sizeEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 55, column 5>
-//   // proto:  const QMetaObject * QBuffer::metaObject();
-// _ZNK7QBuffer10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:80
+// qint64 pos()
 extern "C"
-void*
-C_ZNK7QBuffer10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QBuffer*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK7QBuffer3posEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->pos();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 79, column 12>
-//   // proto:  qint64 QBuffer::size();
-// _ZNK7QBuffer4sizeEv size()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:81
+// bool seek(qint64)
 extern "C"
-long long
-C_ZNK7QBuffer4sizeEv(void *qthis) {
-  auto ret =
-  ((QBuffer*)qthis)->size();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZN7QBuffer4seekEx(void *this_, qint64 off) {
+  /*return*/ ((QBuffer*)this_)->seek(off);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 61, column 6>
-//   // proto:  void QBuffer::QBuffer(QByteArray * buf, QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:82
+// bool atEnd()
 extern "C"
-QBuffer*
-C_ZN7QBufferC2EP10QByteArrayP7QObject(QByteArray * arg1,
-QObject * arg2) {
-  auto ret = new QBuffer(arg1,
-arg2);
-  return ret;
+void C_ZNK7QBuffer5atEndEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->atEnd();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 82, column 10>
-//   // proto:  bool QBuffer::atEnd();
-// _ZNK7QBuffer5atEndEv atEnd()
+// virtual
+// /usr/include/qt/QtCore/qbuffer.h:83
+// bool canReadLine()
 extern "C"
-bool
-C_ZNK7QBuffer5atEndEv(void *qthis) {
-  auto ret =
-  ((QBuffer*)qthis)->atEnd();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QBuffer11canReadLineEv(void *this_) {
+  /*return*/ ((QBuffer*)this_)->canReadLine();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbuffer.h', line 73, column 17>
-//   // proto:  void QBuffer::setData(const char * data, int len);
-// _ZN7QBuffer7setDataEPKci setData(const char *, int)
-extern "C"
-void
-C_ZN7QBuffer7setDataEPKci(void *qthis,
-const char * arg1,
-int arg2) {
-  ((QBuffer*)qthis)->setData(arg1,
-arg2);
-}
-// <= ext block end
-
-// body block begin =>
-// QBuffer_SlotProxy here
-class QBuffer_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QBuffer_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qbuffer.moc"
-
-extern "C" {
-  QBuffer_SlotProxy* QBuffer_SlotProxy_new()
-  {
-    return new QBuffer_SlotProxy();
-  }
-};
-
-// <= body block end
-

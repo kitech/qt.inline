@@ -1,166 +1,80 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qsavefile.h
-// dst-file: /src/core/qsavefile.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qsavefile.h
 #include <qsavefile.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsavefile_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qsavefile.h:61
+// const QMetaObject * metaObject()
 extern "C"
-int QSaveFile_Class_Size()
-{
-  return sizeof(QSaveFile);
+void C_ZNK9QSaveFile10metaObjectEv(void *this_) {
+  /*return*/ ((QSaveFile*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 77, column 10>
-//   // proto:  void QSaveFile::cancelWriting();
-// _ZN9QSaveFile13cancelWritingEv cancelWriting()
+// /usr/include/qt/QtCore/qsavefile.h:66
+// void QSaveFile(const class QString &)
 extern "C"
-void
-C_ZN9QSaveFile13cancelWritingEv(void *qthis) {
-  ((QSaveFile*)qthis)->cancelWriting();
+void* C_ZN9QSaveFileC1ERK7QString(const QString & name) {
+  return new QSaveFile(name);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 67, column 14>
-//   // proto:  void QSaveFile::QSaveFile(QObject * parent);
+// /usr/include/qt/QtCore/qsavefile.h:67
+// void QSaveFile(class QObject *)
 extern "C"
-QSaveFile*
-C_ZN9QSaveFileC2EP7QObject(QObject * arg1) {
-  auto ret = new QSaveFile(arg1);
-  return ret;
+void* C_ZN9QSaveFileC1EP7QObject(QObject * parent) {
+  return new QSaveFile(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 68, column 14>
-//   // proto:  void QSaveFile::QSaveFile(const QString & name, QObject * parent);
+// /usr/include/qt/QtCore/qsavefile.h:68
+// void QSaveFile(const class QString &, class QObject *)
 extern "C"
-QSaveFile*
-C_ZN9QSaveFileC2ERK7QStringP7QObject(const QString* arg1,
-QObject * arg2) {
-  auto ret = new QSaveFile(*((const QString*)arg1),
-arg2);
-  return ret;
+void* C_ZN9QSaveFileC1ERK7QStringP7QObject(const QString & name, QObject * parent) {
+  return new QSaveFile(name, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 71, column 13>
-//   // proto:  QString QSaveFile::fileName();
-// _ZNK9QSaveFile8fileNameEv fileName()
+// virtual
+// /usr/include/qt/QtCore/qsavefile.h:69
+// void ~QSaveFile()
 extern "C"
-QString*
-C_ZNK9QSaveFile8fileNameEv(void *qthis) {
-  auto ret =
-  ((QSaveFile*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZN9QSaveFileD1Ev(void *this_) {
+  delete (QSaveFile*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 66, column 14>
-//   // proto:  void QSaveFile::QSaveFile(const QString & name);
+// virtual
+// /usr/include/qt/QtCore/qsavefile.h:71
+// QString fileName()
 extern "C"
-QSaveFile*
-C_ZN9QSaveFileC2ERK7QString(const QString* arg1) {
-  auto ret = new QSaveFile(*((const QString*)arg1));
-  return ret;
+void C_ZNK9QSaveFile8fileNameEv(void *this_) {
+  /*return*/ ((QSaveFile*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 61, column 5>
-//   // proto:  const QMetaObject * QSaveFile::metaObject();
-// _ZNK9QSaveFile10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qsavefile.h:72
+// void setFileName(const class QString &)
 extern "C"
-void*
-C_ZNK9QSaveFile10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSaveFile*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, const QString & name) {
+  ((QSaveFile*)this_)->setFileName(name);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 74, column 10>
-//   // proto:  bool QSaveFile::open(OpenMode flags);
-// _ZN9QSaveFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE open(OpenMode)
+// virtual
+// /usr/include/qt/QtCore/qsavefile.h:74
+// bool open(OpenMode)
 extern "C"
-bool
-C_ZN9QSaveFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *qthis,
-QIODevice::OpenMode arg1) {
-  auto ret =
-  ((QSaveFile*)qthis)->open(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QSaveFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
+  /*return*/ ((QSaveFile*)this_)->open(flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 75, column 10>
-//   // proto:  bool QSaveFile::commit();
-// _ZN9QSaveFile6commitEv commit()
+// /usr/include/qt/QtCore/qsavefile.h:75
+// bool commit()
 extern "C"
-bool
-C_ZN9QSaveFile6commitEv(void *qthis) {
-  auto ret =
-  ((QSaveFile*)qthis)->commit();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QSaveFile6commitEv(void *this_) {
+  /*return*/ ((QSaveFile*)this_)->commit();
 }
-//   // proto:  void QSaveFile::~QSaveFile();
+// /usr/include/qt/QtCore/qsavefile.h:77
+// void cancelWriting()
 extern "C"
-void C_ZN9QSaveFileD2Ev(void *qthis) {
-  delete (QSaveFile*)qthis;
+void C_ZN9QSaveFile13cancelWritingEv(void *this_) {
+  ((QSaveFile*)this_)->cancelWriting();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 72, column 10>
-//   // proto:  void QSaveFile::setFileName(const QString & name);
-// _ZN9QSaveFile11setFileNameERK7QString setFileName(const class QString &)
+// /usr/include/qt/QtCore/qsavefile.h:79
+// void setDirectWriteFallback(_Bool)
 extern "C"
-void
-C_ZN9QSaveFile11setFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSaveFile*)qthis)->setFileName(*((const QString*)arg1));
+void C_ZN9QSaveFile22setDirectWriteFallbackEb(void *this_, bool enabled) {
+  ((QSaveFile*)this_)->setDirectWriteFallback(enabled);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 80, column 10>
-//   // proto:  bool QSaveFile::directWriteFallback();
-// _ZNK9QSaveFile19directWriteFallbackEv directWriteFallback()
+// /usr/include/qt/QtCore/qsavefile.h:80
+// bool directWriteFallback()
 extern "C"
-bool
-C_ZNK9QSaveFile19directWriteFallbackEv(void *qthis) {
-  auto ret =
-  ((QSaveFile*)qthis)->directWriteFallback();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QSaveFile19directWriteFallbackEv(void *this_) {
+  /*return*/ ((QSaveFile*)this_)->directWriteFallback();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsavefile.h', line 79, column 10>
-//   // proto:  void QSaveFile::setDirectWriteFallback(bool enabled);
-// _ZN9QSaveFile22setDirectWriteFallbackEb setDirectWriteFallback(_Bool)
-extern "C"
-void
-C_ZN9QSaveFile22setDirectWriteFallbackEb(void *qthis,
-bool arg1) {
-  ((QSaveFile*)qthis)->setDirectWriteFallback(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QSaveFile_SlotProxy here
-class QSaveFile_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSaveFile_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qsavefile.moc"
-
-extern "C" {
-  QSaveFile_SlotProxy* QSaveFile_SlotProxy_new()
-  {
-    return new QSaveFile_SlotProxy();
-  }
-};
-
-// <= body block end
-

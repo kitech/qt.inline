@@ -1,131 +1,54 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qpropertyanimation.h
-// dst-file: /src/core/qpropertyanimation.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qpropertyanimation.h
 #include <qpropertyanimation.h>
+#include <QtCore>
 
-
-#include <qbytearray.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qpropertyanimation_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qpropertyanimation.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QPropertyAnimation_Class_Size()
-{
-  return sizeof(QPropertyAnimation);
+void C_ZNK18QPropertyAnimation10metaObjectEv(void *this_) {
+  /*return*/ ((QPropertyAnimation*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 65, column 16>
-//   // proto:  QByteArray QPropertyAnimation::propertyName();
-// _ZNK18QPropertyAnimation12propertyNameEv propertyName()
+// /usr/include/qt/QtCore/qpropertyanimation.h:58
+// void QPropertyAnimation(class QObject *)
 extern "C"
-QByteArray*
-C_ZNK18QPropertyAnimation12propertyNameEv(void *qthis) {
-  auto ret =
-  ((QPropertyAnimation*)qthis)->propertyName();
-  return new QByteArray(ret); // 5
+void* C_ZN18QPropertyAnimationC1EP7QObject(QObject * parent) {
+  return new QPropertyAnimation(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 63, column 10>
-//   // proto:  void QPropertyAnimation::setTargetObject(QObject * target);
-// _ZN18QPropertyAnimation15setTargetObjectEP7QObject setTargetObject(class QObject *)
+// /usr/include/qt/QtCore/qpropertyanimation.h:59
+// void QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
 extern "C"
-void
-C_ZN18QPropertyAnimation15setTargetObjectEP7QObject(void *qthis,
-QObject * arg1) {
-  ((QPropertyAnimation*)qthis)->setTargetObject(arg1);
+void* C_ZN18QPropertyAnimationC1EP7QObjectRK10QByteArrayS1_(QObject * target, const QByteArray & propertyName, QObject * parent) {
+  return new QPropertyAnimation(target, propertyName, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 58, column 5>
-//   // proto:  void QPropertyAnimation::QPropertyAnimation(QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qpropertyanimation.h:60
+// void ~QPropertyAnimation()
 extern "C"
-QPropertyAnimation*
-C_ZN18QPropertyAnimationC2EP7QObject(QObject * arg1) {
-  auto ret = new QPropertyAnimation(arg1);
-  return ret;
+void C_ZN18QPropertyAnimationD1Ev(void *this_) {
+  delete (QPropertyAnimation*)(this_);
 }
-//   // proto:  void QPropertyAnimation::~QPropertyAnimation();
+// /usr/include/qt/QtCore/qpropertyanimation.h:62
+// QObject * targetObject()
 extern "C"
-void C_ZN18QPropertyAnimationD2Ev(void *qthis) {
-  delete (QPropertyAnimation*)qthis;
+void C_ZNK18QPropertyAnimation12targetObjectEv(void *this_) {
+  /*return*/ ((QPropertyAnimation*)this_)->targetObject();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 62, column 14>
-//   // proto:  QObject * QPropertyAnimation::targetObject();
-// _ZNK18QPropertyAnimation12targetObjectEv targetObject()
+// /usr/include/qt/QtCore/qpropertyanimation.h:63
+// void setTargetObject(class QObject *)
 extern "C"
-void*
-C_ZNK18QPropertyAnimation12targetObjectEv(void *qthis) {
-  auto ret =
-  ((QPropertyAnimation*)qthis)->targetObject();
-  return (void*)ret;
+void C_ZN18QPropertyAnimation15setTargetObjectEP7QObject(void *this_, QObject * target) {
+  ((QPropertyAnimation*)this_)->setTargetObject(target);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 53, column 5>
-//   // proto:  const QMetaObject * QPropertyAnimation::metaObject();
-// _ZNK18QPropertyAnimation10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qpropertyanimation.h:65
+// QByteArray propertyName()
 extern "C"
-void*
-C_ZNK18QPropertyAnimation10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QPropertyAnimation*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK18QPropertyAnimation12propertyNameEv(void *this_) {
+  /*return*/ ((QPropertyAnimation*)this_)->propertyName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 59, column 5>
-//   // proto:  void QPropertyAnimation::QPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject * parent);
+// /usr/include/qt/QtCore/qpropertyanimation.h:66
+// void setPropertyName(const class QByteArray &)
 extern "C"
-QPropertyAnimation*
-C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * arg1,
-const QByteArray* arg2,
-QObject * arg3) {
-  auto ret = new QPropertyAnimation(arg1,
-*((const QByteArray*)arg2),
-arg3);
-  return ret;
+void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, const QByteArray & propertyName) {
+  ((QPropertyAnimation*)this_)->setPropertyName(propertyName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpropertyanimation.h', line 66, column 10>
-//   // proto:  void QPropertyAnimation::setPropertyName(const QByteArray & propertyName);
-// _ZN18QPropertyAnimation15setPropertyNameERK10QByteArray setPropertyName(const class QByteArray &)
-extern "C"
-void
-C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QPropertyAnimation*)qthis)->setPropertyName(*((const QByteArray*)arg1));
-}
-// <= ext block end
-
-// body block begin =>
-// QPropertyAnimation_SlotProxy here
-class QPropertyAnimation_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QPropertyAnimation_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qpropertyanimation.moc"
-
-extern "C" {
-  QPropertyAnimation_SlotProxy* QPropertyAnimation_SlotProxy_new()
-  {
-    return new QPropertyAnimation_SlotProxy();
-  }
-};
-
-// <= body block end
-

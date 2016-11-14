@@ -1,224 +1,98 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qstringlistmodel.h
-// dst-file: /src/core/qstringlistmodel.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qstringlistmodel.h
 #include <qstringlistmodel.h>
+#include <QtCore>
 
-
-#include <qvariant.h>
-#include <qstringlist.h>
-#include <qnamespace.h>
-#include <qabstractitemmodel.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qstringlistmodel_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QStringListModel_Class_Size()
-{
-  return sizeof(QStringListModel);
+void C_ZNK16QStringListModel10metaObjectEv(void *this_) {
+  /*return*/ ((QStringListModel*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 56, column 14>
-//   // proto:  void QStringListModel::QStringListModel(const QStringList & strings, QObject * parent);
+// /usr/include/qt/QtCore/qstringlistmodel.h:55
+// void QStringListModel(class QObject *)
 extern "C"
-QStringListModel*
-C_ZN16QStringListModelC2ERK11QStringListP7QObject(const QStringList* arg1,
-QObject * arg2) {
-  auto ret = new QStringListModel(*((const QStringList*)arg1),
-arg2);
-  return ret;
+void* C_ZN16QStringListModelC1EP7QObject(QObject * parent) {
+  return new QStringListModel(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 66, column 10>
-//   // proto:  bool QStringListModel::insertRows(int row, int count, const QModelIndex & parent);
-// _ZN16QStringListModel10insertRowsEiiRK11QModelIndex insertRows(int, int, const class QModelIndex &)
+// /usr/include/qt/QtCore/qstringlistmodel.h:56
+// void QStringListModel(const class QStringList &, class QObject *)
 extern "C"
-bool
-C_ZN16QStringListModel10insertRowsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QStringListModel*)qthis)->insertRows(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN16QStringListModelC1ERK11QStringListP7QObject(const QStringList & strings, QObject * parent) {
+  return new QStringListModel(strings, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 61, column 14>
-//   // proto:  QVariant QStringListModel::data(const QModelIndex & index, int role);
-// _ZNK16QStringListModel4dataERK11QModelIndexi data(const class QModelIndex &, int)
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:58
+// int rowCount(const class QModelIndex &)
 extern "C"
-QVariant*
-C_ZNK16QStringListModel4dataERK11QModelIndexi(void *qthis,
-const QModelIndex* arg1,
-int arg2) {
-  auto ret =
-  ((QStringListModel*)qthis)->data(*((const QModelIndex*)arg1),
-arg2);
-  return new QVariant(ret); // 5
+void C_ZNK16QStringListModel8rowCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  /*return*/ ((QStringListModel*)this_)->rowCount(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 71, column 17>
-//   // proto:  QStringList QStringListModel::stringList();
-// _ZNK16QStringListModel10stringListEv stringList()
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:59
+// QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
-QStringList*
-C_ZNK16QStringListModel10stringListEv(void *qthis) {
-  auto ret =
-  ((QStringListModel*)qthis)->stringList();
-  return new QStringList(ret); // 5
+void C_ZNK16QStringListModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & idx) {
+  /*return*/ ((QStringListModel*)this_)->sibling(row, column, idx);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 53, column 5>
-//   // proto:  const QMetaObject * QStringListModel::metaObject();
-// _ZNK16QStringListModel10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:61
+// QVariant data(const class QModelIndex &, int)
 extern "C"
-void*
-C_ZNK16QStringListModel10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QStringListModel*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK16QStringListModel4dataERK11QModelIndexi(void *this_, const QModelIndex & index, int role) {
+  /*return*/ ((QStringListModel*)this_)->data(index, role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 67, column 10>
-//   // proto:  bool QStringListModel::removeRows(int row, int count, const QModelIndex & parent);
-// _ZN16QStringListModel10removeRowsEiiRK11QModelIndex removeRows(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:62
+// bool setData(const class QModelIndex &, const class QVariant &, int)
 extern "C"
-bool
-C_ZN16QStringListModel10removeRowsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QStringListModel*)qthis)->removeRows(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti(void *this_, const QModelIndex & index, const QVariant & value, int role) {
+  /*return*/ ((QStringListModel*)this_)->setData(index, value, role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 69, column 10>
-//   // proto:  void QStringListModel::sort(int column, Qt::SortOrder order);
-// _ZN16QStringListModel4sortEiN2Qt9SortOrderE sort(int, Qt::SortOrder)
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:64
+// Qt::ItemFlags flags(const class QModelIndex &)
 extern "C"
-void
-C_ZN16QStringListModel4sortEiN2Qt9SortOrderE(void *qthis,
-int arg1,
-Qt::SortOrder* arg2) {
-  ((QStringListModel*)qthis)->sort(arg1,
-*((Qt::SortOrder*)arg2));
+void C_ZNK16QStringListModel5flagsERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QStringListModel*)this_)->flags(index);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 55, column 14>
-//   // proto:  void QStringListModel::QStringListModel(QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:66
+// bool insertRows(int, int, const class QModelIndex &)
 extern "C"
-QStringListModel*
-C_ZN16QStringListModelC2EP7QObject(QObject * arg1) {
-  auto ret = new QStringListModel(arg1);
-  return ret;
+void C_ZN16QStringListModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
+  /*return*/ ((QStringListModel*)this_)->insertRows(row, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 64, column 19>
-//   // proto:  Qt::ItemFlags QStringListModel::flags(const QModelIndex & index);
-// _ZNK16QStringListModel5flagsERK11QModelIndex flags(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:67
+// bool removeRows(int, int, const class QModelIndex &)
 extern "C"
-QFlags<Qt::ItemFlag>*
-C_ZNK16QStringListModel5flagsERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QStringListModel*)qthis)->flags(*((const QModelIndex*)arg1));
-  return new QFlags<Qt::ItemFlag>(ret); // 5
+void C_ZN16QStringListModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
+  /*return*/ ((QStringListModel*)this_)->removeRows(row, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 74, column 21>
-//   // proto:  Qt::DropActions QStringListModel::supportedDropActions();
-// _ZNK16QStringListModel20supportedDropActionsEv supportedDropActions()
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:69
+// void sort(int, Qt::SortOrder)
 extern "C"
-QFlags<Qt::DropAction>*
-C_ZNK16QStringListModel20supportedDropActionsEv(void *qthis) {
-  auto ret =
-  ((QStringListModel*)qthis)->supportedDropActions();
-  return new QFlags<Qt::DropAction>(ret); // 5
+void C_ZN16QStringListModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
+  ((QStringListModel*)this_)->sort(column, order);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 62, column 10>
-//   // proto:  bool QStringListModel::setData(const QModelIndex & index, const QVariant & value, int role);
-// _ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti setData(const class QModelIndex &, const class QVariant &, int)
+// /usr/include/qt/QtCore/qstringlistmodel.h:71
+// QStringList stringList()
 extern "C"
-bool
-C_ZN16QStringListModel7setDataERK11QModelIndexRK8QVarianti(void *qthis,
-const QModelIndex* arg1,
-const QVariant* arg2,
-int arg3) {
-  auto ret =
-  ((QStringListModel*)qthis)->setData(*((const QModelIndex*)arg1),
-*((const QVariant*)arg2),
-arg3);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK16QStringListModel10stringListEv(void *this_) {
+  /*return*/ ((QStringListModel*)this_)->stringList();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 58, column 9>
-//   // proto:  int QStringListModel::rowCount(const QModelIndex & parent);
-// _ZNK16QStringListModel8rowCountERK11QModelIndex rowCount(const class QModelIndex &)
+// /usr/include/qt/QtCore/qstringlistmodel.h:72
+// void setStringList(const class QStringList &)
 extern "C"
-int
-C_ZNK16QStringListModel8rowCountERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QStringListModel*)qthis)->rowCount(*((const QModelIndex*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN16QStringListModel13setStringListERK11QStringList(void *this_, const QStringList & strings) {
+  ((QStringListModel*)this_)->setStringList(strings);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 59, column 17>
-//   // proto:  QModelIndex QStringListModel::sibling(int row, int column, const QModelIndex & idx);
-// _ZNK16QStringListModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qstringlistmodel.h:74
+// Qt::DropActions supportedDropActions()
 extern "C"
-QModelIndex*
-C_ZNK16QStringListModel7siblingEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QStringListModel*)qthis)->sibling(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return new QModelIndex(ret); // 5
+void C_ZNK16QStringListModel20supportedDropActionsEv(void *this_) {
+  /*return*/ ((QStringListModel*)this_)->supportedDropActions();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qstringlistmodel.h', line 72, column 10>
-//   // proto:  void QStringListModel::setStringList(const QStringList & strings);
-// _ZN16QStringListModel13setStringListERK11QStringList setStringList(const class QStringList &)
-extern "C"
-void
-C_ZN16QStringListModel13setStringListERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  ((QStringListModel*)qthis)->setStringList(*((const QStringList*)arg1));
-}
-// <= ext block end
-
-// body block begin =>
-// QStringListModel_SlotProxy here
-class QStringListModel_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QStringListModel_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qstringlistmodel.moc"
-
-extern "C" {
-  QStringListModel_SlotProxy* QStringListModel_SlotProxy_new()
-  {
-    return new QStringListModel_SlotProxy();
-  }
-};
-
-// <= body block end
-

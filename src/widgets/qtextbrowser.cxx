@@ -1,512 +1,192 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qtextbrowser.h
-// dst-file: /src/widgets/qtextbrowser.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qtextbrowser.h
 #include <qtextbrowser.h>
+#include <QtWidgets>
 
-
-#include <qurl.h>
-#include <qstring.h>
-#include <qvariant.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtextbrowser_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// const QMetaObject * metaObject()
 extern "C"
-int QTextBrowser_Class_Size()
-{
-  return sizeof(QTextBrowser);
+void C_ZNK12QTextBrowser10metaObjectEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 76, column 10>
-//   // proto:  bool QTextBrowser::isBackwardAvailable();
-// _ZNK12QTextBrowser19isBackwardAvailableEv isBackwardAvailable()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:66
+// void QTextBrowser(class QWidget *)
 extern "C"
-bool
-C_ZNK12QTextBrowser19isBackwardAvailableEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->isBackwardAvailable();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN12QTextBrowserC1EP7QWidget(QWidget * parent) {
+  return new QTextBrowser(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 95, column 18>
-//   // proto:  void QTextBrowser::reload();
-// _ZN12QTextBrowser6reloadEv reload()
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:67
+// void ~QTextBrowser()
 extern "C"
-void
-C_ZN12QTextBrowser6reloadEv(void *qthis) {
-  ((QTextBrowser*)qthis)->reload();
+void C_ZN12QTextBrowserD1Ev(void *this_) {
+  delete (QTextBrowser*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 87, column 10>
-//   // proto:  bool QTextBrowser::openLinks();
-// _ZNK12QTextBrowser9openLinksEv openLinks()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:69
+// QUrl source()
 extern "C"
-bool
-C_ZNK12QTextBrowser9openLinksEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->openLinks();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QTextBrowser6sourceEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->source();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 78, column 10>
-//   // proto:  void QTextBrowser::clearHistory();
-// _ZN12QTextBrowser12clearHistoryEv clearHistory()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:71
+// QStringList searchPaths()
 extern "C"
-void
-C_ZN12QTextBrowser12clearHistoryEv(void *qthis) {
-  ((QTextBrowser*)qthis)->clearHistory();
+void C_ZNK12QTextBrowser11searchPathsEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->searchPaths();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 102, column 10>
-//   // proto:  void QTextBrowser::highlighted(const QUrl & );
-// _ZN12QTextBrowser11highlightedERK4QUrl highlighted(const class QUrl &)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:72
+// void setSearchPaths(const class QStringList &)
 extern "C"
-void
-C_ZN12QTextBrowser11highlightedERK4QUrl(void *qthis,
-const QUrl* arg1) {
-  ((QTextBrowser*)qthis)->highlighted(*((const QUrl*)arg1));
+void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, const QStringList & paths) {
+  ((QTextBrowser*)this_)->setSearchPaths(paths);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 55, column 5>
-//   // proto:  const QMetaObject * QTextBrowser::metaObject();
-// _ZNK12QTextBrowser10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:74
+// QVariant loadResource(int, const class QUrl &)
 extern "C"
-void*
-C_ZNK12QTextBrowser10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *this_, int type, const QUrl & name) {
+  /*return*/ ((QTextBrowser*)this_)->loadResource(type, name);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 80, column 10>
-//   // proto:  QUrl QTextBrowser::historyUrl(int );
-// _ZNK12QTextBrowser10historyUrlEi historyUrl(int)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:76
+// bool isBackwardAvailable()
 extern "C"
-QUrl*
-C_ZNK12QTextBrowser10historyUrlEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTextBrowser*)qthis)->historyUrl(arg1);
-  return new QUrl(ret); // 5
+void C_ZNK12QTextBrowser19isBackwardAvailableEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->isBackwardAvailable();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 101, column 10>
-//   // proto:  void QTextBrowser::sourceChanged(const QUrl & );
-// _ZN12QTextBrowser13sourceChangedERK4QUrl sourceChanged(const class QUrl &)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:77
+// bool isForwardAvailable()
 extern "C"
-void
-C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *qthis,
-const QUrl* arg1) {
-  ((QTextBrowser*)qthis)->sourceChanged(*((const QUrl*)arg1));
+void C_ZNK12QTextBrowser18isForwardAvailableEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->isForwardAvailable();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 77, column 10>
-//   // proto:  bool QTextBrowser::isForwardAvailable();
-// _ZNK12QTextBrowser18isForwardAvailableEv isForwardAvailable()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:78
+// void clearHistory()
 extern "C"
-bool
-C_ZNK12QTextBrowser18isForwardAvailableEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->isForwardAvailable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QTextBrowser12clearHistoryEv(void *this_) {
+  ((QTextBrowser*)this_)->clearHistory();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 84, column 10>
-//   // proto:  bool QTextBrowser::openExternalLinks();
-// _ZNK12QTextBrowser17openExternalLinksEv openExternalLinks()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:79
+// QString historyTitle(int)
 extern "C"
-bool
-C_ZNK12QTextBrowser17openExternalLinksEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->openExternalLinks();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QTextBrowser12historyTitleEi(void *this_, int a0) {
+  /*return*/ ((QTextBrowser*)this_)->historyTitle(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 66, column 14>
-//   // proto:  void QTextBrowser::QTextBrowser(QWidget * parent);
+// /usr/include/qt/QtWidgets/qtextbrowser.h:80
+// QUrl historyUrl(int)
 extern "C"
-QTextBrowser*
-C_ZN12QTextBrowserC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QTextBrowser(arg1);
-  return ret;
+void C_ZNK12QTextBrowser10historyUrlEi(void *this_, int a0) {
+  /*return*/ ((QTextBrowser*)this_)->historyUrl(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 81, column 9>
-//   // proto:  int QTextBrowser::backwardHistoryCount();
-// _ZNK12QTextBrowser20backwardHistoryCountEv backwardHistoryCount()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:81
+// int backwardHistoryCount()
 extern "C"
-int
-C_ZNK12QTextBrowser20backwardHistoryCountEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->backwardHistoryCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QTextBrowser20backwardHistoryCountEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->backwardHistoryCount();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 94, column 18>
-//   // proto:  void QTextBrowser::home();
-// _ZN12QTextBrowser4homeEv home()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:82
+// int forwardHistoryCount()
 extern "C"
-void
-C_ZN12QTextBrowser4homeEv(void *qthis) {
-  ((QTextBrowser*)qthis)->home();
+void C_ZNK12QTextBrowser19forwardHistoryCountEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->forwardHistoryCount();
 }
-//   // proto:  void QTextBrowser::~QTextBrowser();
+// /usr/include/qt/QtWidgets/qtextbrowser.h:84
+// bool openExternalLinks()
 extern "C"
-void C_ZN12QTextBrowserD2Ev(void *qthis) {
-  delete (QTextBrowser*)qthis;
+void C_ZNK12QTextBrowser17openExternalLinksEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->openExternalLinks();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 88, column 10>
-//   // proto:  void QTextBrowser::setOpenLinks(bool open);
-// _ZN12QTextBrowser12setOpenLinksEb setOpenLinks(_Bool)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:85
+// void setOpenExternalLinks(_Bool)
 extern "C"
-void
-C_ZN12QTextBrowser12setOpenLinksEb(void *qthis,
-bool arg1) {
-  ((QTextBrowser*)qthis)->setOpenLinks(arg1);
+void C_ZN12QTextBrowser20setOpenExternalLinksEb(void *this_, bool open) {
+  ((QTextBrowser*)this_)->setOpenExternalLinks(open);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 93, column 18>
-//   // proto:  void QTextBrowser::forward();
-// _ZN12QTextBrowser7forwardEv forward()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:87
+// bool openLinks()
 extern "C"
-void
-C_ZN12QTextBrowser7forwardEv(void *qthis) {
-  ((QTextBrowser*)qthis)->forward();
+void C_ZNK12QTextBrowser9openLinksEv(void *this_) {
+  /*return*/ ((QTextBrowser*)this_)->openLinks();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 103, column 10>
-//   // proto:  void QTextBrowser::highlighted(const QString & );
-// _ZN12QTextBrowser11highlightedERK7QString highlighted(const class QString &)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:88
+// void setOpenLinks(_Bool)
 extern "C"
-void
-C_ZN12QTextBrowser11highlightedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QTextBrowser*)qthis)->highlighted(*((const QString*)arg1));
+void C_ZN12QTextBrowser12setOpenLinksEb(void *this_, bool open) {
+  ((QTextBrowser*)this_)->setOpenLinks(open);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 79, column 13>
-//   // proto:  QString QTextBrowser::historyTitle(int );
-// _ZNK12QTextBrowser12historyTitleEi historyTitle(int)
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:91
+// void setSource(const class QUrl &)
 extern "C"
-QString*
-C_ZNK12QTextBrowser12historyTitleEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTextBrowser*)qthis)->historyTitle(arg1);
-  return new QString(ret); // 5
+void C_ZN12QTextBrowser9setSourceERK4QUrl(void *this_, const QUrl & name) {
+  ((QTextBrowser*)this_)->setSource(name);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 99, column 10>
-//   // proto:  void QTextBrowser::forwardAvailable(bool );
-// _ZN12QTextBrowser16forwardAvailableEb forwardAvailable(_Bool)
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:92
+// void backward()
 extern "C"
-void
-C_ZN12QTextBrowser16forwardAvailableEb(void *qthis,
-bool arg1) {
-  ((QTextBrowser*)qthis)->forwardAvailable(arg1);
+void C_ZN12QTextBrowser8backwardEv(void *this_) {
+  ((QTextBrowser*)this_)->backward();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 72, column 10>
-//   // proto:  void QTextBrowser::setSearchPaths(const QStringList & paths);
-// _ZN12QTextBrowser14setSearchPathsERK11QStringList setSearchPaths(const class QStringList &)
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:93
+// void forward()
 extern "C"
-void
-C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  ((QTextBrowser*)qthis)->setSearchPaths(*((const QStringList*)arg1));
+void C_ZN12QTextBrowser7forwardEv(void *this_) {
+  ((QTextBrowser*)this_)->forward();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 74, column 22>
-//   // proto:  QVariant QTextBrowser::loadResource(int type, const QUrl & name);
-// _ZN12QTextBrowser12loadResourceEiRK4QUrl loadResource(int, const class QUrl &)
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:94
+// void home()
 extern "C"
-QVariant*
-C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *qthis,
-int arg1,
-const QUrl* arg2) {
-  auto ret =
-  ((QTextBrowser*)qthis)->loadResource(arg1,
-*((const QUrl*)arg2));
-  return new QVariant(ret); // 5
+void C_ZN12QTextBrowser4homeEv(void *this_) {
+  ((QTextBrowser*)this_)->home();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 69, column 10>
-//   // proto:  QUrl QTextBrowser::source();
-// _ZNK12QTextBrowser6sourceEv source()
+// virtual
+// /usr/include/qt/QtWidgets/qtextbrowser.h:95
+// void reload()
 extern "C"
-QUrl*
-C_ZNK12QTextBrowser6sourceEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->source();
-  return new QUrl(ret); // 5
+void C_ZN12QTextBrowser6reloadEv(void *this_) {
+  ((QTextBrowser*)this_)->reload();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 100, column 10>
-//   // proto:  void QTextBrowser::historyChanged();
-// _ZN12QTextBrowser14historyChangedEv historyChanged()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:98
+// void backwardAvailable(_Bool)
 extern "C"
-void
-C_ZN12QTextBrowser14historyChangedEv(void *qthis) {
-  ((QTextBrowser*)qthis)->historyChanged();
+void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool a0) {
+  ((QTextBrowser*)this_)->backwardAvailable(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 85, column 10>
-//   // proto:  void QTextBrowser::setOpenExternalLinks(bool open);
-// _ZN12QTextBrowser20setOpenExternalLinksEb setOpenExternalLinks(_Bool)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:99
+// void forwardAvailable(_Bool)
 extern "C"
-void
-C_ZN12QTextBrowser20setOpenExternalLinksEb(void *qthis,
-bool arg1) {
-  ((QTextBrowser*)qthis)->setOpenExternalLinks(arg1);
+void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool a0) {
+  ((QTextBrowser*)this_)->forwardAvailable(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 91, column 18>
-//   // proto:  void QTextBrowser::setSource(const QUrl & name);
-// _ZN12QTextBrowser9setSourceERK4QUrl setSource(const class QUrl &)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:100
+// void historyChanged()
 extern "C"
-void
-C_ZN12QTextBrowser9setSourceERK4QUrl(void *qthis,
-const QUrl* arg1) {
-  ((QTextBrowser*)qthis)->setSource(*((const QUrl*)arg1));
+void C_ZN12QTextBrowser14historyChangedEv(void *this_) {
+  ((QTextBrowser*)this_)->historyChanged();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 71, column 17>
-//   // proto:  QStringList QTextBrowser::searchPaths();
-// _ZNK12QTextBrowser11searchPathsEv searchPaths()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:101
+// void sourceChanged(const class QUrl &)
 extern "C"
-QStringList*
-C_ZNK12QTextBrowser11searchPathsEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->searchPaths();
-  return new QStringList(ret); // 5
+void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, const QUrl & a0) {
+  ((QTextBrowser*)this_)->sourceChanged(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 92, column 18>
-//   // proto:  void QTextBrowser::backward();
-// _ZN12QTextBrowser8backwardEv backward()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:102
+// void highlighted(const class QUrl &)
 extern "C"
-void
-C_ZN12QTextBrowser8backwardEv(void *qthis) {
-  ((QTextBrowser*)qthis)->backward();
+void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, const QUrl & a0) {
+  ((QTextBrowser*)this_)->highlighted(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 82, column 9>
-//   // proto:  int QTextBrowser::forwardHistoryCount();
-// _ZNK12QTextBrowser19forwardHistoryCountEv forwardHistoryCount()
+// /usr/include/qt/QtWidgets/qtextbrowser.h:103
+// void highlighted(const class QString &)
 extern "C"
-int
-C_ZNK12QTextBrowser19forwardHistoryCountEv(void *qthis) {
-  auto ret =
-  ((QTextBrowser*)qthis)->forwardHistoryCount();
-  return ret; // 0 TypeKind.INT
+void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, const QString & a0) {
+  ((QTextBrowser*)this_)->highlighted(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 104, column 10>
-//   // proto:  void QTextBrowser::anchorClicked(const QUrl & );
-// _ZN12QTextBrowser13anchorClickedERK4QUrl anchorClicked(const class QUrl &)
+// /usr/include/qt/QtWidgets/qtextbrowser.h:104
+// void anchorClicked(const class QUrl &)
 extern "C"
-void
-C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *qthis,
-const QUrl* arg1) {
-  ((QTextBrowser*)qthis)->anchorClicked(*((const QUrl*)arg1));
+void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, const QUrl & a0) {
+  ((QTextBrowser*)this_)->anchorClicked(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtextbrowser.h', line 98, column 10>
-//   // proto:  void QTextBrowser::backwardAvailable(bool );
-// _ZN12QTextBrowser17backwardAvailableEb backwardAvailable(_Bool)
-extern "C"
-void
-C_ZN12QTextBrowser17backwardAvailableEb(void *qthis,
-bool arg1) {
-  ((QTextBrowser*)qthis)->backwardAvailable(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QTextBrowser_SlotProxy here
-class QTextBrowser_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QTextBrowser_SlotProxy():QObject(){}
-
-public slots:
-  // historyChanged()
-  void slot_proxy_func__ZN12QTextBrowser14historyChangedEv();
-public:
-  void (*slot_func__ZN12QTextBrowser14historyChangedEv)(void* rsfptr) = NULL;
-public slots:
-  // highlighted(const class QString &)
-  void slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser11highlightedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public slots:
-  // sourceChanged(const class QUrl &)
-  void slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
-public slots:
-  // highlighted(const class QUrl &)
-  void slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser11highlightedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
-public slots:
-  // forwardAvailable(_Bool)
-  void slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser16forwardAvailableEb)(void* rsfptr, bool arg0) = NULL;
-public slots:
-  // anchorClicked(const class QUrl &)
-  void slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl)(void* rsfptr, const QUrl & arg0) = NULL;
-public slots:
-  // backwardAvailable(_Bool)
-  void slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0);
-public:
-  void (*slot_func__ZN12QTextBrowser17backwardAvailableEb)(void* rsfptr, bool arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qtextbrowser.moc"
-
-extern "C" {
-  QTextBrowser_SlotProxy* QTextBrowser_SlotProxy_new()
-  {
-    return new QTextBrowser_SlotProxy();
-  }
-};
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser14historyChangedEv() {
-  if (this->slot_func__ZN12QTextBrowser14historyChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser14historyChangedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser14historyChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser14historyChangedEv = (decltype(that->slot_func__ZN12QTextBrowser14historyChangedEv))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(historyChanged()), that, SLOT(slot_proxy_func__ZN12QTextBrowser14historyChangedEv()));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser14historyChangedEv(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN12QTextBrowser11highlightedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser11highlightedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser11highlightedERK7QString = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK7QString))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser11highlightedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK7QString(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13sourceChangedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13sourceChangedERK4QUrl))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(sourceChanged(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser13sourceChangedERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser13sourceChangedERK4QUrl(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN12QTextBrowser11highlightedERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser11highlightedERK4QUrl(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser11highlightedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser11highlightedERK4QUrl))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(highlighted(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser11highlightedERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser11highlightedERK4QUrl(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0) {
-  if (this->slot_func__ZN12QTextBrowser16forwardAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser16forwardAvailableEb(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser16forwardAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser16forwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser16forwardAvailableEb))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(forwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser16forwardAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser16forwardAvailableEb(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0) {
-  if (this->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser13anchorClickedERK4QUrl(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl = (decltype(that->slot_func__ZN12QTextBrowser13anchorClickedERK4QUrl))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(anchorClicked(const class QUrl &)), that, SLOT(slot_proxy_func__ZN12QTextBrowser13anchorClickedERK4QUrl(const QUrl & arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser13anchorClickedERK4QUrl(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTextBrowser_SlotProxy::slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0) {
-  if (this->slot_func__ZN12QTextBrowser17backwardAvailableEb != NULL) {
-    // do smth...
-    this->slot_func__ZN12QTextBrowser17backwardAvailableEb(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTextBrowser_SlotProxy_connect__ZN12QTextBrowser17backwardAvailableEb(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTextBrowser_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QTextBrowser17backwardAvailableEb = (decltype(that->slot_func__ZN12QTextBrowser17backwardAvailableEb))ffifptr;
-  QObject::connect((QTextBrowser*)sender, SIGNAL(backwardAvailable(_Bool)), that, SLOT(slot_proxy_func__ZN12QTextBrowser17backwardAvailableEb(bool arg0)));
-  return that;
-}
-extern "C"
-void QTextBrowser_SlotProxy_disconnect__ZN12QTextBrowser17backwardAvailableEb(QTextBrowser_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

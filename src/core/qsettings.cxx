@@ -1,472 +1,251 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qsettings.h
-// dst-file: /src/core/qsettings.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qsettings.h
 #include <qsettings.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-#include <qstringlist.h>
-#include <qvariant.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsettings_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qsettings.h:71
+// const QMetaObject * metaObject()
 extern "C"
-int QSettings_Class_Size()
-{
-  return sizeof(QSettings);
+void C_ZNK9QSettings10metaObjectEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 125, column 14>
-//   // proto:  void QSettings::QSettings(QObject * parent);
+// /usr/include/qt/QtCore/qsettings.h:118
+// void QSettings(const class QString &, const class QString &, class QObject *)
 extern "C"
-QSettings*
-C_ZN9QSettingsC2EP7QObject(QObject * arg1) {
-  auto ret = new QSettings(arg1);
-  return ret;
+void* C_ZN9QSettingsC1ERK7QStringS2_P7QObject(const QString & organization, const QString & application, QObject * parent) {
+  return new QSettings(organization, application, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 153, column 10>
-//   // proto:  bool QSettings::isWritable();
-// _ZNK9QSettings10isWritableEv isWritable()
+// /usr/include/qt/QtCore/qsettings.h:120
+// void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 extern "C"
-bool
-C_ZNK9QSettings10isWritableEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->isWritable();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN9QSettingsC1ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
+  return new QSettings(scope, organization, application, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 164, column 13>
-//   // proto:  QString QSettings::fileName();
-// _ZNK9QSettings8fileNameEv fileName()
+// /usr/include/qt/QtCore/qsettings.h:122
+// void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 extern "C"
-QString*
-C_ZNK9QSettings8fileNameEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->fileName();
-  return new QString(ret); // 5
+void* C_ZN9QSettingsC1ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
+  return new QSettings(format, scope, organization, application, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 162, column 10>
-//   // proto:  bool QSettings::fallbacksEnabled();
-// _ZNK9QSettings16fallbacksEnabledEv fallbacksEnabled()
+// /usr/include/qt/QtCore/qsettings.h:124
+// void QSettings(const class QString &, enum QSettings::Format, class QObject *)
 extern "C"
-bool
-C_ZNK9QSettings16fallbacksEnabledEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->fallbacksEnabled();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN9QSettingsC1ERK7QStringNS_6FormatEP7QObject(const QString & fileName, QSettings::Format format, QObject * parent) {
+  return new QSettings(fileName, format, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 168, column 13>
-//   // proto:  QString QSettings::applicationName();
-// _ZNK9QSettings15applicationNameEv applicationName()
+// /usr/include/qt/QtCore/qsettings.h:125
+// void QSettings(class QObject *)
 extern "C"
-QString*
-C_ZNK9QSettings15applicationNameEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->applicationName();
-  return new QString(ret); // 5
+void* C_ZN9QSettingsC1EP7QObject(QObject * parent) {
+  return new QSettings(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 139, column 12>
-//   // proto:  QSettings::Status QSettings::status();
-// _ZNK9QSettings6statusEv status()
+// virtual
+// /usr/include/qt/QtCore/qsettings.h:135
+// void ~QSettings()
 extern "C"
-QSettings::Status
-C_ZNK9QSettings6statusEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->status();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QSettingsD1Ev(void *this_) {
+  delete (QSettings*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 138, column 10>
-//   // proto:  void QSettings::sync();
-// _ZN9QSettings4syncEv sync()
+// /usr/include/qt/QtCore/qsettings.h:137
+// void clear()
 extern "C"
-void
-C_ZN9QSettings4syncEv(void *qthis) {
-  ((QSettings*)qthis)->sync();
+void C_ZN9QSettings5clearEv(void *this_) {
+  ((QSettings*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 155, column 10>
-//   // proto:  void QSettings::setValue(const QString & key, const QVariant & value);
-// _ZN9QSettings8setValueERK7QStringRK8QVariant setValue(const class QString &, const class QVariant &)
+// /usr/include/qt/QtCore/qsettings.h:138
+// void sync()
 extern "C"
-void
-C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *qthis,
-const QString* arg1,
-const QVariant* arg2) {
-  ((QSettings*)qthis)->setValue(*((const QString*)arg1),
-*((const QVariant*)arg2));
+void C_ZN9QSettings4syncEv(void *this_) {
+  ((QSettings*)this_)->sync();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 148, column 10>
-//   // proto:  void QSettings::setArrayIndex(int i);
-// _ZN9QSettings13setArrayIndexEi setArrayIndex(int)
+// /usr/include/qt/QtCore/qsettings.h:139
+// QSettings::Status status()
 extern "C"
-void
-C_ZN9QSettings13setArrayIndexEi(void *qthis,
-int arg1) {
-  ((QSettings*)qthis)->setArrayIndex(arg1);
+void C_ZNK9QSettings6statusEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->status();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 118, column 14>
-//   // proto:  void QSettings::QSettings(const QString & organization, const QString & application, QObject * parent);
+// /usr/include/qt/QtCore/qsettings.h:141
+// void beginGroup(const class QString &)
 extern "C"
-QSettings*
-C_ZN9QSettingsC2ERK7QStringS2_P7QObject(const QString* arg1,
-const QString* arg2,
-QObject * arg3) {
-  auto ret = new QSettings(*((const QString*)arg1),
-*((const QString*)arg2),
-arg3);
-  return ret;
+void C_ZN9QSettings10beginGroupERK7QString(void *this_, const QString & prefix) {
+  ((QSettings*)this_)->beginGroup(prefix);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 122, column 5>
-//   // proto:  void QSettings::QSettings(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent);
+// /usr/include/qt/QtCore/qsettings.h:142
+// void endGroup()
 extern "C"
-QSettings*
-C_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Format arg1,
-QSettings::Scope arg2,
-const QString* arg3,
-const QString* arg4,
-QObject * arg5) {
-  auto ret = new QSettings(arg1,
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4),
-arg5);
-  return ret;
+void C_ZN9QSettings8endGroupEv(void *this_) {
+  ((QSettings*)this_)->endGroup();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 171, column 10>
-//   // proto:  void QSettings::setIniCodec(QTextCodec * codec);
-// _ZN9QSettings11setIniCodecEP10QTextCodec setIniCodec(class QTextCodec *)
+// /usr/include/qt/QtCore/qsettings.h:143
+// QString group()
 extern "C"
-void
-C_ZN9QSettings11setIniCodecEP10QTextCodec(void *qthis,
-QTextCodec * arg1) {
-  ((QSettings*)qthis)->setIniCodec(arg1);
+void C_ZNK9QSettings5groupEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->group();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 172, column 10>
-//   // proto:  void QSettings::setIniCodec(const char * codecName);
-// _ZN9QSettings11setIniCodecEPKc setIniCodec(const char *)
+// /usr/include/qt/QtCore/qsettings.h:145
+// int beginReadArray(const class QString &)
 extern "C"
-void
-C_ZN9QSettings11setIniCodecEPKc(void *qthis,
-const char * arg1) {
-  ((QSettings*)qthis)->setIniCodec(arg1);
+void C_ZN9QSettings14beginReadArrayERK7QString(void *this_, const QString & prefix) {
+  /*return*/ ((QSettings*)this_)->beginReadArray(prefix);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 145, column 9>
-//   // proto:  int QSettings::beginReadArray(const QString & prefix);
-// _ZN9QSettings14beginReadArrayERK7QString beginReadArray(const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:146
+// void beginWriteArray(const class QString &, int)
 extern "C"
-int
-C_ZN9QSettings14beginReadArrayERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QSettings*)qthis)->beginReadArray(*((const QString*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN9QSettings15beginWriteArrayERK7QStringi(void *this_, const QString & prefix, int size) {
+  ((QSettings*)this_)->beginWriteArray(prefix, size);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 166, column 11>
-//   // proto:  QSettings::Scope QSettings::scope();
-// _ZNK9QSettings5scopeEv scope()
+// /usr/include/qt/QtCore/qsettings.h:147
+// void endArray()
 extern "C"
-QSettings::Scope
-C_ZNK9QSettings5scopeEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->scope();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QSettings8endArrayEv(void *this_) {
+  ((QSettings*)this_)->endArray();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 137, column 10>
-//   // proto:  void QSettings::clear();
-// _ZN9QSettings5clearEv clear()
+// /usr/include/qt/QtCore/qsettings.h:148
+// void setArrayIndex(int)
 extern "C"
-void
-C_ZN9QSettings5clearEv(void *qthis) {
-  ((QSettings*)qthis)->clear();
+void C_ZN9QSettings13setArrayIndexEi(void *this_, int i) {
+  ((QSettings*)this_)->setArrayIndex(i);
 }
-//   // proto:  void QSettings::~QSettings();
+// /usr/include/qt/QtCore/qsettings.h:150
+// QStringList allKeys()
 extern "C"
-void C_ZN9QSettingsD2Ev(void *qthis) {
-  delete (QSettings*)qthis;
+void C_ZNK9QSettings7allKeysEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->allKeys();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 173, column 17>
-//   // proto:  QTextCodec * QSettings::iniCodec();
-// _ZNK9QSettings8iniCodecEv iniCodec()
+// /usr/include/qt/QtCore/qsettings.h:151
+// QStringList childKeys()
 extern "C"
-void*
-C_ZNK9QSettings8iniCodecEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->iniCodec();
-  return (void*)ret;
+void C_ZNK9QSettings9childKeysEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->childKeys();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 124, column 5>
-//   // proto:  void QSettings::QSettings(const QString & fileName, QSettings::Format format, QObject * parent);
+// /usr/include/qt/QtCore/qsettings.h:152
+// QStringList childGroups()
 extern "C"
-QSettings*
-C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(const QString* arg1,
-QSettings::Format arg2,
-QObject * arg3) {
-  auto ret = new QSettings(*((const QString*)arg1),
-arg2,
-arg3);
-  return ret;
+void C_ZNK9QSettings11childGroupsEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->childGroups();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 186, column 19>
-//   // proto: static QSettings::Format QSettings::registerFormat(const QString & extension, ReadFunc readFunc, WriteFunc writeFunc, Qt::CaseSensitivity caseSensitivity);
-// _ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapIS0_8QVariantEEPFbS4_RKS7_EN2Qt15CaseSensitivityE registerFormat(const class QString &, ReadFunc, WriteFunc, Qt::CaseSensitivity)
+// /usr/include/qt/QtCore/qsettings.h:153
+// bool isWritable()
 extern "C"
-QSettings::Format
-C_ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapIS0_8QVariantEEPFbS4_RKS7_EN2Qt15CaseSensitivityE(const QString* arg1,
-QSettings::ReadFunc arg2,
-QSettings::WriteFunc arg3,
-Qt::CaseSensitivity* arg4) {
-  auto ret =
-  QSettings::registerFormat(*((const QString*)arg1),
-arg2,
-arg3,
-*((Qt::CaseSensitivity*)arg4));
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QSettings10isWritableEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->isWritable();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 179, column 17>
-//   // proto: static void QSettings::setUserIniPath(const QString & dir);
-// _ZN9QSettings14setUserIniPathERK7QString setUserIniPath(const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:155
+// void setValue(const class QString &, const class QVariant &)
 extern "C"
-void
-C_ZN9QSettings14setUserIniPathERK7QString(const QString* arg1) {
-  QSettings::setUserIniPath(*((const QString*)arg1));
+void C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *this_, const QString & key, const QVariant & value) {
+  ((QSettings*)this_)->setValue(key, value);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 152, column 17>
-//   // proto:  QStringList QSettings::childGroups();
-// _ZNK9QSettings11childGroupsEv childGroups()
+// /usr/include/qt/QtCore/qsettings.h:156
+// QVariant value(const class QString &, const class QVariant &)
 extern "C"
-QStringList*
-C_ZNK9QSettings11childGroupsEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->childGroups();
-  return new QStringList(ret); // 5
+void C_ZNK9QSettings5valueERK7QStringRK8QVariant(void *this_, const QString & key, const QVariant & defaultValue) {
+  /*return*/ ((QSettings*)this_)->value(key, defaultValue);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 156, column 14>
-//   // proto:  QVariant QSettings::value(const QString & key, const QVariant & defaultValue);
-// _ZNK9QSettings5valueERK7QStringRK8QVariant value(const class QString &, const class QVariant &)
+// /usr/include/qt/QtCore/qsettings.h:158
+// void remove(const class QString &)
 extern "C"
-QVariant*
-C_ZNK9QSettings5valueERK7QStringRK8QVariant(void *qthis,
-const QString* arg1,
-const QVariant* arg2) {
-  auto ret =
-  ((QSettings*)qthis)->value(*((const QString*)arg1),
-*((const QVariant*)arg2));
-  return new QVariant(ret); // 5
+void C_ZN9QSettings6removeERK7QString(void *this_, const QString & key) {
+  ((QSettings*)this_)->remove(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 167, column 13>
-//   // proto:  QString QSettings::organizationName();
-// _ZNK9QSettings16organizationNameEv organizationName()
+// /usr/include/qt/QtCore/qsettings.h:159
+// bool contains(const class QString &)
 extern "C"
-QString*
-C_ZNK9QSettings16organizationNameEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->organizationName();
-  return new QString(ret); // 5
+void C_ZNK9QSettings8containsERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QSettings*)this_)->contains(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 165, column 12>
-//   // proto:  QSettings::Format QSettings::format();
-// _ZNK9QSettings6formatEv format()
+// /usr/include/qt/QtCore/qsettings.h:161
+// void setFallbacksEnabled(_Bool)
 extern "C"
-QSettings::Format
-C_ZNK9QSettings6formatEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->format();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QSettings19setFallbacksEnabledEb(void *this_, bool b) {
+  ((QSettings*)this_)->setFallbacksEnabled(b);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 71, column 5>
-//   // proto:  const QMetaObject * QSettings::metaObject();
-// _ZNK9QSettings10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qsettings.h:162
+// bool fallbacksEnabled()
 extern "C"
-void*
-C_ZNK9QSettings10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK9QSettings16fallbacksEnabledEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->fallbacksEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 161, column 10>
-//   // proto:  void QSettings::setFallbacksEnabled(bool b);
-// _ZN9QSettings19setFallbacksEnabledEb setFallbacksEnabled(_Bool)
+// /usr/include/qt/QtCore/qsettings.h:164
+// QString fileName()
 extern "C"
-void
-C_ZN9QSettings19setFallbacksEnabledEb(void *qthis,
-bool arg1) {
-  ((QSettings*)qthis)->setFallbacksEnabled(arg1);
+void C_ZNK9QSettings8fileNameEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 159, column 10>
-//   // proto:  bool QSettings::contains(const QString & key);
-// _ZNK9QSettings8containsERK7QString contains(const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:165
+// QSettings::Format format()
 extern "C"
-bool
-C_ZNK9QSettings8containsERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QSettings*)qthis)->contains(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QSettings6formatEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->format();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 158, column 10>
-//   // proto:  void QSettings::remove(const QString & key);
-// _ZN9QSettings6removeERK7QString remove(const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:166
+// QSettings::Scope scope()
 extern "C"
-void
-C_ZN9QSettings6removeERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSettings*)qthis)->remove(*((const QString*)arg1));
+void C_ZNK9QSettings5scopeEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->scope();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 176, column 17>
-//   // proto: static void QSettings::setDefaultFormat(QSettings::Format format);
-// _ZN9QSettings16setDefaultFormatENS_6FormatE setDefaultFormat(enum QSettings::Format)
+// /usr/include/qt/QtCore/qsettings.h:167
+// QString organizationName()
 extern "C"
-void
-C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format arg1) {
-  QSettings::setDefaultFormat(arg1);
+void C_ZNK9QSettings16organizationNameEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->organizationName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 142, column 10>
-//   // proto:  void QSettings::endGroup();
-// _ZN9QSettings8endGroupEv endGroup()
+// /usr/include/qt/QtCore/qsettings.h:168
+// QString applicationName()
 extern "C"
-void
-C_ZN9QSettings8endGroupEv(void *qthis) {
-  ((QSettings*)qthis)->endGroup();
+void C_ZNK9QSettings15applicationNameEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->applicationName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 146, column 10>
-//   // proto:  void QSettings::beginWriteArray(const QString & prefix, int size);
-// _ZN9QSettings15beginWriteArrayERK7QStringi beginWriteArray(const class QString &, int)
+// /usr/include/qt/QtCore/qsettings.h:171
+// void setIniCodec(class QTextCodec *)
 extern "C"
-void
-C_ZN9QSettings15beginWriteArrayERK7QStringi(void *qthis,
-const QString* arg1,
-int arg2) {
-  ((QSettings*)qthis)->beginWriteArray(*((const QString*)arg1),
-arg2);
+void C_ZN9QSettings11setIniCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
+  ((QSettings*)this_)->setIniCodec(codec);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 180, column 17>
-//   // proto: static void QSettings::setPath(QSettings::Format format, QSettings::Scope scope, const QString & path);
-// _ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString setPath(enum QSettings::Format, enum QSettings::Scope, const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:172
+// void setIniCodec(const char *)
 extern "C"
-void
-C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format arg1,
-QSettings::Scope arg2,
-const QString* arg3) {
-  QSettings::setPath(arg1,
-arg2,
-*((const QString*)arg3));
+void C_ZN9QSettings11setIniCodecEPKc(void *this_, const char * codecName) {
+  ((QSettings*)this_)->setIniCodec(codecName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 141, column 10>
-//   // proto:  void QSettings::beginGroup(const QString & prefix);
-// _ZN9QSettings10beginGroupERK7QString beginGroup(const class QString &)
+// /usr/include/qt/QtCore/qsettings.h:173
+// QTextCodec * iniCodec()
 extern "C"
-void
-C_ZN9QSettings10beginGroupERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSettings*)qthis)->beginGroup(*((const QString*)arg1));
+void C_ZNK9QSettings8iniCodecEv(void *this_) {
+  /*return*/ ((QSettings*)this_)->iniCodec();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 151, column 17>
-//   // proto:  QStringList QSettings::childKeys();
-// _ZNK9QSettings9childKeysEv childKeys()
+// static
+// /usr/include/qt/QtCore/qsettings.h:176
+// void setDefaultFormat(enum QSettings::Format)
 extern "C"
-QStringList*
-C_ZNK9QSettings9childKeysEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->childKeys();
-  return new QStringList(ret); // 5
+void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
+  QSettings::setDefaultFormat(format);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 177, column 19>
-//   // proto: static QSettings::Format QSettings::defaultFormat();
-// _ZN9QSettings13defaultFormatEv defaultFormat()
+// static
+// /usr/include/qt/QtCore/qsettings.h:177
+// QSettings::Format defaultFormat()
 extern "C"
-QSettings::Format
-C_ZN9QSettings13defaultFormatEv() {
-  auto ret =
-  QSettings::defaultFormat();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QSettings13defaultFormatEv() {
+  /*return*/ QSettings::defaultFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 147, column 10>
-//   // proto:  void QSettings::endArray();
-// _ZN9QSettings8endArrayEv endArray()
+// static
+// /usr/include/qt/QtCore/qsettings.h:178
+// void setSystemIniPath(const class QString &)
 extern "C"
-void
-C_ZN9QSettings8endArrayEv(void *qthis) {
-  ((QSettings*)qthis)->endArray();
+void C_ZN9QSettings16setSystemIniPathERK7QString(const QString & dir) {
+  QSettings::setSystemIniPath(dir);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 120, column 5>
-//   // proto:  void QSettings::QSettings(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent);
+// static
+// /usr/include/qt/QtCore/qsettings.h:179
+// void setUserIniPath(const class QString &)
 extern "C"
-QSettings*
-C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope arg1,
-const QString* arg2,
-const QString* arg3,
-QObject * arg4) {
-  auto ret = new QSettings(arg1,
-*((const QString*)arg2),
-*((const QString*)arg3),
-arg4);
-  return ret;
+void C_ZN9QSettings14setUserIniPathERK7QString(const QString & dir) {
+  QSettings::setUserIniPath(dir);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 178, column 17>
-//   // proto: static void QSettings::setSystemIniPath(const QString & dir);
-// _ZN9QSettings16setSystemIniPathERK7QString setSystemIniPath(const class QString &)
+// static
+// /usr/include/qt/QtCore/qsettings.h:180
+// void setPath(enum QSettings::Format, enum QSettings::Scope, const class QString &)
 extern "C"
-void
-C_ZN9QSettings16setSystemIniPathERK7QString(const QString* arg1) {
-  QSettings::setSystemIniPath(*((const QString*)arg1));
+void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, const QString & path) {
+  QSettings::setPath(format, scope, path);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 150, column 17>
-//   // proto:  QStringList QSettings::allKeys();
-// _ZNK9QSettings7allKeysEv allKeys()
-extern "C"
-QStringList*
-C_ZNK9QSettings7allKeysEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->allKeys();
-  return new QStringList(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qsettings.h', line 143, column 13>
-//   // proto:  QString QSettings::group();
-// _ZNK9QSettings5groupEv group()
-extern "C"
-QString*
-C_ZNK9QSettings5groupEv(void *qthis) {
-  auto ret =
-  ((QSettings*)qthis)->group();
-  return new QString(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// QSettings_SlotProxy here
-class QSettings_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSettings_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qsettings.moc"
-
-extern "C" {
-  QSettings_SlotProxy* QSettings_SlotProxy_new()
-  {
-    return new QSettings_SlotProxy();
-  }
-};
-
-// <= body block end
-

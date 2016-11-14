@@ -1,183 +1,95 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qtextdocumentwriter.h
-// dst-file: /src/gui/qtextdocumentwriter.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qtextdocumentwriter.h
 #include <qtextdocumentwriter.h>
+#include <QtGui>
 
-
-#include <qbytearray.h>
-#include <qstring.h>
-#include <qlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtextdocumentwriter_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:56
+// void QTextDocumentWriter()
 extern "C"
-int QTextDocumentWriter_Class_Size()
-{
-  return sizeof(QTextDocumentWriter);
+void* C_ZN19QTextDocumentWriterC1Ev() {
+  return new QTextDocumentWriter();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 73, column 10>
-//   // proto:  void QTextDocumentWriter::setCodec(QTextCodec * codec);
-// _ZN19QTextDocumentWriter8setCodecEP10QTextCodec setCodec(class QTextCodec *)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:57
+// void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
 extern "C"
-void
-C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *qthis,
-QTextCodec * arg1) {
-  ((QTextDocumentWriter*)qthis)->setCodec(arg1);
+void* C_ZN19QTextDocumentWriterC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
+  return new QTextDocumentWriter(device, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 57, column 5>
-//   // proto:  void QTextDocumentWriter::QTextDocumentWriter(QIODevice * device, const QByteArray & format);
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:58
+// void QTextDocumentWriter(const class QString &, const class QByteArray &)
 extern "C"
-QTextDocumentWriter*
-C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * arg1,
-const QByteArray* arg2) {
-  auto ret = new QTextDocumentWriter(arg1,
-*((const QByteArray*)arg2));
-  return ret;
+void* C_ZN19QTextDocumentWriterC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
+  return new QTextDocumentWriter(fileName, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 66, column 10>
-//   // proto:  void QTextDocumentWriter::setFileName(const QString & fileName);
-// _ZN19QTextDocumentWriter11setFileNameERK7QString setFileName(const class QString &)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:59
+// void ~QTextDocumentWriter()
 extern "C"
-void
-C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QTextDocumentWriter*)qthis)->setFileName(*((const QString*)arg1));
+void C_ZN19QTextDocumentWriterD1Ev(void *this_) {
+  delete (QTextDocumentWriter*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 62, column 16>
-//   // proto:  QByteArray QTextDocumentWriter::format();
-// _ZNK19QTextDocumentWriter6formatEv format()
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:61
+// void setFormat(const class QByteArray &)
 extern "C"
-QByteArray*
-C_ZNK19QTextDocumentWriter6formatEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->format();
-  return new QByteArray(ret); // 5
+void C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
+  ((QTextDocumentWriter*)this_)->setFormat(format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 64, column 10>
-//   // proto:  void QTextDocumentWriter::setDevice(QIODevice * device);
-// _ZN19QTextDocumentWriter9setDeviceEP9QIODevice setDevice(class QIODevice *)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:62
+// QByteArray format()
 extern "C"
-void
-C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *qthis,
-QIODevice * arg1) {
-  ((QTextDocumentWriter*)qthis)->setDevice(arg1);
+void C_ZNK19QTextDocumentWriter6formatEv(void *this_) {
+  /*return*/ ((QTextDocumentWriter*)this_)->format();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 58, column 14>
-//   // proto:  void QTextDocumentWriter::QTextDocumentWriter(const QString & fileName, const QByteArray & format);
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:64
+// void setDevice(class QIODevice *)
 extern "C"
-QTextDocumentWriter*
-C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(const QString* arg1,
-const QByteArray* arg2) {
-  auto ret = new QTextDocumentWriter(*((const QString*)arg1),
-*((const QByteArray*)arg2));
-  return ret;
+void C_ZN19QTextDocumentWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
+  ((QTextDocumentWriter*)this_)->setDevice(device);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 61, column 10>
-//   // proto:  void QTextDocumentWriter::setFormat(const QByteArray & format);
-// _ZN19QTextDocumentWriter9setFormatERK10QByteArray setFormat(const class QByteArray &)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:65
+// QIODevice * device()
 extern "C"
-void
-C_ZN19QTextDocumentWriter9setFormatERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QTextDocumentWriter*)qthis)->setFormat(*((const QByteArray*)arg1));
+void C_ZNK19QTextDocumentWriter6deviceEv(void *this_) {
+  /*return*/ ((QTextDocumentWriter*)this_)->device();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 69, column 10>
-//   // proto:  bool QTextDocumentWriter::write(const QTextDocument * document);
-// _ZN19QTextDocumentWriter5writeEPK13QTextDocument write(const class QTextDocument *)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:66
+// void setFileName(const class QString &)
 extern "C"
-bool
-C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *qthis,
-const QTextDocument * arg1) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->write(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN19QTextDocumentWriter11setFileNameERK7QString(void *this_, const QString & fileName) {
+  ((QTextDocumentWriter*)this_)->setFileName(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 70, column 10>
-//   // proto:  bool QTextDocumentWriter::write(const QTextDocumentFragment & fragment);
-// _ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment write(const class QTextDocumentFragment &)
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:67
+// QString fileName()
 extern "C"
-bool
-C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *qthis,
-const QTextDocumentFragment* arg1) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->write(*((const QTextDocumentFragment*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK19QTextDocumentWriter8fileNameEv(void *this_) {
+  /*return*/ ((QTextDocumentWriter*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 56, column 5>
-//   // proto:  void QTextDocumentWriter::QTextDocumentWriter();
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:69
+// bool write(const class QTextDocument *)
 extern "C"
-QTextDocumentWriter*
-C_ZN19QTextDocumentWriterC2Ev() {
-  auto ret = new QTextDocumentWriter();
-  return ret;
+void C_ZN19QTextDocumentWriter5writeEPK13QTextDocument(void *this_, const QTextDocument * document) {
+  /*return*/ ((QTextDocumentWriter*)this_)->write(document);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 74, column 17>
-//   // proto:  QTextCodec * QTextDocumentWriter::codec();
-// _ZNK19QTextDocumentWriter5codecEv codec()
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:70
+// bool write(const class QTextDocumentFragment &)
 extern "C"
-void*
-C_ZNK19QTextDocumentWriter5codecEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->codec();
-  return (void*)ret;
+void C_ZN19QTextDocumentWriter5writeERK21QTextDocumentFragment(void *this_, const QTextDocumentFragment & fragment) {
+  /*return*/ ((QTextDocumentWriter*)this_)->write(fragment);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 67, column 13>
-//   // proto:  QString QTextDocumentWriter::fileName();
-// _ZNK19QTextDocumentWriter8fileNameEv fileName()
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:73
+// void setCodec(class QTextCodec *)
 extern "C"
-QString*
-C_ZNK19QTextDocumentWriter8fileNameEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZN19QTextDocumentWriter8setCodecEP10QTextCodec(void *this_, QTextCodec * codec) {
+  ((QTextDocumentWriter*)this_)->setCodec(codec);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 77, column 30>
-//   // proto: static QList<QByteArray> QTextDocumentWriter::supportedDocumentFormats();
-// _ZN19QTextDocumentWriter24supportedDocumentFormatsEv supportedDocumentFormats()
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:74
+// QTextCodec * codec()
 extern "C"
-QList<QByteArray>*
-C_ZN19QTextDocumentWriter24supportedDocumentFormatsEv() {
-  auto ret =
-  QTextDocumentWriter::supportedDocumentFormats();
-  return new QList<QByteArray>(ret); // 5
+void C_ZNK19QTextDocumentWriter5codecEv(void *this_) {
+  /*return*/ ((QTextDocumentWriter*)this_)->codec();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtextdocumentwriter.h', line 65, column 16>
-//   // proto:  QIODevice * QTextDocumentWriter::device();
-// _ZNK19QTextDocumentWriter6deviceEv device()
+// static
+// /usr/include/qt/QtGui/qtextdocumentwriter.h:77
+// QList<QByteArray> supportedDocumentFormats()
 extern "C"
-void*
-C_ZNK19QTextDocumentWriter6deviceEv(void *qthis) {
-  auto ret =
-  ((QTextDocumentWriter*)qthis)->device();
-  return (void*)ret;
+void C_ZN19QTextDocumentWriter24supportedDocumentFormatsEv() {
+  /*return*/ QTextDocumentWriter::supportedDocumentFormats();
 }
-//   // proto:  void QTextDocumentWriter::~QTextDocumentWriter();
-extern "C"
-void C_ZN19QTextDocumentWriterD2Ev(void *qthis) {
-  delete (QTextDocumentWriter*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

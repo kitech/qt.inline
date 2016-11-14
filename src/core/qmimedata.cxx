@@ -1,291 +1,152 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qmimedata.h
-// dst-file: /src/core/qmimedata.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qmimedata.h
 #include <qmimedata.h>
+#include <QtCore>
 
-
-#include <qvariant.h>
-#include <qstring.h>
-#include <qlist.h>
-#include <qdatastream.h>
-#include <qbytearray.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmimedata_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qmimedata.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QMimeData_Class_Size()
-{
-  return sizeof(QMimeData);
+void C_ZNK9QMimeData10metaObjectEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 80, column 10>
-//   // proto:  void QMimeData::setData(const QString & mimetype, const QByteArray & data);
-// _ZN9QMimeData7setDataERK7QStringRK10QByteArray setData(const class QString &, const class QByteArray &)
+// /usr/include/qt/QtCore/qmimedata.h:56
+// void QMimeData()
 extern "C"
-void
-C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *qthis,
-const QString* arg1,
-const QByteArray* arg2) {
-  ((QMimeData*)qthis)->setData(*((const QString*)arg1),
-*((const QByteArray*)arg2));
+void* C_ZN9QMimeDataC1Ev() {
+  return new QMimeData();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 75, column 14>
-//   // proto:  QVariant QMimeData::colorData();
-// _ZNK9QMimeData9colorDataEv colorData()
+// virtual
+// /usr/include/qt/QtCore/qmimedata.h:57
+// void ~QMimeData()
 extern "C"
-QVariant*
-C_ZNK9QMimeData9colorDataEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->colorData();
-  return new QVariant(ret); // 5
+void C_ZN9QMimeDataD1Ev(void *this_) {
+  delete (QMimeData*)(this_);
 }
-//   // proto:  void QMimeData::~QMimeData();
+// /usr/include/qt/QtCore/qmimedata.h:59
+// QList<QUrl> urls()
 extern "C"
-void C_ZN9QMimeDataD2Ev(void *qthis) {
-  delete (QMimeData*)qthis;
+void C_ZNK9QMimeData4urlsEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->urls();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 69, column 10>
-//   // proto:  bool QMimeData::hasHtml();
-// _ZNK9QMimeData7hasHtmlEv hasHtml()
+// /usr/include/qt/QtCore/qmimedata.h:60
+// void setUrls(const QList<class QUrl> &)
 extern "C"
-bool
-C_ZNK9QMimeData7hasHtmlEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->hasHtml();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
+  ((QMimeData*)this_)->setUrls(urls);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 71, column 14>
-//   // proto:  QVariant QMimeData::imageData();
-// _ZNK9QMimeData9imageDataEv imageData()
+// /usr/include/qt/QtCore/qmimedata.h:61
+// bool hasUrls()
 extern "C"
-QVariant*
-C_ZNK9QMimeData9imageDataEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->imageData();
-  return new QVariant(ret); // 5
+void C_ZNK9QMimeData7hasUrlsEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->hasUrls();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 83, column 18>
-//   // proto:  bool QMimeData::hasFormat(const QString & mimetype);
-// _ZNK9QMimeData9hasFormatERK7QString hasFormat(const class QString &)
+// /usr/include/qt/QtCore/qmimedata.h:63
+// QString text()
 extern "C"
-bool
-C_ZNK9QMimeData9hasFormatERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeData*)qthis)->hasFormat(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QMimeData4textEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->text();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 64, column 10>
-//   // proto:  void QMimeData::setText(const QString & text);
-// _ZN9QMimeData7setTextERK7QString setText(const class QString &)
+// /usr/include/qt/QtCore/qmimedata.h:64
+// void setText(const class QString &)
 extern "C"
-void
-C_ZN9QMimeData7setTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QMimeData*)qthis)->setText(*((const QString*)arg1));
+void C_ZN9QMimeData7setTextERK7QString(void *this_, const QString & text) {
+  ((QMimeData*)this_)->setText(text);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 86, column 10>
-//   // proto:  void QMimeData::clear();
-// _ZN9QMimeData5clearEv clear()
+// /usr/include/qt/QtCore/qmimedata.h:65
+// bool hasText()
 extern "C"
-void
-C_ZN9QMimeData5clearEv(void *qthis) {
-  ((QMimeData*)qthis)->clear();
+void C_ZNK9QMimeData7hasTextEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->hasText();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 63, column 13>
-//   // proto:  QString QMimeData::text();
-// _ZNK9QMimeData4textEv text()
+// /usr/include/qt/QtCore/qmimedata.h:67
+// QString html()
 extern "C"
-QString*
-C_ZNK9QMimeData4textEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->text();
-  return new QString(ret); // 5
+void C_ZNK9QMimeData4htmlEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->html();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 68, column 10>
-//   // proto:  void QMimeData::setHtml(const QString & html);
-// _ZN9QMimeData7setHtmlERK7QString setHtml(const class QString &)
+// /usr/include/qt/QtCore/qmimedata.h:68
+// void setHtml(const class QString &)
 extern "C"
-void
-C_ZN9QMimeData7setHtmlERK7QString(void *qthis,
-const QString* arg1) {
-  ((QMimeData*)qthis)->setHtml(*((const QString*)arg1));
+void C_ZN9QMimeData7setHtmlERK7QString(void *this_, const QString & html) {
+  ((QMimeData*)this_)->setHtml(html);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 60, column 10>
-//   // proto:  void QMimeData::setUrls(const QList<QUrl> & urls);
-// _ZN9QMimeData7setUrlsERK5QListI4QUrlE setUrls(const QList<class QUrl> &)
+// /usr/include/qt/QtCore/qmimedata.h:69
+// bool hasHtml()
 extern "C"
-void
-C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *qthis,
-const QList<QUrl>* arg1) {
-  ((QMimeData*)qthis)->setUrls(*((const QList<QUrl>*)arg1));
+void C_ZNK9QMimeData7hasHtmlEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->hasHtml();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 72, column 10>
-//   // proto:  void QMimeData::setImageData(const QVariant & image);
-// _ZN9QMimeData12setImageDataERK8QVariant setImageData(const class QVariant &)
+// /usr/include/qt/QtCore/qmimedata.h:71
+// QVariant imageData()
 extern "C"
-void
-C_ZN9QMimeData12setImageDataERK8QVariant(void *qthis,
-const QVariant* arg1) {
-  ((QMimeData*)qthis)->setImageData(*((const QVariant*)arg1));
+void C_ZNK9QMimeData9imageDataEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->imageData();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 61, column 10>
-//   // proto:  bool QMimeData::hasUrls();
-// _ZNK9QMimeData7hasUrlsEv hasUrls()
+// /usr/include/qt/QtCore/qmimedata.h:72
+// void setImageData(const class QVariant &)
 extern "C"
-bool
-C_ZNK9QMimeData7hasUrlsEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->hasUrls();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QMimeData12setImageDataERK8QVariant(void *this_, const QVariant & image) {
+  ((QMimeData*)this_)->setImageData(image);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 77, column 10>
-//   // proto:  bool QMimeData::hasColor();
-// _ZNK9QMimeData8hasColorEv hasColor()
+// /usr/include/qt/QtCore/qmimedata.h:73
+// bool hasImage()
 extern "C"
-bool
-C_ZNK9QMimeData8hasColorEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->hasColor();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QMimeData8hasImageEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->hasImage();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 81, column 10>
-//   // proto:  void QMimeData::removeFormat(const QString & mimetype);
-// _ZN9QMimeData12removeFormatERK7QString removeFormat(const class QString &)
+// /usr/include/qt/QtCore/qmimedata.h:75
+// QVariant colorData()
 extern "C"
-void
-C_ZN9QMimeData12removeFormatERK7QString(void *qthis,
-const QString* arg1) {
-  ((QMimeData*)qthis)->removeFormat(*((const QString*)arg1));
+void C_ZNK9QMimeData9colorDataEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->colorData();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 67, column 13>
-//   // proto:  QString QMimeData::html();
-// _ZNK9QMimeData4htmlEv html()
+// /usr/include/qt/QtCore/qmimedata.h:76
+// void setColorData(const class QVariant &)
 extern "C"
-QString*
-C_ZNK9QMimeData4htmlEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->html();
-  return new QString(ret); // 5
+void C_ZN9QMimeData12setColorDataERK8QVariant(void *this_, const QVariant & color) {
+  ((QMimeData*)this_)->setColorData(color);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 56, column 5>
-//   // proto:  void QMimeData::QMimeData();
+// /usr/include/qt/QtCore/qmimedata.h:77
+// bool hasColor()
 extern "C"
-QMimeData*
-C_ZN9QMimeDataC2Ev() {
-  auto ret = new QMimeData();
-  return ret;
+void C_ZNK9QMimeData8hasColorEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->hasColor();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 59, column 17>
-//   // proto:  QList<QUrl> QMimeData::urls();
-// _ZNK9QMimeData4urlsEv urls()
+// /usr/include/qt/QtCore/qmimedata.h:79
+// QByteArray data(const class QString &)
 extern "C"
-QList<QUrl>*
-C_ZNK9QMimeData4urlsEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->urls();
-  return new QList<QUrl>(ret); // 5
+void C_ZNK9QMimeData4dataERK7QString(void *this_, const QString & mimetype) {
+  /*return*/ ((QMimeData*)this_)->data(mimetype);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 76, column 10>
-//   // proto:  void QMimeData::setColorData(const QVariant & color);
-// _ZN9QMimeData12setColorDataERK8QVariant setColorData(const class QVariant &)
+// /usr/include/qt/QtCore/qmimedata.h:80
+// void setData(const class QString &, const class QByteArray &)
 extern "C"
-void
-C_ZN9QMimeData12setColorDataERK8QVariant(void *qthis,
-const QVariant* arg1) {
-  ((QMimeData*)qthis)->setColorData(*((const QVariant*)arg1));
+void C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *this_, const QString & mimetype, const QByteArray & data) {
+  ((QMimeData*)this_)->setData(mimetype, data);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 65, column 10>
-//   // proto:  bool QMimeData::hasText();
-// _ZNK9QMimeData7hasTextEv hasText()
+// /usr/include/qt/QtCore/qmimedata.h:81
+// void removeFormat(const class QString &)
 extern "C"
-bool
-C_ZNK9QMimeData7hasTextEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->hasText();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QMimeData12removeFormatERK7QString(void *this_, const QString & mimetype) {
+  ((QMimeData*)this_)->removeFormat(mimetype);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 54, column 5>
-//   // proto:  const QMetaObject * QMimeData::metaObject();
-// _ZNK9QMimeData10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtCore/qmimedata.h:83
+// bool hasFormat(const class QString &)
 extern "C"
-void*
-C_ZNK9QMimeData10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK9QMimeData9hasFormatERK7QString(void *this_, const QString & mimetype) {
+  /*return*/ ((QMimeData*)this_)->hasFormat(mimetype);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 79, column 16>
-//   // proto:  QByteArray QMimeData::data(const QString & mimetype);
-// _ZNK9QMimeData4dataERK7QString data(const class QString &)
+// virtual
+// /usr/include/qt/QtCore/qmimedata.h:84
+// QStringList formats()
 extern "C"
-QByteArray*
-C_ZNK9QMimeData4dataERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeData*)qthis)->data(*((const QString*)arg1));
-  return new QByteArray(ret); // 5
+void C_ZNK9QMimeData7formatsEv(void *this_) {
+  /*return*/ ((QMimeData*)this_)->formats();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 84, column 25>
-//   // proto:  QStringList QMimeData::formats();
-// _ZNK9QMimeData7formatsEv formats()
+// /usr/include/qt/QtCore/qmimedata.h:86
+// void clear()
 extern "C"
-QStringList*
-C_ZNK9QMimeData7formatsEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->formats();
-  return new QStringList(ret); // 5
+void C_ZN9QMimeData5clearEv(void *this_) {
+  ((QMimeData*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedata.h', line 73, column 10>
-//   // proto:  bool QMimeData::hasImage();
-// _ZNK9QMimeData8hasImageEv hasImage()
-extern "C"
-bool
-C_ZNK9QMimeData8hasImageEv(void *qthis) {
-  auto ret =
-  ((QMimeData*)qthis)->hasImage();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// QMimeData_SlotProxy here
-class QMimeData_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QMimeData_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qmimedata.moc"
-
-extern "C" {
-  QMimeData_SlotProxy* QMimeData_SlotProxy_new()
-  {
-    return new QMimeData_SlotProxy();
-  }
-};
-
-// <= body block end
-

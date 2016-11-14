@@ -1,133 +1,54 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qkeyeventtransition.h
-// dst-file: /src/widgets/qkeyeventtransition.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #include <qkeyeventtransition.h>
+#include <QtWidgets>
 
-
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qkeyeventtransition_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QKeyEventTransition_Class_Size()
-{
-  return sizeof(QKeyEventTransition);
+void C_ZNK19QKeyEventTransition10metaObjectEv(void *this_) {
+  /*return*/ ((QKeyEventTransition*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 63, column 10>
-//   // proto:  void QKeyEventTransition::setKey(int key);
-// _ZN19QKeyEventTransition6setKeyEi setKey(int)
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:57
+// void QKeyEventTransition(class QState *)
 extern "C"
-void
-C_ZN19QKeyEventTransition6setKeyEi(void *qthis,
-int arg1) {
-  ((QKeyEventTransition*)qthis)->setKey(arg1);
+void* C_ZN19QKeyEventTransitionC1EP6QState(QState * sourceState) {
+  return new QKeyEventTransition(sourceState);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 53, column 5>
-//   // proto:  const QMetaObject * QKeyEventTransition::metaObject();
-// _ZNK19QKeyEventTransition10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:58
+// void QKeyEventTransition(class QObject *, class QEvent::Type, int, class QState *)
 extern "C"
-void*
-C_ZNK19QKeyEventTransition10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QKeyEventTransition*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN19QKeyEventTransitionC1EP7QObjectN6QEvent4TypeEiP6QState(QObject * object, QEvent::Type type, int key, QState * sourceState) {
+  return new QKeyEventTransition(object, type, key, sourceState);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 66, column 10>
-//   // proto:  void QKeyEventTransition::setModifierMask(Qt::KeyboardModifiers modifiers);
-// _ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE setModifierMask(Qt::KeyboardModifiers)
+// virtual
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:60
+// void ~QKeyEventTransition()
 extern "C"
-void
-C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *qthis,
-Qt::KeyboardModifiers* arg1) {
-  ((QKeyEventTransition*)qthis)->setModifierMask(*((Qt::KeyboardModifiers*)arg1));
+void C_ZN19QKeyEventTransitionD1Ev(void *this_) {
+  delete (QKeyEventTransition*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 65, column 27>
-//   // proto:  Qt::KeyboardModifiers QKeyEventTransition::modifierMask();
-// _ZNK19QKeyEventTransition12modifierMaskEv modifierMask()
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:62
+// int key()
 extern "C"
-QFlags<Qt::KeyboardModifier>*
-C_ZNK19QKeyEventTransition12modifierMaskEv(void *qthis) {
-  auto ret =
-  ((QKeyEventTransition*)qthis)->modifierMask();
-  return new QFlags<Qt::KeyboardModifier>(ret); // 5
+void C_ZNK19QKeyEventTransition3keyEv(void *this_) {
+  /*return*/ ((QKeyEventTransition*)this_)->key();
 }
-//   // proto:  void QKeyEventTransition::~QKeyEventTransition();
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:63
+// void setKey(int)
 extern "C"
-void C_ZN19QKeyEventTransitionD2Ev(void *qthis) {
-  delete (QKeyEventTransition*)qthis;
+void C_ZN19QKeyEventTransition6setKeyEi(void *this_, int key) {
+  ((QKeyEventTransition*)this_)->setKey(key);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 62, column 9>
-//   // proto:  int QKeyEventTransition::key();
-// _ZNK19QKeyEventTransition3keyEv key()
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:65
+// Qt::KeyboardModifiers modifierMask()
 extern "C"
-int
-C_ZNK19QKeyEventTransition3keyEv(void *qthis) {
-  auto ret =
-  ((QKeyEventTransition*)qthis)->key();
-  return ret; // 0 TypeKind.INT
+void C_ZNK19QKeyEventTransition12modifierMaskEv(void *this_) {
+  /*return*/ ((QKeyEventTransition*)this_)->modifierMask();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 58, column 5>
-//   // proto:  void QKeyEventTransition::QKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sourceState);
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:66
+// void setModifierMask(Qt::KeyboardModifiers)
 extern "C"
-QKeyEventTransition*
-C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * arg1,
-QEvent::Type* arg2,
-int arg3,
-QState * arg4) {
-  auto ret = new QKeyEventTransition(arg1,
-*((QEvent::Type*)arg2),
-arg3,
-arg4);
-  return ret;
+void C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QKeyEventTransition*)this_)->setModifierMask(modifiers);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qkeyeventtransition.h', line 57, column 5>
-//   // proto:  void QKeyEventTransition::QKeyEventTransition(QState * sourceState);
-extern "C"
-QKeyEventTransition*
-C_ZN19QKeyEventTransitionC2EP6QState(QState * arg1) {
-  auto ret = new QKeyEventTransition(arg1);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QKeyEventTransition_SlotProxy here
-class QKeyEventTransition_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QKeyEventTransition_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qkeyeventtransition.moc"
-
-extern "C" {
-  QKeyEventTransition_SlotProxy* QKeyEventTransition_SlotProxy_new()
-  {
-    return new QKeyEventTransition_SlotProxy();
-  }
-};
-
-// <= body block end
-

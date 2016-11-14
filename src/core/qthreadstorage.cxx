@@ -1,81 +1,29 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qthreadstorage.h
-// dst-file: /src/core/qthreadstorage.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qthreadstorage.h
 #include <qthreadstorage.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qthreadstorage_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qthreadstorage.h:54
+// void ~QThreadStorageData()
 extern "C"
-int QThreadStorageData_Class_Size()
-{
-  return sizeof(QThreadStorageData);
+void C_ZN18QThreadStorageDataD1Ev(void *this_) {
+  delete (QThreadStorageData*)(this_);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 57, column 12>
-//   // proto:  void ** QThreadStorageData::set(void * p);
-// _ZN18QThreadStorageData3setEPv set(void *)
+// /usr/include/qt/QtCore/qthreadstorage.h:56
+// void ** get()
 extern "C"
-void*
-C_ZN18QThreadStorageData3setEPv(void *qthis,
-void * arg1) {
-  auto ret =
-  ((QThreadStorageData*)qthis)->set(arg1);
-  return (void*)ret;
+void C_ZNK18QThreadStorageData3getEv(void *this_) {
+  /*return*/ ((QThreadStorageData*)this_)->get();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 56, column 12>
-//   // proto:  void ** QThreadStorageData::get();
-// _ZNK18QThreadStorageData3getEv get()
+// /usr/include/qt/QtCore/qthreadstorage.h:57
+// void ** set(void *)
 extern "C"
-void*
-C_ZNK18QThreadStorageData3getEv(void *qthis) {
-  auto ret =
-  ((QThreadStorageData*)qthis)->get();
-  return (void*)ret;
+void C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
+  /*return*/ ((QThreadStorageData*)this_)->set(p);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 59, column 17>
-//   // proto: static void QThreadStorageData::finish(void ** );
-// _ZN18QThreadStorageData6finishEPPv finish(void **)
+// static
+// /usr/include/qt/QtCore/qthreadstorage.h:59
+// void finish(void **)
 extern "C"
-void
-C_ZN18QThreadStorageData6finishEPPv(void ** arg1) {
-  QThreadStorageData::finish(arg1);
+void C_ZN18QThreadStorageData6finishEPPv(void ** a0) {
+  QThreadStorageData::finish(a0);
 }
-//   // proto:  void QThreadStorageData::~QThreadStorageData();
-extern "C"
-void C_ZN18QThreadStorageDataD2Ev(void *qthis) {
-  delete (QThreadStorageData*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadstorage.h', line 53, column 14>
-//   // proto:  void QThreadStorageData::QThreadStorageData(void (*)(void *) func);
-extern "C"
-QThreadStorageData*
-C_ZN18QThreadStorageDataC2EPFvPvE(void (*arg1)(void *)) {
-  auto ret = new QThreadStorageData(arg1);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

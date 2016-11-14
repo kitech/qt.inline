@@ -1,358 +1,180 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qgraphicsitemanimation.h
-// dst-file: /src/widgets/qgraphicsitemanimation.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #include <qgraphicsitemanimation.h>
+#include <QtWidgets>
 
-
-#include <qglobal.h>
-#include <qlist.h>
-#include <qfontdatabase.h>
-#include <qpoint.h>
-#include <qmatrix.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qgraphicsitemanimation_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// const QMetaObject * metaObject()
 extern "C"
-int QGraphicsItemAnimation_Class_Size()
-{
-  return sizeof(QGraphicsItemAnimation);
+void C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 72, column 10>
-//   // proto:  void QGraphicsItemAnimation::setPosAt(qreal step, const QPointF & pos);
-// _ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF setPosAt(qreal, const class QPointF &)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:61
+// void QGraphicsItemAnimation(class QObject *)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *qthis,
-qreal arg1,
-const QPointF* arg2) {
-  ((QGraphicsItemAnimation*)qthis)->setPosAt(arg1,
-*((const QPointF*)arg2));
+void* C_ZN22QGraphicsItemAnimationC1EP7QObject(QObject * parent) {
+  return new QGraphicsItemAnimation(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 80, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::xTranslationAt(qreal step);
-// _ZNK22QGraphicsItemAnimation14xTranslationAtEd xTranslationAt(qreal)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
+// void ~QGraphicsItemAnimation()
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation14xTranslationAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->xTranslationAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN22QGraphicsItemAnimationD1Ev(void *this_) {
+  delete (QGraphicsItemAnimation*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 78, column 10>
-//   // proto:  void QGraphicsItemAnimation::setRotationAt(qreal step, qreal angle);
-// _ZN22QGraphicsItemAnimation13setRotationAtEdd setRotationAt(qreal, qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:64
+// QGraphicsItem * item()
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation13setRotationAtEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  ((QGraphicsItemAnimation*)qthis)->setRotationAt(arg1,
-arg2);
+void C_ZNK22QGraphicsItemAnimation4itemEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->item();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 71, column 35>
-//   // proto:  QList<QPair<qreal, QPointF> > QGraphicsItemAnimation::posList();
-// _ZNK22QGraphicsItemAnimation7posListEv posList()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:65
+// void setItem(class QGraphicsItem *)
 extern "C"
-QList<QPair<double, QPointF> >*
-C_ZNK22QGraphicsItemAnimation7posListEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->posList();
-  return new QList<QPair<double, QPointF> >(ret); // 5
+void C_ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
+  ((QGraphicsItemAnimation*)this_)->setItem(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 85, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::verticalScaleAt(qreal step);
-// _ZNK22QGraphicsItemAnimation15verticalScaleAtEd verticalScaleAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:67
+// QTimeLine * timeLine()
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation15verticalScaleAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->verticalScaleAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK22QGraphicsItemAnimation8timeLineEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->timeLine();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 70, column 13>
-//   // proto:  QPointF QGraphicsItemAnimation::posAt(qreal step);
-// _ZNK22QGraphicsItemAnimation5posAtEd posAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:68
+// void setTimeLine(class QTimeLine *)
 extern "C"
-QPointF*
-C_ZNK22QGraphicsItemAnimation5posAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->posAt(arg1);
-  return new QPointF(ret); // 5
+void C_ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine(void *this_, QTimeLine * timeLine) {
+  ((QGraphicsItemAnimation*)this_)->setTimeLine(timeLine);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 91, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::horizontalShearAt(qreal step);
-// _ZNK22QGraphicsItemAnimation17horizontalShearAtEd horizontalShearAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:70
+// QPointF posAt(qreal)
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation17horizontalShearAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->horizontalShearAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK22QGraphicsItemAnimation5posAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->posAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 81, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::yTranslationAt(qreal step);
-// _ZNK22QGraphicsItemAnimation14yTranslationAtEd yTranslationAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:71
+// QList<QPair<qreal, QPointF> > posList()
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation14yTranslationAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->yTranslationAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK22QGraphicsItemAnimation7posListEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->posList();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 74, column 13>
-//   // proto:  QMatrix QGraphicsItemAnimation::matrixAt(qreal step);
-// _ZNK22QGraphicsItemAnimation8matrixAtEd matrixAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:72
+// void setPosAt(qreal, const class QPointF &)
 extern "C"
-QMatrix*
-C_ZNK22QGraphicsItemAnimation8matrixAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->matrixAt(arg1);
-  return new QMatrix(ret); // 5
+void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, const QPointF & pos) {
+  ((QGraphicsItemAnimation*)this_)->setPosAt(step, pos);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 64, column 20>
-//   // proto:  QGraphicsItem * QGraphicsItemAnimation::item();
-// _ZNK22QGraphicsItemAnimation4itemEv item()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:74
+// QMatrix matrixAt(qreal)
 extern "C"
-void*
-C_ZNK22QGraphicsItemAnimation4itemEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->item();
-  return (void*)ret;
+void C_ZNK22QGraphicsItemAnimation8matrixAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->matrixAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 61, column 5>
-//   // proto:  void QGraphicsItemAnimation::QGraphicsItemAnimation(QObject * parent);
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:76
+// qreal rotationAt(qreal)
 extern "C"
-QGraphicsItemAnimation*
-C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * arg1) {
-  auto ret = new QGraphicsItemAnimation(arg1);
-  return ret;
+void C_ZNK22QGraphicsItemAnimation10rotationAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->rotationAt(step);
 }
-//   // proto:  void QGraphicsItemAnimation::~QGraphicsItemAnimation();
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:77
+// QList<QPair<qreal, qreal> > rotationList()
 extern "C"
-void C_ZN22QGraphicsItemAnimationD2Ev(void *qthis) {
-  delete (QGraphicsItemAnimation*)qthis;
+void C_ZNK22QGraphicsItemAnimation12rotationListEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->rotationList();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 88, column 10>
-//   // proto:  void QGraphicsItemAnimation::setScaleAt(qreal step, qreal sx, qreal sy);
-// _ZN22QGraphicsItemAnimation10setScaleAtEddd setScaleAt(qreal, qreal, qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:78
+// void setRotationAt(qreal, qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation10setScaleAtEddd(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal arg3) {
-  ((QGraphicsItemAnimation*)qthis)->setScaleAt(arg1,
-arg2,
-arg3);
+void C_ZN22QGraphicsItemAnimation13setRotationAtEdd(void *this_, qreal step, qreal angle) {
+  ((QGraphicsItemAnimation*)this_)->setRotationAt(step, angle);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 83, column 10>
-//   // proto:  void QGraphicsItemAnimation::setTranslationAt(qreal step, qreal dx, qreal dy);
-// _ZN22QGraphicsItemAnimation16setTranslationAtEddd setTranslationAt(qreal, qreal, qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:80
+// qreal xTranslationAt(qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation16setTranslationAtEddd(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal arg3) {
-  ((QGraphicsItemAnimation*)qthis)->setTranslationAt(arg1,
-arg2,
-arg3);
+void C_ZNK22QGraphicsItemAnimation14xTranslationAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->xTranslationAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 93, column 10>
-//   // proto:  void QGraphicsItemAnimation::setShearAt(qreal step, qreal sh, qreal sv);
-// _ZN22QGraphicsItemAnimation10setShearAtEddd setShearAt(qreal, qreal, qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:81
+// qreal yTranslationAt(qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation10setShearAtEddd(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal arg3) {
-  ((QGraphicsItemAnimation*)qthis)->setShearAt(arg1,
-arg2,
-arg3);
+void C_ZNK22QGraphicsItemAnimation14yTranslationAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->yTranslationAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 76, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::rotationAt(qreal step);
-// _ZNK22QGraphicsItemAnimation10rotationAtEd rotationAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:82
+// QList<QPair<qreal, QPointF> > translationList()
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation10rotationAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->rotationAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK22QGraphicsItemAnimation15translationListEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->translationList();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 59, column 5>
-//   // proto:  const QMetaObject * QGraphicsItemAnimation::metaObject();
-// _ZNK22QGraphicsItemAnimation10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:83
+// void setTranslationAt(qreal, qreal, qreal)
 extern "C"
-void*
-C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN22QGraphicsItemAnimation16setTranslationAtEddd(void *this_, qreal step, qreal dx, qreal dy) {
+  ((QGraphicsItemAnimation*)this_)->setTranslationAt(step, dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 87, column 35>
-//   // proto:  QList<QPair<qreal, QPointF> > QGraphicsItemAnimation::scaleList();
-// _ZNK22QGraphicsItemAnimation9scaleListEv scaleList()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:85
+// qreal verticalScaleAt(qreal)
 extern "C"
-QList<QPair<double, QPointF> >*
-C_ZNK22QGraphicsItemAnimation9scaleListEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->scaleList();
-  return new QList<QPair<double, QPointF> >(ret); // 5
+void C_ZNK22QGraphicsItemAnimation15verticalScaleAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->verticalScaleAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 77, column 33>
-//   // proto:  QList<QPair<qreal, qreal> > QGraphicsItemAnimation::rotationList();
-// _ZNK22QGraphicsItemAnimation12rotationListEv rotationList()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:86
+// qreal horizontalScaleAt(qreal)
 extern "C"
-QList<QPair<double, double> >*
-C_ZNK22QGraphicsItemAnimation12rotationListEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->rotationList();
-  return new QList<QPair<double, double> >(ret); // 5
+void C_ZNK22QGraphicsItemAnimation17horizontalScaleAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->horizontalScaleAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 99, column 10>
-//   // proto:  void QGraphicsItemAnimation::reset();
-// _ZN22QGraphicsItemAnimation5resetEv reset()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:87
+// QList<QPair<qreal, QPointF> > scaleList()
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation5resetEv(void *qthis) {
-  ((QGraphicsItemAnimation*)qthis)->reset();
+void C_ZNK22QGraphicsItemAnimation9scaleListEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->scaleList();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 68, column 10>
-//   // proto:  void QGraphicsItemAnimation::setTimeLine(QTimeLine * timeLine);
-// _ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine setTimeLine(class QTimeLine *)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:88
+// void setScaleAt(qreal, qreal, qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine(void *qthis,
-QTimeLine * arg1) {
-  ((QGraphicsItemAnimation*)qthis)->setTimeLine(arg1);
+void C_ZN22QGraphicsItemAnimation10setScaleAtEddd(void *this_, qreal step, qreal sx, qreal sy) {
+  ((QGraphicsItemAnimation*)this_)->setScaleAt(step, sx, sy);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 92, column 35>
-//   // proto:  QList<QPair<qreal, QPointF> > QGraphicsItemAnimation::shearList();
-// _ZNK22QGraphicsItemAnimation9shearListEv shearList()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:90
+// qreal verticalShearAt(qreal)
 extern "C"
-QList<QPair<double, QPointF> >*
-C_ZNK22QGraphicsItemAnimation9shearListEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->shearList();
-  return new QList<QPair<double, QPointF> >(ret); // 5
+void C_ZNK22QGraphicsItemAnimation15verticalShearAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->verticalShearAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 95, column 10>
-//   // proto:  void QGraphicsItemAnimation::clear();
-// _ZN22QGraphicsItemAnimation5clearEv clear()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:91
+// qreal horizontalShearAt(qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation5clearEv(void *qthis) {
-  ((QGraphicsItemAnimation*)qthis)->clear();
+void C_ZNK22QGraphicsItemAnimation17horizontalShearAtEd(void *this_, qreal step) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->horizontalShearAt(step);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 82, column 35>
-//   // proto:  QList<QPair<qreal, QPointF> > QGraphicsItemAnimation::translationList();
-// _ZNK22QGraphicsItemAnimation15translationListEv translationList()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:92
+// QList<QPair<qreal, QPointF> > shearList()
 extern "C"
-QList<QPair<double, QPointF> >*
-C_ZNK22QGraphicsItemAnimation15translationListEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->translationList();
-  return new QList<QPair<double, QPointF> >(ret); // 5
+void C_ZNK22QGraphicsItemAnimation9shearListEv(void *this_) {
+  /*return*/ ((QGraphicsItemAnimation*)this_)->shearList();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 65, column 10>
-//   // proto:  void QGraphicsItemAnimation::setItem(QGraphicsItem * item);
-// _ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem setItem(class QGraphicsItem *)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:93
+// void setShearAt(qreal, qreal, qreal)
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem(void *qthis,
-QGraphicsItem * arg1) {
-  ((QGraphicsItemAnimation*)qthis)->setItem(arg1);
+void C_ZN22QGraphicsItemAnimation10setShearAtEddd(void *this_, qreal step, qreal sh, qreal sv) {
+  ((QGraphicsItemAnimation*)this_)->setShearAt(step, sh, sv);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 98, column 10>
-//   // proto:  void QGraphicsItemAnimation::setStep(qreal x);
-// _ZN22QGraphicsItemAnimation7setStepEd setStep(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:95
+// void clear()
 extern "C"
-void
-C_ZN22QGraphicsItemAnimation7setStepEd(void *qthis,
-qreal arg1) {
-  ((QGraphicsItemAnimation*)qthis)->setStep(arg1);
+void C_ZN22QGraphicsItemAnimation5clearEv(void *this_) {
+  ((QGraphicsItemAnimation*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 67, column 16>
-//   // proto:  QTimeLine * QGraphicsItemAnimation::timeLine();
-// _ZNK22QGraphicsItemAnimation8timeLineEv timeLine()
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:98
+// void setStep(qreal)
 extern "C"
-void*
-C_ZNK22QGraphicsItemAnimation8timeLineEv(void *qthis) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->timeLine();
-  return (void*)ret;
+void C_ZN22QGraphicsItemAnimation7setStepEd(void *this_, qreal x) {
+  ((QGraphicsItemAnimation*)this_)->setStep(x);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 86, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::horizontalScaleAt(qreal step);
-// _ZNK22QGraphicsItemAnimation17horizontalScaleAtEd horizontalScaleAt(qreal)
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:99
+// void reset()
 extern "C"
-double
-C_ZNK22QGraphicsItemAnimation17horizontalScaleAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->horizontalScaleAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN22QGraphicsItemAnimation5resetEv(void *this_) {
+  ((QGraphicsItemAnimation*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicsitemanimation.h', line 90, column 11>
-//   // proto:  qreal QGraphicsItemAnimation::verticalShearAt(qreal step);
-// _ZNK22QGraphicsItemAnimation15verticalShearAtEd verticalShearAt(qreal)
-extern "C"
-double
-C_ZNK22QGraphicsItemAnimation15verticalShearAtEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QGraphicsItemAnimation*)qthis)->verticalShearAt(arg1);
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <= ext block end
-
-// body block begin =>
-// QGraphicsItemAnimation_SlotProxy here
-class QGraphicsItemAnimation_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QGraphicsItemAnimation_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qgraphicsitemanimation.moc"
-
-extern "C" {
-  QGraphicsItemAnimation_SlotProxy* QGraphicsItemAnimation_SlotProxy_new()
-  {
-    return new QGraphicsItemAnimation_SlotProxy();
-  }
-};
-
-// <= body block end
-

@@ -1,110 +1,43 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qerrormessage.h
-// dst-file: /src/widgets/qerrormessage.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qerrormessage.h
 #include <qerrormessage.h>
+#include <QtWidgets>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qerrormessage_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qerrormessage.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QErrorMessage_Class_Size()
-{
-  return sizeof(QErrorMessage);
+void C_ZNK13QErrorMessage10metaObjectEv(void *this_) {
+  /*return*/ ((QErrorMessage*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 54, column 5>
-//   // proto:  const QMetaObject * QErrorMessage::metaObject();
-// _ZNK13QErrorMessage10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qerrormessage.h:57
+// void QErrorMessage(class QWidget *)
 extern "C"
-void*
-C_ZNK13QErrorMessage10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QErrorMessage*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN13QErrorMessageC1EP7QWidget(QWidget * parent) {
+  return new QErrorMessage(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 57, column 14>
-//   // proto:  void QErrorMessage::QErrorMessage(QWidget * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qerrormessage.h:58
+// void ~QErrorMessage()
 extern "C"
-QErrorMessage*
-C_ZN13QErrorMessageC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QErrorMessage(arg1);
-  return ret;
+void C_ZN13QErrorMessageD1Ev(void *this_) {
+  delete (QErrorMessage*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 60, column 28>
-//   // proto: static QErrorMessage * QErrorMessage::qtHandler();
-// _ZN13QErrorMessage9qtHandlerEv qtHandler()
+// static
+// /usr/include/qt/QtWidgets/qerrormessage.h:60
+// QErrorMessage * qtHandler()
 extern "C"
-void*
-C_ZN13QErrorMessage9qtHandlerEv() {
-  auto ret =
-  QErrorMessage::qtHandler();
-  return (void*)ret;
+void C_ZN13QErrorMessage9qtHandlerEv() {
+  /*return*/ QErrorMessage::qtHandler();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 64, column 10>
-//   // proto:  void QErrorMessage::showMessage(const QString & message, const QString & type);
-// _ZN13QErrorMessage11showMessageERK7QStringS2_ showMessage(const class QString &, const class QString &)
+// /usr/include/qt/QtWidgets/qerrormessage.h:63
+// void showMessage(const class QString &)
 extern "C"
-void
-C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  ((QErrorMessage*)qthis)->showMessage(*((const QString*)arg1),
-*((const QString*)arg2));
+void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, const QString & message) {
+  ((QErrorMessage*)this_)->showMessage(message);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qerrormessage.h', line 63, column 10>
-//   // proto:  void QErrorMessage::showMessage(const QString & message);
-// _ZN13QErrorMessage11showMessageERK7QString showMessage(const class QString &)
+// /usr/include/qt/QtWidgets/qerrormessage.h:64
+// void showMessage(const class QString &, const class QString &)
 extern "C"
-void
-C_ZN13QErrorMessage11showMessageERK7QString(void *qthis,
-const QString* arg1) {
-  ((QErrorMessage*)qthis)->showMessage(*((const QString*)arg1));
+void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, const QString & message, const QString & type) {
+  ((QErrorMessage*)this_)->showMessage(message, type);
 }
-//   // proto:  void QErrorMessage::~QErrorMessage();
-extern "C"
-void C_ZN13QErrorMessageD2Ev(void *qthis) {
-  delete (QErrorMessage*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// QErrorMessage_SlotProxy here
-class QErrorMessage_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QErrorMessage_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qerrormessage.moc"
-
-extern "C" {
-  QErrorMessage_SlotProxy* QErrorMessage_SlotProxy_new()
-  {
-    return new QErrorMessage_SlotProxy();
-  }
-};
-
-// <= body block end
-

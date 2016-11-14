@@ -1,364 +1,187 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qdatawidgetmapper.h
-// dst-file: /src/widgets/qdatawidgetmapper.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #include <qdatawidgetmapper.h>
+#include <QtWidgets>
 
-
-#include <qabstractitemmodel.h>
-#include <qnamespace.h>
-#include <qbytearray.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qdatawidgetmapper_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// const QMetaObject * metaObject()
 extern "C"
-int QDataWidgetMapper_Class_Size()
-{
-  return sizeof(QDataWidgetMapper);
+void C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 92, column 9>
-//   // proto:  int QDataWidgetMapper::currentIndex();
-// _ZNK17QDataWidgetMapper12currentIndexEv currentIndex()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
+// void QDataWidgetMapper(class QObject *)
 extern "C"
-int
-C_ZNK17QDataWidgetMapper12currentIndexEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->currentIndex();
-  return ret; // 0 TypeKind.INT
+void* C_ZN17QDataWidgetMapperC1EP7QObject(QObject * parent) {
+  return new QDataWidgetMapper(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 85, column 10>
-//   // proto:  void QDataWidgetMapper::addMapping(QWidget * widget, int section, const QByteArray & propertyName);
-// _ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray addMapping(class QWidget *, int, const class QByteArray &)
+// virtual
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:65
+// void ~QDataWidgetMapper()
 extern "C"
-void
-C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *qthis,
-QWidget * arg1,
-int arg2,
-const QByteArray* arg3) {
-  ((QDataWidgetMapper*)qthis)->addMapping(arg1,
-arg2,
-*((const QByteArray*)arg3));
+void C_ZN17QDataWidgetMapperD1Ev(void *this_) {
+  delete (QDataWidgetMapper*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 74, column 17>
-//   // proto:  QModelIndex QDataWidgetMapper::rootIndex();
-// _ZNK17QDataWidgetMapper9rootIndexEv rootIndex()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:67
+// void setModel(class QAbstractItemModel *)
 extern "C"
-QModelIndex*
-C_ZNK17QDataWidgetMapper9rootIndexEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->rootIndex();
-  return new QModelIndex(ret); // 5
+void C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
+  ((QDataWidgetMapper*)this_)->setModel(model);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 102, column 18>
-//   // proto:  void QDataWidgetMapper::setCurrentIndex(int index);
-// _ZN17QDataWidgetMapper15setCurrentIndexEi setCurrentIndex(int)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:68
+// QAbstractItemModel * model()
 extern "C"
-void
-C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *qthis,
-int arg1) {
-  ((QDataWidgetMapper*)qthis)->setCurrentIndex(arg1);
+void C_ZNK17QDataWidgetMapper5modelEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->model();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 67, column 10>
-//   // proto:  void QDataWidgetMapper::setModel(QAbstractItemModel * model);
-// _ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel setModel(class QAbstractItemModel *)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:70
+// void setItemDelegate(class QAbstractItemDelegate *)
 extern "C"
-void
-C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *qthis,
-QAbstractItemModel * arg1) {
-  ((QDataWidgetMapper*)qthis)->setModel(arg1);
+void C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbstractItemDelegate * delegate) {
+  ((QDataWidgetMapper*)this_)->setItemDelegate(delegate);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 76, column 10>
-//   // proto:  void QDataWidgetMapper::setOrientation(Qt::Orientation aOrientation);
-// _ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:71
+// QAbstractItemDelegate * itemDelegate()
 extern "C"
-void
-C_ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QDataWidgetMapper*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
+void C_ZNK17QDataWidgetMapper12itemDelegateEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->itemDelegate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 82, column 18>
-//   // proto:  QDataWidgetMapper::SubmitPolicy QDataWidgetMapper::submitPolicy();
-// _ZNK17QDataWidgetMapper12submitPolicyEv submitPolicy()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:73
+// void setRootIndex(const class QModelIndex &)
 extern "C"
-QDataWidgetMapper::SubmitPolicy
-C_ZNK17QDataWidgetMapper12submitPolicyEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->submitPolicy();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
+  ((QDataWidgetMapper*)this_)->setRootIndex(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 89, column 14>
-//   // proto:  QWidget * QDataWidgetMapper::mappedWidgetAt(int section);
-// _ZNK17QDataWidgetMapper14mappedWidgetAtEi mappedWidgetAt(int)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:74
+// QModelIndex rootIndex()
 extern "C"
-void*
-C_ZNK17QDataWidgetMapper14mappedWidgetAtEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->mappedWidgetAt(arg1);
-  return (void*)ret;
+void C_ZNK17QDataWidgetMapper9rootIndexEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->rootIndex();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 86, column 10>
-//   // proto:  void QDataWidgetMapper::removeMapping(QWidget * widget);
-// _ZN17QDataWidgetMapper13removeMappingEP7QWidget removeMapping(class QWidget *)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:76
+// void setOrientation(Qt::Orientation)
 extern "C"
-void
-C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QDataWidgetMapper*)qthis)->removeMapping(arg1);
+void C_ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation aOrientation) {
+  ((QDataWidgetMapper*)this_)->setOrientation(aOrientation);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 98, column 10>
-//   // proto:  void QDataWidgetMapper::toFirst();
-// _ZN17QDataWidgetMapper7toFirstEv toFirst()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:77
+// Qt::Orientation orientation()
 extern "C"
-void
-C_ZN17QDataWidgetMapper7toFirstEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->toFirst();
+void C_ZNK17QDataWidgetMapper11orientationEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 106, column 10>
-//   // proto:  void QDataWidgetMapper::currentIndexChanged(int index);
-// _ZN17QDataWidgetMapper19currentIndexChangedEi currentIndexChanged(int)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:81
+// void setSubmitPolicy(enum QDataWidgetMapper::SubmitPolicy)
 extern "C"
-void
-C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *qthis,
-int arg1) {
-  ((QDataWidgetMapper*)qthis)->currentIndexChanged(arg1);
+void C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *this_, QDataWidgetMapper::SubmitPolicy policy) {
+  ((QDataWidgetMapper*)this_)->setSubmitPolicy(policy);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 101, column 10>
-//   // proto:  void QDataWidgetMapper::toPrevious();
-// _ZN17QDataWidgetMapper10toPreviousEv toPrevious()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:82
+// QDataWidgetMapper::SubmitPolicy submitPolicy()
 extern "C"
-void
-C_ZN17QDataWidgetMapper10toPreviousEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->toPrevious();
+void C_ZNK17QDataWidgetMapper12submitPolicyEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->submitPolicy();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 73, column 10>
-//   // proto:  void QDataWidgetMapper::setRootIndex(const QModelIndex & index);
-// _ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex setRootIndex(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:84
+// void addMapping(class QWidget *, int)
 extern "C"
-void
-C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QDataWidgetMapper*)qthis)->setRootIndex(*((const QModelIndex*)arg1));
+void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widget, int section) {
+  ((QDataWidgetMapper*)this_)->addMapping(widget, section);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 95, column 10>
-//   // proto:  void QDataWidgetMapper::revert();
-// _ZN17QDataWidgetMapper6revertEv revert()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
+// void addMapping(class QWidget *, int, const class QByteArray &)
 extern "C"
-void
-C_ZN17QDataWidgetMapper6revertEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->revert();
+void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, QWidget * widget, int section, const QByteArray & propertyName) {
+  ((QDataWidgetMapper*)this_)->addMapping(widget, section, propertyName);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 90, column 10>
-//   // proto:  void QDataWidgetMapper::clearMapping();
-// _ZN17QDataWidgetMapper12clearMappingEv clearMapping()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
+// void removeMapping(class QWidget *)
 extern "C"
-void
-C_ZN17QDataWidgetMapper12clearMappingEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->clearMapping();
+void C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *this_, QWidget * widget) {
+  ((QDataWidgetMapper*)this_)->removeMapping(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 77, column 21>
-//   // proto:  Qt::Orientation QDataWidgetMapper::orientation();
-// _ZNK17QDataWidgetMapper11orientationEv orientation()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:87
+// int mappedSection(class QWidget *)
 extern "C"
-Qt::Orientation
-C_ZNK17QDataWidgetMapper11orientationEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * widget) {
+  /*return*/ ((QDataWidgetMapper*)this_)->mappedSection(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 87, column 9>
-//   // proto:  int QDataWidgetMapper::mappedSection(QWidget * widget);
-// _ZNK17QDataWidgetMapper13mappedSectionEP7QWidget mappedSection(class QWidget *)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:88
+// QByteArray mappedPropertyName(class QWidget *)
 extern "C"
-int
-C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *qthis,
-QWidget * arg1) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->mappedSection(arg1);
-  return ret; // 0 TypeKind.INT
+void C_ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget(void *this_, QWidget * widget) {
+  /*return*/ ((QDataWidgetMapper*)this_)->mappedPropertyName(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 88, column 16>
-//   // proto:  QByteArray QDataWidgetMapper::mappedPropertyName(QWidget * widget);
-// _ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget mappedPropertyName(class QWidget *)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:89
+// QWidget * mappedWidgetAt(int)
 extern "C"
-QByteArray*
-C_ZNK17QDataWidgetMapper18mappedPropertyNameEP7QWidget(void *qthis,
-QWidget * arg1) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->mappedPropertyName(arg1);
-  return new QByteArray(ret); // 5
+void C_ZNK17QDataWidgetMapper14mappedWidgetAtEi(void *this_, int section) {
+  /*return*/ ((QDataWidgetMapper*)this_)->mappedWidgetAt(section);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 70, column 10>
-//   // proto:  void QDataWidgetMapper::setItemDelegate(QAbstractItemDelegate * delegate);
-// _ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate setItemDelegate(class QAbstractItemDelegate *)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:90
+// void clearMapping()
 extern "C"
-void
-C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *qthis,
-QAbstractItemDelegate * arg1) {
-  ((QDataWidgetMapper*)qthis)->setItemDelegate(arg1);
+void C_ZN17QDataWidgetMapper12clearMappingEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->clearMapping();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 103, column 10>
-//   // proto:  void QDataWidgetMapper::setCurrentModelIndex(const QModelIndex & index);
-// _ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex setCurrentModelIndex(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:92
+// int currentIndex()
 extern "C"
-void
-C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QDataWidgetMapper*)qthis)->setCurrentModelIndex(*((const QModelIndex*)arg1));
+void C_ZNK17QDataWidgetMapper12currentIndexEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->currentIndex();
 }
-//   // proto:  void QDataWidgetMapper::~QDataWidgetMapper();
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:95
+// void revert()
 extern "C"
-void C_ZN17QDataWidgetMapperD2Ev(void *qthis) {
-  delete (QDataWidgetMapper*)qthis;
+void C_ZN17QDataWidgetMapper6revertEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->revert();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 84, column 10>
-//   // proto:  void QDataWidgetMapper::addMapping(QWidget * widget, int section);
-// _ZN17QDataWidgetMapper10addMappingEP7QWidgeti addMapping(class QWidget *, int)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:96
+// bool submit()
 extern "C"
-void
-C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *qthis,
-QWidget * arg1,
-int arg2) {
-  ((QDataWidgetMapper*)qthis)->addMapping(arg1,
-arg2);
+void C_ZN17QDataWidgetMapper6submitEv(void *this_) {
+  /*return*/ ((QDataWidgetMapper*)this_)->submit();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 64, column 14>
-//   // proto:  void QDataWidgetMapper::QDataWidgetMapper(QObject * parent);
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:98
+// void toFirst()
 extern "C"
-QDataWidgetMapper*
-C_ZN17QDataWidgetMapperC2EP7QObject(QObject * arg1) {
-  auto ret = new QDataWidgetMapper(arg1);
-  return ret;
+void C_ZN17QDataWidgetMapper7toFirstEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->toFirst();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 81, column 10>
-//   // proto:  void QDataWidgetMapper::setSubmitPolicy(QDataWidgetMapper::SubmitPolicy policy);
-// _ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE setSubmitPolicy(enum QDataWidgetMapper::SubmitPolicy)
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:99
+// void toLast()
 extern "C"
-void
-C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *qthis,
-QDataWidgetMapper::SubmitPolicy arg1) {
-  ((QDataWidgetMapper*)qthis)->setSubmitPolicy(arg1);
+void C_ZN17QDataWidgetMapper6toLastEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->toLast();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 57, column 5>
-//   // proto:  const QMetaObject * QDataWidgetMapper::metaObject();
-// _ZNK17QDataWidgetMapper10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:100
+// void toNext()
 extern "C"
-void*
-C_ZNK17QDataWidgetMapper10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN17QDataWidgetMapper6toNextEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->toNext();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 99, column 10>
-//   // proto:  void QDataWidgetMapper::toLast();
-// _ZN17QDataWidgetMapper6toLastEv toLast()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:101
+// void toPrevious()
 extern "C"
-void
-C_ZN17QDataWidgetMapper6toLastEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->toLast();
+void C_ZN17QDataWidgetMapper10toPreviousEv(void *this_) {
+  ((QDataWidgetMapper*)this_)->toPrevious();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 68, column 25>
-//   // proto:  QAbstractItemModel * QDataWidgetMapper::model();
-// _ZNK17QDataWidgetMapper5modelEv model()
+// virtual
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:102
+// void setCurrentIndex(int)
 extern "C"
-void*
-C_ZNK17QDataWidgetMapper5modelEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->model();
-  return (void*)ret;
+void C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *this_, int index) {
+  ((QDataWidgetMapper*)this_)->setCurrentIndex(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 71, column 28>
-//   // proto:  QAbstractItemDelegate * QDataWidgetMapper::itemDelegate();
-// _ZNK17QDataWidgetMapper12itemDelegateEv itemDelegate()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:103
+// void setCurrentModelIndex(const class QModelIndex &)
 extern "C"
-void*
-C_ZNK17QDataWidgetMapper12itemDelegateEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->itemDelegate();
-  return (void*)ret;
+void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
+  ((QDataWidgetMapper*)this_)->setCurrentModelIndex(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 96, column 10>
-//   // proto:  bool QDataWidgetMapper::submit();
-// _ZN17QDataWidgetMapper6submitEv submit()
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:106
+// void currentIndexChanged(int)
 extern "C"
-bool
-C_ZN17QDataWidgetMapper6submitEv(void *qthis) {
-  auto ret =
-  ((QDataWidgetMapper*)qthis)->submit();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *this_, int index) {
+  ((QDataWidgetMapper*)this_)->currentIndexChanged(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdatawidgetmapper.h', line 100, column 10>
-//   // proto:  void QDataWidgetMapper::toNext();
-// _ZN17QDataWidgetMapper6toNextEv toNext()
-extern "C"
-void
-C_ZN17QDataWidgetMapper6toNextEv(void *qthis) {
-  ((QDataWidgetMapper*)qthis)->toNext();
-}
-// <= ext block end
-
-// body block begin =>
-// QDataWidgetMapper_SlotProxy here
-class QDataWidgetMapper_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QDataWidgetMapper_SlotProxy():QObject(){}
-
-public slots:
-  // currentIndexChanged(int)
-  void slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0);
-public:
-  void (*slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi)(void* rsfptr, int arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qdatawidgetmapper.moc"
-
-extern "C" {
-  QDataWidgetMapper_SlotProxy* QDataWidgetMapper_SlotProxy_new()
-  {
-    return new QDataWidgetMapper_SlotProxy();
-  }
-};
-
-void QDataWidgetMapper_SlotProxy::slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0) {
-  if (this->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QDataWidgetMapper_SlotProxy_connect__ZN17QDataWidgetMapper19currentIndexChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QDataWidgetMapper_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi = (decltype(that->slot_func__ZN17QDataWidgetMapper19currentIndexChangedEi))ffifptr;
-  QObject::connect((QDataWidgetMapper*)sender, SIGNAL(currentIndexChanged(int)), that, SLOT(slot_proxy_func__ZN17QDataWidgetMapper19currentIndexChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QDataWidgetMapper_SlotProxy_disconnect__ZN17QDataWidgetMapper19currentIndexChangedEi(QDataWidgetMapper_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

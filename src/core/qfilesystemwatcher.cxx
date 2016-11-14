@@ -1,155 +1,66 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qfilesystemwatcher.h
-// dst-file: /src/core/qfilesystemwatcher.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qfilesystemwatcher.h
 #include <qfilesystemwatcher.h>
+#include <QtCore>
 
-
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfilesystemwatcher_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QFileSystemWatcher_Class_Size()
-{
-  return sizeof(QFileSystemWatcher);
+void C_ZNK18QFileSystemWatcher10metaObjectEv(void *this_) {
+  /*return*/ ((QFileSystemWatcher*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QFileSystemWatcher::~QFileSystemWatcher();
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:58
+// void QFileSystemWatcher(class QObject *)
 extern "C"
-void C_ZN18QFileSystemWatcherD2Ev(void *qthis) {
-  delete (QFileSystemWatcher*)qthis;
+void* C_ZN18QFileSystemWatcherC1EP7QObject(QObject * parent) {
+  return new QFileSystemWatcher(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 64, column 10>
-//   // proto:  bool QFileSystemWatcher::removePath(const QString & file);
-// _ZN18QFileSystemWatcher10removePathERK7QString removePath(const class QString &)
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:59
+// void QFileSystemWatcher(const class QStringList &, class QObject *)
 extern "C"
-bool
-C_ZN18QFileSystemWatcher10removePathERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->removePath(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN18QFileSystemWatcherC1ERK11QStringListP7QObject(const QStringList & paths, QObject * parent) {
+  return new QFileSystemWatcher(paths, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 68, column 17>
-//   // proto:  QStringList QFileSystemWatcher::directories();
-// _ZNK18QFileSystemWatcher11directoriesEv directories()
+// virtual
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:60
+// void ~QFileSystemWatcher()
 extern "C"
-QStringList*
-C_ZNK18QFileSystemWatcher11directoriesEv(void *qthis) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->directories();
-  return new QStringList(ret); // 5
+void C_ZN18QFileSystemWatcherD1Ev(void *this_) {
+  delete (QFileSystemWatcher*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 67, column 17>
-//   // proto:  QStringList QFileSystemWatcher::files();
-// _ZNK18QFileSystemWatcher5filesEv files()
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:62
+// bool addPath(const class QString &)
 extern "C"
-QStringList*
-C_ZNK18QFileSystemWatcher5filesEv(void *qthis) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->files();
-  return new QStringList(ret); // 5
+void C_ZN18QFileSystemWatcher7addPathERK7QString(void *this_, const QString & file) {
+  /*return*/ ((QFileSystemWatcher*)this_)->addPath(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 63, column 17>
-//   // proto:  QStringList QFileSystemWatcher::addPaths(const QStringList & files);
-// _ZN18QFileSystemWatcher8addPathsERK11QStringList addPaths(const class QStringList &)
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:63
+// QStringList addPaths(const class QStringList &)
 extern "C"
-QStringList*
-C_ZN18QFileSystemWatcher8addPathsERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->addPaths(*((const QStringList*)arg1));
-  return new QStringList(ret); // 5
+void C_ZN18QFileSystemWatcher8addPathsERK11QStringList(void *this_, const QStringList & files) {
+  /*return*/ ((QFileSystemWatcher*)this_)->addPaths(files);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 65, column 17>
-//   // proto:  QStringList QFileSystemWatcher::removePaths(const QStringList & files);
-// _ZN18QFileSystemWatcher11removePathsERK11QStringList removePaths(const class QStringList &)
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:64
+// bool removePath(const class QString &)
 extern "C"
-QStringList*
-C_ZN18QFileSystemWatcher11removePathsERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->removePaths(*((const QStringList*)arg1));
-  return new QStringList(ret); // 5
+void C_ZN18QFileSystemWatcher10removePathERK7QString(void *this_, const QString & file) {
+  /*return*/ ((QFileSystemWatcher*)this_)->removePath(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 58, column 5>
-//   // proto:  void QFileSystemWatcher::QFileSystemWatcher(QObject * parent);
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:65
+// QStringList removePaths(const class QStringList &)
 extern "C"
-QFileSystemWatcher*
-C_ZN18QFileSystemWatcherC2EP7QObject(QObject * arg1) {
-  auto ret = new QFileSystemWatcher(arg1);
-  return ret;
+void C_ZN18QFileSystemWatcher11removePathsERK11QStringList(void *this_, const QStringList & files) {
+  /*return*/ ((QFileSystemWatcher*)this_)->removePaths(files);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 62, column 10>
-//   // proto:  bool QFileSystemWatcher::addPath(const QString & file);
-// _ZN18QFileSystemWatcher7addPathERK7QString addPath(const class QString &)
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:67
+// QStringList files()
 extern "C"
-bool
-C_ZN18QFileSystemWatcher7addPathERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->addPath(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK18QFileSystemWatcher5filesEv(void *this_) {
+  /*return*/ ((QFileSystemWatcher*)this_)->files();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 54, column 5>
-//   // proto:  const QMetaObject * QFileSystemWatcher::metaObject();
-// _ZNK18QFileSystemWatcher10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:68
+// QStringList directories()
 extern "C"
-void*
-C_ZNK18QFileSystemWatcher10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QFileSystemWatcher*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK18QFileSystemWatcher11directoriesEv(void *this_) {
+  /*return*/ ((QFileSystemWatcher*)this_)->directories();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfilesystemwatcher.h', line 59, column 5>
-//   // proto:  void QFileSystemWatcher::QFileSystemWatcher(const QStringList & paths, QObject * parent);
-extern "C"
-QFileSystemWatcher*
-C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(const QStringList* arg1,
-QObject * arg2) {
-  auto ret = new QFileSystemWatcher(*((const QStringList*)arg1),
-arg2);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QFileSystemWatcher_SlotProxy here
-class QFileSystemWatcher_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QFileSystemWatcher_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qfilesystemwatcher.moc"
-
-extern "C" {
-  QFileSystemWatcher_SlotProxy* QFileSystemWatcher_SlotProxy_new()
-  {
-    return new QFileSystemWatcher_SlotProxy();
-  }
-};
-
-// <= body block end
-

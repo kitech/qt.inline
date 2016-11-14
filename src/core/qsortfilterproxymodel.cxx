@@ -1,682 +1,372 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qsortfilterproxymodel.h
-// dst-file: /src/core/qsortfilterproxymodel.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #include <qsortfilterproxymodel.h>
+#include <QtCore>
 
-
-#include <qabstractitemmodel.h>
-#include <qnamespace.h>
-#include <qsize.h>
-#include <qvariant.h>
-#include <qitemselectionmodel.h>
-#include <qstringlist.h>
-#include <qregexp.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsortfilterproxymodel_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:61
+// const QMetaObject * metaObject()
 extern "C"
-int QSortFilterProxyModel_Class_Size()
-{
-  return sizeof(QSortFilterProxyModel);
+void C_ZNK21QSortFilterProxyModel10metaObjectEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 111, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterRegExp(const QString & pattern);
-// _ZN21QSortFilterProxyModel15setFilterRegExpERK7QString setFilterRegExp(const class QString &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:72
+// void QSortFilterProxyModel(class QObject *)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterRegExp(*((const QString*)arg1));
+void* C_ZN21QSortFilterProxyModelC1EP7QObject(QObject * parent) {
+  return new QSortFilterProxyModel(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 132, column 9>
-//   // proto:  int QSortFilterProxyModel::rowCount(const QModelIndex & parent);
-// _ZNK21QSortFilterProxyModel8rowCountERK11QModelIndex rowCount(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:73
+// void ~QSortFilterProxyModel()
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel8rowCountERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->rowCount(*((const QModelIndex*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN21QSortFilterProxyModelD1Ev(void *this_) {
+  delete (QSortFilterProxyModel*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 130, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::sibling(int row, int column, const QModelIndex & idx);
-// _ZNK21QSortFilterProxyModel7siblingEiiRK11QModelIndex sibling(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:75
+// void setSourceModel(class QAbstractItemModel *)
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel7siblingEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->sibling(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return new QModelIndex(ret); // 5
+void C_ZN21QSortFilterProxyModel14setSourceModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * sourceModel) {
+  ((QSortFilterProxyModel*)this_)->setSourceModel(sourceModel);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 89, column 25>
-//   // proto:  Qt::CaseSensitivity QSortFilterProxyModel::filterCaseSensitivity();
-// _ZNK21QSortFilterProxyModel21filterCaseSensitivityEv filterCaseSensitivity()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:77
+// QModelIndex mapToSource(const class QModelIndex &)
 extern "C"
-Qt::CaseSensitivity
-C_ZNK21QSortFilterProxyModel21filterCaseSensitivityEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->filterCaseSensitivity();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK21QSortFilterProxyModel11mapToSourceERK11QModelIndex(void *this_, const QModelIndex & proxyIndex) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mapToSource(proxyIndex);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 161, column 11>
-//   // proto:  QSize QSortFilterProxyModel::span(const QModelIndex & index);
-// _ZNK21QSortFilterProxyModel4spanERK11QModelIndex span(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:78
+// QModelIndex mapFromSource(const class QModelIndex &)
 extern "C"
-QSize*
-C_ZNK21QSortFilterProxyModel4spanERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->span(*((const QModelIndex*)arg1));
-  return new QSize(ret); // 5
+void C_ZNK21QSortFilterProxyModel13mapFromSourceERK11QModelIndex(void *this_, const QModelIndex & sourceIndex) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mapFromSource(sourceIndex);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 78, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::mapFromSource(const QModelIndex & sourceIndex);
-// _ZNK21QSortFilterProxyModel13mapFromSourceERK11QModelIndex mapFromSource(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:80
+// QItemSelection mapSelectionToSource(const class QItemSelection &)
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel13mapFromSourceERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mapFromSource(*((const QModelIndex*)arg1));
-  return new QModelIndex(ret); // 5
+void C_ZNK21QSortFilterProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, const QItemSelection & proxySelection) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mapSelectionToSource(proxySelection);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 90, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterCaseSensitivity(Qt::CaseSensitivity cs);
-// _ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivityE setFilterCaseSensitivity(Qt::CaseSensitivity)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:81
+// QItemSelection mapSelectionFromSource(const class QItemSelection &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivityE(void *qthis,
-Qt::CaseSensitivity* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterCaseSensitivity(*((Qt::CaseSensitivity*)arg1));
+void C_ZNK21QSortFilterProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, const QItemSelection & sourceSelection) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mapSelectionFromSource(sourceSelection);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 112, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterWildcard(const QString & pattern);
-// _ZN21QSortFilterProxyModel17setFilterWildcardERK7QString setFilterWildcard(const class QString &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:83
+// QRegExp filterRegExp()
 extern "C"
-void
-C_ZN21QSortFilterProxyModel17setFilterWildcardERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterWildcard(*((const QString*)arg1));
+void C_ZNK21QSortFilterProxyModel12filterRegExpEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->filterRegExp();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 134, column 10>
-//   // proto:  bool QSortFilterProxyModel::hasChildren(const QModelIndex & parent);
-// _ZNK21QSortFilterProxyModel11hasChildrenERK11QModelIndex hasChildren(const class QModelIndex &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:84
+// void setFilterRegExp(const class QRegExp &)
 extern "C"
-bool
-C_ZNK21QSortFilterProxyModel11hasChildrenERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->hasChildren(*((const QModelIndex*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QRegExp(void *this_, const QRegExp & regExp) {
+  ((QSortFilterProxyModel*)this_)->setFilterRegExp(regExp);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 113, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterFixedString(const QString & pattern);
-// _ZN21QSortFilterProxyModel20setFilterFixedStringERK7QString setFilterFixedString(const class QString &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:86
+// int filterKeyColumn()
 extern "C"
-void
-C_ZN21QSortFilterProxyModel20setFilterFixedStringERK7QString(void *qthis,
-const QString* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterFixedString(*((const QString*)arg1));
+void C_ZNK21QSortFilterProxyModel15filterKeyColumnEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->filterKeyColumn();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 137, column 10>
-//   // proto:  bool QSortFilterProxyModel::setData(const QModelIndex & index, const QVariant & value, int role);
-// _ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti setData(const class QModelIndex &, const class QVariant &, int)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:87
+// void setFilterKeyColumn(int)
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti(void *qthis,
-const QModelIndex* arg1,
-const QVariant* arg2,
-int arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->setData(*((const QModelIndex*)arg1),
-*((const QVariant*)arg2),
-arg3);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel18setFilterKeyColumnEi(void *this_, int column) {
+  ((QSortFilterProxyModel*)this_)->setFilterKeyColumn(column);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 105, column 10>
-//   // proto:  void QSortFilterProxyModel::setSortRole(int role);
-// _ZN21QSortFilterProxyModel11setSortRoleEi setSortRole(int)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:89
+// Qt::CaseSensitivity filterCaseSensitivity()
 extern "C"
-void
-C_ZN21QSortFilterProxyModel11setSortRoleEi(void *qthis,
-int arg1) {
-  ((QSortFilterProxyModel*)qthis)->setSortRole(arg1);
+void C_ZNK21QSortFilterProxyModel21filterCaseSensitivityEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->filterCaseSensitivity();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 99, column 19>
-//   // proto:  Qt::SortOrder QSortFilterProxyModel::sortOrder();
-// _ZNK21QSortFilterProxyModel9sortOrderEv sortOrder()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:90
+// void setFilterCaseSensitivity(Qt::CaseSensitivity)
 extern "C"
-Qt::SortOrder
-C_ZNK21QSortFilterProxyModel9sortOrderEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->sortOrder();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
+  ((QSortFilterProxyModel*)this_)->setFilterCaseSensitivity(cs);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 136, column 14>
-//   // proto:  QVariant QSortFilterProxyModel::data(const QModelIndex & index, int role);
-// _ZNK21QSortFilterProxyModel4dataERK11QModelIndexi data(const class QModelIndex &, int)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:92
+// Qt::CaseSensitivity sortCaseSensitivity()
 extern "C"
-QVariant*
-C_ZNK21QSortFilterProxyModel4dataERK11QModelIndexi(void *qthis,
-const QModelIndex* arg1,
-int arg2) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->data(*((const QModelIndex*)arg1),
-arg2);
-  return new QVariant(ret); // 5
+void C_ZNK21QSortFilterProxyModel19sortCaseSensitivityEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->sortCaseSensitivity();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 115, column 10>
-//   // proto:  void QSortFilterProxyModel::invalidate();
-// _ZN21QSortFilterProxyModel10invalidateEv invalidate()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:93
+// void setSortCaseSensitivity(Qt::CaseSensitivity)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel10invalidateEv(void *qthis) {
-  ((QSortFilterProxyModel*)qthis)->invalidate();
+void C_ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
+  ((QSortFilterProxyModel*)this_)->setSortCaseSensitivity(cs);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 98, column 9>
-//   // proto:  int QSortFilterProxyModel::sortColumn();
-// _ZNK21QSortFilterProxyModel10sortColumnEv sortColumn()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:95
+// bool isSortLocaleAware()
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel10sortColumnEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->sortColumn();
-  return ret; // 0 TypeKind.INT
+void C_ZNK21QSortFilterProxyModel17isSortLocaleAwareEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->isSortLocaleAware();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 139, column 14>
-//   // proto:  QVariant QSortFilterProxyModel::headerData(int section, Qt::Orientation orientation, int role);
-// _ZNK21QSortFilterProxyModel10headerDataEiN2Qt11OrientationEi headerData(int, Qt::Orientation, int)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:96
+// void setSortLocaleAware(_Bool)
 extern "C"
-QVariant*
-C_ZNK21QSortFilterProxyModel10headerDataEiN2Qt11OrientationEi(void *qthis,
-int arg1,
-Qt::Orientation* arg2,
-int arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->headerData(arg1,
-*((Qt::Orientation*)arg2),
-arg3);
-  return new QVariant(ret); // 5
+void C_ZN21QSortFilterProxyModel18setSortLocaleAwareEb(void *this_, bool on) {
+  ((QSortFilterProxyModel*)this_)->setSortLocaleAware(on);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 147, column 10>
-//   // proto:  bool QSortFilterProxyModel::insertRows(int row, int count, const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex insertRows(int, int, const class QModelIndex &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:98
+// int sortColumn()
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->insertRows(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK21QSortFilterProxyModel10sortColumnEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->sortColumn();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 86, column 9>
-//   // proto:  int QSortFilterProxyModel::filterKeyColumn();
-// _ZNK21QSortFilterProxyModel15filterKeyColumnEv filterKeyColumn()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:99
+// Qt::SortOrder sortOrder()
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel15filterKeyColumnEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->filterKeyColumn();
-  return ret; // 0 TypeKind.INT
+void C_ZNK21QSortFilterProxyModel9sortOrderEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->sortOrder();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 153, column 10>
-//   // proto:  bool QSortFilterProxyModel::canFetchMore(const QModelIndex & parent);
-// _ZNK21QSortFilterProxyModel12canFetchMoreERK11QModelIndex canFetchMore(const class QModelIndex &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:101
+// bool dynamicSortFilter()
 extern "C"
-bool
-C_ZNK21QSortFilterProxyModel12canFetchMoreERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->canFetchMore(*((const QModelIndex*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK21QSortFilterProxyModel17dynamicSortFilterEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->dynamicSortFilter();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 95, column 10>
-//   // proto:  bool QSortFilterProxyModel::isSortLocaleAware();
-// _ZNK21QSortFilterProxyModel17isSortLocaleAwareEv isSortLocaleAware()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:102
+// void setDynamicSortFilter(_Bool)
 extern "C"
-bool
-C_ZNK21QSortFilterProxyModel17isSortLocaleAwareEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->isSortLocaleAware();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel20setDynamicSortFilterEb(void *this_, bool enable) {
+  ((QSortFilterProxyModel*)this_)->setDynamicSortFilter(enable);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 152, column 10>
-//   // proto:  void QSortFilterProxyModel::fetchMore(const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel9fetchMoreERK11QModelIndex fetchMore(const class QModelIndex &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:104
+// int sortRole()
 extern "C"
-void
-C_ZN21QSortFilterProxyModel9fetchMoreERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QSortFilterProxyModel*)qthis)->fetchMore(*((const QModelIndex*)arg1));
+void C_ZNK21QSortFilterProxyModel8sortRoleEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->sortRole();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 81, column 20>
-//   // proto:  QItemSelection QSortFilterProxyModel::mapSelectionFromSource(const QItemSelection & sourceSelection);
-// _ZNK21QSortFilterProxyModel22mapSelectionFromSourceERK14QItemSelection mapSelectionFromSource(const class QItemSelection &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:105
+// void setSortRole(int)
 extern "C"
-QItemSelection*
-C_ZNK21QSortFilterProxyModel22mapSelectionFromSourceERK14QItemSelection(void *qthis,
-const QItemSelection* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mapSelectionFromSource(*((const QItemSelection*)arg1));
-  return new QItemSelection(ret); // 5
+void C_ZN21QSortFilterProxyModel11setSortRoleEi(void *this_, int role) {
+  ((QSortFilterProxyModel*)this_)->setSortRole(role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 80, column 20>
-//   // proto:  QItemSelection QSortFilterProxyModel::mapSelectionToSource(const QItemSelection & proxySelection);
-// _ZNK21QSortFilterProxyModel20mapSelectionToSourceERK14QItemSelection mapSelectionToSource(const class QItemSelection &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:107
+// int filterRole()
 extern "C"
-QItemSelection*
-C_ZNK21QSortFilterProxyModel20mapSelectionToSourceERK14QItemSelection(void *qthis,
-const QItemSelection* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mapSelectionToSource(*((const QItemSelection*)arg1));
-  return new QItemSelection(ret); // 5
+void C_ZNK21QSortFilterProxyModel10filterRoleEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->filterRole();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 164, column 17>
-//   // proto:  QStringList QSortFilterProxyModel::mimeTypes();
-// _ZNK21QSortFilterProxyModel9mimeTypesEv mimeTypes()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:108
+// void setFilterRole(int)
 extern "C"
-QStringList*
-C_ZNK21QSortFilterProxyModel9mimeTypesEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mimeTypes();
-  return new QStringList(ret); // 5
+void C_ZN21QSortFilterProxyModel13setFilterRoleEi(void *this_, int role) {
+  ((QSortFilterProxyModel*)this_)->setFilterRole(role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 156, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::buddy(const QModelIndex & index);
-// _ZNK21QSortFilterProxyModel5buddyERK11QModelIndex buddy(const class QModelIndex &)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:111
+// void setFilterRegExp(const class QString &)
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel5buddyERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->buddy(*((const QModelIndex*)arg1));
-  return new QModelIndex(ret); // 5
+void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QString(void *this_, const QString & pattern) {
+  ((QSortFilterProxyModel*)this_)->setFilterRegExp(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 107, column 9>
-//   // proto:  int QSortFilterProxyModel::filterRole();
-// _ZNK21QSortFilterProxyModel10filterRoleEv filterRole()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:112
+// void setFilterWildcard(const class QString &)
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel10filterRoleEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->filterRole();
-  return ret; // 0 TypeKind.INT
+void C_ZN21QSortFilterProxyModel17setFilterWildcardERK7QString(void *this_, const QString & pattern) {
+  ((QSortFilterProxyModel*)this_)->setFilterWildcard(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 114, column 10>
-//   // proto:  void QSortFilterProxyModel::clear();
-// _ZN21QSortFilterProxyModel5clearEv clear()
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:113
+// void setFilterFixedString(const class QString &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel5clearEv(void *qthis) {
-  ((QSortFilterProxyModel*)qthis)->clear();
+void C_ZN21QSortFilterProxyModel20setFilterFixedStringERK7QString(void *this_, const QString & pattern) {
+  ((QSortFilterProxyModel*)this_)->setFilterFixedString(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 87, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterKeyColumn(int column);
-// _ZN21QSortFilterProxyModel18setFilterKeyColumnEi setFilterKeyColumn(int)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:114
+// void clear()
 extern "C"
-void
-C_ZN21QSortFilterProxyModel18setFilterKeyColumnEi(void *qthis,
-int arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterKeyColumn(arg1);
+void C_ZN21QSortFilterProxyModel5clearEv(void *this_) {
+  ((QSortFilterProxyModel*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 157, column 21>
-//   // proto:  QModelIndexList QSortFilterProxyModel::match(const QModelIndex & start, int role, const QVariant & value, int hits, Qt::MatchFlags flags);
-// _ZNK21QSortFilterProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:115
+// void invalidate()
 extern "C"
-QList<QModelIndex>*
-C_ZNK21QSortFilterProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *qthis,
-const QModelIndex* arg1,
-int arg2,
-const QVariant* arg3,
-int arg4,
-Qt::MatchFlags* arg5) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->match(*((const QModelIndex*)arg1),
-arg2,
-*((const QVariant*)arg3),
-arg4,
-*((Qt::MatchFlags*)arg5));
-  return new QList<QModelIndex>(ret); // 5
+void C_ZN21QSortFilterProxyModel10invalidateEv(void *this_) {
+  ((QSortFilterProxyModel*)this_)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 165, column 21>
-//   // proto:  Qt::DropActions QSortFilterProxyModel::supportedDropActions();
-// _ZNK21QSortFilterProxyModel20supportedDropActionsEv supportedDropActions()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:128
+// QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
-QFlags<Qt::DropAction>*
-C_ZNK21QSortFilterProxyModel20supportedDropActionsEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->supportedDropActions();
-  return new QFlags<Qt::DropAction>(ret); // 5
+void C_ZNK21QSortFilterProxyModel5indexEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->index(row, column, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 61, column 5>
-//   // proto:  const QMetaObject * QSortFilterProxyModel::metaObject();
-// _ZNK21QSortFilterProxyModel10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:129
+// QModelIndex parent(const class QModelIndex &)
 extern "C"
-void*
-C_ZNK21QSortFilterProxyModel10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK21QSortFilterProxyModel6parentERK11QModelIndex(void *this_, const QModelIndex & child) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->parent(child);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 140, column 10>
-//   // proto:  bool QSortFilterProxyModel::setHeaderData(int section, Qt::Orientation orientation, const QVariant & value, int role);
-// _ZN21QSortFilterProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti setHeaderData(int, Qt::Orientation, const class QVariant &, int)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:130
+// QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *qthis,
-int arg1,
-Qt::Orientation* arg2,
-const QVariant* arg3,
-int arg4) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->setHeaderData(arg1,
-*((Qt::Orientation*)arg2),
-*((const QVariant*)arg3),
-arg4);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK21QSortFilterProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & idx) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->sibling(row, column, idx);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 104, column 9>
-//   // proto:  int QSortFilterProxyModel::sortRole();
-// _ZNK21QSortFilterProxyModel8sortRoleEv sortRole()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:132
+// int rowCount(const class QModelIndex &)
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel8sortRoleEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->sortRole();
-  return ret; // 0 TypeKind.INT
+void C_ZNK21QSortFilterProxyModel8rowCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->rowCount(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 92, column 25>
-//   // proto:  Qt::CaseSensitivity QSortFilterProxyModel::sortCaseSensitivity();
-// _ZNK21QSortFilterProxyModel19sortCaseSensitivityEv sortCaseSensitivity()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:133
+// int columnCount(const class QModelIndex &)
 extern "C"
-Qt::CaseSensitivity
-C_ZNK21QSortFilterProxyModel19sortCaseSensitivityEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->sortCaseSensitivity();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK21QSortFilterProxyModel11columnCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->columnCount(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 96, column 10>
-//   // proto:  void QSortFilterProxyModel::setSortLocaleAware(bool on);
-// _ZN21QSortFilterProxyModel18setSortLocaleAwareEb setSortLocaleAware(_Bool)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:134
+// bool hasChildren(const class QModelIndex &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel18setSortLocaleAwareEb(void *qthis,
-bool arg1) {
-  ((QSortFilterProxyModel*)qthis)->setSortLocaleAware(arg1);
+void C_ZNK21QSortFilterProxyModel11hasChildrenERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->hasChildren(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 77, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::mapToSource(const QModelIndex & proxyIndex);
-// _ZNK21QSortFilterProxyModel11mapToSourceERK11QModelIndex mapToSource(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:136
+// QVariant data(const class QModelIndex &, int)
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel11mapToSourceERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mapToSource(*((const QModelIndex*)arg1));
-  return new QModelIndex(ret); // 5
+void C_ZNK21QSortFilterProxyModel4dataERK11QModelIndexi(void *this_, const QModelIndex & index, int role) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->data(index, role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 75, column 10>
-//   // proto:  void QSortFilterProxyModel::setSourceModel(QAbstractItemModel * sourceModel);
-// _ZN21QSortFilterProxyModel14setSourceModelEP18QAbstractItemModel setSourceModel(class QAbstractItemModel *)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:137
+// bool setData(const class QModelIndex &, const class QVariant &, int)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel14setSourceModelEP18QAbstractItemModel(void *qthis,
-QAbstractItemModel * arg1) {
-  ((QSortFilterProxyModel*)qthis)->setSourceModel(arg1);
+void C_ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, const QModelIndex & index, const QVariant & value, int role) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->setData(index, value, role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 93, column 10>
-//   // proto:  void QSortFilterProxyModel::setSortCaseSensitivity(Qt::CaseSensitivity cs);
-// _ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE setSortCaseSensitivity(Qt::CaseSensitivity)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:139
+// QVariant headerData(int, Qt::Orientation, int)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE(void *qthis,
-Qt::CaseSensitivity* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setSortCaseSensitivity(*((Qt::CaseSensitivity*)arg1));
+void C_ZNK21QSortFilterProxyModel10headerDataEiN2Qt11OrientationEi(void *this_, int section, Qt::Orientation orientation, int role) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->headerData(section, orientation, role);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 150, column 10>
-//   // proto:  bool QSortFilterProxyModel::removeColumns(int column, int count, const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel13removeColumnsEiiRK11QModelIndex removeColumns(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:140
+// bool setHeaderData(int, Qt::Orientation, const class QVariant &, int)
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel13removeColumnsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->removeColumns(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, const QVariant & value, int role) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->setHeaderData(section, orientation, value, role);
 }
-//   // proto:  void QSortFilterProxyModel::~QSortFilterProxyModel();
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:143
+// QMimeData * mimeData(const QModelIndexList &)
 extern "C"
-void C_ZN21QSortFilterProxyModelD2Ev(void *qthis) {
-  delete (QSortFilterProxyModel*)qthis;
+void C_ZNK21QSortFilterProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mimeData(indexes);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 144, column 10>
-//   // proto:  bool QSortFilterProxyModel::dropMimeData(const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:144
+// bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *qthis,
-const QMimeData * arg1,
-Qt::DropAction* arg2,
-int arg3,
-int arg4,
-const QModelIndex* arg5) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->dropMimeData(arg1,
-*((Qt::DropAction*)arg2),
-arg3,
-arg4,
-*((const QModelIndex*)arg5));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->dropMimeData(data, action, row, column, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 143, column 16>
-//   // proto:  QMimeData * QSortFilterProxyModel::mimeData(const QModelIndexList & indexes);
-// _ZNK21QSortFilterProxyModel8mimeDataERK5QListI11QModelIndexE mimeData(const QModelIndexList &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:147
+// bool insertRows(int, int, const class QModelIndex &)
 extern "C"
-void*
-C_ZNK21QSortFilterProxyModel8mimeDataERK5QListI11QModelIndexE(void *qthis,
-const QModelIndexList* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->mimeData(*((const QModelIndexList*)arg1));
-  return (void*)ret;
+void C_ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->insertRows(row, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 101, column 10>
-//   // proto:  bool QSortFilterProxyModel::dynamicSortFilter();
-// _ZNK21QSortFilterProxyModel17dynamicSortFilterEv dynamicSortFilter()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:148
+// bool insertColumns(int, int, const class QModelIndex &)
 extern "C"
-bool
-C_ZNK21QSortFilterProxyModel17dynamicSortFilterEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->dynamicSortFilter();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->insertColumns(column, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 154, column 19>
-//   // proto:  Qt::ItemFlags QSortFilterProxyModel::flags(const QModelIndex & index);
-// _ZNK21QSortFilterProxyModel5flagsERK11QModelIndex flags(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:149
+// bool removeRows(int, int, const class QModelIndex &)
 extern "C"
-QFlags<Qt::ItemFlag>*
-C_ZNK21QSortFilterProxyModel5flagsERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->flags(*((const QModelIndex*)arg1));
-  return new QFlags<Qt::ItemFlag>(ret); // 5
+void C_ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->removeRows(row, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 148, column 10>
-//   // proto:  bool QSortFilterProxyModel::insertColumns(int column, int count, const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel13insertColumnsEiiRK11QModelIndex insertColumns(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:150
+// bool removeColumns(int, int, const class QModelIndex &)
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel13insertColumnsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->insertColumns(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QSortFilterProxyModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->removeColumns(column, count, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 133, column 9>
-//   // proto:  int QSortFilterProxyModel::columnCount(const QModelIndex & parent);
-// _ZNK21QSortFilterProxyModel11columnCountERK11QModelIndex columnCount(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:152
+// void fetchMore(const class QModelIndex &)
 extern "C"
-int
-C_ZNK21QSortFilterProxyModel11columnCountERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->columnCount(*((const QModelIndex*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN21QSortFilterProxyModel9fetchMoreERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  ((QSortFilterProxyModel*)this_)->fetchMore(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 162, column 10>
-//   // proto:  void QSortFilterProxyModel::sort(int column, Qt::SortOrder order);
-// _ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE sort(int, Qt::SortOrder)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:153
+// bool canFetchMore(const class QModelIndex &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE(void *qthis,
-int arg1,
-Qt::SortOrder* arg2) {
-  ((QSortFilterProxyModel*)qthis)->sort(arg1,
-*((Qt::SortOrder*)arg2));
+void C_ZNK21QSortFilterProxyModel12canFetchMoreERK11QModelIndex(void *this_, const QModelIndex & parent) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->canFetchMore(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 84, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterRegExp(const QRegExp & regExp);
-// _ZN21QSortFilterProxyModel15setFilterRegExpERK7QRegExp setFilterRegExp(const class QRegExp &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:154
+// Qt::ItemFlags flags(const class QModelIndex &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QRegExp(void *qthis,
-const QRegExp* arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterRegExp(*((const QRegExp*)arg1));
+void C_ZNK21QSortFilterProxyModel5flagsERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->flags(index);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 129, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::parent(const QModelIndex & child);
-// _ZNK21QSortFilterProxyModel6parentERK11QModelIndex parent(const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:156
+// QModelIndex buddy(const class QModelIndex &)
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel6parentERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->parent(*((const QModelIndex*)arg1));
-  return new QModelIndex(ret); // 5
+void C_ZNK21QSortFilterProxyModel5buddyERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->buddy(index);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 83, column 13>
-//   // proto:  QRegExp QSortFilterProxyModel::filterRegExp();
-// _ZNK21QSortFilterProxyModel12filterRegExpEv filterRegExp()
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:157
+// QModelIndexList match(const class QModelIndex &, int, const class QVariant &, int, Qt::MatchFlags)
 extern "C"
-QRegExp*
-C_ZNK21QSortFilterProxyModel12filterRegExpEv(void *qthis) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->filterRegExp();
-  return new QRegExp(ret); // 5
+void C_ZNK21QSortFilterProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, const QModelIndex & start, int role, const QVariant & value, int hits, QFlags<Qt::MatchFlag> flags) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->match(start, role, value, hits, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 108, column 10>
-//   // proto:  void QSortFilterProxyModel::setFilterRole(int role);
-// _ZN21QSortFilterProxyModel13setFilterRoleEi setFilterRole(int)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:161
+// QSize span(const class QModelIndex &)
 extern "C"
-void
-C_ZN21QSortFilterProxyModel13setFilterRoleEi(void *qthis,
-int arg1) {
-  ((QSortFilterProxyModel*)qthis)->setFilterRole(arg1);
+void C_ZNK21QSortFilterProxyModel4spanERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->span(index);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 72, column 14>
-//   // proto:  void QSortFilterProxyModel::QSortFilterProxyModel(QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:162
+// void sort(int, Qt::SortOrder)
 extern "C"
-QSortFilterProxyModel*
-C_ZN21QSortFilterProxyModelC2EP7QObject(QObject * arg1) {
-  auto ret = new QSortFilterProxyModel(arg1);
-  return ret;
+void C_ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
+  ((QSortFilterProxyModel*)this_)->sort(column, order);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 149, column 10>
-//   // proto:  bool QSortFilterProxyModel::removeRows(int row, int count, const QModelIndex & parent);
-// _ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex removeRows(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:164
+// QStringList mimeTypes()
 extern "C"
-bool
-C_ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->removeRows(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK21QSortFilterProxyModel9mimeTypesEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->mimeTypes();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 128, column 17>
-//   // proto:  QModelIndex QSortFilterProxyModel::index(int row, int column, const QModelIndex & parent);
-// _ZNK21QSortFilterProxyModel5indexEiiRK11QModelIndex index(int, int, const class QModelIndex &)
+// virtual
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:165
+// Qt::DropActions supportedDropActions()
 extern "C"
-QModelIndex*
-C_ZNK21QSortFilterProxyModel5indexEiiRK11QModelIndex(void *qthis,
-int arg1,
-int arg2,
-const QModelIndex* arg3) {
-  auto ret =
-  ((QSortFilterProxyModel*)qthis)->index(arg1,
-arg2,
-*((const QModelIndex*)arg3));
-  return new QModelIndex(ret); // 5
+void C_ZNK21QSortFilterProxyModel20supportedDropActionsEv(void *this_) {
+  /*return*/ ((QSortFilterProxyModel*)this_)->supportedDropActions();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsortfilterproxymodel.h', line 102, column 10>
-//   // proto:  void QSortFilterProxyModel::setDynamicSortFilter(bool enable);
-// _ZN21QSortFilterProxyModel20setDynamicSortFilterEb setDynamicSortFilter(_Bool)
-extern "C"
-void
-C_ZN21QSortFilterProxyModel20setDynamicSortFilterEb(void *qthis,
-bool arg1) {
-  ((QSortFilterProxyModel*)qthis)->setDynamicSortFilter(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QSortFilterProxyModel_SlotProxy here
-class QSortFilterProxyModel_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSortFilterProxyModel_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qsortfilterproxymodel.moc"
-
-extern "C" {
-  QSortFilterProxyModel_SlotProxy* QSortFilterProxyModel_SlotProxy_new()
-  {
-    return new QSortFilterProxyModel_SlotProxy();
-  }
-};
-
-// <= body block end
-

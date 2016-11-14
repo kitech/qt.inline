@@ -1,560 +1,260 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qcompleter.h
-// dst-file: /src/widgets/qcompleter.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qcompleter.h
 #include <qcompleter.h>
+#include <QtWidgets>
 
-
-#include <qabstractitemmodel.h>
-#include <qstring.h>
-#include <qnamespace.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcompleter_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qcompleter.h:61
+// const QMetaObject * metaObject()
 extern "C"
-int QCompleter_Class_Size()
-{
-  return sizeof(QCompleter);
+void C_ZNK10QCompleter10metaObjectEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 107, column 10>
-//   // proto:  void QCompleter::setCaseSensitivity(Qt::CaseSensitivity caseSensitivity);
-// _ZN10QCompleter18setCaseSensitivityEN2Qt15CaseSensitivityE setCaseSensitivity(Qt::CaseSensitivity)
+// /usr/include/qt/QtWidgets/qcompleter.h:85
+// void QCompleter(class QObject *)
 extern "C"
-void
-C_ZN10QCompleter18setCaseSensitivityEN2Qt15CaseSensitivityE(void *qthis,
-Qt::CaseSensitivity* arg1) {
-  ((QCompleter*)qthis)->setCaseSensitivity(*((Qt::CaseSensitivity*)arg1));
+void* C_ZN10QCompleterC1EP7QObject(QObject * parent) {
+  return new QCompleter(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 85, column 5>
-//   // proto:  void QCompleter::QCompleter(QObject * parent);
+// /usr/include/qt/QtWidgets/qcompleter.h:86
+// void QCompleter(class QAbstractItemModel *, class QObject *)
 extern "C"
-QCompleter*
-C_ZN10QCompleterC2EP7QObject(QObject * arg1) {
-  auto ret = new QCompleter(arg1);
-  return ret;
+void* C_ZN10QCompleterC1EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
+  return new QCompleter(model, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 61, column 5>
-//   // proto:  const QMetaObject * QCompleter::metaObject();
-// _ZNK10QCompleter10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qcompleter.h:88
+// void QCompleter(const class QStringList &, class QObject *)
 extern "C"
-void*
-C_ZNK10QCompleter10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN10QCompleterC1ERK11QStringListP7QObject(const QStringList & completions, QObject * parent) {
+  return new QCompleter(completions, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 104, column 24>
-//   // proto:  QAbstractItemView * QCompleter::popup();
-// _ZNK10QCompleter5popupEv popup()
+// virtual
+// /usr/include/qt/QtWidgets/qcompleter.h:90
+// void ~QCompleter()
 extern "C"
-void*
-C_ZNK10QCompleter5popupEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->popup();
-  return (void*)ret;
+void C_ZN10QCompleterD1Ev(void *this_) {
+  delete (QCompleter*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 137, column 10>
-//   // proto:  void QCompleter::complete(const QRect & rect);
-// _ZN10QCompleter8completeERK5QRect complete(const class QRect &)
+// /usr/include/qt/QtWidgets/qcompleter.h:92
+// void setWidget(class QWidget *)
 extern "C"
-void
-C_ZN10QCompleter8completeERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QCompleter*)qthis)->complete(*((const QRect*)arg1));
+void C_ZN10QCompleter9setWidgetEP7QWidget(void *this_, QWidget * widget) {
+  ((QCompleter*)this_)->setWidget(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 150, column 10>
-//   // proto:  void QCompleter::activated(const QModelIndex & index);
-// _ZN10QCompleter9activatedERK11QModelIndex activated(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qcompleter.h:93
+// QWidget * widget()
 extern "C"
-void
-C_ZN10QCompleter9activatedERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QCompleter*)qthis)->activated(*((const QModelIndex*)arg1));
+void C_ZNK10QCompleter6widgetEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->widget();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 116, column 10>
-//   // proto:  void QCompleter::setCompletionRole(int role);
-// _ZN10QCompleter17setCompletionRoleEi setCompletionRole(int)
+// /usr/include/qt/QtWidgets/qcompleter.h:95
+// void setModel(class QAbstractItemModel *)
 extern "C"
-void
-C_ZN10QCompleter17setCompletionRoleEi(void *qthis,
-int arg1) {
-  ((QCompleter*)qthis)->setCompletionRole(arg1);
+void C_ZN10QCompleter8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * c) {
+  ((QCompleter*)this_)->setModel(c);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 124, column 9>
-//   // proto:  int QCompleter::completionCount();
-// _ZNK10QCompleter15completionCountEv completionCount()
+// /usr/include/qt/QtWidgets/qcompleter.h:96
+// QAbstractItemModel * model()
 extern "C"
-int
-C_ZNK10QCompleter15completionCountEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK10QCompleter5modelEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->model();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 88, column 5>
-//   // proto:  void QCompleter::QCompleter(const QStringList & completions, QObject * parent);
+// /usr/include/qt/QtWidgets/qcompleter.h:98
+// void setCompletionMode(enum QCompleter::CompletionMode)
 extern "C"
-QCompleter*
-C_ZN10QCompleterC2ERK11QStringListP7QObject(const QStringList* arg1,
-QObject * arg2) {
-  auto ret = new QCompleter(*((const QStringList*)arg1),
-arg2);
-  return ret;
+void C_ZN10QCompleter17setCompletionModeENS_14CompletionModeE(void *this_, QCompleter::CompletionMode mode) {
+  ((QCompleter*)this_)->setCompletionMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 128, column 17>
-//   // proto:  QModelIndex QCompleter::currentIndex();
-// _ZNK10QCompleter12currentIndexEv currentIndex()
+// /usr/include/qt/QtWidgets/qcompleter.h:99
+// QCompleter::CompletionMode completionMode()
 extern "C"
-QModelIndex*
-C_ZNK10QCompleter12currentIndexEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->currentIndex();
-  return new QModelIndex(ret); // 5
+void C_ZNK10QCompleter14completionModeEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 99, column 20>
-//   // proto:  QCompleter::CompletionMode QCompleter::completionMode();
-// _ZNK10QCompleter14completionModeEv completionMode()
+// /usr/include/qt/QtWidgets/qcompleter.h:101
+// void setFilterMode(Qt::MatchFlags)
 extern "C"
-QCompleter::CompletionMode
-C_ZNK10QCompleter14completionModeEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionMode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN10QCompleter13setFilterModeE6QFlagsIN2Qt9MatchFlagEE(void *this_, QFlags<Qt::MatchFlag> filterMode) {
+  ((QCompleter*)this_)->setFilterMode(filterMode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 141, column 21>
-//   // proto:  QString QCompleter::pathFromIndex(const QModelIndex & index);
-// _ZNK10QCompleter13pathFromIndexERK11QModelIndex pathFromIndex(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qcompleter.h:102
+// Qt::MatchFlags filterMode()
 extern "C"
-QString*
-C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QCompleter*)qthis)->pathFromIndex(*((const QModelIndex*)arg1));
-  return new QString(ret); // 5
+void C_ZNK10QCompleter10filterModeEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->filterMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 108, column 25>
-//   // proto:  Qt::CaseSensitivity QCompleter::caseSensitivity();
-// _ZNK10QCompleter15caseSensitivityEv caseSensitivity()
+// /usr/include/qt/QtWidgets/qcompleter.h:104
+// QAbstractItemView * popup()
 extern "C"
-Qt::CaseSensitivity
-C_ZNK10QCompleter15caseSensitivityEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->caseSensitivity();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK10QCompleter5popupEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->popup();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 152, column 10>
-//   // proto:  void QCompleter::highlighted(const QModelIndex & index);
-// _ZN10QCompleter11highlightedERK11QModelIndex highlighted(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qcompleter.h:105
+// void setPopup(class QAbstractItemView *)
 extern "C"
-void
-C_ZN10QCompleter11highlightedERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QCompleter*)qthis)->highlighted(*((const QModelIndex*)arg1));
+void C_ZN10QCompleter8setPopupEP17QAbstractItemView(void *this_, QAbstractItemView * popup) {
+  ((QCompleter*)this_)->setPopup(popup);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 122, column 10>
-//   // proto:  void QCompleter::setMaxVisibleItems(int maxItems);
-// _ZN10QCompleter18setMaxVisibleItemsEi setMaxVisibleItems(int)
+// /usr/include/qt/QtWidgets/qcompleter.h:107
+// void setCaseSensitivity(Qt::CaseSensitivity)
 extern "C"
-void
-C_ZN10QCompleter18setMaxVisibleItemsEi(void *qthis,
-int arg1) {
-  ((QCompleter*)qthis)->setMaxVisibleItems(arg1);
+void C_ZN10QCompleter18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity caseSensitivity) {
+  ((QCompleter*)this_)->setCaseSensitivity(caseSensitivity);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 114, column 10>
-//   // proto:  int QCompleter::completionColumn();
-// _ZNK10QCompleter16completionColumnEv completionColumn()
+// /usr/include/qt/QtWidgets/qcompleter.h:108
+// Qt::CaseSensitivity caseSensitivity()
 extern "C"
-int
-C_ZNK10QCompleter16completionColumnEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionColumn();
-  return ret; // 0 TypeKind.INT
+void C_ZNK10QCompleter15caseSensitivityEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->caseSensitivity();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 121, column 9>
-//   // proto:  int QCompleter::maxVisibleItems();
-// _ZNK10QCompleter15maxVisibleItemsEv maxVisibleItems()
+// /usr/include/qt/QtWidgets/qcompleter.h:110
+// void setModelSorting(enum QCompleter::ModelSorting)
 extern "C"
-int
-C_ZNK10QCompleter15maxVisibleItemsEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->maxVisibleItems();
-  return ret; // 0 TypeKind.INT
+void C_ZN10QCompleter15setModelSortingENS_12ModelSortingE(void *this_, QCompleter::ModelSorting sorting) {
+  ((QCompleter*)this_)->setModelSorting(sorting);
 }
-//   // proto:  void QCompleter::~QCompleter();
+// /usr/include/qt/QtWidgets/qcompleter.h:111
+// QCompleter::ModelSorting modelSorting()
 extern "C"
-void C_ZN10QCompleterD2Ev(void *qthis) {
-  delete (QCompleter*)qthis;
+void C_ZNK10QCompleter12modelSortingEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->modelSorting();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 138, column 10>
-//   // proto:  void QCompleter::setWrapAround(bool wrap);
-// _ZN10QCompleter13setWrapAroundEb setWrapAround(_Bool)
+// /usr/include/qt/QtWidgets/qcompleter.h:113
+// void setCompletionColumn(int)
 extern "C"
-void
-C_ZN10QCompleter13setWrapAroundEb(void *qthis,
-bool arg1) {
-  ((QCompleter*)qthis)->setWrapAround(arg1);
+void C_ZN10QCompleter19setCompletionColumnEi(void *this_, int column) {
+  ((QCompleter*)this_)->setCompletionColumn(column);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 142, column 25>
-//   // proto:  QStringList QCompleter::splitPath(const QString & path);
-// _ZNK10QCompleter9splitPathERK7QString splitPath(const class QString &)
+// /usr/include/qt/QtWidgets/qcompleter.h:114
+// int completionColumn()
 extern "C"
-QStringList*
-C_ZNK10QCompleter9splitPathERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QCompleter*)qthis)->splitPath(*((const QString*)arg1));
-  return new QStringList(ret); // 5
+void C_ZNK10QCompleter16completionColumnEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionColumn();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 96, column 25>
-//   // proto:  QAbstractItemModel * QCompleter::model();
-// _ZNK10QCompleter5modelEv model()
+// /usr/include/qt/QtWidgets/qcompleter.h:116
+// void setCompletionRole(int)
 extern "C"
-void*
-C_ZNK10QCompleter5modelEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->model();
-  return (void*)ret;
+void C_ZN10QCompleter17setCompletionRoleEi(void *this_, int role) {
+  ((QCompleter*)this_)->setCompletionRole(role);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 129, column 13>
-//   // proto:  QString QCompleter::currentCompletion();
-// _ZNK10QCompleter17currentCompletionEv currentCompletion()
+// /usr/include/qt/QtWidgets/qcompleter.h:117
+// int completionRole()
 extern "C"
-QString*
-C_ZNK10QCompleter17currentCompletionEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->currentCompletion();
-  return new QString(ret); // 5
+void C_ZNK10QCompleter14completionRoleEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionRole();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 111, column 18>
-//   // proto:  QCompleter::ModelSorting QCompleter::modelSorting();
-// _ZNK10QCompleter12modelSortingEv modelSorting()
+// /usr/include/qt/QtWidgets/qcompleter.h:119
+// bool wrapAround()
 extern "C"
-QCompleter::ModelSorting
-C_ZNK10QCompleter12modelSortingEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->modelSorting();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK10QCompleter10wrapAroundEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->wrapAround();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 113, column 10>
-//   // proto:  void QCompleter::setCompletionColumn(int column);
-// _ZN10QCompleter19setCompletionColumnEi setCompletionColumn(int)
+// /usr/include/qt/QtWidgets/qcompleter.h:121
+// int maxVisibleItems()
 extern "C"
-void
-C_ZN10QCompleter19setCompletionColumnEi(void *qthis,
-int arg1) {
-  ((QCompleter*)qthis)->setCompletionColumn(arg1);
+void C_ZNK10QCompleter15maxVisibleItemsEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->maxVisibleItems();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 98, column 10>
-//   // proto:  void QCompleter::setCompletionMode(QCompleter::CompletionMode mode);
-// _ZN10QCompleter17setCompletionModeENS_14CompletionModeE setCompletionMode(enum QCompleter::CompletionMode)
+// /usr/include/qt/QtWidgets/qcompleter.h:122
+// void setMaxVisibleItems(int)
 extern "C"
-void
-C_ZN10QCompleter17setCompletionModeENS_14CompletionModeE(void *qthis,
-QCompleter::CompletionMode arg1) {
-  ((QCompleter*)qthis)->setCompletionMode(arg1);
+void C_ZN10QCompleter18setMaxVisibleItemsEi(void *this_, int maxItems) {
+  ((QCompleter*)this_)->setMaxVisibleItems(maxItems);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 151, column 10>
-//   // proto:  void QCompleter::highlighted(const QString & text);
-// _ZN10QCompleter11highlightedERK7QString highlighted(const class QString &)
+// /usr/include/qt/QtWidgets/qcompleter.h:124
+// int completionCount()
 extern "C"
-void
-C_ZN10QCompleter11highlightedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCompleter*)qthis)->highlighted(*((const QString*)arg1));
+void C_ZNK10QCompleter15completionCountEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionCount();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 136, column 10>
-//   // proto:  void QCompleter::setCompletionPrefix(const QString & prefix);
-// _ZN10QCompleter19setCompletionPrefixERK7QString setCompletionPrefix(const class QString &)
+// /usr/include/qt/QtWidgets/qcompleter.h:125
+// bool setCurrentRow(int)
 extern "C"
-void
-C_ZN10QCompleter19setCompletionPrefixERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCompleter*)qthis)->setCompletionPrefix(*((const QString*)arg1));
+void C_ZN10QCompleter13setCurrentRowEi(void *this_, int row) {
+  /*return*/ ((QCompleter*)this_)->setCurrentRow(row);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 101, column 10>
-//   // proto:  void QCompleter::setFilterMode(Qt::MatchFlags filterMode);
-// _ZN10QCompleter13setFilterModeE6QFlagsIN2Qt9MatchFlagEE setFilterMode(Qt::MatchFlags)
+// /usr/include/qt/QtWidgets/qcompleter.h:126
+// int currentRow()
 extern "C"
-void
-C_ZN10QCompleter13setFilterModeE6QFlagsIN2Qt9MatchFlagEE(void *qthis,
-Qt::MatchFlags* arg1) {
-  ((QCompleter*)qthis)->setFilterMode(*((Qt::MatchFlags*)arg1));
+void C_ZNK10QCompleter10currentRowEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->currentRow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 131, column 25>
-//   // proto:  QAbstractItemModel * QCompleter::completionModel();
-// _ZNK10QCompleter15completionModelEv completionModel()
+// /usr/include/qt/QtWidgets/qcompleter.h:128
+// QModelIndex currentIndex()
 extern "C"
-void*
-C_ZNK10QCompleter15completionModelEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionModel();
-  return (void*)ret;
+void C_ZNK10QCompleter12currentIndexEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->currentIndex();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 125, column 10>
-//   // proto:  bool QCompleter::setCurrentRow(int row);
-// _ZN10QCompleter13setCurrentRowEi setCurrentRow(int)
+// /usr/include/qt/QtWidgets/qcompleter.h:129
+// QString currentCompletion()
 extern "C"
-bool
-C_ZN10QCompleter13setCurrentRowEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QCompleter*)qthis)->setCurrentRow(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QCompleter17currentCompletionEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->currentCompletion();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 126, column 9>
-//   // proto:  int QCompleter::currentRow();
-// _ZNK10QCompleter10currentRowEv currentRow()
+// /usr/include/qt/QtWidgets/qcompleter.h:131
+// QAbstractItemModel * completionModel()
 extern "C"
-int
-C_ZNK10QCompleter10currentRowEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->currentRow();
-  return ret; // 0 TypeKind.INT
+void C_ZNK10QCompleter15completionModelEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionModel();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 149, column 10>
-//   // proto:  void QCompleter::activated(const QString & text);
-// _ZN10QCompleter9activatedERK7QString activated(const class QString &)
+// /usr/include/qt/QtWidgets/qcompleter.h:133
+// QString completionPrefix()
 extern "C"
-void
-C_ZN10QCompleter9activatedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QCompleter*)qthis)->activated(*((const QString*)arg1));
+void C_ZNK10QCompleter16completionPrefixEv(void *this_) {
+  /*return*/ ((QCompleter*)this_)->completionPrefix();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 110, column 10>
-//   // proto:  void QCompleter::setModelSorting(QCompleter::ModelSorting sorting);
-// _ZN10QCompleter15setModelSortingENS_12ModelSortingE setModelSorting(enum QCompleter::ModelSorting)
+// /usr/include/qt/QtWidgets/qcompleter.h:136
+// void setCompletionPrefix(const class QString &)
 extern "C"
-void
-C_ZN10QCompleter15setModelSortingENS_12ModelSortingE(void *qthis,
-QCompleter::ModelSorting arg1) {
-  ((QCompleter*)qthis)->setModelSorting(arg1);
+void C_ZN10QCompleter19setCompletionPrefixERK7QString(void *this_, const QString & prefix) {
+  ((QCompleter*)this_)->setCompletionPrefix(prefix);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 95, column 10>
-//   // proto:  void QCompleter::setModel(QAbstractItemModel * c);
-// _ZN10QCompleter8setModelEP18QAbstractItemModel setModel(class QAbstractItemModel *)
+// /usr/include/qt/QtWidgets/qcompleter.h:137
+// void complete(const class QRect &)
 extern "C"
-void
-C_ZN10QCompleter8setModelEP18QAbstractItemModel(void *qthis,
-QAbstractItemModel * arg1) {
-  ((QCompleter*)qthis)->setModel(arg1);
+void C_ZN10QCompleter8completeERK5QRect(void *this_, const QRect & rect) {
+  ((QCompleter*)this_)->complete(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 119, column 10>
-//   // proto:  bool QCompleter::wrapAround();
-// _ZNK10QCompleter10wrapAroundEv wrapAround()
+// /usr/include/qt/QtWidgets/qcompleter.h:138
+// void setWrapAround(_Bool)
 extern "C"
-bool
-C_ZNK10QCompleter10wrapAroundEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->wrapAround();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QCompleter13setWrapAroundEb(void *this_, bool wrap) {
+  ((QCompleter*)this_)->setWrapAround(wrap);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 86, column 5>
-//   // proto:  void QCompleter::QCompleter(QAbstractItemModel * model, QObject * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qcompleter.h:141
+// QString pathFromIndex(const class QModelIndex &)
 extern "C"
-QCompleter*
-C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * arg1,
-QObject * arg2) {
-  auto ret = new QCompleter(arg1,
-arg2);
-  return ret;
+void C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QCompleter*)this_)->pathFromIndex(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 105, column 10>
-//   // proto:  void QCompleter::setPopup(QAbstractItemView * popup);
-// _ZN10QCompleter8setPopupEP17QAbstractItemView setPopup(class QAbstractItemView *)
+// virtual
+// /usr/include/qt/QtWidgets/qcompleter.h:142
+// QStringList splitPath(const class QString &)
 extern "C"
-void
-C_ZN10QCompleter8setPopupEP17QAbstractItemView(void *qthis,
-QAbstractItemView * arg1) {
-  ((QCompleter*)qthis)->setPopup(arg1);
+void C_ZNK10QCompleter9splitPathERK7QString(void *this_, const QString & path) {
+  /*return*/ ((QCompleter*)this_)->splitPath(path);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 102, column 20>
-//   // proto:  Qt::MatchFlags QCompleter::filterMode();
-// _ZNK10QCompleter10filterModeEv filterMode()
+// /usr/include/qt/QtWidgets/qcompleter.h:149
+// void activated(const class QString &)
 extern "C"
-QFlags<Qt::MatchFlag>*
-C_ZNK10QCompleter10filterModeEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->filterMode();
-  return new QFlags<Qt::MatchFlag>(ret); // 5
+void C_ZN10QCompleter9activatedERK7QString(void *this_, const QString & text) {
+  ((QCompleter*)this_)->activated(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 93, column 14>
-//   // proto:  QWidget * QCompleter::widget();
-// _ZNK10QCompleter6widgetEv widget()
+// /usr/include/qt/QtWidgets/qcompleter.h:150
+// void activated(const class QModelIndex &)
 extern "C"
-void*
-C_ZNK10QCompleter6widgetEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->widget();
-  return (void*)ret;
+void C_ZN10QCompleter9activatedERK11QModelIndex(void *this_, const QModelIndex & index) {
+  ((QCompleter*)this_)->activated(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 117, column 10>
-//   // proto:  int QCompleter::completionRole();
-// _ZNK10QCompleter14completionRoleEv completionRole()
+// /usr/include/qt/QtWidgets/qcompleter.h:151
+// void highlighted(const class QString &)
 extern "C"
-int
-C_ZNK10QCompleter14completionRoleEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionRole();
-  return ret; // 0 TypeKind.INT
+void C_ZN10QCompleter11highlightedERK7QString(void *this_, const QString & text) {
+  ((QCompleter*)this_)->highlighted(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 133, column 13>
-//   // proto:  QString QCompleter::completionPrefix();
-// _ZNK10QCompleter16completionPrefixEv completionPrefix()
+// /usr/include/qt/QtWidgets/qcompleter.h:152
+// void highlighted(const class QModelIndex &)
 extern "C"
-QString*
-C_ZNK10QCompleter16completionPrefixEv(void *qthis) {
-  auto ret =
-  ((QCompleter*)qthis)->completionPrefix();
-  return new QString(ret); // 5
+void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, const QModelIndex & index) {
+  ((QCompleter*)this_)->highlighted(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcompleter.h', line 92, column 10>
-//   // proto:  void QCompleter::setWidget(QWidget * widget);
-// _ZN10QCompleter9setWidgetEP7QWidget setWidget(class QWidget *)
-extern "C"
-void
-C_ZN10QCompleter9setWidgetEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QCompleter*)qthis)->setWidget(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QCompleter_SlotProxy here
-class QCompleter_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QCompleter_SlotProxy():QObject(){}
-
-public slots:
-  // highlighted(const class QModelIndex &)
-  void slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0);
-public:
-  void (*slot_func__ZN10QCompleter11highlightedERK11QModelIndex)(void* rsfptr, const QModelIndex & arg0) = NULL;
-public slots:
-  // activated(const class QString &)
-  void slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN10QCompleter9activatedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public slots:
-  // activated(const class QModelIndex &)
-  void slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0);
-public:
-  void (*slot_func__ZN10QCompleter9activatedERK11QModelIndex)(void* rsfptr, const QModelIndex & arg0) = NULL;
-public slots:
-  // highlighted(const class QString &)
-  void slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN10QCompleter11highlightedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qcompleter.moc"
-
-extern "C" {
-  QCompleter_SlotProxy* QCompleter_SlotProxy_new()
-  {
-    return new QCompleter_SlotProxy();
-  }
-};
-
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0) {
-  if (this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex != NULL) {
-    // do smth...
-    this->slot_func__ZN10QCompleter11highlightedERK11QModelIndex(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK11QModelIndex(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QCompleter_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter11highlightedERK11QModelIndex))ffifptr;
-  QObject::connect((QCompleter*)sender, SIGNAL(highlighted(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN10QCompleter11highlightedERK11QModelIndex(const QModelIndex & arg0)));
-  return that;
-}
-extern "C"
-void QCompleter_SlotProxy_disconnect__ZN10QCompleter11highlightedERK11QModelIndex(QCompleter_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN10QCompleter9activatedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN10QCompleter9activatedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QCompleter_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN10QCompleter9activatedERK7QString = (decltype(that->slot_func__ZN10QCompleter9activatedERK7QString))ffifptr;
-  QObject::connect((QCompleter*)sender, SIGNAL(activated(const class QString &)), that, SLOT(slot_proxy_func__ZN10QCompleter9activatedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QCompleter_SlotProxy_disconnect__ZN10QCompleter9activatedERK7QString(QCompleter_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0) {
-  if (this->slot_func__ZN10QCompleter9activatedERK11QModelIndex != NULL) {
-    // do smth...
-    this->slot_func__ZN10QCompleter9activatedERK11QModelIndex(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter9activatedERK11QModelIndex(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QCompleter_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN10QCompleter9activatedERK11QModelIndex = (decltype(that->slot_func__ZN10QCompleter9activatedERK11QModelIndex))ffifptr;
-  QObject::connect((QCompleter*)sender, SIGNAL(activated(const class QModelIndex &)), that, SLOT(slot_proxy_func__ZN10QCompleter9activatedERK11QModelIndex(const QModelIndex & arg0)));
-  return that;
-}
-extern "C"
-void QCompleter_SlotProxy_disconnect__ZN10QCompleter9activatedERK11QModelIndex(QCompleter_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QCompleter_SlotProxy::slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN10QCompleter11highlightedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN10QCompleter11highlightedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QCompleter_SlotProxy_connect__ZN10QCompleter11highlightedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QCompleter_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN10QCompleter11highlightedERK7QString = (decltype(that->slot_func__ZN10QCompleter11highlightedERK7QString))ffifptr;
-  QObject::connect((QCompleter*)sender, SIGNAL(highlighted(const class QString &)), that, SLOT(slot_proxy_func__ZN10QCompleter11highlightedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QCompleter_SlotProxy_disconnect__ZN10QCompleter11highlightedERK7QString(QCompleter_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

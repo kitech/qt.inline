@@ -1,337 +1,150 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qcommonstyle.h
-// dst-file: /src/widgets/qcommonstyle.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qcommonstyle.h
 #include <qcommonstyle.h>
+#include <QtWidgets>
 
-
-#include <qpixmap.h>
-#include <qicon.h>
-#include <qrect.h>
-#include <qsize.h>
-#include <qstyle.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcommonstyle_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:51
+// const QMetaObject * metaObject()
 extern "C"
-int QCommonStyle_Class_Size()
-{
-  return sizeof(QCommonStyle);
+void C_ZNK12QCommonStyle10metaObjectEv(void *this_) {
+  /*return*/ ((QCommonStyle*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 83, column 9>
-//   // proto:  int QCommonStyle::layoutSpacing(QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget);
-// _ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget layoutSpacing(class QSizePolicy::ControlType, class QSizePolicy::ControlType, Qt::Orientation, const class QStyleOption *, const class QWidget *)
+// /usr/include/qt/QtWidgets/qcommonstyle.h:54
+// void QCommonStyle()
 extern "C"
-int
-C_ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget(void *qthis,
-QSizePolicy::ControlType* arg1,
-QSizePolicy::ControlType* arg2,
-Qt::Orientation* arg3,
-const QStyleOption * arg4,
-const QWidget * arg5) {
-  auto ret =
-  ((QCommonStyle*)qthis)->layoutSpacing(*((QSizePolicy::ControlType*)arg1),
-*((QSizePolicy::ControlType*)arg2),
-*((Qt::Orientation*)arg3),
-arg4,
-arg5);
-  return ret; // 0 TypeKind.INT
+void* C_ZN12QCommonStyleC1Ev() {
+  return new QCommonStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 62, column 10>
-//   // proto:  void QCommonStyle::drawComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPainter * p, const QWidget * w);
-// _ZNK12QCommonStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget drawComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, class QPainter *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:55
+// void ~QCommonStyle()
 extern "C"
-void
-C_ZNK12QCommonStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget(void *qthis,
-QStyle::ComplexControl arg1,
-const QStyleOptionComplex * arg2,
-QPainter * arg3,
-const QWidget * arg4) {
-  ((QCommonStyle*)qthis)->drawComplexControl(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZN12QCommonStyleD1Ev(void *this_) {
+  delete (QCommonStyle*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 89, column 10>
-//   // proto:  void QCommonStyle::polish(QWidget * widget);
-// _ZN12QCommonStyle6polishEP7QWidget polish(class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:57
+// void drawPrimitive(enum QStyle::PrimitiveElement, const class QStyleOption *, class QPainter *, const class QWidget *)
 extern "C"
-void
-C_ZN12QCommonStyle6polishEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QCommonStyle*)qthis)->polish(arg1);
+void C_ZNK12QCommonStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget(void *this_, QStyle::PrimitiveElement pe, const QStyleOption * opt, QPainter * p, const QWidget * w) {
+  ((QCommonStyle*)this_)->drawPrimitive(pe, opt, p, w);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 81, column 13>
-//   // proto:  QPixmap QCommonStyle::generatedIconPixmap(QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt);
-// _ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:59
+// void drawControl(enum QStyle::ControlElement, const class QStyleOption *, class QPainter *, const class QWidget *)
 extern "C"
-QPixmap*
-C_ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *qthis,
-QIcon::Mode* arg1,
-const QPixmap* arg2,
-const QStyleOption * arg3) {
-  auto ret =
-  ((QCommonStyle*)qthis)->generatedIconPixmap(*((QIcon::Mode*)arg1),
-*((const QPixmap*)arg2),
-arg3);
-  return new QPixmap(ret); // 5
+void C_ZNK12QCommonStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget(void *this_, QStyle::ControlElement element, const QStyleOption * opt, QPainter * p, const QWidget * w) {
+  ((QCommonStyle*)this_)->drawControl(element, opt, p, w);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 76, column 11>
-//   // proto:  QIcon QCommonStyle::standardIcon(QStyle::StandardPixmap standardIcon, const QStyleOption * opt, const QWidget * widget);
-// _ZNK12QCommonStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget standardIcon(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:61
+// QRect subElementRect(enum QStyle::SubElement, const class QStyleOption *, const class QWidget *)
 extern "C"
-QIcon*
-C_ZNK12QCommonStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget(void *qthis,
-QStyle::StandardPixmap arg1,
-const QStyleOption * arg2,
-const QWidget * arg3) {
-  auto ret =
-  ((QCommonStyle*)qthis)->standardIcon(arg1,
-arg2,
-arg3);
-  return new QIcon(ret); // 5
+void C_ZNK12QCommonStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget(void *this_, QStyle::SubElement r, const QStyleOption * opt, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->subElementRect(r, opt, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 66, column 11>
-//   // proto:  QRect QCommonStyle::subControlRect(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QStyle::SubControl sc, const QWidget * w);
-// _ZNK12QCommonStyle14subControlRectEN6QStyle14ComplexControlEPK19QStyleOptionComplexNS0_10SubControlEPK7QWidget subControlRect(enum QStyle::ComplexControl, const class QStyleOptionComplex *, enum QStyle::SubControl, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:62
+// void drawComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, class QPainter *, const class QWidget *)
 extern "C"
-QRect*
-C_ZNK12QCommonStyle14subControlRectEN6QStyle14ComplexControlEPK19QStyleOptionComplexNS0_10SubControlEPK7QWidget(void *qthis,
-QStyle::ComplexControl arg1,
-const QStyleOptionComplex * arg2,
-QStyle::SubControl arg3,
-const QWidget * arg4) {
-  auto ret =
-  ((QCommonStyle*)qthis)->subControlRect(arg1,
-arg2,
-arg3,
-arg4);
-  return new QRect(ret); // 5
+void C_ZNK12QCommonStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexP8QPainterPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPainter * p, const QWidget * w) {
+  ((QCommonStyle*)this_)->drawComplexControl(cc, opt, p, w);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 87, column 10>
-//   // proto:  void QCommonStyle::polish(QPalette & );
-// _ZN12QCommonStyle6polishER8QPalette polish(class QPalette &)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:64
+// QStyle::SubControl hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
 extern "C"
-void
-C_ZN12QCommonStyle6polishER8QPalette(void *qthis,
-QPalette* arg1) {
-  ((QCommonStyle*)qthis)->polish(*((QPalette*)arg1));
+void C_ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * w) {
+  /*return*/ ((QCommonStyle*)this_)->hitTestComplexControl(cc, opt, pt, w);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 90, column 10>
-//   // proto:  void QCommonStyle::unpolish(QWidget * widget);
-// _ZN12QCommonStyle8unpolishEP7QWidget unpolish(class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:66
+// QRect subControlRect(enum QStyle::ComplexControl, const class QStyleOptionComplex *, enum QStyle::SubControl, const class QWidget *)
 extern "C"
-void
-C_ZN12QCommonStyle8unpolishEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QCommonStyle*)qthis)->unpolish(arg1);
+void C_ZNK12QCommonStyle14subControlRectEN6QStyle14ComplexControlEPK19QStyleOptionComplexNS0_10SubControlEPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QStyle::SubControl sc, const QWidget * w) {
+  /*return*/ ((QCommonStyle*)this_)->subControlRect(cc, opt, sc, w);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 68, column 11>
-//   // proto:  QSize QCommonStyle::sizeFromContents(QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * widget);
-// _ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:68
+// QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
-QSize*
-C_ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *qthis,
-QStyle::ContentsType arg1,
-const QStyleOption * arg2,
-const QSize* arg3,
-const QWidget * arg4) {
-  auto ret =
-  ((QCommonStyle*)qthis)->sizeFromContents(arg1,
-arg2,
-*((const QSize*)arg3),
-arg4);
-  return new QSize(ret); // 5
+void C_ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->sizeFromContents(ct, opt, contentsSize, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 91, column 10>
-//   // proto:  void QCommonStyle::unpolish(QApplication * application);
-// _ZN12QCommonStyle8unpolishEP12QApplication unpolish(class QApplication *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:71
+// int pixelMetric(enum QStyle::PixelMetric, const class QStyleOption *, const class QWidget *)
 extern "C"
-void
-C_ZN12QCommonStyle8unpolishEP12QApplication(void *qthis,
-QApplication * arg1) {
-  ((QCommonStyle*)qthis)->unpolish(arg1);
+void C_ZNK12QCommonStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget(void *this_, QStyle::PixelMetric m, const QStyleOption * opt, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->pixelMetric(m, opt, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 73, column 9>
-//   // proto:  int QCommonStyle::styleHint(QStyle::StyleHint sh, const QStyleOption * opt, const QWidget * w, QStyleHintReturn * shret);
-// _ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn styleHint(enum QStyle::StyleHint, const class QStyleOption *, const class QWidget *, class QStyleHintReturn *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:73
+// int styleHint(enum QStyle::StyleHint, const class QStyleOption *, const class QWidget *, class QStyleHintReturn *)
 extern "C"
-int
-C_ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn(void *qthis,
-QStyle::StyleHint arg1,
-const QStyleOption * arg2,
-const QWidget * arg3,
-QStyleHintReturn * arg4) {
-  auto ret =
-  ((QCommonStyle*)qthis)->styleHint(arg1,
-arg2,
-arg3,
-arg4);
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn(void *this_, QStyle::StyleHint sh, const QStyleOption * opt, const QWidget * w, QStyleHintReturn * shret) {
+  /*return*/ ((QCommonStyle*)this_)->styleHint(sh, opt, w, shret);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 88, column 10>
-//   // proto:  void QCommonStyle::polish(QApplication * app);
-// _ZN12QCommonStyle6polishEP12QApplication polish(class QApplication *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:76
+// QIcon standardIcon(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
 extern "C"
-void
-C_ZN12QCommonStyle6polishEP12QApplication(void *qthis,
-QApplication * arg1) {
-  ((QCommonStyle*)qthis)->polish(arg1);
+void C_ZNK12QCommonStyle12standardIconEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap standardIcon, const QStyleOption * opt, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->standardIcon(standardIcon, opt, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 54, column 5>
-//   // proto:  void QCommonStyle::QCommonStyle();
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:78
+// QPixmap standardPixmap(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
 extern "C"
-QCommonStyle*
-C_ZN12QCommonStyleC2Ev() {
-  auto ret = new QCommonStyle();
-  return ret;
+void C_ZNK12QCommonStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget(void *this_, QStyle::StandardPixmap sp, const QStyleOption * opt, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->standardPixmap(sp, opt, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 57, column 10>
-//   // proto:  void QCommonStyle::drawPrimitive(QStyle::PrimitiveElement pe, const QStyleOption * opt, QPainter * p, const QWidget * w);
-// _ZNK12QCommonStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget drawPrimitive(enum QStyle::PrimitiveElement, const class QStyleOption *, class QPainter *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:81
+// QPixmap generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
 extern "C"
-void
-C_ZNK12QCommonStyle13drawPrimitiveEN6QStyle16PrimitiveElementEPK12QStyleOptionP8QPainterPK7QWidget(void *qthis,
-QStyle::PrimitiveElement arg1,
-const QStyleOption * arg2,
-QPainter * arg3,
-const QWidget * arg4) {
-  ((QCommonStyle*)qthis)->drawPrimitive(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt) {
+  /*return*/ ((QCommonStyle*)this_)->generatedIconPixmap(iconMode, pixmap, opt);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 61, column 11>
-//   // proto:  QRect QCommonStyle::subElementRect(QStyle::SubElement r, const QStyleOption * opt, const QWidget * widget);
-// _ZNK12QCommonStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget subElementRect(enum QStyle::SubElement, const class QStyleOption *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:83
+// int layoutSpacing(class QSizePolicy::ControlType, class QSizePolicy::ControlType, Qt::Orientation, const class QStyleOption *, const class QWidget *)
 extern "C"
-QRect*
-C_ZNK12QCommonStyle14subElementRectEN6QStyle10SubElementEPK12QStyleOptionPK7QWidget(void *qthis,
-QStyle::SubElement arg1,
-const QStyleOption * arg2,
-const QWidget * arg3) {
-  auto ret =
-  ((QCommonStyle*)qthis)->subElementRect(arg1,
-arg2,
-arg3);
-  return new QRect(ret); // 5
+void C_ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget(void *this_, QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget) {
+  /*return*/ ((QCommonStyle*)this_)->layoutSpacing(control1, control2, orientation, option, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 64, column 16>
-//   // proto:  QStyle::SubControl QCommonStyle::hitTestComplexControl(QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * w);
-// _ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:87
+// void polish(class QPalette &)
 extern "C"
-QStyle::SubControl
-C_ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *qthis,
-QStyle::ComplexControl arg1,
-const QStyleOptionComplex * arg2,
-const QPoint* arg3,
-const QWidget * arg4) {
-  auto ret =
-  ((QCommonStyle*)qthis)->hitTestComplexControl(arg1,
-arg2,
-*((const QPoint*)arg3),
-arg4);
-  return ret; // 0 TypeKind.ENUM
+void C_ZN12QCommonStyle6polishER8QPalette(void *this_, QPalette & a0) {
+  ((QCommonStyle*)this_)->polish(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 71, column 9>
-//   // proto:  int QCommonStyle::pixelMetric(QStyle::PixelMetric m, const QStyleOption * opt, const QWidget * widget);
-// _ZNK12QCommonStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget pixelMetric(enum QStyle::PixelMetric, const class QStyleOption *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:88
+// void polish(class QApplication *)
 extern "C"
-int
-C_ZNK12QCommonStyle11pixelMetricEN6QStyle11PixelMetricEPK12QStyleOptionPK7QWidget(void *qthis,
-QStyle::PixelMetric arg1,
-const QStyleOption * arg2,
-const QWidget * arg3) {
-  auto ret =
-  ((QCommonStyle*)qthis)->pixelMetric(arg1,
-arg2,
-arg3);
-  return ret; // 0 TypeKind.INT
+void C_ZN12QCommonStyle6polishEP12QApplication(void *this_, QApplication * app) {
+  ((QCommonStyle*)this_)->polish(app);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 51, column 5>
-//   // proto:  const QMetaObject * QCommonStyle::metaObject();
-// _ZNK12QCommonStyle10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:89
+// void polish(class QWidget *)
 extern "C"
-void*
-C_ZNK12QCommonStyle10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QCommonStyle*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN12QCommonStyle6polishEP7QWidget(void *this_, QWidget * widget) {
+  ((QCommonStyle*)this_)->polish(widget);
 }
-//   // proto:  void QCommonStyle::~QCommonStyle();
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:90
+// void unpolish(class QWidget *)
 extern "C"
-void C_ZN12QCommonStyleD2Ev(void *qthis) {
-  delete (QCommonStyle*)qthis;
+void C_ZN12QCommonStyle8unpolishEP7QWidget(void *this_, QWidget * widget) {
+  ((QCommonStyle*)this_)->unpolish(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 78, column 13>
-//   // proto:  QPixmap QCommonStyle::standardPixmap(QStyle::StandardPixmap sp, const QStyleOption * opt, const QWidget * widget);
-// _ZNK12QCommonStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget standardPixmap(enum QStyle::StandardPixmap, const class QStyleOption *, const class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qcommonstyle.h:91
+// void unpolish(class QApplication *)
 extern "C"
-QPixmap*
-C_ZNK12QCommonStyle14standardPixmapEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget(void *qthis,
-QStyle::StandardPixmap arg1,
-const QStyleOption * arg2,
-const QWidget * arg3) {
-  auto ret =
-  ((QCommonStyle*)qthis)->standardPixmap(arg1,
-arg2,
-arg3);
-  return new QPixmap(ret); // 5
+void C_ZN12QCommonStyle8unpolishEP12QApplication(void *this_, QApplication * application) {
+  ((QCommonStyle*)this_)->unpolish(application);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qcommonstyle.h', line 59, column 10>
-//   // proto:  void QCommonStyle::drawControl(QStyle::ControlElement element, const QStyleOption * opt, QPainter * p, const QWidget * w);
-// _ZNK12QCommonStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget drawControl(enum QStyle::ControlElement, const class QStyleOption *, class QPainter *, const class QWidget *)
-extern "C"
-void
-C_ZNK12QCommonStyle11drawControlEN6QStyle14ControlElementEPK12QStyleOptionP8QPainterPK7QWidget(void *qthis,
-QStyle::ControlElement arg1,
-const QStyleOption * arg2,
-QPainter * arg3,
-const QWidget * arg4) {
-  ((QCommonStyle*)qthis)->drawControl(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <= ext block end
-
-// body block begin =>
-// QCommonStyle_SlotProxy here
-class QCommonStyle_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QCommonStyle_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qcommonstyle.moc"
-
-extern "C" {
-  QCommonStyle_SlotProxy* QCommonStyle_SlotProxy_new()
-  {
-    return new QCommonStyle_SlotProxy();
-  }
-};
-
-// <= body block end
-

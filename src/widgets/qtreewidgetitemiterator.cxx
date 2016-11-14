@@ -1,72 +1,22 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qtreewidgetitemiterator.h
-// dst-file: /src/widgets/qtreewidgetitemiterator.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #include <qtreewidgetitemiterator.h>
+#include <QtWidgets>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qtreewidgetitemiterator_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
+// void QTreeWidgetItemIterator(class QTreeWidget *, IteratorFlags)
 extern "C"
-int QTreeWidgetItemIterator_Class_Size()
-{
-  return sizeof(QTreeWidgetItemIterator);
+void* C_ZN23QTreeWidgetItemIteratorC1EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
+  return new QTreeWidgetItemIterator(widget, flags);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidgetitemiterator.h', line 86, column 14>
-//   // proto:  void QTreeWidgetItemIterator::QTreeWidgetItemIterator(QTreeWidget * widget, IteratorFlags flags);
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:87
+// void QTreeWidgetItemIterator(class QTreeWidgetItem *, IteratorFlags)
 extern "C"
-QTreeWidgetItemIterator*
-C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * arg1,
-QTreeWidgetItemIterator::IteratorFlags arg2) {
-  auto ret = new QTreeWidgetItemIterator(arg1,
-arg2);
-  return ret;
+void* C_ZN23QTreeWidgetItemIteratorC1EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
+  return new QTreeWidgetItemIterator(item, flags);
 }
-//   // proto:  void QTreeWidgetItemIterator::~QTreeWidgetItemIterator();
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:88
+// void ~QTreeWidgetItemIterator()
 extern "C"
-void C_ZN23QTreeWidgetItemIteratorD2Ev(void *qthis) {
-  delete (QTreeWidgetItemIterator*)qthis;
+void C_ZN23QTreeWidgetItemIteratorD1Ev(void *this_) {
+  delete (QTreeWidgetItemIterator*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidgetitemiterator.h', line 87, column 14>
-//   // proto:  void QTreeWidgetItemIterator::QTreeWidgetItemIterator(QTreeWidgetItem * item, IteratorFlags flags);
-extern "C"
-QTreeWidgetItemIterator*
-C_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE(QTreeWidgetItem * arg1,
-QTreeWidgetItemIterator::IteratorFlags arg2) {
-  auto ret = new QTreeWidgetItemIterator(arg1,
-arg2);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtreewidgetitemiterator.h', line 85, column 5>
-//   // proto:  void QTreeWidgetItemIterator::QTreeWidgetItemIterator(const QTreeWidgetItemIterator & it);
-extern "C"
-QTreeWidgetItemIterator*
-C_ZN23QTreeWidgetItemIteratorC2ERKS_(const QTreeWidgetItemIterator* arg1) {
-  auto ret = new QTreeWidgetItemIterator(*((const QTreeWidgetItemIterator*)arg1));
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,531 +1,206 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qmatrix.h
-// dst-file: /src/gui/qmatrix.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qmatrix.h
 #include <qmatrix.h>
+#include <QtGui>
 
-
-#include <qglobal.h>
-#include <qpoint.h>
-#include <qpolygon.h>
-#include <qregion.h>
-#include <qline.h>
-#include <qpainterpath.h>
-#include <qrect.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmatrix_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 81, column 11>
-//   // proto:  qreal QMatrix::dx();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->dx();
-    flythis.dx();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix2dxEv dx()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 82, column 11>
-//   // proto:  qreal QMatrix::dy();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->dy();
-    flythis.dy();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix2dyEv dy()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 69, column 5>
-//   // proto:  void QMatrix::QMatrix(QMatrix && other);
-if (true) {
-  auto f = [](QMatrix && arg1) {
-    new QMatrix(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 108, column 11>
-//   // proto:  qreal QMatrix::determinant();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->determinant();
-    flythis.determinant();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix11determinantEv determinant()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 79, column 11>
-//   // proto:  qreal QMatrix::m21();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->m21();
-    flythis.m21();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix3m21Ev m21()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 77, column 11>
-//   // proto:  qreal QMatrix::m11();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->m11();
-    flythis.m11();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix3m11Ev m11()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 59, column 21>
-//   // proto:  void QMatrix::QMatrix(Qt::Initialization );
-if (true) {
-  auto f = [](Qt::Initialization arg1) {
-    new QMatrix(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 100, column 17>
-//   // proto:  bool QMatrix::isIdentity();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->isIdentity();
-    flythis.isIdentity();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix10isIdentityEv isIdentity()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 78, column 11>
-//   // proto:  qreal QMatrix::m12();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->m12();
-    flythis.m12();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix3m12Ev m12()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 107, column 10>
-//   // proto:  bool QMatrix::isInvertible();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->isInvertible();
-    flythis.isInvertible();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix12isInvertibleEv isInvertible()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 80, column 11>
-//   // proto:  qreal QMatrix::m22();
-if (true) {
-  auto f = [](QMatrix flythis) {
-    ((QMatrix*)0)->m22();
-    flythis.m22();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QMatrix3m22Ev m22()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:59
+// void QMatrix(Qt::Initialization)
 extern "C"
-int QMatrix_Class_Size()
-{
-  return sizeof(QMatrix);
+void* C_ZN7QMatrixC1EN2Qt14InitializationE(Qt::Initialization a0) {
+  return new QMatrix(a0);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 81, column 11>
-//   // proto:  qreal QMatrix::dx();
-// _ZNK7QMatrix2dxEv dx()
+// /usr/include/qt/QtGui/qmatrix.h:60
+// void QMatrix()
 extern "C"
-double
-C_ZNK7QMatrix2dxEv(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->dx();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN7QMatrixC1Ev() {
+  return new QMatrix();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 82, column 11>
-//   // proto:  qreal QMatrix::dy();
-// _ZNK7QMatrix2dyEv dy()
+// /usr/include/qt/QtGui/qmatrix.h:61
+// void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-double
-C_ZNK7QMatrix2dyEv(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->dy();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN7QMatrixC1Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
+  return new QMatrix(m11, m12, m21, m22, dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 103, column 14>
-//   // proto:  QMatrix & QMatrix::scale(qreal sx, qreal sy);
-// _ZN7QMatrix5scaleEdd scale(qreal, qreal)
+// /usr/include/qt/QtGui/qmatrix.h:74
+// void setMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-QMatrix*
-C_ZN7QMatrix5scaleEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QMatrix*)qthis)->scale(arg1,
-arg2);
-  return new QMatrix(ret); // 5
+void C_ZN7QMatrix9setMatrixEdddddd(void *this_, qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
+  ((QMatrix*)this_)->setMatrix(m11, m12, m21, m22, dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 69, column 5>
-//   // proto:  void QMatrix::QMatrix(QMatrix && other);
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:77
+// qreal m11()
 extern "C"
-QMatrix*
-C_ZN7QMatrixC2EOS_(QMatrix* arg1) {
-  auto ret = new QMatrix(*((QMatrix*)arg1));
-  return ret;
+void C_ZNK7QMatrix3m11Ev(void *this_) {
+  /*return*/ ((QMatrix*)this_)->m11();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 102, column 14>
-//   // proto:  QMatrix & QMatrix::translate(qreal dx, qreal dy);
-// _ZN7QMatrix9translateEdd translate(qreal, qreal)
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:78
+// qreal m12()
 extern "C"
-QMatrix*
-C_ZN7QMatrix9translateEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QMatrix*)qthis)->translate(arg1,
-arg2);
-  return new QMatrix(ret); // 5
+void C_ZNK7QMatrix3m12Ev(void *this_) {
+  /*return*/ ((QMatrix*)this_)->m12();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 108, column 11>
-//   // proto:  qreal QMatrix::determinant();
-// _ZNK7QMatrix11determinantEv determinant()
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:79
+// qreal m21()
 extern "C"
-double
-C_ZNK7QMatrix11determinantEv(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->determinant();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QMatrix3m21Ev(void *this_) {
+  /*return*/ ((QMatrix*)this_)->m21();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 104, column 14>
-//   // proto:  QMatrix & QMatrix::shear(qreal sh, qreal sv);
-// _ZN7QMatrix5shearEdd shear(qreal, qreal)
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:80
+// qreal m22()
 extern "C"
-QMatrix*
-C_ZN7QMatrix5shearEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QMatrix*)qthis)->shear(arg1,
-arg2);
-  return new QMatrix(ret); // 5
+void C_ZNK7QMatrix3m22Ev(void *this_) {
+  /*return*/ ((QMatrix*)this_)->m22();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 60, column 5>
-//   // proto:  void QMatrix::QMatrix();
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:81
+// qreal dx()
 extern "C"
-QMatrix*
-C_ZN7QMatrixC2Ev() {
-  auto ret = new QMatrix();
-  return ret;
+void C_ZNK7QMatrix2dxEv(void *this_) {
+  /*return*/ ((QMatrix*)this_)->dx();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 79, column 11>
-//   // proto:  qreal QMatrix::m21();
-// _ZNK7QMatrix3m21Ev m21()
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:82
+// qreal dy()
 extern "C"
-double
-C_ZNK7QMatrix3m21Ev(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->m21();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QMatrix2dyEv(void *this_) {
+  /*return*/ ((QMatrix*)this_)->dy();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 90, column 13>
-//   // proto:  QPointF QMatrix::map(const QPointF & p);
-// _ZNK7QMatrix3mapERK7QPointF map(const class QPointF &)
+// /usr/include/qt/QtGui/qmatrix.h:84
+// void map(int, int, int *, int *)
 extern "C"
-QPointF*
-C_ZNK7QMatrix3mapERK7QPointF(void *qthis,
-const QPointF* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QPointF*)arg1));
-  return new QPointF(ret); // 5
+void C_ZNK7QMatrix3mapEiiPiS0_(void *this_, int x, int y, int * tx, int * ty) {
+  ((QMatrix*)this_)->map(x, y, tx, ty);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 93, column 15>
-//   // proto:  QPolygonF QMatrix::map(const QPolygonF & a);
-// _ZNK7QMatrix3mapERK9QPolygonF map(const class QPolygonF &)
+// /usr/include/qt/QtGui/qmatrix.h:85
+// void map(qreal, qreal, qreal *, qreal *)
 extern "C"
-QPolygonF*
-C_ZNK7QMatrix3mapERK9QPolygonF(void *qthis,
-const QPolygonF* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QPolygonF*)arg1));
-  return new QPolygonF(ret); // 5
+void C_ZNK7QMatrix3mapEddPdS0_(void *this_, qreal x, qreal y, qreal * tx, qreal * ty) {
+  ((QMatrix*)this_)->map(x, y, tx, ty);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 85, column 10>
-//   // proto:  void QMatrix::map(qreal x, qreal y, qreal * tx, qreal * ty);
-// _ZNK7QMatrix3mapEddPdS0_ map(qreal, qreal, qreal *, qreal *)
+// /usr/include/qt/QtGui/qmatrix.h:86
+// QRect mapRect(const class QRect &)
 extern "C"
-void
-C_ZNK7QMatrix3mapEddPdS0_(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal * arg3,
-qreal * arg4) {
-  ((QMatrix*)qthis)->map(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZNK7QMatrix7mapRectERK5QRect(void *this_, const QRect & a0) {
+  /*return*/ ((QMatrix*)this_)->mapRect(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 105, column 14>
-//   // proto:  QMatrix & QMatrix::rotate(qreal a);
-// _ZN7QMatrix6rotateEd rotate(qreal)
+// /usr/include/qt/QtGui/qmatrix.h:87
+// QRectF mapRect(const class QRectF &)
 extern "C"
-QMatrix*
-C_ZN7QMatrix6rotateEd(void *qthis,
-qreal arg1) {
-  auto& ret =
-  ((QMatrix*)qthis)->rotate(arg1);
-  return new QMatrix(ret); // 5
+void C_ZNK7QMatrix7mapRectERK6QRectF(void *this_, const QRectF & a0) {
+  /*return*/ ((QMatrix*)this_)->mapRect(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 77, column 11>
-//   // proto:  qreal QMatrix::m11();
-// _ZNK7QMatrix3m11Ev m11()
+// /usr/include/qt/QtGui/qmatrix.h:89
+// QPoint map(const class QPoint &)
 extern "C"
-double
-C_ZNK7QMatrix3m11Ev(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->m11();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QMatrix3mapERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QMatrix*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 95, column 13>
-//   // proto:  QRegion QMatrix::map(const QRegion & r);
-// _ZNK7QMatrix3mapERK7QRegion map(const class QRegion &)
+// /usr/include/qt/QtGui/qmatrix.h:90
+// QPointF map(const class QPointF &)
 extern "C"
-QRegion*
-C_ZNK7QMatrix3mapERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QMatrix3mapERK7QPointF(void *this_, const QPointF & p) {
+  /*return*/ ((QMatrix*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 74, column 10>
-//   // proto:  void QMatrix::setMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy);
-// _ZN7QMatrix9setMatrixEdddddd setMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtGui/qmatrix.h:91
+// QLine map(const class QLine &)
 extern "C"
-void
-C_ZN7QMatrix9setMatrixEdddddd(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal arg3,
-qreal arg4,
-qreal arg5,
-qreal arg6) {
-  ((QMatrix*)qthis)->setMatrix(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+void C_ZNK7QMatrix3mapERK5QLine(void *this_, const QLine & l) {
+  /*return*/ ((QMatrix*)this_)->map(l);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 71, column 5>
-//   // proto:  void QMatrix::QMatrix(const QMatrix & other);
+// /usr/include/qt/QtGui/qmatrix.h:92
+// QLineF map(const class QLineF &)
 extern "C"
-QMatrix*
-C_ZN7QMatrixC2ERKS_(const QMatrix* arg1) {
-  auto ret = new QMatrix(*((const QMatrix*)arg1));
-  return ret;
+void C_ZNK7QMatrix3mapERK6QLineF(void *this_, const QLineF & l) {
+  /*return*/ ((QMatrix*)this_)->map(l);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 99, column 10>
-//   // proto:  void QMatrix::reset();
-// _ZN7QMatrix5resetEv reset()
+// /usr/include/qt/QtGui/qmatrix.h:93
+// QPolygonF map(const class QPolygonF &)
 extern "C"
-void
-C_ZN7QMatrix5resetEv(void *qthis) {
-  ((QMatrix*)qthis)->reset();
+void C_ZNK7QMatrix3mapERK9QPolygonF(void *this_, const QPolygonF & a) {
+  /*return*/ ((QMatrix*)this_)->map(a);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 92, column 12>
-//   // proto:  QLineF QMatrix::map(const QLineF & l);
-// _ZNK7QMatrix3mapERK6QLineF map(const class QLineF &)
+// /usr/include/qt/QtGui/qmatrix.h:94
+// QPolygon map(const class QPolygon &)
 extern "C"
-QLineF*
-C_ZNK7QMatrix3mapERK6QLineF(void *qthis,
-const QLineF* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QLineF*)arg1));
-  return new QLineF(ret); // 5
+void C_ZNK7QMatrix3mapERK8QPolygon(void *this_, const QPolygon & a) {
+  /*return*/ ((QMatrix*)this_)->map(a);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 96, column 18>
-//   // proto:  QPainterPath QMatrix::map(const QPainterPath & p);
-// _ZNK7QMatrix3mapERK12QPainterPath map(const class QPainterPath &)
+// /usr/include/qt/QtGui/qmatrix.h:95
+// QRegion map(const class QRegion &)
 extern "C"
-QPainterPath*
-C_ZNK7QMatrix3mapERK12QPainterPath(void *qthis,
-const QPainterPath* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QPainterPath*)arg1));
-  return new QPainterPath(ret); // 5
+void C_ZNK7QMatrix3mapERK7QRegion(void *this_, const QRegion & r) {
+  /*return*/ ((QMatrix*)this_)->map(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 97, column 14>
-//   // proto:  QPolygon QMatrix::mapToPolygon(const QRect & r);
-// _ZNK7QMatrix12mapToPolygonERK5QRect mapToPolygon(const class QRect &)
+// /usr/include/qt/QtGui/qmatrix.h:96
+// QPainterPath map(const class QPainterPath &)
 extern "C"
-QPolygon*
-C_ZNK7QMatrix12mapToPolygonERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->mapToPolygon(*((const QRect*)arg1));
-  return new QPolygon(ret); // 5
+void C_ZNK7QMatrix3mapERK12QPainterPath(void *this_, const QPainterPath & p) {
+  /*return*/ ((QMatrix*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 110, column 13>
-//   // proto:  QMatrix QMatrix::inverted(bool * invertible);
-// _ZNK7QMatrix8invertedEPb inverted(_Bool *)
+// /usr/include/qt/QtGui/qmatrix.h:97
+// QPolygon mapToPolygon(const class QRect &)
 extern "C"
-QMatrix*
-C_ZNK7QMatrix8invertedEPb(void *qthis,
-bool * arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->inverted(arg1);
-  return new QMatrix(ret); // 5
+void C_ZNK7QMatrix12mapToPolygonERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QMatrix*)this_)->mapToPolygon(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 89, column 12>
-//   // proto:  QPoint QMatrix::map(const QPoint & p);
-// _ZNK7QMatrix3mapERK6QPoint map(const class QPoint &)
+// /usr/include/qt/QtGui/qmatrix.h:99
+// void reset()
 extern "C"
-QPoint*
-C_ZNK7QMatrix3mapERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
+void C_ZN7QMatrix5resetEv(void *this_) {
+  ((QMatrix*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 84, column 10>
-//   // proto:  void QMatrix::map(int x, int y, int * tx, int * ty);
-// _ZNK7QMatrix3mapEiiPiS0_ map(int, int, int *, int *)
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:100
+// bool isIdentity()
 extern "C"
-void
-C_ZNK7QMatrix3mapEiiPiS0_(void *qthis,
-int arg1,
-int arg2,
-int * arg3,
-int * arg4) {
-  ((QMatrix*)qthis)->map(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZNK7QMatrix10isIdentityEv(void *this_) {
+  /*return*/ ((QMatrix*)this_)->isIdentity();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 91, column 11>
-//   // proto:  QLine QMatrix::map(const QLine & l);
-// _ZNK7QMatrix3mapERK5QLine map(const class QLine &)
+// /usr/include/qt/QtGui/qmatrix.h:102
+// QMatrix & translate(qreal, qreal)
 extern "C"
-QLine*
-C_ZNK7QMatrix3mapERK5QLine(void *qthis,
-const QLine* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QLine*)arg1));
-  return new QLine(ret); // 5
+void C_ZN7QMatrix9translateEdd(void *this_, qreal dx, qreal dy) {
+  /*return*/ ((QMatrix*)this_)->translate(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 59, column 21>
-//   // proto:  void QMatrix::QMatrix(Qt::Initialization );
+// /usr/include/qt/QtGui/qmatrix.h:103
+// QMatrix & scale(qreal, qreal)
 extern "C"
-QMatrix*
-C_ZN7QMatrixC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
-  auto ret = new QMatrix(*((Qt::Initialization*)arg1));
-  return ret;
+void C_ZN7QMatrix5scaleEdd(void *this_, qreal sx, qreal sy) {
+  /*return*/ ((QMatrix*)this_)->scale(sx, sy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 87, column 12>
-//   // proto:  QRectF QMatrix::mapRect(const QRectF & );
-// _ZNK7QMatrix7mapRectERK6QRectF mapRect(const class QRectF &)
+// /usr/include/qt/QtGui/qmatrix.h:104
+// QMatrix & shear(qreal, qreal)
 extern "C"
-QRectF*
-C_ZNK7QMatrix7mapRectERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->mapRect(*((const QRectF*)arg1));
-  return new QRectF(ret); // 5
+void C_ZN7QMatrix5shearEdd(void *this_, qreal sh, qreal sv) {
+  /*return*/ ((QMatrix*)this_)->shear(sh, sv);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 100, column 17>
-//   // proto:  bool QMatrix::isIdentity();
-// _ZNK7QMatrix10isIdentityEv isIdentity()
+// /usr/include/qt/QtGui/qmatrix.h:105
+// QMatrix & rotate(qreal)
 extern "C"
-bool
-C_ZNK7QMatrix10isIdentityEv(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->isIdentity();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QMatrix6rotateEd(void *this_, qreal a) {
+  /*return*/ ((QMatrix*)this_)->rotate(a);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 78, column 11>
-//   // proto:  qreal QMatrix::m12();
-// _ZNK7QMatrix3m12Ev m12()
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:107
+// bool isInvertible()
 extern "C"
-double
-C_ZNK7QMatrix3m12Ev(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->m12();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QMatrix12isInvertibleEv(void *this_) {
+  /*return*/ ((QMatrix*)this_)->isInvertible();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 107, column 10>
-//   // proto:  bool QMatrix::isInvertible();
-// _ZNK7QMatrix12isInvertibleEv isInvertible()
+// inline
+// /usr/include/qt/QtGui/qmatrix.h:108
+// qreal determinant()
 extern "C"
-bool
-C_ZNK7QMatrix12isInvertibleEv(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->isInvertible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QMatrix11determinantEv(void *this_) {
+  /*return*/ ((QMatrix*)this_)->determinant();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 86, column 11>
-//   // proto:  QRect QMatrix::mapRect(const QRect & );
-// _ZNK7QMatrix7mapRectERK5QRect mapRect(const class QRect &)
+// /usr/include/qt/QtGui/qmatrix.h:110
+// QMatrix inverted(_Bool *)
 extern "C"
-QRect*
-C_ZNK7QMatrix7mapRectERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->mapRect(*((const QRect*)arg1));
-  return new QRect(ret); // 5
+void C_ZNK7QMatrix8invertedEPb(void *this_, bool * invertible) {
+  /*return*/ ((QMatrix*)this_)->inverted(invertible);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 61, column 5>
-//   // proto:  void QMatrix::QMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy);
-extern "C"
-QMatrix*
-C_ZN7QMatrixC2Edddddd(qreal arg1,
-qreal arg2,
-qreal arg3,
-qreal arg4,
-qreal arg5,
-qreal arg6) {
-  auto ret = new QMatrix(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 80, column 11>
-//   // proto:  qreal QMatrix::m22();
-// _ZNK7QMatrix3m22Ev m22()
-extern "C"
-double
-C_ZNK7QMatrix3m22Ev(void *qthis) {
-  auto ret =
-  ((QMatrix*)qthis)->m22();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix.h', line 94, column 14>
-//   // proto:  QPolygon QMatrix::map(const QPolygon & a);
-// _ZNK7QMatrix3mapERK8QPolygon map(const class QPolygon &)
-extern "C"
-QPolygon*
-C_ZNK7QMatrix3mapERK8QPolygon(void *qthis,
-const QPolygon* arg1) {
-  auto ret =
-  ((QMatrix*)qthis)->map(*((const QPolygon*)arg1));
-  return new QPolygon(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,124 +1,48 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qsocketnotifier.h
-// dst-file: /src/core/qsocketnotifier.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qsocketnotifier.h
 #include <qsocketnotifier.h>
+#include <QtCore>
 
-
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsocketnotifier_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qsocketnotifier.h:50
+// const QMetaObject * metaObject()
 extern "C"
-int QSocketNotifier_Class_Size()
-{
-  return sizeof(QSocketNotifier);
+void C_ZNK15QSocketNotifier10metaObjectEv(void *this_) {
+  /*return*/ ((QSocketNotifier*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 59, column 13>
-//   // proto:  qintptr QSocketNotifier::socket();
-// _ZNK15QSocketNotifier6socketEv socket()
+// /usr/include/qt/QtCore/qsocketnotifier.h:56
+// void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
 extern "C"
-int
-C_ZNK15QSocketNotifier6socketEv(void *qthis) {
-  auto ret =
-  ((QSocketNotifier*)qthis)->socket();
-  return ret; // 0 TypeKind.INT
+void* C_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifier::Type a1, QObject * parent) {
+  return new QSocketNotifier(socket, a1, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 62, column 10>
-//   // proto:  bool QSocketNotifier::isEnabled();
-// _ZNK15QSocketNotifier9isEnabledEv isEnabled()
+// virtual
+// /usr/include/qt/QtCore/qsocketnotifier.h:57
+// void ~QSocketNotifier()
 extern "C"
-bool
-C_ZNK15QSocketNotifier9isEnabledEv(void *qthis) {
-  auto ret =
-  ((QSocketNotifier*)qthis)->isEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QSocketNotifierD1Ev(void *this_) {
+  delete (QSocketNotifier*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 65, column 10>
-//   // proto:  void QSocketNotifier::setEnabled(bool );
-// _ZN15QSocketNotifier10setEnabledEb setEnabled(_Bool)
+// /usr/include/qt/QtCore/qsocketnotifier.h:59
+// qintptr socket()
 extern "C"
-void
-C_ZN15QSocketNotifier10setEnabledEb(void *qthis,
-bool arg1) {
-  ((QSocketNotifier*)qthis)->setEnabled(arg1);
+void C_ZNK15QSocketNotifier6socketEv(void *this_) {
+  /*return*/ ((QSocketNotifier*)this_)->socket();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 60, column 10>
-//   // proto:  QSocketNotifier::Type QSocketNotifier::type();
-// _ZNK15QSocketNotifier4typeEv type()
+// /usr/include/qt/QtCore/qsocketnotifier.h:60
+// QSocketNotifier::Type type()
 extern "C"
-QSocketNotifier::Type
-C_ZNK15QSocketNotifier4typeEv(void *qthis) {
-  auto ret =
-  ((QSocketNotifier*)qthis)->type();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK15QSocketNotifier4typeEv(void *this_) {
+  /*return*/ ((QSocketNotifier*)this_)->type();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 56, column 5>
-//   // proto:  void QSocketNotifier::QSocketNotifier(qintptr socket, QSocketNotifier::Type , QObject * parent);
+// /usr/include/qt/QtCore/qsocketnotifier.h:62
+// bool isEnabled()
 extern "C"
-QSocketNotifier*
-C_ZN15QSocketNotifierC2EiNS_4TypeEP7QObject(qintptr arg1,
-QSocketNotifier::Type arg2,
-QObject * arg3) {
-  auto ret = new QSocketNotifier(arg1,
-arg2,
-arg3);
-  return ret;
+void C_ZNK15QSocketNotifier9isEnabledEv(void *this_) {
+  /*return*/ ((QSocketNotifier*)this_)->isEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsocketnotifier.h', line 50, column 5>
-//   // proto:  const QMetaObject * QSocketNotifier::metaObject();
-// _ZNK15QSocketNotifier10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qsocketnotifier.h:65
+// void setEnabled(_Bool)
 extern "C"
-void*
-C_ZNK15QSocketNotifier10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSocketNotifier*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN15QSocketNotifier10setEnabledEb(void *this_, bool a0) {
+  ((QSocketNotifier*)this_)->setEnabled(a0);
 }
-//   // proto:  void QSocketNotifier::~QSocketNotifier();
-extern "C"
-void C_ZN15QSocketNotifierD2Ev(void *qthis) {
-  delete (QSocketNotifier*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// QSocketNotifier_SlotProxy here
-class QSocketNotifier_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSocketNotifier_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qsocketnotifier.moc"
-
-extern "C" {
-  QSocketNotifier_SlotProxy* QSocketNotifier_SlotProxy_new()
-  {
-    return new QSocketNotifier_SlotProxy();
-  }
-};
-
-// <= body block end
-

@@ -1,75 +1,25 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qnamespace.h
-// dst-file: /src/core/qnamespace.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qnamespace.h
 #include <qnamespace.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qnamespace_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// static
+// /usr/include/qt/QtCore/qnamespace.h:1814
+// bool registerCallback(enum QInternal::Callback, qInternalCallback)
 extern "C"
-int QInternal_Class_Size()
-{
-  return sizeof(QInternal);
+void C_ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE(QInternal::Callback a0, qInternalCallback a1) {
+  /*return*/ QInternal::registerCallback(a0, a1);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1815, column 17>
-//   // proto: static bool QInternal::unregisterCallback(QInternal::Callback , qInternalCallback );
-// _ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE unregisterCallback(enum QInternal::Callback, qInternalCallback)
+// static
+// /usr/include/qt/QtCore/qnamespace.h:1815
+// bool unregisterCallback(enum QInternal::Callback, qInternalCallback)
 extern "C"
-bool
-C_ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE(QInternal::Callback arg1,
-qInternalCallback arg2) {
-  auto ret =
-  QInternal::unregisterCallback(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE(QInternal::Callback a0, qInternalCallback a1) {
+  /*return*/ QInternal::unregisterCallback(a0, a1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1816, column 17>
-//   // proto: static bool QInternal::activateCallbacks(QInternal::Callback , void ** );
-// _ZN9QInternal17activateCallbacksENS_8CallbackEPPv activateCallbacks(enum QInternal::Callback, void **)
+// static
+// /usr/include/qt/QtCore/qnamespace.h:1816
+// bool activateCallbacks(enum QInternal::Callback, void **)
 extern "C"
-bool
-C_ZN9QInternal17activateCallbacksENS_8CallbackEPPv(QInternal::Callback arg1,
-void ** arg2) {
-  auto ret =
-  QInternal::activateCallbacks(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QInternal17activateCallbacksENS_8CallbackEPPv(QInternal::Callback a0, void ** a1) {
+  /*return*/ QInternal::activateCallbacks(a0, a1);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qnamespace.h', line 1814, column 17>
-//   // proto: static bool QInternal::registerCallback(QInternal::Callback , qInternalCallback );
-// _ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE registerCallback(enum QInternal::Callback, qInternalCallback)
-extern "C"
-bool
-C_ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE(QInternal::Callback arg1,
-qInternalCallback arg2) {
-  auto ret =
-  QInternal::registerCallback(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

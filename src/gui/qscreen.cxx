@@ -1,730 +1,264 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qscreen.h
-// dst-file: /src/gui/qscreen.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qscreen.h
 #include <qscreen.h>
+#include <QtGui>
 
-
-#include <qglobal.h>
-#include <qrect.h>
-#include <qpixmap.h>
-#include <qsize.h>
-#include <qnamespace.h>
-#include <qlist.h>
-#include <qstandarditemmodel.h>
-#include <qtransform.h>
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qscreen_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtGui/qscreen.h:67
+// const QMetaObject * metaObject()
 extern "C"
-int QScreen_Class_Size()
-{
-  return sizeof(QScreen);
+void C_ZNK7QScreen10metaObjectEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 111, column 11>
-//   // proto:  qreal QScreen::logicalDotsPerInchY();
-// _ZNK7QScreen19logicalDotsPerInchYEv logicalDotsPerInchY()
+// virtual
+// /usr/include/qt/QtGui/qscreen.h:94
+// void ~QScreen()
 extern "C"
-double
-C_ZNK7QScreen19logicalDotsPerInchYEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->logicalDotsPerInchY();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN7QScreenD1Ev(void *this_) {
+  delete (QScreen*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 102, column 11>
-//   // proto:  QRect QScreen::geometry();
-// _ZNK7QScreen8geometryEv geometry()
+// /usr/include/qt/QtGui/qscreen.h:95
+// QPlatformScreen * handle()
 extern "C"
-QRect*
-C_ZNK7QScreen8geometryEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->geometry();
-  return new QRect(ret); // 5
+void C_ZNK7QScreen6handleEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->handle();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 141, column 13>
-//   // proto:  QPixmap QScreen::grabWindow(WId window, int x, int y, int w, int h);
-// _ZN7QScreen10grabWindowEiiiii grabWindow(WId, int, int, int, int)
+// /usr/include/qt/QtGui/qscreen.h:97
+// QString name()
 extern "C"
-QPixmap*
-C_ZN7QScreen10grabWindowEiiiii(void *qthis,
-WId arg1,
-int arg2,
-int arg3,
-int arg4,
-int arg5) {
-  auto ret =
-  ((QScreen*)qthis)->grabWindow(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
-  return new QPixmap(ret); // 5
+void C_ZNK7QScreen4nameEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->name();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 101, column 11>
-//   // proto:  QSize QScreen::size();
-// _ZNK7QScreen4sizeEv size()
+// /usr/include/qt/QtGui/qscreen.h:99
+// int depth()
 extern "C"
-QSize*
-C_ZNK7QScreen4sizeEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->size();
-  return new QSize(ret); // 5
+void C_ZNK7QScreen5depthEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->depth();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 138, column 10>
-//   // proto:  bool QScreen::isPortrait(Qt::ScreenOrientation orientation);
-// _ZNK7QScreen10isPortraitEN2Qt17ScreenOrientationE isPortrait(Qt::ScreenOrientation)
+// /usr/include/qt/QtGui/qscreen.h:101
+// QSize size()
 extern "C"
-bool
-C_ZNK7QScreen10isPortraitEN2Qt17ScreenOrientationE(void *qthis,
-Qt::ScreenOrientation* arg1) {
-  auto ret =
-  ((QScreen*)qthis)->isPortrait(*((Qt::ScreenOrientation*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QScreen4sizeEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 104, column 12>
-//   // proto:  QSizeF QScreen::physicalSize();
-// _ZNK7QScreen12physicalSizeEv physicalSize()
+// /usr/include/qt/QtGui/qscreen.h:102
+// QRect geometry()
 extern "C"
-QSizeF*
-C_ZNK7QScreen12physicalSizeEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->physicalSize();
-  return new QSizeF(ret); // 5
+void C_ZNK7QScreen8geometryEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->geometry();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 153, column 10>
-//   // proto:  void QScreen::orientationChanged(Qt::ScreenOrientation orientation);
-// _ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE orientationChanged(Qt::ScreenOrientation)
+// /usr/include/qt/QtGui/qscreen.h:104
+// QSizeF physicalSize()
 extern "C"
-void
-C_ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(void *qthis,
-Qt::ScreenOrientation* arg1) {
-  ((QScreen*)qthis)->orientationChanged(*((Qt::ScreenOrientation*)arg1));
+void C_ZNK7QScreen12physicalSizeEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->physicalSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 136, column 11>
-//   // proto:  QRect QScreen::mapBetween(Qt::ScreenOrientation a, Qt::ScreenOrientation b, const QRect & rect);
-// _ZNK7QScreen10mapBetweenEN2Qt17ScreenOrientationES1_RK5QRect mapBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
+// /usr/include/qt/QtGui/qscreen.h:106
+// qreal physicalDotsPerInchX()
 extern "C"
-QRect*
-C_ZNK7QScreen10mapBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *qthis,
-Qt::ScreenOrientation* arg1,
-Qt::ScreenOrientation* arg2,
-const QRect* arg3) {
-  auto ret =
-  ((QScreen*)qthis)->mapBetween(*((Qt::ScreenOrientation*)arg1),
-*((Qt::ScreenOrientation*)arg2),
-*((const QRect*)arg3));
-  return new QRect(ret); // 5
+void C_ZNK7QScreen20physicalDotsPerInchXEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->physicalDotsPerInchX();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 152, column 10>
-//   // proto:  void QScreen::primaryOrientationChanged(Qt::ScreenOrientation orientation);
-// _ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE primaryOrientationChanged(Qt::ScreenOrientation)
+// /usr/include/qt/QtGui/qscreen.h:107
+// qreal physicalDotsPerInchY()
 extern "C"
-void
-C_ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(void *qthis,
-Qt::ScreenOrientation* arg1) {
-  ((QScreen*)qthis)->primaryOrientationChanged(*((Qt::ScreenOrientation*)arg1));
+void C_ZNK7QScreen20physicalDotsPerInchYEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->physicalDotsPerInchY();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 95, column 22>
-//   // proto:  QPlatformScreen * QScreen::handle();
-// _ZNK7QScreen6handleEv handle()
+// /usr/include/qt/QtGui/qscreen.h:108
+// qreal physicalDotsPerInch()
 extern "C"
-void*
-C_ZNK7QScreen6handleEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->handle();
-  return (void*)ret;
+void C_ZNK7QScreen19physicalDotsPerInchEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->physicalDotsPerInch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 128, column 27>
-//   // proto:  Qt::ScreenOrientation QScreen::orientation();
-// _ZNK7QScreen11orientationEv orientation()
+// /usr/include/qt/QtGui/qscreen.h:110
+// qreal logicalDotsPerInchX()
 extern "C"
-Qt::ScreenOrientation
-C_ZNK7QScreen11orientationEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK7QScreen19logicalDotsPerInchXEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->logicalDotsPerInchX();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 125, column 11>
-//   // proto:  QRect QScreen::availableVirtualGeometry();
-// _ZNK7QScreen24availableVirtualGeometryEv availableVirtualGeometry()
+// /usr/include/qt/QtGui/qscreen.h:111
+// qreal logicalDotsPerInchY()
 extern "C"
-QRect*
-C_ZNK7QScreen24availableVirtualGeometryEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->availableVirtualGeometry();
-  return new QRect(ret); // 5
+void C_ZNK7QScreen19logicalDotsPerInchYEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->logicalDotsPerInchY();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 127, column 27>
-//   // proto:  Qt::ScreenOrientation QScreen::primaryOrientation();
-// _ZNK7QScreen18primaryOrientationEv primaryOrientation()
+// /usr/include/qt/QtGui/qscreen.h:112
+// qreal logicalDotsPerInch()
 extern "C"
-Qt::ScreenOrientation
-C_ZNK7QScreen18primaryOrientationEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->primaryOrientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK7QScreen18logicalDotsPerInchEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->logicalDotsPerInch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 139, column 10>
-//   // proto:  bool QScreen::isLandscape(Qt::ScreenOrientation orientation);
-// _ZNK7QScreen11isLandscapeEN2Qt17ScreenOrientationE isLandscape(Qt::ScreenOrientation)
+// /usr/include/qt/QtGui/qscreen.h:114
+// qreal devicePixelRatio()
 extern "C"
-bool
-C_ZNK7QScreen11isLandscapeEN2Qt17ScreenOrientationE(void *qthis,
-Qt::ScreenOrientation* arg1) {
-  auto ret =
-  ((QScreen*)qthis)->isLandscape(*((Qt::ScreenOrientation*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QScreen16devicePixelRatioEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->devicePixelRatio();
 }
-//   // proto:  void QScreen::~QScreen();
+// /usr/include/qt/QtGui/qscreen.h:116
+// QSize availableSize()
 extern "C"
-void C_ZN7QScreenD2Ev(void *qthis) {
-  delete (QScreen*)qthis;
+void C_ZNK7QScreen13availableSizeEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->availableSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 121, column 11>
-//   // proto:  QSize QScreen::virtualSize();
-// _ZNK7QScreen11virtualSizeEv virtualSize()
+// /usr/include/qt/QtGui/qscreen.h:117
+// QRect availableGeometry()
 extern "C"
-QSize*
-C_ZNK7QScreen11virtualSizeEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->virtualSize();
-  return new QSize(ret); // 5
+void C_ZNK7QScreen17availableGeometryEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->availableGeometry();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 114, column 11>
-//   // proto:  qreal QScreen::devicePixelRatio();
-// _ZNK7QScreen16devicePixelRatioEv devicePixelRatio()
+// /usr/include/qt/QtGui/qscreen.h:119
+// QList<QScreen *> virtualSiblings()
 extern "C"
-double
-C_ZNK7QScreen16devicePixelRatioEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->devicePixelRatio();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QScreen15virtualSiblingsEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->virtualSiblings();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 119, column 22>
-//   // proto:  QList<QScreen *> QScreen::virtualSiblings();
-// _ZNK7QScreen15virtualSiblingsEv virtualSiblings()
+// /usr/include/qt/QtGui/qscreen.h:121
+// QSize virtualSize()
 extern "C"
-QList<QScreen *>*
-C_ZNK7QScreen15virtualSiblingsEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->virtualSiblings();
-  return new QList<QScreen *>(ret); // 5
+void C_ZNK7QScreen11virtualSizeEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->virtualSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 134, column 9>
-//   // proto:  int QScreen::angleBetween(Qt::ScreenOrientation a, Qt::ScreenOrientation b);
-// _ZNK7QScreen12angleBetweenEN2Qt17ScreenOrientationES1_ angleBetween(Qt::ScreenOrientation, Qt::ScreenOrientation)
+// /usr/include/qt/QtGui/qscreen.h:122
+// QRect virtualGeometry()
 extern "C"
-int
-C_ZNK7QScreen12angleBetweenEN2Qt17ScreenOrientationES1_(void *qthis,
-Qt::ScreenOrientation* arg1,
-Qt::ScreenOrientation* arg2) {
-  auto ret =
-  ((QScreen*)qthis)->angleBetween(*((Qt::ScreenOrientation*)arg1),
-*((Qt::ScreenOrientation*)arg2));
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QScreen15virtualGeometryEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->virtualGeometry();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 135, column 16>
-//   // proto:  QTransform QScreen::transformBetween(Qt::ScreenOrientation a, Qt::ScreenOrientation b, const QRect & target);
-// _ZNK7QScreen16transformBetweenEN2Qt17ScreenOrientationES1_RK5QRect transformBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
+// /usr/include/qt/QtGui/qscreen.h:124
+// QSize availableVirtualSize()
 extern "C"
-QTransform*
-C_ZNK7QScreen16transformBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *qthis,
-Qt::ScreenOrientation* arg1,
-Qt::ScreenOrientation* arg2,
-const QRect* arg3) {
-  auto ret =
-  ((QScreen*)qthis)->transformBetween(*((Qt::ScreenOrientation*)arg1),
-*((Qt::ScreenOrientation*)arg2),
-*((const QRect*)arg3));
-  return new QTransform(ret); // 5
+void C_ZNK7QScreen20availableVirtualSizeEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->availableVirtualSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 129, column 27>
-//   // proto:  Qt::ScreenOrientation QScreen::nativeOrientation();
-// _ZNK7QScreen17nativeOrientationEv nativeOrientation()
+// /usr/include/qt/QtGui/qscreen.h:125
+// QRect availableVirtualGeometry()
 extern "C"
-Qt::ScreenOrientation
-C_ZNK7QScreen17nativeOrientationEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->nativeOrientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK7QScreen24availableVirtualGeometryEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->availableVirtualGeometry();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 150, column 10>
-//   // proto:  void QScreen::logicalDotsPerInchChanged(qreal dpi);
-// _ZN7QScreen25logicalDotsPerInchChangedEd logicalDotsPerInchChanged(qreal)
+// /usr/include/qt/QtGui/qscreen.h:127
+// Qt::ScreenOrientation primaryOrientation()
 extern "C"
-void
-C_ZN7QScreen25logicalDotsPerInchChangedEd(void *qthis,
-qreal arg1) {
-  ((QScreen*)qthis)->logicalDotsPerInchChanged(arg1);
+void C_ZNK7QScreen18primaryOrientationEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->primaryOrientation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 147, column 10>
-//   // proto:  void QScreen::availableGeometryChanged(const QRect & geometry);
-// _ZN7QScreen24availableGeometryChangedERK5QRect availableGeometryChanged(const class QRect &)
+// /usr/include/qt/QtGui/qscreen.h:128
+// Qt::ScreenOrientation orientation()
 extern "C"
-void
-C_ZN7QScreen24availableGeometryChangedERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QScreen*)qthis)->availableGeometryChanged(*((const QRect*)arg1));
+void C_ZNK7QScreen11orientationEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 146, column 10>
-//   // proto:  void QScreen::geometryChanged(const QRect & geometry);
-// _ZN7QScreen15geometryChangedERK5QRect geometryChanged(const class QRect &)
+// /usr/include/qt/QtGui/qscreen.h:129
+// Qt::ScreenOrientation nativeOrientation()
 extern "C"
-void
-C_ZN7QScreen15geometryChangedERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QScreen*)qthis)->geometryChanged(*((const QRect*)arg1));
+void C_ZNK7QScreen17nativeOrientationEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->nativeOrientation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 122, column 11>
-//   // proto:  QRect QScreen::virtualGeometry();
-// _ZNK7QScreen15virtualGeometryEv virtualGeometry()
+// /usr/include/qt/QtGui/qscreen.h:131
+// Qt::ScreenOrientations orientationUpdateMask()
 extern "C"
-QRect*
-C_ZNK7QScreen15virtualGeometryEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->virtualGeometry();
-  return new QRect(ret); // 5
+void C_ZNK7QScreen21orientationUpdateMaskEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->orientationUpdateMask();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 112, column 11>
-//   // proto:  qreal QScreen::logicalDotsPerInch();
-// _ZNK7QScreen18logicalDotsPerInchEv logicalDotsPerInch()
+// /usr/include/qt/QtGui/qscreen.h:132
+// void setOrientationUpdateMask(Qt::ScreenOrientations)
 extern "C"
-double
-C_ZNK7QScreen18logicalDotsPerInchEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->logicalDotsPerInch();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN7QScreen24setOrientationUpdateMaskE6QFlagsIN2Qt17ScreenOrientationEE(void *this_, QFlags<Qt::ScreenOrientation> mask) {
+  ((QScreen*)this_)->setOrientationUpdateMask(mask);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 108, column 11>
-//   // proto:  qreal QScreen::physicalDotsPerInch();
-// _ZNK7QScreen19physicalDotsPerInchEv physicalDotsPerInch()
+// /usr/include/qt/QtGui/qscreen.h:134
+// int angleBetween(Qt::ScreenOrientation, Qt::ScreenOrientation)
 extern "C"
-double
-C_ZNK7QScreen19physicalDotsPerInchEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->physicalDotsPerInch();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QScreen12angleBetweenEN2Qt17ScreenOrientationES1_(void *this_, Qt::ScreenOrientation a, Qt::ScreenOrientation b) {
+  /*return*/ ((QScreen*)this_)->angleBetween(a, b);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 149, column 10>
-//   // proto:  void QScreen::physicalDotsPerInchChanged(qreal dpi);
-// _ZN7QScreen26physicalDotsPerInchChangedEd physicalDotsPerInchChanged(qreal)
+// /usr/include/qt/QtGui/qscreen.h:135
+// QTransform transformBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
 extern "C"
-void
-C_ZN7QScreen26physicalDotsPerInchChangedEd(void *qthis,
-qreal arg1) {
-  ((QScreen*)qthis)->physicalDotsPerInchChanged(arg1);
+void C_ZNK7QScreen16transformBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *this_, Qt::ScreenOrientation a, Qt::ScreenOrientation b, const QRect & target) {
+  /*return*/ ((QScreen*)this_)->transformBetween(a, b, target);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 143, column 11>
-//   // proto:  qreal QScreen::refreshRate();
-// _ZNK7QScreen11refreshRateEv refreshRate()
+// /usr/include/qt/QtGui/qscreen.h:136
+// QRect mapBetween(Qt::ScreenOrientation, Qt::ScreenOrientation, const class QRect &)
 extern "C"
-double
-C_ZNK7QScreen11refreshRateEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->refreshRate();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK7QScreen10mapBetweenEN2Qt17ScreenOrientationES1_RK5QRect(void *this_, Qt::ScreenOrientation a, Qt::ScreenOrientation b, const QRect & rect) {
+  /*return*/ ((QScreen*)this_)->mapBetween(a, b, rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 132, column 10>
-//   // proto:  void QScreen::setOrientationUpdateMask(Qt::ScreenOrientations mask);
-// _ZN7QScreen24setOrientationUpdateMaskE6QFlagsIN2Qt17ScreenOrientationEE setOrientationUpdateMask(Qt::ScreenOrientations)
+// /usr/include/qt/QtGui/qscreen.h:138
+// bool isPortrait(Qt::ScreenOrientation)
 extern "C"
-void
-C_ZN7QScreen24setOrientationUpdateMaskE6QFlagsIN2Qt17ScreenOrientationEE(void *qthis,
-Qt::ScreenOrientations* arg1) {
-  ((QScreen*)qthis)->setOrientationUpdateMask(*((Qt::ScreenOrientations*)arg1));
+void C_ZNK7QScreen10isPortraitEN2Qt17ScreenOrientationE(void *this_, Qt::ScreenOrientation orientation) {
+  /*return*/ ((QScreen*)this_)->isPortrait(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 67, column 5>
-//   // proto:  const QMetaObject * QScreen::metaObject();
-// _ZNK7QScreen10metaObjectEv metaObject()
+// /usr/include/qt/QtGui/qscreen.h:139
+// bool isLandscape(Qt::ScreenOrientation)
 extern "C"
-void*
-C_ZNK7QScreen10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK7QScreen11isLandscapeEN2Qt17ScreenOrientationE(void *this_, Qt::ScreenOrientation orientation) {
+  /*return*/ ((QScreen*)this_)->isLandscape(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 131, column 28>
-//   // proto:  Qt::ScreenOrientations QScreen::orientationUpdateMask();
-// _ZNK7QScreen21orientationUpdateMaskEv orientationUpdateMask()
+// /usr/include/qt/QtGui/qscreen.h:141
+// QPixmap grabWindow(WId, int, int, int, int)
 extern "C"
-QFlags<Qt::ScreenOrientation>*
-C_ZNK7QScreen21orientationUpdateMaskEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->orientationUpdateMask();
-  return new QFlags<Qt::ScreenOrientation>(ret); // 5
+void C_ZN7QScreen10grabWindowEyiiii(void *this_, WId window, int x, int y, int w, int h) {
+  /*return*/ ((QScreen*)this_)->grabWindow(window, x, y, w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 154, column 10>
-//   // proto:  void QScreen::refreshRateChanged(qreal refreshRate);
-// _ZN7QScreen18refreshRateChangedEd refreshRateChanged(qreal)
+// /usr/include/qt/QtGui/qscreen.h:143
+// qreal refreshRate()
 extern "C"
-void
-C_ZN7QScreen18refreshRateChangedEd(void *qthis,
-qreal arg1) {
-  ((QScreen*)qthis)->refreshRateChanged(arg1);
+void C_ZNK7QScreen11refreshRateEv(void *this_) {
+  /*return*/ ((QScreen*)this_)->refreshRate();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 116, column 11>
-//   // proto:  QSize QScreen::availableSize();
-// _ZNK7QScreen13availableSizeEv availableSize()
+// /usr/include/qt/QtGui/qscreen.h:146
+// void geometryChanged(const class QRect &)
 extern "C"
-QSize*
-C_ZNK7QScreen13availableSizeEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->availableSize();
-  return new QSize(ret); // 5
+void C_ZN7QScreen15geometryChangedERK5QRect(void *this_, const QRect & geometry) {
+  ((QScreen*)this_)->geometryChanged(geometry);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 97, column 13>
-//   // proto:  QString QScreen::name();
-// _ZNK7QScreen4nameEv name()
+// /usr/include/qt/QtGui/qscreen.h:147
+// void availableGeometryChanged(const class QRect &)
 extern "C"
-QString*
-C_ZNK7QScreen4nameEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->name();
-  return new QString(ret); // 5
+void C_ZN7QScreen24availableGeometryChangedERK5QRect(void *this_, const QRect & geometry) {
+  ((QScreen*)this_)->availableGeometryChanged(geometry);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 124, column 11>
-//   // proto:  QSize QScreen::availableVirtualSize();
-// _ZNK7QScreen20availableVirtualSizeEv availableVirtualSize()
+// /usr/include/qt/QtGui/qscreen.h:148
+// void physicalSizeChanged(const class QSizeF &)
 extern "C"
-QSize*
-C_ZNK7QScreen20availableVirtualSizeEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->availableVirtualSize();
-  return new QSize(ret); // 5
+void C_ZN7QScreen19physicalSizeChangedERK6QSizeF(void *this_, const QSizeF & size) {
+  ((QScreen*)this_)->physicalSizeChanged(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 110, column 11>
-//   // proto:  qreal QScreen::logicalDotsPerInchX();
-// _ZNK7QScreen19logicalDotsPerInchXEv logicalDotsPerInchX()
+// /usr/include/qt/QtGui/qscreen.h:149
+// void physicalDotsPerInchChanged(qreal)
 extern "C"
-double
-C_ZNK7QScreen19logicalDotsPerInchXEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->logicalDotsPerInchX();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN7QScreen26physicalDotsPerInchChangedEd(void *this_, qreal dpi) {
+  ((QScreen*)this_)->physicalDotsPerInchChanged(dpi);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 151, column 10>
-//   // proto:  void QScreen::virtualGeometryChanged(const QRect & rect);
-// _ZN7QScreen22virtualGeometryChangedERK5QRect virtualGeometryChanged(const class QRect &)
+// /usr/include/qt/QtGui/qscreen.h:150
+// void logicalDotsPerInchChanged(qreal)
 extern "C"
-void
-C_ZN7QScreen22virtualGeometryChangedERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QScreen*)qthis)->virtualGeometryChanged(*((const QRect*)arg1));
+void C_ZN7QScreen25logicalDotsPerInchChangedEd(void *this_, qreal dpi) {
+  ((QScreen*)this_)->logicalDotsPerInchChanged(dpi);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 117, column 11>
-//   // proto:  QRect QScreen::availableGeometry();
-// _ZNK7QScreen17availableGeometryEv availableGeometry()
+// /usr/include/qt/QtGui/qscreen.h:151
+// void virtualGeometryChanged(const class QRect &)
 extern "C"
-QRect*
-C_ZNK7QScreen17availableGeometryEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->availableGeometry();
-  return new QRect(ret); // 5
+void C_ZN7QScreen22virtualGeometryChangedERK5QRect(void *this_, const QRect & rect) {
+  ((QScreen*)this_)->virtualGeometryChanged(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 106, column 11>
-//   // proto:  qreal QScreen::physicalDotsPerInchX();
-// _ZNK7QScreen20physicalDotsPerInchXEv physicalDotsPerInchX()
+// /usr/include/qt/QtGui/qscreen.h:152
+// void primaryOrientationChanged(Qt::ScreenOrientation)
 extern "C"
-double
-C_ZNK7QScreen20physicalDotsPerInchXEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->physicalDotsPerInchX();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(void *this_, Qt::ScreenOrientation orientation) {
+  ((QScreen*)this_)->primaryOrientationChanged(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 148, column 10>
-//   // proto:  void QScreen::physicalSizeChanged(const QSizeF & size);
-// _ZN7QScreen19physicalSizeChangedERK6QSizeF physicalSizeChanged(const class QSizeF &)
+// /usr/include/qt/QtGui/qscreen.h:153
+// void orientationChanged(Qt::ScreenOrientation)
 extern "C"
-void
-C_ZN7QScreen19physicalSizeChangedERK6QSizeF(void *qthis,
-const QSizeF* arg1) {
-  ((QScreen*)qthis)->physicalSizeChanged(*((const QSizeF*)arg1));
+void C_ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(void *this_, Qt::ScreenOrientation orientation) {
+  ((QScreen*)this_)->orientationChanged(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 107, column 11>
-//   // proto:  qreal QScreen::physicalDotsPerInchY();
-// _ZNK7QScreen20physicalDotsPerInchYEv physicalDotsPerInchY()
+// /usr/include/qt/QtGui/qscreen.h:154
+// void refreshRateChanged(qreal)
 extern "C"
-double
-C_ZNK7QScreen20physicalDotsPerInchYEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->physicalDotsPerInchY();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN7QScreen18refreshRateChangedEd(void *this_, qreal refreshRate) {
+  ((QScreen*)this_)->refreshRateChanged(refreshRate);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qscreen.h', line 99, column 9>
-//   // proto:  int QScreen::depth();
-// _ZNK7QScreen5depthEv depth()
-extern "C"
-int
-C_ZNK7QScreen5depthEv(void *qthis) {
-  auto ret =
-  ((QScreen*)qthis)->depth();
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// QScreen_SlotProxy here
-class QScreen_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QScreen_SlotProxy():QObject(){}
-
-public slots:
-  // primaryOrientationChanged(Qt::ScreenOrientation)
-  void slot_proxy_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0);
-public:
-  void (*slot_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE)(void* rsfptr, Qt::ScreenOrientation arg0) = NULL;
-public slots:
-  // orientationChanged(Qt::ScreenOrientation)
-  void slot_proxy_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0);
-public:
-  void (*slot_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE)(void* rsfptr, Qt::ScreenOrientation arg0) = NULL;
-public slots:
-  // logicalDotsPerInchChanged(qreal)
-  void slot_proxy_func__ZN7QScreen25logicalDotsPerInchChangedEd(qreal arg0);
-public:
-  void (*slot_func__ZN7QScreen25logicalDotsPerInchChangedEd)(void* rsfptr, qreal arg0) = NULL;
-public slots:
-  // availableGeometryChanged(const class QRect &)
-  void slot_proxy_func__ZN7QScreen24availableGeometryChangedERK5QRect(const QRect & arg0);
-public:
-  void (*slot_func__ZN7QScreen24availableGeometryChangedERK5QRect)(void* rsfptr, const QRect & arg0) = NULL;
-public slots:
-  // geometryChanged(const class QRect &)
-  void slot_proxy_func__ZN7QScreen15geometryChangedERK5QRect(const QRect & arg0);
-public:
-  void (*slot_func__ZN7QScreen15geometryChangedERK5QRect)(void* rsfptr, const QRect & arg0) = NULL;
-public slots:
-  // physicalDotsPerInchChanged(qreal)
-  void slot_proxy_func__ZN7QScreen26physicalDotsPerInchChangedEd(qreal arg0);
-public:
-  void (*slot_func__ZN7QScreen26physicalDotsPerInchChangedEd)(void* rsfptr, qreal arg0) = NULL;
-public slots:
-  // virtualGeometryChanged(const class QRect &)
-  void slot_proxy_func__ZN7QScreen22virtualGeometryChangedERK5QRect(const QRect & arg0);
-public:
-  void (*slot_func__ZN7QScreen22virtualGeometryChangedERK5QRect)(void* rsfptr, const QRect & arg0) = NULL;
-public slots:
-  // refreshRateChanged(qreal)
-  void slot_proxy_func__ZN7QScreen18refreshRateChangedEd(qreal arg0);
-public:
-  void (*slot_func__ZN7QScreen18refreshRateChangedEd)(void* rsfptr, qreal arg0) = NULL;
-public slots:
-  // physicalSizeChanged(const class QSizeF &)
-  void slot_proxy_func__ZN7QScreen19physicalSizeChangedERK6QSizeF(const QSizeF & arg0);
-public:
-  void (*slot_func__ZN7QScreen19physicalSizeChangedERK6QSizeF)(void* rsfptr, const QSizeF & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/gui/qscreen.moc"
-
-extern "C" {
-  QScreen_SlotProxy* QScreen_SlotProxy_new()
-  {
-    return new QScreen_SlotProxy();
-  }
-};
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0) {
-  if (this->slot_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE = (decltype(that->slot_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(primaryOrientationChanged(Qt::ScreenOrientation)), that, SLOT(slot_proxy_func__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen25primaryOrientationChangedEN2Qt17ScreenOrientationE(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0) {
-  if (this->slot_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE = (decltype(that->slot_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(orientationChanged(Qt::ScreenOrientation)), that, SLOT(slot_proxy_func__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(Qt::ScreenOrientation arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen18orientationChangedEN2Qt17ScreenOrientationE(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen25logicalDotsPerInchChangedEd(qreal arg0) {
-  if (this->slot_func__ZN7QScreen25logicalDotsPerInchChangedEd != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen25logicalDotsPerInchChangedEd(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen25logicalDotsPerInchChangedEd(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen25logicalDotsPerInchChangedEd = (decltype(that->slot_func__ZN7QScreen25logicalDotsPerInchChangedEd))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(logicalDotsPerInchChanged(qreal)), that, SLOT(slot_proxy_func__ZN7QScreen25logicalDotsPerInchChangedEd(qreal arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen25logicalDotsPerInchChangedEd(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen24availableGeometryChangedERK5QRect(const QRect & arg0) {
-  if (this->slot_func__ZN7QScreen24availableGeometryChangedERK5QRect != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen24availableGeometryChangedERK5QRect(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen24availableGeometryChangedERK5QRect(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen24availableGeometryChangedERK5QRect = (decltype(that->slot_func__ZN7QScreen24availableGeometryChangedERK5QRect))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(availableGeometryChanged(const class QRect &)), that, SLOT(slot_proxy_func__ZN7QScreen24availableGeometryChangedERK5QRect(const QRect & arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen24availableGeometryChangedERK5QRect(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen15geometryChangedERK5QRect(const QRect & arg0) {
-  if (this->slot_func__ZN7QScreen15geometryChangedERK5QRect != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen15geometryChangedERK5QRect(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen15geometryChangedERK5QRect(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen15geometryChangedERK5QRect = (decltype(that->slot_func__ZN7QScreen15geometryChangedERK5QRect))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(geometryChanged(const class QRect &)), that, SLOT(slot_proxy_func__ZN7QScreen15geometryChangedERK5QRect(const QRect & arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen15geometryChangedERK5QRect(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen26physicalDotsPerInchChangedEd(qreal arg0) {
-  if (this->slot_func__ZN7QScreen26physicalDotsPerInchChangedEd != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen26physicalDotsPerInchChangedEd(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen26physicalDotsPerInchChangedEd(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen26physicalDotsPerInchChangedEd = (decltype(that->slot_func__ZN7QScreen26physicalDotsPerInchChangedEd))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(physicalDotsPerInchChanged(qreal)), that, SLOT(slot_proxy_func__ZN7QScreen26physicalDotsPerInchChangedEd(qreal arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen26physicalDotsPerInchChangedEd(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen22virtualGeometryChangedERK5QRect(const QRect & arg0) {
-  if (this->slot_func__ZN7QScreen22virtualGeometryChangedERK5QRect != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen22virtualGeometryChangedERK5QRect(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen22virtualGeometryChangedERK5QRect(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen22virtualGeometryChangedERK5QRect = (decltype(that->slot_func__ZN7QScreen22virtualGeometryChangedERK5QRect))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(virtualGeometryChanged(const class QRect &)), that, SLOT(slot_proxy_func__ZN7QScreen22virtualGeometryChangedERK5QRect(const QRect & arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen22virtualGeometryChangedERK5QRect(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen18refreshRateChangedEd(qreal arg0) {
-  if (this->slot_func__ZN7QScreen18refreshRateChangedEd != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen18refreshRateChangedEd(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen18refreshRateChangedEd(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen18refreshRateChangedEd = (decltype(that->slot_func__ZN7QScreen18refreshRateChangedEd))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(refreshRateChanged(qreal)), that, SLOT(slot_proxy_func__ZN7QScreen18refreshRateChangedEd(qreal arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen18refreshRateChangedEd(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QScreen_SlotProxy::slot_proxy_func__ZN7QScreen19physicalSizeChangedERK6QSizeF(const QSizeF & arg0) {
-  if (this->slot_func__ZN7QScreen19physicalSizeChangedERK6QSizeF != NULL) {
-    // do smth...
-    this->slot_func__ZN7QScreen19physicalSizeChangedERK6QSizeF(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QScreen_SlotProxy_connect__ZN7QScreen19physicalSizeChangedERK6QSizeF(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QScreen_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QScreen19physicalSizeChangedERK6QSizeF = (decltype(that->slot_func__ZN7QScreen19physicalSizeChangedERK6QSizeF))ffifptr;
-  QObject::connect((QScreen*)sender, SIGNAL(physicalSizeChanged(const class QSizeF &)), that, SLOT(slot_proxy_func__ZN7QScreen19physicalSizeChangedERK6QSizeF(const QSizeF & arg0)));
-  return that;
-}
-extern "C"
-void QScreen_SlotProxy_disconnect__ZN7QScreen19physicalSizeChangedERK6QSizeF(QScreen_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

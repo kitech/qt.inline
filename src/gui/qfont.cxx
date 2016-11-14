@@ -1,811 +1,452 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qfont.h
-// dst-file: /src/gui/qfont.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qfont.h
 #include <qfont.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qstringlist.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfont_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 192, column 17>
-//   // proto:  bool QFont::italic();
-if (true) {
-  auto f = [](QFont flythis) {
-    ((QFont*)0)->italic();
-    flythis.italic();
-  };
-  if (f == nullptr){}
-}
-// _ZNK5QFont6italicEv italic()
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 193, column 17>
-//   // proto:  void QFont::setItalic(bool b);
-if (true) {
-  auto f = [](QFont flythis, bool arg1) {
-    ((QFont*)0)->setItalic(arg1);
-    flythis.setItalic(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN5QFont9setItalicEb setItalic(_Bool)
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 280, column 17>
-//   // proto:  void QFont::resolve(uint mask);
-if (true) {
-  auto f = [](QFont flythis, uint arg1) {
-    ((QFont*)0)->resolve(arg1);
-    flythis.resolve(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN5QFont7resolveEj resolve(uint)
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 187, column 17>
-//   // proto:  void QFont::setBold(bool );
-if (true) {
-  auto f = [](QFont flythis, bool arg1) {
-    ((QFont*)0)->setBold(arg1);
-    flythis.setBold(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN5QFont7setBoldEb setBold(_Bool)
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 186, column 17>
-//   // proto:  bool QFont::bold();
-if (true) {
-  auto f = [](QFont flythis) {
-    ((QFont*)0)->bold();
-    flythis.bold();
-  };
-  if (f == nullptr){}
-}
-// _ZNK5QFont4boldEv bold()
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 166, column 10>
-//   // proto:  void QFont::swap(QFont & other);
-if (true) {
-  auto f = [](QFont flythis, QFont & arg1) {
-    ((QFont*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN5QFont4swapERS_ swap(class QFont &)
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 279, column 17>
-//   // proto:  uint QFont::resolve();
-if (true) {
-  auto f = [](QFont flythis) {
-    ((QFont*)0)->resolve();
-    flythis.resolve();
-  };
-  if (f == nullptr){}
-}
-// _ZNK5QFont7resolveEv resolve()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qfont.h:160
+// void QFont()
 extern "C"
-int QFont_Class_Size()
-{
-  return sizeof(QFont);
+void* C_ZN5QFontC1Ev() {
+  return new QFont();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 223, column 10>
-//   // proto:  void QFont::setWordSpacing(qreal spacing);
-// _ZN5QFont14setWordSpacingEd setWordSpacing(qreal)
+// /usr/include/qt/QtGui/qfont.h:161
+// void QFont(const class QString &, int, int, _Bool)
 extern "C"
-void
-C_ZN5QFont14setWordSpacingEd(void *qthis,
-qreal arg1) {
-  ((QFont*)qthis)->setWordSpacing(arg1);
+void* C_ZN5QFontC1ERK7QStringiib(const QString & family, int pointSize, int weight, bool italic) {
+  return new QFont(family, pointSize, weight, italic);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 189, column 10>
-//   // proto:  void QFont::setStyle(QFont::Style style);
-// _ZN5QFont8setStyleENS_5StyleE setStyle(enum QFont::Style)
+// /usr/include/qt/QtGui/qfont.h:162
+// void QFont(const class QFont &, class QPaintDevice *)
 extern "C"
-void
-C_ZN5QFont8setStyleENS_5StyleE(void *qthis,
-QFont::Style arg1) {
-  ((QFont*)qthis)->setStyle(arg1);
+void* C_ZN5QFontC1ERKS_P12QPaintDevice(const QFont & a0, QPaintDevice * pd) {
+  return new QFont(a0, pd);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 253, column 27>
-//   // proto:  QString QFont::rawName();
-// _ZNK5QFont7rawNameEv rawName()
+// /usr/include/qt/QtGui/qfont.h:164
+// void ~QFont()
 extern "C"
-QString*
-C_ZNK5QFont7rawNameEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->rawName();
-  return new QString(ret); // 5
+void C_ZN5QFontD1Ev(void *this_) {
+  delete (QFont*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 233, column 10>
-//   // proto:  void QFont::setRawMode(bool );
-// _ZN5QFont10setRawModeEb setRawMode(_Bool)
+// inline
+// /usr/include/qt/QtGui/qfont.h:166
+// void swap(class QFont &)
 extern "C"
-void
-C_ZN5QFont10setRawModeEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setRawMode(arg1);
+void C_ZN5QFont4swapERS_(void *this_, QFont & other) {
+  ((QFont*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 173, column 10>
-//   // proto:  void QFont::setStyleName(const QString & );
-// _ZN5QFont12setStyleNameERK7QString setStyleName(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:169
+// QString family()
 extern "C"
-void
-C_ZN5QFont12setStyleNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QFont*)qthis)->setStyleName(*((const QString*)arg1));
+void C_ZNK5QFont6familyEv(void *this_) {
+  /*return*/ ((QFont*)this_)->family();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 278, column 11>
-//   // proto:  QFont QFont::resolve(const QFont & );
-// _ZNK5QFont7resolveERKS_ resolve(const class QFont &)
+// /usr/include/qt/QtGui/qfont.h:170
+// void setFamily(const class QString &)
 extern "C"
-QFont*
-C_ZNK5QFont7resolveERKS_(void *qthis,
-const QFont* arg1) {
-  auto ret =
-  ((QFont*)qthis)->resolve(*((const QFont*)arg1));
-  return new QFont(ret); // 5
+void C_ZN5QFont9setFamilyERK7QString(void *this_, const QString & a0) {
+  ((QFont*)this_)->setFamily(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 201, column 10>
-//   // proto:  bool QFont::strikeOut();
-// _ZNK5QFont9strikeOutEv strikeOut()
+// /usr/include/qt/QtGui/qfont.h:172
+// QString styleName()
 extern "C"
-bool
-C_ZNK5QFont9strikeOutEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->strikeOut();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont9styleNameEv(void *this_) {
+  /*return*/ ((QFont*)this_)->styleName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 180, column 9>
-//   // proto:  int QFont::pixelSize();
-// _ZNK5QFont9pixelSizeEv pixelSize()
+// /usr/include/qt/QtGui/qfont.h:173
+// void setStyleName(const class QString &)
 extern "C"
-int
-C_ZNK5QFont9pixelSizeEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->pixelSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN5QFont12setStyleNameERK7QString(void *this_, const QString & a0) {
+  ((QFont*)this_)->setStyleName(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 228, column 10>
-//   // proto:  void QFont::setHintingPreference(QFont::HintingPreference hintingPreference);
-// _ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE setHintingPreference(enum QFont::HintingPreference)
+// /usr/include/qt/QtGui/qfont.h:175
+// int pointSize()
 extern "C"
-void
-C_ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE(void *qthis,
-QFont::HintingPreference arg1) {
-  ((QFont*)qthis)->setHintingPreference(arg1);
+void C_ZNK5QFont9pointSizeEv(void *this_) {
+  /*return*/ ((QFont*)this_)->pointSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 184, column 10>
-//   // proto:  void QFont::setWeight(int );
-// _ZN5QFont9setWeightEi setWeight(int)
+// /usr/include/qt/QtGui/qfont.h:176
+// void setPointSize(int)
 extern "C"
-void
-C_ZN5QFont9setWeightEi(void *qthis,
-int arg1) {
-  ((QFont*)qthis)->setWeight(arg1);
+void C_ZN5QFont12setPointSizeEi(void *this_, int a0) {
+  ((QFont*)this_)->setPointSize(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 183, column 9>
-//   // proto:  int QFont::weight();
-// _ZNK5QFont6weightEv weight()
+// /usr/include/qt/QtGui/qfont.h:177
+// qreal pointSizeF()
 extern "C"
-int
-C_ZNK5QFont6weightEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->weight();
-  return ret; // 0 TypeKind.INT
+void C_ZNK5QFont10pointSizeFEv(void *this_) {
+  /*return*/ ((QFont*)this_)->pointSizeF();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 265, column 17>
-//   // proto: static void QFont::insertSubstitutions(const QString & , const QStringList & );
-// _ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList insertSubstitutions(const class QString &, const class QStringList &)
+// /usr/include/qt/QtGui/qfont.h:178
+// void setPointSizeF(qreal)
 extern "C"
-void
-C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(const QString* arg1,
-const QStringList* arg2) {
-  QFont::insertSubstitutions(*((const QString*)arg1),
-*((const QStringList*)arg2));
+void C_ZN5QFont13setPointSizeFEd(void *this_, qreal a0) {
+  ((QFont*)this_)->setPointSizeF(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 207, column 10>
-//   // proto:  bool QFont::kerning();
-// _ZNK5QFont7kerningEv kerning()
+// /usr/include/qt/QtGui/qfont.h:180
+// int pixelSize()
 extern "C"
-bool
-C_ZNK5QFont7kerningEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->kerning();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont9pixelSizeEv(void *this_) {
+  /*return*/ ((QFont*)this_)->pixelSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 263, column 24>
-//   // proto: static QStringList QFont::substitutions();
-// _ZN5QFont13substitutionsEv substitutions()
+// /usr/include/qt/QtGui/qfont.h:181
+// void setPixelSize(int)
 extern "C"
-QStringList*
-C_ZN5QFont13substitutionsEv() {
-  auto ret =
-  QFont::substitutions();
-  return new QStringList(ret); // 5
+void C_ZN5QFont12setPixelSizeEi(void *this_, int a0) {
+  ((QFont*)this_)->setPixelSize(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 192, column 17>
-//   // proto:  bool QFont::italic();
-// _ZNK5QFont6italicEv italic()
+// /usr/include/qt/QtGui/qfont.h:183
+// int weight()
 extern "C"
-bool
-C_ZNK5QFont6italicEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->italic();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont6weightEv(void *this_) {
+  /*return*/ ((QFont*)this_)->weight();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 196, column 10>
-//   // proto:  void QFont::setUnderline(bool );
-// _ZN5QFont12setUnderlineEb setUnderline(_Bool)
+// /usr/include/qt/QtGui/qfont.h:184
+// void setWeight(int)
 extern "C"
-void
-C_ZN5QFont12setUnderlineEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setUnderline(arg1);
+void C_ZN5QFont9setWeightEi(void *this_, int a0) {
+  ((QFont*)this_)->setWeight(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 218, column 11>
-//   // proto:  qreal QFont::letterSpacing();
-// _ZNK5QFont13letterSpacingEv letterSpacing()
+// inline
+// /usr/include/qt/QtGui/qfont.h:186
+// bool bold()
 extern "C"
-double
-C_ZNK5QFont13letterSpacingEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->letterSpacing();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK5QFont4boldEv(void *this_) {
+  /*return*/ ((QFont*)this_)->bold();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 176, column 10>
-//   // proto:  void QFont::setPointSize(int );
-// _ZN5QFont12setPointSizeEi setPointSize(int)
+// inline
+// /usr/include/qt/QtGui/qfont.h:187
+// void setBold(_Bool)
 extern "C"
-void
-C_ZN5QFont12setPointSizeEi(void *qthis,
-int arg1) {
-  ((QFont*)qthis)->setPointSize(arg1);
+void C_ZN5QFont7setBoldEb(void *this_, bool a0) {
+  ((QFont*)this_)->setBold(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 161, column 5>
-//   // proto:  void QFont::QFont(const QString & family, int pointSize, int weight, bool italic);
+// /usr/include/qt/QtGui/qfont.h:189
+// void setStyle(enum QFont::Style)
 extern "C"
-QFont*
-C_ZN5QFontC2ERK7QStringiib(const QString* arg1,
-int arg2,
-int arg3,
-bool arg4) {
-  auto ret = new QFont(*((const QString*)arg1),
-arg2,
-arg3,
-arg4);
-  return ret;
+void C_ZN5QFont8setStyleENS_5StyleE(void *this_, QFont::Style style) {
+  ((QFont*)this_)->setStyle(style);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 220, column 10>
-//   // proto:  void QFont::setLetterSpacing(QFont::SpacingType type, qreal spacing);
-// _ZN5QFont16setLetterSpacingENS_11SpacingTypeEd setLetterSpacing(enum QFont::SpacingType, qreal)
+// /usr/include/qt/QtGui/qfont.h:190
+// QFont::Style style()
 extern "C"
-void
-C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *qthis,
-QFont::SpacingType arg1,
-qreal arg2) {
-  ((QFont*)qthis)->setLetterSpacing(arg1,
-arg2);
+void C_ZNK5QFont5styleEv(void *this_) {
+  /*return*/ ((QFont*)this_)->style();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 199, column 10>
-//   // proto:  void QFont::setOverline(bool );
-// _ZN5QFont11setOverlineEb setOverline(_Bool)
+// inline
+// /usr/include/qt/QtGui/qfont.h:192
+// bool italic()
 extern "C"
-void
-C_ZN5QFont11setOverlineEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setOverline(arg1);
+void C_ZNK5QFont6italicEv(void *this_) {
+  /*return*/ ((QFont*)this_)->italic();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 190, column 11>
-//   // proto:  QFont::Style QFont::style();
-// _ZNK5QFont5styleEv style()
+// inline
+// /usr/include/qt/QtGui/qfont.h:193
+// void setItalic(_Bool)
 extern "C"
-QFont::Style
-C_ZNK5QFont5styleEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->style();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN5QFont9setItalicEb(void *this_, bool b) {
+  ((QFont*)this_)->setItalic(b);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 169, column 13>
-//   // proto:  QString QFont::family();
-// _ZNK5QFont6familyEv family()
+// /usr/include/qt/QtGui/qfont.h:195
+// bool underline()
 extern "C"
-QString*
-C_ZNK5QFont6familyEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->family();
-  return new QString(ret); // 5
+void C_ZNK5QFont9underlineEv(void *this_) {
+  /*return*/ ((QFont*)this_)->underline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 275, column 13>
-//   // proto:  QString QFont::lastResortFamily();
-// _ZNK5QFont16lastResortFamilyEv lastResortFamily()
+// /usr/include/qt/QtGui/qfont.h:196
+// void setUnderline(_Bool)
 extern "C"
-QString*
-C_ZNK5QFont16lastResortFamilyEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->lastResortFamily();
-  return new QString(ret); // 5
+void C_ZN5QFont12setUnderlineEb(void *this_, bool a0) {
+  ((QFont*)this_)->setUnderline(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 193, column 17>
-//   // proto:  void QFont::setItalic(bool b);
-// _ZN5QFont9setItalicEb setItalic(_Bool)
+// /usr/include/qt/QtGui/qfont.h:198
+// bool overline()
 extern "C"
-void
-C_ZN5QFont9setItalicEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setItalic(arg1);
+void C_ZNK5QFont8overlineEv(void *this_) {
+  /*return*/ ((QFont*)this_)->overline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 170, column 10>
-//   // proto:  void QFont::setFamily(const QString & );
-// _ZN5QFont9setFamilyERK7QString setFamily(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:199
+// void setOverline(_Bool)
 extern "C"
-void
-C_ZN5QFont9setFamilyERK7QString(void *qthis,
-const QString* arg1) {
-  ((QFont*)qthis)->setFamily(*((const QString*)arg1));
+void C_ZN5QFont11setOverlineEb(void *this_, bool a0) {
+  ((QFont*)this_)->setOverline(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 163, column 5>
-//   // proto:  void QFont::QFont(const QFont & );
+// /usr/include/qt/QtGui/qfont.h:201
+// bool strikeOut()
 extern "C"
-QFont*
-C_ZN5QFontC2ERKS_(const QFont* arg1) {
-  auto ret = new QFont(*((const QFont*)arg1));
-  return ret;
+void C_ZNK5QFont9strikeOutEv(void *this_) {
+  /*return*/ ((QFont*)this_)->strikeOut();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 198, column 10>
-//   // proto:  bool QFont::overline();
-// _ZNK5QFont8overlineEv overline()
+// /usr/include/qt/QtGui/qfont.h:202
+// void setStrikeOut(_Bool)
 extern "C"
-bool
-C_ZNK5QFont8overlineEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->overline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QFont12setStrikeOutEb(void *this_, bool a0) {
+  ((QFont*)this_)->setStrikeOut(a0);
 }
-//   // proto:  void QFont::~QFont();
+// /usr/include/qt/QtGui/qfont.h:204
+// bool fixedPitch()
 extern "C"
-void C_ZN5QFontD2Ev(void *qthis) {
-  delete (QFont*)qthis;
+void C_ZNK5QFont10fixedPitchEv(void *this_) {
+  /*return*/ ((QFont*)this_)->fixedPitch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 280, column 17>
-//   // proto:  void QFont::resolve(uint mask);
-// _ZN5QFont7resolveEj resolve(uint)
+// /usr/include/qt/QtGui/qfont.h:205
+// void setFixedPitch(_Bool)
 extern "C"
-void
-C_ZN5QFont7resolveEj(void *qthis,
-uint arg1) {
-  ((QFont*)qthis)->resolve(arg1);
+void C_ZN5QFont13setFixedPitchEb(void *this_, bool a0) {
+  ((QFont*)this_)->setFixedPitch(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 187, column 17>
-//   // proto:  void QFont::setBold(bool );
-// _ZN5QFont7setBoldEb setBold(_Bool)
+// /usr/include/qt/QtGui/qfont.h:207
+// bool kerning()
 extern "C"
-void
-C_ZN5QFont7setBoldEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setBold(arg1);
+void C_ZNK5QFont7kerningEv(void *this_) {
+  /*return*/ ((QFont*)this_)->kerning();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 272, column 17>
-//   // proto: static void QFont::cacheStatistics();
-// _ZN5QFont15cacheStatisticsEv cacheStatistics()
+// /usr/include/qt/QtGui/qfont.h:208
+// void setKerning(_Bool)
 extern "C"
-void
-C_ZN5QFont15cacheStatisticsEv() {
-  QFont::cacheStatistics();
+void C_ZN5QFont10setKerningEb(void *this_, bool a0) {
+  ((QFont*)this_)->setKerning(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 178, column 10>
-//   // proto:  void QFont::setPointSizeF(qreal );
-// _ZN5QFont13setPointSizeFEd setPointSizeF(qreal)
+// /usr/include/qt/QtGui/qfont.h:210
+// QFont::StyleHint styleHint()
 extern "C"
-void
-C_ZN5QFont13setPointSizeFEd(void *qthis,
-qreal arg1) {
-  ((QFont*)qthis)->setPointSizeF(arg1);
+void C_ZNK5QFont9styleHintEv(void *this_) {
+  /*return*/ ((QFont*)this_)->styleHint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 225, column 10>
-//   // proto:  void QFont::setCapitalization(QFont::Capitalization );
-// _ZN5QFont17setCapitalizationENS_14CapitalizationE setCapitalization(enum QFont::Capitalization)
+// /usr/include/qt/QtGui/qfont.h:211
+// QFont::StyleStrategy styleStrategy()
 extern "C"
-void
-C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *qthis,
-QFont::Capitalization arg1) {
-  ((QFont*)qthis)->setCapitalization(arg1);
+void C_ZNK5QFont13styleStrategyEv(void *this_) {
+  /*return*/ ((QFont*)this_)->styleStrategy();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 262, column 24>
-//   // proto: static QStringList QFont::substitutes(const QString & );
-// _ZN5QFont11substitutesERK7QString substitutes(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:212
+// void setStyleHint(enum QFont::StyleHint, enum QFont::StyleStrategy)
 extern "C"
-QStringList*
-C_ZN5QFont11substitutesERK7QString(const QString* arg1) {
-  auto ret =
-  QFont::substitutes(*((const QString*)arg1));
-  return new QStringList(ret); // 5
+void C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *this_, QFont::StyleHint a0, QFont::StyleStrategy a1) {
+  ((QFont*)this_)->setStyleHint(a0, a1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 222, column 11>
-//   // proto:  qreal QFont::wordSpacing();
-// _ZNK5QFont11wordSpacingEv wordSpacing()
+// /usr/include/qt/QtGui/qfont.h:213
+// void setStyleStrategy(enum QFont::StyleStrategy)
 extern "C"
-double
-C_ZNK5QFont11wordSpacingEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->wordSpacing();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN5QFont16setStyleStrategyENS_13StyleStrategyE(void *this_, QFont::StyleStrategy s) {
+  ((QFont*)this_)->setStyleStrategy(s);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 258, column 13>
-//   // proto:  QString QFont::toString();
-// _ZNK5QFont8toStringEv toString()
+// /usr/include/qt/QtGui/qfont.h:215
+// int stretch()
 extern "C"
-QString*
-C_ZNK5QFont8toStringEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->toString();
-  return new QString(ret); // 5
+void C_ZNK5QFont7stretchEv(void *this_) {
+  /*return*/ ((QFont*)this_)->stretch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 177, column 11>
-//   // proto:  qreal QFont::pointSizeF();
-// _ZNK5QFont10pointSizeFEv pointSizeF()
+// /usr/include/qt/QtGui/qfont.h:216
+// void setStretch(int)
 extern "C"
-double
-C_ZNK5QFont10pointSizeFEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->pointSizeF();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN5QFont10setStretchEi(void *this_, int a0) {
+  ((QFont*)this_)->setStretch(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 264, column 17>
-//   // proto: static void QFont::insertSubstitution(const QString & , const QString & );
-// _ZN5QFont18insertSubstitutionERK7QStringS2_ insertSubstitution(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qfont.h:218
+// qreal letterSpacing()
 extern "C"
-void
-C_ZN5QFont18insertSubstitutionERK7QStringS2_(const QString* arg1,
-const QString* arg2) {
-  QFont::insertSubstitution(*((const QString*)arg1),
-*((const QString*)arg2));
+void C_ZNK5QFont13letterSpacingEv(void *this_) {
+  /*return*/ ((QFont*)this_)->letterSpacing();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 216, column 10>
-//   // proto:  void QFont::setStretch(int );
-// _ZN5QFont10setStretchEi setStretch(int)
+// /usr/include/qt/QtGui/qfont.h:219
+// QFont::SpacingType letterSpacingType()
 extern "C"
-void
-C_ZN5QFont10setStretchEi(void *qthis,
-int arg1) {
-  ((QFont*)qthis)->setStretch(arg1);
+void C_ZNK5QFont17letterSpacingTypeEv(void *this_) {
+  /*return*/ ((QFont*)this_)->letterSpacingType();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 172, column 13>
-//   // proto:  QString QFont::styleName();
-// _ZNK5QFont9styleNameEv styleName()
+// /usr/include/qt/QtGui/qfont.h:220
+// void setLetterSpacing(enum QFont::SpacingType, qreal)
 extern "C"
-QString*
-C_ZNK5QFont9styleNameEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->styleName();
-  return new QString(ret); // 5
+void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::SpacingType type, qreal spacing) {
+  ((QFont*)this_)->setLetterSpacing(type, spacing);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 160, column 5>
-//   // proto:  void QFont::QFont();
+// /usr/include/qt/QtGui/qfont.h:222
+// qreal wordSpacing()
 extern "C"
-QFont*
-C_ZN5QFontC2Ev() {
-  auto ret = new QFont();
-  return ret;
+void C_ZNK5QFont11wordSpacingEv(void *this_) {
+  /*return*/ ((QFont*)this_)->wordSpacing();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 229, column 23>
-//   // proto:  QFont::HintingPreference QFont::hintingPreference();
-// _ZNK5QFont17hintingPreferenceEv hintingPreference()
+// /usr/include/qt/QtGui/qfont.h:223
+// void setWordSpacing(qreal)
 extern "C"
-QFont::HintingPreference
-C_ZNK5QFont17hintingPreferenceEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->hintingPreference();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN5QFont14setWordSpacingEd(void *this_, qreal spacing) {
+  ((QFont*)this_)->setWordSpacing(spacing);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 212, column 10>
-//   // proto:  void QFont::setStyleHint(QFont::StyleHint , QFont::StyleStrategy );
-// _ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE setStyleHint(enum QFont::StyleHint, enum QFont::StyleStrategy)
+// /usr/include/qt/QtGui/qfont.h:225
+// void setCapitalization(enum QFont::Capitalization)
 extern "C"
-void
-C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *qthis,
-QFont::StyleHint arg1,
-QFont::StyleStrategy arg2) {
-  ((QFont*)qthis)->setStyleHint(arg1,
-arg2);
+void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capitalization a0) {
+  ((QFont*)this_)->setCapitalization(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 232, column 10>
-//   // proto:  bool QFont::rawMode();
-// _ZNK5QFont7rawModeEv rawMode()
+// /usr/include/qt/QtGui/qfont.h:226
+// QFont::Capitalization capitalization()
 extern "C"
-bool
-C_ZNK5QFont7rawModeEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->rawMode();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont14capitalizationEv(void *this_) {
+  /*return*/ ((QFont*)this_)->capitalization();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 259, column 10>
-//   // proto:  bool QFont::fromString(const QString & );
-// _ZN5QFont10fromStringERK7QString fromString(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:228
+// void setHintingPreference(enum QFont::HintingPreference)
 extern "C"
-bool
-C_ZN5QFont10fromStringERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QFont*)qthis)->fromString(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE(void *this_, QFont::HintingPreference hintingPreference) {
+  ((QFont*)this_)->setHintingPreference(hintingPreference);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 210, column 15>
-//   // proto:  QFont::StyleHint QFont::styleHint();
-// _ZNK5QFont9styleHintEv styleHint()
+// /usr/include/qt/QtGui/qfont.h:229
+// QFont::HintingPreference hintingPreference()
 extern "C"
-QFont::StyleHint
-C_ZNK5QFont9styleHintEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->styleHint();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK5QFont17hintingPreferenceEv(void *this_) {
+  /*return*/ ((QFont*)this_)->hintingPreference();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 195, column 10>
-//   // proto:  bool QFont::underline();
-// _ZNK5QFont9underlineEv underline()
+// /usr/include/qt/QtGui/qfont.h:232
+// bool rawMode()
 extern "C"
-bool
-C_ZNK5QFont9underlineEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->underline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont7rawModeEv(void *this_) {
+  /*return*/ ((QFont*)this_)->rawMode();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 244, column 10>
-//   // proto:  bool QFont::isCopyOf(const QFont & );
-// _ZNK5QFont8isCopyOfERKS_ isCopyOf(const class QFont &)
+// /usr/include/qt/QtGui/qfont.h:233
+// void setRawMode(_Bool)
 extern "C"
-bool
-C_ZNK5QFont8isCopyOfERKS_(void *qthis,
-const QFont* arg1) {
-  auto ret =
-  ((QFont*)qthis)->isCopyOf(*((const QFont*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QFont10setRawModeEb(void *this_, bool a0) {
+  ((QFont*)this_)->setRawMode(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 175, column 9>
-//   // proto:  int QFont::pointSize();
-// _ZNK5QFont9pointSizeEv pointSize()
+// /usr/include/qt/QtGui/qfont.h:237
+// bool exactMatch()
 extern "C"
-int
-C_ZNK5QFont9pointSizeEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->pointSize();
-  return ret; // 0 TypeKind.INT
+void C_ZNK5QFont10exactMatchEv(void *this_) {
+  /*return*/ ((QFont*)this_)->exactMatch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 208, column 10>
-//   // proto:  void QFont::setKerning(bool );
-// _ZN5QFont10setKerningEb setKerning(_Bool)
+// /usr/include/qt/QtGui/qfont.h:244
+// bool isCopyOf(const class QFont &)
 extern "C"
-void
-C_ZN5QFont10setKerningEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setKerning(arg1);
+void C_ZNK5QFont8isCopyOfERKS_(void *this_, const QFont & a0) {
+  /*return*/ ((QFont*)this_)->isCopyOf(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 186, column 17>
-//   // proto:  bool QFont::bold();
-// _ZNK5QFont4boldEv bold()
+// /usr/include/qt/QtGui/qfont.h:252
+// void setRawName(const class QString &)
 extern "C"
-bool
-C_ZNK5QFont4boldEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->bold();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QFont10setRawNameERK7QString(void *this_, const QString & a0) {
+  ((QFont*)this_)->setRawName(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 204, column 10>
-//   // proto:  bool QFont::fixedPitch();
-// _ZNK5QFont10fixedPitchEv fixedPitch()
+// /usr/include/qt/QtGui/qfont.h:253
+// QString rawName()
 extern "C"
-bool
-C_ZNK5QFont10fixedPitchEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->fixedPitch();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QFont7rawNameEv(void *this_) {
+  /*return*/ ((QFont*)this_)->rawName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 162, column 5>
-//   // proto:  void QFont::QFont(const QFont & , QPaintDevice * pd);
+// /usr/include/qt/QtGui/qfont.h:256
+// QString key()
 extern "C"
-QFont*
-C_ZN5QFontC2ERKS_P12QPaintDevice(const QFont* arg1,
-QPaintDevice * arg2) {
-  auto ret = new QFont(*((const QFont*)arg1),
-arg2);
-  return ret;
+void C_ZNK5QFont3keyEv(void *this_) {
+  /*return*/ ((QFont*)this_)->key();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 261, column 20>
-//   // proto: static QString QFont::substitute(const QString & );
-// _ZN5QFont10substituteERK7QString substitute(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:258
+// QString toString()
 extern "C"
-QString*
-C_ZN5QFont10substituteERK7QString(const QString* arg1) {
-  auto ret =
-  QFont::substitute(*((const QString*)arg1));
-  return new QString(ret); // 5
+void C_ZNK5QFont8toStringEv(void *this_) {
+  /*return*/ ((QFont*)this_)->toString();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 213, column 10>
-//   // proto:  void QFont::setStyleStrategy(QFont::StyleStrategy s);
-// _ZN5QFont16setStyleStrategyENS_13StyleStrategyE setStyleStrategy(enum QFont::StyleStrategy)
+// /usr/include/qt/QtGui/qfont.h:259
+// bool fromString(const class QString &)
 extern "C"
-void
-C_ZN5QFont16setStyleStrategyENS_13StyleStrategyE(void *qthis,
-QFont::StyleStrategy arg1) {
-  ((QFont*)qthis)->setStyleStrategy(arg1);
+void C_ZN5QFont10fromStringERK7QString(void *this_, const QString & a0) {
+  /*return*/ ((QFont*)this_)->fromString(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 211, column 19>
-//   // proto:  QFont::StyleStrategy QFont::styleStrategy();
-// _ZNK5QFont13styleStrategyEv styleStrategy()
+// static
+// /usr/include/qt/QtGui/qfont.h:261
+// QString substitute(const class QString &)
 extern "C"
-QFont::StyleStrategy
-C_ZNK5QFont13styleStrategyEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->styleStrategy();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN5QFont10substituteERK7QString(const QString & a0) {
+  /*return*/ QFont::substitute(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 219, column 17>
-//   // proto:  QFont::SpacingType QFont::letterSpacingType();
-// _ZNK5QFont17letterSpacingTypeEv letterSpacingType()
+// static
+// /usr/include/qt/QtGui/qfont.h:262
+// QStringList substitutes(const class QString &)
 extern "C"
-QFont::SpacingType
-C_ZNK5QFont17letterSpacingTypeEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->letterSpacingType();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN5QFont11substitutesERK7QString(const QString & a0) {
+  /*return*/ QFont::substitutes(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 205, column 10>
-//   // proto:  void QFont::setFixedPitch(bool );
-// _ZN5QFont13setFixedPitchEb setFixedPitch(_Bool)
+// static
+// /usr/include/qt/QtGui/qfont.h:263
+// QStringList substitutions()
 extern "C"
-void
-C_ZN5QFont13setFixedPitchEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setFixedPitch(arg1);
+void C_ZN5QFont13substitutionsEv() {
+  /*return*/ QFont::substitutions();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 266, column 17>
-//   // proto: static void QFont::removeSubstitutions(const QString & );
-// _ZN5QFont19removeSubstitutionsERK7QString removeSubstitutions(const class QString &)
+// static
+// /usr/include/qt/QtGui/qfont.h:264
+// void insertSubstitution(const class QString &, const class QString &)
 extern "C"
-void
-C_ZN5QFont19removeSubstitutionsERK7QString(const QString* arg1) {
-  QFont::removeSubstitutions(*((const QString*)arg1));
+void C_ZN5QFont18insertSubstitutionERK7QStringS2_(const QString & a0, const QString & a1) {
+  QFont::insertSubstitution(a0, a1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 181, column 10>
-//   // proto:  void QFont::setPixelSize(int );
-// _ZN5QFont12setPixelSizeEi setPixelSize(int)
+// static
+// /usr/include/qt/QtGui/qfont.h:265
+// void insertSubstitutions(const class QString &, const class QStringList &)
 extern "C"
-void
-C_ZN5QFont12setPixelSizeEi(void *qthis,
-int arg1) {
-  ((QFont*)qthis)->setPixelSize(arg1);
+void C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(const QString & a0, const QStringList & a1) {
+  QFont::insertSubstitutions(a0, a1);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 270, column 17>
-//   // proto: static void QFont::initialize();
-// _ZN5QFont10initializeEv initialize()
+// static
+// /usr/include/qt/QtGui/qfont.h:266
+// void removeSubstitutions(const class QString &)
 extern "C"
-void
-C_ZN5QFont10initializeEv() {
+void C_ZN5QFont19removeSubstitutionsERK7QString(const QString & a0) {
+  QFont::removeSubstitutions(a0);
+}
+// static
+// /usr/include/qt/QtGui/qfont.h:270
+// void initialize()
+extern "C"
+void C_ZN5QFont10initializeEv() {
   QFont::initialize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 256, column 13>
-//   // proto:  QString QFont::key();
-// _ZNK5QFont3keyEv key()
+// static
+// /usr/include/qt/QtGui/qfont.h:271
+// void cleanup()
 extern "C"
-QString*
-C_ZNK5QFont3keyEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->key();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 276, column 13>
-//   // proto:  QString QFont::lastResortFont();
-// _ZNK5QFont14lastResortFontEv lastResortFont()
-extern "C"
-QString*
-C_ZNK5QFont14lastResortFontEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->lastResortFont();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 226, column 20>
-//   // proto:  QFont::Capitalization QFont::capitalization();
-// _ZNK5QFont14capitalizationEv capitalization()
-extern "C"
-QFont::Capitalization
-C_ZNK5QFont14capitalizationEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->capitalization();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 166, column 10>
-//   // proto:  void QFont::swap(QFont & other);
-// _ZN5QFont4swapERS_ swap(class QFont &)
-extern "C"
-void
-C_ZN5QFont4swapERS_(void *qthis,
-QFont* arg1) {
-  ((QFont*)qthis)->swap(*((QFont*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 274, column 13>
-//   // proto:  QString QFont::defaultFamily();
-// _ZNK5QFont13defaultFamilyEv defaultFamily()
-extern "C"
-QString*
-C_ZNK5QFont13defaultFamilyEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->defaultFamily();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 202, column 10>
-//   // proto:  void QFont::setStrikeOut(bool );
-// _ZN5QFont12setStrikeOutEb setStrikeOut(_Bool)
-extern "C"
-void
-C_ZN5QFont12setStrikeOutEb(void *qthis,
-bool arg1) {
-  ((QFont*)qthis)->setStrikeOut(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 279, column 17>
-//   // proto:  uint QFont::resolve();
-// _ZNK5QFont7resolveEv resolve()
-extern "C"
-unsigned int
-C_ZNK5QFont7resolveEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->resolve();
-  return ret; // 0 TypeKind.UINT
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 271, column 17>
-//   // proto: static void QFont::cleanup();
-// _ZN5QFont7cleanupEv cleanup()
-extern "C"
-void
-C_ZN5QFont7cleanupEv() {
+void C_ZN5QFont7cleanupEv() {
   QFont::cleanup();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 237, column 10>
-//   // proto:  bool QFont::exactMatch();
-// _ZNK5QFont10exactMatchEv exactMatch()
+// static
+// /usr/include/qt/QtGui/qfont.h:272
+// void cacheStatistics()
 extern "C"
-bool
-C_ZNK5QFont10exactMatchEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->exactMatch();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QFont15cacheStatisticsEv() {
+  QFont::cacheStatistics();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 215, column 9>
-//   // proto:  int QFont::stretch();
-// _ZNK5QFont7stretchEv stretch()
+// /usr/include/qt/QtGui/qfont.h:274
+// QString defaultFamily()
 extern "C"
-int
-C_ZNK5QFont7stretchEv(void *qthis) {
-  auto ret =
-  ((QFont*)qthis)->stretch();
-  return ret; // 0 TypeKind.INT
+void C_ZNK5QFont13defaultFamilyEv(void *this_) {
+  /*return*/ ((QFont*)this_)->defaultFamily();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfont.h', line 252, column 24>
-//   // proto:  void QFont::setRawName(const QString & );
-// _ZN5QFont10setRawNameERK7QString setRawName(const class QString &)
+// /usr/include/qt/QtGui/qfont.h:275
+// QString lastResortFamily()
 extern "C"
-void
-C_ZN5QFont10setRawNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QFont*)qthis)->setRawName(*((const QString*)arg1));
+void C_ZNK5QFont16lastResortFamilyEv(void *this_) {
+  /*return*/ ((QFont*)this_)->lastResortFamily();
 }
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-
+// /usr/include/qt/QtGui/qfont.h:276
+// QString lastResortFont()
+extern "C"
+void C_ZNK5QFont14lastResortFontEv(void *this_) {
+  /*return*/ ((QFont*)this_)->lastResortFont();
+}
+// /usr/include/qt/QtGui/qfont.h:278
+// QFont resolve(const class QFont &)
+extern "C"
+void C_ZNK5QFont7resolveERKS_(void *this_, const QFont & a0) {
+  /*return*/ ((QFont*)this_)->resolve(a0);
+}
+// inline
+// /usr/include/qt/QtGui/qfont.h:279
+// uint resolve()
+extern "C"
+void C_ZNK5QFont7resolveEv(void *this_) {
+  /*return*/ ((QFont*)this_)->resolve();
+}
+// inline
+// /usr/include/qt/QtGui/qfont.h:280
+// void resolve(uint)
+extern "C"
+void C_ZN5QFont7resolveEj(void *this_, uint mask) {
+  ((QFont*)this_)->resolve(mask);
+}

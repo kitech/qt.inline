@@ -1,715 +1,326 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qmenu.h
-// dst-file: /src/widgets/qmenu.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qmenu.h
 #include <qmenu.h>
+#include <QtWidgets>
 
-
-#include <qicon.h>
-#include <qrect.h>
-#include <qstring.h>
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmenu_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qmenu.h:67
+// const QMetaObject * metaObject()
 extern "C"
-int QMenu_Class_Size()
-{
-  return sizeof(QMenu);
+void C_ZNK5QMenu10metaObjectEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 171, column 10>
-//   // proto:  bool QMenu::isTearOffEnabled();
-// _ZNK5QMenu16isTearOffEnabledEv isTearOffEnabled()
+// /usr/include/qt/QtWidgets/qmenu.h:77
+// void QMenu(class QWidget *)
 extern "C"
-bool
-C_ZNK5QMenu16isTearOffEnabledEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->isTearOffEnabled();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN5QMenuC1EP7QWidget(QWidget * parent) {
+  return new QMenu(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 222, column 10>
-//   // proto:  bool QMenu::toolTipsVisible();
-// _ZNK5QMenu15toolTipsVisibleEv toolTipsVisible()
+// /usr/include/qt/QtWidgets/qmenu.h:78
+// void QMenu(const class QString &, class QWidget *)
 extern "C"
-bool
-C_ZNK5QMenu15toolTipsVisibleEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->toolTipsVisible();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN5QMenuC1ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+  return new QMenu(title, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 199, column 14>
-//   // proto:  QAction * QMenu::menuAction();
-// _ZNK5QMenu10menuActionEv menuAction()
+// virtual
+// /usr/include/qt/QtWidgets/qmenu.h:79
+// void ~QMenu()
 extern "C"
-void*
-C_ZNK5QMenu10menuActionEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->menuAction();
-  return (void*)ret;
+void C_ZN5QMenuD1Ev(void *this_) {
+  delete (QMenu*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 83, column 14>
-//   // proto:  QAction * QMenu::addAction(const QIcon & icon, const QString & text);
-// _ZN5QMenu9addActionERK5QIconRK7QString addAction(const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:82
+// QAction * addAction(const class QString &)
 extern "C"
-void*
-C_ZN5QMenu9addActionERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QMenu*)qthis)->addAction(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZN5QMenu9addActionERK7QString(void *this_, const QString & text) {
+  /*return*/ ((QMenu*)this_)->addAction(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 209, column 10>
-//   // proto:  void QMenu::setPlatformMenu(QPlatformMenu * platformMenu);
-// _ZN5QMenu15setPlatformMenuEP13QPlatformMenu setPlatformMenu(class QPlatformMenu *)
+// /usr/include/qt/QtWidgets/qmenu.h:83
+// QAction * addAction(const class QIcon &, const class QString &)
 extern "C"
-void
-C_ZN5QMenu15setPlatformMenuEP13QPlatformMenu(void *qthis,
-QPlatformMenu * arg1) {
-  ((QMenu*)qthis)->setPlatformMenu(arg1);
+void C_ZN5QMenu9addActionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
+  /*return*/ ((QMenu*)this_)->addAction(icon, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 228, column 10>
-//   // proto:  void QMenu::triggered(QAction * action);
-// _ZN5QMenu9triggeredEP7QAction triggered(class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:84
+// QAction * addAction(const class QString &, const class QObject *, const char *, const class QKeySequence &)
 extern "C"
-void
-C_ZN5QMenu9triggeredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QMenu*)qthis)->triggered(arg1);
+void C_ZN5QMenu9addActionERK7QStringPK7QObjectPKcRK12QKeySequence(void *this_, const QString & text, const QObject * receiver, const char * member, const QKeySequence & shortcut) {
+  /*return*/ ((QMenu*)this_)->addAction(text, receiver, member, shortcut);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 170, column 10>
-//   // proto:  void QMenu::setTearOffEnabled(bool );
-// _ZN5QMenu17setTearOffEnabledEb setTearOffEnabled(_Bool)
+// /usr/include/qt/QtWidgets/qmenu.h:85
+// QAction * addAction(const class QIcon &, const class QString &, const class QObject *, const char *, const class QKeySequence &)
 extern "C"
-void
-C_ZN5QMenu17setTearOffEnabledEb(void *qthis,
-bool arg1) {
-  ((QMenu*)qthis)->setTearOffEnabled(arg1);
+void C_ZN5QMenu9addActionERK5QIconRK7QStringPK7QObjectPKcRK12QKeySequence(void *this_, const QIcon & icon, const QString & text, const QObject * receiver, const char * member, const QKeySequence & shortcut) {
+  /*return*/ ((QMenu*)this_)->addAction(icon, text, receiver, member, shortcut);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 159, column 14>
-//   // proto:  QAction * QMenu::addSection(const QString & text);
-// _ZN5QMenu10addSectionERK7QString addSection(const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:153
+// QAction * addMenu(class QMenu *)
 extern "C"
-void*
-C_ZN5QMenu10addSectionERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMenu*)qthis)->addSection(*((const QString*)arg1));
-  return (void*)ret;
+void C_ZN5QMenu7addMenuEPS_(void *this_, QMenu * menu) {
+  /*return*/ ((QMenu*)this_)->addMenu(menu);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 67, column 5>
-//   // proto:  const QMetaObject * QMenu::metaObject();
-// _ZNK5QMenu10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qmenu.h:154
+// QMenu * addMenu(const class QString &)
 extern "C"
-void*
-C_ZNK5QMenu10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN5QMenu7addMenuERK7QString(void *this_, const QString & title) {
+  /*return*/ ((QMenu*)this_)->addMenu(title);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 168, column 10>
-//   // proto:  void QMenu::clear();
-// _ZN5QMenu5clearEv clear()
+// /usr/include/qt/QtWidgets/qmenu.h:155
+// QMenu * addMenu(const class QIcon &, const class QString &)
 extern "C"
-void
-C_ZN5QMenu5clearEv(void *qthis) {
-  ((QMenu*)qthis)->clear();
+void C_ZN5QMenu7addMenuERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & title) {
+  /*return*/ ((QMenu*)this_)->addMenu(icon, title);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 162, column 14>
-//   // proto:  QAction * QMenu::insertMenu(QAction * before, QMenu * menu);
-// _ZN5QMenu10insertMenuEP7QActionPS_ insertMenu(class QAction *, class QMenu *)
+// /usr/include/qt/QtWidgets/qmenu.h:157
+// QAction * addSeparator()
 extern "C"
-void*
-C_ZN5QMenu10insertMenuEP7QActionPS_(void *qthis,
-QAction * arg1,
-QMenu * arg2) {
-  auto ret =
-  ((QMenu*)qthis)->insertMenu(arg1,
-arg2);
-  return (void*)ret;
+void C_ZN5QMenu12addSeparatorEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->addSeparator();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 204, column 11>
-//   // proto:  QIcon QMenu::icon();
-// _ZNK5QMenu4iconEv icon()
+// /usr/include/qt/QtWidgets/qmenu.h:159
+// QAction * addSection(const class QString &)
 extern "C"
-QIcon*
-C_ZNK5QMenu4iconEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->icon();
-  return new QIcon(ret); // 5
+void C_ZN5QMenu10addSectionERK7QString(void *this_, const QString & text) {
+  /*return*/ ((QMenu*)this_)->addSection(text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 164, column 14>
-//   // proto:  QAction * QMenu::insertSection(QAction * before, const QString & text);
-// _ZN5QMenu13insertSectionEP7QActionRK7QString insertSection(class QAction *, const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:160
+// QAction * addSection(const class QIcon &, const class QString &)
 extern "C"
-void*
-C_ZN5QMenu13insertSectionEP7QActionRK7QString(void *qthis,
-QAction * arg1,
-const QString* arg2) {
-  auto ret =
-  ((QMenu*)qthis)->insertSection(arg1,
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZN5QMenu10addSectionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
+  /*return*/ ((QMenu*)this_)->addSection(icon, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 208, column 20>
-//   // proto:  QPlatformMenu * QMenu::platformMenu();
-// _ZN5QMenu12platformMenuEv platformMenu()
+// /usr/include/qt/QtWidgets/qmenu.h:162
+// QAction * insertMenu(class QAction *, class QMenu *)
 extern "C"
-void*
-C_ZN5QMenu12platformMenuEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->platformMenu();
-  return (void*)ret;
+void C_ZN5QMenu10insertMenuEP7QActionPS_(void *this_, QAction * before, QMenu * menu) {
+  /*return*/ ((QMenu*)this_)->insertMenu(before, menu);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 207, column 10>
-//   // proto:  void QMenu::setNoReplayFor(QWidget * widget);
-// _ZN5QMenu14setNoReplayForEP7QWidget setNoReplayFor(class QWidget *)
+// /usr/include/qt/QtWidgets/qmenu.h:163
+// QAction * insertSeparator(class QAction *)
 extern "C"
-void
-C_ZN5QMenu14setNoReplayForEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QMenu*)qthis)->setNoReplayFor(arg1);
+void C_ZN5QMenu15insertSeparatorEP7QAction(void *this_, QAction * before) {
+  /*return*/ ((QMenu*)this_)->insertSeparator(before);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 205, column 10>
-//   // proto:  void QMenu::setIcon(const QIcon & icon);
-// _ZN5QMenu7setIconERK5QIcon setIcon(const class QIcon &)
+// /usr/include/qt/QtWidgets/qmenu.h:164
+// QAction * insertSection(class QAction *, const class QString &)
 extern "C"
-void
-C_ZN5QMenu7setIconERK5QIcon(void *qthis,
-const QIcon* arg1) {
-  ((QMenu*)qthis)->setIcon(*((const QIcon*)arg1));
+void C_ZN5QMenu13insertSectionEP7QActionRK7QString(void *this_, QAction * before, const QString & text) {
+  /*return*/ ((QMenu*)this_)->insertSection(before, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 186, column 14>
-//   // proto:  QAction * QMenu::exec(const QPoint & pos, QAction * at);
-// _ZN5QMenu4execERK6QPointP7QAction exec(const class QPoint &, class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:165
+// QAction * insertSection(class QAction *, const class QIcon &, const class QString &)
 extern "C"
-void*
-C_ZN5QMenu4execERK6QPointP7QAction(void *qthis,
-const QPoint* arg1,
-QAction * arg2) {
-  auto ret =
-  ((QMenu*)qthis)->exec(*((const QPoint*)arg1),
-arg2);
-  return (void*)ret;
+void C_ZN5QMenu13insertSectionEP7QActionRK5QIconRK7QString(void *this_, QAction * before, const QIcon & icon, const QString & text) {
+  /*return*/ ((QMenu*)this_)->insertSection(before, icon, text);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 219, column 10>
-//   // proto:  bool QMenu::separatorsCollapsible();
-// _ZNK5QMenu21separatorsCollapsibleEv separatorsCollapsible()
+// /usr/include/qt/QtWidgets/qmenu.h:167
+// bool isEmpty()
 extern "C"
-bool
-C_ZNK5QMenu21separatorsCollapsibleEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->separatorsCollapsible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QMenu7isEmptyEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 154, column 12>
-//   // proto:  QMenu * QMenu::addMenu(const QString & title);
-// _ZN5QMenu7addMenuERK7QString addMenu(const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:168
+// void clear()
 extern "C"
-void*
-C_ZN5QMenu7addMenuERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMenu*)qthis)->addMenu(*((const QString*)arg1));
-  return (void*)ret;
+void C_ZN5QMenu5clearEv(void *this_) {
+  ((QMenu*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 229, column 10>
-//   // proto:  void QMenu::hovered(QAction * action);
-// _ZN5QMenu7hoveredEP7QAction hovered(class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:170
+// void setTearOffEnabled(_Bool)
 extern "C"
-void
-C_ZN5QMenu7hoveredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QMenu*)qthis)->hovered(arg1);
+void C_ZN5QMenu17setTearOffEnabledEb(void *this_, bool a0) {
+  ((QMenu*)this_)->setTearOffEnabled(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 157, column 14>
-//   // proto:  QAction * QMenu::addSeparator();
-// _ZN5QMenu12addSeparatorEv addSeparator()
+// /usr/include/qt/QtWidgets/qmenu.h:171
+// bool isTearOffEnabled()
 extern "C"
-void*
-C_ZN5QMenu12addSeparatorEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->addSeparator();
-  return (void*)ret;
+void C_ZNK5QMenu16isTearOffEnabledEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->isTearOffEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 176, column 10>
-//   // proto:  void QMenu::hideTearOffMenu();
-// _ZN5QMenu15hideTearOffMenuEv hideTearOffMenu()
+// /usr/include/qt/QtWidgets/qmenu.h:173
+// bool isTearOffMenuVisible()
 extern "C"
-void
-C_ZN5QMenu15hideTearOffMenuEv(void *qthis) {
-  ((QMenu*)qthis)->hideTearOffMenu();
+void C_ZNK5QMenu20isTearOffMenuVisibleEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->isTearOffMenuVisible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 174, column 10>
-//   // proto:  void QMenu::showTearOffMenu();
-// _ZN5QMenu15showTearOffMenuEv showTearOffMenu()
+// /usr/include/qt/QtWidgets/qmenu.h:174
+// void showTearOffMenu()
 extern "C"
-void
-C_ZN5QMenu15showTearOffMenuEv(void *qthis) {
-  ((QMenu*)qthis)->showTearOffMenu();
+void C_ZN5QMenu15showTearOffMenuEv(void *this_) {
+  ((QMenu*)this_)->showTearOffMenu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 84, column 14>
-//   // proto:  QAction * QMenu::addAction(const QString & text, const QObject * receiver, const char * member, const QKeySequence & shortcut);
-// _ZN5QMenu9addActionERK7QStringPK7QObjectPKcRK12QKeySequence addAction(const class QString &, const class QObject *, const char *, const class QKeySequence &)
+// /usr/include/qt/QtWidgets/qmenu.h:175
+// void showTearOffMenu(const class QPoint &)
 extern "C"
-void*
-C_ZN5QMenu9addActionERK7QStringPK7QObjectPKcRK12QKeySequence(void *qthis,
-const QString* arg1,
-const QObject * arg2,
-const char * arg3,
-const QKeySequence* arg4) {
-  auto ret =
-  ((QMenu*)qthis)->addAction(*((const QString*)arg1),
-arg2,
-arg3,
-*((const QKeySequence*)arg4));
-  return (void*)ret;
+void C_ZN5QMenu15showTearOffMenuERK6QPoint(void *this_, const QPoint & pos) {
+  ((QMenu*)this_)->showTearOffMenu(pos);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 77, column 14>
-//   // proto:  void QMenu::QMenu(QWidget * parent);
+// /usr/include/qt/QtWidgets/qmenu.h:176
+// void hideTearOffMenu()
 extern "C"
-QMenu*
-C_ZN5QMenuC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QMenu(arg1);
-  return ret;
+void C_ZN5QMenu15hideTearOffMenuEv(void *this_) {
+  ((QMenu*)this_)->hideTearOffMenu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 181, column 10>
-//   // proto:  void QMenu::setActiveAction(QAction * act);
-// _ZN5QMenu15setActiveActionEP7QAction setActiveAction(class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:178
+// void setDefaultAction(class QAction *)
 extern "C"
-void
-C_ZN5QMenu15setActiveActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QMenu*)qthis)->setActiveAction(arg1);
+void C_ZN5QMenu16setDefaultActionEP7QAction(void *this_, QAction * a0) {
+  ((QMenu*)this_)->setDefaultAction(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 220, column 10>
-//   // proto:  void QMenu::setSeparatorsCollapsible(bool collapse);
-// _ZN5QMenu24setSeparatorsCollapsibleEb setSeparatorsCollapsible(_Bool)
+// /usr/include/qt/QtWidgets/qmenu.h:179
+// QAction * defaultAction()
 extern "C"
-void
-C_ZN5QMenu24setSeparatorsCollapsibleEb(void *qthis,
-bool arg1) {
-  ((QMenu*)qthis)->setSeparatorsCollapsible(arg1);
+void C_ZNK5QMenu13defaultActionEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->defaultAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 82, column 14>
-//   // proto:  QAction * QMenu::addAction(const QString & text);
-// _ZN5QMenu9addActionERK7QString addAction(const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:181
+// void setActiveAction(class QAction *)
 extern "C"
-void*
-C_ZN5QMenu9addActionERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMenu*)qthis)->addAction(*((const QString*)arg1));
-  return (void*)ret;
+void C_ZN5QMenu15setActiveActionEP7QAction(void *this_, QAction * act) {
+  ((QMenu*)this_)->setActiveAction(act);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 182, column 14>
-//   // proto:  QAction * QMenu::activeAction();
-// _ZNK5QMenu12activeActionEv activeAction()
+// /usr/include/qt/QtWidgets/qmenu.h:182
+// QAction * activeAction()
 extern "C"
-void*
-C_ZNK5QMenu12activeActionEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->activeAction();
-  return (void*)ret;
+void C_ZNK5QMenu12activeActionEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->activeAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 167, column 10>
-//   // proto:  bool QMenu::isEmpty();
-// _ZNK5QMenu7isEmptyEv isEmpty()
+// /usr/include/qt/QtWidgets/qmenu.h:184
+// void popup(const class QPoint &, class QAction *)
 extern "C"
-bool
-C_ZNK5QMenu7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN5QMenu5popupERK6QPointP7QAction(void *this_, const QPoint & pos, QAction * at) {
+  ((QMenu*)this_)->popup(pos, at);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 85, column 14>
-//   // proto:  QAction * QMenu::addAction(const QIcon & icon, const QString & text, const QObject * receiver, const char * member, const QKeySequence & shortcut);
-// _ZN5QMenu9addActionERK5QIconRK7QStringPK7QObjectPKcRK12QKeySequence addAction(const class QIcon &, const class QString &, const class QObject *, const char *, const class QKeySequence &)
+// /usr/include/qt/QtWidgets/qmenu.h:185
+// QAction * exec()
 extern "C"
-void*
-C_ZN5QMenu9addActionERK5QIconRK7QStringPK7QObjectPKcRK12QKeySequence(void *qthis,
-const QIcon* arg1,
-const QString* arg2,
-const QObject * arg3,
-const char * arg4,
-const QKeySequence* arg5) {
-  auto ret =
-  ((QMenu*)qthis)->addAction(*((const QIcon*)arg1),
-*((const QString*)arg2),
-arg3,
-arg4,
-*((const QKeySequence*)arg5));
-  return (void*)ret;
+void C_ZN5QMenu4execEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->exec();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 196, column 11>
-//   // proto:  QRect QMenu::actionGeometry(QAction * );
-// _ZNK5QMenu14actionGeometryEP7QAction actionGeometry(class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:186
+// QAction * exec(const class QPoint &, class QAction *)
 extern "C"
-QRect*
-C_ZNK5QMenu14actionGeometryEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QMenu*)qthis)->actionGeometry(arg1);
-  return new QRect(ret); // 5
+void C_ZN5QMenu4execERK6QPointP7QAction(void *this_, const QPoint & pos, QAction * at) {
+  /*return*/ ((QMenu*)this_)->exec(pos, at);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 78, column 14>
-//   // proto:  void QMenu::QMenu(const QString & title, QWidget * parent);
+// static
+// /usr/include/qt/QtWidgets/qmenu.h:191
+// QAction * exec(QList<class QAction *>, const class QPoint &, class QAction *, class QWidget *)
 extern "C"
-QMenu*
-C_ZN5QMenuC2ERK7QStringP7QWidget(const QString* arg1,
-QWidget * arg2) {
-  auto ret = new QMenu(*((const QString*)arg1),
-arg2);
-  return ret;
+void C_ZN5QMenu4execE5QListIP7QActionERK6QPointS2_P7QWidget(QList<QAction *> actions, const QPoint & pos, QAction * at, QWidget * parent) {
+  /*return*/ QMenu::exec(actions, pos, at, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 163, column 14>
-//   // proto:  QAction * QMenu::insertSeparator(QAction * before);
-// _ZN5QMenu15insertSeparatorEP7QAction insertSeparator(class QAction *)
+// virtual
+// /usr/include/qt/QtWidgets/qmenu.h:194
+// QSize sizeHint()
 extern "C"
-void*
-C_ZN5QMenu15insertSeparatorEP7QAction(void *qthis,
-QAction * arg1) {
-  auto ret =
-  ((QMenu*)qthis)->insertSeparator(arg1);
-  return (void*)ret;
+void C_ZNK5QMenu8sizeHintEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 227, column 10>
-//   // proto:  void QMenu::aboutToHide();
-// _ZN5QMenu11aboutToHideEv aboutToHide()
+// /usr/include/qt/QtWidgets/qmenu.h:196
+// QRect actionGeometry(class QAction *)
 extern "C"
-void
-C_ZN5QMenu11aboutToHideEv(void *qthis) {
-  ((QMenu*)qthis)->aboutToHide();
+void C_ZNK5QMenu14actionGeometryEP7QAction(void *this_, QAction * a0) {
+  /*return*/ ((QMenu*)this_)->actionGeometry(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 175, column 10>
-//   // proto:  void QMenu::showTearOffMenu(const QPoint & pos);
-// _ZN5QMenu15showTearOffMenuERK6QPoint showTearOffMenu(const class QPoint &)
+// /usr/include/qt/QtWidgets/qmenu.h:197
+// QAction * actionAt(const class QPoint &)
 extern "C"
-void
-C_ZN5QMenu15showTearOffMenuERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  ((QMenu*)qthis)->showTearOffMenu(*((const QPoint*)arg1));
+void C_ZNK5QMenu8actionAtERK6QPoint(void *this_, const QPoint & a0) {
+  /*return*/ ((QMenu*)this_)->actionAt(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 160, column 14>
-//   // proto:  QAction * QMenu::addSection(const QIcon & icon, const QString & text);
-// _ZN5QMenu10addSectionERK5QIconRK7QString addSection(const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:199
+// QAction * menuAction()
 extern "C"
-void*
-C_ZN5QMenu10addSectionERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QMenu*)qthis)->addSection(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZNK5QMenu10menuActionEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->menuAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 173, column 10>
-//   // proto:  bool QMenu::isTearOffMenuVisible();
-// _ZNK5QMenu20isTearOffMenuVisibleEv isTearOffMenuVisible()
+// /usr/include/qt/QtWidgets/qmenu.h:201
+// QString title()
 extern "C"
-bool
-C_ZNK5QMenu20isTearOffMenuVisibleEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->isTearOffMenuVisible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK5QMenu5titleEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->title();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 191, column 21>
-//   // proto: static QAction * QMenu::exec(QList<QAction *> actions, const QPoint & pos, QAction * at, QWidget * parent);
-// _ZN5QMenu4execE5QListIP7QActionERK6QPointS2_P7QWidget exec(QList<class QAction *>, const class QPoint &, class QAction *, class QWidget *)
+// /usr/include/qt/QtWidgets/qmenu.h:202
+// void setTitle(const class QString &)
 extern "C"
-void*
-C_ZN5QMenu4execE5QListIP7QActionERK6QPointS2_P7QWidget(QList<QAction *>* arg1,
-const QPoint* arg2,
-QAction * arg3,
-QWidget * arg4) {
-  auto ret =
-  QMenu::exec(*((QList<QAction *>*)arg1),
-*((const QPoint*)arg2),
-arg3,
-arg4);
-  return (void*)ret;
+void C_ZN5QMenu8setTitleERK7QString(void *this_, const QString & title) {
+  ((QMenu*)this_)->setTitle(title);
 }
-//   // proto:  void QMenu::~QMenu();
+// /usr/include/qt/QtWidgets/qmenu.h:204
+// QIcon icon()
 extern "C"
-void C_ZN5QMenuD2Ev(void *qthis) {
-  delete (QMenu*)qthis;
+void C_ZNK5QMenu4iconEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->icon();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 201, column 13>
-//   // proto:  QString QMenu::title();
-// _ZNK5QMenu5titleEv title()
+// /usr/include/qt/QtWidgets/qmenu.h:205
+// void setIcon(const class QIcon &)
 extern "C"
-QString*
-C_ZNK5QMenu5titleEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->title();
-  return new QString(ret); // 5
+void C_ZN5QMenu7setIconERK5QIcon(void *this_, const QIcon & icon) {
+  ((QMenu*)this_)->setIcon(icon);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 179, column 14>
-//   // proto:  QAction * QMenu::defaultAction();
-// _ZNK5QMenu13defaultActionEv defaultAction()
+// /usr/include/qt/QtWidgets/qmenu.h:207
+// void setNoReplayFor(class QWidget *)
 extern "C"
-void*
-C_ZNK5QMenu13defaultActionEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->defaultAction();
-  return (void*)ret;
+void C_ZN5QMenu14setNoReplayForEP7QWidget(void *this_, QWidget * widget) {
+  ((QMenu*)this_)->setNoReplayFor(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 153, column 14>
-//   // proto:  QAction * QMenu::addMenu(QMenu * menu);
-// _ZN5QMenu7addMenuEPS_ addMenu(class QMenu *)
+// /usr/include/qt/QtWidgets/qmenu.h:208
+// QPlatformMenu * platformMenu()
 extern "C"
-void*
-C_ZN5QMenu7addMenuEPS_(void *qthis,
-QMenu * arg1) {
-  auto ret =
-  ((QMenu*)qthis)->addMenu(arg1);
-  return (void*)ret;
+void C_ZN5QMenu12platformMenuEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->platformMenu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 226, column 10>
-//   // proto:  void QMenu::aboutToShow();
-// _ZN5QMenu11aboutToShowEv aboutToShow()
+// /usr/include/qt/QtWidgets/qmenu.h:209
+// void setPlatformMenu(class QPlatformMenu *)
 extern "C"
-void
-C_ZN5QMenu11aboutToShowEv(void *qthis) {
-  ((QMenu*)qthis)->aboutToShow();
+void C_ZN5QMenu15setPlatformMenuEP13QPlatformMenu(void *this_, QPlatformMenu * platformMenu) {
+  ((QMenu*)this_)->setPlatformMenu(platformMenu);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 194, column 11>
-//   // proto:  QSize QMenu::sizeHint();
-// _ZNK5QMenu8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qmenu.h:219
+// bool separatorsCollapsible()
 extern "C"
-QSize*
-C_ZNK5QMenu8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZNK5QMenu21separatorsCollapsibleEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->separatorsCollapsible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 178, column 10>
-//   // proto:  void QMenu::setDefaultAction(QAction * );
-// _ZN5QMenu16setDefaultActionEP7QAction setDefaultAction(class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:220
+// void setSeparatorsCollapsible(_Bool)
 extern "C"
-void
-C_ZN5QMenu16setDefaultActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QMenu*)qthis)->setDefaultAction(arg1);
+void C_ZN5QMenu24setSeparatorsCollapsibleEb(void *this_, bool collapse) {
+  ((QMenu*)this_)->setSeparatorsCollapsible(collapse);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 197, column 14>
-//   // proto:  QAction * QMenu::actionAt(const QPoint & );
-// _ZNK5QMenu8actionAtERK6QPoint actionAt(const class QPoint &)
+// /usr/include/qt/QtWidgets/qmenu.h:222
+// bool toolTipsVisible()
 extern "C"
-void*
-C_ZNK5QMenu8actionAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QMenu*)qthis)->actionAt(*((const QPoint*)arg1));
-  return (void*)ret;
+void C_ZNK5QMenu15toolTipsVisibleEv(void *this_) {
+  /*return*/ ((QMenu*)this_)->toolTipsVisible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 165, column 14>
-//   // proto:  QAction * QMenu::insertSection(QAction * before, const QIcon & icon, const QString & text);
-// _ZN5QMenu13insertSectionEP7QActionRK5QIconRK7QString insertSection(class QAction *, const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:223
+// void setToolTipsVisible(_Bool)
 extern "C"
-void*
-C_ZN5QMenu13insertSectionEP7QActionRK5QIconRK7QString(void *qthis,
-QAction * arg1,
-const QIcon* arg2,
-const QString* arg3) {
-  auto ret =
-  ((QMenu*)qthis)->insertSection(arg1,
-*((const QIcon*)arg2),
-*((const QString*)arg3));
-  return (void*)ret;
+void C_ZN5QMenu18setToolTipsVisibleEb(void *this_, bool visible) {
+  ((QMenu*)this_)->setToolTipsVisible(visible);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 184, column 10>
-//   // proto:  void QMenu::popup(const QPoint & pos, QAction * at);
-// _ZN5QMenu5popupERK6QPointP7QAction popup(const class QPoint &, class QAction *)
+// /usr/include/qt/QtWidgets/qmenu.h:226
+// void aboutToShow()
 extern "C"
-void
-C_ZN5QMenu5popupERK6QPointP7QAction(void *qthis,
-const QPoint* arg1,
-QAction * arg2) {
-  ((QMenu*)qthis)->popup(*((const QPoint*)arg1),
-arg2);
+void C_ZN5QMenu11aboutToShowEv(void *this_) {
+  ((QMenu*)this_)->aboutToShow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 223, column 10>
-//   // proto:  void QMenu::setToolTipsVisible(bool visible);
-// _ZN5QMenu18setToolTipsVisibleEb setToolTipsVisible(_Bool)
+// /usr/include/qt/QtWidgets/qmenu.h:227
+// void aboutToHide()
 extern "C"
-void
-C_ZN5QMenu18setToolTipsVisibleEb(void *qthis,
-bool arg1) {
-  ((QMenu*)qthis)->setToolTipsVisible(arg1);
+void C_ZN5QMenu11aboutToHideEv(void *this_) {
+  ((QMenu*)this_)->aboutToHide();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 202, column 10>
-//   // proto:  void QMenu::setTitle(const QString & title);
-// _ZN5QMenu8setTitleERK7QString setTitle(const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:228
+// void triggered(class QAction *)
 extern "C"
-void
-C_ZN5QMenu8setTitleERK7QString(void *qthis,
-const QString* arg1) {
-  ((QMenu*)qthis)->setTitle(*((const QString*)arg1));
+void C_ZN5QMenu9triggeredEP7QAction(void *this_, QAction * action) {
+  ((QMenu*)this_)->triggered(action);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 155, column 12>
-//   // proto:  QMenu * QMenu::addMenu(const QIcon & icon, const QString & title);
-// _ZN5QMenu7addMenuERK5QIconRK7QString addMenu(const class QIcon &, const class QString &)
+// /usr/include/qt/QtWidgets/qmenu.h:229
+// void hovered(class QAction *)
 extern "C"
-void*
-C_ZN5QMenu7addMenuERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QMenu*)qthis)->addMenu(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return (void*)ret;
+void C_ZN5QMenu7hoveredEP7QAction(void *this_, QAction * action) {
+  ((QMenu*)this_)->hovered(action);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qmenu.h', line 185, column 14>
-//   // proto:  QAction * QMenu::exec();
-// _ZN5QMenu4execEv exec()
-extern "C"
-void*
-C_ZN5QMenu4execEv(void *qthis) {
-  auto ret =
-  ((QMenu*)qthis)->exec();
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QMenu_SlotProxy here
-class QMenu_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QMenu_SlotProxy():QObject(){}
-
-public slots:
-  // aboutToShow()
-  void slot_proxy_func__ZN5QMenu11aboutToShowEv();
-public:
-  void (*slot_func__ZN5QMenu11aboutToShowEv)(void* rsfptr) = NULL;
-public slots:
-  // hovered(class QAction *)
-  void slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN5QMenu7hoveredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public slots:
-  // aboutToHide()
-  void slot_proxy_func__ZN5QMenu11aboutToHideEv();
-public:
-  void (*slot_func__ZN5QMenu11aboutToHideEv)(void* rsfptr) = NULL;
-public slots:
-  // triggered(class QAction *)
-  void slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN5QMenu9triggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qmenu.moc"
-
-extern "C" {
-  QMenu_SlotProxy* QMenu_SlotProxy_new()
-  {
-    return new QMenu_SlotProxy();
-  }
-};
-
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu11aboutToShowEv() {
-  if (this->slot_func__ZN5QMenu11aboutToShowEv != NULL) {
-    // do smth...
-    this->slot_func__ZN5QMenu11aboutToShowEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToShowEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QMenu_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN5QMenu11aboutToShowEv = (decltype(that->slot_func__ZN5QMenu11aboutToShowEv))ffifptr;
-  QObject::connect((QMenu*)sender, SIGNAL(aboutToShow()), that, SLOT(slot_proxy_func__ZN5QMenu11aboutToShowEv()));
-  return that;
-}
-extern "C"
-void QMenu_SlotProxy_disconnect__ZN5QMenu11aboutToShowEv(QMenu_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN5QMenu7hoveredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN5QMenu7hoveredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu7hoveredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QMenu_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN5QMenu7hoveredEP7QAction = (decltype(that->slot_func__ZN5QMenu7hoveredEP7QAction))ffifptr;
-  QObject::connect((QMenu*)sender, SIGNAL(hovered(class QAction *)), that, SLOT(slot_proxy_func__ZN5QMenu7hoveredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QMenu_SlotProxy_disconnect__ZN5QMenu7hoveredEP7QAction(QMenu_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu11aboutToHideEv() {
-  if (this->slot_func__ZN5QMenu11aboutToHideEv != NULL) {
-    // do smth...
-    this->slot_func__ZN5QMenu11aboutToHideEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu11aboutToHideEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QMenu_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN5QMenu11aboutToHideEv = (decltype(that->slot_func__ZN5QMenu11aboutToHideEv))ffifptr;
-  QObject::connect((QMenu*)sender, SIGNAL(aboutToHide()), that, SLOT(slot_proxy_func__ZN5QMenu11aboutToHideEv()));
-  return that;
-}
-extern "C"
-void QMenu_SlotProxy_disconnect__ZN5QMenu11aboutToHideEv(QMenu_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QMenu_SlotProxy::slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN5QMenu9triggeredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN5QMenu9triggeredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QMenu_SlotProxy_connect__ZN5QMenu9triggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QMenu_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN5QMenu9triggeredEP7QAction = (decltype(that->slot_func__ZN5QMenu9triggeredEP7QAction))ffifptr;
-  QObject::connect((QMenu*)sender, SIGNAL(triggered(class QAction *)), that, SLOT(slot_proxy_func__ZN5QMenu9triggeredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QMenu_SlotProxy_disconnect__ZN5QMenu9triggeredEP7QAction(QMenu_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

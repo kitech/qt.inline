@@ -1,271 +1,119 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qcursor.h
-// dst-file: /src/gui/qcursor.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qcursor.h
 #include <qcursor.h>
+#include <QtGui>
 
-
-#include <qpoint.h>
-#include <qnamespace.h>
-#include <qpixmap.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcursor_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 94, column 10>
-//   // proto:  void QCursor::swap(QCursor & other);
-if (true) {
-  auto f = [](QCursor flythis, QCursor & arg1) {
-    ((QCursor*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QCursor4swapERS_ swap(class QCursor &)
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 110, column 24>
-//   // proto: static void QCursor::setPos(const QPoint & p);
-if (true) {
-  auto f = [](QCursor flythis, const QPoint & arg1) {
-    ((QCursor*)0)->setPos(arg1);
-    flythis.setPos(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QCursor6setPosERK6QPoint setPos(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 89, column 5>
-//   // proto:  void QCursor::QCursor(QCursor && other);
-if (true) {
-  auto f = [](QCursor && arg1) {
-    new QCursor(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 111, column 24>
-//   // proto: static void QCursor::setPos(QScreen * screen, const QPoint & p);
-if (true) {
-  auto f = [](QCursor flythis, QScreen * arg1, const QPoint & arg2) {
-    ((QCursor*)0)->setPos(arg1, arg2);
-    flythis.setPos(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QCursor6setPosEP7QScreenRK6QPoint setPos(class QScreen *, const class QPoint &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qcursor.h:81
+// void QCursor()
 extern "C"
-int QCursor_Class_Size()
-{
-  return sizeof(QCursor);
+void* C_ZN7QCursorC1Ev() {
+  return new QCursor();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 109, column 17>
-//   // proto: static void QCursor::setPos(QScreen * screen, int x, int y);
-// _ZN7QCursor6setPosEP7QScreenii setPos(class QScreen *, int, int)
+// /usr/include/qt/QtGui/qcursor.h:82
+// void QCursor(Qt::CursorShape)
 extern "C"
-void
-C_ZN7QCursor6setPosEP7QScreenii(QScreen * arg1,
-int arg2,
-int arg3) {
-  QCursor::setPos(arg1,
-arg2,
-arg3);
+void* C_ZN7QCursorC1EN2Qt11CursorShapeE(Qt::CursorShape shape) {
+  return new QCursor(shape);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 84, column 5>
-//   // proto:  void QCursor::QCursor(const QPixmap & pixmap, int hotX, int hotY);
+// /usr/include/qt/QtGui/qcursor.h:83
+// void QCursor(const class QBitmap &, const class QBitmap &, int, int)
 extern "C"
-QCursor*
-C_ZN7QCursorC2ERK7QPixmapii(const QPixmap* arg1,
-int arg2,
-int arg3) {
-  auto ret = new QCursor(*((const QPixmap*)arg1),
-arg2,
-arg3);
-  return ret;
+void* C_ZN7QCursorC1ERK7QBitmapS2_ii(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) {
+  return new QCursor(bitmap, mask, hotX, hotY);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 85, column 5>
-//   // proto:  void QCursor::QCursor(const QCursor & cursor);
+// /usr/include/qt/QtGui/qcursor.h:84
+// void QCursor(const class QPixmap &, int, int)
 extern "C"
-QCursor*
-C_ZN7QCursorC2ERKS_(const QCursor* arg1) {
-  auto ret = new QCursor(*((const QCursor*)arg1));
-  return ret;
+void* C_ZN7QCursorC1ERK7QPixmapii(const QPixmap & pixmap, int hotX, int hotY) {
+  return new QCursor(pixmap, hotX, hotY);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 101, column 20>
-//   // proto:  const QBitmap * QCursor::bitmap();
-// _ZNK7QCursor6bitmapEv bitmap()
+// /usr/include/qt/QtGui/qcursor.h:86
+// void ~QCursor()
 extern "C"
-void*
-C_ZNK7QCursor6bitmapEv(void *qthis) {
-  auto ret =
-  ((QCursor*)qthis)->bitmap();
-  return (void*)ret;
+void C_ZN7QCursorD1Ev(void *this_) {
+  delete (QCursor*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 104, column 12>
-//   // proto:  QPoint QCursor::hotSpot();
-// _ZNK7QCursor7hotSpotEv hotSpot()
+// inline
+// /usr/include/qt/QtGui/qcursor.h:94
+// void swap(class QCursor &)
 extern "C"
-QPoint*
-C_ZNK7QCursor7hotSpotEv(void *qthis) {
-  auto ret =
-  ((QCursor*)qthis)->hotSpot();
-  return new QPoint(ret); // 5
+void C_ZN7QCursor4swapERS_(void *this_, QCursor & other) {
+  ((QCursor*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 94, column 10>
-//   // proto:  void QCursor::swap(QCursor & other);
-// _ZN7QCursor4swapERS_ swap(class QCursor &)
+// /usr/include/qt/QtGui/qcursor.h:98
+// Qt::CursorShape shape()
 extern "C"
-void
-C_ZN7QCursor4swapERS_(void *qthis,
-QCursor* arg1) {
-  ((QCursor*)qthis)->swap(*((QCursor*)arg1));
+void C_ZNK7QCursor5shapeEv(void *this_) {
+  /*return*/ ((QCursor*)this_)->shape();
 }
-//   // proto:  void QCursor::~QCursor();
+// /usr/include/qt/QtGui/qcursor.h:99
+// void setShape(Qt::CursorShape)
 extern "C"
-void C_ZN7QCursorD2Ev(void *qthis) {
-  delete (QCursor*)qthis;
+void C_ZN7QCursor8setShapeEN2Qt11CursorShapeE(void *this_, Qt::CursorShape newShape) {
+  ((QCursor*)this_)->setShape(newShape);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 110, column 24>
-//   // proto: static void QCursor::setPos(const QPoint & p);
-// _ZN7QCursor6setPosERK6QPoint setPos(const class QPoint &)
+// /usr/include/qt/QtGui/qcursor.h:101
+// const QBitmap * bitmap()
 extern "C"
-void
-C_ZN7QCursor6setPosERK6QPoint(const QPoint* arg1) {
-  QCursor::setPos(*((const QPoint*)arg1));
+void C_ZNK7QCursor6bitmapEv(void *this_) {
+  /*return*/ ((QCursor*)this_)->bitmap();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 89, column 5>
-//   // proto:  void QCursor::QCursor(QCursor && other);
+// /usr/include/qt/QtGui/qcursor.h:102
+// const QBitmap * mask()
 extern "C"
-QCursor*
-C_ZN7QCursorC2EOS_(QCursor* arg1) {
-  auto ret = new QCursor(*((QCursor*)arg1));
-  return ret;
+void C_ZNK7QCursor4maskEv(void *this_) {
+  /*return*/ ((QCursor*)this_)->mask();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 99, column 10>
-//   // proto:  void QCursor::setShape(Qt::CursorShape newShape);
-// _ZN7QCursor8setShapeEN2Qt11CursorShapeE setShape(Qt::CursorShape)
+// /usr/include/qt/QtGui/qcursor.h:103
+// QPixmap pixmap()
 extern "C"
-void
-C_ZN7QCursor8setShapeEN2Qt11CursorShapeE(void *qthis,
-Qt::CursorShape* arg1) {
-  ((QCursor*)qthis)->setShape(*((Qt::CursorShape*)arg1));
+void C_ZNK7QCursor6pixmapEv(void *this_) {
+  /*return*/ ((QCursor*)this_)->pixmap();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 108, column 17>
-//   // proto: static void QCursor::setPos(int x, int y);
-// _ZN7QCursor6setPosEii setPos(int, int)
+// /usr/include/qt/QtGui/qcursor.h:104
+// QPoint hotSpot()
 extern "C"
-void
-C_ZN7QCursor6setPosEii(int arg1,
-int arg2) {
-  QCursor::setPos(arg1,
-arg2);
+void C_ZNK7QCursor7hotSpotEv(void *this_) {
+  /*return*/ ((QCursor*)this_)->hotSpot();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 107, column 19>
-//   // proto: static QPoint QCursor::pos(const QScreen * screen);
-// _ZN7QCursor3posEPK7QScreen pos(const class QScreen *)
+// static
+// /usr/include/qt/QtGui/qcursor.h:106
+// QPoint pos()
 extern "C"
-QPoint*
-C_ZN7QCursor3posEPK7QScreen(const QScreen * arg1) {
-  auto ret =
-  QCursor::pos(arg1);
-  return new QPoint(ret); // 5
+void C_ZN7QCursor3posEv() {
+  /*return*/ QCursor::pos();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 102, column 20>
-//   // proto:  const QBitmap * QCursor::mask();
-// _ZNK7QCursor4maskEv mask()
+// static
+// /usr/include/qt/QtGui/qcursor.h:107
+// QPoint pos(const class QScreen *)
 extern "C"
-void*
-C_ZNK7QCursor4maskEv(void *qthis) {
-  auto ret =
-  ((QCursor*)qthis)->mask();
-  return (void*)ret;
+void C_ZN7QCursor3posEPK7QScreen(const QScreen * screen) {
+  /*return*/ QCursor::pos(screen);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 98, column 21>
-//   // proto:  Qt::CursorShape QCursor::shape();
-// _ZNK7QCursor5shapeEv shape()
+// static
+// /usr/include/qt/QtGui/qcursor.h:108
+// void setPos(int, int)
 extern "C"
-Qt::CursorShape
-C_ZNK7QCursor5shapeEv(void *qthis) {
-  auto ret =
-  ((QCursor*)qthis)->shape();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN7QCursor6setPosEii(int x, int y) {
+  QCursor::setPos(x, y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 82, column 5>
-//   // proto:  void QCursor::QCursor(Qt::CursorShape shape);
+// static
+// /usr/include/qt/QtGui/qcursor.h:109
+// void setPos(class QScreen *, int, int)
 extern "C"
-QCursor*
-C_ZN7QCursorC2EN2Qt11CursorShapeE(Qt::CursorShape* arg1) {
-  auto ret = new QCursor(*((Qt::CursorShape*)arg1));
-  return ret;
+void C_ZN7QCursor6setPosEP7QScreenii(QScreen * screen, int x, int y) {
+  QCursor::setPos(screen, x, y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 106, column 19>
-//   // proto: static QPoint QCursor::pos();
-// _ZN7QCursor3posEv pos()
+// static inline
+// /usr/include/qt/QtGui/qcursor.h:110
+// void setPos(const class QPoint &)
 extern "C"
-QPoint*
-C_ZN7QCursor3posEv() {
-  auto ret =
-  QCursor::pos();
-  return new QPoint(ret); // 5
+void C_ZN7QCursor6setPosERK6QPoint(const QPoint & p) {
+  QCursor::setPos(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 81, column 5>
-//   // proto:  void QCursor::QCursor();
+// static inline
+// /usr/include/qt/QtGui/qcursor.h:111
+// void setPos(class QScreen *, const class QPoint &)
 extern "C"
-QCursor*
-C_ZN7QCursorC2Ev() {
-  auto ret = new QCursor();
-  return ret;
+void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, const QPoint & p) {
+  QCursor::setPos(screen, p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 103, column 13>
-//   // proto:  QPixmap QCursor::pixmap();
-// _ZNK7QCursor6pixmapEv pixmap()
-extern "C"
-QPixmap*
-C_ZNK7QCursor6pixmapEv(void *qthis) {
-  auto ret =
-  ((QCursor*)qthis)->pixmap();
-  return new QPixmap(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 111, column 24>
-//   // proto: static void QCursor::setPos(QScreen * screen, const QPoint & p);
-// _ZN7QCursor6setPosEP7QScreenRK6QPoint setPos(class QScreen *, const class QPoint &)
-extern "C"
-void
-C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * arg1,
-const QPoint* arg2) {
-  QCursor::setPos(arg1,
-*((const QPoint*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qcursor.h', line 83, column 5>
-//   // proto:  void QCursor::QCursor(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY);
-extern "C"
-QCursor*
-C_ZN7QCursorC2ERK7QBitmapS2_ii(const QBitmap* arg1,
-const QBitmap* arg2,
-int arg3,
-int arg4) {
-  auto ret = new QCursor(*((const QBitmap*)arg1),
-*((const QBitmap*)arg2),
-arg3,
-arg4);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

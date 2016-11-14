@@ -1,491 +1,202 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qjsonarray.h
-// dst-file: /src/core/qjsonarray.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qjsonarray.h
 #include <qjsonarray.h>
+#include <QtCore>
 
-
-#include <qjsonvalue.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qjsonarray_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 220, column 17>
-//   // proto:  bool QJsonArray::empty();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->empty();
-    flythis.empty();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray5emptyEv empty()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 197, column 21>
-//   // proto:  QJsonArray::iterator QJsonArray::end();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->end();
-    flythis.end();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray3endEv end()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 216, column 17>
-//   // proto:  void QJsonArray::push_back(const QJsonValue & t);
-if (true) {
-  auto f = [](QJsonArray flythis, const QJsonValue & arg1) {
-    ((QJsonArray*)0)->push_back(arg1);
-    flythis.push_back(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray9push_backERK10QJsonValue push_back(const class QJsonValue &)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 92, column 17>
-//   // proto:  void QJsonArray::removeLast();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->removeLast();
-    flythis.removeLast();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray10removeLastEv removeLast()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 217, column 17>
-//   // proto:  void QJsonArray::push_front(const QJsonValue & t);
-if (true) {
-  auto f = [](QJsonArray flythis, const QJsonValue & arg1) {
-    ((QJsonArray*)0)->push_front(arg1);
-    flythis.push_front(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray10push_frontERK10QJsonValue push_front(const class QJsonValue &)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 218, column 17>
-//   // proto:  void QJsonArray::pop_front();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->pop_front();
-    flythis.pop_front();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray9pop_frontEv pop_front()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 201, column 14>
-//   // proto:  QJsonArray::iterator QJsonArray::erase(QJsonArray::iterator it);
-if (true) {
-  auto f = [](QJsonArray flythis, QJsonArray::iterator arg1) {
-    ((QJsonArray*)0)->erase(arg1);
-    flythis.erase(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray5eraseENS_8iteratorE erase(class QJsonArray::iterator)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 196, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::constBegin();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->constBegin();
-    flythis.constBegin();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray10constBeginEv constBegin()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 198, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::end();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->end();
-    flythis.end();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray3endEv end()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 80, column 16>
-//   // proto:  int QJsonArray::count();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->count();
-    flythis.count();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray5countEv count()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 62, column 5>
-//   // proto:  void QJsonArray::QJsonArray(std::initializer_list<QJsonValue> args);
-if (true) {
-  auto f = [](std::initializer_list<QJsonValue> arg1) {
-    new QJsonArray(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 194, column 21>
-//   // proto:  QJsonArray::iterator QJsonArray::begin();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->begin();
-    flythis.begin();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray5beginEv begin()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 219, column 17>
-//   // proto:  void QJsonArray::pop_back();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->pop_back();
-    flythis.pop_back();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray8pop_backEv pop_back()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 199, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::constEnd();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->constEnd();
-    flythis.constEnd();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray8constEndEv constEnd()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 91, column 17>
-//   // proto:  void QJsonArray::removeFirst();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->removeFirst();
-    flythis.removeFirst();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QJsonArray11removeFirstEv removeFirst()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 195, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::begin();
-if (true) {
-  auto f = [](QJsonArray flythis) {
-    ((QJsonArray*)0)->begin();
-    flythis.begin();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QJsonArray5beginEv begin()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qjsonarray.h:59
+// void QJsonArray()
 extern "C"
-int QJsonArray_Class_Size()
-{
-  return sizeof(QJsonArray);
+void* C_ZN10QJsonArrayC1Ev() {
+  return new QJsonArray();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 84, column 16>
-//   // proto:  QJsonValue QJsonArray::first();
-// _ZNK10QJsonArray5firstEv first()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:62
+// void QJsonArray(std::initializer_list<QJsonValue>)
 extern "C"
-QJsonValue*
-C_ZNK10QJsonArray5firstEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->first();
-  return new QJsonValue(ret); // 5
+void* C_ZN10QJsonArrayC1ESt16initializer_listI10QJsonValueE(std::initializer_list<QJsonValue> args) {
+  return new QJsonArray(args);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 220, column 17>
-//   // proto:  bool QJsonArray::empty();
-// _ZNK10QJsonArray5emptyEv empty()
+// /usr/include/qt/QtCore/qjsonarray.h:70
+// void ~QJsonArray()
 extern "C"
-bool
-C_ZNK10QJsonArray5emptyEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->empty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QJsonArrayD1Ev(void *this_) {
+  delete (QJsonArray*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 76, column 23>
-//   // proto: static QJsonArray QJsonArray::fromVariantList(const QVariantList & list);
-// _ZN10QJsonArray15fromVariantListERK5QListI8QVariantE fromVariantList(const QVariantList &)
+// static
+// /usr/include/qt/QtCore/qjsonarray.h:75
+// QJsonArray fromStringList(const class QStringList &)
 extern "C"
-QJsonArray*
-C_ZN10QJsonArray15fromVariantListERK5QListI8QVariantE(const QVariantList* arg1) {
-  auto ret =
-  QJsonArray::fromVariantList(*((const QVariantList*)arg1));
-  return new QJsonArray(ret); // 5
+void C_ZN10QJsonArray14fromStringListERK11QStringList(const QStringList & list) {
+  /*return*/ QJsonArray::fromStringList(list);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 97, column 10>
-//   // proto:  bool QJsonArray::contains(const QJsonValue & element);
-// _ZNK10QJsonArray8containsERK10QJsonValue contains(const class QJsonValue &)
+// static
+// /usr/include/qt/QtCore/qjsonarray.h:76
+// QJsonArray fromVariantList(const QVariantList &)
 extern "C"
-bool
-C_ZNK10QJsonArray8containsERK10QJsonValue(void *qthis,
-const QJsonValue* arg1) {
-  auto ret =
-  ((QJsonArray*)qthis)->contains(*((const QJsonValue*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QJsonArray15fromVariantListERK5QListI8QVariantE(const QVariantList & list) {
+  /*return*/ QJsonArray::fromVariantList(list);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 90, column 16>
-//   // proto:  QJsonValue QJsonArray::takeAt(int i);
-// _ZN10QJsonArray6takeAtEi takeAt(int)
+// /usr/include/qt/QtCore/qjsonarray.h:77
+// QVariantList toVariantList()
 extern "C"
-QJsonValue*
-C_ZN10QJsonArray6takeAtEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QJsonArray*)qthis)->takeAt(arg1);
-  return new QJsonValue(ret); // 5
+void C_ZNK10QJsonArray13toVariantListEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->toVariantList();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 197, column 21>
-//   // proto:  QJsonArray::iterator QJsonArray::end();
-// _ZN10QJsonArray3endEv end()
+// /usr/include/qt/QtCore/qjsonarray.h:79
+// int size()
 extern "C"
-QJsonArray::iterator*
-C_ZN10QJsonArray3endEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->end();
-  return new QJsonArray::iterator(ret); // 5
+void C_ZNK10QJsonArray4sizeEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 216, column 17>
-//   // proto:  void QJsonArray::push_back(const QJsonValue & t);
-// _ZN10QJsonArray9push_backERK10QJsonValue push_back(const class QJsonValue &)
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:80
+// int count()
 extern "C"
-void
-C_ZN10QJsonArray9push_backERK10QJsonValue(void *qthis,
-const QJsonValue* arg1) {
-  ((QJsonArray*)qthis)->push_back(*((const QJsonValue*)arg1));
+void C_ZNK10QJsonArray5countEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->count();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 92, column 17>
-//   // proto:  void QJsonArray::removeLast();
-// _ZN10QJsonArray10removeLastEv removeLast()
+// /usr/include/qt/QtCore/qjsonarray.h:82
+// bool isEmpty()
 extern "C"
-void
-C_ZN10QJsonArray10removeLastEv(void *qthis) {
-  ((QJsonArray*)qthis)->removeLast();
+void C_ZNK10QJsonArray7isEmptyEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 217, column 17>
-//   // proto:  void QJsonArray::push_front(const QJsonValue & t);
-// _ZN10QJsonArray10push_frontERK10QJsonValue push_front(const class QJsonValue &)
+// /usr/include/qt/QtCore/qjsonarray.h:83
+// QJsonValue at(int)
 extern "C"
-void
-C_ZN10QJsonArray10push_frontERK10QJsonValue(void *qthis,
-const QJsonValue* arg1) {
-  ((QJsonArray*)qthis)->push_front(*((const QJsonValue*)arg1));
+void C_ZNK10QJsonArray2atEi(void *this_, int i) {
+  /*return*/ ((QJsonArray*)this_)->at(i);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 218, column 17>
-//   // proto:  void QJsonArray::pop_front();
-// _ZN10QJsonArray9pop_frontEv pop_front()
+// /usr/include/qt/QtCore/qjsonarray.h:84
+// QJsonValue first()
 extern "C"
-void
-C_ZN10QJsonArray9pop_frontEv(void *qthis) {
-  ((QJsonArray*)qthis)->pop_front();
+void C_ZNK10QJsonArray5firstEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->first();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 77, column 18>
-//   // proto:  QVariantList QJsonArray::toVariantList();
-// _ZNK10QJsonArray13toVariantListEv toVariantList()
+// /usr/include/qt/QtCore/qjsonarray.h:85
+// QJsonValue last()
 extern "C"
-QList<QVariant>*
-C_ZNK10QJsonArray13toVariantListEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->toVariantList();
-  return new QList<QVariant>(ret); // 5
+void C_ZNK10QJsonArray4lastEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->last();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 201, column 14>
-//   // proto:  QJsonArray::iterator QJsonArray::erase(QJsonArray::iterator it);
-// _ZN10QJsonArray5eraseENS_8iteratorE erase(class QJsonArray::iterator)
+// /usr/include/qt/QtCore/qjsonarray.h:89
+// void removeAt(int)
 extern "C"
-QJsonArray::iterator*
-C_ZN10QJsonArray5eraseENS_8iteratorE(void *qthis,
-QJsonArray::iterator* arg1) {
-  auto ret =
-  ((QJsonArray*)qthis)->erase(*((QJsonArray::iterator*)arg1));
-  return new QJsonArray::iterator(ret); // 5
+void C_ZN10QJsonArray8removeAtEi(void *this_, int i) {
+  ((QJsonArray*)this_)->removeAt(i);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 95, column 10>
-//   // proto:  void QJsonArray::replace(int i, const QJsonValue & value);
-// _ZN10QJsonArray7replaceEiRK10QJsonValue replace(int, const class QJsonValue &)
+// /usr/include/qt/QtCore/qjsonarray.h:90
+// QJsonValue takeAt(int)
 extern "C"
-void
-C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *qthis,
-int arg1,
-const QJsonValue* arg2) {
-  ((QJsonArray*)qthis)->replace(arg1,
-*((const QJsonValue*)arg2));
+void C_ZN10QJsonArray6takeAtEi(void *this_, int i) {
+  /*return*/ ((QJsonArray*)this_)->takeAt(i);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 196, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::constBegin();
-// _ZNK10QJsonArray10constBeginEv constBegin()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:91
+// void removeFirst()
 extern "C"
-QJsonArray::const_iterator*
-C_ZNK10QJsonArray10constBeginEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->constBegin();
-  return new QJsonArray::const_iterator(ret); // 5
+void C_ZN10QJsonArray11removeFirstEv(void *this_) {
+  ((QJsonArray*)this_)->removeFirst();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 198, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::end();
-// _ZNK10QJsonArray3endEv end()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:92
+// void removeLast()
 extern "C"
-QJsonArray::const_iterator*
-C_ZNK10QJsonArray3endEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->end();
-  return new QJsonArray::const_iterator(ret); // 5
+void C_ZN10QJsonArray10removeLastEv(void *this_) {
+  ((QJsonArray*)this_)->removeLast();
 }
-//   // proto:  void QJsonArray::~QJsonArray();
+// /usr/include/qt/QtCore/qjsonarray.h:95
+// void replace(int, const class QJsonValue &)
 extern "C"
-void C_ZN10QJsonArrayD2Ev(void *qthis) {
-  delete (QJsonArray*)qthis;
+void C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *this_, int i, const QJsonValue & value) {
+  ((QJsonArray*)this_)->replace(i, value);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 79, column 9>
-//   // proto:  int QJsonArray::size();
-// _ZNK10QJsonArray4sizeEv size()
+// /usr/include/qt/QtCore/qjsonarray.h:97
+// bool contains(const class QJsonValue &)
 extern "C"
-int
-C_ZNK10QJsonArray4sizeEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->size();
-  return ret; // 0 TypeKind.INT
+void C_ZNK10QJsonArray8containsERK10QJsonValue(void *this_, const QJsonValue & element) {
+  /*return*/ ((QJsonArray*)this_)->contains(element);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 80, column 16>
-//   // proto:  int QJsonArray::count();
-// _ZNK10QJsonArray5countEv count()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:194
+// QJsonArray::iterator begin()
 extern "C"
-int
-C_ZNK10QJsonArray5countEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->count();
-  return ret; // 0 TypeKind.INT
+void C_ZN10QJsonArray5beginEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->begin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 59, column 5>
-//   // proto:  void QJsonArray::QJsonArray();
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:195
+// QJsonArray::const_iterator begin()
 extern "C"
-QJsonArray*
-C_ZN10QJsonArrayC2Ev() {
-  auto ret = new QJsonArray();
-  return ret;
+void C_ZNK10QJsonArray5beginEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->begin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 62, column 5>
-//   // proto:  void QJsonArray::QJsonArray(std::initializer_list<QJsonValue> args);
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:196
+// QJsonArray::const_iterator constBegin()
 extern "C"
-QJsonArray*
-C_ZN10QJsonArrayC2ESt16initializer_listI10QJsonValueE(std::initializer_list<QJsonValue>* arg1) {
-  auto ret = new QJsonArray(*((std::initializer_list<QJsonValue>*)arg1));
-  return ret;
+void C_ZNK10QJsonArray10constBeginEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->constBegin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 83, column 16>
-//   // proto:  QJsonValue QJsonArray::at(int i);
-// _ZNK10QJsonArray2atEi at(int)
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:197
+// QJsonArray::iterator end()
 extern "C"
-QJsonValue*
-C_ZNK10QJsonArray2atEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QJsonArray*)qthis)->at(arg1);
-  return new QJsonValue(ret); // 5
+void C_ZN10QJsonArray3endEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->end();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 194, column 21>
-//   // proto:  QJsonArray::iterator QJsonArray::begin();
-// _ZN10QJsonArray5beginEv begin()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:198
+// QJsonArray::const_iterator end()
 extern "C"
-QJsonArray::iterator*
-C_ZN10QJsonArray5beginEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->begin();
-  return new QJsonArray::iterator(ret); // 5
+void C_ZNK10QJsonArray3endEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->end();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 219, column 17>
-//   // proto:  void QJsonArray::pop_back();
-// _ZN10QJsonArray8pop_backEv pop_back()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:199
+// QJsonArray::const_iterator constEnd()
 extern "C"
-void
-C_ZN10QJsonArray8pop_backEv(void *qthis) {
-  ((QJsonArray*)qthis)->pop_back();
+void C_ZNK10QJsonArray8constEndEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->constEnd();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 82, column 10>
-//   // proto:  bool QJsonArray::isEmpty();
-// _ZNK10QJsonArray7isEmptyEv isEmpty()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:201
+// QJsonArray::iterator erase(class QJsonArray::iterator)
 extern "C"
-bool
-C_ZNK10QJsonArray7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QJsonArray5eraseENS_8iteratorE(void *this_, QJsonArray::iterator it) {
+  /*return*/ ((QJsonArray*)this_)->erase(it);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 75, column 23>
-//   // proto: static QJsonArray QJsonArray::fromStringList(const QStringList & list);
-// _ZN10QJsonArray14fromStringListERK11QStringList fromStringList(const class QStringList &)
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:216
+// void push_back(const class QJsonValue &)
 extern "C"
-QJsonArray*
-C_ZN10QJsonArray14fromStringListERK11QStringList(const QStringList* arg1) {
-  auto ret =
-  QJsonArray::fromStringList(*((const QStringList*)arg1));
-  return new QJsonArray(ret); // 5
+void C_ZN10QJsonArray9push_backERK10QJsonValue(void *this_, const QJsonValue & t) {
+  ((QJsonArray*)this_)->push_back(t);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 199, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::constEnd();
-// _ZNK10QJsonArray8constEndEv constEnd()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:217
+// void push_front(const class QJsonValue &)
 extern "C"
-QJsonArray::const_iterator*
-C_ZNK10QJsonArray8constEndEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->constEnd();
-  return new QJsonArray::const_iterator(ret); // 5
+void C_ZN10QJsonArray10push_frontERK10QJsonValue(void *this_, const QJsonValue & t) {
+  ((QJsonArray*)this_)->push_front(t);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 85, column 16>
-//   // proto:  QJsonValue QJsonArray::last();
-// _ZNK10QJsonArray4lastEv last()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:218
+// void pop_front()
 extern "C"
-QJsonValue*
-C_ZNK10QJsonArray4lastEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->last();
-  return new QJsonValue(ret); // 5
+void C_ZN10QJsonArray9pop_frontEv(void *this_) {
+  ((QJsonArray*)this_)->pop_front();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 72, column 5>
-//   // proto:  void QJsonArray::QJsonArray(const QJsonArray & other);
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:219
+// void pop_back()
 extern "C"
-QJsonArray*
-C_ZN10QJsonArrayC2ERKS_(const QJsonArray* arg1) {
-  auto ret = new QJsonArray(*((const QJsonArray*)arg1));
-  return ret;
+void C_ZN10QJsonArray8pop_backEv(void *this_) {
+  ((QJsonArray*)this_)->pop_back();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 91, column 17>
-//   // proto:  void QJsonArray::removeFirst();
-// _ZN10QJsonArray11removeFirstEv removeFirst()
+// inline
+// /usr/include/qt/QtCore/qjsonarray.h:220
+// bool empty()
 extern "C"
-void
-C_ZN10QJsonArray11removeFirstEv(void *qthis) {
-  ((QJsonArray*)qthis)->removeFirst();
+void C_ZNK10QJsonArray5emptyEv(void *this_) {
+  /*return*/ ((QJsonArray*)this_)->empty();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 195, column 27>
-//   // proto:  QJsonArray::const_iterator QJsonArray::begin();
-// _ZNK10QJsonArray5beginEv begin()
-extern "C"
-QJsonArray::const_iterator*
-C_ZNK10QJsonArray5beginEv(void *qthis) {
-  auto ret =
-  ((QJsonArray*)qthis)->begin();
-  return new QJsonArray::const_iterator(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonarray.h', line 89, column 10>
-//   // proto:  void QJsonArray::removeAt(int i);
-// _ZN10QJsonArray8removeAtEi removeAt(int)
-extern "C"
-void
-C_ZN10QJsonArray8removeAtEi(void *qthis,
-int arg1) {
-  ((QJsonArray*)qthis)->removeAt(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

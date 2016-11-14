@@ -1,837 +1,336 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qmatrix4x4.h
-// dst-file: /src/gui/qmatrix4x4.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qmatrix4x4.h
 #include <qmatrix4x4.h>
+#include <QtGui>
 
-
-#include <qtransform.h>
-#include <qvector3d.h>
-#include <qmatrix.h>
-#include <qrect.h>
-#include <qvector4d.h>
-#include <qgenericmatrix.h>
-#include <qpoint.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmatrix4x4_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 179, column 25>
-//   // proto:  const float * QMatrix4x4::constData();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->constData();
-    flythis.constData();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x49constDataEv constData()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 177, column 19>
-//   // proto:  float * QMatrix4x4::data();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->data();
-    flythis.data();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x44dataEv data()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 166, column 15>
-//   // proto:  QVector3D QMatrix4x4::mapVector(const QVector3D & vector);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QVector3D & arg1) {
-    ((QMatrix4x4*)0)->mapVector(arg1);
-    flythis.mapVector(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x49mapVectorERK9QVector3D mapVector(const class QVector3D &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 61, column 12>
-//   // proto:  void QMatrix4x4::QMatrix4x4();
-if (true) {
-  auto f = []() {
-    new QMatrix4x4();
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 81, column 17>
-//   // proto:  void QMatrix4x4::setColumn(int index, const QVector4D & value);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, int arg1, const QVector4D & arg2) {
-    ((QMatrix4x4*)0)->setColumn(arg1, arg2);
-    flythis.setColumn(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x49setColumnEiRK9QVector4D setColumn(int, const class QVector4D &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 89, column 17>
-//   // proto:  bool QMatrix4x4::isIdentity();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->isIdentity();
-    flythis.isIdentity();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x410isIdentityEv isIdentity()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 80, column 22>
-//   // proto:  QVector4D QMatrix4x4::column(int index);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, int arg1) {
-    ((QMatrix4x4*)0)->column(arg1);
-    flythis.column(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x46columnEi column(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 84, column 17>
-//   // proto:  void QMatrix4x4::setRow(int index, const QVector4D & value);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, int arg1, const QVector4D & arg2) {
-    ((QMatrix4x4*)0)->setRow(arg1, arg2);
-    flythis.setRow(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x46setRowEiRK9QVector4D setRow(int, const class QVector4D &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 87, column 17>
-//   // proto:  bool QMatrix4x4::isAffine();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->isAffine();
-    flythis.isAffine();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x48isAffineEv isAffine()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 178, column 25>
-//   // proto:  const float * QMatrix4x4::data();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->data();
-    flythis.data();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x44dataEv data()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 162, column 12>
-//   // proto:  QPoint QMatrix4x4::map(const QPoint & point);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QPoint & arg1) {
-    ((QMatrix4x4*)0)->map(arg1);
-    flythis.map(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x43mapERK6QPoint map(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 62, column 14>
-//   // proto:  void QMatrix4x4::QMatrix4x4(Qt::Initialization );
-if (true) {
-  auto f = [](Qt::Initialization arg1) {
-    new QMatrix4x4(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 90, column 17>
-//   // proto:  void QMatrix4x4::setToIdentity();
-if (true) {
-  auto f = [](QMatrix4x4 flythis) {
-    ((QMatrix4x4*)0)->setToIdentity();
-    flythis.setToIdentity();
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x413setToIdentityEv setToIdentity()
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 64, column 12>
-//   // proto:  void QMatrix4x4::QMatrix4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);
-if (true) {
-  auto f = [](float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9, float arg10, float arg11, float arg12, float arg13, float arg14, float arg15, float arg16) {
-    new QMatrix4x4(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 165, column 15>
-//   // proto:  QVector3D QMatrix4x4::map(const QVector3D & point);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QVector3D & arg1) {
-    ((QMatrix4x4*)0)->map(arg1);
-    flythis.map(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x43mapERK9QVector3D map(const class QVector3D &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 152, column 10>
-//   // proto:  void QMatrix4x4::viewport(const QRectF & rect);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QRectF & arg1) {
-    ((QMatrix4x4*)0)->viewport(arg1);
-    flythis.viewport(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x48viewportERK6QRectF viewport(const class QRectF &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 92, column 17>
-//   // proto:  void QMatrix4x4::fill(float value);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, float arg1) {
-    ((QMatrix4x4*)0)->fill(arg1);
-    flythis.fill(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN10QMatrix4x44fillEf fill(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 163, column 13>
-//   // proto:  QPointF QMatrix4x4::map(const QPointF & point);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QPointF & arg1) {
-    ((QMatrix4x4*)0)->map(arg1);
-    flythis.map(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x43mapERK7QPointF map(const class QPointF &)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 83, column 22>
-//   // proto:  QVector4D QMatrix4x4::row(int index);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, int arg1) {
-    ((QMatrix4x4*)0)->row(arg1);
-    flythis.row(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x43rowEi row(int)
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 169, column 15>
-//   // proto:  QVector4D QMatrix4x4::map(const QVector4D & point);
-if (true) {
-  auto f = [](QMatrix4x4 flythis, const QVector4D & arg1) {
-    ((QMatrix4x4*)0)->map(arg1);
-    flythis.map(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QMatrix4x43mapERK9QVector4D map(const class QVector4D &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:61
+// void QMatrix4x4()
 extern "C"
-int QMatrix4x4_Class_Size()
-{
-  return sizeof(QMatrix4x4);
+void* C_ZN10QMatrix4x4C1Ev() {
+  return new QMatrix4x4();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 159, column 16>
-//   // proto:  QTransform QMatrix4x4::toTransform();
-// _ZNK10QMatrix4x411toTransformEv toTransform()
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:62
+// void QMatrix4x4(Qt::Initialization)
 extern "C"
-QTransform*
-C_ZNK10QMatrix4x411toTransformEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->toTransform();
-  return new QTransform(ret); // 5
+void* C_ZN10QMatrix4x4C1EN2Qt14InitializationE(Qt::Initialization a0) {
+  return new QMatrix4x4(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 130, column 10>
-//   // proto:  void QMatrix4x4::scale(const QVector3D & vector);
-// _ZN10QMatrix4x45scaleERK9QVector3D scale(const class QVector3D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:63
+// void QMatrix4x4(const float *)
 extern "C"
-void
-C_ZN10QMatrix4x45scaleERK9QVector3D(void *qthis,
-const QVector3D* arg1) {
-  ((QMatrix4x4*)qthis)->scale(*((const QVector3D*)arg1));
+void* C_ZN10QMatrix4x4C1EPKf(const float * values) {
+  return new QMatrix4x4(values);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 138, column 10>
-//   // proto:  void QMatrix4x4::translate(float x, float y, float z);
-// _ZN10QMatrix4x49translateEfff translate(float, float, float)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:64
+// void QMatrix4x4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
 extern "C"
-void
-C_ZN10QMatrix4x49translateEfff(void *qthis,
-float arg1,
-float arg2,
-float arg3) {
-  ((QMatrix4x4*)qthis)->translate(arg1,
-arg2,
-arg3);
+void* C_ZN10QMatrix4x4C1Effffffffffffffff(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) {
+  return new QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 179, column 25>
-//   // proto:  const float * QMatrix4x4::constData();
-// _ZNK10QMatrix4x49constDataEv constData()
+// /usr/include/qt/QtGui/qmatrix4x4.h:72
+// void QMatrix4x4(const float *, int, int)
 extern "C"
-void*
-C_ZNK10QMatrix4x49constDataEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->constData();
-  return (void*)ret;
+void* C_ZN10QMatrix4x4C1EPKfii(const float * values, int cols, int rows) {
+  return new QMatrix4x4(values, cols, rows);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 177, column 19>
-//   // proto:  float * QMatrix4x4::data();
-// _ZN10QMatrix4x44dataEv data()
+// /usr/include/qt/QtGui/qmatrix4x4.h:73
+// void QMatrix4x4(const class QTransform &)
 extern "C"
-void*
-C_ZN10QMatrix4x44dataEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->data();
-  return (void*)ret;
+void* C_ZN10QMatrix4x4C1ERK10QTransform(const QTransform & transform) {
+  return new QMatrix4x4(transform);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 95, column 16>
-//   // proto:  QMatrix4x4 QMatrix4x4::inverted(bool * invertible);
-// _ZNK10QMatrix4x48invertedEPb inverted(_Bool *)
+// /usr/include/qt/QtGui/qmatrix4x4.h:74
+// void QMatrix4x4(const class QMatrix &)
 extern "C"
-QMatrix4x4*
-C_ZNK10QMatrix4x48invertedEPb(void *qthis,
-bool * arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->inverted(arg1);
-  return new QMatrix4x4(ret); // 5
+void* C_ZN10QMatrix4x4C1ERK7QMatrix(const QMatrix & matrix) {
+  return new QMatrix4x4(matrix);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 166, column 15>
-//   // proto:  QVector3D QMatrix4x4::mapVector(const QVector3D & vector);
-// _ZNK10QMatrix4x49mapVectorERK9QVector3D mapVector(const class QVector3D &)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:80
+// QVector4D column(int)
 extern "C"
-QVector3D*
-C_ZNK10QMatrix4x49mapVectorERK9QVector3D(void *qthis,
-const QVector3D* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->mapVector(*((const QVector3D*)arg1));
-  return new QVector3D(ret); // 5
+void C_ZNK10QMatrix4x46columnEi(void *this_, int index) {
+  /*return*/ ((QMatrix4x4*)this_)->column(index);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 146, column 10>
-//   // proto:  void QMatrix4x4::ortho(float left, float right, float bottom, float top, float nearPlane, float farPlane);
-// _ZN10QMatrix4x45orthoEffffff ortho(float, float, float, float, float, float)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:81
+// void setColumn(int, const class QVector4D &)
 extern "C"
-void
-C_ZN10QMatrix4x45orthoEffffff(void *qthis,
-float arg1,
-float arg2,
-float arg3,
-float arg4,
-float arg5,
-float arg6) {
-  ((QMatrix4x4*)qthis)->ortho(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+void C_ZN10QMatrix4x49setColumnEiRK9QVector4D(void *this_, int index, const QVector4D & value) {
+  ((QMatrix4x4*)this_)->setColumn(index, value);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 61, column 12>
-//   // proto:  void QMatrix4x4::QMatrix4x4();
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:83
+// QVector4D row(int)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2Ev() {
-  auto ret = new QMatrix4x4();
-  return ret;
+void C_ZNK10QMatrix4x43rowEi(void *this_, int index) {
+  /*return*/ ((QMatrix4x4*)this_)->row(index);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 158, column 13>
-//   // proto:  QMatrix QMatrix4x4::toAffine();
-// _ZNK10QMatrix4x48toAffineEv toAffine()
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:84
+// void setRow(int, const class QVector4D &)
 extern "C"
-QMatrix*
-C_ZNK10QMatrix4x48toAffineEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->toAffine();
-  return new QMatrix(ret); // 5
+void C_ZN10QMatrix4x46setRowEiRK9QVector4D(void *this_, int index, const QVector4D & value) {
+  ((QMatrix4x4*)this_)->setRow(index, value);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 172, column 12>
-//   // proto:  QRectF QMatrix4x4::mapRect(const QRectF & rect);
-// _ZNK10QMatrix4x47mapRectERK6QRectF mapRect(const class QRectF &)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:87
+// bool isAffine()
 extern "C"
-QRectF*
-C_ZNK10QMatrix4x47mapRectERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->mapRect(*((const QRectF*)arg1));
-  return new QRectF(ret); // 5
+void C_ZNK10QMatrix4x48isAffineEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->isAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 81, column 17>
-//   // proto:  void QMatrix4x4::setColumn(int index, const QVector4D & value);
-// _ZN10QMatrix4x49setColumnEiRK9QVector4D setColumn(int, const class QVector4D &)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:89
+// bool isIdentity()
 extern "C"
-void
-C_ZN10QMatrix4x49setColumnEiRK9QVector4D(void *qthis,
-int arg1,
-const QVector4D* arg2) {
-  ((QMatrix4x4*)qthis)->setColumn(arg1,
-*((const QVector4D*)arg2));
+void C_ZNK10QMatrix4x410isIdentityEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->isIdentity();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 89, column 17>
-//   // proto:  bool QMatrix4x4::isIdentity();
-// _ZNK10QMatrix4x410isIdentityEv isIdentity()
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:90
+// void setToIdentity()
 extern "C"
-bool
-C_ZNK10QMatrix4x410isIdentityEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->isIdentity();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QMatrix4x413setToIdentityEv(void *this_) {
+  ((QMatrix4x4*)this_)->setToIdentity();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 80, column 22>
-//   // proto:  QVector4D QMatrix4x4::column(int index);
-// _ZNK10QMatrix4x46columnEi column(int)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:92
+// void fill(float)
 extern "C"
-QVector4D*
-C_ZNK10QMatrix4x46columnEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->column(arg1);
-  return new QVector4D(ret); // 5
+void C_ZN10QMatrix4x44fillEf(void *this_, float value) {
+  ((QMatrix4x4*)this_)->fill(value);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 84, column 17>
-//   // proto:  void QMatrix4x4::setRow(int index, const QVector4D & value);
-// _ZN10QMatrix4x46setRowEiRK9QVector4D setRow(int, const class QVector4D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:94
+// double determinant()
 extern "C"
-void
-C_ZN10QMatrix4x46setRowEiRK9QVector4D(void *qthis,
-int arg1,
-const QVector4D* arg2) {
-  ((QMatrix4x4*)qthis)->setRow(arg1,
-*((const QVector4D*)arg2));
+void C_ZNK10QMatrix4x411determinantEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->determinant();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 154, column 10>
-//   // proto:  void QMatrix4x4::flipCoordinates();
-// _ZN10QMatrix4x415flipCoordinatesEv flipCoordinates()
+// /usr/include/qt/QtGui/qmatrix4x4.h:95
+// QMatrix4x4 inverted(_Bool *)
 extern "C"
-void
-C_ZN10QMatrix4x415flipCoordinatesEv(void *qthis) {
-  ((QMatrix4x4*)qthis)->flipCoordinates();
+void C_ZNK10QMatrix4x48invertedEPb(void *this_, bool * invertible) {
+  /*return*/ ((QMatrix4x4*)this_)->inverted(invertible);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 97, column 16>
-//   // proto:  QMatrix3x3 QMatrix4x4::normalMatrix();
-// _ZNK10QMatrix4x412normalMatrixEv normalMatrix()
+// /usr/include/qt/QtGui/qmatrix4x4.h:96
+// QMatrix4x4 transposed()
 extern "C"
-QGenericMatrix<3, 3, float>*
-C_ZNK10QMatrix4x412normalMatrixEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->normalMatrix();
-  return new QGenericMatrix<3, 3, float>(ret); // 5
+void C_ZNK10QMatrix4x410transposedEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->transposed();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 153, column 10>
-//   // proto:  void QMatrix4x4::viewport(float left, float bottom, float width, float height, float nearPlane, float farPlane);
-// _ZN10QMatrix4x48viewportEffffff viewport(float, float, float, float, float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:97
+// QMatrix3x3 normalMatrix()
 extern "C"
-void
-C_ZN10QMatrix4x48viewportEffffff(void *qthis,
-float arg1,
-float arg2,
-float arg3,
-float arg4,
-float arg5,
-float arg6) {
-  ((QMatrix4x4*)qthis)->viewport(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+void C_ZNK10QMatrix4x412normalMatrixEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->normalMatrix();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 156, column 10>
-//   // proto:  void QMatrix4x4::copyDataTo(float * values);
-// _ZNK10QMatrix4x410copyDataToEPf copyDataTo(float *)
+// /usr/include/qt/QtGui/qmatrix4x4.h:130
+// void scale(const class QVector3D &)
 extern "C"
-void
-C_ZNK10QMatrix4x410copyDataToEPf(void *qthis,
-float * arg1) {
-  ((QMatrix4x4*)qthis)->copyDataTo(arg1);
+void C_ZN10QMatrix4x45scaleERK9QVector3D(void *this_, const QVector3D & vector) {
+  ((QMatrix4x4*)this_)->scale(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 73, column 5>
-//   // proto:  void QMatrix4x4::QMatrix4x4(const QTransform & transform);
+// /usr/include/qt/QtGui/qmatrix4x4.h:131
+// void translate(const class QVector3D &)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2ERK10QTransform(const QTransform* arg1) {
-  auto ret = new QMatrix4x4(*((const QTransform*)arg1));
-  return ret;
+void C_ZN10QMatrix4x49translateERK9QVector3D(void *this_, const QVector3D & vector) {
+  ((QMatrix4x4*)this_)->translate(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 87, column 17>
-//   // proto:  bool QMatrix4x4::isAffine();
-// _ZNK10QMatrix4x48isAffineEv isAffine()
+// /usr/include/qt/QtGui/qmatrix4x4.h:132
+// void rotate(float, const class QVector3D &)
 extern "C"
-bool
-C_ZNK10QMatrix4x48isAffineEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->isAffine();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QMatrix4x46rotateEfRK9QVector3D(void *this_, float angle, const QVector3D & vector) {
+  ((QMatrix4x4*)this_)->rotate(angle, vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 144, column 10>
-//   // proto:  void QMatrix4x4::ortho(const QRect & rect);
-// _ZN10QMatrix4x45orthoERK5QRect ortho(const class QRect &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:134
+// void scale(float, float)
 extern "C"
-void
-C_ZN10QMatrix4x45orthoERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QMatrix4x4*)qthis)->ortho(*((const QRect*)arg1));
+void C_ZN10QMatrix4x45scaleEff(void *this_, float x, float y) {
+  ((QMatrix4x4*)this_)->scale(x, y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 141, column 10>
-//   // proto:  void QMatrix4x4::rotate(const QQuaternion & quaternion);
-// _ZN10QMatrix4x46rotateERK11QQuaternion rotate(const class QQuaternion &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:135
+// void scale(float, float, float)
 extern "C"
-void
-C_ZN10QMatrix4x46rotateERK11QQuaternion(void *qthis,
-const QQuaternion* arg1) {
-  ((QMatrix4x4*)qthis)->rotate(*((const QQuaternion*)arg1));
+void C_ZN10QMatrix4x45scaleEfff(void *this_, float x, float y, float z) {
+  ((QMatrix4x4*)this_)->scale(x, y, z);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 74, column 5>
-//   // proto:  void QMatrix4x4::QMatrix4x4(const QMatrix & matrix);
+// /usr/include/qt/QtGui/qmatrix4x4.h:136
+// void scale(float)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2ERK7QMatrix(const QMatrix* arg1) {
-  auto ret = new QMatrix4x4(*((const QMatrix*)arg1));
-  return ret;
+void C_ZN10QMatrix4x45scaleEf(void *this_, float factor) {
+  ((QMatrix4x4*)this_)->scale(factor);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 148, column 10>
-//   // proto:  void QMatrix4x4::perspective(float verticalAngle, float aspectRatio, float nearPlane, float farPlane);
-// _ZN10QMatrix4x411perspectiveEffff perspective(float, float, float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:137
+// void translate(float, float)
 extern "C"
-void
-C_ZN10QMatrix4x411perspectiveEffff(void *qthis,
-float arg1,
-float arg2,
-float arg3,
-float arg4) {
-  ((QMatrix4x4*)qthis)->perspective(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZN10QMatrix4x49translateEff(void *this_, float x, float y) {
+  ((QMatrix4x4*)this_)->translate(x, y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 131, column 10>
-//   // proto:  void QMatrix4x4::translate(const QVector3D & vector);
-// _ZN10QMatrix4x49translateERK9QVector3D translate(const class QVector3D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:138
+// void translate(float, float, float)
 extern "C"
-void
-C_ZN10QMatrix4x49translateERK9QVector3D(void *qthis,
-const QVector3D* arg1) {
-  ((QMatrix4x4*)qthis)->translate(*((const QVector3D*)arg1));
+void C_ZN10QMatrix4x49translateEfff(void *this_, float x, float y, float z) {
+  ((QMatrix4x4*)this_)->translate(x, y, z);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 178, column 25>
-//   // proto:  const float * QMatrix4x4::data();
-// _ZNK10QMatrix4x44dataEv data()
+// /usr/include/qt/QtGui/qmatrix4x4.h:139
+// void rotate(float, float, float, float)
 extern "C"
-void*
-C_ZNK10QMatrix4x44dataEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->data();
-  return (void*)ret;
+void C_ZN10QMatrix4x46rotateEffff(void *this_, float angle, float x, float y, float z) {
+  ((QMatrix4x4*)this_)->rotate(angle, x, y, z);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 94, column 12>
-//   // proto:  double QMatrix4x4::determinant();
-// _ZNK10QMatrix4x411determinantEv determinant()
+// /usr/include/qt/QtGui/qmatrix4x4.h:141
+// void rotate(const class QQuaternion &)
 extern "C"
-double
-C_ZNK10QMatrix4x411determinantEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->determinant();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN10QMatrix4x46rotateERK11QQuaternion(void *this_, const QQuaternion & quaternion) {
+  ((QMatrix4x4*)this_)->rotate(quaternion);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 135, column 10>
-//   // proto:  void QMatrix4x4::scale(float x, float y, float z);
-// _ZN10QMatrix4x45scaleEfff scale(float, float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:144
+// void ortho(const class QRect &)
 extern "C"
-void
-C_ZN10QMatrix4x45scaleEfff(void *qthis,
-float arg1,
-float arg2,
-float arg3) {
-  ((QMatrix4x4*)qthis)->scale(arg1,
-arg2,
-arg3);
+void C_ZN10QMatrix4x45orthoERK5QRect(void *this_, const QRect & rect) {
+  ((QMatrix4x4*)this_)->ortho(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 147, column 10>
-//   // proto:  void QMatrix4x4::frustum(float left, float right, float bottom, float top, float nearPlane, float farPlane);
-// _ZN10QMatrix4x47frustumEffffff frustum(float, float, float, float, float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:145
+// void ortho(const class QRectF &)
 extern "C"
-void
-C_ZN10QMatrix4x47frustumEffffff(void *qthis,
-float arg1,
-float arg2,
-float arg3,
-float arg4,
-float arg5,
-float arg6) {
-  ((QMatrix4x4*)qthis)->frustum(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
+void C_ZN10QMatrix4x45orthoERK6QRectF(void *this_, const QRectF & rect) {
+  ((QMatrix4x4*)this_)->ortho(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 162, column 12>
-//   // proto:  QPoint QMatrix4x4::map(const QPoint & point);
-// _ZNK10QMatrix4x43mapERK6QPoint map(const class QPoint &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:146
+// void ortho(float, float, float, float, float, float)
 extern "C"
-QPoint*
-C_ZNK10QMatrix4x43mapERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->map(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
+void C_ZN10QMatrix4x45orthoEffffff(void *this_, float left, float right, float bottom, float top, float nearPlane, float farPlane) {
+  ((QMatrix4x4*)this_)->ortho(left, right, bottom, top, nearPlane, farPlane);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 62, column 14>
-//   // proto:  void QMatrix4x4::QMatrix4x4(Qt::Initialization );
+// /usr/include/qt/QtGui/qmatrix4x4.h:147
+// void frustum(float, float, float, float, float, float)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2EN2Qt14InitializationE(Qt::Initialization* arg1) {
-  auto ret = new QMatrix4x4(*((Qt::Initialization*)arg1));
-  return ret;
+void C_ZN10QMatrix4x47frustumEffffff(void *this_, float left, float right, float bottom, float top, float nearPlane, float farPlane) {
+  ((QMatrix4x4*)this_)->frustum(left, right, bottom, top, nearPlane, farPlane);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 181, column 10>
-//   // proto:  void QMatrix4x4::optimize();
-// _ZN10QMatrix4x48optimizeEv optimize()
+// /usr/include/qt/QtGui/qmatrix4x4.h:148
+// void perspective(float, float, float, float)
 extern "C"
-void
-C_ZN10QMatrix4x48optimizeEv(void *qthis) {
-  ((QMatrix4x4*)qthis)->optimize();
+void C_ZN10QMatrix4x411perspectiveEffff(void *this_, float verticalAngle, float aspectRatio, float nearPlane, float farPlane) {
+  ((QMatrix4x4*)this_)->perspective(verticalAngle, aspectRatio, nearPlane, farPlane);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 63, column 14>
-//   // proto:  void QMatrix4x4::QMatrix4x4(const float * values);
+// /usr/include/qt/QtGui/qmatrix4x4.h:150
+// void lookAt(const class QVector3D &, const class QVector3D &, const class QVector3D &)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2EPKf(const float * arg1) {
-  auto ret = new QMatrix4x4(arg1);
-  return ret;
+void C_ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_(void *this_, const QVector3D & eye, const QVector3D & center, const QVector3D & up) {
+  ((QMatrix4x4*)this_)->lookAt(eye, center, up);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 137, column 10>
-//   // proto:  void QMatrix4x4::translate(float x, float y);
-// _ZN10QMatrix4x49translateEff translate(float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:152
+// void viewport(const class QRectF &)
 extern "C"
-void
-C_ZN10QMatrix4x49translateEff(void *qthis,
-float arg1,
-float arg2) {
-  ((QMatrix4x4*)qthis)->translate(arg1,
-arg2);
+void C_ZN10QMatrix4x48viewportERK6QRectF(void *this_, const QRectF & rect) {
+  ((QMatrix4x4*)this_)->viewport(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 90, column 17>
-//   // proto:  void QMatrix4x4::setToIdentity();
-// _ZN10QMatrix4x413setToIdentityEv setToIdentity()
+// /usr/include/qt/QtGui/qmatrix4x4.h:153
+// void viewport(float, float, float, float, float, float)
 extern "C"
-void
-C_ZN10QMatrix4x413setToIdentityEv(void *qthis) {
-  ((QMatrix4x4*)qthis)->setToIdentity();
+void C_ZN10QMatrix4x48viewportEffffff(void *this_, float left, float bottom, float width, float height, float nearPlane, float farPlane) {
+  ((QMatrix4x4*)this_)->viewport(left, bottom, width, height, nearPlane, farPlane);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 171, column 11>
-//   // proto:  QRect QMatrix4x4::mapRect(const QRect & rect);
-// _ZNK10QMatrix4x47mapRectERK5QRect mapRect(const class QRect &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:154
+// void flipCoordinates()
 extern "C"
-QRect*
-C_ZNK10QMatrix4x47mapRectERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->mapRect(*((const QRect*)arg1));
-  return new QRect(ret); // 5
+void C_ZN10QMatrix4x415flipCoordinatesEv(void *this_) {
+  ((QMatrix4x4*)this_)->flipCoordinates();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 134, column 10>
-//   // proto:  void QMatrix4x4::scale(float x, float y);
-// _ZN10QMatrix4x45scaleEff scale(float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:156
+// void copyDataTo(float *)
 extern "C"
-void
-C_ZN10QMatrix4x45scaleEff(void *qthis,
-float arg1,
-float arg2) {
-  ((QMatrix4x4*)qthis)->scale(arg1,
-arg2);
+void C_ZNK10QMatrix4x410copyDataToEPf(void *this_, float * values) {
+  ((QMatrix4x4*)this_)->copyDataTo(values);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 64, column 12>
-//   // proto:  void QMatrix4x4::QMatrix4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);
+// /usr/include/qt/QtGui/qmatrix4x4.h:158
+// QMatrix toAffine()
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2Effffffffffffffff(float arg1,
-float arg2,
-float arg3,
-float arg4,
-float arg5,
-float arg6,
-float arg7,
-float arg8,
-float arg9,
-float arg10,
-float arg11,
-float arg12,
-float arg13,
-float arg14,
-float arg15,
-float arg16) {
-  auto ret = new QMatrix4x4(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9,
-arg10,
-arg11,
-arg12,
-arg13,
-arg14,
-arg15,
-arg16);
-  return ret;
+void C_ZNK10QMatrix4x48toAffineEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->toAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 165, column 15>
-//   // proto:  QVector3D QMatrix4x4::map(const QVector3D & point);
-// _ZNK10QMatrix4x43mapERK9QVector3D map(const class QVector3D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:159
+// QTransform toTransform()
 extern "C"
-QVector3D*
-C_ZNK10QMatrix4x43mapERK9QVector3D(void *qthis,
-const QVector3D* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->map(*((const QVector3D*)arg1));
-  return new QVector3D(ret); // 5
+void C_ZNK10QMatrix4x411toTransformEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->toTransform();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 150, column 10>
-//   // proto:  void QMatrix4x4::lookAt(const QVector3D & eye, const QVector3D & center, const QVector3D & up);
-// _ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_ lookAt(const class QVector3D &, const class QVector3D &, const class QVector3D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:160
+// QTransform toTransform(float)
 extern "C"
-void
-C_ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_(void *qthis,
-const QVector3D* arg1,
-const QVector3D* arg2,
-const QVector3D* arg3) {
-  ((QMatrix4x4*)qthis)->lookAt(*((const QVector3D*)arg1),
-*((const QVector3D*)arg2),
-*((const QVector3D*)arg3));
+void C_ZNK10QMatrix4x411toTransformEf(void *this_, float distanceToPlane) {
+  /*return*/ ((QMatrix4x4*)this_)->toTransform(distanceToPlane);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 145, column 10>
-//   // proto:  void QMatrix4x4::ortho(const QRectF & rect);
-// _ZN10QMatrix4x45orthoERK6QRectF ortho(const class QRectF &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:162
+// QPoint map(const class QPoint &)
 extern "C"
-void
-C_ZN10QMatrix4x45orthoERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  ((QMatrix4x4*)qthis)->ortho(*((const QRectF*)arg1));
+void C_ZNK10QMatrix4x43mapERK6QPoint(void *this_, const QPoint & point) {
+  /*return*/ ((QMatrix4x4*)this_)->map(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 152, column 10>
-//   // proto:  void QMatrix4x4::viewport(const QRectF & rect);
-// _ZN10QMatrix4x48viewportERK6QRectF viewport(const class QRectF &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:163
+// QPointF map(const class QPointF &)
 extern "C"
-void
-C_ZN10QMatrix4x48viewportERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  ((QMatrix4x4*)qthis)->viewport(*((const QRectF*)arg1));
+void C_ZNK10QMatrix4x43mapERK7QPointF(void *this_, const QPointF & point) {
+  /*return*/ ((QMatrix4x4*)this_)->map(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 139, column 10>
-//   // proto:  void QMatrix4x4::rotate(float angle, float x, float y, float z);
-// _ZN10QMatrix4x46rotateEffff rotate(float, float, float, float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:165
+// QVector3D map(const class QVector3D &)
 extern "C"
-void
-C_ZN10QMatrix4x46rotateEffff(void *qthis,
-float arg1,
-float arg2,
-float arg3,
-float arg4) {
-  ((QMatrix4x4*)qthis)->rotate(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZNK10QMatrix4x43mapERK9QVector3D(void *this_, const QVector3D & point) {
+  /*return*/ ((QMatrix4x4*)this_)->map(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 92, column 17>
-//   // proto:  void QMatrix4x4::fill(float value);
-// _ZN10QMatrix4x44fillEf fill(float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:166
+// QVector3D mapVector(const class QVector3D &)
 extern "C"
-void
-C_ZN10QMatrix4x44fillEf(void *qthis,
-float arg1) {
-  ((QMatrix4x4*)qthis)->fill(arg1);
+void C_ZNK10QMatrix4x49mapVectorERK9QVector3D(void *this_, const QVector3D & vector) {
+  /*return*/ ((QMatrix4x4*)this_)->mapVector(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 72, column 5>
-//   // proto:  void QMatrix4x4::QMatrix4x4(const float * values, int cols, int rows);
+// /usr/include/qt/QtGui/qmatrix4x4.h:169
+// QVector4D map(const class QVector4D &)
 extern "C"
-QMatrix4x4*
-C_ZN10QMatrix4x4C2EPKfii(const float * arg1,
-int arg2,
-int arg3) {
-  auto ret = new QMatrix4x4(arg1,
-arg2,
-arg3);
-  return ret;
+void C_ZNK10QMatrix4x43mapERK9QVector4D(void *this_, const QVector4D & point) {
+  /*return*/ ((QMatrix4x4*)this_)->map(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 160, column 16>
-//   // proto:  QTransform QMatrix4x4::toTransform(float distanceToPlane);
-// _ZNK10QMatrix4x411toTransformEf toTransform(float)
+// /usr/include/qt/QtGui/qmatrix4x4.h:171
+// QRect mapRect(const class QRect &)
 extern "C"
-QTransform*
-C_ZNK10QMatrix4x411toTransformEf(void *qthis,
-float arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->toTransform(arg1);
-  return new QTransform(ret); // 5
+void C_ZNK10QMatrix4x47mapRectERK5QRect(void *this_, const QRect & rect) {
+  /*return*/ ((QMatrix4x4*)this_)->mapRect(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 96, column 16>
-//   // proto:  QMatrix4x4 QMatrix4x4::transposed();
-// _ZNK10QMatrix4x410transposedEv transposed()
+// /usr/include/qt/QtGui/qmatrix4x4.h:172
+// QRectF mapRect(const class QRectF &)
 extern "C"
-QMatrix4x4*
-C_ZNK10QMatrix4x410transposedEv(void *qthis) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->transposed();
-  return new QMatrix4x4(ret); // 5
+void C_ZNK10QMatrix4x47mapRectERK6QRectF(void *this_, const QRectF & rect) {
+  /*return*/ ((QMatrix4x4*)this_)->mapRect(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 163, column 13>
-//   // proto:  QPointF QMatrix4x4::map(const QPointF & point);
-// _ZNK10QMatrix4x43mapERK7QPointF map(const class QPointF &)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:177
+// float * data()
 extern "C"
-QPointF*
-C_ZNK10QMatrix4x43mapERK7QPointF(void *qthis,
-const QPointF* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->map(*((const QPointF*)arg1));
-  return new QPointF(ret); // 5
+void C_ZN10QMatrix4x44dataEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->data();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 136, column 10>
-//   // proto:  void QMatrix4x4::scale(float factor);
-// _ZN10QMatrix4x45scaleEf scale(float)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:178
+// const float * data()
 extern "C"
-void
-C_ZN10QMatrix4x45scaleEf(void *qthis,
-float arg1) {
-  ((QMatrix4x4*)qthis)->scale(arg1);
+void C_ZNK10QMatrix4x44dataEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->data();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 83, column 22>
-//   // proto:  QVector4D QMatrix4x4::row(int index);
-// _ZNK10QMatrix4x43rowEi row(int)
+// inline
+// /usr/include/qt/QtGui/qmatrix4x4.h:179
+// const float * constData()
 extern "C"
-QVector4D*
-C_ZNK10QMatrix4x43rowEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->row(arg1);
-  return new QVector4D(ret); // 5
+void C_ZNK10QMatrix4x49constDataEv(void *this_) {
+  /*return*/ ((QMatrix4x4*)this_)->constData();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 132, column 10>
-//   // proto:  void QMatrix4x4::rotate(float angle, const QVector3D & vector);
-// _ZN10QMatrix4x46rotateEfRK9QVector3D rotate(float, const class QVector3D &)
+// /usr/include/qt/QtGui/qmatrix4x4.h:181
+// void optimize()
 extern "C"
-void
-C_ZN10QMatrix4x46rotateEfRK9QVector3D(void *qthis,
-float arg1,
-const QVector3D* arg2) {
-  ((QMatrix4x4*)qthis)->rotate(arg1,
-*((const QVector3D*)arg2));
+void C_ZN10QMatrix4x48optimizeEv(void *this_) {
+  ((QMatrix4x4*)this_)->optimize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qmatrix4x4.h', line 169, column 15>
-//   // proto:  QVector4D QMatrix4x4::map(const QVector4D & point);
-// _ZNK10QMatrix4x43mapERK9QVector4D map(const class QVector4D &)
-extern "C"
-QVector4D*
-C_ZNK10QMatrix4x43mapERK9QVector4D(void *qthis,
-const QVector4D* arg1) {
-  auto ret =
-  ((QMatrix4x4*)qthis)->map(*((const QVector4D*)arg1));
-  return new QVector4D(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,432 +1,227 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qtimezone.h
-// dst-file: /src/core/qtimezone.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qtimezone.h
 #include <qtimezone.h>
+#include <QtCore>
 
-
-#include <qlist.h>
-#include <qbytearray.h>
-#include <qlocale.h>
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtimezone_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 91, column 10>
-//   // proto:  void QTimeZone::swap(QTimeZone & other);
-if (true) {
-  auto f = [](QTimeZone flythis, QTimeZone & arg1) {
-    ((QTimeZone*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QTimeZone4swapERS_ swap(class QTimeZone &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qtimezone.h:77
+// void QTimeZone()
 extern "C"
-int QTimeZone_Class_Size()
-{
-  return sizeof(QTimeZone);
+void* C_ZN9QTimeZoneC1Ev() {
+  return new QTimeZone();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 131, column 30>
-//   // proto: static QList<QByteArray> QTimeZone::availableTimeZoneIds();
-// _ZN9QTimeZone20availableTimeZoneIdsEv availableTimeZoneIds()
+// /usr/include/qt/QtCore/qtimezone.h:78
+// void QTimeZone(const class QByteArray &)
 extern "C"
-QList<QByteArray>*
-C_ZN9QTimeZone20availableTimeZoneIdsEv() {
-  auto ret =
-  QTimeZone::availableTimeZoneIds();
-  return new QList<QByteArray>(ret); // 5
+void* C_ZN9QTimeZoneC1ERK10QByteArray(const QByteArray & ianaId) {
+  return new QTimeZone(ianaId);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 100, column 22>
-//   // proto:  QLocale::Country QTimeZone::country();
-// _ZNK9QTimeZone7countryEv country()
+// /usr/include/qt/QtCore/qtimezone.h:79
+// void QTimeZone(int)
 extern "C"
-QLocale::Country
-C_ZNK9QTimeZone7countryEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->country();
-  return ret; // 0 TypeKind.ENUM
+void* C_ZN9QTimeZoneC1Ei(int offsetSeconds) {
+  return new QTimeZone(offsetSeconds);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 91, column 10>
-//   // proto:  void QTimeZone::swap(QTimeZone & other);
-// _ZN9QTimeZone4swapERS_ swap(class QTimeZone &)
+// /usr/include/qt/QtCore/qtimezone.h:80
+// void QTimeZone(const class QByteArray &, int, const class QString &, const class QString &, class QLocale::Country, const class QString &)
 extern "C"
-void
-C_ZN9QTimeZone4swapERS_(void *qthis,
-QTimeZone* arg1) {
-  ((QTimeZone*)qthis)->swap(*((QTimeZone*)arg1));
+void* C_ZN9QTimeZoneC1ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment) {
+  return new QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 97, column 10>
-//   // proto:  bool QTimeZone::isValid();
-// _ZNK9QTimeZone7isValidEv isValid()
+// /usr/include/qt/QtCore/qtimezone.h:84
+// void ~QTimeZone()
 extern "C"
-bool
-C_ZNK9QTimeZone7isValidEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QTimeZoneD1Ev(void *this_) {
+  delete (QTimeZone*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 123, column 20>
-//   // proto:  OffsetDataList QTimeZone::transitions(const QDateTime & fromDateTime, const QDateTime & toDateTime);
-// _ZNK9QTimeZone11transitionsERK9QDateTimeS2_ transitions(const class QDateTime &, const class QDateTime &)
+// inline
+// /usr/include/qt/QtCore/qtimezone.h:91
+// void swap(class QTimeZone &)
 extern "C"
-QVector<QTimeZone::OffsetData>*
-C_ZNK9QTimeZone11transitionsERK9QDateTimeS2_(void *qthis,
-const QDateTime* arg1,
-const QDateTime* arg2) {
-  auto ret =
-  ((QTimeZone*)qthis)->transitions(*((const QDateTime*)arg1),
-*((const QDateTime*)arg2));
-  return new QVector<QTimeZone::OffsetData>(ret); // 5
+void C_ZN9QTimeZone4swapERS_(void *this_, QTimeZone & other) {
+  ((QTimeZone*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 115, column 10>
-//   // proto:  bool QTimeZone::hasDaylightTime();
-// _ZNK9QTimeZone15hasDaylightTimeEv hasDaylightTime()
+// /usr/include/qt/QtCore/qtimezone.h:97
+// bool isValid()
 extern "C"
-bool
-C_ZNK9QTimeZone15hasDaylightTimeEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->hasDaylightTime();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QTimeZone7isValidEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 137, column 23>
-//   // proto: static QByteArray QTimeZone::windowsIdToDefaultIanaId(const QByteArray & windowsId, QLocale::Country country);
-// _ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArrayN7QLocale7CountryE windowsIdToDefaultIanaId(const class QByteArray &, class QLocale::Country)
+// /usr/include/qt/QtCore/qtimezone.h:99
+// QByteArray id()
 extern "C"
-QByteArray*
-C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArrayN7QLocale7CountryE(const QByteArray* arg1,
-QLocale::Country* arg2) {
-  auto ret =
-  QTimeZone::windowsIdToDefaultIanaId(*((const QByteArray*)arg1),
-*((QLocale::Country*)arg2));
-  return new QByteArray(ret); // 5
+void C_ZNK9QTimeZone2idEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->id();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 127, column 22>
-//   // proto: static QTimeZone QTimeZone::utc();
-// _ZN9QTimeZone3utcEv utc()
+// /usr/include/qt/QtCore/qtimezone.h:100
+// QLocale::Country country()
 extern "C"
-QTimeZone*
-C_ZN9QTimeZone3utcEv() {
-  auto ret =
-  QTimeZone::utc();
-  return new QTimeZone(ret); // 5
+void C_ZNK9QTimeZone7countryEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->country();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 132, column 30>
-//   // proto: static QList<QByteArray> QTimeZone::availableTimeZoneIds(QLocale::Country country);
-// _ZN9QTimeZone20availableTimeZoneIdsEN7QLocale7CountryE availableTimeZoneIds(class QLocale::Country)
+// /usr/include/qt/QtCore/qtimezone.h:101
+// QString comment()
 extern "C"
-QList<QByteArray>*
-C_ZN9QTimeZone20availableTimeZoneIdsEN7QLocale7CountryE(QLocale::Country* arg1) {
-  auto ret =
-  QTimeZone::availableTimeZoneIds(*((QLocale::Country*)arg1));
-  return new QList<QByteArray>(ret); // 5
+void C_ZNK9QTimeZone7commentEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->comment();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 133, column 30>
-//   // proto: static QList<QByteArray> QTimeZone::availableTimeZoneIds(int offsetSeconds);
-// _ZN9QTimeZone20availableTimeZoneIdsEi availableTimeZoneIds(int)
+// /usr/include/qt/QtCore/qtimezone.h:103
+// QString displayName(const class QDateTime &, class QTimeZone::NameType, const class QLocale &)
 extern "C"
-QList<QByteArray>*
-C_ZN9QTimeZone20availableTimeZoneIdsEi(int arg1) {
-  auto ret =
-  QTimeZone::availableTimeZoneIds(arg1);
-  return new QList<QByteArray>(ret); // 5
+void C_ZNK9QTimeZone11displayNameERK9QDateTimeNS_8NameTypeERK7QLocale(void *this_, const QDateTime & atDateTime, QTimeZone::NameType nameType, const QLocale & locale) {
+  /*return*/ ((QTimeZone*)this_)->displayName(atDateTime, nameType, locale);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 79, column 14>
-//   // proto:  void QTimeZone::QTimeZone(int offsetSeconds);
+// /usr/include/qt/QtCore/qtimezone.h:106
+// QString displayName(class QTimeZone::TimeType, class QTimeZone::NameType, const class QLocale &)
 extern "C"
-QTimeZone*
-C_ZN9QTimeZoneC2Ei(int arg1) {
-  auto ret = new QTimeZone(arg1);
-  return ret;
+void C_ZNK9QTimeZone11displayNameENS_8TimeTypeENS_8NameTypeERK7QLocale(void *this_, QTimeZone::TimeType timeType, QTimeZone::NameType nameType, const QLocale & locale) {
+  /*return*/ ((QTimeZone*)this_)->displayName(timeType, nameType, locale);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 109, column 13>
-//   // proto:  QString QTimeZone::abbreviation(const QDateTime & atDateTime);
-// _ZNK9QTimeZone12abbreviationERK9QDateTime abbreviation(const class QDateTime &)
+// /usr/include/qt/QtCore/qtimezone.h:109
+// QString abbreviation(const class QDateTime &)
 extern "C"
-QString*
-C_ZNK9QTimeZone12abbreviationERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->abbreviation(*((const QDateTime*)arg1));
-  return new QString(ret); // 5
+void C_ZNK9QTimeZone12abbreviationERK9QDateTime(void *this_, const QDateTime & atDateTime) {
+  /*return*/ ((QTimeZone*)this_)->abbreviation(atDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 77, column 5>
-//   // proto:  void QTimeZone::QTimeZone();
+// /usr/include/qt/QtCore/qtimezone.h:111
+// int offsetFromUtc(const class QDateTime &)
 extern "C"
-QTimeZone*
-C_ZN9QTimeZoneC2Ev() {
-  auto ret = new QTimeZone();
-  return ret;
+void C_ZNK9QTimeZone13offsetFromUtcERK9QDateTime(void *this_, const QDateTime & atDateTime) {
+  /*return*/ ((QTimeZone*)this_)->offsetFromUtc(atDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 135, column 23>
-//   // proto: static QByteArray QTimeZone::ianaIdToWindowsId(const QByteArray & ianaId);
-// _ZN9QTimeZone17ianaIdToWindowsIdERK10QByteArray ianaIdToWindowsId(const class QByteArray &)
+// /usr/include/qt/QtCore/qtimezone.h:112
+// int standardTimeOffset(const class QDateTime &)
 extern "C"
-QByteArray*
-C_ZN9QTimeZone17ianaIdToWindowsIdERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QTimeZone::ianaIdToWindowsId(*((const QByteArray*)arg1));
-  return new QByteArray(ret); // 5
+void C_ZNK9QTimeZone18standardTimeOffsetERK9QDateTime(void *this_, const QDateTime & atDateTime) {
+  /*return*/ ((QTimeZone*)this_)->standardTimeOffset(atDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 125, column 23>
-//   // proto: static QByteArray QTimeZone::systemTimeZoneId();
-// _ZN9QTimeZone16systemTimeZoneIdEv systemTimeZoneId()
+// /usr/include/qt/QtCore/qtimezone.h:113
+// int daylightTimeOffset(const class QDateTime &)
 extern "C"
-QByteArray*
-C_ZN9QTimeZone16systemTimeZoneIdEv() {
-  auto ret =
-  QTimeZone::systemTimeZoneId();
-  return new QByteArray(ret); // 5
+void C_ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime(void *this_, const QDateTime & atDateTime) {
+  /*return*/ ((QTimeZone*)this_)->daylightTimeOffset(atDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 118, column 16>
-//   // proto:  QTimeZone::OffsetData QTimeZone::offsetData(const QDateTime & forDateTime);
-// _ZNK9QTimeZone10offsetDataERK9QDateTime offsetData(const class QDateTime &)
+// /usr/include/qt/QtCore/qtimezone.h:115
+// bool hasDaylightTime()
 extern "C"
-QTimeZone::OffsetData*
-C_ZNK9QTimeZone10offsetDataERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->offsetData(*((const QDateTime*)arg1));
-  return new QTimeZone::OffsetData(ret); // 5
+void C_ZNK9QTimeZone15hasDaylightTimeEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->hasDaylightTime();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 116, column 10>
-//   // proto:  bool QTimeZone::isDaylightTime(const QDateTime & atDateTime);
-// _ZNK9QTimeZone14isDaylightTimeERK9QDateTime isDaylightTime(const class QDateTime &)
+// /usr/include/qt/QtCore/qtimezone.h:116
+// bool isDaylightTime(const class QDateTime &)
 extern "C"
-bool
-C_ZNK9QTimeZone14isDaylightTimeERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->isDaylightTime(*((const QDateTime*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QTimeZone14isDaylightTimeERK9QDateTime(void *this_, const QDateTime & atDateTime) {
+  /*return*/ ((QTimeZone*)this_)->isDaylightTime(atDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 129, column 17>
-//   // proto: static bool QTimeZone::isTimeZoneIdAvailable(const QByteArray & ianaId);
-// _ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray isTimeZoneIdAvailable(const class QByteArray &)
+// /usr/include/qt/QtCore/qtimezone.h:118
+// QTimeZone::OffsetData offsetData(const class QDateTime &)
 extern "C"
-bool
-C_ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QTimeZone::isTimeZoneIdAvailable(*((const QByteArray*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QTimeZone10offsetDataERK9QDateTime(void *this_, const QDateTime & forDateTime) {
+  /*return*/ ((QTimeZone*)this_)->offsetData(forDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 106, column 13>
-//   // proto:  QString QTimeZone::displayName(QTimeZone::TimeType timeType, QTimeZone::NameType nameType, const QLocale & locale);
-// _ZNK9QTimeZone11displayNameENS_8TimeTypeENS_8NameTypeERK7QLocale displayName(class QTimeZone::TimeType, class QTimeZone::NameType, const class QLocale &)
+// /usr/include/qt/QtCore/qtimezone.h:120
+// bool hasTransitions()
 extern "C"
-QString*
-C_ZNK9QTimeZone11displayNameENS_8TimeTypeENS_8NameTypeERK7QLocale(void *qthis,
-QTimeZone::TimeType* arg1,
-QTimeZone::NameType* arg2,
-const QLocale* arg3) {
-  auto ret =
-  ((QTimeZone*)qthis)->displayName(*((QTimeZone::TimeType*)arg1),
-*((QTimeZone::NameType*)arg2),
-*((const QLocale*)arg3));
-  return new QString(ret); // 5
+void C_ZNK9QTimeZone14hasTransitionsEv(void *this_) {
+  /*return*/ ((QTimeZone*)this_)->hasTransitions();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 101, column 13>
-//   // proto:  QString QTimeZone::comment();
-// _ZNK9QTimeZone7commentEv comment()
+// /usr/include/qt/QtCore/qtimezone.h:121
+// QTimeZone::OffsetData nextTransition(const class QDateTime &)
 extern "C"
-QString*
-C_ZNK9QTimeZone7commentEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->comment();
-  return new QString(ret); // 5
+void C_ZNK9QTimeZone14nextTransitionERK9QDateTime(void *this_, const QDateTime & afterDateTime) {
+  /*return*/ ((QTimeZone*)this_)->nextTransition(afterDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 136, column 23>
-//   // proto: static QByteArray QTimeZone::windowsIdToDefaultIanaId(const QByteArray & windowsId);
-// _ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArray windowsIdToDefaultIanaId(const class QByteArray &)
+// /usr/include/qt/QtCore/qtimezone.h:122
+// QTimeZone::OffsetData previousTransition(const class QDateTime &)
 extern "C"
-QByteArray*
-C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QTimeZone::windowsIdToDefaultIanaId(*((const QByteArray*)arg1));
-  return new QByteArray(ret); // 5
+void C_ZNK9QTimeZone18previousTransitionERK9QDateTime(void *this_, const QDateTime & beforeDateTime) {
+  /*return*/ ((QTimeZone*)this_)->previousTransition(beforeDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 120, column 10>
-//   // proto:  bool QTimeZone::hasTransitions();
-// _ZNK9QTimeZone14hasTransitionsEv hasTransitions()
+// /usr/include/qt/QtCore/qtimezone.h:123
+// OffsetDataList transitions(const class QDateTime &, const class QDateTime &)
 extern "C"
-bool
-C_ZNK9QTimeZone14hasTransitionsEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->hasTransitions();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QTimeZone11transitionsERK9QDateTimeS2_(void *this_, const QDateTime & fromDateTime, const QDateTime & toDateTime) {
+  /*return*/ ((QTimeZone*)this_)->transitions(fromDateTime, toDateTime);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 113, column 9>
-//   // proto:  int QTimeZone::daylightTimeOffset(const QDateTime & atDateTime);
-// _ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime daylightTimeOffset(const class QDateTime &)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:125
+// QByteArray systemTimeZoneId()
 extern "C"
-int
-C_ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->daylightTimeOffset(*((const QDateTime*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeZone16systemTimeZoneIdEv() {
+  /*return*/ QTimeZone::systemTimeZoneId();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 126, column 22>
-//   // proto: static QTimeZone QTimeZone::systemTimeZone();
-// _ZN9QTimeZone14systemTimeZoneEv systemTimeZone()
+// static
+// /usr/include/qt/QtCore/qtimezone.h:126
+// QTimeZone systemTimeZone()
 extern "C"
-QTimeZone*
-C_ZN9QTimeZone14systemTimeZoneEv() {
-  auto ret =
-  QTimeZone::systemTimeZone();
-  return new QTimeZone(ret); // 5
+void C_ZN9QTimeZone14systemTimeZoneEv() {
+  /*return*/ QTimeZone::systemTimeZone();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 140, column 30>
-//   // proto: static QList<QByteArray> QTimeZone::windowsIdToIanaIds(const QByteArray & windowsId, QLocale::Country country);
-// _ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArrayN7QLocale7CountryE windowsIdToIanaIds(const class QByteArray &, class QLocale::Country)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:127
+// QTimeZone utc()
 extern "C"
-QList<QByteArray>*
-C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArrayN7QLocale7CountryE(const QByteArray* arg1,
-QLocale::Country* arg2) {
-  auto ret =
-  QTimeZone::windowsIdToIanaIds(*((const QByteArray*)arg1),
-*((QLocale::Country*)arg2));
-  return new QList<QByteArray>(ret); // 5
+void C_ZN9QTimeZone3utcEv() {
+  /*return*/ QTimeZone::utc();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 121, column 16>
-//   // proto:  QTimeZone::OffsetData QTimeZone::nextTransition(const QDateTime & afterDateTime);
-// _ZNK9QTimeZone14nextTransitionERK9QDateTime nextTransition(const class QDateTime &)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:129
+// bool isTimeZoneIdAvailable(const class QByteArray &)
 extern "C"
-QTimeZone::OffsetData*
-C_ZNK9QTimeZone14nextTransitionERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->nextTransition(*((const QDateTime*)arg1));
-  return new QTimeZone::OffsetData(ret); // 5
+void C_ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray(const QByteArray & ianaId) {
+  /*return*/ QTimeZone::isTimeZoneIdAvailable(ianaId);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 78, column 14>
-//   // proto:  void QTimeZone::QTimeZone(const QByteArray & ianaId);
+// static
+// /usr/include/qt/QtCore/qtimezone.h:131
+// QList<QByteArray> availableTimeZoneIds()
 extern "C"
-QTimeZone*
-C_ZN9QTimeZoneC2ERK10QByteArray(const QByteArray* arg1) {
-  auto ret = new QTimeZone(*((const QByteArray*)arg1));
-  return ret;
+void C_ZN9QTimeZone20availableTimeZoneIdsEv() {
+  /*return*/ QTimeZone::availableTimeZoneIds();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 83, column 5>
-//   // proto:  void QTimeZone::QTimeZone(const QTimeZone & other);
+// static
+// /usr/include/qt/QtCore/qtimezone.h:132
+// QList<QByteArray> availableTimeZoneIds(class QLocale::Country)
 extern "C"
-QTimeZone*
-C_ZN9QTimeZoneC2ERKS_(const QTimeZone* arg1) {
-  auto ret = new QTimeZone(*((const QTimeZone*)arg1));
-  return ret;
+void C_ZN9QTimeZone20availableTimeZoneIdsEN7QLocale7CountryE(QLocale::Country country) {
+  /*return*/ QTimeZone::availableTimeZoneIds(country);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 103, column 13>
-//   // proto:  QString QTimeZone::displayName(const QDateTime & atDateTime, QTimeZone::NameType nameType, const QLocale & locale);
-// _ZNK9QTimeZone11displayNameERK9QDateTimeNS_8NameTypeERK7QLocale displayName(const class QDateTime &, class QTimeZone::NameType, const class QLocale &)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:133
+// QList<QByteArray> availableTimeZoneIds(int)
 extern "C"
-QString*
-C_ZNK9QTimeZone11displayNameERK9QDateTimeNS_8NameTypeERK7QLocale(void *qthis,
-const QDateTime* arg1,
-QTimeZone::NameType* arg2,
-const QLocale* arg3) {
-  auto ret =
-  ((QTimeZone*)qthis)->displayName(*((const QDateTime*)arg1),
-*((QTimeZone::NameType*)arg2),
-*((const QLocale*)arg3));
-  return new QString(ret); // 5
+void C_ZN9QTimeZone20availableTimeZoneIdsEi(int offsetSeconds) {
+  /*return*/ QTimeZone::availableTimeZoneIds(offsetSeconds);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 122, column 16>
-//   // proto:  QTimeZone::OffsetData QTimeZone::previousTransition(const QDateTime & beforeDateTime);
-// _ZNK9QTimeZone18previousTransitionERK9QDateTime previousTransition(const class QDateTime &)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:135
+// QByteArray ianaIdToWindowsId(const class QByteArray &)
 extern "C"
-QTimeZone::OffsetData*
-C_ZNK9QTimeZone18previousTransitionERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->previousTransition(*((const QDateTime*)arg1));
-  return new QTimeZone::OffsetData(ret); // 5
+void C_ZN9QTimeZone17ianaIdToWindowsIdERK10QByteArray(const QByteArray & ianaId) {
+  /*return*/ QTimeZone::ianaIdToWindowsId(ianaId);
 }
-//   // proto:  void QTimeZone::~QTimeZone();
+// static
+// /usr/include/qt/QtCore/qtimezone.h:136
+// QByteArray windowsIdToDefaultIanaId(const class QByteArray &)
 extern "C"
-void C_ZN9QTimeZoneD2Ev(void *qthis) {
-  delete (QTimeZone*)qthis;
+void C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArray(const QByteArray & windowsId) {
+  /*return*/ QTimeZone::windowsIdToDefaultIanaId(windowsId);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 80, column 18>
-//   // proto:  void QTimeZone::QTimeZone(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment);
+// static
+// /usr/include/qt/QtCore/qtimezone.h:137
+// QByteArray windowsIdToDefaultIanaId(const class QByteArray &, class QLocale::Country)
 extern "C"
-QTimeZone*
-C_ZN9QTimeZoneC2ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(const QByteArray* arg1,
-int arg2,
-const QString* arg3,
-const QString* arg4,
-QLocale::Country* arg5,
-const QString* arg6) {
-  auto ret = new QTimeZone(*((const QByteArray*)arg1),
-arg2,
-*((const QString*)arg3),
-*((const QString*)arg4),
-*((QLocale::Country*)arg5),
-*((const QString*)arg6));
-  return ret;
+void C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArrayN7QLocale7CountryE(const QByteArray & windowsId, QLocale::Country country) {
+  /*return*/ QTimeZone::windowsIdToDefaultIanaId(windowsId, country);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 112, column 9>
-//   // proto:  int QTimeZone::standardTimeOffset(const QDateTime & atDateTime);
-// _ZNK9QTimeZone18standardTimeOffsetERK9QDateTime standardTimeOffset(const class QDateTime &)
+// static
+// /usr/include/qt/QtCore/qtimezone.h:139
+// QList<QByteArray> windowsIdToIanaIds(const class QByteArray &)
 extern "C"
-int
-C_ZNK9QTimeZone18standardTimeOffsetERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->standardTimeOffset(*((const QDateTime*)arg1));
-  return ret; // 0 TypeKind.INT
+void C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArray(const QByteArray & windowsId) {
+  /*return*/ QTimeZone::windowsIdToIanaIds(windowsId);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 99, column 16>
-//   // proto:  QByteArray QTimeZone::id();
-// _ZNK9QTimeZone2idEv id()
+// static
+// /usr/include/qt/QtCore/qtimezone.h:140
+// QList<QByteArray> windowsIdToIanaIds(const class QByteArray &, class QLocale::Country)
 extern "C"
-QByteArray*
-C_ZNK9QTimeZone2idEv(void *qthis) {
-  auto ret =
-  ((QTimeZone*)qthis)->id();
-  return new QByteArray(ret); // 5
+void C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArrayN7QLocale7CountryE(const QByteArray & windowsId, QLocale::Country country) {
+  /*return*/ QTimeZone::windowsIdToIanaIds(windowsId, country);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 111, column 9>
-//   // proto:  int QTimeZone::offsetFromUtc(const QDateTime & atDateTime);
-// _ZNK9QTimeZone13offsetFromUtcERK9QDateTime offsetFromUtc(const class QDateTime &)
-extern "C"
-int
-C_ZNK9QTimeZone13offsetFromUtcERK9QDateTime(void *qthis,
-const QDateTime* arg1) {
-  auto ret =
-  ((QTimeZone*)qthis)->offsetFromUtc(*((const QDateTime*)arg1));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qtimezone.h', line 139, column 30>
-//   // proto: static QList<QByteArray> QTimeZone::windowsIdToIanaIds(const QByteArray & windowsId);
-// _ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArray windowsIdToIanaIds(const class QByteArray &)
-extern "C"
-QList<QByteArray>*
-C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QTimeZone::windowsIdToIanaIds(*((const QByteArray*)arg1));
-  return new QList<QByteArray>(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

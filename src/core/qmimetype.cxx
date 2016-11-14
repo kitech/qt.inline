@@ -1,230 +1,113 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qmimetype.h
-// dst-file: /src/core/qmimetype.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qmimetype.h
 #include <qmimetype.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmimetype_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 68, column 10>
-//   // proto:  void QMimeType::swap(QMimeType & other);
-if (true) {
-  auto f = [](QMimeType flythis, QMimeType & arg1) {
-    ((QMimeType*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QMimeType4swapERS_ swap(class QMimeType &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qmimetype.h:62
+// void QMimeType()
 extern "C"
-int QMimeType_Class_Size()
-{
-  return sizeof(QMimeType);
+void* C_ZN9QMimeTypeC1Ev() {
+  return new QMimeType();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QMimeType::~QMimeType();
+// inline
+// /usr/include/qt/QtCore/qmimetype.h:68
+// void swap(class QMimeType &)
 extern "C"
-void C_ZN9QMimeTypeD2Ev(void *qthis) {
-  delete (QMimeType*)qthis;
+void C_ZN9QMimeType4swapERS_(void *this_, QMimeType & other) {
+  ((QMimeType*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 87, column 13>
-//   // proto:  QString QMimeType::comment();
-// _ZNK9QMimeType7commentEv comment()
+// /usr/include/qt/QtCore/qmimetype.h:72
+// void QMimeType(const class QMimeTypePrivate &)
 extern "C"
-QString*
-C_ZNK9QMimeType7commentEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->comment();
-  return new QString(ret); // 5
+void* C_ZN9QMimeTypeC1ERK16QMimeTypePrivate(const QMimeTypePrivate & dd) {
+  return new QMimeType(dd);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 93, column 17>
-//   // proto:  QStringList QMimeType::aliases();
-// _ZNK9QMimeType7aliasesEv aliases()
+// /usr/include/qt/QtCore/qmimetype.h:73
+// void ~QMimeType()
 extern "C"
-QStringList*
-C_ZNK9QMimeType7aliasesEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->aliases();
-  return new QStringList(ret); // 5
+void C_ZN9QMimeTypeD1Ev(void *this_) {
+  delete (QMimeType*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 99, column 13>
-//   // proto:  QString QMimeType::filterString();
-// _ZNK9QMimeType12filterStringEv filterString()
+// /usr/include/qt/QtCore/qmimetype.h:82
+// bool isValid()
 extern "C"
-QString*
-C_ZNK9QMimeType12filterStringEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->filterString();
-  return new QString(ret); // 5
+void C_ZNK9QMimeType7isValidEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 91, column 17>
-//   // proto:  QStringList QMimeType::parentMimeTypes();
-// _ZNK9QMimeType15parentMimeTypesEv parentMimeTypes()
+// /usr/include/qt/QtCore/qmimetype.h:84
+// bool isDefault()
 extern "C"
-QStringList*
-C_ZNK9QMimeType15parentMimeTypesEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->parentMimeTypes();
-  return new QStringList(ret); // 5
+void C_ZNK9QMimeType9isDefaultEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->isDefault();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 63, column 5>
-//   // proto:  void QMimeType::QMimeType(const QMimeType & other);
+// /usr/include/qt/QtCore/qmimetype.h:86
+// QString name()
 extern "C"
-QMimeType*
-C_ZN9QMimeTypeC2ERKS_(const QMimeType* arg1) {
-  auto ret = new QMimeType(*((const QMimeType*)arg1));
-  return ret;
+void C_ZNK9QMimeType4nameEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->name();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 97, column 10>
-//   // proto:  bool QMimeType::inherits(const QString & mimeTypeName);
-// _ZNK9QMimeType8inheritsERK7QString inherits(const class QString &)
+// /usr/include/qt/QtCore/qmimetype.h:87
+// QString comment()
 extern "C"
-bool
-C_ZNK9QMimeType8inheritsERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeType*)qthis)->inherits(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QMimeType7commentEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->comment();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 84, column 10>
-//   // proto:  bool QMimeType::isDefault();
-// _ZNK9QMimeType9isDefaultEv isDefault()
+// /usr/include/qt/QtCore/qmimetype.h:88
+// QString genericIconName()
 extern "C"
-bool
-C_ZNK9QMimeType9isDefaultEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->isDefault();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QMimeType15genericIconNameEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->genericIconName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 82, column 10>
-//   // proto:  bool QMimeType::isValid();
-// _ZNK9QMimeType7isValidEv isValid()
+// /usr/include/qt/QtCore/qmimetype.h:89
+// QString iconName()
 extern "C"
-bool
-C_ZNK9QMimeType7isValidEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QMimeType8iconNameEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->iconName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 72, column 14>
-//   // proto:  void QMimeType::QMimeType(const QMimeTypePrivate & dd);
+// /usr/include/qt/QtCore/qmimetype.h:90
+// QStringList globPatterns()
 extern "C"
-QMimeType*
-C_ZN9QMimeTypeC2ERK16QMimeTypePrivate(const QMimeTypePrivate* arg1) {
-  auto ret = new QMimeType(*((const QMimeTypePrivate*)arg1));
-  return ret;
+void C_ZNK9QMimeType12globPatternsEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->globPatterns();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 62, column 5>
-//   // proto:  void QMimeType::QMimeType();
+// /usr/include/qt/QtCore/qmimetype.h:91
+// QStringList parentMimeTypes()
 extern "C"
-QMimeType*
-C_ZN9QMimeTypeC2Ev() {
-  auto ret = new QMimeType();
-  return ret;
+void C_ZNK9QMimeType15parentMimeTypesEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->parentMimeTypes();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 68, column 10>
-//   // proto:  void QMimeType::swap(QMimeType & other);
-// _ZN9QMimeType4swapERS_ swap(class QMimeType &)
+// /usr/include/qt/QtCore/qmimetype.h:92
+// QStringList allAncestors()
 extern "C"
-void
-C_ZN9QMimeType4swapERS_(void *qthis,
-QMimeType* arg1) {
-  ((QMimeType*)qthis)->swap(*((QMimeType*)arg1));
+void C_ZNK9QMimeType12allAncestorsEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->allAncestors();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 94, column 17>
-//   // proto:  QStringList QMimeType::suffixes();
-// _ZNK9QMimeType8suffixesEv suffixes()
+// /usr/include/qt/QtCore/qmimetype.h:93
+// QStringList aliases()
 extern "C"
-QStringList*
-C_ZNK9QMimeType8suffixesEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->suffixes();
-  return new QStringList(ret); // 5
+void C_ZNK9QMimeType7aliasesEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->aliases();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 88, column 13>
-//   // proto:  QString QMimeType::genericIconName();
-// _ZNK9QMimeType15genericIconNameEv genericIconName()
+// /usr/include/qt/QtCore/qmimetype.h:94
+// QStringList suffixes()
 extern "C"
-QString*
-C_ZNK9QMimeType15genericIconNameEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->genericIconName();
-  return new QString(ret); // 5
+void C_ZNK9QMimeType8suffixesEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->suffixes();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 89, column 13>
-//   // proto:  QString QMimeType::iconName();
-// _ZNK9QMimeType8iconNameEv iconName()
+// /usr/include/qt/QtCore/qmimetype.h:95
+// QString preferredSuffix()
 extern "C"
-QString*
-C_ZNK9QMimeType8iconNameEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->iconName();
-  return new QString(ret); // 5
+void C_ZNK9QMimeType15preferredSuffixEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->preferredSuffix();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 92, column 17>
-//   // proto:  QStringList QMimeType::allAncestors();
-// _ZNK9QMimeType12allAncestorsEv allAncestors()
+// /usr/include/qt/QtCore/qmimetype.h:97
+// bool inherits(const class QString &)
 extern "C"
-QStringList*
-C_ZNK9QMimeType12allAncestorsEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->allAncestors();
-  return new QStringList(ret); // 5
+void C_ZNK9QMimeType8inheritsERK7QString(void *this_, const QString & mimeTypeName) {
+  /*return*/ ((QMimeType*)this_)->inherits(mimeTypeName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 90, column 17>
-//   // proto:  QStringList QMimeType::globPatterns();
-// _ZNK9QMimeType12globPatternsEv globPatterns()
+// /usr/include/qt/QtCore/qmimetype.h:99
+// QString filterString()
 extern "C"
-QStringList*
-C_ZNK9QMimeType12globPatternsEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->globPatterns();
-  return new QStringList(ret); // 5
+void C_ZNK9QMimeType12filterStringEv(void *this_) {
+  /*return*/ ((QMimeType*)this_)->filterString();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 86, column 13>
-//   // proto:  QString QMimeType::name();
-// _ZNK9QMimeType4nameEv name()
-extern "C"
-QString*
-C_ZNK9QMimeType4nameEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->name();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qmimetype.h', line 95, column 13>
-//   // proto:  QString QMimeType::preferredSuffix();
-// _ZNK9QMimeType15preferredSuffixEv preferredSuffix()
-extern "C"
-QString*
-C_ZNK9QMimeType15preferredSuffixEv(void *qthis) {
-  auto ret =
-  ((QMimeType*)qthis)->preferredSuffix();
-  return new QString(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,376 +1,169 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qregion.h
-// dst-file: /src/gui/qregion.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qregion.h
 #include <qregion.h>
+#include <QtGui>
 
-
-#include <qrect.h>
-#include <qvector.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qregion_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 90, column 20>
-//   // proto:  QRegion QRegion::translated(const QPoint & p);
-if (true) {
-  auto f = [](QRegion flythis, const QPoint & arg1) {
-    ((QRegion*)0)->translated(arg1);
-    flythis.translated(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QRegion10translatedERK6QPoint translated(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 80, column 17>
-//   // proto:  void QRegion::swap(QRegion & other);
-if (true) {
-  auto f = [](QRegion flythis, QRegion & arg1) {
-    ((QRegion*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QRegion4swapERS_ swap(class QRegion &)
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 88, column 17>
-//   // proto:  void QRegion::translate(const QPoint & p);
-if (true) {
-  auto f = [](QRegion flythis, const QPoint & arg1) {
-    ((QRegion*)0)->translate(arg1);
-    flythis.translate(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QRegion9translateERK6QPoint translate(const class QPoint &)
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 71, column 5>
-//   // proto:  void QRegion::QRegion(QRegion && other);
-if (true) {
-  auto f = [](QRegion && arg1) {
-    new QRegion(arg1);
-  };
-  if (f == nullptr){}
-}
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qregion.h:66
+// void QRegion()
 extern "C"
-int QRegion_Class_Size()
-{
-  return sizeof(QRegion);
+void* C_ZN7QRegionC1Ev() {
+  return new QRegion();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 82, column 10>
-//   // proto:  bool QRegion::isNull();
-// _ZNK7QRegion6isNullEv isNull()
+// /usr/include/qt/QtGui/qregion.h:67
+// void QRegion(int, int, int, int, enum QRegion::RegionType)
 extern "C"
-bool
-C_ZNK7QRegion6isNullEv(void *qthis) {
-  auto ret =
-  ((QRegion*)qthis)->isNull();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QRegionC1EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::RegionType t) {
+  return new QRegion(x, y, w, h, t);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 111, column 11>
-//   // proto:  QRect QRegion::boundingRect();
-// _ZNK7QRegion12boundingRectEv boundingRect()
+// /usr/include/qt/QtGui/qregion.h:68
+// void QRegion(const class QRect &, enum QRegion::RegionType)
 extern "C"
-QRect*
-C_ZNK7QRegion12boundingRectEv(void *qthis) {
-  auto ret =
-  ((QRegion*)qthis)->boundingRect();
-  return new QRect(ret); // 5
+void* C_ZN7QRegionC1ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t) {
+  return new QRegion(r, t);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 70, column 5>
-//   // proto:  void QRegion::QRegion(const QRegion & region);
+// /usr/include/qt/QtGui/qregion.h:69
+// void QRegion(const class QPolygon &, Qt::FillRule)
 extern "C"
-QRegion*
-C_ZN7QRegionC2ERKS_(const QRegion* arg1) {
-  auto ret = new QRegion(*((const QRegion*)arg1));
-  return ret;
+void* C_ZN7QRegionC1ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule) {
+  return new QRegion(pa, fillRule);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 114, column 9>
-//   // proto:  int QRegion::rectCount();
-// _ZNK7QRegion9rectCountEv rectCount()
+// /usr/include/qt/QtGui/qregion.h:73
+// void QRegion(const class QBitmap &)
 extern "C"
-int
-C_ZNK7QRegion9rectCountEv(void *qthis) {
-  auto ret =
-  ((QRegion*)qthis)->rectCount();
-  return ret; // 0 TypeKind.INT
+void* C_ZN7QRegionC1ERK7QBitmap(const QBitmap & bitmap) {
+  return new QRegion(bitmap);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 87, column 10>
-//   // proto:  void QRegion::translate(int dx, int dy);
-// _ZN7QRegion9translateEii translate(int, int)
+// /usr/include/qt/QtGui/qregion.h:74
+// void ~QRegion()
 extern "C"
-void
-C_ZN7QRegion9translateEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QRegion*)qthis)->translate(arg1,
-arg2);
+void C_ZN7QRegionD1Ev(void *this_) {
+  delete (QRegion*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 92, column 13>
-//   // proto:  QRegion QRegion::united(const QRegion & r);
-// _ZNK7QRegion6unitedERKS_ united(const class QRegion &)
+// inline
+// /usr/include/qt/QtGui/qregion.h:80
+// void swap(class QRegion &)
 extern "C"
-QRegion*
-C_ZNK7QRegion6unitedERKS_(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->united(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZN7QRegion4swapERS_(void *this_, QRegion & other) {
+  ((QRegion*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 90, column 20>
-//   // proto:  QRegion QRegion::translated(const QPoint & p);
-// _ZNK7QRegion10translatedERK6QPoint translated(const class QPoint &)
+// /usr/include/qt/QtGui/qregion.h:81
+// bool isEmpty()
 extern "C"
-QRegion*
-C_ZNK7QRegion10translatedERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->translated(*((const QPoint*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion7isEmptyEv(void *this_) {
+  /*return*/ ((QRegion*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 80, column 17>
-//   // proto:  void QRegion::swap(QRegion & other);
-// _ZN7QRegion4swapERS_ swap(class QRegion &)
+// /usr/include/qt/QtGui/qregion.h:82
+// bool isNull()
 extern "C"
-void
-C_ZN7QRegion4swapERS_(void *qthis,
-QRegion* arg1) {
-  ((QRegion*)qthis)->swap(*((QRegion*)arg1));
+void C_ZNK7QRegion6isNullEv(void *this_) {
+  /*return*/ ((QRegion*)this_)->isNull();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 73, column 5>
-//   // proto:  void QRegion::QRegion(const QBitmap & bitmap);
+// /usr/include/qt/QtGui/qregion.h:84
+// bool contains(const class QPoint &)
 extern "C"
-QRegion*
-C_ZN7QRegionC2ERK7QBitmap(const QBitmap* arg1) {
-  auto ret = new QRegion(*((const QBitmap*)arg1));
-  return ret;
+void C_ZNK7QRegion8containsERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QRegion*)this_)->contains(p);
 }
-//   // proto:  void QRegion::~QRegion();
+// /usr/include/qt/QtGui/qregion.h:85
+// bool contains(const class QRect &)
 extern "C"
-void C_ZN7QRegionD2Ev(void *qthis) {
-  delete (QRegion*)qthis;
+void C_ZNK7QRegion8containsERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QRegion*)this_)->contains(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 69, column 5>
-//   // proto:  void QRegion::QRegion(const QPolygon & pa, Qt::FillRule fillRule);
+// /usr/include/qt/QtGui/qregion.h:87
+// void translate(int, int)
 extern "C"
-QRegion*
-C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(const QPolygon* arg1,
-Qt::FillRule* arg2) {
-  auto ret = new QRegion(*((const QPolygon*)arg1),
-*((Qt::FillRule*)arg2));
-  return ret;
+void C_ZN7QRegion9translateEii(void *this_, int dx, int dy) {
+  ((QRegion*)this_)->translate(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 88, column 17>
-//   // proto:  void QRegion::translate(const QPoint & p);
-// _ZN7QRegion9translateERK6QPoint translate(const class QPoint &)
+// inline
+// /usr/include/qt/QtGui/qregion.h:88
+// void translate(const class QPoint &)
 extern "C"
-void
-C_ZN7QRegion9translateERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  ((QRegion*)qthis)->translate(*((const QPoint*)arg1));
+void C_ZN7QRegion9translateERK6QPoint(void *this_, const QPoint & p) {
+  ((QRegion*)this_)->translate(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 66, column 5>
-//   // proto:  void QRegion::QRegion();
+// /usr/include/qt/QtGui/qregion.h:89
+// QRegion translated(int, int)
 extern "C"
-QRegion*
-C_ZN7QRegionC2Ev() {
-  auto ret = new QRegion();
-  return ret;
+void C_ZNK7QRegion10translatedEii(void *this_, int dx, int dy) {
+  /*return*/ ((QRegion*)this_)->translated(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 85, column 10>
-//   // proto:  bool QRegion::contains(const QRect & r);
-// _ZNK7QRegion8containsERK5QRect contains(const class QRect &)
+// inline
+// /usr/include/qt/QtGui/qregion.h:90
+// QRegion translated(const class QPoint &)
 extern "C"
-bool
-C_ZNK7QRegion8containsERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->contains(*((const QRect*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QRegion10translatedERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QRegion*)this_)->translated(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 68, column 5>
-//   // proto:  void QRegion::QRegion(const QRect & r, QRegion::RegionType t);
+// /usr/include/qt/QtGui/qregion.h:92
+// QRegion united(const class QRegion &)
 extern "C"
-QRegion*
-C_ZN7QRegionC2ERK5QRectNS_10RegionTypeE(const QRect* arg1,
-QRegion::RegionType arg2) {
-  auto ret = new QRegion(*((const QRect*)arg1),
-arg2);
-  return ret;
+void C_ZNK7QRegion6unitedERKS_(void *this_, const QRegion & r) {
+  /*return*/ ((QRegion*)this_)->united(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 81, column 10>
-//   // proto:  bool QRegion::isEmpty();
-// _ZNK7QRegion7isEmptyEv isEmpty()
+// /usr/include/qt/QtGui/qregion.h:93
+// QRegion united(const class QRect &)
 extern "C"
-bool
-C_ZNK7QRegion7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QRegion*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QRegion6unitedERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QRegion*)this_)->united(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 67, column 5>
-//   // proto:  void QRegion::QRegion(int x, int y, int w, int h, QRegion::RegionType t);
+// /usr/include/qt/QtGui/qregion.h:94
+// QRegion intersected(const class QRegion &)
 extern "C"
-QRegion*
-C_ZN7QRegionC2EiiiiNS_10RegionTypeE(int arg1,
-int arg2,
-int arg3,
-int arg4,
-QRegion::RegionType arg5) {
-  auto ret = new QRegion(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
-  return ret;
+void C_ZNK7QRegion11intersectedERKS_(void *this_, const QRegion & r) {
+  /*return*/ ((QRegion*)this_)->intersected(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 95, column 13>
-//   // proto:  QRegion QRegion::intersected(const QRect & r);
-// _ZNK7QRegion11intersectedERK5QRect intersected(const class QRect &)
+// /usr/include/qt/QtGui/qregion.h:95
+// QRegion intersected(const class QRect &)
 extern "C"
-QRegion*
-C_ZNK7QRegion11intersectedERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->intersected(*((const QRect*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion11intersectedERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QRegion*)this_)->intersected(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 113, column 10>
-//   // proto:  void QRegion::setRects(const QRect * rect, int num);
-// _ZN7QRegion8setRectsEPK5QRecti setRects(const class QRect *, int)
+// /usr/include/qt/QtGui/qregion.h:96
+// QRegion subtracted(const class QRegion &)
 extern "C"
-void
-C_ZN7QRegion8setRectsEPK5QRecti(void *qthis,
-const QRect * arg1,
-int arg2) {
-  ((QRegion*)qthis)->setRects(arg1,
-arg2);
+void C_ZNK7QRegion10subtractedERKS_(void *this_, const QRegion & r) {
+  /*return*/ ((QRegion*)this_)->subtracted(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 112, column 20>
-//   // proto:  QVector<QRect> QRegion::rects();
-// _ZNK7QRegion5rectsEv rects()
+// /usr/include/qt/QtGui/qregion.h:97
+// QRegion xored(const class QRegion &)
 extern "C"
-QVector<QRect>*
-C_ZNK7QRegion5rectsEv(void *qthis) {
-  auto ret =
-  ((QRegion*)qthis)->rects();
-  return new QVector<QRect>(ret); // 5
+void C_ZNK7QRegion5xoredERKS_(void *this_, const QRegion & r) {
+  /*return*/ ((QRegion*)this_)->xored(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 96, column 13>
-//   // proto:  QRegion QRegion::subtracted(const QRegion & r);
-// _ZNK7QRegion10subtractedERKS_ subtracted(const class QRegion &)
+// /usr/include/qt/QtGui/qregion.h:108
+// bool intersects(const class QRegion &)
 extern "C"
-QRegion*
-C_ZNK7QRegion10subtractedERKS_(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->subtracted(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion10intersectsERKS_(void *this_, const QRegion & r) {
+  /*return*/ ((QRegion*)this_)->intersects(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 109, column 10>
-//   // proto:  bool QRegion::intersects(const QRect & r);
-// _ZNK7QRegion10intersectsERK5QRect intersects(const class QRect &)
+// /usr/include/qt/QtGui/qregion.h:109
+// bool intersects(const class QRect &)
 extern "C"
-bool
-C_ZNK7QRegion10intersectsERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->intersects(*((const QRect*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QRegion10intersectsERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QRegion*)this_)->intersects(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 89, column 13>
-//   // proto:  QRegion QRegion::translated(int dx, int dy);
-// _ZNK7QRegion10translatedEii translated(int, int)
+// /usr/include/qt/QtGui/qregion.h:111
+// QRect boundingRect()
 extern "C"
-QRegion*
-C_ZNK7QRegion10translatedEii(void *qthis,
-int arg1,
-int arg2) {
-  auto ret =
-  ((QRegion*)qthis)->translated(arg1,
-arg2);
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion12boundingRectEv(void *this_) {
+  /*return*/ ((QRegion*)this_)->boundingRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 94, column 13>
-//   // proto:  QRegion QRegion::intersected(const QRegion & r);
-// _ZNK7QRegion11intersectedERKS_ intersected(const class QRegion &)
+// /usr/include/qt/QtGui/qregion.h:112
+// QVector<QRect> rects()
 extern "C"
-QRegion*
-C_ZNK7QRegion11intersectedERKS_(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->intersected(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion5rectsEv(void *this_) {
+  /*return*/ ((QRegion*)this_)->rects();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 93, column 13>
-//   // proto:  QRegion QRegion::united(const QRect & r);
-// _ZNK7QRegion6unitedERK5QRect united(const class QRect &)
+// /usr/include/qt/QtGui/qregion.h:113
+// void setRects(const class QRect *, int)
 extern "C"
-QRegion*
-C_ZNK7QRegion6unitedERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->united(*((const QRect*)arg1));
-  return new QRegion(ret); // 5
+void C_ZN7QRegion8setRectsEPK5QRecti(void *this_, const QRect * rect, int num) {
+  ((QRegion*)this_)->setRects(rect, num);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 97, column 13>
-//   // proto:  QRegion QRegion::xored(const QRegion & r);
-// _ZNK7QRegion5xoredERKS_ xored(const class QRegion &)
+// /usr/include/qt/QtGui/qregion.h:114
+// int rectCount()
 extern "C"
-QRegion*
-C_ZNK7QRegion5xoredERKS_(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->xored(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK7QRegion9rectCountEv(void *this_) {
+  /*return*/ ((QRegion*)this_)->rectCount();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 71, column 5>
-//   // proto:  void QRegion::QRegion(QRegion && other);
-extern "C"
-QRegion*
-C_ZN7QRegionC2EOS_(QRegion* arg1) {
-  auto ret = new QRegion(*((QRegion*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 108, column 10>
-//   // proto:  bool QRegion::intersects(const QRegion & r);
-// _ZNK7QRegion10intersectsERKS_ intersects(const class QRegion &)
-extern "C"
-bool
-C_ZNK7QRegion10intersectsERKS_(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->intersects(*((const QRegion*)arg1));
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qregion.h', line 84, column 10>
-//   // proto:  bool QRegion::contains(const QPoint & p);
-// _ZNK7QRegion8containsERK6QPoint contains(const class QPoint &)
-extern "C"
-bool
-C_ZNK7QRegion8containsERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QRegion*)qthis)->contains(*((const QPoint*)arg1));
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

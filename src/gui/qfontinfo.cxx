@@ -1,252 +1,120 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qfontinfo.h
-// dst-file: /src/gui/qfontinfo.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qfontinfo.h
 #include <qfontinfo.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qglobal.h>
-#include <qfont.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qfontinfo_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 68, column 17>
-//   // proto:  bool QFontInfo::bold();
-if (true) {
-  auto f = [](QFontInfo flythis) {
-    ((QFontInfo*)0)->bold();
-    flythis.bold();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QFontInfo4boldEv bold()
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 58, column 10>
-//   // proto:  void QFontInfo::swap(QFontInfo & other);
-if (true) {
-  auto f = [](QFontInfo flythis, QFontInfo & arg1) {
-    ((QFontInfo*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QFontInfo4swapERS_ swap(class QFontInfo &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qfontinfo.h:52
+// void QFontInfo(const class QFont &)
 extern "C"
-int QFontInfo_Class_Size()
-{
-  return sizeof(QFontInfo);
+void* C_ZN9QFontInfoC1ERK5QFont(const QFont & a0) {
+  return new QFontInfo(a0);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 75, column 10>
-//   // proto:  bool QFontInfo::rawMode();
-// _ZNK9QFontInfo7rawModeEv rawMode()
+// /usr/include/qt/QtGui/qfontinfo.h:54
+// void ~QFontInfo()
 extern "C"
-bool
-C_ZNK9QFontInfo7rawModeEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->rawMode();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFontInfoD1Ev(void *this_) {
+  delete (QFontInfo*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 78, column 10>
-//   // proto:  bool QFontInfo::exactMatch();
-// _ZNK9QFontInfo10exactMatchEv exactMatch()
+// inline
+// /usr/include/qt/QtGui/qfontinfo.h:58
+// void swap(class QFontInfo &)
 extern "C"
-bool
-C_ZNK9QFontInfo10exactMatchEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->exactMatch();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo & other) {
+  ((QFontInfo*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 63, column 9>
-//   // proto:  int QFontInfo::pointSize();
-// _ZNK9QFontInfo9pointSizeEv pointSize()
+// /usr/include/qt/QtGui/qfontinfo.h:60
+// QString family()
 extern "C"
-int
-C_ZNK9QFontInfo9pointSizeEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->pointSize();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QFontInfo6familyEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->family();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 53, column 5>
-//   // proto:  void QFontInfo::QFontInfo(const QFontInfo & );
+// /usr/include/qt/QtGui/qfontinfo.h:61
+// QString styleName()
 extern "C"
-QFontInfo*
-C_ZN9QFontInfoC2ERKS_(const QFontInfo* arg1) {
-  auto ret = new QFontInfo(*((const QFontInfo*)arg1));
-  return ret;
+void C_ZNK9QFontInfo9styleNameEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->styleName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 60, column 13>
-//   // proto:  QString QFontInfo::family();
-// _ZNK9QFontInfo6familyEv family()
+// /usr/include/qt/QtGui/qfontinfo.h:62
+// int pixelSize()
 extern "C"
-QString*
-C_ZNK9QFontInfo6familyEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->family();
-  return new QString(ret); // 5
+void C_ZNK9QFontInfo9pixelSizeEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->pixelSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 68, column 17>
-//   // proto:  bool QFontInfo::bold();
-// _ZNK9QFontInfo4boldEv bold()
+// /usr/include/qt/QtGui/qfontinfo.h:63
+// int pointSize()
 extern "C"
-bool
-C_ZNK9QFontInfo4boldEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->bold();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo9pointSizeEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->pointSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 64, column 11>
-//   // proto:  qreal QFontInfo::pointSizeF();
-// _ZNK9QFontInfo10pointSizeFEv pointSizeF()
+// /usr/include/qt/QtGui/qfontinfo.h:64
+// qreal pointSizeF()
 extern "C"
-double
-C_ZNK9QFontInfo10pointSizeFEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->pointSizeF();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK9QFontInfo10pointSizeFEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->pointSizeF();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 66, column 18>
-//   // proto:  QFont::Style QFontInfo::style();
-// _ZNK9QFontInfo5styleEv style()
+// /usr/include/qt/QtGui/qfontinfo.h:65
+// bool italic()
 extern "C"
-QFont::Style
-C_ZNK9QFontInfo5styleEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->style();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QFontInfo6italicEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->italic();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 72, column 10>
-//   // proto:  bool QFontInfo::fixedPitch();
-// _ZNK9QFontInfo10fixedPitchEv fixedPitch()
+// /usr/include/qt/QtGui/qfontinfo.h:66
+// QFont::Style style()
 extern "C"
-bool
-C_ZNK9QFontInfo10fixedPitchEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->fixedPitch();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo5styleEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->style();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 70, column 10>
-//   // proto:  bool QFontInfo::overline();
-// _ZNK9QFontInfo8overlineEv overline()
+// /usr/include/qt/QtGui/qfontinfo.h:67
+// int weight()
 extern "C"
-bool
-C_ZNK9QFontInfo8overlineEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->overline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo6weightEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->weight();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 58, column 10>
-//   // proto:  void QFontInfo::swap(QFontInfo & other);
-// _ZN9QFontInfo4swapERS_ swap(class QFontInfo &)
+// inline
+// /usr/include/qt/QtGui/qfontinfo.h:68
+// bool bold()
 extern "C"
-void
-C_ZN9QFontInfo4swapERS_(void *qthis,
-QFontInfo* arg1) {
-  ((QFontInfo*)qthis)->swap(*((QFontInfo*)arg1));
+void C_ZNK9QFontInfo4boldEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->bold();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 52, column 5>
-//   // proto:  void QFontInfo::QFontInfo(const QFont & );
+// /usr/include/qt/QtGui/qfontinfo.h:69
+// bool underline()
 extern "C"
-QFontInfo*
-C_ZN9QFontInfoC2ERK5QFont(const QFont* arg1) {
-  auto ret = new QFontInfo(*((const QFont*)arg1));
-  return ret;
+void C_ZNK9QFontInfo9underlineEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->underline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 62, column 9>
-//   // proto:  int QFontInfo::pixelSize();
-// _ZNK9QFontInfo9pixelSizeEv pixelSize()
+// /usr/include/qt/QtGui/qfontinfo.h:70
+// bool overline()
 extern "C"
-int
-C_ZNK9QFontInfo9pixelSizeEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->pixelSize();
-  return ret; // 0 TypeKind.INT
+void C_ZNK9QFontInfo8overlineEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->overline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 73, column 22>
-//   // proto:  QFont::StyleHint QFontInfo::styleHint();
-// _ZNK9QFontInfo9styleHintEv styleHint()
+// /usr/include/qt/QtGui/qfontinfo.h:71
+// bool strikeOut()
 extern "C"
-QFont::StyleHint
-C_ZNK9QFontInfo9styleHintEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->styleHint();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QFontInfo9strikeOutEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->strikeOut();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 71, column 10>
-//   // proto:  bool QFontInfo::strikeOut();
-// _ZNK9QFontInfo9strikeOutEv strikeOut()
+// /usr/include/qt/QtGui/qfontinfo.h:72
+// bool fixedPitch()
 extern "C"
-bool
-C_ZNK9QFontInfo9strikeOutEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->strikeOut();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo10fixedPitchEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->fixedPitch();
 }
-//   // proto:  void QFontInfo::~QFontInfo();
+// /usr/include/qt/QtGui/qfontinfo.h:73
+// QFont::StyleHint styleHint()
 extern "C"
-void C_ZN9QFontInfoD2Ev(void *qthis) {
-  delete (QFontInfo*)qthis;
+void C_ZNK9QFontInfo9styleHintEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->styleHint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 65, column 10>
-//   // proto:  bool QFontInfo::italic();
-// _ZNK9QFontInfo6italicEv italic()
+// /usr/include/qt/QtGui/qfontinfo.h:75
+// bool rawMode()
 extern "C"
-bool
-C_ZNK9QFontInfo6italicEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->italic();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo7rawModeEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->rawMode();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 69, column 10>
-//   // proto:  bool QFontInfo::underline();
-// _ZNK9QFontInfo9underlineEv underline()
+// /usr/include/qt/QtGui/qfontinfo.h:78
+// bool exactMatch()
 extern "C"
-bool
-C_ZNK9QFontInfo9underlineEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->underline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QFontInfo10exactMatchEv(void *this_) {
+  /*return*/ ((QFontInfo*)this_)->exactMatch();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 61, column 13>
-//   // proto:  QString QFontInfo::styleName();
-// _ZNK9QFontInfo9styleNameEv styleName()
-extern "C"
-QString*
-C_ZNK9QFontInfo9styleNameEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->styleName();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qfontinfo.h', line 67, column 9>
-//   // proto:  int QFontInfo::weight();
-// _ZNK9QFontInfo6weightEv weight()
-extern "C"
-int
-C_ZNK9QFontInfo6weightEv(void *qthis) {
-  auto ret =
-  ((QFontInfo*)qthis)->weight();
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

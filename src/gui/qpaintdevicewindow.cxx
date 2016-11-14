@@ -1,93 +1,29 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qpaintdevicewindow.h
-// dst-file: /src/gui/qpaintdevicewindow.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qpaintdevicewindow.h
 #include <qpaintdevicewindow.h>
+#include <QtGui>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qpaintdevicewindow_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QPaintDeviceWindow_Class_Size()
-{
-  return sizeof(QPaintDeviceWindow);
+void C_ZNK18QPaintDeviceWindow10metaObjectEv(void *this_) {
+  /*return*/ ((QPaintDeviceWindow*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 58, column 10>
-//   // proto:  void QPaintDeviceWindow::update(const QRegion & region);
-// _ZN18QPaintDeviceWindow6updateERK7QRegion update(const class QRegion &)
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:57
+// void update(const class QRect &)
 extern "C"
-void
-C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  ((QPaintDeviceWindow*)qthis)->update(*((const QRegion*)arg1));
+void C_ZN18QPaintDeviceWindow6updateERK5QRect(void *this_, const QRect & rect) {
+  ((QPaintDeviceWindow*)this_)->update(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 65, column 10>
-//   // proto:  void QPaintDeviceWindow::update();
-// _ZN18QPaintDeviceWindow6updateEv update()
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:58
+// void update(const class QRegion &)
 extern "C"
-void
-C_ZN18QPaintDeviceWindow6updateEv(void *qthis) {
-  ((QPaintDeviceWindow*)qthis)->update();
+void C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *this_, const QRegion & region) {
+  ((QPaintDeviceWindow*)this_)->update(region);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 53, column 5>
-//   // proto:  const QMetaObject * QPaintDeviceWindow::metaObject();
-// _ZNK18QPaintDeviceWindow10metaObjectEv metaObject()
+// /usr/include/qt/QtGui/qpaintdevicewindow.h:65
+// void update()
 extern "C"
-void*
-C_ZNK18QPaintDeviceWindow10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QPaintDeviceWindow*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN18QPaintDeviceWindow6updateEv(void *this_) {
+  ((QPaintDeviceWindow*)this_)->update();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpaintdevicewindow.h', line 57, column 10>
-//   // proto:  void QPaintDeviceWindow::update(const QRect & rect);
-// _ZN18QPaintDeviceWindow6updateERK5QRect update(const class QRect &)
-extern "C"
-void
-C_ZN18QPaintDeviceWindow6updateERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QPaintDeviceWindow*)qthis)->update(*((const QRect*)arg1));
-}
-// <= ext block end
-
-// body block begin =>
-// QPaintDeviceWindow_SlotProxy here
-class QPaintDeviceWindow_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QPaintDeviceWindow_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/gui/qpaintdevicewindow.moc"
-
-extern "C" {
-  QPaintDeviceWindow_SlotProxy* QPaintDeviceWindow_SlotProxy_new()
-  {
-    return new QPaintDeviceWindow_SlotProxy();
-  }
-};
-
-// <= body block end
-

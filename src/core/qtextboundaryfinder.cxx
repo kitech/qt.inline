@@ -1,212 +1,96 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qtextboundaryfinder.h
-// dst-file: /src/core/qtextboundaryfinder.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qtextboundaryfinder.h
 #include <qtextboundaryfinder.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtextboundaryfinder_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 79, column 17>
-//   // proto:  bool QTextBoundaryFinder::isValid();
-if (true) {
-  auto f = [](QTextBoundaryFinder flythis) {
-    ((QTextBoundaryFinder*)0)->isValid();
-    flythis.isValid();
-  };
-  if (f == nullptr){}
-}
-// _ZNK19QTextBoundaryFinder7isValidEv isValid()
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 81, column 25>
-//   // proto:  QTextBoundaryFinder::BoundaryType QTextBoundaryFinder::type();
-if (true) {
-  auto f = [](QTextBoundaryFinder flythis) {
-    ((QTextBoundaryFinder*)0)->type();
-    flythis.type();
-  };
-  if (f == nullptr){}
-}
-// _ZNK19QTextBoundaryFinder4typeEv type()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:54
+// void QTextBoundaryFinder()
 extern "C"
-int QTextBoundaryFinder_Class_Size()
-{
-  return sizeof(QTextBoundaryFinder);
+void* C_ZN19QTextBoundaryFinderC1Ev() {
+  return new QTextBoundaryFinder();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 92, column 10>
-//   // proto:  bool QTextBoundaryFinder::isAtBoundary();
-// _ZNK19QTextBoundaryFinder12isAtBoundaryEv isAtBoundary()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:57
+// void ~QTextBoundaryFinder()
 extern "C"
-bool
-C_ZNK19QTextBoundaryFinder12isAtBoundaryEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->isAtBoundary();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN19QTextBoundaryFinderD1Ev(void *this_) {
+  delete (QTextBoundaryFinder*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 89, column 9>
-//   // proto:  int QTextBoundaryFinder::toNextBoundary();
-// _ZN19QTextBoundaryFinder14toNextBoundaryEv toNextBoundary()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:76
+// void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
 extern "C"
-int
-C_ZN19QTextBoundaryFinder14toNextBoundaryEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->toNextBoundary();
-  return ret; // 0 TypeKind.INT
+void* C_ZN19QTextBoundaryFinderC1ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type, const QString & string) {
+  return new QTextBoundaryFinder(type, string);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 93, column 21>
-//   // proto:  BoundaryReasons QTextBoundaryFinder::boundaryReasons();
-// _ZNK19QTextBoundaryFinder15boundaryReasonsEv boundaryReasons()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:77
+// void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QChar *, int, unsigned char *, int)
 extern "C"
-QFlags<QTextBoundaryFinder::BoundaryReason>*
-C_ZNK19QTextBoundaryFinder15boundaryReasonsEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->boundaryReasons();
-  return new QFlags<QTextBoundaryFinder::BoundaryReason>(ret); // 5
+void* C_ZN19QTextBoundaryFinderC1ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType type, const QChar * chars, int length, unsigned char * buffer, int bufferSize) {
+  return new QTextBoundaryFinder(type, chars, length, buffer, bufferSize);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 85, column 10>
-//   // proto:  void QTextBoundaryFinder::toEnd();
-// _ZN19QTextBoundaryFinder5toEndEv toEnd()
+// inline
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:79
+// bool isValid()
 extern "C"
-void
-C_ZN19QTextBoundaryFinder5toEndEv(void *qthis) {
-  ((QTextBoundaryFinder*)qthis)->toEnd();
+void C_ZNK19QTextBoundaryFinder7isValidEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 55, column 5>
-//   // proto:  void QTextBoundaryFinder::QTextBoundaryFinder(const QTextBoundaryFinder & other);
+// inline
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:81
+// QTextBoundaryFinder::BoundaryType type()
 extern "C"
-QTextBoundaryFinder*
-C_ZN19QTextBoundaryFinderC2ERKS_(const QTextBoundaryFinder* arg1) {
-  auto ret = new QTextBoundaryFinder(*((const QTextBoundaryFinder*)arg1));
-  return ret;
+void C_ZNK19QTextBoundaryFinder4typeEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->type();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 87, column 10>
-//   // proto:  void QTextBoundaryFinder::setPosition(int position);
-// _ZN19QTextBoundaryFinder11setPositionEi setPosition(int)
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:82
+// QString string()
 extern "C"
-void
-C_ZN19QTextBoundaryFinder11setPositionEi(void *qthis,
-int arg1) {
-  ((QTextBoundaryFinder*)qthis)->setPosition(arg1);
+void C_ZNK19QTextBoundaryFinder6stringEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->string();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 54, column 5>
-//   // proto:  void QTextBoundaryFinder::QTextBoundaryFinder();
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:84
+// void toStart()
 extern "C"
-QTextBoundaryFinder*
-C_ZN19QTextBoundaryFinderC2Ev() {
-  auto ret = new QTextBoundaryFinder();
-  return ret;
+void C_ZN19QTextBoundaryFinder7toStartEv(void *this_) {
+  ((QTextBoundaryFinder*)this_)->toStart();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 90, column 9>
-//   // proto:  int QTextBoundaryFinder::toPreviousBoundary();
-// _ZN19QTextBoundaryFinder18toPreviousBoundaryEv toPreviousBoundary()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:85
+// void toEnd()
 extern "C"
-int
-C_ZN19QTextBoundaryFinder18toPreviousBoundaryEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->toPreviousBoundary();
-  return ret; // 0 TypeKind.INT
+void C_ZN19QTextBoundaryFinder5toEndEv(void *this_) {
+  ((QTextBoundaryFinder*)this_)->toEnd();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 77, column 5>
-//   // proto:  void QTextBoundaryFinder::QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type, const QChar * chars, int length, unsigned char * buffer, int bufferSize);
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:86
+// int position()
 extern "C"
-QTextBoundaryFinder*
-C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi(QTextBoundaryFinder::BoundaryType arg1,
-const QChar * arg2,
-int arg3,
-unsigned char * arg4,
-int arg5) {
-  auto ret = new QTextBoundaryFinder(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
-  return ret;
+void C_ZNK19QTextBoundaryFinder8positionEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->position();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 79, column 17>
-//   // proto:  bool QTextBoundaryFinder::isValid();
-// _ZNK19QTextBoundaryFinder7isValidEv isValid()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:87
+// void setPosition(int)
 extern "C"
-bool
-C_ZNK19QTextBoundaryFinder7isValidEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN19QTextBoundaryFinder11setPositionEi(void *this_, int position) {
+  ((QTextBoundaryFinder*)this_)->setPosition(position);
 }
-//   // proto:  void QTextBoundaryFinder::~QTextBoundaryFinder();
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:89
+// int toNextBoundary()
 extern "C"
-void C_ZN19QTextBoundaryFinderD2Ev(void *qthis) {
-  delete (QTextBoundaryFinder*)qthis;
+void C_ZN19QTextBoundaryFinder14toNextBoundaryEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->toNextBoundary();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 82, column 13>
-//   // proto:  QString QTextBoundaryFinder::string();
-// _ZNK19QTextBoundaryFinder6stringEv string()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:90
+// int toPreviousBoundary()
 extern "C"
-QString*
-C_ZNK19QTextBoundaryFinder6stringEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->string();
-  return new QString(ret); // 5
+void C_ZN19QTextBoundaryFinder18toPreviousBoundaryEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->toPreviousBoundary();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 81, column 25>
-//   // proto:  QTextBoundaryFinder::BoundaryType QTextBoundaryFinder::type();
-// _ZNK19QTextBoundaryFinder4typeEv type()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:92
+// bool isAtBoundary()
 extern "C"
-QTextBoundaryFinder::BoundaryType
-C_ZNK19QTextBoundaryFinder4typeEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->type();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK19QTextBoundaryFinder12isAtBoundaryEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->isAtBoundary();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 84, column 10>
-//   // proto:  void QTextBoundaryFinder::toStart();
-// _ZN19QTextBoundaryFinder7toStartEv toStart()
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:93
+// BoundaryReasons boundaryReasons()
 extern "C"
-void
-C_ZN19QTextBoundaryFinder7toStartEv(void *qthis) {
-  ((QTextBoundaryFinder*)qthis)->toStart();
+void C_ZNK19QTextBoundaryFinder15boundaryReasonsEv(void *this_) {
+  /*return*/ ((QTextBoundaryFinder*)this_)->boundaryReasons();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 86, column 9>
-//   // proto:  int QTextBoundaryFinder::position();
-// _ZNK19QTextBoundaryFinder8positionEv position()
-extern "C"
-int
-C_ZNK19QTextBoundaryFinder8positionEv(void *qthis) {
-  auto ret =
-  ((QTextBoundaryFinder*)qthis)->position();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qtextboundaryfinder.h', line 76, column 5>
-//   // proto:  void QTextBoundaryFinder::QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type, const QString & string);
-extern "C"
-QTextBoundaryFinder*
-C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType arg1,
-const QString* arg2) {
-  auto ret = new QTextBoundaryFinder(arg1,
-*((const QString*)arg2));
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

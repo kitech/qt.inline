@@ -1,100 +1,38 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qsizegrip.h
-// dst-file: /src/widgets/qsizegrip.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qsizegrip.h
 #include <qsizegrip.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsizegrip_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qsizegrip.h:52
+// const QMetaObject * metaObject()
 extern "C"
-int QSizeGrip_Class_Size()
-{
-  return sizeof(QSizeGrip);
+void C_ZNK9QSizeGrip10metaObjectEv(void *this_) {
+  /*return*/ ((QSizeGrip*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 54, column 14>
-//   // proto:  void QSizeGrip::QSizeGrip(QWidget * parent);
+// /usr/include/qt/QtWidgets/qsizegrip.h:54
+// void QSizeGrip(class QWidget *)
 extern "C"
-QSizeGrip*
-C_ZN9QSizeGripC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QSizeGrip(arg1);
-  return ret;
+void* C_ZN9QSizeGripC1EP7QWidget(QWidget * parent) {
+  return new QSizeGrip(parent);
 }
-//   // proto:  void QSizeGrip::~QSizeGrip();
+// virtual
+// /usr/include/qt/QtWidgets/qsizegrip.h:55
+// void ~QSizeGrip()
 extern "C"
-void C_ZN9QSizeGripD2Ev(void *qthis) {
-  delete (QSizeGrip*)qthis;
+void C_ZN9QSizeGripD1Ev(void *this_) {
+  delete (QSizeGrip*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 58, column 10>
-//   // proto:  void QSizeGrip::setVisible(bool );
-// _ZN9QSizeGrip10setVisibleEb setVisible(_Bool)
+// virtual
+// /usr/include/qt/QtWidgets/qsizegrip.h:57
+// QSize sizeHint()
 extern "C"
-void
-C_ZN9QSizeGrip10setVisibleEb(void *qthis,
-bool arg1) {
-  ((QSizeGrip*)qthis)->setVisible(arg1);
+void C_ZNK9QSizeGrip8sizeHintEv(void *this_) {
+  /*return*/ ((QSizeGrip*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 52, column 5>
-//   // proto:  const QMetaObject * QSizeGrip::metaObject();
-// _ZNK9QSizeGrip10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qsizegrip.h:58
+// void setVisible(_Bool)
 extern "C"
-void*
-C_ZNK9QSizeGrip10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSizeGrip*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN9QSizeGrip10setVisibleEb(void *this_, bool a0) {
+  ((QSizeGrip*)this_)->setVisible(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qsizegrip.h', line 57, column 11>
-//   // proto:  QSize QSizeGrip::sizeHint();
-// _ZNK9QSizeGrip8sizeHintEv sizeHint()
-extern "C"
-QSize*
-C_ZNK9QSizeGrip8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QSizeGrip*)qthis)->sizeHint();
-  return new QSize(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// QSizeGrip_SlotProxy here
-class QSizeGrip_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSizeGrip_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qsizegrip.moc"
-
-extern "C" {
-  QSizeGrip_SlotProxy* QSizeGrip_SlotProxy_new()
-  {
-    return new QSizeGrip_SlotProxy();
-  }
-};
-
-// <= body block end
-

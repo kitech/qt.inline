@@ -1,111 +1,44 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qradiobutton.h
-// dst-file: /src/widgets/qradiobutton.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qradiobutton.h
 #include <qradiobutton.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qradiobutton_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qradiobutton.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QRadioButton_Class_Size()
-{
-  return sizeof(QRadioButton);
+void C_ZNK12QRadioButton10metaObjectEv(void *this_) {
+  /*return*/ ((QRadioButton*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 53, column 5>
-//   // proto:  const QMetaObject * QRadioButton::metaObject();
-// _ZNK12QRadioButton10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qradiobutton.h:56
+// void QRadioButton(class QWidget *)
 extern "C"
-void*
-C_ZNK12QRadioButton10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QRadioButton*)qthis)->metaObject();
-  return (void*)ret;
+void* C_ZN12QRadioButtonC1EP7QWidget(QWidget * parent) {
+  return new QRadioButton(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 56, column 14>
-//   // proto:  void QRadioButton::QRadioButton(QWidget * parent);
+// /usr/include/qt/QtWidgets/qradiobutton.h:57
+// void QRadioButton(const class QString &, class QWidget *)
 extern "C"
-QRadioButton*
-C_ZN12QRadioButtonC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QRadioButton(arg1);
-  return ret;
+void* C_ZN12QRadioButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  return new QRadioButton(text, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 60, column 11>
-//   // proto:  QSize QRadioButton::sizeHint();
-// _ZNK12QRadioButton8sizeHintEv sizeHint()
+// virtual
+// /usr/include/qt/QtWidgets/qradiobutton.h:58
+// void ~QRadioButton()
 extern "C"
-QSize*
-C_ZNK12QRadioButton8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QRadioButton*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN12QRadioButtonD1Ev(void *this_) {
+  delete (QRadioButton*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 61, column 11>
-//   // proto:  QSize QRadioButton::minimumSizeHint();
-// _ZNK12QRadioButton15minimumSizeHintEv minimumSizeHint()
+// virtual
+// /usr/include/qt/QtWidgets/qradiobutton.h:60
+// QSize sizeHint()
 extern "C"
-QSize*
-C_ZNK12QRadioButton15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QRadioButton*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
+void C_ZNK12QRadioButton8sizeHintEv(void *this_) {
+  /*return*/ ((QRadioButton*)this_)->sizeHint();
 }
-//   // proto:  void QRadioButton::~QRadioButton();
+// virtual
+// /usr/include/qt/QtWidgets/qradiobutton.h:61
+// QSize minimumSizeHint()
 extern "C"
-void C_ZN12QRadioButtonD2Ev(void *qthis) {
-  delete (QRadioButton*)qthis;
+void C_ZNK12QRadioButton15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QRadioButton*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qradiobutton.h', line 57, column 14>
-//   // proto:  void QRadioButton::QRadioButton(const QString & text, QWidget * parent);
-extern "C"
-QRadioButton*
-C_ZN12QRadioButtonC2ERK7QStringP7QWidget(const QString* arg1,
-QWidget * arg2) {
-  auto ret = new QRadioButton(*((const QString*)arg1),
-arg2);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QRadioButton_SlotProxy here
-class QRadioButton_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QRadioButton_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qradiobutton.moc"
-
-extern "C" {
-  QRadioButton_SlotProxy* QRadioButton_SlotProxy_new()
-  {
-    return new QRadioButton_SlotProxy();
-  }
-};
-
-// <= body block end
-

@@ -1,350 +1,158 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qdialog.h
-// dst-file: /src/widgets/qdialog.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qdialog.h
 #include <qdialog.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qdialog_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QDialog_Class_Size()
-{
-  return sizeof(QDialog);
+void C_ZNK7QDialog10metaObjectEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 72, column 10>
-//   // proto:  void QDialog::setExtension(QWidget * extension);
-// _ZN7QDialog12setExtensionEP7QWidget setExtension(class QWidget *)
+// /usr/include/qt/QtWidgets/qdialog.h:60
+// void QDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
-void
-C_ZN7QDialog12setExtensionEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QDialog*)qthis)->setExtension(arg1);
+void* C_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  return new QDialog(parent, f);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 65, column 9>
-//   // proto:  int QDialog::result();
-// _ZNK7QDialog6resultEv result()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:61
+// void ~QDialog()
 extern "C"
-int
-C_ZNK7QDialog6resultEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->result();
-  return ret; // 0 TypeKind.INT
+void C_ZN7QDialogD1Ev(void *this_) {
+  delete (QDialog*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 85, column 10>
-//   // proto:  void QDialog::finished(int result);
-// _ZN7QDialog8finishedEi finished(int)
+// /usr/include/qt/QtWidgets/qdialog.h:65
+// int result()
 extern "C"
-void
-C_ZN7QDialog8finishedEi(void *qthis,
-int arg1) {
-  ((QDialog*)qthis)->finished(arg1);
+void C_ZNK7QDialog6resultEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->result();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 92, column 18>
-//   // proto:  void QDialog::done(int );
-// _ZN7QDialog4doneEi done(int)
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:67
+// void setVisible(_Bool)
 extern "C"
-void
-C_ZN7QDialog4doneEi(void *qthis,
-int arg1) {
-  ((QDialog*)qthis)->done(arg1);
+void C_ZN7QDialog10setVisibleEb(void *this_, bool visible) {
+  ((QDialog*)this_)->setVisible(visible);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 90, column 18>
-//   // proto:  void QDialog::open();
-// _ZN7QDialog4openEv open()
+// /usr/include/qt/QtWidgets/qdialog.h:69
+// void setOrientation(Qt::Orientation)
 extern "C"
-void
-C_ZN7QDialog4openEv(void *qthis) {
-  ((QDialog*)qthis)->open();
+void C_ZN7QDialog14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
+  ((QDialog*)this_)->setOrientation(orientation);
 }
-//   // proto:  void QDialog::~QDialog();
+// /usr/include/qt/QtWidgets/qdialog.h:70
+// Qt::Orientation orientation()
 extern "C"
-void C_ZN7QDialogD2Ev(void *qthis) {
-  delete (QDialog*)qthis;
+void C_ZNK7QDialog11orientationEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 82, column 10>
-//   // proto:  void QDialog::setResult(int r);
-// _ZN7QDialog9setResultEi setResult(int)
+// /usr/include/qt/QtWidgets/qdialog.h:72
+// void setExtension(class QWidget *)
 extern "C"
-void
-C_ZN7QDialog9setResultEi(void *qthis,
-int arg1) {
-  ((QDialog*)qthis)->setResult(arg1);
+void C_ZN7QDialog12setExtensionEP7QWidget(void *this_, QWidget * extension) {
+  ((QDialog*)this_)->setExtension(extension);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 78, column 10>
-//   // proto:  void QDialog::setSizeGripEnabled(bool );
-// _ZN7QDialog18setSizeGripEnabledEb setSizeGripEnabled(_Bool)
+// /usr/include/qt/QtWidgets/qdialog.h:73
+// QWidget * extension()
 extern "C"
-void
-C_ZN7QDialog18setSizeGripEnabledEb(void *qthis,
-bool arg1) {
-  ((QDialog*)qthis)->setSizeGripEnabled(arg1);
+void C_ZNK7QDialog9extensionEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->extension();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 96, column 10>
-//   // proto:  void QDialog::showExtension(bool );
-// _ZN7QDialog13showExtensionEb showExtension(_Bool)
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:75
+// QSize sizeHint()
 extern "C"
-void
-C_ZN7QDialog13showExtensionEb(void *qthis,
-bool arg1) {
-  ((QDialog*)qthis)->showExtension(arg1);
+void C_ZNK7QDialog8sizeHintEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 53, column 5>
-//   // proto:  const QMetaObject * QDialog::metaObject();
-// _ZNK7QDialog10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:76
+// QSize minimumSizeHint()
 extern "C"
-void*
-C_ZNK7QDialog10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK7QDialog15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 60, column 14>
-//   // proto:  void QDialog::QDialog(QWidget * parent, Qt::WindowFlags f);
+// /usr/include/qt/QtWidgets/qdialog.h:78
+// void setSizeGripEnabled(_Bool)
 extern "C"
-QDialog*
-C_ZN7QDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
-Qt::WindowFlags* arg2) {
-  auto ret = new QDialog(arg1,
-*((Qt::WindowFlags*)arg2));
-  return ret;
+void C_ZN7QDialog18setSizeGripEnabledEb(void *this_, bool a0) {
+  ((QDialog*)this_)->setSizeGripEnabled(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 76, column 11>
-//   // proto:  QSize QDialog::minimumSizeHint();
-// _ZNK7QDialog15minimumSizeHintEv minimumSizeHint()
+// /usr/include/qt/QtWidgets/qdialog.h:79
+// bool isSizeGripEnabled()
 extern "C"
-QSize*
-C_ZNK7QDialog15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
+void C_ZNK7QDialog17isSizeGripEnabledEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->isSizeGripEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 75, column 11>
-//   // proto:  QSize QDialog::sizeHint();
-// _ZNK7QDialog8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qdialog.h:81
+// void setModal(_Bool)
 extern "C"
-QSize*
-C_ZNK7QDialog8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN7QDialog8setModalEb(void *this_, bool modal) {
+  ((QDialog*)this_)->setModal(modal);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 93, column 18>
-//   // proto:  void QDialog::accept();
-// _ZN7QDialog6acceptEv accept()
+// /usr/include/qt/QtWidgets/qdialog.h:82
+// void setResult(int)
 extern "C"
-void
-C_ZN7QDialog6acceptEv(void *qthis) {
-  ((QDialog*)qthis)->accept();
+void C_ZN7QDialog9setResultEi(void *this_, int r) {
+  ((QDialog*)this_)->setResult(r);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 67, column 10>
-//   // proto:  void QDialog::setVisible(bool visible);
-// _ZN7QDialog10setVisibleEb setVisible(_Bool)
+// /usr/include/qt/QtWidgets/qdialog.h:85
+// void finished(int)
 extern "C"
-void
-C_ZN7QDialog10setVisibleEb(void *qthis,
-bool arg1) {
-  ((QDialog*)qthis)->setVisible(arg1);
+void C_ZN7QDialog8finishedEi(void *this_, int result) {
+  ((QDialog*)this_)->finished(result);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 73, column 14>
-//   // proto:  QWidget * QDialog::extension();
-// _ZNK7QDialog9extensionEv extension()
+// /usr/include/qt/QtWidgets/qdialog.h:86
+// void accepted()
 extern "C"
-void*
-C_ZNK7QDialog9extensionEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->extension();
-  return (void*)ret;
+void C_ZN7QDialog8acceptedEv(void *this_) {
+  ((QDialog*)this_)->accepted();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 91, column 17>
-//   // proto:  int QDialog::exec();
-// _ZN7QDialog4execEv exec()
+// /usr/include/qt/QtWidgets/qdialog.h:87
+// void rejected()
 extern "C"
-int
-C_ZN7QDialog4execEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->exec();
-  return ret; // 0 TypeKind.INT
+void C_ZN7QDialog8rejectedEv(void *this_) {
+  ((QDialog*)this_)->rejected();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 94, column 18>
-//   // proto:  void QDialog::reject();
-// _ZN7QDialog6rejectEv reject()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:90
+// void open()
 extern "C"
-void
-C_ZN7QDialog6rejectEv(void *qthis) {
-  ((QDialog*)qthis)->reject();
+void C_ZN7QDialog4openEv(void *this_) {
+  ((QDialog*)this_)->open();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 69, column 10>
-//   // proto:  void QDialog::setOrientation(Qt::Orientation orientation);
-// _ZN7QDialog14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:91
+// int exec()
 extern "C"
-void
-C_ZN7QDialog14setOrientationEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QDialog*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
+void C_ZN7QDialog4execEv(void *this_) {
+  /*return*/ ((QDialog*)this_)->exec();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 86, column 10>
-//   // proto:  void QDialog::accepted();
-// _ZN7QDialog8acceptedEv accepted()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:92
+// void done(int)
 extern "C"
-void
-C_ZN7QDialog8acceptedEv(void *qthis) {
-  ((QDialog*)qthis)->accepted();
+void C_ZN7QDialog4doneEi(void *this_, int a0) {
+  ((QDialog*)this_)->done(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 79, column 10>
-//   // proto:  bool QDialog::isSizeGripEnabled();
-// _ZNK7QDialog17isSizeGripEnabledEv isSizeGripEnabled()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:93
+// void accept()
 extern "C"
-bool
-C_ZNK7QDialog17isSizeGripEnabledEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->isSizeGripEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QDialog6acceptEv(void *this_) {
+  ((QDialog*)this_)->accept();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 87, column 10>
-//   // proto:  void QDialog::rejected();
-// _ZN7QDialog8rejectedEv rejected()
+// virtual
+// /usr/include/qt/QtWidgets/qdialog.h:94
+// void reject()
 extern "C"
-void
-C_ZN7QDialog8rejectedEv(void *qthis) {
-  ((QDialog*)qthis)->rejected();
+void C_ZN7QDialog6rejectEv(void *this_) {
+  ((QDialog*)this_)->reject();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 81, column 10>
-//   // proto:  void QDialog::setModal(bool modal);
-// _ZN7QDialog8setModalEb setModal(_Bool)
+// /usr/include/qt/QtWidgets/qdialog.h:96
+// void showExtension(_Bool)
 extern "C"
-void
-C_ZN7QDialog8setModalEb(void *qthis,
-bool arg1) {
-  ((QDialog*)qthis)->setModal(arg1);
+void C_ZN7QDialog13showExtensionEb(void *this_, bool a0) {
+  ((QDialog*)this_)->showExtension(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qdialog.h', line 70, column 21>
-//   // proto:  Qt::Orientation QDialog::orientation();
-// _ZNK7QDialog11orientationEv orientation()
-extern "C"
-Qt::Orientation
-C_ZNK7QDialog11orientationEv(void *qthis) {
-  auto ret =
-  ((QDialog*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
-}
-// <= ext block end
-
-// body block begin =>
-// QDialog_SlotProxy here
-class QDialog_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QDialog_SlotProxy():QObject(){}
-
-public slots:
-  // rejected()
-  void slot_proxy_func__ZN7QDialog8rejectedEv();
-public:
-  void (*slot_func__ZN7QDialog8rejectedEv)(void* rsfptr) = NULL;
-public slots:
-  // finished(int)
-  void slot_proxy_func__ZN7QDialog8finishedEi(int arg0);
-public:
-  void (*slot_func__ZN7QDialog8finishedEi)(void* rsfptr, int arg0) = NULL;
-public slots:
-  // accepted()
-  void slot_proxy_func__ZN7QDialog8acceptedEv();
-public:
-  void (*slot_func__ZN7QDialog8acceptedEv)(void* rsfptr) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qdialog.moc"
-
-extern "C" {
-  QDialog_SlotProxy* QDialog_SlotProxy_new()
-  {
-    return new QDialog_SlotProxy();
-  }
-};
-
-void QDialog_SlotProxy::slot_proxy_func__ZN7QDialog8rejectedEv() {
-  if (this->slot_func__ZN7QDialog8rejectedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN7QDialog8rejectedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QDialog_SlotProxy_connect__ZN7QDialog8rejectedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QDialog_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QDialog8rejectedEv = (decltype(that->slot_func__ZN7QDialog8rejectedEv))ffifptr;
-  QObject::connect((QDialog*)sender, SIGNAL(rejected()), that, SLOT(slot_proxy_func__ZN7QDialog8rejectedEv()));
-  return that;
-}
-extern "C"
-void QDialog_SlotProxy_disconnect__ZN7QDialog8rejectedEv(QDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QDialog_SlotProxy::slot_proxy_func__ZN7QDialog8finishedEi(int arg0) {
-  if (this->slot_func__ZN7QDialog8finishedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QDialog8finishedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QDialog_SlotProxy_connect__ZN7QDialog8finishedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QDialog_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QDialog8finishedEi = (decltype(that->slot_func__ZN7QDialog8finishedEi))ffifptr;
-  QObject::connect((QDialog*)sender, SIGNAL(finished(int)), that, SLOT(slot_proxy_func__ZN7QDialog8finishedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QDialog_SlotProxy_disconnect__ZN7QDialog8finishedEi(QDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QDialog_SlotProxy::slot_proxy_func__ZN7QDialog8acceptedEv() {
-  if (this->slot_func__ZN7QDialog8acceptedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN7QDialog8acceptedEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QDialog_SlotProxy_connect__ZN7QDialog8acceptedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QDialog_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QDialog8acceptedEv = (decltype(that->slot_func__ZN7QDialog8acceptedEv))ffifptr;
-  QObject::connect((QDialog*)sender, SIGNAL(accepted()), that, SLOT(slot_proxy_func__ZN7QDialog8acceptedEv()));
-  return that;
-}
-extern "C"
-void QDialog_SlotProxy_disconnect__ZN7QDialog8acceptedEv(QDialog_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

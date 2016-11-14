@@ -1,131 +1,54 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qeventtransition.h
-// dst-file: /src/core/qeventtransition.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qeventtransition.h
 #include <qeventtransition.h>
+#include <QtCore>
 
-
-#include <qcoreevent.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qeventtransition_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qeventtransition.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QEventTransition_Class_Size()
-{
-  return sizeof(QEventTransition);
+void C_ZNK16QEventTransition10metaObjectEv(void *this_) {
+  /*return*/ ((QEventTransition*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QEventTransition::~QEventTransition();
+// /usr/include/qt/QtCore/qeventtransition.h:58
+// void QEventTransition(class QState *)
 extern "C"
-void C_ZN16QEventTransitionD2Ev(void *qthis) {
-  delete (QEventTransition*)qthis;
+void* C_ZN16QEventTransitionC1EP6QState(QState * sourceState) {
+  return new QEventTransition(sourceState);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 63, column 10>
-//   // proto:  void QEventTransition::setEventSource(QObject * object);
-// _ZN16QEventTransition14setEventSourceEP7QObject setEventSource(class QObject *)
+// /usr/include/qt/QtCore/qeventtransition.h:59
+// void QEventTransition(class QObject *, class QEvent::Type, class QState *)
 extern "C"
-void
-C_ZN16QEventTransition14setEventSourceEP7QObject(void *qthis,
-QObject * arg1) {
-  ((QEventTransition*)qthis)->setEventSource(arg1);
+void* C_ZN16QEventTransitionC1EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState) {
+  return new QEventTransition(object, type, sourceState);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 59, column 5>
-//   // proto:  void QEventTransition::QEventTransition(QObject * object, QEvent::Type type, QState * sourceState);
+// virtual
+// /usr/include/qt/QtCore/qeventtransition.h:60
+// void ~QEventTransition()
 extern "C"
-QEventTransition*
-C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * arg1,
-QEvent::Type* arg2,
-QState * arg3) {
-  auto ret = new QEventTransition(arg1,
-*((QEvent::Type*)arg2),
-arg3);
-  return ret;
+void C_ZN16QEventTransitionD1Ev(void *this_) {
+  delete (QEventTransition*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 65, column 18>
-//   // proto:  QEvent::Type QEventTransition::eventType();
-// _ZNK16QEventTransition9eventTypeEv eventType()
+// /usr/include/qt/QtCore/qeventtransition.h:62
+// QObject * eventSource()
 extern "C"
-QEvent::Type
-C_ZNK16QEventTransition9eventTypeEv(void *qthis) {
-  auto ret =
-  ((QEventTransition*)qthis)->eventType();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK16QEventTransition11eventSourceEv(void *this_) {
+  /*return*/ ((QEventTransition*)this_)->eventSource();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 58, column 5>
-//   // proto:  void QEventTransition::QEventTransition(QState * sourceState);
+// /usr/include/qt/QtCore/qeventtransition.h:63
+// void setEventSource(class QObject *)
 extern "C"
-QEventTransition*
-C_ZN16QEventTransitionC2EP6QState(QState * arg1) {
-  auto ret = new QEventTransition(arg1);
-  return ret;
+void C_ZN16QEventTransition14setEventSourceEP7QObject(void *this_, QObject * object) {
+  ((QEventTransition*)this_)->setEventSource(object);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 54, column 5>
-//   // proto:  const QMetaObject * QEventTransition::metaObject();
-// _ZNK16QEventTransition10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qeventtransition.h:65
+// QEvent::Type eventType()
 extern "C"
-void*
-C_ZNK16QEventTransition10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QEventTransition*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK16QEventTransition9eventTypeEv(void *this_) {
+  /*return*/ ((QEventTransition*)this_)->eventType();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 66, column 10>
-//   // proto:  void QEventTransition::setEventType(QEvent::Type type);
-// _ZN16QEventTransition12setEventTypeEN6QEvent4TypeE setEventType(class QEvent::Type)
+// /usr/include/qt/QtCore/qeventtransition.h:66
+// void setEventType(class QEvent::Type)
 extern "C"
-void
-C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *qthis,
-QEvent::Type* arg1) {
-  ((QEventTransition*)qthis)->setEventType(*((QEvent::Type*)arg1));
+void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type) {
+  ((QEventTransition*)this_)->setEventType(type);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qeventtransition.h', line 62, column 14>
-//   // proto:  QObject * QEventTransition::eventSource();
-// _ZNK16QEventTransition11eventSourceEv eventSource()
-extern "C"
-void*
-C_ZNK16QEventTransition11eventSourceEv(void *qthis) {
-  auto ret =
-  ((QEventTransition*)qthis)->eventSource();
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QEventTransition_SlotProxy here
-class QEventTransition_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QEventTransition_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qeventtransition.moc"
-
-extern "C" {
-  QEventTransition_SlotProxy* QEventTransition_SlotProxy_new()
-  {
-    return new QEventTransition_SlotProxy();
-  }
-};
-
-// <= body block end
-

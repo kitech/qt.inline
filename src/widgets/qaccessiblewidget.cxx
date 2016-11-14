@@ -1,243 +1,136 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qaccessiblewidget.h
-// dst-file: /src/widgets/qaccessiblewidget.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h
 #include <qaccessiblewidget.h>
+#include <QtWidgets>
 
-
-#include <qrect.h>
-#include <qcolor.h>
-#include <qstring.h>
-#include <qaccessible.h>
-#include <qstringlist.h>
-#include <qvector.h>
-#include <qregion.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qaccessiblewidget_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:55
+// void QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)
 extern "C"
-int QAccessibleWidget_Class_Size()
-{
-  return sizeof(QAccessibleWidget);
+void* C_ZN17QAccessibleWidgetC1EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * o, QAccessible::Role r, const QString & name) {
+  return new QAccessibleWidget(o, r, name);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 59, column 9>
-//   // proto:  int QAccessibleWidget::childCount();
-// _ZNK17QAccessibleWidget10childCountEv childCount()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:56
+// bool isValid()
 extern "C"
-int
-C_ZNK17QAccessibleWidget10childCountEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->childCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK17QAccessibleWidget7isValidEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 55, column 14>
-//   // proto:  void QAccessibleWidget::QAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name);
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:58
+// QWindow * window()
 extern "C"
-QAccessibleWidget*
-C_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString(QWidget * arg1,
-QAccessible::Role* arg2,
-const QString* arg3) {
-  auto ret = new QAccessibleWidget(arg1,
-*((QAccessible::Role*)arg2),
-*((const QString*)arg3));
-  return ret;
+void C_ZNK17QAccessibleWidget6windowEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->window();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 67, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleWidget::child(int index);
-// _ZNK17QAccessibleWidget5childEi child(int)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:59
+// int childCount()
 extern "C"
-void*
-C_ZNK17QAccessibleWidget5childEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->child(arg1);
-  return (void*)ret;
+void C_ZNK17QAccessibleWidget10childCountEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->childCount();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 58, column 14>
-//   // proto:  QWindow * QAccessibleWidget::window();
-// _ZNK17QAccessibleWidget6windowEv window()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:60
+// int indexOfChild(const class QAccessibleInterface *)
 extern "C"
-void*
-C_ZNK17QAccessibleWidget6windowEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->window();
-  return (void*)ret;
+void C_ZNK17QAccessibleWidget12indexOfChildEPK20QAccessibleInterface(void *this_, const QAccessibleInterface * child) {
+  /*return*/ ((QAccessibleWidget*)this_)->indexOfChild(child);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 64, column 11>
-//   // proto:  QRect QAccessibleWidget::rect();
-// _ZNK17QAccessibleWidget4rectEv rect()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:61
+// QVector<QPair<QAccessibleInterface *, QAccessible::Relation> > relations(class QAccessible::Relation)
 extern "C"
-QRect*
-C_ZNK17QAccessibleWidget4rectEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->rect();
-  return new QRect(ret); // 5
+void C_ZNK17QAccessibleWidget9relationsE6QFlagsIN11QAccessible12RelationFlagEE(void *this_, QFlags<QAccessible::RelationFlag> match) {
+  /*return*/ ((QAccessibleWidget*)this_)->relations(match);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 73, column 12>
-//   // proto:  QColor QAccessibleWidget::foregroundColor();
-// _ZNK17QAccessibleWidget15foregroundColorEv foregroundColor()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:62
+// QAccessibleInterface * focusChild()
 extern "C"
-QColor*
-C_ZNK17QAccessibleWidget15foregroundColorEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->foregroundColor();
-  return new QColor(ret); // 5
+void C_ZNK17QAccessibleWidget10focusChildEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->focusChild();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 69, column 13>
-//   // proto:  QString QAccessibleWidget::text(QAccessible::Text t);
-// _ZNK17QAccessibleWidget4textEN11QAccessible4TextE text(class QAccessible::Text)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:64
+// QRect rect()
 extern "C"
-QString*
-C_ZNK17QAccessibleWidget4textEN11QAccessible4TextE(void *qthis,
-QAccessible::Text* arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->text(*((QAccessible::Text*)arg1));
-  return new QString(ret); // 5
+void C_ZNK17QAccessibleWidget4rectEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->rect();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 56, column 10>
-//   // proto:  bool QAccessibleWidget::isValid();
-// _ZNK17QAccessibleWidget7isValidEv isValid()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:66
+// QAccessibleInterface * parent()
 extern "C"
-bool
-C_ZNK17QAccessibleWidget7isValidEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK17QAccessibleWidget6parentEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->parent();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 62, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleWidget::focusChild();
-// _ZNK17QAccessibleWidget10focusChildEv focusChild()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:67
+// QAccessibleInterface * child(int)
 extern "C"
-void*
-C_ZNK17QAccessibleWidget10focusChildEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->focusChild();
-  return (void*)ret;
+void C_ZNK17QAccessibleWidget5childEi(void *this_, int index) {
+  /*return*/ ((QAccessibleWidget*)this_)->child(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 71, column 24>
-//   // proto:  QAccessible::State QAccessibleWidget::state();
-// _ZNK17QAccessibleWidget5stateEv state()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:69
+// QString text(class QAccessible::Text)
 extern "C"
-QAccessible::State*
-C_ZNK17QAccessibleWidget5stateEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->state();
-  return new QAccessible::State(ret); // 5
+void C_ZNK17QAccessibleWidget4textEN11QAccessible4TextE(void *this_, QAccessible::Text t) {
+  /*return*/ ((QAccessibleWidget*)this_)->text(t);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 74, column 12>
-//   // proto:  QColor QAccessibleWidget::backgroundColor();
-// _ZNK17QAccessibleWidget15backgroundColorEv backgroundColor()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:70
+// QAccessible::Role role()
 extern "C"
-QColor*
-C_ZNK17QAccessibleWidget15backgroundColorEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->backgroundColor();
-  return new QColor(ret); // 5
+void C_ZNK17QAccessibleWidget4roleEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->role();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 79, column 17>
-//   // proto:  QStringList QAccessibleWidget::actionNames();
-// _ZNK17QAccessibleWidget11actionNamesEv actionNames()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:71
+// QAccessible::State state()
 extern "C"
-QStringList*
-C_ZNK17QAccessibleWidget11actionNamesEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->actionNames();
-  return new QStringList(ret); // 5
+void C_ZNK17QAccessibleWidget5stateEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->state();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 61, column 67>
-//   // proto:  QVector<QPair<QAccessibleInterface *, QAccessible::Relation> > QAccessibleWidget::relations(QAccessible::Relation match);
-// _ZNK17QAccessibleWidget9relationsE6QFlagsIN11QAccessible12RelationFlagEE relations(class QAccessible::Relation)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:73
+// QColor foregroundColor()
 extern "C"
-QVector<QPair<QAccessibleInterface *, QFlags<QAccessible::RelationFlag> > >*
-C_ZNK17QAccessibleWidget9relationsE6QFlagsIN11QAccessible12RelationFlagEE(void *qthis,
-QAccessible::Relation* arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->relations(*((QAccessible::Relation*)arg1));
-  return new QVector<QPair<QAccessibleInterface *, QFlags<QAccessible::RelationFlag> > >(ret); // 5
+void C_ZNK17QAccessibleWidget15foregroundColorEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->foregroundColor();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 70, column 23>
-//   // proto:  QAccessible::Role QAccessibleWidget::role();
-// _ZNK17QAccessibleWidget4roleEv role()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:74
+// QColor backgroundColor()
 extern "C"
-QAccessible::Role
-C_ZNK17QAccessibleWidget4roleEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->role();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK17QAccessibleWidget15backgroundColorEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->backgroundColor();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 66, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleWidget::parent();
-// _ZNK17QAccessibleWidget6parentEv parent()
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:76
+// void * interface_cast(class QAccessible::InterfaceType)
 extern "C"
-void*
-C_ZNK17QAccessibleWidget6parentEv(void *qthis) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->parent();
-  return (void*)ret;
+void C_ZN17QAccessibleWidget14interface_castEN11QAccessible13InterfaceTypeE(void *this_, QAccessible::InterfaceType t) {
+  /*return*/ ((QAccessibleWidget*)this_)->interface_cast(t);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 80, column 10>
-//   // proto:  void QAccessibleWidget::doAction(const QString & actionName);
-// _ZN17QAccessibleWidget8doActionERK7QString doAction(const class QString &)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:79
+// QStringList actionNames()
 extern "C"
-void
-C_ZN17QAccessibleWidget8doActionERK7QString(void *qthis,
-const QString* arg1) {
-  ((QAccessibleWidget*)qthis)->doAction(*((const QString*)arg1));
+void C_ZNK17QAccessibleWidget11actionNamesEv(void *this_) {
+  /*return*/ ((QAccessibleWidget*)this_)->actionNames();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 81, column 17>
-//   // proto:  QStringList QAccessibleWidget::keyBindingsForAction(const QString & actionName);
-// _ZNK17QAccessibleWidget20keyBindingsForActionERK7QString keyBindingsForAction(const class QString &)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:80
+// void doAction(const class QString &)
 extern "C"
-QStringList*
-C_ZNK17QAccessibleWidget20keyBindingsForActionERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->keyBindingsForAction(*((const QString*)arg1));
-  return new QStringList(ret); // 5
+void C_ZN17QAccessibleWidget8doActionERK7QString(void *this_, const QString & actionName) {
+  ((QAccessibleWidget*)this_)->doAction(actionName);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 76, column 11>
-//   // proto:  void * QAccessibleWidget::interface_cast(QAccessible::InterfaceType t);
-// _ZN17QAccessibleWidget14interface_castEN11QAccessible13InterfaceTypeE interface_cast(class QAccessible::InterfaceType)
+// virtual
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:81
+// QStringList keyBindingsForAction(const class QString &)
 extern "C"
-void*
-C_ZN17QAccessibleWidget14interface_castEN11QAccessible13InterfaceTypeE(void *qthis,
-QAccessible::InterfaceType* arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->interface_cast(*((QAccessible::InterfaceType*)arg1));
-  return (void*)ret;
+void C_ZNK17QAccessibleWidget20keyBindingsForActionERK7QString(void *this_, const QString & actionName) {
+  /*return*/ ((QAccessibleWidget*)this_)->keyBindingsForAction(actionName);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qaccessiblewidget.h', line 60, column 9>
-//   // proto:  int QAccessibleWidget::indexOfChild(const QAccessibleInterface * child);
-// _ZNK17QAccessibleWidget12indexOfChildEPK20QAccessibleInterface indexOfChild(const class QAccessibleInterface *)
-extern "C"
-int
-C_ZNK17QAccessibleWidget12indexOfChildEPK20QAccessibleInterface(void *qthis,
-const QAccessibleInterface * arg1) {
-  auto ret =
-  ((QAccessibleWidget*)qthis)->indexOfChild(arg1);
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

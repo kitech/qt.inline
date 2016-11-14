@@ -1,296 +1,155 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qglyphrun.h
-// dst-file: /src/gui/qglyphrun.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qglyphrun.h
 #include <qglyphrun.h>
+#include <QtGui>
 
-
-#include <qvector.h>
-#include <qrawfont.h>
-#include <qstring.h>
-#include <qrect.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qglyphrun_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 74, column 10>
-//   // proto:  void QGlyphRun::swap(QGlyphRun & other);
-if (true) {
-  auto f = [](QGlyphRun flythis, QGlyphRun & arg1) {
-    ((QGlyphRun*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QGlyphRun4swapERS_ swap(class QGlyphRun &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qglyphrun.h:66
+// void QGlyphRun()
 extern "C"
-int QGlyphRun_Class_Size()
-{
-  return sizeof(QGlyphRun);
+void* C_ZN9QGlyphRunC1Ev() {
+  return new QGlyphRun();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 84, column 10>
-//   // proto:  void QGlyphRun::setGlyphIndexes(const QVector<quint32> & glyphIndexes);
-// _ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE setGlyphIndexes(const QVector<quint32> &)
+// /usr/include/qt/QtGui/qglyphrun.h:72
+// void ~QGlyphRun()
 extern "C"
-void
-C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *qthis,
-const QVector<quint32>* arg1) {
-  ((QGlyphRun*)qthis)->setGlyphIndexes(*((const QVector<quint32>*)arg1));
+void C_ZN9QGlyphRunD1Ev(void *this_) {
+  delete (QGlyphRun*)(this_);
 }
-//   // proto:  void QGlyphRun::~QGlyphRun();
+// inline
+// /usr/include/qt/QtGui/qglyphrun.h:74
+// void swap(class QGlyphRun &)
 extern "C"
-void C_ZN9QGlyphRunD2Ev(void *qthis) {
-  delete (QGlyphRun*)qthis;
+void C_ZN9QGlyphRun4swapERS_(void *this_, QGlyphRun & other) {
+  ((QGlyphRun*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 111, column 10>
-//   // proto:  void QGlyphRun::setBoundingRect(const QRectF & boundingRect);
-// _ZN9QGlyphRun15setBoundingRectERK6QRectF setBoundingRect(const class QRectF &)
+// /usr/include/qt/QtGui/qglyphrun.h:76
+// QRawFont rawFont()
 extern "C"
-void
-C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  ((QGlyphRun*)qthis)->setBoundingRect(*((const QRectF*)arg1));
+void C_ZNK9QGlyphRun7rawFontEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->rawFont();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 102, column 10>
-//   // proto:  bool QGlyphRun::strikeOut();
-// _ZNK9QGlyphRun9strikeOutEv strikeOut()
+// /usr/include/qt/QtGui/qglyphrun.h:77
+// void setRawFont(const class QRawFont &)
 extern "C"
-bool
-C_ZNK9QGlyphRun9strikeOutEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->strikeOut();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *this_, const QRawFont & rawFont) {
+  ((QGlyphRun*)this_)->setRawFont(rawFont);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 79, column 10>
-//   // proto:  void QGlyphRun::setRawData(const quint32 * glyphIndexArray, const QPointF * glyphPositionArray, int size);
-// _ZN9QGlyphRun10setRawDataEPKjPK7QPointFi setRawData(const quint32 *, const class QPointF *, int)
+// /usr/include/qt/QtGui/qglyphrun.h:79
+// void setRawData(const quint32 *, const class QPointF *, int)
 extern "C"
-void
-C_ZN9QGlyphRun10setRawDataEPKjPK7QPointFi(void *qthis,
-const quint32 * arg1,
-const QPointF * arg2,
-int arg3) {
-  ((QGlyphRun*)qthis)->setRawData(arg1,
-arg2,
-arg3);
+void C_ZN9QGlyphRun10setRawDataEPKjPK7QPointFi(void *this_, const quint32 * glyphIndexArray, const QPointF * glyphPositionArray, int size) {
+  ((QGlyphRun*)this_)->setRawData(glyphIndexArray, glyphPositionArray, size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 95, column 10>
-//   // proto:  void QGlyphRun::setOverline(bool overline);
-// _ZN9QGlyphRun11setOverlineEb setOverline(_Bool)
+// /usr/include/qt/QtGui/qglyphrun.h:83
+// QVector<quint32> glyphIndexes()
 extern "C"
-void
-C_ZN9QGlyphRun11setOverlineEb(void *qthis,
-bool arg1) {
-  ((QGlyphRun*)qthis)->setOverline(arg1);
+void C_ZNK9QGlyphRun12glyphIndexesEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->glyphIndexes();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 74, column 10>
-//   // proto:  void QGlyphRun::swap(QGlyphRun & other);
-// _ZN9QGlyphRun4swapERS_ swap(class QGlyphRun &)
+// /usr/include/qt/QtGui/qglyphrun.h:84
+// void setGlyphIndexes(const QVector<quint32> &)
 extern "C"
-void
-C_ZN9QGlyphRun4swapERS_(void *qthis,
-QGlyphRun* arg1) {
-  ((QGlyphRun*)qthis)->swap(*((QGlyphRun*)arg1));
+void C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
+  ((QGlyphRun*)this_)->setGlyphIndexes(glyphIndexes);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 107, column 10>
-//   // proto:  void QGlyphRun::setFlag(QGlyphRun::GlyphRunFlag flag, bool enabled);
-// _ZN9QGlyphRun7setFlagENS_12GlyphRunFlagEb setFlag(enum QGlyphRun::GlyphRunFlag, _Bool)
+// /usr/include/qt/QtGui/qglyphrun.h:86
+// QVector<QPointF> positions()
 extern "C"
-void
-C_ZN9QGlyphRun7setFlagENS_12GlyphRunFlagEb(void *qthis,
-QGlyphRun::GlyphRunFlag arg1,
-bool arg2) {
-  ((QGlyphRun*)qthis)->setFlag(arg1,
-arg2);
+void C_ZNK9QGlyphRun9positionsEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->positions();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 98, column 10>
-//   // proto:  void QGlyphRun::setUnderline(bool underline);
-// _ZN9QGlyphRun12setUnderlineEb setUnderline(_Bool)
+// /usr/include/qt/QtGui/qglyphrun.h:87
+// void setPositions(const QVector<class QPointF> &)
 extern "C"
-void
-C_ZN9QGlyphRun12setUnderlineEb(void *qthis,
-bool arg1) {
-  ((QGlyphRun*)qthis)->setUnderline(arg1);
+void C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *this_, const QVector<QPointF> & positions) {
+  ((QGlyphRun*)this_)->setPositions(positions);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 86, column 22>
-//   // proto:  QVector<QPointF> QGlyphRun::positions();
-// _ZNK9QGlyphRun9positionsEv positions()
+// /usr/include/qt/QtGui/qglyphrun.h:89
+// void clear()
 extern "C"
-QVector<QPointF>*
-C_ZNK9QGlyphRun9positionsEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->positions();
-  return new QVector<QPointF>(ret); // 5
+void C_ZN9QGlyphRun5clearEv(void *this_) {
+  ((QGlyphRun*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 89, column 10>
-//   // proto:  void QGlyphRun::clear();
-// _ZN9QGlyphRun5clearEv clear()
+// /usr/include/qt/QtGui/qglyphrun.h:95
+// void setOverline(_Bool)
 extern "C"
-void
-C_ZN9QGlyphRun5clearEv(void *qthis) {
-  ((QGlyphRun*)qthis)->clear();
+void C_ZN9QGlyphRun11setOverlineEb(void *this_, bool overline) {
+  ((QGlyphRun*)this_)->setOverline(overline);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 96, column 10>
-//   // proto:  bool QGlyphRun::overline();
-// _ZNK9QGlyphRun8overlineEv overline()
+// /usr/include/qt/QtGui/qglyphrun.h:96
+// bool overline()
 extern "C"
-bool
-C_ZNK9QGlyphRun8overlineEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->overline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QGlyphRun8overlineEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->overline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 87, column 10>
-//   // proto:  void QGlyphRun::setPositions(const QVector<QPointF> & positions);
-// _ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE setPositions(const QVector<class QPointF> &)
+// /usr/include/qt/QtGui/qglyphrun.h:98
+// void setUnderline(_Bool)
 extern "C"
-void
-C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *qthis,
-const QVector<QPointF>* arg1) {
-  ((QGlyphRun*)qthis)->setPositions(*((const QVector<QPointF>*)arg1));
+void C_ZN9QGlyphRun12setUnderlineEb(void *this_, bool underline) {
+  ((QGlyphRun*)this_)->setUnderline(underline);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 76, column 14>
-//   // proto:  QRawFont QGlyphRun::rawFont();
-// _ZNK9QGlyphRun7rawFontEv rawFont()
+// /usr/include/qt/QtGui/qglyphrun.h:99
+// bool underline()
 extern "C"
-QRawFont*
-C_ZNK9QGlyphRun7rawFontEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->rawFont();
-  return new QRawFont(ret); // 5
+void C_ZNK9QGlyphRun9underlineEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->underline();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 108, column 10>
-//   // proto:  void QGlyphRun::setFlags(GlyphRunFlags flags);
-// _ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE setFlags(GlyphRunFlags)
+// /usr/include/qt/QtGui/qglyphrun.h:101
+// void setStrikeOut(_Bool)
 extern "C"
-void
-C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *qthis,
-QGlyphRun::GlyphRunFlags arg1) {
-  ((QGlyphRun*)qthis)->setFlags(arg1);
+void C_ZN9QGlyphRun12setStrikeOutEb(void *this_, bool strikeOut) {
+  ((QGlyphRun*)this_)->setStrikeOut(strikeOut);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 66, column 5>
-//   // proto:  void QGlyphRun::QGlyphRun();
+// /usr/include/qt/QtGui/qglyphrun.h:102
+// bool strikeOut()
 extern "C"
-QGlyphRun*
-C_ZN9QGlyphRunC2Ev() {
-  auto ret = new QGlyphRun();
-  return ret;
+void C_ZNK9QGlyphRun9strikeOutEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->strikeOut();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 77, column 10>
-//   // proto:  void QGlyphRun::setRawFont(const QRawFont & rawFont);
-// _ZN9QGlyphRun10setRawFontERK8QRawFont setRawFont(const class QRawFont &)
+// /usr/include/qt/QtGui/qglyphrun.h:104
+// void setRightToLeft(_Bool)
 extern "C"
-void
-C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *qthis,
-const QRawFont* arg1) {
-  ((QGlyphRun*)qthis)->setRawFont(*((const QRawFont*)arg1));
+void C_ZN9QGlyphRun14setRightToLeftEb(void *this_, bool on) {
+  ((QGlyphRun*)this_)->setRightToLeft(on);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 67, column 5>
-//   // proto:  void QGlyphRun::QGlyphRun(const QGlyphRun & other);
+// /usr/include/qt/QtGui/qglyphrun.h:105
+// bool isRightToLeft()
 extern "C"
-QGlyphRun*
-C_ZN9QGlyphRunC2ERKS_(const QGlyphRun* arg1) {
-  auto ret = new QGlyphRun(*((const QGlyphRun*)arg1));
-  return ret;
+void C_ZNK9QGlyphRun13isRightToLeftEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->isRightToLeft();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 105, column 10>
-//   // proto:  bool QGlyphRun::isRightToLeft();
-// _ZNK9QGlyphRun13isRightToLeftEv isRightToLeft()
+// /usr/include/qt/QtGui/qglyphrun.h:107
+// void setFlag(enum QGlyphRun::GlyphRunFlag, _Bool)
 extern "C"
-bool
-C_ZNK9QGlyphRun13isRightToLeftEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->isRightToLeft();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QGlyphRun7setFlagENS_12GlyphRunFlagEb(void *this_, QGlyphRun::GlyphRunFlag flag, bool enabled) {
+  ((QGlyphRun*)this_)->setFlag(flag, enabled);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 83, column 22>
-//   // proto:  QVector<quint32> QGlyphRun::glyphIndexes();
-// _ZNK9QGlyphRun12glyphIndexesEv glyphIndexes()
+// /usr/include/qt/QtGui/qglyphrun.h:108
+// void setFlags(GlyphRunFlags)
 extern "C"
-QVector<unsigned int>*
-C_ZNK9QGlyphRun12glyphIndexesEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->glyphIndexes();
-  return new QVector<unsigned int>(ret); // 5
+void C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *this_, QFlags<QGlyphRun::GlyphRunFlag> flags) {
+  ((QGlyphRun*)this_)->setFlags(flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 112, column 12>
-//   // proto:  QRectF QGlyphRun::boundingRect();
-// _ZNK9QGlyphRun12boundingRectEv boundingRect()
+// /usr/include/qt/QtGui/qglyphrun.h:109
+// GlyphRunFlags flags()
 extern "C"
-QRectF*
-C_ZNK9QGlyphRun12boundingRectEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->boundingRect();
-  return new QRectF(ret); // 5
+void C_ZNK9QGlyphRun5flagsEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->flags();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 104, column 10>
-//   // proto:  void QGlyphRun::setRightToLeft(bool on);
-// _ZN9QGlyphRun14setRightToLeftEb setRightToLeft(_Bool)
+// /usr/include/qt/QtGui/qglyphrun.h:111
+// void setBoundingRect(const class QRectF &)
 extern "C"
-void
-C_ZN9QGlyphRun14setRightToLeftEb(void *qthis,
-bool arg1) {
-  ((QGlyphRun*)qthis)->setRightToLeft(arg1);
+void C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *this_, const QRectF & boundingRect) {
+  ((QGlyphRun*)this_)->setBoundingRect(boundingRect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 109, column 19>
-//   // proto:  GlyphRunFlags QGlyphRun::flags();
-// _ZNK9QGlyphRun5flagsEv flags()
+// /usr/include/qt/QtGui/qglyphrun.h:112
+// QRectF boundingRect()
 extern "C"
-QFlags<QGlyphRun::GlyphRunFlag>*
-C_ZNK9QGlyphRun5flagsEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->flags();
-  return new QFlags<QGlyphRun::GlyphRunFlag>(ret); // 5
+void C_ZNK9QGlyphRun12boundingRectEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->boundingRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 99, column 10>
-//   // proto:  bool QGlyphRun::underline();
-// _ZNK9QGlyphRun9underlineEv underline()
+// /usr/include/qt/QtGui/qglyphrun.h:114
+// bool isEmpty()
 extern "C"
-bool
-C_ZNK9QGlyphRun9underlineEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->underline();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
+  /*return*/ ((QGlyphRun*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 101, column 10>
-//   // proto:  void QGlyphRun::setStrikeOut(bool strikeOut);
-// _ZN9QGlyphRun12setStrikeOutEb setStrikeOut(_Bool)
-extern "C"
-void
-C_ZN9QGlyphRun12setStrikeOutEb(void *qthis,
-bool arg1) {
-  ((QGlyphRun*)qthis)->setStrikeOut(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qglyphrun.h', line 114, column 10>
-//   // proto:  bool QGlyphRun::isEmpty();
-// _ZNK9QGlyphRun7isEmptyEv isEmpty()
-extern "C"
-bool
-C_ZNK9QGlyphRun7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QGlyphRun*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

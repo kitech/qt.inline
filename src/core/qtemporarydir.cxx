@@ -1,120 +1,58 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qtemporarydir.h
-// dst-file: /src/core/qtemporarydir.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qtemporarydir.h
 #include <qtemporarydir.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtemporarydir_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qtemporarydir.h:56
+// void QTemporaryDir()
 extern "C"
-int QTemporaryDir_Class_Size()
-{
-  return sizeof(QTemporaryDir);
+void* C_ZN13QTemporaryDirC1Ev() {
+  return new QTemporaryDir();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 65, column 10>
-//   // proto:  bool QTemporaryDir::remove();
-// _ZN13QTemporaryDir6removeEv remove()
+// /usr/include/qt/QtCore/qtemporarydir.h:57
+// void QTemporaryDir(const class QString &)
 extern "C"
-bool
-C_ZN13QTemporaryDir6removeEv(void *qthis) {
-  auto ret =
-  ((QTemporaryDir*)qthis)->remove();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN13QTemporaryDirC1ERK7QString(const QString & templateName) {
+  return new QTemporaryDir(templateName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 63, column 10>
-//   // proto:  bool QTemporaryDir::autoRemove();
-// _ZNK13QTemporaryDir10autoRemoveEv autoRemove()
+// /usr/include/qt/QtCore/qtemporarydir.h:58
+// void ~QTemporaryDir()
 extern "C"
-bool
-C_ZNK13QTemporaryDir10autoRemoveEv(void *qthis) {
-  auto ret =
-  ((QTemporaryDir*)qthis)->autoRemove();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QTemporaryDirD1Ev(void *this_) {
+  delete (QTemporaryDir*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 60, column 10>
-//   // proto:  bool QTemporaryDir::isValid();
-// _ZNK13QTemporaryDir7isValidEv isValid()
+// /usr/include/qt/QtCore/qtemporarydir.h:60
+// bool isValid()
 extern "C"
-bool
-C_ZNK13QTemporaryDir7isValidEv(void *qthis) {
-  auto ret =
-  ((QTemporaryDir*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QTemporaryDir7isValidEv(void *this_) {
+  /*return*/ ((QTemporaryDir*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 64, column 10>
-//   // proto:  void QTemporaryDir::setAutoRemove(bool b);
-// _ZN13QTemporaryDir13setAutoRemoveEb setAutoRemove(_Bool)
+// /usr/include/qt/QtCore/qtemporarydir.h:61
+// QString errorString()
 extern "C"
-void
-C_ZN13QTemporaryDir13setAutoRemoveEb(void *qthis,
-bool arg1) {
-  ((QTemporaryDir*)qthis)->setAutoRemove(arg1);
+void C_ZNK13QTemporaryDir11errorStringEv(void *this_) {
+  /*return*/ ((QTemporaryDir*)this_)->errorString();
 }
-//   // proto:  void QTemporaryDir::~QTemporaryDir();
+// /usr/include/qt/QtCore/qtemporarydir.h:63
+// bool autoRemove()
 extern "C"
-void C_ZN13QTemporaryDirD2Ev(void *qthis) {
-  delete (QTemporaryDir*)qthis;
+void C_ZNK13QTemporaryDir10autoRemoveEv(void *this_) {
+  /*return*/ ((QTemporaryDir*)this_)->autoRemove();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 56, column 5>
-//   // proto:  void QTemporaryDir::QTemporaryDir();
+// /usr/include/qt/QtCore/qtemporarydir.h:64
+// void setAutoRemove(_Bool)
 extern "C"
-QTemporaryDir*
-C_ZN13QTemporaryDirC2Ev() {
-  auto ret = new QTemporaryDir();
-  return ret;
+void C_ZN13QTemporaryDir13setAutoRemoveEb(void *this_, bool b) {
+  ((QTemporaryDir*)this_)->setAutoRemove(b);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 57, column 14>
-//   // proto:  void QTemporaryDir::QTemporaryDir(const QString & templateName);
+// /usr/include/qt/QtCore/qtemporarydir.h:65
+// bool remove()
 extern "C"
-QTemporaryDir*
-C_ZN13QTemporaryDirC2ERK7QString(const QString* arg1) {
-  auto ret = new QTemporaryDir(*((const QString*)arg1));
-  return ret;
+void C_ZN13QTemporaryDir6removeEv(void *this_) {
+  /*return*/ ((QTemporaryDir*)this_)->remove();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 67, column 13>
-//   // proto:  QString QTemporaryDir::path();
-// _ZNK13QTemporaryDir4pathEv path()
+// /usr/include/qt/QtCore/qtemporarydir.h:67
+// QString path()
 extern "C"
-QString*
-C_ZNK13QTemporaryDir4pathEv(void *qthis) {
-  auto ret =
-  ((QTemporaryDir*)qthis)->path();
-  return new QString(ret); // 5
+void C_ZNK13QTemporaryDir4pathEv(void *this_) {
+  /*return*/ ((QTemporaryDir*)this_)->path();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qtemporarydir.h', line 61, column 13>
-//   // proto:  QString QTemporaryDir::errorString();
-// _ZNK13QTemporaryDir11errorStringEv errorString()
-extern "C"
-QString*
-C_ZNK13QTemporaryDir11errorStringEv(void *qthis) {
-  auto ret =
-  ((QTemporaryDir*)qthis)->errorString();
-  return new QString(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

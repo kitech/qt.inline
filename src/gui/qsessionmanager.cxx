@@ -1,222 +1,107 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qsessionmanager.h
-// dst-file: /src/gui/qsessionmanager.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qsessionmanager.h
 #include <qsessionmanager.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsessionmanager_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtGui/qsessionmanager.h:59
+// const QMetaObject * metaObject()
 extern "C"
-int QSessionManager_Class_Size()
-{
-  return sizeof(QSessionManager);
+void C_ZNK15QSessionManager10metaObjectEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 79, column 10>
-//   // proto:  void QSessionManager::setRestartHint(QSessionManager::RestartHint );
-// _ZN15QSessionManager14setRestartHintENS_11RestartHintE setRestartHint(enum QSessionManager::RestartHint)
+// /usr/include/qt/QtGui/qsessionmanager.h:64
+// QString sessionId()
 extern "C"
-void
-C_ZN15QSessionManager14setRestartHintENS_11RestartHintE(void *qthis,
-QSessionManager::RestartHint arg1) {
-  ((QSessionManager*)qthis)->setRestartHint(arg1);
+void C_ZNK15QSessionManager9sessionIdEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->sessionId();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 64, column 13>
-//   // proto:  QString QSessionManager::sessionId();
-// _ZNK15QSessionManager9sessionIdEv sessionId()
+// /usr/include/qt/QtGui/qsessionmanager.h:65
+// QString sessionKey()
 extern "C"
-QString*
-C_ZNK15QSessionManager9sessionIdEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->sessionId();
-  return new QString(ret); // 5
+void C_ZNK15QSessionManager10sessionKeyEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->sessionKey();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 65, column 13>
-//   // proto:  QString QSessionManager::sessionKey();
-// _ZNK15QSessionManager10sessionKeyEv sessionKey()
+// /usr/include/qt/QtGui/qsessionmanager.h:67
+// bool allowsInteraction()
 extern "C"
-QString*
-C_ZNK15QSessionManager10sessionKeyEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->sessionKey();
-  return new QString(ret); // 5
+void C_ZN15QSessionManager17allowsInteractionEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->allowsInteraction();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 82, column 10>
-//   // proto:  void QSessionManager::setRestartCommand(const QStringList & );
-// _ZN15QSessionManager17setRestartCommandERK11QStringList setRestartCommand(const class QStringList &)
+// /usr/include/qt/QtGui/qsessionmanager.h:68
+// bool allowsErrorInteraction()
 extern "C"
-void
-C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  ((QSessionManager*)qthis)->setRestartCommand(*((const QStringList*)arg1));
+void C_ZN15QSessionManager22allowsErrorInteractionEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->allowsErrorInteraction();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 59, column 5>
-//   // proto:  const QMetaObject * QSessionManager::metaObject();
-// _ZNK15QSessionManager10metaObjectEv metaObject()
+// /usr/include/qt/QtGui/qsessionmanager.h:69
+// void release()
 extern "C"
-void*
-C_ZNK15QSessionManager10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN15QSessionManager7releaseEv(void *this_) {
+  ((QSessionManager*)this_)->release();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 68, column 10>
-//   // proto:  bool QSessionManager::allowsErrorInteraction();
-// _ZN15QSessionManager22allowsErrorInteractionEv allowsErrorInteraction()
+// /usr/include/qt/QtGui/qsessionmanager.h:71
+// void cancel()
 extern "C"
-bool
-C_ZN15QSessionManager22allowsErrorInteractionEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->allowsErrorInteraction();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QSessionManager6cancelEv(void *this_) {
+  ((QSessionManager*)this_)->cancel();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 83, column 17>
-//   // proto:  QStringList QSessionManager::restartCommand();
-// _ZNK15QSessionManager14restartCommandEv restartCommand()
+// /usr/include/qt/QtGui/qsessionmanager.h:79
+// void setRestartHint(enum QSessionManager::RestartHint)
 extern "C"
-QStringList*
-C_ZNK15QSessionManager14restartCommandEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->restartCommand();
-  return new QStringList(ret); // 5
+void C_ZN15QSessionManager14setRestartHintENS_11RestartHintE(void *this_, QSessionManager::RestartHint a0) {
+  ((QSessionManager*)this_)->setRestartHint(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 91, column 10>
-//   // proto:  void QSessionManager::requestPhase2();
-// _ZN15QSessionManager13requestPhase2Ev requestPhase2()
+// /usr/include/qt/QtGui/qsessionmanager.h:80
+// QSessionManager::RestartHint restartHint()
 extern "C"
-void
-C_ZN15QSessionManager13requestPhase2Ev(void *qthis) {
-  ((QSessionManager*)qthis)->requestPhase2();
+void C_ZNK15QSessionManager11restartHintEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->restartHint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 80, column 17>
-//   // proto:  QSessionManager::RestartHint QSessionManager::restartHint();
-// _ZNK15QSessionManager11restartHintEv restartHint()
+// /usr/include/qt/QtGui/qsessionmanager.h:82
+// void setRestartCommand(const class QStringList &)
 extern "C"
-QSessionManager::RestartHint
-C_ZNK15QSessionManager11restartHintEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->restartHint();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, const QStringList & a0) {
+  ((QSessionManager*)this_)->setRestartCommand(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 90, column 10>
-//   // proto:  bool QSessionManager::isPhase2();
-// _ZNK15QSessionManager8isPhase2Ev isPhase2()
+// /usr/include/qt/QtGui/qsessionmanager.h:83
+// QStringList restartCommand()
 extern "C"
-bool
-C_ZNK15QSessionManager8isPhase2Ev(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->isPhase2();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK15QSessionManager14restartCommandEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->restartCommand();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 69, column 10>
-//   // proto:  void QSessionManager::release();
-// _ZN15QSessionManager7releaseEv release()
+// /usr/include/qt/QtGui/qsessionmanager.h:84
+// void setDiscardCommand(const class QStringList &)
 extern "C"
-void
-C_ZN15QSessionManager7releaseEv(void *qthis) {
-  ((QSessionManager*)qthis)->release();
+void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, const QStringList & a0) {
+  ((QSessionManager*)this_)->setDiscardCommand(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 87, column 10>
-//   // proto:  void QSessionManager::setManagerProperty(const QString & name, const QString & value);
-// _ZN15QSessionManager18setManagerPropertyERK7QStringS2_ setManagerProperty(const class QString &, const class QString &)
+// /usr/include/qt/QtGui/qsessionmanager.h:85
+// QStringList discardCommand()
 extern "C"
-void
-C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  ((QSessionManager*)qthis)->setManagerProperty(*((const QString*)arg1),
-*((const QString*)arg2));
+void C_ZNK15QSessionManager14discardCommandEv(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->discardCommand();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 88, column 10>
-//   // proto:  void QSessionManager::setManagerProperty(const QString & name, const QStringList & value);
-// _ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList setManagerProperty(const class QString &, const class QStringList &)
+// /usr/include/qt/QtGui/qsessionmanager.h:87
+// void setManagerProperty(const class QString &, const class QString &)
 extern "C"
-void
-C_ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList(void *qthis,
-const QString* arg1,
-const QStringList* arg2) {
-  ((QSessionManager*)qthis)->setManagerProperty(*((const QString*)arg1),
-*((const QStringList*)arg2));
+void C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *this_, const QString & name, const QString & value) {
+  ((QSessionManager*)this_)->setManagerProperty(name, value);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 85, column 17>
-//   // proto:  QStringList QSessionManager::discardCommand();
-// _ZNK15QSessionManager14discardCommandEv discardCommand()
+// /usr/include/qt/QtGui/qsessionmanager.h:88
+// void setManagerProperty(const class QString &, const class QStringList &)
 extern "C"
-QStringList*
-C_ZNK15QSessionManager14discardCommandEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->discardCommand();
-  return new QStringList(ret); // 5
+void C_ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList(void *this_, const QString & name, const QStringList & value) {
+  ((QSessionManager*)this_)->setManagerProperty(name, value);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 71, column 10>
-//   // proto:  void QSessionManager::cancel();
-// _ZN15QSessionManager6cancelEv cancel()
+// /usr/include/qt/QtGui/qsessionmanager.h:90
+// bool isPhase2()
 extern "C"
-void
-C_ZN15QSessionManager6cancelEv(void *qthis) {
-  ((QSessionManager*)qthis)->cancel();
+void C_ZNK15QSessionManager8isPhase2Ev(void *this_) {
+  /*return*/ ((QSessionManager*)this_)->isPhase2();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 84, column 10>
-//   // proto:  void QSessionManager::setDiscardCommand(const QStringList & );
-// _ZN15QSessionManager17setDiscardCommandERK11QStringList setDiscardCommand(const class QStringList &)
+// /usr/include/qt/QtGui/qsessionmanager.h:91
+// void requestPhase2()
 extern "C"
-void
-C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  ((QSessionManager*)qthis)->setDiscardCommand(*((const QStringList*)arg1));
+void C_ZN15QSessionManager13requestPhase2Ev(void *this_) {
+  ((QSessionManager*)this_)->requestPhase2();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsessionmanager.h', line 67, column 10>
-//   // proto:  bool QSessionManager::allowsInteraction();
-// _ZN15QSessionManager17allowsInteractionEv allowsInteraction()
-extern "C"
-bool
-C_ZN15QSessionManager17allowsInteractionEv(void *qthis) {
-  auto ret =
-  ((QSessionManager*)qthis)->allowsInteraction();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// QSessionManager_SlotProxy here
-class QSessionManager_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QSessionManager_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/gui/qsessionmanager.moc"
-
-extern "C" {
-  QSessionManager_SlotProxy* QSessionManager_SlotProxy_new()
-  {
-    return new QSessionManager_SlotProxy();
-  }
-};
-
-// <= body block end
-

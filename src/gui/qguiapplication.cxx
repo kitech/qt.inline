@@ -1,996 +1,441 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qguiapplication.h
-// dst-file: /src/gui/qguiapplication.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qguiapplication.h
 #include <qguiapplication.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qlist.h>
-#include <qstandarditemmodel.h>
-#include <qnamespace.h>
-#include <qfont.h>
-#include <qicon.h>
-#include <qpalette.h>
-#include <qwindowdefs.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qguiapplication_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 138, column 24>
-//   // proto: static bool QGuiApplication::isRightToLeft();
-if (true) {
-  auto f = [](QGuiApplication flythis) {
-    ((QGuiApplication*)0)->isRightToLeft();
-    flythis.isRightToLeft();
-  };
-  if (f == nullptr){}
-}
-// _ZN15QGuiApplication13isRightToLeftEv isRightToLeft()
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 139, column 24>
-//   // proto: static bool QGuiApplication::isLeftToRight();
-if (true) {
-  auto f = [](QGuiApplication flythis) {
-    ((QGuiApplication*)0)->isLeftToRight();
-    flythis.isLeftToRight();
-  };
-  if (f == nullptr){}
-}
-// _ZN15QGuiApplication13isLeftToRightEv isLeftToRight()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtGui/qguiapplication.h:73
+// const QMetaObject * metaObject()
 extern "C"
-int QGuiApplication_Class_Size()
-{
-  return sizeof(QGuiApplication);
+void C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QGuiApplication::~QGuiApplication();
+// /usr/include/qt/QtGui/qguiapplication.h:86
+// void QGuiApplication(int &, char **, int)
 extern "C"
-void C_ZN15QGuiApplicationD2Ev(void *qthis) {
-  delete (QGuiApplication*)qthis;
+void* C_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int a2) {
+  return new QGuiApplication(argc, argv, a2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 122, column 17>
-//   // proto: static void QGuiApplication::setFont(const QFont & );
-// _ZN15QGuiApplication7setFontERK5QFont setFont(const class QFont &)
+// virtual
+// /usr/include/qt/QtGui/qguiapplication.h:88
+// void ~QGuiApplication()
 extern "C"
-void
-C_ZN15QGuiApplication7setFontERK5QFont(const QFont* arg1) {
-  QGuiApplication::setFont(*((const QFont*)arg1));
+void C_ZN15QGuiApplicationD1Ev(void *this_) {
+  delete (QGuiApplication*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 103, column 20>
-//   // proto: static QString QGuiApplication::platformName();
-// _ZN15QGuiApplication12platformNameEv platformName()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:90
+// void setApplicationDisplayName(const class QString &)
 extern "C"
-QString*
-C_ZN15QGuiApplication12platformNameEv() {
-  auto ret =
-  QGuiApplication::platformName();
-  return new QString(ret); // 5
+void C_ZN15QGuiApplication25setApplicationDisplayNameERK7QString(const QString & name) {
+  QGuiApplication::setApplicationDisplayName(name);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 111, column 29>
-//   // proto: static QList<QScreen *> QGuiApplication::screens();
-// _ZN15QGuiApplication7screensEv screens()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:91
+// QString applicationDisplayName()
 extern "C"
-QList<QScreen *>*
-C_ZN15QGuiApplication7screensEv() {
-  auto ret =
-  QGuiApplication::screens();
-  return new QList<QScreen *>(ret); // 5
+void C_ZN15QGuiApplication22applicationDisplayNameEv() {
+  /*return*/ QGuiApplication::applicationDisplayName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 131, column 34>
-//   // proto: static Qt::KeyboardModifiers QGuiApplication::keyboardModifiers();
-// _ZN15QGuiApplication17keyboardModifiersEv keyboardModifiers()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:93
+// void setDesktopFileName(const class QString &)
 extern "C"
-QFlags<Qt::KeyboardModifier>*
-C_ZN15QGuiApplication17keyboardModifiersEv() {
-  auto ret =
-  QGuiApplication::keyboardModifiers();
-  return new QFlags<Qt::KeyboardModifier>(ret); // 5
+void C_ZN15QGuiApplication18setDesktopFileNameERK7QString(const QString & name) {
+  QGuiApplication::setDesktopFileName(name);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 129, column 17>
-//   // proto: static void QGuiApplication::setPalette(const QPalette & pal);
-// _ZN15QGuiApplication10setPaletteERK8QPalette setPalette(const class QPalette &)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:94
+// QString desktopFileName()
 extern "C"
-void
-C_ZN15QGuiApplication10setPaletteERK8QPalette(const QPalette* arg1) {
-  QGuiApplication::setPalette(*((const QPalette*)arg1));
+void C_ZN15QGuiApplication15desktopFileNameEv() {
+  /*return*/ QGuiApplication::desktopFileName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 145, column 26>
-//   // proto: static QInputMethod * QGuiApplication::inputMethod();
-// _ZN15QGuiApplication11inputMethodEv inputMethod()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:96
+// QWindowList allWindows()
 extern "C"
-void*
-C_ZN15QGuiApplication11inputMethodEv() {
-  auto ret =
-  QGuiApplication::inputMethod();
-  return (void*)ret;
+void C_ZN15QGuiApplication10allWindowsEv() {
+  /*return*/ QGuiApplication::allWindows();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 166, column 17>
-//   // proto: static bool QGuiApplication::isFallbackSessionManagementEnabled();
-// _ZN15QGuiApplication34isFallbackSessionManagementEnabledEv isFallbackSessionManagementEnabled()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:97
+// QWindowList topLevelWindows()
 extern "C"
-bool
-C_ZN15QGuiApplication34isFallbackSessionManagementEnabledEv() {
-  auto ret =
-  QGuiApplication::isFallbackSessionManagementEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QGuiApplication15topLevelWindowsEv() {
+  /*return*/ QGuiApplication::topLevelWindows();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 164, column 10>
-//   // proto:  bool QGuiApplication::isSavingSession();
-// _ZNK15QGuiApplication15isSavingSessionEv isSavingSession()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:98
+// QWindow * topLevelAt(const class QPoint &)
 extern "C"
-bool
-C_ZNK15QGuiApplication15isSavingSessionEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->isSavingSession();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QGuiApplication10topLevelAtERK6QPoint(const QPoint & pos) {
+  /*return*/ QGuiApplication::topLevelAt(pos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 185, column 10>
-//   // proto:  void QGuiApplication::paletteChanged(const QPalette & pal);
-// _ZN15QGuiApplication14paletteChangedERK8QPalette paletteChanged(const class QPalette &)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:100
+// void setWindowIcon(const class QIcon &)
 extern "C"
-void
-C_ZN15QGuiApplication14paletteChangedERK8QPalette(void *qthis,
-const QPalette* arg1) {
-  ((QGuiApplication*)qthis)->paletteChanged(*((const QPalette*)arg1));
+void C_ZN15QGuiApplication13setWindowIconERK5QIcon(const QIcon & icon) {
+  QGuiApplication::setWindowIcon(icon);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 121, column 18>
-//   // proto: static QFont QGuiApplication::font();
-// _ZN15QGuiApplication4fontEv font()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:101
+// QIcon windowIcon()
 extern "C"
-QFont*
-C_ZN15QGuiApplication4fontEv() {
-  auto ret =
-  QGuiApplication::font();
-  return new QFont(ret); // 5
+void C_ZN15QGuiApplication10windowIconEv() {
+  /*return*/ QGuiApplication::windowIcon();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 173, column 10>
-//   // proto:  void QGuiApplication::screenAdded(QScreen * screen);
-// _ZN15QGuiApplication11screenAddedEP7QScreen screenAdded(class QScreen *)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:103
+// QString platformName()
 extern "C"
-void
-C_ZN15QGuiApplication11screenAddedEP7QScreen(void *qthis,
-QScreen * arg1) {
-  ((QGuiApplication*)qthis)->screenAdded(arg1);
+void C_ZN15QGuiApplication12platformNameEv() {
+  /*return*/ QGuiApplication::platformName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 161, column 10>
-//   // proto:  bool QGuiApplication::isSessionRestored();
-// _ZNK15QGuiApplication17isSessionRestoredEv isSessionRestored()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:105
+// QWindow * modalWindow()
 extern "C"
-bool
-C_ZNK15QGuiApplication17isSessionRestoredEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->isSessionRestored();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN15QGuiApplication11modalWindowEv() {
+  /*return*/ QGuiApplication::modalWindow();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 163, column 13>
-//   // proto:  QString QGuiApplication::sessionKey();
-// _ZNK15QGuiApplication10sessionKeyEv sessionKey()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:107
+// QWindow * focusWindow()
 extern "C"
-QString*
-C_ZNK15QGuiApplication10sessionKeyEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->sessionKey();
-  return new QString(ret); // 5
+void C_ZN15QGuiApplication11focusWindowEv() {
+  /*return*/ QGuiApplication::focusWindow();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 133, column 29>
-//   // proto: static Qt::MouseButtons QGuiApplication::mouseButtons();
-// _ZN15QGuiApplication12mouseButtonsEv mouseButtons()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:108
+// QObject * focusObject()
 extern "C"
-QFlags<Qt::MouseButton>*
-C_ZN15QGuiApplication12mouseButtonsEv() {
-  auto ret =
-  QGuiApplication::mouseButtons();
-  return new QFlags<Qt::MouseButton>(ret); // 5
+void C_ZN15QGuiApplication11focusObjectEv() {
+  /*return*/ QGuiApplication::focusObject();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 175, column 10>
-//   // proto:  void QGuiApplication::primaryScreenChanged(QScreen * screen);
-// _ZN15QGuiApplication20primaryScreenChangedEP7QScreen primaryScreenChanged(class QScreen *)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:110
+// QScreen * primaryScreen()
 extern "C"
-void
-C_ZN15QGuiApplication20primaryScreenChangedEP7QScreen(void *qthis,
-QScreen * arg1) {
-  ((QGuiApplication*)qthis)->primaryScreenChanged(arg1);
+void C_ZN15QGuiApplication13primaryScreenEv() {
+  /*return*/ QGuiApplication::primaryScreen();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 94, column 20>
-//   // proto: static QString QGuiApplication::desktopFileName();
-// _ZN15QGuiApplication15desktopFileNameEv desktopFileName()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:111
+// QList<QScreen *> screens()
 extern "C"
-QString*
-C_ZN15QGuiApplication15desktopFileNameEv() {
-  auto ret =
-  QGuiApplication::desktopFileName();
-  return new QString(ret); // 5
+void C_ZN15QGuiApplication7screensEv() {
+  /*return*/ QGuiApplication::screens();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 143, column 17>
-//   // proto: static bool QGuiApplication::desktopSettingsAware();
-// _ZN15QGuiApplication20desktopSettingsAwareEv desktopSettingsAware()
+// /usr/include/qt/QtGui/qguiapplication.h:112
+// qreal devicePixelRatio()
 extern "C"
-bool
-C_ZN15QGuiApplication20desktopSettingsAwareEv() {
-  auto ret =
-  QGuiApplication::desktopSettingsAware();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK15QGuiApplication16devicePixelRatioEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->devicePixelRatio();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 93, column 17>
-//   // proto: static void QGuiApplication::setDesktopFileName(const QString & name);
-// _ZN15QGuiApplication18setDesktopFileNameERK7QString setDesktopFileName(const class QString &)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:115
+// QCursor * overrideCursor()
 extern "C"
-void
-C_ZN15QGuiApplication18setDesktopFileNameERK7QString(const QString* arg1) {
-  QGuiApplication::setDesktopFileName(*((const QString*)arg1));
+void C_ZN15QGuiApplication14overrideCursorEv() {
+  /*return*/ QGuiApplication::overrideCursor();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 170, column 17>
-//   // proto: static void QGuiApplication::sync();
-// _ZN15QGuiApplication4syncEv sync()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:116
+// void setOverrideCursor(const class QCursor &)
 extern "C"
-void
-C_ZN15QGuiApplication4syncEv() {
-  QGuiApplication::sync();
+void C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(const QCursor & a0) {
+  QGuiApplication::setOverrideCursor(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 151, column 17>
-//   // proto: static void QGuiApplication::setQuitOnLastWindowClosed(bool quit);
-// _ZN15QGuiApplication25setQuitOnLastWindowClosedEb setQuitOnLastWindowClosed(_Bool)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:117
+// void changeOverrideCursor(const class QCursor &)
 extern "C"
-void
-C_ZN15QGuiApplication25setQuitOnLastWindowClosedEb(bool arg1) {
-  QGuiApplication::setQuitOnLastWindowClosed(arg1);
+void C_ZN15QGuiApplication20changeOverrideCursorERK7QCursor(const QCursor & a0) {
+  QGuiApplication::changeOverrideCursor(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 110, column 21>
-//   // proto: static QScreen * QGuiApplication::primaryScreen();
-// _ZN15QGuiApplication13primaryScreenEv primaryScreen()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:118
+// void restoreOverrideCursor()
 extern "C"
-void*
-C_ZN15QGuiApplication13primaryScreenEv() {
-  auto ret =
-  QGuiApplication::primaryScreen();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 180, column 10>
-//   // proto:  void QGuiApplication::layoutDirectionChanged(Qt::LayoutDirection direction);
-// _ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE layoutDirectionChanged(Qt::LayoutDirection)
-extern "C"
-void
-C_ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(void *qthis,
-Qt::LayoutDirection* arg1) {
-  ((QGuiApplication*)qthis)->layoutDirectionChanged(*((Qt::LayoutDirection*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 115, column 21>
-//   // proto: static QCursor * QGuiApplication::overrideCursor();
-// _ZN15QGuiApplication14overrideCursorEv overrideCursor()
-extern "C"
-void*
-C_ZN15QGuiApplication14overrideCursorEv() {
-  auto ret =
-  QGuiApplication::overrideCursor();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 172, column 10>
-//   // proto:  void QGuiApplication::fontDatabaseChanged();
-// _ZN15QGuiApplication19fontDatabaseChangedEv fontDatabaseChanged()
-extern "C"
-void
-C_ZN15QGuiApplication19fontDatabaseChangedEv(void *qthis) {
-  ((QGuiApplication*)qthis)->fontDatabaseChanged();
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 101, column 18>
-//   // proto: static QIcon QGuiApplication::windowIcon();
-// _ZN15QGuiApplication10windowIconEv windowIcon()
-extern "C"
-QIcon*
-C_ZN15QGuiApplication10windowIconEv() {
-  auto ret =
-  QGuiApplication::windowIcon();
-  return new QIcon(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 141, column 25>
-//   // proto: static QStyleHints * QGuiApplication::styleHints();
-// _ZN15QGuiApplication10styleHintsEv styleHints()
-extern "C"
-void*
-C_ZN15QGuiApplication10styleHintsEv() {
-  auto ret =
-  QGuiApplication::styleHints();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 125, column 24>
-//   // proto: static QClipboard * QGuiApplication::clipboard();
-// _ZN15QGuiApplication9clipboardEv clipboard()
-extern "C"
-void*
-C_ZN15QGuiApplication9clipboardEv() {
-  auto ret =
-  QGuiApplication::clipboard();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 128, column 21>
-//   // proto: static QPalette QGuiApplication::palette();
-// _ZN15QGuiApplication7paletteEv palette()
-extern "C"
-QPalette*
-C_ZN15QGuiApplication7paletteEv() {
-  auto ret =
-  QGuiApplication::palette();
-  return new QPalette(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 157, column 10>
-//   // proto:  bool QGuiApplication::notify(QObject * , QEvent * );
-// _ZN15QGuiApplication6notifyEP7QObjectP6QEvent notify(class QObject *, class QEvent *)
-extern "C"
-bool
-C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *qthis,
-QObject * arg1,
-QEvent * arg2) {
-  auto ret =
-  ((QGuiApplication*)qthis)->notify(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 97, column 24>
-//   // proto: static QWindowList QGuiApplication::topLevelWindows();
-// _ZN15QGuiApplication15topLevelWindowsEv topLevelWindows()
-extern "C"
-QList<QWindow *>*
-C_ZN15QGuiApplication15topLevelWindowsEv() {
-  auto ret =
-  QGuiApplication::topLevelWindows();
-  return new QList<QWindow *>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 138, column 24>
-//   // proto: static bool QGuiApplication::isRightToLeft();
-// _ZN15QGuiApplication13isRightToLeftEv isRightToLeft()
-extern "C"
-bool
-C_ZN15QGuiApplication13isRightToLeftEv() {
-  auto ret =
-  QGuiApplication::isRightToLeft();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 177, column 10>
-//   // proto:  void QGuiApplication::focusObjectChanged(QObject * focusObject);
-// _ZN15QGuiApplication18focusObjectChangedEP7QObject focusObjectChanged(class QObject *)
-extern "C"
-void
-C_ZN15QGuiApplication18focusObjectChangedEP7QObject(void *qthis,
-QObject * arg1) {
-  ((QGuiApplication*)qthis)->focusObjectChanged(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 167, column 17>
-//   // proto: static void QGuiApplication::setFallbackSessionManagementEnabled(bool );
-// _ZN15QGuiApplication35setFallbackSessionManagementEnabledEb setFallbackSessionManagementEnabled(_Bool)
-extern "C"
-void
-C_ZN15QGuiApplication35setFallbackSessionManagementEnabledEb(bool arg1) {
-  QGuiApplication::setFallbackSessionManagementEnabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 117, column 17>
-//   // proto: static void QGuiApplication::changeOverrideCursor(const QCursor & );
-// _ZN15QGuiApplication20changeOverrideCursorERK7QCursor changeOverrideCursor(const class QCursor &)
-extern "C"
-void
-C_ZN15QGuiApplication20changeOverrideCursorERK7QCursor(const QCursor* arg1) {
-  QGuiApplication::changeOverrideCursor(*((const QCursor*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 154, column 33>
-//   // proto: static Qt::ApplicationState QGuiApplication::applicationState();
-// _ZN15QGuiApplication16applicationStateEv applicationState()
-extern "C"
-Qt::ApplicationState
-C_ZN15QGuiApplication16applicationStateEv() {
-  auto ret =
-  QGuiApplication::applicationState();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 96, column 24>
-//   // proto: static QWindowList QGuiApplication::allWindows();
-// _ZN15QGuiApplication10allWindowsEv allWindows()
-extern "C"
-QList<QWindow *>*
-C_ZN15QGuiApplication10allWindowsEv() {
-  auto ret =
-  QGuiApplication::allWindows();
-  return new QList<QWindow *>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 116, column 17>
-//   // proto: static void QGuiApplication::setOverrideCursor(const QCursor & );
-// _ZN15QGuiApplication17setOverrideCursorERK7QCursor setOverrideCursor(const class QCursor &)
-extern "C"
-void
-C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(const QCursor* arg1) {
-  QGuiApplication::setOverrideCursor(*((const QCursor*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 182, column 10>
-//   // proto:  void QGuiApplication::commitDataRequest(QSessionManager & sessionManager);
-// _ZN15QGuiApplication17commitDataRequestER15QSessionManager commitDataRequest(class QSessionManager &)
-extern "C"
-void
-C_ZN15QGuiApplication17commitDataRequestER15QSessionManager(void *qthis,
-QSessionManager* arg1) {
-  ((QGuiApplication*)qthis)->commitDataRequest(*((QSessionManager*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 100, column 17>
-//   // proto: static void QGuiApplication::setWindowIcon(const QIcon & icon);
-// _ZN15QGuiApplication13setWindowIconERK5QIcon setWindowIcon(const class QIcon &)
-extern "C"
-void
-C_ZN15QGuiApplication13setWindowIconERK5QIcon(const QIcon* arg1) {
-  QGuiApplication::setWindowIcon(*((const QIcon*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 162, column 13>
-//   // proto:  QString QGuiApplication::sessionId();
-// _ZNK15QGuiApplication9sessionIdEv sessionId()
-extern "C"
-QString*
-C_ZNK15QGuiApplication9sessionIdEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->sessionId();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 135, column 17>
-//   // proto: static void QGuiApplication::setLayoutDirection(Qt::LayoutDirection direction);
-// _ZN15QGuiApplication18setLayoutDirectionEN2Qt15LayoutDirectionE setLayoutDirection(Qt::LayoutDirection)
-extern "C"
-void
-C_ZN15QGuiApplication18setLayoutDirectionEN2Qt15LayoutDirectionE(Qt::LayoutDirection* arg1) {
-  QGuiApplication::setLayoutDirection(*((Qt::LayoutDirection*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 179, column 10>
-//   // proto:  void QGuiApplication::applicationStateChanged(Qt::ApplicationState state);
-// _ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE applicationStateChanged(Qt::ApplicationState)
-extern "C"
-void
-C_ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(void *qthis,
-Qt::ApplicationState* arg1) {
-  ((QGuiApplication*)qthis)->applicationStateChanged(*((Qt::ApplicationState*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 178, column 10>
-//   // proto:  void QGuiApplication::focusWindowChanged(QWindow * focusWindow);
-// _ZN15QGuiApplication18focusWindowChangedEP7QWindow focusWindowChanged(class QWindow *)
-extern "C"
-void
-C_ZN15QGuiApplication18focusWindowChangedEP7QWindow(void *qthis,
-QWindow * arg1) {
-  ((QGuiApplication*)qthis)->focusWindowChanged(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 90, column 17>
-//   // proto: static void QGuiApplication::setApplicationDisplayName(const QString & name);
-// _ZN15QGuiApplication25setApplicationDisplayNameERK7QString setApplicationDisplayName(const class QString &)
-extern "C"
-void
-C_ZN15QGuiApplication25setApplicationDisplayNameERK7QString(const QString* arg1) {
-  QGuiApplication::setApplicationDisplayName(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 139, column 24>
-//   // proto: static bool QGuiApplication::isLeftToRight();
-// _ZN15QGuiApplication13isLeftToRightEv isLeftToRight()
-extern "C"
-bool
-C_ZN15QGuiApplication13isLeftToRightEv() {
-  auto ret =
-  QGuiApplication::isLeftToRight();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 98, column 21>
-//   // proto: static QWindow * QGuiApplication::topLevelAt(const QPoint & pos);
-// _ZN15QGuiApplication10topLevelAtERK6QPoint topLevelAt(const class QPoint &)
-extern "C"
-void*
-C_ZN15QGuiApplication10topLevelAtERK6QPoint(const QPoint* arg1) {
-  auto ret =
-  QGuiApplication::topLevelAt(*((const QPoint*)arg1));
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 136, column 32>
-//   // proto: static Qt::LayoutDirection QGuiApplication::layoutDirection();
-// _ZN15QGuiApplication15layoutDirectionEv layoutDirection()
-extern "C"
-Qt::LayoutDirection
-C_ZN15QGuiApplication15layoutDirectionEv() {
-  auto ret =
-  QGuiApplication::layoutDirection();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 86, column 5>
-//   // proto:  void QGuiApplication::QGuiApplication(int & argc, char ** argv, int );
-extern "C"
-QGuiApplication*
-C_ZN15QGuiApplicationC2ERiPPci(int* arg1,
-char ** arg2,
-int arg3) {
-  auto ret = new QGuiApplication(*((int*)arg1),
-arg2,
-arg3);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 142, column 17>
-//   // proto: static void QGuiApplication::setDesktopSettingsAware(bool on);
-// _ZN15QGuiApplication23setDesktopSettingsAwareEb setDesktopSettingsAware(_Bool)
-extern "C"
-void
-C_ZN15QGuiApplication23setDesktopSettingsAwareEb(bool arg1) {
-  QGuiApplication::setDesktopSettingsAware(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 105, column 21>
-//   // proto: static QWindow * QGuiApplication::modalWindow();
-// _ZN15QGuiApplication11modalWindowEv modalWindow()
-extern "C"
-void*
-C_ZN15QGuiApplication11modalWindowEv() {
-  auto ret =
-  QGuiApplication::modalWindow();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 91, column 20>
-//   // proto: static QString QGuiApplication::applicationDisplayName();
-// _ZN15QGuiApplication22applicationDisplayNameEv applicationDisplayName()
-extern "C"
-QString*
-C_ZN15QGuiApplication22applicationDisplayNameEv() {
-  auto ret =
-  QGuiApplication::applicationDisplayName();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 156, column 16>
-//   // proto: static int QGuiApplication::exec();
-// _ZN15QGuiApplication4execEv exec()
-extern "C"
-int
-C_ZN15QGuiApplication4execEv() {
-  auto ret =
-  QGuiApplication::exec();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 152, column 17>
-//   // proto: static bool QGuiApplication::quitOnLastWindowClosed();
-// _ZN15QGuiApplication22quitOnLastWindowClosedEv quitOnLastWindowClosed()
-extern "C"
-bool
-C_ZN15QGuiApplication22quitOnLastWindowClosedEv() {
-  auto ret =
-  QGuiApplication::quitOnLastWindowClosed();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 176, column 10>
-//   // proto:  void QGuiApplication::lastWindowClosed();
-// _ZN15QGuiApplication16lastWindowClosedEv lastWindowClosed()
-extern "C"
-void
-C_ZN15QGuiApplication16lastWindowClosedEv(void *qthis) {
-  ((QGuiApplication*)qthis)->lastWindowClosed();
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 118, column 17>
-//   // proto: static void QGuiApplication::restoreOverrideCursor();
-// _ZN15QGuiApplication21restoreOverrideCursorEv restoreOverrideCursor()
-extern "C"
-void
-C_ZN15QGuiApplication21restoreOverrideCursorEv() {
+void C_ZN15QGuiApplication21restoreOverrideCursorEv() {
   QGuiApplication::restoreOverrideCursor();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 147, column 38>
-//   // proto: static QPlatformNativeInterface * QGuiApplication::platformNativeInterface();
-// _ZN15QGuiApplication23platformNativeInterfaceEv platformNativeInterface()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:121
+// QFont font()
 extern "C"
-void*
-C_ZN15QGuiApplication23platformNativeInterfaceEv() {
-  auto ret =
-  QGuiApplication::platformNativeInterface();
-  return (void*)ret;
+void C_ZN15QGuiApplication4fontEv() {
+  /*return*/ QGuiApplication::font();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 73, column 5>
-//   // proto:  const QMetaObject * QGuiApplication::metaObject();
-// _ZNK15QGuiApplication10metaObjectEv metaObject()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:122
+// void setFont(const class QFont &)
 extern "C"
-void*
-C_ZNK15QGuiApplication10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN15QGuiApplication7setFontERK5QFont(const QFont & a0) {
+  QGuiApplication::setFont(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 108, column 21>
-//   // proto: static QObject * QGuiApplication::focusObject();
-// _ZN15QGuiApplication11focusObjectEv focusObject()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:125
+// QClipboard * clipboard()
 extern "C"
-void*
-C_ZN15QGuiApplication11focusObjectEv() {
-  auto ret =
-  QGuiApplication::focusObject();
-  return (void*)ret;
+void C_ZN15QGuiApplication9clipboardEv() {
+  /*return*/ QGuiApplication::clipboard();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 174, column 10>
-//   // proto:  void QGuiApplication::screenRemoved(QScreen * screen);
-// _ZN15QGuiApplication13screenRemovedEP7QScreen screenRemoved(class QScreen *)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:128
+// QPalette palette()
 extern "C"
-void
-C_ZN15QGuiApplication13screenRemovedEP7QScreen(void *qthis,
-QScreen * arg1) {
-  ((QGuiApplication*)qthis)->screenRemoved(arg1);
+void C_ZN15QGuiApplication7paletteEv() {
+  /*return*/ QGuiApplication::palette();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 107, column 21>
-//   // proto: static QWindow * QGuiApplication::focusWindow();
-// _ZN15QGuiApplication11focusWindowEv focusWindow()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:129
+// void setPalette(const class QPalette &)
 extern "C"
-void*
-C_ZN15QGuiApplication11focusWindowEv() {
-  auto ret =
-  QGuiApplication::focusWindow();
-  return (void*)ret;
+void C_ZN15QGuiApplication10setPaletteERK8QPalette(const QPalette & pal) {
+  QGuiApplication::setPalette(pal);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 132, column 34>
-//   // proto: static Qt::KeyboardModifiers QGuiApplication::queryKeyboardModifiers();
-// _ZN15QGuiApplication22queryKeyboardModifiersEv queryKeyboardModifiers()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:131
+// Qt::KeyboardModifiers keyboardModifiers()
 extern "C"
-QFlags<Qt::KeyboardModifier>*
-C_ZN15QGuiApplication22queryKeyboardModifiersEv() {
-  auto ret =
-  QGuiApplication::queryKeyboardModifiers();
-  return new QFlags<Qt::KeyboardModifier>(ret); // 5
+void C_ZN15QGuiApplication17keyboardModifiersEv() {
+  /*return*/ QGuiApplication::keyboardModifiers();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 183, column 10>
-//   // proto:  void QGuiApplication::saveStateRequest(QSessionManager & sessionManager);
-// _ZN15QGuiApplication16saveStateRequestER15QSessionManager saveStateRequest(class QSessionManager &)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:132
+// Qt::KeyboardModifiers queryKeyboardModifiers()
 extern "C"
-void
-C_ZN15QGuiApplication16saveStateRequestER15QSessionManager(void *qthis,
-QSessionManager* arg1) {
-  ((QGuiApplication*)qthis)->saveStateRequest(*((QSessionManager*)arg1));
+void C_ZN15QGuiApplication22queryKeyboardModifiersEv() {
+  /*return*/ QGuiApplication::queryKeyboardModifiers();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 112, column 11>
-//   // proto:  qreal QGuiApplication::devicePixelRatio();
-// _ZNK15QGuiApplication16devicePixelRatioEv devicePixelRatio()
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:133
+// Qt::MouseButtons mouseButtons()
 extern "C"
-double
-C_ZNK15QGuiApplication16devicePixelRatioEv(void *qthis) {
-  auto ret =
-  ((QGuiApplication*)qthis)->devicePixelRatio();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN15QGuiApplication12mouseButtonsEv() {
+  /*return*/ QGuiApplication::mouseButtons();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qguiapplication.h', line 149, column 29>
-//   // proto: static QFunctionPointer QGuiApplication::platformFunction(const QByteArray & function);
-// _ZN15QGuiApplication16platformFunctionERK10QByteArray platformFunction(const class QByteArray &)
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:135
+// void setLayoutDirection(Qt::LayoutDirection)
 extern "C"
-void*
-C_ZN15QGuiApplication16platformFunctionERK10QByteArray(const QByteArray* arg1) {
-  auto ret =
-  QGuiApplication::platformFunction(*((const QByteArray*)arg1));
-  return (void*)ret;
+void C_ZN15QGuiApplication18setLayoutDirectionEN2Qt15LayoutDirectionE(Qt::LayoutDirection direction) {
+  QGuiApplication::setLayoutDirection(direction);
 }
-// <= ext block end
-
-// body block begin =>
-// QGuiApplication_SlotProxy here
-class QGuiApplication_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QGuiApplication_SlotProxy():QObject(){}
-
-public slots:
-  // focusObjectChanged(class QObject *)
-  void slot_proxy_func__ZN15QGuiApplication18focusObjectChangedEP7QObject(QObject * arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication18focusObjectChangedEP7QObject)(void* rsfptr, QObject * arg0) = NULL;
-public slots:
-  // fontDatabaseChanged()
-  void slot_proxy_func__ZN15QGuiApplication19fontDatabaseChangedEv();
-public:
-  void (*slot_func__ZN15QGuiApplication19fontDatabaseChangedEv)(void* rsfptr) = NULL;
-public slots:
-  // applicationStateChanged(Qt::ApplicationState)
-  void slot_proxy_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(Qt::ApplicationState arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE)(void* rsfptr, Qt::ApplicationState arg0) = NULL;
-public slots:
-  // primaryScreenChanged(class QScreen *)
-  void slot_proxy_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(QScreen * arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen)(void* rsfptr, QScreen * arg0) = NULL;
-public slots:
-  // layoutDirectionChanged(Qt::LayoutDirection)
-  void slot_proxy_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE)(void* rsfptr, Qt::LayoutDirection arg0) = NULL;
-public slots:
-  // commitDataRequest(class QSessionManager &)
-  void slot_proxy_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager(QSessionManager & arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager)(void* rsfptr, QSessionManager & arg0) = NULL;
-public slots:
-  // paletteChanged(const class QPalette &)
-  void slot_proxy_func__ZN15QGuiApplication14paletteChangedERK8QPalette(const QPalette & arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication14paletteChangedERK8QPalette)(void* rsfptr, const QPalette & arg0) = NULL;
-public slots:
-  // screenRemoved(class QScreen *)
-  void slot_proxy_func__ZN15QGuiApplication13screenRemovedEP7QScreen(QScreen * arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication13screenRemovedEP7QScreen)(void* rsfptr, QScreen * arg0) = NULL;
-public slots:
-  // screenAdded(class QScreen *)
-  void slot_proxy_func__ZN15QGuiApplication11screenAddedEP7QScreen(QScreen * arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication11screenAddedEP7QScreen)(void* rsfptr, QScreen * arg0) = NULL;
-public slots:
-  // focusWindowChanged(class QWindow *)
-  void slot_proxy_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow(QWindow * arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow)(void* rsfptr, QWindow * arg0) = NULL;
-public slots:
-  // lastWindowClosed()
-  void slot_proxy_func__ZN15QGuiApplication16lastWindowClosedEv();
-public:
-  void (*slot_func__ZN15QGuiApplication16lastWindowClosedEv)(void* rsfptr) = NULL;
-public slots:
-  // saveStateRequest(class QSessionManager &)
-  void slot_proxy_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager(QSessionManager & arg0);
-public:
-  void (*slot_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager)(void* rsfptr, QSessionManager & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/gui/qguiapplication.moc"
-
-extern "C" {
-  QGuiApplication_SlotProxy* QGuiApplication_SlotProxy_new()
-  {
-    return new QGuiApplication_SlotProxy();
-  }
-};
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication18focusObjectChangedEP7QObject(QObject * arg0) {
-  if (this->slot_func__ZN15QGuiApplication18focusObjectChangedEP7QObject != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication18focusObjectChangedEP7QObject(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:136
+// Qt::LayoutDirection layoutDirection()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication18focusObjectChangedEP7QObject(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication18focusObjectChangedEP7QObject = (decltype(that->slot_func__ZN15QGuiApplication18focusObjectChangedEP7QObject))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(focusObjectChanged(class QObject *)), that, SLOT(slot_proxy_func__ZN15QGuiApplication18focusObjectChangedEP7QObject(QObject * arg0)));
-  return that;
+void C_ZN15QGuiApplication15layoutDirectionEv() {
+  /*return*/ QGuiApplication::layoutDirection();
 }
+// static inline
+// /usr/include/qt/QtGui/qguiapplication.h:138
+// bool isRightToLeft()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication18focusObjectChangedEP7QObject(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication13isRightToLeftEv() {
+  /*return*/ QGuiApplication::isRightToLeft();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication19fontDatabaseChangedEv() {
-  if (this->slot_func__ZN15QGuiApplication19fontDatabaseChangedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication19fontDatabaseChangedEv(this->rsfptr);
-  }
-}
+// static inline
+// /usr/include/qt/QtGui/qguiapplication.h:139
+// bool isLeftToRight()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication19fontDatabaseChangedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication19fontDatabaseChangedEv = (decltype(that->slot_func__ZN15QGuiApplication19fontDatabaseChangedEv))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(fontDatabaseChanged()), that, SLOT(slot_proxy_func__ZN15QGuiApplication19fontDatabaseChangedEv()));
-  return that;
+void C_ZN15QGuiApplication13isLeftToRightEv() {
+  /*return*/ QGuiApplication::isLeftToRight();
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:141
+// QStyleHints * styleHints()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication19fontDatabaseChangedEv(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication10styleHintsEv() {
+  /*return*/ QGuiApplication::styleHints();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(Qt::ApplicationState arg0) {
-  if (this->slot_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:142
+// void setDesktopSettingsAware(_Bool)
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE = (decltype(that->slot_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(applicationStateChanged(Qt::ApplicationState)), that, SLOT(slot_proxy_func__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(Qt::ApplicationState arg0)));
-  return that;
+void C_ZN15QGuiApplication23setDesktopSettingsAwareEb(bool on) {
+  QGuiApplication::setDesktopSettingsAware(on);
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:143
+// bool desktopSettingsAware()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication20desktopSettingsAwareEv() {
+  /*return*/ QGuiApplication::desktopSettingsAware();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(QScreen * arg0) {
-  if (this->slot_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:145
+// QInputMethod * inputMethod()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen = (decltype(that->slot_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(primaryScreenChanged(class QScreen *)), that, SLOT(slot_proxy_func__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(QScreen * arg0)));
-  return that;
+void C_ZN15QGuiApplication11inputMethodEv() {
+  /*return*/ QGuiApplication::inputMethod();
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:147
+// QPlatformNativeInterface * platformNativeInterface()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication20primaryScreenChangedEP7QScreen(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication23platformNativeInterfaceEv() {
+  /*return*/ QGuiApplication::platformNativeInterface();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0) {
-  if (this->slot_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:149
+// QFunctionPointer platformFunction(const class QByteArray &)
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE = (decltype(that->slot_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(layoutDirectionChanged(Qt::LayoutDirection)), that, SLOT(slot_proxy_func__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(Qt::LayoutDirection arg0)));
-  return that;
+void C_ZN15QGuiApplication16platformFunctionERK10QByteArray(const QByteArray & function) {
+  /*return*/ QGuiApplication::platformFunction(function);
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:151
+// void setQuitOnLastWindowClosed(_Bool)
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication25setQuitOnLastWindowClosedEb(bool quit) {
+  QGuiApplication::setQuitOnLastWindowClosed(quit);
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager(QSessionManager & arg0) {
-  if (this->slot_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:152
+// bool quitOnLastWindowClosed()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication17commitDataRequestER15QSessionManager(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager = (decltype(that->slot_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(commitDataRequest(class QSessionManager &)), that, SLOT(slot_proxy_func__ZN15QGuiApplication17commitDataRequestER15QSessionManager(QSessionManager & arg0)));
-  return that;
+void C_ZN15QGuiApplication22quitOnLastWindowClosedEv() {
+  /*return*/ QGuiApplication::quitOnLastWindowClosed();
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:154
+// Qt::ApplicationState applicationState()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication17commitDataRequestER15QSessionManager(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication16applicationStateEv() {
+  /*return*/ QGuiApplication::applicationState();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication14paletteChangedERK8QPalette(const QPalette & arg0) {
-  if (this->slot_func__ZN15QGuiApplication14paletteChangedERK8QPalette != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication14paletteChangedERK8QPalette(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:156
+// int exec()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication14paletteChangedERK8QPalette(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication14paletteChangedERK8QPalette = (decltype(that->slot_func__ZN15QGuiApplication14paletteChangedERK8QPalette))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(paletteChanged(const class QPalette &)), that, SLOT(slot_proxy_func__ZN15QGuiApplication14paletteChangedERK8QPalette(const QPalette & arg0)));
-  return that;
+void C_ZN15QGuiApplication4execEv() {
+  /*return*/ QGuiApplication::exec();
 }
+// virtual
+// /usr/include/qt/QtGui/qguiapplication.h:157
+// bool notify(class QObject *, class QEvent *)
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication14paletteChangedERK8QPalette(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * a0, QEvent * a1) {
+  /*return*/ ((QGuiApplication*)this_)->notify(a0, a1);
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication13screenRemovedEP7QScreen(QScreen * arg0) {
-  if (this->slot_func__ZN15QGuiApplication13screenRemovedEP7QScreen != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication13screenRemovedEP7QScreen(this->rsfptr, arg0);
-  }
-}
+// /usr/include/qt/QtGui/qguiapplication.h:161
+// bool isSessionRestored()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication13screenRemovedEP7QScreen(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication13screenRemovedEP7QScreen = (decltype(that->slot_func__ZN15QGuiApplication13screenRemovedEP7QScreen))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(screenRemoved(class QScreen *)), that, SLOT(slot_proxy_func__ZN15QGuiApplication13screenRemovedEP7QScreen(QScreen * arg0)));
-  return that;
+void C_ZNK15QGuiApplication17isSessionRestoredEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->isSessionRestored();
 }
+// /usr/include/qt/QtGui/qguiapplication.h:162
+// QString sessionId()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication13screenRemovedEP7QScreen(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZNK15QGuiApplication9sessionIdEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->sessionId();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication11screenAddedEP7QScreen(QScreen * arg0) {
-  if (this->slot_func__ZN15QGuiApplication11screenAddedEP7QScreen != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication11screenAddedEP7QScreen(this->rsfptr, arg0);
-  }
-}
+// /usr/include/qt/QtGui/qguiapplication.h:163
+// QString sessionKey()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication11screenAddedEP7QScreen(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication11screenAddedEP7QScreen = (decltype(that->slot_func__ZN15QGuiApplication11screenAddedEP7QScreen))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(screenAdded(class QScreen *)), that, SLOT(slot_proxy_func__ZN15QGuiApplication11screenAddedEP7QScreen(QScreen * arg0)));
-  return that;
+void C_ZNK15QGuiApplication10sessionKeyEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->sessionKey();
 }
+// /usr/include/qt/QtGui/qguiapplication.h:164
+// bool isSavingSession()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication11screenAddedEP7QScreen(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZNK15QGuiApplication15isSavingSessionEv(void *this_) {
+  /*return*/ ((QGuiApplication*)this_)->isSavingSession();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow(QWindow * arg0) {
-  if (this->slot_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow(this->rsfptr, arg0);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:166
+// bool isFallbackSessionManagementEnabled()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication18focusWindowChangedEP7QWindow(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow = (decltype(that->slot_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(focusWindowChanged(class QWindow *)), that, SLOT(slot_proxy_func__ZN15QGuiApplication18focusWindowChangedEP7QWindow(QWindow * arg0)));
-  return that;
+void C_ZN15QGuiApplication34isFallbackSessionManagementEnabledEv() {
+  /*return*/ QGuiApplication::isFallbackSessionManagementEnabled();
 }
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:167
+// void setFallbackSessionManagementEnabled(_Bool)
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication18focusWindowChangedEP7QWindow(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication35setFallbackSessionManagementEnabledEb(bool a0) {
+  QGuiApplication::setFallbackSessionManagementEnabled(a0);
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication16lastWindowClosedEv() {
-  if (this->slot_func__ZN15QGuiApplication16lastWindowClosedEv != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication16lastWindowClosedEv(this->rsfptr);
-  }
-}
+// static
+// /usr/include/qt/QtGui/qguiapplication.h:170
+// void sync()
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication16lastWindowClosedEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication16lastWindowClosedEv = (decltype(that->slot_func__ZN15QGuiApplication16lastWindowClosedEv))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(lastWindowClosed()), that, SLOT(slot_proxy_func__ZN15QGuiApplication16lastWindowClosedEv()));
-  return that;
+void C_ZN15QGuiApplication4syncEv() {
+  QGuiApplication::sync();
 }
+// /usr/include/qt/QtGui/qguiapplication.h:172
+// void fontDatabaseChanged()
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication16lastWindowClosedEv(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication19fontDatabaseChangedEv(void *this_) {
+  ((QGuiApplication*)this_)->fontDatabaseChanged();
 }
-
-void QGuiApplication_SlotProxy::slot_proxy_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager(QSessionManager & arg0) {
-  if (this->slot_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager != NULL) {
-    // do smth...
-    this->slot_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager(this->rsfptr, arg0);
-  }
-}
+// /usr/include/qt/QtGui/qguiapplication.h:173
+// void screenAdded(class QScreen *)
 extern "C"
-void* QGuiApplication_SlotProxy_connect__ZN15QGuiApplication16saveStateRequestER15QSessionManager(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QGuiApplication_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager = (decltype(that->slot_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager))ffifptr;
-  QObject::connect((QGuiApplication*)sender, SIGNAL(saveStateRequest(class QSessionManager &)), that, SLOT(slot_proxy_func__ZN15QGuiApplication16saveStateRequestER15QSessionManager(QSessionManager & arg0)));
-  return that;
+void C_ZN15QGuiApplication11screenAddedEP7QScreen(void *this_, QScreen * screen) {
+  ((QGuiApplication*)this_)->screenAdded(screen);
 }
+// /usr/include/qt/QtGui/qguiapplication.h:174
+// void screenRemoved(class QScreen *)
 extern "C"
-void QGuiApplication_SlotProxy_disconnect__ZN15QGuiApplication16saveStateRequestER15QSessionManager(QGuiApplication_SlotProxy* that) {
-  that->disconnect();
-  delete that;
+void C_ZN15QGuiApplication13screenRemovedEP7QScreen(void *this_, QScreen * screen) {
+  ((QGuiApplication*)this_)->screenRemoved(screen);
 }
-
-// <= body block end
-
+// /usr/include/qt/QtGui/qguiapplication.h:175
+// void primaryScreenChanged(class QScreen *)
+extern "C"
+void C_ZN15QGuiApplication20primaryScreenChangedEP7QScreen(void *this_, QScreen * screen) {
+  ((QGuiApplication*)this_)->primaryScreenChanged(screen);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:176
+// void lastWindowClosed()
+extern "C"
+void C_ZN15QGuiApplication16lastWindowClosedEv(void *this_) {
+  ((QGuiApplication*)this_)->lastWindowClosed();
+}
+// /usr/include/qt/QtGui/qguiapplication.h:177
+// void focusObjectChanged(class QObject *)
+extern "C"
+void C_ZN15QGuiApplication18focusObjectChangedEP7QObject(void *this_, QObject * focusObject) {
+  ((QGuiApplication*)this_)->focusObjectChanged(focusObject);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:178
+// void focusWindowChanged(class QWindow *)
+extern "C"
+void C_ZN15QGuiApplication18focusWindowChangedEP7QWindow(void *this_, QWindow * focusWindow) {
+  ((QGuiApplication*)this_)->focusWindowChanged(focusWindow);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:179
+// void applicationStateChanged(Qt::ApplicationState)
+extern "C"
+void C_ZN15QGuiApplication23applicationStateChangedEN2Qt16ApplicationStateE(void *this_, Qt::ApplicationState state) {
+  ((QGuiApplication*)this_)->applicationStateChanged(state);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:180
+// void layoutDirectionChanged(Qt::LayoutDirection)
+extern "C"
+void C_ZN15QGuiApplication22layoutDirectionChangedEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection direction) {
+  ((QGuiApplication*)this_)->layoutDirectionChanged(direction);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:182
+// void commitDataRequest(class QSessionManager &)
+extern "C"
+void C_ZN15QGuiApplication17commitDataRequestER15QSessionManager(void *this_, QSessionManager & sessionManager) {
+  ((QGuiApplication*)this_)->commitDataRequest(sessionManager);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:183
+// void saveStateRequest(class QSessionManager &)
+extern "C"
+void C_ZN15QGuiApplication16saveStateRequestER15QSessionManager(void *this_, QSessionManager & sessionManager) {
+  ((QGuiApplication*)this_)->saveStateRequest(sessionManager);
+}
+// /usr/include/qt/QtGui/qguiapplication.h:185
+// void paletteChanged(const class QPalette &)
+extern "C"
+void C_ZN15QGuiApplication14paletteChangedERK8QPalette(void *this_, const QPalette & pal) {
+  ((QGuiApplication*)this_)->paletteChanged(pal);
+}

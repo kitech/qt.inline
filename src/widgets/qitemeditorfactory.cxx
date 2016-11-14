@@ -1,146 +1,52 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qitemeditorfactory.h
-// dst-file: /src/widgets/qitemeditorfactory.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #include <qitemeditorfactory.h>
+#include <QtWidgets>
 
-
-#include <qbytearray.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qitemeditorfactory_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 98, column 12>
-//   // proto:  void QItemEditorFactory::QItemEditorFactory();
-if (true) {
-  auto f = []() {
-    new QItemEditorFactory();
-  };
-  if (f == nullptr){}
-}
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
+// void QItemEditorFactory()
 extern "C"
-int QItemEditorCreatorBase_Class_Size()
-{
-  return sizeof(QItemEditorCreatorBase);
+void* C_ZN18QItemEditorFactoryC1Ev() {
+  return new QItemEditorFactory();
 }
-
+// virtual
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
+// void ~QItemEditorFactory()
 extern "C"
-int QItemEditorFactory_Class_Size()
-{
-  return sizeof(QItemEditorFactory);
+void C_ZN18QItemEditorFactoryD1Ev(void *this_) {
+  delete (QItemEditorFactory*)(this_);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 61, column 24>
-//   // proto:  QByteArray QItemEditorCreatorBase::valuePropertyName();
-// _ZNK22QItemEditorCreatorBase17valuePropertyNameEv valuePropertyName()
+// virtual
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:101
+// QWidget * createEditor(int, class QWidget *)
 extern "C"
-QByteArray*
-C_ZNK22QItemEditorCreatorBase17valuePropertyNameEv(void *qthis) {
-  auto ret =
-  ((QItemEditorCreatorBase*)qthis)->valuePropertyName();
-  return new QByteArray(ret); // 5
+void C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userType, QWidget * parent) {
+  /*return*/ ((QItemEditorFactory*)this_)->createEditor(userType, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 60, column 22>
-//   // proto:  QWidget * QItemEditorCreatorBase::createWidget(QWidget * parent);
-// _ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget createWidget(class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:102
+// QByteArray valuePropertyName(int)
 extern "C"
-void*
-C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *qthis,
-QWidget * arg1) {
-  auto ret =
-  ((QItemEditorCreatorBase*)qthis)->createWidget(arg1);
-  return (void*)ret;
+void C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *this_, int userType) {
+  /*return*/ ((QItemEditorFactory*)this_)->valuePropertyName(userType);
 }
-//   // proto:  void QItemEditorCreatorBase::~QItemEditorCreatorBase();
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:104
+// void registerEditor(int, class QItemEditorCreatorBase *)
 extern "C"
-void C_ZN22QItemEditorCreatorBaseD2Ev(void *qthis) {
-  delete (QItemEditorCreatorBase*)qthis;
+void C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *this_, int userType, QItemEditorCreatorBase * creator) {
+  ((QItemEditorFactory*)this_)->registerEditor(userType, creator);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 98, column 12>
-//   // proto:  void QItemEditorFactory::QItemEditorFactory();
+// static
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:106
+// const QItemEditorFactory * defaultFactory()
 extern "C"
-QItemEditorFactory*
-C_ZN18QItemEditorFactoryC2Ev() {
-  auto ret = new QItemEditorFactory();
-  return ret;
+void C_ZN18QItemEditorFactory14defaultFactoryEv() {
+  /*return*/ QItemEditorFactory::defaultFactory();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 102, column 24>
-//   // proto:  QByteArray QItemEditorFactory::valuePropertyName(int userType);
-// _ZNK18QItemEditorFactory17valuePropertyNameEi valuePropertyName(int)
+// static
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:107
+// void setDefaultFactory(class QItemEditorFactory *)
 extern "C"
-QByteArray*
-C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QItemEditorFactory*)qthis)->valuePropertyName(arg1);
-  return new QByteArray(ret); // 5
+void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factory) {
+  QItemEditorFactory::setDefaultFactory(factory);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 106, column 38>
-//   // proto: static const QItemEditorFactory * QItemEditorFactory::defaultFactory();
-// _ZN18QItemEditorFactory14defaultFactoryEv defaultFactory()
-extern "C"
-void*
-C_ZN18QItemEditorFactory14defaultFactoryEv() {
-  auto ret =
-  QItemEditorFactory::defaultFactory();
-  return (void*)ret;
-}
-//   // proto:  void QItemEditorFactory::~QItemEditorFactory();
-extern "C"
-void C_ZN18QItemEditorFactoryD2Ev(void *qthis) {
-  delete (QItemEditorFactory*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 104, column 10>
-//   // proto:  void QItemEditorFactory::registerEditor(int userType, QItemEditorCreatorBase * creator);
-// _ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase registerEditor(int, class QItemEditorCreatorBase *)
-extern "C"
-void
-C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *qthis,
-int arg1,
-QItemEditorCreatorBase * arg2) {
-  ((QItemEditorFactory*)qthis)->registerEditor(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 107, column 17>
-//   // proto: static void QItemEditorFactory::setDefaultFactory(QItemEditorFactory * factory);
-// _ZN18QItemEditorFactory17setDefaultFactoryEPS_ setDefaultFactory(class QItemEditorFactory *)
-extern "C"
-void
-C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * arg1) {
-  QItemEditorFactory::setDefaultFactory(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qitemeditorfactory.h', line 101, column 22>
-//   // proto:  QWidget * QItemEditorFactory::createEditor(int userType, QWidget * parent);
-// _ZNK18QItemEditorFactory12createEditorEiP7QWidget createEditor(int, class QWidget *)
-extern "C"
-void*
-C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *qthis,
-int arg1,
-QWidget * arg2) {
-  auto ret =
-  ((QItemEditorFactory*)qthis)->createEditor(arg1,
-arg2);
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

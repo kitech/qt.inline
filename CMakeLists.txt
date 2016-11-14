@@ -32,22 +32,24 @@ find_package(Qt5Widgets)
 set(CMAKE_INCLUDE_CURRENT_DIR on)
 include_directories("./src")
 
-include(src/core/mod.cmake)
-include(src/gui/mod.cmake)
-include(src/widgets/mod.cmake)
-# include(src/network/mod.cmake)
-# include(src/qml/mod.cmake)
-# include(src/quick/mod.cmake)
+set(all_qt5_inline_srcs "")
+file(GLOB qt5_inline_srcs
+  src/core/*.cxx
+  src/gui/*.cxx
+  src/widgets/*.cxx
+  )
+# message(${qt5_inline_srcs})
+message("can you see that?")
+foreach(var ${qt5_inline_srcs})
+  # message(${var})
+  set(all_qt5_inline_srcs ${all_qt5_inline_srcs} ${var})
+endforeach(var)
+
 set(qt5_inline_extra_srcs src/qihotfix.cpp)
 
 set(all_qt5_inline_srcs
+  ${all_qt5_inline_srcs}
   ${qt5_inline_extra_srcs}
-  ${qt5_inline_core_srcs}
-  ${qt5_inline_gui_srcs}
-  ${qt5_inline_widgets_srcs}
-#  ${qt5_inline_network_srcs}
-#  ${qt5_inline_qml_srcs}
-#  ${qt5_inline_quick_srcs}
   )
 
 add_library(QtInline SHARED ${all_qt5_inline_srcs})

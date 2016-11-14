@@ -1,99 +1,36 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qfocusframe.h
-// dst-file: /src/widgets/qfocusframe.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qfocusframe.h
 #include <qfocusframe.h>
+#include <QtWidgets>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qfocusframe_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qfocusframe.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QFocusFrame_Class_Size()
-{
-  return sizeof(QFocusFrame);
+void C_ZNK11QFocusFrame10metaObjectEv(void *this_) {
+  /*return*/ ((QFocusFrame*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QFocusFrame::~QFocusFrame();
+// /usr/include/qt/QtWidgets/qfocusframe.h:55
+// void QFocusFrame(class QWidget *)
 extern "C"
-void C_ZN11QFocusFrameD2Ev(void *qthis) {
-  delete (QFocusFrame*)qthis;
+void* C_ZN11QFocusFrameC1EP7QWidget(QWidget * parent) {
+  return new QFocusFrame(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 53, column 5>
-//   // proto:  const QMetaObject * QFocusFrame::metaObject();
-// _ZNK11QFocusFrame10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qfocusframe.h:56
+// void ~QFocusFrame()
 extern "C"
-void*
-C_ZNK11QFocusFrame10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QFocusFrame*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN11QFocusFrameD1Ev(void *this_) {
+  delete (QFocusFrame*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 59, column 14>
-//   // proto:  QWidget * QFocusFrame::widget();
-// _ZNK11QFocusFrame6widgetEv widget()
+// /usr/include/qt/QtWidgets/qfocusframe.h:58
+// void setWidget(class QWidget *)
 extern "C"
-void*
-C_ZNK11QFocusFrame6widgetEv(void *qthis) {
-  auto ret =
-  ((QFocusFrame*)qthis)->widget();
-  return (void*)ret;
+void C_ZN11QFocusFrame9setWidgetEP7QWidget(void *this_, QWidget * widget) {
+  ((QFocusFrame*)this_)->setWidget(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 55, column 5>
-//   // proto:  void QFocusFrame::QFocusFrame(QWidget * parent);
+// /usr/include/qt/QtWidgets/qfocusframe.h:59
+// QWidget * widget()
 extern "C"
-QFocusFrame*
-C_ZN11QFocusFrameC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QFocusFrame(arg1);
-  return ret;
+void C_ZNK11QFocusFrame6widgetEv(void *this_) {
+  /*return*/ ((QFocusFrame*)this_)->widget();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qfocusframe.h', line 58, column 10>
-//   // proto:  void QFocusFrame::setWidget(QWidget * widget);
-// _ZN11QFocusFrame9setWidgetEP7QWidget setWidget(class QWidget *)
-extern "C"
-void
-C_ZN11QFocusFrame9setWidgetEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QFocusFrame*)qthis)->setWidget(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QFocusFrame_SlotProxy here
-class QFocusFrame_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QFocusFrame_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qfocusframe.moc"
-
-extern "C" {
-  QFocusFrame_SlotProxy* QFocusFrame_SlotProxy_new()
-  {
-    return new QFocusFrame_SlotProxy();
-  }
-};
-
-// <= body block end
-

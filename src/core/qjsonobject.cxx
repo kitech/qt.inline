@@ -1,489 +1,210 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qjsonobject.h
-// dst-file: /src/core/qjsonobject.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qjsonobject.h
 #include <qjsonobject.h>
+#include <QtCore>
 
-
-#include <qjsonvalue.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qjsonobject_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 85, column 16>
-//   // proto:  int QJsonObject::length();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->length();
-    flythis.length();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject6lengthEv length()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 209, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::find(QLatin1String key);
-if (true) {
-  auto f = [](QJsonObject flythis, QLatin1String arg1) {
-    ((QJsonObject*)0)->find(arg1);
-    flythis.find(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject4findE13QLatin1String find(class QLatin1String)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 64, column 5>
-//   // proto:  void QJsonObject::QJsonObject(std::initializer_list<QPair<QString, QJsonValue> > args);
-if (true) {
-  auto f = [](std::initializer_list<QPair<QString, QJsonValue> > arg1) {
-    new QJsonObject(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 195, column 21>
-//   // proto:  QJsonObject::iterator QJsonObject::begin();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->begin();
-    flythis.begin();
-  };
-  if (f == nullptr){}
-}
-// _ZN11QJsonObject5beginEv begin()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 84, column 16>
-//   // proto:  int QJsonObject::count();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->count();
-    flythis.count();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject5countEv count()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 219, column 17>
-//   // proto:  bool QJsonObject::empty();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->empty();
-    flythis.empty();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject5emptyEv empty()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 208, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::find(const QString & key);
-if (true) {
-  auto f = [](QJsonObject flythis, const QString & arg1) {
-    ((QJsonObject*)0)->find(arg1);
-    flythis.find(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject4findERK7QString find(const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 200, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constEnd();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->constEnd();
-    flythis.constEnd();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject8constEndEv constEnd()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 196, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::begin();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->begin();
-    flythis.begin();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject5beginEv begin()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 198, column 21>
-//   // proto:  QJsonObject::iterator QJsonObject::end();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->end();
-    flythis.end();
-  };
-  if (f == nullptr){}
-}
-// _ZN11QJsonObject3endEv end()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 197, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constBegin();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->constBegin();
-    flythis.constBegin();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject10constBeginEv constBegin()
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 199, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::end();
-if (true) {
-  auto f = [](QJsonObject flythis) {
-    ((QJsonObject*)0)->end();
-    flythis.end();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QJsonObject3endEv end()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qjsonobject.h:61
+// void QJsonObject()
 extern "C"
-int QJsonObject_Class_Size()
-{
-  return sizeof(QJsonObject);
+void* C_ZN11QJsonObjectC1Ev() {
+  return new QJsonObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 86, column 10>
-//   // proto:  bool QJsonObject::isEmpty();
-// _ZNK11QJsonObject7isEmptyEv isEmpty()
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:64
+// void QJsonObject(std::initializer_list<QPair<QString, QJsonValue> >)
 extern "C"
-bool
-C_ZNK11QJsonObject7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN11QJsonObjectC1ESt16initializer_listI5QPairI7QString10QJsonValueEE(std::initializer_list<QPair<QString, QJsonValue> > args) {
+  return new QJsonObject(args);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 85, column 16>
-//   // proto:  int QJsonObject::length();
-// _ZNK11QJsonObject6lengthEv length()
+// /usr/include/qt/QtCore/qjsonobject.h:72
+// void ~QJsonObject()
 extern "C"
-int
-C_ZNK11QJsonObject6lengthEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->length();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QJsonObjectD1Ev(void *this_) {
+  delete (QJsonObject*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 209, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::find(QLatin1String key);
-// _ZNK11QJsonObject4findE13QLatin1String find(class QLatin1String)
+// static
+// /usr/include/qt/QtCore/qjsonobject.h:77
+// QJsonObject fromVariantMap(const QVariantMap &)
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject4findE13QLatin1String(void *qthis,
-QLatin1String* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->find(*((QLatin1String*)arg1));
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZN11QJsonObject14fromVariantMapERK4QMapI7QString8QVariantE(const QVariantMap & map) {
+  /*return*/ QJsonObject::fromVariantMap(map);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 95, column 10>
-//   // proto:  void QJsonObject::remove(const QString & key);
-// _ZN11QJsonObject6removeERK7QString remove(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:78
+// QVariantMap toVariantMap()
 extern "C"
-void
-C_ZN11QJsonObject6removeERK7QString(void *qthis,
-const QString* arg1) {
-  ((QJsonObject*)qthis)->remove(*((const QString*)arg1));
+void C_ZNK11QJsonObject12toVariantMapEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->toVariantMap();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 64, column 5>
-//   // proto:  void QJsonObject::QJsonObject(std::initializer_list<QPair<QString, QJsonValue> > args);
+// static
+// /usr/include/qt/QtCore/qjsonobject.h:79
+// QJsonObject fromVariantHash(const QVariantHash &)
 extern "C"
-QJsonObject*
-C_ZN11QJsonObjectC2ESt16initializer_listI5QPairI7QString10QJsonValueEE(std::initializer_list<QPair<QString, QJsonValue> >* arg1) {
-  auto ret = new QJsonObject(*((std::initializer_list<QPair<QString, QJsonValue> >*)arg1));
-  return ret;
+void C_ZN11QJsonObject15fromVariantHashERK5QHashI7QString8QVariantE(const QVariantHash & map) {
+  /*return*/ QJsonObject::fromVariantHash(map);
 }
-//   // proto:  void QJsonObject::~QJsonObject();
+// /usr/include/qt/QtCore/qjsonobject.h:80
+// QVariantHash toVariantHash()
 extern "C"
-void C_ZN11QJsonObjectD2Ev(void *qthis) {
-  delete (QJsonObject*)qthis;
+void C_ZNK11QJsonObject13toVariantHashEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->toVariantHash();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 88, column 16>
-//   // proto:  QJsonValue QJsonObject::value(const QString & key);
-// _ZNK11QJsonObject5valueERK7QString value(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:82
+// QStringList keys()
 extern "C"
-QJsonValue*
-C_ZNK11QJsonObject5valueERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->value(*((const QString*)arg1));
-  return new QJsonValue(ret); // 5
+void C_ZNK11QJsonObject4keysEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->keys();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 83, column 9>
-//   // proto:  int QJsonObject::size();
-// _ZNK11QJsonObject4sizeEv size()
+// /usr/include/qt/QtCore/qjsonobject.h:83
+// int size()
 extern "C"
-int
-C_ZNK11QJsonObject4sizeEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->size();
-  return ret; // 0 TypeKind.INT
+void C_ZNK11QJsonObject4sizeEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 89, column 16>
-//   // proto:  QJsonValue QJsonObject::value(QLatin1String key);
-// _ZNK11QJsonObject5valueE13QLatin1String value(class QLatin1String)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:84
+// int count()
 extern "C"
-QJsonValue*
-C_ZNK11QJsonObject5valueE13QLatin1String(void *qthis,
-QLatin1String* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->value(*((QLatin1String*)arg1));
-  return new QJsonValue(ret); // 5
+void C_ZNK11QJsonObject5countEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->count();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 195, column 21>
-//   // proto:  QJsonObject::iterator QJsonObject::begin();
-// _ZN11QJsonObject5beginEv begin()
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:85
+// int length()
 extern "C"
-QJsonObject::iterator*
-C_ZN11QJsonObject5beginEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->begin();
-  return new QJsonObject::iterator(ret); // 5
+void C_ZNK11QJsonObject6lengthEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->length();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 84, column 16>
-//   // proto:  int QJsonObject::count();
-// _ZNK11QJsonObject5countEv count()
+// /usr/include/qt/QtCore/qjsonobject.h:86
+// bool isEmpty()
 extern "C"
-int
-C_ZNK11QJsonObject5countEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->count();
-  return ret; // 0 TypeKind.INT
+void C_ZNK11QJsonObject7isEmptyEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 206, column 14>
-//   // proto:  QJsonObject::iterator QJsonObject::find(const QString & key);
-// _ZN11QJsonObject4findERK7QString find(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:88
+// QJsonValue value(const class QString &)
 extern "C"
-QJsonObject::iterator*
-C_ZN11QJsonObject4findERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->find(*((const QString*)arg1));
-  return new QJsonObject::iterator(ret); // 5
+void C_ZNK11QJsonObject5valueERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->value(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 219, column 17>
-//   // proto:  bool QJsonObject::empty();
-// _ZNK11QJsonObject5emptyEv empty()
+// /usr/include/qt/QtCore/qjsonobject.h:89
+// QJsonValue value(class QLatin1String)
 extern "C"
-bool
-C_ZNK11QJsonObject5emptyEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->empty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QJsonObject5valueE13QLatin1String(void *this_, QLatin1String key) {
+  /*return*/ ((QJsonObject*)this_)->value(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 96, column 16>
-//   // proto:  QJsonValue QJsonObject::take(const QString & key);
-// _ZN11QJsonObject4takeERK7QString take(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:95
+// void remove(const class QString &)
 extern "C"
-QJsonValue*
-C_ZN11QJsonObject4takeERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->take(*((const QString*)arg1));
-  return new QJsonValue(ret); // 5
+void C_ZN11QJsonObject6removeERK7QString(void *this_, const QString & key) {
+  ((QJsonObject*)this_)->remove(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 208, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::find(const QString & key);
-// _ZNK11QJsonObject4findERK7QString find(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:96
+// QJsonValue take(const class QString &)
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject4findERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->find(*((const QString*)arg1));
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZN11QJsonObject4takeERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->take(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 80, column 18>
-//   // proto:  QVariantHash QJsonObject::toVariantHash();
-// _ZNK11QJsonObject13toVariantHashEv toVariantHash()
+// /usr/include/qt/QtCore/qjsonobject.h:97
+// bool contains(const class QString &)
 extern "C"
-QHash<QString, QVariant>*
-C_ZNK11QJsonObject13toVariantHashEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->toVariantHash();
-  return new QHash<QString, QVariant>(ret); // 5
+void C_ZNK11QJsonObject8containsERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->contains(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 200, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constEnd();
-// _ZNK11QJsonObject8constEndEv constEnd()
+// /usr/include/qt/QtCore/qjsonobject.h:98
+// bool contains(class QLatin1String)
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject8constEndEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->constEnd();
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZNK11QJsonObject8containsE13QLatin1String(void *this_, QLatin1String key) {
+  /*return*/ ((QJsonObject*)this_)->contains(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 201, column 14>
-//   // proto:  QJsonObject::iterator QJsonObject::erase(QJsonObject::iterator it);
-// _ZN11QJsonObject5eraseENS_8iteratorE erase(class QJsonObject::iterator)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:195
+// QJsonObject::iterator begin()
 extern "C"
-QJsonObject::iterator*
-C_ZN11QJsonObject5eraseENS_8iteratorE(void *qthis,
-QJsonObject::iterator* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->erase(*((QJsonObject::iterator*)arg1));
-  return new QJsonObject::iterator(ret); // 5
+void C_ZN11QJsonObject5beginEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->begin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 210, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constFind(const QString & key);
-// _ZNK11QJsonObject9constFindERK7QString constFind(const class QString &)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:196
+// QJsonObject::const_iterator begin()
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject9constFindERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->constFind(*((const QString*)arg1));
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZNK11QJsonObject5beginEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->begin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 196, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::begin();
-// _ZNK11QJsonObject5beginEv begin()
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:197
+// QJsonObject::const_iterator constBegin()
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject5beginEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->begin();
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZNK11QJsonObject10constBeginEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->constBegin();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 77, column 24>
-//   // proto: static QJsonObject QJsonObject::fromVariantMap(const QVariantMap & map);
-// _ZN11QJsonObject14fromVariantMapERK4QMapI7QString8QVariantE fromVariantMap(const QVariantMap &)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:198
+// QJsonObject::iterator end()
 extern "C"
-QJsonObject*
-C_ZN11QJsonObject14fromVariantMapERK4QMapI7QString8QVariantE(const QVariantMap* arg1) {
-  auto ret =
-  QJsonObject::fromVariantMap(*((const QVariantMap*)arg1));
-  return new QJsonObject(ret); // 5
+void C_ZN11QJsonObject3endEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->end();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 98, column 10>
-//   // proto:  bool QJsonObject::contains(QLatin1String key);
-// _ZNK11QJsonObject8containsE13QLatin1String contains(class QLatin1String)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:199
+// QJsonObject::const_iterator end()
 extern "C"
-bool
-C_ZNK11QJsonObject8containsE13QLatin1String(void *qthis,
-QLatin1String* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->contains(*((QLatin1String*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QJsonObject3endEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->end();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 198, column 21>
-//   // proto:  QJsonObject::iterator QJsonObject::end();
-// _ZN11QJsonObject3endEv end()
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:200
+// QJsonObject::const_iterator constEnd()
 extern "C"
-QJsonObject::iterator*
-C_ZN11QJsonObject3endEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->end();
-  return new QJsonObject::iterator(ret); // 5
+void C_ZNK11QJsonObject8constEndEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->constEnd();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 82, column 17>
-//   // proto:  QStringList QJsonObject::keys();
-// _ZNK11QJsonObject4keysEv keys()
+// /usr/include/qt/QtCore/qjsonobject.h:201
+// QJsonObject::iterator erase(class QJsonObject::iterator)
 extern "C"
-QStringList*
-C_ZNK11QJsonObject4keysEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->keys();
-  return new QStringList(ret); // 5
+void C_ZN11QJsonObject5eraseENS_8iteratorE(void *this_, QJsonObject::iterator it) {
+  /*return*/ ((QJsonObject*)this_)->erase(it);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 97, column 10>
-//   // proto:  bool QJsonObject::contains(const QString & key);
-// _ZNK11QJsonObject8containsERK7QString contains(const class QString &)
+// /usr/include/qt/QtCore/qjsonobject.h:206
+// QJsonObject::iterator find(const class QString &)
 extern "C"
-bool
-C_ZNK11QJsonObject8containsERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->contains(*((const QString*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QJsonObject4findERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->find(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 79, column 24>
-//   // proto: static QJsonObject QJsonObject::fromVariantHash(const QVariantHash & map);
-// _ZN11QJsonObject15fromVariantHashERK5QHashI7QString8QVariantE fromVariantHash(const QVariantHash &)
+// /usr/include/qt/QtCore/qjsonobject.h:207
+// QJsonObject::iterator find(class QLatin1String)
 extern "C"
-QJsonObject*
-C_ZN11QJsonObject15fromVariantHashERK5QHashI7QString8QVariantE(const QVariantHash* arg1) {
-  auto ret =
-  QJsonObject::fromVariantHash(*((const QVariantHash*)arg1));
-  return new QJsonObject(ret); // 5
+void C_ZN11QJsonObject4findE13QLatin1String(void *this_, QLatin1String key) {
+  /*return*/ ((QJsonObject*)this_)->find(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 197, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constBegin();
-// _ZNK11QJsonObject10constBeginEv constBegin()
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:208
+// QJsonObject::const_iterator find(const class QString &)
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject10constBeginEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->constBegin();
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZNK11QJsonObject4findERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->find(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 61, column 5>
-//   // proto:  void QJsonObject::QJsonObject();
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:209
+// QJsonObject::const_iterator find(class QLatin1String)
 extern "C"
-QJsonObject*
-C_ZN11QJsonObjectC2Ev() {
-  auto ret = new QJsonObject();
-  return ret;
+void C_ZNK11QJsonObject4findE13QLatin1String(void *this_, QLatin1String key) {
+  /*return*/ ((QJsonObject*)this_)->find(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 207, column 14>
-//   // proto:  QJsonObject::iterator QJsonObject::find(QLatin1String key);
-// _ZN11QJsonObject4findE13QLatin1String find(class QLatin1String)
+// /usr/include/qt/QtCore/qjsonobject.h:210
+// QJsonObject::const_iterator constFind(const class QString &)
 extern "C"
-QJsonObject::iterator*
-C_ZN11QJsonObject4findE13QLatin1String(void *qthis,
-QLatin1String* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->find(*((QLatin1String*)arg1));
-  return new QJsonObject::iterator(ret); // 5
+void C_ZNK11QJsonObject9constFindERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QJsonObject*)this_)->constFind(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 74, column 5>
-//   // proto:  void QJsonObject::QJsonObject(const QJsonObject & other);
+// /usr/include/qt/QtCore/qjsonobject.h:211
+// QJsonObject::const_iterator constFind(class QLatin1String)
 extern "C"
-QJsonObject*
-C_ZN11QJsonObjectC2ERKS_(const QJsonObject* arg1) {
-  auto ret = new QJsonObject(*((const QJsonObject*)arg1));
-  return ret;
+void C_ZNK11QJsonObject9constFindE13QLatin1String(void *this_, QLatin1String key) {
+  /*return*/ ((QJsonObject*)this_)->constFind(key);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 211, column 20>
-//   // proto:  QJsonObject::const_iterator QJsonObject::constFind(QLatin1String key);
-// _ZNK11QJsonObject9constFindE13QLatin1String constFind(class QLatin1String)
+// inline
+// /usr/include/qt/QtCore/qjsonobject.h:219
+// bool empty()
 extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject9constFindE13QLatin1String(void *qthis,
-QLatin1String* arg1) {
-  auto ret =
-  ((QJsonObject*)qthis)->constFind(*((QLatin1String*)arg1));
-  return new QJsonObject::const_iterator(ret); // 5
+void C_ZNK11QJsonObject5emptyEv(void *this_) {
+  /*return*/ ((QJsonObject*)this_)->empty();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 199, column 27>
-//   // proto:  QJsonObject::const_iterator QJsonObject::end();
-// _ZNK11QJsonObject3endEv end()
-extern "C"
-QJsonObject::const_iterator*
-C_ZNK11QJsonObject3endEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->end();
-  return new QJsonObject::const_iterator(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qjsonobject.h', line 78, column 17>
-//   // proto:  QVariantMap QJsonObject::toVariantMap();
-// _ZNK11QJsonObject12toVariantMapEv toVariantMap()
-extern "C"
-QMap<QString, QVariant>*
-C_ZNK11QJsonObject12toVariantMapEv(void *qthis) {
-  auto ret =
-  ((QJsonObject*)qthis)->toVariantMap();
-  return new QMap<QString, QVariant>(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

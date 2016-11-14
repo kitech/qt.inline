@@ -1,563 +1,326 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qimagereader.h
-// dst-file: /src/gui/qimagereader.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qimagereader.h
 #include <qimagereader.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qstringlist.h>
-#include <qbytearray.h>
-#include <qlist.h>
-#include <qsize.h>
-#include <qcolor.h>
-#include <qimage.h>
-#include <qrect.h>
-#include <qimageiohandler.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qimagereader_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qimagereader.h:70
+// void QImageReader()
 extern "C"
-int QImageReader_Class_Size()
-{
-  return sizeof(QImageReader);
+void* C_ZN12QImageReaderC1Ev() {
+  return new QImageReader();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 138, column 13>
-//   // proto:  QString QImageReader::errorString();
-// _ZNK12QImageReader11errorStringEv errorString()
+// /usr/include/qt/QtGui/qimagereader.h:71
+// void QImageReader(class QIODevice *, const class QByteArray &)
 extern "C"
-QString*
-C_ZNK12QImageReader11errorStringEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->errorString();
-  return new QString(ret); // 5
+void* C_ZN12QImageReaderC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
+  return new QImageReader(device, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 140, column 10>
-//   // proto:  bool QImageReader::supportsOption(QImageIOHandler::ImageOption option);
-// _ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE supportsOption(class QImageIOHandler::ImageOption)
+// /usr/include/qt/QtGui/qimagereader.h:72
+// void QImageReader(const class QString &, const class QByteArray &)
 extern "C"
-bool
-C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *qthis,
-QImageIOHandler::ImageOption* arg1) {
-  auto ret =
-  ((QImageReader*)qthis)->supportsOption(*((QImageIOHandler::ImageOption*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN12QImageReaderC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
+  return new QImageReader(fileName, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 125, column 10>
-//   // proto:  bool QImageReader::canRead();
-// _ZNK12QImageReader7canReadEv canRead()
+// /usr/include/qt/QtGui/qimagereader.h:73
+// void ~QImageReader()
 extern "C"
-bool
-C_ZNK12QImageReader7canReadEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->canRead();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReaderD1Ev(void *this_) {
+  delete (QImageReader*)(this_);
 }
-//   // proto:  void QImageReader::~QImageReader();
+// /usr/include/qt/QtGui/qimagereader.h:75
+// void setFormat(const class QByteArray &)
 extern "C"
-void C_ZN12QImageReaderD2Ev(void *qthis) {
-  delete (QImageReader*)qthis;
+void C_ZN12QImageReader9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
+  ((QImageReader*)this_)->setFormat(format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 100, column 10>
-//   // proto:  void QImageReader::setScaledSize(const QSize & size);
-// _ZN12QImageReader13setScaledSizeERK5QSize setScaledSize(const class QSize &)
+// /usr/include/qt/QtGui/qimagereader.h:76
+// QByteArray format()
 extern "C"
-void
-C_ZN12QImageReader13setScaledSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QImageReader*)qthis)->setScaledSize(*((const QSize*)arg1));
+void C_ZNK12QImageReader6formatEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->format();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 127, column 10>
-//   // proto:  bool QImageReader::read(QImage * image);
-// _ZN12QImageReader4readEP6QImage read(class QImage *)
+// /usr/include/qt/QtGui/qimagereader.h:78
+// void setAutoDetectImageFormat(_Bool)
 extern "C"
-bool
-C_ZN12QImageReader4readEP6QImage(void *qthis,
-QImage * arg1) {
-  auto ret =
-  ((QImageReader*)qthis)->read(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReader24setAutoDetectImageFormatEb(void *this_, bool enabled) {
+  ((QImageReader*)this_)->setAutoDetectImageFormat(enabled);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 106, column 10>
-//   // proto:  void QImageReader::setScaledClipRect(const QRect & rect);
-// _ZN12QImageReader17setScaledClipRectERK5QRect setScaledClipRect(const class QRect &)
+// /usr/include/qt/QtGui/qimagereader.h:79
+// bool autoDetectImageFormat()
 extern "C"
-void
-C_ZN12QImageReader17setScaledClipRectERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QImageReader*)qthis)->setScaledClipRect(*((const QRect*)arg1));
+void C_ZNK12QImageReader21autoDetectImageFormatEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->autoDetectImageFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 132, column 9>
-//   // proto:  int QImageReader::imageCount();
-// _ZNK12QImageReader10imageCountEv imageCount()
+// /usr/include/qt/QtGui/qimagereader.h:81
+// void setDecideFormatFromContent(_Bool)
 extern "C"
-int
-C_ZNK12QImageReader10imageCountEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->imageCount();
-  return ret; // 0 TypeKind.INT
+void C_ZN12QImageReader26setDecideFormatFromContentEb(void *this_, bool ignored) {
+  ((QImageReader*)this_)->setDecideFormatFromContent(ignored);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 94, column 17>
-//   // proto:  QStringList QImageReader::textKeys();
-// _ZNK12QImageReader8textKeysEv textKeys()
+// /usr/include/qt/QtGui/qimagereader.h:82
+// bool decideFormatFromContent()
 extern "C"
-QStringList*
-C_ZNK12QImageReader8textKeysEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->textKeys();
-  return new QStringList(ret); // 5
+void C_ZNK12QImageReader23decideFormatFromContentEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->decideFormatFromContent();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 82, column 10>
-//   // proto:  bool QImageReader::decideFormatFromContent();
-// _ZNK12QImageReader23decideFormatFromContentEv decideFormatFromContent()
+// /usr/include/qt/QtGui/qimagereader.h:84
+// void setDevice(class QIODevice *)
 extern "C"
-bool
-C_ZNK12QImageReader23decideFormatFromContentEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->decideFormatFromContent();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReader9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
+  ((QImageReader*)this_)->setDevice(device);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 85, column 16>
-//   // proto:  QIODevice * QImageReader::device();
-// _ZNK12QImageReader6deviceEv device()
+// /usr/include/qt/QtGui/qimagereader.h:85
+// QIODevice * device()
 extern "C"
-void*
-C_ZNK12QImageReader6deviceEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->device();
-  return (void*)ret;
+void C_ZNK12QImageReader6deviceEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->device();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 117, column 10>
-//   // proto:  bool QImageReader::autoTransform();
-// _ZNK12QImageReader13autoTransformEv autoTransform()
+// /usr/include/qt/QtGui/qimagereader.h:87
+// void setFileName(const class QString &)
 extern "C"
-bool
-C_ZNK12QImageReader13autoTransformEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->autoTransform();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReader11setFileNameERK7QString(void *this_, const QString & fileName) {
+  ((QImageReader*)this_)->setFileName(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 129, column 10>
-//   // proto:  bool QImageReader::jumpToNextImage();
-// _ZN12QImageReader15jumpToNextImageEv jumpToNextImage()
+// /usr/include/qt/QtGui/qimagereader.h:88
+// QString fileName()
 extern "C"
-bool
-C_ZN12QImageReader15jumpToNextImageEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->jumpToNextImage();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QImageReader8fileNameEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 142, column 23>
-//   // proto: static QByteArray QImageReader::imageFormat(const QString & fileName);
-// _ZN12QImageReader11imageFormatERK7QString imageFormat(const class QString &)
+// /usr/include/qt/QtGui/qimagereader.h:90
+// QSize size()
 extern "C"
-QByteArray*
-C_ZN12QImageReader11imageFormatERK7QString(const QString* arg1) {
-  auto ret =
-  QImageReader::imageFormat(*((const QString*)arg1));
-  return new QByteArray(ret); // 5
+void C_ZNK12QImageReader4sizeEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 123, column 23>
-//   // proto:  QList<QByteArray> QImageReader::supportedSubTypes();
-// _ZNK12QImageReader17supportedSubTypesEv supportedSubTypes()
+// /usr/include/qt/QtGui/qimagereader.h:92
+// QImage::Format imageFormat()
 extern "C"
-QList<QByteArray>*
-C_ZNK12QImageReader17supportedSubTypesEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->supportedSubTypes();
-  return new QList<QByteArray>(ret); // 5
+void C_ZNK12QImageReader11imageFormatEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->imageFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 90, column 11>
-//   // proto:  QSize QImageReader::size();
-// _ZNK12QImageReader4sizeEv size()
+// /usr/include/qt/QtGui/qimagereader.h:94
+// QStringList textKeys()
 extern "C"
-QSize*
-C_ZNK12QImageReader4sizeEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->size();
-  return new QSize(ret); // 5
+void C_ZNK12QImageReader8textKeysEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->textKeys();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 110, column 12>
-//   // proto:  QColor QImageReader::backgroundColor();
-// _ZNK12QImageReader15backgroundColorEv backgroundColor()
+// /usr/include/qt/QtGui/qimagereader.h:95
+// QString text(const class QString &)
 extern "C"
-QColor*
-C_ZNK12QImageReader15backgroundColorEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->backgroundColor();
-  return new QColor(ret); // 5
+void C_ZNK12QImageReader4textERK7QString(void *this_, const QString & key) {
+  /*return*/ ((QImageReader*)this_)->text(key);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 122, column 16>
-//   // proto:  QByteArray QImageReader::subType();
-// _ZNK12QImageReader7subTypeEv subType()
+// /usr/include/qt/QtGui/qimagereader.h:97
+// void setClipRect(const class QRect &)
 extern "C"
-QByteArray*
-C_ZNK12QImageReader7subTypeEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->subType();
-  return new QByteArray(ret); // 5
+void C_ZN12QImageReader11setClipRectERK5QRect(void *this_, const QRect & rect) {
+  ((QImageReader*)this_)->setClipRect(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 134, column 9>
-//   // proto:  int QImageReader::currentImageNumber();
-// _ZNK12QImageReader18currentImageNumberEv currentImageNumber()
+// /usr/include/qt/QtGui/qimagereader.h:98
+// QRect clipRect()
 extern "C"
-int
-C_ZNK12QImageReader18currentImageNumberEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->currentImageNumber();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QImageReader8clipRectEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->clipRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 144, column 30>
-//   // proto: static QList<QByteArray> QImageReader::supportedImageFormats();
-// _ZN12QImageReader21supportedImageFormatsEv supportedImageFormats()
+// /usr/include/qt/QtGui/qimagereader.h:100
+// void setScaledSize(const class QSize &)
 extern "C"
-QList<QByteArray>*
-C_ZN12QImageReader21supportedImageFormatsEv() {
-  auto ret =
-  QImageReader::supportedImageFormats();
-  return new QList<QByteArray>(ret); // 5
+void C_ZN12QImageReader13setScaledSizeERK5QSize(void *this_, const QSize & size) {
+  ((QImageReader*)this_)->setScaledSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 131, column 9>
-//   // proto:  int QImageReader::loopCount();
-// _ZNK12QImageReader9loopCountEv loopCount()
+// /usr/include/qt/QtGui/qimagereader.h:101
+// QSize scaledSize()
 extern "C"
-int
-C_ZNK12QImageReader9loopCountEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->loopCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QImageReader10scaledSizeEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->scaledSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 92, column 20>
-//   // proto:  QImage::Format QImageReader::imageFormat();
-// _ZNK12QImageReader11imageFormatEv imageFormat()
+// /usr/include/qt/QtGui/qimagereader.h:103
+// void setQuality(int)
 extern "C"
-QImage::Format
-C_ZNK12QImageReader11imageFormatEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->imageFormat();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN12QImageReader10setQualityEi(void *this_, int quality) {
+  ((QImageReader*)this_)->setQuality(quality);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 81, column 10>
-//   // proto:  void QImageReader::setDecideFormatFromContent(bool ignored);
-// _ZN12QImageReader26setDecideFormatFromContentEb setDecideFormatFromContent(_Bool)
+// /usr/include/qt/QtGui/qimagereader.h:104
+// int quality()
 extern "C"
-void
-C_ZN12QImageReader26setDecideFormatFromContentEb(void *qthis,
-bool arg1) {
-  ((QImageReader*)qthis)->setDecideFormatFromContent(arg1);
+void C_ZNK12QImageReader7qualityEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->quality();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 107, column 11>
-//   // proto:  QRect QImageReader::scaledClipRect();
-// _ZNK12QImageReader14scaledClipRectEv scaledClipRect()
+// /usr/include/qt/QtGui/qimagereader.h:106
+// void setScaledClipRect(const class QRect &)
 extern "C"
-QRect*
-C_ZNK12QImageReader14scaledClipRectEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->scaledClipRect();
-  return new QRect(ret); // 5
+void C_ZN12QImageReader17setScaledClipRectERK5QRect(void *this_, const QRect & rect) {
+  ((QImageReader*)this_)->setScaledClipRect(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 119, column 10>
-//   // proto:  void QImageReader::setGamma(float gamma);
-// _ZN12QImageReader8setGammaEf setGamma(float)
+// /usr/include/qt/QtGui/qimagereader.h:107
+// QRect scaledClipRect()
 extern "C"
-void
-C_ZN12QImageReader8setGammaEf(void *qthis,
-float arg1) {
-  ((QImageReader*)qthis)->setGamma(arg1);
+void C_ZNK12QImageReader14scaledClipRectEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->scaledClipRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 145, column 30>
-//   // proto: static QList<QByteArray> QImageReader::supportedMimeTypes();
-// _ZN12QImageReader18supportedMimeTypesEv supportedMimeTypes()
+// /usr/include/qt/QtGui/qimagereader.h:109
+// void setBackgroundColor(const class QColor &)
 extern "C"
-QList<QByteArray>*
-C_ZN12QImageReader18supportedMimeTypesEv() {
-  auto ret =
-  QImageReader::supportedMimeTypes();
-  return new QList<QByteArray>(ret); // 5
+void C_ZN12QImageReader18setBackgroundColorERK6QColor(void *this_, const QColor & color) {
+  ((QImageReader*)this_)->setBackgroundColor(color);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 95, column 13>
-//   // proto:  QString QImageReader::text(const QString & key);
-// _ZNK12QImageReader4textERK7QString text(const class QString &)
+// /usr/include/qt/QtGui/qimagereader.h:110
+// QColor backgroundColor()
 extern "C"
-QString*
-C_ZNK12QImageReader4textERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QImageReader*)qthis)->text(*((const QString*)arg1));
-  return new QString(ret); // 5
+void C_ZNK12QImageReader15backgroundColorEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->backgroundColor();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 133, column 9>
-//   // proto:  int QImageReader::nextImageDelay();
-// _ZNK12QImageReader14nextImageDelayEv nextImageDelay()
+// /usr/include/qt/QtGui/qimagereader.h:112
+// bool supportsAnimation()
 extern "C"
-int
-C_ZNK12QImageReader14nextImageDelayEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->nextImageDelay();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QImageReader17supportsAnimationEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->supportsAnimation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 126, column 12>
-//   // proto:  QImage QImageReader::read();
-// _ZN12QImageReader4readEv read()
+// /usr/include/qt/QtGui/qimagereader.h:114
+// QImageIOHandler::Transformations transformation()
 extern "C"
-QImage*
-C_ZN12QImageReader4readEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->read();
-  return new QImage(ret); // 5
+void C_ZNK12QImageReader14transformationEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->transformation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 112, column 10>
-//   // proto:  bool QImageReader::supportsAnimation();
-// _ZNK12QImageReader17supportsAnimationEv supportsAnimation()
+// /usr/include/qt/QtGui/qimagereader.h:116
+// void setAutoTransform(_Bool)
 extern "C"
-bool
-C_ZNK12QImageReader17supportsAnimationEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->supportsAnimation();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReader16setAutoTransformEb(void *this_, bool enabled) {
+  ((QImageReader*)this_)->setAutoTransform(enabled);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 130, column 10>
-//   // proto:  bool QImageReader::jumpToImage(int imageNumber);
-// _ZN12QImageReader11jumpToImageEi jumpToImage(int)
+// /usr/include/qt/QtGui/qimagereader.h:117
+// bool autoTransform()
 extern "C"
-bool
-C_ZN12QImageReader11jumpToImageEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QImageReader*)qthis)->jumpToImage(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QImageReader13autoTransformEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->autoTransform();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 87, column 10>
-//   // proto:  void QImageReader::setFileName(const QString & fileName);
-// _ZN12QImageReader11setFileNameERK7QString setFileName(const class QString &)
+// /usr/include/qt/QtGui/qimagereader.h:119
+// void setGamma(float)
 extern "C"
-void
-C_ZN12QImageReader11setFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QImageReader*)qthis)->setFileName(*((const QString*)arg1));
+void C_ZN12QImageReader8setGammaEf(void *this_, float gamma) {
+  ((QImageReader*)this_)->setGamma(gamma);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 101, column 11>
-//   // proto:  QSize QImageReader::scaledSize();
-// _ZNK12QImageReader10scaledSizeEv scaledSize()
+// /usr/include/qt/QtGui/qimagereader.h:120
+// float gamma()
 extern "C"
-QSize*
-C_ZNK12QImageReader10scaledSizeEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->scaledSize();
-  return new QSize(ret); // 5
+void C_ZNK12QImageReader5gammaEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->gamma();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 116, column 10>
-//   // proto:  void QImageReader::setAutoTransform(bool enabled);
-// _ZN12QImageReader16setAutoTransformEb setAutoTransform(_Bool)
+// /usr/include/qt/QtGui/qimagereader.h:122
+// QByteArray subType()
 extern "C"
-void
-C_ZN12QImageReader16setAutoTransformEb(void *qthis,
-bool arg1) {
-  ((QImageReader*)qthis)->setAutoTransform(arg1);
+void C_ZNK12QImageReader7subTypeEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->subType();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 137, column 22>
-//   // proto:  QImageReader::ImageReaderError QImageReader::error();
-// _ZNK12QImageReader5errorEv error()
+// /usr/include/qt/QtGui/qimagereader.h:123
+// QList<QByteArray> supportedSubTypes()
 extern "C"
-QImageReader::ImageReaderError
-C_ZNK12QImageReader5errorEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->error();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK12QImageReader17supportedSubTypesEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->supportedSubTypes();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 120, column 11>
-//   // proto:  float QImageReader::gamma();
-// _ZNK12QImageReader5gammaEv gamma()
+// /usr/include/qt/QtGui/qimagereader.h:125
+// bool canRead()
 extern "C"
-float
-C_ZNK12QImageReader5gammaEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->gamma();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK12QImageReader7canReadEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->canRead();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 97, column 10>
-//   // proto:  void QImageReader::setClipRect(const QRect & rect);
-// _ZN12QImageReader11setClipRectERK5QRect setClipRect(const class QRect &)
+// /usr/include/qt/QtGui/qimagereader.h:126
+// QImage read()
 extern "C"
-void
-C_ZN12QImageReader11setClipRectERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QImageReader*)qthis)->setClipRect(*((const QRect*)arg1));
+void C_ZN12QImageReader4readEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->read();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 79, column 10>
-//   // proto:  bool QImageReader::autoDetectImageFormat();
-// _ZNK12QImageReader21autoDetectImageFormatEv autoDetectImageFormat()
+// /usr/include/qt/QtGui/qimagereader.h:127
+// bool read(class QImage *)
 extern "C"
-bool
-C_ZNK12QImageReader21autoDetectImageFormatEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->autoDetectImageFormat();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QImageReader4readEP6QImage(void *this_, QImage * image) {
+  /*return*/ ((QImageReader*)this_)->read(image);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 135, column 11>
-//   // proto:  QRect QImageReader::currentImageRect();
-// _ZNK12QImageReader16currentImageRectEv currentImageRect()
+// /usr/include/qt/QtGui/qimagereader.h:129
+// bool jumpToNextImage()
 extern "C"
-QRect*
-C_ZNK12QImageReader16currentImageRectEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->currentImageRect();
-  return new QRect(ret); // 5
+void C_ZN12QImageReader15jumpToNextImageEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->jumpToNextImage();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 72, column 14>
-//   // proto:  void QImageReader::QImageReader(const QString & fileName, const QByteArray & format);
+// /usr/include/qt/QtGui/qimagereader.h:130
+// bool jumpToImage(int)
 extern "C"
-QImageReader*
-C_ZN12QImageReaderC2ERK7QStringRK10QByteArray(const QString* arg1,
-const QByteArray* arg2) {
-  auto ret = new QImageReader(*((const QString*)arg1),
-*((const QByteArray*)arg2));
-  return ret;
+void C_ZN12QImageReader11jumpToImageEi(void *this_, int imageNumber) {
+  /*return*/ ((QImageReader*)this_)->jumpToImage(imageNumber);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 143, column 23>
-//   // proto: static QByteArray QImageReader::imageFormat(QIODevice * device);
-// _ZN12QImageReader11imageFormatEP9QIODevice imageFormat(class QIODevice *)
+// /usr/include/qt/QtGui/qimagereader.h:131
+// int loopCount()
 extern "C"
-QByteArray*
-C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * arg1) {
-  auto ret =
-  QImageReader::imageFormat(arg1);
-  return new QByteArray(ret); // 5
+void C_ZNK12QImageReader9loopCountEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->loopCount();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 104, column 9>
-//   // proto:  int QImageReader::quality();
-// _ZNK12QImageReader7qualityEv quality()
+// /usr/include/qt/QtGui/qimagereader.h:132
+// int imageCount()
 extern "C"
-int
-C_ZNK12QImageReader7qualityEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->quality();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QImageReader10imageCountEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->imageCount();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 84, column 10>
-//   // proto:  void QImageReader::setDevice(QIODevice * device);
-// _ZN12QImageReader9setDeviceEP9QIODevice setDevice(class QIODevice *)
+// /usr/include/qt/QtGui/qimagereader.h:133
+// int nextImageDelay()
 extern "C"
-void
-C_ZN12QImageReader9setDeviceEP9QIODevice(void *qthis,
-QIODevice * arg1) {
-  ((QImageReader*)qthis)->setDevice(arg1);
+void C_ZNK12QImageReader14nextImageDelayEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->nextImageDelay();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 109, column 10>
-//   // proto:  void QImageReader::setBackgroundColor(const QColor & color);
-// _ZN12QImageReader18setBackgroundColorERK6QColor setBackgroundColor(const class QColor &)
+// /usr/include/qt/QtGui/qimagereader.h:134
+// int currentImageNumber()
 extern "C"
-void
-C_ZN12QImageReader18setBackgroundColorERK6QColor(void *qthis,
-const QColor* arg1) {
-  ((QImageReader*)qthis)->setBackgroundColor(*((const QColor*)arg1));
+void C_ZNK12QImageReader18currentImageNumberEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->currentImageNumber();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 103, column 10>
-//   // proto:  void QImageReader::setQuality(int quality);
-// _ZN12QImageReader10setQualityEi setQuality(int)
+// /usr/include/qt/QtGui/qimagereader.h:135
+// QRect currentImageRect()
 extern "C"
-void
-C_ZN12QImageReader10setQualityEi(void *qthis,
-int arg1) {
-  ((QImageReader*)qthis)->setQuality(arg1);
+void C_ZNK12QImageReader16currentImageRectEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->currentImageRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 71, column 14>
-//   // proto:  void QImageReader::QImageReader(QIODevice * device, const QByteArray & format);
+// /usr/include/qt/QtGui/qimagereader.h:137
+// QImageReader::ImageReaderError error()
 extern "C"
-QImageReader*
-C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * arg1,
-const QByteArray* arg2) {
-  auto ret = new QImageReader(arg1,
-*((const QByteArray*)arg2));
-  return ret;
+void C_ZNK12QImageReader5errorEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->error();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 78, column 10>
-//   // proto:  void QImageReader::setAutoDetectImageFormat(bool enabled);
-// _ZN12QImageReader24setAutoDetectImageFormatEb setAutoDetectImageFormat(_Bool)
+// /usr/include/qt/QtGui/qimagereader.h:138
+// QString errorString()
 extern "C"
-void
-C_ZN12QImageReader24setAutoDetectImageFormatEb(void *qthis,
-bool arg1) {
-  ((QImageReader*)qthis)->setAutoDetectImageFormat(arg1);
+void C_ZNK12QImageReader11errorStringEv(void *this_) {
+  /*return*/ ((QImageReader*)this_)->errorString();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 70, column 5>
-//   // proto:  void QImageReader::QImageReader();
+// /usr/include/qt/QtGui/qimagereader.h:140
+// bool supportsOption(class QImageIOHandler::ImageOption)
 extern "C"
-QImageReader*
-C_ZN12QImageReaderC2Ev() {
-  auto ret = new QImageReader();
-  return ret;
+void C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
+  /*return*/ ((QImageReader*)this_)->supportsOption(option);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 75, column 10>
-//   // proto:  void QImageReader::setFormat(const QByteArray & format);
-// _ZN12QImageReader9setFormatERK10QByteArray setFormat(const class QByteArray &)
+// static
+// /usr/include/qt/QtGui/qimagereader.h:142
+// QByteArray imageFormat(const class QString &)
 extern "C"
-void
-C_ZN12QImageReader9setFormatERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QImageReader*)qthis)->setFormat(*((const QByteArray*)arg1));
+void C_ZN12QImageReader11imageFormatERK7QString(const QString & fileName) {
+  /*return*/ QImageReader::imageFormat(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 88, column 13>
-//   // proto:  QString QImageReader::fileName();
-// _ZNK12QImageReader8fileNameEv fileName()
+// static
+// /usr/include/qt/QtGui/qimagereader.h:143
+// QByteArray imageFormat(class QIODevice *)
 extern "C"
-QString*
-C_ZNK12QImageReader8fileNameEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
+  /*return*/ QImageReader::imageFormat(device);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 98, column 11>
-//   // proto:  QRect QImageReader::clipRect();
-// _ZNK12QImageReader8clipRectEv clipRect()
+// static
+// /usr/include/qt/QtGui/qimagereader.h:144
+// QList<QByteArray> supportedImageFormats()
 extern "C"
-QRect*
-C_ZNK12QImageReader8clipRectEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->clipRect();
-  return new QRect(ret); // 5
+void C_ZN12QImageReader21supportedImageFormatsEv() {
+  /*return*/ QImageReader::supportedImageFormats();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 76, column 16>
-//   // proto:  QByteArray QImageReader::format();
-// _ZNK12QImageReader6formatEv format()
+// static
+// /usr/include/qt/QtGui/qimagereader.h:145
+// QList<QByteArray> supportedMimeTypes()
 extern "C"
-QByteArray*
-C_ZNK12QImageReader6formatEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->format();
-  return new QByteArray(ret); // 5
+void C_ZN12QImageReader18supportedMimeTypesEv() {
+  /*return*/ QImageReader::supportedMimeTypes();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qimagereader.h', line 114, column 38>
-//   // proto:  QImageIOHandler::Transformations QImageReader::transformation();
-// _ZNK12QImageReader14transformationEv transformation()
-extern "C"
-QFlags<QImageIOHandler::Transformation>*
-C_ZNK12QImageReader14transformationEv(void *qthis) {
-  auto ret =
-  ((QImageReader*)qthis)->transformation();
-  return new QFlags<QImageIOHandler::Transformation>(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

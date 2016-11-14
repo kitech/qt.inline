@@ -1,345 +1,177 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qprogressbar.h
-// dst-file: /src/widgets/qprogressbar.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qprogressbar.h
 #include <qprogressbar.h>
+#include <QtWidgets>
 
-
-#include <qstring.h>
-#include <qnamespace.h>
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qprogressbar_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qprogressbar.h:55
+// const QMetaObject * metaObject()
 extern "C"
-int QProgressBar_Class_Size()
-{
-  return sizeof(QProgressBar);
+void C_ZNK12QProgressBar10metaObjectEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 98, column 13>
-//   // proto:  QString QProgressBar::format();
-// _ZNK12QProgressBar6formatEv format()
+// /usr/include/qt/QtWidgets/qprogressbar.h:71
+// void QProgressBar(class QWidget *)
 extern "C"
-QString*
-C_ZNK12QProgressBar6formatEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->format();
-  return new QString(ret); // 5
+void* C_ZN12QProgressBarC1EP7QWidget(QWidget * parent) {
+  return new QProgressBar(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 101, column 10>
-//   // proto:  void QProgressBar::reset();
-// _ZN12QProgressBar5resetEv reset()
+// virtual
+// /usr/include/qt/QtWidgets/qprogressbar.h:72
+// void ~QProgressBar()
 extern "C"
-void
-C_ZN12QProgressBar5resetEv(void *qthis) {
-  ((QProgressBar*)qthis)->reset();
+void C_ZN12QProgressBarD1Ev(void *this_) {
+  delete (QProgressBar*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 55, column 5>
-//   // proto:  const QMetaObject * QProgressBar::metaObject();
-// _ZNK12QProgressBar10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qprogressbar.h:74
+// int minimum()
 extern "C"
-void*
-C_ZNK12QProgressBar10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK12QProgressBar7minimumEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->minimum();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 75, column 9>
-//   // proto:  int QProgressBar::maximum();
-// _ZNK12QProgressBar7maximumEv maximum()
+// /usr/include/qt/QtWidgets/qprogressbar.h:75
+// int maximum()
 extern "C"
-int
-C_ZNK12QProgressBar7maximumEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->maximum();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QProgressBar7maximumEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->maximum();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 83, column 19>
-//   // proto:  Qt::Alignment QProgressBar::alignment();
-// _ZNK12QProgressBar9alignmentEv alignment()
+// /usr/include/qt/QtWidgets/qprogressbar.h:77
+// int value()
 extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK12QProgressBar9alignmentEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->alignment();
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
+void C_ZNK12QProgressBar5valueEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->value();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 96, column 10>
-//   // proto:  void QProgressBar::setFormat(const QString & format);
-// _ZN12QProgressBar9setFormatERK7QString setFormat(const class QString &)
+// virtual
+// /usr/include/qt/QtWidgets/qprogressbar.h:79
+// QString text()
 extern "C"
-void
-C_ZN12QProgressBar9setFormatERK7QString(void *qthis,
-const QString* arg1) {
-  ((QProgressBar*)qthis)->setFormat(*((const QString*)arg1));
+void C_ZNK12QProgressBar4textEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->text();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 94, column 29>
-//   // proto:  QProgressBar::Direction QProgressBar::textDirection();
-// _ZNK12QProgressBar13textDirectionEv textDirection()
+// /usr/include/qt/QtWidgets/qprogressbar.h:80
+// void setTextVisible(_Bool)
 extern "C"
-QProgressBar::Direction
-C_ZNK12QProgressBar13textDirectionEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->textDirection();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN12QProgressBar14setTextVisibleEb(void *this_, bool visible) {
+  ((QProgressBar*)this_)->setTextVisible(visible);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 92, column 10>
-//   // proto:  bool QProgressBar::invertedAppearance();
-// _ZNK12QProgressBar18invertedAppearanceEv invertedAppearance()
+// /usr/include/qt/QtWidgets/qprogressbar.h:81
+// bool isTextVisible()
 extern "C"
-bool
-C_ZNK12QProgressBar18invertedAppearanceEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->invertedAppearance();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK12QProgressBar13isTextVisibleEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->isTextVisible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 79, column 21>
-//   // proto:  QString QProgressBar::text();
-// _ZNK12QProgressBar4textEv text()
+// /usr/include/qt/QtWidgets/qprogressbar.h:83
+// Qt::Alignment alignment()
 extern "C"
-QString*
-C_ZNK12QProgressBar4textEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->text();
-  return new QString(ret); // 5
+void C_ZNK12QProgressBar9alignmentEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->alignment();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 103, column 10>
-//   // proto:  void QProgressBar::setMinimum(int minimum);
-// _ZN12QProgressBar10setMinimumEi setMinimum(int)
+// /usr/include/qt/QtWidgets/qprogressbar.h:84
+// void setAlignment(Qt::Alignment)
 extern "C"
-void
-C_ZN12QProgressBar10setMinimumEi(void *qthis,
-int arg1) {
-  ((QProgressBar*)qthis)->setMinimum(arg1);
+void C_ZN12QProgressBar12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QProgressBar*)this_)->setAlignment(alignment);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 109, column 10>
-//   // proto:  void QProgressBar::valueChanged(int value);
-// _ZN12QProgressBar12valueChangedEi valueChanged(int)
+// virtual
+// /usr/include/qt/QtWidgets/qprogressbar.h:86
+// QSize sizeHint()
 extern "C"
-void
-C_ZN12QProgressBar12valueChangedEi(void *qthis,
-int arg1) {
-  ((QProgressBar*)qthis)->valueChanged(arg1);
+void C_ZNK12QProgressBar8sizeHintEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 71, column 14>
-//   // proto:  void QProgressBar::QProgressBar(QWidget * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qprogressbar.h:87
+// QSize minimumSizeHint()
 extern "C"
-QProgressBar*
-C_ZN12QProgressBarC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QProgressBar(arg1);
-  return ret;
+void C_ZNK12QProgressBar15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 80, column 10>
-//   // proto:  void QProgressBar::setTextVisible(bool visible);
-// _ZN12QProgressBar14setTextVisibleEb setTextVisible(_Bool)
+// /usr/include/qt/QtWidgets/qprogressbar.h:89
+// Qt::Orientation orientation()
 extern "C"
-void
-C_ZN12QProgressBar14setTextVisibleEb(void *qthis,
-bool arg1) {
-  ((QProgressBar*)qthis)->setTextVisible(arg1);
+void C_ZNK12QProgressBar11orientationEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 77, column 9>
-//   // proto:  int QProgressBar::value();
-// _ZNK12QProgressBar5valueEv value()
+// /usr/include/qt/QtWidgets/qprogressbar.h:91
+// void setInvertedAppearance(_Bool)
 extern "C"
-int
-C_ZNK12QProgressBar5valueEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->value();
-  return ret; // 0 TypeKind.INT
+void C_ZN12QProgressBar21setInvertedAppearanceEb(void *this_, bool invert) {
+  ((QProgressBar*)this_)->setInvertedAppearance(invert);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 105, column 10>
-//   // proto:  void QProgressBar::setValue(int value);
-// _ZN12QProgressBar8setValueEi setValue(int)
+// /usr/include/qt/QtWidgets/qprogressbar.h:92
+// bool invertedAppearance()
 extern "C"
-void
-C_ZN12QProgressBar8setValueEi(void *qthis,
-int arg1) {
-  ((QProgressBar*)qthis)->setValue(arg1);
+void C_ZNK12QProgressBar18invertedAppearanceEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->invertedAppearance();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 89, column 21>
-//   // proto:  Qt::Orientation QProgressBar::orientation();
-// _ZNK12QProgressBar11orientationEv orientation()
+// /usr/include/qt/QtWidgets/qprogressbar.h:93
+// void setTextDirection(class QProgressBar::Direction)
 extern "C"
-Qt::Orientation
-C_ZNK12QProgressBar11orientationEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN12QProgressBar16setTextDirectionENS_9DirectionE(void *this_, QProgressBar::Direction textDirection) {
+  ((QProgressBar*)this_)->setTextDirection(textDirection);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 93, column 10>
-//   // proto:  void QProgressBar::setTextDirection(QProgressBar::Direction textDirection);
-// _ZN12QProgressBar16setTextDirectionENS_9DirectionE setTextDirection(class QProgressBar::Direction)
+// /usr/include/qt/QtWidgets/qprogressbar.h:94
+// QProgressBar::Direction textDirection()
 extern "C"
-void
-C_ZN12QProgressBar16setTextDirectionENS_9DirectionE(void *qthis,
-QProgressBar::Direction* arg1) {
-  ((QProgressBar*)qthis)->setTextDirection(*((QProgressBar::Direction*)arg1));
+void C_ZNK12QProgressBar13textDirectionEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->textDirection();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 87, column 11>
-//   // proto:  QSize QProgressBar::minimumSizeHint();
-// _ZNK12QProgressBar15minimumSizeHintEv minimumSizeHint()
+// /usr/include/qt/QtWidgets/qprogressbar.h:96
+// void setFormat(const class QString &)
 extern "C"
-QSize*
-C_ZNK12QProgressBar15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
+void C_ZN12QProgressBar9setFormatERK7QString(void *this_, const QString & format) {
+  ((QProgressBar*)this_)->setFormat(format);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 74, column 9>
-//   // proto:  int QProgressBar::minimum();
-// _ZNK12QProgressBar7minimumEv minimum()
+// /usr/include/qt/QtWidgets/qprogressbar.h:97
+// void resetFormat()
 extern "C"
-int
-C_ZNK12QProgressBar7minimumEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->minimum();
-  return ret; // 0 TypeKind.INT
+void C_ZN12QProgressBar11resetFormatEv(void *this_) {
+  ((QProgressBar*)this_)->resetFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 102, column 10>
-//   // proto:  void QProgressBar::setRange(int minimum, int maximum);
-// _ZN12QProgressBar8setRangeEii setRange(int, int)
+// /usr/include/qt/QtWidgets/qprogressbar.h:98
+// QString format()
 extern "C"
-void
-C_ZN12QProgressBar8setRangeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QProgressBar*)qthis)->setRange(arg1,
-arg2);
+void C_ZNK12QProgressBar6formatEv(void *this_) {
+  /*return*/ ((QProgressBar*)this_)->format();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 86, column 11>
-//   // proto:  QSize QProgressBar::sizeHint();
-// _ZNK12QProgressBar8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qprogressbar.h:101
+// void reset()
 extern "C"
-QSize*
-C_ZNK12QProgressBar8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN12QProgressBar5resetEv(void *this_) {
+  ((QProgressBar*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 97, column 10>
-//   // proto:  void QProgressBar::resetFormat();
-// _ZN12QProgressBar11resetFormatEv resetFormat()
+// /usr/include/qt/QtWidgets/qprogressbar.h:102
+// void setRange(int, int)
 extern "C"
-void
-C_ZN12QProgressBar11resetFormatEv(void *qthis) {
-  ((QProgressBar*)qthis)->resetFormat();
+void C_ZN12QProgressBar8setRangeEii(void *this_, int minimum, int maximum) {
+  ((QProgressBar*)this_)->setRange(minimum, maximum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 81, column 10>
-//   // proto:  bool QProgressBar::isTextVisible();
-// _ZNK12QProgressBar13isTextVisibleEv isTextVisible()
+// /usr/include/qt/QtWidgets/qprogressbar.h:103
+// void setMinimum(int)
 extern "C"
-bool
-C_ZNK12QProgressBar13isTextVisibleEv(void *qthis) {
-  auto ret =
-  ((QProgressBar*)qthis)->isTextVisible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN12QProgressBar10setMinimumEi(void *this_, int minimum) {
+  ((QProgressBar*)this_)->setMinimum(minimum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 84, column 10>
-//   // proto:  void QProgressBar::setAlignment(Qt::Alignment alignment);
-// _ZN12QProgressBar12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
+// /usr/include/qt/QtWidgets/qprogressbar.h:104
+// void setMaximum(int)
 extern "C"
-void
-C_ZN12QProgressBar12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-Qt::Alignment* arg1) {
-  ((QProgressBar*)qthis)->setAlignment(*((Qt::Alignment*)arg1));
+void C_ZN12QProgressBar10setMaximumEi(void *this_, int maximum) {
+  ((QProgressBar*)this_)->setMaximum(maximum);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 91, column 10>
-//   // proto:  void QProgressBar::setInvertedAppearance(bool invert);
-// _ZN12QProgressBar21setInvertedAppearanceEb setInvertedAppearance(_Bool)
+// /usr/include/qt/QtWidgets/qprogressbar.h:105
+// void setValue(int)
 extern "C"
-void
-C_ZN12QProgressBar21setInvertedAppearanceEb(void *qthis,
-bool arg1) {
-  ((QProgressBar*)qthis)->setInvertedAppearance(arg1);
+void C_ZN12QProgressBar8setValueEi(void *this_, int value) {
+  ((QProgressBar*)this_)->setValue(value);
 }
-//   // proto:  void QProgressBar::~QProgressBar();
+// /usr/include/qt/QtWidgets/qprogressbar.h:106
+// void setOrientation(Qt::Orientation)
 extern "C"
-void C_ZN12QProgressBarD2Ev(void *qthis) {
-  delete (QProgressBar*)qthis;
+void C_ZN12QProgressBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation a0) {
+  ((QProgressBar*)this_)->setOrientation(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 106, column 10>
-//   // proto:  void QProgressBar::setOrientation(Qt::Orientation );
-// _ZN12QProgressBar14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
+// /usr/include/qt/QtWidgets/qprogressbar.h:109
+// void valueChanged(int)
 extern "C"
-void
-C_ZN12QProgressBar14setOrientationEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QProgressBar*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
+void C_ZN12QProgressBar12valueChangedEi(void *this_, int value) {
+  ((QProgressBar*)this_)->valueChanged(value);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qprogressbar.h', line 104, column 10>
-//   // proto:  void QProgressBar::setMaximum(int maximum);
-// _ZN12QProgressBar10setMaximumEi setMaximum(int)
-extern "C"
-void
-C_ZN12QProgressBar10setMaximumEi(void *qthis,
-int arg1) {
-  ((QProgressBar*)qthis)->setMaximum(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QProgressBar_SlotProxy here
-class QProgressBar_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QProgressBar_SlotProxy():QObject(){}
-
-public slots:
-  // valueChanged(int)
-  void slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0);
-public:
-  void (*slot_func__ZN12QProgressBar12valueChangedEi)(void* rsfptr, int arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qprogressbar.moc"
-
-extern "C" {
-  QProgressBar_SlotProxy* QProgressBar_SlotProxy_new()
-  {
-    return new QProgressBar_SlotProxy();
-  }
-};
-
-void QProgressBar_SlotProxy::slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0) {
-  if (this->slot_func__ZN12QProgressBar12valueChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN12QProgressBar12valueChangedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QProgressBar_SlotProxy_connect__ZN12QProgressBar12valueChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QProgressBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN12QProgressBar12valueChangedEi = (decltype(that->slot_func__ZN12QProgressBar12valueChangedEi))ffifptr;
-  QObject::connect((QProgressBar*)sender, SIGNAL(valueChanged(int)), that, SLOT(slot_proxy_func__ZN12QProgressBar12valueChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QProgressBar_SlotProxy_disconnect__ZN12QProgressBar12valueChangedEi(QProgressBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

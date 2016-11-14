@@ -1,307 +1,163 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qgraphicslinearlayout.h
-// dst-file: /src/widgets/qgraphicslinearlayout.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #include <qgraphicslinearlayout.h>
+#include <QtWidgets>
 
-
-#include <qglobal.h>
-#include <qnamespace.h>
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qgraphicslinearlayout_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 64, column 17>
-//   // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
-if (true) {
-  auto f = [](QGraphicsLinearLayout flythis, int arg1) {
-    ((QGraphicsLinearLayout*)0)->addStretch(arg1);
-    flythis.addStretch(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN21QGraphicsLinearLayout10addStretchEi addStretch(int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 63, column 17>
-//   // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
-if (true) {
-  auto f = [](QGraphicsLinearLayout flythis, QGraphicsLayoutItem * arg1) {
-    ((QGraphicsLinearLayout*)0)->addItem(arg1);
-    flythis.addItem(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem addItem(class QGraphicsLayoutItem *)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
+// void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
 extern "C"
-int QGraphicsLinearLayout_Class_Size()
-{
-  return sizeof(QGraphicsLinearLayout);
+void* C_ZN21QGraphicsLinearLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
+  return new QGraphicsLinearLayout(parent);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 73, column 11>
-//   // proto:  qreal QGraphicsLinearLayout::spacing();
-// _ZNK21QGraphicsLinearLayout7spacingEv spacing()
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
+// void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
 extern "C"
-double
-C_ZNK21QGraphicsLinearLayout7spacingEv(void *qthis) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->spacing();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN21QGraphicsLinearLayoutC1EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
+  return new QGraphicsLinearLayout(orientation, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 56, column 5>
-//   // proto:  void QGraphicsLinearLayout::QGraphicsLinearLayout(QGraphicsLayoutItem * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:58
+// void ~QGraphicsLinearLayout()
 extern "C"
-QGraphicsLinearLayout*
-C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * arg1) {
-  auto ret = new QGraphicsLinearLayout(arg1);
-  return ret;
+void C_ZN21QGraphicsLinearLayoutD1Ev(void *this_) {
+  delete (QGraphicsLinearLayout*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 86, column 26>
-//   // proto:  QGraphicsLayoutItem * QGraphicsLinearLayout::itemAt(int index);
-// _ZNK21QGraphicsLinearLayout6itemAtEi itemAt(int)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:60
+// void setOrientation(Qt::Orientation)
 extern "C"
-void*
-C_ZNK21QGraphicsLinearLayout6itemAtEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->itemAt(arg1);
-  return (void*)ret;
+void C_ZN21QGraphicsLinearLayout14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
+  ((QGraphicsLinearLayout*)this_)->setOrientation(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 81, column 19>
-//   // proto:  Qt::Alignment QGraphicsLinearLayout::alignment(QGraphicsLayoutItem * item);
-// _ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem alignment(class QGraphicsLayoutItem *)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:61
+// Qt::Orientation orientation()
 extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void *qthis,
-QGraphicsLayoutItem * arg1) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->alignment(arg1);
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
+void C_ZNK21QGraphicsLinearLayout11orientationEv(void *this_) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 88, column 10>
-//   // proto:  void QGraphicsLinearLayout::invalidate();
-// _ZN21QGraphicsLinearLayout10invalidateEv invalidate()
+// inline
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:63
+// void addItem(class QGraphicsLayoutItem *)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout10invalidateEv(void *qthis) {
-  ((QGraphicsLinearLayout*)qthis)->invalidate();
+void C_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
+  ((QGraphicsLinearLayout*)this_)->addItem(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 83, column 10>
-//   // proto:  void QGraphicsLinearLayout::setGeometry(const QRectF & rect);
-// _ZN21QGraphicsLinearLayout11setGeometryERK6QRectF setGeometry(const class QRectF &)
+// inline
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:64
+// void addStretch(int)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  ((QGraphicsLinearLayout*)qthis)->setGeometry(*((const QRectF*)arg1));
+void C_ZN21QGraphicsLinearLayout10addStretchEi(void *this_, int stretch) {
+  ((QGraphicsLinearLayout*)this_)->addStretch(stretch);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 64, column 17>
-//   // proto:  void QGraphicsLinearLayout::addStretch(int stretch);
-// _ZN21QGraphicsLinearLayout10addStretchEi addStretch(int)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:66
+// void insertItem(int, class QGraphicsLayoutItem *)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout10addStretchEi(void *qthis,
-int arg1) {
-  ((QGraphicsLinearLayout*)qthis)->addStretch(arg1);
+void C_ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem(void *this_, int index, QGraphicsLayoutItem * item) {
+  ((QGraphicsLinearLayout*)this_)->insertItem(index, item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 85, column 9>
-//   // proto:  int QGraphicsLinearLayout::count();
-// _ZNK21QGraphicsLinearLayout5countEv count()
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:67
+// void insertStretch(int, int)
 extern "C"
-int
-C_ZNK21QGraphicsLinearLayout5countEv(void *qthis) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->count();
-  return ret; // 0 TypeKind.INT
+void C_ZN21QGraphicsLinearLayout13insertStretchEii(void *this_, int index, int stretch) {
+  ((QGraphicsLinearLayout*)this_)->insertStretch(index, stretch);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 72, column 10>
-//   // proto:  void QGraphicsLinearLayout::setSpacing(qreal spacing);
-// _ZN21QGraphicsLinearLayout10setSpacingEd setSpacing(qreal)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:69
+// void removeItem(class QGraphicsLayoutItem *)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout10setSpacingEd(void *qthis,
-qreal arg1) {
-  ((QGraphicsLinearLayout*)qthis)->setSpacing(arg1);
+void C_ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
+  ((QGraphicsLinearLayout*)this_)->removeItem(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 61, column 21>
-//   // proto:  Qt::Orientation QGraphicsLinearLayout::orientation();
-// _ZNK21QGraphicsLinearLayout11orientationEv orientation()
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:70
+// void removeAt(int)
 extern "C"
-Qt::Orientation
-C_ZNK21QGraphicsLinearLayout11orientationEv(void *qthis) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN21QGraphicsLinearLayout8removeAtEi(void *this_, int index) {
+  ((QGraphicsLinearLayout*)this_)->removeAt(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 66, column 10>
-//   // proto:  void QGraphicsLinearLayout::insertItem(int index, QGraphicsLayoutItem * item);
-// _ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem insertItem(int, class QGraphicsLayoutItem *)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:72
+// void setSpacing(qreal)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem(void *qthis,
-int arg1,
-QGraphicsLayoutItem * arg2) {
-  ((QGraphicsLinearLayout*)qthis)->insertItem(arg1,
-arg2);
+void C_ZN21QGraphicsLinearLayout10setSpacingEd(void *this_, qreal spacing) {
+  ((QGraphicsLinearLayout*)this_)->setSpacing(spacing);
 }
-//   // proto:  void QGraphicsLinearLayout::~QGraphicsLinearLayout();
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:73
+// qreal spacing()
 extern "C"
-void C_ZN21QGraphicsLinearLayoutD2Ev(void *qthis) {
-  delete (QGraphicsLinearLayout*)qthis;
+void C_ZNK21QGraphicsLinearLayout7spacingEv(void *this_) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->spacing();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 95, column 10>
-//   // proto:  void QGraphicsLinearLayout::dump(int indent);
-// _ZNK21QGraphicsLinearLayout4dumpEi dump(int)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:74
+// void setItemSpacing(int, qreal)
 extern "C"
-void
-C_ZNK21QGraphicsLinearLayout4dumpEi(void *qthis,
-int arg1) {
-  ((QGraphicsLinearLayout*)qthis)->dump(arg1);
+void C_ZN21QGraphicsLinearLayout14setItemSpacingEid(void *this_, int index, qreal spacing) {
+  ((QGraphicsLinearLayout*)this_)->setItemSpacing(index, spacing);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 77, column 10>
-//   // proto:  void QGraphicsLinearLayout::setStretchFactor(QGraphicsLayoutItem * item, int stretch);
-// _ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi setStretchFactor(class QGraphicsLayoutItem *, int)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:75
+// qreal itemSpacing(int)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void *qthis,
-QGraphicsLayoutItem * arg1,
-int arg2) {
-  ((QGraphicsLinearLayout*)qthis)->setStretchFactor(arg1,
-arg2);
+void C_ZNK21QGraphicsLinearLayout11itemSpacingEi(void *this_, int index) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->itemSpacing(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 63, column 17>
-//   // proto:  void QGraphicsLinearLayout::addItem(QGraphicsLayoutItem * item);
-// _ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem addItem(class QGraphicsLayoutItem *)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:77
+// void setStretchFactor(class QGraphicsLayoutItem *, int)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *qthis,
-QGraphicsLayoutItem * arg1) {
-  ((QGraphicsLinearLayout*)qthis)->addItem(arg1);
+void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void *this_, QGraphicsLayoutItem * item, int stretch) {
+  ((QGraphicsLinearLayout*)this_)->setStretchFactor(item, stretch);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 57, column 5>
-//   // proto:  void QGraphicsLinearLayout::QGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * parent);
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:78
+// int stretchFactor(class QGraphicsLayoutItem *)
 extern "C"
-QGraphicsLinearLayout*
-C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation* arg1,
-QGraphicsLayoutItem * arg2) {
-  auto ret = new QGraphicsLinearLayout(*((Qt::Orientation*)arg1),
-arg2);
-  return ret;
+void C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->stretchFactor(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 60, column 10>
-//   // proto:  void QGraphicsLinearLayout::setOrientation(Qt::Orientation orientation);
-// _ZN21QGraphicsLinearLayout14setOrientationEN2Qt11OrientationE setOrientation(Qt::Orientation)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:80
+// void setAlignment(class QGraphicsLayoutItem *, Qt::Alignment)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout14setOrientationEN2Qt11OrientationE(void *qthis,
-Qt::Orientation* arg1) {
-  ((QGraphicsLinearLayout*)qthis)->setOrientation(*((Qt::Orientation*)arg1));
+void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QGraphicsLinearLayout*)this_)->setAlignment(item, alignment);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 75, column 11>
-//   // proto:  qreal QGraphicsLinearLayout::itemSpacing(int index);
-// _ZNK21QGraphicsLinearLayout11itemSpacingEi itemSpacing(int)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:81
+// Qt::Alignment alignment(class QGraphicsLayoutItem *)
 extern "C"
-double
-C_ZNK21QGraphicsLinearLayout11itemSpacingEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->itemSpacing(arg1);
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->alignment(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 89, column 12>
-//   // proto:  QSizeF QGraphicsLinearLayout::sizeHint(Qt::SizeHint which, const QSizeF & constraint);
-// _ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:83
+// void setGeometry(const class QRectF &)
 extern "C"
-QSizeF*
-C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *qthis,
-Qt::SizeHint* arg1,
-const QSizeF* arg2) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->sizeHint(*((Qt::SizeHint*)arg1),
-*((const QSizeF*)arg2));
-  return new QSizeF(ret); // 5
+void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, const QRectF & rect) {
+  ((QGraphicsLinearLayout*)this_)->setGeometry(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 70, column 10>
-//   // proto:  void QGraphicsLinearLayout::removeAt(int index);
-// _ZN21QGraphicsLinearLayout8removeAtEi removeAt(int)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:85
+// int count()
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout8removeAtEi(void *qthis,
-int arg1) {
-  ((QGraphicsLinearLayout*)qthis)->removeAt(arg1);
+void C_ZNK21QGraphicsLinearLayout5countEv(void *this_) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->count();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 80, column 10>
-//   // proto:  void QGraphicsLinearLayout::setAlignment(QGraphicsLayoutItem * item, Qt::Alignment alignment);
-// _ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE setAlignment(class QGraphicsLayoutItem *, Qt::Alignment)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:86
+// QGraphicsLayoutItem * itemAt(int)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-QGraphicsLayoutItem * arg1,
-Qt::Alignment* arg2) {
-  ((QGraphicsLinearLayout*)qthis)->setAlignment(arg1,
-*((Qt::Alignment*)arg2));
+void C_ZNK21QGraphicsLinearLayout6itemAtEi(void *this_, int index) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->itemAt(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 67, column 10>
-//   // proto:  void QGraphicsLinearLayout::insertStretch(int index, int stretch);
-// _ZN21QGraphicsLinearLayout13insertStretchEii insertStretch(int, int)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:88
+// void invalidate()
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout13insertStretchEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QGraphicsLinearLayout*)qthis)->insertStretch(arg1,
-arg2);
+void C_ZN21QGraphicsLinearLayout10invalidateEv(void *this_) {
+  ((QGraphicsLinearLayout*)this_)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 74, column 10>
-//   // proto:  void QGraphicsLinearLayout::setItemSpacing(int index, qreal spacing);
-// _ZN21QGraphicsLinearLayout14setItemSpacingEid setItemSpacing(int, qreal)
+// virtual
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:89
+// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout14setItemSpacingEid(void *qthis,
-int arg1,
-qreal arg2) {
-  ((QGraphicsLinearLayout*)qthis)->setItemSpacing(arg1,
-arg2);
+void C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, const QSizeF & constraint) {
+  /*return*/ ((QGraphicsLinearLayout*)this_)->sizeHint(which, constraint);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 69, column 10>
-//   // proto:  void QGraphicsLinearLayout::removeItem(QGraphicsLayoutItem * item);
-// _ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem removeItem(class QGraphicsLayoutItem *)
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:95
+// void dump(int)
 extern "C"
-void
-C_ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem(void *qthis,
-QGraphicsLayoutItem * arg1) {
-  ((QGraphicsLinearLayout*)qthis)->removeItem(arg1);
+void C_ZNK21QGraphicsLinearLayout4dumpEi(void *this_, int indent) {
+  ((QGraphicsLinearLayout*)this_)->dump(indent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qgraphicslinearlayout.h', line 78, column 9>
-//   // proto:  int QGraphicsLinearLayout::stretchFactor(QGraphicsLayoutItem * item);
-// _ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem stretchFactor(class QGraphicsLayoutItem *)
-extern "C"
-int
-C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *qthis,
-QGraphicsLayoutItem * arg1) {
-  auto ret =
-  ((QGraphicsLinearLayout*)qthis)->stretchFactor(arg1);
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

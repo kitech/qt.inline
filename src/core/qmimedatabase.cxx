@@ -1,184 +1,82 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qmimedatabase.h
-// dst-file: /src/core/qmimedatabase.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qmimedatabase.h
 #include <qmimedatabase.h>
+#include <QtCore>
 
-
-#include <qmimetype.h>
-#include <qstring.h>
-#include <qlist.h>
-#include <qmetaobject.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qmimedatabase_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qmimedatabase.h:63
+// void QMimeDatabase()
 extern "C"
-int QMimeDatabase_Class_Size()
-{
-  return sizeof(QMimeDatabase);
+void* C_ZN13QMimeDatabaseC1Ev() {
+  return new QMimeDatabase();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 81, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForUrl(const QUrl & url);
-// _ZNK13QMimeDatabase14mimeTypeForUrlERK4QUrl mimeTypeForUrl(const class QUrl &)
+// /usr/include/qt/QtCore/qmimedatabase.h:64
+// void ~QMimeDatabase()
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase14mimeTypeForUrlERK4QUrl(void *qthis,
-const QUrl* arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForUrl(*((const QUrl*)arg1));
-  return new QMimeType(ret); // 5
+void C_ZN13QMimeDatabaseD1Ev(void *this_) {
+  delete (QMimeDatabase*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 75, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForFile(const QFileInfo & fileInfo, QMimeDatabase::MatchMode mode);
-// _ZNK13QMimeDatabase15mimeTypeForFileERK9QFileInfoNS_9MatchModeE mimeTypeForFile(const class QFileInfo &, enum QMimeDatabase::MatchMode)
+// /usr/include/qt/QtCore/qmimedatabase.h:66
+// QMimeType mimeTypeForName(const class QString &)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase15mimeTypeForFileERK9QFileInfoNS_9MatchModeE(void *qthis,
-const QFileInfo* arg1,
-QMimeDatabase::MatchMode arg2) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForFile(*((const QFileInfo*)arg1),
-arg2);
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase15mimeTypeForNameERK7QString(void *this_, const QString & nameOrAlias) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForName(nameOrAlias);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 63, column 5>
-//   // proto:  void QMimeDatabase::QMimeDatabase();
+// /usr/include/qt/QtCore/qmimedatabase.h:74
+// QMimeType mimeTypeForFile(const class QString &, enum QMimeDatabase::MatchMode)
 extern "C"
-QMimeDatabase*
-C_ZN13QMimeDatabaseC2Ev() {
-  auto ret = new QMimeDatabase();
-  return ret;
+void C_ZNK13QMimeDatabase15mimeTypeForFileERK7QStringNS_9MatchModeE(void *this_, const QString & fileName, QMimeDatabase::MatchMode mode) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForFile(fileName, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 78, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForData(const QByteArray & data);
-// _ZNK13QMimeDatabase15mimeTypeForDataERK10QByteArray mimeTypeForData(const class QByteArray &)
+// /usr/include/qt/QtCore/qmimedatabase.h:75
+// QMimeType mimeTypeForFile(const class QFileInfo &, enum QMimeDatabase::MatchMode)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase15mimeTypeForDataERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForData(*((const QByteArray*)arg1));
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase15mimeTypeForFileERK9QFileInfoNS_9MatchModeE(void *this_, const QFileInfo & fileInfo, QMimeDatabase::MatchMode mode) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForFile(fileInfo, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 66, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForName(const QString & nameOrAlias);
-// _ZNK13QMimeDatabase15mimeTypeForNameERK7QString mimeTypeForName(const class QString &)
+// /usr/include/qt/QtCore/qmimedatabase.h:76
+// QList<QMimeType> mimeTypesForFileName(const class QString &)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase15mimeTypeForNameERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForName(*((const QString*)arg1));
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase20mimeTypesForFileNameERK7QString(void *this_, const QString & fileName) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypesForFileName(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 85, column 13>
-//   // proto:  QString QMimeDatabase::suffixForFileName(const QString & fileName);
-// _ZNK13QMimeDatabase17suffixForFileNameERK7QString suffixForFileName(const class QString &)
+// /usr/include/qt/QtCore/qmimedatabase.h:78
+// QMimeType mimeTypeForData(const class QByteArray &)
 extern "C"
-QString*
-C_ZNK13QMimeDatabase17suffixForFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->suffixForFileName(*((const QString*)arg1));
-  return new QString(ret); // 5
+void C_ZNK13QMimeDatabase15mimeTypeForDataERK10QByteArray(void *this_, const QByteArray & data) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForData(data);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 76, column 22>
-//   // proto:  QList<QMimeType> QMimeDatabase::mimeTypesForFileName(const QString & fileName);
-// _ZNK13QMimeDatabase20mimeTypesForFileNameERK7QString mimeTypesForFileName(const class QString &)
+// /usr/include/qt/QtCore/qmimedatabase.h:79
+// QMimeType mimeTypeForData(class QIODevice *)
 extern "C"
-QList<QMimeType>*
-C_ZNK13QMimeDatabase20mimeTypesForFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypesForFileName(*((const QString*)arg1));
-  return new QList<QMimeType>(ret); // 5
+void C_ZNK13QMimeDatabase15mimeTypeForDataEP9QIODevice(void *this_, QIODevice * device) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForData(device);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 82, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForFileNameAndData(const QString & fileName, QIODevice * device);
-// _ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringP9QIODevice mimeTypeForFileNameAndData(const class QString &, class QIODevice *)
+// /usr/include/qt/QtCore/qmimedatabase.h:81
+// QMimeType mimeTypeForUrl(const class QUrl &)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringP9QIODevice(void *qthis,
-const QString* arg1,
-QIODevice * arg2) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForFileNameAndData(*((const QString*)arg1),
-arg2);
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase14mimeTypeForUrlERK4QUrl(void *this_, const QUrl & url) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForUrl(url);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 79, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForData(QIODevice * device);
-// _ZNK13QMimeDatabase15mimeTypeForDataEP9QIODevice mimeTypeForData(class QIODevice *)
+// /usr/include/qt/QtCore/qmimedatabase.h:82
+// QMimeType mimeTypeForFileNameAndData(const class QString &, class QIODevice *)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase15mimeTypeForDataEP9QIODevice(void *qthis,
-QIODevice * arg1) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForData(arg1);
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringP9QIODevice(void *this_, const QString & fileName, QIODevice * device) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForFileNameAndData(fileName, device);
 }
-//   // proto:  void QMimeDatabase::~QMimeDatabase();
+// /usr/include/qt/QtCore/qmimedatabase.h:83
+// QMimeType mimeTypeForFileNameAndData(const class QString &, const class QByteArray &)
 extern "C"
-void C_ZN13QMimeDatabaseD2Ev(void *qthis) {
-  delete (QMimeDatabase*)qthis;
+void C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringRK10QByteArray(void *this_, const QString & fileName, const QByteArray & data) {
+  /*return*/ ((QMimeDatabase*)this_)->mimeTypeForFileNameAndData(fileName, data);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 83, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForFileNameAndData(const QString & fileName, const QByteArray & data);
-// _ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringRK10QByteArray mimeTypeForFileNameAndData(const class QString &, const class QByteArray &)
+// /usr/include/qt/QtCore/qmimedatabase.h:85
+// QString suffixForFileName(const class QString &)
 extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase26mimeTypeForFileNameAndDataERK7QStringRK10QByteArray(void *qthis,
-const QString* arg1,
-const QByteArray* arg2) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForFileNameAndData(*((const QString*)arg1),
-*((const QByteArray*)arg2));
-  return new QMimeType(ret); // 5
+void C_ZNK13QMimeDatabase17suffixForFileNameERK7QString(void *this_, const QString & fileName) {
+  /*return*/ ((QMimeDatabase*)this_)->suffixForFileName(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 87, column 22>
-//   // proto:  QList<QMimeType> QMimeDatabase::allMimeTypes();
-// _ZNK13QMimeDatabase12allMimeTypesEv allMimeTypes()
+// /usr/include/qt/QtCore/qmimedatabase.h:87
+// QList<QMimeType> allMimeTypes()
 extern "C"
-QList<QMimeType>*
-C_ZNK13QMimeDatabase12allMimeTypesEv(void *qthis) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->allMimeTypes();
-  return new QList<QMimeType>(ret); // 5
+void C_ZNK13QMimeDatabase12allMimeTypesEv(void *this_) {
+  /*return*/ ((QMimeDatabase*)this_)->allMimeTypes();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qmimedatabase.h', line 74, column 15>
-//   // proto:  QMimeType QMimeDatabase::mimeTypeForFile(const QString & fileName, QMimeDatabase::MatchMode mode);
-// _ZNK13QMimeDatabase15mimeTypeForFileERK7QStringNS_9MatchModeE mimeTypeForFile(const class QString &, enum QMimeDatabase::MatchMode)
-extern "C"
-QMimeType*
-C_ZNK13QMimeDatabase15mimeTypeForFileERK7QStringNS_9MatchModeE(void *qthis,
-const QString* arg1,
-QMimeDatabase::MatchMode arg2) {
-  auto ret =
-  ((QMimeDatabase*)qthis)->mimeTypeForFile(*((const QString*)arg1),
-arg2);
-  return new QMimeType(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

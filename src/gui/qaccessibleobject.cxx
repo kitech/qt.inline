@@ -1,203 +1,73 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qaccessibleobject.h
-// dst-file: /src/gui/qaccessibleobject.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qaccessibleobject.h
 #include <qaccessibleobject.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qaccessible.h>
-#include <qrect.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qaccessibleobject_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qaccessibleobject.h:77
+// void QAccessibleApplication()
 extern "C"
-int QAccessibleApplication_Class_Size()
-{
-  return sizeof(QAccessibleApplication);
+void* C_ZN22QAccessibleApplicationC1Ev() {
+  return new QAccessibleApplication();
 }
-
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:79
+// QWindow * window()
 extern "C"
-int QAccessibleObject_Class_Size()
-{
-  return sizeof(QAccessibleObject);
+void C_ZNK22QAccessibleApplication6windowEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->window();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 77, column 5>
-//   // proto:  void QAccessibleApplication::QAccessibleApplication();
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:81
+// int childCount()
 extern "C"
-QAccessibleApplication*
-C_ZN22QAccessibleApplicationC2Ev() {
-  auto ret = new QAccessibleApplication();
-  return ret;
+void C_ZNK22QAccessibleApplication10childCountEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->childCount();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 90, column 13>
-//   // proto:  QString QAccessibleApplication::text(QAccessible::Text t);
-// _ZNK22QAccessibleApplication4textEN11QAccessible4TextE text(class QAccessible::Text)
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:82
+// int indexOfChild(const class QAccessibleInterface *)
 extern "C"
-QString*
-C_ZNK22QAccessibleApplication4textEN11QAccessible4TextE(void *qthis,
-QAccessible::Text* arg1) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->text(*((QAccessible::Text*)arg1));
-  return new QString(ret); // 5
+void C_ZNK22QAccessibleApplication12indexOfChildEPK20QAccessibleInterface(void *this_, const QAccessibleInterface * a0) {
+  /*return*/ ((QAccessibleApplication*)this_)->indexOfChild(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 79, column 14>
-//   // proto:  QWindow * QAccessibleApplication::window();
-// _ZNK22QAccessibleApplication6windowEv window()
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:83
+// QAccessibleInterface * focusChild()
 extern "C"
-void*
-C_ZNK22QAccessibleApplication6windowEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->window();
-  return (void*)ret;
+void C_ZNK22QAccessibleApplication10focusChildEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->focusChild();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 92, column 24>
-//   // proto:  QAccessible::State QAccessibleApplication::state();
-// _ZNK22QAccessibleApplication5stateEv state()
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:86
+// QAccessibleInterface * parent()
 extern "C"
-QAccessible::State*
-C_ZNK22QAccessibleApplication5stateEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->state();
-  return new QAccessible::State(ret); // 5
+void C_ZNK22QAccessibleApplication6parentEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->parent();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 87, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleApplication::child(int index);
-// _ZNK22QAccessibleApplication5childEi child(int)
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:87
+// QAccessibleInterface * child(int)
 extern "C"
-void*
-C_ZNK22QAccessibleApplication5childEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->child(arg1);
-  return (void*)ret;
+void C_ZNK22QAccessibleApplication5childEi(void *this_, int index) {
+  /*return*/ ((QAccessibleApplication*)this_)->child(index);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 81, column 9>
-//   // proto:  int QAccessibleApplication::childCount();
-// _ZNK22QAccessibleApplication10childCountEv childCount()
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:90
+// QString text(class QAccessible::Text)
 extern "C"
-int
-C_ZNK22QAccessibleApplication10childCountEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->childCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK22QAccessibleApplication4textEN11QAccessible4TextE(void *this_, QAccessible::Text t) {
+  /*return*/ ((QAccessibleApplication*)this_)->text(t);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 86, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleApplication::parent();
-// _ZNK22QAccessibleApplication6parentEv parent()
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:91
+// QAccessible::Role role()
 extern "C"
-void*
-C_ZNK22QAccessibleApplication6parentEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->parent();
-  return (void*)ret;
+void C_ZNK22QAccessibleApplication4roleEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->role();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 83, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleApplication::focusChild();
-// _ZNK22QAccessibleApplication10focusChildEv focusChild()
+// virtual
+// /usr/include/qt/QtGui/qaccessibleobject.h:92
+// QAccessible::State state()
 extern "C"
-void*
-C_ZNK22QAccessibleApplication10focusChildEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->focusChild();
-  return (void*)ret;
+void C_ZNK22QAccessibleApplication5stateEv(void *this_) {
+  /*return*/ ((QAccessibleApplication*)this_)->state();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 91, column 23>
-//   // proto:  QAccessible::Role QAccessibleApplication::role();
-// _ZNK22QAccessibleApplication4roleEv role()
-extern "C"
-QAccessible::Role
-C_ZNK22QAccessibleApplication4roleEv(void *qthis) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->role();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 82, column 9>
-//   // proto:  int QAccessibleApplication::indexOfChild(const QAccessibleInterface * );
-// _ZNK22QAccessibleApplication12indexOfChildEPK20QAccessibleInterface indexOfChild(const class QAccessibleInterface *)
-extern "C"
-int
-C_ZNK22QAccessibleApplication12indexOfChildEPK20QAccessibleInterface(void *qthis,
-const QAccessibleInterface * arg1) {
-  auto ret =
-  ((QAccessibleApplication*)qthis)->indexOfChild(arg1);
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 63, column 10>
-//   // proto:  void QAccessibleObject::setText(QAccessible::Text t, const QString & text);
-// _ZN17QAccessibleObject7setTextEN11QAccessible4TextERK7QString setText(class QAccessible::Text, const class QString &)
-extern "C"
-void
-C_ZN17QAccessibleObject7setTextEN11QAccessible4TextERK7QString(void *qthis,
-QAccessible::Text* arg1,
-const QString* arg2) {
-  ((QAccessibleObject*)qthis)->setText(*((QAccessible::Text*)arg1),
-*((const QString*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 59, column 14>
-//   // proto:  QObject * QAccessibleObject::object();
-// _ZNK17QAccessibleObject6objectEv object()
-extern "C"
-void*
-C_ZNK17QAccessibleObject6objectEv(void *qthis) {
-  auto ret =
-  ((QAccessibleObject*)qthis)->object();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 62, column 11>
-//   // proto:  QRect QAccessibleObject::rect();
-// _ZNK17QAccessibleObject4rectEv rect()
-extern "C"
-QRect*
-C_ZNK17QAccessibleObject4rectEv(void *qthis) {
-  auto ret =
-  ((QAccessibleObject*)qthis)->rect();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 64, column 27>
-//   // proto:  QAccessibleInterface * QAccessibleObject::childAt(int x, int y);
-// _ZNK17QAccessibleObject7childAtEii childAt(int, int)
-extern "C"
-void*
-C_ZNK17QAccessibleObject7childAtEii(void *qthis,
-int arg1,
-int arg2) {
-  auto ret =
-  ((QAccessibleObject*)qthis)->childAt(arg1,
-arg2);
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qaccessibleobject.h', line 58, column 10>
-//   // proto:  bool QAccessibleObject::isValid();
-// _ZNK17QAccessibleObject7isValidEv isValid()
-extern "C"
-bool
-C_ZNK17QAccessibleObject7isValidEv(void *qthis) {
-  auto ret =
-  ((QAccessibleObject*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,109 +1,43 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qpauseanimation.h
-// dst-file: /src/core/qpauseanimation.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qpauseanimation.h
 #include <qpauseanimation.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qpauseanimation_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qpauseanimation.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QPauseAnimation_Class_Size()
-{
-  return sizeof(QPauseAnimation);
+void C_ZNK15QPauseAnimation10metaObjectEv(void *this_) {
+  /*return*/ ((QPauseAnimation*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 62, column 10>
-//   // proto:  void QPauseAnimation::setDuration(int msecs);
-// _ZN15QPauseAnimation11setDurationEi setDuration(int)
+// /usr/include/qt/QtCore/qpauseanimation.h:57
+// void QPauseAnimation(class QObject *)
 extern "C"
-void
-C_ZN15QPauseAnimation11setDurationEi(void *qthis,
-int arg1) {
-  ((QPauseAnimation*)qthis)->setDuration(arg1);
+void* C_ZN15QPauseAnimationC1EP7QObject(QObject * parent) {
+  return new QPauseAnimation(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 57, column 5>
-//   // proto:  void QPauseAnimation::QPauseAnimation(QObject * parent);
+// /usr/include/qt/QtCore/qpauseanimation.h:58
+// void QPauseAnimation(int, class QObject *)
 extern "C"
-QPauseAnimation*
-C_ZN15QPauseAnimationC2EP7QObject(QObject * arg1) {
-  auto ret = new QPauseAnimation(arg1);
-  return ret;
+void* C_ZN15QPauseAnimationC1EiP7QObject(int msecs, QObject * parent) {
+  return new QPauseAnimation(msecs, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 58, column 5>
-//   // proto:  void QPauseAnimation::QPauseAnimation(int msecs, QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qpauseanimation.h:59
+// void ~QPauseAnimation()
 extern "C"
-QPauseAnimation*
-C_ZN15QPauseAnimationC2EiP7QObject(int arg1,
-QObject * arg2) {
-  auto ret = new QPauseAnimation(arg1,
-arg2);
-  return ret;
+void C_ZN15QPauseAnimationD1Ev(void *this_) {
+  delete (QPauseAnimation*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 61, column 9>
-//   // proto:  int QPauseAnimation::duration();
-// _ZNK15QPauseAnimation8durationEv duration()
+// virtual
+// /usr/include/qt/QtCore/qpauseanimation.h:61
+// int duration()
 extern "C"
-int
-C_ZNK15QPauseAnimation8durationEv(void *qthis) {
-  auto ret =
-  ((QPauseAnimation*)qthis)->duration();
-  return ret; // 0 TypeKind.INT
+void C_ZNK15QPauseAnimation8durationEv(void *this_) {
+  /*return*/ ((QPauseAnimation*)this_)->duration();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpauseanimation.h', line 54, column 5>
-//   // proto:  const QMetaObject * QPauseAnimation::metaObject();
-// _ZNK15QPauseAnimation10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qpauseanimation.h:62
+// void setDuration(int)
 extern "C"
-void*
-C_ZNK15QPauseAnimation10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QPauseAnimation*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN15QPauseAnimation11setDurationEi(void *this_, int msecs) {
+  ((QPauseAnimation*)this_)->setDuration(msecs);
 }
-//   // proto:  void QPauseAnimation::~QPauseAnimation();
-extern "C"
-void C_ZN15QPauseAnimationD2Ev(void *qthis) {
-  delete (QPauseAnimation*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// QPauseAnimation_SlotProxy here
-class QPauseAnimation_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QPauseAnimation_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qpauseanimation.moc"
-
-extern "C" {
-  QPauseAnimation_SlotProxy* QPauseAnimation_SlotProxy_new()
-  {
-    return new QPauseAnimation_SlotProxy();
-  }
-};
-
-// <= body block end
-

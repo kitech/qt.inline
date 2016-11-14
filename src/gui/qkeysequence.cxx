@@ -1,222 +1,106 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qkeysequence.h
-// dst-file: /src/gui/qkeysequence.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qkeysequence.h
 #include <qkeysequence.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qlist.h>
-#include <qwindowdefs.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qkeysequence_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 192, column 10>
-//   // proto:  void QKeySequence::swap(QKeySequence & other);
-if (true) {
-  auto f = [](QKeySequence flythis, QKeySequence & arg1) {
-    ((QKeySequence*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN12QKeySequence4swapERS_ swap(class QKeySequence &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qkeysequence.h:156
+// void QKeySequence()
 extern "C"
-int QKeySequence_Class_Size()
-{
-  return sizeof(QKeySequence);
+void* C_ZN12QKeySequenceC1Ev() {
+  return new QKeySequence();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 205, column 10>
-//   // proto:  bool QKeySequence::isDetached();
-// _ZNK12QKeySequence10isDetachedEv isDetached()
+// /usr/include/qt/QtGui/qkeysequence.h:157
+// void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-bool
-C_ZNK12QKeySequence10isDetachedEv(void *qthis) {
-  auto ret =
-  ((QKeySequence*)qthis)->isDetached();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN12QKeySequenceC1ERK7QStringNS_14SequenceFormatE(const QString & key, QKeySequence::SequenceFormat format) {
+  return new QKeySequence(key, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 172, column 13>
-//   // proto:  QString QKeySequence::toString(QKeySequence::SequenceFormat format);
-// _ZNK12QKeySequence8toStringENS_14SequenceFormatE toString(enum QKeySequence::SequenceFormat)
+// /usr/include/qt/QtGui/qkeysequence.h:158
+// void QKeySequence(int, int, int, int)
 extern "C"
-QString*
-C_ZNK12QKeySequence8toStringENS_14SequenceFormatE(void *qthis,
-QKeySequence::SequenceFormat arg1) {
-  auto ret =
-  ((QKeySequence*)qthis)->toString(arg1);
-  return new QString(ret); // 5
+void* C_ZN12QKeySequenceC1Eiiii(int k1, int k2, int k3, int k4) {
+  return new QKeySequence(k1, k2, k3, k4);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 164, column 10>
-//   // proto:  bool QKeySequence::isEmpty();
-// _ZNK12QKeySequence7isEmptyEv isEmpty()
+// /usr/include/qt/QtGui/qkeysequence.h:160
+// void QKeySequence(enum QKeySequence::StandardKey)
 extern "C"
-bool
-C_ZNK12QKeySequence7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QKeySequence*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN12QKeySequenceC1ENS_11StandardKeyE(QKeySequence::StandardKey key) {
+  return new QKeySequence(key);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 159, column 5>
-//   // proto:  void QKeySequence::QKeySequence(const QKeySequence & ks);
+// /usr/include/qt/QtGui/qkeysequence.h:161
+// void ~QKeySequence()
 extern "C"
-QKeySequence*
-C_ZN12QKeySequenceC2ERKS_(const QKeySequence* arg1) {
-  auto ret = new QKeySequence(*((const QKeySequence*)arg1));
-  return ret;
+void C_ZN12QKeySequenceD1Ev(void *this_) {
+  delete (QKeySequence*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 158, column 5>
-//   // proto:  void QKeySequence::QKeySequence(int k1, int k2, int k3, int k4);
+// /usr/include/qt/QtGui/qkeysequence.h:163
+// int count()
 extern "C"
-QKeySequence*
-C_ZN12QKeySequenceC2Eiiii(int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  auto ret = new QKeySequence(arg1,
-arg2,
-arg3,
-arg4);
-  return ret;
+void C_ZNK12QKeySequence5countEv(void *this_) {
+  /*return*/ ((QKeySequence*)this_)->count();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 163, column 9>
-//   // proto:  int QKeySequence::count();
-// _ZNK12QKeySequence5countEv count()
+// /usr/include/qt/QtGui/qkeysequence.h:164
+// bool isEmpty()
 extern "C"
-int
-C_ZNK12QKeySequence5countEv(void *qthis) {
-  auto ret =
-  ((QKeySequence*)qthis)->count();
-  return ret; // 0 TypeKind.INT
+void C_ZNK12QKeySequence7isEmptyEv(void *this_) {
+  /*return*/ ((QKeySequence*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 173, column 25>
-//   // proto: static QKeySequence QKeySequence::fromString(const QString & str, QKeySequence::SequenceFormat format);
-// _ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE fromString(const class QString &, enum QKeySequence::SequenceFormat)
+// /usr/include/qt/QtGui/qkeysequence.h:172
+// QString toString(enum QKeySequence::SequenceFormat)
 extern "C"
-QKeySequence*
-C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(const QString* arg1,
-QKeySequence::SequenceFormat arg2) {
-  auto ret =
-  QKeySequence::fromString(*((const QString*)arg1),
-arg2);
-  return new QKeySequence(ret); // 5
+void C_ZNK12QKeySequence8toStringENS_14SequenceFormatE(void *this_, QKeySequence::SequenceFormat format) {
+  /*return*/ ((QKeySequence*)this_)->toString(format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 178, column 19>
-//   // proto:  QKeySequence::SequenceMatch QKeySequence::matches(const QKeySequence & seq);
-// _ZNK12QKeySequence7matchesERKS_ matches(const class QKeySequence &)
+// static
+// /usr/include/qt/QtGui/qkeysequence.h:173
+// QKeySequence fromString(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-QKeySequence::SequenceMatch
-C_ZNK12QKeySequence7matchesERKS_(void *qthis,
-const QKeySequence* arg1) {
-  auto ret =
-  ((QKeySequence*)qthis)->matches(*((const QKeySequence*)arg1));
-  return ret; // 0 TypeKind.ENUM
+void C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(const QString & str, QKeySequence::SequenceFormat format) {
+  /*return*/ QKeySequence::fromString(str, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 180, column 32>
-//   // proto: static QList<QKeySequence> QKeySequence::keyBindings(QKeySequence::StandardKey key);
-// _ZN12QKeySequence11keyBindingsENS_11StandardKeyE keyBindings(enum QKeySequence::StandardKey)
+// static
+// /usr/include/qt/QtGui/qkeysequence.h:175
+// QList<QKeySequence> listFromString(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-QList<QKeySequence>*
-C_ZN12QKeySequence11keyBindingsENS_11StandardKeyE(QKeySequence::StandardKey arg1) {
-  auto ret =
-  QKeySequence::keyBindings(arg1);
-  return new QList<QKeySequence>(ret); // 5
+void C_ZN12QKeySequence14listFromStringERK7QStringNS_14SequenceFormatE(const QString & str, QKeySequence::SequenceFormat format) {
+  /*return*/ QKeySequence::listFromString(str, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 179, column 25>
-//   // proto: static QKeySequence QKeySequence::mnemonic(const QString & text);
-// _ZN12QKeySequence8mnemonicERK7QString mnemonic(const class QString &)
+// static
+// /usr/include/qt/QtGui/qkeysequence.h:176
+// QString listToString(const QList<class QKeySequence> &, enum QKeySequence::SequenceFormat)
 extern "C"
-QKeySequence*
-C_ZN12QKeySequence8mnemonicERK7QString(const QString* arg1) {
-  auto ret =
-  QKeySequence::mnemonic(*((const QString*)arg1));
-  return new QKeySequence(ret); // 5
+void C_ZN12QKeySequence12listToStringERK5QListIS_ENS_14SequenceFormatE(const QList<QKeySequence> & list, QKeySequence::SequenceFormat format) {
+  /*return*/ QKeySequence::listToString(list, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 176, column 20>
-//   // proto: static QString QKeySequence::listToString(const QList<QKeySequence> & list, QKeySequence::SequenceFormat format);
-// _ZN12QKeySequence12listToStringERK5QListIS_ENS_14SequenceFormatE listToString(const QList<class QKeySequence> &, enum QKeySequence::SequenceFormat)
+// /usr/include/qt/QtGui/qkeysequence.h:178
+// QKeySequence::SequenceMatch matches(const class QKeySequence &)
 extern "C"
-QString*
-C_ZN12QKeySequence12listToStringERK5QListIS_ENS_14SequenceFormatE(const QList<QKeySequence>* arg1,
-QKeySequence::SequenceFormat arg2) {
-  auto ret =
-  QKeySequence::listToString(*((const QList<QKeySequence>*)arg1),
-arg2);
-  return new QString(ret); // 5
+void C_ZNK12QKeySequence7matchesERKS_(void *this_, const QKeySequence & seq) {
+  /*return*/ ((QKeySequence*)this_)->matches(seq);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 157, column 5>
-//   // proto:  void QKeySequence::QKeySequence(const QString & key, QKeySequence::SequenceFormat format);
+// static
+// /usr/include/qt/QtGui/qkeysequence.h:179
+// QKeySequence mnemonic(const class QString &)
 extern "C"
-QKeySequence*
-C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(const QString* arg1,
-QKeySequence::SequenceFormat arg2) {
-  auto ret = new QKeySequence(*((const QString*)arg1),
-arg2);
-  return ret;
+void C_ZN12QKeySequence8mnemonicERK7QString(const QString & text) {
+  /*return*/ QKeySequence::mnemonic(text);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 156, column 5>
-//   // proto:  void QKeySequence::QKeySequence();
+// static
+// /usr/include/qt/QtGui/qkeysequence.h:180
+// QList<QKeySequence> keyBindings(enum QKeySequence::StandardKey)
 extern "C"
-QKeySequence*
-C_ZN12QKeySequenceC2Ev() {
-  auto ret = new QKeySequence();
-  return ret;
+void C_ZN12QKeySequence11keyBindingsENS_11StandardKeyE(QKeySequence::StandardKey key) {
+  /*return*/ QKeySequence::keyBindings(key);
 }
-//   // proto:  void QKeySequence::~QKeySequence();
+// inline
+// /usr/include/qt/QtGui/qkeysequence.h:192
+// void swap(class QKeySequence &)
 extern "C"
-void C_ZN12QKeySequenceD2Ev(void *qthis) {
-  delete (QKeySequence*)qthis;
+void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence & other) {
+  ((QKeySequence*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 192, column 10>
-//   // proto:  void QKeySequence::swap(QKeySequence & other);
-// _ZN12QKeySequence4swapERS_ swap(class QKeySequence &)
+// /usr/include/qt/QtGui/qkeysequence.h:205
+// bool isDetached()
 extern "C"
-void
-C_ZN12QKeySequence4swapERS_(void *qthis,
-QKeySequence* arg1) {
-  ((QKeySequence*)qthis)->swap(*((QKeySequence*)arg1));
+void C_ZNK12QKeySequence10isDetachedEv(void *this_) {
+  /*return*/ ((QKeySequence*)this_)->isDetached();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 160, column 5>
-//   // proto:  void QKeySequence::QKeySequence(QKeySequence::StandardKey key);
-extern "C"
-QKeySequence*
-C_ZN12QKeySequenceC2ENS_11StandardKeyE(QKeySequence::StandardKey arg1) {
-  auto ret = new QKeySequence(arg1);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qkeysequence.h', line 175, column 32>
-//   // proto: static QList<QKeySequence> QKeySequence::listFromString(const QString & str, QKeySequence::SequenceFormat format);
-// _ZN12QKeySequence14listFromStringERK7QStringNS_14SequenceFormatE listFromString(const class QString &, enum QKeySequence::SequenceFormat)
-extern "C"
-QList<QKeySequence>*
-C_ZN12QKeySequence14listFromStringERK7QStringNS_14SequenceFormatE(const QString* arg1,
-QKeySequence::SequenceFormat arg2) {
-  auto ret =
-  QKeySequence::listFromString(*((const QString*)arg1),
-arg2);
-  return new QList<QKeySequence>(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,99 +1,43 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qscrollerproperties.h
-// dst-file: /src/widgets/qscrollerproperties.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qscrollerproperties.h
 #include <qscrollerproperties.h>
+#include <QtWidgets>
 
-
-#include <qvariant.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qscrollerproperties_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:57
+// void QScrollerProperties()
 extern "C"
-int QScrollerProperties_Class_Size()
-{
-  return sizeof(QScrollerProperties);
+void* C_ZN19QScrollerPropertiesC1Ev() {
+  return new QScrollerProperties();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 58, column 5>
-//   // proto:  void QScrollerProperties::QScrollerProperties(const QScrollerProperties & sp);
+// virtual
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:60
+// void ~QScrollerProperties()
 extern "C"
-QScrollerProperties*
-C_ZN19QScrollerPropertiesC2ERKS_(const QScrollerProperties* arg1) {
-  auto ret = new QScrollerProperties(*((const QScrollerProperties*)arg1));
-  return ret;
+void C_ZN19QScrollerPropertiesD1Ev(void *this_) {
+  delete (QScrollerProperties*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 65, column 17>
-//   // proto: static void QScrollerProperties::setDefaultScrollerProperties(const QScrollerProperties & sp);
-// _ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_ setDefaultScrollerProperties(const class QScrollerProperties &)
+// static
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:65
+// void setDefaultScrollerProperties(const class QScrollerProperties &)
 extern "C"
-void
-C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(const QScrollerProperties* arg1) {
-  QScrollerProperties::setDefaultScrollerProperties(*((const QScrollerProperties*)arg1));
+void C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(const QScrollerProperties & sp) {
+  QScrollerProperties::setDefaultScrollerProperties(sp);
 }
-//   // proto:  void QScrollerProperties::~QScrollerProperties();
+// static
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:66
+// void unsetDefaultScrollerProperties()
 extern "C"
-void C_ZN19QScrollerPropertiesD2Ev(void *qthis) {
-  delete (QScrollerProperties*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 66, column 17>
-//   // proto: static void QScrollerProperties::unsetDefaultScrollerProperties();
-// _ZN19QScrollerProperties30unsetDefaultScrollerPropertiesEv unsetDefaultScrollerProperties()
-extern "C"
-void
-C_ZN19QScrollerProperties30unsetDefaultScrollerPropertiesEv() {
+void C_ZN19QScrollerProperties30unsetDefaultScrollerPropertiesEv() {
   QScrollerProperties::unsetDefaultScrollerProperties();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 57, column 5>
-//   // proto:  void QScrollerProperties::QScrollerProperties();
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:114
+// QVariant scrollMetric(enum QScrollerProperties::ScrollMetric)
 extern "C"
-QScrollerProperties*
-C_ZN19QScrollerPropertiesC2Ev() {
-  auto ret = new QScrollerProperties();
-  return ret;
+void C_ZNK19QScrollerProperties12scrollMetricENS_12ScrollMetricE(void *this_, QScrollerProperties::ScrollMetric metric) {
+  /*return*/ ((QScrollerProperties*)this_)->scrollMetric(metric);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 115, column 10>
-//   // proto:  void QScrollerProperties::setScrollMetric(QScrollerProperties::ScrollMetric metric, const QVariant & value);
-// _ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant setScrollMetric(enum QScrollerProperties::ScrollMetric, const class QVariant &)
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:115
+// void setScrollMetric(enum QScrollerProperties::ScrollMetric, const class QVariant &)
 extern "C"
-void
-C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *qthis,
-QScrollerProperties::ScrollMetric arg1,
-const QVariant* arg2) {
-  ((QScrollerProperties*)qthis)->setScrollMetric(arg1,
-*((const QVariant*)arg2));
+void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, const QVariant & value) {
+  ((QScrollerProperties*)this_)->setScrollMetric(metric, value);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollerproperties.h', line 114, column 14>
-//   // proto:  QVariant QScrollerProperties::scrollMetric(QScrollerProperties::ScrollMetric metric);
-// _ZNK19QScrollerProperties12scrollMetricENS_12ScrollMetricE scrollMetric(enum QScrollerProperties::ScrollMetric)
-extern "C"
-QVariant*
-C_ZNK19QScrollerProperties12scrollMetricENS_12ScrollMetricE(void *qthis,
-QScrollerProperties::ScrollMetric arg1) {
-  auto ret =
-  ((QScrollerProperties*)qthis)->scrollMetric(arg1);
-  return new QVariant(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

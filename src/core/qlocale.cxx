@@ -1,1297 +1,600 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qlocale.h
-// dst-file: /src/core/qlocale.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qlocale.h
 #include <qlocale.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-#include <qglobal.h>
-#include <qchar.h>
-#include <qdatetime.h>
-#include <qlist.h>
-#include <qdatastream.h>
-#include <qnamespace.h>
-#include <qstringlist.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qlocale_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1039, column 20>
-//   // proto: static QLocale QLocale::c();
-if (true) {
-  auto f = [](QLocale flythis) {
-    ((QLocale*)0)->c();
-    flythis.c();
-  };
-  if (f == nullptr){}
-}
-// _ZN7QLocale1cEv c()
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1015, column 20>
-//   // proto:  QString QLocale::toCurrencyString(uint , const QString & symbol);
-if (true) {
-  auto f = [](QLocale flythis, uint arg1, const QString & arg2) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2);
-    flythis.toCurrencyString(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEjRK7QString toCurrencyString(uint, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 925, column 10>
-//   // proto:  void QLocale::swap(QLocale & other);
-if (true) {
-  auto f = [](QLocale flythis, QLocale & arg1) {
-    ((QLocale*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QLocale4swapERS_ swap(class QLocale &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 961, column 20>
-//   // proto:  QString QLocale::toString(float i, char f, int prec);
-if (true) {
-  auto f = [](QLocale flythis, float arg1, char arg2, int arg3) {
-    ((QLocale*)0)->toString(arg1, arg2, arg3);
-    flythis.toString(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale8toStringEfci toString(float, char, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1012, column 20>
-//   // proto:  QString QLocale::toCurrencyString(short , const QString & symbol);
-if (true) {
-  auto f = [](QLocale flythis, short arg1, const QString & arg2) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2);
-    flythis.toCurrencyString(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEsRK7QString toCurrencyString(short, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1013, column 20>
-//   // proto:  QString QLocale::toCurrencyString(ushort , const QString & symbol);
-if (true) {
-  auto f = [](QLocale flythis, ushort arg1, const QString & arg2) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2);
-    flythis.toCurrencyString(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEtRK7QString toCurrencyString(ushort, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1023, column 20>
-//   // proto:  QString QLocale::toCurrencyString(float i, const QString & symbol);
-if (true) {
-  auto f = [](QLocale flythis, float arg1, const QString & arg2) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2);
-    flythis.toCurrencyString(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEfRK7QString toCurrencyString(float, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 958, column 20>
-//   // proto:  QString QLocale::toString(int i);
-if (true) {
-  auto f = [](QLocale flythis, int arg1) {
-    ((QLocale*)0)->toString(arg1);
-    flythis.toString(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale8toStringEi toString(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 959, column 20>
-//   // proto:  QString QLocale::toString(uint i);
-if (true) {
-  auto f = [](QLocale flythis, uint arg1) {
-    ((QLocale*)0)->toString(arg1);
-    flythis.toString(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale8toStringEj toString(uint)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1025, column 20>
-//   // proto:  QString QLocale::toCurrencyString(float i, const QString & symbol, int precision);
-if (true) {
-  auto f = [](QLocale flythis, float arg1, const QString & arg2, int arg3) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2, arg3);
-    flythis.toCurrencyString(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEfRK7QStringi toCurrencyString(float, const class QString &, int)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 957, column 20>
-//   // proto:  QString QLocale::toString(ushort i);
-if (true) {
-  auto f = [](QLocale flythis, ushort arg1) {
-    ((QLocale*)0)->toString(arg1);
-    flythis.toString(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale8toStringEt toString(ushort)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1014, column 20>
-//   // proto:  QString QLocale::toCurrencyString(int , const QString & symbol);
-if (true) {
-  auto f = [](QLocale flythis, int arg1, const QString & arg2) {
-    ((QLocale*)0)->toCurrencyString(arg1, arg2);
-    flythis.toCurrencyString(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale16toCurrencyStringEiRK7QString toCurrencyString(int, const class QString &)
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 956, column 20>
-//   // proto:  QString QLocale::toString(short i);
-if (true) {
-  auto f = [](QLocale flythis, short arg1) {
-    ((QLocale*)0)->toString(arg1);
-    flythis.toString(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QLocale8toStringEs toString(short)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
-extern "C"
-int QLocale_Class_Size()
-{
-  return sizeof(QLocale);
-}
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 945, column 11>
-//   // proto:  short QLocale::toShort(const QStringRef & s, bool * ok);
-// _ZNK7QLocale7toShortERK10QStringRefPb toShort(const class QStringRef &, _Bool *)
-extern "C"
-short
-C_ZNK7QLocale7toShortERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toShort(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.SHORT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1000, column 13>
-//   // proto:  QString QLocale::pmText();
-// _ZNK7QLocale6pmTextEv pmText()
-extern "C"
-QString*
-C_ZNK7QLocale6pmTextEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->pmText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 933, column 13>
-//   // proto:  QString QLocale::nativeLanguageName();
-// _ZNK7QLocale18nativeLanguageNameEv nativeLanguageName()
-extern "C"
-QString*
-C_ZNK7QLocale18nativeLanguageNameEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->nativeLanguageName();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1009, column 13>
-//   // proto:  QString QLocale::currencySymbol(QLocale::CurrencySymbolFormat );
-// _ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE currencySymbol(enum QLocale::CurrencySymbolFormat)
-extern "C"
-QString*
-C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *qthis,
-QLocale::CurrencySymbolFormat arg1) {
-  auto ret =
-  ((QLocale*)qthis)->currencySymbol(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 946, column 12>
-//   // proto:  ushort QLocale::toUShort(const QStringRef & s, bool * ok);
-// _ZNK7QLocale8toUShortERK10QStringRefPb toUShort(const class QStringRef &, _Bool *)
-extern "C"
-unsigned short
-C_ZNK7QLocale8toUShortERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toUShort(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.USHORT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1007, column 13>
-//   // proto:  QString QLocale::toLower(const QString & str);
-// _ZNK7QLocale7toLowerERK7QString toLower(const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale7toLowerERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toLower(*((const QString*)arg1));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 986, column 11>
-//   // proto:  QChar QLocale::zeroDigit();
-// _ZNK7QLocale9zeroDigitEv zeroDigit()
-extern "C"
-QChar*
-C_ZNK7QLocale9zeroDigitEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->zeroDigit();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 965, column 13>
-//   // proto:  QString QLocale::toString(const QTime & time, QLocale::FormatType format);
-// _ZNK7QLocale8toStringERK5QTimeNS_10FormatTypeE toString(const class QTime &, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK5QTimeNS_10FormatTypeE(void *qthis,
-const QTime* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QTime*)arg1),
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 930, column 13>
-//   // proto:  QString QLocale::name();
-// _ZNK7QLocale4nameEv name()
-extern "C"
-QString*
-C_ZNK7QLocale4nameEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->name();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1010, column 13>
-//   // proto:  QString QLocale::toCurrencyString(qlonglong , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringExRK7QString toCurrencyString(qlonglong, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringExRK7QString(void *qthis,
-qlonglong arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 942, column 11>
-//   // proto:  float QLocale::toFloat(const QString & s, bool * ok);
-// _ZNK7QLocale7toFloatERK7QStringPb toFloat(const class QString &, _Bool *)
-extern "C"
-float
-C_ZNK7QLocale7toFloatERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toFloat(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.FLOAT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1039, column 20>
-//   // proto: static QLocale QLocale::c();
-// _ZN7QLocale1cEv c()
-extern "C"
-QLocale*
-C_ZN7QLocale1cEv() {
-  auto ret =
-  QLocale::c();
-  return new QLocale(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 950, column 16>
-//   // proto:  qulonglong QLocale::toULongLong(const QStringRef & s, bool * ok);
-// _ZNK7QLocale11toULongLongERK10QStringRefPb toULongLong(const class QStringRef &, _Bool *)
-extern "C"
-unsigned long long
-C_ZNK7QLocale11toULongLongERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toULongLong(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.ULONGLONG
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1015, column 20>
-//   // proto:  QString QLocale::toCurrencyString(uint , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEjRK7QString toCurrencyString(uint, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *qthis,
-uint arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1052, column 13>
-//   // proto:  QString QLocale::createSeparatedList(const QStringList & strl);
-// _ZNK7QLocale19createSeparatedListERK11QStringList createSeparatedList(const class QStringList &)
-extern "C"
-QString*
-C_ZNK7QLocale19createSeparatedListERK11QStringList(void *qthis,
-const QStringList* arg1) {
-  auto ret =
-  ((QLocale*)qthis)->createSeparatedList(*((const QStringList*)arg1));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 939, column 10>
-//   // proto:  uint QLocale::toUInt(const QString & s, bool * ok);
-// _ZNK7QLocale6toUIntERK7QStringPb toUInt(const class QString &, _Bool *)
-extern "C"
-unsigned int
-C_ZNK7QLocale6toUIntERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toUInt(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.UINT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 983, column 11>
-//   // proto:  QChar QLocale::decimalPoint();
-// _ZNK7QLocale12decimalPointEv decimalPoint()
-extern "C"
-QChar*
-C_ZNK7QLocale12decimalPointEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->decimalPoint();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1049, column 13>
-//   // proto:  QString QLocale::quoteString(const QString & str, QLocale::QuotationStyle style);
-// _ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE quoteString(const class QString &, enum QLocale::QuotationStyle)
-extern "C"
-QString*
-C_ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE(void *qthis,
-const QString* arg1,
-QLocale::QuotationStyle arg2) {
-  auto ret =
-  ((QLocale*)qthis)->quoteString(*((const QString*)arg1),
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 973, column 11>
-//   // proto:  QDate QLocale::toDate(const QString & string, QLocale::FormatType );
-// _ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE toDate(const class QString &, enum QLocale::FormatType)
-extern "C"
-QDate*
-C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *qthis,
-const QString* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDate(*((const QString*)arg1),
-arg2);
-  return new QDate(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 988, column 11>
-//   // proto:  QChar QLocale::positiveSign();
-// _ZNK7QLocale12positiveSignEv positiveSign()
-extern "C"
-QChar*
-C_ZNK7QLocale12positiveSignEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->positiveSign();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 971, column 13>
-//   // proto:  QString QLocale::dateTimeFormat(QLocale::FormatType format);
-// _ZNK7QLocale14dateTimeFormatENS_10FormatTypeE dateTimeFormat(enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale14dateTimeFormatENS_10FormatTypeE(void *qthis,
-QLocale::FormatType arg1) {
-  auto ret =
-  ((QLocale*)qthis)->dateTimeFormat(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1035, column 20>
-//   // proto: static QString QLocale::countryToString(QLocale::Country country);
-// _ZN7QLocale15countryToStringENS_7CountryE countryToString(enum QLocale::Country)
-extern "C"
-QString*
-C_ZN7QLocale15countryToStringENS_7CountryE(QLocale::Country arg1) {
-  auto ret =
-  QLocale::countryToString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 947, column 9>
-//   // proto:  int QLocale::toInt(const QStringRef & s, bool * ok);
-// _ZNK7QLocale5toIntERK10QStringRefPb toInt(const class QStringRef &, _Bool *)
-extern "C"
-int
-C_ZNK7QLocale5toIntERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toInt(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 997, column 26>
-//   // proto:  QList<Qt::DayOfWeek> QLocale::weekdays();
-// _ZNK7QLocale8weekdaysEv weekdays()
-extern "C"
-QList<Qt::DayOfWeek>*
-C_ZNK7QLocale8weekdaysEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->weekdays();
-  return new QList<Qt::DayOfWeek>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 925, column 10>
-//   // proto:  void QLocale::swap(QLocale & other);
-// _ZN7QLocale4swapERS_ swap(class QLocale &)
-extern "C"
-void
-C_ZN7QLocale4swapERS_(void *qthis,
-QLocale* arg1) {
-  ((QLocale*)qthis)->swap(*((QLocale*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1046, column 19>
-//   // proto:  NumberOptions QLocale::numberOptions();
-// _ZNK7QLocale13numberOptionsEv numberOptions()
-extern "C"
-QFlags<QLocale::NumberOption>*
-C_ZNK7QLocale13numberOptionsEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->numberOptions();
-  return new QFlags<QLocale::NumberOption>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 934, column 13>
-//   // proto:  QString QLocale::nativeCountryName();
-// _ZNK7QLocale17nativeCountryNameEv nativeCountryName()
-extern "C"
-QString*
-C_ZNK7QLocale17nativeCountryNameEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->nativeCountryName();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 936, column 11>
-//   // proto:  short QLocale::toShort(const QString & s, bool * ok);
-// _ZNK7QLocale7toShortERK7QStringPb toShort(const class QString &, _Bool *)
-extern "C"
-short
-C_ZNK7QLocale7toShortERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toShort(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.SHORT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 961, column 20>
-//   // proto:  QString QLocale::toString(float i, char f, int prec);
-// _ZNK7QLocale8toStringEfci toString(float, char, int)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEfci(void *qthis,
-float arg1,
-char arg2,
-int arg3) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1,
-arg2,
-arg3);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 966, column 13>
-//   // proto:  QString QLocale::toString(const QDateTime & dateTime, QLocale::FormatType format);
-// _ZNK7QLocale8toStringERK9QDateTimeNS_10FormatTypeE toString(const class QDateTime &, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK9QDateTimeNS_10FormatTypeE(void *qthis,
-const QDateTime* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QDateTime*)arg1),
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 967, column 13>
-//   // proto:  QString QLocale::toString(const QDateTime & dateTime, const QString & format);
-// _ZNK7QLocale8toStringERK9QDateTimeRK7QString toString(const class QDateTime &, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK9QDateTimeRK7QString(void *qthis,
-const QDateTime* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QDateTime*)arg1),
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 978, column 15>
-//   // proto:  QDateTime QLocale::toDateTime(const QString & string, const QString & format);
-// _ZNK7QLocale10toDateTimeERK7QStringS2_ toDateTime(const class QString &, const class QString &)
-extern "C"
-QDateTime*
-C_ZNK7QLocale10toDateTimeERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDateTime(*((const QString*)arg1),
-*((const QString*)arg2));
-  return new QDateTime(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1036, column 20>
-//   // proto: static QString QLocale::scriptToString(QLocale::Script script);
-// _ZN7QLocale14scriptToStringENS_6ScriptE scriptToString(enum QLocale::Script)
-extern "C"
-QString*
-C_ZN7QLocale14scriptToStringENS_6ScriptE(QLocale::Script arg1) {
-  auto ret =
-  QLocale::scriptToString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1012, column 20>
-//   // proto:  QString QLocale::toCurrencyString(short , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEsRK7QString toCurrencyString(short, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *qthis,
-short arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 984, column 11>
-//   // proto:  QChar QLocale::groupSeparator();
-// _ZNK7QLocale14groupSeparatorEv groupSeparator()
-extern "C"
-QChar*
-C_ZNK7QLocale14groupSeparatorEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->groupSeparator();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1022, column 13>
-//   // proto:  QString QLocale::toCurrencyString(double , const QString & symbol, int precision);
-// _ZNK7QLocale16toCurrencyStringEdRK7QStringi toCurrencyString(double, const class QString &, int)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *qthis,
-double arg1,
-const QString* arg2,
-int arg3) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2),
-arg3);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 929, column 13>
-//   // proto:  QLocale::Country QLocale::country();
-// _ZNK7QLocale7countryEv country()
-extern "C"
-QLocale::Country
-C_ZNK7QLocale7countryEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->country();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1021, column 13>
-//   // proto:  QString QLocale::toCurrencyString(double , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEdRK7QString toCurrencyString(double, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *qthis,
-double arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1043, column 27>
-//   // proto: static QList<QLocale::Country> QLocale::countriesForLanguage(QLocale::Language lang);
-// _ZN7QLocale20countriesForLanguageENS_8LanguageE countriesForLanguage(enum QLocale::Language)
-extern "C"
-QList<QLocale::Country>*
-C_ZN7QLocale20countriesForLanguageENS_8LanguageE(QLocale::Language arg1) {
-  auto ret =
-  QLocale::countriesForLanguage(arg1);
-  return new QList<QLocale::Country>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 916, column 5>
-//   // proto:  void QLocale::QLocale(QLocale::Language language, QLocale::Country country);
-extern "C"
-QLocale*
-C_ZN7QLocaleC2ENS_8LanguageENS_7CountryE(QLocale::Language arg1,
-QLocale::Country arg2) {
-  auto ret = new QLocale(arg1,
-arg2);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1011, column 13>
-//   // proto:  QString QLocale::toCurrencyString(qulonglong , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEyRK7QString toCurrencyString(qulonglong, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *qthis,
-qulonglong arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 915, column 5>
-//   // proto:  void QLocale::QLocale(const QString & name);
-extern "C"
-QLocale*
-C_ZN7QLocaleC2ERK7QString(const QString* arg1) {
-  auto ret = new QLocale(*((const QString*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 964, column 13>
-//   // proto:  QString QLocale::toString(const QTime & time, const QString & formatStr);
-// _ZNK7QLocale8toStringERK5QTimeRK7QString toString(const class QTime &, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK5QTimeRK7QString(void *qthis,
-const QTime* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QTime*)arg1),
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 976, column 11>
-//   // proto:  QDate QLocale::toDate(const QString & string, const QString & format);
-// _ZNK7QLocale6toDateERK7QStringS2_ toDate(const class QString &, const class QString &)
-extern "C"
-QDate*
-C_ZNK7QLocale6toDateERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDate(*((const QString*)arg1),
-*((const QString*)arg2));
-  return new QDate(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 969, column 13>
-//   // proto:  QString QLocale::dateFormat(QLocale::FormatType format);
-// _ZNK7QLocale10dateFormatENS_10FormatTypeE dateFormat(enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale10dateFormatENS_10FormatTypeE(void *qthis,
-QLocale::FormatType arg1) {
-  auto ret =
-  ((QLocale*)qthis)->dateFormat(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 952, column 12>
-//   // proto:  double QLocale::toDouble(const QStringRef & s, bool * ok);
-// _ZNK7QLocale8toDoubleERK10QStringRefPb toDouble(const class QStringRef &, _Bool *)
-extern "C"
-double
-C_ZNK7QLocale8toDoubleERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDouble(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 940, column 15>
-//   // proto:  qlonglong QLocale::toLongLong(const QString & s, bool * ok);
-// _ZNK7QLocale10toLongLongERK7QStringPb toLongLong(const class QString &, _Bool *)
-extern "C"
-long long
-C_ZNK7QLocale10toLongLongERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toLongLong(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.LONGLONG
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 951, column 11>
-//   // proto:  float QLocale::toFloat(const QStringRef & s, bool * ok);
-// _ZNK7QLocale7toFloatERK10QStringRefPb toFloat(const class QStringRef &, _Bool *)
-extern "C"
-float
-C_ZNK7QLocale7toFloatERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toFloat(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.FLOAT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 987, column 11>
-//   // proto:  QChar QLocale::negativeSign();
-// _ZNK7QLocale12negativeSignEv negativeSign()
-extern "C"
-QChar*
-C_ZNK7QLocale12negativeSignEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->negativeSign();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1050, column 13>
-//   // proto:  QString QLocale::quoteString(const QStringRef & str, QLocale::QuotationStyle style);
-// _ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE quoteString(const class QStringRef &, enum QLocale::QuotationStyle)
-extern "C"
-QString*
-C_ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE(void *qthis,
-const QStringRef* arg1,
-QLocale::QuotationStyle arg2) {
-  auto ret =
-  ((QLocale*)qthis)->quoteString(*((const QStringRef*)arg1),
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 996, column 19>
-//   // proto:  Qt::DayOfWeek QLocale::firstDayOfWeek();
-// _ZNK7QLocale14firstDayOfWeekEv firstDayOfWeek()
-extern "C"
-Qt::DayOfWeek
-C_ZNK7QLocale14firstDayOfWeekEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->firstDayOfWeek();
-  return ret; // 0 TypeKind.ENUM
-}
-//   // proto:  void QLocale::~QLocale();
-extern "C"
-void C_ZN7QLocaleD2Ev(void *qthis) {
-  delete (QLocale*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 918, column 5>
-//   // proto:  void QLocale::QLocale(const QLocale & other);
-extern "C"
-QLocale*
-C_ZN7QLocaleC2ERKS_(const QLocale* arg1) {
-  auto ret = new QLocale(*((const QLocale*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 962, column 13>
-//   // proto:  QString QLocale::toString(const QDate & date, const QString & formatStr);
-// _ZNK7QLocale8toStringERK5QDateRK7QString toString(const class QDate &, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK5QDateRK7QString(void *qthis,
-const QDate* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QDate*)arg1),
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 991, column 13>
-//   // proto:  QString QLocale::monthName(int , QLocale::FormatType format);
-// _ZNK7QLocale9monthNameEiNS_10FormatTypeE monthName(int, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *qthis,
-int arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->monthName(arg1,
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1006, column 13>
-//   // proto:  QString QLocale::toUpper(const QString & str);
-// _ZNK7QLocale7toUpperERK7QString toUpper(const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale7toUpperERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toUpper(*((const QString*)arg1));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 985, column 11>
-//   // proto:  QChar QLocale::percent();
-// _ZNK7QLocale7percentEv percent()
-extern "C"
-QChar*
-C_ZNK7QLocale7percentEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->percent();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 970, column 13>
-//   // proto:  QString QLocale::timeFormat(QLocale::FormatType format);
-// _ZNK7QLocale10timeFormatENS_10FormatTypeE timeFormat(enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale10timeFormatENS_10FormatTypeE(void *qthis,
-QLocale::FormatType arg1) {
-  auto ret =
-  ((QLocale*)qthis)->timeFormat(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 941, column 16>
-//   // proto:  qulonglong QLocale::toULongLong(const QString & s, bool * ok);
-// _ZNK7QLocale11toULongLongERK7QStringPb toULongLong(const class QString &, _Bool *)
-extern "C"
-unsigned long long
-C_ZNK7QLocale11toULongLongERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toULongLong(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.ULONGLONG
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 974, column 11>
-//   // proto:  QTime QLocale::toTime(const QString & string, QLocale::FormatType );
-// _ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE toTime(const class QString &, enum QLocale::FormatType)
-extern "C"
-QTime*
-C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *qthis,
-const QString* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toTime(*((const QString*)arg1),
-arg2);
-  return new QTime(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 960, column 13>
-//   // proto:  QString QLocale::toString(double i, char f, int prec);
-// _ZNK7QLocale8toStringEdci toString(double, char, int)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEdci(void *qthis,
-double arg1,
-char arg2,
-int arg3) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1,
-arg2,
-arg3);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1029, column 17>
-//   // proto:  QStringList QLocale::uiLanguages();
-// _ZNK7QLocale11uiLanguagesEv uiLanguages()
-extern "C"
-QStringList*
-C_ZNK7QLocale11uiLanguagesEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->uiLanguages();
-  return new QStringList(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 994, column 13>
-//   // proto:  QString QLocale::standaloneDayName(int , QLocale::FormatType format);
-// _ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE standaloneDayName(int, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *qthis,
-int arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->standaloneDayName(arg1,
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 932, column 13>
-//   // proto:  QString QLocale::bcp47Name();
-// _ZNK7QLocale9bcp47NameEv bcp47Name()
-extern "C"
-QString*
-C_ZNK7QLocale9bcp47NameEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->bcp47Name();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 992, column 13>
-//   // proto:  QString QLocale::standaloneMonthName(int , QLocale::FormatType format);
-// _ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE standaloneMonthName(int, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *qthis,
-int arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->standaloneMonthName(arg1,
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 977, column 11>
-//   // proto:  QTime QLocale::toTime(const QString & string, const QString & format);
-// _ZNK7QLocale6toTimeERK7QStringS2_ toTime(const class QString &, const class QString &)
-extern "C"
-QTime*
-C_ZNK7QLocale6toTimeERK7QStringS2_(void *qthis,
-const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toTime(*((const QString*)arg1),
-*((const QString*)arg2));
-  return new QTime(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 937, column 12>
-//   // proto:  ushort QLocale::toUShort(const QString & s, bool * ok);
-// _ZNK7QLocale8toUShortERK7QStringPb toUShort(const class QString &, _Bool *)
-extern "C"
-unsigned short
-C_ZNK7QLocale8toUShortERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toUShort(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.USHORT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1013, column 20>
-//   // proto:  QString QLocale::toCurrencyString(ushort , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEtRK7QString toCurrencyString(ushort, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *qthis,
-ushort arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 943, column 12>
-//   // proto:  double QLocale::toDouble(const QString & s, bool * ok);
-// _ZNK7QLocale8toDoubleERK7QStringPb toDouble(const class QString &, _Bool *)
-extern "C"
-double
-C_ZNK7QLocale8toDoubleERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDouble(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1040, column 20>
-//   // proto: static QLocale QLocale::system();
-// _ZN7QLocale6systemEv system()
-extern "C"
-QLocale*
-C_ZN7QLocale6systemEv() {
-  auto ret =
-  QLocale::system();
-  return new QLocale(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1037, column 17>
-//   // proto: static void QLocale::setDefault(const QLocale & locale);
-// _ZN7QLocale10setDefaultERKS_ setDefault(const class QLocale &)
-extern "C"
-void
-C_ZN7QLocale10setDefaultERKS_(const QLocale* arg1) {
-  QLocale::setDefault(*((const QLocale*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 928, column 12>
-//   // proto:  QLocale::Script QLocale::script();
-// _ZNK7QLocale6scriptEv script()
-extern "C"
-QLocale::Script
-C_ZNK7QLocale6scriptEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->script();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1042, column 27>
-//   // proto: static QList<QLocale> QLocale::matchingLocales(QLocale::Language language, QLocale::Script script, QLocale::Country country);
-// _ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE matchingLocales(class QLocale::Language, class QLocale::Script, class QLocale::Country)
-extern "C"
-QList<QLocale>*
-C_ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language* arg1,
-QLocale::Script* arg2,
-QLocale::Country* arg3) {
-  auto ret =
-  QLocale::matchingLocales(*((QLocale::Language*)arg1),
-*((QLocale::Script*)arg2),
-*((QLocale::Country*)arg3));
-  return new QList<QLocale>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1045, column 10>
-//   // proto:  void QLocale::setNumberOptions(NumberOptions options);
-// _ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE setNumberOptions(NumberOptions)
-extern "C"
-void
-C_ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE(void *qthis,
-QLocale::NumberOptions arg1) {
-  ((QLocale*)qthis)->setNumberOptions(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1002, column 23>
-//   // proto:  QLocale::MeasurementSystem QLocale::measurementSystem();
-// _ZNK7QLocale17measurementSystemEv measurementSystem()
-extern "C"
-QLocale::MeasurementSystem
-C_ZNK7QLocale17measurementSystemEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->measurementSystem();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 989, column 11>
-//   // proto:  QChar QLocale::exponential();
-// _ZNK7QLocale11exponentialEv exponential()
-extern "C"
-QChar*
-C_ZNK7QLocale11exponentialEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->exponential();
-  return new QChar(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 948, column 10>
-//   // proto:  uint QLocale::toUInt(const QStringRef & s, bool * ok);
-// _ZNK7QLocale6toUIntERK10QStringRefPb toUInt(const class QStringRef &, _Bool *)
-extern "C"
-unsigned int
-C_ZNK7QLocale6toUIntERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toUInt(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.UINT
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 927, column 14>
-//   // proto:  QLocale::Language QLocale::language();
-// _ZNK7QLocale8languageEv language()
-extern "C"
-QLocale::Language
-C_ZNK7QLocale8languageEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->language();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1023, column 20>
-//   // proto:  QString QLocale::toCurrencyString(float i, const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEfRK7QString toCurrencyString(float, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEfRK7QString(void *qthis,
-float arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 917, column 5>
-//   // proto:  void QLocale::QLocale(QLocale::Language language, QLocale::Script script, QLocale::Country country);
-extern "C"
-QLocale*
-C_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language arg1,
-QLocale::Script arg2,
-QLocale::Country arg3) {
-  auto ret = new QLocale(arg1,
-arg2,
-arg3);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 958, column 20>
-//   // proto:  QString QLocale::toString(int i);
-// _ZNK7QLocale8toStringEi toString(int)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 959, column 20>
-//   // proto:  QString QLocale::toString(uint i);
-// _ZNK7QLocale8toStringEj toString(uint)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEj(void *qthis,
-uint arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 963, column 13>
-//   // proto:  QString QLocale::toString(const QDate & date, QLocale::FormatType format);
-// _ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE toString(const class QDate &, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE(void *qthis,
-const QDate* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toString(*((const QDate*)arg1),
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1025, column 20>
-//   // proto:  QString QLocale::toCurrencyString(float i, const QString & symbol, int precision);
-// _ZNK7QLocale16toCurrencyStringEfRK7QStringi toCurrencyString(float, const class QString &, int)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEfRK7QStringi(void *qthis,
-float arg1,
-const QString* arg2,
-int arg3) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2),
-arg3);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 954, column 13>
-//   // proto:  QString QLocale::toString(qlonglong i);
-// _ZNK7QLocale8toStringEx toString(qlonglong)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEx(void *qthis,
-qlonglong arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 955, column 13>
-//   // proto:  QString QLocale::toString(qulonglong i);
-// _ZNK7QLocale8toStringEy toString(qulonglong)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEy(void *qthis,
-qulonglong arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 957, column 20>
-//   // proto:  QString QLocale::toString(ushort i);
-// _ZNK7QLocale8toStringEt toString(ushort)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEt(void *qthis,
-ushort arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 999, column 13>
-//   // proto:  QString QLocale::amText();
-// _ZNK7QLocale6amTextEv amText()
-extern "C"
-QString*
-C_ZNK7QLocale6amTextEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->amText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1014, column 20>
-//   // proto:  QString QLocale::toCurrencyString(int , const QString & symbol);
-// _ZNK7QLocale16toCurrencyStringEiRK7QString toCurrencyString(int, const class QString &)
-extern "C"
-QString*
-C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *qthis,
-int arg1,
-const QString* arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toCurrencyString(arg1,
-*((const QString*)arg2));
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 956, column 20>
-//   // proto:  QString QLocale::toString(short i);
-// _ZNK7QLocale8toStringEs toString(short)
-extern "C"
-QString*
-C_ZNK7QLocale8toStringEs(void *qthis,
-short arg1) {
-  auto ret =
-  ((QLocale*)qthis)->toString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1034, column 20>
-//   // proto: static QString QLocale::languageToString(QLocale::Language language);
-// _ZN7QLocale16languageToStringENS_8LanguageE languageToString(enum QLocale::Language)
-extern "C"
-QString*
-C_ZN7QLocale16languageToStringENS_8LanguageE(QLocale::Language arg1) {
-  auto ret =
-  QLocale::languageToString(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 914, column 5>
-//   // proto:  void QLocale::QLocale();
-extern "C"
-QLocale*
-C_ZN7QLocaleC2Ev() {
-  auto ret = new QLocale();
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 1004, column 25>
-//   // proto:  Qt::LayoutDirection QLocale::textDirection();
-// _ZNK7QLocale13textDirectionEv textDirection()
-extern "C"
-Qt::LayoutDirection
-C_ZNK7QLocale13textDirectionEv(void *qthis) {
-  auto ret =
-  ((QLocale*)qthis)->textDirection();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 993, column 13>
-//   // proto:  QString QLocale::dayName(int , QLocale::FormatType format);
-// _ZNK7QLocale7dayNameEiNS_10FormatTypeE dayName(int, enum QLocale::FormatType)
-extern "C"
-QString*
-C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *qthis,
-int arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->dayName(arg1,
-arg2);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 975, column 15>
-//   // proto:  QDateTime QLocale::toDateTime(const QString & string, QLocale::FormatType format);
-// _ZNK7QLocale10toDateTimeERK7QStringNS_10FormatTypeE toDateTime(const class QString &, enum QLocale::FormatType)
-extern "C"
-QDateTime*
-C_ZNK7QLocale10toDateTimeERK7QStringNS_10FormatTypeE(void *qthis,
-const QString* arg1,
-QLocale::FormatType arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toDateTime(*((const QString*)arg1),
-arg2);
-  return new QDateTime(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 949, column 15>
-//   // proto:  qlonglong QLocale::toLongLong(const QStringRef & s, bool * ok);
-// _ZNK7QLocale10toLongLongERK10QStringRefPb toLongLong(const class QStringRef &, _Bool *)
-extern "C"
-long long
-C_ZNK7QLocale10toLongLongERK10QStringRefPb(void *qthis,
-const QStringRef* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toLongLong(*((const QStringRef*)arg1),
-arg2);
-  return ret; // 0 TypeKind.LONGLONG
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qlocale.h', line 938, column 9>
-//   // proto:  int QLocale::toInt(const QString & s, bool * ok);
-// _ZNK7QLocale5toIntERK7QStringPb toInt(const class QString &, _Bool *)
-extern "C"
-int
-C_ZNK7QLocale5toIntERK7QStringPb(void *qthis,
-const QString* arg1,
-bool * arg2) {
-  auto ret =
-  ((QLocale*)qthis)->toInt(*((const QString*)arg1),
-arg2);
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-
+// /usr/include/qt/QtCore/qlocale.h:914
+// void QLocale()
+extern "C"
+void* C_ZN7QLocaleC1Ev() {
+  return new QLocale();
+}
+// /usr/include/qt/QtCore/qlocale.h:915
+// void QLocale(const class QString &)
+extern "C"
+void* C_ZN7QLocaleC1ERK7QString(const QString & name) {
+  return new QLocale(name);
+}
+// /usr/include/qt/QtCore/qlocale.h:916
+// void QLocale(enum QLocale::Language, enum QLocale::Country)
+extern "C"
+void* C_ZN7QLocaleC1ENS_8LanguageENS_7CountryE(QLocale::Language language, QLocale::Country country) {
+  return new QLocale(language, country);
+}
+// /usr/include/qt/QtCore/qlocale.h:917
+// void QLocale(enum QLocale::Language, enum QLocale::Script, enum QLocale::Country)
+extern "C"
+void* C_ZN7QLocaleC1ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
+  return new QLocale(language, script, country);
+}
+// /usr/include/qt/QtCore/qlocale.h:923
+// void ~QLocale()
+extern "C"
+void C_ZN7QLocaleD1Ev(void *this_) {
+  delete (QLocale*)(this_);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:925
+// void swap(class QLocale &)
+extern "C"
+void C_ZN7QLocale4swapERS_(void *this_, QLocale & other) {
+  ((QLocale*)this_)->swap(other);
+}
+// /usr/include/qt/QtCore/qlocale.h:927
+// QLocale::Language language()
+extern "C"
+void C_ZNK7QLocale8languageEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->language();
+}
+// /usr/include/qt/QtCore/qlocale.h:928
+// QLocale::Script script()
+extern "C"
+void C_ZNK7QLocale6scriptEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->script();
+}
+// /usr/include/qt/QtCore/qlocale.h:929
+// QLocale::Country country()
+extern "C"
+void C_ZNK7QLocale7countryEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->country();
+}
+// /usr/include/qt/QtCore/qlocale.h:930
+// QString name()
+extern "C"
+void C_ZNK7QLocale4nameEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->name();
+}
+// /usr/include/qt/QtCore/qlocale.h:932
+// QString bcp47Name()
+extern "C"
+void C_ZNK7QLocale9bcp47NameEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->bcp47Name();
+}
+// /usr/include/qt/QtCore/qlocale.h:933
+// QString nativeLanguageName()
+extern "C"
+void C_ZNK7QLocale18nativeLanguageNameEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->nativeLanguageName();
+}
+// /usr/include/qt/QtCore/qlocale.h:934
+// QString nativeCountryName()
+extern "C"
+void C_ZNK7QLocale17nativeCountryNameEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->nativeCountryName();
+}
+// /usr/include/qt/QtCore/qlocale.h:936
+// short toShort(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale7toShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toShort(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:937
+// ushort toUShort(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale8toUShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toUShort(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:938
+// int toInt(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale5toIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toInt(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:939
+// uint toUInt(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale6toUIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toUInt(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:940
+// qlonglong toLongLong(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale10toLongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toLongLong(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:941
+// qulonglong toULongLong(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale11toULongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toULongLong(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:942
+// float toFloat(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale7toFloatERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toFloat(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:943
+// double toDouble(const class QString &, _Bool *)
+extern "C"
+void C_ZNK7QLocale8toDoubleERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toDouble(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:945
+// short toShort(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale7toShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toShort(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:946
+// ushort toUShort(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale8toUShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toUShort(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:947
+// int toInt(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale5toIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toInt(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:948
+// uint toUInt(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale6toUIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toUInt(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:949
+// qlonglong toLongLong(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale10toLongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toLongLong(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:950
+// qulonglong toULongLong(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale11toULongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toULongLong(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:951
+// float toFloat(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale7toFloatERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toFloat(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:952
+// double toDouble(const class QStringRef &, _Bool *)
+extern "C"
+void C_ZNK7QLocale8toDoubleERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  /*return*/ ((QLocale*)this_)->toDouble(s, ok);
+}
+// /usr/include/qt/QtCore/qlocale.h:954
+// QString toString(qlonglong)
+extern "C"
+void C_ZNK7QLocale8toStringEx(void *this_, qlonglong i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// /usr/include/qt/QtCore/qlocale.h:955
+// QString toString(qulonglong)
+extern "C"
+void C_ZNK7QLocale8toStringEy(void *this_, qulonglong i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:956
+// QString toString(short)
+extern "C"
+void C_ZNK7QLocale8toStringEs(void *this_, short i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:957
+// QString toString(ushort)
+extern "C"
+void C_ZNK7QLocale8toStringEt(void *this_, ushort i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:958
+// QString toString(int)
+extern "C"
+void C_ZNK7QLocale8toStringEi(void *this_, int i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:959
+// QString toString(uint)
+extern "C"
+void C_ZNK7QLocale8toStringEj(void *this_, uint i) {
+  /*return*/ ((QLocale*)this_)->toString(i);
+}
+// /usr/include/qt/QtCore/qlocale.h:960
+// QString toString(double, char, int)
+extern "C"
+void C_ZNK7QLocale8toStringEdci(void *this_, double i, char f, int prec) {
+  /*return*/ ((QLocale*)this_)->toString(i, f, prec);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:961
+// QString toString(float, char, int)
+extern "C"
+void C_ZNK7QLocale8toStringEfci(void *this_, float i, char f, int prec) {
+  /*return*/ ((QLocale*)this_)->toString(i, f, prec);
+}
+// /usr/include/qt/QtCore/qlocale.h:962
+// QString toString(const class QDate &, const class QString &)
+extern "C"
+void C_ZNK7QLocale8toStringERK5QDateRK7QString(void *this_, const QDate & date, const QString & formatStr) {
+  /*return*/ ((QLocale*)this_)->toString(date, formatStr);
+}
+// /usr/include/qt/QtCore/qlocale.h:963
+// QString toString(const class QDate &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE(void *this_, const QDate & date, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->toString(date, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:964
+// QString toString(const class QTime &, const class QString &)
+extern "C"
+void C_ZNK7QLocale8toStringERK5QTimeRK7QString(void *this_, const QTime & time, const QString & formatStr) {
+  /*return*/ ((QLocale*)this_)->toString(time, formatStr);
+}
+// /usr/include/qt/QtCore/qlocale.h:965
+// QString toString(const class QTime &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale8toStringERK5QTimeNS_10FormatTypeE(void *this_, const QTime & time, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->toString(time, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:966
+// QString toString(const class QDateTime &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale8toStringERK9QDateTimeNS_10FormatTypeE(void *this_, const QDateTime & dateTime, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->toString(dateTime, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:967
+// QString toString(const class QDateTime &, const class QString &)
+extern "C"
+void C_ZNK7QLocale8toStringERK9QDateTimeRK7QString(void *this_, const QDateTime & dateTime, const QString & format) {
+  /*return*/ ((QLocale*)this_)->toString(dateTime, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:969
+// QString dateFormat(enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale10dateFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->dateFormat(format);
+}
+// /usr/include/qt/QtCore/qlocale.h:970
+// QString timeFormat(enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale10timeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->timeFormat(format);
+}
+// /usr/include/qt/QtCore/qlocale.h:971
+// QString dateTimeFormat(enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale14dateTimeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->dateTimeFormat(format);
+}
+// /usr/include/qt/QtCore/qlocale.h:973
+// QDate toDate(const class QString &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType a1) {
+  /*return*/ ((QLocale*)this_)->toDate(string, a1);
+}
+// /usr/include/qt/QtCore/qlocale.h:974
+// QTime toTime(const class QString &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType a1) {
+  /*return*/ ((QLocale*)this_)->toTime(string, a1);
+}
+// /usr/include/qt/QtCore/qlocale.h:975
+// QDateTime toDateTime(const class QString &, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale10toDateTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->toDateTime(string, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:976
+// QDate toDate(const class QString &, const class QString &)
+extern "C"
+void C_ZNK7QLocale6toDateERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  /*return*/ ((QLocale*)this_)->toDate(string, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:977
+// QTime toTime(const class QString &, const class QString &)
+extern "C"
+void C_ZNK7QLocale6toTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  /*return*/ ((QLocale*)this_)->toTime(string, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:978
+// QDateTime toDateTime(const class QString &, const class QString &)
+extern "C"
+void C_ZNK7QLocale10toDateTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  /*return*/ ((QLocale*)this_)->toDateTime(string, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:983
+// QChar decimalPoint()
+extern "C"
+void C_ZNK7QLocale12decimalPointEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->decimalPoint();
+}
+// /usr/include/qt/QtCore/qlocale.h:984
+// QChar groupSeparator()
+extern "C"
+void C_ZNK7QLocale14groupSeparatorEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->groupSeparator();
+}
+// /usr/include/qt/QtCore/qlocale.h:985
+// QChar percent()
+extern "C"
+void C_ZNK7QLocale7percentEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->percent();
+}
+// /usr/include/qt/QtCore/qlocale.h:986
+// QChar zeroDigit()
+extern "C"
+void C_ZNK7QLocale9zeroDigitEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->zeroDigit();
+}
+// /usr/include/qt/QtCore/qlocale.h:987
+// QChar negativeSign()
+extern "C"
+void C_ZNK7QLocale12negativeSignEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->negativeSign();
+}
+// /usr/include/qt/QtCore/qlocale.h:988
+// QChar positiveSign()
+extern "C"
+void C_ZNK7QLocale12positiveSignEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->positiveSign();
+}
+// /usr/include/qt/QtCore/qlocale.h:989
+// QChar exponential()
+extern "C"
+void C_ZNK7QLocale11exponentialEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->exponential();
+}
+// /usr/include/qt/QtCore/qlocale.h:991
+// QString monthName(int, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->monthName(a0, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:992
+// QString standaloneMonthName(int, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->standaloneMonthName(a0, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:993
+// QString dayName(int, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->dayName(a0, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:994
+// QString standaloneDayName(int, enum QLocale::FormatType)
+extern "C"
+void C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->standaloneDayName(a0, format);
+}
+// /usr/include/qt/QtCore/qlocale.h:996
+// Qt::DayOfWeek firstDayOfWeek()
+extern "C"
+void C_ZNK7QLocale14firstDayOfWeekEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->firstDayOfWeek();
+}
+// /usr/include/qt/QtCore/qlocale.h:997
+// QList<Qt::DayOfWeek> weekdays()
+extern "C"
+void C_ZNK7QLocale8weekdaysEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->weekdays();
+}
+// /usr/include/qt/QtCore/qlocale.h:999
+// QString amText()
+extern "C"
+void C_ZNK7QLocale6amTextEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->amText();
+}
+// /usr/include/qt/QtCore/qlocale.h:1000
+// QString pmText()
+extern "C"
+void C_ZNK7QLocale6pmTextEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->pmText();
+}
+// /usr/include/qt/QtCore/qlocale.h:1002
+// QLocale::MeasurementSystem measurementSystem()
+extern "C"
+void C_ZNK7QLocale17measurementSystemEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->measurementSystem();
+}
+// /usr/include/qt/QtCore/qlocale.h:1004
+// Qt::LayoutDirection textDirection()
+extern "C"
+void C_ZNK7QLocale13textDirectionEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->textDirection();
+}
+// /usr/include/qt/QtCore/qlocale.h:1006
+// QString toUpper(const class QString &)
+extern "C"
+void C_ZNK7QLocale7toUpperERK7QString(void *this_, const QString & str) {
+  /*return*/ ((QLocale*)this_)->toUpper(str);
+}
+// /usr/include/qt/QtCore/qlocale.h:1007
+// QString toLower(const class QString &)
+extern "C"
+void C_ZNK7QLocale7toLowerERK7QString(void *this_, const QString & str) {
+  /*return*/ ((QLocale*)this_)->toLower(str);
+}
+// /usr/include/qt/QtCore/qlocale.h:1009
+// QString currencySymbol(enum QLocale::CurrencySymbolFormat)
+extern "C"
+void C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *this_, QLocale::CurrencySymbolFormat a0) {
+  /*return*/ ((QLocale*)this_)->currencySymbol(a0);
+}
+// /usr/include/qt/QtCore/qlocale.h:1010
+// QString toCurrencyString(qlonglong, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringExRK7QString(void *this_, qlonglong a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// /usr/include/qt/QtCore/qlocale.h:1011
+// QString toCurrencyString(qulonglong, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *this_, qulonglong a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1012
+// QString toCurrencyString(short, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *this_, short a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1013
+// QString toCurrencyString(ushort, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *this_, ushort a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1014
+// QString toCurrencyString(int, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *this_, int a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1015
+// QString toCurrencyString(uint, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *this_, uint a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// /usr/include/qt/QtCore/qlocale.h:1021
+// QString toCurrencyString(double, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *this_, double a0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+}
+// /usr/include/qt/QtCore/qlocale.h:1022
+// QString toCurrencyString(double, const class QString &, int)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *this_, double a0, const QString & symbol, int precision) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol, precision);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1023
+// QString toCurrencyString(float, const class QString &)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEfRK7QString(void *this_, float i, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(i, symbol);
+}
+// inline
+// /usr/include/qt/QtCore/qlocale.h:1025
+// QString toCurrencyString(float, const class QString &, int)
+extern "C"
+void C_ZNK7QLocale16toCurrencyStringEfRK7QStringi(void *this_, float i, const QString & symbol, int precision) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(i, symbol, precision);
+}
+// /usr/include/qt/QtCore/qlocale.h:1029
+// QStringList uiLanguages()
+extern "C"
+void C_ZNK7QLocale11uiLanguagesEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->uiLanguages();
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1034
+// QString languageToString(enum QLocale::Language)
+extern "C"
+void C_ZN7QLocale16languageToStringENS_8LanguageE(QLocale::Language language) {
+  /*return*/ QLocale::languageToString(language);
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1035
+// QString countryToString(enum QLocale::Country)
+extern "C"
+void C_ZN7QLocale15countryToStringENS_7CountryE(QLocale::Country country) {
+  /*return*/ QLocale::countryToString(country);
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1036
+// QString scriptToString(enum QLocale::Script)
+extern "C"
+void C_ZN7QLocale14scriptToStringENS_6ScriptE(QLocale::Script script) {
+  /*return*/ QLocale::scriptToString(script);
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1037
+// void setDefault(const class QLocale &)
+extern "C"
+void C_ZN7QLocale10setDefaultERKS_(const QLocale & locale) {
+  QLocale::setDefault(locale);
+}
+// static inline
+// /usr/include/qt/QtCore/qlocale.h:1039
+// QLocale c()
+extern "C"
+void C_ZN7QLocale1cEv() {
+  /*return*/ QLocale::c();
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1040
+// QLocale system()
+extern "C"
+void C_ZN7QLocale6systemEv() {
+  /*return*/ QLocale::system();
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1042
+// QList<QLocale> matchingLocales(class QLocale::Language, class QLocale::Script, class QLocale::Country)
+extern "C"
+void C_ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
+  /*return*/ QLocale::matchingLocales(language, script, country);
+}
+// static
+// /usr/include/qt/QtCore/qlocale.h:1043
+// QList<QLocale::Country> countriesForLanguage(enum QLocale::Language)
+extern "C"
+void C_ZN7QLocale20countriesForLanguageENS_8LanguageE(QLocale::Language lang) {
+  /*return*/ QLocale::countriesForLanguage(lang);
+}
+// /usr/include/qt/QtCore/qlocale.h:1045
+// void setNumberOptions(NumberOptions)
+extern "C"
+void C_ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE(void *this_, QFlags<QLocale::NumberOption> options) {
+  ((QLocale*)this_)->setNumberOptions(options);
+}
+// /usr/include/qt/QtCore/qlocale.h:1046
+// NumberOptions numberOptions()
+extern "C"
+void C_ZNK7QLocale13numberOptionsEv(void *this_) {
+  /*return*/ ((QLocale*)this_)->numberOptions();
+}
+// /usr/include/qt/QtCore/qlocale.h:1049
+// QString quoteString(const class QString &, enum QLocale::QuotationStyle)
+extern "C"
+void C_ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE(void *this_, const QString & str, QLocale::QuotationStyle style) {
+  /*return*/ ((QLocale*)this_)->quoteString(str, style);
+}
+// /usr/include/qt/QtCore/qlocale.h:1050
+// QString quoteString(const class QStringRef &, enum QLocale::QuotationStyle)
+extern "C"
+void C_ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE(void *this_, const QStringRef & str, QLocale::QuotationStyle style) {
+  /*return*/ ((QLocale*)this_)->quoteString(str, style);
+}
+// /usr/include/qt/QtCore/qlocale.h:1052
+// QString createSeparatedList(const class QStringList &)
+extern "C"
+void C_ZNK7QLocale19createSeparatedListERK11QStringList(void *this_, const QStringList & strl) {
+  /*return*/ ((QLocale*)this_)->createSeparatedList(strl);
+}

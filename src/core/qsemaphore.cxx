@@ -1,104 +1,46 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qsemaphore.h
-// dst-file: /src/core/qsemaphore.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qsemaphore.h
 #include <qsemaphore.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qsemaphore_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qsemaphore.h:55
+// void QSemaphore(int)
 extern "C"
-int QSemaphore_Class_Size()
-{
-  return sizeof(QSemaphore);
+void* C_ZN10QSemaphoreC1Ei(int n) {
+  return new QSemaphore(n);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 58, column 10>
-//   // proto:  void QSemaphore::acquire(int n);
-// _ZN10QSemaphore7acquireEi acquire(int)
+// /usr/include/qt/QtCore/qsemaphore.h:56
+// void ~QSemaphore()
 extern "C"
-void
-C_ZN10QSemaphore7acquireEi(void *qthis,
-int arg1) {
-  ((QSemaphore*)qthis)->acquire(arg1);
+void C_ZN10QSemaphoreD1Ev(void *this_) {
+  delete (QSemaphore*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 62, column 10>
-//   // proto:  void QSemaphore::release(int n);
-// _ZN10QSemaphore7releaseEi release(int)
+// /usr/include/qt/QtCore/qsemaphore.h:58
+// void acquire(int)
 extern "C"
-void
-C_ZN10QSemaphore7releaseEi(void *qthis,
-int arg1) {
-  ((QSemaphore*)qthis)->release(arg1);
+void C_ZN10QSemaphore7acquireEi(void *this_, int n) {
+  ((QSemaphore*)this_)->acquire(n);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 64, column 9>
-//   // proto:  int QSemaphore::available();
-// _ZNK10QSemaphore9availableEv available()
+// /usr/include/qt/QtCore/qsemaphore.h:59
+// bool tryAcquire(int)
 extern "C"
-int
-C_ZNK10QSemaphore9availableEv(void *qthis) {
-  auto ret =
-  ((QSemaphore*)qthis)->available();
-  return ret; // 0 TypeKind.INT
+void C_ZN10QSemaphore10tryAcquireEi(void *this_, int n) {
+  /*return*/ ((QSemaphore*)this_)->tryAcquire(n);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 60, column 10>
-//   // proto:  bool QSemaphore::tryAcquire(int n, int timeout);
-// _ZN10QSemaphore10tryAcquireEii tryAcquire(int, int)
+// /usr/include/qt/QtCore/qsemaphore.h:60
+// bool tryAcquire(int, int)
 extern "C"
-bool
-C_ZN10QSemaphore10tryAcquireEii(void *qthis,
-int arg1,
-int arg2) {
-  auto ret =
-  ((QSemaphore*)qthis)->tryAcquire(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QSemaphore10tryAcquireEii(void *this_, int n, int timeout) {
+  /*return*/ ((QSemaphore*)this_)->tryAcquire(n, timeout);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 59, column 10>
-//   // proto:  bool QSemaphore::tryAcquire(int n);
-// _ZN10QSemaphore10tryAcquireEi tryAcquire(int)
+// /usr/include/qt/QtCore/qsemaphore.h:62
+// void release(int)
 extern "C"
-bool
-C_ZN10QSemaphore10tryAcquireEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QSemaphore*)qthis)->tryAcquire(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QSemaphore7releaseEi(void *this_, int n) {
+  ((QSemaphore*)this_)->release(n);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qsemaphore.h', line 55, column 14>
-//   // proto:  void QSemaphore::QSemaphore(int n);
+// /usr/include/qt/QtCore/qsemaphore.h:64
+// int available()
 extern "C"
-QSemaphore*
-C_ZN10QSemaphoreC2Ei(int arg1) {
-  auto ret = new QSemaphore(arg1);
-  return ret;
+void C_ZNK10QSemaphore9availableEv(void *this_) {
+  /*return*/ ((QSemaphore*)this_)->available();
 }
-//   // proto:  void QSemaphore::~QSemaphore();
-extern "C"
-void C_ZN10QSemaphoreD2Ev(void *qthis) {
-  delete (QSemaphore*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

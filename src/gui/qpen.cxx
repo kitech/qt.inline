@@ -1,362 +1,185 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qpen.h
-// dst-file: /src/gui/qpen.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qpen.h
 #include <qpen.h>
+#include <QtGui>
 
-
-#include <qglobal.h>
-#include <qnamespace.h>
-#include <qcolor.h>
-#include <qvector.h>
-#include <qregion.h>
-#include <qbrush.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qpen_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 78, column 10>
-//   // proto:  void QPen::swap(QPen & other);
-if (true) {
-  auto f = [](QPen flythis, QPen & arg1) {
-    ((QPen*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN4QPen4swapERS_ swap(class QPen &)
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 73, column 5>
-//   // proto:  void QPen::QPen(QPen && other);
-if (true) {
-  auto f = [](QPen && arg1) {
-    new QPen(arg1);
-  };
-  if (f == nullptr){}
-}
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qpen.h:62
+// void QPen()
 extern "C"
-int QPen_Class_Size()
-{
-  return sizeof(QPen);
+void* C_ZN4QPenC1Ev() {
+  return new QPen();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QPen::~QPen();
+// /usr/include/qt/QtGui/qpen.h:63
+// void QPen(Qt::PenStyle)
 extern "C"
-void C_ZN4QPenD2Ev(void *qthis) {
-  delete (QPen*)qthis;
+void* C_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle a0) {
+  return new QPen(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 86, column 11>
-//   // proto:  qreal QPen::dashOffset();
-// _ZNK4QPen10dashOffsetEv dashOffset()
+// /usr/include/qt/QtGui/qpen.h:64
+// void QPen(const class QColor &)
 extern "C"
-double
-C_ZNK4QPen10dashOffsetEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->dashOffset();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN4QPenC1ERK6QColor(const QColor & color) {
+  return new QPen(color);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 64, column 5>
-//   // proto:  void QPen::QPen(const QColor & color);
+// /usr/include/qt/QtGui/qpen.h:65
+// void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 extern "C"
-QPen*
-C_ZN4QPenC2ERK6QColor(const QColor* arg1) {
-  auto ret = new QPen(*((const QColor*)arg1));
-  return ret;
+void* C_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
+  return new QPen(brush, width, s, c, j);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 89, column 11>
-//   // proto:  qreal QPen::miterLimit();
-// _ZNK4QPen10miterLimitEv miterLimit()
+// /usr/include/qt/QtGui/qpen.h:69
+// void ~QPen()
 extern "C"
-double
-C_ZNK4QPen10miterLimitEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->miterLimit();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN4QPenD1Ev(void *this_) {
+  delete (QPen*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 80, column 18>
-//   // proto:  Qt::PenStyle QPen::style();
-// _ZNK4QPen5styleEv style()
+// inline
+// /usr/include/qt/QtGui/qpen.h:78
+// void swap(class QPen &)
 extern "C"
-Qt::PenStyle
-C_ZNK4QPen5styleEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->style();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN4QPen4swapERS_(void *this_, QPen & other) {
+  ((QPen*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 81, column 10>
-//   // proto:  void QPen::setStyle(Qt::PenStyle );
-// _ZN4QPen8setStyleEN2Qt8PenStyleE setStyle(Qt::PenStyle)
+// /usr/include/qt/QtGui/qpen.h:80
+// Qt::PenStyle style()
 extern "C"
-void
-C_ZN4QPen8setStyleEN2Qt8PenStyleE(void *qthis,
-Qt::PenStyle* arg1) {
-  ((QPen*)qthis)->setStyle(*((Qt::PenStyle*)arg1));
+void C_ZNK4QPen5styleEv(void *this_) {
+  /*return*/ ((QPen*)this_)->style();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 93, column 10>
-//   // proto:  void QPen::setWidthF(qreal width);
-// _ZN4QPen9setWidthFEd setWidthF(qreal)
+// /usr/include/qt/QtGui/qpen.h:81
+// void setStyle(Qt::PenStyle)
 extern "C"
-void
-C_ZN4QPen9setWidthFEd(void *qthis,
-qreal arg1) {
-  ((QPen*)qthis)->setWidthF(arg1);
+void C_ZN4QPen8setStyleEN2Qt8PenStyleE(void *this_, Qt::PenStyle a0) {
+  ((QPen*)this_)->setStyle(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 102, column 10>
-//   // proto:  void QPen::setBrush(const QBrush & brush);
-// _ZN4QPen8setBrushERK6QBrush setBrush(const class QBrush &)
+// /usr/include/qt/QtGui/qpen.h:83
+// QVector<qreal> dashPattern()
 extern "C"
-void
-C_ZN4QPen8setBrushERK6QBrush(void *qthis,
-const QBrush* arg1) {
-  ((QPen*)qthis)->setBrush(*((const QBrush*)arg1));
+void C_ZNK4QPen11dashPatternEv(void *this_) {
+  /*return*/ ((QPen*)this_)->dashPattern();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 84, column 10>
-//   // proto:  void QPen::setDashPattern(const QVector<qreal> & pattern);
-// _ZN4QPen14setDashPatternERK7QVectorIdE setDashPattern(const QVector<qreal> &)
+// /usr/include/qt/QtGui/qpen.h:84
+// void setDashPattern(const QVector<qreal> &)
 extern "C"
-void
-C_ZN4QPen14setDashPatternERK7QVectorIdE(void *qthis,
-const QVector<qreal>* arg1) {
-  ((QPen*)qthis)->setDashPattern(*((const QVector<qreal>*)arg1));
+void C_ZN4QPen14setDashPatternERK7QVectorIdE(void *this_, const QVector<qreal> & pattern) {
+  ((QPen*)this_)->setDashPattern(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 98, column 12>
-//   // proto:  QColor QPen::color();
-// _ZNK4QPen5colorEv color()
+// /usr/include/qt/QtGui/qpen.h:86
+// qreal dashOffset()
 extern "C"
-QColor*
-C_ZNK4QPen5colorEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->color();
-  return new QColor(ret); // 5
+void C_ZNK4QPen10dashOffsetEv(void *this_) {
+  /*return*/ ((QPen*)this_)->dashOffset();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 96, column 10>
-//   // proto:  void QPen::setWidth(int width);
-// _ZN4QPen8setWidthEi setWidth(int)
+// /usr/include/qt/QtGui/qpen.h:87
+// void setDashOffset(qreal)
 extern "C"
-void
-C_ZN4QPen8setWidthEi(void *qthis,
-int arg1) {
-  ((QPen*)qthis)->setWidth(arg1);
+void C_ZN4QPen13setDashOffsetEd(void *this_, qreal doffset) {
+  ((QPen*)this_)->setDashOffset(doffset);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 92, column 11>
-//   // proto:  qreal QPen::widthF();
-// _ZNK4QPen6widthFEv widthF()
+// /usr/include/qt/QtGui/qpen.h:89
+// qreal miterLimit()
 extern "C"
-double
-C_ZNK4QPen6widthFEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->widthF();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK4QPen10miterLimitEv(void *this_) {
+  /*return*/ ((QPen*)this_)->miterLimit();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 113, column 10>
-//   // proto:  void QPen::setCosmetic(bool cosmetic);
-// _ZN4QPen11setCosmeticEb setCosmetic(_Bool)
+// /usr/include/qt/QtGui/qpen.h:90
+// void setMiterLimit(qreal)
 extern "C"
-void
-C_ZN4QPen11setCosmeticEb(void *qthis,
-bool arg1) {
-  ((QPen*)qthis)->setCosmetic(arg1);
+void C_ZN4QPen13setMiterLimitEd(void *this_, qreal limit) {
+  ((QPen*)this_)->setMiterLimit(limit);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 110, column 10>
-//   // proto:  void QPen::setJoinStyle(Qt::PenJoinStyle pcs);
-// _ZN4QPen12setJoinStyleEN2Qt12PenJoinStyleE setJoinStyle(Qt::PenJoinStyle)
+// /usr/include/qt/QtGui/qpen.h:92
+// qreal widthF()
 extern "C"
-void
-C_ZN4QPen12setJoinStyleEN2Qt12PenJoinStyleE(void *qthis,
-Qt::PenJoinStyle* arg1) {
-  ((QPen*)qthis)->setJoinStyle(*((Qt::PenJoinStyle*)arg1));
+void C_ZNK4QPen6widthFEv(void *this_) {
+  /*return*/ ((QPen*)this_)->widthF();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 104, column 10>
-//   // proto:  bool QPen::isSolid();
-// _ZNK4QPen7isSolidEv isSolid()
+// /usr/include/qt/QtGui/qpen.h:93
+// void setWidthF(qreal)
 extern "C"
-bool
-C_ZNK4QPen7isSolidEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->isSolid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN4QPen9setWidthFEd(void *this_, qreal width) {
+  ((QPen*)this_)->setWidthF(width);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 99, column 10>
-//   // proto:  void QPen::setColor(const QColor & color);
-// _ZN4QPen8setColorERK6QColor setColor(const class QColor &)
+// /usr/include/qt/QtGui/qpen.h:95
+// int width()
 extern "C"
-void
-C_ZN4QPen8setColorERK6QColor(void *qthis,
-const QColor* arg1) {
-  ((QPen*)qthis)->setColor(*((const QColor*)arg1));
+void C_ZNK4QPen5widthEv(void *this_) {
+  /*return*/ ((QPen*)this_)->width();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 83, column 20>
-//   // proto:  QVector<qreal> QPen::dashPattern();
-// _ZNK4QPen11dashPatternEv dashPattern()
+// /usr/include/qt/QtGui/qpen.h:96
+// void setWidth(int)
 extern "C"
-QVector<double>*
-C_ZNK4QPen11dashPatternEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->dashPattern();
-  return new QVector<double>(ret); // 5
+void C_ZN4QPen8setWidthEi(void *this_, int width) {
+  ((QPen*)this_)->setWidth(width);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 119, column 10>
-//   // proto:  bool QPen::isDetached();
-// _ZN4QPen10isDetachedEv isDetached()
+// /usr/include/qt/QtGui/qpen.h:98
+// QColor color()
 extern "C"
-bool
-C_ZN4QPen10isDetachedEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->isDetached();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK4QPen5colorEv(void *this_) {
+  /*return*/ ((QPen*)this_)->color();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 63, column 5>
-//   // proto:  void QPen::QPen(Qt::PenStyle );
+// /usr/include/qt/QtGui/qpen.h:99
+// void setColor(const class QColor &)
 extern "C"
-QPen*
-C_ZN4QPenC2EN2Qt8PenStyleE(Qt::PenStyle* arg1) {
-  auto ret = new QPen(*((Qt::PenStyle*)arg1));
-  return ret;
+void C_ZN4QPen8setColorERK6QColor(void *this_, const QColor & color) {
+  ((QPen*)this_)->setColor(color);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 67, column 5>
-//   // proto:  void QPen::QPen(const QPen & pen);
+// /usr/include/qt/QtGui/qpen.h:101
+// QBrush brush()
 extern "C"
-QPen*
-C_ZN4QPenC2ERKS_(const QPen* arg1) {
-  auto ret = new QPen(*((const QPen*)arg1));
-  return ret;
+void C_ZNK4QPen5brushEv(void *this_) {
+  /*return*/ ((QPen*)this_)->brush();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 90, column 10>
-//   // proto:  void QPen::setMiterLimit(qreal limit);
-// _ZN4QPen13setMiterLimitEd setMiterLimit(qreal)
+// /usr/include/qt/QtGui/qpen.h:102
+// void setBrush(const class QBrush &)
 extern "C"
-void
-C_ZN4QPen13setMiterLimitEd(void *qthis,
-qreal arg1) {
-  ((QPen*)qthis)->setMiterLimit(arg1);
+void C_ZN4QPen8setBrushERK6QBrush(void *this_, const QBrush & brush) {
+  ((QPen*)this_)->setBrush(brush);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 62, column 5>
-//   // proto:  void QPen::QPen();
+// /usr/include/qt/QtGui/qpen.h:104
+// bool isSolid()
 extern "C"
-QPen*
-C_ZN4QPenC2Ev() {
-  auto ret = new QPen();
-  return ret;
+void C_ZNK4QPen7isSolidEv(void *this_) {
+  /*return*/ ((QPen*)this_)->isSolid();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 109, column 22>
-//   // proto:  Qt::PenJoinStyle QPen::joinStyle();
-// _ZNK4QPen9joinStyleEv joinStyle()
+// /usr/include/qt/QtGui/qpen.h:106
+// Qt::PenCapStyle capStyle()
 extern "C"
-Qt::PenJoinStyle
-C_ZNK4QPen9joinStyleEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->joinStyle();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK4QPen8capStyleEv(void *this_) {
+  /*return*/ ((QPen*)this_)->capStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 95, column 9>
-//   // proto:  int QPen::width();
-// _ZNK4QPen5widthEv width()
+// /usr/include/qt/QtGui/qpen.h:107
+// void setCapStyle(Qt::PenCapStyle)
 extern "C"
-int
-C_ZNK4QPen5widthEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->width();
-  return ret; // 0 TypeKind.INT
+void C_ZN4QPen11setCapStyleEN2Qt11PenCapStyleE(void *this_, Qt::PenCapStyle pcs) {
+  ((QPen*)this_)->setCapStyle(pcs);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 78, column 10>
-//   // proto:  void QPen::swap(QPen & other);
-// _ZN4QPen4swapERS_ swap(class QPen &)
+// /usr/include/qt/QtGui/qpen.h:109
+// Qt::PenJoinStyle joinStyle()
 extern "C"
-void
-C_ZN4QPen4swapERS_(void *qthis,
-QPen* arg1) {
-  ((QPen*)qthis)->swap(*((QPen*)arg1));
+void C_ZNK4QPen9joinStyleEv(void *this_) {
+  /*return*/ ((QPen*)this_)->joinStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 101, column 12>
-//   // proto:  QBrush QPen::brush();
-// _ZNK4QPen5brushEv brush()
+// /usr/include/qt/QtGui/qpen.h:110
+// void setJoinStyle(Qt::PenJoinStyle)
 extern "C"
-QBrush*
-C_ZNK4QPen5brushEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->brush();
-  return new QBrush(ret); // 5
+void C_ZN4QPen12setJoinStyleEN2Qt12PenJoinStyleE(void *this_, Qt::PenJoinStyle pcs) {
+  ((QPen*)this_)->setJoinStyle(pcs);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 106, column 21>
-//   // proto:  Qt::PenCapStyle QPen::capStyle();
-// _ZNK4QPen8capStyleEv capStyle()
+// /usr/include/qt/QtGui/qpen.h:112
+// bool isCosmetic()
 extern "C"
-Qt::PenCapStyle
-C_ZNK4QPen8capStyleEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->capStyle();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK4QPen10isCosmeticEv(void *this_) {
+  /*return*/ ((QPen*)this_)->isCosmetic();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 107, column 10>
-//   // proto:  void QPen::setCapStyle(Qt::PenCapStyle pcs);
-// _ZN4QPen11setCapStyleEN2Qt11PenCapStyleE setCapStyle(Qt::PenCapStyle)
+// /usr/include/qt/QtGui/qpen.h:113
+// void setCosmetic(_Bool)
 extern "C"
-void
-C_ZN4QPen11setCapStyleEN2Qt11PenCapStyleE(void *qthis,
-Qt::PenCapStyle* arg1) {
-  ((QPen*)qthis)->setCapStyle(*((Qt::PenCapStyle*)arg1));
+void C_ZN4QPen11setCosmeticEb(void *this_, bool cosmetic) {
+  ((QPen*)this_)->setCosmetic(cosmetic);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 112, column 10>
-//   // proto:  bool QPen::isCosmetic();
-// _ZNK4QPen10isCosmeticEv isCosmetic()
+// /usr/include/qt/QtGui/qpen.h:119
+// bool isDetached()
 extern "C"
-bool
-C_ZNK4QPen10isCosmeticEv(void *qthis) {
-  auto ret =
-  ((QPen*)qthis)->isCosmetic();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN4QPen10isDetachedEv(void *this_) {
+  /*return*/ ((QPen*)this_)->isDetached();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 73, column 5>
-//   // proto:  void QPen::QPen(QPen && other);
-extern "C"
-QPen*
-C_ZN4QPenC2EOS_(QPen* arg1) {
-  auto ret = new QPen(*((QPen*)arg1));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 87, column 10>
-//   // proto:  void QPen::setDashOffset(qreal doffset);
-// _ZN4QPen13setDashOffsetEd setDashOffset(qreal)
-extern "C"
-void
-C_ZN4QPen13setDashOffsetEd(void *qthis,
-qreal arg1) {
-  ((QPen*)qthis)->setDashOffset(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpen.h', line 65, column 5>
-//   // proto:  void QPen::QPen(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j);
-extern "C"
-QPen*
-C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush* arg1,
-qreal arg2,
-Qt::PenStyle* arg3,
-Qt::PenCapStyle* arg4,
-Qt::PenJoinStyle* arg5) {
-  auto ret = new QPen(*((const QBrush*)arg1),
-arg2,
-*((Qt::PenStyle*)arg3),
-*((Qt::PenCapStyle*)arg4),
-*((Qt::PenJoinStyle*)arg5));
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

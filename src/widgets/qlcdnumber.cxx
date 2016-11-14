@@ -1,311 +1,157 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qlcdnumber.h
-// dst-file: /src/widgets/qlcdnumber.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qlcdnumber.h
 #include <qlcdnumber.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qlcdnumber_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qlcdnumber.h:53
+// const QMetaObject * metaObject()
 extern "C"
-int QLCDNumber_Class_Size()
-{
-  return sizeof(QLCDNumber);
+void C_ZNK10QLCDNumber10metaObjectEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 95, column 10>
-//   // proto:  void QLCDNumber::display(int num);
-// _ZN10QLCDNumber7displayEi display(int)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:62
+// void QLCDNumber(class QWidget *)
 extern "C"
-void
-C_ZN10QLCDNumber7displayEi(void *qthis,
-int arg1) {
-  ((QLCDNumber*)qthis)->display(arg1);
+void* C_ZN10QLCDNumberC1EP7QWidget(QWidget * parent) {
+  return new QLCDNumber(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 97, column 10>
-//   // proto:  void QLCDNumber::setHexMode();
-// _ZN10QLCDNumber10setHexModeEv setHexMode()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:63
+// void QLCDNumber(uint, class QWidget *)
 extern "C"
-void
-C_ZN10QLCDNumber10setHexModeEv(void *qthis) {
-  ((QLCDNumber*)qthis)->setHexMode();
+void* C_ZN10QLCDNumberC1EjP7QWidget(uint numDigits, QWidget * parent) {
+  return new QLCDNumber(numDigits, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 96, column 10>
-//   // proto:  void QLCDNumber::display(double num);
-// _ZN10QLCDNumber7displayEd display(double)
+// virtual
+// /usr/include/qt/QtWidgets/qlcdnumber.h:64
+// void ~QLCDNumber()
 extern "C"
-void
-C_ZN10QLCDNumber7displayEd(void *qthis,
-double arg1) {
-  ((QLCDNumber*)qthis)->display(arg1);
+void C_ZN10QLCDNumberD1Ev(void *this_) {
+  delete (QLCDNumber*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 53, column 5>
-//   // proto:  const QMetaObject * QLCDNumber::metaObject();
-// _ZNK10QLCDNumber10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:75
+// bool smallDecimalPoint()
 extern "C"
-void*
-C_ZNK10QLCDNumber10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK10QLCDNumber17smallDecimalPointEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->smallDecimalPoint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 86, column 10>
-//   // proto:  void QLCDNumber::setSegmentStyle(QLCDNumber::SegmentStyle );
-// _ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE setSegmentStyle(enum QLCDNumber::SegmentStyle)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:76
+// int digitCount()
 extern "C"
-void
-C_ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE(void *qthis,
-QLCDNumber::SegmentStyle arg1) {
-  ((QLCDNumber*)qthis)->setSegmentStyle(arg1);
+void C_ZNK10QLCDNumber10digitCountEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->digitCount();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 83, column 10>
-//   // proto:  void QLCDNumber::setMode(QLCDNumber::Mode );
-// _ZN10QLCDNumber7setModeENS_4ModeE setMode(enum QLCDNumber::Mode)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:77
+// void setDigitCount(int)
 extern "C"
-void
-C_ZN10QLCDNumber7setModeENS_4ModeE(void *qthis,
-QLCDNumber::Mode arg1) {
-  ((QLCDNumber*)qthis)->setMode(arg1);
+void C_ZN10QLCDNumber13setDigitCountEi(void *this_, int nDigits) {
+  ((QLCDNumber*)this_)->setDigitCount(nDigits);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 85, column 18>
-//   // proto:  QLCDNumber::SegmentStyle QLCDNumber::segmentStyle();
-// _ZNK10QLCDNumber12segmentStyleEv segmentStyle()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:79
+// bool checkOverflow(double)
 extern "C"
-QLCDNumber::SegmentStyle
-C_ZNK10QLCDNumber12segmentStyleEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->segmentStyle();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK10QLCDNumber13checkOverflowEd(void *this_, double num) {
+  /*return*/ ((QLCDNumber*)this_)->checkOverflow(num);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 76, column 9>
-//   // proto:  int QLCDNumber::digitCount();
-// _ZNK10QLCDNumber10digitCountEv digitCount()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:80
+// bool checkOverflow(int)
 extern "C"
-int
-C_ZNK10QLCDNumber10digitCountEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->digitCount();
-  return ret; // 0 TypeKind.INT
+void C_ZNK10QLCDNumber13checkOverflowEi(void *this_, int num) {
+  /*return*/ ((QLCDNumber*)this_)->checkOverflow(num);
 }
-//   // proto:  void QLCDNumber::~QLCDNumber();
+// /usr/include/qt/QtWidgets/qlcdnumber.h:82
+// QLCDNumber::Mode mode()
 extern "C"
-void C_ZN10QLCDNumberD2Ev(void *qthis) {
-  delete (QLCDNumber*)qthis;
+void C_ZNK10QLCDNumber4modeEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->mode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 80, column 10>
-//   // proto:  bool QLCDNumber::checkOverflow(int num);
-// _ZNK10QLCDNumber13checkOverflowEi checkOverflow(int)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:83
+// void setMode(enum QLCDNumber::Mode)
 extern "C"
-bool
-C_ZNK10QLCDNumber13checkOverflowEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QLCDNumber*)qthis)->checkOverflow(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QLCDNumber7setModeENS_4ModeE(void *this_, QLCDNumber::Mode a0) {
+  ((QLCDNumber*)this_)->setMode(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 98, column 10>
-//   // proto:  void QLCDNumber::setDecMode();
-// _ZN10QLCDNumber10setDecModeEv setDecMode()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:85
+// QLCDNumber::SegmentStyle segmentStyle()
 extern "C"
-void
-C_ZN10QLCDNumber10setDecModeEv(void *qthis) {
-  ((QLCDNumber*)qthis)->setDecMode();
+void C_ZNK10QLCDNumber12segmentStyleEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->segmentStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 63, column 14>
-//   // proto:  void QLCDNumber::QLCDNumber(uint numDigits, QWidget * parent);
+// /usr/include/qt/QtWidgets/qlcdnumber.h:86
+// void setSegmentStyle(enum QLCDNumber::SegmentStyle)
 extern "C"
-QLCDNumber*
-C_ZN10QLCDNumberC2EjP7QWidget(uint arg1,
-QWidget * arg2) {
-  auto ret = new QLCDNumber(arg1,
-arg2);
-  return ret;
+void C_ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE(void *this_, QLCDNumber::SegmentStyle a0) {
+  ((QLCDNumber*)this_)->setSegmentStyle(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 79, column 10>
-//   // proto:  bool QLCDNumber::checkOverflow(double num);
-// _ZNK10QLCDNumber13checkOverflowEd checkOverflow(double)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:88
+// double value()
 extern "C"
-bool
-C_ZNK10QLCDNumber13checkOverflowEd(void *qthis,
-double arg1) {
-  auto ret =
-  ((QLCDNumber*)qthis)->checkOverflow(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QLCDNumber5valueEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->value();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 91, column 11>
-//   // proto:  QSize QLCDNumber::sizeHint();
-// _ZNK10QLCDNumber8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:89
+// int intValue()
 extern "C"
-QSize*
-C_ZNK10QLCDNumber8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZNK10QLCDNumber8intValueEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->intValue();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 94, column 10>
-//   // proto:  void QLCDNumber::display(const QString & str);
-// _ZN10QLCDNumber7displayERK7QString display(const class QString &)
+// virtual
+// /usr/include/qt/QtWidgets/qlcdnumber.h:91
+// QSize sizeHint()
 extern "C"
-void
-C_ZN10QLCDNumber7displayERK7QString(void *qthis,
-const QString* arg1) {
-  ((QLCDNumber*)qthis)->display(*((const QString*)arg1));
+void C_ZNK10QLCDNumber8sizeHintEv(void *this_) {
+  /*return*/ ((QLCDNumber*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 62, column 14>
-//   // proto:  void QLCDNumber::QLCDNumber(QWidget * parent);
+// /usr/include/qt/QtWidgets/qlcdnumber.h:94
+// void display(const class QString &)
 extern "C"
-QLCDNumber*
-C_ZN10QLCDNumberC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QLCDNumber(arg1);
-  return ret;
+void C_ZN10QLCDNumber7displayERK7QString(void *this_, const QString & str) {
+  ((QLCDNumber*)this_)->display(str);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 88, column 12>
-//   // proto:  double QLCDNumber::value();
-// _ZNK10QLCDNumber5valueEv value()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:95
+// void display(int)
 extern "C"
-double
-C_ZNK10QLCDNumber5valueEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->value();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN10QLCDNumber7displayEi(void *this_, int num) {
+  ((QLCDNumber*)this_)->display(num);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 100, column 10>
-//   // proto:  void QLCDNumber::setBinMode();
-// _ZN10QLCDNumber10setBinModeEv setBinMode()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:96
+// void display(double)
 extern "C"
-void
-C_ZN10QLCDNumber10setBinModeEv(void *qthis) {
-  ((QLCDNumber*)qthis)->setBinMode();
+void C_ZN10QLCDNumber7displayEd(void *this_, double num) {
+  ((QLCDNumber*)this_)->display(num);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 89, column 9>
-//   // proto:  int QLCDNumber::intValue();
-// _ZNK10QLCDNumber8intValueEv intValue()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:97
+// void setHexMode()
 extern "C"
-int
-C_ZNK10QLCDNumber8intValueEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->intValue();
-  return ret; // 0 TypeKind.INT
+void C_ZN10QLCDNumber10setHexModeEv(void *this_) {
+  ((QLCDNumber*)this_)->setHexMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 77, column 10>
-//   // proto:  void QLCDNumber::setDigitCount(int nDigits);
-// _ZN10QLCDNumber13setDigitCountEi setDigitCount(int)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:98
+// void setDecMode()
 extern "C"
-void
-C_ZN10QLCDNumber13setDigitCountEi(void *qthis,
-int arg1) {
-  ((QLCDNumber*)qthis)->setDigitCount(arg1);
+void C_ZN10QLCDNumber10setDecModeEv(void *this_) {
+  ((QLCDNumber*)this_)->setDecMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 101, column 10>
-//   // proto:  void QLCDNumber::setSmallDecimalPoint(bool );
-// _ZN10QLCDNumber20setSmallDecimalPointEb setSmallDecimalPoint(_Bool)
+// /usr/include/qt/QtWidgets/qlcdnumber.h:99
+// void setOctMode()
 extern "C"
-void
-C_ZN10QLCDNumber20setSmallDecimalPointEb(void *qthis,
-bool arg1) {
-  ((QLCDNumber*)qthis)->setSmallDecimalPoint(arg1);
+void C_ZN10QLCDNumber10setOctModeEv(void *this_) {
+  ((QLCDNumber*)this_)->setOctMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 75, column 10>
-//   // proto:  bool QLCDNumber::smallDecimalPoint();
-// _ZNK10QLCDNumber17smallDecimalPointEv smallDecimalPoint()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:100
+// void setBinMode()
 extern "C"
-bool
-C_ZNK10QLCDNumber17smallDecimalPointEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->smallDecimalPoint();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QLCDNumber10setBinModeEv(void *this_) {
+  ((QLCDNumber*)this_)->setBinMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 99, column 10>
-//   // proto:  void QLCDNumber::setOctMode();
-// _ZN10QLCDNumber10setOctModeEv setOctMode()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:101
+// void setSmallDecimalPoint(_Bool)
 extern "C"
-void
-C_ZN10QLCDNumber10setOctModeEv(void *qthis) {
-  ((QLCDNumber*)qthis)->setOctMode();
+void C_ZN10QLCDNumber20setSmallDecimalPointEb(void *this_, bool a0) {
+  ((QLCDNumber*)this_)->setSmallDecimalPoint(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 82, column 10>
-//   // proto:  QLCDNumber::Mode QLCDNumber::mode();
-// _ZNK10QLCDNumber4modeEv mode()
+// /usr/include/qt/QtWidgets/qlcdnumber.h:104
+// void overflow()
 extern "C"
-QLCDNumber::Mode
-C_ZNK10QLCDNumber4modeEv(void *qthis) {
-  auto ret =
-  ((QLCDNumber*)qthis)->mode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN10QLCDNumber8overflowEv(void *this_) {
+  ((QLCDNumber*)this_)->overflow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlcdnumber.h', line 104, column 10>
-//   // proto:  void QLCDNumber::overflow();
-// _ZN10QLCDNumber8overflowEv overflow()
-extern "C"
-void
-C_ZN10QLCDNumber8overflowEv(void *qthis) {
-  ((QLCDNumber*)qthis)->overflow();
-}
-// <= ext block end
-
-// body block begin =>
-// QLCDNumber_SlotProxy here
-class QLCDNumber_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QLCDNumber_SlotProxy():QObject(){}
-
-public slots:
-  // overflow()
-  void slot_proxy_func__ZN10QLCDNumber8overflowEv();
-public:
-  void (*slot_func__ZN10QLCDNumber8overflowEv)(void* rsfptr) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qlcdnumber.moc"
-
-extern "C" {
-  QLCDNumber_SlotProxy* QLCDNumber_SlotProxy_new()
-  {
-    return new QLCDNumber_SlotProxy();
-  }
-};
-
-void QLCDNumber_SlotProxy::slot_proxy_func__ZN10QLCDNumber8overflowEv() {
-  if (this->slot_func__ZN10QLCDNumber8overflowEv != NULL) {
-    // do smth...
-    this->slot_func__ZN10QLCDNumber8overflowEv(this->rsfptr);
-  }
-}
-extern "C"
-void* QLCDNumber_SlotProxy_connect__ZN10QLCDNumber8overflowEv(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QLCDNumber_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN10QLCDNumber8overflowEv = (decltype(that->slot_func__ZN10QLCDNumber8overflowEv))ffifptr;
-  QObject::connect((QLCDNumber*)sender, SIGNAL(overflow()), that, SLOT(slot_proxy_func__ZN10QLCDNumber8overflowEv()));
-  return that;
-}
-extern "C"
-void QLCDNumber_SlotProxy_disconnect__ZN10QLCDNumber8overflowEv(QLCDNumber_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

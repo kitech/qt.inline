@@ -1,80 +1,24 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qfinalstate.h
-// dst-file: /src/core/qfinalstate.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qfinalstate.h
 #include <qfinalstate.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qfinalstate_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qfinalstate.h:52
+// const QMetaObject * metaObject()
 extern "C"
-int QFinalState_Class_Size()
-{
-  return sizeof(QFinalState);
+void C_ZNK11QFinalState10metaObjectEv(void *this_) {
+  /*return*/ ((QFinalState*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 54, column 5>
-//   // proto:  void QFinalState::QFinalState(QState * parent);
+// /usr/include/qt/QtCore/qfinalstate.h:54
+// void QFinalState(class QState *)
 extern "C"
-QFinalState*
-C_ZN11QFinalStateC2EP6QState(QState * arg1) {
-  auto ret = new QFinalState(arg1);
-  return ret;
+void* C_ZN11QFinalStateC1EP6QState(QState * parent) {
+  return new QFinalState(parent);
 }
-//   // proto:  void QFinalState::~QFinalState();
+// virtual
+// /usr/include/qt/QtCore/qfinalstate.h:55
+// void ~QFinalState()
 extern "C"
-void C_ZN11QFinalStateD2Ev(void *qthis) {
-  delete (QFinalState*)qthis;
+void C_ZN11QFinalStateD1Ev(void *this_) {
+  delete (QFinalState*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qfinalstate.h', line 52, column 5>
-//   // proto:  const QMetaObject * QFinalState::metaObject();
-// _ZNK11QFinalState10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK11QFinalState10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QFinalState*)qthis)->metaObject();
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QFinalState_SlotProxy here
-class QFinalState_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QFinalState_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qfinalstate.moc"
-
-extern "C" {
-  QFinalState_SlotProxy* QFinalState_SlotProxy_new()
-  {
-    return new QFinalState_SlotProxy();
-  }
-};
-
-// <= body block end
-

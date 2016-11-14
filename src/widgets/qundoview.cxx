@@ -1,178 +1,84 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qundoview.h
-// dst-file: /src/widgets/qundoview.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qundoview.h
 #include <qundoview.h>
+#include <QtWidgets>
 
-
-#include <qicon.h>
-#include <qstring.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qundoview_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qundoview.h:58
+// const QMetaObject * metaObject()
 extern "C"
-int QUndoView_Class_Size()
-{
-  return sizeof(QUndoView);
+void C_ZNK9QUndoView10metaObjectEv(void *this_) {
+  /*return*/ ((QUndoView*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 67, column 14>
-//   // proto:  void QUndoView::QUndoView(QUndoGroup * group, QWidget * parent);
+// /usr/include/qt/QtWidgets/qundoview.h:64
+// void QUndoView(class QWidget *)
 extern "C"
-QUndoView*
-C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * arg1,
-QWidget * arg2) {
-  auto ret = new QUndoView(arg1,
-arg2);
-  return ret;
+void* C_ZN9QUndoViewC1EP7QWidget(QWidget * parent) {
+  return new QUndoView(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 83, column 10>
-//   // proto:  void QUndoView::setStack(QUndoStack * stack);
-// _ZN9QUndoView8setStackEP10QUndoStack setStack(class QUndoStack *)
+// /usr/include/qt/QtWidgets/qundoview.h:65
+// void QUndoView(class QUndoStack *, class QWidget *)
 extern "C"
-void
-C_ZN9QUndoView8setStackEP10QUndoStack(void *qthis,
-QUndoStack * arg1) {
-  ((QUndoView*)qthis)->setStack(arg1);
+void* C_ZN9QUndoViewC1EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
+  return new QUndoView(stack, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 76, column 10>
-//   // proto:  void QUndoView::setEmptyLabel(const QString & label);
-// _ZN9QUndoView13setEmptyLabelERK7QString setEmptyLabel(const class QString &)
+// /usr/include/qt/QtWidgets/qundoview.h:67
+// void QUndoView(class QUndoGroup *, class QWidget *)
 extern "C"
-void
-C_ZN9QUndoView13setEmptyLabelERK7QString(void *qthis,
-const QString* arg1) {
-  ((QUndoView*)qthis)->setEmptyLabel(*((const QString*)arg1));
+void* C_ZN9QUndoViewC1EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
+  return new QUndoView(group, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 79, column 10>
-//   // proto:  void QUndoView::setCleanIcon(const QIcon & icon);
-// _ZN9QUndoView12setCleanIconERK5QIcon setCleanIcon(const class QIcon &)
+// virtual
+// /usr/include/qt/QtWidgets/qundoview.h:69
+// void ~QUndoView()
 extern "C"
-void
-C_ZN9QUndoView12setCleanIconERK5QIcon(void *qthis,
-const QIcon* arg1) {
-  ((QUndoView*)qthis)->setCleanIcon(*((const QIcon*)arg1));
+void C_ZN9QUndoViewD1Ev(void *this_) {
+  delete (QUndoView*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 85, column 10>
-//   // proto:  void QUndoView::setGroup(QUndoGroup * group);
-// _ZN9QUndoView8setGroupEP10QUndoGroup setGroup(class QUndoGroup *)
+// /usr/include/qt/QtWidgets/qundoview.h:71
+// QUndoStack * stack()
 extern "C"
-void
-C_ZN9QUndoView8setGroupEP10QUndoGroup(void *qthis,
-QUndoGroup * arg1) {
-  ((QUndoView*)qthis)->setGroup(arg1);
+void C_ZNK9QUndoView5stackEv(void *this_) {
+  /*return*/ ((QUndoView*)this_)->stack();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 73, column 17>
-//   // proto:  QUndoGroup * QUndoView::group();
-// _ZNK9QUndoView5groupEv group()
+// /usr/include/qt/QtWidgets/qundoview.h:73
+// QUndoGroup * group()
 extern "C"
-void*
-C_ZNK9QUndoView5groupEv(void *qthis) {
-  auto ret =
-  ((QUndoView*)qthis)->group();
-  return (void*)ret;
+void C_ZNK9QUndoView5groupEv(void *this_) {
+  /*return*/ ((QUndoView*)this_)->group();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 58, column 5>
-//   // proto:  const QMetaObject * QUndoView::metaObject();
-// _ZNK9QUndoView10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qundoview.h:76
+// void setEmptyLabel(const class QString &)
 extern "C"
-void*
-C_ZNK9QUndoView10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QUndoView*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, const QString & label) {
+  ((QUndoView*)this_)->setEmptyLabel(label);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 71, column 17>
-//   // proto:  QUndoStack * QUndoView::stack();
-// _ZNK9QUndoView5stackEv stack()
+// /usr/include/qt/QtWidgets/qundoview.h:77
+// QString emptyLabel()
 extern "C"
-void*
-C_ZNK9QUndoView5stackEv(void *qthis) {
-  auto ret =
-  ((QUndoView*)qthis)->stack();
-  return (void*)ret;
+void C_ZNK9QUndoView10emptyLabelEv(void *this_) {
+  /*return*/ ((QUndoView*)this_)->emptyLabel();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 80, column 11>
-//   // proto:  QIcon QUndoView::cleanIcon();
-// _ZNK9QUndoView9cleanIconEv cleanIcon()
+// /usr/include/qt/QtWidgets/qundoview.h:79
+// void setCleanIcon(const class QIcon &)
 extern "C"
-QIcon*
-C_ZNK9QUndoView9cleanIconEv(void *qthis) {
-  auto ret =
-  ((QUndoView*)qthis)->cleanIcon();
-  return new QIcon(ret); // 5
+void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, const QIcon & icon) {
+  ((QUndoView*)this_)->setCleanIcon(icon);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 77, column 13>
-//   // proto:  QString QUndoView::emptyLabel();
-// _ZNK9QUndoView10emptyLabelEv emptyLabel()
+// /usr/include/qt/QtWidgets/qundoview.h:80
+// QIcon cleanIcon()
 extern "C"
-QString*
-C_ZNK9QUndoView10emptyLabelEv(void *qthis) {
-  auto ret =
-  ((QUndoView*)qthis)->emptyLabel();
-  return new QString(ret); // 5
+void C_ZNK9QUndoView9cleanIconEv(void *this_) {
+  /*return*/ ((QUndoView*)this_)->cleanIcon();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 64, column 14>
-//   // proto:  void QUndoView::QUndoView(QWidget * parent);
+// /usr/include/qt/QtWidgets/qundoview.h:83
+// void setStack(class QUndoStack *)
 extern "C"
-QUndoView*
-C_ZN9QUndoViewC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QUndoView(arg1);
-  return ret;
+void C_ZN9QUndoView8setStackEP10QUndoStack(void *this_, QUndoStack * stack) {
+  ((QUndoView*)this_)->setStack(stack);
 }
-//   // proto:  void QUndoView::~QUndoView();
+// /usr/include/qt/QtWidgets/qundoview.h:85
+// void setGroup(class QUndoGroup *)
 extern "C"
-void C_ZN9QUndoViewD2Ev(void *qthis) {
-  delete (QUndoView*)qthis;
+void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
+  ((QUndoView*)this_)->setGroup(group);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qundoview.h', line 65, column 14>
-//   // proto:  void QUndoView::QUndoView(QUndoStack * stack, QWidget * parent);
-extern "C"
-QUndoView*
-C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * arg1,
-QWidget * arg2) {
-  auto ret = new QUndoView(arg1,
-arg2);
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QUndoView_SlotProxy here
-class QUndoView_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QUndoView_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qundoview.moc"
-
-extern "C" {
-  QUndoView_SlotProxy* QUndoView_SlotProxy_new()
-  {
-    return new QUndoView_SlotProxy();
-  }
-};
-
-// <= body block end
-

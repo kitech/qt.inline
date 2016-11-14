@@ -1,407 +1,209 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qpagelayout.h
-// dst-file: /src/gui/qpagelayout.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qpagelayout.h
 #include <qpagelayout.h>
+#include <QtGui>
 
-
-#include <qmargins.h>
-#include <qrect.h>
-#include <qpagesize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qpagelayout_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 90, column 10>
-//   // proto:  void QPageLayout::swap(QPageLayout & other);
-if (true) {
-  auto f = [](QPageLayout flythis, QPageLayout & arg1) {
-    ((QPageLayout*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN11QPageLayout4swapERS_ swap(class QPageLayout &)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qpagelayout.h:79
+// void QPageLayout()
 extern "C"
-int QPageLayout_Class_Size()
-{
-  return sizeof(QPageLayout);
+void* C_ZN11QPageLayoutC1Ev() {
+  return new QPageLayout();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 98, column 10>
-//   // proto:  QPageLayout::Mode QPageLayout::mode();
-// _ZNK11QPageLayout4modeEv mode()
+// /usr/include/qt/QtGui/qpagelayout.h:80
+// void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
 extern "C"
-QPageLayout::Mode
-C_ZNK11QPageLayout4modeEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->mode();
-  return ret; // 0 TypeKind.ENUM
+void* C_ZN11QPageLayoutC1ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) {
+  return new QPageLayout(pageSize, orientation, margins, units, minMargins);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 112, column 10>
-//   // proto:  bool QPageLayout::setRightMargin(qreal rightMargin);
-// _ZN11QPageLayout14setRightMarginEd setRightMargin(qreal)
+// /usr/include/qt/QtGui/qpagelayout.h:88
+// void ~QPageLayout()
 extern "C"
-bool
-C_ZN11QPageLayout14setRightMarginEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->setRightMargin(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QPageLayoutD1Ev(void *this_) {
+  delete (QPageLayout*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 90, column 10>
-//   // proto:  void QPageLayout::swap(QPageLayout & other);
-// _ZN11QPageLayout4swapERS_ swap(class QPageLayout &)
+// inline
+// /usr/include/qt/QtGui/qpagelayout.h:90
+// void swap(class QPageLayout &)
 extern "C"
-void
-C_ZN11QPageLayout4swapERS_(void *qthis,
-QPageLayout* arg1) {
-  ((QPageLayout*)qthis)->swap(*((QPageLayout*)arg1));
+void C_ZN11QPageLayout4swapERS_(void *this_, QPageLayout & other) {
+  ((QPageLayout*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 118, column 14>
-//   // proto:  QMargins QPageLayout::marginsPoints();
-// _ZNK11QPageLayout13marginsPointsEv marginsPoints()
+// /usr/include/qt/QtGui/qpagelayout.h:93
+// bool isEquivalentTo(const class QPageLayout &)
 extern "C"
-QMargins*
-C_ZNK11QPageLayout13marginsPointsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->marginsPoints();
-  return new QMargins(ret); // 5
+void C_ZNK11QPageLayout14isEquivalentToERKS_(void *this_, const QPageLayout & other) {
+  /*return*/ ((QPageLayout*)this_)->isEquivalentTo(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 97, column 10>
-//   // proto:  void QPageLayout::setMode(QPageLayout::Mode mode);
-// _ZN11QPageLayout7setModeENS_4ModeE setMode(enum QPageLayout::Mode)
+// /usr/include/qt/QtGui/qpagelayout.h:95
+// bool isValid()
 extern "C"
-void
-C_ZN11QPageLayout7setModeENS_4ModeE(void *qthis,
-QPageLayout::Mode arg1) {
-  ((QPageLayout*)qthis)->setMode(arg1);
+void C_ZNK11QPageLayout7isValidEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 119, column 14>
-//   // proto:  QMargins QPageLayout::marginsPixels(int resolution);
-// _ZNK11QPageLayout13marginsPixelsEi marginsPixels(int)
+// /usr/include/qt/QtGui/qpagelayout.h:97
+// void setMode(enum QPageLayout::Mode)
 extern "C"
-QMargins*
-C_ZNK11QPageLayout13marginsPixelsEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->marginsPixels(arg1);
-  return new QMargins(ret); // 5
+void C_ZN11QPageLayout7setModeENS_4ModeE(void *this_, QPageLayout::Mode mode) {
+  ((QPageLayout*)this_)->setMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 95, column 10>
-//   // proto:  bool QPageLayout::isValid();
-// _ZNK11QPageLayout7isValidEv isValid()
+// /usr/include/qt/QtGui/qpagelayout.h:98
+// QPageLayout::Mode mode()
 extern "C"
-bool
-C_ZNK11QPageLayout7isValidEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QPageLayout4modeEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->mode();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 125, column 12>
-//   // proto:  QRectF QPageLayout::fullRect();
-// _ZNK11QPageLayout8fullRectEv fullRect()
+// /usr/include/qt/QtGui/qpagelayout.h:100
+// void setPageSize(const class QPageSize &, const class QMarginsF &)
 extern "C"
-QRectF*
-C_ZNK11QPageLayout8fullRectEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->fullRect();
-  return new QRectF(ret); // 5
+void C_ZN11QPageLayout11setPageSizeERK9QPageSizeRK9QMarginsF(void *this_, const QPageSize & pageSize, const QMarginsF & minMargins) {
+  ((QPageLayout*)this_)->setPageSize(pageSize, minMargins);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 130, column 12>
-//   // proto:  QRectF QPageLayout::paintRect();
-// _ZNK11QPageLayout9paintRectEv paintRect()
+// /usr/include/qt/QtGui/qpagelayout.h:102
+// QPageSize pageSize()
 extern "C"
-QRectF*
-C_ZNK11QPageLayout9paintRectEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->paintRect();
-  return new QRectF(ret); // 5
+void C_ZNK11QPageLayout8pageSizeEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->pageSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 108, column 10>
-//   // proto:  QPageLayout::Unit QPageLayout::units();
-// _ZNK11QPageLayout5unitsEv units()
+// /usr/include/qt/QtGui/qpagelayout.h:104
+// void setOrientation(enum QPageLayout::Orientation)
 extern "C"
-QPageLayout::Unit
-C_ZNK11QPageLayout5unitsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->units();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QPageLayout14setOrientationENS_11OrientationE(void *this_, QPageLayout::Orientation orientation) {
+  ((QPageLayout*)this_)->setOrientation(orientation);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 121, column 10>
-//   // proto:  void QPageLayout::setMinimumMargins(const QMarginsF & minMargins);
-// _ZN11QPageLayout17setMinimumMarginsERK9QMarginsF setMinimumMargins(const class QMarginsF &)
+// /usr/include/qt/QtGui/qpagelayout.h:105
+// QPageLayout::Orientation orientation()
 extern "C"
-void
-C_ZN11QPageLayout17setMinimumMarginsERK9QMarginsF(void *qthis,
-const QMarginsF* arg1) {
-  ((QPageLayout*)qthis)->setMinimumMargins(*((const QMarginsF*)arg1));
+void C_ZNK11QPageLayout11orientationEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->orientation();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 111, column 10>
-//   // proto:  bool QPageLayout::setLeftMargin(qreal leftMargin);
-// _ZN11QPageLayout13setLeftMarginEd setLeftMargin(qreal)
+// /usr/include/qt/QtGui/qpagelayout.h:107
+// void setUnits(enum QPageLayout::Unit)
 extern "C"
-bool
-C_ZN11QPageLayout13setLeftMarginEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->setLeftMargin(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QPageLayout8setUnitsENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  ((QPageLayout*)this_)->setUnits(units);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 114, column 10>
-//   // proto:  bool QPageLayout::setBottomMargin(qreal bottomMargin);
-// _ZN11QPageLayout15setBottomMarginEd setBottomMargin(qreal)
+// /usr/include/qt/QtGui/qpagelayout.h:108
+// QPageLayout::Unit units()
 extern "C"
-bool
-C_ZN11QPageLayout15setBottomMarginEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->setBottomMargin(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QPageLayout5unitsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->units();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 127, column 11>
-//   // proto:  QRect QPageLayout::fullRectPoints();
-// _ZNK11QPageLayout14fullRectPointsEv fullRectPoints()
+// /usr/include/qt/QtGui/qpagelayout.h:110
+// bool setMargins(const class QMarginsF &)
 extern "C"
-QRect*
-C_ZNK11QPageLayout14fullRectPointsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->fullRectPoints();
-  return new QRect(ret); // 5
+void C_ZN11QPageLayout10setMarginsERK9QMarginsF(void *this_, const QMarginsF & margins) {
+  /*return*/ ((QPageLayout*)this_)->setMargins(margins);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 122, column 15>
-//   // proto:  QMarginsF QPageLayout::minimumMargins();
-// _ZNK11QPageLayout14minimumMarginsEv minimumMargins()
+// /usr/include/qt/QtGui/qpagelayout.h:111
+// bool setLeftMargin(qreal)
 extern "C"
-QMarginsF*
-C_ZNK11QPageLayout14minimumMarginsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->minimumMargins();
-  return new QMarginsF(ret); // 5
+void C_ZN11QPageLayout13setLeftMarginEd(void *this_, qreal leftMargin) {
+  /*return*/ ((QPageLayout*)this_)->setLeftMargin(leftMargin);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 104, column 10>
-//   // proto:  void QPageLayout::setOrientation(QPageLayout::Orientation orientation);
-// _ZN11QPageLayout14setOrientationENS_11OrientationE setOrientation(enum QPageLayout::Orientation)
+// /usr/include/qt/QtGui/qpagelayout.h:112
+// bool setRightMargin(qreal)
 extern "C"
-void
-C_ZN11QPageLayout14setOrientationENS_11OrientationE(void *qthis,
-QPageLayout::Orientation arg1) {
-  ((QPageLayout*)qthis)->setOrientation(arg1);
+void C_ZN11QPageLayout14setRightMarginEd(void *this_, qreal rightMargin) {
+  /*return*/ ((QPageLayout*)this_)->setRightMargin(rightMargin);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 102, column 15>
-//   // proto:  QPageSize QPageLayout::pageSize();
-// _ZNK11QPageLayout8pageSizeEv pageSize()
+// /usr/include/qt/QtGui/qpagelayout.h:113
+// bool setTopMargin(qreal)
 extern "C"
-QPageSize*
-C_ZNK11QPageLayout8pageSizeEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->pageSize();
-  return new QPageSize(ret); // 5
+void C_ZN11QPageLayout12setTopMarginEd(void *this_, qreal topMargin) {
+  /*return*/ ((QPageLayout*)this_)->setTopMargin(topMargin);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 113, column 10>
-//   // proto:  bool QPageLayout::setTopMargin(qreal topMargin);
-// _ZN11QPageLayout12setTopMarginEd setTopMargin(qreal)
+// /usr/include/qt/QtGui/qpagelayout.h:114
+// bool setBottomMargin(qreal)
 extern "C"
-bool
-C_ZN11QPageLayout12setTopMarginEd(void *qthis,
-qreal arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->setTopMargin(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QPageLayout15setBottomMarginEd(void *this_, qreal bottomMargin) {
+  /*return*/ ((QPageLayout*)this_)->setBottomMargin(bottomMargin);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 117, column 15>
-//   // proto:  QMarginsF QPageLayout::margins(QPageLayout::Unit units);
-// _ZNK11QPageLayout7marginsENS_4UnitE margins(enum QPageLayout::Unit)
+// /usr/include/qt/QtGui/qpagelayout.h:116
+// QMarginsF margins()
 extern "C"
-QMarginsF*
-C_ZNK11QPageLayout7marginsENS_4UnitE(void *qthis,
-QPageLayout::Unit arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->margins(arg1);
-  return new QMarginsF(ret); // 5
+void C_ZNK11QPageLayout7marginsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->margins();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 131, column 12>
-//   // proto:  QRectF QPageLayout::paintRect(QPageLayout::Unit units);
-// _ZNK11QPageLayout9paintRectENS_4UnitE paintRect(enum QPageLayout::Unit)
+// /usr/include/qt/QtGui/qpagelayout.h:117
+// QMarginsF margins(enum QPageLayout::Unit)
 extern "C"
-QRectF*
-C_ZNK11QPageLayout9paintRectENS_4UnitE(void *qthis,
-QPageLayout::Unit arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->paintRect(arg1);
-  return new QRectF(ret); // 5
+void C_ZNK11QPageLayout7marginsENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  /*return*/ ((QPageLayout*)this_)->margins(units);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 126, column 12>
-//   // proto:  QRectF QPageLayout::fullRect(QPageLayout::Unit units);
-// _ZNK11QPageLayout8fullRectENS_4UnitE fullRect(enum QPageLayout::Unit)
+// /usr/include/qt/QtGui/qpagelayout.h:118
+// QMargins marginsPoints()
 extern "C"
-QRectF*
-C_ZNK11QPageLayout8fullRectENS_4UnitE(void *qthis,
-QPageLayout::Unit arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->fullRect(arg1);
-  return new QRectF(ret); // 5
+void C_ZNK11QPageLayout13marginsPointsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->marginsPoints();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 79, column 5>
-//   // proto:  void QPageLayout::QPageLayout();
+// /usr/include/qt/QtGui/qpagelayout.h:119
+// QMargins marginsPixels(int)
 extern "C"
-QPageLayout*
-C_ZN11QPageLayoutC2Ev() {
-  auto ret = new QPageLayout();
-  return ret;
+void C_ZNK11QPageLayout13marginsPixelsEi(void *this_, int resolution) {
+  /*return*/ ((QPageLayout*)this_)->marginsPixels(resolution);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 83, column 5>
-//   // proto:  void QPageLayout::QPageLayout(const QPageLayout & other);
+// /usr/include/qt/QtGui/qpagelayout.h:121
+// void setMinimumMargins(const class QMarginsF &)
 extern "C"
-QPageLayout*
-C_ZN11QPageLayoutC2ERKS_(const QPageLayout* arg1) {
-  auto ret = new QPageLayout(*((const QPageLayout*)arg1));
-  return ret;
+void C_ZN11QPageLayout17setMinimumMarginsERK9QMarginsF(void *this_, const QMarginsF & minMargins) {
+  ((QPageLayout*)this_)->setMinimumMargins(minMargins);
 }
-//   // proto:  void QPageLayout::~QPageLayout();
+// /usr/include/qt/QtGui/qpagelayout.h:122
+// QMarginsF minimumMargins()
 extern "C"
-void C_ZN11QPageLayoutD2Ev(void *qthis) {
-  delete (QPageLayout*)qthis;
+void C_ZNK11QPageLayout14minimumMarginsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->minimumMargins();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 128, column 11>
-//   // proto:  QRect QPageLayout::fullRectPixels(int resolution);
-// _ZNK11QPageLayout14fullRectPixelsEi fullRectPixels(int)
+// /usr/include/qt/QtGui/qpagelayout.h:123
+// QMarginsF maximumMargins()
 extern "C"
-QRect*
-C_ZNK11QPageLayout14fullRectPixelsEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->fullRectPixels(arg1);
-  return new QRect(ret); // 5
+void C_ZNK11QPageLayout14maximumMarginsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->maximumMargins();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 116, column 15>
-//   // proto:  QMarginsF QPageLayout::margins();
-// _ZNK11QPageLayout7marginsEv margins()
+// /usr/include/qt/QtGui/qpagelayout.h:125
+// QRectF fullRect()
 extern "C"
-QMarginsF*
-C_ZNK11QPageLayout7marginsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->margins();
-  return new QMarginsF(ret); // 5
+void C_ZNK11QPageLayout8fullRectEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->fullRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 132, column 11>
-//   // proto:  QRect QPageLayout::paintRectPoints();
-// _ZNK11QPageLayout15paintRectPointsEv paintRectPoints()
+// /usr/include/qt/QtGui/qpagelayout.h:126
+// QRectF fullRect(enum QPageLayout::Unit)
 extern "C"
-QRect*
-C_ZNK11QPageLayout15paintRectPointsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->paintRectPoints();
-  return new QRect(ret); // 5
+void C_ZNK11QPageLayout8fullRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  /*return*/ ((QPageLayout*)this_)->fullRect(units);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 133, column 11>
-//   // proto:  QRect QPageLayout::paintRectPixels(int resolution);
-// _ZNK11QPageLayout15paintRectPixelsEi paintRectPixels(int)
+// /usr/include/qt/QtGui/qpagelayout.h:127
+// QRect fullRectPoints()
 extern "C"
-QRect*
-C_ZNK11QPageLayout15paintRectPixelsEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->paintRectPixels(arg1);
-  return new QRect(ret); // 5
+void C_ZNK11QPageLayout14fullRectPointsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->fullRectPoints();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 100, column 10>
-//   // proto:  void QPageLayout::setPageSize(const QPageSize & pageSize, const QMarginsF & minMargins);
-// _ZN11QPageLayout11setPageSizeERK9QPageSizeRK9QMarginsF setPageSize(const class QPageSize &, const class QMarginsF &)
+// /usr/include/qt/QtGui/qpagelayout.h:128
+// QRect fullRectPixels(int)
 extern "C"
-void
-C_ZN11QPageLayout11setPageSizeERK9QPageSizeRK9QMarginsF(void *qthis,
-const QPageSize* arg1,
-const QMarginsF* arg2) {
-  ((QPageLayout*)qthis)->setPageSize(*((const QPageSize*)arg1),
-*((const QMarginsF*)arg2));
+void C_ZNK11QPageLayout14fullRectPixelsEi(void *this_, int resolution) {
+  /*return*/ ((QPageLayout*)this_)->fullRectPixels(resolution);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 123, column 15>
-//   // proto:  QMarginsF QPageLayout::maximumMargins();
-// _ZNK11QPageLayout14maximumMarginsEv maximumMargins()
+// /usr/include/qt/QtGui/qpagelayout.h:130
+// QRectF paintRect()
 extern "C"
-QMarginsF*
-C_ZNK11QPageLayout14maximumMarginsEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->maximumMargins();
-  return new QMarginsF(ret); // 5
+void C_ZNK11QPageLayout9paintRectEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->paintRect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 93, column 10>
-//   // proto:  bool QPageLayout::isEquivalentTo(const QPageLayout & other);
-// _ZNK11QPageLayout14isEquivalentToERKS_ isEquivalentTo(const class QPageLayout &)
+// /usr/include/qt/QtGui/qpagelayout.h:131
+// QRectF paintRect(enum QPageLayout::Unit)
 extern "C"
-bool
-C_ZNK11QPageLayout14isEquivalentToERKS_(void *qthis,
-const QPageLayout* arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->isEquivalentTo(*((const QPageLayout*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QPageLayout9paintRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  /*return*/ ((QPageLayout*)this_)->paintRect(units);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 110, column 10>
-//   // proto:  bool QPageLayout::setMargins(const QMarginsF & margins);
-// _ZN11QPageLayout10setMarginsERK9QMarginsF setMargins(const class QMarginsF &)
+// /usr/include/qt/QtGui/qpagelayout.h:132
+// QRect paintRectPoints()
 extern "C"
-bool
-C_ZN11QPageLayout10setMarginsERK9QMarginsF(void *qthis,
-const QMarginsF* arg1) {
-  auto ret =
-  ((QPageLayout*)qthis)->setMargins(*((const QMarginsF*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QPageLayout15paintRectPointsEv(void *this_) {
+  /*return*/ ((QPageLayout*)this_)->paintRectPoints();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 107, column 10>
-//   // proto:  void QPageLayout::setUnits(QPageLayout::Unit units);
-// _ZN11QPageLayout8setUnitsENS_4UnitE setUnits(enum QPageLayout::Unit)
+// /usr/include/qt/QtGui/qpagelayout.h:133
+// QRect paintRectPixels(int)
 extern "C"
-void
-C_ZN11QPageLayout8setUnitsENS_4UnitE(void *qthis,
-QPageLayout::Unit arg1) {
-  ((QPageLayout*)qthis)->setUnits(arg1);
+void C_ZNK11QPageLayout15paintRectPixelsEi(void *this_, int resolution) {
+  /*return*/ ((QPageLayout*)this_)->paintRectPixels(resolution);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 80, column 5>
-//   // proto:  void QPageLayout::QPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins);
-extern "C"
-QPageLayout*
-C_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize* arg1,
-QPageLayout::Orientation arg2,
-const QMarginsF* arg3,
-QPageLayout::Unit arg4,
-const QMarginsF* arg5) {
-  auto ret = new QPageLayout(*((const QPageSize*)arg1),
-arg2,
-*((const QMarginsF*)arg3),
-arg4,
-*((const QMarginsF*)arg5));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpagelayout.h', line 105, column 17>
-//   // proto:  QPageLayout::Orientation QPageLayout::orientation();
-// _ZNK11QPageLayout11orientationEv orientation()
-extern "C"
-QPageLayout::Orientation
-C_ZNK11QPageLayout11orientationEv(void *qthis) {
-  auto ret =
-  ((QPageLayout*)qthis)->orientation();
-  return ret; // 0 TypeKind.ENUM
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

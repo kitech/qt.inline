@@ -1,336 +1,166 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qdatastream.h
-// dst-file: /src/core/qdatastream.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qdatastream.h
 #include <qdatastream.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qdatastream_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 139, column 9>
-//   // proto:  int QDataStream::version();
-if (true) {
-  auto f = [](QDataStream flythis) {
-    ((QDataStream*)0)->version();
-    flythis.version();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QDataStream7versionEv version()
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 136, column 15>
-//   // proto:  QDataStream::ByteOrder QDataStream::byteOrder();
-if (true) {
-  auto f = [](QDataStream flythis) {
-    ((QDataStream*)0)->byteOrder();
-    flythis.byteOrder();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QDataStream9byteOrderEv byteOrder()
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 140, column 10>
-//   // proto:  void QDataStream::setVersion(int );
-if (true) {
-  auto f = [](QDataStream flythis, int arg1) {
-    ((QDataStream*)0)->setVersion(arg1);
-    flythis.setVersion(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN11QDataStream10setVersionEi setVersion(int)
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 123, column 16>
-//   // proto:  QIODevice * QDataStream::device();
-if (true) {
-  auto f = [](QDataStream flythis) {
-    ((QDataStream*)0)->device();
-    flythis.device();
-  };
-  if (f == nullptr){}
-}
-// _ZNK11QDataStream6deviceEv device()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qdatastream.h:117
+// void QDataStream()
 extern "C"
-int QDataStream_Class_Size()
-{
-  return sizeof(QDataStream);
+void* C_ZN11QDataStreamC1Ev() {
+  return new QDataStream();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 180, column 10>
-//   // proto:  void QDataStream::abortTransaction();
-// _ZN11QDataStream16abortTransactionEv abortTransaction()
+// /usr/include/qt/QtCore/qdatastream.h:118
+// void QDataStream(class QIODevice *)
 extern "C"
-void
-C_ZN11QDataStream16abortTransactionEv(void *qthis) {
-  ((QDataStream*)qthis)->abortTransaction();
+void* C_ZN11QDataStreamC1EP9QIODevice(QIODevice * a0) {
+  return new QDataStream(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 169, column 18>
-//   // proto:  QDataStream & QDataStream::readBytes(char *& , uint & len);
-// _ZN11QDataStream9readBytesERPcRj readBytes(char *&, uint &)
+// /usr/include/qt/QtCore/qdatastream.h:119
+// void QDataStream(class QByteArray *, class QIODevice::OpenMode)
 extern "C"
-QDataStream*
-C_ZN11QDataStream9readBytesERPcRj(void *qthis,
-char ** arg1,
-uint* arg2) {
-  auto& ret =
-  ((QDataStream*)qthis)->readBytes(*((char **)arg1),
-*((uint*)arg2));
-  return &ret; // return new QDataStream(ret);
+void* C_ZN11QDataStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * a0, QFlags<QIODevice::OpenModeFlag> flags) {
+  return new QDataStream(a0, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 137, column 10>
-//   // proto:  void QDataStream::setByteOrder(QDataStream::ByteOrder );
-// _ZN11QDataStream12setByteOrderENS_9ByteOrderE setByteOrder(enum QDataStream::ByteOrder)
+// /usr/include/qt/QtCore/qdatastream.h:120
+// void QDataStream(const class QByteArray &)
 extern "C"
-void
-C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *qthis,
-QDataStream::ByteOrder arg1) {
-  ((QDataStream*)qthis)->setByteOrder(arg1);
+void* C_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & a0) {
+  return new QDataStream(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 177, column 10>
-//   // proto:  void QDataStream::startTransaction();
-// _ZN11QDataStream16startTransactionEv startTransaction()
+// /usr/include/qt/QtCore/qdatastream.h:121
+// void ~QDataStream()
 extern "C"
-void
-C_ZN11QDataStream16startTransactionEv(void *qthis) {
-  ((QDataStream*)qthis)->startTransaction();
+void C_ZN11QDataStreamD1Ev(void *this_) {
+  delete (QDataStream*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 125, column 10>
-//   // proto:  void QDataStream::unsetDevice();
-// _ZN11QDataStream11unsetDeviceEv unsetDevice()
+// /usr/include/qt/QtCore/qdatastream.h:123
+// QIODevice * device()
 extern "C"
-void
-C_ZN11QDataStream11unsetDeviceEv(void *qthis) {
-  ((QDataStream*)qthis)->unsetDevice();
+void C_ZNK11QDataStream6deviceEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->device();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 118, column 14>
-//   // proto:  void QDataStream::QDataStream(QIODevice * );
+// /usr/include/qt/QtCore/qdatastream.h:124
+// void setDevice(class QIODevice *)
 extern "C"
-QDataStream*
-C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg1) {
-  auto ret = new QDataStream(arg1);
-  return ret;
+void C_ZN11QDataStream9setDeviceEP9QIODevice(void *this_, QIODevice * a0) {
+  ((QDataStream*)this_)->setDevice(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 119, column 5>
-//   // proto:  void QDataStream::QDataStream(QByteArray * , QIODevice::OpenMode flags);
+// /usr/include/qt/QtCore/qdatastream.h:125
+// void unsetDevice()
 extern "C"
-QDataStream*
-C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg1,
-QIODevice::OpenMode* arg2) {
-  auto ret = new QDataStream(arg1,
-*((QIODevice::OpenMode*)arg2));
-  return ret;
+void C_ZN11QDataStream11unsetDeviceEv(void *this_) {
+  ((QDataStream*)this_)->unsetDevice();
 }
-//   // proto:  void QDataStream::~QDataStream();
+// /usr/include/qt/QtCore/qdatastream.h:127
+// bool atEnd()
 extern "C"
-void C_ZN11QDataStreamD2Ev(void *qthis) {
-  delete (QDataStream*)qthis;
+void C_ZNK11QDataStream5atEndEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->atEnd();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 175, column 9>
-//   // proto:  int QDataStream::skipRawData(int len);
-// _ZN11QDataStream11skipRawDataEi skipRawData(int)
+// /usr/include/qt/QtCore/qdatastream.h:129
+// QDataStream::Status status()
 extern "C"
-int
-C_ZN11QDataStream11skipRawDataEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QDataStream*)qthis)->skipRawData(arg1);
-  return ret; // 0 TypeKind.INT
+void C_ZNK11QDataStream6statusEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->status();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 172, column 18>
-//   // proto:  QDataStream & QDataStream::writeBytes(const char * , uint len);
-// _ZN11QDataStream10writeBytesEPKcj writeBytes(const char *, uint)
+// /usr/include/qt/QtCore/qdatastream.h:130
+// void setStatus(enum QDataStream::Status)
 extern "C"
-QDataStream*
-C_ZN11QDataStream10writeBytesEPKcj(void *qthis,
-const char * arg1,
-uint arg2) {
-  auto& ret =
-  ((QDataStream*)qthis)->writeBytes(arg1,
-arg2);
-  return &ret; // return new QDataStream(ret);
+void C_ZN11QDataStream9setStatusENS_6StatusE(void *this_, QDataStream::Status status) {
+  ((QDataStream*)this_)->setStatus(status);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 117, column 5>
-//   // proto:  void QDataStream::QDataStream();
+// /usr/include/qt/QtCore/qdatastream.h:131
+// void resetStatus()
 extern "C"
-QDataStream*
-C_ZN11QDataStreamC2Ev() {
-  auto ret = new QDataStream();
-  return ret;
+void C_ZN11QDataStream11resetStatusEv(void *this_) {
+  ((QDataStream*)this_)->resetStatus();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 131, column 10>
-//   // proto:  void QDataStream::resetStatus();
-// _ZN11QDataStream11resetStatusEv resetStatus()
+// /usr/include/qt/QtCore/qdatastream.h:133
+// QDataStream::FloatingPointPrecision floatingPointPrecision()
 extern "C"
-void
-C_ZN11QDataStream11resetStatusEv(void *qthis) {
-  ((QDataStream*)qthis)->resetStatus();
+void C_ZNK11QDataStream22floatingPointPrecisionEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->floatingPointPrecision();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 134, column 10>
-//   // proto:  void QDataStream::setFloatingPointPrecision(QDataStream::FloatingPointPrecision precision);
-// _ZN11QDataStream25setFloatingPointPrecisionENS_22FloatingPointPrecisionE setFloatingPointPrecision(enum QDataStream::FloatingPointPrecision)
+// /usr/include/qt/QtCore/qdatastream.h:134
+// void setFloatingPointPrecision(enum QDataStream::FloatingPointPrecision)
 extern "C"
-void
-C_ZN11QDataStream25setFloatingPointPrecisionENS_22FloatingPointPrecisionE(void *qthis,
-QDataStream::FloatingPointPrecision arg1) {
-  ((QDataStream*)qthis)->setFloatingPointPrecision(arg1);
+void C_ZN11QDataStream25setFloatingPointPrecisionENS_22FloatingPointPrecisionE(void *this_, QDataStream::FloatingPointPrecision precision) {
+  ((QDataStream*)this_)->setFloatingPointPrecision(precision);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 179, column 10>
-//   // proto:  void QDataStream::rollbackTransaction();
-// _ZN11QDataStream19rollbackTransactionEv rollbackTransaction()
+// /usr/include/qt/QtCore/qdatastream.h:136
+// QDataStream::ByteOrder byteOrder()
 extern "C"
-void
-C_ZN11QDataStream19rollbackTransactionEv(void *qthis) {
-  ((QDataStream*)qthis)->rollbackTransaction();
+void C_ZNK11QDataStream9byteOrderEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->byteOrder();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 133, column 28>
-//   // proto:  QDataStream::FloatingPointPrecision QDataStream::floatingPointPrecision();
-// _ZNK11QDataStream22floatingPointPrecisionEv floatingPointPrecision()
+// /usr/include/qt/QtCore/qdatastream.h:137
+// void setByteOrder(enum QDataStream::ByteOrder)
 extern "C"
-QDataStream::FloatingPointPrecision
-C_ZNK11QDataStream22floatingPointPrecisionEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->floatingPointPrecision();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *this_, QDataStream::ByteOrder a0) {
+  ((QDataStream*)this_)->setByteOrder(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 120, column 5>
-//   // proto:  void QDataStream::QDataStream(const QByteArray & );
+// /usr/include/qt/QtCore/qdatastream.h:139
+// int version()
 extern "C"
-QDataStream*
-C_ZN11QDataStreamC2ERK10QByteArray(const QByteArray* arg1) {
-  auto ret = new QDataStream(*((const QByteArray*)arg1));
-  return ret;
+void C_ZNK11QDataStream7versionEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->version();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 139, column 9>
-//   // proto:  int QDataStream::version();
-// _ZNK11QDataStream7versionEv version()
+// /usr/include/qt/QtCore/qdatastream.h:140
+// void setVersion(int)
 extern "C"
-int
-C_ZNK11QDataStream7versionEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->version();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QDataStream10setVersionEi(void *this_, int a0) {
+  ((QDataStream*)this_)->setVersion(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 129, column 12>
-//   // proto:  QDataStream::Status QDataStream::status();
-// _ZNK11QDataStream6statusEv status()
+// /usr/include/qt/QtCore/qdatastream.h:169
+// QDataStream & readBytes(char *&, uint &)
 extern "C"
-QDataStream::Status
-C_ZNK11QDataStream6statusEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->status();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QDataStream9readBytesERPcRj(void *this_, char *& a0, uint & len) {
+  /*return*/ ((QDataStream*)this_)->readBytes(a0, len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 136, column 15>
-//   // proto:  QDataStream::ByteOrder QDataStream::byteOrder();
-// _ZNK11QDataStream9byteOrderEv byteOrder()
+// /usr/include/qt/QtCore/qdatastream.h:170
+// int readRawData(char *, int)
 extern "C"
-QDataStream::ByteOrder
-C_ZNK11QDataStream9byteOrderEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->byteOrder();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QDataStream11readRawDataEPci(void *this_, char * a0, int len) {
+  /*return*/ ((QDataStream*)this_)->readRawData(a0, len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 127, column 10>
-//   // proto:  bool QDataStream::atEnd();
-// _ZNK11QDataStream5atEndEv atEnd()
+// /usr/include/qt/QtCore/qdatastream.h:172
+// QDataStream & writeBytes(const char *, uint)
 extern "C"
-bool
-C_ZNK11QDataStream5atEndEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->atEnd();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QDataStream10writeBytesEPKcj(void *this_, const char * a0, uint len) {
+  /*return*/ ((QDataStream*)this_)->writeBytes(a0, len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 140, column 10>
-//   // proto:  void QDataStream::setVersion(int );
-// _ZN11QDataStream10setVersionEi setVersion(int)
+// /usr/include/qt/QtCore/qdatastream.h:173
+// int writeRawData(const char *, int)
 extern "C"
-void
-C_ZN11QDataStream10setVersionEi(void *qthis,
-int arg1) {
-  ((QDataStream*)qthis)->setVersion(arg1);
+void C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * a0, int len) {
+  /*return*/ ((QDataStream*)this_)->writeRawData(a0, len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 178, column 10>
-//   // proto:  bool QDataStream::commitTransaction();
-// _ZN11QDataStream17commitTransactionEv commitTransaction()
+// /usr/include/qt/QtCore/qdatastream.h:175
+// int skipRawData(int)
 extern "C"
-bool
-C_ZN11QDataStream17commitTransactionEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->commitTransaction();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QDataStream11skipRawDataEi(void *this_, int len) {
+  /*return*/ ((QDataStream*)this_)->skipRawData(len);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 124, column 10>
-//   // proto:  void QDataStream::setDevice(QIODevice * );
-// _ZN11QDataStream9setDeviceEP9QIODevice setDevice(class QIODevice *)
+// /usr/include/qt/QtCore/qdatastream.h:177
+// void startTransaction()
 extern "C"
-void
-C_ZN11QDataStream9setDeviceEP9QIODevice(void *qthis,
-QIODevice * arg1) {
-  ((QDataStream*)qthis)->setDevice(arg1);
+void C_ZN11QDataStream16startTransactionEv(void *this_) {
+  ((QDataStream*)this_)->startTransaction();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 173, column 9>
-//   // proto:  int QDataStream::writeRawData(const char * , int len);
-// _ZN11QDataStream12writeRawDataEPKci writeRawData(const char *, int)
+// /usr/include/qt/QtCore/qdatastream.h:178
+// bool commitTransaction()
 extern "C"
-int
-C_ZN11QDataStream12writeRawDataEPKci(void *qthis,
-const char * arg1,
-int arg2) {
-  auto ret =
-  ((QDataStream*)qthis)->writeRawData(arg1,
-arg2);
-  return ret; // 0 TypeKind.INT
+void C_ZN11QDataStream17commitTransactionEv(void *this_) {
+  /*return*/ ((QDataStream*)this_)->commitTransaction();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 170, column 9>
-//   // proto:  int QDataStream::readRawData(char * , int len);
-// _ZN11QDataStream11readRawDataEPci readRawData(char *, int)
+// /usr/include/qt/QtCore/qdatastream.h:179
+// void rollbackTransaction()
 extern "C"
-int
-C_ZN11QDataStream11readRawDataEPci(void *qthis,
-char * arg1,
-int arg2) {
-  auto ret =
-  ((QDataStream*)qthis)->readRawData(arg1,
-arg2);
-  return ret; // 0 TypeKind.INT
+void C_ZN11QDataStream19rollbackTransactionEv(void *this_) {
+  ((QDataStream*)this_)->rollbackTransaction();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 123, column 16>
-//   // proto:  QIODevice * QDataStream::device();
-// _ZNK11QDataStream6deviceEv device()
+// /usr/include/qt/QtCore/qdatastream.h:180
+// void abortTransaction()
 extern "C"
-void*
-C_ZNK11QDataStream6deviceEv(void *qthis) {
-  auto ret =
-  ((QDataStream*)qthis)->device();
-  return (void*)ret;
+void C_ZN11QDataStream16abortTransactionEv(void *this_) {
+  ((QDataStream*)this_)->abortTransaction();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdatastream.h', line 130, column 10>
-//   // proto:  void QDataStream::setStatus(QDataStream::Status status);
-// _ZN11QDataStream9setStatusENS_6StatusE setStatus(enum QDataStream::Status)
-extern "C"
-void
-C_ZN11QDataStream9setStatusENS_6StatusE(void *qthis,
-QDataStream::Status arg1) {
-  ((QDataStream*)qthis)->setStatus(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

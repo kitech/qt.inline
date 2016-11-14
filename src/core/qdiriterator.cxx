@@ -1,152 +1,70 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qdiriterator.h
-// dst-file: /src/core/qdiriterator.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qdiriterator.h
 #include <qdiriterator.h>
+#include <QtCore>
 
-
-#include <qstring.h>
-#include <qfileinfo.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qdiriterator_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qdiriterator.h:58
+// void QDirIterator(const class QDir &, IteratorFlags)
 extern "C"
-int QDirIterator_Class_Size()
-{
-  return sizeof(QDirIterator);
+void* C_ZN12QDirIteratorC1ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) {
+  return new QDirIterator(dir, flags);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 74, column 13>
-//   // proto:  QString QDirIterator::fileName();
-// _ZNK12QDirIterator8fileNameEv fileName()
+// /usr/include/qt/QtCore/qdiriterator.h:59
+// void QDirIterator(const class QString &, IteratorFlags)
 extern "C"
-QString*
-C_ZNK12QDirIterator8fileNameEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->fileName();
-  return new QString(ret); // 5
+void* C_ZN12QDirIteratorC1ERK7QString6QFlagsINS_12IteratorFlagEE(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) {
+  return new QDirIterator(path, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 59, column 5>
-//   // proto:  void QDirIterator::QDirIterator(const QString & path, IteratorFlags flags);
+// /usr/include/qt/QtCore/qdiriterator.h:61
+// void QDirIterator(const class QString &, class QDir::Filters, IteratorFlags)
 extern "C"
-QDirIterator*
-C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(const QString* arg1,
-QDirIterator::IteratorFlags arg2) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-arg2);
-  return ret;
+void* C_ZN12QDirIteratorC1ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFlagEE(const QString & path, QFlags<QDir::Filter> filter, QFlags<QDirIterator::IteratorFlag> flags) {
+  return new QDirIterator(path, filter, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 77, column 13>
-//   // proto:  QString QDirIterator::path();
-// _ZNK12QDirIterator4pathEv path()
+// /usr/include/qt/QtCore/qdiriterator.h:64
+// void QDirIterator(const class QString &, const class QStringList &, class QDir::Filters, IteratorFlags)
 extern "C"
-QString*
-C_ZNK12QDirIterator4pathEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->path();
-  return new QString(ret); // 5
+void* C_ZN12QDirIteratorC1ERK7QStringRK11QStringList6QFlagsIN4QDir6FilterEES6_INS_12IteratorFlagEE(const QString & path, const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) {
+  return new QDirIterator(path, nameFilters, filters, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 58, column 5>
-//   // proto:  void QDirIterator::QDirIterator(const QDir & dir, IteratorFlags flags);
+// /usr/include/qt/QtCore/qdiriterator.h:69
+// void ~QDirIterator()
 extern "C"
-QDirIterator*
-C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir* arg1,
-QDirIterator::IteratorFlags arg2) {
-  auto ret = new QDirIterator(*((const QDir*)arg1),
-arg2);
-  return ret;
+void C_ZN12QDirIteratorD1Ev(void *this_) {
+  delete (QDirIterator*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 71, column 13>
-//   // proto:  QString QDirIterator::next();
-// _ZN12QDirIterator4nextEv next()
+// /usr/include/qt/QtCore/qdiriterator.h:71
+// QString next()
 extern "C"
-QString*
-C_ZN12QDirIterator4nextEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->next();
-  return new QString(ret); // 5
+void C_ZN12QDirIterator4nextEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->next();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 75, column 13>
-//   // proto:  QString QDirIterator::filePath();
-// _ZNK12QDirIterator8filePathEv filePath()
+// /usr/include/qt/QtCore/qdiriterator.h:72
+// bool hasNext()
 extern "C"
-QString*
-C_ZNK12QDirIterator8filePathEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->filePath();
-  return new QString(ret); // 5
+void C_ZNK12QDirIterator7hasNextEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->hasNext();
 }
-//   // proto:  void QDirIterator::~QDirIterator();
+// /usr/include/qt/QtCore/qdiriterator.h:74
+// QString fileName()
 extern "C"
-void C_ZN12QDirIteratorD2Ev(void *qthis) {
-  delete (QDirIterator*)qthis;
+void C_ZNK12QDirIterator8fileNameEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 61, column 5>
-//   // proto:  void QDirIterator::QDirIterator(const QString & path, QDir::Filters filter, IteratorFlags flags);
+// /usr/include/qt/QtCore/qdiriterator.h:75
+// QString filePath()
 extern "C"
-QDirIterator*
-C_ZN12QDirIteratorC2ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFlagEE(const QString* arg1,
-QDir::Filters* arg2,
-QDirIterator::IteratorFlags arg3) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-*((QDir::Filters*)arg2),
-arg3);
-  return ret;
+void C_ZNK12QDirIterator8filePathEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->filePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 64, column 5>
-//   // proto:  void QDirIterator::QDirIterator(const QString & path, const QStringList & nameFilters, QDir::Filters filters, IteratorFlags flags);
+// /usr/include/qt/QtCore/qdiriterator.h:76
+// QFileInfo fileInfo()
 extern "C"
-QDirIterator*
-C_ZN12QDirIteratorC2ERK7QStringRK11QStringList6QFlagsIN4QDir6FilterEES6_INS_12IteratorFlagEE(const QString* arg1,
-const QStringList* arg2,
-QDir::Filters* arg3,
-QDirIterator::IteratorFlags arg4) {
-  auto ret = new QDirIterator(*((const QString*)arg1),
-*((const QStringList*)arg2),
-*((QDir::Filters*)arg3),
-arg4);
-  return ret;
+void C_ZNK12QDirIterator8fileInfoEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->fileInfo();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 76, column 15>
-//   // proto:  QFileInfo QDirIterator::fileInfo();
-// _ZNK12QDirIterator8fileInfoEv fileInfo()
+// /usr/include/qt/QtCore/qdiriterator.h:77
+// QString path()
 extern "C"
-QFileInfo*
-C_ZNK12QDirIterator8fileInfoEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->fileInfo();
-  return new QFileInfo(ret); // 5
+void C_ZNK12QDirIterator4pathEv(void *this_) {
+  /*return*/ ((QDirIterator*)this_)->path();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qdiriterator.h', line 72, column 10>
-//   // proto:  bool QDirIterator::hasNext();
-// _ZNK12QDirIterator7hasNextEv hasNext()
-extern "C"
-bool
-C_ZNK12QDirIterator7hasNextEv(void *qthis) {
-  auto ret =
-  ((QDirIterator*)qthis)->hasNext();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,810 +1,374 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qtabbar.h
-// dst-file: /src/widgets/qtabbar.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qtabbar.h
 #include <qtabbar.h>
+#include <QtWidgets>
 
-
-#include <qstring.h>
-#include <qicon.h>
-#include <qsize.h>
-#include <qrect.h>
-#include <qnamespace.h>
-#include <qcolor.h>
-#include <qvariant.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtabbar_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
-extern "C"
-int QTabBar_Class_Size()
-{
-  return sizeof(QTabBar);
-}
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 148, column 10>
-//   // proto:  bool QTabBar::usesScrollButtons();
-// _ZNK7QTabBar17usesScrollButtonsEv usesScrollButtons()
-extern "C"
-bool
-C_ZNK7QTabBar17usesScrollButtonsEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->usesScrollButtons();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 169, column 10>
-//   // proto:  bool QTabBar::autoHide();
-// _ZNK7QTabBar8autoHideEv autoHide()
-extern "C"
-bool
-C_ZNK7QTabBar8autoHideEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->autoHide();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 122, column 13>
-//   // proto:  QString QTabBar::tabToolTip(int index);
-// _ZNK7QTabBar10tabToolTipEi tabToolTip(int)
-extern "C"
-QString*
-C_ZNK7QTabBar10tabToolTipEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabToolTip(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 154, column 10>
-//   // proto:  void QTabBar::setTabButton(int index, QTabBar::ButtonPosition position, QWidget * widget);
-// _ZN7QTabBar12setTabButtonEiNS_14ButtonPositionEP7QWidget setTabButton(int, enum QTabBar::ButtonPosition, class QWidget *)
-extern "C"
-void
-C_ZN7QTabBar12setTabButtonEiNS_14ButtonPositionEP7QWidget(void *qthis,
-int arg1,
-QTabBar::ButtonPosition arg2,
-QWidget * arg3) {
-  ((QTabBar*)qthis)->setTabButton(arg1,
-arg2,
-arg3);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 160, column 10>
-//   // proto:  bool QTabBar::expanding();
-// _ZNK7QTabBar9expandingEv expanding()
-extern "C"
-bool
-C_ZNK7QTabBar9expandingEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->expanding();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 167, column 10>
-//   // proto:  void QTabBar::setDocumentMode(bool set);
-// _ZN7QTabBar15setDocumentModeEb setDocumentMode(_Bool)
-extern "C"
-void
-C_ZN7QTabBar15setDocumentModeEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setDocumentMode(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 137, column 9>
-//   // proto:  int QTabBar::count();
-// _ZNK7QTabBar5countEv count()
-extern "C"
-int
-C_ZNK7QTabBar5countEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->count();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 173, column 10>
-//   // proto:  void QTabBar::setChangeCurrentOnDrag(bool change);
-// _ZN7QTabBar22setChangeCurrentOnDragEb setChangeCurrentOnDrag(_Bool)
-extern "C"
-void
-C_ZN7QTabBar22setChangeCurrentOnDragEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setChangeCurrentOnDrag(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 114, column 11>
-//   // proto:  QIcon QTabBar::tabIcon(int index);
-// _ZNK7QTabBar7tabIconEi tabIcon(int)
-extern "C"
-QIcon*
-C_ZNK7QTabBar7tabIconEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabIcon(arg1);
-  return new QIcon(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 118, column 10>
-//   // proto:  void QTabBar::setElideMode(Qt::TextElideMode );
-// _ZN7QTabBar12setElideModeEN2Qt13TextElideModeE setElideMode(Qt::TextElideMode)
-extern "C"
-void
-C_ZN7QTabBar12setElideModeEN2Qt13TextElideModeE(void *qthis,
-Qt::TextElideMode* arg1) {
-  ((QTabBar*)qthis)->setElideMode(*((Qt::TextElideMode*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 182, column 10>
-//   // proto:  void QTabBar::tabBarClicked(int index);
-// _ZN7QTabBar13tabBarClickedEi tabBarClicked(int)
-extern "C"
-void
-C_ZN7QTabBar13tabBarClickedEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->tabBarClicked(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 140, column 11>
-//   // proto:  QSize QTabBar::minimumSizeHint();
-// _ZNK7QTabBar15minimumSizeHintEv minimumSizeHint()
-extern "C"
-QSize*
-C_ZNK7QTabBar15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 152, column 10>
-//   // proto:  void QTabBar::setTabsClosable(bool closable);
-// _ZN7QTabBar15setTabsClosableEb setTabsClosable(_Bool)
-extern "C"
-void
-C_ZN7QTabBar15setTabsClosableEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setTabsClosable(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 172, column 10>
-//   // proto:  bool QTabBar::changeCurrentOnDrag();
-// _ZNK7QTabBar19changeCurrentOnDragEv changeCurrentOnDrag()
-extern "C"
-bool
-C_ZNK7QTabBar19changeCurrentOnDragEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->changeCurrentOnDrag();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 126, column 10>
-//   // proto:  void QTabBar::setTabWhatsThis(int index, const QString & text);
-// _ZN7QTabBar15setTabWhatsThisEiRK7QString setTabWhatsThis(int, const class QString &)
-extern "C"
-void
-C_ZN7QTabBar15setTabWhatsThisEiRK7QString(void *qthis,
-int arg1,
-const QString* arg2) {
-  ((QTabBar*)qthis)->setTabWhatsThis(arg1,
-*((const QString*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 56, column 5>
-//   // proto:  const QMetaObject * QTabBar::metaObject();
-// _ZNK7QTabBar10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK7QTabBar10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->metaObject();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 100, column 9>
-//   // proto:  int QTabBar::insertTab(int index, const QIcon & icon, const QString & text);
-// _ZN7QTabBar9insertTabEiRK5QIconRK7QString insertTab(int, const class QIcon &, const class QString &)
-extern "C"
-int
-C_ZN7QTabBar9insertTabEiRK5QIconRK7QString(void *qthis,
-int arg1,
-const QIcon* arg2,
-const QString* arg3) {
-  auto ret =
-  ((QTabBar*)qthis)->insertTab(arg1,
-*((const QIcon*)arg2),
-*((const QString*)arg3));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 115, column 10>
-//   // proto:  void QTabBar::setTabIcon(int index, const QIcon & icon);
-// _ZN7QTabBar10setTabIconEiRK5QIcon setTabIcon(int, const class QIcon &)
-extern "C"
-void
-C_ZN7QTabBar10setTabIconEiRK5QIcon(void *qthis,
-int arg1,
-const QIcon* arg2) {
-  ((QTabBar*)qthis)->setTabIcon(arg1,
-*((const QIcon*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 163, column 10>
-//   // proto:  bool QTabBar::isMovable();
-// _ZNK7QTabBar9isMovableEv isMovable()
-extern "C"
-bool
-C_ZNK7QTabBar9isMovableEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->isMovable();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 161, column 10>
-//   // proto:  void QTabBar::setExpanding(bool enabled);
-// _ZN7QTabBar12setExpandingEb setExpanding(_Bool)
-extern "C"
-void
-C_ZN7QTabBar12setExpandingEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setExpanding(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 102, column 10>
-//   // proto:  void QTabBar::removeTab(int index);
-// _ZN7QTabBar9removeTabEi removeTab(int)
-extern "C"
-void
-C_ZN7QTabBar9removeTabEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->removeTab(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 106, column 10>
-//   // proto:  void QTabBar::setTabEnabled(int index, bool );
-// _ZN7QTabBar13setTabEnabledEib setTabEnabled(int, _Bool)
-extern "C"
-void
-C_ZN7QTabBar13setTabEnabledEib(void *qthis,
-int arg1,
-bool arg2) {
-  ((QTabBar*)qthis)->setTabEnabled(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 105, column 10>
-//   // proto:  bool QTabBar::isTabEnabled(int index);
-// _ZNK7QTabBar12isTabEnabledEi isTabEnabled(int)
-extern "C"
-bool
-C_ZNK7QTabBar12isTabEnabledEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->isTabEnabled(arg1);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 176, column 10>
-//   // proto:  void QTabBar::setCurrentIndex(int index);
-// _ZN7QTabBar15setCurrentIndexEi setCurrentIndex(int)
-extern "C"
-void
-C_ZN7QTabBar15setCurrentIndexEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->setCurrentIndex(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 133, column 11>
-//   // proto:  QRect QTabBar::tabRect(int index);
-// _ZNK7QTabBar7tabRectEi tabRect(int)
-extern "C"
-QRect*
-C_ZNK7QTabBar7tabRectEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabRect(arg1);
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 151, column 10>
-//   // proto:  bool QTabBar::tabsClosable();
-// _ZNK7QTabBar12tabsClosableEv tabsClosable()
-extern "C"
-bool
-C_ZNK7QTabBar12tabsClosableEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->tabsClosable();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 180, column 10>
-//   // proto:  void QTabBar::tabCloseRequested(int index);
-// _ZN7QTabBar17tabCloseRequestedEi tabCloseRequested(int)
-extern "C"
-void
-C_ZN7QTabBar17tabCloseRequestedEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->tabCloseRequested(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 164, column 10>
-//   // proto:  void QTabBar::setMovable(bool movable);
-// _ZN7QTabBar10setMovableEb setMovable(_Bool)
-extern "C"
-void
-C_ZN7QTabBar10setMovableEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setMovable(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 170, column 10>
-//   // proto:  void QTabBar::setAutoHide(bool hide);
-// _ZN7QTabBar11setAutoHideEb setAutoHide(_Bool)
-extern "C"
-void
-C_ZN7QTabBar11setAutoHideEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setAutoHide(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 145, column 11>
-//   // proto:  QSize QTabBar::iconSize();
-// _ZNK7QTabBar8iconSizeEv iconSize()
-extern "C"
-QSize*
-C_ZNK7QTabBar8iconSizeEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->iconSize();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 94, column 10>
-//   // proto:  void QTabBar::setShape(QTabBar::Shape shape);
-// _ZN7QTabBar8setShapeENS_5ShapeE setShape(enum QTabBar::Shape)
-extern "C"
-void
-C_ZN7QTabBar8setShapeENS_5ShapeE(void *qthis,
-QTabBar::Shape arg1) {
-  ((QTabBar*)qthis)->setShape(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 108, column 13>
-//   // proto:  QString QTabBar::tabText(int index);
-// _ZNK7QTabBar7tabTextEi tabText(int)
-extern "C"
-QString*
-C_ZNK7QTabBar7tabTextEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabText(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 117, column 23>
-//   // proto:  Qt::TextElideMode QTabBar::elideMode();
-// _ZNK7QTabBar9elideModeEv elideMode()
-extern "C"
-Qt::TextElideMode
-C_ZNK7QTabBar9elideModeEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->elideMode();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 127, column 13>
-//   // proto:  QString QTabBar::tabWhatsThis(int index);
-// _ZNK7QTabBar12tabWhatsThisEi tabWhatsThis(int)
-extern "C"
-QString*
-C_ZNK7QTabBar12tabWhatsThisEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabWhatsThis(arg1);
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 166, column 10>
-//   // proto:  bool QTabBar::documentMode();
-// _ZNK7QTabBar12documentModeEv documentMode()
-extern "C"
-bool
-C_ZNK7QTabBar12documentModeEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->documentMode();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 134, column 9>
-//   // proto:  int QTabBar::tabAt(const QPoint & pos);
-// _ZNK7QTabBar5tabAtERK6QPoint tabAt(const class QPoint &)
-extern "C"
-int
-C_ZNK7QTabBar5tabAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabAt(*((const QPoint*)arg1));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 130, column 10>
-//   // proto:  void QTabBar::setTabData(int index, const QVariant & data);
-// _ZN7QTabBar10setTabDataEiRK8QVariant setTabData(int, const class QVariant &)
-extern "C"
-void
-C_ZN7QTabBar10setTabDataEiRK8QVariant(void *qthis,
-int arg1,
-const QVariant* arg2) {
-  ((QTabBar*)qthis)->setTabData(arg1,
-*((const QVariant*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 74, column 14>
-//   // proto:  void QTabBar::QTabBar(QWidget * parent);
-extern "C"
-QTabBar*
-C_ZN7QTabBarC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QTabBar(arg1);
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 111, column 12>
-//   // proto:  QColor QTabBar::tabTextColor(int index);
-// _ZNK7QTabBar12tabTextColorEi tabTextColor(int)
-extern "C"
-QColor*
-C_ZNK7QTabBar12tabTextColorEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabTextColor(arg1);
-  return new QColor(ret); // 5
-}
-//   // proto:  void QTabBar::~QTabBar();
-extern "C"
-void C_ZN7QTabBarD2Ev(void *qthis) {
-  delete (QTabBar*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 93, column 11>
-//   // proto:  QTabBar::Shape QTabBar::shape();
-// _ZNK7QTabBar5shapeEv shape()
-extern "C"
-QTabBar::Shape
-C_ZNK7QTabBar5shapeEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->shape();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 99, column 9>
-//   // proto:  int QTabBar::insertTab(int index, const QString & text);
-// _ZN7QTabBar9insertTabEiRK7QString insertTab(int, const class QString &)
-extern "C"
-int
-C_ZN7QTabBar9insertTabEiRK7QString(void *qthis,
-int arg1,
-const QString* arg2) {
-  auto ret =
-  ((QTabBar*)qthis)->insertTab(arg1,
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 183, column 10>
-//   // proto:  void QTabBar::tabBarDoubleClicked(int index);
-// _ZN7QTabBar19tabBarDoubleClickedEi tabBarDoubleClicked(int)
-extern "C"
-void
-C_ZN7QTabBar19tabBarDoubleClickedEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->tabBarDoubleClicked(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 96, column 9>
-//   // proto:  int QTabBar::addTab(const QString & text);
-// _ZN7QTabBar6addTabERK7QString addTab(const class QString &)
-extern "C"
-int
-C_ZN7QTabBar6addTabERK7QString(void *qthis,
-const QString* arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->addTab(*((const QString*)arg1));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 157, column 23>
-//   // proto:  QTabBar::SelectionBehavior QTabBar::selectionBehaviorOnRemove();
-// _ZNK7QTabBar25selectionBehaviorOnRemoveEv selectionBehaviorOnRemove()
-extern "C"
-QTabBar::SelectionBehavior
-C_ZNK7QTabBar25selectionBehaviorOnRemoveEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->selectionBehaviorOnRemove();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 97, column 9>
-//   // proto:  int QTabBar::addTab(const QIcon & icon, const QString & text);
-// _ZN7QTabBar6addTabERK5QIconRK7QString addTab(const class QIcon &, const class QString &)
-extern "C"
-int
-C_ZN7QTabBar6addTabERK5QIconRK7QString(void *qthis,
-const QIcon* arg1,
-const QString* arg2) {
-  auto ret =
-  ((QTabBar*)qthis)->addTab(*((const QIcon*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 121, column 10>
-//   // proto:  void QTabBar::setTabToolTip(int index, const QString & tip);
-// _ZN7QTabBar13setTabToolTipEiRK7QString setTabToolTip(int, const class QString &)
-extern "C"
-void
-C_ZN7QTabBar13setTabToolTipEiRK7QString(void *qthis,
-int arg1,
-const QString* arg2) {
-  ((QTabBar*)qthis)->setTabToolTip(arg1,
-*((const QString*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 179, column 10>
-//   // proto:  void QTabBar::currentChanged(int index);
-// _ZN7QTabBar14currentChangedEi currentChanged(int)
-extern "C"
-void
-C_ZN7QTabBar14currentChangedEi(void *qthis,
-int arg1) {
-  ((QTabBar*)qthis)->currentChanged(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 112, column 10>
-//   // proto:  void QTabBar::setTabTextColor(int index, const QColor & color);
-// _ZN7QTabBar15setTabTextColorEiRK6QColor setTabTextColor(int, const class QColor &)
-extern "C"
-void
-C_ZN7QTabBar15setTabTextColorEiRK6QColor(void *qthis,
-int arg1,
-const QColor* arg2) {
-  ((QTabBar*)qthis)->setTabTextColor(arg1,
-*((const QColor*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 103, column 10>
-//   // proto:  void QTabBar::moveTab(int from, int to);
-// _ZN7QTabBar7moveTabEii moveTab(int, int)
-extern "C"
-void
-C_ZN7QTabBar7moveTabEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QTabBar*)qthis)->moveTab(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 155, column 14>
-//   // proto:  QWidget * QTabBar::tabButton(int index, QTabBar::ButtonPosition position);
-// _ZNK7QTabBar9tabButtonEiNS_14ButtonPositionE tabButton(int, enum QTabBar::ButtonPosition)
-extern "C"
-void*
-C_ZNK7QTabBar9tabButtonEiNS_14ButtonPositionE(void *qthis,
-int arg1,
-QTabBar::ButtonPosition arg2) {
-  auto ret =
-  ((QTabBar*)qthis)->tabButton(arg1,
-arg2);
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 158, column 10>
-//   // proto:  void QTabBar::setSelectionBehaviorOnRemove(QTabBar::SelectionBehavior behavior);
-// _ZN7QTabBar28setSelectionBehaviorOnRemoveENS_17SelectionBehaviorE setSelectionBehaviorOnRemove(enum QTabBar::SelectionBehavior)
-extern "C"
-void
-C_ZN7QTabBar28setSelectionBehaviorOnRemoveENS_17SelectionBehaviorE(void *qthis,
-QTabBar::SelectionBehavior arg1) {
-  ((QTabBar*)qthis)->setSelectionBehaviorOnRemove(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 131, column 14>
-//   // proto:  QVariant QTabBar::tabData(int index);
-// _ZNK7QTabBar7tabDataEi tabData(int)
-extern "C"
-QVariant*
-C_ZNK7QTabBar7tabDataEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QTabBar*)qthis)->tabData(arg1);
-  return new QVariant(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 143, column 10>
-//   // proto:  bool QTabBar::drawBase();
-// _ZNK7QTabBar8drawBaseEv drawBase()
-extern "C"
-bool
-C_ZNK7QTabBar8drawBaseEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->drawBase();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 136, column 9>
-//   // proto:  int QTabBar::currentIndex();
-// _ZNK7QTabBar12currentIndexEv currentIndex()
-extern "C"
-int
-C_ZNK7QTabBar12currentIndexEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->currentIndex();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 142, column 10>
-//   // proto:  void QTabBar::setDrawBase(bool drawTheBase);
-// _ZN7QTabBar11setDrawBaseEb setDrawBase(_Bool)
-extern "C"
-void
-C_ZN7QTabBar11setDrawBaseEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setDrawBase(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 149, column 10>
-//   // proto:  void QTabBar::setUsesScrollButtons(bool useButtons);
-// _ZN7QTabBar20setUsesScrollButtonsEb setUsesScrollButtons(_Bool)
-extern "C"
-void
-C_ZN7QTabBar20setUsesScrollButtonsEb(void *qthis,
-bool arg1) {
-  ((QTabBar*)qthis)->setUsesScrollButtons(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 139, column 11>
-//   // proto:  QSize QTabBar::sizeHint();
-// _ZNK7QTabBar8sizeHintEv sizeHint()
-extern "C"
-QSize*
-C_ZNK7QTabBar8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QTabBar*)qthis)->sizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 146, column 10>
-//   // proto:  void QTabBar::setIconSize(const QSize & size);
-// _ZN7QTabBar11setIconSizeERK5QSize setIconSize(const class QSize &)
-extern "C"
-void
-C_ZN7QTabBar11setIconSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QTabBar*)qthis)->setIconSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 109, column 10>
-//   // proto:  void QTabBar::setTabText(int index, const QString & text);
-// _ZN7QTabBar10setTabTextEiRK7QString setTabText(int, const class QString &)
-extern "C"
-void
-C_ZN7QTabBar10setTabTextEiRK7QString(void *qthis,
-int arg1,
-const QString* arg2) {
-  ((QTabBar*)qthis)->setTabText(arg1,
-*((const QString*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtabbar.h', line 181, column 10>
-//   // proto:  void QTabBar::tabMoved(int from, int to);
-// _ZN7QTabBar8tabMovedEii tabMoved(int, int)
-extern "C"
-void
-C_ZN7QTabBar8tabMovedEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QTabBar*)qthis)->tabMoved(arg1,
-arg2);
-}
-// <= ext block end
-
-// body block begin =>
-// QTabBar_SlotProxy here
-class QTabBar_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QTabBar_SlotProxy():QObject(){}
-
-public slots:
-  // tabBarClicked(int)
-  void slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar13tabBarClickedEi)(void* rsfptr, int arg0) = NULL;
-public slots:
-  // tabBarDoubleClicked(int)
-  void slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar19tabBarDoubleClickedEi)(void* rsfptr, int arg0) = NULL;
-public slots:
-  // tabCloseRequested(int)
-  void slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar17tabCloseRequestedEi)(void* rsfptr, int arg0) = NULL;
-public slots:
-  // tabMoved(int, int)
-  void slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1);
-public:
-  void (*slot_func__ZN7QTabBar8tabMovedEii)(void* rsfptr, int arg0, int arg1) = NULL;
-public slots:
-  // currentChanged(int)
-  void slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0);
-public:
-  void (*slot_func__ZN7QTabBar14currentChangedEi)(void* rsfptr, int arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qtabbar.moc"
-
-extern "C" {
-  QTabBar_SlotProxy* QTabBar_SlotProxy_new()
-  {
-    return new QTabBar_SlotProxy();
-  }
-};
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar13tabBarClickedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar13tabBarClickedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar13tabBarClickedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTabBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QTabBar13tabBarClickedEi = (decltype(that->slot_func__ZN7QTabBar13tabBarClickedEi))ffifptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabBarClicked(int)), that, SLOT(slot_proxy_func__ZN7QTabBar13tabBarClickedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar13tabBarClickedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar19tabBarDoubleClickedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar19tabBarDoubleClickedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar19tabBarDoubleClickedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTabBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi = (decltype(that->slot_func__ZN7QTabBar19tabBarDoubleClickedEi))ffifptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabBarDoubleClicked(int)), that, SLOT(slot_proxy_func__ZN7QTabBar19tabBarDoubleClickedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar19tabBarDoubleClickedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar17tabCloseRequestedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar17tabCloseRequestedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar17tabCloseRequestedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTabBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QTabBar17tabCloseRequestedEi = (decltype(that->slot_func__ZN7QTabBar17tabCloseRequestedEi))ffifptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabCloseRequested(int)), that, SLOT(slot_proxy_func__ZN7QTabBar17tabCloseRequestedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar17tabCloseRequestedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1) {
-  if (this->slot_func__ZN7QTabBar8tabMovedEii != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar8tabMovedEii(this->rsfptr, arg0, arg1);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar8tabMovedEii(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTabBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QTabBar8tabMovedEii = (decltype(that->slot_func__ZN7QTabBar8tabMovedEii))ffifptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(tabMoved(int, int)), that, SLOT(slot_proxy_func__ZN7QTabBar8tabMovedEii(int arg0, int arg1)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar8tabMovedEii(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QTabBar_SlotProxy::slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0) {
-  if (this->slot_func__ZN7QTabBar14currentChangedEi != NULL) {
-    // do smth...
-    this->slot_func__ZN7QTabBar14currentChangedEi(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QTabBar_SlotProxy_connect__ZN7QTabBar14currentChangedEi(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QTabBar_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QTabBar14currentChangedEi = (decltype(that->slot_func__ZN7QTabBar14currentChangedEi))ffifptr;
-  QObject::connect((QTabBar*)sender, SIGNAL(currentChanged(int)), that, SLOT(slot_proxy_func__ZN7QTabBar14currentChangedEi(int arg0)));
-  return that;
-}
-extern "C"
-void QTabBar_SlotProxy_disconnect__ZN7QTabBar14currentChangedEi(QTabBar_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-
+// virtual
+// /usr/include/qt/QtWidgets/qtabbar.h:56
+// const QMetaObject * metaObject()
+extern "C"
+void C_ZNK7QTabBar10metaObjectEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->metaObject();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:74
+// void QTabBar(class QWidget *)
+extern "C"
+void* C_ZN7QTabBarC1EP7QWidget(QWidget * parent) {
+  return new QTabBar(parent);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qtabbar.h:75
+// void ~QTabBar()
+extern "C"
+void C_ZN7QTabBarD1Ev(void *this_) {
+  delete (QTabBar*)(this_);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:93
+// QTabBar::Shape shape()
+extern "C"
+void C_ZNK7QTabBar5shapeEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->shape();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:94
+// void setShape(enum QTabBar::Shape)
+extern "C"
+void C_ZN7QTabBar8setShapeENS_5ShapeE(void *this_, QTabBar::Shape shape) {
+  ((QTabBar*)this_)->setShape(shape);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:96
+// int addTab(const class QString &)
+extern "C"
+void C_ZN7QTabBar6addTabERK7QString(void *this_, const QString & text) {
+  /*return*/ ((QTabBar*)this_)->addTab(text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:97
+// int addTab(const class QIcon &, const class QString &)
+extern "C"
+void C_ZN7QTabBar6addTabERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
+  /*return*/ ((QTabBar*)this_)->addTab(icon, text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:99
+// int insertTab(int, const class QString &)
+extern "C"
+void C_ZN7QTabBar9insertTabEiRK7QString(void *this_, int index, const QString & text) {
+  /*return*/ ((QTabBar*)this_)->insertTab(index, text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:100
+// int insertTab(int, const class QIcon &, const class QString &)
+extern "C"
+void C_ZN7QTabBar9insertTabEiRK5QIconRK7QString(void *this_, int index, const QIcon & icon, const QString & text) {
+  /*return*/ ((QTabBar*)this_)->insertTab(index, icon, text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:102
+// void removeTab(int)
+extern "C"
+void C_ZN7QTabBar9removeTabEi(void *this_, int index) {
+  ((QTabBar*)this_)->removeTab(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:103
+// void moveTab(int, int)
+extern "C"
+void C_ZN7QTabBar7moveTabEii(void *this_, int from, int to) {
+  ((QTabBar*)this_)->moveTab(from, to);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:105
+// bool isTabEnabled(int)
+extern "C"
+void C_ZNK7QTabBar12isTabEnabledEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->isTabEnabled(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:106
+// void setTabEnabled(int, _Bool)
+extern "C"
+void C_ZN7QTabBar13setTabEnabledEib(void *this_, int index, bool a1) {
+  ((QTabBar*)this_)->setTabEnabled(index, a1);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:108
+// QString tabText(int)
+extern "C"
+void C_ZNK7QTabBar7tabTextEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabText(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:109
+// void setTabText(int, const class QString &)
+extern "C"
+void C_ZN7QTabBar10setTabTextEiRK7QString(void *this_, int index, const QString & text) {
+  ((QTabBar*)this_)->setTabText(index, text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:111
+// QColor tabTextColor(int)
+extern "C"
+void C_ZNK7QTabBar12tabTextColorEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabTextColor(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:112
+// void setTabTextColor(int, const class QColor &)
+extern "C"
+void C_ZN7QTabBar15setTabTextColorEiRK6QColor(void *this_, int index, const QColor & color) {
+  ((QTabBar*)this_)->setTabTextColor(index, color);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:114
+// QIcon tabIcon(int)
+extern "C"
+void C_ZNK7QTabBar7tabIconEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabIcon(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:115
+// void setTabIcon(int, const class QIcon &)
+extern "C"
+void C_ZN7QTabBar10setTabIconEiRK5QIcon(void *this_, int index, const QIcon & icon) {
+  ((QTabBar*)this_)->setTabIcon(index, icon);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:117
+// Qt::TextElideMode elideMode()
+extern "C"
+void C_ZNK7QTabBar9elideModeEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->elideMode();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:118
+// void setElideMode(Qt::TextElideMode)
+extern "C"
+void C_ZN7QTabBar12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode a0) {
+  ((QTabBar*)this_)->setElideMode(a0);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:121
+// void setTabToolTip(int, const class QString &)
+extern "C"
+void C_ZN7QTabBar13setTabToolTipEiRK7QString(void *this_, int index, const QString & tip) {
+  ((QTabBar*)this_)->setTabToolTip(index, tip);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:122
+// QString tabToolTip(int)
+extern "C"
+void C_ZNK7QTabBar10tabToolTipEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabToolTip(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:126
+// void setTabWhatsThis(int, const class QString &)
+extern "C"
+void C_ZN7QTabBar15setTabWhatsThisEiRK7QString(void *this_, int index, const QString & text) {
+  ((QTabBar*)this_)->setTabWhatsThis(index, text);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:127
+// QString tabWhatsThis(int)
+extern "C"
+void C_ZNK7QTabBar12tabWhatsThisEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabWhatsThis(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:130
+// void setTabData(int, const class QVariant &)
+extern "C"
+void C_ZN7QTabBar10setTabDataEiRK8QVariant(void *this_, int index, const QVariant & data) {
+  ((QTabBar*)this_)->setTabData(index, data);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:131
+// QVariant tabData(int)
+extern "C"
+void C_ZNK7QTabBar7tabDataEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabData(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:133
+// QRect tabRect(int)
+extern "C"
+void C_ZNK7QTabBar7tabRectEi(void *this_, int index) {
+  /*return*/ ((QTabBar*)this_)->tabRect(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:134
+// int tabAt(const class QPoint &)
+extern "C"
+void C_ZNK7QTabBar5tabAtERK6QPoint(void *this_, const QPoint & pos) {
+  /*return*/ ((QTabBar*)this_)->tabAt(pos);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:136
+// int currentIndex()
+extern "C"
+void C_ZNK7QTabBar12currentIndexEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->currentIndex();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:137
+// int count()
+extern "C"
+void C_ZNK7QTabBar5countEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->count();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qtabbar.h:139
+// QSize sizeHint()
+extern "C"
+void C_ZNK7QTabBar8sizeHintEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->sizeHint();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qtabbar.h:140
+// QSize minimumSizeHint()
+extern "C"
+void C_ZNK7QTabBar15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->minimumSizeHint();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:142
+// void setDrawBase(_Bool)
+extern "C"
+void C_ZN7QTabBar11setDrawBaseEb(void *this_, bool drawTheBase) {
+  ((QTabBar*)this_)->setDrawBase(drawTheBase);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:143
+// bool drawBase()
+extern "C"
+void C_ZNK7QTabBar8drawBaseEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->drawBase();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:145
+// QSize iconSize()
+extern "C"
+void C_ZNK7QTabBar8iconSizeEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->iconSize();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:146
+// void setIconSize(const class QSize &)
+extern "C"
+void C_ZN7QTabBar11setIconSizeERK5QSize(void *this_, const QSize & size) {
+  ((QTabBar*)this_)->setIconSize(size);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:148
+// bool usesScrollButtons()
+extern "C"
+void C_ZNK7QTabBar17usesScrollButtonsEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->usesScrollButtons();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:149
+// void setUsesScrollButtons(_Bool)
+extern "C"
+void C_ZN7QTabBar20setUsesScrollButtonsEb(void *this_, bool useButtons) {
+  ((QTabBar*)this_)->setUsesScrollButtons(useButtons);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:151
+// bool tabsClosable()
+extern "C"
+void C_ZNK7QTabBar12tabsClosableEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->tabsClosable();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:152
+// void setTabsClosable(_Bool)
+extern "C"
+void C_ZN7QTabBar15setTabsClosableEb(void *this_, bool closable) {
+  ((QTabBar*)this_)->setTabsClosable(closable);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:154
+// void setTabButton(int, enum QTabBar::ButtonPosition, class QWidget *)
+extern "C"
+void C_ZN7QTabBar12setTabButtonEiNS_14ButtonPositionEP7QWidget(void *this_, int index, QTabBar::ButtonPosition position, QWidget * widget) {
+  ((QTabBar*)this_)->setTabButton(index, position, widget);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:155
+// QWidget * tabButton(int, enum QTabBar::ButtonPosition)
+extern "C"
+void C_ZNK7QTabBar9tabButtonEiNS_14ButtonPositionE(void *this_, int index, QTabBar::ButtonPosition position) {
+  /*return*/ ((QTabBar*)this_)->tabButton(index, position);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:157
+// QTabBar::SelectionBehavior selectionBehaviorOnRemove()
+extern "C"
+void C_ZNK7QTabBar25selectionBehaviorOnRemoveEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->selectionBehaviorOnRemove();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:158
+// void setSelectionBehaviorOnRemove(enum QTabBar::SelectionBehavior)
+extern "C"
+void C_ZN7QTabBar28setSelectionBehaviorOnRemoveENS_17SelectionBehaviorE(void *this_, QTabBar::SelectionBehavior behavior) {
+  ((QTabBar*)this_)->setSelectionBehaviorOnRemove(behavior);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:160
+// bool expanding()
+extern "C"
+void C_ZNK7QTabBar9expandingEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->expanding();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:161
+// void setExpanding(_Bool)
+extern "C"
+void C_ZN7QTabBar12setExpandingEb(void *this_, bool enabled) {
+  ((QTabBar*)this_)->setExpanding(enabled);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:163
+// bool isMovable()
+extern "C"
+void C_ZNK7QTabBar9isMovableEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->isMovable();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:164
+// void setMovable(_Bool)
+extern "C"
+void C_ZN7QTabBar10setMovableEb(void *this_, bool movable) {
+  ((QTabBar*)this_)->setMovable(movable);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:166
+// bool documentMode()
+extern "C"
+void C_ZNK7QTabBar12documentModeEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->documentMode();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:167
+// void setDocumentMode(_Bool)
+extern "C"
+void C_ZN7QTabBar15setDocumentModeEb(void *this_, bool set) {
+  ((QTabBar*)this_)->setDocumentMode(set);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:169
+// bool autoHide()
+extern "C"
+void C_ZNK7QTabBar8autoHideEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->autoHide();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:170
+// void setAutoHide(_Bool)
+extern "C"
+void C_ZN7QTabBar11setAutoHideEb(void *this_, bool hide) {
+  ((QTabBar*)this_)->setAutoHide(hide);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:172
+// bool changeCurrentOnDrag()
+extern "C"
+void C_ZNK7QTabBar19changeCurrentOnDragEv(void *this_) {
+  /*return*/ ((QTabBar*)this_)->changeCurrentOnDrag();
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:173
+// void setChangeCurrentOnDrag(_Bool)
+extern "C"
+void C_ZN7QTabBar22setChangeCurrentOnDragEb(void *this_, bool change) {
+  ((QTabBar*)this_)->setChangeCurrentOnDrag(change);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:176
+// void setCurrentIndex(int)
+extern "C"
+void C_ZN7QTabBar15setCurrentIndexEi(void *this_, int index) {
+  ((QTabBar*)this_)->setCurrentIndex(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:179
+// void currentChanged(int)
+extern "C"
+void C_ZN7QTabBar14currentChangedEi(void *this_, int index) {
+  ((QTabBar*)this_)->currentChanged(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:180
+// void tabCloseRequested(int)
+extern "C"
+void C_ZN7QTabBar17tabCloseRequestedEi(void *this_, int index) {
+  ((QTabBar*)this_)->tabCloseRequested(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:181
+// void tabMoved(int, int)
+extern "C"
+void C_ZN7QTabBar8tabMovedEii(void *this_, int from, int to) {
+  ((QTabBar*)this_)->tabMoved(from, to);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:182
+// void tabBarClicked(int)
+extern "C"
+void C_ZN7QTabBar13tabBarClickedEi(void *this_, int index) {
+  ((QTabBar*)this_)->tabBarClicked(index);
+}
+// /usr/include/qt/QtWidgets/qtabbar.h:183
+// void tabBarDoubleClicked(int)
+extern "C"
+void C_ZN7QTabBar19tabBarDoubleClickedEi(void *this_, int index) {
+  ((QTabBar*)this_)->tabBarDoubleClicked(index);
+}

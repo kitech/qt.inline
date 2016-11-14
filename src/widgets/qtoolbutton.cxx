@@ -1,258 +1,122 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qtoolbutton.h
-// dst-file: /src/widgets/qtoolbutton.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qtoolbutton.h
 #include <qtoolbutton.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtoolbutton_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbutton.h:56
+// const QMetaObject * metaObject()
 extern "C"
-int QToolButton_Class_Size()
-{
-  return sizeof(QToolButton);
+void C_ZNK11QToolButton10metaObjectEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 94, column 10>
-//   // proto:  void QToolButton::setAutoRaise(bool enable);
-// _ZN11QToolButton12setAutoRaiseEb setAutoRaise(_Bool)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:73
+// void QToolButton(class QWidget *)
 extern "C"
-void
-C_ZN11QToolButton12setAutoRaiseEb(void *qthis,
-bool arg1) {
-  ((QToolButton*)qthis)->setAutoRaise(arg1);
+void* C_ZN11QToolButtonC1EP7QWidget(QWidget * parent) {
+  return new QToolButton(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 92, column 14>
-//   // proto:  QAction * QToolButton::defaultAction();
-// _ZNK11QToolButton13defaultActionEv defaultAction()
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbutton.h:74
+// void ~QToolButton()
 extern "C"
-void*
-C_ZNK11QToolButton13defaultActionEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->defaultAction();
-  return (void*)ret;
+void C_ZN11QToolButtonD1Ev(void *this_) {
+  delete (QToolButton*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 105, column 10>
-//   // proto:  void QToolButton::triggered(QAction * );
-// _ZN11QToolButton9triggeredEP7QAction triggered(class QAction *)
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbutton.h:76
+// QSize sizeHint()
 extern "C"
-void
-C_ZN11QToolButton9triggeredEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QToolButton*)qthis)->triggered(arg1);
+void C_ZNK11QToolButton8sizeHintEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 56, column 5>
-//   // proto:  const QMetaObject * QToolButton::metaObject();
-// _ZNK11QToolButton10metaObjectEv metaObject()
+// virtual
+// /usr/include/qt/QtWidgets/qtoolbutton.h:77
+// QSize minimumSizeHint()
 extern "C"
-void*
-C_ZNK11QToolButton10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK11QToolButton15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->minimumSizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 77, column 11>
-//   // proto:  QSize QToolButton::minimumSizeHint();
-// _ZNK11QToolButton15minimumSizeHintEv minimumSizeHint()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:79
+// Qt::ToolButtonStyle toolButtonStyle()
 extern "C"
-QSize*
-C_ZNK11QToolButton15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
+void C_ZNK11QToolButton15toolButtonStyleEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->toolButtonStyle();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 82, column 10>
-//   // proto:  void QToolButton::setArrowType(Qt::ArrowType type);
-// _ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE setArrowType(Qt::ArrowType)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:81
+// Qt::ArrowType arrowType()
 extern "C"
-void
-C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *qthis,
-Qt::ArrowType* arg1) {
-  ((QToolButton*)qthis)->setArrowType(*((Qt::ArrowType*)arg1));
+void C_ZNK11QToolButton9arrowTypeEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->arrowType();
 }
-//   // proto:  void QToolButton::~QToolButton();
+// /usr/include/qt/QtWidgets/qtoolbutton.h:82
+// void setArrowType(Qt::ArrowType)
 extern "C"
-void C_ZN11QToolButtonD2Ev(void *qthis) {
-  delete (QToolButton*)qthis;
+void C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *this_, Qt::ArrowType type) {
+  ((QToolButton*)this_)->setArrowType(type);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 99, column 10>
-//   // proto:  void QToolButton::showMenu();
-// _ZN11QToolButton8showMenuEv showMenu()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:85
+// void setMenu(class QMenu *)
 extern "C"
-void
-C_ZN11QToolButton8showMenuEv(void *qthis) {
-  ((QToolButton*)qthis)->showMenu();
+void C_ZN11QToolButton7setMenuEP5QMenu(void *this_, QMenu * menu) {
+  ((QToolButton*)this_)->setMenu(menu);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 79, column 25>
-//   // proto:  Qt::ToolButtonStyle QToolButton::toolButtonStyle();
-// _ZNK11QToolButton15toolButtonStyleEv toolButtonStyle()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:86
+// QMenu * menu()
 extern "C"
-Qt::ToolButtonStyle
-C_ZNK11QToolButton15toolButtonStyleEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->toolButtonStyle();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK11QToolButton4menuEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->menu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 101, column 10>
-//   // proto:  void QToolButton::setToolButtonStyle(Qt::ToolButtonStyle style);
-// _ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE setToolButtonStyle(Qt::ToolButtonStyle)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:88
+// void setPopupMode(enum QToolButton::ToolButtonPopupMode)
 extern "C"
-void
-C_ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *qthis,
-Qt::ToolButtonStyle* arg1) {
-  ((QToolButton*)qthis)->setToolButtonStyle(*((Qt::ToolButtonStyle*)arg1));
+void C_ZN11QToolButton12setPopupModeENS_19ToolButtonPopupModeE(void *this_, QToolButton::ToolButtonPopupMode mode) {
+  ((QToolButton*)this_)->setPopupMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 76, column 11>
-//   // proto:  QSize QToolButton::sizeHint();
-// _ZNK11QToolButton8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:89
+// QToolButton::ToolButtonPopupMode popupMode()
 extern "C"
-QSize*
-C_ZNK11QToolButton8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZNK11QToolButton9popupModeEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->popupMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 95, column 10>
-//   // proto:  bool QToolButton::autoRaise();
-// _ZNK11QToolButton9autoRaiseEv autoRaise()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:92
+// QAction * defaultAction()
 extern "C"
-bool
-C_ZNK11QToolButton9autoRaiseEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->autoRaise();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QToolButton13defaultActionEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->defaultAction();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 88, column 10>
-//   // proto:  void QToolButton::setPopupMode(QToolButton::ToolButtonPopupMode mode);
-// _ZN11QToolButton12setPopupModeENS_19ToolButtonPopupModeE setPopupMode(enum QToolButton::ToolButtonPopupMode)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:94
+// void setAutoRaise(_Bool)
 extern "C"
-void
-C_ZN11QToolButton12setPopupModeENS_19ToolButtonPopupModeE(void *qthis,
-QToolButton::ToolButtonPopupMode arg1) {
-  ((QToolButton*)qthis)->setPopupMode(arg1);
+void C_ZN11QToolButton12setAutoRaiseEb(void *this_, bool enable) {
+  ((QToolButton*)this_)->setAutoRaise(enable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 86, column 12>
-//   // proto:  QMenu * QToolButton::menu();
-// _ZNK11QToolButton4menuEv menu()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:95
+// bool autoRaise()
 extern "C"
-void*
-C_ZNK11QToolButton4menuEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->menu();
-  return (void*)ret;
+void C_ZNK11QToolButton9autoRaiseEv(void *this_) {
+  /*return*/ ((QToolButton*)this_)->autoRaise();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 85, column 10>
-//   // proto:  void QToolButton::setMenu(QMenu * menu);
-// _ZN11QToolButton7setMenuEP5QMenu setMenu(class QMenu *)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:99
+// void showMenu()
 extern "C"
-void
-C_ZN11QToolButton7setMenuEP5QMenu(void *qthis,
-QMenu * arg1) {
-  ((QToolButton*)qthis)->setMenu(arg1);
+void C_ZN11QToolButton8showMenuEv(void *this_) {
+  ((QToolButton*)this_)->showMenu();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 73, column 14>
-//   // proto:  void QToolButton::QToolButton(QWidget * parent);
+// /usr/include/qt/QtWidgets/qtoolbutton.h:101
+// void setToolButtonStyle(Qt::ToolButtonStyle)
 extern "C"
-QToolButton*
-C_ZN11QToolButtonC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QToolButton(arg1);
-  return ret;
+void C_ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle style) {
+  ((QToolButton*)this_)->setToolButtonStyle(style);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 89, column 25>
-//   // proto:  QToolButton::ToolButtonPopupMode QToolButton::popupMode();
-// _ZNK11QToolButton9popupModeEv popupMode()
+// /usr/include/qt/QtWidgets/qtoolbutton.h:102
+// void setDefaultAction(class QAction *)
 extern "C"
-QToolButton::ToolButtonPopupMode
-C_ZNK11QToolButton9popupModeEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->popupMode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QToolButton16setDefaultActionEP7QAction(void *this_, QAction * a0) {
+  ((QToolButton*)this_)->setDefaultAction(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 102, column 10>
-//   // proto:  void QToolButton::setDefaultAction(QAction * );
-// _ZN11QToolButton16setDefaultActionEP7QAction setDefaultAction(class QAction *)
+// /usr/include/qt/QtWidgets/qtoolbutton.h:105
+// void triggered(class QAction *)
 extern "C"
-void
-C_ZN11QToolButton16setDefaultActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QToolButton*)qthis)->setDefaultAction(arg1);
+void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * a0) {
+  ((QToolButton*)this_)->triggered(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qtoolbutton.h', line 81, column 19>
-//   // proto:  Qt::ArrowType QToolButton::arrowType();
-// _ZNK11QToolButton9arrowTypeEv arrowType()
-extern "C"
-Qt::ArrowType
-C_ZNK11QToolButton9arrowTypeEv(void *qthis) {
-  auto ret =
-  ((QToolButton*)qthis)->arrowType();
-  return ret; // 0 TypeKind.ENUM
-}
-// <= ext block end
-
-// body block begin =>
-// QToolButton_SlotProxy here
-class QToolButton_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QToolButton_SlotProxy():QObject(){}
-
-public slots:
-  // triggered(class QAction *)
-  void slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0);
-public:
-  void (*slot_func__ZN11QToolButton9triggeredEP7QAction)(void* rsfptr, QAction * arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qtoolbutton.moc"
-
-extern "C" {
-  QToolButton_SlotProxy* QToolButton_SlotProxy_new()
-  {
-    return new QToolButton_SlotProxy();
-  }
-};
-
-void QToolButton_SlotProxy::slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0) {
-  if (this->slot_func__ZN11QToolButton9triggeredEP7QAction != NULL) {
-    // do smth...
-    this->slot_func__ZN11QToolButton9triggeredEP7QAction(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QToolButton_SlotProxy_connect__ZN11QToolButton9triggeredEP7QAction(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QToolButton_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN11QToolButton9triggeredEP7QAction = (decltype(that->slot_func__ZN11QToolButton9triggeredEP7QAction))ffifptr;
-  QObject::connect((QToolButton*)sender, SIGNAL(triggered(class QAction *)), that, SLOT(slot_proxy_func__ZN11QToolButton9triggeredEP7QAction(QAction * arg0)));
-  return that;
-}
-extern "C"
-void QToolButton_SlotProxy_disconnect__ZN11QToolButton9triggeredEP7QAction(QToolButton_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

@@ -1,118 +1,48 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qobjectcleanuphandler.h
-// dst-file: /src/core/qobjectcleanuphandler.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h
 #include <qobjectcleanuphandler.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qobjectcleanuphandler_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:50
+// const QMetaObject * metaObject()
 extern "C"
-int QObjectCleanupHandler_Class_Size()
-{
-  return sizeof(QObjectCleanupHandler);
+void C_ZNK21QObjectCleanupHandler10metaObjectEv(void *this_) {
+  /*return*/ ((QObjectCleanupHandler*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 59, column 10>
-//   // proto:  void QObjectCleanupHandler::clear();
-// _ZN21QObjectCleanupHandler5clearEv clear()
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:53
+// void QObjectCleanupHandler()
 extern "C"
-void
-C_ZN21QObjectCleanupHandler5clearEv(void *qthis) {
-  ((QObjectCleanupHandler*)qthis)->clear();
+void* C_ZN21QObjectCleanupHandlerC1Ev() {
+  return new QObjectCleanupHandler();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 58, column 10>
-//   // proto:  bool QObjectCleanupHandler::isEmpty();
-// _ZNK21QObjectCleanupHandler7isEmptyEv isEmpty()
+// virtual
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:54
+// void ~QObjectCleanupHandler()
 extern "C"
-bool
-C_ZNK21QObjectCleanupHandler7isEmptyEv(void *qthis) {
-  auto ret =
-  ((QObjectCleanupHandler*)qthis)->isEmpty();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN21QObjectCleanupHandlerD1Ev(void *this_) {
+  delete (QObjectCleanupHandler*)(this_);
 }
-//   // proto:  void QObjectCleanupHandler::~QObjectCleanupHandler();
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:56
+// QObject * add(class QObject *)
 extern "C"
-void C_ZN21QObjectCleanupHandlerD2Ev(void *qthis) {
-  delete (QObjectCleanupHandler*)qthis;
+void C_ZN21QObjectCleanupHandler3addEP7QObject(void *this_, QObject * object) {
+  /*return*/ ((QObjectCleanupHandler*)this_)->add(object);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 50, column 5>
-//   // proto:  const QMetaObject * QObjectCleanupHandler::metaObject();
-// _ZNK21QObjectCleanupHandler10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:57
+// void remove(class QObject *)
 extern "C"
-void*
-C_ZNK21QObjectCleanupHandler10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QObjectCleanupHandler*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN21QObjectCleanupHandler6removeEP7QObject(void *this_, QObject * object) {
+  ((QObjectCleanupHandler*)this_)->remove(object);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 57, column 10>
-//   // proto:  void QObjectCleanupHandler::remove(QObject * object);
-// _ZN21QObjectCleanupHandler6removeEP7QObject remove(class QObject *)
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:58
+// bool isEmpty()
 extern "C"
-void
-C_ZN21QObjectCleanupHandler6removeEP7QObject(void *qthis,
-QObject * arg1) {
-  ((QObjectCleanupHandler*)qthis)->remove(arg1);
+void C_ZNK21QObjectCleanupHandler7isEmptyEv(void *this_) {
+  /*return*/ ((QObjectCleanupHandler*)this_)->isEmpty();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 56, column 14>
-//   // proto:  QObject * QObjectCleanupHandler::add(QObject * object);
-// _ZN21QObjectCleanupHandler3addEP7QObject add(class QObject *)
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:59
+// void clear()
 extern "C"
-void*
-C_ZN21QObjectCleanupHandler3addEP7QObject(void *qthis,
-QObject * arg1) {
-  auto ret =
-  ((QObjectCleanupHandler*)qthis)->add(arg1);
-  return (void*)ret;
+void C_ZN21QObjectCleanupHandler5clearEv(void *this_) {
+  ((QObjectCleanupHandler*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qobjectcleanuphandler.h', line 53, column 5>
-//   // proto:  void QObjectCleanupHandler::QObjectCleanupHandler();
-extern "C"
-QObjectCleanupHandler*
-C_ZN21QObjectCleanupHandlerC2Ev() {
-  auto ret = new QObjectCleanupHandler();
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QObjectCleanupHandler_SlotProxy here
-class QObjectCleanupHandler_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QObjectCleanupHandler_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qobjectcleanuphandler.moc"
-
-extern "C" {
-  QObjectCleanupHandler_SlotProxy* QObjectCleanupHandler_SlotProxy_new()
-  {
-    return new QObjectCleanupHandler_SlotProxy();
-  }
-};
-
-// <= body block end
-

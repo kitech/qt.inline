@@ -1,456 +1,258 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qsurfaceformat.h
-// dst-file: /src/gui/qsurfaceformat.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qsurfaceformat.h
 #include <qsurfaceformat.h>
+#include <QtGui>
 
-
-#include <qpair.h>
-#include <qmetatype.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qsurfaceformat_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 126, column 10>
-//   // proto:  bool QSurfaceFormat::stereo();
-if (true) {
-  auto f = [](QSurfaceFormat flythis) {
-    ((QSurfaceFormat*)0)->stereo();
-    flythis.stereo();
-  };
-  if (f == nullptr){}
-}
-// _ZNK14QSurfaceFormat6stereoEv stereo()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qsurfaceformat.h:82
+// void QSurfaceFormat()
 extern "C"
-int QSurfaceFormat_Class_Size()
-{
-  return sizeof(QSurfaceFormat);
+void* C_ZN14QSurfaceFormatC1Ev() {
+  return new QSurfaceFormat();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 143, column 27>
-//   // proto: static QSurfaceFormat QSurfaceFormat::defaultFormat();
-// _ZN14QSurfaceFormat13defaultFormatEv defaultFormat()
+// /usr/include/qt/QtGui/qsurfaceformat.h:83
+// void QSurfaceFormat(FormatOptions)
 extern "C"
-QSurfaceFormat*
-C_ZN14QSurfaceFormat13defaultFormatEv() {
-  auto ret =
-  QSurfaceFormat::defaultFormat();
-  return new QSurfaceFormat(ret); // 5
+void* C_ZN14QSurfaceFormatC1E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::FormatOption> options) {
+  return new QSurfaceFormat(options);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 100, column 10>
-//   // proto:  void QSurfaceFormat::setAlphaBufferSize(int size);
-// _ZN14QSurfaceFormat18setAlphaBufferSizeEi setAlphaBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:86
+// void ~QSurfaceFormat()
 extern "C"
-void
-C_ZN14QSurfaceFormat18setAlphaBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setAlphaBufferSize(arg1);
+void C_ZN14QSurfaceFormatD1Ev(void *this_) {
+  delete (QSurfaceFormat*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 120, column 10>
-//   // proto:  void QSurfaceFormat::setMinorVersion(int minorVersion);
-// _ZN14QSurfaceFormat15setMinorVersionEi setMinorVersion(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:88
+// void setDepthBufferSize(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat15setMinorVersionEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setMinorVersion(arg1);
+void C_ZN14QSurfaceFormat18setDepthBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setDepthBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 92, column 9>
-//   // proto:  int QSurfaceFormat::stencilBufferSize();
-// _ZNK14QSurfaceFormat17stencilBufferSizeEv stencilBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:89
+// int depthBufferSize()
 extern "C"
-int
-C_ZNK14QSurfaceFormat17stencilBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->stencilBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZNK14QSurfaceFormat15depthBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->depthBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 94, column 10>
-//   // proto:  void QSurfaceFormat::setRedBufferSize(int size);
-// _ZN14QSurfaceFormat16setRedBufferSizeEi setRedBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:91
+// void setStencilBufferSize(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat16setRedBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setRedBufferSize(arg1);
+void C_ZN14QSurfaceFormat20setStencilBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setStencilBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 136, column 10>
-//   // proto:  bool QSurfaceFormat::testOption(QSurfaceFormat::FormatOption option);
-// _ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE testOption(enum QSurfaceFormat::FormatOption)
+// /usr/include/qt/QtGui/qsurfaceformat.h:92
+// int stencilBufferSize()
 extern "C"
-bool
-C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *qthis,
-QSurfaceFormat::FormatOption arg1) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->testOption(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK14QSurfaceFormat17stencilBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->stencilBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 88, column 10>
-//   // proto:  void QSurfaceFormat::setDepthBufferSize(int size);
-// _ZN14QSurfaceFormat18setDepthBufferSizeEi setDepthBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:94
+// void setRedBufferSize(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat18setDepthBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setDepthBufferSize(arg1);
+void C_ZN14QSurfaceFormat16setRedBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setRedBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 118, column 9>
-//   // proto:  int QSurfaceFormat::majorVersion();
-// _ZNK14QSurfaceFormat12majorVersionEv majorVersion()
+// /usr/include/qt/QtGui/qsurfaceformat.h:95
+// int redBufferSize()
 extern "C"
-int
-C_ZNK14QSurfaceFormat12majorVersionEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->majorVersion();
-  return ret; // 0 TypeKind.INT
+void C_ZNK14QSurfaceFormat13redBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->redBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 103, column 10>
-//   // proto:  void QSurfaceFormat::setSamples(int numSamples);
-// _ZN14QSurfaceFormat10setSamplesEi setSamples(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:96
+// void setGreenBufferSize(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat10setSamplesEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setSamples(arg1);
+void C_ZN14QSurfaceFormat18setGreenBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setGreenBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 106, column 10>
-//   // proto:  void QSurfaceFormat::setSwapBehavior(QSurfaceFormat::SwapBehavior behavior);
-// _ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE setSwapBehavior(enum QSurfaceFormat::SwapBehavior)
+// /usr/include/qt/QtGui/qsurfaceformat.h:97
+// int greenBufferSize()
 extern "C"
-void
-C_ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE(void *qthis,
-QSurfaceFormat::SwapBehavior arg1) {
-  ((QSurfaceFormat*)qthis)->setSwapBehavior(arg1);
+void C_ZNK14QSurfaceFormat15greenBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->greenBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 117, column 10>
-//   // proto:  void QSurfaceFormat::setMajorVersion(int majorVersion);
-// _ZN14QSurfaceFormat15setMajorVersionEi setMajorVersion(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:98
+// void setBlueBufferSize(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat15setMajorVersionEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setMajorVersion(arg1);
+void C_ZN14QSurfaceFormat17setBlueBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setBlueBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 142, column 17>
-//   // proto: static void QSurfaceFormat::setDefaultFormat(const QSurfaceFormat & format);
-// _ZN14QSurfaceFormat16setDefaultFormatERKS_ setDefaultFormat(const class QSurfaceFormat &)
+// /usr/include/qt/QtGui/qsurfaceformat.h:99
+// int blueBufferSize()
 extern "C"
-void
-C_ZN14QSurfaceFormat16setDefaultFormatERKS_(const QSurfaceFormat* arg1) {
-  QSurfaceFormat::setDefaultFormat(*((const QSurfaceFormat*)arg1));
+void C_ZNK14QSurfaceFormat14blueBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->blueBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 97, column 9>
-//   // proto:  int QSurfaceFormat::greenBufferSize();
-// _ZNK14QSurfaceFormat15greenBufferSizeEv greenBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:100
+// void setAlphaBufferSize(int)
 extern "C"
-int
-C_ZNK14QSurfaceFormat15greenBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->greenBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN14QSurfaceFormat18setAlphaBufferSizeEi(void *this_, int size) {
+  ((QSurfaceFormat*)this_)->setAlphaBufferSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 121, column 9>
-//   // proto:  int QSurfaceFormat::minorVersion();
-// _ZNK14QSurfaceFormat12minorVersionEv minorVersion()
+// /usr/include/qt/QtGui/qsurfaceformat.h:101
+// int alphaBufferSize()
 extern "C"
-int
-C_ZNK14QSurfaceFormat12minorVersionEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->minorVersion();
-  return ret; // 0 TypeKind.INT
+void C_ZNK14QSurfaceFormat15alphaBufferSizeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->alphaBufferSize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 114, column 10>
-//   // proto:  void QSurfaceFormat::setRenderableType(QSurfaceFormat::RenderableType type);
-// _ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE setRenderableType(enum QSurfaceFormat::RenderableType)
+// /usr/include/qt/QtGui/qsurfaceformat.h:103
+// void setSamples(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *qthis,
-QSurfaceFormat::RenderableType arg1) {
-  ((QSurfaceFormat*)qthis)->setRenderableType(arg1);
+void C_ZN14QSurfaceFormat10setSamplesEi(void *this_, int numSamples) {
+  ((QSurfaceFormat*)this_)->setSamples(numSamples);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 91, column 10>
-//   // proto:  void QSurfaceFormat::setStencilBufferSize(int size);
-// _ZN14QSurfaceFormat20setStencilBufferSizeEi setStencilBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:104
+// int samples()
 extern "C"
-void
-C_ZN14QSurfaceFormat20setStencilBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setStencilBufferSize(arg1);
+void C_ZNK14QSurfaceFormat7samplesEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->samples();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 130, column 24>
-//   // proto:  void QSurfaceFormat::setOption(QSurfaceFormat::FormatOptions opt);
-// _ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE setOption(class QSurfaceFormat::FormatOptions)
+// /usr/include/qt/QtGui/qsurfaceformat.h:106
+// void setSwapBehavior(enum QSurfaceFormat::SwapBehavior)
 extern "C"
-void
-C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *qthis,
-QSurfaceFormat::FormatOptions* arg1) {
-  ((QSurfaceFormat*)qthis)->setOption(*((QSurfaceFormat::FormatOptions*)arg1));
+void C_ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE(void *this_, QSurfaceFormat::SwapBehavior behavior) {
+  ((QSurfaceFormat*)this_)->setSwapBehavior(behavior);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 139, column 9>
-//   // proto:  int QSurfaceFormat::swapInterval();
-// _ZNK14QSurfaceFormat12swapIntervalEv swapInterval()
+// /usr/include/qt/QtGui/qsurfaceformat.h:107
+// QSurfaceFormat::SwapBehavior swapBehavior()
 extern "C"
-int
-C_ZNK14QSurfaceFormat12swapIntervalEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->swapInterval();
-  return ret; // 0 TypeKind.INT
+void C_ZNK14QSurfaceFormat12swapBehaviorEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->swapBehavior();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 124, column 10>
-//   // proto:  void QSurfaceFormat::setVersion(int major, int minor);
-// _ZN14QSurfaceFormat10setVersionEii setVersion(int, int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:109
+// bool hasAlpha()
 extern "C"
-void
-C_ZN14QSurfaceFormat10setVersionEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QSurfaceFormat*)qthis)->setVersion(arg1,
-arg2);
+void C_ZNK14QSurfaceFormat8hasAlphaEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->hasAlpha();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 111, column 10>
-//   // proto:  void QSurfaceFormat::setProfile(QSurfaceFormat::OpenGLContextProfile profile);
-// _ZN14QSurfaceFormat10setProfileENS_20OpenGLContextProfileE setProfile(enum QSurfaceFormat::OpenGLContextProfile)
+// /usr/include/qt/QtGui/qsurfaceformat.h:111
+// void setProfile(enum QSurfaceFormat::OpenGLContextProfile)
 extern "C"
-void
-C_ZN14QSurfaceFormat10setProfileENS_20OpenGLContextProfileE(void *qthis,
-QSurfaceFormat::OpenGLContextProfile arg1) {
-  ((QSurfaceFormat*)qthis)->setProfile(arg1);
+void C_ZN14QSurfaceFormat10setProfileENS_20OpenGLContextProfileE(void *this_, QSurfaceFormat::OpenGLContextProfile profile) {
+  ((QSurfaceFormat*)this_)->setProfile(profile);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 109, column 10>
-//   // proto:  bool QSurfaceFormat::hasAlpha();
-// _ZNK14QSurfaceFormat8hasAlphaEv hasAlpha()
+// /usr/include/qt/QtGui/qsurfaceformat.h:112
+// QSurfaceFormat::OpenGLContextProfile profile()
 extern "C"
-bool
-C_ZNK14QSurfaceFormat8hasAlphaEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->hasAlpha();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK14QSurfaceFormat7profileEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->profile();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 84, column 5>
-//   // proto:  void QSurfaceFormat::QSurfaceFormat(const QSurfaceFormat & other);
+// /usr/include/qt/QtGui/qsurfaceformat.h:114
+// void setRenderableType(enum QSurfaceFormat::RenderableType)
 extern "C"
-QSurfaceFormat*
-C_ZN14QSurfaceFormatC2ERKS_(const QSurfaceFormat* arg1) {
-  auto ret = new QSurfaceFormat(*((const QSurfaceFormat*)arg1));
-  return ret;
+void C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *this_, QSurfaceFormat::RenderableType type) {
+  ((QSurfaceFormat*)this_)->setRenderableType(type);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 123, column 21>
-//   // proto:  QPair<int, int> QSurfaceFormat::version();
-// _ZNK14QSurfaceFormat7versionEv version()
+// /usr/include/qt/QtGui/qsurfaceformat.h:115
+// QSurfaceFormat::RenderableType renderableType()
 extern "C"
-QPair<int, int>*
-C_ZNK14QSurfaceFormat7versionEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->version();
-  return new QPair<int, int>(ret); // 5
+void C_ZNK14QSurfaceFormat14renderableTypeEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->renderableType();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 99, column 9>
-//   // proto:  int QSurfaceFormat::blueBufferSize();
-// _ZNK14QSurfaceFormat14blueBufferSizeEv blueBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:117
+// void setMajorVersion(int)
 extern "C"
-int
-C_ZNK14QSurfaceFormat14blueBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->blueBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN14QSurfaceFormat15setMajorVersionEi(void *this_, int majorVersion) {
+  ((QSurfaceFormat*)this_)->setMajorVersion(majorVersion);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 115, column 20>
-//   // proto:  QSurfaceFormat::RenderableType QSurfaceFormat::renderableType();
-// _ZNK14QSurfaceFormat14renderableTypeEv renderableType()
+// /usr/include/qt/QtGui/qsurfaceformat.h:118
+// int majorVersion()
 extern "C"
-QSurfaceFormat::RenderableType
-C_ZNK14QSurfaceFormat14renderableTypeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->renderableType();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK14QSurfaceFormat12majorVersionEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->majorVersion();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 83, column 18>
-//   // proto:  void QSurfaceFormat::QSurfaceFormat(FormatOptions options);
+// /usr/include/qt/QtGui/qsurfaceformat.h:120
+// void setMinorVersion(int)
 extern "C"
-QSurfaceFormat*
-C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QSurfaceFormat::FormatOptions arg1) {
-  auto ret = new QSurfaceFormat(arg1);
-  return ret;
+void C_ZN14QSurfaceFormat15setMinorVersionEi(void *this_, int minorVersion) {
+  ((QSurfaceFormat*)this_)->setMinorVersion(minorVersion);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 112, column 26>
-//   // proto:  QSurfaceFormat::OpenGLContextProfile QSurfaceFormat::profile();
-// _ZNK14QSurfaceFormat7profileEv profile()
+// /usr/include/qt/QtGui/qsurfaceformat.h:121
+// int minorVersion()
 extern "C"
-QSurfaceFormat::OpenGLContextProfile
-C_ZNK14QSurfaceFormat7profileEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->profile();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK14QSurfaceFormat12minorVersionEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->minorVersion();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 134, column 10>
-//   // proto:  void QSurfaceFormat::setOptions(QSurfaceFormat::FormatOptions options);
-// _ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE setOptions(class QSurfaceFormat::FormatOptions)
+// /usr/include/qt/QtGui/qsurfaceformat.h:123
+// QPair<int, int> version()
 extern "C"
-void
-C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *qthis,
-QSurfaceFormat::FormatOptions* arg1) {
-  ((QSurfaceFormat*)qthis)->setOptions(*((QSurfaceFormat::FormatOptions*)arg1));
+void C_ZNK14QSurfaceFormat7versionEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->version();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 82, column 5>
-//   // proto:  void QSurfaceFormat::QSurfaceFormat();
+// /usr/include/qt/QtGui/qsurfaceformat.h:124
+// void setVersion(int, int)
 extern "C"
-QSurfaceFormat*
-C_ZN14QSurfaceFormatC2Ev() {
-  auto ret = new QSurfaceFormat();
-  return ret;
+void C_ZN14QSurfaceFormat10setVersionEii(void *this_, int major, int minor) {
+  ((QSurfaceFormat*)this_)->setVersion(major, minor);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 131, column 24>
-//   // proto:  bool QSurfaceFormat::testOption(QSurfaceFormat::FormatOptions opt);
-// _ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE testOption(class QSurfaceFormat::FormatOptions)
+// /usr/include/qt/QtGui/qsurfaceformat.h:126
+// bool stereo()
 extern "C"
-bool
-C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *qthis,
-QSurfaceFormat::FormatOptions* arg1) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->testOption(*((QSurfaceFormat::FormatOptions*)arg1));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK14QSurfaceFormat6stereoEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->stereo();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 95, column 9>
-//   // proto:  int QSurfaceFormat::redBufferSize();
-// _ZNK14QSurfaceFormat13redBufferSizeEv redBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:127
+// void setStereo(_Bool)
 extern "C"
-int
-C_ZNK14QSurfaceFormat13redBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->redBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN14QSurfaceFormat9setStereoEb(void *this_, bool enable) {
+  ((QSurfaceFormat*)this_)->setStereo(enable);
 }
-//   // proto:  void QSurfaceFormat::~QSurfaceFormat();
+// /usr/include/qt/QtGui/qsurfaceformat.h:130
+// void setOption(class QSurfaceFormat::FormatOptions)
 extern "C"
-void C_ZN14QSurfaceFormatD2Ev(void *qthis) {
-  delete (QSurfaceFormat*)qthis;
+void C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
+  ((QSurfaceFormat*)this_)->setOption(opt);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 96, column 10>
-//   // proto:  void QSurfaceFormat::setGreenBufferSize(int size);
-// _ZN14QSurfaceFormat18setGreenBufferSizeEi setGreenBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:131
+// bool testOption(class QSurfaceFormat::FormatOptions)
 extern "C"
-void
-C_ZN14QSurfaceFormat18setGreenBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setGreenBufferSize(arg1);
+void C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
+  /*return*/ ((QSurfaceFormat*)this_)->testOption(opt);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 104, column 9>
-//   // proto:  int QSurfaceFormat::samples();
-// _ZNK14QSurfaceFormat7samplesEv samples()
+// /usr/include/qt/QtGui/qsurfaceformat.h:134
+// void setOptions(class QSurfaceFormat::FormatOptions)
 extern "C"
-int
-C_ZNK14QSurfaceFormat7samplesEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->samples();
-  return ret; // 0 TypeKind.INT
+void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> options) {
+  ((QSurfaceFormat*)this_)->setOptions(options);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 89, column 9>
-//   // proto:  int QSurfaceFormat::depthBufferSize();
-// _ZNK14QSurfaceFormat15depthBufferSizeEv depthBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:135
+// void setOption(enum QSurfaceFormat::FormatOption, _Bool)
 extern "C"
-int
-C_ZNK14QSurfaceFormat15depthBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->depthBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb(void *this_, QSurfaceFormat::FormatOption option, bool on) {
+  ((QSurfaceFormat*)this_)->setOption(option, on);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 98, column 10>
-//   // proto:  void QSurfaceFormat::setBlueBufferSize(int size);
-// _ZN14QSurfaceFormat17setBlueBufferSizeEi setBlueBufferSize(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:136
+// bool testOption(enum QSurfaceFormat::FormatOption)
 extern "C"
-void
-C_ZN14QSurfaceFormat17setBlueBufferSizeEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setBlueBufferSize(arg1);
+void C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *this_, QSurfaceFormat::FormatOption option) {
+  /*return*/ ((QSurfaceFormat*)this_)->testOption(option);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 101, column 9>
-//   // proto:  int QSurfaceFormat::alphaBufferSize();
-// _ZNK14QSurfaceFormat15alphaBufferSizeEv alphaBufferSize()
+// /usr/include/qt/QtGui/qsurfaceformat.h:137
+// QSurfaceFormat::FormatOptions options()
 extern "C"
-int
-C_ZNK14QSurfaceFormat15alphaBufferSizeEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->alphaBufferSize();
-  return ret; // 0 TypeKind.INT
+void C_ZNK14QSurfaceFormat7optionsEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->options();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 126, column 10>
-//   // proto:  bool QSurfaceFormat::stereo();
-// _ZNK14QSurfaceFormat6stereoEv stereo()
+// /usr/include/qt/QtGui/qsurfaceformat.h:139
+// int swapInterval()
 extern "C"
-bool
-C_ZNK14QSurfaceFormat6stereoEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->stereo();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK14QSurfaceFormat12swapIntervalEv(void *this_) {
+  /*return*/ ((QSurfaceFormat*)this_)->swapInterval();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 140, column 10>
-//   // proto:  void QSurfaceFormat::setSwapInterval(int interval);
-// _ZN14QSurfaceFormat15setSwapIntervalEi setSwapInterval(int)
+// /usr/include/qt/QtGui/qsurfaceformat.h:140
+// void setSwapInterval(int)
 extern "C"
-void
-C_ZN14QSurfaceFormat15setSwapIntervalEi(void *qthis,
-int arg1) {
-  ((QSurfaceFormat*)qthis)->setSwapInterval(arg1);
+void C_ZN14QSurfaceFormat15setSwapIntervalEi(void *this_, int interval) {
+  ((QSurfaceFormat*)this_)->setSwapInterval(interval);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 135, column 10>
-//   // proto:  void QSurfaceFormat::setOption(QSurfaceFormat::FormatOption option, bool on);
-// _ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb setOption(enum QSurfaceFormat::FormatOption, _Bool)
+// static
+// /usr/include/qt/QtGui/qsurfaceformat.h:142
+// void setDefaultFormat(const class QSurfaceFormat &)
 extern "C"
-void
-C_ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb(void *qthis,
-QSurfaceFormat::FormatOption arg1,
-bool arg2) {
-  ((QSurfaceFormat*)qthis)->setOption(arg1,
-arg2);
+void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(const QSurfaceFormat & format) {
+  QSurfaceFormat::setDefaultFormat(format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 137, column 35>
-//   // proto:  QSurfaceFormat::FormatOptions QSurfaceFormat::options();
-// _ZNK14QSurfaceFormat7optionsEv options()
+// static
+// /usr/include/qt/QtGui/qsurfaceformat.h:143
+// QSurfaceFormat defaultFormat()
 extern "C"
-QFlags<QSurfaceFormat::FormatOption>*
-C_ZNK14QSurfaceFormat7optionsEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->options();
-  return new QFlags<QSurfaceFormat::FormatOption>(ret); // 5
+void C_ZN14QSurfaceFormat13defaultFormatEv() {
+  /*return*/ QSurfaceFormat::defaultFormat();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 107, column 18>
-//   // proto:  QSurfaceFormat::SwapBehavior QSurfaceFormat::swapBehavior();
-// _ZNK14QSurfaceFormat12swapBehaviorEv swapBehavior()
-extern "C"
-QSurfaceFormat::SwapBehavior
-C_ZNK14QSurfaceFormat12swapBehaviorEv(void *qthis) {
-  auto ret =
-  ((QSurfaceFormat*)qthis)->swapBehavior();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qsurfaceformat.h', line 127, column 10>
-//   // proto:  void QSurfaceFormat::setStereo(bool enable);
-// _ZN14QSurfaceFormat9setStereoEb setStereo(_Bool)
-extern "C"
-void
-C_ZN14QSurfaceFormat9setStereoEb(void *qthis,
-bool arg1) {
-  ((QSurfaceFormat*)qthis)->setStereo(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

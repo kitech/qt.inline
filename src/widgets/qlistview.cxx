@@ -1,452 +1,246 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qlistview.h
-// dst-file: /src/widgets/qlistview.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qlistview.h
 #include <qlistview.h>
+#include <QtWidgets>
 
-
-#include <qabstractitemmodel.h>
-#include <qsize.h>
-#include <qrect.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qlistview_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QListView_Class_Size()
-{
-  return sizeof(QListView);
+void C_ZNK9QListView10metaObjectEv(void *this_) {
+  /*return*/ ((QListView*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 129, column 10>
-//   // proto:  void QListView::scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint);
-// _ZN9QListView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
+// /usr/include/qt/QtWidgets/qlistview.h:81
+// void QListView(class QWidget *)
 extern "C"
-void
-C_ZN9QListView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *qthis,
-const QModelIndex* arg1,
-QAbstractItemView::ScrollHint arg2) {
-  ((QListView*)qthis)->scrollTo(*((const QModelIndex*)arg1),
-arg2);
+void* C_ZN9QListViewC1EP7QWidget(QWidget * parent) {
+  return new QListView(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 81, column 14>
-//   // proto:  void QListView::QListView(QWidget * parent);
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:82
+// void ~QListView()
 extern "C"
-QListView*
-C_ZN9QListViewC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QListView(arg1);
-  return ret;
+void C_ZN9QListViewD1Ev(void *this_) {
+  delete (QListView*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 122, column 10>
-//   // proto:  void QListView::setWordWrap(bool on);
-// _ZN9QListView11setWordWrapEb setWordWrap(_Bool)
+// /usr/include/qt/QtWidgets/qlistview.h:84
+// void setMovement(enum QListView::Movement)
 extern "C"
-void
-C_ZN9QListView11setWordWrapEb(void *qthis,
-bool arg1) {
-  ((QListView*)qthis)->setWordWrap(arg1);
+void C_ZN9QListView11setMovementENS_8MovementE(void *this_, QListView::Movement movement) {
+  ((QListView*)this_)->setMovement(movement);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 132, column 10>
-//   // proto:  void QListView::doItemsLayout();
-// _ZN9QListView13doItemsLayoutEv doItemsLayout()
+// /usr/include/qt/QtWidgets/qlistview.h:85
+// QListView::Movement movement()
 extern "C"
-void
-C_ZN9QListView13doItemsLayoutEv(void *qthis) {
-  ((QListView*)qthis)->doItemsLayout();
+void C_ZNK9QListView8movementEv(void *this_) {
+  /*return*/ ((QListView*)this_)->movement();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 100, column 9>
-//   // proto:  int QListView::spacing();
-// _ZNK9QListView7spacingEv spacing()
+// /usr/include/qt/QtWidgets/qlistview.h:87
+// void setFlow(enum QListView::Flow)
 extern "C"
-int
-C_ZNK9QListView7spacingEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->spacing();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QListView7setFlowENS_4FlowE(void *this_, QListView::Flow flow) {
+  ((QListView*)this_)->setFlow(flow);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 87, column 10>
-//   // proto:  void QListView::setFlow(QListView::Flow flow);
-// _ZN9QListView7setFlowENS_4FlowE setFlow(enum QListView::Flow)
+// /usr/include/qt/QtWidgets/qlistview.h:88
+// QListView::Flow flow()
 extern "C"
-void
-C_ZN9QListView7setFlowENS_4FlowE(void *qthis,
-QListView::Flow arg1) {
-  ((QListView*)qthis)->setFlow(arg1);
+void C_ZNK9QListView4flowEv(void *this_) {
+  /*return*/ ((QListView*)this_)->flow();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 105, column 10>
-//   // proto:  void QListView::setGridSize(const QSize & size);
-// _ZN9QListView11setGridSizeERK5QSize setGridSize(const class QSize &)
+// /usr/include/qt/QtWidgets/qlistview.h:90
+// void setWrapping(_Bool)
 extern "C"
-void
-C_ZN9QListView11setGridSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QListView*)qthis)->setGridSize(*((const QSize*)arg1));
+void C_ZN9QListView11setWrappingEb(void *this_, bool enable) {
+  ((QListView*)this_)->setWrapping(enable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 130, column 17>
-//   // proto:  QModelIndex QListView::indexAt(const QPoint & p);
-// _ZNK9QListView7indexAtERK6QPoint indexAt(const class QPoint &)
+// /usr/include/qt/QtWidgets/qlistview.h:91
+// bool isWrapping()
 extern "C"
-QModelIndex*
-C_ZNK9QListView7indexAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QListView*)qthis)->indexAt(*((const QPoint*)arg1));
-  return new QModelIndex(ret); // 5
+void C_ZNK9QListView10isWrappingEv(void *this_) {
+  /*return*/ ((QListView*)this_)->isWrapping();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 94, column 16>
-//   // proto:  QListView::ResizeMode QListView::resizeMode();
-// _ZNK9QListView10resizeModeEv resizeMode()
+// /usr/include/qt/QtWidgets/qlistview.h:93
+// void setResizeMode(enum QListView::ResizeMode)
 extern "C"
-QListView::ResizeMode
-C_ZNK9QListView10resizeModeEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->resizeMode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QListView13setResizeModeENS_10ResizeModeE(void *this_, QListView::ResizeMode mode) {
+  ((QListView*)this_)->setResizeMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 93, column 10>
-//   // proto:  void QListView::setResizeMode(QListView::ResizeMode mode);
-// _ZN9QListView13setResizeModeENS_10ResizeModeE setResizeMode(enum QListView::ResizeMode)
+// /usr/include/qt/QtWidgets/qlistview.h:94
+// QListView::ResizeMode resizeMode()
 extern "C"
-void
-C_ZN9QListView13setResizeModeENS_10ResizeModeE(void *qthis,
-QListView::ResizeMode arg1) {
-  ((QListView*)qthis)->setResizeMode(arg1);
+void C_ZNK9QListView10resizeModeEv(void *this_) {
+  /*return*/ ((QListView*)this_)->resizeMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 108, column 10>
-//   // proto:  void QListView::setViewMode(QListView::ViewMode mode);
-// _ZN9QListView11setViewModeENS_8ViewModeE setViewMode(enum QListView::ViewMode)
+// /usr/include/qt/QtWidgets/qlistview.h:96
+// void setLayoutMode(enum QListView::LayoutMode)
 extern "C"
-void
-C_ZN9QListView11setViewModeENS_8ViewModeE(void *qthis,
-QListView::ViewMode arg1) {
-  ((QListView*)qthis)->setViewMode(arg1);
+void C_ZN9QListView13setLayoutModeENS_10LayoutModeE(void *this_, QListView::LayoutMode mode) {
+  ((QListView*)this_)->setLayoutMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 90, column 10>
-//   // proto:  void QListView::setWrapping(bool enable);
-// _ZN9QListView11setWrappingEb setWrapping(_Bool)
+// /usr/include/qt/QtWidgets/qlistview.h:97
+// QListView::LayoutMode layoutMode()
 extern "C"
-void
-C_ZN9QListView11setWrappingEb(void *qthis,
-bool arg1) {
-  ((QListView*)qthis)->setWrapping(arg1);
+void C_ZNK9QListView10layoutModeEv(void *this_) {
+  /*return*/ ((QListView*)this_)->layoutMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 125, column 10>
-//   // proto:  void QListView::setSelectionRectVisible(bool show);
-// _ZN9QListView23setSelectionRectVisibleEb setSelectionRectVisible(_Bool)
+// /usr/include/qt/QtWidgets/qlistview.h:99
+// void setSpacing(int)
 extern "C"
-void
-C_ZN9QListView23setSelectionRectVisibleEb(void *qthis,
-bool arg1) {
-  ((QListView*)qthis)->setSelectionRectVisible(arg1);
+void C_ZN9QListView10setSpacingEi(void *this_, int space) {
+  ((QListView*)this_)->setSpacing(space);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 97, column 16>
-//   // proto:  QListView::LayoutMode QListView::layoutMode();
-// _ZNK9QListView10layoutModeEv layoutMode()
+// /usr/include/qt/QtWidgets/qlistview.h:100
+// int spacing()
 extern "C"
-QListView::LayoutMode
-C_ZNK9QListView10layoutModeEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->layoutMode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QListView7spacingEv(void *this_) {
+  /*return*/ ((QListView*)this_)->spacing();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 102, column 10>
-//   // proto:  void QListView::setBatchSize(int batchSize);
-// _ZN9QListView12setBatchSizeEi setBatchSize(int)
+// /usr/include/qt/QtWidgets/qlistview.h:102
+// void setBatchSize(int)
 extern "C"
-void
-C_ZN9QListView12setBatchSizeEi(void *qthis,
-int arg1) {
-  ((QListView*)qthis)->setBatchSize(arg1);
+void C_ZN9QListView12setBatchSizeEi(void *this_, int batchSize) {
+  ((QListView*)this_)->setBatchSize(batchSize);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 120, column 10>
-//   // proto:  bool QListView::uniformItemSizes();
-// _ZNK9QListView16uniformItemSizesEv uniformItemSizes()
+// /usr/include/qt/QtWidgets/qlistview.h:103
+// int batchSize()
 extern "C"
-bool
-C_ZNK9QListView16uniformItemSizesEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->uniformItemSizes();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QListView9batchSizeEv(void *this_) {
+  /*return*/ ((QListView*)this_)->batchSize();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 134, column 10>
-//   // proto:  void QListView::setRootIndex(const QModelIndex & index);
-// _ZN9QListView12setRootIndexERK11QModelIndex setRootIndex(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qlistview.h:105
+// void setGridSize(const class QSize &)
 extern "C"
-void
-C_ZN9QListView12setRootIndexERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  ((QListView*)qthis)->setRootIndex(*((const QModelIndex*)arg1));
+void C_ZN9QListView11setGridSizeERK5QSize(void *this_, const QSize & size) {
+  ((QListView*)this_)->setGridSize(size);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 91, column 10>
-//   // proto:  bool QListView::isWrapping();
-// _ZNK9QListView10isWrappingEv isWrapping()
+// /usr/include/qt/QtWidgets/qlistview.h:106
+// QSize gridSize()
 extern "C"
-bool
-C_ZNK9QListView10isWrappingEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->isWrapping();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QListView8gridSizeEv(void *this_) {
+  /*return*/ ((QListView*)this_)->gridSize();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 133, column 10>
-//   // proto:  void QListView::reset();
-// _ZN9QListView5resetEv reset()
+// /usr/include/qt/QtWidgets/qlistview.h:108
+// void setViewMode(enum QListView::ViewMode)
 extern "C"
-void
-C_ZN9QListView5resetEv(void *qthis) {
-  ((QListView*)qthis)->reset();
+void C_ZN9QListView11setViewModeENS_8ViewModeE(void *this_, QListView::ViewMode mode) {
+  ((QListView*)this_)->setViewMode(mode);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 85, column 14>
-//   // proto:  QListView::Movement QListView::movement();
-// _ZNK9QListView8movementEv movement()
+// /usr/include/qt/QtWidgets/qlistview.h:109
+// QListView::ViewMode viewMode()
 extern "C"
-QListView::Movement
-C_ZNK9QListView8movementEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->movement();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK9QListView8viewModeEv(void *this_) {
+  /*return*/ ((QListView*)this_)->viewMode();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 84, column 10>
-//   // proto:  void QListView::setMovement(QListView::Movement movement);
-// _ZN9QListView11setMovementENS_8MovementE setMovement(enum QListView::Movement)
+// /usr/include/qt/QtWidgets/qlistview.h:111
+// void clearPropertyFlags()
 extern "C"
-void
-C_ZN9QListView11setMovementENS_8MovementE(void *qthis,
-QListView::Movement arg1) {
-  ((QListView*)qthis)->setMovement(arg1);
+void C_ZN9QListView18clearPropertyFlagsEv(void *this_) {
+  ((QListView*)this_)->clearPropertyFlags();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 106, column 11>
-//   // proto:  QSize QListView::gridSize();
-// _ZNK9QListView8gridSizeEv gridSize()
+// /usr/include/qt/QtWidgets/qlistview.h:113
+// bool isRowHidden(int)
 extern "C"
-QSize*
-C_ZNK9QListView8gridSizeEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->gridSize();
-  return new QSize(ret); // 5
+void C_ZNK9QListView11isRowHiddenEi(void *this_, int row) {
+  /*return*/ ((QListView*)this_)->isRowHidden(row);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 116, column 10>
-//   // proto:  void QListView::setModelColumn(int column);
-// _ZN9QListView14setModelColumnEi setModelColumn(int)
+// /usr/include/qt/QtWidgets/qlistview.h:114
+// void setRowHidden(int, _Bool)
 extern "C"
-void
-C_ZN9QListView14setModelColumnEi(void *qthis,
-int arg1) {
-  ((QListView*)qthis)->setModelColumn(arg1);
+void C_ZN9QListView12setRowHiddenEib(void *this_, int row, bool hide) {
+  ((QListView*)this_)->setRowHidden(row, hide);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 99, column 10>
-//   // proto:  void QListView::setSpacing(int space);
-// _ZN9QListView10setSpacingEi setSpacing(int)
+// /usr/include/qt/QtWidgets/qlistview.h:116
+// void setModelColumn(int)
 extern "C"
-void
-C_ZN9QListView10setSpacingEi(void *qthis,
-int arg1) {
-  ((QListView*)qthis)->setSpacing(arg1);
+void C_ZN9QListView14setModelColumnEi(void *this_, int column) {
+  ((QListView*)this_)->setModelColumn(column);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 137, column 10>
-//   // proto:  void QListView::indexesMoved(const QModelIndexList & indexes);
-// _ZN9QListView12indexesMovedERK5QListI11QModelIndexE indexesMoved(const QModelIndexList &)
+// /usr/include/qt/QtWidgets/qlistview.h:117
+// int modelColumn()
 extern "C"
-void
-C_ZN9QListView12indexesMovedERK5QListI11QModelIndexE(void *qthis,
-const QModelIndexList* arg1) {
-  ((QListView*)qthis)->indexesMoved(*((const QModelIndexList*)arg1));
+void C_ZNK9QListView11modelColumnEv(void *this_) {
+  /*return*/ ((QListView*)this_)->modelColumn();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 128, column 11>
-//   // proto:  QRect QListView::visualRect(const QModelIndex & index);
-// _ZNK9QListView10visualRectERK11QModelIndex visualRect(const class QModelIndex &)
+// /usr/include/qt/QtWidgets/qlistview.h:119
+// void setUniformItemSizes(_Bool)
 extern "C"
-QRect*
-C_ZNK9QListView10visualRectERK11QModelIndex(void *qthis,
-const QModelIndex* arg1) {
-  auto ret =
-  ((QListView*)qthis)->visualRect(*((const QModelIndex*)arg1));
-  return new QRect(ret); // 5
+void C_ZN9QListView19setUniformItemSizesEb(void *this_, bool enable) {
+  ((QListView*)this_)->setUniformItemSizes(enable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 113, column 10>
-//   // proto:  bool QListView::isRowHidden(int row);
-// _ZNK9QListView11isRowHiddenEi isRowHidden(int)
+// /usr/include/qt/QtWidgets/qlistview.h:120
+// bool uniformItemSizes()
 extern "C"
-bool
-C_ZNK9QListView11isRowHiddenEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QListView*)qthis)->isRowHidden(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QListView16uniformItemSizesEv(void *this_) {
+  /*return*/ ((QListView*)this_)->uniformItemSizes();
 }
-//   // proto:  void QListView::~QListView();
+// /usr/include/qt/QtWidgets/qlistview.h:122
+// void setWordWrap(_Bool)
 extern "C"
-void C_ZN9QListViewD2Ev(void *qthis) {
-  delete (QListView*)qthis;
+void C_ZN9QListView11setWordWrapEb(void *this_, bool on) {
+  ((QListView*)this_)->setWordWrap(on);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 54, column 5>
-//   // proto:  const QMetaObject * QListView::metaObject();
-// _ZNK9QListView10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qlistview.h:123
+// bool wordWrap()
 extern "C"
-void*
-C_ZNK9QListView10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK9QListView8wordWrapEv(void *this_) {
+  /*return*/ ((QListView*)this_)->wordWrap();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 103, column 9>
-//   // proto:  int QListView::batchSize();
-// _ZNK9QListView9batchSizeEv batchSize()
+// /usr/include/qt/QtWidgets/qlistview.h:125
+// void setSelectionRectVisible(_Bool)
 extern "C"
-int
-C_ZNK9QListView9batchSizeEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->batchSize();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QListView23setSelectionRectVisibleEb(void *this_, bool show) {
+  ((QListView*)this_)->setSelectionRectVisible(show);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 96, column 10>
-//   // proto:  void QListView::setLayoutMode(QListView::LayoutMode mode);
-// _ZN9QListView13setLayoutModeENS_10LayoutModeE setLayoutMode(enum QListView::LayoutMode)
+// /usr/include/qt/QtWidgets/qlistview.h:126
+// bool isSelectionRectVisible()
 extern "C"
-void
-C_ZN9QListView13setLayoutModeENS_10LayoutModeE(void *qthis,
-QListView::LayoutMode arg1) {
-  ((QListView*)qthis)->setLayoutMode(arg1);
+void C_ZNK9QListView22isSelectionRectVisibleEv(void *this_) {
+  /*return*/ ((QListView*)this_)->isSelectionRectVisible();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 126, column 10>
-//   // proto:  bool QListView::isSelectionRectVisible();
-// _ZNK9QListView22isSelectionRectVisibleEv isSelectionRectVisible()
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:128
+// QRect visualRect(const class QModelIndex &)
 extern "C"
-bool
-C_ZNK9QListView22isSelectionRectVisibleEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->isSelectionRectVisible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QListView10visualRectERK11QModelIndex(void *this_, const QModelIndex & index) {
+  /*return*/ ((QListView*)this_)->visualRect(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 123, column 10>
-//   // proto:  bool QListView::wordWrap();
-// _ZNK9QListView8wordWrapEv wordWrap()
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:129
+// void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
 extern "C"
-bool
-C_ZNK9QListView8wordWrapEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->wordWrap();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QListView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
+  ((QListView*)this_)->scrollTo(index, hint);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 114, column 10>
-//   // proto:  void QListView::setRowHidden(int row, bool hide);
-// _ZN9QListView12setRowHiddenEib setRowHidden(int, _Bool)
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:130
+// QModelIndex indexAt(const class QPoint &)
 extern "C"
-void
-C_ZN9QListView12setRowHiddenEib(void *qthis,
-int arg1,
-bool arg2) {
-  ((QListView*)qthis)->setRowHidden(arg1,
-arg2);
+void C_ZNK9QListView7indexAtERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QListView*)this_)->indexAt(p);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 111, column 10>
-//   // proto:  void QListView::clearPropertyFlags();
-// _ZN9QListView18clearPropertyFlagsEv clearPropertyFlags()
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:132
+// void doItemsLayout()
 extern "C"
-void
-C_ZN9QListView18clearPropertyFlagsEv(void *qthis) {
-  ((QListView*)qthis)->clearPropertyFlags();
+void C_ZN9QListView13doItemsLayoutEv(void *this_) {
+  ((QListView*)this_)->doItemsLayout();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 109, column 14>
-//   // proto:  QListView::ViewMode QListView::viewMode();
-// _ZNK9QListView8viewModeEv viewMode()
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:133
+// void reset()
 extern "C"
-QListView::ViewMode
-C_ZNK9QListView8viewModeEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->viewMode();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QListView5resetEv(void *this_) {
+  ((QListView*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 88, column 10>
-//   // proto:  QListView::Flow QListView::flow();
-// _ZNK9QListView4flowEv flow()
+// virtual
+// /usr/include/qt/QtWidgets/qlistview.h:134
+// void setRootIndex(const class QModelIndex &)
 extern "C"
-QListView::Flow
-C_ZNK9QListView4flowEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->flow();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QListView12setRootIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
+  ((QListView*)this_)->setRootIndex(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 117, column 9>
-//   // proto:  int QListView::modelColumn();
-// _ZNK9QListView11modelColumnEv modelColumn()
+// /usr/include/qt/QtWidgets/qlistview.h:137
+// void indexesMoved(const QModelIndexList &)
 extern "C"
-int
-C_ZNK9QListView11modelColumnEv(void *qthis) {
-  auto ret =
-  ((QListView*)qthis)->modelColumn();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QListView12indexesMovedERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
+  ((QListView*)this_)->indexesMoved(indexes);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qlistview.h', line 119, column 10>
-//   // proto:  void QListView::setUniformItemSizes(bool enable);
-// _ZN9QListView19setUniformItemSizesEb setUniformItemSizes(_Bool)
-extern "C"
-void
-C_ZN9QListView19setUniformItemSizesEb(void *qthis,
-bool arg1) {
-  ((QListView*)qthis)->setUniformItemSizes(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// QListView_SlotProxy here
-class QListView_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QListView_SlotProxy():QObject(){}
-
-public slots:
-  // indexesMoved(const QModelIndexList &)
-  void slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0);
-public:
-  void (*slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE)(void* rsfptr, const QModelIndexList & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qlistview.moc"
-
-extern "C" {
-  QListView_SlotProxy* QListView_SlotProxy_new()
-  {
-    return new QListView_SlotProxy();
-  }
-};
-
-void QListView_SlotProxy::slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0) {
-  if (this->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE != NULL) {
-    // do smth...
-    this->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QListView_SlotProxy_connect__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QListView_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE = (decltype(that->slot_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE))ffifptr;
-  QObject::connect((QListView*)sender, SIGNAL(indexesMoved(const QModelIndexList &)), that, SLOT(slot_proxy_func__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(const QModelIndexList & arg0)));
-  return that;
-}
-extern "C"
-void QListView_SlotProxy_disconnect__ZN9QListView12indexesMovedERK5QListI11QModelIndexE(QListView_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-

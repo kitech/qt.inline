@@ -1,114 +1,53 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qcryptographichash.h
-// dst-file: /src/core/qcryptographichash.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qcryptographichash.h
 #include <qcryptographichash.h>
+#include <QtCore>
 
-
-#include <qbytearray.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qcryptographichash_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qcryptographichash.h:73
+// void QCryptographicHash(enum QCryptographicHash::Algorithm)
 extern "C"
-int QCryptographicHash_Class_Size()
-{
-  return sizeof(QCryptographicHash);
+void* C_ZN18QCryptographicHashC1ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
+  return new QCryptographicHash(method);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 80, column 10>
-//   // proto:  bool QCryptographicHash::addData(QIODevice * device);
-// _ZN18QCryptographicHash7addDataEP9QIODevice addData(class QIODevice *)
+// /usr/include/qt/QtCore/qcryptographichash.h:74
+// void ~QCryptographicHash()
 extern "C"
-bool
-C_ZN18QCryptographicHash7addDataEP9QIODevice(void *qthis,
-QIODevice * arg1) {
-  auto ret =
-  ((QCryptographicHash*)qthis)->addData(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN18QCryptographicHashD1Ev(void *this_) {
+  delete (QCryptographicHash*)(this_);
 }
-//   // proto:  void QCryptographicHash::~QCryptographicHash();
+// /usr/include/qt/QtCore/qcryptographichash.h:76
+// void reset()
 extern "C"
-void C_ZN18QCryptographicHashD2Ev(void *qthis) {
-  delete (QCryptographicHash*)qthis;
+void C_ZN18QCryptographicHash5resetEv(void *this_) {
+  ((QCryptographicHash*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 76, column 10>
-//   // proto:  void QCryptographicHash::reset();
-// _ZN18QCryptographicHash5resetEv reset()
+// /usr/include/qt/QtCore/qcryptographichash.h:78
+// void addData(const char *, int)
 extern "C"
-void
-C_ZN18QCryptographicHash5resetEv(void *qthis) {
-  ((QCryptographicHash*)qthis)->reset();
+void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int length) {
+  ((QCryptographicHash*)this_)->addData(data, length);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 78, column 10>
-//   // proto:  void QCryptographicHash::addData(const char * data, int length);
-// _ZN18QCryptographicHash7addDataEPKci addData(const char *, int)
+// /usr/include/qt/QtCore/qcryptographichash.h:79
+// void addData(const class QByteArray &)
 extern "C"
-void
-C_ZN18QCryptographicHash7addDataEPKci(void *qthis,
-const char * arg1,
-int arg2) {
-  ((QCryptographicHash*)qthis)->addData(arg1,
-arg2);
+void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, const QByteArray & data) {
+  ((QCryptographicHash*)this_)->addData(data);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 73, column 14>
-//   // proto:  void QCryptographicHash::QCryptographicHash(QCryptographicHash::Algorithm method);
+// /usr/include/qt/QtCore/qcryptographichash.h:80
+// bool addData(class QIODevice *)
 extern "C"
-QCryptographicHash*
-C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm arg1) {
-  auto ret = new QCryptographicHash(arg1);
-  return ret;
+void C_ZN18QCryptographicHash7addDataEP9QIODevice(void *this_, QIODevice * device) {
+  /*return*/ ((QCryptographicHash*)this_)->addData(device);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 82, column 16>
-//   // proto:  QByteArray QCryptographicHash::result();
-// _ZNK18QCryptographicHash6resultEv result()
+// /usr/include/qt/QtCore/qcryptographichash.h:82
+// QByteArray result()
 extern "C"
-QByteArray*
-C_ZNK18QCryptographicHash6resultEv(void *qthis) {
-  auto ret =
-  ((QCryptographicHash*)qthis)->result();
-  return new QByteArray(ret); // 5
+void C_ZNK18QCryptographicHash6resultEv(void *this_) {
+  /*return*/ ((QCryptographicHash*)this_)->result();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 79, column 10>
-//   // proto:  void QCryptographicHash::addData(const QByteArray & data);
-// _ZN18QCryptographicHash7addDataERK10QByteArray addData(const class QByteArray &)
+// static
+// /usr/include/qt/QtCore/qcryptographichash.h:84
+// QByteArray hash(const class QByteArray &, enum QCryptographicHash::Algorithm)
 extern "C"
-void
-C_ZN18QCryptographicHash7addDataERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QCryptographicHash*)qthis)->addData(*((const QByteArray*)arg1));
+void C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(const QByteArray & data, QCryptographicHash::Algorithm method) {
+  /*return*/ QCryptographicHash::hash(data, method);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qcryptographichash.h', line 84, column 23>
-//   // proto: static QByteArray QCryptographicHash::hash(const QByteArray & data, QCryptographicHash::Algorithm method);
-// _ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE hash(const class QByteArray &, enum QCryptographicHash::Algorithm)
-extern "C"
-QByteArray*
-C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(const QByteArray* arg1,
-QCryptographicHash::Algorithm arg2) {
-  auto ret =
-  QCryptographicHash::hash(*((const QByteArray*)arg1),
-arg2);
-  return new QByteArray(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

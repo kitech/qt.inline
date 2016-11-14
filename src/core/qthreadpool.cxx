@@ -1,204 +1,103 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qthreadpool.h
-// dst-file: /src/core/qthreadpool.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qthreadpool.h
 #include <qthreadpool.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qthreadpool_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qthreadpool.h:56
+// const QMetaObject * metaObject()
 extern "C"
-int QThreadPool_Class_Size()
-{
-  return sizeof(QThreadPool);
+void C_ZNK11QThreadPool10metaObjectEv(void *this_) {
+  /*return*/ ((QThreadPool*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-//   // proto:  void QThreadPool::~QThreadPool();
+// /usr/include/qt/QtCore/qthreadpool.h:64
+// void QThreadPool(class QObject *)
 extern "C"
-void C_ZN11QThreadPoolD2Ev(void *qthis) {
-  delete (QThreadPool*)qthis;
+void* C_ZN11QThreadPoolC1EP7QObject(QObject * parent) {
+  return new QThreadPool(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 72, column 9>
-//   // proto:  int QThreadPool::expiryTimeout();
-// _ZNK11QThreadPool13expiryTimeoutEv expiryTimeout()
+// virtual
+// /usr/include/qt/QtCore/qthreadpool.h:65
+// void ~QThreadPool()
 extern "C"
-int
-C_ZNK11QThreadPool13expiryTimeoutEv(void *qthis) {
-  auto ret =
-  ((QThreadPool*)qthis)->expiryTimeout();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QThreadPoolD1Ev(void *this_) {
+  delete (QThreadPool*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 83, column 10>
-//   // proto:  bool QThreadPool::waitForDone(int msecs);
-// _ZN11QThreadPool11waitForDoneEi waitForDone(int)
+// static
+// /usr/include/qt/QtCore/qthreadpool.h:67
+// QThreadPool * globalInstance()
 extern "C"
-bool
-C_ZN11QThreadPool11waitForDoneEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QThreadPool*)qthis)->waitForDone(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QThreadPool14globalInstanceEv() {
+  /*return*/ QThreadPool::globalInstance();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 56, column 5>
-//   // proto:  const QMetaObject * QThreadPool::metaObject();
-// _ZNK11QThreadPool10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qthreadpool.h:69
+// void start(class QRunnable *, int)
 extern "C"
-void*
-C_ZNK11QThreadPool10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QThreadPool*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN11QThreadPool5startEP9QRunnablei(void *this_, QRunnable * runnable, int priority) {
+  ((QThreadPool*)this_)->start(runnable, priority);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 86, column 10>
-//   // proto:  void QThreadPool::cancel(QRunnable * runnable);
-// _ZN11QThreadPool6cancelEP9QRunnable cancel(class QRunnable *)
+// /usr/include/qt/QtCore/qthreadpool.h:70
+// bool tryStart(class QRunnable *)
 extern "C"
-void
-C_ZN11QThreadPool6cancelEP9QRunnable(void *qthis,
-QRunnable * arg1) {
-  ((QThreadPool*)qthis)->cancel(arg1);
+void C_ZN11QThreadPool8tryStartEP9QRunnable(void *this_, QRunnable * runnable) {
+  /*return*/ ((QThreadPool*)this_)->tryStart(runnable);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 70, column 10>
-//   // proto:  bool QThreadPool::tryStart(QRunnable * runnable);
-// _ZN11QThreadPool8tryStartEP9QRunnable tryStart(class QRunnable *)
+// /usr/include/qt/QtCore/qthreadpool.h:72
+// int expiryTimeout()
 extern "C"
-bool
-C_ZN11QThreadPool8tryStartEP9QRunnable(void *qthis,
-QRunnable * arg1) {
-  auto ret =
-  ((QThreadPool*)qthis)->tryStart(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QThreadPool13expiryTimeoutEv(void *this_) {
+  /*return*/ ((QThreadPool*)this_)->expiryTimeout();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 67, column 25>
-//   // proto: static QThreadPool * QThreadPool::globalInstance();
-// _ZN11QThreadPool14globalInstanceEv globalInstance()
+// /usr/include/qt/QtCore/qthreadpool.h:73
+// void setExpiryTimeout(int)
 extern "C"
-void*
-C_ZN11QThreadPool14globalInstanceEv() {
-  auto ret =
-  QThreadPool::globalInstance();
-  return (void*)ret;
+void C_ZN11QThreadPool16setExpiryTimeoutEi(void *this_, int expiryTimeout) {
+  ((QThreadPool*)this_)->setExpiryTimeout(expiryTimeout);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 76, column 10>
-//   // proto:  void QThreadPool::setMaxThreadCount(int maxThreadCount);
-// _ZN11QThreadPool17setMaxThreadCountEi setMaxThreadCount(int)
+// /usr/include/qt/QtCore/qthreadpool.h:75
+// int maxThreadCount()
 extern "C"
-void
-C_ZN11QThreadPool17setMaxThreadCountEi(void *qthis,
-int arg1) {
-  ((QThreadPool*)qthis)->setMaxThreadCount(arg1);
+void C_ZNK11QThreadPool14maxThreadCountEv(void *this_) {
+  /*return*/ ((QThreadPool*)this_)->maxThreadCount();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 73, column 10>
-//   // proto:  void QThreadPool::setExpiryTimeout(int expiryTimeout);
-// _ZN11QThreadPool16setExpiryTimeoutEi setExpiryTimeout(int)
+// /usr/include/qt/QtCore/qthreadpool.h:76
+// void setMaxThreadCount(int)
 extern "C"
-void
-C_ZN11QThreadPool16setExpiryTimeoutEi(void *qthis,
-int arg1) {
-  ((QThreadPool*)qthis)->setExpiryTimeout(arg1);
+void C_ZN11QThreadPool17setMaxThreadCountEi(void *this_, int maxThreadCount) {
+  ((QThreadPool*)this_)->setMaxThreadCount(maxThreadCount);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 80, column 10>
-//   // proto:  void QThreadPool::reserveThread();
-// _ZN11QThreadPool13reserveThreadEv reserveThread()
+// /usr/include/qt/QtCore/qthreadpool.h:78
+// int activeThreadCount()
 extern "C"
-void
-C_ZN11QThreadPool13reserveThreadEv(void *qthis) {
-  ((QThreadPool*)qthis)->reserveThread();
+void C_ZNK11QThreadPool17activeThreadCountEv(void *this_) {
+  /*return*/ ((QThreadPool*)this_)->activeThreadCount();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 85, column 10>
-//   // proto:  void QThreadPool::clear();
-// _ZN11QThreadPool5clearEv clear()
+// /usr/include/qt/QtCore/qthreadpool.h:80
+// void reserveThread()
 extern "C"
-void
-C_ZN11QThreadPool5clearEv(void *qthis) {
-  ((QThreadPool*)qthis)->clear();
+void C_ZN11QThreadPool13reserveThreadEv(void *this_) {
+  ((QThreadPool*)this_)->reserveThread();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 64, column 5>
-//   // proto:  void QThreadPool::QThreadPool(QObject * parent);
+// /usr/include/qt/QtCore/qthreadpool.h:81
+// void releaseThread()
 extern "C"
-QThreadPool*
-C_ZN11QThreadPoolC2EP7QObject(QObject * arg1) {
-  auto ret = new QThreadPool(arg1);
-  return ret;
+void C_ZN11QThreadPool13releaseThreadEv(void *this_) {
+  ((QThreadPool*)this_)->releaseThread();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 69, column 10>
-//   // proto:  void QThreadPool::start(QRunnable * runnable, int priority);
-// _ZN11QThreadPool5startEP9QRunnablei start(class QRunnable *, int)
+// /usr/include/qt/QtCore/qthreadpool.h:83
+// bool waitForDone(int)
 extern "C"
-void
-C_ZN11QThreadPool5startEP9QRunnablei(void *qthis,
-QRunnable * arg1,
-int arg2) {
-  ((QThreadPool*)qthis)->start(arg1,
-arg2);
+void C_ZN11QThreadPool11waitForDoneEi(void *this_, int msecs) {
+  /*return*/ ((QThreadPool*)this_)->waitForDone(msecs);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 75, column 9>
-//   // proto:  int QThreadPool::maxThreadCount();
-// _ZNK11QThreadPool14maxThreadCountEv maxThreadCount()
+// /usr/include/qt/QtCore/qthreadpool.h:85
+// void clear()
 extern "C"
-int
-C_ZNK11QThreadPool14maxThreadCountEv(void *qthis) {
-  auto ret =
-  ((QThreadPool*)qthis)->maxThreadCount();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QThreadPool5clearEv(void *this_) {
+  ((QThreadPool*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 81, column 10>
-//   // proto:  void QThreadPool::releaseThread();
-// _ZN11QThreadPool13releaseThreadEv releaseThread()
+// /usr/include/qt/QtCore/qthreadpool.h:86
+// void cancel(class QRunnable *)
 extern "C"
-void
-C_ZN11QThreadPool13releaseThreadEv(void *qthis) {
-  ((QThreadPool*)qthis)->releaseThread();
+void C_ZN11QThreadPool6cancelEP9QRunnable(void *this_, QRunnable * runnable) {
+  ((QThreadPool*)this_)->cancel(runnable);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qthreadpool.h', line 78, column 9>
-//   // proto:  int QThreadPool::activeThreadCount();
-// _ZNK11QThreadPool17activeThreadCountEv activeThreadCount()
-extern "C"
-int
-C_ZNK11QThreadPool17activeThreadCountEv(void *qthis) {
-  auto ret =
-  ((QThreadPool*)qthis)->activeThreadCount();
-  return ret; // 0 TypeKind.INT
-}
-// <= ext block end
-
-// body block begin =>
-// QThreadPool_SlotProxy here
-class QThreadPool_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QThreadPool_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qthreadpool.moc"
-
-extern "C" {
-  QThreadPool_SlotProxy* QThreadPool_SlotProxy_new()
-  {
-    return new QThreadPool_SlotProxy();
-  }
-};
-
-// <= body block end
-

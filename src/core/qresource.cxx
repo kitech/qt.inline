@@ -1,212 +1,112 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qresource.h
-// dst-file: /src/core/qresource.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qresource.h
 #include <qresource.h>
+#include <QtCore>
 
-
-#include <qlocale.h>
-#include <qstringlist.h>
-#include <qstring.h>
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qresource_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qresource.h:57
+// void QResource(const class QString &, const class QLocale &)
 extern "C"
-int QResource_Class_Size()
-{
-  return sizeof(QResource);
+void* C_ZN9QResourceC1ERK7QStringRK7QLocale(const QString & file, const QLocale & locale) {
+  return new QResource(file, locale);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 57, column 5>
-//   // proto:  void QResource::QResource(const QString & file, const QLocale & locale);
+// /usr/include/qt/QtCore/qresource.h:58
+// void ~QResource()
 extern "C"
-QResource*
-C_ZN9QResourceC2ERK7QStringRK7QLocale(const QString* arg1,
-const QLocale* arg2) {
-  auto ret = new QResource(*((const QString*)arg1),
-*((const QLocale*)arg2));
-  return ret;
+void C_ZN9QResourceD1Ev(void *this_) {
+  delete (QResource*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 65, column 13>
-//   // proto:  QLocale QResource::locale();
-// _ZNK9QResource6localeEv locale()
+// /usr/include/qt/QtCore/qresource.h:60
+// void setFileName(const class QString &)
 extern "C"
-QLocale*
-C_ZNK9QResource6localeEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->locale();
-  return new QLocale(ret); // 5
+void C_ZN9QResource11setFileNameERK7QString(void *this_, const QString & file) {
+  ((QResource*)this_)->setFileName(file);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 64, column 10>
-//   // proto:  void QResource::setLocale(const QLocale & locale);
-// _ZN9QResource9setLocaleERK7QLocale setLocale(const class QLocale &)
+// /usr/include/qt/QtCore/qresource.h:61
+// QString fileName()
 extern "C"
-void
-C_ZN9QResource9setLocaleERK7QLocale(void *qthis,
-const QLocale* arg1) {
-  ((QResource*)qthis)->setLocale(*((const QLocale*)arg1));
+void C_ZNK9QResource8fileNameEv(void *this_) {
+  /*return*/ ((QResource*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 79, column 17>
-//   // proto: static bool QResource::registerResource(const uchar * rccData, const QString & resourceRoot);
-// _ZN9QResource16registerResourceEPKhRK7QString registerResource(const uchar *, const class QString &)
+// /usr/include/qt/QtCore/qresource.h:62
+// QString absoluteFilePath()
 extern "C"
-bool
-C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * arg1,
-const QString* arg2) {
-  auto ret =
-  QResource::registerResource(arg1,
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QResource16absoluteFilePathEv(void *this_) {
+  /*return*/ ((QResource*)this_)->absoluteFilePath();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 71, column 18>
-//   // proto:  const uchar * QResource::data();
-// _ZNK9QResource4dataEv data()
+// /usr/include/qt/QtCore/qresource.h:64
+// void setLocale(const class QLocale &)
 extern "C"
-void*
-C_ZNK9QResource4dataEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->data();
-  return (void*)ret;
+void C_ZN9QResource9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
+  ((QResource*)this_)->setLocale(locale);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 74, column 24>
-//   // proto: static QStringList QResource::searchPaths();
-// _ZN9QResource11searchPathsEv searchPaths()
+// /usr/include/qt/QtCore/qresource.h:65
+// QLocale locale()
 extern "C"
-QStringList*
-C_ZN9QResource11searchPathsEv() {
-  auto ret =
-  QResource::searchPaths();
-  return new QStringList(ret); // 5
+void C_ZNK9QResource6localeEv(void *this_) {
+  /*return*/ ((QResource*)this_)->locale();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 61, column 13>
-//   // proto:  QString QResource::fileName();
-// _ZNK9QResource8fileNameEv fileName()
+// /usr/include/qt/QtCore/qresource.h:67
+// bool isValid()
 extern "C"
-QString*
-C_ZNK9QResource8fileNameEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZNK9QResource7isValidEv(void *this_) {
+  /*return*/ ((QResource*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 62, column 13>
-//   // proto:  QString QResource::absoluteFilePath();
-// _ZNK9QResource16absoluteFilePathEv absoluteFilePath()
+// /usr/include/qt/QtCore/qresource.h:69
+// bool isCompressed()
 extern "C"
-QString*
-C_ZNK9QResource16absoluteFilePathEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->absoluteFilePath();
-  return new QString(ret); // 5
+void C_ZNK9QResource12isCompressedEv(void *this_) {
+  /*return*/ ((QResource*)this_)->isCompressed();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 80, column 17>
-//   // proto: static bool QResource::unregisterResource(const uchar * rccData, const QString & resourceRoot);
-// _ZN9QResource18unregisterResourceEPKhRK7QString unregisterResource(const uchar *, const class QString &)
+// /usr/include/qt/QtCore/qresource.h:70
+// qint64 size()
 extern "C"
-bool
-C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * arg1,
-const QString* arg2) {
-  auto ret =
-  QResource::unregisterResource(arg1,
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QResource4sizeEv(void *this_) {
+  /*return*/ ((QResource*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 76, column 17>
-//   // proto: static bool QResource::registerResource(const QString & rccFilename, const QString & resourceRoot);
-// _ZN9QResource16registerResourceERK7QStringS2_ registerResource(const class QString &, const class QString &)
+// /usr/include/qt/QtCore/qresource.h:71
+// const uchar * data()
 extern "C"
-bool
-C_ZN9QResource16registerResourceERK7QStringS2_(const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  QResource::registerResource(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QResource4dataEv(void *this_) {
+  /*return*/ ((QResource*)this_)->data();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 73, column 17>
-//   // proto: static void QResource::addSearchPath(const QString & path);
-// _ZN9QResource13addSearchPathERK7QString addSearchPath(const class QString &)
+// static
+// /usr/include/qt/QtCore/qresource.h:73
+// void addSearchPath(const class QString &)
 extern "C"
-void
-C_ZN9QResource13addSearchPathERK7QString(const QString* arg1) {
-  QResource::addSearchPath(*((const QString*)arg1));
+void C_ZN9QResource13addSearchPathERK7QString(const QString & path) {
+  QResource::addSearchPath(path);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 70, column 12>
-//   // proto:  qint64 QResource::size();
-// _ZNK9QResource4sizeEv size()
+// static
+// /usr/include/qt/QtCore/qresource.h:74
+// QStringList searchPaths()
 extern "C"
-long long
-C_ZNK9QResource4sizeEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->size();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZN9QResource11searchPathsEv() {
+  /*return*/ QResource::searchPaths();
 }
-//   // proto:  void QResource::~QResource();
+// static
+// /usr/include/qt/QtCore/qresource.h:76
+// bool registerResource(const class QString &, const class QString &)
 extern "C"
-void C_ZN9QResourceD2Ev(void *qthis) {
-  delete (QResource*)qthis;
+void C_ZN9QResource16registerResourceERK7QStringS2_(const QString & rccFilename, const QString & resourceRoot) {
+  /*return*/ QResource::registerResource(rccFilename, resourceRoot);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 67, column 10>
-//   // proto:  bool QResource::isValid();
-// _ZNK9QResource7isValidEv isValid()
+// static
+// /usr/include/qt/QtCore/qresource.h:77
+// bool unregisterResource(const class QString &, const class QString &)
 extern "C"
-bool
-C_ZNK9QResource7isValidEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QResource18unregisterResourceERK7QStringS2_(const QString & rccFilename, const QString & resourceRoot) {
+  /*return*/ QResource::unregisterResource(rccFilename, resourceRoot);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 60, column 10>
-//   // proto:  void QResource::setFileName(const QString & file);
-// _ZN9QResource11setFileNameERK7QString setFileName(const class QString &)
+// static
+// /usr/include/qt/QtCore/qresource.h:79
+// bool registerResource(const uchar *, const class QString &)
 extern "C"
-void
-C_ZN9QResource11setFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QResource*)qthis)->setFileName(*((const QString*)arg1));
+void C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, const QString & resourceRoot) {
+  /*return*/ QResource::registerResource(rccData, resourceRoot);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 77, column 17>
-//   // proto: static bool QResource::unregisterResource(const QString & rccFilename, const QString & resourceRoot);
-// _ZN9QResource18unregisterResourceERK7QStringS2_ unregisterResource(const class QString &, const class QString &)
+// static
+// /usr/include/qt/QtCore/qresource.h:80
+// bool unregisterResource(const uchar *, const class QString &)
 extern "C"
-bool
-C_ZN9QResource18unregisterResourceERK7QStringS2_(const QString* arg1,
-const QString* arg2) {
-  auto ret =
-  QResource::unregisterResource(*((const QString*)arg1),
-*((const QString*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, const QString & resourceRoot) {
+  /*return*/ QResource::unregisterResource(rccData, resourceRoot);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qresource.h', line 69, column 10>
-//   // proto:  bool QResource::isCompressed();
-// _ZNK9QResource12isCompressedEv isCompressed()
-extern "C"
-bool
-C_ZNK9QResource12isCompressedEv(void *qthis) {
-  auto ret =
-  ((QResource*)qthis)->isCompressed();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

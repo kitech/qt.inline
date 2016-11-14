@@ -1,472 +1,190 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qvector4d.h
-// dst-file: /src/gui/qvector4d.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qvector4d.h
 #include <qvector4d.h>
+#include <QtGui>
 
-
-#include <qpoint.h>
-#include <qvector2d.h>
-#include <qvector3d.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qvector4d_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 82, column 10>
-//   // proto:  void QVector4D::setW(float w);
-if (true) {
-  auto f = [](QVector4D flythis, float arg1) {
-    ((QVector4D*)0)->setW(arg1);
-    flythis.setW(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector4D4setWEf setW(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 125, column 30>
-//   // proto:  QPointF QVector4D::toPointF();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->toPointF();
-    flythis.toPointF();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D8toPointFEv toPointF()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 75, column 28>
-//   // proto:  float QVector4D::y();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->y();
-    flythis.y();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D1yEv y()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 81, column 10>
-//   // proto:  void QVector4D::setZ(float z);
-if (true) {
-  auto f = [](QVector4D flythis, float arg1) {
-    ((QVector4D*)0)->setZ(arg1);
-    flythis.setZ(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector4D4setZEf setZ(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 60, column 22>
-//   // proto:  void QVector4D::QVector4D(float xpos, float ypos, float zpos, float wpos);
-if (true) {
-  auto f = [](float arg1, float arg2, float arg3, float arg4) {
-    new QVector4D(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 59, column 14>
-//   // proto:  void QVector4D::QVector4D(Qt::Initialization );
-if (true) {
-  auto f = [](Qt::Initialization arg1) {
-    new QVector4D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 62, column 31>
-//   // proto:  void QVector4D::QVector4D(const QPointF & point);
-if (true) {
-  auto f = [](const QPointF & arg1) {
-    new QVector4D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 76, column 28>
-//   // proto:  float QVector4D::z();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->z();
-    flythis.z();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D1zEv z()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 58, column 22>
-//   // proto:  void QVector4D::QVector4D();
-if (true) {
-  auto f = []() {
-    new QVector4D();
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 79, column 10>
-//   // proto:  void QVector4D::setX(float x);
-if (true) {
-  auto f = [](QVector4D flythis, float arg1) {
-    ((QVector4D*)0)->setX(arg1);
-    flythis.setX(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector4D4setXEf setX(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 80, column 10>
-//   // proto:  void QVector4D::setY(float y);
-if (true) {
-  auto f = [](QVector4D flythis, float arg1) {
-    ((QVector4D*)0)->setY(arg1);
-    flythis.setY(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN9QVector4D4setYEf setY(float)
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 61, column 31>
-//   // proto:  void QVector4D::QVector4D(const QPoint & point);
-if (true) {
-  auto f = [](const QPoint & arg1) {
-    new QVector4D(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 74, column 28>
-//   // proto:  float QVector4D::x();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->x();
-    flythis.x();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D1xEv x()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 72, column 10>
-//   // proto:  bool QVector4D::isNull();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->isNull();
-    flythis.isNull();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D6isNullEv isNull()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 124, column 29>
-//   // proto:  QPoint QVector4D::toPoint();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->toPoint();
-    flythis.toPoint();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D7toPointEv toPoint()
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 77, column 28>
-//   // proto:  float QVector4D::w();
-if (true) {
-  auto f = [](QVector4D flythis) {
-    ((QVector4D*)0)->w();
-    flythis.w();
-  };
-  if (f == nullptr){}
-}
-// _ZNK9QVector4D1wEv w()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:58
+// void QVector4D()
 extern "C"
-int QVector4D_Class_Size()
-{
-  return sizeof(QVector4D);
+void* C_ZN9QVector4DC1Ev() {
+  return new QVector4D();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 90, column 15>
-//   // proto:  QVector4D QVector4D::normalized();
-// _ZNK9QVector4D10normalizedEv normalized()
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:59
+// void QVector4D(Qt::Initialization)
 extern "C"
-QVector4D*
-C_ZNK9QVector4D10normalizedEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->normalized();
-  return new QVector4D(ret); // 5
+void* C_ZN9QVector4DC1EN2Qt14InitializationE(Qt::Initialization a0) {
+  return new QVector4D(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 82, column 10>
-//   // proto:  void QVector4D::setW(float w);
-// _ZN9QVector4D4setWEf setW(float)
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:60
+// void QVector4D(float, float, float, float)
 extern "C"
-void
-C_ZN9QVector4D4setWEf(void *qthis,
-float arg1) {
-  ((QVector4D*)qthis)->setW(arg1);
+void* C_ZN9QVector4DC1Effff(float xpos, float ypos, float zpos, float wpos) {
+  return new QVector4D(xpos, ypos, zpos, wpos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 65, column 5>
-//   // proto:  void QVector4D::QVector4D(const QVector2D & vector, float zpos, float wpos);
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:61
+// void QVector4D(const class QPoint &)
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK9QVector2Dff(const QVector2D* arg1,
-float arg2,
-float arg3) {
-  auto ret = new QVector4D(*((const QVector2D*)arg1),
-arg2,
-arg3);
-  return ret;
+void* C_ZN9QVector4DC1ERK6QPoint(const QPoint & point) {
+  return new QVector4D(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 125, column 30>
-//   // proto:  QPointF QVector4D::toPointF();
-// _ZNK9QVector4D8toPointFEv toPointF()
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:62
+// void QVector4D(const class QPointF &)
 extern "C"
-QPointF*
-C_ZNK9QVector4D8toPointFEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toPointF();
-  return new QPointF(ret); // 5
+void* C_ZN9QVector4DC1ERK7QPointF(const QPointF & point) {
+  return new QVector4D(point);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 75, column 28>
-//   // proto:  float QVector4D::y();
-// _ZNK9QVector4D1yEv y()
+// /usr/include/qt/QtGui/qvector4d.h:64
+// void QVector4D(const class QVector2D &)
 extern "C"
-float
-C_ZNK9QVector4D1yEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->y();
-  return ret; // 0 TypeKind.FLOAT
+void* C_ZN9QVector4DC1ERK9QVector2D(const QVector2D & vector) {
+  return new QVector4D(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 116, column 15>
-//   // proto:  QVector2D QVector4D::toVector2D();
-// _ZNK9QVector4D10toVector2DEv toVector2D()
+// /usr/include/qt/QtGui/qvector4d.h:65
+// void QVector4D(const class QVector2D &, float, float)
 extern "C"
-QVector2D*
-C_ZNK9QVector4D10toVector2DEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toVector2D();
-  return new QVector2D(ret); // 5
+void* C_ZN9QVector4DC1ERK9QVector2Dff(const QVector2D & vector, float zpos, float wpos) {
+  return new QVector4D(vector, zpos, wpos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 81, column 10>
-//   // proto:  void QVector4D::setZ(float z);
-// _ZN9QVector4D4setZEf setZ(float)
+// /usr/include/qt/QtGui/qvector4d.h:68
+// void QVector4D(const class QVector3D &)
 extern "C"
-void
-C_ZN9QVector4D4setZEf(void *qthis,
-float arg1) {
-  ((QVector4D*)qthis)->setZ(arg1);
+void* C_ZN9QVector4DC1ERK9QVector3D(const QVector3D & vector) {
+  return new QVector4D(vector);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 64, column 5>
-//   // proto:  void QVector4D::QVector4D(const QVector2D & vector);
+// /usr/include/qt/QtGui/qvector4d.h:69
+// void QVector4D(const class QVector3D &, float)
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK9QVector2D(const QVector2D* arg1) {
-  auto ret = new QVector4D(*((const QVector2D*)arg1));
-  return ret;
+void* C_ZN9QVector4DC1ERK9QVector3Df(const QVector3D & vector, float wpos) {
+  return new QVector4D(vector, wpos);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 91, column 10>
-//   // proto:  void QVector4D::normalize();
-// _ZN9QVector4D9normalizeEv normalize()
+// /usr/include/qt/QtGui/qvector4d.h:72
+// bool isNull()
 extern "C"
-void
-C_ZN9QVector4D9normalizeEv(void *qthis) {
-  ((QVector4D*)qthis)->normalize();
+void C_ZNK9QVector4D6isNullEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->isNull();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 60, column 22>
-//   // proto:  void QVector4D::QVector4D(float xpos, float ypos, float zpos, float wpos);
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:74
+// float x()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2Effff(float arg1,
-float arg2,
-float arg3,
-float arg4) {
-  auto ret = new QVector4D(arg1,
-arg2,
-arg3,
-arg4);
-  return ret;
+void C_ZNK9QVector4D1xEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->x();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 69, column 5>
-//   // proto:  void QVector4D::QVector4D(const QVector3D & vector, float wpos);
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:75
+// float y()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK9QVector3Df(const QVector3D* arg1,
-float arg2) {
-  auto ret = new QVector4D(*((const QVector3D*)arg1),
-arg2);
-  return ret;
+void C_ZNK9QVector4D1yEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->y();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 59, column 14>
-//   // proto:  void QVector4D::QVector4D(Qt::Initialization );
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:76
+// float z()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
-  auto ret = new QVector4D(*((Qt::Initialization*)arg1));
-  return ret;
+void C_ZNK9QVector4D1zEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->z();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 62, column 31>
-//   // proto:  void QVector4D::QVector4D(const QPointF & point);
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:77
+// float w()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK7QPointF(const QPointF* arg1) {
-  auto ret = new QVector4D(*((const QPointF*)arg1));
-  return ret;
+void C_ZNK9QVector4D1wEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->w();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 76, column 28>
-//   // proto:  float QVector4D::z();
-// _ZNK9QVector4D1zEv z()
+// /usr/include/qt/QtGui/qvector4d.h:79
+// void setX(float)
 extern "C"
-float
-C_ZNK9QVector4D1zEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->z();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZN9QVector4D4setXEf(void *this_, float x) {
+  ((QVector4D*)this_)->setX(x);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 58, column 22>
-//   // proto:  void QVector4D::QVector4D();
+// /usr/include/qt/QtGui/qvector4d.h:80
+// void setY(float)
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2Ev() {
-  auto ret = new QVector4D();
-  return ret;
+void C_ZN9QVector4D4setYEf(void *this_, float y) {
+  ((QVector4D*)this_)->setY(y);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 79, column 10>
-//   // proto:  void QVector4D::setX(float x);
-// _ZN9QVector4D4setXEf setX(float)
+// /usr/include/qt/QtGui/qvector4d.h:81
+// void setZ(float)
 extern "C"
-void
-C_ZN9QVector4D4setXEf(void *qthis,
-float arg1) {
-  ((QVector4D*)qthis)->setX(arg1);
+void C_ZN9QVector4D4setZEf(void *this_, float z) {
+  ((QVector4D*)this_)->setZ(z);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 80, column 10>
-//   // proto:  void QVector4D::setY(float y);
-// _ZN9QVector4D4setYEf setY(float)
+// /usr/include/qt/QtGui/qvector4d.h:82
+// void setW(float)
 extern "C"
-void
-C_ZN9QVector4D4setYEf(void *qthis,
-float arg1) {
-  ((QVector4D*)qthis)->setY(arg1);
+void C_ZN9QVector4D4setWEf(void *this_, float w) {
+  ((QVector4D*)this_)->setW(w);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 61, column 31>
-//   // proto:  void QVector4D::QVector4D(const QPoint & point);
+// /usr/include/qt/QtGui/qvector4d.h:87
+// float length()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK6QPoint(const QPoint* arg1) {
-  auto ret = new QVector4D(*((const QPoint*)arg1));
-  return ret;
+void C_ZNK9QVector4D6lengthEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->length();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 120, column 15>
-//   // proto:  QVector3D QVector4D::toVector3D();
-// _ZNK9QVector4D10toVector3DEv toVector3D()
+// /usr/include/qt/QtGui/qvector4d.h:88
+// float lengthSquared()
 extern "C"
-QVector3D*
-C_ZNK9QVector4D10toVector3DEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toVector3D();
-  return new QVector3D(ret); // 5
+void C_ZNK9QVector4D13lengthSquaredEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->lengthSquared();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 74, column 28>
-//   // proto:  float QVector4D::x();
-// _ZNK9QVector4D1xEv x()
+// /usr/include/qt/QtGui/qvector4d.h:90
+// QVector4D normalized()
 extern "C"
-float
-C_ZNK9QVector4D1xEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->x();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector4D10normalizedEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->normalized();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 117, column 15>
-//   // proto:  QVector2D QVector4D::toVector2DAffine();
-// _ZNK9QVector4D16toVector2DAffineEv toVector2DAffine()
+// /usr/include/qt/QtGui/qvector4d.h:91
+// void normalize()
 extern "C"
-QVector2D*
-C_ZNK9QVector4D16toVector2DAffineEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toVector2DAffine();
-  return new QVector2D(ret); // 5
+void C_ZN9QVector4D9normalizeEv(void *this_) {
+  ((QVector4D*)this_)->normalize();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 87, column 11>
-//   // proto:  float QVector4D::length();
-// _ZNK9QVector4D6lengthEv length()
+// static
+// /usr/include/qt/QtGui/qvector4d.h:100
+// float dotProduct(const class QVector4D &, const class QVector4D &)
 extern "C"
-float
-C_ZNK9QVector4D6lengthEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->length();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZN9QVector4D10dotProductERKS_S1_(const QVector4D & v1, const QVector4D & v2) {
+  /*return*/ QVector4D::dotProduct(v1, v2);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 68, column 5>
-//   // proto:  void QVector4D::QVector4D(const QVector3D & vector);
+// /usr/include/qt/QtGui/qvector4d.h:116
+// QVector2D toVector2D()
 extern "C"
-QVector4D*
-C_ZN9QVector4DC2ERK9QVector3D(const QVector3D* arg1) {
-  auto ret = new QVector4D(*((const QVector3D*)arg1));
-  return ret;
+void C_ZNK9QVector4D10toVector2DEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toVector2D();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 100, column 18>
-//   // proto: static float QVector4D::dotProduct(const QVector4D & v1, const QVector4D & v2);
-// _ZN9QVector4D10dotProductERKS_S1_ dotProduct(const class QVector4D &, const class QVector4D &)
+// /usr/include/qt/QtGui/qvector4d.h:117
+// QVector2D toVector2DAffine()
 extern "C"
-float
-C_ZN9QVector4D10dotProductERKS_S1_(const QVector4D* arg1,
-const QVector4D* arg2) {
-  auto ret =
-  QVector4D::dotProduct(*((const QVector4D*)arg1),
-*((const QVector4D*)arg2));
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector4D16toVector2DAffineEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toVector2DAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 72, column 10>
-//   // proto:  bool QVector4D::isNull();
-// _ZNK9QVector4D6isNullEv isNull()
+// /usr/include/qt/QtGui/qvector4d.h:120
+// QVector3D toVector3D()
 extern "C"
-bool
-C_ZNK9QVector4D6isNullEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->isNull();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QVector4D10toVector3DEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toVector3D();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 88, column 11>
-//   // proto:  float QVector4D::lengthSquared();
-// _ZNK9QVector4D13lengthSquaredEv lengthSquared()
+// /usr/include/qt/QtGui/qvector4d.h:121
+// QVector3D toVector3DAffine()
 extern "C"
-float
-C_ZNK9QVector4D13lengthSquaredEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->lengthSquared();
-  return ret; // 0 TypeKind.FLOAT
+void C_ZNK9QVector4D16toVector3DAffineEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toVector3DAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 121, column 15>
-//   // proto:  QVector3D QVector4D::toVector3DAffine();
-// _ZNK9QVector4D16toVector3DAffineEv toVector3DAffine()
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:124
+// QPoint toPoint()
 extern "C"
-QVector3D*
-C_ZNK9QVector4D16toVector3DAffineEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toVector3DAffine();
-  return new QVector3D(ret); // 5
+void C_ZNK9QVector4D7toPointEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toPoint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 124, column 29>
-//   // proto:  QPoint QVector4D::toPoint();
-// _ZNK9QVector4D7toPointEv toPoint()
+// inline
+// /usr/include/qt/QtGui/qvector4d.h:125
+// QPointF toPointF()
 extern "C"
-QPoint*
-C_ZNK9QVector4D7toPointEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->toPoint();
-  return new QPoint(ret); // 5
+void C_ZNK9QVector4D8toPointFEv(void *this_) {
+  /*return*/ ((QVector4D*)this_)->toPointF();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qvector4d.h', line 77, column 28>
-//   // proto:  float QVector4D::w();
-// _ZNK9QVector4D1wEv w()
-extern "C"
-float
-C_ZNK9QVector4D1wEv(void *qthis) {
-  auto ret =
-  ((QVector4D*)qthis)->w();
-  return ret; // 0 TypeKind.FLOAT
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

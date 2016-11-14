@@ -1,3057 +1,1536 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qwidget.h
-// dst-file: /src/widgets/qwidget.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qwidget.h
 #include <qwidget.h>
+#include <QtWidgets>
 
-
-#include <qstring.h>
-#include <qsize.h>
-#include <qpalette.h>
-#include <qpoint.h>
-#include <qwindowdefs.h>
-#include <qrect.h>
-#include <qnamespace.h>
-#include <qpixmap.h>
-#include <qbytearray.h>
-#include <qregion.h>
-#include <qlist.h>
-#include <qfontdatabase.h>
-#include <qfontinfo.h>
-#include <qfontmetrics.h>
-#include <qvariant.h>
-#include <qfont.h>
-#include <qglobal.h>
-#include <qlocale.h>
-#include <qicon.h>
-#include <qcursor.h>
-#include <qsizepolicy.h>
-#include <qmargins.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qwidget_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 236, column 10>
-//   // proto:  bool QWidget::isEnabledToTLW();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isEnabledToTLW();
-    flythis.isEnabledToTLW();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget14isEnabledToTLWEv isEnabledToTLW()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 281, column 10>
-//   // proto:  void QWidget::setSizeIncrement(const QSize & );
-if (true) {
-  auto f = [](QWidget flythis, const QSize & arg1) {
-    ((QWidget*)0)->setSizeIncrement(arg1);
-    flythis.setSizeIncrement(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget16setSizeIncrementERK5QSize setSizeIncrement(const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 227, column 10>
-//   // proto:  bool QWidget::isTopLevel();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isTopLevel();
-    flythis.isTopLevel();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget10isTopLevelEv isTopLevel()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 228, column 10>
-//   // proto:  bool QWidget::isWindow();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isWindow();
-    flythis.isWindow();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget8isWindowEv isWindow()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 494, column 10>
-//   // proto:  bool QWidget::isVisible();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isVisible();
-    flythis.isVisible();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget9isVisibleEv isVisible()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 511, column 17>
-//   // proto:  void QWidget::setSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical);
-if (true) {
-  auto f = [](QWidget flythis, QSizePolicy::Policy arg1, QSizePolicy::Policy arg2) {
-    ((QWidget*)0)->setSizePolicy(arg1, arg2);
-    flythis.setSizePolicy(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_ setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 264, column 9>
-//   // proto:  int QWidget::minimumHeight();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->minimumHeight();
-    flythis.minimumHeight();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13minimumHeightEv minimumHeight()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 458, column 17>
-//   // proto:  void QWidget::update(int x, int y, int w, int h);
-if (true) {
-  auto f = [](QWidget flythis, int arg1, int arg2, int arg3, int arg4) {
-    ((QWidget*)0)->update(arg1, arg2, arg3, arg4);
-    flythis.update(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget6updateEiiii update(int, int, int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 257, column 18>
-//   // proto:  QRect QWidget::rect();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->rect();
-    flythis.rect();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget4rectEv rect()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 267, column 10>
-//   // proto:  void QWidget::setMinimumSize(const QSize & );
-if (true) {
-  auto f = [](QWidget flythis, const QSize & arg1) {
-    ((QWidget*)0)->setMinimumSize(arg1);
-    flythis.setMinimumSize(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget14setMinimumSizeERK5QSize setMinimumSize(const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 411, column 17>
-//   // proto:  void QWidget::setFocus();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->setFocus();
-    flythis.setFocus();
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget8setFocusEv setFocus()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 563, column 28>
-//   // proto:  Qt::WindowFlags QWidget::windowFlags();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->windowFlags();
-    flythis.windowFlags();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget11windowFlagsEv windowFlags()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 230, column 10>
-//   // proto:  bool QWidget::isModal();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isModal();
-    flythis.isModal();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget7isModalEv isModal()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 247, column 18>
-//   // proto:  const QRect & QWidget::geometry();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->geometry();
-    flythis.geometry();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget8geometryEv geometry()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 327, column 10>
-//   // proto:  bool QWidget::hasMouseTracking();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->hasMouseTracking();
-    flythis.hasMouseTracking();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget16hasMouseTrackingEv hasMouseTracking()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 496, column 17>
-//   // proto:  bool QWidget::isHidden();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isHidden();
-    flythis.isHidden();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget8isHiddenEv isHidden()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 569, column 21>
-//   // proto:  QWidget * QWidget::childAt(int x, int y);
-if (true) {
-  auto f = [](QWidget flythis, int arg1, int arg2) {
-    ((QWidget*)0)->childAt(arg1, arg2);
-    flythis.childAt(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget7childAtEii childAt(int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 408, column 17>
-//   // proto:  bool QWidget::isLeftToRight();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isLeftToRight();
-    flythis.isLeftToRight();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13isLeftToRightEv isLeftToRight()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 255, column 16>
-//   // proto:  int QWidget::width();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->width();
-    flythis.width();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget5widthEv width()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 234, column 10>
-//   // proto:  bool QWidget::isEnabled();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isEnabled();
-    flythis.isEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget9isEnabledEv isEnabled()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 566, column 27>
-//   // proto:  Qt::WindowType QWidget::windowType();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->windowType();
-    flythis.windowType();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget10windowTypeEv windowType()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 263, column 9>
-//   // proto:  int QWidget::minimumWidth();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->minimumWidth();
-    flythis.minimumWidth();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget12minimumWidthEv minimumWidth()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 318, column 15>
-//   // proto:  QFontInfo QWidget::fontInfo();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->fontInfo();
-    flythis.fontInfo();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget8fontInfoEv fontInfo()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 317, column 18>
-//   // proto:  QFontMetrics QWidget::fontMetrics();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->fontMetrics();
-    flythis.fontMetrics();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget11fontMetricsEv fontMetrics()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 446, column 17>
-//   // proto:  bool QWidget::updatesEnabled();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->updatesEnabled();
-    flythis.updatesEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget14updatesEnabledEv updatesEnabled()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 315, column 18>
-//   // proto:  const QFont & QWidget::font();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->font();
-    flythis.font();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget4fontEv font()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 219, column 16>
-//   // proto:  WId QWidget::internalWinId();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->internalWinId();
-    flythis.internalWinId();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13internalWinIdEv internalWinId()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 269, column 10>
-//   // proto:  void QWidget::setMaximumSize(const QSize & );
-if (true) {
-  auto f = [](QWidget flythis, const QSize & arg1) {
-    ((QWidget*)0)->setMaximumSize(arg1);
-    flythis.setMaximumSize(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget14setMaximumSizeERK5QSize setMaximumSize(const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 487, column 10>
-//   // proto:  void QWidget::resize(int w, int h);
-if (true) {
-  auto f = [](QWidget flythis, int arg1, int arg2) {
-    ((QWidget*)0)->resize(arg1, arg2);
-    flythis.resize(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget6resizeEii resize(int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 560, column 14>
-//   // proto:  QWidget * QWidget::parentWidget();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->parentWidget();
-    flythis.parentWidget();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget12parentWidgetEv parentWidget()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 489, column 17>
-//   // proto:  void QWidget::setGeometry(int x, int y, int w, int h);
-if (true) {
-  auto f = [](QWidget flythis, int arg1, int arg2, int arg3, int arg4) {
-    ((QWidget*)0)->setGeometry(arg1, arg2, arg3, arg4);
-    flythis.setGeometry(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget11setGeometryEiiii setGeometry(int, int, int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 326, column 10>
-//   // proto:  void QWidget::setMouseTracking(bool enable);
-if (true) {
-  auto f = [](QWidget flythis, bool arg1) {
-    ((QWidget*)0)->setMouseTracking(arg1);
-    flythis.setMouseTracking(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget16setMouseTrackingEb setMouseTracking(_Bool)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 284, column 10>
-//   // proto:  void QWidget::setBaseSize(const QSize & );
-if (true) {
-  auto f = [](QWidget flythis, const QSize & arg1) {
-    ((QWidget*)0)->setBaseSize(arg1);
-    flythis.setBaseSize(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget11setBaseSizeERK5QSize setBaseSize(const class QSize &)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 266, column 9>
-//   // proto:  int QWidget::maximumHeight();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->maximumHeight();
-    flythis.maximumHeight();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13maximumHeightEv maximumHeight()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 485, column 10>
-//   // proto:  void QWidget::move(int x, int y);
-if (true) {
-  auto f = [](QWidget flythis, int arg1, int arg2) {
-    ((QWidget*)0)->move(arg1, arg2);
-    flythis.move(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QWidget4moveEii move(int, int)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 303, column 21>
-//   // proto:  QWidget * QWidget::topLevelWidget();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->topLevelWidget();
-    flythis.topLevelWidget();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget14topLevelWidgetEv topLevelWidget()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 328, column 10>
-//   // proto:  bool QWidget::underMouse();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->underMouse();
-    flythis.underMouse();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget10underMouseEv underMouse()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 583, column 17>
-//   // proto:  bool QWidget::testAttribute(Qt::WidgetAttribute );
-if (true) {
-  auto f = [](QWidget flythis, Qt::WidgetAttribute arg1) {
-    ((QWidget*)0)->testAttribute(arg1);
-    flythis.testAttribute(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE testAttribute(Qt::WidgetAttribute)
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 256, column 16>
-//   // proto:  int QWidget::height();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->height();
-    flythis.height();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget6heightEv height()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 254, column 11>
-//   // proto:  QSize QWidget::size();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->size();
-    flythis.size();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget4sizeEv size()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 265, column 9>
-//   // proto:  int QWidget::maximumWidth();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->maximumWidth();
-    flythis.maximumWidth();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget12maximumWidthEv maximumWidth()
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 407, column 17>
-//   // proto:  bool QWidget::isRightToLeft();
-if (true) {
-  auto f = [](QWidget flythis) {
-    ((QWidget*)0)->isRightToLeft();
-    flythis.isRightToLeft();
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QWidget13isRightToLeftEv isRightToLeft()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
-extern "C"
-int QWidget_Class_Size()
-{
-  return sizeof(QWidget);
-}
-
-extern "C"
-int QWidgetData_Class_Size()
-{
-  return sizeof(QWidgetData);
-}
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 347, column 10>
-//   // proto:  void QWidget::setGraphicsEffect(QGraphicsEffect * effect);
-// _ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect setGraphicsEffect(class QGraphicsEffect *)
-extern "C"
-void
-C_ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect(void *qthis,
-QGraphicsEffect * arg1) {
-  ((QWidget*)qthis)->setGraphicsEffect(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 395, column 13>
-//   // proto:  QString QWidget::accessibleDescription();
-// _ZNK7QWidget21accessibleDescriptionEv accessibleDescription()
-extern "C"
-QString*
-C_ZNK7QWidget21accessibleDescriptionEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->accessibleDescription();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 346, column 22>
-//   // proto:  QGraphicsEffect * QWidget::graphicsEffect();
-// _ZNK7QWidget14graphicsEffectEv graphicsEffect()
-extern "C"
-void*
-C_ZNK7QWidget14graphicsEffectEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->graphicsEffect();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 500, column 10>
-//   // proto:  bool QWidget::isFullScreen();
-// _ZNK7QWidget12isFullScreenEv isFullScreen()
-extern "C"
-bool
-C_ZNK7QWidget12isFullScreenEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isFullScreen();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 351, column 10>
-//   // proto:  void QWidget::grabGesture(Qt::GestureType type, Qt::GestureFlags flags);
-// _ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE grabGesture(Qt::GestureType, Qt::GestureFlags)
-extern "C"
-void
-C_ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *qthis,
-Qt::GestureType* arg1,
-Qt::GestureFlags* arg2) {
-  ((QWidget*)qthis)->grabGesture(*((Qt::GestureType*)arg1),
-*((Qt::GestureFlags*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 262, column 11>
-//   // proto:  QSize QWidget::maximumSize();
-// _ZNK7QWidget11maximumSizeEv maximumSize()
-extern "C"
-QSize*
-C_ZNK7QWidget11maximumSizeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->maximumSize();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 236, column 10>
-//   // proto:  bool QWidget::isEnabledToTLW();
-// _ZNK7QWidget14isEnabledToTLWEv isEnabledToTLW()
-extern "C"
-bool
-C_ZNK7QWidget14isEnabledToTLWEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isEnabledToTLW();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 385, column 10>
-//   // proto:  void QWidget::setStatusTip(const QString & );
-// _ZN7QWidget12setStatusTipERK7QString setStatusTip(const class QString &)
-extern "C"
-void
-C_ZN7QWidget12setStatusTipERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setStatusTip(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 313, column 25>
-//   // proto:  QPalette::ColorRole QWidget::foregroundRole();
-// _ZNK7QWidget14foregroundRoleEv foregroundRole()
-extern "C"
-QPalette::ColorRole
-C_ZNK7QWidget14foregroundRoleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->foregroundRole();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 281, column 10>
-//   // proto:  void QWidget::setSizeIncrement(const QSize & );
-// _ZN7QWidget16setSizeIncrementERK5QSize setSizeIncrement(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget16setSizeIncrementERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->setSizeIncrement(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 611, column 10>
-//   // proto:  void QWidget::customContextMenuRequested(const QPoint & pos);
-// _ZN7QWidget26customContextMenuRequestedERK6QPoint customContextMenuRequested(const class QPoint &)
-extern "C"
-void
-C_ZN7QWidget26customContextMenuRequestedERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  ((QWidget*)qthis)->customContextMenuRequested(*((const QPoint*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 537, column 14>
-//   // proto:  QWidget * QWidget::focusWidget();
-// _ZNK7QWidget11focusWidgetEv focusWidget()
-extern "C"
-void*
-C_ZNK7QWidget11focusWidgetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->focusWidget();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 227, column 10>
-//   // proto:  bool QWidget::isTopLevel();
-// _ZNK7QWidget10isTopLevelEv isTopLevel()
-extern "C"
-bool
-C_ZNK7QWidget10isTopLevelEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isTopLevel();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 542, column 10>
-//   // proto:  bool QWidget::acceptDrops();
-// _ZNK7QWidget11acceptDropsEv acceptDrops()
-extern "C"
-bool
-C_ZNK7QWidget11acceptDropsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->acceptDrops();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 228, column 10>
-//   // proto:  bool QWidget::isWindow();
-// _ZNK7QWidget8isWindowEv isWindow()
-extern "C"
-bool
-C_ZNK7QWidget8isWindowEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isWindow();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 287, column 10>
-//   // proto:  void QWidget::setFixedSize(const QSize & );
-// _ZN7QWidget12setFixedSizeERK5QSize setFixedSize(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget12setFixedSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->setFixedSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 494, column 10>
-//   // proto:  bool QWidget::isVisible();
-// _ZNK7QWidget9isVisibleEv isVisible()
-extern "C"
-bool
-C_ZNK7QWidget9isVisibleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isVisible();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 511, column 17>
-//   // proto:  void QWidget::setSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical);
-// _ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_ setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy)
-extern "C"
-void
-C_ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_(void *qthis,
-QSizePolicy::Policy* arg1,
-QSizePolicy::Policy* arg2) {
-  ((QWidget*)qthis)->setSizePolicy(*((QSizePolicy::Policy*)arg1),
-*((QSizePolicy::Policy*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 264, column 9>
-//   // proto:  int QWidget::minimumHeight();
-// _ZNK7QWidget13minimumHeightEv minimumHeight()
-extern "C"
-int
-C_ZNK7QWidget13minimumHeightEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->minimumHeight();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 280, column 11>
-//   // proto:  QSize QWidget::sizeIncrement();
-// _ZNK7QWidget13sizeIncrementEv sizeIncrement()
-extern "C"
-QSize*
-C_ZNK7QWidget13sizeIncrementEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->sizeIncrement();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 463, column 10>
-//   // proto:  void QWidget::repaint(const QRect & );
-// _ZN7QWidget7repaintERK5QRect repaint(const class QRect &)
-extern "C"
-void
-C_ZN7QWidget7repaintERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QWidget*)qthis)->repaint(*((const QRect*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 458, column 17>
-//   // proto:  void QWidget::update(int x, int y, int w, int h);
-// _ZN7QWidget6updateEiiii update(int, int, int, int)
-extern "C"
-void
-C_ZN7QWidget6updateEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QWidget*)qthis)->update(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 562, column 10>
-//   // proto:  void QWidget::setWindowFlags(Qt::WindowFlags type);
-// _ZN7QWidget14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE setWindowFlags(Qt::WindowFlags)
-extern "C"
-void
-C_ZN7QWidget14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *qthis,
-Qt::WindowFlags* arg1) {
-  ((QWidget*)qthis)->setWindowFlags(*((Qt::WindowFlags*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 372, column 13>
-//   // proto:  QString QWidget::windowFilePath();
-// _ZNK7QWidget14windowFilePathEv windowFilePath()
-extern "C"
-QString*
-C_ZNK7QWidget14windowFilePathEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowFilePath();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 333, column 10>
-//   // proto:  void QWidget::clearMask();
-// _ZN7QWidget9clearMaskEv clearMask()
-extern "C"
-void
-C_ZN7QWidget9clearMaskEv(void *qthis) {
-  ((QWidget*)qthis)->clearMask();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 297, column 12>
-//   // proto:  QPoint QWidget::mapFromParent(const QPoint & );
-// _ZNK7QWidget13mapFromParentERK6QPoint mapFromParent(const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget13mapFromParentERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->mapFromParent(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 217, column 9>
-//   // proto:  WId QWidget::winId();
-// _ZNK7QWidget5winIdEv winId()
-extern "C"
-int
-C_ZNK7QWidget5winIdEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->winId();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 257, column 18>
-//   // proto:  QRect QWidget::rect();
-// _ZNK7QWidget4rectEv rect()
-extern "C"
-QRect*
-C_ZNK7QWidget4rectEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->rect();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 401, column 10>
-//   // proto:  void QWidget::unsetLayoutDirection();
-// _ZN7QWidget20unsetLayoutDirectionEv unsetLayoutDirection()
-extern "C"
-void
-C_ZN7QWidget20unsetLayoutDirectionEv(void *qthis) {
-  ((QWidget*)qthis)->unsetLayoutDirection();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 267, column 10>
-//   // proto:  void QWidget::setMinimumSize(const QSize & );
-// _ZN7QWidget14setMinimumSizeERK5QSize setMinimumSize(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget14setMinimumSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->setMinimumSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 418, column 10>
-//   // proto:  void QWidget::setFocus(Qt::FocusReason reason);
-// _ZN7QWidget8setFocusEN2Qt11FocusReasonE setFocus(Qt::FocusReason)
-extern "C"
-void
-C_ZN7QWidget8setFocusEN2Qt11FocusReasonE(void *qthis,
-Qt::FocusReason* arg1) {
-  ((QWidget*)qthis)->setFocus(*((Qt::FocusReason*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 414, column 10>
-//   // proto:  bool QWidget::isActiveWindow();
-// _ZNK7QWidget14isActiveWindowEv isActiveWindow()
-extern "C"
-bool
-C_ZNK7QWidget14isActiveWindowEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isActiveWindow();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 434, column 10>
-//   // proto:  void QWidget::grabKeyboard();
-// _ZN7QWidget12grabKeyboardEv grabKeyboard()
-extern "C"
-void
-C_ZN7QWidget12grabKeyboardEv(void *qthis) {
-  ((QWidget*)qthis)->grabKeyboard();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 253, column 11>
-//   // proto:  QSize QWidget::frameSize();
-// _ZNK7QWidget9frameSizeEv frameSize()
-extern "C"
-QSize*
-C_ZNK7QWidget9frameSizeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->frameSize();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 411, column 17>
-//   // proto:  void QWidget::setFocus();
-// _ZN7QWidget8setFocusEv setFocus()
-extern "C"
-void
-C_ZN7QWidget8setFocusEv(void *qthis) {
-  ((QWidget*)qthis)->setFocus();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 563, column 28>
-//   // proto:  Qt::WindowFlags QWidget::windowFlags();
-// _ZNK7QWidget11windowFlagsEv windowFlags()
-extern "C"
-QFlags<Qt::WindowType>*
-C_ZNK7QWidget11windowFlagsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowFlags();
-  return new QFlags<Qt::WindowType>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 296, column 12>
-//   // proto:  QPoint QWidget::mapToParent(const QPoint & );
-// _ZNK7QWidget11mapToParentERK6QPoint mapToParent(const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget11mapToParentERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->mapToParent(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 527, column 10>
-//   // proto:  void QWidget::updateGeometry();
-// _ZN7QWidget14updateGeometryEv updateGeometry()
-extern "C"
-void
-C_ZN7QWidget14updateGeometryEv(void *qthis) {
-  ((QWidget*)qthis)->updateGeometry();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 464, column 10>
-//   // proto:  void QWidget::repaint(const QRegion & );
-// _ZN7QWidget7repaintERK7QRegion repaint(const class QRegion &)
-extern "C"
-void
-C_ZN7QWidget7repaintERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  ((QWidget*)qthis)->repaint(*((const QRegion*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 555, column 10>
-//   // proto:  void QWidget::insertAction(QAction * before, QAction * action);
-// _ZN7QWidget12insertActionEP7QActionS1_ insertAction(class QAction *, class QAction *)
-extern "C"
-void
-C_ZN7QWidget12insertActionEP7QActionS1_(void *qthis,
-QAction * arg1,
-QAction * arg2) {
-  ((QWidget*)qthis)->insertAction(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 369, column 10>
-//   // proto:  void QWidget::setWindowRole(const QString & );
-// _ZN7QWidget13setWindowRoleERK7QString setWindowRole(const class QString &)
-extern "C"
-void
-C_ZN7QWidget13setWindowRoleERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setWindowRole(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 382, column 9>
-//   // proto:  int QWidget::toolTipDuration();
-// _ZNK7QWidget15toolTipDurationEv toolTipDuration()
-extern "C"
-int
-C_ZNK7QWidget15toolTipDurationEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->toolTipDuration();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 307, column 10>
-//   // proto:  void QWidget::setPalette(const QPalette & );
-// _ZN7QWidget10setPaletteERK8QPalette setPalette(const class QPalette &)
-extern "C"
-void
-C_ZN7QWidget10setPaletteERK8QPalette(void *qthis,
-const QPalette* arg1) {
-  ((QWidget*)qthis)->setPalette(*((const QPalette*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 212, column 14>
-//   // proto:  void QWidget::QWidget(QWidget * parent, Qt::WindowFlags f);
-extern "C"
-QWidget*
-C_ZN7QWidgetC2EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * arg1,
-Qt::WindowFlags* arg2) {
-  auto ret = new QWidget(arg1,
-*((Qt::WindowFlags*)arg2));
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 358, column 10>
-//   // proto:  void QWidget::setStyleSheet(const QString & styleSheet);
-// _ZN7QWidget13setStyleSheetERK7QString setStyleSheet(const class QString &)
-extern "C"
-void
-C_ZN7QWidget13setStyleSheetERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setStyleSheet(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 368, column 13>
-//   // proto:  QString QWidget::windowIconText();
-// _ZNK7QWidget14windowIconTextEv windowIconText()
-extern "C"
-QString*
-C_ZNK7QWidget14windowIconTextEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowIconText();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 582, column 10>
-//   // proto:  void QWidget::setAttribute(Qt::WidgetAttribute , bool on);
-// _ZN7QWidget12setAttributeEN2Qt15WidgetAttributeEb setAttribute(Qt::WidgetAttribute, _Bool)
-extern "C"
-void
-C_ZN7QWidget12setAttributeEN2Qt15WidgetAttributeEb(void *qthis,
-Qt::WidgetAttribute* arg1,
-bool arg2) {
-  ((QWidget*)qthis)->setAttribute(*((Qt::WidgetAttribute*)arg1),
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 433, column 10>
-//   // proto:  void QWidget::releaseMouse();
-// _ZN7QWidget12releaseMouseEv releaseMouse()
-extern "C"
-void
-C_ZN7QWidget12releaseMouseEv(void *qthis) {
-  ((QWidget*)qthis)->releaseMouse();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 230, column 10>
-//   // proto:  bool QWidget::isModal();
-// _ZNK7QWidget7isModalEv isModal()
-extern "C"
-bool
-C_ZNK7QWidget7isModalEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isModal();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 224, column 10>
-//   // proto:  void QWidget::setStyle(QStyle * );
-// _ZN7QWidget8setStyleEP6QStyle setStyle(class QStyle *)
-extern "C"
-void
-C_ZN7QWidget8setStyleEP6QStyle(void *qthis,
-QStyle * arg1) {
-  ((QWidget*)qthis)->setStyle(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 455, column 10>
-//   // proto:  void QWidget::repaint();
-// _ZN7QWidget7repaintEv repaint()
-extern "C"
-void
-C_ZN7QWidget7repaintEv(void *qthis) {
-  ((QWidget*)qthis)->repaint();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 285, column 10>
-//   // proto:  void QWidget::setBaseSize(int basew, int baseh);
-// _ZN7QWidget11setBaseSizeEii setBaseSize(int, int)
-extern "C"
-void
-C_ZN7QWidget11setBaseSizeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->setBaseSize(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 339, column 10>
-//   // proto:  void QWidget::render(QPainter * painter, const QPoint & targetOffset, const QRegion & sourceRegion, RenderFlags renderFlags);
-// _ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE render(class QPainter *, const class QPoint &, const class QRegion &, RenderFlags)
-extern "C"
-void
-C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *qthis,
-QPainter * arg1,
-const QPoint* arg2,
-const QRegion* arg3,
-QWidget::RenderFlags arg4) {
-  ((QWidget*)qthis)->render(arg1,
-*((const QPoint*)arg2),
-*((const QRegion*)arg3),
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 377, column 10>
-//   // proto:  bool QWidget::isWindowModified();
-// _ZNK7QWidget16isWindowModifiedEv isWindowModified()
-extern "C"
-bool
-C_ZNK7QWidget16isWindowModifiedEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isWindowModified();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 247, column 18>
-//   // proto:  const QRect & QWidget::geometry();
-// _ZNK7QWidget8geometryEv geometry()
-extern "C"
-QRect*
-C_ZNK7QWidget8geometryEv(void *qthis) {
-  auto& ret =
-  ((QWidget*)qthis)->geometry();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 530, column 10>
-//   // proto:  void QWidget::setParent(QWidget * parent, Qt::WindowFlags f);
-// _ZN7QWidget9setParentEPS_6QFlagsIN2Qt10WindowTypeEE setParent(class QWidget *, Qt::WindowFlags)
-extern "C"
-void
-C_ZN7QWidget9setParentEPS_6QFlagsIN2Qt10WindowTypeEE(void *qthis,
-QWidget * arg1,
-Qt::WindowFlags* arg2) {
-  ((QWidget*)qthis)->setParent(arg1,
-*((Qt::WindowFlags*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 220, column 9>
-//   // proto:  WId QWidget::effectiveWinId();
-// _ZNK7QWidget14effectiveWinIdEv effectiveWinId()
-extern "C"
-int
-C_ZNK7QWidget14effectiveWinIdEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->effectiveWinId();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 396, column 10>
-//   // proto:  void QWidget::setAccessibleDescription(const QString & description);
-// _ZN7QWidget24setAccessibleDescriptionERK7QString setAccessibleDescription(const class QString &)
-extern "C"
-void
-C_ZN7QWidget24setAccessibleDescriptionERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setAccessibleDescription(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 503, column 10>
-//   // proto:  void QWidget::setWindowState(Qt::WindowStates state);
-// _ZN7QWidget14setWindowStateE6QFlagsIN2Qt11WindowStateEE setWindowState(Qt::WindowStates)
-extern "C"
-void
-C_ZN7QWidget14setWindowStateE6QFlagsIN2Qt11WindowStateEE(void *qthis,
-Qt::WindowStates* arg1) {
-  ((QWidget*)qthis)->setWindowState(*((Qt::WindowStates*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 608, column 10>
-//   // proto:  void QWidget::windowTitleChanged(const QString & title);
-// _ZN7QWidget18windowTitleChangedERK7QString windowTitleChanged(const class QString &)
-extern "C"
-void
-C_ZN7QWidget18windowTitleChangedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->windowTitleChanged(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 538, column 14>
-//   // proto:  QWidget * QWidget::nextInFocusChain();
-// _ZNK7QWidget16nextInFocusChainEv nextInFocusChain()
-extern "C"
-void*
-C_ZNK7QWidget16nextInFocusChainEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->nextInFocusChain();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 422, column 17>
-//   // proto: static void QWidget::setTabOrder(QWidget * , QWidget * );
-// _ZN7QWidget11setTabOrderEPS_S0_ setTabOrder(class QWidget *, class QWidget *)
-extern "C"
-void
-C_ZN7QWidget11setTabOrderEPS_S0_(QWidget * arg1,
-QWidget * arg2) {
-  QWidget::setTabOrder(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 246, column 11>
-//   // proto:  QRect QWidget::frameGeometry();
-// _ZNK7QWidget13frameGeometryEv frameGeometry()
-extern "C"
-QRect*
-C_ZNK7QWidget13frameGeometryEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->frameGeometry();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 420, column 10>
-//   // proto:  void QWidget::setFocusPolicy(Qt::FocusPolicy policy);
-// _ZN7QWidget14setFocusPolicyEN2Qt11FocusPolicyE setFocusPolicy(Qt::FocusPolicy)
-extern "C"
-void
-C_ZN7QWidget14setFocusPolicyEN2Qt11FocusPolicyE(void *qthis,
-Qt::FocusPolicy* arg1) {
-  ((QWidget*)qthis)->setFocusPolicy(*((Qt::FocusPolicy*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 506, column 19>
-//   // proto:  QSize QWidget::sizeHint();
-// _ZNK7QWidget8sizeHintEv sizeHint()
-extern "C"
-QSize*
-C_ZNK7QWidget8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->sizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 271, column 10>
-//   // proto:  void QWidget::setMinimumWidth(int minw);
-// _ZN7QWidget15setMinimumWidthEi setMinimumWidth(int)
-extern "C"
-void
-C_ZN7QWidget15setMinimumWidthEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setMinimumWidth(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 495, column 10>
-//   // proto:  bool QWidget::isVisibleTo(const QWidget * );
-// _ZNK7QWidget11isVisibleToEPKS_ isVisibleTo(const class QWidget *)
-extern "C"
-bool
-C_ZNK7QWidget11isVisibleToEPKS_(void *qthis,
-const QWidget * arg1) {
-  auto ret =
-  ((QWidget*)qthis)->isVisibleTo(arg1);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 270, column 10>
-//   // proto:  void QWidget::setMaximumSize(int maxw, int maxh);
-// _ZN7QWidget14setMaximumSizeEii setMaximumSize(int, int)
-extern "C"
-void
-C_ZN7QWidget14setMaximumSizeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->setMaximumSize(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 327, column 10>
-//   // proto:  bool QWidget::hasMouseTracking();
-// _ZNK7QWidget16hasMouseTrackingEv hasMouseTracking()
-extern "C"
-bool
-C_ZNK7QWidget16hasMouseTrackingEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->hasMouseTracking();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 459, column 10>
-//   // proto:  void QWidget::update(const QRect & );
-// _ZN7QWidget6updateERK5QRect update(const class QRect &)
-extern "C"
-void
-C_ZN7QWidget6updateERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QWidget*)qthis)->update(*((const QRect*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 496, column 17>
-//   // proto:  bool QWidget::isHidden();
-// _ZNK7QWidget8isHiddenEv isHidden()
-extern "C"
-bool
-C_ZNK7QWidget8isHiddenEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isHidden();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 215, column 9>
-//   // proto:  int QWidget::devType();
-// _ZNK7QWidget7devTypeEv devType()
-extern "C"
-int
-C_ZNK7QWidget7devTypeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->devType();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 569, column 21>
-//   // proto:  QWidget * QWidget::childAt(int x, int y);
-// _ZNK7QWidget7childAtEii childAt(int, int)
-extern "C"
-void*
-C_ZNK7QWidget7childAtEii(void *qthis,
-int arg1,
-int arg2) {
-  auto ret =
-  ((QWidget*)qthis)->childAt(arg1,
-arg2);
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 415, column 10>
-//   // proto:  void QWidget::activateWindow();
-// _ZN7QWidget14activateWindowEv activateWindow()
-extern "C"
-void
-C_ZN7QWidget14activateWindowEv(void *qthis) {
-  ((QWidget*)qthis)->activateWindow();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 352, column 10>
-//   // proto:  void QWidget::ungrabGesture(Qt::GestureType type);
-// _ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE ungrabGesture(Qt::GestureType)
-extern "C"
-void
-C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *qthis,
-Qt::GestureType* arg1) {
-  ((QWidget*)qthis)->ungrabGesture(*((Qt::GestureType*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 248, column 11>
-//   // proto:  QRect QWidget::normalGeometry();
-// _ZNK7QWidget14normalGeometryEv normalGeometry()
-extern "C"
-QRect*
-C_ZNK7QWidget14normalGeometryEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->normalGeometry();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 364, column 13>
-//   // proto:  QString QWidget::windowTitle();
-// _ZNK7QWidget11windowTitleEv windowTitle()
-extern "C"
-QString*
-C_ZNK7QWidget11windowTitleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowTitle();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 431, column 10>
-//   // proto:  void QWidget::grabMouse(const QCursor & );
-// _ZN7QWidget9grabMouseERK7QCursor grabMouse(const class QCursor &)
-extern "C"
-void
-C_ZN7QWidget9grabMouseERK7QCursor(void *qthis,
-const QCursor* arg1) {
-  ((QWidget*)qthis)->grabMouse(*((const QCursor*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 343, column 25>
-//   // proto:  QPixmap QWidget::grab(const QRect & rectangle);
-// _ZN7QWidget4grabERK5QRect grab(const class QRect &)
-extern "C"
-QPixmap*
-C_ZN7QWidget4grabERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->grab(*((const QRect*)arg1));
-  return new QPixmap(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 469, column 18>
-//   // proto:  void QWidget::setVisible(bool visible);
-// _ZN7QWidget10setVisibleEb setVisible(_Bool)
-extern "C"
-void
-C_ZN7QWidget10setVisibleEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setVisible(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 235, column 10>
-//   // proto:  bool QWidget::isEnabledTo(const QWidget * );
-// _ZNK7QWidget11isEnabledToEPKS_ isEnabledTo(const class QWidget *)
-extern "C"
-bool
-C_ZNK7QWidget11isEnabledToEPKS_(void *qthis,
-const QWidget * arg1) {
-  auto ret =
-  ((QWidget*)qthis)->isEnabledTo(arg1);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 408, column 17>
-//   // proto:  bool QWidget::isLeftToRight();
-// _ZNK7QWidget13isLeftToRightEv isLeftToRight()
-extern "C"
-bool
-C_ZNK7QWidget13isLeftToRightEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isLeftToRight();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 490, column 10>
-//   // proto:  void QWidget::setGeometry(const QRect & );
-// _ZN7QWidget11setGeometryERK5QRect setGeometry(const class QRect &)
-extern "C"
-void
-C_ZN7QWidget11setGeometryERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QWidget*)qthis)->setGeometry(*((const QRect*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 405, column 10>
-//   // proto:  void QWidget::unsetLocale();
-// _ZN7QWidget11unsetLocaleEv unsetLocale()
-extern "C"
-void
-C_ZN7QWidget11unsetLocaleEv(void *qthis) {
-  ((QWidget*)qthis)->unsetLocale();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 477, column 10>
-//   // proto:  void QWidget::showNormal();
-// _ZN7QWidget10showNormalEv showNormal()
-extern "C"
-void
-C_ZN7QWidget10showNormalEv(void *qthis) {
-  ((QWidget*)qthis)->showNormal();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 251, column 9>
-//   // proto:  int QWidget::y();
-// _ZNK7QWidget1yEv y()
-extern "C"
-int
-C_ZNK7QWidget1yEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->y();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 255, column 16>
-//   // proto:  int QWidget::width();
-// _ZNK7QWidget5widthEv width()
-extern "C"
-int
-C_ZNK7QWidget5widthEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->width();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 499, column 10>
-//   // proto:  bool QWidget::isMaximized();
-// _ZNK7QWidget11isMaximizedEv isMaximized()
-extern "C"
-bool
-C_ZNK7QWidget11isMaximizedEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isMaximized();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 488, column 10>
-//   // proto:  void QWidget::resize(const QSize & );
-// _ZN7QWidget6resizeERK5QSize resize(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget6resizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->resize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 601, column 14>
-//   // proto:  QWindow * QWidget::windowHandle();
-// _ZNK7QWidget12windowHandleEv windowHandle()
-extern "C"
-void*
-C_ZNK7QWidget12windowHandleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowHandle();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 393, column 13>
-//   // proto:  QString QWidget::accessibleName();
-// _ZNK7QWidget14accessibleNameEv accessibleName()
-extern "C"
-QString*
-C_ZNK7QWidget14accessibleNameEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->accessibleName();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 518, column 10>
-//   // proto:  void QWidget::setContentsMargins(const QMargins & margins);
-// _ZN7QWidget18setContentsMarginsERK8QMargins setContentsMargins(const class QMargins &)
-extern "C"
-void
-C_ZN7QWidget18setContentsMarginsERK8QMargins(void *qthis,
-const QMargins* arg1) {
-  ((QWidget*)qthis)->setContentsMargins(*((const QMargins*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 491, column 16>
-//   // proto:  QByteArray QWidget::saveGeometry();
-// _ZNK7QWidget12saveGeometryEv saveGeometry()
-extern "C"
-QByteArray*
-C_ZNK7QWidget12saveGeometryEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->saveGeometry();
-  return new QByteArray(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 234, column 10>
-//   // proto:  bool QWidget::isEnabled();
-// _ZNK7QWidget9isEnabledEv isEnabled()
-extern "C"
-bool
-C_ZNK7QWidget9isEnabledEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isEnabled();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 290, column 10>
-//   // proto:  void QWidget::setFixedHeight(int h);
-// _ZN7QWidget14setFixedHeightEi setFixedHeight(int)
-extern "C"
-void
-C_ZN7QWidget14setFixedHeightEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setFixedHeight(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 332, column 13>
-//   // proto:  QRegion QWidget::mask();
-// _ZNK7QWidget4maskEv mask()
-extern "C"
-QRegion*
-C_ZNK7QWidget4maskEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->mask();
-  return new QRegion(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 484, column 10>
-//   // proto:  void QWidget::stackUnder(QWidget * );
-// _ZN7QWidget10stackUnderEPS_ stackUnder(class QWidget *)
-extern "C"
-void
-C_ZN7QWidget10stackUnderEPS_(void *qthis,
-QWidget * arg1) {
-  ((QWidget*)qthis)->stackUnder(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 585, column 19>
-//   // proto:  QPaintEngine * QWidget::paintEngine();
-// _ZNK7QWidget11paintEngineEv paintEngine()
-extern "C"
-void*
-C_ZNK7QWidget11paintEngineEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->paintEngine();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 603, column 21>
-//   // proto: static QWidget * QWidget::createWindowContainer(QWindow * window, QWidget * parent, Qt::WindowFlags flags);
-// _ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE createWindowContainer(class QWindow *, class QWidget *, Qt::WindowFlags)
-extern "C"
-void*
-C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE(QWindow * arg1,
-QWidget * arg2,
-Qt::WindowFlags* arg3) {
-  auto ret =
-  QWidget::createWindowContainer(arg1,
-arg2,
-*((Qt::WindowFlags*)arg3));
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 543, column 10>
-//   // proto:  void QWidget::setAcceptDrops(bool on);
-// _ZN7QWidget14setAcceptDropsEb setAcceptDrops(_Bool)
-extern "C"
-void
-C_ZN7QWidget14setAcceptDropsEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setAcceptDrops(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 486, column 10>
-//   // proto:  void QWidget::move(const QPoint & );
-// _ZN7QWidget4moveERK6QPoint move(const class QPoint &)
-extern "C"
-void
-C_ZN7QWidget4moveERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  ((QWidget*)qthis)->move(*((const QPoint*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 557, column 21>
-//   // proto:  QList<QAction *> QWidget::actions();
-// _ZNK7QWidget7actionsEv actions()
-extern "C"
-QList<QAction *>*
-C_ZNK7QWidget7actionsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->actions();
-  return new QList<QAction *>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 566, column 27>
-//   // proto:  Qt::WindowType QWidget::windowType();
-// _ZNK7QWidget10windowTypeEv windowType()
-extern "C"
-Qt::WindowType
-C_ZNK7QWidget10windowTypeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowType();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 471, column 10>
-//   // proto:  void QWidget::show();
-// _ZN7QWidget4showEv show()
-extern "C"
-void
-C_ZN7QWidget4showEv(void *qthis) {
-  ((QWidget*)qthis)->show();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 443, column 21>
-//   // proto: static QWidget * QWidget::keyboardGrabber();
-// _ZN7QWidget15keyboardGrabberEv keyboardGrabber()
-extern "C"
-void*
-C_ZN7QWidget15keyboardGrabberEv() {
-  auto ret =
-  QWidget::keyboardGrabber();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 298, column 12>
-//   // proto:  QPoint QWidget::mapTo(const QWidget * , const QPoint & );
-// _ZNK7QWidget5mapToEPKS_RK6QPoint mapTo(const class QWidget *, const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget5mapToEPKS_RK6QPoint(void *qthis,
-const QWidget * arg1,
-const QPoint* arg2) {
-  auto ret =
-  ((QWidget*)qthis)->mapTo(arg1,
-*((const QPoint*)arg2));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 263, column 9>
-//   // proto:  int QWidget::minimumWidth();
-// _ZNK7QWidget12minimumWidthEv minimumWidth()
-extern "C"
-int
-C_ZNK7QWidget12minimumWidthEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->minimumWidth();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 318, column 15>
-//   // proto:  QFontInfo QWidget::fontInfo();
-// _ZNK7QWidget8fontInfoEv fontInfo()
-extern "C"
-QFontInfo*
-C_ZNK7QWidget8fontInfoEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->fontInfo();
-  return new QFontInfo(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 425, column 27>
-//   // proto:  Qt::ContextMenuPolicy QWidget::contextMenuPolicy();
-// _ZNK7QWidget17contextMenuPolicyEv contextMenuPolicy()
-extern "C"
-Qt::ContextMenuPolicy
-C_ZNK7QWidget17contextMenuPolicyEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->contextMenuPolicy();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 666, column 26>
-//   // proto:  Qt::InputMethodHints QWidget::inputMethodHints();
-// _ZNK7QWidget16inputMethodHintsEv inputMethodHints()
-extern "C"
-QFlags<Qt::InputMethodHint>*
-C_ZNK7QWidget16inputMethodHintsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->inputMethodHints();
-  return new QFlags<Qt::InputMethodHint>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 596, column 10>
-//   // proto:  bool QWidget::autoFillBackground();
-// _ZNK7QWidget18autoFillBackgroundEv autoFillBackground()
-extern "C"
-bool
-C_ZNK7QWidget18autoFillBackgroundEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->autoFillBackground();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 533, column 10>
-//   // proto:  void QWidget::scroll(int dx, int dy, const QRect & );
-// _ZN7QWidget6scrollEiiRK5QRect scroll(int, int, const class QRect &)
-extern "C"
-void
-C_ZN7QWidget6scrollEiiRK5QRect(void *qthis,
-int arg1,
-int arg2,
-const QRect* arg3) {
-  ((QWidget*)qthis)->scroll(arg1,
-arg2,
-*((const QRect*)arg3));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 317, column 18>
-//   // proto:  QFontMetrics QWidget::fontMetrics();
-// _ZNK7QWidget11fontMetricsEv fontMetrics()
-extern "C"
-QFontMetrics*
-C_ZNK7QWidget11fontMetricsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->fontMetrics();
-  return new QFontMetrics(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 493, column 10>
-//   // proto:  void QWidget::adjustSize();
-// _ZN7QWidget10adjustSizeEv adjustSize()
-extern "C"
-void
-C_ZN7QWidget10adjustSizeEv(void *qthis) {
-  ((QWidget*)qthis)->adjustSize();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 437, column 9>
-//   // proto:  int QWidget::grabShortcut(const QKeySequence & key, Qt::ShortcutContext context);
-// _ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE grabShortcut(const class QKeySequence &, Qt::ShortcutContext)
-extern "C"
-int
-C_ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *qthis,
-const QKeySequence* arg1,
-Qt::ShortcutContext* arg2) {
-  auto ret =
-  ((QWidget*)qthis)->grabShortcut(*((const QKeySequence*)arg1),
-*((Qt::ShortcutContext*)arg2));
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 539, column 14>
-//   // proto:  QWidget * QWidget::previousInFocusChain();
-// _ZNK7QWidget20previousInFocusChainEv previousInFocusChain()
-extern "C"
-void*
-C_ZNK7QWidget20previousInFocusChainEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->previousInFocusChain();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 312, column 10>
-//   // proto:  void QWidget::setForegroundRole(QPalette::ColorRole );
-// _ZN7QWidget17setForegroundRoleEN8QPalette9ColorRoleE setForegroundRole(class QPalette::ColorRole)
-extern "C"
-void
-C_ZN7QWidget17setForegroundRoleEN8QPalette9ColorRoleE(void *qthis,
-QPalette::ColorRole* arg1) {
-  ((QWidget*)qthis)->setForegroundRole(*((QPalette::ColorRole*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 446, column 17>
-//   // proto:  bool QWidget::updatesEnabled();
-// _ZNK7QWidget14updatesEnabledEv updatesEnabled()
-extern "C"
-bool
-C_ZNK7QWidget14updatesEnabledEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->updatesEnabled();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 504, column 10>
-//   // proto:  void QWidget::overrideWindowState(Qt::WindowStates state);
-// _ZN7QWidget19overrideWindowStateE6QFlagsIN2Qt11WindowStateEE overrideWindowState(Qt::WindowStates)
-extern "C"
-void
-C_ZN7QWidget19overrideWindowStateE6QFlagsIN2Qt11WindowStateEE(void *qthis,
-Qt::WindowStates* arg1) {
-  ((QWidget*)qthis)->overrideWindowState(*((Qt::WindowStates*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 274, column 10>
-//   // proto:  void QWidget::setMaximumHeight(int maxh);
-// _ZN7QWidget16setMaximumHeightEi setMaximumHeight(int)
-extern "C"
-void
-C_ZN7QWidget16setMaximumHeightEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setMaximumHeight(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 475, column 10>
-//   // proto:  void QWidget::showMaximized();
-// _ZN7QWidget13showMaximizedEv showMaximized()
-extern "C"
-void
-C_ZN7QWidget13showMaximizedEv(void *qthis) {
-  ((QWidget*)qthis)->showMaximized();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 299, column 12>
-//   // proto:  QPoint QWidget::mapFrom(const QWidget * , const QPoint & );
-// _ZNK7QWidget7mapFromEPKS_RK6QPoint mapFrom(const class QWidget *, const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget7mapFromEPKS_RK6QPoint(void *qthis,
-const QWidget * arg1,
-const QPoint* arg2) {
-  auto ret =
-  ((QWidget*)qthis)->mapFrom(arg1,
-*((const QPoint*)arg2));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 250, column 9>
-//   // proto:  int QWidget::x();
-// _ZNK7QWidget1xEv x()
-extern "C"
-int
-C_ZNK7QWidget1xEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->x();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 416, column 10>
-//   // proto:  void QWidget::clearFocus();
-// _ZN7QWidget10clearFocusEv clearFocus()
-extern "C"
-void
-C_ZN7QWidget10clearFocusEv(void *qthis) {
-  ((QWidget*)qthis)->clearFocus();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 400, column 25>
-//   // proto:  Qt::LayoutDirection QWidget::layoutDirection();
-// _ZNK7QWidget15layoutDirectionEv layoutDirection()
-extern "C"
-Qt::LayoutDirection
-C_ZNK7QWidget15layoutDirectionEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->layoutDirection();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 568, column 21>
-//   // proto: static QWidget * QWidget::find(WId );
-// _ZN7QWidget4findEi find(WId)
-extern "C"
-void*
-C_ZN7QWidget4findEi(WId arg1) {
-  auto ret =
-  QWidget::find(arg1);
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 306, column 21>
-//   // proto:  const QPalette & QWidget::palette();
-// _ZNK7QWidget7paletteEv palette()
-extern "C"
-QPalette*
-C_ZNK7QWidget7paletteEv(void *qthis) {
-  auto& ret =
-  ((QWidget*)qthis)->palette();
-  return new QPalette(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 510, column 10>
-//   // proto:  void QWidget::setSizePolicy(QSizePolicy );
-// _ZN7QWidget13setSizePolicyE11QSizePolicy setSizePolicy(class QSizePolicy)
-extern "C"
-void
-C_ZN7QWidget13setSizePolicyE11QSizePolicy(void *qthis,
-QSizePolicy* arg1) {
-  ((QWidget*)qthis)->setSizePolicy(*((QSizePolicy*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 331, column 10>
-//   // proto:  void QWidget::setMask(const QRegion & );
-// _ZN7QWidget7setMaskERK7QRegion setMask(const class QRegion &)
-extern "C"
-void
-C_ZN7QWidget7setMaskERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  ((QWidget*)qthis)->setMask(*((const QRegion*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 273, column 10>
-//   // proto:  void QWidget::setMaximumWidth(int maxw);
-// _ZN7QWidget15setMaximumWidthEi setMaximumWidth(int)
-extern "C"
-void
-C_ZN7QWidget15setMaximumWidthEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setMaximumWidth(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 367, column 10>
-//   // proto:  void QWidget::setWindowIconText(const QString & );
-// _ZN7QWidget17setWindowIconTextERK7QString setWindowIconText(const class QString &)
-extern "C"
-void
-C_ZN7QWidget17setWindowIconTextERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setWindowIconText(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 365, column 10>
-//   // proto:  void QWidget::setWindowIcon(const QIcon & icon);
-// _ZN7QWidget13setWindowIconERK5QIcon setWindowIcon(const class QIcon &)
-extern "C"
-void
-C_ZN7QWidget13setWindowIconERK5QIcon(void *qthis,
-const QIcon* arg1) {
-  ((QWidget*)qthis)->setWindowIcon(*((const QIcon*)arg1));
-}
-//   // proto:  void QWidget::~QWidget();
-extern "C"
-void C_ZN7QWidgetD2Ev(void *qthis) {
-  delete (QWidget*)qthis;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 519, column 10>
-//   // proto:  void QWidget::getContentsMargins(int * left, int * top, int * right, int * bottom);
-// _ZNK7QWidget18getContentsMarginsEPiS0_S0_S0_ getContentsMargins(int *, int *, int *, int *)
-extern "C"
-void
-C_ZNK7QWidget18getContentsMarginsEPiS0_S0_S0_(void *qthis,
-int * arg1,
-int * arg2,
-int * arg3,
-int * arg4) {
-  ((QWidget*)qthis)->getContentsMargins(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 507, column 19>
-//   // proto:  QSize QWidget::minimumSizeHint();
-// _ZNK7QWidget15minimumSizeHintEv minimumSizeHint()
-extern "C"
-QSize*
-C_ZNK7QWidget15minimumSizeHintEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->minimumSizeHint();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 241, column 10>
-//   // proto:  void QWidget::setWindowModified(bool );
-// _ZN7QWidget17setWindowModifiedEb setWindowModified(_Bool)
-extern "C"
-void
-C_ZN7QWidget17setWindowModifiedEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setWindowModified(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 492, column 10>
-//   // proto:  bool QWidget::restoreGeometry(const QByteArray & geometry);
-// _ZN7QWidget15restoreGeometryERK10QByteArray restoreGeometry(const class QByteArray &)
-extern "C"
-bool
-C_ZN7QWidget15restoreGeometryERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->restoreGeometry(*((const QByteArray*)arg1));
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 525, column 14>
-//   // proto:  QLayout * QWidget::layout();
-// _ZNK7QWidget6layoutEv layout()
-extern "C"
-void*
-C_ZNK7QWidget6layoutEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->layout();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 522, column 11>
-//   // proto:  QRect QWidget::contentsRect();
-// _ZNK7QWidget12contentsRectEv contentsRect()
-extern "C"
-QRect*
-C_ZNK7QWidget12contentsRectEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->contentsRect();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 664, column 22>
-//   // proto:  QVariant QWidget::inputMethodQuery(Qt::InputMethodQuery );
-// _ZNK7QWidget16inputMethodQueryEN2Qt16InputMethodQueryE inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
-QVariant*
-C_ZNK7QWidget16inputMethodQueryEN2Qt16InputMethodQueryE(void *qthis,
-Qt::InputMethodQuery* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->inputMethodQuery(*((Qt::InputMethodQuery*)arg1));
-  return new QVariant(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 599, column 20>
-//   // proto:  QBackingStore * QWidget::backingStore();
-// _ZNK7QWidget12backingStoreEv backingStore()
-extern "C"
-void*
-C_ZNK7QWidget12backingStoreEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->backingStore();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 424, column 14>
-//   // proto:  QWidget * QWidget::focusProxy();
-// _ZNK7QWidget10focusProxyEv focusProxy()
-extern "C"
-void*
-C_ZNK7QWidget10focusProxyEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->focusProxy();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 362, column 13>
-//   // proto:  QString QWidget::styleSheet();
-// _ZNK7QWidget10styleSheetEv styleSheet()
-extern "C"
-QString*
-C_ZNK7QWidget10styleSheetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->styleSheet();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 570, column 14>
-//   // proto:  QWidget * QWidget::childAt(const QPoint & p);
-// _ZNK7QWidget7childAtERK6QPoint childAt(const class QPoint &)
-extern "C"
-void*
-C_ZNK7QWidget7childAtERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->childAt(*((const QPoint*)arg1));
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 462, column 10>
-//   // proto:  void QWidget::repaint(int x, int y, int w, int h);
-// _ZN7QWidget7repaintEiiii repaint(int, int, int, int)
-extern "C"
-void
-C_ZN7QWidget7repaintEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QWidget*)qthis)->repaint(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 390, column 13>
-//   // proto:  QString QWidget::whatsThis();
-// _ZNK7QWidget9whatsThisEv whatsThis()
-extern "C"
-QString*
-C_ZNK7QWidget9whatsThisEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->whatsThis();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 315, column 18>
-//   // proto:  const QFont & QWidget::font();
-// _ZNK7QWidget4fontEv font()
-extern "C"
-QFont*
-C_ZNK7QWidget4fontEv(void *qthis) {
-  auto& ret =
-  ((QWidget*)qthis)->font();
-  return new QFont(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 268, column 10>
-//   // proto:  void QWidget::setMinimumSize(int minw, int minh);
-// _ZN7QWidget14setMinimumSizeEii setMinimumSize(int, int)
-extern "C"
-void
-C_ZN7QWidget14setMinimumSizeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->setMinimumSize(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 309, column 10>
-//   // proto:  void QWidget::setBackgroundRole(QPalette::ColorRole );
-// _ZN7QWidget17setBackgroundRoleEN8QPalette9ColorRoleE setBackgroundRole(class QPalette::ColorRole)
-extern "C"
-void
-C_ZN7QWidget17setBackgroundRoleEN8QPalette9ColorRoleE(void *qthis,
-QPalette::ColorRole* arg1) {
-  ((QWidget*)qthis)->setBackgroundRole(*((QPalette::ColorRole*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 219, column 16>
-//   // proto:  WId QWidget::internalWinId();
-// _ZNK7QWidget13internalWinIdEv internalWinId()
-extern "C"
-int
-C_ZNK7QWidget13internalWinIdEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->internalWinId();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 129, column 5>
-//   // proto:  const QMetaObject * QWidget::metaObject();
-// _ZNK7QWidget10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK7QWidget10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->metaObject();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 272, column 10>
-//   // proto:  void QWidget::setMinimumHeight(int minh);
-// _ZN7QWidget16setMinimumHeightEi setMinimumHeight(int)
-extern "C"
-void
-C_ZN7QWidget16setMinimumHeightEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setMinimumHeight(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 419, column 21>
-//   // proto:  Qt::FocusPolicy QWidget::focusPolicy();
-// _ZNK7QWidget11focusPolicyEv focusPolicy()
-extern "C"
-Qt::FocusPolicy
-C_ZNK7QWidget11focusPolicyEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->focusPolicy();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 460, column 10>
-//   // proto:  void QWidget::update(const QRegion & );
-// _ZN7QWidget6updateERK7QRegion update(const class QRegion &)
-extern "C"
-void
-C_ZN7QWidget6updateERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  ((QWidget*)qthis)->update(*((const QRegion*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 552, column 10>
-//   // proto:  void QWidget::addActions(QList<QAction *> actions);
-// _ZN7QWidget10addActionsE5QListIP7QActionE addActions(QList<class QAction *>)
-extern "C"
-void
-C_ZN7QWidget10addActionsE5QListIP7QActionE(void *qthis,
-QList<QAction *>* arg1) {
-  ((QWidget*)qthis)->addActions(*((QList<QAction *>*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 375, column 11>
-//   // proto:  qreal QWidget::windowOpacity();
-// _ZNK7QWidget13windowOpacityEv windowOpacity()
-extern "C"
-double
-C_ZNK7QWidget13windowOpacityEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowOpacity();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 259, column 13>
-//   // proto:  QRegion QWidget::childrenRegion();
-// _ZNK7QWidget14childrenRegionEv childrenRegion()
-extern "C"
-QRegion*
-C_ZNK7QWidget14childrenRegionEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->childrenRegion();
-  return new QRegion(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 371, column 10>
-//   // proto:  void QWidget::setWindowFilePath(const QString & filePath);
-// _ZN7QWidget17setWindowFilePathERK7QString setWindowFilePath(const class QString &)
-extern "C"
-void
-C_ZN7QWidget17setWindowFilePathERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setWindowFilePath(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 439, column 10>
-//   // proto:  void QWidget::setShortcutEnabled(int id, bool enable);
-// _ZN7QWidget18setShortcutEnabledEib setShortcutEnabled(int, _Bool)
-extern "C"
-void
-C_ZN7QWidget18setShortcutEnabledEib(void *qthis,
-int arg1,
-bool arg2) {
-  ((QWidget*)qthis)->setShortcutEnabled(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 480, column 10>
-//   // proto:  void QWidget::raise();
-// _ZN7QWidget5raiseEv raise()
-extern "C"
-void
-C_ZN7QWidget5raiseEv(void *qthis) {
-  ((QWidget*)qthis)->raise();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 386, column 13>
-//   // proto:  QString QWidget::statusTip();
-// _ZNK7QWidget9statusTipEv statusTip()
-extern "C"
-QString*
-C_ZNK7QWidget9statusTipEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->statusTip();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 258, column 11>
-//   // proto:  QRect QWidget::childrenRect();
-// _ZNK7QWidget12childrenRectEv childrenRect()
-extern "C"
-QRect*
-C_ZNK7QWidget12childrenRectEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->childrenRect();
-  return new QRect(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 529, column 10>
-//   // proto:  void QWidget::setParent(QWidget * parent);
-// _ZN7QWidget9setParentEPS_ setParent(class QWidget *)
-extern "C"
-void
-C_ZN7QWidget9setParentEPS_(void *qthis,
-QWidget * arg1) {
-  ((QWidget*)qthis)->setParent(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 515, column 13>
-//   // proto:  QRegion QWidget::visibleRegion();
-// _ZNK7QWidget13visibleRegionEv visibleRegion()
-extern "C"
-QRegion*
-C_ZNK7QWidget13visibleRegionEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->visibleRegion();
-  return new QRegion(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 404, column 13>
-//   // proto:  QLocale QWidget::locale();
-// _ZNK7QWidget6localeEv locale()
-extern "C"
-QLocale*
-C_ZNK7QWidget6localeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->locale();
-  return new QLocale(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 435, column 10>
-//   // proto:  void QWidget::releaseKeyboard();
-// _ZN7QWidget15releaseKeyboardEv releaseKeyboard()
-extern "C"
-void
-C_ZN7QWidget15releaseKeyboardEv(void *qthis) {
-  ((QWidget*)qthis)->releaseKeyboard();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 442, column 21>
-//   // proto: static QWidget * QWidget::mouseGrabber();
-// _ZN7QWidget12mouseGrabberEv mouseGrabber()
-extern "C"
-void*
-C_ZN7QWidget12mouseGrabberEv() {
-  auto ret =
-  QWidget::mouseGrabber();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 289, column 10>
-//   // proto:  void QWidget::setFixedWidth(int w);
-// _ZN7QWidget13setFixedWidthEi setFixedWidth(int)
-extern "C"
-void
-C_ZN7QWidget13setFixedWidthEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setFixedWidth(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 547, column 10>
-//   // proto:  void QWidget::addAction(QAction * action);
-// _ZN7QWidget9addActionEP7QAction addAction(class QAction *)
-extern "C"
-void
-C_ZN7QWidget9addActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QWidget*)qthis)->addAction(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 240, column 10>
-//   // proto:  void QWidget::setDisabled(bool );
-// _ZN7QWidget11setDisabledEb setDisabled(_Bool)
-extern "C"
-void
-C_ZN7QWidget11setDisabledEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setDisabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 366, column 11>
-//   // proto:  QIcon QWidget::windowIcon();
-// _ZNK7QWidget10windowIconEv windowIcon()
-extern "C"
-QIcon*
-C_ZNK7QWidget10windowIconEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowIcon();
-  return new QIcon(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 517, column 10>
-//   // proto:  void QWidget::setContentsMargins(int left, int top, int right, int bottom);
-// _ZN7QWidget18setContentsMarginsEiiii setContentsMargins(int, int, int, int)
-extern "C"
-void
-C_ZN7QWidget18setContentsMarginsEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QWidget*)qthis)->setContentsMargins(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 370, column 13>
-//   // proto:  QString QWidget::windowRole();
-// _ZNK7QWidget10windowRoleEv windowRole()
-extern "C"
-QString*
-C_ZNK7QWidget10windowRoleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowRole();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 440, column 10>
-//   // proto:  void QWidget::setShortcutAutoRepeat(int id, bool enable);
-// _ZN7QWidget21setShortcutAutoRepeatEib setShortcutAutoRepeat(int, _Bool)
-extern "C"
-void
-C_ZN7QWidget21setShortcutAutoRepeatEib(void *qthis,
-int arg1,
-bool arg2) {
-  ((QWidget*)qthis)->setShortcutAutoRepeat(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 476, column 10>
-//   // proto:  void QWidget::showFullScreen();
-// _ZN7QWidget14showFullScreenEv showFullScreen()
-extern "C"
-void
-C_ZN7QWidget14showFullScreenEv(void *qthis) {
-  ((QWidget*)qthis)->showFullScreen();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 429, column 10>
-//   // proto:  void QWidget::grabMouse();
-// _ZN7QWidget9grabMouseEv grabMouse()
-extern "C"
-void
-C_ZN7QWidget9grabMouseEv(void *qthis) {
-  ((QWidget*)qthis)->grabMouse();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 269, column 10>
-//   // proto:  void QWidget::setMaximumSize(const QSize & );
-// _ZN7QWidget14setMaximumSizeERK5QSize setMaximumSize(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget14setMaximumSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->setMaximumSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 294, column 12>
-//   // proto:  QPoint QWidget::mapToGlobal(const QPoint & );
-// _ZNK7QWidget11mapToGlobalERK6QPoint mapToGlobal(const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget11mapToGlobalERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->mapToGlobal(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 380, column 13>
-//   // proto:  QString QWidget::toolTip();
-// _ZNK7QWidget7toolTipEv toolTip()
-extern "C"
-QString*
-C_ZNK7QWidget7toolTipEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->toolTip();
-  return new QString(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 389, column 10>
-//   // proto:  void QWidget::setWhatsThis(const QString & );
-// _ZN7QWidget12setWhatsThisERK7QString setWhatsThis(const class QString &)
-extern "C"
-void
-C_ZN7QWidget12setWhatsThisERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setWhatsThis(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 487, column 10>
-//   // proto:  void QWidget::resize(int w, int h);
-// _ZN7QWidget6resizeEii resize(int, int)
-extern "C"
-void
-C_ZN7QWidget6resizeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->resize(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 560, column 14>
-//   // proto:  QWidget * QWidget::parentWidget();
-// _ZNK7QWidget12parentWidgetEv parentWidget()
-extern "C"
-void*
-C_ZNK7QWidget12parentWidgetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->parentWidget();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 252, column 12>
-//   // proto:  QPoint QWidget::pos();
-// _ZNK7QWidget3posEv pos()
-extern "C"
-QPoint*
-C_ZNK7QWidget3posEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->pos();
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 597, column 10>
-//   // proto:  void QWidget::setAutoFillBackground(bool enabled);
-// _ZN7QWidget21setAutoFillBackgroundEb setAutoFillBackground(_Bool)
-extern "C"
-void
-C_ZN7QWidget21setAutoFillBackgroundEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setAutoFillBackground(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 335, column 10>
-//   // proto:  void QWidget::render(QPaintDevice * target, const QPoint & targetOffset, const QRegion & sourceRegion, RenderFlags renderFlags);
-// _ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE render(class QPaintDevice *, const class QPoint &, const class QRegion &, RenderFlags)
-extern "C"
-void
-C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *qthis,
-QPaintDevice * arg1,
-const QPoint* arg2,
-const QRegion* arg3,
-QWidget::RenderFlags arg4) {
-  ((QWidget*)qthis)->render(arg1,
-*((const QPoint*)arg2),
-*((const QRegion*)arg3),
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 232, column 10>
-//   // proto:  void QWidget::setWindowModality(Qt::WindowModality windowModality);
-// _ZN7QWidget17setWindowModalityEN2Qt14WindowModalityE setWindowModality(Qt::WindowModality)
-extern "C"
-void
-C_ZN7QWidget17setWindowModalityEN2Qt14WindowModalityE(void *qthis,
-Qt::WindowModality* arg1) {
-  ((QWidget*)qthis)->setWindowModality(*((Qt::WindowModality*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 421, column 10>
-//   // proto:  bool QWidget::hasFocus();
-// _ZNK7QWidget8hasFocusEv hasFocus()
-extern "C"
-bool
-C_ZNK7QWidget8hasFocusEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->hasFocus();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 283, column 11>
-//   // proto:  QSize QWidget::baseSize();
-// _ZNK7QWidget8baseSizeEv baseSize()
-extern "C"
-QSize*
-C_ZNK7QWidget8baseSizeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->baseSize();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 330, column 10>
-//   // proto:  void QWidget::setMask(const QBitmap & );
-// _ZN7QWidget7setMaskERK7QBitmap setMask(const class QBitmap &)
-extern "C"
-void
-C_ZN7QWidget7setMaskERK7QBitmap(void *qthis,
-const QBitmap* arg1) {
-  ((QWidget*)qthis)->setMask(*((const QBitmap*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 310, column 25>
-//   // proto:  QPalette::ColorRole QWidget::backgroundRole();
-// _ZNK7QWidget14backgroundRoleEv backgroundRole()
-extern "C"
-QPalette::ColorRole
-C_ZNK7QWidget14backgroundRoleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->backgroundRole();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 587, column 10>
-//   // proto:  void QWidget::ensurePolished();
-// _ZNK7QWidget14ensurePolishedEv ensurePolished()
-extern "C"
-void
-C_ZNK7QWidget14ensurePolishedEv(void *qthis) {
-  ((QWidget*)qthis)->ensurePolished();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 356, column 10>
-//   // proto:  void QWidget::setWindowTitle(const QString & );
-// _ZN7QWidget14setWindowTitleERK7QString setWindowTitle(const class QString &)
-extern "C"
-void
-C_ZN7QWidget14setWindowTitleERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setWindowTitle(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 301, column 14>
-//   // proto:  QWidget * QWidget::window();
-// _ZNK7QWidget6windowEv window()
-extern "C"
-void*
-C_ZNK7QWidget6windowEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->window();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 532, column 10>
-//   // proto:  void QWidget::scroll(int dx, int dy);
-// _ZN7QWidget6scrollEii scroll(int, int)
-extern "C"
-void
-C_ZN7QWidget6scrollEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->scroll(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 438, column 10>
-//   // proto:  void QWidget::releaseShortcut(int id);
-// _ZN7QWidget15releaseShortcutEi releaseShortcut(int)
-extern "C"
-void
-C_ZN7QWidget15releaseShortcutEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->releaseShortcut(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 381, column 10>
-//   // proto:  void QWidget::setToolTipDuration(int msec);
-// _ZN7QWidget18setToolTipDurationEi setToolTipDuration(int)
-extern "C"
-void
-C_ZN7QWidget18setToolTipDurationEi(void *qthis,
-int arg1) {
-  ((QWidget*)qthis)->setToolTipDuration(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 489, column 17>
-//   // proto:  void QWidget::setGeometry(int x, int y, int w, int h);
-// _ZN7QWidget11setGeometryEiiii setGeometry(int, int, int, int)
-extern "C"
-void
-C_ZN7QWidget11setGeometryEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QWidget*)qthis)->setGeometry(arg1,
-arg2,
-arg3,
-arg4);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 282, column 10>
-//   // proto:  void QWidget::setSizeIncrement(int w, int h);
-// _ZN7QWidget16setSizeIncrementEii setSizeIncrement(int, int)
-extern "C"
-void
-C_ZN7QWidget16setSizeIncrementEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->setSizeIncrement(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 447, column 10>
-//   // proto:  void QWidget::setUpdatesEnabled(bool enable);
-// _ZN7QWidget17setUpdatesEnabledEb setUpdatesEnabled(_Bool)
-extern "C"
-void
-C_ZN7QWidget17setUpdatesEnabledEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setUpdatesEnabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 481, column 10>
-//   // proto:  void QWidget::lower();
-// _ZN7QWidget5lowerEv lower()
-extern "C"
-void
-C_ZN7QWidget5lowerEv(void *qthis) {
-  ((QWidget*)qthis)->lower();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 326, column 10>
-//   // proto:  void QWidget::setMouseTracking(bool enable);
-// _ZN7QWidget16setMouseTrackingEb setMouseTracking(_Bool)
-extern "C"
-void
-C_ZN7QWidget16setMouseTrackingEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setMouseTracking(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 284, column 10>
-//   // proto:  void QWidget::setBaseSize(const QSize & );
-// _ZN7QWidget11setBaseSizeERK5QSize setBaseSize(const class QSize &)
-extern "C"
-void
-C_ZN7QWidget11setBaseSizeERK5QSize(void *qthis,
-const QSize* arg1) {
-  ((QWidget*)qthis)->setBaseSize(*((const QSize*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 667, column 10>
-//   // proto:  void QWidget::setInputMethodHints(Qt::InputMethodHints hints);
-// _ZN7QWidget19setInputMethodHintsE6QFlagsIN2Qt15InputMethodHintEE setInputMethodHints(Qt::InputMethodHints)
-extern "C"
-void
-C_ZN7QWidget19setInputMethodHintsE6QFlagsIN2Qt15InputMethodHintEE(void *qthis,
-Qt::InputMethodHints* arg1) {
-  ((QWidget*)qthis)->setInputMethodHints(*((Qt::InputMethodHints*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 502, column 22>
-//   // proto:  Qt::WindowStates QWidget::windowState();
-// _ZNK7QWidget11windowStateEv windowState()
-extern "C"
-QFlags<Qt::WindowState>*
-C_ZNK7QWidget11windowStateEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowState();
-  return new QFlags<Qt::WindowState>(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 472, column 10>
-//   // proto:  void QWidget::hide();
-// _ZN7QWidget4hideEv hide()
-extern "C"
-void
-C_ZN7QWidget4hideEv(void *qthis) {
-  ((QWidget*)qthis)->hide();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 556, column 10>
-//   // proto:  void QWidget::removeAction(QAction * action);
-// _ZN7QWidget12removeActionEP7QAction removeAction(class QAction *)
-extern "C"
-void
-C_ZN7QWidget12removeActionEP7QAction(void *qthis,
-QAction * arg1) {
-  ((QWidget*)qthis)->removeAction(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 423, column 10>
-//   // proto:  void QWidget::setFocusProxy(QWidget * );
-// _ZN7QWidget13setFocusProxyEPS_ setFocusProxy(class QWidget *)
-extern "C"
-void
-C_ZN7QWidget13setFocusProxyEPS_(void *qthis,
-QWidget * arg1) {
-  ((QWidget*)qthis)->setFocusProxy(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 479, column 10>
-//   // proto:  bool QWidget::close();
-// _ZN7QWidget5closeEv close()
-extern "C"
-bool
-C_ZN7QWidget5closeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->close();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 564, column 10>
-//   // proto:  void QWidget::overrideWindowFlags(Qt::WindowFlags type);
-// _ZN7QWidget19overrideWindowFlagsE6QFlagsIN2Qt10WindowTypeEE overrideWindowFlags(Qt::WindowFlags)
-extern "C"
-void
-C_ZN7QWidget19overrideWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *qthis,
-Qt::WindowFlags* arg1) {
-  ((QWidget*)qthis)->overrideWindowFlags(*((Qt::WindowFlags*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 399, column 10>
-//   // proto:  void QWidget::setLayoutDirection(Qt::LayoutDirection direction);
-// _ZN7QWidget18setLayoutDirectionEN2Qt15LayoutDirectionE setLayoutDirection(Qt::LayoutDirection)
-extern "C"
-void
-C_ZN7QWidget18setLayoutDirectionEN2Qt15LayoutDirectionE(void *qthis,
-Qt::LayoutDirection* arg1) {
-  ((QWidget*)qthis)->setLayoutDirection(*((Qt::LayoutDirection*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 474, column 10>
-//   // proto:  void QWidget::showMinimized();
-// _ZN7QWidget13showMinimizedEv showMinimized()
-extern "C"
-void
-C_ZN7QWidget13showMinimizedEv(void *qthis) {
-  ((QWidget*)qthis)->showMinimized();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 288, column 10>
-//   // proto:  void QWidget::setFixedSize(int w, int h);
-// _ZN7QWidget12setFixedSizeEii setFixedSize(int, int)
-extern "C"
-void
-C_ZN7QWidget12setFixedSizeEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->setFixedSize(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 261, column 11>
-//   // proto:  QSize QWidget::minimumSize();
-// _ZNK7QWidget11minimumSizeEv minimumSize()
-extern "C"
-QSize*
-C_ZNK7QWidget11minimumSizeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->minimumSize();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 239, column 10>
-//   // proto:  void QWidget::setEnabled(bool );
-// _ZN7QWidget10setEnabledEb setEnabled(_Bool)
-extern "C"
-void
-C_ZN7QWidget10setEnabledEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setEnabled(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 266, column 9>
-//   // proto:  int QWidget::maximumHeight();
-// _ZNK7QWidget13maximumHeightEv maximumHeight()
-extern "C"
-int
-C_ZNK7QWidget13maximumHeightEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->maximumHeight();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 485, column 10>
-//   // proto:  void QWidget::move(int x, int y);
-// _ZN7QWidget4moveEii move(int, int)
-extern "C"
-void
-C_ZN7QWidget4moveEii(void *qthis,
-int arg1,
-int arg2) {
-  ((QWidget*)qthis)->move(arg1,
-arg2);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 589, column 10>
-//   // proto:  bool QWidget::isAncestorOf(const QWidget * child);
-// _ZNK7QWidget12isAncestorOfEPKS_ isAncestorOf(const class QWidget *)
-extern "C"
-bool
-C_ZNK7QWidget12isAncestorOfEPKS_(void *qthis,
-const QWidget * arg1) {
-  auto ret =
-  ((QWidget*)qthis)->isAncestorOf(arg1);
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 321, column 13>
-//   // proto:  QCursor QWidget::cursor();
-// _ZNK7QWidget6cursorEv cursor()
-extern "C"
-QCursor*
-C_ZNK7QWidget6cursorEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->cursor();
-  return new QCursor(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 295, column 12>
-//   // proto:  QPoint QWidget::mapFromGlobal(const QPoint & );
-// _ZNK7QWidget13mapFromGlobalERK6QPoint mapFromGlobal(const class QPoint &)
-extern "C"
-QPoint*
-C_ZNK7QWidget13mapFromGlobalERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->mapFromGlobal(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 379, column 10>
-//   // proto:  void QWidget::setToolTip(const QString & );
-// _ZN7QWidget10setToolTipERK7QString setToolTip(const class QString &)
-extern "C"
-void
-C_ZN7QWidget10setToolTipERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setToolTip(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 509, column 17>
-//   // proto:  QSizePolicy QWidget::sizePolicy();
-// _ZNK7QWidget10sizePolicyEv sizePolicy()
-extern "C"
-QSizePolicy*
-C_ZNK7QWidget10sizePolicyEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->sizePolicy();
-  return new QSizePolicy(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 513, column 18>
-//   // proto:  bool QWidget::hasHeightForWidth();
-// _ZNK7QWidget17hasHeightForWidthEv hasHeightForWidth()
-extern "C"
-bool
-C_ZNK7QWidget17hasHeightForWidthEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->hasHeightForWidth();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 450, column 27>
-//   // proto:  QGraphicsProxyWidget * QWidget::graphicsProxyWidget();
-// _ZNK7QWidget19graphicsProxyWidgetEv graphicsProxyWidget()
-extern "C"
-void*
-C_ZNK7QWidget19graphicsProxyWidgetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->graphicsProxyWidget();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 520, column 14>
-//   // proto:  QMargins QWidget::contentsMargins();
-// _ZNK7QWidget15contentsMarginsEv contentsMargins()
-extern "C"
-QMargins*
-C_ZNK7QWidget15contentsMarginsEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->contentsMargins();
-  return new QMargins(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 303, column 21>
-//   // proto:  QWidget * QWidget::topLevelWidget();
-// _ZNK7QWidget14topLevelWidgetEv topLevelWidget()
-extern "C"
-void*
-C_ZNK7QWidget14topLevelWidgetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->topLevelWidget();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 526, column 10>
-//   // proto:  void QWidget::setLayout(QLayout * );
-// _ZN7QWidget9setLayoutEP7QLayout setLayout(class QLayout *)
-extern "C"
-void
-C_ZN7QWidget9setLayoutEP7QLayout(void *qthis,
-QLayout * arg1) {
-  ((QWidget*)qthis)->setLayout(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 328, column 10>
-//   // proto:  bool QWidget::underMouse();
-// _ZNK7QWidget10underMouseEv underMouse()
-extern "C"
-bool
-C_ZNK7QWidget10underMouseEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->underMouse();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 512, column 17>
-//   // proto:  int QWidget::heightForWidth(int );
-// _ZNK7QWidget14heightForWidthEi heightForWidth(int)
-extern "C"
-int
-C_ZNK7QWidget14heightForWidthEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QWidget*)qthis)->heightForWidth(arg1);
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 316, column 10>
-//   // proto:  void QWidget::setFont(const QFont & );
-// _ZN7QWidget7setFontERK5QFont setFont(const class QFont &)
-extern "C"
-void
-C_ZN7QWidget7setFontERK5QFont(void *qthis,
-const QFont* arg1) {
-  ((QWidget*)qthis)->setFont(*((const QFont*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 583, column 17>
-//   // proto:  bool QWidget::testAttribute(Qt::WidgetAttribute );
-// _ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE testAttribute(Qt::WidgetAttribute)
-extern "C"
-bool
-C_ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE(void *qthis,
-Qt::WidgetAttribute* arg1) {
-  auto ret =
-  ((QWidget*)qthis)->testAttribute(*((Qt::WidgetAttribute*)arg1));
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 426, column 10>
-//   // proto:  void QWidget::setContextMenuPolicy(Qt::ContextMenuPolicy policy);
-// _ZN7QWidget20setContextMenuPolicyEN2Qt17ContextMenuPolicyE setContextMenuPolicy(Qt::ContextMenuPolicy)
-extern "C"
-void
-C_ZN7QWidget20setContextMenuPolicyEN2Qt17ContextMenuPolicyE(void *qthis,
-Qt::ContextMenuPolicy* arg1) {
-  ((QWidget*)qthis)->setContextMenuPolicy(*((Qt::ContextMenuPolicy*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 302, column 14>
-//   // proto:  QWidget * QWidget::nativeParentWidget();
-// _ZNK7QWidget18nativeParentWidgetEv nativeParentWidget()
-extern "C"
-void*
-C_ZNK7QWidget18nativeParentWidgetEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->nativeParentWidget();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 403, column 10>
-//   // proto:  void QWidget::setLocale(const QLocale & locale);
-// _ZN7QWidget9setLocaleERK7QLocale setLocale(const class QLocale &)
-extern "C"
-void
-C_ZN7QWidget9setLocaleERK7QLocale(void *qthis,
-const QLocale* arg1) {
-  ((QWidget*)qthis)->setLocale(*((const QLocale*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 256, column 16>
-//   // proto:  int QWidget::height();
-// _ZNK7QWidget6heightEv height()
-extern "C"
-int
-C_ZNK7QWidget6heightEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->height();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 470, column 10>
-//   // proto:  void QWidget::setHidden(bool hidden);
-// _ZN7QWidget9setHiddenEb setHidden(_Bool)
-extern "C"
-void
-C_ZN7QWidget9setHiddenEb(void *qthis,
-bool arg1) {
-  ((QWidget*)qthis)->setHidden(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 254, column 11>
-//   // proto:  QSize QWidget::size();
-// _ZNK7QWidget4sizeEv size()
-extern "C"
-QSize*
-C_ZNK7QWidget4sizeEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->size();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 231, column 24>
-//   // proto:  Qt::WindowModality QWidget::windowModality();
-// _ZNK7QWidget14windowModalityEv windowModality()
-extern "C"
-Qt::WindowModality
-C_ZNK7QWidget14windowModalityEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->windowModality();
-  return ret; // 0 TypeKind.ENUM
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 265, column 9>
-//   // proto:  int QWidget::maximumWidth();
-// _ZNK7QWidget12maximumWidthEv maximumWidth()
-extern "C"
-int
-C_ZNK7QWidget12maximumWidthEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->maximumWidth();
-  return ret; // 0 TypeKind.INT
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 498, column 10>
-//   // proto:  bool QWidget::isMinimized();
-// _ZNK7QWidget11isMinimizedEv isMinimized()
-extern "C"
-bool
-C_ZNK7QWidget11isMinimizedEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isMinimized();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 454, column 10>
-//   // proto:  void QWidget::update();
-// _ZN7QWidget6updateEv update()
-extern "C"
-void
-C_ZN7QWidget6updateEv(void *qthis) {
-  ((QWidget*)qthis)->update();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 322, column 10>
-//   // proto:  void QWidget::setCursor(const QCursor & );
-// _ZN7QWidget9setCursorERK7QCursor setCursor(const class QCursor &)
-extern "C"
-void
-C_ZN7QWidget9setCursorERK7QCursor(void *qthis,
-const QCursor* arg1) {
-  ((QWidget*)qthis)->setCursor(*((const QCursor*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 609, column 10>
-//   // proto:  void QWidget::windowIconChanged(const QIcon & icon);
-// _ZN7QWidget17windowIconChangedERK5QIcon windowIconChanged(const class QIcon &)
-extern "C"
-void
-C_ZN7QWidget17windowIconChangedERK5QIcon(void *qthis,
-const QIcon* arg1) {
-  ((QWidget*)qthis)->windowIconChanged(*((const QIcon*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 223, column 13>
-//   // proto:  QStyle * QWidget::style();
-// _ZNK7QWidget5styleEv style()
-extern "C"
-void*
-C_ZNK7QWidget5styleEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->style();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 218, column 10>
-//   // proto:  void QWidget::createWinId();
-// _ZN7QWidget11createWinIdEv createWinId()
-extern "C"
-void
-C_ZN7QWidget11createWinIdEv(void *qthis) {
-  ((QWidget*)qthis)->createWinId();
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 374, column 10>
-//   // proto:  void QWidget::setWindowOpacity(qreal level);
-// _ZN7QWidget16setWindowOpacityEd setWindowOpacity(qreal)
-extern "C"
-void
-C_ZN7QWidget16setWindowOpacityEd(void *qthis,
-qreal arg1) {
-  ((QWidget*)qthis)->setWindowOpacity(arg1);
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 407, column 17>
-//   // proto:  bool QWidget::isRightToLeft();
-// _ZNK7QWidget13isRightToLeftEv isRightToLeft()
-extern "C"
-bool
-C_ZNK7QWidget13isRightToLeftEv(void *qthis) {
-  auto ret =
-  ((QWidget*)qthis)->isRightToLeft();
-  return ret; // 0 TypeKind.BOOL
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 553, column 10>
-//   // proto:  void QWidget::insertActions(QAction * before, QList<QAction *> actions);
-// _ZN7QWidget13insertActionsEP7QAction5QListIS1_E insertActions(class QAction *, QList<class QAction *>)
-extern "C"
-void
-C_ZN7QWidget13insertActionsEP7QAction5QListIS1_E(void *qthis,
-QAction * arg1,
-QList<QAction *>* arg2) {
-  ((QWidget*)qthis)->insertActions(arg1,
-*((QList<QAction *>*)arg2));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 394, column 10>
-//   // proto:  void QWidget::setAccessibleName(const QString & name);
-// _ZN7QWidget17setAccessibleNameERK7QString setAccessibleName(const class QString &)
-extern "C"
-void
-C_ZN7QWidget17setAccessibleNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->setAccessibleName(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 610, column 10>
-//   // proto:  void QWidget::windowIconTextChanged(const QString & iconText);
-// _ZN7QWidget21windowIconTextChangedERK7QString windowIconTextChanged(const class QString &)
-extern "C"
-void
-C_ZN7QWidget21windowIconTextChangedERK7QString(void *qthis,
-const QString* arg1) {
-  ((QWidget*)qthis)->windowIconTextChanged(*((const QString*)arg1));
-}
-// <SourceLocation file '/usr/include/qt/QtWidgets/qwidget.h', line 323, column 10>
-//   // proto:  void QWidget::unsetCursor();
-// _ZN7QWidget11unsetCursorEv unsetCursor()
-extern "C"
-void
-C_ZN7QWidget11unsetCursorEv(void *qthis) {
-  ((QWidget*)qthis)->unsetCursor();
-}
-// <= ext block end
-
-// body block begin =>
-// QWidget_SlotProxy here
-class QWidget_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QWidget_SlotProxy():QObject(){}
-
-public slots:
-  // customContextMenuRequested(const class QPoint &)
-  void slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0);
-public:
-  void (*slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint)(void* rsfptr, const QPoint & arg0) = NULL;
-public slots:
-  // windowIconChanged(const class QIcon &)
-  void slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0);
-public:
-  void (*slot_func__ZN7QWidget17windowIconChangedERK5QIcon)(void* rsfptr, const QIcon & arg0) = NULL;
-public slots:
-  // windowIconTextChanged(const class QString &)
-  void slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN7QWidget21windowIconTextChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public slots:
-  // windowTitleChanged(const class QString &)
-  void slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0);
-public:
-  void (*slot_func__ZN7QWidget18windowTitleChangedERK7QString)(void* rsfptr, const QString & arg0) = NULL;
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qwidget.moc"
-
-extern "C" {
-  QWidget_SlotProxy* QWidget_SlotProxy_new()
-  {
-    return new QWidget_SlotProxy();
-  }
-};
-
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0) {
-  if (this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QWidget_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint = (decltype(that->slot_func__ZN7QWidget26customContextMenuRequestedERK6QPoint))ffifptr;
-  QObject::connect((QWidget*)sender, SIGNAL(customContextMenuRequested(const class QPoint &)), that, SLOT(slot_proxy_func__ZN7QWidget26customContextMenuRequestedERK6QPoint(const QPoint & arg0)));
-  return that;
-}
-extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget26customContextMenuRequestedERK6QPoint(QWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0) {
-  if (this->slot_func__ZN7QWidget17windowIconChangedERK5QIcon != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWidget17windowIconChangedERK5QIcon(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget17windowIconChangedERK5QIcon(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QWidget_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon = (decltype(that->slot_func__ZN7QWidget17windowIconChangedERK5QIcon))ffifptr;
-  QObject::connect((QWidget*)sender, SIGNAL(windowIconChanged(const class QIcon &)), that, SLOT(slot_proxy_func__ZN7QWidget17windowIconChangedERK5QIcon(const QIcon & arg0)));
-  return that;
-}
-extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget17windowIconChangedERK5QIcon(QWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN7QWidget21windowIconTextChangedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWidget21windowIconTextChangedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget21windowIconTextChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QWidget_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString = (decltype(that->slot_func__ZN7QWidget21windowIconTextChangedERK7QString))ffifptr;
-  QObject::connect((QWidget*)sender, SIGNAL(windowIconTextChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN7QWidget21windowIconTextChangedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget21windowIconTextChangedERK7QString(QWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-void QWidget_SlotProxy::slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0) {
-  if (this->slot_func__ZN7QWidget18windowTitleChangedERK7QString != NULL) {
-    // do smth...
-    this->slot_func__ZN7QWidget18windowTitleChangedERK7QString(this->rsfptr, arg0);
-  }
-}
-extern "C"
-void* QWidget_SlotProxy_connect__ZN7QWidget18windowTitleChangedERK7QString(QObject* sender, void* ffifptr, void* rsfptr){
-  auto that = new QWidget_SlotProxy();
-  that->rsfptr = rsfptr;
-  that->slot_func__ZN7QWidget18windowTitleChangedERK7QString = (decltype(that->slot_func__ZN7QWidget18windowTitleChangedERK7QString))ffifptr;
-  QObject::connect((QWidget*)sender, SIGNAL(windowTitleChanged(const class QString &)), that, SLOT(slot_proxy_func__ZN7QWidget18windowTitleChangedERK7QString(const QString & arg0)));
-  return that;
-}
-extern "C"
-void QWidget_SlotProxy_disconnect__ZN7QWidget18windowTitleChangedERK7QString(QWidget_SlotProxy* that) {
-  that->disconnect();
-  delete that;
-}
-
-// <= body block end
-
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:129
+// const QMetaObject * metaObject()
+extern "C"
+void C_ZNK7QWidget10metaObjectEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->metaObject();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:212
+// void QWidget(class QWidget *, Qt::WindowFlags)
+extern "C"
+void* C_ZN7QWidgetC1EPS_6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  return new QWidget(parent, f);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:213
+// void ~QWidget()
+extern "C"
+void C_ZN7QWidgetD1Ev(void *this_) {
+  delete (QWidget*)(this_);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:215
+// int devType()
+extern "C"
+void C_ZNK7QWidget7devTypeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->devType();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:217
+// WId winId()
+extern "C"
+void C_ZNK7QWidget5winIdEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->winId();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:218
+// void createWinId()
+extern "C"
+void C_ZN7QWidget11createWinIdEv(void *this_) {
+  ((QWidget*)this_)->createWinId();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:219
+// WId internalWinId()
+extern "C"
+void C_ZNK7QWidget13internalWinIdEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->internalWinId();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:220
+// WId effectiveWinId()
+extern "C"
+void C_ZNK7QWidget14effectiveWinIdEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->effectiveWinId();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:223
+// QStyle * style()
+extern "C"
+void C_ZNK7QWidget5styleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->style();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:224
+// void setStyle(class QStyle *)
+extern "C"
+void C_ZN7QWidget8setStyleEP6QStyle(void *this_, QStyle * a0) {
+  ((QWidget*)this_)->setStyle(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:227
+// bool isTopLevel()
+extern "C"
+void C_ZNK7QWidget10isTopLevelEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isTopLevel();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:228
+// bool isWindow()
+extern "C"
+void C_ZNK7QWidget8isWindowEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isWindow();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:230
+// bool isModal()
+extern "C"
+void C_ZNK7QWidget7isModalEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isModal();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:231
+// Qt::WindowModality windowModality()
+extern "C"
+void C_ZNK7QWidget14windowModalityEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowModality();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:232
+// void setWindowModality(Qt::WindowModality)
+extern "C"
+void C_ZN7QWidget17setWindowModalityEN2Qt14WindowModalityE(void *this_, Qt::WindowModality windowModality) {
+  ((QWidget*)this_)->setWindowModality(windowModality);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:234
+// bool isEnabled()
+extern "C"
+void C_ZNK7QWidget9isEnabledEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isEnabled();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:235
+// bool isEnabledTo(const class QWidget *)
+extern "C"
+void C_ZNK7QWidget11isEnabledToEPKS_(void *this_, const QWidget * a0) {
+  /*return*/ ((QWidget*)this_)->isEnabledTo(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:236
+// bool isEnabledToTLW()
+extern "C"
+void C_ZNK7QWidget14isEnabledToTLWEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isEnabledToTLW();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:239
+// void setEnabled(_Bool)
+extern "C"
+void C_ZN7QWidget10setEnabledEb(void *this_, bool a0) {
+  ((QWidget*)this_)->setEnabled(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:240
+// void setDisabled(_Bool)
+extern "C"
+void C_ZN7QWidget11setDisabledEb(void *this_, bool a0) {
+  ((QWidget*)this_)->setDisabled(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:241
+// void setWindowModified(_Bool)
+extern "C"
+void C_ZN7QWidget17setWindowModifiedEb(void *this_, bool a0) {
+  ((QWidget*)this_)->setWindowModified(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:246
+// QRect frameGeometry()
+extern "C"
+void C_ZNK7QWidget13frameGeometryEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->frameGeometry();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:247
+// const QRect & geometry()
+extern "C"
+void C_ZNK7QWidget8geometryEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->geometry();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:248
+// QRect normalGeometry()
+extern "C"
+void C_ZNK7QWidget14normalGeometryEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->normalGeometry();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:250
+// int x()
+extern "C"
+void C_ZNK7QWidget1xEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->x();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:251
+// int y()
+extern "C"
+void C_ZNK7QWidget1yEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->y();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:252
+// QPoint pos()
+extern "C"
+void C_ZNK7QWidget3posEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->pos();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:253
+// QSize frameSize()
+extern "C"
+void C_ZNK7QWidget9frameSizeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->frameSize();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:254
+// QSize size()
+extern "C"
+void C_ZNK7QWidget4sizeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->size();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:255
+// int width()
+extern "C"
+void C_ZNK7QWidget5widthEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->width();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:256
+// int height()
+extern "C"
+void C_ZNK7QWidget6heightEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->height();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:257
+// QRect rect()
+extern "C"
+void C_ZNK7QWidget4rectEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->rect();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:258
+// QRect childrenRect()
+extern "C"
+void C_ZNK7QWidget12childrenRectEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->childrenRect();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:259
+// QRegion childrenRegion()
+extern "C"
+void C_ZNK7QWidget14childrenRegionEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->childrenRegion();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:261
+// QSize minimumSize()
+extern "C"
+void C_ZNK7QWidget11minimumSizeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->minimumSize();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:262
+// QSize maximumSize()
+extern "C"
+void C_ZNK7QWidget11maximumSizeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->maximumSize();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:263
+// int minimumWidth()
+extern "C"
+void C_ZNK7QWidget12minimumWidthEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->minimumWidth();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:264
+// int minimumHeight()
+extern "C"
+void C_ZNK7QWidget13minimumHeightEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->minimumHeight();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:265
+// int maximumWidth()
+extern "C"
+void C_ZNK7QWidget12maximumWidthEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->maximumWidth();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:266
+// int maximumHeight()
+extern "C"
+void C_ZNK7QWidget13maximumHeightEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->maximumHeight();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:267
+// void setMinimumSize(const class QSize &)
+extern "C"
+void C_ZN7QWidget14setMinimumSizeERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->setMinimumSize(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:268
+// void setMinimumSize(int, int)
+extern "C"
+void C_ZN7QWidget14setMinimumSizeEii(void *this_, int minw, int minh) {
+  ((QWidget*)this_)->setMinimumSize(minw, minh);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:269
+// void setMaximumSize(const class QSize &)
+extern "C"
+void C_ZN7QWidget14setMaximumSizeERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->setMaximumSize(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:270
+// void setMaximumSize(int, int)
+extern "C"
+void C_ZN7QWidget14setMaximumSizeEii(void *this_, int maxw, int maxh) {
+  ((QWidget*)this_)->setMaximumSize(maxw, maxh);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:271
+// void setMinimumWidth(int)
+extern "C"
+void C_ZN7QWidget15setMinimumWidthEi(void *this_, int minw) {
+  ((QWidget*)this_)->setMinimumWidth(minw);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:272
+// void setMinimumHeight(int)
+extern "C"
+void C_ZN7QWidget16setMinimumHeightEi(void *this_, int minh) {
+  ((QWidget*)this_)->setMinimumHeight(minh);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:273
+// void setMaximumWidth(int)
+extern "C"
+void C_ZN7QWidget15setMaximumWidthEi(void *this_, int maxw) {
+  ((QWidget*)this_)->setMaximumWidth(maxw);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:274
+// void setMaximumHeight(int)
+extern "C"
+void C_ZN7QWidget16setMaximumHeightEi(void *this_, int maxh) {
+  ((QWidget*)this_)->setMaximumHeight(maxh);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:280
+// QSize sizeIncrement()
+extern "C"
+void C_ZNK7QWidget13sizeIncrementEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->sizeIncrement();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:281
+// void setSizeIncrement(const class QSize &)
+extern "C"
+void C_ZN7QWidget16setSizeIncrementERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->setSizeIncrement(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:282
+// void setSizeIncrement(int, int)
+extern "C"
+void C_ZN7QWidget16setSizeIncrementEii(void *this_, int w, int h) {
+  ((QWidget*)this_)->setSizeIncrement(w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:283
+// QSize baseSize()
+extern "C"
+void C_ZNK7QWidget8baseSizeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->baseSize();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:284
+// void setBaseSize(const class QSize &)
+extern "C"
+void C_ZN7QWidget11setBaseSizeERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->setBaseSize(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:285
+// void setBaseSize(int, int)
+extern "C"
+void C_ZN7QWidget11setBaseSizeEii(void *this_, int basew, int baseh) {
+  ((QWidget*)this_)->setBaseSize(basew, baseh);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:287
+// void setFixedSize(const class QSize &)
+extern "C"
+void C_ZN7QWidget12setFixedSizeERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->setFixedSize(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:288
+// void setFixedSize(int, int)
+extern "C"
+void C_ZN7QWidget12setFixedSizeEii(void *this_, int w, int h) {
+  ((QWidget*)this_)->setFixedSize(w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:289
+// void setFixedWidth(int)
+extern "C"
+void C_ZN7QWidget13setFixedWidthEi(void *this_, int w) {
+  ((QWidget*)this_)->setFixedWidth(w);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:290
+// void setFixedHeight(int)
+extern "C"
+void C_ZN7QWidget14setFixedHeightEi(void *this_, int h) {
+  ((QWidget*)this_)->setFixedHeight(h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:294
+// QPoint mapToGlobal(const class QPoint &)
+extern "C"
+void C_ZNK7QWidget11mapToGlobalERK6QPoint(void *this_, const QPoint & a0) {
+  /*return*/ ((QWidget*)this_)->mapToGlobal(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:295
+// QPoint mapFromGlobal(const class QPoint &)
+extern "C"
+void C_ZNK7QWidget13mapFromGlobalERK6QPoint(void *this_, const QPoint & a0) {
+  /*return*/ ((QWidget*)this_)->mapFromGlobal(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:296
+// QPoint mapToParent(const class QPoint &)
+extern "C"
+void C_ZNK7QWidget11mapToParentERK6QPoint(void *this_, const QPoint & a0) {
+  /*return*/ ((QWidget*)this_)->mapToParent(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:297
+// QPoint mapFromParent(const class QPoint &)
+extern "C"
+void C_ZNK7QWidget13mapFromParentERK6QPoint(void *this_, const QPoint & a0) {
+  /*return*/ ((QWidget*)this_)->mapFromParent(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:298
+// QPoint mapTo(const class QWidget *, const class QPoint &)
+extern "C"
+void C_ZNK7QWidget5mapToEPKS_RK6QPoint(void *this_, const QWidget * a0, const QPoint & a1) {
+  /*return*/ ((QWidget*)this_)->mapTo(a0, a1);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:299
+// QPoint mapFrom(const class QWidget *, const class QPoint &)
+extern "C"
+void C_ZNK7QWidget7mapFromEPKS_RK6QPoint(void *this_, const QWidget * a0, const QPoint & a1) {
+  /*return*/ ((QWidget*)this_)->mapFrom(a0, a1);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:301
+// QWidget * window()
+extern "C"
+void C_ZNK7QWidget6windowEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->window();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:302
+// QWidget * nativeParentWidget()
+extern "C"
+void C_ZNK7QWidget18nativeParentWidgetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->nativeParentWidget();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:303
+// QWidget * topLevelWidget()
+extern "C"
+void C_ZNK7QWidget14topLevelWidgetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->topLevelWidget();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:306
+// const QPalette & palette()
+extern "C"
+void C_ZNK7QWidget7paletteEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->palette();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:307
+// void setPalette(const class QPalette &)
+extern "C"
+void C_ZN7QWidget10setPaletteERK8QPalette(void *this_, const QPalette & a0) {
+  ((QWidget*)this_)->setPalette(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:309
+// void setBackgroundRole(class QPalette::ColorRole)
+extern "C"
+void C_ZN7QWidget17setBackgroundRoleEN8QPalette9ColorRoleE(void *this_, QPalette::ColorRole a0) {
+  ((QWidget*)this_)->setBackgroundRole(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:310
+// QPalette::ColorRole backgroundRole()
+extern "C"
+void C_ZNK7QWidget14backgroundRoleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->backgroundRole();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:312
+// void setForegroundRole(class QPalette::ColorRole)
+extern "C"
+void C_ZN7QWidget17setForegroundRoleEN8QPalette9ColorRoleE(void *this_, QPalette::ColorRole a0) {
+  ((QWidget*)this_)->setForegroundRole(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:313
+// QPalette::ColorRole foregroundRole()
+extern "C"
+void C_ZNK7QWidget14foregroundRoleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->foregroundRole();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:315
+// const QFont & font()
+extern "C"
+void C_ZNK7QWidget4fontEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->font();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:316
+// void setFont(const class QFont &)
+extern "C"
+void C_ZN7QWidget7setFontERK5QFont(void *this_, const QFont & a0) {
+  ((QWidget*)this_)->setFont(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:317
+// QFontMetrics fontMetrics()
+extern "C"
+void C_ZNK7QWidget11fontMetricsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->fontMetrics();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:318
+// QFontInfo fontInfo()
+extern "C"
+void C_ZNK7QWidget8fontInfoEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->fontInfo();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:321
+// QCursor cursor()
+extern "C"
+void C_ZNK7QWidget6cursorEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->cursor();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:322
+// void setCursor(const class QCursor &)
+extern "C"
+void C_ZN7QWidget9setCursorERK7QCursor(void *this_, const QCursor & a0) {
+  ((QWidget*)this_)->setCursor(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:323
+// void unsetCursor()
+extern "C"
+void C_ZN7QWidget11unsetCursorEv(void *this_) {
+  ((QWidget*)this_)->unsetCursor();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:326
+// void setMouseTracking(_Bool)
+extern "C"
+void C_ZN7QWidget16setMouseTrackingEb(void *this_, bool enable) {
+  ((QWidget*)this_)->setMouseTracking(enable);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:327
+// bool hasMouseTracking()
+extern "C"
+void C_ZNK7QWidget16hasMouseTrackingEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->hasMouseTracking();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:328
+// bool underMouse()
+extern "C"
+void C_ZNK7QWidget10underMouseEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->underMouse();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:330
+// void setMask(const class QBitmap &)
+extern "C"
+void C_ZN7QWidget7setMaskERK7QBitmap(void *this_, const QBitmap & a0) {
+  ((QWidget*)this_)->setMask(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:331
+// void setMask(const class QRegion &)
+extern "C"
+void C_ZN7QWidget7setMaskERK7QRegion(void *this_, const QRegion & a0) {
+  ((QWidget*)this_)->setMask(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:332
+// QRegion mask()
+extern "C"
+void C_ZNK7QWidget4maskEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->mask();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:333
+// void clearMask()
+extern "C"
+void C_ZN7QWidget9clearMaskEv(void *this_) {
+  ((QWidget*)this_)->clearMask();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:335
+// void render(class QPaintDevice *, const class QPoint &, const class QRegion &, RenderFlags)
+extern "C"
+void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPaintDevice * target, const QPoint & targetOffset, const QRegion & sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
+  ((QWidget*)this_)->render(target, targetOffset, sourceRegion, renderFlags);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:339
+// void render(class QPainter *, const class QPoint &, const class QRegion &, RenderFlags)
+extern "C"
+void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPainter * painter, const QPoint & targetOffset, const QRegion & sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
+  ((QWidget*)this_)->render(painter, targetOffset, sourceRegion, renderFlags);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:343
+// QPixmap grab(const class QRect &)
+extern "C"
+void C_ZN7QWidget4grabERK5QRect(void *this_, const QRect & rectangle) {
+  /*return*/ ((QWidget*)this_)->grab(rectangle);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:346
+// QGraphicsEffect * graphicsEffect()
+extern "C"
+void C_ZNK7QWidget14graphicsEffectEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->graphicsEffect();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:347
+// void setGraphicsEffect(class QGraphicsEffect *)
+extern "C"
+void C_ZN7QWidget17setGraphicsEffectEP15QGraphicsEffect(void *this_, QGraphicsEffect * effect) {
+  ((QWidget*)this_)->setGraphicsEffect(effect);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:351
+// void grabGesture(Qt::GestureType, Qt::GestureFlags)
+extern "C"
+void C_ZN7QWidget11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *this_, Qt::GestureType type, QFlags<Qt::GestureFlag> flags) {
+  ((QWidget*)this_)->grabGesture(type, flags);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:352
+// void ungrabGesture(Qt::GestureType)
+extern "C"
+void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type) {
+  ((QWidget*)this_)->ungrabGesture(type);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:356
+// void setWindowTitle(const class QString &)
+extern "C"
+void C_ZN7QWidget14setWindowTitleERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setWindowTitle(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:358
+// void setStyleSheet(const class QString &)
+extern "C"
+void C_ZN7QWidget13setStyleSheetERK7QString(void *this_, const QString & styleSheet) {
+  ((QWidget*)this_)->setStyleSheet(styleSheet);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:362
+// QString styleSheet()
+extern "C"
+void C_ZNK7QWidget10styleSheetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->styleSheet();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:364
+// QString windowTitle()
+extern "C"
+void C_ZNK7QWidget11windowTitleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowTitle();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:365
+// void setWindowIcon(const class QIcon &)
+extern "C"
+void C_ZN7QWidget13setWindowIconERK5QIcon(void *this_, const QIcon & icon) {
+  ((QWidget*)this_)->setWindowIcon(icon);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:366
+// QIcon windowIcon()
+extern "C"
+void C_ZNK7QWidget10windowIconEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowIcon();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:367
+// void setWindowIconText(const class QString &)
+extern "C"
+void C_ZN7QWidget17setWindowIconTextERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setWindowIconText(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:368
+// QString windowIconText()
+extern "C"
+void C_ZNK7QWidget14windowIconTextEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowIconText();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:369
+// void setWindowRole(const class QString &)
+extern "C"
+void C_ZN7QWidget13setWindowRoleERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setWindowRole(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:370
+// QString windowRole()
+extern "C"
+void C_ZNK7QWidget10windowRoleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowRole();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:371
+// void setWindowFilePath(const class QString &)
+extern "C"
+void C_ZN7QWidget17setWindowFilePathERK7QString(void *this_, const QString & filePath) {
+  ((QWidget*)this_)->setWindowFilePath(filePath);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:372
+// QString windowFilePath()
+extern "C"
+void C_ZNK7QWidget14windowFilePathEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowFilePath();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:374
+// void setWindowOpacity(qreal)
+extern "C"
+void C_ZN7QWidget16setWindowOpacityEd(void *this_, qreal level) {
+  ((QWidget*)this_)->setWindowOpacity(level);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:375
+// qreal windowOpacity()
+extern "C"
+void C_ZNK7QWidget13windowOpacityEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowOpacity();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:377
+// bool isWindowModified()
+extern "C"
+void C_ZNK7QWidget16isWindowModifiedEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isWindowModified();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:379
+// void setToolTip(const class QString &)
+extern "C"
+void C_ZN7QWidget10setToolTipERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setToolTip(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:380
+// QString toolTip()
+extern "C"
+void C_ZNK7QWidget7toolTipEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->toolTip();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:381
+// void setToolTipDuration(int)
+extern "C"
+void C_ZN7QWidget18setToolTipDurationEi(void *this_, int msec) {
+  ((QWidget*)this_)->setToolTipDuration(msec);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:382
+// int toolTipDuration()
+extern "C"
+void C_ZNK7QWidget15toolTipDurationEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->toolTipDuration();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:385
+// void setStatusTip(const class QString &)
+extern "C"
+void C_ZN7QWidget12setStatusTipERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setStatusTip(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:386
+// QString statusTip()
+extern "C"
+void C_ZNK7QWidget9statusTipEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->statusTip();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:389
+// void setWhatsThis(const class QString &)
+extern "C"
+void C_ZN7QWidget12setWhatsThisERK7QString(void *this_, const QString & a0) {
+  ((QWidget*)this_)->setWhatsThis(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:390
+// QString whatsThis()
+extern "C"
+void C_ZNK7QWidget9whatsThisEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->whatsThis();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:393
+// QString accessibleName()
+extern "C"
+void C_ZNK7QWidget14accessibleNameEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->accessibleName();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:394
+// void setAccessibleName(const class QString &)
+extern "C"
+void C_ZN7QWidget17setAccessibleNameERK7QString(void *this_, const QString & name) {
+  ((QWidget*)this_)->setAccessibleName(name);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:395
+// QString accessibleDescription()
+extern "C"
+void C_ZNK7QWidget21accessibleDescriptionEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->accessibleDescription();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:396
+// void setAccessibleDescription(const class QString &)
+extern "C"
+void C_ZN7QWidget24setAccessibleDescriptionERK7QString(void *this_, const QString & description) {
+  ((QWidget*)this_)->setAccessibleDescription(description);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:399
+// void setLayoutDirection(Qt::LayoutDirection)
+extern "C"
+void C_ZN7QWidget18setLayoutDirectionEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection direction) {
+  ((QWidget*)this_)->setLayoutDirection(direction);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:400
+// Qt::LayoutDirection layoutDirection()
+extern "C"
+void C_ZNK7QWidget15layoutDirectionEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->layoutDirection();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:401
+// void unsetLayoutDirection()
+extern "C"
+void C_ZN7QWidget20unsetLayoutDirectionEv(void *this_) {
+  ((QWidget*)this_)->unsetLayoutDirection();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:403
+// void setLocale(const class QLocale &)
+extern "C"
+void C_ZN7QWidget9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
+  ((QWidget*)this_)->setLocale(locale);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:404
+// QLocale locale()
+extern "C"
+void C_ZNK7QWidget6localeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->locale();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:405
+// void unsetLocale()
+extern "C"
+void C_ZN7QWidget11unsetLocaleEv(void *this_) {
+  ((QWidget*)this_)->unsetLocale();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:407
+// bool isRightToLeft()
+extern "C"
+void C_ZNK7QWidget13isRightToLeftEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isRightToLeft();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:408
+// bool isLeftToRight()
+extern "C"
+void C_ZNK7QWidget13isLeftToRightEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isLeftToRight();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:411
+// void setFocus()
+extern "C"
+void C_ZN7QWidget8setFocusEv(void *this_) {
+  ((QWidget*)this_)->setFocus();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:414
+// bool isActiveWindow()
+extern "C"
+void C_ZNK7QWidget14isActiveWindowEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isActiveWindow();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:415
+// void activateWindow()
+extern "C"
+void C_ZN7QWidget14activateWindowEv(void *this_) {
+  ((QWidget*)this_)->activateWindow();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:416
+// void clearFocus()
+extern "C"
+void C_ZN7QWidget10clearFocusEv(void *this_) {
+  ((QWidget*)this_)->clearFocus();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:418
+// void setFocus(Qt::FocusReason)
+extern "C"
+void C_ZN7QWidget8setFocusEN2Qt11FocusReasonE(void *this_, Qt::FocusReason reason) {
+  ((QWidget*)this_)->setFocus(reason);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:419
+// Qt::FocusPolicy focusPolicy()
+extern "C"
+void C_ZNK7QWidget11focusPolicyEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->focusPolicy();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:420
+// void setFocusPolicy(Qt::FocusPolicy)
+extern "C"
+void C_ZN7QWidget14setFocusPolicyEN2Qt11FocusPolicyE(void *this_, Qt::FocusPolicy policy) {
+  ((QWidget*)this_)->setFocusPolicy(policy);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:421
+// bool hasFocus()
+extern "C"
+void C_ZNK7QWidget8hasFocusEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->hasFocus();
+}
+// static
+// /usr/include/qt/QtWidgets/qwidget.h:422
+// void setTabOrder(class QWidget *, class QWidget *)
+extern "C"
+void C_ZN7QWidget11setTabOrderEPS_S0_(QWidget * a0, QWidget * a1) {
+  QWidget::setTabOrder(a0, a1);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:423
+// void setFocusProxy(class QWidget *)
+extern "C"
+void C_ZN7QWidget13setFocusProxyEPS_(void *this_, QWidget * a0) {
+  ((QWidget*)this_)->setFocusProxy(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:424
+// QWidget * focusProxy()
+extern "C"
+void C_ZNK7QWidget10focusProxyEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->focusProxy();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:425
+// Qt::ContextMenuPolicy contextMenuPolicy()
+extern "C"
+void C_ZNK7QWidget17contextMenuPolicyEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->contextMenuPolicy();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:426
+// void setContextMenuPolicy(Qt::ContextMenuPolicy)
+extern "C"
+void C_ZN7QWidget20setContextMenuPolicyEN2Qt17ContextMenuPolicyE(void *this_, Qt::ContextMenuPolicy policy) {
+  ((QWidget*)this_)->setContextMenuPolicy(policy);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:429
+// void grabMouse()
+extern "C"
+void C_ZN7QWidget9grabMouseEv(void *this_) {
+  ((QWidget*)this_)->grabMouse();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:431
+// void grabMouse(const class QCursor &)
+extern "C"
+void C_ZN7QWidget9grabMouseERK7QCursor(void *this_, const QCursor & a0) {
+  ((QWidget*)this_)->grabMouse(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:433
+// void releaseMouse()
+extern "C"
+void C_ZN7QWidget12releaseMouseEv(void *this_) {
+  ((QWidget*)this_)->releaseMouse();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:434
+// void grabKeyboard()
+extern "C"
+void C_ZN7QWidget12grabKeyboardEv(void *this_) {
+  ((QWidget*)this_)->grabKeyboard();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:435
+// void releaseKeyboard()
+extern "C"
+void C_ZN7QWidget15releaseKeyboardEv(void *this_) {
+  ((QWidget*)this_)->releaseKeyboard();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:437
+// int grabShortcut(const class QKeySequence &, Qt::ShortcutContext)
+extern "C"
+void C_ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *this_, const QKeySequence & key, Qt::ShortcutContext context) {
+  /*return*/ ((QWidget*)this_)->grabShortcut(key, context);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:438
+// void releaseShortcut(int)
+extern "C"
+void C_ZN7QWidget15releaseShortcutEi(void *this_, int id) {
+  ((QWidget*)this_)->releaseShortcut(id);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:439
+// void setShortcutEnabled(int, _Bool)
+extern "C"
+void C_ZN7QWidget18setShortcutEnabledEib(void *this_, int id, bool enable) {
+  ((QWidget*)this_)->setShortcutEnabled(id, enable);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:440
+// void setShortcutAutoRepeat(int, _Bool)
+extern "C"
+void C_ZN7QWidget21setShortcutAutoRepeatEib(void *this_, int id, bool enable) {
+  ((QWidget*)this_)->setShortcutAutoRepeat(id, enable);
+}
+// static
+// /usr/include/qt/QtWidgets/qwidget.h:442
+// QWidget * mouseGrabber()
+extern "C"
+void C_ZN7QWidget12mouseGrabberEv() {
+  /*return*/ QWidget::mouseGrabber();
+}
+// static
+// /usr/include/qt/QtWidgets/qwidget.h:443
+// QWidget * keyboardGrabber()
+extern "C"
+void C_ZN7QWidget15keyboardGrabberEv() {
+  /*return*/ QWidget::keyboardGrabber();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:446
+// bool updatesEnabled()
+extern "C"
+void C_ZNK7QWidget14updatesEnabledEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->updatesEnabled();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:447
+// void setUpdatesEnabled(_Bool)
+extern "C"
+void C_ZN7QWidget17setUpdatesEnabledEb(void *this_, bool enable) {
+  ((QWidget*)this_)->setUpdatesEnabled(enable);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:450
+// QGraphicsProxyWidget * graphicsProxyWidget()
+extern "C"
+void C_ZNK7QWidget19graphicsProxyWidgetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->graphicsProxyWidget();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:454
+// void update()
+extern "C"
+void C_ZN7QWidget6updateEv(void *this_) {
+  ((QWidget*)this_)->update();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:455
+// void repaint()
+extern "C"
+void C_ZN7QWidget7repaintEv(void *this_) {
+  ((QWidget*)this_)->repaint();
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:458
+// void update(int, int, int, int)
+extern "C"
+void C_ZN7QWidget6updateEiiii(void *this_, int x, int y, int w, int h) {
+  ((QWidget*)this_)->update(x, y, w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:459
+// void update(const class QRect &)
+extern "C"
+void C_ZN7QWidget6updateERK5QRect(void *this_, const QRect & a0) {
+  ((QWidget*)this_)->update(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:460
+// void update(const class QRegion &)
+extern "C"
+void C_ZN7QWidget6updateERK7QRegion(void *this_, const QRegion & a0) {
+  ((QWidget*)this_)->update(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:462
+// void repaint(int, int, int, int)
+extern "C"
+void C_ZN7QWidget7repaintEiiii(void *this_, int x, int y, int w, int h) {
+  ((QWidget*)this_)->repaint(x, y, w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:463
+// void repaint(const class QRect &)
+extern "C"
+void C_ZN7QWidget7repaintERK5QRect(void *this_, const QRect & a0) {
+  ((QWidget*)this_)->repaint(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:464
+// void repaint(const class QRegion &)
+extern "C"
+void C_ZN7QWidget7repaintERK7QRegion(void *this_, const QRegion & a0) {
+  ((QWidget*)this_)->repaint(a0);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:469
+// void setVisible(_Bool)
+extern "C"
+void C_ZN7QWidget10setVisibleEb(void *this_, bool visible) {
+  ((QWidget*)this_)->setVisible(visible);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:470
+// void setHidden(_Bool)
+extern "C"
+void C_ZN7QWidget9setHiddenEb(void *this_, bool hidden) {
+  ((QWidget*)this_)->setHidden(hidden);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:471
+// void show()
+extern "C"
+void C_ZN7QWidget4showEv(void *this_) {
+  ((QWidget*)this_)->show();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:472
+// void hide()
+extern "C"
+void C_ZN7QWidget4hideEv(void *this_) {
+  ((QWidget*)this_)->hide();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:474
+// void showMinimized()
+extern "C"
+void C_ZN7QWidget13showMinimizedEv(void *this_) {
+  ((QWidget*)this_)->showMinimized();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:475
+// void showMaximized()
+extern "C"
+void C_ZN7QWidget13showMaximizedEv(void *this_) {
+  ((QWidget*)this_)->showMaximized();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:476
+// void showFullScreen()
+extern "C"
+void C_ZN7QWidget14showFullScreenEv(void *this_) {
+  ((QWidget*)this_)->showFullScreen();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:477
+// void showNormal()
+extern "C"
+void C_ZN7QWidget10showNormalEv(void *this_) {
+  ((QWidget*)this_)->showNormal();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:479
+// bool close()
+extern "C"
+void C_ZN7QWidget5closeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->close();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:480
+// void raise()
+extern "C"
+void C_ZN7QWidget5raiseEv(void *this_) {
+  ((QWidget*)this_)->raise();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:481
+// void lower()
+extern "C"
+void C_ZN7QWidget5lowerEv(void *this_) {
+  ((QWidget*)this_)->lower();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:484
+// void stackUnder(class QWidget *)
+extern "C"
+void C_ZN7QWidget10stackUnderEPS_(void *this_, QWidget * a0) {
+  ((QWidget*)this_)->stackUnder(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:485
+// void move(int, int)
+extern "C"
+void C_ZN7QWidget4moveEii(void *this_, int x, int y) {
+  ((QWidget*)this_)->move(x, y);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:486
+// void move(const class QPoint &)
+extern "C"
+void C_ZN7QWidget4moveERK6QPoint(void *this_, const QPoint & a0) {
+  ((QWidget*)this_)->move(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:487
+// void resize(int, int)
+extern "C"
+void C_ZN7QWidget6resizeEii(void *this_, int w, int h) {
+  ((QWidget*)this_)->resize(w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:488
+// void resize(const class QSize &)
+extern "C"
+void C_ZN7QWidget6resizeERK5QSize(void *this_, const QSize & a0) {
+  ((QWidget*)this_)->resize(a0);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:489
+// void setGeometry(int, int, int, int)
+extern "C"
+void C_ZN7QWidget11setGeometryEiiii(void *this_, int x, int y, int w, int h) {
+  ((QWidget*)this_)->setGeometry(x, y, w, h);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:490
+// void setGeometry(const class QRect &)
+extern "C"
+void C_ZN7QWidget11setGeometryERK5QRect(void *this_, const QRect & a0) {
+  ((QWidget*)this_)->setGeometry(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:491
+// QByteArray saveGeometry()
+extern "C"
+void C_ZNK7QWidget12saveGeometryEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->saveGeometry();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:492
+// bool restoreGeometry(const class QByteArray &)
+extern "C"
+void C_ZN7QWidget15restoreGeometryERK10QByteArray(void *this_, const QByteArray & geometry) {
+  /*return*/ ((QWidget*)this_)->restoreGeometry(geometry);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:493
+// void adjustSize()
+extern "C"
+void C_ZN7QWidget10adjustSizeEv(void *this_) {
+  ((QWidget*)this_)->adjustSize();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:494
+// bool isVisible()
+extern "C"
+void C_ZNK7QWidget9isVisibleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isVisible();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:495
+// bool isVisibleTo(const class QWidget *)
+extern "C"
+void C_ZNK7QWidget11isVisibleToEPKS_(void *this_, const QWidget * a0) {
+  /*return*/ ((QWidget*)this_)->isVisibleTo(a0);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:496
+// bool isHidden()
+extern "C"
+void C_ZNK7QWidget8isHiddenEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isHidden();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:498
+// bool isMinimized()
+extern "C"
+void C_ZNK7QWidget11isMinimizedEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isMinimized();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:499
+// bool isMaximized()
+extern "C"
+void C_ZNK7QWidget11isMaximizedEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isMaximized();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:500
+// bool isFullScreen()
+extern "C"
+void C_ZNK7QWidget12isFullScreenEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->isFullScreen();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:502
+// Qt::WindowStates windowState()
+extern "C"
+void C_ZNK7QWidget11windowStateEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowState();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:503
+// void setWindowState(Qt::WindowStates)
+extern "C"
+void C_ZN7QWidget14setWindowStateE6QFlagsIN2Qt11WindowStateEE(void *this_, QFlags<Qt::WindowState> state) {
+  ((QWidget*)this_)->setWindowState(state);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:504
+// void overrideWindowState(Qt::WindowStates)
+extern "C"
+void C_ZN7QWidget19overrideWindowStateE6QFlagsIN2Qt11WindowStateEE(void *this_, QFlags<Qt::WindowState> state) {
+  ((QWidget*)this_)->overrideWindowState(state);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:506
+// QSize sizeHint()
+extern "C"
+void C_ZNK7QWidget8sizeHintEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->sizeHint();
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:507
+// QSize minimumSizeHint()
+extern "C"
+void C_ZNK7QWidget15minimumSizeHintEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->minimumSizeHint();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:509
+// QSizePolicy sizePolicy()
+extern "C"
+void C_ZNK7QWidget10sizePolicyEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->sizePolicy();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:510
+// void setSizePolicy(class QSizePolicy)
+extern "C"
+void C_ZN7QWidget13setSizePolicyE11QSizePolicy(void *this_, QSizePolicy a0) {
+  ((QWidget*)this_)->setSizePolicy(a0);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:511
+// void setSizePolicy(class QSizePolicy::Policy, class QSizePolicy::Policy)
+extern "C"
+void C_ZN7QWidget13setSizePolicyEN11QSizePolicy6PolicyES1_(void *this_, QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical) {
+  ((QWidget*)this_)->setSizePolicy(horizontal, vertical);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:512
+// int heightForWidth(int)
+extern "C"
+void C_ZNK7QWidget14heightForWidthEi(void *this_, int a0) {
+  /*return*/ ((QWidget*)this_)->heightForWidth(a0);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:513
+// bool hasHeightForWidth()
+extern "C"
+void C_ZNK7QWidget17hasHeightForWidthEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->hasHeightForWidth();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:515
+// QRegion visibleRegion()
+extern "C"
+void C_ZNK7QWidget13visibleRegionEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->visibleRegion();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:517
+// void setContentsMargins(int, int, int, int)
+extern "C"
+void C_ZN7QWidget18setContentsMarginsEiiii(void *this_, int left, int top, int right, int bottom) {
+  ((QWidget*)this_)->setContentsMargins(left, top, right, bottom);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:518
+// void setContentsMargins(const class QMargins &)
+extern "C"
+void C_ZN7QWidget18setContentsMarginsERK8QMargins(void *this_, const QMargins & margins) {
+  ((QWidget*)this_)->setContentsMargins(margins);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:519
+// void getContentsMargins(int *, int *, int *, int *)
+extern "C"
+void C_ZNK7QWidget18getContentsMarginsEPiS0_S0_S0_(void *this_, int * left, int * top, int * right, int * bottom) {
+  ((QWidget*)this_)->getContentsMargins(left, top, right, bottom);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:520
+// QMargins contentsMargins()
+extern "C"
+void C_ZNK7QWidget15contentsMarginsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->contentsMargins();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:522
+// QRect contentsRect()
+extern "C"
+void C_ZNK7QWidget12contentsRectEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->contentsRect();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:525
+// QLayout * layout()
+extern "C"
+void C_ZNK7QWidget6layoutEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->layout();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:526
+// void setLayout(class QLayout *)
+extern "C"
+void C_ZN7QWidget9setLayoutEP7QLayout(void *this_, QLayout * a0) {
+  ((QWidget*)this_)->setLayout(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:527
+// void updateGeometry()
+extern "C"
+void C_ZN7QWidget14updateGeometryEv(void *this_) {
+  ((QWidget*)this_)->updateGeometry();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:529
+// void setParent(class QWidget *)
+extern "C"
+void C_ZN7QWidget9setParentEPS_(void *this_, QWidget * parent) {
+  ((QWidget*)this_)->setParent(parent);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:530
+// void setParent(class QWidget *, Qt::WindowFlags)
+extern "C"
+void C_ZN7QWidget9setParentEPS_6QFlagsIN2Qt10WindowTypeEE(void *this_, QWidget * parent, QFlags<Qt::WindowType> f) {
+  ((QWidget*)this_)->setParent(parent, f);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:532
+// void scroll(int, int)
+extern "C"
+void C_ZN7QWidget6scrollEii(void *this_, int dx, int dy) {
+  ((QWidget*)this_)->scroll(dx, dy);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:533
+// void scroll(int, int, const class QRect &)
+extern "C"
+void C_ZN7QWidget6scrollEiiRK5QRect(void *this_, int dx, int dy, const QRect & a2) {
+  ((QWidget*)this_)->scroll(dx, dy, a2);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:537
+// QWidget * focusWidget()
+extern "C"
+void C_ZNK7QWidget11focusWidgetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->focusWidget();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:538
+// QWidget * nextInFocusChain()
+extern "C"
+void C_ZNK7QWidget16nextInFocusChainEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->nextInFocusChain();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:539
+// QWidget * previousInFocusChain()
+extern "C"
+void C_ZNK7QWidget20previousInFocusChainEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->previousInFocusChain();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:542
+// bool acceptDrops()
+extern "C"
+void C_ZNK7QWidget11acceptDropsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->acceptDrops();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:543
+// void setAcceptDrops(_Bool)
+extern "C"
+void C_ZN7QWidget14setAcceptDropsEb(void *this_, bool on) {
+  ((QWidget*)this_)->setAcceptDrops(on);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:547
+// void addAction(class QAction *)
+extern "C"
+void C_ZN7QWidget9addActionEP7QAction(void *this_, QAction * action) {
+  ((QWidget*)this_)->addAction(action);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:552
+// void addActions(QList<class QAction *>)
+extern "C"
+void C_ZN7QWidget10addActionsE5QListIP7QActionE(void *this_, QList<QAction *> actions) {
+  ((QWidget*)this_)->addActions(actions);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:553
+// void insertActions(class QAction *, QList<class QAction *>)
+extern "C"
+void C_ZN7QWidget13insertActionsEP7QAction5QListIS1_E(void *this_, QAction * before, QList<QAction *> actions) {
+  ((QWidget*)this_)->insertActions(before, actions);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:555
+// void insertAction(class QAction *, class QAction *)
+extern "C"
+void C_ZN7QWidget12insertActionEP7QActionS1_(void *this_, QAction * before, QAction * action) {
+  ((QWidget*)this_)->insertAction(before, action);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:556
+// void removeAction(class QAction *)
+extern "C"
+void C_ZN7QWidget12removeActionEP7QAction(void *this_, QAction * action) {
+  ((QWidget*)this_)->removeAction(action);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:557
+// QList<QAction *> actions()
+extern "C"
+void C_ZNK7QWidget7actionsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->actions();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:560
+// QWidget * parentWidget()
+extern "C"
+void C_ZNK7QWidget12parentWidgetEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->parentWidget();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:562
+// void setWindowFlags(Qt::WindowFlags)
+extern "C"
+void C_ZN7QWidget14setWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type) {
+  ((QWidget*)this_)->setWindowFlags(type);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:563
+// Qt::WindowFlags windowFlags()
+extern "C"
+void C_ZNK7QWidget11windowFlagsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowFlags();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:564
+// void overrideWindowFlags(Qt::WindowFlags)
+extern "C"
+void C_ZN7QWidget19overrideWindowFlagsE6QFlagsIN2Qt10WindowTypeEE(void *this_, QFlags<Qt::WindowType> type) {
+  ((QWidget*)this_)->overrideWindowFlags(type);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:566
+// Qt::WindowType windowType()
+extern "C"
+void C_ZNK7QWidget10windowTypeEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowType();
+}
+// static
+// /usr/include/qt/QtWidgets/qwidget.h:568
+// QWidget * find(WId)
+extern "C"
+void C_ZN7QWidget4findEy(WId a0) {
+  /*return*/ QWidget::find(a0);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:569
+// QWidget * childAt(int, int)
+extern "C"
+void C_ZNK7QWidget7childAtEii(void *this_, int x, int y) {
+  /*return*/ ((QWidget*)this_)->childAt(x, y);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:570
+// QWidget * childAt(const class QPoint &)
+extern "C"
+void C_ZNK7QWidget7childAtERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QWidget*)this_)->childAt(p);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:582
+// void setAttribute(Qt::WidgetAttribute, _Bool)
+extern "C"
+void C_ZN7QWidget12setAttributeEN2Qt15WidgetAttributeEb(void *this_, Qt::WidgetAttribute a0, bool on) {
+  ((QWidget*)this_)->setAttribute(a0, on);
+}
+// inline
+// /usr/include/qt/QtWidgets/qwidget.h:583
+// bool testAttribute(Qt::WidgetAttribute)
+extern "C"
+void C_ZNK7QWidget13testAttributeEN2Qt15WidgetAttributeE(void *this_, Qt::WidgetAttribute a0) {
+  /*return*/ ((QWidget*)this_)->testAttribute(a0);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:585
+// QPaintEngine * paintEngine()
+extern "C"
+void C_ZNK7QWidget11paintEngineEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->paintEngine();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:587
+// void ensurePolished()
+extern "C"
+void C_ZNK7QWidget14ensurePolishedEv(void *this_) {
+  ((QWidget*)this_)->ensurePolished();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:589
+// bool isAncestorOf(const class QWidget *)
+extern "C"
+void C_ZNK7QWidget12isAncestorOfEPKS_(void *this_, const QWidget * child) {
+  /*return*/ ((QWidget*)this_)->isAncestorOf(child);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:596
+// bool autoFillBackground()
+extern "C"
+void C_ZNK7QWidget18autoFillBackgroundEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->autoFillBackground();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:597
+// void setAutoFillBackground(_Bool)
+extern "C"
+void C_ZN7QWidget21setAutoFillBackgroundEb(void *this_, bool enabled) {
+  ((QWidget*)this_)->setAutoFillBackground(enabled);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:599
+// QBackingStore * backingStore()
+extern "C"
+void C_ZNK7QWidget12backingStoreEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->backingStore();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:601
+// QWindow * windowHandle()
+extern "C"
+void C_ZNK7QWidget12windowHandleEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->windowHandle();
+}
+// static
+// /usr/include/qt/QtWidgets/qwidget.h:603
+// QWidget * createWindowContainer(class QWindow *, class QWidget *, Qt::WindowFlags)
+extern "C"
+void C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE(QWindow * window, QWidget * parent, QFlags<Qt::WindowType> flags) {
+  /*return*/ QWidget::createWindowContainer(window, parent, flags);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:608
+// void windowTitleChanged(const class QString &)
+extern "C"
+void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, const QString & title) {
+  ((QWidget*)this_)->windowTitleChanged(title);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:609
+// void windowIconChanged(const class QIcon &)
+extern "C"
+void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, const QIcon & icon) {
+  ((QWidget*)this_)->windowIconChanged(icon);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:610
+// void windowIconTextChanged(const class QString &)
+extern "C"
+void C_ZN7QWidget21windowIconTextChangedERK7QString(void *this_, const QString & iconText) {
+  ((QWidget*)this_)->windowIconTextChanged(iconText);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:611
+// void customContextMenuRequested(const class QPoint &)
+extern "C"
+void C_ZN7QWidget26customContextMenuRequestedERK6QPoint(void *this_, const QPoint & pos) {
+  ((QWidget*)this_)->customContextMenuRequested(pos);
+}
+// virtual
+// /usr/include/qt/QtWidgets/qwidget.h:664
+// QVariant inputMethodQuery(Qt::InputMethodQuery)
+extern "C"
+void C_ZNK7QWidget16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery a0) {
+  /*return*/ ((QWidget*)this_)->inputMethodQuery(a0);
+}
+// /usr/include/qt/QtWidgets/qwidget.h:666
+// Qt::InputMethodHints inputMethodHints()
+extern "C"
+void C_ZNK7QWidget16inputMethodHintsEv(void *this_) {
+  /*return*/ ((QWidget*)this_)->inputMethodHints();
+}
+// /usr/include/qt/QtWidgets/qwidget.h:667
+// void setInputMethodHints(Qt::InputMethodHints)
+extern "C"
+void C_ZN7QWidget19setInputMethodHintsE6QFlagsIN2Qt15InputMethodHintEE(void *this_, QFlags<Qt::InputMethodHint> hints) {
+  ((QWidget*)this_)->setInputMethodHints(hints);
+}

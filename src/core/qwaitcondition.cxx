@@ -1,94 +1,40 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qwaitcondition.h
-// dst-file: /src/core/qwaitcondition.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qwaitcondition.h
 #include <qwaitcondition.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qwaitcondition_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qwaitcondition.h:59
+// void QWaitCondition()
 extern "C"
-int QWaitCondition_Class_Size()
-{
-  return sizeof(QWaitCondition);
+void* C_ZN14QWaitConditionC1Ev() {
+  return new QWaitCondition();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 63, column 10>
-//   // proto:  bool QWaitCondition::wait(QReadWriteLock * lockedReadWriteLock, unsigned long time);
-// _ZN14QWaitCondition4waitEP14QReadWriteLockm wait(class QReadWriteLock *, unsigned long)
+// /usr/include/qt/QtCore/qwaitcondition.h:60
+// void ~QWaitCondition()
 extern "C"
-bool
-C_ZN14QWaitCondition4waitEP14QReadWriteLockm(void *qthis,
-QReadWriteLock * arg1,
-unsigned long arg2) {
-  auto ret =
-  ((QWaitCondition*)qthis)->wait(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN14QWaitConditionD1Ev(void *this_) {
+  delete (QWaitCondition*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 62, column 10>
-//   // proto:  bool QWaitCondition::wait(QMutex * lockedMutex, unsigned long time);
-// _ZN14QWaitCondition4waitEP6QMutexm wait(class QMutex *, unsigned long)
+// /usr/include/qt/QtCore/qwaitcondition.h:62
+// bool wait(class QMutex *, unsigned long)
 extern "C"
-bool
-C_ZN14QWaitCondition4waitEP6QMutexm(void *qthis,
-QMutex * arg1,
-unsigned long arg2) {
-  auto ret =
-  ((QWaitCondition*)qthis)->wait(arg1,
-arg2);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN14QWaitCondition4waitEP6QMutexm(void *this_, QMutex * lockedMutex, unsigned long time) {
+  /*return*/ ((QWaitCondition*)this_)->wait(lockedMutex, time);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 66, column 10>
-//   // proto:  void QWaitCondition::wakeAll();
-// _ZN14QWaitCondition7wakeAllEv wakeAll()
+// /usr/include/qt/QtCore/qwaitcondition.h:63
+// bool wait(class QReadWriteLock *, unsigned long)
 extern "C"
-void
-C_ZN14QWaitCondition7wakeAllEv(void *qthis) {
-  ((QWaitCondition*)qthis)->wakeAll();
+void C_ZN14QWaitCondition4waitEP14QReadWriteLockm(void *this_, QReadWriteLock * lockedReadWriteLock, unsigned long time) {
+  /*return*/ ((QWaitCondition*)this_)->wait(lockedReadWriteLock, time);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 65, column 10>
-//   // proto:  void QWaitCondition::wakeOne();
-// _ZN14QWaitCondition7wakeOneEv wakeOne()
+// /usr/include/qt/QtCore/qwaitcondition.h:65
+// void wakeOne()
 extern "C"
-void
-C_ZN14QWaitCondition7wakeOneEv(void *qthis) {
-  ((QWaitCondition*)qthis)->wakeOne();
+void C_ZN14QWaitCondition7wakeOneEv(void *this_) {
+  ((QWaitCondition*)this_)->wakeOne();
 }
-//   // proto:  void QWaitCondition::~QWaitCondition();
+// /usr/include/qt/QtCore/qwaitcondition.h:66
+// void wakeAll()
 extern "C"
-void C_ZN14QWaitConditionD2Ev(void *qthis) {
-  delete (QWaitCondition*)qthis;
+void C_ZN14QWaitCondition7wakeAllEv(void *this_) {
+  ((QWaitCondition*)this_)->wakeAll();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qwaitcondition.h', line 59, column 5>
-//   // proto:  void QWaitCondition::QWaitCondition();
-extern "C"
-QWaitCondition*
-C_ZN14QWaitConditionC2Ev() {
-  auto ret = new QWaitCondition();
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

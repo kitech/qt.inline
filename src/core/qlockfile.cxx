@@ -1,145 +1,70 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qlockfile.h
-// dst-file: /src/core/qlockfile.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qlockfile.h
 #include <qlockfile.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qlockfile_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qlockfile.h:53
+// void QLockFile(const class QString &)
 extern "C"
-int QLockFile_Class_Size()
-{
-  return sizeof(QLockFile);
+void* C_ZN9QLockFileC1ERK7QString(const QString & fileName) {
+  return new QLockFile(fileName);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 65, column 10>
-//   // proto:  bool QLockFile::removeStaleLockFile();
-// _ZN9QLockFile19removeStaleLockFileEv removeStaleLockFile()
+// /usr/include/qt/QtCore/qlockfile.h:54
+// void ~QLockFile()
 extern "C"
-bool
-C_ZN9QLockFile19removeStaleLockFileEv(void *qthis) {
-  auto ret =
-  ((QLockFile*)qthis)->removeStaleLockFile();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QLockFileD1Ev(void *this_) {
+  delete (QLockFile*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 61, column 9>
-//   // proto:  int QLockFile::staleLockTime();
-// _ZNK9QLockFile13staleLockTimeEv staleLockTime()
+// /usr/include/qt/QtCore/qlockfile.h:56
+// bool lock()
 extern "C"
-int
-C_ZNK9QLockFile13staleLockTimeEv(void *qthis) {
-  auto ret =
-  ((QLockFile*)qthis)->staleLockTime();
-  return ret; // 0 TypeKind.INT
+void C_ZN9QLockFile4lockEv(void *this_) {
+  /*return*/ ((QLockFile*)this_)->lock();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 63, column 10>
-//   // proto:  bool QLockFile::isLocked();
-// _ZNK9QLockFile8isLockedEv isLocked()
+// /usr/include/qt/QtCore/qlockfile.h:57
+// bool tryLock(int)
 extern "C"
-bool
-C_ZNK9QLockFile8isLockedEv(void *qthis) {
-  auto ret =
-  ((QLockFile*)qthis)->isLocked();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN9QLockFile7tryLockEi(void *this_, int timeout) {
+  /*return*/ ((QLockFile*)this_)->tryLock(timeout);
 }
-//   // proto:  void QLockFile::~QLockFile();
+// /usr/include/qt/QtCore/qlockfile.h:58
+// void unlock()
 extern "C"
-void C_ZN9QLockFileD2Ev(void *qthis) {
-  delete (QLockFile*)qthis;
+void C_ZN9QLockFile6unlockEv(void *this_) {
+  ((QLockFile*)this_)->unlock();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 73, column 15>
-//   // proto:  QLockFile::LockError QLockFile::error();
-// _ZNK9QLockFile5errorEv error()
+// /usr/include/qt/QtCore/qlockfile.h:60
+// void setStaleLockTime(int)
 extern "C"
-QLockFile::LockError
-C_ZNK9QLockFile5errorEv(void *qthis) {
-  auto ret =
-  ((QLockFile*)qthis)->error();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN9QLockFile16setStaleLockTimeEi(void *this_, int a0) {
+  ((QLockFile*)this_)->setStaleLockTime(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 58, column 10>
-//   // proto:  void QLockFile::unlock();
-// _ZN9QLockFile6unlockEv unlock()
+// /usr/include/qt/QtCore/qlockfile.h:61
+// int staleLockTime()
 extern "C"
-void
-C_ZN9QLockFile6unlockEv(void *qthis) {
-  ((QLockFile*)qthis)->unlock();
+void C_ZNK9QLockFile13staleLockTimeEv(void *this_) {
+  /*return*/ ((QLockFile*)this_)->staleLockTime();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 57, column 10>
-//   // proto:  bool QLockFile::tryLock(int timeout);
-// _ZN9QLockFile7tryLockEi tryLock(int)
+// /usr/include/qt/QtCore/qlockfile.h:63
+// bool isLocked()
 extern "C"
-bool
-C_ZN9QLockFile7tryLockEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QLockFile*)qthis)->tryLock(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QLockFile8isLockedEv(void *this_) {
+  /*return*/ ((QLockFile*)this_)->isLocked();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 56, column 10>
-//   // proto:  bool QLockFile::lock();
-// _ZN9QLockFile4lockEv lock()
+// /usr/include/qt/QtCore/qlockfile.h:64
+// bool getLockInfo(qint64 *, class QString *, class QString *)
 extern "C"
-bool
-C_ZN9QLockFile4lockEv(void *qthis) {
-  auto ret =
-  ((QLockFile*)qthis)->lock();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QLockFile11getLockInfoEPxP7QStringS2_(void *this_, qint64 * pid, QString * hostname, QString * appname) {
+  /*return*/ ((QLockFile*)this_)->getLockInfo(pid, hostname, appname);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 60, column 10>
-//   // proto:  void QLockFile::setStaleLockTime(int );
-// _ZN9QLockFile16setStaleLockTimeEi setStaleLockTime(int)
+// /usr/include/qt/QtCore/qlockfile.h:65
+// bool removeStaleLockFile()
 extern "C"
-void
-C_ZN9QLockFile16setStaleLockTimeEi(void *qthis,
-int arg1) {
-  ((QLockFile*)qthis)->setStaleLockTime(arg1);
+void C_ZN9QLockFile19removeStaleLockFileEv(void *this_) {
+  /*return*/ ((QLockFile*)this_)->removeStaleLockFile();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 64, column 10>
-//   // proto:  bool QLockFile::getLockInfo(qint64 * pid, QString * hostname, QString * appname);
-// _ZNK9QLockFile11getLockInfoEPxP7QStringS2_ getLockInfo(qint64 *, class QString *, class QString *)
+// /usr/include/qt/QtCore/qlockfile.h:73
+// QLockFile::LockError error()
 extern "C"
-bool
-C_ZNK9QLockFile11getLockInfoEPxP7QStringS2_(void *qthis,
-qint64 * arg1,
-QString * arg2,
-QString * arg3) {
-  auto ret =
-  ((QLockFile*)qthis)->getLockInfo(arg1,
-arg2,
-arg3);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK9QLockFile5errorEv(void *this_) {
+  /*return*/ ((QLockFile*)this_)->error();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qlockfile.h', line 53, column 5>
-//   // proto:  void QLockFile::QLockFile(const QString & fileName);
-extern "C"
-QLockFile*
-C_ZN9QLockFileC2ERK7QString(const QString* arg1) {
-  auto ret = new QLockFile(*((const QString*)arg1));
-  return ret;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

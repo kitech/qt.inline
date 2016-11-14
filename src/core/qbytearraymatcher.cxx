@@ -1,136 +1,53 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qbytearraymatcher.h
-// dst-file: /src/core/qbytearraymatcher.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qbytearraymatcher.h
 #include <qbytearraymatcher.h>
+#include <QtCore>
 
-
-#include <qbytearray.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qbytearraymatcher_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 65, column 23>
-//   // proto:  QByteArray QByteArrayMatcher::pattern();
-if (true) {
-  auto f = [](QByteArrayMatcher flythis) {
-    ((QByteArrayMatcher*)0)->pattern();
-    flythis.pattern();
-  };
-  if (f == nullptr){}
-}
-// _ZNK17QByteArrayMatcher7patternEv pattern()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qbytearraymatcher.h:53
+// void QByteArrayMatcher()
 extern "C"
-int QByteArrayMatcher_Class_Size()
-{
-  return sizeof(QByteArrayMatcher);
+void* C_ZN17QByteArrayMatcherC1Ev() {
+  return new QByteArrayMatcher();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 65, column 23>
-//   // proto:  QByteArray QByteArrayMatcher::pattern();
-// _ZNK17QByteArrayMatcher7patternEv pattern()
+// /usr/include/qt/QtCore/qbytearraymatcher.h:54
+// void QByteArrayMatcher(const class QByteArray &)
 extern "C"
-QByteArray*
-C_ZNK17QByteArrayMatcher7patternEv(void *qthis) {
-  auto ret =
-  ((QByteArrayMatcher*)qthis)->pattern();
-  return new QByteArray(ret); // 5
+void* C_ZN17QByteArrayMatcherC1ERK10QByteArray(const QByteArray & pattern) {
+  return new QByteArrayMatcher(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 64, column 9>
-//   // proto:  int QByteArrayMatcher::indexIn(const char * str, int len, int from);
-// _ZNK17QByteArrayMatcher7indexInEPKcii indexIn(const char *, int, int)
+// /usr/include/qt/QtCore/qbytearraymatcher.h:55
+// void QByteArrayMatcher(const char *, int)
 extern "C"
-int
-C_ZNK17QByteArrayMatcher7indexInEPKcii(void *qthis,
-const char * arg1,
-int arg2,
-int arg3) {
-  auto ret =
-  ((QByteArrayMatcher*)qthis)->indexIn(arg1,
-arg2,
-arg3);
-  return ret; // 0 TypeKind.INT
+void* C_ZN17QByteArrayMatcherC1EPKci(const char * pattern, int length) {
+  return new QByteArrayMatcher(pattern, length);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 61, column 10>
-//   // proto:  void QByteArrayMatcher::setPattern(const QByteArray & pattern);
-// _ZN17QByteArrayMatcher10setPatternERK10QByteArray setPattern(const class QByteArray &)
+// /usr/include/qt/QtCore/qbytearraymatcher.h:57
+// void ~QByteArrayMatcher()
 extern "C"
-void
-C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *qthis,
-const QByteArray* arg1) {
-  ((QByteArrayMatcher*)qthis)->setPattern(*((const QByteArray*)arg1));
+void C_ZN17QByteArrayMatcherD1Ev(void *this_) {
+  delete (QByteArrayMatcher*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 53, column 5>
-//   // proto:  void QByteArrayMatcher::QByteArrayMatcher();
+// /usr/include/qt/QtCore/qbytearraymatcher.h:61
+// void setPattern(const class QByteArray &)
 extern "C"
-QByteArrayMatcher*
-C_ZN17QByteArrayMatcherC2Ev() {
-  auto ret = new QByteArrayMatcher();
-  return ret;
+void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, const QByteArray & pattern) {
+  ((QByteArrayMatcher*)this_)->setPattern(pattern);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 55, column 14>
-//   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const char * pattern, int length);
+// /usr/include/qt/QtCore/qbytearraymatcher.h:63
+// int indexIn(const class QByteArray &, int)
 extern "C"
-QByteArrayMatcher*
-C_ZN17QByteArrayMatcherC2EPKci(const char * arg1,
-int arg2) {
-  auto ret = new QByteArrayMatcher(arg1,
-arg2);
-  return ret;
+void C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, const QByteArray & ba, int from) {
+  /*return*/ ((QByteArrayMatcher*)this_)->indexIn(ba, from);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 54, column 14>
-//   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const QByteArray & pattern);
+// /usr/include/qt/QtCore/qbytearraymatcher.h:64
+// int indexIn(const char *, int, int)
 extern "C"
-QByteArrayMatcher*
-C_ZN17QByteArrayMatcherC2ERK10QByteArray(const QByteArray* arg1) {
-  auto ret = new QByteArrayMatcher(*((const QByteArray*)arg1));
-  return ret;
+void C_ZNK17QByteArrayMatcher7indexInEPKcii(void *this_, const char * str, int len, int from) {
+  /*return*/ ((QByteArrayMatcher*)this_)->indexIn(str, len, from);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 63, column 9>
-//   // proto:  int QByteArrayMatcher::indexIn(const QByteArray & ba, int from);
-// _ZNK17QByteArrayMatcher7indexInERK10QByteArrayi indexIn(const class QByteArray &, int)
+// inline
+// /usr/include/qt/QtCore/qbytearraymatcher.h:65
+// QByteArray pattern()
 extern "C"
-int
-C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *qthis,
-const QByteArray* arg1,
-int arg2) {
-  auto ret =
-  ((QByteArrayMatcher*)qthis)->indexIn(*((const QByteArray*)arg1),
-arg2);
-  return ret; // 0 TypeKind.INT
+void C_ZNK17QByteArrayMatcher7patternEv(void *this_) {
+  /*return*/ ((QByteArrayMatcher*)this_)->pattern();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qbytearraymatcher.h', line 56, column 5>
-//   // proto:  void QByteArrayMatcher::QByteArrayMatcher(const QByteArrayMatcher & other);
-extern "C"
-QByteArrayMatcher*
-C_ZN17QByteArrayMatcherC2ERKS_(const QByteArrayMatcher* arg1) {
-  auto ret = new QByteArrayMatcher(*((const QByteArrayMatcher*)arg1));
-  return ret;
-}
-//   // proto:  void QByteArrayMatcher::~QByteArrayMatcher();
-extern "C"
-void C_ZN17QByteArrayMatcherD2Ev(void *qthis) {
-  delete (QByteArrayMatcher*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

@@ -1,198 +1,92 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qscrollarea.h
-// dst-file: /src/widgets/qscrollarea.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qscrollarea.h
 #include <qscrollarea.h>
+#include <QtWidgets>
 
-
-#include <qsize.h>
-#include <qnamespace.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qscrollarea_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qscrollarea.h:54
+// const QMetaObject * metaObject()
 extern "C"
-int QScrollArea_Class_Size()
-{
-  return sizeof(QScrollArea);
+void C_ZNK11QScrollArea10metaObjectEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 59, column 14>
-//   // proto:  void QScrollArea::QScrollArea(QWidget * parent);
+// /usr/include/qt/QtWidgets/qscrollarea.h:59
+// void QScrollArea(class QWidget *)
 extern "C"
-QScrollArea*
-C_ZN11QScrollAreaC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QScrollArea(arg1);
-  return ret;
+void* C_ZN11QScrollAreaC1EP7QWidget(QWidget * parent) {
+  return new QScrollArea(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 67, column 10>
-//   // proto:  void QScrollArea::setWidgetResizable(bool resizable);
-// _ZN11QScrollArea18setWidgetResizableEb setWidgetResizable(_Bool)
+// virtual
+// /usr/include/qt/QtWidgets/qscrollarea.h:60
+// void ~QScrollArea()
 extern "C"
-void
-C_ZN11QScrollArea18setWidgetResizableEb(void *qthis,
-bool arg1) {
-  ((QScrollArea*)qthis)->setWidgetResizable(arg1);
+void C_ZN11QScrollAreaD1Ev(void *this_) {
+  delete (QScrollArea*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 63, column 10>
-//   // proto:  void QScrollArea::setWidget(QWidget * widget);
-// _ZN11QScrollArea9setWidgetEP7QWidget setWidget(class QWidget *)
+// /usr/include/qt/QtWidgets/qscrollarea.h:62
+// QWidget * widget()
 extern "C"
-void
-C_ZN11QScrollArea9setWidgetEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QScrollArea*)qthis)->setWidget(arg1);
+void C_ZNK11QScrollArea6widgetEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->widget();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 64, column 14>
-//   // proto:  QWidget * QScrollArea::takeWidget();
-// _ZN11QScrollArea10takeWidgetEv takeWidget()
+// /usr/include/qt/QtWidgets/qscrollarea.h:63
+// void setWidget(class QWidget *)
 extern "C"
-void*
-C_ZN11QScrollArea10takeWidgetEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->takeWidget();
-  return (void*)ret;
+void C_ZN11QScrollArea9setWidgetEP7QWidget(void *this_, QWidget * widget) {
+  ((QScrollArea*)this_)->setWidget(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 76, column 10>
-//   // proto:  void QScrollArea::ensureVisible(int x, int y, int xmargin, int ymargin);
-// _ZN11QScrollArea13ensureVisibleEiiii ensureVisible(int, int, int, int)
+// /usr/include/qt/QtWidgets/qscrollarea.h:64
+// QWidget * takeWidget()
 extern "C"
-void
-C_ZN11QScrollArea13ensureVisibleEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  ((QScrollArea*)qthis)->ensureVisible(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZN11QScrollArea10takeWidgetEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->takeWidget();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 77, column 10>
-//   // proto:  void QScrollArea::ensureWidgetVisible(QWidget * childWidget, int xmargin, int ymargin);
-// _ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii ensureWidgetVisible(class QWidget *, int, int)
+// /usr/include/qt/QtWidgets/qscrollarea.h:66
+// bool widgetResizable()
 extern "C"
-void
-C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *qthis,
-QWidget * arg1,
-int arg2,
-int arg3) {
-  ((QScrollArea*)qthis)->ensureWidgetVisible(arg1,
-arg2,
-arg3);
+void C_ZNK11QScrollArea15widgetResizableEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->widgetResizable();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 62, column 14>
-//   // proto:  QWidget * QScrollArea::widget();
-// _ZNK11QScrollArea6widgetEv widget()
+// /usr/include/qt/QtWidgets/qscrollarea.h:67
+// void setWidgetResizable(_Bool)
 extern "C"
-void*
-C_ZNK11QScrollArea6widgetEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->widget();
-  return (void*)ret;
+void C_ZN11QScrollArea18setWidgetResizableEb(void *this_, bool resizable) {
+  ((QScrollArea*)this_)->setWidgetResizable(resizable);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 69, column 11>
-//   // proto:  QSize QScrollArea::sizeHint();
-// _ZNK11QScrollArea8sizeHintEv sizeHint()
+// virtual
+// /usr/include/qt/QtWidgets/qscrollarea.h:69
+// QSize sizeHint()
 extern "C"
-QSize*
-C_ZNK11QScrollArea8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZNK11QScrollArea8sizeHintEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 66, column 10>
-//   // proto:  bool QScrollArea::widgetResizable();
-// _ZNK11QScrollArea15widgetResizableEv widgetResizable()
+// virtual
+// /usr/include/qt/QtWidgets/qscrollarea.h:71
+// bool focusNextPrevChild(_Bool)
 extern "C"
-bool
-C_ZNK11QScrollArea15widgetResizableEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->widgetResizable();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QScrollArea18focusNextPrevChildEb(void *this_, bool next) {
+  /*return*/ ((QScrollArea*)this_)->focusNextPrevChild(next);
 }
-//   // proto:  void QScrollArea::~QScrollArea();
+// /usr/include/qt/QtWidgets/qscrollarea.h:73
+// Qt::Alignment alignment()
 extern "C"
-void C_ZN11QScrollAreaD2Ev(void *qthis) {
-  delete (QScrollArea*)qthis;
+void C_ZNK11QScrollArea9alignmentEv(void *this_) {
+  /*return*/ ((QScrollArea*)this_)->alignment();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 71, column 10>
-//   // proto:  bool QScrollArea::focusNextPrevChild(bool next);
-// _ZN11QScrollArea18focusNextPrevChildEb focusNextPrevChild(_Bool)
+// /usr/include/qt/QtWidgets/qscrollarea.h:74
+// void setAlignment(Qt::Alignment)
 extern "C"
-bool
-C_ZN11QScrollArea18focusNextPrevChildEb(void *qthis,
-bool arg1) {
-  auto ret =
-  ((QScrollArea*)qthis)->focusNextPrevChild(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment a0) {
+  ((QScrollArea*)this_)->setAlignment(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 74, column 10>
-//   // proto:  void QScrollArea::setAlignment(Qt::Alignment );
-// _ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setAlignment(Qt::Alignment)
+// /usr/include/qt/QtWidgets/qscrollarea.h:76
+// void ensureVisible(int, int, int, int)
 extern "C"
-void
-C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-Qt::Alignment* arg1) {
-  ((QScrollArea*)qthis)->setAlignment(*((Qt::Alignment*)arg1));
+void C_ZN11QScrollArea13ensureVisibleEiiii(void *this_, int x, int y, int xmargin, int ymargin) {
+  ((QScrollArea*)this_)->ensureVisible(x, y, xmargin, ymargin);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 73, column 19>
-//   // proto:  Qt::Alignment QScrollArea::alignment();
-// _ZNK11QScrollArea9alignmentEv alignment()
+// /usr/include/qt/QtWidgets/qscrollarea.h:77
+// void ensureWidgetVisible(class QWidget *, int, int)
 extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK11QScrollArea9alignmentEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->alignment();
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
+void C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *this_, QWidget * childWidget, int xmargin, int ymargin) {
+  ((QScrollArea*)this_)->ensureWidgetVisible(childWidget, xmargin, ymargin);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qscrollarea.h', line 54, column 5>
-//   // proto:  const QMetaObject * QScrollArea::metaObject();
-// _ZNK11QScrollArea10metaObjectEv metaObject()
-extern "C"
-void*
-C_ZNK11QScrollArea10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QScrollArea*)qthis)->metaObject();
-  return (void*)ret;
-}
-// <= ext block end
-
-// body block begin =>
-// QScrollArea_SlotProxy here
-class QScrollArea_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QScrollArea_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qscrollarea.moc"
-
-extern "C" {
-  QScrollArea_SlotProxy* QScrollArea_SlotProxy_new()
-  {
-    return new QScrollArea_SlotProxy();
-  }
-};
-
-// <= body block end
-

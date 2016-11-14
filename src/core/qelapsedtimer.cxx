@@ -1,175 +1,85 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qelapsedtimer.h
-// dst-file: /src/core/qelapsedtimer.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qelapsedtimer.h
 #include <qelapsedtimer.h>
+#include <QtCore>
 
-
-#include <qglobal.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qelapsedtimer_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 59, column 22>
-//   // proto:  void QElapsedTimer::QElapsedTimer();
-if (true) {
-  auto f = []() {
-    new QElapsedTimer();
-  };
-  if (f == nullptr){}
-}
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtCore/qelapsedtimer.h:59
+// void QElapsedTimer()
 extern "C"
-int QElapsedTimer_Class_Size()
-{
-  return sizeof(QElapsedTimer);
+void* C_ZN13QElapsedTimerC1Ev() {
+  return new QElapsedTimer();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 68, column 10>
-//   // proto:  void QElapsedTimer::start();
-// _ZN13QElapsedTimer5startEv start()
+// static
+// /usr/include/qt/QtCore/qelapsedtimer.h:65
+// QElapsedTimer::ClockType clockType()
 extern "C"
-void
-C_ZN13QElapsedTimer5startEv(void *qthis) {
-  ((QElapsedTimer*)qthis)->start();
+void C_ZN13QElapsedTimer9clockTypeEv() {
+  /*return*/ QElapsedTimer::clockType();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 73, column 12>
-//   // proto:  qint64 QElapsedTimer::nsecsElapsed();
-// _ZNK13QElapsedTimer12nsecsElapsedEv nsecsElapsed()
+// static
+// /usr/include/qt/QtCore/qelapsedtimer.h:66
+// bool isMonotonic()
 extern "C"
-long long
-C_ZNK13QElapsedTimer12nsecsElapsedEv(void *qthis) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->nsecsElapsed();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZN13QElapsedTimer11isMonotonicEv() {
+  /*return*/ QElapsedTimer::isMonotonic();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 70, column 10>
-//   // proto:  void QElapsedTimer::invalidate();
-// _ZN13QElapsedTimer10invalidateEv invalidate()
+// /usr/include/qt/QtCore/qelapsedtimer.h:68
+// void start()
 extern "C"
-void
-C_ZN13QElapsedTimer10invalidateEv(void *qthis) {
-  ((QElapsedTimer*)qthis)->invalidate();
+void C_ZN13QElapsedTimer5startEv(void *this_) {
+  ((QElapsedTimer*)this_)->start();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 66, column 17>
-//   // proto: static bool QElapsedTimer::isMonotonic();
-// _ZN13QElapsedTimer11isMonotonicEv isMonotonic()
+// /usr/include/qt/QtCore/qelapsedtimer.h:69
+// qint64 restart()
 extern "C"
-bool
-C_ZN13QElapsedTimer11isMonotonicEv() {
-  auto ret =
-  QElapsedTimer::isMonotonic();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QElapsedTimer7restartEv(void *this_) {
+  /*return*/ ((QElapsedTimer*)this_)->restart();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 59, column 22>
-//   // proto:  void QElapsedTimer::QElapsedTimer();
+// /usr/include/qt/QtCore/qelapsedtimer.h:70
+// void invalidate()
 extern "C"
-QElapsedTimer*
-C_ZN13QElapsedTimerC2Ev() {
-  auto ret = new QElapsedTimer();
-  return ret;
+void C_ZN13QElapsedTimer10invalidateEv(void *this_) {
+  ((QElapsedTimer*)this_)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 78, column 12>
-//   // proto:  qint64 QElapsedTimer::msecsTo(const QElapsedTimer & other);
-// _ZNK13QElapsedTimer7msecsToERKS_ msecsTo(const class QElapsedTimer &)
+// /usr/include/qt/QtCore/qelapsedtimer.h:71
+// bool isValid()
 extern "C"
-long long
-C_ZNK13QElapsedTimer7msecsToERKS_(void *qthis,
-const QElapsedTimer* arg1) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->msecsTo(*((const QElapsedTimer*)arg1));
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK13QElapsedTimer7isValidEv(void *this_) {
+  /*return*/ ((QElapsedTimer*)this_)->isValid();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 77, column 12>
-//   // proto:  qint64 QElapsedTimer::msecsSinceReference();
-// _ZNK13QElapsedTimer19msecsSinceReferenceEv msecsSinceReference()
+// /usr/include/qt/QtCore/qelapsedtimer.h:73
+// qint64 nsecsElapsed()
 extern "C"
-long long
-C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *qthis) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->msecsSinceReference();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK13QElapsedTimer12nsecsElapsedEv(void *this_) {
+  /*return*/ ((QElapsedTimer*)this_)->nsecsElapsed();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 75, column 10>
-//   // proto:  bool QElapsedTimer::hasExpired(qint64 timeout);
-// _ZNK13QElapsedTimer10hasExpiredEx hasExpired(qint64)
+// /usr/include/qt/QtCore/qelapsedtimer.h:74
+// qint64 elapsed()
 extern "C"
-bool
-C_ZNK13QElapsedTimer10hasExpiredEx(void *qthis,
-qint64 arg1) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->hasExpired(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QElapsedTimer7elapsedEv(void *this_) {
+  /*return*/ ((QElapsedTimer*)this_)->elapsed();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 65, column 22>
-//   // proto: static QElapsedTimer::ClockType QElapsedTimer::clockType();
-// _ZN13QElapsedTimer9clockTypeEv clockType()
+// /usr/include/qt/QtCore/qelapsedtimer.h:75
+// bool hasExpired(qint64)
 extern "C"
-QElapsedTimer::ClockType
-C_ZN13QElapsedTimer9clockTypeEv() {
-  auto ret =
-  QElapsedTimer::clockType();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK13QElapsedTimer10hasExpiredEx(void *this_, qint64 timeout) {
+  /*return*/ ((QElapsedTimer*)this_)->hasExpired(timeout);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 69, column 12>
-//   // proto:  qint64 QElapsedTimer::restart();
-// _ZN13QElapsedTimer7restartEv restart()
+// /usr/include/qt/QtCore/qelapsedtimer.h:77
+// qint64 msecsSinceReference()
 extern "C"
-long long
-C_ZN13QElapsedTimer7restartEv(void *qthis) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->restart();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *this_) {
+  /*return*/ ((QElapsedTimer*)this_)->msecsSinceReference();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 71, column 10>
-//   // proto:  bool QElapsedTimer::isValid();
-// _ZNK13QElapsedTimer7isValidEv isValid()
+// /usr/include/qt/QtCore/qelapsedtimer.h:78
+// qint64 msecsTo(const class QElapsedTimer &)
 extern "C"
-bool
-C_ZNK13QElapsedTimer7isValidEv(void *qthis) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->isValid();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, const QElapsedTimer & other) {
+  /*return*/ ((QElapsedTimer*)this_)->msecsTo(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 79, column 12>
-//   // proto:  qint64 QElapsedTimer::secsTo(const QElapsedTimer & other);
-// _ZNK13QElapsedTimer6secsToERKS_ secsTo(const class QElapsedTimer &)
+// /usr/include/qt/QtCore/qelapsedtimer.h:79
+// qint64 secsTo(const class QElapsedTimer &)
 extern "C"
-long long
-C_ZNK13QElapsedTimer6secsToERKS_(void *qthis,
-const QElapsedTimer* arg1) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->secsTo(*((const QElapsedTimer*)arg1));
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK13QElapsedTimer6secsToERKS_(void *this_, const QElapsedTimer & other) {
+  /*return*/ ((QElapsedTimer*)this_)->secsTo(other);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qelapsedtimer.h', line 74, column 12>
-//   // proto:  qint64 QElapsedTimer::elapsed();
-// _ZNK13QElapsedTimer7elapsedEv elapsed()
-extern "C"
-long long
-C_ZNK13QElapsedTimer7elapsedEv(void *qthis) {
-  auto ret =
-  ((QElapsedTimer*)qthis)->elapsed();
-  return ret; // 0 TypeKind.LONGLONG
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

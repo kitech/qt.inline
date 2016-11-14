@@ -1,895 +1,335 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qtransform.h
-// dst-file: /src/gui/qtransform.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qtransform.h
 #include <qtransform.h>
+#include <QtGui>
 
-
-#include <qpoint.h>
-#include <qpainterpath.h>
-#include <qglobal.h>
-#include <qmatrix.h>
-#include <qpolygon.h>
-#include <qrect.h>
-#include <qregion.h>
-#include <qline.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtransform_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 100, column 11>
-//   // proto:  qreal QTransform::det();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->det();
-    flythis.det();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3detEv det()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 68, column 21>
-//   // proto:  void QTransform::QTransform(Qt::Initialization );
-if (true) {
-  auto f = [](Qt::Initialization arg1) {
-    new QTransform(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 99, column 18>
-//   // proto:  qreal QTransform::determinant();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->determinant();
-    flythis.determinant();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform11determinantEv determinant()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 95, column 10>
-//   // proto:  bool QTransform::isTranslating();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isTranslating();
-    flythis.isTranslating();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform13isTranslatingEv isTranslating()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 106, column 11>
-//   // proto:  qreal QTransform::m22();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m22();
-    flythis.m22();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m22Ev m22()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 109, column 11>
-//   // proto:  qreal QTransform::m32();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m32();
-    flythis.m32();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m32Ev m32()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 91, column 10>
-//   // proto:  bool QTransform::isIdentity();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isIdentity();
-    flythis.isIdentity();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform10isIdentityEv isIdentity()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 92, column 10>
-//   // proto:  bool QTransform::isInvertible();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isInvertible();
-    flythis.isInvertible();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform12isInvertibleEv isInvertible()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 85, column 5>
-//   // proto:  void QTransform::QTransform(const QTransform & other);
-if (true) {
-  auto f = [](const QTransform & arg1) {
-    new QTransform(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 108, column 11>
-//   // proto:  qreal QTransform::m31();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m31();
-    flythis.m31();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m31Ev m31()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 82, column 5>
-//   // proto:  void QTransform::QTransform(QTransform && other);
-if (true) {
-  auto f = [](QTransform && arg1) {
-    new QTransform(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 94, column 10>
-//   // proto:  bool QTransform::isRotating();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isRotating();
-    flythis.isRotating();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform10isRotatingEv isRotating()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 110, column 11>
-//   // proto:  qreal QTransform::m33();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m33();
-    flythis.m33();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m33Ev m33()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 104, column 11>
-//   // proto:  qreal QTransform::m13();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m13();
-    flythis.m13();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m13Ev m13()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 105, column 11>
-//   // proto:  qreal QTransform::m21();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m21();
-    flythis.m21();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m21Ev m21()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 93, column 10>
-//   // proto:  bool QTransform::isScaling();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isScaling();
-    flythis.isScaling();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform9isScalingEv isScaling()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 90, column 10>
-//   // proto:  bool QTransform::isAffine();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->isAffine();
-    flythis.isAffine();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform8isAffineEv isAffine()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 102, column 11>
-//   // proto:  qreal QTransform::m11();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m11();
-    flythis.m11();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m11Ev m11()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 111, column 11>
-//   // proto:  qreal QTransform::dx();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->dx();
-    flythis.dx();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform2dxEv dx()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 107, column 11>
-//   // proto:  qreal QTransform::m23();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m23();
-    flythis.m23();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m23Ev m23()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 112, column 11>
-//   // proto:  qreal QTransform::dy();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->dy();
-    flythis.dy();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform2dyEv dy()
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 103, column 11>
-//   // proto:  qreal QTransform::m12();
-if (true) {
-  auto f = [](QTransform flythis) {
-    ((QTransform*)0)->m12();
-    flythis.m12();
-  };
-  if (f == nullptr){}
-}
-// _ZNK10QTransform3m12Ev m12()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// inline
+// /usr/include/qt/QtGui/qtransform.h:68
+// void QTransform(Qt::Initialization)
 extern "C"
-int QTransform_Class_Size()
-{
-  return sizeof(QTransform);
+void* C_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization a0) {
+  return new QTransform(a0);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 143, column 18>
-//   // proto:  QPoint QTransform::map(const QPoint & p);
-// _ZNK10QTransform3mapERK6QPoint map(const class QPoint &)
+// /usr/include/qt/QtGui/qtransform.h:69
+// void QTransform()
 extern "C"
-QPoint*
-C_ZNK10QTransform3mapERK6QPoint(void *qthis,
-const QPoint* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QPoint*)arg1));
-  return new QPoint(ret); // 5
+void* C_ZN10QTransformC1Ev() {
+  return new QTransform();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 150, column 18>
-//   // proto:  QPainterPath QTransform::map(const QPainterPath & p);
-// _ZNK10QTransform3mapERK12QPainterPath map(const class QPainterPath &)
+// /usr/include/qt/QtGui/qtransform.h:70
+// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-QPainterPath*
-C_ZNK10QTransform3mapERK12QPainterPath(void *qthis,
-const QPainterPath* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QPainterPath*)arg1));
-  return new QPainterPath(ret); // 5
+void* C_ZN10QTransformC1Eddddddddd(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) {
+  return new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 100, column 11>
-//   // proto:  qreal QTransform::det();
-// _ZNK10QTransform3detEv det()
+// /usr/include/qt/QtGui/qtransform.h:73
+// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-double
-C_ZNK10QTransform3detEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->det();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN10QTransformC1Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) {
+  return new QTransform(h11, h12, h21, h22, dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 155, column 10>
-//   // proto:  void QTransform::map(qreal x, qreal y, qreal * tx, qreal * ty);
-// _ZNK10QTransform3mapEddPdS0_ map(qreal, qreal, qreal *, qreal *)
+// /usr/include/qt/QtGui/qtransform.h:75
+// void QTransform(const class QMatrix &)
 extern "C"
-void
-C_ZNK10QTransform3mapEddPdS0_(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal * arg3,
-qreal * arg4) {
-  ((QTransform*)qthis)->map(arg1,
-arg2,
-arg3,
-arg4);
+void* C_ZN10QTransformC1ERK7QMatrix(const QMatrix & mtx) {
+  return new QTransform(mtx);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 114, column 10>
-//   // proto:  void QTransform::setMatrix(qreal m11, qreal m12, qreal m13, qreal m21, qreal m22, qreal m23, qreal m31, qreal m32, qreal m33);
-// _ZN10QTransform9setMatrixEddddddddd setMatrix(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:90
+// bool isAffine()
 extern "C"
-void
-C_ZN10QTransform9setMatrixEddddddddd(void *qthis,
-qreal arg1,
-qreal arg2,
-qreal arg3,
-qreal arg4,
-qreal arg5,
-qreal arg6,
-qreal arg7,
-qreal arg8,
-qreal arg9) {
-  ((QTransform*)qthis)->setMatrix(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9);
+void C_ZNK10QTransform8isAffineEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 68, column 21>
-//   // proto:  void QTransform::QTransform(Qt::Initialization );
+// /usr/include/qt/QtGui/qtransform.h:91
+// bool isIdentity()
 extern "C"
-QTransform*
-C_ZN10QTransformC2EN2Qt14InitializationE(Qt::Initialization* arg1) {
-  auto ret = new QTransform(*((Qt::Initialization*)arg1));
-  return ret;
+void C_ZNK10QTransform10isIdentityEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isIdentity();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 157, column 20>
-//   // proto:  const QMatrix & QTransform::toAffine();
-// _ZNK10QTransform8toAffineEv toAffine()
+// /usr/include/qt/QtGui/qtransform.h:92
+// bool isInvertible()
 extern "C"
-QMatrix*
-C_ZNK10QTransform8toAffineEv(void *qthis) {
-  auto& ret =
-  ((QTransform*)qthis)->toAffine();
-  return new QMatrix(ret); // 5
+void C_ZNK10QTransform12isInvertibleEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isInvertible();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 142, column 10>
-//   // proto:  void QTransform::reset();
-// _ZN10QTransform5resetEv reset()
+// /usr/include/qt/QtGui/qtransform.h:93
+// bool isScaling()
 extern "C"
-void
-C_ZN10QTransform5resetEv(void *qthis) {
-  ((QTransform*)qthis)->reset();
+void C_ZNK10QTransform9isScalingEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isScaling();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 99, column 18>
-//   // proto:  qreal QTransform::determinant();
-// _ZNK10QTransform11determinantEv determinant()
+// /usr/include/qt/QtGui/qtransform.h:94
+// bool isRotating()
 extern "C"
-double
-C_ZNK10QTransform11determinantEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->determinant();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform10isRotatingEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isRotating();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 165, column 23>
-//   // proto: static QTransform QTransform::fromScale(qreal dx, qreal dy);
-// _ZN10QTransform9fromScaleEdd fromScale(qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:95
+// bool isTranslating()
 extern "C"
-QTransform*
-C_ZN10QTransform9fromScaleEdd(qreal arg1,
-qreal arg2) {
-  auto ret =
-  QTransform::fromScale(arg1,
-arg2);
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform13isTranslatingEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->isTranslating();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 95, column 10>
-//   // proto:  bool QTransform::isTranslating();
-// _ZNK10QTransform13isTranslatingEv isTranslating()
+// /usr/include/qt/QtGui/qtransform.h:97
+// QTransform::TransformationType type()
 extern "C"
-bool
-C_ZNK10QTransform13isTranslatingEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isTranslating();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QTransform4typeEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->type();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 151, column 18>
-//   // proto:  QPolygon QTransform::mapToPolygon(const QRect & r);
-// _ZNK10QTransform12mapToPolygonERK5QRect mapToPolygon(const class QRect &)
+// inline
+// /usr/include/qt/QtGui/qtransform.h:99
+// qreal determinant()
 extern "C"
-QPolygon*
-C_ZNK10QTransform12mapToPolygonERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->mapToPolygon(*((const QRect*)arg1));
-  return new QPolygon(ret); // 5
+void C_ZNK10QTransform11determinantEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->determinant();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 106, column 11>
-//   // proto:  qreal QTransform::m22();
-// _ZNK10QTransform3m22Ev m22()
+// /usr/include/qt/QtGui/qtransform.h:100
+// qreal det()
 extern "C"
-double
-C_ZNK10QTransform3m22Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m22();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3detEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->det();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 125, column 17>
-//   // proto:  QTransform & QTransform::rotate(qreal a, Qt::Axis axis);
-// _ZN10QTransform6rotateEdN2Qt4AxisE rotate(qreal, Qt::Axis)
+// /usr/include/qt/QtGui/qtransform.h:102
+// qreal m11()
 extern "C"
-QTransform*
-C_ZN10QTransform6rotateEdN2Qt4AxisE(void *qthis,
-qreal arg1,
-Qt::Axis* arg2) {
-  auto& ret =
-  ((QTransform*)qthis)->rotate(arg1,
-*((Qt::Axis*)arg2));
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform3m11Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m11();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 152, column 11>
-//   // proto:  QRect QTransform::mapRect(const QRect & );
-// _ZNK10QTransform7mapRectERK5QRect mapRect(const class QRect &)
+// /usr/include/qt/QtGui/qtransform.h:103
+// qreal m12()
 extern "C"
-QRect*
-C_ZNK10QTransform7mapRectERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->mapRect(*((const QRect*)arg1));
-  return new QRect(ret); // 5
+void C_ZNK10QTransform3m12Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m12();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 69, column 5>
-//   // proto:  void QTransform::QTransform();
+// /usr/include/qt/QtGui/qtransform.h:104
+// qreal m13()
 extern "C"
-QTransform*
-C_ZN10QTransformC2Ev() {
-  auto ret = new QTransform();
-  return ret;
+void C_ZNK10QTransform3m13Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m13();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 109, column 11>
-//   // proto:  qreal QTransform::m32();
-// _ZNK10QTransform3m32Ev m32()
+// /usr/include/qt/QtGui/qtransform.h:105
+// qreal m21()
 extern "C"
-double
-C_ZNK10QTransform3m32Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m32();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3m21Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m21();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 154, column 10>
-//   // proto:  void QTransform::map(int x, int y, int * tx, int * ty);
-// _ZNK10QTransform3mapEiiPiS0_ map(int, int, int *, int *)
+// /usr/include/qt/QtGui/qtransform.h:106
+// qreal m22()
 extern "C"
-void
-C_ZNK10QTransform3mapEiiPiS0_(void *qthis,
-int arg1,
-int arg2,
-int * arg3,
-int * arg4) {
-  ((QTransform*)qthis)->map(arg1,
-arg2,
-arg3,
-arg4);
+void C_ZNK10QTransform3m22Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m22();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 124, column 17>
-//   // proto:  QTransform & QTransform::shear(qreal sh, qreal sv);
-// _ZN10QTransform5shearEdd shear(qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:107
+// qreal m23()
 extern "C"
-QTransform*
-C_ZN10QTransform5shearEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QTransform*)qthis)->shear(arg1,
-arg2);
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform3m23Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m23();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 149, column 18>
-//   // proto:  QRegion QTransform::map(const QRegion & r);
-// _ZNK10QTransform3mapERK7QRegion map(const class QRegion &)
+// /usr/include/qt/QtGui/qtransform.h:108
+// qreal m31()
 extern "C"
-QRegion*
-C_ZNK10QTransform3mapERK7QRegion(void *qthis,
-const QRegion* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QRegion*)arg1));
-  return new QRegion(ret); // 5
+void C_ZNK10QTransform3m31Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m31();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 73, column 5>
-//   // proto:  void QTransform::QTransform(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy);
+// /usr/include/qt/QtGui/qtransform.h:109
+// qreal m32()
 extern "C"
-QTransform*
-C_ZN10QTransformC2Edddddd(qreal arg1,
-qreal arg2,
-qreal arg3,
-qreal arg4,
-qreal arg5,
-qreal arg6) {
-  auto ret = new QTransform(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6);
-  return ret;
+void C_ZNK10QTransform3m32Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m32();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 123, column 17>
-//   // proto:  QTransform & QTransform::scale(qreal sx, qreal sy);
-// _ZN10QTransform5scaleEdd scale(qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:110
+// qreal m33()
 extern "C"
-QTransform*
-C_ZN10QTransform5scaleEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QTransform*)qthis)->scale(arg1,
-arg2);
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform3m33Ev(void *this_) {
+  /*return*/ ((QTransform*)this_)->m33();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 148, column 18>
-//   // proto:  QPolygon QTransform::map(const QPolygon & a);
-// _ZNK10QTransform3mapERK8QPolygon map(const class QPolygon &)
+// /usr/include/qt/QtGui/qtransform.h:111
+// qreal dx()
 extern "C"
-QPolygon*
-C_ZNK10QTransform3mapERK8QPolygon(void *qthis,
-const QPolygon* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QPolygon*)arg1));
-  return new QPolygon(ret); // 5
+void C_ZNK10QTransform2dxEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->dx();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 120, column 16>
-//   // proto:  QTransform QTransform::transposed();
-// _ZNK10QTransform10transposedEv transposed()
+// /usr/include/qt/QtGui/qtransform.h:112
+// qreal dy()
 extern "C"
-QTransform*
-C_ZNK10QTransform10transposedEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->transposed();
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform2dyEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->dy();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 91, column 10>
-//   // proto:  bool QTransform::isIdentity();
-// _ZNK10QTransform10isIdentityEv isIdentity()
+// /usr/include/qt/QtGui/qtransform.h:114
+// void setMatrix(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-bool
-C_ZNK10QTransform10isIdentityEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isIdentity();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QTransform9setMatrixEddddddddd(void *this_, qreal m11, qreal m12, qreal m13, qreal m21, qreal m22, qreal m23, qreal m31, qreal m32, qreal m33) {
+  ((QTransform*)this_)->setMatrix(m11, m12, m13, m21, m22, m23, m31, m32, m33);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 146, column 18>
-//   // proto:  QLineF QTransform::map(const QLineF & l);
-// _ZNK10QTransform3mapERK6QLineF map(const class QLineF &)
+// /usr/include/qt/QtGui/qtransform.h:118
+// QTransform inverted(_Bool *)
 extern "C"
-QLineF*
-C_ZNK10QTransform3mapERK6QLineF(void *qthis,
-const QLineF* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QLineF*)arg1));
-  return new QLineF(ret); // 5
+void C_ZNK10QTransform8invertedEPb(void *this_, bool * invertible) {
+  /*return*/ ((QTransform*)this_)->inverted(invertible);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 126, column 17>
-//   // proto:  QTransform & QTransform::rotateRadians(qreal a, Qt::Axis axis);
-// _ZN10QTransform13rotateRadiansEdN2Qt4AxisE rotateRadians(qreal, Qt::Axis)
+// /usr/include/qt/QtGui/qtransform.h:119
+// QTransform adjoint()
 extern "C"
-QTransform*
-C_ZN10QTransform13rotateRadiansEdN2Qt4AxisE(void *qthis,
-qreal arg1,
-Qt::Axis* arg2) {
-  auto& ret =
-  ((QTransform*)qthis)->rotateRadians(arg1,
-*((Qt::Axis*)arg2));
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform7adjointEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->adjoint();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 122, column 17>
-//   // proto:  QTransform & QTransform::translate(qreal dx, qreal dy);
-// _ZN10QTransform9translateEdd translate(qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:120
+// QTransform transposed()
 extern "C"
-QTransform*
-C_ZN10QTransform9translateEdd(void *qthis,
-qreal arg1,
-qreal arg2) {
-  auto& ret =
-  ((QTransform*)qthis)->translate(arg1,
-arg2);
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform10transposedEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->transposed();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 153, column 12>
-//   // proto:  QRectF QTransform::mapRect(const QRectF & );
-// _ZNK10QTransform7mapRectERK6QRectF mapRect(const class QRectF &)
+// /usr/include/qt/QtGui/qtransform.h:122
+// QTransform & translate(qreal, qreal)
 extern "C"
-QRectF*
-C_ZNK10QTransform7mapRectERK6QRectF(void *qthis,
-const QRectF* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->mapRect(*((const QRectF*)arg1));
-  return new QRectF(ret); // 5
+void C_ZN10QTransform9translateEdd(void *this_, qreal dx, qreal dy) {
+  /*return*/ ((QTransform*)this_)->translate(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 164, column 23>
-//   // proto: static QTransform QTransform::fromTranslate(qreal dx, qreal dy);
-// _ZN10QTransform13fromTranslateEdd fromTranslate(qreal, qreal)
+// /usr/include/qt/QtGui/qtransform.h:123
+// QTransform & scale(qreal, qreal)
 extern "C"
-QTransform*
-C_ZN10QTransform13fromTranslateEdd(qreal arg1,
-qreal arg2) {
-  auto ret =
-  QTransform::fromTranslate(arg1,
-arg2);
-  return new QTransform(ret); // 5
+void C_ZN10QTransform5scaleEdd(void *this_, qreal sx, qreal sy) {
+  /*return*/ ((QTransform*)this_)->scale(sx, sy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 145, column 18>
-//   // proto:  QLine QTransform::map(const QLine & l);
-// _ZNK10QTransform3mapERK5QLine map(const class QLine &)
+// /usr/include/qt/QtGui/qtransform.h:124
+// QTransform & shear(qreal, qreal)
 extern "C"
-QLine*
-C_ZNK10QTransform3mapERK5QLine(void *qthis,
-const QLine* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QLine*)arg1));
-  return new QLine(ret); // 5
+void C_ZN10QTransform5shearEdd(void *this_, qreal sh, qreal sv) {
+  /*return*/ ((QTransform*)this_)->shear(sh, sv);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 92, column 10>
-//   // proto:  bool QTransform::isInvertible();
-// _ZNK10QTransform12isInvertibleEv isInvertible()
+// /usr/include/qt/QtGui/qtransform.h:125
+// QTransform & rotate(qreal, Qt::Axis)
 extern "C"
-bool
-C_ZNK10QTransform12isInvertibleEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isInvertible();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QTransform6rotateEdN2Qt4AxisE(void *this_, qreal a, Qt::Axis axis) {
+  /*return*/ ((QTransform*)this_)->rotate(a, axis);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 130, column 17>
-//   // proto: static bool QTransform::quadToQuad(const QPolygonF & one, const QPolygonF & two, QTransform & result);
-// _ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_ quadToQuad(const class QPolygonF &, const class QPolygonF &, class QTransform &)
+// /usr/include/qt/QtGui/qtransform.h:126
+// QTransform & rotateRadians(qreal, Qt::Axis)
 extern "C"
-bool
-C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(const QPolygonF* arg1,
-const QPolygonF* arg2,
-QTransform* arg3) {
-  auto ret =
-  QTransform::quadToQuad(*((const QPolygonF*)arg1),
-*((const QPolygonF*)arg2),
-*((QTransform*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QTransform13rotateRadiansEdN2Qt4AxisE(void *this_, qreal a, Qt::Axis axis) {
+  /*return*/ ((QTransform*)this_)->rotateRadians(a, axis);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 85, column 5>
-//   // proto:  void QTransform::QTransform(const QTransform & other);
+// static
+// /usr/include/qt/QtGui/qtransform.h:128
+// bool squareToQuad(const class QPolygonF &, class QTransform &)
 extern "C"
-QTransform*
-C_ZN10QTransformC2ERKS_(const QTransform* arg1) {
-  auto ret = new QTransform(*((const QTransform*)arg1));
-  return ret;
+void C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(const QPolygonF & square, QTransform & result) {
+  /*return*/ QTransform::squareToQuad(square, result);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 128, column 17>
-//   // proto: static bool QTransform::squareToQuad(const QPolygonF & square, QTransform & result);
-// _ZN10QTransform12squareToQuadERK9QPolygonFRS_ squareToQuad(const class QPolygonF &, class QTransform &)
+// static
+// /usr/include/qt/QtGui/qtransform.h:129
+// bool quadToSquare(const class QPolygonF &, class QTransform &)
 extern "C"
-bool
-C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(const QPolygonF* arg1,
-QTransform* arg2) {
-  auto ret =
-  QTransform::squareToQuad(*((const QPolygonF*)arg1),
-*((QTransform*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(const QPolygonF & quad, QTransform & result) {
+  /*return*/ QTransform::quadToSquare(quad, result);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 144, column 18>
-//   // proto:  QPointF QTransform::map(const QPointF & p);
-// _ZNK10QTransform3mapERK7QPointF map(const class QPointF &)
+// static
+// /usr/include/qt/QtGui/qtransform.h:130
+// bool quadToQuad(const class QPolygonF &, const class QPolygonF &, class QTransform &)
 extern "C"
-QPointF*
-C_ZNK10QTransform3mapERK7QPointF(void *qthis,
-const QPointF* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QPointF*)arg1));
-  return new QPointF(ret); // 5
+void C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(const QPolygonF & one, const QPolygonF & two, QTransform & result) {
+  /*return*/ QTransform::quadToQuad(one, two, result);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 147, column 18>
-//   // proto:  QPolygonF QTransform::map(const QPolygonF & a);
-// _ZNK10QTransform3mapERK9QPolygonF map(const class QPolygonF &)
+// /usr/include/qt/QtGui/qtransform.h:142
+// void reset()
 extern "C"
-QPolygonF*
-C_ZNK10QTransform3mapERK9QPolygonF(void *qthis,
-const QPolygonF* arg1) {
-  auto ret =
-  ((QTransform*)qthis)->map(*((const QPolygonF*)arg1));
-  return new QPolygonF(ret); // 5
+void C_ZN10QTransform5resetEv(void *this_) {
+  ((QTransform*)this_)->reset();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 108, column 11>
-//   // proto:  qreal QTransform::m31();
-// _ZNK10QTransform3m31Ev m31()
+// /usr/include/qt/QtGui/qtransform.h:143
+// QPoint map(const class QPoint &)
 extern "C"
-double
-C_ZNK10QTransform3m31Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m31();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3mapERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QTransform*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 75, column 14>
-//   // proto:  void QTransform::QTransform(const QMatrix & mtx);
+// /usr/include/qt/QtGui/qtransform.h:144
+// QPointF map(const class QPointF &)
 extern "C"
-QTransform*
-C_ZN10QTransformC2ERK7QMatrix(const QMatrix* arg1) {
-  auto ret = new QTransform(*((const QMatrix*)arg1));
-  return ret;
+void C_ZNK10QTransform3mapERK7QPointF(void *this_, const QPointF & p) {
+  /*return*/ ((QTransform*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 70, column 5>
-//   // proto:  void QTransform::QTransform(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33);
+// /usr/include/qt/QtGui/qtransform.h:145
+// QLine map(const class QLine &)
 extern "C"
-QTransform*
-C_ZN10QTransformC2Eddddddddd(qreal arg1,
-qreal arg2,
-qreal arg3,
-qreal arg4,
-qreal arg5,
-qreal arg6,
-qreal arg7,
-qreal arg8,
-qreal arg9) {
-  auto ret = new QTransform(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7,
-arg8,
-arg9);
-  return ret;
+void C_ZNK10QTransform3mapERK5QLine(void *this_, const QLine & l) {
+  /*return*/ ((QTransform*)this_)->map(l);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 82, column 5>
-//   // proto:  void QTransform::QTransform(QTransform && other);
+// /usr/include/qt/QtGui/qtransform.h:146
+// QLineF map(const class QLineF &)
 extern "C"
-QTransform*
-C_ZN10QTransformC2EOS_(QTransform* arg1) {
-  auto ret = new QTransform(*((QTransform*)arg1));
-  return ret;
+void C_ZNK10QTransform3mapERK6QLineF(void *this_, const QLineF & l) {
+  /*return*/ ((QTransform*)this_)->map(l);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 94, column 10>
-//   // proto:  bool QTransform::isRotating();
-// _ZNK10QTransform10isRotatingEv isRotating()
+// /usr/include/qt/QtGui/qtransform.h:147
+// QPolygonF map(const class QPolygonF &)
 extern "C"
-bool
-C_ZNK10QTransform10isRotatingEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isRotating();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QTransform3mapERK9QPolygonF(void *this_, const QPolygonF & a) {
+  /*return*/ ((QTransform*)this_)->map(a);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 110, column 11>
-//   // proto:  qreal QTransform::m33();
-// _ZNK10QTransform3m33Ev m33()
+// /usr/include/qt/QtGui/qtransform.h:148
+// QPolygon map(const class QPolygon &)
 extern "C"
-double
-C_ZNK10QTransform3m33Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m33();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3mapERK8QPolygon(void *this_, const QPolygon & a) {
+  /*return*/ ((QTransform*)this_)->map(a);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 104, column 11>
-//   // proto:  qreal QTransform::m13();
-// _ZNK10QTransform3m13Ev m13()
+// /usr/include/qt/QtGui/qtransform.h:149
+// QRegion map(const class QRegion &)
 extern "C"
-double
-C_ZNK10QTransform3m13Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m13();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3mapERK7QRegion(void *this_, const QRegion & r) {
+  /*return*/ ((QTransform*)this_)->map(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 105, column 11>
-//   // proto:  qreal QTransform::m21();
-// _ZNK10QTransform3m21Ev m21()
+// /usr/include/qt/QtGui/qtransform.h:150
+// QPainterPath map(const class QPainterPath &)
 extern "C"
-double
-C_ZNK10QTransform3m21Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m21();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3mapERK12QPainterPath(void *this_, const QPainterPath & p) {
+  /*return*/ ((QTransform*)this_)->map(p);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 93, column 10>
-//   // proto:  bool QTransform::isScaling();
-// _ZNK10QTransform9isScalingEv isScaling()
+// /usr/include/qt/QtGui/qtransform.h:151
+// QPolygon mapToPolygon(const class QRect &)
 extern "C"
-bool
-C_ZNK10QTransform9isScalingEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isScaling();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QTransform12mapToPolygonERK5QRect(void *this_, const QRect & r) {
+  /*return*/ ((QTransform*)this_)->mapToPolygon(r);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 118, column 16>
-//   // proto:  QTransform QTransform::inverted(bool * invertible);
-// _ZNK10QTransform8invertedEPb inverted(_Bool *)
+// /usr/include/qt/QtGui/qtransform.h:152
+// QRect mapRect(const class QRect &)
 extern "C"
-QTransform*
-C_ZNK10QTransform8invertedEPb(void *qthis,
-bool * arg1) {
-  auto ret =
-  ((QTransform*)qthis)->inverted(arg1);
-  return new QTransform(ret); // 5
+void C_ZNK10QTransform7mapRectERK5QRect(void *this_, const QRect & a0) {
+  /*return*/ ((QTransform*)this_)->mapRect(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 90, column 10>
-//   // proto:  bool QTransform::isAffine();
-// _ZNK10QTransform8isAffineEv isAffine()
+// /usr/include/qt/QtGui/qtransform.h:153
+// QRectF mapRect(const class QRectF &)
 extern "C"
-bool
-C_ZNK10QTransform8isAffineEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->isAffine();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QTransform7mapRectERK6QRectF(void *this_, const QRectF & a0) {
+  /*return*/ ((QTransform*)this_)->mapRect(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 102, column 11>
-//   // proto:  qreal QTransform::m11();
-// _ZNK10QTransform3m11Ev m11()
+// /usr/include/qt/QtGui/qtransform.h:154
+// void map(int, int, int *, int *)
 extern "C"
-double
-C_ZNK10QTransform3m11Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m11();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZNK10QTransform3mapEiiPiS0_(void *this_, int x, int y, int * tx, int * ty) {
+  ((QTransform*)this_)->map(x, y, tx, ty);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 97, column 24>
-//   // proto:  QTransform::TransformationType QTransform::type();
-// _ZNK10QTransform4typeEv type()
+// /usr/include/qt/QtGui/qtransform.h:155
+// void map(qreal, qreal, qreal *, qreal *)
 extern "C"
-QTransform::TransformationType
-C_ZNK10QTransform4typeEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->type();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK10QTransform3mapEddPdS0_(void *this_, qreal x, qreal y, qreal * tx, qreal * ty) {
+  ((QTransform*)this_)->map(x, y, tx, ty);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 129, column 17>
-//   // proto: static bool QTransform::quadToSquare(const QPolygonF & quad, QTransform & result);
-// _ZN10QTransform12quadToSquareERK9QPolygonFRS_ quadToSquare(const class QPolygonF &, class QTransform &)
+// /usr/include/qt/QtGui/qtransform.h:157
+// const QMatrix & toAffine()
 extern "C"
-bool
-C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(const QPolygonF* arg1,
-QTransform* arg2) {
-  auto ret =
-  QTransform::quadToSquare(*((const QPolygonF*)arg1),
-*((QTransform*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK10QTransform8toAffineEv(void *this_) {
+  /*return*/ ((QTransform*)this_)->toAffine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 119, column 16>
-//   // proto:  QTransform QTransform::adjoint();
-// _ZNK10QTransform7adjointEv adjoint()
+// static
+// /usr/include/qt/QtGui/qtransform.h:164
+// QTransform fromTranslate(qreal, qreal)
 extern "C"
-QTransform*
-C_ZNK10QTransform7adjointEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->adjoint();
-  return new QTransform(ret); // 5
+void C_ZN10QTransform13fromTranslateEdd(qreal dx, qreal dy) {
+  /*return*/ QTransform::fromTranslate(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 111, column 11>
-//   // proto:  qreal QTransform::dx();
-// _ZNK10QTransform2dxEv dx()
+// static
+// /usr/include/qt/QtGui/qtransform.h:165
+// QTransform fromScale(qreal, qreal)
 extern "C"
-double
-C_ZNK10QTransform2dxEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->dx();
-  return ret; // 0 TypeKind.DOUBLE
+void C_ZN10QTransform9fromScaleEdd(qreal dx, qreal dy) {
+  /*return*/ QTransform::fromScale(dx, dy);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 107, column 11>
-//   // proto:  qreal QTransform::m23();
-// _ZNK10QTransform3m23Ev m23()
-extern "C"
-double
-C_ZNK10QTransform3m23Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m23();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 112, column 11>
-//   // proto:  qreal QTransform::dy();
-// _ZNK10QTransform2dyEv dy()
-extern "C"
-double
-C_ZNK10QTransform2dyEv(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->dy();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qtransform.h', line 103, column 11>
-//   // proto:  qreal QTransform::m12();
-// _ZNK10QTransform3m12Ev m12()
-extern "C"
-double
-C_ZNK10QTransform3m12Ev(void *qthis) {
-  auto ret =
-  ((QTransform*)qthis)->m12();
-  return ret; // 0 TypeKind.DOUBLE
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

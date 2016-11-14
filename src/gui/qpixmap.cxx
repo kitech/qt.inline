@@ -1,815 +1,370 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qpixmap.h
-// dst-file: /src/gui/qpixmap.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qpixmap.h
 #include <qpixmap.h>
+#include <QtGui>
 
-
-#include <qglobal.h>
-#include <qtransform.h>
-#include <qbitmap.h>
-#include <qimage.h>
-#include <qrect.h>
-#include <qmatrix.h>
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qpixmap_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 79, column 17>
-//   // proto:  void QPixmap::swap(QPixmap & other);
-if (true) {
-  auto f = [](QPixmap flythis, QPixmap & arg1) {
-    ((QPixmap*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap4swapERS_ swap(class QPixmap &)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 97, column 17>
-//   // proto:  void QPixmap::fill(const QPaintDevice * device, int xofs, int yofs);
-if (true) {
-  auto f = [](QPixmap flythis, const QPaintDevice * arg1, int arg2, int arg3) {
-    ((QPixmap*)0)->fill(arg1, arg2, arg3);
-    flythis.fill(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap4fillEPK12QPaintDeviceii fill(const class QPaintDevice *, int, int)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 118, column 20>
-//   // proto:  QPixmap QPixmap::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-if (true) {
-  auto f = [](QPixmap flythis, int arg1, int arg2, Qt::AspectRatioMode arg3, Qt::TransformationMode arg4) {
-    ((QPixmap*)0)->scaled(arg1, arg2, arg3, arg4);
-    flythis.scaled(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE scaled(int, int, Qt::AspectRatioMode, Qt::TransformationMode)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 151, column 17>
-//   // proto:  void QPixmap::scroll(int dx, int dy, int x, int y, int width, int height, QRegion * exposed);
-if (true) {
-  auto f = [](QPixmap flythis, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, QRegion * arg7) {
-    ((QPixmap*)0)->scroll(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-    flythis.scroll(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap6scrollEiiiiiiP7QRegion scroll(int, int, int, int, int, int, class QRegion *)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 134, column 20>
-//   // proto: static QPixmap QPixmap::fromImage(QImage && image, Qt::ImageConversionFlags flags);
-if (true) {
-  auto f = [](QPixmap flythis, QImage && arg1, Qt::ImageConversionFlags arg2) {
-    ((QPixmap*)0)->fromImage(arg1, arg2);
-    flythis.fromImage(arg1, arg2);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE fromImage(class QImage &&, Qt::ImageConversionFlags)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 148, column 20>
-//   // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);
-if (true) {
-  auto f = [](QPixmap flythis, int arg1, int arg2, int arg3, int arg4) {
-    ((QPixmap*)0)->copy(arg1, arg2, arg3, arg4);
-    flythis.copy(arg1, arg2, arg3, arg4);
-  };
-  if (f == nullptr){}
-}
-// _ZNK7QPixmap4copyEiiii copy(int, int, int, int)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 142, column 17>
-//   // proto:  bool QPixmap::loadFromData(const QByteArray & data, const char * format, Qt::ImageConversionFlags flags);
-if (true) {
-  auto f = [](QPixmap flythis, const QByteArray & arg1, const char * arg2, Qt::ImageConversionFlags arg3) {
-    ((QPixmap*)0)->loadFromData(arg1, arg2, arg3);
-    flythis.loadFromData(arg1, arg2, arg3);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE loadFromData(const class QByteArray &, const char *, Qt::ImageConversionFlags)
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 115, column 27>
-//   // proto: static QPixmap QPixmap::grabWidget(QObject * widget, int x, int y, int w, int h);
-if (true) {
-  auto f = [](QPixmap flythis, QObject * arg1, int arg2, int arg3, int arg4, int arg5) {
-    ((QPixmap*)0)->grabWidget(arg1, arg2, arg3, arg4, arg5);
-    flythis.grabWidget(arg1, arg2, arg3, arg4, arg5);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QPixmap10grabWidgetEP7QObjectiiii grabWidget(class QObject *, int, int, int, int)
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qpixmap.h:63
+// void QPixmap()
 extern "C"
-int QPixmap_Class_Size()
-{
-  return sizeof(QPixmap);
+void* C_ZN7QPixmapC1Ev() {
+  return new QPixmap();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 143, column 10>
-//   // proto:  bool QPixmap::save(const QString & fileName, const char * format, int quality);
-// _ZNK7QPixmap4saveERK7QStringPKci save(const class QString &, const char *, int)
+// /usr/include/qt/QtGui/qpixmap.h:64
+// void QPixmap(class QPlatformPixmap *)
 extern "C"
-bool
-C_ZNK7QPixmap4saveERK7QStringPKci(void *qthis,
-const QString* arg1,
-const char * arg2,
-int arg3) {
-  auto ret =
-  ((QPixmap*)qthis)->save(*((const QString*)arg1),
-arg2,
-arg3);
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QPixmapC1EP15QPlatformPixmap(QPlatformPixmap * data) {
+  return new QPixmap(data);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 79, column 17>
-//   // proto:  void QPixmap::swap(QPixmap & other);
-// _ZN7QPixmap4swapERS_ swap(class QPixmap &)
+// /usr/include/qt/QtGui/qpixmap.h:65
+// void QPixmap(int, int)
 extern "C"
-void
-C_ZN7QPixmap4swapERS_(void *qthis,
-QPixmap* arg1) {
-  ((QPixmap*)qthis)->swap(*((QPixmap*)arg1));
+void* C_ZN7QPixmapC1Eii(int w, int h) {
+  return new QPixmap(w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 162, column 10>
-//   // proto:  bool QPixmap::isQBitmap();
-// _ZNK7QPixmap9isQBitmapEv isQBitmap()
+// /usr/include/qt/QtGui/qpixmap.h:66
+// void QPixmap(const class QSize &)
 extern "C"
-bool
-C_ZNK7QPixmap9isQBitmapEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->isQBitmap();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN7QPixmapC1ERK5QSize(const QSize & a0) {
+  return new QPixmap(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 64, column 14>
-//   // proto:  void QPixmap::QPixmap(QPlatformPixmap * data);
+// /usr/include/qt/QtGui/qpixmap.h:67
+// void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2EP15QPlatformPixmap(QPlatformPixmap * arg1) {
-  auto ret = new QPixmap(arg1);
-  return ret;
+void* C_ZN7QPixmapC1ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
+  return new QPixmap(fileName, format, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 102, column 11>
-//   // proto:  qreal QPixmap::devicePixelRatio();
-// _ZNK7QPixmap16devicePixelRatioEv devicePixelRatio()
+// /usr/include/qt/QtGui/qpixmap.h:69
+// void QPixmap(const char *const *)
 extern "C"
-double
-C_ZNK7QPixmap16devicePixelRatioEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->devicePixelRatio();
-  return ret; // 0 TypeKind.DOUBLE
+void* C_ZN7QPixmapC1EPKPKc(const char *const xpm []) {
+  return new QPixmap(xpm);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 66, column 14>
-//   // proto:  void QPixmap::QPixmap(const QSize & );
+// virtual
+// /usr/include/qt/QtGui/qpixmap.h:72
+// void ~QPixmap()
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2ERK5QSize(const QSize* arg1) {
-  auto ret = new QPixmap(*((const QSize*)arg1));
-  return ret;
+void C_ZN7QPixmapD1Ev(void *this_) {
+  delete (QPixmap*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 141, column 10>
-//   // proto:  bool QPixmap::loadFromData(const uchar * buf, uint len, const char * format, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap12loadFromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE loadFromData(const uchar *, uint, const char *, Qt::ImageConversionFlags)
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:79
+// void swap(class QPixmap &)
 extern "C"
-bool
-C_ZN7QPixmap12loadFromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *qthis,
-const uchar * arg1,
-uint arg2,
-const char * arg3,
-Qt::ImageConversionFlags* arg4) {
-  auto ret =
-  ((QPixmap*)qthis)->loadFromData(arg1,
-arg2,
-arg3,
-*((Qt::ImageConversionFlags*)arg4));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QPixmap4swapERS_(void *this_, QPixmap & other) {
+  ((QPixmap*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 97, column 17>
-//   // proto:  void QPixmap::fill(const QPaintDevice * device, int xofs, int yofs);
-// _ZN7QPixmap4fillEPK12QPaintDeviceii fill(const class QPaintDevice *, int, int)
+// /usr/include/qt/QtGui/qpixmap.h:84
+// bool isNull()
 extern "C"
-void
-C_ZN7QPixmap4fillEPK12QPaintDeviceii(void *qthis,
-const QPaintDevice * arg1,
-int arg2,
-int arg3) {
-  ((QPixmap*)qthis)->fill(arg1,
-arg2,
-arg3);
+void C_ZNK7QPixmap6isNullEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->isNull();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 127, column 13>
-//   // proto:  QPixmap QPixmap::transformed(const QTransform & , Qt::TransformationMode mode);
-// _ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE transformed(const class QTransform &, Qt::TransformationMode)
+// virtual
+// /usr/include/qt/QtGui/qpixmap.h:85
+// int devType()
 extern "C"
-QPixmap*
-C_ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE(void *qthis,
-const QTransform* arg1,
-Qt::TransformationMode* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->transformed(*((const QTransform*)arg1),
-*((Qt::TransformationMode*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap7devTypeEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->devType();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 95, column 10>
-//   // proto:  void QPixmap::fill(const QColor & fillColor);
-// _ZN7QPixmap4fillERK6QColor fill(const class QColor &)
+// /usr/include/qt/QtGui/qpixmap.h:87
+// int width()
 extern "C"
-void
-C_ZN7QPixmap4fillERK6QColor(void *qthis,
-const QColor* arg1) {
-  ((QPixmap*)qthis)->fill(*((const QColor*)arg1));
+void C_ZNK7QPixmap5widthEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->width();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 118, column 20>
-//   // proto:  QPixmap QPixmap::scaled(int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-// _ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE scaled(int, int, Qt::AspectRatioMode, Qt::TransformationMode)
+// /usr/include/qt/QtGui/qpixmap.h:88
+// int height()
 extern "C"
-QPixmap*
-C_ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *qthis,
-int arg1,
-int arg2,
-Qt::AspectRatioMode* arg3,
-Qt::TransformationMode* arg4) {
-  auto ret =
-  ((QPixmap*)qthis)->scaled(arg1,
-arg2,
-*((Qt::AspectRatioMode*)arg3),
-*((Qt::TransformationMode*)arg4));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap6heightEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->height();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 67, column 5>
-//   // proto:  void QPixmap::QPixmap(const QString & fileName, const char * format, Qt::ImageConversionFlags flags);
+// /usr/include/qt/QtGui/qpixmap.h:89
+// QSize size()
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString* arg1,
-const char * arg2,
-Qt::ImageConversionFlags* arg3) {
-  auto ret = new QPixmap(*((const QString*)arg1),
-arg2,
-*((Qt::ImageConversionFlags*)arg3));
-  return ret;
+void C_ZNK7QPixmap4sizeEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->size();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 125, column 13>
-//   // proto:  QPixmap QPixmap::transformed(const QMatrix & , Qt::TransformationMode mode);
-// _ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE transformed(const class QMatrix &, Qt::TransformationMode)
+// /usr/include/qt/QtGui/qpixmap.h:90
+// QRect rect()
 extern "C"
-QPixmap*
-C_ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE(void *qthis,
-const QMatrix* arg1,
-Qt::TransformationMode* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->transformed(*((const QMatrix*)arg1),
-*((Qt::TransformationMode*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap4rectEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->rect();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 85, column 9>
-//   // proto:  int QPixmap::devType();
-// _ZNK7QPixmap7devTypeEv devType()
+// /usr/include/qt/QtGui/qpixmap.h:91
+// int depth()
 extern "C"
-int
-C_ZNK7QPixmap7devTypeEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->devType();
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QPixmap5depthEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->depth();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 151, column 17>
-//   // proto:  void QPixmap::scroll(int dx, int dy, int x, int y, int width, int height, QRegion * exposed);
-// _ZN7QPixmap6scrollEiiiiiiP7QRegion scroll(int, int, int, int, int, int, class QRegion *)
+// static
+// /usr/include/qt/QtGui/qpixmap.h:93
+// int defaultDepth()
 extern "C"
-void
-C_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4,
-int arg5,
-int arg6,
-QRegion * arg7) {
-  ((QPixmap*)qthis)->scroll(arg1,
-arg2,
-arg3,
-arg4,
-arg5,
-arg6,
-arg7);
+void C_ZN7QPixmap12defaultDepthEv() {
+  /*return*/ QPixmap::defaultDepth();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 134, column 20>
-//   // proto: static QPixmap QPixmap::fromImage(QImage && image, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE fromImage(class QImage &&, Qt::ImageConversionFlags)
+// /usr/include/qt/QtGui/qpixmap.h:95
+// void fill(const class QColor &)
 extern "C"
-QPixmap*
-C_ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage* arg1,
-Qt::ImageConversionFlags* arg2) {
-  auto ret =
-  QPixmap::fromImage(*((QImage*)arg1),
-*((Qt::ImageConversionFlags*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap4fillERK6QColor(void *this_, const QColor & fillColor) {
+  ((QPixmap*)this_)->fill(fillColor);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 149, column 13>
-//   // proto:  QPixmap QPixmap::copy(const QRect & rect);
-// _ZNK7QPixmap4copyERK5QRect copy(const class QRect &)
+// /usr/include/qt/QtGui/qpixmap.h:96
+// void fill(const class QPaintDevice *, const class QPoint &)
 extern "C"
-QPixmap*
-C_ZNK7QPixmap4copyERK5QRect(void *qthis,
-const QRect* arg1) {
-  auto ret =
-  ((QPixmap*)qthis)->copy(*((const QRect*)arg1));
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap4fillEPK12QPaintDeviceRK6QPoint(void *this_, const QPaintDevice * device, const QPoint & ofs) {
+  ((QPixmap*)this_)->fill(device, ofs);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 128, column 23>
-//   // proto: static QTransform QPixmap::trueMatrix(const QTransform & m, int w, int h);
-// _ZN7QPixmap10trueMatrixERK10QTransformii trueMatrix(const class QTransform &, int, int)
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:97
+// void fill(const class QPaintDevice *, int, int)
 extern "C"
-QTransform*
-C_ZN7QPixmap10trueMatrixERK10QTransformii(const QTransform* arg1,
-int arg2,
-int arg3) {
-  auto ret =
-  QPixmap::trueMatrix(*((const QTransform*)arg1),
-arg2,
-arg3);
-  return new QTransform(ret); // 5
+void C_ZN7QPixmap4fillEPK12QPaintDeviceii(void *this_, const QPaintDevice * device, int xofs, int yofs) {
+  ((QPixmap*)this_)->fill(device, xofs, yofs);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 65, column 5>
-//   // proto:  void QPixmap::QPixmap(int w, int h);
+// /usr/include/qt/QtGui/qpixmap.h:99
+// QBitmap mask()
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2Eii(int arg1,
-int arg2) {
-  auto ret = new QPixmap(arg1,
-arg2);
-  return ret;
+void C_ZNK7QPixmap4maskEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->mask();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 124, column 13>
-//   // proto:  QPixmap QPixmap::scaledToHeight(int h, Qt::TransformationMode mode);
-// _ZNK7QPixmap14scaledToHeightEiN2Qt18TransformationModeE scaledToHeight(int, Qt::TransformationMode)
+// /usr/include/qt/QtGui/qpixmap.h:100
+// void setMask(const class QBitmap &)
 extern "C"
-QPixmap*
-C_ZNK7QPixmap14scaledToHeightEiN2Qt18TransformationModeE(void *qthis,
-int arg1,
-Qt::TransformationMode* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->scaledToHeight(arg1,
-*((Qt::TransformationMode*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap7setMaskERK7QBitmap(void *this_, const QBitmap & a0) {
+  ((QPixmap*)this_)->setMask(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 111, column 13>
-//   // proto:  QBitmap QPixmap::createMaskFromColor(const QColor & maskColor, Qt::MaskMode mode);
-// _ZNK7QPixmap19createMaskFromColorERK6QColorN2Qt8MaskModeE createMaskFromColor(const class QColor &, Qt::MaskMode)
+// /usr/include/qt/QtGui/qpixmap.h:102
+// qreal devicePixelRatio()
 extern "C"
-QBitmap*
-C_ZNK7QPixmap19createMaskFromColorERK6QColorN2Qt8MaskModeE(void *qthis,
-const QColor* arg1,
-Qt::MaskMode* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->createMaskFromColor(*((const QColor*)arg1),
-*((Qt::MaskMode*)arg2));
-  return new QBitmap(ret); // 5
+void C_ZNK7QPixmap16devicePixelRatioEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->devicePixelRatio();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 113, column 20>
-//   // proto: static QPixmap QPixmap::grabWindow(WId , int x, int y, int w, int h);
-// _ZN7QPixmap10grabWindowEiiiii grabWindow(WId, int, int, int, int)
+// /usr/include/qt/QtGui/qpixmap.h:103
+// void setDevicePixelRatio(qreal)
 extern "C"
-QPixmap*
-C_ZN7QPixmap10grabWindowEiiiii(WId arg1,
-int arg2,
-int arg3,
-int arg4,
-int arg5) {
-  auto ret =
-  QPixmap::grabWindow(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap19setDevicePixelRatioEd(void *this_, qreal scaleFactor) {
+  ((QPixmap*)this_)->setDevicePixelRatio(scaleFactor);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 96, column 10>
-//   // proto:  void QPixmap::fill(const QPaintDevice * device, const QPoint & ofs);
-// _ZN7QPixmap4fillEPK12QPaintDeviceRK6QPoint fill(const class QPaintDevice *, const class QPoint &)
+// /usr/include/qt/QtGui/qpixmap.h:105
+// bool hasAlpha()
 extern "C"
-void
-C_ZN7QPixmap4fillEPK12QPaintDeviceRK6QPoint(void *qthis,
-const QPaintDevice * arg1,
-const QPoint* arg2) {
-  ((QPixmap*)qthis)->fill(arg1,
-*((const QPoint*)arg2));
+void C_ZNK7QPixmap8hasAlphaEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->hasAlpha();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 159, column 10>
-//   // proto:  bool QPixmap::isDetached();
-// _ZNK7QPixmap10isDetachedEv isDetached()
+// /usr/include/qt/QtGui/qpixmap.h:106
+// bool hasAlphaChannel()
 extern "C"
-bool
-C_ZNK7QPixmap10isDetachedEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->isDetached();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QPixmap15hasAlphaChannelEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->hasAlphaChannel();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 84, column 10>
-//   // proto:  bool QPixmap::isNull();
-// _ZNK7QPixmap6isNullEv isNull()
+// /usr/include/qt/QtGui/qpixmap.h:109
+// QBitmap createHeuristicMask(_Bool)
 extern "C"
-bool
-C_ZNK7QPixmap6isNullEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->isNull();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QPixmap19createHeuristicMaskEb(void *this_, bool clipTight) {
+  /*return*/ ((QPixmap*)this_)->createHeuristicMask(clipTight);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 148, column 20>
-//   // proto:  QPixmap QPixmap::copy(int x, int y, int width, int height);
-// _ZNK7QPixmap4copyEiiii copy(int, int, int, int)
+// /usr/include/qt/QtGui/qpixmap.h:111
+// QBitmap createMaskFromColor(const class QColor &, Qt::MaskMode)
 extern "C"
-QPixmap*
-C_ZNK7QPixmap4copyEiiii(void *qthis,
-int arg1,
-int arg2,
-int arg3,
-int arg4) {
-  auto ret =
-  ((QPixmap*)qthis)->copy(arg1,
-arg2,
-arg3,
-arg4);
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap19createMaskFromColorERK6QColorN2Qt8MaskModeE(void *this_, const QColor & maskColor, Qt::MaskMode mode) {
+  /*return*/ ((QPixmap*)this_)->createMaskFromColor(maskColor, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 93, column 16>
-//   // proto: static int QPixmap::defaultDepth();
-// _ZN7QPixmap12defaultDepthEv defaultDepth()
+// static
+// /usr/include/qt/QtGui/qpixmap.h:113
+// QPixmap grabWindow(WId, int, int, int, int)
 extern "C"
-int
-C_ZN7QPixmap12defaultDepthEv() {
-  auto ret =
-  QPixmap::defaultDepth();
-  return ret; // 0 TypeKind.INT
+void C_ZN7QPixmap10grabWindowEyiiii(WId a0, int x, int y, int w, int h) {
+  /*return*/ QPixmap::grabWindow(a0, x, y, w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 160, column 10>
-//   // proto:  void QPixmap::detach();
-// _ZN7QPixmap6detachEv detach()
+// static
+// /usr/include/qt/QtGui/qpixmap.h:114
+// QPixmap grabWidget(class QObject *, const class QRect &)
 extern "C"
-void
-C_ZN7QPixmap6detachEv(void *qthis) {
-  ((QPixmap*)qthis)->detach();
+void C_ZN7QPixmap10grabWidgetEP7QObjectRK5QRect(QObject * widget, const QRect & rect) {
+  /*return*/ QPixmap::grabWidget(widget, rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 152, column 10>
-//   // proto:  void QPixmap::scroll(int dx, int dy, const QRect & rect, QRegion * exposed);
-// _ZN7QPixmap6scrollEiiRK5QRectP7QRegion scroll(int, int, const class QRect &, class QRegion *)
+// static inline
+// /usr/include/qt/QtGui/qpixmap.h:115
+// QPixmap grabWidget(class QObject *, int, int, int, int)
 extern "C"
-void
-C_ZN7QPixmap6scrollEiiRK5QRectP7QRegion(void *qthis,
-int arg1,
-int arg2,
-const QRect* arg3,
-QRegion * arg4) {
-  ((QPixmap*)qthis)->scroll(arg1,
-arg2,
-*((const QRect*)arg3),
-arg4);
+void C_ZN7QPixmap10grabWidgetEP7QObjectiiii(QObject * widget, int x, int y, int w, int h) {
+  /*return*/ QPixmap::grabWidget(widget, x, y, w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 100, column 10>
-//   // proto:  void QPixmap::setMask(const QBitmap & );
-// _ZN7QPixmap7setMaskERK7QBitmap setMask(const class QBitmap &)
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:118
+// QPixmap scaled(int, int, Qt::AspectRatioMode, Qt::TransformationMode)
 extern "C"
-void
-C_ZN7QPixmap7setMaskERK7QBitmap(void *qthis,
-const QBitmap* arg1) {
-  ((QPixmap*)qthis)->setMask(*((const QBitmap*)arg1));
+void C_ZNK7QPixmap6scaledEiiN2Qt15AspectRatioModeENS0_18TransformationModeE(void *this_, int w, int h, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->scaled(w, h, aspectMode, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 63, column 5>
-//   // proto:  void QPixmap::QPixmap();
+// /usr/include/qt/QtGui/qpixmap.h:121
+// QPixmap scaled(const class QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2Ev() {
-  auto ret = new QPixmap();
-  return ret;
+void C_ZNK7QPixmap6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *this_, const QSize & s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->scaled(s, aspectMode, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 114, column 20>
-//   // proto: static QPixmap QPixmap::grabWidget(QObject * widget, const QRect & rect);
-// _ZN7QPixmap10grabWidgetEP7QObjectRK5QRect grabWidget(class QObject *, const class QRect &)
+// /usr/include/qt/QtGui/qpixmap.h:123
+// QPixmap scaledToWidth(int, Qt::TransformationMode)
 extern "C"
-QPixmap*
-C_ZN7QPixmap10grabWidgetEP7QObjectRK5QRect(QObject * arg1,
-const QRect* arg2) {
-  auto ret =
-  QPixmap::grabWidget(arg1,
-*((const QRect*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap13scaledToWidthEiN2Qt18TransformationModeE(void *this_, int w, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->scaledToWidth(w, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 71, column 5>
-//   // proto:  void QPixmap::QPixmap(const QPixmap & );
+// /usr/include/qt/QtGui/qpixmap.h:124
+// QPixmap scaledToHeight(int, Qt::TransformationMode)
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2ERKS_(const QPixmap* arg1) {
-  auto ret = new QPixmap(*((const QPixmap*)arg1));
-  return ret;
+void C_ZNK7QPixmap14scaledToHeightEiN2Qt18TransformationModeE(void *this_, int h, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->scaledToHeight(h, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 103, column 10>
-//   // proto:  void QPixmap::setDevicePixelRatio(qreal scaleFactor);
-// _ZN7QPixmap19setDevicePixelRatioEd setDevicePixelRatio(qreal)
+// /usr/include/qt/QtGui/qpixmap.h:125
+// QPixmap transformed(const class QMatrix &, Qt::TransformationMode)
 extern "C"
-void
-C_ZN7QPixmap19setDevicePixelRatioEd(void *qthis,
-qreal arg1) {
-  ((QPixmap*)qthis)->setDevicePixelRatio(arg1);
+void C_ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, const QMatrix & a0, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->transformed(a0, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 142, column 17>
-//   // proto:  bool QPixmap::loadFromData(const QByteArray & data, const char * format, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE loadFromData(const class QByteArray &, const char *, Qt::ImageConversionFlags)
+// static
+// /usr/include/qt/QtGui/qpixmap.h:126
+// QMatrix trueMatrix(const class QMatrix &, int, int)
 extern "C"
-bool
-C_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *qthis,
-const QByteArray* arg1,
-const char * arg2,
-Qt::ImageConversionFlags* arg3) {
-  auto ret =
-  ((QPixmap*)qthis)->loadFromData(*((const QByteArray*)arg1),
-arg2,
-*((Qt::ImageConversionFlags*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QPixmap10trueMatrixERK7QMatrixii(const QMatrix & m, int w, int h) {
+  /*return*/ QPixmap::trueMatrix(m, w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 131, column 20>
-//   // proto: static QPixmap QPixmap::fromImage(const QImage & image, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE fromImage(const class QImage &, Qt::ImageConversionFlags)
+// /usr/include/qt/QtGui/qpixmap.h:127
+// QPixmap transformed(const class QTransform &, Qt::TransformationMode)
 extern "C"
-QPixmap*
-C_ZN7QPixmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(const QImage* arg1,
-Qt::ImageConversionFlags* arg2) {
-  auto ret =
-  QPixmap::fromImage(*((const QImage*)arg1),
-*((Qt::ImageConversionFlags*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, const QTransform & a0, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->transformed(a0, mode);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 69, column 14>
-//   // proto:  void QPixmap::QPixmap(const char *const [] xpm);
+// static
+// /usr/include/qt/QtGui/qpixmap.h:128
+// QTransform trueMatrix(const class QTransform &, int, int)
 extern "C"
-QPixmap*
-C_ZN7QPixmapC2EPKPKc(const char *const arg1[]) {
-  auto ret = new QPixmap(arg1);
-  return ret;
+void C_ZN7QPixmap10trueMatrixERK10QTransformii(const QTransform & m, int w, int h) {
+  /*return*/ QPixmap::trueMatrix(m, w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 157, column 12>
-//   // proto:  qint64 QPixmap::cacheKey();
-// _ZNK7QPixmap8cacheKeyEv cacheKey()
+// /usr/include/qt/QtGui/qpixmap.h:130
+// QImage toImage()
 extern "C"
-long long
-C_ZNK7QPixmap8cacheKeyEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->cacheKey();
-  return ret; // 0 TypeKind.LONGLONG
+void C_ZNK7QPixmap7toImageEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->toImage();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 109, column 13>
-//   // proto:  QBitmap QPixmap::createHeuristicMask(bool clipTight);
-// _ZNK7QPixmap19createHeuristicMaskEb createHeuristicMask(_Bool)
+// static
+// /usr/include/qt/QtGui/qpixmap.h:131
+// QPixmap fromImage(const class QImage &, Qt::ImageConversionFlags)
 extern "C"
-QBitmap*
-C_ZNK7QPixmap19createHeuristicMaskEb(void *qthis,
-bool arg1) {
-  auto ret =
-  ((QPixmap*)qthis)->createHeuristicMask(arg1);
-  return new QBitmap(ret); // 5
+void C_ZN7QPixmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(const QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ QPixmap::fromImage(image, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 91, column 9>
-//   // proto:  int QPixmap::depth();
-// _ZNK7QPixmap5depthEv depth()
+// static
+// /usr/include/qt/QtGui/qpixmap.h:132
+// QPixmap fromImageReader(class QImageReader *, Qt::ImageConversionFlags)
 extern "C"
-int
-C_ZNK7QPixmap5depthEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->depth();
-  return ret; // 0 TypeKind.INT
+void C_ZN7QPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE(QImageReader * imageReader, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ QPixmap::fromImageReader(imageReader, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 140, column 10>
-//   // proto:  bool QPixmap::load(const QString & fileName, const char * format, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap4loadERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE load(const class QString &, const char *, Qt::ImageConversionFlags)
+// static inline
+// /usr/include/qt/QtGui/qpixmap.h:134
+// QPixmap fromImage(class QImage &&, Qt::ImageConversionFlags)
 extern "C"
-bool
-C_ZN7QPixmap4loadERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *qthis,
-const QString* arg1,
-const char * arg2,
-Qt::ImageConversionFlags* arg3) {
-  auto ret =
-  ((QPixmap*)qthis)->load(*((const QString*)arg1),
-arg2,
-*((Qt::ImageConversionFlags*)arg3));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QPixmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage && image, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ QPixmap::fromImage(image, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 130, column 12>
-//   // proto:  QImage QPixmap::toImage();
-// _ZNK7QPixmap7toImageEv toImage()
+// /usr/include/qt/QtGui/qpixmap.h:140
+// bool load(const class QString &, const char *, Qt::ImageConversionFlags)
 extern "C"
-QImage*
-C_ZNK7QPixmap7toImageEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->toImage();
-  return new QImage(ret); // 5
+void C_ZN7QPixmap4loadERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ ((QPixmap*)this_)->load(fileName, format, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 132, column 20>
-//   // proto: static QPixmap QPixmap::fromImageReader(QImageReader * imageReader, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE fromImageReader(class QImageReader *, Qt::ImageConversionFlags)
+// /usr/include/qt/QtGui/qpixmap.h:141
+// bool loadFromData(const uchar *, uint, const char *, Qt::ImageConversionFlags)
 extern "C"
-QPixmap*
-C_ZN7QPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE(QImageReader * arg1,
-Qt::ImageConversionFlags* arg2) {
-  auto ret =
-  QPixmap::fromImageReader(arg1,
-*((Qt::ImageConversionFlags*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap12loadFromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, const uchar * buf, uint len, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ ((QPixmap*)this_)->loadFromData(buf, len, format, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 121, column 13>
-//   // proto:  QPixmap QPixmap::scaled(const QSize & s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode);
-// _ZNK7QPixmap6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE scaled(const class QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:142
+// bool loadFromData(const class QByteArray &, const char *, Qt::ImageConversionFlags)
 extern "C"
-QPixmap*
-C_ZNK7QPixmap6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *qthis,
-const QSize* arg1,
-Qt::AspectRatioMode* arg2,
-Qt::TransformationMode* arg3) {
-  auto ret =
-  ((QPixmap*)qthis)->scaled(*((const QSize*)arg1),
-*((Qt::AspectRatioMode*)arg2),
-*((Qt::TransformationMode*)arg3));
-  return new QPixmap(ret); // 5
+void C_ZN7QPixmap12loadFromDataERK10QByteArrayPKc6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, const QByteArray & data, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ ((QPixmap*)this_)->loadFromData(data, format, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 115, column 27>
-//   // proto: static QPixmap QPixmap::grabWidget(QObject * widget, int x, int y, int w, int h);
-// _ZN7QPixmap10grabWidgetEP7QObjectiiii grabWidget(class QObject *, int, int, int, int)
+// /usr/include/qt/QtGui/qpixmap.h:143
+// bool save(const class QString &, const char *, int)
 extern "C"
-QPixmap*
-C_ZN7QPixmap10grabWidgetEP7QObjectiiii(QObject * arg1,
-int arg2,
-int arg3,
-int arg4,
-int arg5) {
-  auto ret =
-  QPixmap::grabWidget(arg1,
-arg2,
-arg3,
-arg4,
-arg5);
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap4saveERK7QStringPKci(void *this_, const QString & fileName, const char * format, int quality) {
+  /*return*/ ((QPixmap*)this_)->save(fileName, format, quality);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 197, column 22>
-//   // proto:  QPlatformPixmap * QPixmap::handle();
-// _ZNK7QPixmap6handleEv handle()
+// /usr/include/qt/QtGui/qpixmap.h:144
+// bool save(class QIODevice *, const char *, int)
 extern "C"
-void*
-C_ZNK7QPixmap6handleEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->handle();
-  return (void*)ret;
+void C_ZNK7QPixmap4saveEP9QIODevicePKci(void *this_, QIODevice * device, const char * format, int quality) {
+  /*return*/ ((QPixmap*)this_)->save(device, format, quality);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 106, column 10>
-//   // proto:  bool QPixmap::hasAlphaChannel();
-// _ZNK7QPixmap15hasAlphaChannelEv hasAlphaChannel()
+// /usr/include/qt/QtGui/qpixmap.h:146
+// bool convertFromImage(const class QImage &, Qt::ImageConversionFlags)
 extern "C"
-bool
-C_ZNK7QPixmap15hasAlphaChannelEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->hasAlphaChannel();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QPixmap16convertFromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, const QImage & img, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ ((QPixmap*)this_)->convertFromImage(img, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 90, column 11>
-//   // proto:  QRect QPixmap::rect();
-// _ZNK7QPixmap4rectEv rect()
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:148
+// QPixmap copy(int, int, int, int)
 extern "C"
-QRect*
-C_ZNK7QPixmap4rectEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->rect();
-  return new QRect(ret); // 5
+void C_ZNK7QPixmap4copyEiiii(void *this_, int x, int y, int width, int height) {
+  /*return*/ ((QPixmap*)this_)->copy(x, y, width, height);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 126, column 20>
-//   // proto: static QMatrix QPixmap::trueMatrix(const QMatrix & m, int w, int h);
-// _ZN7QPixmap10trueMatrixERK7QMatrixii trueMatrix(const class QMatrix &, int, int)
+// /usr/include/qt/QtGui/qpixmap.h:149
+// QPixmap copy(const class QRect &)
 extern "C"
-QMatrix*
-C_ZN7QPixmap10trueMatrixERK7QMatrixii(const QMatrix* arg1,
-int arg2,
-int arg3) {
-  auto ret =
-  QPixmap::trueMatrix(*((const QMatrix*)arg1),
-arg2,
-arg3);
-  return new QMatrix(ret); // 5
+void C_ZNK7QPixmap4copyERK5QRect(void *this_, const QRect & rect) {
+  /*return*/ ((QPixmap*)this_)->copy(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 146, column 10>
-//   // proto:  bool QPixmap::convertFromImage(const QImage & img, Qt::ImageConversionFlags flags);
-// _ZN7QPixmap16convertFromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE convertFromImage(const class QImage &, Qt::ImageConversionFlags)
+// inline
+// /usr/include/qt/QtGui/qpixmap.h:151
+// void scroll(int, int, int, int, int, int, class QRegion *)
 extern "C"
-bool
-C_ZN7QPixmap16convertFromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void *qthis,
-const QImage* arg1,
-Qt::ImageConversionFlags* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->convertFromImage(*((const QImage*)arg1),
-*((Qt::ImageConversionFlags*)arg2));
-  return ret; // 0 TypeKind.BOOL
+void C_ZN7QPixmap6scrollEiiiiiiP7QRegion(void *this_, int dx, int dy, int x, int y, int width, int height, QRegion * exposed) {
+  ((QPixmap*)this_)->scroll(dx, dy, x, y, width, height, exposed);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 99, column 13>
-//   // proto:  QBitmap QPixmap::mask();
-// _ZNK7QPixmap4maskEv mask()
+// /usr/include/qt/QtGui/qpixmap.h:152
+// void scroll(int, int, const class QRect &, class QRegion *)
 extern "C"
-QBitmap*
-C_ZNK7QPixmap4maskEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->mask();
-  return new QBitmap(ret); // 5
+void C_ZN7QPixmap6scrollEiiRK5QRectP7QRegion(void *this_, int dx, int dy, const QRect & rect, QRegion * exposed) {
+  ((QPixmap*)this_)->scroll(dx, dy, rect, exposed);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 87, column 9>
-//   // proto:  int QPixmap::width();
-// _ZNK7QPixmap5widthEv width()
+// /usr/include/qt/QtGui/qpixmap.h:157
+// qint64 cacheKey()
 extern "C"
-int
-C_ZNK7QPixmap5widthEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->width();
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QPixmap8cacheKeyEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->cacheKey();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 164, column 19>
-//   // proto:  QPaintEngine * QPixmap::paintEngine();
-// _ZNK7QPixmap11paintEngineEv paintEngine()
+// /usr/include/qt/QtGui/qpixmap.h:159
+// bool isDetached()
 extern "C"
-void*
-C_ZNK7QPixmap11paintEngineEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->paintEngine();
-  return (void*)ret;
+void C_ZNK7QPixmap10isDetachedEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->isDetached();
 }
-//   // proto:  void QPixmap::~QPixmap();
+// /usr/include/qt/QtGui/qpixmap.h:160
+// void detach()
 extern "C"
-void C_ZN7QPixmapD2Ev(void *qthis) {
-  delete (QPixmap*)qthis;
+void C_ZN7QPixmap6detachEv(void *this_) {
+  ((QPixmap*)this_)->detach();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 123, column 13>
-//   // proto:  QPixmap QPixmap::scaledToWidth(int w, Qt::TransformationMode mode);
-// _ZNK7QPixmap13scaledToWidthEiN2Qt18TransformationModeE scaledToWidth(int, Qt::TransformationMode)
+// /usr/include/qt/QtGui/qpixmap.h:162
+// bool isQBitmap()
 extern "C"
-QPixmap*
-C_ZNK7QPixmap13scaledToWidthEiN2Qt18TransformationModeE(void *qthis,
-int arg1,
-Qt::TransformationMode* arg2) {
-  auto ret =
-  ((QPixmap*)qthis)->scaledToWidth(arg1,
-*((Qt::TransformationMode*)arg2));
-  return new QPixmap(ret); // 5
+void C_ZNK7QPixmap9isQBitmapEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->isQBitmap();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 88, column 9>
-//   // proto:  int QPixmap::height();
-// _ZNK7QPixmap6heightEv height()
+// virtual
+// /usr/include/qt/QtGui/qpixmap.h:164
+// QPaintEngine * paintEngine()
 extern "C"
-int
-C_ZNK7QPixmap6heightEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->height();
-  return ret; // 0 TypeKind.INT
+void C_ZNK7QPixmap11paintEngineEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->paintEngine();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 144, column 10>
-//   // proto:  bool QPixmap::save(QIODevice * device, const char * format, int quality);
-// _ZNK7QPixmap4saveEP9QIODevicePKci save(class QIODevice *, const char *, int)
+// /usr/include/qt/QtGui/qpixmap.h:197
+// QPlatformPixmap * handle()
 extern "C"
-bool
-C_ZNK7QPixmap4saveEP9QIODevicePKci(void *qthis,
-QIODevice * arg1,
-const char * arg2,
-int arg3) {
-  auto ret =
-  ((QPixmap*)qthis)->save(arg1,
-arg2,
-arg3);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK7QPixmap6handleEv(void *this_) {
+  /*return*/ ((QPixmap*)this_)->handle();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 89, column 11>
-//   // proto:  QSize QPixmap::size();
-// _ZNK7QPixmap4sizeEv size()
-extern "C"
-QSize*
-C_ZNK7QPixmap4sizeEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->size();
-  return new QSize(ret); // 5
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qpixmap.h', line 105, column 10>
-//   // proto:  bool QPixmap::hasAlpha();
-// _ZNK7QPixmap8hasAlphaEv hasAlpha()
-extern "C"
-bool
-C_ZNK7QPixmap8hasAlphaEv(void *qthis) {
-  auto ret =
-  ((QPixmap*)qthis)->hasAlpha();
-  return ret; // 0 TypeKind.BOOL
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

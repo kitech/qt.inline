@@ -1,189 +1,81 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qbitmap.h
-// dst-file: /src/gui/qbitmap.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qbitmap.h
 #include <qbitmap.h>
+#include <QtGui>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qbitmap_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 60, column 5>
-//   // proto:  void QBitmap::QBitmap(const QBitmap & other);
-if (true) {
-  auto f = [](const QBitmap & arg1) {
-    new QBitmap(arg1);
-  };
-  if (f == nullptr){}
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 68, column 17>
-//   // proto:  void QBitmap::swap(QBitmap & other);
-if (true) {
-  auto f = [](QBitmap flythis, QBitmap & arg1) {
-    ((QBitmap*)0)->swap(arg1);
-    flythis.swap(arg1);
-  };
-  if (f == nullptr){}
-}
-// _ZN7QBitmap4swapERS_ swap(class QBitmap &)
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 71, column 17>
-//   // proto:  void QBitmap::clear();
-if (true) {
-  auto f = [](QBitmap flythis) {
-    ((QBitmap*)0)->clear();
-    flythis.clear();
-  };
-  if (f == nullptr){}
-}
-// _ZN7QBitmap5clearEv clear()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qbitmap.h:53
+// void QBitmap()
 extern "C"
-int QBitmap_Class_Size()
-{
-  return sizeof(QBitmap);
+void* C_ZN7QBitmapC1Ev() {
+  return new QBitmap();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 54, column 5>
-//   // proto:  void QBitmap::QBitmap(const QPixmap & );
+// /usr/include/qt/QtGui/qbitmap.h:54
+// void QBitmap(const class QPixmap &)
 extern "C"
-QBitmap*
-C_ZN7QBitmapC2ERK7QPixmap(const QPixmap* arg1) {
-  auto ret = new QBitmap(*((const QPixmap*)arg1));
-  return ret;
+void* C_ZN7QBitmapC1ERK7QPixmap(const QPixmap & a0) {
+  return new QBitmap(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 60, column 5>
-//   // proto:  void QBitmap::QBitmap(const QBitmap & other);
+// /usr/include/qt/QtGui/qbitmap.h:55
+// void QBitmap(int, int)
 extern "C"
-QBitmap*
-C_ZN7QBitmapC2ERKS_(const QBitmap* arg1) {
-  auto ret = new QBitmap(*((const QBitmap*)arg1));
-  return ret;
+void* C_ZN7QBitmapC1Eii(int w, int h) {
+  return new QBitmap(w, h);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 74, column 20>
-//   // proto: static QBitmap QBitmap::fromData(const QSize & size, const uchar * bits, QImage::Format monoFormat);
-// _ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE fromData(const class QSize &, const uchar *, class QImage::Format)
+// /usr/include/qt/QtGui/qbitmap.h:56
+// void QBitmap(const class QSize &)
 extern "C"
-QBitmap*
-C_ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE(const QSize* arg1,
-const uchar * arg2,
-QImage::Format* arg3) {
-  auto ret =
-  QBitmap::fromData(*((const QSize*)arg1),
-arg2,
-*((QImage::Format*)arg3));
-  return new QBitmap(ret); // 5
+void* C_ZN7QBitmapC1ERK5QSize(const QSize & a0) {
+  return new QBitmap(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 56, column 14>
-//   // proto:  void QBitmap::QBitmap(const QSize & );
+// /usr/include/qt/QtGui/qbitmap.h:57
+// void QBitmap(const class QString &, const char *)
 extern "C"
-QBitmap*
-C_ZN7QBitmapC2ERK5QSize(const QSize* arg1) {
-  auto ret = new QBitmap(*((const QSize*)arg1));
-  return ret;
+void* C_ZN7QBitmapC1ERK7QStringPKc(const QString & fileName, const char * format) {
+  return new QBitmap(fileName, format);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 55, column 5>
-//   // proto:  void QBitmap::QBitmap(int w, int h);
+// virtual
+// /usr/include/qt/QtGui/qbitmap.h:64
+// void ~QBitmap()
 extern "C"
-QBitmap*
-C_ZN7QBitmapC2Eii(int arg1,
-int arg2) {
-  auto ret = new QBitmap(arg1,
-arg2);
-  return ret;
+void C_ZN7QBitmapD1Ev(void *this_) {
+  delete (QBitmap*)(this_);
 }
-//   // proto:  void QBitmap::~QBitmap();
+// inline
+// /usr/include/qt/QtGui/qbitmap.h:68
+// void swap(class QBitmap &)
 extern "C"
-void C_ZN7QBitmapD2Ev(void *qthis) {
-  delete (QBitmap*)qthis;
+void C_ZN7QBitmap4swapERS_(void *this_, QBitmap & other) {
+  ((QBitmap*)this_)->swap(other);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 68, column 17>
-//   // proto:  void QBitmap::swap(QBitmap & other);
-// _ZN7QBitmap4swapERS_ swap(class QBitmap &)
+// inline
+// /usr/include/qt/QtGui/qbitmap.h:71
+// void clear()
 extern "C"
-void
-C_ZN7QBitmap4swapERS_(void *qthis,
-QBitmap* arg1) {
-  ((QBitmap*)qthis)->swap(*((QBitmap*)arg1));
+void C_ZN7QBitmap5clearEv(void *this_) {
+  ((QBitmap*)this_)->clear();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 77, column 13>
-//   // proto:  QBitmap QBitmap::transformed(const QMatrix & );
-// _ZNK7QBitmap11transformedERK7QMatrix transformed(const class QMatrix &)
+// static
+// /usr/include/qt/QtGui/qbitmap.h:73
+// QBitmap fromImage(const class QImage &, Qt::ImageConversionFlags)
 extern "C"
-QBitmap*
-C_ZNK7QBitmap11transformedERK7QMatrix(void *qthis,
-const QMatrix* arg1) {
-  auto ret =
-  ((QBitmap*)qthis)->transformed(*((const QMatrix*)arg1));
-  return new QBitmap(ret); // 5
+void C_ZN7QBitmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(const QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
+  /*return*/ QBitmap::fromImage(image, flags);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 71, column 17>
-//   // proto:  void QBitmap::clear();
-// _ZN7QBitmap5clearEv clear()
+// static
+// /usr/include/qt/QtGui/qbitmap.h:74
+// QBitmap fromData(const class QSize &, const uchar *, class QImage::Format)
 extern "C"
-void
-C_ZN7QBitmap5clearEv(void *qthis) {
-  ((QBitmap*)qthis)->clear();
+void C_ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE(const QSize & size, const uchar * bits, QImage::Format monoFormat) {
+  /*return*/ QBitmap::fromData(size, bits, monoFormat);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 57, column 14>
-//   // proto:  void QBitmap::QBitmap(const QString & fileName, const char * format);
+// /usr/include/qt/QtGui/qbitmap.h:77
+// QBitmap transformed(const class QMatrix &)
 extern "C"
-QBitmap*
-C_ZN7QBitmapC2ERK7QStringPKc(const QString* arg1,
-const char * arg2) {
-  auto ret = new QBitmap(*((const QString*)arg1),
-arg2);
-  return ret;
+void C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, const QMatrix & a0) {
+  /*return*/ ((QBitmap*)this_)->transformed(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 73, column 20>
-//   // proto: static QBitmap QBitmap::fromImage(const QImage & image, Qt::ImageConversionFlags flags);
-// _ZN7QBitmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE fromImage(const class QImage &, Qt::ImageConversionFlags)
+// /usr/include/qt/QtGui/qbitmap.h:78
+// QBitmap transformed(const class QTransform &)
 extern "C"
-QBitmap*
-C_ZN7QBitmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(const QImage* arg1,
-Qt::ImageConversionFlags* arg2) {
-  auto ret =
-  QBitmap::fromImage(*((const QImage*)arg1),
-*((Qt::ImageConversionFlags*)arg2));
-  return new QBitmap(ret); // 5
+void C_ZNK7QBitmap11transformedERK10QTransform(void *this_, const QTransform & matrix) {
+  /*return*/ ((QBitmap*)this_)->transformed(matrix);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 53, column 5>
-//   // proto:  void QBitmap::QBitmap();
-extern "C"
-QBitmap*
-C_ZN7QBitmapC2Ev() {
-  auto ret = new QBitmap();
-  return ret;
-}
-// <SourceLocation file '/usr/include/qt/QtGui/qbitmap.h', line 78, column 13>
-//   // proto:  QBitmap QBitmap::transformed(const QTransform & matrix);
-// _ZNK7QBitmap11transformedERK10QTransform transformed(const class QTransform &)
-extern "C"
-QBitmap*
-C_ZNK7QBitmap11transformedERK10QTransform(void *qthis,
-const QTransform* arg1) {
-  auto ret =
-  ((QBitmap*)qthis)->transformed(*((const QTransform*)arg1));
-  return new QBitmap(ret); // 5
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

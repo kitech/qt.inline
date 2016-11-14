@@ -1,141 +1,71 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtGui/qtouchdevice.h
-// dst-file: /src/gui/qtouchdevice.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtGui/qtouchdevice.h
 #include <qtouchdevice.h>
+#include <QtGui>
 
-
-#include <qstring.h>
-#include <qlist.h>
-#include <qwindowdefs.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qtouchdevice_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtGui/qtouchdevice.h:72
+// void QTouchDevice()
 extern "C"
-int QTouchDevice_Class_Size()
-{
-  return sizeof(QTouchDevice);
+void* C_ZN12QTouchDeviceC1Ev() {
+  return new QTouchDevice();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 82, column 10>
-//   // proto:  void QTouchDevice::setName(const QString & name);
-// _ZN12QTouchDevice7setNameERK7QString setName(const class QString &)
+// /usr/include/qt/QtGui/qtouchdevice.h:73
+// void ~QTouchDevice()
 extern "C"
-void
-C_ZN12QTouchDevice7setNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QTouchDevice*)qthis)->setName(*((const QString*)arg1));
+void C_ZN12QTouchDeviceD1Ev(void *this_) {
+  delete (QTouchDevice*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 79, column 18>
-//   // proto:  Capabilities QTouchDevice::capabilities();
-// _ZNK12QTouchDevice12capabilitiesEv capabilities()
+// static
+// /usr/include/qt/QtGui/qtouchdevice.h:75
+// QList<const QTouchDevice *> devices()
 extern "C"
-QFlags<QTouchDevice::CapabilityFlag>*
-C_ZNK12QTouchDevice12capabilitiesEv(void *qthis) {
-  auto ret =
-  ((QTouchDevice*)qthis)->capabilities();
-  return new QFlags<QTouchDevice::CapabilityFlag>(ret); // 5
+void C_ZN12QTouchDevice7devicesEv() {
+  /*return*/ QTouchDevice::devices();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 77, column 13>
-//   // proto:  QString QTouchDevice::name();
-// _ZNK12QTouchDevice4nameEv name()
+// /usr/include/qt/QtGui/qtouchdevice.h:77
+// QString name()
 extern "C"
-QString*
-C_ZNK12QTouchDevice4nameEv(void *qthis) {
-  auto ret =
-  ((QTouchDevice*)qthis)->name();
-  return new QString(ret); // 5
+void C_ZNK12QTouchDevice4nameEv(void *this_) {
+  /*return*/ ((QTouchDevice*)this_)->name();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 85, column 10>
-//   // proto:  void QTouchDevice::setMaximumTouchPoints(int max);
-// _ZN12QTouchDevice21setMaximumTouchPointsEi setMaximumTouchPoints(int)
+// /usr/include/qt/QtGui/qtouchdevice.h:78
+// QTouchDevice::DeviceType type()
 extern "C"
-void
-C_ZN12QTouchDevice21setMaximumTouchPointsEi(void *qthis,
-int arg1) {
-  ((QTouchDevice*)qthis)->setMaximumTouchPoints(arg1);
+void C_ZNK12QTouchDevice4typeEv(void *this_) {
+  /*return*/ ((QTouchDevice*)this_)->type();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 75, column 40>
-//   // proto: static QList<const QTouchDevice *> QTouchDevice::devices();
-// _ZN12QTouchDevice7devicesEv devices()
+// /usr/include/qt/QtGui/qtouchdevice.h:79
+// Capabilities capabilities()
 extern "C"
-QList<const QTouchDevice *>*
-C_ZN12QTouchDevice7devicesEv() {
-  auto ret =
-  QTouchDevice::devices();
-  return new QList<const QTouchDevice *>(ret); // 5
+void C_ZNK12QTouchDevice12capabilitiesEv(void *this_) {
+  /*return*/ ((QTouchDevice*)this_)->capabilities();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 78, column 16>
-//   // proto:  QTouchDevice::DeviceType QTouchDevice::type();
-// _ZNK12QTouchDevice4typeEv type()
+// /usr/include/qt/QtGui/qtouchdevice.h:80
+// int maximumTouchPoints()
 extern "C"
-QTouchDevice::DeviceType
-C_ZNK12QTouchDevice4typeEv(void *qthis) {
-  auto ret =
-  ((QTouchDevice*)qthis)->type();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK12QTouchDevice18maximumTouchPointsEv(void *this_) {
+  /*return*/ ((QTouchDevice*)this_)->maximumTouchPoints();
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 72, column 5>
-//   // proto:  void QTouchDevice::QTouchDevice();
+// /usr/include/qt/QtGui/qtouchdevice.h:82
+// void setName(const class QString &)
 extern "C"
-QTouchDevice*
-C_ZN12QTouchDeviceC2Ev() {
-  auto ret = new QTouchDevice();
-  return ret;
+void C_ZN12QTouchDevice7setNameERK7QString(void *this_, const QString & name) {
+  ((QTouchDevice*)this_)->setName(name);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 83, column 10>
-//   // proto:  void QTouchDevice::setType(QTouchDevice::DeviceType devType);
-// _ZN12QTouchDevice7setTypeENS_10DeviceTypeE setType(enum QTouchDevice::DeviceType)
+// /usr/include/qt/QtGui/qtouchdevice.h:83
+// void setType(enum QTouchDevice::DeviceType)
 extern "C"
-void
-C_ZN12QTouchDevice7setTypeENS_10DeviceTypeE(void *qthis,
-QTouchDevice::DeviceType arg1) {
-  ((QTouchDevice*)qthis)->setType(arg1);
+void C_ZN12QTouchDevice7setTypeENS_10DeviceTypeE(void *this_, QTouchDevice::DeviceType devType) {
+  ((QTouchDevice*)this_)->setType(devType);
 }
-//   // proto:  void QTouchDevice::~QTouchDevice();
+// /usr/include/qt/QtGui/qtouchdevice.h:84
+// void setCapabilities(Capabilities)
 extern "C"
-void C_ZN12QTouchDeviceD2Ev(void *qthis) {
-  delete (QTouchDevice*)qthis;
+void C_ZN12QTouchDevice15setCapabilitiesE6QFlagsINS_14CapabilityFlagEE(void *this_, QFlags<QTouchDevice::CapabilityFlag> caps) {
+  ((QTouchDevice*)this_)->setCapabilities(caps);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 80, column 9>
-//   // proto:  int QTouchDevice::maximumTouchPoints();
-// _ZNK12QTouchDevice18maximumTouchPointsEv maximumTouchPoints()
+// /usr/include/qt/QtGui/qtouchdevice.h:85
+// void setMaximumTouchPoints(int)
 extern "C"
-int
-C_ZNK12QTouchDevice18maximumTouchPointsEv(void *qthis) {
-  auto ret =
-  ((QTouchDevice*)qthis)->maximumTouchPoints();
-  return ret; // 0 TypeKind.INT
+void C_ZN12QTouchDevice21setMaximumTouchPointsEi(void *this_, int max) {
+  ((QTouchDevice*)this_)->setMaximumTouchPoints(max);
 }
-// <SourceLocation file '/usr/include/qt/QtGui/qtouchdevice.h', line 84, column 10>
-//   // proto:  void QTouchDevice::setCapabilities(Capabilities caps);
-// _ZN12QTouchDevice15setCapabilitiesE6QFlagsINS_14CapabilityFlagEE setCapabilities(Capabilities)
-extern "C"
-void
-C_ZN12QTouchDevice15setCapabilitiesE6QFlagsINS_14CapabilityFlagEE(void *qthis,
-QTouchDevice::Capabilities arg1) {
-  ((QTouchDevice*)qthis)->setCapabilities(arg1);
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

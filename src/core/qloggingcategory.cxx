@@ -1,212 +1,83 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qloggingcategory.h
-// dst-file: /src/core/qloggingcategory.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qloggingcategory.h
 #include <qloggingcategory.h>
+#include <QtCore>
 
-
-// <= header block end
-
-// main block begin =>
-void __keep_qloggingcategory_inline_symbols() {
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 61, column 10>
-//   // proto:  bool QLoggingCategory::isDebugEnabled();
-if (true) {
-  auto f = [](QLoggingCategory flythis) {
-    ((QLoggingCategory*)0)->isDebugEnabled();
-    flythis.isDebugEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK16QLoggingCategory14isDebugEnabledEv isDebugEnabled()
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 63, column 10>
-//   // proto:  bool QLoggingCategory::isWarningEnabled();
-if (true) {
-  auto f = [](QLoggingCategory flythis) {
-    ((QLoggingCategory*)0)->isWarningEnabled();
-    flythis.isWarningEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK16QLoggingCategory16isWarningEnabledEv isWarningEnabled()
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 62, column 10>
-//   // proto:  bool QLoggingCategory::isInfoEnabled();
-if (true) {
-  auto f = [](QLoggingCategory flythis) {
-    ((QLoggingCategory*)0)->isInfoEnabled();
-    flythis.isInfoEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK16QLoggingCategory13isInfoEnabledEv isInfoEnabled()
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 71, column 17>
-//   // proto:  const char * QLoggingCategory::categoryName();
-if (true) {
-  auto f = [](QLoggingCategory flythis) {
-    ((QLoggingCategory*)0)->categoryName();
-    flythis.categoryName();
-  };
-  if (f == nullptr){}
-}
-// _ZNK16QLoggingCategory12categoryNameEv categoryName()
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 64, column 10>
-//   // proto:  bool QLoggingCategory::isCriticalEnabled();
-if (true) {
-  auto f = [](QLoggingCategory flythis) {
-    ((QLoggingCategory*)0)->isCriticalEnabled();
-    flythis.isCriticalEnabled();
-  };
-  if (f == nullptr){}
-}
-// _ZNK16QLoggingCategory17isCriticalEnabledEv isCriticalEnabled()
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// /usr/include/qt/QtCore/qloggingcategory.h:53
+// void QLoggingCategory(const char *)
 extern "C"
-int QLoggingCategory_Class_Size()
-{
-  return sizeof(QLoggingCategory);
+void* C_ZN16QLoggingCategoryC1EPKc(const char * category) {
+  return new QLoggingCategory(category);
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 54, column 5>
-//   // proto:  void QLoggingCategory::QLoggingCategory(const char * category, QtMsgType severityLevel);
+// /usr/include/qt/QtCore/qloggingcategory.h:54
+// void QLoggingCategory(const char *, enum QtMsgType)
 extern "C"
-QLoggingCategory*
-C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * arg1,
-QtMsgType arg2) {
-  auto ret = new QLoggingCategory(arg1,
-arg2);
-  return ret;
+void* C_ZN16QLoggingCategoryC1EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
+  return new QLoggingCategory(category, severityLevel);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 61, column 10>
-//   // proto:  bool QLoggingCategory::isDebugEnabled();
-// _ZNK16QLoggingCategory14isDebugEnabledEv isDebugEnabled()
+// /usr/include/qt/QtCore/qloggingcategory.h:55
+// void ~QLoggingCategory()
 extern "C"
-bool
-C_ZNK16QLoggingCategory14isDebugEnabledEv(void *qthis) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->isDebugEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN16QLoggingCategoryD1Ev(void *this_) {
+  delete (QLoggingCategory*)(this_);
 }
-//   // proto:  void QLoggingCategory::~QLoggingCategory();
+// /usr/include/qt/QtCore/qloggingcategory.h:57
+// bool isEnabled(enum QtMsgType)
 extern "C"
-void C_ZN16QLoggingCategoryD2Ev(void *qthis) {
-  delete (QLoggingCategory*)qthis;
+void C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type) {
+  /*return*/ ((QLoggingCategory*)this_)->isEnabled(type);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 53, column 14>
-//   // proto:  void QLoggingCategory::QLoggingCategory(const char * category);
+// /usr/include/qt/QtCore/qloggingcategory.h:58
+// void setEnabled(enum QtMsgType, _Bool)
 extern "C"
-QLoggingCategory*
-C_ZN16QLoggingCategoryC2EPKc(const char * arg1) {
-  auto ret = new QLoggingCategory(arg1);
-  return ret;
+void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type, bool enable) {
+  ((QLoggingCategory*)this_)->setEnabled(type, enable);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 58, column 10>
-//   // proto:  void QLoggingCategory::setEnabled(QtMsgType type, bool enable);
-// _ZN16QLoggingCategory10setEnabledE9QtMsgTypeb setEnabled(enum QtMsgType, _Bool)
+// inline
+// /usr/include/qt/QtCore/qloggingcategory.h:61
+// bool isDebugEnabled()
 extern "C"
-void
-C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *qthis,
-QtMsgType arg1,
-bool arg2) {
-  ((QLoggingCategory*)qthis)->setEnabled(arg1,
-arg2);
+void C_ZNK16QLoggingCategory14isDebugEnabledEv(void *this_) {
+  /*return*/ ((QLoggingCategory*)this_)->isDebugEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 57, column 10>
-//   // proto:  bool QLoggingCategory::isEnabled(QtMsgType type);
-// _ZNK16QLoggingCategory9isEnabledE9QtMsgType isEnabled(enum QtMsgType)
+// inline
+// /usr/include/qt/QtCore/qloggingcategory.h:62
+// bool isInfoEnabled()
 extern "C"
-bool
-C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *qthis,
-QtMsgType arg1) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->isEnabled(arg1);
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK16QLoggingCategory13isInfoEnabledEv(void *this_) {
+  /*return*/ ((QLoggingCategory*)this_)->isInfoEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 80, column 27>
-//   // proto: static CategoryFilter QLoggingCategory::installFilter(CategoryFilter );
-// _ZN16QLoggingCategory13installFilterEPFvPS_E installFilter(CategoryFilter)
+// inline
+// /usr/include/qt/QtCore/qloggingcategory.h:63
+// bool isWarningEnabled()
 extern "C"
-void*
-C_ZN16QLoggingCategory13installFilterEPFvPS_E(QLoggingCategory::CategoryFilter arg1) {
-  auto ret =
-  QLoggingCategory::installFilter(arg1);
-  return (void*)ret;
+void C_ZNK16QLoggingCategory16isWarningEnabledEv(void *this_) {
+  /*return*/ ((QLoggingCategory*)this_)->isWarningEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 63, column 10>
-//   // proto:  bool QLoggingCategory::isWarningEnabled();
-// _ZNK16QLoggingCategory16isWarningEnabledEv isWarningEnabled()
+// inline
+// /usr/include/qt/QtCore/qloggingcategory.h:64
+// bool isCriticalEnabled()
 extern "C"
-bool
-C_ZNK16QLoggingCategory16isWarningEnabledEv(void *qthis) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->isWarningEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK16QLoggingCategory17isCriticalEnabledEv(void *this_) {
+  /*return*/ ((QLoggingCategory*)this_)->isCriticalEnabled();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 62, column 10>
-//   // proto:  bool QLoggingCategory::isInfoEnabled();
-// _ZNK16QLoggingCategory13isInfoEnabledEv isInfoEnabled()
+// inline
+// /usr/include/qt/QtCore/qloggingcategory.h:71
+// const char * categoryName()
 extern "C"
-bool
-C_ZNK16QLoggingCategory13isInfoEnabledEv(void *qthis) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->isInfoEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK16QLoggingCategory12categoryNameEv(void *this_) {
+  /*return*/ ((QLoggingCategory*)this_)->categoryName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 71, column 17>
-//   // proto:  const char * QLoggingCategory::categoryName();
-// _ZNK16QLoggingCategory12categoryNameEv categoryName()
+// static
+// /usr/include/qt/QtCore/qloggingcategory.h:77
+// QLoggingCategory * defaultCategory()
 extern "C"
-void*
-C_ZNK16QLoggingCategory12categoryNameEv(void *qthis) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->categoryName();
-  return (void*)ret;
+void C_ZN16QLoggingCategory15defaultCategoryEv() {
+  /*return*/ QLoggingCategory::defaultCategory();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 64, column 10>
-//   // proto:  bool QLoggingCategory::isCriticalEnabled();
-// _ZNK16QLoggingCategory17isCriticalEnabledEv isCriticalEnabled()
+// static
+// /usr/include/qt/QtCore/qloggingcategory.h:82
+// void setFilterRules(const class QString &)
 extern "C"
-bool
-C_ZNK16QLoggingCategory17isCriticalEnabledEv(void *qthis) {
-  auto ret =
-  ((QLoggingCategory*)qthis)->isCriticalEnabled();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN16QLoggingCategory14setFilterRulesERK7QString(const QString & rules) {
+  QLoggingCategory::setFilterRules(rules);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 77, column 30>
-//   // proto: static QLoggingCategory * QLoggingCategory::defaultCategory();
-// _ZN16QLoggingCategory15defaultCategoryEv defaultCategory()
-extern "C"
-void*
-C_ZN16QLoggingCategory15defaultCategoryEv() {
-  auto ret =
-  QLoggingCategory::defaultCategory();
-  return (void*)ret;
-}
-// <SourceLocation file '/usr/include/qt/QtCore/qloggingcategory.h', line 82, column 17>
-//   // proto: static void QLoggingCategory::setFilterRules(const QString & rules);
-// _ZN16QLoggingCategory14setFilterRulesERK7QString setFilterRules(const class QString &)
-extern "C"
-void
-C_ZN16QLoggingCategory14setFilterRulesERK7QString(const QString* arg1) {
-  QLoggingCategory::setFilterRules(*((const QString*)arg1));
-}
-// <= ext block end
-
-// body block begin =>
-// <= body block end
-

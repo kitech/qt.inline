@@ -1,583 +1,317 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtWidgets/qformlayout.h
-// dst-file: /src/widgets/qformlayout.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtWidgets/qformlayout.h
 #include <qformlayout.h>
+#include <QtWidgets>
 
-
-#include <qnamespace.h>
-#include <qsize.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qformlayout_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:52
+// const QMetaObject * metaObject()
 extern "C"
-int QFormLayout_Class_Size()
-{
-  return sizeof(QFormLayout);
+void C_ZNK11QFormLayout10metaObjectEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 93, column 19>
-//   // proto:  Qt::Alignment QFormLayout::formAlignment();
-// _ZNK11QFormLayout13formAlignmentEv formAlignment()
+// /usr/include/qt/QtWidgets/qformlayout.h:83
+// void QFormLayout(class QWidget *)
 extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK11QFormLayout13formAlignmentEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->formAlignment();
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
+void* C_ZN11QFormLayoutC1EP7QWidget(QWidget * parent) {
+  return new QFormLayout(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 140, column 22>
-//   // proto:  Qt::Orientations QFormLayout::expandingDirections();
-// _ZNK11QFormLayout19expandingDirectionsEv expandingDirections()
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:84
+// void ~QFormLayout()
 extern "C"
-QFlags<Qt::Orientation>*
-C_ZNK11QFormLayout19expandingDirectionsEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->expandingDirections();
-  return new QFlags<Qt::Orientation>(ret); // 5
+void C_ZN11QFormLayoutD1Ev(void *this_) {
+  delete (QFormLayout*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 96, column 9>
-//   // proto:  int QFormLayout::horizontalSpacing();
-// _ZNK11QFormLayout17horizontalSpacingEv horizontalSpacing()
+// /usr/include/qt/QtWidgets/qformlayout.h:86
+// void setFieldGrowthPolicy(enum QFormLayout::FieldGrowthPolicy)
 extern "C"
-int
-C_ZNK11QFormLayout17horizontalSpacingEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->horizontalSpacing();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QFormLayout20setFieldGrowthPolicyENS_17FieldGrowthPolicyE(void *this_, QFormLayout::FieldGrowthPolicy policy) {
+  ((QFormLayout*)this_)->setFieldGrowthPolicy(policy);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 122, column 10>
-//   // proto:  void QFormLayout::getItemPosition(int index, int * rowPtr, QFormLayout::ItemRole * rolePtr);
-// _ZNK11QFormLayout15getItemPositionEiPiPNS_8ItemRoleE getItemPosition(int, int *, enum QFormLayout::ItemRole *)
+// /usr/include/qt/QtWidgets/qformlayout.h:87
+// QFormLayout::FieldGrowthPolicy fieldGrowthPolicy()
 extern "C"
-void
-C_ZNK11QFormLayout15getItemPositionEiPiPNS_8ItemRoleE(void *qthis,
-int arg1,
-int * arg2,
-QFormLayout::ItemRole * arg3) {
-  ((QFormLayout*)qthis)->getItemPosition(arg1,
-arg2,
-arg3);
+void C_ZNK11QFormLayout17fieldGrowthPolicyEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->fieldGrowthPolicy();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 117, column 10>
-//   // proto:  void QFormLayout::setItem(int row, QFormLayout::ItemRole role, QLayoutItem * item);
-// _ZN11QFormLayout7setItemEiNS_8ItemRoleEP11QLayoutItem setItem(int, enum QFormLayout::ItemRole, class QLayoutItem *)
+// /usr/include/qt/QtWidgets/qformlayout.h:88
+// void setRowWrapPolicy(enum QFormLayout::RowWrapPolicy)
 extern "C"
-void
-C_ZN11QFormLayout7setItemEiNS_8ItemRoleEP11QLayoutItem(void *qthis,
-int arg1,
-QFormLayout::ItemRole arg2,
-QLayoutItem * arg3) {
-  ((QFormLayout*)qthis)->setItem(arg1,
-arg2,
-arg3);
+void C_ZN11QFormLayout16setRowWrapPolicyENS_13RowWrapPolicyE(void *this_, QFormLayout::RowWrapPolicy policy) {
+  ((QFormLayout*)this_)->setRowWrapPolicy(policy);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 92, column 10>
-//   // proto:  void QFormLayout::setFormAlignment(Qt::Alignment alignment);
-// _ZN11QFormLayout16setFormAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setFormAlignment(Qt::Alignment)
+// /usr/include/qt/QtWidgets/qformlayout.h:89
+// QFormLayout::RowWrapPolicy rowWrapPolicy()
 extern "C"
-void
-C_ZN11QFormLayout16setFormAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-Qt::Alignment* arg1) {
-  ((QFormLayout*)qthis)->setFormAlignment(*((Qt::Alignment*)arg1));
+void C_ZNK11QFormLayout13rowWrapPolicyEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->rowWrapPolicy();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 143, column 9>
-//   // proto:  int QFormLayout::rowCount();
-// _ZNK11QFormLayout8rowCountEv rowCount()
+// /usr/include/qt/QtWidgets/qformlayout.h:90
+// void setLabelAlignment(Qt::Alignment)
 extern "C"
-int
-C_ZNK11QFormLayout8rowCountEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->rowCount();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QFormLayout17setLabelAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QFormLayout*)this_)->setLabelAlignment(alignment);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 126, column 14>
-//   // proto:  QWidget * QFormLayout::labelForField(QLayout * field);
-// _ZNK11QFormLayout13labelForFieldEP7QLayout labelForField(class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:91
+// Qt::Alignment labelAlignment()
 extern "C"
-void*
-C_ZNK11QFormLayout13labelForFieldEP7QLayout(void *qthis,
-QLayout * arg1) {
-  auto ret =
-  ((QFormLayout*)qthis)->labelForField(arg1);
-  return (void*)ret;
+void C_ZNK11QFormLayout14labelAlignmentEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->labelAlignment();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 106, column 10>
-//   // proto:  void QFormLayout::addRow(const QString & labelText, QLayout * field);
-// _ZN11QFormLayout6addRowERK7QStringP7QLayout addRow(const class QString &, class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:92
+// void setFormAlignment(Qt::Alignment)
 extern "C"
-void
-C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *qthis,
-const QString* arg1,
-QLayout * arg2) {
-  ((QFormLayout*)qthis)->addRow(*((const QString*)arg1),
-arg2);
+void C_ZN11QFormLayout16setFormAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QFormLayout*)this_)->setFormAlignment(alignment);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 91, column 19>
-//   // proto:  Qt::Alignment QFormLayout::labelAlignment();
-// _ZNK11QFormLayout14labelAlignmentEv labelAlignment()
+// /usr/include/qt/QtWidgets/qformlayout.h:93
+// Qt::Alignment formAlignment()
 extern "C"
-QFlags<Qt::AlignmentFlag>*
-C_ZNK11QFormLayout14labelAlignmentEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->labelAlignment();
-  return new QFlags<Qt::AlignmentFlag>(ret); // 5
+void C_ZNK11QFormLayout13formAlignmentEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->formAlignment();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 119, column 10>
-//   // proto:  void QFormLayout::setLayout(int row, QFormLayout::ItemRole role, QLayout * layout);
-// _ZN11QFormLayout9setLayoutEiNS_8ItemRoleEP7QLayout setLayout(int, enum QFormLayout::ItemRole, class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:95
+// void setHorizontalSpacing(int)
 extern "C"
-void
-C_ZN11QFormLayout9setLayoutEiNS_8ItemRoleEP7QLayout(void *qthis,
-int arg1,
-QFormLayout::ItemRole arg2,
-QLayout * arg3) {
-  ((QFormLayout*)qthis)->setLayout(arg1,
-arg2,
-arg3);
+void C_ZN11QFormLayout20setHorizontalSpacingEi(void *this_, int spacing) {
+  ((QFormLayout*)this_)->setHorizontalSpacing(spacing);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 113, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, const QString & labelText, QLayout * field);
-// _ZN11QFormLayout9insertRowEiRK7QStringP7QLayout insertRow(int, const class QString &, class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:96
+// int horizontalSpacing()
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *qthis,
-int arg1,
-const QString* arg2,
-QLayout * arg3) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-*((const QString*)arg2),
-arg3);
+void C_ZNK11QFormLayout17horizontalSpacingEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->horizontalSpacing();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 125, column 14>
-//   // proto:  QWidget * QFormLayout::labelForField(QWidget * field);
-// _ZNK11QFormLayout13labelForFieldEP7QWidget labelForField(class QWidget *)
+// /usr/include/qt/QtWidgets/qformlayout.h:97
+// void setVerticalSpacing(int)
 extern "C"
-void*
-C_ZNK11QFormLayout13labelForFieldEP7QWidget(void *qthis,
-QWidget * arg1) {
-  auto ret =
-  ((QFormLayout*)qthis)->labelForField(arg1);
-  return (void*)ret;
+void C_ZN11QFormLayout18setVerticalSpacingEi(void *this_, int spacing) {
+  ((QFormLayout*)this_)->setVerticalSpacing(spacing);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 111, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, QWidget * label, QLayout * field);
-// _ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout insertRow(int, class QWidget *, class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:98
+// int verticalSpacing()
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout(void *qthis,
-int arg1,
-QWidget * arg2,
-QLayout * arg3) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-arg2,
-arg3);
+void C_ZNK11QFormLayout15verticalSpacingEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->verticalSpacing();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 124, column 10>
-//   // proto:  void QFormLayout::getLayoutPosition(QLayout * layout, int * rowPtr, QFormLayout::ItemRole * rolePtr);
-// _ZNK11QFormLayout17getLayoutPositionEP7QLayoutPiPNS_8ItemRoleE getLayoutPosition(class QLayout *, int *, enum QFormLayout::ItemRole *)
+// /usr/include/qt/QtWidgets/qformlayout.h:100
+// int spacing()
 extern "C"
-void
-C_ZNK11QFormLayout17getLayoutPositionEP7QLayoutPiPNS_8ItemRoleE(void *qthis,
-QLayout * arg1,
-int * arg2,
-QFormLayout::ItemRole * arg3) {
-  ((QFormLayout*)qthis)->getLayoutPosition(arg1,
-arg2,
-arg3);
+void C_ZNK11QFormLayout7spacingEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->spacing();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 141, column 9>
-//   // proto:  int QFormLayout::count();
-// _ZNK11QFormLayout5countEv count()
+// /usr/include/qt/QtWidgets/qformlayout.h:101
+// void setSpacing(int)
 extern "C"
-int
-C_ZNK11QFormLayout5countEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->count();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QFormLayout10setSpacingEi(void *this_, int a0) {
+  ((QFormLayout*)this_)->setSpacing(a0);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 100, column 9>
-//   // proto:  int QFormLayout::spacing();
-// _ZNK11QFormLayout7spacingEv spacing()
+// /usr/include/qt/QtWidgets/qformlayout.h:103
+// void addRow(class QWidget *, class QWidget *)
 extern "C"
-int
-C_ZNK11QFormLayout7spacingEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->spacing();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QFormLayout6addRowEP7QWidgetS1_(void *this_, QWidget * label, QWidget * field) {
+  ((QFormLayout*)this_)->addRow(label, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 87, column 23>
-//   // proto:  QFormLayout::FieldGrowthPolicy QFormLayout::fieldGrowthPolicy();
-// _ZNK11QFormLayout17fieldGrowthPolicyEv fieldGrowthPolicy()
+// /usr/include/qt/QtWidgets/qformlayout.h:104
+// void addRow(class QWidget *, class QLayout *)
 extern "C"
-QFormLayout::FieldGrowthPolicy
-C_ZNK11QFormLayout17fieldGrowthPolicyEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->fieldGrowthPolicy();
-  return ret; // 0 TypeKind.ENUM
+void C_ZN11QFormLayout6addRowEP7QWidgetP7QLayout(void *this_, QWidget * label, QLayout * field) {
+  ((QFormLayout*)this_)->addRow(label, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 83, column 14>
-//   // proto:  void QFormLayout::QFormLayout(QWidget * parent);
+// /usr/include/qt/QtWidgets/qformlayout.h:105
+// void addRow(const class QString &, class QWidget *)
 extern "C"
-QFormLayout*
-C_ZN11QFormLayoutC2EP7QWidget(QWidget * arg1) {
-  auto ret = new QFormLayout(arg1);
-  return ret;
+void C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *this_, const QString & labelText, QWidget * field) {
+  ((QFormLayout*)this_)->addRow(labelText, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 90, column 10>
-//   // proto:  void QFormLayout::setLabelAlignment(Qt::Alignment alignment);
-// _ZN11QFormLayout17setLabelAlignmentE6QFlagsIN2Qt13AlignmentFlagEE setLabelAlignment(Qt::Alignment)
+// /usr/include/qt/QtWidgets/qformlayout.h:106
+// void addRow(const class QString &, class QLayout *)
 extern "C"
-void
-C_ZN11QFormLayout17setLabelAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *qthis,
-Qt::Alignment* arg1) {
-  ((QFormLayout*)qthis)->setLabelAlignment(*((Qt::Alignment*)arg1));
+void C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *this_, const QString & labelText, QLayout * field) {
+  ((QFormLayout*)this_)->addRow(labelText, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 115, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, QLayout * layout);
-// _ZN11QFormLayout9insertRowEiP7QLayout insertRow(int, class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:107
+// void addRow(class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiP7QLayout(void *qthis,
-int arg1,
-QLayout * arg2) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-arg2);
+void C_ZN11QFormLayout6addRowEP7QWidget(void *this_, QWidget * widget) {
+  ((QFormLayout*)this_)->addRow(widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 133, column 10>
-//   // proto:  void QFormLayout::setGeometry(const QRect & rect);
-// _ZN11QFormLayout11setGeometryERK5QRect setGeometry(const class QRect &)
+// /usr/include/qt/QtWidgets/qformlayout.h:108
+// void addRow(class QLayout *)
 extern "C"
-void
-C_ZN11QFormLayout11setGeometryERK5QRect(void *qthis,
-const QRect* arg1) {
-  ((QFormLayout*)qthis)->setGeometry(*((const QRect*)arg1));
+void C_ZN11QFormLayout6addRowEP7QLayout(void *this_, QLayout * layout) {
+  ((QFormLayout*)this_)->addRow(layout);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 97, column 10>
-//   // proto:  void QFormLayout::setVerticalSpacing(int spacing);
-// _ZN11QFormLayout18setVerticalSpacingEi setVerticalSpacing(int)
+// /usr/include/qt/QtWidgets/qformlayout.h:110
+// void insertRow(int, class QWidget *, class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout18setVerticalSpacingEi(void *qthis,
-int arg1) {
-  ((QFormLayout*)qthis)->setVerticalSpacing(arg1);
+void C_ZN11QFormLayout9insertRowEiP7QWidgetS1_(void *this_, int row, QWidget * label, QWidget * field) {
+  ((QFormLayout*)this_)->insertRow(row, label, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 95, column 10>
-//   // proto:  void QFormLayout::setHorizontalSpacing(int spacing);
-// _ZN11QFormLayout20setHorizontalSpacingEi setHorizontalSpacing(int)
+// /usr/include/qt/QtWidgets/qformlayout.h:111
+// void insertRow(int, class QWidget *, class QLayout *)
 extern "C"
-void
-C_ZN11QFormLayout20setHorizontalSpacingEi(void *qthis,
-int arg1) {
-  ((QFormLayout*)qthis)->setHorizontalSpacing(arg1);
+void C_ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout(void *this_, int row, QWidget * label, QLayout * field) {
+  ((QFormLayout*)this_)->insertRow(row, label, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 112, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, const QString & labelText, QWidget * field);
-// _ZN11QFormLayout9insertRowEiRK7QStringP7QWidget insertRow(int, const class QString &, class QWidget *)
+// /usr/include/qt/QtWidgets/qformlayout.h:112
+// void insertRow(int, const class QString &, class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *qthis,
-int arg1,
-const QString* arg2,
-QWidget * arg3) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-*((const QString*)arg2),
-arg3);
+void C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *this_, int row, const QString & labelText, QWidget * field) {
+  ((QFormLayout*)this_)->insertRow(row, labelText, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 52, column 5>
-//   // proto:  const QMetaObject * QFormLayout::metaObject();
-// _ZNK11QFormLayout10metaObjectEv metaObject()
+// /usr/include/qt/QtWidgets/qformlayout.h:113
+// void insertRow(int, const class QString &, class QLayout *)
 extern "C"
-void*
-C_ZNK11QFormLayout10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *this_, int row, const QString & labelText, QLayout * field) {
+  ((QFormLayout*)this_)->insertRow(row, labelText, field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 110, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, QWidget * label, QWidget * field);
-// _ZN11QFormLayout9insertRowEiP7QWidgetS1_ insertRow(int, class QWidget *, class QWidget *)
+// /usr/include/qt/QtWidgets/qformlayout.h:114
+// void insertRow(int, class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiP7QWidgetS1_(void *qthis,
-int arg1,
-QWidget * arg2,
-QWidget * arg3) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-arg2,
-arg3);
+void C_ZN11QFormLayout9insertRowEiP7QWidget(void *this_, int row, QWidget * widget) {
+  ((QFormLayout*)this_)->insertRow(row, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 101, column 10>
-//   // proto:  void QFormLayout::setSpacing(int );
-// _ZN11QFormLayout10setSpacingEi setSpacing(int)
+// /usr/include/qt/QtWidgets/qformlayout.h:115
+// void insertRow(int, class QLayout *)
 extern "C"
-void
-C_ZN11QFormLayout10setSpacingEi(void *qthis,
-int arg1) {
-  ((QFormLayout*)qthis)->setSpacing(arg1);
+void C_ZN11QFormLayout9insertRowEiP7QLayout(void *this_, int row, QLayout * layout) {
+  ((QFormLayout*)this_)->insertRow(row, layout);
 }
-//   // proto:  void QFormLayout::~QFormLayout();
+// /usr/include/qt/QtWidgets/qformlayout.h:117
+// void setItem(int, enum QFormLayout::ItemRole, class QLayoutItem *)
 extern "C"
-void C_ZN11QFormLayoutD2Ev(void *qthis) {
-  delete (QFormLayout*)qthis;
+void C_ZN11QFormLayout7setItemEiNS_8ItemRoleEP11QLayoutItem(void *this_, int row, QFormLayout::ItemRole role, QLayoutItem * item) {
+  ((QFormLayout*)this_)->setItem(row, role, item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 108, column 10>
-//   // proto:  void QFormLayout::addRow(QLayout * layout);
-// _ZN11QFormLayout6addRowEP7QLayout addRow(class QLayout *)
+// /usr/include/qt/QtWidgets/qformlayout.h:118
+// void setWidget(int, enum QFormLayout::ItemRole, class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout6addRowEP7QLayout(void *qthis,
-QLayout * arg1) {
-  ((QFormLayout*)qthis)->addRow(arg1);
+void C_ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget(void *this_, int row, QFormLayout::ItemRole role, QWidget * widget) {
+  ((QFormLayout*)this_)->setWidget(row, role, widget);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 135, column 11>
-//   // proto:  QSize QFormLayout::sizeHint();
-// _ZNK11QFormLayout8sizeHintEv sizeHint()
+// /usr/include/qt/QtWidgets/qformlayout.h:119
+// void setLayout(int, enum QFormLayout::ItemRole, class QLayout *)
 extern "C"
-QSize*
-C_ZNK11QFormLayout8sizeHintEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->sizeHint();
-  return new QSize(ret); // 5
+void C_ZN11QFormLayout9setLayoutEiNS_8ItemRoleEP7QLayout(void *this_, int row, QFormLayout::ItemRole role, QLayout * layout) {
+  ((QFormLayout*)this_)->setLayout(row, role, layout);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 136, column 10>
-//   // proto:  void QFormLayout::invalidate();
-// _ZN11QFormLayout10invalidateEv invalidate()
+// /usr/include/qt/QtWidgets/qformlayout.h:121
+// QLayoutItem * itemAt(int, enum QFormLayout::ItemRole)
 extern "C"
-void
-C_ZN11QFormLayout10invalidateEv(void *qthis) {
-  ((QFormLayout*)qthis)->invalidate();
+void C_ZNK11QFormLayout6itemAtEiNS_8ItemRoleE(void *this_, int row, QFormLayout::ItemRole role) {
+  /*return*/ ((QFormLayout*)this_)->itemAt(row, role);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 118, column 10>
-//   // proto:  void QFormLayout::setWidget(int row, QFormLayout::ItemRole role, QWidget * widget);
-// _ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget setWidget(int, enum QFormLayout::ItemRole, class QWidget *)
+// /usr/include/qt/QtWidgets/qformlayout.h:122
+// void getItemPosition(int, int *, enum QFormLayout::ItemRole *)
 extern "C"
-void
-C_ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget(void *qthis,
-int arg1,
-QFormLayout::ItemRole arg2,
-QWidget * arg3) {
-  ((QFormLayout*)qthis)->setWidget(arg1,
-arg2,
-arg3);
+void C_ZNK11QFormLayout15getItemPositionEiPiPNS_8ItemRoleE(void *this_, int index, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
+  ((QFormLayout*)this_)->getItemPosition(index, rowPtr, rolePtr);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 123, column 10>
-//   // proto:  void QFormLayout::getWidgetPosition(QWidget * widget, int * rowPtr, QFormLayout::ItemRole * rolePtr);
-// _ZNK11QFormLayout17getWidgetPositionEP7QWidgetPiPNS_8ItemRoleE getWidgetPosition(class QWidget *, int *, enum QFormLayout::ItemRole *)
+// /usr/include/qt/QtWidgets/qformlayout.h:123
+// void getWidgetPosition(class QWidget *, int *, enum QFormLayout::ItemRole *)
 extern "C"
-void
-C_ZNK11QFormLayout17getWidgetPositionEP7QWidgetPiPNS_8ItemRoleE(void *qthis,
-QWidget * arg1,
-int * arg2,
-QFormLayout::ItemRole * arg3) {
-  ((QFormLayout*)qthis)->getWidgetPosition(arg1,
-arg2,
-arg3);
+void C_ZNK11QFormLayout17getWidgetPositionEP7QWidgetPiPNS_8ItemRoleE(void *this_, QWidget * widget, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
+  ((QFormLayout*)this_)->getWidgetPosition(widget, rowPtr, rolePtr);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 121, column 18>
-//   // proto:  QLayoutItem * QFormLayout::itemAt(int row, QFormLayout::ItemRole role);
-// _ZNK11QFormLayout6itemAtEiNS_8ItemRoleE itemAt(int, enum QFormLayout::ItemRole)
+// /usr/include/qt/QtWidgets/qformlayout.h:124
+// void getLayoutPosition(class QLayout *, int *, enum QFormLayout::ItemRole *)
 extern "C"
-void*
-C_ZNK11QFormLayout6itemAtEiNS_8ItemRoleE(void *qthis,
-int arg1,
-QFormLayout::ItemRole arg2) {
-  auto ret =
-  ((QFormLayout*)qthis)->itemAt(arg1,
-arg2);
-  return (void*)ret;
+void C_ZNK11QFormLayout17getLayoutPositionEP7QLayoutPiPNS_8ItemRoleE(void *this_, QLayout * layout, int * rowPtr, QFormLayout::ItemRole * rolePtr) {
+  ((QFormLayout*)this_)->getLayoutPosition(layout, rowPtr, rolePtr);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 88, column 10>
-//   // proto:  void QFormLayout::setRowWrapPolicy(QFormLayout::RowWrapPolicy policy);
-// _ZN11QFormLayout16setRowWrapPolicyENS_13RowWrapPolicyE setRowWrapPolicy(enum QFormLayout::RowWrapPolicy)
+// /usr/include/qt/QtWidgets/qformlayout.h:125
+// QWidget * labelForField(class QWidget *)
 extern "C"
-void
-C_ZN11QFormLayout16setRowWrapPolicyENS_13RowWrapPolicyE(void *qthis,
-QFormLayout::RowWrapPolicy arg1) {
-  ((QFormLayout*)qthis)->setRowWrapPolicy(arg1);
+void C_ZNK11QFormLayout13labelForFieldEP7QWidget(void *this_, QWidget * field) {
+  /*return*/ ((QFormLayout*)this_)->labelForField(field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 130, column 18>
-//   // proto:  QLayoutItem * QFormLayout::itemAt(int index);
-// _ZNK11QFormLayout6itemAtEi itemAt(int)
+// /usr/include/qt/QtWidgets/qformlayout.h:126
+// QWidget * labelForField(class QLayout *)
 extern "C"
-void*
-C_ZNK11QFormLayout6itemAtEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QFormLayout*)qthis)->itemAt(arg1);
-  return (void*)ret;
+void C_ZNK11QFormLayout13labelForFieldEP7QLayout(void *this_, QLayout * field) {
+  /*return*/ ((QFormLayout*)this_)->labelForField(field);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 131, column 18>
-//   // proto:  QLayoutItem * QFormLayout::takeAt(int index);
-// _ZN11QFormLayout6takeAtEi takeAt(int)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:129
+// void addItem(class QLayoutItem *)
 extern "C"
-void*
-C_ZN11QFormLayout6takeAtEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QFormLayout*)qthis)->takeAt(arg1);
-  return (void*)ret;
+void C_ZN11QFormLayout7addItemEP11QLayoutItem(void *this_, QLayoutItem * item) {
+  ((QFormLayout*)this_)->addItem(item);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 86, column 10>
-//   // proto:  void QFormLayout::setFieldGrowthPolicy(QFormLayout::FieldGrowthPolicy policy);
-// _ZN11QFormLayout20setFieldGrowthPolicyENS_17FieldGrowthPolicyE setFieldGrowthPolicy(enum QFormLayout::FieldGrowthPolicy)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:130
+// QLayoutItem * itemAt(int)
 extern "C"
-void
-C_ZN11QFormLayout20setFieldGrowthPolicyENS_17FieldGrowthPolicyE(void *qthis,
-QFormLayout::FieldGrowthPolicy arg1) {
-  ((QFormLayout*)qthis)->setFieldGrowthPolicy(arg1);
+void C_ZNK11QFormLayout6itemAtEi(void *this_, int index) {
+  /*return*/ ((QFormLayout*)this_)->itemAt(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 105, column 10>
-//   // proto:  void QFormLayout::addRow(const QString & labelText, QWidget * field);
-// _ZN11QFormLayout6addRowERK7QStringP7QWidget addRow(const class QString &, class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:131
+// QLayoutItem * takeAt(int)
 extern "C"
-void
-C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *qthis,
-const QString* arg1,
-QWidget * arg2) {
-  ((QFormLayout*)qthis)->addRow(*((const QString*)arg1),
-arg2);
+void C_ZN11QFormLayout6takeAtEi(void *this_, int index) {
+  /*return*/ ((QFormLayout*)this_)->takeAt(index);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 134, column 11>
-//   // proto:  QSize QFormLayout::minimumSize();
-// _ZNK11QFormLayout11minimumSizeEv minimumSize()
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:133
+// void setGeometry(const class QRect &)
 extern "C"
-QSize*
-C_ZNK11QFormLayout11minimumSizeEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->minimumSize();
-  return new QSize(ret); // 5
+void C_ZN11QFormLayout11setGeometryERK5QRect(void *this_, const QRect & rect) {
+  ((QFormLayout*)this_)->setGeometry(rect);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 107, column 10>
-//   // proto:  void QFormLayout::addRow(QWidget * widget);
-// _ZN11QFormLayout6addRowEP7QWidget addRow(class QWidget *)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:134
+// QSize minimumSize()
 extern "C"
-void
-C_ZN11QFormLayout6addRowEP7QWidget(void *qthis,
-QWidget * arg1) {
-  ((QFormLayout*)qthis)->addRow(arg1);
+void C_ZNK11QFormLayout11minimumSizeEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->minimumSize();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 104, column 10>
-//   // proto:  void QFormLayout::addRow(QWidget * label, QLayout * field);
-// _ZN11QFormLayout6addRowEP7QWidgetP7QLayout addRow(class QWidget *, class QLayout *)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:135
+// QSize sizeHint()
 extern "C"
-void
-C_ZN11QFormLayout6addRowEP7QWidgetP7QLayout(void *qthis,
-QWidget * arg1,
-QLayout * arg2) {
-  ((QFormLayout*)qthis)->addRow(arg1,
-arg2);
+void C_ZNK11QFormLayout8sizeHintEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->sizeHint();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 98, column 9>
-//   // proto:  int QFormLayout::verticalSpacing();
-// _ZNK11QFormLayout15verticalSpacingEv verticalSpacing()
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:136
+// void invalidate()
 extern "C"
-int
-C_ZNK11QFormLayout15verticalSpacingEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->verticalSpacing();
-  return ret; // 0 TypeKind.INT
+void C_ZN11QFormLayout10invalidateEv(void *this_) {
+  ((QFormLayout*)this_)->invalidate();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 89, column 19>
-//   // proto:  QFormLayout::RowWrapPolicy QFormLayout::rowWrapPolicy();
-// _ZNK11QFormLayout13rowWrapPolicyEv rowWrapPolicy()
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:138
+// bool hasHeightForWidth()
 extern "C"
-QFormLayout::RowWrapPolicy
-C_ZNK11QFormLayout13rowWrapPolicyEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->rowWrapPolicy();
-  return ret; // 0 TypeKind.ENUM
+void C_ZNK11QFormLayout17hasHeightForWidthEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->hasHeightForWidth();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 139, column 9>
-//   // proto:  int QFormLayout::heightForWidth(int width);
-// _ZNK11QFormLayout14heightForWidthEi heightForWidth(int)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:139
+// int heightForWidth(int)
 extern "C"
-int
-C_ZNK11QFormLayout14heightForWidthEi(void *qthis,
-int arg1) {
-  auto ret =
-  ((QFormLayout*)qthis)->heightForWidth(arg1);
-  return ret; // 0 TypeKind.INT
+void C_ZNK11QFormLayout14heightForWidthEi(void *this_, int width) {
+  /*return*/ ((QFormLayout*)this_)->heightForWidth(width);
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 129, column 10>
-//   // proto:  void QFormLayout::addItem(QLayoutItem * item);
-// _ZN11QFormLayout7addItemEP11QLayoutItem addItem(class QLayoutItem *)
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:140
+// Qt::Orientations expandingDirections()
 extern "C"
-void
-C_ZN11QFormLayout7addItemEP11QLayoutItem(void *qthis,
-QLayoutItem * arg1) {
-  ((QFormLayout*)qthis)->addItem(arg1);
+void C_ZNK11QFormLayout19expandingDirectionsEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->expandingDirections();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 138, column 10>
-//   // proto:  bool QFormLayout::hasHeightForWidth();
-// _ZNK11QFormLayout17hasHeightForWidthEv hasHeightForWidth()
+// virtual
+// /usr/include/qt/QtWidgets/qformlayout.h:141
+// int count()
 extern "C"
-bool
-C_ZNK11QFormLayout17hasHeightForWidthEv(void *qthis) {
-  auto ret =
-  ((QFormLayout*)qthis)->hasHeightForWidth();
-  return ret; // 0 TypeKind.BOOL
+void C_ZNK11QFormLayout5countEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->count();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 114, column 10>
-//   // proto:  void QFormLayout::insertRow(int row, QWidget * widget);
-// _ZN11QFormLayout9insertRowEiP7QWidget insertRow(int, class QWidget *)
+// /usr/include/qt/QtWidgets/qformlayout.h:143
+// int rowCount()
 extern "C"
-void
-C_ZN11QFormLayout9insertRowEiP7QWidget(void *qthis,
-int arg1,
-QWidget * arg2) {
-  ((QFormLayout*)qthis)->insertRow(arg1,
-arg2);
+void C_ZNK11QFormLayout8rowCountEv(void *this_) {
+  /*return*/ ((QFormLayout*)this_)->rowCount();
 }
-// <SourceLocation file '/usr/include/qt/QtWidgets/qformlayout.h', line 103, column 10>
-//   // proto:  void QFormLayout::addRow(QWidget * label, QWidget * field);
-// _ZN11QFormLayout6addRowEP7QWidgetS1_ addRow(class QWidget *, class QWidget *)
-extern "C"
-void
-C_ZN11QFormLayout6addRowEP7QWidgetS1_(void *qthis,
-QWidget * arg1,
-QWidget * arg2) {
-  ((QFormLayout*)qthis)->addRow(arg1,
-arg2);
-}
-// <= ext block end
-
-// body block begin =>
-// QFormLayout_SlotProxy here
-class QFormLayout_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QFormLayout_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/widgets/qformlayout.moc"
-
-extern "C" {
-  QFormLayout_SlotProxy* QFormLayout_SlotProxy_new()
-  {
-    return new QFormLayout_SlotProxy();
-  }
-};
-
-// <= body block end
-

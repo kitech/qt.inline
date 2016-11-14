@@ -1,214 +1,104 @@
-// auto generated, do not modify.
-// created: Sun Aug  7 10:37:43 2016
-// src-file: /QtCore/qpluginloader.h
-// dst-file: /src/core/qpluginloader.cxx
-//
-
-// header block begin =>
-#include <qatomic.h>
-#include <qstring.h>
-#include <qfuture.h>
-#include <qpoint.h>
-#include <qurl.h>
-#include <qopengl.h>
+// /usr/include/qt/QtCore/qpluginloader.h
 #include <qpluginloader.h>
+#include <QtCore>
 
-
-#include <qvector.h>
-#include <qdatastream.h>
-#include <qobject.h>
-#include <qjsonobject.h>
-#include <qstring.h>
-#include <qlibrary.h>
-// <= header block end
-
-// main block begin =>
-void __keep_qpluginloader_inline_symbols() {
-} // <= main block end
-
-// <= main block end
-
-// use block begin =>
+// virtual
+// /usr/include/qt/QtCore/qpluginloader.h:55
+// const QMetaObject * metaObject()
 extern "C"
-int QPluginLoader_Class_Size()
-{
-  return sizeof(QPluginLoader);
+void C_ZNK13QPluginLoader10metaObjectEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->metaObject();
 }
-
-// <= use block end
-
-// ext block begin =>
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 71, column 10>
-//   // proto:  bool QPluginLoader::isLoaded();
-// _ZNK13QPluginLoader8isLoadedEv isLoaded()
+// /usr/include/qt/QtCore/qpluginloader.h:59
+// void QPluginLoader(class QObject *)
 extern "C"
-bool
-C_ZNK13QPluginLoader8isLoadedEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->isLoaded();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN13QPluginLoaderC1EP7QObject(QObject * parent) {
+  return new QPluginLoader(parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 70, column 10>
-//   // proto:  bool QPluginLoader::unload();
-// _ZN13QPluginLoader6unloadEv unload()
+// /usr/include/qt/QtCore/qpluginloader.h:60
+// void QPluginLoader(const class QString &, class QObject *)
 extern "C"
-bool
-C_ZN13QPluginLoader6unloadEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->unload();
-  return ret; // 0 TypeKind.BOOL
+void* C_ZN13QPluginLoaderC1ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
+  return new QPluginLoader(fileName, parent);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 60, column 14>
-//   // proto:  void QPluginLoader::QPluginLoader(const QString & fileName, QObject * parent);
+// virtual
+// /usr/include/qt/QtCore/qpluginloader.h:61
+// void ~QPluginLoader()
 extern "C"
-QPluginLoader*
-C_ZN13QPluginLoaderC2ERK7QStringP7QObject(const QString* arg1,
-QObject * arg2) {
-  auto ret = new QPluginLoader(*((const QString*)arg1),
-arg2);
-  return ret;
+void C_ZN13QPluginLoaderD1Ev(void *this_) {
+  delete (QPluginLoader*)(this_);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 69, column 10>
-//   // proto:  bool QPluginLoader::load();
-// _ZN13QPluginLoader4loadEv load()
+// /usr/include/qt/QtCore/qpluginloader.h:63
+// QObject * instance()
 extern "C"
-bool
-C_ZN13QPluginLoader4loadEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->load();
-  return ret; // 0 TypeKind.BOOL
+void C_ZN13QPluginLoader8instanceEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->instance();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 55, column 5>
-//   // proto:  const QMetaObject * QPluginLoader::metaObject();
-// _ZNK13QPluginLoader10metaObjectEv metaObject()
+// /usr/include/qt/QtCore/qpluginloader.h:64
+// QJsonObject metaData()
 extern "C"
-void*
-C_ZNK13QPluginLoader10metaObjectEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->metaObject();
-  return (void*)ret;
+void C_ZNK13QPluginLoader8metaDataEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->metaData();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 63, column 14>
-//   // proto:  QObject * QPluginLoader::instance();
-// _ZN13QPluginLoader8instanceEv instance()
+// static
+// /usr/include/qt/QtCore/qpluginloader.h:66
+// QObjectList staticInstances()
 extern "C"
-void*
-C_ZN13QPluginLoader8instanceEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->instance();
-  return (void*)ret;
+void C_ZN13QPluginLoader15staticInstancesEv() {
+  /*return*/ QPluginLoader::staticInstances();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 67, column 35>
-//   // proto: static QVector<QStaticPlugin> QPluginLoader::staticPlugins();
-// _ZN13QPluginLoader13staticPluginsEv staticPlugins()
+// static
+// /usr/include/qt/QtCore/qpluginloader.h:67
+// QVector<QStaticPlugin> staticPlugins()
 extern "C"
-QVector<QStaticPlugin>*
-C_ZN13QPluginLoader13staticPluginsEv() {
-  auto ret =
-  QPluginLoader::staticPlugins();
-  return new QVector<QStaticPlugin>(ret); // 5
+void C_ZN13QPluginLoader13staticPluginsEv() {
+  /*return*/ QPluginLoader::staticPlugins();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 66, column 24>
-//   // proto: static QObjectList QPluginLoader::staticInstances();
-// _ZN13QPluginLoader15staticInstancesEv staticInstances()
+// /usr/include/qt/QtCore/qpluginloader.h:69
+// bool load()
 extern "C"
-QList<QObject *>*
-C_ZN13QPluginLoader15staticInstancesEv() {
-  auto ret =
-  QPluginLoader::staticInstances();
-  return new QList<QObject *>(ret); // 5
+void C_ZN13QPluginLoader4loadEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->load();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 64, column 17>
-//   // proto:  QJsonObject QPluginLoader::metaData();
-// _ZNK13QPluginLoader8metaDataEv metaData()
+// /usr/include/qt/QtCore/qpluginloader.h:70
+// bool unload()
 extern "C"
-QJsonObject*
-C_ZNK13QPluginLoader8metaDataEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->metaData();
-  return new QJsonObject(ret); // 5
+void C_ZN13QPluginLoader6unloadEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->unload();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 78, column 10>
-//   // proto:  void QPluginLoader::setLoadHints(QLibrary::LoadHints loadHints);
-// _ZN13QPluginLoader12setLoadHintsE6QFlagsIN8QLibrary8LoadHintEE setLoadHints(class QLibrary::LoadHints)
+// /usr/include/qt/QtCore/qpluginloader.h:71
+// bool isLoaded()
 extern "C"
-void
-C_ZN13QPluginLoader12setLoadHintsE6QFlagsIN8QLibrary8LoadHintEE(void *qthis,
-QLibrary::LoadHints* arg1) {
-  ((QPluginLoader*)qthis)->setLoadHints(*((QLibrary::LoadHints*)arg1));
+void C_ZNK13QPluginLoader8isLoadedEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->isLoaded();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 76, column 13>
-//   // proto:  QString QPluginLoader::errorString();
-// _ZNK13QPluginLoader11errorStringEv errorString()
+// /usr/include/qt/QtCore/qpluginloader.h:73
+// void setFileName(const class QString &)
 extern "C"
-QString*
-C_ZNK13QPluginLoader11errorStringEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->errorString();
-  return new QString(ret); // 5
+void C_ZN13QPluginLoader11setFileNameERK7QString(void *this_, const QString & fileName) {
+  ((QPluginLoader*)this_)->setFileName(fileName);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 79, column 25>
-//   // proto:  QLibrary::LoadHints QPluginLoader::loadHints();
-// _ZNK13QPluginLoader9loadHintsEv loadHints()
+// /usr/include/qt/QtCore/qpluginloader.h:74
+// QString fileName()
 extern "C"
-QFlags<QLibrary::LoadHint>*
-C_ZNK13QPluginLoader9loadHintsEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->loadHints();
-  return new QFlags<QLibrary::LoadHint>(ret); // 5
+void C_ZNK13QPluginLoader8fileNameEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->fileName();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 74, column 13>
-//   // proto:  QString QPluginLoader::fileName();
-// _ZNK13QPluginLoader8fileNameEv fileName()
+// /usr/include/qt/QtCore/qpluginloader.h:76
+// QString errorString()
 extern "C"
-QString*
-C_ZNK13QPluginLoader8fileNameEv(void *qthis) {
-  auto ret =
-  ((QPluginLoader*)qthis)->fileName();
-  return new QString(ret); // 5
+void C_ZNK13QPluginLoader11errorStringEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->errorString();
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 73, column 10>
-//   // proto:  void QPluginLoader::setFileName(const QString & fileName);
-// _ZN13QPluginLoader11setFileNameERK7QString setFileName(const class QString &)
+// /usr/include/qt/QtCore/qpluginloader.h:78
+// void setLoadHints(class QLibrary::LoadHints)
 extern "C"
-void
-C_ZN13QPluginLoader11setFileNameERK7QString(void *qthis,
-const QString* arg1) {
-  ((QPluginLoader*)qthis)->setFileName(*((const QString*)arg1));
+void C_ZN13QPluginLoader12setLoadHintsE6QFlagsIN8QLibrary8LoadHintEE(void *this_, QFlags<QLibrary::LoadHint> loadHints) {
+  ((QPluginLoader*)this_)->setLoadHints(loadHints);
 }
-// <SourceLocation file '/usr/include/qt/QtCore/qpluginloader.h', line 59, column 14>
-//   // proto:  void QPluginLoader::QPluginLoader(QObject * parent);
+// /usr/include/qt/QtCore/qpluginloader.h:79
+// QLibrary::LoadHints loadHints()
 extern "C"
-QPluginLoader*
-C_ZN13QPluginLoaderC2EP7QObject(QObject * arg1) {
-  auto ret = new QPluginLoader(arg1);
-  return ret;
+void C_ZNK13QPluginLoader9loadHintsEv(void *this_) {
+  /*return*/ ((QPluginLoader*)this_)->loadHints();
 }
-//   // proto:  void QPluginLoader::~QPluginLoader();
-extern "C"
-void C_ZN13QPluginLoaderD2Ev(void *qthis) {
-  delete (QPluginLoader*)qthis;
-}
-// <= ext block end
-
-// body block begin =>
-// QPluginLoader_SlotProxy here
-class QPluginLoader_SlotProxy : public QObject
-{
-  Q_OBJECT;
-public:
-   QPluginLoader_SlotProxy():QObject(){}
-
-public: void* rsfptr = NULL;
-};
-#include "src/core/qpluginloader.moc"
-
-extern "C" {
-  QPluginLoader_SlotProxy* QPluginLoader_SlotProxy_new()
-  {
-    return new QPluginLoader_SlotProxy();
-  }
-};
-
-// <= body block end
-
