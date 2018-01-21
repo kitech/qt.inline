@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdirmodel.h
 #include <qdirmodel.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdirmodel.h:56
 // const QMetaObject * metaObject()
@@ -270,3 +274,4 @@ extern "C"
 void C_ZN9QDirModel7refreshERK11QModelIndex(void *this_, const QModelIndex & parent) {
   ((QDirModel*)this_)->refresh(parent);
 }
+//  main block end

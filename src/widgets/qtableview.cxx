@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtableview.h
 #include <qtableview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtableview.h:55
 // const QMetaObject * metaObject()
@@ -323,3 +327,4 @@ extern "C"
 void C_ZN10QTableView11setShowGridEb(void *this_, bool show) {
   ((QTableView*)this_)->setShowGrid(show);
 }
+//  main block end

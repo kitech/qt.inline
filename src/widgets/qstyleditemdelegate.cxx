@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h
 #include <qstyleditemdelegate.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:58
 // const QMetaObject * metaObject()
@@ -83,3 +87,4 @@ extern "C"
 void C_ZNK19QStyledItemDelegate11displayTextERK8QVariantRK7QLocale(void *this_, const QVariant & value, const QLocale & locale) {
   /*return*/ ((QStyledItemDelegate*)this_)->displayText(value, locale);
 }
+//  main block end

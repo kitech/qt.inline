@@ -1,12 +1,16 @@
+//  header block begin
 // /usr/include/qt/QtGui/qfontinfo.h
 #include <qfontinfo.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qfontinfo.h:52
 // void QFontInfo(const class QFont &)
 extern "C"
-void* C_ZN9QFontInfoC1ERK5QFont(const QFont & a0) {
-  return new QFontInfo(a0);
+void* C_ZN9QFontInfoC1ERK5QFont(const QFont & arg0) {
+  return new QFontInfo(arg0);
 }
 // /usr/include/qt/QtGui/qfontinfo.h:54
 // void ~QFontInfo()
@@ -118,3 +122,4 @@ extern "C"
 void C_ZNK9QFontInfo10exactMatchEv(void *this_) {
   /*return*/ ((QFontInfo*)this_)->exactMatch();
 }
+//  main block end

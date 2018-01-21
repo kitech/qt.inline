@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qbitmap.h
 #include <qbitmap.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qbitmap.h:53
 // void QBitmap()
 extern "C"
@@ -11,8 +15,8 @@ void* C_ZN7QBitmapC1Ev() {
 // /usr/include/qt/QtGui/qbitmap.h:54
 // void QBitmap(const class QPixmap &)
 extern "C"
-void* C_ZN7QBitmapC1ERK7QPixmap(const QPixmap & a0) {
-  return new QBitmap(a0);
+void* C_ZN7QBitmapC1ERK7QPixmap(const QPixmap & arg0) {
+  return new QBitmap(arg0);
 }
 // /usr/include/qt/QtGui/qbitmap.h:55
 // void QBitmap(int, int)
@@ -23,8 +27,8 @@ void* C_ZN7QBitmapC1Eii(int w, int h) {
 // /usr/include/qt/QtGui/qbitmap.h:56
 // void QBitmap(const class QSize &)
 extern "C"
-void* C_ZN7QBitmapC1ERK5QSize(const QSize & a0) {
-  return new QBitmap(a0);
+void* C_ZN7QBitmapC1ERK5QSize(const QSize & arg0) {
+  return new QBitmap(arg0);
 }
 // /usr/include/qt/QtGui/qbitmap.h:57
 // void QBitmap(const class QString &, const char *)
@@ -70,8 +74,8 @@ void C_ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE(const QSize & size, const
 // /usr/include/qt/QtGui/qbitmap.h:77
 // QBitmap transformed(const class QMatrix &)
 extern "C"
-void C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, const QMatrix & a0) {
-  /*return*/ ((QBitmap*)this_)->transformed(a0);
+void C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, const QMatrix & arg0) {
+  /*return*/ ((QBitmap*)this_)->transformed(arg0);
 }
 // /usr/include/qt/QtGui/qbitmap.h:78
 // QBitmap transformed(const class QTransform &)
@@ -79,3 +83,4 @@ extern "C"
 void C_ZNK7QBitmap11transformedERK10QTransform(void *this_, const QTransform & matrix) {
   /*return*/ ((QBitmap*)this_)->transformed(matrix);
 }
+//  main block end

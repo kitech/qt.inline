@@ -1,67 +1,46 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextobject.h
 #include <qtextobject.h>
 #include <QtGui>
 
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:305
-// void QTextFragment(const class QTextDocumentPrivate *, int, int)
+//  header block end
+
+//  main block begin
+// virtual
+// /usr/include/qt/QtGui/qtextobject.h:61
+// const QMetaObject * metaObject()
 extern "C"
-void* C_ZN13QTextFragmentC1EPK20QTextDocumentPrivateii(const QTextDocumentPrivate * priv, int f, int fe) {
-  return new QTextFragment(priv, f, fe);
+void C_ZNK11QTextObject10metaObjectEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->metaObject();
 }
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:306
-// void QTextFragment()
+// /usr/include/qt/QtGui/qtextobject.h:70
+// QTextFormat format()
 extern "C"
-void* C_ZN13QTextFragmentC1Ev() {
-  return new QTextFragment();
+void C_ZNK11QTextObject6formatEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->format();
 }
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:310
-// bool isValid()
+// /usr/include/qt/QtGui/qtextobject.h:71
+// int formatIndex()
 extern "C"
-void C_ZNK13QTextFragment7isValidEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->isValid();
+void C_ZNK11QTextObject11formatIndexEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->formatIndex();
 }
-// /usr/include/qt/QtGui/qtextobject.h:316
-// int position()
+// /usr/include/qt/QtGui/qtextobject.h:73
+// QTextDocument * document()
 extern "C"
-void C_ZNK13QTextFragment8positionEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->position();
+void C_ZNK11QTextObject8documentEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->document();
 }
-// /usr/include/qt/QtGui/qtextobject.h:317
-// int length()
+// /usr/include/qt/QtGui/qtextobject.h:75
+// int objectIndex()
 extern "C"
-void C_ZNK13QTextFragment6lengthEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->length();
+void C_ZNK11QTextObject11objectIndexEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->objectIndex();
 }
-// /usr/include/qt/QtGui/qtextobject.h:318
-// bool contains(int)
+// /usr/include/qt/QtGui/qtextobject.h:77
+// QTextDocumentPrivate * docHandle()
 extern "C"
-void C_ZNK13QTextFragment8containsEi(void *this_, int position) {
-  /*return*/ ((QTextFragment*)this_)->contains(position);
+void C_ZNK11QTextObject9docHandleEv(void *this_) {
+  /*return*/ ((QTextObject*)this_)->docHandle();
 }
-// /usr/include/qt/QtGui/qtextobject.h:320
-// QTextCharFormat charFormat()
-extern "C"
-void C_ZNK13QTextFragment10charFormatEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->charFormat();
-}
-// /usr/include/qt/QtGui/qtextobject.h:321
-// int charFormatIndex()
-extern "C"
-void C_ZNK13QTextFragment15charFormatIndexEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->charFormatIndex();
-}
-// /usr/include/qt/QtGui/qtextobject.h:322
-// QString text()
-extern "C"
-void C_ZNK13QTextFragment4textEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->text();
-}
-// /usr/include/qt/QtGui/qtextobject.h:325
-// QList<QGlyphRun> glyphRuns(int, int)
-extern "C"
-void C_ZNK13QTextFragment9glyphRunsEii(void *this_, int from, int length) {
-  /*return*/ ((QTextFragment*)this_)->glyphRuns(from, length);
-}
+//  main block end

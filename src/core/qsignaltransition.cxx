@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsignaltransition.h
 #include <qsignaltransition.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsignaltransition.h:54
 // const QMetaObject * metaObject()
@@ -52,3 +56,4 @@ extern "C"
 void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, const QByteArray & signal) {
   ((QSignalTransition*)this_)->setSignal(signal);
 }
+//  main block end

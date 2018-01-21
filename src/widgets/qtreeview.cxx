@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtreeview.h
 #include <qtreeview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtreeview.h:55
 // const QMetaObject * metaObject()
@@ -417,3 +421,4 @@ extern "C"
 void C_ZN9QTreeView13expandToDepthEi(void *this_, int depth) {
   ((QTreeView*)this_)->expandToDepth(depth);
 }
+//  main block end

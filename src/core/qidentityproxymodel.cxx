@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qidentityproxymodel.h
 #include <qidentityproxymodel.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qidentityproxymodel.h:55
 // const QMetaObject * metaObject()
@@ -141,3 +145,4 @@ extern "C"
 void C_ZN19QIdentityProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
   /*return*/ ((QIdentityProxyModel*)this_)->removeRows(row, count, parent);
 }
+//  main block end

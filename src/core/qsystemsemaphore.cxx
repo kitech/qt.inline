@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsystemsemaphore.h
 #include <qsystemsemaphore.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qsystemsemaphore.h:74
 // void QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
 extern "C"
@@ -50,3 +54,4 @@ extern "C"
 void C_ZNK16QSystemSemaphore11errorStringEv(void *this_) {
   /*return*/ ((QSystemSemaphore*)this_)->errorString();
 }
+//  main block end

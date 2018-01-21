@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h
 #include <qsequentialanimationgroup.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:55
 // const QMetaObject * metaObject()
@@ -53,3 +57,4 @@ extern "C"
 void C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimation(void *this_, QAbstractAnimation * current) {
   ((QSequentialAnimationGroup*)this_)->currentAnimationChanged(current);
 }
+//  main block end

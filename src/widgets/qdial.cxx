@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdial.h
 #include <qdial.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdial.h:56
 // const QMetaObject * metaObject()
@@ -78,3 +82,4 @@ extern "C"
 void C_ZN5QDial11setWrappingEb(void *this_, bool on) {
   ((QDial*)this_)->setWrapping(on);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtimezone.h
 #include <qtimezone.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qtimezone.h:77
 // void QTimeZone()
 extern "C"
@@ -225,3 +229,4 @@ extern "C"
 void C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArrayN7QLocale7CountryE(const QByteArray & windowsId, QLocale::Country country) {
   /*return*/ QTimeZone::windowsIdToIanaIds(windowsId, country);
 }
+//  main block end

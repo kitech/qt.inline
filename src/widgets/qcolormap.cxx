@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcolormap.h
 #include <qcolormap.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtWidgets/qcolormap.h:59
 // void initialize()
@@ -65,3 +69,4 @@ extern "C"
 void C_ZNK9QColormap8colormapEv(void *this_) {
   /*return*/ ((QColormap*)this_)->colormap();
 }
+//  main block end

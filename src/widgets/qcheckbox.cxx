@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcheckbox.h
 #include <qcheckbox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcheckbox.h:53
 // const QMetaObject * metaObject()
@@ -69,6 +73,7 @@ void C_ZN9QCheckBox13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState
 // /usr/include/qt/QtWidgets/qcheckbox.h:72
 // void stateChanged(int)
 extern "C"
-void C_ZN9QCheckBox12stateChangedEi(void *this_, int a0) {
-  ((QCheckBox*)this_)->stateChanged(a0);
+void C_ZN9QCheckBox12stateChangedEi(void *this_, int arg0) {
+  ((QCheckBox*)this_)->stateChanged(arg0);
 }
+//  main block end

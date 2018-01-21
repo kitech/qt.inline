@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcombobox.h
 #include <qcombobox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcombobox.h:59
 // const QMetaObject * metaObject()
@@ -91,8 +95,8 @@ void C_ZN9QComboBox20setDuplicatesEnabledEb(void *this_, bool enable) {
 // /usr/include/qt/QtWidgets/qcombobox.h:104
 // void setFrame(_Bool)
 extern "C"
-void C_ZN9QComboBox8setFrameEb(void *this_, bool a0) {
-  ((QComboBox*)this_)->setFrame(a0);
+void C_ZN9QComboBox8setFrameEb(void *this_, bool arg0) {
+  ((QComboBox*)this_)->setFrame(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:105
 // bool hasFrame()
@@ -414,8 +418,8 @@ void C_ZN9QComboBox5eventEP6QEvent(void *this_, QEvent * event) {
 // /usr/include/qt/QtWidgets/qcombobox.h:204
 // QVariant inputMethodQuery(Qt::InputMethodQuery)
 extern "C"
-void C_ZNK9QComboBox16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery a0) {
-  /*return*/ ((QComboBox*)this_)->inputMethodQuery(a0);
+void C_ZNK9QComboBox16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery arg0) {
+  /*return*/ ((QComboBox*)this_)->inputMethodQuery(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:205
 // QVariant inputMethodQuery(Qt::InputMethodQuery, const class QVariant &)
@@ -456,8 +460,8 @@ void C_ZN9QComboBox14setCurrentTextERK7QString(void *this_, const QString & text
 // /usr/include/qt/QtWidgets/qcombobox.h:215
 // void editTextChanged(const class QString &)
 extern "C"
-void C_ZN9QComboBox15editTextChangedERK7QString(void *this_, const QString & a0) {
-  ((QComboBox*)this_)->editTextChanged(a0);
+void C_ZN9QComboBox15editTextChangedERK7QString(void *this_, const QString & arg0) {
+  ((QComboBox*)this_)->editTextChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:216
 // void activated(int)
@@ -468,8 +472,8 @@ void C_ZN9QComboBox9activatedEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qcombobox.h:217
 // void activated(const class QString &)
 extern "C"
-void C_ZN9QComboBox9activatedERK7QString(void *this_, const QString & a0) {
-  ((QComboBox*)this_)->activated(a0);
+void C_ZN9QComboBox9activatedERK7QString(void *this_, const QString & arg0) {
+  ((QComboBox*)this_)->activated(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:218
 // void highlighted(int)
@@ -480,8 +484,8 @@ void C_ZN9QComboBox11highlightedEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qcombobox.h:219
 // void highlighted(const class QString &)
 extern "C"
-void C_ZN9QComboBox11highlightedERK7QString(void *this_, const QString & a0) {
-  ((QComboBox*)this_)->highlighted(a0);
+void C_ZN9QComboBox11highlightedERK7QString(void *this_, const QString & arg0) {
+  ((QComboBox*)this_)->highlighted(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:220
 // void currentIndexChanged(int)
@@ -492,12 +496,13 @@ void C_ZN9QComboBox19currentIndexChangedEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qcombobox.h:221
 // void currentIndexChanged(const class QString &)
 extern "C"
-void C_ZN9QComboBox19currentIndexChangedERK7QString(void *this_, const QString & a0) {
-  ((QComboBox*)this_)->currentIndexChanged(a0);
+void C_ZN9QComboBox19currentIndexChangedERK7QString(void *this_, const QString & arg0) {
+  ((QComboBox*)this_)->currentIndexChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qcombobox.h:222
 // void currentTextChanged(const class QString &)
 extern "C"
-void C_ZN9QComboBox18currentTextChangedERK7QString(void *this_, const QString & a0) {
-  ((QComboBox*)this_)->currentTextChanged(a0);
+void C_ZN9QComboBox18currentTextChangedERK7QString(void *this_, const QString & arg0) {
+  ((QComboBox*)this_)->currentTextChanged(arg0);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtoolbox.h
 #include <qtoolbox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtoolbox.h:55
 // const QMetaObject * metaObject()
@@ -148,3 +152,4 @@ extern "C"
 void C_ZN8QToolBox14currentChangedEi(void *this_, int index) {
   ((QToolBox*)this_)->currentChanged(index);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qsplashscreen.h
 #include <qsplashscreen.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qsplashscreen.h:54
 // const QMetaObject * metaObject()
@@ -76,3 +80,4 @@ extern "C"
 void C_ZN13QSplashScreen14messageChangedERK7QString(void *this_, const QString & message) {
   ((QSplashScreen*)this_)->messageChanged(message);
 }
+//  main block end

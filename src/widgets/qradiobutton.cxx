@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qradiobutton.h
 #include <qradiobutton.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qradiobutton.h:53
 // const QMetaObject * metaObject()
@@ -42,3 +46,4 @@ extern "C"
 void C_ZNK12QRadioButton15minimumSizeHintEv(void *this_) {
   /*return*/ ((QRadioButton*)this_)->minimumSizeHint();
 }
+//  main block end

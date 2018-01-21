@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qcolor.h
 #include <qcolor.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qcolor.h:69
 // void QColor()
 extern "C"
@@ -605,3 +609,4 @@ extern "C"
 void C_ZN6QColor12isValidColorERK7QString(const QString & name) {
   /*return*/ QColor::isValidColor(name);
 }
+//  main block end

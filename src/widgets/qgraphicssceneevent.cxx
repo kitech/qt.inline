@@ -1,41 +1,34 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
 
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:313
-// void QGraphicsSceneMoveEvent()
+//  header block end
+
+//  main block begin
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
+// void QGraphicsSceneEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN23QGraphicsSceneMoveEventC1Ev() {
-  return new QGraphicsSceneMoveEvent();
+void* C_ZN19QGraphicsSceneEventC1EN6QEvent4TypeE(QEvent::Type type) {
+  return new QGraphicsSceneEvent(type);
 }
 // virtual
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:314
-// void ~QGraphicsSceneMoveEvent()
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:68
+// void ~QGraphicsSceneEvent()
 extern "C"
-void C_ZN23QGraphicsSceneMoveEventD1Ev(void *this_) {
-  delete (QGraphicsSceneMoveEvent*)(this_);
+void C_ZN19QGraphicsSceneEventD1Ev(void *this_) {
+  delete (QGraphicsSceneEvent*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:316
-// QPointF oldPos()
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:70
+// QWidget * widget()
 extern "C"
-void C_ZNK23QGraphicsSceneMoveEvent6oldPosEv(void *this_) {
-  /*return*/ ((QGraphicsSceneMoveEvent*)this_)->oldPos();
+void C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
+  /*return*/ ((QGraphicsSceneEvent*)this_)->widget();
 }
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:317
-// void setOldPos(const class QPointF &)
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
+// void setWidget(class QWidget *)
 extern "C"
-void C_ZN23QGraphicsSceneMoveEvent9setOldPosERK7QPointF(void *this_, const QPointF & pos) {
-  ((QGraphicsSceneMoveEvent*)this_)->setOldPos(pos);
+void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
+  ((QGraphicsSceneEvent*)this_)->setWidget(widget);
 }
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:319
-// QPointF newPos()
-extern "C"
-void C_ZNK23QGraphicsSceneMoveEvent6newPosEv(void *this_) {
-  /*return*/ ((QGraphicsSceneMoveEvent*)this_)->newPos();
-}
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:320
-// void setNewPos(const class QPointF &)
-extern "C"
-void C_ZN23QGraphicsSceneMoveEvent9setNewPosERK7QPointF(void *this_, const QPointF & pos) {
-  ((QGraphicsSceneMoveEvent*)this_)->setNewPos(pos);
-}
+//  main block end

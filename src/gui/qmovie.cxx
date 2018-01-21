@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qmovie.h
 #include <qmovie.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qmovie.h:65
 // const QMetaObject * metaObject()
@@ -251,3 +255,4 @@ extern "C"
 void C_ZN6QMovie8setSpeedEi(void *this_, int percentSpeed) {
   ((QMovie*)this_)->setSpeed(percentSpeed);
 }
+//  main block end

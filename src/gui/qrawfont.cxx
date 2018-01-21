@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qrawfont.h
 #include <qrawfont.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qrawfont.h:73
 // void QRawFont()
 extern "C"
@@ -234,3 +238,4 @@ extern "C"
 void C_ZN8QRawFont8fromFontERK5QFontN13QFontDatabase13WritingSystemE(const QFont & font, QFontDatabase::WritingSystem writingSystem) {
   /*return*/ QRawFont::fromFont(font, writingSystem);
 }
+//  main block end

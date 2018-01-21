@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qundostack.h
 #include <qundostack.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qundostack.h:88
 // const QMetaObject * metaObject()
@@ -202,3 +206,4 @@ extern "C"
 void C_ZN10QUndoStack15redoTextChangedERK7QString(void *this_, const QString & redoText) {
   ((QUndoStack*)this_)->redoTextChanged(redoText);
 }
+//  main block end

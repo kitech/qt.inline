@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #include <qdockwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdockwidget.h:57
 // const QMetaObject * metaObject()
@@ -132,3 +136,4 @@ extern "C"
 void C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *this_, Qt::DockWidgetArea area) {
   ((QDockWidget*)this_)->dockLocationChanged(area);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #include <qmdiarea.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmdiarea.h:56
 // const QMetaObject * metaObject()
@@ -177,8 +181,8 @@ void C_ZNK8QMdiArea11tabPositionEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmdiarea.h:132
 // void subWindowActivated(class QMdiSubWindow *)
 extern "C"
-void C_ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(void *this_, QMdiSubWindow * a0) {
-  ((QMdiArea*)this_)->subWindowActivated(a0);
+void C_ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(void *this_, QMdiSubWindow * arg0) {
+  ((QMdiArea*)this_)->subWindowActivated(arg0);
 }
 // /usr/include/qt/QtWidgets/qmdiarea.h:135
 // void setActiveSubWindow(class QMdiSubWindow *)
@@ -222,3 +226,4 @@ extern "C"
 void C_ZN8QMdiArea25activatePreviousSubWindowEv(void *this_) {
   ((QMdiArea*)this_)->activatePreviousSubWindow();
 }
+//  main block end

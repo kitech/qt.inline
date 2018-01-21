@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qscrollarea.h
 #include <qscrollarea.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qscrollarea.h:54
 // const QMetaObject * metaObject()
@@ -75,8 +79,8 @@ void C_ZNK11QScrollArea9alignmentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qscrollarea.h:74
 // void setAlignment(Qt::Alignment)
 extern "C"
-void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment a0) {
-  ((QScrollArea*)this_)->setAlignment(a0);
+void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment arg0) {
+  ((QScrollArea*)this_)->setAlignment(arg0);
 }
 // /usr/include/qt/QtWidgets/qscrollarea.h:76
 // void ensureVisible(int, int, int, int)
@@ -90,3 +94,4 @@ extern "C"
 void C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *this_, QWidget * childWidget, int xmargin, int ymargin) {
   ((QScrollArea*)this_)->ensureWidgetVisible(childWidget, xmargin, ymargin);
 }
+//  main block end

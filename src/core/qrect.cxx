@@ -1,475 +1,467 @@
+//  header block begin
 // /usr/include/qt/QtCore/qrect.h
 #include <qrect.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
-// /usr/include/qt/QtCore/qrect.h:506
-// void QRectF()
+// /usr/include/qt/QtCore/qrect.h:56
+// void QRect()
 extern "C"
-void* C_ZN6QRectFC1Ev() {
-  return new QRectF();
+void* C_ZN5QRectC1Ev() {
+  return new QRect();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:507
-// void QRectF(const class QPointF &, const class QSizeF &)
+// /usr/include/qt/QtCore/qrect.h:57
+// void QRect(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN6QRectFC1ERK7QPointFRK6QSizeF(const QPointF & topleft, const QSizeF & size) {
-  return new QRectF(topleft, size);
+void* C_ZN5QRectC1ERK6QPointS2_(const QPoint & topleft, const QPoint & bottomright) {
+  return new QRect(topleft, bottomright);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:508
-// void QRectF(const class QPointF &, const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:58
+// void QRect(const class QPoint &, const class QSize &)
 extern "C"
-void* C_ZN6QRectFC1ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight) {
-  return new QRectF(topleft, bottomRight);
+void* C_ZN5QRectC1ERK6QPointRK5QSize(const QPoint & topleft, const QSize & size) {
+  return new QRect(topleft, size);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:509
-// void QRectF(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:59
+// void QRect(int, int, int, int)
 extern "C"
-void* C_ZN6QRectFC1Edddd(qreal left, qreal top, qreal width, qreal height) {
-  return new QRectF(left, top, width, height);
+void* C_ZN5QRectC1Eiiii(int left, int top, int width, int height) {
+  return new QRect(left, top, width, height);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:510
-// void QRectF(const class QRect &)
-extern "C"
-void* C_ZN6QRectFC1ERK5QRect(const QRect & rect) {
-  return new QRectF(rect);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:512
+// /usr/include/qt/QtCore/qrect.h:61
 // bool isNull()
 extern "C"
-void C_ZNK6QRectF6isNullEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isNull();
+void C_ZNK5QRect6isNullEv(void *this_) {
+  /*return*/ ((QRect*)this_)->isNull();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:513
+// /usr/include/qt/QtCore/qrect.h:62
 // bool isEmpty()
 extern "C"
-void C_ZNK6QRectF7isEmptyEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isEmpty();
+void C_ZNK5QRect7isEmptyEv(void *this_) {
+  /*return*/ ((QRect*)this_)->isEmpty();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:514
+// /usr/include/qt/QtCore/qrect.h:63
 // bool isValid()
 extern "C"
-void C_ZNK6QRectF7isValidEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isValid();
-}
-// /usr/include/qt/QtCore/qrect.h:515
-// QRectF normalized()
-extern "C"
-void C_ZNK6QRectF10normalizedEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->normalized();
+void C_ZNK5QRect7isValidEv(void *this_) {
+  /*return*/ ((QRect*)this_)->isValid();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:517
-// qreal left()
+// /usr/include/qt/QtCore/qrect.h:65
+// int left()
 extern "C"
-void C_ZNK6QRectF4leftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->left();
+void C_ZNK5QRect4leftEv(void *this_) {
+  /*return*/ ((QRect*)this_)->left();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:518
-// qreal top()
+// /usr/include/qt/QtCore/qrect.h:66
+// int top()
 extern "C"
-void C_ZNK6QRectF3topEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->top();
+void C_ZNK5QRect3topEv(void *this_) {
+  /*return*/ ((QRect*)this_)->top();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:519
-// qreal right()
+// /usr/include/qt/QtCore/qrect.h:67
+// int right()
 extern "C"
-void C_ZNK6QRectF5rightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->right();
+void C_ZNK5QRect5rightEv(void *this_) {
+  /*return*/ ((QRect*)this_)->right();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:520
-// qreal bottom()
+// /usr/include/qt/QtCore/qrect.h:68
+// int bottom()
 extern "C"
-void C_ZNK6QRectF6bottomEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottom();
+void C_ZNK5QRect6bottomEv(void *this_) {
+  /*return*/ ((QRect*)this_)->bottom();
+}
+// /usr/include/qt/QtCore/qrect.h:69
+// QRect normalized()
+extern "C"
+void C_ZNK5QRect10normalizedEv(void *this_) {
+  /*return*/ ((QRect*)this_)->normalized();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:522
-// qreal x()
+// /usr/include/qt/QtCore/qrect.h:71
+// int x()
 extern "C"
-void C_ZNK6QRectF1xEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->x();
+void C_ZNK5QRect1xEv(void *this_) {
+  /*return*/ ((QRect*)this_)->x();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:523
-// qreal y()
+// /usr/include/qt/QtCore/qrect.h:72
+// int y()
 extern "C"
-void C_ZNK6QRectF1yEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->y();
+void C_ZNK5QRect1yEv(void *this_) {
+  /*return*/ ((QRect*)this_)->y();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:524
-// void setLeft(qreal)
+// /usr/include/qt/QtCore/qrect.h:73
+// void setLeft(int)
 extern "C"
-void C_ZN6QRectF7setLeftEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setLeft(pos);
+void C_ZN5QRect7setLeftEi(void *this_, int pos) {
+  ((QRect*)this_)->setLeft(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:525
-// void setTop(qreal)
+// /usr/include/qt/QtCore/qrect.h:74
+// void setTop(int)
 extern "C"
-void C_ZN6QRectF6setTopEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setTop(pos);
+void C_ZN5QRect6setTopEi(void *this_, int pos) {
+  ((QRect*)this_)->setTop(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:526
-// void setRight(qreal)
+// /usr/include/qt/QtCore/qrect.h:75
+// void setRight(int)
 extern "C"
-void C_ZN6QRectF8setRightEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setRight(pos);
+void C_ZN5QRect8setRightEi(void *this_, int pos) {
+  ((QRect*)this_)->setRight(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:527
-// void setBottom(qreal)
+// /usr/include/qt/QtCore/qrect.h:76
+// void setBottom(int)
 extern "C"
-void C_ZN6QRectF9setBottomEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setBottom(pos);
+void C_ZN5QRect9setBottomEi(void *this_, int pos) {
+  ((QRect*)this_)->setBottom(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:528
-// void setX(qreal)
+// /usr/include/qt/QtCore/qrect.h:77
+// void setX(int)
 extern "C"
-void C_ZN6QRectF4setXEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setX(pos);
+void C_ZN5QRect4setXEi(void *this_, int x) {
+  ((QRect*)this_)->setX(x);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:529
-// void setY(qreal)
+// /usr/include/qt/QtCore/qrect.h:78
+// void setY(int)
 extern "C"
-void C_ZN6QRectF4setYEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->setY(pos);
+void C_ZN5QRect4setYEi(void *this_, int y) {
+  ((QRect*)this_)->setY(y);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:531
-// QPointF topLeft()
+// /usr/include/qt/QtCore/qrect.h:80
+// void setTopLeft(const class QPoint &)
 extern "C"
-void C_ZNK6QRectF7topLeftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->topLeft();
+void C_ZN5QRect10setTopLeftERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->setTopLeft(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:532
-// QPointF bottomRight()
+// /usr/include/qt/QtCore/qrect.h:81
+// void setBottomRight(const class QPoint &)
 extern "C"
-void C_ZNK6QRectF11bottomRightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottomRight();
+void C_ZN5QRect14setBottomRightERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->setBottomRight(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:533
-// QPointF topRight()
+// /usr/include/qt/QtCore/qrect.h:82
+// void setTopRight(const class QPoint &)
 extern "C"
-void C_ZNK6QRectF8topRightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->topRight();
+void C_ZN5QRect11setTopRightERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->setTopRight(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:534
-// QPointF bottomLeft()
+// /usr/include/qt/QtCore/qrect.h:83
+// void setBottomLeft(const class QPoint &)
 extern "C"
-void C_ZNK6QRectF10bottomLeftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottomLeft();
+void C_ZN5QRect13setBottomLeftERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->setBottomLeft(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:535
-// QPointF center()
+// /usr/include/qt/QtCore/qrect.h:85
+// QPoint topLeft()
 extern "C"
-void C_ZNK6QRectF6centerEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->center();
+void C_ZNK5QRect7topLeftEv(void *this_) {
+  /*return*/ ((QRect*)this_)->topLeft();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:537
-// void setTopLeft(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:86
+// QPoint bottomRight()
 extern "C"
-void C_ZN6QRectF10setTopLeftERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->setTopLeft(p);
+void C_ZNK5QRect11bottomRightEv(void *this_) {
+  /*return*/ ((QRect*)this_)->bottomRight();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:538
-// void setBottomRight(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:87
+// QPoint topRight()
 extern "C"
-void C_ZN6QRectF14setBottomRightERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->setBottomRight(p);
+void C_ZNK5QRect8topRightEv(void *this_) {
+  /*return*/ ((QRect*)this_)->topRight();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:539
-// void setTopRight(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:88
+// QPoint bottomLeft()
 extern "C"
-void C_ZN6QRectF11setTopRightERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->setTopRight(p);
+void C_ZNK5QRect10bottomLeftEv(void *this_) {
+  /*return*/ ((QRect*)this_)->bottomLeft();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:540
-// void setBottomLeft(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:89
+// QPoint center()
 extern "C"
-void C_ZN6QRectF13setBottomLeftERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->setBottomLeft(p);
+void C_ZNK5QRect6centerEv(void *this_) {
+  /*return*/ ((QRect*)this_)->center();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:542
-// void moveLeft(qreal)
+// /usr/include/qt/QtCore/qrect.h:91
+// void moveLeft(int)
 extern "C"
-void C_ZN6QRectF8moveLeftEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->moveLeft(pos);
+void C_ZN5QRect8moveLeftEi(void *this_, int pos) {
+  ((QRect*)this_)->moveLeft(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:543
-// void moveTop(qreal)
+// /usr/include/qt/QtCore/qrect.h:92
+// void moveTop(int)
 extern "C"
-void C_ZN6QRectF7moveTopEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->moveTop(pos);
+void C_ZN5QRect7moveTopEi(void *this_, int pos) {
+  ((QRect*)this_)->moveTop(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:544
-// void moveRight(qreal)
+// /usr/include/qt/QtCore/qrect.h:93
+// void moveRight(int)
 extern "C"
-void C_ZN6QRectF9moveRightEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->moveRight(pos);
+void C_ZN5QRect9moveRightEi(void *this_, int pos) {
+  ((QRect*)this_)->moveRight(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:545
-// void moveBottom(qreal)
+// /usr/include/qt/QtCore/qrect.h:94
+// void moveBottom(int)
 extern "C"
-void C_ZN6QRectF10moveBottomEd(void *this_, qreal pos) {
-  ((QRectF*)this_)->moveBottom(pos);
+void C_ZN5QRect10moveBottomEi(void *this_, int pos) {
+  ((QRect*)this_)->moveBottom(pos);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:546
-// void moveTopLeft(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:95
+// void moveTopLeft(const class QPoint &)
 extern "C"
-void C_ZN6QRectF11moveTopLeftERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveTopLeft(p);
+void C_ZN5QRect11moveTopLeftERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveTopLeft(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:547
-// void moveBottomRight(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:96
+// void moveBottomRight(const class QPoint &)
 extern "C"
-void C_ZN6QRectF15moveBottomRightERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveBottomRight(p);
+void C_ZN5QRect15moveBottomRightERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveBottomRight(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:548
-// void moveTopRight(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:97
+// void moveTopRight(const class QPoint &)
 extern "C"
-void C_ZN6QRectF12moveTopRightERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveTopRight(p);
+void C_ZN5QRect12moveTopRightERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveTopRight(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:549
-// void moveBottomLeft(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:98
+// void moveBottomLeft(const class QPoint &)
 extern "C"
-void C_ZN6QRectF14moveBottomLeftERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveBottomLeft(p);
+void C_ZN5QRect14moveBottomLeftERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveBottomLeft(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:550
-// void moveCenter(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:99
+// void moveCenter(const class QPoint &)
 extern "C"
-void C_ZN6QRectF10moveCenterERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveCenter(p);
+void C_ZN5QRect10moveCenterERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveCenter(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:552
-// void translate(qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:101
+// void translate(int, int)
 extern "C"
-void C_ZN6QRectF9translateEdd(void *this_, qreal dx, qreal dy) {
-  ((QRectF*)this_)->translate(dx, dy);
+void C_ZN5QRect9translateEii(void *this_, int dx, int dy) {
+  ((QRect*)this_)->translate(dx, dy);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:553
-// void translate(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:102
+// void translate(const class QPoint &)
 extern "C"
-void C_ZN6QRectF9translateERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->translate(p);
+void C_ZN5QRect9translateERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->translate(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:555
-// QRectF translated(qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:103
+// QRect translated(int, int)
 extern "C"
-void C_ZNK6QRectF10translatedEdd(void *this_, qreal dx, qreal dy) {
-  /*return*/ ((QRectF*)this_)->translated(dx, dy);
+void C_ZNK5QRect10translatedEii(void *this_, int dx, int dy) {
+  /*return*/ ((QRect*)this_)->translated(dx, dy);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:556
-// QRectF translated(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:104
+// QRect translated(const class QPoint &)
 extern "C"
-void C_ZNK6QRectF10translatedERK7QPointF(void *this_, const QPointF & p) {
-  /*return*/ ((QRectF*)this_)->translated(p);
+void C_ZNK5QRect10translatedERK6QPoint(void *this_, const QPoint & p) {
+  /*return*/ ((QRect*)this_)->translated(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:558
-// QRectF transposed()
+// /usr/include/qt/QtCore/qrect.h:105
+// QRect transposed()
 extern "C"
-void C_ZNK6QRectF10transposedEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->transposed();
+void C_ZNK5QRect10transposedEv(void *this_) {
+  /*return*/ ((QRect*)this_)->transposed();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:560
-// void moveTo(qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:107
+// void moveTo(int, int)
 extern "C"
-void C_ZN6QRectF6moveToEdd(void *this_, qreal x, qreal y) {
-  ((QRectF*)this_)->moveTo(x, y);
+void C_ZN5QRect6moveToEii(void *this_, int x, int t) {
+  ((QRect*)this_)->moveTo(x, t);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:561
-// void moveTo(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:108
+// void moveTo(const class QPoint &)
 extern "C"
-void C_ZN6QRectF6moveToERK7QPointF(void *this_, const QPointF & p) {
-  ((QRectF*)this_)->moveTo(p);
+void C_ZN5QRect6moveToERK6QPoint(void *this_, const QPoint & p) {
+  ((QRect*)this_)->moveTo(p);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:563
-// void setRect(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:110
+// void setRect(int, int, int, int)
 extern "C"
-void C_ZN6QRectF7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
-  ((QRectF*)this_)->setRect(x, y, w, h);
+void C_ZN5QRect7setRectEiiii(void *this_, int x, int y, int w, int h) {
+  ((QRect*)this_)->setRect(x, y, w, h);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:564
-// void getRect(qreal *, qreal *, qreal *, qreal *)
+// /usr/include/qt/QtCore/qrect.h:111
+// void getRect(int *, int *, int *, int *)
 extern "C"
-void C_ZNK6QRectF7getRectEPdS0_S0_S0_(void *this_, qreal * x, qreal * y, qreal * w, qreal * h) {
-  ((QRectF*)this_)->getRect(x, y, w, h);
+void C_ZNK5QRect7getRectEPiS0_S0_S0_(void *this_, int * x, int * y, int * w, int * h) {
+  ((QRect*)this_)->getRect(x, y, w, h);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:566
-// void setCoords(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:113
+// void setCoords(int, int, int, int)
 extern "C"
-void C_ZN6QRectF9setCoordsEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
-  ((QRectF*)this_)->setCoords(x1, y1, x2, y2);
+void C_ZN5QRect9setCoordsEiiii(void *this_, int x1, int y1, int x2, int y2) {
+  ((QRect*)this_)->setCoords(x1, y1, x2, y2);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:567
-// void getCoords(qreal *, qreal *, qreal *, qreal *)
+// /usr/include/qt/QtCore/qrect.h:114
+// void getCoords(int *, int *, int *, int *)
 extern "C"
-void C_ZNK6QRectF9getCoordsEPdS0_S0_S0_(void *this_, qreal * x1, qreal * y1, qreal * x2, qreal * y2) {
-  ((QRectF*)this_)->getCoords(x1, y1, x2, y2);
+void C_ZNK5QRect9getCoordsEPiS0_S0_S0_(void *this_, int * x1, int * y1, int * x2, int * y2) {
+  ((QRect*)this_)->getCoords(x1, y1, x2, y2);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:569
-// void adjust(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:116
+// void adjust(int, int, int, int)
 extern "C"
-void C_ZN6QRectF6adjustEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
-  ((QRectF*)this_)->adjust(x1, y1, x2, y2);
+void C_ZN5QRect6adjustEiiii(void *this_, int x1, int y1, int x2, int y2) {
+  ((QRect*)this_)->adjust(x1, y1, x2, y2);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:570
-// QRectF adjusted(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qrect.h:117
+// QRect adjusted(int, int, int, int)
 extern "C"
-void C_ZNK6QRectF8adjustedEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
-  /*return*/ ((QRectF*)this_)->adjusted(x1, y1, x2, y2);
+void C_ZNK5QRect8adjustedEiiii(void *this_, int x1, int y1, int x2, int y2) {
+  /*return*/ ((QRect*)this_)->adjusted(x1, y1, x2, y2);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:572
-// QSizeF size()
+// /usr/include/qt/QtCore/qrect.h:119
+// QSize size()
 extern "C"
-void C_ZNK6QRectF4sizeEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->size();
+void C_ZNK5QRect4sizeEv(void *this_) {
+  /*return*/ ((QRect*)this_)->size();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:573
-// qreal width()
+// /usr/include/qt/QtCore/qrect.h:120
+// int width()
 extern "C"
-void C_ZNK6QRectF5widthEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->width();
+void C_ZNK5QRect5widthEv(void *this_) {
+  /*return*/ ((QRect*)this_)->width();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:574
-// qreal height()
+// /usr/include/qt/QtCore/qrect.h:121
+// int height()
 extern "C"
-void C_ZNK6QRectF6heightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->height();
+void C_ZNK5QRect6heightEv(void *this_) {
+  /*return*/ ((QRect*)this_)->height();
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:575
-// void setWidth(qreal)
+// /usr/include/qt/QtCore/qrect.h:122
+// void setWidth(int)
 extern "C"
-void C_ZN6QRectF8setWidthEd(void *this_, qreal w) {
-  ((QRectF*)this_)->setWidth(w);
+void C_ZN5QRect8setWidthEi(void *this_, int w) {
+  ((QRect*)this_)->setWidth(w);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:576
-// void setHeight(qreal)
+// /usr/include/qt/QtCore/qrect.h:123
+// void setHeight(int)
 extern "C"
-void C_ZN6QRectF9setHeightEd(void *this_, qreal h) {
-  ((QRectF*)this_)->setHeight(h);
+void C_ZN5QRect9setHeightEi(void *this_, int h) {
+  ((QRect*)this_)->setHeight(h);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:577
-// void setSize(const class QSizeF &)
+// /usr/include/qt/QtCore/qrect.h:124
+// void setSize(const class QSize &)
 extern "C"
-void C_ZN6QRectF7setSizeERK6QSizeF(void *this_, const QSizeF & s) {
-  ((QRectF*)this_)->setSize(s);
+void C_ZN5QRect7setSizeERK5QSize(void *this_, const QSize & s) {
+  ((QRect*)this_)->setSize(s);
 }
-// /usr/include/qt/QtCore/qrect.h:584
-// bool contains(const class QRectF &)
+// /usr/include/qt/QtCore/qrect.h:131
+// bool contains(const class QRect &, _Bool)
 extern "C"
-void C_ZNK6QRectF8containsERKS_(void *this_, const QRectF & r) {
-  /*return*/ ((QRectF*)this_)->contains(r);
+void C_ZNK5QRect8containsERKS_b(void *this_, const QRect & r, bool proper) {
+  /*return*/ ((QRect*)this_)->contains(r, proper);
 }
-// /usr/include/qt/QtCore/qrect.h:585
-// bool contains(const class QPointF &)
+// /usr/include/qt/QtCore/qrect.h:132
+// bool contains(const class QPoint &, _Bool)
 extern "C"
-void C_ZNK6QRectF8containsERK7QPointF(void *this_, const QPointF & p) {
-  /*return*/ ((QRectF*)this_)->contains(p);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:586
-// bool contains(qreal, qreal)
-extern "C"
-void C_ZNK6QRectF8containsEdd(void *this_, qreal x, qreal y) {
-  /*return*/ ((QRectF*)this_)->contains(x, y);
+void C_ZNK5QRect8containsERK6QPointb(void *this_, const QPoint & p, bool proper) {
+  /*return*/ ((QRect*)this_)->contains(p, proper);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:587
-// QRectF united(const class QRectF &)
+// /usr/include/qt/QtCore/qrect.h:133
+// bool contains(int, int)
 extern "C"
-void C_ZNK6QRectF6unitedERKS_(void *this_, const QRectF & other) {
-  /*return*/ ((QRectF*)this_)->united(other);
+void C_ZNK5QRect8containsEii(void *this_, int x, int y) {
+  /*return*/ ((QRect*)this_)->contains(x, y);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:588
-// QRectF intersected(const class QRectF &)
+// /usr/include/qt/QtCore/qrect.h:134
+// bool contains(int, int, _Bool)
 extern "C"
-void C_ZNK6QRectF11intersectedERKS_(void *this_, const QRectF & other) {
-  /*return*/ ((QRectF*)this_)->intersected(other);
-}
-// /usr/include/qt/QtCore/qrect.h:589
-// bool intersects(const class QRectF &)
-extern "C"
-void C_ZNK6QRectF10intersectsERKS_(void *this_, const QRectF & r) {
-  /*return*/ ((QRectF*)this_)->intersects(r);
+void C_ZNK5QRect8containsEiib(void *this_, int x, int y, bool proper) {
+  /*return*/ ((QRect*)this_)->contains(x, y, proper);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:591
-// QRectF marginsAdded(const class QMarginsF &)
+// /usr/include/qt/QtCore/qrect.h:135
+// QRect united(const class QRect &)
 extern "C"
-void C_ZNK6QRectF12marginsAddedERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  /*return*/ ((QRectF*)this_)->marginsAdded(margins);
+void C_ZNK5QRect6unitedERKS_(void *this_, const QRect & other) {
+  /*return*/ ((QRect*)this_)->united(other);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:592
-// QRectF marginsRemoved(const class QMarginsF &)
+// /usr/include/qt/QtCore/qrect.h:136
+// QRect intersected(const class QRect &)
 extern "C"
-void C_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  /*return*/ ((QRectF*)this_)->marginsRemoved(margins);
+void C_ZNK5QRect11intersectedERKS_(void *this_, const QRect & other) {
+  /*return*/ ((QRect*)this_)->intersected(other);
+}
+// /usr/include/qt/QtCore/qrect.h:137
+// bool intersects(const class QRect &)
+extern "C"
+void C_ZNK5QRect10intersectsERKS_(void *this_, const QRect & r) {
+  /*return*/ ((QRect*)this_)->intersects(r);
 }
 // inline
-// /usr/include/qt/QtCore/qrect.h:604
-// QRect toRect()
+// /usr/include/qt/QtCore/qrect.h:139
+// QRect marginsAdded(const class QMargins &)
 extern "C"
-void C_ZNK6QRectF6toRectEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->toRect();
+void C_ZNK5QRect12marginsAddedERK8QMargins(void *this_, const QMargins & margins) {
+  /*return*/ ((QRect*)this_)->marginsAdded(margins);
 }
-// /usr/include/qt/QtCore/qrect.h:605
-// QRect toAlignedRect()
+// inline
+// /usr/include/qt/QtCore/qrect.h:140
+// QRect marginsRemoved(const class QMargins &)
 extern "C"
-void C_ZNK6QRectF13toAlignedRectEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->toAlignedRect();
+void C_ZNK5QRect14marginsRemovedERK8QMargins(void *this_, const QMargins & margins) {
+  /*return*/ ((QRect*)this_)->marginsRemoved(margins);
 }
+//  main block end

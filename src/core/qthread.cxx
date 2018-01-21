@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qthread.h
 #include <qthread.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qthread.h:57
 // const QMetaObject * metaObject()
@@ -132,8 +136,8 @@ void C_ZNK7QThread9loopLevelEv(void *this_) {
 // /usr/include/qt/QtCore/qthread.h:102
 // void start(enum QThread::Priority)
 extern "C"
-void C_ZN7QThread5startENS_8PriorityE(void *this_, QThread::Priority a0) {
-  ((QThread*)this_)->start(a0);
+void C_ZN7QThread5startENS_8PriorityE(void *this_, QThread::Priority arg0) {
+  ((QThread*)this_)->start(arg0);
 }
 // /usr/include/qt/QtCore/qthread.h:103
 // void terminate()
@@ -157,20 +161,21 @@ void C_ZN7QThread4waitEm(void *this_, unsigned long time) {
 // /usr/include/qt/QtCore/qthread.h:110
 // void sleep(unsigned long)
 extern "C"
-void C_ZN7QThread5sleepEm(unsigned long a0) {
-  QThread::sleep(a0);
+void C_ZN7QThread5sleepEm(unsigned long arg0) {
+  QThread::sleep(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qthread.h:111
 // void msleep(unsigned long)
 extern "C"
-void C_ZN7QThread6msleepEm(unsigned long a0) {
-  QThread::msleep(a0);
+void C_ZN7QThread6msleepEm(unsigned long arg0) {
+  QThread::msleep(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qthread.h:112
 // void usleep(unsigned long)
 extern "C"
-void C_ZN7QThread6usleepEm(unsigned long a0) {
-  QThread::usleep(a0);
+void C_ZN7QThread6usleepEm(unsigned long arg0) {
+  QThread::usleep(arg0);
 }
+//  main block end

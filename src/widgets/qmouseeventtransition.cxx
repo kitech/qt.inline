@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h
 #include <qmouseeventtransition.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:54
 // const QMetaObject * metaObject()
@@ -64,3 +68,4 @@ extern "C"
 void C_ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath(void *this_, const QPainterPath & path) {
   ((QMouseEventTransition*)this_)->setHitTestPath(path);
 }
+//  main block end

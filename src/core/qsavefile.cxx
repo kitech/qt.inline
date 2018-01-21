@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsavefile.h
 #include <qsavefile.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsavefile.h:61
 // const QMetaObject * metaObject()
@@ -78,3 +82,4 @@ extern "C"
 void C_ZNK9QSaveFile19directWriteFallbackEv(void *this_) {
   /*return*/ ((QSaveFile*)this_)->directWriteFallback();
 }
+//  main block end

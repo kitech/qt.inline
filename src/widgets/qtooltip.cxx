@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtooltip.h
 #include <qtooltip.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtWidgets/qtooltip.h:55
 // void showText(const class QPoint &, const class QString &, class QWidget *)
@@ -55,8 +59,8 @@ void C_ZN8QToolTip7paletteEv() {
 // /usr/include/qt/QtWidgets/qtooltip.h:64
 // void setPalette(const class QPalette &)
 extern "C"
-void C_ZN8QToolTip10setPaletteERK8QPalette(const QPalette & a0) {
-  QToolTip::setPalette(a0);
+void C_ZN8QToolTip10setPaletteERK8QPalette(const QPalette & arg0) {
+  QToolTip::setPalette(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qtooltip.h:65
@@ -69,6 +73,7 @@ void C_ZN8QToolTip4fontEv() {
 // /usr/include/qt/QtWidgets/qtooltip.h:66
 // void setFont(const class QFont &)
 extern "C"
-void C_ZN8QToolTip7setFontERK5QFont(const QFont & a0) {
-  QToolTip::setFont(a0);
+void C_ZN8QToolTip7setFontERK5QFont(const QFont & arg0) {
+  QToolTip::setFont(arg0);
 }
+//  main block end

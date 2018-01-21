@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qjsonobject.h
 #include <qjsonobject.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qjsonobject.h:61
 // void QJsonObject()
 extern "C"
@@ -208,3 +212,4 @@ extern "C"
 void C_ZNK11QJsonObject5emptyEv(void *this_) {
   /*return*/ ((QJsonObject*)this_)->empty();
 }
+//  main block end

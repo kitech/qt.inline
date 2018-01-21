@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qlockfile.h
 #include <qlockfile.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qlockfile.h:53
 // void QLockFile(const class QString &)
 extern "C"
@@ -35,8 +39,8 @@ void C_ZN9QLockFile6unlockEv(void *this_) {
 // /usr/include/qt/QtCore/qlockfile.h:60
 // void setStaleLockTime(int)
 extern "C"
-void C_ZN9QLockFile16setStaleLockTimeEi(void *this_, int a0) {
-  ((QLockFile*)this_)->setStaleLockTime(a0);
+void C_ZN9QLockFile16setStaleLockTimeEi(void *this_, int arg0) {
+  ((QLockFile*)this_)->setStaleLockTime(arg0);
 }
 // /usr/include/qt/QtCore/qlockfile.h:61
 // int staleLockTime()
@@ -68,3 +72,4 @@ extern "C"
 void C_ZNK9QLockFile5errorEv(void *this_) {
   /*return*/ ((QLockFile*)this_)->error();
 }
+//  main block end

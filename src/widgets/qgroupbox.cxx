@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgroupbox.h
 #include <qgroupbox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgroupbox.h:54
 // const QMetaObject * metaObject()
@@ -104,6 +108,7 @@ void C_ZN9QGroupBox7clickedEb(void *this_, bool checked) {
 // /usr/include/qt/QtWidgets/qgroupbox.h:85
 // void toggled(_Bool)
 extern "C"
-void C_ZN9QGroupBox7toggledEb(void *this_, bool a0) {
-  ((QGroupBox*)this_)->toggled(a0);
+void C_ZN9QGroupBox7toggledEb(void *this_, bool arg0) {
+  ((QGroupBox*)this_)->toggled(arg0);
 }
+//  main block end

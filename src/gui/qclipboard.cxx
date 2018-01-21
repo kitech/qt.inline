@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qclipboard.h
 #include <qclipboard.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qclipboard.h:56
 // const QMetaObject * metaObject()
@@ -60,8 +64,8 @@ void C_ZNK10QClipboard4textER7QStringNS_4ModeE(void *this_, QString & subtype, Q
 // /usr/include/qt/QtGui/qclipboard.h:75
 // void setText(const class QString &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard7setTextERK7QStringNS_4ModeE(void *this_, const QString & a0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setText(a0, mode);
+void C_ZN10QClipboard7setTextERK7QStringNS_4ModeE(void *this_, const QString & arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setText(arg0, mode);
 }
 // /usr/include/qt/QtGui/qclipboard.h:77
 // const QMimeData * mimeData(enum QClipboard::Mode)
@@ -90,14 +94,14 @@ void C_ZNK10QClipboard6pixmapENS_4ModeE(void *this_, QClipboard::Mode mode) {
 // /usr/include/qt/QtGui/qclipboard.h:82
 // void setImage(const class QImage &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard8setImageERK6QImageNS_4ModeE(void *this_, const QImage & a0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setImage(a0, mode);
+void C_ZN10QClipboard8setImageERK6QImageNS_4ModeE(void *this_, const QImage & arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setImage(arg0, mode);
 }
 // /usr/include/qt/QtGui/qclipboard.h:83
 // void setPixmap(const class QPixmap &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, const QPixmap & a0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setPixmap(a0, mode);
+void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, const QPixmap & arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setPixmap(arg0, mode);
 }
 // /usr/include/qt/QtGui/qclipboard.h:86
 // void changed(class QClipboard::Mode)
@@ -123,3 +127,4 @@ extern "C"
 void C_ZN10QClipboard11dataChangedEv(void *this_) {
   ((QClipboard*)this_)->dataChanged();
 }
+//  main block end

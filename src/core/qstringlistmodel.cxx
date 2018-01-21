@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstringlistmodel.h
 #include <qstringlistmodel.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qstringlistmodel.h:53
 // const QMetaObject * metaObject()
@@ -96,3 +100,4 @@ extern "C"
 void C_ZNK16QStringListModel20supportedDropActionsEv(void *this_) {
   /*return*/ ((QStringListModel*)this_)->supportedDropActions();
 }
+//  main block end

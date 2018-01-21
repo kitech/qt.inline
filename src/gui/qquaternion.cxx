@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qquaternion.h
 #include <qquaternion.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qquaternion.h:58
 // void QQuaternion()
 extern "C"
@@ -12,8 +16,8 @@ void* C_ZN11QQuaternionC1Ev() {
 // /usr/include/qt/QtGui/qquaternion.h:59
 // void QQuaternion(Qt::Initialization)
 extern "C"
-void* C_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization a0) {
-  return new QQuaternion(a0);
+void* C_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return new QQuaternion(arg0);
 }
 // /usr/include/qt/QtGui/qquaternion.h:60
 // void QQuaternion(float, float, float, float)
@@ -281,3 +285,4 @@ extern "C"
 void C_ZN11QQuaternion5nlerpERKS_S1_f(const QQuaternion & q1, const QQuaternion & q2, float t) {
   /*return*/ QQuaternion::nlerp(q1, q2, t);
 }
+//  main block end

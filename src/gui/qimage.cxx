@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qimage.h
 #include <qimage.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qimage.h:131
 // void QImage()
 extern "C"
@@ -167,8 +171,8 @@ void C_ZN6QImage8setColorEij(void *this_, int i, QRgb c) {
 // /usr/include/qt/QtGui/qimage.h:202
 // void setColorCount(int)
 extern "C"
-void C_ZN6QImage13setColorCountEi(void *this_, int a0) {
-  ((QImage*)this_)->setColorCount(a0);
+void C_ZN6QImage13setColorCountEi(void *this_, int arg0) {
+  ((QImage*)this_)->setColorCount(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:204
 // bool allGray()
@@ -209,20 +213,20 @@ void C_ZNK6QImage9byteCountEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:213
 // uchar * scanLine(int)
 extern "C"
-void C_ZN6QImage8scanLineEi(void *this_, int a0) {
-  /*return*/ ((QImage*)this_)->scanLine(a0);
+void C_ZN6QImage8scanLineEi(void *this_, int arg0) {
+  /*return*/ ((QImage*)this_)->scanLine(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:214
 // const uchar * scanLine(int)
 extern "C"
-void C_ZNK6QImage8scanLineEi(void *this_, int a0) {
-  /*return*/ ((QImage*)this_)->scanLine(a0);
+void C_ZNK6QImage8scanLineEi(void *this_, int arg0) {
+  /*return*/ ((QImage*)this_)->scanLine(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:215
 // const uchar * constScanLine(int)
 extern "C"
-void C_ZNK6QImage13constScanLineEi(void *this_, int a0) {
-  /*return*/ ((QImage*)this_)->constScanLine(a0);
+void C_ZNK6QImage13constScanLineEi(void *this_, int arg0) {
+  /*return*/ ((QImage*)this_)->constScanLine(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:216
 // int bytesPerLine()
@@ -415,8 +419,8 @@ void C_ZNK6QImage11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, 
 // /usr/include/qt/QtGui/qimage.h:268
 // QMatrix trueMatrix(const class QMatrix &, int, int)
 extern "C"
-void C_ZN6QImage10trueMatrixERK7QMatrixii(const QMatrix & a0, int w, int h) {
-  /*return*/ QImage::trueMatrix(a0, w, h);
+void C_ZN6QImage10trueMatrixERK7QMatrixii(const QMatrix & arg0, int w, int h) {
+  /*return*/ QImage::trueMatrix(arg0, w, h);
 }
 // /usr/include/qt/QtGui/qimage.h:269
 // QImage transformed(const class QTransform &, Qt::TransformationMode)
@@ -428,8 +432,8 @@ void C_ZNK6QImage11transformedERK10QTransformN2Qt18TransformationModeE(void *thi
 // /usr/include/qt/QtGui/qimage.h:270
 // QTransform trueMatrix(const class QTransform &, int, int)
 extern "C"
-void C_ZN6QImage10trueMatrixERK10QTransformii(const QTransform & a0, int w, int h) {
-  /*return*/ QImage::trueMatrix(a0, w, h);
+void C_ZN6QImage10trueMatrixERK10QTransformii(const QTransform & arg0, int w, int h) {
+  /*return*/ QImage::trueMatrix(arg0, w, h);
 }
 // inline
 // /usr/include/qt/QtGui/qimage.h:272
@@ -462,8 +466,8 @@ void C_ZNO6QImage10rgbSwappedEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:284
 // void invertPixels(enum QImage::InvertMode)
 extern "C"
-void C_ZN6QImage12invertPixelsENS_10InvertModeE(void *this_, QImage::InvertMode a0) {
-  ((QImage*)this_)->invertPixels(a0);
+void C_ZN6QImage12invertPixelsENS_10InvertModeE(void *this_, QImage::InvertMode arg0) {
+  ((QImage*)this_)->invertPixels(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:287
 // bool load(class QIODevice *, const char *)
@@ -544,14 +548,14 @@ void C_ZNK6QImage13dotsPerMeterYEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:310
 // void setDotsPerMeterX(int)
 extern "C"
-void C_ZN6QImage16setDotsPerMeterXEi(void *this_, int a0) {
-  ((QImage*)this_)->setDotsPerMeterX(a0);
+void C_ZN6QImage16setDotsPerMeterXEi(void *this_, int arg0) {
+  ((QImage*)this_)->setDotsPerMeterX(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:311
 // void setDotsPerMeterY(int)
 extern "C"
-void C_ZN6QImage16setDotsPerMeterYEi(void *this_, int a0) {
-  ((QImage*)this_)->setDotsPerMeterY(a0);
+void C_ZN6QImage16setDotsPerMeterYEi(void *this_, int arg0) {
+  ((QImage*)this_)->setDotsPerMeterY(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:312
 // QPoint offset()
@@ -562,8 +566,8 @@ void C_ZNK6QImage6offsetEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:313
 // void setOffset(const class QPoint &)
 extern "C"
-void C_ZN6QImage9setOffsetERK6QPoint(void *this_, const QPoint & a0) {
-  ((QImage*)this_)->setOffset(a0);
+void C_ZN6QImage9setOffsetERK6QPoint(void *this_, const QPoint & arg0) {
+  ((QImage*)this_)->setOffset(arg0);
 }
 // /usr/include/qt/QtGui/qimage.h:315
 // QStringList textKeys()
@@ -603,3 +607,4 @@ extern "C"
 void C_ZN6QImage13toImageFormatE12QPixelFormat(QPixelFormat format) {
   /*return*/ QImage::toImageFormat(format);
 }
+//  main block end

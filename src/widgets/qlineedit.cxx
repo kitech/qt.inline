@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qlineedit.h
 #include <qlineedit.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qlineedit.h:65
 // const QMetaObject * metaObject()
@@ -18,8 +22,8 @@ void* C_ZN9QLineEditC1EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qlineedit.h:94
 // void QLineEdit(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QLineEditC1ERK7QStringP7QWidget(const QString & a0, QWidget * parent) {
-  return new QLineEdit(a0, parent);
+void* C_ZN9QLineEditC1ERK7QStringP7QWidget(const QString & arg0, QWidget * parent) {
+  return new QLineEdit(arg0, parent);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qlineedit.h:95
@@ -49,8 +53,8 @@ void C_ZNK9QLineEdit15placeholderTextEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:102
 // void setPlaceholderText(const class QString &)
 extern "C"
-void C_ZN9QLineEdit18setPlaceholderTextERK7QString(void *this_, const QString & a0) {
-  ((QLineEdit*)this_)->setPlaceholderText(a0);
+void C_ZN9QLineEdit18setPlaceholderTextERK7QString(void *this_, const QString & arg0) {
+  ((QLineEdit*)this_)->setPlaceholderText(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:104
 // int maxLength()
@@ -61,14 +65,14 @@ void C_ZNK9QLineEdit9maxLengthEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:105
 // void setMaxLength(int)
 extern "C"
-void C_ZN9QLineEdit12setMaxLengthEi(void *this_, int a0) {
-  ((QLineEdit*)this_)->setMaxLength(a0);
+void C_ZN9QLineEdit12setMaxLengthEi(void *this_, int arg0) {
+  ((QLineEdit*)this_)->setMaxLength(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:107
 // void setFrame(_Bool)
 extern "C"
-void C_ZN9QLineEdit8setFrameEb(void *this_, bool a0) {
-  ((QLineEdit*)this_)->setFrame(a0);
+void C_ZN9QLineEdit8setFrameEb(void *this_, bool arg0) {
+  ((QLineEdit*)this_)->setFrame(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:108
 // bool hasFrame()
@@ -97,8 +101,8 @@ void C_ZNK9QLineEdit8echoModeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:116
 // void setEchoMode(enum QLineEdit::EchoMode)
 extern "C"
-void C_ZN9QLineEdit11setEchoModeENS_8EchoModeE(void *this_, QLineEdit::EchoMode a0) {
-  ((QLineEdit*)this_)->setEchoMode(a0);
+void C_ZN9QLineEdit11setEchoModeENS_8EchoModeE(void *this_, QLineEdit::EchoMode arg0) {
+  ((QLineEdit*)this_)->setEchoMode(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:118
 // bool isReadOnly()
@@ -109,14 +113,14 @@ void C_ZNK9QLineEdit10isReadOnlyEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:119
 // void setReadOnly(_Bool)
 extern "C"
-void C_ZN9QLineEdit11setReadOnlyEb(void *this_, bool a0) {
-  ((QLineEdit*)this_)->setReadOnly(a0);
+void C_ZN9QLineEdit11setReadOnlyEb(void *this_, bool arg0) {
+  ((QLineEdit*)this_)->setReadOnly(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:122
 // void setValidator(const class QValidator *)
 extern "C"
-void C_ZN9QLineEdit12setValidatorEPK10QValidator(void *this_, const QValidator * a0) {
-  ((QLineEdit*)this_)->setValidator(a0);
+void C_ZN9QLineEdit12setValidatorEPK10QValidator(void *this_, const QValidator * arg0) {
+  ((QLineEdit*)this_)->setValidator(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:123
 // const QValidator * validator()
@@ -159,8 +163,8 @@ void C_ZNK9QLineEdit14cursorPositionEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:135
 // void setCursorPosition(int)
 extern "C"
-void C_ZN9QLineEdit17setCursorPositionEi(void *this_, int a0) {
-  ((QLineEdit*)this_)->setCursorPosition(a0);
+void C_ZN9QLineEdit17setCursorPositionEi(void *this_, int arg0) {
+  ((QLineEdit*)this_)->setCursorPosition(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:136
 // int cursorPositionAt(const class QPoint &)
@@ -237,14 +241,14 @@ void C_ZNK9QLineEdit10isModifiedEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:151
 // void setModified(_Bool)
 extern "C"
-void C_ZN9QLineEdit11setModifiedEb(void *this_, bool a0) {
-  ((QLineEdit*)this_)->setModified(a0);
+void C_ZN9QLineEdit11setModifiedEb(void *this_, bool arg0) {
+  ((QLineEdit*)this_)->setModified(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:153
 // void setSelection(int, int)
 extern "C"
-void C_ZN9QLineEdit12setSelectionEii(void *this_, int a0, int a1) {
-  ((QLineEdit*)this_)->setSelection(a0, a1);
+void C_ZN9QLineEdit12setSelectionEii(void *this_, int arg0, int arg1) {
+  ((QLineEdit*)this_)->setSelection(arg0, arg1);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:154
 // bool hasSelectedText()
@@ -357,8 +361,8 @@ void C_ZN9QLineEdit9addActionERK5QIconNS_14ActionPositionE(void *this_, const QI
 // /usr/include/qt/QtWidgets/qlineedit.h:181
 // void setText(const class QString &)
 extern "C"
-void C_ZN9QLineEdit7setTextERK7QString(void *this_, const QString & a0) {
-  ((QLineEdit*)this_)->setText(a0);
+void C_ZN9QLineEdit7setTextERK7QString(void *this_, const QString & arg0) {
+  ((QLineEdit*)this_)->setText(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:182
 // void clear()
@@ -417,20 +421,20 @@ void C_ZN9QLineEdit25createStandardContextMenuEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:200
 // void textChanged(const class QString &)
 extern "C"
-void C_ZN9QLineEdit11textChangedERK7QString(void *this_, const QString & a0) {
-  ((QLineEdit*)this_)->textChanged(a0);
+void C_ZN9QLineEdit11textChangedERK7QString(void *this_, const QString & arg0) {
+  ((QLineEdit*)this_)->textChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:201
 // void textEdited(const class QString &)
 extern "C"
-void C_ZN9QLineEdit10textEditedERK7QString(void *this_, const QString & a0) {
-  ((QLineEdit*)this_)->textEdited(a0);
+void C_ZN9QLineEdit10textEditedERK7QString(void *this_, const QString & arg0) {
+  ((QLineEdit*)this_)->textEdited(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:202
 // void cursorPositionChanged(int, int)
 extern "C"
-void C_ZN9QLineEdit21cursorPositionChangedEii(void *this_, int a0, int a1) {
-  ((QLineEdit*)this_)->cursorPositionChanged(a0, a1);
+void C_ZN9QLineEdit21cursorPositionChangedEii(void *this_, int arg0, int arg1) {
+  ((QLineEdit*)this_)->cursorPositionChanged(arg0, arg1);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:203
 // void returnPressed()
@@ -454,8 +458,8 @@ void C_ZN9QLineEdit16selectionChangedEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlineedit.h:230
 // QVariant inputMethodQuery(Qt::InputMethodQuery)
 extern "C"
-void C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery a0) {
-  /*return*/ ((QLineEdit*)this_)->inputMethodQuery(a0);
+void C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery arg0) {
+  /*return*/ ((QLineEdit*)this_)->inputMethodQuery(arg0);
 }
 // /usr/include/qt/QtWidgets/qlineedit.h:231
 // QVariant inputMethodQuery(Qt::InputMethodQuery, class QVariant)
@@ -467,6 +471,7 @@ void C_ZNK9QLineEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *th
 // /usr/include/qt/QtWidgets/qlineedit.h:232
 // bool event(class QEvent *)
 extern "C"
-void C_ZN9QLineEdit5eventEP6QEvent(void *this_, QEvent * a0) {
-  /*return*/ ((QLineEdit*)this_)->event(a0);
+void C_ZN9QLineEdit5eventEP6QEvent(void *this_, QEvent * arg0) {
+  /*return*/ ((QLineEdit*)this_)->event(arg0);
 }
+//  main block end

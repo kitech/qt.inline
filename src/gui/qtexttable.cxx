@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtexttable.h
 #include <qtexttable.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qtexttable.h:100
 // const QMetaObject * metaObject()
@@ -137,3 +141,4 @@ extern "C"
 void C_ZNK10QTextTable6formatEv(void *this_) {
   /*return*/ ((QTextTable*)this_)->format();
 }
+//  main block end

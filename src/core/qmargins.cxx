@@ -1,91 +1,82 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmargins.h
 #include <qmargins.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
-// /usr/include/qt/QtCore/qmargins.h:288
-// void QMarginsF()
+// /usr/include/qt/QtCore/qmargins.h:54
+// void QMargins()
 extern "C"
-void* C_ZN9QMarginsFC1Ev() {
-  return new QMarginsF();
+void* C_ZN8QMarginsC1Ev() {
+  return new QMargins();
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:289
-// void QMarginsF(qreal, qreal, qreal, qreal)
+// /usr/include/qt/QtCore/qmargins.h:55
+// void QMargins(int, int, int, int)
 extern "C"
-void* C_ZN9QMarginsFC1Edddd(qreal left, qreal top, qreal right, qreal bottom) {
-  return new QMarginsF(left, top, right, bottom);
+void* C_ZN8QMarginsC1Eiiii(int left, int top, int right, int bottom) {
+  return new QMargins(left, top, right, bottom);
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:290
-// void QMarginsF(const class QMargins &)
-extern "C"
-void* C_ZN9QMarginsFC1ERK8QMargins(const QMargins & margins) {
-  return new QMarginsF(margins);
-}
-// inline
-// /usr/include/qt/QtCore/qmargins.h:292
+// /usr/include/qt/QtCore/qmargins.h:57
 // bool isNull()
 extern "C"
-void C_ZNK9QMarginsF6isNullEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->isNull();
+void C_ZNK8QMargins6isNullEv(void *this_) {
+  /*return*/ ((QMargins*)this_)->isNull();
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:294
-// qreal left()
+// /usr/include/qt/QtCore/qmargins.h:59
+// int left()
 extern "C"
-void C_ZNK9QMarginsF4leftEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->left();
+void C_ZNK8QMargins4leftEv(void *this_) {
+  /*return*/ ((QMargins*)this_)->left();
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:295
-// qreal top()
+// /usr/include/qt/QtCore/qmargins.h:60
+// int top()
 extern "C"
-void C_ZNK9QMarginsF3topEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->top();
+void C_ZNK8QMargins3topEv(void *this_) {
+  /*return*/ ((QMargins*)this_)->top();
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:296
-// qreal right()
+// /usr/include/qt/QtCore/qmargins.h:61
+// int right()
 extern "C"
-void C_ZNK9QMarginsF5rightEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->right();
+void C_ZNK8QMargins5rightEv(void *this_) {
+  /*return*/ ((QMargins*)this_)->right();
 }
 // inline
-// /usr/include/qt/QtCore/qmargins.h:297
-// qreal bottom()
+// /usr/include/qt/QtCore/qmargins.h:62
+// int bottom()
 extern "C"
-void C_ZNK9QMarginsF6bottomEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->bottom();
+void C_ZNK8QMargins6bottomEv(void *this_) {
+  /*return*/ ((QMargins*)this_)->bottom();
 }
-// /usr/include/qt/QtCore/qmargins.h:299
-// void setLeft(qreal)
+// /usr/include/qt/QtCore/qmargins.h:64
+// void setLeft(int)
 extern "C"
-void C_ZN9QMarginsF7setLeftEd(void *this_, qreal left) {
-  ((QMarginsF*)this_)->setLeft(left);
+void C_ZN8QMargins7setLeftEi(void *this_, int left) {
+  ((QMargins*)this_)->setLeft(left);
 }
-// /usr/include/qt/QtCore/qmargins.h:300
-// void setTop(qreal)
+// /usr/include/qt/QtCore/qmargins.h:65
+// void setTop(int)
 extern "C"
-void C_ZN9QMarginsF6setTopEd(void *this_, qreal top) {
-  ((QMarginsF*)this_)->setTop(top);
+void C_ZN8QMargins6setTopEi(void *this_, int top) {
+  ((QMargins*)this_)->setTop(top);
 }
-// /usr/include/qt/QtCore/qmargins.h:301
-// void setRight(qreal)
+// /usr/include/qt/QtCore/qmargins.h:66
+// void setRight(int)
 extern "C"
-void C_ZN9QMarginsF8setRightEd(void *this_, qreal right) {
-  ((QMarginsF*)this_)->setRight(right);
+void C_ZN8QMargins8setRightEi(void *this_, int right) {
+  ((QMargins*)this_)->setRight(right);
 }
-// /usr/include/qt/QtCore/qmargins.h:302
-// void setBottom(qreal)
+// /usr/include/qt/QtCore/qmargins.h:67
+// void setBottom(int)
 extern "C"
-void C_ZN9QMarginsF9setBottomEd(void *this_, qreal bottom) {
-  ((QMarginsF*)this_)->setBottom(bottom);
+void C_ZN8QMargins9setBottomEi(void *this_, int bottom) {
+  ((QMargins*)this_)->setBottom(bottom);
 }
-// inline
-// /usr/include/qt/QtCore/qmargins.h:311
-// QMargins toMargins()
-extern "C"
-void C_ZNK9QMarginsF9toMarginsEv(void *this_) {
-  /*return*/ ((QMarginsF*)this_)->toMargins();
-}
+//  main block end

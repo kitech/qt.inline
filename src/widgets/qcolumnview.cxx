@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcolumnview.h
 #include <qcolumnview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcolumnview.h:54
 // const QMetaObject * metaObject()
@@ -120,3 +124,4 @@ extern "C"
 void C_ZNK11QColumnView12columnWidthsEv(void *this_) {
   /*return*/ ((QColumnView*)this_)->columnWidths();
 }
+//  main block end

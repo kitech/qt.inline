@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qpropertyanimation.h
 #include <qpropertyanimation.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qpropertyanimation.h:53
 // const QMetaObject * metaObject()
@@ -52,3 +56,4 @@ extern "C"
 void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, const QByteArray & propertyName) {
   ((QPropertyAnimation*)this_)->setPropertyName(propertyName);
 }
+//  main block end

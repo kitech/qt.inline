@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmenu.h
 #include <qmenu.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmenu.h:67
 // const QMetaObject * metaObject()
@@ -127,8 +131,8 @@ void C_ZN5QMenu5clearEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmenu.h:170
 // void setTearOffEnabled(_Bool)
 extern "C"
-void C_ZN5QMenu17setTearOffEnabledEb(void *this_, bool a0) {
-  ((QMenu*)this_)->setTearOffEnabled(a0);
+void C_ZN5QMenu17setTearOffEnabledEb(void *this_, bool arg0) {
+  ((QMenu*)this_)->setTearOffEnabled(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenu.h:171
 // bool isTearOffEnabled()
@@ -163,8 +167,8 @@ void C_ZN5QMenu15hideTearOffMenuEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmenu.h:178
 // void setDefaultAction(class QAction *)
 extern "C"
-void C_ZN5QMenu16setDefaultActionEP7QAction(void *this_, QAction * a0) {
-  ((QMenu*)this_)->setDefaultAction(a0);
+void C_ZN5QMenu16setDefaultActionEP7QAction(void *this_, QAction * arg0) {
+  ((QMenu*)this_)->setDefaultAction(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenu.h:179
 // QAction * defaultAction()
@@ -219,14 +223,14 @@ void C_ZNK5QMenu8sizeHintEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmenu.h:196
 // QRect actionGeometry(class QAction *)
 extern "C"
-void C_ZNK5QMenu14actionGeometryEP7QAction(void *this_, QAction * a0) {
-  /*return*/ ((QMenu*)this_)->actionGeometry(a0);
+void C_ZNK5QMenu14actionGeometryEP7QAction(void *this_, QAction * arg0) {
+  /*return*/ ((QMenu*)this_)->actionGeometry(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenu.h:197
 // QAction * actionAt(const class QPoint &)
 extern "C"
-void C_ZNK5QMenu8actionAtERK6QPoint(void *this_, const QPoint & a0) {
-  /*return*/ ((QMenu*)this_)->actionAt(a0);
+void C_ZNK5QMenu8actionAtERK6QPoint(void *this_, const QPoint & arg0) {
+  /*return*/ ((QMenu*)this_)->actionAt(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenu.h:199
 // QAction * menuAction()
@@ -324,3 +328,4 @@ extern "C"
 void C_ZN5QMenu7hoveredEP7QAction(void *this_, QAction * action) {
   ((QMenu*)this_)->hovered(action);
 }
+//  main block end

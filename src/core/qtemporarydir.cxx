@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtemporarydir.h
 #include <qtemporarydir.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qtemporarydir.h:56
 // void QTemporaryDir()
 extern "C"
@@ -56,3 +60,4 @@ extern "C"
 void C_ZNK13QTemporaryDir4pathEv(void *this_) {
   /*return*/ ((QTemporaryDir*)this_)->path();
 }
+//  main block end

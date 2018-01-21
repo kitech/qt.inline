@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtoolbutton.h
 #include <qtoolbutton.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtoolbutton.h:56
 // const QMetaObject * metaObject()
@@ -111,12 +115,13 @@ void C_ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Q
 // /usr/include/qt/QtWidgets/qtoolbutton.h:102
 // void setDefaultAction(class QAction *)
 extern "C"
-void C_ZN11QToolButton16setDefaultActionEP7QAction(void *this_, QAction * a0) {
-  ((QToolButton*)this_)->setDefaultAction(a0);
+void C_ZN11QToolButton16setDefaultActionEP7QAction(void *this_, QAction * arg0) {
+  ((QToolButton*)this_)->setDefaultAction(arg0);
 }
 // /usr/include/qt/QtWidgets/qtoolbutton.h:105
 // void triggered(class QAction *)
 extern "C"
-void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * a0) {
-  ((QToolButton*)this_)->triggered(a0);
+void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * arg0) {
+  ((QToolButton*)this_)->triggered(arg0);
 }
+//  main block end

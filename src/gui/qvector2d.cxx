@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qvector2d.h
 #include <qvector2d.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qvector2d.h:58
 // void QVector2D()
@@ -13,8 +17,8 @@ void* C_ZN9QVector2DC1Ev() {
 // /usr/include/qt/QtGui/qvector2d.h:59
 // void QVector2D(Qt::Initialization)
 extern "C"
-void* C_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization a0) {
-  return new QVector2D(a0);
+void* C_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return new QVector2D(arg0);
 }
 // inline
 // /usr/include/qt/QtGui/qvector2d.h:60
@@ -150,3 +154,4 @@ extern "C"
 void C_ZNK9QVector2D8toPointFEv(void *this_) {
   /*return*/ ((QVector2D*)this_)->toPointF();
 }
+//  main block end

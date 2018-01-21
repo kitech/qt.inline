@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpixelformat.h
 #include <qpixelformat.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qpixelformat.h:163
 // void QPixelFormat()
@@ -170,3 +174,4 @@ extern "C"
 void C_ZNK12QPixelFormat7subEnumEv(void *this_) {
   /*return*/ ((QPixelFormat*)this_)->subEnum();
 }
+//  main block end

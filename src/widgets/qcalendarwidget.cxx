@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcalendarwidget.h
 #include <qcalendarwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:57
 // const QMetaObject * metaObject()
@@ -294,3 +298,4 @@ extern "C"
 void C_ZN15QCalendarWidget18currentPageChangedEii(void *this_, int year, int month) {
   ((QCalendarWidget*)this_)->currentPageChanged(year, month);
 }
+//  main block end

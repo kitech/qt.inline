@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qactiongroup.h
 #include <qactiongroup.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qactiongroup.h:54
 // const QMetaObject * metaObject()
@@ -79,8 +83,8 @@ void C_ZNK12QActionGroup9isVisibleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qactiongroup.h:78
 // void setEnabled(_Bool)
 extern "C"
-void C_ZN12QActionGroup10setEnabledEb(void *this_, bool a0) {
-  ((QActionGroup*)this_)->setEnabled(a0);
+void C_ZN12QActionGroup10setEnabledEb(void *this_, bool arg0) {
+  ((QActionGroup*)this_)->setEnabled(arg0);
 }
 // inline
 // /usr/include/qt/QtWidgets/qactiongroup.h:79
@@ -92,24 +96,25 @@ void C_ZN12QActionGroup11setDisabledEb(void *this_, bool b) {
 // /usr/include/qt/QtWidgets/qactiongroup.h:80
 // void setVisible(_Bool)
 extern "C"
-void C_ZN12QActionGroup10setVisibleEb(void *this_, bool a0) {
-  ((QActionGroup*)this_)->setVisible(a0);
+void C_ZN12QActionGroup10setVisibleEb(void *this_, bool arg0) {
+  ((QActionGroup*)this_)->setVisible(arg0);
 }
 // /usr/include/qt/QtWidgets/qactiongroup.h:81
 // void setExclusive(_Bool)
 extern "C"
-void C_ZN12QActionGroup12setExclusiveEb(void *this_, bool a0) {
-  ((QActionGroup*)this_)->setExclusive(a0);
+void C_ZN12QActionGroup12setExclusiveEb(void *this_, bool arg0) {
+  ((QActionGroup*)this_)->setExclusive(arg0);
 }
 // /usr/include/qt/QtWidgets/qactiongroup.h:84
 // void triggered(class QAction *)
 extern "C"
-void C_ZN12QActionGroup9triggeredEP7QAction(void *this_, QAction * a0) {
-  ((QActionGroup*)this_)->triggered(a0);
+void C_ZN12QActionGroup9triggeredEP7QAction(void *this_, QAction * arg0) {
+  ((QActionGroup*)this_)->triggered(arg0);
 }
 // /usr/include/qt/QtWidgets/qactiongroup.h:85
 // void hovered(class QAction *)
 extern "C"
-void C_ZN12QActionGroup7hoveredEP7QAction(void *this_, QAction * a0) {
-  ((QActionGroup*)this_)->hovered(a0);
+void C_ZN12QActionGroup7hoveredEP7QAction(void *this_, QAction * arg0) {
+  ((QActionGroup*)this_)->hovered(arg0);
 }
+//  main block end

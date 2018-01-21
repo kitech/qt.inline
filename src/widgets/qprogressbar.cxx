@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qprogressbar.h
 #include <qprogressbar.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qprogressbar.h:55
 // const QMetaObject * metaObject()
@@ -166,8 +170,8 @@ void C_ZN12QProgressBar8setValueEi(void *this_, int value) {
 // /usr/include/qt/QtWidgets/qprogressbar.h:106
 // void setOrientation(Qt::Orientation)
 extern "C"
-void C_ZN12QProgressBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation a0) {
-  ((QProgressBar*)this_)->setOrientation(a0);
+void C_ZN12QProgressBar14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation arg0) {
+  ((QProgressBar*)this_)->setOrientation(arg0);
 }
 // /usr/include/qt/QtWidgets/qprogressbar.h:109
 // void valueChanged(int)
@@ -175,3 +179,4 @@ extern "C"
 void C_ZN12QProgressBar12valueChangedEi(void *this_, int value) {
   ((QProgressBar*)this_)->valueChanged(value);
 }
+//  main block end

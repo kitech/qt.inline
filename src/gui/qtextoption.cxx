@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextoption.h
 #include <qtextoption.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qtextoption.h:84
 // void QTextOption()
 extern "C"
@@ -128,3 +132,4 @@ extern "C"
 void C_ZNK11QTextOption16useDesignMetricsEv(void *this_) {
   /*return*/ ((QTextOption*)this_)->useDesignMetrics();
 }
+//  main block end

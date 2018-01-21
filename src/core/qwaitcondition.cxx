@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qwaitcondition.h
 #include <qwaitcondition.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qwaitcondition.h:59
 // void QWaitCondition()
 extern "C"
@@ -38,3 +42,4 @@ extern "C"
 void C_ZN14QWaitCondition7wakeAllEv(void *this_) {
   ((QWaitCondition*)this_)->wakeAll();
 }
+//  main block end

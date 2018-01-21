@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
 #include <qkeysequenceedit.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:53
 // const QMetaObject * metaObject()
@@ -58,3 +62,4 @@ extern "C"
 void C_ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(void *this_, const QKeySequence & keySequence) {
   ((QKeySequenceEdit*)this_)->keySequenceChanged(keySequence);
 }
+//  main block end

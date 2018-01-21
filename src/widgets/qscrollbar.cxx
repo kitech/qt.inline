@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qscrollbar.h
 #include <qscrollbar.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qscrollbar.h:56
 // const QMetaObject * metaObject()
@@ -18,8 +22,8 @@ void* C_ZN10QScrollBarC1EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qscrollbar.h:59
 // void QScrollBar(Qt::Orientation, class QWidget *)
 extern "C"
-void* C_ZN10QScrollBarC1EN2Qt11OrientationEP7QWidget(Qt::Orientation a0, QWidget * parent) {
-  return new QScrollBar(a0, parent);
+void* C_ZN10QScrollBarC1EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
+  return new QScrollBar(arg0, parent);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qscrollbar.h:60
@@ -42,3 +46,4 @@ extern "C"
 void C_ZN10QScrollBar5eventEP6QEvent(void *this_, QEvent * event) {
   /*return*/ ((QScrollBar*)this_)->event(event);
 }
+//  main block end

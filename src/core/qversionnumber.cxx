@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qversionnumber.h
 #include <qversionnumber.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/qversionnumber.h:221
 // void QVersionNumber()
@@ -145,3 +149,4 @@ extern "C"
 void C_ZN14QVersionNumber10fromStringERK7QStringPi(const QString & string, int * suffixIndex) {
   /*return*/ QVersionNumber::fromString(string, suffixIndex);
 }
+//  main block end

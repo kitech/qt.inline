@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #include <qtreewidgetitemiterator.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
 // void QTreeWidgetItemIterator(class QTreeWidget *, IteratorFlags)
 extern "C"
@@ -20,3 +24,4 @@ extern "C"
 void C_ZN23QTreeWidgetItemIteratorD1Ev(void *this_) {
   delete (QTreeWidgetItemIterator*)(this_);
 }
+//  main block end

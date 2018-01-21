@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsignalmapper.h
 #include <qsignalmapper.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsignalmapper.h:51
 // const QMetaObject * metaObject()
@@ -79,26 +83,26 @@ void C_ZNK13QSignalMapper7mappingEP7QObject(void *this_, QObject * object) {
 // /usr/include/qt/QtCore/qsignalmapper.h:69
 // void mapped(int)
 extern "C"
-void C_ZN13QSignalMapper6mappedEi(void *this_, int a0) {
-  ((QSignalMapper*)this_)->mapped(a0);
+void C_ZN13QSignalMapper6mappedEi(void *this_, int arg0) {
+  ((QSignalMapper*)this_)->mapped(arg0);
 }
 // /usr/include/qt/QtCore/qsignalmapper.h:70
 // void mapped(const class QString &)
 extern "C"
-void C_ZN13QSignalMapper6mappedERK7QString(void *this_, const QString & a0) {
-  ((QSignalMapper*)this_)->mapped(a0);
+void C_ZN13QSignalMapper6mappedERK7QString(void *this_, const QString & arg0) {
+  ((QSignalMapper*)this_)->mapped(arg0);
 }
 // /usr/include/qt/QtCore/qsignalmapper.h:71
 // void mapped(class QWidget *)
 extern "C"
-void C_ZN13QSignalMapper6mappedEP7QWidget(void *this_, QWidget * a0) {
-  ((QSignalMapper*)this_)->mapped(a0);
+void C_ZN13QSignalMapper6mappedEP7QWidget(void *this_, QWidget * arg0) {
+  ((QSignalMapper*)this_)->mapped(arg0);
 }
 // /usr/include/qt/QtCore/qsignalmapper.h:72
 // void mapped(class QObject *)
 extern "C"
-void C_ZN13QSignalMapper6mappedEP7QObject(void *this_, QObject * a0) {
-  ((QSignalMapper*)this_)->mapped(a0);
+void C_ZN13QSignalMapper6mappedEP7QObject(void *this_, QObject * arg0) {
+  ((QSignalMapper*)this_)->mapped(arg0);
 }
 // /usr/include/qt/QtCore/qsignalmapper.h:75
 // void map()
@@ -112,3 +116,4 @@ extern "C"
 void C_ZN13QSignalMapper3mapEP7QObject(void *this_, QObject * sender) {
   ((QSignalMapper*)this_)->map(sender);
 }
+//  main block end

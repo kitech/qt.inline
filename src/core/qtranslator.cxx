@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtranslator.h
 #include <qtranslator.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qtranslator.h:56
 // const QMetaObject * metaObject()
@@ -54,3 +58,4 @@ extern "C"
 void C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, const QString & directory) {
   /*return*/ ((QTranslator*)this_)->load(data, len, directory);
 }
+//  main block end

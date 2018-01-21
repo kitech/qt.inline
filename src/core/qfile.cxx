@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qfile.h
 #include <qfile.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qfile.h:60
 // const QMetaObject * metaObject()
@@ -234,3 +238,4 @@ extern "C"
 void C_ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE(const QString & filename, QFlags<QFileDevice::Permission> permissionSpec) {
   /*return*/ QFile::setPermissions(filename, permissionSpec);
 }
+//  main block end

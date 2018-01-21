@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qbytearraymatcher.h
 #include <qbytearraymatcher.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qbytearraymatcher.h:53
 // void QByteArrayMatcher()
 extern "C"
@@ -51,3 +55,4 @@ extern "C"
 void C_ZNK17QByteArrayMatcher7patternEv(void *this_) {
   /*return*/ ((QByteArrayMatcher*)this_)->pattern();
 }
+//  main block end

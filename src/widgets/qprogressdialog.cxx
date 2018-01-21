@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qprogressdialog.h
 #include <qprogressdialog.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qprogressdialog.h:58
 // const QMetaObject * metaObject()
@@ -179,3 +183,4 @@ extern "C"
 void C_ZN15QProgressDialog8canceledEv(void *this_) {
   ((QProgressDialog*)this_)->canceled();
 }
+//  main block end

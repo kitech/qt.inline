@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qdir.h
 #include <qdir.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qdir.h:102
 // void QDir(const class QString &)
 extern "C"
@@ -412,3 +416,4 @@ extern "C"
 void C_ZNK4QDir7refreshEv(void *this_) {
   ((QDir*)this_)->refresh();
 }
+//  main block end

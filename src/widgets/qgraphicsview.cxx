@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsview.h
 #include <qgraphicsview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgraphicsview.h:61
 // const QMetaObject * metaObject()
@@ -533,3 +537,4 @@ extern "C"
 void C_ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(void *this_, QRect viewportRect, QPointF fromScenePoint, QPointF toScenePoint) {
   ((QGraphicsView*)this_)->rubberBandChanged(viewportRect, fromScenePoint, toScenePoint);
 }
+//  main block end

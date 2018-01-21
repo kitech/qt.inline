@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/quuid.h
 #include <quuid.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/quuid.h:90
 // void QUuid()
@@ -19,14 +23,14 @@ void* C_ZN5QUuidC1Ejtthhhhhhhh(uint l, ushort w1, ushort w2, uchar b1, uchar b2,
 // /usr/include/qt/QtCore/quuid.h:120
 // void QUuid(const class QString &)
 extern "C"
-void* C_ZN5QUuidC1ERK7QString(const QString & a0) {
-  return new QUuid(a0);
+void* C_ZN5QUuidC1ERK7QString(const QString & arg0) {
+  return new QUuid(arg0);
 }
 // /usr/include/qt/QtCore/quuid.h:121
 // void QUuid(const char *)
 extern "C"
-void* C_ZN5QUuidC1EPKc(const char * a0) {
-  return new QUuid(a0);
+void* C_ZN5QUuidC1EPKc(const char * arg0) {
+  return new QUuid(arg0);
 }
 // /usr/include/qt/QtCore/quuid.h:122
 // QString toString()
@@ -37,8 +41,8 @@ void C_ZNK5QUuid8toStringEv(void *this_) {
 // /usr/include/qt/QtCore/quuid.h:123
 // void QUuid(const class QByteArray &)
 extern "C"
-void* C_ZN5QUuidC1ERK10QByteArray(const QByteArray & a0) {
-  return new QUuid(a0);
+void* C_ZN5QUuidC1ERK10QByteArray(const QByteArray & arg0) {
+  return new QUuid(arg0);
 }
 // /usr/include/qt/QtCore/quuid.h:124
 // QByteArray toByteArray()
@@ -56,8 +60,8 @@ void C_ZNK5QUuid9toRfc4122Ev(void *this_) {
 // /usr/include/qt/QtCore/quuid.h:126
 // QUuid fromRfc4122(const class QByteArray &)
 extern "C"
-void C_ZN5QUuid11fromRfc4122ERK10QByteArray(const QByteArray & a0) {
-  /*return*/ QUuid::fromRfc4122(a0);
+void C_ZN5QUuid11fromRfc4122ERK10QByteArray(const QByteArray & arg0) {
+  /*return*/ QUuid::fromRfc4122(arg0);
 }
 // /usr/include/qt/QtCore/quuid.h:127
 // bool isNull()
@@ -112,3 +116,4 @@ extern "C"
 void C_ZNK5QUuid7versionEv(void *this_) {
   /*return*/ ((QUuid*)this_)->version();
 }
+//  main block end

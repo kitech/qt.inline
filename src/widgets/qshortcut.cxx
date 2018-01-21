@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qshortcut.h
 #include <qshortcut.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qshortcut.h:54
 // const QMetaObject * metaObject()
@@ -113,3 +117,4 @@ extern "C"
 void C_ZN9QShortcut20activatedAmbiguouslyEv(void *this_) {
   ((QShortcut*)this_)->activatedAmbiguously();
 }
+//  main block end

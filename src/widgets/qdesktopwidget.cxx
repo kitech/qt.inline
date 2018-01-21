@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdesktopwidget.h
 #include <qdesktopwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:53
 // const QMetaObject * metaObject()
@@ -55,8 +59,8 @@ void C_ZNK14QDesktopWidget12screenNumberEPK7QWidget(void *this_, const QWidget *
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:68
 // int screenNumber(const class QPoint &)
 extern "C"
-void C_ZNK14QDesktopWidget12screenNumberERK6QPoint(void *this_, const QPoint & a0) {
-  /*return*/ ((QDesktopWidget*)this_)->screenNumber(a0);
+void C_ZNK14QDesktopWidget12screenNumberERK6QPoint(void *this_, const QPoint & arg0) {
+  /*return*/ ((QDesktopWidget*)this_)->screenNumber(arg0);
 }
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:70
 // QWidget * screen(int)
@@ -105,20 +109,20 @@ void C_ZNK14QDesktopWidget17availableGeometryERK6QPoint(void *this_, const QPoin
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:83
 // void resized(int)
 extern "C"
-void C_ZN14QDesktopWidget7resizedEi(void *this_, int a0) {
-  ((QDesktopWidget*)this_)->resized(a0);
+void C_ZN14QDesktopWidget7resizedEi(void *this_, int arg0) {
+  ((QDesktopWidget*)this_)->resized(arg0);
 }
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:84
 // void workAreaResized(int)
 extern "C"
-void C_ZN14QDesktopWidget15workAreaResizedEi(void *this_, int a0) {
-  ((QDesktopWidget*)this_)->workAreaResized(a0);
+void C_ZN14QDesktopWidget15workAreaResizedEi(void *this_, int arg0) {
+  ((QDesktopWidget*)this_)->workAreaResized(arg0);
 }
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:85
 // void screenCountChanged(int)
 extern "C"
-void C_ZN14QDesktopWidget18screenCountChangedEi(void *this_, int a0) {
-  ((QDesktopWidget*)this_)->screenCountChanged(a0);
+void C_ZN14QDesktopWidget18screenCountChangedEi(void *this_, int arg0) {
+  ((QDesktopWidget*)this_)->screenCountChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:86
 // void primaryScreenChanged()
@@ -126,3 +130,4 @@ extern "C"
 void C_ZN14QDesktopWidget20primaryScreenChangedEv(void *this_) {
   ((QDesktopWidget*)this_)->primaryScreenChanged();
 }
+//  main block end

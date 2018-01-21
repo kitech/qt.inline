@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qparallelanimationgroup.h
 #include <qparallelanimationgroup.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:53
 // const QMetaObject * metaObject()
@@ -29,3 +33,4 @@ extern "C"
 void C_ZNK23QParallelAnimationGroup8durationEv(void *this_) {
   /*return*/ ((QParallelAnimationGroup*)this_)->duration();
 }
+//  main block end

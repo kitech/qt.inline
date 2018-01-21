@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qstackedlayout.h
 #include <qstackedlayout.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qstackedlayout.h:52
 // const QMetaObject * metaObject()
@@ -61,8 +65,8 @@ void C_ZNK14QStackedLayout12currentIndexEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstackedlayout.h:76
 // QWidget * widget(int)
 extern "C"
-void C_ZNK14QStackedLayout6widgetEi(void *this_, int a0) {
-  /*return*/ ((QStackedLayout*)this_)->widget(a0);
+void C_ZNK14QStackedLayout6widgetEi(void *this_, int arg0) {
+  /*return*/ ((QStackedLayout*)this_)->widget(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qstackedlayout.h:77
@@ -108,15 +112,15 @@ void C_ZNK14QStackedLayout11minimumSizeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstackedlayout.h:86
 // QLayoutItem * itemAt(int)
 extern "C"
-void C_ZNK14QStackedLayout6itemAtEi(void *this_, int a0) {
-  /*return*/ ((QStackedLayout*)this_)->itemAt(a0);
+void C_ZNK14QStackedLayout6itemAtEi(void *this_, int arg0) {
+  /*return*/ ((QStackedLayout*)this_)->itemAt(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qstackedlayout.h:87
 // QLayoutItem * takeAt(int)
 extern "C"
-void C_ZN14QStackedLayout6takeAtEi(void *this_, int a0) {
-  /*return*/ ((QStackedLayout*)this_)->takeAt(a0);
+void C_ZN14QStackedLayout6takeAtEi(void *this_, int arg0) {
+  /*return*/ ((QStackedLayout*)this_)->takeAt(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qstackedlayout.h:88
@@ -163,3 +167,4 @@ extern "C"
 void C_ZN14QStackedLayout16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QStackedLayout*)this_)->setCurrentWidget(w);
 }
+//  main block end

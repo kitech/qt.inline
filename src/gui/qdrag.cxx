@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qdrag.h
 #include <qdrag.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qdrag.h:58
 // const QMetaObject * metaObject()
@@ -37,8 +41,8 @@ void C_ZNK5QDrag8mimeDataEv(void *this_) {
 // /usr/include/qt/QtGui/qdrag.h:67
 // void setPixmap(const class QPixmap &)
 extern "C"
-void C_ZN5QDrag9setPixmapERK7QPixmap(void *this_, const QPixmap & a0) {
-  ((QDrag*)this_)->setPixmap(a0);
+void C_ZN5QDrag9setPixmapERK7QPixmap(void *this_, const QPixmap & arg0) {
+  ((QDrag*)this_)->setPixmap(arg0);
 }
 // /usr/include/qt/QtGui/qdrag.h:68
 // QPixmap pixmap()
@@ -131,3 +135,4 @@ extern "C"
 void C_ZN5QDrag13targetChangedEP7QObject(void *this_, QObject * newTarget) {
   ((QDrag*)this_)->targetChanged(newTarget);
 }
+//  main block end

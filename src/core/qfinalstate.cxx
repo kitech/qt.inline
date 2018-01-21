@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qfinalstate.h
 #include <qfinalstate.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qfinalstate.h:52
 // const QMetaObject * metaObject()
@@ -22,3 +26,4 @@ extern "C"
 void C_ZN11QFinalStateD1Ev(void *this_) {
   delete (QFinalState*)(this_);
 }
+//  main block end

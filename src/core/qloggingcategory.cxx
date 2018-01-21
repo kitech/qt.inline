@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qloggingcategory.h
 #include <qloggingcategory.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qloggingcategory.h:53
 // void QLoggingCategory(const char *)
 extern "C"
@@ -81,3 +85,4 @@ extern "C"
 void C_ZN16QLoggingCategory14setFilterRulesERK7QString(const QString & rules) {
   QLoggingCategory::setFilterRules(rules);
 }
+//  main block end

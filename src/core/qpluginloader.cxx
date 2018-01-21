@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qpluginloader.h
 #include <qpluginloader.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qpluginloader.h:55
 // const QMetaObject * metaObject()
@@ -102,3 +106,4 @@ extern "C"
 void C_ZNK13QPluginLoader9loadHintsEv(void *this_) {
   /*return*/ ((QPluginLoader*)this_)->loadHints();
 }
+//  main block end

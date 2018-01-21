@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsemaphore.h
 #include <qsemaphore.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qsemaphore.h:55
 // void QSemaphore(int)
 extern "C"
@@ -44,3 +48,4 @@ extern "C"
 void C_ZNK10QSemaphore9availableEv(void *this_) {
   /*return*/ ((QSemaphore*)this_)->available();
 }
+//  main block end

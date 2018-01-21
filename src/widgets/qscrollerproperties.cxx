@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
 #include <qscrollerproperties.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:57
 // void QScrollerProperties()
 extern "C"
@@ -41,3 +45,4 @@ extern "C"
 void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, const QVariant & value) {
   ((QScrollerProperties*)this_)->setScrollMetric(metric, value);
 }
+//  main block end

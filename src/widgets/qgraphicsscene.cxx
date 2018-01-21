@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsscene.h
 #include <qgraphicsscene.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:98
 // const QMetaObject * metaObject()
@@ -537,3 +541,4 @@ extern "C"
 void C_ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReasonE(void *this_, QGraphicsItem * newFocus, QGraphicsItem * oldFocus, Qt::FocusReason reason) {
   ((QGraphicsScene*)this_)->focusItemChanged(newFocus, oldFocus, reason);
 }
+//  main block end

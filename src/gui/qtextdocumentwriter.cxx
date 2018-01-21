@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextdocumentwriter.h
 #include <qtextdocumentwriter.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:56
 // void QTextDocumentWriter()
 extern "C"
@@ -93,3 +97,4 @@ extern "C"
 void C_ZN19QTextDocumentWriter24supportedDocumentFormatsEv() {
   /*return*/ QTextDocumentWriter::supportedDocumentFormats();
 }
+//  main block end

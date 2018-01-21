@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpagelayout.h
 #include <qpagelayout.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpagelayout.h:79
 // void QPageLayout()
 extern "C"
@@ -207,3 +211,4 @@ extern "C"
 void C_ZNK11QPageLayout15paintRectPixelsEi(void *this_, int resolution) {
   /*return*/ ((QPageLayout*)this_)->paintRectPixels(resolution);
 }
+//  main block end

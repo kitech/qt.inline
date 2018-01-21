@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qundogroup.h
 #include <qundogroup.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qundogroup.h:57
 // const QMetaObject * metaObject()
@@ -148,3 +152,4 @@ extern "C"
 void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, const QString & redoText) {
   ((QUndoGroup*)this_)->redoTextChanged(redoText);
 }
+//  main block end

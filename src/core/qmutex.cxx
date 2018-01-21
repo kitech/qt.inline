@@ -1,39 +1,46 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmutex.h
 #include <qmutex.h>
 #include <QtCore>
 
-// inline
-// /usr/include/qt/QtCore/qmutex.h:130
-// void QMutexLocker(class QBasicMutex *)
+//  header block end
+
+//  main block begin
+// /usr/include/qt/QtCore/qmutex.h:112
+// void QMutex(enum QMutex::RecursionMode)
 extern "C"
-void* C_ZN12QMutexLockerC1EP11QBasicMutex(QBasicMutex * m) {
-  return new QMutexLocker(m);
+void* C_ZN6QMutexC1ENS_13RecursionModeE(QMutex::RecursionMode mode) {
+  return new QMutex(mode);
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:141
-// void ~QMutexLocker()
+// /usr/include/qt/QtCore/qmutex.h:113
+// void ~QMutex()
 extern "C"
-void C_ZN12QMutexLockerD1Ev(void *this_) {
-  delete (QMutexLocker*)(this_);
+void C_ZN6QMutexD1Ev(void *this_) {
+  delete (QMutex*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:143
+// /usr/include/qt/QtCore/qmutex.h:115
+// void lock()
+extern "C"
+void C_ZN6QMutex4lockEv(void *this_) {
+  ((QMutex*)this_)->lock();
+}
+// /usr/include/qt/QtCore/qmutex.h:116
+// bool tryLock(int)
+extern "C"
+void C_ZN6QMutex7tryLockEi(void *this_, int timeout) {
+  /*return*/ ((QMutex*)this_)->tryLock(timeout);
+}
+// /usr/include/qt/QtCore/qmutex.h:117
 // void unlock()
 extern "C"
-void C_ZN12QMutexLocker6unlockEv(void *this_) {
-  ((QMutexLocker*)this_)->unlock();
+void C_ZN6QMutex6unlockEv(void *this_) {
+  ((QMutex*)this_)->unlock();
 }
 // inline
-// /usr/include/qt/QtCore/qmutex.h:151
-// void relock()
+// /usr/include/qt/QtCore/qmutex.h:119
+// bool isRecursive()
 extern "C"
-void C_ZN12QMutexLocker6relockEv(void *this_) {
-  ((QMutexLocker*)this_)->relock();
+void C_ZNK6QMutex11isRecursiveEv(void *this_) {
+  /*return*/ ((QMutex*)this_)->isRecursive();
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:166
-// QMutex * mutex()
-extern "C"
-void C_ZNK12QMutexLocker5mutexEv(void *this_) {
-  /*return*/ ((QMutexLocker*)this_)->mutex();
-}
+//  main block end

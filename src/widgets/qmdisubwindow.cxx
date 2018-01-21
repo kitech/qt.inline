@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #include <qmdisubwindow.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:57
 // const QMetaObject * metaObject()
@@ -75,8 +79,8 @@ void C_ZN13QMdiSubWindow9setOptionENS_15SubWindowOptionEb(void *this_, QMdiSubWi
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:84
 // bool testOption(enum QMdiSubWindow::SubWindowOption)
 extern "C"
-void C_ZNK13QMdiSubWindow10testOptionENS_15SubWindowOptionE(void *this_, QMdiSubWindow::SubWindowOption a0) {
-  /*return*/ ((QMdiSubWindow*)this_)->testOption(a0);
+void C_ZNK13QMdiSubWindow10testOptionENS_15SubWindowOptionE(void *this_, QMdiSubWindow::SubWindowOption arg0) {
+  /*return*/ ((QMdiSubWindow*)this_)->testOption(arg0);
 }
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:86
 // void setKeyboardSingleStep(int)
@@ -144,3 +148,4 @@ extern "C"
 void C_ZN13QMdiSubWindow10showShadedEv(void *this_) {
   ((QMdiSubWindow*)this_)->showShaded();
 }
+//  main block end

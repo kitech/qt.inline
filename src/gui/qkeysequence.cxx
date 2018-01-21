@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qkeysequence.h
 #include <qkeysequence.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qkeysequence.h:156
 // void QKeySequence()
 extern "C"
@@ -104,3 +108,4 @@ extern "C"
 void C_ZNK12QKeySequence10isDetachedEv(void *this_) {
   /*return*/ ((QKeySequence*)this_)->isDetached();
 }
+//  main block end

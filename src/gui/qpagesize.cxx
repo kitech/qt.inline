@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpagesize.h
 #include <qpagesize.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpagesize.h:229
 // void QPageSize()
 extern "C"
@@ -200,3 +204,4 @@ extern "C"
 void C_ZN9QPageSize10sizePixelsENS_10PageSizeIdEi(QPageSize::PageSizeId pageSizeId, int resolution) {
   /*return*/ QPageSize::sizePixels(pageSizeId, resolution);
 }
+//  main block end

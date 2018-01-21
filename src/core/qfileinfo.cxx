@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qfileinfo.h
 #include <qfileinfo.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qfileinfo.h:60
 // void QFileInfo(class QFileInfoPrivate *)
 extern "C"
@@ -330,3 +334,4 @@ extern "C"
 void C_ZN9QFileInfo10setCachingEb(void *this_, bool on) {
   ((QFileInfo*)this_)->setCaching(on);
 }
+//  main block end

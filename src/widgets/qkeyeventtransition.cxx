@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #include <qkeyeventtransition.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:53
 // const QMetaObject * metaObject()
@@ -52,3 +56,4 @@ extern "C"
 void C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
   ((QKeyEventTransition*)this_)->setModifierMask(modifiers);
 }
+//  main block end

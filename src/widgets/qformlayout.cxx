@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qformlayout.h
 #include <qformlayout.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qformlayout.h:52
 // const QMetaObject * metaObject()
@@ -103,8 +107,8 @@ void C_ZNK11QFormLayout7spacingEv(void *this_) {
 // /usr/include/qt/QtWidgets/qformlayout.h:101
 // void setSpacing(int)
 extern "C"
-void C_ZN11QFormLayout10setSpacingEi(void *this_, int a0) {
-  ((QFormLayout*)this_)->setSpacing(a0);
+void C_ZN11QFormLayout10setSpacingEi(void *this_, int arg0) {
+  ((QFormLayout*)this_)->setSpacing(arg0);
 }
 // /usr/include/qt/QtWidgets/qformlayout.h:103
 // void addRow(class QWidget *, class QWidget *)
@@ -315,3 +319,4 @@ extern "C"
 void C_ZNK11QFormLayout8rowCountEv(void *this_) {
   /*return*/ ((QFormLayout*)this_)->rowCount();
 }
+//  main block end

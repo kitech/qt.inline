@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qelapsedtimer.h
 #include <qelapsedtimer.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/qelapsedtimer.h:59
 // void QElapsedTimer()
@@ -83,3 +87,4 @@ extern "C"
 void C_ZNK13QElapsedTimer6secsToERKS_(void *this_, const QElapsedTimer & other) {
   /*return*/ ((QElapsedTimer*)this_)->secsTo(other);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextdocumentfragment.h
 #include <qtextdocumentfragment.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:56
 // void QTextDocumentFragment()
 extern "C"
@@ -65,3 +69,4 @@ extern "C"
 void C_ZN21QTextDocumentFragment8fromHtmlERK7QStringPK13QTextDocument(const QString & html, const QTextDocument * resourceProvider) {
   /*return*/ QTextDocumentFragment::fromHtml(html, resourceProvider);
 }
+//  main block end

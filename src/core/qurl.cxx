@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qurl.h
 #include <qurl.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qurl.h:172
 // void QUrl()
 extern "C"
@@ -221,29 +225,29 @@ void C_ZNK4QUrl10isDetachedEv(void *this_) {
 // /usr/include/qt/QtCore/qurl.h:270
 // QString fromPercentEncoding(const class QByteArray &)
 extern "C"
-void C_ZN4QUrl19fromPercentEncodingERK10QByteArray(const QByteArray & a0) {
-  /*return*/ QUrl::fromPercentEncoding(a0);
+void C_ZN4QUrl19fromPercentEncodingERK10QByteArray(const QByteArray & arg0) {
+  /*return*/ QUrl::fromPercentEncoding(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qurl.h:271
 // QByteArray toPercentEncoding(const class QString &, const class QByteArray &, const class QByteArray &)
 extern "C"
-void C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(const QString & a0, const QByteArray & exclude, const QByteArray & include) {
-  /*return*/ QUrl::toPercentEncoding(a0, exclude, include);
+void C_ZN4QUrl17toPercentEncodingERK7QStringRK10QByteArrayS5_(const QString & arg0, const QByteArray & exclude, const QByteArray & include) {
+  /*return*/ QUrl::toPercentEncoding(arg0, exclude, include);
 }
 // static
 // /usr/include/qt/QtCore/qurl.h:353
 // QString fromAce(const class QByteArray &)
 extern "C"
-void C_ZN4QUrl7fromAceERK10QByteArray(const QByteArray & a0) {
-  /*return*/ QUrl::fromAce(a0);
+void C_ZN4QUrl7fromAceERK10QByteArray(const QByteArray & arg0) {
+  /*return*/ QUrl::fromAce(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qurl.h:354
 // QByteArray toAce(const class QString &)
 extern "C"
-void C_ZN4QUrl5toAceERK7QString(const QString & a0) {
-  /*return*/ QUrl::toAce(a0);
+void C_ZN4QUrl5toAceERK7QString(const QString & arg0) {
+  /*return*/ QUrl::toAce(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qurl.h:355
@@ -263,6 +267,7 @@ void C_ZN4QUrl14fromStringListERK11QStringListNS_11ParsingModeE(const QStringLis
 // /usr/include/qt/QtCore/qurl.h:359
 // void setIdnWhitelist(const class QStringList &)
 extern "C"
-void C_ZN4QUrl15setIdnWhitelistERK11QStringList(const QStringList & a0) {
-  QUrl::setIdnWhitelist(a0);
+void C_ZN4QUrl15setIdnWhitelistERK11QStringList(const QStringList & arg0) {
+  QUrl::setIdnWhitelist(arg0);
 }
+//  main block end

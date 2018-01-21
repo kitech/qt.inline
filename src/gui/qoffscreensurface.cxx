@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qoffscreensurface.h
 #include <qoffscreensurface.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qoffscreensurface.h:55
 // const QMetaObject * metaObject()
@@ -97,3 +101,4 @@ extern "C"
 void C_ZN17QOffscreenSurface13screenChangedEP7QScreen(void *this_, QScreen * screen) {
   ((QOffscreenSurface*)this_)->screenChanged(screen);
 }
+//  main block end

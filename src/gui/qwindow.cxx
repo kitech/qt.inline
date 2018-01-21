@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qwindow.h
 #include <qwindow.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qwindow.h:93
 // const QMetaObject * metaObject()
@@ -513,8 +517,8 @@ void C_ZNK7QWindow6cursorEv(void *this_) {
 // /usr/include/qt/QtGui/qwindow.h:260
 // void setCursor(const class QCursor &)
 extern "C"
-void C_ZN7QWindow9setCursorERK7QCursor(void *this_, const QCursor & a0) {
-  ((QWindow*)this_)->setCursor(a0);
+void C_ZN7QWindow9setCursorERK7QCursor(void *this_, const QCursor & arg0) {
+  ((QWindow*)this_)->setCursor(arg0);
 }
 // /usr/include/qt/QtGui/qwindow.h:261
 // void unsetCursor()
@@ -598,8 +602,8 @@ void C_ZN7QWindow5lowerEv(void *this_) {
 // /usr/include/qt/QtGui/qwindow.h:283
 // void setTitle(const class QString &)
 extern "C"
-void C_ZN7QWindow8setTitleERK7QString(void *this_, const QString & a0) {
-  ((QWindow*)this_)->setTitle(a0);
+void C_ZN7QWindow8setTitleERK7QString(void *this_, const QString & arg0) {
+  ((QWindow*)this_)->setTitle(arg0);
 }
 // /usr/include/qt/QtGui/qwindow.h:285
 // void setX(int)
@@ -769,3 +773,4 @@ extern "C"
 void C_ZN7QWindow14opacityChangedEd(void *this_, qreal opacity) {
   ((QWindow*)this_)->opacityChanged(opacity);
 }
+//  main block end

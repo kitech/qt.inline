@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qrubberband.h
 #include <qrubberband.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qrubberband.h:55
 // const QMetaObject * metaObject()
@@ -12,8 +16,8 @@ void C_ZNK11QRubberBand10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qrubberband.h:59
 // void QRubberBand(enum QRubberBand::Shape, class QWidget *)
 extern "C"
-void* C_ZN11QRubberBandC1ENS_5ShapeEP7QWidget(QRubberBand::Shape a0, QWidget * a1) {
-  return new QRubberBand(a0, a1);
+void* C_ZN11QRubberBandC1ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget * arg1) {
+  return new QRubberBand(arg0, arg1);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qrubberband.h:60
@@ -69,3 +73,4 @@ extern "C"
 void C_ZN11QRubberBand6resizeERK5QSize(void *this_, const QSize & s) {
   ((QRubberBand*)this_)->resize(s);
 }
+//  main block end

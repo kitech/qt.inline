@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qstylehints.h
 #include <qstylehints.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qstylehints.h:53
 // const QMetaObject * metaObject()
@@ -195,3 +199,4 @@ extern "C"
 void C_ZN11QStyleHints23tabFocusBehaviorChangedEN2Qt16TabFocusBehaviorE(void *this_, Qt::TabFocusBehavior tabFocusBehavior) {
   ((QStyleHints*)this_)->tabFocusBehaviorChanged(tabFocusBehavior);
 }
+//  main block end

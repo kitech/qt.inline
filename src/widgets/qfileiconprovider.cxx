@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qfileiconprovider.h
 #include <qfileiconprovider.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:55
 // void QFileIconProvider()
 extern "C"
@@ -48,3 +52,4 @@ extern "C"
 void C_ZNK17QFileIconProvider7optionsEv(void *this_) {
   /*return*/ ((QFileIconProvider*)this_)->options();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcommonstyle.h
 #include <qcommonstyle.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcommonstyle.h:51
 // const QMetaObject * metaObject()
@@ -117,8 +121,8 @@ void C_ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11Ori
 // /usr/include/qt/QtWidgets/qcommonstyle.h:87
 // void polish(class QPalette &)
 extern "C"
-void C_ZN12QCommonStyle6polishER8QPalette(void *this_, QPalette & a0) {
-  ((QCommonStyle*)this_)->polish(a0);
+void C_ZN12QCommonStyle6polishER8QPalette(void *this_, QPalette & arg0) {
+  ((QCommonStyle*)this_)->polish(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qcommonstyle.h:88
@@ -148,3 +152,4 @@ extern "C"
 void C_ZN12QCommonStyle8unpolishEP12QApplication(void *this_, QApplication * application) {
   ((QCommonStyle*)this_)->unpolish(application);
 }
+//  main block end

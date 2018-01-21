@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qbasictimer.h
 #include <qbasictimer.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/qbasictimer.h:55
 // void QBasicTimer()
@@ -48,3 +52,4 @@ extern "C"
 void C_ZN11QBasicTimer4stopEv(void *this_) {
   ((QBasicTimer*)this_)->stop();
 }
+//  main block end

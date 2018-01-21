@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qguiapplication.h
 #include <qguiapplication.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qguiapplication.h:73
 // const QMetaObject * metaObject()
@@ -12,8 +16,8 @@ void C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qguiapplication.h:86
 // void QGuiApplication(int &, char **, int)
 extern "C"
-void* C_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int a2) {
-  return new QGuiApplication(argc, argv, a2);
+void* C_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
+  return new QGuiApplication(argc, argv, arg2);
 }
 // virtual
 // /usr/include/qt/QtGui/qguiapplication.h:88
@@ -144,15 +148,15 @@ void C_ZN15QGuiApplication14overrideCursorEv() {
 // /usr/include/qt/QtGui/qguiapplication.h:116
 // void setOverrideCursor(const class QCursor &)
 extern "C"
-void C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(const QCursor & a0) {
-  QGuiApplication::setOverrideCursor(a0);
+void C_ZN15QGuiApplication17setOverrideCursorERK7QCursor(const QCursor & arg0) {
+  QGuiApplication::setOverrideCursor(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qguiapplication.h:117
 // void changeOverrideCursor(const class QCursor &)
 extern "C"
-void C_ZN15QGuiApplication20changeOverrideCursorERK7QCursor(const QCursor & a0) {
-  QGuiApplication::changeOverrideCursor(a0);
+void C_ZN15QGuiApplication20changeOverrideCursorERK7QCursor(const QCursor & arg0) {
+  QGuiApplication::changeOverrideCursor(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qguiapplication.h:118
@@ -172,8 +176,8 @@ void C_ZN15QGuiApplication4fontEv() {
 // /usr/include/qt/QtGui/qguiapplication.h:122
 // void setFont(const class QFont &)
 extern "C"
-void C_ZN15QGuiApplication7setFontERK5QFont(const QFont & a0) {
-  QGuiApplication::setFont(a0);
+void C_ZN15QGuiApplication7setFontERK5QFont(const QFont & arg0) {
+  QGuiApplication::setFont(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qguiapplication.h:125
@@ -319,8 +323,8 @@ void C_ZN15QGuiApplication4execEv() {
 // /usr/include/qt/QtGui/qguiapplication.h:157
 // bool notify(class QObject *, class QEvent *)
 extern "C"
-void C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * a0, QEvent * a1) {
-  /*return*/ ((QGuiApplication*)this_)->notify(a0, a1);
+void C_ZN15QGuiApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
+  /*return*/ ((QGuiApplication*)this_)->notify(arg0, arg1);
 }
 // /usr/include/qt/QtGui/qguiapplication.h:161
 // bool isSessionRestored()
@@ -357,8 +361,8 @@ void C_ZN15QGuiApplication34isFallbackSessionManagementEnabledEv() {
 // /usr/include/qt/QtGui/qguiapplication.h:167
 // void setFallbackSessionManagementEnabled(_Bool)
 extern "C"
-void C_ZN15QGuiApplication35setFallbackSessionManagementEnabledEb(bool a0) {
-  QGuiApplication::setFallbackSessionManagementEnabled(a0);
+void C_ZN15QGuiApplication35setFallbackSessionManagementEnabledEb(bool arg0) {
+  QGuiApplication::setFallbackSessionManagementEnabled(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qguiapplication.h:170
@@ -439,3 +443,4 @@ extern "C"
 void C_ZN15QGuiApplication14paletteChangedERK8QPalette(void *this_, const QPalette & pal) {
   ((QGuiApplication*)this_)->paletteChanged(pal);
 }
+//  main block end

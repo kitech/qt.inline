@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h
 #include <qmessageauthenticationcode.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:54
 // void QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)
 extern "C"
@@ -57,3 +61,4 @@ extern "C"
 void C_ZN26QMessageAuthenticationCode4hashERK10QByteArrayS2_N18QCryptographicHash9AlgorithmE(const QByteArray & message, const QByteArray & key, QCryptographicHash::Algorithm method) {
   /*return*/ QMessageAuthenticationCode::hash(message, key, method);
 }
+//  main block end

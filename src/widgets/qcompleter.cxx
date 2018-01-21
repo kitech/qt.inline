@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcompleter.h
 #include <qcompleter.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcompleter.h:61
 // const QMetaObject * metaObject()
@@ -258,3 +262,4 @@ extern "C"
 void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, const QModelIndex & index) {
   ((QCompleter*)this_)->highlighted(index);
 }
+//  main block end

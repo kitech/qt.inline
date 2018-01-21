@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qimagewriter.h
 #include <qimagewriter.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qimagewriter.h:65
 // void QImageWriter()
 extern "C"
@@ -214,3 +218,4 @@ extern "C"
 void C_ZN12QImageWriter18supportedMimeTypesEv() {
   /*return*/ QImageWriter::supportedMimeTypes();
 }
+//  main block end

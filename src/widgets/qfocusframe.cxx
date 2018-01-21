@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qfocusframe.h
 #include <qfocusframe.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qfocusframe.h:53
 // const QMetaObject * metaObject()
@@ -34,3 +38,4 @@ extern "C"
 void C_ZNK11QFocusFrame6widgetEv(void *this_) {
   /*return*/ ((QFocusFrame*)this_)->widget();
 }
+//  main block end

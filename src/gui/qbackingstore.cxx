@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qbackingstore.h
 #include <qbackingstore.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qbackingstore.h:61
 // void QBackingStore(class QWindow *)
 extern "C"
@@ -53,8 +57,8 @@ void C_ZN13QBackingStore6scrollERK7QRegionii(void *this_, const QRegion & area, 
 // /usr/include/qt/QtGui/qbackingstore.h:77
 // void beginPaint(const class QRegion &)
 extern "C"
-void C_ZN13QBackingStore10beginPaintERK7QRegion(void *this_, const QRegion & a0) {
-  ((QBackingStore*)this_)->beginPaint(a0);
+void C_ZN13QBackingStore10beginPaintERK7QRegion(void *this_, const QRegion & arg0) {
+  ((QBackingStore*)this_)->beginPaint(arg0);
 }
 // /usr/include/qt/QtGui/qbackingstore.h:78
 // void endPaint()
@@ -86,3 +90,4 @@ extern "C"
 void C_ZNK13QBackingStore6handleEv(void *this_) {
   /*return*/ ((QBackingStore*)this_)->handle();
 }
+//  main block end

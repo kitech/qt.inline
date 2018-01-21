@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qlcdnumber.h
 #include <qlcdnumber.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qlcdnumber.h:53
 // const QMetaObject * metaObject()
@@ -67,8 +71,8 @@ void C_ZNK10QLCDNumber4modeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlcdnumber.h:83
 // void setMode(enum QLCDNumber::Mode)
 extern "C"
-void C_ZN10QLCDNumber7setModeENS_4ModeE(void *this_, QLCDNumber::Mode a0) {
-  ((QLCDNumber*)this_)->setMode(a0);
+void C_ZN10QLCDNumber7setModeENS_4ModeE(void *this_, QLCDNumber::Mode arg0) {
+  ((QLCDNumber*)this_)->setMode(arg0);
 }
 // /usr/include/qt/QtWidgets/qlcdnumber.h:85
 // QLCDNumber::SegmentStyle segmentStyle()
@@ -79,8 +83,8 @@ void C_ZNK10QLCDNumber12segmentStyleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlcdnumber.h:86
 // void setSegmentStyle(enum QLCDNumber::SegmentStyle)
 extern "C"
-void C_ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE(void *this_, QLCDNumber::SegmentStyle a0) {
-  ((QLCDNumber*)this_)->setSegmentStyle(a0);
+void C_ZN10QLCDNumber15setSegmentStyleENS_12SegmentStyleE(void *this_, QLCDNumber::SegmentStyle arg0) {
+  ((QLCDNumber*)this_)->setSegmentStyle(arg0);
 }
 // /usr/include/qt/QtWidgets/qlcdnumber.h:88
 // double value()
@@ -146,8 +150,8 @@ void C_ZN10QLCDNumber10setBinModeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlcdnumber.h:101
 // void setSmallDecimalPoint(_Bool)
 extern "C"
-void C_ZN10QLCDNumber20setSmallDecimalPointEb(void *this_, bool a0) {
-  ((QLCDNumber*)this_)->setSmallDecimalPoint(a0);
+void C_ZN10QLCDNumber20setSmallDecimalPointEb(void *this_, bool arg0) {
+  ((QLCDNumber*)this_)->setSmallDecimalPoint(arg0);
 }
 // /usr/include/qt/QtWidgets/qlcdnumber.h:104
 // void overflow()
@@ -155,3 +159,4 @@ extern "C"
 void C_ZN10QLCDNumber8overflowEv(void *this_) {
   ((QLCDNumber*)this_)->overflow();
 }
+//  main block end

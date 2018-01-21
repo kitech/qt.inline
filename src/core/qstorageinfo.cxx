@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstorageinfo.h
 #include <qstorageinfo.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qstorageinfo.h:56
 // void QStorageInfo()
 extern "C"
@@ -138,3 +142,4 @@ extern "C"
 void C_ZN12QStorageInfo4rootEv() {
   /*return*/ QStorageInfo::root();
 }
+//  main block end

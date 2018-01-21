@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qlocale.h
 #include <qlocale.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qlocale.h:914
 // void QLocale()
 extern "C"
@@ -287,14 +291,14 @@ void C_ZNK7QLocale14dateTimeFormatENS_10FormatTypeE(void *this_, QLocale::Format
 // /usr/include/qt/QtCore/qlocale.h:973
 // QDate toDate(const class QString &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType a1) {
-  /*return*/ ((QLocale*)this_)->toDate(string, a1);
+void C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
+  /*return*/ ((QLocale*)this_)->toDate(string, arg1);
 }
 // /usr/include/qt/QtCore/qlocale.h:974
 // QTime toTime(const class QString &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType a1) {
-  /*return*/ ((QLocale*)this_)->toTime(string, a1);
+void C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
+  /*return*/ ((QLocale*)this_)->toTime(string, arg1);
 }
 // /usr/include/qt/QtCore/qlocale.h:975
 // QDateTime toDateTime(const class QString &, enum QLocale::FormatType)
@@ -365,26 +369,26 @@ void C_ZNK7QLocale11exponentialEv(void *this_) {
 // /usr/include/qt/QtCore/qlocale.h:991
 // QString monthName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->monthName(a0, format);
+void C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->monthName(arg0, format);
 }
 // /usr/include/qt/QtCore/qlocale.h:992
 // QString standaloneMonthName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->standaloneMonthName(a0, format);
+void C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->standaloneMonthName(arg0, format);
 }
 // /usr/include/qt/QtCore/qlocale.h:993
 // QString dayName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->dayName(a0, format);
+void C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->dayName(arg0, format);
 }
 // /usr/include/qt/QtCore/qlocale.h:994
 // QString standaloneDayName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *this_, int a0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->standaloneDayName(a0, format);
+void C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  /*return*/ ((QLocale*)this_)->standaloneDayName(arg0, format);
 }
 // /usr/include/qt/QtCore/qlocale.h:996
 // Qt::DayOfWeek firstDayOfWeek()
@@ -437,60 +441,60 @@ void C_ZNK7QLocale7toLowerERK7QString(void *this_, const QString & str) {
 // /usr/include/qt/QtCore/qlocale.h:1009
 // QString currencySymbol(enum QLocale::CurrencySymbolFormat)
 extern "C"
-void C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *this_, QLocale::CurrencySymbolFormat a0) {
-  /*return*/ ((QLocale*)this_)->currencySymbol(a0);
+void C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *this_, QLocale::CurrencySymbolFormat arg0) {
+  /*return*/ ((QLocale*)this_)->currencySymbol(arg0);
 }
 // /usr/include/qt/QtCore/qlocale.h:1010
 // QString toCurrencyString(qlonglong, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringExRK7QString(void *this_, qlonglong a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringExRK7QString(void *this_, qlonglong arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // /usr/include/qt/QtCore/qlocale.h:1011
 // QString toCurrencyString(qulonglong, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *this_, qulonglong a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *this_, qulonglong arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // inline
 // /usr/include/qt/QtCore/qlocale.h:1012
 // QString toCurrencyString(short, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *this_, short a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *this_, short arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // inline
 // /usr/include/qt/QtCore/qlocale.h:1013
 // QString toCurrencyString(ushort, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *this_, ushort a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *this_, ushort arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // inline
 // /usr/include/qt/QtCore/qlocale.h:1014
 // QString toCurrencyString(int, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *this_, int a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *this_, int arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // inline
 // /usr/include/qt/QtCore/qlocale.h:1015
 // QString toCurrencyString(uint, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *this_, uint a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *this_, uint arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // /usr/include/qt/QtCore/qlocale.h:1021
 // QString toCurrencyString(double, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *this_, double a0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol);
+void C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *this_, double arg0, const QString & symbol) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
 }
 // /usr/include/qt/QtCore/qlocale.h:1022
 // QString toCurrencyString(double, const class QString &, int)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *this_, double a0, const QString & symbol, int precision) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(a0, symbol, precision);
+void C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *this_, double arg0, const QString & symbol, int precision) {
+  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol, precision);
 }
 // inline
 // /usr/include/qt/QtCore/qlocale.h:1023
@@ -598,3 +602,4 @@ extern "C"
 void C_ZNK7QLocale19createSeparatedListERK11QStringList(void *this_, const QStringList & strl) {
   /*return*/ ((QLocale*)this_)->createSeparatedList(strl);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qmatrix4x4.h
 #include <qmatrix4x4.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qmatrix4x4.h:61
 // void QMatrix4x4()
@@ -13,8 +17,8 @@ void* C_ZN10QMatrix4x4C1Ev() {
 // /usr/include/qt/QtGui/qmatrix4x4.h:62
 // void QMatrix4x4(Qt::Initialization)
 extern "C"
-void* C_ZN10QMatrix4x4C1EN2Qt14InitializationE(Qt::Initialization a0) {
-  return new QMatrix4x4(a0);
+void* C_ZN10QMatrix4x4C1EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return new QMatrix4x4(arg0);
 }
 // /usr/include/qt/QtGui/qmatrix4x4.h:63
 // void QMatrix4x4(const float *)
@@ -334,3 +338,4 @@ extern "C"
 void C_ZN10QMatrix4x48optimizeEv(void *this_) {
   ((QMatrix4x4*)this_)->optimize();
 }
+//  main block end

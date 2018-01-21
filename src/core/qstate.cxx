@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstate.h
 #include <qstate.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qstate.h:58
 // const QMetaObject * metaObject()
@@ -100,3 +104,4 @@ extern "C"
 void C_ZN6QState14assignPropertyEP7QObjectPKcRK8QVariant(void *this_, QObject * object, const char * name, const QVariant & value) {
   ((QState*)this_)->assignProperty(object, name, value);
 }
+//  main block end

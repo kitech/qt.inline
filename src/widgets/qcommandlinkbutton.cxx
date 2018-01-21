@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h
 #include <qcommandlinkbutton.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:52
 // const QMetaObject * metaObject()
@@ -46,3 +50,4 @@ extern "C"
 void C_ZN18QCommandLinkButton14setDescriptionERK7QString(void *this_, const QString & description) {
   ((QCommandLinkButton*)this_)->setDescription(description);
 }
+//  main block end

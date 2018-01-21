@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qresource.h
 #include <qresource.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qresource.h:57
 // void QResource(const class QString &, const class QLocale &)
 extern "C"
@@ -110,3 +114,4 @@ extern "C"
 void C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, const QString & resourceRoot) {
   /*return*/ QResource::unregisterResource(rccData, resourceRoot);
 }
+//  main block end

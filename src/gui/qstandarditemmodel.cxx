@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #include <qstandarditemmodel.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qstandarditemmodel.h:325
 // const QMetaObject * metaObject()
@@ -397,3 +401,4 @@ extern "C"
 void C_ZN18QStandardItemModel11itemChangedEP13QStandardItem(void *this_, QStandardItem * item) {
   ((QStandardItemModel*)this_)->itemChanged(item);
 }
+//  main block end

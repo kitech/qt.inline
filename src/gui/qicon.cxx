@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qicon.h
 #include <qicon.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qicon.h:60
 // void QIcon()
 extern "C"
@@ -199,3 +203,4 @@ extern "C"
 void C_ZN5QIcon12setThemeNameERK7QString(const QString & path) {
   QIcon::setThemeName(path);
 }
+//  main block end

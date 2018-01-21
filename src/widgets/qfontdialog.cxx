@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qfontdialog.h
 #include <qfontdialog.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qfontdialog.h:56
 // const QMetaObject * metaObject()
@@ -109,3 +113,4 @@ extern "C"
 void C_ZN11QFontDialog12fontSelectedERK5QFont(void *this_, const QFont & font) {
   ((QFontDialog*)this_)->fontSelected(font);
 }
+//  main block end

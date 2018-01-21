@@ -1,107 +1,77 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgesture.h
 #include <qgesture.h>
 #include <QtWidgets>
 
-// /usr/include/qt/QtWidgets/qgesture.h:275
-// void QGestureEvent(const QList<class QGesture *> &)
+//  header block end
+
+//  main block begin
+// virtual
+// /usr/include/qt/QtWidgets/qgesture.h:62
+// const QMetaObject * metaObject()
 extern "C"
-void* C_ZN13QGestureEventC1ERK5QListIP8QGestureE(const QList<QGesture *> & gestures) {
-  return new QGestureEvent(gestures);
+void C_ZNK8QGesture10metaObjectEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->metaObject();
+}
+// /usr/include/qt/QtWidgets/qgesture.h:72
+// void QGesture(class QObject *)
+extern "C"
+void* C_ZN8QGestureC1EP7QObject(QObject * parent) {
+  return new QGesture(parent);
 }
 // virtual
-// /usr/include/qt/QtWidgets/qgesture.h:276
-// void ~QGestureEvent()
+// /usr/include/qt/QtWidgets/qgesture.h:73
+// void ~QGesture()
 extern "C"
-void C_ZN13QGestureEventD1Ev(void *this_) {
-  delete (QGestureEvent*)(this_);
+void C_ZN8QGestureD1Ev(void *this_) {
+  delete (QGesture*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgesture.h:278
-// QList<QGesture *> gestures()
+// /usr/include/qt/QtWidgets/qgesture.h:75
+// Qt::GestureType gestureType()
 extern "C"
-void C_ZNK13QGestureEvent8gesturesEv(void *this_) {
-  /*return*/ ((QGestureEvent*)this_)->gestures();
+void C_ZNK8QGesture11gestureTypeEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->gestureType();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:279
-// QGesture * gesture(Qt::GestureType)
+// /usr/include/qt/QtWidgets/qgesture.h:77
+// Qt::GestureState state()
 extern "C"
-void C_ZNK13QGestureEvent7gestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type) {
-  /*return*/ ((QGestureEvent*)this_)->gesture(type);
+void C_ZNK8QGesture5stateEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->state();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:281
-// QList<QGesture *> activeGestures()
+// /usr/include/qt/QtWidgets/qgesture.h:79
+// QPointF hotSpot()
 extern "C"
-void C_ZNK13QGestureEvent14activeGesturesEv(void *this_) {
-  /*return*/ ((QGestureEvent*)this_)->activeGestures();
+void C_ZNK8QGesture7hotSpotEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->hotSpot();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:282
-// QList<QGesture *> canceledGestures()
+// /usr/include/qt/QtWidgets/qgesture.h:80
+// void setHotSpot(const class QPointF &)
 extern "C"
-void C_ZNK13QGestureEvent16canceledGesturesEv(void *this_) {
-  /*return*/ ((QGestureEvent*)this_)->canceledGestures();
+void C_ZN8QGesture10setHotSpotERK7QPointF(void *this_, const QPointF & value) {
+  ((QGesture*)this_)->setHotSpot(value);
 }
-// /usr/include/qt/QtWidgets/qgesture.h:289
-// void setAccepted(class QGesture *, _Bool)
+// /usr/include/qt/QtWidgets/qgesture.h:81
+// bool hasHotSpot()
 extern "C"
-void C_ZN13QGestureEvent11setAcceptedEP8QGestureb(void *this_, QGesture * a0, bool a1) {
-  ((QGestureEvent*)this_)->setAccepted(a0, a1);
+void C_ZNK8QGesture10hasHotSpotEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->hasHotSpot();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:290
-// void accept(class QGesture *)
+// /usr/include/qt/QtWidgets/qgesture.h:82
+// void unsetHotSpot()
 extern "C"
-void C_ZN13QGestureEvent6acceptEP8QGesture(void *this_, QGesture * a0) {
-  ((QGestureEvent*)this_)->accept(a0);
+void C_ZN8QGesture12unsetHotSpotEv(void *this_) {
+  ((QGesture*)this_)->unsetHotSpot();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:291
-// void ignore(class QGesture *)
+// /usr/include/qt/QtWidgets/qgesture.h:89
+// void setGestureCancelPolicy(enum QGesture::GestureCancelPolicy)
 extern "C"
-void C_ZN13QGestureEvent6ignoreEP8QGesture(void *this_, QGesture * a0) {
-  ((QGestureEvent*)this_)->ignore(a0);
+void C_ZN8QGesture22setGestureCancelPolicyENS_19GestureCancelPolicyE(void *this_, QGesture::GestureCancelPolicy policy) {
+  ((QGesture*)this_)->setGestureCancelPolicy(policy);
 }
-// /usr/include/qt/QtWidgets/qgesture.h:292
-// bool isAccepted(class QGesture *)
+// /usr/include/qt/QtWidgets/qgesture.h:90
+// QGesture::GestureCancelPolicy gestureCancelPolicy()
 extern "C"
-void C_ZNK13QGestureEvent10isAcceptedEP8QGesture(void *this_, QGesture * a0) {
-  /*return*/ ((QGestureEvent*)this_)->isAccepted(a0);
+void C_ZNK8QGesture19gestureCancelPolicyEv(void *this_) {
+  /*return*/ ((QGesture*)this_)->gestureCancelPolicy();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:294
-// void setAccepted(Qt::GestureType, _Bool)
-extern "C"
-void C_ZN13QGestureEvent11setAcceptedEN2Qt11GestureTypeEb(void *this_, Qt::GestureType a0, bool a1) {
-  ((QGestureEvent*)this_)->setAccepted(a0, a1);
-}
-// /usr/include/qt/QtWidgets/qgesture.h:295
-// void accept(Qt::GestureType)
-extern "C"
-void C_ZN13QGestureEvent6acceptEN2Qt11GestureTypeE(void *this_, Qt::GestureType a0) {
-  ((QGestureEvent*)this_)->accept(a0);
-}
-// /usr/include/qt/QtWidgets/qgesture.h:296
-// void ignore(Qt::GestureType)
-extern "C"
-void C_ZN13QGestureEvent6ignoreEN2Qt11GestureTypeE(void *this_, Qt::GestureType a0) {
-  ((QGestureEvent*)this_)->ignore(a0);
-}
-// /usr/include/qt/QtWidgets/qgesture.h:297
-// bool isAccepted(Qt::GestureType)
-extern "C"
-void C_ZNK13QGestureEvent10isAcceptedEN2Qt11GestureTypeE(void *this_, Qt::GestureType a0) {
-  /*return*/ ((QGestureEvent*)this_)->isAccepted(a0);
-}
-// /usr/include/qt/QtWidgets/qgesture.h:299
-// void setWidget(class QWidget *)
-extern "C"
-void C_ZN13QGestureEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
-  ((QGestureEvent*)this_)->setWidget(widget);
-}
-// /usr/include/qt/QtWidgets/qgesture.h:300
-// QWidget * widget()
-extern "C"
-void C_ZNK13QGestureEvent6widgetEv(void *this_) {
-  /*return*/ ((QGestureEvent*)this_)->widget();
-}
-// /usr/include/qt/QtWidgets/qgesture.h:303
-// QPointF mapToGraphicsScene(const class QPointF &)
-extern "C"
-void C_ZNK13QGestureEvent18mapToGraphicsSceneERK7QPointF(void *this_, const QPointF & gesturePoint) {
-  /*return*/ ((QGestureEvent*)this_)->mapToGraphicsScene(gesturePoint);
-}
+//  main block end

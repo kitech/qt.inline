@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpdfwriter.h
 #include <qpdfwriter.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qpdfwriter.h:58
 // const QMetaObject * metaObject()
@@ -92,3 +96,4 @@ extern "C"
 void C_ZN10QPdfWriter10setMarginsERKN17QPagedPaintDevice7MarginsE(void *this_, const QPagedPaintDevice::Margins & m) {
   ((QPdfWriter*)this_)->setMargins(m);
 }
+//  main block end

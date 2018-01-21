@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qpushbutton.h
 #include <qpushbutton.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qpushbutton.h:54
 // const QMetaObject * metaObject()
@@ -57,8 +61,8 @@ void C_ZNK11QPushButton11autoDefaultEv(void *this_) {
 // /usr/include/qt/QtWidgets/qpushbutton.h:70
 // void setAutoDefault(_Bool)
 extern "C"
-void C_ZN11QPushButton14setAutoDefaultEb(void *this_, bool a0) {
-  ((QPushButton*)this_)->setAutoDefault(a0);
+void C_ZN11QPushButton14setAutoDefaultEb(void *this_, bool arg0) {
+  ((QPushButton*)this_)->setAutoDefault(arg0);
 }
 // /usr/include/qt/QtWidgets/qpushbutton.h:71
 // bool isDefault()
@@ -69,8 +73,8 @@ void C_ZNK11QPushButton9isDefaultEv(void *this_) {
 // /usr/include/qt/QtWidgets/qpushbutton.h:72
 // void setDefault(_Bool)
 extern "C"
-void C_ZN11QPushButton10setDefaultEb(void *this_, bool a0) {
-  ((QPushButton*)this_)->setDefault(a0);
+void C_ZN11QPushButton10setDefaultEb(void *this_, bool arg0) {
+  ((QPushButton*)this_)->setDefault(arg0);
 }
 // /usr/include/qt/QtWidgets/qpushbutton.h:75
 // void setMenu(class QMenu *)
@@ -87,8 +91,8 @@ void C_ZNK11QPushButton4menuEv(void *this_) {
 // /usr/include/qt/QtWidgets/qpushbutton.h:79
 // void setFlat(_Bool)
 extern "C"
-void C_ZN11QPushButton7setFlatEb(void *this_, bool a0) {
-  ((QPushButton*)this_)->setFlat(a0);
+void C_ZN11QPushButton7setFlatEb(void *this_, bool arg0) {
+  ((QPushButton*)this_)->setFlat(arg0);
 }
 // /usr/include/qt/QtWidgets/qpushbutton.h:80
 // bool isFlat()
@@ -102,3 +106,4 @@ extern "C"
 void C_ZN11QPushButton8showMenuEv(void *this_) {
   ((QPushButton*)this_)->showMenu();
 }
+//  main block end

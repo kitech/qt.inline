@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtextboundaryfinder.h
 #include <qtextboundaryfinder.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:54
 // void QTextBoundaryFinder()
 extern "C"
@@ -94,3 +98,4 @@ extern "C"
 void C_ZNK19QTextBoundaryFinder15boundaryReasonsEv(void *this_) {
   /*return*/ ((QTextBoundaryFinder*)this_)->boundaryReasons();
 }
+//  main block end

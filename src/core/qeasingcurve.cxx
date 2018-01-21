@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qeasingcurve.h
 #include <qeasingcurve.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qeasingcurve.h:77
 // void QEasingCurve(enum QEasingCurve::Type)
 extern "C"
@@ -99,3 +103,4 @@ extern "C"
 void C_ZNK12QEasingCurve16valueForProgressEd(void *this_, qreal progress) {
   /*return*/ ((QEasingCurve*)this_)->valueForProgress(progress);
 }
+//  main block end

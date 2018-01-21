@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qlabel.h
 #include <qlabel.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qlabel.h:52
 // const QMetaObject * metaObject()
@@ -61,8 +65,8 @@ void C_ZNK6QLabel10textFormatEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:81
 // void setTextFormat(Qt::TextFormat)
 extern "C"
-void C_ZN6QLabel13setTextFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat a0) {
-  ((QLabel*)this_)->setTextFormat(a0);
+void C_ZN6QLabel13setTextFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat arg0) {
+  ((QLabel*)this_)->setTextFormat(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:83
 // Qt::Alignment alignment()
@@ -73,8 +77,8 @@ void C_ZNK6QLabel9alignmentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:84
 // void setAlignment(Qt::Alignment)
 extern "C"
-void C_ZN6QLabel12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment a0) {
-  ((QLabel*)this_)->setAlignment(a0);
+void C_ZN6QLabel12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment arg0) {
+  ((QLabel*)this_)->setAlignment(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:86
 // void setWordWrap(_Bool)
@@ -97,8 +101,8 @@ void C_ZNK6QLabel6indentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:90
 // void setIndent(int)
 extern "C"
-void C_ZN6QLabel9setIndentEi(void *this_, int a0) {
-  ((QLabel*)this_)->setIndent(a0);
+void C_ZN6QLabel9setIndentEi(void *this_, int arg0) {
+  ((QLabel*)this_)->setIndent(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:92
 // int margin()
@@ -109,8 +113,8 @@ void C_ZNK6QLabel6marginEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:93
 // void setMargin(int)
 extern "C"
-void C_ZN6QLabel9setMarginEi(void *this_, int a0) {
-  ((QLabel*)this_)->setMargin(a0);
+void C_ZN6QLabel9setMarginEi(void *this_, int arg0) {
+  ((QLabel*)this_)->setMargin(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:95
 // bool hasScaledContents()
@@ -121,8 +125,8 @@ void C_ZNK6QLabel17hasScaledContentsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:96
 // void setScaledContents(_Bool)
 extern "C"
-void C_ZN6QLabel17setScaledContentsEb(void *this_, bool a0) {
-  ((QLabel*)this_)->setScaledContents(a0);
+void C_ZN6QLabel17setScaledContentsEb(void *this_, bool arg0) {
+  ((QLabel*)this_)->setScaledContents(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qlabel.h:97
@@ -141,8 +145,8 @@ void C_ZNK6QLabel15minimumSizeHintEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:100
 // void setBuddy(class QWidget *)
 extern "C"
-void C_ZN6QLabel8setBuddyEP7QWidget(void *this_, QWidget * a0) {
-  ((QLabel*)this_)->setBuddy(a0);
+void C_ZN6QLabel8setBuddyEP7QWidget(void *this_, QWidget * arg0) {
+  ((QLabel*)this_)->setBuddy(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:101
 // QWidget * buddy()
@@ -154,8 +158,8 @@ void C_ZNK6QLabel5buddyEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:103
 // int heightForWidth(int)
 extern "C"
-void C_ZNK6QLabel14heightForWidthEi(void *this_, int a0) {
-  /*return*/ ((QLabel*)this_)->heightForWidth(a0);
+void C_ZNK6QLabel14heightForWidthEi(void *this_, int arg0) {
+  /*return*/ ((QLabel*)this_)->heightForWidth(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:105
 // bool openExternalLinks()
@@ -184,8 +188,8 @@ void C_ZNK6QLabel20textInteractionFlagsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:111
 // void setSelection(int, int)
 extern "C"
-void C_ZN6QLabel12setSelectionEii(void *this_, int a0, int a1) {
-  ((QLabel*)this_)->setSelection(a0, a1);
+void C_ZN6QLabel12setSelectionEii(void *this_, int arg0, int arg1) {
+  ((QLabel*)this_)->setSelection(arg0, arg1);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:112
 // bool hasSelectedText()
@@ -208,20 +212,20 @@ void C_ZNK6QLabel14selectionStartEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlabel.h:117
 // void setText(const class QString &)
 extern "C"
-void C_ZN6QLabel7setTextERK7QString(void *this_, const QString & a0) {
-  ((QLabel*)this_)->setText(a0);
+void C_ZN6QLabel7setTextERK7QString(void *this_, const QString & arg0) {
+  ((QLabel*)this_)->setText(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:118
 // void setPixmap(const class QPixmap &)
 extern "C"
-void C_ZN6QLabel9setPixmapERK7QPixmap(void *this_, const QPixmap & a0) {
-  ((QLabel*)this_)->setPixmap(a0);
+void C_ZN6QLabel9setPixmapERK7QPixmap(void *this_, const QPixmap & arg0) {
+  ((QLabel*)this_)->setPixmap(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:120
 // void setPicture(const class QPicture &)
 extern "C"
-void C_ZN6QLabel10setPictureERK8QPicture(void *this_, const QPicture & a0) {
-  ((QLabel*)this_)->setPicture(a0);
+void C_ZN6QLabel10setPictureERK8QPicture(void *this_, const QPicture & arg0) {
+  ((QLabel*)this_)->setPicture(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:123
 // void setMovie(class QMovie *)
@@ -232,14 +236,14 @@ void C_ZN6QLabel8setMovieEP6QMovie(void *this_, QMovie * movie) {
 // /usr/include/qt/QtWidgets/qlabel.h:125
 // void setNum(int)
 extern "C"
-void C_ZN6QLabel6setNumEi(void *this_, int a0) {
-  ((QLabel*)this_)->setNum(a0);
+void C_ZN6QLabel6setNumEi(void *this_, int arg0) {
+  ((QLabel*)this_)->setNum(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:126
 // void setNum(double)
 extern "C"
-void C_ZN6QLabel6setNumEd(void *this_, double a0) {
-  ((QLabel*)this_)->setNum(a0);
+void C_ZN6QLabel6setNumEd(void *this_, double arg0) {
+  ((QLabel*)this_)->setNum(arg0);
 }
 // /usr/include/qt/QtWidgets/qlabel.h:127
 // void clear()
@@ -259,3 +263,4 @@ extern "C"
 void C_ZN6QLabel11linkHoveredERK7QString(void *this_, const QString & link) {
   ((QLabel*)this_)->linkHovered(link);
 }
+//  main block end

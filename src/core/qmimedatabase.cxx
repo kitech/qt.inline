@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmimedatabase.h
 #include <qmimedatabase.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qmimedatabase.h:63
 // void QMimeDatabase()
 extern "C"
@@ -80,3 +84,4 @@ extern "C"
 void C_ZNK13QMimeDatabase12allMimeTypesEv(void *this_) {
   /*return*/ ((QMimeDatabase*)this_)->allMimeTypes();
 }
+//  main block end

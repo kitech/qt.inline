@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h
 #include <qgraphicsgridlayout.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:56
 // void QGraphicsGridLayout(class QGraphicsLayoutItem *)
 extern "C"
@@ -292,3 +296,4 @@ extern "C"
 void C_ZNK19QGraphicsGridLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, const QSizeF & constraint) {
   /*return*/ ((QGraphicsGridLayout*)this_)->sizeHint(which, constraint);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qscreen.h
 #include <qscreen.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qscreen.h:67
 // const QMetaObject * metaObject()
@@ -262,3 +266,4 @@ extern "C"
 void C_ZN7QScreen18refreshRateChangedEd(void *this_, qreal refreshRate) {
   ((QScreen*)this_)->refreshRateChanged(refreshRate);
 }
+//  main block end

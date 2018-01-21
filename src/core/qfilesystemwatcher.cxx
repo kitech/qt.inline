@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qfilesystemwatcher.h
 #include <qfilesystemwatcher.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:54
 // const QMetaObject * metaObject()
@@ -64,3 +68,4 @@ extern "C"
 void C_ZNK18QFileSystemWatcher11directoriesEv(void *this_) {
   /*return*/ ((QFileSystemWatcher*)this_)->directories();
 }
+//  main block end

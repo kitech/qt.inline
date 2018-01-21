@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextcursor.h
 #include <qtextcursor.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qtextcursor.h:68
 // void QTextCursor()
 extern "C"
@@ -96,8 +100,8 @@ void C_ZN11QTextCursor10insertTextERK7QStringRK15QTextCharFormat(void *this_, co
 // /usr/include/qt/QtGui/qtextcursor.h:130
 // bool movePosition(enum QTextCursor::MoveOperation, enum QTextCursor::MoveMode, int)
 extern "C"
-void C_ZN11QTextCursor12movePositionENS_13MoveOperationENS_8MoveModeEi(void *this_, QTextCursor::MoveOperation op, QTextCursor::MoveMode a1, int n) {
-  /*return*/ ((QTextCursor*)this_)->movePosition(op, a1, n);
+void C_ZN11QTextCursor12movePositionENS_13MoveOperationENS_8MoveModeEi(void *this_, QTextCursor::MoveOperation op, QTextCursor::MoveMode arg1, int n) {
+  /*return*/ ((QTextCursor*)this_)->movePosition(op, arg1, n);
 }
 // /usr/include/qt/QtGui/qtextcursor.h:132
 // bool visualNavigation()
@@ -447,3 +451,4 @@ extern "C"
 void C_ZNK11QTextCursor8documentEv(void *this_) {
   /*return*/ ((QTextCursor*)this_)->document();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstandardpaths.h
 #include <qstandardpaths.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtCore/qstandardpaths.h:77
 // QString writableLocation(enum QStandardPaths::StandardLocation)
@@ -65,3 +69,4 @@ extern "C"
 void C_ZN14QStandardPaths17isTestModeEnabledEv() {
   /*return*/ QStandardPaths::isTestModeEnabled();
 }
+//  main block end

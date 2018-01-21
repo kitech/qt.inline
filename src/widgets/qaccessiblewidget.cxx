@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h
 #include <qaccessiblewidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h:55
 // void QAccessibleWidget(class QWidget *, class QAccessible::Role, const class QString &)
 extern "C"
@@ -134,3 +138,4 @@ extern "C"
 void C_ZNK17QAccessibleWidget20keyBindingsForActionERK7QString(void *this_, const QString & actionName) {
   /*return*/ ((QAccessibleWidget*)this_)->keyBindingsForAction(actionName);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qdiriterator.h
 #include <qdiriterator.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qdiriterator.h:58
 // void QDirIterator(const class QDir &, IteratorFlags)
 extern "C"
@@ -68,3 +72,4 @@ extern "C"
 void C_ZNK12QDirIterator4pathEv(void *this_) {
   /*return*/ ((QDirIterator*)this_)->path();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qcursor.h
 #include <qcursor.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qcursor.h:81
 // void QCursor()
 extern "C"
@@ -117,3 +121,4 @@ extern "C"
 void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, const QPoint & p) {
   QCursor::setPos(screen, p);
 }
+//  main block end

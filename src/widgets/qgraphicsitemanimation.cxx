@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #include <qgraphicsitemanimation.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
 // const QMetaObject * metaObject()
@@ -178,3 +182,4 @@ extern "C"
 void C_ZN22QGraphicsItemAnimation5resetEv(void *this_) {
   ((QGraphicsItemAnimation*)this_)->reset();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpen.h
 #include <qpen.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpen.h:62
 // void QPen()
 extern "C"
@@ -11,8 +15,8 @@ void* C_ZN4QPenC1Ev() {
 // /usr/include/qt/QtGui/qpen.h:63
 // void QPen(Qt::PenStyle)
 extern "C"
-void* C_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle a0) {
-  return new QPen(a0);
+void* C_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle arg0) {
+  return new QPen(arg0);
 }
 // /usr/include/qt/QtGui/qpen.h:64
 // void QPen(const class QColor &)
@@ -48,8 +52,8 @@ void C_ZNK4QPen5styleEv(void *this_) {
 // /usr/include/qt/QtGui/qpen.h:81
 // void setStyle(Qt::PenStyle)
 extern "C"
-void C_ZN4QPen8setStyleEN2Qt8PenStyleE(void *this_, Qt::PenStyle a0) {
-  ((QPen*)this_)->setStyle(a0);
+void C_ZN4QPen8setStyleEN2Qt8PenStyleE(void *this_, Qt::PenStyle arg0) {
+  ((QPen*)this_)->setStyle(arg0);
 }
 // /usr/include/qt/QtGui/qpen.h:83
 // QVector<qreal> dashPattern()
@@ -183,3 +187,4 @@ extern "C"
 void C_ZN4QPen10isDetachedEv(void *this_) {
   /*return*/ ((QPen*)this_)->isDetached();
 }
+//  main block end

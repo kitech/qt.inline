@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qfontcombobox.h
 #include <qfontcombobox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qfontcombobox.h:55
 // const QMetaObject * metaObject()
@@ -25,8 +29,8 @@ void C_ZN13QFontComboBoxD1Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qfontcombobox.h:65
 // void setWritingSystem(class QFontDatabase::WritingSystem)
 extern "C"
-void C_ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE(void *this_, QFontDatabase::WritingSystem a0) {
-  ((QFontComboBox*)this_)->setWritingSystem(a0);
+void C_ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE(void *this_, QFontDatabase::WritingSystem arg0) {
+  ((QFontComboBox*)this_)->setWritingSystem(arg0);
 }
 // /usr/include/qt/QtWidgets/qfontcombobox.h:66
 // QFontDatabase::WritingSystem writingSystem()
@@ -71,3 +75,4 @@ extern "C"
 void C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *this_, const QFont & f) {
   ((QFontComboBox*)this_)->currentFontChanged(f);
 }
+//  main block end

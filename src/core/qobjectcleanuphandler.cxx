@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h
 #include <qobjectcleanuphandler.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:50
 // const QMetaObject * metaObject()
@@ -46,3 +50,4 @@ extern "C"
 void C_ZN21QObjectCleanupHandler5clearEv(void *this_) {
   ((QObjectCleanupHandler*)this_)->clear();
 }
+//  main block end

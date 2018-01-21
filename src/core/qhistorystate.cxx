@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qhistorystate.h
 #include <qhistorystate.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qhistorystate.h:54
 // const QMetaObject * metaObject()
@@ -64,3 +68,4 @@ extern "C"
 void C_ZN13QHistoryState14setHistoryTypeENS_11HistoryTypeE(void *this_, QHistoryState::HistoryType type) {
   ((QHistoryState*)this_)->setHistoryType(type);
 }
+//  main block end

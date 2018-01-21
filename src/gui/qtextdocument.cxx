@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextdocument.h
 #include <qtextdocument.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qtextdocument.h:98
 // const QMetaObject * metaObject()
@@ -104,8 +108,8 @@ void C_ZNK13QTextDocument14documentLayoutEv(void *this_) {
 // /usr/include/qt/QtGui/qtextdocument.h:145
 // void setMetaInformation(enum QTextDocument::MetaInformation, const class QString &)
 extern "C"
-void C_ZN13QTextDocument18setMetaInformationENS_15MetaInformationERK7QString(void *this_, QTextDocument::MetaInformation info, const QString & a1) {
-  ((QTextDocument*)this_)->setMetaInformation(info, a1);
+void C_ZN13QTextDocument18setMetaInformationENS_15MetaInformationERK7QString(void *this_, QTextDocument::MetaInformation info, const QString & arg1) {
+  ((QTextDocument*)this_)->setMetaInformation(info, arg1);
 }
 // /usr/include/qt/QtGui/qtextdocument.h:146
 // QString metaInformation(enum QTextDocument::MetaInformation)
@@ -200,8 +204,8 @@ void C_ZNK13QTextDocument6objectEi(void *this_, int objectIndex) {
 // /usr/include/qt/QtGui/qtextdocument.h:183
 // QTextObject * objectForFormat(const class QTextFormat &)
 extern "C"
-void C_ZNK13QTextDocument15objectForFormatERK11QTextFormat(void *this_, const QTextFormat & a0) {
-  /*return*/ ((QTextDocument*)this_)->objectForFormat(a0);
+void C_ZNK13QTextDocument15objectForFormatERK11QTextFormat(void *this_, const QTextFormat & arg0) {
+  /*return*/ ((QTextDocument*)this_)->objectForFormat(arg0);
 }
 // /usr/include/qt/QtGui/qtextdocument.h:185
 // QTextBlock findBlock(int)
@@ -494,14 +498,14 @@ void C_ZN13QTextDocument15contentsChangedEv(void *this_) {
 // /usr/include/qt/QtGui/qtextdocument.h:274
 // void undoAvailable(_Bool)
 extern "C"
-void C_ZN13QTextDocument13undoAvailableEb(void *this_, bool a0) {
-  ((QTextDocument*)this_)->undoAvailable(a0);
+void C_ZN13QTextDocument13undoAvailableEb(void *this_, bool arg0) {
+  ((QTextDocument*)this_)->undoAvailable(arg0);
 }
 // /usr/include/qt/QtGui/qtextdocument.h:275
 // void redoAvailable(_Bool)
 extern "C"
-void C_ZN13QTextDocument13redoAvailableEb(void *this_, bool a0) {
-  ((QTextDocument*)this_)->redoAvailable(a0);
+void C_ZN13QTextDocument13redoAvailableEb(void *this_, bool arg0) {
+  ((QTextDocument*)this_)->redoAvailable(arg0);
 }
 // /usr/include/qt/QtGui/qtextdocument.h:276
 // void undoCommandAdded()
@@ -554,8 +558,8 @@ void C_ZN13QTextDocument4redoEv(void *this_) {
 // /usr/include/qt/QtGui/qtextdocument.h:286
 // void appendUndoItem(class QAbstractUndoItem *)
 extern "C"
-void C_ZN13QTextDocument14appendUndoItemEP17QAbstractUndoItem(void *this_, QAbstractUndoItem * a0) {
-  ((QTextDocument*)this_)->appendUndoItem(a0);
+void C_ZN13QTextDocument14appendUndoItemEP17QAbstractUndoItem(void *this_, QAbstractUndoItem * arg0) {
+  ((QTextDocument*)this_)->appendUndoItem(arg0);
 }
 // /usr/include/qt/QtGui/qtextdocument.h:287
 // void setModified(_Bool)
@@ -569,3 +573,4 @@ extern "C"
 void C_ZNK13QTextDocument9docHandleEv(void *this_) {
   /*return*/ ((QTextDocument*)this_)->docHandle();
 }
+//  main block end

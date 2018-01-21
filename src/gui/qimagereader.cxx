@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qimagereader.h
 #include <qimagereader.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qimagereader.h:70
 // void QImageReader()
 extern "C"
@@ -324,3 +328,4 @@ extern "C"
 void C_ZN12QImageReader18supportedMimeTypesEv() {
   /*return*/ QImageReader::supportedMimeTypes();
 }
+//  main block end

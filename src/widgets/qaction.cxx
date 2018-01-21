@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qaction.h
 #include <qaction.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qaction.h:61
 // const QMetaObject * metaObject()
@@ -175,8 +179,8 @@ void C_ZN7QAction12setShortcutsERK5QListI12QKeySequenceE(void *this_, const QLis
 // /usr/include/qt/QtWidgets/qaction.h:135
 // void setShortcuts(class QKeySequence::StandardKey)
 extern "C"
-void C_ZN7QAction12setShortcutsEN12QKeySequence11StandardKeyE(void *this_, QKeySequence::StandardKey a0) {
-  ((QAction*)this_)->setShortcuts(a0);
+void C_ZN7QAction12setShortcutsEN12QKeySequence11StandardKeyE(void *this_, QKeySequence::StandardKey arg0) {
+  ((QAction*)this_)->setShortcuts(arg0);
 }
 // /usr/include/qt/QtWidgets/qaction.h:136
 // QList<QKeySequence> shortcuts()
@@ -199,8 +203,8 @@ void C_ZNK7QAction15shortcutContextEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:141
 // void setAutoRepeat(_Bool)
 extern "C"
-void C_ZN7QAction13setAutoRepeatEb(void *this_, bool a0) {
-  ((QAction*)this_)->setAutoRepeat(a0);
+void C_ZN7QAction13setAutoRepeatEb(void *this_, bool arg0) {
+  ((QAction*)this_)->setAutoRepeat(arg0);
 }
 // /usr/include/qt/QtWidgets/qaction.h:142
 // bool autoRepeat()
@@ -223,8 +227,8 @@ void C_ZNK7QAction4fontEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:148
 // void setCheckable(_Bool)
 extern "C"
-void C_ZN7QAction12setCheckableEb(void *this_, bool a0) {
-  ((QAction*)this_)->setCheckable(a0);
+void C_ZN7QAction12setCheckableEb(void *this_, bool arg0) {
+  ((QAction*)this_)->setCheckable(arg0);
 }
 // /usr/include/qt/QtWidgets/qaction.h:149
 // bool isCheckable()
@@ -333,8 +337,8 @@ void C_ZN7QAction5hoverEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:185
 // void setChecked(_Bool)
 extern "C"
-void C_ZN7QAction10setCheckedEb(void *this_, bool a0) {
-  ((QAction*)this_)->setChecked(a0);
+void C_ZN7QAction10setCheckedEb(void *this_, bool arg0) {
+  ((QAction*)this_)->setChecked(arg0);
 }
 // /usr/include/qt/QtWidgets/qaction.h:186
 // void toggle()
@@ -345,8 +349,8 @@ void C_ZN7QAction6toggleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:187
 // void setEnabled(_Bool)
 extern "C"
-void C_ZN7QAction10setEnabledEb(void *this_, bool a0) {
-  ((QAction*)this_)->setEnabled(a0);
+void C_ZN7QAction10setEnabledEb(void *this_, bool arg0) {
+  ((QAction*)this_)->setEnabled(arg0);
 }
 // inline
 // /usr/include/qt/QtWidgets/qaction.h:188
@@ -358,8 +362,8 @@ void C_ZN7QAction11setDisabledEb(void *this_, bool b) {
 // /usr/include/qt/QtWidgets/qaction.h:189
 // void setVisible(_Bool)
 extern "C"
-void C_ZN7QAction10setVisibleEb(void *this_, bool a0) {
-  ((QAction*)this_)->setVisible(a0);
+void C_ZN7QAction10setVisibleEb(void *this_, bool arg0) {
+  ((QAction*)this_)->setVisible(arg0);
 }
 // /usr/include/qt/QtWidgets/qaction.h:192
 // void changed()
@@ -382,6 +386,7 @@ void C_ZN7QAction7hoveredEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:195
 // void toggled(_Bool)
 extern "C"
-void C_ZN7QAction7toggledEb(void *this_, bool a0) {
-  ((QAction*)this_)->toggled(a0);
+void C_ZN7QAction7toggledEb(void *this_, bool arg0) {
+  ((QAction*)this_)->toggled(arg0);
 }
+//  main block end

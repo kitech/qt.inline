@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qundoview.h
 #include <qundoview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qundoview.h:58
 // const QMetaObject * metaObject()
@@ -82,3 +86,4 @@ extern "C"
 void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
   ((QUndoView*)this_)->setGroup(group);
 }
+//  main block end

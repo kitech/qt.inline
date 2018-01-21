@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtouchdevice.h
 #include <qtouchdevice.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qtouchdevice.h:72
 // void QTouchDevice()
 extern "C"
@@ -69,3 +73,4 @@ extern "C"
 void C_ZN12QTouchDevice21setMaximumTouchPointsEi(void *this_, int max) {
   ((QTouchDevice*)this_)->setMaximumTouchPoints(max);
 }
+//  main block end

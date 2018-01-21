@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qdatastream.h
 #include <qdatastream.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qdatastream.h:117
 // void QDataStream()
 extern "C"
@@ -11,20 +15,20 @@ void* C_ZN11QDataStreamC1Ev() {
 // /usr/include/qt/QtCore/qdatastream.h:118
 // void QDataStream(class QIODevice *)
 extern "C"
-void* C_ZN11QDataStreamC1EP9QIODevice(QIODevice * a0) {
-  return new QDataStream(a0);
+void* C_ZN11QDataStreamC1EP9QIODevice(QIODevice * arg0) {
+  return new QDataStream(arg0);
 }
 // /usr/include/qt/QtCore/qdatastream.h:119
 // void QDataStream(class QByteArray *, class QIODevice::OpenMode)
 extern "C"
-void* C_ZN11QDataStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * a0, QFlags<QIODevice::OpenModeFlag> flags) {
-  return new QDataStream(a0, flags);
+void* C_ZN11QDataStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) {
+  return new QDataStream(arg0, flags);
 }
 // /usr/include/qt/QtCore/qdatastream.h:120
 // void QDataStream(const class QByteArray &)
 extern "C"
-void* C_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & a0) {
-  return new QDataStream(a0);
+void* C_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & arg0) {
+  return new QDataStream(arg0);
 }
 // /usr/include/qt/QtCore/qdatastream.h:121
 // void ~QDataStream()
@@ -41,8 +45,8 @@ void C_ZNK11QDataStream6deviceEv(void *this_) {
 // /usr/include/qt/QtCore/qdatastream.h:124
 // void setDevice(class QIODevice *)
 extern "C"
-void C_ZN11QDataStream9setDeviceEP9QIODevice(void *this_, QIODevice * a0) {
-  ((QDataStream*)this_)->setDevice(a0);
+void C_ZN11QDataStream9setDeviceEP9QIODevice(void *this_, QIODevice * arg0) {
+  ((QDataStream*)this_)->setDevice(arg0);
 }
 // /usr/include/qt/QtCore/qdatastream.h:125
 // void unsetDevice()
@@ -95,8 +99,8 @@ void C_ZNK11QDataStream9byteOrderEv(void *this_) {
 // /usr/include/qt/QtCore/qdatastream.h:137
 // void setByteOrder(enum QDataStream::ByteOrder)
 extern "C"
-void C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *this_, QDataStream::ByteOrder a0) {
-  ((QDataStream*)this_)->setByteOrder(a0);
+void C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *this_, QDataStream::ByteOrder arg0) {
+  ((QDataStream*)this_)->setByteOrder(arg0);
 }
 // /usr/include/qt/QtCore/qdatastream.h:139
 // int version()
@@ -107,32 +111,32 @@ void C_ZNK11QDataStream7versionEv(void *this_) {
 // /usr/include/qt/QtCore/qdatastream.h:140
 // void setVersion(int)
 extern "C"
-void C_ZN11QDataStream10setVersionEi(void *this_, int a0) {
-  ((QDataStream*)this_)->setVersion(a0);
+void C_ZN11QDataStream10setVersionEi(void *this_, int arg0) {
+  ((QDataStream*)this_)->setVersion(arg0);
 }
 // /usr/include/qt/QtCore/qdatastream.h:169
 // QDataStream & readBytes(char *&, uint &)
 extern "C"
-void C_ZN11QDataStream9readBytesERPcRj(void *this_, char *& a0, uint & len) {
-  /*return*/ ((QDataStream*)this_)->readBytes(a0, len);
+void C_ZN11QDataStream9readBytesERPcRj(void *this_, char *& arg0, uint & len) {
+  /*return*/ ((QDataStream*)this_)->readBytes(arg0, len);
 }
 // /usr/include/qt/QtCore/qdatastream.h:170
 // int readRawData(char *, int)
 extern "C"
-void C_ZN11QDataStream11readRawDataEPci(void *this_, char * a0, int len) {
-  /*return*/ ((QDataStream*)this_)->readRawData(a0, len);
+void C_ZN11QDataStream11readRawDataEPci(void *this_, char * arg0, int len) {
+  /*return*/ ((QDataStream*)this_)->readRawData(arg0, len);
 }
 // /usr/include/qt/QtCore/qdatastream.h:172
 // QDataStream & writeBytes(const char *, uint)
 extern "C"
-void C_ZN11QDataStream10writeBytesEPKcj(void *this_, const char * a0, uint len) {
-  /*return*/ ((QDataStream*)this_)->writeBytes(a0, len);
+void C_ZN11QDataStream10writeBytesEPKcj(void *this_, const char * arg0, uint len) {
+  /*return*/ ((QDataStream*)this_)->writeBytes(arg0, len);
 }
 // /usr/include/qt/QtCore/qdatastream.h:173
 // int writeRawData(const char *, int)
 extern "C"
-void C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * a0, int len) {
-  /*return*/ ((QDataStream*)this_)->writeRawData(a0, len);
+void C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * arg0, int len) {
+  /*return*/ ((QDataStream*)this_)->writeRawData(arg0, len);
 }
 // /usr/include/qt/QtCore/qdatastream.h:175
 // int skipRawData(int)
@@ -164,3 +168,4 @@ extern "C"
 void C_ZN11QDataStream16abortTransactionEv(void *this_) {
   ((QDataStream*)this_)->abortTransaction();
 }
+//  main block end

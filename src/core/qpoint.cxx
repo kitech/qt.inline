@@ -1,95 +1,86 @@
+//  header block begin
 // /usr/include/qt/QtCore/qpoint.h
 #include <qpoint.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
-// /usr/include/qt/QtCore/qpoint.h:214
-// void QPointF()
+// /usr/include/qt/QtCore/qpoint.h:51
+// void QPoint()
 extern "C"
-void* C_ZN7QPointFC1Ev() {
-  return new QPointF();
+void* C_ZN6QPointC1Ev() {
+  return new QPoint();
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:215
-// void QPointF(const class QPoint &)
+// /usr/include/qt/QtCore/qpoint.h:52
+// void QPoint(int, int)
 extern "C"
-void* C_ZN7QPointFC1ERK6QPoint(const QPoint & p) {
-  return new QPointF(p);
+void* C_ZN6QPointC1Eii(int xpos, int ypos) {
+  return new QPoint(xpos, ypos);
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:216
-// void QPointF(qreal, qreal)
-extern "C"
-void* C_ZN7QPointFC1Edd(qreal xpos, qreal ypos) {
-  return new QPointF(xpos, ypos);
-}
-// inline
-// /usr/include/qt/QtCore/qpoint.h:218
-// qreal manhattanLength()
-extern "C"
-void C_ZNK7QPointF15manhattanLengthEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->manhattanLength();
-}
-// inline
-// /usr/include/qt/QtCore/qpoint.h:220
+// /usr/include/qt/QtCore/qpoint.h:54
 // bool isNull()
 extern "C"
-void C_ZNK7QPointF6isNullEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->isNull();
+void C_ZNK6QPoint6isNullEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->isNull();
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:222
-// qreal x()
+// /usr/include/qt/QtCore/qpoint.h:56
+// int x()
 extern "C"
-void C_ZNK7QPointF1xEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->x();
+void C_ZNK6QPoint1xEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->x();
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:223
-// qreal y()
+// /usr/include/qt/QtCore/qpoint.h:57
+// int y()
 extern "C"
-void C_ZNK7QPointF1yEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->y();
+void C_ZNK6QPoint1yEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->y();
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:224
-// void setX(qreal)
+// /usr/include/qt/QtCore/qpoint.h:58
+// void setX(int)
 extern "C"
-void C_ZN7QPointF4setXEd(void *this_, qreal x) {
-  ((QPointF*)this_)->setX(x);
+void C_ZN6QPoint4setXEi(void *this_, int x) {
+  ((QPoint*)this_)->setX(x);
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:225
-// void setY(qreal)
+// /usr/include/qt/QtCore/qpoint.h:59
+// void setY(int)
 extern "C"
-void C_ZN7QPointF4setYEd(void *this_, qreal y) {
-  ((QPointF*)this_)->setY(y);
+void C_ZN6QPoint4setYEi(void *this_, int y) {
+  ((QPoint*)this_)->setY(y);
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:227
-// qreal & rx()
+// /usr/include/qt/QtCore/qpoint.h:61
+// int manhattanLength()
 extern "C"
-void C_ZN7QPointF2rxEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->rx();
+void C_ZNK6QPoint15manhattanLengthEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->manhattanLength();
 }
 // inline
-// /usr/include/qt/QtCore/qpoint.h:228
-// qreal & ry()
+// /usr/include/qt/QtCore/qpoint.h:63
+// int & rx()
 extern "C"
-void C_ZN7QPointF2ryEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->ry();
+void C_ZN6QPoint2rxEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->rx();
+}
+// inline
+// /usr/include/qt/QtCore/qpoint.h:64
+// int & ry()
+extern "C"
+void C_ZN6QPoint2ryEv(void *this_) {
+  /*return*/ ((QPoint*)this_)->ry();
 }
 // static inline
-// /usr/include/qt/QtCore/qpoint.h:235
-// qreal dotProduct(const class QPointF &, const class QPointF &)
+// /usr/include/qt/QtCore/qpoint.h:75
+// int dotProduct(const class QPoint &, const class QPoint &)
 extern "C"
-void C_ZN7QPointF10dotProductERKS_S1_(const QPointF & p1, const QPointF & p2) {
-  /*return*/ QPointF::dotProduct(p1, p2);
+void C_ZN6QPoint10dotProductERKS_S1_(const QPoint & p1, const QPoint & p2) {
+  /*return*/ QPoint::dotProduct(p1, p2);
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:248
-// QPoint toPoint()
-extern "C"
-void C_ZNK7QPointF7toPointEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->toPoint();
-}
+//  main block end

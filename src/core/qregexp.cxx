@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qregexp.h
 #include <qregexp.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qregexp.h:70
 // void QRegExp()
 extern "C"
@@ -172,3 +176,4 @@ extern "C"
 void C_ZN7QRegExp6escapeERK7QString(const QString & str) {
   /*return*/ QRegExp::escape(str);
 }
+//  main block end

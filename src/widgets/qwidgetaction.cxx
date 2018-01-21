@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qwidgetaction.h
 #include <qwidgetaction.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qwidgetaction.h:54
 // const QMetaObject * metaObject()
@@ -46,3 +50,4 @@ extern "C"
 void C_ZN13QWidgetAction13releaseWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QWidgetAction*)this_)->releaseWidget(widget);
 }
+//  main block end

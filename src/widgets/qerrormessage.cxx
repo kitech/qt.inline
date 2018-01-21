@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qerrormessage.h
 #include <qerrormessage.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qerrormessage.h:54
 // const QMetaObject * metaObject()
@@ -41,3 +45,4 @@ extern "C"
 void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, const QString & message, const QString & type) {
   ((QErrorMessage*)this_)->showMessage(message, type);
 }
+//  main block end

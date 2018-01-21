@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qwhatsthis.h
 #include <qwhatsthis.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtWidgets/qwhatsthis.h:58
 // void enterWhatsThisMode()
@@ -44,3 +48,4 @@ extern "C"
 void C_ZN10QWhatsThis12createActionEP7QObject(QObject * parent) {
   /*return*/ QWhatsThis::createAction(parent);
 }
+//  main block end

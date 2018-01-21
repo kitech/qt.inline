@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qdatetime.h
 #include <qdatetime.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qdatetime.h:223
 // void QDateTime()
 extern "C"
@@ -11,14 +15,14 @@ void* C_ZN9QDateTimeC1Ev() {
 // /usr/include/qt/QtCore/qdatetime.h:224
 // void QDateTime(const class QDate &)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDate(const QDate & a0) {
-  return new QDateTime(a0);
+void* C_ZN9QDateTimeC1ERK5QDate(const QDate & arg0) {
+  return new QDateTime(arg0);
 }
 // /usr/include/qt/QtCore/qdatetime.h:225
 // void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & a0, const QTime & a1, Qt::TimeSpec spec) {
-  return new QDateTime(a0, a1, spec);
+void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) {
+  return new QDateTime(arg0, arg1, spec);
 }
 // /usr/include/qt/QtCore/qdatetime.h:227
 // void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
@@ -230,20 +234,20 @@ void C_ZNK9QDateTime10toTimeZoneERK9QTimeZone(void *this_, const QTimeZone & toZ
 // /usr/include/qt/QtCore/qdatetime.h:287
 // qint64 daysTo(const class QDateTime &)
 extern "C"
-void C_ZNK9QDateTime6daysToERKS_(void *this_, const QDateTime & a0) {
-  /*return*/ ((QDateTime*)this_)->daysTo(a0);
+void C_ZNK9QDateTime6daysToERKS_(void *this_, const QDateTime & arg0) {
+  /*return*/ ((QDateTime*)this_)->daysTo(arg0);
 }
 // /usr/include/qt/QtCore/qdatetime.h:288
 // qint64 secsTo(const class QDateTime &)
 extern "C"
-void C_ZNK9QDateTime6secsToERKS_(void *this_, const QDateTime & a0) {
-  /*return*/ ((QDateTime*)this_)->secsTo(a0);
+void C_ZNK9QDateTime6secsToERKS_(void *this_, const QDateTime & arg0) {
+  /*return*/ ((QDateTime*)this_)->secsTo(arg0);
 }
 // /usr/include/qt/QtCore/qdatetime.h:289
 // qint64 msecsTo(const class QDateTime &)
 extern "C"
-void C_ZNK9QDateTime7msecsToERKS_(void *this_, const QDateTime & a0) {
-  /*return*/ ((QDateTime*)this_)->msecsTo(a0);
+void C_ZNK9QDateTime7msecsToERKS_(void *this_, const QDateTime & arg0) {
+  /*return*/ ((QDateTime*)this_)->msecsTo(arg0);
 }
 // /usr/include/qt/QtCore/qdatetime.h:299
 // void setUtcOffset(int)
@@ -334,3 +338,4 @@ extern "C"
 void C_ZN9QDateTime22currentMSecsSinceEpochEv() {
   /*return*/ QDateTime::currentMSecsSinceEpoch();
 }
+//  main block end

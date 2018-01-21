@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qdesktopservices.h
 #include <qdesktopservices.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtGui/qdesktopservices.h:58
 // bool openUrl(const class QUrl &)
@@ -23,3 +27,4 @@ extern "C"
 void C_ZN16QDesktopServices15unsetUrlHandlerERK7QString(const QString & scheme) {
   QDesktopServices::unsetUrlHandler(scheme);
 }
+//  main block end

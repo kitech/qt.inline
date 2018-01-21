@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qframe.h
 #include <qframe.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qframe.h:53
 // const QMetaObject * metaObject()
@@ -31,8 +35,8 @@ void C_ZNK6QFrame10frameStyleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:67
 // void setFrameStyle(int)
 extern "C"
-void C_ZN6QFrame13setFrameStyleEi(void *this_, int a0) {
-  ((QFrame*)this_)->setFrameStyle(a0);
+void C_ZN6QFrame13setFrameStyleEi(void *this_, int arg0) {
+  ((QFrame*)this_)->setFrameStyle(arg0);
 }
 // /usr/include/qt/QtWidgets/qframe.h:69
 // int frameWidth()
@@ -56,8 +60,8 @@ void C_ZNK6QFrame10frameShapeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:96
 // void setFrameShape(enum QFrame::Shape)
 extern "C"
-void C_ZN6QFrame13setFrameShapeENS_5ShapeE(void *this_, QFrame::Shape a0) {
-  ((QFrame*)this_)->setFrameShape(a0);
+void C_ZN6QFrame13setFrameShapeENS_5ShapeE(void *this_, QFrame::Shape arg0) {
+  ((QFrame*)this_)->setFrameShape(arg0);
 }
 // /usr/include/qt/QtWidgets/qframe.h:97
 // QFrame::Shadow frameShadow()
@@ -68,8 +72,8 @@ void C_ZNK6QFrame11frameShadowEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:98
 // void setFrameShadow(enum QFrame::Shadow)
 extern "C"
-void C_ZN6QFrame14setFrameShadowENS_6ShadowE(void *this_, QFrame::Shadow a0) {
-  ((QFrame*)this_)->setFrameShadow(a0);
+void C_ZN6QFrame14setFrameShadowENS_6ShadowE(void *this_, QFrame::Shadow arg0) {
+  ((QFrame*)this_)->setFrameShadow(arg0);
 }
 // /usr/include/qt/QtWidgets/qframe.h:100
 // int lineWidth()
@@ -80,8 +84,8 @@ void C_ZNK6QFrame9lineWidthEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:101
 // void setLineWidth(int)
 extern "C"
-void C_ZN6QFrame12setLineWidthEi(void *this_, int a0) {
-  ((QFrame*)this_)->setLineWidth(a0);
+void C_ZN6QFrame12setLineWidthEi(void *this_, int arg0) {
+  ((QFrame*)this_)->setLineWidth(arg0);
 }
 // /usr/include/qt/QtWidgets/qframe.h:103
 // int midLineWidth()
@@ -92,8 +96,8 @@ void C_ZNK6QFrame12midLineWidthEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:104
 // void setMidLineWidth(int)
 extern "C"
-void C_ZN6QFrame15setMidLineWidthEi(void *this_, int a0) {
-  ((QFrame*)this_)->setMidLineWidth(a0);
+void C_ZN6QFrame15setMidLineWidthEi(void *this_, int arg0) {
+  ((QFrame*)this_)->setMidLineWidth(arg0);
 }
 // /usr/include/qt/QtWidgets/qframe.h:106
 // QRect frameRect()
@@ -104,6 +108,7 @@ void C_ZNK6QFrame9frameRectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:107
 // void setFrameRect(const class QRect &)
 extern "C"
-void C_ZN6QFrame12setFrameRectERK5QRect(void *this_, const QRect & a0) {
-  ((QFrame*)this_)->setFrameRect(a0);
+void C_ZN6QFrame12setFrameRectERK5QRect(void *this_, const QRect & arg0) {
+  ((QFrame*)this_)->setFrameRect(arg0);
 }
+//  main block end

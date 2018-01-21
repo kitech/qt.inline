@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qvariantanimation.h
 #include <qvariantanimation.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qvariantanimation.h:57
 // const QMetaObject * metaObject()
@@ -101,3 +105,4 @@ extern "C"
 void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, const QVariant & value) {
   ((QVariantAnimation*)this_)->valueChanged(value);
 }
+//  main block end

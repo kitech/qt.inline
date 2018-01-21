@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qthreadpool.h
 #include <qthreadpool.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qthreadpool.h:56
 // const QMetaObject * metaObject()
@@ -101,3 +105,4 @@ extern "C"
 void C_ZN11QThreadPool6cancelEP9QRunnable(void *this_, QRunnable * runnable) {
   ((QThreadPool*)this_)->cancel(runnable);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsysinfo.h
 #include <qsysinfo.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // static inline
 // /usr/include/qt/QtCore/qsysinfo.h:125
 // QSysInfo::WinVersion windowsVersion()
@@ -79,5 +83,16 @@ extern "C"
 void C_ZN8QSysInfo15machineHostNameEv() {
   /*return*/ QSysInfo::machineHostName();
 }
+//  main block end
 
+//  use block begin
 
+//  use block end
+
+//  ext block begin
+
+//  ext block end
+
+//  body block begin
+
+//  body block end

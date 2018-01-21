@@ -1,13 +1,17 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtransform.h
 #include <qtransform.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qtransform.h:68
 // void QTransform(Qt::Initialization)
 extern "C"
-void* C_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization a0) {
-  return new QTransform(a0);
+void* C_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return new QTransform(arg0);
 }
 // /usr/include/qt/QtGui/qtransform.h:69
 // void QTransform()
@@ -292,14 +296,14 @@ void C_ZNK10QTransform12mapToPolygonERK5QRect(void *this_, const QRect & r) {
 // /usr/include/qt/QtGui/qtransform.h:152
 // QRect mapRect(const class QRect &)
 extern "C"
-void C_ZNK10QTransform7mapRectERK5QRect(void *this_, const QRect & a0) {
-  /*return*/ ((QTransform*)this_)->mapRect(a0);
+void C_ZNK10QTransform7mapRectERK5QRect(void *this_, const QRect & arg0) {
+  /*return*/ ((QTransform*)this_)->mapRect(arg0);
 }
 // /usr/include/qt/QtGui/qtransform.h:153
 // QRectF mapRect(const class QRectF &)
 extern "C"
-void C_ZNK10QTransform7mapRectERK6QRectF(void *this_, const QRectF & a0) {
-  /*return*/ ((QTransform*)this_)->mapRect(a0);
+void C_ZNK10QTransform7mapRectERK6QRectF(void *this_, const QRectF & arg0) {
+  /*return*/ ((QTransform*)this_)->mapRect(arg0);
 }
 // /usr/include/qt/QtGui/qtransform.h:154
 // void map(int, int, int *, int *)
@@ -333,3 +337,4 @@ extern "C"
 void C_ZN10QTransform9fromScaleEdd(qreal dx, qreal dy) {
   /*return*/ QTransform::fromScale(dx, dy);
 }
+//  main block end

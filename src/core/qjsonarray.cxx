@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qjsonarray.h
 #include <qjsonarray.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qjsonarray.h:59
 // void QJsonArray()
 extern "C"
@@ -200,3 +204,4 @@ extern "C"
 void C_ZNK10QJsonArray5emptyEv(void *this_) {
   /*return*/ ((QJsonArray*)this_)->empty();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qproxystyle.h
 #include <qproxystyle.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qproxystyle.h:53
 // const QMetaObject * metaObject()
@@ -201,3 +205,4 @@ extern "C"
 void C_ZN11QProxyStyle8unpolishEP12QApplication(void *this_, QApplication * app) {
   ((QProxyStyle*)this_)->unpolish(app);
 }
+//  main block end

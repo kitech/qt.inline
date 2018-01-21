@@ -1,28 +1,78 @@
+//  header block begin
 // /usr/include/qt/QtCore/qeventloop.h
 #include <qeventloop.h>
 #include <QtCore>
 
-// /usr/include/qt/QtCore/qeventloop.h:93
-// void QEventLoopLocker()
+//  header block end
+
+//  main block begin
+// virtual
+// /usr/include/qt/QtCore/qeventloop.h:52
+// const QMetaObject * metaObject()
 extern "C"
-void* C_ZN16QEventLoopLockerC1Ev() {
-  return new QEventLoopLocker();
+void C_ZNK10QEventLoop10metaObjectEv(void *this_) {
+  /*return*/ ((QEventLoop*)this_)->metaObject();
 }
-// /usr/include/qt/QtCore/qeventloop.h:94
-// void QEventLoopLocker(class QEventLoop *)
+// /usr/include/qt/QtCore/qeventloop.h:56
+// void QEventLoop(class QObject *)
 extern "C"
-void* C_ZN16QEventLoopLockerC1EP10QEventLoop(QEventLoop * loop) {
-  return new QEventLoopLocker(loop);
+void* C_ZN10QEventLoopC1EP7QObject(QObject * parent) {
+  return new QEventLoop(parent);
 }
-// /usr/include/qt/QtCore/qeventloop.h:95
-// void QEventLoopLocker(class QThread *)
+// virtual
+// /usr/include/qt/QtCore/qeventloop.h:57
+// void ~QEventLoop()
 extern "C"
-void* C_ZN16QEventLoopLockerC1EP7QThread(QThread * thread) {
-  return new QEventLoopLocker(thread);
+void C_ZN10QEventLoopD1Ev(void *this_) {
+  delete (QEventLoop*)(this_);
 }
-// /usr/include/qt/QtCore/qeventloop.h:96
-// void ~QEventLoopLocker()
+// /usr/include/qt/QtCore/qeventloop.h:70
+// bool processEvents(ProcessEventsFlags)
 extern "C"
-void C_ZN16QEventLoopLockerD1Ev(void *this_) {
-  delete (QEventLoopLocker*)(this_);
+void C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags) {
+  /*return*/ ((QEventLoop*)this_)->processEvents(flags);
 }
+// /usr/include/qt/QtCore/qeventloop.h:71
+// void processEvents(ProcessEventsFlags, int)
+extern "C"
+void C_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEEi(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags, int maximumTime) {
+  ((QEventLoop*)this_)->processEvents(flags, maximumTime);
+}
+// /usr/include/qt/QtCore/qeventloop.h:73
+// int exec(ProcessEventsFlags)
+extern "C"
+void C_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE(void *this_, QFlags<QEventLoop::ProcessEventsFlag> flags) {
+  /*return*/ ((QEventLoop*)this_)->exec(flags);
+}
+// /usr/include/qt/QtCore/qeventloop.h:74
+// void exit(int)
+extern "C"
+void C_ZN10QEventLoop4exitEi(void *this_, int returnCode) {
+  ((QEventLoop*)this_)->exit(returnCode);
+}
+// /usr/include/qt/QtCore/qeventloop.h:75
+// bool isRunning()
+extern "C"
+void C_ZNK10QEventLoop9isRunningEv(void *this_) {
+  /*return*/ ((QEventLoop*)this_)->isRunning();
+}
+// /usr/include/qt/QtCore/qeventloop.h:77
+// void wakeUp()
+extern "C"
+void C_ZN10QEventLoop6wakeUpEv(void *this_) {
+  ((QEventLoop*)this_)->wakeUp();
+}
+// virtual
+// /usr/include/qt/QtCore/qeventloop.h:79
+// bool event(class QEvent *)
+extern "C"
+void C_ZN10QEventLoop5eventEP6QEvent(void *this_, QEvent * event) {
+  /*return*/ ((QEventLoop*)this_)->event(event);
+}
+// /usr/include/qt/QtCore/qeventloop.h:82
+// void quit()
+extern "C"
+void C_ZN10QEventLoop4quitEv(void *this_) {
+  ((QEventLoop*)this_)->quit();
+}
+//  main block end

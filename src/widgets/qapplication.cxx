@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qapplication.h
 #include <qapplication.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qapplication.h:73
 // const QMetaObject * metaObject()
@@ -12,8 +16,8 @@ void C_ZNK12QApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qapplication.h:96
 // void QApplication(int &, char **, int)
 extern "C"
-void* C_ZN12QApplicationC1ERiPPci(int & argc, char ** argv, int a2) {
-  return new QApplication(argc, argv, a2);
+void* C_ZN12QApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
+  return new QApplication(argc, argv, arg2);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qapplication.h:98
@@ -33,15 +37,15 @@ void C_ZN12QApplication5styleEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:101
 // void setStyle(class QStyle *)
 extern "C"
-void C_ZN12QApplication8setStyleEP6QStyle(QStyle * a0) {
-  QApplication::setStyle(a0);
+void C_ZN12QApplication8setStyleEP6QStyle(QStyle * arg0) {
+  QApplication::setStyle(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:102
 // QStyle * setStyle(const class QString &)
 extern "C"
-void C_ZN12QApplication8setStyleERK7QString(const QString & a0) {
-  /*return*/ QApplication::setStyle(a0);
+void C_ZN12QApplication8setStyleERK7QString(const QString & arg0) {
+  /*return*/ QApplication::setStyle(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:104
@@ -54,15 +58,15 @@ void C_ZN12QApplication9colorSpecEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:105
 // void setColorSpec(int)
 extern "C"
-void C_ZN12QApplication12setColorSpecEi(int a0) {
-  QApplication::setColorSpec(a0);
+void C_ZN12QApplication12setColorSpecEi(int arg0) {
+  QApplication::setColorSpec(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:111
 // QPalette palette(const class QWidget *)
 extern "C"
-void C_ZN12QApplication7paletteEPK7QWidget(const QWidget * a0) {
-  /*return*/ QApplication::palette(a0);
+void C_ZN12QApplication7paletteEPK7QWidget(const QWidget * arg0) {
+  /*return*/ QApplication::palette(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:112
@@ -75,8 +79,8 @@ void C_ZN12QApplication7paletteEPKc(const char * className) {
 // /usr/include/qt/QtWidgets/qapplication.h:113
 // void setPalette(const class QPalette &, const char *)
 extern "C"
-void C_ZN12QApplication10setPaletteERK8QPalettePKc(const QPalette & a0, const char * className) {
-  QApplication::setPalette(a0, className);
+void C_ZN12QApplication10setPaletteERK8QPalettePKc(const QPalette & arg0, const char * className) {
+  QApplication::setPalette(arg0, className);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:114
@@ -89,8 +93,8 @@ void C_ZN12QApplication4fontEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:115
 // QFont font(const class QWidget *)
 extern "C"
-void C_ZN12QApplication4fontEPK7QWidget(const QWidget * a0) {
-  /*return*/ QApplication::font(a0);
+void C_ZN12QApplication4fontEPK7QWidget(const QWidget * arg0) {
+  /*return*/ QApplication::font(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:116
@@ -103,8 +107,8 @@ void C_ZN12QApplication4fontEPKc(const char * className) {
 // /usr/include/qt/QtWidgets/qapplication.h:117
 // void setFont(const class QFont &, const char *)
 extern "C"
-void C_ZN12QApplication7setFontERK5QFontPKc(const QFont & a0, const char * className) {
-  QApplication::setFont(a0, className);
+void C_ZN12QApplication7setFontERK5QFontPKc(const QFont & arg0, const char * className) {
+  QApplication::setFont(arg0, className);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:118
@@ -229,8 +233,8 @@ void C_ZN12QApplication5alertEP7QWidgeti(QWidget * widget, int duration) {
 // /usr/include/qt/QtWidgets/qapplication.h:148
 // void setCursorFlashTime(int)
 extern "C"
-void C_ZN12QApplication18setCursorFlashTimeEi(int a0) {
-  QApplication::setCursorFlashTime(a0);
+void C_ZN12QApplication18setCursorFlashTimeEi(int arg0) {
+  QApplication::setCursorFlashTime(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:149
@@ -243,8 +247,8 @@ void C_ZN12QApplication15cursorFlashTimeEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:151
 // void setDoubleClickInterval(int)
 extern "C"
-void C_ZN12QApplication22setDoubleClickIntervalEi(int a0) {
-  QApplication::setDoubleClickInterval(a0);
+void C_ZN12QApplication22setDoubleClickIntervalEi(int arg0) {
+  QApplication::setDoubleClickInterval(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:152
@@ -257,8 +261,8 @@ void C_ZN12QApplication19doubleClickIntervalEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:154
 // void setKeyboardInputInterval(int)
 extern "C"
-void C_ZN12QApplication24setKeyboardInputIntervalEi(int a0) {
-  QApplication::setKeyboardInputInterval(a0);
+void C_ZN12QApplication24setKeyboardInputIntervalEi(int arg0) {
+  QApplication::setKeyboardInputInterval(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:155
@@ -271,8 +275,8 @@ void C_ZN12QApplication21keyboardInputIntervalEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:158
 // void setWheelScrollLines(int)
 extern "C"
-void C_ZN12QApplication19setWheelScrollLinesEi(int a0) {
-  QApplication::setWheelScrollLines(a0);
+void C_ZN12QApplication19setWheelScrollLinesEi(int arg0) {
+  QApplication::setWheelScrollLines(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:159
@@ -285,8 +289,8 @@ void C_ZN12QApplication16wheelScrollLinesEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:161
 // void setGlobalStrut(const class QSize &)
 extern "C"
-void C_ZN12QApplication14setGlobalStrutERK5QSize(const QSize & a0) {
-  QApplication::setGlobalStrut(a0);
+void C_ZN12QApplication14setGlobalStrutERK5QSize(const QSize & arg0) {
+  QApplication::setGlobalStrut(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:162
@@ -327,15 +331,15 @@ void C_ZN12QApplication17startDragDistanceEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:169
 // bool isEffectEnabled(Qt::UIEffect)
 extern "C"
-void C_ZN12QApplication15isEffectEnabledEN2Qt8UIEffectE(Qt::UIEffect a0) {
-  /*return*/ QApplication::isEffectEnabled(a0);
+void C_ZN12QApplication15isEffectEnabledEN2Qt8UIEffectE(Qt::UIEffect arg0) {
+  /*return*/ QApplication::isEffectEnabled(arg0);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:170
 // void setEffectEnabled(Qt::UIEffect, _Bool)
 extern "C"
-void C_ZN12QApplication16setEffectEnabledEN2Qt8UIEffectEb(Qt::UIEffect a0, bool enable) {
-  QApplication::setEffectEnabled(a0, enable);
+void C_ZN12QApplication16setEffectEnabledEN2Qt8UIEffectEb(Qt::UIEffect arg0, bool enable) {
+  QApplication::setEffectEnabled(arg0, enable);
 }
 // static
 // /usr/include/qt/QtWidgets/qapplication.h:179
@@ -348,8 +352,8 @@ void C_ZN12QApplication4execEv() {
 // /usr/include/qt/QtWidgets/qapplication.h:180
 // bool notify(class QObject *, class QEvent *)
 extern "C"
-void C_ZN12QApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * a0, QEvent * a1) {
-  /*return*/ ((QApplication*)this_)->notify(a0, a1);
+void C_ZN12QApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
+  /*return*/ ((QApplication*)this_)->notify(arg0, arg1);
 }
 // /usr/include/qt/QtWidgets/qapplication.h:190
 // void focusChanged(class QWidget *, class QWidget *)
@@ -395,3 +399,4 @@ extern "C"
 void C_ZN12QApplication7aboutQtEv() {
   QApplication::aboutQt();
 }
+//  main block end

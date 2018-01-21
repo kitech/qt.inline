@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtabwidget.h
 #include <qtabwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtabwidget.h:57
 // const QMetaObject * metaObject()
@@ -25,8 +29,8 @@ void C_ZN10QTabWidgetD1Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qtabwidget.h:74
 // int addTab(class QWidget *, const class QString &)
 extern "C"
-void C_ZN10QTabWidget6addTabEP7QWidgetRK7QString(void *this_, QWidget * widget, const QString & a1) {
-  /*return*/ ((QTabWidget*)this_)->addTab(widget, a1);
+void C_ZN10QTabWidget6addTabEP7QWidgetRK7QString(void *this_, QWidget * widget, const QString & arg1) {
+  /*return*/ ((QTabWidget*)this_)->addTab(widget, arg1);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:75
 // int addTab(class QWidget *, const class QIcon &, const class QString &)
@@ -37,8 +41,8 @@ void C_ZN10QTabWidget6addTabEP7QWidgetRK5QIconRK7QString(void *this_, QWidget * 
 // /usr/include/qt/QtWidgets/qtabwidget.h:77
 // int insertTab(int, class QWidget *, const class QString &)
 extern "C"
-void C_ZN10QTabWidget9insertTabEiP7QWidgetRK7QString(void *this_, int index, QWidget * widget, const QString & a2) {
-  /*return*/ ((QTabWidget*)this_)->insertTab(index, widget, a2);
+void C_ZN10QTabWidget9insertTabEiP7QWidgetRK7QString(void *this_, int index, QWidget * widget, const QString & arg2) {
+  /*return*/ ((QTabWidget*)this_)->insertTab(index, widget, arg2);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:78
 // int insertTab(int, class QWidget *, const class QIcon &, const class QString &)
@@ -61,8 +65,8 @@ void C_ZNK10QTabWidget12isTabEnabledEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qtabwidget.h:83
 // void setTabEnabled(int, _Bool)
 extern "C"
-void C_ZN10QTabWidget13setTabEnabledEib(void *this_, int index, bool a1) {
-  ((QTabWidget*)this_)->setTabEnabled(index, a1);
+void C_ZN10QTabWidget13setTabEnabledEib(void *this_, int index, bool arg1) {
+  ((QTabWidget*)this_)->setTabEnabled(index, arg1);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:85
 // QString tabText(int)
@@ -73,8 +77,8 @@ void C_ZNK10QTabWidget7tabTextEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qtabwidget.h:86
 // void setTabText(int, const class QString &)
 extern "C"
-void C_ZN10QTabWidget10setTabTextEiRK7QString(void *this_, int index, const QString & a1) {
-  ((QTabWidget*)this_)->setTabText(index, a1);
+void C_ZN10QTabWidget10setTabTextEiRK7QString(void *this_, int index, const QString & arg1) {
+  ((QTabWidget*)this_)->setTabText(index, arg1);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:88
 // QIcon tabIcon(int)
@@ -151,8 +155,8 @@ void C_ZNK10QTabWidget11tabPositionEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtabwidget.h:110
 // void setTabPosition(enum QTabWidget::TabPosition)
 extern "C"
-void C_ZN10QTabWidget14setTabPositionENS_11TabPositionE(void *this_, QTabWidget::TabPosition a0) {
-  ((QTabWidget*)this_)->setTabPosition(a0);
+void C_ZN10QTabWidget14setTabPositionENS_11TabPositionE(void *this_, QTabWidget::TabPosition arg0) {
+  ((QTabWidget*)this_)->setTabPosition(arg0);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:112
 // bool tabsClosable()
@@ -239,8 +243,8 @@ void C_ZNK10QTabWidget9elideModeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtabwidget.h:132
 // void setElideMode(Qt::TextElideMode)
 extern "C"
-void C_ZN10QTabWidget12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode a0) {
-  ((QTabWidget*)this_)->setElideMode(a0);
+void C_ZN10QTabWidget12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode arg0) {
+  ((QTabWidget*)this_)->setElideMode(arg0);
 }
 // /usr/include/qt/QtWidgets/qtabwidget.h:134
 // QSize iconSize()
@@ -338,3 +342,4 @@ extern "C"
 void C_ZN10QTabWidget19tabBarDoubleClickedEi(void *this_, int index) {
   ((QTabWidget*)this_)->tabBarDoubleClicked(index);
 }
+//  main block end

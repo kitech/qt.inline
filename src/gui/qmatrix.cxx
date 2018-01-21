@@ -1,13 +1,17 @@
+//  header block begin
 // /usr/include/qt/QtGui/qmatrix.h
 #include <qmatrix.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qmatrix.h:59
 // void QMatrix(Qt::Initialization)
 extern "C"
-void* C_ZN7QMatrixC1EN2Qt14InitializationE(Qt::Initialization a0) {
-  return new QMatrix(a0);
+void* C_ZN7QMatrixC1EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return new QMatrix(arg0);
 }
 // /usr/include/qt/QtGui/qmatrix.h:60
 // void QMatrix()
@@ -84,14 +88,14 @@ void C_ZNK7QMatrix3mapEddPdS0_(void *this_, qreal x, qreal y, qreal * tx, qreal 
 // /usr/include/qt/QtGui/qmatrix.h:86
 // QRect mapRect(const class QRect &)
 extern "C"
-void C_ZNK7QMatrix7mapRectERK5QRect(void *this_, const QRect & a0) {
-  /*return*/ ((QMatrix*)this_)->mapRect(a0);
+void C_ZNK7QMatrix7mapRectERK5QRect(void *this_, const QRect & arg0) {
+  /*return*/ ((QMatrix*)this_)->mapRect(arg0);
 }
 // /usr/include/qt/QtGui/qmatrix.h:87
 // QRectF mapRect(const class QRectF &)
 extern "C"
-void C_ZNK7QMatrix7mapRectERK6QRectF(void *this_, const QRectF & a0) {
-  /*return*/ ((QMatrix*)this_)->mapRect(a0);
+void C_ZNK7QMatrix7mapRectERK6QRectF(void *this_, const QRectF & arg0) {
+  /*return*/ ((QMatrix*)this_)->mapRect(arg0);
 }
 // /usr/include/qt/QtGui/qmatrix.h:89
 // QPoint map(const class QPoint &)
@@ -204,3 +208,4 @@ extern "C"
 void C_ZNK7QMatrix8invertedEPb(void *this_, bool * invertible) {
   /*return*/ ((QMatrix*)this_)->inverted(invertible);
 }
+//  main block end

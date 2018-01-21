@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsocketnotifier.h
 #include <qsocketnotifier.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsocketnotifier.h:50
 // const QMetaObject * metaObject()
@@ -12,8 +16,8 @@ void C_ZNK15QSocketNotifier10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsocketnotifier.h:56
 // void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
 extern "C"
-void* C_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifier::Type a1, QObject * parent) {
-  return new QSocketNotifier(socket, a1, parent);
+void* C_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) {
+  return new QSocketNotifier(socket, arg1, parent);
 }
 // virtual
 // /usr/include/qt/QtCore/qsocketnotifier.h:57
@@ -43,6 +47,7 @@ void C_ZNK15QSocketNotifier9isEnabledEv(void *this_) {
 // /usr/include/qt/QtCore/qsocketnotifier.h:65
 // void setEnabled(_Bool)
 extern "C"
-void C_ZN15QSocketNotifier10setEnabledEb(void *this_, bool a0) {
-  ((QSocketNotifier*)this_)->setEnabled(a0);
+void C_ZN15QSocketNotifier10setEnabledEb(void *this_, bool arg0) {
+  ((QSocketNotifier*)this_)->setEnabled(arg0);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #include <qsortfilterproxymodel.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:61
 // const QMetaObject * metaObject()
@@ -370,3 +374,4 @@ extern "C"
 void C_ZNK21QSortFilterProxyModel20supportedDropActionsEv(void *this_) {
   /*return*/ ((QSortFilterProxyModel*)this_)->supportedDropActions();
 }
+//  main block end

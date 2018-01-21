@@ -1,183 +1,157 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpicture.h
 #include <qpicture.h>
 #include <QtGui>
 
-// /usr/include/qt/QtGui/qpicture.h:131
-// void QPictureIO()
+//  header block end
+
+//  main block begin
+// /usr/include/qt/QtGui/qpicture.h:58
+// void QPicture(int)
 extern "C"
-void* C_ZN10QPictureIOC1Ev() {
-  return new QPictureIO();
+void* C_ZN8QPictureC1Ei(int formatVersion) {
+  return new QPicture(formatVersion);
 }
-// /usr/include/qt/QtGui/qpicture.h:132
-// void QPictureIO(class QIODevice *, const char *)
+// virtual
+// /usr/include/qt/QtGui/qpicture.h:60
+// void ~QPicture()
 extern "C"
-void* C_ZN10QPictureIOC1EP9QIODevicePKc(QIODevice * ioDevice, const char * format) {
-  return new QPictureIO(ioDevice, format);
+void C_ZN8QPictureD1Ev(void *this_) {
+  delete (QPicture*)(this_);
 }
-// /usr/include/qt/QtGui/qpicture.h:133
-// void QPictureIO(const class QString &, const char *)
+// /usr/include/qt/QtGui/qpicture.h:62
+// bool isNull()
 extern "C"
-void* C_ZN10QPictureIOC1ERK7QStringPKc(const QString & fileName, const char * format) {
-  return new QPictureIO(fileName, format);
+void C_ZNK8QPicture6isNullEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->isNull();
 }
-// /usr/include/qt/QtGui/qpicture.h:134
-// void ~QPictureIO()
+// virtual
+// /usr/include/qt/QtGui/qpicture.h:64
+// int devType()
 extern "C"
-void C_ZN10QPictureIOD1Ev(void *this_) {
-  delete (QPictureIO*)(this_);
+void C_ZNK8QPicture7devTypeEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->devType();
 }
-// /usr/include/qt/QtGui/qpicture.h:136
-// const QPicture & picture()
+// /usr/include/qt/QtGui/qpicture.h:65
+// uint size()
 extern "C"
-void C_ZNK10QPictureIO7pictureEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->picture();
+void C_ZNK8QPicture4sizeEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->size();
 }
-// /usr/include/qt/QtGui/qpicture.h:137
-// int status()
+// /usr/include/qt/QtGui/qpicture.h:66
+// const char * data()
 extern "C"
-void C_ZNK10QPictureIO6statusEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->status();
+void C_ZNK8QPicture4dataEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->data();
 }
-// /usr/include/qt/QtGui/qpicture.h:138
-// const char * format()
+// virtual
+// /usr/include/qt/QtGui/qpicture.h:67
+// void setData(const char *, uint)
 extern "C"
-void C_ZNK10QPictureIO6formatEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->format();
+void C_ZN8QPicture7setDataEPKcj(void *this_, const char * data, uint size) {
+  ((QPicture*)this_)->setData(data, size);
 }
-// /usr/include/qt/QtGui/qpicture.h:139
-// QIODevice * ioDevice()
+// /usr/include/qt/QtGui/qpicture.h:69
+// bool play(class QPainter *)
 extern "C"
-void C_ZNK10QPictureIO8ioDeviceEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->ioDevice();
+void C_ZN8QPicture4playEP8QPainter(void *this_, QPainter * p) {
+  /*return*/ ((QPicture*)this_)->play(p);
 }
-// /usr/include/qt/QtGui/qpicture.h:140
-// QString fileName()
+// /usr/include/qt/QtGui/qpicture.h:71
+// bool load(class QIODevice *, const char *)
 extern "C"
-void C_ZNK10QPictureIO8fileNameEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->fileName();
+void C_ZN8QPicture4loadEP9QIODevicePKc(void *this_, QIODevice * dev, const char * format) {
+  /*return*/ ((QPicture*)this_)->load(dev, format);
 }
-// /usr/include/qt/QtGui/qpicture.h:141
-// int quality()
+// /usr/include/qt/QtGui/qpicture.h:72
+// bool load(const class QString &, const char *)
 extern "C"
-void C_ZNK10QPictureIO7qualityEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->quality();
+void C_ZN8QPicture4loadERK7QStringPKc(void *this_, const QString & fileName, const char * format) {
+  /*return*/ ((QPicture*)this_)->load(fileName, format);
 }
-// /usr/include/qt/QtGui/qpicture.h:142
-// QString description()
+// /usr/include/qt/QtGui/qpicture.h:73
+// bool save(class QIODevice *, const char *)
 extern "C"
-void C_ZNK10QPictureIO11descriptionEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->description();
+void C_ZN8QPicture4saveEP9QIODevicePKc(void *this_, QIODevice * dev, const char * format) {
+  /*return*/ ((QPicture*)this_)->save(dev, format);
 }
-// /usr/include/qt/QtGui/qpicture.h:143
-// const char * parameters()
+// /usr/include/qt/QtGui/qpicture.h:74
+// bool save(const class QString &, const char *)
 extern "C"
-void C_ZNK10QPictureIO10parametersEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->parameters();
+void C_ZN8QPicture4saveERK7QStringPKc(void *this_, const QString & fileName, const char * format) {
+  /*return*/ ((QPicture*)this_)->save(fileName, format);
 }
-// /usr/include/qt/QtGui/qpicture.h:144
-// float gamma()
+// /usr/include/qt/QtGui/qpicture.h:76
+// QRect boundingRect()
 extern "C"
-void C_ZNK10QPictureIO5gammaEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->gamma();
+void C_ZNK8QPicture12boundingRectEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->boundingRect();
 }
-// /usr/include/qt/QtGui/qpicture.h:146
-// void setPicture(const class QPicture &)
+// /usr/include/qt/QtGui/qpicture.h:77
+// void setBoundingRect(const class QRect &)
 extern "C"
-void C_ZN10QPictureIO10setPictureERK8QPicture(void *this_, const QPicture & a0) {
-  ((QPictureIO*)this_)->setPicture(a0);
+void C_ZN8QPicture15setBoundingRectERK5QRect(void *this_, const QRect & r) {
+  ((QPicture*)this_)->setBoundingRect(r);
 }
-// /usr/include/qt/QtGui/qpicture.h:147
-// void setStatus(int)
+// inline
+// /usr/include/qt/QtGui/qpicture.h:84
+// void swap(class QPicture &)
 extern "C"
-void C_ZN10QPictureIO9setStatusEi(void *this_, int a0) {
-  ((QPictureIO*)this_)->setStatus(a0);
+void C_ZN8QPicture4swapERS_(void *this_, QPicture & other) {
+  ((QPicture*)this_)->swap(other);
 }
-// /usr/include/qt/QtGui/qpicture.h:148
-// void setFormat(const char *)
+// /usr/include/qt/QtGui/qpicture.h:86
+// void detach()
 extern "C"
-void C_ZN10QPictureIO9setFormatEPKc(void *this_, const char * a0) {
-  ((QPictureIO*)this_)->setFormat(a0);
+void C_ZN8QPicture6detachEv(void *this_) {
+  ((QPicture*)this_)->detach();
 }
-// /usr/include/qt/QtGui/qpicture.h:149
-// void setIODevice(class QIODevice *)
+// /usr/include/qt/QtGui/qpicture.h:87
+// bool isDetached()
 extern "C"
-void C_ZN10QPictureIO11setIODeviceEP9QIODevice(void *this_, QIODevice * a0) {
-  ((QPictureIO*)this_)->setIODevice(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:150
-// void setFileName(const class QString &)
-extern "C"
-void C_ZN10QPictureIO11setFileNameERK7QString(void *this_, const QString & a0) {
-  ((QPictureIO*)this_)->setFileName(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:151
-// void setQuality(int)
-extern "C"
-void C_ZN10QPictureIO10setQualityEi(void *this_, int a0) {
-  ((QPictureIO*)this_)->setQuality(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:152
-// void setDescription(const class QString &)
-extern "C"
-void C_ZN10QPictureIO14setDescriptionERK7QString(void *this_, const QString & a0) {
-  ((QPictureIO*)this_)->setDescription(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:153
-// void setParameters(const char *)
-extern "C"
-void C_ZN10QPictureIO13setParametersEPKc(void *this_, const char * a0) {
-  ((QPictureIO*)this_)->setParameters(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:154
-// void setGamma(float)
-extern "C"
-void C_ZN10QPictureIO8setGammaEf(void *this_, float a0) {
-  ((QPictureIO*)this_)->setGamma(a0);
-}
-// /usr/include/qt/QtGui/qpicture.h:156
-// bool read()
-extern "C"
-void C_ZN10QPictureIO4readEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->read();
-}
-// /usr/include/qt/QtGui/qpicture.h:157
-// bool write()
-extern "C"
-void C_ZN10QPictureIO5writeEv(void *this_) {
-  /*return*/ ((QPictureIO*)this_)->write();
+void C_ZNK8QPicture10isDetachedEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->isDetached();
 }
 // static
-// /usr/include/qt/QtGui/qpicture.h:159
-// QByteArray pictureFormat(const class QString &)
+// /usr/include/qt/QtGui/qpicture.h:92
+// const char * pictureFormat(const class QString &)
 extern "C"
-void C_ZN10QPictureIO13pictureFormatERK7QString(const QString & fileName) {
-  /*return*/ QPictureIO::pictureFormat(fileName);
+void C_ZN8QPicture13pictureFormatERK7QString(const QString & fileName) {
+  /*return*/ QPicture::pictureFormat(fileName);
 }
 // static
-// /usr/include/qt/QtGui/qpicture.h:160
-// QByteArray pictureFormat(class QIODevice *)
-extern "C"
-void C_ZN10QPictureIO13pictureFormatEP9QIODevice(QIODevice * a0) {
-  /*return*/ QPictureIO::pictureFormat(a0);
-}
-// static
-// /usr/include/qt/QtGui/qpicture.h:161
+// /usr/include/qt/QtGui/qpicture.h:93
 // QList<QByteArray> inputFormats()
 extern "C"
-void C_ZN10QPictureIO12inputFormatsEv() {
-  /*return*/ QPictureIO::inputFormats();
+void C_ZN8QPicture12inputFormatsEv() {
+  /*return*/ QPicture::inputFormats();
 }
 // static
-// /usr/include/qt/QtGui/qpicture.h:162
+// /usr/include/qt/QtGui/qpicture.h:94
 // QList<QByteArray> outputFormats()
 extern "C"
-void C_ZN10QPictureIO13outputFormatsEv() {
-  /*return*/ QPictureIO::outputFormats();
+void C_ZN8QPicture13outputFormatsEv() {
+  /*return*/ QPicture::outputFormats();
 }
 // static
-// /usr/include/qt/QtGui/qpicture.h:164
-// void defineIOHandler(const char *, const char *, const char *, picture_io_handler, picture_io_handler)
+// /usr/include/qt/QtGui/qpicture.h:95
+// QStringList inputFormatList()
 extern "C"
-void C_ZN10QPictureIO15defineIOHandlerEPKcS1_S1_PFvPS_ES4_(const char * format, const char * header, const char * flags, picture_io_handler read_picture, picture_io_handler write_picture) {
-  QPictureIO::defineIOHandler(format, header, flags, read_picture, write_picture);
+void C_ZN8QPicture15inputFormatListEv() {
+  /*return*/ QPicture::inputFormatList();
 }
+// static
+// /usr/include/qt/QtGui/qpicture.h:96
+// QStringList outputFormatList()
+extern "C"
+void C_ZN8QPicture16outputFormatListEv() {
+  /*return*/ QPicture::outputFormatList();
+}
+// virtual
+// /usr/include/qt/QtGui/qpicture.h:98
+// QPaintEngine * paintEngine()
+extern "C"
+void C_ZNK8QPicture11paintEngineEv(void *this_) {
+  /*return*/ ((QPicture*)this_)->paintEngine();
+}
+//  main block end

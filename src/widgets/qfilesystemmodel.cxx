@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h
 #include <qfilesystemmodel.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
 // const QMetaObject * metaObject()
@@ -335,3 +339,4 @@ extern "C"
 void C_ZN16QFileSystemModel6removeERK11QModelIndex(void *this_, const QModelIndex & index) {
   /*return*/ ((QFileSystemModel*)this_)->remove(index);
 }
+//  main block end

@@ -1,160 +1,137 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qspinbox.h
 #include <qspinbox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:115
+// /usr/include/qt/QtWidgets/qspinbox.h:53
 // const QMetaObject * metaObject()
 extern "C"
-void C_ZNK14QDoubleSpinBox10metaObjectEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->metaObject();
+void C_ZNK8QSpinBox10metaObjectEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:126
-// void QDoubleSpinBox(class QWidget *)
+// /usr/include/qt/QtWidgets/qspinbox.h:65
+// void QSpinBox(class QWidget *)
 extern "C"
-void* C_ZN14QDoubleSpinBoxC1EP7QWidget(QWidget * parent) {
-  return new QDoubleSpinBox(parent);
+void* C_ZN8QSpinBoxC1EP7QWidget(QWidget * parent) {
+  return new QSpinBox(parent);
 }
 // virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:127
-// void ~QDoubleSpinBox()
+// /usr/include/qt/QtWidgets/qspinbox.h:66
+// void ~QSpinBox()
 extern "C"
-void C_ZN14QDoubleSpinBoxD1Ev(void *this_) {
-  delete (QDoubleSpinBox*)(this_);
+void C_ZN8QSpinBoxD1Ev(void *this_) {
+  delete (QSpinBox*)(this_);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:129
-// double value()
+// /usr/include/qt/QtWidgets/qspinbox.h:68
+// int value()
 extern "C"
-void C_ZNK14QDoubleSpinBox5valueEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->value();
+void C_ZNK8QSpinBox5valueEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->value();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:131
+// /usr/include/qt/QtWidgets/qspinbox.h:70
 // QString prefix()
 extern "C"
-void C_ZNK14QDoubleSpinBox6prefixEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->prefix();
+void C_ZNK8QSpinBox6prefixEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->prefix();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:132
+// /usr/include/qt/QtWidgets/qspinbox.h:71
 // void setPrefix(const class QString &)
 extern "C"
-void C_ZN14QDoubleSpinBox9setPrefixERK7QString(void *this_, const QString & prefix) {
-  ((QDoubleSpinBox*)this_)->setPrefix(prefix);
+void C_ZN8QSpinBox9setPrefixERK7QString(void *this_, const QString & prefix) {
+  ((QSpinBox*)this_)->setPrefix(prefix);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:134
+// /usr/include/qt/QtWidgets/qspinbox.h:73
 // QString suffix()
 extern "C"
-void C_ZNK14QDoubleSpinBox6suffixEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->suffix();
+void C_ZNK8QSpinBox6suffixEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->suffix();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:135
+// /usr/include/qt/QtWidgets/qspinbox.h:74
 // void setSuffix(const class QString &)
 extern "C"
-void C_ZN14QDoubleSpinBox9setSuffixERK7QString(void *this_, const QString & suffix) {
-  ((QDoubleSpinBox*)this_)->setSuffix(suffix);
+void C_ZN8QSpinBox9setSuffixERK7QString(void *this_, const QString & suffix) {
+  ((QSpinBox*)this_)->setSuffix(suffix);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:137
+// /usr/include/qt/QtWidgets/qspinbox.h:76
 // QString cleanText()
 extern "C"
-void C_ZNK14QDoubleSpinBox9cleanTextEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->cleanText();
+void C_ZNK8QSpinBox9cleanTextEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->cleanText();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:139
-// double singleStep()
+// /usr/include/qt/QtWidgets/qspinbox.h:78
+// int singleStep()
 extern "C"
-void C_ZNK14QDoubleSpinBox10singleStepEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->singleStep();
+void C_ZNK8QSpinBox10singleStepEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->singleStep();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:140
-// void setSingleStep(double)
+// /usr/include/qt/QtWidgets/qspinbox.h:79
+// void setSingleStep(int)
 extern "C"
-void C_ZN14QDoubleSpinBox13setSingleStepEd(void *this_, double val) {
-  ((QDoubleSpinBox*)this_)->setSingleStep(val);
+void C_ZN8QSpinBox13setSingleStepEi(void *this_, int val) {
+  ((QSpinBox*)this_)->setSingleStep(val);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:142
-// double minimum()
+// /usr/include/qt/QtWidgets/qspinbox.h:81
+// int minimum()
 extern "C"
-void C_ZNK14QDoubleSpinBox7minimumEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->minimum();
+void C_ZNK8QSpinBox7minimumEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->minimum();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:143
-// void setMinimum(double)
+// /usr/include/qt/QtWidgets/qspinbox.h:82
+// void setMinimum(int)
 extern "C"
-void C_ZN14QDoubleSpinBox10setMinimumEd(void *this_, double min) {
-  ((QDoubleSpinBox*)this_)->setMinimum(min);
+void C_ZN8QSpinBox10setMinimumEi(void *this_, int min) {
+  ((QSpinBox*)this_)->setMinimum(min);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:145
-// double maximum()
+// /usr/include/qt/QtWidgets/qspinbox.h:84
+// int maximum()
 extern "C"
-void C_ZNK14QDoubleSpinBox7maximumEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->maximum();
+void C_ZNK8QSpinBox7maximumEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->maximum();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:146
-// void setMaximum(double)
+// /usr/include/qt/QtWidgets/qspinbox.h:85
+// void setMaximum(int)
 extern "C"
-void C_ZN14QDoubleSpinBox10setMaximumEd(void *this_, double max) {
-  ((QDoubleSpinBox*)this_)->setMaximum(max);
+void C_ZN8QSpinBox10setMaximumEi(void *this_, int max) {
+  ((QSpinBox*)this_)->setMaximum(max);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:148
-// void setRange(double, double)
+// /usr/include/qt/QtWidgets/qspinbox.h:87
+// void setRange(int, int)
 extern "C"
-void C_ZN14QDoubleSpinBox8setRangeEdd(void *this_, double min, double max) {
-  ((QDoubleSpinBox*)this_)->setRange(min, max);
+void C_ZN8QSpinBox8setRangeEii(void *this_, int min, int max) {
+  ((QSpinBox*)this_)->setRange(min, max);
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:150
-// int decimals()
+// /usr/include/qt/QtWidgets/qspinbox.h:89
+// int displayIntegerBase()
 extern "C"
-void C_ZNK14QDoubleSpinBox8decimalsEv(void *this_) {
-  /*return*/ ((QDoubleSpinBox*)this_)->decimals();
+void C_ZNK8QSpinBox18displayIntegerBaseEv(void *this_) {
+  /*return*/ ((QSpinBox*)this_)->displayIntegerBase();
 }
-// /usr/include/qt/QtWidgets/qspinbox.h:151
-// void setDecimals(int)
+// /usr/include/qt/QtWidgets/qspinbox.h:90
+// void setDisplayIntegerBase(int)
 extern "C"
-void C_ZN14QDoubleSpinBox11setDecimalsEi(void *this_, int prec) {
-  ((QDoubleSpinBox*)this_)->setDecimals(prec);
+void C_ZN8QSpinBox21setDisplayIntegerBaseEi(void *this_, int base) {
+  ((QSpinBox*)this_)->setDisplayIntegerBase(base);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:153
-// QValidator::State validate(class QString &, int &)
+// /usr/include/qt/QtWidgets/qspinbox.h:101
+// void setValue(int)
 extern "C"
-void C_ZNK14QDoubleSpinBox8validateER7QStringRi(void *this_, QString & input, int & pos) {
-  /*return*/ ((QDoubleSpinBox*)this_)->validate(input, pos);
+void C_ZN8QSpinBox8setValueEi(void *this_, int val) {
+  ((QSpinBox*)this_)->setValue(val);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:154
-// double valueFromText(const class QString &)
+// /usr/include/qt/QtWidgets/qspinbox.h:104
+// void valueChanged(int)
 extern "C"
-void C_ZNK14QDoubleSpinBox13valueFromTextERK7QString(void *this_, const QString & text) {
-  /*return*/ ((QDoubleSpinBox*)this_)->valueFromText(text);
+void C_ZN8QSpinBox12valueChangedEi(void *this_, int arg0) {
+  ((QSpinBox*)this_)->valueChanged(arg0);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:155
-// QString textFromValue(double)
-extern "C"
-void C_ZNK14QDoubleSpinBox13textFromValueEd(void *this_, double val) {
-  /*return*/ ((QDoubleSpinBox*)this_)->textFromValue(val);
-}
-// virtual
-// /usr/include/qt/QtWidgets/qspinbox.h:156
-// void fixup(class QString &)
-extern "C"
-void C_ZNK14QDoubleSpinBox5fixupER7QString(void *this_, QString & str) {
-  ((QDoubleSpinBox*)this_)->fixup(str);
-}
-// /usr/include/qt/QtWidgets/qspinbox.h:159
-// void setValue(double)
-extern "C"
-void C_ZN14QDoubleSpinBox8setValueEd(void *this_, double val) {
-  ((QDoubleSpinBox*)this_)->setValue(val);
-}
-// /usr/include/qt/QtWidgets/qspinbox.h:162
-// void valueChanged(double)
-extern "C"
-void C_ZN14QDoubleSpinBox12valueChangedEd(void *this_, double a0) {
-  ((QDoubleSpinBox*)this_)->valueChanged(a0);
-}
-// /usr/include/qt/QtWidgets/qspinbox.h:163
+// /usr/include/qt/QtWidgets/qspinbox.h:105
 // void valueChanged(const class QString &)
 extern "C"
-void C_ZN14QDoubleSpinBox12valueChangedERK7QString(void *this_, const QString & a0) {
-  ((QDoubleSpinBox*)this_)->valueChanged(a0);
+void C_ZN8QSpinBox12valueChangedERK7QString(void *this_, const QString & arg0) {
+  ((QSpinBox*)this_)->valueChanged(arg0);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qchar.h
 #include <qchar.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/qchar.h:81
 // void QChar()
@@ -624,3 +628,4 @@ extern "C"
 void C_ZN5QChar11isTitleCaseEj(uint ucs4) {
   /*return*/ QChar::isTitleCase(ucs4);
 }
+//  main block end

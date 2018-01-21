@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsharedmemory.h
 #include <qsharedmemory.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsharedmemory.h:54
 // const QMetaObject * metaObject()
@@ -124,3 +128,4 @@ extern "C"
 void C_ZNK13QSharedMemory11errorStringEv(void *this_) {
   /*return*/ ((QSharedMemory*)this_)->errorString();
 }
+//  main block end

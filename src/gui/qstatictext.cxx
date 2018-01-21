@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qstatictext.h
 #include <qstatictext.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qstatictext.h:63
 // void QStaticText()
 extern "C"
@@ -99,3 +103,4 @@ extern "C"
 void C_ZNK11QStaticText15performanceHintEv(void *this_) {
   /*return*/ ((QStaticText*)this_)->performanceHint();
 }
+//  main block end

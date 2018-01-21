@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qcollator.h
 #include <qcollator.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qcollator.h:86
 // void QCollator(const class QLocale &)
 extern "C"
@@ -93,3 +97,4 @@ extern "C"
 void C_ZNK9QCollator7sortKeyERK7QString(void *this_, const QString & string) {
   /*return*/ ((QCollator*)this_)->sortKey(string);
 }
+//  main block end

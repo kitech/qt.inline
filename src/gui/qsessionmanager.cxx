@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qsessionmanager.h
 #include <qsessionmanager.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qsessionmanager.h:59
 // const QMetaObject * metaObject()
@@ -48,8 +52,8 @@ void C_ZN15QSessionManager6cancelEv(void *this_) {
 // /usr/include/qt/QtGui/qsessionmanager.h:79
 // void setRestartHint(enum QSessionManager::RestartHint)
 extern "C"
-void C_ZN15QSessionManager14setRestartHintENS_11RestartHintE(void *this_, QSessionManager::RestartHint a0) {
-  ((QSessionManager*)this_)->setRestartHint(a0);
+void C_ZN15QSessionManager14setRestartHintENS_11RestartHintE(void *this_, QSessionManager::RestartHint arg0) {
+  ((QSessionManager*)this_)->setRestartHint(arg0);
 }
 // /usr/include/qt/QtGui/qsessionmanager.h:80
 // QSessionManager::RestartHint restartHint()
@@ -60,8 +64,8 @@ void C_ZNK15QSessionManager11restartHintEv(void *this_) {
 // /usr/include/qt/QtGui/qsessionmanager.h:82
 // void setRestartCommand(const class QStringList &)
 extern "C"
-void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, const QStringList & a0) {
-  ((QSessionManager*)this_)->setRestartCommand(a0);
+void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, const QStringList & arg0) {
+  ((QSessionManager*)this_)->setRestartCommand(arg0);
 }
 // /usr/include/qt/QtGui/qsessionmanager.h:83
 // QStringList restartCommand()
@@ -72,8 +76,8 @@ void C_ZNK15QSessionManager14restartCommandEv(void *this_) {
 // /usr/include/qt/QtGui/qsessionmanager.h:84
 // void setDiscardCommand(const class QStringList &)
 extern "C"
-void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, const QStringList & a0) {
-  ((QSessionManager*)this_)->setDiscardCommand(a0);
+void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, const QStringList & arg0) {
+  ((QSessionManager*)this_)->setDiscardCommand(arg0);
 }
 // /usr/include/qt/QtGui/qsessionmanager.h:85
 // QStringList discardCommand()
@@ -105,3 +109,4 @@ extern "C"
 void C_ZN15QSessionManager13requestPhase2Ev(void *this_) {
   ((QSessionManager*)this_)->requestPhase2();
 }
+//  main block end

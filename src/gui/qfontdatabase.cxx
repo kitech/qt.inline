@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qfontdatabase.h
 #include <qfontdatabase.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtGui/qfontdatabase.h:115
 // QList<int> standardSizes()
@@ -186,3 +190,4 @@ extern "C"
 void C_ZN13QFontDatabase10systemFontENS_10SystemFontE(QFontDatabase::SystemFont type) {
   /*return*/ QFontDatabase::systemFont(type);
 }
+//  main block end

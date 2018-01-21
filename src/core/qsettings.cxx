@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qsettings.h
 #include <qsettings.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qsettings.h:71
 // const QMetaObject * metaObject()
@@ -249,3 +253,4 @@ extern "C"
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, const QString & path) {
   QSettings::setPath(format, scope, path);
 }
+//  main block end

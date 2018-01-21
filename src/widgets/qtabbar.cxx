@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtabbar.h
 #include <qtabbar.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtabbar.h:56
 // const QMetaObject * metaObject()
@@ -79,8 +83,8 @@ void C_ZNK7QTabBar12isTabEnabledEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qtabbar.h:106
 // void setTabEnabled(int, _Bool)
 extern "C"
-void C_ZN7QTabBar13setTabEnabledEib(void *this_, int index, bool a1) {
-  ((QTabBar*)this_)->setTabEnabled(index, a1);
+void C_ZN7QTabBar13setTabEnabledEib(void *this_, int index, bool arg1) {
+  ((QTabBar*)this_)->setTabEnabled(index, arg1);
 }
 // /usr/include/qt/QtWidgets/qtabbar.h:108
 // QString tabText(int)
@@ -127,8 +131,8 @@ void C_ZNK7QTabBar9elideModeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtabbar.h:118
 // void setElideMode(Qt::TextElideMode)
 extern "C"
-void C_ZN7QTabBar12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode a0) {
-  ((QTabBar*)this_)->setElideMode(a0);
+void C_ZN7QTabBar12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideMode arg0) {
+  ((QTabBar*)this_)->setElideMode(arg0);
 }
 // /usr/include/qt/QtWidgets/qtabbar.h:121
 // void setTabToolTip(int, const class QString &)
@@ -372,3 +376,4 @@ extern "C"
 void C_ZN7QTabBar19tabBarDoubleClickedEi(void *this_, int index) {
   ((QTabBar*)this_)->tabBarDoubleClicked(index);
 }
+//  main block end

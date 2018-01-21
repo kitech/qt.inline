@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #include <qgraphicslinearlayout.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
 // void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
 extern "C"
@@ -161,3 +165,4 @@ extern "C"
 void C_ZNK21QGraphicsLinearLayout4dumpEi(void *this_, int indent) {
   ((QGraphicsLinearLayout*)this_)->dump(indent);
 }
+//  main block end

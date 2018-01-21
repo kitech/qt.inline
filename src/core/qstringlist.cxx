@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstringlist.h
 #include <qstringlist.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtCore/qstringlist.h:104
 // void QStringList()
@@ -86,3 +90,4 @@ extern "C"
 void C_ZNK11QStringList11lastIndexOfERK18QRegularExpressioni(void *this_, const QRegularExpression & re, int from) {
   /*return*/ ((QStringList*)this_)->lastIndexOf(re, from);
 }
+//  main block end

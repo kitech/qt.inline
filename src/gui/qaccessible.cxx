@@ -1,95 +1,86 @@
+//  header block begin
 // /usr/include/qt/QtGui/qaccessible.h
 #include <qaccessible.h>
 #include <QtGui>
 
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:932
-// void QAccessibleTableModelChangeEvent(class QObject *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+//  header block end
+
+//  main block begin
+// static
+// /usr/include/qt/QtGui/qaccessible.h:411
+// void installActivationObserver(class QAccessible::ActivationObserver *)
 extern "C"
-void* C_ZN32QAccessibleTableModelChangeEventC1EP7QObjectNS_15ModelChangeTypeE(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  return new QAccessibleTableModelChangeEvent(obj, changeType);
+void C_ZN11QAccessible25installActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
+  QAccessible::installActivationObserver(arg0);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:939
-// void QAccessibleTableModelChangeEvent(class QAccessibleInterface *, enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:412
+// void removeActivationObserver(class QAccessible::ActivationObserver *)
 extern "C"
-void* C_ZN32QAccessibleTableModelChangeEventC1EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  return new QAccessibleTableModelChangeEvent(iface, changeType);
+void C_ZN11QAccessible24removeActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
+  QAccessible::removeActivationObserver(arg0);
 }
-// virtual
-// /usr/include/qt/QtGui/qaccessible.h:947
-// void ~QAccessibleTableModelChangeEvent()
+// static
+// /usr/include/qt/QtGui/qaccessible.h:414
+// QAccessibleInterface * queryAccessibleInterface(class QObject *)
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEventD1Ev(void *this_) {
-  delete (QAccessibleTableModelChangeEvent*)(this_);
+void C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg0) {
+  /*return*/ QAccessible::queryAccessibleInterface(arg0);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:949
-// void setModelChangeType(enum QAccessibleTableModelChangeEvent::ModelChangeType)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:415
+// Id uniqueId(class QAccessibleInterface *)
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE(void *this_, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setModelChangeType(changeType);
+void C_ZN11QAccessible8uniqueIdEP20QAccessibleInterface(QAccessibleInterface * iface) {
+  /*return*/ QAccessible::uniqueId(iface);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:950
-// QAccessibleTableModelChangeEvent::ModelChangeType modelChangeType()
+// static
+// /usr/include/qt/QtGui/qaccessible.h:417
+// Id registerAccessibleInterface(class QAccessibleInterface *)
 extern "C"
-void C_ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv(void *this_) {
-  /*return*/ ((QAccessibleTableModelChangeEvent*)this_)->modelChangeType();
+void C_ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface(QAccessibleInterface * iface) {
+  /*return*/ QAccessible::registerAccessibleInterface(iface);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:952
-// void setFirstRow(int)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:424
+// void updateAccessibility(class QAccessibleEvent *)
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEvent11setFirstRowEi(void *this_, int row) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setFirstRow(row);
+void C_ZN11QAccessible19updateAccessibilityEP16QAccessibleEvent(QAccessibleEvent * event) {
+  QAccessible::updateAccessibility(event);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:953
-// void setFirstColumn(int)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:426
+// bool isActive()
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi(void *this_, int col) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setFirstColumn(col);
+void C_ZN11QAccessible8isActiveEv() {
+  /*return*/ QAccessible::isActive();
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:954
-// void setLastRow(int)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:427
+// void setActive(_Bool)
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEvent10setLastRowEi(void *this_, int row) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setLastRow(row);
+void C_ZN11QAccessible9setActiveEb(bool active) {
+  QAccessible::setActive(active);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:955
-// void setLastColumn(int)
+// static
+// /usr/include/qt/QtGui/qaccessible.h:428
+// void setRootObject(class QObject *)
 extern "C"
-void C_ZN32QAccessibleTableModelChangeEvent13setLastColumnEi(void *this_, int col) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setLastColumn(col);
+void C_ZN11QAccessible13setRootObjectEP7QObject(QObject * object) {
+  QAccessible::setRootObject(object);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:956
-// int firstRow()
+// static
+// /usr/include/qt/QtGui/qaccessible.h:430
+// void cleanup()
 extern "C"
-void C_ZNK32QAccessibleTableModelChangeEvent8firstRowEv(void *this_) {
-  /*return*/ ((QAccessibleTableModelChangeEvent*)this_)->firstRow();
+void C_ZN11QAccessible7cleanupEv() {
+  QAccessible::cleanup();
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:957
-// int firstColumn()
+// static
+// /usr/include/qt/QtGui/qaccessible.h:432
+// QPair<int, int> qAccessibleTextBoundaryHelper(const class QTextCursor &, enum QAccessible::TextBoundaryType)
 extern "C"
-void C_ZNK32QAccessibleTableModelChangeEvent11firstColumnEv(void *this_) {
-  /*return*/ ((QAccessibleTableModelChangeEvent*)this_)->firstColumn();
+void C_ZN11QAccessible29qAccessibleTextBoundaryHelperERK11QTextCursorNS_16TextBoundaryTypeE(const QTextCursor & cursor, QAccessible::TextBoundaryType boundaryType) {
+  /*return*/ QAccessible::qAccessibleTextBoundaryHelper(cursor, boundaryType);
 }
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:958
-// int lastRow()
-extern "C"
-void C_ZNK32QAccessibleTableModelChangeEvent7lastRowEv(void *this_) {
-  /*return*/ ((QAccessibleTableModelChangeEvent*)this_)->lastRow();
-}
-// inline
-// /usr/include/qt/QtGui/qaccessible.h:959
-// int lastColumn()
-extern "C"
-void C_ZNK32QAccessibleTableModelChangeEvent10lastColumnEv(void *this_) {
-  /*return*/ ((QAccessibleTableModelChangeEvent*)this_)->lastColumn();
-}
+//  main block end

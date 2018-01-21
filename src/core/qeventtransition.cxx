@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qeventtransition.h
 #include <qeventtransition.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qeventtransition.h:54
 // const QMetaObject * metaObject()
@@ -52,3 +56,4 @@ extern "C"
 void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type) {
   ((QEventTransition*)this_)->setEventType(type);
 }
+//  main block end

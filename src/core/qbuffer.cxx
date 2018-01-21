@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qbuffer.h
 #include <qbuffer.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qbuffer.h:55
 // const QMetaObject * metaObject()
@@ -114,3 +118,4 @@ extern "C"
 void C_ZNK7QBuffer11canReadLineEv(void *this_) {
   /*return*/ ((QBuffer*)this_)->canReadLine();
 }
+//  main block end

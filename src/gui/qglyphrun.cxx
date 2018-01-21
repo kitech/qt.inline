@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qglyphrun.h
 #include <qglyphrun.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qglyphrun.h:66
 // void QGlyphRun()
 extern "C"
@@ -153,3 +157,4 @@ extern "C"
 void C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
   /*return*/ ((QGlyphRun*)this_)->isEmpty();
 }
+//  main block end

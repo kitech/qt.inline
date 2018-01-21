@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qtextbrowser.h
 #include <qtextbrowser.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qtextbrowser.h:55
 // const QMetaObject * metaObject()
@@ -68,14 +72,14 @@ void C_ZN12QTextBrowser12clearHistoryEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextbrowser.h:79
 // QString historyTitle(int)
 extern "C"
-void C_ZNK12QTextBrowser12historyTitleEi(void *this_, int a0) {
-  /*return*/ ((QTextBrowser*)this_)->historyTitle(a0);
+void C_ZNK12QTextBrowser12historyTitleEi(void *this_, int arg0) {
+  /*return*/ ((QTextBrowser*)this_)->historyTitle(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:80
 // QUrl historyUrl(int)
 extern "C"
-void C_ZNK12QTextBrowser10historyUrlEi(void *this_, int a0) {
-  /*return*/ ((QTextBrowser*)this_)->historyUrl(a0);
+void C_ZNK12QTextBrowser10historyUrlEi(void *this_, int arg0) {
+  /*return*/ ((QTextBrowser*)this_)->historyUrl(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:81
 // int backwardHistoryCount()
@@ -151,14 +155,14 @@ void C_ZN12QTextBrowser6reloadEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextbrowser.h:98
 // void backwardAvailable(_Bool)
 extern "C"
-void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool a0) {
-  ((QTextBrowser*)this_)->backwardAvailable(a0);
+void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool arg0) {
+  ((QTextBrowser*)this_)->backwardAvailable(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:99
 // void forwardAvailable(_Bool)
 extern "C"
-void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool a0) {
-  ((QTextBrowser*)this_)->forwardAvailable(a0);
+void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool arg0) {
+  ((QTextBrowser*)this_)->forwardAvailable(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:100
 // void historyChanged()
@@ -169,24 +173,25 @@ void C_ZN12QTextBrowser14historyChangedEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextbrowser.h:101
 // void sourceChanged(const class QUrl &)
 extern "C"
-void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, const QUrl & a0) {
-  ((QTextBrowser*)this_)->sourceChanged(a0);
+void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, const QUrl & arg0) {
+  ((QTextBrowser*)this_)->sourceChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:102
 // void highlighted(const class QUrl &)
 extern "C"
-void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, const QUrl & a0) {
-  ((QTextBrowser*)this_)->highlighted(a0);
+void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, const QUrl & arg0) {
+  ((QTextBrowser*)this_)->highlighted(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:103
 // void highlighted(const class QString &)
 extern "C"
-void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, const QString & a0) {
-  ((QTextBrowser*)this_)->highlighted(a0);
+void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, const QString & arg0) {
+  ((QTextBrowser*)this_)->highlighted(arg0);
 }
 // /usr/include/qt/QtWidgets/qtextbrowser.h:104
 // void anchorClicked(const class QUrl &)
 extern "C"
-void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, const QUrl & a0) {
-  ((QTextBrowser*)this_)->anchorClicked(a0);
+void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, const QUrl & arg0) {
+  ((QTextBrowser*)this_)->anchorClicked(arg0);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstatemachine.h
 #include <qstatemachine.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qstatemachine.h:60
 // const QMetaObject * metaObject()
@@ -161,3 +165,4 @@ extern "C"
 void C_ZN13QStateMachine14runningChangedEb(void *this_, bool running) {
   ((QStateMachine*)this_)->runningChanged(running);
 }
+//  main block end

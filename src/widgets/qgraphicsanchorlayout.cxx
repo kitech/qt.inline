@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #include <qgraphicsanchorlayout.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:80
 // void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
 extern "C"
@@ -104,3 +108,4 @@ extern "C"
 void C_ZN21QGraphicsAnchorLayout10invalidateEv(void *this_) {
   ((QGraphicsAnchorLayout*)this_)->invalidate();
 }
+//  main block end

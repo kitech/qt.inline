@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpixmap.h
 #include <qpixmap.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpixmap.h:63
 // void QPixmap()
 extern "C"
@@ -23,8 +27,8 @@ void* C_ZN7QPixmapC1Eii(int w, int h) {
 // /usr/include/qt/QtGui/qpixmap.h:66
 // void QPixmap(const class QSize &)
 extern "C"
-void* C_ZN7QPixmapC1ERK5QSize(const QSize & a0) {
-  return new QPixmap(a0);
+void* C_ZN7QPixmapC1ERK5QSize(const QSize & arg0) {
+  return new QPixmap(arg0);
 }
 // /usr/include/qt/QtGui/qpixmap.h:67
 // void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
@@ -130,8 +134,8 @@ void C_ZNK7QPixmap4maskEv(void *this_) {
 // /usr/include/qt/QtGui/qpixmap.h:100
 // void setMask(const class QBitmap &)
 extern "C"
-void C_ZN7QPixmap7setMaskERK7QBitmap(void *this_, const QBitmap & a0) {
-  ((QPixmap*)this_)->setMask(a0);
+void C_ZN7QPixmap7setMaskERK7QBitmap(void *this_, const QBitmap & arg0) {
+  ((QPixmap*)this_)->setMask(arg0);
 }
 // /usr/include/qt/QtGui/qpixmap.h:102
 // qreal devicePixelRatio()
@@ -173,8 +177,8 @@ void C_ZNK7QPixmap19createMaskFromColorERK6QColorN2Qt8MaskModeE(void *this_, con
 // /usr/include/qt/QtGui/qpixmap.h:113
 // QPixmap grabWindow(WId, int, int, int, int)
 extern "C"
-void C_ZN7QPixmap10grabWindowEyiiii(WId a0, int x, int y, int w, int h) {
-  /*return*/ QPixmap::grabWindow(a0, x, y, w, h);
+void C_ZN7QPixmap10grabWindowEyiiii(WId arg0, int x, int y, int w, int h) {
+  /*return*/ QPixmap::grabWindow(arg0, x, y, w, h);
 }
 // static
 // /usr/include/qt/QtGui/qpixmap.h:114
@@ -218,8 +222,8 @@ void C_ZNK7QPixmap14scaledToHeightEiN2Qt18TransformationModeE(void *this_, int h
 // /usr/include/qt/QtGui/qpixmap.h:125
 // QPixmap transformed(const class QMatrix &, Qt::TransformationMode)
 extern "C"
-void C_ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, const QMatrix & a0, Qt::TransformationMode mode) {
-  /*return*/ ((QPixmap*)this_)->transformed(a0, mode);
+void C_ZNK7QPixmap11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, const QMatrix & arg0, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->transformed(arg0, mode);
 }
 // static
 // /usr/include/qt/QtGui/qpixmap.h:126
@@ -231,8 +235,8 @@ void C_ZN7QPixmap10trueMatrixERK7QMatrixii(const QMatrix & m, int w, int h) {
 // /usr/include/qt/QtGui/qpixmap.h:127
 // QPixmap transformed(const class QTransform &, Qt::TransformationMode)
 extern "C"
-void C_ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, const QTransform & a0, Qt::TransformationMode mode) {
-  /*return*/ ((QPixmap*)this_)->transformed(a0, mode);
+void C_ZNK7QPixmap11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, const QTransform & arg0, Qt::TransformationMode mode) {
+  /*return*/ ((QPixmap*)this_)->transformed(arg0, mode);
 }
 // static
 // /usr/include/qt/QtGui/qpixmap.h:128
@@ -368,3 +372,4 @@ extern "C"
 void C_ZNK7QPixmap6handleEv(void *this_) {
   /*return*/ ((QPixmap*)this_)->handle();
 }
+//  main block end

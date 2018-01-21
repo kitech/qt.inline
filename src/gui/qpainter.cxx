@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpainter.h
 #include <qpainter.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpainter.h:122
 // void QPainter()
 extern "C"
@@ -11,8 +15,8 @@ void* C_ZN8QPainterC1Ev() {
 // /usr/include/qt/QtGui/qpainter.h:123
 // void QPainter(class QPaintDevice *)
 extern "C"
-void* C_ZN8QPainterC1EP12QPaintDevice(QPaintDevice * a0) {
-  return new QPainter(a0);
+void* C_ZN8QPainterC1EP12QPaintDevice(QPaintDevice * arg0) {
+  return new QPainter(arg0);
 }
 // /usr/include/qt/QtGui/qpainter.h:124
 // void ~QPainter()
@@ -29,8 +33,8 @@ void C_ZNK8QPainter6deviceEv(void *this_) {
 // /usr/include/qt/QtGui/qpainter.h:128
 // bool begin(class QPaintDevice *)
 extern "C"
-void C_ZN8QPainter5beginEP12QPaintDevice(void *this_, QPaintDevice * a0) {
-  /*return*/ ((QPainter*)this_)->begin(a0);
+void C_ZN8QPainter5beginEP12QPaintDevice(void *this_, QPaintDevice * arg0) {
+  /*return*/ ((QPainter*)this_)->begin(arg0);
 }
 // /usr/include/qt/QtGui/qpainter.h:129
 // bool end()
@@ -157,14 +161,14 @@ void C_ZN8QPainter14setBrushOriginEii(void *this_, int x, int y) {
 // /usr/include/qt/QtGui/qpainter.h:202
 // void setBrushOrigin(const class QPoint &)
 extern "C"
-void C_ZN8QPainter14setBrushOriginERK6QPoint(void *this_, const QPoint & a0) {
-  ((QPainter*)this_)->setBrushOrigin(a0);
+void C_ZN8QPainter14setBrushOriginERK6QPoint(void *this_, const QPoint & arg0) {
+  ((QPainter*)this_)->setBrushOrigin(arg0);
 }
 // /usr/include/qt/QtGui/qpainter.h:203
 // void setBrushOrigin(const class QPointF &)
 extern "C"
-void C_ZN8QPainter14setBrushOriginERK7QPointF(void *this_, const QPointF & a0) {
-  ((QPainter*)this_)->setBrushOrigin(a0);
+void C_ZN8QPainter14setBrushOriginERK7QPointF(void *this_, const QPointF & arg0) {
+  ((QPainter*)this_)->setBrushOrigin(arg0);
 }
 // /usr/include/qt/QtGui/qpainter.h:205
 // void setBackground(const class QBrush &)
@@ -205,14 +209,14 @@ void C_ZNK8QPainter8clipPathEv(void *this_) {
 // /usr/include/qt/QtGui/qpainter.h:215
 // void setClipRect(const class QRectF &, Qt::ClipOperation)
 extern "C"
-void C_ZN8QPainter11setClipRectERK6QRectFN2Qt13ClipOperationE(void *this_, const QRectF & a0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRect(a0, op);
+void C_ZN8QPainter11setClipRectERK6QRectFN2Qt13ClipOperationE(void *this_, const QRectF & arg0, Qt::ClipOperation op) {
+  ((QPainter*)this_)->setClipRect(arg0, op);
 }
 // /usr/include/qt/QtGui/qpainter.h:216
 // void setClipRect(const class QRect &, Qt::ClipOperation)
 extern "C"
-void C_ZN8QPainter11setClipRectERK5QRectN2Qt13ClipOperationE(void *this_, const QRect & a0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRect(a0, op);
+void C_ZN8QPainter11setClipRectERK5QRectN2Qt13ClipOperationE(void *this_, const QRect & arg0, Qt::ClipOperation op) {
+  ((QPainter*)this_)->setClipRect(arg0, op);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:217
@@ -224,8 +228,8 @@ void C_ZN8QPainter11setClipRectEiiiiN2Qt13ClipOperationE(void *this_, int x, int
 // /usr/include/qt/QtGui/qpainter.h:219
 // void setClipRegion(const class QRegion &, Qt::ClipOperation)
 extern "C"
-void C_ZN8QPainter13setClipRegionERK7QRegionN2Qt13ClipOperationE(void *this_, const QRegion & a0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRegion(a0, op);
+void C_ZN8QPainter13setClipRegionERK7QRegionN2Qt13ClipOperationE(void *this_, const QRegion & arg0, Qt::ClipOperation op) {
+  ((QPainter*)this_)->setClipRegion(arg0, op);
 }
 // /usr/include/qt/QtGui/qpainter.h:221
 // void setClipPath(const class QPainterPath &, Qt::ClipOperation)
@@ -779,8 +783,8 @@ void C_ZN8QPainter7drawArcERK6QRectFii(void *this_, const QRectF & rect, int a, 
 // /usr/include/qt/QtGui/qpainter.h:337
 // void drawArc(const class QRect &, int, int)
 extern "C"
-void C_ZN8QPainter7drawArcERK5QRectii(void *this_, const QRect & a0, int a, int alen) {
-  ((QPainter*)this_)->drawArc(a0, a, alen);
+void C_ZN8QPainter7drawArcERK5QRectii(void *this_, const QRect & arg0, int a, int alen) {
+  ((QPainter*)this_)->drawArc(arg0, a, alen);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:338
@@ -806,8 +810,8 @@ void C_ZN8QPainter7drawPieEiiiiii(void *this_, int x, int y, int w, int h, int a
 // /usr/include/qt/QtGui/qpainter.h:342
 // void drawPie(const class QRect &, int, int)
 extern "C"
-void C_ZN8QPainter7drawPieERK5QRectii(void *this_, const QRect & a0, int a, int alen) {
-  ((QPainter*)this_)->drawPie(a0, a, alen);
+void C_ZN8QPainter7drawPieERK5QRectii(void *this_, const QRect & arg0, int a, int alen) {
+  ((QPainter*)this_)->drawPie(arg0, a, alen);
 }
 // /usr/include/qt/QtGui/qpainter.h:344
 // void drawChord(const class QRectF &, int, int)
@@ -826,8 +830,8 @@ void C_ZN8QPainter9drawChordEiiiiii(void *this_, int x, int y, int w, int h, int
 // /usr/include/qt/QtGui/qpainter.h:346
 // void drawChord(const class QRect &, int, int)
 extern "C"
-void C_ZN8QPainter9drawChordERK5QRectii(void *this_, const QRect & a0, int a, int alen) {
-  ((QPainter*)this_)->drawChord(a0, a, alen);
+void C_ZN8QPainter9drawChordERK5QRectii(void *this_, const QRect & arg0, int a, int alen) {
+  ((QPainter*)this_)->drawChord(arg0, a, alen);
 }
 // /usr/include/qt/QtGui/qpainter.h:348
 // void drawRoundedRect(const class QRectF &, qreal, qreal, Qt::SizeMode)
@@ -859,8 +863,8 @@ void C_ZN8QPainter13drawRoundRectERK6QRectFii(void *this_, const QRectF & r, int
 // /usr/include/qt/QtGui/qpainter.h:356
 // void drawRoundRect(int, int, int, int, int, int)
 extern "C"
-void C_ZN8QPainter13drawRoundRectEiiiiii(void *this_, int x, int y, int w, int h, int a4, int a5) {
-  ((QPainter*)this_)->drawRoundRect(x, y, w, h, a4, a5);
+void C_ZN8QPainter13drawRoundRectEiiiiii(void *this_, int x, int y, int w, int h, int arg4, int arg5) {
+  ((QPainter*)this_)->drawRoundRect(x, y, w, h, arg4, arg5);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:357
@@ -879,15 +883,15 @@ void C_ZN8QPainter15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF(void *this_, c
 // /usr/include/qt/QtGui/qpainter.h:360
 // void drawTiledPixmap(int, int, int, int, const class QPixmap &, int, int)
 extern "C"
-void C_ZN8QPainter15drawTiledPixmapEiiiiRK7QPixmapii(void *this_, int x, int y, int w, int h, const QPixmap & a4, int sx, int sy) {
-  ((QPainter*)this_)->drawTiledPixmap(x, y, w, h, a4, sx, sy);
+void C_ZN8QPainter15drawTiledPixmapEiiiiRK7QPixmapii(void *this_, int x, int y, int w, int h, const QPixmap & arg4, int sx, int sy) {
+  ((QPainter*)this_)->drawTiledPixmap(x, y, w, h, arg4, sx, sy);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:361
 // void drawTiledPixmap(const class QRect &, const class QPixmap &, const class QPoint &)
 extern "C"
-void C_ZN8QPainter15drawTiledPixmapERK5QRectRK7QPixmapRK6QPoint(void *this_, const QRect & a0, const QPixmap & a1, const QPoint & a2) {
-  ((QPainter*)this_)->drawTiledPixmap(a0, a1, a2);
+void C_ZN8QPainter15drawTiledPixmapERK5QRectRK7QPixmapRK6QPoint(void *this_, const QRect & arg0, const QPixmap & arg1, const QPoint & arg2) {
+  ((QPainter*)this_)->drawTiledPixmap(arg0, arg1, arg2);
 }
 // /usr/include/qt/QtGui/qpainter.h:363
 // void drawPicture(const class QPointF &, const class QPicture &)
@@ -1188,27 +1192,27 @@ void C_ZN8QPainter12drawTextItemERK6QPointRK9QTextItem(void *this_, const QPoint
 // /usr/include/qt/QtGui/qpainter.h:433
 // void fillRect(const class QRectF &, const class QBrush &)
 extern "C"
-void C_ZN8QPainter8fillRectERK6QRectFRK6QBrush(void *this_, const QRectF & a0, const QBrush & a1) {
-  ((QPainter*)this_)->fillRect(a0, a1);
+void C_ZN8QPainter8fillRectERK6QRectFRK6QBrush(void *this_, const QRectF & arg0, const QBrush & arg1) {
+  ((QPainter*)this_)->fillRect(arg0, arg1);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:434
 // void fillRect(int, int, int, int, const class QBrush &)
 extern "C"
-void C_ZN8QPainter8fillRectEiiiiRK6QBrush(void *this_, int x, int y, int w, int h, const QBrush & a4) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, a4);
+void C_ZN8QPainter8fillRectEiiiiRK6QBrush(void *this_, int x, int y, int w, int h, const QBrush & arg4) {
+  ((QPainter*)this_)->fillRect(x, y, w, h, arg4);
 }
 // /usr/include/qt/QtGui/qpainter.h:435
 // void fillRect(const class QRect &, const class QBrush &)
 extern "C"
-void C_ZN8QPainter8fillRectERK5QRectRK6QBrush(void *this_, const QRect & a0, const QBrush & a1) {
-  ((QPainter*)this_)->fillRect(a0, a1);
+void C_ZN8QPainter8fillRectERK5QRectRK6QBrush(void *this_, const QRect & arg0, const QBrush & arg1) {
+  ((QPainter*)this_)->fillRect(arg0, arg1);
 }
 // /usr/include/qt/QtGui/qpainter.h:437
 // void fillRect(const class QRectF &, const class QColor &)
 extern "C"
-void C_ZN8QPainter8fillRectERK6QRectFRK6QColor(void *this_, const QRectF & a0, const QColor & color) {
-  ((QPainter*)this_)->fillRect(a0, color);
+void C_ZN8QPainter8fillRectERK6QRectFRK6QColor(void *this_, const QRectF & arg0, const QColor & color) {
+  ((QPainter*)this_)->fillRect(arg0, color);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:438
@@ -1220,8 +1224,8 @@ void C_ZN8QPainter8fillRectEiiiiRK6QColor(void *this_, int x, int y, int w, int 
 // /usr/include/qt/QtGui/qpainter.h:439
 // void fillRect(const class QRect &, const class QColor &)
 extern "C"
-void C_ZN8QPainter8fillRectERK5QRectRK6QColor(void *this_, const QRect & a0, const QColor & color) {
-  ((QPainter*)this_)->fillRect(a0, color);
+void C_ZN8QPainter8fillRectERK5QRectRK6QColor(void *this_, const QRect & arg0, const QColor & color) {
+  ((QPainter*)this_)->fillRect(arg0, color);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:441
@@ -1268,8 +1272,8 @@ void C_ZN8QPainter8fillRectERK6QRectFN2Qt10BrushStyleE(void *this_, const QRectF
 // /usr/include/qt/QtGui/qpainter.h:449
 // void eraseRect(const class QRectF &)
 extern "C"
-void C_ZN8QPainter9eraseRectERK6QRectF(void *this_, const QRectF & a0) {
-  ((QPainter*)this_)->eraseRect(a0);
+void C_ZN8QPainter9eraseRectERK6QRectF(void *this_, const QRectF & arg0) {
+  ((QPainter*)this_)->eraseRect(arg0);
 }
 // inline
 // /usr/include/qt/QtGui/qpainter.h:450
@@ -1282,8 +1286,8 @@ void C_ZN8QPainter9eraseRectEiiii(void *this_, int x, int y, int w, int h) {
 // /usr/include/qt/QtGui/qpainter.h:451
 // void eraseRect(const class QRect &)
 extern "C"
-void C_ZN8QPainter9eraseRectERK5QRect(void *this_, const QRect & a0) {
-  ((QPainter*)this_)->eraseRect(a0);
+void C_ZN8QPainter9eraseRectERK5QRect(void *this_, const QRect & arg0) {
+  ((QPainter*)this_)->eraseRect(arg0);
 }
 // /usr/include/qt/QtGui/qpainter.h:453
 // void setRenderHint(enum QPainter::RenderHint, _Bool)
@@ -1349,3 +1353,4 @@ extern "C"
 void C_ZN8QPainter17endNativePaintingEv(void *this_) {
   ((QPainter*)this_)->endNativePainting();
 }
+//  main block end

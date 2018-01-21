@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qurlquery.h
 #include <qurlquery.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qurlquery.h:59
 // void QUrlQuery()
 extern "C"
@@ -119,3 +123,4 @@ extern "C"
 void C_ZN9QUrlQuery25defaultQueryPairDelimiterEv() {
   /*return*/ QUrlQuery::defaultQueryPairDelimiter();
 }
+//  main block end

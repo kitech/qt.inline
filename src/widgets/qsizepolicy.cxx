@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qsizepolicy.h
 #include <qsizepolicy.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtWidgets/qsizepolicy.h:96
 // void QSizePolicy()
@@ -139,3 +143,4 @@ extern "C"
 void C_ZN11QSizePolicy9transposeEv(void *this_) {
   ((QSizePolicy*)this_)->transpose();
 }
+//  main block end

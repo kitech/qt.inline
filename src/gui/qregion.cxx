@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qregion.h
 #include <qregion.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qregion.h:66
 // void QRegion()
 extern "C"
@@ -167,3 +171,4 @@ extern "C"
 void C_ZNK7QRegion9rectCountEv(void *this_) {
   /*return*/ ((QRegion*)this_)->rectCount();
 }
+//  main block end

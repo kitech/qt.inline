@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qslider.h
 #include <qslider.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qslider.h:54
 // const QMetaObject * metaObject()
@@ -73,3 +77,4 @@ extern "C"
 void C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
   /*return*/ ((QSlider*)this_)->event(event);
 }
+//  main block end

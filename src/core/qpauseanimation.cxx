@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qpauseanimation.h
 #include <qpauseanimation.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qpauseanimation.h:54
 // const QMetaObject * metaObject()
@@ -41,3 +45,4 @@ extern "C"
 void C_ZN15QPauseAnimation11setDurationEi(void *this_, int msecs) {
   ((QPauseAnimation*)this_)->setDuration(msecs);
 }
+//  main block end

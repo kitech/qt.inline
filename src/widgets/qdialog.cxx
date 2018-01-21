@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdialog.h
 #include <qdialog.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdialog.h:53
 // const QMetaObject * metaObject()
@@ -76,8 +80,8 @@ void C_ZNK7QDialog15minimumSizeHintEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdialog.h:78
 // void setSizeGripEnabled(_Bool)
 extern "C"
-void C_ZN7QDialog18setSizeGripEnabledEb(void *this_, bool a0) {
-  ((QDialog*)this_)->setSizeGripEnabled(a0);
+void C_ZN7QDialog18setSizeGripEnabledEb(void *this_, bool arg0) {
+  ((QDialog*)this_)->setSizeGripEnabled(arg0);
 }
 // /usr/include/qt/QtWidgets/qdialog.h:79
 // bool isSizeGripEnabled()
@@ -133,8 +137,8 @@ void C_ZN7QDialog4execEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdialog.h:92
 // void done(int)
 extern "C"
-void C_ZN7QDialog4doneEi(void *this_, int a0) {
-  ((QDialog*)this_)->done(a0);
+void C_ZN7QDialog4doneEi(void *this_, int arg0) {
+  ((QDialog*)this_)->done(arg0);
 }
 // virtual
 // /usr/include/qt/QtWidgets/qdialog.h:93
@@ -153,6 +157,7 @@ void C_ZN7QDialog6rejectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdialog.h:96
 // void showExtension(_Bool)
 extern "C"
-void C_ZN7QDialog13showExtensionEb(void *this_, bool a0) {
-  ((QDialog*)this_)->showExtension(a0);
+void C_ZN7QDialog13showExtensionEb(void *this_, bool arg0) {
+  ((QDialog*)this_)->showExtension(arg0);
 }
+//  main block end

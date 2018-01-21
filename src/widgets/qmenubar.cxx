@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmenubar.h
 #include <qmenubar.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmenubar.h:57
 // const QMetaObject * metaObject()
@@ -91,8 +95,8 @@ void C_ZN8QMenuBar15setActiveActionEP7QAction(void *this_, QAction * action) {
 // /usr/include/qt/QtWidgets/qmenubar.h:85
 // void setDefaultUp(_Bool)
 extern "C"
-void C_ZN8QMenuBar12setDefaultUpEb(void *this_, bool a0) {
-  ((QMenuBar*)this_)->setDefaultUp(a0);
+void C_ZN8QMenuBar12setDefaultUpEb(void *this_, bool arg0) {
+  ((QMenuBar*)this_)->setDefaultUp(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenubar.h:86
 // bool isDefaultUp()
@@ -118,20 +122,20 @@ void C_ZNK8QMenuBar15minimumSizeHintEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmenubar.h:90
 // int heightForWidth(int)
 extern "C"
-void C_ZNK8QMenuBar14heightForWidthEi(void *this_, int a0) {
-  /*return*/ ((QMenuBar*)this_)->heightForWidth(a0);
+void C_ZNK8QMenuBar14heightForWidthEi(void *this_, int arg0) {
+  /*return*/ ((QMenuBar*)this_)->heightForWidth(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenubar.h:92
 // QRect actionGeometry(class QAction *)
 extern "C"
-void C_ZNK8QMenuBar14actionGeometryEP7QAction(void *this_, QAction * a0) {
-  /*return*/ ((QMenuBar*)this_)->actionGeometry(a0);
+void C_ZNK8QMenuBar14actionGeometryEP7QAction(void *this_, QAction * arg0) {
+  /*return*/ ((QMenuBar*)this_)->actionGeometry(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenubar.h:93
 // QAction * actionAt(const class QPoint &)
 extern "C"
-void C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, const QPoint & a0) {
-  /*return*/ ((QMenuBar*)this_)->actionAt(a0);
+void C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, const QPoint & arg0) {
+  /*return*/ ((QMenuBar*)this_)->actionAt(arg0);
 }
 // /usr/include/qt/QtWidgets/qmenubar.h:95
 // void setCornerWidget(class QWidget *, Qt::Corner)
@@ -182,3 +186,4 @@ extern "C"
 void C_ZN8QMenuBar7hoveredEP7QAction(void *this_, QAction * action) {
   ((QMenuBar*)this_)->hovered(action);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #include <qitemeditorfactory.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
 // void QItemEditorFactory()
@@ -50,3 +54,4 @@ extern "C"
 void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factory) {
   QItemEditorFactory::setDefaultFactory(factory);
 }
+//  main block end

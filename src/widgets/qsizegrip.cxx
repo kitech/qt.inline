@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qsizegrip.h
 #include <qsizegrip.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qsizegrip.h:52
 // const QMetaObject * metaObject()
@@ -33,6 +37,7 @@ void C_ZNK9QSizeGrip8sizeHintEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsizegrip.h:58
 // void setVisible(_Bool)
 extern "C"
-void C_ZN9QSizeGrip10setVisibleEb(void *this_, bool a0) {
-  ((QSizeGrip*)this_)->setVisible(a0);
+void C_ZN9QSizeGrip10setVisibleEb(void *this_, bool arg0) {
+  ((QSizeGrip*)this_)->setVisible(arg0);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtemporaryfile.h
 #include <qtemporaryfile.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qtemporaryfile.h:61
 // const QMetaObject * metaObject()
@@ -106,3 +110,4 @@ extern "C"
 void C_ZN14QTemporaryFile16createNativeFileER5QFile(QFile & file) {
   /*return*/ QTemporaryFile::createNativeFile(file);
 }
+//  main block end

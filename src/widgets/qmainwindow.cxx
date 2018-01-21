@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmainwindow.h
 #include <qmainwindow.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmainwindow.h:60
 // const QMetaObject * metaObject()
@@ -347,3 +351,4 @@ extern "C"
 void C_ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
   ((QMainWindow*)this_)->toolButtonStyleChanged(toolButtonStyle);
 }
+//  main block end

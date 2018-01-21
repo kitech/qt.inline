@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qtextlist.h
 #include <qtextlist.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qtextlist.h:54
 // const QMetaObject * metaObject()
@@ -44,14 +48,14 @@ void C_ZNK9QTextList4itemEi(void *this_, int i) {
 // /usr/include/qt/QtGui/qtextlist.h:66
 // int itemNumber(const class QTextBlock &)
 extern "C"
-void C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, const QTextBlock & a0) {
-  /*return*/ ((QTextList*)this_)->itemNumber(a0);
+void C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, const QTextBlock & arg0) {
+  /*return*/ ((QTextList*)this_)->itemNumber(arg0);
 }
 // /usr/include/qt/QtGui/qtextlist.h:67
 // QString itemText(const class QTextBlock &)
 extern "C"
-void C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, const QTextBlock & a0) {
-  /*return*/ ((QTextList*)this_)->itemText(a0);
+void C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, const QTextBlock & arg0) {
+  /*return*/ ((QTextList*)this_)->itemText(arg0);
 }
 // /usr/include/qt/QtGui/qtextlist.h:69
 // void removeItem(int)
@@ -62,8 +66,8 @@ void C_ZN9QTextList10removeItemEi(void *this_, int i) {
 // /usr/include/qt/QtGui/qtextlist.h:70
 // void remove(const class QTextBlock &)
 extern "C"
-void C_ZN9QTextList6removeERK10QTextBlock(void *this_, const QTextBlock & a0) {
-  ((QTextList*)this_)->remove(a0);
+void C_ZN9QTextList6removeERK10QTextBlock(void *this_, const QTextBlock & arg0) {
+  ((QTextList*)this_)->remove(arg0);
 }
 // /usr/include/qt/QtGui/qtextlist.h:72
 // void add(const class QTextBlock &)
@@ -85,3 +89,4 @@ extern "C"
 void C_ZNK9QTextList6formatEv(void *this_) {
   /*return*/ ((QTextList*)this_)->format();
 }
+//  main block end

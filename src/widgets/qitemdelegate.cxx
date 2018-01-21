@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qitemdelegate.h
 #include <qitemdelegate.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qitemdelegate.h:58
 // const QMetaObject * metaObject()
@@ -88,3 +92,4 @@ extern "C"
 void C_ZN13QItemDelegate20setItemEditorFactoryEP18QItemEditorFactory(void *this_, QItemEditorFactory * factory) {
   ((QItemDelegate*)this_)->setItemEditorFactory(factory);
 }
+//  main block end

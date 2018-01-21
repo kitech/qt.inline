@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qstylepainter.h
 #include <qstylepainter.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtWidgets/qstylepainter.h:53
 // void QStylePainter()
@@ -79,3 +83,4 @@ extern "C"
 void C_ZNK13QStylePainter5styleEv(void *this_) {
   /*return*/ ((QStylePainter*)this_)->style();
 }
+//  main block end

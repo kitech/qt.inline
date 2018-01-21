@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qjsondocument.h
 #include <qjsondocument.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qjsondocument.h:88
 // void QJsonDocument()
 extern "C"
@@ -132,3 +136,4 @@ extern "C"
 void C_ZNK13QJsonDocument6isNullEv(void *this_) {
   /*return*/ ((QJsonDocument*)this_)->isNull();
 }
+//  main block end

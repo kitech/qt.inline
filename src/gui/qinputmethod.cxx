@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qinputmethod.h
 #include <qinputmethod.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qinputmethod.h:55
 // const QMetaObject * metaObject()
@@ -178,3 +182,4 @@ extern "C"
 void C_ZN12QInputMethod21inputDirectionChangedEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection newDirection) {
   ((QInputMethod*)this_)->inputDirectionChanged(newDirection);
 }
+//  main block end

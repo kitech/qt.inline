@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qprocess.h
 #include <qprocess.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qprocess.h:110
 // const QMetaObject * metaObject()
@@ -392,3 +396,4 @@ extern "C"
 void C_ZN8QProcess13errorOccurredENS_12ProcessErrorE(void *this_, QProcess::ProcessError error) {
   ((QProcess*)this_)->errorOccurred(error);
 }
+//  main block end

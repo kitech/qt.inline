@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qlistview.h
 #include <qlistview.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qlistview.h:54
 // const QMetaObject * metaObject()
@@ -244,3 +248,4 @@ extern "C"
 void C_ZN9QListView12indexesMovedERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
   ((QListView*)this_)->indexesMoved(indexes);
 }
+//  main block end

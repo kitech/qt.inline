@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qstackedwidget.h
 #include <qstackedwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qstackedwidget.h:54
 // const QMetaObject * metaObject()
@@ -55,14 +59,14 @@ void C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstackedwidget.h:69
 // int indexOf(class QWidget *)
 extern "C"
-void C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * a0) {
-  /*return*/ ((QStackedWidget*)this_)->indexOf(a0);
+void C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
+  /*return*/ ((QStackedWidget*)this_)->indexOf(arg0);
 }
 // /usr/include/qt/QtWidgets/qstackedwidget.h:70
 // QWidget * widget(int)
 extern "C"
-void C_ZNK14QStackedWidget6widgetEi(void *this_, int a0) {
-  /*return*/ ((QStackedWidget*)this_)->widget(a0);
+void C_ZNK14QStackedWidget6widgetEi(void *this_, int arg0) {
+  /*return*/ ((QStackedWidget*)this_)->widget(arg0);
 }
 // /usr/include/qt/QtWidgets/qstackedwidget.h:71
 // int count()
@@ -85,8 +89,8 @@ void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) 
 // /usr/include/qt/QtWidgets/qstackedwidget.h:78
 // void currentChanged(int)
 extern "C"
-void C_ZN14QStackedWidget14currentChangedEi(void *this_, int a0) {
-  ((QStackedWidget*)this_)->currentChanged(a0);
+void C_ZN14QStackedWidget14currentChangedEi(void *this_, int arg0) {
+  ((QStackedWidget*)this_)->currentChanged(arg0);
 }
 // /usr/include/qt/QtWidgets/qstackedwidget.h:79
 // void widgetRemoved(int)
@@ -94,3 +98,4 @@ extern "C"
 void C_ZN14QStackedWidget13widgetRemovedEi(void *this_, int index) {
   ((QStackedWidget*)this_)->widgetRemoved(index);
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmimetype.h
 #include <qmimetype.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qmimetype.h:62
 // void QMimeType()
 extern "C"
@@ -111,3 +115,4 @@ extern "C"
 void C_ZNK9QMimeType12filterStringEv(void *this_) {
   /*return*/ ((QMimeType*)this_)->filterString();
 }
+//  main block end

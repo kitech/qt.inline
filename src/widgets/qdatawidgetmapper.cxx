@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #include <qdatawidgetmapper.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
 // const QMetaObject * metaObject()
@@ -185,3 +189,4 @@ extern "C"
 void C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *this_, int index) {
   ((QDataWidgetMapper*)this_)->currentIndexChanged(index);
 }
+//  main block end

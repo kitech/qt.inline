@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicswidget.h
 #include <qgraphicswidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:66
 // const QMetaObject * metaObject()
@@ -375,3 +379,4 @@ extern "C"
 void C_ZN15QGraphicsWidget5closeEv(void *this_) {
   /*return*/ ((QGraphicsWidget*)this_)->close();
 }
+//  main block end

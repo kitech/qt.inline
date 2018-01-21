@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h
 #include <qgraphicsproxywidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:54
 // const QMetaObject * metaObject()
@@ -67,3 +71,4 @@ extern "C"
 void C_ZN20QGraphicsProxyWidget25createProxyForChildWidgetEP7QWidget(void *this_, QWidget * child) {
   /*return*/ ((QGraphicsProxyWidget*)this_)->createProxyForChildWidget(child);
 }
+//  main block end

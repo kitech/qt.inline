@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
 #include <qpaintdevicewindow.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:53
 // const QMetaObject * metaObject()
@@ -27,3 +31,4 @@ extern "C"
 void C_ZN18QPaintDeviceWindow6updateEv(void *this_) {
   ((QPaintDeviceWindow*)this_)->update();
 }
+//  main block end

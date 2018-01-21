@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #include <qlistwidget.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qlistwidget.h:199
 // const QMetaObject * metaObject()
@@ -317,3 +321,4 @@ extern "C"
 void C_ZN11QListWidget20itemSelectionChangedEv(void *this_) {
   ((QListWidget*)this_)->itemSelectionChanged();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qstringmatcher.h
 #include <qstringmatcher.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qstringmatcher.h:53
 // void QStringMatcher()
 extern "C"
@@ -63,3 +67,4 @@ extern "C"
 void C_ZNK14QStringMatcher15caseSensitivityEv(void *this_) {
   /*return*/ ((QStringMatcher*)this_)->caseSensitivity();
 }
+//  main block end

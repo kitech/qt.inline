@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qlibrary.h
 #include <qlibrary.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qlibrary.h:53
 // const QMetaObject * metaObject()
@@ -134,3 +138,4 @@ extern "C"
 void C_ZNK8QLibrary9loadHintsEv(void *this_) {
   /*return*/ ((QLibrary*)this_)->loadHints();
 }
+//  main block end

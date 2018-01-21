@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpixmapcache.h
 #include <qpixmapcache.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // static
 // /usr/include/qt/QtGui/qpixmapcache.h:76
 // int cacheLimit()
@@ -13,8 +17,8 @@ void C_ZN12QPixmapCache10cacheLimitEv() {
 // /usr/include/qt/QtGui/qpixmapcache.h:77
 // void setCacheLimit(int)
 extern "C"
-void C_ZN12QPixmapCache13setCacheLimitEi(int a0) {
-  QPixmapCache::setCacheLimit(a0);
+void C_ZN12QPixmapCache13setCacheLimitEi(int arg0) {
+  QPixmapCache::setCacheLimit(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qpixmapcache.h:78
@@ -72,3 +76,4 @@ extern "C"
 void C_ZN12QPixmapCache5clearEv() {
   QPixmapCache::clear();
 }
+//  main block end

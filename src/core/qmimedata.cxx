@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qmimedata.h
 #include <qmimedata.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qmimedata.h:54
 // const QMetaObject * metaObject()
@@ -150,3 +154,4 @@ extern "C"
 void C_ZN9QMimeData5clearEv(void *this_) {
   ((QMimeData*)this_)->clear();
 }
+//  main block end

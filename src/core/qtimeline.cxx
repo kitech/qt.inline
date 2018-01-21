@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtimeline.h
 #include <qtimeline.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qtimeline.h:52
 // const QMetaObject * metaObject()
@@ -197,3 +201,4 @@ extern "C"
 void C_ZN9QTimeLine15toggleDirectionEv(void *this_) {
   ((QTimeLine*)this_)->toggleDirection();
 }
+//  main block end

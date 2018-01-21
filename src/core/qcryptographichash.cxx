@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qcryptographichash.h
 #include <qcryptographichash.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qcryptographichash.h:73
 // void QCryptographicHash(enum QCryptographicHash::Algorithm)
 extern "C"
@@ -51,3 +55,4 @@ extern "C"
 void C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(const QByteArray & data, QCryptographicHash::Algorithm method) {
   /*return*/ QCryptographicHash::hash(data, method);
 }
+//  main block end

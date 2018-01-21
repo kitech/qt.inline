@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qinputdialog.h
 #include <qinputdialog.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qinputdialog.h:56
 // const QMetaObject * metaObject()
@@ -355,3 +359,4 @@ extern "C"
 void C_ZN12QInputDialog4doneEi(void *this_, int result) {
   ((QInputDialog*)this_)->done(result);
 }
+//  main block end

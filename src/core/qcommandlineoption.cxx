@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qcommandlineoption.h
 #include <qcommandlineoption.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qcommandlineoption.h:53
 // void QCommandLineOption(const class QString &)
 extern "C"
@@ -99,3 +103,4 @@ extern "C"
 void C_ZNK18QCommandLineOption8isHiddenEv(void *this_) {
   /*return*/ ((QCommandLineOption*)this_)->isHidden();
 }
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qpalette.h
 #include <qpalette.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qpalette.h:57
 // void QPalette()
 extern "C"
@@ -299,8 +303,8 @@ void C_ZNK8QPalette8cacheKeyEv(void *this_) {
 // /usr/include/qt/QtGui/qpalette.h:153
 // QPalette resolve(const class QPalette &)
 extern "C"
-void C_ZNK8QPalette7resolveERKS_(void *this_, const QPalette & a0) {
-  /*return*/ ((QPalette*)this_)->resolve(a0);
+void C_ZNK8QPalette7resolveERKS_(void *this_, const QPalette & arg0) {
+  /*return*/ ((QPalette*)this_)->resolve(arg0);
 }
 // inline
 // /usr/include/qt/QtGui/qpalette.h:154
@@ -316,3 +320,4 @@ extern "C"
 void C_ZN8QPalette7resolveEj(void *this_, uint mask) {
   ((QPalette*)this_)->resolve(mask);
 }
+//  main block end

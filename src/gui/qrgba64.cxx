@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qrgba64.h
 #include <qrgba64.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // inline
 // /usr/include/qt/QtGui/qrgba64.h:74
 // void QRgba64()
@@ -163,3 +167,4 @@ extern "C"
 void C_ZNK7QRgba6415unpremultipliedEv(void *this_) {
   /*return*/ ((QRgba64*)this_)->unpremultiplied();
 }
+//  main block end

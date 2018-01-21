@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qcolordialog.h
 #include <qcolordialog.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qcolordialog.h:54
 // const QMetaObject * metaObject()
@@ -144,3 +148,4 @@ extern "C"
 void C_ZN12QColorDialog13colorSelectedERK6QColor(void *this_, const QColor & color) {
   ((QColorDialog*)this_)->colorSelected(color);
 }
+//  main block end

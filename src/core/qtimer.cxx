@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qtimer.h
 #include <qtimer.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qtimer.h:55
 // const QMetaObject * metaObject()
@@ -115,3 +119,4 @@ extern "C"
 void C_ZN6QTimer4stopEv(void *this_) {
   ((QTimer*)this_)->stop();
 }
+//  main block end

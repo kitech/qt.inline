@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qmessagebox.h
 #include <qmessagebox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qmessagebox.h:57
 // const QMetaObject * metaObject()
@@ -157,8 +161,8 @@ void C_ZNK11QMessageBox4iconEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmessagebox.h:174
 // void setIcon(enum QMessageBox::Icon)
 extern "C"
-void C_ZN11QMessageBox7setIconENS_4IconE(void *this_, QMessageBox::Icon a0) {
-  ((QMessageBox*)this_)->setIcon(a0);
+void C_ZN11QMessageBox7setIconENS_4IconE(void *this_, QMessageBox::Icon arg0) {
+  ((QMessageBox*)this_)->setIcon(arg0);
 }
 // /usr/include/qt/QtWidgets/qmessagebox.h:176
 // QPixmap iconPixmap()
@@ -401,3 +405,4 @@ extern "C"
 void C_ZN11QMessageBox13buttonClickedEP15QAbstractButton(void *this_, QAbstractButton * button) {
   ((QMessageBox*)this_)->buttonClicked(button);
 }
+//  main block end

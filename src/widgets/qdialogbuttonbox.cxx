@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h
 #include <qdialogbuttonbox.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:54
 // const QMetaObject * metaObject()
@@ -154,3 +158,4 @@ extern "C"
 void C_ZN16QDialogButtonBox8rejectedEv(void *this_) {
   ((QDialogButtonBox*)this_)->rejected();
 }
+//  main block end

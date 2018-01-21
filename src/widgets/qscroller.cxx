@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qscroller.h
 #include <qscroller.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qscroller.h:60
 // const QMetaObject * metaObject()
@@ -175,6 +179,7 @@ void C_ZN9QScroller12stateChangedENS_5StateE(void *this_, QScroller::State newst
 // /usr/include/qt/QtWidgets/qscroller.h:130
 // void scrollerPropertiesChanged(const class QScrollerProperties &)
 extern "C"
-void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *this_, const QScrollerProperties & a0) {
-  ((QScroller*)this_)->scrollerPropertiesChanged(a0);
+void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *this_, const QScrollerProperties & arg0) {
+  ((QScroller*)this_)->scrollerPropertiesChanged(arg0);
 }
+//  main block end

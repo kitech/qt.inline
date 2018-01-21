@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qcommandlineparser.h
 #include <qcommandlineparser.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtCore/qcommandlineparser.h:57
 // void QCommandLineParser()
 extern "C"
@@ -170,3 +174,4 @@ extern "C"
 void C_ZNK18QCommandLineParser8helpTextEv(void *this_) {
   /*return*/ ((QCommandLineParser*)this_)->helpText();
 }
+//  main block end

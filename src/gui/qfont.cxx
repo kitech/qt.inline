@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qfont.h
 #include <qfont.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qfont.h:160
 // void QFont()
 extern "C"
@@ -17,8 +21,8 @@ void* C_ZN5QFontC1ERK7QStringiib(const QString & family, int pointSize, int weig
 // /usr/include/qt/QtGui/qfont.h:162
 // void QFont(const class QFont &, class QPaintDevice *)
 extern "C"
-void* C_ZN5QFontC1ERKS_P12QPaintDevice(const QFont & a0, QPaintDevice * pd) {
-  return new QFont(a0, pd);
+void* C_ZN5QFontC1ERKS_P12QPaintDevice(const QFont & arg0, QPaintDevice * pd) {
+  return new QFont(arg0, pd);
 }
 // /usr/include/qt/QtGui/qfont.h:164
 // void ~QFont()
@@ -42,8 +46,8 @@ void C_ZNK5QFont6familyEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:170
 // void setFamily(const class QString &)
 extern "C"
-void C_ZN5QFont9setFamilyERK7QString(void *this_, const QString & a0) {
-  ((QFont*)this_)->setFamily(a0);
+void C_ZN5QFont9setFamilyERK7QString(void *this_, const QString & arg0) {
+  ((QFont*)this_)->setFamily(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:172
 // QString styleName()
@@ -54,8 +58,8 @@ void C_ZNK5QFont9styleNameEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:173
 // void setStyleName(const class QString &)
 extern "C"
-void C_ZN5QFont12setStyleNameERK7QString(void *this_, const QString & a0) {
-  ((QFont*)this_)->setStyleName(a0);
+void C_ZN5QFont12setStyleNameERK7QString(void *this_, const QString & arg0) {
+  ((QFont*)this_)->setStyleName(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:175
 // int pointSize()
@@ -66,8 +70,8 @@ void C_ZNK5QFont9pointSizeEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:176
 // void setPointSize(int)
 extern "C"
-void C_ZN5QFont12setPointSizeEi(void *this_, int a0) {
-  ((QFont*)this_)->setPointSize(a0);
+void C_ZN5QFont12setPointSizeEi(void *this_, int arg0) {
+  ((QFont*)this_)->setPointSize(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:177
 // qreal pointSizeF()
@@ -78,8 +82,8 @@ void C_ZNK5QFont10pointSizeFEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:178
 // void setPointSizeF(qreal)
 extern "C"
-void C_ZN5QFont13setPointSizeFEd(void *this_, qreal a0) {
-  ((QFont*)this_)->setPointSizeF(a0);
+void C_ZN5QFont13setPointSizeFEd(void *this_, qreal arg0) {
+  ((QFont*)this_)->setPointSizeF(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:180
 // int pixelSize()
@@ -90,8 +94,8 @@ void C_ZNK5QFont9pixelSizeEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:181
 // void setPixelSize(int)
 extern "C"
-void C_ZN5QFont12setPixelSizeEi(void *this_, int a0) {
-  ((QFont*)this_)->setPixelSize(a0);
+void C_ZN5QFont12setPixelSizeEi(void *this_, int arg0) {
+  ((QFont*)this_)->setPixelSize(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:183
 // int weight()
@@ -102,8 +106,8 @@ void C_ZNK5QFont6weightEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:184
 // void setWeight(int)
 extern "C"
-void C_ZN5QFont9setWeightEi(void *this_, int a0) {
-  ((QFont*)this_)->setWeight(a0);
+void C_ZN5QFont9setWeightEi(void *this_, int arg0) {
+  ((QFont*)this_)->setWeight(arg0);
 }
 // inline
 // /usr/include/qt/QtGui/qfont.h:186
@@ -116,8 +120,8 @@ void C_ZNK5QFont4boldEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:187
 // void setBold(_Bool)
 extern "C"
-void C_ZN5QFont7setBoldEb(void *this_, bool a0) {
-  ((QFont*)this_)->setBold(a0);
+void C_ZN5QFont7setBoldEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setBold(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:189
 // void setStyle(enum QFont::Style)
@@ -154,8 +158,8 @@ void C_ZNK5QFont9underlineEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:196
 // void setUnderline(_Bool)
 extern "C"
-void C_ZN5QFont12setUnderlineEb(void *this_, bool a0) {
-  ((QFont*)this_)->setUnderline(a0);
+void C_ZN5QFont12setUnderlineEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setUnderline(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:198
 // bool overline()
@@ -166,8 +170,8 @@ void C_ZNK5QFont8overlineEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:199
 // void setOverline(_Bool)
 extern "C"
-void C_ZN5QFont11setOverlineEb(void *this_, bool a0) {
-  ((QFont*)this_)->setOverline(a0);
+void C_ZN5QFont11setOverlineEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setOverline(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:201
 // bool strikeOut()
@@ -178,8 +182,8 @@ void C_ZNK5QFont9strikeOutEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:202
 // void setStrikeOut(_Bool)
 extern "C"
-void C_ZN5QFont12setStrikeOutEb(void *this_, bool a0) {
-  ((QFont*)this_)->setStrikeOut(a0);
+void C_ZN5QFont12setStrikeOutEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setStrikeOut(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:204
 // bool fixedPitch()
@@ -190,8 +194,8 @@ void C_ZNK5QFont10fixedPitchEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:205
 // void setFixedPitch(_Bool)
 extern "C"
-void C_ZN5QFont13setFixedPitchEb(void *this_, bool a0) {
-  ((QFont*)this_)->setFixedPitch(a0);
+void C_ZN5QFont13setFixedPitchEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setFixedPitch(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:207
 // bool kerning()
@@ -202,8 +206,8 @@ void C_ZNK5QFont7kerningEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:208
 // void setKerning(_Bool)
 extern "C"
-void C_ZN5QFont10setKerningEb(void *this_, bool a0) {
-  ((QFont*)this_)->setKerning(a0);
+void C_ZN5QFont10setKerningEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setKerning(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:210
 // QFont::StyleHint styleHint()
@@ -220,8 +224,8 @@ void C_ZNK5QFont13styleStrategyEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:212
 // void setStyleHint(enum QFont::StyleHint, enum QFont::StyleStrategy)
 extern "C"
-void C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *this_, QFont::StyleHint a0, QFont::StyleStrategy a1) {
-  ((QFont*)this_)->setStyleHint(a0, a1);
+void C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *this_, QFont::StyleHint arg0, QFont::StyleStrategy arg1) {
+  ((QFont*)this_)->setStyleHint(arg0, arg1);
 }
 // /usr/include/qt/QtGui/qfont.h:213
 // void setStyleStrategy(enum QFont::StyleStrategy)
@@ -238,8 +242,8 @@ void C_ZNK5QFont7stretchEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:216
 // void setStretch(int)
 extern "C"
-void C_ZN5QFont10setStretchEi(void *this_, int a0) {
-  ((QFont*)this_)->setStretch(a0);
+void C_ZN5QFont10setStretchEi(void *this_, int arg0) {
+  ((QFont*)this_)->setStretch(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:218
 // qreal letterSpacing()
@@ -274,8 +278,8 @@ void C_ZN5QFont14setWordSpacingEd(void *this_, qreal spacing) {
 // /usr/include/qt/QtGui/qfont.h:225
 // void setCapitalization(enum QFont::Capitalization)
 extern "C"
-void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capitalization a0) {
-  ((QFont*)this_)->setCapitalization(a0);
+void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capitalization arg0) {
+  ((QFont*)this_)->setCapitalization(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:226
 // QFont::Capitalization capitalization()
@@ -304,8 +308,8 @@ void C_ZNK5QFont7rawModeEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:233
 // void setRawMode(_Bool)
 extern "C"
-void C_ZN5QFont10setRawModeEb(void *this_, bool a0) {
-  ((QFont*)this_)->setRawMode(a0);
+void C_ZN5QFont10setRawModeEb(void *this_, bool arg0) {
+  ((QFont*)this_)->setRawMode(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:237
 // bool exactMatch()
@@ -316,14 +320,14 @@ void C_ZNK5QFont10exactMatchEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:244
 // bool isCopyOf(const class QFont &)
 extern "C"
-void C_ZNK5QFont8isCopyOfERKS_(void *this_, const QFont & a0) {
-  /*return*/ ((QFont*)this_)->isCopyOf(a0);
+void C_ZNK5QFont8isCopyOfERKS_(void *this_, const QFont & arg0) {
+  /*return*/ ((QFont*)this_)->isCopyOf(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:252
 // void setRawName(const class QString &)
 extern "C"
-void C_ZN5QFont10setRawNameERK7QString(void *this_, const QString & a0) {
-  ((QFont*)this_)->setRawName(a0);
+void C_ZN5QFont10setRawNameERK7QString(void *this_, const QString & arg0) {
+  ((QFont*)this_)->setRawName(arg0);
 }
 // /usr/include/qt/QtGui/qfont.h:253
 // QString rawName()
@@ -346,22 +350,22 @@ void C_ZNK5QFont8toStringEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:259
 // bool fromString(const class QString &)
 extern "C"
-void C_ZN5QFont10fromStringERK7QString(void *this_, const QString & a0) {
-  /*return*/ ((QFont*)this_)->fromString(a0);
+void C_ZN5QFont10fromStringERK7QString(void *this_, const QString & arg0) {
+  /*return*/ ((QFont*)this_)->fromString(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:261
 // QString substitute(const class QString &)
 extern "C"
-void C_ZN5QFont10substituteERK7QString(const QString & a0) {
-  /*return*/ QFont::substitute(a0);
+void C_ZN5QFont10substituteERK7QString(const QString & arg0) {
+  /*return*/ QFont::substitute(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:262
 // QStringList substitutes(const class QString &)
 extern "C"
-void C_ZN5QFont11substitutesERK7QString(const QString & a0) {
-  /*return*/ QFont::substitutes(a0);
+void C_ZN5QFont11substitutesERK7QString(const QString & arg0) {
+  /*return*/ QFont::substitutes(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:263
@@ -374,22 +378,22 @@ void C_ZN5QFont13substitutionsEv() {
 // /usr/include/qt/QtGui/qfont.h:264
 // void insertSubstitution(const class QString &, const class QString &)
 extern "C"
-void C_ZN5QFont18insertSubstitutionERK7QStringS2_(const QString & a0, const QString & a1) {
-  QFont::insertSubstitution(a0, a1);
+void C_ZN5QFont18insertSubstitutionERK7QStringS2_(const QString & arg0, const QString & arg1) {
+  QFont::insertSubstitution(arg0, arg1);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:265
 // void insertSubstitutions(const class QString &, const class QStringList &)
 extern "C"
-void C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(const QString & a0, const QStringList & a1) {
-  QFont::insertSubstitutions(a0, a1);
+void C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(const QString & arg0, const QStringList & arg1) {
+  QFont::insertSubstitutions(arg0, arg1);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:266
 // void removeSubstitutions(const class QString &)
 extern "C"
-void C_ZN5QFont19removeSubstitutionsERK7QString(const QString & a0) {
-  QFont::removeSubstitutions(a0);
+void C_ZN5QFont19removeSubstitutionsERK7QString(const QString & arg0) {
+  QFont::removeSubstitutions(arg0);
 }
 // static
 // /usr/include/qt/QtGui/qfont.h:270
@@ -433,8 +437,8 @@ void C_ZNK5QFont14lastResortFontEv(void *this_) {
 // /usr/include/qt/QtGui/qfont.h:278
 // QFont resolve(const class QFont &)
 extern "C"
-void C_ZNK5QFont7resolveERKS_(void *this_, const QFont & a0) {
-  /*return*/ ((QFont*)this_)->resolve(a0);
+void C_ZNK5QFont7resolveERKS_(void *this_, const QFont & arg0) {
+  /*return*/ ((QFont*)this_)->resolve(arg0);
 }
 // inline
 // /usr/include/qt/QtGui/qfont.h:279
@@ -450,3 +454,4 @@ extern "C"
 void C_ZN5QFont7resolveEj(void *this_, uint mask) {
   ((QFont*)this_)->resolve(mask);
 }
+//  main block end

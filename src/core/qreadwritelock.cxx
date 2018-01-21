@@ -1,39 +1,63 @@
+//  header block begin
 // /usr/include/qt/QtCore/qreadwritelock.h
 #include <qreadwritelock.h>
 #include <QtCore>
 
-// inline
-// /usr/include/qt/QtCore/qreadwritelock.h:131
-// void QWriteLocker(class QReadWriteLock *)
+//  header block end
+
+//  main block begin
+// /usr/include/qt/QtCore/qreadwritelock.h:57
+// void QReadWriteLock(enum QReadWriteLock::RecursionMode)
 extern "C"
-void* C_ZN12QWriteLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
-  return new QWriteLocker(readWriteLock);
+void* C_ZN14QReadWriteLockC1ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
+  return new QReadWriteLock(recursionMode);
 }
-// inline
-// /usr/include/qt/QtCore/qreadwritelock.h:133
-// void ~QWriteLocker()
+// /usr/include/qt/QtCore/qreadwritelock.h:58
+// void ~QReadWriteLock()
 extern "C"
-void C_ZN12QWriteLockerD1Ev(void *this_) {
-  delete (QWriteLocker*)(this_);
+void C_ZN14QReadWriteLockD1Ev(void *this_) {
+  delete (QReadWriteLock*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qreadwritelock.h:136
+// /usr/include/qt/QtCore/qreadwritelock.h:60
+// void lockForRead()
+extern "C"
+void C_ZN14QReadWriteLock11lockForReadEv(void *this_) {
+  ((QReadWriteLock*)this_)->lockForRead();
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:61
+// bool tryLockForRead()
+extern "C"
+void C_ZN14QReadWriteLock14tryLockForReadEv(void *this_) {
+  /*return*/ ((QReadWriteLock*)this_)->tryLockForRead();
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:62
+// bool tryLockForRead(int)
+extern "C"
+void C_ZN14QReadWriteLock14tryLockForReadEi(void *this_, int timeout) {
+  /*return*/ ((QReadWriteLock*)this_)->tryLockForRead(timeout);
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:64
+// void lockForWrite()
+extern "C"
+void C_ZN14QReadWriteLock12lockForWriteEv(void *this_) {
+  ((QReadWriteLock*)this_)->lockForWrite();
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:65
+// bool tryLockForWrite()
+extern "C"
+void C_ZN14QReadWriteLock15tryLockForWriteEv(void *this_) {
+  /*return*/ ((QReadWriteLock*)this_)->tryLockForWrite();
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:66
+// bool tryLockForWrite(int)
+extern "C"
+void C_ZN14QReadWriteLock15tryLockForWriteEi(void *this_, int timeout) {
+  /*return*/ ((QReadWriteLock*)this_)->tryLockForWrite(timeout);
+}
+// /usr/include/qt/QtCore/qreadwritelock.h:68
 // void unlock()
 extern "C"
-void C_ZN12QWriteLocker6unlockEv(void *this_) {
-  ((QWriteLocker*)this_)->unlock();
+void C_ZN14QReadWriteLock6unlockEv(void *this_) {
+  ((QReadWriteLock*)this_)->unlock();
 }
-// inline
-// /usr/include/qt/QtCore/qreadwritelock.h:146
-// void relock()
-extern "C"
-void C_ZN12QWriteLocker6relockEv(void *this_) {
-  ((QWriteLocker*)this_)->relock();
-}
-// inline
-// /usr/include/qt/QtCore/qreadwritelock.h:156
-// QReadWriteLock * readWriteLock()
-extern "C"
-void C_ZNK12QWriteLocker13readWriteLockEv(void *this_) {
-  /*return*/ ((QWriteLocker*)this_)->readWriteLock();
-}
+//  main block end

@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qfileselector.h
 #include <qfileselector.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qfileselector.h:51
 // const QMetaObject * metaObject()
@@ -52,3 +56,4 @@ extern "C"
 void C_ZNK13QFileSelector12allSelectorsEv(void *this_) {
   /*return*/ ((QFileSelector*)this_)->allSelectors();
 }
+//  main block end

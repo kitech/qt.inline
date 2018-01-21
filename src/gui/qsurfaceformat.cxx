@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtGui/qsurfaceformat.h
 #include <qsurfaceformat.h>
 #include <QtGui>
 
+//  header block end
+
+//  main block begin
 // /usr/include/qt/QtGui/qsurfaceformat.h:82
 // void QSurfaceFormat()
 extern "C"
@@ -256,3 +260,4 @@ extern "C"
 void C_ZN14QSurfaceFormat13defaultFormatEv() {
   /*return*/ QSurfaceFormat::defaultFormat();
 }
+//  main block end

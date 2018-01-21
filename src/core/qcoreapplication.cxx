@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtCore/qcoreapplication.h
 #include <qcoreapplication.h>
 #include <QtCore>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtCore/qcoreapplication.h:78
 // const QMetaObject * metaObject()
@@ -12,8 +16,8 @@ void C_ZNK16QCoreApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qcoreapplication.h:91
 // void QCoreApplication(int &, char **, int)
 extern "C"
-void* C_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv, int a2) {
-  return new QCoreApplication(argc, argv, a2);
+void* C_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
+  return new QCoreApplication(argc, argv, arg2);
 }
 // virtual
 // /usr/include/qt/QtCore/qcoreapplication.h:97
@@ -201,8 +205,8 @@ void C_ZN16QCoreApplication18setEventDispatcherEP24QAbstractEventDispatcher(QAbs
 // /usr/include/qt/QtCore/qcoreapplication.h:134
 // bool notify(class QObject *, class QEvent *)
 extern "C"
-void C_ZN16QCoreApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * a0, QEvent * a1) {
-  /*return*/ ((QCoreApplication*)this_)->notify(a0, a1);
+void C_ZN16QCoreApplication6notifyEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
+  /*return*/ ((QCoreApplication*)this_)->notify(arg0, arg1);
 }
 // static
 // /usr/include/qt/QtCore/qcoreapplication.h:136
@@ -243,8 +247,8 @@ void C_ZN16QCoreApplication14applicationPidEv() {
 // /usr/include/qt/QtCore/qcoreapplication.h:145
 // void setLibraryPaths(const class QStringList &)
 extern "C"
-void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(const QStringList & a0) {
-  QCoreApplication::setLibraryPaths(a0);
+void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(const QStringList & arg0) {
+  QCoreApplication::setLibraryPaths(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qcoreapplication.h:146
@@ -257,15 +261,15 @@ void C_ZN16QCoreApplication12libraryPathsEv() {
 // /usr/include/qt/QtCore/qcoreapplication.h:147
 // void addLibraryPath(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication14addLibraryPathERK7QString(const QString & a0) {
-  QCoreApplication::addLibraryPath(a0);
+void C_ZN16QCoreApplication14addLibraryPathERK7QString(const QString & arg0) {
+  QCoreApplication::addLibraryPath(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qcoreapplication.h:148
 // void removeLibraryPath(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication17removeLibraryPathERK7QString(const QString & a0) {
-  QCoreApplication::removeLibraryPath(a0);
+void C_ZN16QCoreApplication17removeLibraryPathERK7QString(const QString & arg0) {
+  QCoreApplication::removeLibraryPath(arg0);
 }
 // static
 // /usr/include/qt/QtCore/qcoreapplication.h:152
@@ -352,3 +356,4 @@ extern "C"
 void C_ZN16QCoreApplication25applicationVersionChangedEv(void *this_) {
   ((QCoreApplication*)this_)->applicationVersionChanged();
 }
+//  main block end

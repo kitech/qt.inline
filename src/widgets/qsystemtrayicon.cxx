@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h
 #include <qsystemtrayicon.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:62
 // const QMetaObject * metaObject()
@@ -128,3 +132,4 @@ extern "C"
 void C_ZN15QSystemTrayIcon14messageClickedEv(void *this_) {
   ((QSystemTrayIcon*)this_)->messageClicked();
 }
+//  main block end

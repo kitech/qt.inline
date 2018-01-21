@@ -1,7 +1,11 @@
+//  header block begin
 // /usr/include/qt/QtWidgets/qstatusbar.h
 #include <qstatusbar.h>
 #include <QtWidgets>
 
+//  header block end
+
+//  main block begin
 // virtual
 // /usr/include/qt/QtWidgets/qstatusbar.h:54
 // const QMetaObject * metaObject()
@@ -55,8 +59,8 @@ void C_ZN10QStatusBar12removeWidgetEP7QWidget(void *this_, QWidget * widget) {
 // /usr/include/qt/QtWidgets/qstatusbar.h:68
 // void setSizeGripEnabled(_Bool)
 extern "C"
-void C_ZN10QStatusBar18setSizeGripEnabledEb(void *this_, bool a0) {
-  ((QStatusBar*)this_)->setSizeGripEnabled(a0);
+void C_ZN10QStatusBar18setSizeGripEnabledEb(void *this_, bool arg0) {
+  ((QStatusBar*)this_)->setSizeGripEnabled(arg0);
 }
 // /usr/include/qt/QtWidgets/qstatusbar.h:69
 // bool isSizeGripEnabled()
@@ -88,3 +92,4 @@ extern "C"
 void C_ZN10QStatusBar14messageChangedERK7QString(void *this_, const QString & text) {
   ((QStatusBar*)this_)->messageChanged(text);
 }
+//  main block end
