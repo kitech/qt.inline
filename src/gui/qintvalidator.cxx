@@ -3,90 +3,106 @@
 #include <qvalidator.h>
 #include <QtGui>
 
+// QIntValidator is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:90
-// const QMetaObject * metaObject()
+
+class MyQIntValidator : public QIntValidator {
+public:
+MyQIntValidator(QObject * parent) : QIntValidator(parent) {}
+MyQIntValidator(int bottom, int top, QObject * parent) : QIntValidator(bottom, top, parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:91
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK13QIntValidator10metaObjectEv(void *this_) {
-  /*return*/ ((QIntValidator*)this_)->metaObject();
+void* C_ZNK13QIntValidator10metaObjectEv(void *this_) {
+  return (void*)((QIntValidator*)this_)->metaObject();
 }
-// /usr/include/qt/QtGui/qvalidator.h:95
-// void QIntValidator(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:96
+// [-2] void QIntValidator(class QObject *)
 extern "C"
 void* C_ZN13QIntValidatorC1EP7QObject(QObject * parent) {
-  return new QIntValidator(parent);
+  (MyQIntValidator*)(0);
+  return  new MyQIntValidator(parent);
 }
-// /usr/include/qt/QtGui/qvalidator.h:96
-// void QIntValidator(int, int, class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:97
+// [-2] void QIntValidator(int, int, class QObject *)
 extern "C"
 void* C_ZN13QIntValidatorC1EiiP7QObject(int bottom, int top, QObject * parent) {
-  return new QIntValidator(bottom, top, parent);
+  (MyQIntValidator*)(0);
+  return  new MyQIntValidator(bottom, top, parent);
 }
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:97
-// void ~QIntValidator()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:98
+// [-2] void ~QIntValidator()
 extern "C"
 void C_ZN13QIntValidatorD1Ev(void *this_) {
   delete (QIntValidator*)(this_);
 }
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:99
-// QValidator::State validate(class QString &, int &)
-extern "C"
-void C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString & arg0, int & arg1) {
-  /*return*/ ((QIntValidator*)this_)->validate(arg0, arg1);
-}
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:100
-// void fixup(class QString &)
+// [4] QValidator::State validate(class QString &, int &)
+extern "C"
+QValidator::State C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString & arg0, int & arg1) {
+  return (QValidator::State)((QIntValidator*)this_)->validate(arg0, arg1);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:101
+// [-2] void fixup(class QString &)
 extern "C"
 void C_ZNK13QIntValidator5fixupER7QString(void *this_, QString & input) {
   ((QIntValidator*)this_)->fixup(input);
 }
-// /usr/include/qt/QtGui/qvalidator.h:102
-// void setBottom(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:103
+// [-2] void setBottom(int)
 extern "C"
 void C_ZN13QIntValidator9setBottomEi(void *this_, int arg0) {
   ((QIntValidator*)this_)->setBottom(arg0);
 }
-// /usr/include/qt/QtGui/qvalidator.h:103
-// void setTop(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:104
+// [-2] void setTop(int)
 extern "C"
 void C_ZN13QIntValidator6setTopEi(void *this_, int arg0) {
   ((QIntValidator*)this_)->setTop(arg0);
 }
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:104
-// void setRange(int, int)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:105
+// [-2] void setRange(int, int)
 extern "C"
 void C_ZN13QIntValidator8setRangeEii(void *this_, int bottom, int top) {
   ((QIntValidator*)this_)->setRange(bottom, top);
 }
-// inline
-// /usr/include/qt/QtGui/qvalidator.h:106
-// int bottom()
-extern "C"
-void C_ZNK13QIntValidator6bottomEv(void *this_) {
-  /*return*/ ((QIntValidator*)this_)->bottom();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:107
-// int top()
+// [4] int bottom()
 extern "C"
-void C_ZNK13QIntValidator3topEv(void *this_) {
-  /*return*/ ((QIntValidator*)this_)->top();
+int C_ZNK13QIntValidator6bottomEv(void *this_) {
+  return (int)((QIntValidator*)this_)->bottom();
 }
-// /usr/include/qt/QtGui/qvalidator.h:109
-// void bottomChanged(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:108
+// [4] int top()
+extern "C"
+int C_ZNK13QIntValidator3topEv(void *this_) {
+  return (int)((QIntValidator*)this_)->top();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:110
+// [-2] void bottomChanged(int)
 extern "C"
 void C_ZN13QIntValidator13bottomChangedEi(void *this_, int bottom) {
   ((QIntValidator*)this_)->bottomChanged(bottom);
 }
-// /usr/include/qt/QtGui/qvalidator.h:110
-// void topChanged(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:111
+// [-2] void topChanged(int)
 extern "C"
 void C_ZN13QIntValidator10topChangedEi(void *this_, int top) {
   ((QIntValidator*)this_)->topChanged(top);

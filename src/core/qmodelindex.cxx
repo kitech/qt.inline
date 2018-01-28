@@ -3,91 +3,103 @@
 #include <qabstractitemmodel.h>
 #include <QtCore>
 
+// QModelIndex is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQModelIndex : public QModelIndex {
+public:
+MyQModelIndex() : QModelIndex() {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:58
-// void QModelIndex()
+// [-2] void QModelIndex()
 extern "C"
 void* C_ZN11QModelIndexC1Ev() {
-  return new QModelIndex();
+  (MyQModelIndex*)(0);
+  return  new MyQModelIndex();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:60
-// int row()
+// [4] int row()
 extern "C"
-void C_ZNK11QModelIndex3rowEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->row();
+int C_ZNK11QModelIndex3rowEv(void *this_) {
+  return (int)((QModelIndex*)this_)->row();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:61
-// int column()
+// [4] int column()
 extern "C"
-void C_ZNK11QModelIndex6columnEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->column();
+int C_ZNK11QModelIndex6columnEv(void *this_) {
+  return (int)((QModelIndex*)this_)->column();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:62
-// quintptr internalId()
+// [8] quintptr internalId()
 extern "C"
-void C_ZNK11QModelIndex10internalIdEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->internalId();
+quintptr C_ZNK11QModelIndex10internalIdEv(void *this_) {
+  return (quintptr)((QModelIndex*)this_)->internalId();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:63
-// void * internalPointer()
+// [8] void * internalPointer()
 extern "C"
-void C_ZNK11QModelIndex15internalPointerEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->internalPointer();
+void* C_ZNK11QModelIndex15internalPointerEv(void *this_) {
+  return (void*)((QModelIndex*)this_)->internalPointer();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:64
-// QModelIndex parent()
+// [24] QModelIndex parent()
 extern "C"
-void C_ZNK11QModelIndex6parentEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->parent();
+void* C_ZNK11QModelIndex6parentEv(void *this_) {
+  auto rv = ((QModelIndex*)this_)->parent();
+return new QModelIndex(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:65
-// QModelIndex sibling(int, int)
+// [24] QModelIndex sibling(int, int)
 extern "C"
-void C_ZNK11QModelIndex7siblingEii(void *this_, int row, int column) {
-  /*return*/ ((QModelIndex*)this_)->sibling(row, column);
+void* C_ZNK11QModelIndex7siblingEii(void *this_, int row, int column) {
+  auto rv = ((QModelIndex*)this_)->sibling(row, column);
+return new QModelIndex(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qabstractitemmodel.h:66
-// QModelIndex child(int, int)
-extern "C"
-void C_ZNK11QModelIndex5childEii(void *this_, int row, int column) {
-  /*return*/ ((QModelIndex*)this_)->child(row, column);
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:67
-// QVariant data(int)
+// [24] QModelIndex child(int, int)
 extern "C"
-void C_ZNK11QModelIndex4dataEi(void *this_, int role) {
-  /*return*/ ((QModelIndex*)this_)->data(role);
+void* C_ZNK11QModelIndex5childEii(void *this_, int row, int column) {
+  auto rv = ((QModelIndex*)this_)->child(row, column);
+return new QModelIndex(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qabstractitemmodel.h:68
-// Qt::ItemFlags flags()
-extern "C"
-void C_ZNK11QModelIndex5flagsEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->flags();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:69
-// const QAbstractItemModel * model()
+// [16] QVariant data(int)
 extern "C"
-void C_ZNK11QModelIndex5modelEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->model();
+void* C_ZNK11QModelIndex4dataEi(void *this_, int role) {
+  auto rv = ((QModelIndex*)this_)->data(role);
+return new QVariant(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:70
-// bool isValid()
+// [4] Qt::ItemFlags flags()
 extern "C"
-void C_ZNK11QModelIndex7isValidEv(void *this_) {
-  /*return*/ ((QModelIndex*)this_)->isValid();
+Qt::ItemFlags C_ZNK11QModelIndex5flagsEv(void *this_) {
+  return (Qt::ItemFlags)((QModelIndex*)this_)->flags();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:71
+// [8] const QAbstractItemModel * model()
+extern "C"
+void* C_ZNK11QModelIndex5modelEv(void *this_) {
+  return (void*)((QModelIndex*)this_)->model();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:72
+// [1] bool isValid()
+extern "C"
+bool C_ZNK11QModelIndex7isValidEv(void *this_) {
+  return (bool)((QModelIndex*)this_)->isValid();
 }
 //  main block end

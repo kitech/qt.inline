@@ -3,67 +3,80 @@
 #include <qtablewidget.h>
 #include <QtWidgets>
 
+// QTableWidgetSelectionRange is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qtablewidget.h:56
-// void QTableWidgetSelectionRange()
+
+class MyQTableWidgetSelectionRange : public QTableWidgetSelectionRange {
+public:
+MyQTableWidgetSelectionRange() : QTableWidgetSelectionRange() {}
+MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableWidgetSelectionRange(top, left, bottom, right) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:55
+// [-2] void QTableWidgetSelectionRange()
 extern "C"
 void* C_ZN26QTableWidgetSelectionRangeC1Ev() {
-  return new QTableWidgetSelectionRange();
+  (MyQTableWidgetSelectionRange*)(0);
+  return  new MyQTableWidgetSelectionRange();
 }
-// /usr/include/qt/QtWidgets/qtablewidget.h:57
-// void QTableWidgetSelectionRange(int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:56
+// [-2] void QTableWidgetSelectionRange(int, int, int, int)
 extern "C"
 void* C_ZN26QTableWidgetSelectionRangeC1Eiiii(int top, int left, int bottom, int right) {
-  return new QTableWidgetSelectionRange(top, left, bottom, right);
+  (MyQTableWidgetSelectionRange*)(0);
+  return  new MyQTableWidgetSelectionRange(top, left, bottom, right);
 }
-// /usr/include/qt/QtWidgets/qtablewidget.h:59
-// void ~QTableWidgetSelectionRange()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:58
+// [-2] void ~QTableWidgetSelectionRange()
 extern "C"
 void C_ZN26QTableWidgetSelectionRangeD1Ev(void *this_) {
   delete (QTableWidgetSelectionRange*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:60
+// [4] int topRow()
+extern "C"
+int C_ZNK26QTableWidgetSelectionRange6topRowEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->topRow();
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:61
-// int topRow()
+// [4] int bottomRow()
 extern "C"
-void C_ZNK26QTableWidgetSelectionRange6topRowEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->topRow();
+int C_ZNK26QTableWidgetSelectionRange9bottomRowEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->bottomRow();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:62
-// int bottomRow()
+// [4] int leftColumn()
 extern "C"
-void C_ZNK26QTableWidgetSelectionRange9bottomRowEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->bottomRow();
+int C_ZNK26QTableWidgetSelectionRange10leftColumnEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->leftColumn();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:63
-// int leftColumn()
+// [4] int rightColumn()
 extern "C"
-void C_ZNK26QTableWidgetSelectionRange10leftColumnEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->leftColumn();
+int C_ZNK26QTableWidgetSelectionRange11rightColumnEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->rightColumn();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:64
-// int rightColumn()
+// [4] int rowCount()
 extern "C"
-void C_ZNK26QTableWidgetSelectionRange11rightColumnEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->rightColumn();
+int C_ZNK26QTableWidgetSelectionRange8rowCountEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->rowCount();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:65
-// int rowCount()
+// [4] int columnCount()
 extern "C"
-void C_ZNK26QTableWidgetSelectionRange8rowCountEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->rowCount();
-}
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:66
-// int columnCount()
-extern "C"
-void C_ZNK26QTableWidgetSelectionRange11columnCountEv(void *this_) {
-  /*return*/ ((QTableWidgetSelectionRange*)this_)->columnCount();
+int C_ZNK26QTableWidgetSelectionRange11columnCountEv(void *this_) {
+  return (int)((QTableWidgetSelectionRange*)this_)->columnCount();
 }
 //  main block end

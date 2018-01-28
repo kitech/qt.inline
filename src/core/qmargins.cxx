@@ -3,78 +3,92 @@
 #include <qmargins.h>
 #include <QtCore>
 
+// QMargins is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQMargins : public QMargins {
+public:
+MyQMargins() : QMargins() {}
+MyQMargins(int left, int top, int right, int bottom) : QMargins(left, top, right, bottom) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:54
-// void QMargins()
+// [-2] void QMargins()
 extern "C"
 void* C_ZN8QMarginsC1Ev() {
-  return new QMargins();
+  (MyQMargins*)(0);
+  return  new MyQMargins();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:55
-// void QMargins(int, int, int, int)
+// [-2] void QMargins(int, int, int, int)
 extern "C"
 void* C_ZN8QMarginsC1Eiiii(int left, int top, int right, int bottom) {
-  return new QMargins(left, top, right, bottom);
+  (MyQMargins*)(0);
+  return  new MyQMargins(left, top, right, bottom);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:57
-// bool isNull()
+// [1] bool isNull()
 extern "C"
-void C_ZNK8QMargins6isNullEv(void *this_) {
-  /*return*/ ((QMargins*)this_)->isNull();
+bool C_ZNK8QMargins6isNullEv(void *this_) {
+  return (bool)((QMargins*)this_)->isNull();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:59
-// int left()
+// [4] int left()
 extern "C"
-void C_ZNK8QMargins4leftEv(void *this_) {
-  /*return*/ ((QMargins*)this_)->left();
+int C_ZNK8QMargins4leftEv(void *this_) {
+  return (int)((QMargins*)this_)->left();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:60
-// int top()
+// [4] int top()
 extern "C"
-void C_ZNK8QMargins3topEv(void *this_) {
-  /*return*/ ((QMargins*)this_)->top();
+int C_ZNK8QMargins3topEv(void *this_) {
+  return (int)((QMargins*)this_)->top();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:61
-// int right()
+// [4] int right()
 extern "C"
-void C_ZNK8QMargins5rightEv(void *this_) {
-  /*return*/ ((QMargins*)this_)->right();
+int C_ZNK8QMargins5rightEv(void *this_) {
+  return (int)((QMargins*)this_)->right();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:62
-// int bottom()
+// [4] int bottom()
 extern "C"
-void C_ZNK8QMargins6bottomEv(void *this_) {
-  /*return*/ ((QMargins*)this_)->bottom();
+int C_ZNK8QMargins6bottomEv(void *this_) {
+  return (int)((QMargins*)this_)->bottom();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:64
-// void setLeft(int)
+// [-2] void setLeft(int)
 extern "C"
 void C_ZN8QMargins7setLeftEi(void *this_, int left) {
   ((QMargins*)this_)->setLeft(left);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:65
-// void setTop(int)
+// [-2] void setTop(int)
 extern "C"
 void C_ZN8QMargins6setTopEi(void *this_, int top) {
   ((QMargins*)this_)->setTop(top);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:66
-// void setRight(int)
+// [-2] void setRight(int)
 extern "C"
 void C_ZN8QMargins8setRightEi(void *this_, int right) {
   ((QMargins*)this_)->setRight(right);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:67
-// void setBottom(int)
+// [-2] void setBottom(int)
 extern "C"
 void C_ZN8QMargins9setBottomEi(void *this_, int bottom) {
   ((QMargins*)this_)->setBottom(bottom);

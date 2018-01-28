@@ -3,99 +3,158 @@
 #include <qgraphicsitem.h>
 #include <QtWidgets>
 
+// QGraphicsPolygonItem is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:744
-// void QGraphicsPolygonItem(class QGraphicsItem *)
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:767
+// [1] bool supportsExtension(enum QGraphicsItem::Extension)
+extern "C"
+void* callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+extern "C" void set_callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
+{ callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:768
+// [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+extern "C"
+void* callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+extern "C" void set_callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
+{ callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:769
+// [16] QVariant extension(const class QVariant &)
+extern "C"
+void* callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant = 0;
+extern "C" void set_callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(void*cbfn)
+{ callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant = cbfn; }
+
+class MyQGraphicsPolygonItem : public QGraphicsPolygonItem {
+public:
+MyQGraphicsPolygonItem(QGraphicsItem * parent) : QGraphicsPolygonItem(parent) {}
+MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGraphicsPolygonItem(polygon, parent) {}
+// bool supportsExtension(enum QGraphicsItem::Extension)
+// bool supportsExtension(enum QGraphicsItem::Extension)
+virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+  if (callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+  // callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+}}
+// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+  if (callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+  // callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+}}
+// QVariant extension(const class QVariant &)
+// QVariant extension(const class QVariant &)
+virtual QVariant extension(const QVariant & variant) {
+  if (callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant != 0) {
+  // callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(variant);
+}}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:743
+// [-2] void QGraphicsPolygonItem(class QGraphicsItem *)
 extern "C"
 void* C_ZN20QGraphicsPolygonItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  return new QGraphicsPolygonItem(parent);
+  (MyQGraphicsPolygonItem*)(0);
+  return  new MyQGraphicsPolygonItem(parent);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:745
-// void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:744
+// [-2] void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
 extern "C"
 void* C_ZN20QGraphicsPolygonItemC1ERK9QPolygonFP13QGraphicsItem(const QPolygonF & polygon, QGraphicsItem * parent) {
-  return new QGraphicsPolygonItem(polygon, parent);
+  (MyQGraphicsPolygonItem*)(0);
+  return  new MyQGraphicsPolygonItem(polygon, parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:747
-// void ~QGraphicsPolygonItem()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:746
+// [-2] void ~QGraphicsPolygonItem()
 extern "C"
 void C_ZN20QGraphicsPolygonItemD1Ev(void *this_) {
   delete (QGraphicsPolygonItem*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:749
-// QPolygonF polygon()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:748
+// [8] QPolygonF polygon()
 extern "C"
-void C_ZNK20QGraphicsPolygonItem7polygonEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->polygon();
+void* C_ZNK20QGraphicsPolygonItem7polygonEv(void *this_) {
+  auto rv = ((QGraphicsPolygonItem*)this_)->polygon();
+return new QPolygonF(rv);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:750
-// void setPolygon(const class QPolygonF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:749
+// [-2] void setPolygon(const class QPolygonF &)
 extern "C"
 void C_ZN20QGraphicsPolygonItem10setPolygonERK9QPolygonF(void *this_, const QPolygonF & polygon) {
   ((QGraphicsPolygonItem*)this_)->setPolygon(polygon);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:752
-// Qt::FillRule fillRule()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:751
+// [4] Qt::FillRule fillRule()
 extern "C"
-void C_ZNK20QGraphicsPolygonItem8fillRuleEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->fillRule();
+Qt::FillRule C_ZNK20QGraphicsPolygonItem8fillRuleEv(void *this_) {
+  return (Qt::FillRule)((QGraphicsPolygonItem*)this_)->fillRule();
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:753
-// void setFillRule(Qt::FillRule)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:752
+// [-2] void setFillRule(Qt::FillRule)
 extern "C"
 void C_ZN20QGraphicsPolygonItem11setFillRuleEN2Qt8FillRuleE(void *this_, Qt::FillRule rule) {
   ((QGraphicsPolygonItem*)this_)->setFillRule(rule);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:754
+// [32] QRectF boundingRect()
+extern "C"
+void* C_ZNK20QGraphicsPolygonItem12boundingRectEv(void *this_) {
+  auto rv = ((QGraphicsPolygonItem*)this_)->boundingRect();
+return new QRectF(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:755
-// QRectF boundingRect()
+// [8] QPainterPath shape()
 extern "C"
-void C_ZNK20QGraphicsPolygonItem12boundingRectEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->boundingRect();
+void* C_ZNK20QGraphicsPolygonItem5shapeEv(void *this_) {
+  auto rv = ((QGraphicsPolygonItem*)this_)->shape();
+return new QPainterPath(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:756
-// QPainterPath shape()
+// [1] bool contains(const class QPointF &)
 extern "C"
-void C_ZNK20QGraphicsPolygonItem5shapeEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->shape();
+bool C_ZNK20QGraphicsPolygonItem8containsERK7QPointF(void *this_, const QPointF & point) {
+  return (bool)((QGraphicsPolygonItem*)this_)->contains(point);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:757
-// bool contains(const class QPointF &)
-extern "C"
-void C_ZNK20QGraphicsPolygonItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->contains(point);
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:759
-// void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:758
+// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
 extern "C"
 void C_ZN20QGraphicsPolygonItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsPolygonItem*)this_)->paint(painter, option, widget);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:760
+// [1] bool isObscuredBy(const class QGraphicsItem *)
+extern "C"
+bool C_ZNK20QGraphicsPolygonItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
+  return (bool)((QGraphicsPolygonItem*)this_)->isObscuredBy(item);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:761
-// bool isObscuredBy(const class QGraphicsItem *)
+// [8] QPainterPath opaqueArea()
 extern "C"
-void C_ZNK20QGraphicsPolygonItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->isObscuredBy(item);
+void* C_ZNK20QGraphicsPolygonItem10opaqueAreaEv(void *this_) {
+  auto rv = ((QGraphicsPolygonItem*)this_)->opaqueArea();
+return new QPainterPath(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:762
-// QPainterPath opaqueArea()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:764
+// [4] int type()
 extern "C"
-void C_ZNK20QGraphicsPolygonItem10opaqueAreaEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->opaqueArea();
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:765
-// int type()
-extern "C"
-void C_ZNK20QGraphicsPolygonItem4typeEv(void *this_) {
-  /*return*/ ((QGraphicsPolygonItem*)this_)->type();
+int C_ZNK20QGraphicsPolygonItem4typeEv(void *this_) {
+  return (int)((QGraphicsPolygonItem*)this_)->type();
 }
 //  main block end

@@ -3,73 +3,92 @@
 #include <qlockfile.h>
 #include <QtCore>
 
+// QLockFile is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQLockFile : public QLockFile {
+public:
+MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:53
-// void QLockFile(const class QString &)
+// [-2] void QLockFile(const class QString &)
 extern "C"
 void* C_ZN9QLockFileC1ERK7QString(const QString & fileName) {
-  return new QLockFile(fileName);
+  (MyQLockFile*)(0);
+  return  new MyQLockFile(fileName);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:54
-// void ~QLockFile()
+// [-2] void ~QLockFile()
 extern "C"
 void C_ZN9QLockFileD1Ev(void *this_) {
   delete (QLockFile*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:56
-// bool lock()
+// [1] bool lock()
 extern "C"
-void C_ZN9QLockFile4lockEv(void *this_) {
-  /*return*/ ((QLockFile*)this_)->lock();
+bool C_ZN9QLockFile4lockEv(void *this_) {
+  return (bool)((QLockFile*)this_)->lock();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:57
-// bool tryLock(int)
+// [1] bool tryLock(int)
 extern "C"
-void C_ZN9QLockFile7tryLockEi(void *this_, int timeout) {
-  /*return*/ ((QLockFile*)this_)->tryLock(timeout);
+bool C_ZN9QLockFile7tryLockEi(void *this_, int timeout) {
+  return (bool)((QLockFile*)this_)->tryLock(timeout);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:58
-// void unlock()
+// [-2] void unlock()
 extern "C"
 void C_ZN9QLockFile6unlockEv(void *this_) {
   ((QLockFile*)this_)->unlock();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:60
-// void setStaleLockTime(int)
+// [-2] void setStaleLockTime(int)
 extern "C"
 void C_ZN9QLockFile16setStaleLockTimeEi(void *this_, int arg0) {
   ((QLockFile*)this_)->setStaleLockTime(arg0);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:61
-// int staleLockTime()
+// [4] int staleLockTime()
 extern "C"
-void C_ZNK9QLockFile13staleLockTimeEv(void *this_) {
-  /*return*/ ((QLockFile*)this_)->staleLockTime();
+int C_ZNK9QLockFile13staleLockTimeEv(void *this_) {
+  return (int)((QLockFile*)this_)->staleLockTime();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:63
-// bool isLocked()
+// [1] bool isLocked()
 extern "C"
-void C_ZNK9QLockFile8isLockedEv(void *this_) {
-  /*return*/ ((QLockFile*)this_)->isLocked();
+bool C_ZNK9QLockFile8isLockedEv(void *this_) {
+  return (bool)((QLockFile*)this_)->isLocked();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:64
-// bool getLockInfo(qint64 *, class QString *, class QString *)
+// [1] bool getLockInfo(qint64 *, class QString *, class QString *)
 extern "C"
-void C_ZNK9QLockFile11getLockInfoEPxP7QStringS2_(void *this_, qint64 * pid, QString * hostname, QString * appname) {
-  /*return*/ ((QLockFile*)this_)->getLockInfo(pid, hostname, appname);
+bool C_ZNK9QLockFile11getLockInfoEPxP7QStringS2_(void *this_, qint64 * pid, QString * hostname, QString * appname) {
+  return (bool)((QLockFile*)this_)->getLockInfo(pid, hostname, appname);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:65
-// bool removeStaleLockFile()
+// [1] bool removeStaleLockFile()
 extern "C"
-void C_ZN9QLockFile19removeStaleLockFileEv(void *this_) {
-  /*return*/ ((QLockFile*)this_)->removeStaleLockFile();
+bool C_ZN9QLockFile19removeStaleLockFileEv(void *this_) {
+  return (bool)((QLockFile*)this_)->removeStaleLockFile();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:73
-// QLockFile::LockError error()
+// [4] QLockFile::LockError error()
 extern "C"
-void C_ZNK9QLockFile5errorEv(void *this_) {
-  /*return*/ ((QLockFile*)this_)->error();
+QLockFile::LockError C_ZNK9QLockFile5errorEv(void *this_) {
+  return (QLockFile::LockError)((QLockFile*)this_)->error();
 }
 //  main block end

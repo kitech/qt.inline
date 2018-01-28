@@ -3,159 +3,274 @@
 #include <qdialog.h>
 #include <QtWidgets>
 
+// QDialog is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:53
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:104
+// [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void C_ZNK7QDialog10metaObjectEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->metaObject();
+void* callback_ZN7QDialog13keyPressEventEP9QKeyEvent = 0;
+extern "C" void set_callback_ZN7QDialog13keyPressEventEP9QKeyEvent(void*cbfn)
+{ callback_ZN7QDialog13keyPressEventEP9QKeyEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:105
+// [-2] void closeEvent(class QCloseEvent *)
+extern "C"
+void* callback_ZN7QDialog10closeEventEP11QCloseEvent = 0;
+extern "C" void set_callback_ZN7QDialog10closeEventEP11QCloseEvent(void*cbfn)
+{ callback_ZN7QDialog10closeEventEP11QCloseEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:106
+// [-2] void showEvent(class QShowEvent *)
+extern "C"
+void* callback_ZN7QDialog9showEventEP10QShowEvent = 0;
+extern "C" void set_callback_ZN7QDialog9showEventEP10QShowEvent(void*cbfn)
+{ callback_ZN7QDialog9showEventEP10QShowEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:107
+// [-2] void resizeEvent(class QResizeEvent *)
+extern "C"
+void* callback_ZN7QDialog11resizeEventEP12QResizeEvent = 0;
+extern "C" void set_callback_ZN7QDialog11resizeEventEP12QResizeEvent(void*cbfn)
+{ callback_ZN7QDialog11resizeEventEP12QResizeEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:109
+// [-2] void contextMenuEvent(class QContextMenuEvent *)
+extern "C"
+void* callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent = 0;
+extern "C" void set_callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(void*cbfn)
+{ callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:111
+// [1] bool eventFilter(class QObject *, class QEvent *)
+extern "C"
+void* callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent = 0;
+extern "C" void set_callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
+{ callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent = cbfn; }
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:112
+// [-2] void adjustPosition(class QWidget *)
+extern "C"
+void* callback_ZN7QDialog14adjustPositionEP7QWidget = 0;
+extern "C" void set_callback_ZN7QDialog14adjustPositionEP7QWidget(void*cbfn)
+{ callback_ZN7QDialog14adjustPositionEP7QWidget = cbfn; }
+
+class MyQDialog : public QDialog {
+public:
+MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
+// void keyPressEvent(class QKeyEvent *)
+// void keyPressEvent(class QKeyEvent *)
+virtual void keyPressEvent(QKeyEvent * arg0) {
+  if (callback_ZN7QDialog13keyPressEventEP9QKeyEvent != 0) {
+  // callback_ZN7QDialog13keyPressEventEP9QKeyEvent(arg0);
+}}
+// void closeEvent(class QCloseEvent *)
+// void closeEvent(class QCloseEvent *)
+virtual void closeEvent(QCloseEvent * arg0) {
+  if (callback_ZN7QDialog10closeEventEP11QCloseEvent != 0) {
+  // callback_ZN7QDialog10closeEventEP11QCloseEvent(arg0);
+}}
+// void showEvent(class QShowEvent *)
+// void showEvent(class QShowEvent *)
+virtual void showEvent(QShowEvent * arg0) {
+  if (callback_ZN7QDialog9showEventEP10QShowEvent != 0) {
+  // callback_ZN7QDialog9showEventEP10QShowEvent(arg0);
+}}
+// void resizeEvent(class QResizeEvent *)
+// void resizeEvent(class QResizeEvent *)
+virtual void resizeEvent(QResizeEvent * arg0) {
+  if (callback_ZN7QDialog11resizeEventEP12QResizeEvent != 0) {
+  // callback_ZN7QDialog11resizeEventEP12QResizeEvent(arg0);
+}}
+// void contextMenuEvent(class QContextMenuEvent *)
+// void contextMenuEvent(class QContextMenuEvent *)
+virtual void contextMenuEvent(QContextMenuEvent * arg0) {
+  if (callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent != 0) {
+  // callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(arg0);
+}}
+// bool eventFilter(class QObject *, class QEvent *)
+// bool eventFilter(class QObject *, class QEvent *)
+virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+  if (callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent != 0) {
+  // callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+}}
+// void adjustPosition(class QWidget *)
+// void adjustPosition(class QWidget *)
+virtual void adjustPosition(QWidget * arg0) {
+  if (callback_ZN7QDialog14adjustPositionEP7QWidget != 0) {
+  // callback_ZN7QDialog14adjustPositionEP7QWidget(arg0);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:56
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK7QDialog10metaObjectEv(void *this_) {
+  return (void*)((QDialog*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qdialog.h:60
-// void QDialog(class QWidget *, Qt::WindowFlags)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:63
+// [-2] void QDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
 void* C_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
-  return new QDialog(parent, f);
+  (MyQDialog*)(0);
+  return  new MyQDialog(parent, f);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:61
-// void ~QDialog()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:64
+// [-2] void ~QDialog()
 extern "C"
 void C_ZN7QDialogD1Ev(void *this_) {
   delete (QDialog*)(this_);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:65
-// int result()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:68
+// [4] int result()
 extern "C"
-void C_ZNK7QDialog6resultEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->result();
+int C_ZNK7QDialog6resultEv(void *this_) {
+  return (int)((QDialog*)this_)->result();
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:67
-// void setVisible(_Bool)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:70
+// [-2] void setVisible(_Bool)
 extern "C"
 void C_ZN7QDialog10setVisibleEb(void *this_, bool visible) {
   ((QDialog*)this_)->setVisible(visible);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:69
-// void setOrientation(Qt::Orientation)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:72
+// [-2] void setOrientation(Qt::Orientation)
 extern "C"
 void C_ZN7QDialog14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
   ((QDialog*)this_)->setOrientation(orientation);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:70
-// Qt::Orientation orientation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:73
+// [4] Qt::Orientation orientation()
 extern "C"
-void C_ZNK7QDialog11orientationEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->orientation();
+Qt::Orientation C_ZNK7QDialog11orientationEv(void *this_) {
+  return (Qt::Orientation)((QDialog*)this_)->orientation();
 }
-// /usr/include/qt/QtWidgets/qdialog.h:72
-// void setExtension(class QWidget *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:75
+// [-2] void setExtension(class QWidget *)
 extern "C"
 void C_ZN7QDialog12setExtensionEP7QWidget(void *this_, QWidget * extension) {
   ((QDialog*)this_)->setExtension(extension);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:73
-// QWidget * extension()
-extern "C"
-void C_ZNK7QDialog9extensionEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->extension();
-}
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:75
-// QSize sizeHint()
-extern "C"
-void C_ZNK7QDialog8sizeHintEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->sizeHint();
-}
-// virtual
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialog.h:76
-// QSize minimumSizeHint()
+// [8] QWidget * extension()
 extern "C"
-void C_ZNK7QDialog15minimumSizeHintEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->minimumSizeHint();
+void* C_ZNK7QDialog9extensionEv(void *this_) {
+  return (void*)((QDialog*)this_)->extension();
 }
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialog.h:78
-// void setSizeGripEnabled(_Bool)
+// [8] QSize sizeHint()
+extern "C"
+void* C_ZNK7QDialog8sizeHintEv(void *this_) {
+  auto rv = ((QDialog*)this_)->sizeHint();
+return new QSize(rv);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:79
+// [8] QSize minimumSizeHint()
+extern "C"
+void* C_ZNK7QDialog15minimumSizeHintEv(void *this_) {
+  auto rv = ((QDialog*)this_)->minimumSizeHint();
+return new QSize(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:81
+// [-2] void setSizeGripEnabled(_Bool)
 extern "C"
 void C_ZN7QDialog18setSizeGripEnabledEb(void *this_, bool arg0) {
   ((QDialog*)this_)->setSizeGripEnabled(arg0);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:79
-// bool isSizeGripEnabled()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:82
+// [1] bool isSizeGripEnabled()
 extern "C"
-void C_ZNK7QDialog17isSizeGripEnabledEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->isSizeGripEnabled();
+bool C_ZNK7QDialog17isSizeGripEnabledEv(void *this_) {
+  return (bool)((QDialog*)this_)->isSizeGripEnabled();
 }
-// /usr/include/qt/QtWidgets/qdialog.h:81
-// void setModal(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:84
+// [-2] void setModal(_Bool)
 extern "C"
 void C_ZN7QDialog8setModalEb(void *this_, bool modal) {
   ((QDialog*)this_)->setModal(modal);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:82
-// void setResult(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:85
+// [-2] void setResult(int)
 extern "C"
 void C_ZN7QDialog9setResultEi(void *this_, int r) {
   ((QDialog*)this_)->setResult(r);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:85
-// void finished(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:88
+// [-2] void finished(int)
 extern "C"
 void C_ZN7QDialog8finishedEi(void *this_, int result) {
   ((QDialog*)this_)->finished(result);
 }
-// /usr/include/qt/QtWidgets/qdialog.h:86
-// void accepted()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:89
+// [-2] void accepted()
 extern "C"
 void C_ZN7QDialog8acceptedEv(void *this_) {
   ((QDialog*)this_)->accepted();
 }
-// /usr/include/qt/QtWidgets/qdialog.h:87
-// void rejected()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:90
+// [-2] void rejected()
 extern "C"
 void C_ZN7QDialog8rejectedEv(void *this_) {
   ((QDialog*)this_)->rejected();
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:90
-// void open()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:93
+// [-2] void open()
 extern "C"
 void C_ZN7QDialog4openEv(void *this_) {
   ((QDialog*)this_)->open();
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:91
-// int exec()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:94
+// [4] int exec()
 extern "C"
-void C_ZN7QDialog4execEv(void *this_) {
-  /*return*/ ((QDialog*)this_)->exec();
+int C_ZN7QDialog4execEv(void *this_) {
+  return (int)((QDialog*)this_)->exec();
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:92
-// void done(int)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:95
+// [-2] void done(int)
 extern "C"
 void C_ZN7QDialog4doneEi(void *this_, int arg0) {
   ((QDialog*)this_)->done(arg0);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:93
-// void accept()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:96
+// [-2] void accept()
 extern "C"
 void C_ZN7QDialog6acceptEv(void *this_) {
   ((QDialog*)this_)->accept();
 }
-// virtual
-// /usr/include/qt/QtWidgets/qdialog.h:94
-// void reject()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:97
+// [-2] void reject()
 extern "C"
 void C_ZN7QDialog6rejectEv(void *this_) {
   ((QDialog*)this_)->reject();
 }
-// /usr/include/qt/QtWidgets/qdialog.h:96
-// void showExtension(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:99
+// [-2] void showExtension(_Bool)
 extern "C"
 void C_ZN7QDialog13showExtensionEb(void *this_, bool arg0) {
   ((QDialog*)this_)->showExtension(arg0);

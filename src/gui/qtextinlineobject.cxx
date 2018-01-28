@@ -3,100 +3,115 @@
 #include <qtextlayout.h>
 #include <QtGui>
 
+// QTextInlineObject is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:70
-// void QTextInlineObject(int, class QTextEngine *)
-extern "C"
-void* C_ZN17QTextInlineObjectC1EiP11QTextEngine(int i, QTextEngine * e) {
-  return new QTextInlineObject(i, e);
-}
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:71
-// void QTextInlineObject()
+
+class MyQTextInlineObject : public QTextInlineObject {
+public:
+MyQTextInlineObject() : QTextInlineObject() {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:72
+// [-2] void QTextInlineObject()
 extern "C"
 void* C_ZN17QTextInlineObjectC1Ev() {
-  return new QTextInlineObject();
+  (MyQTextInlineObject*)(0);
+  return  new MyQTextInlineObject();
 }
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:72
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:73
+// [1] bool isValid()
 extern "C"
-void C_ZNK17QTextInlineObject7isValidEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->isValid();
+bool C_ZNK17QTextInlineObject7isValidEv(void *this_) {
+  return (bool)((QTextInlineObject*)this_)->isValid();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:74
-// QRectF rect()
-extern "C"
-void C_ZNK17QTextInlineObject4rectEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->rect();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:75
-// qreal width()
+// [32] QRectF rect()
 extern "C"
-void C_ZNK17QTextInlineObject5widthEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->width();
+void* C_ZNK17QTextInlineObject4rectEv(void *this_) {
+  auto rv = ((QTextInlineObject*)this_)->rect();
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:76
-// qreal ascent()
+// [8] qreal width()
 extern "C"
-void C_ZNK17QTextInlineObject6ascentEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->ascent();
+qreal C_ZNK17QTextInlineObject5widthEv(void *this_) {
+  return (qreal)((QTextInlineObject*)this_)->width();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:77
-// qreal descent()
+// [8] qreal ascent()
 extern "C"
-void C_ZNK17QTextInlineObject7descentEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->descent();
+qreal C_ZNK17QTextInlineObject6ascentEv(void *this_) {
+  return (qreal)((QTextInlineObject*)this_)->ascent();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:78
-// qreal height()
+// [8] qreal descent()
 extern "C"
-void C_ZNK17QTextInlineObject6heightEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->height();
+qreal C_ZNK17QTextInlineObject7descentEv(void *this_) {
+  return (qreal)((QTextInlineObject*)this_)->descent();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:80
-// Qt::LayoutDirection textDirection()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:79
+// [8] qreal height()
 extern "C"
-void C_ZNK17QTextInlineObject13textDirectionEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->textDirection();
+qreal C_ZNK17QTextInlineObject6heightEv(void *this_) {
+  return (qreal)((QTextInlineObject*)this_)->height();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:82
-// void setWidth(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:81
+// [4] Qt::LayoutDirection textDirection()
+extern "C"
+Qt::LayoutDirection C_ZNK17QTextInlineObject13textDirectionEv(void *this_) {
+  return (Qt::LayoutDirection)((QTextInlineObject*)this_)->textDirection();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:83
+// [-2] void setWidth(qreal)
 extern "C"
 void C_ZN17QTextInlineObject8setWidthEd(void *this_, qreal w) {
   ((QTextInlineObject*)this_)->setWidth(w);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:83
-// void setAscent(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:84
+// [-2] void setAscent(qreal)
 extern "C"
 void C_ZN17QTextInlineObject9setAscentEd(void *this_, qreal a) {
   ((QTextInlineObject*)this_)->setAscent(a);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:84
-// void setDescent(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:85
+// [-2] void setDescent(qreal)
 extern "C"
 void C_ZN17QTextInlineObject10setDescentEd(void *this_, qreal d) {
   ((QTextInlineObject*)this_)->setDescent(d);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:86
-// int textPosition()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:87
+// [4] int textPosition()
 extern "C"
-void C_ZNK17QTextInlineObject12textPositionEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->textPosition();
+int C_ZNK17QTextInlineObject12textPositionEv(void *this_) {
+  return (int)((QTextInlineObject*)this_)->textPosition();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:88
-// int formatIndex()
-extern "C"
-void C_ZNK17QTextInlineObject11formatIndexEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->formatIndex();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:89
-// QTextFormat format()
+// [4] int formatIndex()
 extern "C"
-void C_ZNK17QTextInlineObject6formatEv(void *this_) {
-  /*return*/ ((QTextInlineObject*)this_)->format();
+int C_ZNK17QTextInlineObject11formatIndexEv(void *this_) {
+  return (int)((QTextInlineObject*)this_)->formatIndex();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:90
+// [16] QTextFormat format()
+extern "C"
+void* C_ZNK17QTextInlineObject6formatEv(void *this_) {
+  auto rv = ((QTextInlineObject*)this_)->format();
+return new QTextFormat(rv);
 }
 //  main block end

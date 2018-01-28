@@ -3,21 +3,20 @@
 #include <qstylefactory.h>
 #include <QtWidgets>
 
+// QStyleFactory is pure virtual: false
 //  header block end
 
 //  main block begin
-// static
-// /usr/include/qt/QtWidgets/qstylefactory.h:53
-// QStringList keys()
+
+class MyQStyleFactory : public QStyleFactory {
+public:
+};
+
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstylefactory.h:55
+// [8] QStyle * create(const class QString &)
 extern "C"
-void C_ZN13QStyleFactory4keysEv() {
-  /*return*/ QStyleFactory::keys();
-}
-// static
-// /usr/include/qt/QtWidgets/qstylefactory.h:54
-// QStyle * create(const class QString &)
-extern "C"
-void C_ZN13QStyleFactory6createERK7QString(const QString & arg0) {
-  /*return*/ QStyleFactory::create(arg0);
+void* C_ZN13QStyleFactory6createERK7QString(const QString & arg0) {
+  return (void*)QStyleFactory::create(arg0);
 }
 //  main block end

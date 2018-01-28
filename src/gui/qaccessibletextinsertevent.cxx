@@ -3,42 +3,53 @@
 #include <qaccessible.h>
 #include <QtGui>
 
+// QAccessibleTextInsertEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQAccessibleTextInsertEvent : public QAccessibleTextInsertEvent {
+public:
+MyQAccessibleTextInsertEvent(QObject * obj, int position, const QString & text) : QAccessibleTextInsertEvent(obj, position, text) {}
+MyQAccessibleTextInsertEvent(QAccessibleInterface * iface, int position, const QString & text) : QAccessibleTextInsertEvent(iface, position, text) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:804
-// void QAccessibleTextInsertEvent(class QObject *, int, const class QString &)
+// [-2] void QAccessibleTextInsertEvent(class QObject *, int, const class QString &)
 extern "C"
 void* C_ZN26QAccessibleTextInsertEventC1EP7QObjectiRK7QString(QObject * obj, int position, const QString & text) {
-  return new QAccessibleTextInsertEvent(obj, position, text);
+  (MyQAccessibleTextInsertEvent*)(0);
+  return  new MyQAccessibleTextInsertEvent(obj, position, text);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:810
-// void QAccessibleTextInsertEvent(class QAccessibleInterface *, int, const class QString &)
+// [-2] void QAccessibleTextInsertEvent(class QAccessibleInterface *, int, const class QString &)
 extern "C"
 void* C_ZN26QAccessibleTextInsertEventC1EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, const QString & text) {
-  return new QAccessibleTextInsertEvent(iface, position, text);
+  (MyQAccessibleTextInsertEvent*)(0);
+  return  new MyQAccessibleTextInsertEvent(iface, position, text);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:817
-// void ~QAccessibleTextInsertEvent()
+// [-2] void ~QAccessibleTextInsertEvent()
 extern "C"
 void C_ZN26QAccessibleTextInsertEventD1Ev(void *this_) {
   delete (QAccessibleTextInsertEvent*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:819
-// QString textInserted()
+// [8] QString textInserted()
 extern "C"
-void C_ZNK26QAccessibleTextInsertEvent12textInsertedEv(void *this_) {
-  /*return*/ ((QAccessibleTextInsertEvent*)this_)->textInserted();
+void* C_ZNK26QAccessibleTextInsertEvent12textInsertedEv(void *this_) {
+  auto rv = ((QAccessibleTextInsertEvent*)this_)->textInserted();
+return new QString(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:822
-// int changePosition()
+// [4] int changePosition()
 extern "C"
-void C_ZNK26QAccessibleTextInsertEvent14changePositionEv(void *this_) {
-  /*return*/ ((QAccessibleTextInsertEvent*)this_)->changePosition();
+int C_ZNK26QAccessibleTextInsertEvent14changePositionEv(void *this_) {
+  return (int)((QAccessibleTextInsertEvent*)this_)->changePosition();
 }
 //  main block end

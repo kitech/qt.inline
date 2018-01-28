@@ -3,142 +3,175 @@
 #include <qtexttable.h>
 #include <QtGui>
 
+// QTextTable is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
+
+class MyQTextTable : public QTextTable {
+public:
+MyQTextTable(QTextDocument * doc) : QTextTable(doc) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:100
-// const QMetaObject * metaObject()
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK10QTextTable10metaObjectEv(void *this_) {
-  /*return*/ ((QTextTable*)this_)->metaObject();
+void* C_ZNK10QTextTable10metaObjectEv(void *this_) {
+  return (void*)((QTextTable*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:102
-// void QTextTable(class QTextDocument *)
+// [-2] void QTextTable(class QTextDocument *)
 extern "C"
 void* C_ZN10QTextTableC1EP13QTextDocument(QTextDocument * doc) {
-  return new QTextTable(doc);
+  (MyQTextTable*)(0);
+  return  new MyQTextTable(doc);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:103
-// void ~QTextTable()
+// [-2] void ~QTextTable()
 extern "C"
 void C_ZN10QTextTableD1Ev(void *this_) {
   delete (QTextTable*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:105
-// void resize(int, int)
+// [-2] void resize(int, int)
 extern "C"
 void C_ZN10QTextTable6resizeEii(void *this_, int rows, int cols) {
   ((QTextTable*)this_)->resize(rows, cols);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:106
-// void insertRows(int, int)
+// [-2] void insertRows(int, int)
 extern "C"
 void C_ZN10QTextTable10insertRowsEii(void *this_, int pos, int num) {
   ((QTextTable*)this_)->insertRows(pos, num);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:107
-// void insertColumns(int, int)
+// [-2] void insertColumns(int, int)
 extern "C"
 void C_ZN10QTextTable13insertColumnsEii(void *this_, int pos, int num) {
   ((QTextTable*)this_)->insertColumns(pos, num);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:108
-// void appendRows(int)
+// [-2] void appendRows(int)
 extern "C"
 void C_ZN10QTextTable10appendRowsEi(void *this_, int count) {
   ((QTextTable*)this_)->appendRows(count);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:109
-// void appendColumns(int)
+// [-2] void appendColumns(int)
 extern "C"
 void C_ZN10QTextTable13appendColumnsEi(void *this_, int count) {
   ((QTextTable*)this_)->appendColumns(count);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:110
-// void removeRows(int, int)
+// [-2] void removeRows(int, int)
 extern "C"
 void C_ZN10QTextTable10removeRowsEii(void *this_, int pos, int num) {
   ((QTextTable*)this_)->removeRows(pos, num);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:111
-// void removeColumns(int, int)
+// [-2] void removeColumns(int, int)
 extern "C"
 void C_ZN10QTextTable13removeColumnsEii(void *this_, int pos, int num) {
   ((QTextTable*)this_)->removeColumns(pos, num);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:113
-// void mergeCells(int, int, int, int)
+// [-2] void mergeCells(int, int, int, int)
 extern "C"
 void C_ZN10QTextTable10mergeCellsEiiii(void *this_, int row, int col, int numRows, int numCols) {
   ((QTextTable*)this_)->mergeCells(row, col, numRows, numCols);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:114
-// void mergeCells(const class QTextCursor &)
+// [-2] void mergeCells(const class QTextCursor &)
 extern "C"
 void C_ZN10QTextTable10mergeCellsERK11QTextCursor(void *this_, const QTextCursor & cursor) {
   ((QTextTable*)this_)->mergeCells(cursor);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:115
-// void splitCell(int, int, int, int)
+// [-2] void splitCell(int, int, int, int)
 extern "C"
 void C_ZN10QTextTable9splitCellEiiii(void *this_, int row, int col, int numRows, int numCols) {
   ((QTextTable*)this_)->splitCell(row, col, numRows, numCols);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:117
-// int rows()
+// [4] int rows()
 extern "C"
-void C_ZNK10QTextTable4rowsEv(void *this_) {
-  /*return*/ ((QTextTable*)this_)->rows();
+int C_ZNK10QTextTable4rowsEv(void *this_) {
+  return (int)((QTextTable*)this_)->rows();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:118
-// int columns()
+// [4] int columns()
 extern "C"
-void C_ZNK10QTextTable7columnsEv(void *this_) {
-  /*return*/ ((QTextTable*)this_)->columns();
+int C_ZNK10QTextTable7columnsEv(void *this_) {
+  return (int)((QTextTable*)this_)->columns();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:120
-// QTextTableCell cellAt(int, int)
+// [16] QTextTableCell cellAt(int, int)
 extern "C"
-void C_ZNK10QTextTable6cellAtEii(void *this_, int row, int col) {
-  /*return*/ ((QTextTable*)this_)->cellAt(row, col);
+void* C_ZNK10QTextTable6cellAtEii(void *this_, int row, int col) {
+  auto rv = ((QTextTable*)this_)->cellAt(row, col);
+return new QTextTableCell(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:121
-// QTextTableCell cellAt(int)
+// [16] QTextTableCell cellAt(int)
 extern "C"
-void C_ZNK10QTextTable6cellAtEi(void *this_, int position) {
-  /*return*/ ((QTextTable*)this_)->cellAt(position);
+void* C_ZNK10QTextTable6cellAtEi(void *this_, int position) {
+  auto rv = ((QTextTable*)this_)->cellAt(position);
+return new QTextTableCell(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:122
-// QTextTableCell cellAt(const class QTextCursor &)
+// [16] QTextTableCell cellAt(const class QTextCursor &)
 extern "C"
-void C_ZNK10QTextTable6cellAtERK11QTextCursor(void *this_, const QTextCursor & c) {
-  /*return*/ ((QTextTable*)this_)->cellAt(c);
+void* C_ZNK10QTextTable6cellAtERK11QTextCursor(void *this_, const QTextCursor & c) {
+  auto rv = ((QTextTable*)this_)->cellAt(c);
+return new QTextTableCell(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:124
-// QTextCursor rowStart(const class QTextCursor &)
+// [8] QTextCursor rowStart(const class QTextCursor &)
 extern "C"
-void C_ZNK10QTextTable8rowStartERK11QTextCursor(void *this_, const QTextCursor & c) {
-  /*return*/ ((QTextTable*)this_)->rowStart(c);
+void* C_ZNK10QTextTable8rowStartERK11QTextCursor(void *this_, const QTextCursor & c) {
+  auto rv = ((QTextTable*)this_)->rowStart(c);
+return new QTextCursor(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:125
-// QTextCursor rowEnd(const class QTextCursor &)
+// [8] QTextCursor rowEnd(const class QTextCursor &)
 extern "C"
-void C_ZNK10QTextTable6rowEndERK11QTextCursor(void *this_, const QTextCursor & c) {
-  /*return*/ ((QTextTable*)this_)->rowEnd(c);
+void* C_ZNK10QTextTable6rowEndERK11QTextCursor(void *this_, const QTextCursor & c) {
+  auto rv = ((QTextTable*)this_)->rowEnd(c);
+return new QTextCursor(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:127
-// void setFormat(const class QTextTableFormat &)
+// [-2] void setFormat(const class QTextTableFormat &)
 extern "C"
 void C_ZN10QTextTable9setFormatERK16QTextTableFormat(void *this_, const QTextTableFormat & format) {
   ((QTextTable*)this_)->setFormat(format);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:128
-// QTextTableFormat format()
+// [16] QTextTableFormat format()
 extern "C"
-void C_ZNK10QTextTable6formatEv(void *this_) {
-  /*return*/ ((QTextTable*)this_)->format();
+void* C_ZNK10QTextTable6formatEv(void *this_) {
+  auto rv = ((QTextTable*)this_)->format();
+return new QTextTableFormat(rv);
 }
 //  main block end

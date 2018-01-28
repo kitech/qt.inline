@@ -3,42 +3,52 @@
 #include <qtextformat.h>
 #include <QtGui>
 
+// QTextLength is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:88
-// void QTextLength()
+
+class MyQTextLength : public QTextLength {
+public:
+MyQTextLength() : QTextLength() {}
+MyQTextLength(QTextLength::Type type, qreal value) : QTextLength(type, value) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:89
+// [-2] void QTextLength()
 extern "C"
 void* C_ZN11QTextLengthC1Ev() {
-  return new QTextLength();
+  (MyQTextLength*)(0);
+  return  new MyQTextLength();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:90
-// void QTextLength(enum QTextLength::Type, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:91
+// [-2] void QTextLength(enum QTextLength::Type, qreal)
 extern "C"
 void* C_ZN11QTextLengthC1ENS_4TypeEd(QTextLength::Type type, qreal value) {
-  return new QTextLength(type, value);
+  (MyQTextLength*)(0);
+  return  new MyQTextLength(type, value);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:92
-// QTextLength::Type type()
-extern "C"
-void C_ZNK11QTextLength4typeEv(void *this_) {
-  /*return*/ ((QTextLength*)this_)->type();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93
-// qreal value(qreal)
+// [4] QTextLength::Type type()
 extern "C"
-void C_ZNK11QTextLength5valueEd(void *this_, qreal maximumLength) {
-  /*return*/ ((QTextLength*)this_)->value(maximumLength);
+QTextLength::Type C_ZNK11QTextLength4typeEv(void *this_) {
+  return (QTextLength::Type)((QTextLength*)this_)->type();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:103
-// qreal rawValue()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:94
+// [8] qreal value(qreal)
 extern "C"
-void C_ZNK11QTextLength8rawValueEv(void *this_) {
-  /*return*/ ((QTextLength*)this_)->rawValue();
+qreal C_ZNK11QTextLength5valueEd(void *this_, qreal maximumLength) {
+  return (qreal)((QTextLength*)this_)->value(maximumLength);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:104
+// [8] qreal rawValue()
+extern "C"
+qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
+  return (qreal)((QTextLength*)this_)->rawValue();
 }
 //  main block end

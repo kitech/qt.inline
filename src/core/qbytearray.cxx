@@ -3,801 +3,980 @@
 #include <qbytearray.h>
 #include <QtCore>
 
+// QByteArray is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:182
-// void QByteArray()
+
+class MyQByteArray : public QByteArray {
+public:
+MyQByteArray() : QByteArray() {}
+MyQByteArray(const char * arg0, int size) : QByteArray(arg0, size) {}
+MyQByteArray(int size, char c) : QByteArray(size, c) {}
+MyQByteArray(int size, Qt::Initialization arg1) : QByteArray(size, arg1) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:170
+// [-2] void QByteArray()
 extern "C"
 void* C_ZN10QByteArrayC1Ev() {
-  return new QByteArray();
+  (MyQByteArray*)(0);
+  return  new MyQByteArray();
 }
-// /usr/include/qt/QtCore/qbytearray.h:183
-// void QByteArray(const char *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:171
+// [-2] void QByteArray(const char *, int)
 extern "C"
 void* C_ZN10QByteArrayC1EPKci(const char * arg0, int size) {
-  return new QByteArray(arg0, size);
+  (MyQByteArray*)(0);
+  return  new MyQByteArray(arg0, size);
 }
-// /usr/include/qt/QtCore/qbytearray.h:184
-// void QByteArray(int, char)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:172
+// [-2] void QByteArray(int, char)
 extern "C"
 void* C_ZN10QByteArrayC1Eic(int size, char c) {
-  return new QByteArray(size, c);
+  (MyQByteArray*)(0);
+  return  new MyQByteArray(size, c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:185
-// void QByteArray(int, Qt::Initialization)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:173
+// [-2] void QByteArray(int, Qt::Initialization)
 extern "C"
 void* C_ZN10QByteArrayC1EiN2Qt14InitializationE(int size, Qt::Initialization arg1) {
-  return new QByteArray(size, arg1);
+  (MyQByteArray*)(0);
+  return  new MyQByteArray(size, arg1);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:187
-// void ~QByteArray()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:175
+// [-2] void ~QByteArray()
 extern "C"
 void C_ZN10QByteArrayD1Ev(void *this_) {
   delete (QByteArray*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:197
-// void swap(class QByteArray &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:185
+// [-2] void swap(class QByteArray &)
 extern "C"
 void C_ZN10QByteArray4swapERS_(void *this_, QByteArray & other) {
   ((QByteArray*)this_)->swap(other);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:200
-// int size()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:188
+// [4] int size()
 extern "C"
-void C_ZNK10QByteArray4sizeEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->size();
+int C_ZNK10QByteArray4sizeEv(void *this_) {
+  return (int)((QByteArray*)this_)->size();
 }
-// /usr/include/qt/QtCore/qbytearray.h:201
-// bool isEmpty()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:189
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK10QByteArray7isEmptyEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->isEmpty();
+bool C_ZNK10QByteArray7isEmptyEv(void *this_) {
+  return (bool)((QByteArray*)this_)->isEmpty();
 }
-// /usr/include/qt/QtCore/qbytearray.h:202
-// void resize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:190
+// [-2] void resize(int)
 extern "C"
 void C_ZN10QByteArray6resizeEi(void *this_, int size) {
   ((QByteArray*)this_)->resize(size);
 }
-// /usr/include/qt/QtCore/qbytearray.h:204
-// QByteArray & fill(char, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:192
+// [8] QByteArray & fill(char, int)
 extern "C"
-void C_ZN10QByteArray4fillEci(void *this_, char c, int size) {
-  /*return*/ ((QByteArray*)this_)->fill(c, size);
+void* C_ZN10QByteArray4fillEci(void *this_, char c, int size) {
+  auto& rv = ((QByteArray*)this_)->fill(c, size);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:206
-// int capacity()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:194
+// [4] int capacity()
 extern "C"
-void C_ZNK10QByteArray8capacityEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->capacity();
+int C_ZNK10QByteArray8capacityEv(void *this_) {
+  return (int)((QByteArray*)this_)->capacity();
 }
-// /usr/include/qt/QtCore/qbytearray.h:207
-// void reserve(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:195
+// [-2] void reserve(int)
 extern "C"
 void C_ZN10QByteArray7reserveEi(void *this_, int size) {
   ((QByteArray*)this_)->reserve(size);
 }
-// /usr/include/qt/QtCore/qbytearray.h:208
-// void squeeze()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:196
+// [-2] void squeeze()
 extern "C"
 void C_ZN10QByteArray7squeezeEv(void *this_) {
   ((QByteArray*)this_)->squeeze();
 }
-// /usr/include/qt/QtCore/qbytearray.h:214
-// char * data()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:202
+// [8] char * data()
 extern "C"
-void C_ZN10QByteArray4dataEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->data();
+void* C_ZN10QByteArray4dataEv(void *this_) {
+  return (void*)((QByteArray*)this_)->data();
 }
-// /usr/include/qt/QtCore/qbytearray.h:215
-// const char * data()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:203
+// [8] const char * data()
 extern "C"
-void C_ZNK10QByteArray4dataEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->data();
+void* C_ZNK10QByteArray4dataEv(void *this_) {
+  return (void*)((QByteArray*)this_)->data();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:216
-// const char * constData()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:204
+// [8] const char * constData()
 extern "C"
-void C_ZNK10QByteArray9constDataEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->constData();
+void* C_ZNK10QByteArray9constDataEv(void *this_) {
+  return (void*)((QByteArray*)this_)->constData();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:217
-// void detach()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:205
+// [-2] void detach()
 extern "C"
 void C_ZN10QByteArray6detachEv(void *this_) {
   ((QByteArray*)this_)->detach();
 }
-// /usr/include/qt/QtCore/qbytearray.h:218
-// bool isDetached()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:206
+// [1] bool isDetached()
 extern "C"
-void C_ZNK10QByteArray10isDetachedEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->isDetached();
+bool C_ZNK10QByteArray10isDetachedEv(void *this_) {
+  return (bool)((QByteArray*)this_)->isDetached();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:219
-// bool isSharedWith(const class QByteArray &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:207
+// [1] bool isSharedWith(const class QByteArray &)
 extern "C"
-void C_ZNK10QByteArray12isSharedWithERKS_(void *this_, const QByteArray & other) {
-  /*return*/ ((QByteArray*)this_)->isSharedWith(other);
+bool C_ZNK10QByteArray12isSharedWithERKS_(void *this_, const QByteArray & other) {
+  return (bool)((QByteArray*)this_)->isSharedWith(other);
 }
-// /usr/include/qt/QtCore/qbytearray.h:220
-// void clear()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:208
+// [-2] void clear()
 extern "C"
 void C_ZN10QByteArray5clearEv(void *this_) {
   ((QByteArray*)this_)->clear();
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:210
+// [1] char at(int)
+extern "C"
+char C_ZNK10QByteArray2atEi(void *this_, int i) {
+  return (char)((QByteArray*)this_)->at(i);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:215
+// [1] char front()
+extern "C"
+char C_ZNK10QByteArray5frontEv(void *this_) {
+  return (char)((QByteArray*)this_)->front();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:216
+// [16] QByteRef front()
+extern "C"
+void C_ZN10QByteArray5frontEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->front();
+/*return rv;*/
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:217
+// [1] char back()
+extern "C"
+char C_ZNK10QByteArray4backEv(void *this_) {
+  return (char)((QByteArray*)this_)->back();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:218
+// [16] QByteRef back()
+extern "C"
+void C_ZN10QByteArray4backEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->back();
+/*return rv;*/
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:220
+// [4] int indexOf(char, int)
+extern "C"
+int C_ZNK10QByteArray7indexOfEci(void *this_, char c, int from) {
+  return (int)((QByteArray*)this_)->indexOf(c, from);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:221
+// [4] int indexOf(const char *, int)
+extern "C"
+int C_ZNK10QByteArray7indexOfEPKci(void *this_, const char * c, int from) {
+  return (int)((QByteArray*)this_)->indexOf(c, from);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:222
-// char at(int)
+// [4] int indexOf(const class QByteArray &, int)
 extern "C"
-void C_ZNK10QByteArray2atEi(void *this_, int i) {
-  /*return*/ ((QByteArray*)this_)->at(i);
+int C_ZNK10QByteArray7indexOfERKS_i(void *this_, const QByteArray & a, int from) {
+  return (int)((QByteArray*)this_)->indexOf(a, from);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:223
+// [4] int lastIndexOf(char, int)
+extern "C"
+int C_ZNK10QByteArray11lastIndexOfEci(void *this_, char c, int from) {
+  return (int)((QByteArray*)this_)->lastIndexOf(c, from);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:224
+// [4] int lastIndexOf(const char *, int)
+extern "C"
+int C_ZNK10QByteArray11lastIndexOfEPKci(void *this_, const char * c, int from) {
+  return (int)((QByteArray*)this_)->lastIndexOf(c, from);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:225
+// [4] int lastIndexOf(const class QByteArray &, int)
+extern "C"
+int C_ZNK10QByteArray11lastIndexOfERKS_i(void *this_, const QByteArray & a, int from) {
+  return (int)((QByteArray*)this_)->lastIndexOf(a, from);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:227
+// [1] bool contains(char)
+extern "C"
+bool C_ZNK10QByteArray8containsEc(void *this_, char c) {
+  return (bool)((QByteArray*)this_)->contains(c);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:228
-// int indexOf(char, int)
+// [1] bool contains(const char *)
 extern "C"
-void C_ZNK10QByteArray7indexOfEci(void *this_, char c, int from) {
-  /*return*/ ((QByteArray*)this_)->indexOf(c, from);
+bool C_ZNK10QByteArray8containsEPKc(void *this_, const char * a) {
+  return (bool)((QByteArray*)this_)->contains(a);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:229
-// int indexOf(const char *, int)
+// [1] bool contains(const class QByteArray &)
 extern "C"
-void C_ZNK10QByteArray7indexOfEPKci(void *this_, const char * c, int from) {
-  /*return*/ ((QByteArray*)this_)->indexOf(c, from);
+bool C_ZNK10QByteArray8containsERKS_(void *this_, const QByteArray & a) {
+  return (bool)((QByteArray*)this_)->contains(a);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:230
-// int indexOf(const class QByteArray &, int)
+// [4] int count(char)
 extern "C"
-void C_ZNK10QByteArray7indexOfERKS_i(void *this_, const QByteArray & a, int from) {
-  /*return*/ ((QByteArray*)this_)->indexOf(a, from);
+int C_ZNK10QByteArray5countEc(void *this_, char c) {
+  return (int)((QByteArray*)this_)->count(c);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:231
-// int lastIndexOf(char, int)
+// [4] int count(const char *)
 extern "C"
-void C_ZNK10QByteArray11lastIndexOfEci(void *this_, char c, int from) {
-  /*return*/ ((QByteArray*)this_)->lastIndexOf(c, from);
+int C_ZNK10QByteArray5countEPKc(void *this_, const char * a) {
+  return (int)((QByteArray*)this_)->count(a);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:232
-// int lastIndexOf(const char *, int)
+// [4] int count(const class QByteArray &)
 extern "C"
-void C_ZNK10QByteArray11lastIndexOfEPKci(void *this_, const char * c, int from) {
-  /*return*/ ((QByteArray*)this_)->lastIndexOf(c, from);
+int C_ZNK10QByteArray5countERKS_(void *this_, const QByteArray & a) {
+  return (int)((QByteArray*)this_)->count(a);
 }
-// /usr/include/qt/QtCore/qbytearray.h:233
-// int lastIndexOf(const class QByteArray &, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:234
+// [8] QByteArray left(int)
 extern "C"
-void C_ZNK10QByteArray11lastIndexOfERKS_i(void *this_, const QByteArray & a, int from) {
-  /*return*/ ((QByteArray*)this_)->lastIndexOf(a, from);
+void* C_ZNK10QByteArray4leftEi(void *this_, int len) {
+  auto rv = ((QByteArray*)this_)->left(len);
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:235
-// bool contains(char)
+// [8] QByteArray right(int)
 extern "C"
-void C_ZNK10QByteArray8containsEc(void *this_, char c) {
-  /*return*/ ((QByteArray*)this_)->contains(c);
+void* C_ZNK10QByteArray5rightEi(void *this_, int len) {
+  auto rv = ((QByteArray*)this_)->right(len);
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:236
-// bool contains(const char *)
+// [8] QByteArray mid(int, int)
 extern "C"
-void C_ZNK10QByteArray8containsEPKc(void *this_, const char * a) {
-  /*return*/ ((QByteArray*)this_)->contains(a);
+void* C_ZNK10QByteArray3midEii(void *this_, int index, int len) {
+  auto rv = ((QByteArray*)this_)->mid(index, len);
+return new QByteArray(rv);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:237
-// bool contains(const class QByteArray &)
+// [8] QByteArray chopped(int)
 extern "C"
-void C_ZNK10QByteArray8containsERKS_(void *this_, const QByteArray & a) {
-  /*return*/ ((QByteArray*)this_)->contains(a);
+void* C_ZNK10QByteArray7choppedEi(void *this_, int len) {
+  auto rv = ((QByteArray*)this_)->chopped(len);
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qbytearray.h:238
-// int count(char)
-extern "C"
-void C_ZNK10QByteArray5countEc(void *this_, char c) {
-  /*return*/ ((QByteArray*)this_)->count(c);
-}
-// /usr/include/qt/QtCore/qbytearray.h:239
-// int count(const char *)
-extern "C"
-void C_ZNK10QByteArray5countEPKc(void *this_, const char * a) {
-  /*return*/ ((QByteArray*)this_)->count(a);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:240
-// int count(const class QByteArray &)
+// [1] bool startsWith(const class QByteArray &)
 extern "C"
-void C_ZNK10QByteArray5countERKS_(void *this_, const QByteArray & a) {
-  /*return*/ ((QByteArray*)this_)->count(a);
+bool C_ZNK10QByteArray10startsWithERKS_(void *this_, const QByteArray & a) {
+  return (bool)((QByteArray*)this_)->startsWith(a);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:241
+// [1] bool startsWith(char)
+extern "C"
+bool C_ZNK10QByteArray10startsWithEc(void *this_, char c) {
+  return (bool)((QByteArray*)this_)->startsWith(c);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:242
-// QByteArray left(int)
+// [1] bool startsWith(const char *)
 extern "C"
-void C_ZNK10QByteArray4leftEi(void *this_, int len) {
-  /*return*/ ((QByteArray*)this_)->left(len);
+bool C_ZNK10QByteArray10startsWithEPKc(void *this_, const char * c) {
+  return (bool)((QByteArray*)this_)->startsWith(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:243
-// QByteArray right(int)
-extern "C"
-void C_ZNK10QByteArray5rightEi(void *this_, int len) {
-  /*return*/ ((QByteArray*)this_)->right(len);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:244
-// QByteArray mid(int, int)
+// [1] bool endsWith(const class QByteArray &)
 extern "C"
-void C_ZNK10QByteArray3midEii(void *this_, int index, int len) {
-  /*return*/ ((QByteArray*)this_)->mid(index, len);
+bool C_ZNK10QByteArray8endsWithERKS_(void *this_, const QByteArray & a) {
+  return (bool)((QByteArray*)this_)->endsWith(a);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:245
+// [1] bool endsWith(char)
+extern "C"
+bool C_ZNK10QByteArray8endsWithEc(void *this_, char c) {
+  return (bool)((QByteArray*)this_)->endsWith(c);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:246
-// bool startsWith(const class QByteArray &)
+// [1] bool endsWith(const char *)
 extern "C"
-void C_ZNK10QByteArray10startsWithERKS_(void *this_, const QByteArray & a) {
-  /*return*/ ((QByteArray*)this_)->startsWith(a);
+bool C_ZNK10QByteArray8endsWithEPKc(void *this_, const char * c) {
+  return (bool)((QByteArray*)this_)->endsWith(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:247
-// bool startsWith(char)
-extern "C"
-void C_ZNK10QByteArray10startsWithEc(void *this_, char c) {
-  /*return*/ ((QByteArray*)this_)->startsWith(c);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:248
-// bool startsWith(const char *)
-extern "C"
-void C_ZNK10QByteArray10startsWithEPKc(void *this_, const char * c) {
-  /*return*/ ((QByteArray*)this_)->startsWith(c);
-}
-// /usr/include/qt/QtCore/qbytearray.h:250
-// bool endsWith(const class QByteArray &)
-extern "C"
-void C_ZNK10QByteArray8endsWithERKS_(void *this_, const QByteArray & a) {
-  /*return*/ ((QByteArray*)this_)->endsWith(a);
-}
-// /usr/include/qt/QtCore/qbytearray.h:251
-// bool endsWith(char)
-extern "C"
-void C_ZNK10QByteArray8endsWithEc(void *this_, char c) {
-  /*return*/ ((QByteArray*)this_)->endsWith(c);
-}
-// /usr/include/qt/QtCore/qbytearray.h:252
-// bool endsWith(const char *)
-extern "C"
-void C_ZNK10QByteArray8endsWithEPKc(void *this_, const char * c) {
-  /*return*/ ((QByteArray*)this_)->endsWith(c);
-}
-// /usr/include/qt/QtCore/qbytearray.h:254
-// void truncate(int)
+// [-2] void truncate(int)
 extern "C"
 void C_ZN10QByteArray8truncateEi(void *this_, int pos) {
   ((QByteArray*)this_)->truncate(pos);
 }
-// /usr/include/qt/QtCore/qbytearray.h:255
-// void chop(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:249
+// [-2] void chop(int)
 extern "C"
 void C_ZN10QByteArray4chopEi(void *this_, int n) {
   ((QByteArray*)this_)->chop(n);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:259
+// [8] QByteArray toLower()
+extern "C"
+void* C_ZNKR10QByteArray7toLowerEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->toLower();
+return new QByteArray(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:261
+// [8] QByteArray toLower()
+extern "C"
+void* C_ZNO10QByteArray7toLowerEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->toLower();
+return new QByteArray(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:263
+// [8] QByteArray toUpper()
+extern "C"
+void* C_ZNKR10QByteArray7toUpperEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->toUpper();
+return new QByteArray(rv);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:265
-// QByteArray toLower()
+// [8] QByteArray toUpper()
 extern "C"
-void C_ZNKR10QByteArray7toLowerEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toLower();
+void* C_ZNO10QByteArray7toUpperEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->toUpper();
+return new QByteArray(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:267
-// QByteArray toLower()
+// [8] QByteArray trimmed()
 extern "C"
-void C_ZNO10QByteArray7toLowerEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toLower();
+void* C_ZNKR10QByteArray7trimmedEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->trimmed();
+return new QByteArray(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:269
-// QByteArray toUpper()
+// [8] QByteArray trimmed()
 extern "C"
-void C_ZNKR10QByteArray7toUpperEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toUpper();
+void* C_ZNO10QByteArray7trimmedEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->trimmed();
+return new QByteArray(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:271
-// QByteArray toUpper()
+// [8] QByteArray simplified()
 extern "C"
-void C_ZNO10QByteArray7toUpperEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toUpper();
+void* C_ZNKR10QByteArray10simplifiedEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->simplified();
+return new QByteArray(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:273
-// QByteArray trimmed()
+// [8] QByteArray simplified()
 extern "C"
-void C_ZNKR10QByteArray7trimmedEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->trimmed();
+void* C_ZNO10QByteArray10simplifiedEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->simplified();
+return new QByteArray(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:275
-// QByteArray trimmed()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:285
+// [8] QByteArray leftJustified(int, char, _Bool)
 extern "C"
-void C_ZNO10QByteArray7trimmedEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->trimmed();
+void* C_ZNK10QByteArray13leftJustifiedEicb(void *this_, int width, char fill, bool truncate) {
+  auto rv = ((QByteArray*)this_)->leftJustified(width, fill, truncate);
+return new QByteArray(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:277
-// QByteArray simplified()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:286
+// [8] QByteArray rightJustified(int, char, _Bool)
 extern "C"
-void C_ZNKR10QByteArray10simplifiedEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->simplified();
+void* C_ZNK10QByteArray14rightJustifiedEicb(void *this_, int width, char fill, bool truncate) {
+  auto rv = ((QByteArray*)this_)->rightJustified(width, fill, truncate);
+return new QByteArray(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:279
-// QByteArray simplified()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:303
+// [8] QByteArray & remove(int, int)
 extern "C"
-void C_ZNO10QByteArray10simplifiedEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->simplified();
+void* C_ZN10QByteArray6removeEii(void *this_, int index, int len) {
+  auto& rv = ((QByteArray*)this_)->remove(index, len);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:291
-// QByteArray leftJustified(int, char, _Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:304
+// [8] QByteArray & replace(int, int, const char *)
 extern "C"
-void C_ZNK10QByteArray13leftJustifiedEicb(void *this_, int width, char fill, bool truncate) {
-  /*return*/ ((QByteArray*)this_)->leftJustified(width, fill, truncate);
+void* C_ZN10QByteArray7replaceEiiPKc(void *this_, int index, int len, const char * s) {
+  auto& rv = ((QByteArray*)this_)->replace(index, len, s);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:292
-// QByteArray rightJustified(int, char, _Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:305
+// [8] QByteArray & replace(int, int, const char *, int)
 extern "C"
-void C_ZNK10QByteArray14rightJustifiedEicb(void *this_, int width, char fill, bool truncate) {
-  /*return*/ ((QByteArray*)this_)->rightJustified(width, fill, truncate);
+void* C_ZN10QByteArray7replaceEiiPKci(void *this_, int index, int len, const char * s, int alen) {
+  auto& rv = ((QByteArray*)this_)->replace(index, len, s, alen);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:306
+// [8] QByteArray & replace(int, int, const class QByteArray &)
+extern "C"
+void* C_ZN10QByteArray7replaceEiiRKS_(void *this_, int index, int len, const QByteArray & s) {
+  auto& rv = ((QByteArray*)this_)->replace(index, len, s);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:307
+// [8] QByteArray & replace(char, const char *)
+extern "C"
+void* C_ZN10QByteArray7replaceEcPKc(void *this_, char before, const char * after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:308
+// [8] QByteArray & replace(char, const class QByteArray &)
+extern "C"
+void* C_ZN10QByteArray7replaceEcRKS_(void *this_, char before, const QByteArray & after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:309
-// QByteArray & remove(int, int)
+// [8] QByteArray & replace(const char *, const char *)
 extern "C"
-void C_ZN10QByteArray6removeEii(void *this_, int index, int len) {
-  /*return*/ ((QByteArray*)this_)->remove(index, len);
+void* C_ZN10QByteArray7replaceEPKcS1_(void *this_, const char * before, const char * after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:310
-// QByteArray & replace(int, int, const char *)
+// [8] QByteArray & replace(const char *, int, const char *, int)
 extern "C"
-void C_ZN10QByteArray7replaceEiiPKc(void *this_, int index, int len, const char * s) {
-  /*return*/ ((QByteArray*)this_)->replace(index, len, s);
+void* C_ZN10QByteArray7replaceEPKciS1_i(void *this_, const char * before, int bsize, const char * after, int asize) {
+  auto& rv = ((QByteArray*)this_)->replace(before, bsize, after, asize);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:311
-// QByteArray & replace(int, int, const char *, int)
+// [8] QByteArray & replace(const class QByteArray &, const class QByteArray &)
 extern "C"
-void C_ZN10QByteArray7replaceEiiPKci(void *this_, int index, int len, const char * s, int alen) {
-  /*return*/ ((QByteArray*)this_)->replace(index, len, s, alen);
+void* C_ZN10QByteArray7replaceERKS_S1_(void *this_, const QByteArray & before, const QByteArray & after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:312
-// QByteArray & replace(int, int, const class QByteArray &)
+// [8] QByteArray & replace(const class QByteArray &, const char *)
 extern "C"
-void C_ZN10QByteArray7replaceEiiRKS_(void *this_, int index, int len, const QByteArray & s) {
-  /*return*/ ((QByteArray*)this_)->replace(index, len, s);
+void* C_ZN10QByteArray7replaceERKS_PKc(void *this_, const QByteArray & before, const char * after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:313
-// QByteArray & replace(char, const char *)
+// [8] QByteArray & replace(const char *, const class QByteArray &)
 extern "C"
-void C_ZN10QByteArray7replaceEcPKc(void *this_, char before, const char * after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
+void* C_ZN10QByteArray7replaceEPKcRKS_(void *this_, const char * before, const QByteArray & after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:314
-// QByteArray & replace(char, const class QByteArray &)
+// [8] QByteArray & replace(char, char)
 extern "C"
-void C_ZN10QByteArray7replaceEcRKS_(void *this_, char before, const QByteArray & after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
+void* C_ZN10QByteArray7replaceEcc(void *this_, char before, char after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:315
-// QByteArray & replace(const char *, const char *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:321
+// [8] QByteArray repeated(int)
 extern "C"
-void C_ZN10QByteArray7replaceEPKcS1_(void *this_, const char * before, const char * after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
+void* C_ZNK10QByteArray8repeatedEi(void *this_, int times) {
+  auto rv = ((QByteArray*)this_)->repeated(times);
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qbytearray.h:316
-// QByteArray & replace(const char *, int, const char *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:326
+// [8] QByteArray & replace(const class QString &, const char *)
 extern "C"
-void C_ZN10QByteArray7replaceEPKciS1_i(void *this_, const char * before, int bsize, const char * after, int asize) {
-  /*return*/ ((QByteArray*)this_)->replace(before, bsize, after, asize);
+void* C_ZN10QByteArray7replaceERK7QStringPKc(void *this_, const QString & before, const char * after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:317
-// QByteArray & replace(const class QByteArray &, const class QByteArray &)
-extern "C"
-void C_ZN10QByteArray7replaceERKS_S1_(void *this_, const QByteArray & before, const QByteArray & after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
-}
-// /usr/include/qt/QtCore/qbytearray.h:318
-// QByteArray & replace(const class QByteArray &, const char *)
-extern "C"
-void C_ZN10QByteArray7replaceERKS_PKc(void *this_, const QByteArray & before, const char * after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
-}
-// /usr/include/qt/QtCore/qbytearray.h:319
-// QByteArray & replace(const char *, const class QByteArray &)
-extern "C"
-void C_ZN10QByteArray7replaceEPKcRKS_(void *this_, const char * before, const QByteArray & after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
-}
-// /usr/include/qt/QtCore/qbytearray.h:320
-// QByteArray & replace(char, char)
-extern "C"
-void C_ZN10QByteArray7replaceEcc(void *this_, char before, char after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
-}
-// /usr/include/qt/QtCore/qbytearray.h:325
-// QList<QByteArray> split(char)
-extern "C"
-void C_ZNK10QByteArray5splitEc(void *this_, char sep) {
-  /*return*/ ((QByteArray*)this_)->split(sep);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:327
-// QByteArray repeated(int)
+// [8] QByteArray & replace(char, const class QString &)
 extern "C"
-void C_ZNK10QByteArray8repeatedEi(void *this_, int times) {
-  /*return*/ ((QByteArray*)this_)->repeated(times);
+void* C_ZN10QByteArray7replaceEcRK7QString(void *this_, char c, const QString & after) {
+  auto& rv = ((QByteArray*)this_)->replace(c, after);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:328
+// [8] QByteArray & replace(const class QString &, const class QByteArray &)
+extern "C"
+void* C_ZN10QByteArray7replaceERK7QStringRKS_(void *this_, const QString & before, const QByteArray & after) {
+  auto& rv = ((QByteArray*)this_)->replace(before, after);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:331
+// [4] int indexOf(const class QString &, int)
+extern "C"
+int C_ZNK10QByteArray7indexOfERK7QStringi(void *this_, const QString & s, int from) {
+  return (int)((QByteArray*)this_)->indexOf(s, from);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:332
-// QByteArray & replace(const class QString &, const char *)
+// [4] int lastIndexOf(const class QString &, int)
 extern "C"
-void C_ZN10QByteArray7replaceERK7QStringPKc(void *this_, const QString & before, const char * after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
+int C_ZNK10QByteArray11lastIndexOfERK7QStringi(void *this_, const QString & s, int from) {
+  return (int)((QByteArray*)this_)->lastIndexOf(s, from);
 }
-// /usr/include/qt/QtCore/qbytearray.h:333
-// QByteArray & replace(char, const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:343
+// [2] short toShort(_Bool *, int)
 extern "C"
-void C_ZN10QByteArray7replaceEcRK7QString(void *this_, char c, const QString & after) {
-  /*return*/ ((QByteArray*)this_)->replace(c, after);
+short C_ZNK10QByteArray7toShortEPbi(void *this_, bool * ok, int base) {
+  return (short)((QByteArray*)this_)->toShort(ok, base);
 }
-// /usr/include/qt/QtCore/qbytearray.h:334
-// QByteArray & replace(const class QString &, const class QByteArray &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:344
+// [2] ushort toUShort(_Bool *, int)
 extern "C"
-void C_ZN10QByteArray7replaceERK7QStringRKS_(void *this_, const QString & before, const QByteArray & after) {
-  /*return*/ ((QByteArray*)this_)->replace(before, after);
+ushort C_ZNK10QByteArray8toUShortEPbi(void *this_, bool * ok, int base) {
+  return (ushort)((QByteArray*)this_)->toUShort(ok, base);
 }
-// /usr/include/qt/QtCore/qbytearray.h:337
-// int indexOf(const class QString &, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:345
+// [4] int toInt(_Bool *, int)
 extern "C"
-void C_ZNK10QByteArray7indexOfERK7QStringi(void *this_, const QString & s, int from) {
-  /*return*/ ((QByteArray*)this_)->indexOf(s, from);
+int C_ZNK10QByteArray5toIntEPbi(void *this_, bool * ok, int base) {
+  return (int)((QByteArray*)this_)->toInt(ok, base);
 }
-// /usr/include/qt/QtCore/qbytearray.h:338
-// int lastIndexOf(const class QString &, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:346
+// [4] uint toUInt(_Bool *, int)
 extern "C"
-void C_ZNK10QByteArray11lastIndexOfERK7QStringi(void *this_, const QString & s, int from) {
-  /*return*/ ((QByteArray*)this_)->lastIndexOf(s, from);
+uint C_ZNK10QByteArray6toUIntEPbi(void *this_, bool * ok, int base) {
+  return (uint)((QByteArray*)this_)->toUInt(ok, base);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:347
+// [8] long toLong(_Bool *, int)
+extern "C"
+long C_ZNK10QByteArray6toLongEPbi(void *this_, bool * ok, int base) {
+  return (long)((QByteArray*)this_)->toLong(ok, base);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:348
+// [8] ulong toULong(_Bool *, int)
+extern "C"
+ulong C_ZNK10QByteArray7toULongEPbi(void *this_, bool * ok, int base) {
+  return (ulong)((QByteArray*)this_)->toULong(ok, base);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:349
-// short toShort(_Bool *, int)
+// [8] qlonglong toLongLong(_Bool *, int)
 extern "C"
-void C_ZNK10QByteArray7toShortEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toShort(ok, base);
+qlonglong C_ZNK10QByteArray10toLongLongEPbi(void *this_, bool * ok, int base) {
+  return (qlonglong)((QByteArray*)this_)->toLongLong(ok, base);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:350
-// ushort toUShort(_Bool *, int)
+// [8] qulonglong toULongLong(_Bool *, int)
 extern "C"
-void C_ZNK10QByteArray8toUShortEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toUShort(ok, base);
+qulonglong C_ZNK10QByteArray11toULongLongEPbi(void *this_, bool * ok, int base) {
+  return (qulonglong)((QByteArray*)this_)->toULongLong(ok, base);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:351
-// int toInt(_Bool *, int)
+// [4] float toFloat(_Bool *)
 extern "C"
-void C_ZNK10QByteArray5toIntEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toInt(ok, base);
+float C_ZNK10QByteArray7toFloatEPb(void *this_, bool * ok) {
+  return (float)((QByteArray*)this_)->toFloat(ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:352
-// uint toUInt(_Bool *, int)
+// [8] double toDouble(_Bool *)
 extern "C"
-void C_ZNK10QByteArray6toUIntEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toUInt(ok, base);
+double C_ZNK10QByteArray8toDoubleEPb(void *this_, bool * ok) {
+  return (double)((QByteArray*)this_)->toDouble(ok);
 }
-// /usr/include/qt/QtCore/qbytearray.h:353
-// long toLong(_Bool *, int)
-extern "C"
-void C_ZNK10QByteArray6toLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toLong(ok, base);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:354
-// ulong toULong(_Bool *, int)
+// [8] QByteArray toBase64()
 extern "C"
-void C_ZNK10QByteArray7toULongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toULong(ok, base);
+void* C_ZNK10QByteArray8toBase64Ev(void *this_) {
+  auto rv = ((QByteArray*)this_)->toBase64();
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:355
-// qlonglong toLongLong(_Bool *, int)
+// [8] QByteArray toHex()
 extern "C"
-void C_ZNK10QByteArray10toLongLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toLongLong(ok, base);
+void* C_ZNK10QByteArray5toHexEv(void *this_) {
+  auto rv = ((QByteArray*)this_)->toHex();
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:356
-// qulonglong toULongLong(_Bool *, int)
+// [8] QByteArray toHex(char)
 extern "C"
-void C_ZNK10QByteArray11toULongLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QByteArray*)this_)->toULongLong(ok, base);
+void* C_ZNK10QByteArray5toHexEc(void *this_, char separator) {
+  auto rv = ((QByteArray*)this_)->toHex(separator);
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:357
-// float toFloat(_Bool *)
+// [8] QByteArray toPercentEncoding(const class QByteArray &, const class QByteArray &, char)
 extern "C"
-void C_ZNK10QByteArray7toFloatEPb(void *this_, bool * ok) {
-  /*return*/ ((QByteArray*)this_)->toFloat(ok);
+void* C_ZNK10QByteArray17toPercentEncodingERKS_S1_c(void *this_, const QByteArray & exclude, const QByteArray & include, char percent) {
+  auto rv = ((QByteArray*)this_)->toPercentEncoding(exclude, include, percent);
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qbytearray.h:358
-// double toDouble(_Bool *)
-extern "C"
-void C_ZNK10QByteArray8toDoubleEPb(void *this_, bool * ok) {
-  /*return*/ ((QByteArray*)this_)->toDouble(ok);
-}
-// /usr/include/qt/QtCore/qbytearray.h:359
-// QByteArray toBase64(Base64Options)
-extern "C"
-void C_ZNK10QByteArray8toBase64E6QFlagsINS_12Base64OptionEE(void *this_, QFlags<QByteArray::Base64Option> options) {
-  /*return*/ ((QByteArray*)this_)->toBase64(options);
-}
-// /usr/include/qt/QtCore/qbytearray.h:360
-// QByteArray toBase64()
-extern "C"
-void C_ZNK10QByteArray8toBase64Ev(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toBase64();
-}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:361
-// QByteArray toHex()
+// [8] QByteArray & setNum(short, int)
 extern "C"
-void C_ZNK10QByteArray5toHexEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toHex();
+void* C_ZN10QByteArray6setNumEsi(void *this_, short arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:362
-// QByteArray toPercentEncoding(const class QByteArray &, const class QByteArray &, char)
+// [8] QByteArray & setNum(ushort, int)
 extern "C"
-void C_ZNK10QByteArray17toPercentEncodingERKS_S1_c(void *this_, const QByteArray & exclude, const QByteArray & include, char percent) {
-  /*return*/ ((QByteArray*)this_)->toPercentEncoding(exclude, include, percent);
+void* C_ZN10QByteArray6setNumEti(void *this_, ushort arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
 }
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:363
+// [8] QByteArray & setNum(int, int)
+extern "C"
+void* C_ZN10QByteArray6setNumEii(void *this_, int arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:364
+// [8] QByteArray & setNum(uint, int)
+extern "C"
+void* C_ZN10QByteArray6setNumEji(void *this_, uint arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:365
+// [8] QByteArray & setNum(qlonglong, int)
+extern "C"
+void* C_ZN10QByteArray6setNumExi(void *this_, qlonglong arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:366
-// QByteArray & setNum(short, int)
+// [8] QByteArray & setNum(qulonglong, int)
 extern "C"
-void C_ZN10QByteArray6setNumEsi(void *this_, short arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
+void* C_ZN10QByteArray6setNumEyi(void *this_, qulonglong arg0, int base) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, base);
+return &rv;
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:367
-// QByteArray & setNum(ushort, int)
+// [8] QByteArray & setNum(float, char, int)
 extern "C"
-void C_ZN10QByteArray6setNumEti(void *this_, ushort arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
+void* C_ZN10QByteArray6setNumEfci(void *this_, float arg0, char f, int prec) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, f, prec);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:368
-// QByteArray & setNum(int, int)
+// [8] QByteArray & setNum(double, char, int)
 extern "C"
-void C_ZN10QByteArray6setNumEii(void *this_, int arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
+void* C_ZN10QByteArray6setNumEdci(void *this_, double arg0, char f, int prec) {
+  auto& rv = ((QByteArray*)this_)->setNum(arg0, f, prec);
+return &rv;
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:369
-// QByteArray & setNum(uint, int)
+// [8] QByteArray & setRawData(const char *, uint)
 extern "C"
-void C_ZN10QByteArray6setNumEji(void *this_, uint arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
+void* C_ZN10QByteArray10setRawDataEPKcj(void *this_, const char * a, uint n) {
+  auto& rv = ((QByteArray*)this_)->setRawData(a, n);
+return &rv;
 }
-// /usr/include/qt/QtCore/qbytearray.h:370
-// QByteArray & setNum(qlonglong, int)
-extern "C"
-void C_ZN10QByteArray6setNumExi(void *this_, qlonglong arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
-}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:371
-// QByteArray & setNum(qulonglong, int)
+// [8] QByteArray number(int, int)
 extern "C"
-void C_ZN10QByteArray6setNumEyi(void *this_, qulonglong arg0, int base) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, base);
+void* C_ZN10QByteArray6numberEii(int arg0, int base) {
+  auto rv = QByteArray::number(arg0, base);
+return new QByteArray(rv);
 }
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:372
-// QByteArray & setNum(float, char, int)
+// [8] QByteArray number(uint, int)
 extern "C"
-void C_ZN10QByteArray6setNumEfci(void *this_, float arg0, char f, int prec) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, f, prec);
+void* C_ZN10QByteArray6numberEji(uint arg0, int base) {
+  auto rv = QByteArray::number(arg0, base);
+return new QByteArray(rv);
 }
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:373
-// QByteArray & setNum(double, char, int)
+// [8] QByteArray number(qlonglong, int)
 extern "C"
-void C_ZN10QByteArray6setNumEdci(void *this_, double arg0, char f, int prec) {
-  /*return*/ ((QByteArray*)this_)->setNum(arg0, f, prec);
+void* C_ZN10QByteArray6numberExi(qlonglong arg0, int base) {
+  auto rv = QByteArray::number(arg0, base);
+return new QByteArray(rv);
 }
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:374
-// QByteArray & setRawData(const char *, uint)
+// [8] QByteArray number(qulonglong, int)
 extern "C"
-void C_ZN10QByteArray10setRawDataEPKcj(void *this_, const char * a, uint n) {
-  /*return*/ ((QByteArray*)this_)->setRawData(a, n);
+void* C_ZN10QByteArray6numberEyi(qulonglong arg0, int base) {
+  auto rv = QByteArray::number(arg0, base);
+return new QByteArray(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:375
+// [8] QByteArray number(double, char, int)
+extern "C"
+void* C_ZN10QByteArray6numberEdci(double arg0, char f, int prec) {
+  auto rv = QByteArray::number(arg0, f, prec);
+return new QByteArray(rv);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:376
-// QByteArray number(int, int)
+// [8] QByteArray fromRawData(const char *, int)
 extern "C"
-void C_ZN10QByteArray6numberEii(int arg0, int base) {
-  /*return*/ QByteArray::number(arg0, base);
+void* C_ZN10QByteArray11fromRawDataEPKci(const char * arg0, int size) {
+  auto rv = QByteArray::fromRawData(arg0, size);
+return new QByteArray(rv);
 }
-// static
-// /usr/include/qt/QtCore/qbytearray.h:377
-// QByteArray number(uint, int)
-extern "C"
-void C_ZN10QByteArray6numberEji(uint arg0, int base) {
-  /*return*/ QByteArray::number(arg0, base);
-}
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:378
-// QByteArray number(qlonglong, int)
+// [8] QByteArray fromBase64(const class QByteArray &)
 extern "C"
-void C_ZN10QByteArray6numberExi(qlonglong arg0, int base) {
-  /*return*/ QByteArray::number(arg0, base);
+void* C_ZN10QByteArray10fromBase64ERKS_(const QByteArray & base64) {
+  auto rv = QByteArray::fromBase64(base64);
+return new QByteArray(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:379
-// QByteArray number(qulonglong, int)
+// [8] QByteArray fromHex(const class QByteArray &)
 extern "C"
-void C_ZN10QByteArray6numberEyi(qulonglong arg0, int base) {
-  /*return*/ QByteArray::number(arg0, base);
+void* C_ZN10QByteArray7fromHexERKS_(const QByteArray & hexEncoded) {
+  auto rv = QByteArray::fromHex(hexEncoded);
+return new QByteArray(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:380
-// QByteArray number(double, char, int)
+// [8] QByteArray fromPercentEncoding(const class QByteArray &, char)
 extern "C"
-void C_ZN10QByteArray6numberEdci(double arg0, char f, int prec) {
-  /*return*/ QByteArray::number(arg0, f, prec);
+void* C_ZN10QByteArray19fromPercentEncodingERKS_c(const QByteArray & pctEncoded, char percent) {
+  auto rv = QByteArray::fromPercentEncoding(pctEncoded, percent);
+return new QByteArray(rv);
 }
-// static
-// /usr/include/qt/QtCore/qbytearray.h:381
-// QByteArray fromRawData(const char *, int)
-extern "C"
-void C_ZN10QByteArray11fromRawDataEPKci(const char * arg0, int size) {
-  /*return*/ QByteArray::fromRawData(arg0, size);
-}
-// static
-// /usr/include/qt/QtCore/qbytearray.h:382
-// QByteArray fromBase64(const class QByteArray &, Base64Options)
-extern "C"
-void C_ZN10QByteArray10fromBase64ERKS_6QFlagsINS_12Base64OptionEE(const QByteArray & base64, QFlags<QByteArray::Base64Option> options) {
-  /*return*/ QByteArray::fromBase64(base64, options);
-}
-// static
-// /usr/include/qt/QtCore/qbytearray.h:383
-// QByteArray fromBase64(const class QByteArray &)
-extern "C"
-void C_ZN10QByteArray10fromBase64ERKS_(const QByteArray & base64) {
-  /*return*/ QByteArray::fromBase64(base64);
-}
-// static
-// /usr/include/qt/QtCore/qbytearray.h:384
-// QByteArray fromHex(const class QByteArray &)
-extern "C"
-void C_ZN10QByteArray7fromHexERKS_(const QByteArray & hexEncoded) {
-  /*return*/ QByteArray::fromHex(hexEncoded);
-}
-// static
-// /usr/include/qt/QtCore/qbytearray.h:385
-// QByteArray fromPercentEncoding(const class QByteArray &, char)
-extern "C"
-void C_ZN10QByteArray19fromPercentEncodingERKS_c(const QByteArray & pctEncoded, char percent) {
-  /*return*/ QByteArray::fromPercentEncoding(pctEncoded, percent);
-}
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:406
-// iterator begin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:399
+// [8] QByteArray::iterator begin()
 extern "C"
 void C_ZN10QByteArray5beginEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->begin();
+  auto rv = ((QByteArray*)this_)->begin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:407
-// const_iterator begin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:400
+// [8] QByteArray::const_iterator begin()
 extern "C"
 void C_ZNK10QByteArray5beginEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->begin();
+  auto rv = ((QByteArray*)this_)->begin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:408
-// const_iterator cbegin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:401
+// [8] QByteArray::const_iterator cbegin()
 extern "C"
 void C_ZNK10QByteArray6cbeginEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->cbegin();
+  auto rv = ((QByteArray*)this_)->cbegin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:409
-// const_iterator constBegin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:402
+// [8] QByteArray::const_iterator constBegin()
 extern "C"
 void C_ZNK10QByteArray10constBeginEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->constBegin();
+  auto rv = ((QByteArray*)this_)->constBegin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:410
-// iterator end()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:403
+// [8] QByteArray::iterator end()
 extern "C"
 void C_ZN10QByteArray3endEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->end();
+  auto rv = ((QByteArray*)this_)->end();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:411
-// const_iterator end()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:404
+// [8] QByteArray::const_iterator end()
 extern "C"
 void C_ZNK10QByteArray3endEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->end();
+  auto rv = ((QByteArray*)this_)->end();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:412
-// const_iterator cend()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:405
+// [8] QByteArray::const_iterator cend()
 extern "C"
 void C_ZNK10QByteArray4cendEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->cend();
+  auto rv = ((QByteArray*)this_)->cend();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:413
-// const_iterator constEnd()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:406
+// [8] QByteArray::const_iterator constEnd()
 extern "C"
 void C_ZNK10QByteArray8constEndEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->constEnd();
+  auto rv = ((QByteArray*)this_)->constEnd();
+/*return rv;*/
 }
-// /usr/include/qt/QtCore/qbytearray.h:429
-// void push_back(char)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:422
+// [-2] void push_back(char)
 extern "C"
 void C_ZN10QByteArray9push_backEc(void *this_, char c) {
   ((QByteArray*)this_)->push_back(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:430
-// void push_back(const char *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:423
+// [-2] void push_back(const char *)
 extern "C"
 void C_ZN10QByteArray9push_backEPKc(void *this_, const char * c) {
   ((QByteArray*)this_)->push_back(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:431
-// void push_back(const class QByteArray &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:424
+// [-2] void push_back(const class QByteArray &)
 extern "C"
 void C_ZN10QByteArray9push_backERKS_(void *this_, const QByteArray & a) {
   ((QByteArray*)this_)->push_back(a);
 }
-// /usr/include/qt/QtCore/qbytearray.h:432
-// void push_front(char)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:425
+// [-2] void push_front(char)
 extern "C"
 void C_ZN10QByteArray10push_frontEc(void *this_, char c) {
   ((QByteArray*)this_)->push_front(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:433
-// void push_front(const char *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:426
+// [-2] void push_front(const char *)
 extern "C"
 void C_ZN10QByteArray10push_frontEPKc(void *this_, const char * c) {
   ((QByteArray*)this_)->push_front(c);
 }
-// /usr/include/qt/QtCore/qbytearray.h:434
-// void push_front(const class QByteArray &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:427
+// [-2] void push_front(const class QByteArray &)
 extern "C"
 void C_ZN10QByteArray10push_frontERKS_(void *this_, const QByteArray & a) {
   ((QByteArray*)this_)->push_front(a);
 }
-// static inline
-// /usr/include/qt/QtCore/qbytearray.h:436
-// QByteArray fromStdString(const std::string &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:428
+// [-2] void shrink_to_fit()
 extern "C"
-void C_ZN10QByteArray13fromStdStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(const std::string & s) {
-  /*return*/ QByteArray::fromStdString(s);
+void C_ZN10QByteArray13shrink_to_fitEv(void *this_) {
+  ((QByteArray*)this_)->shrink_to_fit();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:437
-// std::string toStdString()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:431
+// [32] std::string toStdString()
 extern "C"
-void C_ZNK10QByteArray11toStdStringB5cxx11Ev(void *this_) {
-  /*return*/ ((QByteArray*)this_)->toStdString();
+std::string C_ZNK10QByteArray11toStdStringB5cxx11Ev(void *this_) {
+  return (std::string)((QByteArray*)this_)->toStdString();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:439
-// int count()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:433
+// [4] int count()
 extern "C"
-void C_ZNK10QByteArray5countEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->count();
+int C_ZNK10QByteArray5countEv(void *this_) {
+  return (int)((QByteArray*)this_)->count();
 }
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:440
-// int length()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:434
+// [4] int length()
 extern "C"
-void C_ZNK10QByteArray6lengthEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->length();
+int C_ZNK10QByteArray6lengthEv(void *this_) {
+  return (int)((QByteArray*)this_)->length();
 }
-// /usr/include/qt/QtCore/qbytearray.h:441
-// bool isNull()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:435
+// [1] bool isNull()
 extern "C"
-void C_ZNK10QByteArray6isNullEv(void *this_) {
-  /*return*/ ((QByteArray*)this_)->isNull();
-}
-// inline
-// /usr/include/qt/QtCore/qbytearray.h:443
-// void QByteArray(struct QByteArrayDataPtr)
-extern "C"
-void* C_ZN10QByteArrayC1E17QByteArrayDataPtr(QByteArrayDataPtr dd) {
-  return new QByteArray(dd);
+bool C_ZNK10QByteArray6isNullEv(void *this_) {
+  return (bool)((QByteArray*)this_)->isNull();
 }
 //  main block end

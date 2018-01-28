@@ -3,98 +3,126 @@
 #include <qabstractitemmodel.h>
 #include <QtCore>
 
+// QPersistentModelIndex is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qabstractitemmodel.h:105
-// void QPersistentModelIndex()
+
+class MyQPersistentModelIndex : public QPersistentModelIndex {
+public:
+MyQPersistentModelIndex() : QPersistentModelIndex() {}
+MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:107
+// [-2] void QPersistentModelIndex()
 extern "C"
 void* C_ZN21QPersistentModelIndexC1Ev() {
-  return new QPersistentModelIndex();
+  (MyQPersistentModelIndex*)(0);
+  return  new MyQPersistentModelIndex();
 }
-// /usr/include/qt/QtCore/qabstractitemmodel.h:106
-// void QPersistentModelIndex(const class QModelIndex &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:108
+// [-2] void QPersistentModelIndex(const class QModelIndex &)
 extern "C"
 void* C_ZN21QPersistentModelIndexC1ERK11QModelIndex(const QModelIndex & index) {
-  return new QPersistentModelIndex(index);
+  (MyQPersistentModelIndex*)(0);
+  return  new MyQPersistentModelIndex(index);
 }
-// /usr/include/qt/QtCore/qabstractitemmodel.h:108
-// void ~QPersistentModelIndex()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:110
+// [-2] void ~QPersistentModelIndex()
 extern "C"
 void C_ZN21QPersistentModelIndexD1Ev(void *this_) {
   delete (QPersistentModelIndex*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qabstractitemmodel.h:120
-// void swap(class QPersistentModelIndex &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:122
+// [-2] void swap(class QPersistentModelIndex &)
 extern "C"
 void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex & other) {
   ((QPersistentModelIndex*)this_)->swap(other);
 }
-// /usr/include/qt/QtCore/qabstractitemmodel.h:125
-// int row()
-extern "C"
-void C_ZNK21QPersistentModelIndex3rowEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->row();
-}
-// /usr/include/qt/QtCore/qabstractitemmodel.h:126
-// int column()
-extern "C"
-void C_ZNK21QPersistentModelIndex6columnEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->column();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:127
-// void * internalPointer()
+// [4] int row()
 extern "C"
-void C_ZNK21QPersistentModelIndex15internalPointerEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->internalPointer();
+int C_ZNK21QPersistentModelIndex3rowEv(void *this_) {
+  return (int)((QPersistentModelIndex*)this_)->row();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:128
-// quintptr internalId()
+// [4] int column()
 extern "C"
-void C_ZNK21QPersistentModelIndex10internalIdEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->internalId();
+int C_ZNK21QPersistentModelIndex6columnEv(void *this_) {
+  return (int)((QPersistentModelIndex*)this_)->column();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:129
-// QModelIndex parent()
+// [8] void * internalPointer()
 extern "C"
-void C_ZNK21QPersistentModelIndex6parentEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->parent();
+void* C_ZNK21QPersistentModelIndex15internalPointerEv(void *this_) {
+  return (void*)((QPersistentModelIndex*)this_)->internalPointer();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:130
-// QModelIndex sibling(int, int)
+// [8] quintptr internalId()
 extern "C"
-void C_ZNK21QPersistentModelIndex7siblingEii(void *this_, int row, int column) {
-  /*return*/ ((QPersistentModelIndex*)this_)->sibling(row, column);
+quintptr C_ZNK21QPersistentModelIndex10internalIdEv(void *this_) {
+  return (quintptr)((QPersistentModelIndex*)this_)->internalId();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:131
-// QModelIndex child(int, int)
+// [24] QModelIndex parent()
 extern "C"
-void C_ZNK21QPersistentModelIndex5childEii(void *this_, int row, int column) {
-  /*return*/ ((QPersistentModelIndex*)this_)->child(row, column);
+void* C_ZNK21QPersistentModelIndex6parentEv(void *this_) {
+  auto rv = ((QPersistentModelIndex*)this_)->parent();
+return new QModelIndex(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:132
-// QVariant data(int)
+// [24] QModelIndex sibling(int, int)
 extern "C"
-void C_ZNK21QPersistentModelIndex4dataEi(void *this_, int role) {
-  /*return*/ ((QPersistentModelIndex*)this_)->data(role);
+void* C_ZNK21QPersistentModelIndex7siblingEii(void *this_, int row, int column) {
+  auto rv = ((QPersistentModelIndex*)this_)->sibling(row, column);
+return new QModelIndex(rv);
 }
-// /usr/include/qt/QtCore/qabstractitemmodel.h:133
-// Qt::ItemFlags flags()
-extern "C"
-void C_ZNK21QPersistentModelIndex5flagsEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->flags();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:134
-// const QAbstractItemModel * model()
+// [24] QModelIndex child(int, int)
 extern "C"
-void C_ZNK21QPersistentModelIndex5modelEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->model();
+void* C_ZNK21QPersistentModelIndex5childEii(void *this_, int row, int column) {
+  auto rv = ((QPersistentModelIndex*)this_)->child(row, column);
+return new QModelIndex(rv);
 }
-// /usr/include/qt/QtCore/qabstractitemmodel.h:135
-// bool isValid()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:136
+// [16] QVariant data(int)
 extern "C"
-void C_ZNK21QPersistentModelIndex7isValidEv(void *this_) {
-  /*return*/ ((QPersistentModelIndex*)this_)->isValid();
+void* C_ZNK21QPersistentModelIndex4dataEi(void *this_, int role) {
+  auto rv = ((QPersistentModelIndex*)this_)->data(role);
+return new QVariant(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:137
+// [4] Qt::ItemFlags flags()
+extern "C"
+Qt::ItemFlags C_ZNK21QPersistentModelIndex5flagsEv(void *this_) {
+  return (Qt::ItemFlags)((QPersistentModelIndex*)this_)->flags();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:138
+// [8] const QAbstractItemModel * model()
+extern "C"
+void* C_ZNK21QPersistentModelIndex5modelEv(void *this_) {
+  return (void*)((QPersistentModelIndex*)this_)->model();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:139
+// [1] bool isValid()
+extern "C"
+bool C_ZNK21QPersistentModelIndex7isValidEv(void *this_) {
+  return (bool)((QPersistentModelIndex*)this_)->isValid();
 }
 //  main block end

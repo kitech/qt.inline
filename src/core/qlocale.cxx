@@ -3,603 +3,800 @@
 #include <qlocale.h>
 #include <QtCore>
 
+// QLocale is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qlocale.h:914
-// void QLocale()
+
+class MyQLocale : public QLocale {
+public:
+MyQLocale() : QLocale() {}
+MyQLocale(const QString & name) : QLocale(name) {}
+MyQLocale(QLocale::Language language, QLocale::Country country) : QLocale(language, country) {}
+MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country country) : QLocale(language, script, country) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:929
+// [-2] void QLocale()
 extern "C"
 void* C_ZN7QLocaleC1Ev() {
-  return new QLocale();
+  (MyQLocale*)(0);
+  return  new MyQLocale();
 }
-// /usr/include/qt/QtCore/qlocale.h:915
-// void QLocale(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:930
+// [-2] void QLocale(const class QString &)
 extern "C"
 void* C_ZN7QLocaleC1ERK7QString(const QString & name) {
-  return new QLocale(name);
+  (MyQLocale*)(0);
+  return  new MyQLocale(name);
 }
-// /usr/include/qt/QtCore/qlocale.h:916
-// void QLocale(enum QLocale::Language, enum QLocale::Country)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:931
+// [-2] void QLocale(enum QLocale::Language, enum QLocale::Country)
 extern "C"
 void* C_ZN7QLocaleC1ENS_8LanguageENS_7CountryE(QLocale::Language language, QLocale::Country country) {
-  return new QLocale(language, country);
+  (MyQLocale*)(0);
+  return  new MyQLocale(language, country);
 }
-// /usr/include/qt/QtCore/qlocale.h:917
-// void QLocale(enum QLocale::Language, enum QLocale::Script, enum QLocale::Country)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:932
+// [-2] void QLocale(enum QLocale::Language, enum QLocale::Script, enum QLocale::Country)
 extern "C"
 void* C_ZN7QLocaleC1ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
-  return new QLocale(language, script, country);
+  (MyQLocale*)(0);
+  return  new MyQLocale(language, script, country);
 }
-// /usr/include/qt/QtCore/qlocale.h:923
-// void ~QLocale()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:938
+// [-2] void ~QLocale()
 extern "C"
 void C_ZN7QLocaleD1Ev(void *this_) {
   delete (QLocale*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qlocale.h:925
-// void swap(class QLocale &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:940
+// [-2] void swap(class QLocale &)
 extern "C"
 void C_ZN7QLocale4swapERS_(void *this_, QLocale & other) {
   ((QLocale*)this_)->swap(other);
 }
-// /usr/include/qt/QtCore/qlocale.h:927
-// QLocale::Language language()
-extern "C"
-void C_ZNK7QLocale8languageEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->language();
-}
-// /usr/include/qt/QtCore/qlocale.h:928
-// QLocale::Script script()
-extern "C"
-void C_ZNK7QLocale6scriptEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->script();
-}
-// /usr/include/qt/QtCore/qlocale.h:929
-// QLocale::Country country()
-extern "C"
-void C_ZNK7QLocale7countryEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->country();
-}
-// /usr/include/qt/QtCore/qlocale.h:930
-// QString name()
-extern "C"
-void C_ZNK7QLocale4nameEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->name();
-}
-// /usr/include/qt/QtCore/qlocale.h:932
-// QString bcp47Name()
-extern "C"
-void C_ZNK7QLocale9bcp47NameEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->bcp47Name();
-}
-// /usr/include/qt/QtCore/qlocale.h:933
-// QString nativeLanguageName()
-extern "C"
-void C_ZNK7QLocale18nativeLanguageNameEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->nativeLanguageName();
-}
-// /usr/include/qt/QtCore/qlocale.h:934
-// QString nativeCountryName()
-extern "C"
-void C_ZNK7QLocale17nativeCountryNameEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->nativeCountryName();
-}
-// /usr/include/qt/QtCore/qlocale.h:936
-// short toShort(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale7toShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toShort(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:937
-// ushort toUShort(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale8toUShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toUShort(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:938
-// int toInt(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale5toIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toInt(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:939
-// uint toUInt(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale6toUIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toUInt(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:940
-// qlonglong toLongLong(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale10toLongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toLongLong(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:941
-// qulonglong toULongLong(const class QString &, _Bool *)
-extern "C"
-void C_ZNK7QLocale11toULongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toULongLong(s, ok);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:942
-// float toFloat(const class QString &, _Bool *)
+// [4] QLocale::Language language()
 extern "C"
-void C_ZNK7QLocale7toFloatERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toFloat(s, ok);
+QLocale::Language C_ZNK7QLocale8languageEv(void *this_) {
+  return (QLocale::Language)((QLocale*)this_)->language();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:943
-// double toDouble(const class QString &, _Bool *)
+// [4] QLocale::Script script()
 extern "C"
-void C_ZNK7QLocale8toDoubleERK7QStringPb(void *this_, const QString & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toDouble(s, ok);
+QLocale::Script C_ZNK7QLocale6scriptEv(void *this_) {
+  return (QLocale::Script)((QLocale*)this_)->script();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:944
+// [4] QLocale::Country country()
+extern "C"
+QLocale::Country C_ZNK7QLocale7countryEv(void *this_) {
+  return (QLocale::Country)((QLocale*)this_)->country();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:945
-// short toShort(const class QStringRef &, _Bool *)
+// [8] QString name()
 extern "C"
-void C_ZNK7QLocale7toShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toShort(s, ok);
+void* C_ZNK7QLocale4nameEv(void *this_) {
+  auto rv = ((QLocale*)this_)->name();
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:946
-// ushort toUShort(const class QStringRef &, _Bool *)
-extern "C"
-void C_ZNK7QLocale8toUShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toUShort(s, ok);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:947
-// int toInt(const class QStringRef &, _Bool *)
+// [8] QString bcp47Name()
 extern "C"
-void C_ZNK7QLocale5toIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toInt(s, ok);
+void* C_ZNK7QLocale9bcp47NameEv(void *this_) {
+  auto rv = ((QLocale*)this_)->bcp47Name();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:948
-// uint toUInt(const class QStringRef &, _Bool *)
+// [8] QString nativeLanguageName()
 extern "C"
-void C_ZNK7QLocale6toUIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toUInt(s, ok);
+void* C_ZNK7QLocale18nativeLanguageNameEv(void *this_) {
+  auto rv = ((QLocale*)this_)->nativeLanguageName();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:949
-// qlonglong toLongLong(const class QStringRef &, _Bool *)
+// [8] QString nativeCountryName()
 extern "C"
-void C_ZNK7QLocale10toLongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toLongLong(s, ok);
+void* C_ZNK7QLocale17nativeCountryNameEv(void *this_) {
+  auto rv = ((QLocale*)this_)->nativeCountryName();
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:950
-// qulonglong toULongLong(const class QStringRef &, _Bool *)
-extern "C"
-void C_ZNK7QLocale11toULongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toULongLong(s, ok);
-}
-// /usr/include/qt/QtCore/qlocale.h:951
-// float toFloat(const class QStringRef &, _Bool *)
-extern "C"
-void C_ZNK7QLocale7toFloatERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toFloat(s, ok);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:952
-// double toDouble(const class QStringRef &, _Bool *)
+// [2] short toShort(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toDoubleERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
-  /*return*/ ((QLocale*)this_)->toDouble(s, ok);
+short C_ZNK7QLocale7toShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (short)((QLocale*)this_)->toShort(s, ok);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:953
+// [2] ushort toUShort(const class QString &, _Bool *)
+extern "C"
+ushort C_ZNK7QLocale8toUShortERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (ushort)((QLocale*)this_)->toUShort(s, ok);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:954
-// QString toString(qlonglong)
+// [4] int toInt(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEx(void *this_, qlonglong i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+int C_ZNK7QLocale5toIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (int)((QLocale*)this_)->toInt(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:955
-// QString toString(qulonglong)
+// [4] uint toUInt(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEy(void *this_, qulonglong i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+uint C_ZNK7QLocale6toUIntERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (uint)((QLocale*)this_)->toUInt(s, ok);
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:956
-// QString toString(short)
+// [8] qlonglong toLongLong(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEs(void *this_, short i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+qlonglong C_ZNK7QLocale10toLongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (qlonglong)((QLocale*)this_)->toLongLong(s, ok);
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:957
-// QString toString(ushort)
+// [8] qulonglong toULongLong(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEt(void *this_, ushort i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+qulonglong C_ZNK7QLocale11toULongLongERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (qulonglong)((QLocale*)this_)->toULongLong(s, ok);
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:958
-// QString toString(int)
+// [4] float toFloat(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEi(void *this_, int i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+float C_ZNK7QLocale7toFloatERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (float)((QLocale*)this_)->toFloat(s, ok);
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:959
-// QString toString(uint)
+// [8] double toDouble(const class QString &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEj(void *this_, uint i) {
-  /*return*/ ((QLocale*)this_)->toString(i);
+double C_ZNK7QLocale8toDoubleERK7QStringPb(void *this_, const QString & s, bool * ok) {
+  return (double)((QLocale*)this_)->toDouble(s, ok);
 }
-// /usr/include/qt/QtCore/qlocale.h:960
-// QString toString(double, char, int)
-extern "C"
-void C_ZNK7QLocale8toStringEdci(void *this_, double i, char f, int prec) {
-  /*return*/ ((QLocale*)this_)->toString(i, f, prec);
-}
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:961
-// QString toString(float, char, int)
+// [2] short toShort(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringEfci(void *this_, float i, char f, int prec) {
-  /*return*/ ((QLocale*)this_)->toString(i, f, prec);
+short C_ZNK7QLocale7toShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (short)((QLocale*)this_)->toShort(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:962
-// QString toString(const class QDate &, const class QString &)
+// [2] ushort toUShort(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK5QDateRK7QString(void *this_, const QDate & date, const QString & formatStr) {
-  /*return*/ ((QLocale*)this_)->toString(date, formatStr);
+ushort C_ZNK7QLocale8toUShortERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (ushort)((QLocale*)this_)->toUShort(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:963
-// QString toString(const class QDate &, enum QLocale::FormatType)
+// [4] int toInt(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE(void *this_, const QDate & date, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->toString(date, format);
+int C_ZNK7QLocale5toIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (int)((QLocale*)this_)->toInt(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:964
-// QString toString(const class QTime &, const class QString &)
+// [4] uint toUInt(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK5QTimeRK7QString(void *this_, const QTime & time, const QString & formatStr) {
-  /*return*/ ((QLocale*)this_)->toString(time, formatStr);
+uint C_ZNK7QLocale6toUIntERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (uint)((QLocale*)this_)->toUInt(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:965
-// QString toString(const class QTime &, enum QLocale::FormatType)
+// [8] qlonglong toLongLong(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK5QTimeNS_10FormatTypeE(void *this_, const QTime & time, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->toString(time, format);
+qlonglong C_ZNK7QLocale10toLongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (qlonglong)((QLocale*)this_)->toLongLong(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:966
-// QString toString(const class QDateTime &, enum QLocale::FormatType)
+// [8] qulonglong toULongLong(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK9QDateTimeNS_10FormatTypeE(void *this_, const QDateTime & dateTime, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->toString(dateTime, format);
+qulonglong C_ZNK7QLocale11toULongLongERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (qulonglong)((QLocale*)this_)->toULongLong(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:967
-// QString toString(const class QDateTime &, const class QString &)
+// [4] float toFloat(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale8toStringERK9QDateTimeRK7QString(void *this_, const QDateTime & dateTime, const QString & format) {
-  /*return*/ ((QLocale*)this_)->toString(dateTime, format);
+float C_ZNK7QLocale7toFloatERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (float)((QLocale*)this_)->toFloat(s, ok);
 }
-// /usr/include/qt/QtCore/qlocale.h:969
-// QString dateFormat(enum QLocale::FormatType)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:968
+// [8] double toDouble(const class QStringRef &, _Bool *)
 extern "C"
-void C_ZNK7QLocale10dateFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->dateFormat(format);
+double C_ZNK7QLocale8toDoubleERK10QStringRefPb(void *this_, const QStringRef & s, bool * ok) {
+  return (double)((QLocale*)this_)->toDouble(s, ok);
 }
-// /usr/include/qt/QtCore/qlocale.h:970
-// QString timeFormat(enum QLocale::FormatType)
-extern "C"
-void C_ZNK7QLocale10timeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->timeFormat(format);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:971
-// QString dateTimeFormat(enum QLocale::FormatType)
+// [2] short toShort(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale14dateTimeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->dateTimeFormat(format);
+short C_ZNK7QLocale7toShortE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (short)((QLocale*)this_)->toShort(s, ok);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:972
+// [2] ushort toUShort(class QStringView, _Bool *)
+extern "C"
+ushort C_ZNK7QLocale8toUShortE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (ushort)((QLocale*)this_)->toUShort(s, ok);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:973
-// QDate toDate(const class QString &, enum QLocale::FormatType)
+// [4] int toInt(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
-  /*return*/ ((QLocale*)this_)->toDate(string, arg1);
+int C_ZNK7QLocale5toIntE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (int)((QLocale*)this_)->toInt(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:974
-// QTime toTime(const class QString &, enum QLocale::FormatType)
+// [4] uint toUInt(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
-  /*return*/ ((QLocale*)this_)->toTime(string, arg1);
+uint C_ZNK7QLocale6toUIntE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (uint)((QLocale*)this_)->toUInt(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:975
-// QDateTime toDateTime(const class QString &, enum QLocale::FormatType)
+// [8] qlonglong toLongLong(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale10toDateTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->toDateTime(string, format);
+qlonglong C_ZNK7QLocale10toLongLongE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (qlonglong)((QLocale*)this_)->toLongLong(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:976
-// QDate toDate(const class QString &, const class QString &)
+// [8] qulonglong toULongLong(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale6toDateERK7QStringS2_(void *this_, const QString & string, const QString & format) {
-  /*return*/ ((QLocale*)this_)->toDate(string, format);
+qulonglong C_ZNK7QLocale11toULongLongE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (qulonglong)((QLocale*)this_)->toULongLong(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:977
-// QTime toTime(const class QString &, const class QString &)
+// [4] float toFloat(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale6toTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
-  /*return*/ ((QLocale*)this_)->toTime(string, format);
+float C_ZNK7QLocale7toFloatE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (float)((QLocale*)this_)->toFloat(s, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:978
-// QDateTime toDateTime(const class QString &, const class QString &)
+// [8] double toDouble(class QStringView, _Bool *)
 extern "C"
-void C_ZNK7QLocale10toDateTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
-  /*return*/ ((QLocale*)this_)->toDateTime(string, format);
+double C_ZNK7QLocale8toDoubleE11QStringViewPb(void *this_, QStringView s, bool * ok) {
+  return (double)((QLocale*)this_)->toDouble(s, ok);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:980
+// [8] QString toString(qlonglong)
+extern "C"
+void* C_ZNK7QLocale8toStringEx(void *this_, qlonglong i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:981
+// [8] QString toString(qulonglong)
+extern "C"
+void* C_ZNK7QLocale8toStringEy(void *this_, qulonglong i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:982
+// [8] QString toString(short)
+extern "C"
+void* C_ZNK7QLocale8toStringEs(void *this_, short i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:983
-// QChar decimalPoint()
+// [8] QString toString(ushort)
 extern "C"
-void C_ZNK7QLocale12decimalPointEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->decimalPoint();
+void* C_ZNK7QLocale8toStringEt(void *this_, ushort i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:984
-// QChar groupSeparator()
+// [8] QString toString(int)
 extern "C"
-void C_ZNK7QLocale14groupSeparatorEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->groupSeparator();
+void* C_ZNK7QLocale8toStringEi(void *this_, int i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:985
-// QChar percent()
+// [8] QString toString(uint)
 extern "C"
-void C_ZNK7QLocale7percentEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->percent();
+void* C_ZNK7QLocale8toStringEj(void *this_, uint i) {
+  auto rv = ((QLocale*)this_)->toString(i);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:986
-// QChar zeroDigit()
+// [8] QString toString(double, char, int)
 extern "C"
-void C_ZNK7QLocale9zeroDigitEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->zeroDigit();
+void* C_ZNK7QLocale8toStringEdci(void *this_, double i, char f, int prec) {
+  auto rv = ((QLocale*)this_)->toString(i, f, prec);
+return new QString(rv);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:987
-// QChar negativeSign()
+// [8] QString toString(float, char, int)
 extern "C"
-void C_ZNK7QLocale12negativeSignEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->negativeSign();
+void* C_ZNK7QLocale8toStringEfci(void *this_, float i, char f, int prec) {
+  auto rv = ((QLocale*)this_)->toString(i, f, prec);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:988
-// QChar positiveSign()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:990
+// [8] QString toString(const class QDate &, const class QString &)
 extern "C"
-void C_ZNK7QLocale12positiveSignEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->positiveSign();
+void* C_ZNK7QLocale8toStringERK5QDateRK7QString(void *this_, const QDate & date, const QString & formatStr) {
+  auto rv = ((QLocale*)this_)->toString(date, formatStr);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:989
-// QChar exponential()
-extern "C"
-void C_ZNK7QLocale11exponentialEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->exponential();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:991
-// QString monthName(int, enum QLocale::FormatType)
+// [8] QString toString(const class QTime &, const class QString &)
 extern "C"
-void C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->monthName(arg0, format);
+void* C_ZNK7QLocale8toStringERK5QTimeRK7QString(void *this_, const QTime & time, const QString & formatStr) {
+  auto rv = ((QLocale*)this_)->toString(time, formatStr);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:992
-// QString standaloneMonthName(int, enum QLocale::FormatType)
+// [8] QString toString(const class QDateTime &, const class QString &)
 extern "C"
-void C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->standaloneMonthName(arg0, format);
+void* C_ZNK7QLocale8toStringERK9QDateTimeRK7QString(void *this_, const QDateTime & dateTime, const QString & format) {
+  auto rv = ((QLocale*)this_)->toString(dateTime, format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:993
-// QString dayName(int, enum QLocale::FormatType)
-extern "C"
-void C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->dayName(arg0, format);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:994
-// QString standaloneDayName(int, enum QLocale::FormatType)
+// [8] QString toString(const class QDate &, class QStringView)
 extern "C"
-void C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
-  /*return*/ ((QLocale*)this_)->standaloneDayName(arg0, format);
+void* C_ZNK7QLocale8toStringERK5QDate11QStringView(void *this_, const QDate & date, QStringView formatStr) {
+  auto rv = ((QLocale*)this_)->toString(date, formatStr);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:995
+// [8] QString toString(const class QTime &, class QStringView)
+extern "C"
+void* C_ZNK7QLocale8toStringERK5QTime11QStringView(void *this_, const QTime & time, QStringView formatStr) {
+  auto rv = ((QLocale*)this_)->toString(time, formatStr);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:996
-// Qt::DayOfWeek firstDayOfWeek()
+// [8] QString toString(const class QDateTime &, class QStringView)
 extern "C"
-void C_ZNK7QLocale14firstDayOfWeekEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->firstDayOfWeek();
+void* C_ZNK7QLocale8toStringERK9QDateTime11QStringView(void *this_, const QDateTime & dateTime, QStringView format) {
+  auto rv = ((QLocale*)this_)->toString(dateTime, format);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:997
-// QList<Qt::DayOfWeek> weekdays()
+// [8] QString toString(const class QDate &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale8weekdaysEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->weekdays();
+void* C_ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE(void *this_, const QDate & date, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->toString(date, format);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:998
+// [8] QString toString(const class QTime &, enum QLocale::FormatType)
+extern "C"
+void* C_ZNK7QLocale8toStringERK5QTimeNS_10FormatTypeE(void *this_, const QTime & time, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->toString(time, format);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:999
-// QString amText()
+// [8] QString toString(const class QDateTime &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale6amTextEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->amText();
+void* C_ZNK7QLocale8toStringERK9QDateTimeNS_10FormatTypeE(void *this_, const QDateTime & dateTime, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->toString(dateTime, format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1000
-// QString pmText()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1001
+// [8] QString dateFormat(enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale6pmTextEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->pmText();
+void* C_ZNK7QLocale10dateFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->dateFormat(format);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1002
-// QLocale::MeasurementSystem measurementSystem()
+// [8] QString timeFormat(enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale17measurementSystemEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->measurementSystem();
+void* C_ZNK7QLocale10timeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->timeFormat(format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1004
-// Qt::LayoutDirection textDirection()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1003
+// [8] QString dateTimeFormat(enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale13textDirectionEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->textDirection();
+void* C_ZNK7QLocale14dateTimeFormatENS_10FormatTypeE(void *this_, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->dateTimeFormat(format);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1005
+// [8] QDate toDate(const class QString &, enum QLocale::FormatType)
+extern "C"
+void* C_ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
+  auto rv = ((QLocale*)this_)->toDate(string, arg1);
+return new QDate(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1006
-// QString toUpper(const class QString &)
+// [4] QTime toTime(const class QString &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale7toUpperERK7QString(void *this_, const QString & str) {
-  /*return*/ ((QLocale*)this_)->toUpper(str);
+void* C_ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType arg1) {
+  auto rv = ((QLocale*)this_)->toTime(string, arg1);
+return new QTime(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1007
-// QString toLower(const class QString &)
+// [8] QDateTime toDateTime(const class QString &, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale7toLowerERK7QString(void *this_, const QString & str) {
-  /*return*/ ((QLocale*)this_)->toLower(str);
+void* C_ZNK7QLocale10toDateTimeERK7QStringNS_10FormatTypeE(void *this_, const QString & string, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->toDateTime(string, format);
+return new QDateTime(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1008
+// [8] QDate toDate(const class QString &, const class QString &)
+extern "C"
+void* C_ZNK7QLocale6toDateERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  auto rv = ((QLocale*)this_)->toDate(string, format);
+return new QDate(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1009
-// QString currencySymbol(enum QLocale::CurrencySymbolFormat)
+// [4] QTime toTime(const class QString &, const class QString &)
 extern "C"
-void C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *this_, QLocale::CurrencySymbolFormat arg0) {
-  /*return*/ ((QLocale*)this_)->currencySymbol(arg0);
+void* C_ZNK7QLocale6toTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  auto rv = ((QLocale*)this_)->toTime(string, format);
+return new QTime(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1010
-// QString toCurrencyString(qlonglong, const class QString &)
+// [8] QDateTime toDateTime(const class QString &, const class QString &)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringExRK7QString(void *this_, qlonglong arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+void* C_ZNK7QLocale10toDateTimeERK7QStringS2_(void *this_, const QString & string, const QString & format) {
+  auto rv = ((QLocale*)this_)->toDateTime(string, format);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1011
-// QString toCurrencyString(qulonglong, const class QString &)
-extern "C"
-void C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *this_, qulonglong arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
-}
-// inline
-// /usr/include/qt/QtCore/qlocale.h:1012
-// QString toCurrencyString(short, const class QString &)
-extern "C"
-void C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *this_, short arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
-}
-// inline
-// /usr/include/qt/QtCore/qlocale.h:1013
-// QString toCurrencyString(ushort, const class QString &)
-extern "C"
-void C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *this_, ushort arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
-}
-// inline
-// /usr/include/qt/QtCore/qlocale.h:1014
-// QString toCurrencyString(int, const class QString &)
-extern "C"
-void C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *this_, int arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
-}
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1015
-// QString toCurrencyString(uint, const class QString &)
+// [2] QChar decimalPoint()
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *this_, uint arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+void* C_ZNK7QLocale12decimalPointEv(void *this_) {
+  auto rv = ((QLocale*)this_)->decimalPoint();
+return new QChar(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1016
+// [2] QChar groupSeparator()
+extern "C"
+void* C_ZNK7QLocale14groupSeparatorEv(void *this_) {
+  auto rv = ((QLocale*)this_)->groupSeparator();
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1017
+// [2] QChar percent()
+extern "C"
+void* C_ZNK7QLocale7percentEv(void *this_) {
+  auto rv = ((QLocale*)this_)->percent();
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1018
+// [2] QChar zeroDigit()
+extern "C"
+void* C_ZNK7QLocale9zeroDigitEv(void *this_) {
+  auto rv = ((QLocale*)this_)->zeroDigit();
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1019
+// [2] QChar negativeSign()
+extern "C"
+void* C_ZNK7QLocale12negativeSignEv(void *this_) {
+  auto rv = ((QLocale*)this_)->negativeSign();
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1020
+// [2] QChar positiveSign()
+extern "C"
+void* C_ZNK7QLocale12positiveSignEv(void *this_) {
+  auto rv = ((QLocale*)this_)->positiveSign();
+return new QChar(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1021
-// QString toCurrencyString(double, const class QString &)
+// [2] QChar exponential()
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *this_, double arg0, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+void* C_ZNK7QLocale11exponentialEv(void *this_) {
+  auto rv = ((QLocale*)this_)->exponential();
+return new QChar(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1022
-// QString toCurrencyString(double, const class QString &, int)
-extern "C"
-void C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *this_, double arg0, const QString & symbol, int precision) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(arg0, symbol, precision);
-}
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1023
-// QString toCurrencyString(float, const class QString &)
+// [8] QString monthName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEfRK7QString(void *this_, float i, const QString & symbol) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(i, symbol);
+void* C_ZNK7QLocale9monthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->monthName(arg0, format);
+return new QString(rv);
 }
-// inline
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1024
+// [8] QString standaloneMonthName(int, enum QLocale::FormatType)
+extern "C"
+void* C_ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->standaloneMonthName(arg0, format);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1025
-// QString toCurrencyString(float, const class QString &, int)
+// [8] QString dayName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale16toCurrencyStringEfRK7QStringi(void *this_, float i, const QString & symbol, int precision) {
-  /*return*/ ((QLocale*)this_)->toCurrencyString(i, symbol, precision);
+void* C_ZNK7QLocale7dayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->dayName(arg0, format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1029
-// QStringList uiLanguages()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1026
+// [8] QString standaloneDayName(int, enum QLocale::FormatType)
 extern "C"
-void C_ZNK7QLocale11uiLanguagesEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->uiLanguages();
+void* C_ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE(void *this_, int arg0, QLocale::FormatType format) {
+  auto rv = ((QLocale*)this_)->standaloneDayName(arg0, format);
+return new QString(rv);
 }
-// static
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1028
+// [4] Qt::DayOfWeek firstDayOfWeek()
+extern "C"
+Qt::DayOfWeek C_ZNK7QLocale14firstDayOfWeekEv(void *this_) {
+  return (Qt::DayOfWeek)((QLocale*)this_)->firstDayOfWeek();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1031
+// [8] QString amText()
+extern "C"
+void* C_ZNK7QLocale6amTextEv(void *this_) {
+  auto rv = ((QLocale*)this_)->amText();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1032
+// [8] QString pmText()
+extern "C"
+void* C_ZNK7QLocale6pmTextEv(void *this_) {
+  auto rv = ((QLocale*)this_)->pmText();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1034
-// QString languageToString(enum QLocale::Language)
+// [4] QLocale::MeasurementSystem measurementSystem()
 extern "C"
-void C_ZN7QLocale16languageToStringENS_8LanguageE(QLocale::Language language) {
-  /*return*/ QLocale::languageToString(language);
+QLocale::MeasurementSystem C_ZNK7QLocale17measurementSystemEv(void *this_) {
+  return (QLocale::MeasurementSystem)((QLocale*)this_)->measurementSystem();
 }
-// static
-// /usr/include/qt/QtCore/qlocale.h:1035
-// QString countryToString(enum QLocale::Country)
-extern "C"
-void C_ZN7QLocale15countryToStringENS_7CountryE(QLocale::Country country) {
-  /*return*/ QLocale::countryToString(country);
-}
-// static
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1036
-// QString scriptToString(enum QLocale::Script)
+// [4] Qt::LayoutDirection textDirection()
 extern "C"
-void C_ZN7QLocale14scriptToStringENS_6ScriptE(QLocale::Script script) {
-  /*return*/ QLocale::scriptToString(script);
+Qt::LayoutDirection C_ZNK7QLocale13textDirectionEv(void *this_) {
+  return (Qt::LayoutDirection)((QLocale*)this_)->textDirection();
 }
-// static
-// /usr/include/qt/QtCore/qlocale.h:1037
-// void setDefault(const class QLocale &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1038
+// [8] QString toUpper(const class QString &)
+extern "C"
+void* C_ZNK7QLocale7toUpperERK7QString(void *this_, const QString & str) {
+  auto rv = ((QLocale*)this_)->toUpper(str);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1039
+// [8] QString toLower(const class QString &)
+extern "C"
+void* C_ZNK7QLocale7toLowerERK7QString(void *this_, const QString & str) {
+  auto rv = ((QLocale*)this_)->toLower(str);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1041
+// [8] QString currencySymbol(enum QLocale::CurrencySymbolFormat)
+extern "C"
+void* C_ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE(void *this_, QLocale::CurrencySymbolFormat arg0) {
+  auto rv = ((QLocale*)this_)->currencySymbol(arg0);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1042
+// [8] QString toCurrencyString(qlonglong, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringExRK7QString(void *this_, qlonglong arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1043
+// [8] QString toCurrencyString(qulonglong, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEyRK7QString(void *this_, qulonglong arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1044
+// [8] QString toCurrencyString(short, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEsRK7QString(void *this_, short arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1045
+// [8] QString toCurrencyString(ushort, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEtRK7QString(void *this_, ushort arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1046
+// [8] QString toCurrencyString(int, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEiRK7QString(void *this_, int arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1047
+// [8] QString toCurrencyString(uint, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEjRK7QString(void *this_, uint arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1053
+// [8] QString toCurrencyString(double, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEdRK7QString(void *this_, double arg0, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1054
+// [8] QString toCurrencyString(double, const class QString &, int)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEdRK7QStringi(void *this_, double arg0, const QString & symbol, int precision) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(arg0, symbol, precision);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1055
+// [8] QString toCurrencyString(float, const class QString &)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEfRK7QString(void *this_, float i, const QString & symbol) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(i, symbol);
+return new QString(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1057
+// [8] QString toCurrencyString(float, const class QString &, int)
+extern "C"
+void* C_ZNK7QLocale16toCurrencyStringEfRK7QStringi(void *this_, float i, const QString & symbol, int precision) {
+  auto rv = ((QLocale*)this_)->toCurrencyString(i, symbol, precision);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1068
+// [8] QString languageToString(enum QLocale::Language)
+extern "C"
+void* C_ZN7QLocale16languageToStringENS_8LanguageE(QLocale::Language language) {
+  auto rv = QLocale::languageToString(language);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1069
+// [8] QString countryToString(enum QLocale::Country)
+extern "C"
+void* C_ZN7QLocale15countryToStringENS_7CountryE(QLocale::Country country) {
+  auto rv = QLocale::countryToString(country);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1070
+// [8] QString scriptToString(enum QLocale::Script)
+extern "C"
+void* C_ZN7QLocale14scriptToStringENS_6ScriptE(QLocale::Script script) {
+  auto rv = QLocale::scriptToString(script);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1071
+// [-2] void setDefault(const class QLocale &)
 extern "C"
 void C_ZN7QLocale10setDefaultERKS_(const QLocale & locale) {
   QLocale::setDefault(locale);
 }
-// static inline
-// /usr/include/qt/QtCore/qlocale.h:1039
-// QLocale c()
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1073
+// [8] QLocale c()
 extern "C"
-void C_ZN7QLocale1cEv() {
-  /*return*/ QLocale::c();
+void* C_ZN7QLocale1cEv() {
+  auto rv = QLocale::c();
+return new QLocale(rv);
 }
-// static
-// /usr/include/qt/QtCore/qlocale.h:1040
-// QLocale system()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1074
+// [8] QLocale system()
 extern "C"
-void C_ZN7QLocale6systemEv() {
-  /*return*/ QLocale::system();
+void* C_ZN7QLocale6systemEv() {
+  auto rv = QLocale::system();
+return new QLocale(rv);
 }
-// static
-// /usr/include/qt/QtCore/qlocale.h:1042
-// QList<QLocale> matchingLocales(class QLocale::Language, class QLocale::Script, class QLocale::Country)
-extern "C"
-void C_ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
-  /*return*/ QLocale::matchingLocales(language, script, country);
-}
-// static
-// /usr/include/qt/QtCore/qlocale.h:1043
-// QList<QLocale::Country> countriesForLanguage(enum QLocale::Language)
-extern "C"
-void C_ZN7QLocale20countriesForLanguageENS_8LanguageE(QLocale::Language lang) {
-  /*return*/ QLocale::countriesForLanguage(lang);
-}
-// /usr/include/qt/QtCore/qlocale.h:1045
-// void setNumberOptions(NumberOptions)
-extern "C"
-void C_ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE(void *this_, QFlags<QLocale::NumberOption> options) {
-  ((QLocale*)this_)->setNumberOptions(options);
-}
-// /usr/include/qt/QtCore/qlocale.h:1046
-// NumberOptions numberOptions()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1080
+// [4] QLocale::NumberOptions numberOptions()
 extern "C"
 void C_ZNK7QLocale13numberOptionsEv(void *this_) {
-  /*return*/ ((QLocale*)this_)->numberOptions();
+  auto rv = ((QLocale*)this_)->numberOptions();
+/*return rv;*/
 }
-// /usr/include/qt/QtCore/qlocale.h:1049
-// QString quoteString(const class QString &, enum QLocale::QuotationStyle)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1083
+// [8] QString quoteString(const class QString &, enum QLocale::QuotationStyle)
 extern "C"
-void C_ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE(void *this_, const QString & str, QLocale::QuotationStyle style) {
-  /*return*/ ((QLocale*)this_)->quoteString(str, style);
+void* C_ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE(void *this_, const QString & str, QLocale::QuotationStyle style) {
+  auto rv = ((QLocale*)this_)->quoteString(str, style);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1050
-// QString quoteString(const class QStringRef &, enum QLocale::QuotationStyle)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1084
+// [8] QString quoteString(const class QStringRef &, enum QLocale::QuotationStyle)
 extern "C"
-void C_ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE(void *this_, const QStringRef & str, QLocale::QuotationStyle style) {
-  /*return*/ ((QLocale*)this_)->quoteString(str, style);
+void* C_ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE(void *this_, const QStringRef & str, QLocale::QuotationStyle style) {
+  auto rv = ((QLocale*)this_)->quoteString(str, style);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qlocale.h:1052
-// QString createSeparatedList(const class QStringList &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1086
+// [8] QString createSeparatedList(const class QStringList &)
 extern "C"
-void C_ZNK7QLocale19createSeparatedListERK11QStringList(void *this_, const QStringList & strl) {
-  /*return*/ ((QLocale*)this_)->createSeparatedList(strl);
+void* C_ZNK7QLocale19createSeparatedListERK11QStringList(void *this_, const QStringList & strl) {
+  auto rv = ((QLocale*)this_)->createSeparatedList(strl);
+return new QString(rv);
 }
 //  main block end

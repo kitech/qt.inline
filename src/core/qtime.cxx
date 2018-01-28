@@ -3,159 +3,201 @@
 #include <qdatetime.h>
 #include <QtCore>
 
+// QTime is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qdatetime.h:156
-// void QTime()
+
+class MyQTime : public QTime {
+public:
+MyQTime() : QTime() {}
+MyQTime(int h, int m, int s, int ms) : QTime(h, m, s, ms) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:159
+// [-2] void QTime()
 extern "C"
 void* C_ZN5QTimeC1Ev() {
-  return new QTime();
+  (MyQTime*)(0);
+  return  new MyQTime();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:161
-// void QTime(int, int, int, int)
+// [-2] void QTime(int, int, int, int)
 extern "C"
 void* C_ZN5QTimeC1Eiiii(int h, int m, int s, int ms) {
-  return new QTime(h, m, s, ms);
+  (MyQTime*)(0);
+  return  new MyQTime(h, m, s, ms);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:163
-// bool isNull()
+// [1] bool isNull()
 extern "C"
-void C_ZNK5QTime6isNullEv(void *this_) {
-  /*return*/ ((QTime*)this_)->isNull();
+bool C_ZNK5QTime6isNullEv(void *this_) {
+  return (bool)((QTime*)this_)->isNull();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:164
-// bool isValid()
+// [1] bool isValid()
 extern "C"
-void C_ZNK5QTime7isValidEv(void *this_) {
-  /*return*/ ((QTime*)this_)->isValid();
+bool C_ZNK5QTime7isValidEv(void *this_) {
+  return (bool)((QTime*)this_)->isValid();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:166
-// int hour()
+// [4] int hour()
 extern "C"
-void C_ZNK5QTime4hourEv(void *this_) {
-  /*return*/ ((QTime*)this_)->hour();
+int C_ZNK5QTime4hourEv(void *this_) {
+  return (int)((QTime*)this_)->hour();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:167
-// int minute()
+// [4] int minute()
 extern "C"
-void C_ZNK5QTime6minuteEv(void *this_) {
-  /*return*/ ((QTime*)this_)->minute();
+int C_ZNK5QTime6minuteEv(void *this_) {
+  return (int)((QTime*)this_)->minute();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:168
-// int second()
+// [4] int second()
 extern "C"
-void C_ZNK5QTime6secondEv(void *this_) {
-  /*return*/ ((QTime*)this_)->second();
+int C_ZNK5QTime6secondEv(void *this_) {
+  return (int)((QTime*)this_)->second();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:169
-// int msec()
+// [4] int msec()
 extern "C"
-void C_ZNK5QTime4msecEv(void *this_) {
-  /*return*/ ((QTime*)this_)->msec();
+int C_ZNK5QTime4msecEv(void *this_) {
+  return (int)((QTime*)this_)->msec();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:171
-// QString toString(Qt::DateFormat)
+// [8] QString toString(Qt::DateFormat)
 extern "C"
-void C_ZNK5QTime8toStringEN2Qt10DateFormatE(void *this_, Qt::DateFormat f) {
-  /*return*/ ((QTime*)this_)->toString(f);
+void* C_ZNK5QTime8toStringEN2Qt10DateFormatE(void *this_, Qt::DateFormat f) {
+  auto rv = ((QTime*)this_)->toString(f);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:172
-// QString toString(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:173
+// [8] QString toString(const class QString &)
 extern "C"
-void C_ZNK5QTime8toStringERK7QString(void *this_, const QString & format) {
-  /*return*/ ((QTime*)this_)->toString(format);
+void* C_ZNK5QTime8toStringERK7QString(void *this_, const QString & format) {
+  auto rv = ((QTime*)this_)->toString(format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:174
-// bool setHMS(int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:175
+// [8] QString toString(class QStringView)
 extern "C"
-void C_ZN5QTime6setHMSEiiii(void *this_, int h, int m, int s, int ms) {
-  /*return*/ ((QTime*)this_)->setHMS(h, m, s, ms);
+void* C_ZNK5QTime8toStringE11QStringView(void *this_, QStringView format) {
+  auto rv = ((QTime*)this_)->toString(format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:176
-// QTime addSecs(int)
-extern "C"
-void C_ZNK5QTime7addSecsEi(void *this_, int secs) {
-  /*return*/ ((QTime*)this_)->addSecs(secs);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:177
-// int secsTo(const class QTime &)
+// [1] bool setHMS(int, int, int, int)
 extern "C"
-void C_ZNK5QTime6secsToERKS_(void *this_, const QTime & arg0) {
-  /*return*/ ((QTime*)this_)->secsTo(arg0);
+bool C_ZN5QTime6setHMSEiiii(void *this_, int h, int m, int s, int ms) {
+  return (bool)((QTime*)this_)->setHMS(h, m, s, ms);
 }
-// /usr/include/qt/QtCore/qdatetime.h:178
-// QTime addMSecs(int)
-extern "C"
-void C_ZNK5QTime8addMSecsEi(void *this_, int ms) {
-  /*return*/ ((QTime*)this_)->addMSecs(ms);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:179
-// int msecsTo(const class QTime &)
+// [4] QTime addSecs(int)
 extern "C"
-void C_ZNK5QTime7msecsToERKS_(void *this_, const QTime & arg0) {
-  /*return*/ ((QTime*)this_)->msecsTo(arg0);
+void* C_ZNK5QTime7addSecsEi(void *this_, int secs) {
+  auto rv = ((QTime*)this_)->addSecs(secs);
+return new QTime(rv);
 }
-// static inline
-// /usr/include/qt/QtCore/qdatetime.h:188
-// QTime fromMSecsSinceStartOfDay(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:180
+// [4] int secsTo(const class QTime &)
 extern "C"
-void C_ZN5QTime24fromMSecsSinceStartOfDayEi(int msecs) {
-  /*return*/ QTime::fromMSecsSinceStartOfDay(msecs);
+int C_ZNK5QTime6secsToERKS_(void *this_, const QTime & arg0) {
+  return (int)((QTime*)this_)->secsTo(arg0);
 }
-// inline
-// /usr/include/qt/QtCore/qdatetime.h:189
-// int msecsSinceStartOfDay()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:181
+// [4] QTime addMSecs(int)
 extern "C"
-void C_ZNK5QTime20msecsSinceStartOfDayEv(void *this_) {
-  /*return*/ ((QTime*)this_)->msecsSinceStartOfDay();
+void* C_ZNK5QTime8addMSecsEi(void *this_, int ms) {
+  auto rv = ((QTime*)this_)->addMSecs(ms);
+return new QTime(rv);
 }
-// static
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:182
+// [4] int msecsTo(const class QTime &)
+extern "C"
+int C_ZNK5QTime7msecsToERKS_(void *this_, const QTime & arg0) {
+  return (int)((QTime*)this_)->msecsTo(arg0);
+}
+// Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:191
-// QTime currentTime()
+// [4] QTime fromMSecsSinceStartOfDay(int)
 extern "C"
-void C_ZN5QTime11currentTimeEv() {
-  /*return*/ QTime::currentTime();
+void* C_ZN5QTime24fromMSecsSinceStartOfDayEi(int msecs) {
+  auto rv = QTime::fromMSecsSinceStartOfDay(msecs);
+return new QTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:193
-// QTime fromString(const class QString &, Qt::DateFormat)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:192
+// [4] int msecsSinceStartOfDay()
 extern "C"
-void C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
-  /*return*/ QTime::fromString(s, f);
+int C_ZNK5QTime20msecsSinceStartOfDayEv(void *this_) {
+  return (int)((QTime*)this_)->msecsSinceStartOfDay();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:194
-// QTime fromString(const class QString &, const class QString &)
+// [4] QTime currentTime()
 extern "C"
-void C_ZN5QTime10fromStringERK7QStringS2_(const QString & s, const QString & format) {
-  /*return*/ QTime::fromString(s, format);
+void* C_ZN5QTime11currentTimeEv() {
+  auto rv = QTime::currentTime();
+return new QTime(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:196
-// bool isValid(int, int, int, int)
+// [4] QTime fromString(const class QString &, Qt::DateFormat)
 extern "C"
-void C_ZN5QTime7isValidEiiii(int h, int m, int s, int ms) {
-  /*return*/ QTime::isValid(h, m, s, ms);
+void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
+  auto rv = QTime::fromString(s, f);
+return new QTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:198
-// void start()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:197
+// [4] QTime fromString(const class QString &, const class QString &)
+extern "C"
+void* C_ZN5QTime10fromStringERK7QStringS2_(const QString & s, const QString & format) {
+  auto rv = QTime::fromString(s, format);
+return new QTime(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:199
+// [1] bool isValid(int, int, int, int)
+extern "C"
+bool C_ZN5QTime7isValidEiiii(int h, int m, int s, int ms) {
+  return (bool)QTime::isValid(h, m, s, ms);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:201
+// [-2] void start()
 extern "C"
 void C_ZN5QTime5startEv(void *this_) {
   ((QTime*)this_)->start();
 }
-// /usr/include/qt/QtCore/qdatetime.h:199
-// int restart()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:202
+// [4] int restart()
 extern "C"
-void C_ZN5QTime7restartEv(void *this_) {
-  /*return*/ ((QTime*)this_)->restart();
+int C_ZN5QTime7restartEv(void *this_) {
+  return (int)((QTime*)this_)->restart();
 }
-// /usr/include/qt/QtCore/qdatetime.h:200
-// int elapsed()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:203
+// [4] int elapsed()
 extern "C"
-void C_ZNK5QTime7elapsedEv(void *this_) {
-  /*return*/ ((QTime*)this_)->elapsed();
+int C_ZNK5QTime7elapsedEv(void *this_) {
+  return (int)((QTime*)this_)->elapsed();
 }
 //  main block end

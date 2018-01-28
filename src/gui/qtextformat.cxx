@@ -3,325 +3,359 @@
 #include <qtextformat.h>
 #include <QtGui>
 
+// QTextFormat is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qtextformat.h:287
-// void QTextFormat()
+
+class MyQTextFormat : public QTextFormat {
+public:
+MyQTextFormat() : QTextFormat() {}
+MyQTextFormat(int type) : QTextFormat(type) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:288
+// [-2] void QTextFormat()
 extern "C"
 void* C_ZN11QTextFormatC1Ev() {
-  return new QTextFormat();
+  (MyQTextFormat*)(0);
+  return  new MyQTextFormat();
 }
-// /usr/include/qt/QtGui/qtextformat.h:289
-// void QTextFormat(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:290
+// [-2] void QTextFormat(int)
 extern "C"
 void* C_ZN11QTextFormatC1Ei(int type) {
-  return new QTextFormat(type);
+  (MyQTextFormat*)(0);
+  return  new MyQTextFormat(type);
 }
-// /usr/include/qt/QtGui/qtextformat.h:293
-// void ~QTextFormat()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:294
+// [-2] void ~QTextFormat()
 extern "C"
 void C_ZN11QTextFormatD1Ev(void *this_) {
   delete (QTextFormat*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:295
-// void swap(class QTextFormat &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:296
+// [-2] void swap(class QTextFormat &)
 extern "C"
 void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat & other) {
   ((QTextFormat*)this_)->swap(other);
 }
-// /usr/include/qt/QtGui/qtextformat.h:298
-// void merge(const class QTextFormat &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:299
+// [-2] void merge(const class QTextFormat &)
 extern "C"
 void C_ZN11QTextFormat5mergeERKS_(void *this_, const QTextFormat & other) {
   ((QTextFormat*)this_)->merge(other);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:300
-// bool isValid()
-extern "C"
-void C_ZNK11QTextFormat7isValidEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isValid();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:301
-// bool isEmpty()
+// [1] bool isValid()
 extern "C"
-void C_ZNK11QTextFormat7isEmptyEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isEmpty();
+bool C_ZNK11QTextFormat7isValidEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isValid();
 }
-// /usr/include/qt/QtGui/qtextformat.h:303
-// int type()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:302
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK11QTextFormat4typeEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->type();
+bool C_ZNK11QTextFormat7isEmptyEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isEmpty();
 }
-// /usr/include/qt/QtGui/qtextformat.h:305
-// int objectIndex()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:304
+// [4] int type()
 extern "C"
-void C_ZNK11QTextFormat11objectIndexEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->objectIndex();
+int C_ZNK11QTextFormat4typeEv(void *this_) {
+  return (int)((QTextFormat*)this_)->type();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:306
-// void setObjectIndex(int)
+// [4] int objectIndex()
+extern "C"
+int C_ZNK11QTextFormat11objectIndexEv(void *this_) {
+  return (int)((QTextFormat*)this_)->objectIndex();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:307
+// [-2] void setObjectIndex(int)
 extern "C"
 void C_ZN11QTextFormat14setObjectIndexEi(void *this_, int object) {
   ((QTextFormat*)this_)->setObjectIndex(object);
 }
-// /usr/include/qt/QtGui/qtextformat.h:308
-// QVariant property(int)
-extern "C"
-void C_ZNK11QTextFormat8propertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->property(propertyId);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:309
-// void setProperty(int, const class QVariant &)
+// [16] QVariant property(int)
+extern "C"
+void* C_ZNK11QTextFormat8propertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->property(propertyId);
+return new QVariant(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:310
+// [-2] void setProperty(int, const class QVariant &)
 extern "C"
 void C_ZN11QTextFormat11setPropertyEiRK8QVariant(void *this_, int propertyId, const QVariant & value) {
   ((QTextFormat*)this_)->setProperty(propertyId, value);
 }
-// /usr/include/qt/QtGui/qtextformat.h:310
-// void clearProperty(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:311
+// [-2] void clearProperty(int)
 extern "C"
 void C_ZN11QTextFormat13clearPropertyEi(void *this_, int propertyId) {
   ((QTextFormat*)this_)->clearProperty(propertyId);
 }
-// /usr/include/qt/QtGui/qtextformat.h:311
-// bool hasProperty(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:312
+// [1] bool hasProperty(int)
 extern "C"
-void C_ZNK11QTextFormat11hasPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->hasProperty(propertyId);
+bool C_ZNK11QTextFormat11hasPropertyEi(void *this_, int propertyId) {
+  return (bool)((QTextFormat*)this_)->hasProperty(propertyId);
 }
-// /usr/include/qt/QtGui/qtextformat.h:313
-// bool boolProperty(int)
-extern "C"
-void C_ZNK11QTextFormat12boolPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->boolProperty(propertyId);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:314
-// int intProperty(int)
+// [1] bool boolProperty(int)
 extern "C"
-void C_ZNK11QTextFormat11intPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->intProperty(propertyId);
+bool C_ZNK11QTextFormat12boolPropertyEi(void *this_, int propertyId) {
+  return (bool)((QTextFormat*)this_)->boolProperty(propertyId);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:315
-// qreal doubleProperty(int)
+// [4] int intProperty(int)
 extern "C"
-void C_ZNK11QTextFormat14doublePropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->doubleProperty(propertyId);
+int C_ZNK11QTextFormat11intPropertyEi(void *this_, int propertyId) {
+  return (int)((QTextFormat*)this_)->intProperty(propertyId);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:316
-// QString stringProperty(int)
+// [8] qreal doubleProperty(int)
 extern "C"
-void C_ZNK11QTextFormat14stringPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->stringProperty(propertyId);
+qreal C_ZNK11QTextFormat14doublePropertyEi(void *this_, int propertyId) {
+  return (qreal)((QTextFormat*)this_)->doubleProperty(propertyId);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:317
-// QColor colorProperty(int)
+// [8] QString stringProperty(int)
 extern "C"
-void C_ZNK11QTextFormat13colorPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->colorProperty(propertyId);
+void* C_ZNK11QTextFormat14stringPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->stringProperty(propertyId);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:318
-// QPen penProperty(int)
+// [16] QColor colorProperty(int)
 extern "C"
-void C_ZNK11QTextFormat11penPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->penProperty(propertyId);
+void* C_ZNK11QTextFormat13colorPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->colorProperty(propertyId);
+return new QColor(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:319
-// QBrush brushProperty(int)
+// [8] QPen penProperty(int)
 extern "C"
-void C_ZNK11QTextFormat13brushPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->brushProperty(propertyId);
+void* C_ZNK11QTextFormat11penPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->penProperty(propertyId);
+return new QPen(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:320
-// QTextLength lengthProperty(int)
+// [8] QBrush brushProperty(int)
 extern "C"
-void C_ZNK11QTextFormat14lengthPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->lengthProperty(propertyId);
+void* C_ZNK11QTextFormat13brushPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->brushProperty(propertyId);
+return new QBrush(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:321
-// QVector<QTextLength> lengthVectorProperty(int)
+// [16] QTextLength lengthProperty(int)
 extern "C"
-void C_ZNK11QTextFormat20lengthVectorPropertyEi(void *this_, int propertyId) {
-  /*return*/ ((QTextFormat*)this_)->lengthVectorProperty(propertyId);
+void* C_ZNK11QTextFormat14lengthPropertyEi(void *this_, int propertyId) {
+  auto rv = ((QTextFormat*)this_)->lengthProperty(propertyId);
+return new QTextLength(rv);
 }
-// /usr/include/qt/QtGui/qtextformat.h:323
-// void setProperty(int, const QVector<class QTextLength> &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:327
+// [4] int propertyCount()
 extern "C"
-void C_ZN11QTextFormat11setPropertyEiRK7QVectorI11QTextLengthE(void *this_, int propertyId, const QVector<QTextLength> & lengths) {
-  ((QTextFormat*)this_)->setProperty(propertyId, lengths);
+int C_ZNK11QTextFormat13propertyCountEv(void *this_) {
+  return (int)((QTextFormat*)this_)->propertyCount();
 }
-// /usr/include/qt/QtGui/qtextformat.h:325
-// QMap<int, QVariant> properties()
-extern "C"
-void C_ZNK11QTextFormat10propertiesEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->properties();
-}
-// /usr/include/qt/QtGui/qtextformat.h:326
-// int propertyCount()
-extern "C"
-void C_ZNK11QTextFormat13propertyCountEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->propertyCount();
-}
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:328
-// void setObjectType(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:329
+// [-2] void setObjectType(int)
 extern "C"
 void C_ZN11QTextFormat13setObjectTypeEi(void *this_, int type) {
   ((QTextFormat*)this_)->setObjectType(type);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:329
-// int objectType()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:330
+// [4] int objectType()
 extern "C"
-void C_ZNK11QTextFormat10objectTypeEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->objectType();
+int C_ZNK11QTextFormat10objectTypeEv(void *this_) {
+  return (int)((QTextFormat*)this_)->objectType();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:332
-// bool isCharFormat()
-extern "C"
-void C_ZNK11QTextFormat12isCharFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isCharFormat();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:333
-// bool isBlockFormat()
+// [1] bool isCharFormat()
 extern "C"
-void C_ZNK11QTextFormat13isBlockFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isBlockFormat();
+bool C_ZNK11QTextFormat12isCharFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isCharFormat();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:334
-// bool isListFormat()
+// [1] bool isBlockFormat()
 extern "C"
-void C_ZNK11QTextFormat12isListFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isListFormat();
+bool C_ZNK11QTextFormat13isBlockFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isBlockFormat();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:335
-// bool isFrameFormat()
+// [1] bool isListFormat()
 extern "C"
-void C_ZNK11QTextFormat13isFrameFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isFrameFormat();
+bool C_ZNK11QTextFormat12isListFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isListFormat();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:336
-// bool isImageFormat()
+// [1] bool isFrameFormat()
 extern "C"
-void C_ZNK11QTextFormat13isImageFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isImageFormat();
+bool C_ZNK11QTextFormat13isFrameFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isFrameFormat();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:337
-// bool isTableFormat()
+// [1] bool isImageFormat()
 extern "C"
-void C_ZNK11QTextFormat13isTableFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isTableFormat();
+bool C_ZNK11QTextFormat13isImageFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isImageFormat();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:338
-// bool isTableCellFormat()
+// [1] bool isTableFormat()
 extern "C"
-void C_ZNK11QTextFormat17isTableCellFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->isTableCellFormat();
+bool C_ZNK11QTextFormat13isTableFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isTableFormat();
 }
-// /usr/include/qt/QtGui/qtextformat.h:340
-// QTextBlockFormat toBlockFormat()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:339
+// [1] bool isTableCellFormat()
 extern "C"
-void C_ZNK11QTextFormat13toBlockFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toBlockFormat();
+bool C_ZNK11QTextFormat17isTableCellFormatEv(void *this_) {
+  return (bool)((QTextFormat*)this_)->isTableCellFormat();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:341
-// QTextCharFormat toCharFormat()
+// [16] QTextBlockFormat toBlockFormat()
 extern "C"
-void C_ZNK11QTextFormat12toCharFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toCharFormat();
+void* C_ZNK11QTextFormat13toBlockFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toBlockFormat();
+return new QTextBlockFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:342
-// QTextListFormat toListFormat()
+// [16] QTextCharFormat toCharFormat()
 extern "C"
-void C_ZNK11QTextFormat12toListFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toListFormat();
+void* C_ZNK11QTextFormat12toCharFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toCharFormat();
+return new QTextCharFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:343
-// QTextTableFormat toTableFormat()
+// [16] QTextListFormat toListFormat()
 extern "C"
-void C_ZNK11QTextFormat13toTableFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toTableFormat();
+void* C_ZNK11QTextFormat12toListFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toListFormat();
+return new QTextListFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:344
-// QTextFrameFormat toFrameFormat()
+// [16] QTextTableFormat toTableFormat()
 extern "C"
-void C_ZNK11QTextFormat13toFrameFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toFrameFormat();
+void* C_ZNK11QTextFormat13toTableFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toTableFormat();
+return new QTextTableFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:345
-// QTextImageFormat toImageFormat()
+// [16] QTextFrameFormat toFrameFormat()
 extern "C"
-void C_ZNK11QTextFormat13toImageFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toImageFormat();
+void* C_ZNK11QTextFormat13toFrameFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toFrameFormat();
+return new QTextFrameFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:346
-// QTextTableCellFormat toTableCellFormat()
+// [16] QTextImageFormat toImageFormat()
 extern "C"
-void C_ZNK11QTextFormat17toTableCellFormatEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->toTableCellFormat();
+void* C_ZNK11QTextFormat13toImageFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toImageFormat();
+return new QTextImageFormat(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:352
-// void setLayoutDirection(Qt::LayoutDirection)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:347
+// [16] QTextTableCellFormat toTableCellFormat()
+extern "C"
+void* C_ZNK11QTextFormat17toTableCellFormatEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->toTableCellFormat();
+return new QTextTableCellFormat(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:353
+// [-2] void setLayoutDirection(Qt::LayoutDirection)
 extern "C"
 void C_ZN11QTextFormat18setLayoutDirectionEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection direction) {
   ((QTextFormat*)this_)->setLayoutDirection(direction);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:354
-// Qt::LayoutDirection layoutDirection()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:355
+// [4] Qt::LayoutDirection layoutDirection()
 extern "C"
-void C_ZNK11QTextFormat15layoutDirectionEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->layoutDirection();
+Qt::LayoutDirection C_ZNK11QTextFormat15layoutDirectionEv(void *this_) {
+  return (Qt::LayoutDirection)((QTextFormat*)this_)->layoutDirection();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:357
-// void setBackground(const class QBrush &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:358
+// [-2] void setBackground(const class QBrush &)
 extern "C"
 void C_ZN11QTextFormat13setBackgroundERK6QBrush(void *this_, const QBrush & brush) {
   ((QTextFormat*)this_)->setBackground(brush);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:359
-// QBrush background()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:360
+// [8] QBrush background()
 extern "C"
-void C_ZNK11QTextFormat10backgroundEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->background();
+void* C_ZNK11QTextFormat10backgroundEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->background();
+return new QBrush(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:361
-// void clearBackground()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:362
+// [-2] void clearBackground()
 extern "C"
 void C_ZN11QTextFormat15clearBackgroundEv(void *this_) {
   ((QTextFormat*)this_)->clearBackground();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:364
-// void setForeground(const class QBrush &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:365
+// [-2] void setForeground(const class QBrush &)
 extern "C"
 void C_ZN11QTextFormat13setForegroundERK6QBrush(void *this_, const QBrush & brush) {
   ((QTextFormat*)this_)->setForeground(brush);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:366
-// QBrush foreground()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:367
+// [8] QBrush foreground()
 extern "C"
-void C_ZNK11QTextFormat10foregroundEv(void *this_) {
-  /*return*/ ((QTextFormat*)this_)->foreground();
+void* C_ZNK11QTextFormat10foregroundEv(void *this_) {
+  auto rv = ((QTextFormat*)this_)->foreground();
+return new QBrush(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:368
-// void clearForeground()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:369
+// [-2] void clearForeground()
 extern "C"
 void C_ZN11QTextFormat15clearForegroundEv(void *this_) {
   ((QTextFormat*)this_)->clearForeground();

@@ -3,111 +3,107 @@
 #include <qtextformat.h>
 #include <QtGui>
 
+// QTextTableFormat is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qtextformat.h:886
-// void QTextTableFormat()
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:923
+// [-2] void QTextTableFormat(const class QTextFormat &)
+extern "C"
+void* callback_ZN16QTextTableFormatC1ERK11QTextFormat = 0;
+extern "C" void set_callback_ZN16QTextTableFormatC1ERK11QTextFormat(void*cbfn)
+{ callback_ZN16QTextTableFormatC1ERK11QTextFormat = cbfn; }
+
+class MyQTextTableFormat : public QTextTableFormat {
+public:
+MyQTextTableFormat() : QTextTableFormat() {}
+MyQTextTableFormat(const QTextFormat & fmt) : QTextTableFormat(fmt) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:887
+// [-2] void QTextTableFormat()
 extern "C"
 void* C_ZN16QTextTableFormatC1Ev() {
-  return new QTextTableFormat();
+  (MyQTextTableFormat*)(0);
+  return  new MyQTextTableFormat();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:888
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:889
+// [1] bool isValid()
 extern "C"
-void C_ZNK16QTextTableFormat7isValidEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->isValid();
+bool C_ZNK16QTextTableFormat7isValidEv(void *this_) {
+  return (bool)((QTextTableFormat*)this_)->isValid();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:890
-// int columns()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:891
+// [4] int columns()
 extern "C"
-void C_ZNK16QTextTableFormat7columnsEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->columns();
+int C_ZNK16QTextTableFormat7columnsEv(void *this_) {
+  return (int)((QTextTableFormat*)this_)->columns();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:892
-// void setColumns(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:893
+// [-2] void setColumns(int)
 extern "C"
 void C_ZN16QTextTableFormat10setColumnsEi(void *this_, int columns) {
   ((QTextTableFormat*)this_)->setColumns(columns);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:894
-// void setColumnWidthConstraints(const QVector<class QTextLength> &)
-extern "C"
-void C_ZN16QTextTableFormat25setColumnWidthConstraintsERK7QVectorI11QTextLengthE(void *this_, const QVector<QTextLength> & constraints) {
-  ((QTextTableFormat*)this_)->setColumnWidthConstraints(constraints);
-}
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:897
-// QVector<QTextLength> columnWidthConstraints()
-extern "C"
-void C_ZNK16QTextTableFormat22columnWidthConstraintsEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->columnWidthConstraints();
-}
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:900
-// void clearColumnWidthConstraints()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:901
+// [-2] void clearColumnWidthConstraints()
 extern "C"
 void C_ZN16QTextTableFormat27clearColumnWidthConstraintsEv(void *this_) {
   ((QTextTableFormat*)this_)->clearColumnWidthConstraints();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:903
-// qreal cellSpacing()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:904
+// [8] qreal cellSpacing()
 extern "C"
-void C_ZNK16QTextTableFormat11cellSpacingEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->cellSpacing();
+qreal C_ZNK16QTextTableFormat11cellSpacingEv(void *this_) {
+  return (qreal)((QTextTableFormat*)this_)->cellSpacing();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:905
-// void setCellSpacing(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:906
+// [-2] void setCellSpacing(qreal)
 extern "C"
 void C_ZN16QTextTableFormat14setCellSpacingEd(void *this_, qreal spacing) {
   ((QTextTableFormat*)this_)->setCellSpacing(spacing);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:908
-// qreal cellPadding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:909
+// [8] qreal cellPadding()
 extern "C"
-void C_ZNK16QTextTableFormat11cellPaddingEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->cellPadding();
+qreal C_ZNK16QTextTableFormat11cellPaddingEv(void *this_) {
+  return (qreal)((QTextTableFormat*)this_)->cellPadding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:910
-// void setCellPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:911
+// [-2] void setCellPadding(qreal)
 extern "C"
 void C_ZN16QTextTableFormat14setCellPaddingEd(void *this_, qreal padding) {
   ((QTextTableFormat*)this_)->setCellPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:912
-// void setAlignment(Qt::Alignment)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:914
+// [4] Qt::Alignment alignment()
 extern "C"
-void C_ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
-  ((QTextTableFormat*)this_)->setAlignment(alignment);
+Qt::Alignment C_ZNK16QTextTableFormat9alignmentEv(void *this_) {
+  return (Qt::Alignment)((QTextTableFormat*)this_)->alignment();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:913
-// Qt::Alignment alignment()
-extern "C"
-void C_ZNK16QTextTableFormat9alignmentEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->alignment();
-}
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:916
-// void setHeaderRowCount(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:917
+// [-2] void setHeaderRowCount(int)
 extern "C"
 void C_ZN16QTextTableFormat17setHeaderRowCountEi(void *this_, int count) {
   ((QTextTableFormat*)this_)->setHeaderRowCount(count);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:918
-// int headerRowCount()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:919
+// [4] int headerRowCount()
 extern "C"
-void C_ZNK16QTextTableFormat14headerRowCountEv(void *this_) {
-  /*return*/ ((QTextTableFormat*)this_)->headerRowCount();
+int C_ZNK16QTextTableFormat14headerRowCountEv(void *this_) {
+  return (int)((QTextTableFormat*)this_)->headerRowCount();
 }
 //  main block end

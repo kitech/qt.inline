@@ -3,53 +3,63 @@
 #include <qitemeditorfactory.h>
 #include <QtWidgets>
 
+// QItemEditorFactory is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQItemEditorFactory : public QItemEditorFactory {
+public:
+MyQItemEditorFactory() : QItemEditorFactory() {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
-// void QItemEditorFactory()
+// [-2] void QItemEditorFactory()
 extern "C"
 void* C_ZN18QItemEditorFactoryC1Ev() {
-  return new QItemEditorFactory();
+  (MyQItemEditorFactory*)(0);
+  return  new MyQItemEditorFactory();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
-// void ~QItemEditorFactory()
+// [-2] void ~QItemEditorFactory()
 extern "C"
 void C_ZN18QItemEditorFactoryD1Ev(void *this_) {
   delete (QItemEditorFactory*)(this_);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:101
-// QWidget * createEditor(int, class QWidget *)
+// [8] QWidget * createEditor(int, class QWidget *)
 extern "C"
-void C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userType, QWidget * parent) {
-  /*return*/ ((QItemEditorFactory*)this_)->createEditor(userType, parent);
+void* C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userType, QWidget * parent) {
+  return (void*)((QItemEditorFactory*)this_)->createEditor(userType, parent);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:102
-// QByteArray valuePropertyName(int)
+// [8] QByteArray valuePropertyName(int)
 extern "C"
-void C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *this_, int userType) {
-  /*return*/ ((QItemEditorFactory*)this_)->valuePropertyName(userType);
+void* C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *this_, int userType) {
+  auto rv = ((QItemEditorFactory*)this_)->valuePropertyName(userType);
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:104
-// void registerEditor(int, class QItemEditorCreatorBase *)
+// [-2] void registerEditor(int, class QItemEditorCreatorBase *)
 extern "C"
 void C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *this_, int userType, QItemEditorCreatorBase * creator) {
   ((QItemEditorFactory*)this_)->registerEditor(userType, creator);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:106
-// const QItemEditorFactory * defaultFactory()
+// [8] const QItemEditorFactory * defaultFactory()
 extern "C"
-void C_ZN18QItemEditorFactory14defaultFactoryEv() {
-  /*return*/ QItemEditorFactory::defaultFactory();
+void* C_ZN18QItemEditorFactory14defaultFactoryEv() {
+  return (void*)QItemEditorFactory::defaultFactory();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:107
-// void setDefaultFactory(class QItemEditorFactory *)
+// [-2] void setDefaultFactory(class QItemEditorFactory *)
 extern "C"
 void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factory) {
   QItemEditorFactory::setDefaultFactory(factory);

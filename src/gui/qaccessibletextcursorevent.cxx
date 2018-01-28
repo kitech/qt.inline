@@ -3,42 +3,52 @@
 #include <qaccessible.h>
 #include <QtGui>
 
+// QAccessibleTextCursorEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQAccessibleTextCursorEvent : public QAccessibleTextCursorEvent {
+public:
+MyQAccessibleTextCursorEvent(QObject * obj, int cursorPos) : QAccessibleTextCursorEvent(obj, cursorPos) {}
+MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAccessibleTextCursorEvent(iface, cursorPos) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:747
-// void QAccessibleTextCursorEvent(class QObject *, int)
+// [-2] void QAccessibleTextCursorEvent(class QObject *, int)
 extern "C"
 void* C_ZN26QAccessibleTextCursorEventC1EP7QObjecti(QObject * obj, int cursorPos) {
-  return new QAccessibleTextCursorEvent(obj, cursorPos);
+  (MyQAccessibleTextCursorEvent*)(0);
+  return  new MyQAccessibleTextCursorEvent(obj, cursorPos);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:753
-// void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
+// [-2] void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
 extern "C"
 void* C_ZN26QAccessibleTextCursorEventC1EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos) {
-  return new QAccessibleTextCursorEvent(iface, cursorPos);
+  (MyQAccessibleTextCursorEvent*)(0);
+  return  new MyQAccessibleTextCursorEvent(iface, cursorPos);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:760
-// void ~QAccessibleTextCursorEvent()
+// [-2] void ~QAccessibleTextCursorEvent()
 extern "C"
 void C_ZN26QAccessibleTextCursorEventD1Ev(void *this_) {
   delete (QAccessibleTextCursorEvent*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:762
-// void setCursorPosition(int)
+// [-2] void setCursorPosition(int)
 extern "C"
 void C_ZN26QAccessibleTextCursorEvent17setCursorPositionEi(void *this_, int position) {
   ((QAccessibleTextCursorEvent*)this_)->setCursorPosition(position);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:763
-// int cursorPosition()
+// [4] int cursorPosition()
 extern "C"
-void C_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *this_) {
-  /*return*/ ((QAccessibleTextCursorEvent*)this_)->cursorPosition();
+int C_ZNK26QAccessibleTextCursorEvent14cursorPositionEv(void *this_) {
+  return (int)((QAccessibleTextCursorEvent*)this_)->cursorPosition();
 }
 //  main block end

@@ -3,67 +3,80 @@
 #include <qgraphicsitem.h>
 #include <QtWidgets>
 
+// QGraphicsItemGroup is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1005
-// void QGraphicsItemGroup(class QGraphicsItem *)
+
+class MyQGraphicsItemGroup : public QGraphicsItemGroup {
+public:
+MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1004
+// [-2] void QGraphicsItemGroup(class QGraphicsItem *)
 extern "C"
 void* C_ZN18QGraphicsItemGroupC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  return new QGraphicsItemGroup(parent);
+  (MyQGraphicsItemGroup*)(0);
+  return  new MyQGraphicsItemGroup(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1006
-// void ~QGraphicsItemGroup()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1005
+// [-2] void ~QGraphicsItemGroup()
 extern "C"
 void C_ZN18QGraphicsItemGroupD1Ev(void *this_) {
   delete (QGraphicsItemGroup*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1008
-// void addToGroup(class QGraphicsItem *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1007
+// [-2] void addToGroup(class QGraphicsItem *)
 extern "C"
 void C_ZN18QGraphicsItemGroup10addToGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsItemGroup*)this_)->addToGroup(item);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1009
-// void removeFromGroup(class QGraphicsItem *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1008
+// [-2] void removeFromGroup(class QGraphicsItem *)
 extern "C"
 void C_ZN18QGraphicsItemGroup15removeFromGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
   ((QGraphicsItemGroup*)this_)->removeFromGroup(item);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1011
-// QRectF boundingRect()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1010
+// [32] QRectF boundingRect()
 extern "C"
-void C_ZNK18QGraphicsItemGroup12boundingRectEv(void *this_) {
-  /*return*/ ((QGraphicsItemGroup*)this_)->boundingRect();
+void* C_ZNK18QGraphicsItemGroup12boundingRectEv(void *this_) {
+  auto rv = ((QGraphicsItemGroup*)this_)->boundingRect();
+return new QRectF(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1012
-// void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1011
+// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
 extern "C"
 void C_ZN18QGraphicsItemGroup5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsItemGroup*)this_)->paint(painter, option, widget);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1013
+// [1] bool isObscuredBy(const class QGraphicsItem *)
+extern "C"
+bool C_ZNK18QGraphicsItemGroup12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
+  return (bool)((QGraphicsItemGroup*)this_)->isObscuredBy(item);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1014
-// bool isObscuredBy(const class QGraphicsItem *)
+// [8] QPainterPath opaqueArea()
 extern "C"
-void C_ZNK18QGraphicsItemGroup12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
-  /*return*/ ((QGraphicsItemGroup*)this_)->isObscuredBy(item);
+void* C_ZNK18QGraphicsItemGroup10opaqueAreaEv(void *this_) {
+  auto rv = ((QGraphicsItemGroup*)this_)->opaqueArea();
+return new QPainterPath(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1015
-// QPainterPath opaqueArea()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1017
+// [4] int type()
 extern "C"
-void C_ZNK18QGraphicsItemGroup10opaqueAreaEv(void *this_) {
-  /*return*/ ((QGraphicsItemGroup*)this_)->opaqueArea();
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1018
-// int type()
-extern "C"
-void C_ZNK18QGraphicsItemGroup4typeEv(void *this_) {
-  /*return*/ ((QGraphicsItemGroup*)this_)->type();
+int C_ZNK18QGraphicsItemGroup4typeEv(void *this_) {
+  return (int)((QGraphicsItemGroup*)this_)->type();
 }
 //  main block end

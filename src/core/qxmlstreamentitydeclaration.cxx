@@ -3,54 +3,69 @@
 #include <qxmlstream.h>
 #include <QtCore>
 
+// QXmlStreamEntityDeclaration is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQXmlStreamEntityDeclaration : public QXmlStreamEntityDeclaration {
+public:
+MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:286
-// void QXmlStreamEntityDeclaration()
+// [-2] void QXmlStreamEntityDeclaration()
 extern "C"
 void* C_ZN27QXmlStreamEntityDeclarationC1Ev() {
-  return new QXmlStreamEntityDeclaration();
+  (MyQXmlStreamEntityDeclaration*)(0);
+  return  new MyQXmlStreamEntityDeclaration();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:288
-// void ~QXmlStreamEntityDeclaration()
+// [-2] void ~QXmlStreamEntityDeclaration()
 extern "C"
 void C_ZN27QXmlStreamEntityDeclarationD1Ev(void *this_) {
   delete (QXmlStreamEntityDeclaration*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:313
-// QStringRef name()
+// [16] QStringRef name()
 extern "C"
-void C_ZNK27QXmlStreamEntityDeclaration4nameEv(void *this_) {
-  /*return*/ ((QXmlStreamEntityDeclaration*)this_)->name();
+void* C_ZNK27QXmlStreamEntityDeclaration4nameEv(void *this_) {
+  auto rv = ((QXmlStreamEntityDeclaration*)this_)->name();
+return new QStringRef(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:314
-// QStringRef notationName()
+// [16] QStringRef notationName()
 extern "C"
-void C_ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *this_) {
-  /*return*/ ((QXmlStreamEntityDeclaration*)this_)->notationName();
+void* C_ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *this_) {
+  auto rv = ((QXmlStreamEntityDeclaration*)this_)->notationName();
+return new QStringRef(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:315
-// QStringRef systemId()
+// [16] QStringRef systemId()
 extern "C"
-void C_ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *this_) {
-  /*return*/ ((QXmlStreamEntityDeclaration*)this_)->systemId();
+void* C_ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *this_) {
+  auto rv = ((QXmlStreamEntityDeclaration*)this_)->systemId();
+return new QStringRef(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:316
-// QStringRef publicId()
+// [16] QStringRef publicId()
 extern "C"
-void C_ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *this_) {
-  /*return*/ ((QXmlStreamEntityDeclaration*)this_)->publicId();
+void* C_ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *this_) {
+  auto rv = ((QXmlStreamEntityDeclaration*)this_)->publicId();
+return new QStringRef(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:317
-// QStringRef value()
+// [16] QStringRef value()
 extern "C"
-void C_ZNK27QXmlStreamEntityDeclaration5valueEv(void *this_) {
-  /*return*/ ((QXmlStreamEntityDeclaration*)this_)->value();
+void* C_ZNK27QXmlStreamEntityDeclaration5valueEv(void *this_) {
+  auto rv = ((QXmlStreamEntityDeclaration*)this_)->value();
+return new QStringRef(rv);
 }
 //  main block end

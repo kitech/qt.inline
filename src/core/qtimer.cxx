@@ -3,120 +3,161 @@
 #include <qtimer.h>
 #include <QtCore>
 
+// QTimer is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtCore/qtimer.h:55
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:200
+// [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void C_ZNK6QTimer10metaObjectEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->metaObject();
+void* callback_ZN6QTimer10timerEventEP11QTimerEvent = 0;
+extern "C" void set_callback_ZN6QTimer10timerEventEP11QTimerEvent(void*cbfn)
+{ callback_ZN6QTimer10timerEventEP11QTimerEvent = cbfn; }
+
+class MyQTimer : public QTimer {
+public:
+MyQTimer(QObject * parent) : QTimer(parent) {}
+// void timerEvent(class QTimerEvent *)
+// void timerEvent(class QTimerEvent *)
+virtual void timerEvent(QTimerEvent * arg0) {
+  if (callback_ZN6QTimer10timerEventEP11QTimerEvent != 0) {
+  // callback_ZN6QTimer10timerEventEP11QTimerEvent(arg0);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:59
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK6QTimer10metaObjectEv(void *this_) {
+  return (void*)((QTimer*)this_)->metaObject();
 }
-// /usr/include/qt/QtCore/qtimer.h:62
-// void QTimer(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:66
+// [-2] void QTimer(class QObject *)
 extern "C"
 void* C_ZN6QTimerC1EP7QObject(QObject * parent) {
-  return new QTimer(parent);
+  (MyQTimer*)(0);
+  return  new MyQTimer(parent);
 }
-// virtual
-// /usr/include/qt/QtCore/qtimer.h:63
-// void ~QTimer()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:67
+// [-2] void ~QTimer()
 extern "C"
 void C_ZN6QTimerD1Ev(void *this_) {
   delete (QTimer*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:65
-// bool isActive()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:69
+// [1] bool isActive()
 extern "C"
-void C_ZNK6QTimer8isActiveEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->isActive();
+bool C_ZNK6QTimer8isActiveEv(void *this_) {
+  return (bool)((QTimer*)this_)->isActive();
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:66
-// int timerId()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:70
+// [4] int timerId()
 extern "C"
-void C_ZNK6QTimer7timerIdEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->timerId();
+int C_ZNK6QTimer7timerIdEv(void *this_) {
+  return (int)((QTimer*)this_)->timerId();
 }
-// /usr/include/qt/QtCore/qtimer.h:68
-// void setInterval(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:72
+// [-2] void setInterval(int)
 extern "C"
 void C_ZN6QTimer11setIntervalEi(void *this_, int msec) {
   ((QTimer*)this_)->setInterval(msec);
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:69
-// int interval()
-extern "C"
-void C_ZNK6QTimer8intervalEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->interval();
-}
-// /usr/include/qt/QtCore/qtimer.h:71
-// int remainingTime()
-extern "C"
-void C_ZNK6QTimer13remainingTimeEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->remainingTime();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:73
-// void setTimerType(Qt::TimerType)
+// [4] int interval()
+extern "C"
+int C_ZNK6QTimer8intervalEv(void *this_) {
+  return (int)((QTimer*)this_)->interval();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:75
+// [4] int remainingTime()
+extern "C"
+int C_ZNK6QTimer13remainingTimeEv(void *this_) {
+  return (int)((QTimer*)this_)->remainingTime();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:77
+// [-2] void setTimerType(Qt::TimerType)
 extern "C"
 void C_ZN6QTimer12setTimerTypeEN2Qt9TimerTypeE(void *this_, Qt::TimerType atype) {
   ((QTimer*)this_)->setTimerType(atype);
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:74
-// Qt::TimerType timerType()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:78
+// [4] Qt::TimerType timerType()
 extern "C"
-void C_ZNK6QTimer9timerTypeEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->timerType();
+Qt::TimerType C_ZNK6QTimer9timerTypeEv(void *this_) {
+  return (Qt::TimerType)((QTimer*)this_)->timerType();
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:76
-// void setSingleShot(_Bool)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:80
+// [-2] void setSingleShot(_Bool)
 extern "C"
 void C_ZN6QTimer13setSingleShotEb(void *this_, bool singleShot) {
   ((QTimer*)this_)->setSingleShot(singleShot);
 }
-// inline
-// /usr/include/qt/QtCore/qtimer.h:77
-// bool isSingleShot()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:81
+// [1] bool isSingleShot()
 extern "C"
-void C_ZNK6QTimer12isSingleShotEv(void *this_) {
-  /*return*/ ((QTimer*)this_)->isSingleShot();
+bool C_ZNK6QTimer12isSingleShotEv(void *this_) {
+  return (bool)((QTimer*)this_)->isSingleShot();
 }
-// static
-// /usr/include/qt/QtCore/qtimer.h:79
-// void singleShot(int, const class QObject *, const char *)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:83
+// [-2] void singleShot(int, const class QObject *, const char *)
 extern "C"
 void C_ZN6QTimer10singleShotEiPK7QObjectPKc(int msec, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, receiver, member);
 }
-// static
-// /usr/include/qt/QtCore/qtimer.h:80
-// void singleShot(int, Qt::TimerType, const class QObject *, const char *)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:84
+// [-2] void singleShot(int, Qt::TimerType, const class QObject *, const char *)
 extern "C"
 void C_ZN6QTimer10singleShotEiN2Qt9TimerTypeEPK7QObjectPKc(int msec, Qt::TimerType timerType, const QObject * receiver, const char * member) {
   QTimer::singleShot(msec, timerType, receiver, member);
 }
-// /usr/include/qt/QtCore/qtimer.h:148
-// void start(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:158
+// [-2] void start(int)
 extern "C"
 void C_ZN6QTimer5startEi(void *this_, int msec) {
   ((QTimer*)this_)->start(msec);
 }
-// /usr/include/qt/QtCore/qtimer.h:150
-// void start()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:160
+// [-2] void start()
 extern "C"
 void C_ZN6QTimer5startEv(void *this_) {
   ((QTimer*)this_)->start();
 }
-// /usr/include/qt/QtCore/qtimer.h:151
-// void stop()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:161
+// [-2] void stop()
 extern "C"
 void C_ZN6QTimer4stopEv(void *this_) {
   ((QTimer*)this_)->stop();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:173
+// [8] std::chrono::milliseconds intervalAsDuration()
+extern "C"
+std::chrono::milliseconds C_ZNK6QTimer18intervalAsDurationEv(void *this_) {
+  return (std::chrono::milliseconds)((QTimer*)this_)->intervalAsDuration();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:178
+// [8] std::chrono::milliseconds remainingTimeAsDuration()
+extern "C"
+std::chrono::milliseconds C_ZNK6QTimer23remainingTimeAsDurationEv(void *this_) {
+  return (std::chrono::milliseconds)((QTimer*)this_)->remainingTimeAsDuration();
 }
 //  main block end

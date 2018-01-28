@@ -3,610 +3,778 @@
 #include <qcolor.h>
 #include <QtGui>
 
+// QColor is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qcolor.h:69
-// void QColor()
+
+class MyQColor : public QColor {
+public:
+MyQColor() : QColor() {}
+MyQColor(Qt::GlobalColor color) : QColor(color) {}
+MyQColor(int r, int g, int b, int a) : QColor(r, g, b, a) {}
+MyQColor(QRgb rgb) : QColor(rgb) {}
+MyQColor(QRgba64 rgba64) : QColor(rgba64) {}
+MyQColor(const QString & name) : QColor(name) {}
+MyQColor(QStringView name) : QColor(name) {}
+MyQColor(const char * aname) : QColor(aname) {}
+MyQColor(QLatin1String name) : QColor(name) {}
+MyQColor(QColor::Spec spec) : QColor(spec) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:70
+// [-2] void QColor()
 extern "C"
 void* C_ZN6QColorC1Ev() {
-  return new QColor();
+  (MyQColor*)(0);
+  return  new MyQColor();
 }
-// /usr/include/qt/QtGui/qcolor.h:70
-// void QColor(Qt::GlobalColor)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:71
+// [-2] void QColor(Qt::GlobalColor)
 extern "C"
 void* C_ZN6QColorC1EN2Qt11GlobalColorE(Qt::GlobalColor color) {
-  return new QColor(color);
+  (MyQColor*)(0);
+  return  new MyQColor(color);
 }
-// /usr/include/qt/QtGui/qcolor.h:71
-// void QColor(int, int, int, int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:72
+// [-2] void QColor(int, int, int, int)
 extern "C"
 void* C_ZN6QColorC1Eiiii(int r, int g, int b, int a) {
-  return new QColor(r, g, b, a);
+  (MyQColor*)(0);
+  return  new MyQColor(r, g, b, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:72
-// void QColor(QRgb)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:73
+// [-2] void QColor(QRgb)
 extern "C"
 void* C_ZN6QColorC1Ej(QRgb rgb) {
-  return new QColor(rgb);
+  (MyQColor*)(0);
+  return  new MyQColor(rgb);
 }
-// /usr/include/qt/QtGui/qcolor.h:73
-// void QColor(class QRgba64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:74
+// [-2] void QColor(class QRgba64)
 extern "C"
 void* C_ZN6QColorC1E7QRgba64(QRgba64 rgba64) {
-  return new QColor(rgba64);
+  (MyQColor*)(0);
+  return  new MyQColor(rgba64);
 }
-// /usr/include/qt/QtGui/qcolor.h:74
-// void QColor(const class QString &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:76
+// [-2] void QColor(const class QString &)
 extern "C"
 void* C_ZN6QColorC1ERK7QString(const QString & name) {
-  return new QColor(name);
+  (MyQColor*)(0);
+  return  new MyQColor(name);
 }
-// /usr/include/qt/QtGui/qcolor.h:75
-// void QColor(const char *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:78
+// [-2] void QColor(class QStringView)
 extern "C"
-void* C_ZN6QColorC1EPKc(const char * name) {
-  return new QColor(name);
+void* C_ZN6QColorC1E11QStringView(QStringView name) {
+  (MyQColor*)(0);
+  return  new MyQColor(name);
 }
-// /usr/include/qt/QtGui/qcolor.h:76
-// void QColor(enum QColor::Spec)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:79
+// [-2] void QColor(const char *)
+extern "C"
+void* C_ZN6QColorC1EPKc(const char * aname) {
+  (MyQColor*)(0);
+  return  new MyQColor(aname);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:80
+// [-2] void QColor(class QLatin1String)
+extern "C"
+void* C_ZN6QColorC1E13QLatin1String(QLatin1String name) {
+  (MyQColor*)(0);
+  return  new MyQColor(name);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:81
+// [-2] void QColor(enum QColor::Spec)
 extern "C"
 void* C_ZN6QColorC1ENS_4SpecE(QColor::Spec spec) {
-  return new QColor(spec);
+  (MyQColor*)(0);
+  return  new MyQColor(spec);
 }
-// /usr/include/qt/QtGui/qcolor.h:90
-// bool isValid()
-extern "C"
-void C_ZNK6QColor7isValidEv(void *this_) {
-  /*return*/ ((QColor*)this_)->isValid();
-}
-// /usr/include/qt/QtGui/qcolor.h:93
-// QString name()
-extern "C"
-void C_ZNK6QColor4nameEv(void *this_) {
-  /*return*/ ((QColor*)this_)->name();
-}
-// /usr/include/qt/QtGui/qcolor.h:94
-// QString name(enum QColor::NameFormat)
-extern "C"
-void C_ZNK6QColor4nameENS_10NameFormatE(void *this_, QColor::NameFormat format) {
-  /*return*/ ((QColor*)this_)->name(format);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:95
-// void setNamedColor(const class QString &)
+// [1] bool isValid()
+extern "C"
+bool C_ZNK6QColor7isValidEv(void *this_) {
+  return (bool)((QColor*)this_)->isValid();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:98
+// [8] QString name()
+extern "C"
+void* C_ZNK6QColor4nameEv(void *this_) {
+  auto rv = ((QColor*)this_)->name();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:99
+// [8] QString name(enum QColor::NameFormat)
+extern "C"
+void* C_ZNK6QColor4nameENS_10NameFormatE(void *this_, QColor::NameFormat format) {
+  auto rv = ((QColor*)this_)->name(format);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:102
+// [-2] void setNamedColor(const class QString &)
 extern "C"
 void C_ZN6QColor13setNamedColorERK7QString(void *this_, const QString & name) {
   ((QColor*)this_)->setNamedColor(name);
 }
-// static
-// /usr/include/qt/QtGui/qcolor.h:97
-// QStringList colorNames()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:104
+// [-2] void setNamedColor(class QStringView)
 extern "C"
-void C_ZN6QColor10colorNamesEv() {
-  /*return*/ QColor::colorNames();
+void C_ZN6QColor13setNamedColorE11QStringView(void *this_, QStringView name) {
+  ((QColor*)this_)->setNamedColor(name);
 }
-// inline
-// /usr/include/qt/QtGui/qcolor.h:99
-// QColor::Spec spec()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:105
+// [-2] void setNamedColor(class QLatin1String)
 extern "C"
-void C_ZNK6QColor4specEv(void *this_) {
-  /*return*/ ((QColor*)this_)->spec();
+void C_ZN6QColor13setNamedColorE13QLatin1String(void *this_, QLatin1String name) {
+  ((QColor*)this_)->setNamedColor(name);
 }
-// /usr/include/qt/QtGui/qcolor.h:102
-// int alpha()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:109
+// [4] QColor::Spec spec()
 extern "C"
-void C_ZNK6QColor5alphaEv(void *this_) {
-  /*return*/ ((QColor*)this_)->alpha();
+QColor::Spec C_ZNK6QColor4specEv(void *this_) {
+  return (QColor::Spec)((QColor*)this_)->spec();
 }
-// /usr/include/qt/QtGui/qcolor.h:103
-// void setAlpha(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:112
+// [4] int alpha()
+extern "C"
+int C_ZNK6QColor5alphaEv(void *this_) {
+  return (int)((QColor*)this_)->alpha();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:113
+// [-2] void setAlpha(int)
 extern "C"
 void C_ZN6QColor8setAlphaEi(void *this_, int alpha) {
   ((QColor*)this_)->setAlpha(alpha);
 }
-// /usr/include/qt/QtGui/qcolor.h:105
-// qreal alphaF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:115
+// [8] qreal alphaF()
 extern "C"
-void C_ZNK6QColor6alphaFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->alphaF();
+qreal C_ZNK6QColor6alphaFEv(void *this_) {
+  return (qreal)((QColor*)this_)->alphaF();
 }
-// /usr/include/qt/QtGui/qcolor.h:106
-// void setAlphaF(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:116
+// [-2] void setAlphaF(qreal)
 extern "C"
 void C_ZN6QColor9setAlphaFEd(void *this_, qreal alpha) {
   ((QColor*)this_)->setAlphaF(alpha);
 }
-// /usr/include/qt/QtGui/qcolor.h:108
-// int red()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:118
+// [4] int red()
 extern "C"
-void C_ZNK6QColor3redEv(void *this_) {
-  /*return*/ ((QColor*)this_)->red();
+int C_ZNK6QColor3redEv(void *this_) {
+  return (int)((QColor*)this_)->red();
 }
-// /usr/include/qt/QtGui/qcolor.h:109
-// int green()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:119
+// [4] int green()
 extern "C"
-void C_ZNK6QColor5greenEv(void *this_) {
-  /*return*/ ((QColor*)this_)->green();
+int C_ZNK6QColor5greenEv(void *this_) {
+  return (int)((QColor*)this_)->green();
 }
-// /usr/include/qt/QtGui/qcolor.h:110
-// int blue()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:120
+// [4] int blue()
 extern "C"
-void C_ZNK6QColor4blueEv(void *this_) {
-  /*return*/ ((QColor*)this_)->blue();
+int C_ZNK6QColor4blueEv(void *this_) {
+  return (int)((QColor*)this_)->blue();
 }
-// /usr/include/qt/QtGui/qcolor.h:111
-// void setRed(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:121
+// [-2] void setRed(int)
 extern "C"
 void C_ZN6QColor6setRedEi(void *this_, int red) {
   ((QColor*)this_)->setRed(red);
 }
-// /usr/include/qt/QtGui/qcolor.h:112
-// void setGreen(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:122
+// [-2] void setGreen(int)
 extern "C"
 void C_ZN6QColor8setGreenEi(void *this_, int green) {
   ((QColor*)this_)->setGreen(green);
 }
-// /usr/include/qt/QtGui/qcolor.h:113
-// void setBlue(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:123
+// [-2] void setBlue(int)
 extern "C"
 void C_ZN6QColor7setBlueEi(void *this_, int blue) {
   ((QColor*)this_)->setBlue(blue);
 }
-// /usr/include/qt/QtGui/qcolor.h:115
-// qreal redF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:125
+// [8] qreal redF()
 extern "C"
-void C_ZNK6QColor4redFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->redF();
+qreal C_ZNK6QColor4redFEv(void *this_) {
+  return (qreal)((QColor*)this_)->redF();
 }
-// /usr/include/qt/QtGui/qcolor.h:116
-// qreal greenF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:126
+// [8] qreal greenF()
 extern "C"
-void C_ZNK6QColor6greenFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->greenF();
+qreal C_ZNK6QColor6greenFEv(void *this_) {
+  return (qreal)((QColor*)this_)->greenF();
 }
-// /usr/include/qt/QtGui/qcolor.h:117
-// qreal blueF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:127
+// [8] qreal blueF()
 extern "C"
-void C_ZNK6QColor5blueFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->blueF();
+qreal C_ZNK6QColor5blueFEv(void *this_) {
+  return (qreal)((QColor*)this_)->blueF();
 }
-// /usr/include/qt/QtGui/qcolor.h:118
-// void setRedF(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:128
+// [-2] void setRedF(qreal)
 extern "C"
 void C_ZN6QColor7setRedFEd(void *this_, qreal red) {
   ((QColor*)this_)->setRedF(red);
 }
-// /usr/include/qt/QtGui/qcolor.h:119
-// void setGreenF(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:129
+// [-2] void setGreenF(qreal)
 extern "C"
 void C_ZN6QColor9setGreenFEd(void *this_, qreal green) {
   ((QColor*)this_)->setGreenF(green);
 }
-// /usr/include/qt/QtGui/qcolor.h:120
-// void setBlueF(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:130
+// [-2] void setBlueF(qreal)
 extern "C"
 void C_ZN6QColor8setBlueFEd(void *this_, qreal blue) {
   ((QColor*)this_)->setBlueF(blue);
 }
-// /usr/include/qt/QtGui/qcolor.h:122
-// void getRgb(int *, int *, int *, int *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:132
+// [-2] void getRgb(int *, int *, int *, int *)
 extern "C"
 void C_ZNK6QColor6getRgbEPiS0_S0_S0_(void *this_, int * r, int * g, int * b, int * a) {
   ((QColor*)this_)->getRgb(r, g, b, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:123
-// void setRgb(int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:133
+// [-2] void setRgb(int, int, int, int)
 extern "C"
 void C_ZN6QColor6setRgbEiiii(void *this_, int r, int g, int b, int a) {
   ((QColor*)this_)->setRgb(r, g, b, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:125
-// void getRgbF(qreal *, qreal *, qreal *, qreal *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:135
+// [-2] void getRgbF(qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZNK6QColor7getRgbFEPdS0_S0_S0_(void *this_, qreal * r, qreal * g, qreal * b, qreal * a) {
   ((QColor*)this_)->getRgbF(r, g, b, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:126
-// void setRgbF(qreal, qreal, qreal, qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:136
+// [-2] void setRgbF(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QColor7setRgbFEdddd(void *this_, qreal r, qreal g, qreal b, qreal a) {
   ((QColor*)this_)->setRgbF(r, g, b, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:128
-// QRgba64 rgba64()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:138
+// [8] QRgba64 rgba64()
 extern "C"
-void C_ZNK6QColor6rgba64Ev(void *this_) {
-  /*return*/ ((QColor*)this_)->rgba64();
+void* C_ZNK6QColor6rgba64Ev(void *this_) {
+  auto rv = ((QColor*)this_)->rgba64();
+return new QRgba64(rv);
 }
-// /usr/include/qt/QtGui/qcolor.h:129
-// void setRgba64(class QRgba64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:139
+// [-2] void setRgba64(class QRgba64)
 extern "C"
 void C_ZN6QColor9setRgba64E7QRgba64(void *this_, QRgba64 rgba) {
   ((QColor*)this_)->setRgba64(rgba);
 }
-// /usr/include/qt/QtGui/qcolor.h:131
-// QRgb rgba()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:141
+// [4] QRgb rgba()
 extern "C"
-void C_ZNK6QColor4rgbaEv(void *this_) {
-  /*return*/ ((QColor*)this_)->rgba();
+QRgb C_ZNK6QColor4rgbaEv(void *this_) {
+  return (QRgb)((QColor*)this_)->rgba();
 }
-// /usr/include/qt/QtGui/qcolor.h:132
-// void setRgba(QRgb)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:142
+// [-2] void setRgba(QRgb)
 extern "C"
 void C_ZN6QColor7setRgbaEj(void *this_, QRgb rgba) {
   ((QColor*)this_)->setRgba(rgba);
 }
-// /usr/include/qt/QtGui/qcolor.h:134
-// QRgb rgb()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:144
+// [4] QRgb rgb()
 extern "C"
-void C_ZNK6QColor3rgbEv(void *this_) {
-  /*return*/ ((QColor*)this_)->rgb();
+QRgb C_ZNK6QColor3rgbEv(void *this_) {
+  return (QRgb)((QColor*)this_)->rgb();
 }
-// /usr/include/qt/QtGui/qcolor.h:135
-// void setRgb(QRgb)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:145
+// [-2] void setRgb(QRgb)
 extern "C"
 void C_ZN6QColor6setRgbEj(void *this_, QRgb rgb) {
   ((QColor*)this_)->setRgb(rgb);
 }
-// /usr/include/qt/QtGui/qcolor.h:137
-// int hue()
-extern "C"
-void C_ZNK6QColor3hueEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hue();
-}
-// /usr/include/qt/QtGui/qcolor.h:138
-// int saturation()
-extern "C"
-void C_ZNK6QColor10saturationEv(void *this_) {
-  /*return*/ ((QColor*)this_)->saturation();
-}
-// /usr/include/qt/QtGui/qcolor.h:139
-// int hsvHue()
-extern "C"
-void C_ZNK6QColor6hsvHueEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hsvHue();
-}
-// /usr/include/qt/QtGui/qcolor.h:140
-// int hsvSaturation()
-extern "C"
-void C_ZNK6QColor13hsvSaturationEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hsvSaturation();
-}
-// /usr/include/qt/QtGui/qcolor.h:141
-// int value()
-extern "C"
-void C_ZNK6QColor5valueEv(void *this_) {
-  /*return*/ ((QColor*)this_)->value();
-}
-// /usr/include/qt/QtGui/qcolor.h:143
-// qreal hueF()
-extern "C"
-void C_ZNK6QColor4hueFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hueF();
-}
-// /usr/include/qt/QtGui/qcolor.h:144
-// qreal saturationF()
-extern "C"
-void C_ZNK6QColor11saturationFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->saturationF();
-}
-// /usr/include/qt/QtGui/qcolor.h:145
-// qreal hsvHueF()
-extern "C"
-void C_ZNK6QColor7hsvHueFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hsvHueF();
-}
-// /usr/include/qt/QtGui/qcolor.h:146
-// qreal hsvSaturationF()
-extern "C"
-void C_ZNK6QColor14hsvSaturationFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hsvSaturationF();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:147
-// qreal valueF()
+// [4] int hue()
 extern "C"
-void C_ZNK6QColor6valueFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->valueF();
+int C_ZNK6QColor3hueEv(void *this_) {
+  return (int)((QColor*)this_)->hue();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:148
+// [4] int saturation()
+extern "C"
+int C_ZNK6QColor10saturationEv(void *this_) {
+  return (int)((QColor*)this_)->saturation();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:149
-// void getHsv(int *, int *, int *, int *)
+// [4] int hsvHue()
+extern "C"
+int C_ZNK6QColor6hsvHueEv(void *this_) {
+  return (int)((QColor*)this_)->hsvHue();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:150
+// [4] int hsvSaturation()
+extern "C"
+int C_ZNK6QColor13hsvSaturationEv(void *this_) {
+  return (int)((QColor*)this_)->hsvSaturation();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:151
+// [4] int value()
+extern "C"
+int C_ZNK6QColor5valueEv(void *this_) {
+  return (int)((QColor*)this_)->value();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:153
+// [8] qreal hueF()
+extern "C"
+qreal C_ZNK6QColor4hueFEv(void *this_) {
+  return (qreal)((QColor*)this_)->hueF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:154
+// [8] qreal saturationF()
+extern "C"
+qreal C_ZNK6QColor11saturationFEv(void *this_) {
+  return (qreal)((QColor*)this_)->saturationF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:155
+// [8] qreal hsvHueF()
+extern "C"
+qreal C_ZNK6QColor7hsvHueFEv(void *this_) {
+  return (qreal)((QColor*)this_)->hsvHueF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:156
+// [8] qreal hsvSaturationF()
+extern "C"
+qreal C_ZNK6QColor14hsvSaturationFEv(void *this_) {
+  return (qreal)((QColor*)this_)->hsvSaturationF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:157
+// [8] qreal valueF()
+extern "C"
+qreal C_ZNK6QColor6valueFEv(void *this_) {
+  return (qreal)((QColor*)this_)->valueF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:159
+// [-2] void getHsv(int *, int *, int *, int *)
 extern "C"
 void C_ZNK6QColor6getHsvEPiS0_S0_S0_(void *this_, int * h, int * s, int * v, int * a) {
   ((QColor*)this_)->getHsv(h, s, v, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:150
-// void setHsv(int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:160
+// [-2] void setHsv(int, int, int, int)
 extern "C"
 void C_ZN6QColor6setHsvEiiii(void *this_, int h, int s, int v, int a) {
   ((QColor*)this_)->setHsv(h, s, v, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:152
-// void getHsvF(qreal *, qreal *, qreal *, qreal *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:162
+// [-2] void getHsvF(qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZNK6QColor7getHsvFEPdS0_S0_S0_(void *this_, qreal * h, qreal * s, qreal * v, qreal * a) {
   ((QColor*)this_)->getHsvF(h, s, v, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:153
-// void setHsvF(qreal, qreal, qreal, qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:163
+// [-2] void setHsvF(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QColor7setHsvFEdddd(void *this_, qreal h, qreal s, qreal v, qreal a) {
   ((QColor*)this_)->setHsvF(h, s, v, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:155
-// int cyan()
-extern "C"
-void C_ZNK6QColor4cyanEv(void *this_) {
-  /*return*/ ((QColor*)this_)->cyan();
-}
-// /usr/include/qt/QtGui/qcolor.h:156
-// int magenta()
-extern "C"
-void C_ZNK6QColor7magentaEv(void *this_) {
-  /*return*/ ((QColor*)this_)->magenta();
-}
-// /usr/include/qt/QtGui/qcolor.h:157
-// int yellow()
-extern "C"
-void C_ZNK6QColor6yellowEv(void *this_) {
-  /*return*/ ((QColor*)this_)->yellow();
-}
-// /usr/include/qt/QtGui/qcolor.h:158
-// int black()
-extern "C"
-void C_ZNK6QColor5blackEv(void *this_) {
-  /*return*/ ((QColor*)this_)->black();
-}
-// /usr/include/qt/QtGui/qcolor.h:160
-// qreal cyanF()
-extern "C"
-void C_ZNK6QColor5cyanFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->cyanF();
-}
-// /usr/include/qt/QtGui/qcolor.h:161
-// qreal magentaF()
-extern "C"
-void C_ZNK6QColor8magentaFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->magentaF();
-}
-// /usr/include/qt/QtGui/qcolor.h:162
-// qreal yellowF()
-extern "C"
-void C_ZNK6QColor7yellowFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->yellowF();
-}
-// /usr/include/qt/QtGui/qcolor.h:163
-// qreal blackF()
-extern "C"
-void C_ZNK6QColor6blackFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->blackF();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:165
-// void getCmyk(int *, int *, int *, int *, int *)
+// [4] int cyan()
+extern "C"
+int C_ZNK6QColor4cyanEv(void *this_) {
+  return (int)((QColor*)this_)->cyan();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:166
+// [4] int magenta()
+extern "C"
+int C_ZNK6QColor7magentaEv(void *this_) {
+  return (int)((QColor*)this_)->magenta();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:167
+// [4] int yellow()
+extern "C"
+int C_ZNK6QColor6yellowEv(void *this_) {
+  return (int)((QColor*)this_)->yellow();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:168
+// [4] int black()
+extern "C"
+int C_ZNK6QColor5blackEv(void *this_) {
+  return (int)((QColor*)this_)->black();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:170
+// [8] qreal cyanF()
+extern "C"
+qreal C_ZNK6QColor5cyanFEv(void *this_) {
+  return (qreal)((QColor*)this_)->cyanF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:171
+// [8] qreal magentaF()
+extern "C"
+qreal C_ZNK6QColor8magentaFEv(void *this_) {
+  return (qreal)((QColor*)this_)->magentaF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:172
+// [8] qreal yellowF()
+extern "C"
+qreal C_ZNK6QColor7yellowFEv(void *this_) {
+  return (qreal)((QColor*)this_)->yellowF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:173
+// [8] qreal blackF()
+extern "C"
+qreal C_ZNK6QColor6blackFEv(void *this_) {
+  return (qreal)((QColor*)this_)->blackF();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:175
+// [-2] void getCmyk(int *, int *, int *, int *, int *)
 extern "C"
 void C_ZN6QColor7getCmykEPiS0_S0_S0_S0_(void *this_, int * c, int * m, int * y, int * k, int * a) {
   ((QColor*)this_)->getCmyk(c, m, y, k, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:166
-// void setCmyk(int, int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:176
+// [-2] void setCmyk(int, int, int, int, int)
 extern "C"
 void C_ZN6QColor7setCmykEiiiii(void *this_, int c, int m, int y, int k, int a) {
   ((QColor*)this_)->setCmyk(c, m, y, k, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:168
-// void getCmykF(qreal *, qreal *, qreal *, qreal *, qreal *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:178
+// [-2] void getCmykF(qreal *, qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZN6QColor8getCmykFEPdS0_S0_S0_S0_(void *this_, qreal * c, qreal * m, qreal * y, qreal * k, qreal * a) {
   ((QColor*)this_)->getCmykF(c, m, y, k, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:169
-// void setCmykF(qreal, qreal, qreal, qreal, qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:179
+// [-2] void setCmykF(qreal, qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QColor8setCmykFEddddd(void *this_, qreal c, qreal m, qreal y, qreal k, qreal a) {
   ((QColor*)this_)->setCmykF(c, m, y, k, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:171
-// int hslHue()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:181
+// [4] int hslHue()
 extern "C"
-void C_ZNK6QColor6hslHueEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hslHue();
+int C_ZNK6QColor6hslHueEv(void *this_) {
+  return (int)((QColor*)this_)->hslHue();
 }
-// /usr/include/qt/QtGui/qcolor.h:172
-// int hslSaturation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:182
+// [4] int hslSaturation()
 extern "C"
-void C_ZNK6QColor13hslSaturationEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hslSaturation();
+int C_ZNK6QColor13hslSaturationEv(void *this_) {
+  return (int)((QColor*)this_)->hslSaturation();
 }
-// /usr/include/qt/QtGui/qcolor.h:173
-// int lightness()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:183
+// [4] int lightness()
 extern "C"
-void C_ZNK6QColor9lightnessEv(void *this_) {
-  /*return*/ ((QColor*)this_)->lightness();
+int C_ZNK6QColor9lightnessEv(void *this_) {
+  return (int)((QColor*)this_)->lightness();
 }
-// /usr/include/qt/QtGui/qcolor.h:175
-// qreal hslHueF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:185
+// [8] qreal hslHueF()
 extern "C"
-void C_ZNK6QColor7hslHueFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hslHueF();
+qreal C_ZNK6QColor7hslHueFEv(void *this_) {
+  return (qreal)((QColor*)this_)->hslHueF();
 }
-// /usr/include/qt/QtGui/qcolor.h:176
-// qreal hslSaturationF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:186
+// [8] qreal hslSaturationF()
 extern "C"
-void C_ZNK6QColor14hslSaturationFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->hslSaturationF();
+qreal C_ZNK6QColor14hslSaturationFEv(void *this_) {
+  return (qreal)((QColor*)this_)->hslSaturationF();
 }
-// /usr/include/qt/QtGui/qcolor.h:177
-// qreal lightnessF()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:187
+// [8] qreal lightnessF()
 extern "C"
-void C_ZNK6QColor10lightnessFEv(void *this_) {
-  /*return*/ ((QColor*)this_)->lightnessF();
+qreal C_ZNK6QColor10lightnessFEv(void *this_) {
+  return (qreal)((QColor*)this_)->lightnessF();
 }
-// /usr/include/qt/QtGui/qcolor.h:179
-// void getHsl(int *, int *, int *, int *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:189
+// [-2] void getHsl(int *, int *, int *, int *)
 extern "C"
 void C_ZNK6QColor6getHslEPiS0_S0_S0_(void *this_, int * h, int * s, int * l, int * a) {
   ((QColor*)this_)->getHsl(h, s, l, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:180
-// void setHsl(int, int, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:190
+// [-2] void setHsl(int, int, int, int)
 extern "C"
 void C_ZN6QColor6setHslEiiii(void *this_, int h, int s, int l, int a) {
   ((QColor*)this_)->setHsl(h, s, l, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:182
-// void getHslF(qreal *, qreal *, qreal *, qreal *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:192
+// [-2] void getHslF(qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZNK6QColor7getHslFEPdS0_S0_S0_(void *this_, qreal * h, qreal * s, qreal * l, qreal * a) {
   ((QColor*)this_)->getHslF(h, s, l, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:183
-// void setHslF(qreal, qreal, qreal, qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:193
+// [-2] void setHslF(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QColor7setHslFEdddd(void *this_, qreal h, qreal s, qreal l, qreal a) {
   ((QColor*)this_)->setHslF(h, s, l, a);
 }
-// /usr/include/qt/QtGui/qcolor.h:185
-// QColor toRgb()
-extern "C"
-void C_ZNK6QColor5toRgbEv(void *this_) {
-  /*return*/ ((QColor*)this_)->toRgb();
-}
-// /usr/include/qt/QtGui/qcolor.h:186
-// QColor toHsv()
-extern "C"
-void C_ZNK6QColor5toHsvEv(void *this_) {
-  /*return*/ ((QColor*)this_)->toHsv();
-}
-// /usr/include/qt/QtGui/qcolor.h:187
-// QColor toCmyk()
-extern "C"
-void C_ZNK6QColor6toCmykEv(void *this_) {
-  /*return*/ ((QColor*)this_)->toCmyk();
-}
-// /usr/include/qt/QtGui/qcolor.h:188
-// QColor toHsl()
-extern "C"
-void C_ZNK6QColor5toHslEv(void *this_) {
-  /*return*/ ((QColor*)this_)->toHsl();
-}
-// /usr/include/qt/QtGui/qcolor.h:190
-// QColor convertTo(enum QColor::Spec)
-extern "C"
-void C_ZNK6QColor9convertToENS_4SpecE(void *this_, QColor::Spec colorSpec) {
-  /*return*/ ((QColor*)this_)->convertTo(colorSpec);
-}
-// static
-// /usr/include/qt/QtGui/qcolor.h:192
-// QColor fromRgb(QRgb)
-extern "C"
-void C_ZN6QColor7fromRgbEj(QRgb rgb) {
-  /*return*/ QColor::fromRgb(rgb);
-}
-// static
-// /usr/include/qt/QtGui/qcolor.h:193
-// QColor fromRgba(QRgb)
-extern "C"
-void C_ZN6QColor8fromRgbaEj(QRgb rgba) {
-  /*return*/ QColor::fromRgba(rgba);
-}
-// static
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:195
-// QColor fromRgb(int, int, int, int)
+// [16] QColor toRgb()
 extern "C"
-void C_ZN6QColor7fromRgbEiiii(int r, int g, int b, int a) {
-  /*return*/ QColor::fromRgb(r, g, b, a);
+void* C_ZNK6QColor5toRgbEv(void *this_) {
+  auto rv = ((QColor*)this_)->toRgb();
+return new QColor(rv);
 }
-// static
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:196
-// QColor fromRgbF(qreal, qreal, qreal, qreal)
+// [16] QColor toHsv()
 extern "C"
-void C_ZN6QColor8fromRgbFEdddd(qreal r, qreal g, qreal b, qreal a) {
-  /*return*/ QColor::fromRgbF(r, g, b, a);
+void* C_ZNK6QColor5toHsvEv(void *this_) {
+  auto rv = ((QColor*)this_)->toHsv();
+return new QColor(rv);
 }
-// static
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:197
+// [16] QColor toCmyk()
+extern "C"
+void* C_ZNK6QColor6toCmykEv(void *this_) {
+  auto rv = ((QColor*)this_)->toCmyk();
+return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:198
-// QColor fromRgba64(ushort, ushort, ushort, ushort)
+// [16] QColor toHsl()
 extern "C"
-void C_ZN6QColor10fromRgba64Etttt(ushort r, ushort g, ushort b, ushort a) {
-  /*return*/ QColor::fromRgba64(r, g, b, a);
+void* C_ZNK6QColor5toHslEv(void *this_) {
+  auto rv = ((QColor*)this_)->toHsl();
+return new QColor(rv);
 }
-// static
-// /usr/include/qt/QtGui/qcolor.h:199
-// QColor fromRgba64(class QRgba64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:200
+// [16] QColor convertTo(enum QColor::Spec)
 extern "C"
-void C_ZN6QColor10fromRgba64E7QRgba64(QRgba64 rgba) {
-  /*return*/ QColor::fromRgba64(rgba);
+void* C_ZNK6QColor9convertToENS_4SpecE(void *this_, QColor::Spec colorSpec) {
+  auto rv = ((QColor*)this_)->convertTo(colorSpec);
+return new QColor(rv);
 }
-// static
-// /usr/include/qt/QtGui/qcolor.h:201
-// QColor fromHsv(int, int, int, int)
-extern "C"
-void C_ZN6QColor7fromHsvEiiii(int h, int s, int v, int a) {
-  /*return*/ QColor::fromHsv(h, s, v, a);
-}
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:202
-// QColor fromHsvF(qreal, qreal, qreal, qreal)
+// [16] QColor fromRgb(QRgb)
 extern "C"
-void C_ZN6QColor8fromHsvFEdddd(qreal h, qreal s, qreal v, qreal a) {
-  /*return*/ QColor::fromHsvF(h, s, v, a);
+void* C_ZN6QColor7fromRgbEj(QRgb rgb) {
+  auto rv = QColor::fromRgb(rgb);
+return new QColor(rv);
 }
-// static
-// /usr/include/qt/QtGui/qcolor.h:204
-// QColor fromCmyk(int, int, int, int, int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:203
+// [16] QColor fromRgba(QRgb)
 extern "C"
-void C_ZN6QColor8fromCmykEiiiii(int c, int m, int y, int k, int a) {
-  /*return*/ QColor::fromCmyk(c, m, y, k, a);
+void* C_ZN6QColor8fromRgbaEj(QRgb rgba) {
+  auto rv = QColor::fromRgba(rgba);
+return new QColor(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:205
-// QColor fromCmykF(qreal, qreal, qreal, qreal, qreal)
+// [16] QColor fromRgb(int, int, int, int)
 extern "C"
-void C_ZN6QColor9fromCmykFEddddd(qreal c, qreal m, qreal y, qreal k, qreal a) {
-  /*return*/ QColor::fromCmykF(c, m, y, k, a);
+void* C_ZN6QColor7fromRgbEiiii(int r, int g, int b, int a) {
+  auto rv = QColor::fromRgb(r, g, b, a);
+return new QColor(rv);
 }
-// static
-// /usr/include/qt/QtGui/qcolor.h:207
-// QColor fromHsl(int, int, int, int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:206
+// [16] QColor fromRgbF(qreal, qreal, qreal, qreal)
 extern "C"
-void C_ZN6QColor7fromHslEiiii(int h, int s, int l, int a) {
-  /*return*/ QColor::fromHsl(h, s, l, a);
+void* C_ZN6QColor8fromRgbFEdddd(qreal r, qreal g, qreal b, qreal a) {
+  auto rv = QColor::fromRgbF(r, g, b, a);
+return new QColor(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:208
-// QColor fromHslF(qreal, qreal, qreal, qreal)
+// [16] QColor fromRgba64(ushort, ushort, ushort, ushort)
 extern "C"
-void C_ZN6QColor8fromHslFEdddd(qreal h, qreal s, qreal l, qreal a) {
-  /*return*/ QColor::fromHslF(h, s, l, a);
+void* C_ZN6QColor10fromRgba64Etttt(ushort r, ushort g, ushort b, ushort a) {
+  auto rv = QColor::fromRgba64(r, g, b, a);
+return new QColor(rv);
 }
-// /usr/include/qt/QtGui/qcolor.h:210
-// QColor light(int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:209
+// [16] QColor fromRgba64(class QRgba64)
 extern "C"
-void C_ZNK6QColor5lightEi(void *this_, int f) {
-  /*return*/ ((QColor*)this_)->light(f);
+void* C_ZN6QColor10fromRgba64E7QRgba64(QRgba64 rgba) {
+  auto rv = QColor::fromRgba64(rgba);
+return new QColor(rv);
 }
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:211
-// QColor lighter(int)
+// [16] QColor fromHsv(int, int, int, int)
 extern "C"
-void C_ZNK6QColor7lighterEi(void *this_, int f) {
-  /*return*/ ((QColor*)this_)->lighter(f);
+void* C_ZN6QColor7fromHsvEiiii(int h, int s, int v, int a) {
+  auto rv = QColor::fromHsv(h, s, v, a);
+return new QColor(rv);
 }
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:212
-// QColor dark(int)
+// [16] QColor fromHsvF(qreal, qreal, qreal, qreal)
 extern "C"
-void C_ZNK6QColor4darkEi(void *this_, int f) {
-  /*return*/ ((QColor*)this_)->dark(f);
+void* C_ZN6QColor8fromHsvFEdddd(qreal h, qreal s, qreal v, qreal a) {
+  auto rv = QColor::fromHsvF(h, s, v, a);
+return new QColor(rv);
 }
-// /usr/include/qt/QtGui/qcolor.h:213
-// QColor darker(int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:214
+// [16] QColor fromCmyk(int, int, int, int, int)
 extern "C"
-void C_ZNK6QColor6darkerEi(void *this_, int f) {
-  /*return*/ ((QColor*)this_)->darker(f);
+void* C_ZN6QColor8fromCmykEiiiii(int c, int m, int y, int k, int a) {
+  auto rv = QColor::fromCmyk(c, m, y, k, a);
+return new QColor(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:215
+// [16] QColor fromCmykF(qreal, qreal, qreal, qreal, qreal)
+extern "C"
+void* C_ZN6QColor9fromCmykFEddddd(qreal c, qreal m, qreal y, qreal k, qreal a) {
+  auto rv = QColor::fromCmykF(c, m, y, k, a);
+return new QColor(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:217
+// [16] QColor fromHsl(int, int, int, int)
+extern "C"
+void* C_ZN6QColor7fromHslEiiii(int h, int s, int l, int a) {
+  auto rv = QColor::fromHsl(h, s, l, a);
+return new QColor(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:218
+// [16] QColor fromHslF(qreal, qreal, qreal, qreal)
+extern "C"
+void* C_ZN6QColor8fromHslFEdddd(qreal h, qreal s, qreal l, qreal a) {
+  auto rv = QColor::fromHslF(h, s, l, a);
+return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:220
-// bool isValidColor(const class QString &)
+// [16] QColor light(int)
 extern "C"
-void C_ZN6QColor12isValidColorERK7QString(const QString & name) {
-  /*return*/ QColor::isValidColor(name);
+void* C_ZNK6QColor5lightEi(void *this_, int f) {
+  auto rv = ((QColor*)this_)->light(f);
+return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:221
+// [16] QColor lighter(int)
+extern "C"
+void* C_ZNK6QColor7lighterEi(void *this_, int f) {
+  auto rv = ((QColor*)this_)->lighter(f);
+return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:222
+// [16] QColor dark(int)
+extern "C"
+void* C_ZNK6QColor4darkEi(void *this_, int f) {
+  auto rv = ((QColor*)this_)->dark(f);
+return new QColor(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:223
+// [16] QColor darker(int)
+extern "C"
+void* C_ZNK6QColor6darkerEi(void *this_, int f) {
+  auto rv = ((QColor*)this_)->darker(f);
+return new QColor(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:231
+// [1] bool isValidColor(const class QString &)
+extern "C"
+bool C_ZN6QColor12isValidColorERK7QString(const QString & name) {
+  return (bool)QColor::isValidColor(name);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:233
+// [1] bool isValidColor(class QStringView)
+extern "C"
+bool C_ZN6QColor12isValidColorE11QStringView(QStringView arg0) {
+  return (bool)QColor::isValidColor(arg0);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:234
+// [1] bool isValidColor(class QLatin1String)
+extern "C"
+bool C_ZN6QColor12isValidColorE13QLatin1String(QLatin1String arg0) {
+  return (bool)QColor::isValidColor(arg0);
 }
 //  main block end

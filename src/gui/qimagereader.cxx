@@ -3,329 +3,376 @@
 #include <qimagereader.h>
 #include <QtGui>
 
+// QImageReader is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qimagereader.h:70
-// void QImageReader()
+
+class MyQImageReader : public QImageReader {
+public:
+MyQImageReader() : QImageReader() {}
+MyQImageReader(QIODevice * device, const QByteArray & format) : QImageReader(device, format) {}
+MyQImageReader(const QString & fileName, const QByteArray & format) : QImageReader(fileName, format) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:71
+// [-2] void QImageReader()
 extern "C"
 void* C_ZN12QImageReaderC1Ev() {
-  return new QImageReader();
+  (MyQImageReader*)(0);
+  return  new MyQImageReader();
 }
-// /usr/include/qt/QtGui/qimagereader.h:71
-// void QImageReader(class QIODevice *, const class QByteArray &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:72
+// [-2] void QImageReader(class QIODevice *, const class QByteArray &)
 extern "C"
 void* C_ZN12QImageReaderC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
-  return new QImageReader(device, format);
+  (MyQImageReader*)(0);
+  return  new MyQImageReader(device, format);
 }
-// /usr/include/qt/QtGui/qimagereader.h:72
-// void QImageReader(const class QString &, const class QByteArray &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:73
+// [-2] void QImageReader(const class QString &, const class QByteArray &)
 extern "C"
 void* C_ZN12QImageReaderC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
-  return new QImageReader(fileName, format);
+  (MyQImageReader*)(0);
+  return  new MyQImageReader(fileName, format);
 }
-// /usr/include/qt/QtGui/qimagereader.h:73
-// void ~QImageReader()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:74
+// [-2] void ~QImageReader()
 extern "C"
 void C_ZN12QImageReaderD1Ev(void *this_) {
   delete (QImageReader*)(this_);
 }
-// /usr/include/qt/QtGui/qimagereader.h:75
-// void setFormat(const class QByteArray &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:76
+// [-2] void setFormat(const class QByteArray &)
 extern "C"
 void C_ZN12QImageReader9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
   ((QImageReader*)this_)->setFormat(format);
 }
-// /usr/include/qt/QtGui/qimagereader.h:76
-// QByteArray format()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:77
+// [8] QByteArray format()
 extern "C"
-void C_ZNK12QImageReader6formatEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->format();
+void* C_ZNK12QImageReader6formatEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->format();
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:78
-// void setAutoDetectImageFormat(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:79
+// [-2] void setAutoDetectImageFormat(_Bool)
 extern "C"
 void C_ZN12QImageReader24setAutoDetectImageFormatEb(void *this_, bool enabled) {
   ((QImageReader*)this_)->setAutoDetectImageFormat(enabled);
 }
-// /usr/include/qt/QtGui/qimagereader.h:79
-// bool autoDetectImageFormat()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:80
+// [1] bool autoDetectImageFormat()
 extern "C"
-void C_ZNK12QImageReader21autoDetectImageFormatEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->autoDetectImageFormat();
+bool C_ZNK12QImageReader21autoDetectImageFormatEv(void *this_) {
+  return (bool)((QImageReader*)this_)->autoDetectImageFormat();
 }
-// /usr/include/qt/QtGui/qimagereader.h:81
-// void setDecideFormatFromContent(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:82
+// [-2] void setDecideFormatFromContent(_Bool)
 extern "C"
 void C_ZN12QImageReader26setDecideFormatFromContentEb(void *this_, bool ignored) {
   ((QImageReader*)this_)->setDecideFormatFromContent(ignored);
 }
-// /usr/include/qt/QtGui/qimagereader.h:82
-// bool decideFormatFromContent()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:83
+// [1] bool decideFormatFromContent()
 extern "C"
-void C_ZNK12QImageReader23decideFormatFromContentEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->decideFormatFromContent();
+bool C_ZNK12QImageReader23decideFormatFromContentEv(void *this_) {
+  return (bool)((QImageReader*)this_)->decideFormatFromContent();
 }
-// /usr/include/qt/QtGui/qimagereader.h:84
-// void setDevice(class QIODevice *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:85
+// [-2] void setDevice(class QIODevice *)
 extern "C"
 void C_ZN12QImageReader9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QImageReader*)this_)->setDevice(device);
 }
-// /usr/include/qt/QtGui/qimagereader.h:85
-// QIODevice * device()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:86
+// [8] QIODevice * device()
 extern "C"
-void C_ZNK12QImageReader6deviceEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->device();
+void* C_ZNK12QImageReader6deviceEv(void *this_) {
+  return (void*)((QImageReader*)this_)->device();
 }
-// /usr/include/qt/QtGui/qimagereader.h:87
-// void setFileName(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:88
+// [-2] void setFileName(const class QString &)
 extern "C"
 void C_ZN12QImageReader11setFileNameERK7QString(void *this_, const QString & fileName) {
   ((QImageReader*)this_)->setFileName(fileName);
 }
-// /usr/include/qt/QtGui/qimagereader.h:88
-// QString fileName()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:89
+// [8] QString fileName()
 extern "C"
-void C_ZNK12QImageReader8fileNameEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->fileName();
+void* C_ZNK12QImageReader8fileNameEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->fileName();
+return new QString(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:90
-// QSize size()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:91
+// [8] QSize size()
 extern "C"
-void C_ZNK12QImageReader4sizeEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->size();
+void* C_ZNK12QImageReader4sizeEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->size();
+return new QSize(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:92
-// QImage::Format imageFormat()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:93
+// [4] QImage::Format imageFormat()
 extern "C"
-void C_ZNK12QImageReader11imageFormatEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->imageFormat();
+QImage::Format C_ZNK12QImageReader11imageFormatEv(void *this_) {
+  return (QImage::Format)((QImageReader*)this_)->imageFormat();
 }
-// /usr/include/qt/QtGui/qimagereader.h:94
-// QStringList textKeys()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:96
+// [8] QString text(const class QString &)
 extern "C"
-void C_ZNK12QImageReader8textKeysEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->textKeys();
+void* C_ZNK12QImageReader4textERK7QString(void *this_, const QString & key) {
+  auto rv = ((QImageReader*)this_)->text(key);
+return new QString(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:95
-// QString text(const class QString &)
-extern "C"
-void C_ZNK12QImageReader4textERK7QString(void *this_, const QString & key) {
-  /*return*/ ((QImageReader*)this_)->text(key);
-}
-// /usr/include/qt/QtGui/qimagereader.h:97
-// void setClipRect(const class QRect &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:98
+// [-2] void setClipRect(const class QRect &)
 extern "C"
 void C_ZN12QImageReader11setClipRectERK5QRect(void *this_, const QRect & rect) {
   ((QImageReader*)this_)->setClipRect(rect);
 }
-// /usr/include/qt/QtGui/qimagereader.h:98
-// QRect clipRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:99
+// [16] QRect clipRect()
 extern "C"
-void C_ZNK12QImageReader8clipRectEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->clipRect();
+void* C_ZNK12QImageReader8clipRectEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->clipRect();
+return new QRect(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:100
-// void setScaledSize(const class QSize &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:101
+// [-2] void setScaledSize(const class QSize &)
 extern "C"
 void C_ZN12QImageReader13setScaledSizeERK5QSize(void *this_, const QSize & size) {
   ((QImageReader*)this_)->setScaledSize(size);
 }
-// /usr/include/qt/QtGui/qimagereader.h:101
-// QSize scaledSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:102
+// [8] QSize scaledSize()
 extern "C"
-void C_ZNK12QImageReader10scaledSizeEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->scaledSize();
+void* C_ZNK12QImageReader10scaledSizeEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->scaledSize();
+return new QSize(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:103
-// void setQuality(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:104
+// [-2] void setQuality(int)
 extern "C"
 void C_ZN12QImageReader10setQualityEi(void *this_, int quality) {
   ((QImageReader*)this_)->setQuality(quality);
 }
-// /usr/include/qt/QtGui/qimagereader.h:104
-// int quality()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:105
+// [4] int quality()
 extern "C"
-void C_ZNK12QImageReader7qualityEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->quality();
+int C_ZNK12QImageReader7qualityEv(void *this_) {
+  return (int)((QImageReader*)this_)->quality();
 }
-// /usr/include/qt/QtGui/qimagereader.h:106
-// void setScaledClipRect(const class QRect &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:107
+// [-2] void setScaledClipRect(const class QRect &)
 extern "C"
 void C_ZN12QImageReader17setScaledClipRectERK5QRect(void *this_, const QRect & rect) {
   ((QImageReader*)this_)->setScaledClipRect(rect);
 }
-// /usr/include/qt/QtGui/qimagereader.h:107
-// QRect scaledClipRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:108
+// [16] QRect scaledClipRect()
 extern "C"
-void C_ZNK12QImageReader14scaledClipRectEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->scaledClipRect();
+void* C_ZNK12QImageReader14scaledClipRectEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->scaledClipRect();
+return new QRect(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:109
-// void setBackgroundColor(const class QColor &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:110
+// [-2] void setBackgroundColor(const class QColor &)
 extern "C"
 void C_ZN12QImageReader18setBackgroundColorERK6QColor(void *this_, const QColor & color) {
   ((QImageReader*)this_)->setBackgroundColor(color);
 }
-// /usr/include/qt/QtGui/qimagereader.h:110
-// QColor backgroundColor()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:111
+// [16] QColor backgroundColor()
 extern "C"
-void C_ZNK12QImageReader15backgroundColorEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->backgroundColor();
+void* C_ZNK12QImageReader15backgroundColorEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->backgroundColor();
+return new QColor(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:112
-// bool supportsAnimation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:113
+// [1] bool supportsAnimation()
 extern "C"
-void C_ZNK12QImageReader17supportsAnimationEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->supportsAnimation();
+bool C_ZNK12QImageReader17supportsAnimationEv(void *this_) {
+  return (bool)((QImageReader*)this_)->supportsAnimation();
 }
-// /usr/include/qt/QtGui/qimagereader.h:114
-// QImageIOHandler::Transformations transformation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:115
+// [-2] QImageIOHandler::Transformations transformation()
 extern "C"
-void C_ZNK12QImageReader14transformationEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->transformation();
+QImageIOHandler::Transformations C_ZNK12QImageReader14transformationEv(void *this_) {
+  return (QImageIOHandler::Transformations)((QImageReader*)this_)->transformation();
 }
-// /usr/include/qt/QtGui/qimagereader.h:116
-// void setAutoTransform(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:117
+// [-2] void setAutoTransform(_Bool)
 extern "C"
 void C_ZN12QImageReader16setAutoTransformEb(void *this_, bool enabled) {
   ((QImageReader*)this_)->setAutoTransform(enabled);
 }
-// /usr/include/qt/QtGui/qimagereader.h:117
-// bool autoTransform()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:118
+// [1] bool autoTransform()
 extern "C"
-void C_ZNK12QImageReader13autoTransformEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->autoTransform();
+bool C_ZNK12QImageReader13autoTransformEv(void *this_) {
+  return (bool)((QImageReader*)this_)->autoTransform();
 }
-// /usr/include/qt/QtGui/qimagereader.h:119
-// void setGamma(float)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:120
+// [-2] void setGamma(float)
 extern "C"
 void C_ZN12QImageReader8setGammaEf(void *this_, float gamma) {
   ((QImageReader*)this_)->setGamma(gamma);
 }
-// /usr/include/qt/QtGui/qimagereader.h:120
-// float gamma()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:121
+// [4] float gamma()
 extern "C"
-void C_ZNK12QImageReader5gammaEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->gamma();
+float C_ZNK12QImageReader5gammaEv(void *this_) {
+  return (float)((QImageReader*)this_)->gamma();
 }
-// /usr/include/qt/QtGui/qimagereader.h:122
-// QByteArray subType()
-extern "C"
-void C_ZNK12QImageReader7subTypeEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->subType();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:123
-// QList<QByteArray> supportedSubTypes()
+// [8] QByteArray subType()
 extern "C"
-void C_ZNK12QImageReader17supportedSubTypesEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->supportedSubTypes();
+void* C_ZNK12QImageReader7subTypeEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->subType();
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:125
-// bool canRead()
-extern "C"
-void C_ZNK12QImageReader7canReadEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->canRead();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:126
-// QImage read()
+// [1] bool canRead()
 extern "C"
-void C_ZN12QImageReader4readEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->read();
+bool C_ZNK12QImageReader7canReadEv(void *this_) {
+  return (bool)((QImageReader*)this_)->canRead();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:127
-// bool read(class QImage *)
+// [32] QImage read()
 extern "C"
-void C_ZN12QImageReader4readEP6QImage(void *this_, QImage * image) {
-  /*return*/ ((QImageReader*)this_)->read(image);
+void* C_ZN12QImageReader4readEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->read();
+return new QImage(rv);
 }
-// /usr/include/qt/QtGui/qimagereader.h:129
-// bool jumpToNextImage()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:128
+// [1] bool read(class QImage *)
 extern "C"
-void C_ZN12QImageReader15jumpToNextImageEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->jumpToNextImage();
+bool C_ZN12QImageReader4readEP6QImage(void *this_, QImage * image) {
+  return (bool)((QImageReader*)this_)->read(image);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:130
-// bool jumpToImage(int)
+// [1] bool jumpToNextImage()
 extern "C"
-void C_ZN12QImageReader11jumpToImageEi(void *this_, int imageNumber) {
-  /*return*/ ((QImageReader*)this_)->jumpToImage(imageNumber);
+bool C_ZN12QImageReader15jumpToNextImageEv(void *this_) {
+  return (bool)((QImageReader*)this_)->jumpToNextImage();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:131
-// int loopCount()
+// [1] bool jumpToImage(int)
 extern "C"
-void C_ZNK12QImageReader9loopCountEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->loopCount();
+bool C_ZN12QImageReader11jumpToImageEi(void *this_, int imageNumber) {
+  return (bool)((QImageReader*)this_)->jumpToImage(imageNumber);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:132
-// int imageCount()
+// [4] int loopCount()
 extern "C"
-void C_ZNK12QImageReader10imageCountEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->imageCount();
+int C_ZNK12QImageReader9loopCountEv(void *this_) {
+  return (int)((QImageReader*)this_)->loopCount();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:133
-// int nextImageDelay()
+// [4] int imageCount()
 extern "C"
-void C_ZNK12QImageReader14nextImageDelayEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->nextImageDelay();
+int C_ZNK12QImageReader10imageCountEv(void *this_) {
+  return (int)((QImageReader*)this_)->imageCount();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:134
-// int currentImageNumber()
+// [4] int nextImageDelay()
 extern "C"
-void C_ZNK12QImageReader18currentImageNumberEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->currentImageNumber();
+int C_ZNK12QImageReader14nextImageDelayEv(void *this_) {
+  return (int)((QImageReader*)this_)->nextImageDelay();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:135
-// QRect currentImageRect()
+// [4] int currentImageNumber()
 extern "C"
-void C_ZNK12QImageReader16currentImageRectEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->currentImageRect();
+int C_ZNK12QImageReader18currentImageNumberEv(void *this_) {
+  return (int)((QImageReader*)this_)->currentImageNumber();
 }
-// /usr/include/qt/QtGui/qimagereader.h:137
-// QImageReader::ImageReaderError error()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:136
+// [16] QRect currentImageRect()
 extern "C"
-void C_ZNK12QImageReader5errorEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->error();
+void* C_ZNK12QImageReader16currentImageRectEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->currentImageRect();
+return new QRect(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:138
-// QString errorString()
+// [4] QImageReader::ImageReaderError error()
 extern "C"
-void C_ZNK12QImageReader11errorStringEv(void *this_) {
-  /*return*/ ((QImageReader*)this_)->errorString();
+QImageReader::ImageReaderError C_ZNK12QImageReader5errorEv(void *this_) {
+  return (QImageReader::ImageReaderError)((QImageReader*)this_)->error();
 }
-// /usr/include/qt/QtGui/qimagereader.h:140
-// bool supportsOption(class QImageIOHandler::ImageOption)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:139
+// [8] QString errorString()
 extern "C"
-void C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
-  /*return*/ ((QImageReader*)this_)->supportsOption(option);
+void* C_ZNK12QImageReader11errorStringEv(void *this_) {
+  auto rv = ((QImageReader*)this_)->errorString();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtGui/qimagereader.h:142
-// QByteArray imageFormat(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:141
+// [1] bool supportsOption(class QImageIOHandler::ImageOption)
 extern "C"
-void C_ZN12QImageReader11imageFormatERK7QString(const QString & fileName) {
-  /*return*/ QImageReader::imageFormat(fileName);
+bool C_ZNK12QImageReader14supportsOptionEN15QImageIOHandler11ImageOptionE(void *this_, QImageIOHandler::ImageOption option) {
+  return (bool)((QImageReader*)this_)->supportsOption(option);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:143
-// QByteArray imageFormat(class QIODevice *)
+// [8] QByteArray imageFormat(const class QString &)
 extern "C"
-void C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
-  /*return*/ QImageReader::imageFormat(device);
+void* C_ZN12QImageReader11imageFormatERK7QString(const QString & fileName) {
+  auto rv = QImageReader::imageFormat(fileName);
+return new QByteArray(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:144
-// QList<QByteArray> supportedImageFormats()
+// [8] QByteArray imageFormat(class QIODevice *)
 extern "C"
-void C_ZN12QImageReader21supportedImageFormatsEv() {
-  /*return*/ QImageReader::supportedImageFormats();
-}
-// static
-// /usr/include/qt/QtGui/qimagereader.h:145
-// QList<QByteArray> supportedMimeTypes()
-extern "C"
-void C_ZN12QImageReader18supportedMimeTypesEv() {
-  /*return*/ QImageReader::supportedMimeTypes();
+void* C_ZN12QImageReader11imageFormatEP9QIODevice(QIODevice * device) {
+  auto rv = QImageReader::imageFormat(device);
+return new QByteArray(rv);
 }
 //  main block end

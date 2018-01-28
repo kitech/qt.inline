@@ -3,96 +3,99 @@
 #include <qsysinfo.h>
 #include <QtCore>
 
+// QSysInfo is pure virtual: false
 //  header block end
 
 //  main block begin
-// static inline
-// /usr/include/qt/QtCore/qsysinfo.h:125
-// QSysInfo::WinVersion windowsVersion()
+
+class MyQSysInfo : public QSysInfo {
+public:
+};
+
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:220
+// [4] QSysInfo::WinVersion windowsVersion()
 extern "C"
-void C_ZN8QSysInfo14windowsVersionEv() {
-  /*return*/ QSysInfo::windowsVersion();
+QSysInfo::WinVersion C_ZN8QSysInfo14windowsVersionEv() {
+  return (QSysInfo::WinVersion)QSysInfo::windowsVersion();
 }
-// static inline
-// /usr/include/qt/QtCore/qsysinfo.h:184
-// QSysInfo::MacVersion macVersion()
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:227
+// [4] QSysInfo::MacVersion macVersion()
 extern "C"
-void C_ZN8QSysInfo10macVersionEv() {
-  /*return*/ QSysInfo::macVersion();
+QSysInfo::MacVersion C_ZN8QSysInfo10macVersionEv() {
+  return (QSysInfo::MacVersion)QSysInfo::macVersion();
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:187
-// QString buildCpuArchitecture()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:232
+// [8] QString buildCpuArchitecture()
 extern "C"
-void C_ZN8QSysInfo20buildCpuArchitectureEv() {
-  /*return*/ QSysInfo::buildCpuArchitecture();
+void* C_ZN8QSysInfo20buildCpuArchitectureEv() {
+  auto rv = QSysInfo::buildCpuArchitecture();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:188
-// QString currentCpuArchitecture()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:233
+// [8] QString currentCpuArchitecture()
 extern "C"
-void C_ZN8QSysInfo22currentCpuArchitectureEv() {
-  /*return*/ QSysInfo::currentCpuArchitecture();
+void* C_ZN8QSysInfo22currentCpuArchitectureEv() {
+  auto rv = QSysInfo::currentCpuArchitecture();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:189
-// QString buildAbi()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:234
+// [8] QString buildAbi()
 extern "C"
-void C_ZN8QSysInfo8buildAbiEv() {
-  /*return*/ QSysInfo::buildAbi();
+void* C_ZN8QSysInfo8buildAbiEv() {
+  auto rv = QSysInfo::buildAbi();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:191
-// QString kernelType()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:236
+// [8] QString kernelType()
 extern "C"
-void C_ZN8QSysInfo10kernelTypeEv() {
-  /*return*/ QSysInfo::kernelType();
+void* C_ZN8QSysInfo10kernelTypeEv() {
+  auto rv = QSysInfo::kernelType();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:192
-// QString kernelVersion()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:237
+// [8] QString kernelVersion()
 extern "C"
-void C_ZN8QSysInfo13kernelVersionEv() {
-  /*return*/ QSysInfo::kernelVersion();
+void* C_ZN8QSysInfo13kernelVersionEv() {
+  auto rv = QSysInfo::kernelVersion();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:193
-// QString productType()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:238
+// [8] QString productType()
 extern "C"
-void C_ZN8QSysInfo11productTypeEv() {
-  /*return*/ QSysInfo::productType();
+void* C_ZN8QSysInfo11productTypeEv() {
+  auto rv = QSysInfo::productType();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:194
-// QString productVersion()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:239
+// [8] QString productVersion()
 extern "C"
-void C_ZN8QSysInfo14productVersionEv() {
-  /*return*/ QSysInfo::productVersion();
+void* C_ZN8QSysInfo14productVersionEv() {
+  auto rv = QSysInfo::productVersion();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:195
-// QString prettyProductName()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:240
+// [8] QString prettyProductName()
 extern "C"
-void C_ZN8QSysInfo17prettyProductNameEv() {
-  /*return*/ QSysInfo::prettyProductName();
+void* C_ZN8QSysInfo17prettyProductNameEv() {
+  auto rv = QSysInfo::prettyProductName();
+return new QString(rv);
 }
-// static
-// /usr/include/qt/QtCore/qsysinfo.h:197
-// QString machineHostName()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsysinfo.h:242
+// [8] QString machineHostName()
 extern "C"
-void C_ZN8QSysInfo15machineHostNameEv() {
-  /*return*/ QSysInfo::machineHostName();
+void* C_ZN8QSysInfo15machineHostNameEv() {
+  auto rv = QSysInfo::machineHostName();
+return new QString(rv);
 }
 //  main block end
-
-//  use block begin
-
-//  use block end
-
-//  ext block begin
-
-//  ext block end
-
-//  body block begin
-
-//  body block end

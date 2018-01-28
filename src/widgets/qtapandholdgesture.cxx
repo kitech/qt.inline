@@ -3,53 +3,65 @@
 #include <qgesture.h>
 #include <QtWidgets>
 
+// QTapAndHoldGesture is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qgesture.h:252
-// const QMetaObject * metaObject()
+
+class MyQTapAndHoldGesture : public QTapAndHoldGesture {
+public:
+MyQTapAndHoldGesture(QObject * parent) : QTapAndHoldGesture(parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:254
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK18QTapAndHoldGesture10metaObjectEv(void *this_) {
-  /*return*/ ((QTapAndHoldGesture*)this_)->metaObject();
+void* C_ZNK18QTapAndHoldGesture10metaObjectEv(void *this_) {
+  return (void*)((QTapAndHoldGesture*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qgesture.h:258
-// void QTapAndHoldGesture(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:260
+// [-2] void QTapAndHoldGesture(class QObject *)
 extern "C"
 void* C_ZN18QTapAndHoldGestureC1EP7QObject(QObject * parent) {
-  return new QTapAndHoldGesture(parent);
+  (MyQTapAndHoldGesture*)(0);
+  return  new MyQTapAndHoldGesture(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgesture.h:259
-// void ~QTapAndHoldGesture()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:261
+// [-2] void ~QTapAndHoldGesture()
 extern "C"
 void C_ZN18QTapAndHoldGestureD1Ev(void *this_) {
   delete (QTapAndHoldGesture*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgesture.h:261
-// QPointF position()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:263
+// [16] QPointF position()
 extern "C"
-void C_ZNK18QTapAndHoldGesture8positionEv(void *this_) {
-  /*return*/ ((QTapAndHoldGesture*)this_)->position();
+void* C_ZNK18QTapAndHoldGesture8positionEv(void *this_) {
+  auto rv = ((QTapAndHoldGesture*)this_)->position();
+return new QPointF(rv);
 }
-// /usr/include/qt/QtWidgets/qgesture.h:262
-// void setPosition(const class QPointF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:264
+// [-2] void setPosition(const class QPointF &)
 extern "C"
 void C_ZN18QTapAndHoldGesture11setPositionERK7QPointF(void *this_, const QPointF & pos) {
   ((QTapAndHoldGesture*)this_)->setPosition(pos);
 }
-// static
-// /usr/include/qt/QtWidgets/qgesture.h:264
-// void setTimeout(int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:266
+// [-2] void setTimeout(int)
 extern "C"
 void C_ZN18QTapAndHoldGesture10setTimeoutEi(int msecs) {
   QTapAndHoldGesture::setTimeout(msecs);
 }
-// static
-// /usr/include/qt/QtWidgets/qgesture.h:265
-// int timeout()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:267
+// [4] int timeout()
 extern "C"
-void C_ZN18QTapAndHoldGesture7timeoutEv() {
-  /*return*/ QTapAndHoldGesture::timeout();
+int C_ZN18QTapAndHoldGesture7timeoutEv() {
+  return (int)QTapAndHoldGesture::timeout();
 }
 //  main block end

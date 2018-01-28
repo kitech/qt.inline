@@ -3,151 +3,174 @@
 #include <qsize.h>
 #include <QtCore>
 
+// QSizeF is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qsize.h:210
-// void QSizeF()
+
+class MyQSizeF : public QSizeF {
+public:
+MyQSizeF() : QSizeF() {}
+MyQSizeF(const QSize & sz) : QSizeF(sz) {}
+MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:218
+// [-2] void QSizeF()
 extern "C"
 void* C_ZN6QSizeFC1Ev() {
-  return new QSizeF();
+  (MyQSizeF*)(0);
+  return  new MyQSizeF();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:211
-// void QSizeF(const class QSize &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:219
+// [-2] void QSizeF(const class QSize &)
 extern "C"
 void* C_ZN6QSizeFC1ERK5QSize(const QSize & sz) {
-  return new QSizeF(sz);
+  (MyQSizeF*)(0);
+  return  new MyQSizeF(sz);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:212
-// void QSizeF(qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:220
+// [-2] void QSizeF(qreal, qreal)
 extern "C"
 void* C_ZN6QSizeFC1Edd(qreal w, qreal h) {
-  return new QSizeF(w, h);
+  (MyQSizeF*)(0);
+  return  new MyQSizeF(w, h);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:214
-// bool isNull()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:222
+// [1] bool isNull()
 extern "C"
-void C_ZNK6QSizeF6isNullEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->isNull();
+bool C_ZNK6QSizeF6isNullEv(void *this_) {
+  return (bool)((QSizeF*)this_)->isNull();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:215
-// bool isEmpty()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:223
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK6QSizeF7isEmptyEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->isEmpty();
+bool C_ZNK6QSizeF7isEmptyEv(void *this_) {
+  return (bool)((QSizeF*)this_)->isEmpty();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:216
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:224
+// [1] bool isValid()
 extern "C"
-void C_ZNK6QSizeF7isValidEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->isValid();
+bool C_ZNK6QSizeF7isValidEv(void *this_) {
+  return (bool)((QSizeF*)this_)->isValid();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:218
-// qreal width()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:226
+// [8] qreal width()
 extern "C"
-void C_ZNK6QSizeF5widthEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->width();
+qreal C_ZNK6QSizeF5widthEv(void *this_) {
+  return (qreal)((QSizeF*)this_)->width();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:219
-// qreal height()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:227
+// [8] qreal height()
 extern "C"
-void C_ZNK6QSizeF6heightEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->height();
+qreal C_ZNK6QSizeF6heightEv(void *this_) {
+  return (qreal)((QSizeF*)this_)->height();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:220
-// void setWidth(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:228
+// [-2] void setWidth(qreal)
 extern "C"
 void C_ZN6QSizeF8setWidthEd(void *this_, qreal w) {
   ((QSizeF*)this_)->setWidth(w);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:221
-// void setHeight(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:229
+// [-2] void setHeight(qreal)
 extern "C"
 void C_ZN6QSizeF9setHeightEd(void *this_, qreal h) {
   ((QSizeF*)this_)->setHeight(h);
 }
-// /usr/include/qt/QtCore/qsize.h:222
-// void transpose()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:230
+// [-2] void transpose()
 extern "C"
 void C_ZN6QSizeF9transposeEv(void *this_) {
   ((QSizeF*)this_)->transpose();
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:223
-// QSizeF transposed()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:231
+// [16] QSizeF transposed()
 extern "C"
-void C_ZNK6QSizeF10transposedEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->transposed();
+void* C_ZNK6QSizeF10transposedEv(void *this_) {
+  auto rv = ((QSizeF*)this_)->transposed();
+return new QSizeF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:225
-// void scale(qreal, qreal, Qt::AspectRatioMode)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:233
+// [-2] void scale(qreal, qreal, Qt::AspectRatioMode)
 extern "C"
 void C_ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
   ((QSizeF*)this_)->scale(w, h, mode);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:226
-// void scale(const class QSizeF &, Qt::AspectRatioMode)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:234
+// [-2] void scale(const class QSizeF &, Qt::AspectRatioMode)
 extern "C"
 void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, const QSizeF & s, Qt::AspectRatioMode mode) {
   ((QSizeF*)this_)->scale(s, mode);
 }
-// /usr/include/qt/QtCore/qsize.h:227
-// QSizeF scaled(qreal, qreal, Qt::AspectRatioMode)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:235
+// [16] QSizeF scaled(qreal, qreal, Qt::AspectRatioMode)
 extern "C"
-void C_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
-  /*return*/ ((QSizeF*)this_)->scaled(w, h, mode);
+void* C_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
+  auto rv = ((QSizeF*)this_)->scaled(w, h, mode);
+return new QSizeF(rv);
 }
-// /usr/include/qt/QtCore/qsize.h:228
-// QSizeF scaled(const class QSizeF &, Qt::AspectRatioMode)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:236
+// [16] QSizeF scaled(const class QSizeF &, Qt::AspectRatioMode)
 extern "C"
-void C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, const QSizeF & s, Qt::AspectRatioMode mode) {
-  /*return*/ ((QSizeF*)this_)->scaled(s, mode);
+void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, const QSizeF & s, Qt::AspectRatioMode mode) {
+  auto rv = ((QSizeF*)this_)->scaled(s, mode);
+return new QSizeF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:230
-// QSizeF expandedTo(const class QSizeF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:238
+// [16] QSizeF expandedTo(const class QSizeF &)
 extern "C"
-void C_ZNK6QSizeF10expandedToERKS_(void *this_, const QSizeF & arg0) {
-  /*return*/ ((QSizeF*)this_)->expandedTo(arg0);
+void* C_ZNK6QSizeF10expandedToERKS_(void *this_, const QSizeF & arg0) {
+  auto rv = ((QSizeF*)this_)->expandedTo(arg0);
+return new QSizeF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:231
-// QSizeF boundedTo(const class QSizeF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:239
+// [16] QSizeF boundedTo(const class QSizeF &)
 extern "C"
-void C_ZNK6QSizeF9boundedToERKS_(void *this_, const QSizeF & arg0) {
-  /*return*/ ((QSizeF*)this_)->boundedTo(arg0);
+void* C_ZNK6QSizeF9boundedToERKS_(void *this_, const QSizeF & arg0) {
+  auto rv = ((QSizeF*)this_)->boundedTo(arg0);
+return new QSizeF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:233
-// qreal & rwidth()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:241
+// [8] qreal & rwidth()
 extern "C"
-void C_ZN6QSizeF6rwidthEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->rwidth();
+void* C_ZN6QSizeF6rwidthEv(void *this_) {
+  auto& rv = ((QSizeF*)this_)->rwidth();
+return &rv;
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:234
-// qreal & rheight()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:242
+// [8] qreal & rheight()
 extern "C"
-void C_ZN6QSizeF7rheightEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->rheight();
+void* C_ZN6QSizeF7rheightEv(void *this_) {
+  auto& rv = ((QSizeF*)this_)->rheight();
+return &rv;
 }
-// inline
-// /usr/include/qt/QtCore/qsize.h:249
-// QSize toSize()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:257
+// [8] QSize toSize()
 extern "C"
-void C_ZNK6QSizeF6toSizeEv(void *this_) {
-  /*return*/ ((QSizeF*)this_)->toSize();
+void* C_ZNK6QSizeF6toSizeEv(void *this_) {
+  auto rv = ((QSizeF*)this_)->toSize();
+return new QSize(rv);
 }
 //  main block end

@@ -3,211 +3,237 @@
 #include <qtextformat.h>
 #include <QtGui>
 
+// QTextFrameFormat is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qtextformat.h:769
-// void QTextFrameFormat()
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:852
+// [-2] void QTextFrameFormat(const class QTextFormat &)
+extern "C"
+void* callback_ZN16QTextFrameFormatC1ERK11QTextFormat = 0;
+extern "C" void set_callback_ZN16QTextFrameFormatC1ERK11QTextFormat(void*cbfn)
+{ callback_ZN16QTextFrameFormatC1ERK11QTextFormat = cbfn; }
+
+class MyQTextFrameFormat : public QTextFrameFormat {
+public:
+MyQTextFrameFormat() : QTextFrameFormat() {}
+MyQTextFrameFormat(const QTextFormat & fmt) : QTextFrameFormat(fmt) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:770
+// [-2] void QTextFrameFormat()
 extern "C"
 void* C_ZN16QTextFrameFormatC1Ev() {
-  return new QTextFrameFormat();
+  (MyQTextFrameFormat*)(0);
+  return  new MyQTextFrameFormat();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:771
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:772
+// [1] bool isValid()
 extern "C"
-void C_ZNK16QTextFrameFormat7isValidEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->isValid();
+bool C_ZNK16QTextFrameFormat7isValidEv(void *this_) {
+  return (bool)((QTextFrameFormat*)this_)->isValid();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:795
-// void setPosition(enum QTextFrameFormat::Position)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:796
+// [-2] void setPosition(enum QTextFrameFormat::Position)
 extern "C"
 void C_ZN16QTextFrameFormat11setPositionENS_8PositionE(void *this_, QTextFrameFormat::Position f) {
   ((QTextFrameFormat*)this_)->setPosition(f);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:797
-// QTextFrameFormat::Position position()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:798
+// [4] QTextFrameFormat::Position position()
 extern "C"
-void C_ZNK16QTextFrameFormat8positionEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->position();
+QTextFrameFormat::Position C_ZNK16QTextFrameFormat8positionEv(void *this_) {
+  return (QTextFrameFormat::Position)((QTextFrameFormat*)this_)->position();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:800
-// void setBorder(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:801
+// [-2] void setBorder(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat9setBorderEd(void *this_, qreal border) {
   ((QTextFrameFormat*)this_)->setBorder(border);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:801
-// qreal border()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:802
+// [8] qreal border()
 extern "C"
-void C_ZNK16QTextFrameFormat6borderEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->border();
+qreal C_ZNK16QTextFrameFormat6borderEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->border();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:804
-// void setBorderBrush(const class QBrush &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:805
+// [-2] void setBorderBrush(const class QBrush &)
 extern "C"
 void C_ZN16QTextFrameFormat14setBorderBrushERK6QBrush(void *this_, const QBrush & brush) {
   ((QTextFrameFormat*)this_)->setBorderBrush(brush);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:806
-// QBrush borderBrush()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:807
+// [8] QBrush borderBrush()
 extern "C"
-void C_ZNK16QTextFrameFormat11borderBrushEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->borderBrush();
+void* C_ZNK16QTextFrameFormat11borderBrushEv(void *this_) {
+  auto rv = ((QTextFrameFormat*)this_)->borderBrush();
+return new QBrush(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:809
-// void setBorderStyle(enum QTextFrameFormat::BorderStyle)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:810
+// [-2] void setBorderStyle(enum QTextFrameFormat::BorderStyle)
 extern "C"
 void C_ZN16QTextFrameFormat14setBorderStyleENS_11BorderStyleE(void *this_, QTextFrameFormat::BorderStyle style) {
   ((QTextFrameFormat*)this_)->setBorderStyle(style);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:811
-// QTextFrameFormat::BorderStyle borderStyle()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:812
+// [4] QTextFrameFormat::BorderStyle borderStyle()
 extern "C"
-void C_ZNK16QTextFrameFormat11borderStyleEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->borderStyle();
+QTextFrameFormat::BorderStyle C_ZNK16QTextFrameFormat11borderStyleEv(void *this_) {
+  return (QTextFrameFormat::BorderStyle)((QTextFrameFormat*)this_)->borderStyle();
 }
-// /usr/include/qt/QtGui/qtextformat.h:814
-// void setMargin(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:815
+// [-2] void setMargin(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat9setMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setMargin(margin);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:815
-// qreal margin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:816
+// [8] qreal margin()
 extern "C"
-void C_ZNK16QTextFrameFormat6marginEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->margin();
+qreal C_ZNK16QTextFrameFormat6marginEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->margin();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:818
-// void setTopMargin(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:819
+// [-2] void setTopMargin(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat12setTopMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setTopMargin(margin);
 }
-// /usr/include/qt/QtGui/qtextformat.h:819
-// qreal topMargin()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:820
+// [8] qreal topMargin()
 extern "C"
-void C_ZNK16QTextFrameFormat9topMarginEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->topMargin();
+qreal C_ZNK16QTextFrameFormat9topMarginEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->topMargin();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:821
-// void setBottomMargin(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:822
+// [-2] void setBottomMargin(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat15setBottomMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setBottomMargin(margin);
 }
-// /usr/include/qt/QtGui/qtextformat.h:822
-// qreal bottomMargin()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:823
+// [8] qreal bottomMargin()
 extern "C"
-void C_ZNK16QTextFrameFormat12bottomMarginEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->bottomMargin();
+qreal C_ZNK16QTextFrameFormat12bottomMarginEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->bottomMargin();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:824
-// void setLeftMargin(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:825
+// [-2] void setLeftMargin(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat13setLeftMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setLeftMargin(margin);
 }
-// /usr/include/qt/QtGui/qtextformat.h:825
-// qreal leftMargin()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:826
+// [8] qreal leftMargin()
 extern "C"
-void C_ZNK16QTextFrameFormat10leftMarginEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->leftMargin();
+qreal C_ZNK16QTextFrameFormat10leftMarginEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->leftMargin();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:827
-// void setRightMargin(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:828
+// [-2] void setRightMargin(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat14setRightMarginEd(void *this_, qreal margin) {
   ((QTextFrameFormat*)this_)->setRightMargin(margin);
 }
-// /usr/include/qt/QtGui/qtextformat.h:828
-// qreal rightMargin()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:829
+// [8] qreal rightMargin()
 extern "C"
-void C_ZNK16QTextFrameFormat11rightMarginEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->rightMargin();
+qreal C_ZNK16QTextFrameFormat11rightMarginEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->rightMargin();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:830
-// void setPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:831
+// [-2] void setPadding(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat10setPaddingEd(void *this_, qreal padding) {
   ((QTextFrameFormat*)this_)->setPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:831
-// qreal padding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:832
+// [8] qreal padding()
 extern "C"
-void C_ZNK16QTextFrameFormat7paddingEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->padding();
+qreal C_ZNK16QTextFrameFormat7paddingEv(void *this_) {
+  return (qreal)((QTextFrameFormat*)this_)->padding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:834
-// void setWidth(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:835
+// [-2] void setWidth(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat8setWidthEd(void *this_, qreal width) {
   ((QTextFrameFormat*)this_)->setWidth(width);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:835
-// void setWidth(const class QTextLength &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:836
+// [-2] void setWidth(const class QTextLength &)
 extern "C"
 void C_ZN16QTextFrameFormat8setWidthERK11QTextLength(void *this_, const QTextLength & length) {
   ((QTextFrameFormat*)this_)->setWidth(length);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:837
-// QTextLength width()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:838
+// [16] QTextLength width()
 extern "C"
-void C_ZNK16QTextFrameFormat5widthEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->width();
+void* C_ZNK16QTextFrameFormat5widthEv(void *this_) {
+  auto rv = ((QTextFrameFormat*)this_)->width();
+return new QTextLength(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:840
-// void setHeight(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:841
+// [-2] void setHeight(qreal)
 extern "C"
 void C_ZN16QTextFrameFormat9setHeightEd(void *this_, qreal height) {
   ((QTextFrameFormat*)this_)->setHeight(height);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:841
-// void setHeight(const class QTextLength &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:842
+// [-2] void setHeight(const class QTextLength &)
 extern "C"
 void C_ZN16QTextFrameFormat9setHeightERK11QTextLength(void *this_, const QTextLength & height) {
   ((QTextFrameFormat*)this_)->setHeight(height);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:842
-// QTextLength height()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:843
+// [16] QTextLength height()
 extern "C"
-void C_ZNK16QTextFrameFormat6heightEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->height();
+void* C_ZNK16QTextFrameFormat6heightEv(void *this_) {
+  auto rv = ((QTextFrameFormat*)this_)->height();
+return new QTextLength(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:845
-// void setPageBreakPolicy(PageBreakFlags)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:846
+// [-2] void setPageBreakPolicy(QTextFormat::PageBreakFlags)
 extern "C"
 void C_ZN16QTextFrameFormat18setPageBreakPolicyE6QFlagsIN11QTextFormat13PageBreakFlagEE(void *this_, QFlags<QTextFormat::PageBreakFlag> flags) {
   ((QTextFrameFormat*)this_)->setPageBreakPolicy(flags);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:847
-// PageBreakFlags pageBreakPolicy()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:848
+// [4] QTextFormat::PageBreakFlags pageBreakPolicy()
 extern "C"
 void C_ZNK16QTextFrameFormat15pageBreakPolicyEv(void *this_) {
-  /*return*/ ((QTextFrameFormat*)this_)->pageBreakPolicy();
+  auto rv = ((QTextFrameFormat*)this_)->pageBreakPolicy();
+/*return rv;*/
 }
 //  main block end

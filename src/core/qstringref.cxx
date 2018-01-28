@@ -3,493 +3,619 @@
 #include <qstring.h>
 #include <QtCore>
 
+// QStringRef is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qstring.h:1369
-// void QStringRef()
+
+class MyQStringRef : public QStringRef {
+public:
+MyQStringRef() : QStringRef() {}
+MyQStringRef(const QString * string, int position, int size) : QStringRef(string, position, size) {}
+MyQStringRef(const QString * string) : QStringRef(string) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1420
+// [-2] void QStringRef()
 extern "C"
 void* C_ZN10QStringRefC1Ev() {
-  return new QStringRef();
+  (MyQStringRef*)(0);
+  return  new MyQStringRef();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1370
-// void QStringRef(const class QString *, int, int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1421
+// [-2] void QStringRef(const class QString *, int, int)
 extern "C"
 void* C_ZN10QStringRefC1EPK7QStringii(const QString * string, int position, int size) {
-  return new QStringRef(string, position, size);
+  (MyQStringRef*)(0);
+  return  new MyQStringRef(string, position, size);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1371
-// void QStringRef(const class QString *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1422
+// [-2] void QStringRef(const class QString *)
 extern "C"
 void* C_ZN10QStringRefC1EPK7QString(const QString * string) {
-  return new QStringRef(string);
+  (MyQStringRef*)(0);
+  return  new MyQStringRef(string);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1386
-// void ~QStringRef()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1438
+// [-2] void ~QStringRef()
 extern "C"
 void C_ZN10QStringRefD1Ev(void *this_) {
   delete (QStringRef*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1389
-// const QString * string()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1441
+// [8] const QString * string()
 extern "C"
-void C_ZNK10QStringRef6stringEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->string();
+void* C_ZNK10QStringRef6stringEv(void *this_) {
+  return (void*)((QStringRef*)this_)->string();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1390
-// int position()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1442
+// [4] int position()
 extern "C"
-void C_ZNK10QStringRef8positionEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->position();
+int C_ZNK10QStringRef8positionEv(void *this_) {
+  return (int)((QStringRef*)this_)->position();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1391
-// int size()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1443
+// [4] int size()
 extern "C"
-void C_ZNK10QStringRef4sizeEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->size();
+int C_ZNK10QStringRef4sizeEv(void *this_) {
+  return (int)((QStringRef*)this_)->size();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1392
-// int count()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1444
+// [4] int count()
 extern "C"
-void C_ZNK10QStringRef5countEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->count();
+int C_ZNK10QStringRef5countEv(void *this_) {
+  return (int)((QStringRef*)this_)->count();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1393
-// int length()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1445
+// [4] int length()
 extern "C"
-void C_ZNK10QStringRef6lengthEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->length();
+int C_ZNK10QStringRef6lengthEv(void *this_) {
+  return (int)((QStringRef*)this_)->length();
 }
-// /usr/include/qt/QtCore/qstring.h:1395
-// int indexOf(const class QString &, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1447
+// [4] int indexOf(const class QString &, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7indexOfERK7QStringiN2Qt15CaseSensitivityE(void *this_, const QString & str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->indexOf(str, from, cs);
+int C_ZNK10QStringRef7indexOfERK7QStringiN2Qt15CaseSensitivityE(void *this_, const QString & str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->indexOf(str, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1396
-// int indexOf(class QChar, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1448
+// [4] int indexOf(class QChar, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7indexOfE5QChariN2Qt15CaseSensitivityE(void *this_, QChar ch, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->indexOf(ch, from, cs);
+int C_ZNK10QStringRef7indexOfE5QChariN2Qt15CaseSensitivityE(void *this_, QChar ch, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->indexOf(ch, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1397
-// int indexOf(class QLatin1String, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1449
+// [4] int indexOf(class QLatin1String, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7indexOfE13QLatin1StringiN2Qt15CaseSensitivityE(void *this_, QLatin1String str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->indexOf(str, from, cs);
+int C_ZNK10QStringRef7indexOfE13QLatin1StringiN2Qt15CaseSensitivityE(void *this_, QLatin1String str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->indexOf(str, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1398
-// int indexOf(const class QStringRef &, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1450
+// [4] int indexOf(const class QStringRef &, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7indexOfERKS_iN2Qt15CaseSensitivityE(void *this_, const QStringRef & str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->indexOf(str, from, cs);
+int C_ZNK10QStringRef7indexOfERKS_iN2Qt15CaseSensitivityE(void *this_, const QStringRef & str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->indexOf(str, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1399
-// int lastIndexOf(const class QString &, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1451
+// [4] int lastIndexOf(const class QString &, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef11lastIndexOfERK7QStringiN2Qt15CaseSensitivityE(void *this_, const QString & str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->lastIndexOf(str, from, cs);
+int C_ZNK10QStringRef11lastIndexOfERK7QStringiN2Qt15CaseSensitivityE(void *this_, const QString & str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->lastIndexOf(str, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1400
-// int lastIndexOf(class QChar, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1452
+// [4] int lastIndexOf(class QChar, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef11lastIndexOfE5QChariN2Qt15CaseSensitivityE(void *this_, QChar ch, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->lastIndexOf(ch, from, cs);
+int C_ZNK10QStringRef11lastIndexOfE5QChariN2Qt15CaseSensitivityE(void *this_, QChar ch, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->lastIndexOf(ch, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1401
-// int lastIndexOf(class QLatin1String, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1453
+// [4] int lastIndexOf(class QLatin1String, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef11lastIndexOfE13QLatin1StringiN2Qt15CaseSensitivityE(void *this_, QLatin1String str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->lastIndexOf(str, from, cs);
+int C_ZNK10QStringRef11lastIndexOfE13QLatin1StringiN2Qt15CaseSensitivityE(void *this_, QLatin1String str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->lastIndexOf(str, from, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1402
-// int lastIndexOf(const class QStringRef &, int, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1454
+// [4] int lastIndexOf(const class QStringRef &, int, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef11lastIndexOfERKS_iN2Qt15CaseSensitivityE(void *this_, const QStringRef & str, int from, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->lastIndexOf(str, from, cs);
+int C_ZNK10QStringRef11lastIndexOfERKS_iN2Qt15CaseSensitivityE(void *this_, const QStringRef & str, int from, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->lastIndexOf(str, from, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1404
-// bool contains(const class QString &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1456
+// [1] bool contains(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8containsERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & str, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->contains(str, cs);
+bool C_ZNK10QStringRef8containsERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & str, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->contains(str, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1405
-// bool contains(class QChar, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1457
+// [1] bool contains(class QChar, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8containsE5QCharN2Qt15CaseSensitivityE(void *this_, QChar ch, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->contains(ch, cs);
+bool C_ZNK10QStringRef8containsE5QCharN2Qt15CaseSensitivityE(void *this_, QChar ch, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->contains(ch, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1406
-// bool contains(class QLatin1String, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1458
+// [1] bool contains(class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String str, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->contains(str, cs);
+bool C_ZNK10QStringRef8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String str, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->contains(str, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1407
-// bool contains(const class QStringRef &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1459
+// [1] bool contains(const class QStringRef &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8containsERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & str, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->contains(str, cs);
+bool C_ZNK10QStringRef8containsERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & str, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->contains(str, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1409
-// int count(const class QString &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1461
+// [4] int count(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef5countERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->count(s, cs);
+int C_ZNK10QStringRef5countERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->count(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1410
-// int count(class QChar, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1462
+// [4] int count(class QChar, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef5countE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->count(c, cs);
+int C_ZNK10QStringRef5countE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->count(c, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1411
-// int count(const class QStringRef &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1463
+// [4] int count(const class QStringRef &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef5countERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->count(s, cs);
+int C_ZNK10QStringRef5countERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->count(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1413
-// QVector<QStringRef> split(const class QString &, class QString::SplitBehavior, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1470
+// [16] QStringRef left(int)
 extern "C"
-void C_ZNK10QStringRef5splitERK7QStringNS0_13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, const QString & sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->split(sep, behavior, cs);
+void* C_ZNK10QStringRef4leftEi(void *this_, int n) {
+  auto rv = ((QStringRef*)this_)->left(n);
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1415
-// QVector<QStringRef> split(class QChar, class QString::SplitBehavior, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1471
+// [16] QStringRef right(int)
 extern "C"
-void C_ZNK10QStringRef5splitE5QCharN7QString13SplitBehaviorEN2Qt15CaseSensitivityE(void *this_, QChar sep, QString::SplitBehavior behavior, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->split(sep, behavior, cs);
+void* C_ZNK10QStringRef5rightEi(void *this_, int n) {
+  auto rv = ((QStringRef*)this_)->right(n);
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1418
-// QStringRef left(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1472
+// [16] QStringRef mid(int, int)
 extern "C"
-void C_ZNK10QStringRef4leftEi(void *this_, int n) {
-  /*return*/ ((QStringRef*)this_)->left(n);
+void* C_ZNK10QStringRef3midEii(void *this_, int pos, int n) {
+  auto rv = ((QStringRef*)this_)->mid(pos, n);
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1419
-// QStringRef right(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1473
+// [16] QStringRef chopped(int)
 extern "C"
-void C_ZNK10QStringRef5rightEi(void *this_, int n) {
-  /*return*/ ((QStringRef*)this_)->right(n);
+void* C_ZNK10QStringRef7choppedEi(void *this_, int n) {
+  auto rv = ((QStringRef*)this_)->chopped(n);
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1420
-// QStringRef mid(int, int)
-extern "C"
-void C_ZNK10QStringRef3midEii(void *this_, int pos, int n) {
-  /*return*/ ((QStringRef*)this_)->mid(pos, n);
-}
-// inline
-// /usr/include/qt/QtCore/qstring.h:1422
-// void truncate(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1476
+// [-2] void truncate(int)
 extern "C"
 void C_ZN10QStringRef8truncateEi(void *this_, int pos) {
   ((QStringRef*)this_)->truncate(pos);
 }
-// /usr/include/qt/QtCore/qstring.h:1424
-// bool startsWith(const class QString &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1477
+// [-2] void chop(int)
 extern "C"
-void C_ZNK10QStringRef10startsWithERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->startsWith(s, cs);
+void C_ZN10QStringRef4chopEi(void *this_, int n) {
+  ((QStringRef*)this_)->chop(n);
 }
-// /usr/include/qt/QtCore/qstring.h:1425
-// bool startsWith(class QLatin1String, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1485
+// [1] bool isRightToLeft()
 extern "C"
-void C_ZNK10QStringRef10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->startsWith(s, cs);
+bool C_ZNK10QStringRef13isRightToLeftEv(void *this_) {
+  return (bool)((QStringRef*)this_)->isRightToLeft();
 }
-// /usr/include/qt/QtCore/qstring.h:1426
-// bool startsWith(class QChar, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1487
+// [1] bool startsWith(class QStringView, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->startsWith(c, cs);
+bool C_ZNK10QStringRef10startsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->startsWith(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1427
-// bool startsWith(const class QStringRef &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1489
+// [1] bool startsWith(class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef10startsWithERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & c, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->startsWith(c, cs);
+bool C_ZNK10QStringRef10startsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->startsWith(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1429
-// bool endsWith(const class QString &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1490
+// [1] bool startsWith(class QChar, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8endsWithERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->endsWith(s, cs);
+bool C_ZNK10QStringRef10startsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->startsWith(c, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1430
-// bool endsWith(class QLatin1String, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1492
+// [1] bool startsWith(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->endsWith(s, cs);
+bool C_ZNK10QStringRef10startsWithERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->startsWith(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1431
-// bool endsWith(class QChar, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1493
+// [1] bool startsWith(const class QStringRef &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->endsWith(c, cs);
+bool C_ZNK10QStringRef10startsWithERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & c, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->startsWith(c, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1432
-// bool endsWith(const class QStringRef &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1496
+// [1] bool endsWith(class QStringView, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef8endsWithERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & c, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->endsWith(c, cs);
+bool C_ZNK10QStringRef8endsWithE11QStringViewN2Qt15CaseSensitivityE(void *this_, QStringView s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->endsWith(s, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1436
-// const QChar * unicode()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1498
+// [1] bool endsWith(class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7unicodeEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->unicode();
+bool C_ZNK10QStringRef8endsWithE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->endsWith(s, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1441
-// const QChar * data()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1499
+// [1] bool endsWith(class QChar, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef4dataEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->data();
+bool C_ZNK10QStringRef8endsWithE5QCharN2Qt15CaseSensitivityE(void *this_, QChar c, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->endsWith(c, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1442
-// const QChar * constData()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1501
+// [1] bool endsWith(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef9constDataEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->constData();
+bool C_ZNK10QStringRef8endsWithERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->endsWith(s, cs);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1444
-// const_iterator begin()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1502
+// [1] bool endsWith(const class QStringRef &, Qt::CaseSensitivity)
+extern "C"
+bool C_ZNK10QStringRef8endsWithERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & c, Qt::CaseSensitivity cs) {
+  return (bool)((QStringRef*)this_)->endsWith(c, cs);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1507
+// [8] const QChar * unicode()
+extern "C"
+void* C_ZNK10QStringRef7unicodeEv(void *this_) {
+  return (void*)((QStringRef*)this_)->unicode();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1513
+// [8] const QChar * data()
+extern "C"
+void* C_ZNK10QStringRef4dataEv(void *this_) {
+  return (void*)((QStringRef*)this_)->data();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1514
+// [8] const QChar * constData()
+extern "C"
+void* C_ZNK10QStringRef9constDataEv(void *this_) {
+  return (void*)((QStringRef*)this_)->constData();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1516
+// [8] QStringRef::const_iterator begin()
 extern "C"
 void C_ZNK10QStringRef5beginEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->begin();
+  auto rv = ((QStringRef*)this_)->begin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1445
-// const_iterator cbegin()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1517
+// [8] QStringRef::const_iterator cbegin()
 extern "C"
 void C_ZNK10QStringRef6cbeginEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->cbegin();
+  auto rv = ((QStringRef*)this_)->cbegin();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1446
-// const_iterator end()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1518
+// [8] QStringRef::const_iterator constBegin()
+extern "C"
+void C_ZNK10QStringRef10constBeginEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->constBegin();
+/*return rv;*/
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1519
+// [8] QStringRef::const_iterator end()
 extern "C"
 void C_ZNK10QStringRef3endEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->end();
+  auto rv = ((QStringRef*)this_)->end();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1447
-// const_iterator cend()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1520
+// [8] QStringRef::const_iterator cend()
 extern "C"
 void C_ZNK10QStringRef4cendEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->cend();
+  auto rv = ((QStringRef*)this_)->cend();
+/*return rv;*/
 }
-// /usr/include/qt/QtCore/qstring.h:1457
-// QByteArray toLatin1()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1521
+// [8] QStringRef::const_iterator constEnd()
 extern "C"
-void C_ZNK10QStringRef8toLatin1Ev(void *this_) {
-  /*return*/ ((QStringRef*)this_)->toLatin1();
+void C_ZNK10QStringRef8constEndEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->constEnd();
+/*return rv;*/
 }
-// /usr/include/qt/QtCore/qstring.h:1458
-// QByteArray toUtf8()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1531
+// [8] QByteArray toLatin1()
 extern "C"
-void C_ZNK10QStringRef6toUtf8Ev(void *this_) {
-  /*return*/ ((QStringRef*)this_)->toUtf8();
+void* C_ZNK10QStringRef8toLatin1Ev(void *this_) {
+  auto rv = ((QStringRef*)this_)->toLatin1();
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1459
-// QByteArray toLocal8Bit()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1532
+// [8] QByteArray toUtf8()
 extern "C"
-void C_ZNK10QStringRef11toLocal8BitEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->toLocal8Bit();
+void* C_ZNK10QStringRef6toUtf8Ev(void *this_) {
+  auto rv = ((QStringRef*)this_)->toUtf8();
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1460
-// QVector<uint> toUcs4()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1533
+// [8] QByteArray toLocal8Bit()
 extern "C"
-void C_ZNK10QStringRef6toUcs4Ev(void *this_) {
-  /*return*/ ((QStringRef*)this_)->toUcs4();
+void* C_ZNK10QStringRef11toLocal8BitEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->toLocal8Bit();
+return new QByteArray(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1462
-// void clear()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1536
+// [-2] void clear()
 extern "C"
 void C_ZN10QStringRef5clearEv(void *this_) {
   ((QStringRef*)this_)->clear();
 }
-// /usr/include/qt/QtCore/qstring.h:1463
-// QString toString()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1537
+// [8] QString toString()
 extern "C"
-void C_ZNK10QStringRef8toStringEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->toString();
+void* C_ZNK10QStringRef8toStringEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->toString();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1464
-// bool isEmpty()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1538
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK10QStringRef7isEmptyEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->isEmpty();
+bool C_ZNK10QStringRef7isEmptyEv(void *this_) {
+  return (bool)((QStringRef*)this_)->isEmpty();
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1465
-// bool isNull()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1539
+// [1] bool isNull()
 extern "C"
-void C_ZNK10QStringRef6isNullEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->isNull();
+bool C_ZNK10QStringRef6isNullEv(void *this_) {
+  return (bool)((QStringRef*)this_)->isNull();
 }
-// /usr/include/qt/QtCore/qstring.h:1467
-// QStringRef appendTo(class QString *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1541
+// [16] QStringRef appendTo(class QString *)
 extern "C"
-void C_ZNK10QStringRef8appendToEP7QString(void *this_, QString * string) {
-  /*return*/ ((QStringRef*)this_)->appendTo(string);
+void* C_ZNK10QStringRef8appendToEP7QString(void *this_, QString * string) {
+  auto rv = ((QStringRef*)this_)->appendTo(string);
+return new QStringRef(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qstring.h:1469
-// const QChar at(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1543
+// [2] const QChar at(int)
 extern "C"
-void C_ZNK10QStringRef2atEi(void *this_, int i) {
-  /*return*/ ((QStringRef*)this_)->at(i);
+void* C_ZNK10QStringRef2atEi(void *this_, int i) {
+  auto rv = ((QStringRef*)this_)->at(i);
+return new QChar(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1483
-// int compare(const class QString &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1546
+// [2] QChar front()
 extern "C"
-void C_ZNK10QStringRef7compareERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->compare(s, cs);
+void* C_ZNK10QStringRef5frontEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->front();
+return new QChar(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1484
-// int compare(const class QStringRef &, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1547
+// [2] QChar back()
 extern "C"
-void C_ZNK10QStringRef7compareERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->compare(s, cs);
+void* C_ZNK10QStringRef4backEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->back();
+return new QChar(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1485
-// int compare(class QLatin1String, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1559
+// [4] int compare(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
-  /*return*/ ((QStringRef*)this_)->compare(s, cs);
+int C_ZNK10QStringRef7compareERK7QStringN2Qt15CaseSensitivityE(void *this_, const QString & s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->compare(s, cs);
 }
-// static
-// /usr/include/qt/QtCore/qstring.h:1486
-// int compare(const class QStringRef &, const class QString &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1560
+// [4] int compare(const class QStringRef &, Qt::CaseSensitivity)
 extern "C"
-void C_ZN10QStringRef7compareERKS_RK7QStringN2Qt15CaseSensitivityE(const QStringRef & s1, const QString & s2, Qt::CaseSensitivity arg2) {
-  /*return*/ QStringRef::compare(s1, s2, arg2);
+int C_ZNK10QStringRef7compareERKS_N2Qt15CaseSensitivityE(void *this_, const QStringRef & s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->compare(s, cs);
 }
-// static
-// /usr/include/qt/QtCore/qstring.h:1488
-// int compare(const class QStringRef &, const class QStringRef &, Qt::CaseSensitivity)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1561
+// [4] int compare(class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-void C_ZN10QStringRef7compareERKS_S1_N2Qt15CaseSensitivityE(const QStringRef & s1, const QStringRef & s2, Qt::CaseSensitivity arg2) {
-  /*return*/ QStringRef::compare(s1, s2, arg2);
+int C_ZNK10QStringRef7compareE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->compare(s, cs);
 }
-// static
-// /usr/include/qt/QtCore/qstring.h:1490
-// int compare(const class QStringRef &, class QLatin1String, Qt::CaseSensitivity)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1563
+// [4] int compare(const class QByteArray &, Qt::CaseSensitivity)
 extern "C"
-void C_ZN10QStringRef7compareERKS_13QLatin1StringN2Qt15CaseSensitivityE(const QStringRef & s1, QLatin1String s2, Qt::CaseSensitivity cs) {
-  /*return*/ QStringRef::compare(s1, s2, cs);
+int C_ZNK10QStringRef7compareERK10QByteArrayN2Qt15CaseSensitivityE(void *this_, const QByteArray & s, Qt::CaseSensitivity cs) {
+  return (int)((QStringRef*)this_)->compare(s, cs);
 }
-// /usr/include/qt/QtCore/qstring.h:1493
-// int localeAwareCompare(const class QString &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1566
+// [4] int compare(const class QStringRef &, const class QString &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef18localeAwareCompareERK7QString(void *this_, const QString & s) {
-  /*return*/ ((QStringRef*)this_)->localeAwareCompare(s);
+int C_ZN10QStringRef7compareERKS_RK7QStringN2Qt15CaseSensitivityE(const QStringRef & s1, const QString & s2, Qt::CaseSensitivity arg2) {
+  return (int)QStringRef::compare(s1, s2, arg2);
 }
-// /usr/include/qt/QtCore/qstring.h:1494
-// int localeAwareCompare(const class QStringRef &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1568
+// [4] int compare(const class QStringRef &, const class QStringRef &, Qt::CaseSensitivity)
 extern "C"
-void C_ZNK10QStringRef18localeAwareCompareERKS_(void *this_, const QStringRef & s) {
-  /*return*/ ((QStringRef*)this_)->localeAwareCompare(s);
+int C_ZN10QStringRef7compareERKS_S1_N2Qt15CaseSensitivityE(const QStringRef & s1, const QStringRef & s2, Qt::CaseSensitivity arg2) {
+  return (int)QStringRef::compare(s1, s2, arg2);
 }
-// static
-// /usr/include/qt/QtCore/qstring.h:1495
-// int localeAwareCompare(const class QStringRef &, const class QString &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1570
+// [4] int compare(const class QStringRef &, class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-void C_ZN10QStringRef18localeAwareCompareERKS_RK7QString(const QStringRef & s1, const QString & s2) {
-  /*return*/ QStringRef::localeAwareCompare(s1, s2);
+int C_ZN10QStringRef7compareERKS_13QLatin1StringN2Qt15CaseSensitivityE(const QStringRef & s1, QLatin1String s2, Qt::CaseSensitivity cs) {
+  return (int)QStringRef::compare(s1, s2, cs);
 }
-// static
-// /usr/include/qt/QtCore/qstring.h:1496
-// int localeAwareCompare(const class QStringRef &, const class QStringRef &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1573
+// [4] int localeAwareCompare(const class QString &)
 extern "C"
-void C_ZN10QStringRef18localeAwareCompareERKS_S1_(const QStringRef & s1, const QStringRef & s2) {
-  /*return*/ QStringRef::localeAwareCompare(s1, s2);
+int C_ZNK10QStringRef18localeAwareCompareERK7QString(void *this_, const QString & s) {
+  return (int)((QStringRef*)this_)->localeAwareCompare(s);
 }
-// /usr/include/qt/QtCore/qstring.h:1498
-// QStringRef trimmed()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1574
+// [4] int localeAwareCompare(const class QStringRef &)
 extern "C"
-void C_ZNK10QStringRef7trimmedEv(void *this_) {
-  /*return*/ ((QStringRef*)this_)->trimmed();
+int C_ZNK10QStringRef18localeAwareCompareERKS_(void *this_, const QStringRef & s) {
+  return (int)((QStringRef*)this_)->localeAwareCompare(s);
 }
-// /usr/include/qt/QtCore/qstring.h:1499
-// short toShort(_Bool *, int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1575
+// [4] int localeAwareCompare(const class QStringRef &, const class QString &)
 extern "C"
-void C_ZNK10QStringRef7toShortEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toShort(ok, base);
+int C_ZN10QStringRef18localeAwareCompareERKS_RK7QString(const QStringRef & s1, const QString & s2) {
+  return (int)QStringRef::localeAwareCompare(s1, s2);
 }
-// /usr/include/qt/QtCore/qstring.h:1500
-// ushort toUShort(_Bool *, int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1576
+// [4] int localeAwareCompare(const class QStringRef &, const class QStringRef &)
 extern "C"
-void C_ZNK10QStringRef8toUShortEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toUShort(ok, base);
+int C_ZN10QStringRef18localeAwareCompareERKS_S1_(const QStringRef & s1, const QStringRef & s2) {
+  return (int)QStringRef::localeAwareCompare(s1, s2);
 }
-// /usr/include/qt/QtCore/qstring.h:1501
-// int toInt(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1578
+// [16] QStringRef trimmed()
 extern "C"
-void C_ZNK10QStringRef5toIntEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toInt(ok, base);
+void* C_ZNK10QStringRef7trimmedEv(void *this_) {
+  auto rv = ((QStringRef*)this_)->trimmed();
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qstring.h:1502
-// uint toUInt(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1579
+// [2] short toShort(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef6toUIntEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toUInt(ok, base);
+short C_ZNK10QStringRef7toShortEPbi(void *this_, bool * ok, int base) {
+  return (short)((QStringRef*)this_)->toShort(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1503
-// long toLong(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1580
+// [2] ushort toUShort(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef6toLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toLong(ok, base);
+ushort C_ZNK10QStringRef8toUShortEPbi(void *this_, bool * ok, int base) {
+  return (ushort)((QStringRef*)this_)->toUShort(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1504
-// ulong toULong(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1581
+// [4] int toInt(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef7toULongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toULong(ok, base);
+int C_ZNK10QStringRef5toIntEPbi(void *this_, bool * ok, int base) {
+  return (int)((QStringRef*)this_)->toInt(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1505
-// qlonglong toLongLong(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1582
+// [4] uint toUInt(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef10toLongLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toLongLong(ok, base);
+uint C_ZNK10QStringRef6toUIntEPbi(void *this_, bool * ok, int base) {
+  return (uint)((QStringRef*)this_)->toUInt(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1506
-// qulonglong toULongLong(_Bool *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1583
+// [8] long toLong(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef11toULongLongEPbi(void *this_, bool * ok, int base) {
-  /*return*/ ((QStringRef*)this_)->toULongLong(ok, base);
+long C_ZNK10QStringRef6toLongEPbi(void *this_, bool * ok, int base) {
+  return (long)((QStringRef*)this_)->toLong(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1507
-// float toFloat(_Bool *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1584
+// [8] ulong toULong(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef7toFloatEPb(void *this_, bool * ok) {
-  /*return*/ ((QStringRef*)this_)->toFloat(ok);
+ulong C_ZNK10QStringRef7toULongEPbi(void *this_, bool * ok, int base) {
+  return (ulong)((QStringRef*)this_)->toULong(ok, base);
 }
-// /usr/include/qt/QtCore/qstring.h:1508
-// double toDouble(_Bool *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1585
+// [8] qlonglong toLongLong(_Bool *, int)
 extern "C"
-void C_ZNK10QStringRef8toDoubleEPb(void *this_, bool * ok) {
-  /*return*/ ((QStringRef*)this_)->toDouble(ok);
+qlonglong C_ZNK10QStringRef10toLongLongEPbi(void *this_, bool * ok, int base) {
+  return (qlonglong)((QStringRef*)this_)->toLongLong(ok, base);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1586
+// [8] qulonglong toULongLong(_Bool *, int)
+extern "C"
+qulonglong C_ZNK10QStringRef11toULongLongEPbi(void *this_, bool * ok, int base) {
+  return (qulonglong)((QStringRef*)this_)->toULongLong(ok, base);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1587
+// [4] float toFloat(_Bool *)
+extern "C"
+float C_ZNK10QStringRef7toFloatEPb(void *this_, bool * ok) {
+  return (float)((QStringRef*)this_)->toFloat(ok);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1588
+// [8] double toDouble(_Bool *)
+extern "C"
+double C_ZNK10QStringRef8toDoubleEPb(void *this_, bool * ok) {
+  return (double)((QStringRef*)this_)->toDouble(ok);
 }
 //  main block end

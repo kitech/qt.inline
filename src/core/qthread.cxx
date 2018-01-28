@@ -3,177 +3,241 @@
 #include <qthread.h>
 #include <QtCore>
 
+// QThread is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtCore/qthread.h:57
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:151
+// [-2] void run()
 extern "C"
-void C_ZNK7QThread10metaObjectEv(void *this_) {
-  /*return*/ ((QThread*)this_)->metaObject();
-}
-// static
-// /usr/include/qt/QtCore/qthread.h:59
-// Qt::HANDLE currentThreadId()
+void* callback_ZN7QThread3runEv = 0;
+extern "C" void set_callback_ZN7QThread3runEv(void*cbfn)
+{ callback_ZN7QThread3runEv = cbfn; }
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:152
+// [4] int exec()
 extern "C"
-void C_ZN7QThread15currentThreadIdEv() {
-  /*return*/ QThread::currentThreadId();
-}
-// static
-// /usr/include/qt/QtCore/qthread.h:60
-// QThread * currentThread()
+void* callback_ZN7QThread4execEv = 0;
+extern "C" void set_callback_ZN7QThread4execEv(void*cbfn)
+{ callback_ZN7QThread4execEv = cbfn; }
+// Protected static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:154
+// [-2] void setTerminationEnabled(_Bool)
 extern "C"
-void C_ZN7QThread13currentThreadEv() {
-  /*return*/ QThread::currentThread();
-}
-// static
-// /usr/include/qt/QtCore/qthread.h:61
-// int idealThreadCount()
+void* callback_ZN7QThread21setTerminationEnabledEb = 0;
+extern "C" void set_callback_ZN7QThread21setTerminationEnabledEb(void*cbfn)
+{ callback_ZN7QThread21setTerminationEnabledEb = cbfn; }
+
+class MyQThread : public QThread {
+public:
+MyQThread(QObject * parent) : QThread(parent) {}
+// void run()
+// void run()
+virtual void run() {
+  if (callback_ZN7QThread3runEv != 0) {
+  // callback_ZN7QThread3runEv();
+}}
+// int exec()
+// int exec()
+virtual int exec() {
+  if (callback_ZN7QThread4execEv != 0) {
+  // callback_ZN7QThread4execEv();
+}}
+// void setTerminationEnabled(_Bool)
+// void setTerminationEnabled(_Bool)
+virtual void setTerminationEnabled(bool enabled) {
+  if (callback_ZN7QThread21setTerminationEnabledEb != 0) {
+  // callback_ZN7QThread21setTerminationEnabledEb(enabled);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:72
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZN7QThread16idealThreadCountEv() {
-  /*return*/ QThread::idealThreadCount();
+void* C_ZNK7QThread10metaObjectEv(void *this_) {
+  return (void*)((QThread*)this_)->metaObject();
 }
-// static
-// /usr/include/qt/QtCore/qthread.h:62
-// void yieldCurrentThread()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:74
+// [8] Qt::HANDLE currentThreadId()
+extern "C"
+Qt::HANDLE C_ZN7QThread15currentThreadIdEv() {
+  return (Qt::HANDLE)QThread::currentThreadId();
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:75
+// [8] QThread * currentThread()
+extern "C"
+void* C_ZN7QThread13currentThreadEv() {
+  return (void*)QThread::currentThread();
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:76
+// [4] int idealThreadCount()
+extern "C"
+int C_ZN7QThread16idealThreadCountEv() {
+  return (int)QThread::idealThreadCount();
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:77
+// [-2] void yieldCurrentThread()
 extern "C"
 void C_ZN7QThread18yieldCurrentThreadEv() {
   QThread::yieldCurrentThread();
 }
-// /usr/include/qt/QtCore/qthread.h:64
-// void QThread(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:79
+// [-2] void QThread(class QObject *)
 extern "C"
 void* C_ZN7QThreadC1EP7QObject(QObject * parent) {
-  return new QThread(parent);
+  (MyQThread*)(0);
+  return  new MyQThread(parent);
 }
-// virtual
-// /usr/include/qt/QtCore/qthread.h:65
-// void ~QThread()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:80
+// [-2] void ~QThread()
 extern "C"
 void C_ZN7QThreadD1Ev(void *this_) {
   delete (QThread*)(this_);
 }
-// /usr/include/qt/QtCore/qthread.h:81
-// void setPriority(enum QThread::Priority)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:96
+// [-2] void setPriority(enum QThread::Priority)
 extern "C"
 void C_ZN7QThread11setPriorityENS_8PriorityE(void *this_, QThread::Priority priority) {
   ((QThread*)this_)->setPriority(priority);
 }
-// /usr/include/qt/QtCore/qthread.h:82
-// QThread::Priority priority()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:97
+// [4] QThread::Priority priority()
 extern "C"
-void C_ZNK7QThread8priorityEv(void *this_) {
-  /*return*/ ((QThread*)this_)->priority();
+QThread::Priority C_ZNK7QThread8priorityEv(void *this_) {
+  return (QThread::Priority)((QThread*)this_)->priority();
 }
-// /usr/include/qt/QtCore/qthread.h:84
-// bool isFinished()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:99
+// [1] bool isFinished()
 extern "C"
-void C_ZNK7QThread10isFinishedEv(void *this_) {
-  /*return*/ ((QThread*)this_)->isFinished();
+bool C_ZNK7QThread10isFinishedEv(void *this_) {
+  return (bool)((QThread*)this_)->isFinished();
 }
-// /usr/include/qt/QtCore/qthread.h:85
-// bool isRunning()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:100
+// [1] bool isRunning()
 extern "C"
-void C_ZNK7QThread9isRunningEv(void *this_) {
-  /*return*/ ((QThread*)this_)->isRunning();
+bool C_ZNK7QThread9isRunningEv(void *this_) {
+  return (bool)((QThread*)this_)->isRunning();
 }
-// /usr/include/qt/QtCore/qthread.h:87
-// void requestInterruption()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:102
+// [-2] void requestInterruption()
 extern "C"
 void C_ZN7QThread19requestInterruptionEv(void *this_) {
   ((QThread*)this_)->requestInterruption();
 }
-// /usr/include/qt/QtCore/qthread.h:88
-// bool isInterruptionRequested()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:103
+// [1] bool isInterruptionRequested()
 extern "C"
-void C_ZNK7QThread23isInterruptionRequestedEv(void *this_) {
-  /*return*/ ((QThread*)this_)->isInterruptionRequested();
+bool C_ZNK7QThread23isInterruptionRequestedEv(void *this_) {
+  return (bool)((QThread*)this_)->isInterruptionRequested();
 }
-// /usr/include/qt/QtCore/qthread.h:90
-// void setStackSize(uint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:105
+// [-2] void setStackSize(uint)
 extern "C"
 void C_ZN7QThread12setStackSizeEj(void *this_, uint stackSize) {
   ((QThread*)this_)->setStackSize(stackSize);
 }
-// /usr/include/qt/QtCore/qthread.h:91
-// uint stackSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:106
+// [4] uint stackSize()
 extern "C"
-void C_ZNK7QThread9stackSizeEv(void *this_) {
-  /*return*/ ((QThread*)this_)->stackSize();
+uint C_ZNK7QThread9stackSizeEv(void *this_) {
+  return (uint)((QThread*)this_)->stackSize();
 }
-// /usr/include/qt/QtCore/qthread.h:93
-// void exit(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:108
+// [-2] void exit(int)
 extern "C"
 void C_ZN7QThread4exitEi(void *this_, int retcode) {
   ((QThread*)this_)->exit(retcode);
 }
-// /usr/include/qt/QtCore/qthread.h:95
-// QAbstractEventDispatcher * eventDispatcher()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:110
+// [8] QAbstractEventDispatcher * eventDispatcher()
 extern "C"
-void C_ZNK7QThread15eventDispatcherEv(void *this_) {
-  /*return*/ ((QThread*)this_)->eventDispatcher();
+void* C_ZNK7QThread15eventDispatcherEv(void *this_) {
+  return (void*)((QThread*)this_)->eventDispatcher();
 }
-// /usr/include/qt/QtCore/qthread.h:96
-// void setEventDispatcher(class QAbstractEventDispatcher *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:111
+// [-2] void setEventDispatcher(class QAbstractEventDispatcher *)
 extern "C"
 void C_ZN7QThread18setEventDispatcherEP24QAbstractEventDispatcher(void *this_, QAbstractEventDispatcher * eventDispatcher) {
   ((QThread*)this_)->setEventDispatcher(eventDispatcher);
 }
-// virtual
-// /usr/include/qt/QtCore/qthread.h:98
-// bool event(class QEvent *)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:113
+// [1] bool event(class QEvent *)
 extern "C"
-void C_ZN7QThread5eventEP6QEvent(void *this_, QEvent * event) {
-  /*return*/ ((QThread*)this_)->event(event);
+bool C_ZN7QThread5eventEP6QEvent(void *this_, QEvent * event) {
+  return (bool)((QThread*)this_)->event(event);
 }
-// /usr/include/qt/QtCore/qthread.h:99
-// int loopLevel()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:114
+// [4] int loopLevel()
 extern "C"
-void C_ZNK7QThread9loopLevelEv(void *this_) {
-  /*return*/ ((QThread*)this_)->loopLevel();
+int C_ZNK7QThread9loopLevelEv(void *this_) {
+  return (int)((QThread*)this_)->loopLevel();
 }
-// /usr/include/qt/QtCore/qthread.h:102
-// void start(enum QThread::Priority)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:134
+// [-2] void start(enum QThread::Priority)
 extern "C"
 void C_ZN7QThread5startENS_8PriorityE(void *this_, QThread::Priority arg0) {
   ((QThread*)this_)->start(arg0);
 }
-// /usr/include/qt/QtCore/qthread.h:103
-// void terminate()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:135
+// [-2] void terminate()
 extern "C"
 void C_ZN7QThread9terminateEv(void *this_) {
   ((QThread*)this_)->terminate();
 }
-// /usr/include/qt/QtCore/qthread.h:104
-// void quit()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:136
+// [-2] void quit()
 extern "C"
 void C_ZN7QThread4quitEv(void *this_) {
   ((QThread*)this_)->quit();
 }
-// /usr/include/qt/QtCore/qthread.h:108
-// bool wait(unsigned long)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:140
+// [1] bool wait(unsigned long)
 extern "C"
-void C_ZN7QThread4waitEm(void *this_, unsigned long time) {
-  /*return*/ ((QThread*)this_)->wait(time);
+bool C_ZN7QThread4waitEm(void *this_, unsigned long time) {
+  return (bool)((QThread*)this_)->wait(time);
 }
-// static
-// /usr/include/qt/QtCore/qthread.h:110
-// void sleep(unsigned long)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:142
+// [-2] void sleep(unsigned long)
 extern "C"
 void C_ZN7QThread5sleepEm(unsigned long arg0) {
   QThread::sleep(arg0);
 }
-// static
-// /usr/include/qt/QtCore/qthread.h:111
-// void msleep(unsigned long)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:143
+// [-2] void msleep(unsigned long)
 extern "C"
 void C_ZN7QThread6msleepEm(unsigned long arg0) {
   QThread::msleep(arg0);
 }
-// static
-// /usr/include/qt/QtCore/qthread.h:112
-// void usleep(unsigned long)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:144
+// [-2] void usleep(unsigned long)
 extern "C"
 void C_ZN7QThread6usleepEm(unsigned long arg0) {
   QThread::usleep(arg0);

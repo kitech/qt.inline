@@ -3,42 +3,57 @@
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
 
+// QGraphicsSceneResizeEvent is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQGraphicsSceneResizeEvent : public QGraphicsSceneResizeEvent {
+public:
+MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
-// void QGraphicsSceneResizeEvent()
+// [-2] void QGraphicsSceneResizeEvent()
 extern "C"
 void* C_ZN25QGraphicsSceneResizeEventC1Ev() {
-  return new QGraphicsSceneResizeEvent();
+  (MyQGraphicsSceneResizeEvent*)(0);
+  return  new MyQGraphicsSceneResizeEvent();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
-// void ~QGraphicsSceneResizeEvent()
+// [-2] void ~QGraphicsSceneResizeEvent()
 extern "C"
 void C_ZN25QGraphicsSceneResizeEventD1Ev(void *this_) {
   delete (QGraphicsSceneResizeEvent*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:300
-// QSizeF oldSize()
+// [16] QSizeF oldSize()
 extern "C"
-void C_ZNK25QGraphicsSceneResizeEvent7oldSizeEv(void *this_) {
-  /*return*/ ((QGraphicsSceneResizeEvent*)this_)->oldSize();
+void* C_ZNK25QGraphicsSceneResizeEvent7oldSizeEv(void *this_) {
+  auto rv = ((QGraphicsSceneResizeEvent*)this_)->oldSize();
+return new QSizeF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
-// void setOldSize(const class QSizeF &)
+// [-2] void setOldSize(const class QSizeF &)
 extern "C"
 void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, const QSizeF & size) {
   ((QGraphicsSceneResizeEvent*)this_)->setOldSize(size);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:303
-// QSizeF newSize()
+// [16] QSizeF newSize()
 extern "C"
-void C_ZNK25QGraphicsSceneResizeEvent7newSizeEv(void *this_) {
-  /*return*/ ((QGraphicsSceneResizeEvent*)this_)->newSize();
+void* C_ZNK25QGraphicsSceneResizeEvent7newSizeEv(void *this_) {
+  auto rv = ((QGraphicsSceneResizeEvent*)this_)->newSize();
+return new QSizeF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
-// void setNewSize(const class QSizeF &)
+// [-2] void setNewSize(const class QSizeF &)
 extern "C"
 void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, const QSizeF & size) {
   ((QGraphicsSceneResizeEvent*)this_)->setNewSize(size);

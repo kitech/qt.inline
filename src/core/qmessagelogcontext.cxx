@@ -3,25 +3,36 @@
 #include <qlogging.h>
 #include <QtCore>
 
+// QMessageLogContext is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQMessageLogContext : public QMessageLogContext {
+public:
+MyQMessageLogContext() : QMessageLogContext() {}
+MyQMessageLogContext(const char * fileName, int lineNumber, const char * functionName, const char * categoryName) : QMessageLogContext(fileName, lineNumber, functionName, categoryName) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:66
-// void QMessageLogContext()
+// [-2] void QMessageLogContext()
 extern "C"
 void* C_ZN18QMessageLogContextC1Ev() {
-  return new QMessageLogContext();
+  (MyQMessageLogContext*)(0);
+  return  new MyQMessageLogContext();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:68
-// void QMessageLogContext(const char *, int, const char *, const char *)
+// [-2] void QMessageLogContext(const char *, int, const char *, const char *)
 extern "C"
 void* C_ZN18QMessageLogContextC1EPKciS1_S1_(const char * fileName, int lineNumber, const char * functionName, const char * categoryName) {
-  return new QMessageLogContext(fileName, lineNumber, functionName, categoryName);
+  (MyQMessageLogContext*)(0);
+  return  new MyQMessageLogContext(fileName, lineNumber, functionName, categoryName);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:71
-// void copy(const class QMessageLogContext &)
+// [-2] void copy(const class QMessageLogContext &)
 extern "C"
 void C_ZN18QMessageLogContext4copyERKS_(void *this_, const QMessageLogContext & logContext) {
   ((QMessageLogContext*)this_)->copy(logContext);

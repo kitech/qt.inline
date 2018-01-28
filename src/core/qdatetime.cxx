@@ -3,339 +3,465 @@
 #include <qdatetime.h>
 #include <QtCore>
 
+// QDateTime is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qdatetime.h:223
-// void QDateTime()
+
+class MyQDateTime : public QDateTime {
+public:
+MyQDateTime() : QDateTime() {}
+MyQDateTime(const QDate & arg0) : QDateTime(arg0) {}
+MyQDateTime(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) : QDateTime(arg0, arg1, spec) {}
+MyQDateTime(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) : QDateTime(date, time, spec, offsetSeconds) {}
+MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) : QDateTime(date, time, timeZone) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:261
+// [-2] void QDateTime()
 extern "C"
 void* C_ZN9QDateTimeC1Ev() {
-  return new QDateTime();
+  (MyQDateTime*)(0);
+  return  new MyQDateTime();
 }
-// /usr/include/qt/QtCore/qdatetime.h:224
-// void QDateTime(const class QDate &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:262
+// [-2] void QDateTime(const class QDate &)
 extern "C"
 void* C_ZN9QDateTimeC1ERK5QDate(const QDate & arg0) {
-  return new QDateTime(arg0);
+  (MyQDateTime*)(0);
+  return  new MyQDateTime(arg0);
 }
-// /usr/include/qt/QtCore/qdatetime.h:225
-// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:263
+// [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
 extern "C"
 void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) {
-  return new QDateTime(arg0, arg1, spec);
+  (MyQDateTime*)(0);
+  return  new MyQDateTime(arg0, arg1, spec);
 }
-// /usr/include/qt/QtCore/qdatetime.h:227
-// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:265
+// [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
 extern "C"
 void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecEi(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) {
-  return new QDateTime(date, time, spec, offsetSeconds);
+  (MyQDateTime*)(0);
+  return  new MyQDateTime(date, time, spec, offsetSeconds);
 }
-// /usr/include/qt/QtCore/qdatetime.h:229
-// void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:267
+// [-2] void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
 extern "C"
 void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeRK9QTimeZone(const QDate & date, const QTime & time, const QTimeZone & timeZone) {
-  return new QDateTime(date, time, timeZone);
+  (MyQDateTime*)(0);
+  return  new MyQDateTime(date, time, timeZone);
 }
-// /usr/include/qt/QtCore/qdatetime.h:232
-// void ~QDateTime()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:271
+// [-2] void ~QDateTime()
 extern "C"
 void C_ZN9QDateTimeD1Ev(void *this_) {
   delete (QDateTime*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qdatetime.h:239
-// void swap(class QDateTime &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:278
+// [-2] void swap(class QDateTime &)
 extern "C"
 void C_ZN9QDateTime4swapERS_(void *this_, QDateTime & other) {
   ((QDateTime*)this_)->swap(other);
 }
-// /usr/include/qt/QtCore/qdatetime.h:241
-// bool isNull()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:280
+// [1] bool isNull()
 extern "C"
-void C_ZNK9QDateTime6isNullEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->isNull();
+bool C_ZNK9QDateTime6isNullEv(void *this_) {
+  return (bool)((QDateTime*)this_)->isNull();
 }
-// /usr/include/qt/QtCore/qdatetime.h:242
-// bool isValid()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:281
+// [1] bool isValid()
 extern "C"
-void C_ZNK9QDateTime7isValidEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->isValid();
+bool C_ZNK9QDateTime7isValidEv(void *this_) {
+  return (bool)((QDateTime*)this_)->isValid();
 }
-// /usr/include/qt/QtCore/qdatetime.h:244
-// QDate date()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:283
+// [8] QDate date()
 extern "C"
-void C_ZNK9QDateTime4dateEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->date();
+void* C_ZNK9QDateTime4dateEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->date();
+return new QDate(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:245
-// QTime time()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:284
+// [4] QTime time()
 extern "C"
-void C_ZNK9QDateTime4timeEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->time();
+void* C_ZNK9QDateTime4timeEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->time();
+return new QTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:246
-// Qt::TimeSpec timeSpec()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:285
+// [4] Qt::TimeSpec timeSpec()
 extern "C"
-void C_ZNK9QDateTime8timeSpecEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->timeSpec();
+Qt::TimeSpec C_ZNK9QDateTime8timeSpecEv(void *this_) {
+  return (Qt::TimeSpec)((QDateTime*)this_)->timeSpec();
 }
-// /usr/include/qt/QtCore/qdatetime.h:247
-// int offsetFromUtc()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:286
+// [4] int offsetFromUtc()
 extern "C"
-void C_ZNK9QDateTime13offsetFromUtcEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->offsetFromUtc();
+int C_ZNK9QDateTime13offsetFromUtcEv(void *this_) {
+  return (int)((QDateTime*)this_)->offsetFromUtc();
 }
-// /usr/include/qt/QtCore/qdatetime.h:249
-// QTimeZone timeZone()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:288
+// [8] QTimeZone timeZone()
 extern "C"
-void C_ZNK9QDateTime8timeZoneEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->timeZone();
+void* C_ZNK9QDateTime8timeZoneEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->timeZone();
+return new QTimeZone(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:251
-// QString timeZoneAbbreviation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:290
+// [8] QString timeZoneAbbreviation()
 extern "C"
-void C_ZNK9QDateTime20timeZoneAbbreviationEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->timeZoneAbbreviation();
+void* C_ZNK9QDateTime20timeZoneAbbreviationEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->timeZoneAbbreviation();
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:252
-// bool isDaylightTime()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:291
+// [1] bool isDaylightTime()
 extern "C"
-void C_ZNK9QDateTime14isDaylightTimeEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->isDaylightTime();
+bool C_ZNK9QDateTime14isDaylightTimeEv(void *this_) {
+  return (bool)((QDateTime*)this_)->isDaylightTime();
 }
-// /usr/include/qt/QtCore/qdatetime.h:254
-// qint64 toMSecsSinceEpoch()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:293
+// [8] qint64 toMSecsSinceEpoch()
 extern "C"
-void C_ZNK9QDateTime17toMSecsSinceEpochEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->toMSecsSinceEpoch();
+qint64 C_ZNK9QDateTime17toMSecsSinceEpochEv(void *this_) {
+  return (qint64)((QDateTime*)this_)->toMSecsSinceEpoch();
 }
-// /usr/include/qt/QtCore/qdatetime.h:256
-// uint toTime_t()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:294
+// [8] qint64 toSecsSinceEpoch()
 extern "C"
-void C_ZNK9QDateTime8toTime_tEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->toTime_t();
+qint64 C_ZNK9QDateTime16toSecsSinceEpochEv(void *this_) {
+  return (qint64)((QDateTime*)this_)->toSecsSinceEpoch();
 }
-// /usr/include/qt/QtCore/qdatetime.h:258
-// void setDate(const class QDate &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:296
+// [-2] void setDate(const class QDate &)
 extern "C"
 void C_ZN9QDateTime7setDateERK5QDate(void *this_, const QDate & date) {
   ((QDateTime*)this_)->setDate(date);
 }
-// /usr/include/qt/QtCore/qdatetime.h:259
-// void setTime(const class QTime &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:297
+// [-2] void setTime(const class QTime &)
 extern "C"
 void C_ZN9QDateTime7setTimeERK5QTime(void *this_, const QTime & time) {
   ((QDateTime*)this_)->setTime(time);
 }
-// /usr/include/qt/QtCore/qdatetime.h:260
-// void setTimeSpec(Qt::TimeSpec)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:298
+// [-2] void setTimeSpec(Qt::TimeSpec)
 extern "C"
 void C_ZN9QDateTime11setTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec spec) {
   ((QDateTime*)this_)->setTimeSpec(spec);
 }
-// /usr/include/qt/QtCore/qdatetime.h:261
-// void setOffsetFromUtc(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:299
+// [-2] void setOffsetFromUtc(int)
 extern "C"
 void C_ZN9QDateTime16setOffsetFromUtcEi(void *this_, int offsetSeconds) {
   ((QDateTime*)this_)->setOffsetFromUtc(offsetSeconds);
 }
-// /usr/include/qt/QtCore/qdatetime.h:263
-// void setTimeZone(const class QTimeZone &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:301
+// [-2] void setTimeZone(const class QTimeZone &)
 extern "C"
 void C_ZN9QDateTime11setTimeZoneERK9QTimeZone(void *this_, const QTimeZone & toZone) {
   ((QDateTime*)this_)->setTimeZone(toZone);
 }
-// /usr/include/qt/QtCore/qdatetime.h:265
-// void setMSecsSinceEpoch(qint64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:303
+// [-2] void setMSecsSinceEpoch(qint64)
 extern "C"
 void C_ZN9QDateTime18setMSecsSinceEpochEx(void *this_, qint64 msecs) {
   ((QDateTime*)this_)->setMSecsSinceEpoch(msecs);
 }
-// /usr/include/qt/QtCore/qdatetime.h:267
-// void setTime_t(uint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:304
+// [-2] void setSecsSinceEpoch(qint64)
 extern "C"
-void C_ZN9QDateTime9setTime_tEj(void *this_, uint secsSince1Jan1970UTC) {
-  ((QDateTime*)this_)->setTime_t(secsSince1Jan1970UTC);
+void C_ZN9QDateTime17setSecsSinceEpochEx(void *this_, qint64 secs) {
+  ((QDateTime*)this_)->setSecsSinceEpoch(secs);
 }
-// /usr/include/qt/QtCore/qdatetime.h:270
-// QString toString(Qt::DateFormat)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:307
+// [8] QString toString(Qt::DateFormat)
 extern "C"
-void C_ZNK9QDateTime8toStringEN2Qt10DateFormatE(void *this_, Qt::DateFormat f) {
-  /*return*/ ((QDateTime*)this_)->toString(f);
+void* C_ZNK9QDateTime8toStringEN2Qt10DateFormatE(void *this_, Qt::DateFormat f) {
+  auto rv = ((QDateTime*)this_)->toString(f);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:271
-// QString toString(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:309
+// [8] QString toString(const class QString &)
 extern "C"
-void C_ZNK9QDateTime8toStringERK7QString(void *this_, const QString & format) {
-  /*return*/ ((QDateTime*)this_)->toString(format);
+void* C_ZNK9QDateTime8toStringERK7QString(void *this_, const QString & format) {
+  auto rv = ((QDateTime*)this_)->toString(format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:273
-// QDateTime addDays(qint64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:311
+// [8] QString toString(class QStringView)
 extern "C"
-void C_ZNK9QDateTime7addDaysEx(void *this_, qint64 days) {
-  /*return*/ ((QDateTime*)this_)->addDays(days);
+void* C_ZNK9QDateTime8toStringE11QStringView(void *this_, QStringView format) {
+  auto rv = ((QDateTime*)this_)->toString(format);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:274
-// QDateTime addMonths(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:313
+// [8] QDateTime addDays(qint64)
 extern "C"
-void C_ZNK9QDateTime9addMonthsEi(void *this_, int months) {
-  /*return*/ ((QDateTime*)this_)->addMonths(months);
+void* C_ZNK9QDateTime7addDaysEx(void *this_, qint64 days) {
+  auto rv = ((QDateTime*)this_)->addDays(days);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:275
-// QDateTime addYears(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:314
+// [8] QDateTime addMonths(int)
 extern "C"
-void C_ZNK9QDateTime8addYearsEi(void *this_, int years) {
-  /*return*/ ((QDateTime*)this_)->addYears(years);
+void* C_ZNK9QDateTime9addMonthsEi(void *this_, int months) {
+  auto rv = ((QDateTime*)this_)->addMonths(months);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:276
-// QDateTime addSecs(qint64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:315
+// [8] QDateTime addYears(int)
 extern "C"
-void C_ZNK9QDateTime7addSecsEx(void *this_, qint64 secs) {
-  /*return*/ ((QDateTime*)this_)->addSecs(secs);
+void* C_ZNK9QDateTime8addYearsEi(void *this_, int years) {
+  auto rv = ((QDateTime*)this_)->addYears(years);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:277
-// QDateTime addMSecs(qint64)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:316
+// [8] QDateTime addSecs(qint64)
 extern "C"
-void C_ZNK9QDateTime8addMSecsEx(void *this_, qint64 msecs) {
-  /*return*/ ((QDateTime*)this_)->addMSecs(msecs);
+void* C_ZNK9QDateTime7addSecsEx(void *this_, qint64 secs) {
+  auto rv = ((QDateTime*)this_)->addSecs(secs);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:279
-// QDateTime toTimeSpec(Qt::TimeSpec)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:317
+// [8] QDateTime addMSecs(qint64)
 extern "C"
-void C_ZNK9QDateTime10toTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec spec) {
-  /*return*/ ((QDateTime*)this_)->toTimeSpec(spec);
+void* C_ZNK9QDateTime8addMSecsEx(void *this_, qint64 msecs) {
+  auto rv = ((QDateTime*)this_)->addMSecs(msecs);
+return new QDateTime(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qdatetime.h:280
-// QDateTime toLocalTime()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:319
+// [8] QDateTime toTimeSpec(Qt::TimeSpec)
 extern "C"
-void C_ZNK9QDateTime11toLocalTimeEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->toLocalTime();
+void* C_ZNK9QDateTime10toTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec spec) {
+  auto rv = ((QDateTime*)this_)->toTimeSpec(spec);
+return new QDateTime(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qdatetime.h:281
-// QDateTime toUTC()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:320
+// [8] QDateTime toLocalTime()
 extern "C"
-void C_ZNK9QDateTime5toUTCEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->toUTC();
+void* C_ZNK9QDateTime11toLocalTimeEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->toLocalTime();
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:282
-// QDateTime toOffsetFromUtc(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:321
+// [8] QDateTime toUTC()
 extern "C"
-void C_ZNK9QDateTime15toOffsetFromUtcEi(void *this_, int offsetSeconds) {
-  /*return*/ ((QDateTime*)this_)->toOffsetFromUtc(offsetSeconds);
+void* C_ZNK9QDateTime5toUTCEv(void *this_) {
+  auto rv = ((QDateTime*)this_)->toUTC();
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:284
-// QDateTime toTimeZone(const class QTimeZone &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:322
+// [8] QDateTime toOffsetFromUtc(int)
 extern "C"
-void C_ZNK9QDateTime10toTimeZoneERK9QTimeZone(void *this_, const QTimeZone & toZone) {
-  /*return*/ ((QDateTime*)this_)->toTimeZone(toZone);
+void* C_ZNK9QDateTime15toOffsetFromUtcEi(void *this_, int offsetSeconds) {
+  auto rv = ((QDateTime*)this_)->toOffsetFromUtc(offsetSeconds);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:287
-// qint64 daysTo(const class QDateTime &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:324
+// [8] QDateTime toTimeZone(const class QTimeZone &)
 extern "C"
-void C_ZNK9QDateTime6daysToERKS_(void *this_, const QDateTime & arg0) {
-  /*return*/ ((QDateTime*)this_)->daysTo(arg0);
+void* C_ZNK9QDateTime10toTimeZoneERK9QTimeZone(void *this_, const QTimeZone & toZone) {
+  auto rv = ((QDateTime*)this_)->toTimeZone(toZone);
+return new QDateTime(rv);
 }
-// /usr/include/qt/QtCore/qdatetime.h:288
-// qint64 secsTo(const class QDateTime &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:327
+// [8] qint64 daysTo(const class QDateTime &)
 extern "C"
-void C_ZNK9QDateTime6secsToERKS_(void *this_, const QDateTime & arg0) {
-  /*return*/ ((QDateTime*)this_)->secsTo(arg0);
+qint64 C_ZNK9QDateTime6daysToERKS_(void *this_, const QDateTime & arg0) {
+  return (qint64)((QDateTime*)this_)->daysTo(arg0);
 }
-// /usr/include/qt/QtCore/qdatetime.h:289
-// qint64 msecsTo(const class QDateTime &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:328
+// [8] qint64 secsTo(const class QDateTime &)
 extern "C"
-void C_ZNK9QDateTime7msecsToERKS_(void *this_, const QDateTime & arg0) {
-  /*return*/ ((QDateTime*)this_)->msecsTo(arg0);
+qint64 C_ZNK9QDateTime6secsToERKS_(void *this_, const QDateTime & arg0) {
+  return (qint64)((QDateTime*)this_)->secsTo(arg0);
 }
-// /usr/include/qt/QtCore/qdatetime.h:299
-// void setUtcOffset(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:329
+// [8] qint64 msecsTo(const class QDateTime &)
+extern "C"
+qint64 C_ZNK9QDateTime7msecsToERKS_(void *this_, const QDateTime & arg0) {
+  return (qint64)((QDateTime*)this_)->msecsTo(arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:339
+// [-2] void setUtcOffset(int)
 extern "C"
 void C_ZN9QDateTime12setUtcOffsetEi(void *this_, int seconds) {
   ((QDateTime*)this_)->setUtcOffset(seconds);
 }
-// /usr/include/qt/QtCore/qdatetime.h:300
-// int utcOffset()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:340
+// [4] int utcOffset()
 extern "C"
-void C_ZNK9QDateTime9utcOffsetEv(void *this_) {
-  /*return*/ ((QDateTime*)this_)->utcOffset();
+int C_ZNK9QDateTime9utcOffsetEv(void *this_) {
+  return (int)((QDateTime*)this_)->utcOffset();
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:303
-// QDateTime currentDateTime()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:343
+// [8] QDateTime currentDateTime()
 extern "C"
-void C_ZN9QDateTime15currentDateTimeEv() {
-  /*return*/ QDateTime::currentDateTime();
+void* C_ZN9QDateTime15currentDateTimeEv() {
+  auto rv = QDateTime::currentDateTime();
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:304
-// QDateTime currentDateTimeUtc()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:344
+// [8] QDateTime currentDateTimeUtc()
 extern "C"
-void C_ZN9QDateTime18currentDateTimeUtcEv() {
-  /*return*/ QDateTime::currentDateTimeUtc();
+void* C_ZN9QDateTime18currentDateTimeUtcEv() {
+  auto rv = QDateTime::currentDateTimeUtc();
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:306
-// QDateTime fromString(const class QString &, Qt::DateFormat)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:346
+// [8] QDateTime fromString(const class QString &, Qt::DateFormat)
 extern "C"
-void C_ZN9QDateTime10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
-  /*return*/ QDateTime::fromString(s, f);
+void* C_ZN9QDateTime10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
+  auto rv = QDateTime::fromString(s, f);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:307
-// QDateTime fromString(const class QString &, const class QString &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:347
+// [8] QDateTime fromString(const class QString &, const class QString &)
 extern "C"
-void C_ZN9QDateTime10fromStringERK7QStringS2_(const QString & s, const QString & format) {
-  /*return*/ QDateTime::fromString(s, format);
+void* C_ZN9QDateTime10fromStringERK7QStringS2_(const QString & s, const QString & format) {
+  auto rv = QDateTime::fromString(s, format);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:310
-// QDateTime fromTime_t(uint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:351
+// [4] uint toTime_t()
 extern "C"
-void C_ZN9QDateTime10fromTime_tEj(uint secsSince1Jan1970UTC) {
-  /*return*/ QDateTime::fromTime_t(secsSince1Jan1970UTC);
+uint C_ZNK9QDateTime8toTime_tEv(void *this_) {
+  return (uint)((QDateTime*)this_)->toTime_t();
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:312
-// QDateTime fromTime_t(uint, Qt::TimeSpec, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:352
+// [-2] void setTime_t(uint)
 extern "C"
-void C_ZN9QDateTime10fromTime_tEjN2Qt8TimeSpecEi(uint secsSince1Jan1970UTC, Qt::TimeSpec spec, int offsetFromUtc) {
-  /*return*/ QDateTime::fromTime_t(secsSince1Jan1970UTC, spec, offsetFromUtc);
+void C_ZN9QDateTime9setTime_tEj(void *this_, uint secsSince1Jan1970UTC) {
+  ((QDateTime*)this_)->setTime_t(secsSince1Jan1970UTC);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:315
-// QDateTime fromTime_t(uint, const class QTimeZone &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:353
+// [8] QDateTime fromTime_t(uint)
 extern "C"
-void C_ZN9QDateTime10fromTime_tEjRK9QTimeZone(uint secsSince1Jan1970UTC, const QTimeZone & timeZone) {
-  /*return*/ QDateTime::fromTime_t(secsSince1Jan1970UTC, timeZone);
+void* C_ZN9QDateTime10fromTime_tEj(uint secsSince1Jan1970UTC) {
+  auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:317
-// QDateTime fromMSecsSinceEpoch(qint64)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:354
+// [8] QDateTime fromTime_t(uint, Qt::TimeSpec, int)
 extern "C"
-void C_ZN9QDateTime19fromMSecsSinceEpochEx(qint64 msecs) {
-  /*return*/ QDateTime::fromMSecsSinceEpoch(msecs);
+void* C_ZN9QDateTime10fromTime_tEjN2Qt8TimeSpecEi(uint secsSince1Jan1970UTC, Qt::TimeSpec spec, int offsetFromUtc) {
+  auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC, spec, offsetFromUtc);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:319
-// QDateTime fromMSecsSinceEpoch(qint64, Qt::TimeSpec, int)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:356
+// [8] QDateTime fromTime_t(uint, const class QTimeZone &)
 extern "C"
-void C_ZN9QDateTime19fromMSecsSinceEpochExN2Qt8TimeSpecEi(qint64 msecs, Qt::TimeSpec spec, int offsetFromUtc) {
-  /*return*/ QDateTime::fromMSecsSinceEpoch(msecs, spec, offsetFromUtc);
+void* C_ZN9QDateTime10fromTime_tEjRK9QTimeZone(uint secsSince1Jan1970UTC, const QTimeZone & timeZone) {
+  auto rv = QDateTime::fromTime_t(secsSince1Jan1970UTC, timeZone);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:321
-// QDateTime fromMSecsSinceEpoch(qint64, const class QTimeZone &)
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:359
+// [8] QDateTime fromMSecsSinceEpoch(qint64)
 extern "C"
-void C_ZN9QDateTime19fromMSecsSinceEpochExRK9QTimeZone(qint64 msecs, const QTimeZone & timeZone) {
-  /*return*/ QDateTime::fromMSecsSinceEpoch(msecs, timeZone);
+void* C_ZN9QDateTime19fromMSecsSinceEpochEx(qint64 msecs) {
+  auto rv = QDateTime::fromMSecsSinceEpoch(msecs);
+return new QDateTime(rv);
 }
-// static
-// /usr/include/qt/QtCore/qdatetime.h:323
-// qint64 currentMSecsSinceEpoch()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:361
+// [8] QDateTime fromMSecsSinceEpoch(qint64, Qt::TimeSpec, int)
 extern "C"
-void C_ZN9QDateTime22currentMSecsSinceEpochEv() {
-  /*return*/ QDateTime::currentMSecsSinceEpoch();
+void* C_ZN9QDateTime19fromMSecsSinceEpochExN2Qt8TimeSpecEi(qint64 msecs, Qt::TimeSpec spec, int offsetFromUtc) {
+  auto rv = QDateTime::fromMSecsSinceEpoch(msecs, spec, offsetFromUtc);
+return new QDateTime(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:362
+// [8] QDateTime fromSecsSinceEpoch(qint64, Qt::TimeSpec, int)
+extern "C"
+void* C_ZN9QDateTime18fromSecsSinceEpochExN2Qt8TimeSpecEi(qint64 secs, Qt::TimeSpec spe, int offsetFromUtc) {
+  auto rv = QDateTime::fromSecsSinceEpoch(secs, spe, offsetFromUtc);
+return new QDateTime(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:365
+// [8] QDateTime fromMSecsSinceEpoch(qint64, const class QTimeZone &)
+extern "C"
+void* C_ZN9QDateTime19fromMSecsSinceEpochExRK9QTimeZone(qint64 msecs, const QTimeZone & timeZone) {
+  auto rv = QDateTime::fromMSecsSinceEpoch(msecs, timeZone);
+return new QDateTime(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:366
+// [8] QDateTime fromSecsSinceEpoch(qint64, const class QTimeZone &)
+extern "C"
+void* C_ZN9QDateTime18fromSecsSinceEpochExRK9QTimeZone(qint64 secs, const QTimeZone & timeZone) {
+  auto rv = QDateTime::fromSecsSinceEpoch(secs, timeZone);
+return new QDateTime(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:369
+// [8] qint64 currentMSecsSinceEpoch()
+extern "C"
+qint64 C_ZN9QDateTime22currentMSecsSinceEpochEv() {
+  return (qint64)QDateTime::currentMSecsSinceEpoch();
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:370
+// [8] qint64 currentSecsSinceEpoch()
+extern "C"
+qint64 C_ZN9QDateTime21currentSecsSinceEpochEv() {
+  return (qint64)QDateTime::currentSecsSinceEpoch();
 }
 //  main block end

@@ -3,75 +3,80 @@
 #include <qprocess.h>
 #include <QtCore>
 
+// QProcessEnvironment is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQProcessEnvironment : public QProcessEnvironment {
+public:
+MyQProcessEnvironment() : QProcessEnvironment() {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:70
-// void QProcessEnvironment()
+// [-2] void QProcessEnvironment()
 extern "C"
 void* C_ZN19QProcessEnvironmentC1Ev() {
-  return new QProcessEnvironment();
+  (MyQProcessEnvironment*)(0);
+  return  new MyQProcessEnvironment();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:72
-// void ~QProcessEnvironment()
+// [-2] void ~QProcessEnvironment()
 extern "C"
 void C_ZN19QProcessEnvironmentD1Ev(void *this_) {
   delete (QProcessEnvironment*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:78
-// void swap(class QProcessEnvironment &)
+// [-2] void swap(class QProcessEnvironment &)
 extern "C"
 void C_ZN19QProcessEnvironment4swapERS_(void *this_, QProcessEnvironment & other) {
   ((QProcessEnvironment*)this_)->swap(other);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:84
-// bool isEmpty()
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK19QProcessEnvironment7isEmptyEv(void *this_) {
-  /*return*/ ((QProcessEnvironment*)this_)->isEmpty();
+bool C_ZNK19QProcessEnvironment7isEmptyEv(void *this_) {
+  return (bool)((QProcessEnvironment*)this_)->isEmpty();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:85
-// void clear()
+// [-2] void clear()
 extern "C"
 void C_ZN19QProcessEnvironment5clearEv(void *this_) {
   ((QProcessEnvironment*)this_)->clear();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:87
-// bool contains(const class QString &)
+// [1] bool contains(const class QString &)
 extern "C"
-void C_ZNK19QProcessEnvironment8containsERK7QString(void *this_, const QString & name) {
-  /*return*/ ((QProcessEnvironment*)this_)->contains(name);
+bool C_ZNK19QProcessEnvironment8containsERK7QString(void *this_, const QString & name) {
+  return (bool)((QProcessEnvironment*)this_)->contains(name);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:89
-// void remove(const class QString &)
+// [-2] void remove(const class QString &)
 extern "C"
 void C_ZN19QProcessEnvironment6removeERK7QString(void *this_, const QString & name) {
   ((QProcessEnvironment*)this_)->remove(name);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:90
-// QString value(const class QString &, const class QString &)
+// [8] QString value(const class QString &, const class QString &)
 extern "C"
-void C_ZNK19QProcessEnvironment5valueERK7QStringS2_(void *this_, const QString & name, const QString & defaultValue) {
-  /*return*/ ((QProcessEnvironment*)this_)->value(name, defaultValue);
+void* C_ZNK19QProcessEnvironment5valueERK7QStringS2_(void *this_, const QString & name, const QString & defaultValue) {
+  auto rv = ((QProcessEnvironment*)this_)->value(name, defaultValue);
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qprocess.h:92
-// QStringList toStringList()
-extern "C"
-void C_ZNK19QProcessEnvironment12toStringListEv(void *this_) {
-  /*return*/ ((QProcessEnvironment*)this_)->toStringList();
-}
-// /usr/include/qt/QtCore/qprocess.h:94
-// QStringList keys()
-extern "C"
-void C_ZNK19QProcessEnvironment4keysEv(void *this_) {
-  /*return*/ ((QProcessEnvironment*)this_)->keys();
-}
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:98
-// QProcessEnvironment systemEnvironment()
+// [8] QProcessEnvironment systemEnvironment()
 extern "C"
-void C_ZN19QProcessEnvironment17systemEnvironmentEv() {
-  /*return*/ QProcessEnvironment::systemEnvironment();
+void* C_ZN19QProcessEnvironment17systemEnvironmentEv() {
+  auto rv = QProcessEnvironment::systemEnvironment();
+return new QProcessEnvironment(rv);
 }
 //  main block end

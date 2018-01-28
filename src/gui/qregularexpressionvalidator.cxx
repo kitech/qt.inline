@@ -3,56 +3,72 @@
 #include <qvalidator.h>
 #include <QtGui>
 
+// QRegularExpressionValidator is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:202
-// const QMetaObject * metaObject()
+
+class MyQRegularExpressionValidator : public QRegularExpressionValidator {
+public:
+MyQRegularExpressionValidator(QObject * parent) : QRegularExpressionValidator(parent) {}
+MyQRegularExpressionValidator(const QRegularExpression & re, QObject * parent) : QRegularExpressionValidator(re, parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:203
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
-  /*return*/ ((QRegularExpressionValidator*)this_)->metaObject();
+void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
+  return (void*)((QRegularExpressionValidator*)this_)->metaObject();
 }
-// /usr/include/qt/QtGui/qvalidator.h:206
-// void QRegularExpressionValidator(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:207
+// [-2] void QRegularExpressionValidator(class QObject *)
 extern "C"
 void* C_ZN27QRegularExpressionValidatorC1EP7QObject(QObject * parent) {
-  return new QRegularExpressionValidator(parent);
+  (MyQRegularExpressionValidator*)(0);
+  return  new MyQRegularExpressionValidator(parent);
 }
-// /usr/include/qt/QtGui/qvalidator.h:207
-// void QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:208
+// [-2] void QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
 extern "C"
 void* C_ZN27QRegularExpressionValidatorC1ERK18QRegularExpressionP7QObject(const QRegularExpression & re, QObject * parent) {
-  return new QRegularExpressionValidator(re, parent);
+  (MyQRegularExpressionValidator*)(0);
+  return  new MyQRegularExpressionValidator(re, parent);
 }
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:208
-// void ~QRegularExpressionValidator()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:209
+// [-2] void ~QRegularExpressionValidator()
 extern "C"
 void C_ZN27QRegularExpressionValidatorD1Ev(void *this_) {
   delete (QRegularExpressionValidator*)(this_);
 }
-// virtual
-// /usr/include/qt/QtGui/qvalidator.h:210
-// QValidator::State validate(class QString &, int &)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:211
+// [4] QValidator::State validate(class QString &, int &)
 extern "C"
-void C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *this_, QString & input, int & pos) {
-  /*return*/ ((QRegularExpressionValidator*)this_)->validate(input, pos);
+QValidator::State C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *this_, QString & input, int & pos) {
+  return (QValidator::State)((QRegularExpressionValidator*)this_)->validate(input, pos);
 }
-// /usr/include/qt/QtGui/qvalidator.h:212
-// QRegularExpression regularExpression()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:213
+// [8] QRegularExpression regularExpression()
 extern "C"
-void C_ZNK27QRegularExpressionValidator17regularExpressionEv(void *this_) {
-  /*return*/ ((QRegularExpressionValidator*)this_)->regularExpression();
+void* C_ZNK27QRegularExpressionValidator17regularExpressionEv(void *this_) {
+  auto rv = ((QRegularExpressionValidator*)this_)->regularExpression();
+return new QRegularExpression(rv);
 }
-// /usr/include/qt/QtGui/qvalidator.h:215
-// void setRegularExpression(const class QRegularExpression &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:216
+// [-2] void setRegularExpression(const class QRegularExpression &)
 extern "C"
 void C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression(void *this_, const QRegularExpression & re) {
   ((QRegularExpressionValidator*)this_)->setRegularExpression(re);
 }
-// /usr/include/qt/QtGui/qvalidator.h:218
-// void regularExpressionChanged(const class QRegularExpression &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:219
+// [-2] void regularExpressionChanged(const class QRegularExpression &)
 extern "C"
 void C_ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(void *this_, const QRegularExpression & re) {
   ((QRegularExpressionValidator*)this_)->regularExpressionChanged(re);

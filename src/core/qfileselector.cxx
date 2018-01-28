@@ -3,57 +3,59 @@
 #include <qfileselector.h>
 #include <QtCore>
 
+// QFileSelector is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
+
+class MyQFileSelector : public QFileSelector {
+public:
+MyQFileSelector(QObject * parent) : QFileSelector(parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:51
-// const QMetaObject * metaObject()
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK13QFileSelector10metaObjectEv(void *this_) {
-  /*return*/ ((QFileSelector*)this_)->metaObject();
+void* C_ZNK13QFileSelector10metaObjectEv(void *this_) {
+  return (void*)((QFileSelector*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:53
-// void QFileSelector(class QObject *)
+// [-2] void QFileSelector(class QObject *)
 extern "C"
 void* C_ZN13QFileSelectorC1EP7QObject(QObject * parent) {
-  return new QFileSelector(parent);
+  (MyQFileSelector*)(0);
+  return  new MyQFileSelector(parent);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:54
-// void ~QFileSelector()
+// [-2] void ~QFileSelector()
 extern "C"
 void C_ZN13QFileSelectorD1Ev(void *this_) {
   delete (QFileSelector*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:56
-// QString select(const class QString &)
+// [8] QString select(const class QString &)
 extern "C"
-void C_ZNK13QFileSelector6selectERK7QString(void *this_, const QString & filePath) {
-  /*return*/ ((QFileSelector*)this_)->select(filePath);
+void* C_ZNK13QFileSelector6selectERK7QString(void *this_, const QString & filePath) {
+  auto rv = ((QFileSelector*)this_)->select(filePath);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:57
-// QUrl select(const class QUrl &)
+// [8] QUrl select(const class QUrl &)
 extern "C"
-void C_ZNK13QFileSelector6selectERK4QUrl(void *this_, const QUrl & filePath) {
-  /*return*/ ((QFileSelector*)this_)->select(filePath);
+void* C_ZNK13QFileSelector6selectERK4QUrl(void *this_, const QUrl & filePath) {
+  auto rv = ((QFileSelector*)this_)->select(filePath);
+return new QUrl(rv);
 }
-// /usr/include/qt/QtCore/qfileselector.h:59
-// QStringList extraSelectors()
-extern "C"
-void C_ZNK13QFileSelector14extraSelectorsEv(void *this_) {
-  /*return*/ ((QFileSelector*)this_)->extraSelectors();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:60
-// void setExtraSelectors(const class QStringList &)
+// [-2] void setExtraSelectors(const class QStringList &)
 extern "C"
 void C_ZN13QFileSelector17setExtraSelectorsERK11QStringList(void *this_, const QStringList & list) {
   ((QFileSelector*)this_)->setExtraSelectors(list);
-}
-// /usr/include/qt/QtCore/qfileselector.h:62
-// QStringList allSelectors()
-extern "C"
-void C_ZNK13QFileSelector12allSelectorsEv(void *this_) {
-  /*return*/ ((QFileSelector*)this_)->allSelectors();
 }
 //  main block end

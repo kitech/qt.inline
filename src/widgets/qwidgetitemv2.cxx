@@ -3,48 +3,60 @@
 #include <qlayoutitem.h>
 #include <QtWidgets>
 
+// QWidgetItemV2 is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qlayoutitem.h:147
-// void QWidgetItemV2(class QWidget *)
+
+class MyQWidgetItemV2 : public QWidgetItemV2 {
+public:
+MyQWidgetItemV2(QWidget * widget) : QWidgetItemV2(widget) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:148
+// [-2] void QWidgetItemV2(class QWidget *)
 extern "C"
 void* C_ZN13QWidgetItemV2C1EP7QWidget(QWidget * widget) {
-  return new QWidgetItemV2(widget);
+  (MyQWidgetItemV2*)(0);
+  return  new MyQWidgetItemV2(widget);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:148
-// void ~QWidgetItemV2()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:149
+// [-2] void ~QWidgetItemV2()
 extern "C"
 void C_ZN13QWidgetItemV2D1Ev(void *this_) {
   delete (QWidgetItemV2*)(this_);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:150
-// QSize sizeHint()
-extern "C"
-void C_ZNK13QWidgetItemV28sizeHintEv(void *this_) {
-  /*return*/ ((QWidgetItemV2*)this_)->sizeHint();
-}
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:151
-// QSize minimumSize()
+// [8] QSize sizeHint()
 extern "C"
-void C_ZNK13QWidgetItemV211minimumSizeEv(void *this_) {
-  /*return*/ ((QWidgetItemV2*)this_)->minimumSize();
+void* C_ZNK13QWidgetItemV28sizeHintEv(void *this_) {
+  auto rv = ((QWidgetItemV2*)this_)->sizeHint();
+return new QSize(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:152
-// QSize maximumSize()
+// [8] QSize minimumSize()
 extern "C"
-void C_ZNK13QWidgetItemV211maximumSizeEv(void *this_) {
-  /*return*/ ((QWidgetItemV2*)this_)->maximumSize();
+void* C_ZNK13QWidgetItemV211minimumSizeEv(void *this_) {
+  auto rv = ((QWidgetItemV2*)this_)->minimumSize();
+return new QSize(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:153
-// int heightForWidth(int)
+// [8] QSize maximumSize()
 extern "C"
-void C_ZNK13QWidgetItemV214heightForWidthEi(void *this_, int width) {
-  /*return*/ ((QWidgetItemV2*)this_)->heightForWidth(width);
+void* C_ZNK13QWidgetItemV211maximumSizeEv(void *this_) {
+  auto rv = ((QWidgetItemV2*)this_)->maximumSize();
+return new QSize(rv);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:154
+// [4] int heightForWidth(int)
+extern "C"
+int C_ZNK13QWidgetItemV214heightForWidthEi(void *this_, int width) {
+  return (int)((QWidgetItemV2*)this_)->heightForWidth(width);
 }
 //  main block end

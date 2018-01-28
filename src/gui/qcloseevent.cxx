@@ -3,18 +3,27 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QCloseEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:467
-// void QCloseEvent()
+
+class MyQCloseEvent : public QCloseEvent {
+public:
+MyQCloseEvent() : QCloseEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:477
+// [-2] void QCloseEvent()
 extern "C"
 void* C_ZN11QCloseEventC1Ev() {
-  return new QCloseEvent();
+  (MyQCloseEvent*)(0);
+  return  new MyQCloseEvent();
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:468
-// void ~QCloseEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:478
+// [-2] void ~QCloseEvent()
 extern "C"
 void C_ZN11QCloseEventD1Ev(void *this_) {
   delete (QCloseEvent*)(this_);

@@ -3,158 +3,165 @@
 #include <qglyphrun.h>
 #include <QtGui>
 
+// QGlyphRun is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qglyphrun.h:66
-// void QGlyphRun()
+
+class MyQGlyphRun : public QGlyphRun {
+public:
+MyQGlyphRun() : QGlyphRun() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:67
+// [-2] void QGlyphRun()
 extern "C"
 void* C_ZN9QGlyphRunC1Ev() {
-  return new QGlyphRun();
+  (MyQGlyphRun*)(0);
+  return  new MyQGlyphRun();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:72
-// void ~QGlyphRun()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:73
+// [-2] void ~QGlyphRun()
 extern "C"
 void C_ZN9QGlyphRunD1Ev(void *this_) {
   delete (QGlyphRun*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qglyphrun.h:74
-// void swap(class QGlyphRun &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:75
+// [-2] void swap(class QGlyphRun &)
 extern "C"
 void C_ZN9QGlyphRun4swapERS_(void *this_, QGlyphRun & other) {
   ((QGlyphRun*)this_)->swap(other);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:76
-// QRawFont rawFont()
-extern "C"
-void C_ZNK9QGlyphRun7rawFontEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->rawFont();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:77
-// void setRawFont(const class QRawFont &)
+// [8] QRawFont rawFont()
+extern "C"
+void* C_ZNK9QGlyphRun7rawFontEv(void *this_) {
+  auto rv = ((QGlyphRun*)this_)->rawFont();
+return new QRawFont(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:78
+// [-2] void setRawFont(const class QRawFont &)
 extern "C"
 void C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *this_, const QRawFont & rawFont) {
   ((QGlyphRun*)this_)->setRawFont(rawFont);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:79
-// void setRawData(const quint32 *, const class QPointF *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:80
+// [-2] void setRawData(const quint32 *, const class QPointF *, int)
 extern "C"
 void C_ZN9QGlyphRun10setRawDataEPKjPK7QPointFi(void *this_, const quint32 * glyphIndexArray, const QPointF * glyphPositionArray, int size) {
   ((QGlyphRun*)this_)->setRawData(glyphIndexArray, glyphPositionArray, size);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:83
-// QVector<quint32> glyphIndexes()
-extern "C"
-void C_ZNK9QGlyphRun12glyphIndexesEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->glyphIndexes();
-}
-// /usr/include/qt/QtGui/qglyphrun.h:84
-// void setGlyphIndexes(const QVector<quint32> &)
-extern "C"
-void C_ZN9QGlyphRun15setGlyphIndexesERK7QVectorIjE(void *this_, const QVector<quint32> & glyphIndexes) {
-  ((QGlyphRun*)this_)->setGlyphIndexes(glyphIndexes);
-}
-// /usr/include/qt/QtGui/qglyphrun.h:86
-// QVector<QPointF> positions()
-extern "C"
-void C_ZNK9QGlyphRun9positionsEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->positions();
-}
-// /usr/include/qt/QtGui/qglyphrun.h:87
-// void setPositions(const QVector<class QPointF> &)
-extern "C"
-void C_ZN9QGlyphRun12setPositionsERK7QVectorI7QPointFE(void *this_, const QVector<QPointF> & positions) {
-  ((QGlyphRun*)this_)->setPositions(positions);
-}
-// /usr/include/qt/QtGui/qglyphrun.h:89
-// void clear()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:90
+// [-2] void clear()
 extern "C"
 void C_ZN9QGlyphRun5clearEv(void *this_) {
   ((QGlyphRun*)this_)->clear();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:95
-// void setOverline(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:96
+// [-2] void setOverline(_Bool)
 extern "C"
 void C_ZN9QGlyphRun11setOverlineEb(void *this_, bool overline) {
   ((QGlyphRun*)this_)->setOverline(overline);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:96
-// bool overline()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:97
+// [1] bool overline()
 extern "C"
-void C_ZNK9QGlyphRun8overlineEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->overline();
+bool C_ZNK9QGlyphRun8overlineEv(void *this_) {
+  return (bool)((QGlyphRun*)this_)->overline();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:98
-// void setUnderline(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:99
+// [-2] void setUnderline(_Bool)
 extern "C"
 void C_ZN9QGlyphRun12setUnderlineEb(void *this_, bool underline) {
   ((QGlyphRun*)this_)->setUnderline(underline);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:99
-// bool underline()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:100
+// [1] bool underline()
 extern "C"
-void C_ZNK9QGlyphRun9underlineEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->underline();
+bool C_ZNK9QGlyphRun9underlineEv(void *this_) {
+  return (bool)((QGlyphRun*)this_)->underline();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:101
-// void setStrikeOut(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:102
+// [-2] void setStrikeOut(_Bool)
 extern "C"
 void C_ZN9QGlyphRun12setStrikeOutEb(void *this_, bool strikeOut) {
   ((QGlyphRun*)this_)->setStrikeOut(strikeOut);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:102
-// bool strikeOut()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:103
+// [1] bool strikeOut()
 extern "C"
-void C_ZNK9QGlyphRun9strikeOutEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->strikeOut();
+bool C_ZNK9QGlyphRun9strikeOutEv(void *this_) {
+  return (bool)((QGlyphRun*)this_)->strikeOut();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:104
-// void setRightToLeft(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:105
+// [-2] void setRightToLeft(_Bool)
 extern "C"
 void C_ZN9QGlyphRun14setRightToLeftEb(void *this_, bool on) {
   ((QGlyphRun*)this_)->setRightToLeft(on);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:105
-// bool isRightToLeft()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:106
+// [1] bool isRightToLeft()
 extern "C"
-void C_ZNK9QGlyphRun13isRightToLeftEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->isRightToLeft();
+bool C_ZNK9QGlyphRun13isRightToLeftEv(void *this_) {
+  return (bool)((QGlyphRun*)this_)->isRightToLeft();
 }
-// /usr/include/qt/QtGui/qglyphrun.h:107
-// void setFlag(enum QGlyphRun::GlyphRunFlag, _Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:108
+// [-2] void setFlag(enum QGlyphRun::GlyphRunFlag, _Bool)
 extern "C"
 void C_ZN9QGlyphRun7setFlagENS_12GlyphRunFlagEb(void *this_, QGlyphRun::GlyphRunFlag flag, bool enabled) {
   ((QGlyphRun*)this_)->setFlag(flag, enabled);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:108
-// void setFlags(GlyphRunFlags)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:109
+// [-2] void setFlags(QGlyphRun::GlyphRunFlags)
 extern "C"
 void C_ZN9QGlyphRun8setFlagsE6QFlagsINS_12GlyphRunFlagEE(void *this_, QFlags<QGlyphRun::GlyphRunFlag> flags) {
   ((QGlyphRun*)this_)->setFlags(flags);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:109
-// GlyphRunFlags flags()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:110
+// [-2] QGlyphRun::GlyphRunFlags flags()
 extern "C"
 void C_ZNK9QGlyphRun5flagsEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->flags();
+  auto rv = ((QGlyphRun*)this_)->flags();
+/*return rv;*/
 }
-// /usr/include/qt/QtGui/qglyphrun.h:111
-// void setBoundingRect(const class QRectF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:112
+// [-2] void setBoundingRect(const class QRectF &)
 extern "C"
 void C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *this_, const QRectF & boundingRect) {
   ((QGlyphRun*)this_)->setBoundingRect(boundingRect);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:112
-// QRectF boundingRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:113
+// [32] QRectF boundingRect()
 extern "C"
-void C_ZNK9QGlyphRun12boundingRectEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->boundingRect();
+void* C_ZNK9QGlyphRun12boundingRectEv(void *this_) {
+  auto rv = ((QGlyphRun*)this_)->boundingRect();
+return new QRectF(rv);
 }
-// /usr/include/qt/QtGui/qglyphrun.h:114
-// bool isEmpty()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:115
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
-  /*return*/ ((QGlyphRun*)this_)->isEmpty();
+bool C_ZNK9QGlyphRun7isEmptyEv(void *this_) {
+  return (bool)((QGlyphRun*)this_)->isEmpty();
 }
 //  main block end

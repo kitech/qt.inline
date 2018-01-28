@@ -3,88 +3,114 @@
 #include <qmetaobject.h>
 #include <QtCore>
 
+// QMetaEnum is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qmetaobject.h:213
-// void QMetaEnum()
+
+class MyQMetaEnum : public QMetaEnum {
+public:
+MyQMetaEnum() : QMetaEnum() {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:209
+// [-2] void QMetaEnum()
 extern "C"
 void* C_ZN9QMetaEnumC1Ev() {
-  return new QMetaEnum();
+  (MyQMetaEnum*)(0);
+  return  new MyQMetaEnum();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:211
+// [8] const char * name()
+extern "C"
+void* C_ZNK9QMetaEnum4nameEv(void *this_) {
+  return (void*)((QMetaEnum*)this_)->name();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:212
+// [1] bool isFlag()
+extern "C"
+bool C_ZNK9QMetaEnum6isFlagEv(void *this_) {
+  return (bool)((QMetaEnum*)this_)->isFlag();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:213
+// [1] bool isScoped()
+extern "C"
+bool C_ZNK9QMetaEnum8isScopedEv(void *this_) {
+  return (bool)((QMetaEnum*)this_)->isScoped();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:215
-// const char * name()
+// [4] int keyCount()
 extern "C"
-void C_ZNK9QMetaEnum4nameEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->name();
+int C_ZNK9QMetaEnum8keyCountEv(void *this_) {
+  return (int)((QMetaEnum*)this_)->keyCount();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:216
-// bool isFlag()
+// [8] const char * key(int)
 extern "C"
-void C_ZNK9QMetaEnum6isFlagEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->isFlag();
+void* C_ZNK9QMetaEnum3keyEi(void *this_, int index) {
+  return (void*)((QMetaEnum*)this_)->key(index);
 }
-// /usr/include/qt/QtCore/qmetaobject.h:218
-// int keyCount()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:217
+// [4] int value(int)
 extern "C"
-void C_ZNK9QMetaEnum8keyCountEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->keyCount();
+int C_ZNK9QMetaEnum5valueEi(void *this_, int index) {
+  return (int)((QMetaEnum*)this_)->value(index);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:219
-// const char * key(int)
+// [8] const char * scope()
 extern "C"
-void C_ZNK9QMetaEnum3keyEi(void *this_, int index) {
-  /*return*/ ((QMetaEnum*)this_)->key(index);
+void* C_ZNK9QMetaEnum5scopeEv(void *this_) {
+  return (void*)((QMetaEnum*)this_)->scope();
 }
-// /usr/include/qt/QtCore/qmetaobject.h:220
-// int value(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:221
+// [4] int keyToValue(const char *, _Bool *)
 extern "C"
-void C_ZNK9QMetaEnum5valueEi(void *this_, int index) {
-  /*return*/ ((QMetaEnum*)this_)->value(index);
+int C_ZNK9QMetaEnum10keyToValueEPKcPb(void *this_, const char * key, bool * ok) {
+  return (int)((QMetaEnum*)this_)->keyToValue(key, ok);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:222
-// const char * scope()
+// [8] const char * valueToKey(int)
 extern "C"
-void C_ZNK9QMetaEnum5scopeEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->scope();
+void* C_ZNK9QMetaEnum10valueToKeyEi(void *this_, int value) {
+  return (void*)((QMetaEnum*)this_)->valueToKey(value);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:223
+// [4] int keysToValue(const char *, _Bool *)
+extern "C"
+int C_ZNK9QMetaEnum11keysToValueEPKcPb(void *this_, const char * keys, bool * ok) {
+  return (int)((QMetaEnum*)this_)->keysToValue(keys, ok);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:224
-// int keyToValue(const char *, _Bool *)
+// [8] QByteArray valueToKeys(int)
 extern "C"
-void C_ZNK9QMetaEnum10keyToValueEPKcPb(void *this_, const char * key, bool * ok) {
-  /*return*/ ((QMetaEnum*)this_)->keyToValue(key, ok);
+void* C_ZNK9QMetaEnum11valueToKeysEi(void *this_, int value) {
+  auto rv = ((QMetaEnum*)this_)->valueToKeys(value);
+return new QByteArray(rv);
 }
-// /usr/include/qt/QtCore/qmetaobject.h:225
-// const char * valueToKey(int)
-extern "C"
-void C_ZNK9QMetaEnum10valueToKeyEi(void *this_, int value) {
-  /*return*/ ((QMetaEnum*)this_)->valueToKey(value);
-}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:226
-// int keysToValue(const char *, _Bool *)
+// [8] const QMetaObject * enclosingMetaObject()
 extern "C"
-void C_ZNK9QMetaEnum11keysToValueEPKcPb(void *this_, const char * keys, bool * ok) {
-  /*return*/ ((QMetaEnum*)this_)->keysToValue(keys, ok);
+void* C_ZNK9QMetaEnum19enclosingMetaObjectEv(void *this_) {
+  return (void*)((QMetaEnum*)this_)->enclosingMetaObject();
 }
-// /usr/include/qt/QtCore/qmetaobject.h:227
-// QByteArray valueToKeys(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:228
+// [1] bool isValid()
 extern "C"
-void C_ZNK9QMetaEnum11valueToKeysEi(void *this_, int value) {
-  /*return*/ ((QMetaEnum*)this_)->valueToKeys(value);
-}
-// inline
-// /usr/include/qt/QtCore/qmetaobject.h:229
-// const QMetaObject * enclosingMetaObject()
-extern "C"
-void C_ZNK9QMetaEnum19enclosingMetaObjectEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->enclosingMetaObject();
-}
-// inline
-// /usr/include/qt/QtCore/qmetaobject.h:231
-// bool isValid()
-extern "C"
-void C_ZNK9QMetaEnum7isValidEv(void *this_) {
-  /*return*/ ((QMetaEnum*)this_)->isValid();
+bool C_ZNK9QMetaEnum7isValidEv(void *this_) {
+  return (bool)((QMetaEnum*)this_)->isValid();
 }
 //  main block end

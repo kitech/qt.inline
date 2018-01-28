@@ -3,123 +3,150 @@
 #include <qfontinfo.h>
 #include <QtGui>
 
+// QFontInfo is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qfontinfo.h:52
-// void QFontInfo(const class QFont &)
+
+class MyQFontInfo : public QFontInfo {
+public:
+MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:53
+// [-2] void QFontInfo(const class QFont &)
 extern "C"
 void* C_ZN9QFontInfoC1ERK5QFont(const QFont & arg0) {
-  return new QFontInfo(arg0);
+  (MyQFontInfo*)(0);
+  return  new MyQFontInfo(arg0);
 }
-// /usr/include/qt/QtGui/qfontinfo.h:54
-// void ~QFontInfo()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:55
+// [-2] void ~QFontInfo()
 extern "C"
 void C_ZN9QFontInfoD1Ev(void *this_) {
   delete (QFontInfo*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qfontinfo.h:58
-// void swap(class QFontInfo &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:59
+// [-2] void swap(class QFontInfo &)
 extern "C"
 void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo & other) {
   ((QFontInfo*)this_)->swap(other);
 }
-// /usr/include/qt/QtGui/qfontinfo.h:60
-// QString family()
-extern "C"
-void C_ZNK9QFontInfo6familyEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->family();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:61
-// QString styleName()
+// [8] QString family()
 extern "C"
-void C_ZNK9QFontInfo9styleNameEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->styleName();
+void* C_ZNK9QFontInfo6familyEv(void *this_) {
+  auto rv = ((QFontInfo*)this_)->family();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:62
-// int pixelSize()
+// [8] QString styleName()
 extern "C"
-void C_ZNK9QFontInfo9pixelSizeEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->pixelSize();
+void* C_ZNK9QFontInfo9styleNameEv(void *this_) {
+  auto rv = ((QFontInfo*)this_)->styleName();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:63
-// int pointSize()
+// [4] int pixelSize()
 extern "C"
-void C_ZNK9QFontInfo9pointSizeEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->pointSize();
+int C_ZNK9QFontInfo9pixelSizeEv(void *this_) {
+  return (int)((QFontInfo*)this_)->pixelSize();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:64
-// qreal pointSizeF()
+// [4] int pointSize()
 extern "C"
-void C_ZNK9QFontInfo10pointSizeFEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->pointSizeF();
+int C_ZNK9QFontInfo9pointSizeEv(void *this_) {
+  return (int)((QFontInfo*)this_)->pointSize();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:65
-// bool italic()
+// [8] qreal pointSizeF()
 extern "C"
-void C_ZNK9QFontInfo6italicEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->italic();
+qreal C_ZNK9QFontInfo10pointSizeFEv(void *this_) {
+  return (qreal)((QFontInfo*)this_)->pointSizeF();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:66
-// QFont::Style style()
+// [1] bool italic()
 extern "C"
-void C_ZNK9QFontInfo5styleEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->style();
+bool C_ZNK9QFontInfo6italicEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->italic();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:67
-// int weight()
+// [4] QFont::Style style()
 extern "C"
-void C_ZNK9QFontInfo6weightEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->weight();
+QFont::Style C_ZNK9QFontInfo5styleEv(void *this_) {
+  return (QFont::Style)((QFontInfo*)this_)->style();
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:68
-// bool bold()
+// [4] int weight()
 extern "C"
-void C_ZNK9QFontInfo4boldEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->bold();
+int C_ZNK9QFontInfo6weightEv(void *this_) {
+  return (int)((QFontInfo*)this_)->weight();
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:69
-// bool underline()
+// [1] bool bold()
 extern "C"
-void C_ZNK9QFontInfo9underlineEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->underline();
+bool C_ZNK9QFontInfo4boldEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->bold();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:70
-// bool overline()
+// [1] bool underline()
 extern "C"
-void C_ZNK9QFontInfo8overlineEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->overline();
+bool C_ZNK9QFontInfo9underlineEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->underline();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:71
-// bool strikeOut()
+// [1] bool overline()
 extern "C"
-void C_ZNK9QFontInfo9strikeOutEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->strikeOut();
+bool C_ZNK9QFontInfo8overlineEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->overline();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:72
-// bool fixedPitch()
+// [1] bool strikeOut()
 extern "C"
-void C_ZNK9QFontInfo10fixedPitchEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->fixedPitch();
+bool C_ZNK9QFontInfo9strikeOutEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->strikeOut();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:73
-// QFont::StyleHint styleHint()
+// [1] bool fixedPitch()
 extern "C"
-void C_ZNK9QFontInfo9styleHintEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->styleHint();
+bool C_ZNK9QFontInfo10fixedPitchEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->fixedPitch();
 }
-// /usr/include/qt/QtGui/qfontinfo.h:75
-// bool rawMode()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:74
+// [4] QFont::StyleHint styleHint()
 extern "C"
-void C_ZNK9QFontInfo7rawModeEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->rawMode();
+QFont::StyleHint C_ZNK9QFontInfo9styleHintEv(void *this_) {
+  return (QFont::StyleHint)((QFontInfo*)this_)->styleHint();
 }
-// /usr/include/qt/QtGui/qfontinfo.h:78
-// bool exactMatch()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:76
+// [1] bool rawMode()
 extern "C"
-void C_ZNK9QFontInfo10exactMatchEv(void *this_) {
-  /*return*/ ((QFontInfo*)this_)->exactMatch();
+bool C_ZNK9QFontInfo7rawModeEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->rawMode();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:79
+// [1] bool exactMatch()
+extern "C"
+bool C_ZNK9QFontInfo10exactMatchEv(void *this_) {
+  return (bool)((QFontInfo*)this_)->exactMatch();
 }
 //  main block end

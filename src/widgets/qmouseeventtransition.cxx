@@ -3,67 +3,105 @@
 #include <qmouseeventtransition.h>
 #include <QtWidgets>
 
+// QMouseEventTransition is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qmouseeventtransition.h:54
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:73
+// [-2] void onTransition(class QEvent *)
 extern "C"
-void C_ZNK21QMouseEventTransition10metaObjectEv(void *this_) {
-  /*return*/ ((QMouseEventTransition*)this_)->metaObject();
+void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent = 0;
+extern "C" void set_callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(void*cbfn)
+{ callback_ZN21QMouseEventTransition12onTransitionEP6QEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:74
+// [1] bool eventTest(class QEvent *)
+extern "C"
+void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent = 0;
+extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*cbfn)
+{ callback_ZN21QMouseEventTransition9eventTestEP6QEvent = cbfn; }
+
+class MyQMouseEventTransition : public QMouseEventTransition {
+public:
+MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceState) {}
+MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type, button, sourceState) {}
+// void onTransition(class QEvent *)
+// void onTransition(class QEvent *)
+virtual void onTransition(QEvent * event) {
+  if (callback_ZN21QMouseEventTransition12onTransitionEP6QEvent != 0) {
+  // callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(event);
+}}
+// bool eventTest(class QEvent *)
+// bool eventTest(class QEvent *)
+virtual bool eventTest(QEvent * event) {
+  if (callback_ZN21QMouseEventTransition9eventTestEP6QEvent != 0) {
+  // callback_ZN21QMouseEventTransition9eventTestEP6QEvent(event);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:54
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK21QMouseEventTransition10metaObjectEv(void *this_) {
+  return (void*)((QMouseEventTransition*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:58
-// void QMouseEventTransition(class QState *)
+// [-2] void QMouseEventTransition(class QState *)
 extern "C"
 void* C_ZN21QMouseEventTransitionC1EP6QState(QState * sourceState) {
-  return new QMouseEventTransition(sourceState);
+  (MyQMouseEventTransition*)(0);
+  return  new MyQMouseEventTransition(sourceState);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:59
-// void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
+// [-2] void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
 extern "C"
 void* C_ZN21QMouseEventTransitionC1EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) {
-  return new QMouseEventTransition(object, type, button, sourceState);
+  (MyQMouseEventTransition*)(0);
+  return  new MyQMouseEventTransition(object, type, button, sourceState);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:61
-// void ~QMouseEventTransition()
+// [-2] void ~QMouseEventTransition()
 extern "C"
 void C_ZN21QMouseEventTransitionD1Ev(void *this_) {
   delete (QMouseEventTransition*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:63
-// Qt::MouseButton button()
+// [4] Qt::MouseButton button()
 extern "C"
-void C_ZNK21QMouseEventTransition6buttonEv(void *this_) {
-  /*return*/ ((QMouseEventTransition*)this_)->button();
+Qt::MouseButton C_ZNK21QMouseEventTransition6buttonEv(void *this_) {
+  return (Qt::MouseButton)((QMouseEventTransition*)this_)->button();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:64
-// void setButton(Qt::MouseButton)
+// [-2] void setButton(Qt::MouseButton)
 extern "C"
 void C_ZN21QMouseEventTransition9setButtonEN2Qt11MouseButtonE(void *this_, Qt::MouseButton button) {
   ((QMouseEventTransition*)this_)->setButton(button);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:66
-// Qt::KeyboardModifiers modifierMask()
+// [4] Qt::KeyboardModifiers modifierMask()
 extern "C"
-void C_ZNK21QMouseEventTransition12modifierMaskEv(void *this_) {
-  /*return*/ ((QMouseEventTransition*)this_)->modifierMask();
+Qt::KeyboardModifiers C_ZNK21QMouseEventTransition12modifierMaskEv(void *this_) {
+  return (Qt::KeyboardModifiers)((QMouseEventTransition*)this_)->modifierMask();
 }
-// /usr/include/qt/QtWidgets/qmouseeventtransition.h:67
-// void setModifierMask(Qt::KeyboardModifiers)
-extern "C"
-void C_ZN21QMouseEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
-  ((QMouseEventTransition*)this_)->setModifierMask(modifiers);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:69
-// QPainterPath hitTestPath()
+// [8] QPainterPath hitTestPath()
 extern "C"
-void C_ZNK21QMouseEventTransition11hitTestPathEv(void *this_) {
-  /*return*/ ((QMouseEventTransition*)this_)->hitTestPath();
+void* C_ZNK21QMouseEventTransition11hitTestPathEv(void *this_) {
+  auto rv = ((QMouseEventTransition*)this_)->hitTestPath();
+return new QPainterPath(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:70
-// void setHitTestPath(const class QPainterPath &)
+// [-2] void setHitTestPath(const class QPainterPath &)
 extern "C"
 void C_ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath(void *this_, const QPainterPath & path) {
   ((QMouseEventTransition*)this_)->setHitTestPath(path);

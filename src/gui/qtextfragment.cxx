@@ -3,70 +3,73 @@
 #include <qtextobject.h>
 #include <QtGui>
 
+// QTextFragment is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:305
-// void QTextFragment(const class QTextDocumentPrivate *, int, int)
-extern "C"
-void* C_ZN13QTextFragmentC1EPK20QTextDocumentPrivateii(const QTextDocumentPrivate * priv, int f, int fe) {
-  return new QTextFragment(priv, f, fe);
-}
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:306
-// void QTextFragment()
+
+class MyQTextFragment : public QTextFragment {
+public:
+MyQTextFragment() : QTextFragment() {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:307
+// [-2] void QTextFragment()
 extern "C"
 void* C_ZN13QTextFragmentC1Ev() {
-  return new QTextFragment();
+  (MyQTextFragment*)(0);
+  return  new MyQTextFragment();
 }
-// inline
-// /usr/include/qt/QtGui/qtextobject.h:310
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:311
+// [1] bool isValid()
 extern "C"
-void C_ZNK13QTextFragment7isValidEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->isValid();
+bool C_ZNK13QTextFragment7isValidEv(void *this_) {
+  return (bool)((QTextFragment*)this_)->isValid();
 }
-// /usr/include/qt/QtGui/qtextobject.h:316
-// int position()
-extern "C"
-void C_ZNK13QTextFragment8positionEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->position();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:317
-// int length()
+// [4] int position()
 extern "C"
-void C_ZNK13QTextFragment6lengthEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->length();
+int C_ZNK13QTextFragment8positionEv(void *this_) {
+  return (int)((QTextFragment*)this_)->position();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:318
-// bool contains(int)
+// [4] int length()
 extern "C"
-void C_ZNK13QTextFragment8containsEi(void *this_, int position) {
-  /*return*/ ((QTextFragment*)this_)->contains(position);
+int C_ZNK13QTextFragment6lengthEv(void *this_) {
+  return (int)((QTextFragment*)this_)->length();
 }
-// /usr/include/qt/QtGui/qtextobject.h:320
-// QTextCharFormat charFormat()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:319
+// [1] bool contains(int)
 extern "C"
-void C_ZNK13QTextFragment10charFormatEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->charFormat();
+bool C_ZNK13QTextFragment8containsEi(void *this_, int position) {
+  return (bool)((QTextFragment*)this_)->contains(position);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:321
-// int charFormatIndex()
+// [16] QTextCharFormat charFormat()
 extern "C"
-void C_ZNK13QTextFragment15charFormatIndexEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->charFormatIndex();
+void* C_ZNK13QTextFragment10charFormatEv(void *this_) {
+  auto rv = ((QTextFragment*)this_)->charFormat();
+return new QTextCharFormat(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:322
-// QString text()
+// [4] int charFormatIndex()
 extern "C"
-void C_ZNK13QTextFragment4textEv(void *this_) {
-  /*return*/ ((QTextFragment*)this_)->text();
+int C_ZNK13QTextFragment15charFormatIndexEv(void *this_) {
+  return (int)((QTextFragment*)this_)->charFormatIndex();
 }
-// /usr/include/qt/QtGui/qtextobject.h:325
-// QList<QGlyphRun> glyphRuns(int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:323
+// [8] QString text()
 extern "C"
-void C_ZNK13QTextFragment9glyphRunsEii(void *this_, int from, int length) {
-  /*return*/ ((QTextFragment*)this_)->glyphRuns(from, length);
+void* C_ZNK13QTextFragment4textEv(void *this_) {
+  auto rv = ((QTextFragment*)this_)->text();
+return new QString(rv);
 }
 //  main block end

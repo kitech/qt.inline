@@ -3,99 +3,159 @@
 #include <qgraphicsitem.h>
 #include <QtWidgets>
 
+// QGraphicsSimpleTextItem is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:969
-// void QGraphicsSimpleTextItem(class QGraphicsItem *)
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:991
+// [1] bool supportsExtension(enum QGraphicsItem::Extension)
+extern "C"
+void* callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
+{ callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:992
+// [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+extern "C"
+void* callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+extern "C" void set_callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
+{ callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:993
+// [16] QVariant extension(const class QVariant &)
+extern "C"
+void* callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant = 0;
+extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(void*cbfn)
+{ callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant = cbfn; }
+
+class MyQGraphicsSimpleTextItem : public QGraphicsSimpleTextItem {
+public:
+MyQGraphicsSimpleTextItem(QGraphicsItem * parent) : QGraphicsSimpleTextItem(parent) {}
+MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsSimpleTextItem(text, parent) {}
+// bool supportsExtension(enum QGraphicsItem::Extension)
+// bool supportsExtension(enum QGraphicsItem::Extension)
+virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+  if (callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+  // callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+}}
+// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
+virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+  if (callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+  // callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+}}
+// QVariant extension(const class QVariant &)
+// QVariant extension(const class QVariant &)
+virtual QVariant extension(const QVariant & variant) {
+  if (callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant != 0) {
+  // callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(variant);
+}}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:968
+// [-2] void QGraphicsSimpleTextItem(class QGraphicsItem *)
 extern "C"
 void* C_ZN23QGraphicsSimpleTextItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  return new QGraphicsSimpleTextItem(parent);
+  (MyQGraphicsSimpleTextItem*)(0);
+  return  new MyQGraphicsSimpleTextItem(parent);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:970
-// void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:969
+// [-2] void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
 extern "C"
 void* C_ZN23QGraphicsSimpleTextItemC1ERK7QStringP13QGraphicsItem(const QString & text, QGraphicsItem * parent) {
-  return new QGraphicsSimpleTextItem(text, parent);
+  (MyQGraphicsSimpleTextItem*)(0);
+  return  new MyQGraphicsSimpleTextItem(text, parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:971
-// void ~QGraphicsSimpleTextItem()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:970
+// [-2] void ~QGraphicsSimpleTextItem()
 extern "C"
 void C_ZN23QGraphicsSimpleTextItemD1Ev(void *this_) {
   delete (QGraphicsSimpleTextItem*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:973
-// void setText(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:972
+// [-2] void setText(const class QString &)
 extern "C"
 void C_ZN23QGraphicsSimpleTextItem7setTextERK7QString(void *this_, const QString & text) {
   ((QGraphicsSimpleTextItem*)this_)->setText(text);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:974
-// QString text()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:973
+// [8] QString text()
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem4textEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->text();
+void* C_ZNK23QGraphicsSimpleTextItem4textEv(void *this_) {
+  auto rv = ((QGraphicsSimpleTextItem*)this_)->text();
+return new QString(rv);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:976
-// void setFont(const class QFont &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:975
+// [-2] void setFont(const class QFont &)
 extern "C"
 void C_ZN23QGraphicsSimpleTextItem7setFontERK5QFont(void *this_, const QFont & font) {
   ((QGraphicsSimpleTextItem*)this_)->setFont(font);
 }
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:977
-// QFont font()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:976
+// [16] QFont font()
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem4fontEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->font();
+void* C_ZNK23QGraphicsSimpleTextItem4fontEv(void *this_) {
+  auto rv = ((QGraphicsSimpleTextItem*)this_)->font();
+return new QFont(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:978
+// [32] QRectF boundingRect()
+extern "C"
+void* C_ZNK23QGraphicsSimpleTextItem12boundingRectEv(void *this_) {
+  auto rv = ((QGraphicsSimpleTextItem*)this_)->boundingRect();
+return new QRectF(rv);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:979
-// QRectF boundingRect()
+// [8] QPainterPath shape()
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem12boundingRectEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->boundingRect();
+void* C_ZNK23QGraphicsSimpleTextItem5shapeEv(void *this_) {
+  auto rv = ((QGraphicsSimpleTextItem*)this_)->shape();
+return new QPainterPath(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:980
-// QPainterPath shape()
+// [1] bool contains(const class QPointF &)
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem5shapeEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->shape();
+bool C_ZNK23QGraphicsSimpleTextItem8containsERK7QPointF(void *this_, const QPointF & point) {
+  return (bool)((QGraphicsSimpleTextItem*)this_)->contains(point);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:981
-// bool contains(const class QPointF &)
-extern "C"
-void C_ZNK23QGraphicsSimpleTextItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->contains(point);
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:983
-// void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:982
+// [-2] void paint(class QPainter *, const class QStyleOptionGraphicsItem *, class QWidget *)
 extern "C"
 void C_ZN23QGraphicsSimpleTextItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
   ((QGraphicsSimpleTextItem*)this_)->paint(painter, option, widget);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:984
+// [1] bool isObscuredBy(const class QGraphicsItem *)
+extern "C"
+bool C_ZNK23QGraphicsSimpleTextItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
+  return (bool)((QGraphicsSimpleTextItem*)this_)->isObscuredBy(item);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:985
-// bool isObscuredBy(const class QGraphicsItem *)
+// [8] QPainterPath opaqueArea()
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->isObscuredBy(item);
+void* C_ZNK23QGraphicsSimpleTextItem10opaqueAreaEv(void *this_) {
+  auto rv = ((QGraphicsSimpleTextItem*)this_)->opaqueArea();
+return new QPainterPath(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:986
-// QPainterPath opaqueArea()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:988
+// [4] int type()
 extern "C"
-void C_ZNK23QGraphicsSimpleTextItem10opaqueAreaEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->opaqueArea();
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:989
-// int type()
-extern "C"
-void C_ZNK23QGraphicsSimpleTextItem4typeEv(void *this_) {
-  /*return*/ ((QGraphicsSimpleTextItem*)this_)->type();
+int C_ZNK23QGraphicsSimpleTextItem4typeEv(void *this_) {
+  return (int)((QGraphicsSimpleTextItem*)this_)->type();
 }
 //  main block end

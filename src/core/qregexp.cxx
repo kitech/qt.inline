@@ -3,177 +3,205 @@
 #include <qregexp.h>
 #include <QtCore>
 
+// QRegExp is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQRegExp : public QRegExp {
+public:
+MyQRegExp() : QRegExp() {}
+MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) : QRegExp(pattern, cs, syntax) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:70
-// void QRegExp()
+// [-2] void QRegExp()
 extern "C"
 void* C_ZN7QRegExpC1Ev() {
-  return new QRegExp();
+  (MyQRegExp*)(0);
+  return  new MyQRegExp();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:71
-// void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
+// [-2] void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
 extern "C"
 void* C_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
-  return new QRegExp(pattern, cs, syntax);
+  (MyQRegExp*)(0);
+  return  new MyQRegExp(pattern, cs, syntax);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:74
-// void ~QRegExp()
+// [-2] void ~QRegExp()
 extern "C"
 void C_ZN7QRegExpD1Ev(void *this_) {
   delete (QRegExp*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:79
-// void swap(class QRegExp &)
+// [-2] void swap(class QRegExp &)
 extern "C"
 void C_ZN7QRegExp4swapERS_(void *this_, QRegExp & other) {
   ((QRegExp*)this_)->swap(other);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:84
-// bool isEmpty()
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK7QRegExp7isEmptyEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->isEmpty();
+bool C_ZNK7QRegExp7isEmptyEv(void *this_) {
+  return (bool)((QRegExp*)this_)->isEmpty();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:85
-// bool isValid()
+// [1] bool isValid()
 extern "C"
-void C_ZNK7QRegExp7isValidEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->isValid();
+bool C_ZNK7QRegExp7isValidEv(void *this_) {
+  return (bool)((QRegExp*)this_)->isValid();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:86
-// QString pattern()
+// [8] QString pattern()
 extern "C"
-void C_ZNK7QRegExp7patternEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->pattern();
+void* C_ZNK7QRegExp7patternEv(void *this_) {
+  auto rv = ((QRegExp*)this_)->pattern();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:87
-// void setPattern(const class QString &)
+// [-2] void setPattern(const class QString &)
 extern "C"
 void C_ZN7QRegExp10setPatternERK7QString(void *this_, const QString & pattern) {
   ((QRegExp*)this_)->setPattern(pattern);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:88
-// Qt::CaseSensitivity caseSensitivity()
+// [4] Qt::CaseSensitivity caseSensitivity()
 extern "C"
-void C_ZNK7QRegExp15caseSensitivityEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->caseSensitivity();
+Qt::CaseSensitivity C_ZNK7QRegExp15caseSensitivityEv(void *this_) {
+  return (Qt::CaseSensitivity)((QRegExp*)this_)->caseSensitivity();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:89
-// void setCaseSensitivity(Qt::CaseSensitivity)
+// [-2] void setCaseSensitivity(Qt::CaseSensitivity)
 extern "C"
 void C_ZN7QRegExp18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
   ((QRegExp*)this_)->setCaseSensitivity(cs);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:90
-// QRegExp::PatternSyntax patternSyntax()
+// [4] QRegExp::PatternSyntax patternSyntax()
 extern "C"
-void C_ZNK7QRegExp13patternSyntaxEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->patternSyntax();
+QRegExp::PatternSyntax C_ZNK7QRegExp13patternSyntaxEv(void *this_) {
+  return (QRegExp::PatternSyntax)((QRegExp*)this_)->patternSyntax();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:91
-// void setPatternSyntax(enum QRegExp::PatternSyntax)
+// [-2] void setPatternSyntax(enum QRegExp::PatternSyntax)
 extern "C"
 void C_ZN7QRegExp16setPatternSyntaxENS_13PatternSyntaxE(void *this_, QRegExp::PatternSyntax syntax) {
   ((QRegExp*)this_)->setPatternSyntax(syntax);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:93
-// bool isMinimal()
+// [1] bool isMinimal()
 extern "C"
-void C_ZNK7QRegExp9isMinimalEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->isMinimal();
+bool C_ZNK7QRegExp9isMinimalEv(void *this_) {
+  return (bool)((QRegExp*)this_)->isMinimal();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:94
-// void setMinimal(_Bool)
+// [-2] void setMinimal(_Bool)
 extern "C"
 void C_ZN7QRegExp10setMinimalEb(void *this_, bool minimal) {
   ((QRegExp*)this_)->setMinimal(minimal);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:96
-// bool exactMatch(const class QString &)
+// [1] bool exactMatch(const class QString &)
 extern "C"
-void C_ZNK7QRegExp10exactMatchERK7QString(void *this_, const QString & str) {
-  /*return*/ ((QRegExp*)this_)->exactMatch(str);
+bool C_ZNK7QRegExp10exactMatchERK7QString(void *this_, const QString & str) {
+  return (bool)((QRegExp*)this_)->exactMatch(str);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:98
-// int indexIn(const class QString &, int, enum QRegExp::CaretMode)
+// [4] int indexIn(const class QString &, int, enum QRegExp::CaretMode)
 extern "C"
-void C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
-  /*return*/ ((QRegExp*)this_)->indexIn(str, offset, caretMode);
+int C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
+  return (int)((QRegExp*)this_)->indexIn(str, offset, caretMode);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:99
-// int lastIndexIn(const class QString &, int, enum QRegExp::CaretMode)
+// [4] int lastIndexIn(const class QString &, int, enum QRegExp::CaretMode)
 extern "C"
-void C_ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
-  /*return*/ ((QRegExp*)this_)->lastIndexIn(str, offset, caretMode);
+int C_ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
+  return (int)((QRegExp*)this_)->lastIndexIn(str, offset, caretMode);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:100
-// int matchedLength()
+// [4] int matchedLength()
 extern "C"
-void C_ZNK7QRegExp13matchedLengthEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->matchedLength();
+int C_ZNK7QRegExp13matchedLengthEv(void *this_) {
+  return (int)((QRegExp*)this_)->matchedLength();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:102
-// int captureCount()
+// [4] int captureCount()
 extern "C"
-void C_ZNK7QRegExp12captureCountEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->captureCount();
+int C_ZNK7QRegExp12captureCountEv(void *this_) {
+  return (int)((QRegExp*)this_)->captureCount();
 }
-// /usr/include/qt/QtCore/qregexp.h:103
-// QStringList capturedTexts()
-extern "C"
-void C_ZNK7QRegExp13capturedTextsEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->capturedTexts();
-}
-// /usr/include/qt/QtCore/qregexp.h:104
-// QStringList capturedTexts()
-extern "C"
-void C_ZN7QRegExp13capturedTextsEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->capturedTexts();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:105
-// QString cap(int)
+// [8] QString cap(int)
 extern "C"
-void C_ZNK7QRegExp3capEi(void *this_, int nth) {
-  /*return*/ ((QRegExp*)this_)->cap(nth);
+void* C_ZNK7QRegExp3capEi(void *this_, int nth) {
+  auto rv = ((QRegExp*)this_)->cap(nth);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:106
-// QString cap(int)
+// [8] QString cap(int)
 extern "C"
-void C_ZN7QRegExp3capEi(void *this_, int nth) {
-  /*return*/ ((QRegExp*)this_)->cap(nth);
+void* C_ZN7QRegExp3capEi(void *this_, int nth) {
+  auto rv = ((QRegExp*)this_)->cap(nth);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:107
-// int pos(int)
+// [4] int pos(int)
 extern "C"
-void C_ZNK7QRegExp3posEi(void *this_, int nth) {
-  /*return*/ ((QRegExp*)this_)->pos(nth);
+int C_ZNK7QRegExp3posEi(void *this_, int nth) {
+  return (int)((QRegExp*)this_)->pos(nth);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:108
-// int pos(int)
+// [4] int pos(int)
 extern "C"
-void C_ZN7QRegExp3posEi(void *this_, int nth) {
-  /*return*/ ((QRegExp*)this_)->pos(nth);
+int C_ZN7QRegExp3posEi(void *this_, int nth) {
+  return (int)((QRegExp*)this_)->pos(nth);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:109
-// QString errorString()
+// [8] QString errorString()
 extern "C"
-void C_ZNK7QRegExp11errorStringEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->errorString();
+void* C_ZNK7QRegExp11errorStringEv(void *this_) {
+  auto rv = ((QRegExp*)this_)->errorString();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:110
-// QString errorString()
+// [8] QString errorString()
 extern "C"
-void C_ZN7QRegExp11errorStringEv(void *this_) {
-  /*return*/ ((QRegExp*)this_)->errorString();
+void* C_ZN7QRegExp11errorStringEv(void *this_) {
+  auto rv = ((QRegExp*)this_)->errorString();
+return new QString(rv);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:113
-// QString escape(const class QString &)
+// [8] QString escape(const class QString &)
 extern "C"
-void C_ZN7QRegExp6escapeERK7QString(const QString & str) {
-  /*return*/ QRegExp::escape(str);
+void* C_ZN7QRegExp6escapeERK7QString(const QString & str) {
+  auto rv = QRegExp::escape(str);
+return new QString(rv);
 }
 //  main block end

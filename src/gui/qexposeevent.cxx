@@ -3,27 +3,37 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QExposeEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:424
-// void QExposeEvent(const class QRegion &)
+
+class MyQExposeEvent : public QExposeEvent {
+public:
+MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:434
+// [-2] void QExposeEvent(const class QRegion &)
 extern "C"
 void* C_ZN12QExposeEventC1ERK7QRegion(const QRegion & rgn) {
-  return new QExposeEvent(rgn);
+  (MyQExposeEvent*)(0);
+  return  new MyQExposeEvent(rgn);
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:425
-// void ~QExposeEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:435
+// [-2] void ~QExposeEvent()
 extern "C"
 void C_ZN12QExposeEventD1Ev(void *this_) {
   delete (QExposeEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:427
-// const QRegion & region()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:437
+// [8] const QRegion & region()
 extern "C"
-void C_ZNK12QExposeEvent6regionEv(void *this_) {
-  /*return*/ ((QExposeEvent*)this_)->region();
+void* C_ZNK12QExposeEvent6regionEv(void *this_) {
+  auto& rv = ((QExposeEvent*)this_)->region();
+return new QRegion(rv);
 }
 //  main block end

@@ -3,28 +3,36 @@
 #include <qobjectdefs.h>
 #include <QtCore>
 
+// QGenericArgument is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qobjectdefs.h:306
-// void QGenericArgument(const char *, const void *)
+
+class MyQGenericArgument : public QGenericArgument {
+public:
+MyQGenericArgument(const char * aName, const void * aData) : QGenericArgument(aName, aData) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectdefs.h:297
+// [-2] void QGenericArgument(const char *, const void *)
 extern "C"
 void* C_ZN16QGenericArgumentC1EPKcPKv(const char * aName, const void * aData) {
-  return new QGenericArgument(aName, aData);
+  (MyQGenericArgument*)(0);
+  return  new MyQGenericArgument(aName, aData);
 }
-// inline
-// /usr/include/qt/QtCore/qobjectdefs.h:308
-// void * data()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectdefs.h:299
+// [8] void * data()
 extern "C"
-void C_ZNK16QGenericArgument4dataEv(void *this_) {
-  /*return*/ ((QGenericArgument*)this_)->data();
+void* C_ZNK16QGenericArgument4dataEv(void *this_) {
+  return (void*)((QGenericArgument*)this_)->data();
 }
-// inline
-// /usr/include/qt/QtCore/qobjectdefs.h:309
-// const char * name()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectdefs.h:300
+// [8] const char * name()
 extern "C"
-void C_ZNK16QGenericArgument4nameEv(void *this_) {
-  /*return*/ ((QGenericArgument*)this_)->name();
+void* C_ZNK16QGenericArgument4nameEv(void *this_) {
+  return (void*)((QGenericArgument*)this_)->name();
 }
 //  main block end

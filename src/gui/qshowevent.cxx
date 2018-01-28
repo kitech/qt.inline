@@ -3,18 +3,27 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QShowEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:483
-// void QShowEvent()
+
+class MyQShowEvent : public QShowEvent {
+public:
+MyQShowEvent() : QShowEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:493
+// [-2] void QShowEvent()
 extern "C"
 void* C_ZN10QShowEventC1Ev() {
-  return new QShowEvent();
+  (MyQShowEvent*)(0);
+  return  new MyQShowEvent();
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:484
-// void ~QShowEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:494
+// [-2] void ~QShowEvent()
 extern "C"
 void C_ZN10QShowEventD1Ev(void *this_) {
   delete (QShowEvent*)(this_);

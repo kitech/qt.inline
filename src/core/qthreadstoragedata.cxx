@@ -3,30 +3,39 @@
 #include <qthreadstorage.h>
 #include <QtCore>
 
+// QThreadStorageData is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQThreadStorageData : public QThreadStorageData {
+public:
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:54
-// void ~QThreadStorageData()
+// [-2] void ~QThreadStorageData()
 extern "C"
 void C_ZN18QThreadStorageDataD1Ev(void *this_) {
   delete (QThreadStorageData*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:56
-// void ** get()
+// [8] void ** get()
 extern "C"
-void C_ZNK18QThreadStorageData3getEv(void *this_) {
-  /*return*/ ((QThreadStorageData*)this_)->get();
+void* C_ZNK18QThreadStorageData3getEv(void *this_) {
+  return (void*)((QThreadStorageData*)this_)->get();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:57
-// void ** set(void *)
+// [8] void ** set(void *)
 extern "C"
-void C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
-  /*return*/ ((QThreadStorageData*)this_)->set(p);
+void* C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
+  return (void*)((QThreadStorageData*)this_)->set(p);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:59
-// void finish(void **)
+// [-2] void finish(void **)
 extern "C"
 void C_ZN18QThreadStorageData6finishEPPv(void ** arg0) {
   QThreadStorageData::finish(arg0);

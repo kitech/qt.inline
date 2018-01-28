@@ -3,143 +3,180 @@
 #include <qstorageinfo.h>
 #include <QtCore>
 
+// QStorageInfo is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qstorageinfo.h:56
-// void QStorageInfo()
+
+class MyQStorageInfo : public QStorageInfo {
+public:
+MyQStorageInfo() : QStorageInfo() {}
+MyQStorageInfo(const QString & path) : QStorageInfo(path) {}
+MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:58
+// [-2] void QStorageInfo()
 extern "C"
 void* C_ZN12QStorageInfoC1Ev() {
-  return new QStorageInfo();
+  (MyQStorageInfo*)(0);
+  return  new MyQStorageInfo();
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:57
-// void QStorageInfo(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:59
+// [-2] void QStorageInfo(const class QString &)
 extern "C"
 void* C_ZN12QStorageInfoC1ERK7QString(const QString & path) {
-  return new QStorageInfo(path);
+  (MyQStorageInfo*)(0);
+  return  new MyQStorageInfo(path);
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:58
-// void QStorageInfo(const class QDir &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:60
+// [-2] void QStorageInfo(const class QDir &)
 extern "C"
 void* C_ZN12QStorageInfoC1ERK4QDir(const QDir & dir) {
-  return new QStorageInfo(dir);
+  (MyQStorageInfo*)(0);
+  return  new MyQStorageInfo(dir);
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:60
-// void ~QStorageInfo()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:62
+// [-2] void ~QStorageInfo()
 extern "C"
 void C_ZN12QStorageInfoD1Ev(void *this_) {
   delete (QStorageInfo*)(this_);
 }
-// inline
-// /usr/include/qt/QtCore/qstorageinfo.h:67
-// void swap(class QStorageInfo &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:69
+// [-2] void swap(class QStorageInfo &)
 extern "C"
 void C_ZN12QStorageInfo4swapERS_(void *this_, QStorageInfo & other) {
   ((QStorageInfo*)this_)->swap(other);
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:70
-// void setPath(const class QString &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:72
+// [-2] void setPath(const class QString &)
 extern "C"
 void C_ZN12QStorageInfo7setPathERK7QString(void *this_, const QString & path) {
   ((QStorageInfo*)this_)->setPath(path);
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:72
-// QString rootPath()
-extern "C"
-void C_ZNK12QStorageInfo8rootPathEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->rootPath();
-}
-// /usr/include/qt/QtCore/qstorageinfo.h:73
-// QByteArray device()
-extern "C"
-void C_ZNK12QStorageInfo6deviceEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->device();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:74
-// QByteArray fileSystemType()
+// [8] QString rootPath()
 extern "C"
-void C_ZNK12QStorageInfo14fileSystemTypeEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->fileSystemType();
+void* C_ZNK12QStorageInfo8rootPathEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->rootPath();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:75
-// QString name()
+// [8] QByteArray device()
 extern "C"
-void C_ZNK12QStorageInfo4nameEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->name();
+void* C_ZNK12QStorageInfo6deviceEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->device();
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:76
-// QString displayName()
+// [8] QByteArray subvolume()
 extern "C"
-void C_ZNK12QStorageInfo11displayNameEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->displayName();
+void* C_ZNK12QStorageInfo9subvolumeEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->subvolume();
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:77
+// [8] QByteArray fileSystemType()
+extern "C"
+void* C_ZNK12QStorageInfo14fileSystemTypeEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->fileSystemType();
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:78
-// qint64 bytesTotal()
+// [8] QString name()
 extern "C"
-void C_ZNK12QStorageInfo10bytesTotalEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->bytesTotal();
+void* C_ZNK12QStorageInfo4nameEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->name();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:79
-// qint64 bytesFree()
+// [8] QString displayName()
 extern "C"
-void C_ZNK12QStorageInfo9bytesFreeEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->bytesFree();
+void* C_ZNK12QStorageInfo11displayNameEv(void *this_) {
+  auto rv = ((QStorageInfo*)this_)->displayName();
+return new QString(rv);
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:80
-// qint64 bytesAvailable()
-extern "C"
-void C_ZNK12QStorageInfo14bytesAvailableEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->bytesAvailable();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:81
-// int blockSize()
+// [8] qint64 bytesTotal()
 extern "C"
-void C_ZNK12QStorageInfo9blockSizeEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->blockSize();
+qint64 C_ZNK12QStorageInfo10bytesTotalEv(void *this_) {
+  return (qint64)((QStorageInfo*)this_)->bytesTotal();
 }
-// inline
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:82
+// [8] qint64 bytesFree()
+extern "C"
+qint64 C_ZNK12QStorageInfo9bytesFreeEv(void *this_) {
+  return (qint64)((QStorageInfo*)this_)->bytesFree();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:83
-// bool isRoot()
+// [8] qint64 bytesAvailable()
 extern "C"
-void C_ZNK12QStorageInfo6isRootEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->isRoot();
+qint64 C_ZNK12QStorageInfo14bytesAvailableEv(void *this_) {
+  return (qint64)((QStorageInfo*)this_)->bytesAvailable();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:84
-// bool isReadOnly()
+// [4] int blockSize()
 extern "C"
-void C_ZNK12QStorageInfo10isReadOnlyEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->isReadOnly();
+int C_ZNK12QStorageInfo9blockSizeEv(void *this_) {
+  return (int)((QStorageInfo*)this_)->blockSize();
 }
-// /usr/include/qt/QtCore/qstorageinfo.h:85
-// bool isReady()
-extern "C"
-void C_ZNK12QStorageInfo7isReadyEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->isReady();
-}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:86
-// bool isValid()
+// [1] bool isRoot()
 extern "C"
-void C_ZNK12QStorageInfo7isValidEv(void *this_) {
-  /*return*/ ((QStorageInfo*)this_)->isValid();
+bool C_ZNK12QStorageInfo6isRootEv(void *this_) {
+  return (bool)((QStorageInfo*)this_)->isRoot();
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:87
+// [1] bool isReadOnly()
+extern "C"
+bool C_ZNK12QStorageInfo10isReadOnlyEv(void *this_) {
+  return (bool)((QStorageInfo*)this_)->isReadOnly();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:88
-// void refresh()
+// [1] bool isReady()
+extern "C"
+bool C_ZNK12QStorageInfo7isReadyEv(void *this_) {
+  return (bool)((QStorageInfo*)this_)->isReady();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:89
+// [1] bool isValid()
+extern "C"
+bool C_ZNK12QStorageInfo7isValidEv(void *this_) {
+  return (bool)((QStorageInfo*)this_)->isValid();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:91
+// [-2] void refresh()
 extern "C"
 void C_ZN12QStorageInfo7refreshEv(void *this_) {
   ((QStorageInfo*)this_)->refresh();
 }
-// static
-// /usr/include/qt/QtCore/qstorageinfo.h:90
-// QList<QStorageInfo> mountedVolumes()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:94
+// [8] QStorageInfo root()
 extern "C"
-void C_ZN12QStorageInfo14mountedVolumesEv() {
-  /*return*/ QStorageInfo::mountedVolumes();
-}
-// static
-// /usr/include/qt/QtCore/qstorageinfo.h:91
-// QStorageInfo root()
-extern "C"
-void C_ZN12QStorageInfo4rootEv() {
-  /*return*/ QStorageInfo::root();
+void* C_ZN12QStorageInfo4rootEv() {
+  auto rv = QStorageInfo::root();
+return new QStorageInfo(rv);
 }
 //  main block end

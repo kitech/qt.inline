@@ -3,67 +3,74 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QInputMethodEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:544
-// void QInputMethodEvent()
+
+class MyQInputMethodEvent : public QInputMethodEvent {
+public:
+MyQInputMethodEvent() : QInputMethodEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:555
+// [-2] void QInputMethodEvent()
 extern "C"
 void* C_ZN17QInputMethodEventC1Ev() {
-  return new QInputMethodEvent();
+  (MyQInputMethodEvent*)(0);
+  return  new MyQInputMethodEvent();
 }
-// /usr/include/qt/QtGui/qevent.h:545
-// void QInputMethodEvent(const class QString &, const QList<class QInputMethodEvent::Attribute> &)
-extern "C"
-void* C_ZN17QInputMethodEventC1ERK7QStringRK5QListINS_9AttributeEE(const QString & preeditText, const QList<QInputMethodEvent::Attribute> & attributes) {
-  return new QInputMethodEvent(preeditText, attributes);
-}
-// virtual
-// /usr/include/qt/QtGui/qevent.h:546
-// void ~QInputMethodEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:557
+// [-2] void ~QInputMethodEvent()
 extern "C"
 void C_ZN17QInputMethodEventD1Ev(void *this_) {
   delete (QInputMethodEvent*)(this_);
 }
-// /usr/include/qt/QtGui/qevent.h:548
-// void setCommitString(const class QString &, int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:559
+// [-2] void setCommitString(const class QString &, int, int)
 extern "C"
 void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, const QString & commitString, int replaceFrom, int replaceLength) {
   ((QInputMethodEvent*)this_)->setCommitString(commitString, replaceFrom, replaceLength);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:549
-// const QList<QInputMethodEvent::Attribute> & attributes()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:560
+// [8] const QList<QInputMethodEvent::Attribute> & attributes()
 extern "C"
-void C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
-  /*return*/ ((QInputMethodEvent*)this_)->attributes();
+void* C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
+  auto& rv = ((QInputMethodEvent*)this_)->attributes();
+return new QList<QInputMethodEvent::Attribute>(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:550
-// const QString & preeditString()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:561
+// [8] const QString & preeditString()
 extern "C"
-void C_ZNK17QInputMethodEvent13preeditStringEv(void *this_) {
-  /*return*/ ((QInputMethodEvent*)this_)->preeditString();
+void* C_ZNK17QInputMethodEvent13preeditStringEv(void *this_) {
+  auto& rv = ((QInputMethodEvent*)this_)->preeditString();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:552
-// const QString & commitString()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:563
+// [8] const QString & commitString()
 extern "C"
-void C_ZNK17QInputMethodEvent12commitStringEv(void *this_) {
-  /*return*/ ((QInputMethodEvent*)this_)->commitString();
+void* C_ZNK17QInputMethodEvent12commitStringEv(void *this_) {
+  auto& rv = ((QInputMethodEvent*)this_)->commitString();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:553
-// int replacementStart()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:564
+// [4] int replacementStart()
 extern "C"
-void C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
-  /*return*/ ((QInputMethodEvent*)this_)->replacementStart();
+int C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
+  return (int)((QInputMethodEvent*)this_)->replacementStart();
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:554
-// int replacementLength()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:565
+// [4] int replacementLength()
 extern "C"
-void C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
-  /*return*/ ((QInputMethodEvent*)this_)->replacementLength();
+int C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
+  return (int)((QInputMethodEvent*)this_)->replacementLength();
 }
 //  main block end

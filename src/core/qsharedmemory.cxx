@@ -3,129 +3,160 @@
 #include <qsharedmemory.h>
 #include <QtCore>
 
+// QSharedMemory is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
+
+class MyQSharedMemory : public QSharedMemory {
+public:
+MyQSharedMemory(QObject * parent) : QSharedMemory(parent) {}
+MyQSharedMemory(const QString & key, QObject * parent) : QSharedMemory(key, parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:54
-// const QMetaObject * metaObject()
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK13QSharedMemory10metaObjectEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->metaObject();
+void* C_ZNK13QSharedMemory10metaObjectEv(void *this_) {
+  return (void*)((QSharedMemory*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:77
-// void QSharedMemory(class QObject *)
+// [-2] void QSharedMemory(class QObject *)
 extern "C"
 void* C_ZN13QSharedMemoryC1EP7QObject(QObject * parent) {
-  return new QSharedMemory(parent);
+  (MyQSharedMemory*)(0);
+  return  new MyQSharedMemory(parent);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:78
-// void QSharedMemory(const class QString &, class QObject *)
+// [-2] void QSharedMemory(const class QString &, class QObject *)
 extern "C"
 void* C_ZN13QSharedMemoryC1ERK7QStringP7QObject(const QString & key, QObject * parent) {
-  return new QSharedMemory(key, parent);
+  (MyQSharedMemory*)(0);
+  return  new MyQSharedMemory(key, parent);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:79
-// void ~QSharedMemory()
+// [-2] void ~QSharedMemory()
 extern "C"
 void C_ZN13QSharedMemoryD1Ev(void *this_) {
   delete (QSharedMemory*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:81
-// void setKey(const class QString &)
+// [-2] void setKey(const class QString &)
 extern "C"
 void C_ZN13QSharedMemory6setKeyERK7QString(void *this_, const QString & key) {
   ((QSharedMemory*)this_)->setKey(key);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:82
-// QString key()
+// [8] QString key()
 extern "C"
-void C_ZNK13QSharedMemory3keyEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->key();
+void* C_ZNK13QSharedMemory3keyEv(void *this_) {
+  auto rv = ((QSharedMemory*)this_)->key();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:83
-// void setNativeKey(const class QString &)
+// [-2] void setNativeKey(const class QString &)
 extern "C"
 void C_ZN13QSharedMemory12setNativeKeyERK7QString(void *this_, const QString & key) {
   ((QSharedMemory*)this_)->setNativeKey(key);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:84
-// QString nativeKey()
+// [8] QString nativeKey()
 extern "C"
-void C_ZNK13QSharedMemory9nativeKeyEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->nativeKey();
+void* C_ZNK13QSharedMemory9nativeKeyEv(void *this_) {
+  auto rv = ((QSharedMemory*)this_)->nativeKey();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:86
-// bool create(int, enum QSharedMemory::AccessMode)
+// [1] bool create(int, enum QSharedMemory::AccessMode)
 extern "C"
-void C_ZN13QSharedMemory6createEiNS_10AccessModeE(void *this_, int size, QSharedMemory::AccessMode mode) {
-  /*return*/ ((QSharedMemory*)this_)->create(size, mode);
+bool C_ZN13QSharedMemory6createEiNS_10AccessModeE(void *this_, int size, QSharedMemory::AccessMode mode) {
+  return (bool)((QSharedMemory*)this_)->create(size, mode);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:87
-// int size()
+// [4] int size()
 extern "C"
-void C_ZNK13QSharedMemory4sizeEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->size();
+int C_ZNK13QSharedMemory4sizeEv(void *this_) {
+  return (int)((QSharedMemory*)this_)->size();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:89
-// bool attach(enum QSharedMemory::AccessMode)
+// [1] bool attach(enum QSharedMemory::AccessMode)
 extern "C"
-void C_ZN13QSharedMemory6attachENS_10AccessModeE(void *this_, QSharedMemory::AccessMode mode) {
-  /*return*/ ((QSharedMemory*)this_)->attach(mode);
+bool C_ZN13QSharedMemory6attachENS_10AccessModeE(void *this_, QSharedMemory::AccessMode mode) {
+  return (bool)((QSharedMemory*)this_)->attach(mode);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:90
-// bool isAttached()
+// [1] bool isAttached()
 extern "C"
-void C_ZNK13QSharedMemory10isAttachedEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->isAttached();
+bool C_ZNK13QSharedMemory10isAttachedEv(void *this_) {
+  return (bool)((QSharedMemory*)this_)->isAttached();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:91
-// bool detach()
+// [1] bool detach()
 extern "C"
-void C_ZN13QSharedMemory6detachEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->detach();
+bool C_ZN13QSharedMemory6detachEv(void *this_) {
+  return (bool)((QSharedMemory*)this_)->detach();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:93
-// void * data()
+// [8] void * data()
 extern "C"
-void C_ZN13QSharedMemory4dataEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->data();
+void* C_ZN13QSharedMemory4dataEv(void *this_) {
+  return (void*)((QSharedMemory*)this_)->data();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:94
-// const void * constData()
+// [8] const void * constData()
 extern "C"
-void C_ZNK13QSharedMemory9constDataEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->constData();
+void* C_ZNK13QSharedMemory9constDataEv(void *this_) {
+  return (void*)((QSharedMemory*)this_)->constData();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:95
-// const void * data()
+// [8] const void * data()
 extern "C"
-void C_ZNK13QSharedMemory4dataEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->data();
+void* C_ZNK13QSharedMemory4dataEv(void *this_) {
+  return (void*)((QSharedMemory*)this_)->data();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:98
-// bool lock()
+// [1] bool lock()
 extern "C"
-void C_ZN13QSharedMemory4lockEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->lock();
+bool C_ZN13QSharedMemory4lockEv(void *this_) {
+  return (bool)((QSharedMemory*)this_)->lock();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:99
-// bool unlock()
+// [1] bool unlock()
 extern "C"
-void C_ZN13QSharedMemory6unlockEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->unlock();
+bool C_ZN13QSharedMemory6unlockEv(void *this_) {
+  return (bool)((QSharedMemory*)this_)->unlock();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:102
-// QSharedMemory::SharedMemoryError error()
+// [4] QSharedMemory::SharedMemoryError error()
 extern "C"
-void C_ZNK13QSharedMemory5errorEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->error();
+QSharedMemory::SharedMemoryError C_ZNK13QSharedMemory5errorEv(void *this_) {
+  return (QSharedMemory::SharedMemoryError)((QSharedMemory*)this_)->error();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:103
-// QString errorString()
+// [8] QString errorString()
 extern "C"
-void C_ZNK13QSharedMemory11errorStringEv(void *this_) {
-  /*return*/ ((QSharedMemory*)this_)->errorString();
+void* C_ZNK13QSharedMemory11errorStringEv(void *this_) {
+  auto rv = ((QSharedMemory*)this_)->errorString();
+return new QString(rv);
 }
 //  main block end

@@ -3,478 +3,516 @@
 #include <qrect.h>
 #include <QtCore>
 
+// QRectF is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qrect.h:506
-// void QRectF()
+
+class MyQRectF : public QRectF {
+public:
+MyQRectF() : QRectF() {}
+MyQRectF(const QPointF & topleft, const QSizeF & size) : QRectF(topleft, size) {}
+MyQRectF(const QPointF & topleft, const QPointF & bottomRight) : QRectF(topleft, bottomRight) {}
+MyQRectF(qreal left, qreal top, qreal width, qreal height) : QRectF(left, top, width, height) {}
+MyQRectF(const QRect & rect) : QRectF(rect) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:514
+// [-2] void QRectF()
 extern "C"
 void* C_ZN6QRectFC1Ev() {
-  return new QRectF();
+  (MyQRectF*)(0);
+  return  new MyQRectF();
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:507
-// void QRectF(const class QPointF &, const class QSizeF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:515
+// [-2] void QRectF(const class QPointF &, const class QSizeF &)
 extern "C"
 void* C_ZN6QRectFC1ERK7QPointFRK6QSizeF(const QPointF & topleft, const QSizeF & size) {
-  return new QRectF(topleft, size);
+  (MyQRectF*)(0);
+  return  new MyQRectF(topleft, size);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:508
-// void QRectF(const class QPointF &, const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:516
+// [-2] void QRectF(const class QPointF &, const class QPointF &)
 extern "C"
 void* C_ZN6QRectFC1ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight) {
-  return new QRectF(topleft, bottomRight);
+  (MyQRectF*)(0);
+  return  new MyQRectF(topleft, bottomRight);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:509
-// void QRectF(qreal, qreal, qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:517
+// [-2] void QRectF(qreal, qreal, qreal, qreal)
 extern "C"
 void* C_ZN6QRectFC1Edddd(qreal left, qreal top, qreal width, qreal height) {
-  return new QRectF(left, top, width, height);
+  (MyQRectF*)(0);
+  return  new MyQRectF(left, top, width, height);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:510
-// void QRectF(const class QRect &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:518
+// [-2] void QRectF(const class QRect &)
 extern "C"
 void* C_ZN6QRectFC1ERK5QRect(const QRect & rect) {
-  return new QRectF(rect);
+  (MyQRectF*)(0);
+  return  new MyQRectF(rect);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:512
-// bool isNull()
-extern "C"
-void C_ZNK6QRectF6isNullEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isNull();
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:513
-// bool isEmpty()
-extern "C"
-void C_ZNK6QRectF7isEmptyEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isEmpty();
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:514
-// bool isValid()
-extern "C"
-void C_ZNK6QRectF7isValidEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->isValid();
-}
-// /usr/include/qt/QtCore/qrect.h:515
-// QRectF normalized()
-extern "C"
-void C_ZNK6QRectF10normalizedEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->normalized();
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:517
-// qreal left()
-extern "C"
-void C_ZNK6QRectF4leftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->left();
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:518
-// qreal top()
-extern "C"
-void C_ZNK6QRectF3topEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->top();
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:519
-// qreal right()
-extern "C"
-void C_ZNK6QRectF5rightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->right();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:520
-// qreal bottom()
+// [1] bool isNull()
 extern "C"
-void C_ZNK6QRectF6bottomEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottom();
+bool C_ZNK6QRectF6isNullEv(void *this_) {
+  return (bool)((QRectF*)this_)->isNull();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:521
+// [1] bool isEmpty()
+extern "C"
+bool C_ZNK6QRectF7isEmptyEv(void *this_) {
+  return (bool)((QRectF*)this_)->isEmpty();
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:522
-// qreal x()
+// [1] bool isValid()
 extern "C"
-void C_ZNK6QRectF1xEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->x();
+bool C_ZNK6QRectF7isValidEv(void *this_) {
+  return (bool)((QRectF*)this_)->isValid();
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:523
-// qreal y()
+// [32] QRectF normalized()
 extern "C"
-void C_ZNK6QRectF1yEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->y();
+void* C_ZNK6QRectF10normalizedEv(void *this_) {
+  auto rv = ((QRectF*)this_)->normalized();
+return new QRectF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:524
-// void setLeft(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:525
+// [8] qreal left()
+extern "C"
+qreal C_ZNK6QRectF4leftEv(void *this_) {
+  return (qreal)((QRectF*)this_)->left();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:526
+// [8] qreal top()
+extern "C"
+qreal C_ZNK6QRectF3topEv(void *this_) {
+  return (qreal)((QRectF*)this_)->top();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:527
+// [8] qreal right()
+extern "C"
+qreal C_ZNK6QRectF5rightEv(void *this_) {
+  return (qreal)((QRectF*)this_)->right();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:528
+// [8] qreal bottom()
+extern "C"
+qreal C_ZNK6QRectF6bottomEv(void *this_) {
+  return (qreal)((QRectF*)this_)->bottom();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:530
+// [8] qreal x()
+extern "C"
+qreal C_ZNK6QRectF1xEv(void *this_) {
+  return (qreal)((QRectF*)this_)->x();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:531
+// [8] qreal y()
+extern "C"
+qreal C_ZNK6QRectF1yEv(void *this_) {
+  return (qreal)((QRectF*)this_)->y();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:532
+// [-2] void setLeft(qreal)
 extern "C"
 void C_ZN6QRectF7setLeftEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setLeft(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:525
-// void setTop(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:533
+// [-2] void setTop(qreal)
 extern "C"
 void C_ZN6QRectF6setTopEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setTop(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:526
-// void setRight(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:534
+// [-2] void setRight(qreal)
 extern "C"
 void C_ZN6QRectF8setRightEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setRight(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:527
-// void setBottom(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:535
+// [-2] void setBottom(qreal)
 extern "C"
 void C_ZN6QRectF9setBottomEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setBottom(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:528
-// void setX(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:536
+// [-2] void setX(qreal)
 extern "C"
 void C_ZN6QRectF4setXEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setX(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:529
-// void setY(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:537
+// [-2] void setY(qreal)
 extern "C"
 void C_ZN6QRectF4setYEd(void *this_, qreal pos) {
   ((QRectF*)this_)->setY(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:531
-// QPointF topLeft()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:539
+// [16] QPointF topLeft()
 extern "C"
-void C_ZNK6QRectF7topLeftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->topLeft();
+void* C_ZNK6QRectF7topLeftEv(void *this_) {
+  auto rv = ((QRectF*)this_)->topLeft();
+return new QPointF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:532
-// QPointF bottomRight()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:540
+// [16] QPointF bottomRight()
 extern "C"
-void C_ZNK6QRectF11bottomRightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottomRight();
+void* C_ZNK6QRectF11bottomRightEv(void *this_) {
+  auto rv = ((QRectF*)this_)->bottomRight();
+return new QPointF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:533
-// QPointF topRight()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:541
+// [16] QPointF topRight()
 extern "C"
-void C_ZNK6QRectF8topRightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->topRight();
+void* C_ZNK6QRectF8topRightEv(void *this_) {
+  auto rv = ((QRectF*)this_)->topRight();
+return new QPointF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:534
-// QPointF bottomLeft()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:542
+// [16] QPointF bottomLeft()
 extern "C"
-void C_ZNK6QRectF10bottomLeftEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->bottomLeft();
+void* C_ZNK6QRectF10bottomLeftEv(void *this_) {
+  auto rv = ((QRectF*)this_)->bottomLeft();
+return new QPointF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:535
-// QPointF center()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:543
+// [16] QPointF center()
 extern "C"
-void C_ZNK6QRectF6centerEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->center();
+void* C_ZNK6QRectF6centerEv(void *this_) {
+  auto rv = ((QRectF*)this_)->center();
+return new QPointF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:537
-// void setTopLeft(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:545
+// [-2] void setTopLeft(const class QPointF &)
 extern "C"
 void C_ZN6QRectF10setTopLeftERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->setTopLeft(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:538
-// void setBottomRight(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:546
+// [-2] void setBottomRight(const class QPointF &)
 extern "C"
 void C_ZN6QRectF14setBottomRightERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->setBottomRight(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:539
-// void setTopRight(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:547
+// [-2] void setTopRight(const class QPointF &)
 extern "C"
 void C_ZN6QRectF11setTopRightERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->setTopRight(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:540
-// void setBottomLeft(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:548
+// [-2] void setBottomLeft(const class QPointF &)
 extern "C"
 void C_ZN6QRectF13setBottomLeftERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->setBottomLeft(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:542
-// void moveLeft(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:550
+// [-2] void moveLeft(qreal)
 extern "C"
 void C_ZN6QRectF8moveLeftEd(void *this_, qreal pos) {
   ((QRectF*)this_)->moveLeft(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:543
-// void moveTop(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:551
+// [-2] void moveTop(qreal)
 extern "C"
 void C_ZN6QRectF7moveTopEd(void *this_, qreal pos) {
   ((QRectF*)this_)->moveTop(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:544
-// void moveRight(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:552
+// [-2] void moveRight(qreal)
 extern "C"
 void C_ZN6QRectF9moveRightEd(void *this_, qreal pos) {
   ((QRectF*)this_)->moveRight(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:545
-// void moveBottom(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:553
+// [-2] void moveBottom(qreal)
 extern "C"
 void C_ZN6QRectF10moveBottomEd(void *this_, qreal pos) {
   ((QRectF*)this_)->moveBottom(pos);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:546
-// void moveTopLeft(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:554
+// [-2] void moveTopLeft(const class QPointF &)
 extern "C"
 void C_ZN6QRectF11moveTopLeftERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveTopLeft(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:547
-// void moveBottomRight(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:555
+// [-2] void moveBottomRight(const class QPointF &)
 extern "C"
 void C_ZN6QRectF15moveBottomRightERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveBottomRight(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:548
-// void moveTopRight(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:556
+// [-2] void moveTopRight(const class QPointF &)
 extern "C"
 void C_ZN6QRectF12moveTopRightERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveTopRight(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:549
-// void moveBottomLeft(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:557
+// [-2] void moveBottomLeft(const class QPointF &)
 extern "C"
 void C_ZN6QRectF14moveBottomLeftERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveBottomLeft(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:550
-// void moveCenter(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:558
+// [-2] void moveCenter(const class QPointF &)
 extern "C"
 void C_ZN6QRectF10moveCenterERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveCenter(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:552
-// void translate(qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:560
+// [-2] void translate(qreal, qreal)
 extern "C"
 void C_ZN6QRectF9translateEdd(void *this_, qreal dx, qreal dy) {
   ((QRectF*)this_)->translate(dx, dy);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:553
-// void translate(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:561
+// [-2] void translate(const class QPointF &)
 extern "C"
 void C_ZN6QRectF9translateERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->translate(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:555
-// QRectF translated(qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:563
+// [32] QRectF translated(qreal, qreal)
 extern "C"
-void C_ZNK6QRectF10translatedEdd(void *this_, qreal dx, qreal dy) {
-  /*return*/ ((QRectF*)this_)->translated(dx, dy);
+void* C_ZNK6QRectF10translatedEdd(void *this_, qreal dx, qreal dy) {
+  auto rv = ((QRectF*)this_)->translated(dx, dy);
+return new QRectF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:556
-// QRectF translated(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:564
+// [32] QRectF translated(const class QPointF &)
 extern "C"
-void C_ZNK6QRectF10translatedERK7QPointF(void *this_, const QPointF & p) {
-  /*return*/ ((QRectF*)this_)->translated(p);
+void* C_ZNK6QRectF10translatedERK7QPointF(void *this_, const QPointF & p) {
+  auto rv = ((QRectF*)this_)->translated(p);
+return new QRectF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:558
-// QRectF transposed()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:566
+// [32] QRectF transposed()
 extern "C"
-void C_ZNK6QRectF10transposedEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->transposed();
+void* C_ZNK6QRectF10transposedEv(void *this_) {
+  auto rv = ((QRectF*)this_)->transposed();
+return new QRectF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:560
-// void moveTo(qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:568
+// [-2] void moveTo(qreal, qreal)
 extern "C"
 void C_ZN6QRectF6moveToEdd(void *this_, qreal x, qreal y) {
   ((QRectF*)this_)->moveTo(x, y);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:561
-// void moveTo(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:569
+// [-2] void moveTo(const class QPointF &)
 extern "C"
 void C_ZN6QRectF6moveToERK7QPointF(void *this_, const QPointF & p) {
   ((QRectF*)this_)->moveTo(p);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:563
-// void setRect(qreal, qreal, qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:571
+// [-2] void setRect(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QRectF7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
   ((QRectF*)this_)->setRect(x, y, w, h);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:564
-// void getRect(qreal *, qreal *, qreal *, qreal *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:572
+// [-2] void getRect(qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZNK6QRectF7getRectEPdS0_S0_S0_(void *this_, qreal * x, qreal * y, qreal * w, qreal * h) {
   ((QRectF*)this_)->getRect(x, y, w, h);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:566
-// void setCoords(qreal, qreal, qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:574
+// [-2] void setCoords(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QRectF9setCoordsEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
   ((QRectF*)this_)->setCoords(x1, y1, x2, y2);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:567
-// void getCoords(qreal *, qreal *, qreal *, qreal *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:575
+// [-2] void getCoords(qreal *, qreal *, qreal *, qreal *)
 extern "C"
 void C_ZNK6QRectF9getCoordsEPdS0_S0_S0_(void *this_, qreal * x1, qreal * y1, qreal * x2, qreal * y2) {
   ((QRectF*)this_)->getCoords(x1, y1, x2, y2);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:569
-// void adjust(qreal, qreal, qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:577
+// [-2] void adjust(qreal, qreal, qreal, qreal)
 extern "C"
 void C_ZN6QRectF6adjustEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
   ((QRectF*)this_)->adjust(x1, y1, x2, y2);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:570
-// QRectF adjusted(qreal, qreal, qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:578
+// [32] QRectF adjusted(qreal, qreal, qreal, qreal)
 extern "C"
-void C_ZNK6QRectF8adjustedEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
-  /*return*/ ((QRectF*)this_)->adjusted(x1, y1, x2, y2);
+void* C_ZNK6QRectF8adjustedEdddd(void *this_, qreal x1, qreal y1, qreal x2, qreal y2) {
+  auto rv = ((QRectF*)this_)->adjusted(x1, y1, x2, y2);
+return new QRectF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:572
-// QSizeF size()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:580
+// [16] QSizeF size()
 extern "C"
-void C_ZNK6QRectF4sizeEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->size();
+void* C_ZNK6QRectF4sizeEv(void *this_) {
+  auto rv = ((QRectF*)this_)->size();
+return new QSizeF(rv);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:573
-// qreal width()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:581
+// [8] qreal width()
 extern "C"
-void C_ZNK6QRectF5widthEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->width();
+qreal C_ZNK6QRectF5widthEv(void *this_) {
+  return (qreal)((QRectF*)this_)->width();
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:574
-// qreal height()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:582
+// [8] qreal height()
 extern "C"
-void C_ZNK6QRectF6heightEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->height();
+qreal C_ZNK6QRectF6heightEv(void *this_) {
+  return (qreal)((QRectF*)this_)->height();
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:575
-// void setWidth(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:583
+// [-2] void setWidth(qreal)
 extern "C"
 void C_ZN6QRectF8setWidthEd(void *this_, qreal w) {
   ((QRectF*)this_)->setWidth(w);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:576
-// void setHeight(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:584
+// [-2] void setHeight(qreal)
 extern "C"
 void C_ZN6QRectF9setHeightEd(void *this_, qreal h) {
   ((QRectF*)this_)->setHeight(h);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:577
-// void setSize(const class QSizeF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:585
+// [-2] void setSize(const class QSizeF &)
 extern "C"
 void C_ZN6QRectF7setSizeERK6QSizeF(void *this_, const QSizeF & s) {
   ((QRectF*)this_)->setSize(s);
 }
-// /usr/include/qt/QtCore/qrect.h:584
-// bool contains(const class QRectF &)
-extern "C"
-void C_ZNK6QRectF8containsERKS_(void *this_, const QRectF & r) {
-  /*return*/ ((QRectF*)this_)->contains(r);
-}
-// /usr/include/qt/QtCore/qrect.h:585
-// bool contains(const class QPointF &)
-extern "C"
-void C_ZNK6QRectF8containsERK7QPointF(void *this_, const QPointF & p) {
-  /*return*/ ((QRectF*)this_)->contains(p);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:586
-// bool contains(qreal, qreal)
-extern "C"
-void C_ZNK6QRectF8containsEdd(void *this_, qreal x, qreal y) {
-  /*return*/ ((QRectF*)this_)->contains(x, y);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:587
-// QRectF united(const class QRectF &)
-extern "C"
-void C_ZNK6QRectF6unitedERKS_(void *this_, const QRectF & other) {
-  /*return*/ ((QRectF*)this_)->united(other);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:588
-// QRectF intersected(const class QRectF &)
-extern "C"
-void C_ZNK6QRectF11intersectedERKS_(void *this_, const QRectF & other) {
-  /*return*/ ((QRectF*)this_)->intersected(other);
-}
-// /usr/include/qt/QtCore/qrect.h:589
-// bool intersects(const class QRectF &)
-extern "C"
-void C_ZNK6QRectF10intersectsERKS_(void *this_, const QRectF & r) {
-  /*return*/ ((QRectF*)this_)->intersects(r);
-}
-// inline
-// /usr/include/qt/QtCore/qrect.h:591
-// QRectF marginsAdded(const class QMarginsF &)
-extern "C"
-void C_ZNK6QRectF12marginsAddedERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  /*return*/ ((QRectF*)this_)->marginsAdded(margins);
-}
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:592
-// QRectF marginsRemoved(const class QMarginsF &)
+// [1] bool contains(const class QRectF &)
 extern "C"
-void C_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  /*return*/ ((QRectF*)this_)->marginsRemoved(margins);
+bool C_ZNK6QRectF8containsERKS_(void *this_, const QRectF & r) {
+  return (bool)((QRectF*)this_)->contains(r);
 }
-// inline
-// /usr/include/qt/QtCore/qrect.h:604
-// QRect toRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:593
+// [1] bool contains(const class QPointF &)
 extern "C"
-void C_ZNK6QRectF6toRectEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->toRect();
+bool C_ZNK6QRectF8containsERK7QPointF(void *this_, const QPointF & p) {
+  return (bool)((QRectF*)this_)->contains(p);
 }
-// /usr/include/qt/QtCore/qrect.h:605
-// QRect toAlignedRect()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:594
+// [1] bool contains(qreal, qreal)
 extern "C"
-void C_ZNK6QRectF13toAlignedRectEv(void *this_) {
-  /*return*/ ((QRectF*)this_)->toAlignedRect();
+bool C_ZNK6QRectF8containsEdd(void *this_, qreal x, qreal y) {
+  return (bool)((QRectF*)this_)->contains(x, y);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:595
+// [32] QRectF united(const class QRectF &)
+extern "C"
+void* C_ZNK6QRectF6unitedERKS_(void *this_, const QRectF & other) {
+  auto rv = ((QRectF*)this_)->united(other);
+return new QRectF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:596
+// [32] QRectF intersected(const class QRectF &)
+extern "C"
+void* C_ZNK6QRectF11intersectedERKS_(void *this_, const QRectF & other) {
+  auto rv = ((QRectF*)this_)->intersected(other);
+return new QRectF(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:597
+// [1] bool intersects(const class QRectF &)
+extern "C"
+bool C_ZNK6QRectF10intersectsERKS_(void *this_, const QRectF & r) {
+  return (bool)((QRectF*)this_)->intersects(r);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:599
+// [32] QRectF marginsAdded(const class QMarginsF &)
+extern "C"
+void* C_ZNK6QRectF12marginsAddedERK9QMarginsF(void *this_, const QMarginsF & margins) {
+  auto rv = ((QRectF*)this_)->marginsAdded(margins);
+return new QRectF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:600
+// [32] QRectF marginsRemoved(const class QMarginsF &)
+extern "C"
+void* C_ZNK6QRectF14marginsRemovedERK9QMarginsF(void *this_, const QMarginsF & margins) {
+  auto rv = ((QRectF*)this_)->marginsRemoved(margins);
+return new QRectF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:612
+// [16] QRect toRect()
+extern "C"
+void* C_ZNK6QRectF6toRectEv(void *this_) {
+  auto rv = ((QRectF*)this_)->toRect();
+return new QRect(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrect.h:613
+// [16] QRect toAlignedRect()
+extern "C"
+void* C_ZNK6QRectF13toAlignedRectEv(void *this_) {
+  auto rv = ((QRectF*)this_)->toAlignedRect();
+return new QRect(rv);
 }
 //  main block end

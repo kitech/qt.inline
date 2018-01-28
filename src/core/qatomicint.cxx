@@ -3,14 +3,22 @@
 #include <qatomic.h>
 #include <QtCore>
 
+// QAtomicInt is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQAtomicInt : public QAtomicInt {
+public:
+MyQAtomicInt(int value) : QAtomicInt(value) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qatomic.h:162
-// void QAtomicInt(int)
+// [-2] void QAtomicInt(int)
 extern "C"
 void* C_ZN10QAtomicIntC1Ei(int value) {
-  return new QAtomicInt(value);
+  (MyQAtomicInt*)(0);
+  return  new MyQAtomicInt(value);
 }
 //  main block end

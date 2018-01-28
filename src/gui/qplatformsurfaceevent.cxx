@@ -3,27 +3,36 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QPlatformSurfaceEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:441
-// void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
+
+class MyQPlatformSurfaceEvent : public QPlatformSurfaceEvent {
+public:
+MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) : QPlatformSurfaceEvent(surfaceEventType) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:451
+// [-2] void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
 extern "C"
 void* C_ZN21QPlatformSurfaceEventC1ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
-  return new QPlatformSurfaceEvent(surfaceEventType);
+  (MyQPlatformSurfaceEvent*)(0);
+  return  new MyQPlatformSurfaceEvent(surfaceEventType);
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:442
-// void ~QPlatformSurfaceEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:452
+// [-2] void ~QPlatformSurfaceEvent()
 extern "C"
 void C_ZN21QPlatformSurfaceEventD1Ev(void *this_) {
   delete (QPlatformSurfaceEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:444
-// QPlatformSurfaceEvent::SurfaceEventType surfaceEventType()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:454
+// [4] QPlatformSurfaceEvent::SurfaceEventType surfaceEventType()
 extern "C"
-void C_ZNK21QPlatformSurfaceEvent16surfaceEventTypeEv(void *this_) {
-  /*return*/ ((QPlatformSurfaceEvent*)this_)->surfaceEventType();
+QPlatformSurfaceEvent::SurfaceEventType C_ZNK21QPlatformSurfaceEvent16surfaceEventTypeEv(void *this_) {
+  return (QPlatformSurfaceEvent::SurfaceEventType)((QPlatformSurfaceEvent*)this_)->surfaceEventType();
 }
 //  main block end

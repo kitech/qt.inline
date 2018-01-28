@@ -3,40 +3,64 @@
 #include <qmutex.h>
 #include <QtCore>
 
+// QBasicMutex is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qmutex.h:63
-// void lock()
+
+class MyQBasicMutex : public QBasicMutex {
+public:
+MyQBasicMutex() : QBasicMutex() {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:71
+// [-2] void QBasicMutex()
+extern "C"
+void* C_ZN11QBasicMutexC1Ev() {
+  (MyQBasicMutex*)(0);
+  return  new MyQBasicMutex();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:77
+// [-2] void lock()
 extern "C"
 void C_ZN11QBasicMutex4lockEv(void *this_) {
   ((QBasicMutex*)this_)->lock();
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:68
-// void unlock()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:83
+// [-2] void unlock()
 extern "C"
 void C_ZN11QBasicMutex6unlockEv(void *this_) {
   ((QBasicMutex*)this_)->unlock();
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:74
-// bool tryLock()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:89
+// [1] bool tryLock()
 extern "C"
-void C_ZN11QBasicMutex7tryLockEv(void *this_) {
-  /*return*/ ((QBasicMutex*)this_)->tryLock();
+bool C_ZN11QBasicMutex7tryLockEv(void *this_) {
+  return (bool)((QBasicMutex*)this_)->tryLock();
 }
-// /usr/include/qt/QtCore/qmutex.h:78
-// bool isRecursive()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:94
+// [1] bool try_lock()
 extern "C"
-void C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
-  /*return*/ ((QBasicMutex*)this_)->isRecursive();
+bool C_ZN11QBasicMutex8try_lockEv(void *this_) {
+  return (bool)((QBasicMutex*)this_)->try_lock();
 }
-// /usr/include/qt/QtCore/qmutex.h:79
-// bool isRecursive()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:96
+// [1] bool isRecursive()
 extern "C"
-void C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
-  /*return*/ ((QBasicMutex*)this_)->isRecursive();
+bool C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
+  return (bool)((QBasicMutex*)this_)->isRecursive();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:97
+// [1] bool isRecursive()
+extern "C"
+bool C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
+  return (bool)((QBasicMutex*)this_)->isRecursive();
 }
 //  main block end

@@ -3,133 +3,121 @@
 #include <qtextoption.h>
 #include <QtGui>
 
+// QTextOption is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qtextoption.h:84
-// void QTextOption()
+
+class MyQTextOption : public QTextOption {
+public:
+MyQTextOption() : QTextOption() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:85
+// [-2] void QTextOption()
 extern "C"
 void* C_ZN11QTextOptionC1Ev() {
-  return new QTextOption();
+  (MyQTextOption*)(0);
+  return  new MyQTextOption();
 }
-// /usr/include/qt/QtGui/qtextoption.h:85
-// void QTextOption(Qt::Alignment)
-extern "C"
-void* C_ZN11QTextOptionC1E6QFlagsIN2Qt13AlignmentFlagEE(QFlags<Qt::AlignmentFlag> alignment) {
-  return new QTextOption(alignment);
-}
-// /usr/include/qt/QtGui/qtextoption.h:86
-// void ~QTextOption()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:87
+// [-2] void ~QTextOption()
 extern "C"
 void C_ZN11QTextOptionD1Ev(void *this_) {
   delete (QTextOption*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:91
-// void setAlignment(Qt::Alignment)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:93
+// [4] Qt::Alignment alignment()
 extern "C"
-void C_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
-  ((QTextOption*)this_)->setAlignment(alignment);
+Qt::Alignment C_ZNK11QTextOption9alignmentEv(void *this_) {
+  return (Qt::Alignment)((QTextOption*)this_)->alignment();
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:92
-// Qt::Alignment alignment()
-extern "C"
-void C_ZNK11QTextOption9alignmentEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->alignment();
-}
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:94
-// void setTextDirection(Qt::LayoutDirection)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:95
+// [-2] void setTextDirection(Qt::LayoutDirection)
 extern "C"
 void C_ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection aDirection) {
   ((QTextOption*)this_)->setTextDirection(aDirection);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:95
-// Qt::LayoutDirection textDirection()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:96
+// [4] Qt::LayoutDirection textDirection()
 extern "C"
-void C_ZNK11QTextOption13textDirectionEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->textDirection();
+Qt::LayoutDirection C_ZNK11QTextOption13textDirectionEv(void *this_) {
+  return (Qt::LayoutDirection)((QTextOption*)this_)->textDirection();
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:104
-// void setWrapMode(enum QTextOption::WrapMode)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:105
+// [-2] void setWrapMode(enum QTextOption::WrapMode)
 extern "C"
 void C_ZN11QTextOption11setWrapModeENS_8WrapModeE(void *this_, QTextOption::WrapMode wrap) {
   ((QTextOption*)this_)->setWrapMode(wrap);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:105
-// QTextOption::WrapMode wrapMode()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:106
+// [4] QTextOption::WrapMode wrapMode()
 extern "C"
-void C_ZNK11QTextOption8wrapModeEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->wrapMode();
+QTextOption::WrapMode C_ZNK11QTextOption8wrapModeEv(void *this_) {
+  return (QTextOption::WrapMode)((QTextOption*)this_)->wrapMode();
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:116
-// void setFlags(Flags)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:117
+// [-2] void setFlags(QTextOption::Flags)
 extern "C"
 void C_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE(void *this_, QFlags<QTextOption::Flag> flags) {
   ((QTextOption*)this_)->setFlags(flags);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:117
-// Flags flags()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:118
+// [4] QTextOption::Flags flags()
 extern "C"
 void C_ZNK11QTextOption5flagsEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->flags();
+  auto rv = ((QTextOption*)this_)->flags();
+/*return rv;*/
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:119
-// void setTabStop(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:121
+// [-2] void setTabStop(qreal)
 extern "C"
 void C_ZN11QTextOption10setTabStopEd(void *this_, qreal tabStop) {
   ((QTextOption*)this_)->setTabStop(tabStop);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:120
-// qreal tabStop()
-extern "C"
-void C_ZNK11QTextOption7tabStopEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->tabStop();
-}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:122
-// void setTabArray(const QList<qreal> &)
+// [8] qreal tabStop()
 extern "C"
-void C_ZN11QTextOption11setTabArrayERK5QListIdE(void *this_, const QList<qreal> & tabStops) {
-  ((QTextOption*)this_)->setTabArray(tabStops);
+qreal C_ZNK11QTextOption7tabStopEv(void *this_) {
+  return (qreal)((QTextOption*)this_)->tabStop();
 }
-// /usr/include/qt/QtGui/qtextoption.h:123
-// QList<qreal> tabArray()
-extern "C"
-void C_ZNK11QTextOption8tabArrayEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->tabArray();
-}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:125
-// void setTabs(const QList<struct QTextOption::Tab> &)
+// [-2] void setTabStopDistance(qreal)
 extern "C"
-void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, const QList<QTextOption::Tab> & tabStops) {
-  ((QTextOption*)this_)->setTabs(tabStops);
+void C_ZN11QTextOption18setTabStopDistanceEd(void *this_, qreal tabStopDistance) {
+  ((QTextOption*)this_)->setTabStopDistance(tabStopDistance);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:126
-// QList<QTextOption::Tab> tabs()
+// [8] qreal tabStopDistance()
 extern "C"
-void C_ZNK11QTextOption4tabsEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->tabs();
+qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
+  return (qreal)((QTextOption*)this_)->tabStopDistance();
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:128
-// void setUseDesignMetrics(_Bool)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:134
+// [-2] void setUseDesignMetrics(_Bool)
 extern "C"
 void C_ZN11QTextOption19setUseDesignMetricsEb(void *this_, bool b) {
   ((QTextOption*)this_)->setUseDesignMetrics(b);
 }
-// inline
-// /usr/include/qt/QtGui/qtextoption.h:129
-// bool useDesignMetrics()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:135
+// [1] bool useDesignMetrics()
 extern "C"
-void C_ZNK11QTextOption16useDesignMetricsEv(void *this_) {
-  /*return*/ ((QTextOption*)this_)->useDesignMetrics();
+bool C_ZNK11QTextOption16useDesignMetricsEv(void *this_) {
+  return (bool)((QTextOption*)this_)->useDesignMetrics();
 }
 //  main block end

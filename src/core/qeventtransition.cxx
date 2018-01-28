@@ -3,55 +3,110 @@
 #include <qeventtransition.h>
 #include <QtCore>
 
+// QEventTransition is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtCore/qeventtransition.h:54
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:68
+// [1] bool eventTest(class QEvent *)
 extern "C"
-void C_ZNK16QEventTransition10metaObjectEv(void *this_) {
-  /*return*/ ((QEventTransition*)this_)->metaObject();
+void* callback_ZN16QEventTransition9eventTestEP6QEvent = 0;
+extern "C" void set_callback_ZN16QEventTransition9eventTestEP6QEvent(void*cbfn)
+{ callback_ZN16QEventTransition9eventTestEP6QEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:69
+// [-2] void onTransition(class QEvent *)
+extern "C"
+void* callback_ZN16QEventTransition12onTransitionEP6QEvent = 0;
+extern "C" void set_callback_ZN16QEventTransition12onTransitionEP6QEvent(void*cbfn)
+{ callback_ZN16QEventTransition12onTransitionEP6QEvent = cbfn; }
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:71
+// [1] bool event(class QEvent *)
+extern "C"
+void* callback_ZN16QEventTransition5eventEP6QEvent = 0;
+extern "C" void set_callback_ZN16QEventTransition5eventEP6QEvent(void*cbfn)
+{ callback_ZN16QEventTransition5eventEP6QEvent = cbfn; }
+
+class MyQEventTransition : public QEventTransition {
+public:
+MyQEventTransition(QState * sourceState) : QEventTransition(sourceState) {}
+MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : QEventTransition(object, type, sourceState) {}
+// bool eventTest(class QEvent *)
+// bool eventTest(class QEvent *)
+virtual bool eventTest(QEvent * event) {
+  if (callback_ZN16QEventTransition9eventTestEP6QEvent != 0) {
+  // callback_ZN16QEventTransition9eventTestEP6QEvent(event);
+}}
+// void onTransition(class QEvent *)
+// void onTransition(class QEvent *)
+virtual void onTransition(QEvent * event) {
+  if (callback_ZN16QEventTransition12onTransitionEP6QEvent != 0) {
+  // callback_ZN16QEventTransition12onTransitionEP6QEvent(event);
+}}
+// bool event(class QEvent *)
+// bool event(class QEvent *)
+virtual bool event(QEvent * e) {
+  if (callback_ZN16QEventTransition5eventEP6QEvent != 0) {
+  // callback_ZN16QEventTransition5eventEP6QEvent(e);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:53
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK16QEventTransition10metaObjectEv(void *this_) {
+  return (void*)((QEventTransition*)this_)->metaObject();
 }
-// /usr/include/qt/QtCore/qeventtransition.h:58
-// void QEventTransition(class QState *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:57
+// [-2] void QEventTransition(class QState *)
 extern "C"
 void* C_ZN16QEventTransitionC1EP6QState(QState * sourceState) {
-  return new QEventTransition(sourceState);
+  (MyQEventTransition*)(0);
+  return  new MyQEventTransition(sourceState);
 }
-// /usr/include/qt/QtCore/qeventtransition.h:59
-// void QEventTransition(class QObject *, class QEvent::Type, class QState *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:58
+// [-2] void QEventTransition(class QObject *, class QEvent::Type, class QState *)
 extern "C"
 void* C_ZN16QEventTransitionC1EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState) {
-  return new QEventTransition(object, type, sourceState);
+  (MyQEventTransition*)(0);
+  return  new MyQEventTransition(object, type, sourceState);
 }
-// virtual
-// /usr/include/qt/QtCore/qeventtransition.h:60
-// void ~QEventTransition()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:59
+// [-2] void ~QEventTransition()
 extern "C"
 void C_ZN16QEventTransitionD1Ev(void *this_) {
   delete (QEventTransition*)(this_);
 }
-// /usr/include/qt/QtCore/qeventtransition.h:62
-// QObject * eventSource()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:61
+// [8] QObject * eventSource()
 extern "C"
-void C_ZNK16QEventTransition11eventSourceEv(void *this_) {
-  /*return*/ ((QEventTransition*)this_)->eventSource();
+void* C_ZNK16QEventTransition11eventSourceEv(void *this_) {
+  return (void*)((QEventTransition*)this_)->eventSource();
 }
-// /usr/include/qt/QtCore/qeventtransition.h:63
-// void setEventSource(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:62
+// [-2] void setEventSource(class QObject *)
 extern "C"
 void C_ZN16QEventTransition14setEventSourceEP7QObject(void *this_, QObject * object) {
   ((QEventTransition*)this_)->setEventSource(object);
 }
-// /usr/include/qt/QtCore/qeventtransition.h:65
-// QEvent::Type eventType()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:64
+// [4] QEvent::Type eventType()
 extern "C"
-void C_ZNK16QEventTransition9eventTypeEv(void *this_) {
-  /*return*/ ((QEventTransition*)this_)->eventType();
+QEvent::Type C_ZNK16QEventTransition9eventTypeEv(void *this_) {
+  return (QEvent::Type)((QEventTransition*)this_)->eventType();
 }
-// /usr/include/qt/QtCore/qeventtransition.h:66
-// void setEventType(class QEvent::Type)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:65
+// [-2] void setEventType(class QEvent::Type)
 extern "C"
 void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type) {
   ((QEventTransition*)this_)->setEventType(type);

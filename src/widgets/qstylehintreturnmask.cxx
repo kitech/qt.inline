@@ -3,17 +3,27 @@
 #include <qstyleoption.h>
 #include <QtWidgets>
 
+// QStyleHintReturnMask is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qstyleoption.h:710
-// void QStyleHintReturnMask()
+
+class MyQStyleHintReturnMask : public QStyleHintReturnMask {
+public:
+MyQStyleHintReturnMask() : QStyleHintReturnMask() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:722
+// [-2] void QStyleHintReturnMask()
 extern "C"
 void* C_ZN20QStyleHintReturnMaskC1Ev() {
-  return new QStyleHintReturnMask();
+  (MyQStyleHintReturnMask*)(0);
+  return  new MyQStyleHintReturnMask();
 }
-// /usr/include/qt/QtWidgets/qstyleoption.h:711
-// void ~QStyleHintReturnMask()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:723
+// [-2] void ~QStyleHintReturnMask()
 extern "C"
 void C_ZN20QStyleHintReturnMaskD1Ev(void *this_) {
   delete (QStyleHintReturnMask*)(this_);

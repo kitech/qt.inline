@@ -3,31 +3,43 @@
 #include <qboxlayout.h>
 #include <QtWidgets>
 
+// QVBoxLayout is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qboxlayout.h:127
-// const QMetaObject * metaObject()
+
+class MyQVBoxLayout : public QVBoxLayout {
+public:
+MyQVBoxLayout() : QVBoxLayout() {}
+MyQVBoxLayout(QWidget * parent) : QVBoxLayout(parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:128
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK11QVBoxLayout10metaObjectEv(void *this_) {
-  /*return*/ ((QVBoxLayout*)this_)->metaObject();
+void* C_ZNK11QVBoxLayout10metaObjectEv(void *this_) {
+  return (void*)((QVBoxLayout*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qboxlayout.h:129
-// void QVBoxLayout()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:130
+// [-2] void QVBoxLayout()
 extern "C"
 void* C_ZN11QVBoxLayoutC1Ev() {
-  return new QVBoxLayout();
+  (MyQVBoxLayout*)(0);
+  return  new MyQVBoxLayout();
 }
-// /usr/include/qt/QtWidgets/qboxlayout.h:130
-// void QVBoxLayout(class QWidget *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:131
+// [-2] void QVBoxLayout(class QWidget *)
 extern "C"
 void* C_ZN11QVBoxLayoutC1EP7QWidget(QWidget * parent) {
-  return new QVBoxLayout(parent);
+  (MyQVBoxLayout*)(0);
+  return  new MyQVBoxLayout(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qboxlayout.h:131
-// void ~QVBoxLayout()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:132
+// [-2] void ~QVBoxLayout()
 extern "C"
 void C_ZN11QVBoxLayoutD1Ev(void *this_) {
   delete (QVBoxLayout*)(this_);

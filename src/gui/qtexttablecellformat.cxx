@@ -3,81 +3,98 @@
 #include <qtextformat.h>
 #include <QtGui>
 
+// QTextTableCellFormat is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qtextformat.h:944
-// void QTextTableCellFormat()
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:964
+// [-2] void QTextTableCellFormat(const class QTextFormat &)
+extern "C"
+void* callback_ZN20QTextTableCellFormatC1ERK11QTextFormat = 0;
+extern "C" void set_callback_ZN20QTextTableCellFormatC1ERK11QTextFormat(void*cbfn)
+{ callback_ZN20QTextTableCellFormatC1ERK11QTextFormat = cbfn; }
+
+class MyQTextTableCellFormat : public QTextTableCellFormat {
+public:
+MyQTextTableCellFormat() : QTextTableCellFormat() {}
+MyQTextTableCellFormat(const QTextFormat & fmt) : QTextTableCellFormat(fmt) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:945
+// [-2] void QTextTableCellFormat()
 extern "C"
 void* C_ZN20QTextTableCellFormatC1Ev() {
-  return new QTextTableCellFormat();
+  (MyQTextTableCellFormat*)(0);
+  return  new MyQTextTableCellFormat();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:946
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:947
+// [1] bool isValid()
 extern "C"
-void C_ZNK20QTextTableCellFormat7isValidEv(void *this_) {
-  /*return*/ ((QTextTableCellFormat*)this_)->isValid();
+bool C_ZNK20QTextTableCellFormat7isValidEv(void *this_) {
+  return (bool)((QTextTableCellFormat*)this_)->isValid();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:948
-// void setTopPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:949
+// [-2] void setTopPadding(qreal)
 extern "C"
 void C_ZN20QTextTableCellFormat13setTopPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setTopPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:949
-// qreal topPadding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:950
+// [8] qreal topPadding()
 extern "C"
-void C_ZNK20QTextTableCellFormat10topPaddingEv(void *this_) {
-  /*return*/ ((QTextTableCellFormat*)this_)->topPadding();
+qreal C_ZNK20QTextTableCellFormat10topPaddingEv(void *this_) {
+  return (qreal)((QTextTableCellFormat*)this_)->topPadding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:951
-// void setBottomPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:952
+// [-2] void setBottomPadding(qreal)
 extern "C"
 void C_ZN20QTextTableCellFormat16setBottomPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setBottomPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:952
-// qreal bottomPadding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:953
+// [8] qreal bottomPadding()
 extern "C"
-void C_ZNK20QTextTableCellFormat13bottomPaddingEv(void *this_) {
-  /*return*/ ((QTextTableCellFormat*)this_)->bottomPadding();
+qreal C_ZNK20QTextTableCellFormat13bottomPaddingEv(void *this_) {
+  return (qreal)((QTextTableCellFormat*)this_)->bottomPadding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:954
-// void setLeftPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:955
+// [-2] void setLeftPadding(qreal)
 extern "C"
 void C_ZN20QTextTableCellFormat14setLeftPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setLeftPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:955
-// qreal leftPadding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:956
+// [8] qreal leftPadding()
 extern "C"
-void C_ZNK20QTextTableCellFormat11leftPaddingEv(void *this_) {
-  /*return*/ ((QTextTableCellFormat*)this_)->leftPadding();
+qreal C_ZNK20QTextTableCellFormat11leftPaddingEv(void *this_) {
+  return (qreal)((QTextTableCellFormat*)this_)->leftPadding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:957
-// void setRightPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:958
+// [-2] void setRightPadding(qreal)
 extern "C"
 void C_ZN20QTextTableCellFormat15setRightPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setRightPadding(padding);
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:958
-// qreal rightPadding()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:959
+// [8] qreal rightPadding()
 extern "C"
-void C_ZNK20QTextTableCellFormat12rightPaddingEv(void *this_) {
-  /*return*/ ((QTextTableCellFormat*)this_)->rightPadding();
+qreal C_ZNK20QTextTableCellFormat12rightPaddingEv(void *this_) {
+  return (qreal)((QTextTableCellFormat*)this_)->rightPadding();
 }
-// inline
-// /usr/include/qt/QtGui/qtextformat.h:960
-// void setPadding(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:961
+// [-2] void setPadding(qreal)
 extern "C"
 void C_ZN20QTextTableCellFormat10setPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setPadding(padding);

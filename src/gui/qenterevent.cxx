@@ -3,83 +3,97 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QEnterEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:84
-// void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
+
+class MyQEnterEvent : public QEnterEvent {
+public:
+MyQEnterEvent(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) : QEnterEvent(localPos, windowPos, screenPos) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:85
+// [-2] void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
 extern "C"
 void* C_ZN11QEnterEventC1ERK7QPointFS2_S2_(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) {
-  return new QEnterEvent(localPos, windowPos, screenPos);
+  (MyQEnterEvent*)(0);
+  return  new MyQEnterEvent(localPos, windowPos, screenPos);
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:85
-// void ~QEnterEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:86
+// [-2] void ~QEnterEvent()
 extern "C"
 void C_ZN11QEnterEventD1Ev(void *this_) {
   delete (QEnterEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:88
-// QPoint pos()
-extern "C"
-void C_ZNK11QEnterEvent3posEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->pos();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:89
-// QPoint globalPos()
+// [8] QPoint pos()
 extern "C"
-void C_ZNK11QEnterEvent9globalPosEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->globalPos();
+void* C_ZNK11QEnterEvent3posEv(void *this_) {
+  auto rv = ((QEnterEvent*)this_)->pos();
+return new QPoint(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:90
-// int x()
+// [8] QPoint globalPos()
 extern "C"
-void C_ZNK11QEnterEvent1xEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->x();
+void* C_ZNK11QEnterEvent9globalPosEv(void *this_) {
+  auto rv = ((QEnterEvent*)this_)->globalPos();
+return new QPoint(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:91
-// int y()
+// [4] int x()
 extern "C"
-void C_ZNK11QEnterEvent1yEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->y();
+int C_ZNK11QEnterEvent1xEv(void *this_) {
+  return (int)((QEnterEvent*)this_)->x();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:92
-// int globalX()
+// [4] int y()
 extern "C"
-void C_ZNK11QEnterEvent7globalXEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->globalX();
+int C_ZNK11QEnterEvent1yEv(void *this_) {
+  return (int)((QEnterEvent*)this_)->y();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:93
-// int globalY()
+// [4] int globalX()
 extern "C"
-void C_ZNK11QEnterEvent7globalYEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->globalY();
+int C_ZNK11QEnterEvent7globalXEv(void *this_) {
+  return (int)((QEnterEvent*)this_)->globalX();
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:95
-// const QPointF & localPos()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:94
+// [4] int globalY()
 extern "C"
-void C_ZNK11QEnterEvent8localPosEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->localPos();
+int C_ZNK11QEnterEvent7globalYEv(void *this_) {
+  return (int)((QEnterEvent*)this_)->globalY();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:96
-// const QPointF & windowPos()
+// [16] const QPointF & localPos()
 extern "C"
-void C_ZNK11QEnterEvent9windowPosEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->windowPos();
+void* C_ZNK11QEnterEvent8localPosEv(void *this_) {
+  auto& rv = ((QEnterEvent*)this_)->localPos();
+return new QPointF(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:97
-// const QPointF & screenPos()
+// [16] const QPointF & windowPos()
 extern "C"
-void C_ZNK11QEnterEvent9screenPosEv(void *this_) {
-  /*return*/ ((QEnterEvent*)this_)->screenPos();
+void* C_ZNK11QEnterEvent9windowPosEv(void *this_) {
+  auto& rv = ((QEnterEvent*)this_)->windowPos();
+return new QPointF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:98
+// [16] const QPointF & screenPos()
+extern "C"
+void* C_ZNK11QEnterEvent9screenPosEv(void *this_) {
+  auto& rv = ((QEnterEvent*)this_)->screenPos();
+return new QPointF(rv);
 }
 //  main block end

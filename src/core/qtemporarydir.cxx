@@ -3,61 +3,90 @@
 #include <qtemporarydir.h>
 #include <QtCore>
 
+// QTemporaryDir is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQTemporaryDir : public QTemporaryDir {
+public:
+MyQTemporaryDir() : QTemporaryDir() {}
+MyQTemporaryDir(const QString & templateName) : QTemporaryDir(templateName) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:56
-// void QTemporaryDir()
+// [-2] void QTemporaryDir()
 extern "C"
 void* C_ZN13QTemporaryDirC1Ev() {
-  return new QTemporaryDir();
+  (MyQTemporaryDir*)(0);
+  return  new MyQTemporaryDir();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:57
-// void QTemporaryDir(const class QString &)
+// [-2] void QTemporaryDir(const class QString &)
 extern "C"
 void* C_ZN13QTemporaryDirC1ERK7QString(const QString & templateName) {
-  return new QTemporaryDir(templateName);
+  (MyQTemporaryDir*)(0);
+  return  new MyQTemporaryDir(templateName);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:58
-// void ~QTemporaryDir()
+// [-2] void ~QTemporaryDir()
 extern "C"
 void C_ZN13QTemporaryDirD1Ev(void *this_) {
   delete (QTemporaryDir*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:60
-// bool isValid()
+// [1] bool isValid()
 extern "C"
-void C_ZNK13QTemporaryDir7isValidEv(void *this_) {
-  /*return*/ ((QTemporaryDir*)this_)->isValid();
+bool C_ZNK13QTemporaryDir7isValidEv(void *this_) {
+  return (bool)((QTemporaryDir*)this_)->isValid();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:61
-// QString errorString()
+// [8] QString errorString()
 extern "C"
-void C_ZNK13QTemporaryDir11errorStringEv(void *this_) {
-  /*return*/ ((QTemporaryDir*)this_)->errorString();
+void* C_ZNK13QTemporaryDir11errorStringEv(void *this_) {
+  auto rv = ((QTemporaryDir*)this_)->errorString();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:63
-// bool autoRemove()
+// [1] bool autoRemove()
 extern "C"
-void C_ZNK13QTemporaryDir10autoRemoveEv(void *this_) {
-  /*return*/ ((QTemporaryDir*)this_)->autoRemove();
+bool C_ZNK13QTemporaryDir10autoRemoveEv(void *this_) {
+  return (bool)((QTemporaryDir*)this_)->autoRemove();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:64
-// void setAutoRemove(_Bool)
+// [-2] void setAutoRemove(_Bool)
 extern "C"
 void C_ZN13QTemporaryDir13setAutoRemoveEb(void *this_, bool b) {
   ((QTemporaryDir*)this_)->setAutoRemove(b);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:65
-// bool remove()
+// [1] bool remove()
 extern "C"
-void C_ZN13QTemporaryDir6removeEv(void *this_) {
-  /*return*/ ((QTemporaryDir*)this_)->remove();
+bool C_ZN13QTemporaryDir6removeEv(void *this_) {
+  return (bool)((QTemporaryDir*)this_)->remove();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:67
-// QString path()
+// [8] QString path()
 extern "C"
-void C_ZNK13QTemporaryDir4pathEv(void *this_) {
-  /*return*/ ((QTemporaryDir*)this_)->path();
+void* C_ZNK13QTemporaryDir4pathEv(void *this_) {
+  auto rv = ((QTemporaryDir*)this_)->path();
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporarydir.h:68
+// [8] QString filePath(const class QString &)
+extern "C"
+void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, const QString & fileName) {
+  auto rv = ((QTemporaryDir*)this_)->filePath(fileName);
+return new QString(rv);
 }
 //  main block end

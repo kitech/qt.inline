@@ -3,44 +3,64 @@
 #include <qmutex.h>
 #include <QtCore>
 
+// QMutex is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qmutex.h:112
-// void QMutex(enum QMutex::RecursionMode)
+
+class MyQMutex : public QMutex {
+public:
+MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:130
+// [-2] void QMutex(enum QMutex::RecursionMode)
 extern "C"
 void* C_ZN6QMutexC1ENS_13RecursionModeE(QMutex::RecursionMode mode) {
-  return new QMutex(mode);
+  (MyQMutex*)(0);
+  return  new MyQMutex(mode);
 }
-// /usr/include/qt/QtCore/qmutex.h:113
-// void ~QMutex()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:131
+// [-2] void ~QMutex()
 extern "C"
 void C_ZN6QMutexD1Ev(void *this_) {
   delete (QMutex*)(this_);
 }
-// /usr/include/qt/QtCore/qmutex.h:115
-// void lock()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:134
+// [-2] void lock()
 extern "C"
 void C_ZN6QMutex4lockEv(void *this_) {
   ((QMutex*)this_)->lock();
 }
-// /usr/include/qt/QtCore/qmutex.h:116
-// bool tryLock(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:135
+// [1] bool tryLock(int)
 extern "C"
-void C_ZN6QMutex7tryLockEi(void *this_, int timeout) {
-  /*return*/ ((QMutex*)this_)->tryLock(timeout);
+bool C_ZN6QMutex7tryLockEi(void *this_, int timeout) {
+  return (bool)((QMutex*)this_)->tryLock(timeout);
 }
-// /usr/include/qt/QtCore/qmutex.h:117
-// void unlock()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:137
+// [-2] void unlock()
 extern "C"
 void C_ZN6QMutex6unlockEv(void *this_) {
   ((QMutex*)this_)->unlock();
 }
-// inline
-// /usr/include/qt/QtCore/qmutex.h:119
-// bool isRecursive()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:140
+// [1] bool try_lock()
 extern "C"
-void C_ZNK6QMutex11isRecursiveEv(void *this_) {
-  /*return*/ ((QMutex*)this_)->isRecursive();
+bool C_ZN6QMutex8try_lockEv(void *this_) {
+  return (bool)((QMutex*)this_)->try_lock();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:161
+// [1] bool isRecursive()
+extern "C"
+bool C_ZNK6QMutex11isRecursiveEv(void *this_) {
+  return (bool)((QMutex*)this_)->isRecursive();
 }
 //  main block end

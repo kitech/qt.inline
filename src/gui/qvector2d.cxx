@@ -3,155 +3,193 @@
 #include <qvector2d.h>
 #include <QtGui>
 
+// QVector2D is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:58
-// void QVector2D()
+
+class MyQVector2D : public QVector2D {
+public:
+MyQVector2D() : QVector2D() {}
+MyQVector2D(Qt::Initialization arg0) : QVector2D(arg0) {}
+MyQVector2D(float xpos, float ypos) : QVector2D(xpos, ypos) {}
+MyQVector2D(const QPoint & point) : QVector2D(point) {}
+MyQVector2D(const QPointF & point) : QVector2D(point) {}
+MyQVector2D(const QVector3D & vector) : QVector2D(vector) {}
+MyQVector2D(const QVector4D & vector) : QVector2D(vector) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:59
+// [-2] void QVector2D()
 extern "C"
 void* C_ZN9QVector2DC1Ev() {
-  return new QVector2D();
+  (MyQVector2D*)(0);
+  return  new MyQVector2D();
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:59
-// void QVector2D(Qt::Initialization)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:60
+// [-2] void QVector2D(Qt::Initialization)
 extern "C"
 void* C_ZN9QVector2DC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  return new QVector2D(arg0);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(arg0);
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:60
-// void QVector2D(float, float)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:61
+// [-2] void QVector2D(float, float)
 extern "C"
 void* C_ZN9QVector2DC1Eff(float xpos, float ypos) {
-  return new QVector2D(xpos, ypos);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(xpos, ypos);
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:61
-// void QVector2D(const class QPoint &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:62
+// [-2] void QVector2D(const class QPoint &)
 extern "C"
 void* C_ZN9QVector2DC1ERK6QPoint(const QPoint & point) {
-  return new QVector2D(point);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(point);
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:62
-// void QVector2D(const class QPointF &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:63
+// [-2] void QVector2D(const class QPointF &)
 extern "C"
 void* C_ZN9QVector2DC1ERK7QPointF(const QPointF & point) {
-  return new QVector2D(point);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(point);
 }
-// /usr/include/qt/QtGui/qvector2d.h:64
-// void QVector2D(const class QVector3D &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:65
+// [-2] void QVector2D(const class QVector3D &)
 extern "C"
 void* C_ZN9QVector2DC1ERK9QVector3D(const QVector3D & vector) {
-  return new QVector2D(vector);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(vector);
 }
-// /usr/include/qt/QtGui/qvector2d.h:67
-// void QVector2D(const class QVector4D &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:68
+// [-2] void QVector2D(const class QVector4D &)
 extern "C"
 void* C_ZN9QVector2DC1ERK9QVector4D(const QVector4D & vector) {
-  return new QVector2D(vector);
+  (MyQVector2D*)(0);
+  return  new MyQVector2D(vector);
 }
-// /usr/include/qt/QtGui/qvector2d.h:70
-// bool isNull()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:71
+// [1] bool isNull()
 extern "C"
-void C_ZNK9QVector2D6isNullEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->isNull();
+bool C_ZNK9QVector2D6isNullEv(void *this_) {
+  return (bool)((QVector2D*)this_)->isNull();
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:72
-// float x()
-extern "C"
-void C_ZNK9QVector2D1xEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->x();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:73
-// float y()
+// [4] float x()
 extern "C"
-void C_ZNK9QVector2D1yEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->y();
+float C_ZNK9QVector2D1xEv(void *this_) {
+  return (float)((QVector2D*)this_)->x();
 }
-// /usr/include/qt/QtGui/qvector2d.h:75
-// void setX(float)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:74
+// [4] float y()
+extern "C"
+float C_ZNK9QVector2D1yEv(void *this_) {
+  return (float)((QVector2D*)this_)->y();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:76
+// [-2] void setX(float)
 extern "C"
 void C_ZN9QVector2D4setXEf(void *this_, float x) {
   ((QVector2D*)this_)->setX(x);
 }
-// /usr/include/qt/QtGui/qvector2d.h:76
-// void setY(float)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:77
+// [-2] void setY(float)
 extern "C"
 void C_ZN9QVector2D4setYEf(void *this_, float y) {
   ((QVector2D*)this_)->setY(y);
 }
-// /usr/include/qt/QtGui/qvector2d.h:81
-// float length()
-extern "C"
-void C_ZNK9QVector2D6lengthEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->length();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:82
-// float lengthSquared()
+// [4] float length()
 extern "C"
-void C_ZNK9QVector2D13lengthSquaredEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->lengthSquared();
+float C_ZNK9QVector2D6lengthEv(void *this_) {
+  return (float)((QVector2D*)this_)->length();
 }
-// /usr/include/qt/QtGui/qvector2d.h:84
-// QVector2D normalized()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:83
+// [4] float lengthSquared()
 extern "C"
-void C_ZNK9QVector2D10normalizedEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->normalized();
+float C_ZNK9QVector2D13lengthSquaredEv(void *this_) {
+  return (float)((QVector2D*)this_)->lengthSquared();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:85
-// void normalize()
+// [8] QVector2D normalized()
+extern "C"
+void* C_ZNK9QVector2D10normalizedEv(void *this_) {
+  auto rv = ((QVector2D*)this_)->normalized();
+return new QVector2D(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:86
+// [-2] void normalize()
 extern "C"
 void C_ZN9QVector2D9normalizeEv(void *this_) {
   ((QVector2D*)this_)->normalize();
 }
-// /usr/include/qt/QtGui/qvector2d.h:87
-// float distanceToPoint(const class QVector2D &)
-extern "C"
-void C_ZNK9QVector2D15distanceToPointERKS_(void *this_, const QVector2D & point) {
-  /*return*/ ((QVector2D*)this_)->distanceToPoint(point);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:88
-// float distanceToLine(const class QVector2D &, const class QVector2D &)
+// [4] float distanceToPoint(const class QVector2D &)
 extern "C"
-void C_ZNK9QVector2D14distanceToLineERKS_S1_(void *this_, const QVector2D & point, const QVector2D & direction) {
-  /*return*/ ((QVector2D*)this_)->distanceToLine(point, direction);
+float C_ZNK9QVector2D15distanceToPointERKS_(void *this_, const QVector2D & point) {
+  return (float)((QVector2D*)this_)->distanceToPoint(point);
 }
-// static
-// /usr/include/qt/QtGui/qvector2d.h:97
-// float dotProduct(const class QVector2D &, const class QVector2D &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:89
+// [4] float distanceToLine(const class QVector2D &, const class QVector2D &)
 extern "C"
-void C_ZN9QVector2D10dotProductERKS_S1_(const QVector2D & v1, const QVector2D & v2) {
-  /*return*/ QVector2D::dotProduct(v1, v2);
+float C_ZNK9QVector2D14distanceToLineERKS_S1_(void *this_, const QVector2D & point, const QVector2D & direction) {
+  return (float)((QVector2D*)this_)->distanceToLine(point, direction);
 }
-// /usr/include/qt/QtGui/qvector2d.h:113
-// QVector3D toVector3D()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:98
+// [4] float dotProduct(const class QVector2D &, const class QVector2D &)
 extern "C"
-void C_ZNK9QVector2D10toVector3DEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->toVector3D();
+float C_ZN9QVector2D10dotProductERKS_S1_(const QVector2D & v1, const QVector2D & v2) {
+  return (float)QVector2D::dotProduct(v1, v2);
 }
-// /usr/include/qt/QtGui/qvector2d.h:116
-// QVector4D toVector4D()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:114
+// [12] QVector3D toVector3D()
 extern "C"
-void C_ZNK9QVector2D10toVector4DEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->toVector4D();
+void* C_ZNK9QVector2D10toVector3DEv(void *this_) {
+  auto rv = ((QVector2D*)this_)->toVector3D();
+return new QVector3D(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qvector2d.h:119
-// QPoint toPoint()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:117
+// [16] QVector4D toVector4D()
 extern "C"
-void C_ZNK9QVector2D7toPointEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->toPoint();
+void* C_ZNK9QVector2D10toVector4DEv(void *this_) {
+  auto rv = ((QVector2D*)this_)->toVector4D();
+return new QVector4D(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector2d.h:120
-// QPointF toPointF()
+// [8] QPoint toPoint()
 extern "C"
-void C_ZNK9QVector2D8toPointFEv(void *this_) {
-  /*return*/ ((QVector2D*)this_)->toPointF();
+void* C_ZNK9QVector2D7toPointEv(void *this_) {
+  auto rv = ((QVector2D*)this_)->toPoint();
+return new QPoint(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:121
+// [16] QPointF toPointF()
+extern "C"
+void* C_ZNK9QVector2D8toPointFEv(void *this_) {
+  auto rv = ((QVector2D*)this_)->toPointF();
+return new QPointF(rv);
 }
 //  main block end

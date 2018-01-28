@@ -3,18 +3,27 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QDragLeaveEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:660
-// void QDragLeaveEvent()
+
+class MyQDragLeaveEvent : public QDragLeaveEvent {
+public:
+MyQDragLeaveEvent() : QDragLeaveEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:671
+// [-2] void QDragLeaveEvent()
 extern "C"
 void* C_ZN15QDragLeaveEventC1Ev() {
-  return new QDragLeaveEvent();
+  (MyQDragLeaveEvent*)(0);
+  return  new MyQDragLeaveEvent();
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:661
-// void ~QDragLeaveEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:672
+// [-2] void ~QDragLeaveEvent()
 extern "C"
 void C_ZN15QDragLeaveEventD1Ev(void *this_) {
   delete (QDragLeaveEvent*)(this_);

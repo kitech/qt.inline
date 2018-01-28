@@ -3,74 +3,99 @@
 #include <qfontcombobox.h>
 #include <QtWidgets>
 
+// QFontComboBox is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qfontcombobox.h:55
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:90
+// [1] bool event(class QEvent *)
 extern "C"
-void C_ZNK13QFontComboBox10metaObjectEv(void *this_) {
-  /*return*/ ((QFontComboBox*)this_)->metaObject();
+void* callback_ZN13QFontComboBox5eventEP6QEvent = 0;
+extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
+{ callback_ZN13QFontComboBox5eventEP6QEvent = cbfn; }
+
+class MyQFontComboBox : public QFontComboBox {
+public:
+MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
+// bool event(class QEvent *)
+// bool event(class QEvent *)
+virtual bool event(QEvent * e) {
+  if (callback_ZN13QFontComboBox5eventEP6QEvent != 0) {
+  // callback_ZN13QFontComboBox5eventEP6QEvent(e);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:55
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK13QFontComboBox10metaObjectEv(void *this_) {
+  return (void*)((QFontComboBox*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qfontcombobox.h:62
-// void QFontComboBox(class QWidget *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:61
+// [-2] void QFontComboBox(class QWidget *)
 extern "C"
 void* C_ZN13QFontComboBoxC1EP7QWidget(QWidget * parent) {
-  return new QFontComboBox(parent);
+  (MyQFontComboBox*)(0);
+  return  new MyQFontComboBox(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qfontcombobox.h:63
-// void ~QFontComboBox()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:62
+// [-2] void ~QFontComboBox()
 extern "C"
 void C_ZN13QFontComboBoxD1Ev(void *this_) {
   delete (QFontComboBox*)(this_);
 }
-// /usr/include/qt/QtWidgets/qfontcombobox.h:65
-// void setWritingSystem(class QFontDatabase::WritingSystem)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:64
+// [-2] void setWritingSystem(class QFontDatabase::WritingSystem)
 extern "C"
 void C_ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE(void *this_, QFontDatabase::WritingSystem arg0) {
   ((QFontComboBox*)this_)->setWritingSystem(arg0);
 }
-// /usr/include/qt/QtWidgets/qfontcombobox.h:66
-// QFontDatabase::WritingSystem writingSystem()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:65
+// [4] QFontDatabase::WritingSystem writingSystem()
 extern "C"
-void C_ZNK13QFontComboBox13writingSystemEv(void *this_) {
-  /*return*/ ((QFontComboBox*)this_)->writingSystem();
+QFontDatabase::WritingSystem C_ZNK13QFontComboBox13writingSystemEv(void *this_) {
+  return (QFontDatabase::WritingSystem)((QFontComboBox*)this_)->writingSystem();
 }
-// /usr/include/qt/QtWidgets/qfontcombobox.h:77
-// void setFontFilters(FontFilters)
-extern "C"
-void C_ZN13QFontComboBox14setFontFiltersE6QFlagsINS_10FontFilterEE(void *this_, QFlags<QFontComboBox::FontFilter> filters) {
-  ((QFontComboBox*)this_)->setFontFilters(filters);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:78
-// FontFilters fontFilters()
+// [4] QFontComboBox::FontFilters fontFilters()
 extern "C"
 void C_ZNK13QFontComboBox11fontFiltersEv(void *this_) {
-  /*return*/ ((QFontComboBox*)this_)->fontFilters();
+  auto rv = ((QFontComboBox*)this_)->fontFilters();
+/*return rv;*/
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:80
-// QFont currentFont()
+// [16] QFont currentFont()
 extern "C"
-void C_ZNK13QFontComboBox11currentFontEv(void *this_) {
-  /*return*/ ((QFontComboBox*)this_)->currentFont();
+void* C_ZNK13QFontComboBox11currentFontEv(void *this_) {
+  auto rv = ((QFontComboBox*)this_)->currentFont();
+return new QFont(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:81
-// QSize sizeHint()
+// [8] QSize sizeHint()
 extern "C"
-void C_ZNK13QFontComboBox8sizeHintEv(void *this_) {
-  /*return*/ ((QFontComboBox*)this_)->sizeHint();
+void* C_ZNK13QFontComboBox8sizeHintEv(void *this_) {
+  auto rv = ((QFontComboBox*)this_)->sizeHint();
+return new QSize(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:84
-// void setCurrentFont(const class QFont &)
+// [-2] void setCurrentFont(const class QFont &)
 extern "C"
 void C_ZN13QFontComboBox14setCurrentFontERK5QFont(void *this_, const QFont & f) {
   ((QFontComboBox*)this_)->setCurrentFont(f);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:87
-// void currentFontChanged(const class QFont &)
+// [-2] void currentFontChanged(const class QFont &)
 extern "C"
 void C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *this_, const QFont & f) {
   ((QFontComboBox*)this_)->currentFontChanged(f);

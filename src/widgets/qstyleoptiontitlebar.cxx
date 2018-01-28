@@ -3,13 +3,30 @@
 #include <qstyleoption.h>
 #include <QtWidgets>
 
+// QStyleOptionTitleBar is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qstyleoption.h:607
-// void QStyleOptionTitleBar()
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:623
+// [-2] void QStyleOptionTitleBar(int)
+extern "C"
+void* callback_ZN20QStyleOptionTitleBarC1Ei = 0;
+extern "C" void set_callback_ZN20QStyleOptionTitleBarC1Ei(void*cbfn)
+{ callback_ZN20QStyleOptionTitleBarC1Ei = cbfn; }
+
+class MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
+public:
+MyQStyleOptionTitleBar() : QStyleOptionTitleBar() {}
+MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:619
+// [-2] void QStyleOptionTitleBar()
 extern "C"
 void* C_ZN20QStyleOptionTitleBarC1Ev() {
-  return new QStyleOptionTitleBar();
+  (MyQStyleOptionTitleBar*)(0);
+  return  new MyQStyleOptionTitleBar();
 }
 //  main block end

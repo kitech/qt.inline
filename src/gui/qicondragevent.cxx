@@ -3,18 +3,27 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QIconDragEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:475
-// void QIconDragEvent()
+
+class MyQIconDragEvent : public QIconDragEvent {
+public:
+MyQIconDragEvent() : QIconDragEvent() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:485
+// [-2] void QIconDragEvent()
 extern "C"
 void* C_ZN14QIconDragEventC1Ev() {
-  return new QIconDragEvent();
+  (MyQIconDragEvent*)(0);
+  return  new MyQIconDragEvent();
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:476
-// void ~QIconDragEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:486
+// [-2] void ~QIconDragEvent()
 extern "C"
 void C_ZN14QIconDragEventD1Ev(void *this_) {
   delete (QIconDragEvent*)(this_);

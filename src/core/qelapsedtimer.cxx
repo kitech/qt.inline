@@ -3,88 +3,106 @@
 #include <qelapsedtimer.h>
 #include <QtCore>
 
+// QElapsedTimer is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQElapsedTimer : public QElapsedTimer {
+public:
+MyQElapsedTimer() : QElapsedTimer() {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:59
-// void QElapsedTimer()
+// [-2] void QElapsedTimer()
 extern "C"
 void* C_ZN13QElapsedTimerC1Ev() {
-  return new QElapsedTimer();
+  (MyQElapsedTimer*)(0);
+  return  new MyQElapsedTimer();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:65
-// QElapsedTimer::ClockType clockType()
+// [4] QElapsedTimer::ClockType clockType()
 extern "C"
-void C_ZN13QElapsedTimer9clockTypeEv() {
-  /*return*/ QElapsedTimer::clockType();
+QElapsedTimer::ClockType C_ZN13QElapsedTimer9clockTypeEv() {
+  return (QElapsedTimer::ClockType)QElapsedTimer::clockType();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:66
-// bool isMonotonic()
+// [1] bool isMonotonic()
 extern "C"
-void C_ZN13QElapsedTimer11isMonotonicEv() {
-  /*return*/ QElapsedTimer::isMonotonic();
+bool C_ZN13QElapsedTimer11isMonotonicEv() {
+  return (bool)QElapsedTimer::isMonotonic();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:68
-// void start()
+// [-2] void start()
 extern "C"
 void C_ZN13QElapsedTimer5startEv(void *this_) {
   ((QElapsedTimer*)this_)->start();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:69
-// qint64 restart()
+// [8] qint64 restart()
 extern "C"
-void C_ZN13QElapsedTimer7restartEv(void *this_) {
-  /*return*/ ((QElapsedTimer*)this_)->restart();
+qint64 C_ZN13QElapsedTimer7restartEv(void *this_) {
+  return (qint64)((QElapsedTimer*)this_)->restart();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:70
-// void invalidate()
+// [-2] void invalidate()
 extern "C"
 void C_ZN13QElapsedTimer10invalidateEv(void *this_) {
   ((QElapsedTimer*)this_)->invalidate();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:71
-// bool isValid()
+// [1] bool isValid()
 extern "C"
-void C_ZNK13QElapsedTimer7isValidEv(void *this_) {
-  /*return*/ ((QElapsedTimer*)this_)->isValid();
+bool C_ZNK13QElapsedTimer7isValidEv(void *this_) {
+  return (bool)((QElapsedTimer*)this_)->isValid();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:73
-// qint64 nsecsElapsed()
+// [8] qint64 nsecsElapsed()
 extern "C"
-void C_ZNK13QElapsedTimer12nsecsElapsedEv(void *this_) {
-  /*return*/ ((QElapsedTimer*)this_)->nsecsElapsed();
+qint64 C_ZNK13QElapsedTimer12nsecsElapsedEv(void *this_) {
+  return (qint64)((QElapsedTimer*)this_)->nsecsElapsed();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:74
-// qint64 elapsed()
+// [8] qint64 elapsed()
 extern "C"
-void C_ZNK13QElapsedTimer7elapsedEv(void *this_) {
-  /*return*/ ((QElapsedTimer*)this_)->elapsed();
+qint64 C_ZNK13QElapsedTimer7elapsedEv(void *this_) {
+  return (qint64)((QElapsedTimer*)this_)->elapsed();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:75
-// bool hasExpired(qint64)
+// [1] bool hasExpired(qint64)
 extern "C"
-void C_ZNK13QElapsedTimer10hasExpiredEx(void *this_, qint64 timeout) {
-  /*return*/ ((QElapsedTimer*)this_)->hasExpired(timeout);
+bool C_ZNK13QElapsedTimer10hasExpiredEx(void *this_, qint64 timeout) {
+  return (bool)((QElapsedTimer*)this_)->hasExpired(timeout);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:77
-// qint64 msecsSinceReference()
+// [8] qint64 msecsSinceReference()
 extern "C"
-void C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *this_) {
-  /*return*/ ((QElapsedTimer*)this_)->msecsSinceReference();
+qint64 C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *this_) {
+  return (qint64)((QElapsedTimer*)this_)->msecsSinceReference();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:78
-// qint64 msecsTo(const class QElapsedTimer &)
+// [8] qint64 msecsTo(const class QElapsedTimer &)
 extern "C"
-void C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, const QElapsedTimer & other) {
-  /*return*/ ((QElapsedTimer*)this_)->msecsTo(other);
+qint64 C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, const QElapsedTimer & other) {
+  return (qint64)((QElapsedTimer*)this_)->msecsTo(other);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:79
-// qint64 secsTo(const class QElapsedTimer &)
+// [8] qint64 secsTo(const class QElapsedTimer &)
 extern "C"
-void C_ZNK13QElapsedTimer6secsToERKS_(void *this_, const QElapsedTimer & other) {
-  /*return*/ ((QElapsedTimer*)this_)->secsTo(other);
+qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, const QElapsedTimer & other) {
+  return (qint64)((QElapsedTimer*)this_)->secsTo(other);
 }
 //  main block end

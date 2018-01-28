@@ -3,107 +3,131 @@
 #include <qgraphicsanchorlayout.h>
 #include <QtWidgets>
 
+// QGraphicsAnchorLayout is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:80
-// void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:107
+// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+extern "C"
+void* callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF = 0;
+extern "C" void set_callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
+{ callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF = cbfn; }
+
+class MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
+public:
+MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(parent) {}
+// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
+virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
+  if (callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
+  // callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
+}}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:79
+// [-2] void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
 extern "C"
 void* C_ZN21QGraphicsAnchorLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
-  return new QGraphicsAnchorLayout(parent);
+  (MyQGraphicsAnchorLayout*)(0);
+  return  new MyQGraphicsAnchorLayout(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:81
-// void ~QGraphicsAnchorLayout()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:80
+// [-2] void ~QGraphicsAnchorLayout()
 extern "C"
 void C_ZN21QGraphicsAnchorLayoutD1Ev(void *this_) {
   delete (QGraphicsAnchorLayout*)(this_);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:83
-// QGraphicsAnchor * addAnchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:82
+// [8] QGraphicsAnchor * addAnchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
 extern "C"
-void C_ZN21QGraphicsAnchorLayout9addAnchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->addAnchor(firstItem, firstEdge, secondItem, secondEdge);
+void* C_ZN21QGraphicsAnchorLayout9addAnchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
+  return (void*)((QGraphicsAnchorLayout*)this_)->addAnchor(firstItem, firstEdge, secondItem, secondEdge);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:85
-// QGraphicsAnchor * anchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:84
+// [8] QGraphicsAnchor * anchor(class QGraphicsLayoutItem *, Qt::AnchorPoint, class QGraphicsLayoutItem *, Qt::AnchorPoint)
 extern "C"
-void C_ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->anchor(firstItem, firstEdge, secondItem, secondEdge);
+void* C_ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::AnchorPoint firstEdge, QGraphicsLayoutItem * secondItem, Qt::AnchorPoint secondEdge) {
+  return (void*)((QGraphicsAnchorLayout*)this_)->anchor(firstItem, firstEdge, secondItem, secondEdge);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:88
-// void addCornerAnchors(class QGraphicsLayoutItem *, Qt::Corner, class QGraphicsLayoutItem *, Qt::Corner)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:87
+// [-2] void addCornerAnchors(class QGraphicsLayoutItem *, Qt::Corner, class QGraphicsLayoutItem *, Qt::Corner)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout16addCornerAnchorsEP19QGraphicsLayoutItemN2Qt6CornerES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::Corner firstCorner, QGraphicsLayoutItem * secondItem, Qt::Corner secondCorner) {
   ((QGraphicsAnchorLayout*)this_)->addCornerAnchors(firstItem, firstCorner, secondItem, secondCorner);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:91
-// void addAnchors(class QGraphicsLayoutItem *, class QGraphicsLayoutItem *, Qt::Orientations)
-extern "C"
-void C_ZN21QGraphicsAnchorLayout10addAnchorsEP19QGraphicsLayoutItemS1_6QFlagsIN2Qt11OrientationEE(void *this_, QGraphicsLayoutItem * firstItem, QGraphicsLayoutItem * secondItem, QFlags<Qt::Orientation> orientations) {
-  ((QGraphicsAnchorLayout*)this_)->addAnchors(firstItem, secondItem, orientations);
-}
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:95
-// void setHorizontalSpacing(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:94
+// [-2] void setHorizontalSpacing(qreal)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout20setHorizontalSpacingEd(void *this_, qreal spacing) {
   ((QGraphicsAnchorLayout*)this_)->setHorizontalSpacing(spacing);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:96
-// void setVerticalSpacing(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:95
+// [-2] void setVerticalSpacing(qreal)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout18setVerticalSpacingEd(void *this_, qreal spacing) {
   ((QGraphicsAnchorLayout*)this_)->setVerticalSpacing(spacing);
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:97
-// void setSpacing(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:96
+// [-2] void setSpacing(qreal)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout10setSpacingEd(void *this_, qreal spacing) {
   ((QGraphicsAnchorLayout*)this_)->setSpacing(spacing);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:97
+// [8] qreal horizontalSpacing()
+extern "C"
+qreal C_ZNK21QGraphicsAnchorLayout17horizontalSpacingEv(void *this_) {
+  return (qreal)((QGraphicsAnchorLayout*)this_)->horizontalSpacing();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:98
-// qreal horizontalSpacing()
+// [8] qreal verticalSpacing()
 extern "C"
-void C_ZNK21QGraphicsAnchorLayout17horizontalSpacingEv(void *this_) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->horizontalSpacing();
+qreal C_ZNK21QGraphicsAnchorLayout15verticalSpacingEv(void *this_) {
+  return (qreal)((QGraphicsAnchorLayout*)this_)->verticalSpacing();
 }
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:99
-// qreal verticalSpacing()
-extern "C"
-void C_ZNK21QGraphicsAnchorLayout15verticalSpacingEv(void *this_) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->verticalSpacing();
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:101
-// void removeAt(int)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:100
+// [-2] void removeAt(int)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout8removeAtEi(void *this_, int index) {
   ((QGraphicsAnchorLayout*)this_)->removeAt(index);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:102
-// void setGeometry(const class QRectF &)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:101
+// [-2] void setGeometry(const class QRectF &)
 extern "C"
 void C_ZN21QGraphicsAnchorLayout11setGeometryERK6QRectF(void *this_, const QRectF & rect) {
   ((QGraphicsAnchorLayout*)this_)->setGeometry(rect);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:102
+// [4] int count()
+extern "C"
+int C_ZNK21QGraphicsAnchorLayout5countEv(void *this_) {
+  return (int)((QGraphicsAnchorLayout*)this_)->count();
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:103
-// int count()
+// [8] QGraphicsLayoutItem * itemAt(int)
 extern "C"
-void C_ZNK21QGraphicsAnchorLayout5countEv(void *this_) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->count();
+void* C_ZNK21QGraphicsAnchorLayout6itemAtEi(void *this_, int index) {
+  return (void*)((QGraphicsAnchorLayout*)this_)->itemAt(index);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:104
-// QGraphicsLayoutItem * itemAt(int)
-extern "C"
-void C_ZNK21QGraphicsAnchorLayout6itemAtEi(void *this_, int index) {
-  /*return*/ ((QGraphicsAnchorLayout*)this_)->itemAt(index);
-}
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:106
-// void invalidate()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:105
+// [-2] void invalidate()
 extern "C"
 void C_ZN21QGraphicsAnchorLayout10invalidateEv(void *this_) {
   ((QGraphicsAnchorLayout*)this_)->invalidate();

@@ -3,142 +3,162 @@
 #include <qbitarray.h>
 #include <QtCore>
 
+// QBitArray is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQBitArray : public QBitArray {
+public:
+MyQBitArray() : QBitArray() {}
+MyQBitArray(int size, bool val) : QBitArray(size, val) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:57
-// void QBitArray()
+// [-2] void QBitArray()
 extern "C"
 void* C_ZN9QBitArrayC1Ev() {
-  return new QBitArray();
+  (MyQBitArray*)(0);
+  return  new MyQBitArray();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:58
-// void QBitArray(int, _Bool)
+// [-2] void QBitArray(int, _Bool)
 extern "C"
 void* C_ZN9QBitArrayC1Eib(int size, bool val) {
-  return new QBitArray(size, val);
+  (MyQBitArray*)(0);
+  return  new MyQBitArray(size, val);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:67
-// void swap(class QBitArray &)
+// [-2] void swap(class QBitArray &)
 extern "C"
 void C_ZN9QBitArray4swapERS_(void *this_, QBitArray & other) {
   ((QBitArray*)this_)->swap(other);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:69
-// int size()
+// [4] int size()
 extern "C"
-void C_ZNK9QBitArray4sizeEv(void *this_) {
-  /*return*/ ((QBitArray*)this_)->size();
+int C_ZNK9QBitArray4sizeEv(void *this_) {
+  return (int)((QBitArray*)this_)->size();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:70
-// int count()
+// [4] int count()
 extern "C"
-void C_ZNK9QBitArray5countEv(void *this_) {
-  /*return*/ ((QBitArray*)this_)->count();
+int C_ZNK9QBitArray5countEv(void *this_) {
+  return (int)((QBitArray*)this_)->count();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:71
-// int count(_Bool)
+// [4] int count(_Bool)
 extern "C"
-void C_ZNK9QBitArray5countEb(void *this_, bool on) {
-  /*return*/ ((QBitArray*)this_)->count(on);
+int C_ZNK9QBitArray5countEb(void *this_, bool on) {
+  return (int)((QBitArray*)this_)->count(on);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:73
-// bool isEmpty()
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK9QBitArray7isEmptyEv(void *this_) {
-  /*return*/ ((QBitArray*)this_)->isEmpty();
+bool C_ZNK9QBitArray7isEmptyEv(void *this_) {
+  return (bool)((QBitArray*)this_)->isEmpty();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:74
-// bool isNull()
+// [1] bool isNull()
 extern "C"
-void C_ZNK9QBitArray6isNullEv(void *this_) {
-  /*return*/ ((QBitArray*)this_)->isNull();
+bool C_ZNK9QBitArray6isNullEv(void *this_) {
+  return (bool)((QBitArray*)this_)->isNull();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:76
-// void resize(int)
+// [-2] void resize(int)
 extern "C"
 void C_ZN9QBitArray6resizeEi(void *this_, int size) {
   ((QBitArray*)this_)->resize(size);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:78
-// void detach()
+// [-2] void detach()
 extern "C"
 void C_ZN9QBitArray6detachEv(void *this_) {
   ((QBitArray*)this_)->detach();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:79
-// bool isDetached()
+// [1] bool isDetached()
 extern "C"
-void C_ZNK9QBitArray10isDetachedEv(void *this_) {
-  /*return*/ ((QBitArray*)this_)->isDetached();
+bool C_ZNK9QBitArray10isDetachedEv(void *this_) {
+  return (bool)((QBitArray*)this_)->isDetached();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:80
-// void clear()
+// [-2] void clear()
 extern "C"
 void C_ZN9QBitArray5clearEv(void *this_) {
   ((QBitArray*)this_)->clear();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:82
-// bool testBit(int)
+// [1] bool testBit(int)
 extern "C"
-void C_ZNK9QBitArray7testBitEi(void *this_, int i) {
-  /*return*/ ((QBitArray*)this_)->testBit(i);
+bool C_ZNK9QBitArray7testBitEi(void *this_, int i) {
+  return (bool)((QBitArray*)this_)->testBit(i);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:83
-// void setBit(int)
+// [-2] void setBit(int)
 extern "C"
 void C_ZN9QBitArray6setBitEi(void *this_, int i) {
   ((QBitArray*)this_)->setBit(i);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:84
-// void setBit(int, _Bool)
+// [-2] void setBit(int, _Bool)
 extern "C"
 void C_ZN9QBitArray6setBitEib(void *this_, int i, bool val) {
   ((QBitArray*)this_)->setBit(i, val);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:85
-// void clearBit(int)
+// [-2] void clearBit(int)
 extern "C"
 void C_ZN9QBitArray8clearBitEi(void *this_, int i) {
   ((QBitArray*)this_)->clearBit(i);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:86
-// bool toggleBit(int)
+// [1] bool toggleBit(int)
 extern "C"
-void C_ZN9QBitArray9toggleBitEi(void *this_, int i) {
-  /*return*/ ((QBitArray*)this_)->toggleBit(i);
+bool C_ZN9QBitArray9toggleBitEi(void *this_, int i) {
+  return (bool)((QBitArray*)this_)->toggleBit(i);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:88
-// bool at(int)
+// [1] bool at(int)
 extern "C"
-void C_ZNK9QBitArray2atEi(void *this_, int i) {
-  /*return*/ ((QBitArray*)this_)->at(i);
+bool C_ZNK9QBitArray2atEi(void *this_, int i) {
+  return (bool)((QBitArray*)this_)->at(i);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:102
-// bool fill(_Bool, int)
+// [1] bool fill(_Bool, int)
 extern "C"
-void C_ZN9QBitArray4fillEbi(void *this_, bool val, int size) {
-  /*return*/ ((QBitArray*)this_)->fill(val, size);
+bool C_ZN9QBitArray4fillEbi(void *this_, bool val, int size) {
+  return (bool)((QBitArray*)this_)->fill(val, size);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:103
-// void fill(_Bool, int, int)
+// [-2] void fill(_Bool, int, int)
 extern "C"
 void C_ZN9QBitArray4fillEbii(void *this_, bool val, int first, int last) {
   ((QBitArray*)this_)->fill(val, first, last);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:105
-// void truncate(int)
+// [-2] void truncate(int)
 extern "C"
 void C_ZN9QBitArray8truncateEi(void *this_, int pos) {
   ((QBitArray*)this_)->truncate(pos);

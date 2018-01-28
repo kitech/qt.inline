@@ -3,153 +3,178 @@
 #include <qmimedata.h>
 #include <QtCore>
 
+// QMimeData is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtCore/qmimedata.h:54
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:88
+// [16] QVariant retrieveData(const class QString &, class QVariant::Type)
 extern "C"
-void C_ZNK9QMimeData10metaObjectEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->metaObject();
+void* callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE = 0;
+extern "C" void set_callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(void*cbfn)
+{ callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE = cbfn; }
+
+class MyQMimeData : public QMimeData {
+public:
+MyQMimeData() : QMimeData() {}
+// QVariant retrieveData(const class QString &, class QVariant::Type)
+// QVariant retrieveData(const class QString &, class QVariant::Type)
+virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) {
+  if (callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE != 0) {
+  // callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(mimetype, preferredType);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:54
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK9QMimeData10metaObjectEv(void *this_) {
+  return (void*)((QMimeData*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:56
-// void QMimeData()
+// [-2] void QMimeData()
 extern "C"
 void* C_ZN9QMimeDataC1Ev() {
-  return new QMimeData();
+  (MyQMimeData*)(0);
+  return  new MyQMimeData();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:57
-// void ~QMimeData()
+// [-2] void ~QMimeData()
 extern "C"
 void C_ZN9QMimeDataD1Ev(void *this_) {
   delete (QMimeData*)(this_);
 }
-// /usr/include/qt/QtCore/qmimedata.h:59
-// QList<QUrl> urls()
-extern "C"
-void C_ZNK9QMimeData4urlsEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->urls();
-}
-// /usr/include/qt/QtCore/qmimedata.h:60
-// void setUrls(const QList<class QUrl> &)
-extern "C"
-void C_ZN9QMimeData7setUrlsERK5QListI4QUrlE(void *this_, const QList<QUrl> & urls) {
-  ((QMimeData*)this_)->setUrls(urls);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:61
-// bool hasUrls()
+// [1] bool hasUrls()
 extern "C"
-void C_ZNK9QMimeData7hasUrlsEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->hasUrls();
+bool C_ZNK9QMimeData7hasUrlsEv(void *this_) {
+  return (bool)((QMimeData*)this_)->hasUrls();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:63
-// QString text()
+// [8] QString text()
 extern "C"
-void C_ZNK9QMimeData4textEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->text();
+void* C_ZNK9QMimeData4textEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->text();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:64
-// void setText(const class QString &)
+// [-2] void setText(const class QString &)
 extern "C"
 void C_ZN9QMimeData7setTextERK7QString(void *this_, const QString & text) {
   ((QMimeData*)this_)->setText(text);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:65
-// bool hasText()
+// [1] bool hasText()
 extern "C"
-void C_ZNK9QMimeData7hasTextEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->hasText();
+bool C_ZNK9QMimeData7hasTextEv(void *this_) {
+  return (bool)((QMimeData*)this_)->hasText();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:67
-// QString html()
+// [8] QString html()
 extern "C"
-void C_ZNK9QMimeData4htmlEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->html();
+void* C_ZNK9QMimeData4htmlEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->html();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:68
-// void setHtml(const class QString &)
+// [-2] void setHtml(const class QString &)
 extern "C"
 void C_ZN9QMimeData7setHtmlERK7QString(void *this_, const QString & html) {
   ((QMimeData*)this_)->setHtml(html);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:69
-// bool hasHtml()
+// [1] bool hasHtml()
 extern "C"
-void C_ZNK9QMimeData7hasHtmlEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->hasHtml();
+bool C_ZNK9QMimeData7hasHtmlEv(void *this_) {
+  return (bool)((QMimeData*)this_)->hasHtml();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:71
-// QVariant imageData()
+// [16] QVariant imageData()
 extern "C"
-void C_ZNK9QMimeData9imageDataEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->imageData();
+void* C_ZNK9QMimeData9imageDataEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->imageData();
+return new QVariant(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:72
-// void setImageData(const class QVariant &)
+// [-2] void setImageData(const class QVariant &)
 extern "C"
 void C_ZN9QMimeData12setImageDataERK8QVariant(void *this_, const QVariant & image) {
   ((QMimeData*)this_)->setImageData(image);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:73
-// bool hasImage()
+// [1] bool hasImage()
 extern "C"
-void C_ZNK9QMimeData8hasImageEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->hasImage();
+bool C_ZNK9QMimeData8hasImageEv(void *this_) {
+  return (bool)((QMimeData*)this_)->hasImage();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:75
-// QVariant colorData()
+// [16] QVariant colorData()
 extern "C"
-void C_ZNK9QMimeData9colorDataEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->colorData();
+void* C_ZNK9QMimeData9colorDataEv(void *this_) {
+  auto rv = ((QMimeData*)this_)->colorData();
+return new QVariant(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:76
-// void setColorData(const class QVariant &)
+// [-2] void setColorData(const class QVariant &)
 extern "C"
 void C_ZN9QMimeData12setColorDataERK8QVariant(void *this_, const QVariant & color) {
   ((QMimeData*)this_)->setColorData(color);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:77
-// bool hasColor()
+// [1] bool hasColor()
 extern "C"
-void C_ZNK9QMimeData8hasColorEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->hasColor();
+bool C_ZNK9QMimeData8hasColorEv(void *this_) {
+  return (bool)((QMimeData*)this_)->hasColor();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:79
-// QByteArray data(const class QString &)
+// [8] QByteArray data(const class QString &)
 extern "C"
-void C_ZNK9QMimeData4dataERK7QString(void *this_, const QString & mimetype) {
-  /*return*/ ((QMimeData*)this_)->data(mimetype);
+void* C_ZNK9QMimeData4dataERK7QString(void *this_, const QString & mimetype) {
+  auto rv = ((QMimeData*)this_)->data(mimetype);
+return new QByteArray(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:80
-// void setData(const class QString &, const class QByteArray &)
+// [-2] void setData(const class QString &, const class QByteArray &)
 extern "C"
 void C_ZN9QMimeData7setDataERK7QStringRK10QByteArray(void *this_, const QString & mimetype, const QByteArray & data) {
   ((QMimeData*)this_)->setData(mimetype, data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:81
-// void removeFormat(const class QString &)
+// [-2] void removeFormat(const class QString &)
 extern "C"
 void C_ZN9QMimeData12removeFormatERK7QString(void *this_, const QString & mimetype) {
   ((QMimeData*)this_)->removeFormat(mimetype);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:83
-// bool hasFormat(const class QString &)
+// [1] bool hasFormat(const class QString &)
 extern "C"
-void C_ZNK9QMimeData9hasFormatERK7QString(void *this_, const QString & mimetype) {
-  /*return*/ ((QMimeData*)this_)->hasFormat(mimetype);
+bool C_ZNK9QMimeData9hasFormatERK7QString(void *this_, const QString & mimetype) {
+  return (bool)((QMimeData*)this_)->hasFormat(mimetype);
 }
-// virtual
-// /usr/include/qt/QtCore/qmimedata.h:84
-// QStringList formats()
-extern "C"
-void C_ZNK9QMimeData7formatsEv(void *this_) {
-  /*return*/ ((QMimeData*)this_)->formats();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:86
-// void clear()
+// [-2] void clear()
 extern "C"
 void C_ZN9QMimeData5clearEv(void *this_) {
   ((QMimeData*)this_)->clear();

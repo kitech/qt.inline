@@ -3,84 +3,83 @@
 #include <qaccessible.h>
 #include <QtGui>
 
+// QAccessible is pure virtual: false
 //  header block end
 
 //  main block begin
-// static
-// /usr/include/qt/QtGui/qaccessible.h:411
-// void installActivationObserver(class QAccessible::ActivationObserver *)
-extern "C"
-void C_ZN11QAccessible25installActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
-  QAccessible::installActivationObserver(arg0);
-}
-// static
-// /usr/include/qt/QtGui/qaccessible.h:412
-// void removeActivationObserver(class QAccessible::ActivationObserver *)
-extern "C"
-void C_ZN11QAccessible24removeActivationObserverEPNS_18ActivationObserverE(QAccessible::ActivationObserver * arg0) {
-  QAccessible::removeActivationObserver(arg0);
-}
-// static
+
+class MyQAccessible : public QAccessible {
+public:
+};
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:414
-// QAccessibleInterface * queryAccessibleInterface(class QObject *)
+// [8] QAccessibleInterface * queryAccessibleInterface(class QObject *)
 extern "C"
-void C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg0) {
-  /*return*/ QAccessible::queryAccessibleInterface(arg0);
+void* C_ZN11QAccessible24queryAccessibleInterfaceEP7QObject(QObject * arg0) {
+  return (void*)QAccessible::queryAccessibleInterface(arg0);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:415
-// Id uniqueId(class QAccessibleInterface *)
+// [4] QAccessible::Id uniqueId(class QAccessibleInterface *)
 extern "C"
-void C_ZN11QAccessible8uniqueIdEP20QAccessibleInterface(QAccessibleInterface * iface) {
-  /*return*/ QAccessible::uniqueId(iface);
+QAccessible::Id C_ZN11QAccessible8uniqueIdEP20QAccessibleInterface(QAccessibleInterface * iface) {
+  return (QAccessible::Id)QAccessible::uniqueId(iface);
 }
-// static
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:416
+// [8] QAccessibleInterface * accessibleInterface(QAccessible::Id)
+extern "C"
+void* C_ZN11QAccessible19accessibleInterfaceEj(QAccessible::Id uniqueId) {
+  return (void*)QAccessible::accessibleInterface(uniqueId);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:417
-// Id registerAccessibleInterface(class QAccessibleInterface *)
+// [4] QAccessible::Id registerAccessibleInterface(class QAccessibleInterface *)
 extern "C"
-void C_ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface(QAccessibleInterface * iface) {
-  /*return*/ QAccessible::registerAccessibleInterface(iface);
+QAccessible::Id C_ZN11QAccessible27registerAccessibleInterfaceEP20QAccessibleInterface(QAccessibleInterface * iface) {
+  return (QAccessible::Id)QAccessible::registerAccessibleInterface(iface);
 }
-// static
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:418
+// [-2] void deleteAccessibleInterface(QAccessible::Id)
+extern "C"
+void C_ZN11QAccessible25deleteAccessibleInterfaceEj(QAccessible::Id uniqueId) {
+  QAccessible::deleteAccessibleInterface(uniqueId);
+}
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:424
-// void updateAccessibility(class QAccessibleEvent *)
+// [-2] void updateAccessibility(class QAccessibleEvent *)
 extern "C"
 void C_ZN11QAccessible19updateAccessibilityEP16QAccessibleEvent(QAccessibleEvent * event) {
   QAccessible::updateAccessibility(event);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:426
-// bool isActive()
+// [1] bool isActive()
 extern "C"
-void C_ZN11QAccessible8isActiveEv() {
-  /*return*/ QAccessible::isActive();
+bool C_ZN11QAccessible8isActiveEv() {
+  return (bool)QAccessible::isActive();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:427
-// void setActive(_Bool)
+// [-2] void setActive(_Bool)
 extern "C"
 void C_ZN11QAccessible9setActiveEb(bool active) {
   QAccessible::setActive(active);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:428
-// void setRootObject(class QObject *)
+// [-2] void setRootObject(class QObject *)
 extern "C"
 void C_ZN11QAccessible13setRootObjectEP7QObject(QObject * object) {
   QAccessible::setRootObject(object);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:430
-// void cleanup()
+// [-2] void cleanup()
 extern "C"
 void C_ZN11QAccessible7cleanupEv() {
   QAccessible::cleanup();
-}
-// static
-// /usr/include/qt/QtGui/qaccessible.h:432
-// QPair<int, int> qAccessibleTextBoundaryHelper(const class QTextCursor &, enum QAccessible::TextBoundaryType)
-extern "C"
-void C_ZN11QAccessible29qAccessibleTextBoundaryHelperERK11QTextCursorNS_16TextBoundaryTypeE(const QTextCursor & cursor, QAccessible::TextBoundaryType boundaryType) {
-  /*return*/ QAccessible::qAccessibleTextBoundaryHelper(cursor, boundaryType);
 }
 //  main block end

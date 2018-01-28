@@ -3,41 +3,51 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QShortcutEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:756
-// void QShortcutEvent(const class QKeySequence &, int, _Bool)
+
+class MyQShortcutEvent : public QShortcutEvent {
+public:
+MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:767
+// [-2] void QShortcutEvent(const class QKeySequence &, int, _Bool)
 extern "C"
 void* C_ZN14QShortcutEventC1ERK12QKeySequenceib(const QKeySequence & key, int id, bool ambiguous) {
-  return new QShortcutEvent(key, id, ambiguous);
+  (MyQShortcutEvent*)(0);
+  return  new MyQShortcutEvent(key, id, ambiguous);
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:757
-// void ~QShortcutEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:768
+// [-2] void ~QShortcutEvent()
 extern "C"
 void C_ZN14QShortcutEventD1Ev(void *this_) {
   delete (QShortcutEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:759
-// const QKeySequence & key()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:770
+// [8] const QKeySequence & key()
 extern "C"
-void C_ZNK14QShortcutEvent3keyEv(void *this_) {
-  /*return*/ ((QShortcutEvent*)this_)->key();
+void* C_ZNK14QShortcutEvent3keyEv(void *this_) {
+  auto& rv = ((QShortcutEvent*)this_)->key();
+return new QKeySequence(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:760
-// int shortcutId()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:771
+// [4] int shortcutId()
 extern "C"
-void C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
-  /*return*/ ((QShortcutEvent*)this_)->shortcutId();
+int C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
+  return (int)((QShortcutEvent*)this_)->shortcutId();
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:761
-// bool isAmbiguous()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:772
+// [1] bool isAmbiguous()
 extern "C"
-void C_ZNK14QShortcutEvent11isAmbiguousEv(void *this_) {
-  /*return*/ ((QShortcutEvent*)this_)->isAmbiguous();
+bool C_ZNK14QShortcutEvent11isAmbiguousEv(void *this_) {
+  return (bool)((QShortcutEvent*)this_)->isAmbiguous();
 }
 //  main block end

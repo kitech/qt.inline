@@ -3,29 +3,45 @@
 #include <qeventloop.h>
 #include <QtCore>
 
+// QEventLoopLocker is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQEventLoopLocker : public QEventLoopLocker {
+public:
+MyQEventLoopLocker() : QEventLoopLocker() {}
+MyQEventLoopLocker(QEventLoop * loop) : QEventLoopLocker(loop) {}
+MyQEventLoopLocker(QThread * thread) : QEventLoopLocker(thread) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:93
-// void QEventLoopLocker()
+// [-2] void QEventLoopLocker()
 extern "C"
 void* C_ZN16QEventLoopLockerC1Ev() {
-  return new QEventLoopLocker();
+  (MyQEventLoopLocker*)(0);
+  return  new MyQEventLoopLocker();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:94
-// void QEventLoopLocker(class QEventLoop *)
+// [-2] void QEventLoopLocker(class QEventLoop *)
 extern "C"
 void* C_ZN16QEventLoopLockerC1EP10QEventLoop(QEventLoop * loop) {
-  return new QEventLoopLocker(loop);
+  (MyQEventLoopLocker*)(0);
+  return  new MyQEventLoopLocker(loop);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:95
-// void QEventLoopLocker(class QThread *)
+// [-2] void QEventLoopLocker(class QThread *)
 extern "C"
 void* C_ZN16QEventLoopLockerC1EP7QThread(QThread * thread) {
-  return new QEventLoopLocker(thread);
+  (MyQEventLoopLocker*)(0);
+  return  new MyQEventLoopLocker(thread);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:96
-// void ~QEventLoopLocker()
+// [-2] void ~QEventLoopLocker()
 extern "C"
 void C_ZN16QEventLoopLockerD1Ev(void *this_) {
   delete (QEventLoopLocker*)(this_);

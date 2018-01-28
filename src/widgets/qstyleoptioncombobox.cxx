@@ -3,13 +3,30 @@
 #include <qstyleoption.h>
 #include <QtWidgets>
 
+// QStyleOptionComboBox is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qstyleoption.h:589
-// void QStyleOptionComboBox()
+// Protected Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:605
+// [-2] void QStyleOptionComboBox(int)
+extern "C"
+void* callback_ZN20QStyleOptionComboBoxC1Ei = 0;
+extern "C" void set_callback_ZN20QStyleOptionComboBoxC1Ei(void*cbfn)
+{ callback_ZN20QStyleOptionComboBoxC1Ei = cbfn; }
+
+class MyQStyleOptionComboBox : public QStyleOptionComboBox {
+public:
+MyQStyleOptionComboBox() : QStyleOptionComboBox() {}
+MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:601
+// [-2] void QStyleOptionComboBox()
 extern "C"
 void* C_ZN20QStyleOptionComboBoxC1Ev() {
-  return new QStyleOptionComboBox();
+  (MyQStyleOptionComboBox*)(0);
+  return  new MyQStyleOptionComboBox();
 }
 //  main block end

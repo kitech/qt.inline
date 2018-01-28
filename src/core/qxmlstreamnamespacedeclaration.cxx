@@ -3,39 +3,54 @@
 #include <qxmlstream.h>
 #include <QtCore>
 
+// QXmlStreamNamespaceDeclaration is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQXmlStreamNamespaceDeclaration : public QXmlStreamNamespaceDeclaration {
+public:
+MyQXmlStreamNamespaceDeclaration() : QXmlStreamNamespaceDeclaration() {}
+MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespaceUri) : QXmlStreamNamespaceDeclaration(prefix, namespaceUri) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:199
-// void QXmlStreamNamespaceDeclaration()
+// [-2] void QXmlStreamNamespaceDeclaration()
 extern "C"
 void* C_ZN30QXmlStreamNamespaceDeclarationC1Ev() {
-  return new QXmlStreamNamespaceDeclaration();
+  (MyQXmlStreamNamespaceDeclaration*)(0);
+  return  new MyQXmlStreamNamespaceDeclaration();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:216
-// void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
+// [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
 extern "C"
 void* C_ZN30QXmlStreamNamespaceDeclarationC1ERK7QStringS2_(const QString & prefix, const QString & namespaceUri) {
-  return new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+  (MyQXmlStreamNamespaceDeclaration*)(0);
+  return  new MyQXmlStreamNamespaceDeclaration(prefix, namespaceUri);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:217
-// void ~QXmlStreamNamespaceDeclaration()
+// [-2] void ~QXmlStreamNamespaceDeclaration()
 extern "C"
 void C_ZN30QXmlStreamNamespaceDeclarationD1Ev(void *this_) {
   delete (QXmlStreamNamespaceDeclaration*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:221
-// QStringRef prefix()
+// [16] QStringRef prefix()
 extern "C"
-void C_ZNK30QXmlStreamNamespaceDeclaration6prefixEv(void *this_) {
-  /*return*/ ((QXmlStreamNamespaceDeclaration*)this_)->prefix();
+void* C_ZNK30QXmlStreamNamespaceDeclaration6prefixEv(void *this_) {
+  auto rv = ((QXmlStreamNamespaceDeclaration*)this_)->prefix();
+return new QStringRef(rv);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:222
-// QStringRef namespaceUri()
+// [16] QStringRef namespaceUri()
 extern "C"
-void C_ZNK30QXmlStreamNamespaceDeclaration12namespaceUriEv(void *this_) {
-  /*return*/ ((QXmlStreamNamespaceDeclaration*)this_)->namespaceUri();
+void* C_ZNK30QXmlStreamNamespaceDeclaration12namespaceUriEv(void *this_) {
+  auto rv = ((QXmlStreamNamespaceDeclaration*)this_)->namespaceUri();
+return new QStringRef(rv);
 }
 //  main block end

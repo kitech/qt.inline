@@ -3,69 +3,80 @@
 #include <qaccessible.h>
 #include <QtGui>
 
+// QAccessibleEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQAccessibleEvent : public QAccessibleEvent {
+public:
+MyQAccessibleEvent(QObject * obj, QAccessible::Event typ) : QAccessibleEvent(obj, typ) {}
+MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAccessibleEvent(iface, typ) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:668
-// void QAccessibleEvent(class QObject *, class QAccessible::Event)
+// [-2] void QAccessibleEvent(class QObject *, class QAccessible::Event)
 extern "C"
 void* C_ZN16QAccessibleEventC1EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
-  return new QAccessibleEvent(obj, typ);
+  (MyQAccessibleEvent*)(0);
+  return  new MyQAccessibleEvent(obj, typ);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:684
-// void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
+// [-2] void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
 extern "C"
 void* C_ZN16QAccessibleEventC1EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
-  return new QAccessibleEvent(iface, typ);
+  (MyQAccessibleEvent*)(0);
+  return  new MyQAccessibleEvent(iface, typ);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:699
-// void ~QAccessibleEvent()
+// [-2] void ~QAccessibleEvent()
 extern "C"
 void C_ZN16QAccessibleEventD1Ev(void *this_) {
   delete (QAccessibleEvent*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:701
-// QAccessible::Event type()
+// [4] QAccessible::Event type()
 extern "C"
-void C_ZNK16QAccessibleEvent4typeEv(void *this_) {
-  /*return*/ ((QAccessibleEvent*)this_)->type();
+QAccessible::Event C_ZNK16QAccessibleEvent4typeEv(void *this_) {
+  return (QAccessible::Event)((QAccessibleEvent*)this_)->type();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:702
-// QObject * object()
+// [8] QObject * object()
 extern "C"
-void C_ZNK16QAccessibleEvent6objectEv(void *this_) {
-  /*return*/ ((QAccessibleEvent*)this_)->object();
+void* C_ZNK16QAccessibleEvent6objectEv(void *this_) {
+  return (void*)((QAccessibleEvent*)this_)->object();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:703
-// QAccessible::Id uniqueId()
+// [4] QAccessible::Id uniqueId()
 extern "C"
-void C_ZNK16QAccessibleEvent8uniqueIdEv(void *this_) {
-  /*return*/ ((QAccessibleEvent*)this_)->uniqueId();
+QAccessible::Id C_ZNK16QAccessibleEvent8uniqueIdEv(void *this_) {
+  return (QAccessible::Id)((QAccessibleEvent*)this_)->uniqueId();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:705
-// void setChild(int)
+// [-2] void setChild(int)
 extern "C"
 void C_ZN16QAccessibleEvent8setChildEi(void *this_, int chld) {
   ((QAccessibleEvent*)this_)->setChild(chld);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:706
-// int child()
+// [4] int child()
 extern "C"
-void C_ZNK16QAccessibleEvent5childEv(void *this_) {
-  /*return*/ ((QAccessibleEvent*)this_)->child();
+int C_ZNK16QAccessibleEvent5childEv(void *this_) {
+  return (int)((QAccessibleEvent*)this_)->child();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:708
-// QAccessibleInterface * accessibleInterface()
+// [8] QAccessibleInterface * accessibleInterface()
 extern "C"
-void C_ZNK16QAccessibleEvent19accessibleInterfaceEv(void *this_) {
-  /*return*/ ((QAccessibleEvent*)this_)->accessibleInterface();
+void* C_ZNK16QAccessibleEvent19accessibleInterfaceEv(void *this_) {
+  return (void*)((QAccessibleEvent*)this_)->accessibleInterface();
 }
 //  main block end

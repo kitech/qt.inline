@@ -3,19 +3,29 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QApplicationStateChangeEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:1002
-// void QApplicationStateChangeEvent(Qt::ApplicationState)
+
+class MyQApplicationStateChangeEvent : public QApplicationStateChangeEvent {
+public:
+MyQApplicationStateChangeEvent(Qt::ApplicationState state) : QApplicationStateChangeEvent(state) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1052
+// [-2] void QApplicationStateChangeEvent(Qt::ApplicationState)
 extern "C"
 void* C_ZN28QApplicationStateChangeEventC1EN2Qt16ApplicationStateE(Qt::ApplicationState state) {
-  return new QApplicationStateChangeEvent(state);
+  (MyQApplicationStateChangeEvent*)(0);
+  return  new MyQApplicationStateChangeEvent(state);
 }
-// /usr/include/qt/QtGui/qevent.h:1003
-// Qt::ApplicationState applicationState()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1053
+// [4] Qt::ApplicationState applicationState()
 extern "C"
-void C_ZNK28QApplicationStateChangeEvent16applicationStateEv(void *this_) {
-  /*return*/ ((QApplicationStateChangeEvent*)this_)->applicationState();
+Qt::ApplicationState C_ZNK28QApplicationStateChangeEvent16applicationStateEv(void *this_) {
+  return (Qt::ApplicationState)((QApplicationStateChangeEvent*)this_)->applicationState();
 }
 //  main block end

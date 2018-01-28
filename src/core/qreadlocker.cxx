@@ -3,42 +3,50 @@
 #include <qreadwritelock.h>
 #include <QtCore>
 
+// QReadLocker is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQReadLocker : public QReadLocker {
+public:
+MyQReadLocker(QReadWriteLock * readWriteLock) : QReadLocker(readWriteLock) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:87
-// void QReadLocker(class QReadWriteLock *)
+// [-2] void QReadLocker(class QReadWriteLock *)
 extern "C"
 void* C_ZN11QReadLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
-  return new QReadLocker(readWriteLock);
+  (MyQReadLocker*)(0);
+  return  new MyQReadLocker(readWriteLock);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:89
-// void ~QReadLocker()
+// [-2] void ~QReadLocker()
 extern "C"
 void C_ZN11QReadLockerD1Ev(void *this_) {
   delete (QReadLocker*)(this_);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:92
-// void unlock()
+// [-2] void unlock()
 extern "C"
 void C_ZN11QReadLocker6unlockEv(void *this_) {
   ((QReadLocker*)this_)->unlock();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:102
-// void relock()
+// [-2] void relock()
 extern "C"
 void C_ZN11QReadLocker6relockEv(void *this_) {
   ((QReadLocker*)this_)->relock();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:112
-// QReadWriteLock * readWriteLock()
+// [8] QReadWriteLock * readWriteLock()
 extern "C"
-void C_ZNK11QReadLocker13readWriteLockEv(void *this_) {
-  /*return*/ ((QReadLocker*)this_)->readWriteLock();
+void* C_ZNK11QReadLocker13readWriteLockEv(void *this_) {
+  return (void*)((QReadLocker*)this_)->readWriteLock();
 }
 //  main block end

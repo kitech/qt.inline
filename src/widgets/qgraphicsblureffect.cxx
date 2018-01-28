@@ -3,70 +3,86 @@
 #include <qgraphicseffect.h>
 #include <QtWidgets>
 
+// QGraphicsBlurEffect is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:156
-// const QMetaObject * metaObject()
+// Protected virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:186
+// [-2] void draw(class QPainter *)
 extern "C"
-void C_ZNK19QGraphicsBlurEffect10metaObjectEv(void *this_) {
-  /*return*/ ((QGraphicsBlurEffect*)this_)->metaObject();
+void* callback_ZN19QGraphicsBlurEffect4drawEP8QPainter = 0;
+extern "C" void set_callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(void*cbfn)
+{ callback_ZN19QGraphicsBlurEffect4drawEP8QPainter = cbfn; }
+
+class MyQGraphicsBlurEffect : public QGraphicsBlurEffect {
+public:
+MyQGraphicsBlurEffect(QObject * parent) : QGraphicsBlurEffect(parent) {}
+// void draw(class QPainter *)
+// void draw(class QPainter *)
+virtual void draw(QPainter * painter) {
+  if (callback_ZN19QGraphicsBlurEffect4drawEP8QPainter != 0) {
+  // callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(painter);
+}}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:157
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK19QGraphicsBlurEffect10metaObjectEv(void *this_) {
+  return (void*)((QGraphicsBlurEffect*)this_)->metaObject();
 }
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:168
-// void QGraphicsBlurEffect(class QObject *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:170
+// [-2] void QGraphicsBlurEffect(class QObject *)
 extern "C"
 void* C_ZN19QGraphicsBlurEffectC1EP7QObject(QObject * parent) {
-  return new QGraphicsBlurEffect(parent);
+  (MyQGraphicsBlurEffect*)(0);
+  return  new MyQGraphicsBlurEffect(parent);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:169
-// void ~QGraphicsBlurEffect()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:171
+// [-2] void ~QGraphicsBlurEffect()
 extern "C"
 void C_ZN19QGraphicsBlurEffectD1Ev(void *this_) {
   delete (QGraphicsBlurEffect*)(this_);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:171
-// QRectF boundingRectFor(const class QRectF &)
-extern "C"
-void C_ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF(void *this_, const QRectF & rect) {
-  /*return*/ ((QGraphicsBlurEffect*)this_)->boundingRectFor(rect);
-}
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:172
-// qreal blurRadius()
-extern "C"
-void C_ZNK19QGraphicsBlurEffect10blurRadiusEv(void *this_) {
-  /*return*/ ((QGraphicsBlurEffect*)this_)->blurRadius();
-}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:173
-// BlurHints blurHints()
+// [32] QRectF boundingRectFor(const class QRectF &)
+extern "C"
+void* C_ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF(void *this_, const QRectF & rect) {
+  auto rv = ((QGraphicsBlurEffect*)this_)->boundingRectFor(rect);
+return new QRectF(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:174
+// [8] qreal blurRadius()
+extern "C"
+qreal C_ZNK19QGraphicsBlurEffect10blurRadiusEv(void *this_) {
+  return (qreal)((QGraphicsBlurEffect*)this_)->blurRadius();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:175
+// [4] QGraphicsBlurEffect::BlurHints blurHints()
 extern "C"
 void C_ZNK19QGraphicsBlurEffect9blurHintsEv(void *this_) {
-  /*return*/ ((QGraphicsBlurEffect*)this_)->blurHints();
+  auto rv = ((QGraphicsBlurEffect*)this_)->blurHints();
+/*return rv;*/
 }
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:176
-// void setBlurRadius(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:178
+// [-2] void setBlurRadius(qreal)
 extern "C"
 void C_ZN19QGraphicsBlurEffect13setBlurRadiusEd(void *this_, qreal blurRadius) {
   ((QGraphicsBlurEffect*)this_)->setBlurRadius(blurRadius);
 }
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:177
-// void setBlurHints(BlurHints)
-extern "C"
-void C_ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE(void *this_, QFlags<QGraphicsBlurEffect::BlurHint> hints) {
-  ((QGraphicsBlurEffect*)this_)->setBlurHints(hints);
-}
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:180
-// void blurRadiusChanged(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:182
+// [-2] void blurRadiusChanged(qreal)
 extern "C"
 void C_ZN19QGraphicsBlurEffect17blurRadiusChangedEd(void *this_, qreal blurRadius) {
   ((QGraphicsBlurEffect*)this_)->blurRadiusChanged(blurRadius);
-}
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:181
-// void blurHintsChanged(BlurHints)
-extern "C"
-void C_ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE(void *this_, QFlags<QGraphicsBlurEffect::BlurHint> hints) {
-  ((QGraphicsBlurEffect*)this_)->blurHintsChanged(hints);
 }
 //  main block end

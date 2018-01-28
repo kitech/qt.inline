@@ -3,98 +3,113 @@
 #include <qpoint.h>
 #include <QtCore>
 
+// QPointF is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtCore/qpoint.h:214
-// void QPointF()
+
+class MyQPointF : public QPointF {
+public:
+MyQPointF() : QPointF() {}
+MyQPointF(const QPoint & p) : QPointF(p) {}
+MyQPointF(qreal xpos, qreal ypos) : QPointF(xpos, ypos) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:222
+// [-2] void QPointF()
 extern "C"
 void* C_ZN7QPointFC1Ev() {
-  return new QPointF();
+  (MyQPointF*)(0);
+  return  new MyQPointF();
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:215
-// void QPointF(const class QPoint &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:223
+// [-2] void QPointF(const class QPoint &)
 extern "C"
 void* C_ZN7QPointFC1ERK6QPoint(const QPoint & p) {
-  return new QPointF(p);
+  (MyQPointF*)(0);
+  return  new MyQPointF(p);
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:216
-// void QPointF(qreal, qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:224
+// [-2] void QPointF(qreal, qreal)
 extern "C"
 void* C_ZN7QPointFC1Edd(qreal xpos, qreal ypos) {
-  return new QPointF(xpos, ypos);
+  (MyQPointF*)(0);
+  return  new MyQPointF(xpos, ypos);
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:218
-// qreal manhattanLength()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:226
+// [8] qreal manhattanLength()
 extern "C"
-void C_ZNK7QPointF15manhattanLengthEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->manhattanLength();
+qreal C_ZNK7QPointF15manhattanLengthEv(void *this_) {
+  return (qreal)((QPointF*)this_)->manhattanLength();
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:220
-// bool isNull()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:228
+// [1] bool isNull()
 extern "C"
-void C_ZNK7QPointF6isNullEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->isNull();
+bool C_ZNK7QPointF6isNullEv(void *this_) {
+  return (bool)((QPointF*)this_)->isNull();
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:222
-// qreal x()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:230
+// [8] qreal x()
 extern "C"
-void C_ZNK7QPointF1xEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->x();
+qreal C_ZNK7QPointF1xEv(void *this_) {
+  return (qreal)((QPointF*)this_)->x();
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:223
-// qreal y()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:231
+// [8] qreal y()
 extern "C"
-void C_ZNK7QPointF1yEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->y();
+qreal C_ZNK7QPointF1yEv(void *this_) {
+  return (qreal)((QPointF*)this_)->y();
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:224
-// void setX(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:232
+// [-2] void setX(qreal)
 extern "C"
 void C_ZN7QPointF4setXEd(void *this_, qreal x) {
   ((QPointF*)this_)->setX(x);
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:225
-// void setY(qreal)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:233
+// [-2] void setY(qreal)
 extern "C"
 void C_ZN7QPointF4setYEd(void *this_, qreal y) {
   ((QPointF*)this_)->setY(y);
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:227
-// qreal & rx()
-extern "C"
-void C_ZN7QPointF2rxEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->rx();
-}
-// inline
-// /usr/include/qt/QtCore/qpoint.h:228
-// qreal & ry()
-extern "C"
-void C_ZN7QPointF2ryEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->ry();
-}
-// static inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:235
-// qreal dotProduct(const class QPointF &, const class QPointF &)
+// [8] qreal & rx()
 extern "C"
-void C_ZN7QPointF10dotProductERKS_S1_(const QPointF & p1, const QPointF & p2) {
-  /*return*/ QPointF::dotProduct(p1, p2);
+void* C_ZN7QPointF2rxEv(void *this_) {
+  auto& rv = ((QPointF*)this_)->rx();
+return &rv;
 }
-// inline
-// /usr/include/qt/QtCore/qpoint.h:248
-// QPoint toPoint()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:236
+// [8] qreal & ry()
 extern "C"
-void C_ZNK7QPointF7toPointEv(void *this_) {
-  /*return*/ ((QPointF*)this_)->toPoint();
+void* C_ZN7QPointF2ryEv(void *this_) {
+  auto& rv = ((QPointF*)this_)->ry();
+return &rv;
+}
+// Public static inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:243
+// [8] qreal dotProduct(const class QPointF &, const class QPointF &)
+extern "C"
+qreal C_ZN7QPointF10dotProductERKS_S1_(const QPointF & p1, const QPointF & p2) {
+  return (qreal)QPointF::dotProduct(p1, p2);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:256
+// [8] QPoint toPoint()
+extern "C"
+void* C_ZNK7QPointF7toPointEv(void *this_) {
+  auto rv = ((QPointF*)this_)->toPoint();
+return new QPoint(rv);
 }
 //  main block end

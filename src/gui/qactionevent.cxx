@@ -3,34 +3,43 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QActionEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:716
-// void QActionEvent(int, class QAction *, class QAction *)
+
+class MyQActionEvent : public QActionEvent {
+public:
+MyQActionEvent(int type, QAction * action, QAction * before) : QActionEvent(type, action, before) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:727
+// [-2] void QActionEvent(int, class QAction *, class QAction *)
 extern "C"
 void* C_ZN12QActionEventC1EiP7QActionS1_(int type, QAction * action, QAction * before) {
-  return new QActionEvent(type, action, before);
+  (MyQActionEvent*)(0);
+  return  new MyQActionEvent(type, action, before);
 }
-// virtual
-// /usr/include/qt/QtGui/qevent.h:717
-// void ~QActionEvent()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:728
+// [-2] void ~QActionEvent()
 extern "C"
 void C_ZN12QActionEventD1Ev(void *this_) {
   delete (QActionEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:719
-// QAction * action()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:730
+// [8] QAction * action()
 extern "C"
-void C_ZNK12QActionEvent6actionEv(void *this_) {
-  /*return*/ ((QActionEvent*)this_)->action();
+void* C_ZNK12QActionEvent6actionEv(void *this_) {
+  return (void*)((QActionEvent*)this_)->action();
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:720
-// QAction * before()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:731
+// [8] QAction * before()
 extern "C"
-void C_ZNK12QActionEvent6beforeEv(void *this_) {
-  /*return*/ ((QActionEvent*)this_)->before();
+void* C_ZNK12QActionEvent6beforeEv(void *this_) {
+  return (void*)((QActionEvent*)this_)->before();
 }
 //  main block end

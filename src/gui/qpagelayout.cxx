@@ -3,212 +3,270 @@
 #include <qpagelayout.h>
 #include <QtGui>
 
+// QPageLayout is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qpagelayout.h:79
-// void QPageLayout()
+
+class MyQPageLayout : public QPageLayout {
+public:
+MyQPageLayout() : QPageLayout() {}
+MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) : QPageLayout(pageSize, orientation, margins, units, minMargins) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:80
+// [-2] void QPageLayout()
 extern "C"
 void* C_ZN11QPageLayoutC1Ev() {
-  return new QPageLayout();
+  (MyQPageLayout*)(0);
+  return  new MyQPageLayout();
 }
-// /usr/include/qt/QtGui/qpagelayout.h:80
-// void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:81
+// [-2] void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
 extern "C"
 void* C_ZN11QPageLayoutC1ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) {
-  return new QPageLayout(pageSize, orientation, margins, units, minMargins);
+  (MyQPageLayout*)(0);
+  return  new MyQPageLayout(pageSize, orientation, margins, units, minMargins);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:88
-// void ~QPageLayout()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:89
+// [-2] void ~QPageLayout()
 extern "C"
 void C_ZN11QPageLayoutD1Ev(void *this_) {
   delete (QPageLayout*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qpagelayout.h:90
-// void swap(class QPageLayout &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:91
+// [-2] void swap(class QPageLayout &)
 extern "C"
 void C_ZN11QPageLayout4swapERS_(void *this_, QPageLayout & other) {
   ((QPageLayout*)this_)->swap(other);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:93
-// bool isEquivalentTo(const class QPageLayout &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:94
+// [1] bool isEquivalentTo(const class QPageLayout &)
 extern "C"
-void C_ZNK11QPageLayout14isEquivalentToERKS_(void *this_, const QPageLayout & other) {
-  /*return*/ ((QPageLayout*)this_)->isEquivalentTo(other);
+bool C_ZNK11QPageLayout14isEquivalentToERKS_(void *this_, const QPageLayout & other) {
+  return (bool)((QPageLayout*)this_)->isEquivalentTo(other);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:95
-// bool isValid()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:96
+// [1] bool isValid()
 extern "C"
-void C_ZNK11QPageLayout7isValidEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->isValid();
+bool C_ZNK11QPageLayout7isValidEv(void *this_) {
+  return (bool)((QPageLayout*)this_)->isValid();
 }
-// /usr/include/qt/QtGui/qpagelayout.h:97
-// void setMode(enum QPageLayout::Mode)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:98
+// [-2] void setMode(enum QPageLayout::Mode)
 extern "C"
 void C_ZN11QPageLayout7setModeENS_4ModeE(void *this_, QPageLayout::Mode mode) {
   ((QPageLayout*)this_)->setMode(mode);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:98
-// QPageLayout::Mode mode()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:99
+// [4] QPageLayout::Mode mode()
 extern "C"
-void C_ZNK11QPageLayout4modeEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->mode();
+QPageLayout::Mode C_ZNK11QPageLayout4modeEv(void *this_) {
+  return (QPageLayout::Mode)((QPageLayout*)this_)->mode();
 }
-// /usr/include/qt/QtGui/qpagelayout.h:100
-// void setPageSize(const class QPageSize &, const class QMarginsF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:101
+// [-2] void setPageSize(const class QPageSize &, const class QMarginsF &)
 extern "C"
 void C_ZN11QPageLayout11setPageSizeERK9QPageSizeRK9QMarginsF(void *this_, const QPageSize & pageSize, const QMarginsF & minMargins) {
   ((QPageLayout*)this_)->setPageSize(pageSize, minMargins);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:102
-// QPageSize pageSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:103
+// [8] QPageSize pageSize()
 extern "C"
-void C_ZNK11QPageLayout8pageSizeEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->pageSize();
+void* C_ZNK11QPageLayout8pageSizeEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->pageSize();
+return new QPageSize(rv);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:104
-// void setOrientation(enum QPageLayout::Orientation)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:105
+// [-2] void setOrientation(enum QPageLayout::Orientation)
 extern "C"
 void C_ZN11QPageLayout14setOrientationENS_11OrientationE(void *this_, QPageLayout::Orientation orientation) {
   ((QPageLayout*)this_)->setOrientation(orientation);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:105
-// QPageLayout::Orientation orientation()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:106
+// [4] QPageLayout::Orientation orientation()
 extern "C"
-void C_ZNK11QPageLayout11orientationEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->orientation();
+QPageLayout::Orientation C_ZNK11QPageLayout11orientationEv(void *this_) {
+  return (QPageLayout::Orientation)((QPageLayout*)this_)->orientation();
 }
-// /usr/include/qt/QtGui/qpagelayout.h:107
-// void setUnits(enum QPageLayout::Unit)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:108
+// [-2] void setUnits(enum QPageLayout::Unit)
 extern "C"
 void C_ZN11QPageLayout8setUnitsENS_4UnitE(void *this_, QPageLayout::Unit units) {
   ((QPageLayout*)this_)->setUnits(units);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:108
-// QPageLayout::Unit units()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:109
+// [4] QPageLayout::Unit units()
 extern "C"
-void C_ZNK11QPageLayout5unitsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->units();
+QPageLayout::Unit C_ZNK11QPageLayout5unitsEv(void *this_) {
+  return (QPageLayout::Unit)((QPageLayout*)this_)->units();
 }
-// /usr/include/qt/QtGui/qpagelayout.h:110
-// bool setMargins(const class QMarginsF &)
-extern "C"
-void C_ZN11QPageLayout10setMarginsERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  /*return*/ ((QPageLayout*)this_)->setMargins(margins);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:111
-// bool setLeftMargin(qreal)
+// [1] bool setMargins(const class QMarginsF &)
 extern "C"
-void C_ZN11QPageLayout13setLeftMarginEd(void *this_, qreal leftMargin) {
-  /*return*/ ((QPageLayout*)this_)->setLeftMargin(leftMargin);
+bool C_ZN11QPageLayout10setMarginsERK9QMarginsF(void *this_, const QMarginsF & margins) {
+  return (bool)((QPageLayout*)this_)->setMargins(margins);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:112
-// bool setRightMargin(qreal)
+// [1] bool setLeftMargin(qreal)
 extern "C"
-void C_ZN11QPageLayout14setRightMarginEd(void *this_, qreal rightMargin) {
-  /*return*/ ((QPageLayout*)this_)->setRightMargin(rightMargin);
+bool C_ZN11QPageLayout13setLeftMarginEd(void *this_, qreal leftMargin) {
+  return (bool)((QPageLayout*)this_)->setLeftMargin(leftMargin);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:113
-// bool setTopMargin(qreal)
+// [1] bool setRightMargin(qreal)
 extern "C"
-void C_ZN11QPageLayout12setTopMarginEd(void *this_, qreal topMargin) {
-  /*return*/ ((QPageLayout*)this_)->setTopMargin(topMargin);
+bool C_ZN11QPageLayout14setRightMarginEd(void *this_, qreal rightMargin) {
+  return (bool)((QPageLayout*)this_)->setRightMargin(rightMargin);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:114
-// bool setBottomMargin(qreal)
+// [1] bool setTopMargin(qreal)
 extern "C"
-void C_ZN11QPageLayout15setBottomMarginEd(void *this_, qreal bottomMargin) {
-  /*return*/ ((QPageLayout*)this_)->setBottomMargin(bottomMargin);
+bool C_ZN11QPageLayout12setTopMarginEd(void *this_, qreal topMargin) {
+  return (bool)((QPageLayout*)this_)->setTopMargin(topMargin);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:116
-// QMarginsF margins()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:115
+// [1] bool setBottomMargin(qreal)
 extern "C"
-void C_ZNK11QPageLayout7marginsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->margins();
+bool C_ZN11QPageLayout15setBottomMarginEd(void *this_, qreal bottomMargin) {
+  return (bool)((QPageLayout*)this_)->setBottomMargin(bottomMargin);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:117
-// QMarginsF margins(enum QPageLayout::Unit)
+// [32] QMarginsF margins()
 extern "C"
-void C_ZNK11QPageLayout7marginsENS_4UnitE(void *this_, QPageLayout::Unit units) {
-  /*return*/ ((QPageLayout*)this_)->margins(units);
+void* C_ZNK11QPageLayout7marginsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->margins();
+return new QMarginsF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:118
-// QMargins marginsPoints()
+// [32] QMarginsF margins(enum QPageLayout::Unit)
 extern "C"
-void C_ZNK11QPageLayout13marginsPointsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->marginsPoints();
+void* C_ZNK11QPageLayout7marginsENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  auto rv = ((QPageLayout*)this_)->margins(units);
+return new QMarginsF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:119
-// QMargins marginsPixels(int)
+// [16] QMargins marginsPoints()
 extern "C"
-void C_ZNK11QPageLayout13marginsPixelsEi(void *this_, int resolution) {
-  /*return*/ ((QPageLayout*)this_)->marginsPixels(resolution);
+void* C_ZNK11QPageLayout13marginsPointsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->marginsPoints();
+return new QMargins(rv);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:121
-// void setMinimumMargins(const class QMarginsF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:120
+// [16] QMargins marginsPixels(int)
+extern "C"
+void* C_ZNK11QPageLayout13marginsPixelsEi(void *this_, int resolution) {
+  auto rv = ((QPageLayout*)this_)->marginsPixels(resolution);
+return new QMargins(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:122
+// [-2] void setMinimumMargins(const class QMarginsF &)
 extern "C"
 void C_ZN11QPageLayout17setMinimumMarginsERK9QMarginsF(void *this_, const QMarginsF & minMargins) {
   ((QPageLayout*)this_)->setMinimumMargins(minMargins);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:122
-// QMarginsF minimumMargins()
-extern "C"
-void C_ZNK11QPageLayout14minimumMarginsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->minimumMargins();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:123
-// QMarginsF maximumMargins()
+// [32] QMarginsF minimumMargins()
 extern "C"
-void C_ZNK11QPageLayout14maximumMarginsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->maximumMargins();
+void* C_ZNK11QPageLayout14minimumMarginsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->minimumMargins();
+return new QMarginsF(rv);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:125
-// QRectF fullRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:124
+// [32] QMarginsF maximumMargins()
 extern "C"
-void C_ZNK11QPageLayout8fullRectEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->fullRect();
+void* C_ZNK11QPageLayout14maximumMarginsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->maximumMargins();
+return new QMarginsF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:126
-// QRectF fullRect(enum QPageLayout::Unit)
+// [32] QRectF fullRect()
 extern "C"
-void C_ZNK11QPageLayout8fullRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
-  /*return*/ ((QPageLayout*)this_)->fullRect(units);
+void* C_ZNK11QPageLayout8fullRectEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->fullRect();
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:127
-// QRect fullRectPoints()
+// [32] QRectF fullRect(enum QPageLayout::Unit)
 extern "C"
-void C_ZNK11QPageLayout14fullRectPointsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->fullRectPoints();
+void* C_ZNK11QPageLayout8fullRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  auto rv = ((QPageLayout*)this_)->fullRect(units);
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:128
-// QRect fullRectPixels(int)
+// [16] QRect fullRectPoints()
 extern "C"
-void C_ZNK11QPageLayout14fullRectPixelsEi(void *this_, int resolution) {
-  /*return*/ ((QPageLayout*)this_)->fullRectPixels(resolution);
+void* C_ZNK11QPageLayout14fullRectPointsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->fullRectPoints();
+return new QRect(rv);
 }
-// /usr/include/qt/QtGui/qpagelayout.h:130
-// QRectF paintRect()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:129
+// [16] QRect fullRectPixels(int)
 extern "C"
-void C_ZNK11QPageLayout9paintRectEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->paintRect();
+void* C_ZNK11QPageLayout14fullRectPixelsEi(void *this_, int resolution) {
+  auto rv = ((QPageLayout*)this_)->fullRectPixels(resolution);
+return new QRect(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:131
-// QRectF paintRect(enum QPageLayout::Unit)
+// [32] QRectF paintRect()
 extern "C"
-void C_ZNK11QPageLayout9paintRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
-  /*return*/ ((QPageLayout*)this_)->paintRect(units);
+void* C_ZNK11QPageLayout9paintRectEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->paintRect();
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:132
-// QRect paintRectPoints()
+// [32] QRectF paintRect(enum QPageLayout::Unit)
 extern "C"
-void C_ZNK11QPageLayout15paintRectPointsEv(void *this_) {
-  /*return*/ ((QPageLayout*)this_)->paintRectPoints();
+void* C_ZNK11QPageLayout9paintRectENS_4UnitE(void *this_, QPageLayout::Unit units) {
+  auto rv = ((QPageLayout*)this_)->paintRect(units);
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:133
-// QRect paintRectPixels(int)
+// [16] QRect paintRectPoints()
 extern "C"
-void C_ZNK11QPageLayout15paintRectPixelsEi(void *this_, int resolution) {
-  /*return*/ ((QPageLayout*)this_)->paintRectPixels(resolution);
+void* C_ZNK11QPageLayout15paintRectPointsEv(void *this_) {
+  auto rv = ((QPageLayout*)this_)->paintRectPoints();
+return new QRect(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:134
+// [16] QRect paintRectPixels(int)
+extern "C"
+void* C_ZNK11QPageLayout15paintRectPixelsEi(void *this_, int resolution) {
+  auto rv = ((QPageLayout*)this_)->paintRectPixels(resolution);
+return new QRect(rv);
 }
 //  main block end

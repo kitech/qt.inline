@@ -1,0 +1,45 @@
+//  header block begin
+// /usr/include/qt/QtGui/qaccessiblebridge.h
+#include <qaccessiblebridge.h>
+#include <QtGui>
+
+// QAccessibleBridgePlugin is pure virtual: true
+//  header block end
+
+//  main block begin
+
+class MyQAccessibleBridgePlugin : public QAccessibleBridgePlugin {
+public:
+MyQAccessibleBridgePlugin(QObject * parent) : QAccessibleBridgePlugin(parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessiblebridge.h:67
+// [8] const QMetaObject * metaObject()
+extern "C"
+void* C_ZNK23QAccessibleBridgePlugin10metaObjectEv(void *this_) {
+  return (void*)((QAccessibleBridgePlugin*)this_)->metaObject();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessiblebridge.h:69
+// [-2] void QAccessibleBridgePlugin(class QObject *)
+extern "C"
+void* C_ZN23QAccessibleBridgePluginC1EP7QObject(QObject * parent) {
+  (MyQAccessibleBridgePlugin*)(0);
+  return 0; // new MyQAccessibleBridgePlugin(parent);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessiblebridge.h:70
+// [-2] void ~QAccessibleBridgePlugin()
+extern "C"
+void C_ZN23QAccessibleBridgePluginD1Ev(void *this_) {
+  delete (QAccessibleBridgePlugin*)(this_);
+}
+// Public purevirtual virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessiblebridge.h:72
+// [8] QAccessibleBridge * create(const class QString &)
+extern "C"
+void* C_ZN23QAccessibleBridgePlugin6createERK7QString(void *this_, const QString & key) {
+  return (void*)((QAccessibleBridgePlugin*)this_)->create(key);
+}
+//  main block end

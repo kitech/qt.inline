@@ -3,179 +3,200 @@
 #include <qtextlayout.h>
 #include <QtGui>
 
+// QTextLine is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:212
-// void QTextLine()
+
+class MyQTextLine : public QTextLine {
+public:
+MyQTextLine() : QTextLine() {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:213
+// [-2] void QTextLine()
 extern "C"
 void* C_ZN9QTextLineC1Ev() {
-  return new QTextLine();
+  (MyQTextLine*)(0);
+  return  new MyQTextLine();
 }
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:213
-// bool isValid()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:214
+// [1] bool isValid()
 extern "C"
-void C_ZNK9QTextLine7isValidEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->isValid();
+bool C_ZNK9QTextLine7isValidEv(void *this_) {
+  return (bool)((QTextLine*)this_)->isValid();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:215
-// QRectF rect()
-extern "C"
-void C_ZNK9QTextLine4rectEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->rect();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:216
-// qreal x()
+// [32] QRectF rect()
 extern "C"
-void C_ZNK9QTextLine1xEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->x();
+void* C_ZNK9QTextLine4rectEv(void *this_) {
+  auto rv = ((QTextLine*)this_)->rect();
+return new QRectF(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:217
-// qreal y()
+// [8] qreal x()
 extern "C"
-void C_ZNK9QTextLine1yEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->y();
+qreal C_ZNK9QTextLine1xEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->x();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:218
-// qreal width()
+// [8] qreal y()
 extern "C"
-void C_ZNK9QTextLine5widthEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->width();
+qreal C_ZNK9QTextLine1yEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->y();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:219
-// qreal ascent()
+// [8] qreal width()
 extern "C"
-void C_ZNK9QTextLine6ascentEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->ascent();
+qreal C_ZNK9QTextLine5widthEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->width();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:220
-// qreal descent()
+// [8] qreal ascent()
 extern "C"
-void C_ZNK9QTextLine7descentEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->descent();
+qreal C_ZNK9QTextLine6ascentEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->ascent();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:221
-// qreal height()
+// [8] qreal descent()
 extern "C"
-void C_ZNK9QTextLine6heightEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->height();
+qreal C_ZNK9QTextLine7descentEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->descent();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:222
-// qreal leading()
+// [8] qreal height()
 extern "C"
-void C_ZNK9QTextLine7leadingEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->leading();
+qreal C_ZNK9QTextLine6heightEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->height();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:224
-// void setLeadingIncluded(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:223
+// [8] qreal leading()
+extern "C"
+qreal C_ZNK9QTextLine7leadingEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->leading();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:225
+// [-2] void setLeadingIncluded(_Bool)
 extern "C"
 void C_ZN9QTextLine18setLeadingIncludedEb(void *this_, bool included) {
   ((QTextLine*)this_)->setLeadingIncluded(included);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:225
-// bool leadingIncluded()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:226
+// [1] bool leadingIncluded()
 extern "C"
-void C_ZNK9QTextLine15leadingIncludedEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->leadingIncluded();
+bool C_ZNK9QTextLine15leadingIncludedEv(void *this_) {
+  return (bool)((QTextLine*)this_)->leadingIncluded();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:227
-// qreal naturalTextWidth()
-extern "C"
-void C_ZNK9QTextLine16naturalTextWidthEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->naturalTextWidth();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:228
-// qreal horizontalAdvance()
+// [8] qreal naturalTextWidth()
 extern "C"
-void C_ZNK9QTextLine17horizontalAdvanceEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->horizontalAdvance();
+qreal C_ZNK9QTextLine16naturalTextWidthEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->naturalTextWidth();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:229
-// QRectF naturalTextRect()
+// [8] qreal horizontalAdvance()
 extern "C"
-void C_ZNK9QTextLine15naturalTextRectEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->naturalTextRect();
+qreal C_ZNK9QTextLine17horizontalAdvanceEv(void *this_) {
+  return (qreal)((QTextLine*)this_)->horizontalAdvance();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:241
-// qreal cursorToX(int *, enum QTextLine::Edge)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:230
+// [32] QRectF naturalTextRect()
 extern "C"
-void C_ZNK9QTextLine9cursorToXEPiNS_4EdgeE(void *this_, int * cursorPos, QTextLine::Edge edge) {
-  /*return*/ ((QTextLine*)this_)->cursorToX(cursorPos, edge);
+void* C_ZNK9QTextLine15naturalTextRectEv(void *this_) {
+  auto rv = ((QTextLine*)this_)->naturalTextRect();
+return new QRectF(rv);
 }
-// inline
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:242
-// qreal cursorToX(int, enum QTextLine::Edge)
+// [8] qreal cursorToX(int *, enum QTextLine::Edge)
 extern "C"
-void C_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *this_, int cursorPos, QTextLine::Edge edge) {
-  /*return*/ ((QTextLine*)this_)->cursorToX(cursorPos, edge);
+qreal C_ZNK9QTextLine9cursorToXEPiNS_4EdgeE(void *this_, int * cursorPos, QTextLine::Edge edge) {
+  return (qreal)((QTextLine*)this_)->cursorToX(cursorPos, edge);
 }
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:243
-// int xToCursor(qreal, enum QTextLine::CursorPosition)
+// [8] qreal cursorToX(int, enum QTextLine::Edge)
 extern "C"
-void C_ZNK9QTextLine9xToCursorEdNS_14CursorPositionE(void *this_, qreal x, QTextLine::CursorPosition arg1) {
-  /*return*/ ((QTextLine*)this_)->xToCursor(x, arg1);
+qreal C_ZNK9QTextLine9cursorToXEiNS_4EdgeE(void *this_, int cursorPos, QTextLine::Edge edge) {
+  return (qreal)((QTextLine*)this_)->cursorToX(cursorPos, edge);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:245
-// void setLineWidth(qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:244
+// [4] int xToCursor(qreal, enum QTextLine::CursorPosition)
+extern "C"
+int C_ZNK9QTextLine9xToCursorEdNS_14CursorPositionE(void *this_, qreal x, QTextLine::CursorPosition arg1) {
+  return (int)((QTextLine*)this_)->xToCursor(x, arg1);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:246
+// [-2] void setLineWidth(qreal)
 extern "C"
 void C_ZN9QTextLine12setLineWidthEd(void *this_, qreal width) {
   ((QTextLine*)this_)->setLineWidth(width);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:246
-// void setNumColumns(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:247
+// [-2] void setNumColumns(int)
 extern "C"
 void C_ZN9QTextLine13setNumColumnsEi(void *this_, int columns) {
   ((QTextLine*)this_)->setNumColumns(columns);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:247
-// void setNumColumns(int, qreal)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:248
+// [-2] void setNumColumns(int, qreal)
 extern "C"
 void C_ZN9QTextLine13setNumColumnsEid(void *this_, int columns, qreal alignmentWidth) {
   ((QTextLine*)this_)->setNumColumns(columns, alignmentWidth);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:249
-// void setPosition(const class QPointF &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:250
+// [-2] void setPosition(const class QPointF &)
 extern "C"
 void C_ZN9QTextLine11setPositionERK7QPointF(void *this_, const QPointF & pos) {
   ((QTextLine*)this_)->setPosition(pos);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:250
-// QPointF position()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:251
+// [16] QPointF position()
 extern "C"
-void C_ZNK9QTextLine8positionEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->position();
+void* C_ZNK9QTextLine8positionEv(void *this_) {
+  auto rv = ((QTextLine*)this_)->position();
+return new QPointF(rv);
 }
-// /usr/include/qt/QtGui/qtextlayout.h:252
-// int textStart()
-extern "C"
-void C_ZNK9QTextLine9textStartEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->textStart();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:253
-// int textLength()
+// [4] int textStart()
 extern "C"
-void C_ZNK9QTextLine10textLengthEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->textLength();
+int C_ZNK9QTextLine9textStartEv(void *this_) {
+  return (int)((QTextLine*)this_)->textStart();
 }
-// inline
-// /usr/include/qt/QtGui/qtextlayout.h:255
-// int lineNumber()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:254
+// [4] int textLength()
 extern "C"
-void C_ZNK9QTextLine10lineNumberEv(void *this_) {
-  /*return*/ ((QTextLine*)this_)->lineNumber();
+int C_ZNK9QTextLine10textLengthEv(void *this_) {
+  return (int)((QTextLine*)this_)->textLength();
 }
-// /usr/include/qt/QtGui/qtextlayout.h:257
-// void draw(class QPainter *, const class QPointF &, const class QTextLayout::FormatRange *)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:256
+// [4] int lineNumber()
 extern "C"
-void C_ZNK9QTextLine4drawEP8QPainterRK7QPointFPKN11QTextLayout11FormatRangeE(void *this_, QPainter * p, const QPointF & point, const QTextLayout::FormatRange * selection) {
-  ((QTextLine*)this_)->draw(p, point, selection);
-}
-// /usr/include/qt/QtGui/qtextlayout.h:260
-// QList<QGlyphRun> glyphRuns(int, int)
-extern "C"
-void C_ZNK9QTextLine9glyphRunsEii(void *this_, int from, int length) {
-  /*return*/ ((QTextLine*)this_)->glyphRuns(from, length);
+int C_ZNK9QTextLine10lineNumberEv(void *this_) {
+  return (int)((QTextLine*)this_)->lineNumber();
 }
 //  main block end

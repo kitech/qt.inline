@@ -3,90 +3,109 @@
 #include <qtextlist.h>
 #include <QtGui>
 
+// QTextList is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
-// /usr/include/qt/QtGui/qtextlist.h:54
-// const QMetaObject * metaObject()
+
+class MyQTextList : public QTextList {
+public:
+MyQTextList(QTextDocument * doc) : QTextList(doc) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:55
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK9QTextList10metaObjectEv(void *this_) {
-  /*return*/ ((QTextList*)this_)->metaObject();
+void* C_ZNK9QTextList10metaObjectEv(void *this_) {
+  return (void*)((QTextList*)this_)->metaObject();
 }
-// /usr/include/qt/QtGui/qtextlist.h:56
-// void QTextList(class QTextDocument *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:57
+// [-2] void QTextList(class QTextDocument *)
 extern "C"
 void* C_ZN9QTextListC1EP13QTextDocument(QTextDocument * doc) {
-  return new QTextList(doc);
+  (MyQTextList*)(0);
+  return  new MyQTextList(doc);
 }
-// virtual
-// /usr/include/qt/QtGui/qtextlist.h:57
-// void ~QTextList()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:58
+// [-2] void ~QTextList()
 extern "C"
 void C_ZN9QTextListD1Ev(void *this_) {
   delete (QTextList*)(this_);
 }
-// /usr/include/qt/QtGui/qtextlist.h:59
-// int count()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:60
+// [4] int count()
 extern "C"
-void C_ZNK9QTextList5countEv(void *this_) {
-  /*return*/ ((QTextList*)this_)->count();
+int C_ZNK9QTextList5countEv(void *this_) {
+  return (int)((QTextList*)this_)->count();
 }
-// inline
-// /usr/include/qt/QtGui/qtextlist.h:61
-// bool isEmpty()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:62
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK9QTextList7isEmptyEv(void *this_) {
-  /*return*/ ((QTextList*)this_)->isEmpty();
+bool C_ZNK9QTextList7isEmptyEv(void *this_) {
+  return (bool)((QTextList*)this_)->isEmpty();
 }
-// /usr/include/qt/QtGui/qtextlist.h:64
-// QTextBlock item(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:65
+// [16] QTextBlock item(int)
 extern "C"
-void C_ZNK9QTextList4itemEi(void *this_, int i) {
-  /*return*/ ((QTextList*)this_)->item(i);
+void* C_ZNK9QTextList4itemEi(void *this_, int i) {
+  auto rv = ((QTextList*)this_)->item(i);
+return new QTextBlock(rv);
 }
-// /usr/include/qt/QtGui/qtextlist.h:66
-// int itemNumber(const class QTextBlock &)
-extern "C"
-void C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, const QTextBlock & arg0) {
-  /*return*/ ((QTextList*)this_)->itemNumber(arg0);
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:67
-// QString itemText(const class QTextBlock &)
+// [4] int itemNumber(const class QTextBlock &)
 extern "C"
-void C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, const QTextBlock & arg0) {
-  /*return*/ ((QTextList*)this_)->itemText(arg0);
+int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, const QTextBlock & arg0) {
+  return (int)((QTextList*)this_)->itemNumber(arg0);
 }
-// /usr/include/qt/QtGui/qtextlist.h:69
-// void removeItem(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:68
+// [8] QString itemText(const class QTextBlock &)
+extern "C"
+void* C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, const QTextBlock & arg0) {
+  auto rv = ((QTextList*)this_)->itemText(arg0);
+return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:70
+// [-2] void removeItem(int)
 extern "C"
 void C_ZN9QTextList10removeItemEi(void *this_, int i) {
   ((QTextList*)this_)->removeItem(i);
 }
-// /usr/include/qt/QtGui/qtextlist.h:70
-// void remove(const class QTextBlock &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:71
+// [-2] void remove(const class QTextBlock &)
 extern "C"
 void C_ZN9QTextList6removeERK10QTextBlock(void *this_, const QTextBlock & arg0) {
   ((QTextList*)this_)->remove(arg0);
 }
-// /usr/include/qt/QtGui/qtextlist.h:72
-// void add(const class QTextBlock &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:73
+// [-2] void add(const class QTextBlock &)
 extern "C"
 void C_ZN9QTextList3addERK10QTextBlock(void *this_, const QTextBlock & block) {
   ((QTextList*)this_)->add(block);
 }
-// inline
-// /usr/include/qt/QtGui/qtextlist.h:74
-// void setFormat(const class QTextListFormat &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:75
+// [-2] void setFormat(const class QTextListFormat &)
 extern "C"
 void C_ZN9QTextList9setFormatERK15QTextListFormat(void *this_, const QTextListFormat & format) {
   ((QTextList*)this_)->setFormat(format);
 }
-// inline
-// /usr/include/qt/QtGui/qtextlist.h:75
-// QTextListFormat format()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:76
+// [16] QTextListFormat format()
 extern "C"
-void C_ZNK9QTextList6formatEv(void *this_) {
-  /*return*/ ((QTextList*)this_)->format();
+void* C_ZNK9QTextList6formatEv(void *this_) {
+  auto rv = ((QTextList*)this_)->format();
+return new QTextListFormat(rv);
 }
 //  main block end

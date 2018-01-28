@@ -3,82 +3,40 @@
 #include <qlogging.h>
 #include <QtCore>
 
+// QMessageLogger is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQMessageLogger : public QMessageLogger {
+public:
+MyQMessageLogger() : QMessageLogger() {}
+MyQMessageLogger(const char * file, int line, const char * function) : QMessageLogger(file, line, function) {}
+MyQMessageLogger(const char * file, int line, const char * function, const char * category) : QMessageLogger(file, line, function, category) {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:90
-// void QMessageLogger()
+// [-2] void QMessageLogger()
 extern "C"
 void* C_ZN14QMessageLoggerC1Ev() {
-  return new QMessageLogger();
+  (MyQMessageLogger*)(0);
+  return  new MyQMessageLogger();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:91
-// void QMessageLogger(const char *, int, const char *)
+// [-2] void QMessageLogger(const char *, int, const char *)
 extern "C"
 void* C_ZN14QMessageLoggerC1EPKciS1_(const char * file, int line, const char * function) {
-  return new QMessageLogger(file, line, function);
+  (MyQMessageLogger*)(0);
+  return  new MyQMessageLogger(file, line, function);
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:93
-// void QMessageLogger(const char *, int, const char *, const char *)
+// [-2] void QMessageLogger(const char *, int, const char *, const char *)
 extern "C"
 void* C_ZN14QMessageLoggerC1EPKciS1_S1_(const char * file, int line, const char * function, const char * category) {
-  return new QMessageLogger(file, line, function, category);
-}
-// /usr/include/qt/QtCore/qlogging.h:120
-// QDebug debug()
-extern "C"
-void C_ZNK14QMessageLogger5debugEv(void *this_) {
-  /*return*/ ((QMessageLogger*)this_)->debug();
-}
-// /usr/include/qt/QtCore/qlogging.h:121
-// QDebug debug(const class QLoggingCategory &)
-extern "C"
-void C_ZNK14QMessageLogger5debugERK16QLoggingCategory(void *this_, const QLoggingCategory & cat) {
-  /*return*/ ((QMessageLogger*)this_)->debug(cat);
-}
-// /usr/include/qt/QtCore/qlogging.h:123
-// QDebug info()
-extern "C"
-void C_ZNK14QMessageLogger4infoEv(void *this_) {
-  /*return*/ ((QMessageLogger*)this_)->info();
-}
-// /usr/include/qt/QtCore/qlogging.h:124
-// QDebug info(const class QLoggingCategory &)
-extern "C"
-void C_ZNK14QMessageLogger4infoERK16QLoggingCategory(void *this_, const QLoggingCategory & cat) {
-  /*return*/ ((QMessageLogger*)this_)->info(cat);
-}
-// /usr/include/qt/QtCore/qlogging.h:126
-// QDebug warning()
-extern "C"
-void C_ZNK14QMessageLogger7warningEv(void *this_) {
-  /*return*/ ((QMessageLogger*)this_)->warning();
-}
-// /usr/include/qt/QtCore/qlogging.h:127
-// QDebug warning(const class QLoggingCategory &)
-extern "C"
-void C_ZNK14QMessageLogger7warningERK16QLoggingCategory(void *this_, const QLoggingCategory & cat) {
-  /*return*/ ((QMessageLogger*)this_)->warning(cat);
-}
-// /usr/include/qt/QtCore/qlogging.h:129
-// QDebug critical()
-extern "C"
-void C_ZNK14QMessageLogger8criticalEv(void *this_) {
-  /*return*/ ((QMessageLogger*)this_)->critical();
-}
-// /usr/include/qt/QtCore/qlogging.h:130
-// QDebug critical(const class QLoggingCategory &)
-extern "C"
-void C_ZNK14QMessageLogger8criticalERK16QLoggingCategory(void *this_, const QLoggingCategory & cat) {
-  /*return*/ ((QMessageLogger*)this_)->critical(cat);
-}
-// /usr/include/qt/QtCore/qlogging.h:133
-// QNoDebug noDebug()
-extern "C"
-void C_ZNK14QMessageLogger7noDebugEv(void *this_) {
-  /*return*/ ((QMessageLogger*)this_)->noDebug();
+  (MyQMessageLogger*)(0);
+  return  new MyQMessageLogger(file, line, function, category);
 }
 //  main block end

@@ -3,377 +3,431 @@
 #include <qxmlstream.h>
 #include <QtCore>
 
+// QXmlStreamReader is pure virtual: false
 //  header block end
 
 //  main block begin
+
+class MyQXmlStreamReader : public QXmlStreamReader {
+public:
+MyQXmlStreamReader() : QXmlStreamReader() {}
+MyQXmlStreamReader(QIODevice * device) : QXmlStreamReader(device) {}
+MyQXmlStreamReader(const QByteArray & data) : QXmlStreamReader(data) {}
+MyQXmlStreamReader(const QString & data) : QXmlStreamReader(data) {}
+MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:360
-// void QXmlStreamReader()
+// [-2] void QXmlStreamReader()
 extern "C"
 void* C_ZN16QXmlStreamReaderC1Ev() {
-  return new QXmlStreamReader();
+  (MyQXmlStreamReader*)(0);
+  return  new MyQXmlStreamReader();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:361
-// void QXmlStreamReader(class QIODevice *)
+// [-2] void QXmlStreamReader(class QIODevice *)
 extern "C"
 void* C_ZN16QXmlStreamReaderC1EP9QIODevice(QIODevice * device) {
-  return new QXmlStreamReader(device);
+  (MyQXmlStreamReader*)(0);
+  return  new MyQXmlStreamReader(device);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:362
-// void QXmlStreamReader(const class QByteArray &)
+// [-2] void QXmlStreamReader(const class QByteArray &)
 extern "C"
 void* C_ZN16QXmlStreamReaderC1ERK10QByteArray(const QByteArray & data) {
-  return new QXmlStreamReader(data);
+  (MyQXmlStreamReader*)(0);
+  return  new MyQXmlStreamReader(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:363
-// void QXmlStreamReader(const class QString &)
+// [-2] void QXmlStreamReader(const class QString &)
 extern "C"
 void* C_ZN16QXmlStreamReaderC1ERK7QString(const QString & data) {
-  return new QXmlStreamReader(data);
+  (MyQXmlStreamReader*)(0);
+  return  new MyQXmlStreamReader(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:364
-// void QXmlStreamReader(const char *)
+// [-2] void QXmlStreamReader(const char *)
 extern "C"
 void* C_ZN16QXmlStreamReaderC1EPKc(const char * data) {
-  return new QXmlStreamReader(data);
+  (MyQXmlStreamReader*)(0);
+  return  new MyQXmlStreamReader(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:365
-// void ~QXmlStreamReader()
+// [-2] void ~QXmlStreamReader()
 extern "C"
 void C_ZN16QXmlStreamReaderD1Ev(void *this_) {
   delete (QXmlStreamReader*)(this_);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:367
-// void setDevice(class QIODevice *)
+// [-2] void setDevice(class QIODevice *)
 extern "C"
 void C_ZN16QXmlStreamReader9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
   ((QXmlStreamReader*)this_)->setDevice(device);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:368
-// QIODevice * device()
+// [8] QIODevice * device()
 extern "C"
-void C_ZNK16QXmlStreamReader6deviceEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->device();
+void* C_ZNK16QXmlStreamReader6deviceEv(void *this_) {
+  return (void*)((QXmlStreamReader*)this_)->device();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:369
-// void addData(const class QByteArray &)
+// [-2] void addData(const class QByteArray &)
 extern "C"
 void C_ZN16QXmlStreamReader7addDataERK10QByteArray(void *this_, const QByteArray & data) {
   ((QXmlStreamReader*)this_)->addData(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:370
-// void addData(const class QString &)
+// [-2] void addData(const class QString &)
 extern "C"
 void C_ZN16QXmlStreamReader7addDataERK7QString(void *this_, const QString & data) {
   ((QXmlStreamReader*)this_)->addData(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:371
-// void addData(const char *)
+// [-2] void addData(const char *)
 extern "C"
 void C_ZN16QXmlStreamReader7addDataEPKc(void *this_, const char * data) {
   ((QXmlStreamReader*)this_)->addData(data);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:372
-// void clear()
+// [-2] void clear()
 extern "C"
 void C_ZN16QXmlStreamReader5clearEv(void *this_) {
   ((QXmlStreamReader*)this_)->clear();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:375
-// bool atEnd()
+// [1] bool atEnd()
 extern "C"
-void C_ZNK16QXmlStreamReader5atEndEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->atEnd();
+bool C_ZNK16QXmlStreamReader5atEndEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->atEnd();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:376
-// QXmlStreamReader::TokenType readNext()
+// [4] QXmlStreamReader::TokenType readNext()
 extern "C"
-void C_ZN16QXmlStreamReader8readNextEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->readNext();
+QXmlStreamReader::TokenType C_ZN16QXmlStreamReader8readNextEv(void *this_) {
+  return (QXmlStreamReader::TokenType)((QXmlStreamReader*)this_)->readNext();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:378
-// bool readNextStartElement()
+// [1] bool readNextStartElement()
 extern "C"
-void C_ZN16QXmlStreamReader20readNextStartElementEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->readNextStartElement();
+bool C_ZN16QXmlStreamReader20readNextStartElementEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->readNextStartElement();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:379
-// void skipCurrentElement()
+// [-2] void skipCurrentElement()
 extern "C"
 void C_ZN16QXmlStreamReader18skipCurrentElementEv(void *this_) {
   ((QXmlStreamReader*)this_)->skipCurrentElement();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:381
-// QXmlStreamReader::TokenType tokenType()
+// [4] QXmlStreamReader::TokenType tokenType()
 extern "C"
-void C_ZNK16QXmlStreamReader9tokenTypeEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->tokenType();
+QXmlStreamReader::TokenType C_ZNK16QXmlStreamReader9tokenTypeEv(void *this_) {
+  return (QXmlStreamReader::TokenType)((QXmlStreamReader*)this_)->tokenType();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:382
-// QString tokenString()
+// [8] QString tokenString()
 extern "C"
-void C_ZNK16QXmlStreamReader11tokenStringEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->tokenString();
+void* C_ZNK16QXmlStreamReader11tokenStringEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->tokenString();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:384
-// void setNamespaceProcessing(_Bool)
+// [-2] void setNamespaceProcessing(_Bool)
 extern "C"
 void C_ZN16QXmlStreamReader22setNamespaceProcessingEb(void *this_, bool arg0) {
   ((QXmlStreamReader*)this_)->setNamespaceProcessing(arg0);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:385
-// bool namespaceProcessing()
+// [1] bool namespaceProcessing()
 extern "C"
-void C_ZNK16QXmlStreamReader19namespaceProcessingEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->namespaceProcessing();
+bool C_ZNK16QXmlStreamReader19namespaceProcessingEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->namespaceProcessing();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:387
-// bool isStartDocument()
+// [1] bool isStartDocument()
 extern "C"
-void C_ZNK16QXmlStreamReader15isStartDocumentEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isStartDocument();
+bool C_ZNK16QXmlStreamReader15isStartDocumentEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isStartDocument();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:388
-// bool isEndDocument()
+// [1] bool isEndDocument()
 extern "C"
-void C_ZNK16QXmlStreamReader13isEndDocumentEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isEndDocument();
+bool C_ZNK16QXmlStreamReader13isEndDocumentEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isEndDocument();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:389
-// bool isStartElement()
+// [1] bool isStartElement()
 extern "C"
-void C_ZNK16QXmlStreamReader14isStartElementEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isStartElement();
+bool C_ZNK16QXmlStreamReader14isStartElementEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isStartElement();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:390
-// bool isEndElement()
+// [1] bool isEndElement()
 extern "C"
-void C_ZNK16QXmlStreamReader12isEndElementEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isEndElement();
+bool C_ZNK16QXmlStreamReader12isEndElementEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isEndElement();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:391
-// bool isCharacters()
+// [1] bool isCharacters()
 extern "C"
-void C_ZNK16QXmlStreamReader12isCharactersEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isCharacters();
+bool C_ZNK16QXmlStreamReader12isCharactersEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isCharacters();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:392
-// bool isWhitespace()
+// [1] bool isWhitespace()
 extern "C"
-void C_ZNK16QXmlStreamReader12isWhitespaceEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isWhitespace();
+bool C_ZNK16QXmlStreamReader12isWhitespaceEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isWhitespace();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:393
-// bool isCDATA()
+// [1] bool isCDATA()
 extern "C"
-void C_ZNK16QXmlStreamReader7isCDATAEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isCDATA();
+bool C_ZNK16QXmlStreamReader7isCDATAEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isCDATA();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:394
-// bool isComment()
+// [1] bool isComment()
 extern "C"
-void C_ZNK16QXmlStreamReader9isCommentEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isComment();
+bool C_ZNK16QXmlStreamReader9isCommentEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isComment();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:395
-// bool isDTD()
+// [1] bool isDTD()
 extern "C"
-void C_ZNK16QXmlStreamReader5isDTDEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isDTD();
+bool C_ZNK16QXmlStreamReader5isDTDEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isDTD();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:396
-// bool isEntityReference()
+// [1] bool isEntityReference()
 extern "C"
-void C_ZNK16QXmlStreamReader17isEntityReferenceEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isEntityReference();
+bool C_ZNK16QXmlStreamReader17isEntityReferenceEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isEntityReference();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:397
-// bool isProcessingInstruction()
+// [1] bool isProcessingInstruction()
 extern "C"
-void C_ZNK16QXmlStreamReader23isProcessingInstructionEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isProcessingInstruction();
+bool C_ZNK16QXmlStreamReader23isProcessingInstructionEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isProcessingInstruction();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:399
-// bool isStandaloneDocument()
+// [1] bool isStandaloneDocument()
 extern "C"
-void C_ZNK16QXmlStreamReader20isStandaloneDocumentEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->isStandaloneDocument();
+bool C_ZNK16QXmlStreamReader20isStandaloneDocumentEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->isStandaloneDocument();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:400
-// QStringRef documentVersion()
+// [16] QStringRef documentVersion()
 extern "C"
-void C_ZNK16QXmlStreamReader15documentVersionEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->documentVersion();
+void* C_ZNK16QXmlStreamReader15documentVersionEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->documentVersion();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:401
-// QStringRef documentEncoding()
+// [16] QStringRef documentEncoding()
 extern "C"
-void C_ZNK16QXmlStreamReader16documentEncodingEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->documentEncoding();
+void* C_ZNK16QXmlStreamReader16documentEncodingEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->documentEncoding();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:403
-// qint64 lineNumber()
+// [8] qint64 lineNumber()
 extern "C"
-void C_ZNK16QXmlStreamReader10lineNumberEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->lineNumber();
+qint64 C_ZNK16QXmlStreamReader10lineNumberEv(void *this_) {
+  return (qint64)((QXmlStreamReader*)this_)->lineNumber();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:404
-// qint64 columnNumber()
+// [8] qint64 columnNumber()
 extern "C"
-void C_ZNK16QXmlStreamReader12columnNumberEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->columnNumber();
+qint64 C_ZNK16QXmlStreamReader12columnNumberEv(void *this_) {
+  return (qint64)((QXmlStreamReader*)this_)->columnNumber();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:405
-// qint64 characterOffset()
+// [8] qint64 characterOffset()
 extern "C"
-void C_ZNK16QXmlStreamReader15characterOffsetEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->characterOffset();
+qint64 C_ZNK16QXmlStreamReader15characterOffsetEv(void *this_) {
+  return (qint64)((QXmlStreamReader*)this_)->characterOffset();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:407
-// QXmlStreamAttributes attributes()
+// [8] QXmlStreamAttributes attributes()
 extern "C"
-void C_ZNK16QXmlStreamReader10attributesEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->attributes();
+void* C_ZNK16QXmlStreamReader10attributesEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->attributes();
+return new QXmlStreamAttributes(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:414
-// QString readElementText(enum QXmlStreamReader::ReadElementTextBehaviour)
+// [8] QString readElementText(enum QXmlStreamReader::ReadElementTextBehaviour)
 extern "C"
-void C_ZN16QXmlStreamReader15readElementTextENS_24ReadElementTextBehaviourE(void *this_, QXmlStreamReader::ReadElementTextBehaviour behaviour) {
-  /*return*/ ((QXmlStreamReader*)this_)->readElementText(behaviour);
+void* C_ZN16QXmlStreamReader15readElementTextENS_24ReadElementTextBehaviourE(void *this_, QXmlStreamReader::ReadElementTextBehaviour behaviour) {
+  auto rv = ((QXmlStreamReader*)this_)->readElementText(behaviour);
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:416
-// QStringRef name()
+// [16] QStringRef name()
 extern "C"
-void C_ZNK16QXmlStreamReader4nameEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->name();
+void* C_ZNK16QXmlStreamReader4nameEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->name();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:417
-// QStringRef namespaceUri()
+// [16] QStringRef namespaceUri()
 extern "C"
-void C_ZNK16QXmlStreamReader12namespaceUriEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->namespaceUri();
+void* C_ZNK16QXmlStreamReader12namespaceUriEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->namespaceUri();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:418
-// QStringRef qualifiedName()
+// [16] QStringRef qualifiedName()
 extern "C"
-void C_ZNK16QXmlStreamReader13qualifiedNameEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->qualifiedName();
+void* C_ZNK16QXmlStreamReader13qualifiedNameEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->qualifiedName();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:419
-// QStringRef prefix()
+// [16] QStringRef prefix()
 extern "C"
-void C_ZNK16QXmlStreamReader6prefixEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->prefix();
+void* C_ZNK16QXmlStreamReader6prefixEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->prefix();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:421
-// QStringRef processingInstructionTarget()
+// [16] QStringRef processingInstructionTarget()
 extern "C"
-void C_ZNK16QXmlStreamReader27processingInstructionTargetEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->processingInstructionTarget();
+void* C_ZNK16QXmlStreamReader27processingInstructionTargetEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->processingInstructionTarget();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:422
-// QStringRef processingInstructionData()
+// [16] QStringRef processingInstructionData()
 extern "C"
-void C_ZNK16QXmlStreamReader25processingInstructionDataEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->processingInstructionData();
+void* C_ZNK16QXmlStreamReader25processingInstructionDataEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->processingInstructionData();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:424
-// QStringRef text()
+// [16] QStringRef text()
 extern "C"
-void C_ZNK16QXmlStreamReader4textEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->text();
+void* C_ZNK16QXmlStreamReader4textEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->text();
+return new QStringRef(rv);
 }
-// /usr/include/qt/QtCore/qxmlstream.h:426
-// QXmlStreamNamespaceDeclarations namespaceDeclarations()
-extern "C"
-void C_ZNK16QXmlStreamReader21namespaceDeclarationsEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->namespaceDeclarations();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:427
-// void addExtraNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
+// [-2] void addExtraNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
 extern "C"
 void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration(void *this_, const QXmlStreamNamespaceDeclaration & extraNamespaceDeclaraction) {
   ((QXmlStreamReader*)this_)->addExtraNamespaceDeclaration(extraNamespaceDeclaraction);
 }
-// /usr/include/qt/QtCore/qxmlstream.h:428
-// void addExtraNamespaceDeclarations(const QXmlStreamNamespaceDeclarations &)
-extern "C"
-void C_ZN16QXmlStreamReader29addExtraNamespaceDeclarationsERK7QVectorI30QXmlStreamNamespaceDeclarationE(void *this_, const QXmlStreamNamespaceDeclarations & extraNamespaceDeclaractions) {
-  ((QXmlStreamReader*)this_)->addExtraNamespaceDeclarations(extraNamespaceDeclaractions);
-}
-// /usr/include/qt/QtCore/qxmlstream.h:429
-// QXmlStreamNotationDeclarations notationDeclarations()
-extern "C"
-void C_ZNK16QXmlStreamReader20notationDeclarationsEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->notationDeclarations();
-}
-// /usr/include/qt/QtCore/qxmlstream.h:430
-// QXmlStreamEntityDeclarations entityDeclarations()
-extern "C"
-void C_ZNK16QXmlStreamReader18entityDeclarationsEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->entityDeclarations();
-}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:431
-// QStringRef dtdName()
+// [16] QStringRef dtdName()
 extern "C"
-void C_ZNK16QXmlStreamReader7dtdNameEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->dtdName();
+void* C_ZNK16QXmlStreamReader7dtdNameEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->dtdName();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:432
-// QStringRef dtdPublicId()
+// [16] QStringRef dtdPublicId()
 extern "C"
-void C_ZNK16QXmlStreamReader11dtdPublicIdEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->dtdPublicId();
+void* C_ZNK16QXmlStreamReader11dtdPublicIdEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->dtdPublicId();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:433
-// QStringRef dtdSystemId()
+// [16] QStringRef dtdSystemId()
 extern "C"
-void C_ZNK16QXmlStreamReader11dtdSystemIdEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->dtdSystemId();
+void* C_ZNK16QXmlStreamReader11dtdSystemIdEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->dtdSystemId();
+return new QStringRef(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:443
-// void raiseError(const class QString &)
+// [-2] void raiseError(const class QString &)
 extern "C"
 void C_ZN16QXmlStreamReader10raiseErrorERK7QString(void *this_, const QString & message) {
   ((QXmlStreamReader*)this_)->raiseError(message);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:444
-// QString errorString()
+// [8] QString errorString()
 extern "C"
-void C_ZNK16QXmlStreamReader11errorStringEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->errorString();
+void* C_ZNK16QXmlStreamReader11errorStringEv(void *this_) {
+  auto rv = ((QXmlStreamReader*)this_)->errorString();
+return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:445
-// QXmlStreamReader::Error error()
+// [4] QXmlStreamReader::Error error()
 extern "C"
-void C_ZNK16QXmlStreamReader5errorEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->error();
+QXmlStreamReader::Error C_ZNK16QXmlStreamReader5errorEv(void *this_) {
+  return (QXmlStreamReader::Error)((QXmlStreamReader*)this_)->error();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:447
-// bool hasError()
+// [1] bool hasError()
 extern "C"
-void C_ZNK16QXmlStreamReader8hasErrorEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->hasError();
+bool C_ZNK16QXmlStreamReader8hasErrorEv(void *this_) {
+  return (bool)((QXmlStreamReader*)this_)->hasError();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:452
-// void setEntityResolver(class QXmlStreamEntityResolver *)
+// [-2] void setEntityResolver(class QXmlStreamEntityResolver *)
 extern "C"
 void C_ZN16QXmlStreamReader17setEntityResolverEP24QXmlStreamEntityResolver(void *this_, QXmlStreamEntityResolver * resolver) {
   ((QXmlStreamReader*)this_)->setEntityResolver(resolver);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:453
-// QXmlStreamEntityResolver * entityResolver()
+// [8] QXmlStreamEntityResolver * entityResolver()
 extern "C"
-void C_ZNK16QXmlStreamReader14entityResolverEv(void *this_) {
-  /*return*/ ((QXmlStreamReader*)this_)->entityResolver();
+void* C_ZNK16QXmlStreamReader14entityResolverEv(void *this_) {
+  return (void*)((QXmlStreamReader*)this_)->entityResolver();
 }
 //  main block end

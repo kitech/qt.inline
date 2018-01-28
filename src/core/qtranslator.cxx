@@ -3,59 +3,72 @@
 #include <qtranslator.h>
 #include <QtCore>
 
+// QTranslator is pure virtual: false
 //  header block end
 
 //  main block begin
-// virtual
+
+class MyQTranslator : public QTranslator {
+public:
+MyQTranslator(QObject * parent) : QTranslator(parent) {}
+};
+
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:56
-// const QMetaObject * metaObject()
+// [8] const QMetaObject * metaObject()
 extern "C"
-void C_ZNK11QTranslator10metaObjectEv(void *this_) {
-  /*return*/ ((QTranslator*)this_)->metaObject();
+void* C_ZNK11QTranslator10metaObjectEv(void *this_) {
+  return (void*)((QTranslator*)this_)->metaObject();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:58
-// void QTranslator(class QObject *)
+// [-2] void QTranslator(class QObject *)
 extern "C"
 void* C_ZN11QTranslatorC1EP7QObject(QObject * parent) {
-  return new QTranslator(parent);
+  (MyQTranslator*)(0);
+  return  new MyQTranslator(parent);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:59
-// void ~QTranslator()
+// [-2] void ~QTranslator()
 extern "C"
 void C_ZN11QTranslatorD1Ev(void *this_) {
   delete (QTranslator*)(this_);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:61
-// QString translate(const char *, const char *, const char *, int)
+// [8] QString translate(const char *, const char *, const char *, int)
 extern "C"
-void C_ZNK11QTranslator9translateEPKcS1_S1_i(void *this_, const char * context, const char * sourceText, const char * disambiguation, int n) {
-  /*return*/ ((QTranslator*)this_)->translate(context, sourceText, disambiguation, n);
+void* C_ZNK11QTranslator9translateEPKcS1_S1_i(void *this_, const char * context, const char * sourceText, const char * disambiguation, int n) {
+  auto rv = ((QTranslator*)this_)->translate(context, sourceText, disambiguation, n);
+return new QString(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:64
-// bool isEmpty()
+// [1] bool isEmpty()
 extern "C"
-void C_ZNK11QTranslator7isEmptyEv(void *this_) {
-  /*return*/ ((QTranslator*)this_)->isEmpty();
+bool C_ZNK11QTranslator7isEmptyEv(void *this_) {
+  return (bool)((QTranslator*)this_)->isEmpty();
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:66
-// bool load(const class QString &, const class QString &, const class QString &, const class QString &)
+// [1] bool load(const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-void C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, const QString & filename, const QString & directory, const QString & search_delimiters, const QString & suffix) {
-  /*return*/ ((QTranslator*)this_)->load(filename, directory, search_delimiters, suffix);
+bool C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, const QString & filename, const QString & directory, const QString & search_delimiters, const QString & suffix) {
+  return (bool)((QTranslator*)this_)->load(filename, directory, search_delimiters, suffix);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:70
-// bool load(const class QLocale &, const class QString &, const class QString &, const class QString &, const class QString &)
+// [1] bool load(const class QLocale &, const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-void C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, const QLocale & locale, const QString & filename, const QString & prefix, const QString & directory, const QString & suffix) {
-  /*return*/ ((QTranslator*)this_)->load(locale, filename, prefix, directory, suffix);
+bool C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, const QLocale & locale, const QString & filename, const QString & prefix, const QString & directory, const QString & suffix) {
+  return (bool)((QTranslator*)this_)->load(locale, filename, prefix, directory, suffix);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:75
-// bool load(const uchar *, int, const class QString &)
+// [1] bool load(const uchar *, int, const class QString &)
 extern "C"
-void C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, const QString & directory) {
-  /*return*/ ((QTranslator*)this_)->load(data, len, directory);
+bool C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, const QString & directory) {
+  return (bool)((QTranslator*)this_)->load(data, len, directory);
 }
 //  main block end

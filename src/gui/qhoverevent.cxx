@@ -3,48 +3,52 @@
 #include <qevent.h>
 #include <QtGui>
 
+// QHoverEvent is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qevent.h:154
-// void QHoverEvent(enum QEvent::Type, const class QPointF &, const class QPointF &, Qt::KeyboardModifiers)
-extern "C"
-void* C_ZN11QHoverEventC1EN6QEvent4TypeERK7QPointFS4_6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type, const QPointF & pos, const QPointF & oldPos, QFlags<Qt::KeyboardModifier> modifiers) {
-  return new QHoverEvent(type, pos, oldPos, modifiers);
-}
-// virtual
-// /usr/include/qt/QtGui/qevent.h:155
-// void ~QHoverEvent()
+
+class MyQHoverEvent : public QHoverEvent {
+public:
+};
+
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:158
+// [-2] void ~QHoverEvent()
 extern "C"
 void C_ZN11QHoverEventD1Ev(void *this_) {
   delete (QHoverEvent*)(this_);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:158
-// QPoint pos()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:161
+// [8] QPoint pos()
 extern "C"
-void C_ZNK11QHoverEvent3posEv(void *this_) {
-  /*return*/ ((QHoverEvent*)this_)->pos();
+void* C_ZNK11QHoverEvent3posEv(void *this_) {
+  auto rv = ((QHoverEvent*)this_)->pos();
+return new QPoint(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:159
-// QPoint oldPos()
-extern "C"
-void C_ZNK11QHoverEvent6oldPosEv(void *this_) {
-  /*return*/ ((QHoverEvent*)this_)->oldPos();
-}
-// inline
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:162
-// const QPointF & posF()
+// [8] QPoint oldPos()
 extern "C"
-void C_ZNK11QHoverEvent4posFEv(void *this_) {
-  /*return*/ ((QHoverEvent*)this_)->posF();
+void* C_ZNK11QHoverEvent6oldPosEv(void *this_) {
+  auto rv = ((QHoverEvent*)this_)->oldPos();
+return new QPoint(rv);
 }
-// inline
-// /usr/include/qt/QtGui/qevent.h:163
-// const QPointF & oldPosF()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:165
+// [16] const QPointF & posF()
 extern "C"
-void C_ZNK11QHoverEvent7oldPosFEv(void *this_) {
-  /*return*/ ((QHoverEvent*)this_)->oldPosF();
+void* C_ZNK11QHoverEvent4posFEv(void *this_) {
+  auto& rv = ((QHoverEvent*)this_)->posF();
+return new QPointF(rv);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:166
+// [16] const QPointF & oldPosF()
+extern "C"
+void* C_ZNK11QHoverEvent7oldPosFEv(void *this_) {
+  auto& rv = ((QHoverEvent*)this_)->oldPosF();
+return new QPointF(rv);
 }
 //  main block end

@@ -3,261 +3,289 @@
 #include <qsurfaceformat.h>
 #include <QtGui>
 
+// QSurfaceFormat is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtGui/qsurfaceformat.h:82
-// void QSurfaceFormat()
+
+class MyQSurfaceFormat : public QSurfaceFormat {
+public:
+MyQSurfaceFormat() : QSurfaceFormat() {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:94
+// [-2] void QSurfaceFormat()
 extern "C"
 void* C_ZN14QSurfaceFormatC1Ev() {
-  return new QSurfaceFormat();
+  (MyQSurfaceFormat*)(0);
+  return  new MyQSurfaceFormat();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:83
-// void QSurfaceFormat(FormatOptions)
-extern "C"
-void* C_ZN14QSurfaceFormatC1E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::FormatOption> options) {
-  return new QSurfaceFormat(options);
-}
-// /usr/include/qt/QtGui/qsurfaceformat.h:86
-// void ~QSurfaceFormat()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:98
+// [-2] void ~QSurfaceFormat()
 extern "C"
 void C_ZN14QSurfaceFormatD1Ev(void *this_) {
   delete (QSurfaceFormat*)(this_);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:88
-// void setDepthBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:100
+// [-2] void setDepthBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat18setDepthBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setDepthBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:89
-// int depthBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:101
+// [4] int depthBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat15depthBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->depthBufferSize();
+int C_ZNK14QSurfaceFormat15depthBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->depthBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:91
-// void setStencilBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:103
+// [-2] void setStencilBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat20setStencilBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setStencilBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:92
-// int stencilBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:104
+// [4] int stencilBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat17stencilBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->stencilBufferSize();
+int C_ZNK14QSurfaceFormat17stencilBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->stencilBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:94
-// void setRedBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:106
+// [-2] void setRedBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat16setRedBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setRedBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:95
-// int redBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:107
+// [4] int redBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat13redBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->redBufferSize();
+int C_ZNK14QSurfaceFormat13redBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->redBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:96
-// void setGreenBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:108
+// [-2] void setGreenBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat18setGreenBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setGreenBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:97
-// int greenBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:109
+// [4] int greenBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat15greenBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->greenBufferSize();
+int C_ZNK14QSurfaceFormat15greenBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->greenBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:98
-// void setBlueBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:110
+// [-2] void setBlueBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat17setBlueBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setBlueBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:99
-// int blueBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:111
+// [4] int blueBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat14blueBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->blueBufferSize();
+int C_ZNK14QSurfaceFormat14blueBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->blueBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:100
-// void setAlphaBufferSize(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:112
+// [-2] void setAlphaBufferSize(int)
 extern "C"
 void C_ZN14QSurfaceFormat18setAlphaBufferSizeEi(void *this_, int size) {
   ((QSurfaceFormat*)this_)->setAlphaBufferSize(size);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:101
-// int alphaBufferSize()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:113
+// [4] int alphaBufferSize()
 extern "C"
-void C_ZNK14QSurfaceFormat15alphaBufferSizeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->alphaBufferSize();
+int C_ZNK14QSurfaceFormat15alphaBufferSizeEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->alphaBufferSize();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:103
-// void setSamples(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:115
+// [-2] void setSamples(int)
 extern "C"
 void C_ZN14QSurfaceFormat10setSamplesEi(void *this_, int numSamples) {
   ((QSurfaceFormat*)this_)->setSamples(numSamples);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:104
-// int samples()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:116
+// [4] int samples()
 extern "C"
-void C_ZNK14QSurfaceFormat7samplesEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->samples();
+int C_ZNK14QSurfaceFormat7samplesEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->samples();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:106
-// void setSwapBehavior(enum QSurfaceFormat::SwapBehavior)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:118
+// [-2] void setSwapBehavior(enum QSurfaceFormat::SwapBehavior)
 extern "C"
 void C_ZN14QSurfaceFormat15setSwapBehaviorENS_12SwapBehaviorE(void *this_, QSurfaceFormat::SwapBehavior behavior) {
   ((QSurfaceFormat*)this_)->setSwapBehavior(behavior);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:107
-// QSurfaceFormat::SwapBehavior swapBehavior()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:119
+// [4] QSurfaceFormat::SwapBehavior swapBehavior()
 extern "C"
-void C_ZNK14QSurfaceFormat12swapBehaviorEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->swapBehavior();
+QSurfaceFormat::SwapBehavior C_ZNK14QSurfaceFormat12swapBehaviorEv(void *this_) {
+  return (QSurfaceFormat::SwapBehavior)((QSurfaceFormat*)this_)->swapBehavior();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:109
-// bool hasAlpha()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:121
+// [1] bool hasAlpha()
 extern "C"
-void C_ZNK14QSurfaceFormat8hasAlphaEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->hasAlpha();
+bool C_ZNK14QSurfaceFormat8hasAlphaEv(void *this_) {
+  return (bool)((QSurfaceFormat*)this_)->hasAlpha();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:111
-// void setProfile(enum QSurfaceFormat::OpenGLContextProfile)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:123
+// [-2] void setProfile(enum QSurfaceFormat::OpenGLContextProfile)
 extern "C"
 void C_ZN14QSurfaceFormat10setProfileENS_20OpenGLContextProfileE(void *this_, QSurfaceFormat::OpenGLContextProfile profile) {
   ((QSurfaceFormat*)this_)->setProfile(profile);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:112
-// QSurfaceFormat::OpenGLContextProfile profile()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:124
+// [4] QSurfaceFormat::OpenGLContextProfile profile()
 extern "C"
-void C_ZNK14QSurfaceFormat7profileEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->profile();
+QSurfaceFormat::OpenGLContextProfile C_ZNK14QSurfaceFormat7profileEv(void *this_) {
+  return (QSurfaceFormat::OpenGLContextProfile)((QSurfaceFormat*)this_)->profile();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:114
-// void setRenderableType(enum QSurfaceFormat::RenderableType)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:126
+// [-2] void setRenderableType(enum QSurfaceFormat::RenderableType)
 extern "C"
 void C_ZN14QSurfaceFormat17setRenderableTypeENS_14RenderableTypeE(void *this_, QSurfaceFormat::RenderableType type) {
   ((QSurfaceFormat*)this_)->setRenderableType(type);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:115
-// QSurfaceFormat::RenderableType renderableType()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:127
+// [4] QSurfaceFormat::RenderableType renderableType()
 extern "C"
-void C_ZNK14QSurfaceFormat14renderableTypeEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->renderableType();
+QSurfaceFormat::RenderableType C_ZNK14QSurfaceFormat14renderableTypeEv(void *this_) {
+  return (QSurfaceFormat::RenderableType)((QSurfaceFormat*)this_)->renderableType();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:117
-// void setMajorVersion(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:129
+// [-2] void setMajorVersion(int)
 extern "C"
 void C_ZN14QSurfaceFormat15setMajorVersionEi(void *this_, int majorVersion) {
   ((QSurfaceFormat*)this_)->setMajorVersion(majorVersion);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:118
-// int majorVersion()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:130
+// [4] int majorVersion()
 extern "C"
-void C_ZNK14QSurfaceFormat12majorVersionEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->majorVersion();
+int C_ZNK14QSurfaceFormat12majorVersionEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->majorVersion();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:120
-// void setMinorVersion(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:132
+// [-2] void setMinorVersion(int)
 extern "C"
 void C_ZN14QSurfaceFormat15setMinorVersionEi(void *this_, int minorVersion) {
   ((QSurfaceFormat*)this_)->setMinorVersion(minorVersion);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:121
-// int minorVersion()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:133
+// [4] int minorVersion()
 extern "C"
-void C_ZNK14QSurfaceFormat12minorVersionEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->minorVersion();
+int C_ZNK14QSurfaceFormat12minorVersionEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->minorVersion();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:123
-// QPair<int, int> version()
-extern "C"
-void C_ZNK14QSurfaceFormat7versionEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->version();
-}
-// /usr/include/qt/QtGui/qsurfaceformat.h:124
-// void setVersion(int, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:136
+// [-2] void setVersion(int, int)
 extern "C"
 void C_ZN14QSurfaceFormat10setVersionEii(void *this_, int major, int minor) {
   ((QSurfaceFormat*)this_)->setVersion(major, minor);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:126
-// bool stereo()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:138
+// [1] bool stereo()
 extern "C"
-void C_ZNK14QSurfaceFormat6stereoEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->stereo();
+bool C_ZNK14QSurfaceFormat6stereoEv(void *this_) {
+  return (bool)((QSurfaceFormat*)this_)->stereo();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:127
-// void setStereo(_Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:139
+// [-2] void setStereo(_Bool)
 extern "C"
 void C_ZN14QSurfaceFormat9setStereoEb(void *this_, bool enable) {
   ((QSurfaceFormat*)this_)->setStereo(enable);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:130
-// void setOption(class QSurfaceFormat::FormatOptions)
-extern "C"
-void C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
-  ((QSurfaceFormat*)this_)->setOption(opt);
-}
-// /usr/include/qt/QtGui/qsurfaceformat.h:131
-// bool testOption(class QSurfaceFormat::FormatOptions)
-extern "C"
-void C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
-  /*return*/ ((QSurfaceFormat*)this_)->testOption(opt);
-}
-// /usr/include/qt/QtGui/qsurfaceformat.h:134
-// void setOptions(class QSurfaceFormat::FormatOptions)
-extern "C"
-void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> options) {
-  ((QSurfaceFormat*)this_)->setOptions(options);
-}
-// /usr/include/qt/QtGui/qsurfaceformat.h:135
-// void setOption(enum QSurfaceFormat::FormatOption, _Bool)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:147
+// [-2] void setOption(enum QSurfaceFormat::FormatOption, _Bool)
 extern "C"
 void C_ZN14QSurfaceFormat9setOptionENS_12FormatOptionEb(void *this_, QSurfaceFormat::FormatOption option, bool on) {
   ((QSurfaceFormat*)this_)->setOption(option, on);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:136
-// bool testOption(enum QSurfaceFormat::FormatOption)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:148
+// [1] bool testOption(enum QSurfaceFormat::FormatOption)
 extern "C"
-void C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *this_, QSurfaceFormat::FormatOption option) {
-  /*return*/ ((QSurfaceFormat*)this_)->testOption(option);
+bool C_ZNK14QSurfaceFormat10testOptionENS_12FormatOptionE(void *this_, QSurfaceFormat::FormatOption option) {
+  return (bool)((QSurfaceFormat*)this_)->testOption(option);
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:137
-// QSurfaceFormat::FormatOptions options()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:149
+// [4] QSurfaceFormat::FormatOptions options()
 extern "C"
-void C_ZNK14QSurfaceFormat7optionsEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->options();
+QSurfaceFormat::FormatOptions C_ZNK14QSurfaceFormat7optionsEv(void *this_) {
+  return (QSurfaceFormat::FormatOptions)((QSurfaceFormat*)this_)->options();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:139
-// int swapInterval()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:151
+// [4] int swapInterval()
 extern "C"
-void C_ZNK14QSurfaceFormat12swapIntervalEv(void *this_) {
-  /*return*/ ((QSurfaceFormat*)this_)->swapInterval();
+int C_ZNK14QSurfaceFormat12swapIntervalEv(void *this_) {
+  return (int)((QSurfaceFormat*)this_)->swapInterval();
 }
-// /usr/include/qt/QtGui/qsurfaceformat.h:140
-// void setSwapInterval(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:152
+// [-2] void setSwapInterval(int)
 extern "C"
 void C_ZN14QSurfaceFormat15setSwapIntervalEi(void *this_, int interval) {
   ((QSurfaceFormat*)this_)->setSwapInterval(interval);
 }
-// static
-// /usr/include/qt/QtGui/qsurfaceformat.h:142
-// void setDefaultFormat(const class QSurfaceFormat &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:154
+// [4] QSurfaceFormat::ColorSpace colorSpace()
+extern "C"
+QSurfaceFormat::ColorSpace C_ZNK14QSurfaceFormat10colorSpaceEv(void *this_) {
+  return (QSurfaceFormat::ColorSpace)((QSurfaceFormat*)this_)->colorSpace();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:155
+// [-2] void setColorSpace(enum QSurfaceFormat::ColorSpace)
+extern "C"
+void C_ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE(void *this_, QSurfaceFormat::ColorSpace colorSpace) {
+  ((QSurfaceFormat*)this_)->setColorSpace(colorSpace);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:157
+// [-2] void setDefaultFormat(const class QSurfaceFormat &)
 extern "C"
 void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(const QSurfaceFormat & format) {
   QSurfaceFormat::setDefaultFormat(format);
 }
-// static
-// /usr/include/qt/QtGui/qsurfaceformat.h:143
-// QSurfaceFormat defaultFormat()
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:158
+// [8] QSurfaceFormat defaultFormat()
 extern "C"
-void C_ZN14QSurfaceFormat13defaultFormatEv() {
-  /*return*/ QSurfaceFormat::defaultFormat();
+void* C_ZN14QSurfaceFormat13defaultFormatEv() {
+  auto rv = QSurfaceFormat::defaultFormat();
+return new QSurfaceFormat(rv);
 }
 //  main block end

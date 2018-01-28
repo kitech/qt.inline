@@ -3,43 +3,52 @@
 #include <qvariant.h>
 #include <QtCore>
 
+// QAssociativeIterable is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qvariant.h:675
-// void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl)
-extern "C"
-void* C_ZN20QAssociativeIterableC1EN17QtMetaTypePrivate24QAssociativeIterableImplE(QtMetaTypePrivate::QAssociativeIterableImpl impl) {
-  return new QAssociativeIterable(impl);
-}
+
+class MyQAssociativeIterable : public QAssociativeIterable {
+public:
+};
+
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:680
-// QAssociativeIterable::const_iterator begin()
+// [120] QAssociativeIterable::const_iterator begin()
 extern "C"
-void C_ZNK20QAssociativeIterable5beginEv(void *this_) {
-  /*return*/ ((QAssociativeIterable*)this_)->begin();
+void* C_ZNK20QAssociativeIterable5beginEv(void *this_) {
+  auto rv = ((QAssociativeIterable*)this_)->begin();
+return new QAssociativeIterable::const_iterator(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:681
-// QAssociativeIterable::const_iterator end()
+// [120] QAssociativeIterable::const_iterator end()
 extern "C"
-void C_ZNK20QAssociativeIterable3endEv(void *this_) {
-  /*return*/ ((QAssociativeIterable*)this_)->end();
+void* C_ZNK20QAssociativeIterable3endEv(void *this_) {
+  auto rv = ((QAssociativeIterable*)this_)->end();
+return new QAssociativeIterable::const_iterator(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:682
-// QAssociativeIterable::const_iterator find(const class QVariant &)
+// [120] QAssociativeIterable::const_iterator find(const class QVariant &)
 extern "C"
-void C_ZNK20QAssociativeIterable4findERK8QVariant(void *this_, const QVariant & key) {
-  /*return*/ ((QAssociativeIterable*)this_)->find(key);
+void* C_ZNK20QAssociativeIterable4findERK8QVariant(void *this_, const QVariant & key) {
+  auto rv = ((QAssociativeIterable*)this_)->find(key);
+return new QAssociativeIterable::const_iterator(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:684
-// QVariant value(const class QVariant &)
+// [16] QVariant value(const class QVariant &)
 extern "C"
-void C_ZNK20QAssociativeIterable5valueERK8QVariant(void *this_, const QVariant & key) {
-  /*return*/ ((QAssociativeIterable*)this_)->value(key);
+void* C_ZNK20QAssociativeIterable5valueERK8QVariant(void *this_, const QVariant & key) {
+  auto rv = ((QAssociativeIterable*)this_)->value(key);
+return new QVariant(rv);
 }
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariant.h:686
-// int size()
+// [4] int size()
 extern "C"
-void C_ZNK20QAssociativeIterable4sizeEv(void *this_) {
-  /*return*/ ((QAssociativeIterable*)this_)->size();
+int C_ZNK20QAssociativeIterable4sizeEv(void *this_) {
+  return (int)((QAssociativeIterable*)this_)->size();
 }
 //  main block end

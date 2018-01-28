@@ -3,167 +3,201 @@
 #include <qdatastream.h>
 #include <QtCore>
 
+// QDataStream is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtCore/qdatastream.h:117
-// void QDataStream()
+
+class MyQDataStream : public QDataStream {
+public:
+MyQDataStream() : QDataStream() {}
+MyQDataStream(QIODevice * arg0) : QDataStream(arg0) {}
+MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:123
+// [-2] void QDataStream()
 extern "C"
 void* C_ZN11QDataStreamC1Ev() {
-  return new QDataStream();
+  (MyQDataStream*)(0);
+  return  new MyQDataStream();
 }
-// /usr/include/qt/QtCore/qdatastream.h:118
-// void QDataStream(class QIODevice *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:124
+// [-2] void QDataStream(class QIODevice *)
 extern "C"
 void* C_ZN11QDataStreamC1EP9QIODevice(QIODevice * arg0) {
-  return new QDataStream(arg0);
+  (MyQDataStream*)(0);
+  return  new MyQDataStream(arg0);
 }
-// /usr/include/qt/QtCore/qdatastream.h:119
-// void QDataStream(class QByteArray *, class QIODevice::OpenMode)
-extern "C"
-void* C_ZN11QDataStreamC1EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) {
-  return new QDataStream(arg0, flags);
-}
-// /usr/include/qt/QtCore/qdatastream.h:120
-// void QDataStream(const class QByteArray &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:126
+// [-2] void QDataStream(const class QByteArray &)
 extern "C"
 void* C_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & arg0) {
-  return new QDataStream(arg0);
+  (MyQDataStream*)(0);
+  return  new MyQDataStream(arg0);
 }
-// /usr/include/qt/QtCore/qdatastream.h:121
-// void ~QDataStream()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:127
+// [-2] void ~QDataStream()
 extern "C"
 void C_ZN11QDataStreamD1Ev(void *this_) {
   delete (QDataStream*)(this_);
 }
-// /usr/include/qt/QtCore/qdatastream.h:123
-// QIODevice * device()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:129
+// [8] QIODevice * device()
 extern "C"
-void C_ZNK11QDataStream6deviceEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->device();
+void* C_ZNK11QDataStream6deviceEv(void *this_) {
+  return (void*)((QDataStream*)this_)->device();
 }
-// /usr/include/qt/QtCore/qdatastream.h:124
-// void setDevice(class QIODevice *)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:130
+// [-2] void setDevice(class QIODevice *)
 extern "C"
 void C_ZN11QDataStream9setDeviceEP9QIODevice(void *this_, QIODevice * arg0) {
   ((QDataStream*)this_)->setDevice(arg0);
 }
-// /usr/include/qt/QtCore/qdatastream.h:125
-// void unsetDevice()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:131
+// [-2] void unsetDevice()
 extern "C"
 void C_ZN11QDataStream11unsetDeviceEv(void *this_) {
   ((QDataStream*)this_)->unsetDevice();
 }
-// /usr/include/qt/QtCore/qdatastream.h:127
-// bool atEnd()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:133
+// [1] bool atEnd()
 extern "C"
-void C_ZNK11QDataStream5atEndEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->atEnd();
+bool C_ZNK11QDataStream5atEndEv(void *this_) {
+  return (bool)((QDataStream*)this_)->atEnd();
 }
-// /usr/include/qt/QtCore/qdatastream.h:129
-// QDataStream::Status status()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:135
+// [4] QDataStream::Status status()
 extern "C"
-void C_ZNK11QDataStream6statusEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->status();
+QDataStream::Status C_ZNK11QDataStream6statusEv(void *this_) {
+  return (QDataStream::Status)((QDataStream*)this_)->status();
 }
-// /usr/include/qt/QtCore/qdatastream.h:130
-// void setStatus(enum QDataStream::Status)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:136
+// [-2] void setStatus(enum QDataStream::Status)
 extern "C"
 void C_ZN11QDataStream9setStatusENS_6StatusE(void *this_, QDataStream::Status status) {
   ((QDataStream*)this_)->setStatus(status);
 }
-// /usr/include/qt/QtCore/qdatastream.h:131
-// void resetStatus()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:137
+// [-2] void resetStatus()
 extern "C"
 void C_ZN11QDataStream11resetStatusEv(void *this_) {
   ((QDataStream*)this_)->resetStatus();
 }
-// /usr/include/qt/QtCore/qdatastream.h:133
-// QDataStream::FloatingPointPrecision floatingPointPrecision()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:139
+// [4] QDataStream::FloatingPointPrecision floatingPointPrecision()
 extern "C"
-void C_ZNK11QDataStream22floatingPointPrecisionEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->floatingPointPrecision();
+QDataStream::FloatingPointPrecision C_ZNK11QDataStream22floatingPointPrecisionEv(void *this_) {
+  return (QDataStream::FloatingPointPrecision)((QDataStream*)this_)->floatingPointPrecision();
 }
-// /usr/include/qt/QtCore/qdatastream.h:134
-// void setFloatingPointPrecision(enum QDataStream::FloatingPointPrecision)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:140
+// [-2] void setFloatingPointPrecision(enum QDataStream::FloatingPointPrecision)
 extern "C"
 void C_ZN11QDataStream25setFloatingPointPrecisionENS_22FloatingPointPrecisionE(void *this_, QDataStream::FloatingPointPrecision precision) {
   ((QDataStream*)this_)->setFloatingPointPrecision(precision);
 }
-// /usr/include/qt/QtCore/qdatastream.h:136
-// QDataStream::ByteOrder byteOrder()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:142
+// [4] QDataStream::ByteOrder byteOrder()
 extern "C"
-void C_ZNK11QDataStream9byteOrderEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->byteOrder();
+QDataStream::ByteOrder C_ZNK11QDataStream9byteOrderEv(void *this_) {
+  return (QDataStream::ByteOrder)((QDataStream*)this_)->byteOrder();
 }
-// /usr/include/qt/QtCore/qdatastream.h:137
-// void setByteOrder(enum QDataStream::ByteOrder)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:143
+// [-2] void setByteOrder(enum QDataStream::ByteOrder)
 extern "C"
 void C_ZN11QDataStream12setByteOrderENS_9ByteOrderE(void *this_, QDataStream::ByteOrder arg0) {
   ((QDataStream*)this_)->setByteOrder(arg0);
 }
-// /usr/include/qt/QtCore/qdatastream.h:139
-// int version()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:145
+// [4] int version()
 extern "C"
-void C_ZNK11QDataStream7versionEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->version();
+int C_ZNK11QDataStream7versionEv(void *this_) {
+  return (int)((QDataStream*)this_)->version();
 }
-// /usr/include/qt/QtCore/qdatastream.h:140
-// void setVersion(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:146
+// [-2] void setVersion(int)
 extern "C"
 void C_ZN11QDataStream10setVersionEi(void *this_, int arg0) {
   ((QDataStream*)this_)->setVersion(arg0);
 }
-// /usr/include/qt/QtCore/qdatastream.h:169
-// QDataStream & readBytes(char *&, uint &)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:179
+// [32] QDataStream & readBytes(char *&, uint &)
 extern "C"
-void C_ZN11QDataStream9readBytesERPcRj(void *this_, char *& arg0, uint & len) {
-  /*return*/ ((QDataStream*)this_)->readBytes(arg0, len);
+void* C_ZN11QDataStream9readBytesERPcRj(void *this_, char *& arg0, uint & len) {
+  auto& rv = ((QDataStream*)this_)->readBytes(arg0, len);
+return &rv;
 }
-// /usr/include/qt/QtCore/qdatastream.h:170
-// int readRawData(char *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:180
+// [4] int readRawData(char *, int)
 extern "C"
-void C_ZN11QDataStream11readRawDataEPci(void *this_, char * arg0, int len) {
-  /*return*/ ((QDataStream*)this_)->readRawData(arg0, len);
+int C_ZN11QDataStream11readRawDataEPci(void *this_, char * arg0, int len) {
+  return (int)((QDataStream*)this_)->readRawData(arg0, len);
 }
-// /usr/include/qt/QtCore/qdatastream.h:172
-// QDataStream & writeBytes(const char *, uint)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:182
+// [32] QDataStream & writeBytes(const char *, uint)
 extern "C"
-void C_ZN11QDataStream10writeBytesEPKcj(void *this_, const char * arg0, uint len) {
-  /*return*/ ((QDataStream*)this_)->writeBytes(arg0, len);
+void* C_ZN11QDataStream10writeBytesEPKcj(void *this_, const char * arg0, uint len) {
+  auto& rv = ((QDataStream*)this_)->writeBytes(arg0, len);
+return &rv;
 }
-// /usr/include/qt/QtCore/qdatastream.h:173
-// int writeRawData(const char *, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:183
+// [4] int writeRawData(const char *, int)
 extern "C"
-void C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * arg0, int len) {
-  /*return*/ ((QDataStream*)this_)->writeRawData(arg0, len);
+int C_ZN11QDataStream12writeRawDataEPKci(void *this_, const char * arg0, int len) {
+  return (int)((QDataStream*)this_)->writeRawData(arg0, len);
 }
-// /usr/include/qt/QtCore/qdatastream.h:175
-// int skipRawData(int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:185
+// [4] int skipRawData(int)
 extern "C"
-void C_ZN11QDataStream11skipRawDataEi(void *this_, int len) {
-  /*return*/ ((QDataStream*)this_)->skipRawData(len);
+int C_ZN11QDataStream11skipRawDataEi(void *this_, int len) {
+  return (int)((QDataStream*)this_)->skipRawData(len);
 }
-// /usr/include/qt/QtCore/qdatastream.h:177
-// void startTransaction()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:187
+// [-2] void startTransaction()
 extern "C"
 void C_ZN11QDataStream16startTransactionEv(void *this_) {
   ((QDataStream*)this_)->startTransaction();
 }
-// /usr/include/qt/QtCore/qdatastream.h:178
-// bool commitTransaction()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:188
+// [1] bool commitTransaction()
 extern "C"
-void C_ZN11QDataStream17commitTransactionEv(void *this_) {
-  /*return*/ ((QDataStream*)this_)->commitTransaction();
+bool C_ZN11QDataStream17commitTransactionEv(void *this_) {
+  return (bool)((QDataStream*)this_)->commitTransaction();
 }
-// /usr/include/qt/QtCore/qdatastream.h:179
-// void rollbackTransaction()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:189
+// [-2] void rollbackTransaction()
 extern "C"
 void C_ZN11QDataStream19rollbackTransactionEv(void *this_) {
   ((QDataStream*)this_)->rollbackTransaction();
 }
-// /usr/include/qt/QtCore/qdatastream.h:180
-// void abortTransaction()
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:190
+// [-2] void abortTransaction()
 extern "C"
 void C_ZN11QDataStream16abortTransactionEv(void *this_) {
   ((QDataStream*)this_)->abortTransaction();

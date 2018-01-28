@@ -3,98 +3,110 @@
 #include <qlayoutitem.h>
 #include <QtWidgets>
 
+// QWidgetItem is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
-// /usr/include/qt/QtWidgets/qlayoutitem.h:125
-// void QWidgetItem(class QWidget *)
+
+class MyQWidgetItem : public QWidgetItem {
+public:
+MyQWidgetItem(QWidget * w) : QWidgetItem(w) {}
+};
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:126
+// [-2] void QWidgetItem(class QWidget *)
 extern "C"
 void* C_ZN11QWidgetItemC1EP7QWidget(QWidget * w) {
-  return new QWidgetItem(w);
+  (MyQWidgetItem*)(0);
+  return  new MyQWidgetItem(w);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:126
-// void ~QWidgetItem()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:127
+// [-2] void ~QWidgetItem()
 extern "C"
 void C_ZN11QWidgetItemD1Ev(void *this_) {
   delete (QWidgetItem*)(this_);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:128
-// QSize sizeHint()
-extern "C"
-void C_ZNK11QWidgetItem8sizeHintEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->sizeHint();
-}
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:129
-// QSize minimumSize()
+// [8] QSize sizeHint()
 extern "C"
-void C_ZNK11QWidgetItem11minimumSizeEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->minimumSize();
+void* C_ZNK11QWidgetItem8sizeHintEv(void *this_) {
+  auto rv = ((QWidgetItem*)this_)->sizeHint();
+return new QSize(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:130
-// QSize maximumSize()
+// [8] QSize minimumSize()
 extern "C"
-void C_ZNK11QWidgetItem11maximumSizeEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->maximumSize();
+void* C_ZNK11QWidgetItem11minimumSizeEv(void *this_) {
+  auto rv = ((QWidgetItem*)this_)->minimumSize();
+return new QSize(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:131
-// Qt::Orientations expandingDirections()
+// [8] QSize maximumSize()
 extern "C"
-void C_ZNK11QWidgetItem19expandingDirectionsEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->expandingDirections();
+void* C_ZNK11QWidgetItem11maximumSizeEv(void *this_) {
+  auto rv = ((QWidgetItem*)this_)->maximumSize();
+return new QSize(rv);
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:132
-// bool isEmpty()
+// [4] Qt::Orientations expandingDirections()
 extern "C"
-void C_ZNK11QWidgetItem7isEmptyEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->isEmpty();
+Qt::Orientations C_ZNK11QWidgetItem19expandingDirectionsEv(void *this_) {
+  return (Qt::Orientations)((QWidgetItem*)this_)->expandingDirections();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:133
-// void setGeometry(const class QRect &)
+// [1] bool isEmpty()
+extern "C"
+bool C_ZNK11QWidgetItem7isEmptyEv(void *this_) {
+  return (bool)((QWidgetItem*)this_)->isEmpty();
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:134
+// [-2] void setGeometry(const class QRect &)
 extern "C"
 void C_ZN11QWidgetItem11setGeometryERK5QRect(void *this_, const QRect & arg0) {
   ((QWidgetItem*)this_)->setGeometry(arg0);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:134
-// QRect geometry()
-extern "C"
-void C_ZNK11QWidgetItem8geometryEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->geometry();
-}
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:135
-// QWidget * widget()
+// [16] QRect geometry()
 extern "C"
-void C_ZN11QWidgetItem6widgetEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->widget();
+void* C_ZNK11QWidgetItem8geometryEv(void *this_) {
+  auto rv = ((QWidgetItem*)this_)->geometry();
+return new QRect(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qlayoutitem.h:137
-// bool hasHeightForWidth()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:136
+// [8] QWidget * widget()
 extern "C"
-void C_ZNK11QWidgetItem17hasHeightForWidthEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->hasHeightForWidth();
+void* C_ZN11QWidgetItem6widgetEv(void *this_) {
+  return (void*)((QWidgetItem*)this_)->widget();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:138
-// int heightForWidth(int)
+// [1] bool hasHeightForWidth()
 extern "C"
-void C_ZNK11QWidgetItem14heightForWidthEi(void *this_, int arg0) {
-  /*return*/ ((QWidgetItem*)this_)->heightForWidth(arg0);
+bool C_ZNK11QWidgetItem17hasHeightForWidthEv(void *this_) {
+  return (bool)((QWidgetItem*)this_)->hasHeightForWidth();
 }
-// virtual
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:139
-// QSizePolicy::ControlTypes controlTypes()
+// [4] int heightForWidth(int)
 extern "C"
-void C_ZNK11QWidgetItem12controlTypesEv(void *this_) {
-  /*return*/ ((QWidgetItem*)this_)->controlTypes();
+int C_ZNK11QWidgetItem14heightForWidthEi(void *this_, int arg0) {
+  return (int)((QWidgetItem*)this_)->heightForWidth(arg0);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:140
+// [4] QSizePolicy::ControlTypes controlTypes()
+extern "C"
+QSizePolicy::ControlTypes C_ZNK11QWidgetItem12controlTypesEv(void *this_) {
+  return (QSizePolicy::ControlTypes)((QWidgetItem*)this_)->controlTypes();
 }
 //  main block end

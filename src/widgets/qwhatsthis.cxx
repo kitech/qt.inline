@@ -3,49 +3,55 @@
 #include <qwhatsthis.h>
 #include <QtWidgets>
 
+// QWhatsThis is pure virtual: false
 //  header block end
 
 //  main block begin
-// static
+
+class MyQWhatsThis : public QWhatsThis {
+public:
+};
+
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:58
-// void enterWhatsThisMode()
+// [-2] void enterWhatsThisMode()
 extern "C"
 void C_ZN10QWhatsThis18enterWhatsThisModeEv() {
   QWhatsThis::enterWhatsThisMode();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:59
-// bool inWhatsThisMode()
+// [1] bool inWhatsThisMode()
 extern "C"
-void C_ZN10QWhatsThis15inWhatsThisModeEv() {
-  /*return*/ QWhatsThis::inWhatsThisMode();
+bool C_ZN10QWhatsThis15inWhatsThisModeEv() {
+  return (bool)QWhatsThis::inWhatsThisMode();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:60
-// void leaveWhatsThisMode()
+// [-2] void leaveWhatsThisMode()
 extern "C"
 void C_ZN10QWhatsThis18leaveWhatsThisModeEv() {
   QWhatsThis::leaveWhatsThisMode();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:62
-// void showText(const class QPoint &, const class QString &, class QWidget *)
+// [-2] void showText(const class QPoint &, const class QString &, class QWidget *)
 extern "C"
 void C_ZN10QWhatsThis8showTextERK6QPointRK7QStringP7QWidget(const QPoint & pos, const QString & text, QWidget * w) {
   QWhatsThis::showText(pos, text, w);
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:63
-// void hideText()
+// [-2] void hideText()
 extern "C"
 void C_ZN10QWhatsThis8hideTextEv() {
   QWhatsThis::hideText();
 }
-// static
+// Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwhatsthis.h:65
-// QAction * createAction(class QObject *)
+// [8] QAction * createAction(class QObject *)
 extern "C"
-void C_ZN10QWhatsThis12createActionEP7QObject(QObject * parent) {
-  /*return*/ QWhatsThis::createAction(parent);
+void* C_ZN10QWhatsThis12createActionEP7QObject(QObject * parent) {
+  return (void*)QWhatsThis::createAction(parent);
 }
 //  main block end

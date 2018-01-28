@@ -3,304 +3,332 @@
 #include <qtablewidget.h>
 #include <QtWidgets>
 
+// QTableWidgetItem is pure virtual: false
 //  header block end
 
 //  main block begin
-// /usr/include/qt/QtWidgets/qtablewidget.h:83
-// void QTableWidgetItem(int)
+
+class MyQTableWidgetItem : public QTableWidgetItem {
+public:
+MyQTableWidgetItem(int type) : QTableWidgetItem(type) {}
+MyQTableWidgetItem(const QString & text, int type) : QTableWidgetItem(text, type) {}
+MyQTableWidgetItem(const QIcon & icon, const QString & text, int type) : QTableWidgetItem(icon, text, type) {}
+};
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:82
+// [-2] void QTableWidgetItem(int)
 extern "C"
 void* C_ZN16QTableWidgetItemC1Ei(int type) {
-  return new QTableWidgetItem(type);
+  (MyQTableWidgetItem*)(0);
+  return  new MyQTableWidgetItem(type);
 }
-// /usr/include/qt/QtWidgets/qtablewidget.h:84
-// void QTableWidgetItem(const class QString &, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:83
+// [-2] void QTableWidgetItem(const class QString &, int)
 extern "C"
 void* C_ZN16QTableWidgetItemC1ERK7QStringi(const QString & text, int type) {
-  return new QTableWidgetItem(text, type);
+  (MyQTableWidgetItem*)(0);
+  return  new MyQTableWidgetItem(text, type);
 }
-// /usr/include/qt/QtWidgets/qtablewidget.h:85
-// void QTableWidgetItem(const class QIcon &, const class QString &, int)
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:84
+// [-2] void QTableWidgetItem(const class QIcon &, const class QString &, int)
 extern "C"
 void* C_ZN16QTableWidgetItemC1ERK5QIconRK7QStringi(const QIcon & icon, const QString & text, int type) {
-  return new QTableWidgetItem(icon, text, type);
+  (MyQTableWidgetItem*)(0);
+  return  new MyQTableWidgetItem(icon, text, type);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:87
-// void ~QTableWidgetItem()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:86
+// [-2] void ~QTableWidgetItem()
 extern "C"
 void C_ZN16QTableWidgetItemD1Ev(void *this_) {
   delete (QTableWidgetItem*)(this_);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:89
-// QTableWidgetItem * clone()
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:88
+// [8] QTableWidgetItem * clone()
 extern "C"
-void C_ZNK16QTableWidgetItem5cloneEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->clone();
+void* C_ZNK16QTableWidgetItem5cloneEv(void *this_) {
+  return (void*)((QTableWidgetItem*)this_)->clone();
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:91
-// QTableWidget * tableWidget()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:90
+// [8] QTableWidget * tableWidget()
 extern "C"
-void C_ZNK16QTableWidgetItem11tableWidgetEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->tableWidget();
+void* C_ZNK16QTableWidgetItem11tableWidgetEv(void *this_) {
+  return (void*)((QTableWidgetItem*)this_)->tableWidget();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:92
+// [4] int row()
+extern "C"
+int C_ZNK16QTableWidgetItem3rowEv(void *this_) {
+  return (int)((QTableWidgetItem*)this_)->row();
+}
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:93
-// int row()
+// [4] int column()
 extern "C"
-void C_ZNK16QTableWidgetItem3rowEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->row();
+int C_ZNK16QTableWidgetItem6columnEv(void *this_) {
+  return (int)((QTableWidgetItem*)this_)->column();
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:94
-// int column()
-extern "C"
-void C_ZNK16QTableWidgetItem6columnEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->column();
-}
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:96
-// void setSelected(_Bool)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:95
+// [-2] void setSelected(_Bool)
 extern "C"
 void C_ZN16QTableWidgetItem11setSelectedEb(void *this_, bool select) {
   ((QTableWidgetItem*)this_)->setSelected(select);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:97
-// bool isSelected()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:96
+// [1] bool isSelected()
 extern "C"
-void C_ZNK16QTableWidgetItem10isSelectedEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->isSelected();
+bool C_ZNK16QTableWidgetItem10isSelectedEv(void *this_) {
+  return (bool)((QTableWidgetItem*)this_)->isSelected();
 }
-// inline
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:98
+// [4] Qt::ItemFlags flags()
+extern "C"
+Qt::ItemFlags C_ZNK16QTableWidgetItem5flagsEv(void *this_) {
+  return (Qt::ItemFlags)((QTableWidgetItem*)this_)->flags();
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:99
-// Qt::ItemFlags flags()
-extern "C"
-void C_ZNK16QTableWidgetItem5flagsEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->flags();
-}
-// /usr/include/qt/QtWidgets/qtablewidget.h:100
-// void setFlags(Qt::ItemFlags)
+// [-2] void setFlags(Qt::ItemFlags)
 extern "C"
 void C_ZN16QTableWidgetItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE(void *this_, QFlags<Qt::ItemFlag> flags) {
   ((QTableWidgetItem*)this_)->setFlags(flags);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:102
-// QString text()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:101
+// [8] QString text()
 extern "C"
-void C_ZNK16QTableWidgetItem4textEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->text();
+void* C_ZNK16QTableWidgetItem4textEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->text();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:104
-// void setText(const class QString &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:103
+// [-2] void setText(const class QString &)
 extern "C"
 void C_ZN16QTableWidgetItem7setTextERK7QString(void *this_, const QString & text) {
   ((QTableWidgetItem*)this_)->setText(text);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:106
-// QIcon icon()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:105
+// [8] QIcon icon()
 extern "C"
-void C_ZNK16QTableWidgetItem4iconEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->icon();
+void* C_ZNK16QTableWidgetItem4iconEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->icon();
+return new QIcon(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:108
-// void setIcon(const class QIcon &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:107
+// [-2] void setIcon(const class QIcon &)
 extern "C"
 void C_ZN16QTableWidgetItem7setIconERK5QIcon(void *this_, const QIcon & icon) {
   ((QTableWidgetItem*)this_)->setIcon(icon);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:110
-// QString statusTip()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:109
+// [8] QString statusTip()
 extern "C"
-void C_ZNK16QTableWidgetItem9statusTipEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->statusTip();
+void* C_ZNK16QTableWidgetItem9statusTipEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->statusTip();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:112
-// void setStatusTip(const class QString &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:111
+// [-2] void setStatusTip(const class QString &)
 extern "C"
 void C_ZN16QTableWidgetItem12setStatusTipERK7QString(void *this_, const QString & statusTip) {
   ((QTableWidgetItem*)this_)->setStatusTip(statusTip);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:115
-// QString toolTip()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:114
+// [8] QString toolTip()
 extern "C"
-void C_ZNK16QTableWidgetItem7toolTipEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->toolTip();
+void* C_ZNK16QTableWidgetItem7toolTipEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->toolTip();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:117
-// void setToolTip(const class QString &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:116
+// [-2] void setToolTip(const class QString &)
 extern "C"
 void C_ZN16QTableWidgetItem10setToolTipERK7QString(void *this_, const QString & toolTip) {
   ((QTableWidgetItem*)this_)->setToolTip(toolTip);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:121
-// QString whatsThis()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:120
+// [8] QString whatsThis()
 extern "C"
-void C_ZNK16QTableWidgetItem9whatsThisEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->whatsThis();
+void* C_ZNK16QTableWidgetItem9whatsThisEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->whatsThis();
+return new QString(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:123
-// void setWhatsThis(const class QString &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:122
+// [-2] void setWhatsThis(const class QString &)
 extern "C"
 void C_ZN16QTableWidgetItem12setWhatsThisERK7QString(void *this_, const QString & whatsThis) {
   ((QTableWidgetItem*)this_)->setWhatsThis(whatsThis);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:126
-// QFont font()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:125
+// [16] QFont font()
 extern "C"
-void C_ZNK16QTableWidgetItem4fontEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->font();
+void* C_ZNK16QTableWidgetItem4fontEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->font();
+return new QFont(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:128
-// void setFont(const class QFont &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:127
+// [-2] void setFont(const class QFont &)
 extern "C"
 void C_ZN16QTableWidgetItem7setFontERK5QFont(void *this_, const QFont & font) {
   ((QTableWidgetItem*)this_)->setFont(font);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:130
-// int textAlignment()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:129
+// [4] int textAlignment()
 extern "C"
-void C_ZNK16QTableWidgetItem13textAlignmentEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->textAlignment();
+int C_ZNK16QTableWidgetItem13textAlignmentEv(void *this_) {
+  return (int)((QTableWidgetItem*)this_)->textAlignment();
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:132
-// void setTextAlignment(int)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:131
+// [-2] void setTextAlignment(int)
 extern "C"
 void C_ZN16QTableWidgetItem16setTextAlignmentEi(void *this_, int alignment) {
   ((QTableWidgetItem*)this_)->setTextAlignment(alignment);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:135
-// QColor backgroundColor()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:134
+// [16] QColor backgroundColor()
 extern "C"
-void C_ZNK16QTableWidgetItem15backgroundColorEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->backgroundColor();
+void* C_ZNK16QTableWidgetItem15backgroundColorEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->backgroundColor();
+return new QColor(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:137
-// void setBackgroundColor(const class QColor &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:136
+// [-2] void setBackgroundColor(const class QColor &)
 extern "C"
 void C_ZN16QTableWidgetItem18setBackgroundColorERK6QColor(void *this_, const QColor & color) {
   ((QTableWidgetItem*)this_)->setBackgroundColor(color);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:140
-// QBrush background()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:139
+// [8] QBrush background()
 extern "C"
-void C_ZNK16QTableWidgetItem10backgroundEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->background();
+void* C_ZNK16QTableWidgetItem10backgroundEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->background();
+return new QBrush(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:142
-// void setBackground(const class QBrush &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:141
+// [-2] void setBackground(const class QBrush &)
 extern "C"
 void C_ZN16QTableWidgetItem13setBackgroundERK6QBrush(void *this_, const QBrush & brush) {
   ((QTableWidgetItem*)this_)->setBackground(brush);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:145
-// QColor textColor()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:144
+// [16] QColor textColor()
 extern "C"
-void C_ZNK16QTableWidgetItem9textColorEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->textColor();
+void* C_ZNK16QTableWidgetItem9textColorEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->textColor();
+return new QColor(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:147
-// void setTextColor(const class QColor &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:146
+// [-2] void setTextColor(const class QColor &)
 extern "C"
 void C_ZN16QTableWidgetItem12setTextColorERK6QColor(void *this_, const QColor & color) {
   ((QTableWidgetItem*)this_)->setTextColor(color);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:150
-// QBrush foreground()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:149
+// [8] QBrush foreground()
 extern "C"
-void C_ZNK16QTableWidgetItem10foregroundEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->foreground();
+void* C_ZNK16QTableWidgetItem10foregroundEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->foreground();
+return new QBrush(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:152
-// void setForeground(const class QBrush &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:151
+// [-2] void setForeground(const class QBrush &)
 extern "C"
 void C_ZN16QTableWidgetItem13setForegroundERK6QBrush(void *this_, const QBrush & brush) {
   ((QTableWidgetItem*)this_)->setForeground(brush);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:155
-// Qt::CheckState checkState()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:154
+// [4] Qt::CheckState checkState()
 extern "C"
-void C_ZNK16QTableWidgetItem10checkStateEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->checkState();
+Qt::CheckState C_ZNK16QTableWidgetItem10checkStateEv(void *this_) {
+  return (Qt::CheckState)((QTableWidgetItem*)this_)->checkState();
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:157
-// void setCheckState(Qt::CheckState)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:156
+// [-2] void setCheckState(Qt::CheckState)
 extern "C"
 void C_ZN16QTableWidgetItem13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState state) {
   ((QTableWidgetItem*)this_)->setCheckState(state);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:160
-// QSize sizeHint()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:159
+// [8] QSize sizeHint()
 extern "C"
-void C_ZNK16QTableWidgetItem8sizeHintEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->sizeHint();
+void* C_ZNK16QTableWidgetItem8sizeHintEv(void *this_) {
+  auto rv = ((QTableWidgetItem*)this_)->sizeHint();
+return new QSize(rv);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:162
-// void setSizeHint(const class QSize &)
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:161
+// [-2] void setSizeHint(const class QSize &)
 extern "C"
 void C_ZN16QTableWidgetItem11setSizeHintERK5QSize(void *this_, const QSize & size) {
   ((QTableWidgetItem*)this_)->setSizeHint(size);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:165
-// QVariant data(int)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:164
+// [16] QVariant data(int)
 extern "C"
-void C_ZNK16QTableWidgetItem4dataEi(void *this_, int role) {
-  /*return*/ ((QTableWidgetItem*)this_)->data(role);
+void* C_ZNK16QTableWidgetItem4dataEi(void *this_, int role) {
+  auto rv = ((QTableWidgetItem*)this_)->data(role);
+return new QVariant(rv);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:166
-// void setData(int, const class QVariant &)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:165
+// [-2] void setData(int, const class QVariant &)
 extern "C"
 void C_ZN16QTableWidgetItem7setDataEiRK8QVariant(void *this_, int role, const QVariant & value) {
   ((QTableWidgetItem*)this_)->setData(role, value);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:171
-// void read(class QDataStream &)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:170
+// [-2] void read(class QDataStream &)
 extern "C"
 void C_ZN16QTableWidgetItem4readER11QDataStream(void *this_, QDataStream & in) {
   ((QTableWidgetItem*)this_)->read(in);
 }
-// virtual
-// /usr/include/qt/QtWidgets/qtablewidget.h:172
-// void write(class QDataStream &)
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:171
+// [-2] void write(class QDataStream &)
 extern "C"
 void C_ZNK16QTableWidgetItem5writeER11QDataStream(void *this_, QDataStream & out) {
   ((QTableWidgetItem*)this_)->write(out);
 }
-// inline
-// /usr/include/qt/QtWidgets/qtablewidget.h:176
-// int type()
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:175
+// [4] int type()
 extern "C"
-void C_ZNK16QTableWidgetItem4typeEv(void *this_) {
-  /*return*/ ((QTableWidgetItem*)this_)->type();
+int C_ZNK16QTableWidgetItem4typeEv(void *this_) {
+  return (int)((QTableWidgetItem*)this_)->type();
 }
 //  main block end

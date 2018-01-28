@@ -3,14 +3,22 @@
 #include <qshareddata.h>
 #include <QtCore>
 
+// QSharedData is pure virtual: false
 //  header block end
 
 //  main block begin
-// inline
+
+class MyQSharedData : public QSharedData {
+public:
+MyQSharedData() : QSharedData() {}
+};
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qshareddata.h:60
-// void QSharedData()
+// [-2] void QSharedData()
 extern "C"
 void* C_ZN11QSharedDataC1Ev() {
-  return new QSharedData();
+  (MyQSharedData*)(0);
+  return  new MyQSharedData();
 }
 //  main block end
