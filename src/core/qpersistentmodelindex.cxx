@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QPersistentModelIndex is pure virtual: false
+// QPersistentModelIndex has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPersistentModelIndex : public QPersistentModelIndex {
 public:
+  virtual ~MyQPersistentModelIndex() {}
+// void QPersistentModelIndex()
 MyQPersistentModelIndex() : QPersistentModelIndex() {}
+// void QPersistentModelIndex(const class QModelIndex &)
 MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index) {}
 };
 
@@ -18,23 +22,21 @@ MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index
 // /usr/include/qt/QtCore/qabstractitemmodel.h:107
 // [-2] void QPersistentModelIndex()
 extern "C"
-void* C_ZN21QPersistentModelIndexC1Ev() {
-  (MyQPersistentModelIndex*)(0);
-  return  new MyQPersistentModelIndex();
+void* C_ZN21QPersistentModelIndexC2Ev() {
+  return  new QPersistentModelIndex();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:108
 // [-2] void QPersistentModelIndex(const class QModelIndex &)
 extern "C"
-void* C_ZN21QPersistentModelIndexC1ERK11QModelIndex(const QModelIndex & index) {
-  (MyQPersistentModelIndex*)(0);
-  return  new MyQPersistentModelIndex(index);
+void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(const QModelIndex & index) {
+  return  new QPersistentModelIndex(index);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:110
 // [-2] void ~QPersistentModelIndex()
 extern "C"
-void C_ZN21QPersistentModelIndexD1Ev(void *this_) {
+void C_ZN21QPersistentModelIndexD2Ev(void *this_) {
   delete (QPersistentModelIndex*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

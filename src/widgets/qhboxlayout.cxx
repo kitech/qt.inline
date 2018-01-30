@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QHBoxLayout is pure virtual: false
+// QHBoxLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQHBoxLayout : public QHBoxLayout {
 public:
+  virtual ~MyQHBoxLayout() {}
+// void QHBoxLayout()
 MyQHBoxLayout() : QHBoxLayout() {}
+// void QHBoxLayout(class QWidget *)
 MyQHBoxLayout(QWidget * parent) : QHBoxLayout(parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK11QHBoxLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qboxlayout.h:117
 // [-2] void QHBoxLayout()
 extern "C"
-void* C_ZN11QHBoxLayoutC1Ev() {
-  (MyQHBoxLayout*)(0);
-  return  new MyQHBoxLayout();
+void* C_ZN11QHBoxLayoutC2Ev() {
+  return  new QHBoxLayout();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:118
 // [-2] void QHBoxLayout(class QWidget *)
 extern "C"
-void* C_ZN11QHBoxLayoutC1EP7QWidget(QWidget * parent) {
-  (MyQHBoxLayout*)(0);
-  return  new MyQHBoxLayout(parent);
+void* C_ZN11QHBoxLayoutC2EP7QWidget(QWidget * parent) {
+  return  new QHBoxLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:119
 // [-2] void ~QHBoxLayout()
 extern "C"
-void C_ZN11QHBoxLayoutD1Ev(void *this_) {
+void C_ZN11QHBoxLayoutD2Ev(void *this_) {
   delete (QHBoxLayout*)(this_);
 }
 //  main block end

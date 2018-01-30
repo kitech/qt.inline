@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QRawFont is pure virtual: false
+// QRawFont has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRawFont : public QRawFont {
 public:
+  virtual ~MyQRawFont() {}
+// void QRawFont()
 MyQRawFont() : QRawFont() {}
+// void QRawFont(const class QString &, qreal, class QFont::HintingPreference)
 MyQRawFont(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fileName, pixelSize, hintingPreference) {}
+// void QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
 MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fontData, pixelSize, hintingPreference) {}
 };
 
@@ -19,31 +24,28 @@ MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreferenc
 // /usr/include/qt/QtGui/qrawfont.h:74
 // [-2] void QRawFont()
 extern "C"
-void* C_ZN8QRawFontC1Ev() {
-  (MyQRawFont*)(0);
-  return  new MyQRawFont();
+void* C_ZN8QRawFontC2Ev() {
+  return  new QRawFont();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:75
 // [-2] void QRawFont(const class QString &, qreal, class QFont::HintingPreference)
 extern "C"
-void* C_ZN8QRawFontC1ERK7QStringdN5QFont17HintingPreferenceE(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  (MyQRawFont*)(0);
-  return  new MyQRawFont(fileName, pixelSize, hintingPreference);
+void* C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  return  new QRawFont(fileName, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:78
 // [-2] void QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
 extern "C"
-void* C_ZN8QRawFontC1ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  (MyQRawFont*)(0);
-  return  new MyQRawFont(fontData, pixelSize, hintingPreference);
+void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  return  new QRawFont(fontData, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:86
 // [-2] void ~QRawFont()
 extern "C"
-void C_ZN8QRawFontD1Ev(void *this_) {
+void C_ZN8QRawFontD2Ev(void *this_) {
   delete (QRawFont*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -251,8 +253,8 @@ bool C_ZNK8QRawFont17supportsCharacterEj(void *this_, uint ucs4) {
 // /usr/include/qt/QtGui/qrawfont.h:141
 // [1] bool supportsCharacter(class QChar)
 extern "C"
-bool C_ZNK8QRawFont17supportsCharacterE5QChar(void *this_, QChar character) {
-  return (bool)((QRawFont*)this_)->supportsCharacter(character);
+bool C_ZNK8QRawFont17supportsCharacterE5QChar(void *this_, QChar* character) {
+  return (bool)((QRawFont*)this_)->supportsCharacter(*character);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:144

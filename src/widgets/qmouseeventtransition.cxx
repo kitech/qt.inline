@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QMouseEventTransition is pure virtual: false
+// QMouseEventTransition has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*c
 
 class MyQMouseEventTransition : public QMouseEventTransition {
 public:
+  virtual ~MyQMouseEventTransition() {}
+// void QMouseEventTransition(class QState *)
 MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceState) {}
+// void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
 MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type, button, sourceState) {}
 // void onTransition(class QEvent *)
-// void onTransition(class QEvent *)
-virtual void onTransition(QEvent * event) {
-  if (callback_ZN21QMouseEventTransition12onTransitionEP6QEvent != 0) {
-  // callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(event);
-}}
+  virtual void onTransition(QEvent * event) {
+    if (callback_ZN21QMouseEventTransition12onTransitionEP6QEvent != 0) {
+      // callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(event);
+    }
+    QMouseEventTransition::onTransition(event);
+  }
 // bool eventTest(class QEvent *)
-// bool eventTest(class QEvent *)
-virtual bool eventTest(QEvent * event) {
-  if (callback_ZN21QMouseEventTransition9eventTestEP6QEvent != 0) {
-  // callback_ZN21QMouseEventTransition9eventTestEP6QEvent(event);
-}}
+  virtual bool eventTest(QEvent * event) {
+    if (callback_ZN21QMouseEventTransition9eventTestEP6QEvent != 0) {
+      // callback_ZN21QMouseEventTransition9eventTestEP6QEvent(event);
+    }
+    return QMouseEventTransition::eventTest(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK21QMouseEventTransition10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:58
 // [-2] void QMouseEventTransition(class QState *)
 extern "C"
-void* C_ZN21QMouseEventTransitionC1EP6QState(QState * sourceState) {
-  (MyQMouseEventTransition*)(0);
+void* C_ZN21QMouseEventTransitionC2EP6QState(QState * sourceState) {
+  auto _nilp = (MyQMouseEventTransition*)(0);
   return  new MyQMouseEventTransition(sourceState);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:59
 // [-2] void QMouseEventTransition(class QObject *, class QEvent::Type, Qt::MouseButton, class QState *)
 extern "C"
-void* C_ZN21QMouseEventTransitionC1EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) {
-  (MyQMouseEventTransition*)(0);
+void* C_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) {
+  auto _nilp = (MyQMouseEventTransition*)(0);
   return  new MyQMouseEventTransition(object, type, button, sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:61
 // [-2] void ~QMouseEventTransition()
 extern "C"
-void C_ZN21QMouseEventTransitionD1Ev(void *this_) {
+void C_ZN21QMouseEventTransitionD2Ev(void *this_) {
   delete (QMouseEventTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QToolBox is pure virtual: false
+// QToolBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZN8QToolBox11changeEventEP6QEvent(void*cbfn)
 
 class MyQToolBox : public QToolBox {
 public:
+  virtual ~MyQToolBox() {}
+// void QToolBox(class QWidget *, Qt::WindowFlags)
 MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN8QToolBox5eventEP6QEvent != 0) {
-  // callback_ZN8QToolBox5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN8QToolBox5eventEP6QEvent != 0) {
+      // callback_ZN8QToolBox5eventEP6QEvent(e);
+    }
+    return QToolBox::event(e);
+  }
 // void itemInserted(int)
-// void itemInserted(int)
-virtual void itemInserted(int index) {
-  if (callback_ZN8QToolBox12itemInsertedEi != 0) {
-  // callback_ZN8QToolBox12itemInsertedEi(index);
-}}
+  virtual void itemInserted(int index) {
+    if (callback_ZN8QToolBox12itemInsertedEi != 0) {
+      // callback_ZN8QToolBox12itemInsertedEi(index);
+    }
+    QToolBox::itemInserted(index);
+  }
 // void itemRemoved(int)
-// void itemRemoved(int)
-virtual void itemRemoved(int index) {
-  if (callback_ZN8QToolBox11itemRemovedEi != 0) {
-  // callback_ZN8QToolBox11itemRemovedEi(index);
-}}
+  virtual void itemRemoved(int index) {
+    if (callback_ZN8QToolBox11itemRemovedEi != 0) {
+      // callback_ZN8QToolBox11itemRemovedEi(index);
+    }
+    QToolBox::itemRemoved(index);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * e) {
-  if (callback_ZN8QToolBox9showEventEP10QShowEvent != 0) {
-  // callback_ZN8QToolBox9showEventEP10QShowEvent(e);
-}}
+  virtual void showEvent(QShowEvent * e) {
+    if (callback_ZN8QToolBox9showEventEP10QShowEvent != 0) {
+      // callback_ZN8QToolBox9showEventEP10QShowEvent(e);
+    }
+    QToolBox::showEvent(e);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * arg0) {
-  if (callback_ZN8QToolBox11changeEventEP6QEvent != 0) {
-  // callback_ZN8QToolBox11changeEventEP6QEvent(arg0);
-}}
+  virtual void changeEvent(QEvent * arg0) {
+    if (callback_ZN8QToolBox11changeEventEP6QEvent != 0) {
+      // callback_ZN8QToolBox11changeEventEP6QEvent(arg0);
+    }
+    QToolBox::changeEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK8QToolBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbox.h:60
 // [-2] void QToolBox(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN8QToolBoxC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
-  (MyQToolBox*)(0);
+void* C_ZN8QToolBoxC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQToolBox*)(0);
   return  new MyQToolBox(parent, f);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:61
 // [-2] void ~QToolBox()
 extern "C"
-void C_ZN8QToolBoxD1Ev(void *this_) {
+void C_ZN8QToolBoxD2Ev(void *this_) {
   delete (QToolBox*)(this_);
 }
 // Public Visibility=Default Availability=Available

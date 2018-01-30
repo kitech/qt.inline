@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QStyleOption is pure virtual: false
+// QStyleOption has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStyleOption : public QStyleOption {
 public:
+  virtual ~MyQStyleOption() {}
+// void QStyleOption(int, int)
 MyQStyleOption(int version, int type) : QStyleOption(version, type) {}
 };
 
@@ -17,15 +20,14 @@ MyQStyleOption(int version, int type) : QStyleOption(version, type) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:102
 // [-2] void QStyleOption(int, int)
 extern "C"
-void* C_ZN12QStyleOptionC1Eii(int version, int type) {
-  (MyQStyleOption*)(0);
-  return  new MyQStyleOption(version, type);
+void* C_ZN12QStyleOptionC2Eii(int version, int type) {
+  return  new QStyleOption(version, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:104
 // [-2] void ~QStyleOption()
 extern "C"
-void C_ZN12QStyleOptionD1Ev(void *this_) {
+void C_ZN12QStyleOptionD2Ev(void *this_) {
   delete (QStyleOption*)(this_);
 }
 // Public Visibility=Default Availability=Available

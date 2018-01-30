@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsDropShadowEffect is pure virtual: false
+// QGraphicsDropShadowEffect has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(void*
 
 class MyQGraphicsDropShadowEffect : public QGraphicsDropShadowEffect {
 public:
+  virtual ~MyQGraphicsDropShadowEffect() {}
+// void QGraphicsDropShadowEffect(class QObject *)
 MyQGraphicsDropShadowEffect(QObject * parent) : QGraphicsDropShadowEffect(parent) {}
 // void draw(class QPainter *)
-// void draw(class QPainter *)
-virtual void draw(QPainter * painter) {
-  if (callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter != 0) {
-  // callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(painter);
-}}
+  virtual void draw(QPainter * painter) {
+    if (callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter != 0) {
+      // callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(painter);
+    }
+    QGraphicsDropShadowEffect::draw(painter);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK25QGraphicsDropShadowEffect10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:205
 // [-2] void QGraphicsDropShadowEffect(class QObject *)
 extern "C"
-void* C_ZN25QGraphicsDropShadowEffectC1EP7QObject(QObject * parent) {
-  (MyQGraphicsDropShadowEffect*)(0);
+void* C_ZN25QGraphicsDropShadowEffectC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQGraphicsDropShadowEffect*)(0);
   return  new MyQGraphicsDropShadowEffect(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:206
 // [-2] void ~QGraphicsDropShadowEffect()
 extern "C"
-void C_ZN25QGraphicsDropShadowEffectD1Ev(void *this_) {
+void C_ZN25QGraphicsDropShadowEffectD2Ev(void *this_) {
   delete (QGraphicsDropShadowEffect*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

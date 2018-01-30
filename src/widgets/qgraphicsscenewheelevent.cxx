@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneWheelEvent is pure virtual: false
+// QGraphicsSceneWheelEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneWheelEvent : public QGraphicsSceneWheelEvent {
 public:
+  virtual ~MyQGraphicsSceneWheelEvent() {}
+// void QGraphicsSceneWheelEvent(enum QEvent::Type)
 MyQGraphicsSceneWheelEvent(QEvent::Type type) : QGraphicsSceneWheelEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneWheelEvent(QEvent::Type type) : QGraphicsSceneWheelEvent(type) {
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:139
 // [-2] void QGraphicsSceneWheelEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN24QGraphicsSceneWheelEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneWheelEvent*)(0);
-  return  new MyQGraphicsSceneWheelEvent(type);
+void* C_ZN24QGraphicsSceneWheelEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneWheelEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:140
 // [-2] void ~QGraphicsSceneWheelEvent()
 extern "C"
-void C_ZN24QGraphicsSceneWheelEventD1Ev(void *this_) {
+void C_ZN24QGraphicsSceneWheelEventD2Ev(void *this_) {
   delete (QGraphicsSceneWheelEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

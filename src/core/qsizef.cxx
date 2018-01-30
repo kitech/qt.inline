@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QSizeF is pure virtual: false
+// QSizeF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSizeF : public QSizeF {
 public:
+  virtual ~MyQSizeF() {}
+// void QSizeF()
 MyQSizeF() : QSizeF() {}
+// void QSizeF(const class QSize &)
 MyQSizeF(const QSize & sz) : QSizeF(sz) {}
+// void QSizeF(qreal, qreal)
 MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
 };
 
@@ -19,25 +24,22 @@ MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
 // /usr/include/qt/QtCore/qsize.h:218
 // [-2] void QSizeF()
 extern "C"
-void* C_ZN6QSizeFC1Ev() {
-  (MyQSizeF*)(0);
-  return  new MyQSizeF();
+void* C_ZN6QSizeFC2Ev() {
+  return  new QSizeF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:219
 // [-2] void QSizeF(const class QSize &)
 extern "C"
-void* C_ZN6QSizeFC1ERK5QSize(const QSize & sz) {
-  (MyQSizeF*)(0);
-  return  new MyQSizeF(sz);
+void* C_ZN6QSizeFC2ERK5QSize(const QSize & sz) {
+  return  new QSizeF(sz);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:220
 // [-2] void QSizeF(qreal, qreal)
 extern "C"
-void* C_ZN6QSizeFC1Edd(qreal w, qreal h) {
-  (MyQSizeF*)(0);
-  return  new MyQSizeF(w, h);
+void* C_ZN6QSizeFC2Edd(qreal w, qreal h) {
+  return  new QSizeF(w, h);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:222

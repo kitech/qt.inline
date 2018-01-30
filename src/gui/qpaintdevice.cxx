@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QPaintDevice is pure virtual: true
+// QPaintDevice has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -47,7 +48,7 @@ extern "C" void set_callback_ZNK12QPaintDevice13sharedPainterEv(void*cbfn)
 // /usr/include/qt/QtGui/qpaintdevice.h:72
 // [-2] void ~QPaintDevice()
 extern "C"
-void C_ZN12QPaintDeviceD1Ev(void *this_) {
+void C_ZN12QPaintDeviceD2Ev(void *this_) {
   delete (QPaintDevice*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

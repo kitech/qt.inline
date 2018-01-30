@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QBitArray is pure virtual: false
+// QBitArray has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBitArray : public QBitArray {
 public:
+  virtual ~MyQBitArray() {}
+// void QBitArray()
 MyQBitArray() : QBitArray() {}
+// void QBitArray(int, _Bool)
 MyQBitArray(int size, bool val) : QBitArray(size, val) {}
 };
 
@@ -18,17 +22,15 @@ MyQBitArray(int size, bool val) : QBitArray(size, val) {}
 // /usr/include/qt/QtCore/qbitarray.h:57
 // [-2] void QBitArray()
 extern "C"
-void* C_ZN9QBitArrayC1Ev() {
-  (MyQBitArray*)(0);
-  return  new MyQBitArray();
+void* C_ZN9QBitArrayC2Ev() {
+  return  new QBitArray();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:58
 // [-2] void QBitArray(int, _Bool)
 extern "C"
-void* C_ZN9QBitArrayC1Eib(int size, bool val) {
-  (MyQBitArray*)(0);
-  return  new MyQBitArray(size, val);
+void* C_ZN9QBitArrayC2Eib(int size, bool val) {
+  return  new QBitArray(size, val);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:67

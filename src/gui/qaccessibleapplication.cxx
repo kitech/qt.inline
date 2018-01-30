@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QAccessibleApplication is pure virtual: false
+// QAccessibleApplication has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleApplication : public QAccessibleApplication {
 public:
+  virtual ~MyQAccessibleApplication() {}
+// void QAccessibleApplication()
 MyQAccessibleApplication() : QAccessibleApplication() {}
 };
 
@@ -17,9 +20,8 @@ MyQAccessibleApplication() : QAccessibleApplication() {}
 // /usr/include/qt/QtGui/qaccessibleobject.h:78
 // [-2] void QAccessibleApplication()
 extern "C"
-void* C_ZN22QAccessibleApplicationC1Ev() {
-  (MyQAccessibleApplication*)(0);
-  return  new MyQAccessibleApplication();
+void* C_ZN22QAccessibleApplicationC2Ev() {
+  return  new QAccessibleApplication();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessibleobject.h:80

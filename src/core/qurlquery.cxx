@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QUrlQuery is pure virtual: false
+// QUrlQuery has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUrlQuery : public QUrlQuery {
 public:
+  virtual ~MyQUrlQuery() {}
+// void QUrlQuery()
 MyQUrlQuery() : QUrlQuery() {}
+// void QUrlQuery(const class QUrl &)
 MyQUrlQuery(const QUrl & url) : QUrlQuery(url) {}
+// void QUrlQuery(const class QString &)
 MyQUrlQuery(const QString & queryString) : QUrlQuery(queryString) {}
 };
 
@@ -19,31 +24,28 @@ MyQUrlQuery(const QString & queryString) : QUrlQuery(queryString) {}
 // /usr/include/qt/QtCore/qurlquery.h:59
 // [-2] void QUrlQuery()
 extern "C"
-void* C_ZN9QUrlQueryC1Ev() {
-  (MyQUrlQuery*)(0);
-  return  new MyQUrlQuery();
+void* C_ZN9QUrlQueryC2Ev() {
+  return  new QUrlQuery();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:60
 // [-2] void QUrlQuery(const class QUrl &)
 extern "C"
-void* C_ZN9QUrlQueryC1ERK4QUrl(const QUrl & url) {
-  (MyQUrlQuery*)(0);
-  return  new MyQUrlQuery(url);
+void* C_ZN9QUrlQueryC2ERK4QUrl(const QUrl & url) {
+  return  new QUrlQuery(url);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:61
 // [-2] void QUrlQuery(const class QString &)
 extern "C"
-void* C_ZN9QUrlQueryC1ERK7QString(const QString & queryString) {
-  (MyQUrlQuery*)(0);
-  return  new MyQUrlQuery(queryString);
+void* C_ZN9QUrlQueryC2ERK7QString(const QString & queryString) {
+  return  new QUrlQuery(queryString);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:67
 // [-2] void ~QUrlQuery()
 extern "C"
-void C_ZN9QUrlQueryD1Ev(void *this_) {
+void C_ZN9QUrlQueryD2Ev(void *this_) {
   delete (QUrlQuery*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -85,8 +87,8 @@ void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, const QString & queryString
 // /usr/include/qt/QtCore/qurlquery.h:84
 // [-2] void setQueryDelimiters(class QChar, class QChar)
 extern "C"
-void C_ZN9QUrlQuery18setQueryDelimitersE5QCharS0_(void *this_, QChar valueDelimiter, QChar pairDelimiter) {
-  ((QUrlQuery*)this_)->setQueryDelimiters(valueDelimiter, pairDelimiter);
+void C_ZN9QUrlQuery18setQueryDelimitersE5QCharS0_(void *this_, QChar* valueDelimiter, QChar* pairDelimiter) {
+  ((QUrlQuery*)this_)->setQueryDelimiters(*valueDelimiter, *pairDelimiter);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:85

@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QImageWriter is pure virtual: false
+// QImageWriter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQImageWriter : public QImageWriter {
 public:
+  virtual ~MyQImageWriter() {}
+// void QImageWriter()
 MyQImageWriter() : QImageWriter() {}
+// void QImageWriter(class QIODevice *, const class QByteArray &)
 MyQImageWriter(QIODevice * device, const QByteArray & format) : QImageWriter(device, format) {}
+// void QImageWriter(const class QString &, const class QByteArray &)
 MyQImageWriter(const QString & fileName, const QByteArray & format) : QImageWriter(fileName, format) {}
 };
 
@@ -19,31 +24,28 @@ MyQImageWriter(const QString & fileName, const QByteArray & format) : QImageWrit
 // /usr/include/qt/QtGui/qimagewriter.h:67
 // [-2] void QImageWriter()
 extern "C"
-void* C_ZN12QImageWriterC1Ev() {
-  (MyQImageWriter*)(0);
-  return  new MyQImageWriter();
+void* C_ZN12QImageWriterC2Ev() {
+  return  new QImageWriter();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:68
 // [-2] void QImageWriter(class QIODevice *, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageWriterC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
-  (MyQImageWriter*)(0);
-  return  new MyQImageWriter(device, format);
+void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
+  return  new QImageWriter(device, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:69
 // [-2] void QImageWriter(const class QString &, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageWriterC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
-  (MyQImageWriter*)(0);
-  return  new MyQImageWriter(fileName, format);
+void* C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
+  return  new QImageWriter(fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:70
 // [-2] void ~QImageWriter()
 extern "C"
-void C_ZN12QImageWriterD1Ev(void *this_) {
+void C_ZN12QImageWriterD2Ev(void *this_) {
   delete (QImageWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available

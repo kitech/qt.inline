@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QCursor is pure virtual: false
+// QCursor has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCursor : public QCursor {
 public:
+  virtual ~MyQCursor() {}
+// void QCursor()
 MyQCursor() : QCursor() {}
+// void QCursor(Qt::CursorShape)
 MyQCursor(Qt::CursorShape shape) : QCursor(shape) {}
+// void QCursor(const class QBitmap &, const class QBitmap &, int, int)
 MyQCursor(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) : QCursor(bitmap, mask, hotX, hotY) {}
+// void QCursor(const class QPixmap &, int, int)
 MyQCursor(const QPixmap & pixmap, int hotX, int hotY) : QCursor(pixmap, hotX, hotY) {}
 };
 
@@ -20,39 +26,35 @@ MyQCursor(const QPixmap & pixmap, int hotX, int hotY) : QCursor(pixmap, hotX, ho
 // /usr/include/qt/QtGui/qcursor.h:82
 // [-2] void QCursor()
 extern "C"
-void* C_ZN7QCursorC1Ev() {
-  (MyQCursor*)(0);
-  return  new MyQCursor();
+void* C_ZN7QCursorC2Ev() {
+  return  new QCursor();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:83
 // [-2] void QCursor(Qt::CursorShape)
 extern "C"
-void* C_ZN7QCursorC1EN2Qt11CursorShapeE(Qt::CursorShape shape) {
-  (MyQCursor*)(0);
-  return  new MyQCursor(shape);
+void* C_ZN7QCursorC2EN2Qt11CursorShapeE(Qt::CursorShape shape) {
+  return  new QCursor(shape);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:84
 // [-2] void QCursor(const class QBitmap &, const class QBitmap &, int, int)
 extern "C"
-void* C_ZN7QCursorC1ERK7QBitmapS2_ii(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) {
-  (MyQCursor*)(0);
-  return  new MyQCursor(bitmap, mask, hotX, hotY);
+void* C_ZN7QCursorC2ERK7QBitmapS2_ii(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) {
+  return  new QCursor(bitmap, mask, hotX, hotY);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:85
 // [-2] void QCursor(const class QPixmap &, int, int)
 extern "C"
-void* C_ZN7QCursorC1ERK7QPixmapii(const QPixmap & pixmap, int hotX, int hotY) {
-  (MyQCursor*)(0);
-  return  new MyQCursor(pixmap, hotX, hotY);
+void* C_ZN7QCursorC2ERK7QPixmapii(const QPixmap & pixmap, int hotX, int hotY) {
+  return  new QCursor(pixmap, hotX, hotY);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:87
 // [-2] void ~QCursor()
 extern "C"
-void C_ZN7QCursorD1Ev(void *this_) {
+void C_ZN7QCursorD2Ev(void *this_) {
   delete (QCursor*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

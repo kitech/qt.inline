@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QStandardItem is pure virtual: false
+// QStandardItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,55 +18,61 @@ extern "C" void set_callback_ZN13QStandardItem15emitDataChangedEv(void*cbfn)
 
 class MyQStandardItem : public QStandardItem {
 public:
+  virtual ~MyQStandardItem() {}
+// void QStandardItem()
 MyQStandardItem() : QStandardItem() {}
+// void QStandardItem(const class QString &)
 MyQStandardItem(const QString & text) : QStandardItem(text) {}
+// void QStandardItem(const class QIcon &, const class QString &)
 MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, text) {}
+// void QStandardItem(int, int)
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 // void emitDataChanged()
-// void emitDataChanged()
-virtual void emitDataChanged() {
-  if (callback_ZN13QStandardItem15emitDataChangedEv != 0) {
-  // callback_ZN13QStandardItem15emitDataChangedEv();
-}}
+  virtual void emitDataChanged() {
+    if (callback_ZN13QStandardItem15emitDataChangedEv != 0) {
+      // callback_ZN13QStandardItem15emitDataChangedEv();
+    }
+    QStandardItem::emitDataChanged();
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:65
 // [-2] void QStandardItem()
 extern "C"
-void* C_ZN13QStandardItemC1Ev() {
-  (MyQStandardItem*)(0);
+void* C_ZN13QStandardItemC2Ev() {
+  auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:66
 // [-2] void QStandardItem(const class QString &)
 extern "C"
-void* C_ZN13QStandardItemC1ERK7QString(const QString & text) {
-  (MyQStandardItem*)(0);
+void* C_ZN13QStandardItemC2ERK7QString(const QString & text) {
+  auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:67
 // [-2] void QStandardItem(const class QIcon &, const class QString &)
 extern "C"
-void* C_ZN13QStandardItemC1ERK5QIconRK7QString(const QIcon & icon, const QString & text) {
-  (MyQStandardItem*)(0);
+void* C_ZN13QStandardItemC2ERK5QIconRK7QString(const QIcon & icon, const QString & text) {
+  auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(icon, text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:68
 // [-2] void QStandardItem(int, int)
 extern "C"
-void* C_ZN13QStandardItemC1Eii(int rows, int columns) {
-  (MyQStandardItem*)(0);
+void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
+  auto _nilp = (MyQStandardItem*)(0);
   return  new MyQStandardItem(rows, columns);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:69
 // [-2] void ~QStandardItem()
 extern "C"
-void C_ZN13QStandardItemD1Ev(void *this_) {
+void C_ZN13QStandardItemD2Ev(void *this_) {
   delete (QStandardItem*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

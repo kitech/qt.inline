@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QMainWindow is pure virtual: false
+// QMainWindow has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,19 +25,23 @@ extern "C" void set_callback_ZN11QMainWindow5eventEP6QEvent(void*cbfn)
 
 class MyQMainWindow : public QMainWindow {
 public:
+  virtual ~MyQMainWindow() {}
+// void QMainWindow(class QWidget *, Qt::WindowFlags)
 MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(parent, flags) {}
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * event) {
-  if (callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(event);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * event) {
+    if (callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(event);
+    }
+    QMainWindow::contextMenuEvent(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN11QMainWindow5eventEP6QEvent != 0) {
-  // callback_ZN11QMainWindow5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN11QMainWindow5eventEP6QEvent != 0) {
+      // callback_ZN11QMainWindow5eventEP6QEvent(event);
+    }
+    return QMainWindow::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -50,15 +55,15 @@ void* C_ZNK11QMainWindow10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmainwindow.h:94
 // [-2] void QMainWindow(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN11QMainWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQMainWindow*)(0);
+void* C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQMainWindow*)(0);
   return  new MyQMainWindow(parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:95
 // [-2] void ~QMainWindow()
 extern "C"
-void C_ZN11QMainWindowD1Ev(void *this_) {
+void C_ZN11QMainWindowD2Ev(void *this_) {
   delete (QMainWindow*)(this_);
 }
 // Public Visibility=Default Availability=Available

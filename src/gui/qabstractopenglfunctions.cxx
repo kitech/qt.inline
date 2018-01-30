@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QAbstractOpenGLFunctions is pure virtual: false
+// QAbstractOpenGLFunctions has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,23 @@ extern "C" void set_callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void
 
 class MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
+  virtual ~MyQAbstractOpenGLFunctions() {}
+// void QAbstractOpenGLFunctions()
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // bool isInitialized()
-// bool isInitialized()
-virtual bool isInitialized() {
-  if (callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv != 0) {
-  // callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv();
-}}
+  virtual bool isInitialized() {
+    if (callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv != 0) {
+      // callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv();
+    }
+    return QAbstractOpenGLFunctions::isInitialized();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:213
 // [-2] void ~QAbstractOpenGLFunctions()
 extern "C"
-void C_ZN24QAbstractOpenGLFunctionsD1Ev(void *this_) {
+void C_ZN24QAbstractOpenGLFunctionsD2Ev(void *this_) {
   delete (QAbstractOpenGLFunctions*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

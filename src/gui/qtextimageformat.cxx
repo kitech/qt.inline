@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextImageFormat is pure virtual: false
+// QTextImageFormat has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN16QTextImageFormatC1ERK11QTextFormat(void*cbfn)
 
 class MyQTextImageFormat : public QTextImageFormat {
 public:
+  virtual ~MyQTextImageFormat() {}
+// void QTextImageFormat()
 MyQTextImageFormat() : QTextImageFormat() {}
+// void QTextImageFormat(const class QTextFormat &)
 MyQTextImageFormat(const QTextFormat & format) : QTextImageFormat(format) {}
 };
 
@@ -25,9 +29,8 @@ MyQTextImageFormat(const QTextFormat & format) : QTextImageFormat(format) {}
 // /usr/include/qt/QtGui/qtextformat.h:735
 // [-2] void QTextImageFormat()
 extern "C"
-void* C_ZN16QTextImageFormatC1Ev() {
-  (MyQTextImageFormat*)(0);
-  return  new MyQTextImageFormat();
+void* C_ZN16QTextImageFormatC2Ev() {
+  return  new QTextImageFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:737

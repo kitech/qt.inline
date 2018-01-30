@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QLinkedListData is pure virtual: false
+// QLinkedListData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLinkedListData : public QLinkedListData {
 public:
+  virtual ~MyQLinkedListData() {}
 };
 
 //  main block end

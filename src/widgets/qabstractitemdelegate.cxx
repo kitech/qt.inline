@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QAbstractItemDelegate is pure virtual: true
+// QAbstractItemDelegate has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAbstractItemDelegate : public QAbstractItemDelegate {
 public:
+  virtual ~MyQAbstractItemDelegate() {}
+// void QAbstractItemDelegate(class QObject *)
 MyQAbstractItemDelegate(QObject * parent) : QAbstractItemDelegate(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK21QAbstractItemDelegate10metaObjectEv(void *this_) {
 // [-2] void QAbstractItemDelegate(class QObject *)
 extern "C"
 void* C_ZN21QAbstractItemDelegateC1EP7QObject(QObject * parent) {
-  (MyQAbstractItemDelegate*)(0);
-  return 0; // new MyQAbstractItemDelegate(parent);
+  return 0; // new QAbstractItemDelegate(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h:73
 // [-2] void ~QAbstractItemDelegate()
 extern "C"
-void C_ZN21QAbstractItemDelegateD1Ev(void *this_) {
+void C_ZN21QAbstractItemDelegateD2Ev(void *this_) {
   delete (QAbstractItemDelegate*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

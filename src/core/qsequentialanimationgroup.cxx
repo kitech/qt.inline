@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QSequentialAnimationGroup is pure virtual: false
+// QSequentialAnimationGroup has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZN25QSequentialAnimationGroup15updateDirectionEN18Q
 
 class MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
 public:
+  virtual ~MyQSequentialAnimationGroup() {}
+// void QSequentialAnimationGroup(class QObject *)
 MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN25QSequentialAnimationGroup5eventEP6QEvent != 0) {
-  // callback_ZN25QSequentialAnimationGroup5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN25QSequentialAnimationGroup5eventEP6QEvent != 0) {
+      // callback_ZN25QSequentialAnimationGroup5eventEP6QEvent(event);
+    }
+    return QSequentialAnimationGroup::event(event);
+  }
 // void updateCurrentTime(int)
-// void updateCurrentTime(int)
-virtual void updateCurrentTime(int arg0) {
-  if (callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi != 0) {
-  // callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(arg0);
-}}
+  virtual void updateCurrentTime(int arg0) {
+    if (callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi != 0) {
+      // callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(arg0);
+    }
+    QSequentialAnimationGroup::updateCurrentTime(arg0);
+  }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-  if (callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-  // callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
-}}
+  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
+    if (callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
+      // callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    }
+    QSequentialAnimationGroup::updateState(newState, oldState);
+  }
 // void updateDirection(class QAbstractAnimation::Direction)
-// void updateDirection(class QAbstractAnimation::Direction)
-virtual void updateDirection(QAbstractAnimation::Direction direction) {
-  if (callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE != 0) {
-  // callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(direction);
-}}
+  virtual void updateDirection(QAbstractAnimation::Direction direction) {
+    if (callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE != 0) {
+      // callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(direction);
+    }
+    QSequentialAnimationGroup::updateDirection(direction);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -76,15 +83,15 @@ void* C_ZNK25QSequentialAnimationGroup10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:59
 // [-2] void QSequentialAnimationGroup(class QObject *)
 extern "C"
-void* C_ZN25QSequentialAnimationGroupC1EP7QObject(QObject * parent) {
-  (MyQSequentialAnimationGroup*)(0);
+void* C_ZN25QSequentialAnimationGroupC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQSequentialAnimationGroup*)(0);
   return  new MyQSequentialAnimationGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:60
 // [-2] void ~QSequentialAnimationGroup()
 extern "C"
-void C_ZN25QSequentialAnimationGroupD1Ev(void *this_) {
+void C_ZN25QSequentialAnimationGroupD2Ev(void *this_) {
   delete (QSequentialAnimationGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

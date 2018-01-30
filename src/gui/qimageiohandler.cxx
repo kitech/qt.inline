@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QImageIOHandler is pure virtual: true
+// QImageIOHandler has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQImageIOHandler : public QImageIOHandler {
 public:
+  virtual ~MyQImageIOHandler() {}
+// void QImageIOHandler()
 MyQImageIOHandler() : QImageIOHandler() {}
 };
 
@@ -18,14 +21,13 @@ MyQImageIOHandler() : QImageIOHandler() {}
 // [-2] void QImageIOHandler()
 extern "C"
 void* C_ZN15QImageIOHandlerC1Ev() {
-  (MyQImageIOHandler*)(0);
-  return 0; // new MyQImageIOHandler();
+  return 0; // new QImageIOHandler();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:63
 // [-2] void ~QImageIOHandler()
 extern "C"
-void C_ZN15QImageIOHandlerD1Ev(void *this_) {
+void C_ZN15QImageIOHandlerD2Ev(void *this_) {
   delete (QImageIOHandler*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,16 +4,23 @@
 #include <QtGui>
 
 // QTransform is pure virtual: false
+// QTransform has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTransform : public QTransform {
 public:
+  virtual ~MyQTransform() {}
+// void QTransform(Qt::Initialization)
 MyQTransform(Qt::Initialization arg0) : QTransform(arg0) {}
+// void QTransform()
 MyQTransform() : QTransform() {}
+// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
 MyQTransform(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) : QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33) {}
+// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQTransform(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) : QTransform(h11, h12, h21, h22, dx, dy) {}
+// void QTransform(const class QMatrix &)
 MyQTransform(const QMatrix & mtx) : QTransform(mtx) {}
 };
 
@@ -21,41 +28,36 @@ MyQTransform(const QMatrix & mtx) : QTransform(mtx) {}
 // /usr/include/qt/QtGui/qtransform.h:69
 // [-2] void QTransform(Qt::Initialization)
 extern "C"
-void* C_ZN10QTransformC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyQTransform*)(0);
-  return  new MyQTransform(arg0);
+void* C_ZN10QTransformC2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QTransform(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:70
 // [-2] void QTransform()
 extern "C"
-void* C_ZN10QTransformC1Ev() {
-  (MyQTransform*)(0);
-  return  new MyQTransform();
+void* C_ZN10QTransformC2Ev() {
+  return  new QTransform();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:71
 // [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN10QTransformC1Eddddddddd(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) {
-  (MyQTransform*)(0);
-  return  new MyQTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
+void* C_ZN10QTransformC2Eddddddddd(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) {
+  return  new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:74
 // [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN10QTransformC1Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) {
-  (MyQTransform*)(0);
-  return  new MyQTransform(h11, h12, h21, h22, dx, dy);
+void* C_ZN10QTransformC2Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) {
+  return  new QTransform(h11, h12, h21, h22, dx, dy);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:76
 // [-2] void QTransform(const class QMatrix &)
 extern "C"
-void* C_ZN10QTransformC1ERK7QMatrix(const QMatrix & mtx) {
-  (MyQTransform*)(0);
-  return  new MyQTransform(mtx);
+void* C_ZN10QTransformC2ERK7QMatrix(const QMatrix & mtx) {
+  return  new QTransform(mtx);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:91

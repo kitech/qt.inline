@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QTextDecoder is pure virtual: false
+// QTextDecoder has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextDecoder : public QTextDecoder {
 public:
+  virtual ~MyQTextDecoder() {}
+// void QTextDecoder(const class QTextCodec *)
 MyQTextDecoder(const QTextCodec * codec) : QTextDecoder(codec) {}
+// void QTextDecoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
 MyQTextDecoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) : QTextDecoder(codec, flags) {}
 };
 
@@ -18,23 +22,21 @@ MyQTextDecoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flag
 // /usr/include/qt/QtCore/qtextcodec.h:158
 // [-2] void QTextDecoder(const class QTextCodec *)
 extern "C"
-void* C_ZN12QTextDecoderC1EPK10QTextCodec(const QTextCodec * codec) {
-  (MyQTextDecoder*)(0);
-  return  new MyQTextDecoder(codec);
+void* C_ZN12QTextDecoderC2EPK10QTextCodec(const QTextCodec * codec) {
+  return  new QTextDecoder(codec);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:159
 // [-2] void QTextDecoder(const class QTextCodec *, class QTextCodec::ConversionFlags)
 extern "C"
-void* C_ZN12QTextDecoderC1EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
-  (MyQTextDecoder*)(0);
-  return  new MyQTextDecoder(codec, flags);
+void* C_ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
+  return  new QTextDecoder(codec, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:160
 // [-2] void ~QTextDecoder()
 extern "C"
-void C_ZN12QTextDecoderD1Ev(void *this_) {
+void C_ZN12QTextDecoderD2Ev(void *this_) {
   delete (QTextDecoder*)(this_);
 }
 // Public Visibility=Default Availability=Available

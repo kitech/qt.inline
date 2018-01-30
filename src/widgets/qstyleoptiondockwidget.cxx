@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionDockWidget is pure virtual: false
+// QStyleOptionDockWidget has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN22QStyleOptionDockWidgetC1Ei(void*cbfn)
 
 class MyQStyleOptionDockWidget : public QStyleOptionDockWidget {
 public:
+  virtual ~MyQStyleOptionDockWidget() {}
+// void QStyleOptionDockWidget()
 MyQStyleOptionDockWidget() : QStyleOptionDockWidget() {}
+// void QStyleOptionDockWidget(int)
 MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionDockWidget(int version) : QStyleOptionDockWidget(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:391
 // [-2] void QStyleOptionDockWidget()
 extern "C"
-void* C_ZN22QStyleOptionDockWidgetC1Ev() {
-  (MyQStyleOptionDockWidget*)(0);
-  return  new MyQStyleOptionDockWidget();
+void* C_ZN22QStyleOptionDockWidgetC2Ev() {
+  return  new QStyleOptionDockWidget();
 }
 //  main block end

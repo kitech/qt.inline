@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QWriteLocker is pure virtual: false
+// QWriteLocker has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWriteLocker : public QWriteLocker {
 public:
+  virtual ~MyQWriteLocker() {}
+// void QWriteLocker(class QReadWriteLock *)
 MyQWriteLocker(QReadWriteLock * readWriteLock) : QWriteLocker(readWriteLock) {}
 };
 
@@ -17,15 +20,14 @@ MyQWriteLocker(QReadWriteLock * readWriteLock) : QWriteLocker(readWriteLock) {}
 // /usr/include/qt/QtCore/qreadwritelock.h:131
 // [-2] void QWriteLocker(class QReadWriteLock *)
 extern "C"
-void* C_ZN12QWriteLockerC1EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
-  (MyQWriteLocker*)(0);
-  return  new MyQWriteLocker(readWriteLock);
+void* C_ZN12QWriteLockerC2EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
+  return  new QWriteLocker(readWriteLock);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:133
 // [-2] void ~QWriteLocker()
 extern "C"
-void C_ZN12QWriteLockerD1Ev(void *this_) {
+void C_ZN12QWriteLockerD2Ev(void *this_) {
   delete (QWriteLocker*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

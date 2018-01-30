@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QStaticText is pure virtual: false
+// QStaticText has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStaticText : public QStaticText {
 public:
+  virtual ~MyQStaticText() {}
+// void QStaticText()
 MyQStaticText() : QStaticText() {}
+// void QStaticText(const class QString &)
 MyQStaticText(const QString & text) : QStaticText(text) {}
 };
 
@@ -18,23 +22,21 @@ MyQStaticText(const QString & text) : QStaticText(text) {}
 // /usr/include/qt/QtGui/qstatictext.h:64
 // [-2] void QStaticText()
 extern "C"
-void* C_ZN11QStaticTextC1Ev() {
-  (MyQStaticText*)(0);
-  return  new MyQStaticText();
+void* C_ZN11QStaticTextC2Ev() {
+  return  new QStaticText();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:65
 // [-2] void QStaticText(const class QString &)
 extern "C"
-void* C_ZN11QStaticTextC1ERK7QString(const QString & text) {
-  (MyQStaticText*)(0);
-  return  new MyQStaticText(text);
+void* C_ZN11QStaticTextC2ERK7QString(const QString & text) {
+  return  new QStaticText(text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:71
 // [-2] void ~QStaticText()
 extern "C"
-void C_ZN11QStaticTextD1Ev(void *this_) {
+void C_ZN11QStaticTextD2Ev(void *this_) {
   delete (QStaticText*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

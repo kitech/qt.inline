@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QApplication is pure virtual: false
+// QApplication has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN12QApplication5eventEP6QEvent(void*cbfn)
 
 class MyQApplication : public QApplication {
 public:
-MyQApplication(int & argc, char ** argv, int arg2) : QApplication(argc, (char**)argv, arg2) {}
+  virtual ~MyQApplication() {}
+// void QApplication(int &, char **, int)
+MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN12QApplication5eventEP6QEvent != 0) {
-  // callback_ZN12QApplication5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN12QApplication5eventEP6QEvent != 0) {
+      // callback_ZN12QApplication5eventEP6QEvent(arg0);
+    }
+    return QApplication::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK12QApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qapplication.h:94
 // [-2] void QApplication(int &, char **, int)
 extern "C"
-void* C_ZN12QApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
-  (MyQApplication*)(0);
-  return  new MyQApplication(argc, (char**)argv, arg2);
+void* C_ZN12QApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
+  auto _nilp = (MyQApplication*)(0);
+  return  new MyQApplication(argc, argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:96
 // [-2] void ~QApplication()
 extern "C"
-void C_ZN12QApplicationD1Ev(void *this_) {
+void C_ZN12QApplicationD2Ev(void *this_) {
   delete (QApplication*)(this_);
 }
 // Public static Visibility=Default Availability=Available

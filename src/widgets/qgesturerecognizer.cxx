@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGestureRecognizer is pure virtual: true
+// QGestureRecognizer has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGestureRecognizer : public QGestureRecognizer {
 public:
+  virtual ~MyQGestureRecognizer() {}
+// void QGestureRecognizer()
 MyQGestureRecognizer() : QGestureRecognizer() {}
 };
 
@@ -18,14 +21,13 @@ MyQGestureRecognizer() : QGestureRecognizer() {}
 // [-2] void QGestureRecognizer()
 extern "C"
 void* C_ZN18QGestureRecognizerC1Ev() {
-  (MyQGestureRecognizer*)(0);
-  return 0; // new MyQGestureRecognizer();
+  return 0; // new QGestureRecognizer();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h:78
 // [-2] void ~QGestureRecognizer()
 extern "C"
-void C_ZN18QGestureRecognizerD1Ev(void *this_) {
+void C_ZN18QGestureRecognizerD2Ev(void *this_) {
   delete (QGestureRecognizer*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

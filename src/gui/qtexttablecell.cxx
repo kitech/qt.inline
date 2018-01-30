@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextTableCell is pure virtual: false
+// QTextTableCell has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextTableCell : public QTextTableCell {
 public:
+  virtual ~MyQTextTableCell() {}
+// void QTextTableCell()
 MyQTextTableCell() : QTextTableCell() {}
 };
 
@@ -17,15 +20,14 @@ MyQTextTableCell() : QTextTableCell() {}
 // /usr/include/qt/QtGui/qtexttable.h:57
 // [-2] void QTextTableCell()
 extern "C"
-void* C_ZN14QTextTableCellC1Ev() {
-  (MyQTextTableCell*)(0);
-  return  new MyQTextTableCell();
+void* C_ZN14QTextTableCellC2Ev() {
+  return  new QTextTableCell();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:58
 // [-2] void ~QTextTableCell()
 extern "C"
-void C_ZN14QTextTableCellD1Ev(void *this_) {
+void C_ZN14QTextTableCellD2Ev(void *this_) {
   delete (QTextTableCell*)(this_);
 }
 // Public Visibility=Default Availability=Available

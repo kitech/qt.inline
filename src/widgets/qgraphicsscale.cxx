@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsScale is pure virtual: false
+// QGraphicsScale has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsScale : public QGraphicsScale {
 public:
+  virtual ~MyQGraphicsScale() {}
+// void QGraphicsScale(class QObject *)
 MyQGraphicsScale(QObject * parent) : QGraphicsScale(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK14QGraphicsScale10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:88
 // [-2] void QGraphicsScale(class QObject *)
 extern "C"
-void* C_ZN14QGraphicsScaleC1EP7QObject(QObject * parent) {
-  (MyQGraphicsScale*)(0);
-  return  new MyQGraphicsScale(parent);
+void* C_ZN14QGraphicsScaleC2EP7QObject(QObject * parent) {
+  return  new QGraphicsScale(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:89
 // [-2] void ~QGraphicsScale()
 extern "C"
-void C_ZN14QGraphicsScaleD1Ev(void *this_) {
+void C_ZN14QGraphicsScaleD2Ev(void *this_) {
   delete (QGraphicsScale*)(this_);
 }
 // Public Visibility=Default Availability=Available

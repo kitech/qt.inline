@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QHashData is pure virtual: false
+// QHashData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQHashData : public QHashData {
 public:
+  virtual ~MyQHashData() {}
 };
 
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QCryptographicHash is pure virtual: false
+// QCryptographicHash has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCryptographicHash : public QCryptographicHash {
 public:
+  virtual ~MyQCryptographicHash() {}
+// void QCryptographicHash(enum QCryptographicHash::Algorithm)
 MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(method) {}
 };
 
@@ -17,15 +20,14 @@ MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(
 // /usr/include/qt/QtCore/qcryptographichash.h:92
 // [-2] void QCryptographicHash(enum QCryptographicHash::Algorithm)
 extern "C"
-void* C_ZN18QCryptographicHashC1ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
-  (MyQCryptographicHash*)(0);
-  return  new MyQCryptographicHash(method);
+void* C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
+  return  new QCryptographicHash(method);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:93
 // [-2] void ~QCryptographicHash()
 extern "C"
-void C_ZN18QCryptographicHashD1Ev(void *this_) {
+void C_ZN18QCryptographicHashD2Ev(void *this_) {
   delete (QCryptographicHash*)(this_);
 }
 // Public Visibility=Default Availability=Available

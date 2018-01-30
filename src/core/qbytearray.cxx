@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QByteArray is pure virtual: false
+// QByteArray has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQByteArray : public QByteArray {
 public:
+  virtual ~MyQByteArray() {}
+// void QByteArray()
 MyQByteArray() : QByteArray() {}
+// void QByteArray(const char *, int)
 MyQByteArray(const char * arg0, int size) : QByteArray(arg0, size) {}
+// void QByteArray(int, char)
 MyQByteArray(int size, char c) : QByteArray(size, c) {}
+// void QByteArray(int, Qt::Initialization)
 MyQByteArray(int size, Qt::Initialization arg1) : QByteArray(size, arg1) {}
 };
 
@@ -20,39 +26,35 @@ MyQByteArray(int size, Qt::Initialization arg1) : QByteArray(size, arg1) {}
 // /usr/include/qt/QtCore/qbytearray.h:170
 // [-2] void QByteArray()
 extern "C"
-void* C_ZN10QByteArrayC1Ev() {
-  (MyQByteArray*)(0);
-  return  new MyQByteArray();
+void* C_ZN10QByteArrayC2Ev() {
+  return  new QByteArray();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:171
 // [-2] void QByteArray(const char *, int)
 extern "C"
-void* C_ZN10QByteArrayC1EPKci(const char * arg0, int size) {
-  (MyQByteArray*)(0);
-  return  new MyQByteArray(arg0, size);
+void* C_ZN10QByteArrayC2EPKci(const char * arg0, int size) {
+  return  new QByteArray(arg0, size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:172
 // [-2] void QByteArray(int, char)
 extern "C"
-void* C_ZN10QByteArrayC1Eic(int size, char c) {
-  (MyQByteArray*)(0);
-  return  new MyQByteArray(size, c);
+void* C_ZN10QByteArrayC2Eic(int size, char c) {
+  return  new QByteArray(size, c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:173
 // [-2] void QByteArray(int, Qt::Initialization)
 extern "C"
-void* C_ZN10QByteArrayC1EiN2Qt14InitializationE(int size, Qt::Initialization arg1) {
-  (MyQByteArray*)(0);
-  return  new MyQByteArray(size, arg1);
+void* C_ZN10QByteArrayC2EiN2Qt14InitializationE(int size, Qt::Initialization arg1) {
+  return  new QByteArray(size, arg1);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:175
 // [-2] void ~QByteArray()
 extern "C"
-void C_ZN10QByteArrayD1Ev(void *this_) {
+void C_ZN10QByteArrayD2Ev(void *this_) {
   delete (QByteArray*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

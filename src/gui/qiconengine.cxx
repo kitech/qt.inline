@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QIconEngine is pure virtual: true
+// QIconEngine has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQIconEngine : public QIconEngine {
 public:
+  virtual ~MyQIconEngine() {}
+// void QIconEngine()
 MyQIconEngine() : QIconEngine() {}
 };
 
@@ -18,14 +21,13 @@ MyQIconEngine() : QIconEngine() {}
 // [-2] void QIconEngine()
 extern "C"
 void* C_ZN11QIconEngineC1Ev() {
-  (MyQIconEngine*)(0);
-  return 0; // new MyQIconEngine();
+  return 0; // new QIconEngine();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:55
 // [-2] void ~QIconEngine()
 extern "C"
-void C_ZN11QIconEngineD1Ev(void *this_) {
+void C_ZN11QIconEngineD2Ev(void *this_) {
   delete (QIconEngine*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

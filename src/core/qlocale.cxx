@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QLocale is pure virtual: false
+// QLocale has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLocale : public QLocale {
 public:
+  virtual ~MyQLocale() {}
+// void QLocale()
 MyQLocale() : QLocale() {}
+// void QLocale(const class QString &)
 MyQLocale(const QString & name) : QLocale(name) {}
+// void QLocale(enum QLocale::Language, enum QLocale::Country)
 MyQLocale(QLocale::Language language, QLocale::Country country) : QLocale(language, country) {}
+// void QLocale(enum QLocale::Language, enum QLocale::Script, enum QLocale::Country)
 MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country country) : QLocale(language, script, country) {}
 };
 
@@ -20,39 +26,35 @@ MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country c
 // /usr/include/qt/QtCore/qlocale.h:929
 // [-2] void QLocale()
 extern "C"
-void* C_ZN7QLocaleC1Ev() {
-  (MyQLocale*)(0);
-  return  new MyQLocale();
+void* C_ZN7QLocaleC2Ev() {
+  return  new QLocale();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:930
 // [-2] void QLocale(const class QString &)
 extern "C"
-void* C_ZN7QLocaleC1ERK7QString(const QString & name) {
-  (MyQLocale*)(0);
-  return  new MyQLocale(name);
+void* C_ZN7QLocaleC2ERK7QString(const QString & name) {
+  return  new QLocale(name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:931
 // [-2] void QLocale(enum QLocale::Language, enum QLocale::Country)
 extern "C"
-void* C_ZN7QLocaleC1ENS_8LanguageENS_7CountryE(QLocale::Language language, QLocale::Country country) {
-  (MyQLocale*)(0);
-  return  new MyQLocale(language, country);
+void* C_ZN7QLocaleC2ENS_8LanguageENS_7CountryE(QLocale::Language language, QLocale::Country country) {
+  return  new QLocale(language, country);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:932
 // [-2] void QLocale(enum QLocale::Language, enum QLocale::Script, enum QLocale::Country)
 extern "C"
-void* C_ZN7QLocaleC1ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
-  (MyQLocale*)(0);
-  return  new MyQLocale(language, script, country);
+void* C_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE(QLocale::Language language, QLocale::Script script, QLocale::Country country) {
+  return  new QLocale(language, script, country);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:938
 // [-2] void ~QLocale()
 extern "C"
-void C_ZN7QLocaleD1Ev(void *this_) {
+void C_ZN7QLocaleD2Ev(void *this_) {
   delete (QLocale*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -231,57 +233,57 @@ double C_ZNK7QLocale8toDoubleERK10QStringRefPb(void *this_, const QStringRef & s
 // /usr/include/qt/QtCore/qlocale.h:971
 // [2] short toShort(class QStringView, _Bool *)
 extern "C"
-short C_ZNK7QLocale7toShortE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (short)((QLocale*)this_)->toShort(s, ok);
+short C_ZNK7QLocale7toShortE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (short)((QLocale*)this_)->toShort(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:972
 // [2] ushort toUShort(class QStringView, _Bool *)
 extern "C"
-ushort C_ZNK7QLocale8toUShortE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (ushort)((QLocale*)this_)->toUShort(s, ok);
+ushort C_ZNK7QLocale8toUShortE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (ushort)((QLocale*)this_)->toUShort(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:973
 // [4] int toInt(class QStringView, _Bool *)
 extern "C"
-int C_ZNK7QLocale5toIntE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (int)((QLocale*)this_)->toInt(s, ok);
+int C_ZNK7QLocale5toIntE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (int)((QLocale*)this_)->toInt(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:974
 // [4] uint toUInt(class QStringView, _Bool *)
 extern "C"
-uint C_ZNK7QLocale6toUIntE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (uint)((QLocale*)this_)->toUInt(s, ok);
+uint C_ZNK7QLocale6toUIntE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (uint)((QLocale*)this_)->toUInt(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:975
 // [8] qlonglong toLongLong(class QStringView, _Bool *)
 extern "C"
-qlonglong C_ZNK7QLocale10toLongLongE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (qlonglong)((QLocale*)this_)->toLongLong(s, ok);
+qlonglong C_ZNK7QLocale10toLongLongE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (qlonglong)((QLocale*)this_)->toLongLong(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:976
 // [8] qulonglong toULongLong(class QStringView, _Bool *)
 extern "C"
-qulonglong C_ZNK7QLocale11toULongLongE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (qulonglong)((QLocale*)this_)->toULongLong(s, ok);
+qulonglong C_ZNK7QLocale11toULongLongE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (qulonglong)((QLocale*)this_)->toULongLong(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:977
 // [4] float toFloat(class QStringView, _Bool *)
 extern "C"
-float C_ZNK7QLocale7toFloatE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (float)((QLocale*)this_)->toFloat(s, ok);
+float C_ZNK7QLocale7toFloatE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (float)((QLocale*)this_)->toFloat(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:978
 // [8] double toDouble(class QStringView, _Bool *)
 extern "C"
-double C_ZNK7QLocale8toDoubleE11QStringViewPb(void *this_, QStringView s, bool * ok) {
-  return (double)((QLocale*)this_)->toDouble(s, ok);
+double C_ZNK7QLocale8toDoubleE11QStringViewPb(void *this_, QStringView* s, bool * ok) {
+  return (double)((QLocale*)this_)->toDouble(*s, ok);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:980
@@ -375,24 +377,24 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qlocale.h:994
 // [8] QString toString(const class QDate &, class QStringView)
 extern "C"
-void* C_ZNK7QLocale8toStringERK5QDate11QStringView(void *this_, const QDate & date, QStringView formatStr) {
-  auto rv = ((QLocale*)this_)->toString(date, formatStr);
+void* C_ZNK7QLocale8toStringERK5QDate11QStringView(void *this_, const QDate & date, QStringView* formatStr) {
+  auto rv = ((QLocale*)this_)->toString(date, *formatStr);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:995
 // [8] QString toString(const class QTime &, class QStringView)
 extern "C"
-void* C_ZNK7QLocale8toStringERK5QTime11QStringView(void *this_, const QTime & time, QStringView formatStr) {
-  auto rv = ((QLocale*)this_)->toString(time, formatStr);
+void* C_ZNK7QLocale8toStringERK5QTime11QStringView(void *this_, const QTime & time, QStringView* formatStr) {
+  auto rv = ((QLocale*)this_)->toString(time, *formatStr);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:996
 // [8] QString toString(const class QDateTime &, class QStringView)
 extern "C"
-void* C_ZNK7QLocale8toStringERK9QDateTime11QStringView(void *this_, const QDateTime & dateTime, QStringView format) {
-  auto rv = ((QLocale*)this_)->toString(dateTime, format);
+void* C_ZNK7QLocale8toStringERK9QDateTime11QStringView(void *this_, const QDateTime & dateTime, QStringView* format) {
+  auto rv = ((QLocale*)this_)->toString(dateTime, *format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

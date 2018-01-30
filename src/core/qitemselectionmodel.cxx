@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QItemSelectionModel is pure virtual: false
+// QItemSelectionModel has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,14 +18,18 @@ extern "C" void set_callback_ZN19QItemSelectionModel20emitSelectionChangedERK14Q
 
 class MyQItemSelectionModel : public QItemSelectionModel {
 public:
+  virtual ~MyQItemSelectionModel() {}
+// void QItemSelectionModel(class QAbstractItemModel *)
 MyQItemSelectionModel(QAbstractItemModel * model) : QItemSelectionModel(model) {}
+// void QItemSelectionModel(class QAbstractItemModel *, class QObject *)
 MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelectionModel(model, parent) {}
 // void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
-// void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
-virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
-  if (callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_ != 0) {
-  // callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(newSelection, oldSelection);
-}}
+  virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
+    if (callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_ != 0) {
+      // callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(newSelection, oldSelection);
+    }
+    QItemSelectionModel::emitSelectionChanged(newSelection, oldSelection);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,23 +43,23 @@ void* C_ZNK19QItemSelectionModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qitemselectionmodel.h:167
 // [-2] void QItemSelectionModel(class QAbstractItemModel *)
 extern "C"
-void* C_ZN19QItemSelectionModelC1EP18QAbstractItemModel(QAbstractItemModel * model) {
-  (MyQItemSelectionModel*)(0);
+void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModel(QAbstractItemModel * model) {
+  auto _nilp = (MyQItemSelectionModel*)(0);
   return  new MyQItemSelectionModel(model);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:168
 // [-2] void QItemSelectionModel(class QAbstractItemModel *, class QObject *)
 extern "C"
-void* C_ZN19QItemSelectionModelC1EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
-  (MyQItemSelectionModel*)(0);
+void* C_ZN19QItemSelectionModelC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
+  auto _nilp = (MyQItemSelectionModel*)(0);
   return  new MyQItemSelectionModel(model, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:169
 // [-2] void ~QItemSelectionModel()
 extern "C"
-void C_ZN19QItemSelectionModelD1Ev(void *this_) {
+void C_ZN19QItemSelectionModelD2Ev(void *this_) {
   delete (QItemSelectionModel*)(this_);
 }
 // Public Visibility=Default Availability=Available

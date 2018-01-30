@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QJsonParseError is pure virtual: false
+// QJsonParseError has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQJsonParseError : public QJsonParseError {
 public:
+  virtual ~MyQJsonParseError() {}
 };
 
 // Public Visibility=Default Availability=Available

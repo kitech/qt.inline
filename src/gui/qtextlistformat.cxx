@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextListFormat is pure virtual: false
+// QTextListFormat has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN15QTextListFormatC1ERK11QTextFormat(void*cbfn)
 
 class MyQTextListFormat : public QTextListFormat {
 public:
+  virtual ~MyQTextListFormat() {}
+// void QTextListFormat()
 MyQTextListFormat() : QTextListFormat() {}
+// void QTextListFormat(const class QTextFormat &)
 MyQTextListFormat(const QTextFormat & fmt) : QTextListFormat(fmt) {}
 };
 
@@ -25,9 +29,8 @@ MyQTextListFormat(const QTextFormat & fmt) : QTextListFormat(fmt) {}
 // /usr/include/qt/QtGui/qtextformat.h:681
 // [-2] void QTextListFormat()
 extern "C"
-void* C_ZN15QTextListFormatC1Ev() {
-  (MyQTextListFormat*)(0);
-  return  new MyQTextListFormat();
+void* C_ZN15QTextListFormatC2Ev() {
+  return  new QTextListFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:683

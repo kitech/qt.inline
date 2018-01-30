@@ -4,18 +4,27 @@
 #include <QtGui>
 
 // QMatrix4x4 is pure virtual: false
+// QMatrix4x4 has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMatrix4x4 : public QMatrix4x4 {
 public:
+  virtual ~MyQMatrix4x4() {}
+// void QMatrix4x4()
 MyQMatrix4x4() : QMatrix4x4() {}
+// void QMatrix4x4(Qt::Initialization)
 MyQMatrix4x4(Qt::Initialization arg0) : QMatrix4x4(arg0) {}
+// void QMatrix4x4(const float *)
 MyQMatrix4x4(const float * values) : QMatrix4x4(values) {}
+// void QMatrix4x4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
 MyQMatrix4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) : QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44) {}
+// void QMatrix4x4(const float *, int, int)
 MyQMatrix4x4(const float * values, int cols, int rows) : QMatrix4x4(values, cols, rows) {}
+// void QMatrix4x4(const class QTransform &)
 MyQMatrix4x4(const QTransform & transform) : QMatrix4x4(transform) {}
+// void QMatrix4x4(const class QMatrix &)
 MyQMatrix4x4(const QMatrix & matrix) : QMatrix4x4(matrix) {}
 };
 
@@ -23,57 +32,50 @@ MyQMatrix4x4(const QMatrix & matrix) : QMatrix4x4(matrix) {}
 // /usr/include/qt/QtGui/qmatrix4x4.h:62
 // [-2] void QMatrix4x4()
 extern "C"
-void* C_ZN10QMatrix4x4C1Ev() {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4();
+void* C_ZN10QMatrix4x4C2Ev() {
+  return  new QMatrix4x4();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:63
 // [-2] void QMatrix4x4(Qt::Initialization)
 extern "C"
-void* C_ZN10QMatrix4x4C1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(arg0);
+void* C_ZN10QMatrix4x4C2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QMatrix4x4(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:64
 // [-2] void QMatrix4x4(const float *)
 extern "C"
-void* C_ZN10QMatrix4x4C1EPKf(const float * values) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(values);
+void* C_ZN10QMatrix4x4C2EPKf(const float * values) {
+  return  new QMatrix4x4(values);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:65
 // [-2] void QMatrix4x4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)
 extern "C"
-void* C_ZN10QMatrix4x4C1Effffffffffffffff(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
+void* C_ZN10QMatrix4x4C2Effffffffffffffff(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) {
+  return  new QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:73
 // [-2] void QMatrix4x4(const float *, int, int)
 extern "C"
-void* C_ZN10QMatrix4x4C1EPKfii(const float * values, int cols, int rows) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(values, cols, rows);
+void* C_ZN10QMatrix4x4C2EPKfii(const float * values, int cols, int rows) {
+  return  new QMatrix4x4(values, cols, rows);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:74
 // [-2] void QMatrix4x4(const class QTransform &)
 extern "C"
-void* C_ZN10QMatrix4x4C1ERK10QTransform(const QTransform & transform) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(transform);
+void* C_ZN10QMatrix4x4C2ERK10QTransform(const QTransform & transform) {
+  return  new QMatrix4x4(transform);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:75
 // [-2] void QMatrix4x4(const class QMatrix &)
 extern "C"
-void* C_ZN10QMatrix4x4C1ERK7QMatrix(const QMatrix & matrix) {
-  (MyQMatrix4x4*)(0);
-  return  new MyQMatrix4x4(matrix);
+void* C_ZN10QMatrix4x4C2ERK7QMatrix(const QMatrix & matrix) {
+  return  new QMatrix4x4(matrix);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:81

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QEnterEvent is pure virtual: false
+// QEnterEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQEnterEvent : public QEnterEvent {
 public:
+  virtual ~MyQEnterEvent() {}
+// void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
 MyQEnterEvent(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) : QEnterEvent(localPos, windowPos, screenPos) {}
 };
 
@@ -17,15 +20,14 @@ MyQEnterEvent(const QPointF & localPos, const QPointF & windowPos, const QPointF
 // /usr/include/qt/QtGui/qevent.h:85
 // [-2] void QEnterEvent(const class QPointF &, const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN11QEnterEventC1ERK7QPointFS2_S2_(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) {
-  (MyQEnterEvent*)(0);
-  return  new MyQEnterEvent(localPos, windowPos, screenPos);
+void* C_ZN11QEnterEventC2ERK7QPointFS2_S2_(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos) {
+  return  new QEnterEvent(localPos, windowPos, screenPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:86
 // [-2] void ~QEnterEvent()
 extern "C"
-void C_ZN11QEnterEventD1Ev(void *this_) {
+void C_ZN11QEnterEventD2Ev(void *this_) {
   delete (QEnterEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

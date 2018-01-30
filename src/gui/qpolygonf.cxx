@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QPolygonF is pure virtual: false
+// QPolygonF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPolygonF : public QPolygonF {
 public:
+  virtual ~MyQPolygonF() {}
+// void QPolygonF()
 MyQPolygonF() : QPolygonF() {}
+// void QPolygonF(int)
 MyQPolygonF(int size) : QPolygonF(size) {}
+// void QPolygonF(const class QRectF &)
 MyQPolygonF(const QRectF & r) : QPolygonF(r) {}
+// void QPolygonF(const class QPolygon &)
 MyQPolygonF(const QPolygon & a) : QPolygonF(a) {}
 };
 
@@ -20,40 +26,36 @@ MyQPolygonF(const QPolygon & a) : QPolygonF(a) {}
 // /usr/include/qt/QtGui/qpolygon.h:144
 // [-2] void QPolygonF()
 extern "C"
-void* C_ZN9QPolygonFC1Ev() {
-  (MyQPolygonF*)(0);
-  return  new MyQPolygonF();
+void* C_ZN9QPolygonFC2Ev() {
+  return  new QPolygonF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:145
 // [-2] void ~QPolygonF()
 extern "C"
-void C_ZN9QPolygonFD1Ev(void *this_) {
+void C_ZN9QPolygonFD2Ev(void *this_) {
   delete (QPolygonF*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:146
 // [-2] void QPolygonF(int)
 extern "C"
-void* C_ZN9QPolygonFC1Ei(int size) {
-  (MyQPolygonF*)(0);
-  return  new MyQPolygonF(size);
+void* C_ZN9QPolygonFC2Ei(int size) {
+  return  new QPolygonF(size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:151
 // [-2] void QPolygonF(const class QRectF &)
 extern "C"
-void* C_ZN9QPolygonFC1ERK6QRectF(const QRectF & r) {
-  (MyQPolygonF*)(0);
-  return  new MyQPolygonF(r);
+void* C_ZN9QPolygonFC2ERK6QRectF(const QRectF & r) {
+  return  new QPolygonF(r);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:152
 // [-2] void QPolygonF(const class QPolygon &)
 extern "C"
-void* C_ZN9QPolygonFC1ERK8QPolygon(const QPolygon & a) {
-  (MyQPolygonF*)(0);
-  return  new MyQPolygonF(a);
+void* C_ZN9QPolygonFC2ERK8QPolygon(const QPolygon & a) {
+  return  new QPolygonF(a);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:159

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsPixmapItem is pure virtual: false
+// QGraphicsPixmapItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,49 +32,55 @@ extern "C" void set_callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(void
 
 class MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
 public:
+  virtual ~MyQGraphicsPixmapItem() {}
+// void QGraphicsPixmapItem(class QGraphicsItem *)
 MyQGraphicsPixmapItem(QGraphicsItem * parent) : QGraphicsPixmapItem(parent) {}
+// void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
 MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphicsPixmapItem(pixmap, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
-// bool supportsExtension(enum QGraphicsItem::Extension)
-virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-  if (callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-  // callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
-}}
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+    if (callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+      // callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    }
+    return QGraphicsPixmapItem::supportsExtension(extension);
+  }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-  if (callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-  // callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
-}}
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+    if (callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+      // callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    }
+    QGraphicsPixmapItem::setExtension(extension, variant);
+  }
 // QVariant extension(const class QVariant &)
-// QVariant extension(const class QVariant &)
-virtual QVariant extension(const QVariant & variant) {
-  if (callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant != 0) {
-  // callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(variant);
-}}
+  virtual QVariant extension(const QVariant & variant) {
+    if (callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant != 0) {
+      // callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(variant);
+    }
+    return QGraphicsPixmapItem::extension(variant);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:825
 // [-2] void QGraphicsPixmapItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN19QGraphicsPixmapItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsPixmapItem*)(0);
+void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsPixmapItem*)(0);
   return  new MyQGraphicsPixmapItem(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:826
 // [-2] void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
 extern "C"
-void* C_ZN19QGraphicsPixmapItemC1ERK7QPixmapP13QGraphicsItem(const QPixmap & pixmap, QGraphicsItem * parent) {
-  (MyQGraphicsPixmapItem*)(0);
+void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(const QPixmap & pixmap, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsPixmapItem*)(0);
   return  new MyQGraphicsPixmapItem(pixmap, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:827
 // [-2] void ~QGraphicsPixmapItem()
 extern "C"
-void C_ZN19QGraphicsPixmapItemD1Ev(void *this_) {
+void C_ZN19QGraphicsPixmapItemD2Ev(void *this_) {
   delete (QGraphicsPixmapItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

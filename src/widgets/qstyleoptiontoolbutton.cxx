@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionToolButton is pure virtual: false
+// QStyleOptionToolButton has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN22QStyleOptionToolButtonC1Ei(void*cbfn)
 
 class MyQStyleOptionToolButton : public QStyleOptionToolButton {
 public:
+  virtual ~MyQStyleOptionToolButton() {}
+// void QStyleOptionToolButton()
 MyQStyleOptionToolButton() : QStyleOptionToolButton() {}
+// void QStyleOptionToolButton(int)
 MyQStyleOptionToolButton(int version) : QStyleOptionToolButton(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionToolButton(int version) : QStyleOptionToolButton(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:579
 // [-2] void QStyleOptionToolButton()
 extern "C"
-void* C_ZN22QStyleOptionToolButtonC1Ev() {
-  (MyQStyleOptionToolButton*)(0);
-  return  new MyQStyleOptionToolButton();
+void* C_ZN22QStyleOptionToolButtonC2Ev() {
+  return  new QStyleOptionToolButton();
 }
 //  main block end

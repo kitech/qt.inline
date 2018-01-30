@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QFontComboBox is pure virtual: false
+// QFontComboBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
 
 class MyQFontComboBox : public QFontComboBox {
 public:
+  virtual ~MyQFontComboBox() {}
+// void QFontComboBox(class QWidget *)
 MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN13QFontComboBox5eventEP6QEvent != 0) {
-  // callback_ZN13QFontComboBox5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN13QFontComboBox5eventEP6QEvent != 0) {
+      // callback_ZN13QFontComboBox5eventEP6QEvent(e);
+    }
+    return QFontComboBox::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK13QFontComboBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qfontcombobox.h:61
 // [-2] void QFontComboBox(class QWidget *)
 extern "C"
-void* C_ZN13QFontComboBoxC1EP7QWidget(QWidget * parent) {
-  (MyQFontComboBox*)(0);
+void* C_ZN13QFontComboBoxC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQFontComboBox*)(0);
   return  new MyQFontComboBox(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:62
 // [-2] void ~QFontComboBox()
 extern "C"
-void C_ZN13QFontComboBoxD1Ev(void *this_) {
+void C_ZN13QFontComboBoxD2Ev(void *this_) {
   delete (QFontComboBox*)(this_);
 }
 // Public Visibility=Default Availability=Available

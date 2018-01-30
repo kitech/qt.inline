@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QRandomGenerator64 is pure virtual: false
+// QRandomGenerator64 has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRandomGenerator64 : public QRandomGenerator64 {
 public:
+  virtual ~MyQRandomGenerator64() {}
+// void QRandomGenerator64(quint32)
 MyQRandomGenerator64(quint32 seedValue) : QRandomGenerator64(seedValue) {}
+// void QRandomGenerator64(const quint32 *, qsizetype)
 MyQRandomGenerator64(const quint32 * seedBuffer, qsizetype len) : QRandomGenerator64(seedBuffer, len) {}
+// void QRandomGenerator64(const quint32 *, const quint32 *)
 MyQRandomGenerator64(const quint32 * begin, const quint32 * end) : QRandomGenerator64(begin, end) {}
+// void QRandomGenerator64(const class QRandomGenerator &)
 MyQRandomGenerator64(const QRandomGenerator & other) : QRandomGenerator64(other) {}
 };
 
@@ -27,33 +33,29 @@ quint64 C_ZN18QRandomGenerator648generateEv(void *this_) {
 // /usr/include/qt/QtCore/qrandom.h:215
 // [-2] void QRandomGenerator64(quint32)
 extern "C"
-void* C_ZN18QRandomGenerator64C1Ej(quint32 seedValue) {
-  (MyQRandomGenerator64*)(0);
-  return  new MyQRandomGenerator64(seedValue);
+void* C_ZN18QRandomGenerator64C2Ej(quint32 seedValue) {
+  return  new QRandomGenerator64(seedValue);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:221
 // [-2] void QRandomGenerator64(const quint32 *, qsizetype)
 extern "C"
-void* C_ZN18QRandomGenerator64C1EPKjx(const quint32 * seedBuffer, qsizetype len) {
-  (MyQRandomGenerator64*)(0);
-  return  new MyQRandomGenerator64(seedBuffer, len);
+void* C_ZN18QRandomGenerator64C2EPKjx(const quint32 * seedBuffer, qsizetype len) {
+  return  new QRandomGenerator64(seedBuffer, len);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:227
 // [-2] void QRandomGenerator64(const quint32 *, const quint32 *)
 extern "C"
-void* C_ZN18QRandomGenerator64C1EPKjS1_(const quint32 * begin, const quint32 * end) {
-  (MyQRandomGenerator64*)(0);
-  return  new MyQRandomGenerator64(begin, end);
+void* C_ZN18QRandomGenerator64C2EPKjS1_(const quint32 * begin, const quint32 * end) {
+  return  new QRandomGenerator64(begin, end);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:230
 // [-2] void QRandomGenerator64(const class QRandomGenerator &)
 extern "C"
-void* C_ZN18QRandomGenerator64C1ERK16QRandomGenerator(const QRandomGenerator & other) {
-  (MyQRandomGenerator64*)(0);
-  return  new MyQRandomGenerator64(other);
+void* C_ZN18QRandomGenerator64C2ERK16QRandomGenerator(const QRandomGenerator & other) {
+  return  new QRandomGenerator64(other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:232

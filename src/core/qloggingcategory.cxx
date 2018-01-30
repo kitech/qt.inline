@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QLoggingCategory is pure virtual: false
+// QLoggingCategory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLoggingCategory : public QLoggingCategory {
 public:
+  virtual ~MyQLoggingCategory() {}
+// void QLoggingCategory(const char *)
 MyQLoggingCategory(const char * category) : QLoggingCategory(category) {}
+// void QLoggingCategory(const char *, enum QtMsgType)
 MyQLoggingCategory(const char * category, QtMsgType severityLevel) : QLoggingCategory(category, severityLevel) {}
 };
 
@@ -18,23 +22,21 @@ MyQLoggingCategory(const char * category, QtMsgType severityLevel) : QLoggingCat
 // /usr/include/qt/QtCore/qloggingcategory.h:53
 // [-2] void QLoggingCategory(const char *)
 extern "C"
-void* C_ZN16QLoggingCategoryC1EPKc(const char * category) {
-  (MyQLoggingCategory*)(0);
-  return  new MyQLoggingCategory(category);
+void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
+  return  new QLoggingCategory(category);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:54
 // [-2] void QLoggingCategory(const char *, enum QtMsgType)
 extern "C"
-void* C_ZN16QLoggingCategoryC1EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
-  (MyQLoggingCategory*)(0);
-  return  new MyQLoggingCategory(category, severityLevel);
+void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
+  return  new QLoggingCategory(category, severityLevel);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:55
 // [-2] void ~QLoggingCategory()
 extern "C"
-void C_ZN16QLoggingCategoryD1Ev(void *this_) {
+void C_ZN16QLoggingCategoryD2Ev(void *this_) {
   delete (QLoggingCategory*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsRotation is pure virtual: false
+// QGraphicsRotation has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsRotation : public QGraphicsRotation {
 public:
+  virtual ~MyQGraphicsRotation() {}
+// void QGraphicsRotation(class QObject *)
 MyQGraphicsRotation(QObject * parent) : QGraphicsRotation(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK17QGraphicsRotation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:126
 // [-2] void QGraphicsRotation(class QObject *)
 extern "C"
-void* C_ZN17QGraphicsRotationC1EP7QObject(QObject * parent) {
-  (MyQGraphicsRotation*)(0);
-  return  new MyQGraphicsRotation(parent);
+void* C_ZN17QGraphicsRotationC2EP7QObject(QObject * parent) {
+  return  new QGraphicsRotation(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:127
 // [-2] void ~QGraphicsRotation()
 extern "C"
-void C_ZN17QGraphicsRotationD1Ev(void *this_) {
+void C_ZN17QGraphicsRotationD2Ev(void *this_) {
   delete (QGraphicsRotation*)(this_);
 }
 // Public Visibility=Default Availability=Available

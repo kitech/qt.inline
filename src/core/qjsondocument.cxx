@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QJsonDocument is pure virtual: false
+// QJsonDocument has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQJsonDocument : public QJsonDocument {
 public:
+  virtual ~MyQJsonDocument() {}
+// void QJsonDocument()
 MyQJsonDocument() : QJsonDocument() {}
+// void QJsonDocument(const class QJsonObject &)
 MyQJsonDocument(const QJsonObject & object) : QJsonDocument(object) {}
+// void QJsonDocument(const class QJsonArray &)
 MyQJsonDocument(const QJsonArray & array) : QJsonDocument(array) {}
 };
 
@@ -19,31 +24,28 @@ MyQJsonDocument(const QJsonArray & array) : QJsonDocument(array) {}
 // /usr/include/qt/QtCore/qjsondocument.h:88
 // [-2] void QJsonDocument()
 extern "C"
-void* C_ZN13QJsonDocumentC1Ev() {
-  (MyQJsonDocument*)(0);
-  return  new MyQJsonDocument();
+void* C_ZN13QJsonDocumentC2Ev() {
+  return  new QJsonDocument();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:89
 // [-2] void QJsonDocument(const class QJsonObject &)
 extern "C"
-void* C_ZN13QJsonDocumentC1ERK11QJsonObject(const QJsonObject & object) {
-  (MyQJsonDocument*)(0);
-  return  new MyQJsonDocument(object);
+void* C_ZN13QJsonDocumentC2ERK11QJsonObject(const QJsonObject & object) {
+  return  new QJsonDocument(object);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:90
 // [-2] void QJsonDocument(const class QJsonArray &)
 extern "C"
-void* C_ZN13QJsonDocumentC1ERK10QJsonArray(const QJsonArray & array) {
-  (MyQJsonDocument*)(0);
-  return  new MyQJsonDocument(array);
+void* C_ZN13QJsonDocumentC2ERK10QJsonArray(const QJsonArray & array) {
+  return  new QJsonDocument(array);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsondocument.h:91
 // [-2] void ~QJsonDocument()
 extern "C"
-void C_ZN13QJsonDocumentD1Ev(void *this_) {
+void C_ZN13QJsonDocumentD2Ev(void *this_) {
   delete (QJsonDocument*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

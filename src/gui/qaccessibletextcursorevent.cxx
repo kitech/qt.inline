@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QAccessibleTextCursorEvent is pure virtual: false
+// QAccessibleTextCursorEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleTextCursorEvent : public QAccessibleTextCursorEvent {
 public:
+  virtual ~MyQAccessibleTextCursorEvent() {}
+// void QAccessibleTextCursorEvent(class QObject *, int)
 MyQAccessibleTextCursorEvent(QObject * obj, int cursorPos) : QAccessibleTextCursorEvent(obj, cursorPos) {}
+// void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
 MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAccessibleTextCursorEvent(iface, cursorPos) {}
 };
 
@@ -18,23 +22,21 @@ MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAcc
 // /usr/include/qt/QtGui/qaccessible.h:747
 // [-2] void QAccessibleTextCursorEvent(class QObject *, int)
 extern "C"
-void* C_ZN26QAccessibleTextCursorEventC1EP7QObjecti(QObject * obj, int cursorPos) {
-  (MyQAccessibleTextCursorEvent*)(0);
-  return  new MyQAccessibleTextCursorEvent(obj, cursorPos);
+void* C_ZN26QAccessibleTextCursorEventC2EP7QObjecti(QObject * obj, int cursorPos) {
+  return  new QAccessibleTextCursorEvent(obj, cursorPos);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:753
 // [-2] void QAccessibleTextCursorEvent(class QAccessibleInterface *, int)
 extern "C"
-void* C_ZN26QAccessibleTextCursorEventC1EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos) {
-  (MyQAccessibleTextCursorEvent*)(0);
-  return  new MyQAccessibleTextCursorEvent(iface, cursorPos);
+void* C_ZN26QAccessibleTextCursorEventC2EP20QAccessibleInterfacei(QAccessibleInterface * iface, int cursorPos) {
+  return  new QAccessibleTextCursorEvent(iface, cursorPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:760
 // [-2] void ~QAccessibleTextCursorEvent()
 extern "C"
-void C_ZN26QAccessibleTextCursorEventD1Ev(void *this_) {
+void C_ZN26QAccessibleTextCursorEventD2Ev(void *this_) {
   delete (QAccessibleTextCursorEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

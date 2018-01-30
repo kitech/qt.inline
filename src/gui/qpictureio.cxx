@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QPictureIO is pure virtual: false
+// QPictureIO has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPictureIO : public QPictureIO {
 public:
+  virtual ~MyQPictureIO() {}
+// void QPictureIO()
 MyQPictureIO() : QPictureIO() {}
+// void QPictureIO(class QIODevice *, const char *)
 MyQPictureIO(QIODevice * ioDevice, const char * format) : QPictureIO(ioDevice, format) {}
+// void QPictureIO(const class QString &, const char *)
 MyQPictureIO(const QString & fileName, const char * format) : QPictureIO(fileName, format) {}
 };
 
@@ -19,31 +24,28 @@ MyQPictureIO(const QString & fileName, const char * format) : QPictureIO(fileNam
 // /usr/include/qt/QtGui/qpicture.h:134
 // [-2] void QPictureIO()
 extern "C"
-void* C_ZN10QPictureIOC1Ev() {
-  (MyQPictureIO*)(0);
-  return  new MyQPictureIO();
+void* C_ZN10QPictureIOC2Ev() {
+  return  new QPictureIO();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:135
 // [-2] void QPictureIO(class QIODevice *, const char *)
 extern "C"
-void* C_ZN10QPictureIOC1EP9QIODevicePKc(QIODevice * ioDevice, const char * format) {
-  (MyQPictureIO*)(0);
-  return  new MyQPictureIO(ioDevice, format);
+void* C_ZN10QPictureIOC2EP9QIODevicePKc(QIODevice * ioDevice, const char * format) {
+  return  new QPictureIO(ioDevice, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:136
 // [-2] void QPictureIO(const class QString &, const char *)
 extern "C"
-void* C_ZN10QPictureIOC1ERK7QStringPKc(const QString & fileName, const char * format) {
-  (MyQPictureIO*)(0);
-  return  new MyQPictureIO(fileName, format);
+void* C_ZN10QPictureIOC2ERK7QStringPKc(const QString & fileName, const char * format) {
+  return  new QPictureIO(fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:137
 // [-2] void ~QPictureIO()
 extern "C"
-void C_ZN10QPictureIOD1Ev(void *this_) {
+void C_ZN10QPictureIOD2Ev(void *this_) {
   delete (QPictureIO*)(this_);
 }
 // Public Visibility=Default Availability=Available

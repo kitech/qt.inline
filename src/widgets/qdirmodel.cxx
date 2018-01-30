@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QDirModel is pure virtual: false
+// QDirModel has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDirModel : public QDirModel {
 public:
+  virtual ~MyQDirModel() {}
+// void QDirModel(class QObject *)
 MyQDirModel(QObject * parent) : QDirModel(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK9QDirModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdirmodel.h:70
 // [-2] void QDirModel(class QObject *)
 extern "C"
-void* C_ZN9QDirModelC1EP7QObject(QObject * parent) {
-  (MyQDirModel*)(0);
-  return  new MyQDirModel(parent);
+void* C_ZN9QDirModelC2EP7QObject(QObject * parent) {
+  return  new QDirModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:71
 // [-2] void ~QDirModel()
 extern "C"
-void C_ZN9QDirModelD1Ev(void *this_) {
+void C_ZN9QDirModelD2Ev(void *this_) {
   delete (QDirModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

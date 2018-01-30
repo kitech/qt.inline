@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QLineF is pure virtual: false
+// QLineF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLineF : public QLineF {
 public:
+  virtual ~MyQLineF() {}
+// void QLineF()
 MyQLineF() : QLineF() {}
+// void QLineF(const class QPointF &, const class QPointF &)
 MyQLineF(const QPointF & pt1, const QPointF & pt2) : QLineF(pt1, pt2) {}
+// void QLineF(qreal, qreal, qreal, qreal)
 MyQLineF(qreal x1, qreal y1, qreal x2, qreal y2) : QLineF(x1, y1, x2, y2) {}
+// void QLineF(const class QLine &)
 MyQLineF(const QLine & line) : QLineF(line) {}
 };
 
@@ -20,33 +26,29 @@ MyQLineF(const QLine & line) : QLineF(line) {}
 // /usr/include/qt/QtCore/qline.h:219
 // [-2] void QLineF()
 extern "C"
-void* C_ZN6QLineFC1Ev() {
-  (MyQLineF*)(0);
-  return  new MyQLineF();
+void* C_ZN6QLineFC2Ev() {
+  return  new QLineF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:220
 // [-2] void QLineF(const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN6QLineFC1ERK7QPointFS2_(const QPointF & pt1, const QPointF & pt2) {
-  (MyQLineF*)(0);
-  return  new MyQLineF(pt1, pt2);
+void* C_ZN6QLineFC2ERK7QPointFS2_(const QPointF & pt1, const QPointF & pt2) {
+  return  new QLineF(pt1, pt2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:221
 // [-2] void QLineF(qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN6QLineFC1Edddd(qreal x1, qreal y1, qreal x2, qreal y2) {
-  (MyQLineF*)(0);
-  return  new MyQLineF(x1, y1, x2, y2);
+void* C_ZN6QLineFC2Edddd(qreal x1, qreal y1, qreal x2, qreal y2) {
+  return  new QLineF(x1, y1, x2, y2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:222
 // [-2] void QLineF(const class QLine &)
 extern "C"
-void* C_ZN6QLineFC1ERK5QLine(const QLine & line) {
-  (MyQLineF*)(0);
-  return  new MyQLineF(line);
+void* C_ZN6QLineFC2ERK5QLine(const QLine & line) {
+  return  new QLineF(line);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:224

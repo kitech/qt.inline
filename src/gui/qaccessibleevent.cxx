@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QAccessibleEvent is pure virtual: false
+// QAccessibleEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleEvent : public QAccessibleEvent {
 public:
+  virtual ~MyQAccessibleEvent() {}
+// void QAccessibleEvent(class QObject *, class QAccessible::Event)
 MyQAccessibleEvent(QObject * obj, QAccessible::Event typ) : QAccessibleEvent(obj, typ) {}
+// void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
 MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAccessibleEvent(iface, typ) {}
 };
 
@@ -18,23 +22,21 @@ MyQAccessibleEvent(QAccessibleInterface * iface, QAccessible::Event typ) : QAcce
 // /usr/include/qt/QtGui/qaccessible.h:668
 // [-2] void QAccessibleEvent(class QObject *, class QAccessible::Event)
 extern "C"
-void* C_ZN16QAccessibleEventC1EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
-  (MyQAccessibleEvent*)(0);
-  return  new MyQAccessibleEvent(obj, typ);
+void* C_ZN16QAccessibleEventC2EP7QObjectN11QAccessible5EventE(QObject * obj, QAccessible::Event typ) {
+  return  new QAccessibleEvent(obj, typ);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:684
 // [-2] void QAccessibleEvent(class QAccessibleInterface *, class QAccessible::Event)
 extern "C"
-void* C_ZN16QAccessibleEventC1EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
-  (MyQAccessibleEvent*)(0);
-  return  new MyQAccessibleEvent(iface, typ);
+void* C_ZN16QAccessibleEventC2EP20QAccessibleInterfaceN11QAccessible5EventE(QAccessibleInterface * iface, QAccessible::Event typ) {
+  return  new QAccessibleEvent(iface, typ);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:699
 // [-2] void ~QAccessibleEvent()
 extern "C"
-void C_ZN16QAccessibleEventD1Ev(void *this_) {
+void C_ZN16QAccessibleEventD2Ev(void *this_) {
   delete (QAccessibleEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

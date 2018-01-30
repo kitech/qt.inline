@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QMouseEvent is pure virtual: false
+// QMouseEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMouseEvent : public QMouseEvent {
 public:
+  virtual ~MyQMouseEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:118
 // [-2] void ~QMouseEvent()
 extern "C"
-void C_ZN11QMouseEventD1Ev(void *this_) {
+void C_ZN11QMouseEventD2Ev(void *this_) {
   delete (QMouseEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QCloseEvent is pure virtual: false
+// QCloseEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCloseEvent : public QCloseEvent {
 public:
+  virtual ~MyQCloseEvent() {}
+// void QCloseEvent()
 MyQCloseEvent() : QCloseEvent() {}
 };
 
@@ -17,15 +20,14 @@ MyQCloseEvent() : QCloseEvent() {}
 // /usr/include/qt/QtGui/qevent.h:477
 // [-2] void QCloseEvent()
 extern "C"
-void* C_ZN11QCloseEventC1Ev() {
-  (MyQCloseEvent*)(0);
-  return  new MyQCloseEvent();
+void* C_ZN11QCloseEventC2Ev() {
+  return  new QCloseEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:478
 // [-2] void ~QCloseEvent()
 extern "C"
-void C_ZN11QCloseEventD1Ev(void *this_) {
+void C_ZN11QCloseEventD2Ev(void *this_) {
   delete (QCloseEvent*)(this_);
 }
 //  main block end

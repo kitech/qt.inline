@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QPen is pure virtual: false
+// QPen has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPen : public QPen {
 public:
+  virtual ~MyQPen() {}
+// void QPen()
 MyQPen() : QPen() {}
+// void QPen(Qt::PenStyle)
 MyQPen(Qt::PenStyle arg0) : QPen(arg0) {}
+// void QPen(const class QColor &)
 MyQPen(const QColor & color) : QPen(color) {}
+// void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 MyQPen(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) : QPen(brush, width, s, c, j) {}
 };
 
@@ -20,39 +26,35 @@ MyQPen(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt:
 // /usr/include/qt/QtGui/qpen.h:63
 // [-2] void QPen()
 extern "C"
-void* C_ZN4QPenC1Ev() {
-  (MyQPen*)(0);
-  return  new MyQPen();
+void* C_ZN4QPenC2Ev() {
+  return  new QPen();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:64
 // [-2] void QPen(Qt::PenStyle)
 extern "C"
-void* C_ZN4QPenC1EN2Qt8PenStyleE(Qt::PenStyle arg0) {
-  (MyQPen*)(0);
-  return  new MyQPen(arg0);
+void* C_ZN4QPenC2EN2Qt8PenStyleE(Qt::PenStyle arg0) {
+  return  new QPen(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:65
 // [-2] void QPen(const class QColor &)
 extern "C"
-void* C_ZN4QPenC1ERK6QColor(const QColor & color) {
-  (MyQPen*)(0);
-  return  new MyQPen(color);
+void* C_ZN4QPenC2ERK6QColor(const QColor & color) {
+  return  new QPen(color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:66
 // [-2] void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 extern "C"
-void* C_ZN4QPenC1ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
-  (MyQPen*)(0);
-  return  new MyQPen(brush, width, s, c, j);
+void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
+  return  new QPen(brush, width, s, c, j);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:70
 // [-2] void ~QPen()
 extern "C"
-void C_ZN4QPenD1Ev(void *this_) {
+void C_ZN4QPenD2Ev(void *this_) {
   delete (QPen*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

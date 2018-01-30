@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QFont is pure virtual: false
+// QFont has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFont : public QFont {
 public:
+  virtual ~MyQFont() {}
+// void QFont()
 MyQFont() : QFont() {}
+// void QFont(const class QString &, int, int, _Bool)
 MyQFont(const QString & family, int pointSize, int weight, bool italic) : QFont(family, pointSize, weight, italic) {}
+// void QFont(const class QFont &, class QPaintDevice *)
 MyQFont(const QFont & arg0, QPaintDevice * pd) : QFont(arg0, pd) {}
 };
 
@@ -19,31 +24,28 @@ MyQFont(const QFont & arg0, QPaintDevice * pd) : QFont(arg0, pd) {}
 // /usr/include/qt/QtGui/qfont.h:170
 // [-2] void QFont()
 extern "C"
-void* C_ZN5QFontC1Ev() {
-  (MyQFont*)(0);
-  return  new MyQFont();
+void* C_ZN5QFontC2Ev() {
+  return  new QFont();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:171
 // [-2] void QFont(const class QString &, int, int, _Bool)
 extern "C"
-void* C_ZN5QFontC1ERK7QStringiib(const QString & family, int pointSize, int weight, bool italic) {
-  (MyQFont*)(0);
-  return  new MyQFont(family, pointSize, weight, italic);
+void* C_ZN5QFontC2ERK7QStringiib(const QString & family, int pointSize, int weight, bool italic) {
+  return  new QFont(family, pointSize, weight, italic);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:172
 // [-2] void QFont(const class QFont &, class QPaintDevice *)
 extern "C"
-void* C_ZN5QFontC1ERKS_P12QPaintDevice(const QFont & arg0, QPaintDevice * pd) {
-  (MyQFont*)(0);
-  return  new MyQFont(arg0, pd);
+void* C_ZN5QFontC2ERKS_P12QPaintDevice(const QFont & arg0, QPaintDevice * pd) {
+  return  new QFont(arg0, pd);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:174
 // [-2] void ~QFont()
 extern "C"
-void C_ZN5QFontD1Ev(void *this_) {
+void C_ZN5QFontD2Ev(void *this_) {
   delete (QFont*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

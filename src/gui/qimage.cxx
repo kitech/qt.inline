@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QImage is pure virtual: false
+// QImage has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,106 +67,120 @@ extern "C" void set_callback_ZNK6QImage12smoothScaledEii(void*cbfn)
 
 class MyQImage : public QImage {
 public:
+  virtual ~MyQImage() {}
+// void QImage()
 MyQImage() : QImage() {}
+// void QImage(const class QSize &, enum QImage::Format)
 MyQImage(const QSize & size, QImage::Format format) : QImage(size, format) {}
+// void QImage(int, int, enum QImage::Format)
 MyQImage(int width, int height, QImage::Format format) : QImage(width, height, format) {}
-MyQImage(void *xpm) : QImage((char**)xpm) {}
+// void QImage(const char *const *)
+MyQImage(char** xpm) : QImage(xpm) {}
+// void QImage(const class QString &, const char *)
 MyQImage(const QString & fileName, const char * format) : QImage(fileName, format) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
-// int metric(enum QPaintDevice::PaintDeviceMetric)
-virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
-  if (callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-  // callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(metric);
-}}
+  virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
+    if (callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
+      // callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(metric);
+    }
+    return QImage::metric(metric);
+  }
 // QImage mirrored_helper(_Bool, _Bool)
-// QImage mirrored_helper(_Bool, _Bool)
-virtual QImage mirrored_helper(bool horizontal, bool vertical) {
-  if (callback_ZNK6QImage15mirrored_helperEbb != 0) {
-  // callback_ZNK6QImage15mirrored_helperEbb(horizontal, vertical);
-}}
+  virtual QImage mirrored_helper(bool horizontal, bool vertical) {
+    if (callback_ZNK6QImage15mirrored_helperEbb != 0) {
+      // callback_ZNK6QImage15mirrored_helperEbb(horizontal, vertical);
+    }
+    return QImage::mirrored_helper(horizontal, vertical);
+  }
 // QImage rgbSwapped_helper()
-// QImage rgbSwapped_helper()
-virtual QImage rgbSwapped_helper() {
-  if (callback_ZNK6QImage17rgbSwapped_helperEv != 0) {
-  // callback_ZNK6QImage17rgbSwapped_helperEv();
-}}
+  virtual QImage rgbSwapped_helper() {
+    if (callback_ZNK6QImage17rgbSwapped_helperEv != 0) {
+      // callback_ZNK6QImage17rgbSwapped_helperEv();
+    }
+    return QImage::rgbSwapped_helper();
+  }
 // void mirrored_inplace(_Bool, _Bool)
-// void mirrored_inplace(_Bool, _Bool)
-virtual void mirrored_inplace(bool horizontal, bool vertical) {
-  if (callback_ZN6QImage16mirrored_inplaceEbb != 0) {
-  // callback_ZN6QImage16mirrored_inplaceEbb(horizontal, vertical);
-}}
+  virtual void mirrored_inplace(bool horizontal, bool vertical) {
+    if (callback_ZN6QImage16mirrored_inplaceEbb != 0) {
+      // callback_ZN6QImage16mirrored_inplaceEbb(horizontal, vertical);
+    }
+    QImage::mirrored_inplace(horizontal, vertical);
+  }
 // void rgbSwapped_inplace()
-// void rgbSwapped_inplace()
-virtual void rgbSwapped_inplace() {
-  if (callback_ZN6QImage18rgbSwapped_inplaceEv != 0) {
-  // callback_ZN6QImage18rgbSwapped_inplaceEv();
-}}
+  virtual void rgbSwapped_inplace() {
+    if (callback_ZN6QImage18rgbSwapped_inplaceEv != 0) {
+      // callback_ZN6QImage18rgbSwapped_inplaceEv();
+    }
+    QImage::rgbSwapped_inplace();
+  }
 // QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
-// QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
-virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
-  if (callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
-  // callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
-}}
+  virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
+    if (callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
+      // callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
+    }
+    return QImage::convertToFormat_helper(format, flags);
+  }
 // bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
-// bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
-virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
-  if (callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
-  // callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
-}}
+  virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
+    if (callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
+      // callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
+    }
+    return QImage::convertToFormat_inplace(format, flags);
+  }
 // QImage smoothScaled(int, int)
-// QImage smoothScaled(int, int)
-virtual QImage smoothScaled(int w, int h) {
-  if (callback_ZNK6QImage12smoothScaledEii != 0) {
-  // callback_ZNK6QImage12smoothScaledEii(w, h);
-}}
+  virtual QImage smoothScaled(int w, int h) {
+    if (callback_ZNK6QImage12smoothScaledEii != 0) {
+      // callback_ZNK6QImage12smoothScaledEii(w, h);
+    }
+    return QImage::smoothScaled(w, h);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:136
 // [-2] void QImage()
 extern "C"
-void* C_ZN6QImageC1Ev() {
-  (MyQImage*)(0);
+void* C_ZN6QImageC2Ev() {
+  auto _nilp = (MyQImage*)(0);
   return  new MyQImage();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:137
 // [-2] void QImage(const class QSize &, enum QImage::Format)
 extern "C"
-void* C_ZN6QImageC1ERK5QSizeNS_6FormatE(const QSize & size, QImage::Format format) {
-  (MyQImage*)(0);
+void* C_ZN6QImageC2ERK5QSizeNS_6FormatE(const QSize & size, QImage::Format format) {
+  auto _nilp = (MyQImage*)(0);
   return  new MyQImage(size, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:138
 // [-2] void QImage(int, int, enum QImage::Format)
 extern "C"
-void* C_ZN6QImageC1EiiNS_6FormatE(int width, int height, QImage::Format format) {
-  (MyQImage*)(0);
+void* C_ZN6QImageC2EiiNS_6FormatE(int width, int height, QImage::Format format) {
+  auto _nilp = (MyQImage*)(0);
   return  new MyQImage(width, height, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:145
 // [-2] void QImage(const char *const *)
 extern "C"
-void* C_ZN6QImageC1EPKPKc(void *xpm) {
-  (MyQImage*)(0);
-  return  new MyQImage((char**)xpm);
+void* C_ZN6QImageC2EPKPKc(char** xpm) {
+  auto _nilp = (MyQImage*)(0);
+  return  new MyQImage(xpm);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:147
 // [-2] void QImage(const class QString &, const char *)
 extern "C"
-void* C_ZN6QImageC1ERK7QStringPKc(const QString & fileName, const char * format) {
-  (MyQImage*)(0);
+void* C_ZN6QImageC2ERK7QStringPKc(const QString & fileName, const char * format) {
+  auto _nilp = (MyQImage*)(0);
   return  new MyQImage(fileName, format);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:155
 // [-2] void ~QImage()
 extern "C"
-void C_ZN6QImageD1Ev(void *this_) {
+void C_ZN6QImageD2Ev(void *this_) {
   delete (QImage*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -818,7 +833,7 @@ return new QPixelFormat(rv);
 // /usr/include/qt/QtGui/qimage.h:330
 // [4] QImage::Format toImageFormat(class QPixelFormat)
 extern "C"
-QImage::Format C_ZN6QImage13toImageFormatE12QPixelFormat(QPixelFormat format) {
-  return (QImage::Format)QImage::toImageFormat(format);
+QImage::Format C_ZN6QImage13toImageFormatE12QPixelFormat(QPixelFormat* format) {
+  return (QImage::Format)QImage::toImageFormat(*format);
 }
 //  main block end

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QWizardPage is pure virtual: false
+// QWizardPage has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZNK11QWizardPage6wizardEv(void*cbfn)
 
 class MyQWizardPage : public QWizardPage {
 public:
+  virtual ~MyQWizardPage() {}
+// void QWizardPage(class QWidget *)
 MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
 // void setField(const class QString &, const class QVariant &)
-// void setField(const class QString &, const class QVariant &)
-virtual void setField(const QString & name, const QVariant & value) {
-  if (callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant != 0) {
-  // callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(name, value);
-}}
+  virtual void setField(const QString & name, const QVariant & value) {
+    if (callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant != 0) {
+      // callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(name, value);
+    }
+    QWizardPage::setField(name, value);
+  }
 // QVariant field(const class QString &)
-// QVariant field(const class QString &)
-virtual QVariant field(const QString & name) {
-  if (callback_ZNK11QWizardPage5fieldERK7QString != 0) {
-  // callback_ZNK11QWizardPage5fieldERK7QString(name);
-}}
+  virtual QVariant field(const QString & name) {
+    if (callback_ZNK11QWizardPage5fieldERK7QString != 0) {
+      // callback_ZNK11QWizardPage5fieldERK7QString(name);
+    }
+    return QWizardPage::field(name);
+  }
 // void registerField(const class QString &, class QWidget *, const char *, const char *)
-// void registerField(const class QString &, class QWidget *, const char *, const char *)
-virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
-  if (callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_ != 0) {
-  // callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(name, widget, property, changedSignal);
-}}
+  virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
+    if (callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_ != 0) {
+      // callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(name, widget, property, changedSignal);
+    }
+    QWizardPage::registerField(name, widget, property, changedSignal);
+  }
 // QWizard * wizard()
-// QWizard * wizard()
-virtual QWizard * wizard() {
-  if (callback_ZNK11QWizardPage6wizardEv != 0) {
-  // callback_ZNK11QWizardPage6wizardEv();
-}}
+  virtual QWizard * wizard() {
+    if (callback_ZNK11QWizardPage6wizardEv != 0) {
+      // callback_ZNK11QWizardPage6wizardEv();
+    }
+    return QWizardPage::wizard();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -76,15 +83,15 @@ void* C_ZNK11QWizardPage10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwizard.h:218
 // [-2] void QWizardPage(class QWidget *)
 extern "C"
-void* C_ZN11QWizardPageC1EP7QWidget(QWidget * parent) {
-  (MyQWizardPage*)(0);
+void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQWizardPage*)(0);
   return  new MyQWizardPage(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:219
 // [-2] void ~QWizardPage()
 extern "C"
-void C_ZN11QWizardPageD1Ev(void *this_) {
+void C_ZN11QWizardPageD2Ev(void *this_) {
   delete (QWizardPage*)(this_);
 }
 // Public Visibility=Default Availability=Available

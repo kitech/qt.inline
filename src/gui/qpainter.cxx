@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QPainter is pure virtual: false
+// QPainter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPainter : public QPainter {
 public:
+  virtual ~MyQPainter() {}
+// void QPainter()
 MyQPainter() : QPainter() {}
+// void QPainter(class QPaintDevice *)
 MyQPainter(QPaintDevice * arg0) : QPainter(arg0) {}
 };
 
@@ -18,23 +22,21 @@ MyQPainter(QPaintDevice * arg0) : QPainter(arg0) {}
 // /usr/include/qt/QtGui/qpainter.h:124
 // [-2] void QPainter()
 extern "C"
-void* C_ZN8QPainterC1Ev() {
-  (MyQPainter*)(0);
-  return  new MyQPainter();
+void* C_ZN8QPainterC2Ev() {
+  return  new QPainter();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:125
 // [-2] void QPainter(class QPaintDevice *)
 extern "C"
-void* C_ZN8QPainterC1EP12QPaintDevice(QPaintDevice * arg0) {
-  (MyQPainter*)(0);
-  return  new MyQPainter(arg0);
+void* C_ZN8QPainterC2EP12QPaintDevice(QPaintDevice * arg0) {
+  return  new QPainter(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:126
 // [-2] void ~QPainter()
 extern "C"
-void C_ZN8QPainterD1Ev(void *this_) {
+void C_ZN8QPainterD2Ev(void *this_) {
   delete (QPainter*)(this_);
 }
 // Public Visibility=Default Availability=Available

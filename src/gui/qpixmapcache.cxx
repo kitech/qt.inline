@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QPixmapCache is pure virtual: false
+// QPixmapCache has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPixmapCache : public QPixmapCache {
 public:
+  virtual ~MyQPixmapCache() {}
 };
 
 // Public static Visibility=Default Availability=Available

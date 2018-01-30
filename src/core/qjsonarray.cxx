@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QJsonArray is pure virtual: false
+// QJsonArray has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQJsonArray : public QJsonArray {
 public:
+  virtual ~MyQJsonArray() {}
+// void QJsonArray()
 MyQJsonArray() : QJsonArray() {}
 };
 
@@ -17,15 +20,14 @@ MyQJsonArray() : QJsonArray() {}
 // /usr/include/qt/QtCore/qjsonarray.h:59
 // [-2] void QJsonArray()
 extern "C"
-void* C_ZN10QJsonArrayC1Ev() {
-  (MyQJsonArray*)(0);
-  return  new MyQJsonArray();
+void* C_ZN10QJsonArrayC2Ev() {
+  return  new QJsonArray();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:70
 // [-2] void ~QJsonArray()
 extern "C"
-void C_ZN10QJsonArrayD1Ev(void *this_) {
+void C_ZN10QJsonArrayD2Ev(void *this_) {
   delete (QJsonArray*)(this_);
 }
 // Public static Visibility=Default Availability=Available

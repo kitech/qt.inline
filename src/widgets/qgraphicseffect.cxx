@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsEffect is pure virtual: true
+// QGraphicsEffect has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,49 +60,58 @@ extern "C" void set_callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16Coordinate
 
 class MyQGraphicsEffect : public QGraphicsEffect {
 public:
+  virtual ~MyQGraphicsEffect() {}
+// void QGraphicsEffect(class QObject *)
 MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void draw(class QPainter *)
-// void draw(class QPainter *)
-virtual void draw(QPainter * painter) {
-  if (callback_ZN15QGraphicsEffect4drawEP8QPainter != 0) {
-  // callback_ZN15QGraphicsEffect4drawEP8QPainter(painter);
-}}
+  virtual void draw(QPainter * painter) {
+    if (callback_ZN15QGraphicsEffect4drawEP8QPainter != 0) {
+      // callback_ZN15QGraphicsEffect4drawEP8QPainter(painter);
+    }
+    QGraphicsEffect::draw(painter);
+  }
 // void sourceChanged(QGraphicsEffect::ChangeFlags)
-// void sourceChanged(QGraphicsEffect::ChangeFlags)
-virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
-  if (callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE != 0) {
-  // callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(flags);
-}}
+  virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
+    if (callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE != 0) {
+      // callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(flags);
+    }
+    QGraphicsEffect::sourceChanged(flags);
+  }
 // void updateBoundingRect()
-// void updateBoundingRect()
-virtual void updateBoundingRect() {
-  if (callback_ZN15QGraphicsEffect18updateBoundingRectEv != 0) {
-  // callback_ZN15QGraphicsEffect18updateBoundingRectEv();
-}}
+  virtual void updateBoundingRect() {
+    if (callback_ZN15QGraphicsEffect18updateBoundingRectEv != 0) {
+      // callback_ZN15QGraphicsEffect18updateBoundingRectEv();
+    }
+    QGraphicsEffect::updateBoundingRect();
+  }
 // bool sourceIsPixmap()
-// bool sourceIsPixmap()
-virtual bool sourceIsPixmap() {
-  if (callback_ZNK15QGraphicsEffect14sourceIsPixmapEv != 0) {
-  // callback_ZNK15QGraphicsEffect14sourceIsPixmapEv();
-}}
+  virtual bool sourceIsPixmap() {
+    if (callback_ZNK15QGraphicsEffect14sourceIsPixmapEv != 0) {
+      // callback_ZNK15QGraphicsEffect14sourceIsPixmapEv();
+    }
+    return QGraphicsEffect::sourceIsPixmap();
+  }
 // QRectF sourceBoundingRect(Qt::CoordinateSystem)
-// QRectF sourceBoundingRect(Qt::CoordinateSystem)
-virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
-  if (callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE != 0) {
-  // callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(system);
-}}
+  virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
+    if (callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE != 0) {
+      // callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(system);
+    }
+    return QGraphicsEffect::sourceBoundingRect(system);
+  }
 // void drawSource(class QPainter *)
-// void drawSource(class QPainter *)
-virtual void drawSource(QPainter * painter) {
-  if (callback_ZN15QGraphicsEffect10drawSourceEP8QPainter != 0) {
-  // callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(painter);
-}}
+  virtual void drawSource(QPainter * painter) {
+    if (callback_ZN15QGraphicsEffect10drawSourceEP8QPainter != 0) {
+      // callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(painter);
+    }
+    QGraphicsEffect::drawSource(painter);
+  }
 // QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
-// QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
-virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
-  if (callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE != 0) {
-  // callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(system, offset, mode);
-}}
+  virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
+    if (callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE != 0) {
+      // callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(system, offset, mode);
+    }
+    return QGraphicsEffect::sourcePixmap(system, offset, mode);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -116,14 +126,14 @@ void* C_ZNK15QGraphicsEffect10metaObjectEv(void *this_) {
 // [-2] void QGraphicsEffect(class QObject *)
 extern "C"
 void* C_ZN15QGraphicsEffectC1EP7QObject(QObject * parent) {
-  (MyQGraphicsEffect*)(0);
+  auto _nilp = (MyQGraphicsEffect*)(0);
   return 0; // new MyQGraphicsEffect(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:83
 // [-2] void ~QGraphicsEffect()
 extern "C"
-void C_ZN15QGraphicsEffectD1Ev(void *this_) {
+void C_ZN15QGraphicsEffectD2Ev(void *this_) {
   delete (QGraphicsEffect*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

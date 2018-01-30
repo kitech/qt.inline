@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QPixmap is pure virtual: false
+// QPixmap has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,70 +25,78 @@ extern "C" void set_callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19
 
 class MyQPixmap : public QPixmap {
 public:
+  virtual ~MyQPixmap() {}
+// void QPixmap()
 MyQPixmap() : QPixmap() {}
+// void QPixmap(int, int)
 MyQPixmap(int w, int h) : QPixmap(w, h) {}
+// void QPixmap(const class QSize &)
 MyQPixmap(const QSize & arg0) : QPixmap(arg0) {}
+// void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
 MyQPixmap(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) : QPixmap(fileName, format, flags) {}
-MyQPixmap(void *xpm) : QPixmap((char**)xpm) {}
+// void QPixmap(const char *const *)
+MyQPixmap(char** xpm) : QPixmap(xpm) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
-// int metric(enum QPaintDevice::PaintDeviceMetric)
-virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
-  if (callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-  // callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(arg0);
-}}
+  virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
+    if (callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
+      // callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(arg0);
+    }
+    return QPixmap::metric(arg0);
+  }
 // QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
-// QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
-virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
-  if (callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
-  // callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(image, flags);
-}}
+  virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
+    if (callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
+      // callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(image, flags);
+    }
+    return QPixmap::fromImageInPlace(image, flags);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:64
 // [-2] void QPixmap()
 extern "C"
-void* C_ZN7QPixmapC1Ev() {
-  (MyQPixmap*)(0);
+void* C_ZN7QPixmapC2Ev() {
+  auto _nilp = (MyQPixmap*)(0);
   return  new MyQPixmap();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:66
 // [-2] void QPixmap(int, int)
 extern "C"
-void* C_ZN7QPixmapC1Eii(int w, int h) {
-  (MyQPixmap*)(0);
+void* C_ZN7QPixmapC2Eii(int w, int h) {
+  auto _nilp = (MyQPixmap*)(0);
   return  new MyQPixmap(w, h);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:67
 // [-2] void QPixmap(const class QSize &)
 extern "C"
-void* C_ZN7QPixmapC1ERK5QSize(const QSize & arg0) {
-  (MyQPixmap*)(0);
+void* C_ZN7QPixmapC2ERK5QSize(const QSize & arg0) {
+  auto _nilp = (MyQPixmap*)(0);
   return  new MyQPixmap(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:68
 // [-2] void QPixmap(const class QString &, const char *, Qt::ImageConversionFlags)
 extern "C"
-void* C_ZN7QPixmapC1ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
-  (MyQPixmap*)(0);
+void* C_ZN7QPixmapC2ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags) {
+  auto _nilp = (MyQPixmap*)(0);
   return  new MyQPixmap(fileName, format, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:70
 // [-2] void QPixmap(const char *const *)
 extern "C"
-void* C_ZN7QPixmapC1EPKPKc(void *xpm) {
-  (MyQPixmap*)(0);
-  return  new MyQPixmap((char**)xpm);
+void* C_ZN7QPixmapC2EPKPKc(char** xpm) {
+  auto _nilp = (MyQPixmap*)(0);
+  return  new MyQPixmap(xpm);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:73
 // [-2] void ~QPixmap()
 extern "C"
-void C_ZN7QPixmapD1Ev(void *this_) {
+void C_ZN7QPixmapD2Ev(void *this_) {
   delete (QPixmap*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

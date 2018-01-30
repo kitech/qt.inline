@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QObjectCleanupHandler is pure virtual: false
+// QObjectCleanupHandler has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQObjectCleanupHandler : public QObjectCleanupHandler {
 public:
+  virtual ~MyQObjectCleanupHandler() {}
+// void QObjectCleanupHandler()
 MyQObjectCleanupHandler() : QObjectCleanupHandler() {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK21QObjectCleanupHandler10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:53
 // [-2] void QObjectCleanupHandler()
 extern "C"
-void* C_ZN21QObjectCleanupHandlerC1Ev() {
-  (MyQObjectCleanupHandler*)(0);
-  return  new MyQObjectCleanupHandler();
+void* C_ZN21QObjectCleanupHandlerC2Ev() {
+  return  new QObjectCleanupHandler();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h:54
 // [-2] void ~QObjectCleanupHandler()
 extern "C"
-void C_ZN21QObjectCleanupHandlerD1Ev(void *this_) {
+void C_ZN21QObjectCleanupHandlerD2Ev(void *this_) {
   delete (QObjectCleanupHandler*)(this_);
 }
 // Public Visibility=Default Availability=Available

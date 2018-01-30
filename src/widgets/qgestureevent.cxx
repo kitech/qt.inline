@@ -4,19 +4,21 @@
 #include <QtWidgets>
 
 // QGestureEvent is pure virtual: false
+// QGestureEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGestureEvent : public QGestureEvent {
 public:
+  virtual ~MyQGestureEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:278
 // [-2] void ~QGestureEvent()
 extern "C"
-void C_ZN13QGestureEventD1Ev(void *this_) {
+void C_ZN13QGestureEventD2Ev(void *this_) {
   delete (QGestureEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

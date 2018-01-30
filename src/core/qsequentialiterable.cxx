@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QSequentialIterable is pure virtual: false
+// QSequentialIterable has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSequentialIterable : public QSequentialIterable {
 public:
+  virtual ~MyQSequentialIterable() {}
 };
 
 // Public Visibility=Default Availability=Available

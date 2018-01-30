@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QActionGroup is pure virtual: false
+// QActionGroup has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQActionGroup : public QActionGroup {
 public:
+  virtual ~MyQActionGroup() {}
+// void QActionGroup(class QObject *)
 MyQActionGroup(QObject * parent) : QActionGroup(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK12QActionGroup10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qactiongroup.h:63
 // [-2] void QActionGroup(class QObject *)
 extern "C"
-void* C_ZN12QActionGroupC1EP7QObject(QObject * parent) {
-  (MyQActionGroup*)(0);
-  return  new MyQActionGroup(parent);
+void* C_ZN12QActionGroupC2EP7QObject(QObject * parent) {
+  return  new QActionGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:64
 // [-2] void ~QActionGroup()
 extern "C"
-void C_ZN12QActionGroupD1Ev(void *this_) {
+void C_ZN12QActionGroupD2Ev(void *this_) {
   delete (QActionGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

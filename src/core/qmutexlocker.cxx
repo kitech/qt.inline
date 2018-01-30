@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMutexLocker is pure virtual: false
+// QMutexLocker has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMutexLocker : public QMutexLocker {
 public:
+  virtual ~MyQMutexLocker() {}
+// void QMutexLocker(class QBasicMutex *)
 MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
 };
 
@@ -17,15 +20,14 @@ MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
 // /usr/include/qt/QtCore/qmutex.h:199
 // [-2] void QMutexLocker(class QBasicMutex *)
 extern "C"
-void* C_ZN12QMutexLockerC1EP11QBasicMutex(QBasicMutex * m) {
-  (MyQMutexLocker*)(0);
-  return  new MyQMutexLocker(m);
+void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
+  return  new QMutexLocker(m);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:213
 // [-2] void ~QMutexLocker()
 extern "C"
-void C_ZN12QMutexLockerD1Ev(void *this_) {
+void C_ZN12QMutexLockerD2Ev(void *this_) {
   delete (QMutexLocker*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

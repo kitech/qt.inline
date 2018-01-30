@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QDesktopServices is pure virtual: false
+// QDesktopServices has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDesktopServices : public QDesktopServices {
 public:
+  virtual ~MyQDesktopServices() {}
 };
 
 // Public static Visibility=Default Availability=Available

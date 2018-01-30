@@ -4,12 +4,14 @@
 #include <QtWidgets>
 
 // QGraphicsAnchor is pure virtual: false
+// QGraphicsAnchor has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsAnchor : public QGraphicsAnchor {
 public:
+  virtual ~MyQGraphicsAnchor() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -58,7 +60,7 @@ QSizePolicy::Policy C_ZNK15QGraphicsAnchor10sizePolicyEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:66
 // [-2] void ~QGraphicsAnchor()
 extern "C"
-void C_ZN15QGraphicsAnchorD1Ev(void *this_) {
+void C_ZN15QGraphicsAnchorD2Ev(void *this_) {
   delete (QGraphicsAnchor*)(this_);
 }
 //  main block end

@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QDateEdit is pure virtual: false
+// QDateEdit has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDateEdit : public QDateEdit {
 public:
+  virtual ~MyQDateEdit() {}
+// void QDateEdit(class QWidget *)
 MyQDateEdit(QWidget * parent) : QDateEdit(parent) {}
+// void QDateEdit(const class QDate &, class QWidget *)
 MyQDateEdit(const QDate & date, QWidget * parent) : QDateEdit(date, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK9QDateEdit10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:220
 // [-2] void QDateEdit(class QWidget *)
 extern "C"
-void* C_ZN9QDateEditC1EP7QWidget(QWidget * parent) {
-  (MyQDateEdit*)(0);
-  return  new MyQDateEdit(parent);
+void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
+  return  new QDateEdit(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:221
 // [-2] void QDateEdit(const class QDate &, class QWidget *)
 extern "C"
-void* C_ZN9QDateEditC1ERK5QDateP7QWidget(const QDate & date, QWidget * parent) {
-  (MyQDateEdit*)(0);
-  return  new MyQDateEdit(date, parent);
+void* C_ZN9QDateEditC2ERK5QDateP7QWidget(const QDate & date, QWidget * parent) {
+  return  new QDateEdit(date, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:222
 // [-2] void ~QDateEdit()
 extern "C"
-void C_ZN9QDateEditD1Ev(void *this_) {
+void C_ZN9QDateEditD2Ev(void *this_) {
   delete (QDateEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available

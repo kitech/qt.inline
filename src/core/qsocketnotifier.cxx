@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QSocketNotifier is pure virtual: false
+// QSocketNotifier has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN15QSocketNotifier5eventEP6QEvent(void*cbfn)
 
 class MyQSocketNotifier : public QSocketNotifier {
 public:
+  virtual ~MyQSocketNotifier() {}
+// void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
 MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) : QSocketNotifier(socket, arg1, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN15QSocketNotifier5eventEP6QEvent != 0) {
-  // callback_ZN15QSocketNotifier5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN15QSocketNotifier5eventEP6QEvent != 0) {
+      // callback_ZN15QSocketNotifier5eventEP6QEvent(arg0);
+    }
+    return QSocketNotifier::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK15QSocketNotifier10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsocketnotifier.h:56
 // [-2] void QSocketNotifier(qintptr, enum QSocketNotifier::Type, class QObject *)
 extern "C"
-void* C_ZN15QSocketNotifierC1ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) {
-  (MyQSocketNotifier*)(0);
+void* C_ZN15QSocketNotifierC2ExNS_4TypeEP7QObject(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) {
+  auto _nilp = (MyQSocketNotifier*)(0);
   return  new MyQSocketNotifier(socket, arg1, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:57
 // [-2] void ~QSocketNotifier()
 extern "C"
-void C_ZN15QSocketNotifierD1Ev(void *this_) {
+void C_ZN15QSocketNotifierD2Ev(void *this_) {
   delete (QSocketNotifier*)(this_);
 }
 // Public Visibility=Default Availability=Available

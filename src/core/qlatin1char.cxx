@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QLatin1Char is pure virtual: false
+// QLatin1Char has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLatin1Char : public QLatin1Char {
 public:
+  virtual ~MyQLatin1Char() {}
+// void QLatin1Char(char)
 MyQLatin1Char(char c) : QLatin1Char(c) {}
 };
 
@@ -17,9 +20,8 @@ MyQLatin1Char(char c) : QLatin1Char(c) {}
 // /usr/include/qt/QtCore/qchar.h:53
 // [-2] void QLatin1Char(char)
 extern "C"
-void* C_ZN11QLatin1CharC1Ec(char c) {
-  (MyQLatin1Char*)(0);
-  return  new MyQLatin1Char(c);
+void* C_ZN11QLatin1CharC2Ec(char c) {
+  return  new QLatin1Char(c);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:54

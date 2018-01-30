@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QFocusEvent is pure virtual: false
+// QFocusEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFocusEvent : public QFocusEvent {
 public:
+  virtual ~MyQFocusEvent() {}
+// void QFocusEvent(enum QEvent::Type, Qt::FocusReason)
 MyQFocusEvent(QEvent::Type type, Qt::FocusReason reason) : QFocusEvent(type, reason) {}
 };
 
@@ -17,15 +20,14 @@ MyQFocusEvent(QEvent::Type type, Qt::FocusReason reason) : QFocusEvent(type, rea
 // /usr/include/qt/QtGui/qevent.h:389
 // [-2] void QFocusEvent(enum QEvent::Type, Qt::FocusReason)
 extern "C"
-void* C_ZN11QFocusEventC1EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type, Qt::FocusReason reason) {
-  (MyQFocusEvent*)(0);
-  return  new MyQFocusEvent(type, reason);
+void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type, Qt::FocusReason reason) {
+  return  new QFocusEvent(type, reason);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:390
 // [-2] void ~QFocusEvent()
 extern "C"
-void C_ZN11QFocusEventD1Ev(void *this_) {
+void C_ZN11QFocusEventD2Ev(void *this_) {
   delete (QFocusEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

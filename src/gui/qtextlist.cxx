@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextList is pure virtual: false
+// QTextList has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextList : public QTextList {
 public:
+  virtual ~MyQTextList() {}
+// void QTextList(class QTextDocument *)
 MyQTextList(QTextDocument * doc) : QTextList(doc) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK9QTextList10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qtextlist.h:57
 // [-2] void QTextList(class QTextDocument *)
 extern "C"
-void* C_ZN9QTextListC1EP13QTextDocument(QTextDocument * doc) {
-  (MyQTextList*)(0);
-  return  new MyQTextList(doc);
+void* C_ZN9QTextListC2EP13QTextDocument(QTextDocument * doc) {
+  return  new QTextList(doc);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:58
 // [-2] void ~QTextList()
 extern "C"
-void C_ZN9QTextListD1Ev(void *this_) {
+void C_ZN9QTextListD2Ev(void *this_) {
   delete (QTextList*)(this_);
 }
 // Public Visibility=Default Availability=Available

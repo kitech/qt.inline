@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneHoverEvent is pure virtual: false
+// QGraphicsSceneHoverEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneHoverEvent : public QGraphicsSceneHoverEvent {
 public:
+  virtual ~MyQGraphicsSceneHoverEvent() {}
+// void QGraphicsSceneHoverEvent(enum QEvent::Type)
 MyQGraphicsSceneHoverEvent(QEvent::Type type) : QGraphicsSceneHoverEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneHoverEvent(QEvent::Type type) : QGraphicsSceneHoverEvent(type) {
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:201
 // [-2] void QGraphicsSceneHoverEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN24QGraphicsSceneHoverEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneHoverEvent*)(0);
-  return  new MyQGraphicsSceneHoverEvent(type);
+void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneHoverEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:202
 // [-2] void ~QGraphicsSceneHoverEvent()
 extern "C"
-void C_ZN24QGraphicsSceneHoverEventD1Ev(void *this_) {
+void C_ZN24QGraphicsSceneHoverEventD2Ev(void *this_) {
   delete (QGraphicsSceneHoverEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

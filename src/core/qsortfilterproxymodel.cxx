@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QSortFilterProxyModel is pure virtual: false
+// QSortFilterProxyModel has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZN21QSortFilterProxyModel16invalidateFilterEv(void*
 
 class MyQSortFilterProxyModel : public QSortFilterProxyModel {
 public:
+  virtual ~MyQSortFilterProxyModel() {}
+// void QSortFilterProxyModel(class QObject *)
 MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 // bool filterAcceptsRow(int, const class QModelIndex &)
-// bool filterAcceptsRow(int, const class QModelIndex &)
-virtual bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) {
-  if (callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex != 0) {
-  // callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(source_row, source_parent);
-}}
+  virtual bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) {
+    if (callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex != 0) {
+      // callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(source_row, source_parent);
+    }
+    return QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
+  }
 // bool filterAcceptsColumn(int, const class QModelIndex &)
-// bool filterAcceptsColumn(int, const class QModelIndex &)
-virtual bool filterAcceptsColumn(int source_column, const QModelIndex & source_parent) {
-  if (callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex != 0) {
-  // callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(source_column, source_parent);
-}}
+  virtual bool filterAcceptsColumn(int source_column, const QModelIndex & source_parent) {
+    if (callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex != 0) {
+      // callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(source_column, source_parent);
+    }
+    return QSortFilterProxyModel::filterAcceptsColumn(source_column, source_parent);
+  }
 // bool lessThan(const class QModelIndex &, const class QModelIndex &)
-// bool lessThan(const class QModelIndex &, const class QModelIndex &)
-virtual bool lessThan(const QModelIndex & source_left, const QModelIndex & source_right) {
-  if (callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_ != 0) {
-  // callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(source_left, source_right);
-}}
+  virtual bool lessThan(const QModelIndex & source_left, const QModelIndex & source_right) {
+    if (callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_ != 0) {
+      // callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(source_left, source_right);
+    }
+    return QSortFilterProxyModel::lessThan(source_left, source_right);
+  }
 // void filterChanged()
-// void filterChanged()
-virtual void filterChanged() {
-  if (callback_ZN21QSortFilterProxyModel13filterChangedEv != 0) {
-  // callback_ZN21QSortFilterProxyModel13filterChangedEv();
-}}
+  virtual void filterChanged() {
+    if (callback_ZN21QSortFilterProxyModel13filterChangedEv != 0) {
+      // callback_ZN21QSortFilterProxyModel13filterChangedEv();
+    }
+    QSortFilterProxyModel::filterChanged();
+  }
 // void invalidateFilter()
-// void invalidateFilter()
-virtual void invalidateFilter() {
-  if (callback_ZN21QSortFilterProxyModel16invalidateFilterEv != 0) {
-  // callback_ZN21QSortFilterProxyModel16invalidateFilterEv();
-}}
+  virtual void invalidateFilter() {
+    if (callback_ZN21QSortFilterProxyModel16invalidateFilterEv != 0) {
+      // callback_ZN21QSortFilterProxyModel16invalidateFilterEv();
+    }
+    QSortFilterProxyModel::invalidateFilter();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK21QSortFilterProxyModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:73
 // [-2] void QSortFilterProxyModel(class QObject *)
 extern "C"
-void* C_ZN21QSortFilterProxyModelC1EP7QObject(QObject * parent) {
-  (MyQSortFilterProxyModel*)(0);
+void* C_ZN21QSortFilterProxyModelC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQSortFilterProxyModel*)(0);
   return  new MyQSortFilterProxyModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:74
 // [-2] void ~QSortFilterProxyModel()
 extern "C"
-void C_ZN21QSortFilterProxyModelD1Ev(void *this_) {
+void C_ZN21QSortFilterProxyModelD2Ev(void *this_) {
   delete (QSortFilterProxyModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

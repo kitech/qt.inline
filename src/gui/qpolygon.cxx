@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QPolygon is pure virtual: false
+// QPolygon has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPolygon : public QPolygon {
 public:
+  virtual ~MyQPolygon() {}
+// void QPolygon()
 MyQPolygon() : QPolygon() {}
+// void QPolygon(int)
 MyQPolygon(int size) : QPolygon(size) {}
+// void QPolygon(const class QRect &, _Bool)
 MyQPolygon(const QRect & r, bool closed) : QPolygon(r, closed) {}
+// void QPolygon(int, const int *)
 MyQPolygon(int nPoints, const int * points) : QPolygon(nPoints, points) {}
 };
 
@@ -20,40 +26,36 @@ MyQPolygon(int nPoints, const int * points) : QPolygon(nPoints, points) {}
 // /usr/include/qt/QtGui/qpolygon.h:59
 // [-2] void QPolygon()
 extern "C"
-void* C_ZN8QPolygonC1Ev() {
-  (MyQPolygon*)(0);
-  return  new MyQPolygon();
+void* C_ZN8QPolygonC2Ev() {
+  return  new QPolygon();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:60
 // [-2] void ~QPolygon()
 extern "C"
-void C_ZN8QPolygonD1Ev(void *this_) {
+void C_ZN8QPolygonD2Ev(void *this_) {
   delete (QPolygon*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:61
 // [-2] void QPolygon(int)
 extern "C"
-void* C_ZN8QPolygonC1Ei(int size) {
-  (MyQPolygon*)(0);
-  return  new MyQPolygon(size);
+void* C_ZN8QPolygonC2Ei(int size) {
+  return  new QPolygon(size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:66
 // [-2] void QPolygon(const class QRect &, _Bool)
 extern "C"
-void* C_ZN8QPolygonC1ERK5QRectb(const QRect & r, bool closed) {
-  (MyQPolygon*)(0);
-  return  new MyQPolygon(r, closed);
+void* C_ZN8QPolygonC2ERK5QRectb(const QRect & r, bool closed) {
+  return  new QPolygon(r, closed);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:67
 // [-2] void QPolygon(int, const int *)
 extern "C"
-void* C_ZN8QPolygonC1EiPKi(int nPoints, const int * points) {
-  (MyQPolygon*)(0);
-  return  new MyQPolygon(nPoints, points);
+void* C_ZN8QPolygonC2EiPKi(int nPoints, const int * points) {
+  return  new QPolygon(nPoints, points);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:74

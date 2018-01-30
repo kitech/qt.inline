@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QAccessibleTextRemoveEvent is pure virtual: false
+// QAccessibleTextRemoveEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleTextRemoveEvent : public QAccessibleTextRemoveEvent {
 public:
+  virtual ~MyQAccessibleTextRemoveEvent() {}
+// void QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)
 MyQAccessibleTextRemoveEvent(QObject * obj, int position, const QString & text) : QAccessibleTextRemoveEvent(obj, position, text) {}
+// void QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
 MyQAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const QString & text) : QAccessibleTextRemoveEvent(iface, position, text) {}
 };
 
@@ -18,23 +22,21 @@ MyQAccessibleTextRemoveEvent(QAccessibleInterface * iface, int position, const Q
 // /usr/include/qt/QtGui/qaccessible.h:834
 // [-2] void QAccessibleTextRemoveEvent(class QObject *, int, const class QString &)
 extern "C"
-void* C_ZN26QAccessibleTextRemoveEventC1EP7QObjectiRK7QString(QObject * obj, int position, const QString & text) {
-  (MyQAccessibleTextRemoveEvent*)(0);
-  return  new MyQAccessibleTextRemoveEvent(obj, position, text);
+void* C_ZN26QAccessibleTextRemoveEventC2EP7QObjectiRK7QString(QObject * obj, int position, const QString & text) {
+  return  new QAccessibleTextRemoveEvent(obj, position, text);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:840
 // [-2] void QAccessibleTextRemoveEvent(class QAccessibleInterface *, int, const class QString &)
 extern "C"
-void* C_ZN26QAccessibleTextRemoveEventC1EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, const QString & text) {
-  (MyQAccessibleTextRemoveEvent*)(0);
-  return  new MyQAccessibleTextRemoveEvent(iface, position, text);
+void* C_ZN26QAccessibleTextRemoveEventC2EP20QAccessibleInterfaceiRK7QString(QAccessibleInterface * iface, int position, const QString & text) {
+  return  new QAccessibleTextRemoveEvent(iface, position, text);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:847
 // [-2] void ~QAccessibleTextRemoveEvent()
 extern "C"
-void C_ZN26QAccessibleTextRemoveEventD1Ev(void *this_) {
+void C_ZN26QAccessibleTextRemoveEventD2Ev(void *this_) {
   delete (QAccessibleTextRemoveEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

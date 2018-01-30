@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsProxyWidget is pure virtual: false
+// QGraphicsProxyWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -220,187 +221,219 @@ extern "C" void set_callback_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget
 
 class MyQGraphicsProxyWidget : public QGraphicsProxyWidget {
 public:
+  virtual ~MyQGraphicsProxyWidget() {}
+// void QGraphicsProxyWidget(class QGraphicsItem *, Qt::WindowFlags)
 MyQGraphicsProxyWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGraphicsProxyWidget(parent, wFlags) {}
 // QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
-// QVariant itemChange(enum QGraphicsItem::GraphicsItemChange, const class QVariant &)
-virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
-  if (callback_ZN20QGraphicsProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant != 0) {
-  // callback_ZN20QGraphicsProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant(change, value);
-}}
+  virtual QVariant itemChange(QGraphicsItem::GraphicsItemChange change, const QVariant & value) {
+    if (callback_ZN20QGraphicsProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant != 0) {
+      // callback_ZN20QGraphicsProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant(change, value);
+    }
+    return QGraphicsProxyWidget::itemChange(change, value);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget5eventEP6QEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget5eventEP6QEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget5eventEP6QEvent(event);
+    }
+    return QGraphicsProxyWidget::event(event);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * object, QEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent(object, event);
-}}
+  virtual bool eventFilter(QObject * object, QEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget11eventFilterEP7QObjectP6QEvent(object, event);
+    }
+    return QGraphicsProxyWidget::eventFilter(object, event);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent(event);
-}}
+  virtual void showEvent(QShowEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget9showEventEP10QShowEvent(event);
+    }
+    QGraphicsProxyWidget::showEvent(event);
+  }
 // void hideEvent(class QHideEvent *)
-// void hideEvent(class QHideEvent *)
-virtual void hideEvent(QHideEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent(event);
-}}
+  virtual void hideEvent(QHideEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget9hideEventEP10QHideEvent(event);
+    }
+    QGraphicsProxyWidget::hideEvent(event);
+  }
 // void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
-// void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
-virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEvent(event);
-}}
+  virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget16contextMenuEventEP30QGraphicsSceneContextMenuEvent(event);
+    }
+    QGraphicsProxyWidget::contextMenuEvent(event);
+  }
 // void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
-// void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
-virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent(event);
-}}
+  virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget14dragEnterEventEP27QGraphicsSceneDragDropEvent(event);
+    }
+    QGraphicsProxyWidget::dragEnterEvent(event);
+  }
 // void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
-// void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
-virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent(event);
-}}
+  virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget14dragLeaveEventEP27QGraphicsSceneDragDropEvent(event);
+    }
+    QGraphicsProxyWidget::dragLeaveEvent(event);
+  }
 // void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
-// void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
-virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent(event);
-}}
+  virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget13dragMoveEventEP27QGraphicsSceneDragDropEvent(event);
+    }
+    QGraphicsProxyWidget::dragMoveEvent(event);
+  }
 // void dropEvent(class QGraphicsSceneDragDropEvent *)
-// void dropEvent(class QGraphicsSceneDragDropEvent *)
-virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent(event);
-}}
+  virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget9dropEventEP27QGraphicsSceneDragDropEvent(event);
+    }
+    QGraphicsProxyWidget::dropEvent(event);
+  }
 // void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
-// void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
-virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent(event);
-}}
+  virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget15hoverEnterEventEP24QGraphicsSceneHoverEvent(event);
+    }
+    QGraphicsProxyWidget::hoverEnterEvent(event);
+  }
 // void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
-// void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
-virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent(event);
-}}
+  virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent(event);
+    }
+    QGraphicsProxyWidget::hoverLeaveEvent(event);
+  }
 // void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
-// void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
-virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent(event);
-}}
+  virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent(event);
+    }
+    QGraphicsProxyWidget::hoverMoveEvent(event);
+  }
 // void grabMouseEvent(class QEvent *)
-// void grabMouseEvent(class QEvent *)
-virtual void grabMouseEvent(QEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent(event);
-}}
+  virtual void grabMouseEvent(QEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget14grabMouseEventEP6QEvent(event);
+    }
+    QGraphicsProxyWidget::grabMouseEvent(event);
+  }
 // void ungrabMouseEvent(class QEvent *)
-// void ungrabMouseEvent(class QEvent *)
-virtual void ungrabMouseEvent(QEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent(event);
-}}
+  virtual void ungrabMouseEvent(QEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget16ungrabMouseEventEP6QEvent(event);
+    }
+    QGraphicsProxyWidget::ungrabMouseEvent(event);
+  }
 // void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
-// void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
-virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent(event);
-}}
+  virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget14mouseMoveEventEP24QGraphicsSceneMouseEvent(event);
+    }
+    QGraphicsProxyWidget::mouseMoveEvent(event);
+  }
 // void mousePressEvent(class QGraphicsSceneMouseEvent *)
-// void mousePressEvent(class QGraphicsSceneMouseEvent *)
-virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent(event);
-}}
+  virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget15mousePressEventEP24QGraphicsSceneMouseEvent(event);
+    }
+    QGraphicsProxyWidget::mousePressEvent(event);
+  }
 // void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
-// void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
-virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent(event);
-}}
+  virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget17mouseReleaseEventEP24QGraphicsSceneMouseEvent(event);
+    }
+    QGraphicsProxyWidget::mouseReleaseEvent(event);
+  }
 // void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
-// void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
-virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(event);
-}}
+  virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(event);
+    }
+    QGraphicsProxyWidget::mouseDoubleClickEvent(event);
+  }
 // void wheelEvent(class QGraphicsSceneWheelEvent *)
-// void wheelEvent(class QGraphicsSceneWheelEvent *)
-virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent(event);
-}}
+  virtual void wheelEvent(QGraphicsSceneWheelEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget10wheelEventEP24QGraphicsSceneWheelEvent(event);
+    }
+    QGraphicsProxyWidget::wheelEvent(event);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent(event);
-}}
+  virtual void keyPressEvent(QKeyEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget13keyPressEventEP9QKeyEvent(event);
+    }
+    QGraphicsProxyWidget::keyPressEvent(event);
+  }
 // void keyReleaseEvent(class QKeyEvent *)
-// void keyReleaseEvent(class QKeyEvent *)
-virtual void keyReleaseEvent(QKeyEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent(event);
-}}
+  virtual void keyReleaseEvent(QKeyEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget15keyReleaseEventEP9QKeyEvent(event);
+    }
+    QGraphicsProxyWidget::keyReleaseEvent(event);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent(event);
-}}
+  virtual void focusInEvent(QFocusEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget12focusInEventEP11QFocusEvent(event);
+    }
+    QGraphicsProxyWidget::focusInEvent(event);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent(event);
-}}
+  virtual void focusOutEvent(QFocusEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget13focusOutEventEP11QFocusEvent(event);
+    }
+    QGraphicsProxyWidget::focusOutEvent(event);
+  }
 // bool focusNextPrevChild(_Bool)
-// bool focusNextPrevChild(_Bool)
-virtual bool focusNextPrevChild(bool next) {
-  if (callback_ZN20QGraphicsProxyWidget18focusNextPrevChildEb != 0) {
-  // callback_ZN20QGraphicsProxyWidget18focusNextPrevChildEb(next);
-}}
+  virtual bool focusNextPrevChild(bool next) {
+    if (callback_ZN20QGraphicsProxyWidget18focusNextPrevChildEb != 0) {
+      // callback_ZN20QGraphicsProxyWidget18focusNextPrevChildEb(next);
+    }
+    return QGraphicsProxyWidget::focusNextPrevChild(next);
+  }
 // QVariant inputMethodQuery(Qt::InputMethodQuery)
-// QVariant inputMethodQuery(Qt::InputMethodQuery)
-virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) {
-  if (callback_ZNK20QGraphicsProxyWidget16inputMethodQueryEN2Qt16InputMethodQueryE != 0) {
-  // callback_ZNK20QGraphicsProxyWidget16inputMethodQueryEN2Qt16InputMethodQueryE(query);
-}}
+  virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) {
+    if (callback_ZNK20QGraphicsProxyWidget16inputMethodQueryEN2Qt16InputMethodQueryE != 0) {
+      // callback_ZNK20QGraphicsProxyWidget16inputMethodQueryEN2Qt16InputMethodQueryE(query);
+    }
+    return QGraphicsProxyWidget::inputMethodQuery(query);
+  }
 // void inputMethodEvent(class QInputMethodEvent *)
-// void inputMethodEvent(class QInputMethodEvent *)
-virtual void inputMethodEvent(QInputMethodEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent(event);
-}}
+  virtual void inputMethodEvent(QInputMethodEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget16inputMethodEventEP17QInputMethodEvent(event);
+    }
+    QGraphicsProxyWidget::inputMethodEvent(event);
+  }
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
-  if (callback_ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
-  // callback_ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
-}}
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
+    if (callback_ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
+      // callback_ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
+    }
+    return QGraphicsProxyWidget::sizeHint(which, constraint);
+  }
 // void resizeEvent(class QGraphicsSceneResizeEvent *)
-// void resizeEvent(class QGraphicsSceneResizeEvent *)
-virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
-  if (callback_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent != 0) {
-  // callback_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent(event);
-}}
+  virtual void resizeEvent(QGraphicsSceneResizeEvent * event) {
+    if (callback_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent != 0) {
+      // callback_ZN20QGraphicsProxyWidget11resizeEventEP25QGraphicsSceneResizeEvent(event);
+    }
+    QGraphicsProxyWidget::resizeEvent(event);
+  }
 // QGraphicsProxyWidget * newProxyWidget(const class QWidget *)
-// QGraphicsProxyWidget * newProxyWidget(const class QWidget *)
-virtual QGraphicsProxyWidget * newProxyWidget(const QWidget * arg0) {
-  if (callback_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget != 0) {
-  // callback_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget(arg0);
-}}
+  virtual QGraphicsProxyWidget * newProxyWidget(const QWidget * arg0) {
+    if (callback_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget != 0) {
+      // callback_ZN20QGraphicsProxyWidget14newProxyWidgetEPK7QWidget(arg0);
+    }
+    return QGraphicsProxyWidget::newProxyWidget(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -414,15 +447,15 @@ void* C_ZNK20QGraphicsProxyWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:56
 // [-2] void QGraphicsProxyWidget(class QGraphicsItem *, Qt::WindowFlags)
 extern "C"
-void* C_ZN20QGraphicsProxyWidgetC1EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) {
-  (MyQGraphicsProxyWidget*)(0);
+void* C_ZN20QGraphicsProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) {
+  auto _nilp = (MyQGraphicsProxyWidget*)(0);
   return  new MyQGraphicsProxyWidget(parent, wFlags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:57
 // [-2] void ~QGraphicsProxyWidget()
 extern "C"
-void C_ZN20QGraphicsProxyWidgetD1Ev(void *this_) {
+void C_ZN20QGraphicsProxyWidgetD2Ev(void *this_) {
   delete (QGraphicsProxyWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

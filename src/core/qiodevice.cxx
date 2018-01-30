@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QIODevice is pure virtual: true
+// QIODevice has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,32 +39,39 @@ extern "C" void set_callback_ZN9QIODevice14setErrorStringERK7QString(void*cbfn)
 
 class MyQIODevice : public QIODevice {
 public:
+  virtual ~MyQIODevice() {}
+// void QIODevice()
 MyQIODevice() : QIODevice() {}
+// void QIODevice(class QObject *)
 MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // qint64 readData(char *, qint64)
-// qint64 readData(char *, qint64)
-virtual qint64 readData(char * data, qint64 maxlen) {
-  if (callback_ZN9QIODevice8readDataEPcx != 0) {
-  // callback_ZN9QIODevice8readDataEPcx(data, maxlen);
-}}
+  virtual qint64 readData(char * data, qint64 maxlen) {
+    if (callback_ZN9QIODevice8readDataEPcx != 0) {
+      // callback_ZN9QIODevice8readDataEPcx(data, maxlen);
+    }
+    return QIODevice::readData(data, maxlen);
+  }
 // qint64 readLineData(char *, qint64)
-// qint64 readLineData(char *, qint64)
-virtual qint64 readLineData(char * data, qint64 maxlen) {
-  if (callback_ZN9QIODevice12readLineDataEPcx != 0) {
-  // callback_ZN9QIODevice12readLineDataEPcx(data, maxlen);
-}}
+  virtual qint64 readLineData(char * data, qint64 maxlen) {
+    if (callback_ZN9QIODevice12readLineDataEPcx != 0) {
+      // callback_ZN9QIODevice12readLineDataEPcx(data, maxlen);
+    }
+    return QIODevice::readLineData(data, maxlen);
+  }
 // qint64 writeData(const char *, qint64)
-// qint64 writeData(const char *, qint64)
-virtual qint64 writeData(const char * data, qint64 len) {
-  if (callback_ZN9QIODevice9writeDataEPKcx != 0) {
-  // callback_ZN9QIODevice9writeDataEPKcx(data, len);
-}}
+  virtual qint64 writeData(const char * data, qint64 len) {
+    if (callback_ZN9QIODevice9writeDataEPKcx != 0) {
+      // callback_ZN9QIODevice9writeDataEPKcx(data, len);
+    }
+    return QIODevice::writeData(data, len);
+  }
 // void setErrorString(const class QString &)
-// void setErrorString(const class QString &)
-virtual void setErrorString(const QString & errorString) {
-  if (callback_ZN9QIODevice14setErrorStringERK7QString != 0) {
-  // callback_ZN9QIODevice14setErrorStringERK7QString(errorString);
-}}
+  virtual void setErrorString(const QString & errorString) {
+    if (callback_ZN9QIODevice14setErrorStringERK7QString != 0) {
+      // callback_ZN9QIODevice14setErrorStringERK7QString(errorString);
+    }
+    QIODevice::setErrorString(errorString);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -78,7 +86,7 @@ void* C_ZNK9QIODevice10metaObjectEv(void *this_) {
 // [-2] void QIODevice()
 extern "C"
 void* C_ZN9QIODeviceC1Ev() {
-  (MyQIODevice*)(0);
+  auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice();
 }
 // Public Visibility=Default Availability=Available
@@ -86,14 +94,14 @@ void* C_ZN9QIODeviceC1Ev() {
 // [-2] void QIODevice(class QObject *)
 extern "C"
 void* C_ZN9QIODeviceC1EP7QObject(QObject * parent) {
-  (MyQIODevice*)(0);
+  auto _nilp = (MyQIODevice*)(0);
   return 0; // new MyQIODevice(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:87
 // [-2] void ~QIODevice()
 extern "C"
-void C_ZN9QIODeviceD1Ev(void *this_) {
+void C_ZN9QIODeviceD2Ev(void *this_) {
   delete (QIODevice*)(this_);
 }
 // Public Visibility=Default Availability=Available

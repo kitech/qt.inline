@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QExposeEvent is pure virtual: false
+// QExposeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQExposeEvent : public QExposeEvent {
 public:
+  virtual ~MyQExposeEvent() {}
+// void QExposeEvent(const class QRegion &)
 MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 };
 
@@ -17,15 +20,14 @@ MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 // /usr/include/qt/QtGui/qevent.h:434
 // [-2] void QExposeEvent(const class QRegion &)
 extern "C"
-void* C_ZN12QExposeEventC1ERK7QRegion(const QRegion & rgn) {
-  (MyQExposeEvent*)(0);
-  return  new MyQExposeEvent(rgn);
+void* C_ZN12QExposeEventC2ERK7QRegion(const QRegion & rgn) {
+  return  new QExposeEvent(rgn);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:435
 // [-2] void ~QExposeEvent()
 extern "C"
-void C_ZN12QExposeEventD1Ev(void *this_) {
+void C_ZN12QExposeEventD2Ev(void *this_) {
   delete (QExposeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QTouchEvent is pure virtual: false
+// QTouchEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTouchEvent : public QTouchEvent {
 public:
+  virtual ~MyQTouchEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:947
 // [-2] void ~QTouchEvent()
 extern "C"
-void C_ZN11QTouchEventD1Ev(void *this_) {
+void C_ZN11QTouchEventD2Ev(void *this_) {
   delete (QTouchEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

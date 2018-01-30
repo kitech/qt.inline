@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QIntValidator is pure virtual: false
+// QIntValidator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQIntValidator : public QIntValidator {
 public:
+  virtual ~MyQIntValidator() {}
+// void QIntValidator(class QObject *)
 MyQIntValidator(QObject * parent) : QIntValidator(parent) {}
+// void QIntValidator(int, int, class QObject *)
 MyQIntValidator(int bottom, int top, QObject * parent) : QIntValidator(bottom, top, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK13QIntValidator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:96
 // [-2] void QIntValidator(class QObject *)
 extern "C"
-void* C_ZN13QIntValidatorC1EP7QObject(QObject * parent) {
-  (MyQIntValidator*)(0);
-  return  new MyQIntValidator(parent);
+void* C_ZN13QIntValidatorC2EP7QObject(QObject * parent) {
+  return  new QIntValidator(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:97
 // [-2] void QIntValidator(int, int, class QObject *)
 extern "C"
-void* C_ZN13QIntValidatorC1EiiP7QObject(int bottom, int top, QObject * parent) {
-  (MyQIntValidator*)(0);
-  return  new MyQIntValidator(bottom, top, parent);
+void* C_ZN13QIntValidatorC2EiiP7QObject(int bottom, int top, QObject * parent) {
+  return  new QIntValidator(bottom, top, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:98
 // [-2] void ~QIntValidator()
 extern "C"
-void C_ZN13QIntValidatorD1Ev(void *this_) {
+void C_ZN13QIntValidatorD2Ev(void *this_) {
   delete (QIntValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

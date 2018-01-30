@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QWidgetItemV2 is pure virtual: false
+// QWidgetItemV2 has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWidgetItemV2 : public QWidgetItemV2 {
 public:
+  virtual ~MyQWidgetItemV2() {}
+// void QWidgetItemV2(class QWidget *)
 MyQWidgetItemV2(QWidget * widget) : QWidgetItemV2(widget) {}
 };
 
@@ -17,15 +20,14 @@ MyQWidgetItemV2(QWidget * widget) : QWidgetItemV2(widget) {}
 // /usr/include/qt/QtWidgets/qlayoutitem.h:148
 // [-2] void QWidgetItemV2(class QWidget *)
 extern "C"
-void* C_ZN13QWidgetItemV2C1EP7QWidget(QWidget * widget) {
-  (MyQWidgetItemV2*)(0);
-  return  new MyQWidgetItemV2(widget);
+void* C_ZN13QWidgetItemV2C2EP7QWidget(QWidget * widget) {
+  return  new QWidgetItemV2(widget);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:149
 // [-2] void ~QWidgetItemV2()
 extern "C"
-void C_ZN13QWidgetItemV2D1Ev(void *this_) {
+void C_ZN13QWidgetItemV2D2Ev(void *this_) {
   delete (QWidgetItemV2*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

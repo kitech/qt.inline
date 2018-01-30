@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QGenericPluginFactory is pure virtual: false
+// QGenericPluginFactory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGenericPluginFactory : public QGenericPluginFactory {
 public:
+  virtual ~MyQGenericPluginFactory() {}
 };
 
 // Public static Visibility=Default Availability=Available

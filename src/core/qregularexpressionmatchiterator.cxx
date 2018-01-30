@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QRegularExpressionMatchIterator is pure virtual: false
+// QRegularExpressionMatchIterator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegularExpressionMatchIterator : public QRegularExpressionMatchIterator {
 public:
+  virtual ~MyQRegularExpressionMatchIterator() {}
+// void QRegularExpressionMatchIterator()
 MyQRegularExpressionMatchIterator() : QRegularExpressionMatchIterator() {}
 };
 
@@ -17,15 +20,14 @@ MyQRegularExpressionMatchIterator() : QRegularExpressionMatchIterator() {}
 // /usr/include/qt/QtCore/qregularexpression.h:249
 // [-2] void QRegularExpressionMatchIterator()
 extern "C"
-void* C_ZN31QRegularExpressionMatchIteratorC1Ev() {
-  (MyQRegularExpressionMatchIterator*)(0);
-  return  new MyQRegularExpressionMatchIterator();
+void* C_ZN31QRegularExpressionMatchIteratorC2Ev() {
+  return  new QRegularExpressionMatchIterator();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:250
 // [-2] void ~QRegularExpressionMatchIterator()
 extern "C"
-void C_ZN31QRegularExpressionMatchIteratorD1Ev(void *this_) {
+void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *this_) {
   delete (QRegularExpressionMatchIterator*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

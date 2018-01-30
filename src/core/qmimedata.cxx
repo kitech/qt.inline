@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QMimeData is pure virtual: false
+// QMimeData has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4Ty
 
 class MyQMimeData : public QMimeData {
 public:
+  virtual ~MyQMimeData() {}
+// void QMimeData()
 MyQMimeData() : QMimeData() {}
 // QVariant retrieveData(const class QString &, class QVariant::Type)
-// QVariant retrieveData(const class QString &, class QVariant::Type)
-virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) {
-  if (callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE != 0) {
-  // callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(mimetype, preferredType);
-}}
+  virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) {
+    if (callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE != 0) {
+      // callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(mimetype, preferredType);
+    }
+    return QMimeData::retrieveData(mimetype, preferredType);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK9QMimeData10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qmimedata.h:56
 // [-2] void QMimeData()
 extern "C"
-void* C_ZN9QMimeDataC1Ev() {
-  (MyQMimeData*)(0);
+void* C_ZN9QMimeDataC2Ev() {
+  auto _nilp = (MyQMimeData*)(0);
   return  new MyQMimeData();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedata.h:57
 // [-2] void ~QMimeData()
 extern "C"
-void C_ZN9QMimeDataD1Ev(void *this_) {
+void C_ZN9QMimeDataD2Ev(void *this_) {
   delete (QMimeData*)(this_);
 }
 // Public Visibility=Default Availability=Available

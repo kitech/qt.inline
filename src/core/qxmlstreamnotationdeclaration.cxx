@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QXmlStreamNotationDeclaration is pure virtual: false
+// QXmlStreamNotationDeclaration has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamNotationDeclaration : public QXmlStreamNotationDeclaration {
 public:
+  virtual ~MyQXmlStreamNotationDeclaration() {}
+// void QXmlStreamNotationDeclaration()
 MyQXmlStreamNotationDeclaration() : QXmlStreamNotationDeclaration() {}
 };
 
@@ -17,15 +20,14 @@ MyQXmlStreamNotationDeclaration() : QXmlStreamNotationDeclaration() {}
 // /usr/include/qt/QtCore/qxmlstream.h:241
 // [-2] void QXmlStreamNotationDeclaration()
 extern "C"
-void* C_ZN29QXmlStreamNotationDeclarationC1Ev() {
-  (MyQXmlStreamNotationDeclaration*)(0);
-  return  new MyQXmlStreamNotationDeclaration();
+void* C_ZN29QXmlStreamNotationDeclarationC2Ev() {
+  return  new QXmlStreamNotationDeclaration();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:243
 // [-2] void ~QXmlStreamNotationDeclaration()
 extern "C"
-void C_ZN29QXmlStreamNotationDeclarationD1Ev(void *this_) {
+void C_ZN29QXmlStreamNotationDeclarationD2Ev(void *this_) {
   delete (QXmlStreamNotationDeclaration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

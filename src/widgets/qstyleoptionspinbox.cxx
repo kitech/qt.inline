@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionSpinBox is pure virtual: false
+// QStyleOptionSpinBox has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN19QStyleOptionSpinBoxC1Ei(void*cbfn)
 
 class MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
 public:
+  virtual ~MyQStyleOptionSpinBox() {}
+// void QStyleOptionSpinBox()
 MyQStyleOptionSpinBox() : QStyleOptionSpinBox() {}
+// void QStyleOptionSpinBox(int)
 MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:552
 // [-2] void QStyleOptionSpinBox()
 extern "C"
-void* C_ZN19QStyleOptionSpinBoxC1Ev() {
-  (MyQStyleOptionSpinBox*)(0);
-  return  new MyQStyleOptionSpinBox();
+void* C_ZN19QStyleOptionSpinBoxC2Ev() {
+  return  new QStyleOptionSpinBox();
 }
 //  main block end

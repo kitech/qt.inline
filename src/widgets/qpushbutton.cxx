@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QPushButton is pure virtual: false
+// QPushButton has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,45 +53,55 @@ extern "C" void set_callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionBu
 
 class MyQPushButton : public QPushButton {
 public:
+  virtual ~MyQPushButton() {}
+// void QPushButton(class QWidget *)
 MyQPushButton(QWidget * parent) : QPushButton(parent) {}
+// void QPushButton(const class QString &, class QWidget *)
 MyQPushButton(const QString & text, QWidget * parent) : QPushButton(text, parent) {}
+// void QPushButton(const class QIcon &, const class QString &, class QWidget *)
 MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPushButton(icon, text, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QPushButton5eventEP6QEvent != 0) {
-  // callback_ZN11QPushButton5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QPushButton5eventEP6QEvent != 0) {
+      // callback_ZN11QPushButton5eventEP6QEvent(e);
+    }
+    return QPushButton::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN11QPushButton10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN11QPushButton10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN11QPushButton10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN11QPushButton10paintEventEP11QPaintEvent(arg0);
+    }
+    QPushButton::paintEvent(arg0);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * arg0) {
-  if (callback_ZN11QPushButton13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN11QPushButton13keyPressEventEP9QKeyEvent(arg0);
-}}
+  virtual void keyPressEvent(QKeyEvent * arg0) {
+    if (callback_ZN11QPushButton13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN11QPushButton13keyPressEventEP9QKeyEvent(arg0);
+    }
+    QPushButton::keyPressEvent(arg0);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * arg0) {
-  if (callback_ZN11QPushButton12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN11QPushButton12focusInEventEP11QFocusEvent(arg0);
-}}
+  virtual void focusInEvent(QFocusEvent * arg0) {
+    if (callback_ZN11QPushButton12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN11QPushButton12focusInEventEP11QFocusEvent(arg0);
+    }
+    QPushButton::focusInEvent(arg0);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * arg0) {
-  if (callback_ZN11QPushButton13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN11QPushButton13focusOutEventEP11QFocusEvent(arg0);
-}}
+  virtual void focusOutEvent(QFocusEvent * arg0) {
+    if (callback_ZN11QPushButton13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN11QPushButton13focusOutEventEP11QFocusEvent(arg0);
+    }
+    QPushButton::focusOutEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionButton *)
-// void initStyleOption(class QStyleOptionButton *)
-virtual void initStyleOption(QStyleOptionButton * option) {
-  if (callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton != 0) {
-  // callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(option);
-}}
+  virtual void initStyleOption(QStyleOptionButton * option) {
+    if (callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton != 0) {
+      // callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(option);
+    }
+    QPushButton::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -104,31 +115,31 @@ void* C_ZNK11QPushButton10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qpushbutton.h:64
 // [-2] void QPushButton(class QWidget *)
 extern "C"
-void* C_ZN11QPushButtonC1EP7QWidget(QWidget * parent) {
-  (MyQPushButton*)(0);
+void* C_ZN11QPushButtonC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:65
 // [-2] void QPushButton(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN11QPushButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
-  (MyQPushButton*)(0);
+void* C_ZN11QPushButtonC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(text, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:66
 // [-2] void QPushButton(const class QIcon &, const class QString &, class QWidget *)
 extern "C"
-void* C_ZN11QPushButtonC1ERK5QIconRK7QStringP7QWidget(const QIcon & icon, const QString & text, QWidget * parent) {
-  (MyQPushButton*)(0);
+void* C_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget(const QIcon & icon, const QString & text, QWidget * parent) {
+  auto _nilp = (MyQPushButton*)(0);
   return  new MyQPushButton(icon, text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qpushbutton.h:67
 // [-2] void ~QPushButton()
 extern "C"
-void C_ZN11QPushButtonD1Ev(void *this_) {
+void C_ZN11QPushButtonD2Ev(void *this_) {
   delete (QPushButton*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

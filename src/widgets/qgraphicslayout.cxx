@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsLayout is pure virtual: true
+// QGraphicsLayout has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphic
 
 class MyQGraphicsLayout : public QGraphicsLayout {
 public:
+  virtual ~MyQGraphicsLayout() {}
+// void QGraphicsLayout(class QGraphicsLayoutItem *)
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // void addChildLayoutItem(class QGraphicsLayoutItem *)
-// void addChildLayoutItem(class QGraphicsLayoutItem *)
-virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
-  if (callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem != 0) {
-  // callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(layoutItem);
-}}
+  virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
+    if (callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem != 0) {
+      // callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(layoutItem);
+    }
+    QGraphicsLayout::addChildLayoutItem(layoutItem);
+  }
 };
 
 // Public Visibility=Default Availability=Available
@@ -31,14 +35,14 @@ virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
 // [-2] void QGraphicsLayout(class QGraphicsLayoutItem *)
 extern "C"
 void* C_ZN15QGraphicsLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
-  (MyQGraphicsLayout*)(0);
+  auto _nilp = (MyQGraphicsLayout*)(0);
   return 0; // new MyQGraphicsLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:58
 // [-2] void ~QGraphicsLayout()
 extern "C"
-void C_ZN15QGraphicsLayoutD1Ev(void *this_) {
+void C_ZN15QGraphicsLayoutD2Ev(void *this_) {
   delete (QGraphicsLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

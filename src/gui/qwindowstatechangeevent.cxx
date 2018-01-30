@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QWindowStateChangeEvent is pure virtual: false
+// QWindowStateChangeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWindowStateChangeEvent : public QWindowStateChangeEvent {
 public:
+  virtual ~MyQWindowStateChangeEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:784
 // [-2] void ~QWindowStateChangeEvent()
 extern "C"
-void C_ZN23QWindowStateChangeEventD1Ev(void *this_) {
+void C_ZN23QWindowStateChangeEventD2Ev(void *this_) {
   delete (QWindowStateChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

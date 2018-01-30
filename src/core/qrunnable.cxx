@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QRunnable is pure virtual: true
+// QRunnable has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRunnable : public QRunnable {
 public:
+  virtual ~MyQRunnable() {}
+// void QRunnable()
 MyQRunnable() : QRunnable() {}
 };
 
@@ -25,14 +28,13 @@ void C_ZN9QRunnable3runEv(void *this_) {
 // [-2] void QRunnable()
 extern "C"
 void* C_ZN9QRunnableC1Ev() {
-  (MyQRunnable*)(0);
-  return 0; // new MyQRunnable();
+  return 0; // new QRunnable();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:61
 // [-2] void ~QRunnable()
 extern "C"
-void C_ZN9QRunnableD1Ev(void *this_) {
+void C_ZN9QRunnableD2Ev(void *this_) {
   delete (QRunnable*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

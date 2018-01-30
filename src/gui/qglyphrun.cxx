@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QGlyphRun is pure virtual: false
+// QGlyphRun has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGlyphRun : public QGlyphRun {
 public:
+  virtual ~MyQGlyphRun() {}
+// void QGlyphRun()
 MyQGlyphRun() : QGlyphRun() {}
 };
 
@@ -17,15 +20,14 @@ MyQGlyphRun() : QGlyphRun() {}
 // /usr/include/qt/QtGui/qglyphrun.h:67
 // [-2] void QGlyphRun()
 extern "C"
-void* C_ZN9QGlyphRunC1Ev() {
-  (MyQGlyphRun*)(0);
-  return  new MyQGlyphRun();
+void* C_ZN9QGlyphRunC2Ev() {
+  return  new QGlyphRun();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:73
 // [-2] void ~QGlyphRun()
 extern "C"
-void C_ZN9QGlyphRunD1Ev(void *this_) {
+void C_ZN9QGlyphRunD2Ev(void *this_) {
   delete (QGlyphRun*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

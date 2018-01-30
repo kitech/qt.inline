@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QDynamicPropertyChangeEvent is pure virtual: false
+// QDynamicPropertyChangeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDynamicPropertyChangeEvent : public QDynamicPropertyChangeEvent {
 public:
+  virtual ~MyQDynamicPropertyChangeEvent() {}
+// void QDynamicPropertyChangeEvent(const class QByteArray &)
 MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeEvent(name) {}
 };
 
@@ -17,15 +20,14 @@ MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeE
 // /usr/include/qt/QtCore/qcoreevent.h:365
 // [-2] void QDynamicPropertyChangeEvent(const class QByteArray &)
 extern "C"
-void* C_ZN27QDynamicPropertyChangeEventC1ERK10QByteArray(const QByteArray & name) {
-  (MyQDynamicPropertyChangeEvent*)(0);
-  return  new MyQDynamicPropertyChangeEvent(name);
+void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(const QByteArray & name) {
+  return  new QDynamicPropertyChangeEvent(name);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:366
 // [-2] void ~QDynamicPropertyChangeEvent()
 extern "C"
-void C_ZN27QDynamicPropertyChangeEventD1Ev(void *this_) {
+void C_ZN27QDynamicPropertyChangeEventD2Ev(void *this_) {
   delete (QDynamicPropertyChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

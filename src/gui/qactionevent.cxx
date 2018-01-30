@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QActionEvent is pure virtual: false
+// QActionEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQActionEvent : public QActionEvent {
 public:
+  virtual ~MyQActionEvent() {}
+// void QActionEvent(int, class QAction *, class QAction *)
 MyQActionEvent(int type, QAction * action, QAction * before) : QActionEvent(type, action, before) {}
 };
 
@@ -17,15 +20,14 @@ MyQActionEvent(int type, QAction * action, QAction * before) : QActionEvent(type
 // /usr/include/qt/QtGui/qevent.h:727
 // [-2] void QActionEvent(int, class QAction *, class QAction *)
 extern "C"
-void* C_ZN12QActionEventC1EiP7QActionS1_(int type, QAction * action, QAction * before) {
-  (MyQActionEvent*)(0);
-  return  new MyQActionEvent(type, action, before);
+void* C_ZN12QActionEventC2EiP7QActionS1_(int type, QAction * action, QAction * before) {
+  return  new QActionEvent(type, action, before);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:728
 // [-2] void ~QActionEvent()
 extern "C"
-void C_ZN12QActionEventD1Ev(void *this_) {
+void C_ZN12QActionEventD2Ev(void *this_) {
   delete (QActionEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

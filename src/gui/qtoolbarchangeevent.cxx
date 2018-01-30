@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QToolBarChangeEvent is pure virtual: false
+// QToolBarChangeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQToolBarChangeEvent : public QToolBarChangeEvent {
 public:
+  virtual ~MyQToolBarChangeEvent() {}
+// void QToolBarChangeEvent(_Bool)
 MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 };
 
@@ -17,15 +20,14 @@ MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 // /usr/include/qt/QtGui/qevent.h:754
 // [-2] void QToolBarChangeEvent(_Bool)
 extern "C"
-void* C_ZN19QToolBarChangeEventC1Eb(bool t) {
-  (MyQToolBarChangeEvent*)(0);
-  return  new MyQToolBarChangeEvent(t);
+void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
+  return  new QToolBarChangeEvent(t);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:755
 // [-2] void ~QToolBarChangeEvent()
 extern "C"
-void C_ZN19QToolBarChangeEventD1Ev(void *this_) {
+void C_ZN19QToolBarChangeEventD2Ev(void *this_) {
   delete (QToolBarChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

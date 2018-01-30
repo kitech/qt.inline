@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QLayout is pure virtual: true
+// QLayout has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,44 +53,53 @@ extern "C" void set_callback_ZNK7QLayout13alignmentRectERK5QRect(void*cbfn)
 
 class MyQLayout : public QLayout {
 public:
+  virtual ~MyQLayout() {}
+// void QLayout(class QWidget *)
 MyQLayout(QWidget * parent) : QLayout(parent) {}
+// void QLayout()
 MyQLayout() : QLayout() {}
 // void widgetEvent(class QEvent *)
-// void widgetEvent(class QEvent *)
-virtual void widgetEvent(QEvent * arg0) {
-  if (callback_ZN7QLayout11widgetEventEP6QEvent != 0) {
-  // callback_ZN7QLayout11widgetEventEP6QEvent(arg0);
-}}
+  virtual void widgetEvent(QEvent * arg0) {
+    if (callback_ZN7QLayout11widgetEventEP6QEvent != 0) {
+      // callback_ZN7QLayout11widgetEventEP6QEvent(arg0);
+    }
+    QLayout::widgetEvent(arg0);
+  }
 // void childEvent(class QChildEvent *)
-// void childEvent(class QChildEvent *)
-virtual void childEvent(QChildEvent * e) {
-  if (callback_ZN7QLayout10childEventEP11QChildEvent != 0) {
-  // callback_ZN7QLayout10childEventEP11QChildEvent(e);
-}}
+  virtual void childEvent(QChildEvent * e) {
+    if (callback_ZN7QLayout10childEventEP11QChildEvent != 0) {
+      // callback_ZN7QLayout10childEventEP11QChildEvent(e);
+    }
+    QLayout::childEvent(e);
+  }
 // void addChildLayout(class QLayout *)
-// void addChildLayout(class QLayout *)
-virtual void addChildLayout(QLayout * l) {
-  if (callback_ZN7QLayout14addChildLayoutEPS_ != 0) {
-  // callback_ZN7QLayout14addChildLayoutEPS_(l);
-}}
+  virtual void addChildLayout(QLayout * l) {
+    if (callback_ZN7QLayout14addChildLayoutEPS_ != 0) {
+      // callback_ZN7QLayout14addChildLayoutEPS_(l);
+    }
+    QLayout::addChildLayout(l);
+  }
 // void addChildWidget(class QWidget *)
-// void addChildWidget(class QWidget *)
-virtual void addChildWidget(QWidget * w) {
-  if (callback_ZN7QLayout14addChildWidgetEP7QWidget != 0) {
-  // callback_ZN7QLayout14addChildWidgetEP7QWidget(w);
-}}
+  virtual void addChildWidget(QWidget * w) {
+    if (callback_ZN7QLayout14addChildWidgetEP7QWidget != 0) {
+      // callback_ZN7QLayout14addChildWidgetEP7QWidget(w);
+    }
+    QLayout::addChildWidget(w);
+  }
 // bool adoptLayout(class QLayout *)
-// bool adoptLayout(class QLayout *)
-virtual bool adoptLayout(QLayout * layout) {
-  if (callback_ZN7QLayout11adoptLayoutEPS_ != 0) {
-  // callback_ZN7QLayout11adoptLayoutEPS_(layout);
-}}
+  virtual bool adoptLayout(QLayout * layout) {
+    if (callback_ZN7QLayout11adoptLayoutEPS_ != 0) {
+      // callback_ZN7QLayout11adoptLayoutEPS_(layout);
+    }
+    return QLayout::adoptLayout(layout);
+  }
 // QRect alignmentRect(const class QRect &)
-// QRect alignmentRect(const class QRect &)
-virtual QRect alignmentRect(const QRect & arg0) {
-  if (callback_ZNK7QLayout13alignmentRectERK5QRect != 0) {
-  // callback_ZNK7QLayout13alignmentRectERK5QRect(arg0);
-}}
+  virtual QRect alignmentRect(const QRect & arg0) {
+    if (callback_ZNK7QLayout13alignmentRectERK5QRect != 0) {
+      // callback_ZNK7QLayout13alignmentRectERK5QRect(arg0);
+    }
+    return QLayout::alignmentRect(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -104,7 +114,7 @@ void* C_ZNK7QLayout10metaObjectEv(void *this_) {
 // [-2] void QLayout(class QWidget *)
 extern "C"
 void* C_ZN7QLayoutC1EP7QWidget(QWidget * parent) {
-  (MyQLayout*)(0);
+  auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout(parent);
 }
 // Public Visibility=Default Availability=Available
@@ -112,14 +122,14 @@ void* C_ZN7QLayoutC1EP7QWidget(QWidget * parent) {
 // [-2] void QLayout()
 extern "C"
 void* C_ZN7QLayoutC1Ev() {
-  (MyQLayout*)(0);
+  auto _nilp = (MyQLayout*)(0);
   return 0; // new MyQLayout();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:82
 // [-2] void ~QLayout()
 extern "C"
-void C_ZN7QLayoutD1Ev(void *this_) {
+void C_ZN7QLayoutD2Ev(void *this_) {
   delete (QLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

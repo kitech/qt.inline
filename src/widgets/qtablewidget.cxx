@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QTableWidget is pure virtual: false
+// QTableWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,44 +53,53 @@ extern "C" void set_callback_ZN12QTableWidget9dropEventEP10QDropEvent(void*cbfn)
 
 class MyQTableWidget : public QTableWidget {
 public:
+  virtual ~MyQTableWidget() {}
+// void QTableWidget(class QWidget *)
 MyQTableWidget(QWidget * parent) : QTableWidget(parent) {}
+// void QTableWidget(int, int, class QWidget *)
 MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, columns, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN12QTableWidget5eventEP6QEvent != 0) {
-  // callback_ZN12QTableWidget5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN12QTableWidget5eventEP6QEvent != 0) {
+      // callback_ZN12QTableWidget5eventEP6QEvent(e);
+    }
+    return QTableWidget::event(e);
+  }
 // bool dropMimeData(int, int, const class QMimeData *, Qt::DropAction)
-// bool dropMimeData(int, int, const class QMimeData *, Qt::DropAction)
-virtual bool dropMimeData(int row, int column, const QMimeData * data, Qt::DropAction action) {
-  if (callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE != 0) {
-  // callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(row, column, data, action);
-}}
+  virtual bool dropMimeData(int row, int column, const QMimeData * data, Qt::DropAction action) {
+    if (callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE != 0) {
+      // callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(row, column, data, action);
+    }
+    return QTableWidget::dropMimeData(row, column, data, action);
+  }
 // Qt::DropActions supportedDropActions()
-// Qt::DropActions supportedDropActions()
-virtual Qt::DropActions supportedDropActions() {
-  if (callback_ZNK12QTableWidget20supportedDropActionsEv != 0) {
-  // callback_ZNK12QTableWidget20supportedDropActionsEv();
-}}
+  virtual Qt::DropActions supportedDropActions() {
+    if (callback_ZNK12QTableWidget20supportedDropActionsEv != 0) {
+      // callback_ZNK12QTableWidget20supportedDropActionsEv();
+    }
+    return QTableWidget::supportedDropActions();
+  }
 // QModelIndex indexFromItem(class QTableWidgetItem *)
-// QModelIndex indexFromItem(class QTableWidgetItem *)
-virtual QModelIndex indexFromItem(QTableWidgetItem * item) {
-  if (callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem != 0) {
-  // callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem(item);
-}}
+  virtual QModelIndex indexFromItem(QTableWidgetItem * item) {
+    if (callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem != 0) {
+      // callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem(item);
+    }
+    return QTableWidget::indexFromItem(item);
+  }
 // QTableWidgetItem * itemFromIndex(const class QModelIndex &)
-// QTableWidgetItem * itemFromIndex(const class QModelIndex &)
-virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) {
-  if (callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex != 0) {
-  // callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex(index);
-}}
+  virtual QTableWidgetItem * itemFromIndex(const QModelIndex & index) {
+    if (callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex != 0) {
+      // callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex(index);
+    }
+    return QTableWidget::itemFromIndex(index);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * event) {
-  if (callback_ZN12QTableWidget9dropEventEP10QDropEvent != 0) {
-  // callback_ZN12QTableWidget9dropEventEP10QDropEvent(event);
-}}
+  virtual void dropEvent(QDropEvent * event) {
+    if (callback_ZN12QTableWidget9dropEventEP10QDropEvent != 0) {
+      // callback_ZN12QTableWidget9dropEventEP10QDropEvent(event);
+    }
+    QTableWidget::dropEvent(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -103,23 +113,23 @@ void* C_ZNK12QTableWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtablewidget.h:222
 // [-2] void QTableWidget(class QWidget *)
 extern "C"
-void* C_ZN12QTableWidgetC1EP7QWidget(QWidget * parent) {
-  (MyQTableWidget*)(0);
+void* C_ZN12QTableWidgetC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQTableWidget*)(0);
   return  new MyQTableWidget(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:223
 // [-2] void QTableWidget(int, int, class QWidget *)
 extern "C"
-void* C_ZN12QTableWidgetC1EiiP7QWidget(int rows, int columns, QWidget * parent) {
-  (MyQTableWidget*)(0);
+void* C_ZN12QTableWidgetC2EiiP7QWidget(int rows, int columns, QWidget * parent) {
+  auto _nilp = (MyQTableWidget*)(0);
   return  new MyQTableWidget(rows, columns, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:224
 // [-2] void ~QTableWidget()
 extern "C"
-void C_ZN12QTableWidgetD1Ev(void *this_) {
+void C_ZN12QTableWidgetD2Ev(void *this_) {
   delete (QTableWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

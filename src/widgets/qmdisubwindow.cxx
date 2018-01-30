@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QMdiSubWindow is pure virtual: false
+// QMdiSubWindow has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -150,127 +151,149 @@ extern "C" void set_callback_ZN13QMdiSubWindow10childEventEP11QChildEvent(void*c
 
 class MyQMdiSubWindow : public QMdiSubWindow {
 public:
+  virtual ~MyQMdiSubWindow() {}
+// void QMdiSubWindow(class QWidget *, Qt::WindowFlags)
 MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(parent, flags) {}
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * object, QEvent * event) {
-  if (callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent(object, event);
-}}
+  virtual bool eventFilter(QObject * object, QEvent * event) {
+    if (callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent(object, event);
+    }
+    return QMdiSubWindow::eventFilter(object, event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN13QMdiSubWindow5eventEP6QEvent != 0) {
-  // callback_ZN13QMdiSubWindow5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN13QMdiSubWindow5eventEP6QEvent != 0) {
+      // callback_ZN13QMdiSubWindow5eventEP6QEvent(event);
+    }
+    return QMdiSubWindow::event(event);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * showEvent) {
-  if (callback_ZN13QMdiSubWindow9showEventEP10QShowEvent != 0) {
-  // callback_ZN13QMdiSubWindow9showEventEP10QShowEvent(showEvent);
-}}
+  virtual void showEvent(QShowEvent * showEvent) {
+    if (callback_ZN13QMdiSubWindow9showEventEP10QShowEvent != 0) {
+      // callback_ZN13QMdiSubWindow9showEventEP10QShowEvent(showEvent);
+    }
+    QMdiSubWindow::showEvent(showEvent);
+  }
 // void hideEvent(class QHideEvent *)
-// void hideEvent(class QHideEvent *)
-virtual void hideEvent(QHideEvent * hideEvent) {
-  if (callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent != 0) {
-  // callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent(hideEvent);
-}}
+  virtual void hideEvent(QHideEvent * hideEvent) {
+    if (callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent != 0) {
+      // callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent(hideEvent);
+    }
+    QMdiSubWindow::hideEvent(hideEvent);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * changeEvent) {
-  if (callback_ZN13QMdiSubWindow11changeEventEP6QEvent != 0) {
-  // callback_ZN13QMdiSubWindow11changeEventEP6QEvent(changeEvent);
-}}
+  virtual void changeEvent(QEvent * changeEvent) {
+    if (callback_ZN13QMdiSubWindow11changeEventEP6QEvent != 0) {
+      // callback_ZN13QMdiSubWindow11changeEventEP6QEvent(changeEvent);
+    }
+    QMdiSubWindow::changeEvent(changeEvent);
+  }
 // void closeEvent(class QCloseEvent *)
-// void closeEvent(class QCloseEvent *)
-virtual void closeEvent(QCloseEvent * closeEvent) {
-  if (callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent != 0) {
-  // callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent(closeEvent);
-}}
+  virtual void closeEvent(QCloseEvent * closeEvent) {
+    if (callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent != 0) {
+      // callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent(closeEvent);
+    }
+    QMdiSubWindow::closeEvent(closeEvent);
+  }
 // void leaveEvent(class QEvent *)
-// void leaveEvent(class QEvent *)
-virtual void leaveEvent(QEvent * leaveEvent) {
-  if (callback_ZN13QMdiSubWindow10leaveEventEP6QEvent != 0) {
-  // callback_ZN13QMdiSubWindow10leaveEventEP6QEvent(leaveEvent);
-}}
+  virtual void leaveEvent(QEvent * leaveEvent) {
+    if (callback_ZN13QMdiSubWindow10leaveEventEP6QEvent != 0) {
+      // callback_ZN13QMdiSubWindow10leaveEventEP6QEvent(leaveEvent);
+    }
+    QMdiSubWindow::leaveEvent(leaveEvent);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * resizeEvent) {
-  if (callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent(resizeEvent);
-}}
+  virtual void resizeEvent(QResizeEvent * resizeEvent) {
+    if (callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent(resizeEvent);
+    }
+    QMdiSubWindow::resizeEvent(resizeEvent);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * timerEvent) {
-  if (callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent(timerEvent);
-}}
+  virtual void timerEvent(QTimerEvent * timerEvent) {
+    if (callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent(timerEvent);
+    }
+    QMdiSubWindow::timerEvent(timerEvent);
+  }
 // void moveEvent(class QMoveEvent *)
-// void moveEvent(class QMoveEvent *)
-virtual void moveEvent(QMoveEvent * moveEvent) {
-  if (callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent != 0) {
-  // callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent(moveEvent);
-}}
+  virtual void moveEvent(QMoveEvent * moveEvent) {
+    if (callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent != 0) {
+      // callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent(moveEvent);
+    }
+    QMdiSubWindow::moveEvent(moveEvent);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * paintEvent) {
-  if (callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent(paintEvent);
-}}
+  virtual void paintEvent(QPaintEvent * paintEvent) {
+    if (callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent(paintEvent);
+    }
+    QMdiSubWindow::paintEvent(paintEvent);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * mouseEvent) {
-  if (callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent(mouseEvent);
-}}
+  virtual void mousePressEvent(QMouseEvent * mouseEvent) {
+    if (callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent(mouseEvent);
+    }
+    QMdiSubWindow::mousePressEvent(mouseEvent);
+  }
 // void mouseDoubleClickEvent(class QMouseEvent *)
-// void mouseDoubleClickEvent(class QMouseEvent *)
-virtual void mouseDoubleClickEvent(QMouseEvent * mouseEvent) {
-  if (callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent != 0) {
-  // callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent(mouseEvent);
-}}
+  virtual void mouseDoubleClickEvent(QMouseEvent * mouseEvent) {
+    if (callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent != 0) {
+      // callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent(mouseEvent);
+    }
+    QMdiSubWindow::mouseDoubleClickEvent(mouseEvent);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
-  if (callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent(mouseEvent);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
+    if (callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent(mouseEvent);
+    }
+    QMdiSubWindow::mouseReleaseEvent(mouseEvent);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * mouseEvent) {
-  if (callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent(mouseEvent);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * mouseEvent) {
+    if (callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent(mouseEvent);
+    }
+    QMdiSubWindow::mouseMoveEvent(mouseEvent);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * keyEvent) {
-  if (callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent(keyEvent);
-}}
+  virtual void keyPressEvent(QKeyEvent * keyEvent) {
+    if (callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent(keyEvent);
+    }
+    QMdiSubWindow::keyPressEvent(keyEvent);
+  }
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * contextMenuEvent) {
-  if (callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent(contextMenuEvent);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * contextMenuEvent) {
+    if (callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent(contextMenuEvent);
+    }
+    QMdiSubWindow::contextMenuEvent(contextMenuEvent);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * focusInEvent) {
-  if (callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent(focusInEvent);
-}}
+  virtual void focusInEvent(QFocusEvent * focusInEvent) {
+    if (callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent(focusInEvent);
+    }
+    QMdiSubWindow::focusInEvent(focusInEvent);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * focusOutEvent) {
-  if (callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent(focusOutEvent);
-}}
+  virtual void focusOutEvent(QFocusEvent * focusOutEvent) {
+    if (callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent(focusOutEvent);
+    }
+    QMdiSubWindow::focusOutEvent(focusOutEvent);
+  }
 // void childEvent(class QChildEvent *)
-// void childEvent(class QChildEvent *)
-virtual void childEvent(QChildEvent * childEvent) {
-  if (callback_ZN13QMdiSubWindow10childEventEP11QChildEvent != 0) {
-  // callback_ZN13QMdiSubWindow10childEventEP11QChildEvent(childEvent);
-}}
+  virtual void childEvent(QChildEvent * childEvent) {
+    if (callback_ZN13QMdiSubWindow10childEventEP11QChildEvent != 0) {
+      // callback_ZN13QMdiSubWindow10childEventEP11QChildEvent(childEvent);
+    }
+    QMdiSubWindow::childEvent(childEvent);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -284,15 +307,15 @@ void* C_ZNK13QMdiSubWindow10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:69
 // [-2] void QMdiSubWindow(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN13QMdiSubWindowC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQMdiSubWindow*)(0);
+void* C_ZN13QMdiSubWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQMdiSubWindow*)(0);
   return  new MyQMdiSubWindow(parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdisubwindow.h:70
 // [-2] void ~QMdiSubWindow()
 extern "C"
-void C_ZN13QMdiSubWindowD1Ev(void *this_) {
+void C_ZN13QMdiSubWindowD2Ev(void *this_) {
   delete (QMdiSubWindow*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

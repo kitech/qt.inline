@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QImageReader is pure virtual: false
+// QImageReader has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQImageReader : public QImageReader {
 public:
+  virtual ~MyQImageReader() {}
+// void QImageReader()
 MyQImageReader() : QImageReader() {}
+// void QImageReader(class QIODevice *, const class QByteArray &)
 MyQImageReader(QIODevice * device, const QByteArray & format) : QImageReader(device, format) {}
+// void QImageReader(const class QString &, const class QByteArray &)
 MyQImageReader(const QString & fileName, const QByteArray & format) : QImageReader(fileName, format) {}
 };
 
@@ -19,31 +24,28 @@ MyQImageReader(const QString & fileName, const QByteArray & format) : QImageRead
 // /usr/include/qt/QtGui/qimagereader.h:71
 // [-2] void QImageReader()
 extern "C"
-void* C_ZN12QImageReaderC1Ev() {
-  (MyQImageReader*)(0);
-  return  new MyQImageReader();
+void* C_ZN12QImageReaderC2Ev() {
+  return  new QImageReader();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:72
 // [-2] void QImageReader(class QIODevice *, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageReaderC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
-  (MyQImageReader*)(0);
-  return  new MyQImageReader(device, format);
+void* C_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
+  return  new QImageReader(device, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:73
 // [-2] void QImageReader(const class QString &, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageReaderC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
-  (MyQImageReader*)(0);
-  return  new MyQImageReader(fileName, format);
+void* C_ZN12QImageReaderC2ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
+  return  new QImageReader(fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagereader.h:74
 // [-2] void ~QImageReader()
 extern "C"
-void C_ZN12QImageReaderD1Ev(void *this_) {
+void C_ZN12QImageReaderD2Ev(void *this_) {
   delete (QImageReader*)(this_);
 }
 // Public Visibility=Default Availability=Available

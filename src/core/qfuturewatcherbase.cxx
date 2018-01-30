@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QFutureWatcherBase is pure virtual: true
+// QFutureWatcherBase has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb
 
 class MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
+  virtual ~MyQFutureWatcherBase() {}
+// void QFutureWatcherBase(class QObject *)
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // void connectNotify(const class QMetaMethod &)
-// void connectNotify(const class QMetaMethod &)
-virtual void connectNotify(const QMetaMethod & signal) {
-  if (callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod != 0) {
-  // callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(signal);
-}}
+  virtual void connectNotify(const QMetaMethod & signal) {
+    if (callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod != 0) {
+      // callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(signal);
+    }
+    QFutureWatcherBase::connectNotify(signal);
+  }
 // void disconnectNotify(const class QMetaMethod &)
-// void disconnectNotify(const class QMetaMethod &)
-virtual void disconnectNotify(const QMetaMethod & signal) {
-  if (callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod != 0) {
-  // callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(signal);
-}}
+  virtual void disconnectNotify(const QMetaMethod & signal) {
+    if (callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod != 0) {
+      // callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(signal);
+    }
+    QFutureWatcherBase::disconnectNotify(signal);
+  }
 // void connectOutputInterface()
-// void connectOutputInterface()
-virtual void connectOutputInterface() {
-  if (callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv != 0) {
-  // callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv();
-}}
+  virtual void connectOutputInterface() {
+    if (callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv != 0) {
+      // callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv();
+    }
+    QFutureWatcherBase::connectOutputInterface();
+  }
 // void disconnectOutputInterface(_Bool)
-// void disconnectOutputInterface(_Bool)
-virtual void disconnectOutputInterface(bool pendingAssignment) {
-  if (callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb != 0) {
-  // callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(pendingAssignment);
-}}
+  virtual void disconnectOutputInterface(bool pendingAssignment) {
+    if (callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb != 0) {
+      // callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(pendingAssignment);
+    }
+    QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -77,7 +84,7 @@ void* C_ZNK18QFutureWatcherBase10metaObjectEv(void *this_) {
 // [-2] void QFutureWatcherBase(class QObject *)
 extern "C"
 void* C_ZN18QFutureWatcherBaseC1EP7QObject(QObject * parent) {
-  (MyQFutureWatcherBase*)(0);
+  auto _nilp = (MyQFutureWatcherBase*)(0);
   return 0; // new MyQFutureWatcherBase(parent);
 }
 // Public Visibility=Default Availability=Available

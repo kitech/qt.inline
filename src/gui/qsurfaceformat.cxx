@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QSurfaceFormat is pure virtual: false
+// QSurfaceFormat has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSurfaceFormat : public QSurfaceFormat {
 public:
+  virtual ~MyQSurfaceFormat() {}
+// void QSurfaceFormat()
 MyQSurfaceFormat() : QSurfaceFormat() {}
 };
 
@@ -17,15 +20,14 @@ MyQSurfaceFormat() : QSurfaceFormat() {}
 // /usr/include/qt/QtGui/qsurfaceformat.h:94
 // [-2] void QSurfaceFormat()
 extern "C"
-void* C_ZN14QSurfaceFormatC1Ev() {
-  (MyQSurfaceFormat*)(0);
-  return  new MyQSurfaceFormat();
+void* C_ZN14QSurfaceFormatC2Ev() {
+  return  new QSurfaceFormat();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:98
 // [-2] void ~QSurfaceFormat()
 extern "C"
-void C_ZN14QSurfaceFormatD1Ev(void *this_) {
+void C_ZN14QSurfaceFormatD2Ev(void *this_) {
   delete (QSurfaceFormat*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QTranslator is pure virtual: false
+// QTranslator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTranslator : public QTranslator {
 public:
+  virtual ~MyQTranslator() {}
+// void QTranslator(class QObject *)
 MyQTranslator(QObject * parent) : QTranslator(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK11QTranslator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qtranslator.h:58
 // [-2] void QTranslator(class QObject *)
 extern "C"
-void* C_ZN11QTranslatorC1EP7QObject(QObject * parent) {
-  (MyQTranslator*)(0);
-  return  new MyQTranslator(parent);
+void* C_ZN11QTranslatorC2EP7QObject(QObject * parent) {
+  return  new QTranslator(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:59
 // [-2] void ~QTranslator()
 extern "C"
-void C_ZN11QTranslatorD1Ev(void *this_) {
+void C_ZN11QTranslatorD2Ev(void *this_) {
   delete (QTranslator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QXmlStreamEntityDeclaration is pure virtual: false
+// QXmlStreamEntityDeclaration has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamEntityDeclaration : public QXmlStreamEntityDeclaration {
 public:
+  virtual ~MyQXmlStreamEntityDeclaration() {}
+// void QXmlStreamEntityDeclaration()
 MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
 };
 
@@ -17,15 +20,14 @@ MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
 // /usr/include/qt/QtCore/qxmlstream.h:286
 // [-2] void QXmlStreamEntityDeclaration()
 extern "C"
-void* C_ZN27QXmlStreamEntityDeclarationC1Ev() {
-  (MyQXmlStreamEntityDeclaration*)(0);
-  return  new MyQXmlStreamEntityDeclaration();
+void* C_ZN27QXmlStreamEntityDeclarationC2Ev() {
+  return  new QXmlStreamEntityDeclaration();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:288
 // [-2] void ~QXmlStreamEntityDeclaration()
 extern "C"
-void C_ZN27QXmlStreamEntityDeclarationD1Ev(void *this_) {
+void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_) {
   delete (QXmlStreamEntityDeclaration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

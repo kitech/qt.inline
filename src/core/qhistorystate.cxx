@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QHistoryState is pure virtual: false
+// QHistoryState has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN13QHistoryState5eventEP6QEvent(void*cbfn)
 
 class MyQHistoryState : public QHistoryState {
 public:
+  virtual ~MyQHistoryState() {}
+// void QHistoryState(class QState *)
 MyQHistoryState(QState * parent) : QHistoryState(parent) {}
+// void QHistoryState(enum QHistoryState::HistoryType, class QState *)
 MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryState(type, parent) {}
 // void onEntry(class QEvent *)
-// void onEntry(class QEvent *)
-virtual void onEntry(QEvent * event) {
-  if (callback_ZN13QHistoryState7onEntryEP6QEvent != 0) {
-  // callback_ZN13QHistoryState7onEntryEP6QEvent(event);
-}}
+  virtual void onEntry(QEvent * event) {
+    if (callback_ZN13QHistoryState7onEntryEP6QEvent != 0) {
+      // callback_ZN13QHistoryState7onEntryEP6QEvent(event);
+    }
+    QHistoryState::onEntry(event);
+  }
 // void onExit(class QEvent *)
-// void onExit(class QEvent *)
-virtual void onExit(QEvent * event) {
-  if (callback_ZN13QHistoryState6onExitEP6QEvent != 0) {
-  // callback_ZN13QHistoryState6onExitEP6QEvent(event);
-}}
+  virtual void onExit(QEvent * event) {
+    if (callback_ZN13QHistoryState6onExitEP6QEvent != 0) {
+      // callback_ZN13QHistoryState6onExitEP6QEvent(event);
+    }
+    QHistoryState::onExit(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN13QHistoryState5eventEP6QEvent != 0) {
-  // callback_ZN13QHistoryState5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN13QHistoryState5eventEP6QEvent != 0) {
+      // callback_ZN13QHistoryState5eventEP6QEvent(e);
+    }
+    return QHistoryState::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK13QHistoryState10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qhistorystate.h:64
 // [-2] void QHistoryState(class QState *)
 extern "C"
-void* C_ZN13QHistoryStateC1EP6QState(QState * parent) {
-  (MyQHistoryState*)(0);
+void* C_ZN13QHistoryStateC2EP6QState(QState * parent) {
+  auto _nilp = (MyQHistoryState*)(0);
   return  new MyQHistoryState(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:65
 // [-2] void QHistoryState(enum QHistoryState::HistoryType, class QState *)
 extern "C"
-void* C_ZN13QHistoryStateC1ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType type, QState * parent) {
-  (MyQHistoryState*)(0);
+void* C_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState(QHistoryState::HistoryType type, QState * parent) {
+  auto _nilp = (MyQHistoryState*)(0);
   return  new MyQHistoryState(type, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:66
 // [-2] void ~QHistoryState()
 extern "C"
-void C_ZN13QHistoryStateD1Ev(void *this_) {
+void C_ZN13QHistoryStateD2Ev(void *this_) {
   delete (QHistoryState*)(this_);
 }
 // Public Visibility=Default Availability=Available

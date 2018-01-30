@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QSplitter is pure virtual: false
+// QSplitter has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,56 +67,67 @@ extern "C" void set_callback_ZN9QSplitter20closestLegalPositionEii(void*cbfn)
 
 class MyQSplitter : public QSplitter {
 public:
+  virtual ~MyQSplitter() {}
+// void QSplitter(class QWidget *)
 MyQSplitter(QWidget * parent) : QSplitter(parent) {}
+// void QSplitter(Qt::Orientation, class QWidget *)
 MyQSplitter(Qt::Orientation arg0, QWidget * parent) : QSplitter(arg0, parent) {}
 // QSplitterHandle * createHandle()
-// QSplitterHandle * createHandle()
-virtual QSplitterHandle * createHandle() {
-  if (callback_ZN9QSplitter12createHandleEv != 0) {
-  // callback_ZN9QSplitter12createHandleEv();
-}}
+  virtual QSplitterHandle * createHandle() {
+    if (callback_ZN9QSplitter12createHandleEv != 0) {
+      // callback_ZN9QSplitter12createHandleEv();
+    }
+    return QSplitter::createHandle();
+  }
 // void childEvent(class QChildEvent *)
-// void childEvent(class QChildEvent *)
-virtual void childEvent(QChildEvent * arg0) {
-  if (callback_ZN9QSplitter10childEventEP11QChildEvent != 0) {
-  // callback_ZN9QSplitter10childEventEP11QChildEvent(arg0);
-}}
+  virtual void childEvent(QChildEvent * arg0) {
+    if (callback_ZN9QSplitter10childEventEP11QChildEvent != 0) {
+      // callback_ZN9QSplitter10childEventEP11QChildEvent(arg0);
+    }
+    QSplitter::childEvent(arg0);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN9QSplitter5eventEP6QEvent != 0) {
-  // callback_ZN9QSplitter5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN9QSplitter5eventEP6QEvent != 0) {
+      // callback_ZN9QSplitter5eventEP6QEvent(arg0);
+    }
+    return QSplitter::event(arg0);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * arg0) {
-  if (callback_ZN9QSplitter11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN9QSplitter11resizeEventEP12QResizeEvent(arg0);
-}}
+  virtual void resizeEvent(QResizeEvent * arg0) {
+    if (callback_ZN9QSplitter11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN9QSplitter11resizeEventEP12QResizeEvent(arg0);
+    }
+    QSplitter::resizeEvent(arg0);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * arg0) {
-  if (callback_ZN9QSplitter11changeEventEP6QEvent != 0) {
-  // callback_ZN9QSplitter11changeEventEP6QEvent(arg0);
-}}
+  virtual void changeEvent(QEvent * arg0) {
+    if (callback_ZN9QSplitter11changeEventEP6QEvent != 0) {
+      // callback_ZN9QSplitter11changeEventEP6QEvent(arg0);
+    }
+    QSplitter::changeEvent(arg0);
+  }
 // void moveSplitter(int, int)
-// void moveSplitter(int, int)
-virtual void moveSplitter(int pos, int index) {
-  if (callback_ZN9QSplitter12moveSplitterEii != 0) {
-  // callback_ZN9QSplitter12moveSplitterEii(pos, index);
-}}
+  virtual void moveSplitter(int pos, int index) {
+    if (callback_ZN9QSplitter12moveSplitterEii != 0) {
+      // callback_ZN9QSplitter12moveSplitterEii(pos, index);
+    }
+    QSplitter::moveSplitter(pos, index);
+  }
 // void setRubberBand(int)
-// void setRubberBand(int)
-virtual void setRubberBand(int position) {
-  if (callback_ZN9QSplitter13setRubberBandEi != 0) {
-  // callback_ZN9QSplitter13setRubberBandEi(position);
-}}
+  virtual void setRubberBand(int position) {
+    if (callback_ZN9QSplitter13setRubberBandEi != 0) {
+      // callback_ZN9QSplitter13setRubberBandEi(position);
+    }
+    QSplitter::setRubberBand(position);
+  }
 // int closestLegalPosition(int, int)
-// int closestLegalPosition(int, int)
-virtual int closestLegalPosition(int arg0, int arg1) {
-  if (callback_ZN9QSplitter20closestLegalPositionEii != 0) {
-  // callback_ZN9QSplitter20closestLegalPositionEii(arg0, arg1);
-}}
+  virtual int closestLegalPosition(int arg0, int arg1) {
+    if (callback_ZN9QSplitter20closestLegalPositionEii != 0) {
+      // callback_ZN9QSplitter20closestLegalPositionEii(arg0, arg1);
+    }
+    return QSplitter::closestLegalPosition(arg0, arg1);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -129,23 +141,23 @@ void* C_ZNK9QSplitter10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsplitter.h:67
 // [-2] void QSplitter(class QWidget *)
 extern "C"
-void* C_ZN9QSplitterC1EP7QWidget(QWidget * parent) {
-  (MyQSplitter*)(0);
+void* C_ZN9QSplitterC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQSplitter*)(0);
   return  new MyQSplitter(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:68
 // [-2] void QSplitter(Qt::Orientation, class QWidget *)
 extern "C"
-void* C_ZN9QSplitterC1EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
-  (MyQSplitter*)(0);
+void* C_ZN9QSplitterC2EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
+  auto _nilp = (MyQSplitter*)(0);
   return  new MyQSplitter(arg0, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplitter.h:69
 // [-2] void ~QSplitter()
 extern "C"
-void C_ZN9QSplitterD1Ev(void *this_) {
+void C_ZN9QSplitterD2Ev(void *this_) {
   delete (QSplitter*)(this_);
 }
 // Public Visibility=Default Availability=Available

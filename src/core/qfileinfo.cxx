@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QFileInfo is pure virtual: false
+// QFileInfo has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFileInfo : public QFileInfo {
 public:
+  virtual ~MyQFileInfo() {}
+// void QFileInfo()
 MyQFileInfo() : QFileInfo() {}
+// void QFileInfo(const class QString &)
 MyQFileInfo(const QString & file) : QFileInfo(file) {}
+// void QFileInfo(const class QFile &)
 MyQFileInfo(const QFile & file) : QFileInfo(file) {}
+// void QFileInfo(const class QDir &, const class QString &)
 MyQFileInfo(const QDir & dir, const QString & file) : QFileInfo(dir, file) {}
 };
 
@@ -20,39 +26,35 @@ MyQFileInfo(const QDir & dir, const QString & file) : QFileInfo(dir, file) {}
 // /usr/include/qt/QtCore/qfileinfo.h:62
 // [-2] void QFileInfo()
 extern "C"
-void* C_ZN9QFileInfoC1Ev() {
-  (MyQFileInfo*)(0);
-  return  new MyQFileInfo();
+void* C_ZN9QFileInfoC2Ev() {
+  return  new QFileInfo();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:63
 // [-2] void QFileInfo(const class QString &)
 extern "C"
-void* C_ZN9QFileInfoC1ERK7QString(const QString & file) {
-  (MyQFileInfo*)(0);
-  return  new MyQFileInfo(file);
+void* C_ZN9QFileInfoC2ERK7QString(const QString & file) {
+  return  new QFileInfo(file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:64
 // [-2] void QFileInfo(const class QFile &)
 extern "C"
-void* C_ZN9QFileInfoC1ERK5QFile(const QFile & file) {
-  (MyQFileInfo*)(0);
-  return  new MyQFileInfo(file);
+void* C_ZN9QFileInfoC2ERK5QFile(const QFile & file) {
+  return  new QFileInfo(file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:65
 // [-2] void QFileInfo(const class QDir &, const class QString &)
 extern "C"
-void* C_ZN9QFileInfoC1ERK4QDirRK7QString(const QDir & dir, const QString & file) {
-  (MyQFileInfo*)(0);
-  return  new MyQFileInfo(dir, file);
+void* C_ZN9QFileInfoC2ERK4QDirRK7QString(const QDir & dir, const QString & file) {
+  return  new QFileInfo(dir, file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:67
 // [-2] void ~QFileInfo()
 extern "C"
-void C_ZN9QFileInfoD1Ev(void *this_) {
+void C_ZN9QFileInfoD2Ev(void *this_) {
   delete (QFileInfo*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

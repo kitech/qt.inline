@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QKeyEventTransition is pure virtual: false
+// QKeyEventTransition has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN19QKeyEventTransition9eventTestEP6QEvent(void*cbf
 
 class MyQKeyEventTransition : public QKeyEventTransition {
 public:
+  virtual ~MyQKeyEventTransition() {}
+// void QKeyEventTransition(class QState *)
 MyQKeyEventTransition(QState * sourceState) : QKeyEventTransition(sourceState) {}
+// void QKeyEventTransition(class QObject *, class QEvent::Type, int, class QState *)
 MyQKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sourceState) : QKeyEventTransition(object, type, key, sourceState) {}
 // void onTransition(class QEvent *)
-// void onTransition(class QEvent *)
-virtual void onTransition(QEvent * event) {
-  if (callback_ZN19QKeyEventTransition12onTransitionEP6QEvent != 0) {
-  // callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(event);
-}}
+  virtual void onTransition(QEvent * event) {
+    if (callback_ZN19QKeyEventTransition12onTransitionEP6QEvent != 0) {
+      // callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(event);
+    }
+    QKeyEventTransition::onTransition(event);
+  }
 // bool eventTest(class QEvent *)
-// bool eventTest(class QEvent *)
-virtual bool eventTest(QEvent * event) {
-  if (callback_ZN19QKeyEventTransition9eventTestEP6QEvent != 0) {
-  // callback_ZN19QKeyEventTransition9eventTestEP6QEvent(event);
-}}
+  virtual bool eventTest(QEvent * event) {
+    if (callback_ZN19QKeyEventTransition9eventTestEP6QEvent != 0) {
+      // callback_ZN19QKeyEventTransition9eventTestEP6QEvent(event);
+    }
+    return QKeyEventTransition::eventTest(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK19QKeyEventTransition10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:57
 // [-2] void QKeyEventTransition(class QState *)
 extern "C"
-void* C_ZN19QKeyEventTransitionC1EP6QState(QState * sourceState) {
-  (MyQKeyEventTransition*)(0);
+void* C_ZN19QKeyEventTransitionC2EP6QState(QState * sourceState) {
+  auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(sourceState);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:58
 // [-2] void QKeyEventTransition(class QObject *, class QEvent::Type, int, class QState *)
 extern "C"
-void* C_ZN19QKeyEventTransitionC1EP7QObjectN6QEvent4TypeEiP6QState(QObject * object, QEvent::Type type, int key, QState * sourceState) {
-  (MyQKeyEventTransition*)(0);
+void* C_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState(QObject * object, QEvent::Type type, int key, QState * sourceState) {
+  auto _nilp = (MyQKeyEventTransition*)(0);
   return  new MyQKeyEventTransition(object, type, key, sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:60
 // [-2] void ~QKeyEventTransition()
 extern "C"
-void C_ZN19QKeyEventTransitionD1Ev(void *this_) {
+void C_ZN19QKeyEventTransitionD2Ev(void *this_) {
   delete (QKeyEventTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available

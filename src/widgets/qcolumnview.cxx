@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QColumnView is pure virtual: false
+// QColumnView has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -87,73 +88,86 @@ extern "C" void set_callback_ZNK11QColumnView16initializeColumnEP17QAbstractItem
 
 class MyQColumnView : public QColumnView {
 public:
+  virtual ~MyQColumnView() {}
+// void QColumnView(class QWidget *)
 MyQColumnView(QWidget * parent) : QColumnView(parent) {}
 // bool isIndexHidden(const class QModelIndex &)
-// bool isIndexHidden(const class QModelIndex &)
-virtual bool isIndexHidden(const QModelIndex & index) {
-  if (callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex != 0) {
-  // callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex(index);
-}}
+  virtual bool isIndexHidden(const QModelIndex & index) {
+    if (callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex != 0) {
+      // callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex(index);
+    }
+    return QColumnView::isIndexHidden(index);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN11QColumnView11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN11QColumnView11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN11QColumnView11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN11QColumnView11resizeEventEP12QResizeEvent(event);
+    }
+    QColumnView::resizeEvent(event);
+  }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-// void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
-  if (callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
-  // callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
-}}
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+    if (callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
+      // callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
+    }
+    QColumnView::setSelection(rect, command);
+  }
 // QRegion visualRegionForSelection(const class QItemSelection &)
-// QRegion visualRegionForSelection(const class QItemSelection &)
-virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-  if (callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection != 0) {
-  // callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection(selection);
-}}
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
+    if (callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection != 0) {
+      // callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection(selection);
+    }
+    return QColumnView::visualRegionForSelection(selection);
+  }
 // int horizontalOffset()
-// int horizontalOffset()
-virtual int horizontalOffset() {
-  if (callback_ZNK11QColumnView16horizontalOffsetEv != 0) {
-  // callback_ZNK11QColumnView16horizontalOffsetEv();
-}}
+  virtual int horizontalOffset() {
+    if (callback_ZNK11QColumnView16horizontalOffsetEv != 0) {
+      // callback_ZNK11QColumnView16horizontalOffsetEv();
+    }
+    return QColumnView::horizontalOffset();
+  }
 // int verticalOffset()
-// int verticalOffset()
-virtual int verticalOffset() {
-  if (callback_ZNK11QColumnView14verticalOffsetEv != 0) {
-  // callback_ZNK11QColumnView14verticalOffsetEv();
-}}
+  virtual int verticalOffset() {
+    if (callback_ZNK11QColumnView14verticalOffsetEv != 0) {
+      // callback_ZNK11QColumnView14verticalOffsetEv();
+    }
+    return QColumnView::verticalOffset();
+  }
 // void rowsInserted(const class QModelIndex &, int, int)
-// void rowsInserted(const class QModelIndex &, int, int)
-virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
-  if (callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii != 0) {
-  // callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii(parent, start, end);
-}}
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+    if (callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii != 0) {
+      // callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii(parent, start, end);
+    }
+    QColumnView::rowsInserted(parent, start, end);
+  }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
-// void currentChanged(const class QModelIndex &, const class QModelIndex &)
-virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
-  if (callback_ZN11QColumnView14currentChangedERK11QModelIndexS2_ != 0) {
-  // callback_ZN11QColumnView14currentChangedERK11QModelIndexS2_(current, previous);
-}}
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+    if (callback_ZN11QColumnView14currentChangedERK11QModelIndexS2_ != 0) {
+      // callback_ZN11QColumnView14currentChangedERK11QModelIndexS2_(current, previous);
+    }
+    QColumnView::currentChanged(current, previous);
+  }
 // void scrollContentsBy(int, int)
-// void scrollContentsBy(int, int)
-virtual void scrollContentsBy(int dx, int dy) {
-  if (callback_ZN11QColumnView16scrollContentsByEii != 0) {
-  // callback_ZN11QColumnView16scrollContentsByEii(dx, dy);
-}}
+  virtual void scrollContentsBy(int dx, int dy) {
+    if (callback_ZN11QColumnView16scrollContentsByEii != 0) {
+      // callback_ZN11QColumnView16scrollContentsByEii(dx, dy);
+    }
+    QColumnView::scrollContentsBy(dx, dy);
+  }
 // QAbstractItemView * createColumn(const class QModelIndex &)
-// QAbstractItemView * createColumn(const class QModelIndex &)
-virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex) {
-  if (callback_ZN11QColumnView12createColumnERK11QModelIndex != 0) {
-  // callback_ZN11QColumnView12createColumnERK11QModelIndex(rootIndex);
-}}
+  virtual QAbstractItemView * createColumn(const QModelIndex & rootIndex) {
+    if (callback_ZN11QColumnView12createColumnERK11QModelIndex != 0) {
+      // callback_ZN11QColumnView12createColumnERK11QModelIndex(rootIndex);
+    }
+    return QColumnView::createColumn(rootIndex);
+  }
 // void initializeColumn(class QAbstractItemView *)
-// void initializeColumn(class QAbstractItemView *)
-virtual void initializeColumn(QAbstractItemView * column) {
-  if (callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView != 0) {
-  // callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(column);
-}}
+  virtual void initializeColumn(QAbstractItemView * column) {
+    if (callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView != 0) {
+      // callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(column);
+    }
+    QColumnView::initializeColumn(column);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -174,15 +188,15 @@ void C_ZN11QColumnView19updatePreviewWidgetERK11QModelIndex(void *this_, const Q
 // /usr/include/qt/QtWidgets/qcolumnview.h:61
 // [-2] void QColumnView(class QWidget *)
 extern "C"
-void* C_ZN11QColumnViewC1EP7QWidget(QWidget * parent) {
-  (MyQColumnView*)(0);
+void* C_ZN11QColumnViewC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQColumnView*)(0);
   return  new MyQColumnView(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolumnview.h:62
 // [-2] void ~QColumnView()
 extern "C"
-void C_ZN11QColumnViewD1Ev(void *this_) {
+void C_ZN11QColumnViewD2Ev(void *this_) {
   delete (QColumnView*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

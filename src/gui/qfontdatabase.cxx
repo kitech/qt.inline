@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QFontDatabase is pure virtual: false
+// QFontDatabase has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFontDatabase : public QFontDatabase {
 public:
+  virtual ~MyQFontDatabase() {}
+// void QFontDatabase()
 MyQFontDatabase() : QFontDatabase() {}
 };
 
@@ -17,9 +20,8 @@ MyQFontDatabase() : QFontDatabase() {}
 // /usr/include/qt/QtGui/qfontdatabase.h:118
 // [-2] void QFontDatabase()
 extern "C"
-void* C_ZN13QFontDatabaseC1Ev() {
-  (MyQFontDatabase*)(0);
-  return  new MyQFontDatabase();
+void* C_ZN13QFontDatabaseC2Ev() {
+  return  new QFontDatabase();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontdatabase.h:127

@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QLine is pure virtual: false
+// QLine has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLine : public QLine {
 public:
+  virtual ~MyQLine() {}
+// void QLine()
 MyQLine() : QLine() {}
+// void QLine(const class QPoint &, const class QPoint &)
 MyQLine(const QPoint & pt1, const QPoint & pt2) : QLine(pt1, pt2) {}
+// void QLine(int, int, int, int)
 MyQLine(int x1, int y1, int x2, int y2) : QLine(x1, y1, x2, y2) {}
 };
 
@@ -19,25 +24,22 @@ MyQLine(int x1, int y1, int x2, int y2) : QLine(x1, y1, x2, y2) {}
 // /usr/include/qt/QtCore/qline.h:55
 // [-2] void QLine()
 extern "C"
-void* C_ZN5QLineC1Ev() {
-  (MyQLine*)(0);
-  return  new MyQLine();
+void* C_ZN5QLineC2Ev() {
+  return  new QLine();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:56
 // [-2] void QLine(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN5QLineC1ERK6QPointS2_(const QPoint & pt1, const QPoint & pt2) {
-  (MyQLine*)(0);
-  return  new MyQLine(pt1, pt2);
+void* C_ZN5QLineC2ERK6QPointS2_(const QPoint & pt1, const QPoint & pt2) {
+  return  new QLine(pt1, pt2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:57
 // [-2] void QLine(int, int, int, int)
 extern "C"
-void* C_ZN5QLineC1Eiiii(int x1, int y1, int x2, int y2) {
-  (MyQLine*)(0);
-  return  new MyQLine(x1, y1, x2, y2);
+void* C_ZN5QLineC2Eiiii(int x1, int y1, int x2, int y2) {
+  return  new QLine(x1, y1, x2, y2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:59

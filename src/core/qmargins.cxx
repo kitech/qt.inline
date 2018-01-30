@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QMargins is pure virtual: false
+// QMargins has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMargins : public QMargins {
 public:
+  virtual ~MyQMargins() {}
+// void QMargins()
 MyQMargins() : QMargins() {}
+// void QMargins(int, int, int, int)
 MyQMargins(int left, int top, int right, int bottom) : QMargins(left, top, right, bottom) {}
 };
 
@@ -18,17 +22,15 @@ MyQMargins(int left, int top, int right, int bottom) : QMargins(left, top, right
 // /usr/include/qt/QtCore/qmargins.h:54
 // [-2] void QMargins()
 extern "C"
-void* C_ZN8QMarginsC1Ev() {
-  (MyQMargins*)(0);
-  return  new MyQMargins();
+void* C_ZN8QMarginsC2Ev() {
+  return  new QMargins();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:55
 // [-2] void QMargins(int, int, int, int)
 extern "C"
-void* C_ZN8QMarginsC1Eiiii(int left, int top, int right, int bottom) {
-  (MyQMargins*)(0);
-  return  new MyQMargins(left, top, right, bottom);
+void* C_ZN8QMarginsC2Eiiii(int left, int top, int right, int bottom) {
+  return  new QMargins(left, top, right, bottom);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:57

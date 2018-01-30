@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QCompleter is pure virtual: false
+// QCompleter has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,21 +25,27 @@ extern "C" void set_callback_ZN10QCompleter5eventEP6QEvent(void*cbfn)
 
 class MyQCompleter : public QCompleter {
 public:
+  virtual ~MyQCompleter() {}
+// void QCompleter(class QObject *)
 MyQCompleter(QObject * parent) : QCompleter(parent) {}
+// void QCompleter(class QAbstractItemModel *, class QObject *)
 MyQCompleter(QAbstractItemModel * model, QObject * parent) : QCompleter(model, parent) {}
+// void QCompleter(const class QStringList &, class QObject *)
 MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(completions, parent) {}
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * o, QEvent * e) {
-  if (callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(o, e);
-}}
+  virtual bool eventFilter(QObject * o, QEvent * e) {
+    if (callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(o, e);
+    }
+    return QCompleter::eventFilter(o, e);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN10QCompleter5eventEP6QEvent != 0) {
-  // callback_ZN10QCompleter5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN10QCompleter5eventEP6QEvent != 0) {
+      // callback_ZN10QCompleter5eventEP6QEvent(arg0);
+    }
+    return QCompleter::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -52,31 +59,31 @@ void* C_ZNK10QCompleter10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcompleter.h:85
 // [-2] void QCompleter(class QObject *)
 extern "C"
-void* C_ZN10QCompleterC1EP7QObject(QObject * parent) {
-  (MyQCompleter*)(0);
+void* C_ZN10QCompleterC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:86
 // [-2] void QCompleter(class QAbstractItemModel *, class QObject *)
 extern "C"
-void* C_ZN10QCompleterC1EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
-  (MyQCompleter*)(0);
+void* C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
+  auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(model, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:88
 // [-2] void QCompleter(const class QStringList &, class QObject *)
 extern "C"
-void* C_ZN10QCompleterC1ERK11QStringListP7QObject(const QStringList & completions, QObject * parent) {
-  (MyQCompleter*)(0);
+void* C_ZN10QCompleterC2ERK11QStringListP7QObject(const QStringList & completions, QObject * parent) {
+  auto _nilp = (MyQCompleter*)(0);
   return  new MyQCompleter(completions, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:90
 // [-2] void ~QCompleter()
 extern "C"
-void C_ZN10QCompleterD1Ev(void *this_) {
+void C_ZN10QCompleterD2Ev(void *this_) {
   delete (QCompleter*)(this_);
 }
 // Public Visibility=Default Availability=Available

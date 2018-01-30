@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QStorageInfo is pure virtual: false
+// QStorageInfo has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStorageInfo : public QStorageInfo {
 public:
+  virtual ~MyQStorageInfo() {}
+// void QStorageInfo()
 MyQStorageInfo() : QStorageInfo() {}
+// void QStorageInfo(const class QString &)
 MyQStorageInfo(const QString & path) : QStorageInfo(path) {}
+// void QStorageInfo(const class QDir &)
 MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
 };
 
@@ -19,31 +24,28 @@ MyQStorageInfo(const QDir & dir) : QStorageInfo(dir) {}
 // /usr/include/qt/QtCore/qstorageinfo.h:58
 // [-2] void QStorageInfo()
 extern "C"
-void* C_ZN12QStorageInfoC1Ev() {
-  (MyQStorageInfo*)(0);
-  return  new MyQStorageInfo();
+void* C_ZN12QStorageInfoC2Ev() {
+  return  new QStorageInfo();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:59
 // [-2] void QStorageInfo(const class QString &)
 extern "C"
-void* C_ZN12QStorageInfoC1ERK7QString(const QString & path) {
-  (MyQStorageInfo*)(0);
-  return  new MyQStorageInfo(path);
+void* C_ZN12QStorageInfoC2ERK7QString(const QString & path) {
+  return  new QStorageInfo(path);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:60
 // [-2] void QStorageInfo(const class QDir &)
 extern "C"
-void* C_ZN12QStorageInfoC1ERK4QDir(const QDir & dir) {
-  (MyQStorageInfo*)(0);
-  return  new MyQStorageInfo(dir);
+void* C_ZN12QStorageInfoC2ERK4QDir(const QDir & dir) {
+  return  new QStorageInfo(dir);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:62
 // [-2] void ~QStorageInfo()
 extern "C"
-void C_ZN12QStorageInfoD1Ev(void *this_) {
+void C_ZN12QStorageInfoD2Ev(void *this_) {
   delete (QStorageInfo*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

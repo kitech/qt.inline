@@ -4,19 +4,21 @@
 #include <QtCore>
 
 // QThreadStorageData is pure virtual: false
+// QThreadStorageData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQThreadStorageData : public QThreadStorageData {
 public:
+  virtual ~MyQThreadStorageData() {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadstorage.h:54
 // [-2] void ~QThreadStorageData()
 extern "C"
-void C_ZN18QThreadStorageDataD1Ev(void *this_) {
+void C_ZN18QThreadStorageDataD2Ev(void *this_) {
   delete (QThreadStorageData*)(this_);
 }
 // Public Visibility=Default Availability=Available

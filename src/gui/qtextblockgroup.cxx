@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextBlockGroup is pure virtual: false
+// QTextBlockGroup has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,26 +46,31 @@ extern "C" void set_callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBl
 
 class MyQTextBlockGroup : public QTextBlockGroup {
 public:
+  virtual ~MyQTextBlockGroup() {}
+// void QTextBlockGroup(class QTextDocument *)
 MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
 // void ~QTextBlockGroup()
 // void blockInserted(const class QTextBlock &)
-// void blockInserted(const class QTextBlock &)
-virtual void blockInserted(const QTextBlock & block) {
-  if (callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock != 0) {
-  // callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(block);
-}}
+  virtual void blockInserted(const QTextBlock & block) {
+    if (callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock != 0) {
+      // callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(block);
+    }
+    QTextBlockGroup::blockInserted(block);
+  }
 // void blockRemoved(const class QTextBlock &)
-// void blockRemoved(const class QTextBlock &)
-virtual void blockRemoved(const QTextBlock & block) {
-  if (callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock != 0) {
-  // callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(block);
-}}
+  virtual void blockRemoved(const QTextBlock & block) {
+    if (callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock != 0) {
+      // callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(block);
+    }
+    QTextBlockGroup::blockRemoved(block);
+  }
 // void blockFormatChanged(const class QTextBlock &)
-// void blockFormatChanged(const class QTextBlock &)
-virtual void blockFormatChanged(const QTextBlock & block) {
-  if (callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock != 0) {
-  // callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(block);
-}}
+  virtual void blockFormatChanged(const QTextBlock & block) {
+    if (callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock != 0) {
+      // callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(block);
+    }
+    QTextBlockGroup::blockFormatChanged(block);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available

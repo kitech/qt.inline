@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsPolygonItem is pure virtual: false
+// QGraphicsPolygonItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,49 +32,55 @@ extern "C" void set_callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(voi
 
 class MyQGraphicsPolygonItem : public QGraphicsPolygonItem {
 public:
+  virtual ~MyQGraphicsPolygonItem() {}
+// void QGraphicsPolygonItem(class QGraphicsItem *)
 MyQGraphicsPolygonItem(QGraphicsItem * parent) : QGraphicsPolygonItem(parent) {}
+// void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
 MyQGraphicsPolygonItem(const QPolygonF & polygon, QGraphicsItem * parent) : QGraphicsPolygonItem(polygon, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
-// bool supportsExtension(enum QGraphicsItem::Extension)
-virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-  if (callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-  // callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
-}}
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+    if (callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+      // callback_ZNK20QGraphicsPolygonItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    }
+    return QGraphicsPolygonItem::supportsExtension(extension);
+  }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-  if (callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-  // callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
-}}
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+    if (callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+      // callback_ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    }
+    QGraphicsPolygonItem::setExtension(extension, variant);
+  }
 // QVariant extension(const class QVariant &)
-// QVariant extension(const class QVariant &)
-virtual QVariant extension(const QVariant & variant) {
-  if (callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant != 0) {
-  // callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(variant);
-}}
+  virtual QVariant extension(const QVariant & variant) {
+    if (callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant != 0) {
+      // callback_ZNK20QGraphicsPolygonItem9extensionERK8QVariant(variant);
+    }
+    return QGraphicsPolygonItem::extension(variant);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:743
 // [-2] void QGraphicsPolygonItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsPolygonItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsPolygonItem*)(0);
+void* C_ZN20QGraphicsPolygonItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsPolygonItem*)(0);
   return  new MyQGraphicsPolygonItem(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:744
 // [-2] void QGraphicsPolygonItem(const class QPolygonF &, class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsPolygonItemC1ERK9QPolygonFP13QGraphicsItem(const QPolygonF & polygon, QGraphicsItem * parent) {
-  (MyQGraphicsPolygonItem*)(0);
+void* C_ZN20QGraphicsPolygonItemC2ERK9QPolygonFP13QGraphicsItem(const QPolygonF & polygon, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsPolygonItem*)(0);
   return  new MyQGraphicsPolygonItem(polygon, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:746
 // [-2] void ~QGraphicsPolygonItem()
 extern "C"
-void C_ZN20QGraphicsPolygonItemD1Ev(void *this_) {
+void C_ZN20QGraphicsPolygonItemD2Ev(void *this_) {
   delete (QGraphicsPolygonItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

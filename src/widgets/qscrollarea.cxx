@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QScrollArea is pure virtual: false
+// QScrollArea has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZNK11QScrollArea16viewportSizeHintEv(void*cbfn)
 
 class MyQScrollArea : public QScrollArea {
 public:
+  virtual ~MyQScrollArea() {}
+// void QScrollArea(class QWidget *)
 MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN11QScrollArea5eventEP6QEvent != 0) {
-  // callback_ZN11QScrollArea5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN11QScrollArea5eventEP6QEvent != 0) {
+      // callback_ZN11QScrollArea5eventEP6QEvent(arg0);
+    }
+    return QScrollArea::event(arg0);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-  if (callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent(arg0, arg1);
-}}
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+    if (callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    }
+    return QScrollArea::eventFilter(arg0, arg1);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * arg0) {
-  if (callback_ZN11QScrollArea11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN11QScrollArea11resizeEventEP12QResizeEvent(arg0);
-}}
+  virtual void resizeEvent(QResizeEvent * arg0) {
+    if (callback_ZN11QScrollArea11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN11QScrollArea11resizeEventEP12QResizeEvent(arg0);
+    }
+    QScrollArea::resizeEvent(arg0);
+  }
 // void scrollContentsBy(int, int)
-// void scrollContentsBy(int, int)
-virtual void scrollContentsBy(int dx, int dy) {
-  if (callback_ZN11QScrollArea16scrollContentsByEii != 0) {
-  // callback_ZN11QScrollArea16scrollContentsByEii(dx, dy);
-}}
+  virtual void scrollContentsBy(int dx, int dy) {
+    if (callback_ZN11QScrollArea16scrollContentsByEii != 0) {
+      // callback_ZN11QScrollArea16scrollContentsByEii(dx, dy);
+    }
+    QScrollArea::scrollContentsBy(dx, dy);
+  }
 // QSize viewportSizeHint()
-// QSize viewportSizeHint()
-virtual QSize viewportSizeHint() {
-  if (callback_ZNK11QScrollArea16viewportSizeHintEv != 0) {
-  // callback_ZNK11QScrollArea16viewportSizeHintEv();
-}}
+  virtual QSize viewportSizeHint() {
+    if (callback_ZNK11QScrollArea16viewportSizeHintEv != 0) {
+      // callback_ZNK11QScrollArea16viewportSizeHintEv();
+    }
+    return QScrollArea::viewportSizeHint();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK11QScrollArea10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qscrollarea.h:59
 // [-2] void QScrollArea(class QWidget *)
 extern "C"
-void* C_ZN11QScrollAreaC1EP7QWidget(QWidget * parent) {
-  (MyQScrollArea*)(0);
+void* C_ZN11QScrollAreaC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQScrollArea*)(0);
   return  new MyQScrollArea(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollarea.h:60
 // [-2] void ~QScrollArea()
 extern "C"
-void C_ZN11QScrollAreaD1Ev(void *this_) {
+void C_ZN11QScrollAreaD2Ev(void *this_) {
   delete (QScrollArea*)(this_);
 }
 // Public Visibility=Default Availability=Available

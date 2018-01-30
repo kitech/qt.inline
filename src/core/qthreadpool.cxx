@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QThreadPool is pure virtual: false
+// QThreadPool has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQThreadPool : public QThreadPool {
 public:
+  virtual ~MyQThreadPool() {}
+// void QThreadPool(class QObject *)
 MyQThreadPool(QObject * parent) : QThreadPool(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK11QThreadPool10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qthreadpool.h:65
 // [-2] void QThreadPool(class QObject *)
 extern "C"
-void* C_ZN11QThreadPoolC1EP7QObject(QObject * parent) {
-  (MyQThreadPool*)(0);
-  return  new MyQThreadPool(parent);
+void* C_ZN11QThreadPoolC2EP7QObject(QObject * parent) {
+  return  new QThreadPool(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthreadpool.h:66
 // [-2] void ~QThreadPool()
 extern "C"
-void C_ZN11QThreadPoolD1Ev(void *this_) {
+void C_ZN11QThreadPoolD2Ev(void *this_) {
   delete (QThreadPool*)(this_);
 }
 // Public static Visibility=Default Availability=Available

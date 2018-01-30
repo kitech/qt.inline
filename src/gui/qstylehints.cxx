@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QStyleHints is pure virtual: false
+// QStyleHints has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStyleHints : public QStyleHints {
 public:
+  virtual ~MyQStyleHints() {}
 };
 
 // Public virtual Visibility=Default Availability=Available

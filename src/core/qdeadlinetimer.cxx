@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QDeadlineTimer is pure virtual: false
+// QDeadlineTimer has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDeadlineTimer : public QDeadlineTimer {
 public:
+  virtual ~MyQDeadlineTimer() {}
+// void QDeadlineTimer(Qt::TimerType)
 MyQDeadlineTimer(Qt::TimerType type_) : QDeadlineTimer(type_) {}
+// void QDeadlineTimer(enum QDeadlineTimer::ForeverConstant, Qt::TimerType)
 MyQDeadlineTimer(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) : QDeadlineTimer(arg0, type_) {}
+// void QDeadlineTimer(qint64, Qt::TimerType)
 MyQDeadlineTimer(qint64 msecs, Qt::TimerType type) : QDeadlineTimer(msecs, type) {}
 };
 
@@ -19,25 +24,22 @@ MyQDeadlineTimer(qint64 msecs, Qt::TimerType type) : QDeadlineTimer(msecs, type)
 // /usr/include/qt/QtCore/qdeadlinetimer.h:65
 // [-2] void QDeadlineTimer(Qt::TimerType)
 extern "C"
-void* C_ZN14QDeadlineTimerC1EN2Qt9TimerTypeE(Qt::TimerType type_) {
-  (MyQDeadlineTimer*)(0);
-  return  new MyQDeadlineTimer(type_);
+void* C_ZN14QDeadlineTimerC2EN2Qt9TimerTypeE(Qt::TimerType type_) {
+  return  new QDeadlineTimer(type_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:67
 // [-2] void QDeadlineTimer(enum QDeadlineTimer::ForeverConstant, Qt::TimerType)
 extern "C"
-void* C_ZN14QDeadlineTimerC1ENS_15ForeverConstantEN2Qt9TimerTypeE(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) {
-  (MyQDeadlineTimer*)(0);
-  return  new MyQDeadlineTimer(arg0, type_);
+void* C_ZN14QDeadlineTimerC2ENS_15ForeverConstantEN2Qt9TimerTypeE(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) {
+  return  new QDeadlineTimer(arg0, type_);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:69
 // [-2] void QDeadlineTimer(qint64, Qt::TimerType)
 extern "C"
-void* C_ZN14QDeadlineTimerC1ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type) {
-  (MyQDeadlineTimer*)(0);
-  return  new MyQDeadlineTimer(msecs, type);
+void* C_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type) {
+  return  new QDeadlineTimer(msecs, type);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:71
@@ -134,8 +136,8 @@ void C_ZN14QDeadlineTimer18setPreciseDeadlineExxN2Qt9TimerTypeE(void *this_, qin
 // /usr/include/qt/QtCore/qdeadlinetimer.h:94
 // [16] QDeadlineTimer addNSecs(class QDeadlineTimer, qint64)
 extern "C"
-void* C_ZN14QDeadlineTimer8addNSecsES_x(QDeadlineTimer dt, qint64 nsecs) {
-  auto rv = QDeadlineTimer::addNSecs(dt, nsecs);
+void* C_ZN14QDeadlineTimer8addNSecsES_x(QDeadlineTimer* dt, qint64 nsecs) {
+  auto rv = QDeadlineTimer::addNSecs(*dt, nsecs);
 return new QDeadlineTimer(rv);
 }
 // Public static Visibility=Default Availability=Available

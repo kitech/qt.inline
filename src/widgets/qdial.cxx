@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QDial is pure virtual: false
+// QDial has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,55 +67,65 @@ extern "C" void set_callback_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider(vo
 
 class MyQDial : public QDial {
 public:
+  virtual ~MyQDial() {}
+// void QDial(class QWidget *)
 MyQDial(QWidget * parent) : QDial(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN5QDial5eventEP6QEvent != 0) {
-  // callback_ZN5QDial5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN5QDial5eventEP6QEvent != 0) {
+      // callback_ZN5QDial5eventEP6QEvent(e);
+    }
+    return QDial::event(e);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * re) {
-  if (callback_ZN5QDial11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN5QDial11resizeEventEP12QResizeEvent(re);
-}}
+  virtual void resizeEvent(QResizeEvent * re) {
+    if (callback_ZN5QDial11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN5QDial11resizeEventEP12QResizeEvent(re);
+    }
+    QDial::resizeEvent(re);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * pe) {
-  if (callback_ZN5QDial10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN5QDial10paintEventEP11QPaintEvent(pe);
-}}
+  virtual void paintEvent(QPaintEvent * pe) {
+    if (callback_ZN5QDial10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN5QDial10paintEventEP11QPaintEvent(pe);
+    }
+    QDial::paintEvent(pe);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * me) {
-  if (callback_ZN5QDial15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN5QDial15mousePressEventEP11QMouseEvent(me);
-}}
+  virtual void mousePressEvent(QMouseEvent * me) {
+    if (callback_ZN5QDial15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN5QDial15mousePressEventEP11QMouseEvent(me);
+    }
+    QDial::mousePressEvent(me);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * me) {
-  if (callback_ZN5QDial17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN5QDial17mouseReleaseEventEP11QMouseEvent(me);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * me) {
+    if (callback_ZN5QDial17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN5QDial17mouseReleaseEventEP11QMouseEvent(me);
+    }
+    QDial::mouseReleaseEvent(me);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * me) {
-  if (callback_ZN5QDial14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN5QDial14mouseMoveEventEP11QMouseEvent(me);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * me) {
+    if (callback_ZN5QDial14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN5QDial14mouseMoveEventEP11QMouseEvent(me);
+    }
+    QDial::mouseMoveEvent(me);
+  }
 // void sliderChange(enum QAbstractSlider::SliderChange)
-// void sliderChange(enum QAbstractSlider::SliderChange)
-virtual void sliderChange(QAbstractSlider::SliderChange change) {
-  if (callback_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE != 0) {
-  // callback_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(change);
-}}
+  virtual void sliderChange(QAbstractSlider::SliderChange change) {
+    if (callback_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE != 0) {
+      // callback_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(change);
+    }
+    QDial::sliderChange(change);
+  }
 // void initStyleOption(class QStyleOptionSlider *)
-// void initStyleOption(class QStyleOptionSlider *)
-virtual void initStyleOption(QStyleOptionSlider * option) {
-  if (callback_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider != 0) {
-  // callback_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider(option);
-}}
+  virtual void initStyleOption(QStyleOptionSlider * option) {
+    if (callback_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider != 0) {
+      // callback_ZNK5QDial15initStyleOptionEP18QStyleOptionSlider(option);
+    }
+    QDial::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -128,15 +139,15 @@ void* C_ZNK5QDial10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdial.h:64
 // [-2] void QDial(class QWidget *)
 extern "C"
-void* C_ZN5QDialC1EP7QWidget(QWidget * parent) {
-  (MyQDial*)(0);
+void* C_ZN5QDialC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQDial*)(0);
   return  new MyQDial(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdial.h:66
 // [-2] void ~QDial()
 extern "C"
-void C_ZN5QDialD1Ev(void *this_) {
+void C_ZN5QDialD2Ev(void *this_) {
   delete (QDial*)(this_);
 }
 // Public Visibility=Default Availability=Available

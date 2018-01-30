@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsItemGroup is pure virtual: false
+// QGraphicsItemGroup has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsItemGroup : public QGraphicsItemGroup {
 public:
+  virtual ~MyQGraphicsItemGroup() {}
+// void QGraphicsItemGroup(class QGraphicsItem *)
 MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1004
 // [-2] void QGraphicsItemGroup(class QGraphicsItem *)
 extern "C"
-void* C_ZN18QGraphicsItemGroupC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsItemGroup*)(0);
-  return  new MyQGraphicsItemGroup(parent);
+void* C_ZN18QGraphicsItemGroupC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  return  new QGraphicsItemGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:1005
 // [-2] void ~QGraphicsItemGroup()
 extern "C"
-void C_ZN18QGraphicsItemGroupD1Ev(void *this_) {
+void C_ZN18QGraphicsItemGroupD2Ev(void *this_) {
   delete (QGraphicsItemGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

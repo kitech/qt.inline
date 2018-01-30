@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QTabletEvent is pure virtual: false
+// QTabletEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTabletEvent : public QTabletEvent {
 public:
+  virtual ~MyQTabletEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:259
 // [-2] void ~QTabletEvent()
 extern "C"
-void C_ZN12QTabletEventD1Ev(void *this_) {
+void C_ZN12QTabletEventD2Ev(void *this_) {
   delete (QTabletEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

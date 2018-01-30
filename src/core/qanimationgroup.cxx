@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAnimationGroup is pure virtual: false
+// QAnimationGroup has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN15QAnimationGroup5eventEP6QEvent(void*cbfn)
 
 class MyQAnimationGroup : public QAnimationGroup {
 public:
+  virtual ~MyQAnimationGroup() {}
+// void QAnimationGroup(class QObject *)
 MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN15QAnimationGroup5eventEP6QEvent != 0) {
-  // callback_ZN15QAnimationGroup5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN15QAnimationGroup5eventEP6QEvent != 0) {
+      // callback_ZN15QAnimationGroup5eventEP6QEvent(event);
+    }
+    return QAnimationGroup::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,14 +42,14 @@ void* C_ZNK15QAnimationGroup10metaObjectEv(void *this_) {
 // [-2] void QAnimationGroup(class QObject *)
 extern "C"
 void* C_ZN15QAnimationGroupC1EP7QObject(QObject * parent) {
-  (MyQAnimationGroup*)(0);
+  auto _nilp = (MyQAnimationGroup*)(0);
   return 0; // new MyQAnimationGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:57
 // [-2] void ~QAnimationGroup()
 extern "C"
-void C_ZN15QAnimationGroupD1Ev(void *this_) {
+void C_ZN15QAnimationGroupD2Ev(void *this_) {
   delete (QAnimationGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

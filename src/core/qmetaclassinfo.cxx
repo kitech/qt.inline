@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMetaClassInfo is pure virtual: false
+// QMetaClassInfo has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMetaClassInfo : public QMetaClassInfo {
 public:
+  virtual ~MyQMetaClassInfo() {}
+// void QMetaClassInfo()
 MyQMetaClassInfo() : QMetaClassInfo() {}
 };
 
@@ -17,9 +20,8 @@ MyQMetaClassInfo() : QMetaClassInfo() {}
 // /usr/include/qt/QtCore/qmetaobject.h:303
 // [-2] void QMetaClassInfo()
 extern "C"
-void* C_ZN14QMetaClassInfoC1Ev() {
-  (MyQMetaClassInfo*)(0);
-  return  new MyQMetaClassInfo();
+void* C_ZN14QMetaClassInfoC2Ev() {
+  return  new QMetaClassInfo();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:304

@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QDoubleValidator is pure virtual: false
+// QDoubleValidator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDoubleValidator : public QDoubleValidator {
 public:
+  virtual ~MyQDoubleValidator() {}
+// void QDoubleValidator(class QObject *)
 MyQDoubleValidator(QObject * parent) : QDoubleValidator(parent) {}
+// void QDoubleValidator(double, double, int, class QObject *)
 MyQDoubleValidator(double bottom, double top, int decimals, QObject * parent) : QDoubleValidator(bottom, top, decimals, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK16QDoubleValidator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:133
 // [-2] void QDoubleValidator(class QObject *)
 extern "C"
-void* C_ZN16QDoubleValidatorC1EP7QObject(QObject * parent) {
-  (MyQDoubleValidator*)(0);
-  return  new MyQDoubleValidator(parent);
+void* C_ZN16QDoubleValidatorC2EP7QObject(QObject * parent) {
+  return  new QDoubleValidator(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:134
 // [-2] void QDoubleValidator(double, double, int, class QObject *)
 extern "C"
-void* C_ZN16QDoubleValidatorC1EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
-  (MyQDoubleValidator*)(0);
-  return  new MyQDoubleValidator(bottom, top, decimals, parent);
+void* C_ZN16QDoubleValidatorC2EddiP7QObject(double bottom, double top, int decimals, QObject * parent) {
+  return  new QDoubleValidator(bottom, top, decimals, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:135
 // [-2] void ~QDoubleValidator()
 extern "C"
-void C_ZN16QDoubleValidatorD1Ev(void *this_) {
+void C_ZN16QDoubleValidatorD2Ev(void *this_) {
   delete (QDoubleValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QHelpEvent is pure virtual: false
+// QHelpEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQHelpEvent : public QHelpEvent {
 public:
+  virtual ~MyQHelpEvent() {}
+// void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
 MyQHelpEvent(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type, pos, globalPos) {}
 };
 
@@ -17,15 +20,14 @@ MyQHelpEvent(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) : 
 // /usr/include/qt/QtGui/qevent.h:680
 // [-2] void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN10QHelpEventC1EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) {
-  (MyQHelpEvent*)(0);
-  return  new MyQHelpEvent(type, pos, globalPos);
+void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) {
+  return  new QHelpEvent(type, pos, globalPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:681
 // [-2] void ~QHelpEvent()
 extern "C"
-void C_ZN10QHelpEventD1Ev(void *this_) {
+void C_ZN10QHelpEventD2Ev(void *this_) {
   delete (QHelpEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

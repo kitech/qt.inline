@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QSemaphore is pure virtual: false
+// QSemaphore has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSemaphore : public QSemaphore {
 public:
+  virtual ~MyQSemaphore() {}
+// void QSemaphore(int)
 MyQSemaphore(int n) : QSemaphore(n) {}
 };
 
@@ -17,15 +20,14 @@ MyQSemaphore(int n) : QSemaphore(n) {}
 // /usr/include/qt/QtCore/qsemaphore.h:55
 // [-2] void QSemaphore(int)
 extern "C"
-void* C_ZN10QSemaphoreC1Ei(int n) {
-  (MyQSemaphore*)(0);
-  return  new MyQSemaphore(n);
+void* C_ZN10QSemaphoreC2Ei(int n) {
+  return  new QSemaphore(n);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:56
 // [-2] void ~QSemaphore()
 extern "C"
-void C_ZN10QSemaphoreD1Ev(void *this_) {
+void C_ZN10QSemaphoreD2Ev(void *this_) {
   delete (QSemaphore*)(this_);
 }
 // Public Visibility=Default Availability=Available

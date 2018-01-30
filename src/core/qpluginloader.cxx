@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QPluginLoader is pure virtual: false
+// QPluginLoader has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPluginLoader : public QPluginLoader {
 public:
+  virtual ~MyQPluginLoader() {}
+// void QPluginLoader(class QObject *)
 MyQPluginLoader(QObject * parent) : QPluginLoader(parent) {}
+// void QPluginLoader(const class QString &, class QObject *)
 MyQPluginLoader(const QString & fileName, QObject * parent) : QPluginLoader(fileName, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK13QPluginLoader10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qpluginloader.h:62
 // [-2] void QPluginLoader(class QObject *)
 extern "C"
-void* C_ZN13QPluginLoaderC1EP7QObject(QObject * parent) {
-  (MyQPluginLoader*)(0);
-  return  new MyQPluginLoader(parent);
+void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
+  return  new QPluginLoader(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:63
 // [-2] void QPluginLoader(const class QString &, class QObject *)
 extern "C"
-void* C_ZN13QPluginLoaderC1ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
-  (MyQPluginLoader*)(0);
-  return  new MyQPluginLoader(fileName, parent);
+void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
+  return  new QPluginLoader(fileName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:64
 // [-2] void ~QPluginLoader()
 extern "C"
-void C_ZN13QPluginLoaderD1Ev(void *this_) {
+void C_ZN13QPluginLoaderD2Ev(void *this_) {
   delete (QPluginLoader*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,16 +4,23 @@
 #include <QtCore>
 
 // QXmlStreamReader is pure virtual: false
+// QXmlStreamReader has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamReader : public QXmlStreamReader {
 public:
+  virtual ~MyQXmlStreamReader() {}
+// void QXmlStreamReader()
 MyQXmlStreamReader() : QXmlStreamReader() {}
+// void QXmlStreamReader(class QIODevice *)
 MyQXmlStreamReader(QIODevice * device) : QXmlStreamReader(device) {}
+// void QXmlStreamReader(const class QByteArray &)
 MyQXmlStreamReader(const QByteArray & data) : QXmlStreamReader(data) {}
+// void QXmlStreamReader(const class QString &)
 MyQXmlStreamReader(const QString & data) : QXmlStreamReader(data) {}
+// void QXmlStreamReader(const char *)
 MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
 };
 
@@ -21,47 +28,42 @@ MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
 // /usr/include/qt/QtCore/qxmlstream.h:360
 // [-2] void QXmlStreamReader()
 extern "C"
-void* C_ZN16QXmlStreamReaderC1Ev() {
-  (MyQXmlStreamReader*)(0);
-  return  new MyQXmlStreamReader();
+void* C_ZN16QXmlStreamReaderC2Ev() {
+  return  new QXmlStreamReader();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:361
 // [-2] void QXmlStreamReader(class QIODevice *)
 extern "C"
-void* C_ZN16QXmlStreamReaderC1EP9QIODevice(QIODevice * device) {
-  (MyQXmlStreamReader*)(0);
-  return  new MyQXmlStreamReader(device);
+void* C_ZN16QXmlStreamReaderC2EP9QIODevice(QIODevice * device) {
+  return  new QXmlStreamReader(device);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:362
 // [-2] void QXmlStreamReader(const class QByteArray &)
 extern "C"
-void* C_ZN16QXmlStreamReaderC1ERK10QByteArray(const QByteArray & data) {
-  (MyQXmlStreamReader*)(0);
-  return  new MyQXmlStreamReader(data);
+void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(const QByteArray & data) {
+  return  new QXmlStreamReader(data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:363
 // [-2] void QXmlStreamReader(const class QString &)
 extern "C"
-void* C_ZN16QXmlStreamReaderC1ERK7QString(const QString & data) {
-  (MyQXmlStreamReader*)(0);
-  return  new MyQXmlStreamReader(data);
+void* C_ZN16QXmlStreamReaderC2ERK7QString(const QString & data) {
+  return  new QXmlStreamReader(data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:364
 // [-2] void QXmlStreamReader(const char *)
 extern "C"
-void* C_ZN16QXmlStreamReaderC1EPKc(const char * data) {
-  (MyQXmlStreamReader*)(0);
-  return  new MyQXmlStreamReader(data);
+void* C_ZN16QXmlStreamReaderC2EPKc(const char * data) {
+  return  new QXmlStreamReader(data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:365
 // [-2] void ~QXmlStreamReader()
 extern "C"
-void C_ZN16QXmlStreamReaderD1Ev(void *this_) {
+void C_ZN16QXmlStreamReaderD2Ev(void *this_) {
   delete (QXmlStreamReader*)(this_);
 }
 // Public Visibility=Default Availability=Available

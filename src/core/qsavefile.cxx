@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QSaveFile is pure virtual: false
+// QSaveFile has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,15 +18,20 @@ extern "C" void set_callback_ZN9QSaveFile9writeDataEPKcx(void*cbfn)
 
 class MyQSaveFile : public QSaveFile {
 public:
+  virtual ~MyQSaveFile() {}
+// void QSaveFile(const class QString &)
 MyQSaveFile(const QString & name) : QSaveFile(name) {}
+// void QSaveFile(class QObject *)
 MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
+// void QSaveFile(const class QString &, class QObject *)
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
 // qint64 writeData(const char *, qint64)
-// qint64 writeData(const char *, qint64)
-virtual qint64 writeData(const char * data, qint64 len) {
-  if (callback_ZN9QSaveFile9writeDataEPKcx != 0) {
-  // callback_ZN9QSaveFile9writeDataEPKcx(data, len);
-}}
+  virtual qint64 writeData(const char * data, qint64 len) {
+    if (callback_ZN9QSaveFile9writeDataEPKcx != 0) {
+      // callback_ZN9QSaveFile9writeDataEPKcx(data, len);
+    }
+    return QSaveFile::writeData(data, len);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -39,31 +45,31 @@ void* C_ZNK9QSaveFile10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsavefile.h:68
 // [-2] void QSaveFile(const class QString &)
 extern "C"
-void* C_ZN9QSaveFileC1ERK7QString(const QString & name) {
-  (MyQSaveFile*)(0);
+void* C_ZN9QSaveFileC2ERK7QString(const QString & name) {
+  auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:70
 // [-2] void QSaveFile(class QObject *)
 extern "C"
-void* C_ZN9QSaveFileC1EP7QObject(QObject * parent) {
-  (MyQSaveFile*)(0);
+void* C_ZN9QSaveFileC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:71
 // [-2] void QSaveFile(const class QString &, class QObject *)
 extern "C"
-void* C_ZN9QSaveFileC1ERK7QStringP7QObject(const QString & name, QObject * parent) {
-  (MyQSaveFile*)(0);
+void* C_ZN9QSaveFileC2ERK7QStringP7QObject(const QString & name, QObject * parent) {
+  auto _nilp = (MyQSaveFile*)(0);
   return  new MyQSaveFile(name, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:73
 // [-2] void ~QSaveFile()
 extern "C"
-void C_ZN9QSaveFileD1Ev(void *this_) {
+void C_ZN9QSaveFileD2Ev(void *this_) {
   delete (QSaveFile*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

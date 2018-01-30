@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QSlider is pure virtual: false
+// QSlider has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,38 +46,46 @@ extern "C" void set_callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(
 
 class MyQSlider : public QSlider {
 public:
+  virtual ~MyQSlider() {}
+// void QSlider(class QWidget *)
 MyQSlider(QWidget * parent) : QSlider(parent) {}
+// void QSlider(Qt::Orientation, class QWidget *)
 MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, parent) {}
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * ev) {
-  if (callback_ZN7QSlider10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN7QSlider10paintEventEP11QPaintEvent(ev);
-}}
+  virtual void paintEvent(QPaintEvent * ev) {
+    if (callback_ZN7QSlider10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN7QSlider10paintEventEP11QPaintEvent(ev);
+    }
+    QSlider::paintEvent(ev);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * ev) {
-  if (callback_ZN7QSlider15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN7QSlider15mousePressEventEP11QMouseEvent(ev);
-}}
+  virtual void mousePressEvent(QMouseEvent * ev) {
+    if (callback_ZN7QSlider15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN7QSlider15mousePressEventEP11QMouseEvent(ev);
+    }
+    QSlider::mousePressEvent(ev);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * ev) {
-  if (callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(ev);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * ev) {
+    if (callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(ev);
+    }
+    QSlider::mouseReleaseEvent(ev);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * ev) {
-  if (callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent(ev);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * ev) {
+    if (callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent(ev);
+    }
+    QSlider::mouseMoveEvent(ev);
+  }
 // void initStyleOption(class QStyleOptionSlider *)
-// void initStyleOption(class QStyleOptionSlider *)
-virtual void initStyleOption(QStyleOptionSlider * option) {
-  if (callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider != 0) {
-  // callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(option);
-}}
+  virtual void initStyleOption(QStyleOptionSlider * option) {
+    if (callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider != 0) {
+      // callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(option);
+    }
+    QSlider::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -90,23 +99,23 @@ void* C_ZNK7QSlider10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qslider.h:71
 // [-2] void QSlider(class QWidget *)
 extern "C"
-void* C_ZN7QSliderC1EP7QWidget(QWidget * parent) {
-  (MyQSlider*)(0);
+void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:72
 // [-2] void QSlider(Qt::Orientation, class QWidget *)
 extern "C"
-void* C_ZN7QSliderC1EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
-  (MyQSlider*)(0);
+void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
+  auto _nilp = (MyQSlider*)(0);
   return  new MyQSlider(orientation, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qslider.h:74
 // [-2] void ~QSlider()
 extern "C"
-void C_ZN7QSliderD1Ev(void *this_) {
+void C_ZN7QSliderD2Ev(void *this_) {
   delete (QSlider*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

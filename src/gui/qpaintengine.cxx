@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QPaintEngine is pure virtual: true
+// QPaintEngine has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPaintEngine : public QPaintEngine {
 public:
+  virtual ~MyQPaintEngine() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:148
 // [-2] void ~QPaintEngine()
 extern "C"
-void C_ZN12QPaintEngineD1Ev(void *this_) {
+void C_ZN12QPaintEngineD2Ev(void *this_) {
   delete (QPaintEngine*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

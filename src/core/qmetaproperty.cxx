@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMetaProperty is pure virtual: false
+// QMetaProperty has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMetaProperty : public QMetaProperty {
 public:
+  virtual ~MyQMetaProperty() {}
+// void QMetaProperty()
 MyQMetaProperty() : QMetaProperty() {}
 };
 
@@ -17,9 +20,8 @@ MyQMetaProperty() : QMetaProperty() {}
 // /usr/include/qt/QtCore/qmetaobject.h:248
 // [-2] void QMetaProperty()
 extern "C"
-void* C_ZN13QMetaPropertyC1Ev() {
-  (MyQMetaProperty*)(0);
-  return  new MyQMetaProperty();
+void* C_ZN13QMetaPropertyC2Ev() {
+  return  new QMetaProperty();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:250

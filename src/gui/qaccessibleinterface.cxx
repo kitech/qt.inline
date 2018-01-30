@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QAccessibleInterface is pure virtual: true
+// QAccessibleInterface has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,6 +18,7 @@ extern "C" void set_callback_ZN20QAccessibleInterfaceD1Ev(void*cbfn)
 
 class MyQAccessibleInterface : public QAccessibleInterface {
 public:
+  virtual ~MyQAccessibleInterface() {}
 // void ~QAccessibleInterface()
 };
 

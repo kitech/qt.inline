@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QImageIOPlugin is pure virtual: true
+// QImageIOPlugin has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQImageIOPlugin : public QImageIOPlugin {
 public:
+  virtual ~MyQImageIOPlugin() {}
+// void QImageIOPlugin(class QObject *)
 MyQImageIOPlugin(QObject * parent) : QImageIOPlugin(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK14QImageIOPlugin10metaObjectEv(void *this_) {
 // [-2] void QImageIOPlugin(class QObject *)
 extern "C"
 void* C_ZN14QImageIOPluginC1EP7QObject(QObject * parent) {
-  (MyQImageIOPlugin*)(0);
-  return 0; // new MyQImageIOPlugin(parent);
+  return 0; // new QImageIOPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:144
 // [-2] void ~QImageIOPlugin()
 extern "C"
-void C_ZN14QImageIOPluginD1Ev(void *this_) {
+void C_ZN14QImageIOPluginD2Ev(void *this_) {
   delete (QImageIOPlugin*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

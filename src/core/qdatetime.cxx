@@ -4,16 +4,23 @@
 #include <QtCore>
 
 // QDateTime is pure virtual: false
+// QDateTime has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDateTime : public QDateTime {
 public:
+  virtual ~MyQDateTime() {}
+// void QDateTime()
 MyQDateTime() : QDateTime() {}
+// void QDateTime(const class QDate &)
 MyQDateTime(const QDate & arg0) : QDateTime(arg0) {}
+// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
 MyQDateTime(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) : QDateTime(arg0, arg1, spec) {}
+// void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
 MyQDateTime(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) : QDateTime(date, time, spec, offsetSeconds) {}
+// void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
 MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) : QDateTime(date, time, timeZone) {}
 };
 
@@ -21,47 +28,42 @@ MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) 
 // /usr/include/qt/QtCore/qdatetime.h:261
 // [-2] void QDateTime()
 extern "C"
-void* C_ZN9QDateTimeC1Ev() {
-  (MyQDateTime*)(0);
-  return  new MyQDateTime();
+void* C_ZN9QDateTimeC2Ev() {
+  return  new QDateTime();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:262
 // [-2] void QDateTime(const class QDate &)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDate(const QDate & arg0) {
-  (MyQDateTime*)(0);
-  return  new MyQDateTime(arg0);
+void* C_ZN9QDateTimeC2ERK5QDate(const QDate & arg0) {
+  return  new QDateTime(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:263
 // [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) {
-  (MyQDateTime*)(0);
-  return  new MyQDateTime(arg0, arg1, spec);
+void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) {
+  return  new QDateTime(arg0, arg1, spec);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:265
 // [-2] void QDateTime(const class QDate &, const class QTime &, Qt::TimeSpec, int)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeN2Qt8TimeSpecEi(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) {
-  (MyQDateTime*)(0);
-  return  new MyQDateTime(date, time, spec, offsetSeconds);
+void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) {
+  return  new QDateTime(date, time, spec, offsetSeconds);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:267
 // [-2] void QDateTime(const class QDate &, const class QTime &, const class QTimeZone &)
 extern "C"
-void* C_ZN9QDateTimeC1ERK5QDateRK5QTimeRK9QTimeZone(const QDate & date, const QTime & time, const QTimeZone & timeZone) {
-  (MyQDateTime*)(0);
-  return  new MyQDateTime(date, time, timeZone);
+void* C_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone(const QDate & date, const QTime & time, const QTimeZone & timeZone) {
+  return  new QDateTime(date, time, timeZone);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:271
 // [-2] void ~QDateTime()
 extern "C"
-void C_ZN9QDateTimeD1Ev(void *this_) {
+void C_ZN9QDateTimeD2Ev(void *this_) {
   delete (QDateTime*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -221,8 +223,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qdatetime.h:311
 // [8] QString toString(class QStringView)
 extern "C"
-void* C_ZNK9QDateTime8toStringE11QStringView(void *this_, QStringView format) {
-  auto rv = ((QDateTime*)this_)->toString(format);
+void* C_ZNK9QDateTime8toStringE11QStringView(void *this_, QStringView* format) {
+  auto rv = ((QDateTime*)this_)->toString(*format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

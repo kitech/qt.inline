@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QCollator is pure virtual: false
+// QCollator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCollator : public QCollator {
 public:
+  virtual ~MyQCollator() {}
+// void QCollator(const class QLocale &)
 MyQCollator(const QLocale & locale) : QCollator(locale) {}
 };
 
@@ -17,15 +20,14 @@ MyQCollator(const QLocale & locale) : QCollator(locale) {}
 // /usr/include/qt/QtCore/qcollator.h:86
 // [-2] void QCollator(const class QLocale &)
 extern "C"
-void* C_ZN9QCollatorC1ERK7QLocale(const QLocale & locale) {
-  (MyQCollator*)(0);
-  return  new MyQCollator(locale);
+void* C_ZN9QCollatorC2ERK7QLocale(const QLocale & locale) {
+  return  new QCollator(locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:88
 // [-2] void ~QCollator()
 extern "C"
-void C_ZN9QCollatorD1Ev(void *this_) {
+void C_ZN9QCollatorD2Ev(void *this_) {
   delete (QCollator*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

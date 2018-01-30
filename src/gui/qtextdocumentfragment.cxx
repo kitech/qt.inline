@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QTextDocumentFragment is pure virtual: false
+// QTextDocumentFragment has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextDocumentFragment : public QTextDocumentFragment {
 public:
+  virtual ~MyQTextDocumentFragment() {}
+// void QTextDocumentFragment()
 MyQTextDocumentFragment() : QTextDocumentFragment() {}
+// void QTextDocumentFragment(const class QTextDocument *)
 MyQTextDocumentFragment(const QTextDocument * document) : QTextDocumentFragment(document) {}
+// void QTextDocumentFragment(const class QTextCursor &)
 MyQTextDocumentFragment(const QTextCursor & range) : QTextDocumentFragment(range) {}
 };
 
@@ -19,31 +24,28 @@ MyQTextDocumentFragment(const QTextCursor & range) : QTextDocumentFragment(range
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:57
 // [-2] void QTextDocumentFragment()
 extern "C"
-void* C_ZN21QTextDocumentFragmentC1Ev() {
-  (MyQTextDocumentFragment*)(0);
-  return  new MyQTextDocumentFragment();
+void* C_ZN21QTextDocumentFragmentC2Ev() {
+  return  new QTextDocumentFragment();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:58
 // [-2] void QTextDocumentFragment(const class QTextDocument *)
 extern "C"
-void* C_ZN21QTextDocumentFragmentC1EPK13QTextDocument(const QTextDocument * document) {
-  (MyQTextDocumentFragment*)(0);
-  return  new MyQTextDocumentFragment(document);
+void* C_ZN21QTextDocumentFragmentC2EPK13QTextDocument(const QTextDocument * document) {
+  return  new QTextDocumentFragment(document);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:59
 // [-2] void QTextDocumentFragment(const class QTextCursor &)
 extern "C"
-void* C_ZN21QTextDocumentFragmentC1ERK11QTextCursor(const QTextCursor & range) {
-  (MyQTextDocumentFragment*)(0);
-  return  new MyQTextDocumentFragment(range);
+void* C_ZN21QTextDocumentFragmentC2ERK11QTextCursor(const QTextCursor & range) {
+  return  new QTextDocumentFragment(range);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentfragment.h:62
 // [-2] void ~QTextDocumentFragment()
 extern "C"
-void C_ZN21QTextDocumentFragmentD1Ev(void *this_) {
+void C_ZN21QTextDocumentFragmentD2Ev(void *this_) {
   delete (QTextDocumentFragment*)(this_);
 }
 // Public Visibility=Default Availability=Available

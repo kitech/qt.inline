@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QKeySequenceEdit is pure virtual: false
+// QKeySequenceEdit has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,32 +39,39 @@ extern "C" void set_callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(voi
 
 class MyQKeySequenceEdit : public QKeySequenceEdit {
 public:
+  virtual ~MyQKeySequenceEdit() {}
+// void QKeySequenceEdit(class QWidget *)
 MyQKeySequenceEdit(QWidget * parent) : QKeySequenceEdit(parent) {}
+// void QKeySequenceEdit(const class QKeySequence &, class QWidget *)
 MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySequenceEdit(keySequence, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN16QKeySequenceEdit5eventEP6QEvent != 0) {
-  // callback_ZN16QKeySequenceEdit5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN16QKeySequenceEdit5eventEP6QEvent != 0) {
+      // callback_ZN16QKeySequenceEdit5eventEP6QEvent(arg0);
+    }
+    return QKeySequenceEdit::event(arg0);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * arg0) {
-  if (callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(arg0);
-}}
+  virtual void keyPressEvent(QKeyEvent * arg0) {
+    if (callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(arg0);
+    }
+    QKeySequenceEdit::keyPressEvent(arg0);
+  }
 // void keyReleaseEvent(class QKeyEvent *)
-// void keyReleaseEvent(class QKeyEvent *)
-virtual void keyReleaseEvent(QKeyEvent * arg0) {
-  if (callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent != 0) {
-  // callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(arg0);
-}}
+  virtual void keyReleaseEvent(QKeyEvent * arg0) {
+    if (callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent != 0) {
+      // callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(arg0);
+    }
+    QKeySequenceEdit::keyReleaseEvent(arg0);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * arg0) {
-  if (callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(arg0);
-}}
+  virtual void timerEvent(QTimerEvent * arg0) {
+    if (callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(arg0);
+    }
+    QKeySequenceEdit::timerEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -77,23 +85,23 @@ void* C_ZNK16QKeySequenceEdit10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:58
 // [-2] void QKeySequenceEdit(class QWidget *)
 extern "C"
-void* C_ZN16QKeySequenceEditC1EP7QWidget(QWidget * parent) {
-  (MyQKeySequenceEdit*)(0);
+void* C_ZN16QKeySequenceEditC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQKeySequenceEdit*)(0);
   return  new MyQKeySequenceEdit(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:59
 // [-2] void QKeySequenceEdit(const class QKeySequence &, class QWidget *)
 extern "C"
-void* C_ZN16QKeySequenceEditC1ERK12QKeySequenceP7QWidget(const QKeySequence & keySequence, QWidget * parent) {
-  (MyQKeySequenceEdit*)(0);
+void* C_ZN16QKeySequenceEditC2ERK12QKeySequenceP7QWidget(const QKeySequence & keySequence, QWidget * parent) {
+  auto _nilp = (MyQKeySequenceEdit*)(0);
   return  new MyQKeySequenceEdit(keySequence, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h:60
 // [-2] void ~QKeySequenceEdit()
 extern "C"
-void C_ZN16QKeySequenceEditD1Ev(void *this_) {
+void C_ZN16QKeySequenceEditD2Ev(void *this_) {
   delete (QKeySequenceEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available

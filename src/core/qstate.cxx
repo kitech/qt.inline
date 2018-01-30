@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QState is pure virtual: false
+// QState has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN6QState5eventEP6QEvent(void*cbfn)
 
 class MyQState : public QState {
 public:
+  virtual ~MyQState() {}
+// void QState(class QState *)
 MyQState(QState * parent) : QState(parent) {}
+// void QState(enum QState::ChildMode, class QState *)
 MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, parent) {}
 // void onEntry(class QEvent *)
-// void onEntry(class QEvent *)
-virtual void onEntry(QEvent * event) {
-  if (callback_ZN6QState7onEntryEP6QEvent != 0) {
-  // callback_ZN6QState7onEntryEP6QEvent(event);
-}}
+  virtual void onEntry(QEvent * event) {
+    if (callback_ZN6QState7onEntryEP6QEvent != 0) {
+      // callback_ZN6QState7onEntryEP6QEvent(event);
+    }
+    QState::onEntry(event);
+  }
 // void onExit(class QEvent *)
-// void onExit(class QEvent *)
-virtual void onExit(QEvent * event) {
-  if (callback_ZN6QState6onExitEP6QEvent != 0) {
-  // callback_ZN6QState6onExitEP6QEvent(event);
-}}
+  virtual void onExit(QEvent * event) {
+    if (callback_ZN6QState6onExitEP6QEvent != 0) {
+      // callback_ZN6QState6onExitEP6QEvent(event);
+    }
+    QState::onExit(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN6QState5eventEP6QEvent != 0) {
-  // callback_ZN6QState5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN6QState5eventEP6QEvent != 0) {
+      // callback_ZN6QState5eventEP6QEvent(e);
+    }
+    return QState::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK6QState10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qstate.h:74
 // [-2] void QState(class QState *)
 extern "C"
-void* C_ZN6QStateC1EPS_(QState * parent) {
-  (MyQState*)(0);
+void* C_ZN6QStateC2EPS_(QState * parent) {
+  auto _nilp = (MyQState*)(0);
   return  new MyQState(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:75
 // [-2] void QState(enum QState::ChildMode, class QState *)
 extern "C"
-void* C_ZN6QStateC1ENS_9ChildModeEPS_(QState::ChildMode childMode, QState * parent) {
-  (MyQState*)(0);
+void* C_ZN6QStateC2ENS_9ChildModeEPS_(QState::ChildMode childMode, QState * parent) {
+  auto _nilp = (MyQState*)(0);
   return  new MyQState(childMode, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:76
 // [-2] void ~QState()
 extern "C"
-void C_ZN6QStateD1Ev(void *this_) {
+void C_ZN6QStateD2Ev(void *this_) {
   delete (QState*)(this_);
 }
 // Public Visibility=Default Availability=Available

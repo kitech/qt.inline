@@ -4,19 +4,29 @@
 #include <QtGui>
 
 // QVector3D is pure virtual: false
+// QVector3D has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQVector3D : public QVector3D {
 public:
+  virtual ~MyQVector3D() {}
+// void QVector3D()
 MyQVector3D() : QVector3D() {}
+// void QVector3D(Qt::Initialization)
 MyQVector3D(Qt::Initialization arg0) : QVector3D(arg0) {}
+// void QVector3D(float, float, float)
 MyQVector3D(float xpos, float ypos, float zpos) : QVector3D(xpos, ypos, zpos) {}
+// void QVector3D(const class QPoint &)
 MyQVector3D(const QPoint & point) : QVector3D(point) {}
+// void QVector3D(const class QPointF &)
 MyQVector3D(const QPointF & point) : QVector3D(point) {}
+// void QVector3D(const class QVector2D &)
 MyQVector3D(const QVector2D & vector) : QVector3D(vector) {}
+// void QVector3D(const class QVector2D &, float)
 MyQVector3D(const QVector2D & vector, float zpos) : QVector3D(vector, zpos) {}
+// void QVector3D(const class QVector4D &)
 MyQVector3D(const QVector4D & vector) : QVector3D(vector) {}
 };
 
@@ -24,65 +34,57 @@ MyQVector3D(const QVector4D & vector) : QVector3D(vector) {}
 // /usr/include/qt/QtGui/qvector3d.h:60
 // [-2] void QVector3D()
 extern "C"
-void* C_ZN9QVector3DC1Ev() {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D();
+void* C_ZN9QVector3DC2Ev() {
+  return  new QVector3D();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:61
 // [-2] void QVector3D(Qt::Initialization)
 extern "C"
-void* C_ZN9QVector3DC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(arg0);
+void* C_ZN9QVector3DC2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QVector3D(arg0);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:62
 // [-2] void QVector3D(float, float, float)
 extern "C"
-void* C_ZN9QVector3DC1Efff(float xpos, float ypos, float zpos) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(xpos, ypos, zpos);
+void* C_ZN9QVector3DC2Efff(float xpos, float ypos, float zpos) {
+  return  new QVector3D(xpos, ypos, zpos);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:64
 // [-2] void QVector3D(const class QPoint &)
 extern "C"
-void* C_ZN9QVector3DC1ERK6QPoint(const QPoint & point) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(point);
+void* C_ZN9QVector3DC2ERK6QPoint(const QPoint & point) {
+  return  new QVector3D(point);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:65
 // [-2] void QVector3D(const class QPointF &)
 extern "C"
-void* C_ZN9QVector3DC1ERK7QPointF(const QPointF & point) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(point);
+void* C_ZN9QVector3DC2ERK7QPointF(const QPointF & point) {
+  return  new QVector3D(point);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:67
 // [-2] void QVector3D(const class QVector2D &)
 extern "C"
-void* C_ZN9QVector3DC1ERK9QVector2D(const QVector2D & vector) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(vector);
+void* C_ZN9QVector3DC2ERK9QVector2D(const QVector2D & vector) {
+  return  new QVector3D(vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:68
 // [-2] void QVector3D(const class QVector2D &, float)
 extern "C"
-void* C_ZN9QVector3DC1ERK9QVector2Df(const QVector2D & vector, float zpos) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(vector, zpos);
+void* C_ZN9QVector3DC2ERK9QVector2Df(const QVector2D & vector, float zpos) {
+  return  new QVector3D(vector, zpos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:71
 // [-2] void QVector3D(const class QVector4D &)
 extern "C"
-void* C_ZN9QVector3DC1ERK9QVector4D(const QVector4D & vector) {
-  (MyQVector3D*)(0);
-  return  new MyQVector3D(vector);
+void* C_ZN9QVector3DC2ERK9QVector4D(const QVector4D & vector) {
+  return  new QVector3D(vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector3d.h:74

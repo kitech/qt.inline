@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QSurface is pure virtual: true
+// QSurface has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,6 +18,8 @@ extern "C" void set_callback_ZN8QSurfaceC1ENS_12SurfaceClassE(void*cbfn)
 
 class MyQSurface : public QSurface {
 public:
+  virtual ~MyQSurface() {}
+// void QSurface(enum QSurface::SurfaceClass)
 MyQSurface(QSurface::SurfaceClass type) : QSurface(type) {}
 };
 
@@ -24,7 +27,7 @@ MyQSurface(QSurface::SurfaceClass type) : QSurface(type) {}
 // /usr/include/qt/QtGui/qsurface.h:72
 // [-2] void ~QSurface()
 extern "C"
-void C_ZN8QSurfaceD1Ev(void *this_) {
+void C_ZN8QSurfaceD2Ev(void *this_) {
   delete (QSurface*)(this_);
 }
 // Public Visibility=Default Availability=Available

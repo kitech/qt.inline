@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QTreeWidgetItem is pure virtual: false
+// QTreeWidgetItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,91 +18,101 @@ extern "C" void set_callback_ZN15QTreeWidgetItem15emitDataChangedEv(void*cbfn)
 
 class MyQTreeWidgetItem : public QTreeWidgetItem {
 public:
+  virtual ~MyQTreeWidgetItem() {}
+// void QTreeWidgetItem(int)
 MyQTreeWidgetItem(int type) : QTreeWidgetItem(type) {}
+// void QTreeWidgetItem(const class QStringList &, int)
 MyQTreeWidgetItem(const QStringList & strings, int type) : QTreeWidgetItem(strings, type) {}
+// void QTreeWidgetItem(class QTreeWidget *, int)
 MyQTreeWidgetItem(QTreeWidget * view, int type) : QTreeWidgetItem(view, type) {}
+// void QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
 MyQTreeWidgetItem(QTreeWidget * view, const QStringList & strings, int type) : QTreeWidgetItem(view, strings, type) {}
+// void QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidget * view, QTreeWidgetItem * after, int type) : QTreeWidgetItem(view, after, type) {}
+// void QTreeWidgetItem(class QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, int type) : QTreeWidgetItem(parent, type) {}
+// void QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, const QStringList & strings, int type) : QTreeWidgetItem(parent, strings, type) {}
+// void QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
 MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type) : QTreeWidgetItem(parent, after, type) {}
 // void emitDataChanged()
-// void emitDataChanged()
-virtual void emitDataChanged() {
-  if (callback_ZN15QTreeWidgetItem15emitDataChangedEv != 0) {
-  // callback_ZN15QTreeWidgetItem15emitDataChangedEv();
-}}
+  virtual void emitDataChanged() {
+    if (callback_ZN15QTreeWidgetItem15emitDataChangedEv != 0) {
+      // callback_ZN15QTreeWidgetItem15emitDataChangedEv();
+    }
+    QTreeWidgetItem::emitDataChanged();
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:67
 // [-2] void QTreeWidgetItem(int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1Ei(int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2Ei(int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:68
 // [-2] void QTreeWidgetItem(const class QStringList &, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1ERK11QStringListi(const QStringList & strings, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2ERK11QStringListi(const QStringList & strings, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(strings, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:69
 // [-2] void QTreeWidgetItem(class QTreeWidget *, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EP11QTreeWidgeti(QTreeWidget * view, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgeti(QTreeWidget * view, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:70
 // [-2] void QTreeWidgetItem(class QTreeWidget *, const class QStringList &, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EP11QTreeWidgetRK11QStringListi(QTreeWidget * view, const QStringList & strings, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi(QTreeWidget * view, const QStringList & strings, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, strings, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:71
 // [-2] void QTreeWidgetItem(class QTreeWidget *, class QTreeWidgetItem *, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidgetItem * after, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i(QTreeWidget * view, QTreeWidgetItem * after, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(view, after, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:72
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EPS_i(QTreeWidgetItem * parent, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EPS_i(QTreeWidgetItem * parent, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:73
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, const class QStringList &, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EPS_RK11QStringListi(QTreeWidgetItem * parent, const QStringList & strings, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EPS_RK11QStringListi(QTreeWidgetItem * parent, const QStringList & strings, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, strings, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:74
 // [-2] void QTreeWidgetItem(class QTreeWidgetItem *, class QTreeWidgetItem *, int)
 extern "C"
-void* C_ZN15QTreeWidgetItemC1EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type) {
-  (MyQTreeWidgetItem*)(0);
+void* C_ZN15QTreeWidgetItemC2EPS_S0_i(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type) {
+  auto _nilp = (MyQTreeWidgetItem*)(0);
   return  new MyQTreeWidgetItem(parent, after, type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:76
 // [-2] void ~QTreeWidgetItem()
 extern "C"
-void C_ZN15QTreeWidgetItemD1Ev(void *this_) {
+void C_ZN15QTreeWidgetItemD2Ev(void *this_) {
   delete (QTreeWidgetItem*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

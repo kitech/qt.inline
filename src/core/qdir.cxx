@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QDir is pure virtual: false
+// QDir has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDir : public QDir {
 public:
+  virtual ~MyQDir() {}
+// void QDir(const class QString &)
 MyQDir(const QString & path) : QDir(path) {}
 };
 
@@ -17,15 +20,14 @@ MyQDir(const QString & path) : QDir(path) {}
 // /usr/include/qt/QtCore/qdir.h:102
 // [-2] void QDir(const class QString &)
 extern "C"
-void* C_ZN4QDirC1ERK7QString(const QString & path) {
-  (MyQDir*)(0);
-  return  new MyQDir(path);
+void* C_ZN4QDirC2ERK7QString(const QString & path) {
+  return  new QDir(path);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:105
 // [-2] void ~QDir()
 extern "C"
-void C_ZN4QDirD1Ev(void *this_) {
+void C_ZN4QDirD2Ev(void *this_) {
   delete (QDir*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

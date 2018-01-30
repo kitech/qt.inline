@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QContextMenuEvent is pure virtual: false
+// QContextMenuEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQContextMenuEvent : public QContextMenuEvent {
 public:
+  virtual ~MyQContextMenuEvent() {}
+// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos) : QContextMenuEvent(reason, pos, globalPos) {}
+// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QContextMenuEvent(reason, pos) {}
 };
 
@@ -18,23 +22,21 @@ MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QCon
 // /usr/include/qt/QtGui/qevent.h:513
 // [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN17QContextMenuEventC1ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos) {
-  (MyQContextMenuEvent*)(0);
-  return  new MyQContextMenuEvent(reason, pos, globalPos);
+void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos) {
+  return  new QContextMenuEvent(reason, pos, globalPos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:514
 // [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
 extern "C"
-void* C_ZN17QContextMenuEventC1ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, const QPoint & pos) {
-  (MyQContextMenuEvent*)(0);
-  return  new MyQContextMenuEvent(reason, pos);
+void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, const QPoint & pos) {
+  return  new QContextMenuEvent(reason, pos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:515
 // [-2] void ~QContextMenuEvent()
 extern "C"
-void C_ZN17QContextMenuEventD1Ev(void *this_) {
+void C_ZN17QContextMenuEventD2Ev(void *this_) {
   delete (QContextMenuEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

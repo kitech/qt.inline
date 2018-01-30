@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QFileDialog is pure virtual: false
+// QFileDialog has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN11QFileDialog11changeEventEP6QEvent(void*cbfn)
 
 class MyQFileDialog : public QFileDialog {
 public:
+  virtual ~MyQFileDialog() {}
+// void QFileDialog(class QWidget *, Qt::WindowFlags)
 MyQFileDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QFileDialog(parent, f) {}
+// void QFileDialog(class QWidget *, const class QString &, const class QString &, const class QString &)
 MyQFileDialog(QWidget * parent, const QString & caption, const QString & directory, const QString & filter) : QFileDialog(parent, caption, directory, filter) {}
 // void done(int)
-// void done(int)
-virtual void done(int result) {
-  if (callback_ZN11QFileDialog4doneEi != 0) {
-  // callback_ZN11QFileDialog4doneEi(result);
-}}
+  virtual void done(int result) {
+    if (callback_ZN11QFileDialog4doneEi != 0) {
+      // callback_ZN11QFileDialog4doneEi(result);
+    }
+    QFileDialog::done(result);
+  }
 // void accept()
-// void accept()
-virtual void accept() {
-  if (callback_ZN11QFileDialog6acceptEv != 0) {
-  // callback_ZN11QFileDialog6acceptEv();
-}}
+  virtual void accept() {
+    if (callback_ZN11QFileDialog6acceptEv != 0) {
+      // callback_ZN11QFileDialog6acceptEv();
+    }
+    QFileDialog::accept();
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * e) {
-  if (callback_ZN11QFileDialog11changeEventEP6QEvent != 0) {
-  // callback_ZN11QFileDialog11changeEventEP6QEvent(e);
-}}
+  virtual void changeEvent(QEvent * e) {
+    if (callback_ZN11QFileDialog11changeEventEP6QEvent != 0) {
+      // callback_ZN11QFileDialog11changeEventEP6QEvent(e);
+    }
+    QFileDialog::changeEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK11QFileDialog10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qfiledialog.h:100
 // [-2] void QFileDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN11QFileDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
-  (MyQFileDialog*)(0);
+void* C_ZN11QFileDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQFileDialog*)(0);
   return  new MyQFileDialog(parent, f);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:101
 // [-2] void QFileDialog(class QWidget *, const class QString &, const class QString &, const class QString &)
 extern "C"
-void* C_ZN11QFileDialogC1EP7QWidgetRK7QStringS4_S4_(QWidget * parent, const QString & caption, const QString & directory, const QString & filter) {
-  (MyQFileDialog*)(0);
+void* C_ZN11QFileDialogC2EP7QWidgetRK7QStringS4_S4_(QWidget * parent, const QString & caption, const QString & directory, const QString & filter) {
+  auto _nilp = (MyQFileDialog*)(0);
   return  new MyQFileDialog(parent, caption, directory, filter);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:105
 // [-2] void ~QFileDialog()
 extern "C"
-void C_ZN11QFileDialogD1Ev(void *this_) {
+void C_ZN11QFileDialogD2Ev(void *this_) {
   delete (QFileDialog*)(this_);
 }
 // Public Visibility=Default Availability=Available

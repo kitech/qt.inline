@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QThread is pure virtual: false
+// QThread has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZN7QThread21setTerminationEnabledEb(void*cbfn)
 
 class MyQThread : public QThread {
 public:
+  virtual ~MyQThread() {}
+// void QThread(class QObject *)
 MyQThread(QObject * parent) : QThread(parent) {}
 // void run()
-// void run()
-virtual void run() {
-  if (callback_ZN7QThread3runEv != 0) {
-  // callback_ZN7QThread3runEv();
-}}
+  virtual void run() {
+    if (callback_ZN7QThread3runEv != 0) {
+      // callback_ZN7QThread3runEv();
+    }
+    QThread::run();
+  }
 // int exec()
-// int exec()
-virtual int exec() {
-  if (callback_ZN7QThread4execEv != 0) {
-  // callback_ZN7QThread4execEv();
-}}
+  virtual int exec() {
+    if (callback_ZN7QThread4execEv != 0) {
+      // callback_ZN7QThread4execEv();
+    }
+    return QThread::exec();
+  }
 // void setTerminationEnabled(_Bool)
-// void setTerminationEnabled(_Bool)
-virtual void setTerminationEnabled(bool enabled) {
-  if (callback_ZN7QThread21setTerminationEnabledEb != 0) {
-  // callback_ZN7QThread21setTerminationEnabledEb(enabled);
-}}
+  virtual void setTerminationEnabled(bool enabled) {
+    if (callback_ZN7QThread21setTerminationEnabledEb != 0) {
+      // callback_ZN7QThread21setTerminationEnabledEb(enabled);
+    }
+    QThread::setTerminationEnabled(enabled);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -91,15 +97,15 @@ void C_ZN7QThread18yieldCurrentThreadEv() {
 // /usr/include/qt/QtCore/qthread.h:79
 // [-2] void QThread(class QObject *)
 extern "C"
-void* C_ZN7QThreadC1EP7QObject(QObject * parent) {
-  (MyQThread*)(0);
+void* C_ZN7QThreadC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQThread*)(0);
   return  new MyQThread(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:80
 // [-2] void ~QThread()
 extern "C"
-void C_ZN7QThreadD1Ev(void *this_) {
+void C_ZN7QThreadD2Ev(void *this_) {
   delete (QThread*)(this_);
 }
 // Public Visibility=Default Availability=Available

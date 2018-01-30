@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QPinchGesture is pure virtual: false
+// QPinchGesture has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPinchGesture : public QPinchGesture {
 public:
+  virtual ~MyQPinchGesture() {}
+// void QPinchGesture(class QObject *)
 MyQPinchGesture(QObject * parent) : QPinchGesture(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK13QPinchGesture10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:165
 // [-2] void QPinchGesture(class QObject *)
 extern "C"
-void* C_ZN13QPinchGestureC1EP7QObject(QObject * parent) {
-  (MyQPinchGesture*)(0);
-  return  new MyQPinchGesture(parent);
+void* C_ZN13QPinchGestureC2EP7QObject(QObject * parent) {
+  return  new QPinchGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:166
 // [-2] void ~QPinchGesture()
 extern "C"
-void C_ZN13QPinchGestureD1Ev(void *this_) {
+void C_ZN13QPinchGestureD2Ev(void *this_) {
   delete (QPinchGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available

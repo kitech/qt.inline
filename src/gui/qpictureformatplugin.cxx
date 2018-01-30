@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QPictureFormatPlugin is pure virtual: true
+// QPictureFormatPlugin has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPictureFormatPlugin : public QPictureFormatPlugin {
 public:
+  virtual ~MyQPictureFormatPlugin() {}
+// void QPictureFormatPlugin(class QObject *)
 MyQPictureFormatPlugin(QObject * parent) : QPictureFormatPlugin(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK20QPictureFormatPlugin10metaObjectEv(void *this_) {
 // [-2] void QPictureFormatPlugin(class QObject *)
 extern "C"
 void* C_ZN20QPictureFormatPluginC1EP7QObject(QObject * parent) {
-  (MyQPictureFormatPlugin*)(0);
-  return 0; // new MyQPictureFormatPlugin(parent);
+  return 0; // new QPictureFormatPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpictureformatplugin.h:64
 // [-2] void ~QPictureFormatPlugin()
 extern "C"
-void C_ZN20QPictureFormatPluginD1Ev(void *this_) {
+void C_ZN20QPictureFormatPluginD2Ev(void *this_) {
   delete (QPictureFormatPlugin*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

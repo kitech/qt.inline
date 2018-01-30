@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QMoveEvent is pure virtual: false
+// QMoveEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMoveEvent : public QMoveEvent {
 public:
+  virtual ~MyQMoveEvent() {}
+// void QMoveEvent(const class QPoint &, const class QPoint &)
 MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos) {}
 };
 
@@ -17,15 +20,14 @@ MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos
 // /usr/include/qt/QtGui/qevent.h:421
 // [-2] void QMoveEvent(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN10QMoveEventC1ERK6QPointS2_(const QPoint & pos, const QPoint & oldPos) {
-  (MyQMoveEvent*)(0);
-  return  new MyQMoveEvent(pos, oldPos);
+void* C_ZN10QMoveEventC2ERK6QPointS2_(const QPoint & pos, const QPoint & oldPos) {
+  return  new QMoveEvent(pos, oldPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:422
 // [-2] void ~QMoveEvent()
 extern "C"
-void C_ZN10QMoveEventD1Ev(void *this_) {
+void C_ZN10QMoveEventD2Ev(void *this_) {
   delete (QMoveEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

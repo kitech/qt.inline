@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextTableFormat is pure virtual: false
+// QTextTableFormat has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN16QTextTableFormatC1ERK11QTextFormat(void*cbfn)
 
 class MyQTextTableFormat : public QTextTableFormat {
 public:
+  virtual ~MyQTextTableFormat() {}
+// void QTextTableFormat()
 MyQTextTableFormat() : QTextTableFormat() {}
+// void QTextTableFormat(const class QTextFormat &)
 MyQTextTableFormat(const QTextFormat & fmt) : QTextTableFormat(fmt) {}
 };
 
@@ -25,9 +29,8 @@ MyQTextTableFormat(const QTextFormat & fmt) : QTextTableFormat(fmt) {}
 // /usr/include/qt/QtGui/qtextformat.h:887
 // [-2] void QTextTableFormat()
 extern "C"
-void* C_ZN16QTextTableFormatC1Ev() {
-  (MyQTextTableFormat*)(0);
-  return  new MyQTextTableFormat();
+void* C_ZN16QTextTableFormatC2Ev() {
+  return  new QTextTableFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:889

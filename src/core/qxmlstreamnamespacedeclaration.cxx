@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QXmlStreamNamespaceDeclaration is pure virtual: false
+// QXmlStreamNamespaceDeclaration has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamNamespaceDeclaration : public QXmlStreamNamespaceDeclaration {
 public:
+  virtual ~MyQXmlStreamNamespaceDeclaration() {}
+// void QXmlStreamNamespaceDeclaration()
 MyQXmlStreamNamespaceDeclaration() : QXmlStreamNamespaceDeclaration() {}
+// void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
 MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespaceUri) : QXmlStreamNamespaceDeclaration(prefix, namespaceUri) {}
 };
 
@@ -18,23 +22,21 @@ MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespa
 // /usr/include/qt/QtCore/qxmlstream.h:199
 // [-2] void QXmlStreamNamespaceDeclaration()
 extern "C"
-void* C_ZN30QXmlStreamNamespaceDeclarationC1Ev() {
-  (MyQXmlStreamNamespaceDeclaration*)(0);
-  return  new MyQXmlStreamNamespaceDeclaration();
+void* C_ZN30QXmlStreamNamespaceDeclarationC2Ev() {
+  return  new QXmlStreamNamespaceDeclaration();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:216
 // [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
 extern "C"
-void* C_ZN30QXmlStreamNamespaceDeclarationC1ERK7QStringS2_(const QString & prefix, const QString & namespaceUri) {
-  (MyQXmlStreamNamespaceDeclaration*)(0);
-  return  new MyQXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+void* C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(const QString & prefix, const QString & namespaceUri) {
+  return  new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:217
 // [-2] void ~QXmlStreamNamespaceDeclaration()
 extern "C"
-void C_ZN30QXmlStreamNamespaceDeclarationD1Ev(void *this_) {
+void C_ZN30QXmlStreamNamespaceDeclarationD2Ev(void *this_) {
   delete (QXmlStreamNamespaceDeclaration*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

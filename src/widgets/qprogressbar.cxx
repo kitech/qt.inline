@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QProgressBar is pure virtual: false
+// QProgressBar has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionP
 
 class MyQProgressBar : public QProgressBar {
 public:
+  virtual ~MyQProgressBar() {}
+// void QProgressBar(class QWidget *)
 MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN12QProgressBar5eventEP6QEvent != 0) {
-  // callback_ZN12QProgressBar5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN12QProgressBar5eventEP6QEvent != 0) {
+      // callback_ZN12QProgressBar5eventEP6QEvent(e);
+    }
+    return QProgressBar::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN12QProgressBar10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN12QProgressBar10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN12QProgressBar10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN12QProgressBar10paintEventEP11QPaintEvent(arg0);
+    }
+    QProgressBar::paintEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionProgressBar *)
-// void initStyleOption(class QStyleOptionProgressBar *)
-virtual void initStyleOption(QStyleOptionProgressBar * option) {
-  if (callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar != 0) {
-  // callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(option);
-}}
+  virtual void initStyleOption(QStyleOptionProgressBar * option) {
+    if (callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar != 0) {
+      // callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(option);
+    }
+    QProgressBar::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -63,15 +69,15 @@ void* C_ZNK12QProgressBar10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qprogressbar.h:71
 // [-2] void QProgressBar(class QWidget *)
 extern "C"
-void* C_ZN12QProgressBarC1EP7QWidget(QWidget * parent) {
-  (MyQProgressBar*)(0);
+void* C_ZN12QProgressBarC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQProgressBar*)(0);
   return  new MyQProgressBar(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:72
 // [-2] void ~QProgressBar()
 extern "C"
-void C_ZN12QProgressBarD1Ev(void *this_) {
+void C_ZN12QProgressBarD2Ev(void *this_) {
   delete (QProgressBar*)(this_);
 }
 // Public Visibility=Default Availability=Available

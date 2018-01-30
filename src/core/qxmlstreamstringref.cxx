@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QXmlStreamStringRef is pure virtual: false
+// QXmlStreamStringRef has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamStringRef : public QXmlStreamStringRef {
 public:
+  virtual ~MyQXmlStreamStringRef() {}
+// void QXmlStreamStringRef()
 MyQXmlStreamStringRef() : QXmlStreamStringRef() {}
+// void QXmlStreamStringRef(const class QStringRef &)
 MyQXmlStreamStringRef(const QStringRef & aString) : QXmlStreamStringRef(aString) {}
+// void QXmlStreamStringRef(const class QString &)
 MyQXmlStreamStringRef(const QString & aString) : QXmlStreamStringRef(aString) {}
+// void QXmlStreamStringRef(class QString &&)
 MyQXmlStreamStringRef(QString && aString) : QXmlStreamStringRef(aString) {}
 };
 
@@ -20,39 +26,35 @@ MyQXmlStreamStringRef(QString && aString) : QXmlStreamStringRef(aString) {}
 // /usr/include/qt/QtCore/qxmlstream.h:58
 // [-2] void QXmlStreamStringRef()
 extern "C"
-void* C_ZN19QXmlStreamStringRefC1Ev() {
-  (MyQXmlStreamStringRef*)(0);
-  return  new MyQXmlStreamStringRef();
+void* C_ZN19QXmlStreamStringRefC2Ev() {
+  return  new QXmlStreamStringRef();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:59
 // [-2] void QXmlStreamStringRef(const class QStringRef &)
 extern "C"
-void* C_ZN19QXmlStreamStringRefC1ERK10QStringRef(const QStringRef & aString) {
-  (MyQXmlStreamStringRef*)(0);
-  return  new MyQXmlStreamStringRef(aString);
+void* C_ZN19QXmlStreamStringRefC2ERK10QStringRef(const QStringRef & aString) {
+  return  new QXmlStreamStringRef(aString);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:61
 // [-2] void QXmlStreamStringRef(const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamStringRefC1ERK7QString(const QString & aString) {
-  (MyQXmlStreamStringRef*)(0);
-  return  new MyQXmlStreamStringRef(aString);
+void* C_ZN19QXmlStreamStringRefC2ERK7QString(const QString & aString) {
+  return  new QXmlStreamStringRef(aString);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:63
 // [-2] void QXmlStreamStringRef(class QString &&)
 extern "C"
-void* C_ZN19QXmlStreamStringRefC1EO7QString(QString && aString) {
-  (MyQXmlStreamStringRef*)(0);
-  return  new MyQXmlStreamStringRef(aString);
+void* C_ZN19QXmlStreamStringRefC2EO7QString(QString && aString) {
+  return  new QXmlStreamStringRef(aString);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:77
 // [-2] void ~QXmlStreamStringRef()
 extern "C"
-void C_ZN19QXmlStreamStringRefD1Ev(void *this_) {
+void C_ZN19QXmlStreamStringRefD2Ev(void *this_) {
   delete (QXmlStreamStringRef*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

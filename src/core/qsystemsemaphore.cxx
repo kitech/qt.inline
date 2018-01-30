@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QSystemSemaphore is pure virtual: false
+// QSystemSemaphore has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSystemSemaphore : public QSystemSemaphore {
 public:
+  virtual ~MyQSystemSemaphore() {}
+// void QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
 MyQSystemSemaphore(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) : QSystemSemaphore(key, initialValue, mode) {}
 };
 
@@ -17,15 +20,14 @@ MyQSystemSemaphore(const QString & key, int initialValue, QSystemSemaphore::Acce
 // /usr/include/qt/QtCore/qsystemsemaphore.h:74
 // [-2] void QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
 extern "C"
-void* C_ZN16QSystemSemaphoreC1ERK7QStringiNS_10AccessModeE(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) {
-  (MyQSystemSemaphore*)(0);
-  return  new MyQSystemSemaphore(key, initialValue, mode);
+void* C_ZN16QSystemSemaphoreC2ERK7QStringiNS_10AccessModeE(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) {
+  return  new QSystemSemaphore(key, initialValue, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsystemsemaphore.h:75
 // [-2] void ~QSystemSemaphore()
 extern "C"
-void C_ZN16QSystemSemaphoreD1Ev(void *this_) {
+void C_ZN16QSystemSemaphoreD2Ev(void *this_) {
   delete (QSystemSemaphore*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QFileIconProvider is pure virtual: false
+// QFileIconProvider has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFileIconProvider : public QFileIconProvider {
 public:
+  virtual ~MyQFileIconProvider() {}
+// void QFileIconProvider()
 MyQFileIconProvider() : QFileIconProvider() {}
 };
 
@@ -17,15 +20,14 @@ MyQFileIconProvider() : QFileIconProvider() {}
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:56
 // [-2] void QFileIconProvider()
 extern "C"
-void* C_ZN17QFileIconProviderC1Ev() {
-  (MyQFileIconProvider*)(0);
-  return  new MyQFileIconProvider();
+void* C_ZN17QFileIconProviderC2Ev() {
+  return  new QFileIconProvider();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:57
 // [-2] void ~QFileIconProvider()
 extern "C"
-void C_ZN17QFileIconProviderD1Ev(void *this_) {
+void C_ZN17QFileIconProviderD2Ev(void *this_) {
   delete (QFileIconProvider*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

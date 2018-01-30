@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QBasicTimer is pure virtual: false
+// QBasicTimer has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBasicTimer : public QBasicTimer {
 public:
+  virtual ~MyQBasicTimer() {}
+// void QBasicTimer()
 MyQBasicTimer() : QBasicTimer() {}
 };
 
@@ -17,15 +20,14 @@ MyQBasicTimer() : QBasicTimer() {}
 // /usr/include/qt/QtCore/qbasictimer.h:55
 // [-2] void QBasicTimer()
 extern "C"
-void* C_ZN11QBasicTimerC1Ev() {
-  (MyQBasicTimer*)(0);
-  return  new MyQBasicTimer();
+void* C_ZN11QBasicTimerC2Ev() {
+  return  new QBasicTimer();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbasictimer.h:56
 // [-2] void ~QBasicTimer()
 extern "C"
-void C_ZN11QBasicTimerD1Ev(void *this_) {
+void C_ZN11QBasicTimerD2Ev(void *this_) {
   delete (QBasicTimer*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

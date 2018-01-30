@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QDragMoveEvent is pure virtual: false
+// QDragMoveEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDragMoveEvent : public QDragMoveEvent {
 public:
+  virtual ~MyQDragMoveEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:644
 // [-2] void ~QDragMoveEvent()
 extern "C"
-void C_ZN14QDragMoveEventD1Ev(void *this_) {
+void C_ZN14QDragMoveEventD2Ev(void *this_) {
   delete (QDragMoveEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

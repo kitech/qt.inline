@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsLayoutItem is pure virtual: true
+// QGraphicsLayoutItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6
 
 class MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
+  virtual ~MyQGraphicsLayoutItem() {}
+// void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
 // void setGraphicsItem(class QGraphicsItem *)
-// void setGraphicsItem(class QGraphicsItem *)
-virtual void setGraphicsItem(QGraphicsItem * item) {
-  if (callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem != 0) {
-  // callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(item);
-}}
+  virtual void setGraphicsItem(QGraphicsItem * item) {
+    if (callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem != 0) {
+      // callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(item);
+    }
+    QGraphicsLayoutItem::setGraphicsItem(item);
+  }
 // void setOwnedByLayout(_Bool)
-// void setOwnedByLayout(_Bool)
-virtual void setOwnedByLayout(bool ownedByLayout) {
-  if (callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb != 0) {
-  // callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(ownedByLayout);
-}}
+  virtual void setOwnedByLayout(bool ownedByLayout) {
+    if (callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb != 0) {
+      // callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(ownedByLayout);
+    }
+    QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
+  }
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
-  if (callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
-  // callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
-}}
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
+    if (callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
+      // callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
+    }
+    return QGraphicsLayoutItem::sizeHint(which, constraint);
+  }
 };
 
 // Public Visibility=Default Availability=Available
@@ -57,14 +63,14 @@ virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
 // [-2] void QGraphicsLayoutItem(class QGraphicsLayoutItem *, _Bool)
 extern "C"
 void* C_ZN19QGraphicsLayoutItemC1EPS_b(QGraphicsLayoutItem * parent, bool isLayout) {
-  (MyQGraphicsLayoutItem*)(0);
+  auto _nilp = (MyQGraphicsLayoutItem*)(0);
   return 0; // new MyQGraphicsLayoutItem(parent, isLayout);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:58
 // [-2] void ~QGraphicsLayoutItem()
 extern "C"
-void C_ZN19QGraphicsLayoutItemD1Ev(void *this_) {
+void C_ZN19QGraphicsLayoutItemD2Ev(void *this_) {
   delete (QGraphicsLayoutItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

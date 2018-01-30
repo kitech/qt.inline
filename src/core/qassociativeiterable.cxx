@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QAssociativeIterable is pure virtual: false
+// QAssociativeIterable has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAssociativeIterable : public QAssociativeIterable {
 public:
+  virtual ~MyQAssociativeIterable() {}
 };
 
 // Public Visibility=Default Availability=Available

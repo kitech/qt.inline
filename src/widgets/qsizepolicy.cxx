@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QSizePolicy is pure virtual: false
+// QSizePolicy has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSizePolicy : public QSizePolicy {
 public:
+  virtual ~MyQSizePolicy() {}
+// void QSizePolicy()
 MyQSizePolicy() : QSizePolicy() {}
+// void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
 MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type) : QSizePolicy(horizontal, vertical, type) {}
 };
 
@@ -18,17 +22,15 @@ MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSiz
 // /usr/include/qt/QtWidgets/qsizepolicy.h:113
 // [-2] void QSizePolicy()
 extern "C"
-void* C_ZN11QSizePolicyC1Ev() {
-  (MyQSizePolicy*)(0);
-  return  new MyQSizePolicy();
+void* C_ZN11QSizePolicyC2Ev() {
+  return  new QSizePolicy();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:116
 // [-2] void QSizePolicy(enum QSizePolicy::Policy, enum QSizePolicy::Policy, enum QSizePolicy::ControlType)
 extern "C"
-void* C_ZN11QSizePolicyC1ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type) {
-  (MyQSizePolicy*)(0);
-  return  new MyQSizePolicy(horizontal, vertical, type);
+void* C_ZN11QSizePolicyC2ENS_6PolicyES0_NS_11ControlTypeE(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type) {
+  return  new QSizePolicy(horizontal, vertical, type);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizepolicy.h:128

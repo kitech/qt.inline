@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStatusBar is pure virtual: false
+// QStatusBar has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,43 +53,51 @@ extern "C" void set_callback_ZN10QStatusBar5eventEP6QEvent(void*cbfn)
 
 class MyQStatusBar : public QStatusBar {
 public:
+  virtual ~MyQStatusBar() {}
+// void QStatusBar(class QWidget *)
 MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * arg0) {
-  if (callback_ZN10QStatusBar9showEventEP10QShowEvent != 0) {
-  // callback_ZN10QStatusBar9showEventEP10QShowEvent(arg0);
-}}
+  virtual void showEvent(QShowEvent * arg0) {
+    if (callback_ZN10QStatusBar9showEventEP10QShowEvent != 0) {
+      // callback_ZN10QStatusBar9showEventEP10QShowEvent(arg0);
+    }
+    QStatusBar::showEvent(arg0);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN10QStatusBar10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN10QStatusBar10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN10QStatusBar10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN10QStatusBar10paintEventEP11QPaintEvent(arg0);
+    }
+    QStatusBar::paintEvent(arg0);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * arg0) {
-  if (callback_ZN10QStatusBar11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN10QStatusBar11resizeEventEP12QResizeEvent(arg0);
-}}
+  virtual void resizeEvent(QResizeEvent * arg0) {
+    if (callback_ZN10QStatusBar11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN10QStatusBar11resizeEventEP12QResizeEvent(arg0);
+    }
+    QStatusBar::resizeEvent(arg0);
+  }
 // void reformat()
-// void reformat()
-virtual void reformat() {
-  if (callback_ZN10QStatusBar8reformatEv != 0) {
-  // callback_ZN10QStatusBar8reformatEv();
-}}
+  virtual void reformat() {
+    if (callback_ZN10QStatusBar8reformatEv != 0) {
+      // callback_ZN10QStatusBar8reformatEv();
+    }
+    QStatusBar::reformat();
+  }
 // void hideOrShow()
-// void hideOrShow()
-virtual void hideOrShow() {
-  if (callback_ZN10QStatusBar10hideOrShowEv != 0) {
-  // callback_ZN10QStatusBar10hideOrShowEv();
-}}
+  virtual void hideOrShow() {
+    if (callback_ZN10QStatusBar10hideOrShowEv != 0) {
+      // callback_ZN10QStatusBar10hideOrShowEv();
+    }
+    QStatusBar::hideOrShow();
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN10QStatusBar5eventEP6QEvent != 0) {
-  // callback_ZN10QStatusBar5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN10QStatusBar5eventEP6QEvent != 0) {
+      // callback_ZN10QStatusBar5eventEP6QEvent(arg0);
+    }
+    return QStatusBar::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -102,15 +111,15 @@ void* C_ZNK10QStatusBar10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstatusbar.h:59
 // [-2] void QStatusBar(class QWidget *)
 extern "C"
-void* C_ZN10QStatusBarC1EP7QWidget(QWidget * parent) {
-  (MyQStatusBar*)(0);
+void* C_ZN10QStatusBarC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQStatusBar*)(0);
   return  new MyQStatusBar(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstatusbar.h:60
 // [-2] void ~QStatusBar()
 extern "C"
-void C_ZN10QStatusBarD1Ev(void *this_) {
+void C_ZN10QStatusBarD2Ev(void *this_) {
   delete (QStatusBar*)(this_);
 }
 // Public Visibility=Default Availability=Available

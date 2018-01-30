@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGroupBox is pure virtual: false
+// QGroupBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -80,68 +81,81 @@ extern "C" void set_callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroup
 
 class MyQGroupBox : public QGroupBox {
 public:
+  virtual ~MyQGroupBox() {}
+// void QGroupBox(class QWidget *)
 MyQGroupBox(QWidget * parent) : QGroupBox(parent) {}
+// void QGroupBox(const class QString &, class QWidget *)
 MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN9QGroupBox5eventEP6QEvent != 0) {
-  // callback_ZN9QGroupBox5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN9QGroupBox5eventEP6QEvent != 0) {
+      // callback_ZN9QGroupBox5eventEP6QEvent(event);
+    }
+    return QGroupBox::event(event);
+  }
 // void childEvent(class QChildEvent *)
-// void childEvent(class QChildEvent *)
-virtual void childEvent(QChildEvent * event) {
-  if (callback_ZN9QGroupBox10childEventEP11QChildEvent != 0) {
-  // callback_ZN9QGroupBox10childEventEP11QChildEvent(event);
-}}
+  virtual void childEvent(QChildEvent * event) {
+    if (callback_ZN9QGroupBox10childEventEP11QChildEvent != 0) {
+      // callback_ZN9QGroupBox10childEventEP11QChildEvent(event);
+    }
+    QGroupBox::childEvent(event);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN9QGroupBox11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN9QGroupBox11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN9QGroupBox11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN9QGroupBox11resizeEventEP12QResizeEvent(event);
+    }
+    QGroupBox::resizeEvent(event);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * event) {
-  if (callback_ZN9QGroupBox10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN9QGroupBox10paintEventEP11QPaintEvent(event);
-}}
+  virtual void paintEvent(QPaintEvent * event) {
+    if (callback_ZN9QGroupBox10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN9QGroupBox10paintEventEP11QPaintEvent(event);
+    }
+    QGroupBox::paintEvent(event);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * event) {
-  if (callback_ZN9QGroupBox12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN9QGroupBox12focusInEventEP11QFocusEvent(event);
-}}
+  virtual void focusInEvent(QFocusEvent * event) {
+    if (callback_ZN9QGroupBox12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN9QGroupBox12focusInEventEP11QFocusEvent(event);
+    }
+    QGroupBox::focusInEvent(event);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * event) {
-  if (callback_ZN9QGroupBox11changeEventEP6QEvent != 0) {
-  // callback_ZN9QGroupBox11changeEventEP6QEvent(event);
-}}
+  virtual void changeEvent(QEvent * event) {
+    if (callback_ZN9QGroupBox11changeEventEP6QEvent != 0) {
+      // callback_ZN9QGroupBox11changeEventEP6QEvent(event);
+    }
+    QGroupBox::changeEvent(event);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * event) {
-  if (callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent(event);
-}}
+  virtual void mousePressEvent(QMouseEvent * event) {
+    if (callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent(event);
+    }
+    QGroupBox::mousePressEvent(event);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * event) {
-  if (callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(event);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * event) {
+    if (callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(event);
+    }
+    QGroupBox::mouseMoveEvent(event);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * event) {
-  if (callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(event);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * event) {
+    if (callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(event);
+    }
+    QGroupBox::mouseReleaseEvent(event);
+  }
 // void initStyleOption(class QStyleOptionGroupBox *)
-// void initStyleOption(class QStyleOptionGroupBox *)
-virtual void initStyleOption(QStyleOptionGroupBox * option) {
-  if (callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox != 0) {
-  // callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(option);
-}}
+  virtual void initStyleOption(QStyleOptionGroupBox * option) {
+    if (callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox != 0) {
+      // callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(option);
+    }
+    QGroupBox::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -155,23 +169,23 @@ void* C_ZNK9QGroupBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgroupbox.h:62
 // [-2] void QGroupBox(class QWidget *)
 extern "C"
-void* C_ZN9QGroupBoxC1EP7QWidget(QWidget * parent) {
-  (MyQGroupBox*)(0);
+void* C_ZN9QGroupBoxC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQGroupBox*)(0);
   return  new MyQGroupBox(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:63
 // [-2] void QGroupBox(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QGroupBoxC1ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
-  (MyQGroupBox*)(0);
+void* C_ZN9QGroupBoxC2ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+  auto _nilp = (MyQGroupBox*)(0);
   return  new MyQGroupBox(title, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:64
 // [-2] void ~QGroupBox()
 extern "C"
-void C_ZN9QGroupBoxD1Ev(void *this_) {
+void C_ZN9QGroupBoxD2Ev(void *this_) {
   delete (QGroupBox*)(this_);
 }
 // Public Visibility=Default Availability=Available

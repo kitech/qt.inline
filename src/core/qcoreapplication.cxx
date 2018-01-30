@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QCoreApplication is pure virtual: false
+// QCoreApplication has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN16QCoreApplication5eventEP6QEvent(void*cbfn)
 
 class MyQCoreApplication : public QCoreApplication {
 public:
-MyQCoreApplication(int & argc, char ** argv, int arg2) : QCoreApplication(argc, (char**)argv, arg2) {}
+  virtual ~MyQCoreApplication() {}
+// void QCoreApplication(int &, char **, int)
+MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN16QCoreApplication5eventEP6QEvent != 0) {
-  // callback_ZN16QCoreApplication5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN16QCoreApplication5eventEP6QEvent != 0) {
+      // callback_ZN16QCoreApplication5eventEP6QEvent(arg0);
+    }
+    return QCoreApplication::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK16QCoreApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qcoreapplication.h:91
 // [-2] void QCoreApplication(int &, char **, int)
 extern "C"
-void* C_ZN16QCoreApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
-  (MyQCoreApplication*)(0);
-  return  new MyQCoreApplication(argc, (char**)argv, arg2);
+void* C_ZN16QCoreApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
+  auto _nilp = (MyQCoreApplication*)(0);
+  return  new MyQCoreApplication(argc, argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:97
 // [-2] void ~QCoreApplication()
 extern "C"
-void C_ZN16QCoreApplicationD1Ev(void *this_) {
+void C_ZN16QCoreApplicationD2Ev(void *this_) {
   delete (QCoreApplication*)(this_);
 }
 // Public static Visibility=Default Availability=Available

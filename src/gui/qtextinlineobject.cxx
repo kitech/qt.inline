@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextInlineObject is pure virtual: false
+// QTextInlineObject has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextInlineObject : public QTextInlineObject {
 public:
+  virtual ~MyQTextInlineObject() {}
+// void QTextInlineObject()
 MyQTextInlineObject() : QTextInlineObject() {}
 };
 
@@ -17,9 +20,8 @@ MyQTextInlineObject() : QTextInlineObject() {}
 // /usr/include/qt/QtGui/qtextlayout.h:72
 // [-2] void QTextInlineObject()
 extern "C"
-void* C_ZN17QTextInlineObjectC1Ev() {
-  (MyQTextInlineObject*)(0);
-  return  new MyQTextInlineObject();
+void* C_ZN17QTextInlineObjectC2Ev() {
+  return  new QTextInlineObject();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:73

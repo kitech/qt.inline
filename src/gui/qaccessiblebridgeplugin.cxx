@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QAccessibleBridgePlugin is pure virtual: true
+// QAccessibleBridgePlugin has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleBridgePlugin : public QAccessibleBridgePlugin {
 public:
+  virtual ~MyQAccessibleBridgePlugin() {}
+// void QAccessibleBridgePlugin(class QObject *)
 MyQAccessibleBridgePlugin(QObject * parent) : QAccessibleBridgePlugin(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK23QAccessibleBridgePlugin10metaObjectEv(void *this_) {
 // [-2] void QAccessibleBridgePlugin(class QObject *)
 extern "C"
 void* C_ZN23QAccessibleBridgePluginC1EP7QObject(QObject * parent) {
-  (MyQAccessibleBridgePlugin*)(0);
-  return 0; // new MyQAccessibleBridgePlugin(parent);
+  return 0; // new QAccessibleBridgePlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:70
 // [-2] void ~QAccessibleBridgePlugin()
 extern "C"
-void C_ZN23QAccessibleBridgePluginD1Ev(void *this_) {
+void C_ZN23QAccessibleBridgePluginD2Ev(void *this_) {
   delete (QAccessibleBridgePlugin*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QSwipeGesture is pure virtual: false
+// QSwipeGesture has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSwipeGesture : public QSwipeGesture {
 public:
+  virtual ~MyQSwipeGesture() {}
+// void QSwipeGesture(class QObject *)
 MyQSwipeGesture(QObject * parent) : QSwipeGesture(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK13QSwipeGesture10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:221
 // [-2] void QSwipeGesture(class QObject *)
 extern "C"
-void* C_ZN13QSwipeGestureC1EP7QObject(QObject * parent) {
-  (MyQSwipeGesture*)(0);
-  return  new MyQSwipeGesture(parent);
+void* C_ZN13QSwipeGestureC2EP7QObject(QObject * parent) {
+  return  new QSwipeGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:222
 // [-2] void ~QSwipeGesture()
 extern "C"
-void C_ZN13QSwipeGestureD1Ev(void *this_) {
+void C_ZN13QSwipeGestureD2Ev(void *this_) {
   delete (QSwipeGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available

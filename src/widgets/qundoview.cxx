@@ -4,14 +4,19 @@
 #include <QtWidgets>
 
 // QUndoView is pure virtual: false
+// QUndoView has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUndoView : public QUndoView {
 public:
+  virtual ~MyQUndoView() {}
+// void QUndoView(class QWidget *)
 MyQUndoView(QWidget * parent) : QUndoView(parent) {}
+// void QUndoView(class QUndoStack *, class QWidget *)
 MyQUndoView(QUndoStack * stack, QWidget * parent) : QUndoView(stack, parent) {}
+// void QUndoView(class QUndoGroup *, class QWidget *)
 MyQUndoView(QUndoGroup * group, QWidget * parent) : QUndoView(group, parent) {}
 };
 
@@ -26,31 +31,28 @@ void* C_ZNK9QUndoView10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundoview.h:65
 // [-2] void QUndoView(class QWidget *)
 extern "C"
-void* C_ZN9QUndoViewC1EP7QWidget(QWidget * parent) {
-  (MyQUndoView*)(0);
-  return  new MyQUndoView(parent);
+void* C_ZN9QUndoViewC2EP7QWidget(QWidget * parent) {
+  return  new QUndoView(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:66
 // [-2] void QUndoView(class QUndoStack *, class QWidget *)
 extern "C"
-void* C_ZN9QUndoViewC1EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
-  (MyQUndoView*)(0);
-  return  new MyQUndoView(stack, parent);
+void* C_ZN9QUndoViewC2EP10QUndoStackP7QWidget(QUndoStack * stack, QWidget * parent) {
+  return  new QUndoView(stack, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:68
 // [-2] void QUndoView(class QUndoGroup *, class QWidget *)
 extern "C"
-void* C_ZN9QUndoViewC1EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
-  (MyQUndoView*)(0);
-  return  new MyQUndoView(group, parent);
+void* C_ZN9QUndoViewC2EP10QUndoGroupP7QWidget(QUndoGroup * group, QWidget * parent) {
+  return  new QUndoView(group, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:70
 // [-2] void ~QUndoView()
 extern "C"
-void C_ZN9QUndoViewD1Ev(void *this_) {
+void C_ZN9QUndoViewD2Ev(void *this_) {
   delete (QUndoView*)(this_);
 }
 // Public Visibility=Default Availability=Available

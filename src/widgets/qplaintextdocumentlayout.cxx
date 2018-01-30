@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QPlainTextDocumentLayout is pure virtual: false
+// QPlainTextDocumentLayout has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(v
 
 class MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
+  virtual ~MyQPlainTextDocumentLayout() {}
+// void QPlainTextDocumentLayout(class QTextDocument *)
 MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(document) {}
 // void documentChanged(int, int, int)
-// void documentChanged(int, int, int)
-virtual void documentChanged(int from, int arg1, int charsAdded) {
-  if (callback_ZN24QPlainTextDocumentLayout15documentChangedEiii != 0) {
-  // callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(from, arg1, charsAdded);
-}}
+  virtual void documentChanged(int from, int arg1, int charsAdded) {
+    if (callback_ZN24QPlainTextDocumentLayout15documentChangedEiii != 0) {
+      // callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(from, arg1, charsAdded);
+    }
+    QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK24QPlainTextDocumentLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qplaintextedit.h:302
 // [-2] void QPlainTextDocumentLayout(class QTextDocument *)
 extern "C"
-void* C_ZN24QPlainTextDocumentLayoutC1EP13QTextDocument(QTextDocument * document) {
-  (MyQPlainTextDocumentLayout*)(0);
+void* C_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument(QTextDocument * document) {
+  auto _nilp = (MyQPlainTextDocumentLayout*)(0);
   return  new MyQPlainTextDocumentLayout(document);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:303
 // [-2] void ~QPlainTextDocumentLayout()
 extern "C"
-void C_ZN24QPlainTextDocumentLayoutD1Ev(void *this_) {
+void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_) {
   delete (QPlainTextDocumentLayout*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

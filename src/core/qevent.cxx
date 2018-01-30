@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QEvent is pure virtual: false
+// QEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQEvent : public QEvent {
 public:
+  virtual ~MyQEvent() {}
+// void QEvent(enum QEvent::Type)
 MyQEvent(QEvent::Type type) : QEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQEvent(QEvent::Type type) : QEvent(type) {}
 // /usr/include/qt/QtCore/qcoreevent.h:297
 // [-2] void QEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN6QEventC1ENS_4TypeE(QEvent::Type type) {
-  (MyQEvent*)(0);
-  return  new MyQEvent(type);
+void* C_ZN6QEventC2ENS_4TypeE(QEvent::Type type) {
+  return  new QEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:299
 // [-2] void ~QEvent()
 extern "C"
-void C_ZN6QEventD1Ev(void *this_) {
+void C_ZN6QEventD2Ev(void *this_) {
   delete (QEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

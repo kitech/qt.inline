@@ -4,19 +4,21 @@
 #include <QtWidgets>
 
 // QItemEditorCreatorBase is pure virtual: true
+// QItemEditorCreatorBase has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQItemEditorCreatorBase : public QItemEditorCreatorBase {
 public:
+  virtual ~MyQItemEditorCreatorBase() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:58
 // [-2] void ~QItemEditorCreatorBase()
 extern "C"
-void C_ZN22QItemEditorCreatorBaseD1Ev(void *this_) {
+void C_ZN22QItemEditorCreatorBaseD2Ev(void *this_) {
   delete (QItemEditorCreatorBase*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

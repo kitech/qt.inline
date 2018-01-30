@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QInputEvent is pure virtual: false
+// QInputEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQInputEvent : public QInputEvent {
 public:
+  virtual ~MyQInputEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:72
 // [-2] void ~QInputEvent()
 extern "C"
-void C_ZN11QInputEventD1Ev(void *this_) {
+void C_ZN11QInputEventD2Ev(void *this_) {
   delete (QInputEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

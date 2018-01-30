@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QRect is pure virtual: false
+// QRect has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRect : public QRect {
 public:
+  virtual ~MyQRect() {}
+// void QRect()
 MyQRect() : QRect() {}
+// void QRect(const class QPoint &, const class QPoint &)
 MyQRect(const QPoint & topleft, const QPoint & bottomright) : QRect(topleft, bottomright) {}
+// void QRect(const class QPoint &, const class QSize &)
 MyQRect(const QPoint & topleft, const QSize & size) : QRect(topleft, size) {}
+// void QRect(int, int, int, int)
 MyQRect(int left, int top, int width, int height) : QRect(left, top, width, height) {}
 };
 
@@ -20,33 +26,29 @@ MyQRect(int left, int top, int width, int height) : QRect(left, top, width, heig
 // /usr/include/qt/QtCore/qrect.h:60
 // [-2] void QRect()
 extern "C"
-void* C_ZN5QRectC1Ev() {
-  (MyQRect*)(0);
-  return  new MyQRect();
+void* C_ZN5QRectC2Ev() {
+  return  new QRect();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:61
 // [-2] void QRect(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN5QRectC1ERK6QPointS2_(const QPoint & topleft, const QPoint & bottomright) {
-  (MyQRect*)(0);
-  return  new MyQRect(topleft, bottomright);
+void* C_ZN5QRectC2ERK6QPointS2_(const QPoint & topleft, const QPoint & bottomright) {
+  return  new QRect(topleft, bottomright);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:62
 // [-2] void QRect(const class QPoint &, const class QSize &)
 extern "C"
-void* C_ZN5QRectC1ERK6QPointRK5QSize(const QPoint & topleft, const QSize & size) {
-  (MyQRect*)(0);
-  return  new MyQRect(topleft, size);
+void* C_ZN5QRectC2ERK6QPointRK5QSize(const QPoint & topleft, const QSize & size) {
+  return  new QRect(topleft, size);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:63
 // [-2] void QRect(int, int, int, int)
 extern "C"
-void* C_ZN5QRectC1Eiiii(int left, int top, int width, int height) {
-  (MyQRect*)(0);
-  return  new MyQRect(left, top, width, height);
+void* C_ZN5QRectC2Eiiii(int left, int top, int width, int height) {
+  return  new QRect(left, top, width, height);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:65

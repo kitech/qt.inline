@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QAbstractButton is pure virtual: true
+// QAbstractButton has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -108,91 +109,107 @@ extern "C" void set_callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(void
 
 class MyQAbstractButton : public QAbstractButton {
 public:
+  virtual ~MyQAbstractButton() {}
+// void QAbstractButton(class QWidget *)
 MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * e) {
-  if (callback_ZN15QAbstractButton10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN15QAbstractButton10paintEventEP11QPaintEvent(e);
-}}
+  virtual void paintEvent(QPaintEvent * e) {
+    if (callback_ZN15QAbstractButton10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN15QAbstractButton10paintEventEP11QPaintEvent(e);
+    }
+    QAbstractButton::paintEvent(e);
+  }
 // bool hitButton(const class QPoint &)
-// bool hitButton(const class QPoint &)
-virtual bool hitButton(const QPoint & pos) {
-  if (callback_ZNK15QAbstractButton9hitButtonERK6QPoint != 0) {
-  // callback_ZNK15QAbstractButton9hitButtonERK6QPoint(pos);
-}}
+  virtual bool hitButton(const QPoint & pos) {
+    if (callback_ZNK15QAbstractButton9hitButtonERK6QPoint != 0) {
+      // callback_ZNK15QAbstractButton9hitButtonERK6QPoint(pos);
+    }
+    return QAbstractButton::hitButton(pos);
+  }
 // void checkStateSet()
-// void checkStateSet()
-virtual void checkStateSet() {
-  if (callback_ZN15QAbstractButton13checkStateSetEv != 0) {
-  // callback_ZN15QAbstractButton13checkStateSetEv();
-}}
+  virtual void checkStateSet() {
+    if (callback_ZN15QAbstractButton13checkStateSetEv != 0) {
+      // callback_ZN15QAbstractButton13checkStateSetEv();
+    }
+    QAbstractButton::checkStateSet();
+  }
 // void nextCheckState()
-// void nextCheckState()
-virtual void nextCheckState() {
-  if (callback_ZN15QAbstractButton14nextCheckStateEv != 0) {
-  // callback_ZN15QAbstractButton14nextCheckStateEv();
-}}
+  virtual void nextCheckState() {
+    if (callback_ZN15QAbstractButton14nextCheckStateEv != 0) {
+      // callback_ZN15QAbstractButton14nextCheckStateEv();
+    }
+    QAbstractButton::nextCheckState();
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN15QAbstractButton5eventEP6QEvent != 0) {
-  // callback_ZN15QAbstractButton5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN15QAbstractButton5eventEP6QEvent != 0) {
+      // callback_ZN15QAbstractButton5eventEP6QEvent(e);
+    }
+    return QAbstractButton::event(e);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * e) {
-  if (callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(e);
-}}
+  virtual void keyPressEvent(QKeyEvent * e) {
+    if (callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(e);
+    }
+    QAbstractButton::keyPressEvent(e);
+  }
 // void keyReleaseEvent(class QKeyEvent *)
-// void keyReleaseEvent(class QKeyEvent *)
-virtual void keyReleaseEvent(QKeyEvent * e) {
-  if (callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent != 0) {
-  // callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(e);
-}}
+  virtual void keyReleaseEvent(QKeyEvent * e) {
+    if (callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent != 0) {
+      // callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(e);
+    }
+    QAbstractButton::keyReleaseEvent(e);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * e) {
-  if (callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(e);
-}}
+  virtual void mousePressEvent(QMouseEvent * e) {
+    if (callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(e);
+    }
+    QAbstractButton::mousePressEvent(e);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * e) {
-  if (callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(e);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * e) {
+    if (callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(e);
+    }
+    QAbstractButton::mouseReleaseEvent(e);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * e) {
-  if (callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(e);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * e) {
+    if (callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(e);
+    }
+    QAbstractButton::mouseMoveEvent(e);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * e) {
-  if (callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent(e);
-}}
+  virtual void focusInEvent(QFocusEvent * e) {
+    if (callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent(e);
+    }
+    QAbstractButton::focusInEvent(e);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * e) {
-  if (callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(e);
-}}
+  virtual void focusOutEvent(QFocusEvent * e) {
+    if (callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(e);
+    }
+    QAbstractButton::focusOutEvent(e);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * e) {
-  if (callback_ZN15QAbstractButton11changeEventEP6QEvent != 0) {
-  // callback_ZN15QAbstractButton11changeEventEP6QEvent(e);
-}}
+  virtual void changeEvent(QEvent * e) {
+    if (callback_ZN15QAbstractButton11changeEventEP6QEvent != 0) {
+      // callback_ZN15QAbstractButton11changeEventEP6QEvent(e);
+    }
+    QAbstractButton::changeEvent(e);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * e) {
-  if (callback_ZN15QAbstractButton10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(e);
-}}
+  virtual void timerEvent(QTimerEvent * e) {
+    if (callback_ZN15QAbstractButton10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(e);
+    }
+    QAbstractButton::timerEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -207,14 +224,14 @@ void* C_ZNK15QAbstractButton10metaObjectEv(void *this_) {
 // [-2] void QAbstractButton(class QWidget *)
 extern "C"
 void* C_ZN15QAbstractButtonC1EP7QWidget(QWidget * parent) {
-  (MyQAbstractButton*)(0);
+  auto _nilp = (MyQAbstractButton*)(0);
   return 0; // new MyQAbstractButton(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:76
 // [-2] void ~QAbstractButton()
 extern "C"
-void C_ZN15QAbstractButtonD1Ev(void *this_) {
+void C_ZN15QAbstractButtonD2Ev(void *this_) {
   delete (QAbstractButton*)(this_);
 }
 // Public Visibility=Default Availability=Available

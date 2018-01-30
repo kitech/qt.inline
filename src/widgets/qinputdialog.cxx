@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QInputDialog is pure virtual: false
+// QInputDialog has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQInputDialog : public QInputDialog {
 public:
+  virtual ~MyQInputDialog() {}
+// void QInputDialog(class QWidget *, Qt::WindowFlags)
 MyQInputDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QInputDialog(parent, flags) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK12QInputDialog10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:94
 // [-2] void QInputDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN12QInputDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQInputDialog*)(0);
-  return  new MyQInputDialog(parent, flags);
+void* C_ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  return  new QInputDialog(parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:95
 // [-2] void ~QInputDialog()
 extern "C"
-void C_ZN12QInputDialogD1Ev(void *this_) {
+void C_ZN12QInputDialogD2Ev(void *this_) {
   delete (QInputDialog*)(this_);
 }
 // Public Visibility=Default Availability=Available

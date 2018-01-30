@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QGenericArgument is pure virtual: false
+// QGenericArgument has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGenericArgument : public QGenericArgument {
 public:
+  virtual ~MyQGenericArgument() {}
+// void QGenericArgument(const char *, const void *)
 MyQGenericArgument(const char * aName, const void * aData) : QGenericArgument(aName, aData) {}
 };
 
@@ -17,9 +20,8 @@ MyQGenericArgument(const char * aName, const void * aData) : QGenericArgument(aN
 // /usr/include/qt/QtCore/qobjectdefs.h:297
 // [-2] void QGenericArgument(const char *, const void *)
 extern "C"
-void* C_ZN16QGenericArgumentC1EPKcPKv(const char * aName, const void * aData) {
-  (MyQGenericArgument*)(0);
-  return  new MyQGenericArgument(aName, aData);
+void* C_ZN16QGenericArgumentC2EPKcPKv(const char * aName, const void * aData) {
+  return  new QGenericArgument(aName, aData);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:299

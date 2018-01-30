@@ -4,16 +4,23 @@
 #include <QtCore>
 
 // QRectF is pure virtual: false
+// QRectF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRectF : public QRectF {
 public:
+  virtual ~MyQRectF() {}
+// void QRectF()
 MyQRectF() : QRectF() {}
+// void QRectF(const class QPointF &, const class QSizeF &)
 MyQRectF(const QPointF & topleft, const QSizeF & size) : QRectF(topleft, size) {}
+// void QRectF(const class QPointF &, const class QPointF &)
 MyQRectF(const QPointF & topleft, const QPointF & bottomRight) : QRectF(topleft, bottomRight) {}
+// void QRectF(qreal, qreal, qreal, qreal)
 MyQRectF(qreal left, qreal top, qreal width, qreal height) : QRectF(left, top, width, height) {}
+// void QRectF(const class QRect &)
 MyQRectF(const QRect & rect) : QRectF(rect) {}
 };
 
@@ -21,41 +28,36 @@ MyQRectF(const QRect & rect) : QRectF(rect) {}
 // /usr/include/qt/QtCore/qrect.h:514
 // [-2] void QRectF()
 extern "C"
-void* C_ZN6QRectFC1Ev() {
-  (MyQRectF*)(0);
-  return  new MyQRectF();
+void* C_ZN6QRectFC2Ev() {
+  return  new QRectF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:515
 // [-2] void QRectF(const class QPointF &, const class QSizeF &)
 extern "C"
-void* C_ZN6QRectFC1ERK7QPointFRK6QSizeF(const QPointF & topleft, const QSizeF & size) {
-  (MyQRectF*)(0);
-  return  new MyQRectF(topleft, size);
+void* C_ZN6QRectFC2ERK7QPointFRK6QSizeF(const QPointF & topleft, const QSizeF & size) {
+  return  new QRectF(topleft, size);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:516
 // [-2] void QRectF(const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN6QRectFC1ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight) {
-  (MyQRectF*)(0);
-  return  new MyQRectF(topleft, bottomRight);
+void* C_ZN6QRectFC2ERK7QPointFS2_(const QPointF & topleft, const QPointF & bottomRight) {
+  return  new QRectF(topleft, bottomRight);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:517
 // [-2] void QRectF(qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN6QRectFC1Edddd(qreal left, qreal top, qreal width, qreal height) {
-  (MyQRectF*)(0);
-  return  new MyQRectF(left, top, width, height);
+void* C_ZN6QRectFC2Edddd(qreal left, qreal top, qreal width, qreal height) {
+  return  new QRectF(left, top, width, height);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:518
 // [-2] void QRectF(const class QRect &)
 extern "C"
-void* C_ZN6QRectFC1ERK5QRect(const QRect & rect) {
-  (MyQRectF*)(0);
-  return  new MyQRectF(rect);
+void* C_ZN6QRectFC2ERK5QRect(const QRect & rect) {
+  return  new QRectF(rect);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrect.h:520

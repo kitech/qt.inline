@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTouchDevice is pure virtual: false
+// QTouchDevice has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTouchDevice : public QTouchDevice {
 public:
+  virtual ~MyQTouchDevice() {}
+// void QTouchDevice()
 MyQTouchDevice() : QTouchDevice() {}
 };
 
@@ -17,15 +20,14 @@ MyQTouchDevice() : QTouchDevice() {}
 // /usr/include/qt/QtGui/qtouchdevice.h:73
 // [-2] void QTouchDevice()
 extern "C"
-void* C_ZN12QTouchDeviceC1Ev() {
-  (MyQTouchDevice*)(0);
-  return  new MyQTouchDevice();
+void* C_ZN12QTouchDeviceC2Ev() {
+  return  new QTouchDevice();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:74
 // [-2] void ~QTouchDevice()
 extern "C"
-void C_ZN12QTouchDeviceD1Ev(void *this_) {
+void C_ZN12QTouchDeviceD2Ev(void *this_) {
   delete (QTouchDevice*)(this_);
 }
 // Public Visibility=Default Availability=Available

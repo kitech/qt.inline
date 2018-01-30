@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionFocusRect is pure virtual: false
+// QStyleOptionFocusRect has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN21QStyleOptionFocusRectC1Ei(void*cbfn)
 
 class MyQStyleOptionFocusRect : public QStyleOptionFocusRect {
 public:
+  virtual ~MyQStyleOptionFocusRect() {}
+// void QStyleOptionFocusRect()
 MyQStyleOptionFocusRect() : QStyleOptionFocusRect() {}
+// void QStyleOptionFocusRect(int)
 MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:119
 // [-2] void QStyleOptionFocusRect()
 extern "C"
-void* C_ZN21QStyleOptionFocusRectC1Ev() {
-  (MyQStyleOptionFocusRect*)(0);
-  return  new MyQStyleOptionFocusRect();
+void* C_ZN21QStyleOptionFocusRectC2Ev() {
+  return  new QStyleOptionFocusRect();
 }
 //  main block end

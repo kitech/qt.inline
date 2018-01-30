@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QSizeGrip is pure virtual: false
+// QSizeGrip has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -73,61 +74,72 @@ extern "C" void set_callback_ZN9QSizeGrip5eventEP6QEvent(void*cbfn)
 
 class MyQSizeGrip : public QSizeGrip {
 public:
+  virtual ~MyQSizeGrip() {}
+// void QSizeGrip(class QWidget *)
 MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN9QSizeGrip10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN9QSizeGrip10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN9QSizeGrip10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN9QSizeGrip10paintEventEP11QPaintEvent(arg0);
+    }
+    QSizeGrip::paintEvent(arg0);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * arg0) {
-  if (callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(arg0);
-}}
+  virtual void mousePressEvent(QMouseEvent * arg0) {
+    if (callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(arg0);
+    }
+    QSizeGrip::mousePressEvent(arg0);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * arg0) {
-  if (callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(arg0);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+    if (callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(arg0);
+    }
+    QSizeGrip::mouseMoveEvent(arg0);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
-  if (callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(mouseEvent);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
+    if (callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(mouseEvent);
+    }
+    QSizeGrip::mouseReleaseEvent(mouseEvent);
+  }
 // void moveEvent(class QMoveEvent *)
-// void moveEvent(class QMoveEvent *)
-virtual void moveEvent(QMoveEvent * moveEvent) {
-  if (callback_ZN9QSizeGrip9moveEventEP10QMoveEvent != 0) {
-  // callback_ZN9QSizeGrip9moveEventEP10QMoveEvent(moveEvent);
-}}
+  virtual void moveEvent(QMoveEvent * moveEvent) {
+    if (callback_ZN9QSizeGrip9moveEventEP10QMoveEvent != 0) {
+      // callback_ZN9QSizeGrip9moveEventEP10QMoveEvent(moveEvent);
+    }
+    QSizeGrip::moveEvent(moveEvent);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * showEvent) {
-  if (callback_ZN9QSizeGrip9showEventEP10QShowEvent != 0) {
-  // callback_ZN9QSizeGrip9showEventEP10QShowEvent(showEvent);
-}}
+  virtual void showEvent(QShowEvent * showEvent) {
+    if (callback_ZN9QSizeGrip9showEventEP10QShowEvent != 0) {
+      // callback_ZN9QSizeGrip9showEventEP10QShowEvent(showEvent);
+    }
+    QSizeGrip::showEvent(showEvent);
+  }
 // void hideEvent(class QHideEvent *)
-// void hideEvent(class QHideEvent *)
-virtual void hideEvent(QHideEvent * hideEvent) {
-  if (callback_ZN9QSizeGrip9hideEventEP10QHideEvent != 0) {
-  // callback_ZN9QSizeGrip9hideEventEP10QHideEvent(hideEvent);
-}}
+  virtual void hideEvent(QHideEvent * hideEvent) {
+    if (callback_ZN9QSizeGrip9hideEventEP10QHideEvent != 0) {
+      // callback_ZN9QSizeGrip9hideEventEP10QHideEvent(hideEvent);
+    }
+    QSizeGrip::hideEvent(hideEvent);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-  if (callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(arg0, arg1);
-}}
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+    if (callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    }
+    return QSizeGrip::eventFilter(arg0, arg1);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN9QSizeGrip5eventEP6QEvent != 0) {
-  // callback_ZN9QSizeGrip5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN9QSizeGrip5eventEP6QEvent != 0) {
+      // callback_ZN9QSizeGrip5eventEP6QEvent(arg0);
+    }
+    return QSizeGrip::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -141,15 +153,15 @@ void* C_ZNK9QSizeGrip10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsizegrip.h:55
 // [-2] void QSizeGrip(class QWidget *)
 extern "C"
-void* C_ZN9QSizeGripC1EP7QWidget(QWidget * parent) {
-  (MyQSizeGrip*)(0);
+void* C_ZN9QSizeGripC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQSizeGrip*)(0);
   return  new MyQSizeGrip(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsizegrip.h:56
 // [-2] void ~QSizeGrip()
 extern "C"
-void C_ZN9QSizeGripD1Ev(void *this_) {
+void C_ZN9QSizeGripD2Ev(void *this_) {
   delete (QSizeGrip*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

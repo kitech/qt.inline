@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QByteArrayMatcher is pure virtual: false
+// QByteArrayMatcher has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQByteArrayMatcher : public QByteArrayMatcher {
 public:
+  virtual ~MyQByteArrayMatcher() {}
+// void QByteArrayMatcher()
 MyQByteArrayMatcher() : QByteArrayMatcher() {}
+// void QByteArrayMatcher(const class QByteArray &)
 MyQByteArrayMatcher(const QByteArray & pattern) : QByteArrayMatcher(pattern) {}
+// void QByteArrayMatcher(const char *, int)
 MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(pattern, length) {}
 };
 
@@ -19,31 +24,28 @@ MyQByteArrayMatcher(const char * pattern, int length) : QByteArrayMatcher(patter
 // /usr/include/qt/QtCore/qbytearraymatcher.h:53
 // [-2] void QByteArrayMatcher()
 extern "C"
-void* C_ZN17QByteArrayMatcherC1Ev() {
-  (MyQByteArrayMatcher*)(0);
-  return  new MyQByteArrayMatcher();
+void* C_ZN17QByteArrayMatcherC2Ev() {
+  return  new QByteArrayMatcher();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:54
 // [-2] void QByteArrayMatcher(const class QByteArray &)
 extern "C"
-void* C_ZN17QByteArrayMatcherC1ERK10QByteArray(const QByteArray & pattern) {
-  (MyQByteArrayMatcher*)(0);
-  return  new MyQByteArrayMatcher(pattern);
+void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(const QByteArray & pattern) {
+  return  new QByteArrayMatcher(pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:55
 // [-2] void QByteArrayMatcher(const char *, int)
 extern "C"
-void* C_ZN17QByteArrayMatcherC1EPKci(const char * pattern, int length) {
-  (MyQByteArrayMatcher*)(0);
-  return  new MyQByteArrayMatcher(pattern, length);
+void* C_ZN17QByteArrayMatcherC2EPKci(const char * pattern, int length) {
+  return  new QByteArrayMatcher(pattern, length);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:57
 // [-2] void ~QByteArrayMatcher()
 extern "C"
-void C_ZN17QByteArrayMatcherD1Ev(void *this_) {
+void C_ZN17QByteArrayMatcherD2Ev(void *this_) {
   delete (QByteArrayMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available

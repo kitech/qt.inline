@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QSessionManager is pure virtual: false
+// QSessionManager has virtual projected: false
 //  header block end
 
 //  main block begin

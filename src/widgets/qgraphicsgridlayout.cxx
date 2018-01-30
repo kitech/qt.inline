@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsGridLayout is pure virtual: false
+// QGraphicsGridLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsGridLayout : public QGraphicsGridLayout {
 public:
+  virtual ~MyQGraphicsGridLayout() {}
+// void QGraphicsGridLayout(class QGraphicsLayoutItem *)
 MyQGraphicsGridLayout(QGraphicsLayoutItem * parent) : QGraphicsGridLayout(parent) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsGridLayout(QGraphicsLayoutItem * parent) : QGraphicsGridLayout(parent
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:56
 // [-2] void QGraphicsGridLayout(class QGraphicsLayoutItem *)
 extern "C"
-void* C_ZN19QGraphicsGridLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
-  (MyQGraphicsGridLayout*)(0);
-  return  new MyQGraphicsGridLayout(parent);
+void* C_ZN19QGraphicsGridLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
+  return  new QGraphicsGridLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:57
 // [-2] void ~QGraphicsGridLayout()
 extern "C"
-void C_ZN19QGraphicsGridLayoutD1Ev(void *this_) {
+void C_ZN19QGraphicsGridLayoutD2Ev(void *this_) {
   delete (QGraphicsGridLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

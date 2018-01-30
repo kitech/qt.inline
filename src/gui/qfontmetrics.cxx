@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QFontMetrics is pure virtual: false
+// QFontMetrics has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFontMetrics : public QFontMetrics {
 public:
+  virtual ~MyQFontMetrics() {}
+// void QFontMetrics(const class QFont &)
 MyQFontMetrics(const QFont & arg0) : QFontMetrics(arg0) {}
+// void QFontMetrics(const class QFont &, class QPaintDevice *)
 MyQFontMetrics(const QFont & arg0, QPaintDevice * pd) : QFontMetrics(arg0, pd) {}
 };
 
@@ -18,23 +22,21 @@ MyQFontMetrics(const QFont & arg0, QPaintDevice * pd) : QFontMetrics(arg0, pd) {
 // /usr/include/qt/QtGui/qfontmetrics.h:61
 // [-2] void QFontMetrics(const class QFont &)
 extern "C"
-void* C_ZN12QFontMetricsC1ERK5QFont(const QFont & arg0) {
-  (MyQFontMetrics*)(0);
-  return  new MyQFontMetrics(arg0);
+void* C_ZN12QFontMetricsC2ERK5QFont(const QFont & arg0) {
+  return  new QFontMetrics(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:62
 // [-2] void QFontMetrics(const class QFont &, class QPaintDevice *)
 extern "C"
-void* C_ZN12QFontMetricsC1ERK5QFontP12QPaintDevice(const QFont & arg0, QPaintDevice * pd) {
-  (MyQFontMetrics*)(0);
-  return  new MyQFontMetrics(arg0, pd);
+void* C_ZN12QFontMetricsC2ERK5QFontP12QPaintDevice(const QFont & arg0, QPaintDevice * pd) {
+  return  new QFontMetrics(arg0, pd);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:64
 // [-2] void ~QFontMetrics()
 extern "C"
-void C_ZN12QFontMetricsD1Ev(void *this_) {
+void C_ZN12QFontMetricsD2Ev(void *this_) {
   delete (QFontMetrics*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -125,8 +127,8 @@ int C_ZNK12QFontMetrics16averageCharWidthEv(void *this_) {
 // /usr/include/qt/QtGui/qfontmetrics.h:88
 // [1] bool inFont(class QChar)
 extern "C"
-bool C_ZNK12QFontMetrics6inFontE5QChar(void *this_, QChar arg0) {
-  return (bool)((QFontMetrics*)this_)->inFont(arg0);
+bool C_ZNK12QFontMetrics6inFontE5QChar(void *this_, QChar* arg0) {
+  return (bool)((QFontMetrics*)this_)->inFont(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:89
@@ -139,15 +141,15 @@ bool C_ZNK12QFontMetrics10inFontUcs4Ej(void *this_, uint ucs4) {
 // /usr/include/qt/QtGui/qfontmetrics.h:91
 // [4] int leftBearing(class QChar)
 extern "C"
-int C_ZNK12QFontMetrics11leftBearingE5QChar(void *this_, QChar arg0) {
-  return (int)((QFontMetrics*)this_)->leftBearing(arg0);
+int C_ZNK12QFontMetrics11leftBearingE5QChar(void *this_, QChar* arg0) {
+  return (int)((QFontMetrics*)this_)->leftBearing(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:92
 // [4] int rightBearing(class QChar)
 extern "C"
-int C_ZNK12QFontMetrics12rightBearingE5QChar(void *this_, QChar arg0) {
-  return (int)((QFontMetrics*)this_)->rightBearing(arg0);
+int C_ZNK12QFontMetrics12rightBearingE5QChar(void *this_, QChar* arg0) {
+  return (int)((QFontMetrics*)this_)->rightBearing(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:93
@@ -167,8 +169,8 @@ int C_ZNK12QFontMetrics5widthERK7QStringii(void *this_, const QString & arg0, in
 // /usr/include/qt/QtGui/qfontmetrics.h:96
 // [4] int width(class QChar)
 extern "C"
-int C_ZNK12QFontMetrics5widthE5QChar(void *this_, QChar arg0) {
-  return (int)((QFontMetrics*)this_)->width(arg0);
+int C_ZNK12QFontMetrics5widthE5QChar(void *this_, QChar* arg0) {
+  return (int)((QFontMetrics*)this_)->width(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:98
@@ -181,8 +183,8 @@ int C_ZNK12QFontMetrics9charWidthERK7QStringi(void *this_, const QString & str, 
 // /usr/include/qt/QtGui/qfontmetrics.h:101
 // [16] QRect boundingRect(class QChar)
 extern "C"
-void* C_ZNK12QFontMetrics12boundingRectE5QChar(void *this_, QChar arg0) {
-  auto rv = ((QFontMetrics*)this_)->boundingRect(arg0);
+void* C_ZNK12QFontMetrics12boundingRectE5QChar(void *this_, QChar* arg0) {
+  auto rv = ((QFontMetrics*)this_)->boundingRect(*arg0);
 return new QRect(rv);
 }
 // Public Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QPropertyAnimation is pure virtual: false
+// QPropertyAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAni
 
 class MyQPropertyAnimation : public QPropertyAnimation {
 public:
+  virtual ~MyQPropertyAnimation() {}
+// void QPropertyAnimation(class QObject *)
 MyQPropertyAnimation(QObject * parent) : QPropertyAnimation(parent) {}
+// void QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
 MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject * parent) : QPropertyAnimation(target, propertyName, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN18QPropertyAnimation5eventEP6QEvent != 0) {
-  // callback_ZN18QPropertyAnimation5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN18QPropertyAnimation5eventEP6QEvent != 0) {
+      // callback_ZN18QPropertyAnimation5eventEP6QEvent(event);
+    }
+    return QPropertyAnimation::event(event);
+  }
 // void updateCurrentValue(const class QVariant &)
-// void updateCurrentValue(const class QVariant &)
-virtual void updateCurrentValue(const QVariant & value) {
-  if (callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant != 0) {
-  // callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(value);
-}}
+  virtual void updateCurrentValue(const QVariant & value) {
+    if (callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant != 0) {
+      // callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(value);
+    }
+    QPropertyAnimation::updateCurrentValue(value);
+  }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-  if (callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-  // callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
-}}
+  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
+    if (callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
+      // callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    }
+    QPropertyAnimation::updateState(newState, oldState);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK18QPropertyAnimation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qpropertyanimation.h:58
 // [-2] void QPropertyAnimation(class QObject *)
 extern "C"
-void* C_ZN18QPropertyAnimationC1EP7QObject(QObject * parent) {
-  (MyQPropertyAnimation*)(0);
+void* C_ZN18QPropertyAnimationC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQPropertyAnimation*)(0);
   return  new MyQPropertyAnimation(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:59
 // [-2] void QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN18QPropertyAnimationC1EP7QObjectRK10QByteArrayS1_(QObject * target, const QByteArray & propertyName, QObject * parent) {
-  (MyQPropertyAnimation*)(0);
+void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, const QByteArray & propertyName, QObject * parent) {
+  auto _nilp = (MyQPropertyAnimation*)(0);
   return  new MyQPropertyAnimation(target, propertyName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:60
 // [-2] void ~QPropertyAnimation()
 extern "C"
-void C_ZN18QPropertyAnimationD1Ev(void *this_) {
+void C_ZN18QPropertyAnimationD2Ev(void *this_) {
   delete (QPropertyAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available

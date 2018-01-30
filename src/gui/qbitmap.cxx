@@ -4,16 +4,23 @@
 #include <QtGui>
 
 // QBitmap is pure virtual: false
+// QBitmap has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBitmap : public QBitmap {
 public:
+  virtual ~MyQBitmap() {}
+// void QBitmap()
 MyQBitmap() : QBitmap() {}
+// void QBitmap(const class QPixmap &)
 MyQBitmap(const QPixmap & arg0) : QBitmap(arg0) {}
+// void QBitmap(int, int)
 MyQBitmap(int w, int h) : QBitmap(w, h) {}
+// void QBitmap(const class QSize &)
 MyQBitmap(const QSize & arg0) : QBitmap(arg0) {}
+// void QBitmap(const class QString &, const char *)
 MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, format) {}
 };
 
@@ -21,47 +28,42 @@ MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, for
 // /usr/include/qt/QtGui/qbitmap.h:54
 // [-2] void QBitmap()
 extern "C"
-void* C_ZN7QBitmapC1Ev() {
-  (MyQBitmap*)(0);
-  return  new MyQBitmap();
+void* C_ZN7QBitmapC2Ev() {
+  return  new QBitmap();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:55
 // [-2] void QBitmap(const class QPixmap &)
 extern "C"
-void* C_ZN7QBitmapC1ERK7QPixmap(const QPixmap & arg0) {
-  (MyQBitmap*)(0);
-  return  new MyQBitmap(arg0);
+void* C_ZN7QBitmapC2ERK7QPixmap(const QPixmap & arg0) {
+  return  new QBitmap(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:56
 // [-2] void QBitmap(int, int)
 extern "C"
-void* C_ZN7QBitmapC1Eii(int w, int h) {
-  (MyQBitmap*)(0);
-  return  new MyQBitmap(w, h);
+void* C_ZN7QBitmapC2Eii(int w, int h) {
+  return  new QBitmap(w, h);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:57
 // [-2] void QBitmap(const class QSize &)
 extern "C"
-void* C_ZN7QBitmapC1ERK5QSize(const QSize & arg0) {
-  (MyQBitmap*)(0);
-  return  new MyQBitmap(arg0);
+void* C_ZN7QBitmapC2ERK5QSize(const QSize & arg0) {
+  return  new QBitmap(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:58
 // [-2] void QBitmap(const class QString &, const char *)
 extern "C"
-void* C_ZN7QBitmapC1ERK7QStringPKc(const QString & fileName, const char * format) {
-  (MyQBitmap*)(0);
-  return  new MyQBitmap(fileName, format);
+void* C_ZN7QBitmapC2ERK7QStringPKc(const QString & fileName, const char * format) {
+  return  new QBitmap(fileName, format);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:65
 // [-2] void ~QBitmap()
 extern "C"
-void C_ZN7QBitmapD1Ev(void *this_) {
+void C_ZN7QBitmapD2Ev(void *this_) {
   delete (QBitmap*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

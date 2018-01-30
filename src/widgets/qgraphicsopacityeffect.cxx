@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsOpacityEffect is pure virtual: false
+// QGraphicsOpacityEffect has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void*cbf
 
 class MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
 public:
+  virtual ~MyQGraphicsOpacityEffect() {}
+// void QGraphicsOpacityEffect(class QObject *)
 MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 // void draw(class QPainter *)
-// void draw(class QPainter *)
-virtual void draw(QPainter * painter) {
-  if (callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter != 0) {
-  // callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(painter);
-}}
+  virtual void draw(QPainter * painter) {
+    if (callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter != 0) {
+      // callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(painter);
+    }
+    QGraphicsOpacityEffect::draw(painter);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK22QGraphicsOpacityEffect10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:258
 // [-2] void QGraphicsOpacityEffect(class QObject *)
 extern "C"
-void* C_ZN22QGraphicsOpacityEffectC1EP7QObject(QObject * parent) {
-  (MyQGraphicsOpacityEffect*)(0);
+void* C_ZN22QGraphicsOpacityEffectC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQGraphicsOpacityEffect*)(0);
   return  new MyQGraphicsOpacityEffect(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:259
 // [-2] void ~QGraphicsOpacityEffect()
 extern "C"
-void C_ZN22QGraphicsOpacityEffectD1Ev(void *this_) {
+void C_ZN22QGraphicsOpacityEffectD2Ev(void *this_) {
   delete (QGraphicsOpacityEffect*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAbstractAnimation is pure virtual: true
+// QAbstractAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZN18QAbstractAnimation15updateDirectionENS_9Directi
 
 class MyQAbstractAnimation : public QAbstractAnimation {
 public:
+  virtual ~MyQAbstractAnimation() {}
+// void QAbstractAnimation(class QObject *)
 MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN18QAbstractAnimation5eventEP6QEvent != 0) {
-  // callback_ZN18QAbstractAnimation5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN18QAbstractAnimation5eventEP6QEvent != 0) {
+      // callback_ZN18QAbstractAnimation5eventEP6QEvent(event);
+    }
+    return QAbstractAnimation::event(event);
+  }
 // void updateCurrentTime(int)
-// void updateCurrentTime(int)
-virtual void updateCurrentTime(int currentTime) {
-  if (callback_ZN18QAbstractAnimation17updateCurrentTimeEi != 0) {
-  // callback_ZN18QAbstractAnimation17updateCurrentTimeEi(currentTime);
-}}
+  virtual void updateCurrentTime(int currentTime) {
+    if (callback_ZN18QAbstractAnimation17updateCurrentTimeEi != 0) {
+      // callback_ZN18QAbstractAnimation17updateCurrentTimeEi(currentTime);
+    }
+    QAbstractAnimation::updateCurrentTime(currentTime);
+  }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-  if (callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_ != 0) {
-  // callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_(newState, oldState);
-}}
+  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
+    if (callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_ != 0) {
+      // callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_(newState, oldState);
+    }
+    QAbstractAnimation::updateState(newState, oldState);
+  }
 // void updateDirection(class QAbstractAnimation::Direction)
-// void updateDirection(class QAbstractAnimation::Direction)
-virtual void updateDirection(QAbstractAnimation::Direction direction) {
-  if (callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE != 0) {
-  // callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(direction);
-}}
+  virtual void updateDirection(QAbstractAnimation::Direction direction) {
+    if (callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE != 0) {
+      // callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(direction);
+    }
+    QAbstractAnimation::updateDirection(direction);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -77,14 +84,14 @@ void* C_ZNK18QAbstractAnimation10metaObjectEv(void *this_) {
 // [-2] void QAbstractAnimation(class QObject *)
 extern "C"
 void* C_ZN18QAbstractAnimationC1EP7QObject(QObject * parent) {
-  (MyQAbstractAnimation*)(0);
+  auto _nilp = (MyQAbstractAnimation*)(0);
   return 0; // new MyQAbstractAnimation(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:86
 // [-2] void ~QAbstractAnimation()
 extern "C"
-void C_ZN18QAbstractAnimationD1Ev(void *this_) {
+void C_ZN18QAbstractAnimationD2Ev(void *this_) {
   delete (QAbstractAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available

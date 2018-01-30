@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QTextCursor is pure virtual: false
+// QTextCursor has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextCursor : public QTextCursor {
 public:
+  virtual ~MyQTextCursor() {}
+// void QTextCursor()
 MyQTextCursor() : QTextCursor() {}
+// void QTextCursor(class QTextDocument *)
 MyQTextCursor(QTextDocument * document) : QTextCursor(document) {}
+// void QTextCursor(class QTextFrame *)
 MyQTextCursor(QTextFrame * frame) : QTextCursor(frame) {}
+// void QTextCursor(const class QTextBlock &)
 MyQTextCursor(const QTextBlock & block) : QTextCursor(block) {}
 };
 
@@ -20,39 +26,35 @@ MyQTextCursor(const QTextBlock & block) : QTextCursor(block) {}
 // /usr/include/qt/QtGui/qtextcursor.h:69
 // [-2] void QTextCursor()
 extern "C"
-void* C_ZN11QTextCursorC1Ev() {
-  (MyQTextCursor*)(0);
-  return  new MyQTextCursor();
+void* C_ZN11QTextCursorC2Ev() {
+  return  new QTextCursor();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:70
 // [-2] void QTextCursor(class QTextDocument *)
 extern "C"
-void* C_ZN11QTextCursorC1EP13QTextDocument(QTextDocument * document) {
-  (MyQTextCursor*)(0);
-  return  new MyQTextCursor(document);
+void* C_ZN11QTextCursorC2EP13QTextDocument(QTextDocument * document) {
+  return  new QTextCursor(document);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:73
 // [-2] void QTextCursor(class QTextFrame *)
 extern "C"
-void* C_ZN11QTextCursorC1EP10QTextFrame(QTextFrame * frame) {
-  (MyQTextCursor*)(0);
-  return  new MyQTextCursor(frame);
+void* C_ZN11QTextCursorC2EP10QTextFrame(QTextFrame * frame) {
+  return  new QTextCursor(frame);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:74
 // [-2] void QTextCursor(const class QTextBlock &)
 extern "C"
-void* C_ZN11QTextCursorC1ERK10QTextBlock(const QTextBlock & block) {
-  (MyQTextCursor*)(0);
-  return  new MyQTextCursor(block);
+void* C_ZN11QTextCursorC2ERK10QTextBlock(const QTextBlock & block) {
+  return  new QTextCursor(block);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:80
 // [-2] void ~QTextCursor()
 extern "C"
-void C_ZN11QTextCursorD1Ev(void *this_) {
+void C_ZN11QTextCursorD2Ev(void *this_) {
   delete (QTextCursor*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAnimationDriver is pure virtual: false
+// QAnimationDriver has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZN16QAnimationDriver4stopEv(void*cbfn)
 
 class MyQAnimationDriver : public QAnimationDriver {
 public:
+  virtual ~MyQAnimationDriver() {}
+// void QAnimationDriver(class QObject *)
 MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // void advanceAnimation(qint64)
-// void advanceAnimation(qint64)
-virtual void advanceAnimation(qint64 timeStep) {
-  if (callback_ZN16QAnimationDriver16advanceAnimationEx != 0) {
-  // callback_ZN16QAnimationDriver16advanceAnimationEx(timeStep);
-}}
+  virtual void advanceAnimation(qint64 timeStep) {
+    if (callback_ZN16QAnimationDriver16advanceAnimationEx != 0) {
+      // callback_ZN16QAnimationDriver16advanceAnimationEx(timeStep);
+    }
+    QAnimationDriver::advanceAnimation(timeStep);
+  }
 // void start()
-// void start()
-virtual void start() {
-  if (callback_ZN16QAnimationDriver5startEv != 0) {
-  // callback_ZN16QAnimationDriver5startEv();
-}}
+  virtual void start() {
+    if (callback_ZN16QAnimationDriver5startEv != 0) {
+      // callback_ZN16QAnimationDriver5startEv();
+    }
+    QAnimationDriver::start();
+  }
 // void stop()
-// void stop()
-virtual void stop() {
-  if (callback_ZN16QAnimationDriver4stopEv != 0) {
-  // callback_ZN16QAnimationDriver4stopEv();
-}}
+  virtual void stop() {
+    if (callback_ZN16QAnimationDriver4stopEv != 0) {
+      // callback_ZN16QAnimationDriver4stopEv();
+    }
+    QAnimationDriver::stop();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -63,15 +69,15 @@ void* C_ZNK16QAnimationDriver10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractanimation.h:139
 // [-2] void QAnimationDriver(class QObject *)
 extern "C"
-void* C_ZN16QAnimationDriverC1EP7QObject(QObject * parent) {
-  (MyQAnimationDriver*)(0);
+void* C_ZN16QAnimationDriverC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQAnimationDriver*)(0);
   return  new MyQAnimationDriver(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:140
 // [-2] void ~QAnimationDriver()
 extern "C"
-void C_ZN16QAnimationDriverD1Ev(void *this_) {
+void C_ZN16QAnimationDriverD2Ev(void *this_) {
   delete (QAnimationDriver*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

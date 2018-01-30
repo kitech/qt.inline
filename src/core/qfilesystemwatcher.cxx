@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QFileSystemWatcher is pure virtual: false
+// QFileSystemWatcher has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFileSystemWatcher : public QFileSystemWatcher {
 public:
+  virtual ~MyQFileSystemWatcher() {}
+// void QFileSystemWatcher(class QObject *)
 MyQFileSystemWatcher(QObject * parent) : QFileSystemWatcher(parent) {}
+// void QFileSystemWatcher(const class QStringList &, class QObject *)
 MyQFileSystemWatcher(const QStringList & paths, QObject * parent) : QFileSystemWatcher(paths, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK18QFileSystemWatcher10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:58
 // [-2] void QFileSystemWatcher(class QObject *)
 extern "C"
-void* C_ZN18QFileSystemWatcherC1EP7QObject(QObject * parent) {
-  (MyQFileSystemWatcher*)(0);
-  return  new MyQFileSystemWatcher(parent);
+void* C_ZN18QFileSystemWatcherC2EP7QObject(QObject * parent) {
+  return  new QFileSystemWatcher(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:59
 // [-2] void QFileSystemWatcher(const class QStringList &, class QObject *)
 extern "C"
-void* C_ZN18QFileSystemWatcherC1ERK11QStringListP7QObject(const QStringList & paths, QObject * parent) {
-  (MyQFileSystemWatcher*)(0);
-  return  new MyQFileSystemWatcher(paths, parent);
+void* C_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject(const QStringList & paths, QObject * parent) {
+  return  new QFileSystemWatcher(paths, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfilesystemwatcher.h:60
 // [-2] void ~QFileSystemWatcher()
 extern "C"
-void C_ZN18QFileSystemWatcherD1Ev(void *this_) {
+void C_ZN18QFileSystemWatcherD2Ev(void *this_) {
   delete (QFileSystemWatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available

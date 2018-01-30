@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QMatrix is pure virtual: false
+// QMatrix has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMatrix : public QMatrix {
 public:
+  virtual ~MyQMatrix() {}
+// void QMatrix(Qt::Initialization)
 MyQMatrix(Qt::Initialization arg0) : QMatrix(arg0) {}
+// void QMatrix()
 MyQMatrix() : QMatrix() {}
+// void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 MyQMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) : QMatrix(m11, m12, m21, m22, dx, dy) {}
 };
 
@@ -19,25 +24,22 @@ MyQMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) : QMat
 // /usr/include/qt/QtGui/qmatrix.h:60
 // [-2] void QMatrix(Qt::Initialization)
 extern "C"
-void* C_ZN7QMatrixC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyQMatrix*)(0);
-  return  new MyQMatrix(arg0);
+void* C_ZN7QMatrixC2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QMatrix(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:61
 // [-2] void QMatrix()
 extern "C"
-void* C_ZN7QMatrixC1Ev() {
-  (MyQMatrix*)(0);
-  return  new MyQMatrix();
+void* C_ZN7QMatrixC2Ev() {
+  return  new QMatrix();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:62
 // [-2] void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN7QMatrixC1Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
-  (MyQMatrix*)(0);
-  return  new MyQMatrix(m11, m12, m21, m22, dx, dy);
+void* C_ZN7QMatrixC2Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
+  return  new QMatrix(m11, m12, m21, m22, dx, dy);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:75

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QInputMethodEvent is pure virtual: false
+// QInputMethodEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQInputMethodEvent : public QInputMethodEvent {
 public:
+  virtual ~MyQInputMethodEvent() {}
+// void QInputMethodEvent()
 MyQInputMethodEvent() : QInputMethodEvent() {}
 };
 
@@ -17,15 +20,14 @@ MyQInputMethodEvent() : QInputMethodEvent() {}
 // /usr/include/qt/QtGui/qevent.h:555
 // [-2] void QInputMethodEvent()
 extern "C"
-void* C_ZN17QInputMethodEventC1Ev() {
-  (MyQInputMethodEvent*)(0);
-  return  new MyQInputMethodEvent();
+void* C_ZN17QInputMethodEventC2Ev() {
+  return  new QInputMethodEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:557
 // [-2] void ~QInputMethodEvent()
 extern "C"
-void C_ZN17QInputMethodEventD1Ev(void *this_) {
+void C_ZN17QInputMethodEventD2Ev(void *this_) {
   delete (QInputMethodEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

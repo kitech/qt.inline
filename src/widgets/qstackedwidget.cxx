@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStackedWidget is pure virtual: false
+// QStackedWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN14QStackedWidget5eventEP6QEvent(void*cbfn)
 
 class MyQStackedWidget : public QStackedWidget {
 public:
+  virtual ~MyQStackedWidget() {}
+// void QStackedWidget(class QWidget *)
 MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN14QStackedWidget5eventEP6QEvent != 0) {
-  // callback_ZN14QStackedWidget5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN14QStackedWidget5eventEP6QEvent != 0) {
+      // callback_ZN14QStackedWidget5eventEP6QEvent(e);
+    }
+    return QStackedWidget::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstackedwidget.h:59
 // [-2] void QStackedWidget(class QWidget *)
 extern "C"
-void* C_ZN14QStackedWidgetC1EP7QWidget(QWidget * parent) {
-  (MyQStackedWidget*)(0);
+void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQStackedWidget*)(0);
   return  new MyQStackedWidget(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedwidget.h:60
 // [-2] void ~QStackedWidget()
 extern "C"
-void C_ZN14QStackedWidgetD1Ev(void *this_) {
+void C_ZN14QStackedWidgetD2Ev(void *this_) {
   delete (QStackedWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

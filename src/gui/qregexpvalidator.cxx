@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QRegExpValidator is pure virtual: false
+// QRegExpValidator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegExpValidator : public QRegExpValidator {
 public:
+  virtual ~MyQRegExpValidator() {}
+// void QRegExpValidator(class QObject *)
 MyQRegExpValidator(QObject * parent) : QRegExpValidator(parent) {}
+// void QRegExpValidator(const class QRegExp &, class QObject *)
 MyQRegExpValidator(const QRegExp & rx, QObject * parent) : QRegExpValidator(rx, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK16QRegExpValidator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:177
 // [-2] void QRegExpValidator(class QObject *)
 extern "C"
-void* C_ZN16QRegExpValidatorC1EP7QObject(QObject * parent) {
-  (MyQRegExpValidator*)(0);
-  return  new MyQRegExpValidator(parent);
+void* C_ZN16QRegExpValidatorC2EP7QObject(QObject * parent) {
+  return  new QRegExpValidator(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:178
 // [-2] void QRegExpValidator(const class QRegExp &, class QObject *)
 extern "C"
-void* C_ZN16QRegExpValidatorC1ERK7QRegExpP7QObject(const QRegExp & rx, QObject * parent) {
-  (MyQRegExpValidator*)(0);
-  return  new MyQRegExpValidator(rx, parent);
+void* C_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject(const QRegExp & rx, QObject * parent) {
+  return  new QRegExpValidator(rx, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:179
 // [-2] void ~QRegExpValidator()
 extern "C"
-void C_ZN16QRegExpValidatorD1Ev(void *this_) {
+void C_ZN16QRegExpValidatorD2Ev(void *this_) {
   delete (QRegExpValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

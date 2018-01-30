@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QRegExp is pure virtual: false
+// QRegExp has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegExp : public QRegExp {
 public:
+  virtual ~MyQRegExp() {}
+// void QRegExp()
 MyQRegExp() : QRegExp() {}
+// void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
 MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) : QRegExp(pattern, cs, syntax) {}
 };
 
@@ -18,23 +22,21 @@ MyQRegExp(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSynta
 // /usr/include/qt/QtCore/qregexp.h:70
 // [-2] void QRegExp()
 extern "C"
-void* C_ZN7QRegExpC1Ev() {
-  (MyQRegExp*)(0);
-  return  new MyQRegExp();
+void* C_ZN7QRegExpC2Ev() {
+  return  new QRegExp();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:71
 // [-2] void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
 extern "C"
-void* C_ZN7QRegExpC1ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
-  (MyQRegExp*)(0);
-  return  new MyQRegExp(pattern, cs, syntax);
+void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
+  return  new QRegExp(pattern, cs, syntax);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:74
 // [-2] void ~QRegExp()
 extern "C"
-void C_ZN7QRegExpD1Ev(void *this_) {
+void C_ZN7QRegExpD2Ev(void *this_) {
   delete (QRegExp*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

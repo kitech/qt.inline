@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QWizard is pure virtual: false
+// QWizard has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,43 +53,51 @@ extern "C" void set_callback_ZN7QWizard11cleanupPageEi(void*cbfn)
 
 class MyQWizard : public QWizard {
 public:
+  virtual ~MyQWizard() {}
+// void QWizard(class QWidget *, Qt::WindowFlags)
 MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flags) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN7QWizard5eventEP6QEvent != 0) {
-  // callback_ZN7QWizard5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN7QWizard5eventEP6QEvent != 0) {
+      // callback_ZN7QWizard5eventEP6QEvent(event);
+    }
+    return QWizard::event(event);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN7QWizard11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN7QWizard11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN7QWizard11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN7QWizard11resizeEventEP12QResizeEvent(event);
+    }
+    QWizard::resizeEvent(event);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * event) {
-  if (callback_ZN7QWizard10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN7QWizard10paintEventEP11QPaintEvent(event);
-}}
+  virtual void paintEvent(QPaintEvent * event) {
+    if (callback_ZN7QWizard10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN7QWizard10paintEventEP11QPaintEvent(event);
+    }
+    QWizard::paintEvent(event);
+  }
 // void done(int)
-// void done(int)
-virtual void done(int result) {
-  if (callback_ZN7QWizard4doneEi != 0) {
-  // callback_ZN7QWizard4doneEi(result);
-}}
+  virtual void done(int result) {
+    if (callback_ZN7QWizard4doneEi != 0) {
+      // callback_ZN7QWizard4doneEi(result);
+    }
+    QWizard::done(result);
+  }
 // void initializePage(int)
-// void initializePage(int)
-virtual void initializePage(int id) {
-  if (callback_ZN7QWizard14initializePageEi != 0) {
-  // callback_ZN7QWizard14initializePageEi(id);
-}}
+  virtual void initializePage(int id) {
+    if (callback_ZN7QWizard14initializePageEi != 0) {
+      // callback_ZN7QWizard14initializePageEi(id);
+    }
+    QWizard::initializePage(id);
+  }
 // void cleanupPage(int)
-// void cleanupPage(int)
-virtual void cleanupPage(int id) {
-  if (callback_ZN7QWizard11cleanupPageEi != 0) {
-  // callback_ZN7QWizard11cleanupPageEi(id);
-}}
+  virtual void cleanupPage(int id) {
+    if (callback_ZN7QWizard11cleanupPageEi != 0) {
+      // callback_ZN7QWizard11cleanupPageEi(id);
+    }
+    QWizard::cleanupPage(id);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -102,15 +111,15 @@ void* C_ZNK7QWizard10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwizard.h:123
 // [-2] void QWizard(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN7QWizardC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQWizard*)(0);
+void* C_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQWizard*)(0);
   return  new MyQWizard(parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:124
 // [-2] void ~QWizard()
 extern "C"
-void C_ZN7QWizardD1Ev(void *this_) {
+void C_ZN7QWizardD2Ev(void *this_) {
   delete (QWizard*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextBlockFormat is pure virtual: false
+// QTextBlockFormat has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN16QTextBlockFormatC1ERK11QTextFormat(void*cbfn)
 
 class MyQTextBlockFormat : public QTextBlockFormat {
 public:
+  virtual ~MyQTextBlockFormat() {}
+// void QTextBlockFormat()
 MyQTextBlockFormat() : QTextBlockFormat() {}
+// void QTextBlockFormat(const class QTextFormat &)
 MyQTextBlockFormat(const QTextFormat & fmt) : QTextBlockFormat(fmt) {}
 };
 
@@ -25,9 +29,8 @@ MyQTextBlockFormat(const QTextFormat & fmt) : QTextBlockFormat(fmt) {}
 // /usr/include/qt/QtGui/qtextformat.h:590
 // [-2] void QTextBlockFormat()
 extern "C"
-void* C_ZN16QTextBlockFormatC1Ev() {
-  (MyQTextBlockFormat*)(0);
-  return  new MyQTextBlockFormat();
+void* C_ZN16QTextBlockFormatC2Ev() {
+  return  new QTextBlockFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:592

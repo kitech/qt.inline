@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextFrameFormat is pure virtual: false
+// QTextFrameFormat has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN16QTextFrameFormatC1ERK11QTextFormat(void*cbfn)
 
 class MyQTextFrameFormat : public QTextFrameFormat {
 public:
+  virtual ~MyQTextFrameFormat() {}
+// void QTextFrameFormat()
 MyQTextFrameFormat() : QTextFrameFormat() {}
+// void QTextFrameFormat(const class QTextFormat &)
 MyQTextFrameFormat(const QTextFormat & fmt) : QTextFrameFormat(fmt) {}
 };
 
@@ -25,9 +29,8 @@ MyQTextFrameFormat(const QTextFormat & fmt) : QTextFrameFormat(fmt) {}
 // /usr/include/qt/QtGui/qtextformat.h:770
 // [-2] void QTextFrameFormat()
 extern "C"
-void* C_ZN16QTextFrameFormatC1Ev() {
-  (MyQTextFrameFormat*)(0);
-  return  new MyQTextFrameFormat();
+void* C_ZN16QTextFrameFormatC2Ev() {
+  return  new QTextFrameFormat();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:772

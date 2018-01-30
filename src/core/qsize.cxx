@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QSize is pure virtual: false
+// QSize has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSize : public QSize {
 public:
+  virtual ~MyQSize() {}
+// void QSize()
 MyQSize() : QSize() {}
+// void QSize(int, int)
 MyQSize(int w, int h) : QSize(w, h) {}
 };
 
@@ -18,17 +22,15 @@ MyQSize(int w, int h) : QSize(w, h) {}
 // /usr/include/qt/QtCore/qsize.h:55
 // [-2] void QSize()
 extern "C"
-void* C_ZN5QSizeC1Ev() {
-  (MyQSize*)(0);
-  return  new MyQSize();
+void* C_ZN5QSizeC2Ev() {
+  return  new QSize();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:56
 // [-2] void QSize(int, int)
 extern "C"
-void* C_ZN5QSizeC1Eii(int w, int h) {
-  (MyQSize*)(0);
-  return  new MyQSize(w, h);
+void* C_ZN5QSizeC2Eii(int w, int h) {
+  return  new QSize(w, h);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:58

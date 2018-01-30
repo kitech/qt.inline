@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QListView is pure virtual: false
+// QListView has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -199,169 +200,198 @@ extern "C" void set_callback_ZNK9QListView16viewportSizeHintEv(void*cbfn)
 
 class MyQListView : public QListView {
 public:
+  virtual ~MyQListView() {}
+// void QListView(class QWidget *)
 MyQListView(QWidget * parent) : QListView(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN9QListView5eventEP6QEvent != 0) {
-  // callback_ZN9QListView5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN9QListView5eventEP6QEvent != 0) {
+      // callback_ZN9QListView5eventEP6QEvent(e);
+    }
+    return QListView::event(e);
+  }
 // void scrollContentsBy(int, int)
-// void scrollContentsBy(int, int)
-virtual void scrollContentsBy(int dx, int dy) {
-  if (callback_ZN9QListView16scrollContentsByEii != 0) {
-  // callback_ZN9QListView16scrollContentsByEii(dx, dy);
-}}
+  virtual void scrollContentsBy(int dx, int dy) {
+    if (callback_ZN9QListView16scrollContentsByEii != 0) {
+      // callback_ZN9QListView16scrollContentsByEii(dx, dy);
+    }
+    QListView::scrollContentsBy(dx, dy);
+  }
 // void resizeContents(int, int)
-// void resizeContents(int, int)
-virtual void resizeContents(int width, int height) {
-  if (callback_ZN9QListView14resizeContentsEii != 0) {
-  // callback_ZN9QListView14resizeContentsEii(width, height);
-}}
+  virtual void resizeContents(int width, int height) {
+    if (callback_ZN9QListView14resizeContentsEii != 0) {
+      // callback_ZN9QListView14resizeContentsEii(width, height);
+    }
+    QListView::resizeContents(width, height);
+  }
 // QSize contentsSize()
-// QSize contentsSize()
-virtual QSize contentsSize() {
-  if (callback_ZNK9QListView12contentsSizeEv != 0) {
-  // callback_ZNK9QListView12contentsSizeEv();
-}}
+  virtual QSize contentsSize() {
+    if (callback_ZNK9QListView12contentsSizeEv != 0) {
+      // callback_ZNK9QListView12contentsSizeEv();
+    }
+    return QListView::contentsSize();
+  }
 // void rowsInserted(const class QModelIndex &, int, int)
-// void rowsInserted(const class QModelIndex &, int, int)
-virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
-  if (callback_ZN9QListView12rowsInsertedERK11QModelIndexii != 0) {
-  // callback_ZN9QListView12rowsInsertedERK11QModelIndexii(parent, start, end);
-}}
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+    if (callback_ZN9QListView12rowsInsertedERK11QModelIndexii != 0) {
+      // callback_ZN9QListView12rowsInsertedERK11QModelIndexii(parent, start, end);
+    }
+    QListView::rowsInserted(parent, start, end);
+  }
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-// void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
-  if (callback_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii != 0) {
-  // callback_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(parent, start, end);
-}}
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
+    if (callback_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii != 0) {
+      // callback_ZN9QListView20rowsAboutToBeRemovedERK11QModelIndexii(parent, start, end);
+    }
+    QListView::rowsAboutToBeRemoved(parent, start, end);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * e) {
-  if (callback_ZN9QListView14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN9QListView14mouseMoveEventEP11QMouseEvent(e);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * e) {
+    if (callback_ZN9QListView14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN9QListView14mouseMoveEventEP11QMouseEvent(e);
+    }
+    QListView::mouseMoveEvent(e);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * e) {
-  if (callback_ZN9QListView17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN9QListView17mouseReleaseEventEP11QMouseEvent(e);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * e) {
+    if (callback_ZN9QListView17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN9QListView17mouseReleaseEventEP11QMouseEvent(e);
+    }
+    QListView::mouseReleaseEvent(e);
+  }
 // void wheelEvent(class QWheelEvent *)
-// void wheelEvent(class QWheelEvent *)
-virtual void wheelEvent(QWheelEvent * e) {
-  if (callback_ZN9QListView10wheelEventEP11QWheelEvent != 0) {
-  // callback_ZN9QListView10wheelEventEP11QWheelEvent(e);
-}}
+  virtual void wheelEvent(QWheelEvent * e) {
+    if (callback_ZN9QListView10wheelEventEP11QWheelEvent != 0) {
+      // callback_ZN9QListView10wheelEventEP11QWheelEvent(e);
+    }
+    QListView::wheelEvent(e);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * e) {
-  if (callback_ZN9QListView10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN9QListView10timerEventEP11QTimerEvent(e);
-}}
+  virtual void timerEvent(QTimerEvent * e) {
+    if (callback_ZN9QListView10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN9QListView10timerEventEP11QTimerEvent(e);
+    }
+    QListView::timerEvent(e);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * e) {
-  if (callback_ZN9QListView11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN9QListView11resizeEventEP12QResizeEvent(e);
-}}
+  virtual void resizeEvent(QResizeEvent * e) {
+    if (callback_ZN9QListView11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN9QListView11resizeEventEP12QResizeEvent(e);
+    }
+    QListView::resizeEvent(e);
+  }
 // void dragMoveEvent(class QDragMoveEvent *)
-// void dragMoveEvent(class QDragMoveEvent *)
-virtual void dragMoveEvent(QDragMoveEvent * e) {
-  if (callback_ZN9QListView13dragMoveEventEP14QDragMoveEvent != 0) {
-  // callback_ZN9QListView13dragMoveEventEP14QDragMoveEvent(e);
-}}
+  virtual void dragMoveEvent(QDragMoveEvent * e) {
+    if (callback_ZN9QListView13dragMoveEventEP14QDragMoveEvent != 0) {
+      // callback_ZN9QListView13dragMoveEventEP14QDragMoveEvent(e);
+    }
+    QListView::dragMoveEvent(e);
+  }
 // void dragLeaveEvent(class QDragLeaveEvent *)
-// void dragLeaveEvent(class QDragLeaveEvent *)
-virtual void dragLeaveEvent(QDragLeaveEvent * e) {
-  if (callback_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent != 0) {
-  // callback_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent(e);
-}}
+  virtual void dragLeaveEvent(QDragLeaveEvent * e) {
+    if (callback_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent != 0) {
+      // callback_ZN9QListView14dragLeaveEventEP15QDragLeaveEvent(e);
+    }
+    QListView::dragLeaveEvent(e);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * e) {
-  if (callback_ZN9QListView9dropEventEP10QDropEvent != 0) {
-  // callback_ZN9QListView9dropEventEP10QDropEvent(e);
-}}
+  virtual void dropEvent(QDropEvent * e) {
+    if (callback_ZN9QListView9dropEventEP10QDropEvent != 0) {
+      // callback_ZN9QListView9dropEventEP10QDropEvent(e);
+    }
+    QListView::dropEvent(e);
+  }
 // QStyleOptionViewItem viewOptions()
-// QStyleOptionViewItem viewOptions()
-virtual QStyleOptionViewItem viewOptions() {
-  if (callback_ZNK9QListView11viewOptionsEv != 0) {
-  // callback_ZNK9QListView11viewOptionsEv();
-}}
+  virtual QStyleOptionViewItem viewOptions() {
+    if (callback_ZNK9QListView11viewOptionsEv != 0) {
+      // callback_ZNK9QListView11viewOptionsEv();
+    }
+    return QListView::viewOptions();
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * e) {
-  if (callback_ZN9QListView10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN9QListView10paintEventEP11QPaintEvent(e);
-}}
+  virtual void paintEvent(QPaintEvent * e) {
+    if (callback_ZN9QListView10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN9QListView10paintEventEP11QPaintEvent(e);
+    }
+    QListView::paintEvent(e);
+  }
 // int horizontalOffset()
-// int horizontalOffset()
-virtual int horizontalOffset() {
-  if (callback_ZNK9QListView16horizontalOffsetEv != 0) {
-  // callback_ZNK9QListView16horizontalOffsetEv();
-}}
+  virtual int horizontalOffset() {
+    if (callback_ZNK9QListView16horizontalOffsetEv != 0) {
+      // callback_ZNK9QListView16horizontalOffsetEv();
+    }
+    return QListView::horizontalOffset();
+  }
 // int verticalOffset()
-// int verticalOffset()
-virtual int verticalOffset() {
-  if (callback_ZNK9QListView14verticalOffsetEv != 0) {
-  // callback_ZNK9QListView14verticalOffsetEv();
-}}
+  virtual int verticalOffset() {
+    if (callback_ZNK9QListView14verticalOffsetEv != 0) {
+      // callback_ZNK9QListView14verticalOffsetEv();
+    }
+    return QListView::verticalOffset();
+  }
 // QRect rectForIndex(const class QModelIndex &)
-// QRect rectForIndex(const class QModelIndex &)
-virtual QRect rectForIndex(const QModelIndex & index) {
-  if (callback_ZNK9QListView12rectForIndexERK11QModelIndex != 0) {
-  // callback_ZNK9QListView12rectForIndexERK11QModelIndex(index);
-}}
+  virtual QRect rectForIndex(const QModelIndex & index) {
+    if (callback_ZNK9QListView12rectForIndexERK11QModelIndex != 0) {
+      // callback_ZNK9QListView12rectForIndexERK11QModelIndex(index);
+    }
+    return QListView::rectForIndex(index);
+  }
 // void setPositionForIndex(const class QPoint &, const class QModelIndex &)
-// void setPositionForIndex(const class QPoint &, const class QModelIndex &)
-virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
-  if (callback_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex != 0) {
-  // callback_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(position, index);
-}}
+  virtual void setPositionForIndex(const QPoint & position, const QModelIndex & index) {
+    if (callback_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex != 0) {
+      // callback_ZN9QListView19setPositionForIndexERK6QPointRK11QModelIndex(position, index);
+    }
+    QListView::setPositionForIndex(position, index);
+  }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-// void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
-  if (callback_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
-  // callback_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
-}}
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+    if (callback_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
+      // callback_ZN9QListView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
+    }
+    QListView::setSelection(rect, command);
+  }
 // QRegion visualRegionForSelection(const class QItemSelection &)
-// QRegion visualRegionForSelection(const class QItemSelection &)
-virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-  if (callback_ZNK9QListView24visualRegionForSelectionERK14QItemSelection != 0) {
-  // callback_ZNK9QListView24visualRegionForSelectionERK14QItemSelection(selection);
-}}
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
+    if (callback_ZNK9QListView24visualRegionForSelectionERK14QItemSelection != 0) {
+      // callback_ZNK9QListView24visualRegionForSelectionERK14QItemSelection(selection);
+    }
+    return QListView::visualRegionForSelection(selection);
+  }
 // void updateGeometries()
-// void updateGeometries()
-virtual void updateGeometries() {
-  if (callback_ZN9QListView16updateGeometriesEv != 0) {
-  // callback_ZN9QListView16updateGeometriesEv();
-}}
+  virtual void updateGeometries() {
+    if (callback_ZN9QListView16updateGeometriesEv != 0) {
+      // callback_ZN9QListView16updateGeometriesEv();
+    }
+    QListView::updateGeometries();
+  }
 // bool isIndexHidden(const class QModelIndex &)
-// bool isIndexHidden(const class QModelIndex &)
-virtual bool isIndexHidden(const QModelIndex & index) {
-  if (callback_ZNK9QListView13isIndexHiddenERK11QModelIndex != 0) {
-  // callback_ZNK9QListView13isIndexHiddenERK11QModelIndex(index);
-}}
+  virtual bool isIndexHidden(const QModelIndex & index) {
+    if (callback_ZNK9QListView13isIndexHiddenERK11QModelIndex != 0) {
+      // callback_ZNK9QListView13isIndexHiddenERK11QModelIndex(index);
+    }
+    return QListView::isIndexHidden(index);
+  }
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-// void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
-  if (callback_ZN9QListView16selectionChangedERK14QItemSelectionS2_ != 0) {
-  // callback_ZN9QListView16selectionChangedERK14QItemSelectionS2_(selected, deselected);
-}}
+  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+    if (callback_ZN9QListView16selectionChangedERK14QItemSelectionS2_ != 0) {
+      // callback_ZN9QListView16selectionChangedERK14QItemSelectionS2_(selected, deselected);
+    }
+    QListView::selectionChanged(selected, deselected);
+  }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
-// void currentChanged(const class QModelIndex &, const class QModelIndex &)
-virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
-  if (callback_ZN9QListView14currentChangedERK11QModelIndexS2_ != 0) {
-  // callback_ZN9QListView14currentChangedERK11QModelIndexS2_(current, previous);
-}}
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+    if (callback_ZN9QListView14currentChangedERK11QModelIndexS2_ != 0) {
+      // callback_ZN9QListView14currentChangedERK11QModelIndexS2_(current, previous);
+    }
+    QListView::currentChanged(current, previous);
+  }
 // QSize viewportSizeHint()
-// QSize viewportSizeHint()
-virtual QSize viewportSizeHint() {
-  if (callback_ZNK9QListView16viewportSizeHintEv != 0) {
-  // callback_ZNK9QListView16viewportSizeHintEv();
-}}
+  virtual QSize viewportSizeHint() {
+    if (callback_ZNK9QListView16viewportSizeHintEv != 0) {
+      // callback_ZNK9QListView16viewportSizeHintEv();
+    }
+    return QListView::viewportSizeHint();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -375,15 +405,15 @@ void* C_ZNK9QListView10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlistview.h:81
 // [-2] void QListView(class QWidget *)
 extern "C"
-void* C_ZN9QListViewC1EP7QWidget(QWidget * parent) {
-  (MyQListView*)(0);
+void* C_ZN9QListViewC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQListView*)(0);
   return  new MyQListView(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistview.h:82
 // [-2] void ~QListView()
 extern "C"
-void C_ZN9QListViewD1Ev(void *this_) {
+void C_ZN9QListViewD2Ev(void *this_) {
   delete (QListView*)(this_);
 }
 // Public Visibility=Default Availability=Available

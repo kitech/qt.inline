@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QTextLayout is pure virtual: false
+// QTextLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextLayout : public QTextLayout {
 public:
+  virtual ~MyQTextLayout() {}
+// void QTextLayout()
 MyQTextLayout() : QTextLayout() {}
+// void QTextLayout(const class QString &)
 MyQTextLayout(const QString & text) : QTextLayout(text) {}
+// void QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
 MyQTextLayout(const QString & text, const QFont & font, QPaintDevice * paintdevice) : QTextLayout(text, font, paintdevice) {}
+// void QTextLayout(const class QTextBlock &)
 MyQTextLayout(const QTextBlock & b) : QTextLayout(b) {}
 };
 
@@ -20,39 +26,35 @@ MyQTextLayout(const QTextBlock & b) : QTextLayout(b) {}
 // /usr/include/qt/QtGui/qtextlayout.h:108
 // [-2] void QTextLayout()
 extern "C"
-void* C_ZN11QTextLayoutC1Ev() {
-  (MyQTextLayout*)(0);
-  return  new MyQTextLayout();
+void* C_ZN11QTextLayoutC2Ev() {
+  return  new QTextLayout();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:109
 // [-2] void QTextLayout(const class QString &)
 extern "C"
-void* C_ZN11QTextLayoutC1ERK7QString(const QString & text) {
-  (MyQTextLayout*)(0);
-  return  new MyQTextLayout(text);
+void* C_ZN11QTextLayoutC2ERK7QString(const QString & text) {
+  return  new QTextLayout(text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:110
 // [-2] void QTextLayout(const class QString &, const class QFont &, class QPaintDevice *)
 extern "C"
-void* C_ZN11QTextLayoutC1ERK7QStringRK5QFontP12QPaintDevice(const QString & text, const QFont & font, QPaintDevice * paintdevice) {
-  (MyQTextLayout*)(0);
-  return  new MyQTextLayout(text, font, paintdevice);
+void* C_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice(const QString & text, const QFont & font, QPaintDevice * paintdevice) {
+  return  new QTextLayout(text, font, paintdevice);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:111
 // [-2] void QTextLayout(const class QTextBlock &)
 extern "C"
-void* C_ZN11QTextLayoutC1ERK10QTextBlock(const QTextBlock & b) {
-  (MyQTextLayout*)(0);
-  return  new MyQTextLayout(b);
+void* C_ZN11QTextLayoutC2ERK10QTextBlock(const QTextBlock & b) {
+  return  new QTextLayout(b);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:112
 // [-2] void ~QTextLayout()
 extern "C"
-void C_ZN11QTextLayoutD1Ev(void *this_) {
+void C_ZN11QTextLayoutD2Ev(void *this_) {
   delete (QTextLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

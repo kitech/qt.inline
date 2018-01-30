@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QStandardItemModel is pure virtual: false
+// QStandardItemModel has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStandardItemModel : public QStandardItemModel {
 public:
+  virtual ~MyQStandardItemModel() {}
+// void QStandardItemModel(class QObject *)
 MyQStandardItemModel(QObject * parent) : QStandardItemModel(parent) {}
+// void QStandardItemModel(int, int, class QObject *)
 MyQStandardItemModel(int rows, int columns, QObject * parent) : QStandardItemModel(rows, columns, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK18QStandardItemModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qstandarditemmodel.h:330
 // [-2] void QStandardItemModel(class QObject *)
 extern "C"
-void* C_ZN18QStandardItemModelC1EP7QObject(QObject * parent) {
-  (MyQStandardItemModel*)(0);
-  return  new MyQStandardItemModel(parent);
+void* C_ZN18QStandardItemModelC2EP7QObject(QObject * parent) {
+  return  new QStandardItemModel(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:331
 // [-2] void QStandardItemModel(int, int, class QObject *)
 extern "C"
-void* C_ZN18QStandardItemModelC1EiiP7QObject(int rows, int columns, QObject * parent) {
-  (MyQStandardItemModel*)(0);
-  return  new MyQStandardItemModel(rows, columns, parent);
+void* C_ZN18QStandardItemModelC2EiiP7QObject(int rows, int columns, QObject * parent) {
+  return  new QStandardItemModel(rows, columns, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:332
 // [-2] void ~QStandardItemModel()
 extern "C"
-void C_ZN18QStandardItemModelD1Ev(void *this_) {
+void C_ZN18QStandardItemModelD2Ev(void *this_) {
   delete (QStandardItemModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

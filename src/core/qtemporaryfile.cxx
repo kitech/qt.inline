@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QTemporaryFile is pure virtual: false
+// QTemporaryFile has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTemporaryFile : public QTemporaryFile {
 public:
+  virtual ~MyQTemporaryFile() {}
+// void QTemporaryFile()
 MyQTemporaryFile() : QTemporaryFile() {}
+// void QTemporaryFile(const class QString &)
 MyQTemporaryFile(const QString & templateName) : QTemporaryFile(templateName) {}
+// void QTemporaryFile(class QObject *)
 MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
+// void QTemporaryFile(const class QString &, class QObject *)
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
 };
 
@@ -27,39 +33,35 @@ void* C_ZNK14QTemporaryFile10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qtemporaryfile.h:66
 // [-2] void QTemporaryFile()
 extern "C"
-void* C_ZN14QTemporaryFileC1Ev() {
-  (MyQTemporaryFile*)(0);
-  return  new MyQTemporaryFile();
+void* C_ZN14QTemporaryFileC2Ev() {
+  return  new QTemporaryFile();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:67
 // [-2] void QTemporaryFile(const class QString &)
 extern "C"
-void* C_ZN14QTemporaryFileC1ERK7QString(const QString & templateName) {
-  (MyQTemporaryFile*)(0);
-  return  new MyQTemporaryFile(templateName);
+void* C_ZN14QTemporaryFileC2ERK7QString(const QString & templateName) {
+  return  new QTemporaryFile(templateName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:69
 // [-2] void QTemporaryFile(class QObject *)
 extern "C"
-void* C_ZN14QTemporaryFileC1EP7QObject(QObject * parent) {
-  (MyQTemporaryFile*)(0);
-  return  new MyQTemporaryFile(parent);
+void* C_ZN14QTemporaryFileC2EP7QObject(QObject * parent) {
+  return  new QTemporaryFile(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:70
 // [-2] void QTemporaryFile(const class QString &, class QObject *)
 extern "C"
-void* C_ZN14QTemporaryFileC1ERK7QStringP7QObject(const QString & templateName, QObject * parent) {
-  (MyQTemporaryFile*)(0);
-  return  new MyQTemporaryFile(templateName, parent);
+void* C_ZN14QTemporaryFileC2ERK7QStringP7QObject(const QString & templateName, QObject * parent) {
+  return  new QTemporaryFile(templateName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:72
 // [-2] void ~QTemporaryFile()
 extern "C"
-void C_ZN14QTemporaryFileD1Ev(void *this_) {
+void C_ZN14QTemporaryFileD2Ev(void *this_) {
   delete (QTemporaryFile*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMessageAuthenticationCode is pure virtual: false
+// QMessageAuthenticationCode has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMessageAuthenticationCode : public QMessageAuthenticationCode {
 public:
+  virtual ~MyQMessageAuthenticationCode() {}
+// void QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)
 MyQMessageAuthenticationCode(QCryptographicHash::Algorithm method, const QByteArray & key) : QMessageAuthenticationCode(method, key) {}
 };
 
@@ -17,15 +20,14 @@ MyQMessageAuthenticationCode(QCryptographicHash::Algorithm method, const QByteAr
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:54
 // [-2] void QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)
 extern "C"
-void* C_ZN26QMessageAuthenticationCodeC1EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, const QByteArray & key) {
-  (MyQMessageAuthenticationCode*)(0);
-  return  new MyQMessageAuthenticationCode(method, key);
+void* C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, const QByteArray & key) {
+  return  new QMessageAuthenticationCode(method, key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:56
 // [-2] void ~QMessageAuthenticationCode()
 extern "C"
-void C_ZN26QMessageAuthenticationCodeD1Ev(void *this_) {
+void C_ZN26QMessageAuthenticationCodeD2Ev(void *this_) {
   delete (QMessageAuthenticationCode*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QProcessEnvironment is pure virtual: false
+// QProcessEnvironment has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQProcessEnvironment : public QProcessEnvironment {
 public:
+  virtual ~MyQProcessEnvironment() {}
+// void QProcessEnvironment()
 MyQProcessEnvironment() : QProcessEnvironment() {}
 };
 
@@ -17,15 +20,14 @@ MyQProcessEnvironment() : QProcessEnvironment() {}
 // /usr/include/qt/QtCore/qprocess.h:70
 // [-2] void QProcessEnvironment()
 extern "C"
-void* C_ZN19QProcessEnvironmentC1Ev() {
-  (MyQProcessEnvironment*)(0);
-  return  new MyQProcessEnvironment();
+void* C_ZN19QProcessEnvironmentC2Ev() {
+  return  new QProcessEnvironment();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:72
 // [-2] void ~QProcessEnvironment()
 extern "C"
-void C_ZN19QProcessEnvironmentD1Ev(void *this_) {
+void C_ZN19QProcessEnvironmentD2Ev(void *this_) {
   delete (QProcessEnvironment*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

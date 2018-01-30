@@ -4,17 +4,25 @@
 #include <QtGui>
 
 // QPalette is pure virtual: false
+// QPalette has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPalette : public QPalette {
 public:
+  virtual ~MyQPalette() {}
+// void QPalette()
 MyQPalette() : QPalette() {}
+// void QPalette(const class QColor &)
 MyQPalette(const QColor & button) : QPalette(button) {}
+// void QPalette(Qt::GlobalColor)
 MyQPalette(Qt::GlobalColor button) : QPalette(button) {}
+// void QPalette(const class QColor &, const class QColor &)
 MyQPalette(const QColor & button, const QColor & window) : QPalette(button, window) {}
+// void QPalette(const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
 MyQPalette(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window) : QPalette(windowText, button, light, dark, mid, text, bright_text, base, window) {}
+// void QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
 MyQPalette(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base) : QPalette(windowText, window, light, dark, mid, text, base) {}
 };
 
@@ -22,55 +30,49 @@ MyQPalette(const QColor & windowText, const QColor & window, const QColor & ligh
 // /usr/include/qt/QtGui/qpalette.h:58
 // [-2] void QPalette()
 extern "C"
-void* C_ZN8QPaletteC1Ev() {
-  (MyQPalette*)(0);
-  return  new MyQPalette();
+void* C_ZN8QPaletteC2Ev() {
+  return  new QPalette();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:59
 // [-2] void QPalette(const class QColor &)
 extern "C"
-void* C_ZN8QPaletteC1ERK6QColor(const QColor & button) {
-  (MyQPalette*)(0);
-  return  new MyQPalette(button);
+void* C_ZN8QPaletteC2ERK6QColor(const QColor & button) {
+  return  new QPalette(button);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:60
 // [-2] void QPalette(Qt::GlobalColor)
 extern "C"
-void* C_ZN8QPaletteC1EN2Qt11GlobalColorE(Qt::GlobalColor button) {
-  (MyQPalette*)(0);
-  return  new MyQPalette(button);
+void* C_ZN8QPaletteC2EN2Qt11GlobalColorE(Qt::GlobalColor button) {
+  return  new QPalette(button);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:61
 // [-2] void QPalette(const class QColor &, const class QColor &)
 extern "C"
-void* C_ZN8QPaletteC1ERK6QColorS2_(const QColor & button, const QColor & window) {
-  (MyQPalette*)(0);
-  return  new MyQPalette(button, window);
+void* C_ZN8QPaletteC2ERK6QColorS2_(const QColor & button, const QColor & window) {
+  return  new QPalette(button, window);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:62
 // [-2] void QPalette(const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &, const class QBrush &)
 extern "C"
-void* C_ZN8QPaletteC1ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window) {
-  (MyQPalette*)(0);
-  return  new MyQPalette(windowText, button, light, dark, mid, text, bright_text, base, window);
+void* C_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window) {
+  return  new QPalette(windowText, button, light, dark, mid, text, bright_text, base, window);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:65
 // [-2] void QPalette(const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &, const class QColor &)
 extern "C"
-void* C_ZN8QPaletteC1ERK6QColorS2_S2_S2_S2_S2_S2_(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base) {
-  (MyQPalette*)(0);
-  return  new MyQPalette(windowText, window, light, dark, mid, text, base);
+void* C_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base) {
+  return  new QPalette(windowText, window, light, dark, mid, text, base);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:68
 // [-2] void ~QPalette()
 extern "C"
-void C_ZN8QPaletteD1Ev(void *this_) {
+void C_ZN8QPaletteD2Ev(void *this_) {
   delete (QPalette*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QItemSelectionRange is pure virtual: false
+// QItemSelectionRange has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQItemSelectionRange : public QItemSelectionRange {
 public:
+  virtual ~MyQItemSelectionRange() {}
+// void QItemSelectionRange()
 MyQItemSelectionRange() : QItemSelectionRange() {}
+// void QItemSelectionRange(const class QModelIndex &, const class QModelIndex &)
 MyQItemSelectionRange(const QModelIndex & topL, const QModelIndex & bottomR) : QItemSelectionRange(topL, bottomR) {}
+// void QItemSelectionRange(const class QModelIndex &)
 MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
 };
 
@@ -19,25 +24,22 @@ MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
 // /usr/include/qt/QtCore/qitemselectionmodel.h:56
 // [-2] void QItemSelectionRange()
 extern "C"
-void* C_ZN19QItemSelectionRangeC1Ev() {
-  (MyQItemSelectionRange*)(0);
-  return  new MyQItemSelectionRange();
+void* C_ZN19QItemSelectionRangeC2Ev() {
+  return  new QItemSelectionRange();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:70
 // [-2] void QItemSelectionRange(const class QModelIndex &, const class QModelIndex &)
 extern "C"
-void* C_ZN19QItemSelectionRangeC1ERK11QModelIndexS2_(const QModelIndex & topL, const QModelIndex & bottomR) {
-  (MyQItemSelectionRange*)(0);
-  return  new MyQItemSelectionRange(topL, bottomR);
+void* C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(const QModelIndex & topL, const QModelIndex & bottomR) {
+  return  new QItemSelectionRange(topL, bottomR);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:71
 // [-2] void QItemSelectionRange(const class QModelIndex &)
 extern "C"
-void* C_ZN19QItemSelectionRangeC1ERK11QModelIndex(const QModelIndex & index) {
-  (MyQItemSelectionRange*)(0);
-  return  new MyQItemSelectionRange(index);
+void* C_ZN19QItemSelectionRangeC2ERK11QModelIndex(const QModelIndex & index) {
+  return  new QItemSelectionRange(index);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:73

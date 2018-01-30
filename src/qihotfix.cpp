@@ -26,3 +26,15 @@ void _ZN18QMessageLogContext4copyERKS_(void* qthis, const QMessageLogContext &lo
     QMessageLogContext* that = (QMessageLogContext*)qthis;
     that->copy(logContext);
 }
+
+extern  bool qRegisterResourceData(int, unsigned char const*, unsigned char const*, unsigned char const*);
+extern "C"
+bool C_Z21qRegisterResourceDataiPKhS0_S0_(int a0, unsigned char const* a1, unsigned char const* a2, unsigned char const* a3) {
+    return qRegisterResourceData(a0, a1, a2, a3);
+}
+
+extern bool qUnregisterResourceData(int, unsigned char const*, unsigned char const*, unsigned char const*);
+extern "C"
+bool C_Z23qUnregisterResourceDataiPKhS0_S0_(int a0, unsigned char const* a1, unsigned char const* a2, unsigned char const* a3) {
+    return qUnregisterResourceData(a0, a1, a2, a3);
+}

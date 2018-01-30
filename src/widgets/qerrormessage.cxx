@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QErrorMessage is pure virtual: false
+// QErrorMessage has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,19 +25,23 @@ extern "C" void set_callback_ZN13QErrorMessage11changeEventEP6QEvent(void*cbfn)
 
 class MyQErrorMessage : public QErrorMessage {
 public:
+  virtual ~MyQErrorMessage() {}
+// void QErrorMessage(class QWidget *)
 MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 // void done(int)
-// void done(int)
-virtual void done(int arg0) {
-  if (callback_ZN13QErrorMessage4doneEi != 0) {
-  // callback_ZN13QErrorMessage4doneEi(arg0);
-}}
+  virtual void done(int arg0) {
+    if (callback_ZN13QErrorMessage4doneEi != 0) {
+      // callback_ZN13QErrorMessage4doneEi(arg0);
+    }
+    QErrorMessage::done(arg0);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * e) {
-  if (callback_ZN13QErrorMessage11changeEventEP6QEvent != 0) {
-  // callback_ZN13QErrorMessage11changeEventEP6QEvent(e);
-}}
+  virtual void changeEvent(QEvent * e) {
+    if (callback_ZN13QErrorMessage11changeEventEP6QEvent != 0) {
+      // callback_ZN13QErrorMessage11changeEventEP6QEvent(e);
+    }
+    QErrorMessage::changeEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -50,15 +55,15 @@ void* C_ZNK13QErrorMessage10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qerrormessage.h:58
 // [-2] void QErrorMessage(class QWidget *)
 extern "C"
-void* C_ZN13QErrorMessageC1EP7QWidget(QWidget * parent) {
-  (MyQErrorMessage*)(0);
+void* C_ZN13QErrorMessageC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQErrorMessage*)(0);
   return  new MyQErrorMessage(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:59
 // [-2] void ~QErrorMessage()
 extern "C"
-void C_ZN13QErrorMessageD1Ev(void *this_) {
+void C_ZN13QErrorMessageD2Ev(void *this_) {
   delete (QErrorMessage*)(this_);
 }
 // Public static Visibility=Default Availability=Available

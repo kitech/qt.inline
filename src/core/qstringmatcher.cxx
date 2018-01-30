@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QStringMatcher is pure virtual: false
+// QStringMatcher has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStringMatcher : public QStringMatcher {
 public:
+  virtual ~MyQStringMatcher() {}
+// void QStringMatcher()
 MyQStringMatcher() : QStringMatcher() {}
+// void QStringMatcher(const class QString &, Qt::CaseSensitivity)
 MyQStringMatcher(const QString & pattern, Qt::CaseSensitivity cs) : QStringMatcher(pattern, cs) {}
+// void QStringMatcher(const class QChar *, int, Qt::CaseSensitivity)
 MyQStringMatcher(const QChar * uc, int len, Qt::CaseSensitivity cs) : QStringMatcher(uc, len, cs) {}
 };
 
@@ -19,31 +24,28 @@ MyQStringMatcher(const QChar * uc, int len, Qt::CaseSensitivity cs) : QStringMat
 // /usr/include/qt/QtCore/qstringmatcher.h:53
 // [-2] void QStringMatcher()
 extern "C"
-void* C_ZN14QStringMatcherC1Ev() {
-  (MyQStringMatcher*)(0);
-  return  new MyQStringMatcher();
+void* C_ZN14QStringMatcherC2Ev() {
+  return  new QStringMatcher();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:54
 // [-2] void QStringMatcher(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void* C_ZN14QStringMatcherC1ERK7QStringN2Qt15CaseSensitivityE(const QString & pattern, Qt::CaseSensitivity cs) {
-  (MyQStringMatcher*)(0);
-  return  new MyQStringMatcher(pattern, cs);
+void* C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(const QString & pattern, Qt::CaseSensitivity cs) {
+  return  new QStringMatcher(pattern, cs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:56
 // [-2] void QStringMatcher(const class QChar *, int, Qt::CaseSensitivity)
 extern "C"
-void* C_ZN14QStringMatcherC1EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, int len, Qt::CaseSensitivity cs) {
-  (MyQStringMatcher*)(0);
-  return  new MyQStringMatcher(uc, len, cs);
+void* C_ZN14QStringMatcherC2EPK5QChariN2Qt15CaseSensitivityE(const QChar * uc, int len, Qt::CaseSensitivity cs) {
+  return  new QStringMatcher(uc, len, cs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:59
 // [-2] void ~QStringMatcher()
 extern "C"
-void C_ZN14QStringMatcherD1Ev(void *this_) {
+void C_ZN14QStringMatcherD2Ev(void *this_) {
   delete (QStringMatcher*)(this_);
 }
 // Public Visibility=Default Availability=Available

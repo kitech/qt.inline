@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QDialogButtonBox is pure virtual: false
+// QDialogButtonBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN16QDialogButtonBox5eventEP6QEvent(void*cbfn)
 
 class MyQDialogButtonBox : public QDialogButtonBox {
 public:
+  virtual ~MyQDialogButtonBox() {}
+// void QDialogButtonBox(class QWidget *)
 MyQDialogButtonBox(QWidget * parent) : QDialogButtonBox(parent) {}
+// void QDialogButtonBox(Qt::Orientation, class QWidget *)
 MyQDialogButtonBox(Qt::Orientation orientation, QWidget * parent) : QDialogButtonBox(orientation, parent) {}
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * event) {
-  if (callback_ZN16QDialogButtonBox11changeEventEP6QEvent != 0) {
-  // callback_ZN16QDialogButtonBox11changeEventEP6QEvent(event);
-}}
+  virtual void changeEvent(QEvent * event) {
+    if (callback_ZN16QDialogButtonBox11changeEventEP6QEvent != 0) {
+      // callback_ZN16QDialogButtonBox11changeEventEP6QEvent(event);
+    }
+    QDialogButtonBox::changeEvent(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN16QDialogButtonBox5eventEP6QEvent != 0) {
-  // callback_ZN16QDialogButtonBox5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN16QDialogButtonBox5eventEP6QEvent != 0) {
+      // callback_ZN16QDialogButtonBox5eventEP6QEvent(event);
+    }
+    return QDialogButtonBox::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK16QDialogButtonBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:120
 // [-2] void QDialogButtonBox(class QWidget *)
 extern "C"
-void* C_ZN16QDialogButtonBoxC1EP7QWidget(QWidget * parent) {
-  (MyQDialogButtonBox*)(0);
+void* C_ZN16QDialogButtonBoxC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:121
 // [-2] void QDialogButtonBox(Qt::Orientation, class QWidget *)
 extern "C"
-void* C_ZN16QDialogButtonBoxC1EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
-  (MyQDialogButtonBox*)(0);
+void* C_ZN16QDialogButtonBoxC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
+  auto _nilp = (MyQDialogButtonBox*)(0);
   return  new MyQDialogButtonBox(orientation, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h:125
 // [-2] void ~QDialogButtonBox()
 extern "C"
-void C_ZN16QDialogButtonBoxD1Ev(void *this_) {
+void C_ZN16QDialogButtonBoxD2Ev(void *this_) {
   delete (QDialogButtonBox*)(this_);
 }
 // Public Visibility=Default Availability=Available

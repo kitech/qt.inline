@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QConicalGradient is pure virtual: false
+// QConicalGradient has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQConicalGradient : public QConicalGradient {
 public:
+  virtual ~MyQConicalGradient() {}
+// void QConicalGradient()
 MyQConicalGradient() : QConicalGradient() {}
+// void QConicalGradient(const class QPointF &, qreal)
 MyQConicalGradient(const QPointF & center, qreal startAngle) : QConicalGradient(center, startAngle) {}
+// void QConicalGradient(qreal, qreal, qreal)
 MyQConicalGradient(qreal cx, qreal cy, qreal startAngle) : QConicalGradient(cx, cy, startAngle) {}
 };
 
@@ -19,25 +24,22 @@ MyQConicalGradient(qreal cx, qreal cy, qreal startAngle) : QConicalGradient(cx, 
 // /usr/include/qt/QtGui/qbrush.h:306
 // [-2] void QConicalGradient()
 extern "C"
-void* C_ZN16QConicalGradientC1Ev() {
-  (MyQConicalGradient*)(0);
-  return  new MyQConicalGradient();
+void* C_ZN16QConicalGradientC2Ev() {
+  return  new QConicalGradient();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:307
 // [-2] void QConicalGradient(const class QPointF &, qreal)
 extern "C"
-void* C_ZN16QConicalGradientC1ERK7QPointFd(const QPointF & center, qreal startAngle) {
-  (MyQConicalGradient*)(0);
-  return  new MyQConicalGradient(center, startAngle);
+void* C_ZN16QConicalGradientC2ERK7QPointFd(const QPointF & center, qreal startAngle) {
+  return  new QConicalGradient(center, startAngle);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:308
 // [-2] void QConicalGradient(qreal, qreal, qreal)
 extern "C"
-void* C_ZN16QConicalGradientC1Eddd(qreal cx, qreal cy, qreal startAngle) {
-  (MyQConicalGradient*)(0);
-  return  new MyQConicalGradient(cx, cy, startAngle);
+void* C_ZN16QConicalGradientC2Eddd(qreal cx, qreal cy, qreal startAngle) {
+  return  new QConicalGradient(cx, cy, startAngle);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:310

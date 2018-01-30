@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QBoxLayout is pure virtual: false
+// QBoxLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBoxLayout : public QBoxLayout {
 public:
+  virtual ~MyQBoxLayout() {}
+// void QBoxLayout(enum QBoxLayout::Direction, class QWidget *)
 MyQBoxLayout(QBoxLayout::Direction arg0, QWidget * parent) : QBoxLayout(arg0, parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QBoxLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qboxlayout.h:64
 // [-2] void QBoxLayout(enum QBoxLayout::Direction, class QWidget *)
 extern "C"
-void* C_ZN10QBoxLayoutC1ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg0, QWidget * parent) {
-  (MyQBoxLayout*)(0);
-  return  new MyQBoxLayout(arg0, parent);
+void* C_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget(QBoxLayout::Direction arg0, QWidget * parent) {
+  return  new QBoxLayout(arg0, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:66
 // [-2] void ~QBoxLayout()
 extern "C"
-void C_ZN10QBoxLayoutD1Ev(void *this_) {
+void C_ZN10QBoxLayoutD2Ev(void *this_) {
   delete (QBoxLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

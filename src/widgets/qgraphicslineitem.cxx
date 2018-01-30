@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsLineItem is pure virtual: false
+// QGraphicsLineItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,58 +32,65 @@ extern "C" void set_callback_ZNK17QGraphicsLineItem9extensionERK8QVariant(void*c
 
 class MyQGraphicsLineItem : public QGraphicsLineItem {
 public:
+  virtual ~MyQGraphicsLineItem() {}
+// void QGraphicsLineItem(class QGraphicsItem *)
 MyQGraphicsLineItem(QGraphicsItem * parent) : QGraphicsLineItem(parent) {}
+// void QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
 MyQGraphicsLineItem(const QLineF & line, QGraphicsItem * parent) : QGraphicsLineItem(line, parent) {}
+// void QGraphicsLineItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
 MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * parent) : QGraphicsLineItem(x1, y1, x2, y2, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
-// bool supportsExtension(enum QGraphicsItem::Extension)
-virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-  if (callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-  // callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
-}}
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+    if (callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+      // callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    }
+    return QGraphicsLineItem::supportsExtension(extension);
+  }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-  if (callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-  // callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
-}}
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+    if (callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+      // callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    }
+    QGraphicsLineItem::setExtension(extension, variant);
+  }
 // QVariant extension(const class QVariant &)
-// QVariant extension(const class QVariant &)
-virtual QVariant extension(const QVariant & variant) {
-  if (callback_ZNK17QGraphicsLineItem9extensionERK8QVariant != 0) {
-  // callback_ZNK17QGraphicsLineItem9extensionERK8QVariant(variant);
-}}
+  virtual QVariant extension(const QVariant & variant) {
+    if (callback_ZNK17QGraphicsLineItem9extensionERK8QVariant != 0) {
+      // callback_ZNK17QGraphicsLineItem9extensionERK8QVariant(variant);
+    }
+    return QGraphicsLineItem::extension(variant);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:780
 // [-2] void QGraphicsLineItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN17QGraphicsLineItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsLineItem*)(0);
+void* C_ZN17QGraphicsLineItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:781
 // [-2] void QGraphicsLineItem(const class QLineF &, class QGraphicsItem *)
 extern "C"
-void* C_ZN17QGraphicsLineItemC1ERK6QLineFP13QGraphicsItem(const QLineF & line, QGraphicsItem * parent) {
-  (MyQGraphicsLineItem*)(0);
+void* C_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem(const QLineF & line, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(line, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:782
 // [-2] void QGraphicsLineItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
 extern "C"
-void* C_ZN17QGraphicsLineItemC1EddddP13QGraphicsItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * parent) {
-  (MyQGraphicsLineItem*)(0);
+void* C_ZN17QGraphicsLineItemC2EddddP13QGraphicsItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsLineItem*)(0);
   return  new MyQGraphicsLineItem(x1, y1, x2, y2, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:783
 // [-2] void ~QGraphicsLineItem()
 extern "C"
-void C_ZN17QGraphicsLineItemD1Ev(void *this_) {
+void C_ZN17QGraphicsLineItemD2Ev(void *this_) {
   delete (QGraphicsLineItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

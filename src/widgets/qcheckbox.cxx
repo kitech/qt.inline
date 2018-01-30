@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QCheckBox is pure virtual: false
+// QCheckBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,50 +60,60 @@ extern "C" void set_callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButto
 
 class MyQCheckBox : public QCheckBox {
 public:
+  virtual ~MyQCheckBox() {}
+// void QCheckBox(class QWidget *)
 MyQCheckBox(QWidget * parent) : QCheckBox(parent) {}
+// void QCheckBox(const class QString &, class QWidget *)
 MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN9QCheckBox5eventEP6QEvent != 0) {
-  // callback_ZN9QCheckBox5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN9QCheckBox5eventEP6QEvent != 0) {
+      // callback_ZN9QCheckBox5eventEP6QEvent(e);
+    }
+    return QCheckBox::event(e);
+  }
 // bool hitButton(const class QPoint &)
-// bool hitButton(const class QPoint &)
-virtual bool hitButton(const QPoint & pos) {
-  if (callback_ZNK9QCheckBox9hitButtonERK6QPoint != 0) {
-  // callback_ZNK9QCheckBox9hitButtonERK6QPoint(pos);
-}}
+  virtual bool hitButton(const QPoint & pos) {
+    if (callback_ZNK9QCheckBox9hitButtonERK6QPoint != 0) {
+      // callback_ZNK9QCheckBox9hitButtonERK6QPoint(pos);
+    }
+    return QCheckBox::hitButton(pos);
+  }
 // void checkStateSet()
-// void checkStateSet()
-virtual void checkStateSet() {
-  if (callback_ZN9QCheckBox13checkStateSetEv != 0) {
-  // callback_ZN9QCheckBox13checkStateSetEv();
-}}
+  virtual void checkStateSet() {
+    if (callback_ZN9QCheckBox13checkStateSetEv != 0) {
+      // callback_ZN9QCheckBox13checkStateSetEv();
+    }
+    QCheckBox::checkStateSet();
+  }
 // void nextCheckState()
-// void nextCheckState()
-virtual void nextCheckState() {
-  if (callback_ZN9QCheckBox14nextCheckStateEv != 0) {
-  // callback_ZN9QCheckBox14nextCheckStateEv();
-}}
+  virtual void nextCheckState() {
+    if (callback_ZN9QCheckBox14nextCheckStateEv != 0) {
+      // callback_ZN9QCheckBox14nextCheckStateEv();
+    }
+    QCheckBox::nextCheckState();
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN9QCheckBox10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN9QCheckBox10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN9QCheckBox10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN9QCheckBox10paintEventEP11QPaintEvent(arg0);
+    }
+    QCheckBox::paintEvent(arg0);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * arg0) {
-  if (callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(arg0);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+    if (callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(arg0);
+    }
+    QCheckBox::mouseMoveEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionButton *)
-// void initStyleOption(class QStyleOptionButton *)
-virtual void initStyleOption(QStyleOptionButton * option) {
-  if (callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton != 0) {
-  // callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(option);
-}}
+  virtual void initStyleOption(QStyleOptionButton * option) {
+    if (callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton != 0) {
+      // callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(option);
+    }
+    QCheckBox::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -116,23 +127,23 @@ void* C_ZNK9QCheckBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcheckbox.h:61
 // [-2] void QCheckBox(class QWidget *)
 extern "C"
-void* C_ZN9QCheckBoxC1EP7QWidget(QWidget * parent) {
-  (MyQCheckBox*)(0);
+void* C_ZN9QCheckBoxC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:62
 // [-2] void QCheckBox(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QCheckBoxC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
-  (MyQCheckBox*)(0);
+void* C_ZN9QCheckBoxC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  auto _nilp = (MyQCheckBox*)(0);
   return  new MyQCheckBox(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcheckbox.h:63
 // [-2] void ~QCheckBox()
 extern "C"
-void C_ZN9QCheckBoxD1Ev(void *this_) {
+void C_ZN9QCheckBoxD2Ev(void *this_) {
   delete (QCheckBox*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QValidator is pure virtual: true
+// QValidator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQValidator : public QValidator {
 public:
+  virtual ~MyQValidator() {}
+// void QValidator(class QObject *)
 MyQValidator(QObject * parent) : QValidator(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK10QValidator10metaObjectEv(void *this_) {
 // [-2] void QValidator(class QObject *)
 extern "C"
 void* C_ZN10QValidatorC1EP7QObject(QObject * parent) {
-  (MyQValidator*)(0);
-  return 0; // new MyQValidator(parent);
+  return 0; // new QValidator(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:63
 // [-2] void ~QValidator()
 extern "C"
-void C_ZN10QValidatorD1Ev(void *this_) {
+void C_ZN10QValidatorD2Ev(void *this_) {
   delete (QValidator*)(this_);
 }
 // Public Visibility=Default Availability=Available

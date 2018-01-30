@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextObject is pure virtual: false
+// QTextObject has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,14 +32,17 @@ extern "C" void set_callback_ZN11QTextObject9setFormatERK11QTextFormat(void*cbfn
 
 class MyQTextObject : public QTextObject {
 public:
+  virtual ~MyQTextObject() {}
+// void QTextObject(class QTextDocument *)
 MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // void ~QTextObject()
 // void setFormat(const class QTextFormat &)
-// void setFormat(const class QTextFormat &)
-virtual void setFormat(const QTextFormat & format) {
-  if (callback_ZN11QTextObject9setFormatERK11QTextFormat != 0) {
-  // callback_ZN11QTextObject9setFormatERK11QTextFormat(format);
-}}
+  virtual void setFormat(const QTextFormat & format) {
+    if (callback_ZN11QTextObject9setFormatERK11QTextFormat != 0) {
+      // callback_ZN11QTextObject9setFormatERK11QTextFormat(format);
+    }
+    QTextObject::setFormat(format);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available

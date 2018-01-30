@@ -4,12 +4,14 @@
 #include <QtWidgets>
 
 // QToolTip is pure virtual: false
+// QToolTip has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQToolTip : public QToolTip {
 public:
+  virtual ~MyQToolTip() {}
 };
 
 // Public static Visibility=Default Availability=Available

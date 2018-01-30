@@ -4,19 +4,21 @@
 #include <QtCore>
 
 // QCollatorSortKey is pure virtual: false
+// QCollatorSortKey has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCollatorSortKey : public QCollatorSortKey {
 public:
+  virtual ~MyQCollatorSortKey() {}
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:58
 // [-2] void ~QCollatorSortKey()
 extern "C"
-void C_ZN16QCollatorSortKeyD1Ev(void *this_) {
+void C_ZN16QCollatorSortKeyD2Ev(void *this_) {
   delete (QCollatorSortKey*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

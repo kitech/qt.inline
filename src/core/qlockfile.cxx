@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QLockFile is pure virtual: false
+// QLockFile has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLockFile : public QLockFile {
 public:
+  virtual ~MyQLockFile() {}
+// void QLockFile(const class QString &)
 MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
 };
 
@@ -17,15 +20,14 @@ MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
 // /usr/include/qt/QtCore/qlockfile.h:53
 // [-2] void QLockFile(const class QString &)
 extern "C"
-void* C_ZN9QLockFileC1ERK7QString(const QString & fileName) {
-  (MyQLockFile*)(0);
-  return  new MyQLockFile(fileName);
+void* C_ZN9QLockFileC2ERK7QString(const QString & fileName) {
+  return  new QLockFile(fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:54
 // [-2] void ~QLockFile()
 extern "C"
-void C_ZN9QLockFileD1Ev(void *this_) {
+void C_ZN9QLockFileD2Ev(void *this_) {
   delete (QLockFile*)(this_);
 }
 // Public Visibility=Default Availability=Available

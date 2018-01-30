@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QBackingStore is pure virtual: false
+// QBackingStore has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBackingStore : public QBackingStore {
 public:
+  virtual ~MyQBackingStore() {}
+// void QBackingStore(class QWindow *)
 MyQBackingStore(QWindow * window) : QBackingStore(window) {}
 };
 
@@ -17,15 +20,14 @@ MyQBackingStore(QWindow * window) : QBackingStore(window) {}
 // /usr/include/qt/QtGui/qbackingstore.h:62
 // [-2] void QBackingStore(class QWindow *)
 extern "C"
-void* C_ZN13QBackingStoreC1EP7QWindow(QWindow * window) {
-  (MyQBackingStore*)(0);
-  return  new MyQBackingStore(window);
+void* C_ZN13QBackingStoreC2EP7QWindow(QWindow * window) {
+  return  new QBackingStore(window);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbackingstore.h:63
 // [-2] void ~QBackingStore()
 extern "C"
-void C_ZN13QBackingStoreD1Ev(void *this_) {
+void C_ZN13QBackingStoreD2Ev(void *this_) {
   delete (QBackingStore*)(this_);
 }
 // Public Visibility=Default Availability=Available

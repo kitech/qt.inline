@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QPointingDeviceUniqueId is pure virtual: false
+// QPointingDeviceUniqueId has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPointingDeviceUniqueId : public QPointingDeviceUniqueId {
 public:
+  virtual ~MyQPointingDeviceUniqueId() {}
+// void QPointingDeviceUniqueId()
 MyQPointingDeviceUniqueId() : QPointingDeviceUniqueId() {}
 };
 
@@ -17,9 +20,8 @@ MyQPointingDeviceUniqueId() : QPointingDeviceUniqueId() {}
 // /usr/include/qt/QtGui/qevent.h:809
 // [-2] void QPointingDeviceUniqueId()
 extern "C"
-void* C_ZN23QPointingDeviceUniqueIdC1Ev() {
-  (MyQPointingDeviceUniqueId*)(0);
-  return  new MyQPointingDeviceUniqueId();
+void* C_ZN23QPointingDeviceUniqueIdC2Ev() {
+  return  new QPointingDeviceUniqueId();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:813

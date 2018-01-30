@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QAbstractUndoItem is pure virtual: true
+// QAbstractUndoItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAbstractUndoItem : public QAbstractUndoItem {
 public:
+  virtual ~MyQAbstractUndoItem() {}
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:86
 // [-2] void ~QAbstractUndoItem()
 extern "C"
-void C_ZN17QAbstractUndoItemD1Ev(void *this_) {
+void C_ZN17QAbstractUndoItemD2Ev(void *this_) {
   delete (QAbstractUndoItem*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

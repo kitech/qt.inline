@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QSettings is pure virtual: false
+// QSettings has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,17 +18,24 @@ extern "C" void set_callback_ZN9QSettings5eventEP6QEvent(void*cbfn)
 
 class MyQSettings : public QSettings {
 public:
+  virtual ~MyQSettings() {}
+// void QSettings(const class QString &, const class QString &, class QObject *)
 MyQSettings(const QString & organization, const QString & application, QObject * parent) : QSettings(organization, application, parent) {}
+// void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 MyQSettings(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) : QSettings(scope, organization, application, parent) {}
+// void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 MyQSettings(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) : QSettings(format, scope, organization, application, parent) {}
+// void QSettings(const class QString &, enum QSettings::Format, class QObject *)
 MyQSettings(const QString & fileName, QSettings::Format format, QObject * parent) : QSettings(fileName, format, parent) {}
+// void QSettings(class QObject *)
 MyQSettings(QObject * parent) : QSettings(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN9QSettings5eventEP6QEvent != 0) {
-  // callback_ZN9QSettings5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN9QSettings5eventEP6QEvent != 0) {
+      // callback_ZN9QSettings5eventEP6QEvent(event);
+    }
+    return QSettings::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -41,47 +49,47 @@ void* C_ZNK9QSettings10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsettings.h:127
 // [-2] void QSettings(const class QString &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN9QSettingsC1ERK7QStringS2_P7QObject(const QString & organization, const QString & application, QObject * parent) {
-  (MyQSettings*)(0);
+void* C_ZN9QSettingsC2ERK7QStringS2_P7QObject(const QString & organization, const QString & application, QObject * parent) {
+  auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(organization, application, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:129
 // [-2] void QSettings(enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN9QSettingsC1ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
-  (MyQSettings*)(0);
+void* C_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
+  auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(scope, organization, application, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:131
 // [-2] void QSettings(enum QSettings::Format, enum QSettings::Scope, const class QString &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN9QSettingsC1ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
-  (MyQSettings*)(0);
+void* C_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent) {
+  auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(format, scope, organization, application, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:133
 // [-2] void QSettings(const class QString &, enum QSettings::Format, class QObject *)
 extern "C"
-void* C_ZN9QSettingsC1ERK7QStringNS_6FormatEP7QObject(const QString & fileName, QSettings::Format format, QObject * parent) {
-  (MyQSettings*)(0);
+void* C_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject(const QString & fileName, QSettings::Format format, QObject * parent) {
+  auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(fileName, format, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:134
 // [-2] void QSettings(class QObject *)
 extern "C"
-void* C_ZN9QSettingsC1EP7QObject(QObject * parent) {
-  (MyQSettings*)(0);
+void* C_ZN9QSettingsC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQSettings*)(0);
   return  new MyQSettings(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsettings.h:144
 // [-2] void ~QSettings()
 extern "C"
-void C_ZN9QSettingsD1Ev(void *this_) {
+void C_ZN9QSettingsD2Ev(void *this_) {
   delete (QSettings*)(this_);
 }
 // Public Visibility=Default Availability=Available

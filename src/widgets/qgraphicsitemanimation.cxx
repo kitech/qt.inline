@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsItemAnimation is pure virtual: false
+// QGraphicsItemAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,19 +25,23 @@ extern "C" void set_callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(vo
 
 class MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
+  virtual ~MyQGraphicsItemAnimation() {}
+// void QGraphicsItemAnimation(class QObject *)
 MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // void beforeAnimationStep(qreal)
-// void beforeAnimationStep(qreal)
-virtual void beforeAnimationStep(qreal step) {
-  if (callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd != 0) {
-  // callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(step);
-}}
+  virtual void beforeAnimationStep(qreal step) {
+    if (callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd != 0) {
+      // callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(step);
+    }
+    QGraphicsItemAnimation::beforeAnimationStep(step);
+  }
 // void afterAnimationStep(qreal)
-// void afterAnimationStep(qreal)
-virtual void afterAnimationStep(qreal step) {
-  if (callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd != 0) {
-  // callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(step);
-}}
+  virtual void afterAnimationStep(qreal step) {
+    if (callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd != 0) {
+      // callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(step);
+    }
+    QGraphicsItemAnimation::afterAnimationStep(step);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -50,15 +55,15 @@ void* C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:61
 // [-2] void QGraphicsItemAnimation(class QObject *)
 extern "C"
-void* C_ZN22QGraphicsItemAnimationC1EP7QObject(QObject * parent) {
-  (MyQGraphicsItemAnimation*)(0);
+void* C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQGraphicsItemAnimation*)(0);
   return  new MyQGraphicsItemAnimation(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
 // [-2] void ~QGraphicsItemAnimation()
 extern "C"
-void C_ZN22QGraphicsItemAnimationD1Ev(void *this_) {
+void C_ZN22QGraphicsItemAnimationD2Ev(void *this_) {
   delete (QGraphicsItemAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available

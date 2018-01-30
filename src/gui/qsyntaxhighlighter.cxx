@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QSyntaxHighlighter is pure virtual: true
+// QSyntaxHighlighter has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -87,74 +88,88 @@ extern "C" void set_callback_ZNK18QSyntaxHighlighter12currentBlockEv(void*cbfn)
 
 class MyQSyntaxHighlighter : public QSyntaxHighlighter {
 public:
+  virtual ~MyQSyntaxHighlighter() {}
+// void QSyntaxHighlighter(class QObject *)
 MyQSyntaxHighlighter(QObject * parent) : QSyntaxHighlighter(parent) {}
+// void QSyntaxHighlighter(class QTextDocument *)
 MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
 // void highlightBlock(const class QString &)
-// void highlightBlock(const class QString &)
-virtual void highlightBlock(const QString & text) {
-  if (callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString != 0) {
-  // callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString(text);
-}}
+  virtual void highlightBlock(const QString & text) {
+    if (callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString != 0) {
+      // callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString(text);
+    }
+    QSyntaxHighlighter::highlightBlock(text);
+  }
 // void setFormat(int, int, const class QTextCharFormat &)
-// void setFormat(int, int, const class QTextCharFormat &)
-virtual void setFormat(int start, int count, const QTextCharFormat & format) {
-  if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat != 0) {
-  // callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat(start, count, format);
-}}
+  virtual void setFormat(int start, int count, const QTextCharFormat & format) {
+    if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat != 0) {
+      // callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat(start, count, format);
+    }
+    QSyntaxHighlighter::setFormat(start, count, format);
+  }
 // void setFormat(int, int, const class QColor &)
-// void setFormat(int, int, const class QColor &)
-virtual void setFormat(int start, int count, const QColor & color) {
-  if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor != 0) {
-  // callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor(start, count, color);
-}}
+  virtual void setFormat(int start, int count, const QColor & color) {
+    if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor != 0) {
+      // callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor(start, count, color);
+    }
+    QSyntaxHighlighter::setFormat(start, count, color);
+  }
 // void setFormat(int, int, const class QFont &)
-// void setFormat(int, int, const class QFont &)
-virtual void setFormat(int start, int count, const QFont & font) {
-  if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont != 0) {
-  // callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont(start, count, font);
-}}
+  virtual void setFormat(int start, int count, const QFont & font) {
+    if (callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont != 0) {
+      // callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont(start, count, font);
+    }
+    QSyntaxHighlighter::setFormat(start, count, font);
+  }
 // QTextCharFormat format(int)
-// QTextCharFormat format(int)
-virtual QTextCharFormat format(int pos) {
-  if (callback_ZNK18QSyntaxHighlighter6formatEi != 0) {
-  // callback_ZNK18QSyntaxHighlighter6formatEi(pos);
-}}
+  virtual QTextCharFormat format(int pos) {
+    if (callback_ZNK18QSyntaxHighlighter6formatEi != 0) {
+      // callback_ZNK18QSyntaxHighlighter6formatEi(pos);
+    }
+    return QSyntaxHighlighter::format(pos);
+  }
 // int previousBlockState()
-// int previousBlockState()
-virtual int previousBlockState() {
-  if (callback_ZNK18QSyntaxHighlighter18previousBlockStateEv != 0) {
-  // callback_ZNK18QSyntaxHighlighter18previousBlockStateEv();
-}}
+  virtual int previousBlockState() {
+    if (callback_ZNK18QSyntaxHighlighter18previousBlockStateEv != 0) {
+      // callback_ZNK18QSyntaxHighlighter18previousBlockStateEv();
+    }
+    return QSyntaxHighlighter::previousBlockState();
+  }
 // int currentBlockState()
-// int currentBlockState()
-virtual int currentBlockState() {
-  if (callback_ZNK18QSyntaxHighlighter17currentBlockStateEv != 0) {
-  // callback_ZNK18QSyntaxHighlighter17currentBlockStateEv();
-}}
+  virtual int currentBlockState() {
+    if (callback_ZNK18QSyntaxHighlighter17currentBlockStateEv != 0) {
+      // callback_ZNK18QSyntaxHighlighter17currentBlockStateEv();
+    }
+    return QSyntaxHighlighter::currentBlockState();
+  }
 // void setCurrentBlockState(int)
-// void setCurrentBlockState(int)
-virtual void setCurrentBlockState(int newState) {
-  if (callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi != 0) {
-  // callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi(newState);
-}}
+  virtual void setCurrentBlockState(int newState) {
+    if (callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi != 0) {
+      // callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi(newState);
+    }
+    QSyntaxHighlighter::setCurrentBlockState(newState);
+  }
 // void setCurrentBlockUserData(class QTextBlockUserData *)
-// void setCurrentBlockUserData(class QTextBlockUserData *)
-virtual void setCurrentBlockUserData(QTextBlockUserData * data) {
-  if (callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData != 0) {
-  // callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData(data);
-}}
+  virtual void setCurrentBlockUserData(QTextBlockUserData * data) {
+    if (callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData != 0) {
+      // callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData(data);
+    }
+    QSyntaxHighlighter::setCurrentBlockUserData(data);
+  }
 // QTextBlockUserData * currentBlockUserData()
-// QTextBlockUserData * currentBlockUserData()
-virtual QTextBlockUserData * currentBlockUserData() {
-  if (callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv != 0) {
-  // callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv();
-}}
+  virtual QTextBlockUserData * currentBlockUserData() {
+    if (callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv != 0) {
+      // callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv();
+    }
+    return QSyntaxHighlighter::currentBlockUserData();
+  }
 // QTextBlock currentBlock()
-// QTextBlock currentBlock()
-virtual QTextBlock currentBlock() {
-  if (callback_ZNK18QSyntaxHighlighter12currentBlockEv != 0) {
-  // callback_ZNK18QSyntaxHighlighter12currentBlockEv();
-}}
+  virtual QTextBlock currentBlock() {
+    if (callback_ZNK18QSyntaxHighlighter12currentBlockEv != 0) {
+      // callback_ZNK18QSyntaxHighlighter12currentBlockEv();
+    }
+    return QSyntaxHighlighter::currentBlock();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -169,7 +184,7 @@ void* C_ZNK18QSyntaxHighlighter10metaObjectEv(void *this_) {
 // [-2] void QSyntaxHighlighter(class QObject *)
 extern "C"
 void* C_ZN18QSyntaxHighlighterC1EP7QObject(QObject * parent) {
-  (MyQSyntaxHighlighter*)(0);
+  auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }
 // Public Visibility=Default Availability=Available
@@ -177,14 +192,14 @@ void* C_ZN18QSyntaxHighlighterC1EP7QObject(QObject * parent) {
 // [-2] void QSyntaxHighlighter(class QTextDocument *)
 extern "C"
 void* C_ZN18QSyntaxHighlighterC1EP13QTextDocument(QTextDocument * parent) {
-  (MyQSyntaxHighlighter*)(0);
+  auto _nilp = (MyQSyntaxHighlighter*)(0);
   return 0; // new MyQSyntaxHighlighter(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsyntaxhighlighter.h:67
 // [-2] void ~QSyntaxHighlighter()
 extern "C"
-void C_ZN18QSyntaxHighlighterD1Ev(void *this_) {
+void C_ZN18QSyntaxHighlighterD2Ev(void *this_) {
   delete (QSyntaxHighlighter*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QDropEvent is pure virtual: false
+// QDropEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDropEvent : public QDropEvent {
 public:
+  virtual ~MyQDropEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:610
 // [-2] void ~QDropEvent()
 extern "C"
-void C_ZN10QDropEventD1Ev(void *this_) {
+void C_ZN10QDropEventD2Ev(void *this_) {
   delete (QDropEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

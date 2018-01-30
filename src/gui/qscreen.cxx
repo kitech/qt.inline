@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QScreen is pure virtual: false
+// QScreen has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScreen : public QScreen {
 public:
+  virtual ~MyQScreen() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -23,7 +25,7 @@ void* C_ZNK7QScreen10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qscreen.h:98
 // [-2] void ~QScreen()
 extern "C"
-void C_ZN7QScreenD1Ev(void *this_) {
+void C_ZN7QScreenD2Ev(void *this_) {
   delete (QScreen*)(this_);
 }
 // Public Visibility=Default Availability=Available

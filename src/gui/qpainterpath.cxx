@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QPainterPath is pure virtual: false
+// QPainterPath has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPainterPath : public QPainterPath {
 public:
+  virtual ~MyQPainterPath() {}
+// void QPainterPath()
 MyQPainterPath() : QPainterPath() {}
+// void QPainterPath(const class QPointF &)
 MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
 };
 
@@ -18,23 +22,21 @@ MyQPainterPath(const QPointF & startPoint) : QPainterPath(startPoint) {}
 // /usr/include/qt/QtGui/qpainterpath.h:91
 // [-2] void QPainterPath()
 extern "C"
-void* C_ZN12QPainterPathC1Ev() {
-  (MyQPainterPath*)(0);
-  return  new MyQPainterPath();
+void* C_ZN12QPainterPathC2Ev() {
+  return  new QPainterPath();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:92
 // [-2] void QPainterPath(const class QPointF &)
 extern "C"
-void* C_ZN12QPainterPathC1ERK7QPointF(const QPointF & startPoint) {
-  (MyQPainterPath*)(0);
-  return  new MyQPainterPath(startPoint);
+void* C_ZN12QPainterPathC2ERK7QPointF(const QPointF & startPoint) {
+  return  new QPainterPath(startPoint);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:99
 // [-2] void ~QPainterPath()
 extern "C"
-void C_ZN12QPainterPathD1Ev(void *this_) {
+void C_ZN12QPainterPathD2Ev(void *this_) {
   delete (QPainterPath*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

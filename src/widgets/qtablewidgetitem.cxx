@@ -4,14 +4,19 @@
 #include <QtWidgets>
 
 // QTableWidgetItem is pure virtual: false
+// QTableWidgetItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTableWidgetItem : public QTableWidgetItem {
 public:
+  virtual ~MyQTableWidgetItem() {}
+// void QTableWidgetItem(int)
 MyQTableWidgetItem(int type) : QTableWidgetItem(type) {}
+// void QTableWidgetItem(const class QString &, int)
 MyQTableWidgetItem(const QString & text, int type) : QTableWidgetItem(text, type) {}
+// void QTableWidgetItem(const class QIcon &, const class QString &, int)
 MyQTableWidgetItem(const QIcon & icon, const QString & text, int type) : QTableWidgetItem(icon, text, type) {}
 };
 
@@ -19,31 +24,28 @@ MyQTableWidgetItem(const QIcon & icon, const QString & text, int type) : QTableW
 // /usr/include/qt/QtWidgets/qtablewidget.h:82
 // [-2] void QTableWidgetItem(int)
 extern "C"
-void* C_ZN16QTableWidgetItemC1Ei(int type) {
-  (MyQTableWidgetItem*)(0);
-  return  new MyQTableWidgetItem(type);
+void* C_ZN16QTableWidgetItemC2Ei(int type) {
+  return  new QTableWidgetItem(type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:83
 // [-2] void QTableWidgetItem(const class QString &, int)
 extern "C"
-void* C_ZN16QTableWidgetItemC1ERK7QStringi(const QString & text, int type) {
-  (MyQTableWidgetItem*)(0);
-  return  new MyQTableWidgetItem(text, type);
+void* C_ZN16QTableWidgetItemC2ERK7QStringi(const QString & text, int type) {
+  return  new QTableWidgetItem(text, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:84
 // [-2] void QTableWidgetItem(const class QIcon &, const class QString &, int)
 extern "C"
-void* C_ZN16QTableWidgetItemC1ERK5QIconRK7QStringi(const QIcon & icon, const QString & text, int type) {
-  (MyQTableWidgetItem*)(0);
-  return  new MyQTableWidgetItem(icon, text, type);
+void* C_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi(const QIcon & icon, const QString & text, int type) {
+  return  new QTableWidgetItem(icon, text, type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:86
 // [-2] void ~QTableWidgetItem()
 extern "C"
-void C_ZN16QTableWidgetItemD1Ev(void *this_) {
+void C_ZN16QTableWidgetItemD2Ev(void *this_) {
   delete (QTableWidgetItem*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

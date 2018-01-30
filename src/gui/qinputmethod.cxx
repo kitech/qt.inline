@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QInputMethod is pure virtual: false
+// QInputMethod has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -117,8 +118,8 @@ Qt::LayoutDirection C_ZNK12QInputMethod14inputDirectionEv(void *this_) {
 // /usr/include/qt/QtGui/qinputmethod.h:97
 // [16] QVariant queryFocusObject(Qt::InputMethodQuery, class QVariant)
 extern "C"
-void* C_ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant(Qt::InputMethodQuery query, QVariant argument) {
-  auto rv = QInputMethod::queryFocusObject(query, argument);
+void* C_ZN12QInputMethod16queryFocusObjectEN2Qt16InputMethodQueryE8QVariant(Qt::InputMethodQuery query, QVariant* argument) {
+  auto rv = QInputMethod::queryFocusObject(query, *argument);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available

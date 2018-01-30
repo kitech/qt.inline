@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAbstractItemModel is pure virtual: true
+// QAbstractItemModel has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -143,121 +144,142 @@ extern "C" void set_callback_ZN18QAbstractItemModel21changePersistentIndexERK11Q
 
 class MyQAbstractItemModel : public QAbstractItemModel {
 public:
+  virtual ~MyQAbstractItemModel() {}
+// void QAbstractItemModel(class QObject *)
 MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void resetInternalData()
-// void resetInternalData()
-virtual void resetInternalData() {
-  if (callback_ZN18QAbstractItemModel17resetInternalDataEv != 0) {
-  // callback_ZN18QAbstractItemModel17resetInternalDataEv();
-}}
+  virtual void resetInternalData() {
+    if (callback_ZN18QAbstractItemModel17resetInternalDataEv != 0) {
+      // callback_ZN18QAbstractItemModel17resetInternalDataEv();
+    }
+    QAbstractItemModel::resetInternalData();
+  }
 // QModelIndex createIndex(int, int, void *)
-// QModelIndex createIndex(int, int, void *)
-virtual QModelIndex createIndex(int row, int column, void * data) {
-  if (callback_ZNK18QAbstractItemModel11createIndexEiiPv != 0) {
-  // callback_ZNK18QAbstractItemModel11createIndexEiiPv(row, column, data);
-}}
+  virtual QModelIndex createIndex(int row, int column, void * data) {
+    if (callback_ZNK18QAbstractItemModel11createIndexEiiPv != 0) {
+      // callback_ZNK18QAbstractItemModel11createIndexEiiPv(row, column, data);
+    }
+    return QAbstractItemModel::createIndex(row, column, data);
+  }
 // QModelIndex createIndex(int, int, quintptr)
-// QModelIndex createIndex(int, int, quintptr)
-virtual QModelIndex createIndex(int row, int column, quintptr id) {
-  if (callback_ZNK18QAbstractItemModel11createIndexEiiy != 0) {
-  // callback_ZNK18QAbstractItemModel11createIndexEiiy(row, column, id);
-}}
+  virtual QModelIndex createIndex(int row, int column, quintptr id) {
+    if (callback_ZNK18QAbstractItemModel11createIndexEiiy != 0) {
+      // callback_ZNK18QAbstractItemModel11createIndexEiiy(row, column, id);
+    }
+    return QAbstractItemModel::createIndex(row, column, id);
+  }
 // bool decodeData(int, int, const class QModelIndex &, class QDataStream &)
-// bool decodeData(int, int, const class QModelIndex &, class QDataStream &)
-virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
-  if (callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream != 0) {
-  // callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(row, column, parent, stream);
-}}
+  virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
+    if (callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream != 0) {
+      // callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(row, column, parent, stream);
+    }
+    return QAbstractItemModel::decodeData(row, column, parent, stream);
+  }
 // void beginInsertRows(const class QModelIndex &, int, int)
-// void beginInsertRows(const class QModelIndex &, int, int)
-virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
-  if (callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii != 0) {
-  // callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(parent, first, last);
-}}
+  virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
+    if (callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii != 0) {
+      // callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(parent, first, last);
+    }
+    QAbstractItemModel::beginInsertRows(parent, first, last);
+  }
 // void endInsertRows()
-// void endInsertRows()
-virtual void endInsertRows() {
-  if (callback_ZN18QAbstractItemModel13endInsertRowsEv != 0) {
-  // callback_ZN18QAbstractItemModel13endInsertRowsEv();
-}}
+  virtual void endInsertRows() {
+    if (callback_ZN18QAbstractItemModel13endInsertRowsEv != 0) {
+      // callback_ZN18QAbstractItemModel13endInsertRowsEv();
+    }
+    QAbstractItemModel::endInsertRows();
+  }
 // void beginRemoveRows(const class QModelIndex &, int, int)
-// void beginRemoveRows(const class QModelIndex &, int, int)
-virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
-  if (callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii != 0) {
-  // callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(parent, first, last);
-}}
+  virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
+    if (callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii != 0) {
+      // callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(parent, first, last);
+    }
+    QAbstractItemModel::beginRemoveRows(parent, first, last);
+  }
 // void endRemoveRows()
-// void endRemoveRows()
-virtual void endRemoveRows() {
-  if (callback_ZN18QAbstractItemModel13endRemoveRowsEv != 0) {
-  // callback_ZN18QAbstractItemModel13endRemoveRowsEv();
-}}
+  virtual void endRemoveRows() {
+    if (callback_ZN18QAbstractItemModel13endRemoveRowsEv != 0) {
+      // callback_ZN18QAbstractItemModel13endRemoveRowsEv();
+    }
+    QAbstractItemModel::endRemoveRows();
+  }
 // bool beginMoveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
-// bool beginMoveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
-virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
-  if (callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i != 0) {
-  // callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
-}}
+  virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
+    if (callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i != 0) {
+      // callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
+    }
+    return QAbstractItemModel::beginMoveRows(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
+  }
 // void endMoveRows()
-// void endMoveRows()
-virtual void endMoveRows() {
-  if (callback_ZN18QAbstractItemModel11endMoveRowsEv != 0) {
-  // callback_ZN18QAbstractItemModel11endMoveRowsEv();
-}}
+  virtual void endMoveRows() {
+    if (callback_ZN18QAbstractItemModel11endMoveRowsEv != 0) {
+      // callback_ZN18QAbstractItemModel11endMoveRowsEv();
+    }
+    QAbstractItemModel::endMoveRows();
+  }
 // void beginInsertColumns(const class QModelIndex &, int, int)
-// void beginInsertColumns(const class QModelIndex &, int, int)
-virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
-  if (callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii != 0) {
-  // callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(parent, first, last);
-}}
+  virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
+    if (callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii != 0) {
+      // callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(parent, first, last);
+    }
+    QAbstractItemModel::beginInsertColumns(parent, first, last);
+  }
 // void endInsertColumns()
-// void endInsertColumns()
-virtual void endInsertColumns() {
-  if (callback_ZN18QAbstractItemModel16endInsertColumnsEv != 0) {
-  // callback_ZN18QAbstractItemModel16endInsertColumnsEv();
-}}
+  virtual void endInsertColumns() {
+    if (callback_ZN18QAbstractItemModel16endInsertColumnsEv != 0) {
+      // callback_ZN18QAbstractItemModel16endInsertColumnsEv();
+    }
+    QAbstractItemModel::endInsertColumns();
+  }
 // void beginRemoveColumns(const class QModelIndex &, int, int)
-// void beginRemoveColumns(const class QModelIndex &, int, int)
-virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
-  if (callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii != 0) {
-  // callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(parent, first, last);
-}}
+  virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
+    if (callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii != 0) {
+      // callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(parent, first, last);
+    }
+    QAbstractItemModel::beginRemoveColumns(parent, first, last);
+  }
 // void endRemoveColumns()
-// void endRemoveColumns()
-virtual void endRemoveColumns() {
-  if (callback_ZN18QAbstractItemModel16endRemoveColumnsEv != 0) {
-  // callback_ZN18QAbstractItemModel16endRemoveColumnsEv();
-}}
+  virtual void endRemoveColumns() {
+    if (callback_ZN18QAbstractItemModel16endRemoveColumnsEv != 0) {
+      // callback_ZN18QAbstractItemModel16endRemoveColumnsEv();
+    }
+    QAbstractItemModel::endRemoveColumns();
+  }
 // bool beginMoveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
-// bool beginMoveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
-virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
-  if (callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i != 0) {
-  // callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
-}}
+  virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
+    if (callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i != 0) {
+      // callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
+    }
+    return QAbstractItemModel::beginMoveColumns(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
+  }
 // void endMoveColumns()
-// void endMoveColumns()
-virtual void endMoveColumns() {
-  if (callback_ZN18QAbstractItemModel14endMoveColumnsEv != 0) {
-  // callback_ZN18QAbstractItemModel14endMoveColumnsEv();
-}}
+  virtual void endMoveColumns() {
+    if (callback_ZN18QAbstractItemModel14endMoveColumnsEv != 0) {
+      // callback_ZN18QAbstractItemModel14endMoveColumnsEv();
+    }
+    QAbstractItemModel::endMoveColumns();
+  }
 // void beginResetModel()
-// void beginResetModel()
-virtual void beginResetModel() {
-  if (callback_ZN18QAbstractItemModel15beginResetModelEv != 0) {
-  // callback_ZN18QAbstractItemModel15beginResetModelEv();
-}}
+  virtual void beginResetModel() {
+    if (callback_ZN18QAbstractItemModel15beginResetModelEv != 0) {
+      // callback_ZN18QAbstractItemModel15beginResetModelEv();
+    }
+    QAbstractItemModel::beginResetModel();
+  }
 // void endResetModel()
-// void endResetModel()
-virtual void endResetModel() {
-  if (callback_ZN18QAbstractItemModel13endResetModelEv != 0) {
-  // callback_ZN18QAbstractItemModel13endResetModelEv();
-}}
+  virtual void endResetModel() {
+    if (callback_ZN18QAbstractItemModel13endResetModelEv != 0) {
+      // callback_ZN18QAbstractItemModel13endResetModelEv();
+    }
+    QAbstractItemModel::endResetModel();
+  }
 // void changePersistentIndex(const class QModelIndex &, const class QModelIndex &)
-// void changePersistentIndex(const class QModelIndex &, const class QModelIndex &)
-virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
-  if (callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_ != 0) {
-  // callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(from, to);
-}}
+  virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
+    if (callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_ != 0) {
+      // callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(from, to);
+    }
+    QAbstractItemModel::changePersistentIndex(from, to);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -272,14 +294,14 @@ void* C_ZNK18QAbstractItemModel10metaObjectEv(void *this_) {
 // [-2] void QAbstractItemModel(class QObject *)
 extern "C"
 void* C_ZN18QAbstractItemModelC1EP7QObject(QObject * parent) {
-  (MyQAbstractItemModel*)(0);
+  auto _nilp = (MyQAbstractItemModel*)(0);
   return 0; // new MyQAbstractItemModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:175
 // [-2] void ~QAbstractItemModel()
 extern "C"
-void C_ZN18QAbstractItemModelD1Ev(void *this_) {
+void C_ZN18QAbstractItemModelD2Ev(void *this_) {
   delete (QAbstractItemModel*)(this_);
 }
 // Public Visibility=Default Availability=Available

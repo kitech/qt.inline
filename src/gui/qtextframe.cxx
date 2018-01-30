@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextFrame is pure virtual: false
+// QTextFrame has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextFrame : public QTextFrame {
 public:
+  virtual ~MyQTextFrame() {}
+// void QTextFrame(class QTextDocument *)
 MyQTextFrame(QTextDocument * doc) : QTextFrame(doc) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QTextFrame10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qtextobject.h:123
 // [-2] void QTextFrame(class QTextDocument *)
 extern "C"
-void* C_ZN10QTextFrameC1EP13QTextDocument(QTextDocument * doc) {
-  (MyQTextFrame*)(0);
-  return  new MyQTextFrame(doc);
+void* C_ZN10QTextFrameC2EP13QTextDocument(QTextDocument * doc) {
+  return  new QTextFrame(doc);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:124
 // [-2] void ~QTextFrame()
 extern "C"
-void C_ZN10QTextFrameD1Ev(void *this_) {
+void C_ZN10QTextFrameD2Ev(void *this_) {
   delete (QTextFrame*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,14 +4,19 @@
 #include <QtWidgets>
 
 // QListWidgetItem is pure virtual: false
+// QListWidgetItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQListWidgetItem : public QListWidgetItem {
 public:
+  virtual ~MyQListWidgetItem() {}
+// void QListWidgetItem(class QListWidget *, int)
 MyQListWidgetItem(QListWidget * view, int type) : QListWidgetItem(view, type) {}
+// void QListWidgetItem(const class QString &, class QListWidget *, int)
 MyQListWidgetItem(const QString & text, QListWidget * view, int type) : QListWidgetItem(text, view, type) {}
+// void QListWidgetItem(const class QIcon &, const class QString &, class QListWidget *, int)
 MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * view, int type) : QListWidgetItem(icon, text, view, type) {}
 };
 
@@ -19,31 +24,28 @@ MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * view, 
 // /usr/include/qt/QtWidgets/qlistwidget.h:64
 // [-2] void QListWidgetItem(class QListWidget *, int)
 extern "C"
-void* C_ZN15QListWidgetItemC1EP11QListWidgeti(QListWidget * view, int type) {
-  (MyQListWidgetItem*)(0);
-  return  new MyQListWidgetItem(view, type);
+void* C_ZN15QListWidgetItemC2EP11QListWidgeti(QListWidget * view, int type) {
+  return  new QListWidgetItem(view, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:65
 // [-2] void QListWidgetItem(const class QString &, class QListWidget *, int)
 extern "C"
-void* C_ZN15QListWidgetItemC1ERK7QStringP11QListWidgeti(const QString & text, QListWidget * view, int type) {
-  (MyQListWidgetItem*)(0);
-  return  new MyQListWidgetItem(text, view, type);
+void* C_ZN15QListWidgetItemC2ERK7QStringP11QListWidgeti(const QString & text, QListWidget * view, int type) {
+  return  new QListWidgetItem(text, view, type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:66
 // [-2] void QListWidgetItem(const class QIcon &, const class QString &, class QListWidget *, int)
 extern "C"
-void* C_ZN15QListWidgetItemC1ERK5QIconRK7QStringP11QListWidgeti(const QIcon & icon, const QString & text, QListWidget * view, int type) {
-  (MyQListWidgetItem*)(0);
-  return  new MyQListWidgetItem(icon, text, view, type);
+void* C_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti(const QIcon & icon, const QString & text, QListWidget * view, int type) {
+  return  new QListWidgetItem(icon, text, view, type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:69
 // [-2] void ~QListWidgetItem()
 extern "C"
-void C_ZN15QListWidgetItemD1Ev(void *this_) {
+void C_ZN15QListWidgetItemD2Ev(void *this_) {
   delete (QListWidgetItem*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

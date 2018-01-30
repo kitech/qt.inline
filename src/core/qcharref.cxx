@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QCharRef is pure virtual: false
+// QCharRef has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCharRef : public QCharRef {
 public:
+  virtual ~MyQCharRef() {}
 };
 
 // Public inline Visibility=Default Availability=Available

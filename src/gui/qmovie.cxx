@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QMovie is pure virtual: false
+// QMovie has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMovie : public QMovie {
 public:
+  virtual ~MyQMovie() {}
+// void QMovie(class QObject *)
 MyQMovie(QObject * parent) : QMovie(parent) {}
+// void QMovie(class QIODevice *, const class QByteArray &, class QObject *)
 MyQMovie(QIODevice * device, const QByteArray & format, QObject * parent) : QMovie(device, format, parent) {}
+// void QMovie(const class QString &, const class QByteArray &, class QObject *)
 MyQMovie(const QString & fileName, const QByteArray & format, QObject * parent) : QMovie(fileName, format, parent) {}
 };
 
@@ -26,31 +31,28 @@ void* C_ZNK6QMovie10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qmovie.h:82
 // [-2] void QMovie(class QObject *)
 extern "C"
-void* C_ZN6QMovieC1EP7QObject(QObject * parent) {
-  (MyQMovie*)(0);
-  return  new MyQMovie(parent);
+void* C_ZN6QMovieC2EP7QObject(QObject * parent) {
+  return  new QMovie(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:83
 // [-2] void QMovie(class QIODevice *, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN6QMovieC1EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, const QByteArray & format, QObject * parent) {
-  (MyQMovie*)(0);
-  return  new MyQMovie(device, format, parent);
+void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, const QByteArray & format, QObject * parent) {
+  return  new QMovie(device, format, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:84
 // [-2] void QMovie(const class QString &, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN6QMovieC1ERK7QStringRK10QByteArrayP7QObject(const QString & fileName, const QByteArray & format, QObject * parent) {
-  (MyQMovie*)(0);
-  return  new MyQMovie(fileName, format, parent);
+void* C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(const QString & fileName, const QByteArray & format, QObject * parent) {
+  return  new QMovie(fileName, format, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:85
 // [-2] void ~QMovie()
 extern "C"
-void C_ZN6QMovieD1Ev(void *this_) {
+void C_ZN6QMovieD2Ev(void *this_) {
   delete (QMovie*)(this_);
 }
 // Public Visibility=Default Availability=Available

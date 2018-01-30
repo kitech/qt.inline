@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QIdentityProxyModel is pure virtual: false
+// QIdentityProxyModel has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQIdentityProxyModel : public QIdentityProxyModel {
 public:
+  virtual ~MyQIdentityProxyModel() {}
+// void QIdentityProxyModel(class QObject *)
 MyQIdentityProxyModel(QObject * parent) : QIdentityProxyModel(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK19QIdentityProxyModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qidentityproxymodel.h:57
 // [-2] void QIdentityProxyModel(class QObject *)
 extern "C"
-void* C_ZN19QIdentityProxyModelC1EP7QObject(QObject * parent) {
-  (MyQIdentityProxyModel*)(0);
-  return  new MyQIdentityProxyModel(parent);
+void* C_ZN19QIdentityProxyModelC2EP7QObject(QObject * parent) {
+  return  new QIdentityProxyModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:58
 // [-2] void ~QIdentityProxyModel()
 extern "C"
-void C_ZN19QIdentityProxyModelD1Ev(void *this_) {
+void C_ZN19QIdentityProxyModelD2Ev(void *this_) {
   delete (QIdentityProxyModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

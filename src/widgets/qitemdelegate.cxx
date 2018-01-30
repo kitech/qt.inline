@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QItemDelegate is pure virtual: false
+// QItemDelegate has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -108,91 +109,107 @@ extern "C" void set_callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRec
 
 class MyQItemDelegate : public QItemDelegate {
 public:
+  virtual ~MyQItemDelegate() {}
+// void QItemDelegate(class QObject *)
 MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
 // void drawDisplay(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, const class QString &)
-// void drawDisplay(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, const class QString &)
-virtual void drawDisplay(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QString & text) {
-  if (callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString != 0) {
-  // callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString(painter, option, rect, text);
-}}
+  virtual void drawDisplay(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QString & text) {
+    if (callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString != 0) {
+      // callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString(painter, option, rect, text);
+    }
+    QItemDelegate::drawDisplay(painter, option, rect, text);
+  }
 // void drawDecoration(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, const class QPixmap &)
-// void drawDecoration(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, const class QPixmap &)
-virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) {
-  if (callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap != 0) {
-  // callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap(painter, option, rect, pixmap);
-}}
+  virtual void drawDecoration(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, const QPixmap & pixmap) {
+    if (callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap != 0) {
+      // callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap(painter, option, rect, pixmap);
+    }
+    QItemDelegate::drawDecoration(painter, option, rect, pixmap);
+  }
 // void drawFocus(class QPainter *, const class QStyleOptionViewItem &, const class QRect &)
-// void drawFocus(class QPainter *, const class QStyleOptionViewItem &, const class QRect &)
-virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) {
-  if (callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect != 0) {
-  // callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect(painter, option, rect);
-}}
+  virtual void drawFocus(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect) {
+    if (callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect != 0) {
+      // callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect(painter, option, rect);
+    }
+    QItemDelegate::drawFocus(painter, option, rect);
+  }
 // void drawCheck(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, Qt::CheckState)
-// void drawCheck(class QPainter *, const class QStyleOptionViewItem &, const class QRect &, Qt::CheckState)
-virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) {
-  if (callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE != 0) {
-  // callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE(painter, option, rect, state);
-}}
+  virtual void drawCheck(QPainter * painter, const QStyleOptionViewItem & option, const QRect & rect, Qt::CheckState state) {
+    if (callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE != 0) {
+      // callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE(painter, option, rect, state);
+    }
+    QItemDelegate::drawCheck(painter, option, rect, state);
+  }
 // void drawBackground(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
-// void drawBackground(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
-virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) {
-  if (callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex != 0) {
-  // callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(painter, option, index);
-}}
+  virtual void drawBackground(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) {
+    if (callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex != 0) {
+      // callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(painter, option, index);
+    }
+    QItemDelegate::drawBackground(painter, option, index);
+  }
 // void doLayout(const class QStyleOptionViewItem &, class QRect *, class QRect *, class QRect *, _Bool)
-// void doLayout(const class QStyleOptionViewItem &, class QRect *, class QRect *, class QRect *, _Bool)
-virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) {
-  if (callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b != 0) {
-  // callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b(option, checkRect, iconRect, textRect, hint);
-}}
+  virtual void doLayout(const QStyleOptionViewItem & option, QRect * checkRect, QRect * iconRect, QRect * textRect, bool hint) {
+    if (callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b != 0) {
+      // callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b(option, checkRect, iconRect, textRect, hint);
+    }
+    QItemDelegate::doLayout(option, checkRect, iconRect, textRect, hint);
+  }
 // QRect rect(const class QStyleOptionViewItem &, const class QModelIndex &, int)
-// QRect rect(const class QStyleOptionViewItem &, const class QModelIndex &, int)
-virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) {
-  if (callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi != 0) {
-  // callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi(option, index, role);
-}}
+  virtual QRect rect(const QStyleOptionViewItem & option, const QModelIndex & index, int role) {
+    if (callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi != 0) {
+      // callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi(option, index, role);
+    }
+    return QItemDelegate::rect(option, index, role);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * object, QEvent * event) {
-  if (callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent(object, event);
-}}
+  virtual bool eventFilter(QObject * object, QEvent * event) {
+    if (callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent(object, event);
+    }
+    return QItemDelegate::eventFilter(object, event);
+  }
 // bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-// bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
-  if (callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex != 0) {
-  // callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(event, model, option, index);
-}}
+  virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
+    if (callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex != 0) {
+      // callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(event, model, option, index);
+    }
+    return QItemDelegate::editorEvent(event, model, option, index);
+  }
 // QStyleOptionViewItem setOptions(const class QModelIndex &, const class QStyleOptionViewItem &)
-// QStyleOptionViewItem setOptions(const class QModelIndex &, const class QStyleOptionViewItem &)
-virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) {
-  if (callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem != 0) {
-  // callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem(index, option);
-}}
+  virtual QStyleOptionViewItem setOptions(const QModelIndex & index, const QStyleOptionViewItem & option) {
+    if (callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem != 0) {
+      // callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem(index, option);
+    }
+    return QItemDelegate::setOptions(index, option);
+  }
 // QPixmap decoration(const class QStyleOptionViewItem &, const class QVariant &)
-// QPixmap decoration(const class QStyleOptionViewItem &, const class QVariant &)
-virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) {
-  if (callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant != 0) {
-  // callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant(option, variant);
-}}
+  virtual QPixmap decoration(const QStyleOptionViewItem & option, const QVariant & variant) {
+    if (callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant != 0) {
+      // callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant(option, variant);
+    }
+    return QItemDelegate::decoration(option, variant);
+  }
 // QPixmap * selected(const class QPixmap &, const class QPalette &, _Bool)
-// QPixmap * selected(const class QPixmap &, const class QPalette &, _Bool)
-virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) {
-  if (callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb != 0) {
-  // callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb(pixmap, palette, enabled);
-}}
+  virtual QPixmap * selected(const QPixmap & pixmap, const QPalette & palette, bool enabled) {
+    if (callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb != 0) {
+      // callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb(pixmap, palette, enabled);
+    }
+    return QItemDelegate::selected(pixmap, palette, enabled);
+  }
 // QRect doCheck(const class QStyleOptionViewItem &, const class QRect &, const class QVariant &)
-// QRect doCheck(const class QStyleOptionViewItem &, const class QRect &, const class QVariant &)
-virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) {
-  if (callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant != 0) {
-  // callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant(option, bounding, variant);
-}}
+  virtual QRect doCheck(const QStyleOptionViewItem & option, const QRect & bounding, const QVariant & variant) {
+    if (callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant != 0) {
+      // callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant(option, bounding, variant);
+    }
+    return QItemDelegate::doCheck(option, bounding, variant);
+  }
 // QRect textRectangle(class QPainter *, const class QRect &, const class QFont &, const class QString &)
-// QRect textRectangle(class QPainter *, const class QRect &, const class QFont &, const class QString &)
-virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) {
-  if (callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString != 0) {
-  // callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString(painter, rect, font, text);
-}}
+  virtual QRect textRectangle(QPainter * painter, const QRect & rect, const QFont & font, const QString & text) {
+    if (callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString != 0) {
+      // callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString(painter, rect, font, text);
+    }
+    return QItemDelegate::textRectangle(painter, rect, font, text);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -206,15 +223,15 @@ void* C_ZNK13QItemDelegate10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qitemdelegate.h:62
 // [-2] void QItemDelegate(class QObject *)
 extern "C"
-void* C_ZN13QItemDelegateC1EP7QObject(QObject * parent) {
-  (MyQItemDelegate*)(0);
+void* C_ZN13QItemDelegateC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQItemDelegate*)(0);
   return  new MyQItemDelegate(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemdelegate.h:63
 // [-2] void ~QItemDelegate()
 extern "C"
-void C_ZN13QItemDelegateD1Ev(void *this_) {
+void C_ZN13QItemDelegateD2Ev(void *this_) {
   delete (QItemDelegate*)(this_);
 }
 // Public Visibility=Default Availability=Available

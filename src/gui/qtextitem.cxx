@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QTextItem is pure virtual: false
+// QTextItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextItem : public QTextItem {
 public:
+  virtual ~MyQTextItem() {}
 };
 
 // Public Visibility=Default Availability=Available

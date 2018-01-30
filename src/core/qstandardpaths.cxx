@@ -4,13 +4,10 @@
 #include <QtCore>
 
 // QStandardPaths is pure virtual: false
+// QStandardPaths has virtual projected: false
 //  header block end
 
 //  main block begin
-
-class MyQStandardPaths : public QStandardPaths {
-public:
-};
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstandardpaths.h:81

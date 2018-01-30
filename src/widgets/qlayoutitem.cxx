@@ -4,19 +4,21 @@
 #include <QtWidgets>
 
 // QLayoutItem is pure virtual: true
+// QLayoutItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLayoutItem : public QLayoutItem {
 public:
+  virtual ~MyQLayoutItem() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:64
 // [-2] void ~QLayoutItem()
 extern "C"
-void C_ZN11QLayoutItemD1Ev(void *this_) {
+void C_ZN11QLayoutItemD2Ev(void *this_) {
   delete (QLayoutItem*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

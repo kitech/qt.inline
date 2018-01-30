@@ -4,12 +4,14 @@
 #include <QtWidgets>
 
 // QStyleFactory is pure virtual: false
+// QStyleFactory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStyleFactory : public QStyleFactory {
 public:
+  virtual ~MyQStyleFactory() {}
 };
 
 // Public static Visibility=Default Availability=Available

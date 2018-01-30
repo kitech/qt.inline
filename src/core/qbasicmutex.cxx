@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QBasicMutex is pure virtual: false
+// QBasicMutex has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQBasicMutex : public QBasicMutex {
 public:
+  virtual ~MyQBasicMutex() {}
+// void QBasicMutex()
 MyQBasicMutex() : QBasicMutex() {}
 };
 
@@ -17,9 +20,8 @@ MyQBasicMutex() : QBasicMutex() {}
 // /usr/include/qt/QtCore/qmutex.h:71
 // [-2] void QBasicMutex()
 extern "C"
-void* C_ZN11QBasicMutexC1Ev() {
-  (MyQBasicMutex*)(0);
-  return  new MyQBasicMutex();
+void* C_ZN11QBasicMutexC2Ev() {
+  return  new QBasicMutex();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:77

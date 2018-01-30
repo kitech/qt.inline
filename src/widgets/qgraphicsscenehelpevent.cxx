@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneHelpEvent is pure virtual: false
+// QGraphicsSceneHelpEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneHelpEvent : public QGraphicsSceneHelpEvent {
 public:
+  virtual ~MyQGraphicsSceneHelpEvent() {}
+// void QGraphicsSceneHelpEvent(enum QEvent::Type)
 MyQGraphicsSceneHelpEvent(QEvent::Type type) : QGraphicsSceneHelpEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneHelpEvent(QEvent::Type type) : QGraphicsSceneHelpEvent(type) {}
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:234
 // [-2] void QGraphicsSceneHelpEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN23QGraphicsSceneHelpEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneHelpEvent*)(0);
-  return  new MyQGraphicsSceneHelpEvent(type);
+void* C_ZN23QGraphicsSceneHelpEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneHelpEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:235
 // [-2] void ~QGraphicsSceneHelpEvent()
 extern "C"
-void C_ZN23QGraphicsSceneHelpEventD1Ev(void *this_) {
+void C_ZN23QGraphicsSceneHelpEventD2Ev(void *this_) {
   delete (QGraphicsSceneHelpEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

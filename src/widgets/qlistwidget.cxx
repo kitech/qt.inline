@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QListWidget is pure virtual: false
+// QListWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(voi
 
 class MyQListWidget : public QListWidget {
 public:
+  virtual ~MyQListWidget() {}
+// void QListWidget(class QWidget *)
 MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QListWidget5eventEP6QEvent != 0) {
-  // callback_ZN11QListWidget5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QListWidget5eventEP6QEvent != 0) {
+      // callback_ZN11QListWidget5eventEP6QEvent(e);
+    }
+    return QListWidget::event(e);
+  }
 // bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
-// bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
-virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
-  if (callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE != 0) {
-  // callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(index, data, action);
-}}
+  virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
+    if (callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE != 0) {
+      // callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(index, data, action);
+    }
+    return QListWidget::dropMimeData(index, data, action);
+  }
 // Qt::DropActions supportedDropActions()
-// Qt::DropActions supportedDropActions()
-virtual Qt::DropActions supportedDropActions() {
-  if (callback_ZNK11QListWidget20supportedDropActionsEv != 0) {
-  // callback_ZNK11QListWidget20supportedDropActionsEv();
-}}
+  virtual Qt::DropActions supportedDropActions() {
+    if (callback_ZNK11QListWidget20supportedDropActionsEv != 0) {
+      // callback_ZNK11QListWidget20supportedDropActionsEv();
+    }
+    return QListWidget::supportedDropActions();
+  }
 // QModelIndex indexFromItem(class QListWidgetItem *)
-// QModelIndex indexFromItem(class QListWidgetItem *)
-virtual QModelIndex indexFromItem(QListWidgetItem * item) {
-  if (callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem != 0) {
-  // callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(item);
-}}
+  virtual QModelIndex indexFromItem(QListWidgetItem * item) {
+    if (callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem != 0) {
+      // callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(item);
+    }
+    return QListWidget::indexFromItem(item);
+  }
 // QListWidgetItem * itemFromIndex(const class QModelIndex &)
-// QListWidgetItem * itemFromIndex(const class QModelIndex &)
-virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
-  if (callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex != 0) {
-  // callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(index);
-}}
+  virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
+    if (callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex != 0) {
+      // callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(index);
+    }
+    return QListWidget::itemFromIndex(index);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK11QListWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlistwidget.h:207
 // [-2] void QListWidget(class QWidget *)
 extern "C"
-void* C_ZN11QListWidgetC1EP7QWidget(QWidget * parent) {
-  (MyQListWidget*)(0);
+void* C_ZN11QListWidgetC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQListWidget*)(0);
   return  new MyQListWidget(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:208
 // [-2] void ~QListWidget()
 extern "C"
-void C_ZN11QListWidgetD1Ev(void *this_) {
+void C_ZN11QListWidgetD2Ev(void *this_) {
   delete (QListWidget*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

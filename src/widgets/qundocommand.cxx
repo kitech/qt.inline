@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QUndoCommand is pure virtual: false
+// QUndoCommand has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUndoCommand : public QUndoCommand {
 public:
+  virtual ~MyQUndoCommand() {}
+// void QUndoCommand(class QUndoCommand *)
 MyQUndoCommand(QUndoCommand * parent) : QUndoCommand(parent) {}
+// void QUndoCommand(const class QString &, class QUndoCommand *)
 MyQUndoCommand(const QString & text, QUndoCommand * parent) : QUndoCommand(text, parent) {}
 };
 
@@ -18,23 +22,21 @@ MyQUndoCommand(const QString & text, QUndoCommand * parent) : QUndoCommand(text,
 // /usr/include/qt/QtWidgets/qundostack.h:60
 // [-2] void QUndoCommand(class QUndoCommand *)
 extern "C"
-void* C_ZN12QUndoCommandC1EPS_(QUndoCommand * parent) {
-  (MyQUndoCommand*)(0);
-  return  new MyQUndoCommand(parent);
+void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
+  return  new QUndoCommand(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:61
 // [-2] void QUndoCommand(const class QString &, class QUndoCommand *)
 extern "C"
-void* C_ZN12QUndoCommandC1ERK7QStringPS_(const QString & text, QUndoCommand * parent) {
-  (MyQUndoCommand*)(0);
-  return  new MyQUndoCommand(text, parent);
+void* C_ZN12QUndoCommandC2ERK7QStringPS_(const QString & text, QUndoCommand * parent) {
+  return  new QUndoCommand(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:62
 // [-2] void ~QUndoCommand()
 extern "C"
-void C_ZN12QUndoCommandD1Ev(void *this_) {
+void C_ZN12QUndoCommandD2Ev(void *this_) {
   delete (QUndoCommand*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QScrollPrepareEvent is pure virtual: false
+// QScrollPrepareEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScrollPrepareEvent : public QScrollPrepareEvent {
 public:
+  virtual ~MyQScrollPrepareEvent() {}
+// void QScrollPrepareEvent(const class QPointF &)
 MyQScrollPrepareEvent(const QPointF & startPos) : QScrollPrepareEvent(startPos) {}
 };
 
@@ -17,15 +20,14 @@ MyQScrollPrepareEvent(const QPointF & startPos) : QScrollPrepareEvent(startPos) 
 // /usr/include/qt/QtGui/qevent.h:990
 // [-2] void QScrollPrepareEvent(const class QPointF &)
 extern "C"
-void* C_ZN19QScrollPrepareEventC1ERK7QPointF(const QPointF & startPos) {
-  (MyQScrollPrepareEvent*)(0);
-  return  new MyQScrollPrepareEvent(startPos);
+void* C_ZN19QScrollPrepareEventC2ERK7QPointF(const QPointF & startPos) {
+  return  new QScrollPrepareEvent(startPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:991
 // [-2] void ~QScrollPrepareEvent()
 extern "C"
-void C_ZN19QScrollPrepareEventD1Ev(void *this_) {
+void C_ZN19QScrollPrepareEventD2Ev(void *this_) {
   delete (QScrollPrepareEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

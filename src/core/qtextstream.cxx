@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QTextStream is pure virtual: false
+// QTextStream has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextStream : public QTextStream {
 public:
+  virtual ~MyQTextStream() {}
+// void QTextStream()
 MyQTextStream() : QTextStream() {}
+// void QTextStream(class QIODevice *)
 MyQTextStream(QIODevice * device) : QTextStream(device) {}
 };
 
@@ -18,23 +22,21 @@ MyQTextStream(QIODevice * device) : QTextStream(device) {}
 // /usr/include/qt/QtCore/qtextstream.h:93
 // [-2] void QTextStream()
 extern "C"
-void* C_ZN11QTextStreamC1Ev() {
-  (MyQTextStream*)(0);
-  return  new MyQTextStream();
+void* C_ZN11QTextStreamC2Ev() {
+  return  new QTextStream();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:94
 // [-2] void QTextStream(class QIODevice *)
 extern "C"
-void* C_ZN11QTextStreamC1EP9QIODevice(QIODevice * device) {
-  (MyQTextStream*)(0);
-  return  new MyQTextStream(device);
+void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
+  return  new QTextStream(device);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:99
 // [-2] void ~QTextStream()
 extern "C"
-void C_ZN11QTextStreamD1Ev(void *this_) {
+void C_ZN11QTextStreamD2Ev(void *this_) {
   delete (QTextStream*)(this_);
 }
 // Public Visibility=Default Availability=Available
@@ -234,8 +236,8 @@ QTextStream::FieldAlignment C_ZNK11QTextStream14fieldAlignmentEv(void *this_) {
 // /usr/include/qt/QtCore/qtextstream.h:140
 // [-2] void setPadChar(class QChar)
 extern "C"
-void C_ZN11QTextStream10setPadCharE5QChar(void *this_, QChar ch) {
-  ((QTextStream*)this_)->setPadChar(ch);
+void C_ZN11QTextStream10setPadCharE5QChar(void *this_, QChar* ch) {
+  ((QTextStream*)this_)->setPadChar(*ch);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:141

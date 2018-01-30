@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionButton is pure virtual: false
+// QStyleOptionButton has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN18QStyleOptionButtonC1Ei(void*cbfn)
 
 class MyQStyleOptionButton : public QStyleOptionButton {
 public:
+  virtual ~MyQStyleOptionButton() {}
+// void QStyleOptionButton()
 MyQStyleOptionButton() : QStyleOptionButton() {}
+// void QStyleOptionButton(int)
 MyQStyleOptionButton(int version) : QStyleOptionButton(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionButton(int version) : QStyleOptionButton(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:248
 // [-2] void QStyleOptionButton()
 extern "C"
-void* C_ZN18QStyleOptionButtonC1Ev() {
-  (MyQStyleOptionButton*)(0);
-  return  new MyQStyleOptionButton();
+void* C_ZN18QStyleOptionButtonC2Ev() {
+  return  new QStyleOptionButton();
 }
 //  main block end

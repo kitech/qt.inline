@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QArrayData is pure virtual: false
+// QArrayData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQArrayData : public QArrayData {
 public:
+  virtual ~MyQArrayData() {}
 };
 
 // Public inline Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAbstractTransition is pure virtual: true
+// QAbstractTransition has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZN19QAbstractTransition5eventEP6QEvent(void*cbfn)
 
 class MyQAbstractTransition : public QAbstractTransition {
 public:
+  virtual ~MyQAbstractTransition() {}
+// void QAbstractTransition(class QState *)
 MyQAbstractTransition(QState * sourceState) : QAbstractTransition(sourceState) {}
 // bool eventTest(class QEvent *)
-// bool eventTest(class QEvent *)
-virtual bool eventTest(QEvent * event) {
-  if (callback_ZN19QAbstractTransition9eventTestEP6QEvent != 0) {
-  // callback_ZN19QAbstractTransition9eventTestEP6QEvent(event);
-}}
+  virtual bool eventTest(QEvent * event) {
+    if (callback_ZN19QAbstractTransition9eventTestEP6QEvent != 0) {
+      // callback_ZN19QAbstractTransition9eventTestEP6QEvent(event);
+    }
+    return QAbstractTransition::eventTest(event);
+  }
 // void onTransition(class QEvent *)
-// void onTransition(class QEvent *)
-virtual void onTransition(QEvent * event) {
-  if (callback_ZN19QAbstractTransition12onTransitionEP6QEvent != 0) {
-  // callback_ZN19QAbstractTransition12onTransitionEP6QEvent(event);
-}}
+  virtual void onTransition(QEvent * event) {
+    if (callback_ZN19QAbstractTransition12onTransitionEP6QEvent != 0) {
+      // callback_ZN19QAbstractTransition12onTransitionEP6QEvent(event);
+    }
+    QAbstractTransition::onTransition(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN19QAbstractTransition5eventEP6QEvent != 0) {
-  // callback_ZN19QAbstractTransition5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN19QAbstractTransition5eventEP6QEvent != 0) {
+      // callback_ZN19QAbstractTransition5eventEP6QEvent(e);
+    }
+    return QAbstractTransition::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,14 +70,14 @@ void* C_ZNK19QAbstractTransition10metaObjectEv(void *this_) {
 // [-2] void QAbstractTransition(class QState *)
 extern "C"
 void* C_ZN19QAbstractTransitionC1EP6QState(QState * sourceState) {
-  (MyQAbstractTransition*)(0);
+  auto _nilp = (MyQAbstractTransition*)(0);
   return 0; // new MyQAbstractTransition(sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracttransition.h:76
 // [-2] void ~QAbstractTransition()
 extern "C"
-void C_ZN19QAbstractTransitionD1Ev(void *this_) {
+void C_ZN19QAbstractTransitionD2Ev(void *this_) {
   delete (QAbstractTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available

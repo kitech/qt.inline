@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QRegularExpressionMatch is pure virtual: false
+// QRegularExpressionMatch has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegularExpressionMatch : public QRegularExpressionMatch {
 public:
+  virtual ~MyQRegularExpressionMatch() {}
+// void QRegularExpressionMatch()
 MyQRegularExpressionMatch() : QRegularExpressionMatch() {}
 };
 
@@ -17,15 +20,14 @@ MyQRegularExpressionMatch() : QRegularExpressionMatch() {}
 // /usr/include/qt/QtCore/qregularexpression.h:178
 // [-2] void QRegularExpressionMatch()
 extern "C"
-void* C_ZN23QRegularExpressionMatchC1Ev() {
-  (MyQRegularExpressionMatch*)(0);
-  return  new MyQRegularExpressionMatch();
+void* C_ZN23QRegularExpressionMatchC2Ev() {
+  return  new QRegularExpressionMatch();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:179
 // [-2] void ~QRegularExpressionMatch()
 extern "C"
-void C_ZN23QRegularExpressionMatchD1Ev(void *this_) {
+void C_ZN23QRegularExpressionMatchD2Ev(void *this_) {
   delete (QRegularExpressionMatch*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
@@ -129,24 +131,24 @@ return new QStringRef(rv);
 // /usr/include/qt/QtCore/qregularexpression.h:209
 // [8] QString captured(class QStringView)
 extern "C"
-void* C_ZNK23QRegularExpressionMatch8capturedE11QStringView(void *this_, QStringView name) {
-  auto rv = ((QRegularExpressionMatch*)this_)->captured(name);
+void* C_ZNK23QRegularExpressionMatch8capturedE11QStringView(void *this_, QStringView* name) {
+  auto rv = ((QRegularExpressionMatch*)this_)->captured(*name);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:210
 // [16] QStringRef capturedRef(class QStringView)
 extern "C"
-void* C_ZNK23QRegularExpressionMatch11capturedRefE11QStringView(void *this_, QStringView name) {
-  auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(name);
+void* C_ZNK23QRegularExpressionMatch11capturedRefE11QStringView(void *this_, QStringView* name) {
+  auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(*name);
 return new QStringRef(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:211
 // [16] QStringView capturedView(class QStringView)
 extern "C"
-void* C_ZNK23QRegularExpressionMatch12capturedViewE11QStringView(void *this_, QStringView name) {
-  auto rv = ((QRegularExpressionMatch*)this_)->capturedView(name);
+void* C_ZNK23QRegularExpressionMatch12capturedViewE11QStringView(void *this_, QStringView* name) {
+  auto rv = ((QRegularExpressionMatch*)this_)->capturedView(*name);
 return new QStringView(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -195,21 +197,21 @@ int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, const QS
 // /usr/include/qt/QtCore/qregularexpression.h:225
 // [4] int capturedStart(class QStringView)
 extern "C"
-int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QStringView name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedStart(name);
+int C_ZNK23QRegularExpressionMatch13capturedStartE11QStringView(void *this_, QStringView* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedStart(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:226
 // [4] int capturedLength(class QStringView)
 extern "C"
-int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QStringView name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedLength(name);
+int C_ZNK23QRegularExpressionMatch14capturedLengthE11QStringView(void *this_, QStringView* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedLength(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:227
 // [4] int capturedEnd(class QStringView)
 extern "C"
-int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStringView name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedEnd(name);
+int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStringView* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedEnd(*name);
 }
 //  main block end

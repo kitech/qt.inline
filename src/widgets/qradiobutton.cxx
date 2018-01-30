@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QRadioButton is pure virtual: false
+// QRadioButton has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,38 +46,46 @@ extern "C" void set_callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionB
 
 class MyQRadioButton : public QRadioButton {
 public:
+  virtual ~MyQRadioButton() {}
+// void QRadioButton(class QWidget *)
 MyQRadioButton(QWidget * parent) : QRadioButton(parent) {}
+// void QRadioButton(const class QString &, class QWidget *)
 MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN12QRadioButton5eventEP6QEvent != 0) {
-  // callback_ZN12QRadioButton5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN12QRadioButton5eventEP6QEvent != 0) {
+      // callback_ZN12QRadioButton5eventEP6QEvent(e);
+    }
+    return QRadioButton::event(e);
+  }
 // bool hitButton(const class QPoint &)
-// bool hitButton(const class QPoint &)
-virtual bool hitButton(const QPoint & arg0) {
-  if (callback_ZNK12QRadioButton9hitButtonERK6QPoint != 0) {
-  // callback_ZNK12QRadioButton9hitButtonERK6QPoint(arg0);
-}}
+  virtual bool hitButton(const QPoint & arg0) {
+    if (callback_ZNK12QRadioButton9hitButtonERK6QPoint != 0) {
+      // callback_ZNK12QRadioButton9hitButtonERK6QPoint(arg0);
+    }
+    return QRadioButton::hitButton(arg0);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN12QRadioButton10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN12QRadioButton10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN12QRadioButton10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN12QRadioButton10paintEventEP11QPaintEvent(arg0);
+    }
+    QRadioButton::paintEvent(arg0);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * arg0) {
-  if (callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(arg0);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+    if (callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(arg0);
+    }
+    QRadioButton::mouseMoveEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionButton *)
-// void initStyleOption(class QStyleOptionButton *)
-virtual void initStyleOption(QStyleOptionButton * button) {
-  if (callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton != 0) {
-  // callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(button);
-}}
+  virtual void initStyleOption(QStyleOptionButton * button) {
+    if (callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton != 0) {
+      // callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(button);
+    }
+    QRadioButton::initStyleOption(button);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -90,23 +99,23 @@ void* C_ZNK12QRadioButton10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qradiobutton.h:59
 // [-2] void QRadioButton(class QWidget *)
 extern "C"
-void* C_ZN12QRadioButtonC1EP7QWidget(QWidget * parent) {
-  (MyQRadioButton*)(0);
+void* C_ZN12QRadioButtonC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQRadioButton*)(0);
   return  new MyQRadioButton(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:60
 // [-2] void QRadioButton(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN12QRadioButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
-  (MyQRadioButton*)(0);
+void* C_ZN12QRadioButtonC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  auto _nilp = (MyQRadioButton*)(0);
   return  new MyQRadioButton(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:61
 // [-2] void ~QRadioButton()
 extern "C"
-void C_ZN12QRadioButtonD1Ev(void *this_) {
+void C_ZN12QRadioButtonD2Ev(void *this_) {
   delete (QRadioButton*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

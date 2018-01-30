@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAbstractState is pure virtual: true
+// QAbstractState has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,25 +39,30 @@ extern "C" void set_callback_ZN14QAbstractState5eventEP6QEvent(void*cbfn)
 
 class MyQAbstractState : public QAbstractState {
 public:
+  virtual ~MyQAbstractState() {}
+// void QAbstractState(class QState *)
 MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // void onEntry(class QEvent *)
-// void onEntry(class QEvent *)
-virtual void onEntry(QEvent * event) {
-  if (callback_ZN14QAbstractState7onEntryEP6QEvent != 0) {
-  // callback_ZN14QAbstractState7onEntryEP6QEvent(event);
-}}
+  virtual void onEntry(QEvent * event) {
+    if (callback_ZN14QAbstractState7onEntryEP6QEvent != 0) {
+      // callback_ZN14QAbstractState7onEntryEP6QEvent(event);
+    }
+    QAbstractState::onEntry(event);
+  }
 // void onExit(class QEvent *)
-// void onExit(class QEvent *)
-virtual void onExit(QEvent * event) {
-  if (callback_ZN14QAbstractState6onExitEP6QEvent != 0) {
-  // callback_ZN14QAbstractState6onExitEP6QEvent(event);
-}}
+  virtual void onExit(QEvent * event) {
+    if (callback_ZN14QAbstractState6onExitEP6QEvent != 0) {
+      // callback_ZN14QAbstractState6onExitEP6QEvent(event);
+    }
+    QAbstractState::onExit(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN14QAbstractState5eventEP6QEvent != 0) {
-  // callback_ZN14QAbstractState5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN14QAbstractState5eventEP6QEvent != 0) {
+      // callback_ZN14QAbstractState5eventEP6QEvent(e);
+    }
+    return QAbstractState::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -70,7 +76,7 @@ void* C_ZNK14QAbstractState10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractstate.h:58
 // [-2] void ~QAbstractState()
 extern "C"
-void C_ZN14QAbstractStateD1Ev(void *this_) {
+void C_ZN14QAbstractStateD2Ev(void *this_) {
   delete (QAbstractState*)(this_);
 }
 // Public Visibility=Default Availability=Available

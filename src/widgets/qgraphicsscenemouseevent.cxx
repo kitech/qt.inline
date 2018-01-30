@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneMouseEvent is pure virtual: false
+// QGraphicsSceneMouseEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneMouseEvent : public QGraphicsSceneMouseEvent {
 public:
+  virtual ~MyQGraphicsSceneMouseEvent() {}
+// void QGraphicsSceneMouseEvent(enum QEvent::Type)
 MyQGraphicsSceneMouseEvent(QEvent::Type type) : QGraphicsSceneMouseEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneMouseEvent(QEvent::Type type) : QGraphicsSceneMouseEvent(type) {
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:85
 // [-2] void QGraphicsSceneMouseEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN24QGraphicsSceneMouseEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneMouseEvent*)(0);
-  return  new MyQGraphicsSceneMouseEvent(type);
+void* C_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneMouseEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:86
 // [-2] void ~QGraphicsSceneMouseEvent()
 extern "C"
-void C_ZN24QGraphicsSceneMouseEventD1Ev(void *this_) {
+void C_ZN24QGraphicsSceneMouseEventD2Ev(void *this_) {
   delete (QGraphicsSceneMouseEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

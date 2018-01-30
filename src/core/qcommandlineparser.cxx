@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QCommandLineParser is pure virtual: false
+// QCommandLineParser has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCommandLineParser : public QCommandLineParser {
 public:
+  virtual ~MyQCommandLineParser() {}
+// void QCommandLineParser()
 MyQCommandLineParser() : QCommandLineParser() {}
 };
 
@@ -17,15 +20,14 @@ MyQCommandLineParser() : QCommandLineParser() {}
 // /usr/include/qt/QtCore/qcommandlineparser.h:59
 // [-2] void QCommandLineParser()
 extern "C"
-void* C_ZN18QCommandLineParserC1Ev() {
-  (MyQCommandLineParser*)(0);
-  return  new MyQCommandLineParser();
+void* C_ZN18QCommandLineParserC2Ev() {
+  return  new QCommandLineParser();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineparser.h:60
 // [-2] void ~QCommandLineParser()
 extern "C"
-void C_ZN18QCommandLineParserD1Ev(void *this_) {
+void C_ZN18QCommandLineParserD2Ev(void *this_) {
   delete (QCommandLineParser*)(this_);
 }
 // Public Visibility=Default Availability=Available

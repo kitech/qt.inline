@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMutex is pure virtual: false
+// QMutex has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMutex : public QMutex {
 public:
+  virtual ~MyQMutex() {}
+// void QMutex(enum QMutex::RecursionMode)
 MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
 };
 
@@ -17,15 +20,14 @@ MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
 // /usr/include/qt/QtCore/qmutex.h:130
 // [-2] void QMutex(enum QMutex::RecursionMode)
 extern "C"
-void* C_ZN6QMutexC1ENS_13RecursionModeE(QMutex::RecursionMode mode) {
-  (MyQMutex*)(0);
-  return  new MyQMutex(mode);
+void* C_ZN6QMutexC2ENS_13RecursionModeE(QMutex::RecursionMode mode) {
+  return  new QMutex(mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:131
 // [-2] void ~QMutex()
 extern "C"
-void C_ZN6QMutexD1Ev(void *this_) {
+void C_ZN6QMutexD2Ev(void *this_) {
   delete (QMutex*)(this_);
 }
 // Public Visibility=Default Availability=Available

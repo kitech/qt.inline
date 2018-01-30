@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QResource is pure virtual: false
+// QResource has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,34 +25,38 @@ extern "C" void set_callback_ZNK9QResource6isFileEv(void*cbfn)
 
 class MyQResource : public QResource {
 public:
+  virtual ~MyQResource() {}
+// void QResource(const class QString &, const class QLocale &)
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 // bool isDir()
-// bool isDir()
-virtual bool isDir() {
-  if (callback_ZNK9QResource5isDirEv != 0) {
-  // callback_ZNK9QResource5isDirEv();
-}}
+  virtual bool isDir() {
+    if (callback_ZNK9QResource5isDirEv != 0) {
+      // callback_ZNK9QResource5isDirEv();
+    }
+    return QResource::isDir();
+  }
 // bool isFile()
-// bool isFile()
-virtual bool isFile() {
-  if (callback_ZNK9QResource6isFileEv != 0) {
-  // callback_ZNK9QResource6isFileEv();
-}}
+  virtual bool isFile() {
+    if (callback_ZNK9QResource6isFileEv != 0) {
+      // callback_ZNK9QResource6isFileEv();
+    }
+    return QResource::isFile();
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:57
 // [-2] void QResource(const class QString &, const class QLocale &)
 extern "C"
-void* C_ZN9QResourceC1ERK7QStringRK7QLocale(const QString & file, const QLocale & locale) {
-  (MyQResource*)(0);
+void* C_ZN9QResourceC2ERK7QStringRK7QLocale(const QString & file, const QLocale & locale) {
+  auto _nilp = (MyQResource*)(0);
   return  new MyQResource(file, locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:58
 // [-2] void ~QResource()
 extern "C"
-void C_ZN9QResourceD1Ev(void *this_) {
+void C_ZN9QResourceD2Ev(void *this_) {
   delete (QResource*)(this_);
 }
 // Public Visibility=Default Availability=Available

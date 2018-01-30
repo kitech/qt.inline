@@ -4,12 +4,14 @@
 #include <QtWidgets>
 
 // QColormap is pure virtual: false
+// QColormap has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQColormap : public QColormap {
 public:
+  virtual ~MyQColormap() {}
 };
 
 // Public static Visibility=Default Availability=Available
@@ -38,7 +40,7 @@ return new QColormap(rv);
 // /usr/include/qt/QtWidgets/qcolormap.h:66
 // [-2] void ~QColormap()
 extern "C"
-void C_ZN9QColormapD1Ev(void *this_) {
+void C_ZN9QColormapD2Ev(void *this_) {
   delete (QColormap*)(this_);
 }
 // Public Visibility=Default Availability=Available

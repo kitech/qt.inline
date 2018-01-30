@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QDataWidgetMapper is pure virtual: false
+// QDataWidgetMapper has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDataWidgetMapper : public QDataWidgetMapper {
 public:
+  virtual ~MyQDataWidgetMapper() {}
+// void QDataWidgetMapper(class QObject *)
 MyQDataWidgetMapper(QObject * parent) : QDataWidgetMapper(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
 // [-2] void QDataWidgetMapper(class QObject *)
 extern "C"
-void* C_ZN17QDataWidgetMapperC1EP7QObject(QObject * parent) {
-  (MyQDataWidgetMapper*)(0);
-  return  new MyQDataWidgetMapper(parent);
+void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
+  return  new QDataWidgetMapper(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:65
 // [-2] void ~QDataWidgetMapper()
 extern "C"
-void C_ZN17QDataWidgetMapperD1Ev(void *this_) {
+void C_ZN17QDataWidgetMapperD2Ev(void *this_) {
   delete (QDataWidgetMapper*)(this_);
 }
 // Public Visibility=Default Availability=Available

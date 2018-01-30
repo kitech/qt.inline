@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyledItemDelegate is pure virtual: false
+// QStyledItemDelegate has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,25 +32,30 @@ extern "C" void set_callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAb
 
 class MyQStyledItemDelegate : public QStyledItemDelegate {
 public:
+  virtual ~MyQStyledItemDelegate() {}
+// void QStyledItemDelegate(class QObject *)
 MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 // void initStyleOption(class QStyleOptionViewItem *, const class QModelIndex &)
-// void initStyleOption(class QStyleOptionViewItem *, const class QModelIndex &)
-virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) {
-  if (callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex != 0) {
-  // callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex(option, index);
-}}
+  virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) {
+    if (callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex != 0) {
+      // callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex(option, index);
+    }
+    QStyledItemDelegate::initStyleOption(option, index);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * object, QEvent * event) {
-  if (callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(object, event);
-}}
+  virtual bool eventFilter(QObject * object, QEvent * event) {
+    if (callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(object, event);
+    }
+    return QStyledItemDelegate::eventFilter(object, event);
+  }
 // bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-// bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
-  if (callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex != 0) {
-  // callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(event, model, option, index);
-}}
+  virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
+    if (callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex != 0) {
+      // callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(event, model, option, index);
+    }
+    return QStyledItemDelegate::editorEvent(event, model, option, index);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -63,15 +69,15 @@ void* C_ZNK19QStyledItemDelegate10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:61
 // [-2] void QStyledItemDelegate(class QObject *)
 extern "C"
-void* C_ZN19QStyledItemDelegateC1EP7QObject(QObject * parent) {
-  (MyQStyledItemDelegate*)(0);
+void* C_ZN19QStyledItemDelegateC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQStyledItemDelegate*)(0);
   return  new MyQStyledItemDelegate(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h:62
 // [-2] void ~QStyledItemDelegate()
 extern "C"
-void C_ZN19QStyledItemDelegateD1Ev(void *this_) {
+void C_ZN19QStyledItemDelegateD2Ev(void *this_) {
   delete (QStyledItemDelegate*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

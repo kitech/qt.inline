@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QTextStreamManipulator is pure virtual: false
+// QTextStreamManipulator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextStreamManipulator : public QTextStreamManipulator {
 public:
+  virtual ~MyQTextStreamManipulator() {}
 };
 
 // Public inline Visibility=Default Availability=Available

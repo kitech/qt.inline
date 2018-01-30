@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QAccessibleTextInterface is pure virtual: true
+// QAccessibleTextInterface has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleTextInterface : public QAccessibleTextInterface {
 public:
+  virtual ~MyQAccessibleTextInterface() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:523
 // [-2] void ~QAccessibleTextInterface()
 extern "C"
-void C_ZN24QAccessibleTextInterfaceD1Ev(void *this_) {
+void C_ZN24QAccessibleTextInterfaceD2Ev(void *this_) {
   delete (QAccessibleTextInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

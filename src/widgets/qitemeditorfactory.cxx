@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QItemEditorFactory is pure virtual: false
+// QItemEditorFactory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQItemEditorFactory : public QItemEditorFactory {
 public:
+  virtual ~MyQItemEditorFactory() {}
+// void QItemEditorFactory()
 MyQItemEditorFactory() : QItemEditorFactory() {}
 };
 
@@ -17,15 +20,14 @@ MyQItemEditorFactory() : QItemEditorFactory() {}
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
 // [-2] void QItemEditorFactory()
 extern "C"
-void* C_ZN18QItemEditorFactoryC1Ev() {
-  (MyQItemEditorFactory*)(0);
-  return  new MyQItemEditorFactory();
+void* C_ZN18QItemEditorFactoryC2Ev() {
+  return  new QItemEditorFactory();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
 // [-2] void ~QItemEditorFactory()
 extern "C"
-void C_ZN18QItemEditorFactoryD1Ev(void *this_) {
+void C_ZN18QItemEditorFactoryD2Ev(void *this_) {
   delete (QItemEditorFactory*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

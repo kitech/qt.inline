@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QFileSelector is pure virtual: false
+// QFileSelector has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFileSelector : public QFileSelector {
 public:
+  virtual ~MyQFileSelector() {}
+// void QFileSelector(class QObject *)
 MyQFileSelector(QObject * parent) : QFileSelector(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK13QFileSelector10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qfileselector.h:53
 // [-2] void QFileSelector(class QObject *)
 extern "C"
-void* C_ZN13QFileSelectorC1EP7QObject(QObject * parent) {
-  (MyQFileSelector*)(0);
-  return  new MyQFileSelector(parent);
+void* C_ZN13QFileSelectorC2EP7QObject(QObject * parent) {
+  return  new QFileSelector(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileselector.h:54
 // [-2] void ~QFileSelector()
 extern "C"
-void C_ZN13QFileSelectorD1Ev(void *this_) {
+void C_ZN13QFileSelectorD2Ev(void *this_) {
   delete (QFileSelector*)(this_);
 }
 // Public Visibility=Default Availability=Available

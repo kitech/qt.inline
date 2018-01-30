@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QGuiApplication is pure virtual: false
+// QGuiApplication has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN15QGuiApplication5eventEP6QEvent(void*cbfn)
 
 class MyQGuiApplication : public QGuiApplication {
 public:
-MyQGuiApplication(int & argc, char ** argv, int arg2) : QGuiApplication(argc, (char**)argv, arg2) {}
+  virtual ~MyQGuiApplication() {}
+// void QGuiApplication(int &, char **, int)
+MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN15QGuiApplication5eventEP6QEvent != 0) {
-  // callback_ZN15QGuiApplication5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN15QGuiApplication5eventEP6QEvent != 0) {
+      // callback_ZN15QGuiApplication5eventEP6QEvent(arg0);
+    }
+    return QGuiApplication::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK15QGuiApplication10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qguiapplication.h:87
 // [-2] void QGuiApplication(int &, char **, int)
 extern "C"
-void* C_ZN15QGuiApplicationC1ERiPPci(int & argc, char ** argv, int arg2) {
-  (MyQGuiApplication*)(0);
-  return  new MyQGuiApplication(argc, (char**)argv, arg2);
+void* C_ZN15QGuiApplicationC2ERiPPci(int & argc, char** argv, int arg2) {
+  auto _nilp = (MyQGuiApplication*)(0);
+  return  new MyQGuiApplication(argc, argv, arg2);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:89
 // [-2] void ~QGuiApplication()
 extern "C"
-void C_ZN15QGuiApplicationD1Ev(void *this_) {
+void C_ZN15QGuiApplicationD2Ev(void *this_) {
   delete (QGuiApplication*)(this_);
 }
 // Public static Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMetaEnum is pure virtual: false
+// QMetaEnum has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMetaEnum : public QMetaEnum {
 public:
+  virtual ~MyQMetaEnum() {}
+// void QMetaEnum()
 MyQMetaEnum() : QMetaEnum() {}
 };
 
@@ -17,9 +20,8 @@ MyQMetaEnum() : QMetaEnum() {}
 // /usr/include/qt/QtCore/qmetaobject.h:209
 // [-2] void QMetaEnum()
 extern "C"
-void* C_ZN9QMetaEnumC1Ev() {
-  (MyQMetaEnum*)(0);
-  return  new MyQMetaEnum();
+void* C_ZN9QMetaEnumC2Ev() {
+  return  new QMetaEnum();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:211

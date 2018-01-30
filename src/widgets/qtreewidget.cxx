@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QTreeWidget is pure virtual: false
+// QTreeWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,49 +60,58 @@ extern "C" void set_callback_ZN11QTreeWidget9dropEventEP10QDropEvent(void*cbfn)
 
 class MyQTreeWidget : public QTreeWidget {
 public:
+  virtual ~MyQTreeWidget() {}
+// void QTreeWidget(class QWidget *)
 MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QTreeWidget5eventEP6QEvent != 0) {
-  // callback_ZN11QTreeWidget5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QTreeWidget5eventEP6QEvent != 0) {
+      // callback_ZN11QTreeWidget5eventEP6QEvent(e);
+    }
+    return QTreeWidget::event(e);
+  }
 // bool dropMimeData(class QTreeWidgetItem *, int, const class QMimeData *, Qt::DropAction)
-// bool dropMimeData(class QTreeWidgetItem *, int, const class QMimeData *, Qt::DropAction)
-virtual bool dropMimeData(QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
-  if (callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE != 0) {
-  // callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE(parent, index, data, action);
-}}
+  virtual bool dropMimeData(QTreeWidgetItem * parent, int index, const QMimeData * data, Qt::DropAction action) {
+    if (callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE != 0) {
+      // callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE(parent, index, data, action);
+    }
+    return QTreeWidget::dropMimeData(parent, index, data, action);
+  }
 // Qt::DropActions supportedDropActions()
-// Qt::DropActions supportedDropActions()
-virtual Qt::DropActions supportedDropActions() {
-  if (callback_ZNK11QTreeWidget20supportedDropActionsEv != 0) {
-  // callback_ZNK11QTreeWidget20supportedDropActionsEv();
-}}
+  virtual Qt::DropActions supportedDropActions() {
+    if (callback_ZNK11QTreeWidget20supportedDropActionsEv != 0) {
+      // callback_ZNK11QTreeWidget20supportedDropActionsEv();
+    }
+    return QTreeWidget::supportedDropActions();
+  }
 // QModelIndex indexFromItem(const class QTreeWidgetItem *, int)
-// QModelIndex indexFromItem(const class QTreeWidgetItem *, int)
-virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) {
-  if (callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi != 0) {
-  // callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi(item, column);
-}}
+  virtual QModelIndex indexFromItem(const QTreeWidgetItem * item, int column) {
+    if (callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi != 0) {
+      // callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi(item, column);
+    }
+    return QTreeWidget::indexFromItem(item, column);
+  }
 // QModelIndex indexFromItem(class QTreeWidgetItem *, int)
-// QModelIndex indexFromItem(class QTreeWidgetItem *, int)
-virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) {
-  if (callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi != 0) {
-  // callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi(item, column);
-}}
+  virtual QModelIndex indexFromItem(QTreeWidgetItem * item, int column) {
+    if (callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi != 0) {
+      // callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi(item, column);
+    }
+    return QTreeWidget::indexFromItem(item, column);
+  }
 // QTreeWidgetItem * itemFromIndex(const class QModelIndex &)
-// QTreeWidgetItem * itemFromIndex(const class QModelIndex &)
-virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) {
-  if (callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex != 0) {
-  // callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex(index);
-}}
+  virtual QTreeWidgetItem * itemFromIndex(const QModelIndex & index) {
+    if (callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex != 0) {
+      // callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex(index);
+    }
+    return QTreeWidget::itemFromIndex(index);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * event) {
-  if (callback_ZN11QTreeWidget9dropEventEP10QDropEvent != 0) {
-  // callback_ZN11QTreeWidget9dropEventEP10QDropEvent(event);
-}}
+  virtual void dropEvent(QDropEvent * event) {
+    if (callback_ZN11QTreeWidget9dropEventEP10QDropEvent != 0) {
+      // callback_ZN11QTreeWidget9dropEventEP10QDropEvent(event);
+    }
+    QTreeWidget::dropEvent(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -115,15 +125,15 @@ void* C_ZNK11QTreeWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtreewidget.h:264
 // [-2] void QTreeWidget(class QWidget *)
 extern "C"
-void* C_ZN11QTreeWidgetC1EP7QWidget(QWidget * parent) {
-  (MyQTreeWidget*)(0);
+void* C_ZN11QTreeWidgetC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQTreeWidget*)(0);
   return  new MyQTreeWidget(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:265
 // [-2] void ~QTreeWidget()
 extern "C"
-void C_ZN11QTreeWidgetD1Ev(void *this_) {
+void C_ZN11QTreeWidgetD2Ev(void *this_) {
   delete (QTreeWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QRegularExpressionValidator is pure virtual: false
+// QRegularExpressionValidator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegularExpressionValidator : public QRegularExpressionValidator {
 public:
+  virtual ~MyQRegularExpressionValidator() {}
+// void QRegularExpressionValidator(class QObject *)
 MyQRegularExpressionValidator(QObject * parent) : QRegularExpressionValidator(parent) {}
+// void QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
 MyQRegularExpressionValidator(const QRegularExpression & re, QObject * parent) : QRegularExpressionValidator(re, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:207
 // [-2] void QRegularExpressionValidator(class QObject *)
 extern "C"
-void* C_ZN27QRegularExpressionValidatorC1EP7QObject(QObject * parent) {
-  (MyQRegularExpressionValidator*)(0);
-  return  new MyQRegularExpressionValidator(parent);
+void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
+  return  new QRegularExpressionValidator(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:208
 // [-2] void QRegularExpressionValidator(const class QRegularExpression &, class QObject *)
 extern "C"
-void* C_ZN27QRegularExpressionValidatorC1ERK18QRegularExpressionP7QObject(const QRegularExpression & re, QObject * parent) {
-  (MyQRegularExpressionValidator*)(0);
-  return  new MyQRegularExpressionValidator(re, parent);
+void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(const QRegularExpression & re, QObject * parent) {
+  return  new QRegularExpressionValidator(re, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:209
 // [-2] void ~QRegularExpressionValidator()
 extern "C"
-void C_ZN27QRegularExpressionValidatorD1Ev(void *this_) {
+void C_ZN27QRegularExpressionValidatorD2Ev(void *this_) {
   delete (QRegularExpressionValidator*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

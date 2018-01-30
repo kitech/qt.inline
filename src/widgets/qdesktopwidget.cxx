@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QDesktopWidget is pure virtual: false
+// QDesktopWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(voi
 
 class MyQDesktopWidget : public QDesktopWidget {
 public:
+  virtual ~MyQDesktopWidget() {}
+// void QDesktopWidget()
 MyQDesktopWidget() : QDesktopWidget() {}
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * e) {
-  if (callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(e);
-}}
+  virtual void resizeEvent(QResizeEvent * e) {
+    if (callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(e);
+    }
+    QDesktopWidget::resizeEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK14QDesktopWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:59
 // [-2] void QDesktopWidget()
 extern "C"
-void* C_ZN14QDesktopWidgetC1Ev() {
-  (MyQDesktopWidget*)(0);
+void* C_ZN14QDesktopWidgetC2Ev() {
+  auto _nilp = (MyQDesktopWidget*)(0);
   return  new MyQDesktopWidget();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdesktopwidget.h:60
 // [-2] void ~QDesktopWidget()
 extern "C"
-void C_ZN14QDesktopWidgetD1Ev(void *this_) {
+void C_ZN14QDesktopWidgetD2Ev(void *this_) {
   delete (QDesktopWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

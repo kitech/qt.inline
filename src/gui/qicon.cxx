@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QIcon is pure virtual: false
+// QIcon has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQIcon : public QIcon {
 public:
+  virtual ~MyQIcon() {}
+// void QIcon()
 MyQIcon() : QIcon() {}
+// void QIcon(const class QPixmap &)
 MyQIcon(const QPixmap & pixmap) : QIcon(pixmap) {}
+// void QIcon(const class QString &)
 MyQIcon(const QString & fileName) : QIcon(fileName) {}
+// void QIcon(class QIconEngine *)
 MyQIcon(QIconEngine * engine) : QIcon(engine) {}
 };
 
@@ -20,39 +26,35 @@ MyQIcon(QIconEngine * engine) : QIcon(engine) {}
 // /usr/include/qt/QtGui/qicon.h:60
 // [-2] void QIcon()
 extern "C"
-void* C_ZN5QIconC1Ev() {
-  (MyQIcon*)(0);
-  return  new MyQIcon();
+void* C_ZN5QIconC2Ev() {
+  return  new QIcon();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:61
 // [-2] void QIcon(const class QPixmap &)
 extern "C"
-void* C_ZN5QIconC1ERK7QPixmap(const QPixmap & pixmap) {
-  (MyQIcon*)(0);
-  return  new MyQIcon(pixmap);
+void* C_ZN5QIconC2ERK7QPixmap(const QPixmap & pixmap) {
+  return  new QIcon(pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:68
 // [-2] void QIcon(const class QString &)
 extern "C"
-void* C_ZN5QIconC1ERK7QString(const QString & fileName) {
-  (MyQIcon*)(0);
-  return  new MyQIcon(fileName);
+void* C_ZN5QIconC2ERK7QString(const QString & fileName) {
+  return  new QIcon(fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:69
 // [-2] void QIcon(class QIconEngine *)
 extern "C"
-void* C_ZN5QIconC1EP11QIconEngine(QIconEngine * engine) {
-  (MyQIcon*)(0);
-  return  new MyQIcon(engine);
+void* C_ZN5QIconC2EP11QIconEngine(QIconEngine * engine) {
+  return  new QIcon(engine);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:70
 // [-2] void ~QIcon()
 extern "C"
-void C_ZN5QIconD1Ev(void *this_) {
+void C_ZN5QIconD2Ev(void *this_) {
   delete (QIcon*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QPagedPaintDevice is pure virtual: true
+// QPagedPaintDevice has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -33,7 +34,7 @@ void* C_ZN17QPagedPaintDeviceC1Ev() {
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:59
 // [-2] void ~QPagedPaintDevice()
 extern "C"
-void C_ZN17QPagedPaintDeviceD1Ev(void *this_) {
+void C_ZN17QPagedPaintDeviceD2Ev(void *this_) {
   delete (QPagedPaintDevice*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

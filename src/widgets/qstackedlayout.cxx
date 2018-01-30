@@ -4,14 +4,19 @@
 #include <QtWidgets>
 
 // QStackedLayout is pure virtual: false
+// QStackedLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStackedLayout : public QStackedLayout {
 public:
+  virtual ~MyQStackedLayout() {}
+// void QStackedLayout()
 MyQStackedLayout() : QStackedLayout() {}
+// void QStackedLayout(class QWidget *)
 MyQStackedLayout(QWidget * parent) : QStackedLayout(parent) {}
+// void QStackedLayout(class QLayout *)
 MyQStackedLayout(QLayout * parentLayout) : QStackedLayout(parentLayout) {}
 };
 
@@ -26,31 +31,28 @@ void* C_ZNK14QStackedLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qstackedlayout.h:66
 // [-2] void QStackedLayout()
 extern "C"
-void* C_ZN14QStackedLayoutC1Ev() {
-  (MyQStackedLayout*)(0);
-  return  new MyQStackedLayout();
+void* C_ZN14QStackedLayoutC2Ev() {
+  return  new QStackedLayout();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:67
 // [-2] void QStackedLayout(class QWidget *)
 extern "C"
-void* C_ZN14QStackedLayoutC1EP7QWidget(QWidget * parent) {
-  (MyQStackedLayout*)(0);
-  return  new MyQStackedLayout(parent);
+void* C_ZN14QStackedLayoutC2EP7QWidget(QWidget * parent) {
+  return  new QStackedLayout(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:68
 // [-2] void QStackedLayout(class QLayout *)
 extern "C"
-void* C_ZN14QStackedLayoutC1EP7QLayout(QLayout * parentLayout) {
-  (MyQStackedLayout*)(0);
-  return  new MyQStackedLayout(parentLayout);
+void* C_ZN14QStackedLayoutC2EP7QLayout(QLayout * parentLayout) {
+  return  new QStackedLayout(parentLayout);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:69
 // [-2] void ~QStackedLayout()
 extern "C"
-void C_ZN14QStackedLayoutD1Ev(void *this_) {
+void C_ZN14QStackedLayoutD2Ev(void *this_) {
   delete (QStackedLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

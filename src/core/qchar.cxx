@@ -4,21 +4,33 @@
 #include <QtCore>
 
 // QChar is pure virtual: false
+// QChar has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQChar : public QChar {
 public:
+  virtual ~MyQChar() {}
+// void QChar()
 MyQChar() : QChar() {}
+// void QChar(ushort)
 MyQChar(ushort rc) : QChar(rc) {}
+// void QChar(uchar, uchar)
 MyQChar(uchar c, uchar r) : QChar(c, r) {}
+// void QChar(short)
 MyQChar(short rc) : QChar(rc) {}
+// void QChar(uint)
 MyQChar(uint rc) : QChar(rc) {}
+// void QChar(int)
 MyQChar(int rc) : QChar(rc) {}
+// void QChar(enum QChar::SpecialCharacter)
 MyQChar(QChar::SpecialCharacter s) : QChar(s) {}
+// void QChar(char16_t)
 MyQChar(char16_t ch) : QChar(ch) {}
+// void QChar(char)
 MyQChar(char c) : QChar(c) {}
+// void QChar(uchar)
 MyQChar(uchar c) : QChar(c) {}
 };
 
@@ -26,81 +38,71 @@ MyQChar(uchar c) : QChar(c) {}
 // /usr/include/qt/QtCore/qchar.h:81
 // [-2] void QChar()
 extern "C"
-void* C_ZN5QCharC1Ev() {
-  (MyQChar*)(0);
-  return  new MyQChar();
+void* C_ZN5QCharC2Ev() {
+  return  new QChar();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:82
 // [-2] void QChar(ushort)
 extern "C"
-void* C_ZN5QCharC1Et(ushort rc) {
-  (MyQChar*)(0);
-  return  new MyQChar(rc);
+void* C_ZN5QCharC2Et(ushort rc) {
+  return  new QChar(rc);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:83
 // [-2] void QChar(uchar, uchar)
 extern "C"
-void* C_ZN5QCharC1Ehh(uchar c, uchar r) {
-  (MyQChar*)(0);
-  return  new MyQChar(c, r);
+void* C_ZN5QCharC2Ehh(uchar c, uchar r) {
+  return  new QChar(c, r);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:84
 // [-2] void QChar(short)
 extern "C"
-void* C_ZN5QCharC1Es(short rc) {
-  (MyQChar*)(0);
-  return  new MyQChar(rc);
+void* C_ZN5QCharC2Es(short rc) {
+  return  new QChar(rc);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:85
 // [-2] void QChar(uint)
 extern "C"
-void* C_ZN5QCharC1Ej(uint rc) {
-  (MyQChar*)(0);
-  return  new MyQChar(rc);
+void* C_ZN5QCharC2Ej(uint rc) {
+  return  new QChar(rc);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:86
 // [-2] void QChar(int)
 extern "C"
-void* C_ZN5QCharC1Ei(int rc) {
-  (MyQChar*)(0);
-  return  new MyQChar(rc);
+void* C_ZN5QCharC2Ei(int rc) {
+  return  new QChar(rc);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:87
 // [-2] void QChar(enum QChar::SpecialCharacter)
 extern "C"
-void* C_ZN5QCharC1ENS_16SpecialCharacterE(QChar::SpecialCharacter s) {
-  (MyQChar*)(0);
-  return  new MyQChar(s);
+void* C_ZN5QCharC2ENS_16SpecialCharacterE(QChar::SpecialCharacter s) {
+  return  new QChar(s);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:90
 // [-2] void QChar(char16_t)
 extern "C"
-void* C_ZN5QCharC1EDs(char16_t ch) {
-  (MyQChar*)(0);
-  return  new MyQChar(ch);
+void* C_ZN5QCharC2EDs(char16_t ch) {
+  return  new QChar(ch);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:98
 // [-2] void QChar(char)
 extern "C"
-void* C_ZN5QCharC1Ec(char c) {
-  (MyQChar*)(0);
-  return  new MyQChar(c);
+void* C_ZN5QCharC2Ec(char c) {
+  return  new QChar(c);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:100
 // [-2] void QChar(uchar)
 extern "C"
-void* C_ZN5QCharC1Eh(uchar c) {
-  (MyQChar*)(0);
-  return  new MyQChar(c);
+void* C_ZN5QCharC2Eh(uchar c) {
+  return  new QChar(c);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:394
@@ -443,8 +445,8 @@ uint C_ZN5QChar15surrogateToUcs4Ett(ushort high, ushort low) {
 // /usr/include/qt/QtCore/qchar.h:491
 // [4] uint surrogateToUcs4(class QChar, class QChar)
 extern "C"
-uint C_ZN5QChar15surrogateToUcs4ES_S_(QChar high, QChar low) {
-  return (uint)QChar::surrogateToUcs4(high, low);
+uint C_ZN5QChar15surrogateToUcs4ES_S_(QChar* high, QChar* low) {
+  return (uint)QChar::surrogateToUcs4(*high, *low);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qchar.h:495

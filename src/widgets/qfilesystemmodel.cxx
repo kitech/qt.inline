@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QFileSystemModel is pure virtual: false
+// QFileSystemModel has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,19 +25,23 @@ extern "C" void set_callback_ZN16QFileSystemModel5eventEP6QEvent(void*cbfn)
 
 class MyQFileSystemModel : public QFileSystemModel {
 public:
+  virtual ~MyQFileSystemModel() {}
+// void QFileSystemModel(class QObject *)
 MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * event) {
-  if (callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent(event);
-}}
+  virtual void timerEvent(QTimerEvent * event) {
+    if (callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent(event);
+    }
+    QFileSystemModel::timerEvent(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN16QFileSystemModel5eventEP6QEvent != 0) {
-  // callback_ZN16QFileSystemModel5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN16QFileSystemModel5eventEP6QEvent != 0) {
+      // callback_ZN16QFileSystemModel5eventEP6QEvent(event);
+    }
+    return QFileSystemModel::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -71,15 +76,15 @@ void C_ZN16QFileSystemModel15directoryLoadedERK7QString(void *this_, const QStri
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:78
 // [-2] void QFileSystemModel(class QObject *)
 extern "C"
-void* C_ZN16QFileSystemModelC1EP7QObject(QObject * parent) {
-  (MyQFileSystemModel*)(0);
+void* C_ZN16QFileSystemModelC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQFileSystemModel*)(0);
   return  new MyQFileSystemModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:79
 // [-2] void ~QFileSystemModel()
 extern "C"
-void C_ZN16QFileSystemModelD1Ev(void *this_) {
+void C_ZN16QFileSystemModelD2Ev(void *this_) {
   delete (QFileSystemModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

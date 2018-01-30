@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QTextBrowser is pure virtual: false
+// QTextBrowser has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,55 +67,65 @@ extern "C" void set_callback_ZN12QTextBrowser10paintEventEP11QPaintEvent(void*cb
 
 class MyQTextBrowser : public QTextBrowser {
 public:
+  virtual ~MyQTextBrowser() {}
+// void QTextBrowser(class QWidget *)
 MyQTextBrowser(QWidget * parent) : QTextBrowser(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN12QTextBrowser5eventEP6QEvent != 0) {
-  // callback_ZN12QTextBrowser5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN12QTextBrowser5eventEP6QEvent != 0) {
+      // callback_ZN12QTextBrowser5eventEP6QEvent(e);
+    }
+    return QTextBrowser::event(e);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * ev) {
-  if (callback_ZN12QTextBrowser13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(ev);
-}}
+  virtual void keyPressEvent(QKeyEvent * ev) {
+    if (callback_ZN12QTextBrowser13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(ev);
+    }
+    QTextBrowser::keyPressEvent(ev);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * ev) {
-  if (callback_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(ev);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * ev) {
+    if (callback_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(ev);
+    }
+    QTextBrowser::mouseMoveEvent(ev);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * ev) {
-  if (callback_ZN12QTextBrowser15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(ev);
-}}
+  virtual void mousePressEvent(QMouseEvent * ev) {
+    if (callback_ZN12QTextBrowser15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(ev);
+    }
+    QTextBrowser::mousePressEvent(ev);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * ev) {
-  if (callback_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(ev);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * ev) {
+    if (callback_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(ev);
+    }
+    QTextBrowser::mouseReleaseEvent(ev);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * ev) {
-  if (callback_ZN12QTextBrowser13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(ev);
-}}
+  virtual void focusOutEvent(QFocusEvent * ev) {
+    if (callback_ZN12QTextBrowser13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(ev);
+    }
+    QTextBrowser::focusOutEvent(ev);
+  }
 // bool focusNextPrevChild(_Bool)
-// bool focusNextPrevChild(_Bool)
-virtual bool focusNextPrevChild(bool next) {
-  if (callback_ZN12QTextBrowser18focusNextPrevChildEb != 0) {
-  // callback_ZN12QTextBrowser18focusNextPrevChildEb(next);
-}}
+  virtual bool focusNextPrevChild(bool next) {
+    if (callback_ZN12QTextBrowser18focusNextPrevChildEb != 0) {
+      // callback_ZN12QTextBrowser18focusNextPrevChildEb(next);
+    }
+    return QTextBrowser::focusNextPrevChild(next);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * e) {
-  if (callback_ZN12QTextBrowser10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN12QTextBrowser10paintEventEP11QPaintEvent(e);
-}}
+  virtual void paintEvent(QPaintEvent * e) {
+    if (callback_ZN12QTextBrowser10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN12QTextBrowser10paintEventEP11QPaintEvent(e);
+    }
+    QTextBrowser::paintEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -128,15 +139,15 @@ void* C_ZNK12QTextBrowser10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextbrowser.h:66
 // [-2] void QTextBrowser(class QWidget *)
 extern "C"
-void* C_ZN12QTextBrowserC1EP7QWidget(QWidget * parent) {
-  (MyQTextBrowser*)(0);
+void* C_ZN12QTextBrowserC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQTextBrowser*)(0);
   return  new MyQTextBrowser(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextbrowser.h:67
 // [-2] void ~QTextBrowser()
 extern "C"
-void C_ZN12QTextBrowserD1Ev(void *this_) {
+void C_ZN12QTextBrowserD2Ev(void *this_) {
   delete (QTextBrowser*)(this_);
 }
 // Public Visibility=Default Availability=Available

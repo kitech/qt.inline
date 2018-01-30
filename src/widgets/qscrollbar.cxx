@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QScrollBar is pure virtual: false
+// QScrollBar has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -73,62 +74,74 @@ extern "C" void set_callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSli
 
 class MyQScrollBar : public QScrollBar {
 public:
+  virtual ~MyQScrollBar() {}
+// void QScrollBar(class QWidget *)
 MyQScrollBar(QWidget * parent) : QScrollBar(parent) {}
+// void QScrollBar(Qt::Orientation, class QWidget *)
 MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) {}
 // void wheelEvent(class QWheelEvent *)
-// void wheelEvent(class QWheelEvent *)
-virtual void wheelEvent(QWheelEvent * arg0) {
-  if (callback_ZN10QScrollBar10wheelEventEP11QWheelEvent != 0) {
-  // callback_ZN10QScrollBar10wheelEventEP11QWheelEvent(arg0);
-}}
+  virtual void wheelEvent(QWheelEvent * arg0) {
+    if (callback_ZN10QScrollBar10wheelEventEP11QWheelEvent != 0) {
+      // callback_ZN10QScrollBar10wheelEventEP11QWheelEvent(arg0);
+    }
+    QScrollBar::wheelEvent(arg0);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN10QScrollBar10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN10QScrollBar10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN10QScrollBar10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN10QScrollBar10paintEventEP11QPaintEvent(arg0);
+    }
+    QScrollBar::paintEvent(arg0);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * arg0) {
-  if (callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent(arg0);
-}}
+  virtual void mousePressEvent(QMouseEvent * arg0) {
+    if (callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent(arg0);
+    }
+    QScrollBar::mousePressEvent(arg0);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * arg0) {
-  if (callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent(arg0);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * arg0) {
+    if (callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent(arg0);
+    }
+    QScrollBar::mouseReleaseEvent(arg0);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * arg0) {
-  if (callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent(arg0);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * arg0) {
+    if (callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent(arg0);
+    }
+    QScrollBar::mouseMoveEvent(arg0);
+  }
 // void hideEvent(class QHideEvent *)
-// void hideEvent(class QHideEvent *)
-virtual void hideEvent(QHideEvent * arg0) {
-  if (callback_ZN10QScrollBar9hideEventEP10QHideEvent != 0) {
-  // callback_ZN10QScrollBar9hideEventEP10QHideEvent(arg0);
-}}
+  virtual void hideEvent(QHideEvent * arg0) {
+    if (callback_ZN10QScrollBar9hideEventEP10QHideEvent != 0) {
+      // callback_ZN10QScrollBar9hideEventEP10QHideEvent(arg0);
+    }
+    QScrollBar::hideEvent(arg0);
+  }
 // void sliderChange(enum QAbstractSlider::SliderChange)
-// void sliderChange(enum QAbstractSlider::SliderChange)
-virtual void sliderChange(QAbstractSlider::SliderChange change) {
-  if (callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE != 0) {
-  // callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE(change);
-}}
+  virtual void sliderChange(QAbstractSlider::SliderChange change) {
+    if (callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE != 0) {
+      // callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE(change);
+    }
+    QScrollBar::sliderChange(change);
+  }
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * arg0) {
-  if (callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent(arg0);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * arg0) {
+    if (callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent(arg0);
+    }
+    QScrollBar::contextMenuEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionSlider *)
-// void initStyleOption(class QStyleOptionSlider *)
-virtual void initStyleOption(QStyleOptionSlider * option) {
-  if (callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider != 0) {
-  // callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider(option);
-}}
+  virtual void initStyleOption(QStyleOptionSlider * option) {
+    if (callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider != 0) {
+      // callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider(option);
+    }
+    QScrollBar::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -142,23 +155,23 @@ void* C_ZNK10QScrollBar10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qscrollbar.h:59
 // [-2] void QScrollBar(class QWidget *)
 extern "C"
-void* C_ZN10QScrollBarC1EP7QWidget(QWidget * parent) {
-  (MyQScrollBar*)(0);
+void* C_ZN10QScrollBarC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQScrollBar*)(0);
   return  new MyQScrollBar(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollbar.h:60
 // [-2] void QScrollBar(Qt::Orientation, class QWidget *)
 extern "C"
-void* C_ZN10QScrollBarC1EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
-  (MyQScrollBar*)(0);
+void* C_ZN10QScrollBarC2EN2Qt11OrientationEP7QWidget(Qt::Orientation arg0, QWidget * parent) {
+  auto _nilp = (MyQScrollBar*)(0);
   return  new MyQScrollBar(arg0, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollbar.h:61
 // [-2] void ~QScrollBar()
 extern "C"
-void C_ZN10QScrollBarD1Ev(void *this_) {
+void C_ZN10QScrollBarD2Ev(void *this_) {
   delete (QScrollBar*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

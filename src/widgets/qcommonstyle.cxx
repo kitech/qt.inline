@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QCommonStyle is pure virtual: false
+// QCommonStyle has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCommonStyle : public QCommonStyle {
 public:
+  virtual ~MyQCommonStyle() {}
+// void QCommonStyle()
 MyQCommonStyle() : QCommonStyle() {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK12QCommonStyle10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcommonstyle.h:55
 // [-2] void QCommonStyle()
 extern "C"
-void* C_ZN12QCommonStyleC1Ev() {
-  (MyQCommonStyle*)(0);
-  return  new MyQCommonStyle();
+void* C_ZN12QCommonStyleC2Ev() {
+  return  new QCommonStyle();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommonstyle.h:56
 // [-2] void ~QCommonStyle()
 extern "C"
-void C_ZN12QCommonStyleD1Ev(void *this_) {
+void C_ZN12QCommonStyleD2Ev(void *this_) {
   delete (QCommonStyle*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGridLayout is pure virtual: false
+// QGridLayout has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,14 +18,18 @@ extern "C" void set_callback_ZN11QGridLayout7addItemEP11QLayoutItem(void*cbfn)
 
 class MyQGridLayout : public QGridLayout {
 public:
+  virtual ~MyQGridLayout() {}
+// void QGridLayout(class QWidget *)
 MyQGridLayout(QWidget * parent) : QGridLayout(parent) {}
+// void QGridLayout()
 MyQGridLayout() : QGridLayout() {}
 // void addItem(class QLayoutItem *)
-// void addItem(class QLayoutItem *)
-virtual void addItem(QLayoutItem * arg0) {
-  if (callback_ZN11QGridLayout7addItemEP11QLayoutItem != 0) {
-  // callback_ZN11QGridLayout7addItemEP11QLayoutItem(arg0);
-}}
+  virtual void addItem(QLayoutItem * arg0) {
+    if (callback_ZN11QGridLayout7addItemEP11QLayoutItem != 0) {
+      // callback_ZN11QGridLayout7addItemEP11QLayoutItem(arg0);
+    }
+    QGridLayout::addItem(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,23 +43,23 @@ void* C_ZNK11QGridLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgridlayout.h:64
 // [-2] void QGridLayout(class QWidget *)
 extern "C"
-void* C_ZN11QGridLayoutC1EP7QWidget(QWidget * parent) {
-  (MyQGridLayout*)(0);
+void* C_ZN11QGridLayoutC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQGridLayout*)(0);
   return  new MyQGridLayout(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:65
 // [-2] void QGridLayout()
 extern "C"
-void* C_ZN11QGridLayoutC1Ev() {
-  (MyQGridLayout*)(0);
+void* C_ZN11QGridLayoutC2Ev() {
+  auto _nilp = (MyQGridLayout*)(0);
   return  new MyQGridLayout();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:67
 // [-2] void ~QGridLayout()
 extern "C"
-void C_ZN11QGridLayoutD1Ev(void *this_) {
+void C_ZN11QGridLayoutD2Ev(void *this_) {
   delete (QGridLayout*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

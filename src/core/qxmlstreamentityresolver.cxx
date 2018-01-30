@@ -4,19 +4,21 @@
 #include <QtCore>
 
 // QXmlStreamEntityResolver is pure virtual: false
+// QXmlStreamEntityResolver has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamEntityResolver : public QXmlStreamEntityResolver {
 public:
+  virtual ~MyQXmlStreamEntityResolver() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:336
 // [-2] void ~QXmlStreamEntityResolver()
 extern "C"
-void C_ZN24QXmlStreamEntityResolverD1Ev(void *this_) {
+void C_ZN24QXmlStreamEntityResolverD2Ev(void *this_) {
   delete (QXmlStreamEntityResolver*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QVariantAnimation is pure virtual: false
+// QVariantAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_
 
 class MyQVariantAnimation : public QVariantAnimation {
 public:
+  virtual ~MyQVariantAnimation() {}
+// void QVariantAnimation(class QObject *)
 MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN17QVariantAnimation5eventEP6QEvent != 0) {
-  // callback_ZN17QVariantAnimation5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN17QVariantAnimation5eventEP6QEvent != 0) {
+      // callback_ZN17QVariantAnimation5eventEP6QEvent(event);
+    }
+    return QVariantAnimation::event(event);
+  }
 // void updateCurrentTime(int)
-// void updateCurrentTime(int)
-virtual void updateCurrentTime(int arg0) {
-  if (callback_ZN17QVariantAnimation17updateCurrentTimeEi != 0) {
-  // callback_ZN17QVariantAnimation17updateCurrentTimeEi(arg0);
-}}
+  virtual void updateCurrentTime(int arg0) {
+    if (callback_ZN17QVariantAnimation17updateCurrentTimeEi != 0) {
+      // callback_ZN17QVariantAnimation17updateCurrentTimeEi(arg0);
+    }
+    QVariantAnimation::updateCurrentTime(arg0);
+  }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-// void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-  if (callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-  // callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
-}}
+  virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
+    if (callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
+      // callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    }
+    QVariantAnimation::updateState(newState, oldState);
+  }
 // void updateCurrentValue(const class QVariant &)
-// void updateCurrentValue(const class QVariant &)
-virtual void updateCurrentValue(const QVariant & value) {
-  if (callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant != 0) {
-  // callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(value);
-}}
+  virtual void updateCurrentValue(const QVariant & value) {
+    if (callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant != 0) {
+      // callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(value);
+    }
+    QVariantAnimation::updateCurrentValue(value);
+  }
 // QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
-// QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
-virtual QVariant interpolated(const QVariant & from, const QVariant & to, qreal progress) {
-  if (callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d != 0) {
-  // callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(from, to, progress);
-}}
+  virtual QVariant interpolated(const QVariant & from, const QVariant & to, qreal progress) {
+    if (callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d != 0) {
+      // callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(from, to, progress);
+    }
+    return QVariantAnimation::interpolated(from, to, progress);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK17QVariantAnimation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qvariantanimation.h:68
 // [-2] void QVariantAnimation(class QObject *)
 extern "C"
-void* C_ZN17QVariantAnimationC1EP7QObject(QObject * parent) {
-  (MyQVariantAnimation*)(0);
+void* C_ZN17QVariantAnimationC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQVariantAnimation*)(0);
   return  new MyQVariantAnimation(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qvariantanimation.h:69
 // [-2] void ~QVariantAnimation()
 extern "C"
-void C_ZN17QVariantAnimationD1Ev(void *this_) {
+void C_ZN17QVariantAnimationD2Ev(void *this_) {
   delete (QVariantAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available

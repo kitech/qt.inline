@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QAccessibleBridge is pure virtual: true
+// QAccessibleBridge has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleBridge : public QAccessibleBridge {
 public:
+  virtual ~MyQAccessibleBridge() {}
 };
 
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:58
 // [-2] void ~QAccessibleBridge()
 extern "C"
-void C_ZN17QAccessibleBridgeD1Ev(void *this_) {
+void C_ZN17QAccessibleBridgeD2Ev(void *this_) {
   delete (QAccessibleBridge*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

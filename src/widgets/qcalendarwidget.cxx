@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QCalendarWidget is pure virtual: false
+// QCalendarWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,55 +67,65 @@ extern "C" void set_callback_ZN15QCalendarWidget11updateCellsEv(void*cbfn)
 
 class MyQCalendarWidget : public QCalendarWidget {
 public:
+  virtual ~MyQCalendarWidget() {}
+// void QCalendarWidget(class QWidget *)
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN15QCalendarWidget5eventEP6QEvent != 0) {
-  // callback_ZN15QCalendarWidget5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN15QCalendarWidget5eventEP6QEvent != 0) {
+      // callback_ZN15QCalendarWidget5eventEP6QEvent(event);
+    }
+    return QCalendarWidget::event(event);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * watched, QEvent * event) {
-  if (callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(watched, event);
-}}
+  virtual bool eventFilter(QObject * watched, QEvent * event) {
+    if (callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(watched, event);
+    }
+    return QCalendarWidget::eventFilter(watched, event);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * event) {
-  if (callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(event);
-}}
+  virtual void mousePressEvent(QMouseEvent * event) {
+    if (callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(event);
+    }
+    QCalendarWidget::mousePressEvent(event);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(event);
+    }
+    QCalendarWidget::resizeEvent(event);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * event) {
-  if (callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(event);
-}}
+  virtual void keyPressEvent(QKeyEvent * event) {
+    if (callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(event);
+    }
+    QCalendarWidget::keyPressEvent(event);
+  }
 // void paintCell(class QPainter *, const class QRect &, const class QDate &)
-// void paintCell(class QPainter *, const class QRect &, const class QDate &)
-virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
-  if (callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate != 0) {
-  // callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(painter, rect, date);
-}}
+  virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
+    if (callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate != 0) {
+      // callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(painter, rect, date);
+    }
+    QCalendarWidget::paintCell(painter, rect, date);
+  }
 // void updateCell(const class QDate &)
-// void updateCell(const class QDate &)
-virtual void updateCell(const QDate & date) {
-  if (callback_ZN15QCalendarWidget10updateCellERK5QDate != 0) {
-  // callback_ZN15QCalendarWidget10updateCellERK5QDate(date);
-}}
+  virtual void updateCell(const QDate & date) {
+    if (callback_ZN15QCalendarWidget10updateCellERK5QDate != 0) {
+      // callback_ZN15QCalendarWidget10updateCellERK5QDate(date);
+    }
+    QCalendarWidget::updateCell(date);
+  }
 // void updateCells()
-// void updateCells()
-virtual void updateCells() {
-  if (callback_ZN15QCalendarWidget11updateCellsEv != 0) {
-  // callback_ZN15QCalendarWidget11updateCellsEv();
-}}
+  virtual void updateCells() {
+    if (callback_ZN15QCalendarWidget11updateCellsEv != 0) {
+      // callback_ZN15QCalendarWidget11updateCellsEv();
+    }
+    QCalendarWidget::updateCells();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -128,15 +139,15 @@ void* C_ZNK15QCalendarWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:92
 // [-2] void QCalendarWidget(class QWidget *)
 extern "C"
-void* C_ZN15QCalendarWidgetC1EP7QWidget(QWidget * parent) {
-  (MyQCalendarWidget*)(0);
+void* C_ZN15QCalendarWidgetC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQCalendarWidget*)(0);
   return  new MyQCalendarWidget(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:93
 // [-2] void ~QCalendarWidget()
 extern "C"
-void C_ZN15QCalendarWidgetD1Ev(void *this_) {
+void C_ZN15QCalendarWidgetD2Ev(void *this_) {
   delete (QCalendarWidget*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

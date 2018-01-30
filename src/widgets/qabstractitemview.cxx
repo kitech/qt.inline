@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QAbstractItemView is pure virtual: true
+// QAbstractItemView has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -395,337 +396,394 @@ extern "C" void set_callback_ZNK17QAbstractItemView16viewportSizeHintEv(void*cbf
 
 class MyQAbstractItemView : public QAbstractItemView {
 public:
+  virtual ~MyQAbstractItemView() {}
+// void QAbstractItemView(class QWidget *)
 MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
 // void rowsInserted(const class QModelIndex &, int, int)
-// void rowsInserted(const class QModelIndex &, int, int)
-virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
-  if (callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii != 0) {
-  // callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(parent, start, end);
-}}
+  virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
+    if (callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii != 0) {
+      // callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(parent, start, end);
+    }
+    QAbstractItemView::rowsInserted(parent, start, end);
+  }
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-// void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
-  if (callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii != 0) {
-  // callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(parent, start, end);
-}}
+  virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
+    if (callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii != 0) {
+      // callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(parent, start, end);
+    }
+    QAbstractItemView::rowsAboutToBeRemoved(parent, start, end);
+  }
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-// void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
-  if (callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_ != 0) {
-  // callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_(selected, deselected);
-}}
+  virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
+    if (callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_ != 0) {
+      // callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_(selected, deselected);
+    }
+    QAbstractItemView::selectionChanged(selected, deselected);
+  }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
-// void currentChanged(const class QModelIndex &, const class QModelIndex &)
-virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
-  if (callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_ != 0) {
-  // callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_(current, previous);
-}}
+  virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
+    if (callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_ != 0) {
+      // callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_(current, previous);
+    }
+    QAbstractItemView::currentChanged(current, previous);
+  }
 // void updateEditorData()
-// void updateEditorData()
-virtual void updateEditorData() {
-  if (callback_ZN17QAbstractItemView16updateEditorDataEv != 0) {
-  // callback_ZN17QAbstractItemView16updateEditorDataEv();
-}}
+  virtual void updateEditorData() {
+    if (callback_ZN17QAbstractItemView16updateEditorDataEv != 0) {
+      // callback_ZN17QAbstractItemView16updateEditorDataEv();
+    }
+    QAbstractItemView::updateEditorData();
+  }
 // void updateEditorGeometries()
-// void updateEditorGeometries()
-virtual void updateEditorGeometries() {
-  if (callback_ZN17QAbstractItemView22updateEditorGeometriesEv != 0) {
-  // callback_ZN17QAbstractItemView22updateEditorGeometriesEv();
-}}
+  virtual void updateEditorGeometries() {
+    if (callback_ZN17QAbstractItemView22updateEditorGeometriesEv != 0) {
+      // callback_ZN17QAbstractItemView22updateEditorGeometriesEv();
+    }
+    QAbstractItemView::updateEditorGeometries();
+  }
 // void updateGeometries()
-// void updateGeometries()
-virtual void updateGeometries() {
-  if (callback_ZN17QAbstractItemView16updateGeometriesEv != 0) {
-  // callback_ZN17QAbstractItemView16updateGeometriesEv();
-}}
+  virtual void updateGeometries() {
+    if (callback_ZN17QAbstractItemView16updateGeometriesEv != 0) {
+      // callback_ZN17QAbstractItemView16updateGeometriesEv();
+    }
+    QAbstractItemView::updateGeometries();
+  }
 // void verticalScrollbarAction(int)
-// void verticalScrollbarAction(int)
-virtual void verticalScrollbarAction(int action) {
-  if (callback_ZN17QAbstractItemView23verticalScrollbarActionEi != 0) {
-  // callback_ZN17QAbstractItemView23verticalScrollbarActionEi(action);
-}}
+  virtual void verticalScrollbarAction(int action) {
+    if (callback_ZN17QAbstractItemView23verticalScrollbarActionEi != 0) {
+      // callback_ZN17QAbstractItemView23verticalScrollbarActionEi(action);
+    }
+    QAbstractItemView::verticalScrollbarAction(action);
+  }
 // void horizontalScrollbarAction(int)
-// void horizontalScrollbarAction(int)
-virtual void horizontalScrollbarAction(int action) {
-  if (callback_ZN17QAbstractItemView25horizontalScrollbarActionEi != 0) {
-  // callback_ZN17QAbstractItemView25horizontalScrollbarActionEi(action);
-}}
+  virtual void horizontalScrollbarAction(int action) {
+    if (callback_ZN17QAbstractItemView25horizontalScrollbarActionEi != 0) {
+      // callback_ZN17QAbstractItemView25horizontalScrollbarActionEi(action);
+    }
+    QAbstractItemView::horizontalScrollbarAction(action);
+  }
 // void verticalScrollbarValueChanged(int)
-// void verticalScrollbarValueChanged(int)
-virtual void verticalScrollbarValueChanged(int value) {
-  if (callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi != 0) {
-  // callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi(value);
-}}
+  virtual void verticalScrollbarValueChanged(int value) {
+    if (callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi != 0) {
+      // callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi(value);
+    }
+    QAbstractItemView::verticalScrollbarValueChanged(value);
+  }
 // void horizontalScrollbarValueChanged(int)
-// void horizontalScrollbarValueChanged(int)
-virtual void horizontalScrollbarValueChanged(int value) {
-  if (callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi != 0) {
-  // callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi(value);
-}}
+  virtual void horizontalScrollbarValueChanged(int value) {
+    if (callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi != 0) {
+      // callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi(value);
+    }
+    QAbstractItemView::horizontalScrollbarValueChanged(value);
+  }
 // void closeEditor(class QWidget *, class QAbstractItemDelegate::EndEditHint)
-// void closeEditor(class QWidget *, class QAbstractItemDelegate::EndEditHint)
-virtual void closeEditor(QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
-  if (callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE != 0) {
-  // callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE(editor, hint);
-}}
+  virtual void closeEditor(QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
+    if (callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE != 0) {
+      // callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE(editor, hint);
+    }
+    QAbstractItemView::closeEditor(editor, hint);
+  }
 // void commitData(class QWidget *)
-// void commitData(class QWidget *)
-virtual void commitData(QWidget * editor) {
-  if (callback_ZN17QAbstractItemView10commitDataEP7QWidget != 0) {
-  // callback_ZN17QAbstractItemView10commitDataEP7QWidget(editor);
-}}
+  virtual void commitData(QWidget * editor) {
+    if (callback_ZN17QAbstractItemView10commitDataEP7QWidget != 0) {
+      // callback_ZN17QAbstractItemView10commitDataEP7QWidget(editor);
+    }
+    QAbstractItemView::commitData(editor);
+  }
 // void editorDestroyed(class QObject *)
-// void editorDestroyed(class QObject *)
-virtual void editorDestroyed(QObject * editor) {
-  if (callback_ZN17QAbstractItemView15editorDestroyedEP7QObject != 0) {
-  // callback_ZN17QAbstractItemView15editorDestroyedEP7QObject(editor);
-}}
+  virtual void editorDestroyed(QObject * editor) {
+    if (callback_ZN17QAbstractItemView15editorDestroyedEP7QObject != 0) {
+      // callback_ZN17QAbstractItemView15editorDestroyedEP7QObject(editor);
+    }
+    QAbstractItemView::editorDestroyed(editor);
+  }
 // void setHorizontalStepsPerItem(int)
-// void setHorizontalStepsPerItem(int)
-virtual void setHorizontalStepsPerItem(int steps) {
-  if (callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi != 0) {
-  // callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(steps);
-}}
+  virtual void setHorizontalStepsPerItem(int steps) {
+    if (callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi != 0) {
+      // callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(steps);
+    }
+    QAbstractItemView::setHorizontalStepsPerItem(steps);
+  }
 // int horizontalStepsPerItem()
-// int horizontalStepsPerItem()
-virtual int horizontalStepsPerItem() {
-  if (callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv != 0) {
-  // callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv();
-}}
+  virtual int horizontalStepsPerItem() {
+    if (callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv != 0) {
+      // callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv();
+    }
+    return QAbstractItemView::horizontalStepsPerItem();
+  }
 // void setVerticalStepsPerItem(int)
-// void setVerticalStepsPerItem(int)
-virtual void setVerticalStepsPerItem(int steps) {
-  if (callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi != 0) {
-  // callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi(steps);
-}}
+  virtual void setVerticalStepsPerItem(int steps) {
+    if (callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi != 0) {
+      // callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi(steps);
+    }
+    QAbstractItemView::setVerticalStepsPerItem(steps);
+  }
 // int verticalStepsPerItem()
-// int verticalStepsPerItem()
-virtual int verticalStepsPerItem() {
-  if (callback_ZNK17QAbstractItemView20verticalStepsPerItemEv != 0) {
-  // callback_ZNK17QAbstractItemView20verticalStepsPerItemEv();
-}}
+  virtual int verticalStepsPerItem() {
+    if (callback_ZNK17QAbstractItemView20verticalStepsPerItemEv != 0) {
+      // callback_ZNK17QAbstractItemView20verticalStepsPerItemEv();
+    }
+    return QAbstractItemView::verticalStepsPerItem();
+  }
 // int horizontalOffset()
-// int horizontalOffset()
-virtual int horizontalOffset() {
-  if (callback_ZNK17QAbstractItemView16horizontalOffsetEv != 0) {
-  // callback_ZNK17QAbstractItemView16horizontalOffsetEv();
-}}
+  virtual int horizontalOffset() {
+    if (callback_ZNK17QAbstractItemView16horizontalOffsetEv != 0) {
+      // callback_ZNK17QAbstractItemView16horizontalOffsetEv();
+    }
+    return QAbstractItemView::horizontalOffset();
+  }
 // int verticalOffset()
-// int verticalOffset()
-virtual int verticalOffset() {
-  if (callback_ZNK17QAbstractItemView14verticalOffsetEv != 0) {
-  // callback_ZNK17QAbstractItemView14verticalOffsetEv();
-}}
+  virtual int verticalOffset() {
+    if (callback_ZNK17QAbstractItemView14verticalOffsetEv != 0) {
+      // callback_ZNK17QAbstractItemView14verticalOffsetEv();
+    }
+    return QAbstractItemView::verticalOffset();
+  }
 // bool isIndexHidden(const class QModelIndex &)
-// bool isIndexHidden(const class QModelIndex &)
-virtual bool isIndexHidden(const QModelIndex & index) {
-  if (callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex != 0) {
-  // callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex(index);
-}}
+  virtual bool isIndexHidden(const QModelIndex & index) {
+    if (callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex != 0) {
+      // callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex(index);
+    }
+    return QAbstractItemView::isIndexHidden(index);
+  }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-// void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
-  if (callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
-  // callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
-}}
+  virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
+    if (callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
+      // callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
+    }
+    QAbstractItemView::setSelection(rect, command);
+  }
 // QRegion visualRegionForSelection(const class QItemSelection &)
-// QRegion visualRegionForSelection(const class QItemSelection &)
-virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-  if (callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection != 0) {
-  // callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection(selection);
-}}
+  virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
+    if (callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection != 0) {
+      // callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection(selection);
+    }
+    return QAbstractItemView::visualRegionForSelection(selection);
+  }
 // bool edit(const class QModelIndex &, enum QAbstractItemView::EditTrigger, class QEvent *)
-// bool edit(const class QModelIndex &, enum QAbstractItemView::EditTrigger, class QEvent *)
-virtual bool edit(const QModelIndex & index, QAbstractItemView::EditTrigger trigger, QEvent * event) {
-  if (callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent != 0) {
-  // callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent(index, trigger, event);
-}}
+  virtual bool edit(const QModelIndex & index, QAbstractItemView::EditTrigger trigger, QEvent * event) {
+    if (callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent != 0) {
+      // callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent(index, trigger, event);
+    }
+    return QAbstractItemView::edit(index, trigger, event);
+  }
 // QItemSelectionModel::SelectionFlags selectionCommand(const class QModelIndex &, const class QEvent *)
-// QItemSelectionModel::SelectionFlags selectionCommand(const class QModelIndex &, const class QEvent *)
-virtual QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex & index, const QEvent * event) {
-  if (callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent != 0) {
-  // callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent(index, event);
-}}
+  virtual QItemSelectionModel::SelectionFlags selectionCommand(const QModelIndex & index, const QEvent * event) {
+    if (callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent != 0) {
+      // callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent(index, event);
+    }
+    return QAbstractItemView::selectionCommand(index, event);
+  }
 // QStyleOptionViewItem viewOptions()
-// QStyleOptionViewItem viewOptions()
-virtual QStyleOptionViewItem viewOptions() {
-  if (callback_ZNK17QAbstractItemView11viewOptionsEv != 0) {
-  // callback_ZNK17QAbstractItemView11viewOptionsEv();
-}}
+  virtual QStyleOptionViewItem viewOptions() {
+    if (callback_ZNK17QAbstractItemView11viewOptionsEv != 0) {
+      // callback_ZNK17QAbstractItemView11viewOptionsEv();
+    }
+    return QAbstractItemView::viewOptions();
+  }
 // QAbstractItemView::State state()
-// QAbstractItemView::State state()
-virtual QAbstractItemView::State state() {
-  if (callback_ZNK17QAbstractItemView5stateEv != 0) {
-  // callback_ZNK17QAbstractItemView5stateEv();
-}}
+  virtual QAbstractItemView::State state() {
+    if (callback_ZNK17QAbstractItemView5stateEv != 0) {
+      // callback_ZNK17QAbstractItemView5stateEv();
+    }
+    return QAbstractItemView::state();
+  }
 // void setState(enum QAbstractItemView::State)
-// void setState(enum QAbstractItemView::State)
-virtual void setState(QAbstractItemView::State state) {
-  if (callback_ZN17QAbstractItemView8setStateENS_5StateE != 0) {
-  // callback_ZN17QAbstractItemView8setStateENS_5StateE(state);
-}}
+  virtual void setState(QAbstractItemView::State state) {
+    if (callback_ZN17QAbstractItemView8setStateENS_5StateE != 0) {
+      // callback_ZN17QAbstractItemView8setStateENS_5StateE(state);
+    }
+    QAbstractItemView::setState(state);
+  }
 // void scheduleDelayedItemsLayout()
-// void scheduleDelayedItemsLayout()
-virtual void scheduleDelayedItemsLayout() {
-  if (callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv != 0) {
-  // callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv();
-}}
+  virtual void scheduleDelayedItemsLayout() {
+    if (callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv != 0) {
+      // callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv();
+    }
+    QAbstractItemView::scheduleDelayedItemsLayout();
+  }
 // void executeDelayedItemsLayout()
-// void executeDelayedItemsLayout()
-virtual void executeDelayedItemsLayout() {
-  if (callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv != 0) {
-  // callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv();
-}}
+  virtual void executeDelayedItemsLayout() {
+    if (callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv != 0) {
+      // callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv();
+    }
+    QAbstractItemView::executeDelayedItemsLayout();
+  }
 // void setDirtyRegion(const class QRegion &)
-// void setDirtyRegion(const class QRegion &)
-virtual void setDirtyRegion(const QRegion & region) {
-  if (callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion != 0) {
-  // callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(region);
-}}
+  virtual void setDirtyRegion(const QRegion & region) {
+    if (callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion != 0) {
+      // callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(region);
+    }
+    QAbstractItemView::setDirtyRegion(region);
+  }
 // void scrollDirtyRegion(int, int)
-// void scrollDirtyRegion(int, int)
-virtual void scrollDirtyRegion(int dx, int dy) {
-  if (callback_ZN17QAbstractItemView17scrollDirtyRegionEii != 0) {
-  // callback_ZN17QAbstractItemView17scrollDirtyRegionEii(dx, dy);
-}}
+  virtual void scrollDirtyRegion(int dx, int dy) {
+    if (callback_ZN17QAbstractItemView17scrollDirtyRegionEii != 0) {
+      // callback_ZN17QAbstractItemView17scrollDirtyRegionEii(dx, dy);
+    }
+    QAbstractItemView::scrollDirtyRegion(dx, dy);
+  }
 // QPoint dirtyRegionOffset()
-// QPoint dirtyRegionOffset()
-virtual QPoint dirtyRegionOffset() {
-  if (callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv != 0) {
-  // callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv();
-}}
+  virtual QPoint dirtyRegionOffset() {
+    if (callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv != 0) {
+      // callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv();
+    }
+    return QAbstractItemView::dirtyRegionOffset();
+  }
 // void startAutoScroll()
-// void startAutoScroll()
-virtual void startAutoScroll() {
-  if (callback_ZN17QAbstractItemView15startAutoScrollEv != 0) {
-  // callback_ZN17QAbstractItemView15startAutoScrollEv();
-}}
+  virtual void startAutoScroll() {
+    if (callback_ZN17QAbstractItemView15startAutoScrollEv != 0) {
+      // callback_ZN17QAbstractItemView15startAutoScrollEv();
+    }
+    QAbstractItemView::startAutoScroll();
+  }
 // void stopAutoScroll()
-// void stopAutoScroll()
-virtual void stopAutoScroll() {
-  if (callback_ZN17QAbstractItemView14stopAutoScrollEv != 0) {
-  // callback_ZN17QAbstractItemView14stopAutoScrollEv();
-}}
+  virtual void stopAutoScroll() {
+    if (callback_ZN17QAbstractItemView14stopAutoScrollEv != 0) {
+      // callback_ZN17QAbstractItemView14stopAutoScrollEv();
+    }
+    QAbstractItemView::stopAutoScroll();
+  }
 // void doAutoScroll()
-// void doAutoScroll()
-virtual void doAutoScroll() {
-  if (callback_ZN17QAbstractItemView12doAutoScrollEv != 0) {
-  // callback_ZN17QAbstractItemView12doAutoScrollEv();
-}}
+  virtual void doAutoScroll() {
+    if (callback_ZN17QAbstractItemView12doAutoScrollEv != 0) {
+      // callback_ZN17QAbstractItemView12doAutoScrollEv();
+    }
+    QAbstractItemView::doAutoScroll();
+  }
 // bool focusNextPrevChild(_Bool)
-// bool focusNextPrevChild(_Bool)
-virtual bool focusNextPrevChild(bool next) {
-  if (callback_ZN17QAbstractItemView18focusNextPrevChildEb != 0) {
-  // callback_ZN17QAbstractItemView18focusNextPrevChildEb(next);
-}}
+  virtual bool focusNextPrevChild(bool next) {
+    if (callback_ZN17QAbstractItemView18focusNextPrevChildEb != 0) {
+      // callback_ZN17QAbstractItemView18focusNextPrevChildEb(next);
+    }
+    return QAbstractItemView::focusNextPrevChild(next);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN17QAbstractItemView5eventEP6QEvent != 0) {
-  // callback_ZN17QAbstractItemView5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN17QAbstractItemView5eventEP6QEvent != 0) {
+      // callback_ZN17QAbstractItemView5eventEP6QEvent(event);
+    }
+    return QAbstractItemView::event(event);
+  }
 // bool viewportEvent(class QEvent *)
-// bool viewportEvent(class QEvent *)
-virtual bool viewportEvent(QEvent * event) {
-  if (callback_ZN17QAbstractItemView13viewportEventEP6QEvent != 0) {
-  // callback_ZN17QAbstractItemView13viewportEventEP6QEvent(event);
-}}
+  virtual bool viewportEvent(QEvent * event) {
+    if (callback_ZN17QAbstractItemView13viewportEventEP6QEvent != 0) {
+      // callback_ZN17QAbstractItemView13viewportEventEP6QEvent(event);
+    }
+    return QAbstractItemView::viewportEvent(event);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * event) {
-  if (callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent(event);
-}}
+  virtual void mousePressEvent(QMouseEvent * event) {
+    if (callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent(event);
+    }
+    QAbstractItemView::mousePressEvent(event);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * event) {
-  if (callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent(event);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * event) {
+    if (callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent(event);
+    }
+    QAbstractItemView::mouseMoveEvent(event);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * event) {
-  if (callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent(event);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * event) {
+    if (callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent(event);
+    }
+    QAbstractItemView::mouseReleaseEvent(event);
+  }
 // void mouseDoubleClickEvent(class QMouseEvent *)
-// void mouseDoubleClickEvent(class QMouseEvent *)
-virtual void mouseDoubleClickEvent(QMouseEvent * event) {
-  if (callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent != 0) {
-  // callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent(event);
-}}
+  virtual void mouseDoubleClickEvent(QMouseEvent * event) {
+    if (callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent != 0) {
+      // callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent(event);
+    }
+    QAbstractItemView::mouseDoubleClickEvent(event);
+  }
 // void dragEnterEvent(class QDragEnterEvent *)
-// void dragEnterEvent(class QDragEnterEvent *)
-virtual void dragEnterEvent(QDragEnterEvent * event) {
-  if (callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent != 0) {
-  // callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent(event);
-}}
+  virtual void dragEnterEvent(QDragEnterEvent * event) {
+    if (callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent != 0) {
+      // callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent(event);
+    }
+    QAbstractItemView::dragEnterEvent(event);
+  }
 // void dragMoveEvent(class QDragMoveEvent *)
-// void dragMoveEvent(class QDragMoveEvent *)
-virtual void dragMoveEvent(QDragMoveEvent * event) {
-  if (callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent != 0) {
-  // callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent(event);
-}}
+  virtual void dragMoveEvent(QDragMoveEvent * event) {
+    if (callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent != 0) {
+      // callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent(event);
+    }
+    QAbstractItemView::dragMoveEvent(event);
+  }
 // void dragLeaveEvent(class QDragLeaveEvent *)
-// void dragLeaveEvent(class QDragLeaveEvent *)
-virtual void dragLeaveEvent(QDragLeaveEvent * event) {
-  if (callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent != 0) {
-  // callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent(event);
-}}
+  virtual void dragLeaveEvent(QDragLeaveEvent * event) {
+    if (callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent != 0) {
+      // callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent(event);
+    }
+    QAbstractItemView::dragLeaveEvent(event);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * event) {
-  if (callback_ZN17QAbstractItemView9dropEventEP10QDropEvent != 0) {
-  // callback_ZN17QAbstractItemView9dropEventEP10QDropEvent(event);
-}}
+  virtual void dropEvent(QDropEvent * event) {
+    if (callback_ZN17QAbstractItemView9dropEventEP10QDropEvent != 0) {
+      // callback_ZN17QAbstractItemView9dropEventEP10QDropEvent(event);
+    }
+    QAbstractItemView::dropEvent(event);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * event) {
-  if (callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent(event);
-}}
+  virtual void focusInEvent(QFocusEvent * event) {
+    if (callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent(event);
+    }
+    QAbstractItemView::focusInEvent(event);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * event) {
-  if (callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent(event);
-}}
+  virtual void focusOutEvent(QFocusEvent * event) {
+    if (callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent(event);
+    }
+    QAbstractItemView::focusOutEvent(event);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * event) {
-  if (callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent(event);
-}}
+  virtual void keyPressEvent(QKeyEvent * event) {
+    if (callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent(event);
+    }
+    QAbstractItemView::keyPressEvent(event);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent(event);
+    }
+    QAbstractItemView::resizeEvent(event);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * event) {
-  if (callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent(event);
-}}
+  virtual void timerEvent(QTimerEvent * event) {
+    if (callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent(event);
+    }
+    QAbstractItemView::timerEvent(event);
+  }
 // void inputMethodEvent(class QInputMethodEvent *)
-// void inputMethodEvent(class QInputMethodEvent *)
-virtual void inputMethodEvent(QInputMethodEvent * event) {
-  if (callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent != 0) {
-  // callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(event);
-}}
+  virtual void inputMethodEvent(QInputMethodEvent * event) {
+    if (callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent != 0) {
+      // callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(event);
+    }
+    QAbstractItemView::inputMethodEvent(event);
+  }
 // QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
-// QAbstractItemView::DropIndicatorPosition dropIndicatorPosition()
-virtual QAbstractItemView::DropIndicatorPosition dropIndicatorPosition() {
-  if (callback_ZNK17QAbstractItemView21dropIndicatorPositionEv != 0) {
-  // callback_ZNK17QAbstractItemView21dropIndicatorPositionEv();
-}}
+  virtual QAbstractItemView::DropIndicatorPosition dropIndicatorPosition() {
+    if (callback_ZNK17QAbstractItemView21dropIndicatorPositionEv != 0) {
+      // callback_ZNK17QAbstractItemView21dropIndicatorPositionEv();
+    }
+    return QAbstractItemView::dropIndicatorPosition();
+  }
 // QSize viewportSizeHint()
-// QSize viewportSizeHint()
-virtual QSize viewportSizeHint() {
-  if (callback_ZNK17QAbstractItemView16viewportSizeHintEv != 0) {
-  // callback_ZNK17QAbstractItemView16viewportSizeHintEv();
-}}
+  virtual QSize viewportSizeHint() {
+    if (callback_ZNK17QAbstractItemView16viewportSizeHintEv != 0) {
+      // callback_ZNK17QAbstractItemView16viewportSizeHintEv();
+    }
+    return QAbstractItemView::viewportSizeHint();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -740,14 +798,14 @@ void* C_ZNK17QAbstractItemView10metaObjectEv(void *this_) {
 // [-2] void QAbstractItemView(class QWidget *)
 extern "C"
 void* C_ZN17QAbstractItemViewC1EP7QWidget(QWidget * parent) {
-  (MyQAbstractItemView*)(0);
+  auto _nilp = (MyQAbstractItemView*)(0);
   return 0; // new MyQAbstractItemView(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractitemview.h:128
 // [-2] void ~QAbstractItemView()
 extern "C"
-void C_ZN17QAbstractItemViewD1Ev(void *this_) {
+void C_ZN17QAbstractItemViewD2Ev(void *this_) {
   delete (QAbstractItemView*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

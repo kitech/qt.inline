@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QTimerEvent is pure virtual: false
+// QTimerEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTimerEvent : public QTimerEvent {
 public:
+  virtual ~MyQTimerEvent() {}
+// void QTimerEvent(int)
 MyQTimerEvent(int timerId) : QTimerEvent(timerId) {}
 };
 
@@ -17,15 +20,14 @@ MyQTimerEvent(int timerId) : QTimerEvent(timerId) {}
 // /usr/include/qt/QtCore/qcoreevent.h:340
 // [-2] void QTimerEvent(int)
 extern "C"
-void* C_ZN11QTimerEventC1Ei(int timerId) {
-  (MyQTimerEvent*)(0);
-  return  new MyQTimerEvent(timerId);
+void* C_ZN11QTimerEventC2Ei(int timerId) {
+  return  new QTimerEvent(timerId);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:341
 // [-2] void ~QTimerEvent()
 extern "C"
-void C_ZN11QTimerEventD1Ev(void *this_) {
+void C_ZN11QTimerEventD2Ev(void *this_) {
   delete (QTimerEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

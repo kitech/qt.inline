@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QDoubleSpinBox is pure virtual: false
+// QDoubleSpinBox has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDoubleSpinBox : public QDoubleSpinBox {
 public:
+  virtual ~MyQDoubleSpinBox() {}
+// void QDoubleSpinBox(class QWidget *)
 MyQDoubleSpinBox(QWidget * parent) : QDoubleSpinBox(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK14QDoubleSpinBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qspinbox.h:126
 // [-2] void QDoubleSpinBox(class QWidget *)
 extern "C"
-void* C_ZN14QDoubleSpinBoxC1EP7QWidget(QWidget * parent) {
-  (MyQDoubleSpinBox*)(0);
-  return  new MyQDoubleSpinBox(parent);
+void* C_ZN14QDoubleSpinBoxC2EP7QWidget(QWidget * parent) {
+  return  new QDoubleSpinBox(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:127
 // [-2] void ~QDoubleSpinBox()
 extern "C"
-void C_ZN14QDoubleSpinBoxD1Ev(void *this_) {
+void C_ZN14QDoubleSpinBoxD2Ev(void *this_) {
   delete (QDoubleSpinBox*)(this_);
 }
 // Public Visibility=Default Availability=Available

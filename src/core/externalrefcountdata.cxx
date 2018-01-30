@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // ExternalRefCountData is pure virtual: false
+// ExternalRefCountData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyExternalRefCountData : public QtSharedPointer::ExternalRefCountData {
 public:
+  virtual ~MyExternalRefCountData() {}
+// void ExternalRefCountData(Qt::Initialization)
 MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCountData(arg0) {}
 };
 
@@ -17,15 +20,14 @@ MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCo
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:154
 // [-2] void ExternalRefCountData(Qt::Initialization)
 extern "C"
-void* C_ZN15QtSharedPointer20ExternalRefCountDataC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyExternalRefCountData*)(0);
-  return  new MyExternalRefCountData(arg0);
+void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QtSharedPointer::ExternalRefCountData(arg0);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:155
 // [-2] void ~ExternalRefCountData()
 extern "C"
-void C_ZN15QtSharedPointer20ExternalRefCountDataD1Ev(void *this_) {
+void C_ZN15QtSharedPointer20ExternalRefCountDataD2Ev(void *this_) {
   delete (QtSharedPointer::ExternalRefCountData*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

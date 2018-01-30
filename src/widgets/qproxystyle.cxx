@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QProxyStyle is pure virtual: false
+// QProxyStyle has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,14 +18,18 @@ extern "C" void set_callback_ZN11QProxyStyle5eventEP6QEvent(void*cbfn)
 
 class MyQProxyStyle : public QProxyStyle {
 public:
+  virtual ~MyQProxyStyle() {}
+// void QProxyStyle(class QStyle *)
 MyQProxyStyle(QStyle * style) : QProxyStyle(style) {}
+// void QProxyStyle(const class QString &)
 MyQProxyStyle(const QString & key) : QProxyStyle(key) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QProxyStyle5eventEP6QEvent != 0) {
-  // callback_ZN11QProxyStyle5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QProxyStyle5eventEP6QEvent != 0) {
+      // callback_ZN11QProxyStyle5eventEP6QEvent(e);
+    }
+    return QProxyStyle::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,23 +43,23 @@ void* C_ZNK11QProxyStyle10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qproxystyle.h:57
 // [-2] void QProxyStyle(class QStyle *)
 extern "C"
-void* C_ZN11QProxyStyleC1EP6QStyle(QStyle * style) {
-  (MyQProxyStyle*)(0);
+void* C_ZN11QProxyStyleC2EP6QStyle(QStyle * style) {
+  auto _nilp = (MyQProxyStyle*)(0);
   return  new MyQProxyStyle(style);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:58
 // [-2] void QProxyStyle(const class QString &)
 extern "C"
-void* C_ZN11QProxyStyleC1ERK7QString(const QString & key) {
-  (MyQProxyStyle*)(0);
+void* C_ZN11QProxyStyleC2ERK7QString(const QString & key) {
+  auto _nilp = (MyQProxyStyle*)(0);
   return  new MyQProxyStyle(key);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:59
 // [-2] void ~QProxyStyle()
 extern "C"
-void C_ZN11QProxyStyleD1Ev(void *this_) {
+void C_ZN11QProxyStyleD2Ev(void *this_) {
   delete (QProxyStyle*)(this_);
 }
 // Public Visibility=Default Availability=Available

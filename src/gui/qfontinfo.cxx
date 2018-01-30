@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QFontInfo is pure virtual: false
+// QFontInfo has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFontInfo : public QFontInfo {
 public:
+  virtual ~MyQFontInfo() {}
+// void QFontInfo(const class QFont &)
 MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 };
 
@@ -17,15 +20,14 @@ MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 // /usr/include/qt/QtGui/qfontinfo.h:53
 // [-2] void QFontInfo(const class QFont &)
 extern "C"
-void* C_ZN9QFontInfoC1ERK5QFont(const QFont & arg0) {
-  (MyQFontInfo*)(0);
-  return  new MyQFontInfo(arg0);
+void* C_ZN9QFontInfoC2ERK5QFont(const QFont & arg0) {
+  return  new QFontInfo(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:55
 // [-2] void ~QFontInfo()
 extern "C"
-void C_ZN9QFontInfoD1Ev(void *this_) {
+void C_ZN9QFontInfoD2Ev(void *this_) {
   delete (QFontInfo*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

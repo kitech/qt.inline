@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QSharedData is pure virtual: false
+// QSharedData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSharedData : public QSharedData {
 public:
+  virtual ~MyQSharedData() {}
+// void QSharedData()
 MyQSharedData() : QSharedData() {}
 };
 
@@ -17,8 +20,7 @@ MyQSharedData() : QSharedData() {}
 // /usr/include/qt/QtCore/qshareddata.h:60
 // [-2] void QSharedData()
 extern "C"
-void* C_ZN11QSharedDataC1Ev() {
-  (MyQSharedData*)(0);
-  return  new MyQSharedData();
+void* C_ZN11QSharedDataC2Ev() {
+  return  new QSharedData();
 }
 //  main block end

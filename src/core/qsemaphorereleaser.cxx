@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QSemaphoreReleaser is pure virtual: false
+// QSemaphoreReleaser has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSemaphoreReleaser : public QSemaphoreReleaser {
 public:
+  virtual ~MyQSemaphoreReleaser() {}
+// void QSemaphoreReleaser()
 MyQSemaphoreReleaser() : QSemaphoreReleaser() {}
+// void QSemaphoreReleaser(class QSemaphore &, int)
 MyQSemaphoreReleaser(QSemaphore & sem, int n) : QSemaphoreReleaser(sem, n) {}
+// void QSemaphoreReleaser(class QSemaphore *, int)
 MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
 };
 
@@ -19,31 +24,28 @@ MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
 // /usr/include/qt/QtCore/qsemaphore.h:75
 // [-2] void QSemaphoreReleaser()
 extern "C"
-void* C_ZN18QSemaphoreReleaserC1Ev() {
-  (MyQSemaphoreReleaser*)(0);
-  return  new MyQSemaphoreReleaser();
+void* C_ZN18QSemaphoreReleaserC2Ev() {
+  return  new QSemaphoreReleaser();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:76
 // [-2] void QSemaphoreReleaser(class QSemaphore &, int)
 extern "C"
-void* C_ZN18QSemaphoreReleaserC1ER10QSemaphorei(QSemaphore & sem, int n) {
-  (MyQSemaphoreReleaser*)(0);
-  return  new MyQSemaphoreReleaser(sem, n);
+void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore & sem, int n) {
+  return  new QSemaphoreReleaser(sem, n);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:78
 // [-2] void QSemaphoreReleaser(class QSemaphore *, int)
 extern "C"
-void* C_ZN18QSemaphoreReleaserC1EP10QSemaphorei(QSemaphore * sem, int n) {
-  (MyQSemaphoreReleaser*)(0);
-  return  new MyQSemaphoreReleaser(sem, n);
+void* C_ZN18QSemaphoreReleaserC2EP10QSemaphorei(QSemaphore * sem, int n) {
+  return  new QSemaphoreReleaser(sem, n);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:86
 // [-2] void ~QSemaphoreReleaser()
 extern "C"
-void C_ZN18QSemaphoreReleaserD1Ev(void *this_) {
+void C_ZN18QSemaphoreReleaserD2Ev(void *this_) {
   delete (QSemaphoreReleaser*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

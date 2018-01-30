@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QAccessibleValueChangeEvent is pure virtual: false
+// QAccessibleValueChangeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleValueChangeEvent : public QAccessibleValueChangeEvent {
 public:
+  virtual ~MyQAccessibleValueChangeEvent() {}
+// void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
 MyQAccessibleValueChangeEvent(QObject * obj, const QVariant & val) : QAccessibleValueChangeEvent(obj, val) {}
+// void QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
 MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val) : QAccessibleValueChangeEvent(iface, val) {}
 };
 
@@ -18,23 +22,21 @@ MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val
 // /usr/include/qt/QtGui/qaccessible.h:898
 // [-2] void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
 extern "C"
-void* C_ZN27QAccessibleValueChangeEventC1EP7QObjectRK8QVariant(QObject * obj, const QVariant & val) {
-  (MyQAccessibleValueChangeEvent*)(0);
-  return  new MyQAccessibleValueChangeEvent(obj, val);
+void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, const QVariant & val) {
+  return  new QAccessibleValueChangeEvent(obj, val);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:904
 // [-2] void QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
 extern "C"
-void* C_ZN27QAccessibleValueChangeEventC1EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, const QVariant & val) {
-  (MyQAccessibleValueChangeEvent*)(0);
-  return  new MyQAccessibleValueChangeEvent(iface, val);
+void* C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, const QVariant & val) {
+  return  new QAccessibleValueChangeEvent(iface, val);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:911
 // [-2] void ~QAccessibleValueChangeEvent()
 extern "C"
-void C_ZN27QAccessibleValueChangeEventD1Ev(void *this_) {
+void C_ZN27QAccessibleValueChangeEventD2Ev(void *this_) {
   delete (QAccessibleValueChangeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

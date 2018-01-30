@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QScopedPointerPodDeleter is pure virtual: false
+// QScopedPointerPodDeleter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScopedPointerPodDeleter : public QScopedPointerPodDeleter {
 public:
+  virtual ~MyQScopedPointerPodDeleter() {}
 };
 
 // Public static inline Visibility=Default Availability=Available

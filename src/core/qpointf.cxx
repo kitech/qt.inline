@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QPointF is pure virtual: false
+// QPointF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPointF : public QPointF {
 public:
+  virtual ~MyQPointF() {}
+// void QPointF()
 MyQPointF() : QPointF() {}
+// void QPointF(const class QPoint &)
 MyQPointF(const QPoint & p) : QPointF(p) {}
+// void QPointF(qreal, qreal)
 MyQPointF(qreal xpos, qreal ypos) : QPointF(xpos, ypos) {}
 };
 
@@ -19,25 +24,22 @@ MyQPointF(qreal xpos, qreal ypos) : QPointF(xpos, ypos) {}
 // /usr/include/qt/QtCore/qpoint.h:222
 // [-2] void QPointF()
 extern "C"
-void* C_ZN7QPointFC1Ev() {
-  (MyQPointF*)(0);
-  return  new MyQPointF();
+void* C_ZN7QPointFC2Ev() {
+  return  new QPointF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:223
 // [-2] void QPointF(const class QPoint &)
 extern "C"
-void* C_ZN7QPointFC1ERK6QPoint(const QPoint & p) {
-  (MyQPointF*)(0);
-  return  new MyQPointF(p);
+void* C_ZN7QPointFC2ERK6QPoint(const QPoint & p) {
+  return  new QPointF(p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:224
 // [-2] void QPointF(qreal, qreal)
 extern "C"
-void* C_ZN7QPointFC1Edd(qreal xpos, qreal ypos) {
-  (MyQPointF*)(0);
-  return  new MyQPointF(xpos, ypos);
+void* C_ZN7QPointFC2Edd(qreal xpos, qreal ypos) {
+  return  new QPointF(xpos, ypos);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:226

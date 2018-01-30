@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QSpacerItem is pure virtual: false
+// QSpacerItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSpacerItem : public QSpacerItem {
 public:
+  virtual ~MyQSpacerItem() {}
+// void QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
 MyQSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) : QSpacerItem(w, h, hData, vData) {}
 };
 
@@ -17,15 +20,14 @@ MyQSpacerItem(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData
 // /usr/include/qt/QtWidgets/qlayoutitem.h:95
 // [-2] void QSpacerItem(int, int, class QSizePolicy::Policy, class QSizePolicy::Policy)
 extern "C"
-void* C_ZN11QSpacerItemC1EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) {
-  (MyQSpacerItem*)(0);
-  return  new MyQSpacerItem(w, h, hData, vData);
+void* C_ZN11QSpacerItemC2EiiN11QSizePolicy6PolicyES1_(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData) {
+  return  new QSpacerItem(w, h, hData, vData);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:99
 // [-2] void ~QSpacerItem()
 extern "C"
-void C_ZN11QSpacerItemD1Ev(void *this_) {
+void C_ZN11QSpacerItemD2Ev(void *this_) {
   delete (QSpacerItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionGraphicsItem is pure virtual: false
+// QStyleOptionGraphicsItem has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN24QStyleOptionGraphicsItemC1Ei(void*cbfn)
 
 class MyQStyleOptionGraphicsItem : public QStyleOptionGraphicsItem {
 public:
+  virtual ~MyQStyleOptionGraphicsItem() {}
+// void QStyleOptionGraphicsItem()
 MyQStyleOptionGraphicsItem() : QStyleOptionGraphicsItem() {}
+// void QStyleOptionGraphicsItem(int)
 MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 };
 
@@ -25,9 +29,8 @@ MyQStyleOptionGraphicsItem(int version) : QStyleOptionGraphicsItem(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:669
 // [-2] void QStyleOptionGraphicsItem()
 extern "C"
-void* C_ZN24QStyleOptionGraphicsItemC1Ev() {
-  (MyQStyleOptionGraphicsItem*)(0);
-  return  new MyQStyleOptionGraphicsItem();
+void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
+  return  new QStyleOptionGraphicsItem();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:671

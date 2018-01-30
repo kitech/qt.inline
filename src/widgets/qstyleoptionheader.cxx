@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionHeader is pure virtual: false
+// QStyleOptionHeader has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN18QStyleOptionHeaderC1Ei(void*cbfn)
 
 class MyQStyleOptionHeader : public QStyleOptionHeader {
 public:
+  virtual ~MyQStyleOptionHeader() {}
+// void QStyleOptionHeader()
 MyQStyleOptionHeader() : QStyleOptionHeader() {}
+// void QStyleOptionHeader(int)
 MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:226
 // [-2] void QStyleOptionHeader()
 extern "C"
-void* C_ZN18QStyleOptionHeaderC1Ev() {
-  (MyQStyleOptionHeader*)(0);
-  return  new MyQStyleOptionHeader();
+void* C_ZN18QStyleOptionHeaderC2Ev() {
+  return  new QStyleOptionHeader();
 }
 //  main block end

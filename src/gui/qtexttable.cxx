@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextTable is pure virtual: false
+// QTextTable has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextTable : public QTextTable {
 public:
+  virtual ~MyQTextTable() {}
+// void QTextTable(class QTextDocument *)
 MyQTextTable(QTextDocument * doc) : QTextTable(doc) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QTextTable10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qtexttable.h:102
 // [-2] void QTextTable(class QTextDocument *)
 extern "C"
-void* C_ZN10QTextTableC1EP13QTextDocument(QTextDocument * doc) {
-  (MyQTextTable*)(0);
-  return  new MyQTextTable(doc);
+void* C_ZN10QTextTableC2EP13QTextDocument(QTextDocument * doc) {
+  return  new QTextTable(doc);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:103
 // [-2] void ~QTextTable()
 extern "C"
-void C_ZN10QTextTableD1Ev(void *this_) {
+void C_ZN10QTextTableD2Ev(void *this_) {
   delete (QTextTable*)(this_);
 }
 // Public Visibility=Default Availability=Available

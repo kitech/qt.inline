@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QItemSelection is pure virtual: false
+// QItemSelection has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQItemSelection : public QItemSelection {
 public:
+  virtual ~MyQItemSelection() {}
+// void QItemSelection()
 MyQItemSelection() : QItemSelection() {}
+// void QItemSelection(const class QModelIndex &, const class QModelIndex &)
 MyQItemSelection(const QModelIndex & topLeft, const QModelIndex & bottomRight) : QItemSelection(topLeft, bottomRight) {}
 };
 
@@ -18,17 +22,15 @@ MyQItemSelection(const QModelIndex & topLeft, const QModelIndex & bottomRight) :
 // /usr/include/qt/QtCore/qitemselectionmodel.h:250
 // [-2] void QItemSelection()
 extern "C"
-void* C_ZN14QItemSelectionC1Ev() {
-  (MyQItemSelection*)(0);
-  return  new MyQItemSelection();
+void* C_ZN14QItemSelectionC2Ev() {
+  return  new QItemSelection();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:251
 // [-2] void QItemSelection(const class QModelIndex &, const class QModelIndex &)
 extern "C"
-void* C_ZN14QItemSelectionC1ERK11QModelIndexS2_(const QModelIndex & topLeft, const QModelIndex & bottomRight) {
-  (MyQItemSelection*)(0);
-  return  new MyQItemSelection(topLeft, bottomRight);
+void* C_ZN14QItemSelectionC2ERK11QModelIndexS2_(const QModelIndex & topLeft, const QModelIndex & bottomRight) {
+  return  new QItemSelection(topLeft, bottomRight);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:255

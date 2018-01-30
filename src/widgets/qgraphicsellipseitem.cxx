@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsEllipseItem is pure virtual: false
+// QGraphicsEllipseItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,58 +32,65 @@ extern "C" void set_callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(voi
 
 class MyQGraphicsEllipseItem : public QGraphicsEllipseItem {
 public:
+  virtual ~MyQGraphicsEllipseItem() {}
+// void QGraphicsEllipseItem(class QGraphicsItem *)
 MyQGraphicsEllipseItem(QGraphicsItem * parent) : QGraphicsEllipseItem(parent) {}
+// void QGraphicsEllipseItem(const class QRectF &, class QGraphicsItem *)
 MyQGraphicsEllipseItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsEllipseItem(rect, parent) {}
+// void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
 MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsEllipseItem(x, y, w, h, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
-// bool supportsExtension(enum QGraphicsItem::Extension)
-virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-  if (callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-  // callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
-}}
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+    if (callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+      // callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    }
+    return QGraphicsEllipseItem::supportsExtension(extension);
+  }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-  if (callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-  // callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
-}}
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+    if (callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+      // callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    }
+    QGraphicsEllipseItem::setExtension(extension, variant);
+  }
 // QVariant extension(const class QVariant &)
-// QVariant extension(const class QVariant &)
-virtual QVariant extension(const QVariant & variant) {
-  if (callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant != 0) {
-  // callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(variant);
-}}
+  virtual QVariant extension(const QVariant & variant) {
+    if (callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant != 0) {
+      // callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(variant);
+    }
+    return QGraphicsEllipseItem::extension(variant);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:699
 // [-2] void QGraphicsEllipseItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsEllipseItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsEllipseItem*)(0);
+void* C_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:700
 // [-2] void QGraphicsEllipseItem(const class QRectF &, class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsEllipseItemC1ERK6QRectFP13QGraphicsItem(const QRectF & rect, QGraphicsItem * parent) {
-  (MyQGraphicsEllipseItem*)(0);
+void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(const QRectF & rect, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(rect, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:701
 // [-2] void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsEllipseItemC1EddddP13QGraphicsItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) {
-  (MyQGraphicsEllipseItem*)(0);
+void* C_ZN20QGraphicsEllipseItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
   return  new MyQGraphicsEllipseItem(x, y, w, h, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:702
 // [-2] void ~QGraphicsEllipseItem()
 extern "C"
-void C_ZN20QGraphicsEllipseItemD1Ev(void *this_) {
+void C_ZN20QGraphicsEllipseItemD2Ev(void *this_) {
   delete (QGraphicsEllipseItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

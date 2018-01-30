@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QRgba64 is pure virtual: false
+// QRgba64 has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRgba64 : public QRgba64 {
 public:
+  virtual ~MyQRgba64() {}
+// void QRgba64()
 MyQRgba64() : QRgba64() {}
 };
 
@@ -17,9 +20,8 @@ MyQRgba64() : QRgba64() {}
 // /usr/include/qt/QtGui/qrgba64.h:69
 // [-2] void QRgba64()
 extern "C"
-void* C_ZN7QRgba64C1Ev() {
-  (MyQRgba64*)(0);
-  return  new MyQRgba64();
+void* C_ZN7QRgba64C2Ev() {
+  return  new QRgba64();
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrgba64.h:72

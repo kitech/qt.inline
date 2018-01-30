@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsAnchorLayout is pure virtual: false
+// QGraphicsAnchorLayout has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,28 +18,31 @@ extern "C" void set_callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintER
 
 class MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
 public:
+  virtual ~MyQGraphicsAnchorLayout() {}
+// void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
 MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(parent) {}
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-// QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
-  if (callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
-  // callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
-}}
+  virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
+    if (callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF != 0) {
+      // callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(which, constraint);
+    }
+    return QGraphicsAnchorLayout::sizeHint(which, constraint);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:79
 // [-2] void QGraphicsAnchorLayout(class QGraphicsLayoutItem *)
 extern "C"
-void* C_ZN21QGraphicsAnchorLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
-  (MyQGraphicsAnchorLayout*)(0);
+void* C_ZN21QGraphicsAnchorLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
+  auto _nilp = (MyQGraphicsAnchorLayout*)(0);
   return  new MyQGraphicsAnchorLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:80
 // [-2] void ~QGraphicsAnchorLayout()
 extern "C"
-void C_ZN21QGraphicsAnchorLayoutD1Ev(void *this_) {
+void C_ZN21QGraphicsAnchorLayoutD2Ev(void *this_) {
   delete (QGraphicsAnchorLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

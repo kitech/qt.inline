@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMimeType is pure virtual: false
+// QMimeType has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMimeType : public QMimeType {
 public:
+  virtual ~MyQMimeType() {}
+// void QMimeType()
 MyQMimeType() : QMimeType() {}
 };
 
@@ -17,9 +20,8 @@ MyQMimeType() : QMimeType() {}
 // /usr/include/qt/QtCore/qmimetype.h:78
 // [-2] void QMimeType()
 extern "C"
-void* C_ZN9QMimeTypeC1Ev() {
-  (MyQMimeType*)(0);
-  return  new MyQMimeType();
+void* C_ZN9QMimeTypeC2Ev() {
+  return  new QMimeType();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:84
@@ -32,7 +34,7 @@ void C_ZN9QMimeType4swapERS_(void *this_, QMimeType & other) {
 // /usr/include/qt/QtCore/qmimetype.h:89
 // [-2] void ~QMimeType()
 extern "C"
-void C_ZN9QMimeTypeD1Ev(void *this_) {
+void C_ZN9QMimeTypeD2Ev(void *this_) {
   delete (QMimeType*)(this_);
 }
 // Public Visibility=Default Availability=Available

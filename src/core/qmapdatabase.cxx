@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QMapDataBase is pure virtual: false
+// QMapDataBase has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMapDataBase : public QMapDataBase {
 public:
+  virtual ~MyQMapDataBase() {}
 };
 
 // Public Visibility=Default Availability=Available

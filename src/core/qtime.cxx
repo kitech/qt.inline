@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QTime is pure virtual: false
+// QTime has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTime : public QTime {
 public:
+  virtual ~MyQTime() {}
+// void QTime()
 MyQTime() : QTime() {}
+// void QTime(int, int, int, int)
 MyQTime(int h, int m, int s, int ms) : QTime(h, m, s, ms) {}
 };
 
@@ -18,17 +22,15 @@ MyQTime(int h, int m, int s, int ms) : QTime(h, m, s, ms) {}
 // /usr/include/qt/QtCore/qdatetime.h:159
 // [-2] void QTime()
 extern "C"
-void* C_ZN5QTimeC1Ev() {
-  (MyQTime*)(0);
-  return  new MyQTime();
+void* C_ZN5QTimeC2Ev() {
+  return  new QTime();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:161
 // [-2] void QTime(int, int, int, int)
 extern "C"
-void* C_ZN5QTimeC1Eiiii(int h, int m, int s, int ms) {
-  (MyQTime*)(0);
-  return  new MyQTime(h, m, s, ms);
+void* C_ZN5QTimeC2Eiiii(int h, int m, int s, int ms) {
+  return  new QTime(h, m, s, ms);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:163
@@ -92,8 +94,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qdatetime.h:175
 // [8] QString toString(class QStringView)
 extern "C"
-void* C_ZNK5QTime8toStringE11QStringView(void *this_, QStringView format) {
-  auto rv = ((QTime*)this_)->toString(format);
+void* C_ZNK5QTime8toStringE11QStringView(void *this_, QStringView* format) {
+  auto rv = ((QTime*)this_)->toString(*format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

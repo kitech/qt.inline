@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QMarginsF is pure virtual: false
+// QMarginsF has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMarginsF : public QMarginsF {
 public:
+  virtual ~MyQMarginsF() {}
+// void QMarginsF()
 MyQMarginsF() : QMarginsF() {}
+// void QMarginsF(qreal, qreal, qreal, qreal)
 MyQMarginsF(qreal left, qreal top, qreal right, qreal bottom) : QMarginsF(left, top, right, bottom) {}
+// void QMarginsF(const class QMargins &)
 MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
 };
 
@@ -19,25 +24,22 @@ MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
 // /usr/include/qt/QtCore/qmargins.h:288
 // [-2] void QMarginsF()
 extern "C"
-void* C_ZN9QMarginsFC1Ev() {
-  (MyQMarginsF*)(0);
-  return  new MyQMarginsF();
+void* C_ZN9QMarginsFC2Ev() {
+  return  new QMarginsF();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:289
 // [-2] void QMarginsF(qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN9QMarginsFC1Edddd(qreal left, qreal top, qreal right, qreal bottom) {
-  (MyQMarginsF*)(0);
-  return  new MyQMarginsF(left, top, right, bottom);
+void* C_ZN9QMarginsFC2Edddd(qreal left, qreal top, qreal right, qreal bottom) {
+  return  new QMarginsF(left, top, right, bottom);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:290
 // [-2] void QMarginsF(const class QMargins &)
 extern "C"
-void* C_ZN9QMarginsFC1ERK8QMargins(const QMargins & margins) {
-  (MyQMarginsF*)(0);
-  return  new MyQMarginsF(margins);
+void* C_ZN9QMarginsFC2ERK8QMargins(const QMargins & margins) {
+  return  new QMarginsF(margins);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:292

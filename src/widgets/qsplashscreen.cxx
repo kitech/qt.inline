@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QSplashScreen is pure virtual: false
+// QSplashScreen has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(v
 
 class MyQSplashScreen : public QSplashScreen {
 public:
+  virtual ~MyQSplashScreen() {}
+// void QSplashScreen(const class QPixmap &, Qt::WindowFlags)
 MyQSplashScreen(const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(pixmap, f) {}
+// void QSplashScreen(class QWidget *, const class QPixmap &, Qt::WindowFlags)
 MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(parent, pixmap, f) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN13QSplashScreen5eventEP6QEvent != 0) {
-  // callback_ZN13QSplashScreen5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN13QSplashScreen5eventEP6QEvent != 0) {
+      // callback_ZN13QSplashScreen5eventEP6QEvent(e);
+    }
+    return QSplashScreen::event(e);
+  }
 // void drawContents(class QPainter *)
-// void drawContents(class QPainter *)
-virtual void drawContents(QPainter * painter) {
-  if (callback_ZN13QSplashScreen12drawContentsEP8QPainter != 0) {
-  // callback_ZN13QSplashScreen12drawContentsEP8QPainter(painter);
-}}
+  virtual void drawContents(QPainter * painter) {
+    if (callback_ZN13QSplashScreen12drawContentsEP8QPainter != 0) {
+      // callback_ZN13QSplashScreen12drawContentsEP8QPainter(painter);
+    }
+    QSplashScreen::drawContents(painter);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * arg0) {
-  if (callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(arg0);
-}}
+  virtual void mousePressEvent(QMouseEvent * arg0) {
+    if (callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(arg0);
+    }
+    QSplashScreen::mousePressEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK13QSplashScreen10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsplashscreen.h:57
 // [-2] void QSplashScreen(const class QPixmap &, Qt::WindowFlags)
 extern "C"
-void* C_ZN13QSplashScreenC1ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(const QPixmap & pixmap, QFlags<Qt::WindowType> f) {
-  (MyQSplashScreen*)(0);
+void* C_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE(const QPixmap & pixmap, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQSplashScreen*)(0);
   return  new MyQSplashScreen(pixmap, f);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:58
 // [-2] void QSplashScreen(class QWidget *, const class QPixmap &, Qt::WindowFlags)
 extern "C"
-void* C_ZN13QSplashScreenC1EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) {
-  (MyQSplashScreen*)(0);
+void* C_ZN13QSplashScreenC2EP7QWidgetRK7QPixmap6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQSplashScreen*)(0);
   return  new MyQSplashScreen(parent, pixmap, f);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsplashscreen.h:59
 // [-2] void ~QSplashScreen()
 extern "C"
-void C_ZN13QSplashScreenD1Ev(void *this_) {
+void C_ZN13QSplashScreenD2Ev(void *this_) {
   delete (QSplashScreen*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QStringList is pure virtual: false
+// QStringList has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStringList : public QStringList {
 public:
+  virtual ~MyQStringList() {}
+// void QStringList()
 MyQStringList() : QStringList() {}
+// void QStringList(const class QString &)
 MyQStringList(const QString & i) : QStringList(i) {}
 };
 
@@ -18,17 +22,15 @@ MyQStringList(const QString & i) : QStringList(i) {}
 // /usr/include/qt/QtCore/qstringlist.h:105
 // [-2] void QStringList()
 extern "C"
-void* C_ZN11QStringListC1Ev() {
-  (MyQStringList*)(0);
-  return  new MyQStringList();
+void* C_ZN11QStringListC2Ev() {
+  return  new QStringList();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:106
 // [-2] void QStringList(const class QString &)
 extern "C"
-void* C_ZN11QStringListC1ERK7QString(const QString & i) {
-  (MyQStringList*)(0);
-  return  new MyQStringList(i);
+void* C_ZN11QStringListC2ERK7QString(const QString & i) {
+  return  new QStringList(i);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:122
@@ -41,8 +43,8 @@ bool C_ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE(void *this_, c
 // /usr/include/qt/QtCore/qstringlist.h:123
 // [1] bool contains(class QLatin1String, Qt::CaseSensitivity)
 extern "C"
-bool C_ZNK11QStringList8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String str, Qt::CaseSensitivity cs) {
-  return (bool)((QStringList*)this_)->contains(str, cs);
+bool C_ZNK11QStringList8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* str, Qt::CaseSensitivity cs) {
+  return (bool)((QStringList*)this_)->contains(*str, cs);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:135

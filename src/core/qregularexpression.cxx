@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QRegularExpression is pure virtual: false
+// QRegularExpression has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegularExpression : public QRegularExpression {
 public:
+  virtual ~MyQRegularExpression() {}
+// void QRegularExpression()
 MyQRegularExpression() : QRegularExpression() {}
 };
 
@@ -25,15 +28,14 @@ void C_ZNK18QRegularExpression14patternOptionsEv(void *this_) {
 // /usr/include/qt/QtCore/qregularexpression.h:84
 // [-2] void QRegularExpression()
 extern "C"
-void* C_ZN18QRegularExpressionC1Ev() {
-  (MyQRegularExpression*)(0);
-  return  new MyQRegularExpression();
+void* C_ZN18QRegularExpressionC2Ev() {
+  return  new QRegularExpression();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:87
 // [-2] void ~QRegularExpression()
 extern "C"
-void C_ZN18QRegularExpressionD1Ev(void *this_) {
+void C_ZN18QRegularExpressionD2Ev(void *this_) {
   delete (QRegularExpression*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

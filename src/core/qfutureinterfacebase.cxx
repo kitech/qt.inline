@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QFutureInterfaceBase is pure virtual: false
+// QFutureInterfaceBase has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,34 +25,38 @@ extern "C" void set_callback_ZNK20QFutureInterfaceBase6derefTEv(void*cbfn)
 
 class MyQFutureInterfaceBase : public QFutureInterfaceBase {
 public:
+  virtual ~MyQFutureInterfaceBase() {}
+// void QFutureInterfaceBase(enum QFutureInterfaceBase::State)
 MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterfaceBase(initialState) {}
 // bool refT()
-// bool refT()
-virtual bool refT() {
-  if (callback_ZNK20QFutureInterfaceBase4refTEv != 0) {
-  // callback_ZNK20QFutureInterfaceBase4refTEv();
-}}
+  virtual bool refT() {
+    if (callback_ZNK20QFutureInterfaceBase4refTEv != 0) {
+      // callback_ZNK20QFutureInterfaceBase4refTEv();
+    }
+    return QFutureInterfaceBase::refT();
+  }
 // bool derefT()
-// bool derefT()
-virtual bool derefT() {
-  if (callback_ZNK20QFutureInterfaceBase6derefTEv != 0) {
-  // callback_ZNK20QFutureInterfaceBase6derefTEv();
-}}
+  virtual bool derefT() {
+    if (callback_ZNK20QFutureInterfaceBase6derefTEv != 0) {
+      // callback_ZNK20QFutureInterfaceBase6derefTEv();
+    }
+    return QFutureInterfaceBase::derefT();
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:73
 // [-2] void QFutureInterfaceBase(enum QFutureInterfaceBase::State)
 extern "C"
-void* C_ZN20QFutureInterfaceBaseC1ENS_5StateE(QFutureInterfaceBase::State initialState) {
-  (MyQFutureInterfaceBase*)(0);
+void* C_ZN20QFutureInterfaceBaseC2ENS_5StateE(QFutureInterfaceBase::State initialState) {
+  auto _nilp = (MyQFutureInterfaceBase*)(0);
   return  new MyQFutureInterfaceBase(initialState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:75
 // [-2] void ~QFutureInterfaceBase()
 extern "C"
-void C_ZN20QFutureInterfaceBaseD1Ev(void *this_) {
+void C_ZN20QFutureInterfaceBaseD2Ev(void *this_) {
   delete (QFutureInterfaceBase*)(this_);
 }
 // Public Visibility=Default Availability=Available

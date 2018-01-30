@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QMessageBox is pure virtual: false
+// QMessageBox has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -52,44 +53,53 @@ extern "C" void set_callback_ZN11QMessageBox11changeEventEP6QEvent(void*cbfn)
 
 class MyQMessageBox : public QMessageBox {
 public:
+  virtual ~MyQMessageBox() {}
+// void QMessageBox(class QWidget *)
 MyQMessageBox(QWidget * parent) : QMessageBox(parent) {}
+// void QMessageBox(const class QString &, const class QString &, enum QMessageBox::Icon, int, int, int, class QWidget *, Qt::WindowFlags)
 MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) : QMessageBox(title, text, icon, button0, button1, button2, parent, f) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QMessageBox5eventEP6QEvent != 0) {
-  // callback_ZN11QMessageBox5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QMessageBox5eventEP6QEvent != 0) {
+      // callback_ZN11QMessageBox5eventEP6QEvent(e);
+    }
+    return QMessageBox::event(e);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN11QMessageBox11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN11QMessageBox11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN11QMessageBox11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN11QMessageBox11resizeEventEP12QResizeEvent(event);
+    }
+    QMessageBox::resizeEvent(event);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * event) {
-  if (callback_ZN11QMessageBox9showEventEP10QShowEvent != 0) {
-  // callback_ZN11QMessageBox9showEventEP10QShowEvent(event);
-}}
+  virtual void showEvent(QShowEvent * event) {
+    if (callback_ZN11QMessageBox9showEventEP10QShowEvent != 0) {
+      // callback_ZN11QMessageBox9showEventEP10QShowEvent(event);
+    }
+    QMessageBox::showEvent(event);
+  }
 // void closeEvent(class QCloseEvent *)
-// void closeEvent(class QCloseEvent *)
-virtual void closeEvent(QCloseEvent * event) {
-  if (callback_ZN11QMessageBox10closeEventEP11QCloseEvent != 0) {
-  // callback_ZN11QMessageBox10closeEventEP11QCloseEvent(event);
-}}
+  virtual void closeEvent(QCloseEvent * event) {
+    if (callback_ZN11QMessageBox10closeEventEP11QCloseEvent != 0) {
+      // callback_ZN11QMessageBox10closeEventEP11QCloseEvent(event);
+    }
+    QMessageBox::closeEvent(event);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * event) {
-  if (callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent(event);
-}}
+  virtual void keyPressEvent(QKeyEvent * event) {
+    if (callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent(event);
+    }
+    QMessageBox::keyPressEvent(event);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * event) {
-  if (callback_ZN11QMessageBox11changeEventEP6QEvent != 0) {
-  // callback_ZN11QMessageBox11changeEventEP6QEvent(event);
-}}
+  virtual void changeEvent(QEvent * event) {
+    if (callback_ZN11QMessageBox11changeEventEP6QEvent != 0) {
+      // callback_ZN11QMessageBox11changeEventEP6QEvent(event);
+    }
+    QMessageBox::changeEvent(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -103,15 +113,15 @@ void* C_ZNK11QMessageBox10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmessagebox.h:135
 // [-2] void QMessageBox(class QWidget *)
 extern "C"
-void* C_ZN11QMessageBoxC1EP7QWidget(QWidget * parent) {
-  (MyQMessageBox*)(0);
+void* C_ZN11QMessageBoxC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:139
 // [-2] void ~QMessageBox()
 extern "C"
-void C_ZN11QMessageBoxD1Ev(void *this_) {
+void C_ZN11QMessageBoxD2Ev(void *this_) {
   delete (QMessageBox*)(this_);
 }
 // Public Visibility=Default Availability=Available
@@ -331,8 +341,8 @@ void C_ZN11QMessageBox7aboutQtEP7QWidgetRK7QString(QWidget * parent, const QStri
 // /usr/include/qt/QtWidgets/qmessagebox.h:202
 // [-2] void QMessageBox(const class QString &, const class QString &, enum QMessageBox::Icon, int, int, int, class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN11QMessageBoxC1ERK7QStringS2_NS_4IconEiiiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) {
-  (MyQMessageBox*)(0);
+void* C_ZN11QMessageBoxC2ERK7QStringS2_NS_4IconEiiiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(title, text, icon, button0, button1, button2, parent, f);
 }
 // Public static Visibility=Default Availability=Available

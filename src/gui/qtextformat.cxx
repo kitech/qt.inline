@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QTextFormat is pure virtual: false
+// QTextFormat has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextFormat : public QTextFormat {
 public:
+  virtual ~MyQTextFormat() {}
+// void QTextFormat()
 MyQTextFormat() : QTextFormat() {}
+// void QTextFormat(int)
 MyQTextFormat(int type) : QTextFormat(type) {}
 };
 
@@ -18,23 +22,21 @@ MyQTextFormat(int type) : QTextFormat(type) {}
 // /usr/include/qt/QtGui/qtextformat.h:288
 // [-2] void QTextFormat()
 extern "C"
-void* C_ZN11QTextFormatC1Ev() {
-  (MyQTextFormat*)(0);
-  return  new MyQTextFormat();
+void* C_ZN11QTextFormatC2Ev() {
+  return  new QTextFormat();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:290
 // [-2] void QTextFormat(int)
 extern "C"
-void* C_ZN11QTextFormatC1Ei(int type) {
-  (MyQTextFormat*)(0);
-  return  new MyQTextFormat(type);
+void* C_ZN11QTextFormatC2Ei(int type) {
+  return  new QTextFormat(type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:294
 // [-2] void ~QTextFormat()
 extern "C"
-void C_ZN11QTextFormatD1Ev(void *this_) {
+void C_ZN11QTextFormatD2Ev(void *this_) {
   delete (QTextFormat*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

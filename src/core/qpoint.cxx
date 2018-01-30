@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QPoint is pure virtual: false
+// QPoint has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPoint : public QPoint {
 public:
+  virtual ~MyQPoint() {}
+// void QPoint()
 MyQPoint() : QPoint() {}
+// void QPoint(int, int)
 MyQPoint(int xpos, int ypos) : QPoint(xpos, ypos) {}
 };
 
@@ -18,17 +22,15 @@ MyQPoint(int xpos, int ypos) : QPoint(xpos, ypos) {}
 // /usr/include/qt/QtCore/qpoint.h:55
 // [-2] void QPoint()
 extern "C"
-void* C_ZN6QPointC1Ev() {
-  (MyQPoint*)(0);
-  return  new MyQPoint();
+void* C_ZN6QPointC2Ev() {
+  return  new QPoint();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:56
 // [-2] void QPoint(int, int)
 extern "C"
-void* C_ZN6QPointC1Eii(int xpos, int ypos) {
-  (MyQPoint*)(0);
-  return  new MyQPoint(xpos, ypos);
+void* C_ZN6QPointC2Eii(int xpos, int ypos) {
+  return  new QPoint(xpos, ypos);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:58

@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextFragment is pure virtual: false
+// QTextFragment has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextFragment : public QTextFragment {
 public:
+  virtual ~MyQTextFragment() {}
+// void QTextFragment()
 MyQTextFragment() : QTextFragment() {}
 };
 
@@ -17,9 +20,8 @@ MyQTextFragment() : QTextFragment() {}
 // /usr/include/qt/QtGui/qtextobject.h:307
 // [-2] void QTextFragment()
 extern "C"
-void* C_ZN13QTextFragmentC1Ev() {
-  (MyQTextFragment*)(0);
-  return  new MyQTextFragment();
+void* C_ZN13QTextFragmentC2Ev() {
+  return  new QTextFragment();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:311

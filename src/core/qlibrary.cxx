@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QLibrary is pure virtual: false
+// QLibrary has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLibrary : public QLibrary {
 public:
+  virtual ~MyQLibrary() {}
+// void QLibrary(class QObject *)
 MyQLibrary(QObject * parent) : QLibrary(parent) {}
+// void QLibrary(const class QString &, class QObject *)
 MyQLibrary(const QString & fileName, QObject * parent) : QLibrary(fileName, parent) {}
+// void QLibrary(const class QString &, int, class QObject *)
 MyQLibrary(const QString & fileName, int verNum, QObject * parent) : QLibrary(fileName, verNum, parent) {}
+// void QLibrary(const class QString &, const class QString &, class QObject *)
 MyQLibrary(const QString & fileName, const QString & version, QObject * parent) : QLibrary(fileName, version, parent) {}
 };
 
@@ -27,39 +33,35 @@ void* C_ZNK8QLibrary10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qlibrary.h:68
 // [-2] void QLibrary(class QObject *)
 extern "C"
-void* C_ZN8QLibraryC1EP7QObject(QObject * parent) {
-  (MyQLibrary*)(0);
-  return  new MyQLibrary(parent);
+void* C_ZN8QLibraryC2EP7QObject(QObject * parent) {
+  return  new QLibrary(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:69
 // [-2] void QLibrary(const class QString &, class QObject *)
 extern "C"
-void* C_ZN8QLibraryC1ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
-  (MyQLibrary*)(0);
-  return  new MyQLibrary(fileName, parent);
+void* C_ZN8QLibraryC2ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
+  return  new QLibrary(fileName, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:70
 // [-2] void QLibrary(const class QString &, int, class QObject *)
 extern "C"
-void* C_ZN8QLibraryC1ERK7QStringiP7QObject(const QString & fileName, int verNum, QObject * parent) {
-  (MyQLibrary*)(0);
-  return  new MyQLibrary(fileName, verNum, parent);
+void* C_ZN8QLibraryC2ERK7QStringiP7QObject(const QString & fileName, int verNum, QObject * parent) {
+  return  new QLibrary(fileName, verNum, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:71
 // [-2] void QLibrary(const class QString &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN8QLibraryC1ERK7QStringS2_P7QObject(const QString & fileName, const QString & version, QObject * parent) {
-  (MyQLibrary*)(0);
-  return  new MyQLibrary(fileName, version, parent);
+void* C_ZN8QLibraryC2ERK7QStringS2_P7QObject(const QString & fileName, const QString & version, QObject * parent) {
+  return  new QLibrary(fileName, version, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:72
 // [-2] void ~QLibrary()
 extern "C"
-void C_ZN8QLibraryD1Ev(void *this_) {
+void C_ZN8QLibraryD2Ev(void *this_) {
   delete (QLibrary*)(this_);
 }
 // Public Visibility=Default Availability=Available

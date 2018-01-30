@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QShortcutEvent is pure virtual: false
+// QShortcutEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQShortcutEvent : public QShortcutEvent {
 public:
+  virtual ~MyQShortcutEvent() {}
+// void QShortcutEvent(const class QKeySequence &, int, _Bool)
 MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
 };
 
@@ -17,15 +20,14 @@ MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEv
 // /usr/include/qt/QtGui/qevent.h:767
 // [-2] void QShortcutEvent(const class QKeySequence &, int, _Bool)
 extern "C"
-void* C_ZN14QShortcutEventC1ERK12QKeySequenceib(const QKeySequence & key, int id, bool ambiguous) {
-  (MyQShortcutEvent*)(0);
-  return  new MyQShortcutEvent(key, id, ambiguous);
+void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(const QKeySequence & key, int id, bool ambiguous) {
+  return  new QShortcutEvent(key, id, ambiguous);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:768
 // [-2] void ~QShortcutEvent()
 extern "C"
-void C_ZN14QShortcutEventD1Ev(void *this_) {
+void C_ZN14QShortcutEventD2Ev(void *this_) {
   delete (QShortcutEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

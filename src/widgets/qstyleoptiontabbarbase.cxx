@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionTabBarBase is pure virtual: false
+// QStyleOptionTabBarBase has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN22QStyleOptionTabBarBaseC1Ei(void*cbfn)
 
 class MyQStyleOptionTabBarBase : public QStyleOptionTabBarBase {
 public:
+  virtual ~MyQStyleOptionTabBarBase() {}
+// void QStyleOptionTabBarBase()
 MyQStyleOptionTabBarBase() : QStyleOptionTabBarBase() {}
+// void QStyleOptionTabBarBase(int)
 MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:195
 // [-2] void QStyleOptionTabBarBase()
 extern "C"
-void* C_ZN22QStyleOptionTabBarBaseC1Ev() {
-  (MyQStyleOptionTabBarBase*)(0);
-  return  new MyQStyleOptionTabBarBase();
+void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
+  return  new QStyleOptionTabBarBase();
 }
 //  main block end

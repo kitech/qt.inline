@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QModelIndex is pure virtual: false
+// QModelIndex has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQModelIndex : public QModelIndex {
 public:
+  virtual ~MyQModelIndex() {}
+// void QModelIndex()
 MyQModelIndex() : QModelIndex() {}
 };
 
@@ -17,9 +20,8 @@ MyQModelIndex() : QModelIndex() {}
 // /usr/include/qt/QtCore/qabstractitemmodel.h:58
 // [-2] void QModelIndex()
 extern "C"
-void* C_ZN11QModelIndexC1Ev() {
-  (MyQModelIndex*)(0);
-  return  new MyQModelIndex();
+void* C_ZN11QModelIndexC2Ev() {
+  return  new QModelIndex();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:60

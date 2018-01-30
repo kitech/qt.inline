@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QStringListModel is pure virtual: false
+// QStringListModel has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStringListModel : public QStringListModel {
 public:
+  virtual ~MyQStringListModel() {}
+// void QStringListModel(class QObject *)
 MyQStringListModel(QObject * parent) : QStringListModel(parent) {}
+// void QStringListModel(const class QStringList &, class QObject *)
 MyQStringListModel(const QStringList & strings, QObject * parent) : QStringListModel(strings, parent) {}
 };
 
@@ -25,17 +29,15 @@ void* C_ZNK16QStringListModel10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qstringlistmodel.h:55
 // [-2] void QStringListModel(class QObject *)
 extern "C"
-void* C_ZN16QStringListModelC1EP7QObject(QObject * parent) {
-  (MyQStringListModel*)(0);
-  return  new MyQStringListModel(parent);
+void* C_ZN16QStringListModelC2EP7QObject(QObject * parent) {
+  return  new QStringListModel(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlistmodel.h:56
 // [-2] void QStringListModel(const class QStringList &, class QObject *)
 extern "C"
-void* C_ZN16QStringListModelC1ERK11QStringListP7QObject(const QStringList & strings, QObject * parent) {
-  (MyQStringListModel*)(0);
-  return  new MyQStringListModel(strings, parent);
+void* C_ZN16QStringListModelC2ERK11QStringListP7QObject(const QStringList & strings, QObject * parent) {
+  return  new QStringListModel(strings, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlistmodel.h:58

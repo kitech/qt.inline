@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QProcess is pure virtual: false
+// QProcess has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZN8QProcess9writeDataEPKcx(void*cbfn)
 
 class MyQProcess : public QProcess {
 public:
+  virtual ~MyQProcess() {}
+// void QProcess(class QObject *)
 MyQProcess(QObject * parent) : QProcess(parent) {}
 // void setProcessState(enum QProcess::ProcessState)
-// void setProcessState(enum QProcess::ProcessState)
-virtual void setProcessState(QProcess::ProcessState state) {
-  if (callback_ZN8QProcess15setProcessStateENS_12ProcessStateE != 0) {
-  // callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(state);
-}}
+  virtual void setProcessState(QProcess::ProcessState state) {
+    if (callback_ZN8QProcess15setProcessStateENS_12ProcessStateE != 0) {
+      // callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(state);
+    }
+    QProcess::setProcessState(state);
+  }
 // void setupChildProcess()
-// void setupChildProcess()
-virtual void setupChildProcess() {
-  if (callback_ZN8QProcess17setupChildProcessEv != 0) {
-  // callback_ZN8QProcess17setupChildProcessEv();
-}}
+  virtual void setupChildProcess() {
+    if (callback_ZN8QProcess17setupChildProcessEv != 0) {
+      // callback_ZN8QProcess17setupChildProcessEv();
+    }
+    QProcess::setupChildProcess();
+  }
 // qint64 readData(char *, qint64)
-// qint64 readData(char *, qint64)
-virtual qint64 readData(char * data, qint64 maxlen) {
-  if (callback_ZN8QProcess8readDataEPcx != 0) {
-  // callback_ZN8QProcess8readDataEPcx(data, maxlen);
-}}
+  virtual qint64 readData(char * data, qint64 maxlen) {
+    if (callback_ZN8QProcess8readDataEPcx != 0) {
+      // callback_ZN8QProcess8readDataEPcx(data, maxlen);
+    }
+    return QProcess::readData(data, maxlen);
+  }
 // qint64 writeData(const char *, qint64)
-// qint64 writeData(const char *, qint64)
-virtual qint64 writeData(const char * data, qint64 len) {
-  if (callback_ZN8QProcess9writeDataEPKcx != 0) {
-  // callback_ZN8QProcess9writeDataEPKcx(data, len);
-}}
+  virtual qint64 writeData(const char * data, qint64 len) {
+    if (callback_ZN8QProcess9writeDataEPKcx != 0) {
+      // callback_ZN8QProcess9writeDataEPKcx(data, len);
+    }
+    return QProcess::writeData(data, len);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -76,15 +83,15 @@ void* C_ZNK8QProcess10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qprocess.h:158
 // [-2] void QProcess(class QObject *)
 extern "C"
-void* C_ZN8QProcessC1EP7QObject(QObject * parent) {
-  (MyQProcess*)(0);
+void* C_ZN8QProcessC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQProcess*)(0);
   return  new MyQProcess(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:159
 // [-2] void ~QProcess()
 extern "C"
-void C_ZN8QProcessD1Ev(void *this_) {
+void C_ZN8QProcessD2Ev(void *this_) {
   delete (QProcess*)(this_);
 }
 // Public Visibility=Default Availability=Available

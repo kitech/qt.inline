@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QRandomGenerator is pure virtual: false
+// QRandomGenerator has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,9 +18,14 @@ extern "C" void set_callback_ZN16QRandomGeneratorC1ENS_6SystemE(void*cbfn)
 
 class MyQRandomGenerator : public QRandomGenerator {
 public:
+  virtual ~MyQRandomGenerator() {}
+// void QRandomGenerator(quint32)
 MyQRandomGenerator(quint32 seedValue) : QRandomGenerator(seedValue) {}
+// void QRandomGenerator(const quint32 *, qsizetype)
 MyQRandomGenerator(const quint32 * seedBuffer, qsizetype len) : QRandomGenerator(seedBuffer, len) {}
+// void QRandomGenerator(const quint32 *, const quint32 *)
 MyQRandomGenerator(const quint32 * begin, const quint32 * end) : QRandomGenerator(begin, end) {}
+// void QRandomGenerator(enum QRandomGenerator::System)
 MyQRandomGenerator(QRandomGenerator::System arg0) : QRandomGenerator(arg0) {}
 };
 
@@ -27,25 +33,22 @@ MyQRandomGenerator(QRandomGenerator::System arg0) : QRandomGenerator(arg0) {}
 // /usr/include/qt/QtCore/qrandom.h:55
 // [-2] void QRandomGenerator(quint32)
 extern "C"
-void* C_ZN16QRandomGeneratorC1Ej(quint32 seedValue) {
-  (MyQRandomGenerator*)(0);
-  return  new MyQRandomGenerator(seedValue);
+void* C_ZN16QRandomGeneratorC2Ej(quint32 seedValue) {
+  return  new QRandomGenerator(seedValue);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:61
 // [-2] void QRandomGenerator(const quint32 *, qsizetype)
 extern "C"
-void* C_ZN16QRandomGeneratorC1EPKjx(const quint32 * seedBuffer, qsizetype len) {
-  (MyQRandomGenerator*)(0);
-  return  new MyQRandomGenerator(seedBuffer, len);
+void* C_ZN16QRandomGeneratorC2EPKjx(const quint32 * seedBuffer, qsizetype len) {
+  return  new QRandomGenerator(seedBuffer, len);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:65
 // [-2] void QRandomGenerator(const quint32 *, const quint32 *)
 extern "C"
-void* C_ZN16QRandomGeneratorC1EPKjS1_(const quint32 * begin, const quint32 * end) {
-  (MyQRandomGenerator*)(0);
-  return  new MyQRandomGenerator(begin, end);
+void* C_ZN16QRandomGeneratorC2EPKjS1_(const quint32 * begin, const quint32 * end) {
+  return  new QRandomGenerator(begin, end);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrandom.h:77

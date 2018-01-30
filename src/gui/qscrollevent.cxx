@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QScrollEvent is pure virtual: false
+// QScrollEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScrollEvent : public QScrollEvent {
 public:
+  virtual ~MyQScrollEvent() {}
+// void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
 MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) : QScrollEvent(contentPos, overshoot, scrollState) {}
 };
 
@@ -17,15 +20,14 @@ MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEve
 // /usr/include/qt/QtGui/qevent.h:1022
 // [-2] void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
 extern "C"
-void* C_ZN12QScrollEventC1ERK7QPointFS2_NS_11ScrollStateE(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) {
-  (MyQScrollEvent*)(0);
-  return  new MyQScrollEvent(contentPos, overshoot, scrollState);
+void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) {
+  return  new QScrollEvent(contentPos, overshoot, scrollState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1023
 // [-2] void ~QScrollEvent()
 extern "C"
-void C_ZN12QScrollEventD1Ev(void *this_) {
+void C_ZN12QScrollEventD2Ev(void *this_) {
   delete (QScrollEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

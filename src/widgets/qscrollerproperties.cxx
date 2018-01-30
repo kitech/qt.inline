@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QScrollerProperties is pure virtual: false
+// QScrollerProperties has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScrollerProperties : public QScrollerProperties {
 public:
+  virtual ~MyQScrollerProperties() {}
+// void QScrollerProperties()
 MyQScrollerProperties() : QScrollerProperties() {}
 };
 
@@ -17,15 +20,14 @@ MyQScrollerProperties() : QScrollerProperties() {}
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:60
 // [-2] void QScrollerProperties()
 extern "C"
-void* C_ZN19QScrollerPropertiesC1Ev() {
-  (MyQScrollerProperties*)(0);
-  return  new MyQScrollerProperties();
+void* C_ZN19QScrollerPropertiesC2Ev() {
+  return  new QScrollerProperties();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:63
 // [-2] void ~QScrollerProperties()
 extern "C"
-void C_ZN19QScrollerPropertiesD1Ev(void *this_) {
+void C_ZN19QScrollerPropertiesD2Ev(void *this_) {
   delete (QScrollerProperties*)(this_);
 }
 // Public static Visibility=Default Availability=Available

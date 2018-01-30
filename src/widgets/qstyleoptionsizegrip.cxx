@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionSizeGrip is pure virtual: false
+// QStyleOptionSizeGrip has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN20QStyleOptionSizeGripC1Ei(void*cbfn)
 
 class MyQStyleOptionSizeGrip : public QStyleOptionSizeGrip {
 public:
+  virtual ~MyQStyleOptionSizeGrip() {}
+// void QStyleOptionSizeGrip()
 MyQStyleOptionSizeGrip() : QStyleOptionSizeGrip() {}
+// void QStyleOptionSizeGrip(int)
 MyQStyleOptionSizeGrip(int version) : QStyleOptionSizeGrip(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionSizeGrip(int version) : QStyleOptionSizeGrip(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:653
 // [-2] void QStyleOptionSizeGrip()
 extern "C"
-void* C_ZN20QStyleOptionSizeGripC1Ev() {
-  (MyQStyleOptionSizeGrip*)(0);
-  return  new MyQStyleOptionSizeGrip();
+void* C_ZN20QStyleOptionSizeGripC2Ev() {
+  return  new QStyleOptionSizeGrip();
 }
 //  main block end

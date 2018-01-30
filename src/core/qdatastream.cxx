@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QDataStream is pure virtual: false
+// QDataStream has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDataStream : public QDataStream {
 public:
+  virtual ~MyQDataStream() {}
+// void QDataStream()
 MyQDataStream() : QDataStream() {}
+// void QDataStream(class QIODevice *)
 MyQDataStream(QIODevice * arg0) : QDataStream(arg0) {}
+// void QDataStream(const class QByteArray &)
 MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
 };
 
@@ -19,31 +24,28 @@ MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
 // /usr/include/qt/QtCore/qdatastream.h:123
 // [-2] void QDataStream()
 extern "C"
-void* C_ZN11QDataStreamC1Ev() {
-  (MyQDataStream*)(0);
-  return  new MyQDataStream();
+void* C_ZN11QDataStreamC2Ev() {
+  return  new QDataStream();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:124
 // [-2] void QDataStream(class QIODevice *)
 extern "C"
-void* C_ZN11QDataStreamC1EP9QIODevice(QIODevice * arg0) {
-  (MyQDataStream*)(0);
-  return  new MyQDataStream(arg0);
+void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
+  return  new QDataStream(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:126
 // [-2] void QDataStream(const class QByteArray &)
 extern "C"
-void* C_ZN11QDataStreamC1ERK10QByteArray(const QByteArray & arg0) {
-  (MyQDataStream*)(0);
-  return  new MyQDataStream(arg0);
+void* C_ZN11QDataStreamC2ERK10QByteArray(const QByteArray & arg0) {
+  return  new QDataStream(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:127
 // [-2] void ~QDataStream()
 extern "C"
-void C_ZN11QDataStreamD1Ev(void *this_) {
+void C_ZN11QDataStreamD2Ev(void *this_) {
   delete (QDataStream*)(this_);
 }
 // Public Visibility=Default Availability=Available

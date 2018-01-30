@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QToolBar is pure virtual: false
+// QToolBar has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,38 +46,46 @@ extern "C" void set_callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBa
 
 class MyQToolBar : public QToolBar {
 public:
+  virtual ~MyQToolBar() {}
+// void QToolBar(const class QString &, class QWidget *)
 MyQToolBar(const QString & title, QWidget * parent) : QToolBar(title, parent) {}
+// void QToolBar(class QWidget *)
 MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 // void actionEvent(class QActionEvent *)
-// void actionEvent(class QActionEvent *)
-virtual void actionEvent(QActionEvent * event) {
-  if (callback_ZN8QToolBar11actionEventEP12QActionEvent != 0) {
-  // callback_ZN8QToolBar11actionEventEP12QActionEvent(event);
-}}
+  virtual void actionEvent(QActionEvent * event) {
+    if (callback_ZN8QToolBar11actionEventEP12QActionEvent != 0) {
+      // callback_ZN8QToolBar11actionEventEP12QActionEvent(event);
+    }
+    QToolBar::actionEvent(event);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * event) {
-  if (callback_ZN8QToolBar11changeEventEP6QEvent != 0) {
-  // callback_ZN8QToolBar11changeEventEP6QEvent(event);
-}}
+  virtual void changeEvent(QEvent * event) {
+    if (callback_ZN8QToolBar11changeEventEP6QEvent != 0) {
+      // callback_ZN8QToolBar11changeEventEP6QEvent(event);
+    }
+    QToolBar::changeEvent(event);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * event) {
-  if (callback_ZN8QToolBar10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN8QToolBar10paintEventEP11QPaintEvent(event);
-}}
+  virtual void paintEvent(QPaintEvent * event) {
+    if (callback_ZN8QToolBar10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN8QToolBar10paintEventEP11QPaintEvent(event);
+    }
+    QToolBar::paintEvent(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN8QToolBar5eventEP6QEvent != 0) {
-  // callback_ZN8QToolBar5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN8QToolBar5eventEP6QEvent != 0) {
+      // callback_ZN8QToolBar5eventEP6QEvent(event);
+    }
+    return QToolBar::event(event);
+  }
 // void initStyleOption(class QStyleOptionToolBar *)
-// void initStyleOption(class QStyleOptionToolBar *)
-virtual void initStyleOption(QStyleOptionToolBar * option) {
-  if (callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar != 0) {
-  // callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(option);
-}}
+  virtual void initStyleOption(QStyleOptionToolBar * option) {
+    if (callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar != 0) {
+      // callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(option);
+    }
+    QToolBar::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -90,23 +99,23 @@ void* C_ZNK8QToolBar10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbar.h:79
 // [-2] void QToolBar(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN8QToolBarC1ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
-  (MyQToolBar*)(0);
+void* C_ZN8QToolBarC2ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+  auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(title, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:80
 // [-2] void QToolBar(class QWidget *)
 extern "C"
-void* C_ZN8QToolBarC1EP7QWidget(QWidget * parent) {
-  (MyQToolBar*)(0);
+void* C_ZN8QToolBarC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQToolBar*)(0);
   return  new MyQToolBar(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:81
 // [-2] void ~QToolBar()
 extern "C"
-void C_ZN8QToolBarD1Ev(void *this_) {
+void C_ZN8QToolBarD2Ev(void *this_) {
   delete (QToolBar*)(this_);
 }
 // Public Visibility=Default Availability=Available

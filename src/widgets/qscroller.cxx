@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QScroller is pure virtual: false
+// QScroller has virtual projected: false
 //  header block end
 
 //  main block begin

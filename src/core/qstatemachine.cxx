@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QStateMachine is pure virtual: false
+// QStateMachine has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,50 +60,60 @@ extern "C" void set_callback_ZN13QStateMachine5eventEP6QEvent(void*cbfn)
 
 class MyQStateMachine : public QStateMachine {
 public:
+  virtual ~MyQStateMachine() {}
+// void QStateMachine(class QObject *)
 MyQStateMachine(QObject * parent) : QStateMachine(parent) {}
+// void QStateMachine(class QState::ChildMode, class QObject *)
 MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(childMode, parent) {}
 // void onEntry(class QEvent *)
-// void onEntry(class QEvent *)
-virtual void onEntry(QEvent * event) {
-  if (callback_ZN13QStateMachine7onEntryEP6QEvent != 0) {
-  // callback_ZN13QStateMachine7onEntryEP6QEvent(event);
-}}
+  virtual void onEntry(QEvent * event) {
+    if (callback_ZN13QStateMachine7onEntryEP6QEvent != 0) {
+      // callback_ZN13QStateMachine7onEntryEP6QEvent(event);
+    }
+    QStateMachine::onEntry(event);
+  }
 // void onExit(class QEvent *)
-// void onExit(class QEvent *)
-virtual void onExit(QEvent * event) {
-  if (callback_ZN13QStateMachine6onExitEP6QEvent != 0) {
-  // callback_ZN13QStateMachine6onExitEP6QEvent(event);
-}}
+  virtual void onExit(QEvent * event) {
+    if (callback_ZN13QStateMachine6onExitEP6QEvent != 0) {
+      // callback_ZN13QStateMachine6onExitEP6QEvent(event);
+    }
+    QStateMachine::onExit(event);
+  }
 // void beginSelectTransitions(class QEvent *)
-// void beginSelectTransitions(class QEvent *)
-virtual void beginSelectTransitions(QEvent * event) {
-  if (callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent != 0) {
-  // callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(event);
-}}
+  virtual void beginSelectTransitions(QEvent * event) {
+    if (callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent != 0) {
+      // callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(event);
+    }
+    QStateMachine::beginSelectTransitions(event);
+  }
 // void endSelectTransitions(class QEvent *)
-// void endSelectTransitions(class QEvent *)
-virtual void endSelectTransitions(QEvent * event) {
-  if (callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent != 0) {
-  // callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent(event);
-}}
+  virtual void endSelectTransitions(QEvent * event) {
+    if (callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent != 0) {
+      // callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent(event);
+    }
+    QStateMachine::endSelectTransitions(event);
+  }
 // void beginMicrostep(class QEvent *)
-// void beginMicrostep(class QEvent *)
-virtual void beginMicrostep(QEvent * event) {
-  if (callback_ZN13QStateMachine14beginMicrostepEP6QEvent != 0) {
-  // callback_ZN13QStateMachine14beginMicrostepEP6QEvent(event);
-}}
+  virtual void beginMicrostep(QEvent * event) {
+    if (callback_ZN13QStateMachine14beginMicrostepEP6QEvent != 0) {
+      // callback_ZN13QStateMachine14beginMicrostepEP6QEvent(event);
+    }
+    QStateMachine::beginMicrostep(event);
+  }
 // void endMicrostep(class QEvent *)
-// void endMicrostep(class QEvent *)
-virtual void endMicrostep(QEvent * event) {
-  if (callback_ZN13QStateMachine12endMicrostepEP6QEvent != 0) {
-  // callback_ZN13QStateMachine12endMicrostepEP6QEvent(event);
-}}
+  virtual void endMicrostep(QEvent * event) {
+    if (callback_ZN13QStateMachine12endMicrostepEP6QEvent != 0) {
+      // callback_ZN13QStateMachine12endMicrostepEP6QEvent(event);
+    }
+    QStateMachine::endMicrostep(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN13QStateMachine5eventEP6QEvent != 0) {
-  // callback_ZN13QStateMachine5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN13QStateMachine5eventEP6QEvent != 0) {
+      // callback_ZN13QStateMachine5eventEP6QEvent(e);
+    }
+    return QStateMachine::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -116,23 +127,23 @@ void* C_ZNK13QStateMachine10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qstatemachine.h:112
 // [-2] void QStateMachine(class QObject *)
 extern "C"
-void* C_ZN13QStateMachineC1EP7QObject(QObject * parent) {
-  (MyQStateMachine*)(0);
+void* C_ZN13QStateMachineC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQStateMachine*)(0);
   return  new MyQStateMachine(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:113
 // [-2] void QStateMachine(class QState::ChildMode, class QObject *)
 extern "C"
-void* C_ZN13QStateMachineC1EN6QState9ChildModeEP7QObject(QState::ChildMode childMode, QObject * parent) {
-  (MyQStateMachine*)(0);
+void* C_ZN13QStateMachineC2EN6QState9ChildModeEP7QObject(QState::ChildMode childMode, QObject * parent) {
+  auto _nilp = (MyQStateMachine*)(0);
   return  new MyQStateMachine(childMode, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:114
 // [-2] void ~QStateMachine()
 extern "C"
-void C_ZN13QStateMachineD1Ev(void *this_) {
+void C_ZN13QStateMachineD2Ev(void *this_) {
   delete (QStateMachine*)(this_);
 }
 // Public Visibility=Default Availability=Available

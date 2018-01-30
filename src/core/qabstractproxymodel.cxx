@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QAbstractProxyModel is pure virtual: true
+// QAbstractProxyModel has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN19QAbstractProxyModel17resetInternalDataEv(void*c
 
 class MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
+  virtual ~MyQAbstractProxyModel() {}
+// void QAbstractProxyModel(class QObject *)
 MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
 // void resetInternalData()
-// void resetInternalData()
-virtual void resetInternalData() {
-  if (callback_ZN19QAbstractProxyModel17resetInternalDataEv != 0) {
-  // callback_ZN19QAbstractProxyModel17resetInternalDataEv();
-}}
+  virtual void resetInternalData() {
+    if (callback_ZN19QAbstractProxyModel17resetInternalDataEv != 0) {
+      // callback_ZN19QAbstractProxyModel17resetInternalDataEv();
+    }
+    QAbstractProxyModel::resetInternalData();
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,14 +42,14 @@ void* C_ZNK19QAbstractProxyModel10metaObjectEv(void *this_) {
 // [-2] void QAbstractProxyModel(class QObject *)
 extern "C"
 void* C_ZN19QAbstractProxyModelC1EP7QObject(QObject * parent) {
-  (MyQAbstractProxyModel*)(0);
+  auto _nilp = (MyQAbstractProxyModel*)(0);
   return 0; // new MyQAbstractProxyModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractproxymodel.h:60
 // [-2] void ~QAbstractProxyModel()
 extern "C"
-void C_ZN19QAbstractProxyModelD1Ev(void *this_) {
+void C_ZN19QAbstractProxyModelD2Ev(void *this_) {
   delete (QAbstractProxyModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

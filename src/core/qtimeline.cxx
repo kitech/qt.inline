@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QTimeLine is pure virtual: false
+// QTimeLine has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN9QTimeLine10timerEventEP11QTimerEvent(void*cbfn)
 
 class MyQTimeLine : public QTimeLine {
 public:
+  virtual ~MyQTimeLine() {}
+// void QTimeLine(int, class QObject *)
 MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * event) {
-  if (callback_ZN9QTimeLine10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN9QTimeLine10timerEventEP11QTimerEvent(event);
-}}
+  virtual void timerEvent(QTimerEvent * event) {
+    if (callback_ZN9QTimeLine10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN9QTimeLine10timerEventEP11QTimerEvent(event);
+    }
+    QTimeLine::timerEvent(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK9QTimeLine10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qtimeline.h:79
 // [-2] void QTimeLine(int, class QObject *)
 extern "C"
-void* C_ZN9QTimeLineC1EiP7QObject(int duration, QObject * parent) {
-  (MyQTimeLine*)(0);
+void* C_ZN9QTimeLineC2EiP7QObject(int duration, QObject * parent) {
+  auto _nilp = (MyQTimeLine*)(0);
   return  new MyQTimeLine(duration, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:80
 // [-2] void ~QTimeLine()
 extern "C"
-void C_ZN9QTimeLineD1Ev(void *this_) {
+void C_ZN9QTimeLineD2Ev(void *this_) {
   delete (QTimeLine*)(this_);
 }
 // Public Visibility=Default Availability=Available

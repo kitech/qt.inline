@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QGenericPlugin is pure virtual: true
+// QGenericPlugin has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGenericPlugin : public QGenericPlugin {
 public:
+  virtual ~MyQGenericPlugin() {}
+// void QGenericPlugin(class QObject *)
 MyQGenericPlugin(QObject * parent) : QGenericPlugin(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK14QGenericPlugin10metaObjectEv(void *this_) {
 // [-2] void QGenericPlugin(class QObject *)
 extern "C"
 void* C_ZN14QGenericPluginC1EP7QObject(QObject * parent) {
-  (MyQGenericPlugin*)(0);
-  return 0; // new MyQGenericPlugin(parent);
+  return 0; // new QGenericPlugin(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qgenericplugin.h:56
 // [-2] void ~QGenericPlugin()
 extern "C"
-void C_ZN14QGenericPluginD1Ev(void *this_) {
+void C_ZN14QGenericPluginD2Ev(void *this_) {
   delete (QGenericPlugin*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

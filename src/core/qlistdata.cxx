@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QListData is pure virtual: false
+// QListData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQListData : public QListData {
 public:
+  virtual ~MyQListData() {}
 };
 
 // Public Visibility=Default Availability=Available

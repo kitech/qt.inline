@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QDockWidget is pure virtual: false
+// QDockWidget has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,38 +46,46 @@ extern "C" void set_callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDo
 
 class MyQDockWidget : public QDockWidget {
 public:
+  virtual ~MyQDockWidget() {}
+// void QDockWidget(const class QString &, class QWidget *, Qt::WindowFlags)
 MyQDockWidget(const QString & title, QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(title, parent, flags) {}
+// void QDockWidget(class QWidget *, Qt::WindowFlags)
 MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(parent, flags) {}
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * event) {
-  if (callback_ZN11QDockWidget11changeEventEP6QEvent != 0) {
-  // callback_ZN11QDockWidget11changeEventEP6QEvent(event);
-}}
+  virtual void changeEvent(QEvent * event) {
+    if (callback_ZN11QDockWidget11changeEventEP6QEvent != 0) {
+      // callback_ZN11QDockWidget11changeEventEP6QEvent(event);
+    }
+    QDockWidget::changeEvent(event);
+  }
 // void closeEvent(class QCloseEvent *)
-// void closeEvent(class QCloseEvent *)
-virtual void closeEvent(QCloseEvent * event) {
-  if (callback_ZN11QDockWidget10closeEventEP11QCloseEvent != 0) {
-  // callback_ZN11QDockWidget10closeEventEP11QCloseEvent(event);
-}}
+  virtual void closeEvent(QCloseEvent * event) {
+    if (callback_ZN11QDockWidget10closeEventEP11QCloseEvent != 0) {
+      // callback_ZN11QDockWidget10closeEventEP11QCloseEvent(event);
+    }
+    QDockWidget::closeEvent(event);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * event) {
-  if (callback_ZN11QDockWidget10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN11QDockWidget10paintEventEP11QPaintEvent(event);
-}}
+  virtual void paintEvent(QPaintEvent * event) {
+    if (callback_ZN11QDockWidget10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN11QDockWidget10paintEventEP11QPaintEvent(event);
+    }
+    QDockWidget::paintEvent(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN11QDockWidget5eventEP6QEvent != 0) {
-  // callback_ZN11QDockWidget5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN11QDockWidget5eventEP6QEvent != 0) {
+      // callback_ZN11QDockWidget5eventEP6QEvent(event);
+    }
+    return QDockWidget::event(event);
+  }
 // void initStyleOption(class QStyleOptionDockWidget *)
-// void initStyleOption(class QStyleOptionDockWidget *)
-virtual void initStyleOption(QStyleOptionDockWidget * option) {
-  if (callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget != 0) {
-  // callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(option);
-}}
+  virtual void initStyleOption(QStyleOptionDockWidget * option) {
+    if (callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget != 0) {
+      // callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(option);
+    }
+    QDockWidget::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -90,23 +99,23 @@ void* C_ZNK11QDockWidget10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdockwidget.h:66
 // [-2] void QDockWidget(const class QString &, class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN11QDockWidgetC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQDockWidget*)(0);
+void* C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & title, QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQDockWidget*)(0);
   return  new MyQDockWidget(title, parent, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:68
 // [-2] void QDockWidget(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN11QDockWidgetC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
-  (MyQDockWidget*)(0);
+void* C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQDockWidget*)(0);
   return  new MyQDockWidget(parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:69
 // [-2] void ~QDockWidget()
 extern "C"
-void C_ZN11QDockWidgetD1Ev(void *this_) {
+void C_ZN11QDockWidgetD2Ev(void *this_) {
   delete (QDockWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available

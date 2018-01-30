@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QReadWriteLock is pure virtual: false
+// QReadWriteLock has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQReadWriteLock : public QReadWriteLock {
 public:
+  virtual ~MyQReadWriteLock() {}
+// void QReadWriteLock(enum QReadWriteLock::RecursionMode)
 MyQReadWriteLock(QReadWriteLock::RecursionMode recursionMode) : QReadWriteLock(recursionMode) {}
 };
 
@@ -17,15 +20,14 @@ MyQReadWriteLock(QReadWriteLock::RecursionMode recursionMode) : QReadWriteLock(r
 // /usr/include/qt/QtCore/qreadwritelock.h:57
 // [-2] void QReadWriteLock(enum QReadWriteLock::RecursionMode)
 extern "C"
-void* C_ZN14QReadWriteLockC1ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
-  (MyQReadWriteLock*)(0);
-  return  new MyQReadWriteLock(recursionMode);
+void* C_ZN14QReadWriteLockC2ENS_13RecursionModeE(QReadWriteLock::RecursionMode recursionMode) {
+  return  new QReadWriteLock(recursionMode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:58
 // [-2] void ~QReadWriteLock()
 extern "C"
-void C_ZN14QReadWriteLockD1Ev(void *this_) {
+void C_ZN14QReadWriteLockD2Ev(void *this_) {
   delete (QReadWriteLock*)(this_);
 }
 // Public Visibility=Default Availability=Available

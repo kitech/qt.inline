@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QMapNodeBase is pure virtual: false
+// QMapNodeBase has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMapNodeBase : public QMapNodeBase {
 public:
+  virtual ~MyQMapNodeBase() {}
 };
 
 // Public Visibility=Default Availability=Available

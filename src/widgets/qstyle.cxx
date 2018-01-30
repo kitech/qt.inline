@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QStyle is pure virtual: true
+// QStyle has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStyle : public QStyle {
 public:
+  virtual ~MyQStyle() {}
+// void QStyle()
 MyQStyle() : QStyle() {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK6QStyle10metaObjectEv(void *this_) {
 // [-2] void QStyle()
 extern "C"
 void* C_ZN6QStyleC1Ev() {
-  (MyQStyle*)(0);
-  return 0; // new MyQStyle();
+  return 0; // new QStyle();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:74
 // [-2] void ~QStyle()
 extern "C"
-void C_ZN6QStyleD1Ev(void *this_) {
+void C_ZN6QStyleD2Ev(void *this_) {
   delete (QStyle*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

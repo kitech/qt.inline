@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QScreenOrientationChangeEvent is pure virtual: false
+// QScreenOrientationChangeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQScreenOrientationChangeEvent : public QScreenOrientationChangeEvent {
 public:
+  virtual ~MyQScreenOrientationChangeEvent() {}
+// void QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)
 MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientation) : QScreenOrientationChangeEvent(screen, orientation) {}
 };
 
@@ -17,15 +20,14 @@ MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientat
 // /usr/include/qt/QtGui/qevent.h:1038
 // [-2] void QScreenOrientationChangeEvent(class QScreen *, Qt::ScreenOrientation)
 extern "C"
-void* C_ZN29QScreenOrientationChangeEventC1EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
-  (MyQScreenOrientationChangeEvent*)(0);
-  return  new MyQScreenOrientationChangeEvent(screen, orientation);
+void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
+  return  new QScreenOrientationChangeEvent(screen, orientation);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1039
 // [-2] void ~QScreenOrientationChangeEvent()
 extern "C"
-void C_ZN29QScreenOrientationChangeEventD1Ev(void *this_) {
+void C_ZN29QScreenOrientationChangeEventD2Ev(void *this_) {
   delete (QScreenOrientationChangeEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

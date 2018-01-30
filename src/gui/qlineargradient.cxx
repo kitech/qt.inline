@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QLinearGradient is pure virtual: false
+// QLinearGradient has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQLinearGradient : public QLinearGradient {
 public:
+  virtual ~MyQLinearGradient() {}
+// void QLinearGradient()
 MyQLinearGradient() : QLinearGradient() {}
+// void QLinearGradient(const class QPointF &, const class QPointF &)
 MyQLinearGradient(const QPointF & start, const QPointF & finalStop) : QLinearGradient(start, finalStop) {}
+// void QLinearGradient(qreal, qreal, qreal, qreal)
 MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) : QLinearGradient(xStart, yStart, xFinalStop, yFinalStop) {}
 };
 
@@ -19,25 +24,22 @@ MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop
 // /usr/include/qt/QtGui/qbrush.h:257
 // [-2] void QLinearGradient()
 extern "C"
-void* C_ZN15QLinearGradientC1Ev() {
-  (MyQLinearGradient*)(0);
-  return  new MyQLinearGradient();
+void* C_ZN15QLinearGradientC2Ev() {
+  return  new QLinearGradient();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:258
 // [-2] void QLinearGradient(const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN15QLinearGradientC1ERK7QPointFS2_(const QPointF & start, const QPointF & finalStop) {
-  (MyQLinearGradient*)(0);
-  return  new MyQLinearGradient(start, finalStop);
+void* C_ZN15QLinearGradientC2ERK7QPointFS2_(const QPointF & start, const QPointF & finalStop) {
+  return  new QLinearGradient(start, finalStop);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:259
 // [-2] void QLinearGradient(qreal, qreal, qreal, qreal)
 extern "C"
-void* C_ZN15QLinearGradientC1Edddd(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) {
-  (MyQLinearGradient*)(0);
-  return  new MyQLinearGradient(xStart, yStart, xFinalStop, yFinalStop);
+void* C_ZN15QLinearGradientC2Edddd(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) {
+  return  new QLinearGradient(xStart, yStart, xFinalStop, yFinalStop);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:261

@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QPainterPathStroker is pure virtual: false
+// QPainterPathStroker has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPainterPathStroker : public QPainterPathStroker {
 public:
+  virtual ~MyQPainterPathStroker() {}
+// void QPainterPathStroker()
 MyQPainterPathStroker() : QPainterPathStroker() {}
+// void QPainterPathStroker(const class QPen &)
 MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
 };
 
@@ -18,23 +22,21 @@ MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
 // /usr/include/qt/QtGui/qpainterpath.h:246
 // [-2] void QPainterPathStroker()
 extern "C"
-void* C_ZN19QPainterPathStrokerC1Ev() {
-  (MyQPainterPathStroker*)(0);
-  return  new MyQPainterPathStroker();
+void* C_ZN19QPainterPathStrokerC2Ev() {
+  return  new QPainterPathStroker();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:247
 // [-2] void QPainterPathStroker(const class QPen &)
 extern "C"
-void* C_ZN19QPainterPathStrokerC1ERK4QPen(const QPen & pen) {
-  (MyQPainterPathStroker*)(0);
-  return  new MyQPainterPathStroker(pen);
+void* C_ZN19QPainterPathStrokerC2ERK4QPen(const QPen & pen) {
+  return  new QPainterPathStroker(pen);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:248
 // [-2] void ~QPainterPathStroker()
 extern "C"
-void C_ZN19QPainterPathStrokerD1Ev(void *this_) {
+void C_ZN19QPainterPathStrokerD2Ev(void *this_) {
   delete (QPainterPathStroker*)(this_);
 }
 // Public Visibility=Default Availability=Available

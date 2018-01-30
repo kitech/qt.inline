@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QDirIterator is pure virtual: false
+// QDirIterator has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDirIterator : public QDirIterator {
 public:
+  virtual ~MyQDirIterator() {}
+// void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)
 MyQDirIterator(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(dir, flags) {}
+// void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, flags) {}
 };
 
@@ -18,23 +22,21 @@ MyQDirIterator(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) :
 // /usr/include/qt/QtCore/qdiriterator.h:58
 // [-2] void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)
 extern "C"
-void* C_ZN12QDirIteratorC1ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) {
-  (MyQDirIterator*)(0);
-  return  new MyQDirIterator(dir, flags);
+void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(dir, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:59
 // [-2] void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
 extern "C"
-void* C_ZN12QDirIteratorC1ERK7QString6QFlagsINS_12IteratorFlagEE(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) {
-  (MyQDirIterator*)(0);
-  return  new MyQDirIterator(path, flags);
+void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(path, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:69
 // [-2] void ~QDirIterator()
 extern "C"
-void C_ZN12QDirIteratorD1Ev(void *this_) {
+void C_ZN12QDirIteratorD2Ev(void *this_) {
   delete (QDirIterator*)(this_);
 }
 // Public Visibility=Default Availability=Available

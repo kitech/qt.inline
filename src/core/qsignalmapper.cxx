@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QSignalMapper is pure virtual: false
+// QSignalMapper has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSignalMapper : public QSignalMapper {
 public:
+  virtual ~MyQSignalMapper() {}
+// void QSignalMapper(class QObject *)
 MyQSignalMapper(QObject * parent) : QSignalMapper(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK13QSignalMapper10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsignalmapper.h:56
 // [-2] void QSignalMapper(class QObject *)
 extern "C"
-void* C_ZN13QSignalMapperC1EP7QObject(QObject * parent) {
-  (MyQSignalMapper*)(0);
-  return  new MyQSignalMapper(parent);
+void* C_ZN13QSignalMapperC2EP7QObject(QObject * parent) {
+  return  new QSignalMapper(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignalmapper.h:57
 // [-2] void ~QSignalMapper()
 extern "C"
-void C_ZN13QSignalMapperD1Ev(void *this_) {
+void C_ZN13QSignalMapperD2Ev(void *this_) {
   delete (QSignalMapper*)(this_);
 }
 // Public Visibility=Default Availability=Available

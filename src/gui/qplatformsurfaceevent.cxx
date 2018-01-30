@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QPlatformSurfaceEvent is pure virtual: false
+// QPlatformSurfaceEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPlatformSurfaceEvent : public QPlatformSurfaceEvent {
 public:
+  virtual ~MyQPlatformSurfaceEvent() {}
+// void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
 MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) : QPlatformSurfaceEvent(surfaceEventType) {}
 };
 
@@ -17,15 +20,14 @@ MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType
 // /usr/include/qt/QtGui/qevent.h:451
 // [-2] void QPlatformSurfaceEvent(enum QPlatformSurfaceEvent::SurfaceEventType)
 extern "C"
-void* C_ZN21QPlatformSurfaceEventC1ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
-  (MyQPlatformSurfaceEvent*)(0);
-  return  new MyQPlatformSurfaceEvent(surfaceEventType);
+void* C_ZN21QPlatformSurfaceEventC2ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
+  return  new QPlatformSurfaceEvent(surfaceEventType);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:452
 // [-2] void ~QPlatformSurfaceEvent()
 extern "C"
-void C_ZN21QPlatformSurfaceEventD1Ev(void *this_) {
+void C_ZN21QPlatformSurfaceEventD2Ev(void *this_) {
   delete (QPlatformSurfaceEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

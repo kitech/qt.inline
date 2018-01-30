@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QPauseAnimation is pure virtual: false
+// QPauseAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN15QPauseAnimation17updateCurrentTimeEi(void*cbfn)
 
 class MyQPauseAnimation : public QPauseAnimation {
 public:
+  virtual ~MyQPauseAnimation() {}
+// void QPauseAnimation(class QObject *)
 MyQPauseAnimation(QObject * parent) : QPauseAnimation(parent) {}
+// void QPauseAnimation(int, class QObject *)
 MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN15QPauseAnimation5eventEP6QEvent != 0) {
-  // callback_ZN15QPauseAnimation5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN15QPauseAnimation5eventEP6QEvent != 0) {
+      // callback_ZN15QPauseAnimation5eventEP6QEvent(e);
+    }
+    return QPauseAnimation::event(e);
+  }
 // void updateCurrentTime(int)
-// void updateCurrentTime(int)
-virtual void updateCurrentTime(int arg0) {
-  if (callback_ZN15QPauseAnimation17updateCurrentTimeEi != 0) {
-  // callback_ZN15QPauseAnimation17updateCurrentTimeEi(arg0);
-}}
+  virtual void updateCurrentTime(int arg0) {
+    if (callback_ZN15QPauseAnimation17updateCurrentTimeEi != 0) {
+      // callback_ZN15QPauseAnimation17updateCurrentTimeEi(arg0);
+    }
+    QPauseAnimation::updateCurrentTime(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK15QPauseAnimation10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qpauseanimation.h:57
 // [-2] void QPauseAnimation(class QObject *)
 extern "C"
-void* C_ZN15QPauseAnimationC1EP7QObject(QObject * parent) {
-  (MyQPauseAnimation*)(0);
+void* C_ZN15QPauseAnimationC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQPauseAnimation*)(0);
   return  new MyQPauseAnimation(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpauseanimation.h:58
 // [-2] void QPauseAnimation(int, class QObject *)
 extern "C"
-void* C_ZN15QPauseAnimationC1EiP7QObject(int msecs, QObject * parent) {
-  (MyQPauseAnimation*)(0);
+void* C_ZN15QPauseAnimationC2EiP7QObject(int msecs, QObject * parent) {
+  auto _nilp = (MyQPauseAnimation*)(0);
   return  new MyQPauseAnimation(msecs, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpauseanimation.h:59
 // [-2] void ~QPauseAnimation()
 extern "C"
-void C_ZN15QPauseAnimationD1Ev(void *this_) {
+void C_ZN15QPauseAnimationD2Ev(void *this_) {
   delete (QPauseAnimation*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionTabWidgetFrame is pure virtual: false
+// QStyleOptionTabWidgetFrame has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN26QStyleOptionTabWidgetFrameC1Ei(void*cbfn)
 
 class MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
 public:
+  virtual ~MyQStyleOptionTabWidgetFrame() {}
+// void QStyleOptionTabWidgetFrame()
 MyQStyleOptionTabWidgetFrame() : QStyleOptionTabWidgetFrame() {}
+// void QStyleOptionTabWidgetFrame(int)
 MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) 
 // /usr/include/qt/QtWidgets/qstyleoption.h:171
 // [-2] void QStyleOptionTabWidgetFrame()
 extern "C"
-void* C_ZN26QStyleOptionTabWidgetFrameC1Ev() {
-  (MyQStyleOptionTabWidgetFrame*)(0);
-  return  new MyQStyleOptionTabWidgetFrame();
+void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
+  return  new QStyleOptionTabWidgetFrame();
 }
 //  main block end

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QElapsedTimer is pure virtual: false
+// QElapsedTimer has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQElapsedTimer : public QElapsedTimer {
 public:
+  virtual ~MyQElapsedTimer() {}
+// void QElapsedTimer()
 MyQElapsedTimer() : QElapsedTimer() {}
 };
 
@@ -17,9 +20,8 @@ MyQElapsedTimer() : QElapsedTimer() {}
 // /usr/include/qt/QtCore/qelapsedtimer.h:59
 // [-2] void QElapsedTimer()
 extern "C"
-void* C_ZN13QElapsedTimerC1Ev() {
-  (MyQElapsedTimer*)(0);
-  return  new MyQElapsedTimer();
+void* C_ZN13QElapsedTimerC2Ev() {
+  return  new QElapsedTimer();
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:65

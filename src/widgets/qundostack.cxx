@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QUndoStack is pure virtual: false
+// QUndoStack has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUndoStack : public QUndoStack {
 public:
+  virtual ~MyQUndoStack() {}
+// void QUndoStack(class QObject *)
 MyQUndoStack(QObject * parent) : QUndoStack(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QUndoStack10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundostack.h:95
 // [-2] void QUndoStack(class QObject *)
 extern "C"
-void* C_ZN10QUndoStackC1EP7QObject(QObject * parent) {
-  (MyQUndoStack*)(0);
-  return  new MyQUndoStack(parent);
+void* C_ZN10QUndoStackC2EP7QObject(QObject * parent) {
+  return  new QUndoStack(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:96
 // [-2] void ~QUndoStack()
 extern "C"
-void C_ZN10QUndoStackD1Ev(void *this_) {
+void C_ZN10QUndoStackD2Ev(void *this_) {
   delete (QUndoStack*)(this_);
 }
 // Public Visibility=Default Availability=Available

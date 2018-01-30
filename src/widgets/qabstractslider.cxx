@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QAbstractSlider is pure virtual: false
+// QAbstractSlider has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -66,55 +67,65 @@ extern "C" void set_callback_ZN15QAbstractSlider11changeEventEP6QEvent(void*cbfn
 
 class MyQAbstractSlider : public QAbstractSlider {
 public:
+  virtual ~MyQAbstractSlider() {}
+// void QAbstractSlider(class QWidget *)
 MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN15QAbstractSlider5eventEP6QEvent != 0) {
-  // callback_ZN15QAbstractSlider5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN15QAbstractSlider5eventEP6QEvent != 0) {
+      // callback_ZN15QAbstractSlider5eventEP6QEvent(e);
+    }
+    return QAbstractSlider::event(e);
+  }
 // void setRepeatAction(enum QAbstractSlider::SliderAction, int, int)
-// void setRepeatAction(enum QAbstractSlider::SliderAction, int, int)
-virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
-  if (callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii != 0) {
-  // callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii(action, thresholdTime, repeatTime);
-}}
+  virtual void setRepeatAction(QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime) {
+    if (callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii != 0) {
+      // callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii(action, thresholdTime, repeatTime);
+    }
+    QAbstractSlider::setRepeatAction(action, thresholdTime, repeatTime);
+  }
 // QAbstractSlider::SliderAction repeatAction()
-// QAbstractSlider::SliderAction repeatAction()
-virtual QAbstractSlider::SliderAction repeatAction() {
-  if (callback_ZNK15QAbstractSlider12repeatActionEv != 0) {
-  // callback_ZNK15QAbstractSlider12repeatActionEv();
-}}
+  virtual QAbstractSlider::SliderAction repeatAction() {
+    if (callback_ZNK15QAbstractSlider12repeatActionEv != 0) {
+      // callback_ZNK15QAbstractSlider12repeatActionEv();
+    }
+    return QAbstractSlider::repeatAction();
+  }
 // void sliderChange(enum QAbstractSlider::SliderChange)
-// void sliderChange(enum QAbstractSlider::SliderChange)
-virtual void sliderChange(QAbstractSlider::SliderChange change) {
-  if (callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE != 0) {
-  // callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE(change);
-}}
+  virtual void sliderChange(QAbstractSlider::SliderChange change) {
+    if (callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE != 0) {
+      // callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE(change);
+    }
+    QAbstractSlider::sliderChange(change);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * ev) {
-  if (callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent(ev);
-}}
+  virtual void keyPressEvent(QKeyEvent * ev) {
+    if (callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent(ev);
+    }
+    QAbstractSlider::keyPressEvent(ev);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * arg0) {
-  if (callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent(arg0);
-}}
+  virtual void timerEvent(QTimerEvent * arg0) {
+    if (callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent(arg0);
+    }
+    QAbstractSlider::timerEvent(arg0);
+  }
 // void wheelEvent(class QWheelEvent *)
-// void wheelEvent(class QWheelEvent *)
-virtual void wheelEvent(QWheelEvent * e) {
-  if (callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent != 0) {
-  // callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent(e);
-}}
+  virtual void wheelEvent(QWheelEvent * e) {
+    if (callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent != 0) {
+      // callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent(e);
+    }
+    QAbstractSlider::wheelEvent(e);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * e) {
-  if (callback_ZN15QAbstractSlider11changeEventEP6QEvent != 0) {
-  // callback_ZN15QAbstractSlider11changeEventEP6QEvent(e);
-}}
+  virtual void changeEvent(QEvent * e) {
+    if (callback_ZN15QAbstractSlider11changeEventEP6QEvent != 0) {
+      // callback_ZN15QAbstractSlider11changeEventEP6QEvent(e);
+    }
+    QAbstractSlider::changeEvent(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -128,15 +139,15 @@ void* C_ZNK15QAbstractSlider10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractslider.h:70
 // [-2] void QAbstractSlider(class QWidget *)
 extern "C"
-void* C_ZN15QAbstractSliderC1EP7QWidget(QWidget * parent) {
-  (MyQAbstractSlider*)(0);
+void* C_ZN15QAbstractSliderC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQAbstractSlider*)(0);
   return 0; // new MyQAbstractSlider(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractslider.h:71
 // [-2] void ~QAbstractSlider()
 extern "C"
-void C_ZN15QAbstractSliderD1Ev(void *this_) {
+void C_ZN15QAbstractSliderD2Ev(void *this_) {
   delete (QAbstractSlider*)(this_);
 }
 // Public Visibility=Default Availability=Available

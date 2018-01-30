@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QTapAndHoldGesture is pure virtual: false
+// QTapAndHoldGesture has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTapAndHoldGesture : public QTapAndHoldGesture {
 public:
+  virtual ~MyQTapAndHoldGesture() {}
+// void QTapAndHoldGesture(class QObject *)
 MyQTapAndHoldGesture(QObject * parent) : QTapAndHoldGesture(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK18QTapAndHoldGesture10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:260
 // [-2] void QTapAndHoldGesture(class QObject *)
 extern "C"
-void* C_ZN18QTapAndHoldGestureC1EP7QObject(QObject * parent) {
-  (MyQTapAndHoldGesture*)(0);
-  return  new MyQTapAndHoldGesture(parent);
+void* C_ZN18QTapAndHoldGestureC2EP7QObject(QObject * parent) {
+  return  new QTapAndHoldGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:261
 // [-2] void ~QTapAndHoldGesture()
 extern "C"
-void C_ZN18QTapAndHoldGestureD1Ev(void *this_) {
+void C_ZN18QTapAndHoldGestureD2Ev(void *this_) {
   delete (QTapAndHoldGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available

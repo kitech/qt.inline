@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QTextDocument is pure virtual: false
+// QTextDocument has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN13QTextDocument12loadResourceEiRK4QUrl(void*cbfn)
 
 class MyQTextDocument : public QTextDocument {
 public:
+  virtual ~MyQTextDocument() {}
+// void QTextDocument(class QObject *)
 MyQTextDocument(QObject * parent) : QTextDocument(parent) {}
+// void QTextDocument(const class QString &, class QObject *)
 MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, parent) {}
 // QTextObject * createObject(const class QTextFormat &)
-// QTextObject * createObject(const class QTextFormat &)
-virtual QTextObject * createObject(const QTextFormat & f) {
-  if (callback_ZN13QTextDocument12createObjectERK11QTextFormat != 0) {
-  // callback_ZN13QTextDocument12createObjectERK11QTextFormat(f);
-}}
+  virtual QTextObject * createObject(const QTextFormat & f) {
+    if (callback_ZN13QTextDocument12createObjectERK11QTextFormat != 0) {
+      // callback_ZN13QTextDocument12createObjectERK11QTextFormat(f);
+    }
+    return QTextDocument::createObject(f);
+  }
 // QVariant loadResource(int, const class QUrl &)
-// QVariant loadResource(int, const class QUrl &)
-virtual QVariant loadResource(int type, const QUrl & name) {
-  if (callback_ZN13QTextDocument12loadResourceEiRK4QUrl != 0) {
-  // callback_ZN13QTextDocument12loadResourceEiRK4QUrl(type, name);
-}}
+  virtual QVariant loadResource(int type, const QUrl & name) {
+    if (callback_ZN13QTextDocument12loadResourceEiRK4QUrl != 0) {
+      // callback_ZN13QTextDocument12loadResourceEiRK4QUrl(type, name);
+    }
+    return QTextDocument::loadResource(type, name);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK13QTextDocument10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qtextdocument.h:119
 // [-2] void QTextDocument(class QObject *)
 extern "C"
-void* C_ZN13QTextDocumentC1EP7QObject(QObject * parent) {
-  (MyQTextDocument*)(0);
+void* C_ZN13QTextDocumentC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQTextDocument*)(0);
   return  new MyQTextDocument(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:120
 // [-2] void QTextDocument(const class QString &, class QObject *)
 extern "C"
-void* C_ZN13QTextDocumentC1ERK7QStringP7QObject(const QString & text, QObject * parent) {
-  (MyQTextDocument*)(0);
+void* C_ZN13QTextDocumentC2ERK7QStringP7QObject(const QString & text, QObject * parent) {
+  auto _nilp = (MyQTextDocument*)(0);
   return  new MyQTextDocument(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:121
 // [-2] void ~QTextDocument()
 extern "C"
-void C_ZN13QTextDocumentD1Ev(void *this_) {
+void C_ZN13QTextDocumentD2Ev(void *this_) {
   delete (QTextDocument*)(this_);
 }
 // Public Visibility=Default Availability=Available

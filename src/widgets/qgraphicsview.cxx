@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsView is pure virtual: false
+// QGraphicsView has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -192,164 +193,187 @@ extern "C" void set_callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphic
 
 class MyQGraphicsView : public QGraphicsView {
 public:
+  virtual ~MyQGraphicsView() {}
+// void QGraphicsView(class QWidget *)
 MyQGraphicsView(QWidget * parent) : QGraphicsView(parent) {}
+// void QGraphicsView(class QGraphicsScene *, class QWidget *)
 MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene, parent) {}
 // void setupViewport(class QWidget *)
-// void setupViewport(class QWidget *)
-virtual void setupViewport(QWidget * widget) {
-  if (callback_ZN13QGraphicsView13setupViewportEP7QWidget != 0) {
-  // callback_ZN13QGraphicsView13setupViewportEP7QWidget(widget);
-}}
+  virtual void setupViewport(QWidget * widget) {
+    if (callback_ZN13QGraphicsView13setupViewportEP7QWidget != 0) {
+      // callback_ZN13QGraphicsView13setupViewportEP7QWidget(widget);
+    }
+    QGraphicsView::setupViewport(widget);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN13QGraphicsView5eventEP6QEvent != 0) {
-  // callback_ZN13QGraphicsView5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN13QGraphicsView5eventEP6QEvent != 0) {
+      // callback_ZN13QGraphicsView5eventEP6QEvent(event);
+    }
+    return QGraphicsView::event(event);
+  }
 // bool viewportEvent(class QEvent *)
-// bool viewportEvent(class QEvent *)
-virtual bool viewportEvent(QEvent * event) {
-  if (callback_ZN13QGraphicsView13viewportEventEP6QEvent != 0) {
-  // callback_ZN13QGraphicsView13viewportEventEP6QEvent(event);
-}}
+  virtual bool viewportEvent(QEvent * event) {
+    if (callback_ZN13QGraphicsView13viewportEventEP6QEvent != 0) {
+      // callback_ZN13QGraphicsView13viewportEventEP6QEvent(event);
+    }
+    return QGraphicsView::viewportEvent(event);
+  }
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * event) {
-  if (callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent(event);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * event) {
+    if (callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent(event);
+    }
+    QGraphicsView::contextMenuEvent(event);
+  }
 // void dragEnterEvent(class QDragEnterEvent *)
-// void dragEnterEvent(class QDragEnterEvent *)
-virtual void dragEnterEvent(QDragEnterEvent * event) {
-  if (callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent != 0) {
-  // callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent(event);
-}}
+  virtual void dragEnterEvent(QDragEnterEvent * event) {
+    if (callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent != 0) {
+      // callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent(event);
+    }
+    QGraphicsView::dragEnterEvent(event);
+  }
 // void dragLeaveEvent(class QDragLeaveEvent *)
-// void dragLeaveEvent(class QDragLeaveEvent *)
-virtual void dragLeaveEvent(QDragLeaveEvent * event) {
-  if (callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent != 0) {
-  // callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent(event);
-}}
+  virtual void dragLeaveEvent(QDragLeaveEvent * event) {
+    if (callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent != 0) {
+      // callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent(event);
+    }
+    QGraphicsView::dragLeaveEvent(event);
+  }
 // void dragMoveEvent(class QDragMoveEvent *)
-// void dragMoveEvent(class QDragMoveEvent *)
-virtual void dragMoveEvent(QDragMoveEvent * event) {
-  if (callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent != 0) {
-  // callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent(event);
-}}
+  virtual void dragMoveEvent(QDragMoveEvent * event) {
+    if (callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent != 0) {
+      // callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent(event);
+    }
+    QGraphicsView::dragMoveEvent(event);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * event) {
-  if (callback_ZN13QGraphicsView9dropEventEP10QDropEvent != 0) {
-  // callback_ZN13QGraphicsView9dropEventEP10QDropEvent(event);
-}}
+  virtual void dropEvent(QDropEvent * event) {
+    if (callback_ZN13QGraphicsView9dropEventEP10QDropEvent != 0) {
+      // callback_ZN13QGraphicsView9dropEventEP10QDropEvent(event);
+    }
+    QGraphicsView::dropEvent(event);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * event) {
-  if (callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent(event);
-}}
+  virtual void focusInEvent(QFocusEvent * event) {
+    if (callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent(event);
+    }
+    QGraphicsView::focusInEvent(event);
+  }
 // bool focusNextPrevChild(_Bool)
-// bool focusNextPrevChild(_Bool)
-virtual bool focusNextPrevChild(bool next) {
-  if (callback_ZN13QGraphicsView18focusNextPrevChildEb != 0) {
-  // callback_ZN13QGraphicsView18focusNextPrevChildEb(next);
-}}
+  virtual bool focusNextPrevChild(bool next) {
+    if (callback_ZN13QGraphicsView18focusNextPrevChildEb != 0) {
+      // callback_ZN13QGraphicsView18focusNextPrevChildEb(next);
+    }
+    return QGraphicsView::focusNextPrevChild(next);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * event) {
-  if (callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent(event);
-}}
+  virtual void focusOutEvent(QFocusEvent * event) {
+    if (callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent(event);
+    }
+    QGraphicsView::focusOutEvent(event);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * event) {
-  if (callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent(event);
-}}
+  virtual void keyPressEvent(QKeyEvent * event) {
+    if (callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent(event);
+    }
+    QGraphicsView::keyPressEvent(event);
+  }
 // void keyReleaseEvent(class QKeyEvent *)
-// void keyReleaseEvent(class QKeyEvent *)
-virtual void keyReleaseEvent(QKeyEvent * event) {
-  if (callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent != 0) {
-  // callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent(event);
-}}
+  virtual void keyReleaseEvent(QKeyEvent * event) {
+    if (callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent != 0) {
+      // callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent(event);
+    }
+    QGraphicsView::keyReleaseEvent(event);
+  }
 // void mouseDoubleClickEvent(class QMouseEvent *)
-// void mouseDoubleClickEvent(class QMouseEvent *)
-virtual void mouseDoubleClickEvent(QMouseEvent * event) {
-  if (callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent != 0) {
-  // callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent(event);
-}}
+  virtual void mouseDoubleClickEvent(QMouseEvent * event) {
+    if (callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent != 0) {
+      // callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent(event);
+    }
+    QGraphicsView::mouseDoubleClickEvent(event);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * event) {
-  if (callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent(event);
-}}
+  virtual void mousePressEvent(QMouseEvent * event) {
+    if (callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent(event);
+    }
+    QGraphicsView::mousePressEvent(event);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * event) {
-  if (callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent(event);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * event) {
+    if (callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent(event);
+    }
+    QGraphicsView::mouseMoveEvent(event);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * event) {
-  if (callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent(event);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * event) {
+    if (callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent(event);
+    }
+    QGraphicsView::mouseReleaseEvent(event);
+  }
 // void wheelEvent(class QWheelEvent *)
-// void wheelEvent(class QWheelEvent *)
-virtual void wheelEvent(QWheelEvent * event) {
-  if (callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent != 0) {
-  // callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent(event);
-}}
+  virtual void wheelEvent(QWheelEvent * event) {
+    if (callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent != 0) {
+      // callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent(event);
+    }
+    QGraphicsView::wheelEvent(event);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * event) {
-  if (callback_ZN13QGraphicsView10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN13QGraphicsView10paintEventEP11QPaintEvent(event);
-}}
+  virtual void paintEvent(QPaintEvent * event) {
+    if (callback_ZN13QGraphicsView10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN13QGraphicsView10paintEventEP11QPaintEvent(event);
+    }
+    QGraphicsView::paintEvent(event);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * event) {
-  if (callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent(event);
-}}
+  virtual void resizeEvent(QResizeEvent * event) {
+    if (callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent(event);
+    }
+    QGraphicsView::resizeEvent(event);
+  }
 // void scrollContentsBy(int, int)
-// void scrollContentsBy(int, int)
-virtual void scrollContentsBy(int dx, int dy) {
-  if (callback_ZN13QGraphicsView16scrollContentsByEii != 0) {
-  // callback_ZN13QGraphicsView16scrollContentsByEii(dx, dy);
-}}
+  virtual void scrollContentsBy(int dx, int dy) {
+    if (callback_ZN13QGraphicsView16scrollContentsByEii != 0) {
+      // callback_ZN13QGraphicsView16scrollContentsByEii(dx, dy);
+    }
+    QGraphicsView::scrollContentsBy(dx, dy);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * event) {
-  if (callback_ZN13QGraphicsView9showEventEP10QShowEvent != 0) {
-  // callback_ZN13QGraphicsView9showEventEP10QShowEvent(event);
-}}
+  virtual void showEvent(QShowEvent * event) {
+    if (callback_ZN13QGraphicsView9showEventEP10QShowEvent != 0) {
+      // callback_ZN13QGraphicsView9showEventEP10QShowEvent(event);
+    }
+    QGraphicsView::showEvent(event);
+  }
 // void inputMethodEvent(class QInputMethodEvent *)
-// void inputMethodEvent(class QInputMethodEvent *)
-virtual void inputMethodEvent(QInputMethodEvent * event) {
-  if (callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent != 0) {
-  // callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent(event);
-}}
+  virtual void inputMethodEvent(QInputMethodEvent * event) {
+    if (callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent != 0) {
+      // callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent(event);
+    }
+    QGraphicsView::inputMethodEvent(event);
+  }
 // void drawBackground(class QPainter *, const class QRectF &)
-// void drawBackground(class QPainter *, const class QRectF &)
-virtual void drawBackground(QPainter * painter, const QRectF & rect) {
-  if (callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF != 0) {
-  // callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(painter, rect);
-}}
+  virtual void drawBackground(QPainter * painter, const QRectF & rect) {
+    if (callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF != 0) {
+      // callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(painter, rect);
+    }
+    QGraphicsView::drawBackground(painter, rect);
+  }
 // void drawForeground(class QPainter *, const class QRectF &)
-// void drawForeground(class QPainter *, const class QRectF &)
-virtual void drawForeground(QPainter * painter, const QRectF & rect) {
-  if (callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF != 0) {
-  // callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(painter, rect);
-}}
+  virtual void drawForeground(QPainter * painter, const QRectF & rect) {
+    if (callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF != 0) {
+      // callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(painter, rect);
+    }
+    QGraphicsView::drawForeground(painter, rect);
+  }
 // void drawItems(class QPainter *, int, class QGraphicsItem **, const class QStyleOptionGraphicsItem *)
-// void drawItems(class QPainter *, int, class QGraphicsItem **, const class QStyleOptionGraphicsItem *)
-virtual void drawItems(QPainter * painter, int numItems, void *items, void *options) {
-  if (callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem != 0) {
-  // callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem(painter, numItems, items, options);
-}}
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -363,23 +387,23 @@ void* C_ZNK13QGraphicsView10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsview.h:117
 // [-2] void QGraphicsView(class QWidget *)
 extern "C"
-void* C_ZN13QGraphicsViewC1EP7QWidget(QWidget * parent) {
-  (MyQGraphicsView*)(0);
+void* C_ZN13QGraphicsViewC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:118
 // [-2] void QGraphicsView(class QGraphicsScene *, class QWidget *)
 extern "C"
-void* C_ZN13QGraphicsViewC1EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, QWidget * parent) {
-  (MyQGraphicsView*)(0);
+void* C_ZN13QGraphicsViewC2EP14QGraphicsSceneP7QWidget(QGraphicsScene * scene, QWidget * parent) {
+  auto _nilp = (MyQGraphicsView*)(0);
   return  new MyQGraphicsView(scene, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsview.h:119
 // [-2] void ~QGraphicsView()
 extern "C"
-void C_ZN13QGraphicsViewD1Ev(void *this_) {
+void C_ZN13QGraphicsViewD2Ev(void *this_) {
   delete (QGraphicsView*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -892,7 +916,7 @@ void C_ZN13QGraphicsView15updateSceneRectERK6QRectF(void *this_, const QRectF & 
 // /usr/include/qt/QtWidgets/qgraphicsview.h:232
 // [-2] void rubberBandChanged(class QRect, class QPointF, class QPointF)
 extern "C"
-void C_ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(void *this_, QRect viewportRect, QPointF fromScenePoint, QPointF toScenePoint) {
-  ((QGraphicsView*)this_)->rubberBandChanged(viewportRect, fromScenePoint, toScenePoint);
+void C_ZN13QGraphicsView17rubberBandChangedE5QRect7QPointFS1_(void *this_, QRect* viewportRect, QPointF* fromScenePoint, QPointF* toScenePoint) {
+  ((QGraphicsView*)this_)->rubberBandChanged(*viewportRect, *fromScenePoint, *toScenePoint);
 }
 //  main block end

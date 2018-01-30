@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QWidgetAction is pure virtual: false
+// QWidgetAction has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,31 +39,37 @@ extern "C" void set_callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(void*cbfn
 
 class MyQWidgetAction : public QWidgetAction {
 public:
+  virtual ~MyQWidgetAction() {}
+// void QWidgetAction(class QObject *)
 MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN13QWidgetAction5eventEP6QEvent != 0) {
-  // callback_ZN13QWidgetAction5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN13QWidgetAction5eventEP6QEvent != 0) {
+      // callback_ZN13QWidgetAction5eventEP6QEvent(arg0);
+    }
+    return QWidgetAction::event(arg0);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-  if (callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(arg0, arg1);
-}}
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+    if (callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    }
+    return QWidgetAction::eventFilter(arg0, arg1);
+  }
 // QWidget * createWidget(class QWidget *)
-// QWidget * createWidget(class QWidget *)
-virtual QWidget * createWidget(QWidget * parent) {
-  if (callback_ZN13QWidgetAction12createWidgetEP7QWidget != 0) {
-  // callback_ZN13QWidgetAction12createWidgetEP7QWidget(parent);
-}}
+  virtual QWidget * createWidget(QWidget * parent) {
+    if (callback_ZN13QWidgetAction12createWidgetEP7QWidget != 0) {
+      // callback_ZN13QWidgetAction12createWidgetEP7QWidget(parent);
+    }
+    return QWidgetAction::createWidget(parent);
+  }
 // void deleteWidget(class QWidget *)
-// void deleteWidget(class QWidget *)
-virtual void deleteWidget(QWidget * widget) {
-  if (callback_ZN13QWidgetAction12deleteWidgetEP7QWidget != 0) {
-  // callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(widget);
-}}
+  virtual void deleteWidget(QWidget * widget) {
+    if (callback_ZN13QWidgetAction12deleteWidgetEP7QWidget != 0) {
+      // callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(widget);
+    }
+    QWidgetAction::deleteWidget(widget);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -76,15 +83,15 @@ void* C_ZNK13QWidgetAction10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidgetaction.h:59
 // [-2] void QWidgetAction(class QObject *)
 extern "C"
-void* C_ZN13QWidgetActionC1EP7QObject(QObject * parent) {
-  (MyQWidgetAction*)(0);
+void* C_ZN13QWidgetActionC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQWidgetAction*)(0);
   return  new MyQWidgetAction(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:60
 // [-2] void ~QWidgetAction()
 extern "C"
-void C_ZN13QWidgetActionD1Ev(void *this_) {
+void C_ZN13QWidgetActionD2Ev(void *this_) {
   delete (QWidgetAction*)(this_);
 }
 // Public Visibility=Default Availability=Available

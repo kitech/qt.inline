@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QFrame is pure virtual: false
+// QFrame has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,37 +46,44 @@ extern "C" void set_callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(vo
 
 class MyQFrame : public QFrame {
 public:
+  virtual ~MyQFrame() {}
+// void QFrame(class QWidget *, Qt::WindowFlags)
 MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN6QFrame5eventEP6QEvent != 0) {
-  // callback_ZN6QFrame5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN6QFrame5eventEP6QEvent != 0) {
+      // callback_ZN6QFrame5eventEP6QEvent(e);
+    }
+    return QFrame::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN6QFrame10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN6QFrame10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN6QFrame10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN6QFrame10paintEventEP11QPaintEvent(arg0);
+    }
+    QFrame::paintEvent(arg0);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * arg0) {
-  if (callback_ZN6QFrame11changeEventEP6QEvent != 0) {
-  // callback_ZN6QFrame11changeEventEP6QEvent(arg0);
-}}
+  virtual void changeEvent(QEvent * arg0) {
+    if (callback_ZN6QFrame11changeEventEP6QEvent != 0) {
+      // callback_ZN6QFrame11changeEventEP6QEvent(arg0);
+    }
+    QFrame::changeEvent(arg0);
+  }
 // void drawFrame(class QPainter *)
-// void drawFrame(class QPainter *)
-virtual void drawFrame(QPainter * arg0) {
-  if (callback_ZN6QFrame9drawFrameEP8QPainter != 0) {
-  // callback_ZN6QFrame9drawFrameEP8QPainter(arg0);
-}}
+  virtual void drawFrame(QPainter * arg0) {
+    if (callback_ZN6QFrame9drawFrameEP8QPainter != 0) {
+      // callback_ZN6QFrame9drawFrameEP8QPainter(arg0);
+    }
+    QFrame::drawFrame(arg0);
+  }
 // void initStyleOption(class QStyleOptionFrame *)
-// void initStyleOption(class QStyleOptionFrame *)
-virtual void initStyleOption(QStyleOptionFrame * option) {
-  if (callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame != 0) {
-  // callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(option);
-}}
+  virtual void initStyleOption(QStyleOptionFrame * option) {
+    if (callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame != 0) {
+      // callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(option);
+    }
+    QFrame::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -89,15 +97,15 @@ void* C_ZNK6QFrame10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qframe.h:64
 // [-2] void QFrame(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN6QFrameC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
-  (MyQFrame*)(0);
+void* C_ZN6QFrameC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQFrame*)(0);
   return  new MyQFrame(parent, f);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qframe.h:65
 // [-2] void ~QFrame()
 extern "C"
-void C_ZN6QFrameD1Ev(void *this_) {
+void C_ZN6QFrameD2Ev(void *this_) {
   delete (QFrame*)(this_);
 }
 // Public Visibility=Default Availability=Available

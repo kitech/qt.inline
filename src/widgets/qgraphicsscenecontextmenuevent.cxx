@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneContextMenuEvent is pure virtual: false
+// QGraphicsSceneContextMenuEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneContextMenuEvent : public QGraphicsSceneContextMenuEvent {
 public:
+  virtual ~MyQGraphicsSceneContextMenuEvent() {}
+// void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
 MyQGraphicsSceneContextMenuEvent(QEvent::Type type) : QGraphicsSceneContextMenuEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneContextMenuEvent(QEvent::Type type) : QGraphicsSceneContextMenuE
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
 // [-2] void QGraphicsSceneContextMenuEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN30QGraphicsSceneContextMenuEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneContextMenuEvent*)(0);
-  return  new MyQGraphicsSceneContextMenuEvent(type);
+void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneContextMenuEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:175
 // [-2] void ~QGraphicsSceneContextMenuEvent()
 extern "C"
-void C_ZN30QGraphicsSceneContextMenuEventD1Ev(void *this_) {
+void C_ZN30QGraphicsSceneContextMenuEventD2Ev(void *this_) {
   delete (QGraphicsSceneContextMenuEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

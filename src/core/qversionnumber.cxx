@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QVersionNumber is pure virtual: false
+// QVersionNumber has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQVersionNumber : public QVersionNumber {
 public:
+  virtual ~MyQVersionNumber() {}
+// void QVersionNumber()
 MyQVersionNumber() : QVersionNumber() {}
+// void QVersionNumber(int)
 MyQVersionNumber(int maj) : QVersionNumber(maj) {}
+// void QVersionNumber(int, int)
 MyQVersionNumber(int maj, int min) : QVersionNumber(maj, min) {}
+// void QVersionNumber(int, int, int)
 MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
 };
 
@@ -20,33 +26,29 @@ MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
 // /usr/include/qt/QtCore/qversionnumber.h:221
 // [-2] void QVersionNumber()
 extern "C"
-void* C_ZN14QVersionNumberC1Ev() {
-  (MyQVersionNumber*)(0);
-  return  new MyQVersionNumber();
+void* C_ZN14QVersionNumberC2Ev() {
+  return  new QVersionNumber();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:242
 // [-2] void QVersionNumber(int)
 extern "C"
-void* C_ZN14QVersionNumberC1Ei(int maj) {
-  (MyQVersionNumber*)(0);
-  return  new MyQVersionNumber(maj);
+void* C_ZN14QVersionNumberC2Ei(int maj) {
+  return  new QVersionNumber(maj);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:245
 // [-2] void QVersionNumber(int, int)
 extern "C"
-void* C_ZN14QVersionNumberC1Eii(int maj, int min) {
-  (MyQVersionNumber*)(0);
-  return  new MyQVersionNumber(maj, min);
+void* C_ZN14QVersionNumberC2Eii(int maj, int min) {
+  return  new QVersionNumber(maj, min);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:248
 // [-2] void QVersionNumber(int, int, int)
 extern "C"
-void* C_ZN14QVersionNumberC1Eiii(int maj, int min, int mic) {
-  (MyQVersionNumber*)(0);
-  return  new MyQVersionNumber(maj, min, mic);
+void* C_ZN14QVersionNumberC2Eiii(int maj, int min, int mic) {
+  return  new QVersionNumber(maj, min, mic);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:251
@@ -147,16 +149,16 @@ return new QVersionNumber(rv);
 // /usr/include/qt/QtCore/qversionnumber.h:286
 // [8] QVersionNumber fromString(class QLatin1String, int *)
 extern "C"
-void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(string, suffixIndex);
+void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String* string, int * suffixIndex) {
+  auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:287
 // [8] QVersionNumber fromString(class QStringView, int *)
 extern "C"
-void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(string, suffixIndex);
+void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {
+  auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
 //  main block end

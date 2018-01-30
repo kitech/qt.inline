@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QTextEdit is pure virtual: false
+// QTextEdit has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -206,176 +207,207 @@ extern "C" void set_callback_ZN9QTextEdit7zoomInFEf(void*cbfn)
 
 class MyQTextEdit : public QTextEdit {
 public:
+  virtual ~MyQTextEdit() {}
+// void QTextEdit(class QWidget *)
 MyQTextEdit(QWidget * parent) : QTextEdit(parent) {}
+// void QTextEdit(const class QString &, class QWidget *)
 MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN9QTextEdit5eventEP6QEvent != 0) {
-  // callback_ZN9QTextEdit5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN9QTextEdit5eventEP6QEvent != 0) {
+      // callback_ZN9QTextEdit5eventEP6QEvent(e);
+    }
+    return QTextEdit::event(e);
+  }
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * e) {
-  if (callback_ZN9QTextEdit10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN9QTextEdit10timerEventEP11QTimerEvent(e);
-}}
+  virtual void timerEvent(QTimerEvent * e) {
+    if (callback_ZN9QTextEdit10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN9QTextEdit10timerEventEP11QTimerEvent(e);
+    }
+    QTextEdit::timerEvent(e);
+  }
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * e) {
-  if (callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent(e);
-}}
+  virtual void keyPressEvent(QKeyEvent * e) {
+    if (callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent(e);
+    }
+    QTextEdit::keyPressEvent(e);
+  }
 // void keyReleaseEvent(class QKeyEvent *)
-// void keyReleaseEvent(class QKeyEvent *)
-virtual void keyReleaseEvent(QKeyEvent * e) {
-  if (callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent != 0) {
-  // callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent(e);
-}}
+  virtual void keyReleaseEvent(QKeyEvent * e) {
+    if (callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent != 0) {
+      // callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent(e);
+    }
+    QTextEdit::keyReleaseEvent(e);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * e) {
-  if (callback_ZN9QTextEdit11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN9QTextEdit11resizeEventEP12QResizeEvent(e);
-}}
+  virtual void resizeEvent(QResizeEvent * e) {
+    if (callback_ZN9QTextEdit11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN9QTextEdit11resizeEventEP12QResizeEvent(e);
+    }
+    QTextEdit::resizeEvent(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * e) {
-  if (callback_ZN9QTextEdit10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN9QTextEdit10paintEventEP11QPaintEvent(e);
-}}
+  virtual void paintEvent(QPaintEvent * e) {
+    if (callback_ZN9QTextEdit10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN9QTextEdit10paintEventEP11QPaintEvent(e);
+    }
+    QTextEdit::paintEvent(e);
+  }
 // void mousePressEvent(class QMouseEvent *)
-// void mousePressEvent(class QMouseEvent *)
-virtual void mousePressEvent(QMouseEvent * e) {
-  if (callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent != 0) {
-  // callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent(e);
-}}
+  virtual void mousePressEvent(QMouseEvent * e) {
+    if (callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent != 0) {
+      // callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent(e);
+    }
+    QTextEdit::mousePressEvent(e);
+  }
 // void mouseMoveEvent(class QMouseEvent *)
-// void mouseMoveEvent(class QMouseEvent *)
-virtual void mouseMoveEvent(QMouseEvent * e) {
-  if (callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent != 0) {
-  // callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent(e);
-}}
+  virtual void mouseMoveEvent(QMouseEvent * e) {
+    if (callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent != 0) {
+      // callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent(e);
+    }
+    QTextEdit::mouseMoveEvent(e);
+  }
 // void mouseReleaseEvent(class QMouseEvent *)
-// void mouseReleaseEvent(class QMouseEvent *)
-virtual void mouseReleaseEvent(QMouseEvent * e) {
-  if (callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent != 0) {
-  // callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent(e);
-}}
+  virtual void mouseReleaseEvent(QMouseEvent * e) {
+    if (callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent != 0) {
+      // callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent(e);
+    }
+    QTextEdit::mouseReleaseEvent(e);
+  }
 // void mouseDoubleClickEvent(class QMouseEvent *)
-// void mouseDoubleClickEvent(class QMouseEvent *)
-virtual void mouseDoubleClickEvent(QMouseEvent * e) {
-  if (callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent != 0) {
-  // callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent(e);
-}}
+  virtual void mouseDoubleClickEvent(QMouseEvent * e) {
+    if (callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent != 0) {
+      // callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent(e);
+    }
+    QTextEdit::mouseDoubleClickEvent(e);
+  }
 // bool focusNextPrevChild(_Bool)
-// bool focusNextPrevChild(_Bool)
-virtual bool focusNextPrevChild(bool next) {
-  if (callback_ZN9QTextEdit18focusNextPrevChildEb != 0) {
-  // callback_ZN9QTextEdit18focusNextPrevChildEb(next);
-}}
+  virtual bool focusNextPrevChild(bool next) {
+    if (callback_ZN9QTextEdit18focusNextPrevChildEb != 0) {
+      // callback_ZN9QTextEdit18focusNextPrevChildEb(next);
+    }
+    return QTextEdit::focusNextPrevChild(next);
+  }
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * e) {
-  if (callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent(e);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * e) {
+    if (callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent(e);
+    }
+    QTextEdit::contextMenuEvent(e);
+  }
 // void dragEnterEvent(class QDragEnterEvent *)
-// void dragEnterEvent(class QDragEnterEvent *)
-virtual void dragEnterEvent(QDragEnterEvent * e) {
-  if (callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent != 0) {
-  // callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent(e);
-}}
+  virtual void dragEnterEvent(QDragEnterEvent * e) {
+    if (callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent != 0) {
+      // callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent(e);
+    }
+    QTextEdit::dragEnterEvent(e);
+  }
 // void dragLeaveEvent(class QDragLeaveEvent *)
-// void dragLeaveEvent(class QDragLeaveEvent *)
-virtual void dragLeaveEvent(QDragLeaveEvent * e) {
-  if (callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent != 0) {
-  // callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent(e);
-}}
+  virtual void dragLeaveEvent(QDragLeaveEvent * e) {
+    if (callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent != 0) {
+      // callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent(e);
+    }
+    QTextEdit::dragLeaveEvent(e);
+  }
 // void dragMoveEvent(class QDragMoveEvent *)
-// void dragMoveEvent(class QDragMoveEvent *)
-virtual void dragMoveEvent(QDragMoveEvent * e) {
-  if (callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent != 0) {
-  // callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent(e);
-}}
+  virtual void dragMoveEvent(QDragMoveEvent * e) {
+    if (callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent != 0) {
+      // callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent(e);
+    }
+    QTextEdit::dragMoveEvent(e);
+  }
 // void dropEvent(class QDropEvent *)
-// void dropEvent(class QDropEvent *)
-virtual void dropEvent(QDropEvent * e) {
-  if (callback_ZN9QTextEdit9dropEventEP10QDropEvent != 0) {
-  // callback_ZN9QTextEdit9dropEventEP10QDropEvent(e);
-}}
+  virtual void dropEvent(QDropEvent * e) {
+    if (callback_ZN9QTextEdit9dropEventEP10QDropEvent != 0) {
+      // callback_ZN9QTextEdit9dropEventEP10QDropEvent(e);
+    }
+    QTextEdit::dropEvent(e);
+  }
 // void focusInEvent(class QFocusEvent *)
-// void focusInEvent(class QFocusEvent *)
-virtual void focusInEvent(QFocusEvent * e) {
-  if (callback_ZN9QTextEdit12focusInEventEP11QFocusEvent != 0) {
-  // callback_ZN9QTextEdit12focusInEventEP11QFocusEvent(e);
-}}
+  virtual void focusInEvent(QFocusEvent * e) {
+    if (callback_ZN9QTextEdit12focusInEventEP11QFocusEvent != 0) {
+      // callback_ZN9QTextEdit12focusInEventEP11QFocusEvent(e);
+    }
+    QTextEdit::focusInEvent(e);
+  }
 // void focusOutEvent(class QFocusEvent *)
-// void focusOutEvent(class QFocusEvent *)
-virtual void focusOutEvent(QFocusEvent * e) {
-  if (callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent != 0) {
-  // callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent(e);
-}}
+  virtual void focusOutEvent(QFocusEvent * e) {
+    if (callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent != 0) {
+      // callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent(e);
+    }
+    QTextEdit::focusOutEvent(e);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * arg0) {
-  if (callback_ZN9QTextEdit9showEventEP10QShowEvent != 0) {
-  // callback_ZN9QTextEdit9showEventEP10QShowEvent(arg0);
-}}
+  virtual void showEvent(QShowEvent * arg0) {
+    if (callback_ZN9QTextEdit9showEventEP10QShowEvent != 0) {
+      // callback_ZN9QTextEdit9showEventEP10QShowEvent(arg0);
+    }
+    QTextEdit::showEvent(arg0);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * e) {
-  if (callback_ZN9QTextEdit11changeEventEP6QEvent != 0) {
-  // callback_ZN9QTextEdit11changeEventEP6QEvent(e);
-}}
+  virtual void changeEvent(QEvent * e) {
+    if (callback_ZN9QTextEdit11changeEventEP6QEvent != 0) {
+      // callback_ZN9QTextEdit11changeEventEP6QEvent(e);
+    }
+    QTextEdit::changeEvent(e);
+  }
 // void wheelEvent(class QWheelEvent *)
-// void wheelEvent(class QWheelEvent *)
-virtual void wheelEvent(QWheelEvent * e) {
-  if (callback_ZN9QTextEdit10wheelEventEP11QWheelEvent != 0) {
-  // callback_ZN9QTextEdit10wheelEventEP11QWheelEvent(e);
-}}
+  virtual void wheelEvent(QWheelEvent * e) {
+    if (callback_ZN9QTextEdit10wheelEventEP11QWheelEvent != 0) {
+      // callback_ZN9QTextEdit10wheelEventEP11QWheelEvent(e);
+    }
+    QTextEdit::wheelEvent(e);
+  }
 // QMimeData * createMimeDataFromSelection()
-// QMimeData * createMimeDataFromSelection()
-virtual QMimeData * createMimeDataFromSelection() {
-  if (callback_ZNK9QTextEdit27createMimeDataFromSelectionEv != 0) {
-  // callback_ZNK9QTextEdit27createMimeDataFromSelectionEv();
-}}
+  virtual QMimeData * createMimeDataFromSelection() {
+    if (callback_ZNK9QTextEdit27createMimeDataFromSelectionEv != 0) {
+      // callback_ZNK9QTextEdit27createMimeDataFromSelectionEv();
+    }
+    return QTextEdit::createMimeDataFromSelection();
+  }
 // bool canInsertFromMimeData(const class QMimeData *)
-// bool canInsertFromMimeData(const class QMimeData *)
-virtual bool canInsertFromMimeData(const QMimeData * source) {
-  if (callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData != 0) {
-  // callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData(source);
-}}
+  virtual bool canInsertFromMimeData(const QMimeData * source) {
+    if (callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData != 0) {
+      // callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData(source);
+    }
+    return QTextEdit::canInsertFromMimeData(source);
+  }
 // void insertFromMimeData(const class QMimeData *)
-// void insertFromMimeData(const class QMimeData *)
-virtual void insertFromMimeData(const QMimeData * source) {
-  if (callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData != 0) {
-  // callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData(source);
-}}
+  virtual void insertFromMimeData(const QMimeData * source) {
+    if (callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData != 0) {
+      // callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData(source);
+    }
+    QTextEdit::insertFromMimeData(source);
+  }
 // void inputMethodEvent(class QInputMethodEvent *)
-// void inputMethodEvent(class QInputMethodEvent *)
-virtual void inputMethodEvent(QInputMethodEvent * arg0) {
-  if (callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent != 0) {
-  // callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent(arg0);
-}}
+  virtual void inputMethodEvent(QInputMethodEvent * arg0) {
+    if (callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent != 0) {
+      // callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent(arg0);
+    }
+    QTextEdit::inputMethodEvent(arg0);
+  }
 // void scrollContentsBy(int, int)
-// void scrollContentsBy(int, int)
-virtual void scrollContentsBy(int dx, int dy) {
-  if (callback_ZN9QTextEdit16scrollContentsByEii != 0) {
-  // callback_ZN9QTextEdit16scrollContentsByEii(dx, dy);
-}}
+  virtual void scrollContentsBy(int dx, int dy) {
+    if (callback_ZN9QTextEdit16scrollContentsByEii != 0) {
+      // callback_ZN9QTextEdit16scrollContentsByEii(dx, dy);
+    }
+    QTextEdit::scrollContentsBy(dx, dy);
+  }
 // void doSetTextCursor(const class QTextCursor &)
-// void doSetTextCursor(const class QTextCursor &)
-virtual void doSetTextCursor(const QTextCursor & cursor) {
-  if (callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor != 0) {
-  // callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(cursor);
-}}
+  virtual void doSetTextCursor(const QTextCursor & cursor) {
+    if (callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor != 0) {
+      // callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(cursor);
+    }
+    QTextEdit::doSetTextCursor(cursor);
+  }
 // void zoomInF(float)
-// void zoomInF(float)
-virtual void zoomInF(float range) {
-  if (callback_ZN9QTextEdit7zoomInFEf != 0) {
-  // callback_ZN9QTextEdit7zoomInFEf(range);
-}}
+  virtual void zoomInF(float range) {
+    if (callback_ZN9QTextEdit7zoomInFEf != 0) {
+      // callback_ZN9QTextEdit7zoomInFEf(range);
+    }
+    QTextEdit::zoomInF(range);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -389,23 +421,23 @@ void* C_ZNK9QTextEdit10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:105
 // [-2] void QTextEdit(class QWidget *)
 extern "C"
-void* C_ZN9QTextEditC1EP7QWidget(QWidget * parent) {
-  (MyQTextEdit*)(0);
+void* C_ZN9QTextEditC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQTextEdit*)(0);
   return  new MyQTextEdit(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:106
 // [-2] void QTextEdit(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QTextEditC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
-  (MyQTextEdit*)(0);
+void* C_ZN9QTextEditC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  auto _nilp = (MyQTextEdit*)(0);
   return  new MyQTextEdit(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:107
 // [-2] void ~QTextEdit()
 extern "C"
-void C_ZN9QTextEditD1Ev(void *this_) {
+void C_ZN9QTextEditD2Ev(void *this_) {
   delete (QTextEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available
@@ -856,8 +888,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtWidgets/qtextedit.h:220
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery, class QVariant)
 extern "C"
-void* C_ZNK9QTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *this_, Qt::InputMethodQuery query, QVariant argument) {
-  auto rv = ((QTextEdit*)this_)->inputMethodQuery(query, argument);
+void* C_ZNK9QTextEdit16inputMethodQueryEN2Qt16InputMethodQueryE8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* argument) {
+  auto rv = ((QTextEdit*)this_)->inputMethodQuery(query, *argument);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available

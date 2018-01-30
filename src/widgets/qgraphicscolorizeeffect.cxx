@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsColorizeEffect is pure virtual: false
+// QGraphicsColorizeEffect has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(void*cb
 
 class MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
 public:
+  virtual ~MyQGraphicsColorizeEffect() {}
+// void QGraphicsColorizeEffect(class QObject *)
 MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 // void draw(class QPainter *)
-// void draw(class QPainter *)
-virtual void draw(QPainter * painter) {
-  if (callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter != 0) {
-  // callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(painter);
-}}
+  virtual void draw(QPainter * painter) {
+    if (callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter != 0) {
+      // callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(painter);
+    }
+    QGraphicsColorizeEffect::draw(painter);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK23QGraphicsColorizeEffect10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:132
 // [-2] void QGraphicsColorizeEffect(class QObject *)
 extern "C"
-void* C_ZN23QGraphicsColorizeEffectC1EP7QObject(QObject * parent) {
-  (MyQGraphicsColorizeEffect*)(0);
+void* C_ZN23QGraphicsColorizeEffectC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQGraphicsColorizeEffect*)(0);
   return  new MyQGraphicsColorizeEffect(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:133
 // [-2] void ~QGraphicsColorizeEffect()
 extern "C"
-void C_ZN23QGraphicsColorizeEffectD1Ev(void *this_) {
+void C_ZN23QGraphicsColorizeEffectD2Ev(void *this_) {
   delete (QGraphicsColorizeEffect*)(this_);
 }
 // Public Visibility=Default Availability=Available

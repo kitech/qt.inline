@@ -4,14 +4,19 @@
 #include <QtGui>
 
 // QTextDocumentWriter is pure virtual: false
+// QTextDocumentWriter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextDocumentWriter : public QTextDocumentWriter {
 public:
+  virtual ~MyQTextDocumentWriter() {}
+// void QTextDocumentWriter()
 MyQTextDocumentWriter() : QTextDocumentWriter() {}
+// void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
 MyQTextDocumentWriter(QIODevice * device, const QByteArray & format) : QTextDocumentWriter(device, format) {}
+// void QTextDocumentWriter(const class QString &, const class QByteArray &)
 MyQTextDocumentWriter(const QString & fileName, const QByteArray & format) : QTextDocumentWriter(fileName, format) {}
 };
 
@@ -19,31 +24,28 @@ MyQTextDocumentWriter(const QString & fileName, const QByteArray & format) : QTe
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:57
 // [-2] void QTextDocumentWriter()
 extern "C"
-void* C_ZN19QTextDocumentWriterC1Ev() {
-  (MyQTextDocumentWriter*)(0);
-  return  new MyQTextDocumentWriter();
+void* C_ZN19QTextDocumentWriterC2Ev() {
+  return  new QTextDocumentWriter();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:58
 // [-2] void QTextDocumentWriter(class QIODevice *, const class QByteArray &)
 extern "C"
-void* C_ZN19QTextDocumentWriterC1EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
-  (MyQTextDocumentWriter*)(0);
-  return  new MyQTextDocumentWriter(device, format);
+void* C_ZN19QTextDocumentWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
+  return  new QTextDocumentWriter(device, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:59
 // [-2] void QTextDocumentWriter(const class QString &, const class QByteArray &)
 extern "C"
-void* C_ZN19QTextDocumentWriterC1ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
-  (MyQTextDocumentWriter*)(0);
-  return  new MyQTextDocumentWriter(fileName, format);
+void* C_ZN19QTextDocumentWriterC2ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
+  return  new QTextDocumentWriter(fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocumentwriter.h:60
 // [-2] void ~QTextDocumentWriter()
 extern "C"
-void C_ZN19QTextDocumentWriterD1Ev(void *this_) {
+void C_ZN19QTextDocumentWriterD2Ev(void *this_) {
   delete (QTextDocumentWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available

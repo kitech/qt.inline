@@ -4,14 +4,19 @@
 #include <QtCore>
 
 // QXmlStreamAttribute is pure virtual: false
+// QXmlStreamAttribute has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamAttribute : public QXmlStreamAttribute {
 public:
+  virtual ~MyQXmlStreamAttribute() {}
+// void QXmlStreamAttribute()
 MyQXmlStreamAttribute() : QXmlStreamAttribute() {}
+// void QXmlStreamAttribute(const class QString &, const class QString &)
 MyQXmlStreamAttribute(const QString & qualifiedName, const QString & value) : QXmlStreamAttribute(qualifiedName, value) {}
+// void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
 MyQXmlStreamAttribute(const QString & namespaceUri, const QString & name, const QString & value) : QXmlStreamAttribute(namespaceUri, name, value) {}
 };
 
@@ -19,31 +24,28 @@ MyQXmlStreamAttribute(const QString & namespaceUri, const QString & name, const 
 // /usr/include/qt/QtCore/qxmlstream.h:109
 // [-2] void QXmlStreamAttribute()
 extern "C"
-void* C_ZN19QXmlStreamAttributeC1Ev() {
-  (MyQXmlStreamAttribute*)(0);
-  return  new MyQXmlStreamAttribute();
+void* C_ZN19QXmlStreamAttributeC2Ev() {
+  return  new QXmlStreamAttribute();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:110
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamAttributeC1ERK7QStringS2_(const QString & qualifiedName, const QString & value) {
-  (MyQXmlStreamAttribute*)(0);
-  return  new MyQXmlStreamAttribute(qualifiedName, value);
+void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(const QString & qualifiedName, const QString & value) {
+  return  new QXmlStreamAttribute(qualifiedName, value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:112
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamAttributeC1ERK7QStringS2_S2_(const QString & namespaceUri, const QString & name, const QString & value) {
-  (MyQXmlStreamAttribute*)(0);
-  return  new MyQXmlStreamAttribute(namespaceUri, name, value);
+void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(const QString & namespaceUri, const QString & name, const QString & value) {
+  return  new QXmlStreamAttribute(namespaceUri, name, value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:137
 // [-2] void ~QXmlStreamAttribute()
 extern "C"
-void C_ZN19QXmlStreamAttributeD1Ev(void *this_) {
+void C_ZN19QXmlStreamAttributeD2Ev(void *this_) {
   delete (QXmlStreamAttribute*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

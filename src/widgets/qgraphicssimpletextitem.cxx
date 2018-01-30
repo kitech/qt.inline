@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsSimpleTextItem is pure virtual: false
+// QGraphicsSimpleTextItem has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,49 +32,55 @@ extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(
 
 class MyQGraphicsSimpleTextItem : public QGraphicsSimpleTextItem {
 public:
+  virtual ~MyQGraphicsSimpleTextItem() {}
+// void QGraphicsSimpleTextItem(class QGraphicsItem *)
 MyQGraphicsSimpleTextItem(QGraphicsItem * parent) : QGraphicsSimpleTextItem(parent) {}
+// void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
 MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsSimpleTextItem(text, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
-// bool supportsExtension(enum QGraphicsItem::Extension)
-virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-  if (callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-  // callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
-}}
+  virtual bool supportsExtension(QGraphicsItem::Extension extension) {
+    if (callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
+      // callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    }
+    return QGraphicsSimpleTextItem::supportsExtension(extension);
+  }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-// void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-  if (callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-  // callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
-}}
+  virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
+    if (callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
+      // callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    }
+    QGraphicsSimpleTextItem::setExtension(extension, variant);
+  }
 // QVariant extension(const class QVariant &)
-// QVariant extension(const class QVariant &)
-virtual QVariant extension(const QVariant & variant) {
-  if (callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant != 0) {
-  // callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(variant);
-}}
+  virtual QVariant extension(const QVariant & variant) {
+    if (callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant != 0) {
+      // callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(variant);
+    }
+    return QGraphicsSimpleTextItem::extension(variant);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:968
 // [-2] void QGraphicsSimpleTextItem(class QGraphicsItem *)
 extern "C"
-void* C_ZN23QGraphicsSimpleTextItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQGraphicsSimpleTextItem*)(0);
+void* C_ZN23QGraphicsSimpleTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
   return  new MyQGraphicsSimpleTextItem(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:969
 // [-2] void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
 extern "C"
-void* C_ZN23QGraphicsSimpleTextItemC1ERK7QStringP13QGraphicsItem(const QString & text, QGraphicsItem * parent) {
-  (MyQGraphicsSimpleTextItem*)(0);
+void* C_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem(const QString & text, QGraphicsItem * parent) {
+  auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
   return  new MyQGraphicsSimpleTextItem(text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:970
 // [-2] void ~QGraphicsSimpleTextItem()
 extern "C"
-void C_ZN23QGraphicsSimpleTextItemD1Ev(void *this_) {
+void C_ZN23QGraphicsSimpleTextItemD2Ev(void *this_) {
   delete (QGraphicsSimpleTextItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QPaintEngineState is pure virtual: false
+// QPaintEngineState has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPaintEngineState : public QPaintEngineState {
 public:
+  virtual ~MyQPaintEngineState() {}
 };
 
 // Public inline Visibility=Default Availability=Available

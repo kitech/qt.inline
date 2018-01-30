@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QUrl is pure virtual: false
+// QUrl has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUrl : public QUrl {
 public:
+  virtual ~MyQUrl() {}
+// void QUrl()
 MyQUrl() : QUrl() {}
+// void QUrl(const class QString &, enum QUrl::ParsingMode)
 MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
 };
 
@@ -18,23 +22,21 @@ MyQUrl(const QString & url, QUrl::ParsingMode mode) : QUrl(url, mode) {}
 // /usr/include/qt/QtCore/qurl.h:176
 // [-2] void QUrl()
 extern "C"
-void* C_ZN4QUrlC1Ev() {
-  (MyQUrl*)(0);
-  return  new MyQUrl();
+void* C_ZN4QUrlC2Ev() {
+  return  new QUrl();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:182
 // [-2] void QUrl(const class QString &, enum QUrl::ParsingMode)
 extern "C"
-void* C_ZN4QUrlC1ERK7QStringNS_11ParsingModeE(const QString & url, QUrl::ParsingMode mode) {
-  (MyQUrl*)(0);
-  return  new MyQUrl(url, mode);
+void* C_ZN4QUrlC2ERK7QStringNS_11ParsingModeE(const QString & url, QUrl::ParsingMode mode) {
+  return  new QUrl(url, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:191
 // [-2] void ~QUrl()
 extern "C"
-void C_ZN4QUrlD1Ev(void *this_) {
+void C_ZN4QUrlD2Ev(void *this_) {
   delete (QUrl*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

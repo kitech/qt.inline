@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextBlock is pure virtual: false
+// QTextBlock has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextBlock : public QTextBlock {
 public:
+  virtual ~MyQTextBlock() {}
+// void QTextBlock()
 MyQTextBlock() : QTextBlock() {}
 };
 
@@ -17,9 +20,8 @@ MyQTextBlock() : QTextBlock() {}
 // /usr/include/qt/QtGui/qtextobject.h:206
 // [-2] void QTextBlock()
 extern "C"
-void* C_ZN10QTextBlockC1Ev() {
-  (MyQTextBlock*)(0);
-  return  new MyQTextBlock();
+void* C_ZN10QTextBlockC2Ev() {
+  return  new QTextBlock();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:210

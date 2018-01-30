@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QPageSize is pure virtual: false
+// QPageSize has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPageSize : public QPageSize {
 public:
+  virtual ~MyQPageSize() {}
+// void QPageSize()
 MyQPageSize() : QPageSize() {}
+// void QPageSize(enum QPageSize::PageSizeId)
 MyQPageSize(QPageSize::PageSizeId pageSizeId) : QPageSize(pageSizeId) {}
+// void QPageSize(const class QSize &, const class QString &, enum QPageSize::SizeMatchPolicy)
 MyQPageSize(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(pointSize, name, matchPolicy) {}
+// void QPageSize(const class QSizeF &, enum QPageSize::Unit, const class QString &, enum QPageSize::SizeMatchPolicy)
 MyQPageSize(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(size, units, name, matchPolicy) {}
 };
 
@@ -20,39 +26,35 @@ MyQPageSize(const QSizeF & size, QPageSize::Unit units, const QString & name, QP
 // /usr/include/qt/QtGui/qpagesize.h:230
 // [-2] void QPageSize()
 extern "C"
-void* C_ZN9QPageSizeC1Ev() {
-  (MyQPageSize*)(0);
-  return  new MyQPageSize();
+void* C_ZN9QPageSizeC2Ev() {
+  return  new QPageSize();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:231
 // [-2] void QPageSize(enum QPageSize::PageSizeId)
 extern "C"
-void* C_ZN9QPageSizeC1ENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
-  (MyQPageSize*)(0);
-  return  new MyQPageSize(pageSizeId);
+void* C_ZN9QPageSizeC2ENS_10PageSizeIdE(QPageSize::PageSizeId pageSizeId) {
+  return  new QPageSize(pageSizeId);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:232
 // [-2] void QPageSize(const class QSize &, const class QString &, enum QPageSize::SizeMatchPolicy)
 extern "C"
-void* C_ZN9QPageSizeC1ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) {
-  (MyQPageSize*)(0);
-  return  new MyQPageSize(pointSize, name, matchPolicy);
+void* C_ZN9QPageSizeC2ERK5QSizeRK7QStringNS_15SizeMatchPolicyE(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) {
+  return  new QPageSize(pointSize, name, matchPolicy);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:235
 // [-2] void QPageSize(const class QSizeF &, enum QPageSize::Unit, const class QString &, enum QPageSize::SizeMatchPolicy)
 extern "C"
-void* C_ZN9QPageSizeC1ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) {
-  (MyQPageSize*)(0);
-  return  new MyQPageSize(size, units, name, matchPolicy);
+void* C_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) {
+  return  new QPageSize(size, units, name, matchPolicy);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:243
 // [-2] void ~QPageSize()
 extern "C"
-void C_ZN9QPageSizeD1Ev(void *this_) {
+void C_ZN9QPageSizeD2Ev(void *this_) {
   delete (QPageSize*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

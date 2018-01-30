@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QAction is pure virtual: false
+// QAction has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,15 +18,20 @@ extern "C" void set_callback_ZN7QAction5eventEP6QEvent(void*cbfn)
 
 class MyQAction : public QAction {
 public:
+  virtual ~MyQAction() {}
+// void QAction(class QObject *)
 MyQAction(QObject * parent) : QAction(parent) {}
+// void QAction(const class QString &, class QObject *)
 MyQAction(const QString & text, QObject * parent) : QAction(text, parent) {}
+// void QAction(const class QIcon &, const class QString &, class QObject *)
 MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(icon, text, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * arg0) {
-  if (callback_ZN7QAction5eventEP6QEvent != 0) {
-  // callback_ZN7QAction5eventEP6QEvent(arg0);
-}}
+  virtual bool event(QEvent * arg0) {
+    if (callback_ZN7QAction5eventEP6QEvent != 0) {
+      // callback_ZN7QAction5eventEP6QEvent(arg0);
+    }
+    return QAction::event(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -39,31 +45,31 @@ void* C_ZNK7QAction10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:95
 // [-2] void QAction(class QObject *)
 extern "C"
-void* C_ZN7QActionC1EP7QObject(QObject * parent) {
-  (MyQAction*)(0);
+void* C_ZN7QActionC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQAction*)(0);
   return  new MyQAction(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:96
 // [-2] void QAction(const class QString &, class QObject *)
 extern "C"
-void* C_ZN7QActionC1ERK7QStringP7QObject(const QString & text, QObject * parent) {
-  (MyQAction*)(0);
+void* C_ZN7QActionC2ERK7QStringP7QObject(const QString & text, QObject * parent) {
+  auto _nilp = (MyQAction*)(0);
   return  new MyQAction(text, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:97
 // [-2] void QAction(const class QIcon &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN7QActionC1ERK5QIconRK7QStringP7QObject(const QIcon & icon, const QString & text, QObject * parent) {
-  (MyQAction*)(0);
+void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(const QIcon & icon, const QString & text, QObject * parent) {
+  auto _nilp = (MyQAction*)(0);
   return  new MyQAction(icon, text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:99
 // [-2] void ~QAction()
 extern "C"
-void C_ZN7QActionD1Ev(void *this_) {
+void C_ZN7QActionD2Ev(void *this_) {
   delete (QAction*)(this_);
 }
 // Public Visibility=Default Availability=Available

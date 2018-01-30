@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QCommandLinkButton is pure virtual: false
+// QCommandLinkButton has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -45,39 +46,48 @@ extern "C" void set_callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(v
 
 class MyQCommandLinkButton : public QCommandLinkButton {
 public:
+  virtual ~MyQCommandLinkButton() {}
+// void QCommandLinkButton(class QWidget *)
 MyQCommandLinkButton(QWidget * parent) : QCommandLinkButton(parent) {}
+// void QCommandLinkButton(const class QString &, class QWidget *)
 MyQCommandLinkButton(const QString & text, QWidget * parent) : QCommandLinkButton(text, parent) {}
+// void QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
 MyQCommandLinkButton(const QString & text, const QString & description, QWidget * parent) : QCommandLinkButton(text, description, parent) {}
 // QSize sizeHint()
-// QSize sizeHint()
-virtual QSize sizeHint() {
-  if (callback_ZNK18QCommandLinkButton8sizeHintEv != 0) {
-  // callback_ZNK18QCommandLinkButton8sizeHintEv();
-}}
+  virtual QSize sizeHint() {
+    if (callback_ZNK18QCommandLinkButton8sizeHintEv != 0) {
+      // callback_ZNK18QCommandLinkButton8sizeHintEv();
+    }
+    return QCommandLinkButton::sizeHint();
+  }
 // int heightForWidth(int)
-// int heightForWidth(int)
-virtual int heightForWidth(int arg0) {
-  if (callback_ZNK18QCommandLinkButton14heightForWidthEi != 0) {
-  // callback_ZNK18QCommandLinkButton14heightForWidthEi(arg0);
-}}
+  virtual int heightForWidth(int arg0) {
+    if (callback_ZNK18QCommandLinkButton14heightForWidthEi != 0) {
+      // callback_ZNK18QCommandLinkButton14heightForWidthEi(arg0);
+    }
+    return QCommandLinkButton::heightForWidth(arg0);
+  }
 // QSize minimumSizeHint()
-// QSize minimumSizeHint()
-virtual QSize minimumSizeHint() {
-  if (callback_ZNK18QCommandLinkButton15minimumSizeHintEv != 0) {
-  // callback_ZNK18QCommandLinkButton15minimumSizeHintEv();
-}}
+  virtual QSize minimumSizeHint() {
+    if (callback_ZNK18QCommandLinkButton15minimumSizeHintEv != 0) {
+      // callback_ZNK18QCommandLinkButton15minimumSizeHintEv();
+    }
+    return QCommandLinkButton::minimumSizeHint();
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN18QCommandLinkButton5eventEP6QEvent != 0) {
-  // callback_ZN18QCommandLinkButton5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN18QCommandLinkButton5eventEP6QEvent != 0) {
+      // callback_ZN18QCommandLinkButton5eventEP6QEvent(e);
+    }
+    return QCommandLinkButton::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(arg0);
+    }
+    QCommandLinkButton::paintEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -91,31 +101,31 @@ void* C_ZNK18QCommandLinkButton10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:61
 // [-2] void QCommandLinkButton(class QWidget *)
 extern "C"
-void* C_ZN18QCommandLinkButtonC1EP7QWidget(QWidget * parent) {
-  (MyQCommandLinkButton*)(0);
+void* C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:62
 // [-2] void QCommandLinkButton(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN18QCommandLinkButtonC1ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
-  (MyQCommandLinkButton*)(0);
+void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+  auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(text, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:63
 // [-2] void QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
 extern "C"
-void* C_ZN18QCommandLinkButtonC1ERK7QStringS2_P7QWidget(const QString & text, const QString & description, QWidget * parent) {
-  (MyQCommandLinkButton*)(0);
+void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(const QString & text, const QString & description, QWidget * parent) {
+  auto _nilp = (MyQCommandLinkButton*)(0);
   return  new MyQCommandLinkButton(text, description, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:64
 // [-2] void ~QCommandLinkButton()
 extern "C"
-void C_ZN18QCommandLinkButtonD1Ev(void *this_) {
+void C_ZN18QCommandLinkButtonD2Ev(void *this_) {
   delete (QCommandLinkButton*)(this_);
 }
 // Public Visibility=Default Availability=Available

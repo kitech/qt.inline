@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QSystemTrayIcon is pure virtual: false
+// QSystemTrayIcon has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,14 +18,18 @@ extern "C" void set_callback_ZN15QSystemTrayIcon5eventEP6QEvent(void*cbfn)
 
 class MyQSystemTrayIcon : public QSystemTrayIcon {
 public:
+  virtual ~MyQSystemTrayIcon() {}
+// void QSystemTrayIcon(class QObject *)
 MyQSystemTrayIcon(QObject * parent) : QSystemTrayIcon(parent) {}
+// void QSystemTrayIcon(const class QIcon &, class QObject *)
 MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * event) {
-  if (callback_ZN15QSystemTrayIcon5eventEP6QEvent != 0) {
-  // callback_ZN15QSystemTrayIcon5eventEP6QEvent(event);
-}}
+  virtual bool event(QEvent * event) {
+    if (callback_ZN15QSystemTrayIcon5eventEP6QEvent != 0) {
+      // callback_ZN15QSystemTrayIcon5eventEP6QEvent(event);
+    }
+    return QSystemTrayIcon::event(event);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -38,23 +43,23 @@ void* C_ZNK15QSystemTrayIcon10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:69
 // [-2] void QSystemTrayIcon(class QObject *)
 extern "C"
-void* C_ZN15QSystemTrayIconC1EP7QObject(QObject * parent) {
-  (MyQSystemTrayIcon*)(0);
+void* C_ZN15QSystemTrayIconC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQSystemTrayIcon*)(0);
   return  new MyQSystemTrayIcon(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:70
 // [-2] void QSystemTrayIcon(const class QIcon &, class QObject *)
 extern "C"
-void* C_ZN15QSystemTrayIconC1ERK5QIconP7QObject(const QIcon & icon, QObject * parent) {
-  (MyQSystemTrayIcon*)(0);
+void* C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(const QIcon & icon, QObject * parent) {
+  auto _nilp = (MyQSystemTrayIcon*)(0);
   return  new MyQSystemTrayIcon(icon, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:71
 // [-2] void ~QSystemTrayIcon()
 extern "C"
-void C_ZN15QSystemTrayIconD1Ev(void *this_) {
+void C_ZN15QSystemTrayIconD2Ev(void *this_) {
   delete (QSystemTrayIcon*)(this_);
 }
 // Public Visibility=Default Availability=Available

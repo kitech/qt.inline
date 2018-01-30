@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QAbstractGraphicsShapeItem is pure virtual: false
+// QAbstractGraphicsShapeItem has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAbstractGraphicsShapeItem : public QAbstractGraphicsShapeItem {
 public:
+  virtual ~MyQAbstractGraphicsShapeItem() {}
+// void QAbstractGraphicsShapeItem(class QGraphicsItem *)
 MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeItem(parent) {}
 };
 
@@ -18,14 +21,13 @@ MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeIte
 // [-2] void QAbstractGraphicsShapeItem(class QGraphicsItem *)
 extern "C"
 void* C_ZN26QAbstractGraphicsShapeItemC1EP13QGraphicsItem(QGraphicsItem * parent) {
-  (MyQAbstractGraphicsShapeItem*)(0);
-  return 0; // new MyQAbstractGraphicsShapeItem(parent);
+  return 0; // new QAbstractGraphicsShapeItem(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:604
 // [-2] void ~QAbstractGraphicsShapeItem()
 extern "C"
-void C_ZN26QAbstractGraphicsShapeItemD1Ev(void *this_) {
+void C_ZN26QAbstractGraphicsShapeItemD2Ev(void *this_) {
   delete (QAbstractGraphicsShapeItem*)(this_);
 }
 // Public Visibility=Default Availability=Available

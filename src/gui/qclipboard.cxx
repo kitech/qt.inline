@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QClipboard is pure virtual: false
+// QClipboard has virtual projected: false
 //  header block end
 
 //  main block begin

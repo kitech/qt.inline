@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QOffscreenSurface is pure virtual: false
+// QOffscreenSurface has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQOffscreenSurface : public QOffscreenSurface {
 public:
+  virtual ~MyQOffscreenSurface() {}
+// void QOffscreenSurface(class QScreen *, class QObject *)
 MyQOffscreenSurface(QScreen * screen, QObject * parent) : QOffscreenSurface(screen, parent) {}
+// void QOffscreenSurface(class QScreen *)
 MyQOffscreenSurface(QScreen * screen) : QOffscreenSurface(screen) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK17QOffscreenSurface10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qoffscreensurface.h:61
 // [-2] void QOffscreenSurface(class QScreen *, class QObject *)
 extern "C"
-void* C_ZN17QOffscreenSurfaceC1EP7QScreenP7QObject(QScreen * screen, QObject * parent) {
-  (MyQOffscreenSurface*)(0);
-  return  new MyQOffscreenSurface(screen, parent);
+void* C_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject(QScreen * screen, QObject * parent) {
+  return  new QOffscreenSurface(screen, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:62
 // [-2] void QOffscreenSurface(class QScreen *)
 extern "C"
-void* C_ZN17QOffscreenSurfaceC1EP7QScreen(QScreen * screen) {
-  (MyQOffscreenSurface*)(0);
-  return  new MyQOffscreenSurface(screen);
+void* C_ZN17QOffscreenSurfaceC2EP7QScreen(QScreen * screen) {
+  return  new QOffscreenSurface(screen);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:63
 // [-2] void ~QOffscreenSurface()
 extern "C"
-void C_ZN17QOffscreenSurfaceD1Ev(void *this_) {
+void C_ZN17QOffscreenSurfaceD2Ev(void *this_) {
   delete (QOffscreenSurface*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

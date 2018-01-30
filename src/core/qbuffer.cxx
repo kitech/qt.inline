@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QBuffer is pure virtual: false
+// QBuffer has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -38,32 +39,39 @@ extern "C" void set_callback_ZN7QBuffer9writeDataEPKcx(void*cbfn)
 
 class MyQBuffer : public QBuffer {
 public:
+  virtual ~MyQBuffer() {}
+// void QBuffer(class QObject *)
 MyQBuffer(QObject * parent) : QBuffer(parent) {}
+// void QBuffer(class QByteArray *, class QObject *)
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // void connectNotify(const class QMetaMethod &)
-// void connectNotify(const class QMetaMethod &)
-virtual void connectNotify(const QMetaMethod & arg0) {
-  if (callback_ZN7QBuffer13connectNotifyERK11QMetaMethod != 0) {
-  // callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(arg0);
-}}
+  virtual void connectNotify(const QMetaMethod & arg0) {
+    if (callback_ZN7QBuffer13connectNotifyERK11QMetaMethod != 0) {
+      // callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(arg0);
+    }
+    QBuffer::connectNotify(arg0);
+  }
 // void disconnectNotify(const class QMetaMethod &)
-// void disconnectNotify(const class QMetaMethod &)
-virtual void disconnectNotify(const QMetaMethod & arg0) {
-  if (callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod != 0) {
-  // callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(arg0);
-}}
+  virtual void disconnectNotify(const QMetaMethod & arg0) {
+    if (callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod != 0) {
+      // callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(arg0);
+    }
+    QBuffer::disconnectNotify(arg0);
+  }
 // qint64 readData(char *, qint64)
-// qint64 readData(char *, qint64)
-virtual qint64 readData(char * data, qint64 maxlen) {
-  if (callback_ZN7QBuffer8readDataEPcx != 0) {
-  // callback_ZN7QBuffer8readDataEPcx(data, maxlen);
-}}
+  virtual qint64 readData(char * data, qint64 maxlen) {
+    if (callback_ZN7QBuffer8readDataEPcx != 0) {
+      // callback_ZN7QBuffer8readDataEPcx(data, maxlen);
+    }
+    return QBuffer::readData(data, maxlen);
+  }
 // qint64 writeData(const char *, qint64)
-// qint64 writeData(const char *, qint64)
-virtual qint64 writeData(const char * data, qint64 len) {
-  if (callback_ZN7QBuffer9writeDataEPKcx != 0) {
-  // callback_ZN7QBuffer9writeDataEPKcx(data, len);
-}}
+  virtual qint64 writeData(const char * data, qint64 len) {
+    if (callback_ZN7QBuffer9writeDataEPKcx != 0) {
+      // callback_ZN7QBuffer9writeDataEPKcx(data, len);
+    }
+    return QBuffer::writeData(data, len);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -77,23 +85,23 @@ void* C_ZNK7QBuffer10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qbuffer.h:60
 // [-2] void QBuffer(class QObject *)
 extern "C"
-void* C_ZN7QBufferC1EP7QObject(QObject * parent) {
-  (MyQBuffer*)(0);
+void* C_ZN7QBufferC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQBuffer*)(0);
   return  new MyQBuffer(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:61
 // [-2] void QBuffer(class QByteArray *, class QObject *)
 extern "C"
-void* C_ZN7QBufferC1EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent) {
-  (MyQBuffer*)(0);
+void* C_ZN7QBufferC2EP10QByteArrayP7QObject(QByteArray * buf, QObject * parent) {
+  auto _nilp = (MyQBuffer*)(0);
   return  new MyQBuffer(buf, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:66
 // [-2] void ~QBuffer()
 extern "C"
-void C_ZN7QBufferD1Ev(void *this_) {
+void C_ZN7QBufferD2Ev(void *this_) {
   delete (QBuffer*)(this_);
 }
 // Public Visibility=Default Availability=Available

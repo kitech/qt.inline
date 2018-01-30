@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextOption is pure virtual: false
+// QTextOption has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextOption : public QTextOption {
 public:
+  virtual ~MyQTextOption() {}
+// void QTextOption()
 MyQTextOption() : QTextOption() {}
 };
 
@@ -17,15 +20,14 @@ MyQTextOption() : QTextOption() {}
 // /usr/include/qt/QtGui/qtextoption.h:85
 // [-2] void QTextOption()
 extern "C"
-void* C_ZN11QTextOptionC1Ev() {
-  (MyQTextOption*)(0);
-  return  new MyQTextOption();
+void* C_ZN11QTextOptionC2Ev() {
+  return  new QTextOption();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:87
 // [-2] void ~QTextOption()
 extern "C"
-void C_ZN11QTextOptionD1Ev(void *this_) {
+void C_ZN11QTextOptionD2Ev(void *this_) {
   delete (QTextOption*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

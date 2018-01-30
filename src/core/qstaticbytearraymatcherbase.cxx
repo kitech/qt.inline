@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QStaticByteArrayMatcherBase is pure virtual: false
+// QStaticByteArrayMatcherBase has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,13 +25,16 @@ extern "C" void set_callback_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_i
 
 class MyQStaticByteArrayMatcherBase : public QStaticByteArrayMatcherBase {
 public:
+  virtual ~MyQStaticByteArrayMatcherBase() {}
+// void QStaticByteArrayMatcherBase(const char *, uint)
 MyQStaticByteArrayMatcherBase(const char * pattern, uint n) : QStaticByteArrayMatcherBase(pattern, n) {}
 // int indexOfIn(const char *, uint, const char *, int, int)
-// int indexOfIn(const char *, uint, const char *, int, int)
-virtual int indexOfIn(const char * needle, uint nlen, const char * haystack, int hlen, int from) {
-  if (callback_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii != 0) {
-  // callback_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii(needle, nlen, haystack, hlen, from);
-}}
+  virtual int indexOfIn(const char * needle, uint nlen, const char * haystack, int hlen, int from) {
+    if (callback_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii != 0) {
+      // callback_ZNK27QStaticByteArrayMatcherBase9indexOfInEPKcjS1_ii(needle, nlen, haystack, hlen, from);
+    }
+    return QStaticByteArrayMatcherBase::indexOfIn(needle, nlen, haystack, hlen, from);
+  }
 };
 
 //  main block end

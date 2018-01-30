@@ -4,16 +4,23 @@
 #include <QtGui>
 
 // QQuaternion is pure virtual: false
+// QQuaternion has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQQuaternion : public QQuaternion {
 public:
+  virtual ~MyQQuaternion() {}
+// void QQuaternion()
 MyQQuaternion() : QQuaternion() {}
+// void QQuaternion(Qt::Initialization)
 MyQQuaternion(Qt::Initialization arg0) : QQuaternion(arg0) {}
+// void QQuaternion(float, float, float, float)
 MyQQuaternion(float scalar, float xpos, float ypos, float zpos) : QQuaternion(scalar, xpos, ypos, zpos) {}
+// void QQuaternion(float, const class QVector3D &)
 MyQQuaternion(float scalar, const QVector3D & vector) : QQuaternion(scalar, vector) {}
+// void QQuaternion(const class QVector4D &)
 MyQQuaternion(const QVector4D & vector) : QQuaternion(vector) {}
 };
 
@@ -21,41 +28,36 @@ MyQQuaternion(const QVector4D & vector) : QQuaternion(vector) {}
 // /usr/include/qt/QtGui/qquaternion.h:59
 // [-2] void QQuaternion()
 extern "C"
-void* C_ZN11QQuaternionC1Ev() {
-  (MyQQuaternion*)(0);
-  return  new MyQQuaternion();
+void* C_ZN11QQuaternionC2Ev() {
+  return  new QQuaternion();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:60
 // [-2] void QQuaternion(Qt::Initialization)
 extern "C"
-void* C_ZN11QQuaternionC1EN2Qt14InitializationE(Qt::Initialization arg0) {
-  (MyQQuaternion*)(0);
-  return  new MyQQuaternion(arg0);
+void* C_ZN11QQuaternionC2EN2Qt14InitializationE(Qt::Initialization arg0) {
+  return  new QQuaternion(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:61
 // [-2] void QQuaternion(float, float, float, float)
 extern "C"
-void* C_ZN11QQuaternionC1Effff(float scalar, float xpos, float ypos, float zpos) {
-  (MyQQuaternion*)(0);
-  return  new MyQQuaternion(scalar, xpos, ypos, zpos);
+void* C_ZN11QQuaternionC2Effff(float scalar, float xpos, float ypos, float zpos) {
+  return  new QQuaternion(scalar, xpos, ypos, zpos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:63
 // [-2] void QQuaternion(float, const class QVector3D &)
 extern "C"
-void* C_ZN11QQuaternionC1EfRK9QVector3D(float scalar, const QVector3D & vector) {
-  (MyQQuaternion*)(0);
-  return  new MyQQuaternion(scalar, vector);
+void* C_ZN11QQuaternionC2EfRK9QVector3D(float scalar, const QVector3D & vector) {
+  return  new QQuaternion(scalar, vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:66
 // [-2] void QQuaternion(const class QVector4D &)
 extern "C"
-void* C_ZN11QQuaternionC1ERK9QVector4D(const QVector4D & vector) {
-  (MyQQuaternion*)(0);
-  return  new MyQQuaternion(vector);
+void* C_ZN11QQuaternionC2ERK9QVector4D(const QVector4D & vector) {
+  return  new QQuaternion(vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qquaternion.h:69

@@ -4,12 +4,14 @@
 #include <QtWidgets>
 
 // QWhatsThis is pure virtual: false
+// QWhatsThis has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWhatsThis : public QWhatsThis {
 public:
+  virtual ~MyQWhatsThis() {}
 };
 
 // Public static Visibility=Default Availability=Available

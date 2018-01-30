@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QRubberBand is pure virtual: false
+// QRubberBand has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,49 +60,58 @@ extern "C" void set_callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRu
 
 class MyQRubberBand : public QRubberBand {
 public:
+  virtual ~MyQRubberBand() {}
+// void QRubberBand(enum QRubberBand::Shape, class QWidget *)
 MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN11QRubberBand5eventEP6QEvent != 0) {
-  // callback_ZN11QRubberBand5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN11QRubberBand5eventEP6QEvent != 0) {
+      // callback_ZN11QRubberBand5eventEP6QEvent(e);
+    }
+    return QRubberBand::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN11QRubberBand10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN11QRubberBand10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN11QRubberBand10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN11QRubberBand10paintEventEP11QPaintEvent(arg0);
+    }
+    QRubberBand::paintEvent(arg0);
+  }
 // void changeEvent(class QEvent *)
-// void changeEvent(class QEvent *)
-virtual void changeEvent(QEvent * arg0) {
-  if (callback_ZN11QRubberBand11changeEventEP6QEvent != 0) {
-  // callback_ZN11QRubberBand11changeEventEP6QEvent(arg0);
-}}
+  virtual void changeEvent(QEvent * arg0) {
+    if (callback_ZN11QRubberBand11changeEventEP6QEvent != 0) {
+      // callback_ZN11QRubberBand11changeEventEP6QEvent(arg0);
+    }
+    QRubberBand::changeEvent(arg0);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * arg0) {
-  if (callback_ZN11QRubberBand9showEventEP10QShowEvent != 0) {
-  // callback_ZN11QRubberBand9showEventEP10QShowEvent(arg0);
-}}
+  virtual void showEvent(QShowEvent * arg0) {
+    if (callback_ZN11QRubberBand9showEventEP10QShowEvent != 0) {
+      // callback_ZN11QRubberBand9showEventEP10QShowEvent(arg0);
+    }
+    QRubberBand::showEvent(arg0);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * arg0) {
-  if (callback_ZN11QRubberBand11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN11QRubberBand11resizeEventEP12QResizeEvent(arg0);
-}}
+  virtual void resizeEvent(QResizeEvent * arg0) {
+    if (callback_ZN11QRubberBand11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN11QRubberBand11resizeEventEP12QResizeEvent(arg0);
+    }
+    QRubberBand::resizeEvent(arg0);
+  }
 // void moveEvent(class QMoveEvent *)
-// void moveEvent(class QMoveEvent *)
-virtual void moveEvent(QMoveEvent * arg0) {
-  if (callback_ZN11QRubberBand9moveEventEP10QMoveEvent != 0) {
-  // callback_ZN11QRubberBand9moveEventEP10QMoveEvent(arg0);
-}}
+  virtual void moveEvent(QMoveEvent * arg0) {
+    if (callback_ZN11QRubberBand9moveEventEP10QMoveEvent != 0) {
+      // callback_ZN11QRubberBand9moveEventEP10QMoveEvent(arg0);
+    }
+    QRubberBand::moveEvent(arg0);
+  }
 // void initStyleOption(class QStyleOptionRubberBand *)
-// void initStyleOption(class QStyleOptionRubberBand *)
-virtual void initStyleOption(QStyleOptionRubberBand * option) {
-  if (callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand != 0) {
-  // callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(option);
-}}
+  virtual void initStyleOption(QStyleOptionRubberBand * option) {
+    if (callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand != 0) {
+      // callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(option);
+    }
+    QRubberBand::initStyleOption(option);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -115,15 +125,15 @@ void* C_ZNK11QRubberBand10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qrubberband.h:59
 // [-2] void QRubberBand(enum QRubberBand::Shape, class QWidget *)
 extern "C"
-void* C_ZN11QRubberBandC1ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget * arg1) {
-  (MyQRubberBand*)(0);
+void* C_ZN11QRubberBandC2ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget * arg1) {
+  auto _nilp = (MyQRubberBand*)(0);
   return  new MyQRubberBand(arg0, arg1);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:60
 // [-2] void ~QRubberBand()
 extern "C"
-void C_ZN11QRubberBandD1Ev(void *this_) {
+void C_ZN11QRubberBandD2Ev(void *this_) {
   delete (QRubberBand*)(this_);
 }
 // Public Visibility=Default Availability=Available

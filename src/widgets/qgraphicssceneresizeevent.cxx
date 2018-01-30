@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneResizeEvent is pure virtual: false
+// QGraphicsSceneResizeEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneResizeEvent : public QGraphicsSceneResizeEvent {
 public:
+  virtual ~MyQGraphicsSceneResizeEvent() {}
+// void QGraphicsSceneResizeEvent()
 MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
 // [-2] void QGraphicsSceneResizeEvent()
 extern "C"
-void* C_ZN25QGraphicsSceneResizeEventC1Ev() {
-  (MyQGraphicsSceneResizeEvent*)(0);
-  return  new MyQGraphicsSceneResizeEvent();
+void* C_ZN25QGraphicsSceneResizeEventC2Ev() {
+  return  new QGraphicsSceneResizeEvent();
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
 // [-2] void ~QGraphicsSceneResizeEvent()
 extern "C"
-void C_ZN25QGraphicsSceneResizeEventD1Ev(void *this_) {
+void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_) {
   delete (QGraphicsSceneResizeEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

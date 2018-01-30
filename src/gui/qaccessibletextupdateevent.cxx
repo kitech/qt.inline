@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QAccessibleTextUpdateEvent is pure virtual: false
+// QAccessibleTextUpdateEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessibleTextUpdateEvent : public QAccessibleTextUpdateEvent {
 public:
+  virtual ~MyQAccessibleTextUpdateEvent() {}
+// void QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)
 MyQAccessibleTextUpdateEvent(QObject * obj, int position, const QString & oldText, const QString & text) : QAccessibleTextUpdateEvent(obj, position, oldText, text) {}
+// void QAccessibleTextUpdateEvent(class QAccessibleInterface *, int, const class QString &, const class QString &)
 MyQAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text) : QAccessibleTextUpdateEvent(iface, position, oldText, text) {}
 };
 
@@ -18,23 +22,21 @@ MyQAccessibleTextUpdateEvent(QAccessibleInterface * iface, int position, const Q
 // /usr/include/qt/QtGui/qaccessible.h:864
 // [-2] void QAccessibleTextUpdateEvent(class QObject *, int, const class QString &, const class QString &)
 extern "C"
-void* C_ZN26QAccessibleTextUpdateEventC1EP7QObjectiRK7QStringS4_(QObject * obj, int position, const QString & oldText, const QString & text) {
-  (MyQAccessibleTextUpdateEvent*)(0);
-  return  new MyQAccessibleTextUpdateEvent(obj, position, oldText, text);
+void* C_ZN26QAccessibleTextUpdateEventC2EP7QObjectiRK7QStringS4_(QObject * obj, int position, const QString & oldText, const QString & text) {
+  return  new QAccessibleTextUpdateEvent(obj, position, oldText, text);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:870
 // [-2] void QAccessibleTextUpdateEvent(class QAccessibleInterface *, int, const class QString &, const class QString &)
 extern "C"
-void* C_ZN26QAccessibleTextUpdateEventC1EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text) {
-  (MyQAccessibleTextUpdateEvent*)(0);
-  return  new MyQAccessibleTextUpdateEvent(iface, position, oldText, text);
+void* C_ZN26QAccessibleTextUpdateEventC2EP20QAccessibleInterfaceiRK7QStringS4_(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text) {
+  return  new QAccessibleTextUpdateEvent(iface, position, oldText, text);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:877
 // [-2] void ~QAccessibleTextUpdateEvent()
 extern "C"
-void C_ZN26QAccessibleTextUpdateEventD1Ev(void *this_) {
+void C_ZN26QAccessibleTextUpdateEventD2Ev(void *this_) {
   delete (QAccessibleTextUpdateEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

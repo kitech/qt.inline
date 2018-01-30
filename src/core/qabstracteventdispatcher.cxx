@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QAbstractEventDispatcher is pure virtual: true
+// QAbstractEventDispatcher has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAbstractEventDispatcher : public QAbstractEventDispatcher {
 public:
+  virtual ~MyQAbstractEventDispatcher() {}
+// void QAbstractEventDispatcher(class QObject *)
 MyQAbstractEventDispatcher(QObject * parent) : QAbstractEventDispatcher(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK24QAbstractEventDispatcher10metaObjectEv(void *this_) {
 // [-2] void QAbstractEventDispatcher(class QObject *)
 extern "C"
 void* C_ZN24QAbstractEventDispatcherC1EP7QObject(QObject * parent) {
-  (MyQAbstractEventDispatcher*)(0);
-  return 0; // new MyQAbstractEventDispatcher(parent);
+  return 0; // new QAbstractEventDispatcher(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:74
 // [-2] void ~QAbstractEventDispatcher()
 extern "C"
-void C_ZN24QAbstractEventDispatcherD1Ev(void *this_) {
+void C_ZN24QAbstractEventDispatcherD2Ev(void *this_) {
   delete (QAbstractEventDispatcher*)(this_);
 }
 // Public static Visibility=Default Availability=Available

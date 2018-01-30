@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QTimeZone is pure virtual: false
+// QTimeZone has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTimeZone : public QTimeZone {
 public:
+  virtual ~MyQTimeZone() {}
+// void QTimeZone()
 MyQTimeZone() : QTimeZone() {}
+// void QTimeZone(const class QByteArray &)
 MyQTimeZone(const QByteArray & ianaId) : QTimeZone(ianaId) {}
+// void QTimeZone(int)
 MyQTimeZone(int offsetSeconds) : QTimeZone(offsetSeconds) {}
+// void QTimeZone(const class QByteArray &, int, const class QString &, const class QString &, class QLocale::Country, const class QString &)
 MyQTimeZone(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment) : QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment) {}
 };
 
@@ -20,39 +26,35 @@ MyQTimeZone(const QByteArray & zoneId, int offsetSeconds, const QString & name, 
 // /usr/include/qt/QtCore/qtimezone.h:92
 // [-2] void QTimeZone()
 extern "C"
-void* C_ZN9QTimeZoneC1Ev() {
-  (MyQTimeZone*)(0);
-  return  new MyQTimeZone();
+void* C_ZN9QTimeZoneC2Ev() {
+  return  new QTimeZone();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:93
 // [-2] void QTimeZone(const class QByteArray &)
 extern "C"
-void* C_ZN9QTimeZoneC1ERK10QByteArray(const QByteArray & ianaId) {
-  (MyQTimeZone*)(0);
-  return  new MyQTimeZone(ianaId);
+void* C_ZN9QTimeZoneC2ERK10QByteArray(const QByteArray & ianaId) {
+  return  new QTimeZone(ianaId);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:94
 // [-2] void QTimeZone(int)
 extern "C"
-void* C_ZN9QTimeZoneC1Ei(int offsetSeconds) {
-  (MyQTimeZone*)(0);
-  return  new MyQTimeZone(offsetSeconds);
+void* C_ZN9QTimeZoneC2Ei(int offsetSeconds) {
+  return  new QTimeZone(offsetSeconds);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:95
 // [-2] void QTimeZone(const class QByteArray &, int, const class QString &, const class QString &, class QLocale::Country, const class QString &)
 extern "C"
-void* C_ZN9QTimeZoneC1ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment) {
-  (MyQTimeZone*)(0);
-  return  new MyQTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
+void* C_ZN9QTimeZoneC2ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment) {
+  return  new QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimezone.h:99
 // [-2] void ~QTimeZone()
 extern "C"
-void C_ZN9QTimeZoneD1Ev(void *this_) {
+void C_ZN9QTimeZoneD2Ev(void *this_) {
   delete (QTimeZone*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

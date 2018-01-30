@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QGraphicsSceneDragDropEvent is pure virtual: false
+// QGraphicsSceneDragDropEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsSceneDragDropEvent : public QGraphicsSceneDragDropEvent {
 public:
+  virtual ~MyQGraphicsSceneDragDropEvent() {}
+// void QGraphicsSceneDragDropEvent(enum QEvent::Type)
 MyQGraphicsSceneDragDropEvent(QEvent::Type type) : QGraphicsSceneDragDropEvent(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQGraphicsSceneDragDropEvent(QEvent::Type type) : QGraphicsSceneDragDropEvent(t
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:252
 // [-2] void QGraphicsSceneDragDropEvent(enum QEvent::Type)
 extern "C"
-void* C_ZN27QGraphicsSceneDragDropEventC1EN6QEvent4TypeE(QEvent::Type type) {
-  (MyQGraphicsSceneDragDropEvent*)(0);
-  return  new MyQGraphicsSceneDragDropEvent(type);
+void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type) {
+  return  new QGraphicsSceneDragDropEvent(type);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:253
 // [-2] void ~QGraphicsSceneDragDropEvent()
 extern "C"
-void C_ZN27QGraphicsSceneDragDropEventD1Ev(void *this_) {
+void C_ZN27QGraphicsSceneDragDropEventD2Ev(void *this_) {
   delete (QGraphicsSceneDragDropEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available

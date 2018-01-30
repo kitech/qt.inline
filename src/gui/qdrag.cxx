@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QDrag is pure virtual: false
+// QDrag has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDrag : public QDrag {
 public:
+  virtual ~MyQDrag() {}
+// void QDrag(class QObject *)
 MyQDrag(QObject * dragSource) : QDrag(dragSource) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK5QDrag10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qdrag.h:62
 // [-2] void QDrag(class QObject *)
 extern "C"
-void* C_ZN5QDragC1EP7QObject(QObject * dragSource) {
-  (MyQDrag*)(0);
-  return  new MyQDrag(dragSource);
+void* C_ZN5QDragC2EP7QObject(QObject * dragSource) {
+  return  new QDrag(dragSource);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:63
 // [-2] void ~QDrag()
 extern "C"
-void C_ZN5QDragD1Ev(void *this_) {
+void C_ZN5QDragD2Ev(void *this_) {
   delete (QDrag*)(this_);
 }
 // Public Visibility=Default Availability=Available

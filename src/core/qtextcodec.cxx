@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QTextCodec is pure virtual: true
+// QTextCodec has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -24,6 +25,8 @@ extern "C" void set_callback_ZN10QTextCodecD1Ev(void*cbfn)
 
 class MyQTextCodec : public QTextCodec {
 public:
+  virtual ~MyQTextCodec() {}
+// void QTextCodec()
 MyQTextCodec() : QTextCodec() {}
 // void ~QTextCodec()
 };
@@ -95,8 +98,8 @@ void* C_ZN10QTextCodec15codecForUtfTextERK10QByteArrayPS_(const QByteArray & ba,
 // /usr/include/qt/QtCore/qtextcodec.h:81
 // [1] bool canEncode(class QChar)
 extern "C"
-bool C_ZNK10QTextCodec9canEncodeE5QChar(void *this_, QChar arg0) {
-  return (bool)((QTextCodec*)this_)->canEncode(arg0);
+bool C_ZNK10QTextCodec9canEncodeE5QChar(void *this_, QChar* arg0) {
+  return (bool)((QTextCodec*)this_)->canEncode(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:83
@@ -109,8 +112,8 @@ bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, const QString & arg0) {
 // /usr/include/qt/QtCore/qtextcodec.h:85
 // [1] bool canEncode(class QStringView)
 extern "C"
-bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView arg0) {
-  return (bool)((QTextCodec*)this_)->canEncode(arg0);
+bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView* arg0) {
+  return (bool)((QTextCodec*)this_)->canEncode(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:87
@@ -140,8 +143,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qtextcodec.h:92
 // [8] QByteArray fromUnicode(class QStringView)
 extern "C"
-void* C_ZNK10QTextCodec11fromUnicodeE11QStringView(void *this_, QStringView uc) {
-  auto rv = ((QTextCodec*)this_)->fromUnicode(uc);
+void* C_ZNK10QTextCodec11fromUnicodeE11QStringView(void *this_, QStringView* uc) {
+  auto rv = ((QTextCodec*)this_)->fromUnicode(*uc);
 return new QByteArray(rv);
 }
 // Public Visibility=Default Availability=Available

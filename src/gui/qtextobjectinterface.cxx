@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QTextObjectInterface is pure virtual: true
+// QTextObjectInterface has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextObjectInterface : public QTextObjectInterface {
 public:
+  virtual ~MyQTextObjectInterface() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:141
 // [-2] void ~QTextObjectInterface()
 extern "C"
-void C_ZN20QTextObjectInterfaceD1Ev(void *this_) {
+void C_ZN20QTextObjectInterfaceD2Ev(void *this_) {
   delete (QTextObjectInterface*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available

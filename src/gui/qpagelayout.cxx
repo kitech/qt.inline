@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QPageLayout is pure virtual: false
+// QPageLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPageLayout : public QPageLayout {
 public:
+  virtual ~MyQPageLayout() {}
+// void QPageLayout()
 MyQPageLayout() : QPageLayout() {}
+// void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
 MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) : QPageLayout(pageSize, orientation, margins, units, minMargins) {}
 };
 
@@ -18,23 +22,21 @@ MyQPageLayout(const QPageSize & pageSize, QPageLayout::Orientation orientation, 
 // /usr/include/qt/QtGui/qpagelayout.h:80
 // [-2] void QPageLayout()
 extern "C"
-void* C_ZN11QPageLayoutC1Ev() {
-  (MyQPageLayout*)(0);
-  return  new MyQPageLayout();
+void* C_ZN11QPageLayoutC2Ev() {
+  return  new QPageLayout();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:81
 // [-2] void QPageLayout(const class QPageSize &, enum QPageLayout::Orientation, const class QMarginsF &, enum QPageLayout::Unit, const class QMarginsF &)
 extern "C"
-void* C_ZN11QPageLayoutC1ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) {
-  (MyQPageLayout*)(0);
-  return  new MyQPageLayout(pageSize, orientation, margins, units, minMargins);
+void* C_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins) {
+  return  new QPageLayout(pageSize, orientation, margins, units, minMargins);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:89
 // [-2] void ~QPageLayout()
 extern "C"
-void C_ZN11QPageLayoutD1Ev(void *this_) {
+void C_ZN11QPageLayoutD2Ev(void *this_) {
   delete (QPageLayout*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

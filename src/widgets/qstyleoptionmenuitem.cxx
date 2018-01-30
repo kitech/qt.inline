@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionMenuItem is pure virtual: false
+// QStyleOptionMenuItem has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN20QStyleOptionMenuItemC1Ei(void*cbfn)
 
 class MyQStyleOptionMenuItem : public QStyleOptionMenuItem {
 public:
+  virtual ~MyQStyleOptionMenuItem() {}
+// void QStyleOptionMenuItem()
 MyQStyleOptionMenuItem() : QStyleOptionMenuItem() {}
+// void QStyleOptionMenuItem(int)
 MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:372
 // [-2] void QStyleOptionMenuItem()
 extern "C"
-void* C_ZN20QStyleOptionMenuItemC1Ev() {
-  (MyQStyleOptionMenuItem*)(0);
-  return  new MyQStyleOptionMenuItem();
+void* C_ZN20QStyleOptionMenuItemC2Ev() {
+  return  new QStyleOptionMenuItem();
 }
 //  main block end

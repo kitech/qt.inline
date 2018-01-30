@@ -4,14 +4,19 @@
 #include <QtWidgets>
 
 // QStylePainter is pure virtual: false
+// QStylePainter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQStylePainter : public QStylePainter {
 public:
+  virtual ~MyQStylePainter() {}
+// void QStylePainter()
 MyQStylePainter() : QStylePainter() {}
+// void QStylePainter(class QWidget *)
 MyQStylePainter(QWidget * w) : QStylePainter(w) {}
+// void QStylePainter(class QPaintDevice *, class QWidget *)
 MyQStylePainter(QPaintDevice * pd, QWidget * w) : QStylePainter(pd, w) {}
 };
 
@@ -19,25 +24,22 @@ MyQStylePainter(QPaintDevice * pd, QWidget * w) : QStylePainter(pd, w) {}
 // /usr/include/qt/QtWidgets/qstylepainter.h:54
 // [-2] void QStylePainter()
 extern "C"
-void* C_ZN13QStylePainterC1Ev() {
-  (MyQStylePainter*)(0);
-  return  new MyQStylePainter();
+void* C_ZN13QStylePainterC2Ev() {
+  return  new QStylePainter();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:55
 // [-2] void QStylePainter(class QWidget *)
 extern "C"
-void* C_ZN13QStylePainterC1EP7QWidget(QWidget * w) {
-  (MyQStylePainter*)(0);
-  return  new MyQStylePainter(w);
+void* C_ZN13QStylePainterC2EP7QWidget(QWidget * w) {
+  return  new QStylePainter(w);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:56
 // [-2] void QStylePainter(class QPaintDevice *, class QWidget *)
 extern "C"
-void* C_ZN13QStylePainterC1EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget * w) {
-  (MyQStylePainter*)(0);
-  return  new MyQStylePainter(pd, w);
+void* C_ZN13QStylePainterC2EP12QPaintDeviceP7QWidget(QPaintDevice * pd, QWidget * w) {
+  return  new QStylePainter(pd, w);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstylepainter.h:57

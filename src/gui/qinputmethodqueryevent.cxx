@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QInputMethodQueryEvent is pure virtual: false
+// QInputMethodQueryEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQInputMethodQueryEvent : public QInputMethodQueryEvent {
 public:
+  virtual ~MyQInputMethodQueryEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:582
 // [-2] void ~QInputMethodQueryEvent()
 extern "C"
-void C_ZN22QInputMethodQueryEventD1Ev(void *this_) {
+void C_ZN22QInputMethodQueryEventD2Ev(void *this_) {
   delete (QInputMethodQueryEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

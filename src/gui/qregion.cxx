@@ -4,16 +4,23 @@
 #include <QtGui>
 
 // QRegion is pure virtual: false
+// QRegion has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQRegion : public QRegion {
 public:
+  virtual ~MyQRegion() {}
+// void QRegion()
 MyQRegion() : QRegion() {}
+// void QRegion(int, int, int, int, enum QRegion::RegionType)
 MyQRegion(int x, int y, int w, int h, QRegion::RegionType t) : QRegion(x, y, w, h, t) {}
+// void QRegion(const class QRect &, enum QRegion::RegionType)
 MyQRegion(const QRect & r, QRegion::RegionType t) : QRegion(r, t) {}
+// void QRegion(const class QPolygon &, Qt::FillRule)
 MyQRegion(const QPolygon & pa, Qt::FillRule fillRule) : QRegion(pa, fillRule) {}
+// void QRegion(const class QBitmap &)
 MyQRegion(const QBitmap & bitmap) : QRegion(bitmap) {}
 };
 
@@ -21,47 +28,42 @@ MyQRegion(const QBitmap & bitmap) : QRegion(bitmap) {}
 // /usr/include/qt/QtGui/qregion.h:67
 // [-2] void QRegion()
 extern "C"
-void* C_ZN7QRegionC1Ev() {
-  (MyQRegion*)(0);
-  return  new MyQRegion();
+void* C_ZN7QRegionC2Ev() {
+  return  new QRegion();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:68
 // [-2] void QRegion(int, int, int, int, enum QRegion::RegionType)
 extern "C"
-void* C_ZN7QRegionC1EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::RegionType t) {
-  (MyQRegion*)(0);
-  return  new MyQRegion(x, y, w, h, t);
+void* C_ZN7QRegionC2EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::RegionType t) {
+  return  new QRegion(x, y, w, h, t);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:69
 // [-2] void QRegion(const class QRect &, enum QRegion::RegionType)
 extern "C"
-void* C_ZN7QRegionC1ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t) {
-  (MyQRegion*)(0);
-  return  new MyQRegion(r, t);
+void* C_ZN7QRegionC2ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t) {
+  return  new QRegion(r, t);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:70
 // [-2] void QRegion(const class QPolygon &, Qt::FillRule)
 extern "C"
-void* C_ZN7QRegionC1ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule) {
-  (MyQRegion*)(0);
-  return  new MyQRegion(pa, fillRule);
+void* C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule) {
+  return  new QRegion(pa, fillRule);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:74
 // [-2] void QRegion(const class QBitmap &)
 extern "C"
-void* C_ZN7QRegionC1ERK7QBitmap(const QBitmap & bitmap) {
-  (MyQRegion*)(0);
-  return  new MyQRegion(bitmap);
+void* C_ZN7QRegionC2ERK7QBitmap(const QBitmap & bitmap) {
+  return  new QRegion(bitmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:75
 // [-2] void ~QRegion()
 extern "C"
-void C_ZN7QRegionD1Ev(void *this_) {
+void C_ZN7QRegionD2Ev(void *this_) {
   delete (QRegion*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

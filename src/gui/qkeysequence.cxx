@@ -4,15 +4,21 @@
 #include <QtGui>
 
 // QKeySequence is pure virtual: false
+// QKeySequence has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQKeySequence : public QKeySequence {
 public:
+  virtual ~MyQKeySequence() {}
+// void QKeySequence()
 MyQKeySequence() : QKeySequence() {}
+// void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
 MyQKeySequence(const QString & key, QKeySequence::SequenceFormat format) : QKeySequence(key, format) {}
+// void QKeySequence(int, int, int, int)
 MyQKeySequence(int k1, int k2, int k3, int k4) : QKeySequence(k1, k2, k3, k4) {}
+// void QKeySequence(enum QKeySequence::StandardKey)
 MyQKeySequence(QKeySequence::StandardKey key) : QKeySequence(key) {}
 };
 
@@ -20,39 +26,35 @@ MyQKeySequence(QKeySequence::StandardKey key) : QKeySequence(key) {}
 // /usr/include/qt/QtGui/qkeysequence.h:156
 // [-2] void QKeySequence()
 extern "C"
-void* C_ZN12QKeySequenceC1Ev() {
-  (MyQKeySequence*)(0);
-  return  new MyQKeySequence();
+void* C_ZN12QKeySequenceC2Ev() {
+  return  new QKeySequence();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:157
 // [-2] void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-void* C_ZN12QKeySequenceC1ERK7QStringNS_14SequenceFormatE(const QString & key, QKeySequence::SequenceFormat format) {
-  (MyQKeySequence*)(0);
-  return  new MyQKeySequence(key, format);
+void* C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(const QString & key, QKeySequence::SequenceFormat format) {
+  return  new QKeySequence(key, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:158
 // [-2] void QKeySequence(int, int, int, int)
 extern "C"
-void* C_ZN12QKeySequenceC1Eiiii(int k1, int k2, int k3, int k4) {
-  (MyQKeySequence*)(0);
-  return  new MyQKeySequence(k1, k2, k3, k4);
+void* C_ZN12QKeySequenceC2Eiiii(int k1, int k2, int k3, int k4) {
+  return  new QKeySequence(k1, k2, k3, k4);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:160
 // [-2] void QKeySequence(enum QKeySequence::StandardKey)
 extern "C"
-void* C_ZN12QKeySequenceC1ENS_11StandardKeyE(QKeySequence::StandardKey key) {
-  (MyQKeySequence*)(0);
-  return  new MyQKeySequence(key);
+void* C_ZN12QKeySequenceC2ENS_11StandardKeyE(QKeySequence::StandardKey key) {
+  return  new QKeySequence(key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:161
 // [-2] void ~QKeySequence()
 extern "C"
-void C_ZN12QKeySequenceD1Ev(void *this_) {
+void C_ZN12QKeySequenceD2Ev(void *this_) {
   delete (QKeySequence*)(this_);
 }
 // Public Visibility=Default Availability=Available

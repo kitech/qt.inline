@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QEventTransition is pure virtual: false
+// QEventTransition has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -31,26 +32,32 @@ extern "C" void set_callback_ZN16QEventTransition5eventEP6QEvent(void*cbfn)
 
 class MyQEventTransition : public QEventTransition {
 public:
+  virtual ~MyQEventTransition() {}
+// void QEventTransition(class QState *)
 MyQEventTransition(QState * sourceState) : QEventTransition(sourceState) {}
+// void QEventTransition(class QObject *, class QEvent::Type, class QState *)
 MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : QEventTransition(object, type, sourceState) {}
 // bool eventTest(class QEvent *)
-// bool eventTest(class QEvent *)
-virtual bool eventTest(QEvent * event) {
-  if (callback_ZN16QEventTransition9eventTestEP6QEvent != 0) {
-  // callback_ZN16QEventTransition9eventTestEP6QEvent(event);
-}}
+  virtual bool eventTest(QEvent * event) {
+    if (callback_ZN16QEventTransition9eventTestEP6QEvent != 0) {
+      // callback_ZN16QEventTransition9eventTestEP6QEvent(event);
+    }
+    return QEventTransition::eventTest(event);
+  }
 // void onTransition(class QEvent *)
-// void onTransition(class QEvent *)
-virtual void onTransition(QEvent * event) {
-  if (callback_ZN16QEventTransition12onTransitionEP6QEvent != 0) {
-  // callback_ZN16QEventTransition12onTransitionEP6QEvent(event);
-}}
+  virtual void onTransition(QEvent * event) {
+    if (callback_ZN16QEventTransition12onTransitionEP6QEvent != 0) {
+      // callback_ZN16QEventTransition12onTransitionEP6QEvent(event);
+    }
+    QEventTransition::onTransition(event);
+  }
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN16QEventTransition5eventEP6QEvent != 0) {
-  // callback_ZN16QEventTransition5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN16QEventTransition5eventEP6QEvent != 0) {
+      // callback_ZN16QEventTransition5eventEP6QEvent(e);
+    }
+    return QEventTransition::event(e);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -64,23 +71,23 @@ void* C_ZNK16QEventTransition10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qeventtransition.h:57
 // [-2] void QEventTransition(class QState *)
 extern "C"
-void* C_ZN16QEventTransitionC1EP6QState(QState * sourceState) {
-  (MyQEventTransition*)(0);
+void* C_ZN16QEventTransitionC2EP6QState(QState * sourceState) {
+  auto _nilp = (MyQEventTransition*)(0);
   return  new MyQEventTransition(sourceState);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:58
 // [-2] void QEventTransition(class QObject *, class QEvent::Type, class QState *)
 extern "C"
-void* C_ZN16QEventTransitionC1EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState) {
-  (MyQEventTransition*)(0);
+void* C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type, QState * sourceState) {
+  auto _nilp = (MyQEventTransition*)(0);
   return  new MyQEventTransition(object, type, sourceState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:59
 // [-2] void ~QEventTransition()
 extern "C"
-void C_ZN16QEventTransitionD1Ev(void *this_) {
+void C_ZN16QEventTransitionD2Ev(void *this_) {
   delete (QEventTransition*)(this_);
 }
 // Public Visibility=Default Availability=Available

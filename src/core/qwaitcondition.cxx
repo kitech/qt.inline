@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QWaitCondition is pure virtual: false
+// QWaitCondition has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWaitCondition : public QWaitCondition {
 public:
+  virtual ~MyQWaitCondition() {}
+// void QWaitCondition()
 MyQWaitCondition() : QWaitCondition() {}
 };
 
@@ -17,15 +20,14 @@ MyQWaitCondition() : QWaitCondition() {}
 // /usr/include/qt/QtCore/qwaitcondition.h:59
 // [-2] void QWaitCondition()
 extern "C"
-void* C_ZN14QWaitConditionC1Ev() {
-  (MyQWaitCondition*)(0);
-  return  new MyQWaitCondition();
+void* C_ZN14QWaitConditionC2Ev() {
+  return  new QWaitCondition();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:60
 // [-2] void ~QWaitCondition()
 extern "C"
-void C_ZN14QWaitConditionD1Ev(void *this_) {
+void C_ZN14QWaitConditionD2Ev(void *this_) {
   delete (QWaitCondition*)(this_);
 }
 // Public Visibility=Default Availability=Available

@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QAbstractListModel is pure virtual: false
+// QAbstractListModel has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAbstractListModel : public QAbstractListModel {
 public:
+  virtual ~MyQAbstractListModel() {}
+// void QAbstractListModel(class QObject *)
 MyQAbstractListModel(QObject * parent) : QAbstractListModel(parent) {}
 };
 
@@ -25,14 +28,13 @@ void* C_ZNK18QAbstractListModel10metaObjectEv(void *this_) {
 // [-2] void QAbstractListModel(class QObject *)
 extern "C"
 void* C_ZN18QAbstractListModelC1EP7QObject(QObject * parent) {
-  (MyQAbstractListModel*)(0);
-  return 0; // new MyQAbstractListModel(parent);
+  return 0; // new QAbstractListModel(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:397
 // [-2] void ~QAbstractListModel()
 extern "C"
-void C_ZN18QAbstractListModelD1Ev(void *this_) {
+void C_ZN18QAbstractListModelD2Ev(void *this_) {
   delete (QAbstractListModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

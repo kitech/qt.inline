@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QTemporaryDir is pure virtual: false
+// QTemporaryDir has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTemporaryDir : public QTemporaryDir {
 public:
+  virtual ~MyQTemporaryDir() {}
+// void QTemporaryDir()
 MyQTemporaryDir() : QTemporaryDir() {}
+// void QTemporaryDir(const class QString &)
 MyQTemporaryDir(const QString & templateName) : QTemporaryDir(templateName) {}
 };
 
@@ -18,23 +22,21 @@ MyQTemporaryDir(const QString & templateName) : QTemporaryDir(templateName) {}
 // /usr/include/qt/QtCore/qtemporarydir.h:56
 // [-2] void QTemporaryDir()
 extern "C"
-void* C_ZN13QTemporaryDirC1Ev() {
-  (MyQTemporaryDir*)(0);
-  return  new MyQTemporaryDir();
+void* C_ZN13QTemporaryDirC2Ev() {
+  return  new QTemporaryDir();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:57
 // [-2] void QTemporaryDir(const class QString &)
 extern "C"
-void* C_ZN13QTemporaryDirC1ERK7QString(const QString & templateName) {
-  (MyQTemporaryDir*)(0);
-  return  new MyQTemporaryDir(templateName);
+void* C_ZN13QTemporaryDirC2ERK7QString(const QString & templateName) {
+  return  new QTemporaryDir(templateName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:58
 // [-2] void ~QTemporaryDir()
 extern "C"
-void C_ZN13QTemporaryDirD1Ev(void *this_) {
+void C_ZN13QTemporaryDirD2Ev(void *this_) {
   delete (QTemporaryDir*)(this_);
 }
 // Public Visibility=Default Availability=Available

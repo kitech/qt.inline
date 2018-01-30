@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QTextLine is pure virtual: false
+// QTextLine has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextLine : public QTextLine {
 public:
+  virtual ~MyQTextLine() {}
+// void QTextLine()
 MyQTextLine() : QTextLine() {}
 };
 
@@ -17,9 +20,8 @@ MyQTextLine() : QTextLine() {}
 // /usr/include/qt/QtGui/qtextlayout.h:213
 // [-2] void QTextLine()
 extern "C"
-void* C_ZN9QTextLineC1Ev() {
-  (MyQTextLine*)(0);
-  return  new MyQTextLine();
+void* C_ZN9QTextLineC2Ev() {
+  return  new QTextLine();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:214

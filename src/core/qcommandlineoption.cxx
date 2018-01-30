@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QCommandLineOption is pure virtual: false
+// QCommandLineOption has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQCommandLineOption : public QCommandLineOption {
 public:
+  virtual ~MyQCommandLineOption() {}
+// void QCommandLineOption(const class QString &)
 MyQCommandLineOption(const QString & name) : QCommandLineOption(name) {}
+// void QCommandLineOption(const class QStringList &)
 MyQCommandLineOption(const QStringList & names) : QCommandLineOption(names) {}
+// void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
 MyQCommandLineOption(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(name, description, valueName, defaultValue) {}
+// void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
 MyQCommandLineOption(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(names, description, valueName, defaultValue) {}
 };
 
@@ -20,39 +26,35 @@ MyQCommandLineOption(const QStringList & names, const QString & description, con
 // /usr/include/qt/QtCore/qcommandlineoption.h:61
 // [-2] void QCommandLineOption(const class QString &)
 extern "C"
-void* C_ZN18QCommandLineOptionC1ERK7QString(const QString & name) {
-  (MyQCommandLineOption*)(0);
-  return  new MyQCommandLineOption(name);
+void* C_ZN18QCommandLineOptionC2ERK7QString(const QString & name) {
+  return  new QCommandLineOption(name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:62
 // [-2] void QCommandLineOption(const class QStringList &)
 extern "C"
-void* C_ZN18QCommandLineOptionC1ERK11QStringList(const QStringList & names) {
-  (MyQCommandLineOption*)(0);
-  return  new MyQCommandLineOption(names);
+void* C_ZN18QCommandLineOptionC2ERK11QStringList(const QStringList & names) {
+  return  new QCommandLineOption(names);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:63
 // [-2] void QCommandLineOption(const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-void* C_ZN18QCommandLineOptionC1ERK7QStringS2_S2_S2_(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) {
-  (MyQCommandLineOption*)(0);
-  return  new MyQCommandLineOption(name, description, valueName, defaultValue);
+void* C_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) {
+  return  new QCommandLineOption(name, description, valueName, defaultValue);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:66
 // [-2] void QCommandLineOption(const class QStringList &, const class QString &, const class QString &, const class QString &)
 extern "C"
-void* C_ZN18QCommandLineOptionC1ERK11QStringListRK7QStringS5_S5_(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) {
-  (MyQCommandLineOption*)(0);
-  return  new MyQCommandLineOption(names, description, valueName, defaultValue);
+void* C_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) {
+  return  new QCommandLineOption(names, description, valueName, defaultValue);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:71
 // [-2] void ~QCommandLineOption()
 extern "C"
-void C_ZN18QCommandLineOptionD1Ev(void *this_) {
+void C_ZN18QCommandLineOptionD2Ev(void *this_) {
   delete (QCommandLineOption*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

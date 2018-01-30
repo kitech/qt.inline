@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QButtonGroup is pure virtual: false
+// QButtonGroup has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQButtonGroup : public QButtonGroup {
 public:
+  virtual ~MyQButtonGroup() {}
+// void QButtonGroup(class QObject *)
 MyQButtonGroup(QObject * parent) : QButtonGroup(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK12QButtonGroup10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qbuttongroup.h:60
 // [-2] void QButtonGroup(class QObject *)
 extern "C"
-void* C_ZN12QButtonGroupC1EP7QObject(QObject * parent) {
-  (MyQButtonGroup*)(0);
-  return  new MyQButtonGroup(parent);
+void* C_ZN12QButtonGroupC2EP7QObject(QObject * parent) {
+  return  new QButtonGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qbuttongroup.h:61
 // [-2] void ~QButtonGroup()
 extern "C"
-void C_ZN12QButtonGroupD1Ev(void *this_) {
+void C_ZN12QButtonGroupD2Ev(void *this_) {
   delete (QButtonGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

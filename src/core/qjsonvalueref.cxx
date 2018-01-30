@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QJsonValueRef is pure virtual: false
+// QJsonValueRef has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQJsonValueRef : public QJsonValueRef {
 public:
+  virtual ~MyQJsonValueRef() {}
+// void QJsonValueRef(class QJsonArray *, int)
 MyQJsonValueRef(QJsonArray * array, int idx) : QJsonValueRef(array, idx) {}
+// void QJsonValueRef(class QJsonObject *, int)
 MyQJsonValueRef(QJsonObject * object, int idx) : QJsonValueRef(object, idx) {}
 };
 
@@ -18,17 +22,15 @@ MyQJsonValueRef(QJsonObject * object, int idx) : QJsonValueRef(object, idx) {}
 // /usr/include/qt/QtCore/qjsonvalue.h:174
 // [-2] void QJsonValueRef(class QJsonArray *, int)
 extern "C"
-void* C_ZN13QJsonValueRefC1EP10QJsonArrayi(QJsonArray * array, int idx) {
-  (MyQJsonValueRef*)(0);
-  return  new MyQJsonValueRef(array, idx);
+void* C_ZN13QJsonValueRefC2EP10QJsonArrayi(QJsonArray * array, int idx) {
+  return  new QJsonValueRef(array, idx);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:176
 // [-2] void QJsonValueRef(class QJsonObject *, int)
 extern "C"
-void* C_ZN13QJsonValueRefC1EP11QJsonObjecti(QJsonObject * object, int idx) {
-  (MyQJsonValueRef*)(0);
-  return  new MyQJsonValueRef(object, idx);
+void* C_ZN13QJsonValueRefC2EP11QJsonObjecti(QJsonObject * object, int idx) {
+  return  new QJsonValueRef(object, idx);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:183

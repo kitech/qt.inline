@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QDate is pure virtual: false
+// QDate has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQDate : public QDate {
 public:
+  virtual ~MyQDate() {}
+// void QDate()
 MyQDate() : QDate() {}
+// void QDate(int, int, int)
 MyQDate(int y, int m, int d) : QDate(y, m, d) {}
 };
 
@@ -18,17 +22,15 @@ MyQDate(int y, int m, int d) : QDate(y, m, d) {}
 // /usr/include/qt/QtCore/qdatetime.h:69
 // [-2] void QDate()
 extern "C"
-void* C_ZN5QDateC1Ev() {
-  (MyQDate*)(0);
-  return  new MyQDate();
+void* C_ZN5QDateC2Ev() {
+  return  new QDate();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:70
 // [-2] void QDate(int, int, int)
 extern "C"
-void* C_ZN5QDateC1Eiii(int y, int m, int d) {
-  (MyQDate*)(0);
-  return  new MyQDate(y, m, d);
+void* C_ZN5QDateC2Eiii(int y, int m, int d) {
+  return  new QDate(y, m, d);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:72
@@ -152,8 +154,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qdatetime.h:99
 // [8] QString toString(class QStringView)
 extern "C"
-void* C_ZNK5QDate8toStringE11QStringView(void *this_, QStringView format) {
-  auto rv = ((QDate*)this_)->toString(format);
+void* C_ZNK5QDate8toStringE11QStringView(void *this_, QStringView* format) {
+  auto rv = ((QDate*)this_)->toString(*format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

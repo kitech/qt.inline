@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QXmlStreamWriter is pure virtual: false
+// QXmlStreamWriter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQXmlStreamWriter : public QXmlStreamWriter {
 public:
+  virtual ~MyQXmlStreamWriter() {}
+// void QXmlStreamWriter()
 MyQXmlStreamWriter() : QXmlStreamWriter() {}
+// void QXmlStreamWriter(class QIODevice *)
 MyQXmlStreamWriter(QIODevice * device) : QXmlStreamWriter(device) {}
+// void QXmlStreamWriter(class QByteArray *)
 MyQXmlStreamWriter(QByteArray * array) : QXmlStreamWriter(array) {}
+// void QXmlStreamWriter(class QString *)
 MyQXmlStreamWriter(QString * string) : QXmlStreamWriter(string) {}
 };
 
@@ -20,39 +26,35 @@ MyQXmlStreamWriter(QString * string) : QXmlStreamWriter(string) {}
 // /usr/include/qt/QtCore/qxmlstream.h:472
 // [-2] void QXmlStreamWriter()
 extern "C"
-void* C_ZN16QXmlStreamWriterC1Ev() {
-  (MyQXmlStreamWriter*)(0);
-  return  new MyQXmlStreamWriter();
+void* C_ZN16QXmlStreamWriterC2Ev() {
+  return  new QXmlStreamWriter();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:473
 // [-2] void QXmlStreamWriter(class QIODevice *)
 extern "C"
-void* C_ZN16QXmlStreamWriterC1EP9QIODevice(QIODevice * device) {
-  (MyQXmlStreamWriter*)(0);
-  return  new MyQXmlStreamWriter(device);
+void* C_ZN16QXmlStreamWriterC2EP9QIODevice(QIODevice * device) {
+  return  new QXmlStreamWriter(device);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:474
 // [-2] void QXmlStreamWriter(class QByteArray *)
 extern "C"
-void* C_ZN16QXmlStreamWriterC1EP10QByteArray(QByteArray * array) {
-  (MyQXmlStreamWriter*)(0);
-  return  new MyQXmlStreamWriter(array);
+void* C_ZN16QXmlStreamWriterC2EP10QByteArray(QByteArray * array) {
+  return  new QXmlStreamWriter(array);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:475
 // [-2] void QXmlStreamWriter(class QString *)
 extern "C"
-void* C_ZN16QXmlStreamWriterC1EP7QString(QString * string) {
-  (MyQXmlStreamWriter*)(0);
-  return  new MyQXmlStreamWriter(string);
+void* C_ZN16QXmlStreamWriterC2EP7QString(QString * string) {
+  return  new QXmlStreamWriter(string);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:476
 // [-2] void ~QXmlStreamWriter()
 extern "C"
-void C_ZN16QXmlStreamWriterD1Ev(void *this_) {
+void C_ZN16QXmlStreamWriterD2Ev(void *this_) {
   delete (QXmlStreamWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available

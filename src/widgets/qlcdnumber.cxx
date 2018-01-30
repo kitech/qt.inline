@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QLCDNumber is pure virtual: false
+// QLCDNumber has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(void*cbfn
 
 class MyQLCDNumber : public QLCDNumber {
 public:
+  virtual ~MyQLCDNumber() {}
+// void QLCDNumber(class QWidget *)
 MyQLCDNumber(QWidget * parent) : QLCDNumber(parent) {}
+// void QLCDNumber(uint, class QWidget *)
 MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {}
 // bool event(class QEvent *)
-// bool event(class QEvent *)
-virtual bool event(QEvent * e) {
-  if (callback_ZN10QLCDNumber5eventEP6QEvent != 0) {
-  // callback_ZN10QLCDNumber5eventEP6QEvent(e);
-}}
+  virtual bool event(QEvent * e) {
+    if (callback_ZN10QLCDNumber5eventEP6QEvent != 0) {
+      // callback_ZN10QLCDNumber5eventEP6QEvent(e);
+    }
+    return QLCDNumber::event(e);
+  }
 // void paintEvent(class QPaintEvent *)
-// void paintEvent(class QPaintEvent *)
-virtual void paintEvent(QPaintEvent * arg0) {
-  if (callback_ZN10QLCDNumber10paintEventEP11QPaintEvent != 0) {
-  // callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(arg0);
-}}
+  virtual void paintEvent(QPaintEvent * arg0) {
+    if (callback_ZN10QLCDNumber10paintEventEP11QPaintEvent != 0) {
+      // callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(arg0);
+    }
+    QLCDNumber::paintEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK10QLCDNumber10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlcdnumber.h:62
 // [-2] void QLCDNumber(class QWidget *)
 extern "C"
-void* C_ZN10QLCDNumberC1EP7QWidget(QWidget * parent) {
-  (MyQLCDNumber*)(0);
+void* C_ZN10QLCDNumberC2EP7QWidget(QWidget * parent) {
+  auto _nilp = (MyQLCDNumber*)(0);
   return  new MyQLCDNumber(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:63
 // [-2] void QLCDNumber(uint, class QWidget *)
 extern "C"
-void* C_ZN10QLCDNumberC1EjP7QWidget(uint numDigits, QWidget * parent) {
-  (MyQLCDNumber*)(0);
+void* C_ZN10QLCDNumberC2EjP7QWidget(uint numDigits, QWidget * parent) {
+  auto _nilp = (MyQLCDNumber*)(0);
   return  new MyQLCDNumber(numDigits, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:64
 // [-2] void ~QLCDNumber()
 extern "C"
-void C_ZN10QLCDNumberD1Ev(void *this_) {
+void C_ZN10QLCDNumberD2Ev(void *this_) {
   delete (QLCDNumber*)(this_);
 }
 // Public Visibility=Default Availability=Available

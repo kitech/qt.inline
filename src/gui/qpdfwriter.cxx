@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QPdfWriter is pure virtual: false
+// QPdfWriter has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -24,20 +25,25 @@ extern "C" void set_callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDevice
 
 class MyQPdfWriter : public QPdfWriter {
 public:
+  virtual ~MyQPdfWriter() {}
+// void QPdfWriter(const class QString &)
 MyQPdfWriter(const QString & filename) : QPdfWriter(filename) {}
+// void QPdfWriter(class QIODevice *)
 MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
 // QPaintEngine * paintEngine()
-// QPaintEngine * paintEngine()
-virtual QPaintEngine * paintEngine() {
-  if (callback_ZNK10QPdfWriter11paintEngineEv != 0) {
-  // callback_ZNK10QPdfWriter11paintEngineEv();
-}}
+  virtual QPaintEngine * paintEngine() {
+    if (callback_ZNK10QPdfWriter11paintEngineEv != 0) {
+      // callback_ZNK10QPdfWriter11paintEngineEv();
+    }
+    return QPdfWriter::paintEngine();
+  }
 // int metric(enum QPaintDevice::PaintDeviceMetric)
-// int metric(enum QPaintDevice::PaintDeviceMetric)
-virtual int metric(QPaintDevice::PaintDeviceMetric id) {
-  if (callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-  // callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(id);
-}}
+  virtual int metric(QPaintDevice::PaintDeviceMetric id) {
+    if (callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
+      // callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(id);
+    }
+    return QPdfWriter::metric(id);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -51,23 +57,23 @@ void* C_ZNK10QPdfWriter10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qpdfwriter.h:60
 // [-2] void QPdfWriter(const class QString &)
 extern "C"
-void* C_ZN10QPdfWriterC1ERK7QString(const QString & filename) {
-  (MyQPdfWriter*)(0);
+void* C_ZN10QPdfWriterC2ERK7QString(const QString & filename) {
+  auto _nilp = (MyQPdfWriter*)(0);
   return  new MyQPdfWriter(filename);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:61
 // [-2] void QPdfWriter(class QIODevice *)
 extern "C"
-void* C_ZN10QPdfWriterC1EP9QIODevice(QIODevice * device) {
-  (MyQPdfWriter*)(0);
+void* C_ZN10QPdfWriterC2EP9QIODevice(QIODevice * device) {
+  auto _nilp = (MyQPdfWriter*)(0);
   return  new MyQPdfWriter(device);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:62
 // [-2] void ~QPdfWriter()
 extern "C"
-void C_ZN10QPdfWriterD1Ev(void *this_) {
+void C_ZN10QPdfWriterD2Ev(void *this_) {
   delete (QPdfWriter*)(this_);
 }
 // Public Visibility=Default Availability=Available

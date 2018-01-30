@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QUndoGroup is pure virtual: false
+// QUndoGroup has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUndoGroup : public QUndoGroup {
 public:
+  virtual ~MyQUndoGroup() {}
+// void QUndoGroup(class QObject *)
 MyQUndoGroup(QObject * parent) : QUndoGroup(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QUndoGroup10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundogroup.h:61
 // [-2] void QUndoGroup(class QObject *)
 extern "C"
-void* C_ZN10QUndoGroupC1EP7QObject(QObject * parent) {
-  (MyQUndoGroup*)(0);
-  return  new MyQUndoGroup(parent);
+void* C_ZN10QUndoGroupC2EP7QObject(QObject * parent) {
+  return  new QUndoGroup(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundogroup.h:62
 // [-2] void ~QUndoGroup()
 extern "C"
-void C_ZN10QUndoGroupD1Ev(void *this_) {
+void C_ZN10QUndoGroupD2Ev(void *this_) {
   delete (QUndoGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available

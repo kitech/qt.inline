@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QFormLayout is pure virtual: false
+// QFormLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFormLayout : public QFormLayout {
 public:
+  virtual ~MyQFormLayout() {}
+// void QFormLayout(class QWidget *)
 MyQFormLayout(QWidget * parent) : QFormLayout(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK11QFormLayout10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qformlayout.h:91
 // [-2] void QFormLayout(class QWidget *)
 extern "C"
-void* C_ZN11QFormLayoutC1EP7QWidget(QWidget * parent) {
-  (MyQFormLayout*)(0);
-  return  new MyQFormLayout(parent);
+void* C_ZN11QFormLayoutC2EP7QWidget(QWidget * parent) {
+  return  new QFormLayout(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:92
 // [-2] void ~QFormLayout()
 extern "C"
-void C_ZN11QFormLayoutD1Ev(void *this_) {
+void C_ZN11QFormLayoutD2Ev(void *this_) {
   delete (QFormLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

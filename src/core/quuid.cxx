@@ -4,16 +4,23 @@
 #include <QtCore>
 
 // QUuid is pure virtual: false
+// QUuid has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQUuid : public QUuid {
 public:
+  virtual ~MyQUuid() {}
+// void QUuid()
 MyQUuid() : QUuid() {}
+// void QUuid(uint, ushort, ushort, uchar, uchar, uchar, uchar, uchar, uchar, uchar, uchar)
 MyQUuid(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8) : QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8) {}
+// void QUuid(const class QString &)
 MyQUuid(const QString & arg0) : QUuid(arg0) {}
+// void QUuid(const char *)
 MyQUuid(const char * arg0) : QUuid(arg0) {}
+// void QUuid(const class QByteArray &)
 MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
 };
 
@@ -21,49 +28,45 @@ MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
 // /usr/include/qt/QtCore/quuid.h:89
 // [-2] void QUuid()
 extern "C"
-void* C_ZN5QUuidC1Ev() {
-  (MyQUuid*)(0);
-  return  new MyQUuid();
+void* C_ZN5QUuidC2Ev() {
+  return  new QUuid();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:91
 // [-2] void QUuid(uint, ushort, ushort, uchar, uchar, uchar, uchar, uchar, uchar, uchar, uchar)
 extern "C"
-void* C_ZN5QUuidC1Ejtthhhhhhhh(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8) {
-  (MyQUuid*)(0);
-  return  new MyQUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
+void* C_ZN5QUuidC2Ejtthhhhhhhh(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8) {
+  return  new QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:119
 // [-2] void QUuid(const class QString &)
 extern "C"
-void* C_ZN5QUuidC1ERK7QString(const QString & arg0) {
-  (MyQUuid*)(0);
-  return  new MyQUuid(arg0);
+void* C_ZN5QUuidC2ERK7QString(const QString & arg0) {
+  return  new QUuid(arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:120
 // [16] QUuid fromString(class QStringView)
 extern "C"
-void* C_ZN5QUuid10fromStringE11QStringView(QStringView string) {
-  auto rv = QUuid::fromString(string);
+void* C_ZN5QUuid10fromStringE11QStringView(QStringView* string) {
+  auto rv = QUuid::fromString(*string);
 return new QUuid(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:121
 // [16] QUuid fromString(class QLatin1String)
 extern "C"
-void* C_ZN5QUuid10fromStringE13QLatin1String(QLatin1String string) {
-  auto rv = QUuid::fromString(string);
+void* C_ZN5QUuid10fromStringE13QLatin1String(QLatin1String* string) {
+  auto rv = QUuid::fromString(*string);
 return new QUuid(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:122
 // [-2] void QUuid(const char *)
 extern "C"
-void* C_ZN5QUuidC1EPKc(const char * arg0) {
-  (MyQUuid*)(0);
-  return  new MyQUuid(arg0);
+void* C_ZN5QUuidC2EPKc(const char * arg0) {
+  return  new QUuid(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:123
@@ -77,9 +80,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/quuid.h:124
 // [-2] void QUuid(const class QByteArray &)
 extern "C"
-void* C_ZN5QUuidC1ERK10QByteArray(const QByteArray & arg0) {
-  (MyQUuid*)(0);
-  return  new MyQUuid(arg0);
+void* C_ZN5QUuidC2ERK10QByteArray(const QByteArray & arg0) {
+  return  new QUuid(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:125

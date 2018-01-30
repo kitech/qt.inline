@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QSysInfo is pure virtual: false
+// QSysInfo has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSysInfo : public QSysInfo {
 public:
+  virtual ~MyQSysInfo() {}
 };
 
 // Public static inline Visibility=Default Availability=Available

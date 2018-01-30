@@ -4,19 +4,21 @@
 #include <QtCore>
 
 // QObjectData is pure virtual: true
+// QObjectData has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQObjectData : public QObjectData {
 public:
+  virtual ~MyQObjectData() {}
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:97
 // [-2] void ~QObjectData()
 extern "C"
-void C_ZN11QObjectDataD1Ev(void *this_) {
+void C_ZN11QObjectDataD2Ev(void *this_) {
   delete (QObjectData*)(this_);
 }
 // Public Visibility=Default Availability=Available

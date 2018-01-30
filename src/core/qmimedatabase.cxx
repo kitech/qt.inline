@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QMimeDatabase is pure virtual: false
+// QMimeDatabase has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQMimeDatabase : public QMimeDatabase {
 public:
+  virtual ~MyQMimeDatabase() {}
+// void QMimeDatabase()
 MyQMimeDatabase() : QMimeDatabase() {}
 };
 
@@ -17,15 +20,14 @@ MyQMimeDatabase() : QMimeDatabase() {}
 // /usr/include/qt/QtCore/qmimedatabase.h:63
 // [-2] void QMimeDatabase()
 extern "C"
-void* C_ZN13QMimeDatabaseC1Ev() {
-  (MyQMimeDatabase*)(0);
-  return  new MyQMimeDatabase();
+void* C_ZN13QMimeDatabaseC2Ev() {
+  return  new QMimeDatabase();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimedatabase.h:64
 // [-2] void ~QMimeDatabase()
 extern "C"
-void C_ZN13QMimeDatabaseD1Ev(void *this_) {
+void C_ZN13QMimeDatabaseD2Ev(void *this_) {
   delete (QMimeDatabase*)(this_);
 }
 // Public Visibility=Default Availability=Available

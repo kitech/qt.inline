@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QGraphicsLinearLayout is pure virtual: false
+// QGraphicsLinearLayout has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGraphicsLinearLayout : public QGraphicsLinearLayout {
 public:
+  virtual ~MyQGraphicsLinearLayout() {}
+// void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
 MyQGraphicsLinearLayout(QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(parent) {}
+// void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
 MyQGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * parent) : QGraphicsLinearLayout(orientation, parent) {}
 };
 
@@ -18,23 +22,21 @@ MyQGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * paren
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
 // [-2] void QGraphicsLinearLayout(class QGraphicsLayoutItem *)
 extern "C"
-void* C_ZN21QGraphicsLinearLayoutC1EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
-  (MyQGraphicsLinearLayout*)(0);
-  return  new MyQGraphicsLinearLayout(parent);
+void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
+  return  new QGraphicsLinearLayout(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
 // [-2] void QGraphicsLinearLayout(Qt::Orientation, class QGraphicsLayoutItem *)
 extern "C"
-void* C_ZN21QGraphicsLinearLayoutC1EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
-  (MyQGraphicsLinearLayout*)(0);
-  return  new MyQGraphicsLinearLayout(orientation, parent);
+void* C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
+  return  new QGraphicsLinearLayout(orientation, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:58
 // [-2] void ~QGraphicsLinearLayout()
 extern "C"
-void C_ZN21QGraphicsLinearLayoutD1Ev(void *this_) {
+void C_ZN21QGraphicsLinearLayoutD2Ev(void *this_) {
   delete (QGraphicsLinearLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available

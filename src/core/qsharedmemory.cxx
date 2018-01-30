@@ -4,13 +4,17 @@
 #include <QtCore>
 
 // QSharedMemory is pure virtual: false
+// QSharedMemory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQSharedMemory : public QSharedMemory {
 public:
+  virtual ~MyQSharedMemory() {}
+// void QSharedMemory(class QObject *)
 MyQSharedMemory(QObject * parent) : QSharedMemory(parent) {}
+// void QSharedMemory(const class QString &, class QObject *)
 MyQSharedMemory(const QString & key, QObject * parent) : QSharedMemory(key, parent) {}
 };
 
@@ -25,23 +29,21 @@ void* C_ZNK13QSharedMemory10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsharedmemory.h:77
 // [-2] void QSharedMemory(class QObject *)
 extern "C"
-void* C_ZN13QSharedMemoryC1EP7QObject(QObject * parent) {
-  (MyQSharedMemory*)(0);
-  return  new MyQSharedMemory(parent);
+void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
+  return  new QSharedMemory(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:78
 // [-2] void QSharedMemory(const class QString &, class QObject *)
 extern "C"
-void* C_ZN13QSharedMemoryC1ERK7QStringP7QObject(const QString & key, QObject * parent) {
-  (MyQSharedMemory*)(0);
-  return  new MyQSharedMemory(key, parent);
+void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(const QString & key, QObject * parent) {
+  return  new QSharedMemory(key, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:79
 // [-2] void ~QSharedMemory()
 extern "C"
-void C_ZN13QSharedMemoryD1Ev(void *this_) {
+void C_ZN13QSharedMemoryD2Ev(void *this_) {
   delete (QSharedMemory*)(this_);
 }
 // Public Visibility=Default Availability=Available

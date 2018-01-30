@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QOperatingSystemVersion is pure virtual: false
+// QOperatingSystemVersion has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQOperatingSystemVersion : public QOperatingSystemVersion {
 public:
+  virtual ~MyQOperatingSystemVersion() {}
+// void QOperatingSystemVersion(enum QOperatingSystemVersion::OSType, int, int, int)
 MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
 };
 
@@ -17,9 +20,8 @@ MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, in
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:85
 // [-2] void QOperatingSystemVersion(enum QOperatingSystemVersion::OSType, int, int, int)
 extern "C"
-void* C_ZN23QOperatingSystemVersionC1ENS_6OSTypeEiii(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) {
-  (MyQOperatingSystemVersion*)(0);
-  return  new MyQOperatingSystemVersion(osType, vmajor, vminor, vmicro);
+void* C_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) {
+  return  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:93

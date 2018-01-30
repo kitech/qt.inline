@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QTextLength is pure virtual: false
+// QTextLength has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTextLength : public QTextLength {
 public:
+  virtual ~MyQTextLength() {}
+// void QTextLength()
 MyQTextLength() : QTextLength() {}
+// void QTextLength(enum QTextLength::Type, qreal)
 MyQTextLength(QTextLength::Type type, qreal value) : QTextLength(type, value) {}
 };
 
@@ -18,17 +22,15 @@ MyQTextLength(QTextLength::Type type, qreal value) : QTextLength(type, value) {}
 // /usr/include/qt/QtGui/qtextformat.h:89
 // [-2] void QTextLength()
 extern "C"
-void* C_ZN11QTextLengthC1Ev() {
-  (MyQTextLength*)(0);
-  return  new MyQTextLength();
+void* C_ZN11QTextLengthC2Ev() {
+  return  new QTextLength();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:91
 // [-2] void QTextLength(enum QTextLength::Type, qreal)
 extern "C"
-void* C_ZN11QTextLengthC1ENS_4TypeEd(QTextLength::Type type, qreal value) {
-  (MyQTextLength*)(0);
-  return  new MyQTextLength(type, value);
+void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type, qreal value) {
+  return  new QTextLength(type, value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93

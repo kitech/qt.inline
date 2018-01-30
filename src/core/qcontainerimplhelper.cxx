@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // QContainerImplHelper is pure virtual: false
+// QContainerImplHelper has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQContainerImplHelper : public QtPrivate::QContainerImplHelper {
 public:
+  virtual ~MyQContainerImplHelper() {}
 };
 
 // Public static Visibility=Default Availability=Available

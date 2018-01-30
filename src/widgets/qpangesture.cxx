@@ -4,12 +4,15 @@
 #include <QtWidgets>
 
 // QPanGesture is pure virtual: false
+// QPanGesture has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPanGesture : public QPanGesture {
 public:
+  virtual ~MyQPanGesture() {}
+// void QPanGesture(class QObject *)
 MyQPanGesture(QObject * parent) : QPanGesture(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK11QPanGesture10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:117
 // [-2] void QPanGesture(class QObject *)
 extern "C"
-void* C_ZN11QPanGestureC1EP7QObject(QObject * parent) {
-  (MyQPanGesture*)(0);
-  return  new MyQPanGesture(parent);
+void* C_ZN11QPanGestureC2EP7QObject(QObject * parent) {
+  return  new QPanGesture(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:118
 // [-2] void ~QPanGesture()
 extern "C"
-void C_ZN11QPanGestureD1Ev(void *this_) {
+void C_ZN11QPanGestureD2Ev(void *this_) {
   delete (QPanGesture*)(this_);
 }
 // Public Visibility=Default Availability=Available

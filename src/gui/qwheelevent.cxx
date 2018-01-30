@@ -4,19 +4,21 @@
 #include <QtGui>
 
 // QWheelEvent is pure virtual: false
+// QWheelEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQWheelEvent : public QWheelEvent {
 public:
+  virtual ~MyQWheelEvent() {}
 };
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:196
 // [-2] void ~QWheelEvent()
 extern "C"
-void C_ZN11QWheelEventD1Ev(void *this_) {
+void C_ZN11QWheelEventD2Ev(void *this_) {
   delete (QWheelEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

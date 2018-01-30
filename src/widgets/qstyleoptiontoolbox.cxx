@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionToolBox is pure virtual: false
+// QStyleOptionToolBox has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN19QStyleOptionToolBoxC1Ei(void*cbfn)
 
 class MyQStyleOptionToolBox : public QStyleOptionToolBox {
 public:
+  virtual ~MyQStyleOptionToolBox() {}
+// void QStyleOptionToolBox()
 MyQStyleOptionToolBox() : QStyleOptionToolBox() {}
+// void QStyleOptionToolBox(int)
 MyQStyleOptionToolBox(int version) : QStyleOptionToolBox(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionToolBox(int version) : QStyleOptionToolBox(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:472
 // [-2] void QStyleOptionToolBox()
 extern "C"
-void* C_ZN19QStyleOptionToolBoxC1Ev() {
-  (MyQStyleOptionToolBox*)(0);
-  return  new MyQStyleOptionToolBox();
+void* C_ZN19QStyleOptionToolBoxC2Ev() {
+  return  new QStyleOptionToolBox();
 }
 //  main block end

@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QGraphicsBlurEffect is pure virtual: false
+// QGraphicsBlurEffect has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(void*cbfn)
 
 class MyQGraphicsBlurEffect : public QGraphicsBlurEffect {
 public:
+  virtual ~MyQGraphicsBlurEffect() {}
+// void QGraphicsBlurEffect(class QObject *)
 MyQGraphicsBlurEffect(QObject * parent) : QGraphicsBlurEffect(parent) {}
 // void draw(class QPainter *)
-// void draw(class QPainter *)
-virtual void draw(QPainter * painter) {
-  if (callback_ZN19QGraphicsBlurEffect4drawEP8QPainter != 0) {
-  // callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(painter);
-}}
+  virtual void draw(QPainter * painter) {
+    if (callback_ZN19QGraphicsBlurEffect4drawEP8QPainter != 0) {
+      // callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(painter);
+    }
+    QGraphicsBlurEffect::draw(painter);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK19QGraphicsBlurEffect10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:170
 // [-2] void QGraphicsBlurEffect(class QObject *)
 extern "C"
-void* C_ZN19QGraphicsBlurEffectC1EP7QObject(QObject * parent) {
-  (MyQGraphicsBlurEffect*)(0);
+void* C_ZN19QGraphicsBlurEffectC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQGraphicsBlurEffect*)(0);
   return  new MyQGraphicsBlurEffect(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:171
 // [-2] void ~QGraphicsBlurEffect()
 extern "C"
-void C_ZN19QGraphicsBlurEffectD1Ev(void *this_) {
+void C_ZN19QGraphicsBlurEffectD2Ev(void *this_) {
   delete (QGraphicsBlurEffect*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

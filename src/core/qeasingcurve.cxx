@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QEasingCurve is pure virtual: false
+// QEasingCurve has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQEasingCurve : public QEasingCurve {
 public:
+  virtual ~MyQEasingCurve() {}
+// void QEasingCurve(enum QEasingCurve::Type)
 MyQEasingCurve(QEasingCurve::Type type) : QEasingCurve(type) {}
 };
 
@@ -17,15 +20,14 @@ MyQEasingCurve(QEasingCurve::Type type) : QEasingCurve(type) {}
 // /usr/include/qt/QtCore/qeasingcurve.h:77
 // [-2] void QEasingCurve(enum QEasingCurve::Type)
 extern "C"
-void* C_ZN12QEasingCurveC1ENS_4TypeE(QEasingCurve::Type type) {
-  (MyQEasingCurve*)(0);
-  return  new MyQEasingCurve(type);
+void* C_ZN12QEasingCurveC2ENS_4TypeE(QEasingCurve::Type type) {
+  return  new QEasingCurve(type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:79
 // [-2] void ~QEasingCurve()
 extern "C"
-void C_ZN12QEasingCurveD1Ev(void *this_) {
+void C_ZN12QEasingCurveD2Ev(void *this_) {
   delete (QEasingCurve*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

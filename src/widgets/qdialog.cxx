@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QDialog is pure virtual: false
+// QDialog has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -59,49 +60,58 @@ extern "C" void set_callback_ZN7QDialog14adjustPositionEP7QWidget(void*cbfn)
 
 class MyQDialog : public QDialog {
 public:
+  virtual ~MyQDialog() {}
+// void QDialog(class QWidget *, Qt::WindowFlags)
 MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
 // void keyPressEvent(class QKeyEvent *)
-// void keyPressEvent(class QKeyEvent *)
-virtual void keyPressEvent(QKeyEvent * arg0) {
-  if (callback_ZN7QDialog13keyPressEventEP9QKeyEvent != 0) {
-  // callback_ZN7QDialog13keyPressEventEP9QKeyEvent(arg0);
-}}
+  virtual void keyPressEvent(QKeyEvent * arg0) {
+    if (callback_ZN7QDialog13keyPressEventEP9QKeyEvent != 0) {
+      // callback_ZN7QDialog13keyPressEventEP9QKeyEvent(arg0);
+    }
+    QDialog::keyPressEvent(arg0);
+  }
 // void closeEvent(class QCloseEvent *)
-// void closeEvent(class QCloseEvent *)
-virtual void closeEvent(QCloseEvent * arg0) {
-  if (callback_ZN7QDialog10closeEventEP11QCloseEvent != 0) {
-  // callback_ZN7QDialog10closeEventEP11QCloseEvent(arg0);
-}}
+  virtual void closeEvent(QCloseEvent * arg0) {
+    if (callback_ZN7QDialog10closeEventEP11QCloseEvent != 0) {
+      // callback_ZN7QDialog10closeEventEP11QCloseEvent(arg0);
+    }
+    QDialog::closeEvent(arg0);
+  }
 // void showEvent(class QShowEvent *)
-// void showEvent(class QShowEvent *)
-virtual void showEvent(QShowEvent * arg0) {
-  if (callback_ZN7QDialog9showEventEP10QShowEvent != 0) {
-  // callback_ZN7QDialog9showEventEP10QShowEvent(arg0);
-}}
+  virtual void showEvent(QShowEvent * arg0) {
+    if (callback_ZN7QDialog9showEventEP10QShowEvent != 0) {
+      // callback_ZN7QDialog9showEventEP10QShowEvent(arg0);
+    }
+    QDialog::showEvent(arg0);
+  }
 // void resizeEvent(class QResizeEvent *)
-// void resizeEvent(class QResizeEvent *)
-virtual void resizeEvent(QResizeEvent * arg0) {
-  if (callback_ZN7QDialog11resizeEventEP12QResizeEvent != 0) {
-  // callback_ZN7QDialog11resizeEventEP12QResizeEvent(arg0);
-}}
+  virtual void resizeEvent(QResizeEvent * arg0) {
+    if (callback_ZN7QDialog11resizeEventEP12QResizeEvent != 0) {
+      // callback_ZN7QDialog11resizeEventEP12QResizeEvent(arg0);
+    }
+    QDialog::resizeEvent(arg0);
+  }
 // void contextMenuEvent(class QContextMenuEvent *)
-// void contextMenuEvent(class QContextMenuEvent *)
-virtual void contextMenuEvent(QContextMenuEvent * arg0) {
-  if (callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent != 0) {
-  // callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(arg0);
-}}
+  virtual void contextMenuEvent(QContextMenuEvent * arg0) {
+    if (callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent != 0) {
+      // callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(arg0);
+    }
+    QDialog::contextMenuEvent(arg0);
+  }
 // bool eventFilter(class QObject *, class QEvent *)
-// bool eventFilter(class QObject *, class QEvent *)
-virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-  if (callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent != 0) {
-  // callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(arg0, arg1);
-}}
+  virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
+    if (callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent != 0) {
+      // callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    }
+    return QDialog::eventFilter(arg0, arg1);
+  }
 // void adjustPosition(class QWidget *)
-// void adjustPosition(class QWidget *)
-virtual void adjustPosition(QWidget * arg0) {
-  if (callback_ZN7QDialog14adjustPositionEP7QWidget != 0) {
-  // callback_ZN7QDialog14adjustPositionEP7QWidget(arg0);
-}}
+  virtual void adjustPosition(QWidget * arg0) {
+    if (callback_ZN7QDialog14adjustPositionEP7QWidget != 0) {
+      // callback_ZN7QDialog14adjustPositionEP7QWidget(arg0);
+    }
+    QDialog::adjustPosition(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -115,15 +125,15 @@ void* C_ZNK7QDialog10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdialog.h:63
 // [-2] void QDialog(class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN7QDialogC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
-  (MyQDialog*)(0);
+void* C_ZN7QDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> f) {
+  auto _nilp = (MyQDialog*)(0);
   return  new MyQDialog(parent, f);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdialog.h:64
 // [-2] void ~QDialog()
 extern "C"
-void C_ZN7QDialogD1Ev(void *this_) {
+void C_ZN7QDialogD2Ev(void *this_) {
   delete (QDialog*)(this_);
 }
 // Public Visibility=Default Availability=Available

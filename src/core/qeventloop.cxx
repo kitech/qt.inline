@@ -4,12 +4,15 @@
 #include <QtCore>
 
 // QEventLoop is pure virtual: false
+// QEventLoop has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQEventLoop : public QEventLoop {
 public:
+  virtual ~MyQEventLoop() {}
+// void QEventLoop(class QObject *)
 MyQEventLoop(QObject * parent) : QEventLoop(parent) {}
 };
 
@@ -24,15 +27,14 @@ void* C_ZNK10QEventLoop10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qeventloop.h:56
 // [-2] void QEventLoop(class QObject *)
 extern "C"
-void* C_ZN10QEventLoopC1EP7QObject(QObject * parent) {
-  (MyQEventLoop*)(0);
-  return  new MyQEventLoop(parent);
+void* C_ZN10QEventLoopC2EP7QObject(QObject * parent) {
+  return  new QEventLoop(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventloop.h:57
 // [-2] void ~QEventLoop()
 extern "C"
-void C_ZN10QEventLoopD1Ev(void *this_) {
+void C_ZN10QEventLoopD2Ev(void *this_) {
   delete (QEventLoop*)(this_);
 }
 // Public Visibility=Default Availability=Available

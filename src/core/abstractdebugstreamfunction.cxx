@@ -4,12 +4,14 @@
 #include <QtCore>
 
 // AbstractDebugStreamFunction is pure virtual: false
+// AbstractDebugStreamFunction has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyAbstractDebugStreamFunction : public QtPrivate::AbstractDebugStreamFunction {
 public:
+  virtual ~MyAbstractDebugStreamFunction() {}
 };
 
 //  main block end

@@ -4,21 +4,33 @@
 #include <QtCore>
 
 // QJsonValue is pure virtual: false
+// QJsonValue has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQJsonValue : public QJsonValue {
 public:
+  virtual ~MyQJsonValue() {}
+// void QJsonValue(enum QJsonValue::Type)
 MyQJsonValue(QJsonValue::Type arg0) : QJsonValue(arg0) {}
+// void QJsonValue(_Bool)
 MyQJsonValue(bool b) : QJsonValue(b) {}
+// void QJsonValue(double)
 MyQJsonValue(double n) : QJsonValue(n) {}
+// void QJsonValue(int)
 MyQJsonValue(int n) : QJsonValue(n) {}
+// void QJsonValue(qint64)
 MyQJsonValue(qint64 n) : QJsonValue(n) {}
+// void QJsonValue(const class QString &)
 MyQJsonValue(const QString & s) : QJsonValue(s) {}
+// void QJsonValue(class QLatin1String)
 MyQJsonValue(QLatin1String s) : QJsonValue(s) {}
+// void QJsonValue(const char *)
 MyQJsonValue(const char * s) : QJsonValue(s) {}
+// void QJsonValue(const class QJsonArray &)
 MyQJsonValue(const QJsonArray & a) : QJsonValue(a) {}
+// void QJsonValue(const class QJsonObject &)
 MyQJsonValue(const QJsonObject & o) : QJsonValue(o) {}
 };
 
@@ -26,87 +38,77 @@ MyQJsonValue(const QJsonObject & o) : QJsonValue(o) {}
 // /usr/include/qt/QtCore/qjsonvalue.h:76
 // [-2] void QJsonValue(enum QJsonValue::Type)
 extern "C"
-void* C_ZN10QJsonValueC1ENS_4TypeE(QJsonValue::Type arg0) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(arg0);
+void* C_ZN10QJsonValueC2ENS_4TypeE(QJsonValue::Type arg0) {
+  return  new QJsonValue(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:77
 // [-2] void QJsonValue(_Bool)
 extern "C"
-void* C_ZN10QJsonValueC1Eb(bool b) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(b);
+void* C_ZN10QJsonValueC2Eb(bool b) {
+  return  new QJsonValue(b);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:78
 // [-2] void QJsonValue(double)
 extern "C"
-void* C_ZN10QJsonValueC1Ed(double n) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(n);
+void* C_ZN10QJsonValueC2Ed(double n) {
+  return  new QJsonValue(n);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:79
 // [-2] void QJsonValue(int)
 extern "C"
-void* C_ZN10QJsonValueC1Ei(int n) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(n);
+void* C_ZN10QJsonValueC2Ei(int n) {
+  return  new QJsonValue(n);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:80
 // [-2] void QJsonValue(qint64)
 extern "C"
-void* C_ZN10QJsonValueC1Ex(qint64 n) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(n);
+void* C_ZN10QJsonValueC2Ex(qint64 n) {
+  return  new QJsonValue(n);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:81
 // [-2] void QJsonValue(const class QString &)
 extern "C"
-void* C_ZN10QJsonValueC1ERK7QString(const QString & s) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(s);
+void* C_ZN10QJsonValueC2ERK7QString(const QString & s) {
+  return  new QJsonValue(s);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:82
 // [-2] void QJsonValue(class QLatin1String)
 extern "C"
-void* C_ZN10QJsonValueC1E13QLatin1String(QLatin1String s) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(s);
+void* C_ZN10QJsonValueC2E13QLatin1String(QLatin1String* s) {
+  return  new QJsonValue(*s);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:84
 // [-2] void QJsonValue(const char *)
 extern "C"
-void* C_ZN10QJsonValueC1EPKc(const char * s) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(s);
+void* C_ZN10QJsonValueC2EPKc(const char * s) {
+  return  new QJsonValue(s);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:87
 // [-2] void QJsonValue(const class QJsonArray &)
 extern "C"
-void* C_ZN10QJsonValueC1ERK10QJsonArray(const QJsonArray & a) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(a);
+void* C_ZN10QJsonValueC2ERK10QJsonArray(const QJsonArray & a) {
+  return  new QJsonValue(a);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:88
 // [-2] void QJsonValue(const class QJsonObject &)
 extern "C"
-void* C_ZN10QJsonValueC1ERK11QJsonObject(const QJsonObject & o) {
-  (MyQJsonValue*)(0);
-  return  new MyQJsonValue(o);
+void* C_ZN10QJsonValueC2ERK11QJsonObject(const QJsonObject & o) {
+  return  new QJsonValue(o);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:90
 // [-2] void ~QJsonValue()
 extern "C"
-void C_ZN10QJsonValueD1Ev(void *this_) {
+void C_ZN10QJsonValueD2Ev(void *this_) {
   delete (QJsonValue*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

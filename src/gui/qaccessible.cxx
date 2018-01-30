@@ -4,12 +4,14 @@
 #include <QtGui>
 
 // QAccessible is pure virtual: false
+// QAccessible has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQAccessible : public QAccessible {
 public:
+  virtual ~MyQAccessible() {}
 };
 
 // Public static Visibility=Default Availability=Available

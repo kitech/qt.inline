@@ -4,6 +4,7 @@
 #include <QtWidgets>
 
 // QStyleOptionTitleBar is pure virtual: false
+// QStyleOptionTitleBar has virtual projected: false
 //  header block end
 
 //  main block begin
@@ -17,7 +18,10 @@ extern "C" void set_callback_ZN20QStyleOptionTitleBarC1Ei(void*cbfn)
 
 class MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
 public:
+  virtual ~MyQStyleOptionTitleBar() {}
+// void QStyleOptionTitleBar()
 MyQStyleOptionTitleBar() : QStyleOptionTitleBar() {}
+// void QStyleOptionTitleBar(int)
 MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
 };
 
@@ -25,8 +29,7 @@ MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
 // /usr/include/qt/QtWidgets/qstyleoption.h:619
 // [-2] void QStyleOptionTitleBar()
 extern "C"
-void* C_ZN20QStyleOptionTitleBarC1Ev() {
-  (MyQStyleOptionTitleBar*)(0);
-  return  new MyQStyleOptionTitleBar();
+void* C_ZN20QStyleOptionTitleBarC2Ev() {
+  return  new QStyleOptionTitleBar();
 }
 //  main block end

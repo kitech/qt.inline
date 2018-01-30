@@ -4,15 +4,21 @@
 #include <QtCore>
 
 // QFile is pure virtual: false
+// QFile has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQFile : public QFile {
 public:
+  virtual ~MyQFile() {}
+// void QFile()
 MyQFile() : QFile() {}
+// void QFile(const class QString &)
 MyQFile(const QString & name) : QFile(name) {}
+// void QFile(class QObject *)
 MyQFile(QObject * parent) : QFile(parent) {}
+// void QFile(const class QString &, class QObject *)
 MyQFile(const QString & name, QObject * parent) : QFile(name, parent) {}
 };
 
@@ -27,39 +33,35 @@ void* C_ZNK5QFile10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qfile.h:65
 // [-2] void QFile()
 extern "C"
-void* C_ZN5QFileC1Ev() {
-  (MyQFile*)(0);
-  return  new MyQFile();
+void* C_ZN5QFileC2Ev() {
+  return  new QFile();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:66
 // [-2] void QFile(const class QString &)
 extern "C"
-void* C_ZN5QFileC1ERK7QString(const QString & name) {
-  (MyQFile*)(0);
-  return  new MyQFile(name);
+void* C_ZN5QFileC2ERK7QString(const QString & name) {
+  return  new QFile(name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:68
 // [-2] void QFile(class QObject *)
 extern "C"
-void* C_ZN5QFileC1EP7QObject(QObject * parent) {
-  (MyQFile*)(0);
-  return  new MyQFile(parent);
+void* C_ZN5QFileC2EP7QObject(QObject * parent) {
+  return  new QFile(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:69
 // [-2] void QFile(const class QString &, class QObject *)
 extern "C"
-void* C_ZN5QFileC1ERK7QStringP7QObject(const QString & name, QObject * parent) {
-  (MyQFile*)(0);
-  return  new MyQFile(name, parent);
+void* C_ZN5QFileC2ERK7QStringP7QObject(const QString & name, QObject * parent) {
+  return  new QFile(name, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:71
 // [-2] void ~QFile()
 extern "C"
-void C_ZN5QFileD1Ev(void *this_) {
+void C_ZN5QFileD2Ev(void *this_) {
   delete (QFile*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available

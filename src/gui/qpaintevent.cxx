@@ -4,13 +4,17 @@
 #include <QtGui>
 
 // QPaintEvent is pure virtual: false
+// QPaintEvent has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQPaintEvent : public QPaintEvent {
 public:
+  virtual ~MyQPaintEvent() {}
+// void QPaintEvent(const class QRegion &)
 MyQPaintEvent(const QRegion & paintRegion) : QPaintEvent(paintRegion) {}
+// void QPaintEvent(const class QRect &)
 MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 };
 
@@ -18,23 +22,21 @@ MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 // /usr/include/qt/QtGui/qevent.h:405
 // [-2] void QPaintEvent(const class QRegion &)
 extern "C"
-void* C_ZN11QPaintEventC1ERK7QRegion(const QRegion & paintRegion) {
-  (MyQPaintEvent*)(0);
-  return  new MyQPaintEvent(paintRegion);
+void* C_ZN11QPaintEventC2ERK7QRegion(const QRegion & paintRegion) {
+  return  new QPaintEvent(paintRegion);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:406
 // [-2] void QPaintEvent(const class QRect &)
 extern "C"
-void* C_ZN11QPaintEventC1ERK5QRect(const QRect & paintRect) {
-  (MyQPaintEvent*)(0);
-  return  new MyQPaintEvent(paintRect);
+void* C_ZN11QPaintEventC2ERK5QRect(const QRect & paintRect) {
+  return  new QPaintEvent(paintRect);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:407
 // [-2] void ~QPaintEvent()
 extern "C"
-void C_ZN11QPaintEventD1Ev(void *this_) {
+void C_ZN11QPaintEventD2Ev(void *this_) {
   delete (QPaintEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

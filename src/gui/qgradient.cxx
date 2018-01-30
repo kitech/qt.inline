@@ -4,12 +4,15 @@
 #include <QtGui>
 
 // QGradient is pure virtual: false
+// QGradient has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQGradient : public QGradient {
 public:
+  virtual ~MyQGradient() {}
+// void QGradient()
 MyQGradient() : QGradient() {}
 };
 
@@ -17,9 +20,8 @@ MyQGradient() : QGradient() {}
 // /usr/include/qt/QtGui/qbrush.h:206
 // [-2] void QGradient()
 extern "C"
-void* C_ZN9QGradientC1Ev() {
-  (MyQGradient*)(0);
-  return  new MyQGradient();
+void* C_ZN9QGradientC2Ev() {
+  return  new QGradient();
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:208

@@ -4,6 +4,7 @@
 #include <QtCore>
 
 // QTimer is pure virtual: false
+// QTimer has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,13 +18,16 @@ extern "C" void set_callback_ZN6QTimer10timerEventEP11QTimerEvent(void*cbfn)
 
 class MyQTimer : public QTimer {
 public:
+  virtual ~MyQTimer() {}
+// void QTimer(class QObject *)
 MyQTimer(QObject * parent) : QTimer(parent) {}
 // void timerEvent(class QTimerEvent *)
-// void timerEvent(class QTimerEvent *)
-virtual void timerEvent(QTimerEvent * arg0) {
-  if (callback_ZN6QTimer10timerEventEP11QTimerEvent != 0) {
-  // callback_ZN6QTimer10timerEventEP11QTimerEvent(arg0);
-}}
+  virtual void timerEvent(QTimerEvent * arg0) {
+    if (callback_ZN6QTimer10timerEventEP11QTimerEvent != 0) {
+      // callback_ZN6QTimer10timerEventEP11QTimerEvent(arg0);
+    }
+    QTimer::timerEvent(arg0);
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -37,15 +41,15 @@ void* C_ZNK6QTimer10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qtimer.h:66
 // [-2] void QTimer(class QObject *)
 extern "C"
-void* C_ZN6QTimerC1EP7QObject(QObject * parent) {
-  (MyQTimer*)(0);
+void* C_ZN6QTimerC2EP7QObject(QObject * parent) {
+  auto _nilp = (MyQTimer*)(0);
   return  new MyQTimer(parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:67
 // [-2] void ~QTimer()
 extern "C"
-void C_ZN6QTimerD1Ev(void *this_) {
+void C_ZN6QTimerD2Ev(void *this_) {
   delete (QTimer*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

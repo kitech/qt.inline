@@ -4,13 +4,17 @@
 #include <QtWidgets>
 
 // QTableWidgetSelectionRange is pure virtual: false
+// QTableWidgetSelectionRange has virtual projected: false
 //  header block end
 
 //  main block begin
 
 class MyQTableWidgetSelectionRange : public QTableWidgetSelectionRange {
 public:
+  virtual ~MyQTableWidgetSelectionRange() {}
+// void QTableWidgetSelectionRange()
 MyQTableWidgetSelectionRange() : QTableWidgetSelectionRange() {}
+// void QTableWidgetSelectionRange(int, int, int, int)
 MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableWidgetSelectionRange(top, left, bottom, right) {}
 };
 
@@ -18,23 +22,21 @@ MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableW
 // /usr/include/qt/QtWidgets/qtablewidget.h:55
 // [-2] void QTableWidgetSelectionRange()
 extern "C"
-void* C_ZN26QTableWidgetSelectionRangeC1Ev() {
-  (MyQTableWidgetSelectionRange*)(0);
-  return  new MyQTableWidgetSelectionRange();
+void* C_ZN26QTableWidgetSelectionRangeC2Ev() {
+  return  new QTableWidgetSelectionRange();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:56
 // [-2] void QTableWidgetSelectionRange(int, int, int, int)
 extern "C"
-void* C_ZN26QTableWidgetSelectionRangeC1Eiiii(int top, int left, int bottom, int right) {
-  (MyQTableWidgetSelectionRange*)(0);
-  return  new MyQTableWidgetSelectionRange(top, left, bottom, right);
+void* C_ZN26QTableWidgetSelectionRangeC2Eiiii(int top, int left, int bottom, int right) {
+  return  new QTableWidgetSelectionRange(top, left, bottom, right);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:58
 // [-2] void ~QTableWidgetSelectionRange()
 extern "C"
-void C_ZN26QTableWidgetSelectionRangeD1Ev(void *this_) {
+void C_ZN26QTableWidgetSelectionRangeD2Ev(void *this_) {
   delete (QTableWidgetSelectionRange*)(this_);
 }
 // Public inline Visibility=Default Availability=Available

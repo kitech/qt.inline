@@ -4,6 +4,7 @@
 #include <QtGui>
 
 // QPicture is pure virtual: false
+// QPicture has virtual projected: true
 //  header block end
 
 //  main block begin
@@ -17,28 +18,31 @@ extern "C" void set_callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMet
 
 class MyQPicture : public QPicture {
 public:
+  virtual ~MyQPicture() {}
+// void QPicture(int)
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
-// int metric(enum QPaintDevice::PaintDeviceMetric)
-virtual int metric(QPaintDevice::PaintDeviceMetric m) {
-  if (callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-  // callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(m);
-}}
+  virtual int metric(QPaintDevice::PaintDeviceMetric m) {
+    if (callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
+      // callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(m);
+    }
+    return QPicture::metric(m);
+  }
 };
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:59
 // [-2] void QPicture(int)
 extern "C"
-void* C_ZN8QPictureC1Ei(int formatVersion) {
-  (MyQPicture*)(0);
+void* C_ZN8QPictureC2Ei(int formatVersion) {
+  auto _nilp = (MyQPicture*)(0);
   return  new MyQPicture(formatVersion);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:61
 // [-2] void ~QPicture()
 extern "C"
-void C_ZN8QPictureD1Ev(void *this_) {
+void C_ZN8QPictureD2Ev(void *this_) {
   delete (QPicture*)(this_);
 }
 // Public Visibility=Default Availability=Available
