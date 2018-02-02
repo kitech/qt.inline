@@ -12,100 +12,100 @@
 // /usr/include/qt/QtWidgets/qabstractbutton.h:129
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton10paintEventEP11QPaintEvent = 0;
+void* callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN15QAbstractButton10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:130
 // [1] bool hitButton(const class QPoint &)
 extern "C"
-void* callback_ZNK15QAbstractButton9hitButtonERK6QPoint = 0;
+void* callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK15QAbstractButton9hitButtonERK6QPoint(void*cbfn)
-{ callback_ZNK15QAbstractButton9hitButtonERK6QPoint = cbfn; }
+{ callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:131
 // [-2] void checkStateSet()
 extern "C"
-void* callback_ZN15QAbstractButton13checkStateSetEv = 0;
+void* callback_ZN15QAbstractButton13checkStateSetEv_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton13checkStateSetEv(void*cbfn)
-{ callback_ZN15QAbstractButton13checkStateSetEv = cbfn; }
+{ callback_ZN15QAbstractButton13checkStateSetEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:132
 // [-2] void nextCheckState()
 extern "C"
-void* callback_ZN15QAbstractButton14nextCheckStateEv = 0;
+void* callback_ZN15QAbstractButton14nextCheckStateEv_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton14nextCheckStateEv(void*cbfn)
-{ callback_ZN15QAbstractButton14nextCheckStateEv = cbfn; }
+{ callback_ZN15QAbstractButton14nextCheckStateEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:134
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton5eventEP6QEvent = 0;
+void* callback_ZN15QAbstractButton5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QAbstractButton5eventEP6QEvent = cbfn; }
+{ callback_ZN15QAbstractButton5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:135
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:136
 // [-2] void keyReleaseEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent = 0;
+void* callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent = cbfn; }
+{ callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:137
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:138
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:139
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:140
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:141
 // [-2] void focusOutEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent = 0;
+void* callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent = cbfn; }
+{ callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:142
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton11changeEventEP6QEvent = 0;
+void* callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN15QAbstractButton11changeEventEP6QEvent = cbfn; }
+{ callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:143
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN15QAbstractButton10timerEventEP11QTimerEvent = 0;
+void* callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN15QAbstractButton10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQAbstractButton : public QAbstractButton {
 public:
@@ -114,99 +114,113 @@ public:
 MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
-    if (callback_ZN15QAbstractButton10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN15QAbstractButton10paintEventEP11QPaintEvent(e);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::paintEvent(e);
   }
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & pos) {
-    if (callback_ZNK15QAbstractButton9hitButtonERK6QPoint != 0) {
-      // callback_ZNK15QAbstractButton9hitButtonERK6QPoint(pos);
+    auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QPoint*)&pos);
     }
     return QAbstractButton::hitButton(pos);
   }
 // void checkStateSet()
   virtual void checkStateSet() {
-    if (callback_ZN15QAbstractButton13checkStateSetEv != 0) {
-      // callback_ZN15QAbstractButton13checkStateSetEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN15QAbstractButton13checkStateSetEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractButton::checkStateSet();
   }
 // void nextCheckState()
   virtual void nextCheckState() {
-    if (callback_ZN15QAbstractButton14nextCheckStateEv != 0) {
-      // callback_ZN15QAbstractButton14nextCheckStateEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN15QAbstractButton14nextCheckStateEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractButton::nextCheckState();
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN15QAbstractButton5eventEP6QEvent != 0) {
-      // callback_ZN15QAbstractButton5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QAbstractButton5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QAbstractButton::event(e);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
-    if (callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(e);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::keyPressEvent(e);
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
-    if (callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent != 0) {
-      // callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(e);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::keyReleaseEvent(e);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
-    if (callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::mousePressEvent(e);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
-    if (callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::mouseReleaseEvent(e);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
-    if (callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::mouseMoveEvent(e);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * e) {
-    if (callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent(e);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::focusInEvent(e);
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
-    if (callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent != 0) {
-      // callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(e);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::focusOutEvent(e);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
-    if (callback_ZN15QAbstractButton11changeEventEP6QEvent != 0) {
-      // callback_ZN15QAbstractButton11changeEventEP6QEvent(e);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::changeEvent(e);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
-    if (callback_ZN15QAbstractButton10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(e);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QAbstractButton::timerEvent(e);
   }
@@ -238,8 +252,8 @@ void C_ZN15QAbstractButtonD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractbutton.h:78
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN15QAbstractButton7setTextERK7QString(void *this_, const QString & text) {
-  ((QAbstractButton*)this_)->setText(text);
+void C_ZN15QAbstractButton7setTextERK7QString(void *this_, QString* text) {
+  ((QAbstractButton*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:79
@@ -253,8 +267,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qabstractbutton.h:81
 // [-2] void setIcon(const class QIcon &)
 extern "C"
-void C_ZN15QAbstractButton7setIconERK5QIcon(void *this_, const QIcon & icon) {
-  ((QAbstractButton*)this_)->setIcon(icon);
+void C_ZN15QAbstractButton7setIconERK5QIcon(void *this_, QIcon* icon) {
+  ((QAbstractButton*)this_)->setIcon(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:82
@@ -276,8 +290,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qabstractbutton.h:87
 // [-2] void setShortcut(const class QKeySequence &)
 extern "C"
-void C_ZN15QAbstractButton11setShortcutERK12QKeySequence(void *this_, const QKeySequence & key) {
-  ((QAbstractButton*)this_)->setShortcut(key);
+void C_ZN15QAbstractButton11setShortcutERK12QKeySequence(void *this_, QKeySequence* key) {
+  ((QAbstractButton*)this_)->setShortcut(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:88
@@ -389,8 +403,8 @@ void* C_ZNK15QAbstractButton5groupEv(void *this_) {
 // /usr/include/qt/QtWidgets/qabstractbutton.h:116
 // [-2] void setIconSize(const class QSize &)
 extern "C"
-void C_ZN15QAbstractButton11setIconSizeERK5QSize(void *this_, const QSize & size) {
-  ((QAbstractButton*)this_)->setIconSize(size);
+void C_ZN15QAbstractButton11setIconSizeERK5QSize(void *this_, QSize* size) {
+  ((QAbstractButton*)this_)->setIconSize(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractbutton.h:117

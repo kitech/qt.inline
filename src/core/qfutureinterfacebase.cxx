@@ -12,16 +12,16 @@
 // /usr/include/qt/QtCore/qfutureinterface.h:131
 // [1] bool refT()
 extern "C"
-void* callback_ZNK20QFutureInterfaceBase4refTEv = 0;
+void* callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = 0;
 extern "C" void set_callback_ZNK20QFutureInterfaceBase4refTEv(void*cbfn)
-{ callback_ZNK20QFutureInterfaceBase4refTEv = cbfn; }
+{ callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:132
 // [1] bool derefT()
 extern "C"
-void* callback_ZNK20QFutureInterfaceBase6derefTEv = 0;
+void* callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = 0;
 extern "C" void set_callback_ZNK20QFutureInterfaceBase6derefTEv(void*cbfn)
-{ callback_ZNK20QFutureInterfaceBase6derefTEv = cbfn; }
+{ callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = cbfn; }
 
 class MyQFutureInterfaceBase : public QFutureInterfaceBase {
 public:
@@ -30,15 +30,17 @@ public:
 MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterfaceBase(initialState) {}
 // bool refT()
   virtual bool refT() {
-    if (callback_ZNK20QFutureInterfaceBase4refTEv != 0) {
-      // callback_ZNK20QFutureInterfaceBase4refTEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase4refTEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QFutureInterfaceBase::refT();
   }
 // bool derefT()
   virtual bool derefT() {
-    if (callback_ZNK20QFutureInterfaceBase6derefTEv != 0) {
-      // callback_ZNK20QFutureInterfaceBase6derefTEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QFutureInterfaceBase::derefT();
   }
@@ -154,8 +156,8 @@ int C_ZNK20QFutureInterfaceBase13progressValueEv(void *this_) {
 // /usr/include/qt/QtCore/qfutureinterface.h:95
 // [-2] void setProgressValueAndText(int, const class QString &)
 extern "C"
-void C_ZN20QFutureInterfaceBase23setProgressValueAndTextEiRK7QString(void *this_, int progressValue, const QString & progressText) {
-  ((QFutureInterfaceBase*)this_)->setProgressValueAndText(progressValue, progressText);
+void C_ZN20QFutureInterfaceBase23setProgressValueAndTextEiRK7QString(void *this_, int progressValue, QString* progressText) {
+  ((QFutureInterfaceBase*)this_)->setProgressValueAndText(progressValue, *progressText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:96

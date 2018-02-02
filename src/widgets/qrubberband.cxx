@@ -12,51 +12,51 @@
 // /usr/include/qt/QtWidgets/qrubberband.h:76
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QRubberBand5eventEP6QEvent = 0;
+void* callback_ZN11QRubberBand5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QRubberBand5eventEP6QEvent = cbfn; }
+{ callback_ZN11QRubberBand5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:77
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN11QRubberBand10paintEventEP11QPaintEvent = 0;
+void* callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QRubberBand10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:78
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN11QRubberBand11changeEventEP6QEvent = 0;
+void* callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN11QRubberBand11changeEventEP6QEvent = cbfn; }
+{ callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:79
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN11QRubberBand9showEventEP10QShowEvent = 0;
+void* callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN11QRubberBand9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:80
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN11QRubberBand11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN11QRubberBand11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:81
 // [-2] void moveEvent(class QMoveEvent *)
 extern "C"
-void* callback_ZN11QRubberBand9moveEventEP10QMoveEvent = 0;
+void* callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QRubberBand9moveEventEP10QMoveEvent(void*cbfn)
-{ callback_ZN11QRubberBand9moveEventEP10QMoveEvent = cbfn; }
+{ callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:82
 // [-2] void initStyleOption(class QStyleOptionRubberBand *)
 extern "C"
-void* callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand = 0;
+void* callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr = 0;
 extern "C" void set_callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(void*cbfn)
-{ callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand = cbfn; }
+{ callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr = cbfn; }
 
 class MyQRubberBand : public QRubberBand {
 public:
@@ -65,50 +65,57 @@ public:
 MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QRubberBand5eventEP6QEvent != 0) {
-      // callback_ZN11QRubberBand5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QRubberBand5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QRubberBand::event(e);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN11QRubberBand10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN11QRubberBand10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRubberBand::paintEvent(arg0);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    if (callback_ZN11QRubberBand11changeEventEP6QEvent != 0) {
-      // callback_ZN11QRubberBand11changeEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRubberBand::changeEvent(arg0);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    if (callback_ZN11QRubberBand9showEventEP10QShowEvent != 0) {
-      // callback_ZN11QRubberBand9showEventEP10QShowEvent(arg0);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRubberBand::showEvent(arg0);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    if (callback_ZN11QRubberBand11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN11QRubberBand11resizeEventEP12QResizeEvent(arg0);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRubberBand::resizeEvent(arg0);
   }
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * arg0) {
-    if (callback_ZN11QRubberBand9moveEventEP10QMoveEvent != 0) {
-      // callback_ZN11QRubberBand9moveEventEP10QMoveEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRubberBand::moveEvent(arg0);
   }
 // void initStyleOption(class QStyleOptionRubberBand *)
   virtual void initStyleOption(QStyleOptionRubberBand * option) {
-    if (callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand != 0) {
-      // callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionRubberBand *))(callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QRubberBand::initStyleOption(option);
   }
@@ -147,8 +154,8 @@ QRubberBand::Shape C_ZNK11QRubberBand5shapeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qrubberband.h:64
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN11QRubberBand11setGeometryERK5QRect(void *this_, const QRect & r) {
-  ((QRubberBand*)this_)->setGeometry(r);
+void C_ZN11QRubberBand11setGeometryERK5QRect(void *this_, QRect* r) {
+  ((QRubberBand*)this_)->setGeometry(*r);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:66
@@ -168,8 +175,8 @@ void C_ZN11QRubberBand4moveEii(void *this_, int x, int y) {
 // /usr/include/qt/QtWidgets/qrubberband.h:68
 // [-2] void move(const class QPoint &)
 extern "C"
-void C_ZN11QRubberBand4moveERK6QPoint(void *this_, const QPoint & p) {
-  ((QRubberBand*)this_)->move(p);
+void C_ZN11QRubberBand4moveERK6QPoint(void *this_, QPoint* p) {
+  ((QRubberBand*)this_)->move(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:70
@@ -182,7 +189,7 @@ void C_ZN11QRubberBand6resizeEii(void *this_, int w, int h) {
 // /usr/include/qt/QtWidgets/qrubberband.h:72
 // [-2] void resize(const class QSize &)
 extern "C"
-void C_ZN11QRubberBand6resizeERK5QSize(void *this_, const QSize & s) {
-  ((QRubberBand*)this_)->resize(s);
+void C_ZN11QRubberBand6resizeERK5QSize(void *this_, QSize* s) {
+  ((QRubberBand*)this_)->resize(*s);
 }
 //  main block end

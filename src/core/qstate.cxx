@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qstate.h:119
 // [-2] void onEntry(class QEvent *)
 extern "C"
-void* callback_ZN6QState7onEntryEP6QEvent = 0;
+void* callback_ZN6QState7onEntryEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN6QState7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN6QState7onEntryEP6QEvent = cbfn; }
+{ callback_ZN6QState7onEntryEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:120
 // [-2] void onExit(class QEvent *)
 extern "C"
-void* callback_ZN6QState6onExitEP6QEvent = 0;
+void* callback_ZN6QState6onExitEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN6QState6onExitEP6QEvent(void*cbfn)
-{ callback_ZN6QState6onExitEP6QEvent = cbfn; }
+{ callback_ZN6QState6onExitEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstate.h:122
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN6QState5eventEP6QEvent = 0;
+void* callback_ZN6QState5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN6QState5eventEP6QEvent(void*cbfn)
-{ callback_ZN6QState5eventEP6QEvent = cbfn; }
+{ callback_ZN6QState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQState : public QState {
 public:
@@ -39,22 +39,25 @@ MyQState(QState * parent) : QState(parent) {}
 MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    if (callback_ZN6QState7onEntryEP6QEvent != 0) {
-      // callback_ZN6QState7onEntryEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QState7onEntryEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QState::onEntry(event);
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    if (callback_ZN6QState6onExitEP6QEvent != 0) {
-      // callback_ZN6QState6onExitEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QState6onExitEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QState::onExit(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN6QState5eventEP6QEvent != 0) {
-      // callback_ZN6QState5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN6QState5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QState::event(e);
   }
@@ -164,7 +167,7 @@ void C_ZN6QState12setChildModeENS_9ChildModeE(void *this_, QState::ChildMode mod
 // /usr/include/qt/QtCore/qstate.h:107
 // [-2] void assignProperty(class QObject *, const char *, const class QVariant &)
 extern "C"
-void C_ZN6QState14assignPropertyEP7QObjectPKcRK8QVariant(void *this_, QObject * object, const char * name, const QVariant & value) {
-  ((QState*)this_)->assignProperty(object, name, value);
+void C_ZN6QState14assignPropertyEP7QObjectPKcRK8QVariant(void *this_, QObject * object, const char * name, QVariant* value) {
+  ((QState*)this_)->assignProperty(object, name, *value);
 }
 //  main block end

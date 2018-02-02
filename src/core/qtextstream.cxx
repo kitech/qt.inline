@@ -92,8 +92,8 @@ bool C_ZNK11QTextStream21generateByteOrderMarkEv(void *this_) {
 // /usr/include/qt/QtCore/qtextstream.h:111
 // [-2] void setLocale(const class QLocale &)
 extern "C"
-void C_ZN11QTextStream9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
-  ((QTextStream*)this_)->setLocale(locale);
+void C_ZN11QTextStream9setLocaleERK7QLocale(void *this_, QLocale* locale) {
+  ((QTextStream*)this_)->setLocale(*locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:112

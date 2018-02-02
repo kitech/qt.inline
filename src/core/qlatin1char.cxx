@@ -37,4 +37,9 @@ extern "C"
 ushort C_ZNK11QLatin1Char7unicodeEv(void *this_) {
   return (ushort)((QLatin1Char*)this_)->unicode();
 }
+
+extern "C"
+void C_ZN11QLatin1CharD2Ev(void *this_) {
+  delete (QLatin1Char*)(this_);
+}
 //  main block end

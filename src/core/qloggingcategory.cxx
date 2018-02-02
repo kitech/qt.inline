@@ -99,7 +99,7 @@ void* C_ZN16QLoggingCategory15defaultCategoryEv() {
 // /usr/include/qt/QtCore/qloggingcategory.h:82
 // [-2] void setFilterRules(const class QString &)
 extern "C"
-void C_ZN16QLoggingCategory14setFilterRulesERK7QString(const QString & rules) {
-  QLoggingCategory::setFilterRules(rules);
+void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
+  QLoggingCategory::setFilterRules(*rules);
 }
 //  main block end

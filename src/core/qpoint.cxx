@@ -94,7 +94,12 @@ return &rv;
 // /usr/include/qt/QtCore/qpoint.h:79
 // [4] int dotProduct(const class QPoint &, const class QPoint &)
 extern "C"
-int C_ZN6QPoint10dotProductERKS_S1_(const QPoint & p1, const QPoint & p2) {
-  return (int)QPoint::dotProduct(p1, p2);
+int C_ZN6QPoint10dotProductERKS_S1_(QPoint* p1, QPoint* p2) {
+  return (int)QPoint::dotProduct(*p1, *p2);
+}
+
+extern "C"
+void C_ZN6QPointD2Ev(void *this_) {
+  delete (QPoint*)(this_);
 }
 //  main block end

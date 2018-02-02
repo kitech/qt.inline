@@ -49,8 +49,8 @@ return new QVector3D(rv);
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:92
 // [-2] void setOrigin(const class QVector3D &)
 extern "C"
-void C_ZN14QGraphicsScale9setOriginERK9QVector3D(void *this_, const QVector3D & point) {
-  ((QGraphicsScale*)this_)->setOrigin(point);
+void C_ZN14QGraphicsScale9setOriginERK9QVector3D(void *this_, QVector3D* point) {
+  ((QGraphicsScale*)this_)->setOrigin(*point);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:94

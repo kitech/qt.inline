@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:495
 // [-2] void QStyleOptionRubberBand(int)
 extern "C"
-void* callback_ZN22QStyleOptionRubberBandC1Ei = 0;
+void* callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN22QStyleOptionRubberBandC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionRubberBandC1Ei = cbfn; }
+{ callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionRubberBand : public QStyleOptionRubberBand {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionRubberBand(int version) : QStyleOptionRubberBand(version) {}
 extern "C"
 void* C_ZN22QStyleOptionRubberBandC2Ev() {
   return  new QStyleOptionRubberBand();
+}
+
+extern "C"
+void C_ZN22QStyleOptionRubberBandD2Ev(void *this_) {
+  delete (QStyleOptionRubberBand*)(this_);
 }
 //  main block end

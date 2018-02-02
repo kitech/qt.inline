@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:319
 // [-2] void QStyleOptionToolBar(int)
 extern "C"
-void* callback_ZN19QStyleOptionToolBarC1Ei = 0;
+void* callback_ZN19QStyleOptionToolBarC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN19QStyleOptionToolBarC1Ei(void*cbfn)
-{ callback_ZN19QStyleOptionToolBarC1Ei = cbfn; }
+{ callback_ZN19QStyleOptionToolBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionToolBar : public QStyleOptionToolBar {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionToolBar(int version) : QStyleOptionToolBar(version) {}
 extern "C"
 void* C_ZN19QStyleOptionToolBarC2Ev() {
   return  new QStyleOptionToolBar();
+}
+
+extern "C"
+void C_ZN19QStyleOptionToolBarD2Ev(void *this_) {
+  delete (QStyleOptionToolBar*)(this_);
 }
 //  main block end

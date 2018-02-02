@@ -31,15 +31,15 @@ void* C_ZN8QRawFontC2Ev() {
 // /usr/include/qt/QtGui/qrawfont.h:75
 // [-2] void QRawFont(const class QString &, qreal, class QFont::HintingPreference)
 extern "C"
-void* C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  return  new QRawFont(fileName, pixelSize, hintingPreference);
+void* C_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE(QString* fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  return  new QRawFont(*fileName, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:78
 // [-2] void QRawFont(const class QByteArray &, qreal, class QFont::HintingPreference)
 extern "C"
-void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  return  new QRawFont(fontData, pixelSize, hintingPreference);
+void* C_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE(QByteArray* fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  return  new QRawFont(*fontData, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:86
@@ -52,8 +52,8 @@ void C_ZN8QRawFontD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qrawfont.h:88
 // [-2] void swap(class QRawFont &)
 extern "C"
-void C_ZN8QRawFont4swapERS_(void *this_, QRawFont & other) {
-  ((QRawFont*)this_)->swap(other);
+void C_ZN8QRawFont4swapERS_(void *this_, QRawFont* other) {
+  ((QRawFont*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:90
@@ -117,8 +117,8 @@ bool C_ZNK8QRawFont23advancesForGlyphIndexesEPKjP7QPointFi6QFlagsINS_10LayoutFla
 // /usr/include/qt/QtGui/qrawfont.h:109
 // [32] QImage alphaMapForGlyph(quint32, enum QRawFont::AntialiasingType, const class QTransform &)
 extern "C"
-void* C_ZNK8QRawFont16alphaMapForGlyphEjNS_16AntialiasingTypeERK10QTransform(void *this_, quint32 glyphIndex, QRawFont::AntialiasingType antialiasingType, const QTransform & transform) {
-  auto rv = ((QRawFont*)this_)->alphaMapForGlyph(glyphIndex, antialiasingType, transform);
+void* C_ZNK8QRawFont16alphaMapForGlyphEjNS_16AntialiasingTypeERK10QTransform(void *this_, quint32 glyphIndex, QRawFont::AntialiasingType antialiasingType, QTransform* transform) {
+  auto rv = ((QRawFont*)this_)->alphaMapForGlyph(glyphIndex, antialiasingType, *transform);
 return new QImage(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -232,15 +232,15 @@ qreal C_ZNK8QRawFont10unitsPerEmEv(void *this_) {
 // /usr/include/qt/QtGui/qrawfont.h:132
 // [-2] void loadFromFile(const class QString &, qreal, class QFont::HintingPreference)
 extern "C"
-void C_ZN8QRawFont12loadFromFileERK7QStringdN5QFont17HintingPreferenceE(void *this_, const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  ((QRawFont*)this_)->loadFromFile(fileName, pixelSize, hintingPreference);
+void C_ZN8QRawFont12loadFromFileERK7QStringdN5QFont17HintingPreferenceE(void *this_, QString* fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  ((QRawFont*)this_)->loadFromFile(*fileName, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:136
 // [-2] void loadFromData(const class QByteArray &, qreal, class QFont::HintingPreference)
 extern "C"
-void C_ZN8QRawFont12loadFromDataERK10QByteArraydN5QFont17HintingPreferenceE(void *this_, const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
-  ((QRawFont*)this_)->loadFromData(fontData, pixelSize, hintingPreference);
+void C_ZN8QRawFont12loadFromDataERK10QByteArraydN5QFont17HintingPreferenceE(void *this_, QByteArray* fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) {
+  ((QRawFont*)this_)->loadFromData(*fontData, pixelSize, hintingPreference);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:140
@@ -268,8 +268,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtGui/qrawfont.h:146
 // [8] QRawFont fromFont(const class QFont &, class QFontDatabase::WritingSystem)
 extern "C"
-void* C_ZN8QRawFont8fromFontERK5QFontN13QFontDatabase13WritingSystemE(const QFont & font, QFontDatabase::WritingSystem writingSystem) {
-  auto rv = QRawFont::fromFont(font, writingSystem);
+void* C_ZN8QRawFont8fromFontERK5QFontN13QFontDatabase13WritingSystemE(QFont* font, QFontDatabase::WritingSystem writingSystem) {
+  auto rv = QRawFont::fromFont(*font, writingSystem);
 return new QRawFont(rv);
 }
 //  main block end

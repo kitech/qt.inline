@@ -14,4 +14,9 @@ public:
   virtual ~MyQHashCombine() {}
 };
 
+
+extern "C"
+void C_ZN12QHashCombineD2Ev(void *this_) {
+  delete (QtPrivate::QHashCombine*)(this_);
+}
 //  main block end

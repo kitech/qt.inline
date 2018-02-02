@@ -22,15 +22,15 @@ MyQDirIterator(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) :
 // /usr/include/qt/QtCore/qdiriterator.h:58
 // [-2] void QDirIterator(const class QDir &, QDirIterator::IteratorFlags)
 extern "C"
-void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) {
-  return  new QDirIterator(dir, flags);
+void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(QDir* dir, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(*dir, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:59
 // [-2] void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
 extern "C"
-void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) {
-  return  new QDirIterator(path, flags);
+void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(QString* path, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(*path, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:69

@@ -152,8 +152,8 @@ void* C_ZN14QStackedLayout6takeAtEi(void *this_, int arg0) {
 // /usr/include/qt/QtWidgets/qstackedlayout.h:89
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN14QStackedLayout11setGeometryERK5QRect(void *this_, const QRect & rect) {
-  ((QStackedLayout*)this_)->setGeometry(rect);
+void C_ZN14QStackedLayout11setGeometryERK5QRect(void *this_, QRect* rect) {
+  ((QStackedLayout*)this_)->setGeometry(*rect);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstackedlayout.h:90

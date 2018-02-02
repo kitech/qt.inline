@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qabstractstate.h:71
 // [-2] void QAbstractState(class QState *)
 extern "C"
-void* callback_ZN14QAbstractStateC1EP6QState = 0;
+void* callback_ZN14QAbstractStateC1EP6QState_fnptr = 0;
 extern "C" void set_callback_ZN14QAbstractStateC1EP6QState(void*cbfn)
-{ callback_ZN14QAbstractStateC1EP6QState = cbfn; }
+{ callback_ZN14QAbstractStateC1EP6QState_fnptr = cbfn; }
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:73
 // [-2] void onEntry(class QEvent *)
 extern "C"
-void* callback_ZN14QAbstractState7onEntryEP6QEvent = 0;
+void* callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN14QAbstractState7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN14QAbstractState7onEntryEP6QEvent = cbfn; }
+{ callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr = cbfn; }
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:74
 // [-2] void onExit(class QEvent *)
 extern "C"
-void* callback_ZN14QAbstractState6onExitEP6QEvent = 0;
+void* callback_ZN14QAbstractState6onExitEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN14QAbstractState6onExitEP6QEvent(void*cbfn)
-{ callback_ZN14QAbstractState6onExitEP6QEvent = cbfn; }
+{ callback_ZN14QAbstractState6onExitEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:76
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN14QAbstractState5eventEP6QEvent = 0;
+void* callback_ZN14QAbstractState5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN14QAbstractState5eventEP6QEvent(void*cbfn)
-{ callback_ZN14QAbstractState5eventEP6QEvent = cbfn; }
+{ callback_ZN14QAbstractState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAbstractState : public QAbstractState {
 public:
@@ -44,22 +44,25 @@ public:
 MyQAbstractState(QState * parent) : QAbstractState(parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    if (callback_ZN14QAbstractState7onEntryEP6QEvent != 0) {
-      // callback_ZN14QAbstractState7onEntryEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractState::onEntry(event);
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    if (callback_ZN14QAbstractState6onExitEP6QEvent != 0) {
-      // callback_ZN14QAbstractState6onExitEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN14QAbstractState6onExitEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractState::onExit(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN14QAbstractState5eventEP6QEvent != 0) {
-      // callback_ZN14QAbstractState5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN14QAbstractState5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QAbstractState::event(e);
   }

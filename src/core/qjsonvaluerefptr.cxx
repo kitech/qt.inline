@@ -32,4 +32,9 @@ extern "C"
 void* C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * object, int idx) {
   return  new QJsonValueRefPtr(object, idx);
 }
+
+extern "C"
+void C_ZN16QJsonValueRefPtrD2Ev(void *this_) {
+  delete (QJsonValueRefPtr*)(this_);
+}
 //  main block end

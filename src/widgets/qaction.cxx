@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qaction.h:183
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN7QAction5eventEP6QEvent = 0;
+void* callback_ZN7QAction5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QAction5eventEP6QEvent(void*cbfn)
-{ callback_ZN7QAction5eventEP6QEvent = cbfn; }
+{ callback_ZN7QAction5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAction : public QAction {
 public:
@@ -27,8 +27,9 @@ MyQAction(const QString & text, QObject * parent) : QAction(text, parent) {}
 MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(icon, text, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN7QAction5eventEP6QEvent != 0) {
-      // callback_ZN7QAction5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QAction5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QAction::event(arg0);
   }
@@ -53,17 +54,17 @@ void* C_ZN7QActionC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtWidgets/qaction.h:96
 // [-2] void QAction(const class QString &, class QObject *)
 extern "C"
-void* C_ZN7QActionC2ERK7QStringP7QObject(const QString & text, QObject * parent) {
+void* C_ZN7QActionC2ERK7QStringP7QObject(QString* text, QObject * parent) {
   auto _nilp = (MyQAction*)(0);
-  return  new MyQAction(text, parent);
+  return  new MyQAction(*text, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:97
 // [-2] void QAction(const class QIcon &, const class QString &, class QObject *)
 extern "C"
-void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(const QIcon & icon, const QString & text, QObject * parent) {
+void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(QIcon* icon, QString* text, QObject * parent) {
   auto _nilp = (MyQAction*)(0);
-  return  new MyQAction(icon, text, parent);
+  return  new MyQAction(*icon, *text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:99
@@ -90,8 +91,8 @@ void* C_ZNK7QAction11actionGroupEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:103
 // [-2] void setIcon(const class QIcon &)
 extern "C"
-void C_ZN7QAction7setIconERK5QIcon(void *this_, const QIcon & icon) {
-  ((QAction*)this_)->setIcon(icon);
+void C_ZN7QAction7setIconERK5QIcon(void *this_, QIcon* icon) {
+  ((QAction*)this_)->setIcon(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:104
@@ -105,8 +106,8 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qaction.h:106
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN7QAction7setTextERK7QString(void *this_, const QString & text) {
-  ((QAction*)this_)->setText(text);
+void C_ZN7QAction7setTextERK7QString(void *this_, QString* text) {
+  ((QAction*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:107
@@ -120,8 +121,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qaction.h:109
 // [-2] void setIconText(const class QString &)
 extern "C"
-void C_ZN7QAction11setIconTextERK7QString(void *this_, const QString & text) {
-  ((QAction*)this_)->setIconText(text);
+void C_ZN7QAction11setIconTextERK7QString(void *this_, QString* text) {
+  ((QAction*)this_)->setIconText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:110
@@ -135,8 +136,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qaction.h:112
 // [-2] void setToolTip(const class QString &)
 extern "C"
-void C_ZN7QAction10setToolTipERK7QString(void *this_, const QString & tip) {
-  ((QAction*)this_)->setToolTip(tip);
+void C_ZN7QAction10setToolTipERK7QString(void *this_, QString* tip) {
+  ((QAction*)this_)->setToolTip(*tip);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:113
@@ -150,8 +151,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qaction.h:115
 // [-2] void setStatusTip(const class QString &)
 extern "C"
-void C_ZN7QAction12setStatusTipERK7QString(void *this_, const QString & statusTip) {
-  ((QAction*)this_)->setStatusTip(statusTip);
+void C_ZN7QAction12setStatusTipERK7QString(void *this_, QString* statusTip) {
+  ((QAction*)this_)->setStatusTip(*statusTip);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:116
@@ -165,8 +166,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qaction.h:118
 // [-2] void setWhatsThis(const class QString &)
 extern "C"
-void C_ZN7QAction12setWhatsThisERK7QString(void *this_, const QString & what) {
-  ((QAction*)this_)->setWhatsThis(what);
+void C_ZN7QAction12setWhatsThisERK7QString(void *this_, QString* what) {
+  ((QAction*)this_)->setWhatsThis(*what);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:119
@@ -222,8 +223,8 @@ bool C_ZNK7QAction11isSeparatorEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:133
 // [-2] void setShortcut(const class QKeySequence &)
 extern "C"
-void C_ZN7QAction11setShortcutERK12QKeySequence(void *this_, const QKeySequence & shortcut) {
-  ((QAction*)this_)->setShortcut(shortcut);
+void C_ZN7QAction11setShortcutERK12QKeySequence(void *this_, QKeySequence* shortcut) {
+  ((QAction*)this_)->setShortcut(*shortcut);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:134
@@ -272,8 +273,8 @@ bool C_ZNK7QAction10autoRepeatEv(void *this_) {
 // /usr/include/qt/QtWidgets/qaction.h:147
 // [-2] void setFont(const class QFont &)
 extern "C"
-void C_ZN7QAction7setFontERK5QFont(void *this_, const QFont & font) {
-  ((QAction*)this_)->setFont(font);
+void C_ZN7QAction7setFontERK5QFont(void *this_, QFont* font) {
+  ((QAction*)this_)->setFont(*font);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:148
@@ -309,8 +310,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtWidgets/qaction.h:154
 // [-2] void setData(const class QVariant &)
 extern "C"
-void C_ZN7QAction7setDataERK8QVariant(void *this_, const QVariant & var) {
-  ((QAction*)this_)->setData(var);
+void C_ZN7QAction7setDataERK8QVariant(void *this_, QVariant* var) {
+  ((QAction*)this_)->setData(*var);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:156

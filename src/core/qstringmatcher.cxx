@@ -31,8 +31,8 @@ void* C_ZN14QStringMatcherC2Ev() {
 // /usr/include/qt/QtCore/qstringmatcher.h:54
 // [-2] void QStringMatcher(const class QString &, Qt::CaseSensitivity)
 extern "C"
-void* C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(const QString & pattern, Qt::CaseSensitivity cs) {
-  return  new QStringMatcher(pattern, cs);
+void* C_ZN14QStringMatcherC2ERK7QStringN2Qt15CaseSensitivityE(QString* pattern, Qt::CaseSensitivity cs) {
+  return  new QStringMatcher(*pattern, cs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:56
@@ -52,8 +52,8 @@ void C_ZN14QStringMatcherD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qstringmatcher.h:63
 // [-2] void setPattern(const class QString &)
 extern "C"
-void C_ZN14QStringMatcher10setPatternERK7QString(void *this_, const QString & pattern) {
-  ((QStringMatcher*)this_)->setPattern(pattern);
+void C_ZN14QStringMatcher10setPatternERK7QString(void *this_, QString* pattern) {
+  ((QStringMatcher*)this_)->setPattern(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:64
@@ -66,8 +66,8 @@ void C_ZN14QStringMatcher18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_
 // /usr/include/qt/QtCore/qstringmatcher.h:66
 // [4] int indexIn(const class QString &, int)
 extern "C"
-int C_ZNK14QStringMatcher7indexInERK7QStringi(void *this_, const QString & str, int from) {
-  return (int)((QStringMatcher*)this_)->indexIn(str, from);
+int C_ZNK14QStringMatcher7indexInERK7QStringi(void *this_, QString* str, int from) {
+  return (int)((QStringMatcher*)this_)->indexIn(*str, from);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringmatcher.h:67

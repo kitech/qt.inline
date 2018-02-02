@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qplaintextedit.h:322
 // [-2] void documentChanged(int, int, int)
 extern "C"
-void* callback_ZN24QPlainTextDocumentLayout15documentChangedEiii = 0;
+void* callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = 0;
 extern "C" void set_callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(void*cbfn)
-{ callback_ZN24QPlainTextDocumentLayout15documentChangedEiii = cbfn; }
+{ callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
 
 class MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
@@ -23,8 +23,9 @@ public:
 MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(document) {}
 // void documentChanged(int, int, int)
   virtual void documentChanged(int from, int arg1, int charsAdded) {
-    if (callback_ZN24QPlainTextDocumentLayout15documentChangedEiii != 0) {
-      // callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(from, arg1, charsAdded);
+    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , from, arg1, charsAdded);
     }
     QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
   }
@@ -56,8 +57,8 @@ void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qplaintextedit.h:306
 // [4] int hitTest(const class QPointF &, Qt::HitTestAccuracy)
 extern "C"
-int C_ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *this_, const QPointF & arg0, Qt::HitTestAccuracy arg1) {
-  return (int)((QPlainTextDocumentLayout*)this_)->hitTest(arg0, arg1);
+int C_ZNK24QPlainTextDocumentLayout7hitTestERK7QPointFN2Qt15HitTestAccuracyE(void *this_, QPointF* arg0, Qt::HitTestAccuracy arg1) {
+  return (int)((QPlainTextDocumentLayout*)this_)->hitTest(*arg0, arg1);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:308
@@ -86,16 +87,16 @@ return new QRectF(rv);
 // /usr/include/qt/QtWidgets/qplaintextedit.h:312
 // [32] QRectF blockBoundingRect(const class QTextBlock &)
 extern "C"
-void* C_ZNK24QPlainTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *this_, const QTextBlock & block) {
-  auto rv = ((QPlainTextDocumentLayout*)this_)->blockBoundingRect(block);
+void* C_ZNK24QPlainTextDocumentLayout17blockBoundingRectERK10QTextBlock(void *this_, QTextBlock* block) {
+  auto rv = ((QPlainTextDocumentLayout*)this_)->blockBoundingRect(*block);
 return new QRectF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:314
 // [-2] void ensureBlockLayout(const class QTextBlock &)
 extern "C"
-void C_ZNK24QPlainTextDocumentLayout17ensureBlockLayoutERK10QTextBlock(void *this_, const QTextBlock & block) {
-  ((QPlainTextDocumentLayout*)this_)->ensureBlockLayout(block);
+void C_ZNK24QPlainTextDocumentLayout17ensureBlockLayoutERK10QTextBlock(void *this_, QTextBlock* block) {
+  ((QPlainTextDocumentLayout*)this_)->ensureBlockLayout(*block);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:316

@@ -191,8 +191,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtCore/qmetaobject.h:278
 // [1] bool write(class QObject *, const class QVariant &)
 extern "C"
-bool C_ZNK13QMetaProperty5writeEP7QObjectRK8QVariant(void *this_, QObject * obj, const QVariant & value) {
-  return (bool)((QMetaProperty*)this_)->write(obj, value);
+bool C_ZNK13QMetaProperty5writeEP7QObjectRK8QVariant(void *this_, QObject * obj, QVariant* value) {
+  return (bool)((QMetaProperty*)this_)->write(obj, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:279
@@ -213,8 +213,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtCore/qmetaobject.h:282
 // [1] bool writeOnGadget(void *, const class QVariant &)
 extern "C"
-bool C_ZNK13QMetaProperty13writeOnGadgetEPvRK8QVariant(void *this_, void * gadget, const QVariant & value) {
-  return (bool)((QMetaProperty*)this_)->writeOnGadget(gadget, value);
+bool C_ZNK13QMetaProperty13writeOnGadgetEPvRK8QVariant(void *this_, void * gadget, QVariant* value) {
+  return (bool)((QMetaProperty*)this_)->writeOnGadget(gadget, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:283
@@ -243,5 +243,10 @@ bool C_ZNK13QMetaProperty7isValidEv(void *this_) {
 extern "C"
 void* C_ZNK13QMetaProperty19enclosingMetaObjectEv(void *this_) {
   return (void*)((QMetaProperty*)this_)->enclosingMetaObject();
+}
+
+extern "C"
+void C_ZN13QMetaPropertyD2Ev(void *this_) {
+  delete (QMetaProperty*)(this_);
 }
 //  main block end

@@ -102,8 +102,8 @@ void* C_ZNK13QGestureEvent6widgetEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:305
 // [16] QPointF mapToGraphicsScene(const class QPointF &)
 extern "C"
-void* C_ZNK13QGestureEvent18mapToGraphicsSceneERK7QPointF(void *this_, const QPointF & gesturePoint) {
-  auto rv = ((QGestureEvent*)this_)->mapToGraphicsScene(gesturePoint);
+void* C_ZNK13QGestureEvent18mapToGraphicsSceneERK7QPointF(void *this_, QPointF* gesturePoint) {
+  auto rv = ((QGestureEvent*)this_)->mapToGraphicsScene(*gesturePoint);
 return new QPointF(rv);
 }
 //  main block end

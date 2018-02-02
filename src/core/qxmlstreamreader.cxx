@@ -42,15 +42,15 @@ void* C_ZN16QXmlStreamReaderC2EP9QIODevice(QIODevice * device) {
 // /usr/include/qt/QtCore/qxmlstream.h:362
 // [-2] void QXmlStreamReader(const class QByteArray &)
 extern "C"
-void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(const QByteArray & data) {
-  return  new QXmlStreamReader(data);
+void* C_ZN16QXmlStreamReaderC2ERK10QByteArray(QByteArray* data) {
+  return  new QXmlStreamReader(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:363
 // [-2] void QXmlStreamReader(const class QString &)
 extern "C"
-void* C_ZN16QXmlStreamReaderC2ERK7QString(const QString & data) {
-  return  new QXmlStreamReader(data);
+void* C_ZN16QXmlStreamReaderC2ERK7QString(QString* data) {
+  return  new QXmlStreamReader(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:364
@@ -84,15 +84,15 @@ void* C_ZNK16QXmlStreamReader6deviceEv(void *this_) {
 // /usr/include/qt/QtCore/qxmlstream.h:369
 // [-2] void addData(const class QByteArray &)
 extern "C"
-void C_ZN16QXmlStreamReader7addDataERK10QByteArray(void *this_, const QByteArray & data) {
-  ((QXmlStreamReader*)this_)->addData(data);
+void C_ZN16QXmlStreamReader7addDataERK10QByteArray(void *this_, QByteArray* data) {
+  ((QXmlStreamReader*)this_)->addData(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:370
 // [-2] void addData(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamReader7addDataERK7QString(void *this_, const QString & data) {
-  ((QXmlStreamReader*)this_)->addData(data);
+void C_ZN16QXmlStreamReader7addDataERK7QString(void *this_, QString* data) {
+  ((QXmlStreamReader*)this_)->addData(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:371
@@ -362,8 +362,8 @@ return new QStringRef(rv);
 // /usr/include/qt/QtCore/qxmlstream.h:427
 // [-2] void addExtraNamespaceDeclaration(const class QXmlStreamNamespaceDeclaration &)
 extern "C"
-void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration(void *this_, const QXmlStreamNamespaceDeclaration & extraNamespaceDeclaraction) {
-  ((QXmlStreamReader*)this_)->addExtraNamespaceDeclaration(extraNamespaceDeclaraction);
+void C_ZN16QXmlStreamReader28addExtraNamespaceDeclarationERK30QXmlStreamNamespaceDeclaration(void *this_, QXmlStreamNamespaceDeclaration* extraNamespaceDeclaraction) {
+  ((QXmlStreamReader*)this_)->addExtraNamespaceDeclaration(*extraNamespaceDeclaraction);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:431
@@ -393,8 +393,8 @@ return new QStringRef(rv);
 // /usr/include/qt/QtCore/qxmlstream.h:443
 // [-2] void raiseError(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamReader10raiseErrorERK7QString(void *this_, const QString & message) {
-  ((QXmlStreamReader*)this_)->raiseError(message);
+void C_ZN16QXmlStreamReader10raiseErrorERK7QString(void *this_, QString* message) {
+  ((QXmlStreamReader*)this_)->raiseError(*message);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:444

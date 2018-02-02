@@ -31,22 +31,22 @@ void* C_ZN19QItemSelectionRangeC2Ev() {
 // /usr/include/qt/QtCore/qitemselectionmodel.h:70
 // [-2] void QItemSelectionRange(const class QModelIndex &, const class QModelIndex &)
 extern "C"
-void* C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(const QModelIndex & topL, const QModelIndex & bottomR) {
-  return  new QItemSelectionRange(topL, bottomR);
+void* C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(QModelIndex* topL, QModelIndex* bottomR) {
+  return  new QItemSelectionRange(*topL, *bottomR);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:71
 // [-2] void QItemSelectionRange(const class QModelIndex &)
 extern "C"
-void* C_ZN19QItemSelectionRangeC2ERK11QModelIndex(const QModelIndex & index) {
-  return  new QItemSelectionRange(index);
+void* C_ZN19QItemSelectionRangeC2ERK11QModelIndex(QModelIndex* index) {
+  return  new QItemSelectionRange(*index);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:73
 // [-2] void swap(class QItemSelectionRange &)
 extern "C"
-void C_ZN19QItemSelectionRange4swapERS_(void *this_, QItemSelectionRange & other) {
-  ((QItemSelectionRange*)this_)->swap(other);
+void C_ZN19QItemSelectionRange4swapERS_(void *this_, QItemSelectionRange* other) {
+  ((QItemSelectionRange*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:79
@@ -125,29 +125,29 @@ void* C_ZNK19QItemSelectionRange5modelEv(void *this_) {
 // /usr/include/qt/QtCore/qitemselectionmodel.h:91
 // [1] bool contains(const class QModelIndex &)
 extern "C"
-bool C_ZNK19QItemSelectionRange8containsERK11QModelIndex(void *this_, const QModelIndex & index) {
-  return (bool)((QItemSelectionRange*)this_)->contains(index);
+bool C_ZNK19QItemSelectionRange8containsERK11QModelIndex(void *this_, QModelIndex* index) {
+  return (bool)((QItemSelectionRange*)this_)->contains(*index);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:98
 // [1] bool contains(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZNK19QItemSelectionRange8containsEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & parentIndex) {
-  return (bool)((QItemSelectionRange*)this_)->contains(row, column, parentIndex);
+bool C_ZNK19QItemSelectionRange8containsEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parentIndex) {
+  return (bool)((QItemSelectionRange*)this_)->contains(row, column, *parentIndex);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:105
 // [1] bool intersects(const class QItemSelectionRange &)
 extern "C"
-bool C_ZNK19QItemSelectionRange10intersectsERKS_(void *this_, const QItemSelectionRange & other) {
-  return (bool)((QItemSelectionRange*)this_)->intersects(other);
+bool C_ZNK19QItemSelectionRange10intersectsERKS_(void *this_, QItemSelectionRange* other) {
+  return (bool)((QItemSelectionRange*)this_)->intersects(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:110
 // [16] QItemSelectionRange intersected(const class QItemSelectionRange &)
 extern "C"
-void* C_ZNK19QItemSelectionRange11intersectedERKS_(void *this_, const QItemSelectionRange & other) {
-  auto rv = ((QItemSelectionRange*)this_)->intersected(other);
+void* C_ZNK19QItemSelectionRange11intersectedERKS_(void *this_, QItemSelectionRange* other) {
+  auto rv = ((QItemSelectionRange*)this_)->intersected(*other);
 return new QItemSelectionRange(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -163,5 +163,10 @@ bool C_ZNK19QItemSelectionRange7isValidEv(void *this_) {
 extern "C"
 bool C_ZNK19QItemSelectionRange7isEmptyEv(void *this_) {
   return (bool)((QItemSelectionRange*)this_)->isEmpty();
+}
+
+extern "C"
+void C_ZN19QItemSelectionRangeD2Ev(void *this_) {
+  delete (QItemSelectionRange*)(this_);
 }
 //  main block end

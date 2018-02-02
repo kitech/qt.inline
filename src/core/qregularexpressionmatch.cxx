@@ -34,8 +34,8 @@ void C_ZN23QRegularExpressionMatchD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qregularexpression.h:187
 // [-2] void swap(class QRegularExpressionMatch &)
 extern "C"
-void C_ZN23QRegularExpressionMatch4swapERS_(void *this_, QRegularExpressionMatch & other) {
-  ((QRegularExpressionMatch*)this_)->swap(other);
+void C_ZN23QRegularExpressionMatch4swapERS_(void *this_, QRegularExpressionMatch* other) {
+  ((QRegularExpressionMatch*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:189
@@ -115,16 +115,16 @@ return new QStringView(rv);
 // /usr/include/qt/QtCore/qregularexpression.h:205
 // [8] QString captured(const class QString &)
 extern "C"
-void* C_ZNK23QRegularExpressionMatch8capturedERK7QString(void *this_, const QString & name) {
-  auto rv = ((QRegularExpressionMatch*)this_)->captured(name);
+void* C_ZNK23QRegularExpressionMatch8capturedERK7QString(void *this_, QString* name) {
+  auto rv = ((QRegularExpressionMatch*)this_)->captured(*name);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:206
 // [16] QStringRef capturedRef(const class QString &)
 extern "C"
-void* C_ZNK23QRegularExpressionMatch11capturedRefERK7QString(void *this_, const QString & name) {
-  auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(name);
+void* C_ZNK23QRegularExpressionMatch11capturedRefERK7QString(void *this_, QString* name) {
+  auto rv = ((QRegularExpressionMatch*)this_)->capturedRef(*name);
 return new QStringRef(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -176,22 +176,22 @@ int C_ZNK23QRegularExpressionMatch11capturedEndEi(void *this_, int nth) {
 // /usr/include/qt/QtCore/qregularexpression.h:220
 // [4] int capturedStart(const class QString &)
 extern "C"
-int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, const QString & name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedStart(name);
+int C_ZNK23QRegularExpressionMatch13capturedStartERK7QString(void *this_, QString* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedStart(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:221
 // [4] int capturedLength(const class QString &)
 extern "C"
-int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, const QString & name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedLength(name);
+int C_ZNK23QRegularExpressionMatch14capturedLengthERK7QString(void *this_, QString* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedLength(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:222
 // [4] int capturedEnd(const class QString &)
 extern "C"
-int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, const QString & name) {
-  return (int)((QRegularExpressionMatch*)this_)->capturedEnd(name);
+int C_ZNK23QRegularExpressionMatch11capturedEndERK7QString(void *this_, QString* name) {
+  return (int)((QRegularExpressionMatch*)this_)->capturedEnd(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:225

@@ -41,7 +41,7 @@ void C_ZN17QIconEnginePluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qiconengineplugin.h:61
 // [8] QIconEngine * create(const class QString &)
 extern "C"
-void* C_ZN17QIconEnginePlugin6createERK7QString(void *this_, const QString & filename) {
-  return (void*)((QIconEnginePlugin*)this_)->create(filename);
+void* C_ZN17QIconEnginePlugin6createERK7QString(void *this_, QString* filename) {
+  return (void*)((QIconEnginePlugin*)this_)->create(*filename);
 }
 //  main block end

@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qabstractanimation.h:121
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN18QAbstractAnimation5eventEP6QEvent = 0;
+void* callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN18QAbstractAnimation5eventEP6QEvent = cbfn; }
+{ callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr = cbfn; }
 // Protected purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:123
 // [-2] void updateCurrentTime(int)
 extern "C"
-void* callback_ZN18QAbstractAnimation17updateCurrentTimeEi = 0;
+void* callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractAnimation17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN18QAbstractAnimation17updateCurrentTimeEi = cbfn; }
+{ callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:124
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
 extern "C"
-void* callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_ = 0;
+void* callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void*cbfn)
-{ callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_ = cbfn; }
+{ callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractanimation.h:125
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
 extern "C"
-void* callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE = 0;
+void* callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(void*cbfn)
-{ callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE = cbfn; }
+{ callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr = cbfn; }
 
 class MyQAbstractAnimation : public QAbstractAnimation {
 public:
@@ -44,29 +44,33 @@ public:
 MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN18QAbstractAnimation5eventEP6QEvent != 0) {
-      // callback_ZN18QAbstractAnimation5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QAbstractAnimation::event(event);
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime) {
-    if (callback_ZN18QAbstractAnimation17updateCurrentTimeEi != 0) {
-      // callback_ZN18QAbstractAnimation17updateCurrentTimeEi(currentTime);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , currentTime);
     }
     QAbstractAnimation::updateCurrentTime(currentTime);
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    if (callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_ != 0) {
-      // callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_(newState, oldState);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , newState, oldState);
     }
     QAbstractAnimation::updateState(newState, oldState);
   }
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
-    if (callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE != 0) {
-      // callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(direction);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::Direction))(callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , direction);
     }
     QAbstractAnimation::updateDirection(direction);
   }

@@ -666,4 +666,9 @@ extern "C"
 bool C_ZN5QChar11isTitleCaseEj(uint ucs4) {
   return (bool)QChar::isTitleCase(ucs4);
 }
+
+extern "C"
+void C_ZN5QCharD2Ev(void *this_) {
+  delete (QChar*)(this_);
+}
 //  main block end

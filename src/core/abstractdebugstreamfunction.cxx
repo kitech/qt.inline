@@ -14,4 +14,9 @@ public:
   virtual ~MyAbstractDebugStreamFunction() {}
 };
 
+
+extern "C"
+void C_ZN27AbstractDebugStreamFunctionD2Ev(void *this_) {
+  delete (QtPrivate::AbstractDebugStreamFunction*)(this_);
+}
 //  main block end

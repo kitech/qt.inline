@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:73
 // [-2] void onTransition(class QEvent *)
 extern "C"
-void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent = 0;
+void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN21QMouseEventTransition12onTransitionEP6QEvent = cbfn; }
+{ callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:74
 // [1] bool eventTest(class QEvent *)
 extern "C"
-void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent = 0;
+void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN21QMouseEventTransition9eventTestEP6QEvent = cbfn; }
+{ callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQMouseEventTransition : public QMouseEventTransition {
 public:
@@ -32,15 +32,17 @@ MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceStat
 MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type, button, sourceState) {}
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    if (callback_ZN21QMouseEventTransition12onTransitionEP6QEvent != 0) {
-      // callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QMouseEventTransition::onTransition(event);
   }
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    if (callback_ZN21QMouseEventTransition9eventTestEP6QEvent != 0) {
-      // callback_ZN21QMouseEventTransition9eventTestEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QMouseEventTransition::eventTest(event);
   }
@@ -109,7 +111,7 @@ return new QPainterPath(rv);
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:70
 // [-2] void setHitTestPath(const class QPainterPath &)
 extern "C"
-void C_ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath(void *this_, const QPainterPath & path) {
-  ((QMouseEventTransition*)this_)->setHitTestPath(path);
+void C_ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath(void *this_, QPainterPath* path) {
+  ((QMouseEventTransition*)this_)->setHitTestPath(*path);
 }
 //  main block end

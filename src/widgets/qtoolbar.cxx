@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qtoolbar.h:191
 // [-2] void actionEvent(class QActionEvent *)
 extern "C"
-void* callback_ZN8QToolBar11actionEventEP12QActionEvent = 0;
+void* callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBar11actionEventEP12QActionEvent(void*cbfn)
-{ callback_ZN8QToolBar11actionEventEP12QActionEvent = cbfn; }
+{ callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:192
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN8QToolBar11changeEventEP6QEvent = 0;
+void* callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBar11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBar11changeEventEP6QEvent = cbfn; }
+{ callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:193
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN8QToolBar10paintEventEP11QPaintEvent = 0;
+void* callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN8QToolBar10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:194
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN8QToolBar5eventEP6QEvent = 0;
+void* callback_ZN8QToolBar5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBar5eventEP6QEvent = cbfn; }
+{ callback_ZN8QToolBar5eventEP6QEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:195
 // [-2] void initStyleOption(class QStyleOptionToolBar *)
 extern "C"
-void* callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar = 0;
+void* callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = 0;
 extern "C" void set_callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void*cbfn)
-{ callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar = cbfn; }
+{ callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = cbfn; }
 
 class MyQToolBar : public QToolBar {
 public:
@@ -53,36 +53,41 @@ MyQToolBar(const QString & title, QWidget * parent) : QToolBar(title, parent) {}
 MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * event) {
-    if (callback_ZN8QToolBar11actionEventEP12QActionEvent != 0) {
-      // callback_ZN8QToolBar11actionEventEP12QActionEvent(event);
+    auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QToolBar::actionEvent(event);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    if (callback_ZN8QToolBar11changeEventEP6QEvent != 0) {
-      // callback_ZN8QToolBar11changeEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBar11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QToolBar::changeEvent(event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    if (callback_ZN8QToolBar10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN8QToolBar10paintEventEP11QPaintEvent(event);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QToolBar::paintEvent(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN8QToolBar5eventEP6QEvent != 0) {
-      // callback_ZN8QToolBar5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBar5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QToolBar::event(event);
   }
 // void initStyleOption(class QStyleOptionToolBar *)
   virtual void initStyleOption(QStyleOptionToolBar * option) {
-    if (callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar != 0) {
-      // callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionToolBar *))(callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QToolBar::initStyleOption(option);
   }
@@ -99,9 +104,9 @@ void* C_ZNK8QToolBar10metaObjectEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbar.h:79
 // [-2] void QToolBar(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN8QToolBarC2ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+void* C_ZN8QToolBarC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQToolBar*)(0);
-  return  new MyQToolBar(title, parent);
+  return  new MyQToolBar(*title, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:80
@@ -171,29 +176,29 @@ void C_ZN8QToolBar5clearEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbar.h:98
 // [8] QAction * addAction(const class QString &)
 extern "C"
-void* C_ZN8QToolBar9addActionERK7QString(void *this_, const QString & text) {
-  return (void*)((QToolBar*)this_)->addAction(text);
+void* C_ZN8QToolBar9addActionERK7QString(void *this_, QString* text) {
+  return (void*)((QToolBar*)this_)->addAction(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:99
 // [8] QAction * addAction(const class QIcon &, const class QString &)
 extern "C"
-void* C_ZN8QToolBar9addActionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
-  return (void*)((QToolBar*)this_)->addAction(icon, text);
+void* C_ZN8QToolBar9addActionERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
+  return (void*)((QToolBar*)this_)->addAction(*icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:100
 // [8] QAction * addAction(const class QString &, const class QObject *, const char *)
 extern "C"
-void* C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *this_, const QString & text, const QObject * receiver, const char * member) {
-  return (void*)((QToolBar*)this_)->addAction(text, receiver, member);
+void* C_ZN8QToolBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text, const QObject * receiver, const char * member) {
+  return (void*)((QToolBar*)this_)->addAction(*text, receiver, member);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:101
 // [8] QAction * addAction(const class QIcon &, const class QString &, const class QObject *, const char *)
 extern "C"
-void* C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *this_, const QIcon & icon, const QString & text, const QObject * receiver, const char * member) {
-  return (void*)((QToolBar*)this_)->addAction(icon, text, receiver, member);
+void* C_ZN8QToolBar9addActionERK5QIconRK7QStringPK7QObjectPKc(void *this_, QIcon* icon, QString* text, const QObject * receiver, const char * member) {
+  return (void*)((QToolBar*)this_)->addAction(*icon, *text, receiver, member);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:155
@@ -235,8 +240,8 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qtoolbar.h:162
 // [8] QAction * actionAt(const class QPoint &)
 extern "C"
-void* C_ZNK8QToolBar8actionAtERK6QPoint(void *this_, const QPoint & p) {
-  return (void*)((QToolBar*)this_)->actionAt(p);
+void* C_ZNK8QToolBar8actionAtERK6QPoint(void *this_, QPoint* p) {
+  return (void*)((QToolBar*)this_)->actionAt(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:163
@@ -299,8 +304,8 @@ bool C_ZNK8QToolBar10isFloatingEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbar.h:177
 // [-2] void setIconSize(const class QSize &)
 extern "C"
-void C_ZN8QToolBar11setIconSizeERK5QSize(void *this_, const QSize & iconSize) {
-  ((QToolBar*)this_)->setIconSize(iconSize);
+void C_ZN8QToolBar11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
+  ((QToolBar*)this_)->setIconSize(*iconSize);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:178
@@ -334,8 +339,8 @@ void C_ZN8QToolBar18orientationChangedEN2Qt11OrientationE(void *this_, Qt::Orien
 // /usr/include/qt/QtWidgets/qtoolbar.h:185
 // [-2] void iconSizeChanged(const class QSize &)
 extern "C"
-void C_ZN8QToolBar15iconSizeChangedERK5QSize(void *this_, const QSize & iconSize) {
-  ((QToolBar*)this_)->iconSizeChanged(iconSize);
+void C_ZN8QToolBar15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
+  ((QToolBar*)this_)->iconSizeChanged(*iconSize);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:186

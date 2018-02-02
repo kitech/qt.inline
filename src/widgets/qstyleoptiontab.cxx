@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:289
 // [-2] void QStyleOptionTab(int)
 extern "C"
-void* callback_ZN15QStyleOptionTabC1Ei = 0;
+void* callback_ZN15QStyleOptionTabC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN15QStyleOptionTabC1Ei(void*cbfn)
-{ callback_ZN15QStyleOptionTabC1Ei = cbfn; }
+{ callback_ZN15QStyleOptionTabC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTab : public QStyleOptionTab {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionTab(int version) : QStyleOptionTab(version) {}
 extern "C"
 void* C_ZN15QStyleOptionTabC2Ev() {
   return  new QStyleOptionTab();
+}
+
+extern "C"
+void C_ZN15QStyleOptionTabD2Ev(void *this_) {
+  delete (QStyleOptionTab*)(this_);
 }
 //  main block end

@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:63
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN23QParallelAnimationGroup5eventEP6QEvent = 0;
+void* callback_ZN23QParallelAnimationGroup5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN23QParallelAnimationGroup5eventEP6QEvent(void*cbfn)
-{ callback_ZN23QParallelAnimationGroup5eventEP6QEvent = cbfn; }
+{ callback_ZN23QParallelAnimationGroup5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:65
 // [-2] void updateCurrentTime(int)
 extern "C"
-void* callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi = 0;
+void* callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi_fnptr = 0;
 extern "C" void set_callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi = cbfn; }
+{ callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:66
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
 extern "C"
-void* callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ = 0;
+void* callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
 extern "C" void set_callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-{ callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ = cbfn; }
+{ callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:67
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
 extern "C"
-void* callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE = 0;
+void* callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = 0;
 extern "C" void set_callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void*cbfn)
-{ callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE = cbfn; }
+{ callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = cbfn; }
 
 class MyQParallelAnimationGroup : public QParallelAnimationGroup {
 public:
@@ -44,29 +44,33 @@ public:
 MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN23QParallelAnimationGroup5eventEP6QEvent != 0) {
-      // callback_ZN23QParallelAnimationGroup5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN23QParallelAnimationGroup5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QParallelAnimationGroup::event(event);
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime) {
-    if (callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi != 0) {
-      // callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi(currentTime);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN23QParallelAnimationGroup17updateCurrentTimeEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , currentTime);
     }
     QParallelAnimationGroup::updateCurrentTime(currentTime);
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    if (callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-      // callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , newState, oldState);
     }
     QParallelAnimationGroup::updateState(newState, oldState);
   }
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
-    if (callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE != 0) {
-      // callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(direction);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::Direction))(callback_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , direction);
     }
     QParallelAnimationGroup::updateDirection(direction);
   }

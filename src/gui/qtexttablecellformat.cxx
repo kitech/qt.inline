@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:964
 // [-2] void QTextTableCellFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN20QTextTableCellFormatC1ERK11QTextFormat = 0;
+void* callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN20QTextTableCellFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN20QTextTableCellFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextTableCellFormat : public QTextTableCellFormat {
 public:
@@ -101,5 +101,10 @@ qreal C_ZNK20QTextTableCellFormat12rightPaddingEv(void *this_) {
 extern "C"
 void C_ZN20QTextTableCellFormat10setPaddingEd(void *this_, qreal padding) {
   ((QTextTableCellFormat*)this_)->setPadding(padding);
+}
+
+extern "C"
+void C_ZN20QTextTableCellFormatD2Ev(void *this_) {
+  delete (QTextTableCellFormat*)(this_);
 }
 //  main block end

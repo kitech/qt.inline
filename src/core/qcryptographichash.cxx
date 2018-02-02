@@ -48,8 +48,8 @@ void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int l
 // /usr/include/qt/QtCore/qcryptographichash.h:98
 // [-2] void addData(const class QByteArray &)
 extern "C"
-void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, const QByteArray & data) {
-  ((QCryptographicHash*)this_)->addData(data);
+void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* data) {
+  ((QCryptographicHash*)this_)->addData(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcryptographichash.h:99
@@ -70,8 +70,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qcryptographichash.h:103
 // [8] QByteArray hash(const class QByteArray &, enum QCryptographicHash::Algorithm)
 extern "C"
-void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(const QByteArray & data, QCryptographicHash::Algorithm method) {
-  auto rv = QCryptographicHash::hash(data, method);
+void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(QByteArray* data, QCryptographicHash::Algorithm method) {
+  auto rv = QCryptographicHash::hash(*data, method);
 return new QByteArray(rv);
 }
 //  main block end

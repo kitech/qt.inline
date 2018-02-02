@@ -29,8 +29,8 @@ void* C_ZN13QTemporaryDirC2Ev() {
 // /usr/include/qt/QtCore/qtemporarydir.h:57
 // [-2] void QTemporaryDir(const class QString &)
 extern "C"
-void* C_ZN13QTemporaryDirC2ERK7QString(const QString & templateName) {
-  return  new QTemporaryDir(templateName);
+void* C_ZN13QTemporaryDirC2ERK7QString(QString* templateName) {
+  return  new QTemporaryDir(*templateName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporarydir.h:58
@@ -87,8 +87,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qtemporarydir.h:68
 // [8] QString filePath(const class QString &)
 extern "C"
-void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, const QString & fileName) {
-  auto rv = ((QTemporaryDir*)this_)->filePath(fileName);
+void* C_ZNK13QTemporaryDir8filePathERK7QString(void *this_, QString* fileName) {
+  auto rv = ((QTemporaryDir*)this_)->filePath(*fileName);
 return new QString(rv);
 }
 //  main block end

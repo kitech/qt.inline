@@ -29,8 +29,8 @@ void* C_ZN21QPersistentModelIndexC2Ev() {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:108
 // [-2] void QPersistentModelIndex(const class QModelIndex &)
 extern "C"
-void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(const QModelIndex & index) {
-  return  new QPersistentModelIndex(index);
+void* C_ZN21QPersistentModelIndexC2ERK11QModelIndex(QModelIndex* index) {
+  return  new QPersistentModelIndex(*index);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:110
@@ -43,8 +43,8 @@ void C_ZN21QPersistentModelIndexD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:122
 // [-2] void swap(class QPersistentModelIndex &)
 extern "C"
-void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex & other) {
-  ((QPersistentModelIndex*)this_)->swap(other);
+void C_ZN21QPersistentModelIndex4swapERS_(void *this_, QPersistentModelIndex* other) {
+  ((QPersistentModelIndex*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:127

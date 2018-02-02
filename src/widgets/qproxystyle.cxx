@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qproxystyle.h:97
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QProxyStyle5eventEP6QEvent = 0;
+void* callback_ZN11QProxyStyle5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QProxyStyle5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QProxyStyle5eventEP6QEvent = cbfn; }
+{ callback_ZN11QProxyStyle5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQProxyStyle : public QProxyStyle {
 public:
@@ -25,8 +25,9 @@ MyQProxyStyle(QStyle * style) : QProxyStyle(style) {}
 MyQProxyStyle(const QString & key) : QProxyStyle(key) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QProxyStyle5eventEP6QEvent != 0) {
-      // callback_ZN11QProxyStyle5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QProxyStyle5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QProxyStyle::event(e);
   }
@@ -51,9 +52,9 @@ void* C_ZN11QProxyStyleC2EP6QStyle(QStyle * style) {
 // /usr/include/qt/QtWidgets/qproxystyle.h:58
 // [-2] void QProxyStyle(const class QString &)
 extern "C"
-void* C_ZN11QProxyStyleC2ERK7QString(const QString & key) {
+void* C_ZN11QProxyStyleC2ERK7QString(QString* key) {
   auto _nilp = (MyQProxyStyle*)(0);
-  return  new MyQProxyStyle(key);
+  return  new MyQProxyStyle(*key);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:59
@@ -101,22 +102,22 @@ void C_ZNK11QProxyStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyleO
 // /usr/include/qt/QtWidgets/qproxystyle.h:67
 // [-2] void drawItemText(class QPainter *, const class QRect &, int, const class QPalette &, _Bool, const class QString &, class QPalette::ColorRole)
 extern "C"
-void C_ZNK11QProxyStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE(void *this_, QPainter * painter, const QRect & rect, int flags, const QPalette & pal, bool enabled, const QString & text, QPalette::ColorRole textRole) {
-  ((QProxyStyle*)this_)->drawItemText(painter, rect, flags, pal, enabled, text, textRole);
+void C_ZNK11QProxyStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE(void *this_, QPainter * painter, QRect* rect, int flags, QPalette* pal, bool enabled, QString* text, QPalette::ColorRole textRole) {
+  ((QProxyStyle*)this_)->drawItemText(painter, *rect, flags, *pal, enabled, *text, textRole);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:69
 // [-2] void drawItemPixmap(class QPainter *, const class QRect &, int, const class QPixmap &)
 extern "C"
-void C_ZNK11QProxyStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this_, QPainter * painter, const QRect & rect, int alignment, const QPixmap & pixmap) {
-  ((QProxyStyle*)this_)->drawItemPixmap(painter, rect, alignment, pixmap);
+void C_ZNK11QProxyStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this_, QPainter * painter, QRect* rect, int alignment, QPixmap* pixmap) {
+  ((QProxyStyle*)this_)->drawItemPixmap(painter, *rect, alignment, *pixmap);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:71
 // [8] QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
-void* C_ZNK11QProxyStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType type, const QStyleOption * option, const QSize & size, const QWidget * widget) {
-  auto rv = ((QProxyStyle*)this_)->sizeFromContents(type, option, size, widget);
+void* C_ZNK11QProxyStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType type, const QStyleOption * option, QSize* size, const QWidget * widget) {
+  auto rv = ((QProxyStyle*)this_)->sizeFromContents(type, option, *size, widget);
 return new QSize(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -139,24 +140,24 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qproxystyle.h:75
 // [16] QRect itemTextRect(const class QFontMetrics &, const class QRect &, int, _Bool, const class QString &)
 extern "C"
-void* C_ZNK11QProxyStyle12itemTextRectERK12QFontMetricsRK5QRectibRK7QString(void *this_, const QFontMetrics & fm, const QRect & r, int flags, bool enabled, const QString & text) {
-  auto rv = ((QProxyStyle*)this_)->itemTextRect(fm, r, flags, enabled, text);
+void* C_ZNK11QProxyStyle12itemTextRectERK12QFontMetricsRK5QRectibRK7QString(void *this_, QFontMetrics* fm, QRect* r, int flags, bool enabled, QString* text) {
+  auto rv = ((QProxyStyle*)this_)->itemTextRect(*fm, *r, flags, enabled, *text);
 return new QRect(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:76
 // [16] QRect itemPixmapRect(const class QRect &, int, const class QPixmap &)
 extern "C"
-void* C_ZNK11QProxyStyle14itemPixmapRectERK5QRectiRK7QPixmap(void *this_, const QRect & r, int flags, const QPixmap & pixmap) {
-  auto rv = ((QProxyStyle*)this_)->itemPixmapRect(r, flags, pixmap);
+void* C_ZNK11QProxyStyle14itemPixmapRectERK5QRectiRK7QPixmap(void *this_, QRect* r, int flags, QPixmap* pixmap) {
+  auto rv = ((QProxyStyle*)this_)->itemPixmapRect(*r, flags, *pixmap);
 return new QRect(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:78
 // [4] QStyle::SubControl hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
 extern "C"
-QStyle::SubControl C_ZNK11QProxyStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl control, const QStyleOptionComplex * option, const QPoint & pos, const QWidget * widget) {
-  return (QStyle::SubControl)((QProxyStyle*)this_)->hitTestComplexControl(control, option, pos, widget);
+QStyle::SubControl C_ZNK11QProxyStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl control, const QStyleOptionComplex * option, QPoint* pos, const QWidget * widget) {
+  return (QStyle::SubControl)((QProxyStyle*)this_)->hitTestComplexControl(control, option, *pos, widget);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:79
@@ -199,8 +200,8 @@ return new QPixmap(rv);
 // /usr/include/qt/QtWidgets/qproxystyle.h:86
 // [32] QPixmap generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
 extern "C"
-void* C_ZNK11QProxyStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt) {
-  auto rv = ((QProxyStyle*)this_)->generatedIconPixmap(iconMode, pixmap, opt);
+void* C_ZNK11QProxyStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, QPixmap* pixmap, const QStyleOption * opt) {
+  auto rv = ((QProxyStyle*)this_)->generatedIconPixmap(iconMode, *pixmap, opt);
 return new QPixmap(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -222,8 +223,8 @@ void C_ZN11QProxyStyle6polishEP7QWidget(void *this_, QWidget * widget) {
 // /usr/include/qt/QtWidgets/qproxystyle.h:90
 // [-2] void polish(class QPalette &)
 extern "C"
-void C_ZN11QProxyStyle6polishER8QPalette(void *this_, QPalette & pal) {
-  ((QProxyStyle*)this_)->polish(pal);
+void C_ZN11QProxyStyle6polishER8QPalette(void *this_, QPalette* pal) {
+  ((QProxyStyle*)this_)->polish(*pal);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qproxystyle.h:91

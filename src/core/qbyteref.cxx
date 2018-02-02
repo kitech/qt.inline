@@ -14,4 +14,9 @@ public:
   virtual ~MyQByteRef() {}
 };
 
+
+extern "C"
+void C_ZN8QByteRefD2Ev(void *this_) {
+  delete (QByteRef*)(this_);
+}
 //  main block end

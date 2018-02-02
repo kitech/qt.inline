@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qcompleter.h:145
 // [1] bool eventFilter(class QObject *, class QEvent *)
 extern "C"
-void* callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent = 0;
+void* callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent = cbfn; }
+{ callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:146
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN10QCompleter5eventEP6QEvent = 0;
+void* callback_ZN10QCompleter5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QCompleter5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QCompleter5eventEP6QEvent = cbfn; }
+{ callback_ZN10QCompleter5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCompleter : public QCompleter {
 public:
@@ -34,15 +34,17 @@ MyQCompleter(QAbstractItemModel * model, QObject * parent) : QCompleter(model, p
 MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(completions, parent) {}
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * o, QEvent * e) {
-    if (callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent != 0) {
-      // callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(o, e);
+    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , o, e);
     }
     return QCompleter::eventFilter(o, e);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN10QCompleter5eventEP6QEvent != 0) {
-      // callback_ZN10QCompleter5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QCompleter5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QCompleter::event(arg0);
   }
@@ -75,9 +77,9 @@ void* C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * mod
 // /usr/include/qt/QtWidgets/qcompleter.h:88
 // [-2] void QCompleter(const class QStringList &, class QObject *)
 extern "C"
-void* C_ZN10QCompleterC2ERK11QStringListP7QObject(const QStringList & completions, QObject * parent) {
+void* C_ZN10QCompleterC2ERK11QStringListP7QObject(QStringList* completions, QObject * parent) {
   auto _nilp = (MyQCompleter*)(0);
-  return  new MyQCompleter(completions, parent);
+  return  new MyQCompleter(*completions, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:90
@@ -289,15 +291,15 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qcompleter.h:136
 // [-2] void setCompletionPrefix(const class QString &)
 extern "C"
-void C_ZN10QCompleter19setCompletionPrefixERK7QString(void *this_, const QString & prefix) {
-  ((QCompleter*)this_)->setCompletionPrefix(prefix);
+void C_ZN10QCompleter19setCompletionPrefixERK7QString(void *this_, QString* prefix) {
+  ((QCompleter*)this_)->setCompletionPrefix(*prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:137
 // [-2] void complete(const class QRect &)
 extern "C"
-void C_ZN10QCompleter8completeERK5QRect(void *this_, const QRect & rect) {
-  ((QCompleter*)this_)->complete(rect);
+void C_ZN10QCompleter8completeERK5QRect(void *this_, QRect* rect) {
+  ((QCompleter*)this_)->complete(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:138
@@ -310,36 +312,36 @@ void C_ZN10QCompleter13setWrapAroundEb(void *this_, bool wrap) {
 // /usr/include/qt/QtWidgets/qcompleter.h:141
 // [8] QString pathFromIndex(const class QModelIndex &)
 extern "C"
-void* C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
-  auto rv = ((QCompleter*)this_)->pathFromIndex(index);
+void* C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QCompleter*)this_)->pathFromIndex(*index);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:149
 // [-2] void activated(const class QString &)
 extern "C"
-void C_ZN10QCompleter9activatedERK7QString(void *this_, const QString & text) {
-  ((QCompleter*)this_)->activated(text);
+void C_ZN10QCompleter9activatedERK7QString(void *this_, QString* text) {
+  ((QCompleter*)this_)->activated(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:150
 // [-2] void activated(const class QModelIndex &)
 extern "C"
-void C_ZN10QCompleter9activatedERK11QModelIndex(void *this_, const QModelIndex & index) {
-  ((QCompleter*)this_)->activated(index);
+void C_ZN10QCompleter9activatedERK11QModelIndex(void *this_, QModelIndex* index) {
+  ((QCompleter*)this_)->activated(*index);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:151
 // [-2] void highlighted(const class QString &)
 extern "C"
-void C_ZN10QCompleter11highlightedERK7QString(void *this_, const QString & text) {
-  ((QCompleter*)this_)->highlighted(text);
+void C_ZN10QCompleter11highlightedERK7QString(void *this_, QString* text) {
+  ((QCompleter*)this_)->highlighted(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcompleter.h:152
 // [-2] void highlighted(const class QModelIndex &)
 extern "C"
-void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, const QModelIndex & index) {
-  ((QCompleter*)this_)->highlighted(index);
+void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, QModelIndex* index) {
+  ((QCompleter*)this_)->highlighted(*index);
 }
 //  main block end

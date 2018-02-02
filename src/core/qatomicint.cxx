@@ -23,4 +23,9 @@ extern "C"
 void* C_ZN10QAtomicIntC2Ei(int value) {
   return  new QAtomicInt(value);
 }
+
+extern "C"
+void C_ZN10QAtomicIntD2Ev(void *this_) {
+  delete (QAtomicInt*)(this_);
+}
 //  main block end

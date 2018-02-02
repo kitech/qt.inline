@@ -12,163 +12,163 @@
 // /usr/include/qt/QtWidgets/qtableview.h:138
 // [-2] void rowMoved(int, int, int)
 extern "C"
-void* callback_ZN10QTableView8rowMovedEiii = 0;
+void* callback_ZN10QTableView8rowMovedEiii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView8rowMovedEiii(void*cbfn)
-{ callback_ZN10QTableView8rowMovedEiii = cbfn; }
+{ callback_ZN10QTableView8rowMovedEiii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:139
 // [-2] void columnMoved(int, int, int)
 extern "C"
-void* callback_ZN10QTableView11columnMovedEiii = 0;
+void* callback_ZN10QTableView11columnMovedEiii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView11columnMovedEiii(void*cbfn)
-{ callback_ZN10QTableView11columnMovedEiii = cbfn; }
+{ callback_ZN10QTableView11columnMovedEiii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:140
 // [-2] void rowResized(int, int, int)
 extern "C"
-void* callback_ZN10QTableView10rowResizedEiii = 0;
+void* callback_ZN10QTableView10rowResizedEiii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView10rowResizedEiii(void*cbfn)
-{ callback_ZN10QTableView10rowResizedEiii = cbfn; }
+{ callback_ZN10QTableView10rowResizedEiii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:141
 // [-2] void columnResized(int, int, int)
 extern "C"
-void* callback_ZN10QTableView13columnResizedEiii = 0;
+void* callback_ZN10QTableView13columnResizedEiii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView13columnResizedEiii(void*cbfn)
-{ callback_ZN10QTableView13columnResizedEiii = cbfn; }
+{ callback_ZN10QTableView13columnResizedEiii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:142
 // [-2] void rowCountChanged(int, int)
 extern "C"
-void* callback_ZN10QTableView15rowCountChangedEii = 0;
+void* callback_ZN10QTableView15rowCountChangedEii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView15rowCountChangedEii(void*cbfn)
-{ callback_ZN10QTableView15rowCountChangedEii = cbfn; }
+{ callback_ZN10QTableView15rowCountChangedEii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:143
 // [-2] void columnCountChanged(int, int)
 extern "C"
-void* callback_ZN10QTableView18columnCountChangedEii = 0;
+void* callback_ZN10QTableView18columnCountChangedEii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView18columnCountChangedEii(void*cbfn)
-{ callback_ZN10QTableView18columnCountChangedEii = cbfn; }
+{ callback_ZN10QTableView18columnCountChangedEii_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:147
 // [-2] void scrollContentsBy(int, int)
 extern "C"
-void* callback_ZN10QTableView16scrollContentsByEii = 0;
+void* callback_ZN10QTableView16scrollContentsByEii_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView16scrollContentsByEii(void*cbfn)
-{ callback_ZN10QTableView16scrollContentsByEii = cbfn; }
+{ callback_ZN10QTableView16scrollContentsByEii_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:149
 // [192] QStyleOptionViewItem viewOptions()
 extern "C"
-void* callback_ZNK10QTableView11viewOptionsEv = 0;
+void* callback_ZNK10QTableView11viewOptionsEv_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView11viewOptionsEv(void*cbfn)
-{ callback_ZNK10QTableView11viewOptionsEv = cbfn; }
+{ callback_ZNK10QTableView11viewOptionsEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:150
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN10QTableView10paintEventEP11QPaintEvent = 0;
+void* callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN10QTableView10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:152
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN10QTableView10timerEventEP11QTimerEvent = 0;
+void* callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN10QTableView10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:154
 // [4] int horizontalOffset()
 extern "C"
-void* callback_ZNK10QTableView16horizontalOffsetEv = 0;
+void* callback_ZNK10QTableView16horizontalOffsetEv_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView16horizontalOffsetEv(void*cbfn)
-{ callback_ZNK10QTableView16horizontalOffsetEv = cbfn; }
+{ callback_ZNK10QTableView16horizontalOffsetEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:155
 // [4] int verticalOffset()
 extern "C"
-void* callback_ZNK10QTableView14verticalOffsetEv = 0;
+void* callback_ZNK10QTableView14verticalOffsetEv_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView14verticalOffsetEv(void*cbfn)
-{ callback_ZNK10QTableView14verticalOffsetEv = cbfn; }
+{ callback_ZNK10QTableView14verticalOffsetEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:158
 // [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
 extern "C"
-void* callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE = 0;
+void* callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-{ callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE = cbfn; }
+{ callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:159
 // [8] QRegion visualRegionForSelection(const class QItemSelection &)
 extern "C"
-void* callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection = 0;
+void* callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-{ callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection = cbfn; }
+{ callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:162
 // [-2] void updateGeometries()
 extern "C"
-void* callback_ZN10QTableView16updateGeometriesEv = 0;
+void* callback_ZN10QTableView16updateGeometriesEv_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView16updateGeometriesEv(void*cbfn)
-{ callback_ZN10QTableView16updateGeometriesEv = cbfn; }
+{ callback_ZN10QTableView16updateGeometriesEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:164
 // [8] QSize viewportSizeHint()
 extern "C"
-void* callback_ZNK10QTableView16viewportSizeHintEv = 0;
+void* callback_ZNK10QTableView16viewportSizeHintEv_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView16viewportSizeHintEv(void*cbfn)
-{ callback_ZNK10QTableView16viewportSizeHintEv = cbfn; }
+{ callback_ZNK10QTableView16viewportSizeHintEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:166
 // [4] int sizeHintForRow(int)
 extern "C"
-void* callback_ZNK10QTableView14sizeHintForRowEi = 0;
+void* callback_ZNK10QTableView14sizeHintForRowEi_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView14sizeHintForRowEi(void*cbfn)
-{ callback_ZNK10QTableView14sizeHintForRowEi = cbfn; }
+{ callback_ZNK10QTableView14sizeHintForRowEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:167
 // [4] int sizeHintForColumn(int)
 extern "C"
-void* callback_ZNK10QTableView17sizeHintForColumnEi = 0;
+void* callback_ZNK10QTableView17sizeHintForColumnEi_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView17sizeHintForColumnEi(void*cbfn)
-{ callback_ZNK10QTableView17sizeHintForColumnEi = cbfn; }
+{ callback_ZNK10QTableView17sizeHintForColumnEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:169
 // [-2] void verticalScrollbarAction(int)
 extern "C"
-void* callback_ZN10QTableView23verticalScrollbarActionEi = 0;
+void* callback_ZN10QTableView23verticalScrollbarActionEi_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView23verticalScrollbarActionEi(void*cbfn)
-{ callback_ZN10QTableView23verticalScrollbarActionEi = cbfn; }
+{ callback_ZN10QTableView23verticalScrollbarActionEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:170
 // [-2] void horizontalScrollbarAction(int)
 extern "C"
-void* callback_ZN10QTableView25horizontalScrollbarActionEi = 0;
+void* callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr = 0;
 extern "C" void set_callback_ZN10QTableView25horizontalScrollbarActionEi(void*cbfn)
-{ callback_ZN10QTableView25horizontalScrollbarActionEi = cbfn; }
+{ callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:172
 // [1] bool isIndexHidden(const class QModelIndex &)
 extern "C"
-void* callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex = 0;
+void* callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr = 0;
 extern "C" void set_callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex(void*cbfn)
-{ callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex = cbfn; }
+{ callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:174
 // [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
 extern "C"
-void* callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_ = 0;
+void* callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr = 0;
 extern "C" void set_callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_(void*cbfn)
-{ callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_ = cbfn; }
+{ callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:176
 // [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
 extern "C"
-void* callback_ZN10QTableView14currentChangedERK11QModelIndexS2_ = 0;
+void* callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr = 0;
 extern "C" void set_callback_ZN10QTableView14currentChangedERK11QModelIndexS2_(void*cbfn)
-{ callback_ZN10QTableView14currentChangedERK11QModelIndexS2_ = cbfn; }
+{ callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
 
 class MyQTableView : public QTableView {
 public:
@@ -177,162 +177,185 @@ public:
 MyQTableView(QWidget * parent) : QTableView(parent) {}
 // void rowMoved(int, int, int)
   virtual void rowMoved(int row, int oldIndex, int newIndex) {
-    if (callback_ZN10QTableView8rowMovedEiii != 0) {
-      // callback_ZN10QTableView8rowMovedEiii(row, oldIndex, newIndex);
+    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView8rowMovedEiii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row, oldIndex, newIndex);
     }
     QTableView::rowMoved(row, oldIndex, newIndex);
   }
 // void columnMoved(int, int, int)
   virtual void columnMoved(int column, int oldIndex, int newIndex) {
-    if (callback_ZN10QTableView11columnMovedEiii != 0) {
-      // callback_ZN10QTableView11columnMovedEiii(column, oldIndex, newIndex);
+    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView11columnMovedEiii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , column, oldIndex, newIndex);
     }
     QTableView::columnMoved(column, oldIndex, newIndex);
   }
 // void rowResized(int, int, int)
   virtual void rowResized(int row, int oldHeight, int newHeight) {
-    if (callback_ZN10QTableView10rowResizedEiii != 0) {
-      // callback_ZN10QTableView10rowResizedEiii(row, oldHeight, newHeight);
+    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView10rowResizedEiii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row, oldHeight, newHeight);
     }
     QTableView::rowResized(row, oldHeight, newHeight);
   }
 // void columnResized(int, int, int)
   virtual void columnResized(int column, int oldWidth, int newWidth) {
-    if (callback_ZN10QTableView13columnResizedEiii != 0) {
-      // callback_ZN10QTableView13columnResizedEiii(column, oldWidth, newWidth);
+    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView13columnResizedEiii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , column, oldWidth, newWidth);
     }
     QTableView::columnResized(column, oldWidth, newWidth);
   }
 // void rowCountChanged(int, int)
   virtual void rowCountChanged(int oldCount, int newCount) {
-    if (callback_ZN10QTableView15rowCountChangedEii != 0) {
-      // callback_ZN10QTableView15rowCountChangedEii(oldCount, newCount);
+    auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView15rowCountChangedEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , oldCount, newCount);
     }
     QTableView::rowCountChanged(oldCount, newCount);
   }
 // void columnCountChanged(int, int)
   virtual void columnCountChanged(int oldCount, int newCount) {
-    if (callback_ZN10QTableView18columnCountChangedEii != 0) {
-      // callback_ZN10QTableView18columnCountChangedEii(oldCount, newCount);
+    auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView18columnCountChangedEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , oldCount, newCount);
     }
     QTableView::columnCountChanged(oldCount, newCount);
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    if (callback_ZN10QTableView16scrollContentsByEii != 0) {
-      // callback_ZN10QTableView16scrollContentsByEii(dx, dy);
+    auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView16scrollContentsByEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , dx, dy);
     }
     QTableView::scrollContentsBy(dx, dy);
   }
 // QStyleOptionViewItem viewOptions()
   virtual QStyleOptionViewItem viewOptions() {
-    if (callback_ZNK10QTableView11viewOptionsEv != 0) {
-      // callback_ZNK10QTableView11viewOptionsEv();
+    auto fnptr = ((QStyleOptionViewItem (*)(void* ))(callback_ZNK10QTableView11viewOptionsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QTableView::viewOptions();
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
-    if (callback_ZN10QTableView10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN10QTableView10paintEventEP11QPaintEvent(e);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTableView::paintEvent(e);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    if (callback_ZN10QTableView10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN10QTableView10timerEventEP11QTimerEvent(event);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QTableView::timerEvent(event);
   }
 // int horizontalOffset()
   virtual int horizontalOffset() {
-    if (callback_ZNK10QTableView16horizontalOffsetEv != 0) {
-      // callback_ZNK10QTableView16horizontalOffsetEv();
+    auto fnptr = ((int (*)(void* ))(callback_ZNK10QTableView16horizontalOffsetEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QTableView::horizontalOffset();
   }
 // int verticalOffset()
   virtual int verticalOffset() {
-    if (callback_ZNK10QTableView14verticalOffsetEv != 0) {
-      // callback_ZNK10QTableView14verticalOffsetEv();
+    auto fnptr = ((int (*)(void* ))(callback_ZNK10QTableView14verticalOffsetEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QTableView::verticalOffset();
   }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
-    if (callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE != 0) {
-      // callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(rect, command);
+    auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QRect*)&rect, command);
     }
     QTableView::setSelection(rect, command);
   }
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-    if (callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection != 0) {
-      // callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection(selection);
+    auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QItemSelection*)&selection);
     }
     return QTableView::visualRegionForSelection(selection);
   }
 // void updateGeometries()
   virtual void updateGeometries() {
-    if (callback_ZN10QTableView16updateGeometriesEv != 0) {
-      // callback_ZN10QTableView16updateGeometriesEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN10QTableView16updateGeometriesEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QTableView::updateGeometries();
   }
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
-    if (callback_ZNK10QTableView16viewportSizeHintEv != 0) {
-      // callback_ZNK10QTableView16viewportSizeHintEv();
+    auto fnptr = ((QSize (*)(void* ))(callback_ZNK10QTableView16viewportSizeHintEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QTableView::viewportSizeHint();
   }
 // int sizeHintForRow(int)
   virtual int sizeHintForRow(int row) {
-    if (callback_ZNK10QTableView14sizeHintForRowEi != 0) {
-      // callback_ZNK10QTableView14sizeHintForRowEi(row);
+    auto fnptr = ((int (*)(void* , int))(callback_ZNK10QTableView14sizeHintForRowEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row);
     }
     return QTableView::sizeHintForRow(row);
   }
 // int sizeHintForColumn(int)
   virtual int sizeHintForColumn(int column) {
-    if (callback_ZNK10QTableView17sizeHintForColumnEi != 0) {
-      // callback_ZNK10QTableView17sizeHintForColumnEi(column);
+    auto fnptr = ((int (*)(void* , int))(callback_ZNK10QTableView17sizeHintForColumnEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , column);
     }
     return QTableView::sizeHintForColumn(column);
   }
 // void verticalScrollbarAction(int)
   virtual void verticalScrollbarAction(int action) {
-    if (callback_ZN10QTableView23verticalScrollbarActionEi != 0) {
-      // callback_ZN10QTableView23verticalScrollbarActionEi(action);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN10QTableView23verticalScrollbarActionEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , action);
     }
     QTableView::verticalScrollbarAction(action);
   }
 // void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
-    if (callback_ZN10QTableView25horizontalScrollbarActionEi != 0) {
-      // callback_ZN10QTableView25horizontalScrollbarActionEi(action);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , action);
     }
     QTableView::horizontalScrollbarAction(action);
   }
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
-    if (callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex != 0) {
-      // callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex(index);
+    auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&index);
     }
     return QTableView::isIndexHidden(index);
   }
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
-    if (callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_ != 0) {
-      // callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_(selected, deselected);
+    auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QItemSelection*)&selected, (QItemSelection*)&deselected);
     }
     QTableView::selectionChanged(selected, deselected);
   }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
-    if (callback_ZN10QTableView14currentChangedERK11QModelIndexS2_ != 0) {
-      // callback_ZN10QTableView14currentChangedERK11QModelIndexS2_(current, previous);
+    auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
     }
     QTableView::currentChanged(current, previous);
   }
@@ -371,8 +394,8 @@ void C_ZN10QTableView8setModelEP18QAbstractItemModel(void *this_, QAbstractItemM
 // /usr/include/qt/QtWidgets/qtableview.h:69
 // [-2] void setRootIndex(const class QModelIndex &)
 extern "C"
-void C_ZN10QTableView12setRootIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
-  ((QTableView*)this_)->setRootIndex(index);
+void C_ZN10QTableView12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
+  ((QTableView*)this_)->setRootIndex(*index);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:70
@@ -567,23 +590,23 @@ bool C_ZNK10QTableView21isCornerButtonEnabledEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtableview.h:112
 // [16] QRect visualRect(const class QModelIndex &)
 extern "C"
-void* C_ZNK10QTableView10visualRectERK11QModelIndex(void *this_, const QModelIndex & index) {
-  auto rv = ((QTableView*)this_)->visualRect(index);
+void* C_ZNK10QTableView10visualRectERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QTableView*)this_)->visualRect(*index);
 return new QRect(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:113
 // [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
 extern "C"
-void C_ZN10QTableView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
-  ((QTableView*)this_)->scrollTo(index, hint);
+void C_ZN10QTableView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void *this_, QModelIndex* index, QAbstractItemView::ScrollHint hint) {
+  ((QTableView*)this_)->scrollTo(*index, hint);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtableview.h:114
 // [24] QModelIndex indexAt(const class QPoint &)
 extern "C"
-void* C_ZNK10QTableView7indexAtERK6QPoint(void *this_, const QPoint & p) {
-  auto rv = ((QTableView*)this_)->indexAt(p);
+void* C_ZNK10QTableView7indexAtERK6QPoint(void *this_, QPoint* p) {
+  auto rv = ((QTableView*)this_)->indexAt(*p);
 return new QModelIndex(rv);
 }
 // Public Visibility=Default Availability=Available

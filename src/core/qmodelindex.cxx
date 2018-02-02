@@ -104,4 +104,9 @@ extern "C"
 bool C_ZNK11QModelIndex7isValidEv(void *this_) {
   return (bool)((QModelIndex*)this_)->isValid();
 }
+
+extern "C"
+void C_ZN11QModelIndexD2Ev(void *this_) {
+  delete (QModelIndex*)(this_);
+}
 //  main block end

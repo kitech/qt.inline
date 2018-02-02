@@ -36,8 +36,8 @@ void* C_ZN13QPluginLoaderC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtCore/qpluginloader.h:63
 // [-2] void QPluginLoader(const class QString &, class QObject *)
 extern "C"
-void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(const QString & fileName, QObject * parent) {
-  return  new QPluginLoader(fileName, parent);
+void* C_ZN13QPluginLoaderC2ERK7QStringP7QObject(QString* fileName, QObject * parent) {
+  return  new QPluginLoader(*fileName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:64
@@ -86,8 +86,8 @@ bool C_ZNK13QPluginLoader8isLoadedEv(void *this_) {
 // /usr/include/qt/QtCore/qpluginloader.h:76
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN13QPluginLoader11setFileNameERK7QString(void *this_, const QString & fileName) {
-  ((QPluginLoader*)this_)->setFileName(fileName);
+void C_ZN13QPluginLoader11setFileNameERK7QString(void *this_, QString* fileName) {
+  ((QPluginLoader*)this_)->setFileName(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:77

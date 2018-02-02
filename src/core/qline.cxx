@@ -31,8 +31,8 @@ void* C_ZN5QLineC2Ev() {
 // /usr/include/qt/QtCore/qline.h:56
 // [-2] void QLine(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN5QLineC2ERK6QPointS2_(const QPoint & pt1, const QPoint & pt2) {
-  return  new QLine(pt1, pt2);
+void* C_ZN5QLineC2ERK6QPointS2_(QPoint* pt1, QPoint* pt2) {
+  return  new QLine(*pt1, *pt2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:57
@@ -110,8 +110,8 @@ int C_ZNK5QLine2dyEv(void *this_) {
 // /usr/include/qt/QtCore/qline.h:73
 // [-2] void translate(const class QPoint &)
 extern "C"
-void C_ZN5QLine9translateERK6QPoint(void *this_, const QPoint & p) {
-  ((QLine*)this_)->translate(p);
+void C_ZN5QLine9translateERK6QPoint(void *this_, QPoint* p) {
+  ((QLine*)this_)->translate(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:74
@@ -124,8 +124,8 @@ void C_ZN5QLine9translateEii(void *this_, int dx, int dy) {
 // /usr/include/qt/QtCore/qline.h:76
 // [16] QLine translated(const class QPoint &)
 extern "C"
-void* C_ZNK5QLine10translatedERK6QPoint(void *this_, const QPoint & p) {
-  auto rv = ((QLine*)this_)->translated(p);
+void* C_ZNK5QLine10translatedERK6QPoint(void *this_, QPoint* p) {
+  auto rv = ((QLine*)this_)->translated(*p);
 return new QLine(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -148,22 +148,22 @@ return new QPoint(rv);
 // /usr/include/qt/QtCore/qline.h:81
 // [-2] void setP1(const class QPoint &)
 extern "C"
-void C_ZN5QLine5setP1ERK6QPoint(void *this_, const QPoint & p1) {
-  ((QLine*)this_)->setP1(p1);
+void C_ZN5QLine5setP1ERK6QPoint(void *this_, QPoint* p1) {
+  ((QLine*)this_)->setP1(*p1);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:82
 // [-2] void setP2(const class QPoint &)
 extern "C"
-void C_ZN5QLine5setP2ERK6QPoint(void *this_, const QPoint & p2) {
-  ((QLine*)this_)->setP2(p2);
+void C_ZN5QLine5setP2ERK6QPoint(void *this_, QPoint* p2) {
+  ((QLine*)this_)->setP2(*p2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:83
 // [-2] void setPoints(const class QPoint &, const class QPoint &)
 extern "C"
-void C_ZN5QLine9setPointsERK6QPointS2_(void *this_, const QPoint & p1, const QPoint & p2) {
-  ((QLine*)this_)->setPoints(p1, p2);
+void C_ZN5QLine9setPointsERK6QPointS2_(void *this_, QPoint* p1, QPoint* p2) {
+  ((QLine*)this_)->setPoints(*p1, *p2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:84
@@ -171,5 +171,10 @@ void C_ZN5QLine9setPointsERK6QPointS2_(void *this_, const QPoint & p1, const QPo
 extern "C"
 void C_ZN5QLine7setLineEiiii(void *this_, int x1, int y1, int x2, int y2) {
   ((QLine*)this_)->setLine(x1, y1, x2, y2);
+}
+
+extern "C"
+void C_ZN5QLineD2Ev(void *this_) {
+  delete (QLine*)(this_);
 }
 //  main block end

@@ -14,4 +14,9 @@ public:
   virtual ~MyNormalDeleter() {}
 };
 
+
+extern "C"
+void C_ZN13NormalDeleterD2Ev(void *this_) {
+  delete (QtSharedPointer::NormalDeleter*)(this_);
+}
 //  main block end

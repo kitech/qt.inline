@@ -31,15 +31,15 @@ void* C_ZN9QUrlQueryC2Ev() {
 // /usr/include/qt/QtCore/qurlquery.h:60
 // [-2] void QUrlQuery(const class QUrl &)
 extern "C"
-void* C_ZN9QUrlQueryC2ERK4QUrl(const QUrl & url) {
-  return  new QUrlQuery(url);
+void* C_ZN9QUrlQueryC2ERK4QUrl(QUrl* url) {
+  return  new QUrlQuery(*url);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:61
 // [-2] void QUrlQuery(const class QString &)
 extern "C"
-void* C_ZN9QUrlQueryC2ERK7QString(const QString & queryString) {
-  return  new QUrlQuery(queryString);
+void* C_ZN9QUrlQueryC2ERK7QString(QString* queryString) {
+  return  new QUrlQuery(*queryString);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:67
@@ -52,8 +52,8 @@ void C_ZN9QUrlQueryD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qurlquery.h:73
 // [-2] void swap(class QUrlQuery &)
 extern "C"
-void C_ZN9QUrlQuery4swapERS_(void *this_, QUrlQuery & other) {
-  ((QUrlQuery*)this_)->swap(other);
+void C_ZN9QUrlQuery4swapERS_(void *this_, QUrlQuery* other) {
+  ((QUrlQuery*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:75
@@ -80,8 +80,8 @@ void C_ZN9QUrlQuery5clearEv(void *this_) {
 // /usr/include/qt/QtCore/qurlquery.h:80
 // [-2] void setQuery(const class QString &)
 extern "C"
-void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, const QString & queryString) {
-  ((QUrlQuery*)this_)->setQuery(queryString);
+void C_ZN9QUrlQuery8setQueryERK7QString(void *this_, QString* queryString) {
+  ((QUrlQuery*)this_)->setQuery(*queryString);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:84
@@ -110,29 +110,29 @@ return new QChar(rv);
 // /usr/include/qt/QtCore/qurlquery.h:91
 // [1] bool hasQueryItem(const class QString &)
 extern "C"
-bool C_ZNK9QUrlQuery12hasQueryItemERK7QString(void *this_, const QString & key) {
-  return (bool)((QUrlQuery*)this_)->hasQueryItem(key);
+bool C_ZNK9QUrlQuery12hasQueryItemERK7QString(void *this_, QString* key) {
+  return (bool)((QUrlQuery*)this_)->hasQueryItem(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:92
 // [-2] void addQueryItem(const class QString &, const class QString &)
 extern "C"
-void C_ZN9QUrlQuery12addQueryItemERK7QStringS2_(void *this_, const QString & key, const QString & value) {
-  ((QUrlQuery*)this_)->addQueryItem(key, value);
+void C_ZN9QUrlQuery12addQueryItemERK7QStringS2_(void *this_, QString* key, QString* value) {
+  ((QUrlQuery*)this_)->addQueryItem(*key, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:93
 // [-2] void removeQueryItem(const class QString &)
 extern "C"
-void C_ZN9QUrlQuery15removeQueryItemERK7QString(void *this_, const QString & key) {
-  ((QUrlQuery*)this_)->removeQueryItem(key);
+void C_ZN9QUrlQuery15removeQueryItemERK7QString(void *this_, QString* key) {
+  ((QUrlQuery*)this_)->removeQueryItem(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:96
 // [-2] void removeAllQueryItems(const class QString &)
 extern "C"
-void C_ZN9QUrlQuery19removeAllQueryItemsERK7QString(void *this_, const QString & key) {
-  ((QUrlQuery*)this_)->removeAllQueryItems(key);
+void C_ZN9QUrlQuery19removeAllQueryItemsERK7QString(void *this_, QString* key) {
+  ((QUrlQuery*)this_)->removeAllQueryItems(*key);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:98

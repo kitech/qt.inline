@@ -73,8 +73,8 @@ void* C_ZN6QColorC2E7QRgba64(QRgba64* rgba64) {
 // /usr/include/qt/QtGui/qcolor.h:76
 // [-2] void QColor(const class QString &)
 extern "C"
-void* C_ZN6QColorC2ERK7QString(const QString & name) {
-  return  new QColor(name);
+void* C_ZN6QColorC2ERK7QString(QString* name) {
+  return  new QColor(*name);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:78
@@ -131,8 +131,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qcolor.h:102
 // [-2] void setNamedColor(const class QString &)
 extern "C"
-void C_ZN6QColor13setNamedColorERK7QString(void *this_, const QString & name) {
-  ((QColor*)this_)->setNamedColor(name);
+void C_ZN6QColor13setNamedColorERK7QString(void *this_, QString* name) {
+  ((QColor*)this_)->setNamedColor(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:104
@@ -762,8 +762,8 @@ return new QColor(rv);
 // /usr/include/qt/QtGui/qcolor.h:231
 // [1] bool isValidColor(const class QString &)
 extern "C"
-bool C_ZN6QColor12isValidColorERK7QString(const QString & name) {
-  return (bool)QColor::isValidColor(name);
+bool C_ZN6QColor12isValidColorERK7QString(QString* name) {
+  return (bool)QColor::isValidColor(*name);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcolor.h:233
@@ -778,5 +778,10 @@ bool C_ZN6QColor12isValidColorE11QStringView(QStringView* arg0) {
 extern "C"
 bool C_ZN6QColor12isValidColorE13QLatin1String(QLatin1String* arg0) {
   return (bool)QColor::isValidColor(*arg0);
+}
+
+extern "C"
+void C_ZN6QColorD2Ev(void *this_) {
+  delete (QColor*)(this_);
 }
 //  main block end

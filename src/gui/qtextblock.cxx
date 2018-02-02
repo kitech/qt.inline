@@ -247,4 +247,9 @@ extern "C"
 int C_ZNK10QTextBlock13fragmentIndexEv(void *this_) {
   return (int)((QTextBlock*)this_)->fragmentIndex();
 }
+
+extern "C"
+void C_ZN10QTextBlockD2Ev(void *this_) {
+  delete (QTextBlock*)(this_);
+}
 //  main block end

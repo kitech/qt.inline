@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qbuffer.h:87
 // [-2] void connectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN7QBuffer13connectNotifyERK11QMetaMethod = 0;
+void* callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QBuffer13connectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:88
 // [-2] void disconnectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod = 0;
+void* callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:90
 // [8] qint64 readData(char *, qint64)
 extern "C"
-void* callback_ZN7QBuffer8readDataEPcx = 0;
+void* callback_ZN7QBuffer8readDataEPcx_fnptr = 0;
 extern "C" void set_callback_ZN7QBuffer8readDataEPcx(void*cbfn)
-{ callback_ZN7QBuffer8readDataEPcx = cbfn; }
+{ callback_ZN7QBuffer8readDataEPcx_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:91
 // [8] qint64 writeData(const char *, qint64)
 extern "C"
-void* callback_ZN7QBuffer9writeDataEPKcx = 0;
+void* callback_ZN7QBuffer9writeDataEPKcx_fnptr = 0;
 extern "C" void set_callback_ZN7QBuffer9writeDataEPKcx(void*cbfn)
-{ callback_ZN7QBuffer9writeDataEPKcx = cbfn; }
+{ callback_ZN7QBuffer9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQBuffer : public QBuffer {
 public:
@@ -46,29 +46,33 @@ MyQBuffer(QObject * parent) : QBuffer(parent) {}
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & arg0) {
-    if (callback_ZN7QBuffer13connectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(arg0);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&arg0);
     }
     QBuffer::connectNotify(arg0);
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & arg0) {
-    if (callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(arg0);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&arg0);
     }
     QBuffer::disconnectNotify(arg0);
   }
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
-    if (callback_ZN7QBuffer8readDataEPcx != 0) {
-      // callback_ZN7QBuffer8readDataEPcx(data, maxlen);
+    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN7QBuffer8readDataEPcx_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , data, maxlen);
     }
     return QBuffer::readData(data, maxlen);
   }
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    if (callback_ZN7QBuffer9writeDataEPKcx != 0) {
-      // callback_ZN7QBuffer9writeDataEPKcx(data, len);
+    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN7QBuffer9writeDataEPKcx_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , data, len);
     }
     return QBuffer::writeData(data, len);
   }
@@ -131,8 +135,8 @@ void C_ZN7QBuffer9setBufferEP10QByteArray(void *this_, QByteArray * a) {
 // /usr/include/qt/QtCore/qbuffer.h:72
 // [-2] void setData(const class QByteArray &)
 extern "C"
-void C_ZN7QBuffer7setDataERK10QByteArray(void *this_, const QByteArray & data) {
-  ((QBuffer*)this_)->setData(data);
+void C_ZN7QBuffer7setDataERK10QByteArray(void *this_, QByteArray* data) {
+  ((QBuffer*)this_)->setData(*data);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:73

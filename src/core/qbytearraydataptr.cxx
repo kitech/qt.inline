@@ -14,4 +14,9 @@ public:
   virtual ~MyQByteArrayDataPtr() {}
 };
 
+
+extern "C"
+void C_ZN17QByteArrayDataPtrD2Ev(void *this_) {
+  delete (QByteArrayDataPtr*)(this_);
+}
 //  main block end

@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qmainwindow.h:206
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
 extern "C"
-void* callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent = 0;
+void* callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent = cbfn; }
+{ callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:208
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QMainWindow5eventEP6QEvent = 0;
+void* callback_ZN11QMainWindow5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QMainWindow5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QMainWindow5eventEP6QEvent = cbfn; }
+{ callback_ZN11QMainWindow5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQMainWindow : public QMainWindow {
 public:
@@ -30,15 +30,17 @@ public:
 MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(parent, flags) {}
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
-    if (callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent != 0) {
-      // callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(event);
+    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QMainWindow::contextMenuEvent(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN11QMainWindow5eventEP6QEvent != 0) {
-      // callback_ZN11QMainWindow5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMainWindow5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QMainWindow::event(event);
   }
@@ -78,8 +80,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qmainwindow.h:98
 // [-2] void setIconSize(const class QSize &)
 extern "C"
-void C_ZN11QMainWindow11setIconSizeERK5QSize(void *this_, const QSize & iconSize) {
-  ((QMainWindow*)this_)->setIconSize(iconSize);
+void C_ZN11QMainWindow11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
+  ((QMainWindow*)this_)->setIconSize(*iconSize);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:100
@@ -156,8 +158,8 @@ void C_ZNK11QMainWindow11dockOptionsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qmainwindow.h:123
 // [1] bool isSeparator(const class QPoint &)
 extern "C"
-bool C_ZNK11QMainWindow11isSeparatorERK6QPoint(void *this_, const QPoint & pos) {
-  return (bool)((QMainWindow*)this_)->isSeparator(pos);
+bool C_ZNK11QMainWindow11isSeparatorERK6QPoint(void *this_, QPoint* pos) {
+  return (bool)((QMainWindow*)this_)->isSeparator(*pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:126
@@ -268,8 +270,8 @@ void C_ZN11QMainWindow10addToolBarEP8QToolBar(void *this_, QToolBar * toolbar) {
 // /usr/include/qt/QtWidgets/qmainwindow.h:154
 // [8] QToolBar * addToolBar(const class QString &)
 extern "C"
-void* C_ZN11QMainWindow10addToolBarERK7QString(void *this_, const QString & title) {
-  return (void*)((QMainWindow*)this_)->addToolBar(title);
+void* C_ZN11QMainWindow10addToolBarERK7QString(void *this_, QString* title) {
+  return (void*)((QMainWindow*)this_)->addToolBar(*title);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:155
@@ -374,8 +376,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtWidgets/qmainwindow.h:182
 // [1] bool restoreState(const class QByteArray &, int)
 extern "C"
-bool C_ZN11QMainWindow12restoreStateERK10QByteArrayi(void *this_, const QByteArray & state, int version) {
-  return (bool)((QMainWindow*)this_)->restoreState(state, version);
+bool C_ZN11QMainWindow12restoreStateERK10QByteArrayi(void *this_, QByteArray* state, int version) {
+  return (bool)((QMainWindow*)this_)->restoreState(*state, version);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:185
@@ -409,8 +411,8 @@ void C_ZN11QMainWindow30setUnifiedTitleAndToolBarOnMacEb(void *this_, bool set) 
 // /usr/include/qt/QtWidgets/qmainwindow.h:198
 // [-2] void iconSizeChanged(const class QSize &)
 extern "C"
-void C_ZN11QMainWindow15iconSizeChangedERK5QSize(void *this_, const QSize & iconSize) {
-  ((QMainWindow*)this_)->iconSizeChanged(iconSize);
+void C_ZN11QMainWindow15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
+  ((QMainWindow*)this_)->iconSizeChanged(*iconSize);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:199

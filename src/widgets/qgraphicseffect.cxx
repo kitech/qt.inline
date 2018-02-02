@@ -12,51 +12,51 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:99
 // [-2] void draw(class QPainter *)
 extern "C"
-void* callback_ZN15QGraphicsEffect4drawEP8QPainter = 0;
+void* callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN15QGraphicsEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN15QGraphicsEffect4drawEP8QPainter = cbfn; }
+{ callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:100
 // [-2] void sourceChanged(QGraphicsEffect::ChangeFlags)
 extern "C"
-void* callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE = 0;
+void* callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = 0;
 extern "C" void set_callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void*cbfn)
-{ callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE = cbfn; }
+{ callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:101
 // [-2] void updateBoundingRect()
 extern "C"
-void* callback_ZN15QGraphicsEffect18updateBoundingRectEv = 0;
+void* callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = 0;
 extern "C" void set_callback_ZN15QGraphicsEffect18updateBoundingRectEv(void*cbfn)
-{ callback_ZN15QGraphicsEffect18updateBoundingRectEv = cbfn; }
+{ callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:103
 // [1] bool sourceIsPixmap()
 extern "C"
-void* callback_ZNK15QGraphicsEffect14sourceIsPixmapEv = 0;
+void* callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = 0;
 extern "C" void set_callback_ZNK15QGraphicsEffect14sourceIsPixmapEv(void*cbfn)
-{ callback_ZNK15QGraphicsEffect14sourceIsPixmapEv = cbfn; }
+{ callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:104
 // [32] QRectF sourceBoundingRect(Qt::CoordinateSystem)
 extern "C"
-void* callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE = 0;
+void* callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = 0;
 extern "C" void set_callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(void*cbfn)
-{ callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE = cbfn; }
+{ callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:105
 // [-2] void drawSource(class QPainter *)
 extern "C"
-void* callback_ZN15QGraphicsEffect10drawSourceEP8QPainter = 0;
+void* callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(void*cbfn)
-{ callback_ZN15QGraphicsEffect10drawSourceEP8QPainter = cbfn; }
+{ callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:106
 // [32] QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
 extern "C"
-void* callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE = 0;
+void* callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = 0;
 extern "C" void set_callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(void*cbfn)
-{ callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE = cbfn; }
+{ callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = cbfn; }
 
 class MyQGraphicsEffect : public QGraphicsEffect {
 public:
@@ -65,50 +65,57 @@ public:
 MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    if (callback_ZN15QGraphicsEffect4drawEP8QPainter != 0) {
-      // callback_ZN15QGraphicsEffect4drawEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsEffect::draw(painter);
   }
 // void sourceChanged(QGraphicsEffect::ChangeFlags)
   virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
-    if (callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE != 0) {
-      // callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(flags);
+    auto fnptr = ((void (*)(void* , QFlags<QGraphicsEffect::ChangeFlag>))(callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , flags);
     }
     QGraphicsEffect::sourceChanged(flags);
   }
 // void updateBoundingRect()
   virtual void updateBoundingRect() {
-    if (callback_ZN15QGraphicsEffect18updateBoundingRectEv != 0) {
-      // callback_ZN15QGraphicsEffect18updateBoundingRectEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QGraphicsEffect::updateBoundingRect();
   }
 // bool sourceIsPixmap()
   virtual bool sourceIsPixmap() {
-    if (callback_ZNK15QGraphicsEffect14sourceIsPixmapEv != 0) {
-      // callback_ZNK15QGraphicsEffect14sourceIsPixmapEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QGraphicsEffect::sourceIsPixmap();
   }
 // QRectF sourceBoundingRect(Qt::CoordinateSystem)
   virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
-    if (callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE != 0) {
-      // callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(system);
+    auto fnptr = ((QRectF (*)(void* , Qt::CoordinateSystem))(callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , system);
     }
     return QGraphicsEffect::sourceBoundingRect(system);
   }
 // void drawSource(class QPainter *)
   virtual void drawSource(QPainter * painter) {
-    if (callback_ZN15QGraphicsEffect10drawSourceEP8QPainter != 0) {
-      // callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsEffect::drawSource(painter);
   }
 // QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
   virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
-    if (callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE != 0) {
-      // callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(system, offset, mode);
+    auto fnptr = ((QPixmap (*)(void* , Qt::CoordinateSystem, QPoint *, QGraphicsEffect::PixmapPadMode))(callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , system, offset, mode);
     }
     return QGraphicsEffect::sourcePixmap(system, offset, mode);
   }
@@ -140,8 +147,8 @@ void C_ZN15QGraphicsEffectD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:85
 // [32] QRectF boundingRectFor(const class QRectF &)
 extern "C"
-void* C_ZNK15QGraphicsEffect15boundingRectForERK6QRectF(void *this_, const QRectF & sourceRect) {
-  auto rv = ((QGraphicsEffect*)this_)->boundingRectFor(sourceRect);
+void* C_ZNK15QGraphicsEffect15boundingRectForERK6QRectF(void *this_, QRectF* sourceRect) {
+  auto rv = ((QGraphicsEffect*)this_)->boundingRectFor(*sourceRect);
 return new QRectF(rv);
 }
 // Public Visibility=Default Availability=Available

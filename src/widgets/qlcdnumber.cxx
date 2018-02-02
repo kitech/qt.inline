@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qlcdnumber.h:107
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN10QLCDNumber5eventEP6QEvent = 0;
+void* callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QLCDNumber5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QLCDNumber5eventEP6QEvent = cbfn; }
+{ callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:108
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN10QLCDNumber10paintEventEP11QPaintEvent = 0;
+void* callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN10QLCDNumber10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = cbfn; }
 
 class MyQLCDNumber : public QLCDNumber {
 public:
@@ -32,15 +32,17 @@ MyQLCDNumber(QWidget * parent) : QLCDNumber(parent) {}
 MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN10QLCDNumber5eventEP6QEvent != 0) {
-      // callback_ZN10QLCDNumber5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QLCDNumber5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QLCDNumber::event(e);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN10QLCDNumber10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QLCDNumber::paintEvent(arg0);
   }
@@ -165,8 +167,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qlcdnumber.h:94
 // [-2] void display(const class QString &)
 extern "C"
-void C_ZN10QLCDNumber7displayERK7QString(void *this_, const QString & str) {
-  ((QLCDNumber*)this_)->display(str);
+void C_ZN10QLCDNumber7displayERK7QString(void *this_, QString* str) {
+  ((QLCDNumber*)this_)->display(*str);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlcdnumber.h:95

@@ -74,4 +74,9 @@ void* C_ZNK13QTextFragment4textEv(void *this_) {
   auto rv = ((QTextFragment*)this_)->text();
 return new QString(rv);
 }
+
+extern "C"
+void C_ZN13QTextFragmentD2Ev(void *this_) {
+  delete (QTextFragment*)(this_);
+}
 //  main block end

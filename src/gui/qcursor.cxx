@@ -40,15 +40,15 @@ void* C_ZN7QCursorC2EN2Qt11CursorShapeE(Qt::CursorShape shape) {
 // /usr/include/qt/QtGui/qcursor.h:84
 // [-2] void QCursor(const class QBitmap &, const class QBitmap &, int, int)
 extern "C"
-void* C_ZN7QCursorC2ERK7QBitmapS2_ii(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) {
-  return  new QCursor(bitmap, mask, hotX, hotY);
+void* C_ZN7QCursorC2ERK7QBitmapS2_ii(QBitmap* bitmap, QBitmap* mask, int hotX, int hotY) {
+  return  new QCursor(*bitmap, *mask, hotX, hotY);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:85
 // [-2] void QCursor(const class QPixmap &, int, int)
 extern "C"
-void* C_ZN7QCursorC2ERK7QPixmapii(const QPixmap & pixmap, int hotX, int hotY) {
-  return  new QCursor(pixmap, hotX, hotY);
+void* C_ZN7QCursorC2ERK7QPixmapii(QPixmap* pixmap, int hotX, int hotY) {
+  return  new QCursor(*pixmap, hotX, hotY);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:87
@@ -61,8 +61,8 @@ void C_ZN7QCursorD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qcursor.h:95
 // [-2] void swap(class QCursor &)
 extern "C"
-void C_ZN7QCursor4swapERS_(void *this_, QCursor & other) {
-  ((QCursor*)this_)->swap(other);
+void C_ZN7QCursor4swapERS_(void *this_, QCursor* other) {
+  ((QCursor*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:99
@@ -142,14 +142,14 @@ void C_ZN7QCursor6setPosEP7QScreenii(QScreen * screen, int x, int y) {
 // /usr/include/qt/QtGui/qcursor.h:111
 // [-2] void setPos(const class QPoint &)
 extern "C"
-void C_ZN7QCursor6setPosERK6QPoint(const QPoint & p) {
-  QCursor::setPos(p);
+void C_ZN7QCursor6setPosERK6QPoint(QPoint* p) {
+  QCursor::setPos(*p);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:112
 // [-2] void setPos(class QScreen *, const class QPoint &)
 extern "C"
-void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, const QPoint & p) {
-  QCursor::setPos(screen, p);
+void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, QPoint* p) {
+  QCursor::setPos(screen, *p);
 }
 //  main block end

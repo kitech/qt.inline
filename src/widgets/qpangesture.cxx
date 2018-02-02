@@ -72,15 +72,15 @@ qreal C_ZNK11QPanGesture12accelerationEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgesture.h:125
 // [-2] void setLastOffset(const class QPointF &)
 extern "C"
-void C_ZN11QPanGesture13setLastOffsetERK7QPointF(void *this_, const QPointF & value) {
-  ((QPanGesture*)this_)->setLastOffset(value);
+void C_ZN11QPanGesture13setLastOffsetERK7QPointF(void *this_, QPointF* value) {
+  ((QPanGesture*)this_)->setLastOffset(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:126
 // [-2] void setOffset(const class QPointF &)
 extern "C"
-void C_ZN11QPanGesture9setOffsetERK7QPointF(void *this_, const QPointF & value) {
-  ((QPanGesture*)this_)->setOffset(value);
+void C_ZN11QPanGesture9setOffsetERK7QPointF(void *this_, QPointF* value) {
+  ((QPanGesture*)this_)->setOffset(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:127

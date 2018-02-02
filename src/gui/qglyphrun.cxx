@@ -34,8 +34,8 @@ void C_ZN9QGlyphRunD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qglyphrun.h:75
 // [-2] void swap(class QGlyphRun &)
 extern "C"
-void C_ZN9QGlyphRun4swapERS_(void *this_, QGlyphRun & other) {
-  ((QGlyphRun*)this_)->swap(other);
+void C_ZN9QGlyphRun4swapERS_(void *this_, QGlyphRun* other) {
+  ((QGlyphRun*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:77
@@ -49,8 +49,8 @@ return new QRawFont(rv);
 // /usr/include/qt/QtGui/qglyphrun.h:78
 // [-2] void setRawFont(const class QRawFont &)
 extern "C"
-void C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *this_, const QRawFont & rawFont) {
-  ((QGlyphRun*)this_)->setRawFont(rawFont);
+void C_ZN9QGlyphRun10setRawFontERK8QRawFont(void *this_, QRawFont* rawFont) {
+  ((QGlyphRun*)this_)->setRawFont(*rawFont);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:80
@@ -148,8 +148,8 @@ void C_ZNK9QGlyphRun5flagsEv(void *this_) {
 // /usr/include/qt/QtGui/qglyphrun.h:112
 // [-2] void setBoundingRect(const class QRectF &)
 extern "C"
-void C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *this_, const QRectF & boundingRect) {
-  ((QGlyphRun*)this_)->setBoundingRect(boundingRect);
+void C_ZN9QGlyphRun15setBoundingRectERK6QRectF(void *this_, QRectF* boundingRect) {
+  ((QGlyphRun*)this_)->setBoundingRect(*boundingRect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:113

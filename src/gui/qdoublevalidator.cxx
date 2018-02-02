@@ -50,8 +50,8 @@ void C_ZN16QDoubleValidatorD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:142
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-QValidator::State C_ZNK16QDoubleValidator8validateER7QStringRi(void *this_, QString & arg0, int & arg1) {
-  return (QValidator::State)((QDoubleValidator*)this_)->validate(arg0, arg1);
+QValidator::State C_ZNK16QDoubleValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
+  return (QValidator::State)((QDoubleValidator*)this_)->validate(*arg0, arg1);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:144

@@ -20,8 +20,8 @@ MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, o
 // /usr/include/qt/QtGui/qevent.h:463
 // [-2] void QResizeEvent(const class QSize &, const class QSize &)
 extern "C"
-void* C_ZN12QResizeEventC2ERK5QSizeS2_(const QSize & size, const QSize & oldSize) {
-  return  new QResizeEvent(size, oldSize);
+void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
+  return  new QResizeEvent(*size, *oldSize);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:464

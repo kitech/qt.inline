@@ -59,4 +59,9 @@ void* C_ZNK9QTextItem4fontEv(void *this_) {
   auto rv = ((QTextItem*)this_)->font();
 return new QFont(rv);
 }
+
+extern "C"
+void C_ZN9QTextItemD2Ev(void *this_) {
+  delete (QTextItem*)(this_);
+}
 //  main block end

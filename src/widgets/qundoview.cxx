@@ -73,8 +73,8 @@ void* C_ZNK9QUndoView5groupEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundoview.h:77
 // [-2] void setEmptyLabel(const class QString &)
 extern "C"
-void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, const QString & label) {
-  ((QUndoView*)this_)->setEmptyLabel(label);
+void C_ZN9QUndoView13setEmptyLabelERK7QString(void *this_, QString* label) {
+  ((QUndoView*)this_)->setEmptyLabel(*label);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:78
@@ -88,8 +88,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qundoview.h:80
 // [-2] void setCleanIcon(const class QIcon &)
 extern "C"
-void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, const QIcon & icon) {
-  ((QUndoView*)this_)->setCleanIcon(icon);
+void C_ZN9QUndoView12setCleanIconERK5QIcon(void *this_, QIcon* icon) {
+  ((QUndoView*)this_)->setCleanIcon(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundoview.h:81

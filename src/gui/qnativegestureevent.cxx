@@ -22,15 +22,15 @@ MyQNativeGestureEvent(Qt::NativeGestureType type, const QTouchDevice * dev, cons
 // /usr/include/qt/QtGui/qevent.h:305
 // [-2] void QNativeGestureEvent(Qt::NativeGestureType, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
 extern "C"
-void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
-  return  new QNativeGestureEvent(type, localPos, windowPos, screenPos, value, sequenceId, intArgument);
+void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
+  return  new QNativeGestureEvent(type, *localPos, *windowPos, *screenPos, value, sequenceId, intArgument);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:308
 // [-2] void QNativeGestureEvent(Qt::NativeGestureType, const class QTouchDevice *, const class QPointF &, const class QPointF &, const class QPointF &, qreal, ulong, quint64)
 extern "C"
-void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy(Qt::NativeGestureType type, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
-  return  new QNativeGestureEvent(type, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument);
+void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy(Qt::NativeGestureType type, const QTouchDevice * dev, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
+  return  new QNativeGestureEvent(type, dev, *localPos, *windowPos, *screenPos, value, sequenceId, intArgument);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:310

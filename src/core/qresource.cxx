@@ -12,16 +12,16 @@
 // /usr/include/qt/QtCore/qresource.h:86
 // [1] bool isDir()
 extern "C"
-void* callback_ZNK9QResource5isDirEv = 0;
+void* callback_ZNK9QResource5isDirEv_fnptr = 0;
 extern "C" void set_callback_ZNK9QResource5isDirEv(void*cbfn)
-{ callback_ZNK9QResource5isDirEv = cbfn; }
+{ callback_ZNK9QResource5isDirEv_fnptr = cbfn; }
 // Protected inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:87
 // [1] bool isFile()
 extern "C"
-void* callback_ZNK9QResource6isFileEv = 0;
+void* callback_ZNK9QResource6isFileEv_fnptr = 0;
 extern "C" void set_callback_ZNK9QResource6isFileEv(void*cbfn)
-{ callback_ZNK9QResource6isFileEv = cbfn; }
+{ callback_ZNK9QResource6isFileEv_fnptr = cbfn; }
 
 class MyQResource : public QResource {
 public:
@@ -30,15 +30,17 @@ public:
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 // bool isDir()
   virtual bool isDir() {
-    if (callback_ZNK9QResource5isDirEv != 0) {
-      // callback_ZNK9QResource5isDirEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource5isDirEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QResource::isDir();
   }
 // bool isFile()
   virtual bool isFile() {
-    if (callback_ZNK9QResource6isFileEv != 0) {
-      // callback_ZNK9QResource6isFileEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource6isFileEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QResource::isFile();
   }
@@ -48,9 +50,9 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
 // /usr/include/qt/QtCore/qresource.h:57
 // [-2] void QResource(const class QString &, const class QLocale &)
 extern "C"
-void* C_ZN9QResourceC2ERK7QStringRK7QLocale(const QString & file, const QLocale & locale) {
+void* C_ZN9QResourceC2ERK7QStringRK7QLocale(QString* file, QLocale* locale) {
   auto _nilp = (MyQResource*)(0);
-  return  new MyQResource(file, locale);
+  return  new MyQResource(*file, *locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:58
@@ -63,8 +65,8 @@ void C_ZN9QResourceD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qresource.h:60
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN9QResource11setFileNameERK7QString(void *this_, const QString & file) {
-  ((QResource*)this_)->setFileName(file);
+void C_ZN9QResource11setFileNameERK7QString(void *this_, QString* file) {
+  ((QResource*)this_)->setFileName(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:61
@@ -86,8 +88,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qresource.h:64
 // [-2] void setLocale(const class QLocale &)
 extern "C"
-void C_ZN9QResource9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
-  ((QResource*)this_)->setLocale(locale);
+void C_ZN9QResource9setLocaleERK7QLocale(void *this_, QLocale* locale) {
+  ((QResource*)this_)->setLocale(*locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:65
@@ -137,35 +139,35 @@ return new QDateTime(rv);
 // /usr/include/qt/QtCore/qresource.h:74
 // [-2] void addSearchPath(const class QString &)
 extern "C"
-void C_ZN9QResource13addSearchPathERK7QString(const QString & path) {
-  QResource::addSearchPath(path);
+void C_ZN9QResource13addSearchPathERK7QString(QString* path) {
+  QResource::addSearchPath(*path);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:77
 // [1] bool registerResource(const class QString &, const class QString &)
 extern "C"
-bool C_ZN9QResource16registerResourceERK7QStringS2_(const QString & rccFilename, const QString & resourceRoot) {
-  return (bool)QResource::registerResource(rccFilename, resourceRoot);
+bool C_ZN9QResource16registerResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
+  return (bool)QResource::registerResource(*rccFilename, *resourceRoot);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:78
 // [1] bool unregisterResource(const class QString &, const class QString &)
 extern "C"
-bool C_ZN9QResource18unregisterResourceERK7QStringS2_(const QString & rccFilename, const QString & resourceRoot) {
-  return (bool)QResource::unregisterResource(rccFilename, resourceRoot);
+bool C_ZN9QResource18unregisterResourceERK7QStringS2_(QString* rccFilename, QString* resourceRoot) {
+  return (bool)QResource::unregisterResource(*rccFilename, *resourceRoot);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:80
 // [1] bool registerResource(const uchar *, const class QString &)
 extern "C"
-bool C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, const QString & resourceRoot) {
-  return (bool)QResource::registerResource(rccData, resourceRoot);
+bool C_ZN9QResource16registerResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {
+  return (bool)QResource::registerResource(rccData, *resourceRoot);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qresource.h:81
 // [1] bool unregisterResource(const uchar *, const class QString &)
 extern "C"
-bool C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, const QString & resourceRoot) {
-  return (bool)QResource::unregisterResource(rccData, resourceRoot);
+bool C_ZN9QResource18unregisterResourceEPKhRK7QString(const uchar * rccData, QString* resourceRoot) {
+  return (bool)QResource::unregisterResource(rccData, *resourceRoot);
 }
 //  main block end

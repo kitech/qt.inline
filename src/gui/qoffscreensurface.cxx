@@ -78,8 +78,8 @@ bool C_ZNK17QOffscreenSurface7isValidEv(void *this_) {
 // /usr/include/qt/QtGui/qoffscreensurface.h:72
 // [-2] void setFormat(const class QSurfaceFormat &)
 extern "C"
-void C_ZN17QOffscreenSurface9setFormatERK14QSurfaceFormat(void *this_, const QSurfaceFormat & format) {
-  ((QOffscreenSurface*)this_)->setFormat(format);
+void C_ZN17QOffscreenSurface9setFormatERK14QSurfaceFormat(void *this_, QSurfaceFormat* format) {
+  ((QOffscreenSurface*)this_)->setFormat(*format);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qoffscreensurface.h:73

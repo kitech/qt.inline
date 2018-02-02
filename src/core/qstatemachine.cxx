@@ -12,51 +12,51 @@
 // /usr/include/qt/QtCore/qstatemachine.h:159
 // [-2] void onEntry(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine7onEntryEP6QEvent = 0;
+void* callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine7onEntryEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:160
 // [-2] void onExit(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine6onExitEP6QEvent = 0;
+void* callback_ZN13QStateMachine6onExitEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine6onExitEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine6onExitEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine6onExitEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:162
 // [-2] void beginSelectTransitions(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent = 0;
+void* callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:163
 // [-2] void endSelectTransitions(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent = 0;
+void* callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:165
 // [-2] void beginMicrostep(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine14beginMicrostepEP6QEvent = 0;
+void* callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine14beginMicrostepEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine14beginMicrostepEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:166
 // [-2] void endMicrostep(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine12endMicrostepEP6QEvent = 0;
+void* callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine12endMicrostepEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine12endMicrostepEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:168
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN13QStateMachine5eventEP6QEvent = 0;
+void* callback_ZN13QStateMachine5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QStateMachine5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QStateMachine5eventEP6QEvent = cbfn; }
+{ callback_ZN13QStateMachine5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStateMachine : public QStateMachine {
 public:
@@ -67,50 +67,57 @@ MyQStateMachine(QObject * parent) : QStateMachine(parent) {}
 MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(childMode, parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    if (callback_ZN13QStateMachine7onEntryEP6QEvent != 0) {
-      // callback_ZN13QStateMachine7onEntryEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::onEntry(event);
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    if (callback_ZN13QStateMachine6onExitEP6QEvent != 0) {
-      // callback_ZN13QStateMachine6onExitEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine6onExitEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::onExit(event);
   }
 // void beginSelectTransitions(class QEvent *)
   virtual void beginSelectTransitions(QEvent * event) {
-    if (callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent != 0) {
-      // callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::beginSelectTransitions(event);
   }
 // void endSelectTransitions(class QEvent *)
   virtual void endSelectTransitions(QEvent * event) {
-    if (callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent != 0) {
-      // callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::endSelectTransitions(event);
   }
 // void beginMicrostep(class QEvent *)
   virtual void beginMicrostep(QEvent * event) {
-    if (callback_ZN13QStateMachine14beginMicrostepEP6QEvent != 0) {
-      // callback_ZN13QStateMachine14beginMicrostepEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::beginMicrostep(event);
   }
 // void endMicrostep(class QEvent *)
   virtual void endMicrostep(QEvent * event) {
-    if (callback_ZN13QStateMachine12endMicrostepEP6QEvent != 0) {
-      // callback_ZN13QStateMachine12endMicrostepEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QStateMachine::endMicrostep(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN13QStateMachine5eventEP6QEvent != 0) {
-      // callback_ZN13QStateMachine5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QStateMachine5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QStateMachine::event(e);
   }

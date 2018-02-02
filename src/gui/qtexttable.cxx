@@ -97,8 +97,8 @@ void C_ZN10QTextTable10mergeCellsEiiii(void *this_, int row, int col, int numRow
 // /usr/include/qt/QtGui/qtexttable.h:114
 // [-2] void mergeCells(const class QTextCursor &)
 extern "C"
-void C_ZN10QTextTable10mergeCellsERK11QTextCursor(void *this_, const QTextCursor & cursor) {
-  ((QTextTable*)this_)->mergeCells(cursor);
+void C_ZN10QTextTable10mergeCellsERK11QTextCursor(void *this_, QTextCursor* cursor) {
+  ((QTextTable*)this_)->mergeCells(*cursor);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:115
@@ -141,32 +141,32 @@ return new QTextTableCell(rv);
 // /usr/include/qt/QtGui/qtexttable.h:122
 // [16] QTextTableCell cellAt(const class QTextCursor &)
 extern "C"
-void* C_ZNK10QTextTable6cellAtERK11QTextCursor(void *this_, const QTextCursor & c) {
-  auto rv = ((QTextTable*)this_)->cellAt(c);
+void* C_ZNK10QTextTable6cellAtERK11QTextCursor(void *this_, QTextCursor* c) {
+  auto rv = ((QTextTable*)this_)->cellAt(*c);
 return new QTextTableCell(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:124
 // [8] QTextCursor rowStart(const class QTextCursor &)
 extern "C"
-void* C_ZNK10QTextTable8rowStartERK11QTextCursor(void *this_, const QTextCursor & c) {
-  auto rv = ((QTextTable*)this_)->rowStart(c);
+void* C_ZNK10QTextTable8rowStartERK11QTextCursor(void *this_, QTextCursor* c) {
+  auto rv = ((QTextTable*)this_)->rowStart(*c);
 return new QTextCursor(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:125
 // [8] QTextCursor rowEnd(const class QTextCursor &)
 extern "C"
-void* C_ZNK10QTextTable6rowEndERK11QTextCursor(void *this_, const QTextCursor & c) {
-  auto rv = ((QTextTable*)this_)->rowEnd(c);
+void* C_ZNK10QTextTable6rowEndERK11QTextCursor(void *this_, QTextCursor* c) {
+  auto rv = ((QTextTable*)this_)->rowEnd(*c);
 return new QTextCursor(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:127
 // [-2] void setFormat(const class QTextTableFormat &)
 extern "C"
-void C_ZN10QTextTable9setFormatERK16QTextTableFormat(void *this_, const QTextTableFormat & format) {
-  ((QTextTable*)this_)->setFormat(format);
+void C_ZN10QTextTable9setFormatERK16QTextTableFormat(void *this_, QTextTableFormat* format) {
+  ((QTextTable*)this_)->setFormat(*format);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:128

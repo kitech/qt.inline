@@ -64,8 +64,8 @@ int C_ZNK12QTouchDevice18maximumTouchPointsEv(void *this_) {
 // /usr/include/qt/QtGui/qtouchdevice.h:83
 // [-2] void setName(const class QString &)
 extern "C"
-void C_ZN12QTouchDevice7setNameERK7QString(void *this_, const QString & name) {
-  ((QTouchDevice*)this_)->setName(name);
+void C_ZN12QTouchDevice7setNameERK7QString(void *this_, QString* name) {
+  ((QTouchDevice*)this_)->setName(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:84

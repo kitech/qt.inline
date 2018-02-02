@@ -48,8 +48,8 @@ void C_ZN13QSignalMapper10setMappingEP7QObjecti(void *this_, QObject * sender, i
 // /usr/include/qt/QtCore/qsignalmapper.h:60
 // [-2] void setMapping(class QObject *, const class QString &)
 extern "C"
-void C_ZN13QSignalMapper10setMappingEP7QObjectRK7QString(void *this_, QObject * sender, const QString & text) {
-  ((QSignalMapper*)this_)->setMapping(sender, text);
+void C_ZN13QSignalMapper10setMappingEP7QObjectRK7QString(void *this_, QObject * sender, QString* text) {
+  ((QSignalMapper*)this_)->setMapping(sender, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignalmapper.h:61
@@ -83,8 +83,8 @@ void* C_ZNK13QSignalMapper7mappingEi(void *this_, int id) {
 // /usr/include/qt/QtCore/qsignalmapper.h:66
 // [8] QObject * mapping(const class QString &)
 extern "C"
-void* C_ZNK13QSignalMapper7mappingERK7QString(void *this_, const QString & text) {
-  return (void*)((QSignalMapper*)this_)->mapping(text);
+void* C_ZNK13QSignalMapper7mappingERK7QString(void *this_, QString* text) {
+  return (void*)((QSignalMapper*)this_)->mapping(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignalmapper.h:67
@@ -111,8 +111,8 @@ void C_ZN13QSignalMapper6mappedEi(void *this_, int arg0) {
 // /usr/include/qt/QtCore/qsignalmapper.h:72
 // [-2] void mapped(const class QString &)
 extern "C"
-void C_ZN13QSignalMapper6mappedERK7QString(void *this_, const QString & arg0) {
-  ((QSignalMapper*)this_)->mapped(arg0);
+void C_ZN13QSignalMapper6mappedERK7QString(void *this_, QString* arg0) {
+  ((QSignalMapper*)this_)->mapped(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignalmapper.h:73

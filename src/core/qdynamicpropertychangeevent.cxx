@@ -20,8 +20,8 @@ MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeE
 // /usr/include/qt/QtCore/qcoreevent.h:365
 // [-2] void QDynamicPropertyChangeEvent(const class QByteArray &)
 extern "C"
-void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(const QByteArray & name) {
-  return  new QDynamicPropertyChangeEvent(name);
+void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(QByteArray* name) {
+  return  new QDynamicPropertyChangeEvent(*name);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:366

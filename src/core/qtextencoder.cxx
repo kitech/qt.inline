@@ -43,8 +43,8 @@ void C_ZN12QTextEncoderD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qtextcodec.h:145
 // [8] QByteArray fromUnicode(const class QString &)
 extern "C"
-void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, const QString & str) {
-  auto rv = ((QTextEncoder*)this_)->fromUnicode(str);
+void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, QString* str) {
+  auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
 return new QByteArray(rv);
 }
 // Public Visibility=Default Availability=Available

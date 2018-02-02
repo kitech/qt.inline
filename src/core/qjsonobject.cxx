@@ -34,8 +34,8 @@ void C_ZN11QJsonObjectD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qjsonobject.h:90
 // [-2] void swap(class QJsonObject &)
 extern "C"
-void C_ZN11QJsonObject4swapERS_(void *this_, QJsonObject & other) {
-  ((QJsonObject*)this_)->swap(other);
+void C_ZN11QJsonObject4swapERS_(void *this_, QJsonObject* other) {
+  ((QJsonObject*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:102
@@ -69,8 +69,8 @@ bool C_ZNK11QJsonObject7isEmptyEv(void *this_) {
 // /usr/include/qt/QtCore/qjsonobject.h:107
 // [24] QJsonValue value(const class QString &)
 extern "C"
-void* C_ZNK11QJsonObject5valueERK7QString(void *this_, const QString & key) {
-  auto rv = ((QJsonObject*)this_)->value(key);
+void* C_ZNK11QJsonObject5valueERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonObject*)this_)->value(*key);
 return new QJsonValue(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -85,23 +85,23 @@ return new QJsonValue(rv);
 // /usr/include/qt/QtCore/qjsonobject.h:114
 // [-2] void remove(const class QString &)
 extern "C"
-void C_ZN11QJsonObject6removeERK7QString(void *this_, const QString & key) {
-  ((QJsonObject*)this_)->remove(key);
+void C_ZN11QJsonObject6removeERK7QString(void *this_, QString* key) {
+  ((QJsonObject*)this_)->remove(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:115
 // [24] QJsonValue take(const class QString &)
 extern "C"
-void* C_ZN11QJsonObject4takeERK7QString(void *this_, const QString & key) {
-  auto rv = ((QJsonObject*)this_)->take(key);
+void* C_ZN11QJsonObject4takeERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonObject*)this_)->take(*key);
 return new QJsonValue(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:116
 // [1] bool contains(const class QString &)
 extern "C"
-bool C_ZNK11QJsonObject8containsERK7QString(void *this_, const QString & key) {
-  return (bool)((QJsonObject*)this_)->contains(key);
+bool C_ZNK11QJsonObject8containsERK7QString(void *this_, QString* key) {
+  return (bool)((QJsonObject*)this_)->contains(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:117
@@ -162,8 +162,8 @@ return new QJsonObject::const_iterator(rv);
 // /usr/include/qt/QtCore/qjsonobject.h:225
 // [16] QJsonObject::iterator find(const class QString &)
 extern "C"
-void* C_ZN11QJsonObject4findERK7QString(void *this_, const QString & key) {
-  auto rv = ((QJsonObject*)this_)->find(key);
+void* C_ZN11QJsonObject4findERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonObject*)this_)->find(*key);
 return new QJsonObject::iterator(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -178,8 +178,8 @@ return new QJsonObject::iterator(rv);
 // /usr/include/qt/QtCore/qjsonobject.h:227
 // [16] QJsonObject::const_iterator find(const class QString &)
 extern "C"
-void* C_ZNK11QJsonObject4findERK7QString(void *this_, const QString & key) {
-  auto rv = ((QJsonObject*)this_)->find(key);
+void* C_ZNK11QJsonObject4findERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonObject*)this_)->find(*key);
 return new QJsonObject::const_iterator(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -194,8 +194,8 @@ return new QJsonObject::const_iterator(rv);
 // /usr/include/qt/QtCore/qjsonobject.h:229
 // [16] QJsonObject::const_iterator constFind(const class QString &)
 extern "C"
-void* C_ZNK11QJsonObject9constFindERK7QString(void *this_, const QString & key) {
-  auto rv = ((QJsonObject*)this_)->constFind(key);
+void* C_ZNK11QJsonObject9constFindERK7QString(void *this_, QString* key) {
+  auto rv = ((QJsonObject*)this_)->constFind(*key);
 return new QJsonObject::const_iterator(rv);
 }
 // Public Visibility=Default Availability=Available

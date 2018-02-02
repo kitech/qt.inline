@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qlistwidget.h:281
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QListWidget5eventEP6QEvent = 0;
+void* callback_ZN11QListWidget5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QListWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QListWidget5eventEP6QEvent = cbfn; }
+{ callback_ZN11QListWidget5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:289
 // [1] bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
 extern "C"
-void* callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE = 0;
+void* callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
 extern "C" void set_callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
-{ callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE = cbfn; }
+{ callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:290
 // [4] Qt::DropActions supportedDropActions()
 extern "C"
-void* callback_ZNK11QListWidget20supportedDropActionsEv = 0;
+void* callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = 0;
 extern "C" void set_callback_ZNK11QListWidget20supportedDropActionsEv(void*cbfn)
-{ callback_ZNK11QListWidget20supportedDropActionsEv = cbfn; }
+{ callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:300
 // [24] QModelIndex indexFromItem(class QListWidgetItem *)
 extern "C"
-void* callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem = 0;
+void* callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = 0;
 extern "C" void set_callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(void*cbfn)
-{ callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem = cbfn; }
+{ callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:301
 // [8] QListWidgetItem * itemFromIndex(const class QModelIndex &)
 extern "C"
-void* callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex = 0;
+void* callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
 extern "C" void set_callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void*cbfn)
-{ callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex = cbfn; }
+{ callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
 
 class MyQListWidget : public QListWidget {
 public:
@@ -51,36 +51,41 @@ public:
 MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QListWidget5eventEP6QEvent != 0) {
-      // callback_ZN11QListWidget5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QListWidget5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QListWidget::event(e);
   }
 // bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
-    if (callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE != 0) {
-      // callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(index, data, action);
+    auto fnptr = ((bool (*)(void* , int, const QMimeData *, Qt::DropAction))(callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index, data, action);
     }
     return QListWidget::dropMimeData(index, data, action);
   }
 // Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() {
-    if (callback_ZNK11QListWidget20supportedDropActionsEv != 0) {
-      // callback_ZNK11QListWidget20supportedDropActionsEv();
+    auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK11QListWidget20supportedDropActionsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QListWidget::supportedDropActions();
   }
 // QModelIndex indexFromItem(class QListWidgetItem *)
   virtual QModelIndex indexFromItem(QListWidgetItem * item) {
-    if (callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem != 0) {
-      // callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(item);
+    auto fnptr = ((QModelIndex (*)(void* , QListWidgetItem *))(callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , item);
     }
     return QListWidget::indexFromItem(item);
   }
 // QListWidgetItem * itemFromIndex(const class QModelIndex &)
   virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
-    if (callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex != 0) {
-      // callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(index);
+    auto fnptr = ((QListWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&index);
     }
     return QListWidget::itemFromIndex(index);
   }
@@ -140,22 +145,22 @@ void C_ZN11QListWidget10insertItemEiP15QListWidgetItem(void *this_, int row, QLi
 // /usr/include/qt/QtWidgets/qlistwidget.h:215
 // [-2] void insertItem(int, const class QString &)
 extern "C"
-void C_ZN11QListWidget10insertItemEiRK7QString(void *this_, int row, const QString & label) {
-  ((QListWidget*)this_)->insertItem(row, label);
+void C_ZN11QListWidget10insertItemEiRK7QString(void *this_, int row, QString* label) {
+  ((QListWidget*)this_)->insertItem(row, *label);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:216
 // [-2] void insertItems(int, const class QStringList &)
 extern "C"
-void C_ZN11QListWidget11insertItemsEiRK11QStringList(void *this_, int row, const QStringList & labels) {
-  ((QListWidget*)this_)->insertItems(row, labels);
+void C_ZN11QListWidget11insertItemsEiRK11QStringList(void *this_, int row, QStringList* labels) {
+  ((QListWidget*)this_)->insertItems(row, *labels);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:217
 // [-2] void addItem(const class QString &)
 extern "C"
-void C_ZN11QListWidget7addItemERK7QString(void *this_, const QString & label) {
-  ((QListWidget*)this_)->addItem(label);
+void C_ZN11QListWidget7addItemERK7QString(void *this_, QString* label) {
+  ((QListWidget*)this_)->addItem(*label);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:218
@@ -168,8 +173,8 @@ void C_ZN11QListWidget7addItemEP15QListWidgetItem(void *this_, QListWidgetItem *
 // /usr/include/qt/QtWidgets/qlistwidget.h:219
 // [-2] void addItems(const class QStringList &)
 extern "C"
-void C_ZN11QListWidget8addItemsERK11QStringList(void *this_, const QStringList & labels) {
-  ((QListWidget*)this_)->addItems(labels);
+void C_ZN11QListWidget8addItemsERK11QStringList(void *this_, QStringList* labels) {
+  ((QListWidget*)this_)->addItems(*labels);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:220
@@ -231,8 +236,8 @@ void C_ZN11QListWidget13setCurrentRowEi6QFlagsIN19QItemSelectionModel13Selection
 // /usr/include/qt/QtWidgets/qlistwidget.h:231
 // [8] QListWidgetItem * itemAt(const class QPoint &)
 extern "C"
-void* C_ZNK11QListWidget6itemAtERK6QPoint(void *this_, const QPoint & p) {
-  return (void*)((QListWidget*)this_)->itemAt(p);
+void* C_ZNK11QListWidget6itemAtERK6QPoint(void *this_, QPoint* p) {
+  return (void*)((QListWidget*)this_)->itemAt(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:232
@@ -421,8 +426,8 @@ void C_ZN11QListWidget18currentItemChangedEP15QListWidgetItemS1_(void *this_, QL
 // /usr/include/qt/QtWidgets/qlistwidget.h:275
 // [-2] void currentTextChanged(const class QString &)
 extern "C"
-void C_ZN11QListWidget18currentTextChangedERK7QString(void *this_, const QString & currentText) {
-  ((QListWidget*)this_)->currentTextChanged(currentText);
+void C_ZN11QListWidget18currentTextChangedERK7QString(void *this_, QString* currentText) {
+  ((QListWidget*)this_)->currentTextChanged(*currentText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:276

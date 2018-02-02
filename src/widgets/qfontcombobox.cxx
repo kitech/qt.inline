@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qfontcombobox.h:90
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN13QFontComboBox5eventEP6QEvent = 0;
+void* callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QFontComboBox5eventEP6QEvent = cbfn; }
+{ callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFontComboBox : public QFontComboBox {
 public:
@@ -23,8 +23,9 @@ public:
 MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN13QFontComboBox5eventEP6QEvent != 0) {
-      // callback_ZN13QFontComboBox5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QFontComboBox5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QFontComboBox::event(e);
   }
@@ -94,14 +95,14 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qfontcombobox.h:84
 // [-2] void setCurrentFont(const class QFont &)
 extern "C"
-void C_ZN13QFontComboBox14setCurrentFontERK5QFont(void *this_, const QFont & f) {
-  ((QFontComboBox*)this_)->setCurrentFont(f);
+void C_ZN13QFontComboBox14setCurrentFontERK5QFont(void *this_, QFont* f) {
+  ((QFontComboBox*)this_)->setCurrentFont(*f);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:87
 // [-2] void currentFontChanged(const class QFont &)
 extern "C"
-void C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *this_, const QFont & f) {
-  ((QFontComboBox*)this_)->currentFontChanged(f);
+void C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *this_, QFont* f) {
+  ((QFontComboBox*)this_)->currentFontChanged(*f);
 }
 //  main block end

@@ -14,4 +14,9 @@ public:
   virtual ~MyQWidgetData() {}
 };
 
+
+extern "C"
+void C_ZN11QWidgetDataD2Ev(void *this_) {
+  delete (QWidgetData*)(this_);
+}
 //  main block end

@@ -12,37 +12,37 @@
 // /usr/include/qt/QtGui/qpaintdevice.h:93
 // [-2] void QPaintDevice()
 extern "C"
-void* callback_ZN12QPaintDeviceC1Ev = 0;
+void* callback_ZN12QPaintDeviceC1Ev_fnptr = 0;
 extern "C" void set_callback_ZN12QPaintDeviceC1Ev(void*cbfn)
-{ callback_ZN12QPaintDeviceC1Ev = cbfn; }
+{ callback_ZN12QPaintDeviceC1Ev_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:94
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
 extern "C"
-void* callback_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE = 0;
+void* callback_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE_fnptr = 0;
 extern "C" void set_callback_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE = cbfn; }
+{ callback_ZNK12QPaintDevice6metricENS_17PaintDeviceMetricE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:95
 // [-2] void initPainter(class QPainter *)
 extern "C"
-void* callback_ZNK12QPaintDevice11initPainterEP8QPainter = 0;
+void* callback_ZNK12QPaintDevice11initPainterEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZNK12QPaintDevice11initPainterEP8QPainter(void*cbfn)
-{ callback_ZNK12QPaintDevice11initPainterEP8QPainter = cbfn; }
+{ callback_ZNK12QPaintDevice11initPainterEP8QPainter_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:96
 // [8] QPaintDevice * redirected(class QPoint *)
 extern "C"
-void* callback_ZNK12QPaintDevice10redirectedEP6QPoint = 0;
+void* callback_ZNK12QPaintDevice10redirectedEP6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK12QPaintDevice10redirectedEP6QPoint(void*cbfn)
-{ callback_ZNK12QPaintDevice10redirectedEP6QPoint = cbfn; }
+{ callback_ZNK12QPaintDevice10redirectedEP6QPoint_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:97
 // [8] QPainter * sharedPainter()
 extern "C"
-void* callback_ZNK12QPaintDevice13sharedPainterEv = 0;
+void* callback_ZNK12QPaintDevice13sharedPainterEv_fnptr = 0;
 extern "C" void set_callback_ZNK12QPaintDevice13sharedPainterEv(void*cbfn)
-{ callback_ZNK12QPaintDevice13sharedPainterEv = cbfn; }
+{ callback_ZNK12QPaintDevice13sharedPainterEv_fnptr = cbfn; }
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevice.h:72
@@ -167,7 +167,7 @@ qreal C_ZN12QPaintDevice22devicePixelRatioFScaleEv() {
 // /usr/include/qt/QtGui/qpaintdevice.h:101
 // [-2] void QPaintDevice(const class QPaintDevice &)
 extern "C"
-void* C_ZN12QPaintDeviceC1ERKS_(const QPaintDevice & arg0) {
-  return 0; // new QPaintDevice(arg0);
+void* C_ZN12QPaintDeviceC1ERKS_(QPaintDevice* arg0) {
+  return 0; // new QPaintDevice(*arg0);
 }
 //  main block end

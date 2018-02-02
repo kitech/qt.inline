@@ -38,8 +38,8 @@ void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
 // /usr/include/qt/QtCore/qdatastream.h:126
 // [-2] void QDataStream(const class QByteArray &)
 extern "C"
-void* C_ZN11QDataStreamC2ERK10QByteArray(const QByteArray & arg0) {
-  return  new QDataStream(arg0);
+void* C_ZN11QDataStreamC2ERK10QByteArray(QByteArray* arg0) {
+  return  new QDataStream(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:127

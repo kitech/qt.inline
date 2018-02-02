@@ -42,8 +42,8 @@ void C_ZN18QRegularExpressionD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qregularexpression.h:95
 // [-2] void swap(class QRegularExpression &)
 extern "C"
-void C_ZN18QRegularExpression4swapERS_(void *this_, QRegularExpression & other) {
-  ((QRegularExpression*)this_)->swap(other);
+void C_ZN18QRegularExpression4swapERS_(void *this_, QRegularExpression* other) {
+  ((QRegularExpression*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:97
@@ -57,8 +57,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qregularexpression.h:98
 // [-2] void setPattern(const class QString &)
 extern "C"
-void C_ZN18QRegularExpression10setPatternERK7QString(void *this_, const QString & pattern) {
-  ((QRegularExpression*)this_)->setPattern(pattern);
+void C_ZN18QRegularExpression10setPatternERK7QString(void *this_, QString* pattern) {
+  ((QRegularExpression*)this_)->setPattern(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:100
@@ -100,8 +100,8 @@ void C_ZNK18QRegularExpression8optimizeEv(void *this_) {
 // /usr/include/qt/QtCore/qregularexpression.h:143
 // [8] QString escape(const class QString &)
 extern "C"
-void* C_ZN18QRegularExpression6escapeERK7QString(const QString & str) {
-  auto rv = QRegularExpression::escape(str);
+void* C_ZN18QRegularExpression6escapeERK7QString(QString* str) {
+  auto rv = QRegularExpression::escape(*str);
 return new QString(rv);
 }
 //  main block end

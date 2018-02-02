@@ -12,58 +12,58 @@
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:141
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QCalendarWidget5eventEP6QEvent = 0;
+void* callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget5eventEP6QEvent = cbfn; }
+{ callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:142
 // [1] bool eventFilter(class QObject *, class QEvent *)
 extern "C"
-void* callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent = 0;
+void* callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent = cbfn; }
+{ callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:143
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:144
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:145
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:147
 // [-2] void paintCell(class QPainter *, const class QRect &, const class QDate &)
 extern "C"
-void* callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate = 0;
+void* callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = 0;
 extern "C" void set_callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void*cbfn)
-{ callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate = cbfn; }
+{ callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:148
 // [-2] void updateCell(const class QDate &)
 extern "C"
-void* callback_ZN15QCalendarWidget10updateCellERK5QDate = 0;
+void* callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget10updateCellERK5QDate(void*cbfn)
-{ callback_ZN15QCalendarWidget10updateCellERK5QDate = cbfn; }
+{ callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:149
 // [-2] void updateCells()
 extern "C"
-void* callback_ZN15QCalendarWidget11updateCellsEv = 0;
+void* callback_ZN15QCalendarWidget11updateCellsEv_fnptr = 0;
 extern "C" void set_callback_ZN15QCalendarWidget11updateCellsEv(void*cbfn)
-{ callback_ZN15QCalendarWidget11updateCellsEv = cbfn; }
+{ callback_ZN15QCalendarWidget11updateCellsEv_fnptr = cbfn; }
 
 class MyQCalendarWidget : public QCalendarWidget {
 public:
@@ -72,57 +72,65 @@ public:
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN15QCalendarWidget5eventEP6QEvent != 0) {
-      // callback_ZN15QCalendarWidget5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QCalendarWidget::event(event);
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
-    if (callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent != 0) {
-      // callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(watched, event);
+    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , watched, event);
     }
     return QCalendarWidget::eventFilter(watched, event);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    if (callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QCalendarWidget::mousePressEvent(event);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    if (callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(event);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QCalendarWidget::resizeEvent(event);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    if (callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QCalendarWidget::keyPressEvent(event);
   }
 // void paintCell(class QPainter *, const class QRect &, const class QDate &)
   virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
-    if (callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate != 0) {
-      // callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(painter, rect, date);
+    auto fnptr = ((void (*)(void* , QPainter *, QRect*, QDate*))(callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter, (QRect*)&rect, (QDate*)&date);
     }
     QCalendarWidget::paintCell(painter, rect, date);
   }
 // void updateCell(const class QDate &)
   virtual void updateCell(const QDate & date) {
-    if (callback_ZN15QCalendarWidget10updateCellERK5QDate != 0) {
-      // callback_ZN15QCalendarWidget10updateCellERK5QDate(date);
+    auto fnptr = ((void (*)(void* , QDate*))(callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QDate*)&date);
     }
     QCalendarWidget::updateCell(date);
   }
 // void updateCells()
   virtual void updateCells() {
-    if (callback_ZN15QCalendarWidget11updateCellsEv != 0) {
-      // callback_ZN15QCalendarWidget11updateCellsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN15QCalendarWidget11updateCellsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QCalendarWidget::updateCells();
   }
@@ -200,8 +208,8 @@ return new QDate(rv);
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:104
 // [-2] void setMinimumDate(const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget14setMinimumDateERK5QDate(void *this_, const QDate & date) {
-  ((QCalendarWidget*)this_)->setMinimumDate(date);
+void C_ZN15QCalendarWidget14setMinimumDateERK5QDate(void *this_, QDate* date) {
+  ((QCalendarWidget*)this_)->setMinimumDate(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:106
@@ -215,8 +223,8 @@ return new QDate(rv);
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:107
 // [-2] void setMaximumDate(const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget14setMaximumDateERK5QDate(void *this_, const QDate & date) {
-  ((QCalendarWidget*)this_)->setMaximumDate(date);
+void C_ZN15QCalendarWidget14setMaximumDateERK5QDate(void *this_, QDate* date) {
+  ((QCalendarWidget*)this_)->setMaximumDate(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:109
@@ -300,8 +308,8 @@ return new QTextCharFormat(rv);
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:125
 // [-2] void setHeaderTextFormat(const class QTextCharFormat &)
 extern "C"
-void C_ZN15QCalendarWidget19setHeaderTextFormatERK15QTextCharFormat(void *this_, const QTextCharFormat & format) {
-  ((QCalendarWidget*)this_)->setHeaderTextFormat(format);
+void C_ZN15QCalendarWidget19setHeaderTextFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
+  ((QCalendarWidget*)this_)->setHeaderTextFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:127
@@ -315,23 +323,23 @@ return new QTextCharFormat(rv);
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:128
 // [-2] void setWeekdayTextFormat(Qt::DayOfWeek, const class QTextCharFormat &)
 extern "C"
-void C_ZN15QCalendarWidget20setWeekdayTextFormatEN2Qt9DayOfWeekERK15QTextCharFormat(void *this_, Qt::DayOfWeek dayOfWeek, const QTextCharFormat & format) {
-  ((QCalendarWidget*)this_)->setWeekdayTextFormat(dayOfWeek, format);
+void C_ZN15QCalendarWidget20setWeekdayTextFormatEN2Qt9DayOfWeekERK15QTextCharFormat(void *this_, Qt::DayOfWeek dayOfWeek, QTextCharFormat* format) {
+  ((QCalendarWidget*)this_)->setWeekdayTextFormat(dayOfWeek, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:131
 // [16] QTextCharFormat dateTextFormat(const class QDate &)
 extern "C"
-void* C_ZNK15QCalendarWidget14dateTextFormatERK5QDate(void *this_, const QDate & date) {
-  auto rv = ((QCalendarWidget*)this_)->dateTextFormat(date);
+void* C_ZNK15QCalendarWidget14dateTextFormatERK5QDate(void *this_, QDate* date) {
+  auto rv = ((QCalendarWidget*)this_)->dateTextFormat(*date);
 return new QTextCharFormat(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:132
 // [-2] void setDateTextFormat(const class QDate &, const class QTextCharFormat &)
 extern "C"
-void C_ZN15QCalendarWidget17setDateTextFormatERK5QDateRK15QTextCharFormat(void *this_, const QDate & date, const QTextCharFormat & format) {
-  ((QCalendarWidget*)this_)->setDateTextFormat(date, format);
+void C_ZN15QCalendarWidget17setDateTextFormatERK5QDateRK15QTextCharFormat(void *this_, QDate* date, QTextCharFormat* format) {
+  ((QCalendarWidget*)this_)->setDateTextFormat(*date, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:134
@@ -365,15 +373,15 @@ void C_ZN15QCalendarWidget22setDateEditAcceptDelayEi(void *this_, int delay) {
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:152
 // [-2] void setSelectedDate(const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget15setSelectedDateERK5QDate(void *this_, const QDate & date) {
-  ((QCalendarWidget*)this_)->setSelectedDate(date);
+void C_ZN15QCalendarWidget15setSelectedDateERK5QDate(void *this_, QDate* date) {
+  ((QCalendarWidget*)this_)->setSelectedDate(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:153
 // [-2] void setDateRange(const class QDate &, const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget12setDateRangeERK5QDateS2_(void *this_, const QDate & min, const QDate & max) {
-  ((QCalendarWidget*)this_)->setDateRange(min, max);
+void C_ZN15QCalendarWidget12setDateRangeERK5QDateS2_(void *this_, QDate* min, QDate* max) {
+  ((QCalendarWidget*)this_)->setDateRange(*min, *max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:154
@@ -449,15 +457,15 @@ void C_ZN15QCalendarWidget16selectionChangedEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:166
 // [-2] void clicked(const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget7clickedERK5QDate(void *this_, const QDate & date) {
-  ((QCalendarWidget*)this_)->clicked(date);
+void C_ZN15QCalendarWidget7clickedERK5QDate(void *this_, QDate* date) {
+  ((QCalendarWidget*)this_)->clicked(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:167
 // [-2] void activated(const class QDate &)
 extern "C"
-void C_ZN15QCalendarWidget9activatedERK5QDate(void *this_, const QDate & date) {
-  ((QCalendarWidget*)this_)->activated(date);
+void C_ZN15QCalendarWidget9activatedERK5QDate(void *this_, QDate* date) {
+  ((QCalendarWidget*)this_)->activated(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcalendarwidget.h:168

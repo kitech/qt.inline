@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:642
 // [-2] void QStyleOptionGroupBox(int)
 extern "C"
-void* callback_ZN20QStyleOptionGroupBoxC1Ei = 0;
+void* callback_ZN20QStyleOptionGroupBoxC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN20QStyleOptionGroupBoxC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionGroupBoxC1Ei = cbfn; }
+{ callback_ZN20QStyleOptionGroupBoxC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionGroupBox : public QStyleOptionGroupBox {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionGroupBox(int version) : QStyleOptionGroupBox(version) {}
 extern "C"
 void* C_ZN20QStyleOptionGroupBoxC2Ev() {
   return  new QStyleOptionGroupBox();
+}
+
+extern "C"
+void C_ZN20QStyleOptionGroupBoxD2Ev(void *this_) {
+  delete (QStyleOptionGroupBox*)(this_);
 }
 //  main block end

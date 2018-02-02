@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qspinbox.h:93
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN8QSpinBox5eventEP6QEvent = 0;
+void* callback_ZN8QSpinBox5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QSpinBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QSpinBox5eventEP6QEvent = cbfn; }
+{ callback_ZN8QSpinBox5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:94
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-void* callback_ZNK8QSpinBox8validateER7QStringRi = 0;
+void* callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = 0;
 extern "C" void set_callback_ZNK8QSpinBox8validateER7QStringRi(void*cbfn)
-{ callback_ZNK8QSpinBox8validateER7QStringRi = cbfn; }
+{ callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:95
 // [4] int valueFromText(const class QString &)
 extern "C"
-void* callback_ZNK8QSpinBox13valueFromTextERK7QString = 0;
+void* callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = 0;
 extern "C" void set_callback_ZNK8QSpinBox13valueFromTextERK7QString(void*cbfn)
-{ callback_ZNK8QSpinBox13valueFromTextERK7QString = cbfn; }
+{ callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:96
 // [8] QString textFromValue(int)
 extern "C"
-void* callback_ZNK8QSpinBox13textFromValueEi = 0;
+void* callback_ZNK8QSpinBox13textFromValueEi_fnptr = 0;
 extern "C" void set_callback_ZNK8QSpinBox13textFromValueEi(void*cbfn)
-{ callback_ZNK8QSpinBox13textFromValueEi = cbfn; }
+{ callback_ZNK8QSpinBox13textFromValueEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:97
 // [-2] void fixup(class QString &)
 extern "C"
-void* callback_ZNK8QSpinBox5fixupER7QString = 0;
+void* callback_ZNK8QSpinBox5fixupER7QString_fnptr = 0;
 extern "C" void set_callback_ZNK8QSpinBox5fixupER7QString(void*cbfn)
-{ callback_ZNK8QSpinBox5fixupER7QString = cbfn; }
+{ callback_ZNK8QSpinBox5fixupER7QString_fnptr = cbfn; }
 
 class MyQSpinBox : public QSpinBox {
 public:
@@ -51,36 +51,41 @@ public:
 MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN8QSpinBox5eventEP6QEvent != 0) {
-      // callback_ZN8QSpinBox5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QSpinBox5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QSpinBox::event(event);
   }
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
-    if (callback_ZNK8QSpinBox8validateER7QStringRi != 0) {
-      // callback_ZNK8QSpinBox8validateER7QStringRi(input, pos);
+    auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK8QSpinBox8validateER7QStringRi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&input, pos);
     }
     return QSpinBox::validate(input, pos);
   }
 // int valueFromText(const class QString &)
   virtual int valueFromText(const QString & text) {
-    if (callback_ZNK8QSpinBox13valueFromTextERK7QString != 0) {
-      // callback_ZNK8QSpinBox13valueFromTextERK7QString(text);
+    auto fnptr = ((int (*)(void* , QString*))(callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&text);
     }
     return QSpinBox::valueFromText(text);
   }
 // QString textFromValue(int)
   virtual QString textFromValue(int val) {
-    if (callback_ZNK8QSpinBox13textFromValueEi != 0) {
-      // callback_ZNK8QSpinBox13textFromValueEi(val);
+    auto fnptr = ((QString (*)(void* , int))(callback_ZNK8QSpinBox13textFromValueEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , val);
     }
     return QSpinBox::textFromValue(val);
   }
 // void fixup(class QString &)
   virtual void fixup(QString & str) {
-    if (callback_ZNK8QSpinBox5fixupER7QString != 0) {
-      // callback_ZNK8QSpinBox5fixupER7QString(str);
+    auto fnptr = ((void (*)(void* , QString*))(callback_ZNK8QSpinBox5fixupER7QString_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&str);
     }
     QSpinBox::fixup(str);
   }
@@ -127,8 +132,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qspinbox.h:71
 // [-2] void setPrefix(const class QString &)
 extern "C"
-void C_ZN8QSpinBox9setPrefixERK7QString(void *this_, const QString & prefix) {
-  ((QSpinBox*)this_)->setPrefix(prefix);
+void C_ZN8QSpinBox9setPrefixERK7QString(void *this_, QString* prefix) {
+  ((QSpinBox*)this_)->setPrefix(*prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:73
@@ -142,8 +147,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qspinbox.h:74
 // [-2] void setSuffix(const class QString &)
 extern "C"
-void C_ZN8QSpinBox9setSuffixERK7QString(void *this_, const QString & suffix) {
-  ((QSpinBox*)this_)->setSuffix(suffix);
+void C_ZN8QSpinBox9setSuffixERK7QString(void *this_, QString* suffix) {
+  ((QSpinBox*)this_)->setSuffix(*suffix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qspinbox.h:76
@@ -234,7 +239,7 @@ void C_ZN8QSpinBox12valueChangedEi(void *this_, int arg0) {
 // /usr/include/qt/QtWidgets/qspinbox.h:105
 // [-2] void valueChanged(const class QString &)
 extern "C"
-void C_ZN8QSpinBox12valueChangedERK7QString(void *this_, const QString & arg0) {
-  ((QSpinBox*)this_)->valueChanged(arg0);
+void C_ZN8QSpinBox12valueChangedERK7QString(void *this_, QString* arg0) {
+  ((QSpinBox*)this_)->valueChanged(*arg0);
 }
 //  main block end

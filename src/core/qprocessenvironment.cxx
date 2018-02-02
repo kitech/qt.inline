@@ -34,8 +34,8 @@ void C_ZN19QProcessEnvironmentD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qprocess.h:78
 // [-2] void swap(class QProcessEnvironment &)
 extern "C"
-void C_ZN19QProcessEnvironment4swapERS_(void *this_, QProcessEnvironment & other) {
-  ((QProcessEnvironment*)this_)->swap(other);
+void C_ZN19QProcessEnvironment4swapERS_(void *this_, QProcessEnvironment* other) {
+  ((QProcessEnvironment*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:84
@@ -55,22 +55,22 @@ void C_ZN19QProcessEnvironment5clearEv(void *this_) {
 // /usr/include/qt/QtCore/qprocess.h:87
 // [1] bool contains(const class QString &)
 extern "C"
-bool C_ZNK19QProcessEnvironment8containsERK7QString(void *this_, const QString & name) {
-  return (bool)((QProcessEnvironment*)this_)->contains(name);
+bool C_ZNK19QProcessEnvironment8containsERK7QString(void *this_, QString* name) {
+  return (bool)((QProcessEnvironment*)this_)->contains(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:89
 // [-2] void remove(const class QString &)
 extern "C"
-void C_ZN19QProcessEnvironment6removeERK7QString(void *this_, const QString & name) {
-  ((QProcessEnvironment*)this_)->remove(name);
+void C_ZN19QProcessEnvironment6removeERK7QString(void *this_, QString* name) {
+  ((QProcessEnvironment*)this_)->remove(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:90
 // [8] QString value(const class QString &, const class QString &)
 extern "C"
-void* C_ZNK19QProcessEnvironment5valueERK7QStringS2_(void *this_, const QString & name, const QString & defaultValue) {
-  auto rv = ((QProcessEnvironment*)this_)->value(name, defaultValue);
+void* C_ZNK19QProcessEnvironment5valueERK7QStringS2_(void *this_, QString* name, QString* defaultValue) {
+  auto rv = ((QProcessEnvironment*)this_)->value(*name, *defaultValue);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available

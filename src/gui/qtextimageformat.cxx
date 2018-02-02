@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:752
 // [-2] void QTextImageFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN16QTextImageFormatC1ERK11QTextFormat = 0;
+void* callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN16QTextImageFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextImageFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextImageFormat : public QTextImageFormat {
 public:
@@ -43,8 +43,8 @@ bool C_ZNK16QTextImageFormat7isValidEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:739
 // [-2] void setName(const class QString &)
 extern "C"
-void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, const QString & name) {
-  ((QTextImageFormat*)this_)->setName(name);
+void C_ZN16QTextImageFormat7setNameERK7QString(void *this_, QString* name) {
+  ((QTextImageFormat*)this_)->setName(*name);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:740
@@ -81,5 +81,10 @@ void C_ZN16QTextImageFormat9setHeightEd(void *this_, qreal height) {
 extern "C"
 qreal C_ZNK16QTextImageFormat6heightEv(void *this_) {
   return (qreal)((QTextImageFormat*)this_)->height();
+}
+
+extern "C"
+void C_ZN16QTextImageFormatD2Ev(void *this_) {
+  delete (QTextImageFormat*)(this_);
 }
 //  main block end

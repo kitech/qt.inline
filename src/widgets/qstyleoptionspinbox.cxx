@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:556
 // [-2] void QStyleOptionSpinBox(int)
 extern "C"
-void* callback_ZN19QStyleOptionSpinBoxC1Ei = 0;
+void* callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN19QStyleOptionSpinBoxC1Ei(void*cbfn)
-{ callback_ZN19QStyleOptionSpinBoxC1Ei = cbfn; }
+{ callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionSpinBox(int version) : QStyleOptionSpinBox(version) {}
 extern "C"
 void* C_ZN19QStyleOptionSpinBoxC2Ev() {
   return  new QStyleOptionSpinBox();
+}
+
+extern "C"
+void C_ZN19QStyleOptionSpinBoxD2Ev(void *this_) {
+  delete (QStyleOptionSpinBox*)(this_);
 }
 //  main block end

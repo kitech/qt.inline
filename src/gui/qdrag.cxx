@@ -55,8 +55,8 @@ void* C_ZNK5QDrag8mimeDataEv(void *this_) {
 // /usr/include/qt/QtGui/qdrag.h:68
 // [-2] void setPixmap(const class QPixmap &)
 extern "C"
-void C_ZN5QDrag9setPixmapERK7QPixmap(void *this_, const QPixmap & arg0) {
-  ((QDrag*)this_)->setPixmap(arg0);
+void C_ZN5QDrag9setPixmapERK7QPixmap(void *this_, QPixmap* arg0) {
+  ((QDrag*)this_)->setPixmap(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:69
@@ -70,8 +70,8 @@ return new QPixmap(rv);
 // /usr/include/qt/QtGui/qdrag.h:71
 // [-2] void setHotSpot(const class QPoint &)
 extern "C"
-void C_ZN5QDrag10setHotSpotERK6QPoint(void *this_, const QPoint & hotspot) {
-  ((QDrag*)this_)->setHotSpot(hotspot);
+void C_ZN5QDrag10setHotSpotERK6QPoint(void *this_, QPoint* hotspot) {
+  ((QDrag*)this_)->setHotSpot(*hotspot);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:72
@@ -99,8 +99,8 @@ void* C_ZNK5QDrag6targetEv(void *this_) {
 // /usr/include/qt/QtGui/qdrag.h:81
 // [-2] void setDragCursor(const class QPixmap &, Qt::DropAction)
 extern "C"
-void C_ZN5QDrag13setDragCursorERK7QPixmapN2Qt10DropActionE(void *this_, const QPixmap & cursor, Qt::DropAction action) {
-  ((QDrag*)this_)->setDragCursor(cursor, action);
+void C_ZN5QDrag13setDragCursorERK7QPixmapN2Qt10DropActionE(void *this_, QPixmap* cursor, Qt::DropAction action) {
+  ((QDrag*)this_)->setDragCursor(*cursor, action);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:82

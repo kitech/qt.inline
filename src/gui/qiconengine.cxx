@@ -34,38 +34,38 @@ void C_ZN11QIconEngineD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qiconengine.h:56
 // [-2] void paint(class QPainter *, const class QRect &, class QIcon::Mode, class QIcon::State)
 extern "C"
-void C_ZN11QIconEngine5paintEP8QPainterRK5QRectN5QIcon4ModeENS5_5StateE(void *this_, QPainter * painter, const QRect & rect, QIcon::Mode mode, QIcon::State state) {
-  ((QIconEngine*)this_)->paint(painter, rect, mode, state);
+void C_ZN11QIconEngine5paintEP8QPainterRK5QRectN5QIcon4ModeENS5_5StateE(void *this_, QPainter * painter, QRect* rect, QIcon::Mode mode, QIcon::State state) {
+  ((QIconEngine*)this_)->paint(painter, *rect, mode, state);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:57
 // [8] QSize actualSize(const class QSize &, class QIcon::Mode, class QIcon::State)
 extern "C"
-void* C_ZN11QIconEngine10actualSizeERK5QSizeN5QIcon4ModeENS3_5StateE(void *this_, const QSize & size, QIcon::Mode mode, QIcon::State state) {
-  auto rv = ((QIconEngine*)this_)->actualSize(size, mode, state);
+void* C_ZN11QIconEngine10actualSizeERK5QSizeN5QIcon4ModeENS3_5StateE(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state) {
+  auto rv = ((QIconEngine*)this_)->actualSize(*size, mode, state);
 return new QSize(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:58
 // [32] QPixmap pixmap(const class QSize &, class QIcon::Mode, class QIcon::State)
 extern "C"
-void* C_ZN11QIconEngine6pixmapERK5QSizeN5QIcon4ModeENS3_5StateE(void *this_, const QSize & size, QIcon::Mode mode, QIcon::State state) {
-  auto rv = ((QIconEngine*)this_)->pixmap(size, mode, state);
+void* C_ZN11QIconEngine6pixmapERK5QSizeN5QIcon4ModeENS3_5StateE(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state) {
+  auto rv = ((QIconEngine*)this_)->pixmap(*size, mode, state);
 return new QPixmap(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:60
 // [-2] void addPixmap(const class QPixmap &, class QIcon::Mode, class QIcon::State)
 extern "C"
-void C_ZN11QIconEngine9addPixmapERK7QPixmapN5QIcon4ModeENS3_5StateE(void *this_, const QPixmap & pixmap, QIcon::Mode mode, QIcon::State state) {
-  ((QIconEngine*)this_)->addPixmap(pixmap, mode, state);
+void C_ZN11QIconEngine9addPixmapERK7QPixmapN5QIcon4ModeENS3_5StateE(void *this_, QPixmap* pixmap, QIcon::Mode mode, QIcon::State state) {
+  ((QIconEngine*)this_)->addPixmap(*pixmap, mode, state);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:61
 // [-2] void addFile(const class QString &, const class QSize &, class QIcon::Mode, class QIcon::State)
 extern "C"
-void C_ZN11QIconEngine7addFileERK7QStringRK5QSizeN5QIcon4ModeENS6_5StateE(void *this_, const QString & fileName, const QSize & size, QIcon::Mode mode, QIcon::State state) {
-  ((QIconEngine*)this_)->addFile(fileName, size, mode, state);
+void C_ZN11QIconEngine7addFileERK7QStringRK5QSizeN5QIcon4ModeENS6_5StateE(void *this_, QString* fileName, QSize* size, QIcon::Mode mode, QIcon::State state) {
+  ((QIconEngine*)this_)->addFile(*fileName, *size, mode, state);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:63
@@ -86,15 +86,15 @@ void* C_ZNK11QIconEngine5cloneEv(void *this_) {
 // /usr/include/qt/QtGui/qiconengine.h:65
 // [1] bool read(class QDataStream &)
 extern "C"
-bool C_ZN11QIconEngine4readER11QDataStream(void *this_, QDataStream & in) {
-  return (bool)((QIconEngine*)this_)->read(in);
+bool C_ZN11QIconEngine4readER11QDataStream(void *this_, QDataStream* in) {
+  return (bool)((QIconEngine*)this_)->read(*in);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:66
 // [1] bool write(class QDataStream &)
 extern "C"
-bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream & out) {
-  return (bool)((QIconEngine*)this_)->write(out);
+bool C_ZNK11QIconEngine5writeER11QDataStream(void *this_, QDataStream* out) {
+  return (bool)((QIconEngine*)this_)->write(*out);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qiconengine.h:80
@@ -115,8 +115,8 @@ bool C_ZNK11QIconEngine6isNullEv(void *this_) {
 // /usr/include/qt/QtGui/qiconengine.h:82
 // [32] QPixmap scaledPixmap(const class QSize &, class QIcon::Mode, class QIcon::State, qreal)
 extern "C"
-void* C_ZN11QIconEngine12scaledPixmapERK5QSizeN5QIcon4ModeENS3_5StateEd(void *this_, const QSize & size, QIcon::Mode mode, QIcon::State state, qreal scale) {
-  auto rv = ((QIconEngine*)this_)->scaledPixmap(size, mode, state, scale);
+void* C_ZN11QIconEngine12scaledPixmapERK5QSizeN5QIcon4ModeENS3_5StateEd(void *this_, QSize* size, QIcon::Mode mode, QIcon::State state, qreal scale) {
+  auto rv = ((QIconEngine*)this_)->scaledPixmap(*size, mode, state, scale);
 return new QPixmap(rv);
 }
 // Public virtual Visibility=Default Availability=Available

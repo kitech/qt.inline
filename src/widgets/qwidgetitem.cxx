@@ -72,8 +72,8 @@ bool C_ZNK11QWidgetItem7isEmptyEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlayoutitem.h:134
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN11QWidgetItem11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QWidgetItem*)this_)->setGeometry(arg0);
+void C_ZN11QWidgetItem11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QWidgetItem*)this_)->setGeometry(*arg0);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:135

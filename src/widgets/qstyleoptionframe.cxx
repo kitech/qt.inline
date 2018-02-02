@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:147
 // [-2] void QStyleOptionFrame(int)
 extern "C"
-void* callback_ZN17QStyleOptionFrameC1Ei = 0;
+void* callback_ZN17QStyleOptionFrameC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN17QStyleOptionFrameC1Ei(void*cbfn)
-{ callback_ZN17QStyleOptionFrameC1Ei = cbfn; }
+{ callback_ZN17QStyleOptionFrameC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionFrame : public QStyleOptionFrame {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionFrame(int version) : QStyleOptionFrame(version) {}
 extern "C"
 void* C_ZN17QStyleOptionFrameC2Ev() {
   return  new QStyleOptionFrame();
+}
+
+extern "C"
+void C_ZN17QStyleOptionFrameD2Ev(void *this_) {
+  delete (QStyleOptionFrame*)(this_);
 }
 //  main block end

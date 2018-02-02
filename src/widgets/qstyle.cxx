@@ -69,38 +69,38 @@ void C_ZN6QStyle8unpolishEP12QApplication(void *this_, QApplication * applicatio
 // /usr/include/qt/QtWidgets/qstyle.h:82
 // [-2] void polish(class QPalette &)
 extern "C"
-void C_ZN6QStyle6polishER8QPalette(void *this_, QPalette & palette) {
-  ((QStyle*)this_)->polish(palette);
+void C_ZN6QStyle6polishER8QPalette(void *this_, QPalette* palette) {
+  ((QStyle*)this_)->polish(*palette);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:84
 // [16] QRect itemTextRect(const class QFontMetrics &, const class QRect &, int, _Bool, const class QString &)
 extern "C"
-void* C_ZNK6QStyle12itemTextRectERK12QFontMetricsRK5QRectibRK7QString(void *this_, const QFontMetrics & fm, const QRect & r, int flags, bool enabled, const QString & text) {
-  auto rv = ((QStyle*)this_)->itemTextRect(fm, r, flags, enabled, text);
+void* C_ZNK6QStyle12itemTextRectERK12QFontMetricsRK5QRectibRK7QString(void *this_, QFontMetrics* fm, QRect* r, int flags, bool enabled, QString* text) {
+  auto rv = ((QStyle*)this_)->itemTextRect(*fm, *r, flags, enabled, *text);
 return new QRect(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:88
 // [16] QRect itemPixmapRect(const class QRect &, int, const class QPixmap &)
 extern "C"
-void* C_ZNK6QStyle14itemPixmapRectERK5QRectiRK7QPixmap(void *this_, const QRect & r, int flags, const QPixmap & pixmap) {
-  auto rv = ((QStyle*)this_)->itemPixmapRect(r, flags, pixmap);
+void* C_ZNK6QStyle14itemPixmapRectERK5QRectiRK7QPixmap(void *this_, QRect* r, int flags, QPixmap* pixmap) {
+  auto rv = ((QStyle*)this_)->itemPixmapRect(*r, flags, *pixmap);
 return new QRect(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:90
 // [-2] void drawItemText(class QPainter *, const class QRect &, int, const class QPalette &, _Bool, const class QString &, class QPalette::ColorRole)
 extern "C"
-void C_ZNK6QStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE(void *this_, QPainter * painter, const QRect & rect, int flags, const QPalette & pal, bool enabled, const QString & text, QPalette::ColorRole textRole) {
-  ((QStyle*)this_)->drawItemText(painter, rect, flags, pal, enabled, text, textRole);
+void C_ZNK6QStyle12drawItemTextEP8QPainterRK5QRectiRK8QPalettebRK7QStringNS5_9ColorRoleE(void *this_, QPainter * painter, QRect* rect, int flags, QPalette* pal, bool enabled, QString* text, QPalette::ColorRole textRole) {
+  ((QStyle*)this_)->drawItemText(painter, *rect, flags, *pal, enabled, *text, textRole);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:94
 // [-2] void drawItemPixmap(class QPainter *, const class QRect &, int, const class QPixmap &)
 extern "C"
-void C_ZNK6QStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this_, QPainter * painter, const QRect & rect, int alignment, const QPixmap & pixmap) {
-  ((QStyle*)this_)->drawItemPixmap(painter, rect, alignment, pixmap);
+void C_ZNK6QStyle14drawItemPixmapEP8QPainterRK5QRectiRK7QPixmap(void *this_, QPainter * painter, QRect* rect, int alignment, QPixmap* pixmap) {
+  ((QStyle*)this_)->drawItemPixmap(painter, *rect, alignment, *pixmap);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:97
@@ -143,8 +143,8 @@ void C_ZNK6QStyle18drawComplexControlENS_14ComplexControlEPK19QStyleOptionComple
 // /usr/include/qt/QtWidgets/qstyle.h:445
 // [4] QStyle::SubControl hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
 extern "C"
-QStyle::SubControl C_ZNK6QStyle21hitTestComplexControlENS_14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * widget) {
-  return (QStyle::SubControl)((QStyle*)this_)->hitTestComplexControl(cc, opt, pt, widget);
+QStyle::SubControl C_ZNK6QStyle21hitTestComplexControlENS_14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPoint* pt, const QWidget * widget) {
+  return (QStyle::SubControl)((QStyle*)this_)->hitTestComplexControl(cc, opt, *pt, widget);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:447
@@ -165,8 +165,8 @@ int C_ZNK6QStyle11pixelMetricENS_11PixelMetricEPK12QStyleOptionPK7QWidget(void *
 // /usr/include/qt/QtWidgets/qstyle.h:614
 // [8] QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
-void* C_ZNK6QStyle16sizeFromContentsENS_12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * w) {
-  auto rv = ((QStyle*)this_)->sizeFromContents(ct, opt, contentsSize, w);
+void* C_ZNK6QStyle16sizeFromContentsENS_12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, QSize* contentsSize, const QWidget * w) {
+  auto rv = ((QStyle*)this_)->sizeFromContents(ct, opt, *contentsSize, w);
 return new QSize(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
@@ -196,24 +196,24 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qstyle.h:834
 // [32] QPixmap generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
 extern "C"
-void* C_ZNK6QStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt) {
-  auto rv = ((QStyle*)this_)->generatedIconPixmap(iconMode, pixmap, opt);
+void* C_ZNK6QStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, QPixmap* pixmap, const QStyleOption * opt) {
+  auto rv = ((QStyle*)this_)->generatedIconPixmap(iconMode, *pixmap, opt);
 return new QPixmap(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:837
 // [16] QRect visualRect(Qt::LayoutDirection, const class QRect &, const class QRect &)
 extern "C"
-void* C_ZN6QStyle10visualRectEN2Qt15LayoutDirectionERK5QRectS4_(Qt::LayoutDirection direction, const QRect & boundingRect, const QRect & logicalRect) {
-  auto rv = QStyle::visualRect(direction, boundingRect, logicalRect);
+void* C_ZN6QStyle10visualRectEN2Qt15LayoutDirectionERK5QRectS4_(Qt::LayoutDirection direction, QRect* boundingRect, QRect* logicalRect) {
+  auto rv = QStyle::visualRect(direction, *boundingRect, *logicalRect);
 return new QRect(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:839
 // [8] QPoint visualPos(Qt::LayoutDirection, const class QRect &, const class QPoint &)
 extern "C"
-void* C_ZN6QStyle9visualPosEN2Qt15LayoutDirectionERK5QRectRK6QPoint(Qt::LayoutDirection direction, const QRect & boundingRect, const QPoint & logicalPos) {
-  auto rv = QStyle::visualPos(direction, boundingRect, logicalPos);
+void* C_ZN6QStyle9visualPosEN2Qt15LayoutDirectionERK5QRectRK6QPoint(Qt::LayoutDirection direction, QRect* boundingRect, QPoint* logicalPos) {
+  auto rv = QStyle::visualPos(direction, *boundingRect, *logicalPos);
 return new QPoint(rv);
 }
 // Public static Visibility=Default Availability=Available

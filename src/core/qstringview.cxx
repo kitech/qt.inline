@@ -295,4 +295,9 @@ void* C_ZNK11QStringView4lastEv(void *this_) {
   auto rv = ((QStringView*)this_)->last();
 return new QChar(rv);
 }
+
+extern "C"
+void C_ZN11QStringViewD2Ev(void *this_) {
+  delete (QStringView*)(this_);
+}
 //  main block end

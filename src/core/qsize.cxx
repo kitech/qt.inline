@@ -107,8 +107,8 @@ void C_ZN5QSize5scaleEiiN2Qt15AspectRatioModeE(void *this_, int w, int h, Qt::As
 // /usr/include/qt/QtCore/qsize.h:70
 // [-2] void scale(const class QSize &, Qt::AspectRatioMode)
 extern "C"
-void C_ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *this_, const QSize & s, Qt::AspectRatioMode mode) {
-  ((QSize*)this_)->scale(s, mode);
+void C_ZN5QSize5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::AspectRatioMode mode) {
+  ((QSize*)this_)->scale(*s, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:71
@@ -122,24 +122,24 @@ return new QSize(rv);
 // /usr/include/qt/QtCore/qsize.h:72
 // [8] QSize scaled(const class QSize &, Qt::AspectRatioMode)
 extern "C"
-void* C_ZNK5QSize6scaledERKS_N2Qt15AspectRatioModeE(void *this_, const QSize & s, Qt::AspectRatioMode mode) {
-  auto rv = ((QSize*)this_)->scaled(s, mode);
+void* C_ZNK5QSize6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSize* s, Qt::AspectRatioMode mode) {
+  auto rv = ((QSize*)this_)->scaled(*s, mode);
 return new QSize(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:74
 // [8] QSize expandedTo(const class QSize &)
 extern "C"
-void* C_ZNK5QSize10expandedToERKS_(void *this_, const QSize & arg0) {
-  auto rv = ((QSize*)this_)->expandedTo(arg0);
+void* C_ZNK5QSize10expandedToERKS_(void *this_, QSize* arg0) {
+  auto rv = ((QSize*)this_)->expandedTo(*arg0);
 return new QSize(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:75
 // [8] QSize boundedTo(const class QSize &)
 extern "C"
-void* C_ZNK5QSize9boundedToERKS_(void *this_, const QSize & arg0) {
-  auto rv = ((QSize*)this_)->boundedTo(arg0);
+void* C_ZNK5QSize9boundedToERKS_(void *this_, QSize* arg0) {
+  auto rv = ((QSize*)this_)->boundedTo(*arg0);
 return new QSize(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -157,5 +157,10 @@ extern "C"
 void* C_ZN5QSize7rheightEv(void *this_) {
   auto& rv = ((QSize*)this_)->rheight();
 return &rv;
+}
+
+extern "C"
+void C_ZN5QSizeD2Ev(void *this_) {
+  delete (QSize*)(this_);
 }
 //  main block end

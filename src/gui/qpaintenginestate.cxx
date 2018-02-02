@@ -156,4 +156,9 @@ extern "C"
 bool C_ZNK17QPaintEngineState17penNeedsResolvingEv(void *this_) {
   return (bool)((QPaintEngineState*)this_)->penNeedsResolving();
 }
+
+extern "C"
+void C_ZN17QPaintEngineStateD2Ev(void *this_) {
+  delete (QPaintEngineState*)(this_);
+}
 //  main block end

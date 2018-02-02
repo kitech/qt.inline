@@ -34,7 +34,7 @@ void C_ZN26QAbstractNativeEventFilterD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
 // [1] bool nativeEventFilter(const class QByteArray &, void *, long *)
 extern "C"
-bool C_ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl(void *this_, const QByteArray & eventType, void * message, long * result) {
-  return (bool)((QAbstractNativeEventFilter*)this_)->nativeEventFilter(eventType, message, result);
+bool C_ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
+  return (bool)((QAbstractNativeEventFilter*)this_)->nativeEventFilter(*eventType, message, result);
 }
 //  main block end

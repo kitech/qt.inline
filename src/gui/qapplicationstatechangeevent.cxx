@@ -30,4 +30,9 @@ extern "C"
 Qt::ApplicationState C_ZNK28QApplicationStateChangeEvent16applicationStateEv(void *this_) {
   return (Qt::ApplicationState)((QApplicationStateChangeEvent*)this_)->applicationState();
 }
+
+extern "C"
+void C_ZN28QApplicationStateChangeEventD2Ev(void *this_) {
+  delete (QApplicationStateChangeEvent*)(this_);
+}
 //  main block end

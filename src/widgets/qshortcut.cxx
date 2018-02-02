@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qshortcut.h:94
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN9QShortcut5eventEP6QEvent = 0;
+void* callback_ZN9QShortcut5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QShortcut5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QShortcut5eventEP6QEvent = cbfn; }
+{ callback_ZN9QShortcut5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQShortcut : public QShortcut {
 public:
@@ -25,8 +25,9 @@ MyQShortcut(QWidget * parent) : QShortcut(parent) {}
 MyQShortcut(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context) : QShortcut(key, parent, member, ambiguousMember, context) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN9QShortcut5eventEP6QEvent != 0) {
-      // callback_ZN9QShortcut5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QShortcut5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QShortcut::event(e);
   }
@@ -51,9 +52,9 @@ void* C_ZN9QShortcutC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qshortcut.h:64
 // [-2] void QShortcut(const class QKeySequence &, class QWidget *, const char *, const char *, Qt::ShortcutContext)
 extern "C"
-void* C_ZN9QShortcutC2ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutContextE(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context) {
+void* C_ZN9QShortcutC2ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutContextE(QKeySequence* key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context) {
   auto _nilp = (MyQShortcut*)(0);
-  return  new MyQShortcut(key, parent, member, ambiguousMember, context);
+  return  new MyQShortcut(*key, parent, member, ambiguousMember, context);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:67
@@ -66,8 +67,8 @@ void C_ZN9QShortcutD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qshortcut.h:69
 // [-2] void setKey(const class QKeySequence &)
 extern "C"
-void C_ZN9QShortcut6setKeyERK12QKeySequence(void *this_, const QKeySequence & key) {
-  ((QShortcut*)this_)->setKey(key);
+void C_ZN9QShortcut6setKeyERK12QKeySequence(void *this_, QKeySequence* key) {
+  ((QShortcut*)this_)->setKey(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:70
@@ -109,8 +110,8 @@ Qt::ShortcutContext C_ZNK9QShortcut7contextEv(void *this_) {
 // /usr/include/qt/QtWidgets/qshortcut.h:78
 // [-2] void setWhatsThis(const class QString &)
 extern "C"
-void C_ZN9QShortcut12setWhatsThisERK7QString(void *this_, const QString & text) {
-  ((QShortcut*)this_)->setWhatsThis(text);
+void C_ZN9QShortcut12setWhatsThisERK7QString(void *this_, QString* text) {
+  ((QShortcut*)this_)->setWhatsThis(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:79

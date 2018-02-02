@@ -12,86 +12,86 @@
 // /usr/include/qt/QtWidgets/qtoolbutton.h:109
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QToolButton5eventEP6QEvent = 0;
+void* callback_ZN11QToolButton5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QToolButton5eventEP6QEvent = cbfn; }
+{ callback_ZN11QToolButton5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:110
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN11QToolButton15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QToolButton15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:111
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:112
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN11QToolButton10paintEventEP11QPaintEvent = 0;
+void* callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QToolButton10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:113
 // [-2] void actionEvent(class QActionEvent *)
 extern "C"
-void* callback_ZN11QToolButton11actionEventEP12QActionEvent = 0;
+void* callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton11actionEventEP12QActionEvent(void*cbfn)
-{ callback_ZN11QToolButton11actionEventEP12QActionEvent = cbfn; }
+{ callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:115
 // [-2] void enterEvent(class QEvent *)
 extern "C"
-void* callback_ZN11QToolButton10enterEventEP6QEvent = 0;
+void* callback_ZN11QToolButton10enterEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton10enterEventEP6QEvent(void*cbfn)
-{ callback_ZN11QToolButton10enterEventEP6QEvent = cbfn; }
+{ callback_ZN11QToolButton10enterEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:116
 // [-2] void leaveEvent(class QEvent *)
 extern "C"
-void* callback_ZN11QToolButton10leaveEventEP6QEvent = 0;
+void* callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton10leaveEventEP6QEvent(void*cbfn)
-{ callback_ZN11QToolButton10leaveEventEP6QEvent = cbfn; }
+{ callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:117
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN11QToolButton10timerEventEP11QTimerEvent = 0;
+void* callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN11QToolButton10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:118
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN11QToolButton11changeEventEP6QEvent = 0;
+void* callback_ZN11QToolButton11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN11QToolButton11changeEventEP6QEvent = cbfn; }
+{ callback_ZN11QToolButton11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:120
 // [1] bool hitButton(const class QPoint &)
 extern "C"
-void* callback_ZNK11QToolButton9hitButtonERK6QPoint = 0;
+void* callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK11QToolButton9hitButtonERK6QPoint(void*cbfn)
-{ callback_ZNK11QToolButton9hitButtonERK6QPoint = cbfn; }
+{ callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:121
 // [-2] void nextCheckState()
 extern "C"
-void* callback_ZN11QToolButton14nextCheckStateEv = 0;
+void* callback_ZN11QToolButton14nextCheckStateEv_fnptr = 0;
 extern "C" void set_callback_ZN11QToolButton14nextCheckStateEv(void*cbfn)
-{ callback_ZN11QToolButton14nextCheckStateEv = cbfn; }
+{ callback_ZN11QToolButton14nextCheckStateEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbutton.h:122
 // [-2] void initStyleOption(class QStyleOptionToolButton *)
 extern "C"
-void* callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton = 0;
+void* callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr = 0;
 extern "C" void set_callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton(void*cbfn)
-{ callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton = cbfn; }
+{ callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr = cbfn; }
 
 class MyQToolButton : public QToolButton {
 public:
@@ -100,85 +100,97 @@ public:
 MyQToolButton(QWidget * parent) : QToolButton(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QToolButton5eventEP6QEvent != 0) {
-      // callback_ZN11QToolButton5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QToolButton5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QToolButton::event(e);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    if (callback_ZN11QToolButton15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN11QToolButton15mousePressEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::mousePressEvent(arg0);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
-    if (callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::mouseReleaseEvent(arg0);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN11QToolButton10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN11QToolButton10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::paintEvent(arg0);
   }
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
-    if (callback_ZN11QToolButton11actionEventEP12QActionEvent != 0) {
-      // callback_ZN11QToolButton11actionEventEP12QActionEvent(arg0);
+    auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::actionEvent(arg0);
   }
 // void enterEvent(class QEvent *)
   virtual void enterEvent(QEvent * arg0) {
-    if (callback_ZN11QToolButton10enterEventEP6QEvent != 0) {
-      // callback_ZN11QToolButton10enterEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton10enterEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::enterEvent(arg0);
   }
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
-    if (callback_ZN11QToolButton10leaveEventEP6QEvent != 0) {
-      // callback_ZN11QToolButton10leaveEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::leaveEvent(arg0);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
-    if (callback_ZN11QToolButton10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN11QToolButton10timerEventEP11QTimerEvent(arg0);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::timerEvent(arg0);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    if (callback_ZN11QToolButton11changeEventEP6QEvent != 0) {
-      // callback_ZN11QToolButton11changeEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolButton::changeEvent(arg0);
   }
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & pos) {
-    if (callback_ZNK11QToolButton9hitButtonERK6QPoint != 0) {
-      // callback_ZNK11QToolButton9hitButtonERK6QPoint(pos);
+    auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QPoint*)&pos);
     }
     return QToolButton::hitButton(pos);
   }
 // void nextCheckState()
   virtual void nextCheckState() {
-    if (callback_ZN11QToolButton14nextCheckStateEv != 0) {
-      // callback_ZN11QToolButton14nextCheckStateEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN11QToolButton14nextCheckStateEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QToolButton::nextCheckState();
   }
 // void initStyleOption(class QStyleOptionToolButton *)
   virtual void initStyleOption(QStyleOptionToolButton * option) {
-    if (callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton != 0) {
-      // callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionToolButton *))(callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QToolButton::initStyleOption(option);
   }

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:230
 // [-2] void QStyleOptionHeader(int)
 extern "C"
-void* callback_ZN18QStyleOptionHeaderC1Ei = 0;
+void* callback_ZN18QStyleOptionHeaderC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN18QStyleOptionHeaderC1Ei(void*cbfn)
-{ callback_ZN18QStyleOptionHeaderC1Ei = cbfn; }
+{ callback_ZN18QStyleOptionHeaderC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionHeader : public QStyleOptionHeader {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionHeader(int version) : QStyleOptionHeader(version) {}
 extern "C"
 void* C_ZN18QStyleOptionHeaderC2Ev() {
   return  new QStyleOptionHeader();
+}
+
+extern "C"
+void C_ZN18QStyleOptionHeaderD2Ev(void *this_) {
+  delete (QStyleOptionHeader*)(this_);
 }
 //  main block end

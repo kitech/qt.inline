@@ -28,8 +28,8 @@ return new QTransform(rv);
 // /usr/include/qt/QtGui/qinputmethod.h:69
 // [-2] void setInputItemTransform(const class QTransform &)
 extern "C"
-void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, const QTransform & transform) {
-  ((QInputMethod*)this_)->setInputItemTransform(transform);
+void C_ZN12QInputMethod21setInputItemTransformERK10QTransform(void *this_, QTransform* transform) {
+  ((QInputMethod*)this_)->setInputItemTransform(*transform);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:71
@@ -43,8 +43,8 @@ return new QRectF(rv);
 // /usr/include/qt/QtGui/qinputmethod.h:72
 // [-2] void setInputItemRectangle(const class QRectF &)
 extern "C"
-void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, const QRectF & rect) {
-  ((QInputMethod*)this_)->setInputItemRectangle(rect);
+void C_ZN12QInputMethod21setInputItemRectangleERK6QRectF(void *this_, QRectF* rect) {
+  ((QInputMethod*)this_)->setInputItemRectangle(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:75

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:346
 // [-2] void QStyleOptionProgressBar(int)
 extern "C"
-void* callback_ZN23QStyleOptionProgressBarC1Ei = 0;
+void* callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN23QStyleOptionProgressBarC1Ei(void*cbfn)
-{ callback_ZN23QStyleOptionProgressBarC1Ei = cbfn; }
+{ callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionProgressBar : public QStyleOptionProgressBar {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionProgressBar(int version) : QStyleOptionProgressBar(version) {}
 extern "C"
 void* C_ZN23QStyleOptionProgressBarC2Ev() {
   return  new QStyleOptionProgressBar();
+}
+
+extern "C"
+void C_ZN23QStyleOptionProgressBarD2Ev(void *this_) {
+  delete (QStyleOptionProgressBar*)(this_);
 }
 //  main block end

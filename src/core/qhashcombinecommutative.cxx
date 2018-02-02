@@ -14,4 +14,9 @@ public:
   virtual ~MyQHashCombineCommutative() {}
 };
 
+
+extern "C"
+void C_ZN23QHashCombineCommutativeD2Ev(void *this_) {
+  delete (QtPrivate::QHashCombineCommutative*)(this_);
+}
 //  main block end

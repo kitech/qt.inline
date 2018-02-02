@@ -23,4 +23,9 @@ extern "C"
 void* C_ZN22QGenericReturnArgumentC2EPKcPv(const char * aName, void * aData) {
   return  new QGenericReturnArgument(aName, aData);
 }
+
+extern "C"
+void C_ZN22QGenericReturnArgumentD2Ev(void *this_) {
+  delete (QGenericReturnArgument*)(this_);
+}
 //  main block end

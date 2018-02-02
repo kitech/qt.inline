@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:70
 // [8] QSize sizeHint()
 extern "C"
-void* callback_ZNK18QCommandLinkButton8sizeHintEv = 0;
+void* callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr = 0;
 extern "C" void set_callback_ZNK18QCommandLinkButton8sizeHintEv(void*cbfn)
-{ callback_ZNK18QCommandLinkButton8sizeHintEv = cbfn; }
+{ callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:71
 // [4] int heightForWidth(int)
 extern "C"
-void* callback_ZNK18QCommandLinkButton14heightForWidthEi = 0;
+void* callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr = 0;
 extern "C" void set_callback_ZNK18QCommandLinkButton14heightForWidthEi(void*cbfn)
-{ callback_ZNK18QCommandLinkButton14heightForWidthEi = cbfn; }
+{ callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:72
 // [8] QSize minimumSizeHint()
 extern "C"
-void* callback_ZNK18QCommandLinkButton15minimumSizeHintEv = 0;
+void* callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr = 0;
 extern "C" void set_callback_ZNK18QCommandLinkButton15minimumSizeHintEv(void*cbfn)
-{ callback_ZNK18QCommandLinkButton15minimumSizeHintEv = cbfn; }
+{ callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:73
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN18QCommandLinkButton5eventEP6QEvent = 0;
+void* callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN18QCommandLinkButton5eventEP6QEvent(void*cbfn)
-{ callback_ZN18QCommandLinkButton5eventEP6QEvent = cbfn; }
+{ callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:74
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent = 0;
+void* callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
 
 class MyQCommandLinkButton : public QCommandLinkButton {
 public:
@@ -55,36 +55,41 @@ MyQCommandLinkButton(const QString & text, QWidget * parent) : QCommandLinkButto
 MyQCommandLinkButton(const QString & text, const QString & description, QWidget * parent) : QCommandLinkButton(text, description, parent) {}
 // QSize sizeHint()
   virtual QSize sizeHint() {
-    if (callback_ZNK18QCommandLinkButton8sizeHintEv != 0) {
-      // callback_ZNK18QCommandLinkButton8sizeHintEv();
+    auto fnptr = ((QSize (*)(void* ))(callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QCommandLinkButton::sizeHint();
   }
 // int heightForWidth(int)
   virtual int heightForWidth(int arg0) {
-    if (callback_ZNK18QCommandLinkButton14heightForWidthEi != 0) {
-      // callback_ZNK18QCommandLinkButton14heightForWidthEi(arg0);
+    auto fnptr = ((int (*)(void* , int))(callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QCommandLinkButton::heightForWidth(arg0);
   }
 // QSize minimumSizeHint()
   virtual QSize minimumSizeHint() {
-    if (callback_ZNK18QCommandLinkButton15minimumSizeHintEv != 0) {
-      // callback_ZNK18QCommandLinkButton15minimumSizeHintEv();
+    auto fnptr = ((QSize (*)(void* ))(callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QCommandLinkButton::minimumSizeHint();
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN18QCommandLinkButton5eventEP6QEvent != 0) {
-      // callback_ZN18QCommandLinkButton5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QCommandLinkButton::event(e);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QCommandLinkButton::paintEvent(arg0);
   }
@@ -109,17 +114,17 @@ void* C_ZN18QCommandLinkButtonC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:62
 // [-2] void QCommandLinkButton(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+void* C_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
-  return  new MyQCommandLinkButton(text, parent);
+  return  new MyQCommandLinkButton(*text, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:63
 // [-2] void QCommandLinkButton(const class QString &, const class QString &, class QWidget *)
 extern "C"
-void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(const QString & text, const QString & description, QWidget * parent) {
+void* C_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget(QString* text, QString* description, QWidget * parent) {
   auto _nilp = (MyQCommandLinkButton*)(0);
-  return  new MyQCommandLinkButton(text, description, parent);
+  return  new MyQCommandLinkButton(*text, *description, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:64
@@ -140,7 +145,7 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h:67
 // [-2] void setDescription(const class QString &)
 extern "C"
-void C_ZN18QCommandLinkButton14setDescriptionERK7QString(void *this_, const QString & description) {
-  ((QCommandLinkButton*)this_)->setDescription(description);
+void C_ZN18QCommandLinkButton14setDescriptionERK7QString(void *this_, QString* description) {
+  ((QCommandLinkButton*)this_)->setDescription(*description);
 }
 //  main block end

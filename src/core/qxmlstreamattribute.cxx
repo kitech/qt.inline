@@ -31,15 +31,15 @@ void* C_ZN19QXmlStreamAttributeC2Ev() {
 // /usr/include/qt/QtCore/qxmlstream.h:110
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(const QString & qualifiedName, const QString & value) {
-  return  new QXmlStreamAttribute(qualifiedName, value);
+void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_(QString* qualifiedName, QString* value) {
+  return  new QXmlStreamAttribute(*qualifiedName, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:112
 // [-2] void QXmlStreamAttribute(const class QString &, const class QString &, const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(const QString & namespaceUri, const QString & name, const QString & value) {
-  return  new QXmlStreamAttribute(namespaceUri, name, value);
+void* C_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_(QString* namespaceUri, QString* name, QString* value) {
+  return  new QXmlStreamAttribute(*namespaceUri, *name, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:137

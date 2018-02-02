@@ -12,16 +12,16 @@
 // /usr/include/qt/QtGui/qpdfwriter.h:95
 // [8] QPaintEngine * paintEngine()
 extern "C"
-void* callback_ZNK10QPdfWriter11paintEngineEv = 0;
+void* callback_ZNK10QPdfWriter11paintEngineEv_fnptr = 0;
 extern "C" void set_callback_ZNK10QPdfWriter11paintEngineEv(void*cbfn)
-{ callback_ZNK10QPdfWriter11paintEngineEv = cbfn; }
+{ callback_ZNK10QPdfWriter11paintEngineEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:96
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
 extern "C"
-void* callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE = 0;
+void* callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
 extern "C" void set_callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE = cbfn; }
+{ callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 
 class MyQPdfWriter : public QPdfWriter {
 public:
@@ -32,15 +32,17 @@ MyQPdfWriter(const QString & filename) : QPdfWriter(filename) {}
 MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
 // QPaintEngine * paintEngine()
   virtual QPaintEngine * paintEngine() {
-    if (callback_ZNK10QPdfWriter11paintEngineEv != 0) {
-      // callback_ZNK10QPdfWriter11paintEngineEv();
+    auto fnptr = ((QPaintEngine * (*)(void* ))(callback_ZNK10QPdfWriter11paintEngineEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QPdfWriter::paintEngine();
   }
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric id) {
-    if (callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-      // callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(id);
+    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , id);
     }
     return QPdfWriter::metric(id);
   }
@@ -57,9 +59,9 @@ void* C_ZNK10QPdfWriter10metaObjectEv(void *this_) {
 // /usr/include/qt/QtGui/qpdfwriter.h:60
 // [-2] void QPdfWriter(const class QString &)
 extern "C"
-void* C_ZN10QPdfWriterC2ERK7QString(const QString & filename) {
+void* C_ZN10QPdfWriterC2ERK7QString(QString* filename) {
   auto _nilp = (MyQPdfWriter*)(0);
-  return  new MyQPdfWriter(filename);
+  return  new MyQPdfWriter(*filename);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:61
@@ -102,8 +104,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qpdfwriter.h:68
 // [-2] void setTitle(const class QString &)
 extern "C"
-void C_ZN10QPdfWriter8setTitleERK7QString(void *this_, const QString & title) {
-  ((QPdfWriter*)this_)->setTitle(title);
+void C_ZN10QPdfWriter8setTitleERK7QString(void *this_, QString* title) {
+  ((QPdfWriter*)this_)->setTitle(*title);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:70
@@ -117,8 +119,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qpdfwriter.h:71
 // [-2] void setCreator(const class QString &)
 extern "C"
-void C_ZN10QPdfWriter10setCreatorERK7QString(void *this_, const QString & creator) {
-  ((QPdfWriter*)this_)->setCreator(creator);
+void C_ZN10QPdfWriter10setCreatorERK7QString(void *this_, QString* creator) {
+  ((QPdfWriter*)this_)->setCreator(*creator);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpdfwriter.h:73
@@ -152,7 +154,7 @@ void C_ZN10QPdfWriter11setPageSizeEN17QPagedPaintDevice8PageSizeE(void *this_, Q
 // /usr/include/qt/QtGui/qpdfwriter.h:90
 // [-2] void setPageSizeMM(const class QSizeF &)
 extern "C"
-void C_ZN10QPdfWriter13setPageSizeMMERK6QSizeF(void *this_, const QSizeF & size) {
-  ((QPdfWriter*)this_)->setPageSizeMM(size);
+void C_ZN10QPdfWriter13setPageSizeMMERK6QSizeF(void *this_, QSizeF* size) {
+  ((QPdfWriter*)this_)->setPageSizeMM(*size);
 }
 //  main block end

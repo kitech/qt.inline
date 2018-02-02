@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qtimeline.h:130
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN9QTimeLine10timerEventEP11QTimerEvent = 0;
+void* callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTimeLine10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN9QTimeLine10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQTimeLine : public QTimeLine {
 public:
@@ -23,8 +23,9 @@ public:
 MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    if (callback_ZN9QTimeLine10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN9QTimeLine10timerEventEP11QTimerEvent(event);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QTimeLine::timerEvent(event);
   }
@@ -176,8 +177,8 @@ return new QEasingCurve(rv);
 // /usr/include/qt/QtCore/qtimeline.h:106
 // [-2] void setEasingCurve(const class QEasingCurve &)
 extern "C"
-void C_ZN9QTimeLine14setEasingCurveERK12QEasingCurve(void *this_, const QEasingCurve & curve) {
-  ((QTimeLine*)this_)->setEasingCurve(curve);
+void C_ZN9QTimeLine14setEasingCurveERK12QEasingCurve(void *this_, QEasingCurve* curve) {
+  ((QTimeLine*)this_)->setEasingCurve(*curve);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimeline.h:108

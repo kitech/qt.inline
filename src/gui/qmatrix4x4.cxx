@@ -67,15 +67,15 @@ void* C_ZN10QMatrix4x4C2EPKfii(const float * values, int cols, int rows) {
 // /usr/include/qt/QtGui/qmatrix4x4.h:74
 // [-2] void QMatrix4x4(const class QTransform &)
 extern "C"
-void* C_ZN10QMatrix4x4C2ERK10QTransform(const QTransform & transform) {
-  return  new QMatrix4x4(transform);
+void* C_ZN10QMatrix4x4C2ERK10QTransform(QTransform* transform) {
+  return  new QMatrix4x4(*transform);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:75
 // [-2] void QMatrix4x4(const class QMatrix &)
 extern "C"
-void* C_ZN10QMatrix4x4C2ERK7QMatrix(const QMatrix & matrix) {
-  return  new QMatrix4x4(matrix);
+void* C_ZN10QMatrix4x4C2ERK7QMatrix(QMatrix* matrix) {
+  return  new QMatrix4x4(*matrix);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:81
@@ -89,8 +89,8 @@ return new QVector4D(rv);
 // /usr/include/qt/QtGui/qmatrix4x4.h:82
 // [-2] void setColumn(int, const class QVector4D &)
 extern "C"
-void C_ZN10QMatrix4x49setColumnEiRK9QVector4D(void *this_, int index, const QVector4D & value) {
-  ((QMatrix4x4*)this_)->setColumn(index, value);
+void C_ZN10QMatrix4x49setColumnEiRK9QVector4D(void *this_, int index, QVector4D* value) {
+  ((QMatrix4x4*)this_)->setColumn(index, *value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:84
@@ -104,8 +104,8 @@ return new QVector4D(rv);
 // /usr/include/qt/QtGui/qmatrix4x4.h:85
 // [-2] void setRow(int, const class QVector4D &)
 extern "C"
-void C_ZN10QMatrix4x46setRowEiRK9QVector4D(void *this_, int index, const QVector4D & value) {
-  ((QMatrix4x4*)this_)->setRow(index, value);
+void C_ZN10QMatrix4x46setRowEiRK9QVector4D(void *this_, int index, QVector4D* value) {
+  ((QMatrix4x4*)this_)->setRow(index, *value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:88
@@ -162,22 +162,22 @@ return new QMatrix4x4(rv);
 // /usr/include/qt/QtGui/qmatrix4x4.h:131
 // [-2] void scale(const class QVector3D &)
 extern "C"
-void C_ZN10QMatrix4x45scaleERK9QVector3D(void *this_, const QVector3D & vector) {
-  ((QMatrix4x4*)this_)->scale(vector);
+void C_ZN10QMatrix4x45scaleERK9QVector3D(void *this_, QVector3D* vector) {
+  ((QMatrix4x4*)this_)->scale(*vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:132
 // [-2] void translate(const class QVector3D &)
 extern "C"
-void C_ZN10QMatrix4x49translateERK9QVector3D(void *this_, const QVector3D & vector) {
-  ((QMatrix4x4*)this_)->translate(vector);
+void C_ZN10QMatrix4x49translateERK9QVector3D(void *this_, QVector3D* vector) {
+  ((QMatrix4x4*)this_)->translate(*vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:133
 // [-2] void rotate(float, const class QVector3D &)
 extern "C"
-void C_ZN10QMatrix4x46rotateEfRK9QVector3D(void *this_, float angle, const QVector3D & vector) {
-  ((QMatrix4x4*)this_)->rotate(angle, vector);
+void C_ZN10QMatrix4x46rotateEfRK9QVector3D(void *this_, float angle, QVector3D* vector) {
+  ((QMatrix4x4*)this_)->rotate(angle, *vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:135
@@ -225,22 +225,22 @@ void C_ZN10QMatrix4x46rotateEffff(void *this_, float angle, float x, float y, fl
 // /usr/include/qt/QtGui/qmatrix4x4.h:142
 // [-2] void rotate(const class QQuaternion &)
 extern "C"
-void C_ZN10QMatrix4x46rotateERK11QQuaternion(void *this_, const QQuaternion & quaternion) {
-  ((QMatrix4x4*)this_)->rotate(quaternion);
+void C_ZN10QMatrix4x46rotateERK11QQuaternion(void *this_, QQuaternion* quaternion) {
+  ((QMatrix4x4*)this_)->rotate(*quaternion);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:145
 // [-2] void ortho(const class QRect &)
 extern "C"
-void C_ZN10QMatrix4x45orthoERK5QRect(void *this_, const QRect & rect) {
-  ((QMatrix4x4*)this_)->ortho(rect);
+void C_ZN10QMatrix4x45orthoERK5QRect(void *this_, QRect* rect) {
+  ((QMatrix4x4*)this_)->ortho(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:146
 // [-2] void ortho(const class QRectF &)
 extern "C"
-void C_ZN10QMatrix4x45orthoERK6QRectF(void *this_, const QRectF & rect) {
-  ((QMatrix4x4*)this_)->ortho(rect);
+void C_ZN10QMatrix4x45orthoERK6QRectF(void *this_, QRectF* rect) {
+  ((QMatrix4x4*)this_)->ortho(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:147
@@ -267,15 +267,15 @@ void C_ZN10QMatrix4x411perspectiveEffff(void *this_, float verticalAngle, float 
 // /usr/include/qt/QtGui/qmatrix4x4.h:151
 // [-2] void lookAt(const class QVector3D &, const class QVector3D &, const class QVector3D &)
 extern "C"
-void C_ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_(void *this_, const QVector3D & eye, const QVector3D & center, const QVector3D & up) {
-  ((QMatrix4x4*)this_)->lookAt(eye, center, up);
+void C_ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_(void *this_, QVector3D* eye, QVector3D* center, QVector3D* up) {
+  ((QMatrix4x4*)this_)->lookAt(*eye, *center, *up);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:153
 // [-2] void viewport(const class QRectF &)
 extern "C"
-void C_ZN10QMatrix4x48viewportERK6QRectF(void *this_, const QRectF & rect) {
-  ((QMatrix4x4*)this_)->viewport(rect);
+void C_ZN10QMatrix4x48viewportERK6QRectF(void *this_, QRectF* rect) {
+  ((QMatrix4x4*)this_)->viewport(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:154
@@ -326,56 +326,56 @@ return new QTransform(rv);
 // /usr/include/qt/QtGui/qmatrix4x4.h:163
 // [8] QPoint map(const class QPoint &)
 extern "C"
-void* C_ZNK10QMatrix4x43mapERK6QPoint(void *this_, const QPoint & point) {
-  auto rv = ((QMatrix4x4*)this_)->map(point);
+void* C_ZNK10QMatrix4x43mapERK6QPoint(void *this_, QPoint* point) {
+  auto rv = ((QMatrix4x4*)this_)->map(*point);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:164
 // [16] QPointF map(const class QPointF &)
 extern "C"
-void* C_ZNK10QMatrix4x43mapERK7QPointF(void *this_, const QPointF & point) {
-  auto rv = ((QMatrix4x4*)this_)->map(point);
+void* C_ZNK10QMatrix4x43mapERK7QPointF(void *this_, QPointF* point) {
+  auto rv = ((QMatrix4x4*)this_)->map(*point);
 return new QPointF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:166
 // [12] QVector3D map(const class QVector3D &)
 extern "C"
-void* C_ZNK10QMatrix4x43mapERK9QVector3D(void *this_, const QVector3D & point) {
-  auto rv = ((QMatrix4x4*)this_)->map(point);
+void* C_ZNK10QMatrix4x43mapERK9QVector3D(void *this_, QVector3D* point) {
+  auto rv = ((QMatrix4x4*)this_)->map(*point);
 return new QVector3D(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:167
 // [12] QVector3D mapVector(const class QVector3D &)
 extern "C"
-void* C_ZNK10QMatrix4x49mapVectorERK9QVector3D(void *this_, const QVector3D & vector) {
-  auto rv = ((QMatrix4x4*)this_)->mapVector(vector);
+void* C_ZNK10QMatrix4x49mapVectorERK9QVector3D(void *this_, QVector3D* vector) {
+  auto rv = ((QMatrix4x4*)this_)->mapVector(*vector);
 return new QVector3D(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:170
 // [16] QVector4D map(const class QVector4D &)
 extern "C"
-void* C_ZNK10QMatrix4x43mapERK9QVector4D(void *this_, const QVector4D & point) {
-  auto rv = ((QMatrix4x4*)this_)->map(point);
+void* C_ZNK10QMatrix4x43mapERK9QVector4D(void *this_, QVector4D* point) {
+  auto rv = ((QMatrix4x4*)this_)->map(*point);
 return new QVector4D(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:172
 // [16] QRect mapRect(const class QRect &)
 extern "C"
-void* C_ZNK10QMatrix4x47mapRectERK5QRect(void *this_, const QRect & rect) {
-  auto rv = ((QMatrix4x4*)this_)->mapRect(rect);
+void* C_ZNK10QMatrix4x47mapRectERK5QRect(void *this_, QRect* rect) {
+  auto rv = ((QMatrix4x4*)this_)->mapRect(*rect);
 return new QRect(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix4x4.h:173
 // [32] QRectF mapRect(const class QRectF &)
 extern "C"
-void* C_ZNK10QMatrix4x47mapRectERK6QRectF(void *this_, const QRectF & rect) {
-  auto rv = ((QMatrix4x4*)this_)->mapRect(rect);
+void* C_ZNK10QMatrix4x47mapRectERK6QRectF(void *this_, QRectF* rect) {
+  auto rv = ((QMatrix4x4*)this_)->mapRect(*rect);
 return new QRectF(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -405,5 +405,10 @@ void* C_ZNK10QMatrix4x49constDataEv(void *this_) {
 extern "C"
 void C_ZN10QMatrix4x48optimizeEv(void *this_) {
   ((QMatrix4x4*)this_)->optimize();
+}
+
+extern "C"
+void C_ZN10QMatrix4x4D2Ev(void *this_) {
+  delete (QMatrix4x4*)(this_);
 }
 //  main block end

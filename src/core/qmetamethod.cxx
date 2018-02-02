@@ -172,4 +172,9 @@ extern "C"
 bool C_ZNK11QMetaMethod7isValidEv(void *this_) {
   return (bool)((QMetaMethod*)this_)->isValid();
 }
+
+extern "C"
+void C_ZN11QMetaMethodD2Ev(void *this_) {
+  delete (QMetaMethod*)(this_);
+}
 //  main block end

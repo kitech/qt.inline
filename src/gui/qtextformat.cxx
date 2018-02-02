@@ -43,15 +43,15 @@ void C_ZN11QTextFormatD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:296
 // [-2] void swap(class QTextFormat &)
 extern "C"
-void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat & other) {
-  ((QTextFormat*)this_)->swap(other);
+void C_ZN11QTextFormat4swapERS_(void *this_, QTextFormat* other) {
+  ((QTextFormat*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:299
 // [-2] void merge(const class QTextFormat &)
 extern "C"
-void C_ZN11QTextFormat5mergeERKS_(void *this_, const QTextFormat & other) {
-  ((QTextFormat*)this_)->merge(other);
+void C_ZN11QTextFormat5mergeERKS_(void *this_, QTextFormat* other) {
+  ((QTextFormat*)this_)->merge(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:301
@@ -100,8 +100,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtGui/qtextformat.h:310
 // [-2] void setProperty(int, const class QVariant &)
 extern "C"
-void C_ZN11QTextFormat11setPropertyEiRK8QVariant(void *this_, int propertyId, const QVariant & value) {
-  ((QTextFormat*)this_)->setProperty(propertyId, value);
+void C_ZN11QTextFormat11setPropertyEiRK8QVariant(void *this_, int propertyId, QVariant* value) {
+  ((QTextFormat*)this_)->setProperty(propertyId, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:311
@@ -322,8 +322,8 @@ Qt::LayoutDirection C_ZNK11QTextFormat15layoutDirectionEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:358
 // [-2] void setBackground(const class QBrush &)
 extern "C"
-void C_ZN11QTextFormat13setBackgroundERK6QBrush(void *this_, const QBrush & brush) {
-  ((QTextFormat*)this_)->setBackground(brush);
+void C_ZN11QTextFormat13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
+  ((QTextFormat*)this_)->setBackground(*brush);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:360
@@ -344,8 +344,8 @@ void C_ZN11QTextFormat15clearBackgroundEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:365
 // [-2] void setForeground(const class QBrush &)
 extern "C"
-void C_ZN11QTextFormat13setForegroundERK6QBrush(void *this_, const QBrush & brush) {
-  ((QTextFormat*)this_)->setForeground(brush);
+void C_ZN11QTextFormat13setForegroundERK6QBrush(void *this_, QBrush* brush) {
+  ((QTextFormat*)this_)->setForeground(*brush);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:367

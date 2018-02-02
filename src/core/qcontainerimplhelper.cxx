@@ -21,4 +21,9 @@ extern "C"
 QtPrivate::QContainerImplHelper::CutResult C_ZN9QtPrivate20QContainerImplHelper3midEiPiS1_(int originalLength, int * position, int * length) {
   return (QtPrivate::QContainerImplHelper::CutResult)QtPrivate::QContainerImplHelper::mid(originalLength, position, length);
 }
+
+extern "C"
+void C_ZN20QContainerImplHelperD2Ev(void *this_) {
+  delete (QtPrivate::QContainerImplHelper*)(this_);
+}
 //  main block end

@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qfuturewatcher.h:101
 // [-2] void connectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod = 0;
+void* callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:102
 // [-2] void disconnectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod = 0;
+void* callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:105
 // [-2] void connectOutputInterface()
 extern "C"
-void* callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv = 0;
+void* callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = 0;
 extern "C" void set_callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void*cbfn)
-{ callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv = cbfn; }
+{ callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:106
 // [-2] void disconnectOutputInterface(_Bool)
 extern "C"
-void* callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb = 0;
+void* callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = 0;
 extern "C" void set_callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void*cbfn)
-{ callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb = cbfn; }
+{ callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = cbfn; }
 
 class MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
@@ -44,29 +44,33 @@ public:
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
-    if (callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(signal);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&signal);
     }
     QFutureWatcherBase::connectNotify(signal);
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
-    if (callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(signal);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&signal);
     }
     QFutureWatcherBase::disconnectNotify(signal);
   }
 // void connectOutputInterface()
   virtual void connectOutputInterface() {
-    if (callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv != 0) {
-      // callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QFutureWatcherBase::connectOutputInterface();
   }
 // void disconnectOutputInterface(_Bool)
   virtual void disconnectOutputInterface(bool pendingAssignment) {
-    if (callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb != 0) {
-      // callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(pendingAssignment);
+    auto fnptr = ((void (*)(void* , bool))(callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , pendingAssignment);
     }
     QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
   }
@@ -239,8 +243,8 @@ void C_ZN18QFutureWatcherBase20progressValueChangedEi(void *this_, int progressV
 // /usr/include/qt/QtCore/qfuturewatcher.h:91
 // [-2] void progressTextChanged(const class QString &)
 extern "C"
-void C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *this_, const QString & progressText) {
-  ((QFutureWatcherBase*)this_)->progressTextChanged(progressText);
+void C_ZN18QFutureWatcherBase19progressTextChangedERK7QString(void *this_, QString* progressText) {
+  ((QFutureWatcherBase*)this_)->progressTextChanged(*progressText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:94
@@ -276,5 +280,10 @@ void C_ZN18QFutureWatcherBase6resumeEv(void *this_) {
 extern "C"
 void C_ZN18QFutureWatcherBase12togglePausedEv(void *this_) {
   ((QFutureWatcherBase*)this_)->togglePaused();
+}
+
+extern "C"
+void C_ZN18QFutureWatcherBaseD2Ev(void *this_) {
+  delete (QFutureWatcherBase*)(this_);
 }
 //  main block end

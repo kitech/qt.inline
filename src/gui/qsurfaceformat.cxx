@@ -279,8 +279,8 @@ void C_ZN14QSurfaceFormat13setColorSpaceENS_10ColorSpaceE(void *this_, QSurfaceF
 // /usr/include/qt/QtGui/qsurfaceformat.h:157
 // [-2] void setDefaultFormat(const class QSurfaceFormat &)
 extern "C"
-void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(const QSurfaceFormat & format) {
-  QSurfaceFormat::setDefaultFormat(format);
+void C_ZN14QSurfaceFormat16setDefaultFormatERKS_(QSurfaceFormat* format) {
+  QSurfaceFormat::setDefaultFormat(*format);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:158

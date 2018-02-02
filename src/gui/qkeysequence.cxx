@@ -33,8 +33,8 @@ void* C_ZN12QKeySequenceC2Ev() {
 // /usr/include/qt/QtGui/qkeysequence.h:157
 // [-2] void QKeySequence(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-void* C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(const QString & key, QKeySequence::SequenceFormat format) {
-  return  new QKeySequence(key, format);
+void* C_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE(QString* key, QKeySequence::SequenceFormat format) {
+  return  new QKeySequence(*key, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:158
@@ -83,31 +83,31 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qkeysequence.h:173
 // [8] QKeySequence fromString(const class QString &, enum QKeySequence::SequenceFormat)
 extern "C"
-void* C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(const QString & str, QKeySequence::SequenceFormat format) {
-  auto rv = QKeySequence::fromString(str, format);
+void* C_ZN12QKeySequence10fromStringERK7QStringNS_14SequenceFormatE(QString* str, QKeySequence::SequenceFormat format) {
+  auto rv = QKeySequence::fromString(*str, format);
 return new QKeySequence(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:178
 // [4] QKeySequence::SequenceMatch matches(const class QKeySequence &)
 extern "C"
-QKeySequence::SequenceMatch C_ZNK12QKeySequence7matchesERKS_(void *this_, const QKeySequence & seq) {
-  return (QKeySequence::SequenceMatch)((QKeySequence*)this_)->matches(seq);
+QKeySequence::SequenceMatch C_ZNK12QKeySequence7matchesERKS_(void *this_, QKeySequence* seq) {
+  return (QKeySequence::SequenceMatch)((QKeySequence*)this_)->matches(*seq);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:179
 // [8] QKeySequence mnemonic(const class QString &)
 extern "C"
-void* C_ZN12QKeySequence8mnemonicERK7QString(const QString & text) {
-  auto rv = QKeySequence::mnemonic(text);
+void* C_ZN12QKeySequence8mnemonicERK7QString(QString* text) {
+  auto rv = QKeySequence::mnemonic(*text);
 return new QKeySequence(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:192
 // [-2] void swap(class QKeySequence &)
 extern "C"
-void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence & other) {
-  ((QKeySequence*)this_)->swap(other);
+void C_ZN12QKeySequence4swapERS_(void *this_, QKeySequence* other) {
+  ((QKeySequence*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:205

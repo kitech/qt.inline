@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:623
 // [-2] void QStyleOptionTitleBar(int)
 extern "C"
-void* callback_ZN20QStyleOptionTitleBarC1Ei = 0;
+void* callback_ZN20QStyleOptionTitleBarC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN20QStyleOptionTitleBarC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionTitleBarC1Ei = cbfn; }
+{ callback_ZN20QStyleOptionTitleBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionTitleBar(int version) : QStyleOptionTitleBar(version) {}
 extern "C"
 void* C_ZN20QStyleOptionTitleBarC2Ev() {
   return  new QStyleOptionTitleBar();
+}
+
+extern "C"
+void C_ZN20QStyleOptionTitleBarD2Ev(void *this_) {
+  delete (QStyleOptionTitleBar*)(this_);
 }
 //  main block end

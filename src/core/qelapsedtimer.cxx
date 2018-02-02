@@ -97,14 +97,19 @@ qint64 C_ZNK13QElapsedTimer19msecsSinceReferenceEv(void *this_) {
 // /usr/include/qt/QtCore/qelapsedtimer.h:78
 // [8] qint64 msecsTo(const class QElapsedTimer &)
 extern "C"
-qint64 C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, const QElapsedTimer & other) {
-  return (qint64)((QElapsedTimer*)this_)->msecsTo(other);
+qint64 C_ZNK13QElapsedTimer7msecsToERKS_(void *this_, QElapsedTimer* other) {
+  return (qint64)((QElapsedTimer*)this_)->msecsTo(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qelapsedtimer.h:79
 // [8] qint64 secsTo(const class QElapsedTimer &)
 extern "C"
-qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, const QElapsedTimer & other) {
-  return (qint64)((QElapsedTimer*)this_)->secsTo(other);
+qint64 C_ZNK13QElapsedTimer6secsToERKS_(void *this_, QElapsedTimer* other) {
+  return (qint64)((QElapsedTimer*)this_)->secsTo(*other);
+}
+
+extern "C"
+void C_ZN13QElapsedTimerD2Ev(void *this_) {
+  delete (QElapsedTimer*)(this_);
 }
 //  main block end

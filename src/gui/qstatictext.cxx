@@ -29,8 +29,8 @@ void* C_ZN11QStaticTextC2Ev() {
 // /usr/include/qt/QtGui/qstatictext.h:65
 // [-2] void QStaticText(const class QString &)
 extern "C"
-void* C_ZN11QStaticTextC2ERK7QString(const QString & text) {
-  return  new QStaticText(text);
+void* C_ZN11QStaticTextC2ERK7QString(QString* text) {
+  return  new QStaticText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:71
@@ -43,15 +43,15 @@ void C_ZN11QStaticTextD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qstatictext.h:73
 // [-2] void swap(class QStaticText &)
 extern "C"
-void C_ZN11QStaticText4swapERS_(void *this_, QStaticText & other) {
-  ((QStaticText*)this_)->swap(other);
+void C_ZN11QStaticText4swapERS_(void *this_, QStaticText* other) {
+  ((QStaticText*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:75
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN11QStaticText7setTextERK7QString(void *this_, const QString & text) {
-  ((QStaticText*)this_)->setText(text);
+void C_ZN11QStaticText7setTextERK7QString(void *this_, QString* text) {
+  ((QStaticText*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:76
@@ -93,8 +93,8 @@ qreal C_ZNK11QStaticText9textWidthEv(void *this_) {
 // /usr/include/qt/QtGui/qstatictext.h:84
 // [-2] void setTextOption(const class QTextOption &)
 extern "C"
-void C_ZN11QStaticText13setTextOptionERK11QTextOption(void *this_, const QTextOption & textOption) {
-  ((QStaticText*)this_)->setTextOption(textOption);
+void C_ZN11QStaticText13setTextOptionERK11QTextOption(void *this_, QTextOption* textOption) {
+  ((QStaticText*)this_)->setTextOption(*textOption);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:85
@@ -116,8 +116,8 @@ return new QSizeF(rv);
 // /usr/include/qt/QtGui/qstatictext.h:89
 // [-2] void prepare(const class QTransform &, const class QFont &)
 extern "C"
-void C_ZN11QStaticText7prepareERK10QTransformRK5QFont(void *this_, const QTransform & matrix, const QFont & font) {
-  ((QStaticText*)this_)->prepare(matrix, font);
+void C_ZN11QStaticText7prepareERK10QTransformRK5QFont(void *this_, QTransform* matrix, QFont* font) {
+  ((QStaticText*)this_)->prepare(*matrix, *font);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:91

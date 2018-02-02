@@ -37,4 +37,9 @@ extern "C"
 void* C_ZNK16QGenericArgument4nameEv(void *this_) {
   return (void*)((QGenericArgument*)this_)->name();
 }
+
+extern "C"
+void C_ZN16QGenericArgumentD2Ev(void *this_) {
+  delete (QGenericArgument*)(this_);
+}
 //  main block end

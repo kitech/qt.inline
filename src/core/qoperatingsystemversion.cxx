@@ -81,4 +81,9 @@ void* C_ZNK23QOperatingSystemVersion4nameEv(void *this_) {
   auto rv = ((QOperatingSystemVersion*)this_)->name();
 return new QString(rv);
 }
+
+extern "C"
+void C_ZN23QOperatingSystemVersionD2Ev(void *this_) {
+  delete (QOperatingSystemVersion*)(this_);
+}
 //  main block end

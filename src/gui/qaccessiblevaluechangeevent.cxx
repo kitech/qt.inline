@@ -22,15 +22,15 @@ MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val
 // /usr/include/qt/QtGui/qaccessible.h:898
 // [-2] void QAccessibleValueChangeEvent(class QObject *, const class QVariant &)
 extern "C"
-void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, const QVariant & val) {
-  return  new QAccessibleValueChangeEvent(obj, val);
+void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, QVariant* val) {
+  return  new QAccessibleValueChangeEvent(obj, *val);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:904
 // [-2] void QAccessibleValueChangeEvent(class QAccessibleInterface *, const class QVariant &)
 extern "C"
-void* C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, const QVariant & val) {
-  return  new QAccessibleValueChangeEvent(iface, val);
+void* C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, QVariant* val) {
+  return  new QAccessibleValueChangeEvent(iface, *val);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:911
@@ -43,8 +43,8 @@ void C_ZN27QAccessibleValueChangeEventD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qaccessible.h:913
 // [-2] void setValue(const class QVariant &)
 extern "C"
-void C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *this_, const QVariant & val) {
-  ((QAccessibleValueChangeEvent*)this_)->setValue(val);
+void C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *this_, QVariant* val) {
+  ((QAccessibleValueChangeEvent*)this_)->setValue(*val);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:914

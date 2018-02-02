@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:923
 // [-2] void QTextTableFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN16QTextTableFormatC1ERK11QTextFormat = 0;
+void* callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN16QTextTableFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextTableFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextTableFormat : public QTextTableFormat {
 public:
@@ -108,5 +108,10 @@ void C_ZN16QTextTableFormat17setHeaderRowCountEi(void *this_, int count) {
 extern "C"
 int C_ZNK16QTextTableFormat14headerRowCountEv(void *this_) {
   return (int)((QTextTableFormat*)this_)->headerRowCount();
+}
+
+extern "C"
+void C_ZN16QTextTableFormatD2Ev(void *this_) {
+  delete (QTextTableFormat*)(this_);
 }
 //  main block end

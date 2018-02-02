@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qsignaltransition.h:83
 // [1] bool eventTest(class QEvent *)
 extern "C"
-void* callback_ZN17QSignalTransition9eventTestEP6QEvent = 0;
+void* callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN17QSignalTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition9eventTestEP6QEvent = cbfn; }
+{ callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:84
 // [-2] void onTransition(class QEvent *)
 extern "C"
-void* callback_ZN17QSignalTransition12onTransitionEP6QEvent = 0;
+void* callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN17QSignalTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition12onTransitionEP6QEvent = cbfn; }
+{ callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:86
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN17QSignalTransition5eventEP6QEvent = 0;
+void* callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN17QSignalTransition5eventEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition5eventEP6QEvent = cbfn; }
+{ callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSignalTransition : public QSignalTransition {
 public:
@@ -39,22 +39,25 @@ MyQSignalTransition(QState * sourceState) : QSignalTransition(sourceState) {}
 MyQSignalTransition(const QObject * sender, const char * signal, QState * sourceState) : QSignalTransition(sender, signal, sourceState) {}
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    if (callback_ZN17QSignalTransition9eventTestEP6QEvent != 0) {
-      // callback_ZN17QSignalTransition9eventTestEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QSignalTransition::eventTest(event);
   }
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    if (callback_ZN17QSignalTransition12onTransitionEP6QEvent != 0) {
-      // callback_ZN17QSignalTransition12onTransitionEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QSignalTransition::onTransition(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN17QSignalTransition5eventEP6QEvent != 0) {
-      // callback_ZN17QSignalTransition5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QSignalTransition::event(e);
   }
@@ -116,7 +119,7 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qsignaltransition.h:80
 // [-2] void setSignal(const class QByteArray &)
 extern "C"
-void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, const QByteArray & signal) {
-  ((QSignalTransition*)this_)->setSignal(signal);
+void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, QByteArray* signal) {
+  ((QSignalTransition*)this_)->setSignal(*signal);
 }
 //  main block end

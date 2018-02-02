@@ -42,8 +42,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:238
 // [-2] void setScenePos(const class QPointF &)
 extern "C"
-void C_ZN23QGraphicsSceneHelpEvent11setScenePosERK7QPointF(void *this_, const QPointF & pos) {
-  ((QGraphicsSceneHelpEvent*)this_)->setScenePos(pos);
+void C_ZN23QGraphicsSceneHelpEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
+  ((QGraphicsSceneHelpEvent*)this_)->setScenePos(*pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:240
@@ -57,7 +57,7 @@ return new QPoint(rv);
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:241
 // [-2] void setScreenPos(const class QPoint &)
 extern "C"
-void C_ZN23QGraphicsSceneHelpEvent12setScreenPosERK6QPoint(void *this_, const QPoint & pos) {
-  ((QGraphicsSceneHelpEvent*)this_)->setScreenPos(pos);
+void C_ZN23QGraphicsSceneHelpEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
+  ((QGraphicsSceneHelpEvent*)this_)->setScreenPos(*pos);
 }
 //  main block end

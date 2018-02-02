@@ -112,4 +112,9 @@ extern "C"
 void* C_ZNK9QListData3endEv(void *this_) {
   return (void*)((QListData*)this_)->end();
 }
+
+extern "C"
+void C_ZN9QListDataD2Ev(void *this_) {
+  delete (QListData*)(this_);
+}
 //  main block end

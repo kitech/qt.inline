@@ -186,4 +186,9 @@ extern "C"
 uchar C_ZNK12QPixelFormat7subEnumEv(void *this_) {
   return (uchar)((QPixelFormat*)this_)->subEnum();
 }
+
+extern "C"
+void C_ZN12QPixelFormatD2Ev(void *this_) {
+  delete (QPixelFormat*)(this_);
+}
 //  main block end

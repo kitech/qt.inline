@@ -34,8 +34,8 @@ void C_ZN14QTextTableCellD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qtexttable.h:63
 // [-2] void setFormat(const class QTextCharFormat &)
 extern "C"
-void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, const QTextCharFormat & format) {
-  ((QTextTableCell*)this_)->setFormat(format);
+void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
+  ((QTextTableCell*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:64

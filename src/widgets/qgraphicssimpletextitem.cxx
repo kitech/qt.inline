@@ -12,23 +12,23 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:991
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
 extern "C"
-void* callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+void* callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
 extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-{ callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+{ callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:992
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
 extern "C"
-void* callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+void* callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-{ callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+{ callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:993
 // [16] QVariant extension(const class QVariant &)
 extern "C"
-void* callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant = 0;
+void* callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(void*cbfn)
-{ callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant = cbfn; }
+{ callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsSimpleTextItem : public QGraphicsSimpleTextItem {
 public:
@@ -39,22 +39,25 @@ MyQGraphicsSimpleTextItem(QGraphicsItem * parent) : QGraphicsSimpleTextItem(pare
 MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsSimpleTextItem(text, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-    if (callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-      // callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension);
     }
     return QGraphicsSimpleTextItem::supportsExtension(extension);
   }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-    if (callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-      // callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension, (QVariant*)&variant);
     }
     QGraphicsSimpleTextItem::setExtension(extension, variant);
   }
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
-    if (callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant != 0) {
-      // callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(variant);
+    auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QVariant*)&variant);
     }
     return QGraphicsSimpleTextItem::extension(variant);
   }
@@ -72,9 +75,9 @@ void* C_ZN23QGraphicsSimpleTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:969
 // [-2] void QGraphicsSimpleTextItem(const class QString &, class QGraphicsItem *)
 extern "C"
-void* C_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem(const QString & text, QGraphicsItem * parent) {
+void* C_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem(QString* text, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
-  return  new MyQGraphicsSimpleTextItem(text, parent);
+  return  new MyQGraphicsSimpleTextItem(*text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:970
@@ -87,8 +90,8 @@ void C_ZN23QGraphicsSimpleTextItemD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:972
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN23QGraphicsSimpleTextItem7setTextERK7QString(void *this_, const QString & text) {
-  ((QGraphicsSimpleTextItem*)this_)->setText(text);
+void C_ZN23QGraphicsSimpleTextItem7setTextERK7QString(void *this_, QString* text) {
+  ((QGraphicsSimpleTextItem*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:973
@@ -102,8 +105,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:975
 // [-2] void setFont(const class QFont &)
 extern "C"
-void C_ZN23QGraphicsSimpleTextItem7setFontERK5QFont(void *this_, const QFont & font) {
-  ((QGraphicsSimpleTextItem*)this_)->setFont(font);
+void C_ZN23QGraphicsSimpleTextItem7setFontERK5QFont(void *this_, QFont* font) {
+  ((QGraphicsSimpleTextItem*)this_)->setFont(*font);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:976
@@ -133,8 +136,8 @@ return new QPainterPath(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:980
 // [1] bool contains(const class QPointF &)
 extern "C"
-bool C_ZNK23QGraphicsSimpleTextItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  return (bool)((QGraphicsSimpleTextItem*)this_)->contains(point);
+bool C_ZNK23QGraphicsSimpleTextItem8containsERK7QPointF(void *this_, QPointF* point) {
+  return (bool)((QGraphicsSimpleTextItem*)this_)->contains(*point);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:982

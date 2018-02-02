@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:252
 // [-2] void QStyleOptionButton(int)
 extern "C"
-void* callback_ZN18QStyleOptionButtonC1Ei = 0;
+void* callback_ZN18QStyleOptionButtonC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN18QStyleOptionButtonC1Ei(void*cbfn)
-{ callback_ZN18QStyleOptionButtonC1Ei = cbfn; }
+{ callback_ZN18QStyleOptionButtonC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionButton : public QStyleOptionButton {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionButton(int version) : QStyleOptionButton(version) {}
 extern "C"
 void* C_ZN18QStyleOptionButtonC2Ev() {
   return  new QStyleOptionButton();
+}
+
+extern "C"
+void C_ZN18QStyleOptionButtonD2Ev(void *this_) {
+  delete (QStyleOptionButton*)(this_);
 }
 //  main block end

@@ -70,16 +70,16 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qclipboard.h:75
 // [8] QString text(class QString &, enum QClipboard::Mode)
 extern "C"
-void* C_ZNK10QClipboard4textER7QStringNS_4ModeE(void *this_, QString & subtype, QClipboard::Mode mode) {
-  auto rv = ((QClipboard*)this_)->text(subtype, mode);
+void* C_ZNK10QClipboard4textER7QStringNS_4ModeE(void *this_, QString* subtype, QClipboard::Mode mode) {
+  auto rv = ((QClipboard*)this_)->text(*subtype, mode);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:76
 // [-2] void setText(const class QString &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard7setTextERK7QStringNS_4ModeE(void *this_, const QString & arg0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setText(arg0, mode);
+void C_ZN10QClipboard7setTextERK7QStringNS_4ModeE(void *this_, QString* arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setText(*arg0, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:78
@@ -115,15 +115,15 @@ return new QPixmap(rv);
 // /usr/include/qt/QtGui/qclipboard.h:83
 // [-2] void setImage(const class QImage &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard8setImageERK6QImageNS_4ModeE(void *this_, const QImage & arg0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setImage(arg0, mode);
+void C_ZN10QClipboard8setImageERK6QImageNS_4ModeE(void *this_, QImage* arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setImage(*arg0, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:84
 // [-2] void setPixmap(const class QPixmap &, enum QClipboard::Mode)
 extern "C"
-void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, const QPixmap & arg0, QClipboard::Mode mode) {
-  ((QClipboard*)this_)->setPixmap(arg0, mode);
+void C_ZN10QClipboard9setPixmapERK7QPixmapNS_4ModeE(void *this_, QPixmap* arg0, QClipboard::Mode mode) {
+  ((QClipboard*)this_)->setPixmap(*arg0, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qclipboard.h:87

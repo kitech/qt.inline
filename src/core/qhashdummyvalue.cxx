@@ -14,4 +14,9 @@ public:
   virtual ~MyQHashDummyValue() {}
 };
 
+
+extern "C"
+void C_ZN15QHashDummyValueD2Ev(void *this_) {
+  delete (QHashDummyValue*)(this_);
+}
 //  main block end

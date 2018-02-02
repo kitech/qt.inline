@@ -12,23 +12,23 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:727
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
 extern "C"
-void* callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+void* callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
 extern "C" void set_callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-{ callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+{ callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:728
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
 extern "C"
-void* callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+void* callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-{ callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+{ callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:729
 // [16] QVariant extension(const class QVariant &)
 extern "C"
-void* callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant = 0;
+void* callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(void*cbfn)
-{ callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant = cbfn; }
+{ callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsEllipseItem : public QGraphicsEllipseItem {
 public:
@@ -41,22 +41,25 @@ MyQGraphicsEllipseItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsE
 MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsEllipseItem(x, y, w, h, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-    if (callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-      // callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension);
     }
     return QGraphicsEllipseItem::supportsExtension(extension);
   }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-    if (callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-      // callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension, (QVariant*)&variant);
     }
     QGraphicsEllipseItem::setExtension(extension, variant);
   }
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
-    if (callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant != 0) {
-      // callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(variant);
+    auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QVariant*)&variant);
     }
     return QGraphicsEllipseItem::extension(variant);
   }
@@ -74,9 +77,9 @@ void* C_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:700
 // [-2] void QGraphicsEllipseItem(const class QRectF &, class QGraphicsItem *)
 extern "C"
-void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(const QRectF & rect, QGraphicsItem * parent) {
+void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsEllipseItem*)(0);
-  return  new MyQGraphicsEllipseItem(rect, parent);
+  return  new MyQGraphicsEllipseItem(*rect, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:701
@@ -105,8 +108,8 @@ return new QRectF(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:705
 // [-2] void setRect(const class QRectF &)
 extern "C"
-void C_ZN20QGraphicsEllipseItem7setRectERK6QRectF(void *this_, const QRectF & rect) {
-  ((QGraphicsEllipseItem*)this_)->setRect(rect);
+void C_ZN20QGraphicsEllipseItem7setRectERK6QRectF(void *this_, QRectF* rect) {
+  ((QGraphicsEllipseItem*)this_)->setRect(*rect);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:706
@@ -163,8 +166,8 @@ return new QPainterPath(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:716
 // [1] bool contains(const class QPointF &)
 extern "C"
-bool C_ZNK20QGraphicsEllipseItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  return (bool)((QGraphicsEllipseItem*)this_)->contains(point);
+bool C_ZNK20QGraphicsEllipseItem8containsERK7QPointF(void *this_, QPointF* point) {
+  return (bool)((QGraphicsEllipseItem*)this_)->contains(*point);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:718

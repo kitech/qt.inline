@@ -213,8 +213,8 @@ bool C_ZN11QMetaObject16checkConnectArgsEPKcS1_(const char * signal, const char 
 // /usr/include/qt/QtCore/qobjectdefs.h:383
 // [1] bool checkConnectArgs(const class QMetaMethod &, const class QMetaMethod &)
 extern "C"
-bool C_ZN11QMetaObject16checkConnectArgsERK11QMetaMethodS2_(const QMetaMethod & signal, const QMetaMethod & method) {
-  return (bool)QMetaObject::checkConnectArgs(signal, method);
+bool C_ZN11QMetaObject16checkConnectArgsERK11QMetaMethodS2_(QMetaMethod* signal, QMetaMethod* method) {
+  return (bool)QMetaObject::checkConnectArgs(*signal, *method);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:385
@@ -323,5 +323,10 @@ int C_ZNK11QMetaObject15static_metacallENS_4CallEiPPv(void *this_, QMetaObject::
 extern "C"
 int C_ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv(QObject * arg0, QMetaObject::Call arg1, int arg2, void ** arg3) {
   return (int)QMetaObject::metacall(arg0, arg1, arg2, arg3);
+}
+
+extern "C"
+void C_ZN11QMetaObjectD2Ev(void *this_) {
+  delete (QMetaObject*)(this_);
 }
 //  main block end

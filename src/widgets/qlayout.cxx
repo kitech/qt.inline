@@ -12,44 +12,44 @@
 // /usr/include/qt/QtWidgets/qlayout.h:145
 // [-2] void widgetEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QLayout11widgetEventEP6QEvent = 0;
+void* callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QLayout11widgetEventEP6QEvent(void*cbfn)
-{ callback_ZN7QLayout11widgetEventEP6QEvent = cbfn; }
+{ callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:146
 // [-2] void childEvent(class QChildEvent *)
 extern "C"
-void* callback_ZN7QLayout10childEventEP11QChildEvent = 0;
+void* callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QLayout10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN7QLayout10childEventEP11QChildEvent = cbfn; }
+{ callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:147
 // [-2] void addChildLayout(class QLayout *)
 extern "C"
-void* callback_ZN7QLayout14addChildLayoutEPS_ = 0;
+void* callback_ZN7QLayout14addChildLayoutEPS__fnptr = 0;
 extern "C" void set_callback_ZN7QLayout14addChildLayoutEPS_(void*cbfn)
-{ callback_ZN7QLayout14addChildLayoutEPS_ = cbfn; }
+{ callback_ZN7QLayout14addChildLayoutEPS__fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:148
 // [-2] void addChildWidget(class QWidget *)
 extern "C"
-void* callback_ZN7QLayout14addChildWidgetEP7QWidget = 0;
+void* callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = 0;
 extern "C" void set_callback_ZN7QLayout14addChildWidgetEP7QWidget(void*cbfn)
-{ callback_ZN7QLayout14addChildWidgetEP7QWidget = cbfn; }
+{ callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:149
 // [1] bool adoptLayout(class QLayout *)
 extern "C"
-void* callback_ZN7QLayout11adoptLayoutEPS_ = 0;
+void* callback_ZN7QLayout11adoptLayoutEPS__fnptr = 0;
 extern "C" void set_callback_ZN7QLayout11adoptLayoutEPS_(void*cbfn)
-{ callback_ZN7QLayout11adoptLayoutEPS_ = cbfn; }
+{ callback_ZN7QLayout11adoptLayoutEPS__fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:151
 // [16] QRect alignmentRect(const class QRect &)
 extern "C"
-void* callback_ZNK7QLayout13alignmentRectERK5QRect = 0;
+void* callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = 0;
 extern "C" void set_callback_ZNK7QLayout13alignmentRectERK5QRect(void*cbfn)
-{ callback_ZNK7QLayout13alignmentRectERK5QRect = cbfn; }
+{ callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = cbfn; }
 
 class MyQLayout : public QLayout {
 public:
@@ -60,43 +60,49 @@ MyQLayout(QWidget * parent) : QLayout(parent) {}
 MyQLayout() : QLayout() {}
 // void widgetEvent(class QEvent *)
   virtual void widgetEvent(QEvent * arg0) {
-    if (callback_ZN7QLayout11widgetEventEP6QEvent != 0) {
-      // callback_ZN7QLayout11widgetEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QLayout11widgetEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QLayout::widgetEvent(arg0);
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * e) {
-    if (callback_ZN7QLayout10childEventEP11QChildEvent != 0) {
-      // callback_ZN7QLayout10childEventEP11QChildEvent(e);
+    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QLayout10childEventEP11QChildEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QLayout::childEvent(e);
   }
 // void addChildLayout(class QLayout *)
   virtual void addChildLayout(QLayout * l) {
-    if (callback_ZN7QLayout14addChildLayoutEPS_ != 0) {
-      // callback_ZN7QLayout14addChildLayoutEPS_(l);
+    auto fnptr = ((void (*)(void* , QLayout *))(callback_ZN7QLayout14addChildLayoutEPS__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , l);
     }
     QLayout::addChildLayout(l);
   }
 // void addChildWidget(class QWidget *)
   virtual void addChildWidget(QWidget * w) {
-    if (callback_ZN7QLayout14addChildWidgetEP7QWidget != 0) {
-      // callback_ZN7QLayout14addChildWidgetEP7QWidget(w);
+    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , w);
     }
     QLayout::addChildWidget(w);
   }
 // bool adoptLayout(class QLayout *)
   virtual bool adoptLayout(QLayout * layout) {
-    if (callback_ZN7QLayout11adoptLayoutEPS_ != 0) {
-      // callback_ZN7QLayout11adoptLayoutEPS_(layout);
+    auto fnptr = ((bool (*)(void* , QLayout *))(callback_ZN7QLayout11adoptLayoutEPS__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , layout);
     }
     return QLayout::adoptLayout(layout);
   }
 // QRect alignmentRect(const class QRect &)
   virtual QRect alignmentRect(const QRect & arg0) {
-    if (callback_ZNK7QLayout13alignmentRectERK5QRect != 0) {
-      // callback_ZNK7QLayout13alignmentRectERK5QRect(arg0);
+    auto fnptr = ((QRect (*)(void* , QRect*))(callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QRect*)&arg0);
     }
     return QLayout::alignmentRect(arg0);
   }
@@ -171,8 +177,8 @@ void C_ZN7QLayout18setContentsMarginsEiiii(void *this_, int left, int top, int r
 // /usr/include/qt/QtWidgets/qlayout.h:91
 // [-2] void setContentsMargins(const class QMargins &)
 extern "C"
-void C_ZN7QLayout18setContentsMarginsERK8QMargins(void *this_, const QMargins & margins) {
-  ((QLayout*)this_)->setContentsMargins(margins);
+void C_ZN7QLayout18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
+  ((QLayout*)this_)->setContentsMargins(*margins);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:92
@@ -316,8 +322,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qlayout.h:121
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN7QLayout11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QLayout*)this_)->setGeometry(arg0);
+void C_ZN7QLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QLayout*)this_)->setGeometry(*arg0);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:122
@@ -417,8 +423,8 @@ bool C_ZNK7QLayout9isEnabledEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlayout.h:142
 // [8] QSize closestAcceptableSize(const class QWidget *, const class QSize &)
 extern "C"
-void* C_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize(const QWidget * w, const QSize & s) {
-  auto rv = QLayout::closestAcceptableSize(w, s);
+void* C_ZN7QLayout21closestAcceptableSizeEPK7QWidgetRK5QSize(const QWidget * w, QSize* s) {
+  auto rv = QLayout::closestAcceptableSize(w, *s);
 return new QSize(rv);
 }
 //  main block end

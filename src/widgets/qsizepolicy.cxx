@@ -166,4 +166,9 @@ void* C_ZNK11QSizePolicy10transposedEv(void *this_) {
   auto rv = ((QSizePolicy*)this_)->transposed();
 return new QSizePolicy(rv);
 }
+
+extern "C"
+void C_ZN11QSizePolicyD2Ev(void *this_) {
+  delete (QSizePolicy*)(this_);
+}
 //  main block end

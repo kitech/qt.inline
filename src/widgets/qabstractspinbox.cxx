@@ -12,142 +12,142 @@
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:136
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:137
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:138
 // [-2] void keyReleaseEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent = 0;
+void* callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:140
 // [-2] void wheelEvent(class QWheelEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent = 0;
+void* callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:142
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:143
 // [-2] void focusOutEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent = 0;
+void* callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:145
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent = 0;
+void* callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:147
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox11changeEventEP6QEvent = 0;
+void* callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox11changeEventEP6QEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:148
 // [-2] void closeEvent(class QCloseEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent = 0;
+void* callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:149
 // [-2] void hideEvent(class QHideEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent = 0;
+void* callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:150
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:151
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:152
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:153
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent = 0;
+void* callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:154
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent = 0;
+void* callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:155
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent = 0;
+void* callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:156
 // [-2] void initStyleOption(class QStyleOptionSpinBox *)
 extern "C"
-void* callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox = 0;
+void* callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
 extern "C" void set_callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
-{ callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox = cbfn; }
+{ callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:158
 // [8] QLineEdit * lineEdit()
 extern "C"
-void* callback_ZNK16QAbstractSpinBox8lineEditEv = 0;
+void* callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr = 0;
 extern "C" void set_callback_ZNK16QAbstractSpinBox8lineEditEv(void*cbfn)
-{ callback_ZNK16QAbstractSpinBox8lineEditEv = cbfn; }
+{ callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:159
 // [-2] void setLineEdit(class QLineEdit *)
 extern "C"
-void* callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit = 0;
+void* callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr = 0;
 extern "C" void set_callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit(void*cbfn)
-{ callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit = cbfn; }
+{ callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:161
 // [4] QAbstractSpinBox::StepEnabled stepEnabled()
 extern "C"
-void* callback_ZNK16QAbstractSpinBox11stepEnabledEv = 0;
+void* callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr = 0;
 extern "C" void set_callback_ZNK16QAbstractSpinBox11stepEnabledEv(void*cbfn)
-{ callback_ZNK16QAbstractSpinBox11stepEnabledEv = cbfn; }
+{ callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr = cbfn; }
 
 class MyQAbstractSpinBox : public QAbstractSpinBox {
 public:
@@ -156,141 +156,161 @@ public:
 MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    if (callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent(event);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::resizeEvent(event);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    if (callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::keyPressEvent(event);
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
-    if (callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent != 0) {
-      // callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::keyReleaseEvent(event);
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
-    if (callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent != 0) {
-      // callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent(event);
+    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::wheelEvent(event);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    if (callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::focusInEvent(event);
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
-    if (callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent != 0) {
-      // callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::focusOutEvent(event);
   }
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
-    if (callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent != 0) {
-      // callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent(event);
+    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::contextMenuEvent(event);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    if (callback_ZN16QAbstractSpinBox11changeEventEP6QEvent != 0) {
-      // callback_ZN16QAbstractSpinBox11changeEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::changeEvent(event);
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    if (callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent != 0) {
-      // callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent(event);
+    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::closeEvent(event);
   }
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
-    if (callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent != 0) {
-      // callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent(event);
+    auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::hideEvent(event);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    if (callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::mousePressEvent(event);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
-    if (callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::mouseReleaseEvent(event);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
-    if (callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::mouseMoveEvent(event);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    if (callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent(event);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::timerEvent(event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    if (callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(event);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::paintEvent(event);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
-    if (callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent != 0) {
-      // callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent(event);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QAbstractSpinBox::showEvent(event);
   }
 // void initStyleOption(class QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
-    if (callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox != 0) {
-      // callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QAbstractSpinBox::initStyleOption(option);
   }
 // QLineEdit * lineEdit()
   virtual QLineEdit * lineEdit() {
-    if (callback_ZNK16QAbstractSpinBox8lineEditEv != 0) {
-      // callback_ZNK16QAbstractSpinBox8lineEditEv();
+    auto fnptr = ((QLineEdit * (*)(void* ))(callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QAbstractSpinBox::lineEdit();
   }
 // void setLineEdit(class QLineEdit *)
   virtual void setLineEdit(QLineEdit * edit) {
-    if (callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit != 0) {
-      // callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit(edit);
+    auto fnptr = ((void (*)(void* , QLineEdit *))(callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , edit);
     }
     QAbstractSpinBox::setLineEdit(edit);
   }
 // QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() {
-    if (callback_ZNK16QAbstractSpinBox11stepEnabledEv != 0) {
-      // callback_ZNK16QAbstractSpinBox11stepEnabledEv();
+    auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QAbstractSpinBox::stepEnabled();
   }
@@ -373,8 +393,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:96
 // [-2] void setSpecialValueText(const class QString &)
 extern "C"
-void C_ZN16QAbstractSpinBox19setSpecialValueTextERK7QString(void *this_, const QString & txt) {
-  ((QAbstractSpinBox*)this_)->setSpecialValueText(txt);
+void C_ZN16QAbstractSpinBox19setSpecialValueTextERK7QString(void *this_, QString* txt) {
+  ((QAbstractSpinBox*)this_)->setSpecialValueText(*txt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:98
@@ -509,15 +529,15 @@ return new QVariant(rv);
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:126
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-QValidator::State C_ZNK16QAbstractSpinBox8validateER7QStringRi(void *this_, QString & input, int & pos) {
-  return (QValidator::State)((QAbstractSpinBox*)this_)->validate(input, pos);
+QValidator::State C_ZNK16QAbstractSpinBox8validateER7QStringRi(void *this_, QString* input, int & pos) {
+  return (QValidator::State)((QAbstractSpinBox*)this_)->validate(*input, pos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:127
 // [-2] void fixup(class QString &)
 extern "C"
-void C_ZNK16QAbstractSpinBox5fixupER7QString(void *this_, QString & input) {
-  ((QAbstractSpinBox*)this_)->fixup(input);
+void C_ZNK16QAbstractSpinBox5fixupER7QString(void *this_, QString* input) {
+  ((QAbstractSpinBox*)this_)->fixup(*input);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qabstractspinbox.h:129

@@ -29,8 +29,8 @@ void* C_ZN30QXmlStreamNamespaceDeclarationC2Ev() {
 // /usr/include/qt/QtCore/qxmlstream.h:216
 // [-2] void QXmlStreamNamespaceDeclaration(const class QString &, const class QString &)
 extern "C"
-void* C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(const QString & prefix, const QString & namespaceUri) {
-  return  new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+void* C_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_(QString* prefix, QString* namespaceUri) {
+  return  new QXmlStreamNamespaceDeclaration(*prefix, *namespaceUri);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:217

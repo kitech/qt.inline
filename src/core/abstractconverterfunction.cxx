@@ -14,4 +14,9 @@ public:
   virtual ~MyAbstractConverterFunction() {}
 };
 
+
+extern "C"
+void C_ZN25AbstractConverterFunctionD2Ev(void *this_) {
+  delete (QtPrivate::AbstractConverterFunction*)(this_);
+}
 //  main block end

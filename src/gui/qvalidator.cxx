@@ -41,8 +41,8 @@ void C_ZN10QValidatorD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:71
 // [-2] void setLocale(const class QLocale &)
 extern "C"
-void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
-  ((QValidator*)this_)->setLocale(locale);
+void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
+  ((QValidator*)this_)->setLocale(*locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:72
@@ -56,15 +56,15 @@ return new QLocale(rv);
 // /usr/include/qt/QtGui/qvalidator.h:74
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString & arg0, int & arg1) {
-  return (QValidator::State)((QValidator*)this_)->validate(arg0, arg1);
+QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
+  return (QValidator::State)((QValidator*)this_)->validate(*arg0, arg1);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:75
 // [-2] void fixup(class QString &)
 extern "C"
-void C_ZNK10QValidator5fixupER7QString(void *this_, QString & arg0) {
-  ((QValidator*)this_)->fixup(arg0);
+void C_ZNK10QValidator5fixupER7QString(void *this_, QString* arg0) {
+  ((QValidator*)this_)->fixup(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:78

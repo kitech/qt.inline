@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:649
 // [-2] void QTextBlockFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN16QTextBlockFormatC1ERK11QTextFormat = 0;
+void* callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN16QTextBlockFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextBlockFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextBlockFormat : public QTextBlockFormat {
 public:
@@ -186,5 +186,10 @@ extern "C"
 void C_ZNK16QTextBlockFormat15pageBreakPolicyEv(void *this_) {
   auto rv = ((QTextBlockFormat*)this_)->pageBreakPolicy();
 /*return rv;*/
+}
+
+extern "C"
+void C_ZN16QTextBlockFormatD2Ev(void *this_) {
+  delete (QTextBlockFormat*)(this_);
 }
 //  main block end

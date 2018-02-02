@@ -95,4 +95,9 @@ extern "C"
 void C_ZN8QMargins9setBottomEi(void *this_, int bottom) {
   ((QMargins*)this_)->setBottom(bottom);
 }
+
+extern "C"
+void C_ZN8QMarginsD2Ev(void *this_) {
+  delete (QMargins*)(this_);
+}
 //  main block end

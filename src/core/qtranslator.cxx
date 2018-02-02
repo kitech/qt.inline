@@ -56,21 +56,21 @@ bool C_ZNK11QTranslator7isEmptyEv(void *this_) {
 // /usr/include/qt/QtCore/qtranslator.h:66
 // [1] bool load(const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-bool C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, const QString & filename, const QString & directory, const QString & search_delimiters, const QString & suffix) {
-  return (bool)((QTranslator*)this_)->load(filename, directory, search_delimiters, suffix);
+bool C_ZN11QTranslator4loadERK7QStringS2_S2_S2_(void *this_, QString* filename, QString* directory, QString* search_delimiters, QString* suffix) {
+  return (bool)((QTranslator*)this_)->load(*filename, *directory, *search_delimiters, *suffix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:70
 // [1] bool load(const class QLocale &, const class QString &, const class QString &, const class QString &, const class QString &)
 extern "C"
-bool C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, const QLocale & locale, const QString & filename, const QString & prefix, const QString & directory, const QString & suffix) {
-  return (bool)((QTranslator*)this_)->load(locale, filename, prefix, directory, suffix);
+bool C_ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_(void *this_, QLocale* locale, QString* filename, QString* prefix, QString* directory, QString* suffix) {
+  return (bool)((QTranslator*)this_)->load(*locale, *filename, *prefix, *directory, *suffix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtranslator.h:75
 // [1] bool load(const uchar *, int, const class QString &)
 extern "C"
-bool C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, const QString & directory) {
-  return (bool)((QTranslator*)this_)->load(data, len, directory);
+bool C_ZN11QTranslator4loadEPKhiRK7QString(void *this_, const uchar * data, int len, QString* directory) {
+  return (bool)((QTranslator*)this_)->load(data, len, *directory);
 }
 //  main block end

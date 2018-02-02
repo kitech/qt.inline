@@ -38,8 +38,8 @@ void C_ZN19QTextBoundaryFinderD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:76
 // [-2] void QTextBoundaryFinder(enum QTextBoundaryFinder::BoundaryType, const class QString &)
 extern "C"
-void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type, const QString & string) {
-  return  new QTextBoundaryFinder(type, string);
+void* C_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString(QTextBoundaryFinder::BoundaryType type, QString* string) {
+  return  new QTextBoundaryFinder(type, *string);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:77

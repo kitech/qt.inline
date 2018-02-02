@@ -139,15 +139,15 @@ void C_ZN11QFormLayout6addRowEP7QWidgetP7QLayout(void *this_, QWidget * label, Q
 // /usr/include/qt/QtWidgets/qformlayout.h:113
 // [-2] void addRow(const class QString &, class QWidget *)
 extern "C"
-void C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *this_, const QString & labelText, QWidget * field) {
-  ((QFormLayout*)this_)->addRow(labelText, field);
+void C_ZN11QFormLayout6addRowERK7QStringP7QWidget(void *this_, QString* labelText, QWidget * field) {
+  ((QFormLayout*)this_)->addRow(*labelText, field);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:114
 // [-2] void addRow(const class QString &, class QLayout *)
 extern "C"
-void C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *this_, const QString & labelText, QLayout * field) {
-  ((QFormLayout*)this_)->addRow(labelText, field);
+void C_ZN11QFormLayout6addRowERK7QStringP7QLayout(void *this_, QString* labelText, QLayout * field) {
+  ((QFormLayout*)this_)->addRow(*labelText, field);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:115
@@ -181,15 +181,15 @@ void C_ZN11QFormLayout9insertRowEiP7QWidgetP7QLayout(void *this_, int row, QWidg
 // /usr/include/qt/QtWidgets/qformlayout.h:120
 // [-2] void insertRow(int, const class QString &, class QWidget *)
 extern "C"
-void C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *this_, int row, const QString & labelText, QWidget * field) {
-  ((QFormLayout*)this_)->insertRow(row, labelText, field);
+void C_ZN11QFormLayout9insertRowEiRK7QStringP7QWidget(void *this_, int row, QString* labelText, QWidget * field) {
+  ((QFormLayout*)this_)->insertRow(row, *labelText, field);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:121
 // [-2] void insertRow(int, const class QString &, class QLayout *)
 extern "C"
-void C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *this_, int row, const QString & labelText, QLayout * field) {
-  ((QFormLayout*)this_)->insertRow(row, labelText, field);
+void C_ZN11QFormLayout9insertRowEiRK7QStringP7QLayout(void *this_, int row, QString* labelText, QLayout * field) {
+  ((QFormLayout*)this_)->insertRow(row, *labelText, field);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:122
@@ -338,8 +338,8 @@ void* C_ZN11QFormLayout6takeAtEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qformlayout.h:149
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN11QFormLayout11setGeometryERK5QRect(void *this_, const QRect & rect) {
-  ((QFormLayout*)this_)->setGeometry(rect);
+void C_ZN11QFormLayout11setGeometryERK5QRect(void *this_, QRect* rect) {
+  ((QFormLayout*)this_)->setGeometry(*rect);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:150

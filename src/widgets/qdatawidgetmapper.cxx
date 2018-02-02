@@ -69,8 +69,8 @@ void* C_ZNK17QDataWidgetMapper12itemDelegateEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:73
 // [-2] void setRootIndex(const class QModelIndex &)
 extern "C"
-void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
-  ((QDataWidgetMapper*)this_)->setRootIndex(index);
+void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
+  ((QDataWidgetMapper*)this_)->setRootIndex(*index);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:74
@@ -119,8 +119,8 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widge
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
 // [-2] void addMapping(class QWidget *, int, const class QByteArray &)
 extern "C"
-void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, QWidget * widget, int section, const QByteArray & propertyName) {
-  ((QDataWidgetMapper*)this_)->addMapping(widget, section, propertyName);
+void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, QWidget * widget, int section, QByteArray* propertyName) {
+  ((QDataWidgetMapper*)this_)->addMapping(widget, section, *propertyName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
@@ -218,8 +218,8 @@ void C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:103
 // [-2] void setCurrentModelIndex(const class QModelIndex &)
 extern "C"
-void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, const QModelIndex & index) {
-  ((QDataWidgetMapper*)this_)->setCurrentModelIndex(index);
+void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, QModelIndex* index) {
+  ((QDataWidgetMapper*)this_)->setCurrentModelIndex(*index);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h:106

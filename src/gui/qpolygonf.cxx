@@ -47,22 +47,22 @@ void* C_ZN9QPolygonFC2Ei(int size) {
 // /usr/include/qt/QtGui/qpolygon.h:151
 // [-2] void QPolygonF(const class QRectF &)
 extern "C"
-void* C_ZN9QPolygonFC2ERK6QRectF(const QRectF & r) {
-  return  new QPolygonF(r);
+void* C_ZN9QPolygonFC2ERK6QRectF(QRectF* r) {
+  return  new QPolygonF(*r);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:152
 // [-2] void QPolygonF(const class QPolygon &)
 extern "C"
-void* C_ZN9QPolygonFC2ERK8QPolygon(const QPolygon & a) {
-  return  new QPolygonF(a);
+void* C_ZN9QPolygonFC2ERK8QPolygon(QPolygon* a) {
+  return  new QPolygonF(*a);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:159
 // [-2] void swap(class QPolygonF &)
 extern "C"
-void C_ZN9QPolygonF4swapERS_(void *this_, QPolygonF & other) {
-  ((QPolygonF*)this_)->swap(other);
+void C_ZN9QPolygonF4swapERS_(void *this_, QPolygonF* other) {
+  ((QPolygonF*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:163
@@ -75,8 +75,8 @@ void C_ZN9QPolygonF9translateEdd(void *this_, qreal dx, qreal dy) {
 // /usr/include/qt/QtGui/qpolygon.h:164
 // [-2] void translate(const class QPointF &)
 extern "C"
-void C_ZN9QPolygonF9translateERK7QPointF(void *this_, const QPointF & offset) {
-  ((QPolygonF*)this_)->translate(offset);
+void C_ZN9QPolygonF9translateERK7QPointF(void *this_, QPointF* offset) {
+  ((QPolygonF*)this_)->translate(*offset);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:166
@@ -90,8 +90,8 @@ return new QPolygonF(rv);
 // /usr/include/qt/QtGui/qpolygon.h:167
 // [8] QPolygonF translated(const class QPointF &)
 extern "C"
-void* C_ZNK9QPolygonF10translatedERK7QPointF(void *this_, const QPointF & offset) {
-  auto rv = ((QPolygonF*)this_)->translated(offset);
+void* C_ZNK9QPolygonF10translatedERK7QPointF(void *this_, QPointF* offset) {
+  auto rv = ((QPolygonF*)this_)->translated(*offset);
 return new QPolygonF(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -121,38 +121,38 @@ return new QRectF(rv);
 // /usr/include/qt/QtGui/qpolygon.h:175
 // [1] bool containsPoint(const class QPointF &, Qt::FillRule)
 extern "C"
-bool C_ZNK9QPolygonF13containsPointERK7QPointFN2Qt8FillRuleE(void *this_, const QPointF & pt, Qt::FillRule fillRule) {
-  return (bool)((QPolygonF*)this_)->containsPoint(pt, fillRule);
+bool C_ZNK9QPolygonF13containsPointERK7QPointFN2Qt8FillRuleE(void *this_, QPointF* pt, Qt::FillRule fillRule) {
+  return (bool)((QPolygonF*)this_)->containsPoint(*pt, fillRule);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:177
 // [8] QPolygonF united(const class QPolygonF &)
 extern "C"
-void* C_ZNK9QPolygonF6unitedERKS_(void *this_, const QPolygonF & r) {
-  auto rv = ((QPolygonF*)this_)->united(r);
+void* C_ZNK9QPolygonF6unitedERKS_(void *this_, QPolygonF* r) {
+  auto rv = ((QPolygonF*)this_)->united(*r);
 return new QPolygonF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:178
 // [8] QPolygonF intersected(const class QPolygonF &)
 extern "C"
-void* C_ZNK9QPolygonF11intersectedERKS_(void *this_, const QPolygonF & r) {
-  auto rv = ((QPolygonF*)this_)->intersected(r);
+void* C_ZNK9QPolygonF11intersectedERKS_(void *this_, QPolygonF* r) {
+  auto rv = ((QPolygonF*)this_)->intersected(*r);
 return new QPolygonF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:179
 // [8] QPolygonF subtracted(const class QPolygonF &)
 extern "C"
-void* C_ZNK9QPolygonF10subtractedERKS_(void *this_, const QPolygonF & r) {
-  auto rv = ((QPolygonF*)this_)->subtracted(r);
+void* C_ZNK9QPolygonF10subtractedERKS_(void *this_, QPolygonF* r) {
+  auto rv = ((QPolygonF*)this_)->subtracted(*r);
 return new QPolygonF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:181
 // [1] bool intersects(const class QPolygonF &)
 extern "C"
-bool C_ZNK9QPolygonF10intersectsERKS_(void *this_, const QPolygonF & r) {
-  return (bool)((QPolygonF*)this_)->intersects(r);
+bool C_ZNK9QPolygonF10intersectsERKS_(void *this_, QPolygonF* r) {
+  return (bool)((QPolygonF*)this_)->intersects(*r);
 }
 //  main block end

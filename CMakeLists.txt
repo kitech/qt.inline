@@ -45,7 +45,7 @@ foreach(var ${qt5_inline_srcs})
   set(all_qt5_inline_srcs ${all_qt5_inline_srcs} ${var})
 endforeach(var)
 
-set(qt5_inline_extra_srcs src/qihotfix.cpp src/qdynslotobject.cpp)
+set(qt5_inline_extra_srcs src/qihotfix.cpp src/qdynslotobject.cpp src/callback_inherit.cpp)
 
 set(all_qt5_inline_srcs
   ${all_qt5_inline_srcs}

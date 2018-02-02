@@ -14,4 +14,9 @@ public:
   virtual ~MyAbstractComparatorFunction() {}
 };
 
+
+extern "C"
+void C_ZN26AbstractComparatorFunctionD2Ev(void *this_) {
+  delete (QtPrivate::AbstractComparatorFunction*)(this_);
+}
 //  main block end

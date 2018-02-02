@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qerrormessage.h:68
 // [-2] void done(int)
 extern "C"
-void* callback_ZN13QErrorMessage4doneEi = 0;
+void* callback_ZN13QErrorMessage4doneEi_fnptr = 0;
 extern "C" void set_callback_ZN13QErrorMessage4doneEi(void*cbfn)
-{ callback_ZN13QErrorMessage4doneEi = cbfn; }
+{ callback_ZN13QErrorMessage4doneEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:69
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN13QErrorMessage11changeEventEP6QEvent = 0;
+void* callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QErrorMessage11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN13QErrorMessage11changeEventEP6QEvent = cbfn; }
+{ callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQErrorMessage : public QErrorMessage {
 public:
@@ -30,15 +30,17 @@ public:
 MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 // void done(int)
   virtual void done(int arg0) {
-    if (callback_ZN13QErrorMessage4doneEi != 0) {
-      // callback_ZN13QErrorMessage4doneEi(arg0);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN13QErrorMessage4doneEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QErrorMessage::done(arg0);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
-    if (callback_ZN13QErrorMessage11changeEventEP6QEvent != 0) {
-      // callback_ZN13QErrorMessage11changeEventEP6QEvent(e);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QErrorMessage::changeEvent(e);
   }
@@ -77,14 +79,14 @@ void* C_ZN13QErrorMessage9qtHandlerEv() {
 // /usr/include/qt/QtWidgets/qerrormessage.h:64
 // [-2] void showMessage(const class QString &)
 extern "C"
-void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, const QString & message) {
-  ((QErrorMessage*)this_)->showMessage(message);
+void C_ZN13QErrorMessage11showMessageERK7QString(void *this_, QString* message) {
+  ((QErrorMessage*)this_)->showMessage(*message);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qerrormessage.h:65
 // [-2] void showMessage(const class QString &, const class QString &)
 extern "C"
-void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, const QString & message, const QString & type) {
-  ((QErrorMessage*)this_)->showMessage(message, type);
+void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* message, QString* type) {
+  ((QErrorMessage*)this_)->showMessage(*message, *type);
 }
 //  main block end

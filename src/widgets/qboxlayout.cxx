@@ -254,7 +254,7 @@ int C_ZNK10QBoxLayout5countEv(void *this_) {
 // /usr/include/qt/QtWidgets/qboxlayout.h:107
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN10QBoxLayout11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QBoxLayout*)this_)->setGeometry(arg0);
+void C_ZN10QBoxLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QBoxLayout*)this_)->setGeometry(*arg0);
 }
 //  main block end

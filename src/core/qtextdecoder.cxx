@@ -51,8 +51,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qtextcodec.h:162
 // [8] QString toUnicode(const class QByteArray &)
 extern "C"
-void* C_ZN12QTextDecoder9toUnicodeERK10QByteArray(void *this_, const QByteArray & ba) {
-  auto rv = ((QTextDecoder*)this_)->toUnicode(ba);
+void* C_ZN12QTextDecoder9toUnicodeERK10QByteArray(void *this_, QByteArray* ba) {
+  auto rv = ((QTextDecoder*)this_)->toUnicode(*ba);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

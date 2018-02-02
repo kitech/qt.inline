@@ -80,8 +80,8 @@ uint C_Z9qHashBitsPKvmj(const void * p, size_t size, uint seed) {
 // /usr/include/qt/QtCore/qbytearray.h:685
 // [8] QByteArray qCompress(const class QByteArray &, int)
 extern "C"
-void* C_Z9qCompressRK10QByteArrayi(const QByteArray & data, int compressionLevel) {
-  auto rv = qCompress(data, compressionLevel);
+void* C_Z9qCompressRK10QByteArrayi(QByteArray* data, int compressionLevel) {
+  auto rv = qCompress(*data, compressionLevel);
 return new QByteArray(rv);
 }
 
@@ -379,152 +379,152 @@ uint C_Z5qHashaj_13(signed char key, uint seed) {
 // /usr/include/qt/QtCore/qurlquery.h:53
 // [4] uint qHash(const class QUrlQuery &, uint)
 extern "C"
-uint C_Z5qHashRK9QUrlQueryj_14(const QUrlQuery & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK9QUrlQueryj_14(QUrlQuery* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:58
 // [4] uint qHash(const class QMimeType &, uint)
 extern "C"
-uint C_Z5qHashRK9QMimeTypej_15(const QMimeType & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK9QMimeTypej_15(QMimeType* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:412
 // [4] uint qHash(const class QDateTime &, uint)
 extern "C"
-uint C_Z5qHashRK9QDateTimej_16(const QDateTime & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK9QDateTimej_16(QDateTime* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:103
 // [4] uint qHash(const class QBitArray &, uint)
 extern "C"
-uint C_Z5qHashRK9QBitArrayj_17(const QBitArray & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK9QBitArrayj_17(QBitArray* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:99
 // [4] uint qHash(const class QString &, uint)
 extern "C"
-uint C_Z5qHashRK7QStringj_18(const QString & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK7QStringj_18(QString* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:56
 // [4] uint qHash(const class QRegExp &, uint)
 extern "C"
-uint C_Z5qHashRK7QRegExpj_19(const QRegExp & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK7QRegExpj_19(QRegExp* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:62
 // [4] uint qHash(const class QLocale &, uint)
 extern "C"
-uint C_Z5qHashRK7QLocalej_20(const QLocale & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK7QLocalej_20(QLocale* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/quuid.h:235
 // [4] uint qHash(const class QUuid &, uint)
 extern "C"
-uint C_Z5qHashRK5QUuidj_21(const QUuid & uuid, uint seed) {
-  return (uint)qHash(uuid, seed);
+uint C_Z5qHashRK5QUuidj_21(QUuid* uuid, uint seed) {
+  return (uint)qHash(*uuid, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:414
 // [4] uint qHash(const class QTime &, uint)
 extern "C"
-uint C_Z5qHashRK5QTimej_22(const QTime & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK5QTimej_22(QTime* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:413
 // [4] uint qHash(const class QDate &, uint)
 extern "C"
-uint C_Z5qHashRK5QDatej_23(const QDate & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK5QDatej_23(QDate* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:122
 // [4] uint qHash(const class QUrl &, uint)
 extern "C"
-uint C_Z5qHashRK4QUrlj_24(const QUrl & url, uint seed) {
-  return (uint)qHash(url, seed);
+uint C_Z5qHashRK4QUrlj_24(QUrl* url, uint seed) {
+  return (uint)qHash(*url, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:102
 // [4] uint qHash(const class QPersistentModelIndex &, uint)
 extern "C"
-uint C_Z5qHashRK21QPersistentModelIndexj_25(const QPersistentModelIndex & index, uint seed) {
-  return (uint)qHash(index, seed);
+uint C_Z5qHashRK21QPersistentModelIndexj_25(QPersistentModelIndex* index, uint seed) {
+  return (uint)qHash(*index, seed);
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:149
 // [4] uint qHash(const class QPersistentModelIndex &, uint)
 extern "C"
-uint C_Z5qHashRK21QPersistentModelIndexj_26(const QPersistentModelIndex & index, uint seed) {
-  return (uint)qHash(index, seed);
+uint C_Z5qHashRK21QPersistentModelIndexj_26(QPersistentModelIndex* index, uint seed) {
+  return (uint)qHash(*index, seed);
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:227
 // [4] uint qHash(const class QItemSelectionRange &)
 extern "C"
-uint C_Z5qHashRK19QItemSelectionRange_27(const QItemSelectionRange & arg0) {
-  return (uint)qHash(arg0);
+uint C_Z5qHashRK19QItemSelectionRange_27(QItemSelectionRange* arg0) {
+  return (uint)qHash(*arg0);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:62
 // [4] uint qHash(const class QRegularExpression &, uint)
 extern "C"
-uint C_Z5qHashRK18QRegularExpressionj_28(const QRegularExpression & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK18QRegularExpressionj_28(QRegularExpression* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:54
 // [4] uint qHash(const class QVersionNumber &, uint)
 extern "C"
-uint C_Z5qHashRK14QVersionNumberj_29(const QVersionNumber & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK14QVersionNumberj_29(QVersionNumber* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:437
 // [4] uint qHash(const class QModelIndex &)
 extern "C"
-uint C_Z5qHashRK11QModelIndex_30(const QModelIndex & index) {
-  return (uint)qHash(index);
+uint C_Z5qHashRK11QModelIndex_30(QModelIndex* index) {
+  return (uint)qHash(*index);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:100
 // [4] uint qHash(const class QStringRef &, uint)
 extern "C"
-uint C_Z5qHashRK10QStringRefj_31(const QStringRef & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK10QStringRefj_31(QStringRef* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:97
 // [4] uint qHash(const class QByteArray &, uint)
 extern "C"
-uint C_Z5qHashRK10QByteArrayj_32(const QByteArray & key, uint seed) {
-  return (uint)qHash(key, seed);
+uint C_Z5qHashRK10QByteArrayj_32(QByteArray* key, uint seed) {
+  return (uint)qHash(*key, seed);
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -797,16 +797,16 @@ uint C_Z21qCountLeadingZeroBitsh_4(quint8 v) {
 // /usr/include/qt/QtCore/qobject.h:93
 // [8] QObject * qt_qFindChild_helper(const class QObject *, const class QString &, const struct QMetaObject &, Qt::FindChildOptions)
 extern "C"
-void* C_Z20qt_qFindChild_helperPK7QObjectRK7QStringRK11QMetaObject6QFlagsIN2Qt15FindChildOptionEE(const QObject * parent, const QString & name, const QMetaObject & mo, QFlags<Qt::FindChildOption> options) {
-  return (void*)qt_qFindChild_helper(parent, name, mo, options);
+void* C_Z20qt_qFindChild_helperPK7QObjectRK7QStringRK11QMetaObject6QFlagsIN2Qt15FindChildOptionEE(const QObject * parent, QString* name, QMetaObject* mo, QFlags<Qt::FindChildOption> options) {
+  return (void*)qt_qFindChild_helper(parent, *name, *mo, options);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:1134
 // [8] QString qEnvironmentVariable(const char *, const class QString &)
 extern "C"
-void* C_Z20qEnvironmentVariablePKcRK7QString(const char * varName, const QString & defaultValue) {
-  auto rv = qEnvironmentVariable(varName, defaultValue);
+void* C_Z20qEnvironmentVariablePKcRK7QString(const char * varName, QString* defaultValue) {
+  auto rv = qEnvironmentVariable(varName, *defaultValue);
 return new QString(rv);
 }
 
@@ -831,8 +831,8 @@ void C_Z19qSetGlobalQHashSeedi(int newSeed) {
 // /usr/include/qt/QtCore/qlogging.h:193
 // [-2] void qSetMessagePattern(const class QString &)
 extern "C"
-void C_Z18qSetMessagePatternRK7QString(const QString & messagePattern) {
-  qSetMessagePattern(messagePattern);
+void C_Z18qSetMessagePatternRK7QString(QString* messagePattern) {
+  qSetMessagePattern(*messagePattern);
 }
 
 // Invalid Visibility=Default Availability=Available
@@ -863,8 +863,8 @@ double C_Z17qRadiansToDegreesd_1(double radians) {
 // /usr/include/qt/QtCore/qlogging.h:194
 // [8] QString qFormatLogMessage(enum QtMsgType, const class QMessageLogContext &, const class QString &)
 extern "C"
-void* C_Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType type, const QMessageLogContext & context, const QString & buf) {
-  auto rv = qFormatLogMessage(type, context, buf);
+void* C_Z17qFormatLogMessage9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType type, QMessageLogContext* context, QString* buf) {
+  auto rv = qFormatLogMessage(type, *context, *buf);
 return new QString(rv);
 }
 
@@ -1065,8 +1065,8 @@ void C_Z12qFreeAlignedPv(void * ptr) {
 // /usr/include/qt/QtCore/qbytearray.h:687
 // [8] QByteArray qUncompress(const class QByteArray &)
 extern "C"
-void* C_Z11qUncompressRK10QByteArray(const QByteArray & data) {
-  auto rv = qUncompress(data);
+void* C_Z11qUncompressRK10QByteArray(QByteArray* data) {
+  auto rv = qUncompress(*data);
 return new QByteArray(rv);
 }
 

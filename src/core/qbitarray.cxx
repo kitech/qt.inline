@@ -36,8 +36,8 @@ void* C_ZN9QBitArrayC2Eib(int size, bool val) {
 // /usr/include/qt/QtCore/qbitarray.h:67
 // [-2] void swap(class QBitArray &)
 extern "C"
-void C_ZN9QBitArray4swapERS_(void *this_, QBitArray & other) {
-  ((QBitArray*)this_)->swap(other);
+void C_ZN9QBitArray4swapERS_(void *this_, QBitArray* other) {
+  ((QBitArray*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:69
@@ -164,5 +164,10 @@ void C_ZN9QBitArray4fillEbii(void *this_, bool val, int first, int last) {
 extern "C"
 void C_ZN9QBitArray8truncateEi(void *this_, int pos) {
   ((QBitArray*)this_)->truncate(pos);
+}
+
+extern "C"
+void C_ZN9QBitArrayD2Ev(void *this_) {
+  delete (QBitArray*)(this_);
 }
 //  main block end

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qrandom.h:172
 // [-2] void QRandomGenerator(enum QRandomGenerator::System)
 extern "C"
-void* callback_ZN16QRandomGeneratorC1ENS_6SystemE = 0;
+void* callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = 0;
 extern "C" void set_callback_ZN16QRandomGeneratorC1ENS_6SystemE(void*cbfn)
-{ callback_ZN16QRandomGeneratorC1ENS_6SystemE = cbfn; }
+{ callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = cbfn; }
 
 class MyQRandomGenerator : public QRandomGenerator {
 public:
@@ -162,5 +162,10 @@ extern "C"
 void* C_ZN16QRandomGenerator14securelySeededEv() {
   auto rv = QRandomGenerator::securelySeeded();
 return new QRandomGenerator(rv);
+}
+
+extern "C"
+void C_ZN16QRandomGeneratorD2Ev(void *this_) {
+  delete (QRandomGenerator*)(this_);
 }
 //  main block end

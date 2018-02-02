@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstackedwidget.h:82
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN14QStackedWidget5eventEP6QEvent = 0;
+void* callback_ZN14QStackedWidget5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN14QStackedWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN14QStackedWidget5eventEP6QEvent = cbfn; }
+{ callback_ZN14QStackedWidget5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStackedWidget : public QStackedWidget {
 public:
@@ -23,8 +23,9 @@ public:
 MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN14QStackedWidget5eventEP6QEvent != 0) {
-      // callback_ZN14QStackedWidget5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN14QStackedWidget5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QStackedWidget::event(e);
   }

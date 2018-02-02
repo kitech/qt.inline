@@ -288,4 +288,9 @@ extern "C"
 void C_ZN11QStyleHints23wheelScrollLinesChangedEi(void *this_, int scrollLines) {
   ((QStyleHints*)this_)->wheelScrollLinesChanged(scrollLines);
 }
+
+extern "C"
+void C_ZN11QStyleHintsD2Ev(void *this_) {
+  delete (QStyleHints*)(this_);
+}
 //  main block end

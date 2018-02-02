@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qprocess.h:284
 // [-2] void setProcessState(enum QProcess::ProcessState)
 extern "C"
-void* callback_ZN8QProcess15setProcessStateENS_12ProcessStateE = 0;
+void* callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = 0;
 extern "C" void set_callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(void*cbfn)
-{ callback_ZN8QProcess15setProcessStateENS_12ProcessStateE = cbfn; }
+{ callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:286
 // [-2] void setupChildProcess()
 extern "C"
-void* callback_ZN8QProcess17setupChildProcessEv = 0;
+void* callback_ZN8QProcess17setupChildProcessEv_fnptr = 0;
 extern "C" void set_callback_ZN8QProcess17setupChildProcessEv(void*cbfn)
-{ callback_ZN8QProcess17setupChildProcessEv = cbfn; }
+{ callback_ZN8QProcess17setupChildProcessEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:289
 // [8] qint64 readData(char *, qint64)
 extern "C"
-void* callback_ZN8QProcess8readDataEPcx = 0;
+void* callback_ZN8QProcess8readDataEPcx_fnptr = 0;
 extern "C" void set_callback_ZN8QProcess8readDataEPcx(void*cbfn)
-{ callback_ZN8QProcess8readDataEPcx = cbfn; }
+{ callback_ZN8QProcess8readDataEPcx_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:290
 // [8] qint64 writeData(const char *, qint64)
 extern "C"
-void* callback_ZN8QProcess9writeDataEPKcx = 0;
+void* callback_ZN8QProcess9writeDataEPKcx_fnptr = 0;
 extern "C" void set_callback_ZN8QProcess9writeDataEPKcx(void*cbfn)
-{ callback_ZN8QProcess9writeDataEPKcx = cbfn; }
+{ callback_ZN8QProcess9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQProcess : public QProcess {
 public:
@@ -44,29 +44,33 @@ public:
 MyQProcess(QObject * parent) : QProcess(parent) {}
 // void setProcessState(enum QProcess::ProcessState)
   virtual void setProcessState(QProcess::ProcessState state) {
-    if (callback_ZN8QProcess15setProcessStateENS_12ProcessStateE != 0) {
-      // callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(state);
+    auto fnptr = ((void (*)(void* , QProcess::ProcessState))(callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , state);
     }
     QProcess::setProcessState(state);
   }
 // void setupChildProcess()
   virtual void setupChildProcess() {
-    if (callback_ZN8QProcess17setupChildProcessEv != 0) {
-      // callback_ZN8QProcess17setupChildProcessEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN8QProcess17setupChildProcessEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QProcess::setupChildProcess();
   }
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
-    if (callback_ZN8QProcess8readDataEPcx != 0) {
-      // callback_ZN8QProcess8readDataEPcx(data, maxlen);
+    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN8QProcess8readDataEPcx_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , data, maxlen);
     }
     return QProcess::readData(data, maxlen);
   }
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    if (callback_ZN8QProcess9writeDataEPKcx != 0) {
-      // callback_ZN8QProcess9writeDataEPKcx(data, len);
+    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN8QProcess9writeDataEPKcx_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , data, len);
     }
     return QProcess::writeData(data, len);
   }
@@ -113,15 +117,15 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qprocess.h:170
 // [-2] void setProgram(const class QString &)
 extern "C"
-void C_ZN8QProcess10setProgramERK7QString(void *this_, const QString & program) {
-  ((QProcess*)this_)->setProgram(program);
+void C_ZN8QProcess10setProgramERK7QString(void *this_, QString* program) {
+  ((QProcess*)this_)->setProgram(*program);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:173
 // [-2] void setArguments(const class QStringList &)
 extern "C"
-void C_ZN8QProcess12setArgumentsERK11QStringList(void *this_, const QStringList & arguments) {
-  ((QProcess*)this_)->setArguments(arguments);
+void C_ZN8QProcess12setArgumentsERK11QStringList(void *this_, QStringList* arguments) {
+  ((QProcess*)this_)->setArguments(*arguments);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:175
@@ -197,8 +201,8 @@ void C_ZN8QProcess17closeWriteChannelEv(void *this_) {
 // /usr/include/qt/QtCore/qprocess.h:188
 // [-2] void setStandardInputFile(const class QString &)
 extern "C"
-void C_ZN8QProcess20setStandardInputFileERK7QString(void *this_, const QString & fileName) {
-  ((QProcess*)this_)->setStandardInputFile(fileName);
+void C_ZN8QProcess20setStandardInputFileERK7QString(void *this_, QString* fileName) {
+  ((QProcess*)this_)->setStandardInputFile(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:191
@@ -219,22 +223,22 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qprocess.h:215
 // [-2] void setWorkingDirectory(const class QString &)
 extern "C"
-void C_ZN8QProcess19setWorkingDirectoryERK7QString(void *this_, const QString & dir) {
-  ((QProcess*)this_)->setWorkingDirectory(dir);
+void C_ZN8QProcess19setWorkingDirectoryERK7QString(void *this_, QString* dir) {
+  ((QProcess*)this_)->setWorkingDirectory(*dir);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:217
 // [-2] void setEnvironment(const class QStringList &)
 extern "C"
-void C_ZN8QProcess14setEnvironmentERK11QStringList(void *this_, const QStringList & environment) {
-  ((QProcess*)this_)->setEnvironment(environment);
+void C_ZN8QProcess14setEnvironmentERK11QStringList(void *this_, QStringList* environment) {
+  ((QProcess*)this_)->setEnvironment(*environment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:219
 // [-2] void setProcessEnvironment(const class QProcessEnvironment &)
 extern "C"
-void C_ZN8QProcess21setProcessEnvironmentERK19QProcessEnvironment(void *this_, const QProcessEnvironment & environment) {
-  ((QProcess*)this_)->setProcessEnvironment(environment);
+void C_ZN8QProcess21setProcessEnvironmentERK19QProcessEnvironment(void *this_, QProcessEnvironment* environment) {
+  ((QProcess*)this_)->setProcessEnvironment(*environment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:220
@@ -376,36 +380,36 @@ bool C_ZNK8QProcess5atEndEv(void *this_) {
 // /usr/include/qt/QtCore/qprocess.h:248
 // [4] int execute(const class QString &, const class QStringList &)
 extern "C"
-int C_ZN8QProcess7executeERK7QStringRK11QStringList(const QString & program, const QStringList & arguments) {
-  return (int)QProcess::execute(program, arguments);
+int C_ZN8QProcess7executeERK7QStringRK11QStringList(QString* program, QStringList* arguments) {
+  return (int)QProcess::execute(*program, *arguments);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:249
 // [4] int execute(const class QString &)
 extern "C"
-int C_ZN8QProcess7executeERK7QString(const QString & command) {
-  return (int)QProcess::execute(command);
+int C_ZN8QProcess7executeERK7QString(QString* command) {
+  return (int)QProcess::execute(*command);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:251
 // [1] bool startDetached(const class QString &, const class QStringList &, const class QString &, qint64 *)
 extern "C"
-bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringListS2_Px(const QString & program, const QStringList & arguments, const QString & workingDirectory, qint64 * pid) {
-  return (bool)QProcess::startDetached(program, arguments, workingDirectory, pid);
+bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringListS2_Px(QString* program, QStringList* arguments, QString* workingDirectory, qint64 * pid) {
+  return (bool)QProcess::startDetached(*program, *arguments, *workingDirectory, pid);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:258
 // [1] bool startDetached(const class QString &, const class QStringList &)
 extern "C"
-bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringList(const QString & program, const QStringList & arguments) {
-  return (bool)QProcess::startDetached(program, arguments);
+bool C_ZN8QProcess13startDetachedERK7QStringRK11QStringList(QString* program, QStringList* arguments) {
+  return (bool)QProcess::startDetached(*program, *arguments);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:260
 // [1] bool startDetached(const class QString &)
 extern "C"
-bool C_ZN8QProcess13startDetachedERK7QString(const QString & command) {
-  return (bool)QProcess::startDetached(command);
+bool C_ZN8QProcess13startDetachedERK7QString(QString* command) {
+  return (bool)QProcess::startDetached(*command);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:264

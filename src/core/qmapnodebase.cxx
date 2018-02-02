@@ -63,4 +63,9 @@ extern "C"
 void* C_ZNK12QMapNodeBase6parentEv(void *this_) {
   return (void*)((QMapNodeBase*)this_)->parent();
 }
+
+extern "C"
+void C_ZN12QMapNodeBaseD2Ev(void *this_) {
+  delete (QMapNodeBase*)(this_);
+}
 //  main block end

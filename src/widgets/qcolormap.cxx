@@ -68,8 +68,8 @@ int C_ZNK9QColormap4sizeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qcolormap.h:75
 // [4] uint pixel(const class QColor &)
 extern "C"
-uint C_ZNK9QColormap5pixelERK6QColor(void *this_, const QColor & color) {
-  return (uint)((QColormap*)this_)->pixel(color);
+uint C_ZNK9QColormap5pixelERK6QColor(void *this_, QColor* color) {
+  return (uint)((QColormap*)this_)->pixel(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcolormap.h:76

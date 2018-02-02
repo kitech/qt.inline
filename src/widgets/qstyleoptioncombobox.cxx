@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:605
 // [-2] void QStyleOptionComboBox(int)
 extern "C"
-void* callback_ZN20QStyleOptionComboBoxC1Ei = 0;
+void* callback_ZN20QStyleOptionComboBoxC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN20QStyleOptionComboBoxC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionComboBoxC1Ei = cbfn; }
+{ callback_ZN20QStyleOptionComboBoxC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionComboBox : public QStyleOptionComboBox {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionComboBox(int version) : QStyleOptionComboBox(version) {}
 extern "C"
 void* C_ZN20QStyleOptionComboBoxC2Ev() {
   return  new QStyleOptionComboBox();
+}
+
+extern "C"
+void C_ZN20QStyleOptionComboBoxD2Ev(void *this_) {
+  delete (QStyleOptionComboBox*)(this_);
 }
 //  main block end

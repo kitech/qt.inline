@@ -36,7 +36,12 @@ void* C_ZN18QMessageLogContextC2EPKciS1_S1_(const char * fileName, int lineNumbe
 // /usr/include/qt/QtCore/qlogging.h:71
 // [-2] void copy(const class QMessageLogContext &)
 extern "C"
-void C_ZN18QMessageLogContext4copyERKS_(void *this_, const QMessageLogContext & logContext) {
-  ((QMessageLogContext*)this_)->copy(logContext);
+void C_ZN18QMessageLogContext4copyERKS_(void *this_, QMessageLogContext* logContext) {
+  ((QMessageLogContext*)this_)->copy(*logContext);
+}
+
+extern "C"
+void C_ZN18QMessageLogContextD2Ev(void *this_) {
+  delete (QMessageLogContext*)(this_);
 }
 //  main block end

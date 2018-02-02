@@ -73,8 +73,8 @@ void* C_ZN10QJsonValueC2Ex(qint64 n) {
 // /usr/include/qt/QtCore/qjsonvalue.h:81
 // [-2] void QJsonValue(const class QString &)
 extern "C"
-void* C_ZN10QJsonValueC2ERK7QString(const QString & s) {
-  return  new QJsonValue(s);
+void* C_ZN10QJsonValueC2ERK7QString(QString* s) {
+  return  new QJsonValue(*s);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:82
@@ -94,15 +94,15 @@ void* C_ZN10QJsonValueC2EPKc(const char * s) {
 // /usr/include/qt/QtCore/qjsonvalue.h:87
 // [-2] void QJsonValue(const class QJsonArray &)
 extern "C"
-void* C_ZN10QJsonValueC2ERK10QJsonArray(const QJsonArray & a) {
-  return  new QJsonValue(a);
+void* C_ZN10QJsonValueC2ERK10QJsonArray(QJsonArray* a) {
+  return  new QJsonValue(*a);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:88
 // [-2] void QJsonValue(const class QJsonObject &)
 extern "C"
-void* C_ZN10QJsonValueC2ERK11QJsonObject(const QJsonObject & o) {
-  return  new QJsonValue(o);
+void* C_ZN10QJsonValueC2ERK11QJsonObject(QJsonObject* o) {
+  return  new QJsonValue(*o);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:90
@@ -115,15 +115,15 @@ void C_ZN10QJsonValueD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qjsonvalue.h:111
 // [-2] void swap(class QJsonValue &)
 extern "C"
-void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue & other) {
-  ((QJsonValue*)this_)->swap(other);
+void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue* other) {
+  ((QJsonValue*)this_)->swap(*other);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:118
 // [24] QJsonValue fromVariant(const class QVariant &)
 extern "C"
-void* C_ZN10QJsonValue11fromVariantERK8QVariant(const QVariant & variant) {
-  auto rv = QJsonValue::fromVariant(variant);
+void* C_ZN10QJsonValue11fromVariantERK8QVariant(QVariant* variant) {
+  auto rv = QJsonValue::fromVariant(*variant);
 return new QJsonValue(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -223,8 +223,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qjsonvalue.h:134
 // [8] QString toString(const class QString &)
 extern "C"
-void* C_ZNK10QJsonValue8toStringERK7QString(void *this_, const QString & defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toString(defaultValue);
+void* C_ZNK10QJsonValue8toStringERK7QString(void *this_, QString* defaultValue) {
+  auto rv = ((QJsonValue*)this_)->toString(*defaultValue);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -239,8 +239,8 @@ return new QJsonArray(rv);
 // /usr/include/qt/QtCore/qjsonvalue.h:136
 // [16] QJsonArray toArray(const class QJsonArray &)
 extern "C"
-void* C_ZNK10QJsonValue7toArrayERK10QJsonArray(void *this_, const QJsonArray & defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toArray(defaultValue);
+void* C_ZNK10QJsonValue7toArrayERK10QJsonArray(void *this_, QJsonArray* defaultValue) {
+  auto rv = ((QJsonValue*)this_)->toArray(*defaultValue);
 return new QJsonArray(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -255,8 +255,8 @@ return new QJsonObject(rv);
 // /usr/include/qt/QtCore/qjsonvalue.h:138
 // [16] QJsonObject toObject(const class QJsonObject &)
 extern "C"
-void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, const QJsonObject & defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toObject(defaultValue);
+void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, QJsonObject* defaultValue) {
+  auto rv = ((QJsonValue*)this_)->toObject(*defaultValue);
 return new QJsonObject(rv);
 }
 //  main block end

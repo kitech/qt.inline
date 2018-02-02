@@ -52,4 +52,9 @@ extern "C"
 bool C_ZNK19QSequentialIterable17canReverseIterateEv(void *this_) {
   return (bool)((QSequentialIterable*)this_)->canReverseIterate();
 }
+
+extern "C"
+void C_ZN19QSequentialIterableD2Ev(void *this_) {
+  delete (QSequentialIterable*)(this_);
+}
 //  main block end

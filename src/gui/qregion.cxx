@@ -42,22 +42,22 @@ void* C_ZN7QRegionC2EiiiiNS_10RegionTypeE(int x, int y, int w, int h, QRegion::R
 // /usr/include/qt/QtGui/qregion.h:69
 // [-2] void QRegion(const class QRect &, enum QRegion::RegionType)
 extern "C"
-void* C_ZN7QRegionC2ERK5QRectNS_10RegionTypeE(const QRect & r, QRegion::RegionType t) {
-  return  new QRegion(r, t);
+void* C_ZN7QRegionC2ERK5QRectNS_10RegionTypeE(QRect* r, QRegion::RegionType t) {
+  return  new QRegion(*r, t);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:70
 // [-2] void QRegion(const class QPolygon &, Qt::FillRule)
 extern "C"
-void* C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(const QPolygon & pa, Qt::FillRule fillRule) {
-  return  new QRegion(pa, fillRule);
+void* C_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE(QPolygon* pa, Qt::FillRule fillRule) {
+  return  new QRegion(*pa, fillRule);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:74
 // [-2] void QRegion(const class QBitmap &)
 extern "C"
-void* C_ZN7QRegionC2ERK7QBitmap(const QBitmap & bitmap) {
-  return  new QRegion(bitmap);
+void* C_ZN7QRegionC2ERK7QBitmap(QBitmap* bitmap) {
+  return  new QRegion(*bitmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:75
@@ -70,8 +70,8 @@ void C_ZN7QRegionD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qregion.h:81
 // [-2] void swap(class QRegion &)
 extern "C"
-void C_ZN7QRegion4swapERS_(void *this_, QRegion & other) {
-  ((QRegion*)this_)->swap(other);
+void C_ZN7QRegion4swapERS_(void *this_, QRegion* other) {
+  ((QRegion*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:82
@@ -123,15 +123,15 @@ void C_ZNK7QRegion4cendEv(void *this_) {
 // /usr/include/qt/QtGui/qregion.h:97
 // [1] bool contains(const class QPoint &)
 extern "C"
-bool C_ZNK7QRegion8containsERK6QPoint(void *this_, const QPoint & p) {
-  return (bool)((QRegion*)this_)->contains(p);
+bool C_ZNK7QRegion8containsERK6QPoint(void *this_, QPoint* p) {
+  return (bool)((QRegion*)this_)->contains(*p);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:98
 // [1] bool contains(const class QRect &)
 extern "C"
-bool C_ZNK7QRegion8containsERK5QRect(void *this_, const QRect & r) {
-  return (bool)((QRegion*)this_)->contains(r);
+bool C_ZNK7QRegion8containsERK5QRect(void *this_, QRect* r) {
+  return (bool)((QRegion*)this_)->contains(*r);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:100
@@ -144,8 +144,8 @@ void C_ZN7QRegion9translateEii(void *this_, int dx, int dy) {
 // /usr/include/qt/QtGui/qregion.h:101
 // [-2] void translate(const class QPoint &)
 extern "C"
-void C_ZN7QRegion9translateERK6QPoint(void *this_, const QPoint & p) {
-  ((QRegion*)this_)->translate(p);
+void C_ZN7QRegion9translateERK6QPoint(void *this_, QPoint* p) {
+  ((QRegion*)this_)->translate(*p);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:102
@@ -159,71 +159,71 @@ return new QRegion(rv);
 // /usr/include/qt/QtGui/qregion.h:103
 // [8] QRegion translated(const class QPoint &)
 extern "C"
-void* C_ZNK7QRegion10translatedERK6QPoint(void *this_, const QPoint & p) {
-  auto rv = ((QRegion*)this_)->translated(p);
+void* C_ZNK7QRegion10translatedERK6QPoint(void *this_, QPoint* p) {
+  auto rv = ((QRegion*)this_)->translated(*p);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:105
 // [8] QRegion united(const class QRegion &)
 extern "C"
-void* C_ZNK7QRegion6unitedERKS_(void *this_, const QRegion & r) {
-  auto rv = ((QRegion*)this_)->united(r);
+void* C_ZNK7QRegion6unitedERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->united(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:106
 // [8] QRegion united(const class QRect &)
 extern "C"
-void* C_ZNK7QRegion6unitedERK5QRect(void *this_, const QRect & r) {
-  auto rv = ((QRegion*)this_)->united(r);
+void* C_ZNK7QRegion6unitedERK5QRect(void *this_, QRect* r) {
+  auto rv = ((QRegion*)this_)->united(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:107
 // [8] QRegion intersected(const class QRegion &)
 extern "C"
-void* C_ZNK7QRegion11intersectedERKS_(void *this_, const QRegion & r) {
-  auto rv = ((QRegion*)this_)->intersected(r);
+void* C_ZNK7QRegion11intersectedERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->intersected(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:108
 // [8] QRegion intersected(const class QRect &)
 extern "C"
-void* C_ZNK7QRegion11intersectedERK5QRect(void *this_, const QRect & r) {
-  auto rv = ((QRegion*)this_)->intersected(r);
+void* C_ZNK7QRegion11intersectedERK5QRect(void *this_, QRect* r) {
+  auto rv = ((QRegion*)this_)->intersected(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:109
 // [8] QRegion subtracted(const class QRegion &)
 extern "C"
-void* C_ZNK7QRegion10subtractedERKS_(void *this_, const QRegion & r) {
-  auto rv = ((QRegion*)this_)->subtracted(r);
+void* C_ZNK7QRegion10subtractedERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->subtracted(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:110
 // [8] QRegion xored(const class QRegion &)
 extern "C"
-void* C_ZNK7QRegion5xoredERKS_(void *this_, const QRegion & r) {
-  auto rv = ((QRegion*)this_)->xored(r);
+void* C_ZNK7QRegion5xoredERKS_(void *this_, QRegion* r) {
+  auto rv = ((QRegion*)this_)->xored(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:121
 // [1] bool intersects(const class QRegion &)
 extern "C"
-bool C_ZNK7QRegion10intersectsERKS_(void *this_, const QRegion & r) {
-  return (bool)((QRegion*)this_)->intersects(r);
+bool C_ZNK7QRegion10intersectsERKS_(void *this_, QRegion* r) {
+  return (bool)((QRegion*)this_)->intersects(*r);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:122
 // [1] bool intersects(const class QRect &)
 extern "C"
-bool C_ZNK7QRegion10intersectsERK5QRect(void *this_, const QRect & r) {
-  return (bool)((QRegion*)this_)->intersects(r);
+bool C_ZNK7QRegion10intersectsERK5QRect(void *this_, QRect* r) {
+  return (bool)((QRegion*)this_)->intersects(*r);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:124

@@ -41,7 +41,7 @@ void C_ZN14QGenericPluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qgenericplugin.h:58
 // [8] QObject * create(const class QString &, const class QString &)
 extern "C"
-void* C_ZN14QGenericPlugin6createERK7QStringS2_(void *this_, const QString & name, const QString & spec) {
-  return (void*)((QGenericPlugin*)this_)->create(name, spec);
+void* C_ZN14QGenericPlugin6createERK7QStringS2_(void *this_, QString* name, QString* spec) {
+  return (void*)((QGenericPlugin*)this_)->create(*name, *spec);
 }
 //  main block end

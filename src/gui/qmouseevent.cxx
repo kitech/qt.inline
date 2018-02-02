@@ -107,8 +107,8 @@ Qt::MouseButtons C_ZNK11QMouseEvent7buttonsEv(void *this_) {
 // /usr/include/qt/QtGui/qevent.h:135
 // [-2] void setLocalPos(const class QPointF &)
 extern "C"
-void C_ZN11QMouseEvent11setLocalPosERK7QPointF(void *this_, const QPointF & localPosition) {
-  ((QMouseEvent*)this_)->setLocalPos(localPosition);
+void C_ZN11QMouseEvent11setLocalPosERK7QPointF(void *this_, QPointF* localPosition) {
+  ((QMouseEvent*)this_)->setLocalPos(*localPosition);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:141

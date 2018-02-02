@@ -50,15 +50,15 @@ void C_ZN13QIntValidatorD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qvalidator.h:100
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-QValidator::State C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString & arg0, int & arg1) {
-  return (QValidator::State)((QIntValidator*)this_)->validate(arg0, arg1);
+QValidator::State C_ZNK13QIntValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
+  return (QValidator::State)((QIntValidator*)this_)->validate(*arg0, arg1);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:101
 // [-2] void fixup(class QString &)
 extern "C"
-void C_ZNK13QIntValidator5fixupER7QString(void *this_, QString & input) {
-  ((QIntValidator*)this_)->fixup(input);
+void C_ZNK13QIntValidator5fixupER7QString(void *this_, QString* input) {
+  ((QIntValidator*)this_)->fixup(*input);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:103

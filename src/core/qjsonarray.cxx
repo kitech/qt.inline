@@ -34,8 +34,8 @@ void C_ZN10QJsonArrayD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qjsonarray.h:89
 // [16] QJsonArray fromStringList(const class QStringList &)
 extern "C"
-void* C_ZN10QJsonArray14fromStringListERK11QStringList(const QStringList & list) {
-  auto rv = QJsonArray::fromStringList(list);
+void* C_ZN10QJsonArray14fromStringListERK11QStringList(QStringList* list) {
+  auto rv = QJsonArray::fromStringList(*list);
 return new QJsonArray(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -116,22 +116,22 @@ void C_ZN10QJsonArray10removeLastEv(void *this_) {
 // /usr/include/qt/QtCore/qjsonarray.h:109
 // [-2] void replace(int, const class QJsonValue &)
 extern "C"
-void C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *this_, int i, const QJsonValue & value) {
-  ((QJsonArray*)this_)->replace(i, value);
+void C_ZN10QJsonArray7replaceEiRK10QJsonValue(void *this_, int i, QJsonValue* value) {
+  ((QJsonArray*)this_)->replace(i, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:111
 // [1] bool contains(const class QJsonValue &)
 extern "C"
-bool C_ZNK10QJsonArray8containsERK10QJsonValue(void *this_, const QJsonValue & element) {
-  return (bool)((QJsonArray*)this_)->contains(element);
+bool C_ZNK10QJsonArray8containsERK10QJsonValue(void *this_, QJsonValue* element) {
+  return (bool)((QJsonArray*)this_)->contains(*element);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:118
 // [-2] void swap(class QJsonArray &)
 extern "C"
-void C_ZN10QJsonArray4swapERS_(void *this_, QJsonArray & other) {
-  ((QJsonArray*)this_)->swap(other);
+void C_ZN10QJsonArray4swapERS_(void *this_, QJsonArray* other) {
+  ((QJsonArray*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:214
@@ -185,15 +185,15 @@ return new QJsonArray::const_iterator(rv);
 // /usr/include/qt/QtCore/qjsonarray.h:236
 // [-2] void push_back(const class QJsonValue &)
 extern "C"
-void C_ZN10QJsonArray9push_backERK10QJsonValue(void *this_, const QJsonValue & t) {
-  ((QJsonArray*)this_)->push_back(t);
+void C_ZN10QJsonArray9push_backERK10QJsonValue(void *this_, QJsonValue* t) {
+  ((QJsonArray*)this_)->push_back(*t);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:237
 // [-2] void push_front(const class QJsonValue &)
 extern "C"
-void C_ZN10QJsonArray10push_frontERK10QJsonValue(void *this_, const QJsonValue & t) {
-  ((QJsonArray*)this_)->push_front(t);
+void C_ZN10QJsonArray10push_frontERK10QJsonValue(void *this_, QJsonValue* t) {
+  ((QJsonArray*)this_)->push_front(*t);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:238

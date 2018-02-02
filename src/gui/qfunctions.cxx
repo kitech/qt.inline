@@ -81,8 +81,8 @@ int C_Z4qRedj(QRgb rgb) {
 // /usr/include/qt/QtGui/qaccessible.h:974
 // [8] QString qAccessibleLocalizedActionDescription(const class QString &)
 extern "C"
-void* C_Z37qAccessibleLocalizedActionDescriptionRK7QString(const QString & actionName) {
-  auto rv = qAccessibleLocalizedActionDescription(actionName);
+void* C_Z37qAccessibleLocalizedActionDescriptionRK7QString(QString* actionName) {
+  auto rv = qAccessibleLocalizedActionDescription(*actionName);
 return new QString(rv);
 }
 
@@ -114,8 +114,8 @@ QRgb C_Z14qUnpremultiplyj(QRgb p) {
 // /usr/include/qt/QtGui/qquaternion.h:323
 // [1] bool qFuzzyCompare(const class QQuaternion &, const class QQuaternion &)
 extern "C"
-bool C_Z13qFuzzyCompareRK11QQuaternionS1__2(const QQuaternion & q1, const QQuaternion & q2) {
-  return (bool)qFuzzyCompare(q1, q2);
+bool C_Z13qFuzzyCompareRK11QQuaternionS1__2(QQuaternion* q1, QQuaternion* q2) {
+  return (bool)qFuzzyCompare(*q1, *q2);
 }
 
 // Invalid inline Visibility=Default Availability=Available

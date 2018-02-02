@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgridlayout.h:123
 // [-2] void addItem(class QLayoutItem *)
 extern "C"
-void* callback_ZN11QGridLayout7addItemEP11QLayoutItem = 0;
+void* callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = 0;
 extern "C" void set_callback_ZN11QGridLayout7addItemEP11QLayoutItem(void*cbfn)
-{ callback_ZN11QGridLayout7addItemEP11QLayoutItem = cbfn; }
+{ callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = cbfn; }
 
 class MyQGridLayout : public QGridLayout {
 public:
@@ -25,8 +25,9 @@ MyQGridLayout(QWidget * parent) : QGridLayout(parent) {}
 MyQGridLayout() : QGridLayout() {}
 // void addItem(class QLayoutItem *)
   virtual void addItem(QLayoutItem * arg0) {
-    if (callback_ZN11QGridLayout7addItemEP11QLayoutItem != 0) {
-      // callback_ZN11QGridLayout7addItemEP11QLayoutItem(arg0);
+    auto fnptr = ((void (*)(void* , QLayoutItem *))(callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QGridLayout::addItem(arg0);
   }
@@ -294,8 +295,8 @@ int C_ZNK11QGridLayout5countEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgridlayout.h:115
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QGridLayout*)this_)->setGeometry(arg0);
+void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QGridLayout*)this_)->setGeometry(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:119

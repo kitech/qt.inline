@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:199
 // [-2] void QStyleOptionTabBarBase(int)
 extern "C"
-void* callback_ZN22QStyleOptionTabBarBaseC1Ei = 0;
+void* callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN22QStyleOptionTabBarBaseC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionTabBarBaseC1Ei = cbfn; }
+{ callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTabBarBase : public QStyleOptionTabBarBase {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionTabBarBase(int version) : QStyleOptionTabBarBase(version) {}
 extern "C"
 void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
   return  new QStyleOptionTabBarBase();
+}
+
+extern "C"
+void C_ZN22QStyleOptionTabBarBaseD2Ev(void *this_) {
+  delete (QStyleOptionTabBarBase*)(this_);
 }
 //  main block end

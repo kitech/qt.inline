@@ -49,8 +49,8 @@ return new QVector3D(rv);
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:130
 // [-2] void setOrigin(const class QVector3D &)
 extern "C"
-void C_ZN17QGraphicsRotation9setOriginERK9QVector3D(void *this_, const QVector3D & point) {
-  ((QGraphicsRotation*)this_)->setOrigin(point);
+void C_ZN17QGraphicsRotation9setOriginERK9QVector3D(void *this_, QVector3D* point) {
+  ((QGraphicsRotation*)this_)->setOrigin(*point);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:132
@@ -78,8 +78,8 @@ return new QVector3D(rv);
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:136
 // [-2] void setAxis(const class QVector3D &)
 extern "C"
-void C_ZN17QGraphicsRotation7setAxisERK9QVector3D(void *this_, const QVector3D & axis) {
-  ((QGraphicsRotation*)this_)->setAxis(axis);
+void C_ZN17QGraphicsRotation7setAxisERK9QVector3D(void *this_, QVector3D* axis) {
+  ((QGraphicsRotation*)this_)->setAxis(*axis);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:137

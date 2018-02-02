@@ -56,8 +56,8 @@ void* C_ZN13QLatin1StringC2EPKci(const char * s, int sz) {
 // /usr/include/qt/QtCore/qstring.h:99
 // [-2] void QLatin1String(const class QByteArray &)
 extern "C"
-void* C_ZN13QLatin1StringC2ERK10QByteArray(const QByteArray & s) {
-  return  new QLatin1String(s);
+void* C_ZN13QLatin1StringC2ERK10QByteArray(QByteArray* s) {
+  return  new QLatin1String(*s);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:101
@@ -267,5 +267,10 @@ extern "C"
 void* C_ZNK13QLatin1String7trimmedEv(void *this_) {
   auto rv = ((QLatin1String*)this_)->trimmed();
 return new QLatin1String(rv);
+}
+
+extern "C"
+void C_ZN13QLatin1StringD2Ev(void *this_) {
+  delete (QLatin1String*)(this_);
 }
 //  main block end

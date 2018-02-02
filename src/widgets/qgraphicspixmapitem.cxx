@@ -12,23 +12,23 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:855
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
 extern "C"
-void* callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+void* callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
 extern "C" void set_callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-{ callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+{ callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:856
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
 extern "C"
-void* callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+void* callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-{ callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+{ callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:857
 // [16] QVariant extension(const class QVariant &)
 extern "C"
-void* callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant = 0;
+void* callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(void*cbfn)
-{ callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant = cbfn; }
+{ callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
 public:
@@ -39,22 +39,25 @@ MyQGraphicsPixmapItem(QGraphicsItem * parent) : QGraphicsPixmapItem(parent) {}
 MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphicsPixmapItem(pixmap, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-    if (callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-      // callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension);
     }
     return QGraphicsPixmapItem::supportsExtension(extension);
   }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-    if (callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-      // callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension, (QVariant*)&variant);
     }
     QGraphicsPixmapItem::setExtension(extension, variant);
   }
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
-    if (callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant != 0) {
-      // callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(variant);
+    auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QVariant*)&variant);
     }
     return QGraphicsPixmapItem::extension(variant);
   }
@@ -72,9 +75,9 @@ void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:826
 // [-2] void QGraphicsPixmapItem(const class QPixmap &, class QGraphicsItem *)
 extern "C"
-void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(const QPixmap & pixmap, QGraphicsItem * parent) {
+void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(QPixmap* pixmap, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsPixmapItem*)(0);
-  return  new MyQGraphicsPixmapItem(pixmap, parent);
+  return  new MyQGraphicsPixmapItem(*pixmap, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:827
@@ -95,8 +98,8 @@ return new QPixmap(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:830
 // [-2] void setPixmap(const class QPixmap &)
 extern "C"
-void C_ZN19QGraphicsPixmapItem9setPixmapERK7QPixmap(void *this_, const QPixmap & pixmap) {
-  ((QGraphicsPixmapItem*)this_)->setPixmap(pixmap);
+void C_ZN19QGraphicsPixmapItem9setPixmapERK7QPixmap(void *this_, QPixmap* pixmap) {
+  ((QGraphicsPixmapItem*)this_)->setPixmap(*pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:832
@@ -124,8 +127,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:836
 // [-2] void setOffset(const class QPointF &)
 extern "C"
-void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, const QPointF & offset) {
-  ((QGraphicsPixmapItem*)this_)->setOffset(offset);
+void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, QPointF* offset) {
+  ((QGraphicsPixmapItem*)this_)->setOffset(*offset);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:837
@@ -154,8 +157,8 @@ return new QPainterPath(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:841
 // [1] bool contains(const class QPointF &)
 extern "C"
-bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  return (bool)((QGraphicsPixmapItem*)this_)->contains(point);
+bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, QPointF* point) {
+  return (bool)((QGraphicsPixmapItem*)this_)->contains(*point);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:843

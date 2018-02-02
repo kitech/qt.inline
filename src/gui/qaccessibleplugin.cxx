@@ -41,7 +41,7 @@ void C_ZN17QAccessiblePluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qaccessibleplugin.h:66
 // [8] QAccessibleInterface * create(const class QString &, class QObject *)
 extern "C"
-void* C_ZN17QAccessiblePlugin6createERK7QStringP7QObject(void *this_, const QString & key, QObject * object) {
-  return (void*)((QAccessiblePlugin*)this_)->create(key, object);
+void* C_ZN17QAccessiblePlugin6createERK7QStringP7QObject(void *this_, QString* key, QObject * object) {
+  return (void*)((QAccessiblePlugin*)this_)->create(*key, object);
 }
 //  main block end

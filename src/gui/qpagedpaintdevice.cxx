@@ -12,16 +12,16 @@
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:246
 // [8] QPageLayout devicePageLayout()
 extern "C"
-void* callback_ZNK17QPagedPaintDevice16devicePageLayoutEv = 0;
+void* callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
 extern "C" void set_callback_ZNK17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-{ callback_ZNK17QPagedPaintDevice16devicePageLayoutEv = cbfn; }
+{ callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:247
 // [8] QPageLayout & devicePageLayout()
 extern "C"
-void* callback_ZN17QPagedPaintDevice16devicePageLayoutEv = 0;
+void* callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
 extern "C" void set_callback_ZN17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-{ callback_ZN17QPagedPaintDevice16devicePageLayoutEv = cbfn; }
+{ callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:58
@@ -48,15 +48,15 @@ bool C_ZN17QPagedPaintDevice7newPageEv(void *this_) {
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:219
 // [1] bool setPageLayout(const class QPageLayout &)
 extern "C"
-bool C_ZN17QPagedPaintDevice13setPageLayoutERK11QPageLayout(void *this_, const QPageLayout & pageLayout) {
-  return (bool)((QPagedPaintDevice*)this_)->setPageLayout(pageLayout);
+bool C_ZN17QPagedPaintDevice13setPageLayoutERK11QPageLayout(void *this_, QPageLayout* pageLayout) {
+  return (bool)((QPagedPaintDevice*)this_)->setPageLayout(*pageLayout);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:220
 // [1] bool setPageSize(const class QPageSize &)
 extern "C"
-bool C_ZN17QPagedPaintDevice11setPageSizeERK9QPageSize(void *this_, const QPageSize & pageSize) {
-  return (bool)((QPagedPaintDevice*)this_)->setPageSize(pageSize);
+bool C_ZN17QPagedPaintDevice11setPageSizeERK9QPageSize(void *this_, QPageSize* pageSize) {
+  return (bool)((QPagedPaintDevice*)this_)->setPageSize(*pageSize);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:221
@@ -69,15 +69,15 @@ bool C_ZN17QPagedPaintDevice18setPageOrientationEN11QPageLayout11OrientationE(vo
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:222
 // [1] bool setPageMargins(const class QMarginsF &)
 extern "C"
-bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsF(void *this_, const QMarginsF & margins) {
-  return (bool)((QPagedPaintDevice*)this_)->setPageMargins(margins);
+bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsF(void *this_, QMarginsF* margins) {
+  return (bool)((QPagedPaintDevice*)this_)->setPageMargins(*margins);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:223
 // [1] bool setPageMargins(const class QMarginsF &, class QPageLayout::Unit)
 extern "C"
-bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE(void *this_, const QMarginsF & margins, QPageLayout::Unit units) {
-  return (bool)((QPagedPaintDevice*)this_)->setPageMargins(margins, units);
+bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE(void *this_, QMarginsF* margins, QPageLayout::Unit units) {
+  return (bool)((QPagedPaintDevice*)this_)->setPageMargins(*margins, units);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:224
@@ -105,8 +105,8 @@ QPagedPaintDevice::PageSize C_ZNK17QPagedPaintDevice8pageSizeEv(void *this_) {
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:229
 // [-2] void setPageSizeMM(const class QSizeF &)
 extern "C"
-void C_ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF(void *this_, const QSizeF & size) {
-  ((QPagedPaintDevice*)this_)->setPageSizeMM(size);
+void C_ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF(void *this_, QSizeF* size) {
+  ((QPagedPaintDevice*)this_)->setPageSizeMM(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:230

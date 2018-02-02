@@ -12,16 +12,16 @@
 // /usr/include/qt/QtCore/qpauseanimation.h:65
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QPauseAnimation5eventEP6QEvent = 0;
+void* callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QPauseAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QPauseAnimation5eventEP6QEvent = cbfn; }
+{ callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpauseanimation.h:66
 // [-2] void updateCurrentTime(int)
 extern "C"
-void* callback_ZN15QPauseAnimation17updateCurrentTimeEi = 0;
+void* callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = 0;
 extern "C" void set_callback_ZN15QPauseAnimation17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN15QPauseAnimation17updateCurrentTimeEi = cbfn; }
+{ callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = cbfn; }
 
 class MyQPauseAnimation : public QPauseAnimation {
 public:
@@ -32,15 +32,17 @@ MyQPauseAnimation(QObject * parent) : QPauseAnimation(parent) {}
 MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN15QPauseAnimation5eventEP6QEvent != 0) {
-      // callback_ZN15QPauseAnimation5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QPauseAnimation::event(e);
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
-    if (callback_ZN15QPauseAnimation17updateCurrentTimeEi != 0) {
-      // callback_ZN15QPauseAnimation17updateCurrentTimeEi(arg0);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QPauseAnimation::updateCurrentTime(arg0);
   }

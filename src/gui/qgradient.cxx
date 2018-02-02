@@ -48,8 +48,8 @@ QGradient::Spread C_ZNK9QGradient6spreadEv(void *this_) {
 // /usr/include/qt/QtGui/qbrush.h:213
 // [-2] void setColorAt(qreal, const class QColor &)
 extern "C"
-void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, const QColor & color) {
-  ((QGradient*)this_)->setColorAt(pos, color);
+void C_ZN9QGradient10setColorAtEdRK6QColor(void *this_, qreal pos, QColor* color) {
+  ((QGradient*)this_)->setColorAt(pos, *color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:218
@@ -78,5 +78,10 @@ QGradient::InterpolationMode C_ZNK9QGradient17interpolationModeEv(void *this_) {
 extern "C"
 void C_ZN9QGradient20setInterpolationModeENS_17InterpolationModeE(void *this_, QGradient::InterpolationMode mode) {
   ((QGradient*)this_)->setInterpolationMode(mode);
+}
+
+extern "C"
+void C_ZN9QGradientD2Ev(void *this_) {
+  delete (QGradient*)(this_);
 }
 //  main block end

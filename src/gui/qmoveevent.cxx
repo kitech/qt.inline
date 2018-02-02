@@ -20,8 +20,8 @@ MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos
 // /usr/include/qt/QtGui/qevent.h:421
 // [-2] void QMoveEvent(const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN10QMoveEventC2ERK6QPointS2_(const QPoint & pos, const QPoint & oldPos) {
-  return  new QMoveEvent(pos, oldPos);
+void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
+  return  new QMoveEvent(*pos, *oldPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:422

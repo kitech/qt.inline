@@ -33,15 +33,15 @@ void* C_ZN19QXmlStreamStringRefC2Ev() {
 // /usr/include/qt/QtCore/qxmlstream.h:59
 // [-2] void QXmlStreamStringRef(const class QStringRef &)
 extern "C"
-void* C_ZN19QXmlStreamStringRefC2ERK10QStringRef(const QStringRef & aString) {
-  return  new QXmlStreamStringRef(aString);
+void* C_ZN19QXmlStreamStringRefC2ERK10QStringRef(QStringRef* aString) {
+  return  new QXmlStreamStringRef(*aString);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:61
 // [-2] void QXmlStreamStringRef(const class QString &)
 extern "C"
-void* C_ZN19QXmlStreamStringRefC2ERK7QString(const QString & aString) {
-  return  new QXmlStreamStringRef(aString);
+void* C_ZN19QXmlStreamStringRefC2ERK7QString(QString* aString) {
+  return  new QXmlStreamStringRef(*aString);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:63
@@ -61,8 +61,8 @@ void C_ZN19QXmlStreamStringRefD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qxmlstream.h:82
 // [-2] void swap(class QXmlStreamStringRef &)
 extern "C"
-void C_ZN19QXmlStreamStringRef4swapERS_(void *this_, QXmlStreamStringRef & other) {
-  ((QXmlStreamStringRef*)this_)->swap(other);
+void C_ZN19QXmlStreamStringRef4swapERS_(void *this_, QXmlStreamStringRef* other) {
+  ((QXmlStreamStringRef*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:89

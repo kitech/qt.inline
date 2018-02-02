@@ -34,8 +34,8 @@ void C_ZN12QEasingCurveD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qeasingcurve.h:89
 // [-2] void swap(class QEasingCurve &)
 extern "C"
-void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve & other) {
-  ((QEasingCurve*)this_)->swap(other);
+void C_ZN12QEasingCurve4swapERS_(void *this_, QEasingCurve* other) {
+  ((QEasingCurve*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:95
@@ -83,15 +83,15 @@ void C_ZN12QEasingCurve12setOvershootEd(void *this_, qreal overshoot) {
 // /usr/include/qt/QtCore/qeasingcurve.h:104
 // [-2] void addCubicBezierSegment(const class QPointF &, const class QPointF &, const class QPointF &)
 extern "C"
-void C_ZN12QEasingCurve21addCubicBezierSegmentERK7QPointFS2_S2_(void *this_, const QPointF & c1, const QPointF & c2, const QPointF & endPoint) {
-  ((QEasingCurve*)this_)->addCubicBezierSegment(c1, c2, endPoint);
+void C_ZN12QEasingCurve21addCubicBezierSegmentERK7QPointFS2_S2_(void *this_, QPointF* c1, QPointF* c2, QPointF* endPoint) {
+  ((QEasingCurve*)this_)->addCubicBezierSegment(*c1, *c2, *endPoint);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:105
 // [-2] void addTCBSegment(const class QPointF &, qreal, qreal, qreal)
 extern "C"
-void C_ZN12QEasingCurve13addTCBSegmentERK7QPointFddd(void *this_, const QPointF & nextPoint, qreal t, qreal c, qreal b) {
-  ((QEasingCurve*)this_)->addTCBSegment(nextPoint, t, c, b);
+void C_ZN12QEasingCurve13addTCBSegmentERK7QPointFddd(void *this_, QPointF* nextPoint, qreal t, qreal c, qreal b) {
+  ((QEasingCurve*)this_)->addTCBSegment(*nextPoint, t, c, b);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:111

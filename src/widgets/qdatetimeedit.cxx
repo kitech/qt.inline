@@ -12,93 +12,93 @@
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:178
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:180
 // [-2] void wheelEvent(class QWheelEvent *)
 extern "C"
-void* callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent = 0;
+void* callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent = cbfn; }
+{ callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:182
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:183
 // [1] bool focusNextPrevChild(_Bool)
 extern "C"
-void* callback_ZN13QDateTimeEdit18focusNextPrevChildEb = 0;
+void* callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit18focusNextPrevChildEb(void*cbfn)
-{ callback_ZN13QDateTimeEdit18focusNextPrevChildEb = cbfn; }
+{ callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:184
 // [4] QValidator::State validate(class QString &, int &)
 extern "C"
-void* callback_ZNK13QDateTimeEdit8validateER7QStringRi = 0;
+void* callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit8validateER7QStringRi(void*cbfn)
-{ callback_ZNK13QDateTimeEdit8validateER7QStringRi = cbfn; }
+{ callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:185
 // [-2] void fixup(class QString &)
 extern "C"
-void* callback_ZNK13QDateTimeEdit5fixupER7QString = 0;
+void* callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit5fixupER7QString(void*cbfn)
-{ callback_ZNK13QDateTimeEdit5fixupER7QString = cbfn; }
+{ callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:187
 // [8] QDateTime dateTimeFromText(const class QString &)
 extern "C"
-void* callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString = 0;
+void* callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(void*cbfn)
-{ callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString = cbfn; }
+{ callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:188
 // [8] QString textFromDateTime(const class QDateTime &)
 extern "C"
-void* callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime = 0;
+void* callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(void*cbfn)
-{ callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime = cbfn; }
+{ callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:189
 // [4] QAbstractSpinBox::StepEnabled stepEnabled()
 extern "C"
-void* callback_ZNK13QDateTimeEdit11stepEnabledEv = 0;
+void* callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit11stepEnabledEv(void*cbfn)
-{ callback_ZNK13QDateTimeEdit11stepEnabledEv = cbfn; }
+{ callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:190
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:191
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent = 0;
+void* callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:192
 // [-2] void initStyleOption(class QStyleOptionSpinBox *)
 extern "C"
-void* callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox = 0;
+void* callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
 extern "C" void set_callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
-{ callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox = cbfn; }
+{ callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:194
 // [-2] void QDateTimeEdit(const class QVariant &, class QVariant::Type, class QWidget *)
 extern "C"
-void* callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget = 0;
+void* callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = 0;
 extern "C" void set_callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget(void*cbfn)
-{ callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget = cbfn; }
+{ callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = cbfn; }
 
 class MyQDateTimeEdit : public QDateTimeEdit {
 public:
@@ -113,85 +113,97 @@ MyQDateTimeEdit(const QDate & d, QWidget * parent) : QDateTimeEdit(d, parent) {}
 MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    if (callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QDateTimeEdit::keyPressEvent(event);
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
-    if (callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent != 0) {
-      // callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(event);
+    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QDateTimeEdit::wheelEvent(event);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    if (callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QDateTimeEdit::focusInEvent(event);
   }
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
-    if (callback_ZN13QDateTimeEdit18focusNextPrevChildEb != 0) {
-      // callback_ZN13QDateTimeEdit18focusNextPrevChildEb(next);
+    auto fnptr = ((bool (*)(void* , bool))(callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , next);
     }
     return QDateTimeEdit::focusNextPrevChild(next);
   }
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
-    if (callback_ZNK13QDateTimeEdit8validateER7QStringRi != 0) {
-      // callback_ZNK13QDateTimeEdit8validateER7QStringRi(input, pos);
+    auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&input, pos);
     }
     return QDateTimeEdit::validate(input, pos);
   }
 // void fixup(class QString &)
   virtual void fixup(QString & input) {
-    if (callback_ZNK13QDateTimeEdit5fixupER7QString != 0) {
-      // callback_ZNK13QDateTimeEdit5fixupER7QString(input);
+    auto fnptr = ((void (*)(void* , QString*))(callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&input);
     }
     QDateTimeEdit::fixup(input);
   }
 // QDateTime dateTimeFromText(const class QString &)
   virtual QDateTime dateTimeFromText(const QString & text) {
-    if (callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString != 0) {
-      // callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(text);
+    auto fnptr = ((QDateTime (*)(void* , QString*))(callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QString*)&text);
     }
     return QDateTimeEdit::dateTimeFromText(text);
   }
 // QString textFromDateTime(const class QDateTime &)
   virtual QString textFromDateTime(const QDateTime & dt) {
-    if (callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime != 0) {
-      // callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(dt);
+    auto fnptr = ((QString (*)(void* , QDateTime*))(callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QDateTime*)&dt);
     }
     return QDateTimeEdit::textFromDateTime(dt);
   }
 // QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() {
-    if (callback_ZNK13QDateTimeEdit11stepEnabledEv != 0) {
-      // callback_ZNK13QDateTimeEdit11stepEnabledEv();
+    auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QDateTimeEdit::stepEnabled();
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    if (callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QDateTimeEdit::mousePressEvent(event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    if (callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(event);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QDateTimeEdit::paintEvent(event);
   }
 // void initStyleOption(class QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
-    if (callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox != 0) {
-      // callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QDateTimeEdit::initStyleOption(option);
   }
@@ -218,25 +230,25 @@ void* C_ZN13QDateTimeEditC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:96
 // [-2] void QDateTimeEdit(const class QDateTime &, class QWidget *)
 extern "C"
-void* C_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget(const QDateTime & dt, QWidget * parent) {
+void* C_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget(QDateTime* dt, QWidget * parent) {
   auto _nilp = (MyQDateTimeEdit*)(0);
-  return  new MyQDateTimeEdit(dt, parent);
+  return  new MyQDateTimeEdit(*dt, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:97
 // [-2] void QDateTimeEdit(const class QDate &, class QWidget *)
 extern "C"
-void* C_ZN13QDateTimeEditC2ERK5QDateP7QWidget(const QDate & d, QWidget * parent) {
+void* C_ZN13QDateTimeEditC2ERK5QDateP7QWidget(QDate* d, QWidget * parent) {
   auto _nilp = (MyQDateTimeEdit*)(0);
-  return  new MyQDateTimeEdit(d, parent);
+  return  new MyQDateTimeEdit(*d, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:98
 // [-2] void QDateTimeEdit(const class QTime &, class QWidget *)
 extern "C"
-void* C_ZN13QDateTimeEditC2ERK5QTimeP7QWidget(const QTime & t, QWidget * parent) {
+void* C_ZN13QDateTimeEditC2ERK5QTimeP7QWidget(QTime* t, QWidget * parent) {
   auto _nilp = (MyQDateTimeEdit*)(0);
-  return  new MyQDateTimeEdit(t, parent);
+  return  new MyQDateTimeEdit(*t, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:99
@@ -288,8 +300,8 @@ void C_ZN13QDateTimeEdit20clearMinimumDateTimeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:107
 // [-2] void setMinimumDateTime(const class QDateTime &)
 extern "C"
-void C_ZN13QDateTimeEdit18setMinimumDateTimeERK9QDateTime(void *this_, const QDateTime & dt) {
-  ((QDateTimeEdit*)this_)->setMinimumDateTime(dt);
+void C_ZN13QDateTimeEdit18setMinimumDateTimeERK9QDateTime(void *this_, QDateTime* dt) {
+  ((QDateTimeEdit*)this_)->setMinimumDateTime(*dt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:109
@@ -310,15 +322,15 @@ void C_ZN13QDateTimeEdit20clearMaximumDateTimeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:111
 // [-2] void setMaximumDateTime(const class QDateTime &)
 extern "C"
-void C_ZN13QDateTimeEdit18setMaximumDateTimeERK9QDateTime(void *this_, const QDateTime & dt) {
-  ((QDateTimeEdit*)this_)->setMaximumDateTime(dt);
+void C_ZN13QDateTimeEdit18setMaximumDateTimeERK9QDateTime(void *this_, QDateTime* dt) {
+  ((QDateTimeEdit*)this_)->setMaximumDateTime(*dt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:113
 // [-2] void setDateTimeRange(const class QDateTime &, const class QDateTime &)
 extern "C"
-void C_ZN13QDateTimeEdit16setDateTimeRangeERK9QDateTimeS2_(void *this_, const QDateTime & min, const QDateTime & max) {
-  ((QDateTimeEdit*)this_)->setDateTimeRange(min, max);
+void C_ZN13QDateTimeEdit16setDateTimeRangeERK9QDateTimeS2_(void *this_, QDateTime* min, QDateTime* max) {
+  ((QDateTimeEdit*)this_)->setDateTimeRange(*min, *max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:115
@@ -332,8 +344,8 @@ return new QDate(rv);
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:116
 // [-2] void setMinimumDate(const class QDate &)
 extern "C"
-void C_ZN13QDateTimeEdit14setMinimumDateERK5QDate(void *this_, const QDate & min) {
-  ((QDateTimeEdit*)this_)->setMinimumDate(min);
+void C_ZN13QDateTimeEdit14setMinimumDateERK5QDate(void *this_, QDate* min) {
+  ((QDateTimeEdit*)this_)->setMinimumDate(*min);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:117
@@ -354,8 +366,8 @@ return new QDate(rv);
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:120
 // [-2] void setMaximumDate(const class QDate &)
 extern "C"
-void C_ZN13QDateTimeEdit14setMaximumDateERK5QDate(void *this_, const QDate & max) {
-  ((QDateTimeEdit*)this_)->setMaximumDate(max);
+void C_ZN13QDateTimeEdit14setMaximumDateERK5QDate(void *this_, QDate* max) {
+  ((QDateTimeEdit*)this_)->setMaximumDate(*max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:121
@@ -368,8 +380,8 @@ void C_ZN13QDateTimeEdit16clearMaximumDateEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:123
 // [-2] void setDateRange(const class QDate &, const class QDate &)
 extern "C"
-void C_ZN13QDateTimeEdit12setDateRangeERK5QDateS2_(void *this_, const QDate & min, const QDate & max) {
-  ((QDateTimeEdit*)this_)->setDateRange(min, max);
+void C_ZN13QDateTimeEdit12setDateRangeERK5QDateS2_(void *this_, QDate* min, QDate* max) {
+  ((QDateTimeEdit*)this_)->setDateRange(*min, *max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:125
@@ -383,8 +395,8 @@ return new QTime(rv);
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:126
 // [-2] void setMinimumTime(const class QTime &)
 extern "C"
-void C_ZN13QDateTimeEdit14setMinimumTimeERK5QTime(void *this_, const QTime & min) {
-  ((QDateTimeEdit*)this_)->setMinimumTime(min);
+void C_ZN13QDateTimeEdit14setMinimumTimeERK5QTime(void *this_, QTime* min) {
+  ((QDateTimeEdit*)this_)->setMinimumTime(*min);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:127
@@ -405,8 +417,8 @@ return new QTime(rv);
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:130
 // [-2] void setMaximumTime(const class QTime &)
 extern "C"
-void C_ZN13QDateTimeEdit14setMaximumTimeERK5QTime(void *this_, const QTime & max) {
-  ((QDateTimeEdit*)this_)->setMaximumTime(max);
+void C_ZN13QDateTimeEdit14setMaximumTimeERK5QTime(void *this_, QTime* max) {
+  ((QDateTimeEdit*)this_)->setMaximumTime(*max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:131
@@ -419,8 +431,8 @@ void C_ZN13QDateTimeEdit16clearMaximumTimeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:133
 // [-2] void setTimeRange(const class QTime &, const class QTime &)
 extern "C"
-void C_ZN13QDateTimeEdit12setTimeRangeERK5QTimeS2_(void *this_, const QTime & min, const QTime & max) {
-  ((QDateTimeEdit*)this_)->setTimeRange(min, max);
+void C_ZN13QDateTimeEdit12setTimeRangeERK5QTimeS2_(void *this_, QTime* min, QTime* max) {
+  ((QDateTimeEdit*)this_)->setTimeRange(*min, *max);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:135
@@ -513,8 +525,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:153
 // [-2] void setDisplayFormat(const class QString &)
 extern "C"
-void C_ZN13QDateTimeEdit16setDisplayFormatERK7QString(void *this_, const QString & format) {
-  ((QDateTimeEdit*)this_)->setDisplayFormat(format);
+void C_ZN13QDateTimeEdit16setDisplayFormatERK7QString(void *this_, QString* format) {
+  ((QDateTimeEdit*)this_)->setDisplayFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:155
@@ -577,42 +589,42 @@ bool C_ZN13QDateTimeEdit5eventEP6QEvent(void *this_, QEvent * event) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:168
 // [-2] void dateTimeChanged(const class QDateTime &)
 extern "C"
-void C_ZN13QDateTimeEdit15dateTimeChangedERK9QDateTime(void *this_, const QDateTime & dateTime) {
-  ((QDateTimeEdit*)this_)->dateTimeChanged(dateTime);
+void C_ZN13QDateTimeEdit15dateTimeChangedERK9QDateTime(void *this_, QDateTime* dateTime) {
+  ((QDateTimeEdit*)this_)->dateTimeChanged(*dateTime);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:169
 // [-2] void timeChanged(const class QTime &)
 extern "C"
-void C_ZN13QDateTimeEdit11timeChangedERK5QTime(void *this_, const QTime & time) {
-  ((QDateTimeEdit*)this_)->timeChanged(time);
+void C_ZN13QDateTimeEdit11timeChangedERK5QTime(void *this_, QTime* time) {
+  ((QDateTimeEdit*)this_)->timeChanged(*time);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:170
 // [-2] void dateChanged(const class QDate &)
 extern "C"
-void C_ZN13QDateTimeEdit11dateChangedERK5QDate(void *this_, const QDate & date) {
-  ((QDateTimeEdit*)this_)->dateChanged(date);
+void C_ZN13QDateTimeEdit11dateChangedERK5QDate(void *this_, QDate* date) {
+  ((QDateTimeEdit*)this_)->dateChanged(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:173
 // [-2] void setDateTime(const class QDateTime &)
 extern "C"
-void C_ZN13QDateTimeEdit11setDateTimeERK9QDateTime(void *this_, const QDateTime & dateTime) {
-  ((QDateTimeEdit*)this_)->setDateTime(dateTime);
+void C_ZN13QDateTimeEdit11setDateTimeERK9QDateTime(void *this_, QDateTime* dateTime) {
+  ((QDateTimeEdit*)this_)->setDateTime(*dateTime);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:174
 // [-2] void setDate(const class QDate &)
 extern "C"
-void C_ZN13QDateTimeEdit7setDateERK5QDate(void *this_, const QDate & date) {
-  ((QDateTimeEdit*)this_)->setDate(date);
+void C_ZN13QDateTimeEdit7setDateERK5QDate(void *this_, QDate* date) {
+  ((QDateTimeEdit*)this_)->setDate(*date);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:175
 // [-2] void setTime(const class QTime &)
 extern "C"
-void C_ZN13QDateTimeEdit7setTimeERK5QTime(void *this_, const QTime & time) {
-  ((QDateTimeEdit*)this_)->setTime(time);
+void C_ZN13QDateTimeEdit7setTimeERK5QTime(void *this_, QTime* time) {
+  ((QDateTimeEdit*)this_)->setTime(*time);
 }
 //  main block end

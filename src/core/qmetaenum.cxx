@@ -115,4 +115,9 @@ extern "C"
 bool C_ZNK9QMetaEnum7isValidEv(void *this_) {
   return (bool)((QMetaEnum*)this_)->isValid();
 }
+
+extern "C"
+void C_ZN9QMetaEnumD2Ev(void *this_) {
+  delete (QMetaEnum*)(this_);
+}
 //  main block end

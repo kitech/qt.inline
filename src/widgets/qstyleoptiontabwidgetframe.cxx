@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:176
 // [-2] void QStyleOptionTabWidgetFrame(int)
 extern "C"
-void* callback_ZN26QStyleOptionTabWidgetFrameC1Ei = 0;
+void* callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN26QStyleOptionTabWidgetFrameC1Ei(void*cbfn)
-{ callback_ZN26QStyleOptionTabWidgetFrameC1Ei = cbfn; }
+{ callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionTabWidgetFrame(int version) : QStyleOptionTabWidgetFrame(version) 
 extern "C"
 void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
   return  new QStyleOptionTabWidgetFrame();
+}
+
+extern "C"
+void C_ZN26QStyleOptionTabWidgetFrameD2Ev(void *this_) {
+  delete (QStyleOptionTabWidgetFrame*)(this_);
 }
 //  main block end

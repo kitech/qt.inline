@@ -100,4 +100,9 @@ void* C_ZN8QSysInfo15machineHostNameEv() {
   auto rv = QSysInfo::machineHostName();
 return new QString(rv);
 }
+
+extern "C"
+void C_ZN8QSysInfoD2Ev(void *this_) {
+  delete (QSysInfo*)(this_);
+}
 //  main block end

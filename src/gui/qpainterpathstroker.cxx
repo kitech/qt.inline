@@ -29,8 +29,8 @@ void* C_ZN19QPainterPathStrokerC2Ev() {
 // /usr/include/qt/QtGui/qpainterpath.h:247
 // [-2] void QPainterPathStroker(const class QPen &)
 extern "C"
-void* C_ZN19QPainterPathStrokerC2ERK4QPen(const QPen & pen) {
-  return  new QPainterPathStroker(pen);
+void* C_ZN19QPainterPathStrokerC2ERK4QPen(QPen* pen) {
+  return  new QPainterPathStroker(*pen);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:248
@@ -134,8 +134,8 @@ qreal C_ZNK19QPainterPathStroker10dashOffsetEv(void *this_) {
 // /usr/include/qt/QtGui/qpainterpath.h:272
 // [8] QPainterPath createStroke(const class QPainterPath &)
 extern "C"
-void* C_ZNK19QPainterPathStroker12createStrokeERK12QPainterPath(void *this_, const QPainterPath & path) {
-  auto rv = ((QPainterPathStroker*)this_)->createStroke(path);
+void* C_ZNK19QPainterPathStroker12createStrokeERK12QPainterPath(void *this_, QPainterPath* path) {
+  auto rv = ((QPainterPathStroker*)this_)->createStroke(*path);
 return new QPainterPath(rv);
 }
 //  main block end

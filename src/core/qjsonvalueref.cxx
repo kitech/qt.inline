@@ -166,8 +166,13 @@ double C_ZNK13QJsonValueRef8toDoubleEd(void *this_, double defaultValue) {
 // /usr/include/qt/QtCore/qjsonvalue.h:204
 // [8] QString toString(const class QString &)
 extern "C"
-void* C_ZNK13QJsonValueRef8toStringERK7QString(void *this_, const QString & defaultValue) {
-  auto rv = ((QJsonValueRef*)this_)->toString(defaultValue);
+void* C_ZNK13QJsonValueRef8toStringERK7QString(void *this_, QString* defaultValue) {
+  auto rv = ((QJsonValueRef*)this_)->toString(*defaultValue);
 return new QString(rv);
+}
+
+extern "C"
+void C_ZN13QJsonValueRefD2Ev(void *this_) {
+  delete (QJsonValueRef*)(this_);
 }
 //  main block end

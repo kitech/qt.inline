@@ -20,8 +20,8 @@ MyQHelpEvent(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) : 
 // /usr/include/qt/QtGui/qevent.h:680
 // [-2] void QHelpEvent(enum QEvent::Type, const class QPoint &, const class QPoint &)
 extern "C"
-void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, const QPoint & pos, const QPoint & globalPos) {
-  return  new QHelpEvent(type, pos, globalPos);
+void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type, QPoint* pos, QPoint* globalPos) {
+  return  new QHelpEvent(type, *pos, *globalPos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:681

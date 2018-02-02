@@ -18,7 +18,12 @@ public:
 // /usr/include/qt/QtWidgets/qstylefactory.h:55
 // [8] QStyle * create(const class QString &)
 extern "C"
-void* C_ZN13QStyleFactory6createERK7QString(const QString & arg0) {
-  return (void*)QStyleFactory::create(arg0);
+void* C_ZN13QStyleFactory6createERK7QString(QString* arg0) {
+  return (void*)QStyleFactory::create(*arg0);
+}
+
+extern "C"
+void C_ZN13QStyleFactoryD2Ev(void *this_) {
+  delete (QStyleFactory*)(this_);
 }
 //  main block end

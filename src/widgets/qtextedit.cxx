@@ -12,198 +12,198 @@
 // /usr/include/qt/QtWidgets/qtextedit.h:273
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN9QTextEdit5eventEP6QEvent = 0;
+void* callback_ZN9QTextEdit5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QTextEdit5eventEP6QEvent = cbfn; }
+{ callback_ZN9QTextEdit5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:274
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN9QTextEdit10timerEventEP11QTimerEvent = 0;
+void* callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN9QTextEdit10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:275
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:276
 // [-2] void keyReleaseEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent = 0;
+void* callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent = cbfn; }
+{ callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:277
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN9QTextEdit11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN9QTextEdit11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:278
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN9QTextEdit10paintEventEP11QPaintEvent = 0;
+void* callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN9QTextEdit10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:279
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:280
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:281
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:282
 // [-2] void mouseDoubleClickEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent = 0;
+void* callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:283
 // [1] bool focusNextPrevChild(_Bool)
 extern "C"
-void* callback_ZN9QTextEdit18focusNextPrevChildEb = 0;
+void* callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit18focusNextPrevChildEb(void*cbfn)
-{ callback_ZN9QTextEdit18focusNextPrevChildEb = cbfn; }
+{ callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:285
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
 extern "C"
-void* callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent = 0;
+void* callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent = cbfn; }
+{ callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:288
 // [-2] void dragEnterEvent(class QDragEnterEvent *)
 extern "C"
-void* callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent = 0;
+void* callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-{ callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent = cbfn; }
+{ callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:289
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
 extern "C"
-void* callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent = 0;
+void* callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-{ callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent = cbfn; }
+{ callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:290
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
 extern "C"
-void* callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent = 0;
+void* callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-{ callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent = cbfn; }
+{ callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:291
 // [-2] void dropEvent(class QDropEvent *)
 extern "C"
-void* callback_ZN9QTextEdit9dropEventEP10QDropEvent = 0;
+void* callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit9dropEventEP10QDropEvent(void*cbfn)
-{ callback_ZN9QTextEdit9dropEventEP10QDropEvent = cbfn; }
+{ callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:293
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN9QTextEdit12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN9QTextEdit12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:294
 // [-2] void focusOutEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent = 0;
+void* callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent = cbfn; }
+{ callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:295
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN9QTextEdit9showEventEP10QShowEvent = 0;
+void* callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN9QTextEdit9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:296
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN9QTextEdit11changeEventEP6QEvent = 0;
+void* callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN9QTextEdit11changeEventEP6QEvent = cbfn; }
+{ callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:298
 // [-2] void wheelEvent(class QWheelEvent *)
 extern "C"
-void* callback_ZN9QTextEdit10wheelEventEP11QWheelEvent = 0;
+void* callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN9QTextEdit10wheelEventEP11QWheelEvent = cbfn; }
+{ callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:301
 // [8] QMimeData * createMimeDataFromSelection()
 extern "C"
-void* callback_ZNK9QTextEdit27createMimeDataFromSelectionEv = 0;
+void* callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr = 0;
 extern "C" void set_callback_ZNK9QTextEdit27createMimeDataFromSelectionEv(void*cbfn)
-{ callback_ZNK9QTextEdit27createMimeDataFromSelectionEv = cbfn; }
+{ callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:302
 // [1] bool canInsertFromMimeData(const class QMimeData *)
 extern "C"
-void* callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData = 0;
+void* callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr = 0;
 extern "C" void set_callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData(void*cbfn)
-{ callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData = cbfn; }
+{ callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:303
 // [-2] void insertFromMimeData(const class QMimeData *)
 extern "C"
-void* callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData = 0;
+void* callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData(void*cbfn)
-{ callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData = cbfn; }
+{ callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:305
 // [-2] void inputMethodEvent(class QInputMethodEvent *)
 extern "C"
-void* callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent = 0;
+void* callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-{ callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent = cbfn; }
+{ callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:309
 // [-2] void scrollContentsBy(int, int)
 extern "C"
-void* callback_ZN9QTextEdit16scrollContentsByEii = 0;
+void* callback_ZN9QTextEdit16scrollContentsByEii_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit16scrollContentsByEii(void*cbfn)
-{ callback_ZN9QTextEdit16scrollContentsByEii = cbfn; }
+{ callback_ZN9QTextEdit16scrollContentsByEii_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:310
 // [-2] void doSetTextCursor(const class QTextCursor &)
 extern "C"
-void* callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor = 0;
+void* callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(void*cbfn)
-{ callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor = cbfn; }
+{ callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:312
 // [-2] void zoomInF(float)
 extern "C"
-void* callback_ZN9QTextEdit7zoomInFEf = 0;
+void* callback_ZN9QTextEdit7zoomInFEf_fnptr = 0;
 extern "C" void set_callback_ZN9QTextEdit7zoomInFEf(void*cbfn)
-{ callback_ZN9QTextEdit7zoomInFEf = cbfn; }
+{ callback_ZN9QTextEdit7zoomInFEf_fnptr = cbfn; }
 
 class MyQTextEdit : public QTextEdit {
 public:
@@ -214,197 +214,225 @@ MyQTextEdit(QWidget * parent) : QTextEdit(parent) {}
 MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN9QTextEdit5eventEP6QEvent != 0) {
-      // callback_ZN9QTextEdit5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QTextEdit5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QTextEdit::event(e);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * e) {
-    if (callback_ZN9QTextEdit10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN9QTextEdit10timerEventEP11QTimerEvent(e);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::timerEvent(e);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * e) {
-    if (callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent(e);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::keyPressEvent(e);
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * e) {
-    if (callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent != 0) {
-      // callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent(e);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::keyReleaseEvent(e);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
-    if (callback_ZN9QTextEdit11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN9QTextEdit11resizeEventEP12QResizeEvent(e);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::resizeEvent(e);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
-    if (callback_ZN9QTextEdit10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN9QTextEdit10paintEventEP11QPaintEvent(e);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::paintEvent(e);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
-    if (callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::mousePressEvent(e);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
-    if (callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::mouseMoveEvent(e);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
-    if (callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::mouseReleaseEvent(e);
   }
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * e) {
-    if (callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent != 0) {
-      // callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent(e);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::mouseDoubleClickEvent(e);
   }
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
-    if (callback_ZN9QTextEdit18focusNextPrevChildEb != 0) {
-      // callback_ZN9QTextEdit18focusNextPrevChildEb(next);
+    auto fnptr = ((bool (*)(void* , bool))(callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , next);
     }
     return QTextEdit::focusNextPrevChild(next);
   }
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * e) {
-    if (callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent != 0) {
-      // callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent(e);
+    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::contextMenuEvent(e);
   }
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * e) {
-    if (callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent != 0) {
-      // callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent(e);
+    auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::dragEnterEvent(e);
   }
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * e) {
-    if (callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent != 0) {
-      // callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent(e);
+    auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::dragLeaveEvent(e);
   }
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * e) {
-    if (callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent != 0) {
-      // callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent(e);
+    auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::dragMoveEvent(e);
   }
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * e) {
-    if (callback_ZN9QTextEdit9dropEventEP10QDropEvent != 0) {
-      // callback_ZN9QTextEdit9dropEventEP10QDropEvent(e);
+    auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::dropEvent(e);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * e) {
-    if (callback_ZN9QTextEdit12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN9QTextEdit12focusInEventEP11QFocusEvent(e);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::focusInEvent(e);
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * e) {
-    if (callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent != 0) {
-      // callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent(e);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::focusOutEvent(e);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    if (callback_ZN9QTextEdit9showEventEP10QShowEvent != 0) {
-      // callback_ZN9QTextEdit9showEventEP10QShowEvent(arg0);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTextEdit::showEvent(arg0);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
-    if (callback_ZN9QTextEdit11changeEventEP6QEvent != 0) {
-      // callback_ZN9QTextEdit11changeEventEP6QEvent(e);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::changeEvent(e);
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * e) {
-    if (callback_ZN9QTextEdit10wheelEventEP11QWheelEvent != 0) {
-      // callback_ZN9QTextEdit10wheelEventEP11QWheelEvent(e);
+    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QTextEdit::wheelEvent(e);
   }
 // QMimeData * createMimeDataFromSelection()
   virtual QMimeData * createMimeDataFromSelection() {
-    if (callback_ZNK9QTextEdit27createMimeDataFromSelectionEv != 0) {
-      // callback_ZNK9QTextEdit27createMimeDataFromSelectionEv();
+    auto fnptr = ((QMimeData * (*)(void* ))(callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QTextEdit::createMimeDataFromSelection();
   }
 // bool canInsertFromMimeData(const class QMimeData *)
   virtual bool canInsertFromMimeData(const QMimeData * source) {
-    if (callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData != 0) {
-      // callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData(source);
+    auto fnptr = ((bool (*)(void* , const QMimeData *))(callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , source);
     }
     return QTextEdit::canInsertFromMimeData(source);
   }
 // void insertFromMimeData(const class QMimeData *)
   virtual void insertFromMimeData(const QMimeData * source) {
-    if (callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData != 0) {
-      // callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData(source);
+    auto fnptr = ((void (*)(void* , const QMimeData *))(callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , source);
     }
     QTextEdit::insertFromMimeData(source);
   }
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
-    if (callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent != 0) {
-      // callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent(arg0);
+    auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTextEdit::inputMethodEvent(arg0);
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    if (callback_ZN9QTextEdit16scrollContentsByEii != 0) {
-      // callback_ZN9QTextEdit16scrollContentsByEii(dx, dy);
+    auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTextEdit16scrollContentsByEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , dx, dy);
     }
     QTextEdit::scrollContentsBy(dx, dy);
   }
 // void doSetTextCursor(const class QTextCursor &)
   virtual void doSetTextCursor(const QTextCursor & cursor) {
-    if (callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor != 0) {
-      // callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(cursor);
+    auto fnptr = ((void (*)(void* , QTextCursor*))(callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QTextCursor*)&cursor);
     }
     QTextEdit::doSetTextCursor(cursor);
   }
 // void zoomInF(float)
   virtual void zoomInF(float range) {
-    if (callback_ZN9QTextEdit7zoomInFEf != 0) {
-      // callback_ZN9QTextEdit7zoomInFEf(range);
+    auto fnptr = ((void (*)(void* , float))(callback_ZN9QTextEdit7zoomInFEf_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , range);
     }
     QTextEdit::zoomInF(range);
   }
@@ -429,9 +457,9 @@ void* C_ZN9QTextEditC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qtextedit.h:106
 // [-2] void QTextEdit(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QTextEditC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+void* C_ZN9QTextEditC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQTextEdit*)(0);
-  return  new MyQTextEdit(text, parent);
+  return  new MyQTextEdit(*text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:107
@@ -458,8 +486,8 @@ void* C_ZNK9QTextEdit8documentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:112
 // [-2] void setPlaceholderText(const class QString &)
 extern "C"
-void C_ZN9QTextEdit18setPlaceholderTextERK7QString(void *this_, const QString & placeholderText) {
-  ((QTextEdit*)this_)->setPlaceholderText(placeholderText);
+void C_ZN9QTextEdit18setPlaceholderTextERK7QString(void *this_, QString* placeholderText) {
+  ((QTextEdit*)this_)->setPlaceholderText(*placeholderText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:113
@@ -473,8 +501,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtextedit.h:115
 // [-2] void setTextCursor(const class QTextCursor &)
 extern "C"
-void C_ZN9QTextEdit13setTextCursorERK11QTextCursor(void *this_, const QTextCursor & cursor) {
-  ((QTextEdit*)this_)->setTextCursor(cursor);
+void C_ZN9QTextEdit13setTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
+  ((QTextEdit*)this_)->setTextCursor(*cursor);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:116
@@ -583,15 +611,15 @@ Qt::Alignment C_ZNK9QTextEdit9alignmentEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:134
 // [-2] void mergeCurrentCharFormat(const class QTextCharFormat &)
 extern "C"
-void C_ZN9QTextEdit22mergeCurrentCharFormatERK15QTextCharFormat(void *this_, const QTextCharFormat & modifier) {
-  ((QTextEdit*)this_)->mergeCurrentCharFormat(modifier);
+void C_ZN9QTextEdit22mergeCurrentCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* modifier) {
+  ((QTextEdit*)this_)->mergeCurrentCharFormat(*modifier);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:136
 // [-2] void setCurrentCharFormat(const class QTextCharFormat &)
 extern "C"
-void C_ZN9QTextEdit20setCurrentCharFormatERK15QTextCharFormat(void *this_, const QTextCharFormat & format) {
-  ((QTextEdit*)this_)->setCurrentCharFormat(format);
+void C_ZN9QTextEdit20setCurrentCharFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
+  ((QTextEdit*)this_)->setCurrentCharFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:137
@@ -627,8 +655,8 @@ void C_ZN9QTextEdit18setTabChangesFocusEb(void *this_, bool b) {
 // /usr/include/qt/QtWidgets/qtextedit.h:145
 // [-2] void setDocumentTitle(const class QString &)
 extern "C"
-void C_ZN9QTextEdit16setDocumentTitleERK7QString(void *this_, const QString & title) {
-  ((QTextEdit*)this_)->setDocumentTitle(title);
+void C_ZN9QTextEdit16setDocumentTitleERK7QString(void *this_, QString* title) {
+  ((QTextEdit*)this_)->setDocumentTitle(*title);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:147
@@ -698,15 +726,15 @@ void C_ZN9QTextEdit15setWordWrapModeEN11QTextOption8WrapModeE(void *this_, QText
 // /usr/include/qt/QtWidgets/qtextedit.h:164
 // [1] bool find(const class QString &, class QTextDocument::FindFlags)
 extern "C"
-bool C_ZN9QTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(void *this_, const QString & exp, QFlags<QTextDocument::FindFlag> options) {
-  return (bool)((QTextEdit*)this_)->find(exp, options);
+bool C_ZN9QTextEdit4findERK7QString6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QString* exp, QFlags<QTextDocument::FindFlag> options) {
+  return (bool)((QTextEdit*)this_)->find(*exp, options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:166
 // [1] bool find(const class QRegExp &, class QTextDocument::FindFlags)
 extern "C"
-bool C_ZN9QTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(void *this_, const QRegExp & exp, QFlags<QTextDocument::FindFlag> options) {
-  return (bool)((QTextEdit*)this_)->find(exp, options);
+bool C_ZN9QTextEdit4findERK7QRegExp6QFlagsIN13QTextDocument8FindFlagEE(void *this_, QRegExp* exp, QFlags<QTextDocument::FindFlag> options) {
+  return (bool)((QTextEdit*)this_)->find(*exp, options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:169
@@ -735,8 +763,8 @@ void C_ZN9QTextEdit19ensureCursorVisibleEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:176
 // [16] QVariant loadResource(int, const class QUrl &)
 extern "C"
-void* C_ZN9QTextEdit12loadResourceEiRK4QUrl(void *this_, int type, const QUrl & name) {
-  auto rv = ((QTextEdit*)this_)->loadResource(type, name);
+void* C_ZN9QTextEdit12loadResourceEiRK4QUrl(void *this_, int type, QUrl* name) {
+  auto rv = ((QTextEdit*)this_)->loadResource(type, *name);
 return new QVariant(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -750,23 +778,23 @@ void* C_ZN9QTextEdit25createStandardContextMenuEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:179
 // [8] QMenu * createStandardContextMenu(const class QPoint &)
 extern "C"
-void* C_ZN9QTextEdit25createStandardContextMenuERK6QPoint(void *this_, const QPoint & position) {
-  return (void*)((QTextEdit*)this_)->createStandardContextMenu(position);
+void* C_ZN9QTextEdit25createStandardContextMenuERK6QPoint(void *this_, QPoint* position) {
+  return (void*)((QTextEdit*)this_)->createStandardContextMenu(*position);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:182
 // [8] QTextCursor cursorForPosition(const class QPoint &)
 extern "C"
-void* C_ZNK9QTextEdit17cursorForPositionERK6QPoint(void *this_, const QPoint & pos) {
-  auto rv = ((QTextEdit*)this_)->cursorForPosition(pos);
+void* C_ZNK9QTextEdit17cursorForPositionERK6QPoint(void *this_, QPoint* pos) {
+  auto rv = ((QTextEdit*)this_)->cursorForPosition(*pos);
 return new QTextCursor(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:183
 // [16] QRect cursorRect(const class QTextCursor &)
 extern "C"
-void* C_ZNK9QTextEdit10cursorRectERK11QTextCursor(void *this_, const QTextCursor & cursor) {
-  auto rv = ((QTextEdit*)this_)->cursorRect(cursor);
+void* C_ZNK9QTextEdit10cursorRectERK11QTextCursor(void *this_, QTextCursor* cursor) {
+  auto rv = ((QTextEdit*)this_)->cursorRect(*cursor);
 return new QRect(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -781,8 +809,8 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qtextedit.h:186
 // [8] QString anchorAt(const class QPoint &)
 extern "C"
-void* C_ZNK9QTextEdit8anchorAtERK6QPoint(void *this_, const QPoint & pos) {
-  auto rv = ((QTextEdit*)this_)->anchorAt(pos);
+void* C_ZNK9QTextEdit8anchorAtERK6QPoint(void *this_, QPoint* pos) {
+  auto rv = ((QTextEdit*)this_)->anchorAt(*pos);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -903,8 +931,8 @@ void C_ZN9QTextEdit16setFontPointSizeEd(void *this_, qreal s) {
 // /usr/include/qt/QtWidgets/qtextedit.h:224
 // [-2] void setFontFamily(const class QString &)
 extern "C"
-void C_ZN9QTextEdit13setFontFamilyERK7QString(void *this_, const QString & fontFamily) {
-  ((QTextEdit*)this_)->setFontFamily(fontFamily);
+void C_ZN9QTextEdit13setFontFamilyERK7QString(void *this_, QString* fontFamily) {
+  ((QTextEdit*)this_)->setFontFamily(*fontFamily);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:225
@@ -931,43 +959,43 @@ void C_ZN9QTextEdit13setFontItalicEb(void *this_, bool b) {
 // /usr/include/qt/QtWidgets/qtextedit.h:228
 // [-2] void setTextColor(const class QColor &)
 extern "C"
-void C_ZN9QTextEdit12setTextColorERK6QColor(void *this_, const QColor & c) {
-  ((QTextEdit*)this_)->setTextColor(c);
+void C_ZN9QTextEdit12setTextColorERK6QColor(void *this_, QColor* c) {
+  ((QTextEdit*)this_)->setTextColor(*c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:229
 // [-2] void setTextBackgroundColor(const class QColor &)
 extern "C"
-void C_ZN9QTextEdit22setTextBackgroundColorERK6QColor(void *this_, const QColor & c) {
-  ((QTextEdit*)this_)->setTextBackgroundColor(c);
+void C_ZN9QTextEdit22setTextBackgroundColorERK6QColor(void *this_, QColor* c) {
+  ((QTextEdit*)this_)->setTextBackgroundColor(*c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:230
 // [-2] void setCurrentFont(const class QFont &)
 extern "C"
-void C_ZN9QTextEdit14setCurrentFontERK5QFont(void *this_, const QFont & f) {
-  ((QTextEdit*)this_)->setCurrentFont(f);
+void C_ZN9QTextEdit14setCurrentFontERK5QFont(void *this_, QFont* f) {
+  ((QTextEdit*)this_)->setCurrentFont(*f);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:233
 // [-2] void setPlainText(const class QString &)
 extern "C"
-void C_ZN9QTextEdit12setPlainTextERK7QString(void *this_, const QString & text) {
-  ((QTextEdit*)this_)->setPlainText(text);
+void C_ZN9QTextEdit12setPlainTextERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->setPlainText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:235
 // [-2] void setHtml(const class QString &)
 extern "C"
-void C_ZN9QTextEdit7setHtmlERK7QString(void *this_, const QString & text) {
-  ((QTextEdit*)this_)->setHtml(text);
+void C_ZN9QTextEdit7setHtmlERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->setHtml(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:237
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN9QTextEdit7setTextERK7QString(void *this_, const QString & text) {
-  ((QTextEdit*)this_)->setText(text);
+void C_ZN9QTextEdit7setTextERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:240
@@ -1022,22 +1050,22 @@ void C_ZN9QTextEdit9selectAllEv(void *this_) {
 // /usr/include/qt/QtWidgets/qtextedit.h:251
 // [-2] void insertPlainText(const class QString &)
 extern "C"
-void C_ZN9QTextEdit15insertPlainTextERK7QString(void *this_, const QString & text) {
-  ((QTextEdit*)this_)->insertPlainText(text);
+void C_ZN9QTextEdit15insertPlainTextERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->insertPlainText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:253
 // [-2] void insertHtml(const class QString &)
 extern "C"
-void C_ZN9QTextEdit10insertHtmlERK7QString(void *this_, const QString & text) {
-  ((QTextEdit*)this_)->insertHtml(text);
+void C_ZN9QTextEdit10insertHtmlERK7QString(void *this_, QString* text) {
+  ((QTextEdit*)this_)->insertHtml(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:258
 // [-2] void scrollToAnchor(const class QString &)
 extern "C"
-void C_ZN9QTextEdit14scrollToAnchorERK7QString(void *this_, const QString & name) {
-  ((QTextEdit*)this_)->scrollToAnchor(name);
+void C_ZN9QTextEdit14scrollToAnchorERK7QString(void *this_, QString* name) {
+  ((QTextEdit*)this_)->scrollToAnchor(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:260
@@ -1078,8 +1106,8 @@ void C_ZN9QTextEdit13redoAvailableEb(void *this_, bool b) {
 // /usr/include/qt/QtWidgets/qtextedit.h:267
 // [-2] void currentCharFormatChanged(const class QTextCharFormat &)
 extern "C"
-void C_ZN9QTextEdit24currentCharFormatChangedERK15QTextCharFormat(void *this_, const QTextCharFormat & format) {
-  ((QTextEdit*)this_)->currentCharFormatChanged(format);
+void C_ZN9QTextEdit24currentCharFormatChangedERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
+  ((QTextEdit*)this_)->currentCharFormatChanged(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:268

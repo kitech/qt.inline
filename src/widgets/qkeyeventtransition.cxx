@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:69
 // [-2] void onTransition(class QEvent *)
 extern "C"
-void* callback_ZN19QKeyEventTransition12onTransitionEP6QEvent = 0;
+void* callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN19QKeyEventTransition12onTransitionEP6QEvent = cbfn; }
+{ callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h:70
 // [1] bool eventTest(class QEvent *)
 extern "C"
-void* callback_ZN19QKeyEventTransition9eventTestEP6QEvent = 0;
+void* callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN19QKeyEventTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN19QKeyEventTransition9eventTestEP6QEvent = cbfn; }
+{ callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQKeyEventTransition : public QKeyEventTransition {
 public:
@@ -32,15 +32,17 @@ MyQKeyEventTransition(QState * sourceState) : QKeyEventTransition(sourceState) {
 MyQKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sourceState) : QKeyEventTransition(object, type, key, sourceState) {}
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    if (callback_ZN19QKeyEventTransition12onTransitionEP6QEvent != 0) {
-      // callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QKeyEventTransition::onTransition(event);
   }
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    if (callback_ZN19QKeyEventTransition9eventTestEP6QEvent != 0) {
-      // callback_ZN19QKeyEventTransition9eventTestEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QKeyEventTransition::eventTest(event);
   }

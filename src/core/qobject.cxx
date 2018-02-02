@@ -12,65 +12,65 @@
 // /usr/include/qt/QtCore/qobject.h:422
 // [8] QObject * sender()
 extern "C"
-void* callback_ZNK7QObject6senderEv = 0;
+void* callback_ZNK7QObject6senderEv_fnptr = 0;
 extern "C" void set_callback_ZNK7QObject6senderEv(void*cbfn)
-{ callback_ZNK7QObject6senderEv = cbfn; }
+{ callback_ZNK7QObject6senderEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:423
 // [4] int senderSignalIndex()
 extern "C"
-void* callback_ZNK7QObject17senderSignalIndexEv = 0;
+void* callback_ZNK7QObject17senderSignalIndexEv_fnptr = 0;
 extern "C" void set_callback_ZNK7QObject17senderSignalIndexEv(void*cbfn)
-{ callback_ZNK7QObject17senderSignalIndexEv = cbfn; }
+{ callback_ZNK7QObject17senderSignalIndexEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:424
 // [4] int receivers(const char *)
 extern "C"
-void* callback_ZNK7QObject9receiversEPKc = 0;
+void* callback_ZNK7QObject9receiversEPKc_fnptr = 0;
 extern "C" void set_callback_ZNK7QObject9receiversEPKc(void*cbfn)
-{ callback_ZNK7QObject9receiversEPKc = cbfn; }
+{ callback_ZNK7QObject9receiversEPKc_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:425
 // [1] bool isSignalConnected(const class QMetaMethod &)
 extern "C"
-void* callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod = 0;
+void* callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void*cbfn)
-{ callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod = cbfn; }
+{ callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:427
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN7QObject10timerEventEP11QTimerEvent = 0;
+void* callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QObject10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN7QObject10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:428
 // [-2] void childEvent(class QChildEvent *)
 extern "C"
-void* callback_ZN7QObject10childEventEP11QChildEvent = 0;
+void* callback_ZN7QObject10childEventEP11QChildEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QObject10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN7QObject10childEventEP11QChildEvent = cbfn; }
+{ callback_ZN7QObject10childEventEP11QChildEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:429
 // [-2] void customEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QObject11customEventEP6QEvent = 0;
+void* callback_ZN7QObject11customEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QObject11customEventEP6QEvent(void*cbfn)
-{ callback_ZN7QObject11customEventEP6QEvent = cbfn; }
+{ callback_ZN7QObject11customEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:431
 // [-2] void connectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN7QObject13connectNotifyERK11QMetaMethod = 0;
+void* callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN7QObject13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QObject13connectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:432
 // [-2] void disconnectNotify(const class QMetaMethod &)
 extern "C"
-void* callback_ZN7QObject16disconnectNotifyERK11QMetaMethod = 0;
+void* callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = 0;
 extern "C" void set_callback_ZN7QObject16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QObject16disconnectNotifyERK11QMetaMethod = cbfn; }
+{ callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
 
 class MyQObject : public QObject {
 public:
@@ -79,64 +79,73 @@ public:
 MyQObject(QObject * parent) : QObject(parent) {}
 // QObject * sender()
   virtual QObject * sender() {
-    if (callback_ZNK7QObject6senderEv != 0) {
-      // callback_ZNK7QObject6senderEv();
+    auto fnptr = ((QObject * (*)(void* ))(callback_ZNK7QObject6senderEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QObject::sender();
   }
 // int senderSignalIndex()
   virtual int senderSignalIndex() {
-    if (callback_ZNK7QObject17senderSignalIndexEv != 0) {
-      // callback_ZNK7QObject17senderSignalIndexEv();
+    auto fnptr = ((int (*)(void* ))(callback_ZNK7QObject17senderSignalIndexEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QObject::senderSignalIndex();
   }
 // int receivers(const char *)
   virtual int receivers(const char * signal) {
-    if (callback_ZNK7QObject9receiversEPKc != 0) {
-      // callback_ZNK7QObject9receiversEPKc(signal);
+    auto fnptr = ((int (*)(void* , const char *))(callback_ZNK7QObject9receiversEPKc_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , signal);
     }
     return QObject::receivers(signal);
   }
 // bool isSignalConnected(const class QMetaMethod &)
   virtual bool isSignalConnected(const QMetaMethod & signal) {
-    if (callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod != 0) {
-      // callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod(signal);
+    auto fnptr = ((bool (*)(void* , QMetaMethod*))(callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&signal);
     }
     return QObject::isSignalConnected(signal);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    if (callback_ZN7QObject10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN7QObject10timerEventEP11QTimerEvent(event);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QObject::timerEvent(event);
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
-    if (callback_ZN7QObject10childEventEP11QChildEvent != 0) {
-      // callback_ZN7QObject10childEventEP11QChildEvent(event);
+    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QObject10childEventEP11QChildEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QObject::childEvent(event);
   }
 // void customEvent(class QEvent *)
   virtual void customEvent(QEvent * event) {
-    if (callback_ZN7QObject11customEventEP6QEvent != 0) {
-      // callback_ZN7QObject11customEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QObject11customEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QObject::customEvent(event);
   }
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
-    if (callback_ZN7QObject13connectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN7QObject13connectNotifyERK11QMetaMethod(signal);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&signal);
     }
     QObject::connectNotify(signal);
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
-    if (callback_ZN7QObject16disconnectNotifyERK11QMetaMethod != 0) {
-      // callback_ZN7QObject16disconnectNotifyERK11QMetaMethod(signal);
+    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QMetaMethod*)&signal);
     }
     QObject::disconnectNotify(signal);
   }
@@ -190,8 +199,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qobject.h:145
 // [-2] void setObjectName(const class QString &)
 extern "C"
-void C_ZN7QObject13setObjectNameERK7QString(void *this_, const QString & name) {
-  ((QObject*)this_)->setObjectName(name);
+void C_ZN7QObject13setObjectNameERK7QString(void *this_, QString* name) {
+  ((QObject*)this_)->setObjectName(*name);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:147
@@ -281,8 +290,8 @@ QMetaObject::Connection C_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE(
 // /usr/include/qt/QtCore/qobject.h:216
 // [8] QMetaObject::Connection connect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &, Qt::ConnectionType)
 extern "C"
-QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, const QMetaMethod & signal, const QObject * receiver, const QMetaMethod & method, Qt::ConnectionType type) {
-  return (QMetaObject::Connection)QObject::connect(sender, signal, receiver, method, type);
+QMetaObject::Connection C_ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* method, Qt::ConnectionType type) {
+  return (QMetaObject::Connection)QObject::connect(sender, *signal, receiver, *method, type);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:220
@@ -302,8 +311,8 @@ bool C_ZN7QObject10disconnectEPKS_PKcS1_S3_(const QObject * sender, const char *
 // /usr/include/qt/QtCore/qobject.h:344
 // [1] bool disconnect(const class QObject *, const class QMetaMethod &, const class QObject *, const class QMetaMethod &)
 extern "C"
-bool C_ZN7QObject10disconnectEPKS_RK11QMetaMethodS1_S4_(const QObject * sender, const QMetaMethod & signal, const QObject * receiver, const QMetaMethod & member) {
-  return (bool)QObject::disconnect(sender, signal, receiver, member);
+bool C_ZN7QObject10disconnectEPKS_RK11QMetaMethodS1_S4_(const QObject * sender, QMetaMethod* signal, const QObject * receiver, QMetaMethod* member) {
+  return (bool)QObject::disconnect(sender, *signal, receiver, *member);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:346
@@ -351,8 +360,8 @@ void C_ZNK7QObject14dumpObjectInfoEv(void *this_) {
 // /usr/include/qt/QtCore/qobject.h:397
 // [1] bool setProperty(const char *, const class QVariant &)
 extern "C"
-bool C_ZN7QObject11setPropertyEPKcRK8QVariant(void *this_, const char * name, const QVariant & value) {
-  return (bool)((QObject*)this_)->setProperty(name, value);
+bool C_ZN7QObject11setPropertyEPKcRK8QVariant(void *this_, const char * name, QVariant* value) {
+  return (bool)((QObject*)this_)->setProperty(name, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:398

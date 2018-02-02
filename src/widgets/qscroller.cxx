@@ -76,8 +76,8 @@ QScroller::State C_ZNK9QScroller5stateEv(void *this_) {
 // /usr/include/qt/QtWidgets/qscroller.h:109
 // [1] bool handleInput(enum QScroller::Input, const class QPointF &, qint64)
 extern "C"
-bool C_ZN9QScroller11handleInputENS_5InputERK7QPointFx(void *this_, QScroller::Input input, const QPointF & position, qint64 timestamp) {
-  return (bool)((QScroller*)this_)->handleInput(input, position, timestamp);
+bool C_ZN9QScroller11handleInputENS_5InputERK7QPointFx(void *this_, QScroller::Input input, QPointF* position, qint64 timestamp) {
+  return (bool)((QScroller*)this_)->handleInput(input, *position, timestamp);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:111
@@ -136,36 +136,36 @@ void C_ZN9QScroller17setSnapPositionsYEdd(void *this_, qreal first, qreal interv
 // /usr/include/qt/QtWidgets/qscroller.h:124
 // [-2] void setScrollerProperties(const class QScrollerProperties &)
 extern "C"
-void C_ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties(void *this_, const QScrollerProperties & prop) {
-  ((QScroller*)this_)->setScrollerProperties(prop);
+void C_ZN9QScroller21setScrollerPropertiesERK19QScrollerProperties(void *this_, QScrollerProperties* prop) {
+  ((QScroller*)this_)->setScrollerProperties(*prop);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:125
 // [-2] void scrollTo(const class QPointF &)
 extern "C"
-void C_ZN9QScroller8scrollToERK7QPointF(void *this_, const QPointF & pos) {
-  ((QScroller*)this_)->scrollTo(pos);
+void C_ZN9QScroller8scrollToERK7QPointF(void *this_, QPointF* pos) {
+  ((QScroller*)this_)->scrollTo(*pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:126
 // [-2] void scrollTo(const class QPointF &, int)
 extern "C"
-void C_ZN9QScroller8scrollToERK7QPointFi(void *this_, const QPointF & pos, int scrollTime) {
-  ((QScroller*)this_)->scrollTo(pos, scrollTime);
+void C_ZN9QScroller8scrollToERK7QPointFi(void *this_, QPointF* pos, int scrollTime) {
+  ((QScroller*)this_)->scrollTo(*pos, scrollTime);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:127
 // [-2] void ensureVisible(const class QRectF &, qreal, qreal)
 extern "C"
-void C_ZN9QScroller13ensureVisibleERK6QRectFdd(void *this_, const QRectF & rect, qreal xmargin, qreal ymargin) {
-  ((QScroller*)this_)->ensureVisible(rect, xmargin, ymargin);
+void C_ZN9QScroller13ensureVisibleERK6QRectFdd(void *this_, QRectF* rect, qreal xmargin, qreal ymargin) {
+  ((QScroller*)this_)->ensureVisible(*rect, xmargin, ymargin);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:128
 // [-2] void ensureVisible(const class QRectF &, qreal, qreal, int)
 extern "C"
-void C_ZN9QScroller13ensureVisibleERK6QRectFddi(void *this_, const QRectF & rect, qreal xmargin, qreal ymargin, int scrollTime) {
-  ((QScroller*)this_)->ensureVisible(rect, xmargin, ymargin, scrollTime);
+void C_ZN9QScroller13ensureVisibleERK6QRectFddi(void *this_, QRectF* rect, qreal xmargin, qreal ymargin, int scrollTime) {
+  ((QScroller*)this_)->ensureVisible(*rect, xmargin, ymargin, scrollTime);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscroller.h:129
@@ -185,7 +185,7 @@ void C_ZN9QScroller12stateChangedENS_5StateE(void *this_, QScroller::State newst
 // /usr/include/qt/QtWidgets/qscroller.h:133
 // [-2] void scrollerPropertiesChanged(const class QScrollerProperties &)
 extern "C"
-void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *this_, const QScrollerProperties & arg0) {
-  ((QScroller*)this_)->scrollerPropertiesChanged(arg0);
+void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *this_, QScrollerProperties* arg0) {
+  ((QScroller*)this_)->scrollerPropertiesChanged(*arg0);
 }
 //  main block end

@@ -44,4 +44,9 @@ extern "C"
 void* C_ZNK14QMetaClassInfo19enclosingMetaObjectEv(void *this_) {
   return (void*)((QMetaClassInfo*)this_)->enclosingMetaObject();
 }
+
+extern "C"
+void C_ZN14QMetaClassInfoD2Ev(void *this_) {
+  delete (QMetaClassInfo*)(this_);
+}
 //  main block end

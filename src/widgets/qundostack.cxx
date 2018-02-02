@@ -107,15 +107,15 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qundostack.h:111
 // [8] QAction * createUndoAction(class QObject *, const class QString &)
 extern "C"
-void* C_ZNK10QUndoStack16createUndoActionEP7QObjectRK7QString(void *this_, QObject * parent, const QString & prefix) {
-  return (void*)((QUndoStack*)this_)->createUndoAction(parent, prefix);
+void* C_ZNK10QUndoStack16createUndoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
+  return (void*)((QUndoStack*)this_)->createUndoAction(parent, *prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:113
 // [8] QAction * createRedoAction(class QObject *, const class QString &)
 extern "C"
-void* C_ZNK10QUndoStack16createRedoActionEP7QObjectRK7QString(void *this_, QObject * parent, const QString & prefix) {
-  return (void*)((QUndoStack*)this_)->createRedoAction(parent, prefix);
+void* C_ZNK10QUndoStack16createRedoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
+  return (void*)((QUndoStack*)this_)->createRedoAction(parent, *prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:117
@@ -142,8 +142,8 @@ int C_ZNK10QUndoStack10cleanIndexEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundostack.h:121
 // [-2] void beginMacro(const class QString &)
 extern "C"
-void C_ZN10QUndoStack10beginMacroERK7QString(void *this_, const QString & text) {
-  ((QUndoStack*)this_)->beginMacro(text);
+void C_ZN10QUndoStack10beginMacroERK7QString(void *this_, QString* text) {
+  ((QUndoStack*)this_)->beginMacro(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:122
@@ -247,14 +247,14 @@ void C_ZN10QUndoStack14canRedoChangedEb(void *this_, bool canRedo) {
 // /usr/include/qt/QtWidgets/qundostack.h:142
 // [-2] void undoTextChanged(const class QString &)
 extern "C"
-void C_ZN10QUndoStack15undoTextChangedERK7QString(void *this_, const QString & undoText) {
-  ((QUndoStack*)this_)->undoTextChanged(undoText);
+void C_ZN10QUndoStack15undoTextChangedERK7QString(void *this_, QString* undoText) {
+  ((QUndoStack*)this_)->undoTextChanged(*undoText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:143
 // [-2] void redoTextChanged(const class QString &)
 extern "C"
-void C_ZN10QUndoStack15redoTextChangedERK7QString(void *this_, const QString & redoText) {
-  ((QUndoStack*)this_)->redoTextChanged(redoText);
+void C_ZN10QUndoStack15redoTextChangedERK7QString(void *this_, QString* redoText) {
+  ((QUndoStack*)this_)->redoTextChanged(*redoText);
 }
 //  main block end

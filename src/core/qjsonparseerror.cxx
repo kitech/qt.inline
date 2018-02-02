@@ -22,4 +22,9 @@ void* C_ZNK15QJsonParseError11errorStringEv(void *this_) {
   auto rv = ((QJsonParseError*)this_)->errorString();
 return new QString(rv);
 }
+
+extern "C"
+void C_ZN15QJsonParseErrorD2Ev(void *this_) {
+  delete (QJsonParseError*)(this_);
+}
 //  main block end

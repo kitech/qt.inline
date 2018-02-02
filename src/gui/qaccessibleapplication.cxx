@@ -87,4 +87,9 @@ extern "C"
 QAccessible::State C_ZNK22QAccessibleApplication5stateEv(void *this_) {
   return (QAccessible::State)((QAccessibleApplication*)this_)->state();
 }
+
+extern "C"
+void C_ZN22QAccessibleApplicationD2Ev(void *this_) {
+  delete (QAccessibleApplication*)(this_);
+}
 //  main block end

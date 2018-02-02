@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:244
 // [-2] void draw(class QPainter *)
 extern "C"
-void* callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter = 0;
+void* callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter = cbfn; }
+{ callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsDropShadowEffect : public QGraphicsDropShadowEffect {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsDropShadowEffect(QObject * parent) : QGraphicsDropShadowEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    if (callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter != 0) {
-      // callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN25QGraphicsDropShadowEffect4drawEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsDropShadowEffect::draw(painter);
   }
@@ -56,8 +57,8 @@ void C_ZN25QGraphicsDropShadowEffectD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:208
 // [32] QRectF boundingRectFor(const class QRectF &)
 extern "C"
-void* C_ZNK25QGraphicsDropShadowEffect15boundingRectForERK6QRectF(void *this_, const QRectF & rect) {
-  auto rv = ((QGraphicsDropShadowEffect*)this_)->boundingRectFor(rect);
+void* C_ZNK25QGraphicsDropShadowEffect15boundingRectForERK6QRectF(void *this_, QRectF* rect) {
+  auto rv = ((QGraphicsDropShadowEffect*)this_)->boundingRectFor(*rect);
 return new QRectF(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -101,8 +102,8 @@ return new QColor(rv);
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:221
 // [-2] void setOffset(const class QPointF &)
 extern "C"
-void C_ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF(void *this_, const QPointF & ofs) {
-  ((QGraphicsDropShadowEffect*)this_)->setOffset(ofs);
+void C_ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF(void *this_, QPointF* ofs) {
+  ((QGraphicsDropShadowEffect*)this_)->setOffset(*ofs);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:223
@@ -143,15 +144,15 @@ void C_ZN25QGraphicsDropShadowEffect13setBlurRadiusEd(void *this_, qreal blurRad
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:236
 // [-2] void setColor(const class QColor &)
 extern "C"
-void C_ZN25QGraphicsDropShadowEffect8setColorERK6QColor(void *this_, const QColor & color) {
-  ((QGraphicsDropShadowEffect*)this_)->setColor(color);
+void C_ZN25QGraphicsDropShadowEffect8setColorERK6QColor(void *this_, QColor* color) {
+  ((QGraphicsDropShadowEffect*)this_)->setColor(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:239
 // [-2] void offsetChanged(const class QPointF &)
 extern "C"
-void C_ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(void *this_, const QPointF & offset) {
-  ((QGraphicsDropShadowEffect*)this_)->offsetChanged(offset);
+void C_ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF(void *this_, QPointF* offset) {
+  ((QGraphicsDropShadowEffect*)this_)->offsetChanged(*offset);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:240
@@ -164,7 +165,7 @@ void C_ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd(void *this_, qreal blu
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:241
 // [-2] void colorChanged(const class QColor &)
 extern "C"
-void C_ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(void *this_, const QColor & color) {
-  ((QGraphicsDropShadowEffect*)this_)->colorChanged(color);
+void C_ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(void *this_, QColor* color) {
+  ((QGraphicsDropShadowEffect*)this_)->colorChanged(*color);
 }
 //  main block end

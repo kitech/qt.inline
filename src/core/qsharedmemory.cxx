@@ -36,8 +36,8 @@ void* C_ZN13QSharedMemoryC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtCore/qsharedmemory.h:78
 // [-2] void QSharedMemory(const class QString &, class QObject *)
 extern "C"
-void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(const QString & key, QObject * parent) {
-  return  new QSharedMemory(key, parent);
+void* C_ZN13QSharedMemoryC2ERK7QStringP7QObject(QString* key, QObject * parent) {
+  return  new QSharedMemory(*key, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:79
@@ -50,8 +50,8 @@ void C_ZN13QSharedMemoryD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qsharedmemory.h:81
 // [-2] void setKey(const class QString &)
 extern "C"
-void C_ZN13QSharedMemory6setKeyERK7QString(void *this_, const QString & key) {
-  ((QSharedMemory*)this_)->setKey(key);
+void C_ZN13QSharedMemory6setKeyERK7QString(void *this_, QString* key) {
+  ((QSharedMemory*)this_)->setKey(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:82
@@ -65,8 +65,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qsharedmemory.h:83
 // [-2] void setNativeKey(const class QString &)
 extern "C"
-void C_ZN13QSharedMemory12setNativeKeyERK7QString(void *this_, const QString & key) {
-  ((QSharedMemory*)this_)->setNativeKey(key);
+void C_ZN13QSharedMemory12setNativeKeyERK7QString(void *this_, QString* key) {
+  ((QSharedMemory*)this_)->setNativeKey(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedmemory.h:84

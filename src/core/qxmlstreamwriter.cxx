@@ -124,85 +124,85 @@ int C_ZNK16QXmlStreamWriter20autoFormattingIndentEv(void *this_) {
 // /usr/include/qt/QtCore/qxmlstream.h:493
 // [-2] void writeAttribute(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter14writeAttributeERK7QStringS2_(void *this_, const QString & qualifiedName, const QString & value) {
-  ((QXmlStreamWriter*)this_)->writeAttribute(qualifiedName, value);
+void C_ZN16QXmlStreamWriter14writeAttributeERK7QStringS2_(void *this_, QString* qualifiedName, QString* value) {
+  ((QXmlStreamWriter*)this_)->writeAttribute(*qualifiedName, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:494
 // [-2] void writeAttribute(const class QString &, const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter14writeAttributeERK7QStringS2_S2_(void *this_, const QString & namespaceUri, const QString & name, const QString & value) {
-  ((QXmlStreamWriter*)this_)->writeAttribute(namespaceUri, name, value);
+void C_ZN16QXmlStreamWriter14writeAttributeERK7QStringS2_S2_(void *this_, QString* namespaceUri, QString* name, QString* value) {
+  ((QXmlStreamWriter*)this_)->writeAttribute(*namespaceUri, *name, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:495
 // [-2] void writeAttribute(const class QXmlStreamAttribute &)
 extern "C"
-void C_ZN16QXmlStreamWriter14writeAttributeERK19QXmlStreamAttribute(void *this_, const QXmlStreamAttribute & attribute) {
-  ((QXmlStreamWriter*)this_)->writeAttribute(attribute);
+void C_ZN16QXmlStreamWriter14writeAttributeERK19QXmlStreamAttribute(void *this_, QXmlStreamAttribute* attribute) {
+  ((QXmlStreamWriter*)this_)->writeAttribute(*attribute);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:496
 // [-2] void writeAttributes(const class QXmlStreamAttributes &)
 extern "C"
-void C_ZN16QXmlStreamWriter15writeAttributesERK20QXmlStreamAttributes(void *this_, const QXmlStreamAttributes & attributes) {
-  ((QXmlStreamWriter*)this_)->writeAttributes(attributes);
+void C_ZN16QXmlStreamWriter15writeAttributesERK20QXmlStreamAttributes(void *this_, QXmlStreamAttributes* attributes) {
+  ((QXmlStreamWriter*)this_)->writeAttributes(*attributes);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:498
 // [-2] void writeCDATA(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter10writeCDATAERK7QString(void *this_, const QString & text) {
-  ((QXmlStreamWriter*)this_)->writeCDATA(text);
+void C_ZN16QXmlStreamWriter10writeCDATAERK7QString(void *this_, QString* text) {
+  ((QXmlStreamWriter*)this_)->writeCDATA(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:499
 // [-2] void writeCharacters(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter15writeCharactersERK7QString(void *this_, const QString & text) {
-  ((QXmlStreamWriter*)this_)->writeCharacters(text);
+void C_ZN16QXmlStreamWriter15writeCharactersERK7QString(void *this_, QString* text) {
+  ((QXmlStreamWriter*)this_)->writeCharacters(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:500
 // [-2] void writeComment(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter12writeCommentERK7QString(void *this_, const QString & text) {
-  ((QXmlStreamWriter*)this_)->writeComment(text);
+void C_ZN16QXmlStreamWriter12writeCommentERK7QString(void *this_, QString* text) {
+  ((QXmlStreamWriter*)this_)->writeComment(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:502
 // [-2] void writeDTD(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter8writeDTDERK7QString(void *this_, const QString & dtd) {
-  ((QXmlStreamWriter*)this_)->writeDTD(dtd);
+void C_ZN16QXmlStreamWriter8writeDTDERK7QString(void *this_, QString* dtd) {
+  ((QXmlStreamWriter*)this_)->writeDTD(*dtd);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:504
 // [-2] void writeEmptyElement(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter17writeEmptyElementERK7QString(void *this_, const QString & qualifiedName) {
-  ((QXmlStreamWriter*)this_)->writeEmptyElement(qualifiedName);
+void C_ZN16QXmlStreamWriter17writeEmptyElementERK7QString(void *this_, QString* qualifiedName) {
+  ((QXmlStreamWriter*)this_)->writeEmptyElement(*qualifiedName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:505
 // [-2] void writeEmptyElement(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter17writeEmptyElementERK7QStringS2_(void *this_, const QString & namespaceUri, const QString & name) {
-  ((QXmlStreamWriter*)this_)->writeEmptyElement(namespaceUri, name);
+void C_ZN16QXmlStreamWriter17writeEmptyElementERK7QStringS2_(void *this_, QString* namespaceUri, QString* name) {
+  ((QXmlStreamWriter*)this_)->writeEmptyElement(*namespaceUri, *name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:507
 // [-2] void writeTextElement(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter16writeTextElementERK7QStringS2_(void *this_, const QString & qualifiedName, const QString & text) {
-  ((QXmlStreamWriter*)this_)->writeTextElement(qualifiedName, text);
+void C_ZN16QXmlStreamWriter16writeTextElementERK7QStringS2_(void *this_, QString* qualifiedName, QString* text) {
+  ((QXmlStreamWriter*)this_)->writeTextElement(*qualifiedName, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:508
 // [-2] void writeTextElement(const class QString &, const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter16writeTextElementERK7QStringS2_S2_(void *this_, const QString & namespaceUri, const QString & name, const QString & text) {
-  ((QXmlStreamWriter*)this_)->writeTextElement(namespaceUri, name, text);
+void C_ZN16QXmlStreamWriter16writeTextElementERK7QStringS2_S2_(void *this_, QString* namespaceUri, QString* name, QString* text) {
+  ((QXmlStreamWriter*)this_)->writeTextElement(*namespaceUri, *name, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:510
@@ -222,29 +222,29 @@ void C_ZN16QXmlStreamWriter15writeEndElementEv(void *this_) {
 // /usr/include/qt/QtCore/qxmlstream.h:513
 // [-2] void writeEntityReference(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter20writeEntityReferenceERK7QString(void *this_, const QString & name) {
-  ((QXmlStreamWriter*)this_)->writeEntityReference(name);
+void C_ZN16QXmlStreamWriter20writeEntityReferenceERK7QString(void *this_, QString* name) {
+  ((QXmlStreamWriter*)this_)->writeEntityReference(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:514
 // [-2] void writeNamespace(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter14writeNamespaceERK7QStringS2_(void *this_, const QString & namespaceUri, const QString & prefix) {
-  ((QXmlStreamWriter*)this_)->writeNamespace(namespaceUri, prefix);
+void C_ZN16QXmlStreamWriter14writeNamespaceERK7QStringS2_(void *this_, QString* namespaceUri, QString* prefix) {
+  ((QXmlStreamWriter*)this_)->writeNamespace(*namespaceUri, *prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:515
 // [-2] void writeDefaultNamespace(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter21writeDefaultNamespaceERK7QString(void *this_, const QString & namespaceUri) {
-  ((QXmlStreamWriter*)this_)->writeDefaultNamespace(namespaceUri);
+void C_ZN16QXmlStreamWriter21writeDefaultNamespaceERK7QString(void *this_, QString* namespaceUri) {
+  ((QXmlStreamWriter*)this_)->writeDefaultNamespace(*namespaceUri);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:516
 // [-2] void writeProcessingInstruction(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter26writeProcessingInstructionERK7QStringS2_(void *this_, const QString & target, const QString & data) {
-  ((QXmlStreamWriter*)this_)->writeProcessingInstruction(target, data);
+void C_ZN16QXmlStreamWriter26writeProcessingInstructionERK7QStringS2_(void *this_, QString* target, QString* data) {
+  ((QXmlStreamWriter*)this_)->writeProcessingInstruction(*target, *data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:518
@@ -257,36 +257,36 @@ void C_ZN16QXmlStreamWriter18writeStartDocumentEv(void *this_) {
 // /usr/include/qt/QtCore/qxmlstream.h:519
 // [-2] void writeStartDocument(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QString(void *this_, const QString & version) {
-  ((QXmlStreamWriter*)this_)->writeStartDocument(version);
+void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QString(void *this_, QString* version) {
+  ((QXmlStreamWriter*)this_)->writeStartDocument(*version);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:520
 // [-2] void writeStartDocument(const class QString &, _Bool)
 extern "C"
-void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QStringb(void *this_, const QString & version, bool standalone) {
-  ((QXmlStreamWriter*)this_)->writeStartDocument(version, standalone);
+void C_ZN16QXmlStreamWriter18writeStartDocumentERK7QStringb(void *this_, QString* version, bool standalone) {
+  ((QXmlStreamWriter*)this_)->writeStartDocument(*version, standalone);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:521
 // [-2] void writeStartElement(const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter17writeStartElementERK7QString(void *this_, const QString & qualifiedName) {
-  ((QXmlStreamWriter*)this_)->writeStartElement(qualifiedName);
+void C_ZN16QXmlStreamWriter17writeStartElementERK7QString(void *this_, QString* qualifiedName) {
+  ((QXmlStreamWriter*)this_)->writeStartElement(*qualifiedName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:522
 // [-2] void writeStartElement(const class QString &, const class QString &)
 extern "C"
-void C_ZN16QXmlStreamWriter17writeStartElementERK7QStringS2_(void *this_, const QString & namespaceUri, const QString & name) {
-  ((QXmlStreamWriter*)this_)->writeStartElement(namespaceUri, name);
+void C_ZN16QXmlStreamWriter17writeStartElementERK7QStringS2_(void *this_, QString* namespaceUri, QString* name) {
+  ((QXmlStreamWriter*)this_)->writeStartElement(*namespaceUri, *name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:525
 // [-2] void writeCurrentToken(const class QXmlStreamReader &)
 extern "C"
-void C_ZN16QXmlStreamWriter17writeCurrentTokenERK16QXmlStreamReader(void *this_, const QXmlStreamReader & reader) {
-  ((QXmlStreamWriter*)this_)->writeCurrentToken(reader);
+void C_ZN16QXmlStreamWriter17writeCurrentTokenERK16QXmlStreamReader(void *this_, QXmlStreamReader* reader) {
+  ((QXmlStreamWriter*)this_)->writeCurrentToken(*reader);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:528

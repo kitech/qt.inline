@@ -36,8 +36,8 @@ void* C_ZN9QTimeEditC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:208
 // [-2] void QTimeEdit(const class QTime &, class QWidget *)
 extern "C"
-void* C_ZN9QTimeEditC2ERK5QTimeP7QWidget(const QTime & time, QWidget * parent) {
-  return  new QTimeEdit(time, parent);
+void* C_ZN9QTimeEditC2ERK5QTimeP7QWidget(QTime* time, QWidget * parent) {
+  return  new QTimeEdit(*time, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:209
@@ -50,7 +50,7 @@ void C_ZN9QTimeEditD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qdatetimeedit.h:212
 // [-2] void userTimeChanged(const class QTime &)
 extern "C"
-void C_ZN9QTimeEdit15userTimeChangedERK5QTime(void *this_, const QTime & time) {
-  ((QTimeEdit*)this_)->userTimeChanged(time);
+void C_ZN9QTimeEdit15userTimeChangedERK5QTime(void *this_, QTime* time) {
+  ((QTimeEdit*)this_)->userTimeChanged(*time);
 }
 //  main block end

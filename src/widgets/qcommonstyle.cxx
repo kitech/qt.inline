@@ -70,8 +70,8 @@ void C_ZNK12QCommonStyle18drawComplexControlEN6QStyle14ComplexControlEPK19QStyle
 // /usr/include/qt/QtWidgets/qcommonstyle.h:65
 // [4] QStyle::SubControl hitTestComplexControl(enum QStyle::ComplexControl, const class QStyleOptionComplex *, const class QPoint &, const class QWidget *)
 extern "C"
-QStyle::SubControl C_ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, const QPoint & pt, const QWidget * w) {
-  return (QStyle::SubControl)((QCommonStyle*)this_)->hitTestComplexControl(cc, opt, pt, w);
+QStyle::SubControl C_ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget(void *this_, QStyle::ComplexControl cc, const QStyleOptionComplex * opt, QPoint* pt, const QWidget * w) {
+  return (QStyle::SubControl)((QCommonStyle*)this_)->hitTestComplexControl(cc, opt, *pt, w);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommonstyle.h:67
@@ -85,8 +85,8 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qcommonstyle.h:69
 // [8] QSize sizeFromContents(enum QStyle::ContentsType, const class QStyleOption *, const class QSize &, const class QWidget *)
 extern "C"
-void* C_ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, const QSize & contentsSize, const QWidget * widget) {
-  auto rv = ((QCommonStyle*)this_)->sizeFromContents(ct, opt, contentsSize, widget);
+void* C_ZNK12QCommonStyle16sizeFromContentsEN6QStyle12ContentsTypeEPK12QStyleOptionRK5QSizePK7QWidget(void *this_, QStyle::ContentsType ct, const QStyleOption * opt, QSize* contentsSize, const QWidget * widget) {
+  auto rv = ((QCommonStyle*)this_)->sizeFromContents(ct, opt, *contentsSize, widget);
 return new QSize(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -123,8 +123,8 @@ return new QPixmap(rv);
 // /usr/include/qt/QtWidgets/qcommonstyle.h:82
 // [32] QPixmap generatedIconPixmap(class QIcon::Mode, const class QPixmap &, const class QStyleOption *)
 extern "C"
-void* C_ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, const QPixmap & pixmap, const QStyleOption * opt) {
-  auto rv = ((QCommonStyle*)this_)->generatedIconPixmap(iconMode, pixmap, opt);
+void* C_ZNK12QCommonStyle19generatedIconPixmapEN5QIcon4ModeERK7QPixmapPK12QStyleOption(void *this_, QIcon::Mode iconMode, QPixmap* pixmap, const QStyleOption * opt) {
+  auto rv = ((QCommonStyle*)this_)->generatedIconPixmap(iconMode, *pixmap, opt);
 return new QPixmap(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -138,8 +138,8 @@ int C_ZNK12QCommonStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11Orie
 // /usr/include/qt/QtWidgets/qcommonstyle.h:88
 // [-2] void polish(class QPalette &)
 extern "C"
-void C_ZN12QCommonStyle6polishER8QPalette(void *this_, QPalette & arg0) {
-  ((QCommonStyle*)this_)->polish(arg0);
+void C_ZN12QCommonStyle6polishER8QPalette(void *this_, QPalette* arg0) {
+  ((QCommonStyle*)this_)->polish(*arg0);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcommonstyle.h:89

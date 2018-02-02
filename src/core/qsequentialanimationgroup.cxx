@@ -12,30 +12,30 @@
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:73
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN25QSequentialAnimationGroup5eventEP6QEvent = 0;
+void* callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN25QSequentialAnimationGroup5eventEP6QEvent(void*cbfn)
-{ callback_ZN25QSequentialAnimationGroup5eventEP6QEvent = cbfn; }
+{ callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:75
 // [-2] void updateCurrentTime(int)
 extern "C"
-void* callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi = 0;
+void* callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr = 0;
 extern "C" void set_callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi = cbfn; }
+{ callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:76
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
 extern "C"
-void* callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ = 0;
+void* callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
 extern "C" void set_callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-{ callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ = cbfn; }
+{ callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h:77
 // [-2] void updateDirection(class QAbstractAnimation::Direction)
 extern "C"
-void* callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE = 0;
+void* callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = 0;
 extern "C" void set_callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void*cbfn)
-{ callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE = cbfn; }
+{ callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = cbfn; }
 
 class MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
 public:
@@ -44,29 +44,33 @@ public:
 MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN25QSequentialAnimationGroup5eventEP6QEvent != 0) {
-      // callback_ZN25QSequentialAnimationGroup5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QSequentialAnimationGroup::event(event);
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
-    if (callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi != 0) {
-      // callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(arg0);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QSequentialAnimationGroup::updateCurrentTime(arg0);
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    if (callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-      // callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , newState, oldState);
     }
     QSequentialAnimationGroup::updateState(newState, oldState);
   }
 // void updateDirection(class QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction) {
-    if (callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE != 0) {
-      // callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(direction);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::Direction))(callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , direction);
     }
     QSequentialAnimationGroup::updateDirection(direction);
   }

@@ -14,4 +14,9 @@ public:
   virtual ~MyVectorBoolElements() {}
 };
 
+
+extern "C"
+void C_ZN18VectorBoolElementsD2Ev(void *this_) {
+  delete (QtMetaTypePrivate::VectorBoolElements*)(this_);
+}
 //  main block end

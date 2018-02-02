@@ -55,8 +55,8 @@ QInputDialog::InputMode C_ZNK12QInputDialog9inputModeEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:100
 // [-2] void setLabelText(const class QString &)
 extern "C"
-void C_ZN12QInputDialog12setLabelTextERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->setLabelText(text);
+void C_ZN12QInputDialog12setLabelTextERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->setLabelText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:101
@@ -92,8 +92,8 @@ void C_ZNK12QInputDialog7optionsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:108
 // [-2] void setTextValue(const class QString &)
 extern "C"
-void C_ZN12QInputDialog12setTextValueERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->setTextValue(text);
+void C_ZN12QInputDialog12setTextValueERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->setTextValue(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:109
@@ -135,8 +135,8 @@ bool C_ZNK12QInputDialog18isComboBoxEditableEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:117
 // [-2] void setComboBoxItems(const class QStringList &)
 extern "C"
-void C_ZN12QInputDialog16setComboBoxItemsERK11QStringList(void *this_, const QStringList & items) {
-  ((QInputDialog*)this_)->setComboBoxItems(items);
+void C_ZN12QInputDialog16setComboBoxItemsERK11QStringList(void *this_, QStringList* items) {
+  ((QInputDialog*)this_)->setComboBoxItems(*items);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:120
@@ -268,8 +268,8 @@ int C_ZNK12QInputDialog14doubleDecimalsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:148
 // [-2] void setOkButtonText(const class QString &)
 extern "C"
-void C_ZN12QInputDialog15setOkButtonTextERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->setOkButtonText(text);
+void C_ZN12QInputDialog15setOkButtonTextERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->setOkButtonText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:149
@@ -283,8 +283,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qinputdialog.h:151
 // [-2] void setCancelButtonText(const class QString &)
 extern "C"
-void C_ZN12QInputDialog19setCancelButtonTextERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->setCancelButtonText(text);
+void C_ZN12QInputDialog19setCancelButtonTextERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->setCancelButtonText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:152
@@ -328,22 +328,22 @@ void C_ZN12QInputDialog10setVisibleEb(void *this_, bool visible) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:176
 // [4] int getInt(class QWidget *, const class QString &, const class QString &, int, int, int, int, _Bool *, Qt::WindowFlags)
 extern "C"
-int C_ZN12QInputDialog6getIntEP7QWidgetRK7QStringS4_iiiiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, const QString & title, const QString & label, int value, int minValue, int maxValue, int step, bool * ok, QFlags<Qt::WindowType> flags) {
-  return (int)QInputDialog::getInt(parent, title, label, value, minValue, maxValue, step, ok, flags);
+int C_ZN12QInputDialog6getIntEP7QWidgetRK7QStringS4_iiiiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, int value, int minValue, int maxValue, int step, bool * ok, QFlags<Qt::WindowType> flags) {
+  return (int)QInputDialog::getInt(parent, *title, *label, value, minValue, maxValue, step, ok, flags);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:179
 // [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags)
 extern "C"
-double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, const QString & title, const QString & label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags) {
-  return (double)QInputDialog::getDouble(parent, title, label, value, minValue, maxValue, decimals, ok, flags);
+double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags) {
+  return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:183
 // [8] double getDouble(class QWidget *, const class QString &, const class QString &, double, double, double, int, _Bool *, Qt::WindowFlags, double)
 extern "C"
-double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd(QWidget * parent, const QString & title, const QString & label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags, double step) {
-  return (double)QInputDialog::getDouble(parent, title, label, value, minValue, maxValue, decimals, ok, flags, step);
+double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags, double step) {
+  return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags, step);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:196
@@ -363,15 +363,15 @@ double C_ZNK12QInputDialog10doubleStepEv(void *this_) {
 // /usr/include/qt/QtWidgets/qinputdialog.h:201
 // [-2] void textValueChanged(const class QString &)
 extern "C"
-void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->textValueChanged(text);
+void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->textValueChanged(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:202
 // [-2] void textValueSelected(const class QString &)
 extern "C"
-void C_ZN12QInputDialog17textValueSelectedERK7QString(void *this_, const QString & text) {
-  ((QInputDialog*)this_)->textValueSelected(text);
+void C_ZN12QInputDialog17textValueSelectedERK7QString(void *this_, QString* text) {
+  ((QInputDialog*)this_)->textValueSelected(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:203

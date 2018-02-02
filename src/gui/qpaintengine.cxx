@@ -53,8 +53,8 @@ bool C_ZN12QPaintEngine3endEv(void *this_) {
 // /usr/include/qt/QtGui/qpaintengine.h:156
 // [-2] void updateState(const class QPaintEngineState &)
 extern "C"
-void C_ZN12QPaintEngine11updateStateERK17QPaintEngineState(void *this_, const QPaintEngineState & state) {
-  ((QPaintEngine*)this_)->updateState(state);
+void C_ZN12QPaintEngine11updateStateERK17QPaintEngineState(void *this_, QPaintEngineState* state) {
+  ((QPaintEngine*)this_)->updateState(*state);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:158
@@ -88,22 +88,22 @@ void C_ZN12QPaintEngine9drawLinesEPK6QLineFi(void *this_, const QLineF * lines, 
 // /usr/include/qt/QtGui/qpaintengine.h:164
 // [-2] void drawEllipse(const class QRectF &)
 extern "C"
-void C_ZN12QPaintEngine11drawEllipseERK6QRectF(void *this_, const QRectF & r) {
-  ((QPaintEngine*)this_)->drawEllipse(r);
+void C_ZN12QPaintEngine11drawEllipseERK6QRectF(void *this_, QRectF* r) {
+  ((QPaintEngine*)this_)->drawEllipse(*r);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:165
 // [-2] void drawEllipse(const class QRect &)
 extern "C"
-void C_ZN12QPaintEngine11drawEllipseERK5QRect(void *this_, const QRect & r) {
-  ((QPaintEngine*)this_)->drawEllipse(r);
+void C_ZN12QPaintEngine11drawEllipseERK5QRect(void *this_, QRect* r) {
+  ((QPaintEngine*)this_)->drawEllipse(*r);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:167
 // [-2] void drawPath(const class QPainterPath &)
 extern "C"
-void C_ZN12QPaintEngine8drawPathERK12QPainterPath(void *this_, const QPainterPath & path) {
-  ((QPaintEngine*)this_)->drawPath(path);
+void C_ZN12QPaintEngine8drawPathERK12QPainterPath(void *this_, QPainterPath* path) {
+  ((QPaintEngine*)this_)->drawPath(*path);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:169
@@ -137,29 +137,29 @@ void C_ZN12QPaintEngine11drawPolygonEPK6QPointiNS_15PolygonDrawModeE(void *this_
 // /usr/include/qt/QtGui/qpaintengine.h:175
 // [-2] void drawPixmap(const class QRectF &, const class QPixmap &, const class QRectF &)
 extern "C"
-void C_ZN12QPaintEngine10drawPixmapERK6QRectFRK7QPixmapS2_(void *this_, const QRectF & r, const QPixmap & pm, const QRectF & sr) {
-  ((QPaintEngine*)this_)->drawPixmap(r, pm, sr);
+void C_ZN12QPaintEngine10drawPixmapERK6QRectFRK7QPixmapS2_(void *this_, QRectF* r, QPixmap* pm, QRectF* sr) {
+  ((QPaintEngine*)this_)->drawPixmap(*r, *pm, *sr);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:176
 // [-2] void drawTextItem(const class QPointF &, const class QTextItem &)
 extern "C"
-void C_ZN12QPaintEngine12drawTextItemERK7QPointFRK9QTextItem(void *this_, const QPointF & p, const QTextItem & textItem) {
-  ((QPaintEngine*)this_)->drawTextItem(p, textItem);
+void C_ZN12QPaintEngine12drawTextItemERK7QPointFRK9QTextItem(void *this_, QPointF* p, QTextItem* textItem) {
+  ((QPaintEngine*)this_)->drawTextItem(*p, *textItem);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:177
 // [-2] void drawTiledPixmap(const class QRectF &, const class QPixmap &, const class QPointF &)
 extern "C"
-void C_ZN12QPaintEngine15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF(void *this_, const QRectF & r, const QPixmap & pixmap, const QPointF & s) {
-  ((QPaintEngine*)this_)->drawTiledPixmap(r, pixmap, s);
+void C_ZN12QPaintEngine15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF(void *this_, QRectF* r, QPixmap* pixmap, QPointF* s) {
+  ((QPaintEngine*)this_)->drawTiledPixmap(*r, *pixmap, *s);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:178
 // [-2] void drawImage(const class QRectF &, const class QImage &, const class QRectF &, Qt::ImageConversionFlags)
 extern "C"
-void C_ZN12QPaintEngine9drawImageERK6QRectFRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, const QRectF & r, const QImage & pm, const QRectF & sr, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPaintEngine*)this_)->drawImage(r, pm, sr, flags);
+void C_ZN12QPaintEngine9drawImageERK6QRectFRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QRectF* r, QImage* pm, QRectF* sr, QFlags<Qt::ImageConversionFlag> flags) {
+  ((QPaintEngine*)this_)->drawImage(*r, *pm, *sr, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:181
@@ -179,8 +179,8 @@ void* C_ZNK12QPaintEngine11paintDeviceEv(void *this_) {
 // /usr/include/qt/QtGui/qpaintengine.h:184
 // [-2] void setSystemClip(const class QRegion &)
 extern "C"
-void C_ZN12QPaintEngine13setSystemClipERK7QRegion(void *this_, const QRegion & baseClip) {
-  ((QPaintEngine*)this_)->setSystemClip(baseClip);
+void C_ZN12QPaintEngine13setSystemClipERK7QRegion(void *this_, QRegion* baseClip) {
+  ((QPaintEngine*)this_)->setSystemClip(*baseClip);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:185
@@ -194,8 +194,8 @@ return new QRegion(rv);
 // /usr/include/qt/QtGui/qpaintengine.h:187
 // [-2] void setSystemRect(const class QRect &)
 extern "C"
-void C_ZN12QPaintEngine13setSystemRectERK5QRect(void *this_, const QRect & rect) {
-  ((QPaintEngine*)this_)->setSystemRect(rect);
+void C_ZN12QPaintEngine13setSystemRectERK5QRect(void *this_, QRect* rect) {
+  ((QPaintEngine*)this_)->setSystemRect(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:188

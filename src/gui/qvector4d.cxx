@@ -57,43 +57,43 @@ void* C_ZN9QVector4DC2Effff(float xpos, float ypos, float zpos, float wpos) {
 // /usr/include/qt/QtGui/qvector4d.h:62
 // [-2] void QVector4D(const class QPoint &)
 extern "C"
-void* C_ZN9QVector4DC2ERK6QPoint(const QPoint & point) {
-  return  new QVector4D(point);
+void* C_ZN9QVector4DC2ERK6QPoint(QPoint* point) {
+  return  new QVector4D(*point);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:63
 // [-2] void QVector4D(const class QPointF &)
 extern "C"
-void* C_ZN9QVector4DC2ERK7QPointF(const QPointF & point) {
-  return  new QVector4D(point);
+void* C_ZN9QVector4DC2ERK7QPointF(QPointF* point) {
+  return  new QVector4D(*point);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:65
 // [-2] void QVector4D(const class QVector2D &)
 extern "C"
-void* C_ZN9QVector4DC2ERK9QVector2D(const QVector2D & vector) {
-  return  new QVector4D(vector);
+void* C_ZN9QVector4DC2ERK9QVector2D(QVector2D* vector) {
+  return  new QVector4D(*vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:66
 // [-2] void QVector4D(const class QVector2D &, float, float)
 extern "C"
-void* C_ZN9QVector4DC2ERK9QVector2Dff(const QVector2D & vector, float zpos, float wpos) {
-  return  new QVector4D(vector, zpos, wpos);
+void* C_ZN9QVector4DC2ERK9QVector2Dff(QVector2D* vector, float zpos, float wpos) {
+  return  new QVector4D(*vector, zpos, wpos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:69
 // [-2] void QVector4D(const class QVector3D &)
 extern "C"
-void* C_ZN9QVector4DC2ERK9QVector3D(const QVector3D & vector) {
-  return  new QVector4D(vector);
+void* C_ZN9QVector4DC2ERK9QVector3D(QVector3D* vector) {
+  return  new QVector4D(*vector);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:70
 // [-2] void QVector4D(const class QVector3D &, float)
 extern "C"
-void* C_ZN9QVector4DC2ERK9QVector3Df(const QVector3D & vector, float wpos) {
-  return  new QVector4D(vector, wpos);
+void* C_ZN9QVector4DC2ERK9QVector3Df(QVector3D* vector, float wpos) {
+  return  new QVector4D(*vector, wpos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:73
@@ -191,8 +191,8 @@ void C_ZN9QVector4D9normalizeEv(void *this_) {
 // /usr/include/qt/QtGui/qvector4d.h:101
 // [4] float dotProduct(const class QVector4D &, const class QVector4D &)
 extern "C"
-float C_ZN9QVector4D10dotProductERKS_S1_(const QVector4D & v1, const QVector4D & v2) {
-  return (float)QVector4D::dotProduct(v1, v2);
+float C_ZN9QVector4D10dotProductERKS_S1_(QVector4D* v1, QVector4D* v2) {
+  return (float)QVector4D::dotProduct(*v1, *v2);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvector4d.h:117
@@ -241,5 +241,10 @@ extern "C"
 void* C_ZNK9QVector4D8toPointFEv(void *this_) {
   auto rv = ((QVector4D*)this_)->toPointF();
 return new QPointF(rv);
+}
+
+extern "C"
+void C_ZN9QVector4DD2Ev(void *this_) {
+  delete (QVector4D*)(this_);
 }
 //  main block end

@@ -21,4 +21,9 @@ extern "C"
 void C_ZN24QScopedPointerPodDeleter7cleanupEPv(void * pointer) {
   QScopedPointerPodDeleter::cleanup(pointer);
 }
+
+extern "C"
+void C_ZN24QScopedPointerPodDeleterD2Ev(void *this_) {
+  delete (QScopedPointerPodDeleter*)(this_);
+}
 //  main block end

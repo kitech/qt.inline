@@ -41,15 +41,15 @@ void C_ZN14QImageIOPluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qimageiohandler.h:153
 // [4] QImageIOPlugin::Capabilities capabilities(class QIODevice *, const class QByteArray &)
 extern "C"
-void C_ZNK14QImageIOPlugin12capabilitiesEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, const QByteArray & format) {
-  auto rv = ((QImageIOPlugin*)this_)->capabilities(device, format);
+void C_ZNK14QImageIOPlugin12capabilitiesEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, QByteArray* format) {
+  auto rv = ((QImageIOPlugin*)this_)->capabilities(device, *format);
 /*return rv;*/
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:154
 // [8] QImageIOHandler * create(class QIODevice *, const class QByteArray &)
 extern "C"
-void* C_ZNK14QImageIOPlugin6createEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, const QByteArray & format) {
-  return (void*)((QImageIOPlugin*)this_)->create(device, format);
+void* C_ZNK14QImageIOPlugin6createEP9QIODeviceRK10QByteArray(void *this_, QIODevice * device, QByteArray* format) {
+  return (void*)((QImageIOPlugin*)this_)->create(device, *format);
 }
 //  main block end

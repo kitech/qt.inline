@@ -29,8 +29,8 @@ void* C_ZN7QRegExpC2Ev() {
 // /usr/include/qt/QtCore/qregexp.h:71
 // [-2] void QRegExp(const class QString &, Qt::CaseSensitivity, enum QRegExp::PatternSyntax)
 extern "C"
-void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
-  return  new QRegExp(pattern, cs, syntax);
+void* C_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE(QString* pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax) {
+  return  new QRegExp(*pattern, cs, syntax);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:74
@@ -43,8 +43,8 @@ void C_ZN7QRegExpD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qregexp.h:79
 // [-2] void swap(class QRegExp &)
 extern "C"
-void C_ZN7QRegExp4swapERS_(void *this_, QRegExp & other) {
-  ((QRegExp*)this_)->swap(other);
+void C_ZN7QRegExp4swapERS_(void *this_, QRegExp* other) {
+  ((QRegExp*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:84
@@ -72,8 +72,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qregexp.h:87
 // [-2] void setPattern(const class QString &)
 extern "C"
-void C_ZN7QRegExp10setPatternERK7QString(void *this_, const QString & pattern) {
-  ((QRegExp*)this_)->setPattern(pattern);
+void C_ZN7QRegExp10setPatternERK7QString(void *this_, QString* pattern) {
+  ((QRegExp*)this_)->setPattern(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:88
@@ -121,22 +121,22 @@ void C_ZN7QRegExp10setMinimalEb(void *this_, bool minimal) {
 // /usr/include/qt/QtCore/qregexp.h:96
 // [1] bool exactMatch(const class QString &)
 extern "C"
-bool C_ZNK7QRegExp10exactMatchERK7QString(void *this_, const QString & str) {
-  return (bool)((QRegExp*)this_)->exactMatch(str);
+bool C_ZNK7QRegExp10exactMatchERK7QString(void *this_, QString* str) {
+  return (bool)((QRegExp*)this_)->exactMatch(*str);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:98
 // [4] int indexIn(const class QString &, int, enum QRegExp::CaretMode)
 extern "C"
-int C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
-  return (int)((QRegExp*)this_)->indexIn(str, offset, caretMode);
+int C_ZNK7QRegExp7indexInERK7QStringiNS_9CaretModeE(void *this_, QString* str, int offset, QRegExp::CaretMode caretMode) {
+  return (int)((QRegExp*)this_)->indexIn(*str, offset, caretMode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:99
 // [4] int lastIndexIn(const class QString &, int, enum QRegExp::CaretMode)
 extern "C"
-int C_ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE(void *this_, const QString & str, int offset, QRegExp::CaretMode caretMode) {
-  return (int)((QRegExp*)this_)->lastIndexIn(str, offset, caretMode);
+int C_ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE(void *this_, QString* str, int offset, QRegExp::CaretMode caretMode) {
+  return (int)((QRegExp*)this_)->lastIndexIn(*str, offset, caretMode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:100
@@ -202,8 +202,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qregexp.h:113
 // [8] QString escape(const class QString &)
 extern "C"
-void* C_ZN7QRegExp6escapeERK7QString(const QString & str) {
-  auto rv = QRegExp::escape(str);
+void* C_ZN7QRegExp6escapeERK7QString(QString* str) {
+  auto rv = QRegExp::escape(*str);
 return new QString(rv);
 }
 //  main block end

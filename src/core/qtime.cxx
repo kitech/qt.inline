@@ -86,8 +86,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qdatetime.h:173
 // [8] QString toString(const class QString &)
 extern "C"
-void* C_ZNK5QTime8toStringERK7QString(void *this_, const QString & format) {
-  auto rv = ((QTime*)this_)->toString(format);
+void* C_ZNK5QTime8toStringERK7QString(void *this_, QString* format) {
+  auto rv = ((QTime*)this_)->toString(*format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -117,8 +117,8 @@ return new QTime(rv);
 // /usr/include/qt/QtCore/qdatetime.h:180
 // [4] int secsTo(const class QTime &)
 extern "C"
-int C_ZNK5QTime6secsToERKS_(void *this_, const QTime & arg0) {
-  return (int)((QTime*)this_)->secsTo(arg0);
+int C_ZNK5QTime6secsToERKS_(void *this_, QTime* arg0) {
+  return (int)((QTime*)this_)->secsTo(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:181
@@ -132,8 +132,8 @@ return new QTime(rv);
 // /usr/include/qt/QtCore/qdatetime.h:182
 // [4] int msecsTo(const class QTime &)
 extern "C"
-int C_ZNK5QTime7msecsToERKS_(void *this_, const QTime & arg0) {
-  return (int)((QTime*)this_)->msecsTo(arg0);
+int C_ZNK5QTime7msecsToERKS_(void *this_, QTime* arg0) {
+  return (int)((QTime*)this_)->msecsTo(*arg0);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:191
@@ -162,16 +162,16 @@ return new QTime(rv);
 // /usr/include/qt/QtCore/qdatetime.h:196
 // [4] QTime fromString(const class QString &, Qt::DateFormat)
 extern "C"
-void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
-  auto rv = QTime::fromString(s, f);
+void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFormat f) {
+  auto rv = QTime::fromString(*s, f);
 return new QTime(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:197
 // [4] QTime fromString(const class QString &, const class QString &)
 extern "C"
-void* C_ZN5QTime10fromStringERK7QStringS2_(const QString & s, const QString & format) {
-  auto rv = QTime::fromString(s, format);
+void* C_ZN5QTime10fromStringERK7QStringS2_(QString* s, QString* format) {
+  auto rv = QTime::fromString(*s, *format);
 return new QTime(rv);
 }
 // Public static Visibility=Default Availability=Available
@@ -201,5 +201,10 @@ int C_ZN5QTime7restartEv(void *this_) {
 extern "C"
 int C_ZNK5QTime7elapsedEv(void *this_) {
   return (int)((QTime*)this_)->elapsed();
+}
+
+extern "C"
+void C_ZN5QTimeD2Ev(void *this_) {
+  delete (QTime*)(this_);
 }
 //  main block end

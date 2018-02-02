@@ -63,8 +63,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgesture.h:81
 // [-2] void setHotSpot(const class QPointF &)
 extern "C"
-void C_ZN8QGesture10setHotSpotERK7QPointF(void *this_, const QPointF & value) {
-  ((QGesture*)this_)->setHotSpot(value);
+void C_ZN8QGesture10setHotSpotERK7QPointF(void *this_, QPointF* value) {
+  ((QGesture*)this_)->setHotSpot(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:82

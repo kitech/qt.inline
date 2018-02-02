@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qtoolbox.h:98
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN8QToolBox5eventEP6QEvent = 0;
+void* callback_ZN8QToolBox5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBox5eventEP6QEvent = cbfn; }
+{ callback_ZN8QToolBox5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:99
 // [-2] void itemInserted(int)
 extern "C"
-void* callback_ZN8QToolBox12itemInsertedEi = 0;
+void* callback_ZN8QToolBox12itemInsertedEi_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBox12itemInsertedEi(void*cbfn)
-{ callback_ZN8QToolBox12itemInsertedEi = cbfn; }
+{ callback_ZN8QToolBox12itemInsertedEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:100
 // [-2] void itemRemoved(int)
 extern "C"
-void* callback_ZN8QToolBox11itemRemovedEi = 0;
+void* callback_ZN8QToolBox11itemRemovedEi_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBox11itemRemovedEi(void*cbfn)
-{ callback_ZN8QToolBox11itemRemovedEi = cbfn; }
+{ callback_ZN8QToolBox11itemRemovedEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:101
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN8QToolBox9showEventEP10QShowEvent = 0;
+void* callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBox9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN8QToolBox9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:102
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN8QToolBox11changeEventEP6QEvent = 0;
+void* callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QToolBox11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBox11changeEventEP6QEvent = cbfn; }
+{ callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQToolBox : public QToolBox {
 public:
@@ -51,36 +51,41 @@ public:
 MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN8QToolBox5eventEP6QEvent != 0) {
-      // callback_ZN8QToolBox5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBox5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QToolBox::event(e);
   }
 // void itemInserted(int)
   virtual void itemInserted(int index) {
-    if (callback_ZN8QToolBox12itemInsertedEi != 0) {
-      // callback_ZN8QToolBox12itemInsertedEi(index);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox12itemInsertedEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     QToolBox::itemInserted(index);
   }
 // void itemRemoved(int)
   virtual void itemRemoved(int index) {
-    if (callback_ZN8QToolBox11itemRemovedEi != 0) {
-      // callback_ZN8QToolBox11itemRemovedEi(index);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox11itemRemovedEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     QToolBox::itemRemoved(index);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * e) {
-    if (callback_ZN8QToolBox9showEventEP10QShowEvent != 0) {
-      // callback_ZN8QToolBox9showEventEP10QShowEvent(e);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     QToolBox::showEvent(e);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    if (callback_ZN8QToolBox11changeEventEP6QEvent != 0) {
-      // callback_ZN8QToolBox11changeEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBox11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QToolBox::changeEvent(arg0);
   }
@@ -112,29 +117,29 @@ void C_ZN8QToolBoxD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qtoolbox.h:63
 // [4] int addItem(class QWidget *, const class QString &)
 extern "C"
-int C_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *this_, QWidget * widget, const QString & text) {
-  return (int)((QToolBox*)this_)->addItem(widget, text);
+int C_ZN8QToolBox7addItemEP7QWidgetRK7QString(void *this_, QWidget * widget, QString* text) {
+  return (int)((QToolBox*)this_)->addItem(widget, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:64
 // [4] int addItem(class QWidget *, const class QIcon &, const class QString &)
 extern "C"
-int C_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *this_, QWidget * widget, const QIcon & icon, const QString & text) {
-  return (int)((QToolBox*)this_)->addItem(widget, icon, text);
+int C_ZN8QToolBox7addItemEP7QWidgetRK5QIconRK7QString(void *this_, QWidget * widget, QIcon* icon, QString* text) {
+  return (int)((QToolBox*)this_)->addItem(widget, *icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:65
 // [4] int insertItem(int, class QWidget *, const class QString &)
 extern "C"
-int C_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *this_, int index, QWidget * widget, const QString & text) {
-  return (int)((QToolBox*)this_)->insertItem(index, widget, text);
+int C_ZN8QToolBox10insertItemEiP7QWidgetRK7QString(void *this_, int index, QWidget * widget, QString* text) {
+  return (int)((QToolBox*)this_)->insertItem(index, widget, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:66
 // [4] int insertItem(int, class QWidget *, const class QIcon &, const class QString &)
 extern "C"
-int C_ZN8QToolBox10insertItemEiP7QWidgetRK5QIconRK7QString(void *this_, int index, QWidget * widget, const QIcon & icon, const QString & text) {
-  return (int)((QToolBox*)this_)->insertItem(index, widget, icon, text);
+int C_ZN8QToolBox10insertItemEiP7QWidgetRK5QIconRK7QString(void *this_, int index, QWidget * widget, QIcon* icon, QString* text) {
+  return (int)((QToolBox*)this_)->insertItem(index, widget, *icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:68
@@ -161,8 +166,8 @@ bool C_ZNK8QToolBox13isItemEnabledEi(void *this_, int index) {
 // /usr/include/qt/QtWidgets/qtoolbox.h:73
 // [-2] void setItemText(int, const class QString &)
 extern "C"
-void C_ZN8QToolBox11setItemTextEiRK7QString(void *this_, int index, const QString & text) {
-  ((QToolBox*)this_)->setItemText(index, text);
+void C_ZN8QToolBox11setItemTextEiRK7QString(void *this_, int index, QString* text) {
+  ((QToolBox*)this_)->setItemText(index, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:74
@@ -176,8 +181,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtoolbox.h:76
 // [-2] void setItemIcon(int, const class QIcon &)
 extern "C"
-void C_ZN8QToolBox11setItemIconEiRK5QIcon(void *this_, int index, const QIcon & icon) {
-  ((QToolBox*)this_)->setItemIcon(index, icon);
+void C_ZN8QToolBox11setItemIconEiRK5QIcon(void *this_, int index, QIcon* icon) {
+  ((QToolBox*)this_)->setItemIcon(index, *icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:77
@@ -191,8 +196,8 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qtoolbox.h:80
 // [-2] void setItemToolTip(int, const class QString &)
 extern "C"
-void C_ZN8QToolBox14setItemToolTipEiRK7QString(void *this_, int index, const QString & toolTip) {
-  ((QToolBox*)this_)->setItemToolTip(index, toolTip);
+void C_ZN8QToolBox14setItemToolTipEiRK7QString(void *this_, int index, QString* toolTip) {
+  ((QToolBox*)this_)->setItemToolTip(index, *toolTip);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbox.h:81

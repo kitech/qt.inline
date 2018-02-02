@@ -25,14 +25,14 @@ void C_ZN16QCollatorSortKeyD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qcollator.h:64
 // [-2] void swap(class QCollatorSortKey &)
 extern "C"
-void C_ZN16QCollatorSortKey4swapERS_(void *this_, QCollatorSortKey & other) {
-  ((QCollatorSortKey*)this_)->swap(other);
+void C_ZN16QCollatorSortKey4swapERS_(void *this_, QCollatorSortKey* other) {
+  ((QCollatorSortKey*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:67
 // [4] int compare(const class QCollatorSortKey &)
 extern "C"
-int C_ZNK16QCollatorSortKey7compareERKS_(void *this_, const QCollatorSortKey & key) {
-  return (int)((QCollatorSortKey*)this_)->compare(key);
+int C_ZNK16QCollatorSortKey7compareERKS_(void *this_, QCollatorSortKey* key) {
+  return (int)((QCollatorSortKey*)this_)->compare(*key);
 }
 //  main block end

@@ -41,47 +41,47 @@ void C_ZN19QIdentityProxyModelD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qidentityproxymodel.h:60
 // [4] int columnCount(const class QModelIndex &)
 extern "C"
-int C_ZNK19QIdentityProxyModel11columnCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (int)((QIdentityProxyModel*)this_)->columnCount(parent);
+int C_ZNK19QIdentityProxyModel11columnCountERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (int)((QIdentityProxyModel*)this_)->columnCount(*parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:61
 // [24] QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel5indexEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & parent) {
-  auto rv = ((QIdentityProxyModel*)this_)->index(row, column, parent);
+void* C_ZNK19QIdentityProxyModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
+  auto rv = ((QIdentityProxyModel*)this_)->index(row, column, *parent);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:62
 // [24] QModelIndex mapFromSource(const class QModelIndex &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel13mapFromSourceERK11QModelIndex(void *this_, const QModelIndex & sourceIndex) {
-  auto rv = ((QIdentityProxyModel*)this_)->mapFromSource(sourceIndex);
+void* C_ZNK19QIdentityProxyModel13mapFromSourceERK11QModelIndex(void *this_, QModelIndex* sourceIndex) {
+  auto rv = ((QIdentityProxyModel*)this_)->mapFromSource(*sourceIndex);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:63
 // [24] QModelIndex mapToSource(const class QModelIndex &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel11mapToSourceERK11QModelIndex(void *this_, const QModelIndex & proxyIndex) {
-  auto rv = ((QIdentityProxyModel*)this_)->mapToSource(proxyIndex);
+void* C_ZNK19QIdentityProxyModel11mapToSourceERK11QModelIndex(void *this_, QModelIndex* proxyIndex) {
+  auto rv = ((QIdentityProxyModel*)this_)->mapToSource(*proxyIndex);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:64
 // [24] QModelIndex parent(const class QModelIndex &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel6parentERK11QModelIndex(void *this_, const QModelIndex & child) {
-  auto rv = ((QIdentityProxyModel*)this_)->parent(child);
+void* C_ZNK19QIdentityProxyModel6parentERK11QModelIndex(void *this_, QModelIndex* child) {
+  auto rv = ((QIdentityProxyModel*)this_)->parent(*child);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:66
 // [4] int rowCount(const class QModelIndex &)
 extern "C"
-int C_ZNK19QIdentityProxyModel8rowCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (int)((QIdentityProxyModel*)this_)->rowCount(parent);
+int C_ZNK19QIdentityProxyModel8rowCountERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (int)((QIdentityProxyModel*)this_)->rowCount(*parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:67
@@ -95,31 +95,31 @@ return new QVariant(rv);
 // /usr/include/qt/QtCore/qidentityproxymodel.h:68
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN19QIdentityProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) {
-  return (bool)((QIdentityProxyModel*)this_)->dropMimeData(data, action, row, column, parent);
+bool C_ZN19QIdentityProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
+  return (bool)((QIdentityProxyModel*)this_)->dropMimeData(data, action, row, column, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:69
 // [24] QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & idx) {
-  auto rv = ((QIdentityProxyModel*)this_)->sibling(row, column, idx);
+void* C_ZNK19QIdentityProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
+  auto rv = ((QIdentityProxyModel*)this_)->sibling(row, column, *idx);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:71
 // [8] QItemSelection mapSelectionFromSource(const class QItemSelection &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, const QItemSelection & selection) {
-  auto rv = ((QIdentityProxyModel*)this_)->mapSelectionFromSource(selection);
+void* C_ZNK19QIdentityProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
+  auto rv = ((QIdentityProxyModel*)this_)->mapSelectionFromSource(*selection);
 return new QItemSelection(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:72
 // [8] QItemSelection mapSelectionToSource(const class QItemSelection &)
 extern "C"
-void* C_ZNK19QIdentityProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, const QItemSelection & selection) {
-  auto rv = ((QIdentityProxyModel*)this_)->mapSelectionToSource(selection);
+void* C_ZNK19QIdentityProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, QItemSelection* selection) {
+  auto rv = ((QIdentityProxyModel*)this_)->mapSelectionToSource(*selection);
 return new QItemSelection(rv);
 }
 // Public virtual Visibility=Default Availability=Available
@@ -133,28 +133,28 @@ void C_ZN19QIdentityProxyModel14setSourceModelEP18QAbstractItemModel(void *this_
 // /usr/include/qt/QtCore/qidentityproxymodel.h:76
 // [1] bool insertColumns(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN19QIdentityProxyModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
-  return (bool)((QIdentityProxyModel*)this_)->insertColumns(column, count, parent);
+bool C_ZN19QIdentityProxyModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
+  return (bool)((QIdentityProxyModel*)this_)->insertColumns(column, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:77
 // [1] bool insertRows(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN19QIdentityProxyModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
-  return (bool)((QIdentityProxyModel*)this_)->insertRows(row, count, parent);
+bool C_ZN19QIdentityProxyModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
+  return (bool)((QIdentityProxyModel*)this_)->insertRows(row, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:78
 // [1] bool removeColumns(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN19QIdentityProxyModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
-  return (bool)((QIdentityProxyModel*)this_)->removeColumns(column, count, parent);
+bool C_ZN19QIdentityProxyModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
+  return (bool)((QIdentityProxyModel*)this_)->removeColumns(column, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qidentityproxymodel.h:79
 // [1] bool removeRows(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN19QIdentityProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
-  return (bool)((QIdentityProxyModel*)this_)->removeRows(row, count, parent);
+bool C_ZN19QIdentityProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
+  return (bool)((QIdentityProxyModel*)this_)->removeRows(row, count, *parent);
 }
 //  main block end

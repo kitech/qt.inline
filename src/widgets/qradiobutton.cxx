@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qradiobutton.h:67
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN12QRadioButton5eventEP6QEvent = 0;
+void* callback_ZN12QRadioButton5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN12QRadioButton5eventEP6QEvent(void*cbfn)
-{ callback_ZN12QRadioButton5eventEP6QEvent = cbfn; }
+{ callback_ZN12QRadioButton5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:68
 // [1] bool hitButton(const class QPoint &)
 extern "C"
-void* callback_ZNK12QRadioButton9hitButtonERK6QPoint = 0;
+void* callback_ZNK12QRadioButton9hitButtonERK6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK12QRadioButton9hitButtonERK6QPoint(void*cbfn)
-{ callback_ZNK12QRadioButton9hitButtonERK6QPoint = cbfn; }
+{ callback_ZNK12QRadioButton9hitButtonERK6QPoint_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:69
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN12QRadioButton10paintEventEP11QPaintEvent = 0;
+void* callback_ZN12QRadioButton10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN12QRadioButton10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN12QRadioButton10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN12QRadioButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:70
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:71
 // [-2] void initStyleOption(class QStyleOptionButton *)
 extern "C"
-void* callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton = 0;
+void* callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton_fnptr = 0;
 extern "C" void set_callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(void*cbfn)
-{ callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton = cbfn; }
+{ callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton_fnptr = cbfn; }
 
 class MyQRadioButton : public QRadioButton {
 public:
@@ -53,36 +53,41 @@ MyQRadioButton(QWidget * parent) : QRadioButton(parent) {}
 MyQRadioButton(const QString & text, QWidget * parent) : QRadioButton(text, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN12QRadioButton5eventEP6QEvent != 0) {
-      // callback_ZN12QRadioButton5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QRadioButton5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QRadioButton::event(e);
   }
 // bool hitButton(const class QPoint &)
   virtual bool hitButton(const QPoint & arg0) {
-    if (callback_ZNK12QRadioButton9hitButtonERK6QPoint != 0) {
-      // callback_ZNK12QRadioButton9hitButtonERK6QPoint(arg0);
+    auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK12QRadioButton9hitButtonERK6QPoint_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QPoint*)&arg0);
     }
     return QRadioButton::hitButton(arg0);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN12QRadioButton10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN12QRadioButton10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN12QRadioButton10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRadioButton::paintEvent(arg0);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
-    if (callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN12QRadioButton14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QRadioButton::mouseMoveEvent(arg0);
   }
 // void initStyleOption(class QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * button) {
-    if (callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton != 0) {
-      // callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton(button);
+    auto fnptr = ((void (*)(void* , QStyleOptionButton *))(callback_ZNK12QRadioButton15initStyleOptionEP18QStyleOptionButton_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , button);
     }
     QRadioButton::initStyleOption(button);
   }
@@ -107,9 +112,9 @@ void* C_ZN12QRadioButtonC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qradiobutton.h:60
 // [-2] void QRadioButton(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN12QRadioButtonC2ERK7QStringP7QWidget(const QString & text, QWidget * parent) {
+void* C_ZN12QRadioButtonC2ERK7QStringP7QWidget(QString* text, QWidget * parent) {
   auto _nilp = (MyQRadioButton*)(0);
-  return  new MyQRadioButton(text, parent);
+  return  new MyQRadioButton(*text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qradiobutton.h:61

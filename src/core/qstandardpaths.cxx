@@ -29,8 +29,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qstandardpaths.h:97
 // [8] QString findExecutable(const class QString &, const class QStringList &)
 extern "C"
-void* C_ZN14QStandardPaths14findExecutableERK7QStringRK11QStringList(const QString & executableName, const QStringList & paths) {
-  auto rv = QStandardPaths::findExecutable(executableName, paths);
+void* C_ZN14QStandardPaths14findExecutableERK7QStringRK11QStringList(QString* executableName, QStringList* paths) {
+  auto rv = QStandardPaths::findExecutable(*executableName, *paths);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available

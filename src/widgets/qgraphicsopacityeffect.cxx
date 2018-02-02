@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:273
 // [-2] void draw(class QPainter *)
 extern "C"
-void* callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter = 0;
+void* callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter = cbfn; }
+{ callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    if (callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter != 0) {
-      // callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsOpacityEffect::draw(painter);
   }
@@ -78,8 +79,8 @@ void C_ZN22QGraphicsOpacityEffect10setOpacityEd(void *this_, qreal opacity) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:266
 // [-2] void setOpacityMask(const class QBrush &)
 extern "C"
-void C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *this_, const QBrush & mask) {
-  ((QGraphicsOpacityEffect*)this_)->setOpacityMask(mask);
+void C_ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush(void *this_, QBrush* mask) {
+  ((QGraphicsOpacityEffect*)this_)->setOpacityMask(*mask);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:269
@@ -92,7 +93,7 @@ void C_ZN22QGraphicsOpacityEffect14opacityChangedEd(void *this_, qreal opacity) 
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:270
 // [-2] void opacityMaskChanged(const class QBrush &)
 extern "C"
-void C_ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(void *this_, const QBrush & mask) {
-  ((QGraphicsOpacityEffect*)this_)->opacityMaskChanged(mask);
+void C_ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush(void *this_, QBrush* mask) {
+  ((QGraphicsOpacityEffect*)this_)->opacityMaskChanged(*mask);
 }
 //  main block end

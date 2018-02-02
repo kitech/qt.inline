@@ -14,4 +14,9 @@ public:
   virtual ~MyQLinkedListData() {}
 };
 
+
+extern "C"
+void C_ZN15QLinkedListDataD2Ev(void *this_) {
+  delete (QLinkedListData*)(this_);
+}
 //  main block end

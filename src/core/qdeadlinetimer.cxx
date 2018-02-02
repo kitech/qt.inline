@@ -45,8 +45,8 @@ void* C_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE(qint64 msecs, Qt::TimerType type) 
 // /usr/include/qt/QtCore/qdeadlinetimer.h:71
 // [-2] void swap(class QDeadlineTimer &)
 extern "C"
-void C_ZN14QDeadlineTimer4swapERS_(void *this_, QDeadlineTimer & other) {
-  ((QDeadlineTimer*)this_)->swap(other);
+void C_ZN14QDeadlineTimer4swapERS_(void *this_, QDeadlineTimer* other) {
+  ((QDeadlineTimer*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdeadlinetimer.h:74
@@ -154,5 +154,10 @@ return new QDeadlineTimer(rv);
 extern "C"
 std::chrono::nanoseconds C_ZNK14QDeadlineTimer23remainingTimeAsDurationEv(void *this_) {
   return (std::chrono::nanoseconds)((QDeadlineTimer*)this_)->remainingTimeAsDuration();
+}
+
+extern "C"
+void C_ZN14QDeadlineTimerD2Ev(void *this_) {
+  delete (QDeadlineTimer*)(this_);
 }
 //  main block end

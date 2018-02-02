@@ -48,15 +48,15 @@ void* C_ZNK15QImageIOHandler6deviceEv(void *this_) {
 // /usr/include/qt/QtGui/qimageiohandler.h:68
 // [-2] void setFormat(const class QByteArray &)
 extern "C"
-void C_ZN15QImageIOHandler9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
-  ((QImageIOHandler*)this_)->setFormat(format);
+void C_ZN15QImageIOHandler9setFormatERK10QByteArray(void *this_, QByteArray* format) {
+  ((QImageIOHandler*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:69
 // [-2] void setFormat(const class QByteArray &)
 extern "C"
-void C_ZNK15QImageIOHandler9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
-  ((QImageIOHandler*)this_)->setFormat(format);
+void C_ZNK15QImageIOHandler9setFormatERK10QByteArray(void *this_, QByteArray* format) {
+  ((QImageIOHandler*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:70
@@ -92,8 +92,8 @@ bool C_ZN15QImageIOHandler4readEP6QImage(void *this_, QImage * image) {
 // /usr/include/qt/QtGui/qimageiohandler.h:76
 // [1] bool write(const class QImage &)
 extern "C"
-bool C_ZN15QImageIOHandler5writeERK6QImage(void *this_, const QImage & image) {
-  return (bool)((QImageIOHandler*)this_)->write(image);
+bool C_ZN15QImageIOHandler5writeERK6QImage(void *this_, QImage* image) {
+  return (bool)((QImageIOHandler*)this_)->write(*image);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:115
@@ -107,8 +107,8 @@ return new QVariant(rv);
 // /usr/include/qt/QtGui/qimageiohandler.h:116
 // [-2] void setOption(enum QImageIOHandler::ImageOption, const class QVariant &)
 extern "C"
-void C_ZN15QImageIOHandler9setOptionENS_11ImageOptionERK8QVariant(void *this_, QImageIOHandler::ImageOption option, const QVariant & value) {
-  ((QImageIOHandler*)this_)->setOption(option, value);
+void C_ZN15QImageIOHandler9setOptionENS_11ImageOptionERK8QVariant(void *this_, QImageIOHandler::ImageOption option, QVariant* value) {
+  ((QImageIOHandler*)this_)->setOption(option, *value);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimageiohandler.h:117

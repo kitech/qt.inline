@@ -38,15 +38,15 @@ void* C_ZN6QMovieC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtGui/qmovie.h:83
 // [-2] void QMovie(class QIODevice *, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, const QByteArray & format, QObject * parent) {
-  return  new QMovie(device, format, parent);
+void* C_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject(QIODevice * device, QByteArray* format, QObject * parent) {
+  return  new QMovie(device, *format, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:84
 // [-2] void QMovie(const class QString &, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(const QString & fileName, const QByteArray & format, QObject * parent) {
-  return  new QMovie(fileName, format, parent);
+void* C_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject(QString* fileName, QByteArray* format, QObject * parent) {
+  return  new QMovie(*fileName, *format, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:85
@@ -73,8 +73,8 @@ void* C_ZNK6QMovie6deviceEv(void *this_) {
 // /usr/include/qt/QtGui/qmovie.h:92
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN6QMovie11setFileNameERK7QString(void *this_, const QString & fileName) {
-  ((QMovie*)this_)->setFileName(fileName);
+void C_ZN6QMovie11setFileNameERK7QString(void *this_, QString* fileName) {
+  ((QMovie*)this_)->setFileName(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:93
@@ -88,8 +88,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qmovie.h:95
 // [-2] void setFormat(const class QByteArray &)
 extern "C"
-void C_ZN6QMovie9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
-  ((QMovie*)this_)->setFormat(format);
+void C_ZN6QMovie9setFormatERK10QByteArray(void *this_, QByteArray* format) {
+  ((QMovie*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:96
@@ -103,8 +103,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtGui/qmovie.h:98
 // [-2] void setBackgroundColor(const class QColor &)
 extern "C"
-void C_ZN6QMovie18setBackgroundColorERK6QColor(void *this_, const QColor & color) {
-  ((QMovie*)this_)->setBackgroundColor(color);
+void C_ZN6QMovie18setBackgroundColorERK6QColor(void *this_, QColor* color) {
+  ((QMovie*)this_)->setBackgroundColor(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:99
@@ -221,8 +221,8 @@ return new QSize(rv);
 // /usr/include/qt/QtGui/qmovie.h:120
 // [-2] void setScaledSize(const class QSize &)
 extern "C"
-void C_ZN6QMovie13setScaledSizeERK5QSize(void *this_, const QSize & size) {
-  ((QMovie*)this_)->setScaledSize(size);
+void C_ZN6QMovie13setScaledSizeERK5QSize(void *this_, QSize* size) {
+  ((QMovie*)this_)->setScaledSize(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:122
@@ -249,15 +249,15 @@ void C_ZN6QMovie7startedEv(void *this_) {
 // /usr/include/qt/QtGui/qmovie.h:127
 // [-2] void resized(const class QSize &)
 extern "C"
-void C_ZN6QMovie7resizedERK5QSize(void *this_, const QSize & size) {
-  ((QMovie*)this_)->resized(size);
+void C_ZN6QMovie7resizedERK5QSize(void *this_, QSize* size) {
+  ((QMovie*)this_)->resized(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:128
 // [-2] void updated(const class QRect &)
 extern "C"
-void C_ZN6QMovie7updatedERK5QRect(void *this_, const QRect & rect) {
-  ((QMovie*)this_)->updated(rect);
+void C_ZN6QMovie7updatedERK5QRect(void *this_, QRect* rect) {
+  ((QMovie*)this_)->updated(*rect);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:129

@@ -38,8 +38,8 @@ void* C_ZN9QMarginsFC2Edddd(qreal left, qreal top, qreal right, qreal bottom) {
 // /usr/include/qt/QtCore/qmargins.h:290
 // [-2] void QMarginsF(const class QMargins &)
 extern "C"
-void* C_ZN9QMarginsFC2ERK8QMargins(const QMargins & margins) {
-  return  new QMarginsF(margins);
+void* C_ZN9QMarginsFC2ERK8QMargins(QMargins* margins) {
+  return  new QMarginsF(*margins);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmargins.h:292
@@ -111,5 +111,10 @@ extern "C"
 void* C_ZNK9QMarginsF9toMarginsEv(void *this_) {
   auto rv = ((QMarginsF*)this_)->toMargins();
 return new QMargins(rv);
+}
+
+extern "C"
+void C_ZN9QMarginsFD2Ev(void *this_) {
+  delete (QMarginsF*)(this_);
 }
 //  main block end

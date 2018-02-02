@@ -146,8 +146,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qdatetime.h:97
 // [8] QString toString(const class QString &)
 extern "C"
-void* C_ZNK5QDate8toStringERK7QString(void *this_, const QString & format) {
-  auto rv = ((QDate*)this_)->toString(format);
+void* C_ZNK5QDate8toStringERK7QString(void *this_, QString* format) {
+  auto rv = ((QDate*)this_)->toString(*format);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -207,8 +207,8 @@ return new QDate(rv);
 // /usr/include/qt/QtCore/qdatetime.h:116
 // [8] qint64 daysTo(const class QDate &)
 extern "C"
-qint64 C_ZNK5QDate6daysToERKS_(void *this_, const QDate & arg0) {
-  return (qint64)((QDate*)this_)->daysTo(arg0);
+qint64 C_ZNK5QDate6daysToERKS_(void *this_, QDate* arg0) {
+  return (qint64)((QDate*)this_)->daysTo(*arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:125
@@ -222,16 +222,16 @@ return new QDate(rv);
 // /usr/include/qt/QtCore/qdatetime.h:127
 // [8] QDate fromString(const class QString &, Qt::DateFormat)
 extern "C"
-void* C_ZN5QDate10fromStringERK7QStringN2Qt10DateFormatE(const QString & s, Qt::DateFormat f) {
-  auto rv = QDate::fromString(s, f);
+void* C_ZN5QDate10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFormat f) {
+  auto rv = QDate::fromString(*s, f);
 return new QDate(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:128
 // [8] QDate fromString(const class QString &, const class QString &)
 extern "C"
-void* C_ZN5QDate10fromStringERK7QStringS2_(const QString & s, const QString & format) {
-  auto rv = QDate::fromString(s, format);
+void* C_ZN5QDate10fromStringERK7QStringS2_(QString* s, QString* format) {
+  auto rv = QDate::fromString(*s, *format);
 return new QDate(rv);
 }
 // Public static Visibility=Default Availability=Available
@@ -262,5 +262,10 @@ return new QDate(rv);
 extern "C"
 qint64 C_ZNK5QDate11toJulianDayEv(void *this_) {
   return (qint64)((QDate*)this_)->toJulianDay();
+}
+
+extern "C"
+void C_ZN5QDateD2Ev(void *this_) {
+  delete (QDate*)(this_);
 }
 //  main block end

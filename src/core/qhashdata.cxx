@@ -70,4 +70,9 @@ extern "C"
 void* C_ZN9QHashData9firstNodeEv(void *this_) {
   return (void*)((QHashData*)this_)->firstNode();
 }
+
+extern "C"
+void C_ZN9QHashDataD2Ev(void *this_) {
+  delete (QHashData*)(this_);
+}
 //  main block end

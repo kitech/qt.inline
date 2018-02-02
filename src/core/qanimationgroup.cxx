@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qanimationgroup.h:70
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QAnimationGroup5eventEP6QEvent = 0;
+void* callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QAnimationGroup5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QAnimationGroup5eventEP6QEvent = cbfn; }
+{ callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAnimationGroup : public QAnimationGroup {
 public:
@@ -23,8 +23,9 @@ public:
 MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN15QAnimationGroup5eventEP6QEvent != 0) {
-      // callback_ZN15QAnimationGroup5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QAnimationGroup::event(event);
   }

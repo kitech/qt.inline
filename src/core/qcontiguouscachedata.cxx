@@ -21,4 +21,9 @@ extern "C"
 void* C_ZN20QContiguousCacheData12allocateDataEii(int size, int alignment) {
   return (void*)QContiguousCacheData::allocateData(size, alignment);
 }
+
+extern "C"
+void C_ZN20QContiguousCacheDataD2Ev(void *this_) {
+  delete (QContiguousCacheData*)(this_);
+}
 //  main block end

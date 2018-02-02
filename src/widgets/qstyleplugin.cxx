@@ -41,7 +41,7 @@ void C_ZN12QStylePluginD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qstyleplugin.h:61
 // [8] QStyle * create(const class QString &)
 extern "C"
-void* C_ZN12QStylePlugin6createERK7QString(void *this_, const QString & key) {
-  return (void*)((QStylePlugin*)this_)->create(key);
+void* C_ZN12QStylePlugin6createERK7QString(void *this_, QString* key) {
+  return (void*)((QStylePlugin*)this_)->create(*key);
 }
 //  main block end

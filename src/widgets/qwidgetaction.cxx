@@ -12,30 +12,30 @@
 // /usr/include/qt/QtWidgets/qwidgetaction.h:69
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN13QWidgetAction5eventEP6QEvent = 0;
+void* callback_ZN13QWidgetAction5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QWidgetAction5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QWidgetAction5eventEP6QEvent = cbfn; }
+{ callback_ZN13QWidgetAction5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:70
 // [1] bool eventFilter(class QObject *, class QEvent *)
 extern "C"
-void* callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent = 0;
+void* callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent = cbfn; }
+{ callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:71
 // [8] QWidget * createWidget(class QWidget *)
 extern "C"
-void* callback_ZN13QWidgetAction12createWidgetEP7QWidget = 0;
+void* callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr = 0;
 extern "C" void set_callback_ZN13QWidgetAction12createWidgetEP7QWidget(void*cbfn)
-{ callback_ZN13QWidgetAction12createWidgetEP7QWidget = cbfn; }
+{ callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidgetaction.h:72
 // [-2] void deleteWidget(class QWidget *)
 extern "C"
-void* callback_ZN13QWidgetAction12deleteWidgetEP7QWidget = 0;
+void* callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr = 0;
 extern "C" void set_callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(void*cbfn)
-{ callback_ZN13QWidgetAction12deleteWidgetEP7QWidget = cbfn; }
+{ callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr = cbfn; }
 
 class MyQWidgetAction : public QWidgetAction {
 public:
@@ -44,29 +44,33 @@ public:
 MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN13QWidgetAction5eventEP6QEvent != 0) {
-      // callback_ZN13QWidgetAction5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QWidgetAction5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QWidgetAction::event(arg0);
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    if (callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent != 0) {
-      // callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0, arg1);
     }
     return QWidgetAction::eventFilter(arg0, arg1);
   }
 // QWidget * createWidget(class QWidget *)
   virtual QWidget * createWidget(QWidget * parent) {
-    if (callback_ZN13QWidgetAction12createWidgetEP7QWidget != 0) {
-      // callback_ZN13QWidgetAction12createWidgetEP7QWidget(parent);
+    auto fnptr = ((QWidget * (*)(void* , QWidget *))(callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , parent);
     }
     return QWidgetAction::createWidget(parent);
   }
 // void deleteWidget(class QWidget *)
   virtual void deleteWidget(QWidget * widget) {
-    if (callback_ZN13QWidgetAction12deleteWidgetEP7QWidget != 0) {
-      // callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(widget);
+    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , widget);
     }
     QWidgetAction::deleteWidget(widget);
   }

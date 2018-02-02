@@ -87,6 +87,7 @@ extern "C"{
     void QDynSlotObject_connect_switch(QObject*src, char*signature, QDynSlotObject*me, int on);
     void QDynSlotObject_connect_test(QObject*ofrom, QObject*oto);
     void QDynSlotObject_trigger_test(QObject*osrc);
+    void QDynSlotObject_set_debug(int on);
 #ifdef __cplusplus
 };
 #endif

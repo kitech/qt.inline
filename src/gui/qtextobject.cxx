@@ -12,23 +12,23 @@
 // /usr/include/qt/QtGui/qtextobject.h:65
 // [-2] void QTextObject(class QTextDocument *)
 extern "C"
-void* callback_ZN11QTextObjectC1EP13QTextDocument = 0;
+void* callback_ZN11QTextObjectC1EP13QTextDocument_fnptr = 0;
 extern "C" void set_callback_ZN11QTextObjectC1EP13QTextDocument(void*cbfn)
-{ callback_ZN11QTextObjectC1EP13QTextDocument = cbfn; }
+{ callback_ZN11QTextObjectC1EP13QTextDocument_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:66
 // [-2] void ~QTextObject()
 extern "C"
-void* callback_ZN11QTextObjectD1Ev = 0;
+void* callback_ZN11QTextObjectD1Ev_fnptr = 0;
 extern "C" void set_callback_ZN11QTextObjectD1Ev(void*cbfn)
-{ callback_ZN11QTextObjectD1Ev = cbfn; }
+{ callback_ZN11QTextObjectD1Ev_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:68
 // [-2] void setFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN11QTextObject9setFormatERK11QTextFormat = 0;
+void* callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN11QTextObject9setFormatERK11QTextFormat(void*cbfn)
-{ callback_ZN11QTextObject9setFormatERK11QTextFormat = cbfn; }
+{ callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextObject : public QTextObject {
 public:
@@ -38,8 +38,9 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
 // void ~QTextObject()
 // void setFormat(const class QTextFormat &)
   virtual void setFormat(const QTextFormat & format) {
-    if (callback_ZN11QTextObject9setFormatERK11QTextFormat != 0) {
-      // callback_ZN11QTextObject9setFormatERK11QTextFormat(format);
+    auto fnptr = ((void (*)(void* , QTextFormat*))(callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QTextFormat*)&format);
     }
     QTextObject::setFormat(format);
   }

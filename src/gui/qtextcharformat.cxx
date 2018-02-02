@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:557
 // [-2] void QTextCharFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN15QTextCharFormatC1ERK11QTextFormat = 0;
+void* callback_ZN15QTextCharFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN15QTextCharFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN15QTextCharFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN15QTextCharFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextCharFormat : public QTextCharFormat {
 public:
@@ -43,15 +43,15 @@ bool C_ZNK15QTextCharFormat7isValidEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:420
 // [-2] void setFont(const class QFont &, enum QTextCharFormat::FontPropertiesInheritanceBehavior)
 extern "C"
-void C_ZN15QTextCharFormat7setFontERK5QFontNS_33FontPropertiesInheritanceBehaviorE(void *this_, const QFont & font, QTextCharFormat::FontPropertiesInheritanceBehavior behavior) {
-  ((QTextCharFormat*)this_)->setFont(font, behavior);
+void C_ZN15QTextCharFormat7setFontERK5QFontNS_33FontPropertiesInheritanceBehaviorE(void *this_, QFont* font, QTextCharFormat::FontPropertiesInheritanceBehavior behavior) {
+  ((QTextCharFormat*)this_)->setFont(*font, behavior);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:421
 // [-2] void setFont(const class QFont &)
 extern "C"
-void C_ZN15QTextCharFormat7setFontERK5QFont(void *this_, const QFont & font) {
-  ((QTextCharFormat*)this_)->setFont(font);
+void C_ZN15QTextCharFormat7setFontERK5QFont(void *this_, QFont* font) {
+  ((QTextCharFormat*)this_)->setFont(*font);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:422
@@ -65,8 +65,8 @@ return new QFont(rv);
 // /usr/include/qt/QtGui/qtextformat.h:424
 // [-2] void setFontFamily(const class QString &)
 extern "C"
-void C_ZN15QTextCharFormat13setFontFamilyERK7QString(void *this_, const QString & family) {
-  ((QTextCharFormat*)this_)->setFontFamily(family);
+void C_ZN15QTextCharFormat13setFontFamilyERK7QString(void *this_, QString* family) {
+  ((QTextCharFormat*)this_)->setFontFamily(*family);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:426
@@ -220,8 +220,8 @@ bool C_ZNK15QTextCharFormat13fontStrikeOutEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:473
 // [-2] void setUnderlineColor(const class QColor &)
 extern "C"
-void C_ZN15QTextCharFormat17setUnderlineColorERK6QColor(void *this_, const QColor & color) {
-  ((QTextCharFormat*)this_)->setUnderlineColor(color);
+void C_ZN15QTextCharFormat17setUnderlineColorERK6QColor(void *this_, QColor* color) {
+  ((QTextCharFormat*)this_)->setUnderlineColor(*color);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:475
@@ -347,8 +347,8 @@ QTextCharFormat::VerticalAlignment C_ZNK15QTextCharFormat17verticalAlignmentEv(v
 // /usr/include/qt/QtGui/qtextformat.h:521
 // [-2] void setTextOutline(const class QPen &)
 extern "C"
-void C_ZN15QTextCharFormat14setTextOutlineERK4QPen(void *this_, const QPen & pen) {
-  ((QTextCharFormat*)this_)->setTextOutline(pen);
+void C_ZN15QTextCharFormat14setTextOutlineERK4QPen(void *this_, QPen* pen) {
+  ((QTextCharFormat*)this_)->setTextOutline(*pen);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:523
@@ -362,8 +362,8 @@ return new QPen(rv);
 // /usr/include/qt/QtGui/qtextformat.h:526
 // [-2] void setToolTip(const class QString &)
 extern "C"
-void C_ZN15QTextCharFormat10setToolTipERK7QString(void *this_, const QString & tip) {
-  ((QTextCharFormat*)this_)->setToolTip(tip);
+void C_ZN15QTextCharFormat10setToolTipERK7QString(void *this_, QString* tip) {
+  ((QTextCharFormat*)this_)->setToolTip(*tip);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:528
@@ -391,8 +391,8 @@ bool C_ZNK15QTextCharFormat8isAnchorEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:536
 // [-2] void setAnchorHref(const class QString &)
 extern "C"
-void C_ZN15QTextCharFormat13setAnchorHrefERK7QString(void *this_, const QString & value) {
-  ((QTextCharFormat*)this_)->setAnchorHref(value);
+void C_ZN15QTextCharFormat13setAnchorHrefERK7QString(void *this_, QString* value) {
+  ((QTextCharFormat*)this_)->setAnchorHref(*value);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:538
@@ -406,8 +406,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qtextformat.h:541
 // [-2] void setAnchorName(const class QString &)
 extern "C"
-void C_ZN15QTextCharFormat13setAnchorNameERK7QString(void *this_, const QString & name) {
-  ((QTextCharFormat*)this_)->setAnchorName(name);
+void C_ZN15QTextCharFormat13setAnchorNameERK7QString(void *this_, QString* name) {
+  ((QTextCharFormat*)this_)->setAnchorName(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:543
@@ -421,8 +421,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qtextformat.h:545
 // [-2] void setAnchorNames(const class QStringList &)
 extern "C"
-void C_ZN15QTextCharFormat14setAnchorNamesERK11QStringList(void *this_, const QStringList & names) {
-  ((QTextCharFormat*)this_)->setAnchorNames(names);
+void C_ZN15QTextCharFormat14setAnchorNamesERK11QStringList(void *this_, QStringList* names) {
+  ((QTextCharFormat*)this_)->setAnchorNames(*names);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:549
@@ -451,5 +451,10 @@ void C_ZN15QTextCharFormat22setTableCellColumnSpanEi(void *this_, int tableCellC
 extern "C"
 int C_ZNK15QTextCharFormat19tableCellColumnSpanEv(void *this_) {
   return (int)((QTextCharFormat*)this_)->tableCellColumnSpan();
+}
+
+extern "C"
+void C_ZN15QTextCharFormatD2Ev(void *this_) {
+  delete (QTextCharFormat*)(this_);
 }
 //  main block end

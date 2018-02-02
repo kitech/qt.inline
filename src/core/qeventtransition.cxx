@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qeventtransition.h:68
 // [1] bool eventTest(class QEvent *)
 extern "C"
-void* callback_ZN16QEventTransition9eventTestEP6QEvent = 0;
+void* callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QEventTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN16QEventTransition9eventTestEP6QEvent = cbfn; }
+{ callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:69
 // [-2] void onTransition(class QEvent *)
 extern "C"
-void* callback_ZN16QEventTransition12onTransitionEP6QEvent = 0;
+void* callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QEventTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN16QEventTransition12onTransitionEP6QEvent = cbfn; }
+{ callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:71
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN16QEventTransition5eventEP6QEvent = 0;
+void* callback_ZN16QEventTransition5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QEventTransition5eventEP6QEvent(void*cbfn)
-{ callback_ZN16QEventTransition5eventEP6QEvent = cbfn; }
+{ callback_ZN16QEventTransition5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQEventTransition : public QEventTransition {
 public:
@@ -39,22 +39,25 @@ MyQEventTransition(QState * sourceState) : QEventTransition(sourceState) {}
 MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : QEventTransition(object, type, sourceState) {}
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    if (callback_ZN16QEventTransition9eventTestEP6QEvent != 0) {
-      // callback_ZN16QEventTransition9eventTestEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QEventTransition::eventTest(event);
   }
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    if (callback_ZN16QEventTransition12onTransitionEP6QEvent != 0) {
-      // callback_ZN16QEventTransition12onTransitionEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QEventTransition::onTransition(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN16QEventTransition5eventEP6QEvent != 0) {
-      // callback_ZN16QEventTransition5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QEventTransition5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QEventTransition::event(e);
   }

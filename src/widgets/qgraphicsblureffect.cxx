@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:186
 // [-2] void draw(class QPainter *)
 extern "C"
-void* callback_ZN19QGraphicsBlurEffect4drawEP8QPainter = 0;
+void* callback_ZN19QGraphicsBlurEffect4drawEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN19QGraphicsBlurEffect4drawEP8QPainter = cbfn; }
+{ callback_ZN19QGraphicsBlurEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsBlurEffect : public QGraphicsBlurEffect {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsBlurEffect(QObject * parent) : QGraphicsBlurEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    if (callback_ZN19QGraphicsBlurEffect4drawEP8QPainter != 0) {
-      // callback_ZN19QGraphicsBlurEffect4drawEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN19QGraphicsBlurEffect4drawEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsBlurEffect::draw(painter);
   }
@@ -56,8 +57,8 @@ void C_ZN19QGraphicsBlurEffectD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:173
 // [32] QRectF boundingRectFor(const class QRectF &)
 extern "C"
-void* C_ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF(void *this_, const QRectF & rect) {
-  auto rv = ((QGraphicsBlurEffect*)this_)->boundingRectFor(rect);
+void* C_ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF(void *this_, QRectF* rect) {
+  auto rv = ((QGraphicsBlurEffect*)this_)->boundingRectFor(*rect);
 return new QRectF(rv);
 }
 // Public Visibility=Default Availability=Available

@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qpropertyanimation.h:69
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN18QPropertyAnimation5eventEP6QEvent = 0;
+void* callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN18QPropertyAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN18QPropertyAnimation5eventEP6QEvent = cbfn; }
+{ callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:70
 // [-2] void updateCurrentValue(const class QVariant &)
 extern "C"
-void* callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant = 0;
+void* callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void*cbfn)
-{ callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant = cbfn; }
+{ callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:71
 // [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
 extern "C"
-void* callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_ = 0;
+void* callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
 extern "C" void set_callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-{ callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_ = cbfn; }
+{ callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
 
 class MyQPropertyAnimation : public QPropertyAnimation {
 public:
@@ -39,22 +39,25 @@ MyQPropertyAnimation(QObject * parent) : QPropertyAnimation(parent) {}
 MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject * parent) : QPropertyAnimation(target, propertyName, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN18QPropertyAnimation5eventEP6QEvent != 0) {
-      // callback_ZN18QPropertyAnimation5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QPropertyAnimation::event(event);
   }
 // void updateCurrentValue(const class QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
-    if (callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant != 0) {
-      // callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(value);
+    auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QVariant*)&value);
     }
     QPropertyAnimation::updateCurrentValue(value);
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    if (callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_ != 0) {
-      // callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(newState, oldState);
+    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , newState, oldState);
     }
     QPropertyAnimation::updateState(newState, oldState);
   }
@@ -79,9 +82,9 @@ void* C_ZN18QPropertyAnimationC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtCore/qpropertyanimation.h:59
 // [-2] void QPropertyAnimation(class QObject *, const class QByteArray &, class QObject *)
 extern "C"
-void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, const QByteArray & propertyName, QObject * parent) {
+void* C_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_(QObject * target, QByteArray* propertyName, QObject * parent) {
   auto _nilp = (MyQPropertyAnimation*)(0);
-  return  new MyQPropertyAnimation(target, propertyName, parent);
+  return  new MyQPropertyAnimation(target, *propertyName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpropertyanimation.h:60
@@ -116,7 +119,7 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qpropertyanimation.h:66
 // [-2] void setPropertyName(const class QByteArray &)
 extern "C"
-void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, const QByteArray & propertyName) {
-  ((QPropertyAnimation*)this_)->setPropertyName(propertyName);
+void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, QByteArray* propertyName) {
+  ((QPropertyAnimation*)this_)->setPropertyName(*propertyName);
 }
 //  main block end

@@ -12,72 +12,72 @@
 // /usr/include/qt/QtWidgets/qmdiarea.h:146
 // [-2] void setupViewport(class QWidget *)
 extern "C"
-void* callback_ZN8QMdiArea13setupViewportEP7QWidget = 0;
+void* callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea13setupViewportEP7QWidget(void*cbfn)
-{ callback_ZN8QMdiArea13setupViewportEP7QWidget = cbfn; }
+{ callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:149
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN8QMdiArea5eventEP6QEvent = 0;
+void* callback_ZN8QMdiArea5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea5eventEP6QEvent = cbfn; }
+{ callback_ZN8QMdiArea5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:150
 // [1] bool eventFilter(class QObject *, class QEvent *)
 extern "C"
-void* callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent = 0;
+void* callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent = cbfn; }
+{ callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:151
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN8QMdiArea10paintEventEP11QPaintEvent = 0;
+void* callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN8QMdiArea10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:152
 // [-2] void childEvent(class QChildEvent *)
 extern "C"
-void* callback_ZN8QMdiArea10childEventEP11QChildEvent = 0;
+void* callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN8QMdiArea10childEventEP11QChildEvent = cbfn; }
+{ callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:153
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN8QMdiArea11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN8QMdiArea11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:154
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN8QMdiArea10timerEventEP11QTimerEvent = 0;
+void* callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN8QMdiArea10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:155
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN8QMdiArea9showEventEP10QShowEvent = 0;
+void* callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN8QMdiArea9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:156
 // [1] bool viewportEvent(class QEvent *)
 extern "C"
-void* callback_ZN8QMdiArea13viewportEventEP6QEvent = 0;
+void* callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea13viewportEventEP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea13viewportEventEP6QEvent = cbfn; }
+{ callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:157
 // [-2] void scrollContentsBy(int, int)
 extern "C"
-void* callback_ZN8QMdiArea16scrollContentsByEii = 0;
+void* callback_ZN8QMdiArea16scrollContentsByEii_fnptr = 0;
 extern "C" void set_callback_ZN8QMdiArea16scrollContentsByEii(void*cbfn)
-{ callback_ZN8QMdiArea16scrollContentsByEii = cbfn; }
+{ callback_ZN8QMdiArea16scrollContentsByEii_fnptr = cbfn; }
 
 class MyQMdiArea : public QMdiArea {
 public:
@@ -86,71 +86,81 @@ public:
 MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 // void setupViewport(class QWidget *)
   virtual void setupViewport(QWidget * viewport) {
-    if (callback_ZN8QMdiArea13setupViewportEP7QWidget != 0) {
-      // callback_ZN8QMdiArea13setupViewportEP7QWidget(viewport);
+    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , viewport);
     }
     QMdiArea::setupViewport(viewport);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN8QMdiArea5eventEP6QEvent != 0) {
-      // callback_ZN8QMdiArea5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QMdiArea::event(event);
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
-    if (callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent != 0) {
-      // callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(object, event);
+    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , object, event);
     }
     return QMdiArea::eventFilter(object, event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * paintEvent) {
-    if (callback_ZN8QMdiArea10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN8QMdiArea10paintEventEP11QPaintEvent(paintEvent);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , paintEvent);
     }
     QMdiArea::paintEvent(paintEvent);
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * childEvent) {
-    if (callback_ZN8QMdiArea10childEventEP11QChildEvent != 0) {
-      // callback_ZN8QMdiArea10childEventEP11QChildEvent(childEvent);
+    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , childEvent);
     }
     QMdiArea::childEvent(childEvent);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * resizeEvent) {
-    if (callback_ZN8QMdiArea11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN8QMdiArea11resizeEventEP12QResizeEvent(resizeEvent);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , resizeEvent);
     }
     QMdiArea::resizeEvent(resizeEvent);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * timerEvent) {
-    if (callback_ZN8QMdiArea10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN8QMdiArea10timerEventEP11QTimerEvent(timerEvent);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , timerEvent);
     }
     QMdiArea::timerEvent(timerEvent);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
-    if (callback_ZN8QMdiArea9showEventEP10QShowEvent != 0) {
-      // callback_ZN8QMdiArea9showEventEP10QShowEvent(showEvent);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , showEvent);
     }
     QMdiArea::showEvent(showEvent);
   }
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
-    if (callback_ZN8QMdiArea13viewportEventEP6QEvent != 0) {
-      // callback_ZN8QMdiArea13viewportEventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QMdiArea::viewportEvent(event);
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    if (callback_ZN8QMdiArea16scrollContentsByEii != 0) {
-      // callback_ZN8QMdiArea16scrollContentsByEii(dx, dy);
+    auto fnptr = ((void (*)(void* , int, int))(callback_ZN8QMdiArea16scrollContentsByEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , dx, dy);
     }
     QMdiArea::scrollContentsBy(dx, dy);
   }
@@ -234,8 +244,8 @@ return new QBrush(rv);
 // /usr/include/qt/QtWidgets/qmdiarea.h:104
 // [-2] void setBackground(const class QBrush &)
 extern "C"
-void C_ZN8QMdiArea13setBackgroundERK6QBrush(void *this_, const QBrush & background) {
-  ((QMdiArea*)this_)->setBackground(background);
+void C_ZN8QMdiArea13setBackgroundERK6QBrush(void *this_, QBrush* background) {
+  ((QMdiArea*)this_)->setBackground(*background);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:106

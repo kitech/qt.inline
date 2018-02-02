@@ -12,268 +12,268 @@
 // /usr/include/qt/QtWidgets/qwidget.h:611
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN7QWidget5eventEP6QEvent = 0;
+void* callback_ZN7QWidget5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN7QWidget5eventEP6QEvent = cbfn; }
+{ callback_ZN7QWidget5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:612
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QWidget15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN7QWidget15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QWidget15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QWidget15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:613
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:614
 // [-2] void mouseDoubleClickEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent = 0;
+void* callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:615
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:617
 // [-2] void wheelEvent(class QWheelEvent *)
 extern "C"
-void* callback_ZN7QWidget10wheelEventEP11QWheelEvent = 0;
+void* callback_ZN7QWidget10wheelEventEP11QWheelEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN7QWidget10wheelEventEP11QWheelEvent = cbfn; }
+{ callback_ZN7QWidget10wheelEventEP11QWheelEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:619
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN7QWidget13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN7QWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN7QWidget13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN7QWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:620
 // [-2] void keyReleaseEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent = 0;
+void* callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent = cbfn; }
+{ callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:621
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN7QWidget12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN7QWidget12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN7QWidget12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN7QWidget12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:622
 // [-2] void focusOutEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN7QWidget13focusOutEventEP11QFocusEvent = 0;
+void* callback_ZN7QWidget13focusOutEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN7QWidget13focusOutEventEP11QFocusEvent = cbfn; }
+{ callback_ZN7QWidget13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:623
 // [-2] void enterEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QWidget10enterEventEP6QEvent = 0;
+void* callback_ZN7QWidget10enterEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget10enterEventEP6QEvent(void*cbfn)
-{ callback_ZN7QWidget10enterEventEP6QEvent = cbfn; }
+{ callback_ZN7QWidget10enterEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:624
 // [-2] void leaveEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QWidget10leaveEventEP6QEvent = 0;
+void* callback_ZN7QWidget10leaveEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget10leaveEventEP6QEvent(void*cbfn)
-{ callback_ZN7QWidget10leaveEventEP6QEvent = cbfn; }
+{ callback_ZN7QWidget10leaveEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:625
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN7QWidget10paintEventEP11QPaintEvent = 0;
+void* callback_ZN7QWidget10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN7QWidget10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN7QWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:626
 // [-2] void moveEvent(class QMoveEvent *)
 extern "C"
-void* callback_ZN7QWidget9moveEventEP10QMoveEvent = 0;
+void* callback_ZN7QWidget9moveEventEP10QMoveEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget9moveEventEP10QMoveEvent(void*cbfn)
-{ callback_ZN7QWidget9moveEventEP10QMoveEvent = cbfn; }
+{ callback_ZN7QWidget9moveEventEP10QMoveEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:627
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN7QWidget11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN7QWidget11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN7QWidget11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN7QWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:628
 // [-2] void closeEvent(class QCloseEvent *)
 extern "C"
-void* callback_ZN7QWidget10closeEventEP11QCloseEvent = 0;
+void* callback_ZN7QWidget10closeEventEP11QCloseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN7QWidget10closeEventEP11QCloseEvent = cbfn; }
+{ callback_ZN7QWidget10closeEventEP11QCloseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:630
 // [-2] void contextMenuEvent(class QContextMenuEvent *)
 extern "C"
-void* callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent = 0;
+void* callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent = cbfn; }
+{ callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:633
 // [-2] void tabletEvent(class QTabletEvent *)
 extern "C"
-void* callback_ZN7QWidget11tabletEventEP12QTabletEvent = 0;
+void* callback_ZN7QWidget11tabletEventEP12QTabletEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget11tabletEventEP12QTabletEvent(void*cbfn)
-{ callback_ZN7QWidget11tabletEventEP12QTabletEvent = cbfn; }
+{ callback_ZN7QWidget11tabletEventEP12QTabletEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:636
 // [-2] void actionEvent(class QActionEvent *)
 extern "C"
-void* callback_ZN7QWidget11actionEventEP12QActionEvent = 0;
+void* callback_ZN7QWidget11actionEventEP12QActionEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget11actionEventEP12QActionEvent(void*cbfn)
-{ callback_ZN7QWidget11actionEventEP12QActionEvent = cbfn; }
+{ callback_ZN7QWidget11actionEventEP12QActionEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:640
 // [-2] void dragEnterEvent(class QDragEnterEvent *)
 extern "C"
-void* callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent = 0;
+void* callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-{ callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent = cbfn; }
+{ callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:641
 // [-2] void dragMoveEvent(class QDragMoveEvent *)
 extern "C"
-void* callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent = 0;
+void* callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-{ callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent = cbfn; }
+{ callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:642
 // [-2] void dragLeaveEvent(class QDragLeaveEvent *)
 extern "C"
-void* callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent = 0;
+void* callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-{ callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent = cbfn; }
+{ callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:643
 // [-2] void dropEvent(class QDropEvent *)
 extern "C"
-void* callback_ZN7QWidget9dropEventEP10QDropEvent = 0;
+void* callback_ZN7QWidget9dropEventEP10QDropEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget9dropEventEP10QDropEvent(void*cbfn)
-{ callback_ZN7QWidget9dropEventEP10QDropEvent = cbfn; }
+{ callback_ZN7QWidget9dropEventEP10QDropEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:646
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN7QWidget9showEventEP10QShowEvent = 0;
+void* callback_ZN7QWidget9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN7QWidget9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN7QWidget9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:647
 // [-2] void hideEvent(class QHideEvent *)
 extern "C"
-void* callback_ZN7QWidget9hideEventEP10QHideEvent = 0;
+void* callback_ZN7QWidget9hideEventEP10QHideEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget9hideEventEP10QHideEvent(void*cbfn)
-{ callback_ZN7QWidget9hideEventEP10QHideEvent = cbfn; }
+{ callback_ZN7QWidget9hideEventEP10QHideEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:648
 // [1] bool nativeEvent(const class QByteArray &, void *, long *)
 extern "C"
-void* callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl = 0;
+void* callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl(void*cbfn)
-{ callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl = cbfn; }
+{ callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:651
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QWidget11changeEventEP6QEvent = 0;
+void* callback_ZN7QWidget11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN7QWidget11changeEventEP6QEvent = cbfn; }
+{ callback_ZN7QWidget11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:653
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
 extern "C"
-void* callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE = 0;
+void* callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
 extern "C" void set_callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE = cbfn; }
+{ callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:654
 // [-2] void initPainter(class QPainter *)
 extern "C"
-void* callback_ZNK7QWidget11initPainterEP8QPainter = 0;
+void* callback_ZNK7QWidget11initPainterEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZNK7QWidget11initPainterEP8QPainter(void*cbfn)
-{ callback_ZNK7QWidget11initPainterEP8QPainter = cbfn; }
+{ callback_ZNK7QWidget11initPainterEP8QPainter_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:655
 // [8] QPaintDevice * redirected(class QPoint *)
 extern "C"
-void* callback_ZNK7QWidget10redirectedEP6QPoint = 0;
+void* callback_ZNK7QWidget10redirectedEP6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK7QWidget10redirectedEP6QPoint(void*cbfn)
-{ callback_ZNK7QWidget10redirectedEP6QPoint = cbfn; }
+{ callback_ZNK7QWidget10redirectedEP6QPoint_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:656
 // [8] QPainter * sharedPainter()
 extern "C"
-void* callback_ZNK7QWidget13sharedPainterEv = 0;
+void* callback_ZNK7QWidget13sharedPainterEv_fnptr = 0;
 extern "C" void set_callback_ZNK7QWidget13sharedPainterEv(void*cbfn)
-{ callback_ZNK7QWidget13sharedPainterEv = cbfn; }
+{ callback_ZNK7QWidget13sharedPainterEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:658
 // [-2] void inputMethodEvent(class QInputMethodEvent *)
 extern "C"
-void* callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent = 0;
+void* callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-{ callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent = cbfn; }
+{ callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:666
 // [-2] void updateMicroFocus()
 extern "C"
-void* callback_ZN7QWidget16updateMicroFocusEv = 0;
+void* callback_ZN7QWidget16updateMicroFocusEv_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget16updateMicroFocusEv(void*cbfn)
-{ callback_ZN7QWidget16updateMicroFocusEv = cbfn; }
+{ callback_ZN7QWidget16updateMicroFocusEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:669
 // [-2] void create(WId, _Bool, _Bool)
 extern "C"
-void* callback_ZN7QWidget6createEybb = 0;
+void* callback_ZN7QWidget6createEybb_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget6createEybb(void*cbfn)
-{ callback_ZN7QWidget6createEybb = cbfn; }
+{ callback_ZN7QWidget6createEybb_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:671
 // [-2] void destroy(_Bool, _Bool)
 extern "C"
-void* callback_ZN7QWidget7destroyEbb = 0;
+void* callback_ZN7QWidget7destroyEbb_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget7destroyEbb(void*cbfn)
-{ callback_ZN7QWidget7destroyEbb = cbfn; }
+{ callback_ZN7QWidget7destroyEbb_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:675
 // [1] bool focusNextPrevChild(_Bool)
 extern "C"
-void* callback_ZN7QWidget18focusNextPrevChildEb = 0;
+void* callback_ZN7QWidget18focusNextPrevChildEb_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget18focusNextPrevChildEb(void*cbfn)
-{ callback_ZN7QWidget18focusNextPrevChildEb = cbfn; }
+{ callback_ZN7QWidget18focusNextPrevChildEb_fnptr = cbfn; }
 // Protected inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:676
 // [1] bool focusNextChild()
 extern "C"
-void* callback_ZN7QWidget14focusNextChildEv = 0;
+void* callback_ZN7QWidget14focusNextChildEv_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget14focusNextChildEv(void*cbfn)
-{ callback_ZN7QWidget14focusNextChildEv = cbfn; }
+{ callback_ZN7QWidget14focusNextChildEv_fnptr = cbfn; }
 // Protected inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:677
 // [1] bool focusPreviousChild()
 extern "C"
-void* callback_ZN7QWidget18focusPreviousChildEv = 0;
+void* callback_ZN7QWidget18focusPreviousChildEv_fnptr = 0;
 extern "C" void set_callback_ZN7QWidget18focusPreviousChildEv(void*cbfn)
-{ callback_ZN7QWidget18focusPreviousChildEv = cbfn; }
+{ callback_ZN7QWidget18focusPreviousChildEv_fnptr = cbfn; }
 
 class MyQWidget : public QWidget {
 public:
@@ -282,267 +282,305 @@ public:
 MyQWidget(QWidget * parent, QFlags<Qt::WindowType> f) : QWidget(parent, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN7QWidget5eventEP6QEvent != 0) {
-      // callback_ZN7QWidget5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QWidget5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QWidget::event(event);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    if (callback_ZN7QWidget15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN7QWidget15mousePressEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QWidget15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::mousePressEvent(event);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
-    if (callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QWidget17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::mouseReleaseEvent(event);
   }
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
-    if (callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent != 0) {
-      // callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::mouseDoubleClickEvent(event);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
-    if (callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QWidget14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::mouseMoveEvent(event);
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
-    if (callback_ZN7QWidget10wheelEventEP11QWheelEvent != 0) {
-      // callback_ZN7QWidget10wheelEventEP11QWheelEvent(event);
+    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN7QWidget10wheelEventEP11QWheelEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::wheelEvent(event);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    if (callback_ZN7QWidget13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN7QWidget13keyPressEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QWidget13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::keyPressEvent(event);
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
-    if (callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent != 0) {
-      // callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent(event);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QWidget15keyReleaseEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::keyReleaseEvent(event);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    if (callback_ZN7QWidget12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN7QWidget12focusInEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN7QWidget12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::focusInEvent(event);
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
-    if (callback_ZN7QWidget13focusOutEventEP11QFocusEvent != 0) {
-      // callback_ZN7QWidget13focusOutEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN7QWidget13focusOutEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::focusOutEvent(event);
   }
 // void enterEvent(class QEvent *)
   virtual void enterEvent(QEvent * event) {
-    if (callback_ZN7QWidget10enterEventEP6QEvent != 0) {
-      // callback_ZN7QWidget10enterEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QWidget10enterEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::enterEvent(event);
   }
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * event) {
-    if (callback_ZN7QWidget10leaveEventEP6QEvent != 0) {
-      // callback_ZN7QWidget10leaveEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QWidget10leaveEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::leaveEvent(event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    if (callback_ZN7QWidget10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN7QWidget10paintEventEP11QPaintEvent(event);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QWidget10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::paintEvent(event);
   }
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * event) {
-    if (callback_ZN7QWidget9moveEventEP10QMoveEvent != 0) {
-      // callback_ZN7QWidget9moveEventEP10QMoveEvent(event);
+    auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN7QWidget9moveEventEP10QMoveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::moveEvent(event);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    if (callback_ZN7QWidget11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN7QWidget11resizeEventEP12QResizeEvent(event);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QWidget11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::resizeEvent(event);
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    if (callback_ZN7QWidget10closeEventEP11QCloseEvent != 0) {
-      // callback_ZN7QWidget10closeEventEP11QCloseEvent(event);
+    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN7QWidget10closeEventEP11QCloseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::closeEvent(event);
   }
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
-    if (callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent != 0) {
-      // callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent(event);
+    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN7QWidget16contextMenuEventEP17QContextMenuEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::contextMenuEvent(event);
   }
 // void tabletEvent(class QTabletEvent *)
   virtual void tabletEvent(QTabletEvent * event) {
-    if (callback_ZN7QWidget11tabletEventEP12QTabletEvent != 0) {
-      // callback_ZN7QWidget11tabletEventEP12QTabletEvent(event);
+    auto fnptr = ((void (*)(void* , QTabletEvent *))(callback_ZN7QWidget11tabletEventEP12QTabletEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::tabletEvent(event);
   }
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * event) {
-    if (callback_ZN7QWidget11actionEventEP12QActionEvent != 0) {
-      // callback_ZN7QWidget11actionEventEP12QActionEvent(event);
+    auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN7QWidget11actionEventEP12QActionEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::actionEvent(event);
   }
 // void dragEnterEvent(class QDragEnterEvent *)
   virtual void dragEnterEvent(QDragEnterEvent * event) {
-    if (callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent != 0) {
-      // callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent(event);
+    auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN7QWidget14dragEnterEventEP15QDragEnterEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::dragEnterEvent(event);
   }
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
-    if (callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent != 0) {
-      // callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent(event);
+    auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN7QWidget13dragMoveEventEP14QDragMoveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::dragMoveEvent(event);
   }
 // void dragLeaveEvent(class QDragLeaveEvent *)
   virtual void dragLeaveEvent(QDragLeaveEvent * event) {
-    if (callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent != 0) {
-      // callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent(event);
+    auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::dragLeaveEvent(event);
   }
 // void dropEvent(class QDropEvent *)
   virtual void dropEvent(QDropEvent * event) {
-    if (callback_ZN7QWidget9dropEventEP10QDropEvent != 0) {
-      // callback_ZN7QWidget9dropEventEP10QDropEvent(event);
+    auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN7QWidget9dropEventEP10QDropEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::dropEvent(event);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
-    if (callback_ZN7QWidget9showEventEP10QShowEvent != 0) {
-      // callback_ZN7QWidget9showEventEP10QShowEvent(event);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN7QWidget9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::showEvent(event);
   }
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * event) {
-    if (callback_ZN7QWidget9hideEventEP10QHideEvent != 0) {
-      // callback_ZN7QWidget9hideEventEP10QHideEvent(event);
+    auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN7QWidget9hideEventEP10QHideEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QWidget::hideEvent(event);
   }
 // bool nativeEvent(const class QByteArray &, void *, long *)
   virtual bool nativeEvent(const QByteArray & eventType, void * message, long * result) {
-    if (callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl != 0) {
-      // callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl(eventType, message, result);
+    auto fnptr = ((bool (*)(void* , QByteArray*, void *, long *))(callback_ZN7QWidget11nativeEventERK10QByteArrayPvPl_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QByteArray*)&eventType, message, result);
     }
     return QWidget::nativeEvent(eventType, message, result);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    if (callback_ZN7QWidget11changeEventEP6QEvent != 0) {
-      // callback_ZN7QWidget11changeEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QWidget11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QWidget::changeEvent(arg0);
   }
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
-    if (callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-      // callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE(arg0);
+    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QWidget::metric(arg0);
   }
 // void initPainter(class QPainter *)
   virtual void initPainter(QPainter * painter) {
-    if (callback_ZNK7QWidget11initPainterEP8QPainter != 0) {
-      // callback_ZNK7QWidget11initPainterEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZNK7QWidget11initPainterEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QWidget::initPainter(painter);
   }
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * offset) {
-    if (callback_ZNK7QWidget10redirectedEP6QPoint != 0) {
-      // callback_ZNK7QWidget10redirectedEP6QPoint(offset);
+    auto fnptr = ((QPaintDevice * (*)(void* , QPoint *))(callback_ZNK7QWidget10redirectedEP6QPoint_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , offset);
     }
     return QWidget::redirected(offset);
   }
 // QPainter * sharedPainter()
   virtual QPainter * sharedPainter() {
-    if (callback_ZNK7QWidget13sharedPainterEv != 0) {
-      // callback_ZNK7QWidget13sharedPainterEv();
+    auto fnptr = ((QPainter * (*)(void* ))(callback_ZNK7QWidget13sharedPainterEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QWidget::sharedPainter();
   }
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * arg0) {
-    if (callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent != 0) {
-      // callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent(arg0);
+    auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN7QWidget16inputMethodEventEP17QInputMethodEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QWidget::inputMethodEvent(arg0);
   }
 // void updateMicroFocus()
   virtual void updateMicroFocus() {
-    if (callback_ZN7QWidget16updateMicroFocusEv != 0) {
-      // callback_ZN7QWidget16updateMicroFocusEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN7QWidget16updateMicroFocusEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QWidget::updateMicroFocus();
   }
 // void create(WId, _Bool, _Bool)
   virtual void create(WId arg0, bool initializeWindow, bool destroyOldWindow) {
-    if (callback_ZN7QWidget6createEybb != 0) {
-      // callback_ZN7QWidget6createEybb(arg0, initializeWindow, destroyOldWindow);
+    auto fnptr = ((void (*)(void* , WId, bool, bool))(callback_ZN7QWidget6createEybb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0, initializeWindow, destroyOldWindow);
     }
     QWidget::create(arg0, initializeWindow, destroyOldWindow);
   }
 // void destroy(_Bool, _Bool)
   virtual void destroy(bool destroyWindow, bool destroySubWindows) {
-    if (callback_ZN7QWidget7destroyEbb != 0) {
-      // callback_ZN7QWidget7destroyEbb(destroyWindow, destroySubWindows);
+    auto fnptr = ((void (*)(void* , bool, bool))(callback_ZN7QWidget7destroyEbb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , destroyWindow, destroySubWindows);
     }
     QWidget::destroy(destroyWindow, destroySubWindows);
   }
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
-    if (callback_ZN7QWidget18focusNextPrevChildEb != 0) {
-      // callback_ZN7QWidget18focusNextPrevChildEb(next);
+    auto fnptr = ((bool (*)(void* , bool))(callback_ZN7QWidget18focusNextPrevChildEb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , next);
     }
     return QWidget::focusNextPrevChild(next);
   }
 // bool focusNextChild()
   virtual bool focusNextChild() {
-    if (callback_ZN7QWidget14focusNextChildEv != 0) {
-      // callback_ZN7QWidget14focusNextChildEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZN7QWidget14focusNextChildEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QWidget::focusNextChild();
   }
 // bool focusPreviousChild()
   virtual bool focusPreviousChild() {
-    if (callback_ZN7QWidget18focusPreviousChildEv != 0) {
-      // callback_ZN7QWidget18focusPreviousChildEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZN7QWidget18focusPreviousChildEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QWidget::focusPreviousChild();
   }
@@ -844,8 +882,8 @@ int C_ZNK7QWidget13maximumHeightEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:269
 // [-2] void setMinimumSize(const class QSize &)
 extern "C"
-void C_ZN7QWidget14setMinimumSizeERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->setMinimumSize(arg0);
+void C_ZN7QWidget14setMinimumSizeERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->setMinimumSize(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:270
@@ -858,8 +896,8 @@ void C_ZN7QWidget14setMinimumSizeEii(void *this_, int minw, int minh) {
 // /usr/include/qt/QtWidgets/qwidget.h:271
 // [-2] void setMaximumSize(const class QSize &)
 extern "C"
-void C_ZN7QWidget14setMaximumSizeERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->setMaximumSize(arg0);
+void C_ZN7QWidget14setMaximumSizeERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->setMaximumSize(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:272
@@ -908,8 +946,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:283
 // [-2] void setSizeIncrement(const class QSize &)
 extern "C"
-void C_ZN7QWidget16setSizeIncrementERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->setSizeIncrement(arg0);
+void C_ZN7QWidget16setSizeIncrementERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->setSizeIncrement(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:284
@@ -930,8 +968,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:286
 // [-2] void setBaseSize(const class QSize &)
 extern "C"
-void C_ZN7QWidget11setBaseSizeERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->setBaseSize(arg0);
+void C_ZN7QWidget11setBaseSizeERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->setBaseSize(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:287
@@ -944,8 +982,8 @@ void C_ZN7QWidget11setBaseSizeEii(void *this_, int basew, int baseh) {
 // /usr/include/qt/QtWidgets/qwidget.h:289
 // [-2] void setFixedSize(const class QSize &)
 extern "C"
-void C_ZN7QWidget12setFixedSizeERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->setFixedSize(arg0);
+void C_ZN7QWidget12setFixedSizeERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->setFixedSize(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:290
@@ -972,48 +1010,48 @@ void C_ZN7QWidget14setFixedHeightEi(void *this_, int h) {
 // /usr/include/qt/QtWidgets/qwidget.h:296
 // [8] QPoint mapToGlobal(const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget11mapToGlobalERK6QPoint(void *this_, const QPoint & arg0) {
-  auto rv = ((QWidget*)this_)->mapToGlobal(arg0);
+void* C_ZNK7QWidget11mapToGlobalERK6QPoint(void *this_, QPoint* arg0) {
+  auto rv = ((QWidget*)this_)->mapToGlobal(*arg0);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:297
 // [8] QPoint mapFromGlobal(const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget13mapFromGlobalERK6QPoint(void *this_, const QPoint & arg0) {
-  auto rv = ((QWidget*)this_)->mapFromGlobal(arg0);
+void* C_ZNK7QWidget13mapFromGlobalERK6QPoint(void *this_, QPoint* arg0) {
+  auto rv = ((QWidget*)this_)->mapFromGlobal(*arg0);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:298
 // [8] QPoint mapToParent(const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget11mapToParentERK6QPoint(void *this_, const QPoint & arg0) {
-  auto rv = ((QWidget*)this_)->mapToParent(arg0);
+void* C_ZNK7QWidget11mapToParentERK6QPoint(void *this_, QPoint* arg0) {
+  auto rv = ((QWidget*)this_)->mapToParent(*arg0);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:299
 // [8] QPoint mapFromParent(const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget13mapFromParentERK6QPoint(void *this_, const QPoint & arg0) {
-  auto rv = ((QWidget*)this_)->mapFromParent(arg0);
+void* C_ZNK7QWidget13mapFromParentERK6QPoint(void *this_, QPoint* arg0) {
+  auto rv = ((QWidget*)this_)->mapFromParent(*arg0);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:300
 // [8] QPoint mapTo(const class QWidget *, const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget5mapToEPKS_RK6QPoint(void *this_, const QWidget * arg0, const QPoint & arg1) {
-  auto rv = ((QWidget*)this_)->mapTo(arg0, arg1);
+void* C_ZNK7QWidget5mapToEPKS_RK6QPoint(void *this_, const QWidget * arg0, QPoint* arg1) {
+  auto rv = ((QWidget*)this_)->mapTo(arg0, *arg1);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:301
 // [8] QPoint mapFrom(const class QWidget *, const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget7mapFromEPKS_RK6QPoint(void *this_, const QWidget * arg0, const QPoint & arg1) {
-  auto rv = ((QWidget*)this_)->mapFrom(arg0, arg1);
+void* C_ZNK7QWidget7mapFromEPKS_RK6QPoint(void *this_, const QWidget * arg0, QPoint* arg1) {
+  auto rv = ((QWidget*)this_)->mapFrom(arg0, *arg1);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -1049,8 +1087,8 @@ return new QPalette(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:309
 // [-2] void setPalette(const class QPalette &)
 extern "C"
-void C_ZN7QWidget10setPaletteERK8QPalette(void *this_, const QPalette & arg0) {
-  ((QWidget*)this_)->setPalette(arg0);
+void C_ZN7QWidget10setPaletteERK8QPalette(void *this_, QPalette* arg0) {
+  ((QWidget*)this_)->setPalette(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:311
@@ -1092,8 +1130,8 @@ return new QFont(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:318
 // [-2] void setFont(const class QFont &)
 extern "C"
-void C_ZN7QWidget7setFontERK5QFont(void *this_, const QFont & arg0) {
-  ((QWidget*)this_)->setFont(arg0);
+void C_ZN7QWidget7setFontERK5QFont(void *this_, QFont* arg0) {
+  ((QWidget*)this_)->setFont(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:319
@@ -1123,8 +1161,8 @@ return new QCursor(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:324
 // [-2] void setCursor(const class QCursor &)
 extern "C"
-void C_ZN7QWidget9setCursorERK7QCursor(void *this_, const QCursor & arg0) {
-  ((QWidget*)this_)->setCursor(arg0);
+void C_ZN7QWidget9setCursorERK7QCursor(void *this_, QCursor* arg0) {
+  ((QWidget*)this_)->setCursor(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:325
@@ -1172,15 +1210,15 @@ bool C_ZNK7QWidget17hasTabletTrackingEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:335
 // [-2] void setMask(const class QBitmap &)
 extern "C"
-void C_ZN7QWidget7setMaskERK7QBitmap(void *this_, const QBitmap & arg0) {
-  ((QWidget*)this_)->setMask(arg0);
+void C_ZN7QWidget7setMaskERK7QBitmap(void *this_, QBitmap* arg0) {
+  ((QWidget*)this_)->setMask(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:336
 // [-2] void setMask(const class QRegion &)
 extern "C"
-void C_ZN7QWidget7setMaskERK7QRegion(void *this_, const QRegion & arg0) {
-  ((QWidget*)this_)->setMask(arg0);
+void C_ZN7QWidget7setMaskERK7QRegion(void *this_, QRegion* arg0) {
+  ((QWidget*)this_)->setMask(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:337
@@ -1201,22 +1239,22 @@ void C_ZN7QWidget9clearMaskEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:340
 // [-2] void render(class QPaintDevice *, const class QPoint &, const class QRegion &, QWidget::RenderFlags)
 extern "C"
-void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPaintDevice * target, const QPoint & targetOffset, const QRegion & sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
-  ((QWidget*)this_)->render(target, targetOffset, sourceRegion, renderFlags);
+void C_ZN7QWidget6renderEP12QPaintDeviceRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPaintDevice * target, QPoint* targetOffset, QRegion* sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
+  ((QWidget*)this_)->render(target, *targetOffset, *sourceRegion, renderFlags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:344
 // [-2] void render(class QPainter *, const class QPoint &, const class QRegion &, QWidget::RenderFlags)
 extern "C"
-void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPainter * painter, const QPoint & targetOffset, const QRegion & sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
-  ((QWidget*)this_)->render(painter, targetOffset, sourceRegion, renderFlags);
+void C_ZN7QWidget6renderEP8QPainterRK6QPointRK7QRegion6QFlagsINS_10RenderFlagEE(void *this_, QPainter * painter, QPoint* targetOffset, QRegion* sourceRegion, QFlags<QWidget::RenderFlag> renderFlags) {
+  ((QWidget*)this_)->render(painter, *targetOffset, *sourceRegion, renderFlags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:348
 // [32] QPixmap grab(const class QRect &)
 extern "C"
-void* C_ZN7QWidget4grabERK5QRect(void *this_, const QRect & rectangle) {
-  auto rv = ((QWidget*)this_)->grab(rectangle);
+void* C_ZN7QWidget4grabERK5QRect(void *this_, QRect* rectangle) {
+  auto rv = ((QWidget*)this_)->grab(*rectangle);
 return new QPixmap(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -1251,15 +1289,15 @@ void C_ZN7QWidget13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType
 // /usr/include/qt/QtWidgets/qwidget.h:361
 // [-2] void setWindowTitle(const class QString &)
 extern "C"
-void C_ZN7QWidget14setWindowTitleERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setWindowTitle(arg0);
+void C_ZN7QWidget14setWindowTitleERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setWindowTitle(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:363
 // [-2] void setStyleSheet(const class QString &)
 extern "C"
-void C_ZN7QWidget13setStyleSheetERK7QString(void *this_, const QString & styleSheet) {
-  ((QWidget*)this_)->setStyleSheet(styleSheet);
+void C_ZN7QWidget13setStyleSheetERK7QString(void *this_, QString* styleSheet) {
+  ((QWidget*)this_)->setStyleSheet(*styleSheet);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:367
@@ -1281,8 +1319,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:370
 // [-2] void setWindowIcon(const class QIcon &)
 extern "C"
-void C_ZN7QWidget13setWindowIconERK5QIcon(void *this_, const QIcon & icon) {
-  ((QWidget*)this_)->setWindowIcon(icon);
+void C_ZN7QWidget13setWindowIconERK5QIcon(void *this_, QIcon* icon) {
+  ((QWidget*)this_)->setWindowIcon(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:371
@@ -1296,8 +1334,8 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:372
 // [-2] void setWindowIconText(const class QString &)
 extern "C"
-void C_ZN7QWidget17setWindowIconTextERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setWindowIconText(arg0);
+void C_ZN7QWidget17setWindowIconTextERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setWindowIconText(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:373
@@ -1311,8 +1349,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:374
 // [-2] void setWindowRole(const class QString &)
 extern "C"
-void C_ZN7QWidget13setWindowRoleERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setWindowRole(arg0);
+void C_ZN7QWidget13setWindowRoleERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setWindowRole(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:375
@@ -1326,8 +1364,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:376
 // [-2] void setWindowFilePath(const class QString &)
 extern "C"
-void C_ZN7QWidget17setWindowFilePathERK7QString(void *this_, const QString & filePath) {
-  ((QWidget*)this_)->setWindowFilePath(filePath);
+void C_ZN7QWidget17setWindowFilePathERK7QString(void *this_, QString* filePath) {
+  ((QWidget*)this_)->setWindowFilePath(*filePath);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:377
@@ -1362,8 +1400,8 @@ bool C_ZNK7QWidget16isWindowModifiedEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:384
 // [-2] void setToolTip(const class QString &)
 extern "C"
-void C_ZN7QWidget10setToolTipERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setToolTip(arg0);
+void C_ZN7QWidget10setToolTipERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setToolTip(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:385
@@ -1391,8 +1429,8 @@ int C_ZNK7QWidget15toolTipDurationEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:390
 // [-2] void setStatusTip(const class QString &)
 extern "C"
-void C_ZN7QWidget12setStatusTipERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setStatusTip(arg0);
+void C_ZN7QWidget12setStatusTipERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setStatusTip(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:391
@@ -1406,8 +1444,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:394
 // [-2] void setWhatsThis(const class QString &)
 extern "C"
-void C_ZN7QWidget12setWhatsThisERK7QString(void *this_, const QString & arg0) {
-  ((QWidget*)this_)->setWhatsThis(arg0);
+void C_ZN7QWidget12setWhatsThisERK7QString(void *this_, QString* arg0) {
+  ((QWidget*)this_)->setWhatsThis(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:395
@@ -1429,8 +1467,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:399
 // [-2] void setAccessibleName(const class QString &)
 extern "C"
-void C_ZN7QWidget17setAccessibleNameERK7QString(void *this_, const QString & name) {
-  ((QWidget*)this_)->setAccessibleName(name);
+void C_ZN7QWidget17setAccessibleNameERK7QString(void *this_, QString* name) {
+  ((QWidget*)this_)->setAccessibleName(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:400
@@ -1444,8 +1482,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:401
 // [-2] void setAccessibleDescription(const class QString &)
 extern "C"
-void C_ZN7QWidget24setAccessibleDescriptionERK7QString(void *this_, const QString & description) {
-  ((QWidget*)this_)->setAccessibleDescription(description);
+void C_ZN7QWidget24setAccessibleDescriptionERK7QString(void *this_, QString* description) {
+  ((QWidget*)this_)->setAccessibleDescription(*description);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:404
@@ -1472,8 +1510,8 @@ void C_ZN7QWidget20unsetLayoutDirectionEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:408
 // [-2] void setLocale(const class QLocale &)
 extern "C"
-void C_ZN7QWidget9setLocaleERK7QLocale(void *this_, const QLocale & locale) {
-  ((QWidget*)this_)->setLocale(locale);
+void C_ZN7QWidget9setLocaleERK7QLocale(void *this_, QLocale* locale) {
+  ((QWidget*)this_)->setLocale(*locale);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:409
@@ -1606,8 +1644,8 @@ void C_ZN7QWidget9grabMouseEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:436
 // [-2] void grabMouse(const class QCursor &)
 extern "C"
-void C_ZN7QWidget9grabMouseERK7QCursor(void *this_, const QCursor & arg0) {
-  ((QWidget*)this_)->grabMouse(arg0);
+void C_ZN7QWidget9grabMouseERK7QCursor(void *this_, QCursor* arg0) {
+  ((QWidget*)this_)->grabMouse(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:438
@@ -1634,8 +1672,8 @@ void C_ZN7QWidget15releaseKeyboardEv(void *this_) {
 // /usr/include/qt/QtWidgets/qwidget.h:442
 // [4] int grabShortcut(const class QKeySequence &, Qt::ShortcutContext)
 extern "C"
-int C_ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *this_, const QKeySequence & key, Qt::ShortcutContext context) {
-  return (int)((QWidget*)this_)->grabShortcut(key, context);
+int C_ZN7QWidget12grabShortcutERK12QKeySequenceN2Qt15ShortcutContextE(void *this_, QKeySequence* key, Qt::ShortcutContext context) {
+  return (int)((QWidget*)this_)->grabShortcut(*key, context);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:443
@@ -1718,15 +1756,15 @@ void C_ZN7QWidget6updateEiiii(void *this_, int x, int y, int w, int h) {
 // /usr/include/qt/QtWidgets/qwidget.h:464
 // [-2] void update(const class QRect &)
 extern "C"
-void C_ZN7QWidget6updateERK5QRect(void *this_, const QRect & arg0) {
-  ((QWidget*)this_)->update(arg0);
+void C_ZN7QWidget6updateERK5QRect(void *this_, QRect* arg0) {
+  ((QWidget*)this_)->update(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:465
 // [-2] void update(const class QRegion &)
 extern "C"
-void C_ZN7QWidget6updateERK7QRegion(void *this_, const QRegion & arg0) {
-  ((QWidget*)this_)->update(arg0);
+void C_ZN7QWidget6updateERK7QRegion(void *this_, QRegion* arg0) {
+  ((QWidget*)this_)->update(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:467
@@ -1739,15 +1777,15 @@ void C_ZN7QWidget7repaintEiiii(void *this_, int x, int y, int w, int h) {
 // /usr/include/qt/QtWidgets/qwidget.h:468
 // [-2] void repaint(const class QRect &)
 extern "C"
-void C_ZN7QWidget7repaintERK5QRect(void *this_, const QRect & arg0) {
-  ((QWidget*)this_)->repaint(arg0);
+void C_ZN7QWidget7repaintERK5QRect(void *this_, QRect* arg0) {
+  ((QWidget*)this_)->repaint(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:469
 // [-2] void repaint(const class QRegion &)
 extern "C"
-void C_ZN7QWidget7repaintERK7QRegion(void *this_, const QRegion & arg0) {
-  ((QWidget*)this_)->repaint(arg0);
+void C_ZN7QWidget7repaintERK7QRegion(void *this_, QRegion* arg0) {
+  ((QWidget*)this_)->repaint(*arg0);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:474
@@ -1844,8 +1882,8 @@ void C_ZN7QWidget4moveEii(void *this_, int x, int y) {
 // /usr/include/qt/QtWidgets/qwidget.h:491
 // [-2] void move(const class QPoint &)
 extern "C"
-void C_ZN7QWidget4moveERK6QPoint(void *this_, const QPoint & arg0) {
-  ((QWidget*)this_)->move(arg0);
+void C_ZN7QWidget4moveERK6QPoint(void *this_, QPoint* arg0) {
+  ((QWidget*)this_)->move(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:492
@@ -1858,8 +1896,8 @@ void C_ZN7QWidget6resizeEii(void *this_, int w, int h) {
 // /usr/include/qt/QtWidgets/qwidget.h:493
 // [-2] void resize(const class QSize &)
 extern "C"
-void C_ZN7QWidget6resizeERK5QSize(void *this_, const QSize & arg0) {
-  ((QWidget*)this_)->resize(arg0);
+void C_ZN7QWidget6resizeERK5QSize(void *this_, QSize* arg0) {
+  ((QWidget*)this_)->resize(*arg0);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:494
@@ -1872,8 +1910,8 @@ void C_ZN7QWidget11setGeometryEiiii(void *this_, int x, int y, int w, int h) {
 // /usr/include/qt/QtWidgets/qwidget.h:495
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN7QWidget11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QWidget*)this_)->setGeometry(arg0);
+void C_ZN7QWidget11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QWidget*)this_)->setGeometry(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:496
@@ -1887,8 +1925,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtWidgets/qwidget.h:497
 // [1] bool restoreGeometry(const class QByteArray &)
 extern "C"
-bool C_ZN7QWidget15restoreGeometryERK10QByteArray(void *this_, const QByteArray & geometry) {
-  return (bool)((QWidget*)this_)->restoreGeometry(geometry);
+bool C_ZN7QWidget15restoreGeometryERK10QByteArray(void *this_, QByteArray* geometry) {
+  return (bool)((QWidget*)this_)->restoreGeometry(*geometry);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:498
@@ -2017,8 +2055,8 @@ void C_ZN7QWidget18setContentsMarginsEiiii(void *this_, int left, int top, int r
 // /usr/include/qt/QtWidgets/qwidget.h:523
 // [-2] void setContentsMargins(const class QMargins &)
 extern "C"
-void C_ZN7QWidget18setContentsMarginsERK8QMargins(void *this_, const QMargins & margins) {
-  ((QWidget*)this_)->setContentsMargins(margins);
+void C_ZN7QWidget18setContentsMarginsERK8QMargins(void *this_, QMargins* margins) {
+  ((QWidget*)this_)->setContentsMargins(*margins);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:524
@@ -2089,8 +2127,8 @@ void C_ZN7QWidget6scrollEii(void *this_, int dx, int dy) {
 // /usr/include/qt/QtWidgets/qwidget.h:538
 // [-2] void scroll(int, int, const class QRect &)
 extern "C"
-void C_ZN7QWidget6scrollEiiRK5QRect(void *this_, int dx, int dy, const QRect & arg2) {
-  ((QWidget*)this_)->scroll(dx, dy, arg2);
+void C_ZN7QWidget6scrollEiiRK5QRect(void *this_, int dx, int dy, QRect* arg2) {
+  ((QWidget*)this_)->scroll(dx, dy, *arg2);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:542
@@ -2208,8 +2246,8 @@ void* C_ZNK7QWidget7childAtEii(void *this_, int x, int y) {
 // /usr/include/qt/QtWidgets/qwidget.h:576
 // [8] QWidget * childAt(const class QPoint &)
 extern "C"
-void* C_ZNK7QWidget7childAtERK6QPoint(void *this_, const QPoint & p) {
-  return (void*)((QWidget*)this_)->childAt(p);
+void* C_ZNK7QWidget7childAtERK6QPoint(void *this_, QPoint* p) {
+  return (void*)((QWidget*)this_)->childAt(*p);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:578
@@ -2285,29 +2323,29 @@ void* C_ZN7QWidget21createWindowContainerEP7QWindowPS_6QFlagsIN2Qt10WindowTypeEE
 // /usr/include/qt/QtWidgets/qwidget.h:604
 // [-2] void windowTitleChanged(const class QString &)
 extern "C"
-void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, const QString & title) {
-  ((QWidget*)this_)->windowTitleChanged(title);
+void C_ZN7QWidget18windowTitleChangedERK7QString(void *this_, QString* title) {
+  ((QWidget*)this_)->windowTitleChanged(*title);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:605
 // [-2] void windowIconChanged(const class QIcon &)
 extern "C"
-void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, const QIcon & icon) {
-  ((QWidget*)this_)->windowIconChanged(icon);
+void C_ZN7QWidget17windowIconChangedERK5QIcon(void *this_, QIcon* icon) {
+  ((QWidget*)this_)->windowIconChanged(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:606
 // [-2] void windowIconTextChanged(const class QString &)
 extern "C"
-void C_ZN7QWidget21windowIconTextChangedERK7QString(void *this_, const QString & iconText) {
-  ((QWidget*)this_)->windowIconTextChanged(iconText);
+void C_ZN7QWidget21windowIconTextChangedERK7QString(void *this_, QString* iconText) {
+  ((QWidget*)this_)->windowIconTextChanged(*iconText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:607
 // [-2] void customContextMenuRequested(const class QPoint &)
 extern "C"
-void C_ZN7QWidget26customContextMenuRequestedERK6QPoint(void *this_, const QPoint & pos) {
-  ((QWidget*)this_)->customContextMenuRequested(pos);
+void C_ZN7QWidget26customContextMenuRequestedERK6QPoint(void *this_, QPoint* pos) {
+  ((QWidget*)this_)->customContextMenuRequested(*pos);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwidget.h:660

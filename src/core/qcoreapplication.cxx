@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qcoreapplication.h:190
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN16QCoreApplication5eventEP6QEvent = 0;
+void* callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN16QCoreApplication5eventEP6QEvent(void*cbfn)
-{ callback_ZN16QCoreApplication5eventEP6QEvent = cbfn; }
+{ callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCoreApplication : public QCoreApplication {
 public:
@@ -23,8 +23,9 @@ public:
 MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN16QCoreApplication5eventEP6QEvent != 0) {
-      // callback_ZN16QCoreApplication5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QCoreApplication5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QCoreApplication::event(arg0);
   }
@@ -70,8 +71,8 @@ bool C_ZN16QCoreApplication13testAttributeEN2Qt20ApplicationAttributeE(Qt::Appli
 // /usr/include/qt/QtCore/qcoreapplication.h:104
 // [-2] void setOrganizationDomain(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication21setOrganizationDomainERK7QString(const QString & orgDomain) {
-  QCoreApplication::setOrganizationDomain(orgDomain);
+void C_ZN16QCoreApplication21setOrganizationDomainERK7QString(QString* orgDomain) {
+  QCoreApplication::setOrganizationDomain(*orgDomain);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:105
@@ -85,8 +86,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qcoreapplication.h:106
 // [-2] void setOrganizationName(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication19setOrganizationNameERK7QString(const QString & orgName) {
-  QCoreApplication::setOrganizationName(orgName);
+void C_ZN16QCoreApplication19setOrganizationNameERK7QString(QString* orgName) {
+  QCoreApplication::setOrganizationName(*orgName);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:107
@@ -100,8 +101,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qcoreapplication.h:108
 // [-2] void setApplicationName(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication18setApplicationNameERK7QString(const QString & application) {
-  QCoreApplication::setApplicationName(application);
+void C_ZN16QCoreApplication18setApplicationNameERK7QString(QString* application) {
+  QCoreApplication::setApplicationName(*application);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:109
@@ -115,8 +116,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qcoreapplication.h:110
 // [-2] void setApplicationVersion(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication21setApplicationVersionERK7QString(const QString & version) {
-  QCoreApplication::setApplicationVersion(version);
+void C_ZN16QCoreApplication21setApplicationVersionERK7QString(QString* version) {
+  QCoreApplication::setApplicationVersion(*version);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:111
@@ -272,22 +273,22 @@ qint64 C_ZN16QCoreApplication14applicationPidEv() {
 // /usr/include/qt/QtCore/qcoreapplication.h:145
 // [-2] void setLibraryPaths(const class QStringList &)
 extern "C"
-void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(const QStringList & arg0) {
-  QCoreApplication::setLibraryPaths(arg0);
+void C_ZN16QCoreApplication15setLibraryPathsERK11QStringList(QStringList* arg0) {
+  QCoreApplication::setLibraryPaths(*arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:147
 // [-2] void addLibraryPath(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication14addLibraryPathERK7QString(const QString & arg0) {
-  QCoreApplication::addLibraryPath(arg0);
+void C_ZN16QCoreApplication14addLibraryPathERK7QString(QString* arg0) {
+  QCoreApplication::addLibraryPath(*arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:148
 // [-2] void removeLibraryPath(const class QString &)
 extern "C"
-void C_ZN16QCoreApplication17removeLibraryPathERK7QString(const QString & arg0) {
-  QCoreApplication::removeLibraryPath(arg0);
+void C_ZN16QCoreApplication17removeLibraryPathERK7QString(QString* arg0) {
+  QCoreApplication::removeLibraryPath(*arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:152

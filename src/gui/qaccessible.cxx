@@ -84,4 +84,9 @@ extern "C"
 void C_ZN11QAccessible7cleanupEv() {
   QAccessible::cleanup();
 }
+
+extern "C"
+void C_ZN11QAccessibleD2Ev(void *this_) {
+  delete (QAccessible*)(this_);
+}
 //  main block end

@@ -183,4 +183,9 @@ void* C_ZNK7QRgba6415unpremultipliedEv(void *this_) {
   auto rv = ((QRgba64*)this_)->unpremultiplied();
 return new QRgba64(rv);
 }
+
+extern "C"
+void C_ZN7QRgba64D2Ev(void *this_) {
+  delete (QRgba64*)(this_);
+}
 //  main block end

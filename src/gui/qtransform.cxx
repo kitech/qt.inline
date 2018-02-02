@@ -56,8 +56,8 @@ void* C_ZN10QTransformC2Edddddd(qreal h11, qreal h12, qreal h21, qreal h22, qrea
 // /usr/include/qt/QtGui/qtransform.h:76
 // [-2] void QTransform(const class QMatrix &)
 extern "C"
-void* C_ZN10QTransformC2ERK7QMatrix(const QMatrix & mtx) {
-  return  new QTransform(mtx);
+void* C_ZN10QTransformC2ERK7QMatrix(QMatrix* mtx) {
+  return  new QTransform(*mtx);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:91
@@ -274,22 +274,22 @@ return &rv;
 // /usr/include/qt/QtGui/qtransform.h:129
 // [1] bool squareToQuad(const class QPolygonF &, class QTransform &)
 extern "C"
-bool C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(const QPolygonF & square, QTransform & result) {
-  return (bool)QTransform::squareToQuad(square, result);
+bool C_ZN10QTransform12squareToQuadERK9QPolygonFRS_(QPolygonF* square, QTransform* result) {
+  return (bool)QTransform::squareToQuad(*square, *result);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:130
 // [1] bool quadToSquare(const class QPolygonF &, class QTransform &)
 extern "C"
-bool C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(const QPolygonF & quad, QTransform & result) {
-  return (bool)QTransform::quadToSquare(quad, result);
+bool C_ZN10QTransform12quadToSquareERK9QPolygonFRS_(QPolygonF* quad, QTransform* result) {
+  return (bool)QTransform::quadToSquare(*quad, *result);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:131
 // [1] bool quadToQuad(const class QPolygonF &, const class QPolygonF &, class QTransform &)
 extern "C"
-bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(const QPolygonF & one, const QPolygonF & two, QTransform & result) {
-  return (bool)QTransform::quadToQuad(one, two, result);
+bool C_ZN10QTransform10quadToQuadERK9QPolygonFS2_RS_(QPolygonF* one, QPolygonF* two, QTransform* result) {
+  return (bool)QTransform::quadToQuad(*one, *two, *result);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:143
@@ -302,88 +302,88 @@ void C_ZN10QTransform5resetEv(void *this_) {
 // /usr/include/qt/QtGui/qtransform.h:144
 // [8] QPoint map(const class QPoint &)
 extern "C"
-void* C_ZNK10QTransform3mapERK6QPoint(void *this_, const QPoint & p) {
-  auto rv = ((QTransform*)this_)->map(p);
+void* C_ZNK10QTransform3mapERK6QPoint(void *this_, QPoint* p) {
+  auto rv = ((QTransform*)this_)->map(*p);
 return new QPoint(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:145
 // [16] QPointF map(const class QPointF &)
 extern "C"
-void* C_ZNK10QTransform3mapERK7QPointF(void *this_, const QPointF & p) {
-  auto rv = ((QTransform*)this_)->map(p);
+void* C_ZNK10QTransform3mapERK7QPointF(void *this_, QPointF* p) {
+  auto rv = ((QTransform*)this_)->map(*p);
 return new QPointF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:146
 // [16] QLine map(const class QLine &)
 extern "C"
-void* C_ZNK10QTransform3mapERK5QLine(void *this_, const QLine & l) {
-  auto rv = ((QTransform*)this_)->map(l);
+void* C_ZNK10QTransform3mapERK5QLine(void *this_, QLine* l) {
+  auto rv = ((QTransform*)this_)->map(*l);
 return new QLine(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:147
 // [32] QLineF map(const class QLineF &)
 extern "C"
-void* C_ZNK10QTransform3mapERK6QLineF(void *this_, const QLineF & l) {
-  auto rv = ((QTransform*)this_)->map(l);
+void* C_ZNK10QTransform3mapERK6QLineF(void *this_, QLineF* l) {
+  auto rv = ((QTransform*)this_)->map(*l);
 return new QLineF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:148
 // [8] QPolygonF map(const class QPolygonF &)
 extern "C"
-void* C_ZNK10QTransform3mapERK9QPolygonF(void *this_, const QPolygonF & a) {
-  auto rv = ((QTransform*)this_)->map(a);
+void* C_ZNK10QTransform3mapERK9QPolygonF(void *this_, QPolygonF* a) {
+  auto rv = ((QTransform*)this_)->map(*a);
 return new QPolygonF(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:149
 // [8] QPolygon map(const class QPolygon &)
 extern "C"
-void* C_ZNK10QTransform3mapERK8QPolygon(void *this_, const QPolygon & a) {
-  auto rv = ((QTransform*)this_)->map(a);
+void* C_ZNK10QTransform3mapERK8QPolygon(void *this_, QPolygon* a) {
+  auto rv = ((QTransform*)this_)->map(*a);
 return new QPolygon(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:150
 // [8] QRegion map(const class QRegion &)
 extern "C"
-void* C_ZNK10QTransform3mapERK7QRegion(void *this_, const QRegion & r) {
-  auto rv = ((QTransform*)this_)->map(r);
+void* C_ZNK10QTransform3mapERK7QRegion(void *this_, QRegion* r) {
+  auto rv = ((QTransform*)this_)->map(*r);
 return new QRegion(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:151
 // [8] QPainterPath map(const class QPainterPath &)
 extern "C"
-void* C_ZNK10QTransform3mapERK12QPainterPath(void *this_, const QPainterPath & p) {
-  auto rv = ((QTransform*)this_)->map(p);
+void* C_ZNK10QTransform3mapERK12QPainterPath(void *this_, QPainterPath* p) {
+  auto rv = ((QTransform*)this_)->map(*p);
 return new QPainterPath(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:152
 // [8] QPolygon mapToPolygon(const class QRect &)
 extern "C"
-void* C_ZNK10QTransform12mapToPolygonERK5QRect(void *this_, const QRect & r) {
-  auto rv = ((QTransform*)this_)->mapToPolygon(r);
+void* C_ZNK10QTransform12mapToPolygonERK5QRect(void *this_, QRect* r) {
+  auto rv = ((QTransform*)this_)->mapToPolygon(*r);
 return new QPolygon(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:153
 // [16] QRect mapRect(const class QRect &)
 extern "C"
-void* C_ZNK10QTransform7mapRectERK5QRect(void *this_, const QRect & arg0) {
-  auto rv = ((QTransform*)this_)->mapRect(arg0);
+void* C_ZNK10QTransform7mapRectERK5QRect(void *this_, QRect* arg0) {
+  auto rv = ((QTransform*)this_)->mapRect(*arg0);
 return new QRect(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtransform.h:154
 // [32] QRectF mapRect(const class QRectF &)
 extern "C"
-void* C_ZNK10QTransform7mapRectERK6QRectF(void *this_, const QRectF & arg0) {
-  auto rv = ((QTransform*)this_)->mapRect(arg0);
+void* C_ZNK10QTransform7mapRectERK6QRectF(void *this_, QRectF* arg0) {
+  auto rv = ((QTransform*)this_)->mapRect(*arg0);
 return new QRectF(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -423,5 +423,10 @@ extern "C"
 void* C_ZN10QTransform9fromScaleEdd(qreal dx, qreal dy) {
   auto rv = QTransform::fromScale(dx, dy);
 return new QTransform(rv);
+}
+
+extern "C"
+void C_ZN10QTransformD2Ev(void *this_) {
+  delete (QTransform*)(this_);
 }
 //  main block end

@@ -169,8 +169,8 @@ void C_ZN9QTextLine13setNumColumnsEid(void *this_, int columns, qreal alignmentW
 // /usr/include/qt/QtGui/qtextlayout.h:250
 // [-2] void setPosition(const class QPointF &)
 extern "C"
-void C_ZN9QTextLine11setPositionERK7QPointF(void *this_, const QPointF & pos) {
-  ((QTextLine*)this_)->setPosition(pos);
+void C_ZN9QTextLine11setPositionERK7QPointF(void *this_, QPointF* pos) {
+  ((QTextLine*)this_)->setPosition(*pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:251
@@ -200,5 +200,10 @@ int C_ZNK9QTextLine10textLengthEv(void *this_) {
 extern "C"
 int C_ZNK9QTextLine10lineNumberEv(void *this_) {
   return (int)((QTextLine*)this_)->lineNumber();
+}
+
+extern "C"
+void C_ZN9QTextLineD2Ev(void *this_) {
+  delete (QTextLine*)(this_);
 }
 //  main block end

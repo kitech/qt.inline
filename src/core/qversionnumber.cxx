@@ -111,22 +111,22 @@ int C_ZNK14QVersionNumber12segmentCountEv(void *this_) {
 // /usr/include/qt/QtCore/qversionnumber.h:276
 // [1] bool isPrefixOf(const class QVersionNumber &)
 extern "C"
-bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, const QVersionNumber & other) {
-  return (bool)((QVersionNumber*)this_)->isPrefixOf(other);
+bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, QVersionNumber* other) {
+  return (bool)((QVersionNumber*)this_)->isPrefixOf(*other);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:278
 // [4] int compare(const class QVersionNumber &, const class QVersionNumber &)
 extern "C"
-int C_ZN14QVersionNumber7compareERKS_S1_(const QVersionNumber & v1, const QVersionNumber & v2) {
-  return (int)QVersionNumber::compare(v1, v2);
+int C_ZN14QVersionNumber7compareERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
+  return (int)QVersionNumber::compare(*v1, *v2);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:280
 // [8] QVersionNumber commonPrefix(const class QVersionNumber &, const class QVersionNumber &)
 extern "C"
-void* C_ZN14QVersionNumber12commonPrefixERKS_S1_(const QVersionNumber & v1, const QVersionNumber & v2) {
-  auto rv = QVersionNumber::commonPrefix(v1, v2);
+void* C_ZN14QVersionNumber12commonPrefixERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
+  auto rv = QVersionNumber::commonPrefix(*v1, *v2);
 return new QVersionNumber(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -141,8 +141,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qversionnumber.h:284
 // [8] QVersionNumber fromString(const class QString &, int *)
 extern "C"
-void* C_ZN14QVersionNumber10fromStringERK7QStringPi(const QString & string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(string, suffixIndex);
+void* C_ZN14QVersionNumber10fromStringERK7QStringPi(QString* string, int * suffixIndex) {
+  auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
 // Public static Visibility=Default Availability=Available
@@ -160,5 +160,10 @@ extern "C"
 void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
+}
+
+extern "C"
+void C_ZN14QVersionNumberD2Ev(void *this_) {
+  delete (QVersionNumber*)(this_);
 }
 //  main block end

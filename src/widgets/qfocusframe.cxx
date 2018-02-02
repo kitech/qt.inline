@@ -12,30 +12,30 @@
 // /usr/include/qt/QtWidgets/qfocusframe.h:63
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QFocusFrame5eventEP6QEvent = 0;
+void* callback_ZN11QFocusFrame5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFocusFrame5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QFocusFrame5eventEP6QEvent = cbfn; }
+{ callback_ZN11QFocusFrame5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:65
 // [1] bool eventFilter(class QObject *, class QEvent *)
 extern "C"
-void* callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent = 0;
+void* callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent = cbfn; }
+{ callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:66
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN11QFocusFrame10paintEventEP11QPaintEvent = 0;
+void* callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFocusFrame10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QFocusFrame10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfocusframe.h:67
 // [-2] void initStyleOption(class QStyleOption *)
 extern "C"
-void* callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption = 0;
+void* callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr = 0;
 extern "C" void set_callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(void*cbfn)
-{ callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption = cbfn; }
+{ callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr = cbfn; }
 
 class MyQFocusFrame : public QFocusFrame {
 public:
@@ -44,29 +44,33 @@ public:
 MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QFocusFrame5eventEP6QEvent != 0) {
-      // callback_ZN11QFocusFrame5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFocusFrame5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QFocusFrame::event(e);
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    if (callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent != 0) {
-      // callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(arg0, arg1);
+    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0, arg1);
     }
     return QFocusFrame::eventFilter(arg0, arg1);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN11QFocusFrame10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN11QFocusFrame10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QFocusFrame::paintEvent(arg0);
   }
 // void initStyleOption(class QStyleOption *)
   virtual void initStyleOption(QStyleOption * option) {
-    if (callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption != 0) {
-      // callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(option);
+    auto fnptr = ((void (*)(void* , QStyleOption *))(callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QFocusFrame::initStyleOption(option);
   }

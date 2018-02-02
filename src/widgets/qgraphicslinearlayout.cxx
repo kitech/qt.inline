@@ -148,8 +148,8 @@ Qt::Alignment C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:83
 // [-2] void setGeometry(const class QRectF &)
 extern "C"
-void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, const QRectF & rect) {
-  ((QGraphicsLinearLayout*)this_)->setGeometry(rect);
+void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
+  ((QGraphicsLinearLayout*)this_)->setGeometry(*rect);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:85
@@ -176,8 +176,8 @@ void C_ZN21QGraphicsLinearLayout10invalidateEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:89
 // [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
 extern "C"
-void* C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, const QSizeF & constraint) {
-  auto rv = ((QGraphicsLinearLayout*)this_)->sizeHint(which, constraint);
+void* C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
+  auto rv = ((QGraphicsLinearLayout*)this_)->sizeHint(which, *constraint);
 return new QSizeF(rv);
 }
 // Public Visibility=Default Availability=Available

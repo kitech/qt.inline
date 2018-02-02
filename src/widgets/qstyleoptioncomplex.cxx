@@ -23,4 +23,9 @@ extern "C"
 void* C_ZN19QStyleOptionComplexC2Eii(int version, int type) {
   return  new QStyleOptionComplex(version, type);
 }
+
+extern "C"
+void C_ZN19QStyleOptionComplexD2Ev(void *this_) {
+  delete (QStyleOptionComplex*)(this_);
+}
 //  main block end

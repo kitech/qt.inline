@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qthread.h:151
 // [-2] void run()
 extern "C"
-void* callback_ZN7QThread3runEv = 0;
+void* callback_ZN7QThread3runEv_fnptr = 0;
 extern "C" void set_callback_ZN7QThread3runEv(void*cbfn)
-{ callback_ZN7QThread3runEv = cbfn; }
+{ callback_ZN7QThread3runEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:152
 // [4] int exec()
 extern "C"
-void* callback_ZN7QThread4execEv = 0;
+void* callback_ZN7QThread4execEv_fnptr = 0;
 extern "C" void set_callback_ZN7QThread4execEv(void*cbfn)
-{ callback_ZN7QThread4execEv = cbfn; }
+{ callback_ZN7QThread4execEv_fnptr = cbfn; }
 // Protected static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qthread.h:154
 // [-2] void setTerminationEnabled(_Bool)
 extern "C"
-void* callback_ZN7QThread21setTerminationEnabledEb = 0;
+void* callback_ZN7QThread21setTerminationEnabledEb_fnptr = 0;
 extern "C" void set_callback_ZN7QThread21setTerminationEnabledEb(void*cbfn)
-{ callback_ZN7QThread21setTerminationEnabledEb = cbfn; }
+{ callback_ZN7QThread21setTerminationEnabledEb_fnptr = cbfn; }
 
 class MyQThread : public QThread {
 public:
@@ -37,22 +37,25 @@ public:
 MyQThread(QObject * parent) : QThread(parent) {}
 // void run()
   virtual void run() {
-    if (callback_ZN7QThread3runEv != 0) {
-      // callback_ZN7QThread3runEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN7QThread3runEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QThread::run();
   }
 // int exec()
   virtual int exec() {
-    if (callback_ZN7QThread4execEv != 0) {
-      // callback_ZN7QThread4execEv();
+    auto fnptr = ((int (*)(void* ))(callback_ZN7QThread4execEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QThread::exec();
   }
 // void setTerminationEnabled(_Bool)
   virtual void setTerminationEnabled(bool enabled) {
-    if (callback_ZN7QThread21setTerminationEnabledEb != 0) {
-      // callback_ZN7QThread21setTerminationEnabledEb(enabled);
+    auto fnptr = ((void (*)(void* , bool))(callback_ZN7QThread21setTerminationEnabledEb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , enabled);
     }
     QThread::setTerminationEnabled(enabled);
   }

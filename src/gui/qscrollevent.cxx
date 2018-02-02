@@ -20,8 +20,8 @@ MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEve
 // /usr/include/qt/QtGui/qevent.h:1022
 // [-2] void QScrollEvent(const class QPointF &, const class QPointF &, enum QScrollEvent::ScrollState)
 extern "C"
-void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) {
-  return  new QScrollEvent(contentPos, overshoot, scrollState);
+void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, QPointF* overshoot, QScrollEvent::ScrollState scrollState) {
+  return  new QScrollEvent(*contentPos, *overshoot, scrollState);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1023

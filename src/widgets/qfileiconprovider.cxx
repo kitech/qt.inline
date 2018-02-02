@@ -42,16 +42,16 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:66
 // [8] QIcon icon(const class QFileInfo &)
 extern "C"
-void* C_ZNK17QFileIconProvider4iconERK9QFileInfo(void *this_, const QFileInfo & info) {
-  auto rv = ((QFileIconProvider*)this_)->icon(info);
+void* C_ZNK17QFileIconProvider4iconERK9QFileInfo(void *this_, QFileInfo* info) {
+  auto rv = ((QFileIconProvider*)this_)->icon(*info);
 return new QIcon(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:67
 // [8] QString type(const class QFileInfo &)
 extern "C"
-void* C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *this_, const QFileInfo & info) {
-  auto rv = ((QFileIconProvider*)this_)->type(info);
+void* C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *this_, QFileInfo* info) {
+  auto rv = ((QFileIconProvider*)this_)->type(*info);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available

@@ -31,8 +31,8 @@ void* C_ZN17QByteArrayMatcherC2Ev() {
 // /usr/include/qt/QtCore/qbytearraymatcher.h:54
 // [-2] void QByteArrayMatcher(const class QByteArray &)
 extern "C"
-void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(const QByteArray & pattern) {
-  return  new QByteArrayMatcher(pattern);
+void* C_ZN17QByteArrayMatcherC2ERK10QByteArray(QByteArray* pattern) {
+  return  new QByteArrayMatcher(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:55
@@ -52,15 +52,15 @@ void C_ZN17QByteArrayMatcherD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qbytearraymatcher.h:61
 // [-2] void setPattern(const class QByteArray &)
 extern "C"
-void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, const QByteArray & pattern) {
-  ((QByteArrayMatcher*)this_)->setPattern(pattern);
+void C_ZN17QByteArrayMatcher10setPatternERK10QByteArray(void *this_, QByteArray* pattern) {
+  ((QByteArrayMatcher*)this_)->setPattern(*pattern);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:63
 // [4] int indexIn(const class QByteArray &, int)
 extern "C"
-int C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, const QByteArray & ba, int from) {
-  return (int)((QByteArrayMatcher*)this_)->indexIn(ba, from);
+int C_ZNK17QByteArrayMatcher7indexInERK10QByteArrayi(void *this_, QByteArray* ba, int from) {
+  return (int)((QByteArrayMatcher*)this_)->indexIn(*ba, from);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearraymatcher.h:64

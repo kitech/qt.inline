@@ -160,8 +160,8 @@ void C_ZN24QAbstractEventDispatcher23removeNativeEventFilterEP26QAbstractNativeE
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:112
 // [1] bool filterNativeEvent(const class QByteArray &, void *, long *)
 extern "C"
-bool C_ZN24QAbstractEventDispatcher17filterNativeEventERK10QByteArrayPvPl(void *this_, const QByteArray & eventType, void * message, long * result) {
-  return (bool)((QAbstractEventDispatcher*)this_)->filterNativeEvent(eventType, message, result);
+bool C_ZN24QAbstractEventDispatcher17filterNativeEventERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
+  return (bool)((QAbstractEventDispatcher*)this_)->filterNativeEvent(*eventType, message, result);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h:119

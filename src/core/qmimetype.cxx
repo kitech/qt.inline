@@ -27,8 +27,8 @@ void* C_ZN9QMimeTypeC2Ev() {
 // /usr/include/qt/QtCore/qmimetype.h:84
 // [-2] void swap(class QMimeType &)
 extern "C"
-void C_ZN9QMimeType4swapERS_(void *this_, QMimeType & other) {
-  ((QMimeType*)this_)->swap(other);
+void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
+  ((QMimeType*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:89
@@ -95,8 +95,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qmimetype.h:113
 // [1] bool inherits(const class QString &)
 extern "C"
-bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, const QString & mimeTypeName) {
-  return (bool)((QMimeType*)this_)->inherits(mimeTypeName);
+bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, QString* mimeTypeName) {
+  return (bool)((QMimeType*)this_)->inherits(*mimeTypeName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:115

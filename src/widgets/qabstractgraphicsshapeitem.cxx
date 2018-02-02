@@ -42,8 +42,8 @@ return new QPen(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:607
 // [-2] void setPen(const class QPen &)
 extern "C"
-void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, const QPen & pen) {
-  ((QAbstractGraphicsShapeItem*)this_)->setPen(pen);
+void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, QPen* pen) {
+  ((QAbstractGraphicsShapeItem*)this_)->setPen(*pen);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:609
@@ -57,8 +57,8 @@ return new QBrush(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:610
 // [-2] void setBrush(const class QBrush &)
 extern "C"
-void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, const QBrush & brush) {
-  ((QAbstractGraphicsShapeItem*)this_)->setBrush(brush);
+void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* brush) {
+  ((QAbstractGraphicsShapeItem*)this_)->setBrush(*brush);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:612

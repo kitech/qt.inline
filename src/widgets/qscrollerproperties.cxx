@@ -34,8 +34,8 @@ void C_ZN19QScrollerPropertiesD2Ev(void *this_) {
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:68
 // [-2] void setDefaultScrollerProperties(const class QScrollerProperties &)
 extern "C"
-void C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(const QScrollerProperties & sp) {
-  QScrollerProperties::setDefaultScrollerProperties(sp);
+void C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(QScrollerProperties* sp) {
+  QScrollerProperties::setDefaultScrollerProperties(*sp);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:69
@@ -56,7 +56,7 @@ return new QVariant(rv);
 // /usr/include/qt/QtWidgets/qscrollerproperties.h:118
 // [-2] void setScrollMetric(enum QScrollerProperties::ScrollMetric, const class QVariant &)
 extern "C"
-void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, const QVariant & value) {
-  ((QScrollerProperties*)this_)->setScrollMetric(metric, value);
+void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, QVariant* value) {
+  ((QScrollerProperties*)this_)->setScrollMetric(metric, *value);
 }
 //  main block end

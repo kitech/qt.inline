@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qfinalstate.h:58
 // [-2] void onEntry(class QEvent *)
 extern "C"
-void* callback_ZN11QFinalState7onEntryEP6QEvent = 0;
+void* callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFinalState7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState7onEntryEP6QEvent = cbfn; }
+{ callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:59
 // [-2] void onExit(class QEvent *)
 extern "C"
-void* callback_ZN11QFinalState6onExitEP6QEvent = 0;
+void* callback_ZN11QFinalState6onExitEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFinalState6onExitEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState6onExitEP6QEvent = cbfn; }
+{ callback_ZN11QFinalState6onExitEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:61
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN11QFinalState5eventEP6QEvent = 0;
+void* callback_ZN11QFinalState5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN11QFinalState5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState5eventEP6QEvent = cbfn; }
+{ callback_ZN11QFinalState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFinalState : public QFinalState {
 public:
@@ -37,22 +37,25 @@ public:
 MyQFinalState(QState * parent) : QFinalState(parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    if (callback_ZN11QFinalState7onEntryEP6QEvent != 0) {
-      // callback_ZN11QFinalState7onEntryEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState7onEntryEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QFinalState::onEntry(event);
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    if (callback_ZN11QFinalState6onExitEP6QEvent != 0) {
-      // callback_ZN11QFinalState6onExitEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState6onExitEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QFinalState::onExit(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN11QFinalState5eventEP6QEvent != 0) {
-      // callback_ZN11QFinalState5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFinalState5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QFinalState::event(e);
   }

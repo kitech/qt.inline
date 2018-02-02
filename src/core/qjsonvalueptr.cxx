@@ -20,7 +20,12 @@ MyQJsonValuePtr(const QJsonValue & val) : QJsonValuePtr(val) {}
 // /usr/include/qt/QtCore/qjsonvalue.h:226
 // [-2] void QJsonValuePtr(const class QJsonValue &)
 extern "C"
-void* C_ZN13QJsonValuePtrC2ERK10QJsonValue(const QJsonValue & val) {
-  return  new QJsonValuePtr(val);
+void* C_ZN13QJsonValuePtrC2ERK10QJsonValue(QJsonValue* val) {
+  return  new QJsonValuePtr(*val);
+}
+
+extern "C"
+void C_ZN13QJsonValuePtrD2Ev(void *this_) {
+  delete (QJsonValuePtr*)(this_);
 }
 //  main block end

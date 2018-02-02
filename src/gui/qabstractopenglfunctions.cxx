@@ -12,16 +12,16 @@
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:220
 // [-2] void QAbstractOpenGLFunctions()
 extern "C"
-void* callback_ZN24QAbstractOpenGLFunctionsC1Ev = 0;
+void* callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = 0;
 extern "C" void set_callback_ZN24QAbstractOpenGLFunctionsC1Ev(void*cbfn)
-{ callback_ZN24QAbstractOpenGLFunctionsC1Ev = cbfn; }
+{ callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:223
 // [1] bool isInitialized()
 extern "C"
-void* callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv = 0;
+void* callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = 0;
 extern "C" void set_callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void*cbfn)
-{ callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv = cbfn; }
+{ callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = cbfn; }
 
 class MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
@@ -30,8 +30,9 @@ public:
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // bool isInitialized()
   virtual bool isInitialized() {
-    if (callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv != 0) {
-      // callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv();
+    auto fnptr = ((bool (*)(void* ))(callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QAbstractOpenGLFunctions::isInitialized();
   }

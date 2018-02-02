@@ -40,15 +40,15 @@ void* C_ZN4QPenC2EN2Qt8PenStyleE(Qt::PenStyle arg0) {
 // /usr/include/qt/QtGui/qpen.h:65
 // [-2] void QPen(const class QColor &)
 extern "C"
-void* C_ZN4QPenC2ERK6QColor(const QColor & color) {
-  return  new QPen(color);
+void* C_ZN4QPenC2ERK6QColor(QColor* color) {
+  return  new QPen(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:66
 // [-2] void QPen(const class QBrush &, qreal, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle)
 extern "C"
-void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(const QBrush & brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
-  return  new QPen(brush, width, s, c, j);
+void* C_ZN4QPenC2ERK6QBrushdN2Qt8PenStyleENS3_11PenCapStyleENS3_12PenJoinStyleE(QBrush* brush, qreal width, Qt::PenStyle s, Qt::PenCapStyle c, Qt::PenJoinStyle j) {
+  return  new QPen(*brush, width, s, c, j);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:70
@@ -61,8 +61,8 @@ void C_ZN4QPenD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qpen.h:79
 // [-2] void swap(class QPen &)
 extern "C"
-void C_ZN4QPen4swapERS_(void *this_, QPen & other) {
-  ((QPen*)this_)->swap(other);
+void C_ZN4QPen4swapERS_(void *this_, QPen* other) {
+  ((QPen*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:81
@@ -146,8 +146,8 @@ return new QColor(rv);
 // /usr/include/qt/QtGui/qpen.h:100
 // [-2] void setColor(const class QColor &)
 extern "C"
-void C_ZN4QPen8setColorERK6QColor(void *this_, const QColor & color) {
-  ((QPen*)this_)->setColor(color);
+void C_ZN4QPen8setColorERK6QColor(void *this_, QColor* color) {
+  ((QPen*)this_)->setColor(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:102
@@ -161,8 +161,8 @@ return new QBrush(rv);
 // /usr/include/qt/QtGui/qpen.h:103
 // [-2] void setBrush(const class QBrush &)
 extern "C"
-void C_ZN4QPen8setBrushERK6QBrush(void *this_, const QBrush & brush) {
-  ((QPen*)this_)->setBrush(brush);
+void C_ZN4QPen8setBrushERK6QBrush(void *this_, QBrush* brush) {
+  ((QPen*)this_)->setBrush(*brush);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpen.h:105

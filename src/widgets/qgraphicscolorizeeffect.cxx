@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:147
 // [-2] void draw(class QPainter *)
 extern "C"
-void* callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter = 0;
+void* callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = 0;
 extern "C" void set_callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter = cbfn; }
+{ callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    if (callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter != 0) {
-      // callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(painter);
+    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , painter);
     }
     QGraphicsColorizeEffect::draw(painter);
   }
@@ -71,8 +72,8 @@ qreal C_ZNK23QGraphicsColorizeEffect8strengthEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:139
 // [-2] void setColor(const class QColor &)
 extern "C"
-void C_ZN23QGraphicsColorizeEffect8setColorERK6QColor(void *this_, const QColor & c) {
-  ((QGraphicsColorizeEffect*)this_)->setColor(c);
+void C_ZN23QGraphicsColorizeEffect8setColorERK6QColor(void *this_, QColor* c) {
+  ((QGraphicsColorizeEffect*)this_)->setColor(*c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:140
@@ -85,8 +86,8 @@ void C_ZN23QGraphicsColorizeEffect11setStrengthEd(void *this_, qreal strength) {
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:143
 // [-2] void colorChanged(const class QColor &)
 extern "C"
-void C_ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(void *this_, const QColor & color) {
-  ((QGraphicsColorizeEffect*)this_)->colorChanged(color);
+void C_ZN23QGraphicsColorizeEffect12colorChangedERK6QColor(void *this_, QColor* color) {
+  ((QGraphicsColorizeEffect*)this_)->colorChanged(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:144

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:113
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QSystemTrayIcon5eventEP6QEvent = 0;
+void* callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QSystemTrayIcon5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QSystemTrayIcon5eventEP6QEvent = cbfn; }
+{ callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSystemTrayIcon : public QSystemTrayIcon {
 public:
@@ -25,8 +25,9 @@ MyQSystemTrayIcon(QObject * parent) : QSystemTrayIcon(parent) {}
 MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN15QSystemTrayIcon5eventEP6QEvent != 0) {
-      // callback_ZN15QSystemTrayIcon5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QSystemTrayIcon::event(event);
   }
@@ -51,9 +52,9 @@ void* C_ZN15QSystemTrayIconC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:70
 // [-2] void QSystemTrayIcon(const class QIcon &, class QObject *)
 extern "C"
-void* C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(const QIcon & icon, QObject * parent) {
+void* C_ZN15QSystemTrayIconC2ERK5QIconP7QObject(QIcon* icon, QObject * parent) {
   auto _nilp = (MyQSystemTrayIcon*)(0);
-  return  new MyQSystemTrayIcon(icon, parent);
+  return  new MyQSystemTrayIcon(*icon, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:71
@@ -88,8 +89,8 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:87
 // [-2] void setIcon(const class QIcon &)
 extern "C"
-void C_ZN15QSystemTrayIcon7setIconERK5QIcon(void *this_, const QIcon & icon) {
-  ((QSystemTrayIcon*)this_)->setIcon(icon);
+void C_ZN15QSystemTrayIcon7setIconERK5QIcon(void *this_, QIcon* icon) {
+  ((QSystemTrayIcon*)this_)->setIcon(*icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:89
@@ -103,8 +104,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:90
 // [-2] void setToolTip(const class QString &)
 extern "C"
-void C_ZN15QSystemTrayIcon10setToolTipERK7QString(void *this_, const QString & tip) {
-  ((QSystemTrayIcon*)this_)->setToolTip(tip);
+void C_ZN15QSystemTrayIcon10setToolTipERK7QString(void *this_, QString* tip) {
+  ((QSystemTrayIcon*)this_)->setToolTip(*tip);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:92
@@ -160,15 +161,15 @@ void C_ZN15QSystemTrayIcon4hideEv(void *this_) {
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:104
 // [-2] void showMessage(const class QString &, const class QString &, const class QIcon &, int)
 extern "C"
-void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_RK5QIconi(void *this_, const QString & title, const QString & msg, const QIcon & icon, int msecs) {
-  ((QSystemTrayIcon*)this_)->showMessage(title, msg, icon, msecs);
+void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_RK5QIconi(void *this_, QString* title, QString* msg, QIcon* icon, int msecs) {
+  ((QSystemTrayIcon*)this_)->showMessage(*title, *msg, *icon, msecs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:105
 // [-2] void showMessage(const class QString &, const class QString &, class QSystemTrayIcon::MessageIcon, int)
 extern "C"
-void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi(void *this_, const QString & title, const QString & msg, QSystemTrayIcon::MessageIcon icon, int msecs) {
-  ((QSystemTrayIcon*)this_)->showMessage(title, msg, icon, msecs);
+void C_ZN15QSystemTrayIcon11showMessageERK7QStringS2_NS_11MessageIconEi(void *this_, QString* title, QString* msg, QSystemTrayIcon::MessageIcon icon, int msecs) {
+  ((QSystemTrayIcon*)this_)->showMessage(*title, *msg, icon, msecs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:109

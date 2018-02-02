@@ -12,58 +12,58 @@
 // /usr/include/qt/QtGui/qimage.h:352
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
 extern "C"
-void* callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE = 0;
+void* callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
 extern "C" void set_callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE = cbfn; }
+{ callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:353
 // [32] QImage mirrored_helper(_Bool, _Bool)
 extern "C"
-void* callback_ZNK6QImage15mirrored_helperEbb = 0;
+void* callback_ZNK6QImage15mirrored_helperEbb_fnptr = 0;
 extern "C" void set_callback_ZNK6QImage15mirrored_helperEbb(void*cbfn)
-{ callback_ZNK6QImage15mirrored_helperEbb = cbfn; }
+{ callback_ZNK6QImage15mirrored_helperEbb_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:354
 // [32] QImage rgbSwapped_helper()
 extern "C"
-void* callback_ZNK6QImage17rgbSwapped_helperEv = 0;
+void* callback_ZNK6QImage17rgbSwapped_helperEv_fnptr = 0;
 extern "C" void set_callback_ZNK6QImage17rgbSwapped_helperEv(void*cbfn)
-{ callback_ZNK6QImage17rgbSwapped_helperEv = cbfn; }
+{ callback_ZNK6QImage17rgbSwapped_helperEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:355
 // [-2] void mirrored_inplace(_Bool, _Bool)
 extern "C"
-void* callback_ZN6QImage16mirrored_inplaceEbb = 0;
+void* callback_ZN6QImage16mirrored_inplaceEbb_fnptr = 0;
 extern "C" void set_callback_ZN6QImage16mirrored_inplaceEbb(void*cbfn)
-{ callback_ZN6QImage16mirrored_inplaceEbb = cbfn; }
+{ callback_ZN6QImage16mirrored_inplaceEbb_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:356
 // [-2] void rgbSwapped_inplace()
 extern "C"
-void* callback_ZN6QImage18rgbSwapped_inplaceEv = 0;
+void* callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr = 0;
 extern "C" void set_callback_ZN6QImage18rgbSwapped_inplaceEv(void*cbfn)
-{ callback_ZN6QImage18rgbSwapped_inplaceEv = cbfn; }
+{ callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:357
 // [32] QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
 extern "C"
-void* callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE = 0;
+void* callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
 extern "C" void set_callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-{ callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE = cbfn; }
+{ callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:358
 // [1] bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
 extern "C"
-void* callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE = 0;
+void* callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
 extern "C" void set_callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-{ callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE = cbfn; }
+{ callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:359
 // [32] QImage smoothScaled(int, int)
 extern "C"
-void* callback_ZNK6QImage12smoothScaledEii = 0;
+void* callback_ZNK6QImage12smoothScaledEii_fnptr = 0;
 extern "C" void set_callback_ZNK6QImage12smoothScaledEii(void*cbfn)
-{ callback_ZNK6QImage12smoothScaledEii = cbfn; }
+{ callback_ZNK6QImage12smoothScaledEii_fnptr = cbfn; }
 
 class MyQImage : public QImage {
 public:
@@ -80,57 +80,65 @@ MyQImage(char** xpm) : QImage(xpm) {}
 MyQImage(const QString & fileName, const char * format) : QImage(fileName, format) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
-    if (callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-      // callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(metric);
+    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , metric);
     }
     return QImage::metric(metric);
   }
 // QImage mirrored_helper(_Bool, _Bool)
   virtual QImage mirrored_helper(bool horizontal, bool vertical) {
-    if (callback_ZNK6QImage15mirrored_helperEbb != 0) {
-      // callback_ZNK6QImage15mirrored_helperEbb(horizontal, vertical);
+    auto fnptr = ((QImage (*)(void* , bool, bool))(callback_ZNK6QImage15mirrored_helperEbb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , horizontal, vertical);
     }
     return QImage::mirrored_helper(horizontal, vertical);
   }
 // QImage rgbSwapped_helper()
   virtual QImage rgbSwapped_helper() {
-    if (callback_ZNK6QImage17rgbSwapped_helperEv != 0) {
-      // callback_ZNK6QImage17rgbSwapped_helperEv();
+    auto fnptr = ((QImage (*)(void* ))(callback_ZNK6QImage17rgbSwapped_helperEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     return QImage::rgbSwapped_helper();
   }
 // void mirrored_inplace(_Bool, _Bool)
   virtual void mirrored_inplace(bool horizontal, bool vertical) {
-    if (callback_ZN6QImage16mirrored_inplaceEbb != 0) {
-      // callback_ZN6QImage16mirrored_inplaceEbb(horizontal, vertical);
+    auto fnptr = ((void (*)(void* , bool, bool))(callback_ZN6QImage16mirrored_inplaceEbb_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , horizontal, vertical);
     }
     QImage::mirrored_inplace(horizontal, vertical);
   }
 // void rgbSwapped_inplace()
   virtual void rgbSwapped_inplace() {
-    if (callback_ZN6QImage18rgbSwapped_inplaceEv != 0) {
-      // callback_ZN6QImage18rgbSwapped_inplaceEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QImage::rgbSwapped_inplace();
   }
 // QImage convertToFormat_helper(enum QImage::Format, Qt::ImageConversionFlags)
   virtual QImage convertToFormat_helper(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
-    if (callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
-      // callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
+    auto fnptr = ((QImage (*)(void* , QImage::Format, QFlags<Qt::ImageConversionFlag>))(callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , format, flags);
     }
     return QImage::convertToFormat_helper(format, flags);
   }
 // bool convertToFormat_inplace(enum QImage::Format, Qt::ImageConversionFlags)
   virtual bool convertToFormat_inplace(QImage::Format format, QFlags<Qt::ImageConversionFlag> flags) {
-    if (callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE != 0) {
-      // callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(format, flags);
+    auto fnptr = ((bool (*)(void* , QImage::Format, QFlags<Qt::ImageConversionFlag>))(callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , format, flags);
     }
     return QImage::convertToFormat_inplace(format, flags);
   }
 // QImage smoothScaled(int, int)
   virtual QImage smoothScaled(int w, int h) {
-    if (callback_ZNK6QImage12smoothScaledEii != 0) {
-      // callback_ZNK6QImage12smoothScaledEii(w, h);
+    auto fnptr = ((QImage (*)(void* , int, int))(callback_ZNK6QImage12smoothScaledEii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , w, h);
     }
     return QImage::smoothScaled(w, h);
   }
@@ -148,9 +156,9 @@ void* C_ZN6QImageC2Ev() {
 // /usr/include/qt/QtGui/qimage.h:137
 // [-2] void QImage(const class QSize &, enum QImage::Format)
 extern "C"
-void* C_ZN6QImageC2ERK5QSizeNS_6FormatE(const QSize & size, QImage::Format format) {
+void* C_ZN6QImageC2ERK5QSizeNS_6FormatE(QSize* size, QImage::Format format) {
   auto _nilp = (MyQImage*)(0);
-  return  new MyQImage(size, format);
+  return  new MyQImage(*size, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:138
@@ -172,9 +180,9 @@ void* C_ZN6QImageC2EPKPKc(char** xpm) {
 // /usr/include/qt/QtGui/qimage.h:147
 // [-2] void QImage(const class QString &, const char *)
 extern "C"
-void* C_ZN6QImageC2ERK7QStringPKc(const QString & fileName, const char * format) {
+void* C_ZN6QImageC2ERK7QStringPKc(QString* fileName, const char * format) {
   auto _nilp = (MyQImage*)(0);
-  return  new MyQImage(fileName, format);
+  return  new MyQImage(*fileName, format);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:155
@@ -187,8 +195,8 @@ void C_ZN6QImageD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:162
 // [-2] void swap(class QImage &)
 extern "C"
-void C_ZN6QImage4swapERS_(void *this_, QImage & other) {
-  ((QImage*)this_)->swap(other);
+void C_ZN6QImage4swapERS_(void *this_, QImage* other) {
+  ((QImage*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:165
@@ -222,8 +230,8 @@ bool C_ZNK6QImage10isDetachedEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:175
 // [32] QImage copy(const class QRect &)
 extern "C"
-void* C_ZNK6QImage4copyERK5QRect(void *this_, const QRect & rect) {
-  auto rv = ((QImage*)this_)->copy(rect);
+void* C_ZNK6QImage4copyERK5QRect(void *this_, QRect* rect) {
+  auto rv = ((QImage*)this_)->copy(*rect);
 return new QImage(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -424,8 +432,8 @@ bool C_ZNK6QImage5validEii(void *this_, int x, int y) {
 // /usr/include/qt/QtGui/qimage.h:228
 // [1] bool valid(const class QPoint &)
 extern "C"
-bool C_ZNK6QImage5validERK6QPoint(void *this_, const QPoint & pt) {
-  return (bool)((QImage*)this_)->valid(pt);
+bool C_ZNK6QImage5validERK6QPoint(void *this_, QPoint* pt) {
+  return (bool)((QImage*)this_)->valid(*pt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:230
@@ -438,8 +446,8 @@ int C_ZNK6QImage10pixelIndexEii(void *this_, int x, int y) {
 // /usr/include/qt/QtGui/qimage.h:231
 // [4] int pixelIndex(const class QPoint &)
 extern "C"
-int C_ZNK6QImage10pixelIndexERK6QPoint(void *this_, const QPoint & pt) {
-  return (int)((QImage*)this_)->pixelIndex(pt);
+int C_ZNK6QImage10pixelIndexERK6QPoint(void *this_, QPoint* pt) {
+  return (int)((QImage*)this_)->pixelIndex(*pt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:233
@@ -452,8 +460,8 @@ QRgb C_ZNK6QImage5pixelEii(void *this_, int x, int y) {
 // /usr/include/qt/QtGui/qimage.h:234
 // [4] QRgb pixel(const class QPoint &)
 extern "C"
-QRgb C_ZNK6QImage5pixelERK6QPoint(void *this_, const QPoint & pt) {
-  return (QRgb)((QImage*)this_)->pixel(pt);
+QRgb C_ZNK6QImage5pixelERK6QPoint(void *this_, QPoint* pt) {
+  return (QRgb)((QImage*)this_)->pixel(*pt);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:236
@@ -466,8 +474,8 @@ void C_ZN6QImage8setPixelEiij(void *this_, int x, int y, uint index_or_rgb) {
 // /usr/include/qt/QtGui/qimage.h:237
 // [-2] void setPixel(const class QPoint &, uint)
 extern "C"
-void C_ZN6QImage8setPixelERK6QPointj(void *this_, const QPoint & pt, uint index_or_rgb) {
-  ((QImage*)this_)->setPixel(pt, index_or_rgb);
+void C_ZN6QImage8setPixelERK6QPointj(void *this_, QPoint* pt, uint index_or_rgb) {
+  ((QImage*)this_)->setPixel(*pt, index_or_rgb);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:239
@@ -481,23 +489,23 @@ return new QColor(rv);
 // /usr/include/qt/QtGui/qimage.h:240
 // [16] QColor pixelColor(const class QPoint &)
 extern "C"
-void* C_ZNK6QImage10pixelColorERK6QPoint(void *this_, const QPoint & pt) {
-  auto rv = ((QImage*)this_)->pixelColor(pt);
+void* C_ZNK6QImage10pixelColorERK6QPoint(void *this_, QPoint* pt) {
+  auto rv = ((QImage*)this_)->pixelColor(*pt);
 return new QColor(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:242
 // [-2] void setPixelColor(int, int, const class QColor &)
 extern "C"
-void C_ZN6QImage13setPixelColorEiiRK6QColor(void *this_, int x, int y, const QColor & c) {
-  ((QImage*)this_)->setPixelColor(x, y, c);
+void C_ZN6QImage13setPixelColorEiiRK6QColor(void *this_, int x, int y, QColor* c) {
+  ((QImage*)this_)->setPixelColor(x, y, *c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:243
 // [-2] void setPixelColor(const class QPoint &, const class QColor &)
 extern "C"
-void C_ZN6QImage13setPixelColorERK6QPointRK6QColor(void *this_, const QPoint & pt, const QColor & c) {
-  ((QImage*)this_)->setPixelColor(pt, c);
+void C_ZN6QImage13setPixelColorERK6QPointRK6QColor(void *this_, QPoint* pt, QColor* c) {
+  ((QImage*)this_)->setPixelColor(*pt, *c);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:252
@@ -524,8 +532,8 @@ void C_ZN6QImage4fillEj(void *this_, uint pixel) {
 // /usr/include/qt/QtGui/qimage.h:256
 // [-2] void fill(const class QColor &)
 extern "C"
-void C_ZN6QImage4fillERK6QColor(void *this_, const QColor & color) {
-  ((QImage*)this_)->fill(color);
+void C_ZN6QImage4fillERK6QColor(void *this_, QColor* color) {
+  ((QImage*)this_)->fill(*color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:257
@@ -545,8 +553,8 @@ bool C_ZNK6QImage15hasAlphaChannelEv(void *this_) {
 // /usr/include/qt/QtGui/qimage.h:261
 // [-2] void setAlphaChannel(const class QImage &)
 extern "C"
-void C_ZN6QImage15setAlphaChannelERKS_(void *this_, const QImage & alphaChannel) {
-  ((QImage*)this_)->setAlphaChannel(alphaChannel);
+void C_ZN6QImage15setAlphaChannelERKS_(void *this_, QImage* alphaChannel) {
+  ((QImage*)this_)->setAlphaChannel(*alphaChannel);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:262
@@ -592,8 +600,8 @@ return new QImage(rv);
 // /usr/include/qt/QtGui/qimage.h:272
 // [32] QImage scaled(const class QSize &, Qt::AspectRatioMode, Qt::TransformationMode)
 extern "C"
-void* C_ZNK6QImage6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *this_, const QSize & s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
-  auto rv = ((QImage*)this_)->scaled(s, aspectMode, mode);
+void* C_ZNK6QImage6scaledERK5QSizeN2Qt15AspectRatioModeENS3_18TransformationModeE(void *this_, QSize* s, Qt::AspectRatioMode aspectMode, Qt::TransformationMode mode) {
+  auto rv = ((QImage*)this_)->scaled(*s, aspectMode, mode);
 return new QImage(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -616,32 +624,32 @@ return new QImage(rv);
 // /usr/include/qt/QtGui/qimage.h:276
 // [32] QImage transformed(const class QMatrix &, Qt::TransformationMode)
 extern "C"
-void* C_ZNK6QImage11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, const QMatrix & matrix, Qt::TransformationMode mode) {
-  auto rv = ((QImage*)this_)->transformed(matrix, mode);
+void* C_ZNK6QImage11transformedERK7QMatrixN2Qt18TransformationModeE(void *this_, QMatrix* matrix, Qt::TransformationMode mode) {
+  auto rv = ((QImage*)this_)->transformed(*matrix, mode);
 return new QImage(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:277
 // [48] QMatrix trueMatrix(const class QMatrix &, int, int)
 extern "C"
-void* C_ZN6QImage10trueMatrixERK7QMatrixii(const QMatrix & arg0, int w, int h) {
-  auto rv = QImage::trueMatrix(arg0, w, h);
+void* C_ZN6QImage10trueMatrixERK7QMatrixii(QMatrix* arg0, int w, int h) {
+  auto rv = QImage::trueMatrix(*arg0, w, h);
 return new QMatrix(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:278
 // [32] QImage transformed(const class QTransform &, Qt::TransformationMode)
 extern "C"
-void* C_ZNK6QImage11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, const QTransform & matrix, Qt::TransformationMode mode) {
-  auto rv = ((QImage*)this_)->transformed(matrix, mode);
+void* C_ZNK6QImage11transformedERK10QTransformN2Qt18TransformationModeE(void *this_, QTransform* matrix, Qt::TransformationMode mode) {
+  auto rv = ((QImage*)this_)->transformed(*matrix, mode);
 return new QImage(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:279
 // [88] QTransform trueMatrix(const class QTransform &, int, int)
 extern "C"
-void* C_ZN6QImage10trueMatrixERK10QTransformii(const QTransform & arg0, int w, int h) {
-  auto rv = QImage::trueMatrix(arg0, w, h);
+void* C_ZN6QImage10trueMatrixERK10QTransformii(QTransform* arg0, int w, int h) {
+  auto rv = QImage::trueMatrix(*arg0, w, h);
 return new QTransform(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -694,8 +702,8 @@ bool C_ZN6QImage4loadEP9QIODevicePKc(void *this_, QIODevice * device, const char
 // /usr/include/qt/QtGui/qimage.h:297
 // [1] bool load(const class QString &, const char *)
 extern "C"
-bool C_ZN6QImage4loadERK7QStringPKc(void *this_, const QString & fileName, const char * format) {
-  return (bool)((QImage*)this_)->load(fileName, format);
+bool C_ZN6QImage4loadERK7QStringPKc(void *this_, QString* fileName, const char * format) {
+  return (bool)((QImage*)this_)->load(*fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:298
@@ -708,15 +716,15 @@ bool C_ZN6QImage12loadFromDataEPKhiPKc(void *this_, const uchar * buf, int len, 
 // /usr/include/qt/QtGui/qimage.h:299
 // [1] bool loadFromData(const class QByteArray &, const char *)
 extern "C"
-bool C_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *this_, const QByteArray & data, const char * aformat) {
-  return (bool)((QImage*)this_)->loadFromData(data, aformat);
+bool C_ZN6QImage12loadFromDataERK10QByteArrayPKc(void *this_, QByteArray* data, const char * aformat) {
+  return (bool)((QImage*)this_)->loadFromData(*data, aformat);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:302
 // [1] bool save(const class QString &, const char *, int)
 extern "C"
-bool C_ZNK6QImage4saveERK7QStringPKci(void *this_, const QString & fileName, const char * format, int quality) {
-  return (bool)((QImage*)this_)->save(fileName, format, quality);
+bool C_ZNK6QImage4saveERK7QStringPKci(void *this_, QString* fileName, const char * format, int quality) {
+  return (bool)((QImage*)this_)->save(*fileName, format, quality);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:303
@@ -737,8 +745,8 @@ return new QImage(rv);
 // /usr/include/qt/QtGui/qimage.h:306
 // [32] QImage fromData(const class QByteArray &, const char *)
 extern "C"
-void* C_ZN6QImage8fromDataERK10QByteArrayPKc(const QByteArray & data, const char * format) {
-  auto rv = QImage::fromData(data, format);
+void* C_ZN6QImage8fromDataERK10QByteArrayPKc(QByteArray* data, const char * format) {
+  auto rv = QImage::fromData(*data, format);
 return new QImage(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -795,23 +803,23 @@ return new QPoint(rv);
 // /usr/include/qt/QtGui/qimage.h:322
 // [-2] void setOffset(const class QPoint &)
 extern "C"
-void C_ZN6QImage9setOffsetERK6QPoint(void *this_, const QPoint & arg0) {
-  ((QImage*)this_)->setOffset(arg0);
+void C_ZN6QImage9setOffsetERK6QPoint(void *this_, QPoint* arg0) {
+  ((QImage*)this_)->setOffset(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:325
 // [8] QString text(const class QString &)
 extern "C"
-void* C_ZNK6QImage4textERK7QString(void *this_, const QString & key) {
-  auto rv = ((QImage*)this_)->text(key);
+void* C_ZNK6QImage4textERK7QString(void *this_, QString* key) {
+  auto rv = ((QImage*)this_)->text(*key);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:326
 // [-2] void setText(const class QString &, const class QString &)
 extern "C"
-void C_ZN6QImage7setTextERK7QStringS2_(void *this_, const QString & key, const QString & value) {
-  ((QImage*)this_)->setText(key, value);
+void C_ZN6QImage7setTextERK7QStringS2_(void *this_, QString* key, QString* value) {
+  ((QImage*)this_)->setText(*key, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:328

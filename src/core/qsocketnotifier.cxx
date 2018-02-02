@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qsocketnotifier.h:71
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN15QSocketNotifier5eventEP6QEvent = 0;
+void* callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QSocketNotifier5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QSocketNotifier5eventEP6QEvent = cbfn; }
+{ callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSocketNotifier : public QSocketNotifier {
 public:
@@ -23,8 +23,9 @@ public:
 MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) : QSocketNotifier(socket, arg1, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN15QSocketNotifier5eventEP6QEvent != 0) {
-      // callback_ZN15QSocketNotifier5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QSocketNotifier::event(arg0);
   }

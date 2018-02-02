@@ -70,13 +70,17 @@ int QDynSlotObject::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 
 
 /////////////////////
+static bool QDynSlotObject_debug = false;
 static QAtomicInt dyn_slot_obj_seq = 0;
 QDynSlotObject::QDynSlotObject(void *fnptr, char* name, int argc, int*argtys, void*cbptr) : QObject()
 {
     this->setCallbackSlot(fnptr, name, argc, argtys, cbptr);
 }
 
-QDynSlotObject::~QDynSlotObject() {}
+QDynSlotObject::~QDynSlotObject() {
+    memset(this->name_, 0, strlen(this->name_));
+    free(this->name_);
+}
 
 void QDynSlotObject::setCallbackSlot(void *fnptr, char* name, int argc, int*argtys, void*cbptr)
 {
@@ -103,10 +107,14 @@ void QDynSlotObject::setCallbackSlot(void *fnptr, char* name, int argc, int*argt
 
 extern "C" void callback_slot_test(void*_o, int _c, int _id, void*_a,
                                    char*name, int argc, int*argtys, void*cbptr) {
-    qDebug()<<"callback_slot called:"<<_o<<_c<<_id<<_a << ((QDynSlotObject*)_o)->name_;
+    if (QDynSlotObject_debug) {
+        qDebug()<<"callback_slot called:"<<_o<<_c<<_id<<_a << ((QDynSlotObject*)_o)->name_;
+    }
     void**ap = (void**)_a;
     const QString* newname = (const QString*)(ap[1]);
-    qDebug()<<"new object name from signal parameter 0:" << newname->toLatin1().data() << ap[1];
+    if (QDynSlotObject_debug) {
+        qDebug()<<"new object name from signal parameter 0:" << newname->toLatin1().data() << ap[1];
+    }
 }
 
 // see mkuse/cffiqt/tsym/
@@ -146,10 +154,9 @@ QDynSlotObject* QDynSlotObject_new(void *fnptr, char* name, int argc, int*argtys
 void QDynSlotObject_delete(QDynSlotObject*o) { if (o != NULL) { delete o; } }
 
 void QDynSlotObject_connect_switch(QObject*src, char*signature, QDynSlotObject*me, int on) {
-    qDebug()<<src<<signature<<me<<on;
-    qDebug()<<((QTimer*)src)->interval();
-    qDebug()<<((QTimer*)src)->isActive();
-    qDebug()<<((QTimer*)src)->remainingTime();
+    if (QDynSlotObject_debug) {
+        qDebug()<<src<<signature<<me<<on;
+    }
     if (on == 0) {
         QObject::disconnect(src, signature, me, SLOT(dumnyslot()));
     } else {
@@ -163,4 +170,8 @@ void QDynSlotObject_connect_test(QObject*ofrom, QObject*oto) {
 
 void QDynSlotObject_trigger_test(QObject*osrc) {
     osrc->setObjectName(QString("rdobjname:")+QString::number(qrand()));
+}
+
+void QDynSlotObject_set_debug(int on) {
+    QDynSlotObject_debug = on == 1;
 }

@@ -12,72 +12,72 @@
 // /usr/include/qt/QtWidgets/qgroupbox.h:88
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN9QGroupBox5eventEP6QEvent = 0;
+void* callback_ZN9QGroupBox5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QGroupBox5eventEP6QEvent = cbfn; }
+{ callback_ZN9QGroupBox5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:89
 // [-2] void childEvent(class QChildEvent *)
 extern "C"
-void* callback_ZN9QGroupBox10childEventEP11QChildEvent = 0;
+void* callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN9QGroupBox10childEventEP11QChildEvent = cbfn; }
+{ callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:90
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN9QGroupBox11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN9QGroupBox11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:91
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN9QGroupBox10paintEventEP11QPaintEvent = 0;
+void* callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN9QGroupBox10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:92
 // [-2] void focusInEvent(class QFocusEvent *)
 extern "C"
-void* callback_ZN9QGroupBox12focusInEventEP11QFocusEvent = 0;
+void* callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN9QGroupBox12focusInEventEP11QFocusEvent = cbfn; }
+{ callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:93
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN9QGroupBox11changeEventEP6QEvent = 0;
+void* callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN9QGroupBox11changeEventEP6QEvent = cbfn; }
+{ callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:94
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:95
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:96
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:97
 // [-2] void initStyleOption(class QStyleOptionGroupBox *)
 extern "C"
-void* callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox = 0;
+void* callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr = 0;
 extern "C" void set_callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(void*cbfn)
-{ callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox = cbfn; }
+{ callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr = cbfn; }
 
 class MyQGroupBox : public QGroupBox {
 public:
@@ -88,71 +88,81 @@ MyQGroupBox(QWidget * parent) : QGroupBox(parent) {}
 MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    if (callback_ZN9QGroupBox5eventEP6QEvent != 0) {
-      // callback_ZN9QGroupBox5eventEP6QEvent(event);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QGroupBox5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     return QGroupBox::event(event);
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
-    if (callback_ZN9QGroupBox10childEventEP11QChildEvent != 0) {
-      // callback_ZN9QGroupBox10childEventEP11QChildEvent(event);
+    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::childEvent(event);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    if (callback_ZN9QGroupBox11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN9QGroupBox11resizeEventEP12QResizeEvent(event);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::resizeEvent(event);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    if (callback_ZN9QGroupBox10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN9QGroupBox10paintEventEP11QPaintEvent(event);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::paintEvent(event);
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    if (callback_ZN9QGroupBox12focusInEventEP11QFocusEvent != 0) {
-      // callback_ZN9QGroupBox12focusInEventEP11QFocusEvent(event);
+    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::focusInEvent(event);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    if (callback_ZN9QGroupBox11changeEventEP6QEvent != 0) {
-      // callback_ZN9QGroupBox11changeEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::changeEvent(event);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    if (callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::mousePressEvent(event);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
-    if (callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::mouseMoveEvent(event);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
-    if (callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(event);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QGroupBox::mouseReleaseEvent(event);
   }
 // void initStyleOption(class QStyleOptionGroupBox *)
   virtual void initStyleOption(QStyleOptionGroupBox * option) {
-    if (callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox != 0) {
-      // callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionGroupBox *))(callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QGroupBox::initStyleOption(option);
   }
@@ -177,9 +187,9 @@ void* C_ZN9QGroupBoxC2EP7QWidget(QWidget * parent) {
 // /usr/include/qt/QtWidgets/qgroupbox.h:63
 // [-2] void QGroupBox(const class QString &, class QWidget *)
 extern "C"
-void* C_ZN9QGroupBoxC2ERK7QStringP7QWidget(const QString & title, QWidget * parent) {
+void* C_ZN9QGroupBoxC2ERK7QStringP7QWidget(QString* title, QWidget * parent) {
   auto _nilp = (MyQGroupBox*)(0);
-  return  new MyQGroupBox(title, parent);
+  return  new MyQGroupBox(*title, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:64
@@ -200,8 +210,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qgroupbox.h:67
 // [-2] void setTitle(const class QString &)
 extern "C"
-void C_ZN9QGroupBox8setTitleERK7QString(void *this_, const QString & title) {
-  ((QGroupBox*)this_)->setTitle(title);
+void C_ZN9QGroupBox8setTitleERK7QString(void *this_, QString* title) {
+  ((QGroupBox*)this_)->setTitle(*title);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgroupbox.h:69

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:656
 // [-2] void QStyleOptionSizeGrip(int)
 extern "C"
-void* callback_ZN20QStyleOptionSizeGripC1Ei = 0;
+void* callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN20QStyleOptionSizeGripC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionSizeGripC1Ei = cbfn; }
+{ callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSizeGrip : public QStyleOptionSizeGrip {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionSizeGrip(int version) : QStyleOptionSizeGrip(version) {}
 extern "C"
 void* C_ZN20QStyleOptionSizeGripC2Ev() {
   return  new QStyleOptionSizeGrip();
+}
+
+extern "C"
+void C_ZN20QStyleOptionSizeGripD2Ev(void *this_) {
+  delete (QStyleOptionSizeGrip*)(this_);
 }
 //  main block end

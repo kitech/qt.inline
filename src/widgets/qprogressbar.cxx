@@ -12,23 +12,23 @@
 // /usr/include/qt/QtWidgets/qprogressbar.h:112
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN12QProgressBar5eventEP6QEvent = 0;
+void* callback_ZN12QProgressBar5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN12QProgressBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN12QProgressBar5eventEP6QEvent = cbfn; }
+{ callback_ZN12QProgressBar5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:113
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN12QProgressBar10paintEventEP11QPaintEvent = 0;
+void* callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN12QProgressBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN12QProgressBar10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:114
 // [-2] void initStyleOption(class QStyleOptionProgressBar *)
 extern "C"
-void* callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar = 0;
+void* callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = 0;
 extern "C" void set_callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void*cbfn)
-{ callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar = cbfn; }
+{ callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = cbfn; }
 
 class MyQProgressBar : public QProgressBar {
 public:
@@ -37,22 +37,25 @@ public:
 MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN12QProgressBar5eventEP6QEvent != 0) {
-      // callback_ZN12QProgressBar5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QProgressBar5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QProgressBar::event(e);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN12QProgressBar10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN12QProgressBar10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QProgressBar::paintEvent(arg0);
   }
 // void initStyleOption(class QStyleOptionProgressBar *)
   virtual void initStyleOption(QStyleOptionProgressBar * option) {
-    if (callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar != 0) {
-      // callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(option);
+    auto fnptr = ((void (*)(void* , QStyleOptionProgressBar *))(callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option);
     }
     QProgressBar::initStyleOption(option);
   }
@@ -185,8 +188,8 @@ QProgressBar::Direction C_ZNK12QProgressBar13textDirectionEv(void *this_) {
 // /usr/include/qt/QtWidgets/qprogressbar.h:96
 // [-2] void setFormat(const class QString &)
 extern "C"
-void C_ZN12QProgressBar9setFormatERK7QString(void *this_, const QString & format) {
-  ((QProgressBar*)this_)->setFormat(format);
+void C_ZN12QProgressBar9setFormatERK7QString(void *this_, QString* format) {
+  ((QProgressBar*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:97

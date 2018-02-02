@@ -20,8 +20,8 @@ MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEv
 // /usr/include/qt/QtGui/qevent.h:767
 // [-2] void QShortcutEvent(const class QKeySequence &, int, _Bool)
 extern "C"
-void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(const QKeySequence & key, int id, bool ambiguous) {
-  return  new QShortcutEvent(key, id, ambiguous);
+void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool ambiguous) {
+  return  new QShortcutEvent(*key, id, ambiguous);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:768

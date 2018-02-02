@@ -20,8 +20,8 @@ MyQSystemSemaphore(const QString & key, int initialValue, QSystemSemaphore::Acce
 // /usr/include/qt/QtCore/qsystemsemaphore.h:74
 // [-2] void QSystemSemaphore(const class QString &, int, enum QSystemSemaphore::AccessMode)
 extern "C"
-void* C_ZN16QSystemSemaphoreC2ERK7QStringiNS_10AccessModeE(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) {
-  return  new QSystemSemaphore(key, initialValue, mode);
+void* C_ZN16QSystemSemaphoreC2ERK7QStringiNS_10AccessModeE(QString* key, int initialValue, QSystemSemaphore::AccessMode mode) {
+  return  new QSystemSemaphore(*key, initialValue, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsystemsemaphore.h:75
@@ -34,8 +34,8 @@ void C_ZN16QSystemSemaphoreD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qsystemsemaphore.h:77
 // [-2] void setKey(const class QString &, int, enum QSystemSemaphore::AccessMode)
 extern "C"
-void C_ZN16QSystemSemaphore6setKeyERK7QStringiNS_10AccessModeE(void *this_, const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) {
-  ((QSystemSemaphore*)this_)->setKey(key, initialValue, mode);
+void C_ZN16QSystemSemaphore6setKeyERK7QStringiNS_10AccessModeE(void *this_, QString* key, int initialValue, QSystemSemaphore::AccessMode mode) {
+  ((QSystemSemaphore*)this_)->setKey(*key, initialValue, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsystemsemaphore.h:78

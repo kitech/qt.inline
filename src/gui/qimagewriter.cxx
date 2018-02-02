@@ -31,15 +31,15 @@ void* C_ZN12QImageWriterC2Ev() {
 // /usr/include/qt/QtGui/qimagewriter.h:68
 // [-2] void QImageWriter(class QIODevice *, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, const QByteArray & format) {
-  return  new QImageWriter(device, format);
+void* C_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray(QIODevice * device, QByteArray* format) {
+  return  new QImageWriter(device, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:69
 // [-2] void QImageWriter(const class QString &, const class QByteArray &)
 extern "C"
-void* C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(const QString & fileName, const QByteArray & format) {
-  return  new QImageWriter(fileName, format);
+void* C_ZN12QImageWriterC2ERK7QStringRK10QByteArray(QString* fileName, QByteArray* format) {
+  return  new QImageWriter(*fileName, *format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:70
@@ -52,8 +52,8 @@ void C_ZN12QImageWriterD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qimagewriter.h:72
 // [-2] void setFormat(const class QByteArray &)
 extern "C"
-void C_ZN12QImageWriter9setFormatERK10QByteArray(void *this_, const QByteArray & format) {
-  ((QImageWriter*)this_)->setFormat(format);
+void C_ZN12QImageWriter9setFormatERK10QByteArray(void *this_, QByteArray* format) {
+  ((QImageWriter*)this_)->setFormat(*format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:73
@@ -81,8 +81,8 @@ void* C_ZNK12QImageWriter6deviceEv(void *this_) {
 // /usr/include/qt/QtGui/qimagewriter.h:78
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN12QImageWriter11setFileNameERK7QString(void *this_, const QString & fileName) {
-  ((QImageWriter*)this_)->setFileName(fileName);
+void C_ZN12QImageWriter11setFileNameERK7QString(void *this_, QString* fileName) {
+  ((QImageWriter*)this_)->setFileName(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:79
@@ -138,8 +138,8 @@ float C_ZNK12QImageWriter5gammaEv(void *this_) {
 // /usr/include/qt/QtGui/qimagewriter.h:90
 // [-2] void setSubType(const class QByteArray &)
 extern "C"
-void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, const QByteArray & type) {
-  ((QImageWriter*)this_)->setSubType(type);
+void C_ZN12QImageWriter10setSubTypeERK10QByteArray(void *this_, QByteArray* type) {
+  ((QImageWriter*)this_)->setSubType(*type);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:91
@@ -188,8 +188,8 @@ QImageIOHandler::Transformations C_ZNK12QImageWriter14transformationEv(void *thi
 // /usr/include/qt/QtGui/qimagewriter.h:104
 // [-2] void setDescription(const class QString &)
 extern "C"
-void C_ZN12QImageWriter14setDescriptionERK7QString(void *this_, const QString & description) {
-  ((QImageWriter*)this_)->setDescription(description);
+void C_ZN12QImageWriter14setDescriptionERK7QString(void *this_, QString* description) {
+  ((QImageWriter*)this_)->setDescription(*description);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:105
@@ -203,8 +203,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qimagewriter.h:107
 // [-2] void setText(const class QString &, const class QString &)
 extern "C"
-void C_ZN12QImageWriter7setTextERK7QStringS2_(void *this_, const QString & key, const QString & text) {
-  ((QImageWriter*)this_)->setText(key, text);
+void C_ZN12QImageWriter7setTextERK7QStringS2_(void *this_, QString* key, QString* text) {
+  ((QImageWriter*)this_)->setText(*key, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:109
@@ -217,8 +217,8 @@ bool C_ZNK12QImageWriter8canWriteEv(void *this_) {
 // /usr/include/qt/QtGui/qimagewriter.h:110
 // [1] bool write(const class QImage &)
 extern "C"
-bool C_ZN12QImageWriter5writeERK6QImage(void *this_, const QImage & image) {
-  return (bool)((QImageWriter*)this_)->write(image);
+bool C_ZN12QImageWriter5writeERK6QImage(void *this_, QImage* image) {
+  return (bool)((QImageWriter*)this_)->write(*image);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:112

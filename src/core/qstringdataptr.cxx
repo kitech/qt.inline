@@ -14,4 +14,9 @@ public:
   virtual ~MyQStringDataPtr() {}
 };
 
+
+extern "C"
+void C_ZN14QStringDataPtrD2Ev(void *this_) {
+  delete (QStringDataPtr*)(this_);
+}
 //  main block end

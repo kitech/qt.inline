@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qtextformat.h:714
 // [-2] void QTextListFormat(const class QTextFormat &)
 extern "C"
-void* callback_ZN15QTextListFormatC1ERK11QTextFormat = 0;
+void* callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = 0;
 extern "C" void set_callback_ZN15QTextListFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN15QTextListFormatC1ERK11QTextFormat = cbfn; }
+{ callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextListFormat : public QTextListFormat {
 public:
@@ -71,8 +71,8 @@ int C_ZNK15QTextListFormat6indentEv(void *this_) {
 // /usr/include/qt/QtGui/qtextformat.h:705
 // [-2] void setNumberPrefix(const class QString &)
 extern "C"
-void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, const QString & numberPrefix) {
-  ((QTextListFormat*)this_)->setNumberPrefix(numberPrefix);
+void C_ZN15QTextListFormat15setNumberPrefixERK7QString(void *this_, QString* numberPrefix) {
+  ((QTextListFormat*)this_)->setNumberPrefix(*numberPrefix);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:706
@@ -86,8 +86,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qtextformat.h:709
 // [-2] void setNumberSuffix(const class QString &)
 extern "C"
-void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, const QString & numberSuffix) {
-  ((QTextListFormat*)this_)->setNumberSuffix(numberSuffix);
+void C_ZN15QTextListFormat15setNumberSuffixERK7QString(void *this_, QString* numberSuffix) {
+  ((QTextListFormat*)this_)->setNumberSuffix(*numberSuffix);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:710
@@ -96,5 +96,10 @@ extern "C"
 void* C_ZNK15QTextListFormat12numberSuffixEv(void *this_) {
   auto rv = ((QTextListFormat*)this_)->numberSuffix();
 return new QString(rv);
+}
+
+extern "C"
+void C_ZN15QTextListFormatD2Ev(void *this_) {
+  delete (QTextListFormat*)(this_);
 }
 //  main block end

@@ -34,8 +34,8 @@ void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qregularexpression.h:257
 // [-2] void swap(class QRegularExpressionMatchIterator &)
 extern "C"
-void C_ZN31QRegularExpressionMatchIterator4swapERS_(void *this_, QRegularExpressionMatchIterator & other) {
-  ((QRegularExpressionMatchIterator*)this_)->swap(other);
+void C_ZN31QRegularExpressionMatchIterator4swapERS_(void *this_, QRegularExpressionMatchIterator* other) {
+  ((QRegularExpressionMatchIterator*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:259

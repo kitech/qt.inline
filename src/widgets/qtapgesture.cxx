@@ -49,7 +49,7 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgesture.h:246
 // [-2] void setPosition(const class QPointF &)
 extern "C"
-void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, const QPointF & pos) {
-  ((QTapGesture*)this_)->setPosition(pos);
+void C_ZN11QTapGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
+  ((QTapGesture*)this_)->setPosition(*pos);
 }
 //  main block end

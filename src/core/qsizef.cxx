@@ -31,8 +31,8 @@ void* C_ZN6QSizeFC2Ev() {
 // /usr/include/qt/QtCore/qsize.h:219
 // [-2] void QSizeF(const class QSize &)
 extern "C"
-void* C_ZN6QSizeFC2ERK5QSize(const QSize & sz) {
-  return  new QSizeF(sz);
+void* C_ZN6QSizeFC2ERK5QSize(QSize* sz) {
+  return  new QSizeF(*sz);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:220
@@ -116,8 +116,8 @@ void C_ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Q
 // /usr/include/qt/QtCore/qsize.h:234
 // [-2] void scale(const class QSizeF &, Qt::AspectRatioMode)
 extern "C"
-void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, const QSizeF & s, Qt::AspectRatioMode mode) {
-  ((QSizeF*)this_)->scale(s, mode);
+void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
+  ((QSizeF*)this_)->scale(*s, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:235
@@ -131,24 +131,24 @@ return new QSizeF(rv);
 // /usr/include/qt/QtCore/qsize.h:236
 // [16] QSizeF scaled(const class QSizeF &, Qt::AspectRatioMode)
 extern "C"
-void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, const QSizeF & s, Qt::AspectRatioMode mode) {
-  auto rv = ((QSizeF*)this_)->scaled(s, mode);
+void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
+  auto rv = ((QSizeF*)this_)->scaled(*s, mode);
 return new QSizeF(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:238
 // [16] QSizeF expandedTo(const class QSizeF &)
 extern "C"
-void* C_ZNK6QSizeF10expandedToERKS_(void *this_, const QSizeF & arg0) {
-  auto rv = ((QSizeF*)this_)->expandedTo(arg0);
+void* C_ZNK6QSizeF10expandedToERKS_(void *this_, QSizeF* arg0) {
+  auto rv = ((QSizeF*)this_)->expandedTo(*arg0);
 return new QSizeF(rv);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:239
 // [16] QSizeF boundedTo(const class QSizeF &)
 extern "C"
-void* C_ZNK6QSizeF9boundedToERKS_(void *this_, const QSizeF & arg0) {
-  auto rv = ((QSizeF*)this_)->boundedTo(arg0);
+void* C_ZNK6QSizeF9boundedToERKS_(void *this_, QSizeF* arg0) {
+  auto rv = ((QSizeF*)this_)->boundedTo(*arg0);
 return new QSizeF(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -174,5 +174,10 @@ extern "C"
 void* C_ZNK6QSizeF6toSizeEv(void *this_) {
   auto rv = ((QSizeF*)this_)->toSize();
 return new QSize(rv);
+}
+
+extern "C"
+void C_ZN6QSizeFD2Ev(void *this_) {
+  delete (QSizeF*)(this_);
 }
 //  main block end

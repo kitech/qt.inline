@@ -121,8 +121,8 @@ return new QRect(rv);
 // /usr/include/qt/QtGui/qaccessible.h:547
 // [4] int offsetAtPoint(const class QPoint &)
 extern "C"
-int C_ZNK24QAccessibleTextInterface13offsetAtPointERK6QPoint(void *this_, const QPoint & point) {
-  return (int)((QAccessibleTextInterface*)this_)->offsetAtPoint(point);
+int C_ZNK24QAccessibleTextInterface13offsetAtPointERK6QPoint(void *this_, QPoint* point) {
+  return (int)((QAccessibleTextInterface*)this_)->offsetAtPoint(*point);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:549

@@ -258,4 +258,9 @@ void* C_ZN8QCharRef7unicodeEv(void *this_) {
   auto& rv = ((QCharRef*)this_)->unicode();
 return &rv;
 }
+
+extern "C"
+void C_ZN8QCharRefD2Ev(void *this_) {
+  delete (QCharRef*)(this_);
+}
 //  main block end

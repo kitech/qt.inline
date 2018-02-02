@@ -63,15 +63,15 @@ return new QTextBlock(rv);
 // /usr/include/qt/QtGui/qtextlist.h:67
 // [4] int itemNumber(const class QTextBlock &)
 extern "C"
-int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, const QTextBlock & arg0) {
-  return (int)((QTextList*)this_)->itemNumber(arg0);
+int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, QTextBlock* arg0) {
+  return (int)((QTextList*)this_)->itemNumber(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:68
 // [8] QString itemText(const class QTextBlock &)
 extern "C"
-void* C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, const QTextBlock & arg0) {
-  auto rv = ((QTextList*)this_)->itemText(arg0);
+void* C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, QTextBlock* arg0) {
+  auto rv = ((QTextList*)this_)->itemText(*arg0);
 return new QString(rv);
 }
 // Public Visibility=Default Availability=Available
@@ -85,22 +85,22 @@ void C_ZN9QTextList10removeItemEi(void *this_, int i) {
 // /usr/include/qt/QtGui/qtextlist.h:71
 // [-2] void remove(const class QTextBlock &)
 extern "C"
-void C_ZN9QTextList6removeERK10QTextBlock(void *this_, const QTextBlock & arg0) {
-  ((QTextList*)this_)->remove(arg0);
+void C_ZN9QTextList6removeERK10QTextBlock(void *this_, QTextBlock* arg0) {
+  ((QTextList*)this_)->remove(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:73
 // [-2] void add(const class QTextBlock &)
 extern "C"
-void C_ZN9QTextList3addERK10QTextBlock(void *this_, const QTextBlock & block) {
-  ((QTextList*)this_)->add(block);
+void C_ZN9QTextList3addERK10QTextBlock(void *this_, QTextBlock* block) {
+  ((QTextList*)this_)->add(*block);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:75
 // [-2] void setFormat(const class QTextListFormat &)
 extern "C"
-void C_ZN9QTextList9setFormatERK15QTextListFormat(void *this_, const QTextListFormat & format) {
-  ((QTextList*)this_)->setFormat(format);
+void C_ZN9QTextList9setFormatERK15QTextListFormat(void *this_, QTextListFormat* format) {
+  ((QTextList*)this_)->setFormat(*format);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:76

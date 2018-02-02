@@ -31,8 +31,8 @@ void* C_ZN18QSemaphoreReleaserC2Ev() {
 // /usr/include/qt/QtCore/qsemaphore.h:76
 // [-2] void QSemaphoreReleaser(class QSemaphore &, int)
 extern "C"
-void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore & sem, int n) {
-  return  new QSemaphoreReleaser(sem, n);
+void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore* sem, int n) {
+  return  new QSemaphoreReleaser(*sem, n);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:78
@@ -52,8 +52,8 @@ void C_ZN18QSemaphoreReleaserD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qsemaphore.h:92
 // [-2] void swap(class QSemaphoreReleaser &)
 extern "C"
-void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser & other) {
-  ((QSemaphoreReleaser*)this_)->swap(other);
+void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser* other) {
+  ((QSemaphoreReleaser*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:98

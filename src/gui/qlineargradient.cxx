@@ -31,8 +31,8 @@ void* C_ZN15QLinearGradientC2Ev() {
 // /usr/include/qt/QtGui/qbrush.h:258
 // [-2] void QLinearGradient(const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN15QLinearGradientC2ERK7QPointFS2_(const QPointF & start, const QPointF & finalStop) {
-  return  new QLinearGradient(start, finalStop);
+void* C_ZN15QLinearGradientC2ERK7QPointFS2_(QPointF* start, QPointF* finalStop) {
+  return  new QLinearGradient(*start, *finalStop);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:259
@@ -53,8 +53,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtGui/qbrush.h:262
 // [-2] void setStart(const class QPointF &)
 extern "C"
-void C_ZN15QLinearGradient8setStartERK7QPointF(void *this_, const QPointF & start) {
-  ((QLinearGradient*)this_)->setStart(start);
+void C_ZN15QLinearGradient8setStartERK7QPointF(void *this_, QPointF* start) {
+  ((QLinearGradient*)this_)->setStart(*start);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:263
@@ -75,8 +75,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtGui/qbrush.h:266
 // [-2] void setFinalStop(const class QPointF &)
 extern "C"
-void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, const QPointF & stop) {
-  ((QLinearGradient*)this_)->setFinalStop(stop);
+void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, QPointF* stop) {
+  ((QLinearGradient*)this_)->setFinalStop(*stop);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:267
@@ -84,5 +84,10 @@ void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, const QPointF &
 extern "C"
 void C_ZN15QLinearGradient12setFinalStopEdd(void *this_, qreal x, qreal y) {
   ((QLinearGradient*)this_)->setFinalStop(x, y);
+}
+
+extern "C"
+void C_ZN15QLinearGradientD2Ev(void *this_) {
+  delete (QLinearGradient*)(this_);
 }
 //  main block end

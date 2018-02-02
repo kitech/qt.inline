@@ -12,23 +12,23 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:683
 // [1] bool supportsExtension(enum QGraphicsItem::Extension)
 extern "C"
-void* callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE = 0;
+void* callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
 extern "C" void set_callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-{ callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE = cbfn; }
+{ callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:684
 // [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
 extern "C"
-void* callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = 0;
+void* callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-{ callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant = cbfn; }
+{ callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:685
 // [16] QVariant extension(const class QVariant &)
 extern "C"
-void* callback_ZNK17QGraphicsRectItem9extensionERK8QVariant = 0;
+void* callback_ZNK17QGraphicsRectItem9extensionERK8QVariant_fnptr = 0;
 extern "C" void set_callback_ZNK17QGraphicsRectItem9extensionERK8QVariant(void*cbfn)
-{ callback_ZNK17QGraphicsRectItem9extensionERK8QVariant = cbfn; }
+{ callback_ZNK17QGraphicsRectItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsRectItem : public QGraphicsRectItem {
 public:
@@ -41,22 +41,25 @@ MyQGraphicsRectItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsRect
 MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsRectItem(x, y, w, h, parent) {}
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-    if (callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE != 0) {
-      // callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE(extension);
+    auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension);
     }
     return QGraphicsRectItem::supportsExtension(extension);
   }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-    if (callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant != 0) {
-      // callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(extension, variant);
+    auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , extension, (QVariant*)&variant);
     }
     QGraphicsRectItem::setExtension(extension, variant);
   }
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
-    if (callback_ZNK17QGraphicsRectItem9extensionERK8QVariant != 0) {
-      // callback_ZNK17QGraphicsRectItem9extensionERK8QVariant(variant);
+    auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsRectItem9extensionERK8QVariant_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QVariant*)&variant);
     }
     return QGraphicsRectItem::extension(variant);
   }
@@ -74,9 +77,9 @@ void* C_ZN17QGraphicsRectItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:662
 // [-2] void QGraphicsRectItem(const class QRectF &, class QGraphicsItem *)
 extern "C"
-void* C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(const QRectF & rect, QGraphicsItem * parent) {
+void* C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphicsItem * parent) {
   auto _nilp = (MyQGraphicsRectItem*)(0);
-  return  new MyQGraphicsRectItem(rect, parent);
+  return  new MyQGraphicsRectItem(*rect, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:663
@@ -105,8 +108,8 @@ return new QRectF(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:667
 // [-2] void setRect(const class QRectF &)
 extern "C"
-void C_ZN17QGraphicsRectItem7setRectERK6QRectF(void *this_, const QRectF & rect) {
-  ((QGraphicsRectItem*)this_)->setRect(rect);
+void C_ZN17QGraphicsRectItem7setRectERK6QRectF(void *this_, QRectF* rect) {
+  ((QGraphicsRectItem*)this_)->setRect(*rect);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:668
@@ -135,8 +138,8 @@ return new QPainterPath(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:672
 // [1] bool contains(const class QPointF &)
 extern "C"
-bool C_ZNK17QGraphicsRectItem8containsERK7QPointF(void *this_, const QPointF & point) {
-  return (bool)((QGraphicsRectItem*)this_)->contains(point);
+bool C_ZNK17QGraphicsRectItem8containsERK7QPointF(void *this_, QPointF* point) {
+  return (bool)((QGraphicsRectItem*)this_)->contains(*point);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:674

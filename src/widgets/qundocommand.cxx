@@ -29,8 +29,8 @@ void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
 // /usr/include/qt/QtWidgets/qundostack.h:61
 // [-2] void QUndoCommand(const class QString &, class QUndoCommand *)
 extern "C"
-void* C_ZN12QUndoCommandC2ERK7QStringPS_(const QString & text, QUndoCommand * parent) {
-  return  new QUndoCommand(text, parent);
+void* C_ZN12QUndoCommandC2ERK7QStringPS_(QString* text, QUndoCommand * parent) {
+  return  new QUndoCommand(*text, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:62
@@ -73,8 +73,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qundostack.h:69
 // [-2] void setText(const class QString &)
 extern "C"
-void C_ZN12QUndoCommand7setTextERK7QString(void *this_, const QString & text) {
-  ((QUndoCommand*)this_)->setText(text);
+void C_ZN12QUndoCommand7setTextERK7QString(void *this_, QString* text) {
+  ((QUndoCommand*)this_)->setText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundostack.h:71

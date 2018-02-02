@@ -20,8 +20,8 @@ MyQFontInfo(const QFont & arg0) : QFontInfo(arg0) {}
 // /usr/include/qt/QtGui/qfontinfo.h:53
 // [-2] void QFontInfo(const class QFont &)
 extern "C"
-void* C_ZN9QFontInfoC2ERK5QFont(const QFont & arg0) {
-  return  new QFontInfo(arg0);
+void* C_ZN9QFontInfoC2ERK5QFont(QFont* arg0) {
+  return  new QFontInfo(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:55
@@ -34,8 +34,8 @@ void C_ZN9QFontInfoD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qfontinfo.h:59
 // [-2] void swap(class QFontInfo &)
 extern "C"
-void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo & other) {
-  ((QFontInfo*)this_)->swap(other);
+void C_ZN9QFontInfo4swapERS_(void *this_, QFontInfo* other) {
+  ((QFontInfo*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:61

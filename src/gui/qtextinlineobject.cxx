@@ -116,4 +116,9 @@ void* C_ZNK17QTextInlineObject6formatEv(void *this_) {
   auto rv = ((QTextInlineObject*)this_)->format();
 return new QTextFormat(rv);
 }
+
+extern "C"
+void C_ZN17QTextInlineObjectD2Ev(void *this_) {
+  delete (QTextInlineObject*)(this_);
+}
 //  main block end

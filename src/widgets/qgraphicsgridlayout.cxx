@@ -300,15 +300,15 @@ void C_ZN19QGraphicsGridLayout10invalidateEv(void *this_) {
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:117
 // [-2] void setGeometry(const class QRectF &)
 extern "C"
-void C_ZN19QGraphicsGridLayout11setGeometryERK6QRectF(void *this_, const QRectF & rect) {
-  ((QGraphicsGridLayout*)this_)->setGeometry(rect);
+void C_ZN19QGraphicsGridLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
+  ((QGraphicsGridLayout*)this_)->setGeometry(*rect);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsgridlayout.h:118
 // [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
 extern "C"
-void* C_ZNK19QGraphicsGridLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, const QSizeF & constraint) {
-  auto rv = ((QGraphicsGridLayout*)this_)->sizeHint(which, constraint);
+void* C_ZNK19QGraphicsGridLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
+  auto rv = ((QGraphicsGridLayout*)this_)->sizeHint(which, *constraint);
 return new QSizeF(rv);
 }
 //  main block end

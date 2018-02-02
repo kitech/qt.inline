@@ -49,8 +49,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgesture.h:264
 // [-2] void setPosition(const class QPointF &)
 extern "C"
-void C_ZN18QTapAndHoldGesture11setPositionERK7QPointF(void *this_, const QPointF & pos) {
-  ((QTapAndHoldGesture*)this_)->setPosition(pos);
+void C_ZN18QTapAndHoldGesture11setPositionERK7QPointF(void *this_, QPointF* pos) {
+  ((QTapAndHoldGesture*)this_)->setPosition(*pos);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:266

@@ -18,22 +18,22 @@ public:
 // /usr/include/qt/QtWidgets/qtooltip.h:56
 // [-2] void showText(const class QPoint &, const class QString &, class QWidget *)
 extern "C"
-void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidget(const QPoint & pos, const QString & text, QWidget * w) {
-  QToolTip::showText(pos, text, w);
+void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidget(QPoint* pos, QString* text, QWidget * w) {
+  QToolTip::showText(*pos, *text, w);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:57
 // [-2] void showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &)
 extern "C"
-void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRect(const QPoint & pos, const QString & text, QWidget * w, const QRect & rect) {
-  QToolTip::showText(pos, text, w, rect);
+void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRect(QPoint* pos, QString* text, QWidget * w, QRect* rect) {
+  QToolTip::showText(*pos, *text, w, *rect);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:58
 // [-2] void showText(const class QPoint &, const class QString &, class QWidget *, const class QRect &, int)
 extern "C"
-void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRecti(const QPoint & pos, const QString & text, QWidget * w, const QRect & rect, int msecShowTime) {
-  QToolTip::showText(pos, text, w, rect, msecShowTime);
+void C_ZN8QToolTip8showTextERK6QPointRK7QStringP7QWidgetRK5QRecti(QPoint* pos, QString* text, QWidget * w, QRect* rect, int msecShowTime) {
+  QToolTip::showText(*pos, *text, w, *rect, msecShowTime);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:59
@@ -69,8 +69,8 @@ return new QPalette(rv);
 // /usr/include/qt/QtWidgets/qtooltip.h:65
 // [-2] void setPalette(const class QPalette &)
 extern "C"
-void C_ZN8QToolTip10setPaletteERK8QPalette(const QPalette & arg0) {
-  QToolTip::setPalette(arg0);
+void C_ZN8QToolTip10setPaletteERK8QPalette(QPalette* arg0) {
+  QToolTip::setPalette(*arg0);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtooltip.h:66
@@ -84,7 +84,12 @@ return new QFont(rv);
 // /usr/include/qt/QtWidgets/qtooltip.h:67
 // [-2] void setFont(const class QFont &)
 extern "C"
-void C_ZN8QToolTip7setFontERK5QFont(const QFont & arg0) {
-  QToolTip::setFont(arg0);
+void C_ZN8QToolTip7setFontERK5QFont(QFont* arg0) {
+  QToolTip::setFont(*arg0);
+}
+
+extern "C"
+void C_ZN8QToolTipD2Ev(void *this_) {
+  delete (QToolTip*)(this_);
 }
 //  main block end

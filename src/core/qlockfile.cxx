@@ -20,8 +20,8 @@ MyQLockFile(const QString & fileName) : QLockFile(fileName) {}
 // /usr/include/qt/QtCore/qlockfile.h:53
 // [-2] void QLockFile(const class QString &)
 extern "C"
-void* C_ZN9QLockFileC2ERK7QString(const QString & fileName) {
-  return  new QLockFile(fileName);
+void* C_ZN9QLockFileC2ERK7QString(QString* fileName) {
+  return  new QLockFile(*fileName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlockfile.h:54

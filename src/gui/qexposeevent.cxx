@@ -20,8 +20,8 @@ MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 // /usr/include/qt/QtGui/qevent.h:434
 // [-2] void QExposeEvent(const class QRegion &)
 extern "C"
-void* C_ZN12QExposeEventC2ERK7QRegion(const QRegion & rgn) {
-  return  new QExposeEvent(rgn);
+void* C_ZN12QExposeEventC2ERK7QRegion(QRegion* rgn) {
+  return  new QExposeEvent(*rgn);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:435

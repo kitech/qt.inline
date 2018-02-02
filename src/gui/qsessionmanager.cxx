@@ -78,29 +78,29 @@ QSessionManager::RestartHint C_ZNK15QSessionManager11restartHintEv(void *this_) 
 // /usr/include/qt/QtGui/qsessionmanager.h:83
 // [-2] void setRestartCommand(const class QStringList &)
 extern "C"
-void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, const QStringList & arg0) {
-  ((QSessionManager*)this_)->setRestartCommand(arg0);
+void C_ZN15QSessionManager17setRestartCommandERK11QStringList(void *this_, QStringList* arg0) {
+  ((QSessionManager*)this_)->setRestartCommand(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:85
 // [-2] void setDiscardCommand(const class QStringList &)
 extern "C"
-void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, const QStringList & arg0) {
-  ((QSessionManager*)this_)->setDiscardCommand(arg0);
+void C_ZN15QSessionManager17setDiscardCommandERK11QStringList(void *this_, QStringList* arg0) {
+  ((QSessionManager*)this_)->setDiscardCommand(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:88
 // [-2] void setManagerProperty(const class QString &, const class QString &)
 extern "C"
-void C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *this_, const QString & name, const QString & value) {
-  ((QSessionManager*)this_)->setManagerProperty(name, value);
+void C_ZN15QSessionManager18setManagerPropertyERK7QStringS2_(void *this_, QString* name, QString* value) {
+  ((QSessionManager*)this_)->setManagerProperty(*name, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:89
 // [-2] void setManagerProperty(const class QString &, const class QStringList &)
 extern "C"
-void C_ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList(void *this_, const QString & name, const QStringList & value) {
-  ((QSessionManager*)this_)->setManagerProperty(name, value);
+void C_ZN15QSessionManager18setManagerPropertyERK7QStringRK11QStringList(void *this_, QString* name, QStringList* value) {
+  ((QSessionManager*)this_)->setManagerProperty(*name, *value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsessionmanager.h:91

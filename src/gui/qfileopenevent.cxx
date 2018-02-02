@@ -22,15 +22,15 @@ MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
 // /usr/include/qt/QtGui/qevent.h:738
 // [-2] void QFileOpenEvent(const class QString &)
 extern "C"
-void* C_ZN14QFileOpenEventC2ERK7QString(const QString & file) {
-  return  new QFileOpenEvent(file);
+void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
+  return  new QFileOpenEvent(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:739
 // [-2] void QFileOpenEvent(const class QUrl &)
 extern "C"
-void* C_ZN14QFileOpenEventC2ERK4QUrl(const QUrl & url) {
-  return  new QFileOpenEvent(url);
+void* C_ZN14QFileOpenEventC2ERK4QUrl(QUrl* url) {
+  return  new QFileOpenEvent(*url);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:740

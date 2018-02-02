@@ -48,15 +48,15 @@ void* C_ZN12QActionGroup9addActionEP7QAction(void *this_, QAction * a) {
 // /usr/include/qt/QtWidgets/qactiongroup.h:67
 // [8] QAction * addAction(const class QString &)
 extern "C"
-void* C_ZN12QActionGroup9addActionERK7QString(void *this_, const QString & text) {
-  return (void*)((QActionGroup*)this_)->addAction(text);
+void* C_ZN12QActionGroup9addActionERK7QString(void *this_, QString* text) {
+  return (void*)((QActionGroup*)this_)->addAction(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:68
 // [8] QAction * addAction(const class QIcon &, const class QString &)
 extern "C"
-void* C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
-  return (void*)((QActionGroup*)this_)->addAction(icon, text);
+void* C_ZN12QActionGroup9addActionERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
+  return (void*)((QActionGroup*)this_)->addAction(*icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:69

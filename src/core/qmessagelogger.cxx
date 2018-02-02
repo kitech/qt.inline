@@ -41,4 +41,9 @@ extern "C"
 void* C_ZN14QMessageLoggerC2EPKciS1_S1_(const char * file, int line, const char * function, const char * category) {
   return  new QMessageLogger(file, line, function, category);
 }
+
+extern "C"
+void C_ZN14QMessageLoggerD2Ev(void *this_) {
+  delete (QMessageLogger*)(this_);
+}
 //  main block end

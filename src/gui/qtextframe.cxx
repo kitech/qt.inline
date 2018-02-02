@@ -41,8 +41,8 @@ void C_ZN10QTextFrameD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qtextobject.h:126
 // [-2] void setFrameFormat(const class QTextFrameFormat &)
 extern "C"
-void C_ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *this_, const QTextFrameFormat & format) {
-  ((QTextFrame*)this_)->setFrameFormat(format);
+void C_ZN10QTextFrame14setFrameFormatERK16QTextFrameFormat(void *this_, QTextFrameFormat* format) {
+  ((QTextFrame*)this_)->setFrameFormat(*format);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:127

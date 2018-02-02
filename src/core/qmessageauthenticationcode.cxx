@@ -20,8 +20,8 @@ MyQMessageAuthenticationCode(QCryptographicHash::Algorithm method, const QByteAr
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:54
 // [-2] void QMessageAuthenticationCode(class QCryptographicHash::Algorithm, const class QByteArray &)
 extern "C"
-void* C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, const QByteArray & key) {
-  return  new QMessageAuthenticationCode(method, key);
+void* C_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray(QCryptographicHash::Algorithm method, QByteArray* key) {
+  return  new QMessageAuthenticationCode(method, *key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:56
@@ -41,8 +41,8 @@ void C_ZN26QMessageAuthenticationCode5resetEv(void *this_) {
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:60
 // [-2] void setKey(const class QByteArray &)
 extern "C"
-void C_ZN26QMessageAuthenticationCode6setKeyERK10QByteArray(void *this_, const QByteArray & key) {
-  ((QMessageAuthenticationCode*)this_)->setKey(key);
+void C_ZN26QMessageAuthenticationCode6setKeyERK10QByteArray(void *this_, QByteArray* key) {
+  ((QMessageAuthenticationCode*)this_)->setKey(*key);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:62
@@ -55,8 +55,8 @@ void C_ZN26QMessageAuthenticationCode7addDataEPKci(void *this_, const char * dat
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:63
 // [-2] void addData(const class QByteArray &)
 extern "C"
-void C_ZN26QMessageAuthenticationCode7addDataERK10QByteArray(void *this_, const QByteArray & data) {
-  ((QMessageAuthenticationCode*)this_)->addData(data);
+void C_ZN26QMessageAuthenticationCode7addDataERK10QByteArray(void *this_, QByteArray* data) {
+  ((QMessageAuthenticationCode*)this_)->addData(*data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:64
@@ -77,8 +77,8 @@ return new QByteArray(rv);
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h:68
 // [8] QByteArray hash(const class QByteArray &, const class QByteArray &, class QCryptographicHash::Algorithm)
 extern "C"
-void* C_ZN26QMessageAuthenticationCode4hashERK10QByteArrayS2_N18QCryptographicHash9AlgorithmE(const QByteArray & message, const QByteArray & key, QCryptographicHash::Algorithm method) {
-  auto rv = QMessageAuthenticationCode::hash(message, key, method);
+void* C_ZN26QMessageAuthenticationCode4hashERK10QByteArrayS2_N18QCryptographicHash9AlgorithmE(QByteArray* message, QByteArray* key, QCryptographicHash::Algorithm method) {
+  auto rv = QMessageAuthenticationCode::hash(*message, *key, method);
 return new QByteArray(rv);
 }
 //  main block end

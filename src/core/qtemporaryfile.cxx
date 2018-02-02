@@ -40,8 +40,8 @@ void* C_ZN14QTemporaryFileC2Ev() {
 // /usr/include/qt/QtCore/qtemporaryfile.h:67
 // [-2] void QTemporaryFile(const class QString &)
 extern "C"
-void* C_ZN14QTemporaryFileC2ERK7QString(const QString & templateName) {
-  return  new QTemporaryFile(templateName);
+void* C_ZN14QTemporaryFileC2ERK7QString(QString* templateName) {
+  return  new QTemporaryFile(*templateName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:69
@@ -54,8 +54,8 @@ void* C_ZN14QTemporaryFileC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtCore/qtemporaryfile.h:70
 // [-2] void QTemporaryFile(const class QString &, class QObject *)
 extern "C"
-void* C_ZN14QTemporaryFileC2ERK7QStringP7QObject(const QString & templateName, QObject * parent) {
-  return  new QTemporaryFile(templateName, parent);
+void* C_ZN14QTemporaryFileC2ERK7QStringP7QObject(QString* templateName, QObject * parent) {
+  return  new QTemporaryFile(*templateName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:72
@@ -105,42 +105,42 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qtemporaryfile.h:82
 // [-2] void setFileTemplate(const class QString &)
 extern "C"
-void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, const QString & name) {
-  ((QTemporaryFile*)this_)->setFileTemplate(name);
+void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, QString* name) {
+  ((QTemporaryFile*)this_)->setFileTemplate(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:85
 // [1] bool rename(const class QString &)
 extern "C"
-bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, const QString & newName) {
-  return (bool)((QTemporaryFile*)this_)->rename(newName);
+bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, QString* newName) {
+  return (bool)((QTemporaryFile*)this_)->rename(*newName);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:88
 // [8] QTemporaryFile * createLocalFile(const class QString &)
 extern "C"
-void* C_ZN14QTemporaryFile15createLocalFileERK7QString(const QString & fileName) {
-  return (void*)QTemporaryFile::createLocalFile(fileName);
+void* C_ZN14QTemporaryFile15createLocalFileERK7QString(QString* fileName) {
+  return (void*)QTemporaryFile::createLocalFile(*fileName);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:90
 // [8] QTemporaryFile * createLocalFile(class QFile &)
 extern "C"
-void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile & file) {
-  return (void*)QTemporaryFile::createLocalFile(file);
+void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile* file) {
+  return (void*)QTemporaryFile::createLocalFile(*file);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:93
 // [8] QTemporaryFile * createNativeFile(const class QString &)
 extern "C"
-void* C_ZN14QTemporaryFile16createNativeFileERK7QString(const QString & fileName) {
-  return (void*)QTemporaryFile::createNativeFile(fileName);
+void* C_ZN14QTemporaryFile16createNativeFileERK7QString(QString* fileName) {
+  return (void*)QTemporaryFile::createNativeFile(*fileName);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:95
 // [8] QTemporaryFile * createNativeFile(class QFile &)
 extern "C"
-void* C_ZN14QTemporaryFile16createNativeFileER5QFile(QFile & file) {
-  return (void*)QTemporaryFile::createNativeFile(file);
+void* C_ZN14QTemporaryFile16createNativeFileER5QFile(QFile* file) {
+  return (void*)QTemporaryFile::createNativeFile(*file);
 }
 //  main block end

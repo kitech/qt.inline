@@ -22,4 +22,9 @@ void* C_ZNK13QStaticPlugin8metaDataEv(void *this_) {
   auto rv = ((QStaticPlugin*)this_)->metaData();
 return new QJsonObject(rv);
 }
+
+extern "C"
+void C_ZN13QStaticPluginD2Ev(void *this_) {
+  delete (QStaticPlugin*)(this_);
+}
 //  main block end

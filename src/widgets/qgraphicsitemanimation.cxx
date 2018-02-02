@@ -12,16 +12,16 @@
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:102
 // [-2] void beforeAnimationStep(qreal)
 extern "C"
-void* callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd = 0;
+void* callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = 0;
 extern "C" void set_callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void*cbfn)
-{ callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd = cbfn; }
+{ callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:103
 // [-2] void afterAnimationStep(qreal)
 extern "C"
-void* callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd = 0;
+void* callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = 0;
 extern "C" void set_callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void*cbfn)
-{ callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd = cbfn; }
+{ callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = cbfn; }
 
 class MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
@@ -30,15 +30,17 @@ public:
 MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // void beforeAnimationStep(qreal)
   virtual void beforeAnimationStep(qreal step) {
-    if (callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd != 0) {
-      // callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(step);
+    auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , step);
     }
     QGraphicsItemAnimation::beforeAnimationStep(step);
   }
 // void afterAnimationStep(qreal)
   virtual void afterAnimationStep(qreal step) {
-    if (callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd != 0) {
-      // callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(step);
+    auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , step);
     }
     QGraphicsItemAnimation::afterAnimationStep(step);
   }
@@ -106,8 +108,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:72
 // [-2] void setPosAt(qreal, const class QPointF &)
 extern "C"
-void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, const QPointF & pos) {
-  ((QGraphicsItemAnimation*)this_)->setPosAt(step, pos);
+void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, QPointF* pos) {
+  ((QGraphicsItemAnimation*)this_)->setPosAt(step, *pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:74

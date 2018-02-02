@@ -14,4 +14,9 @@ public:
   virtual ~MyQBrushData() {}
 };
 
+
+extern "C"
+void C_ZN10QBrushDataD2Ev(void *this_) {
+  delete (QBrushData*)(this_);
+}
 //  main block end

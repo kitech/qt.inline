@@ -65,4 +65,9 @@ extern "C"
 bool C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
   return (bool)((QBasicMutex*)this_)->isRecursive();
 }
+
+extern "C"
+void C_ZN11QBasicMutexD2Ev(void *this_) {
+  delete (QBasicMutex*)(this_);
+}
 //  main block end

@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:123
 // [-2] void QStyleOptionFocusRect(int)
 extern "C"
-void* callback_ZN21QStyleOptionFocusRectC1Ei = 0;
+void* callback_ZN21QStyleOptionFocusRectC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN21QStyleOptionFocusRectC1Ei(void*cbfn)
-{ callback_ZN21QStyleOptionFocusRectC1Ei = cbfn; }
+{ callback_ZN21QStyleOptionFocusRectC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionFocusRect : public QStyleOptionFocusRect {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionFocusRect(int version) : QStyleOptionFocusRect(version) {}
 extern "C"
 void* C_ZN21QStyleOptionFocusRectC2Ev() {
   return  new QStyleOptionFocusRect();
+}
+
+extern "C"
+void C_ZN21QStyleOptionFocusRectD2Ev(void *this_) {
+  delete (QStyleOptionFocusRect*)(this_);
 }
 //  main block end

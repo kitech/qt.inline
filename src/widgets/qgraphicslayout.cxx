@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicslayout.h:78
 // [-2] void addChildLayoutItem(class QGraphicsLayoutItem *)
 extern "C"
-void* callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem = 0;
+void* callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = 0;
 extern "C" void set_callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void*cbfn)
-{ callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem = cbfn; }
+{ callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = cbfn; }
 
 class MyQGraphicsLayout : public QGraphicsLayout {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // void addChildLayoutItem(class QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
-    if (callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem != 0) {
-      // callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(layoutItem);
+    auto fnptr = ((void (*)(void* , QGraphicsLayoutItem *))(callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , layoutItem);
     }
     QGraphicsLayout::addChildLayoutItem(layoutItem);
   }

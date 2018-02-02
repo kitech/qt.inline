@@ -50,8 +50,8 @@ void* C_ZN6QBrushC2EN2Qt10BrushStyleE(Qt::BrushStyle bs) {
 // /usr/include/qt/QtGui/qbrush.h:68
 // [-2] void QBrush(const class QColor &, Qt::BrushStyle)
 extern "C"
-void* C_ZN6QBrushC2ERK6QColorN2Qt10BrushStyleE(const QColor & color, Qt::BrushStyle bs) {
-  return  new QBrush(color, bs);
+void* C_ZN6QBrushC2ERK6QColorN2Qt10BrushStyleE(QColor* color, Qt::BrushStyle bs) {
+  return  new QBrush(*color, bs);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:69
@@ -64,36 +64,36 @@ void* C_ZN6QBrushC2EN2Qt11GlobalColorENS0_10BrushStyleE(Qt::GlobalColor color, Q
 // /usr/include/qt/QtGui/qbrush.h:71
 // [-2] void QBrush(const class QColor &, const class QPixmap &)
 extern "C"
-void* C_ZN6QBrushC2ERK6QColorRK7QPixmap(const QColor & color, const QPixmap & pixmap) {
-  return  new QBrush(color, pixmap);
+void* C_ZN6QBrushC2ERK6QColorRK7QPixmap(QColor* color, QPixmap* pixmap) {
+  return  new QBrush(*color, *pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:72
 // [-2] void QBrush(Qt::GlobalColor, const class QPixmap &)
 extern "C"
-void* C_ZN6QBrushC2EN2Qt11GlobalColorERK7QPixmap(Qt::GlobalColor color, const QPixmap & pixmap) {
-  return  new QBrush(color, pixmap);
+void* C_ZN6QBrushC2EN2Qt11GlobalColorERK7QPixmap(Qt::GlobalColor color, QPixmap* pixmap) {
+  return  new QBrush(color, *pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:73
 // [-2] void QBrush(const class QPixmap &)
 extern "C"
-void* C_ZN6QBrushC2ERK7QPixmap(const QPixmap & pixmap) {
-  return  new QBrush(pixmap);
+void* C_ZN6QBrushC2ERK7QPixmap(QPixmap* pixmap) {
+  return  new QBrush(*pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:74
 // [-2] void QBrush(const class QImage &)
 extern "C"
-void* C_ZN6QBrushC2ERK6QImage(const QImage & image) {
-  return  new QBrush(image);
+void* C_ZN6QBrushC2ERK6QImage(QImage* image) {
+  return  new QBrush(*image);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:78
 // [-2] void QBrush(const class QGradient &)
 extern "C"
-void* C_ZN6QBrushC2ERK9QGradient(const QGradient & gradient) {
-  return  new QBrush(gradient);
+void* C_ZN6QBrushC2ERK9QGradient(QGradient* gradient) {
+  return  new QBrush(*gradient);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:80
@@ -106,8 +106,8 @@ void C_ZN6QBrushD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qbrush.h:86
 // [-2] void swap(class QBrush &)
 extern "C"
-void C_ZN6QBrush4swapERS_(void *this_, QBrush & other) {
-  ((QBrush*)this_)->swap(other);
+void C_ZN6QBrush4swapERS_(void *this_, QBrush* other) {
+  ((QBrush*)this_)->swap(*other);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:91
@@ -135,8 +135,8 @@ return new QMatrix(rv);
 // /usr/include/qt/QtGui/qbrush.h:95
 // [-2] void setMatrix(const class QMatrix &)
 extern "C"
-void C_ZN6QBrush9setMatrixERK7QMatrix(void *this_, const QMatrix & mat) {
-  ((QBrush*)this_)->setMatrix(mat);
+void C_ZN6QBrush9setMatrixERK7QMatrix(void *this_, QMatrix* mat) {
+  ((QBrush*)this_)->setMatrix(*mat);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:97
@@ -150,8 +150,8 @@ return new QTransform(rv);
 // /usr/include/qt/QtGui/qbrush.h:98
 // [-2] void setTransform(const class QTransform &)
 extern "C"
-void C_ZN6QBrush12setTransformERK10QTransform(void *this_, const QTransform & arg0) {
-  ((QBrush*)this_)->setTransform(arg0);
+void C_ZN6QBrush12setTransformERK10QTransform(void *this_, QTransform* arg0) {
+  ((QBrush*)this_)->setTransform(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:100
@@ -165,8 +165,8 @@ return new QPixmap(rv);
 // /usr/include/qt/QtGui/qbrush.h:101
 // [-2] void setTexture(const class QPixmap &)
 extern "C"
-void C_ZN6QBrush10setTextureERK7QPixmap(void *this_, const QPixmap & pixmap) {
-  ((QBrush*)this_)->setTexture(pixmap);
+void C_ZN6QBrush10setTextureERK7QPixmap(void *this_, QPixmap* pixmap) {
+  ((QBrush*)this_)->setTexture(*pixmap);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:103
@@ -180,8 +180,8 @@ return new QImage(rv);
 // /usr/include/qt/QtGui/qbrush.h:104
 // [-2] void setTextureImage(const class QImage &)
 extern "C"
-void C_ZN6QBrush15setTextureImageERK6QImage(void *this_, const QImage & image) {
-  ((QBrush*)this_)->setTextureImage(image);
+void C_ZN6QBrush15setTextureImageERK6QImage(void *this_, QImage* image) {
+  ((QBrush*)this_)->setTextureImage(*image);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:106
@@ -195,8 +195,8 @@ return new QColor(rv);
 // /usr/include/qt/QtGui/qbrush.h:107
 // [-2] void setColor(const class QColor &)
 extern "C"
-void C_ZN6QBrush8setColorERK6QColor(void *this_, const QColor & color) {
-  ((QBrush*)this_)->setColor(color);
+void C_ZN6QBrush8setColorERK6QColor(void *this_, QColor* color) {
+  ((QBrush*)this_)->setColor(*color);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:108

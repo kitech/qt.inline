@@ -45,4 +45,9 @@ extern "C"
 qint64 C_ZNK23QPointingDeviceUniqueId9numericIdEv(void *this_) {
   return (qint64)((QPointingDeviceUniqueId*)this_)->numericId();
 }
+
+extern "C"
+void C_ZN23QPointingDeviceUniqueIdD2Ev(void *this_) {
+  delete (QPointingDeviceUniqueId*)(this_);
+}
 //  main block end

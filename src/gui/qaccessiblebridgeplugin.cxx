@@ -41,7 +41,7 @@ void C_ZN23QAccessibleBridgePluginD2Ev(void *this_) {
 // /usr/include/qt/QtGui/qaccessiblebridge.h:72
 // [8] QAccessibleBridge * create(const class QString &)
 extern "C"
-void* C_ZN23QAccessibleBridgePlugin6createERK7QString(void *this_, const QString & key) {
-  return (void*)((QAccessibleBridgePlugin*)this_)->create(key);
+void* C_ZN23QAccessibleBridgePlugin6createERK7QString(void *this_, QString* key) {
+  return (void*)((QAccessibleBridgePlugin*)this_)->create(*key);
 }
 //  main block end

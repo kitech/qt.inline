@@ -28,4 +28,9 @@ extern "C"
 void* C_ZN12QMapDataBase10createDataEv() {
   return (void*)QMapDataBase::createData();
 }
+
+extern "C"
+void C_ZN12QMapDataBaseD2Ev(void *this_) {
+  delete (QMapDataBase*)(this_);
+}
 //  main block end

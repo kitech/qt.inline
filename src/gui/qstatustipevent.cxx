@@ -20,8 +20,8 @@ MyQStatusTipEvent(const QString & tip) : QStatusTipEvent(tip) {}
 // /usr/include/qt/QtGui/qevent.h:700
 // [-2] void QStatusTipEvent(const class QString &)
 extern "C"
-void* C_ZN15QStatusTipEventC2ERK7QString(const QString & tip) {
-  return  new QStatusTipEvent(tip);
+void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
+  return  new QStatusTipEvent(*tip);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:701

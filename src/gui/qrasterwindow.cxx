@@ -12,16 +12,16 @@
 // /usr/include/qt/QtGui/qrasterwindow.h:60
 // [4] int metric(enum QPaintDevice::PaintDeviceMetric)
 extern "C"
-void* callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE = 0;
+void* callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
 extern "C" void set_callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE = cbfn; }
+{ callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrasterwindow.h:61
 // [8] QPaintDevice * redirected(class QPoint *)
 extern "C"
-void* callback_ZNK13QRasterWindow10redirectedEP6QPoint = 0;
+void* callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = 0;
 extern "C" void set_callback_ZNK13QRasterWindow10redirectedEP6QPoint(void*cbfn)
-{ callback_ZNK13QRasterWindow10redirectedEP6QPoint = cbfn; }
+{ callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = cbfn; }
 
 class MyQRasterWindow : public QRasterWindow {
 public:
@@ -30,15 +30,17 @@ public:
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
-    if (callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE != 0) {
-      // callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(metric);
+    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , metric);
     }
     return QRasterWindow::metric(metric);
   }
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) {
-    if (callback_ZNK13QRasterWindow10redirectedEP6QPoint != 0) {
-      // callback_ZNK13QRasterWindow10redirectedEP6QPoint(arg0);
+    auto fnptr = ((QPaintDevice * (*)(void* , QPoint *))(callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QRasterWindow::redirected(arg0);
   }

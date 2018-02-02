@@ -20,7 +20,12 @@ MyQVariantComparisonHelper(const QVariant & var) : QVariantComparisonHelper(var)
 // /usr/include/qt/QtCore/qvariant.h:560
 // [-2] void QVariantComparisonHelper(const class QVariant &)
 extern "C"
-void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(const QVariant & var) {
-  return  new QVariantComparisonHelper(var);
+void* C_ZN24QVariantComparisonHelperC2ERK8QVariant(QVariant* var) {
+  return  new QVariantComparisonHelper(*var);
+}
+
+extern "C"
+void C_ZN24QVariantComparisonHelperD2Ev(void *this_) {
+  delete (QVariantComparisonHelper*)(this_);
 }
 //  main block end

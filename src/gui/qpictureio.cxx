@@ -38,8 +38,8 @@ void* C_ZN10QPictureIOC2EP9QIODevicePKc(QIODevice * ioDevice, const char * forma
 // /usr/include/qt/QtGui/qpicture.h:136
 // [-2] void QPictureIO(const class QString &, const char *)
 extern "C"
-void* C_ZN10QPictureIOC2ERK7QStringPKc(const QString & fileName, const char * format) {
-  return  new QPictureIO(fileName, format);
+void* C_ZN10QPictureIOC2ERK7QStringPKc(QString* fileName, const char * format) {
+  return  new QPictureIO(*fileName, format);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:137
@@ -118,8 +118,8 @@ float C_ZNK10QPictureIO5gammaEv(void *this_) {
 // /usr/include/qt/QtGui/qpicture.h:149
 // [-2] void setPicture(const class QPicture &)
 extern "C"
-void C_ZN10QPictureIO10setPictureERK8QPicture(void *this_, const QPicture & arg0) {
-  ((QPictureIO*)this_)->setPicture(arg0);
+void C_ZN10QPictureIO10setPictureERK8QPicture(void *this_, QPicture* arg0) {
+  ((QPictureIO*)this_)->setPicture(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:150
@@ -146,8 +146,8 @@ void C_ZN10QPictureIO11setIODeviceEP9QIODevice(void *this_, QIODevice * arg0) {
 // /usr/include/qt/QtGui/qpicture.h:153
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN10QPictureIO11setFileNameERK7QString(void *this_, const QString & arg0) {
-  ((QPictureIO*)this_)->setFileName(arg0);
+void C_ZN10QPictureIO11setFileNameERK7QString(void *this_, QString* arg0) {
+  ((QPictureIO*)this_)->setFileName(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:154
@@ -160,8 +160,8 @@ void C_ZN10QPictureIO10setQualityEi(void *this_, int arg0) {
 // /usr/include/qt/QtGui/qpicture.h:155
 // [-2] void setDescription(const class QString &)
 extern "C"
-void C_ZN10QPictureIO14setDescriptionERK7QString(void *this_, const QString & arg0) {
-  ((QPictureIO*)this_)->setDescription(arg0);
+void C_ZN10QPictureIO14setDescriptionERK7QString(void *this_, QString* arg0) {
+  ((QPictureIO*)this_)->setDescription(*arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:156
@@ -195,8 +195,8 @@ bool C_ZN10QPictureIO5writeEv(void *this_) {
 // /usr/include/qt/QtGui/qpicture.h:162
 // [8] QByteArray pictureFormat(const class QString &)
 extern "C"
-void* C_ZN10QPictureIO13pictureFormatERK7QString(const QString & fileName) {
-  auto rv = QPictureIO::pictureFormat(fileName);
+void* C_ZN10QPictureIO13pictureFormatERK7QString(QString* fileName) {
+  auto rv = QPictureIO::pictureFormat(*fileName);
 return new QByteArray(rv);
 }
 // Public static Visibility=Default Availability=Available

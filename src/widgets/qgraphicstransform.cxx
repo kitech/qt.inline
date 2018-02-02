@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:66
 // [-2] void update()
 extern "C"
-void* callback_ZN18QGraphicsTransform6updateEv = 0;
+void* callback_ZN18QGraphicsTransform6updateEv_fnptr = 0;
 extern "C" void set_callback_ZN18QGraphicsTransform6updateEv(void*cbfn)
-{ callback_ZN18QGraphicsTransform6updateEv = cbfn; }
+{ callback_ZN18QGraphicsTransform6updateEv_fnptr = cbfn; }
 
 class MyQGraphicsTransform : public QGraphicsTransform {
 public:
@@ -23,8 +23,9 @@ public:
 MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
 // void update()
   virtual void update() {
-    if (callback_ZN18QGraphicsTransform6updateEv != 0) {
-      // callback_ZN18QGraphicsTransform6updateEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QGraphicsTransform6updateEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QGraphicsTransform::update();
   }

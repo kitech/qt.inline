@@ -33,8 +33,8 @@ void* C_ZN6QLineFC2Ev() {
 // /usr/include/qt/QtCore/qline.h:220
 // [-2] void QLineF(const class QPointF &, const class QPointF &)
 extern "C"
-void* C_ZN6QLineFC2ERK7QPointFS2_(const QPointF & pt1, const QPointF & pt2) {
-  return  new QLineF(pt1, pt2);
+void* C_ZN6QLineFC2ERK7QPointFS2_(QPointF* pt1, QPointF* pt2) {
+  return  new QLineF(*pt1, *pt2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:221
@@ -47,8 +47,8 @@ void* C_ZN6QLineFC2Edddd(qreal x1, qreal y1, qreal x2, qreal y2) {
 // /usr/include/qt/QtCore/qline.h:222
 // [-2] void QLineF(const class QLine &)
 extern "C"
-void* C_ZN6QLineFC2ERK5QLine(const QLine & line) {
-  return  new QLineF(line);
+void* C_ZN6QLineFC2ERK5QLine(QLine* line) {
+  return  new QLineF(*line);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:224
@@ -155,8 +155,8 @@ void C_ZN6QLineF8setAngleEd(void *this_, qreal angle) {
 // /usr/include/qt/QtCore/qline.h:246
 // [8] qreal angleTo(const class QLineF &)
 extern "C"
-qreal C_ZNK6QLineF7angleToERKS_(void *this_, const QLineF & l) {
-  return (qreal)((QLineF*)this_)->angleTo(l);
+qreal C_ZNK6QLineF7angleToERKS_(void *this_, QLineF* l) {
+  return (qreal)((QLineF*)this_)->angleTo(*l);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:248
@@ -178,15 +178,15 @@ return new QLineF(rv);
 // /usr/include/qt/QtCore/qline.h:252
 // [4] QLineF::IntersectType intersect(const class QLineF &, class QPointF *)
 extern "C"
-QLineF::IntersectType C_ZNK6QLineF9intersectERKS_P7QPointF(void *this_, const QLineF & l, QPointF * intersectionPoint) {
-  return (QLineF::IntersectType)((QLineF*)this_)->intersect(l, intersectionPoint);
+QLineF::IntersectType C_ZNK6QLineF9intersectERKS_P7QPointF(void *this_, QLineF* l, QPointF * intersectionPoint) {
+  return (QLineF::IntersectType)((QLineF*)this_)->intersect(*l, intersectionPoint);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:254
 // [8] qreal angle(const class QLineF &)
 extern "C"
-qreal C_ZNK6QLineF5angleERKS_(void *this_, const QLineF & l) {
-  return (qreal)((QLineF*)this_)->angle(l);
+qreal C_ZNK6QLineF5angleERKS_(void *this_, QLineF* l) {
+  return (qreal)((QLineF*)this_)->angle(*l);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:256
@@ -200,8 +200,8 @@ return new QPointF(rv);
 // /usr/include/qt/QtCore/qline.h:257
 // [-2] void translate(const class QPointF &)
 extern "C"
-void C_ZN6QLineF9translateERK7QPointF(void *this_, const QPointF & p) {
-  ((QLineF*)this_)->translate(p);
+void C_ZN6QLineF9translateERK7QPointF(void *this_, QPointF* p) {
+  ((QLineF*)this_)->translate(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:258
@@ -214,8 +214,8 @@ void C_ZN6QLineF9translateEdd(void *this_, qreal dx, qreal dy) {
 // /usr/include/qt/QtCore/qline.h:260
 // [32] QLineF translated(const class QPointF &)
 extern "C"
-void* C_ZNK6QLineF10translatedERK7QPointF(void *this_, const QPointF & p) {
-  auto rv = ((QLineF*)this_)->translated(p);
+void* C_ZNK6QLineF10translatedERK7QPointF(void *this_, QPointF* p) {
+  auto rv = ((QLineF*)this_)->translated(*p);
 return new QLineF(rv);
 }
 // Public inline Visibility=Default Availability=Available
@@ -238,22 +238,22 @@ return new QPointF(rv);
 // /usr/include/qt/QtCore/qline.h:265
 // [-2] void setP1(const class QPointF &)
 extern "C"
-void C_ZN6QLineF5setP1ERK7QPointF(void *this_, const QPointF & p1) {
-  ((QLineF*)this_)->setP1(p1);
+void C_ZN6QLineF5setP1ERK7QPointF(void *this_, QPointF* p1) {
+  ((QLineF*)this_)->setP1(*p1);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:266
 // [-2] void setP2(const class QPointF &)
 extern "C"
-void C_ZN6QLineF5setP2ERK7QPointF(void *this_, const QPointF & p2) {
-  ((QLineF*)this_)->setP2(p2);
+void C_ZN6QLineF5setP2ERK7QPointF(void *this_, QPointF* p2) {
+  ((QLineF*)this_)->setP2(*p2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:267
 // [-2] void setPoints(const class QPointF &, const class QPointF &)
 extern "C"
-void C_ZN6QLineF9setPointsERK7QPointFS2_(void *this_, const QPointF & p1, const QPointF & p2) {
-  ((QLineF*)this_)->setPoints(p1, p2);
+void C_ZN6QLineF9setPointsERK7QPointFS2_(void *this_, QPointF* p1, QPointF* p2) {
+  ((QLineF*)this_)->setPoints(*p1, *p2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qline.h:268
@@ -269,5 +269,10 @@ extern "C"
 void* C_ZNK6QLineF6toLineEv(void *this_) {
   auto rv = ((QLineF*)this_)->toLine();
 return new QLine(rv);
+}
+
+extern "C"
+void C_ZN6QLineFD2Ev(void *this_) {
+  delete (QLineF*)(this_);
 }
 //  main block end

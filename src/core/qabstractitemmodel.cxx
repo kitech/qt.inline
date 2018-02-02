@@ -12,135 +12,135 @@
 // /usr/include/qt/QtCore/qabstractitemmodel.h:286
 // [-2] void resetInternalData()
 extern "C"
-void* callback_ZN18QAbstractItemModel17resetInternalDataEv = 0;
+void* callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel17resetInternalDataEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel17resetInternalDataEv = cbfn; }
+{ callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr = cbfn; }
 // Protected inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:291
 // [24] QModelIndex createIndex(int, int, void *)
 extern "C"
-void* callback_ZNK18QAbstractItemModel11createIndexEiiPv = 0;
+void* callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr = 0;
 extern "C" void set_callback_ZNK18QAbstractItemModel11createIndexEiiPv(void*cbfn)
-{ callback_ZNK18QAbstractItemModel11createIndexEiiPv = cbfn; }
+{ callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr = cbfn; }
 // Protected inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:292
 // [24] QModelIndex createIndex(int, int, quintptr)
 extern "C"
-void* callback_ZNK18QAbstractItemModel11createIndexEiiy = 0;
+void* callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr = 0;
 extern "C" void set_callback_ZNK18QAbstractItemModel11createIndexEiiy(void*cbfn)
-{ callback_ZNK18QAbstractItemModel11createIndexEiiy = cbfn; }
+{ callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:295
 // [1] bool decodeData(int, int, const class QModelIndex &, class QDataStream &)
 extern "C"
-void* callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream = 0;
+void* callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(void*cbfn)
-{ callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream = cbfn; }
+{ callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:297
 // [-2] void beginInsertRows(const class QModelIndex &, int, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii = 0;
+void* callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(void*cbfn)
-{ callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii = cbfn; }
+{ callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:298
 // [-2] void endInsertRows()
 extern "C"
-void* callback_ZN18QAbstractItemModel13endInsertRowsEv = 0;
+void* callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel13endInsertRowsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel13endInsertRowsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:300
 // [-2] void beginRemoveRows(const class QModelIndex &, int, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii = 0;
+void* callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(void*cbfn)
-{ callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii = cbfn; }
+{ callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:301
 // [-2] void endRemoveRows()
 extern "C"
-void* callback_ZN18QAbstractItemModel13endRemoveRowsEv = 0;
+void* callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel13endRemoveRowsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel13endRemoveRowsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:303
 // [1] bool beginMoveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i = 0;
+void* callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(void*cbfn)
-{ callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i = cbfn; }
+{ callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:304
 // [-2] void endMoveRows()
 extern "C"
-void* callback_ZN18QAbstractItemModel11endMoveRowsEv = 0;
+void* callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel11endMoveRowsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel11endMoveRowsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:306
 // [-2] void beginInsertColumns(const class QModelIndex &, int, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii = 0;
+void* callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(void*cbfn)
-{ callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii = cbfn; }
+{ callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:307
 // [-2] void endInsertColumns()
 extern "C"
-void* callback_ZN18QAbstractItemModel16endInsertColumnsEv = 0;
+void* callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel16endInsertColumnsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel16endInsertColumnsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:309
 // [-2] void beginRemoveColumns(const class QModelIndex &, int, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii = 0;
+void* callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(void*cbfn)
-{ callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii = cbfn; }
+{ callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:310
 // [-2] void endRemoveColumns()
 extern "C"
-void* callback_ZN18QAbstractItemModel16endRemoveColumnsEv = 0;
+void* callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel16endRemoveColumnsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel16endRemoveColumnsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:312
 // [1] bool beginMoveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
-void* callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i = 0;
+void* callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(void*cbfn)
-{ callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i = cbfn; }
+{ callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:313
 // [-2] void endMoveColumns()
 extern "C"
-void* callback_ZN18QAbstractItemModel14endMoveColumnsEv = 0;
+void* callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel14endMoveColumnsEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel14endMoveColumnsEv = cbfn; }
+{ callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:324
 // [-2] void beginResetModel()
 extern "C"
-void* callback_ZN18QAbstractItemModel15beginResetModelEv = 0;
+void* callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel15beginResetModelEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel15beginResetModelEv = cbfn; }
+{ callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:325
 // [-2] void endResetModel()
 extern "C"
-void* callback_ZN18QAbstractItemModel13endResetModelEv = 0;
+void* callback_ZN18QAbstractItemModel13endResetModelEv_fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel13endResetModelEv(void*cbfn)
-{ callback_ZN18QAbstractItemModel13endResetModelEv = cbfn; }
+{ callback_ZN18QAbstractItemModel13endResetModelEv_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:327
 // [-2] void changePersistentIndex(const class QModelIndex &, const class QModelIndex &)
 extern "C"
-void* callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_ = 0;
+void* callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr = 0;
 extern "C" void set_callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(void*cbfn)
-{ callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_ = cbfn; }
+{ callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr = cbfn; }
 
 class MyQAbstractItemModel : public QAbstractItemModel {
 public:
@@ -149,134 +149,153 @@ public:
 MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
 // void resetInternalData()
   virtual void resetInternalData() {
-    if (callback_ZN18QAbstractItemModel17resetInternalDataEv != 0) {
-      // callback_ZN18QAbstractItemModel17resetInternalDataEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::resetInternalData();
   }
 // QModelIndex createIndex(int, int, void *)
   virtual QModelIndex createIndex(int row, int column, void * data) {
-    if (callback_ZNK18QAbstractItemModel11createIndexEiiPv != 0) {
-      // callback_ZNK18QAbstractItemModel11createIndexEiiPv(row, column, data);
+    auto fnptr = ((QModelIndex (*)(void* , int, int, void *))(callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row, column, data);
     }
     return QAbstractItemModel::createIndex(row, column, data);
   }
 // QModelIndex createIndex(int, int, quintptr)
   virtual QModelIndex createIndex(int row, int column, quintptr id) {
-    if (callback_ZNK18QAbstractItemModel11createIndexEiiy != 0) {
-      // callback_ZNK18QAbstractItemModel11createIndexEiiy(row, column, id);
+    auto fnptr = ((QModelIndex (*)(void* , int, int, quintptr))(callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row, column, id);
     }
     return QAbstractItemModel::createIndex(row, column, id);
   }
 // bool decodeData(int, int, const class QModelIndex &, class QDataStream &)
   virtual bool decodeData(int row, int column, const QModelIndex & parent, QDataStream & stream) {
-    if (callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream != 0) {
-      // callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(row, column, parent, stream);
+    auto fnptr = ((bool (*)(void* , int, int, QModelIndex*, QDataStream*))(callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , row, column, (QModelIndex*)&parent, (QDataStream*)&stream);
     }
     return QAbstractItemModel::decodeData(row, column, parent, stream);
   }
 // void beginInsertRows(const class QModelIndex &, int, int)
   virtual void beginInsertRows(const QModelIndex & parent, int first, int last) {
-    if (callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii != 0) {
-      // callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(parent, first, last);
+    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&parent, first, last);
     }
     QAbstractItemModel::beginInsertRows(parent, first, last);
   }
 // void endInsertRows()
   virtual void endInsertRows() {
-    if (callback_ZN18QAbstractItemModel13endInsertRowsEv != 0) {
-      // callback_ZN18QAbstractItemModel13endInsertRowsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endInsertRows();
   }
 // void beginRemoveRows(const class QModelIndex &, int, int)
   virtual void beginRemoveRows(const QModelIndex & parent, int first, int last) {
-    if (callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii != 0) {
-      // callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(parent, first, last);
+    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&parent, first, last);
     }
     QAbstractItemModel::beginRemoveRows(parent, first, last);
   }
 // void endRemoveRows()
   virtual void endRemoveRows() {
-    if (callback_ZN18QAbstractItemModel13endRemoveRowsEv != 0) {
-      // callback_ZN18QAbstractItemModel13endRemoveRowsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endRemoveRows();
   }
 // bool beginMoveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
   virtual bool beginMoveRows(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationRow) {
-    if (callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i != 0) {
-      // callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
+    auto fnptr = ((bool (*)(void* , QModelIndex*, int, int, QModelIndex*, int))(callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&sourceParent, sourceFirst, sourceLast, (QModelIndex*)&destinationParent, destinationRow);
     }
     return QAbstractItemModel::beginMoveRows(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
   }
 // void endMoveRows()
   virtual void endMoveRows() {
-    if (callback_ZN18QAbstractItemModel11endMoveRowsEv != 0) {
-      // callback_ZN18QAbstractItemModel11endMoveRowsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endMoveRows();
   }
 // void beginInsertColumns(const class QModelIndex &, int, int)
   virtual void beginInsertColumns(const QModelIndex & parent, int first, int last) {
-    if (callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii != 0) {
-      // callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(parent, first, last);
+    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&parent, first, last);
     }
     QAbstractItemModel::beginInsertColumns(parent, first, last);
   }
 // void endInsertColumns()
   virtual void endInsertColumns() {
-    if (callback_ZN18QAbstractItemModel16endInsertColumnsEv != 0) {
-      // callback_ZN18QAbstractItemModel16endInsertColumnsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endInsertColumns();
   }
 // void beginRemoveColumns(const class QModelIndex &, int, int)
   virtual void beginRemoveColumns(const QModelIndex & parent, int first, int last) {
-    if (callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii != 0) {
-      // callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(parent, first, last);
+    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&parent, first, last);
     }
     QAbstractItemModel::beginRemoveColumns(parent, first, last);
   }
 // void endRemoveColumns()
   virtual void endRemoveColumns() {
-    if (callback_ZN18QAbstractItemModel16endRemoveColumnsEv != 0) {
-      // callback_ZN18QAbstractItemModel16endRemoveColumnsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endRemoveColumns();
   }
 // bool beginMoveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
   virtual bool beginMoveColumns(const QModelIndex & sourceParent, int sourceFirst, int sourceLast, const QModelIndex & destinationParent, int destinationColumn) {
-    if (callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i != 0) {
-      // callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
+    auto fnptr = ((bool (*)(void* , QModelIndex*, int, int, QModelIndex*, int))(callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&sourceParent, sourceFirst, sourceLast, (QModelIndex*)&destinationParent, destinationColumn);
     }
     return QAbstractItemModel::beginMoveColumns(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
   }
 // void endMoveColumns()
   virtual void endMoveColumns() {
-    if (callback_ZN18QAbstractItemModel14endMoveColumnsEv != 0) {
-      // callback_ZN18QAbstractItemModel14endMoveColumnsEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endMoveColumns();
   }
 // void beginResetModel()
   virtual void beginResetModel() {
-    if (callback_ZN18QAbstractItemModel15beginResetModelEv != 0) {
-      // callback_ZN18QAbstractItemModel15beginResetModelEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::beginResetModel();
   }
 // void endResetModel()
   virtual void endResetModel() {
-    if (callback_ZN18QAbstractItemModel13endResetModelEv != 0) {
-      // callback_ZN18QAbstractItemModel13endResetModelEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endResetModelEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QAbstractItemModel::endResetModel();
   }
 // void changePersistentIndex(const class QModelIndex &, const class QModelIndex &)
   virtual void changePersistentIndex(const QModelIndex & from, const QModelIndex & to) {
-    if (callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_ != 0) {
-      // callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(from, to);
+    auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr));
+    if (fnptr != 0) {
+      fnptr(this , (QModelIndex*)&from, (QModelIndex*)&to);
     }
     QAbstractItemModel::changePersistentIndex(from, to);
   }
@@ -308,68 +327,68 @@ void C_ZN18QAbstractItemModelD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:177
 // [1] bool hasIndex(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZNK18QAbstractItemModel8hasIndexEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->hasIndex(row, column, parent);
+bool C_ZNK18QAbstractItemModel8hasIndexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->hasIndex(row, column, *parent);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:178
 // [24] QModelIndex index(int, int, const class QModelIndex &)
 extern "C"
-void* C_ZNK18QAbstractItemModel5indexEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & parent) {
-  auto rv = ((QAbstractItemModel*)this_)->index(row, column, parent);
+void* C_ZNK18QAbstractItemModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
+  auto rv = ((QAbstractItemModel*)this_)->index(row, column, *parent);
 return new QModelIndex(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:180
 // [24] QModelIndex parent(const class QModelIndex &)
 extern "C"
-void* C_ZNK18QAbstractItemModel6parentERK11QModelIndex(void *this_, const QModelIndex & child) {
-  auto rv = ((QAbstractItemModel*)this_)->parent(child);
+void* C_ZNK18QAbstractItemModel6parentERK11QModelIndex(void *this_, QModelIndex* child) {
+  auto rv = ((QAbstractItemModel*)this_)->parent(*child);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:182
 // [24] QModelIndex sibling(int, int, const class QModelIndex &)
 extern "C"
-void* C_ZNK18QAbstractItemModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, const QModelIndex & idx) {
-  auto rv = ((QAbstractItemModel*)this_)->sibling(row, column, idx);
+void* C_ZNK18QAbstractItemModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
+  auto rv = ((QAbstractItemModel*)this_)->sibling(row, column, *idx);
 return new QModelIndex(rv);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:183
 // [4] int rowCount(const class QModelIndex &)
 extern "C"
-int C_ZNK18QAbstractItemModel8rowCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (int)((QAbstractItemModel*)this_)->rowCount(parent);
+int C_ZNK18QAbstractItemModel8rowCountERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (int)((QAbstractItemModel*)this_)->rowCount(*parent);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:184
 // [4] int columnCount(const class QModelIndex &)
 extern "C"
-int C_ZNK18QAbstractItemModel11columnCountERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (int)((QAbstractItemModel*)this_)->columnCount(parent);
+int C_ZNK18QAbstractItemModel11columnCountERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (int)((QAbstractItemModel*)this_)->columnCount(*parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:185
 // [1] bool hasChildren(const class QModelIndex &)
 extern "C"
-bool C_ZNK18QAbstractItemModel11hasChildrenERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->hasChildren(parent);
+bool C_ZNK18QAbstractItemModel11hasChildrenERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->hasChildren(*parent);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:187
 // [16] QVariant data(const class QModelIndex &, int)
 extern "C"
-void* C_ZNK18QAbstractItemModel4dataERK11QModelIndexi(void *this_, const QModelIndex & index, int role) {
-  auto rv = ((QAbstractItemModel*)this_)->data(index, role);
+void* C_ZNK18QAbstractItemModel4dataERK11QModelIndexi(void *this_, QModelIndex* index, int role) {
+  auto rv = ((QAbstractItemModel*)this_)->data(*index, role);
 return new QVariant(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:188
 // [1] bool setData(const class QModelIndex &, const class QVariant &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel7setDataERK11QModelIndexRK8QVarianti(void *this_, const QModelIndex & index, const QVariant & value, int role) {
-  return (bool)((QAbstractItemModel*)this_)->setData(index, value, role);
+bool C_ZN18QAbstractItemModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
+  return (bool)((QAbstractItemModel*)this_)->setData(*index, *value, role);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:190
@@ -383,22 +402,22 @@ return new QVariant(rv);
 // /usr/include/qt/QtCore/qabstractitemmodel.h:192
 // [1] bool setHeaderData(int, Qt::Orientation, const class QVariant &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, const QVariant & value, int role) {
-  return (bool)((QAbstractItemModel*)this_)->setHeaderData(section, orientation, value, role);
+bool C_ZN18QAbstractItemModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
+  return (bool)((QAbstractItemModel*)this_)->setHeaderData(section, orientation, *value, role);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:200
 // [1] bool canDropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
-bool C_ZNK18QAbstractItemModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->canDropMimeData(data, action, row, column, parent);
+bool C_ZNK18QAbstractItemModel15canDropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->canDropMimeData(data, action, row, column, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:202
 // [1] bool dropMimeData(const class QMimeData *, Qt::DropAction, int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->dropMimeData(data, action, row, column, parent);
+bool C_ZN18QAbstractItemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->dropMimeData(data, action, row, column, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:204
@@ -418,106 +437,106 @@ Qt::DropActions C_ZNK18QAbstractItemModel20supportedDragActionsEv(void *this_) {
 // /usr/include/qt/QtCore/qabstractitemmodel.h:212
 // [1] bool insertRows(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->insertRows(row, count, parent);
+bool C_ZN18QAbstractItemModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->insertRows(row, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:213
 // [1] bool insertColumns(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->insertColumns(column, count, parent);
+bool C_ZN18QAbstractItemModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->insertColumns(column, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:214
 // [1] bool removeRows(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->removeRows(row, count, parent);
+bool C_ZN18QAbstractItemModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->removeRows(row, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:215
 // [1] bool removeColumns(int, int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->removeColumns(column, count, parent);
+bool C_ZN18QAbstractItemModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->removeColumns(column, count, *parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:216
 // [1] bool moveRows(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel8moveRowsERK11QModelIndexiiS2_i(void *this_, const QModelIndex & sourceParent, int sourceRow, int count, const QModelIndex & destinationParent, int destinationChild) {
-  return (bool)((QAbstractItemModel*)this_)->moveRows(sourceParent, sourceRow, count, destinationParent, destinationChild);
+bool C_ZN18QAbstractItemModel8moveRowsERK11QModelIndexiiS2_i(void *this_, QModelIndex* sourceParent, int sourceRow, int count, QModelIndex* destinationParent, int destinationChild) {
+  return (bool)((QAbstractItemModel*)this_)->moveRows(*sourceParent, sourceRow, count, *destinationParent, destinationChild);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:218
 // [1] bool moveColumns(const class QModelIndex &, int, int, const class QModelIndex &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel11moveColumnsERK11QModelIndexiiS2_i(void *this_, const QModelIndex & sourceParent, int sourceColumn, int count, const QModelIndex & destinationParent, int destinationChild) {
-  return (bool)((QAbstractItemModel*)this_)->moveColumns(sourceParent, sourceColumn, count, destinationParent, destinationChild);
+bool C_ZN18QAbstractItemModel11moveColumnsERK11QModelIndexiiS2_i(void *this_, QModelIndex* sourceParent, int sourceColumn, int count, QModelIndex* destinationParent, int destinationChild) {
+  return (bool)((QAbstractItemModel*)this_)->moveColumns(*sourceParent, sourceColumn, count, *destinationParent, destinationChild);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:221
 // [1] bool insertRow(int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel9insertRowEiRK11QModelIndex(void *this_, int row, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->insertRow(row, parent);
+bool C_ZN18QAbstractItemModel9insertRowEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->insertRow(row, *parent);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:222
 // [1] bool insertColumn(int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel12insertColumnEiRK11QModelIndex(void *this_, int column, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->insertColumn(column, parent);
+bool C_ZN18QAbstractItemModel12insertColumnEiRK11QModelIndex(void *this_, int column, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->insertColumn(column, *parent);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:223
 // [1] bool removeRow(int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel9removeRowEiRK11QModelIndex(void *this_, int row, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->removeRow(row, parent);
+bool C_ZN18QAbstractItemModel9removeRowEiRK11QModelIndex(void *this_, int row, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->removeRow(row, *parent);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:224
 // [1] bool removeColumn(int, const class QModelIndex &)
 extern "C"
-bool C_ZN18QAbstractItemModel12removeColumnEiRK11QModelIndex(void *this_, int column, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->removeColumn(column, parent);
+bool C_ZN18QAbstractItemModel12removeColumnEiRK11QModelIndex(void *this_, int column, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->removeColumn(column, *parent);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:225
 // [1] bool moveRow(const class QModelIndex &, int, const class QModelIndex &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel7moveRowERK11QModelIndexiS2_i(void *this_, const QModelIndex & sourceParent, int sourceRow, const QModelIndex & destinationParent, int destinationChild) {
-  return (bool)((QAbstractItemModel*)this_)->moveRow(sourceParent, sourceRow, destinationParent, destinationChild);
+bool C_ZN18QAbstractItemModel7moveRowERK11QModelIndexiS2_i(void *this_, QModelIndex* sourceParent, int sourceRow, QModelIndex* destinationParent, int destinationChild) {
+  return (bool)((QAbstractItemModel*)this_)->moveRow(*sourceParent, sourceRow, *destinationParent, destinationChild);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:227
 // [1] bool moveColumn(const class QModelIndex &, int, const class QModelIndex &, int)
 extern "C"
-bool C_ZN18QAbstractItemModel10moveColumnERK11QModelIndexiS2_i(void *this_, const QModelIndex & sourceParent, int sourceColumn, const QModelIndex & destinationParent, int destinationChild) {
-  return (bool)((QAbstractItemModel*)this_)->moveColumn(sourceParent, sourceColumn, destinationParent, destinationChild);
+bool C_ZN18QAbstractItemModel10moveColumnERK11QModelIndexiS2_i(void *this_, QModelIndex* sourceParent, int sourceColumn, QModelIndex* destinationParent, int destinationChild) {
+  return (bool)((QAbstractItemModel*)this_)->moveColumn(*sourceParent, sourceColumn, *destinationParent, destinationChild);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:230
 // [-2] void fetchMore(const class QModelIndex &)
 extern "C"
-void C_ZN18QAbstractItemModel9fetchMoreERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  ((QAbstractItemModel*)this_)->fetchMore(parent);
+void C_ZN18QAbstractItemModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
+  ((QAbstractItemModel*)this_)->fetchMore(*parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:231
 // [1] bool canFetchMore(const class QModelIndex &)
 extern "C"
-bool C_ZNK18QAbstractItemModel12canFetchMoreERK11QModelIndex(void *this_, const QModelIndex & parent) {
-  return (bool)((QAbstractItemModel*)this_)->canFetchMore(parent);
+bool C_ZNK18QAbstractItemModel12canFetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
+  return (bool)((QAbstractItemModel*)this_)->canFetchMore(*parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:232
 // [4] Qt::ItemFlags flags(const class QModelIndex &)
 extern "C"
-Qt::ItemFlags C_ZNK18QAbstractItemModel5flagsERK11QModelIndex(void *this_, const QModelIndex & index) {
-  return (Qt::ItemFlags)((QAbstractItemModel*)this_)->flags(index);
+Qt::ItemFlags C_ZNK18QAbstractItemModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
+  return (Qt::ItemFlags)((QAbstractItemModel*)this_)->flags(*index);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:233
@@ -530,16 +549,16 @@ void C_ZN18QAbstractItemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt:
 // /usr/include/qt/QtCore/qabstractitemmodel.h:234
 // [24] QModelIndex buddy(const class QModelIndex &)
 extern "C"
-void* C_ZNK18QAbstractItemModel5buddyERK11QModelIndex(void *this_, const QModelIndex & index) {
-  auto rv = ((QAbstractItemModel*)this_)->buddy(index);
+void* C_ZNK18QAbstractItemModel5buddyERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QAbstractItemModel*)this_)->buddy(*index);
 return new QModelIndex(rv);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:239
 // [8] QSize span(const class QModelIndex &)
 extern "C"
-void* C_ZNK18QAbstractItemModel4spanERK11QModelIndex(void *this_, const QModelIndex & index) {
-  auto rv = ((QAbstractItemModel*)this_)->span(index);
+void* C_ZNK18QAbstractItemModel4spanERK11QModelIndex(void *this_, QModelIndex* index) {
+  auto rv = ((QAbstractItemModel*)this_)->span(*index);
 return new QSize(rv);
 }
 // Public Visibility=Default Availability=Available

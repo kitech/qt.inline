@@ -53,4 +53,9 @@ extern "C"
 qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
   return (qreal)((QTextLength*)this_)->rawValue();
 }
+
+extern "C"
+void C_ZN11QTextLengthD2Ev(void *this_) {
+  delete (QTextLength*)(this_);
+}
 //  main block end

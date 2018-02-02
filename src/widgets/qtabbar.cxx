@@ -12,128 +12,128 @@
 // /usr/include/qt/QtWidgets/qtabbar.h:191
 // [8] QSize tabSizeHint(int)
 extern "C"
-void* callback_ZNK7QTabBar11tabSizeHintEi = 0;
+void* callback_ZNK7QTabBar11tabSizeHintEi_fnptr = 0;
 extern "C" void set_callback_ZNK7QTabBar11tabSizeHintEi(void*cbfn)
-{ callback_ZNK7QTabBar11tabSizeHintEi = cbfn; }
+{ callback_ZNK7QTabBar11tabSizeHintEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:192
 // [8] QSize minimumTabSizeHint(int)
 extern "C"
-void* callback_ZNK7QTabBar18minimumTabSizeHintEi = 0;
+void* callback_ZNK7QTabBar18minimumTabSizeHintEi_fnptr = 0;
 extern "C" void set_callback_ZNK7QTabBar18minimumTabSizeHintEi(void*cbfn)
-{ callback_ZNK7QTabBar18minimumTabSizeHintEi = cbfn; }
+{ callback_ZNK7QTabBar18minimumTabSizeHintEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:193
 // [-2] void tabInserted(int)
 extern "C"
-void* callback_ZN7QTabBar11tabInsertedEi = 0;
+void* callback_ZN7QTabBar11tabInsertedEi_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar11tabInsertedEi(void*cbfn)
-{ callback_ZN7QTabBar11tabInsertedEi = cbfn; }
+{ callback_ZN7QTabBar11tabInsertedEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:194
 // [-2] void tabRemoved(int)
 extern "C"
-void* callback_ZN7QTabBar10tabRemovedEi = 0;
+void* callback_ZN7QTabBar10tabRemovedEi_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar10tabRemovedEi(void*cbfn)
-{ callback_ZN7QTabBar10tabRemovedEi = cbfn; }
+{ callback_ZN7QTabBar10tabRemovedEi_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:195
 // [-2] void tabLayoutChange()
 extern "C"
-void* callback_ZN7QTabBar15tabLayoutChangeEv = 0;
+void* callback_ZN7QTabBar15tabLayoutChangeEv_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar15tabLayoutChangeEv(void*cbfn)
-{ callback_ZN7QTabBar15tabLayoutChangeEv = cbfn; }
+{ callback_ZN7QTabBar15tabLayoutChangeEv_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:197
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN7QTabBar5eventEP6QEvent = 0;
+void* callback_ZN7QTabBar5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN7QTabBar5eventEP6QEvent = cbfn; }
+{ callback_ZN7QTabBar5eventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:198
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN7QTabBar11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN7QTabBar11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN7QTabBar11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN7QTabBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:199
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN7QTabBar9showEventEP10QShowEvent = 0;
+void* callback_ZN7QTabBar9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN7QTabBar9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN7QTabBar9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:200
 // [-2] void hideEvent(class QHideEvent *)
 extern "C"
-void* callback_ZN7QTabBar9hideEventEP10QHideEvent = 0;
+void* callback_ZN7QTabBar9hideEventEP10QHideEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar9hideEventEP10QHideEvent(void*cbfn)
-{ callback_ZN7QTabBar9hideEventEP10QHideEvent = cbfn; }
+{ callback_ZN7QTabBar9hideEventEP10QHideEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:201
 // [-2] void paintEvent(class QPaintEvent *)
 extern "C"
-void* callback_ZN7QTabBar10paintEventEP11QPaintEvent = 0;
+void* callback_ZN7QTabBar10paintEventEP11QPaintEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN7QTabBar10paintEventEP11QPaintEvent = cbfn; }
+{ callback_ZN7QTabBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:202
 // [-2] void mousePressEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QTabBar15mousePressEventEP11QMouseEvent = 0;
+void* callback_ZN7QTabBar15mousePressEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QTabBar15mousePressEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QTabBar15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:203
 // [-2] void mouseMoveEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent = 0;
+void* callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:204
 // [-2] void mouseReleaseEvent(class QMouseEvent *)
 extern "C"
-void* callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent = 0;
+void* callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent = cbfn; }
+{ callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:206
 // [-2] void wheelEvent(class QWheelEvent *)
 extern "C"
-void* callback_ZN7QTabBar10wheelEventEP11QWheelEvent = 0;
+void* callback_ZN7QTabBar10wheelEventEP11QWheelEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN7QTabBar10wheelEventEP11QWheelEvent = cbfn; }
+{ callback_ZN7QTabBar10wheelEventEP11QWheelEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:208
 // [-2] void keyPressEvent(class QKeyEvent *)
 extern "C"
-void* callback_ZN7QTabBar13keyPressEventEP9QKeyEvent = 0;
+void* callback_ZN7QTabBar13keyPressEventEP9QKeyEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN7QTabBar13keyPressEventEP9QKeyEvent = cbfn; }
+{ callback_ZN7QTabBar13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:209
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN7QTabBar11changeEventEP6QEvent = 0;
+void* callback_ZN7QTabBar11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN7QTabBar11changeEventEP6QEvent = cbfn; }
+{ callback_ZN7QTabBar11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:210
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN7QTabBar10timerEventEP11QTimerEvent = 0;
+void* callback_ZN7QTabBar10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN7QTabBar10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN7QTabBar10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN7QTabBar10timerEventEP11QTimerEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:211
 // [-2] void initStyleOption(class QStyleOptionTab *, int)
 extern "C"
-void* callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi = 0;
+void* callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi_fnptr = 0;
 extern "C" void set_callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi(void*cbfn)
-{ callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi = cbfn; }
+{ callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi_fnptr = cbfn; }
 
 class MyQTabBar : public QTabBar {
 public:
@@ -142,127 +142,145 @@ public:
 MyQTabBar(QWidget * parent) : QTabBar(parent) {}
 // QSize tabSizeHint(int)
   virtual QSize tabSizeHint(int index) {
-    if (callback_ZNK7QTabBar11tabSizeHintEi != 0) {
-      // callback_ZNK7QTabBar11tabSizeHintEi(index);
+    auto fnptr = ((QSize (*)(void* , int))(callback_ZNK7QTabBar11tabSizeHintEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     return QTabBar::tabSizeHint(index);
   }
 // QSize minimumTabSizeHint(int)
   virtual QSize minimumTabSizeHint(int index) {
-    if (callback_ZNK7QTabBar18minimumTabSizeHintEi != 0) {
-      // callback_ZNK7QTabBar18minimumTabSizeHintEi(index);
+    auto fnptr = ((QSize (*)(void* , int))(callback_ZNK7QTabBar18minimumTabSizeHintEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     return QTabBar::minimumTabSizeHint(index);
   }
 // void tabInserted(int)
   virtual void tabInserted(int index) {
-    if (callback_ZN7QTabBar11tabInsertedEi != 0) {
-      // callback_ZN7QTabBar11tabInsertedEi(index);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN7QTabBar11tabInsertedEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     QTabBar::tabInserted(index);
   }
 // void tabRemoved(int)
   virtual void tabRemoved(int index) {
-    if (callback_ZN7QTabBar10tabRemovedEi != 0) {
-      // callback_ZN7QTabBar10tabRemovedEi(index);
+    auto fnptr = ((void (*)(void* , int))(callback_ZN7QTabBar10tabRemovedEi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , index);
     }
     QTabBar::tabRemoved(index);
   }
 // void tabLayoutChange()
   virtual void tabLayoutChange() {
-    if (callback_ZN7QTabBar15tabLayoutChangeEv != 0) {
-      // callback_ZN7QTabBar15tabLayoutChangeEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN7QTabBar15tabLayoutChangeEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QTabBar::tabLayoutChange();
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    if (callback_ZN7QTabBar5eventEP6QEvent != 0) {
-      // callback_ZN7QTabBar5eventEP6QEvent(arg0);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QTabBar5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     return QTabBar::event(arg0);
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    if (callback_ZN7QTabBar11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN7QTabBar11resizeEventEP12QResizeEvent(arg0);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QTabBar11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::resizeEvent(arg0);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    if (callback_ZN7QTabBar9showEventEP10QShowEvent != 0) {
-      // callback_ZN7QTabBar9showEventEP10QShowEvent(arg0);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN7QTabBar9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::showEvent(arg0);
   }
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * arg0) {
-    if (callback_ZN7QTabBar9hideEventEP10QHideEvent != 0) {
-      // callback_ZN7QTabBar9hideEventEP10QHideEvent(arg0);
+    auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN7QTabBar9hideEventEP10QHideEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::hideEvent(arg0);
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    if (callback_ZN7QTabBar10paintEventEP11QPaintEvent != 0) {
-      // callback_ZN7QTabBar10paintEventEP11QPaintEvent(arg0);
+    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QTabBar10paintEventEP11QPaintEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::paintEvent(arg0);
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    if (callback_ZN7QTabBar15mousePressEventEP11QMouseEvent != 0) {
-      // callback_ZN7QTabBar15mousePressEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QTabBar15mousePressEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::mousePressEvent(arg0);
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
-    if (callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent != 0) {
-      // callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QTabBar14mouseMoveEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::mouseMoveEvent(arg0);
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
-    if (callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent != 0) {
-      // callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent(arg0);
+    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QTabBar17mouseReleaseEventEP11QMouseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::mouseReleaseEvent(arg0);
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
-    if (callback_ZN7QTabBar10wheelEventEP11QWheelEvent != 0) {
-      // callback_ZN7QTabBar10wheelEventEP11QWheelEvent(event);
+    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN7QTabBar10wheelEventEP11QWheelEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QTabBar::wheelEvent(event);
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    if (callback_ZN7QTabBar13keyPressEventEP9QKeyEvent != 0) {
-      // callback_ZN7QTabBar13keyPressEventEP9QKeyEvent(arg0);
+    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QTabBar13keyPressEventEP9QKeyEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::keyPressEvent(arg0);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    if (callback_ZN7QTabBar11changeEventEP6QEvent != 0) {
-      // callback_ZN7QTabBar11changeEventEP6QEvent(arg0);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QTabBar11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTabBar::changeEvent(arg0);
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    if (callback_ZN7QTabBar10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN7QTabBar10timerEventEP11QTimerEvent(event);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN7QTabBar10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QTabBar::timerEvent(event);
   }
 // void initStyleOption(class QStyleOptionTab *, int)
   virtual void initStyleOption(QStyleOptionTab * option, int tabIndex) {
-    if (callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi != 0) {
-      // callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi(option, tabIndex);
+    auto fnptr = ((void (*)(void* , QStyleOptionTab *, int))(callback_ZNK7QTabBar15initStyleOptionEP15QStyleOptionTabi_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , option, tabIndex);
     }
     QTabBar::initStyleOption(option, tabIndex);
   }
@@ -308,29 +326,29 @@ void C_ZN7QTabBar8setShapeENS_5ShapeE(void *this_, QTabBar::Shape shape) {
 // /usr/include/qt/QtWidgets/qtabbar.h:96
 // [4] int addTab(const class QString &)
 extern "C"
-int C_ZN7QTabBar6addTabERK7QString(void *this_, const QString & text) {
-  return (int)((QTabBar*)this_)->addTab(text);
+int C_ZN7QTabBar6addTabERK7QString(void *this_, QString* text) {
+  return (int)((QTabBar*)this_)->addTab(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:97
 // [4] int addTab(const class QIcon &, const class QString &)
 extern "C"
-int C_ZN7QTabBar6addTabERK5QIconRK7QString(void *this_, const QIcon & icon, const QString & text) {
-  return (int)((QTabBar*)this_)->addTab(icon, text);
+int C_ZN7QTabBar6addTabERK5QIconRK7QString(void *this_, QIcon* icon, QString* text) {
+  return (int)((QTabBar*)this_)->addTab(*icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:99
 // [4] int insertTab(int, const class QString &)
 extern "C"
-int C_ZN7QTabBar9insertTabEiRK7QString(void *this_, int index, const QString & text) {
-  return (int)((QTabBar*)this_)->insertTab(index, text);
+int C_ZN7QTabBar9insertTabEiRK7QString(void *this_, int index, QString* text) {
+  return (int)((QTabBar*)this_)->insertTab(index, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:100
 // [4] int insertTab(int, const class QIcon &, const class QString &)
 extern "C"
-int C_ZN7QTabBar9insertTabEiRK5QIconRK7QString(void *this_, int index, const QIcon & icon, const QString & text) {
-  return (int)((QTabBar*)this_)->insertTab(index, icon, text);
+int C_ZN7QTabBar9insertTabEiRK5QIconRK7QString(void *this_, int index, QIcon* icon, QString* text) {
+  return (int)((QTabBar*)this_)->insertTab(index, *icon, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:102
@@ -372,8 +390,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:109
 // [-2] void setTabText(int, const class QString &)
 extern "C"
-void C_ZN7QTabBar10setTabTextEiRK7QString(void *this_, int index, const QString & text) {
-  ((QTabBar*)this_)->setTabText(index, text);
+void C_ZN7QTabBar10setTabTextEiRK7QString(void *this_, int index, QString* text) {
+  ((QTabBar*)this_)->setTabText(index, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:111
@@ -387,8 +405,8 @@ return new QColor(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:112
 // [-2] void setTabTextColor(int, const class QColor &)
 extern "C"
-void C_ZN7QTabBar15setTabTextColorEiRK6QColor(void *this_, int index, const QColor & color) {
-  ((QTabBar*)this_)->setTabTextColor(index, color);
+void C_ZN7QTabBar15setTabTextColorEiRK6QColor(void *this_, int index, QColor* color) {
+  ((QTabBar*)this_)->setTabTextColor(index, *color);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:114
@@ -402,8 +420,8 @@ return new QIcon(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:115
 // [-2] void setTabIcon(int, const class QIcon &)
 extern "C"
-void C_ZN7QTabBar10setTabIconEiRK5QIcon(void *this_, int index, const QIcon & icon) {
-  ((QTabBar*)this_)->setTabIcon(index, icon);
+void C_ZN7QTabBar10setTabIconEiRK5QIcon(void *this_, int index, QIcon* icon) {
+  ((QTabBar*)this_)->setTabIcon(index, *icon);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:117
@@ -423,8 +441,8 @@ void C_ZN7QTabBar12setElideModeEN2Qt13TextElideModeE(void *this_, Qt::TextElideM
 // /usr/include/qt/QtWidgets/qtabbar.h:121
 // [-2] void setTabToolTip(int, const class QString &)
 extern "C"
-void C_ZN7QTabBar13setTabToolTipEiRK7QString(void *this_, int index, const QString & tip) {
-  ((QTabBar*)this_)->setTabToolTip(index, tip);
+void C_ZN7QTabBar13setTabToolTipEiRK7QString(void *this_, int index, QString* tip) {
+  ((QTabBar*)this_)->setTabToolTip(index, *tip);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:122
@@ -438,8 +456,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:126
 // [-2] void setTabWhatsThis(int, const class QString &)
 extern "C"
-void C_ZN7QTabBar15setTabWhatsThisEiRK7QString(void *this_, int index, const QString & text) {
-  ((QTabBar*)this_)->setTabWhatsThis(index, text);
+void C_ZN7QTabBar15setTabWhatsThisEiRK7QString(void *this_, int index, QString* text) {
+  ((QTabBar*)this_)->setTabWhatsThis(index, *text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:127
@@ -453,8 +471,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:130
 // [-2] void setTabData(int, const class QVariant &)
 extern "C"
-void C_ZN7QTabBar10setTabDataEiRK8QVariant(void *this_, int index, const QVariant & data) {
-  ((QTabBar*)this_)->setTabData(index, data);
+void C_ZN7QTabBar10setTabDataEiRK8QVariant(void *this_, int index, QVariant* data) {
+  ((QTabBar*)this_)->setTabData(index, *data);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:131
@@ -476,8 +494,8 @@ return new QRect(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:134
 // [4] int tabAt(const class QPoint &)
 extern "C"
-int C_ZNK7QTabBar5tabAtERK6QPoint(void *this_, const QPoint & pos) {
-  return (int)((QTabBar*)this_)->tabAt(pos);
+int C_ZNK7QTabBar5tabAtERK6QPoint(void *this_, QPoint* pos) {
+  return (int)((QTabBar*)this_)->tabAt(*pos);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:136
@@ -535,8 +553,8 @@ return new QSize(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:146
 // [-2] void setIconSize(const class QSize &)
 extern "C"
-void C_ZN7QTabBar11setIconSizeERK5QSize(void *this_, const QSize & size) {
-  ((QTabBar*)this_)->setIconSize(size);
+void C_ZN7QTabBar11setIconSizeERK5QSize(void *this_, QSize* size) {
+  ((QTabBar*)this_)->setIconSize(*size);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:148
@@ -676,8 +694,8 @@ return new QString(rv);
 // /usr/include/qt/QtWidgets/qtabbar.h:177
 // [-2] void setAccessibleTabName(int, const class QString &)
 extern "C"
-void C_ZN7QTabBar20setAccessibleTabNameEiRK7QString(void *this_, int index, const QString & name) {
-  ((QTabBar*)this_)->setAccessibleTabName(index, name);
+void C_ZN7QTabBar20setAccessibleTabNameEiRK7QString(void *this_, int index, QString* name) {
+  ((QTabBar*)this_)->setAccessibleTabName(index, *name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtabbar.h:181

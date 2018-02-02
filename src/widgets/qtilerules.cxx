@@ -32,4 +32,9 @@ extern "C"
 void* C_ZN10QTileRulesC2EN2Qt8TileRuleE(Qt::TileRule rule) {
   return  new QTileRules(rule);
 }
+
+extern "C"
+void C_ZN10QTileRulesD2Ev(void *this_) {
+  delete (QTileRules*)(this_);
+}
 //  main block end

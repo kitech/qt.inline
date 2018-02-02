@@ -12,9 +12,9 @@
 // /usr/include/qt/QtGui/qaccessible.h:460
 // [-2] void ~QAccessibleInterface()
 extern "C"
-void* callback_ZN20QAccessibleInterfaceD1Ev = 0;
+void* callback_ZN20QAccessibleInterfaceD1Ev_fnptr = 0;
 extern "C" void set_callback_ZN20QAccessibleInterfaceD1Ev(void*cbfn)
-{ callback_ZN20QAccessibleInterfaceD1Ev = cbfn; }
+{ callback_ZN20QAccessibleInterfaceD1Ev_fnptr = cbfn; }
 
 class MyQAccessibleInterface : public QAccessibleInterface {
 public:
@@ -97,8 +97,8 @@ return new QString(rv);
 // /usr/include/qt/QtGui/qaccessible.h:482
 // [-2] void setText(class QAccessible::Text, const class QString &)
 extern "C"
-void C_ZN20QAccessibleInterface7setTextEN11QAccessible4TextERK7QString(void *this_, QAccessible::Text t, const QString & text) {
-  ((QAccessibleInterface*)this_)->setText(t, text);
+void C_ZN20QAccessibleInterface7setTextEN11QAccessible4TextERK7QString(void *this_, QAccessible::Text t, QString* text) {
+  ((QAccessibleInterface*)this_)->setText(t, *text);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessible.h:483

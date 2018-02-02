@@ -95,22 +95,22 @@ return new QPointF(rv);
 // /usr/include/qt/QtWidgets/qgesture.h:177
 // [-2] void setStartCenterPoint(const class QPointF &)
 extern "C"
-void C_ZN13QPinchGesture19setStartCenterPointERK7QPointF(void *this_, const QPointF & value) {
-  ((QPinchGesture*)this_)->setStartCenterPoint(value);
+void C_ZN13QPinchGesture19setStartCenterPointERK7QPointF(void *this_, QPointF* value) {
+  ((QPinchGesture*)this_)->setStartCenterPoint(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:178
 // [-2] void setLastCenterPoint(const class QPointF &)
 extern "C"
-void C_ZN13QPinchGesture18setLastCenterPointERK7QPointF(void *this_, const QPointF & value) {
-  ((QPinchGesture*)this_)->setLastCenterPoint(value);
+void C_ZN13QPinchGesture18setLastCenterPointERK7QPointF(void *this_, QPointF* value) {
+  ((QPinchGesture*)this_)->setLastCenterPoint(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:179
 // [-2] void setCenterPoint(const class QPointF &)
 extern "C"
-void C_ZN13QPinchGesture14setCenterPointERK7QPointF(void *this_, const QPointF & value) {
-  ((QPinchGesture*)this_)->setCenterPoint(value);
+void C_ZN13QPinchGesture14setCenterPointERK7QPointF(void *this_, QPointF* value) {
+  ((QPinchGesture*)this_)->setCenterPoint(*value);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgesture.h:181

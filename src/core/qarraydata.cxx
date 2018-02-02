@@ -65,4 +65,9 @@ extern "C"
 void* C_ZN10QArrayData10sharedNullEv() {
   return (void*)QArrayData::sharedNull();
 }
+
+extern "C"
+void C_ZN10QArrayDataD2Ev(void *this_) {
+  delete (QArrayData*)(this_);
+}
 //  main block end

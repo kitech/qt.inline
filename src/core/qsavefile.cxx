@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qsavefile.h:87
 // [8] qint64 writeData(const char *, qint64)
 extern "C"
-void* callback_ZN9QSaveFile9writeDataEPKcx = 0;
+void* callback_ZN9QSaveFile9writeDataEPKcx_fnptr = 0;
 extern "C" void set_callback_ZN9QSaveFile9writeDataEPKcx(void*cbfn)
-{ callback_ZN9QSaveFile9writeDataEPKcx = cbfn; }
+{ callback_ZN9QSaveFile9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQSaveFile : public QSaveFile {
 public:
@@ -27,8 +27,9 @@ MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    if (callback_ZN9QSaveFile9writeDataEPKcx != 0) {
-      // callback_ZN9QSaveFile9writeDataEPKcx(data, len);
+    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QSaveFile9writeDataEPKcx_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , data, len);
     }
     return QSaveFile::writeData(data, len);
   }
@@ -45,9 +46,9 @@ void* C_ZNK9QSaveFile10metaObjectEv(void *this_) {
 // /usr/include/qt/QtCore/qsavefile.h:68
 // [-2] void QSaveFile(const class QString &)
 extern "C"
-void* C_ZN9QSaveFileC2ERK7QString(const QString & name) {
+void* C_ZN9QSaveFileC2ERK7QString(QString* name) {
   auto _nilp = (MyQSaveFile*)(0);
-  return  new MyQSaveFile(name);
+  return  new MyQSaveFile(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:70
@@ -61,9 +62,9 @@ void* C_ZN9QSaveFileC2EP7QObject(QObject * parent) {
 // /usr/include/qt/QtCore/qsavefile.h:71
 // [-2] void QSaveFile(const class QString &, class QObject *)
 extern "C"
-void* C_ZN9QSaveFileC2ERK7QStringP7QObject(const QString & name, QObject * parent) {
+void* C_ZN9QSaveFileC2ERK7QStringP7QObject(QString* name, QObject * parent) {
   auto _nilp = (MyQSaveFile*)(0);
-  return  new MyQSaveFile(name, parent);
+  return  new MyQSaveFile(*name, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:73
@@ -84,8 +85,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qsavefile.h:76
 // [-2] void setFileName(const class QString &)
 extern "C"
-void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, const QString & name) {
-  ((QSaveFile*)this_)->setFileName(name);
+void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, QString* name) {
+  ((QSaveFile*)this_)->setFileName(*name);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:79

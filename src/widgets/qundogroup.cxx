@@ -62,15 +62,15 @@ void* C_ZNK10QUndoGroup11activeStackEv(void *this_) {
 // /usr/include/qt/QtWidgets/qundogroup.h:70
 // [8] QAction * createUndoAction(class QObject *, const class QString &)
 extern "C"
-void* C_ZNK10QUndoGroup16createUndoActionEP7QObjectRK7QString(void *this_, QObject * parent, const QString & prefix) {
-  return (void*)((QUndoGroup*)this_)->createUndoAction(parent, prefix);
+void* C_ZNK10QUndoGroup16createUndoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
+  return (void*)((QUndoGroup*)this_)->createUndoAction(parent, *prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundogroup.h:72
 // [8] QAction * createRedoAction(class QObject *, const class QString &)
 extern "C"
-void* C_ZNK10QUndoGroup16createRedoActionEP7QObjectRK7QString(void *this_, QObject * parent, const QString & prefix) {
-  return (void*)((QUndoGroup*)this_)->createRedoAction(parent, prefix);
+void* C_ZNK10QUndoGroup16createRedoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
+  return (void*)((QUndoGroup*)this_)->createRedoAction(parent, *prefix);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundogroup.h:75
@@ -169,14 +169,14 @@ void C_ZN10QUndoGroup14canRedoChangedEb(void *this_, bool canRedo) {
 // /usr/include/qt/QtWidgets/qundogroup.h:92
 // [-2] void undoTextChanged(const class QString &)
 extern "C"
-void C_ZN10QUndoGroup15undoTextChangedERK7QString(void *this_, const QString & undoText) {
-  ((QUndoGroup*)this_)->undoTextChanged(undoText);
+void C_ZN10QUndoGroup15undoTextChangedERK7QString(void *this_, QString* undoText) {
+  ((QUndoGroup*)this_)->undoTextChanged(*undoText);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qundogroup.h:93
 // [-2] void redoTextChanged(const class QString &)
 extern "C"
-void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, const QString & redoText) {
-  ((QUndoGroup*)this_)->redoTextChanged(redoText);
+void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, QString* redoText) {
+  ((QUndoGroup*)this_)->redoTextChanged(*redoText);
 }
 //  main block end

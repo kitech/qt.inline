@@ -12,9 +12,9 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h:376
 // [-2] void QStyleOptionMenuItem(int)
 extern "C"
-void* callback_ZN20QStyleOptionMenuItemC1Ei = 0;
+void* callback_ZN20QStyleOptionMenuItemC1Ei_fnptr = 0;
 extern "C" void set_callback_ZN20QStyleOptionMenuItemC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionMenuItemC1Ei = cbfn; }
+{ callback_ZN20QStyleOptionMenuItemC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionMenuItem : public QStyleOptionMenuItem {
 public:
@@ -31,5 +31,10 @@ MyQStyleOptionMenuItem(int version) : QStyleOptionMenuItem(version) {}
 extern "C"
 void* C_ZN20QStyleOptionMenuItemC2Ev() {
   return  new QStyleOptionMenuItem();
+}
+
+extern "C"
+void C_ZN20QStyleOptionMenuItemD2Ev(void *this_) {
+  delete (QStyleOptionMenuItem*)(this_);
 }
 //  main block end

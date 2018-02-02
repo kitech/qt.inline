@@ -12,37 +12,37 @@
 // /usr/include/qt/QtWidgets/qprogressdialog.h:116
 // [-2] void resizeEvent(class QResizeEvent *)
 extern "C"
-void* callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent = 0;
+void* callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent = cbfn; }
+{ callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:117
 // [-2] void closeEvent(class QCloseEvent *)
 extern "C"
-void* callback_ZN15QProgressDialog10closeEventEP11QCloseEvent = 0;
+void* callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QProgressDialog10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN15QProgressDialog10closeEventEP11QCloseEvent = cbfn; }
+{ callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:118
 // [-2] void changeEvent(class QEvent *)
 extern "C"
-void* callback_ZN15QProgressDialog11changeEventEP6QEvent = 0;
+void* callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QProgressDialog11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN15QProgressDialog11changeEventEP6QEvent = cbfn; }
+{ callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:119
 // [-2] void showEvent(class QShowEvent *)
 extern "C"
-void* callback_ZN15QProgressDialog9showEventEP10QShowEvent = 0;
+void* callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = 0;
 extern "C" void set_callback_ZN15QProgressDialog9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN15QProgressDialog9showEventEP10QShowEvent = cbfn; }
+{ callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = cbfn; }
 // Protected Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:122
 // [-2] void forceShow()
 extern "C"
-void* callback_ZN15QProgressDialog9forceShowEv = 0;
+void* callback_ZN15QProgressDialog9forceShowEv_fnptr = 0;
 extern "C" void set_callback_ZN15QProgressDialog9forceShowEv(void*cbfn)
-{ callback_ZN15QProgressDialog9forceShowEv = cbfn; }
+{ callback_ZN15QProgressDialog9forceShowEv_fnptr = cbfn; }
 
 class MyQProgressDialog : public QProgressDialog {
 public:
@@ -53,36 +53,41 @@ MyQProgressDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDia
 MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags) {}
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    if (callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent != 0) {
-      // callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent(event);
+    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QProgressDialog::resizeEvent(event);
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    if (callback_ZN15QProgressDialog10closeEventEP11QCloseEvent != 0) {
-      // callback_ZN15QProgressDialog10closeEventEP11QCloseEvent(event);
+    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QProgressDialog::closeEvent(event);
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    if (callback_ZN15QProgressDialog11changeEventEP6QEvent != 0) {
-      // callback_ZN15QProgressDialog11changeEventEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QProgressDialog::changeEvent(event);
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
-    if (callback_ZN15QProgressDialog9showEventEP10QShowEvent != 0) {
-      // callback_ZN15QProgressDialog9showEventEP10QShowEvent(event);
+    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QProgressDialog::showEvent(event);
   }
 // void forceShow()
   virtual void forceShow() {
-    if (callback_ZN15QProgressDialog9forceShowEv != 0) {
-      // callback_ZN15QProgressDialog9forceShowEv();
+    auto fnptr = ((void (*)(void* ))(callback_ZN15QProgressDialog9forceShowEv_fnptr));
+    if (fnptr != 0) {
+      fnptr(this );
     }
     QProgressDialog::forceShow();
   }
@@ -107,9 +112,9 @@ void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * pare
 // /usr/include/qt/QtWidgets/qprogressdialog.h:72
 // [-2] void QProgressDialog(const class QString &, const class QString &, int, int, class QWidget *, Qt::WindowFlags)
 extern "C"
-void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) {
+void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* labelText, QString* cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) {
   auto _nilp = (MyQProgressDialog*)(0);
-  return  new MyQProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags);
+  return  new MyQProgressDialog(*labelText, *cancelButtonText, minimum, maximum, parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:75
@@ -271,15 +276,15 @@ void C_ZN15QProgressDialog8setValueEi(void *this_, int progress) {
 // /usr/include/qt/QtWidgets/qprogressdialog.h:108
 // [-2] void setLabelText(const class QString &)
 extern "C"
-void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, const QString & text) {
-  ((QProgressDialog*)this_)->setLabelText(text);
+void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, QString* text) {
+  ((QProgressDialog*)this_)->setLabelText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:109
 // [-2] void setCancelButtonText(const class QString &)
 extern "C"
-void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, const QString & text) {
-  ((QProgressDialog*)this_)->setCancelButtonText(text);
+void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, QString* text) {
+  ((QProgressDialog*)this_)->setCancelButtonText(*text);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressdialog.h:110

@@ -31,8 +31,8 @@ void* C_ZN7QPointFC2Ev() {
 // /usr/include/qt/QtCore/qpoint.h:223
 // [-2] void QPointF(const class QPoint &)
 extern "C"
-void* C_ZN7QPointFC2ERK6QPoint(const QPoint & p) {
-  return  new QPointF(p);
+void* C_ZN7QPointFC2ERK6QPoint(QPoint* p) {
+  return  new QPointF(*p);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:224
@@ -103,8 +103,8 @@ return &rv;
 // /usr/include/qt/QtCore/qpoint.h:243
 // [8] qreal dotProduct(const class QPointF &, const class QPointF &)
 extern "C"
-qreal C_ZN7QPointF10dotProductERKS_S1_(const QPointF & p1, const QPointF & p2) {
-  return (qreal)QPointF::dotProduct(p1, p2);
+qreal C_ZN7QPointF10dotProductERKS_S1_(QPointF* p1, QPointF* p2) {
+  return (qreal)QPointF::dotProduct(*p1, *p2);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:256
@@ -113,5 +113,10 @@ extern "C"
 void* C_ZNK7QPointF7toPointEv(void *this_) {
   auto rv = ((QPointF*)this_)->toPoint();
 return new QPoint(rv);
+}
+
+extern "C"
+void C_ZN7QPointFD2Ev(void *this_) {
+  delete (QPointF*)(this_);
 }
 //  main block end

@@ -56,8 +56,8 @@ Qt::Orientations C_ZNK11QLayoutItem19expandingDirectionsEv(void *this_) {
 // /usr/include/qt/QtWidgets/qlayoutitem.h:69
 // [-2] void setGeometry(const class QRect &)
 extern "C"
-void C_ZN11QLayoutItem11setGeometryERK5QRect(void *this_, const QRect & arg0) {
-  ((QLayoutItem*)this_)->setGeometry(arg0);
+void C_ZN11QLayoutItem11setGeometryERK5QRect(void *this_, QRect* arg0) {
+  ((QLayoutItem*)this_)->setGeometry(*arg0);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:70

@@ -50,4 +50,9 @@ extern "C"
 void* C_ZN5QFlagC2Et(ushort ai) {
   return  new QFlag(ai);
 }
+
+extern "C"
+void C_ZN5QFlagD2Ev(void *this_) {
+  delete (QFlag*)(this_);
+}
 //  main block end

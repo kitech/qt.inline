@@ -12,23 +12,23 @@
 // /usr/include/qt/QtCore/qhistorystate.h:83
 // [-2] void onEntry(class QEvent *)
 extern "C"
-void* callback_ZN13QHistoryState7onEntryEP6QEvent = 0;
+void* callback_ZN13QHistoryState7onEntryEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QHistoryState7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN13QHistoryState7onEntryEP6QEvent = cbfn; }
+{ callback_ZN13QHistoryState7onEntryEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:84
 // [-2] void onExit(class QEvent *)
 extern "C"
-void* callback_ZN13QHistoryState6onExitEP6QEvent = 0;
+void* callback_ZN13QHistoryState6onExitEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QHistoryState6onExitEP6QEvent(void*cbfn)
-{ callback_ZN13QHistoryState6onExitEP6QEvent = cbfn; }
+{ callback_ZN13QHistoryState6onExitEP6QEvent_fnptr = cbfn; }
 // Protected virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhistorystate.h:86
 // [1] bool event(class QEvent *)
 extern "C"
-void* callback_ZN13QHistoryState5eventEP6QEvent = 0;
+void* callback_ZN13QHistoryState5eventEP6QEvent_fnptr = 0;
 extern "C" void set_callback_ZN13QHistoryState5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QHistoryState5eventEP6QEvent = cbfn; }
+{ callback_ZN13QHistoryState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQHistoryState : public QHistoryState {
 public:
@@ -39,22 +39,25 @@ MyQHistoryState(QState * parent) : QHistoryState(parent) {}
 MyQHistoryState(QHistoryState::HistoryType type, QState * parent) : QHistoryState(type, parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    if (callback_ZN13QHistoryState7onEntryEP6QEvent != 0) {
-      // callback_ZN13QHistoryState7onEntryEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QHistoryState7onEntryEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QHistoryState::onEntry(event);
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    if (callback_ZN13QHistoryState6onExitEP6QEvent != 0) {
-      // callback_ZN13QHistoryState6onExitEP6QEvent(event);
+    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QHistoryState6onExitEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , event);
     }
     QHistoryState::onExit(event);
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    if (callback_ZN13QHistoryState5eventEP6QEvent != 0) {
-      // callback_ZN13QHistoryState5eventEP6QEvent(e);
+    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QHistoryState5eventEP6QEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , e);
     }
     return QHistoryState::event(e);
   }

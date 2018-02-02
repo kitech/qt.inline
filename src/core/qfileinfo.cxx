@@ -33,22 +33,22 @@ void* C_ZN9QFileInfoC2Ev() {
 // /usr/include/qt/QtCore/qfileinfo.h:63
 // [-2] void QFileInfo(const class QString &)
 extern "C"
-void* C_ZN9QFileInfoC2ERK7QString(const QString & file) {
-  return  new QFileInfo(file);
+void* C_ZN9QFileInfoC2ERK7QString(QString* file) {
+  return  new QFileInfo(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:64
 // [-2] void QFileInfo(const class QFile &)
 extern "C"
-void* C_ZN9QFileInfoC2ERK5QFile(const QFile & file) {
-  return  new QFileInfo(file);
+void* C_ZN9QFileInfoC2ERK5QFile(QFile* file) {
+  return  new QFileInfo(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:65
 // [-2] void QFileInfo(const class QDir &, const class QString &)
 extern "C"
-void* C_ZN9QFileInfoC2ERK4QDirRK7QString(const QDir & dir, const QString & file) {
-  return  new QFileInfo(dir, file);
+void* C_ZN9QFileInfoC2ERK4QDirRK7QString(QDir* dir, QString* file) {
+  return  new QFileInfo(*dir, *file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:67
@@ -61,29 +61,29 @@ void C_ZN9QFileInfoD2Ev(void *this_) {
 // /usr/include/qt/QtCore/qfileinfo.h:74
 // [-2] void swap(class QFileInfo &)
 extern "C"
-void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo & other) {
-  ((QFileInfo*)this_)->swap(other);
+void C_ZN9QFileInfo4swapERS_(void *this_, QFileInfo* other) {
+  ((QFileInfo*)this_)->swap(*other);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:80
 // [-2] void setFile(const class QString &)
 extern "C"
-void C_ZN9QFileInfo7setFileERK7QString(void *this_, const QString & file) {
-  ((QFileInfo*)this_)->setFile(file);
+void C_ZN9QFileInfo7setFileERK7QString(void *this_, QString* file) {
+  ((QFileInfo*)this_)->setFile(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:81
 // [-2] void setFile(const class QFile &)
 extern "C"
-void C_ZN9QFileInfo7setFileERK5QFile(void *this_, const QFile & file) {
-  ((QFileInfo*)this_)->setFile(file);
+void C_ZN9QFileInfo7setFileERK5QFile(void *this_, QFile* file) {
+  ((QFileInfo*)this_)->setFile(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:82
 // [-2] void setFile(const class QDir &, const class QString &)
 extern "C"
-void C_ZN9QFileInfo7setFileERK4QDirRK7QString(void *this_, const QDir & dir, const QString & file) {
-  ((QFileInfo*)this_)->setFile(dir, file);
+void C_ZN9QFileInfo7setFileERK4QDirRK7QString(void *this_, QDir* dir, QString* file) {
+  ((QFileInfo*)this_)->setFile(*dir, *file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:83
@@ -96,8 +96,8 @@ bool C_ZNK9QFileInfo6existsEv(void *this_) {
 // /usr/include/qt/QtCore/qfileinfo.h:84
 // [1] bool exists(const class QString &)
 extern "C"
-bool C_ZN9QFileInfo6existsERK7QString(const QString & file) {
-  return (bool)QFileInfo::exists(file);
+bool C_ZN9QFileInfo6existsERK7QString(QString* file) {
+  return (bool)QFileInfo::exists(*file);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:85

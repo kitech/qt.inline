@@ -12,9 +12,9 @@
 // /usr/include/qt/QtCore/qtimer.h:200
 // [-2] void timerEvent(class QTimerEvent *)
 extern "C"
-void* callback_ZN6QTimer10timerEventEP11QTimerEvent = 0;
+void* callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr = 0;
 extern "C" void set_callback_ZN6QTimer10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN6QTimer10timerEventEP11QTimerEvent = cbfn; }
+{ callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQTimer : public QTimer {
 public:
@@ -23,8 +23,9 @@ public:
 MyQTimer(QObject * parent) : QTimer(parent) {}
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
-    if (callback_ZN6QTimer10timerEventEP11QTimerEvent != 0) {
-      // callback_ZN6QTimer10timerEventEP11QTimerEvent(arg0);
+    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr));
+    if (fnptr != 0) {
+      fnptr(this , arg0);
     }
     QTimer::timerEvent(arg0);
   }
