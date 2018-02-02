@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QInputEvent is pure virtual: false
 // QInputEvent has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQInputEvent : public QInputEvent {
 public:
   virtual ~MyQInputEvent() {}
+// void QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
+MyQInputEvent(QEvent::Type type, QFlags<Qt::KeyboardModifier> modifiers) : QInputEvent(type, modifiers) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:71
+// [-2] void QInputEvent(enum QEvent::Type, Qt::KeyboardModifiers)
+extern "C"
+void* C_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type, QFlags<Qt::KeyboardModifier> modifiers) {
+  return  new QInputEvent(type, modifiers);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:72
 // [-2] void ~QInputEvent()
@@ -27,6 +37,13 @@ void C_ZN11QInputEventD2Ev(void *this_) {
 extern "C"
 Qt::KeyboardModifiers C_ZNK11QInputEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QInputEvent*)this_)->modifiers();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:74
+// [-2] void setModifiers(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> amodifiers) {
+  ((QInputEvent*)this_)->setModifiers(amodifiers);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:75

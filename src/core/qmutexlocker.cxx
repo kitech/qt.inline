@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmutex.h
 #include <qmutex.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMutexLocker is pure virtual: false
 // QMutexLocker has virtual projected: false

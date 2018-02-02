@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcoreevent.h
 #include <qcoreevent.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDeferredDeleteEvent is pure virtual: false
 // QDeferredDeleteEvent has virtual projected: false

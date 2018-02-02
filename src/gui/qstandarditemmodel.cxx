@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #include <qstandarditemmodel.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QStandardItemModel is pure virtual: false
 // QStandardItemModel has virtual projected: false

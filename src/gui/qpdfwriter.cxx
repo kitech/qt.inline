@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qpdfwriter.h
 #include <qpdfwriter.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPdfWriter is pure virtual: false
 // QPdfWriter has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpdfwriter.h:95
-// [8] QPaintEngine * paintEngine()
-extern "C"
-void* callback_ZNK10QPdfWriter11paintEngineEv_fnptr = 0;
-extern "C" void set_callback_ZNK10QPdfWriter11paintEngineEv(void*cbfn)
-{ callback_ZNK10QPdfWriter11paintEngineEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpdfwriter.h:96
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
-void* callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-extern "C" void set_callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
+// void* callback_ZNK10QPdfWriter11paintEngineEv_fnptr = 0;
+// extern "C" void set_callback_ZNK10QPdfWriter11paintEngineEv(void*cbfn)
+// { callback_ZNK10QPdfWriter11paintEngineEv_fnptr = cbfn; }
+// void* callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
+// extern "C" void set_callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
+// { callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 
 class MyQPdfWriter : public QPdfWriter {
 public:
@@ -32,19 +25,33 @@ MyQPdfWriter(const QString & filename) : QPdfWriter(filename) {}
 MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
 // QPaintEngine * paintEngine()
   virtual QPaintEngine * paintEngine() {
-    auto fnptr = ((QPaintEngine * (*)(void* ))(callback_ZNK10QPdfWriter11paintEngineEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEngine", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QPaintEngine *)(irv);
+      // PointerPointerQPaintEngine *
+    } else {
+    // auto fnptr = ((QPaintEngine * (*)(void* ))(callback_ZNK10QPdfWriter11paintEngineEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QPdfWriter::paintEngine();
+  }
   }
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric id) {
-    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , id);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , id);
+    // }
     return QPdfWriter::metric(id);
+  }
   }
 };
 

@@ -2,33 +2,22 @@
 // /usr/include/qt/QtWidgets/qsplashscreen.h
 #include <qsplashscreen.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSplashScreen is pure virtual: false
 // QSplashScreen has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplashscreen.h:76
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QSplashScreen5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplashscreen.h:77
-// [-2] void drawContents(class QPainter *)
-extern "C"
-void* callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = 0;
-extern "C" void set_callback_ZN13QSplashScreen12drawContentsEP8QPainter(void*cbfn)
-{ callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplashscreen.h:78
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QSplashScreen5eventEP6QEvent(void*cbfn)
+// { callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = 0;
+// extern "C" void set_callback_ZN13QSplashScreen12drawContentsEP8QPainter(void*cbfn)
+// { callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = cbfn; }
+// void* callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 
 class MyQSplashScreen : public QSplashScreen {
 public:
@@ -39,27 +28,46 @@ MyQSplashScreen(const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScree
 MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType> f) : QSplashScreen(parent, pixmap, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QSplashScreen5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QSplashScreen5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QSplashScreen::event(e);
+  }
   }
 // void drawContents(class QPainter *)
   virtual void drawContents(QPainter * painter) {
-    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawContents", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter);
+    // }
     QSplashScreen::drawContents(painter);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplashScreen::mousePressEvent(arg0);
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfileinfo.h
 #include <qfileinfo.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFileInfo is pure virtual: false
 // QFileInfo has virtual projected: false
@@ -354,6 +355,13 @@ return new QString(rv);
 extern "C"
 uint C_ZNK9QFileInfo7groupIdEv(void *this_) {
   return (uint)((QFileInfo*)this_)->groupId();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:127
+// [1] bool permission(class QFile::Permissions)
+extern "C"
+bool C_ZNK9QFileInfo10permissionE6QFlagsIN11QFileDevice10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissions) {
+  return (bool)((QFileInfo*)this_)->permission(permissions);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:128

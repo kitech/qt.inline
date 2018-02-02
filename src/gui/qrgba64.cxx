@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qrgba64.h
 #include <qrgba64.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRgba64 is pure virtual: false
 // QRgba64 has virtual projected: false

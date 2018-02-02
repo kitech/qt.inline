@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessiblebridge.h
 #include <qaccessiblebridge.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessibleBridge is pure virtual: true
 // QAccessibleBridge has virtual projected: false

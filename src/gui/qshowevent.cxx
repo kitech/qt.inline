@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QShowEvent is pure virtual: false
 // QShowEvent has virtual projected: false

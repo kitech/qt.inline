@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qpicture.h
 #include <qpicture.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPicture is pure virtual: false
 // QPicture has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:106
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
-void* callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-extern "C" void set_callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
+// void* callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
+// extern "C" void set_callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
+// { callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 
 class MyQPicture : public QPicture {
 public:
@@ -23,11 +20,18 @@ public:
 MyQPicture(int formatVersion) : QPicture(formatVersion) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric m) {
-    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , m);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)m, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , m);
+    // }
     return QPicture::metric(m);
+  }
   }
 };
 

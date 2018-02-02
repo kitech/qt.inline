@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmutex.h
 #include <qmutex.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QBasicMutex is pure virtual: false
 // QBasicMutex has virtual projected: false

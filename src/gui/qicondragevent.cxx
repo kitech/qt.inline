@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QIconDragEvent is pure virtual: false
 // QIconDragEvent has virtual projected: false

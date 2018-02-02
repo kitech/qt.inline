@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionTabWidgetFrame is pure virtual: false
 // QStyleOptionTabWidgetFrame has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:176
-// [-2] void QStyleOptionTabWidgetFrame(int)
-extern "C"
-void* callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN26QStyleOptionTabWidgetFrameC1Ei(void*cbfn)
-{ callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = cbfn; }
+// void* callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN26QStyleOptionTabWidgetFrameC1Ei(void*cbfn)
+// { callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
 public:

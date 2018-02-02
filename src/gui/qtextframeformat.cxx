@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextFrameFormat is pure virtual: false
 // QTextFrameFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:852
-// [-2] void QTextFrameFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN16QTextFrameFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN16QTextFrameFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextFrameFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN16QTextFrameFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN16QTextFrameFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN16QTextFrameFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextFrameFormat : public QTextFrameFormat {
 public:

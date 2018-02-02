@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessible.h
 #include <qaccessible.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessibleValueChangeEvent is pure virtual: false
 // QAccessibleValueChangeEvent has virtual projected: false

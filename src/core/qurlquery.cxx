@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qurlquery.h
 #include <qurlquery.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QUrlQuery is pure virtual: false
 // QUrlQuery has virtual projected: false

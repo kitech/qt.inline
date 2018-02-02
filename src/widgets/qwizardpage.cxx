@@ -2,40 +2,25 @@
 // /usr/include/qt/QtWidgets/qwizard.h
 #include <qwizard.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QWizardPage is pure virtual: false
 // QWizardPage has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:244
-// [-2] void setField(const class QString &, const class QVariant &)
-extern "C"
-void* callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = 0;
-extern "C" void set_callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void*cbfn)
-{ callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:245
-// [16] QVariant field(const class QString &)
-extern "C"
-void* callback_ZNK11QWizardPage5fieldERK7QString_fnptr = 0;
-extern "C" void set_callback_ZNK11QWizardPage5fieldERK7QString(void*cbfn)
-{ callback_ZNK11QWizardPage5fieldERK7QString_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:246
-// [-2] void registerField(const class QString &, class QWidget *, const char *, const char *)
-extern "C"
-void* callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = 0;
-extern "C" void set_callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(void*cbfn)
-{ callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:248
-// [8] QWizard * wizard()
-extern "C"
-void* callback_ZNK11QWizardPage6wizardEv_fnptr = 0;
-extern "C" void set_callback_ZNK11QWizardPage6wizardEv(void*cbfn)
-{ callback_ZNK11QWizardPage6wizardEv_fnptr = cbfn; }
+// void* callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = 0;
+// extern "C" void set_callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void*cbfn)
+// { callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = cbfn; }
+// void* callback_ZNK11QWizardPage5fieldERK7QString_fnptr = 0;
+// extern "C" void set_callback_ZNK11QWizardPage5fieldERK7QString(void*cbfn)
+// { callback_ZNK11QWizardPage5fieldERK7QString_fnptr = cbfn; }
+// void* callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = 0;
+// extern "C" void set_callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(void*cbfn)
+// { callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = cbfn; }
+// void* callback_ZNK11QWizardPage6wizardEv_fnptr = 0;
+// extern "C" void set_callback_ZNK11QWizardPage6wizardEv(void*cbfn)
+// { callback_ZNK11QWizardPage6wizardEv_fnptr = cbfn; }
 
 class MyQWizardPage : public QWizardPage {
 public:
@@ -44,35 +29,61 @@ public:
 MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
 // void setField(const class QString &, const class QVariant &)
   virtual void setField(const QString & name, const QVariant & value) {
-    auto fnptr = ((void (*)(void* , QString*, QVariant*))(callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&name, (QVariant*)&value);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setField", &handled, 2, (uint64_t)&name, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*, QVariant*))(callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&name, (QVariant*)&value);
+    // }
     QWizardPage::setField(name, value);
+  }
   }
 // QVariant field(const class QString &)
   virtual QVariant field(const QString & name) {
-    auto fnptr = ((QVariant (*)(void* , QString*))(callback_ZNK11QWizardPage5fieldERK7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&name);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"field", &handled, 1, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , QString*))(callback_ZNK11QWizardPage5fieldERK7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&name);
+    // }
     return QWizardPage::field(name);
+  }
   }
 // void registerField(const class QString &, class QWidget *, const char *, const char *)
   virtual void registerField(const QString & name, QWidget * widget, const char * property, const char * changedSignal) {
-    auto fnptr = ((void (*)(void* , QString*, QWidget *, const char *, const char *))(callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&name, widget, property, changedSignal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"registerField", &handled, 4, (uint64_t)&name, (uint64_t)widget, (uint64_t)property, (uint64_t)changedSignal, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*, QWidget *, const char *, const char *))(callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&name, widget, property, changedSignal);
+    // }
     QWizardPage::registerField(name, widget, property, changedSignal);
+  }
   }
 // QWizard * wizard()
   virtual QWizard * wizard() {
-    auto fnptr = ((QWizard * (*)(void* ))(callback_ZNK11QWizardPage6wizardEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"wizard", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QWizard *)(irv);
+      // PointerPointerQWizard *
+    } else {
+    // auto fnptr = ((QWizard * (*)(void* ))(callback_ZNK11QWizardPage6wizardEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QWizardPage::wizard();
+  }
   }
 };
 

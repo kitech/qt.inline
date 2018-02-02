@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qstatictext.h
 #include <qstatictext.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QStaticText is pure virtual: false
 // QStaticText has virtual projected: false

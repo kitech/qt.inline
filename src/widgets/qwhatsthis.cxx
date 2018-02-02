@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qwhatsthis.h
 #include <qwhatsthis.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QWhatsThis is pure virtual: false
 // QWhatsThis has virtual projected: false

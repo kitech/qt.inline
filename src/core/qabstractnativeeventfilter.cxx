@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h
 #include <qabstractnativeeventfilter.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAbstractNativeEventFilter is pure virtual: true
 // QAbstractNativeEventFilter has virtual projected: false

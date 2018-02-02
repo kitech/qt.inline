@@ -2,61 +2,34 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #include <qgraphicseffect.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsEffect is pure virtual: true
 // QGraphicsEffect has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:99
-// [-2] void draw(class QPainter *)
-extern "C"
-void* callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = 0;
-extern "C" void set_callback_ZN15QGraphicsEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:100
-// [-2] void sourceChanged(QGraphicsEffect::ChangeFlags)
-extern "C"
-void* callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = 0;
-extern "C" void set_callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void*cbfn)
-{ callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:101
-// [-2] void updateBoundingRect()
-extern "C"
-void* callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = 0;
-extern "C" void set_callback_ZN15QGraphicsEffect18updateBoundingRectEv(void*cbfn)
-{ callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:103
-// [1] bool sourceIsPixmap()
-extern "C"
-void* callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = 0;
-extern "C" void set_callback_ZNK15QGraphicsEffect14sourceIsPixmapEv(void*cbfn)
-{ callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:104
-// [32] QRectF sourceBoundingRect(Qt::CoordinateSystem)
-extern "C"
-void* callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = 0;
-extern "C" void set_callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(void*cbfn)
-{ callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:105
-// [-2] void drawSource(class QPainter *)
-extern "C"
-void* callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = 0;
-extern "C" void set_callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(void*cbfn)
-{ callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:106
-// [32] QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
-extern "C"
-void* callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = 0;
-extern "C" void set_callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(void*cbfn)
-{ callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = cbfn; }
+// void* callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = 0;
+// extern "C" void set_callback_ZN15QGraphicsEffect4drawEP8QPainter(void*cbfn)
+// { callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = cbfn; }
+// void* callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void*cbfn)
+// { callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = cbfn; }
+// void* callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = 0;
+// extern "C" void set_callback_ZN15QGraphicsEffect18updateBoundingRectEv(void*cbfn)
+// { callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = cbfn; }
+// void* callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = 0;
+// extern "C" void set_callback_ZNK15QGraphicsEffect14sourceIsPixmapEv(void*cbfn)
+// { callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = cbfn; }
+// void* callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = 0;
+// extern "C" void set_callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(void*cbfn)
+// { callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = cbfn; }
+// void* callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = 0;
+// extern "C" void set_callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(void*cbfn)
+// { callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = cbfn; }
+// void* callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = 0;
+// extern "C" void set_callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(void*cbfn)
+// { callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = cbfn; }
 
 class MyQGraphicsEffect : public QGraphicsEffect {
 public:
@@ -65,59 +38,104 @@ public:
 MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter);
+    // }
     QGraphicsEffect::draw(painter);
+  }
   }
 // void sourceChanged(QGraphicsEffect::ChangeFlags)
   virtual void sourceChanged(QFlags<QGraphicsEffect::ChangeFlag> flags) {
-    auto fnptr = ((void (*)(void* , QFlags<QGraphicsEffect::ChangeFlag>))(callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , flags);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceChanged", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFlags<QGraphicsEffect::ChangeFlag>))(callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , flags);
+    // }
     QGraphicsEffect::sourceChanged(flags);
+  }
   }
 // void updateBoundingRect()
   virtual void updateBoundingRect() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateBoundingRect", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QGraphicsEffect::updateBoundingRect();
+  }
   }
 // bool sourceIsPixmap()
   virtual bool sourceIsPixmap() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceIsPixmap", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QGraphicsEffect::sourceIsPixmap();
+  }
   }
 // QRectF sourceBoundingRect(Qt::CoordinateSystem)
   virtual QRectF sourceBoundingRect(Qt::CoordinateSystem system) {
-    auto fnptr = ((QRectF (*)(void* , Qt::CoordinateSystem))(callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , system);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sourceBoundingRect", &handled, 1, (uint64_t)system, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QRectF*)(irv);
+      // RecordRecordQRectF
+    } else {
+    // auto fnptr = ((QRectF (*)(void* , Qt::CoordinateSystem))(callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , system);
+    // }
     return QGraphicsEffect::sourceBoundingRect(system);
+  }
   }
 // void drawSource(class QPainter *)
   virtual void drawSource(QPainter * painter) {
-    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawSource", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter);
+    // }
     QGraphicsEffect::drawSource(painter);
+  }
   }
 // QPixmap sourcePixmap(Qt::CoordinateSystem, class QPoint *, enum QGraphicsEffect::PixmapPadMode)
   virtual QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint * offset, QGraphicsEffect::PixmapPadMode mode) {
-    auto fnptr = ((QPixmap (*)(void* , Qt::CoordinateSystem, QPoint *, QGraphicsEffect::PixmapPadMode))(callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , system, offset, mode);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sourcePixmap", &handled, 3, (uint64_t)system, (uint64_t)offset, (uint64_t)mode, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QPixmap*)(irv);
+      // RecordRecordQPixmap
+    } else {
+    // auto fnptr = ((QPixmap (*)(void* , Qt::CoordinateSystem, QPoint *, QGraphicsEffect::PixmapPadMode))(callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , system, offset, mode);
+    // }
     return QGraphicsEffect::sourcePixmap(system, offset, mode);
+  }
   }
 };
 

@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qtextdocument.h
 #include <qtextdocument.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextDocument is pure virtual: false
 // QTextDocument has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:292
-// [8] QTextObject * createObject(const class QTextFormat &)
-extern "C"
-void* callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN13QTextDocument12createObjectERK11QTextFormat(void*cbfn)
-{ callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:293
-// [16] QVariant loadResource(int, const class QUrl &)
-extern "C"
-void* callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = 0;
-extern "C" void set_callback_ZN13QTextDocument12loadResourceEiRK4QUrl(void*cbfn)
-{ callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = cbfn; }
+// void* callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN13QTextDocument12createObjectERK11QTextFormat(void*cbfn)
+// { callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = 0;
+// extern "C" void set_callback_ZN13QTextDocument12loadResourceEiRK4QUrl(void*cbfn)
+// { callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = cbfn; }
 
 class MyQTextDocument : public QTextDocument {
 public:
@@ -32,19 +25,33 @@ MyQTextDocument(QObject * parent) : QTextDocument(parent) {}
 MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, parent) {}
 // QTextObject * createObject(const class QTextFormat &)
   virtual QTextObject * createObject(const QTextFormat & f) {
-    auto fnptr = ((QTextObject * (*)(void* , QTextFormat*))(callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QTextFormat*)&f);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"createObject", &handled, 1, (uint64_t)&f, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QTextObject *)(irv);
+      // PointerPointerQTextObject *
+    } else {
+    // auto fnptr = ((QTextObject * (*)(void* , QTextFormat*))(callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QTextFormat*)&f);
+    // }
     return QTextDocument::createObject(f);
+  }
   }
 // QVariant loadResource(int, const class QUrl &)
   virtual QVariant loadResource(int type, const QUrl & name) {
-    auto fnptr = ((QVariant (*)(void* , int, QUrl*))(callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , type, (QUrl*)&name);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"loadResource", &handled, 2, (uint64_t)type, (uint64_t)&name, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , int, QUrl*))(callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , type, (QUrl*)&name);
+    // }
     return QTextDocument::loadResource(type, name);
+  }
   }
 };
 

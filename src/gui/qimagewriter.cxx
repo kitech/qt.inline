@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimagewriter.h
 #include <qimagewriter.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QImageWriter is pure virtual: false
 // QImageWriter has virtual projected: false
@@ -183,6 +184,13 @@ bool C_ZNK12QImageWriter20progressiveScanWriteEv(void *this_) {
 extern "C"
 QImageIOHandler::Transformations C_ZNK12QImageWriter14transformationEv(void *this_) {
   return (QImageIOHandler::Transformations)((QImageWriter*)this_)->transformation();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:101
+// [-2] void setTransformation(class QImageIOHandler::Transformations)
+extern "C"
+void C_ZN12QImageWriter17setTransformationE6QFlagsIN15QImageIOHandler14TransformationEE(void *this_, QFlags<QImageIOHandler::Transformation> orientation) {
+  ((QImageWriter*)this_)->setTransformation(orientation);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimagewriter.h:104

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsignalmapper.h
 #include <qsignalmapper.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSignalMapper is pure virtual: false
 // QSignalMapper has virtual projected: false

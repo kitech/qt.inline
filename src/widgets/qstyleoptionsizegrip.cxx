@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionSizeGrip is pure virtual: false
 // QStyleOptionSizeGrip has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:656
-// [-2] void QStyleOptionSizeGrip(int)
-extern "C"
-void* callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN20QStyleOptionSizeGripC1Ei(void*cbfn)
-{ callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = cbfn; }
+// void* callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN20QStyleOptionSizeGripC1Ei(void*cbfn)
+// { callback_ZN20QStyleOptionSizeGripC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSizeGrip : public QStyleOptionSizeGrip {
 public:

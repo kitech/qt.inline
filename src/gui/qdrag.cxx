@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qdrag.h
 #include <qdrag.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QDrag is pure virtual: false
 // QDrag has virtual projected: false
@@ -94,6 +95,27 @@ void* C_ZNK5QDrag6sourceEv(void *this_) {
 extern "C"
 void* C_ZNK5QDrag6targetEv(void *this_) {
   return (void*)((QDrag*)this_)->target();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qdrag.h:77
+// [4] Qt::DropAction start(Qt::DropActions)
+extern "C"
+Qt::DropAction C_ZN5QDrag5startE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> supportedActions) {
+  return (Qt::DropAction)((QDrag*)this_)->start(supportedActions);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qdrag.h:78
+// [4] Qt::DropAction exec(Qt::DropActions)
+extern "C"
+Qt::DropAction C_ZN5QDrag4execE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> supportedActions) {
+  return (Qt::DropAction)((QDrag*)this_)->exec(supportedActions);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qdrag.h:79
+// [4] Qt::DropAction exec(Qt::DropActions, Qt::DropAction)
+extern "C"
+Qt::DropAction C_ZN5QDrag4execE6QFlagsIN2Qt10DropActionEES2_(void *this_, QFlags<Qt::DropAction> supportedActions, Qt::DropAction defaultAction) {
+  return (Qt::DropAction)((QDrag*)this_)->exec(supportedActions, defaultAction);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qdrag.h:81

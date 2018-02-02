@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #include <qabstractitemmodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAbstractTableModel is pure virtual: false
 // QAbstractTableModel has virtual projected: false

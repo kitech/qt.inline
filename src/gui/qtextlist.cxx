@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextlist.h
 #include <qtextlist.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextList is pure virtual: false
 // QTextList has virtual projected: false

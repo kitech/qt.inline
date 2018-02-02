@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPaintEvent is pure virtual: false
 // QPaintEvent has virtual projected: false

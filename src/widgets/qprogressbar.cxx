@@ -2,33 +2,22 @@
 // /usr/include/qt/QtWidgets/qprogressbar.h
 #include <qprogressbar.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QProgressBar is pure virtual: false
 // QProgressBar has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressbar.h:112
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN12QProgressBar5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN12QProgressBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN12QProgressBar5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressbar.h:113
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN12QProgressBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressbar.h:114
-// [-2] void initStyleOption(class QStyleOptionProgressBar *)
-extern "C"
-void* callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = 0;
-extern "C" void set_callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void*cbfn)
-{ callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = cbfn; }
+// void* callback_ZN12QProgressBar5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN12QProgressBar5eventEP6QEvent(void*cbfn)
+// { callback_ZN12QProgressBar5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN12QProgressBar10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = 0;
+// extern "C" void set_callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void*cbfn)
+// { callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = cbfn; }
 
 class MyQProgressBar : public QProgressBar {
 public:
@@ -37,27 +26,46 @@ public:
 MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QProgressBar5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QProgressBar5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QProgressBar::event(e);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QProgressBar::paintEvent(arg0);
+  }
   }
 // void initStyleOption(class QStyleOptionProgressBar *)
   virtual void initStyleOption(QStyleOptionProgressBar * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionProgressBar *))(callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionProgressBar *))(callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QProgressBar::initStyleOption(option);
+  }
   }
 };
 
@@ -132,6 +140,13 @@ bool C_ZNK12QProgressBar13isTextVisibleEv(void *this_) {
 extern "C"
 Qt::Alignment C_ZNK12QProgressBar9alignmentEv(void *this_) {
   return (Qt::Alignment)((QProgressBar*)this_)->alignment();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qprogressbar.h:84
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN12QProgressBar12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QProgressBar*)this_)->setAlignment(alignment);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qprogressbar.h:86

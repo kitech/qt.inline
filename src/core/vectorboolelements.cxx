@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetatype.h
 #include <qmetatype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // VectorBoolElements is pure virtual: false
 // VectorBoolElements has virtual projected: false

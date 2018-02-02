@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #include <qgraphicsitemanimation.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsItemAnimation is pure virtual: false
 // QGraphicsItemAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:102
-// [-2] void beforeAnimationStep(qreal)
-extern "C"
-void* callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = 0;
-extern "C" void set_callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void*cbfn)
-{ callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:103
-// [-2] void afterAnimationStep(qreal)
-extern "C"
-void* callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = 0;
-extern "C" void set_callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void*cbfn)
-{ callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = cbfn; }
+// void* callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = 0;
+// extern "C" void set_callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void*cbfn)
+// { callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = cbfn; }
+// void* callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = 0;
+// extern "C" void set_callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void*cbfn)
+// { callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = cbfn; }
 
 class MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
@@ -30,19 +23,31 @@ public:
 MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
 // void beforeAnimationStep(qreal)
   virtual void beforeAnimationStep(qreal step) {
-    auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , step);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"beforeAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , step);
+    // }
     QGraphicsItemAnimation::beforeAnimationStep(step);
+  }
   }
 // void afterAnimationStep(qreal)
   virtual void afterAnimationStep(qreal step) {
-    auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , step);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"afterAnimationStep", &handled, 1, (uint64_t)&step, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , step);
+    // }
     QGraphicsItemAnimation::afterAnimationStep(step);
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdiriterator.h
 #include <qdiriterator.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDirIterator is pure virtual: false
 // QDirIterator has virtual projected: false
@@ -16,6 +17,10 @@ public:
 MyQDirIterator(const QDir & dir, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(dir, flags) {}
 // void QDirIterator(const class QString &, QDirIterator::IteratorFlags)
 MyQDirIterator(const QString & path, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, flags) {}
+// void QDirIterator(const class QString &, class QDir::Filters, QDirIterator::IteratorFlags)
+MyQDirIterator(const QString & path, QFlags<QDir::Filter> filter, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, filter, flags) {}
+// void QDirIterator(const class QString &, const class QStringList &, class QDir::Filters, QDirIterator::IteratorFlags)
+MyQDirIterator(const QString & path, const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) : QDirIterator(path, nameFilters, filters, flags) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -31,6 +36,20 @@ void* C_ZN12QDirIteratorC2ERK4QDir6QFlagsINS_12IteratorFlagEE(QDir* dir, QFlags<
 extern "C"
 void* C_ZN12QDirIteratorC2ERK7QString6QFlagsINS_12IteratorFlagEE(QString* path, QFlags<QDirIterator::IteratorFlag> flags) {
   return  new QDirIterator(*path, flags);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdiriterator.h:61
+// [-2] void QDirIterator(const class QString &, class QDir::Filters, QDirIterator::IteratorFlags)
+extern "C"
+void* C_ZN12QDirIteratorC2ERK7QString6QFlagsIN4QDir6FilterEES3_INS_12IteratorFlagEE(QString* path, QFlags<QDir::Filter> filter, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(*path, filter, flags);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdiriterator.h:64
+// [-2] void QDirIterator(const class QString &, const class QStringList &, class QDir::Filters, QDirIterator::IteratorFlags)
+extern "C"
+void* C_ZN12QDirIteratorC2ERK7QStringRK11QStringList6QFlagsIN4QDir6FilterEES6_INS_12IteratorFlagEE(QString* path, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDirIterator::IteratorFlag> flags) {
+  return  new QDirIterator(*path, *nameFilters, filters, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdiriterator.h:69

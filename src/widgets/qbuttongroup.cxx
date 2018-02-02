@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qbuttongroup.h
 #include <qbuttongroup.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QButtonGroup is pure virtual: false
 // QButtonGroup has virtual projected: false

@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionHeader is pure virtual: false
 // QStyleOptionHeader has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:230
-// [-2] void QStyleOptionHeader(int)
-extern "C"
-void* callback_ZN18QStyleOptionHeaderC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN18QStyleOptionHeaderC1Ei(void*cbfn)
-{ callback_ZN18QStyleOptionHeaderC1Ei_fnptr = cbfn; }
+// void* callback_ZN18QStyleOptionHeaderC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN18QStyleOptionHeaderC1Ei(void*cbfn)
+// { callback_ZN18QStyleOptionHeaderC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionHeader : public QStyleOptionHeader {
 public:

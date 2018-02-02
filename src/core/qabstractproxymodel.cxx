@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qabstractproxymodel.h
 #include <qabstractproxymodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAbstractProxyModel is pure virtual: true
 // QAbstractProxyModel has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractproxymodel.h:104
-// [-2] void resetInternalData()
-extern "C"
-void* callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = 0;
-extern "C" void set_callback_ZN19QAbstractProxyModel17resetInternalDataEv(void*cbfn)
-{ callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = cbfn; }
+// void* callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = 0;
+// extern "C" void set_callback_ZN19QAbstractProxyModel17resetInternalDataEv(void*cbfn)
+// { callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = cbfn; }
 
 class MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
@@ -23,11 +20,17 @@ public:
 MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
 // void resetInternalData()
   virtual void resetInternalData() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resetInternalData", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QAbstractProxyModel::resetInternalData();
+  }
   }
 };
 

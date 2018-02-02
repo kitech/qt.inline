@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h
 #include <qabstractitemdelegate.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QAbstractItemDelegate is pure virtual: true
 // QAbstractItemDelegate has virtual projected: false

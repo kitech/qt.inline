@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qvalidator.h
 #include <qvalidator.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRegExpValidator is pure virtual: false
 // QRegExpValidator has virtual projected: false

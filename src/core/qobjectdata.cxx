@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qobject.h
 #include <qobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QObjectData is pure virtual: true
 // QObjectData has virtual projected: false

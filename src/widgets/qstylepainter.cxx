@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstylepainter.h
 #include <qstylepainter.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStylePainter is pure virtual: false
 // QStylePainter has virtual projected: false

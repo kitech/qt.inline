@@ -2,109 +2,125 @@
 // /usr/include/qt/QtWidgets/qmessagebox.h
 #include <qmessagebox.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QMessageBox is pure virtual: false
 // QMessageBox has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:293
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QMessageBox5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QMessageBox5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:294
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:295
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:296
-// [-2] void closeEvent(class QCloseEvent *)
-extern "C"
-void* callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:297
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:298
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMessageBox11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QMessageBox5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox10closeEventEP11QCloseEvent(void*cbfn)
+// { callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMessageBox11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQMessageBox : public QMessageBox {
 public:
   virtual ~MyQMessageBox() {}
 // void QMessageBox(class QWidget *)
 MyQMessageBox(QWidget * parent) : QMessageBox(parent) {}
+// void QMessageBox(enum QMessageBox::Icon, const class QString &, const class QString &, QMessageBox::StandardButtons, class QWidget *, Qt::WindowFlags)
+MyQMessageBox(QMessageBox::Icon icon, const QString & title, const QString & text, QFlags<QMessageBox::StandardButton> buttons, QWidget * parent, QFlags<Qt::WindowType> flags) : QMessageBox(icon, title, text, buttons, parent, flags) {}
 // void QMessageBox(const class QString &, const class QString &, enum QMessageBox::Icon, int, int, int, class QWidget *, Qt::WindowFlags)
 MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) : QMessageBox(title, text, icon, button0, button1, button2, parent, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMessageBox5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMessageBox5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QMessageBox::event(e);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMessageBox::resizeEvent(event);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMessageBox::showEvent(event);
+  }
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMessageBox::closeEvent(event);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMessageBox::keyPressEvent(event);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMessageBox::changeEvent(event);
+  }
   }
 };
 
@@ -122,6 +138,14 @@ extern "C"
 void* C_ZN11QMessageBoxC2EP7QWidget(QWidget * parent) {
   auto _nilp = (MyQMessageBox*)(0);
   return  new MyQMessageBox(parent);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:136
+// [-2] void QMessageBox(enum QMessageBox::Icon, const class QString &, const class QString &, QMessageBox::StandardButtons, class QWidget *, Qt::WindowFlags)
+extern "C"
+void* C_ZN11QMessageBoxC2ENS_4IconERK7QStringS3_6QFlagsINS_14StandardButtonEEP7QWidgetS4_IN2Qt10WindowTypeEE(QMessageBox::Icon icon, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QWidget * parent, QFlags<Qt::WindowType> flags) {
+  auto _nilp = (MyQMessageBox*)(0);
+  return  new MyQMessageBox(icon, *title, *text, buttons, parent, flags);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:139
@@ -171,6 +195,13 @@ void C_ZN11QMessageBox4openEP7QObjectPKc(void *this_, QObject * receiver, const 
 extern "C"
 QMessageBox::ButtonRole C_ZNK11QMessageBox10buttonRoleEP15QAbstractButton(void *this_, QAbstractButton * button) {
   return (QMessageBox::ButtonRole)((QMessageBox*)this_)->buttonRole(button);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:152
+// [-2] void setStandardButtons(QMessageBox::StandardButtons)
+extern "C"
+void C_ZN11QMessageBox18setStandardButtonsE6QFlagsINS_14StandardButtonEE(void *this_, QFlags<QMessageBox::StandardButton> buttons) {
+  ((QMessageBox*)this_)->setStandardButtons(buttons);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:153
@@ -328,6 +359,34 @@ void C_ZN11QMessageBox11setCheckBoxEP9QCheckBox(void *this_, QCheckBox * cb) {
 extern "C"
 void* C_ZNK11QMessageBox8checkBoxEv(void *this_) {
   return (void*)((QMessageBox*)this_)->checkBox();
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:185
+// [4] QMessageBox::StandardButton information(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
+extern "C"
+QMessageBox::StandardButton C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
+  return (QMessageBox::StandardButton)QMessageBox::information(parent, *title, *text, buttons, defaultButton);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:188
+// [4] QMessageBox::StandardButton question(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
+extern "C"
+QMessageBox::StandardButton C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
+  return (QMessageBox::StandardButton)QMessageBox::question(parent, *title, *text, buttons, defaultButton);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:191
+// [4] QMessageBox::StandardButton warning(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
+extern "C"
+QMessageBox::StandardButton C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
+  return (QMessageBox::StandardButton)QMessageBox::warning(parent, *title, *text, buttons, defaultButton);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:194
+// [4] QMessageBox::StandardButton critical(class QWidget *, const class QString &, const class QString &, QMessageBox::StandardButtons, enum QMessageBox::StandardButton)
+extern "C"
+QMessageBox::StandardButton C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
+  return (QMessageBox::StandardButton)QMessageBox::critical(parent, *title, *text, buttons, defaultButton);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:197

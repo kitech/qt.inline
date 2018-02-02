@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimagereader.h
 #include <qimagereader.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QImageReader is pure virtual: false
 // QImageReader has virtual projected: false

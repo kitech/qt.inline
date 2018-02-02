@@ -2,54 +2,31 @@
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h
 #include <qabstracttextdocumentlayout.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAbstractTextDocumentLayout is pure virtual: true
 // QAbstractTextDocumentLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:115
-// [-2] void documentChanged(int, int, int)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:117
-// [-2] void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:118
-// [-2] void positionInlineObject(class QTextInlineObject, int, const class QTextFormat &)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:119
-// [-2] void drawInlineObject(class QPainter *, const class QRectF &, class QTextInlineObject, int, const class QTextFormat &)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:121
-// [4] int formatIndex(int)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout11formatIndexEi(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qabstracttextdocumentlayout.h:122
-// [16] QTextCharFormat format(int)
-extern "C"
-void* callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = 0;
-extern "C" void set_callback_ZN27QAbstractTextDocumentLayout6formatEi(void*cbfn)
-{ callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout11formatIndexEi(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = cbfn; }
+// void* callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = 0;
+// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout6formatEi(void*cbfn)
+// { callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = cbfn; }
 
 class MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
 public:
@@ -58,51 +35,89 @@ public:
 MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout(doc) {}
 // void documentChanged(int, int, int)
   virtual void documentChanged(int from, int charsRemoved, int charsAdded) {
-    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , from, charsRemoved, charsAdded);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)charsRemoved, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , from, charsRemoved, charsAdded);
+    // }
     QAbstractTextDocumentLayout::documentChanged(from, charsRemoved, charsAdded);
+  }
   }
 // void resizeInlineObject(class QTextInlineObject, int, const class QTextFormat &)
   virtual void resizeInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
-    auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
+    // }
     QAbstractTextDocumentLayout::resizeInlineObject(item, posInDocument, format);
+  }
   }
 // void positionInlineObject(class QTextInlineObject, int, const class QTextFormat &)
   virtual void positionInlineObject(QTextInlineObject item, int posInDocument, const QTextFormat & format) {
-    auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"positionInlineObject", &handled, 3, (uint64_t)&item, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
+    // }
     QAbstractTextDocumentLayout::positionInlineObject(item, posInDocument, format);
+  }
   }
 // void drawInlineObject(class QPainter *, const class QRectF &, class QTextInlineObject, int, const class QTextFormat &)
   virtual void drawInlineObject(QPainter * painter, const QRectF & rect, QTextInlineObject object, int posInDocument, const QTextFormat & format) {
-    auto fnptr = ((void (*)(void* , QPainter *, QRectF*, QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QRectF*)&rect, (QTextInlineObject*)&object, posInDocument, (QTextFormat*)&format);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawInlineObject", &handled, 5, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&object, (uint64_t)posInDocument, (uint64_t)&format, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QRectF*, QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QRectF*)&rect, (QTextInlineObject*)&object, posInDocument, (QTextFormat*)&format);
+    // }
     QAbstractTextDocumentLayout::drawInlineObject(painter, rect, object, posInDocument, format);
+  }
   }
 // int formatIndex(int)
   virtual int formatIndex(int pos) {
-    auto fnptr = ((int (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , pos);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"formatIndex", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , pos);
+    // }
     return QAbstractTextDocumentLayout::formatIndex(pos);
+  }
   }
 // QTextCharFormat format(int)
   virtual QTextCharFormat format(int pos) {
-    auto fnptr = ((QTextCharFormat (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , pos);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"format", &handled, 1, (uint64_t)pos, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QTextCharFormat*)(irv);
+      // RecordRecordQTextCharFormat
+    } else {
+    // auto fnptr = ((QTextCharFormat (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , pos);
+    // }
     return QAbstractTextDocumentLayout::format(pos);
+  }
   }
 };
 

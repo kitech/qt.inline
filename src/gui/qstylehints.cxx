@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qstylehints.h
 #include <qstylehints.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QStyleHints is pure virtual: false
 // QStyleHints has virtual projected: false

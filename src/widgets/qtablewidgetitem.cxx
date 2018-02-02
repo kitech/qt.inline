@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #include <qtablewidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTableWidgetItem is pure virtual: false
 // QTableWidgetItem has virtual projected: false

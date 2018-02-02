@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qsurface.h
 #include <qsurface.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QSurface is pure virtual: true
 // QSurface has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:85
-// [-2] void QSurface(enum QSurface::SurfaceClass)
-extern "C"
-void* callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = 0;
-extern "C" void set_callback_ZN8QSurfaceC1ENS_12SurfaceClassE(void*cbfn)
-{ callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = cbfn; }
+// void* callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = 0;
+// extern "C" void set_callback_ZN8QSurfaceC1ENS_12SurfaceClassE(void*cbfn)
+// { callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = cbfn; }
 
 class MyQSurface : public QSurface {
 public:

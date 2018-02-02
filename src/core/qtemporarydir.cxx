@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtemporarydir.h
 #include <qtemporarydir.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTemporaryDir is pure virtual: false
 // QTemporaryDir has virtual projected: false

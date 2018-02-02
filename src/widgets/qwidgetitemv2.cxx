@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlayoutitem.h
 #include <qlayoutitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QWidgetItemV2 is pure virtual: false
 // QWidgetItemV2 has virtual projected: false

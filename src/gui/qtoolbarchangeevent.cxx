@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QToolBarChangeEvent is pure virtual: false
 // QToolBarChangeEvent has virtual projected: false

@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qshortcut.h
 #include <qshortcut.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QShortcut is pure virtual: false
 // QShortcut has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qshortcut.h:94
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN9QShortcut5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QShortcut5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QShortcut5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN9QShortcut5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QShortcut5eventEP6QEvent(void*cbfn)
+// { callback_ZN9QShortcut5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQShortcut : public QShortcut {
 public:
@@ -25,11 +22,18 @@ MyQShortcut(QWidget * parent) : QShortcut(parent) {}
 MyQShortcut(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext context) : QShortcut(key, parent, member, ambiguousMember, context) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QShortcut5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QShortcut5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QShortcut::event(e);
+  }
   }
 };
 

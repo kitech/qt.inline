@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qjsonvalue.h
 #include <qjsonvalue.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QJsonValuePtr is pure virtual: false
 // QJsonValuePtr has virtual projected: false

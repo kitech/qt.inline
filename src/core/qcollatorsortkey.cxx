@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcollator.h
 #include <qcollator.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCollatorSortKey is pure virtual: false
 // QCollatorSortKey has virtual projected: false

@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionRubberBand is pure virtual: false
 // QStyleOptionRubberBand has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:495
-// [-2] void QStyleOptionRubberBand(int)
-extern "C"
-void* callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN22QStyleOptionRubberBandC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = cbfn; }
+// void* callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN22QStyleOptionRubberBandC1Ei(void*cbfn)
+// { callback_ZN22QStyleOptionRubberBandC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionRubberBand : public QStyleOptionRubberBand {
 public:

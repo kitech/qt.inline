@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextTableFormat is pure virtual: false
 // QTextTableFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:923
-// [-2] void QTextTableFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN16QTextTableFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN16QTextTableFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN16QTextTableFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextTableFormat : public QTextTableFormat {
 public:
@@ -87,6 +84,13 @@ qreal C_ZNK16QTextTableFormat11cellPaddingEv(void *this_) {
 extern "C"
 void C_ZN16QTextTableFormat14setCellPaddingEd(void *this_, qreal padding) {
   ((QTextTableFormat*)this_)->setCellPadding(padding);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:913
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN16QTextTableFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QTextTableFormat*)this_)->setAlignment(alignment);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:914

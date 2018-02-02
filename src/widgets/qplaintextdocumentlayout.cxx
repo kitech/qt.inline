@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qplaintextedit.h
 #include <qplaintextedit.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QPlainTextDocumentLayout is pure virtual: false
 // QPlainTextDocumentLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qplaintextedit.h:322
-// [-2] void documentChanged(int, int, int)
-extern "C"
-void* callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = 0;
-extern "C" void set_callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(void*cbfn)
-{ callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
+// void* callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = 0;
+// extern "C" void set_callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(void*cbfn)
+// { callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
 
 class MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
@@ -23,11 +20,17 @@ public:
 MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(document) {}
 // void documentChanged(int, int, int)
   virtual void documentChanged(int from, int arg1, int charsAdded) {
-    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , from, arg1, charsAdded);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"documentChanged", &handled, 3, (uint64_t)from, (uint64_t)arg1, (uint64_t)charsAdded, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , from, arg1, charsAdded);
+    // }
     QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
+  }
   }
 };
 

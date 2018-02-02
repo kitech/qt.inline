@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessibleplugin.h
 #include <qaccessibleplugin.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessiblePlugin is pure virtual: true
 // QAccessiblePlugin has virtual projected: false

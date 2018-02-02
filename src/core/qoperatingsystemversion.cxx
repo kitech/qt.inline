@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qoperatingsystemversion.h
 #include <qoperatingsystemversion.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QOperatingSystemVersion is pure virtual: false
 // QOperatingSystemVersion has virtual projected: false

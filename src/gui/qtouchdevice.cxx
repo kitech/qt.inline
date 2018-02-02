@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtouchdevice.h
 #include <qtouchdevice.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTouchDevice is pure virtual: false
 // QTouchDevice has virtual projected: false
@@ -73,6 +74,13 @@ void C_ZN12QTouchDevice7setNameERK7QString(void *this_, QString* name) {
 extern "C"
 void C_ZN12QTouchDevice7setTypeENS_10DeviceTypeE(void *this_, QTouchDevice::DeviceType devType) {
   ((QTouchDevice*)this_)->setType(devType);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtouchdevice.h:85
+// [-2] void setCapabilities(QTouchDevice::Capabilities)
+extern "C"
+void C_ZN12QTouchDevice15setCapabilitiesE6QFlagsINS_14CapabilityFlagEE(void *this_, QFlags<QTouchDevice::CapabilityFlag> caps) {
+  ((QTouchDevice*)this_)->setCapabilities(caps);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtouchdevice.h:86

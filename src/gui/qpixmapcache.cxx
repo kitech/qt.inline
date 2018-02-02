@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpixmapcache.h
 #include <qpixmapcache.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPixmapCache is pure virtual: false
 // QPixmapCache has virtual projected: false

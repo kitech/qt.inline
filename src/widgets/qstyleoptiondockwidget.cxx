@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionDockWidget is pure virtual: false
 // QStyleOptionDockWidget has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:395
-// [-2] void QStyleOptionDockWidget(int)
-extern "C"
-void* callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN22QStyleOptionDockWidgetC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = cbfn; }
+// void* callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN22QStyleOptionDockWidgetC1Ei(void*cbfn)
+// { callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionDockWidget : public QStyleOptionDockWidget {
 public:

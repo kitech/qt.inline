@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qfont.h
 #include <qfont.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QFont is pure virtual: false
 // QFont has virtual projected: false

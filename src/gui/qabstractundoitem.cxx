@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextdocument.h
 #include <qtextdocument.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAbstractUndoItem is pure virtual: true
 // QAbstractUndoItem has virtual projected: false

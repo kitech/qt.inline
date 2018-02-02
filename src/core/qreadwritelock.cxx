@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qreadwritelock.h
 #include <qreadwritelock.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QReadWriteLock is pure virtual: false
 // QReadWriteLock has virtual projected: false

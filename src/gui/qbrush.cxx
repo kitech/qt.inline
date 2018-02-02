@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbrush.h
 #include <qbrush.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QBrush is pure virtual: false
 // QBrush has virtual projected: false

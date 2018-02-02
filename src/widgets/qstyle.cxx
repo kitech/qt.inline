@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstyle.h
 #include <qstyle.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyle is pure virtual: true
 // QStyle has virtual projected: false
@@ -230,12 +231,34 @@ extern "C"
 int C_ZN6QStyle23sliderValueFromPositionEiiiib(int min, int max, int pos, int space, bool upsideDown) {
   return (int)QStyle::sliderValueFromPosition(min, max, pos, space, upsideDown);
 }
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:845
+// [4] Qt::Alignment visualAlignment(Qt::LayoutDirection, Qt::Alignment)
+extern "C"
+Qt::Alignment C_ZN6QStyle15visualAlignmentEN2Qt15LayoutDirectionE6QFlagsINS0_13AlignmentFlagEE(Qt::LayoutDirection direction, QFlags<Qt::AlignmentFlag> alignment) {
+  return (Qt::Alignment)QStyle::visualAlignment(direction, alignment);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:846
+// [16] QRect alignedRect(Qt::LayoutDirection, Qt::Alignment, const class QSize &, const class QRect &)
+extern "C"
+void* C_ZN6QStyle11alignedRectEN2Qt15LayoutDirectionE6QFlagsINS0_13AlignmentFlagEERK5QSizeRK5QRect(Qt::LayoutDirection direction, QFlags<Qt::AlignmentFlag> alignment, QSize* size, QRect* rectangle) {
+  auto rv = QStyle::alignedRect(direction, alignment, *size, *rectangle);
+return new QRect(rv);
+}
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:849
 // [4] int layoutSpacing(class QSizePolicy::ControlType, class QSizePolicy::ControlType, Qt::Orientation, const class QStyleOption *, const class QWidget *)
 extern "C"
 int C_ZNK6QStyle13layoutSpacingEN11QSizePolicy11ControlTypeES1_N2Qt11OrientationEPK12QStyleOptionPK7QWidget(void *this_, QSizePolicy::ControlType control1, QSizePolicy::ControlType control2, Qt::Orientation orientation, const QStyleOption * option, const QWidget * widget) {
   return (int)((QStyle*)this_)->layoutSpacing(control1, control2, orientation, option, widget);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyle.h:852
+// [4] int combinedLayoutSpacing(class QSizePolicy::ControlTypes, class QSizePolicy::ControlTypes, Qt::Orientation, class QStyleOption *, class QWidget *)
+extern "C"
+int C_ZNK6QStyle21combinedLayoutSpacingE6QFlagsIN11QSizePolicy11ControlTypeEES3_N2Qt11OrientationEP12QStyleOptionP7QWidget(void *this_, QFlags<QSizePolicy::ControlType> controls1, QFlags<QSizePolicy::ControlType> controls2, Qt::Orientation orientation, QStyleOption * option, QWidget * widget) {
+  return (int)((QStyle*)this_)->combinedLayoutSpacing(controls1, controls2, orientation, option, widget);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyle.h:856

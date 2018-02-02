@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qerrormessage.h
 #include <qerrormessage.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QErrorMessage is pure virtual: false
 // QErrorMessage has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qerrormessage.h:68
-// [-2] void done(int)
-extern "C"
-void* callback_ZN13QErrorMessage4doneEi_fnptr = 0;
-extern "C" void set_callback_ZN13QErrorMessage4doneEi(void*cbfn)
-{ callback_ZN13QErrorMessage4doneEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qerrormessage.h:69
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QErrorMessage11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN13QErrorMessage4doneEi_fnptr = 0;
+// extern "C" void set_callback_ZN13QErrorMessage4doneEi(void*cbfn)
+// { callback_ZN13QErrorMessage4doneEi_fnptr = cbfn; }
+// void* callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QErrorMessage11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQErrorMessage : public QErrorMessage {
 public:
@@ -30,19 +23,31 @@ public:
 MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
 // void done(int)
   virtual void done(int arg0) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN13QErrorMessage4doneEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"done", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN13QErrorMessage4doneEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QErrorMessage::done(arg0);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * e) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QErrorMessage::changeEvent(e);
+  }
   }
 };
 

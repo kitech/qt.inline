@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qclipboard.h
 #include <qclipboard.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QClipboard is pure virtual: false
 // QClipboard has virtual projected: false

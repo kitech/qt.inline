@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpaintengine.h
 #include <qpaintengine.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPaintEngine is pure virtual: true
 // QPaintEngine has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQPaintEngine : public QPaintEngine {
 public:
   virtual ~MyQPaintEngine() {}
+// void QPaintEngine(QPaintEngine::PaintEngineFeatures)
+MyQPaintEngine(QFlags<QPaintEngine::PaintEngineFeature> features) : QPaintEngine(features) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:147
+// [-2] void QPaintEngine(QPaintEngine::PaintEngineFeatures)
+extern "C"
+void* C_ZN12QPaintEngineC1E6QFlagsINS_18PaintEngineFeatureEE(QFlags<QPaintEngine::PaintEngineFeature> features) {
+  return 0; // new QPaintEngine(features);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:148
 // [-2] void ~QPaintEngine()
@@ -247,6 +257,13 @@ void C_ZN12QPaintEngine8setDirtyE6QFlagsINS_9DirtyFlagEE(void *this_, QFlags<QPa
 extern "C"
 void C_ZN12QPaintEngine10clearDirtyE6QFlagsINS_9DirtyFlagEE(void *this_, QFlags<QPaintEngine::DirtyFlag> df) {
   ((QPaintEngine*)this_)->clearDirty(df);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpaintengine.h:222
+// [1] bool hasFeature(QPaintEngine::PaintEngineFeatures)
+extern "C"
+bool C_ZNK12QPaintEngine10hasFeatureE6QFlagsINS_18PaintEngineFeatureEE(void *this_, QFlags<QPaintEngine::PaintEngineFeature> feature) {
+  return (bool)((QPaintEngine*)this_)->hasFeature(feature);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintengine.h:224

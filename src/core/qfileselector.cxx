@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfileselector.h
 #include <qfileselector.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFileSelector is pure virtual: false
 // QFileSelector has virtual projected: false

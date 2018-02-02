@@ -2,33 +2,22 @@
 // /usr/include/qt/QtCore/qabstractanimation.h
 #include <qabstractanimation.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAnimationDriver is pure virtual: false
 // QAnimationDriver has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:161
-// [-2] void advanceAnimation(qint64)
-extern "C"
-void* callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = 0;
-extern "C" void set_callback_ZN16QAnimationDriver16advanceAnimationEx(void*cbfn)
-{ callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:162
-// [-2] void start()
-extern "C"
-void* callback_ZN16QAnimationDriver5startEv_fnptr = 0;
-extern "C" void set_callback_ZN16QAnimationDriver5startEv(void*cbfn)
-{ callback_ZN16QAnimationDriver5startEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:163
-// [-2] void stop()
-extern "C"
-void* callback_ZN16QAnimationDriver4stopEv_fnptr = 0;
-extern "C" void set_callback_ZN16QAnimationDriver4stopEv(void*cbfn)
-{ callback_ZN16QAnimationDriver4stopEv_fnptr = cbfn; }
+// void* callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = 0;
+// extern "C" void set_callback_ZN16QAnimationDriver16advanceAnimationEx(void*cbfn)
+// { callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = cbfn; }
+// void* callback_ZN16QAnimationDriver5startEv_fnptr = 0;
+// extern "C" void set_callback_ZN16QAnimationDriver5startEv(void*cbfn)
+// { callback_ZN16QAnimationDriver5startEv_fnptr = cbfn; }
+// void* callback_ZN16QAnimationDriver4stopEv_fnptr = 0;
+// extern "C" void set_callback_ZN16QAnimationDriver4stopEv(void*cbfn)
+// { callback_ZN16QAnimationDriver4stopEv_fnptr = cbfn; }
 
 class MyQAnimationDriver : public QAnimationDriver {
 public:
@@ -37,27 +26,45 @@ public:
 MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
 // void advanceAnimation(qint64)
   virtual void advanceAnimation(qint64 timeStep) {
-    auto fnptr = ((void (*)(void* , qint64))(callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , timeStep);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"advanceAnimation", &handled, 1, (uint64_t)timeStep, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , qint64))(callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , timeStep);
+    // }
     QAnimationDriver::advanceAnimation(timeStep);
+  }
   }
 // void start()
   virtual void start() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver5startEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"start", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver5startEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QAnimationDriver::start();
+  }
   }
 // void stop()
   virtual void stop() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver4stopEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"stop", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver4stopEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QAnimationDriver::stop();
+  }
   }
 };
 

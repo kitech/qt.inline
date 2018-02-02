@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionTabBarBase is pure virtual: false
 // QStyleOptionTabBarBase has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:199
-// [-2] void QStyleOptionTabBarBase(int)
-extern "C"
-void* callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN22QStyleOptionTabBarBaseC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = cbfn; }
+// void* callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN22QStyleOptionTabBarBaseC1Ei(void*cbfn)
+// { callback_ZN22QStyleOptionTabBarBaseC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTabBarBase : public QStyleOptionTabBarBase {
 public:

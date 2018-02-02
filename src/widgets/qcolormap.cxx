@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qcolormap.h
 #include <qcolormap.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QColormap is pure virtual: false
 // QColormap has virtual projected: false

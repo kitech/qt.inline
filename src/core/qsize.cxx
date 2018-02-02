@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsize.h
 #include <qsize.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSize is pure virtual: false
 // QSize has virtual projected: false

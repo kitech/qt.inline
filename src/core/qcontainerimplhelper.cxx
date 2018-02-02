@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qarraydata.h
 #include <qarraydata.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QContainerImplHelper is pure virtual: false
 // QContainerImplHelper has virtual projected: false

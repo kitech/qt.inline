@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qcompleter.h
 #include <qcompleter.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QCompleter is pure virtual: false
 // QCompleter has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:145
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:146
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN10QCompleter5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QCompleter5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QCompleter5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN10QCompleter5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QCompleter5eventEP6QEvent(void*cbfn)
+// { callback_ZN10QCompleter5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCompleter : public QCompleter {
 public:
@@ -34,19 +27,33 @@ MyQCompleter(QAbstractItemModel * model, QObject * parent) : QCompleter(model, p
 MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(completions, parent) {}
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * o, QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , o, e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)o, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , o, e);
+    // }
     return QCompleter::eventFilter(o, e);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QCompleter5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QCompleter5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QCompleter::event(arg0);
+  }
   }
 };
 

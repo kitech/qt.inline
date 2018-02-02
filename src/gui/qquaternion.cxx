@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qquaternion.h
 #include <qquaternion.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QQuaternion is pure virtual: false
 // QQuaternion has virtual projected: false

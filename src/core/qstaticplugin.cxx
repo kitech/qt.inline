@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qplugin.h
 #include <qplugin.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStaticPlugin is pure virtual: false
 // QStaticPlugin has virtual projected: false

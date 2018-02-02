@@ -2,54 +2,31 @@
 // /usr/include/qt/QtWidgets/qwizard.h
 #include <qwizard.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QWizard is pure virtual: false
 // QWizard has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:187
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN7QWizard5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard5eventEP6QEvent(void*cbfn)
-{ callback_ZN7QWizard5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:188
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:189
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:193
-// [-2] void done(int)
-extern "C"
-void* callback_ZN7QWizard4doneEi_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard4doneEi(void*cbfn)
-{ callback_ZN7QWizard4doneEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:194
-// [-2] void initializePage(int)
-extern "C"
-void* callback_ZN7QWizard14initializePageEi_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard14initializePageEi(void*cbfn)
-{ callback_ZN7QWizard14initializePageEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:195
-// [-2] void cleanupPage(int)
-extern "C"
-void* callback_ZN7QWizard11cleanupPageEi_fnptr = 0;
-extern "C" void set_callback_ZN7QWizard11cleanupPageEi(void*cbfn)
-{ callback_ZN7QWizard11cleanupPageEi_fnptr = cbfn; }
+// void* callback_ZN7QWizard5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard5eventEP6QEvent(void*cbfn)
+// { callback_ZN7QWizard5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN7QWizard4doneEi_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard4doneEi(void*cbfn)
+// { callback_ZN7QWizard4doneEi_fnptr = cbfn; }
+// void* callback_ZN7QWizard14initializePageEi_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard14initializePageEi(void*cbfn)
+// { callback_ZN7QWizard14initializePageEi_fnptr = cbfn; }
+// void* callback_ZN7QWizard11cleanupPageEi_fnptr = 0;
+// extern "C" void set_callback_ZN7QWizard11cleanupPageEi(void*cbfn)
+// { callback_ZN7QWizard11cleanupPageEi_fnptr = cbfn; }
 
 class MyQWizard : public QWizard {
 public:
@@ -58,51 +35,88 @@ public:
 MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flags) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QWizard5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QWizard5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QWizard::event(event);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QWizard::resizeEvent(event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QWizard::paintEvent(event);
+  }
   }
 // void done(int)
   virtual void done(int result) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard4doneEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , result);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard4doneEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , result);
+    // }
     QWizard::done(result);
+  }
   }
 // void initializePage(int)
   virtual void initializePage(int id) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard14initializePageEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , id);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initializePage", &handled, 1, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard14initializePageEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , id);
+    // }
     QWizard::initializePage(id);
+  }
   }
 // void cleanupPage(int)
   virtual void cleanupPage(int id) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard11cleanupPageEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , id);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"cleanupPage", &handled, 1, (uint64_t)id, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard11cleanupPageEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , id);
+    // }
     QWizard::cleanupPage(id);
+  }
   }
 };
 
@@ -247,6 +261,13 @@ void C_ZN7QWizard9setOptionENS_12WizardOptionEb(void *this_, QWizard::WizardOpti
 extern "C"
 bool C_ZNK7QWizard10testOptionENS_12WizardOptionE(void *this_, QWizard::WizardOption option) {
   return (bool)((QWizard*)this_)->testOption(option);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwizard.h:149
+// [-2] void setOptions(QWizard::WizardOptions)
+extern "C"
+void C_ZN7QWizard10setOptionsE6QFlagsINS_12WizardOptionEE(void *this_, QFlags<QWizard::WizardOption> options) {
+  ((QWizard*)this_)->setOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qwizard.h:150

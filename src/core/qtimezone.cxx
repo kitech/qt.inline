@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtimezone.h
 #include <qtimezone.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTimeZone is pure virtual: false
 // QTimeZone has virtual projected: false

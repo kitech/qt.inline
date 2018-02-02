@@ -2,82 +2,43 @@
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #include <qmdiarea.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QMdiArea is pure virtual: false
 // QMdiArea has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:146
-// [-2] void setupViewport(class QWidget *)
-extern "C"
-void* callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea13setupViewportEP7QWidget(void*cbfn)
-{ callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:149
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN8QMdiArea5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:150
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:151
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:152
-// [-2] void childEvent(class QChildEvent *)
-extern "C"
-void* callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:153
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:154
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:155
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:156
-// [1] bool viewportEvent(class QEvent *)
-extern "C"
-void* callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea13viewportEventEP6QEvent(void*cbfn)
-{ callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:157
-// [-2] void scrollContentsBy(int, int)
-extern "C"
-void* callback_ZN8QMdiArea16scrollContentsByEii_fnptr = 0;
-extern "C" void set_callback_ZN8QMdiArea16scrollContentsByEii(void*cbfn)
-{ callback_ZN8QMdiArea16scrollContentsByEii_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea13setupViewportEP7QWidget(void*cbfn)
+// { callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea5eventEP6QEvent(void*cbfn)
+// { callback_ZN8QMdiArea5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea10childEventEP11QChildEvent(void*cbfn)
+// { callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea13viewportEventEP6QEvent(void*cbfn)
+// { callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMdiArea16scrollContentsByEii_fnptr = 0;
+// extern "C" void set_callback_ZN8QMdiArea16scrollContentsByEii(void*cbfn)
+// { callback_ZN8QMdiArea16scrollContentsByEii_fnptr = cbfn; }
 
 class MyQMdiArea : public QMdiArea {
 public:
@@ -86,83 +47,146 @@ public:
 MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
 // void setupViewport(class QWidget *)
   virtual void setupViewport(QWidget * viewport) {
-    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , viewport);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setupViewport", &handled, 1, (uint64_t)viewport, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , viewport);
+    // }
     QMdiArea::setupViewport(viewport);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QMdiArea::event(event);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , object, event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , object, event);
+    // }
     return QMdiArea::eventFilter(object, event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * paintEvent) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , paintEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)paintEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , paintEvent);
+    // }
     QMdiArea::paintEvent(paintEvent);
+  }
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * childEvent) {
-    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , childEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)childEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , childEvent);
+    // }
     QMdiArea::childEvent(childEvent);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * resizeEvent) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , resizeEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)resizeEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , resizeEvent);
+    // }
     QMdiArea::resizeEvent(resizeEvent);
+  }
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * timerEvent) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , timerEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)timerEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , timerEvent);
+    // }
     QMdiArea::timerEvent(timerEvent);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , showEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)showEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , showEvent);
+    // }
     QMdiArea::showEvent(showEvent);
+  }
   }
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"viewportEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QMdiArea::viewportEvent(event);
+  }
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN8QMdiArea16scrollContentsByEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , dx, dy);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN8QMdiArea16scrollContentsByEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , dx, dy);
+    // }
     QMdiArea::scrollContentsBy(dx, dy);
+  }
   }
 };
 

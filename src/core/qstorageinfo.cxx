@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstorageinfo.h
 #include <qstorageinfo.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStorageInfo is pure virtual: false
 // QStorageInfo has virtual projected: false

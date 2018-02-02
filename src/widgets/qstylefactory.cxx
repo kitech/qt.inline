@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstylefactory.h
 #include <qstylefactory.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleFactory is pure virtual: false
 // QStyleFactory has virtual projected: false

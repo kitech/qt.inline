@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdeadlinetimer.h
 #include <qdeadlinetimer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDeadlineTimer is pure virtual: false
 // QDeadlineTimer has virtual projected: false

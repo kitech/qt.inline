@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpaintengine.h
 #include <qpaintengine.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPaintEngineState is pure virtual: false
 // QPaintEngineState has virtual projected: false

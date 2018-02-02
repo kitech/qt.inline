@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qundogroup.h
 #include <qundogroup.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QUndoGroup is pure virtual: false
 // QUndoGroup has virtual projected: false

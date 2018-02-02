@@ -2,75 +2,40 @@
 // /usr/include/qt/QtWidgets/qsizegrip.h
 #include <qsizegrip.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSizeGrip is pure virtual: false
 // QSizeGrip has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:62
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:63
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:64
-// [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:65
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:66
-// [-2] void moveEvent(class QMoveEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip9moveEventEP10QMoveEvent(void*cbfn)
-{ callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:67
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:68
-// [-2] void hideEvent(class QHideEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip9hideEventEP10QHideEvent(void*cbfn)
-{ callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:69
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsizegrip.h:70
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN9QSizeGrip5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSizeGrip5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QSizeGrip5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip9moveEventEP10QMoveEvent(void*cbfn)
+// { callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip9hideEventEP10QHideEvent(void*cbfn)
+// { callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN9QSizeGrip5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSizeGrip5eventEP6QEvent(void*cbfn)
+// { callback_ZN9QSizeGrip5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSizeGrip : public QSizeGrip {
 public:
@@ -79,75 +44,131 @@ public:
 MyQSizeGrip(QWidget * parent) : QSizeGrip(parent) {}
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QSizeGrip10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSizeGrip::paintEvent(arg0);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSizeGrip::mousePressEvent(arg0);
+  }
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip14mouseMoveEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSizeGrip::mouseMoveEvent(arg0);
+  }
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * mouseEvent) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , mouseEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)mouseEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QSizeGrip17mouseReleaseEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , mouseEvent);
+    // }
     QSizeGrip::mouseReleaseEvent(mouseEvent);
+  }
   }
 // void moveEvent(class QMoveEvent *)
   virtual void moveEvent(QMoveEvent * moveEvent) {
-    auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , moveEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"moveEvent", &handled, 1, (uint64_t)moveEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN9QSizeGrip9moveEventEP10QMoveEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , moveEvent);
+    // }
     QSizeGrip::moveEvent(moveEvent);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , showEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)showEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN9QSizeGrip9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , showEvent);
+    // }
     QSizeGrip::showEvent(showEvent);
+  }
   }
 // void hideEvent(class QHideEvent *)
   virtual void hideEvent(QHideEvent * hideEvent) {
-    auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , hideEvent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"hideEvent", &handled, 1, (uint64_t)hideEvent, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN9QSizeGrip9hideEventEP10QHideEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , hideEvent);
+    // }
     QSizeGrip::hideEvent(hideEvent);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0, arg1);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN9QSizeGrip11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0, arg1);
+    // }
     return QSizeGrip::eventFilter(arg0, arg1);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QSizeGrip5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QSizeGrip5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QSizeGrip::event(arg0);
+  }
   }
 };
 

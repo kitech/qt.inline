@@ -2,68 +2,37 @@
 // /usr/include/qt/QtWidgets/qsplitter.h
 #include <qsplitter.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSplitterHandle is pure virtual: false
 // QSplitterHandle has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:151
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:152
-// [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:153
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:154
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:155
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:156
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:158
-// [-2] void moveSplitter(int)
-extern "C"
-void* callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle12moveSplitterEi(void*cbfn)
-{ callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qsplitter.h:159
-// [4] int closestLegalPosition(int)
-extern "C"
-void* callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = 0;
-extern "C" void set_callback_ZN15QSplitterHandle20closestLegalPositionEi(void*cbfn)
-{ callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle5eventEP6QEvent(void*cbfn)
+// { callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle12moveSplitterEi(void*cbfn)
+// { callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = cbfn; }
+// void* callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = 0;
+// extern "C" void set_callback_ZN15QSplitterHandle20closestLegalPositionEi(void*cbfn)
+// { callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = cbfn; }
 
 class MyQSplitterHandle : public QSplitterHandle {
 public:
@@ -72,67 +41,117 @@ public:
 MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, parent) {}
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplitterHandle::paintEvent(arg0);
+  }
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplitterHandle::mouseMoveEvent(arg0);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplitterHandle::mousePressEvent(arg0);
+  }
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplitterHandle::mouseReleaseEvent(arg0);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QSplitterHandle::resizeEvent(arg0);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QSplitterHandle::event(arg0);
+  }
   }
 // void moveSplitter(int)
   virtual void moveSplitter(int p) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN15QSplitterHandle12moveSplitterEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , p);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"moveSplitter", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN15QSplitterHandle12moveSplitterEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , p);
+    // }
     QSplitterHandle::moveSplitter(p);
+  }
   }
 // int closestLegalPosition(int)
   virtual int closestLegalPosition(int p) {
-    auto fnptr = ((int (*)(void* , int))(callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , p);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"closestLegalPosition", &handled, 1, (uint64_t)p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , int))(callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , p);
+    // }
     return QSplitterHandle::closestLegalPosition(p);
+  }
   }
 };
 

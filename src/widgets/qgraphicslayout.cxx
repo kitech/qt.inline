@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qgraphicslayout.h
 #include <qgraphicslayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsLayout is pure virtual: true
 // QGraphicsLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:78
-// [-2] void addChildLayoutItem(class QGraphicsLayoutItem *)
-extern "C"
-void* callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = 0;
-extern "C" void set_callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void*cbfn)
-{ callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = cbfn; }
+// void* callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = 0;
+// extern "C" void set_callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void*cbfn)
+// { callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = cbfn; }
 
 class MyQGraphicsLayout : public QGraphicsLayout {
 public:
@@ -23,11 +20,17 @@ public:
 MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 // void addChildLayoutItem(class QGraphicsLayoutItem *)
   virtual void addChildLayoutItem(QGraphicsLayoutItem * layoutItem) {
-    auto fnptr = ((void (*)(void* , QGraphicsLayoutItem *))(callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , layoutItem);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayoutItem", &handled, 1, (uint64_t)layoutItem, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsLayoutItem *))(callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , layoutItem);
+    // }
     QGraphicsLayout::addChildLayoutItem(layoutItem);
+  }
   }
 };
 

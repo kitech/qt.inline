@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlogging.h
 #include <qlogging.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMessageLogContext is pure virtual: false
 // QMessageLogContext has virtual projected: false

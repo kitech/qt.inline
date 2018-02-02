@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgesturerecognizer.h
 #include <qgesturerecognizer.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGestureRecognizer is pure virtual: true
 // QGestureRecognizer has virtual projected: false

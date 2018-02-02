@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmargins.h
 #include <qmargins.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMargins is pure virtual: false
 // QMargins has virtual projected: false

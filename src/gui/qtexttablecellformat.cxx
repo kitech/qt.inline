@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextTableCellFormat is pure virtual: false
 // QTextTableCellFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:964
-// [-2] void QTextTableCellFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN20QTextTableCellFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN20QTextTableCellFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN20QTextTableCellFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextTableCellFormat : public QTextTableCellFormat {
 public:

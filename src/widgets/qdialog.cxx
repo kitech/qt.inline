@@ -2,61 +2,34 @@
 // /usr/include/qt/QtWidgets/qdialog.h
 #include <qdialog.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDialog is pure virtual: false
 // QDialog has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:104
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:105
-// [-2] void closeEvent(class QCloseEvent *)
-extern "C"
-void* callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:106
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:107
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:109
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
-extern "C"
-void* callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:111
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdialog.h:112
-// [-2] void adjustPosition(class QWidget *)
-extern "C"
-void* callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = 0;
-extern "C" void set_callback_ZN7QDialog14adjustPositionEP7QWidget(void*cbfn)
-{ callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = cbfn; }
+// void* callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog10closeEventEP11QCloseEvent(void*cbfn)
+// { callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(void*cbfn)
+// { callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = 0;
+// extern "C" void set_callback_ZN7QDialog14adjustPositionEP7QWidget(void*cbfn)
+// { callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = cbfn; }
 
 class MyQDialog : public QDialog {
 public:
@@ -65,59 +38,102 @@ public:
 MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::keyPressEvent(arg0);
+  }
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::closeEvent(arg0);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN7QDialog9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN7QDialog9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::showEvent(arg0);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::resizeEvent(arg0);
+  }
   }
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::contextMenuEvent(arg0);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0, arg1);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0, arg1);
+    // }
     return QDialog::eventFilter(arg0, arg1);
+  }
   }
 // void adjustPosition(class QWidget *)
   virtual void adjustPosition(QWidget * arg0) {
-    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"adjustPosition", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QDialog::adjustPosition(arg0);
+  }
   }
 };
 

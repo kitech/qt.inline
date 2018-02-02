@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpen.h
 #include <qpen.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPen is pure virtual: false
 // QPen has virtual projected: false

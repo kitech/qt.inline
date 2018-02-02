@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextdocumentwriter.h
 #include <qtextdocumentwriter.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextDocumentWriter is pure virtual: false
 // QTextDocumentWriter has virtual projected: false

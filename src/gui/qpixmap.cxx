@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qpixmap.h
 #include <qpixmap.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPixmap is pure virtual: false
 // QPixmap has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpixmap.h:175
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
-void* callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-extern "C" void set_callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// Protected static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpixmap.h:176
-// [32] QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
-extern "C"
-void* callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
-extern "C" void set_callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-{ callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
+// void* callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
+// extern "C" void set_callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
+// { callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
+// void* callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
+// { callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
 
 class MyQPixmap : public QPixmap {
 public:
@@ -38,19 +31,33 @@ MyQPixmap(const QString & fileName, const char * format, QFlags<Qt::ImageConvers
 MyQPixmap(char** xpm) : QPixmap(xpm) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric arg0) {
-    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QPixmap::metric(arg0);
+  }
   }
 // QPixmap fromImageInPlace(class QImage &, Qt::ImageConversionFlags)
   virtual QPixmap fromImageInPlace(QImage & image, QFlags<Qt::ImageConversionFlag> flags) {
-    auto fnptr = ((QPixmap (*)(void* , QImage*, QFlags<Qt::ImageConversionFlag>))(callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QImage*)&image, flags);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"fromImageInPlace", &handled, 2, (uint64_t)&image, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QPixmap*)(irv);
+      // RecordRecordQPixmap
+    } else {
+    // auto fnptr = ((QPixmap (*)(void* , QImage*, QFlags<Qt::ImageConversionFlag>))(callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QImage*)&image, flags);
+    // }
     return QPixmap::fromImageInPlace(image, flags);
+  }
   }
 };
 

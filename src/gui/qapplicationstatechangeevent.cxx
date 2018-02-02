@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QApplicationStateChangeEvent is pure virtual: false
 // QApplicationStateChangeEvent has virtual projected: false

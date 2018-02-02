@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qopenglversionfunctions.h
 #include <qopenglversionfunctions.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAbstractOpenGLFunctions is pure virtual: false
 // QAbstractOpenGLFunctions has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:220
-// [-2] void QAbstractOpenGLFunctions()
-extern "C"
-void* callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = 0;
-extern "C" void set_callback_ZN24QAbstractOpenGLFunctionsC1Ev(void*cbfn)
-{ callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:223
-// [1] bool isInitialized()
-extern "C"
-void* callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = 0;
-extern "C" void set_callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void*cbfn)
-{ callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = cbfn; }
+// void* callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = 0;
+// extern "C" void set_callback_ZN24QAbstractOpenGLFunctionsC1Ev(void*cbfn)
+// { callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = cbfn; }
+// void* callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = 0;
+// extern "C" void set_callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void*cbfn)
+// { callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = cbfn; }
 
 class MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
@@ -30,11 +23,18 @@ public:
 MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
 // bool isInitialized()
   virtual bool isInitialized() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isInitialized", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QAbstractOpenGLFunctions::isInitialized();
+  }
   }
 };
 

@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qspinbox.h
 #include <qspinbox.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSpinBox is pure virtual: false
 // QSpinBox has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:93
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN8QSpinBox5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QSpinBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QSpinBox5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:94
-// [4] QValidator::State validate(class QString &, int &)
-extern "C"
-void* callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = 0;
-extern "C" void set_callback_ZNK8QSpinBox8validateER7QStringRi(void*cbfn)
-{ callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:95
-// [4] int valueFromText(const class QString &)
-extern "C"
-void* callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = 0;
-extern "C" void set_callback_ZNK8QSpinBox13valueFromTextERK7QString(void*cbfn)
-{ callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:96
-// [8] QString textFromValue(int)
-extern "C"
-void* callback_ZNK8QSpinBox13textFromValueEi_fnptr = 0;
-extern "C" void set_callback_ZNK8QSpinBox13textFromValueEi(void*cbfn)
-{ callback_ZNK8QSpinBox13textFromValueEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:97
-// [-2] void fixup(class QString &)
-extern "C"
-void* callback_ZNK8QSpinBox5fixupER7QString_fnptr = 0;
-extern "C" void set_callback_ZNK8QSpinBox5fixupER7QString(void*cbfn)
-{ callback_ZNK8QSpinBox5fixupER7QString_fnptr = cbfn; }
+// void* callback_ZN8QSpinBox5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QSpinBox5eventEP6QEvent(void*cbfn)
+// { callback_ZN8QSpinBox5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = 0;
+// extern "C" void set_callback_ZNK8QSpinBox8validateER7QStringRi(void*cbfn)
+// { callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = cbfn; }
+// void* callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = 0;
+// extern "C" void set_callback_ZNK8QSpinBox13valueFromTextERK7QString(void*cbfn)
+// { callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = cbfn; }
+// void* callback_ZNK8QSpinBox13textFromValueEi_fnptr = 0;
+// extern "C" void set_callback_ZNK8QSpinBox13textFromValueEi(void*cbfn)
+// { callback_ZNK8QSpinBox13textFromValueEi_fnptr = cbfn; }
+// void* callback_ZNK8QSpinBox5fixupER7QString_fnptr = 0;
+// extern "C" void set_callback_ZNK8QSpinBox5fixupER7QString(void*cbfn)
+// { callback_ZNK8QSpinBox5fixupER7QString_fnptr = cbfn; }
 
 class MyQSpinBox : public QSpinBox {
 public:
@@ -51,43 +32,77 @@ public:
 MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QSpinBox5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QSpinBox5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QSpinBox::event(event);
+  }
   }
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
-    auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK8QSpinBox8validateER7QStringRi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&input, pos);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"validate", &handled, 2, (uint64_t)&input, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QValidator::State)(int)(irv);
+      // ElaboratedEnumQValidator::State
+    } else {
+    // auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK8QSpinBox8validateER7QStringRi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&input, pos);
+    // }
     return QSpinBox::validate(input, pos);
+  }
   }
 // int valueFromText(const class QString &)
   virtual int valueFromText(const QString & text) {
-    auto fnptr = ((int (*)(void* , QString*))(callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&text);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"valueFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QString*))(callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&text);
+    // }
     return QSpinBox::valueFromText(text);
+  }
   }
 // QString textFromValue(int)
   virtual QString textFromValue(int val) {
-    auto fnptr = ((QString (*)(void* , int))(callback_ZNK8QSpinBox13textFromValueEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , val);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"textFromValue", &handled, 1, (uint64_t)val, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QString*)(irv);
+      // RecordRecordQString
+    } else {
+    // auto fnptr = ((QString (*)(void* , int))(callback_ZNK8QSpinBox13textFromValueEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , val);
+    // }
     return QSpinBox::textFromValue(val);
+  }
   }
 // void fixup(class QString &)
   virtual void fixup(QString & str) {
-    auto fnptr = ((void (*)(void* , QString*))(callback_ZNK8QSpinBox5fixupER7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&str);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"fixup", &handled, 1, (uint64_t)&str, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*))(callback_ZNK8QSpinBox5fixupER7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&str);
+    // }
     QSpinBox::fixup(str);
+  }
   }
 };
 

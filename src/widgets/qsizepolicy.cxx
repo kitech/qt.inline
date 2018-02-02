@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qsizepolicy.h
 #include <qsizepolicy.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSizePolicy is pure virtual: false
 // QSizePolicy has virtual projected: false

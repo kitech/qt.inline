@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsSceneContextMenuEvent is pure virtual: false
 // QGraphicsSceneContextMenuEvent has virtual projected: false
@@ -81,6 +82,13 @@ void C_ZN30QGraphicsSceneContextMenuEvent12setScreenPosERK6QPoint(void *this_, Q
 extern "C"
 Qt::KeyboardModifiers C_ZNK30QGraphicsSceneContextMenuEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QGraphicsSceneContextMenuEvent*)this_)->modifiers();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:187
+// [-2] void setModifiers(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN30QGraphicsSceneContextMenuEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QGraphicsSceneContextMenuEvent*)this_)->setModifiers(modifiers);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:189

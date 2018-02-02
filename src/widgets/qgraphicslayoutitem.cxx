@@ -2,33 +2,22 @@
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h
 #include <qgraphicslayoutitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsLayoutItem is pure virtual: true
 // QGraphicsLayoutItem has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:105
-// [-2] void setGraphicsItem(class QGraphicsItem *)
-extern "C"
-void* callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = 0;
-extern "C" void set_callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void*cbfn)
-{ callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:106
-// [-2] void setOwnedByLayout(_Bool)
-extern "C"
-void* callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = 0;
-extern "C" void set_callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void*cbfn)
-{ callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = cbfn; }
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-extern "C"
-void* callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
-extern "C" void set_callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
-{ callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
+// void* callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = 0;
+// extern "C" void set_callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void*cbfn)
+// { callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = cbfn; }
+// void* callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = 0;
+// extern "C" void set_callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void*cbfn)
+// { callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = cbfn; }
+// void* callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
+// extern "C" void set_callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
+// { callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
 
 class MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
@@ -37,27 +26,46 @@ public:
 MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLayoutItem(parent, isLayout) {}
 // void setGraphicsItem(class QGraphicsItem *)
   virtual void setGraphicsItem(QGraphicsItem * item) {
-    auto fnptr = ((void (*)(void* , QGraphicsItem *))(callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , item);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setGraphicsItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsItem *))(callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , item);
+    // }
     QGraphicsLayoutItem::setGraphicsItem(item);
+  }
   }
 // void setOwnedByLayout(_Bool)
   virtual void setOwnedByLayout(bool ownedByLayout) {
-    auto fnptr = ((void (*)(void* , bool))(callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , ownedByLayout);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setOwnedByLayout", &handled, 1, (uint64_t)ownedByLayout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , bool))(callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , ownedByLayout);
+    // }
     QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
+  }
   }
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
-    auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , which, (QSizeF*)&constraint);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QSizeF*)(irv);
+      // RecordRecordQSizeF
+    } else {
+    // auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , which, (QSizeF*)&constraint);
+    // }
     return QGraphicsLayoutItem::sizeHint(which, constraint);
+  }
   }
 };
 

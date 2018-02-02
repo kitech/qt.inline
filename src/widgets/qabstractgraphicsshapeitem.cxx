@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #include <qgraphicsitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QAbstractGraphicsShapeItem is pure virtual: false
 // QAbstractGraphicsShapeItem has virtual projected: false

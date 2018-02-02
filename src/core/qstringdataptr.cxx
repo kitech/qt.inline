@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringliteral.h
 #include <qstringliteral.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStringDataPtr is pure virtual: false
 // QStringDataPtr has virtual projected: false

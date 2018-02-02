@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qtoolbar.h
 #include <qtoolbar.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QToolBar is pure virtual: false
 // QToolBar has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:191
-// [-2] void actionEvent(class QActionEvent *)
-extern "C"
-void* callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBar11actionEventEP12QActionEvent(void*cbfn)
-{ callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:192
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBar11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:193
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:194
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN8QToolBar5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBar5eventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbar.h:195
-// [-2] void initStyleOption(class QStyleOptionToolBar *)
-extern "C"
-void* callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = 0;
-extern "C" void set_callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void*cbfn)
-{ callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = cbfn; }
+// void* callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBar11actionEventEP12QActionEvent(void*cbfn)
+// { callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBar11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN8QToolBar11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBar10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBar5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBar5eventEP6QEvent(void*cbfn)
+// { callback_ZN8QToolBar5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = 0;
+// extern "C" void set_callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar(void*cbfn)
+// { callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr = cbfn; }
 
 class MyQToolBar : public QToolBar {
 public:
@@ -53,43 +34,74 @@ MyQToolBar(const QString & title, QWidget * parent) : QToolBar(title, parent) {}
 MyQToolBar(QWidget * parent) : QToolBar(parent) {}
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * event) {
-    auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"actionEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QToolBar11actionEventEP12QActionEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QToolBar::actionEvent(event);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBar11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBar11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QToolBar::changeEvent(event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QToolBar10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QToolBar::paintEvent(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBar5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBar5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QToolBar::event(event);
+  }
   }
 // void initStyleOption(class QStyleOptionToolBar *)
   virtual void initStyleOption(QStyleOptionToolBar * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionToolBar *))(callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionToolBar *))(callback_ZNK8QToolBar15initStyleOptionEP19QStyleOptionToolBar_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QToolBar::initStyleOption(option);
+  }
   }
 };
 
@@ -136,6 +148,13 @@ void C_ZN8QToolBar10setMovableEb(void *this_, bool movable) {
 extern "C"
 bool C_ZNK8QToolBar9isMovableEv(void *this_) {
   return (bool)((QToolBar*)this_)->isMovable();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtoolbar.h:86
+// [-2] void setAllowedAreas(Qt::ToolBarAreas)
+extern "C"
+void C_ZN8QToolBar15setAllowedAreasE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> areas) {
+  ((QToolBar*)this_)->setAllowedAreas(areas);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:87
@@ -327,6 +346,13 @@ void C_ZN8QToolBar15actionTriggeredEP7QAction(void *this_, QAction * action) {
 extern "C"
 void C_ZN8QToolBar14movableChangedEb(void *this_, bool movable) {
   ((QToolBar*)this_)->movableChanged(movable);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtoolbar.h:183
+// [-2] void allowedAreasChanged(Qt::ToolBarAreas)
+extern "C"
+void C_ZN8QToolBar19allowedAreasChangedE6QFlagsIN2Qt11ToolBarAreaEE(void *this_, QFlags<Qt::ToolBarArea> allowedAreas) {
+  ((QToolBar*)this_)->allowedAreasChanged(allowedAreas);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:184

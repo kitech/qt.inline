@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/quuid.h
 #include <quuid.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QUuid is pure virtual: false
 // QUuid has virtual projected: false

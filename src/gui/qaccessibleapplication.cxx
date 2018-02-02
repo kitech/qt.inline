@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessibleobject.h
 #include <qaccessibleobject.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessibleApplication is pure virtual: false
 // QAccessibleApplication has virtual projected: false

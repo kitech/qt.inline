@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QWindowStateChangeEvent is pure virtual: false
 // QWindowStateChangeEvent has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQWindowStateChangeEvent : public QWindowStateChangeEvent {
 public:
   virtual ~MyQWindowStateChangeEvent() {}
+// void QWindowStateChangeEvent(Qt::WindowStates, _Bool)
+MyQWindowStateChangeEvent(QFlags<Qt::WindowState> aOldState, bool isOverride) : QWindowStateChangeEvent(aOldState, isOverride) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:783
+// [-2] void QWindowStateChangeEvent(Qt::WindowStates, _Bool)
+extern "C"
+void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::WindowState> aOldState, bool isOverride) {
+  return  new QWindowStateChangeEvent(aOldState, isOverride);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:784
 // [-2] void ~QWindowStateChangeEvent()

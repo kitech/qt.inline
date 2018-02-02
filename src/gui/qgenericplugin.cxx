@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qgenericplugin.h
 #include <qgenericplugin.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QGenericPlugin is pure virtual: true
 // QGenericPlugin has virtual projected: false

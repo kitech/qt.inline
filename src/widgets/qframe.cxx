@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qframe.h
 #include <qframe.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFrame is pure virtual: false
 // QFrame has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:111
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN6QFrame5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN6QFrame5eventEP6QEvent(void*cbfn)
-{ callback_ZN6QFrame5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:112
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN6QFrame10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:113
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN6QFrame11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN6QFrame11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN6QFrame11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:114
-// [-2] void drawFrame(class QPainter *)
-extern "C"
-void* callback_ZN6QFrame9drawFrameEP8QPainter_fnptr = 0;
-extern "C" void set_callback_ZN6QFrame9drawFrameEP8QPainter(void*cbfn)
-{ callback_ZN6QFrame9drawFrameEP8QPainter_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qframe.h:119
-// [-2] void initStyleOption(class QStyleOptionFrame *)
-extern "C"
-void* callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr = 0;
-extern "C" void set_callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(void*cbfn)
-{ callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr = cbfn; }
+// void* callback_ZN6QFrame5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN6QFrame5eventEP6QEvent(void*cbfn)
+// { callback_ZN6QFrame5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN6QFrame10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN6QFrame11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN6QFrame11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN6QFrame11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN6QFrame9drawFrameEP8QPainter_fnptr = 0;
+// extern "C" void set_callback_ZN6QFrame9drawFrameEP8QPainter(void*cbfn)
+// { callback_ZN6QFrame9drawFrameEP8QPainter_fnptr = cbfn; }
+// void* callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr = 0;
+// extern "C" void set_callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame(void*cbfn)
+// { callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr = cbfn; }
 
 class MyQFrame : public QFrame {
 public:
@@ -51,43 +32,74 @@ public:
 MyQFrame(QWidget * parent, QFlags<Qt::WindowType> f) : QFrame(parent, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN6QFrame5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN6QFrame5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QFrame::event(e);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN6QFrame10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QFrame::paintEvent(arg0);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QFrame11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QFrame11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QFrame::changeEvent(arg0);
+  }
   }
 // void drawFrame(class QPainter *)
   virtual void drawFrame(QPainter * arg0) {
-    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN6QFrame9drawFrameEP8QPainter_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawFrame", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN6QFrame9drawFrameEP8QPainter_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QFrame::drawFrame(arg0);
+  }
   }
 // void initStyleOption(class QStyleOptionFrame *)
   virtual void initStyleOption(QStyleOptionFrame * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionFrame *))(callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionFrame *))(callback_ZNK6QFrame15initStyleOptionEP17QStyleOptionFrame_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QFrame::initStyleOption(option);
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstackedlayout.h
 #include <qstackedlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStackedLayout is pure virtual: false
 // QStackedLayout has virtual projected: false

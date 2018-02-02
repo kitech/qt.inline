@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionProgressBar is pure virtual: false
 // QStyleOptionProgressBar has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:346
-// [-2] void QStyleOptionProgressBar(int)
-extern "C"
-void* callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN23QStyleOptionProgressBarC1Ei(void*cbfn)
-{ callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = cbfn; }
+// void* callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN23QStyleOptionProgressBarC1Ei(void*cbfn)
+// { callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionProgressBar : public QStyleOptionProgressBar {
 public:

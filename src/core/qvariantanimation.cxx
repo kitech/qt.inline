@@ -2,47 +2,28 @@
 // /usr/include/qt/QtCore/qvariantanimation.h
 #include <qvariantanimation.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QVariantAnimation is pure virtual: false
 // QVariantAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:98
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QVariantAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:100
-// [-2] void updateCurrentTime(int)
-extern "C"
-void* callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = 0;
-extern "C" void set_callback_ZN17QVariantAnimation17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:101
-// [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
-void* callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
-extern "C" void set_callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-{ callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:103
-// [-2] void updateCurrentValue(const class QVariant &)
-extern "C"
-void* callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
-extern "C" void set_callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void*cbfn)
-{ callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariantanimation.h:104
-// [16] QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
-extern "C"
-void* callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = 0;
-extern "C" void set_callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(void*cbfn)
-{ callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = cbfn; }
+// void* callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QVariantAnimation5eventEP6QEvent(void*cbfn)
+// { callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = 0;
+// extern "C" void set_callback_ZN17QVariantAnimation17updateCurrentTimeEi(void*cbfn)
+// { callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = cbfn; }
+// void* callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
+// extern "C" void set_callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
+// { callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
+// void* callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
+// extern "C" void set_callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void*cbfn)
+// { callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
+// void* callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = 0;
+// extern "C" void set_callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(void*cbfn)
+// { callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = cbfn; }
 
 class MyQVariantAnimation : public QVariantAnimation {
 public:
@@ -51,43 +32,75 @@ public:
 MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QVariantAnimation::event(event);
+  }
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QVariantAnimation::updateCurrentTime(arg0);
+  }
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , newState, oldState);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , newState, oldState);
+    // }
     QVariantAnimation::updateState(newState, oldState);
+  }
   }
 // void updateCurrentValue(const class QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
-    auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&value);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCurrentValue", &handled, 1, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&value);
+    // }
     QVariantAnimation::updateCurrentValue(value);
+  }
   }
 // QVariant interpolated(const class QVariant &, const class QVariant &, qreal)
   virtual QVariant interpolated(const QVariant & from, const QVariant & to, qreal progress) {
-    auto fnptr = ((QVariant (*)(void* , QVariant*, QVariant*, qreal))(callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&from, (QVariant*)&to, progress);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"interpolated", &handled, 3, (uint64_t)&from, (uint64_t)&to, (uint64_t)&progress, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , QVariant*, QVariant*, qreal))(callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&from, (QVariant*)&to, progress);
+    // }
     return QVariantAnimation::interpolated(from, to, progress);
+  }
   }
 };
 

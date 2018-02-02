@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #include <qgraphicstransform.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsTransform is pure virtual: true
 // QGraphicsTransform has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:66
-// [-2] void update()
-extern "C"
-void* callback_ZN18QGraphicsTransform6updateEv_fnptr = 0;
-extern "C" void set_callback_ZN18QGraphicsTransform6updateEv(void*cbfn)
-{ callback_ZN18QGraphicsTransform6updateEv_fnptr = cbfn; }
+// void* callback_ZN18QGraphicsTransform6updateEv_fnptr = 0;
+// extern "C" void set_callback_ZN18QGraphicsTransform6updateEv(void*cbfn)
+// { callback_ZN18QGraphicsTransform6updateEv_fnptr = cbfn; }
 
 class MyQGraphicsTransform : public QGraphicsTransform {
 public:
@@ -23,11 +20,17 @@ public:
 MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
 // void update()
   virtual void update() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN18QGraphicsTransform6updateEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"update", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN18QGraphicsTransform6updateEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QGraphicsTransform::update();
+  }
   }
 };
 

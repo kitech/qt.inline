@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qthreadstorage.h
 #include <qthreadstorage.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QThreadStorageData is pure virtual: false
 // QThreadStorageData has virtual projected: false

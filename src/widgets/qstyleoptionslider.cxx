@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionSlider is pure virtual: false
 // QStyleOptionSlider has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:537
-// [-2] void QStyleOptionSlider(int)
-extern "C"
-void* callback_ZN18QStyleOptionSliderC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN18QStyleOptionSliderC1Ei(void*cbfn)
-{ callback_ZN18QStyleOptionSliderC1Ei_fnptr = cbfn; }
+// void* callback_ZN18QStyleOptionSliderC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN18QStyleOptionSliderC1Ei(void*cbfn)
+// { callback_ZN18QStyleOptionSliderC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSlider : public QStyleOptionSlider {
 public:

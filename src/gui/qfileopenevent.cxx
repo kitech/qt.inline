@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QFileOpenEvent is pure virtual: false
 // QFileOpenEvent has virtual projected: false
@@ -54,5 +55,12 @@ extern "C"
 void* C_ZNK14QFileOpenEvent3urlEv(void *this_) {
   auto rv = ((QFileOpenEvent*)this_)->url();
 return new QUrl(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:744
+// [1] bool openFile(class QFile &, class QIODevice::OpenMode)
+extern "C"
+bool C_ZNK14QFileOpenEvent8openFileER5QFile6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFile* file, QFlags<QIODevice::OpenModeFlag> flags) {
+  return (bool)((QFileOpenEvent*)this_)->openFile(*file, flags);
 }
 //  main block end

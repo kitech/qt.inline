@@ -2,117 +2,58 @@
 // /usr/include/qt/QtWidgets/qmenubar.h
 #include <qmenubar.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QMenuBar is pure virtual: false
 // QMenuBar has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:113
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:114
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:115
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:116
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:117
-// [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:118
-// [-2] void leaveEvent(class QEvent *)
-extern "C"
-void* callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar10leaveEventEP6QEvent(void*cbfn)
-{ callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:119
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:120
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:121
-// [-2] void actionEvent(class QActionEvent *)
-extern "C"
-void* callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar11actionEventEP12QActionEvent(void*cbfn)
-{ callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:122
-// [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:123
-// [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:124
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:125
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:126
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN8QMenuBar5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QMenuBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QMenuBar5eventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:127
-// [-2] void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
-extern "C"
-void* callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = 0;
-extern "C" void set_callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void*cbfn)
-{ callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar10leaveEventEP6QEvent(void*cbfn)
+// { callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar11actionEventEP12QActionEvent(void*cbfn)
+// { callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar12focusInEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QMenuBar5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QMenuBar5eventEP6QEvent(void*cbfn)
+// { callback_ZN8QMenuBar5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = 0;
+// extern "C" void set_callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void*cbfn)
+// { callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = cbfn; }
 
 class MyQMenuBar : public QMenuBar {
 public:
@@ -121,123 +62,215 @@ public:
 MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::changeEvent(arg0);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::keyPressEvent(arg0);
+  }
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::mouseReleaseEvent(arg0);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::mousePressEvent(arg0);
+  }
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::mouseMoveEvent(arg0);
+  }
   }
 // void leaveEvent(class QEvent *)
   virtual void leaveEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"leaveEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::leaveEvent(arg0);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::paintEvent(arg0);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::resizeEvent(arg0);
+  }
   }
 // void actionEvent(class QActionEvent *)
   virtual void actionEvent(QActionEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"actionEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::actionEvent(arg0);
+  }
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::focusOutEvent(arg0);
+  }
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::focusInEvent(arg0);
+  }
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QMenuBar::timerEvent(arg0);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0, arg1);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0, arg1);
+    // }
     return QMenuBar::eventFilter(arg0, arg1);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMenuBar5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMenuBar5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QMenuBar::event(arg0);
+  }
   }
 // void initStyleOption(class QStyleOptionMenuItem *, const class QAction *)
   virtual void initStyleOption(QStyleOptionMenuItem * option, const QAction * action) {
-    auto fnptr = ((void (*)(void* , QStyleOptionMenuItem *, const QAction *))(callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option, action);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionMenuItem *, const QAction *))(callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option, action);
+    // }
     QMenuBar::initStyleOption(option, action);
+  }
   }
 };
 

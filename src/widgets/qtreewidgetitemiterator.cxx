@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #include <qtreewidgetitemiterator.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTreeWidgetItemIterator is pure virtual: false
 // QTreeWidgetItemIterator has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qregularexpression.h
 #include <qregularexpression.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRegularExpressionMatch is pure virtual: false
 // QRegularExpressionMatch has virtual projected: false

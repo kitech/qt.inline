@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdirmodel.h
 #include <qdirmodel.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDirModel is pure virtual: false
 // QDirModel has virtual projected: false
@@ -12,6 +13,8 @@
 class MyQDirModel : public QDirModel {
 public:
   virtual ~MyQDirModel() {}
+// void QDirModel(const class QStringList &, class QDir::Filters, class QDir::SortFlags, class QObject *)
+MyQDirModel(const QStringList & nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) : QDirModel(nameFilters, filters, sort, parent) {}
 // void QDirModel(class QObject *)
 MyQDirModel(QObject * parent) : QDirModel(parent) {}
 };
@@ -22,6 +25,13 @@ MyQDirModel(QObject * parent) : QDirModel(parent) {}
 extern "C"
 void* C_ZNK9QDirModel10metaObjectEv(void *this_) {
   return (void*)((QDirModel*)this_)->metaObject();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:68
+// [-2] void QDirModel(const class QStringList &, class QDir::Filters, class QDir::SortFlags, class QObject *)
+extern "C"
+void* C_ZN9QDirModelC2ERK11QStringList6QFlagsIN4QDir6FilterEES3_INS4_8SortFlagEEP7QObject(QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort, QObject * parent) {
+  return  new QDirModel(*nameFilters, filters, sort, parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:70
@@ -145,6 +155,13 @@ void* C_ZNK9QDirModel12iconProviderEv(void *this_) {
 extern "C"
 void C_ZN9QDirModel14setNameFiltersERK11QStringList(void *this_, QStringList* filters) {
   ((QDirModel*)this_)->setNameFilters(*filters);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdirmodel.h:103
+// [-2] void setFilter(class QDir::Filters)
+extern "C"
+void C_ZN9QDirModel9setFilterE6QFlagsIN4QDir6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
+  ((QDirModel*)this_)->setFilter(filters);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdirmodel.h:104

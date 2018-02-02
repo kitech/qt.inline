@@ -2,33 +2,22 @@
 // /usr/include/qt/QtCore/qsignaltransition.h
 #include <qsignaltransition.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSignalTransition is pure virtual: false
 // QSignalTransition has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:83
-// [1] bool eventTest(class QEvent *)
-extern "C"
-void* callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QSignalTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:84
-// [-2] void onTransition(class QEvent *)
-extern "C"
-void* callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QSignalTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:86
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QSignalTransition5eventEP6QEvent(void*cbfn)
-{ callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QSignalTransition9eventTestEP6QEvent(void*cbfn)
+// { callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QSignalTransition12onTransitionEP6QEvent(void*cbfn)
+// { callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QSignalTransition5eventEP6QEvent(void*cbfn)
+// { callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSignalTransition : public QSignalTransition {
 public:
@@ -39,27 +28,47 @@ MyQSignalTransition(QState * sourceState) : QSignalTransition(sourceState) {}
 MyQSignalTransition(const QObject * sender, const char * signal, QState * sourceState) : QSignalTransition(sender, signal, sourceState) {}
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QSignalTransition::eventTest(event);
+  }
   }
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QSignalTransition::onTransition(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QSignalTransition::event(e);
+  }
   }
 };
 

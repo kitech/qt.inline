@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #include <qstandarditemmodel.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QStandardItem is pure virtual: false
 // QStandardItem has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:251
-// [-2] void emitDataChanged()
-extern "C"
-void* callback_ZN13QStandardItem15emitDataChangedEv_fnptr = 0;
-extern "C" void set_callback_ZN13QStandardItem15emitDataChangedEv(void*cbfn)
-{ callback_ZN13QStandardItem15emitDataChangedEv_fnptr = cbfn; }
+// void* callback_ZN13QStandardItem15emitDataChangedEv_fnptr = 0;
+// extern "C" void set_callback_ZN13QStandardItem15emitDataChangedEv(void*cbfn)
+// { callback_ZN13QStandardItem15emitDataChangedEv_fnptr = cbfn; }
 
 class MyQStandardItem : public QStandardItem {
 public:
@@ -29,11 +26,17 @@ MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, 
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 // void emitDataChanged()
   virtual void emitDataChanged() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN13QStandardItem15emitDataChangedEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN13QStandardItem15emitDataChangedEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QStandardItem::emitDataChanged();
+  }
   }
 };
 
@@ -202,6 +205,13 @@ void C_ZN13QStandardItem7setFontERK5QFont(void *this_, QFont* font) {
 extern "C"
 Qt::Alignment C_ZNK13QStandardItem13textAlignmentEv(void *this_) {
   return (Qt::Alignment)((QStandardItem*)this_)->textAlignment();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:118
+// [-2] void setTextAlignment(Qt::Alignment)
+extern "C"
+void C_ZN13QStandardItem16setTextAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> textAlignment) {
+  ((QStandardItem*)this_)->setTextAlignment(textAlignment);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:120

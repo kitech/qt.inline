@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qregexp.h
 #include <qregexp.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRegExp is pure virtual: false
 // QRegExp has virtual projected: false

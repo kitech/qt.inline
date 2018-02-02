@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlayoutitem.h
 #include <qlayoutitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSpacerItem is pure virtual: false
 // QSpacerItem has virtual projected: false

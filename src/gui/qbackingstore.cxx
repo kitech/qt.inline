@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbackingstore.h
 #include <qbackingstore.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QBackingStore is pure virtual: false
 // QBackingStore has virtual projected: false

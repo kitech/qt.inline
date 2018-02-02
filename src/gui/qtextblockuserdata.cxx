@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextobject.h
 #include <qtextobject.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextBlockUserData is pure virtual: false
 // QTextBlockUserData has virtual projected: false

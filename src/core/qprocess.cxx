@@ -2,40 +2,25 @@
 // /usr/include/qt/QtCore/qprocess.h
 #include <qprocess.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QProcess is pure virtual: false
 // QProcess has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qprocess.h:284
-// [-2] void setProcessState(enum QProcess::ProcessState)
-extern "C"
-void* callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = 0;
-extern "C" void set_callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(void*cbfn)
-{ callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qprocess.h:286
-// [-2] void setupChildProcess()
-extern "C"
-void* callback_ZN8QProcess17setupChildProcessEv_fnptr = 0;
-extern "C" void set_callback_ZN8QProcess17setupChildProcessEv(void*cbfn)
-{ callback_ZN8QProcess17setupChildProcessEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qprocess.h:289
-// [8] qint64 readData(char *, qint64)
-extern "C"
-void* callback_ZN8QProcess8readDataEPcx_fnptr = 0;
-extern "C" void set_callback_ZN8QProcess8readDataEPcx(void*cbfn)
-{ callback_ZN8QProcess8readDataEPcx_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qprocess.h:290
-// [8] qint64 writeData(const char *, qint64)
-extern "C"
-void* callback_ZN8QProcess9writeDataEPKcx_fnptr = 0;
-extern "C" void set_callback_ZN8QProcess9writeDataEPKcx(void*cbfn)
-{ callback_ZN8QProcess9writeDataEPKcx_fnptr = cbfn; }
+// void* callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = 0;
+// extern "C" void set_callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(void*cbfn)
+// { callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = cbfn; }
+// void* callback_ZN8QProcess17setupChildProcessEv_fnptr = 0;
+// extern "C" void set_callback_ZN8QProcess17setupChildProcessEv(void*cbfn)
+// { callback_ZN8QProcess17setupChildProcessEv_fnptr = cbfn; }
+// void* callback_ZN8QProcess8readDataEPcx_fnptr = 0;
+// extern "C" void set_callback_ZN8QProcess8readDataEPcx(void*cbfn)
+// { callback_ZN8QProcess8readDataEPcx_fnptr = cbfn; }
+// void* callback_ZN8QProcess9writeDataEPKcx_fnptr = 0;
+// extern "C" void set_callback_ZN8QProcess9writeDataEPKcx(void*cbfn)
+// { callback_ZN8QProcess9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQProcess : public QProcess {
 public:
@@ -44,35 +29,61 @@ public:
 MyQProcess(QObject * parent) : QProcess(parent) {}
 // void setProcessState(enum QProcess::ProcessState)
   virtual void setProcessState(QProcess::ProcessState state) {
-    auto fnptr = ((void (*)(void* , QProcess::ProcessState))(callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , state);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setProcessState", &handled, 1, (uint64_t)state, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QProcess::ProcessState))(callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , state);
+    // }
     QProcess::setProcessState(state);
+  }
   }
 // void setupChildProcess()
   virtual void setupChildProcess() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN8QProcess17setupChildProcessEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setupChildProcess", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN8QProcess17setupChildProcessEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QProcess::setupChildProcess();
+  }
   }
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
-    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN8QProcess8readDataEPcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, maxlen);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN8QProcess8readDataEPcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, maxlen);
+    // }
     return QProcess::readData(data, maxlen);
+  }
   }
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN8QProcess9writeDataEPKcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, len);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN8QProcess9writeDataEPKcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, len);
+    // }
     return QProcess::writeData(data, len);
+  }
   }
 };
 
@@ -99,11 +110,39 @@ void C_ZN8QProcessD2Ev(void *this_) {
   delete (QProcess*)(this_);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:161
+// [-2] void start(const class QString &, const class QStringList &, QIODevice::OpenMode)
+extern "C"
+void C_ZN8QProcess5startERK7QStringRK11QStringList6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* program, QStringList* arguments, QFlags<QIODevice::OpenModeFlag> mode) {
+  ((QProcess*)this_)->start(*program, *arguments, mode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:163
+// [-2] void start(const class QString &, QIODevice::OpenMode)
+extern "C"
+void C_ZN8QProcess5startERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* command, QFlags<QIODevice::OpenModeFlag> mode) {
+  ((QProcess*)this_)->start(*command, mode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:165
+// [-2] void start(QIODevice::OpenMode)
+extern "C"
+void C_ZN8QProcess5startE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> mode) {
+  ((QProcess*)this_)->start(mode);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:166
 // [1] bool startDetached(qint64 *)
 extern "C"
 bool C_ZN8QProcess13startDetachedEPx(void *this_, qint64 * pid) {
   return (bool)((QProcess*)this_)->startDetached(pid);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:167
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN8QProcess4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> mode) {
+  return (bool)((QProcess*)this_)->open(mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:169
@@ -203,6 +242,20 @@ void C_ZN8QProcess17closeWriteChannelEv(void *this_) {
 extern "C"
 void C_ZN8QProcess20setStandardInputFileERK7QString(void *this_, QString* fileName) {
   ((QProcess*)this_)->setStandardInputFile(*fileName);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:189
+// [-2] void setStandardOutputFile(const class QString &, QIODevice::OpenMode)
+extern "C"
+void C_ZN8QProcess21setStandardOutputFileERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* fileName, QFlags<QIODevice::OpenModeFlag> mode) {
+  ((QProcess*)this_)->setStandardOutputFile(*fileName, mode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:190
+// [-2] void setStandardErrorFile(const class QString &, QIODevice::OpenMode)
+extern "C"
+void C_ZN8QProcess20setStandardErrorFileERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* fileName, QFlags<QIODevice::OpenModeFlag> mode) {
+  ((QProcess*)this_)->setStandardErrorFile(*fileName, mode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:191

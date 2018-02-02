@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbytearray.h
 #include <qbytearray.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QByteArray is pure virtual: false
 // QByteArray has virtual projected: false
@@ -665,6 +666,14 @@ double C_ZNK10QByteArray8toDoubleEPb(void *this_, bool * ok) {
   return (double)((QByteArray*)this_)->toDouble(ok);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:353
+// [8] QByteArray toBase64(QByteArray::Base64Options)
+extern "C"
+void* C_ZNK10QByteArray8toBase64E6QFlagsINS_12Base64OptionEE(void *this_, QFlags<QByteArray::Base64Option> options) {
+  auto rv = ((QByteArray*)this_)->toBase64(options);
+return new QByteArray(rv);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbytearray.h:354
 // [8] QByteArray toBase64()
 extern "C"
@@ -814,6 +823,14 @@ return new QByteArray(rv);
 extern "C"
 void* C_ZN10QByteArray11fromRawDataEPKci(const char * arg0, int size) {
   auto rv = QByteArray::fromRawData(arg0, size);
+return new QByteArray(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:377
+// [8] QByteArray fromBase64(const class QByteArray &, QByteArray::Base64Options)
+extern "C"
+void* C_ZN10QByteArray10fromBase64ERKS_6QFlagsINS_12Base64OptionEE(QByteArray* base64, QFlags<QByteArray::Base64Option> options) {
+  auto rv = QByteArray::fromBase64(*base64, options);
 return new QByteArray(rv);
 }
 // Public static Visibility=Default Availability=Available

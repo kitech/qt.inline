@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgesture.h
 #include <qgesture.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QSwipeGesture is pure virtual: false
 // QSwipeGesture has virtual projected: false

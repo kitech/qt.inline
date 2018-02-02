@@ -2,26 +2,19 @@
 // /usr/include/qt/QtCore/qfutureinterface.h
 #include <qfutureinterface.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFutureInterfaceBase is pure virtual: false
 // QFutureInterfaceBase has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:131
-// [1] bool refT()
-extern "C"
-void* callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = 0;
-extern "C" void set_callback_ZNK20QFutureInterfaceBase4refTEv(void*cbfn)
-{ callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:132
-// [1] bool derefT()
-extern "C"
-void* callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = 0;
-extern "C" void set_callback_ZNK20QFutureInterfaceBase6derefTEv(void*cbfn)
-{ callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = cbfn; }
+// void* callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = 0;
+// extern "C" void set_callback_ZNK20QFutureInterfaceBase4refTEv(void*cbfn)
+// { callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = cbfn; }
+// void* callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = 0;
+// extern "C" void set_callback_ZNK20QFutureInterfaceBase6derefTEv(void*cbfn)
+// { callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = cbfn; }
 
 class MyQFutureInterfaceBase : public QFutureInterfaceBase {
 public:
@@ -30,19 +23,33 @@ public:
 MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterfaceBase(initialState) {}
 // bool refT()
   virtual bool refT() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase4refTEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"refT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase4refTEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QFutureInterfaceBase::refT();
+  }
   }
 // bool derefT()
   virtual bool derefT() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"derefT", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QFutureInterfaceBase::derefT();
+  }
   }
 };
 

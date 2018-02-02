@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qeventloop.h
 #include <qeventloop.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QEventLoopLocker is pure virtual: false
 // QEventLoopLocker has virtual projected: false

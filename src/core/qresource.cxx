@@ -2,26 +2,19 @@
 // /usr/include/qt/QtCore/qresource.h
 #include <qresource.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QResource is pure virtual: false
 // QResource has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qresource.h:86
-// [1] bool isDir()
-extern "C"
-void* callback_ZNK9QResource5isDirEv_fnptr = 0;
-extern "C" void set_callback_ZNK9QResource5isDirEv(void*cbfn)
-{ callback_ZNK9QResource5isDirEv_fnptr = cbfn; }
-// Protected inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qresource.h:87
-// [1] bool isFile()
-extern "C"
-void* callback_ZNK9QResource6isFileEv_fnptr = 0;
-extern "C" void set_callback_ZNK9QResource6isFileEv(void*cbfn)
-{ callback_ZNK9QResource6isFileEv_fnptr = cbfn; }
+// void* callback_ZNK9QResource5isDirEv_fnptr = 0;
+// extern "C" void set_callback_ZNK9QResource5isDirEv(void*cbfn)
+// { callback_ZNK9QResource5isDirEv_fnptr = cbfn; }
+// void* callback_ZNK9QResource6isFileEv_fnptr = 0;
+// extern "C" void set_callback_ZNK9QResource6isFileEv(void*cbfn)
+// { callback_ZNK9QResource6isFileEv_fnptr = cbfn; }
 
 class MyQResource : public QResource {
 public:
@@ -30,19 +23,33 @@ public:
 MyQResource(const QString & file, const QLocale & locale) : QResource(file, locale) {}
 // bool isDir()
   virtual bool isDir() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource5isDirEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isDir", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource5isDirEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QResource::isDir();
+  }
   }
 // bool isFile()
   virtual bool isFile() {
-    auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource6isFileEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isFile", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource6isFileEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QResource::isFile();
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlist.h
 #include <qlist.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QListData is pure virtual: false
 // QListData has virtual projected: false

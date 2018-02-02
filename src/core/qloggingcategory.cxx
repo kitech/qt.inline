@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qloggingcategory.h
 #include <qloggingcategory.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLoggingCategory is pure virtual: false
 // QLoggingCategory has virtual projected: false

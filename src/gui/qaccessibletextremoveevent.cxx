@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qaccessible.h
 #include <qaccessible.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessibleTextRemoveEvent is pure virtual: false
 // QAccessibleTextRemoveEvent has virtual projected: false

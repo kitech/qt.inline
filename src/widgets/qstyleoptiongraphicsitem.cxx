@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionGraphicsItem is pure virtual: false
 // QStyleOptionGraphicsItem has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:673
-// [-2] void QStyleOptionGraphicsItem(int)
-extern "C"
-void* callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN24QStyleOptionGraphicsItemC1Ei(void*cbfn)
-{ callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = cbfn; }
+// void* callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN24QStyleOptionGraphicsItemC1Ei(void*cbfn)
+// { callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionGraphicsItem : public QStyleOptionGraphicsItem {
 public:

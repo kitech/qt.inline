@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmimetype.h
 #include <qmimetype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMimeType is pure virtual: false
 // QMimeType has virtual projected: false

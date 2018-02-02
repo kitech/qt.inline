@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringmatcher.h
 #include <qstringmatcher.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStringMatcher is pure virtual: false
 // QStringMatcher has virtual projected: false

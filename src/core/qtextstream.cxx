@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtextstream.h
 #include <qtextstream.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTextStream is pure virtual: false
 // QTextStream has virtual projected: false
@@ -16,6 +17,12 @@ public:
 MyQTextStream() : QTextStream() {}
 // void QTextStream(class QIODevice *)
 MyQTextStream(QIODevice * device) : QTextStream(device) {}
+// void QTextStream(class QString *, class QIODevice::OpenMode)
+MyQTextStream(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(string, openMode) {}
+// void QTextStream(class QByteArray *, class QIODevice::OpenMode)
+MyQTextStream(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
+// void QTextStream(const class QByteArray &, class QIODevice::OpenMode)
+MyQTextStream(const QByteArray & array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -31,6 +38,27 @@ void* C_ZN11QTextStreamC2Ev() {
 extern "C"
 void* C_ZN11QTextStreamC2EP9QIODevice(QIODevice * device) {
   return  new QTextStream(device);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:96
+// [-2] void QTextStream(class QString *, class QIODevice::OpenMode)
+extern "C"
+void* C_ZN11QTextStreamC2EP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) {
+  return  new QTextStream(string, openMode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:97
+// [-2] void QTextStream(class QByteArray *, class QIODevice::OpenMode)
+extern "C"
+void* C_ZN11QTextStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) {
+  return  new QTextStream(array, openMode);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:98
+// [-2] void QTextStream(const class QByteArray &, class QIODevice::OpenMode)
+extern "C"
+void* C_ZN11QTextStreamC2ERK10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray* array, QFlags<QIODevice::OpenModeFlag> openMode) {
+  return  new QTextStream(*array, openMode);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:99
@@ -116,6 +144,13 @@ void C_ZN11QTextStream9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
 extern "C"
 void* C_ZNK11QTextStream6deviceEv(void *this_) {
   return (void*)((QTextStream*)this_)->device();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextstream.h:117
+// [-2] void setString(class QString *, class QIODevice::OpenMode)
+extern "C"
+void C_ZN11QTextStream9setStringEP7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString * string, QFlags<QIODevice::OpenModeFlag> openMode) {
+  ((QTextStream*)this_)->setString(string, openMode);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextstream.h:118

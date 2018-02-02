@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextBlockFormat is pure virtual: false
 // QTextBlockFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:649
-// [-2] void QTextBlockFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN16QTextBlockFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN16QTextBlockFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN16QTextBlockFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextBlockFormat : public QTextBlockFormat {
 public:
@@ -38,6 +35,13 @@ void* C_ZN16QTextBlockFormatC2Ev() {
 extern "C"
 bool C_ZNK16QTextBlockFormat7isValidEv(void *this_) {
   return (bool)((QTextBlockFormat*)this_)->isValid();
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:594
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN16QTextBlockFormat12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QTextBlockFormat*)this_)->setAlignment(alignment);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:595

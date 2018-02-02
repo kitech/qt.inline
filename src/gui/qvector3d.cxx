@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qvector3d.h
 #include <qvector3d.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QVector3D is pure virtual: false
 // QVector3D has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcryptographichash.h
 #include <qcryptographichash.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCryptographicHash is pure virtual: false
 // QCryptographicHash has virtual projected: false

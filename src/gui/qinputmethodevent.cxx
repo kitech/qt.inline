@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QInputMethodEvent is pure virtual: false
 // QInputMethodEvent has virtual projected: false

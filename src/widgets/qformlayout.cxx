@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qformlayout.h
 #include <qformlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFormLayout is pure virtual: false
 // QFormLayout has virtual projected: false
@@ -66,11 +67,25 @@ QFormLayout::RowWrapPolicy C_ZNK11QFormLayout13rowWrapPolicyEv(void *this_) {
   return (QFormLayout::RowWrapPolicy)((QFormLayout*)this_)->rowWrapPolicy();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qformlayout.h:98
+// [-2] void setLabelAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QFormLayout17setLabelAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QFormLayout*)this_)->setLabelAlignment(alignment);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:99
 // [4] Qt::Alignment labelAlignment()
 extern "C"
 Qt::Alignment C_ZNK11QFormLayout14labelAlignmentEv(void *this_) {
   return (Qt::Alignment)((QFormLayout*)this_)->labelAlignment();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qformlayout.h:100
+// [-2] void setFormAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QFormLayout16setFormAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QFormLayout*)this_)->setFormAlignment(alignment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qformlayout.h:101

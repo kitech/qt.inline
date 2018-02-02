@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qoffscreensurface.h
 #include <qoffscreensurface.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QOffscreenSurface is pure virtual: false
 // QOffscreenSurface has virtual projected: false

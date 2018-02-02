@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsysinfo.h
 #include <qsysinfo.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSysInfo is pure virtual: false
 // QSysInfo has virtual projected: false

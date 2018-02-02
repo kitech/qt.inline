@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qfontcombobox.h
 #include <qfontcombobox.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFontComboBox is pure virtual: false
 // QFontComboBox has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfontcombobox.h:90
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
+// { callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFontComboBox : public QFontComboBox {
 public:
@@ -23,11 +20,18 @@ public:
 MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QFontComboBox5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QFontComboBox5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QFontComboBox::event(e);
+  }
   }
 };
 
@@ -66,6 +70,13 @@ void C_ZN13QFontComboBox16setWritingSystemEN13QFontDatabase13WritingSystemE(void
 extern "C"
 QFontDatabase::WritingSystem C_ZNK13QFontComboBox13writingSystemEv(void *this_) {
   return (QFontDatabase::WritingSystem)((QFontComboBox*)this_)->writingSystem();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:77
+// [-2] void setFontFilters(QFontComboBox::FontFilters)
+extern "C"
+void C_ZN13QFontComboBox14setFontFiltersE6QFlagsINS_10FontFilterEE(void *this_, QFlags<QFontComboBox::FontFilter> filters) {
+  ((QFontComboBox*)this_)->setFontFilters(filters);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontcombobox.h:78

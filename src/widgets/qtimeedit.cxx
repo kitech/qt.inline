@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #include <qdatetimeedit.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTimeEdit is pure virtual: false
 // QTimeEdit has virtual projected: false

@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qscrollarea.h
 #include <qscrollarea.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QScrollArea is pure virtual: false
 // QScrollArea has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:81
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QScrollArea5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QScrollArea5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QScrollArea5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:82
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:83
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QScrollArea11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:84
-// [-2] void scrollContentsBy(int, int)
-extern "C"
-void* callback_ZN11QScrollArea16scrollContentsByEii_fnptr = 0;
-extern "C" void set_callback_ZN11QScrollArea16scrollContentsByEii(void*cbfn)
-{ callback_ZN11QScrollArea16scrollContentsByEii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:86
-// [8] QSize viewportSizeHint()
-extern "C"
-void* callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr = 0;
-extern "C" void set_callback_ZNK11QScrollArea16viewportSizeHintEv(void*cbfn)
-{ callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr = cbfn; }
+// void* callback_ZN11QScrollArea5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QScrollArea5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QScrollArea5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QScrollArea11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN11QScrollArea16scrollContentsByEii_fnptr = 0;
+// extern "C" void set_callback_ZN11QScrollArea16scrollContentsByEii(void*cbfn)
+// { callback_ZN11QScrollArea16scrollContentsByEii_fnptr = cbfn; }
+// void* callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr = 0;
+// extern "C" void set_callback_ZNK11QScrollArea16viewportSizeHintEv(void*cbfn)
+// { callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr = cbfn; }
 
 class MyQScrollArea : public QScrollArea {
 public:
@@ -51,43 +32,76 @@ public:
 MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QScrollArea5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QScrollArea5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QScrollArea::event(arg0);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0, arg1);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0, arg1);
+    // }
     return QScrollArea::eventFilter(arg0, arg1);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QScrollArea11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QScrollArea::resizeEvent(arg0);
+  }
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QScrollArea16scrollContentsByEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , dx, dy);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QScrollArea16scrollContentsByEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , dx, dy);
+    // }
     QScrollArea::scrollContentsBy(dx, dy);
+  }
   }
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
-    auto fnptr = ((QSize (*)(void* ))(callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QSize*)(irv);
+      // RecordRecordQSize
+    } else {
+    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK11QScrollArea16viewportSizeHintEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QScrollArea::viewportSizeHint();
+  }
   }
 };
 
@@ -169,6 +183,13 @@ bool C_ZN11QScrollArea18focusNextPrevChildEb(void *this_, bool next) {
 extern "C"
 Qt::Alignment C_ZNK11QScrollArea9alignmentEv(void *this_) {
   return (Qt::Alignment)((QScrollArea*)this_)->alignment();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollarea.h:74
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, Qt::Alignment arg0) {
+  ((QScrollArea*)this_)->setAlignment(arg0);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollarea.h:76

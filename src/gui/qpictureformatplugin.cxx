@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpictureformatplugin.h
 #include <qpictureformatplugin.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPictureFormatPlugin is pure virtual: true
 // QPictureFormatPlugin has virtual projected: false

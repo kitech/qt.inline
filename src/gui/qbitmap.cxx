@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbitmap.h
 #include <qbitmap.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QBitmap is pure virtual: false
 // QBitmap has virtual projected: false

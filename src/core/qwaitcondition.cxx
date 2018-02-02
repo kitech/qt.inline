@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qwaitcondition.h
 #include <qwaitcondition.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QWaitCondition is pure virtual: false
 // QWaitCondition has virtual projected: false

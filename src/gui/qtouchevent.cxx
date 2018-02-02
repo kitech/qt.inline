@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTouchEvent is pure virtual: false
 // QTouchEvent has virtual projected: false
@@ -70,6 +71,13 @@ void C_ZN11QTouchEvent9setWindowEP7QWindow(void *this_, QWindow * awindow) {
 extern "C"
 void C_ZN11QTouchEvent9setTargetEP7QObject(void *this_, QObject * atarget) {
   ((QTouchEvent*)this_)->setTarget(atarget);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:961
+// [-2] void setTouchPointStates(Qt::TouchPointStates)
+extern "C"
+void C_ZN11QTouchEvent19setTouchPointStatesE6QFlagsIN2Qt15TouchPointStateEE(void *this_, QFlags<Qt::TouchPointState> aTouchPointStates) {
+  ((QTouchEvent*)this_)->setTouchPointStates(aTouchPointStates);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:963

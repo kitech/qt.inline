@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qguiapplication.h
 #include <qguiapplication.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QGuiApplication is pure virtual: false
 // QGuiApplication has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qguiapplication.h:192
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN15QGuiApplication5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QGuiApplication5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QGuiApplication5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QGuiApplication5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QGuiApplication5eventEP6QEvent(void*cbfn)
+// { callback_ZN15QGuiApplication5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQGuiApplication : public QGuiApplication {
 public:
@@ -23,11 +20,18 @@ public:
 MyQGuiApplication(int & argc, char** argv, int arg2) : QGuiApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QGuiApplication5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QGuiApplication5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QGuiApplication::event(arg0);
+  }
   }
 };
 

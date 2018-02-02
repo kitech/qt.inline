@@ -2,243 +2,115 @@
 // /usr/include/qt/QtWidgets/qtreeview.h
 #include <qtreeview.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTreeView is pure virtual: false
 // QTreeView has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:167
-// [-2] void columnResized(int, int, int)
-extern "C"
-void* callback_ZN9QTreeView13columnResizedEiii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView13columnResizedEiii(void*cbfn)
-{ callback_ZN9QTreeView13columnResizedEiii_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:168
-// [-2] void columnCountChanged(int, int)
-extern "C"
-void* callback_ZN9QTreeView18columnCountChangedEii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView18columnCountChangedEii(void*cbfn)
-{ callback_ZN9QTreeView18columnCountChangedEii_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:169
-// [-2] void columnMoved()
-extern "C"
-void* callback_ZN9QTreeView11columnMovedEv_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView11columnMovedEv(void*cbfn)
-{ callback_ZN9QTreeView11columnMovedEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:170
-// [-2] void reexpand()
-extern "C"
-void* callback_ZN9QTreeView8reexpandEv_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView8reexpandEv(void*cbfn)
-{ callback_ZN9QTreeView8reexpandEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:171
-// [-2] void rowsRemoved(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii(void*cbfn)
-{ callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:175
-// [-2] void scrollContentsBy(int, int)
-extern "C"
-void* callback_ZN9QTreeView16scrollContentsByEii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView16scrollContentsByEii(void*cbfn)
-{ callback_ZN9QTreeView16scrollContentsByEii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:176
-// [-2] void rowsInserted(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void*cbfn)
-{ callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:177
-// [-2] void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
-{ callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:180
-// [4] int horizontalOffset()
-extern "C"
-void* callback_ZNK9QTreeView16horizontalOffsetEv_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView16horizontalOffsetEv(void*cbfn)
-{ callback_ZNK9QTreeView16horizontalOffsetEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:181
-// [4] int verticalOffset()
-extern "C"
-void* callback_ZNK9QTreeView14verticalOffsetEv_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView14verticalOffsetEv(void*cbfn)
-{ callback_ZNK9QTreeView14verticalOffsetEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:183
-// [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-extern "C"
-void* callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-{ callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:184
-// [8] QRegion visualRegionForSelection(const class QItemSelection &)
-extern "C"
-void* callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-{ callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:187
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:188
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:190
-// [-2] void drawTree(class QPainter *, const class QRegion &)
-extern "C"
-void* callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion(void*cbfn)
-{ callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:191
-// [-2] void drawRow(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
-void* callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
-{ callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:194
-// [-2] void drawBranches(class QPainter *, const class QRect &, const class QModelIndex &)
-extern "C"
-void* callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex(void*cbfn)
-{ callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:198
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:199
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:200
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:201
-// [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:202
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:204
-// [-2] void dragMoveEvent(class QDragMoveEvent *)
-extern "C"
-void* callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-{ callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:206
-// [1] bool viewportEvent(class QEvent *)
-extern "C"
-void* callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView13viewportEventEP6QEvent(void*cbfn)
-{ callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:208
-// [-2] void updateGeometries()
-extern "C"
-void* callback_ZN9QTreeView16updateGeometriesEv_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView16updateGeometriesEv(void*cbfn)
-{ callback_ZN9QTreeView16updateGeometriesEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:210
-// [8] QSize viewportSizeHint()
-extern "C"
-void* callback_ZNK9QTreeView16viewportSizeHintEv_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView16viewportSizeHintEv(void*cbfn)
-{ callback_ZNK9QTreeView16viewportSizeHintEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:212
-// [4] int sizeHintForColumn(int)
-extern "C"
-void* callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView17sizeHintForColumnEi(void*cbfn)
-{ callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:213
-// [4] int indexRowSizeHint(const class QModelIndex &)
-extern "C"
-void* callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex(void*cbfn)
-{ callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:214
-// [4] int rowHeight(const class QModelIndex &)
-extern "C"
-void* callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView9rowHeightERK11QModelIndex(void*cbfn)
-{ callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:216
-// [-2] void horizontalScrollbarAction(int)
-extern "C"
-void* callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView25horizontalScrollbarActionEi(void*cbfn)
-{ callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:218
-// [1] bool isIndexHidden(const class QModelIndex &)
-extern "C"
-void* callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex(void*cbfn)
-{ callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:219
-// [-2] void selectionChanged(const class QItemSelection &, const class QItemSelection &)
-extern "C"
-void* callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2_(void*cbfn)
-{ callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreeview.h:221
-// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
-extern "C"
-void* callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr = 0;
-extern "C" void set_callback_ZN9QTreeView14currentChangedERK11QModelIndexS2_(void*cbfn)
-{ callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
+// void* callback_ZN9QTreeView13columnResizedEiii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView13columnResizedEiii(void*cbfn)
+// { callback_ZN9QTreeView13columnResizedEiii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView18columnCountChangedEii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView18columnCountChangedEii(void*cbfn)
+// { callback_ZN9QTreeView18columnCountChangedEii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView11columnMovedEv_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView11columnMovedEv(void*cbfn)
+// { callback_ZN9QTreeView11columnMovedEv_fnptr = cbfn; }
+// void* callback_ZN9QTreeView8reexpandEv_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView8reexpandEv(void*cbfn)
+// { callback_ZN9QTreeView8reexpandEv_fnptr = cbfn; }
+// void* callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii(void*cbfn)
+// { callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView16scrollContentsByEii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView16scrollContentsByEii(void*cbfn)
+// { callback_ZN9QTreeView16scrollContentsByEii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii(void*cbfn)
+// { callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
+// { callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
+// { callback_ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView16horizontalOffsetEv_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView16horizontalOffsetEv(void*cbfn)
+// { callback_ZNK9QTreeView16horizontalOffsetEv_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView14verticalOffsetEv_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView14verticalOffsetEv(void*cbfn)
+// { callback_ZNK9QTreeView14verticalOffsetEv_fnptr = cbfn; }
+// void* callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
+// { callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
+// { callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
+// void* callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion(void*cbfn)
+// { callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
+// { callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex(void*cbfn)
+// { callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent(void*cbfn)
+// { callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView13viewportEventEP6QEvent(void*cbfn)
+// { callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN9QTreeView16updateGeometriesEv_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView16updateGeometriesEv(void*cbfn)
+// { callback_ZN9QTreeView16updateGeometriesEv_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView16viewportSizeHintEv_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView16viewportSizeHintEv(void*cbfn)
+// { callback_ZNK9QTreeView16viewportSizeHintEv_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView17sizeHintForColumnEi(void*cbfn)
+// { callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex(void*cbfn)
+// { callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView9rowHeightERK11QModelIndex(void*cbfn)
+// { callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView25horizontalScrollbarActionEi(void*cbfn)
+// { callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr = cbfn; }
+// void* callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex(void*cbfn)
+// { callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2_(void*cbfn)
+// { callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
+// void* callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr = 0;
+// extern "C" void set_callback_ZN9QTreeView14currentChangedERK11QModelIndexS2_(void*cbfn)
+// { callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
 
 class MyQTreeView : public QTreeView {
 public:
@@ -247,267 +119,489 @@ public:
 MyQTreeView(QWidget * parent) : QTreeView(parent) {}
 // void columnResized(int, int, int)
   virtual void columnResized(int column, int oldSize, int newSize) {
-    auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN9QTreeView13columnResizedEiii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , column, oldSize, newSize);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"columnResized", &handled, 3, (uint64_t)column, (uint64_t)oldSize, (uint64_t)newSize, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN9QTreeView13columnResizedEiii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , column, oldSize, newSize);
+    // }
     QTreeView::columnResized(column, oldSize, newSize);
+  }
   }
 // void columnCountChanged(int, int)
   virtual void columnCountChanged(int oldCount, int newCount) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTreeView18columnCountChangedEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , oldCount, newCount);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"columnCountChanged", &handled, 2, (uint64_t)oldCount, (uint64_t)newCount, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTreeView18columnCountChangedEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , oldCount, newCount);
+    // }
     QTreeView::columnCountChanged(oldCount, newCount);
+  }
   }
 // void columnMoved()
   virtual void columnMoved() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView11columnMovedEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"columnMoved", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView11columnMovedEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QTreeView::columnMoved();
+  }
   }
 // void reexpand()
   virtual void reexpand() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView8reexpandEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"reexpand", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView8reexpandEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QTreeView::reexpand();
+  }
   }
 // void rowsRemoved(const class QModelIndex &, int, int)
   virtual void rowsRemoved(const QModelIndex & parent, int first, int last) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, first, last);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"rowsRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)first, (uint64_t)last, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView11rowsRemovedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, first, last);
+    // }
     QTreeView::rowsRemoved(parent, first, last);
+  }
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTreeView16scrollContentsByEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , dx, dy);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTreeView16scrollContentsByEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , dx, dy);
+    // }
     QTreeView::scrollContentsBy(dx, dy);
+  }
   }
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, start, end);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView12rowsInsertedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, start, end);
+    // }
     QTreeView::rowsInserted(parent, start, end);
+  }
   }
 // void rowsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void rowsAboutToBeRemoved(const QModelIndex & parent, int start, int end) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, start, end);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"rowsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN9QTreeView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, start, end);
+    // }
     QTreeView::rowsAboutToBeRemoved(parent, start, end);
+  }
+  }
+// QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction cursorAction, QFlags<Qt::KeyboardModifier> modifiers) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"moveCursor", &handled, 2, (uint64_t)cursorAction, (uint64_t)modifiers, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndex*)(irv);
+      // RecordRecordQModelIndex
+    } else {
+    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, QFlags<Qt::KeyboardModifier>))(callback_ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , cursorAction, modifiers);
+    // }
+    return QTreeView::moveCursor(cursorAction, modifiers);
+  }
   }
 // int horizontalOffset()
   virtual int horizontalOffset() {
-    auto fnptr = ((int (*)(void* ))(callback_ZNK9QTreeView16horizontalOffsetEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* ))(callback_ZNK9QTreeView16horizontalOffsetEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QTreeView::horizontalOffset();
+  }
   }
 // int verticalOffset()
   virtual int verticalOffset() {
-    auto fnptr = ((int (*)(void* ))(callback_ZNK9QTreeView14verticalOffsetEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* ))(callback_ZNK9QTreeView14verticalOffsetEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QTreeView::verticalOffset();
+  }
   }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> command) {
-    auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QRect*)&rect, command);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)command, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN9QTreeView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QRect*)&rect, command);
+    // }
     QTreeView::setSelection(rect, command);
+  }
   }
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-    auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QItemSelection*)&selection);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QRegion*)(irv);
+      // RecordRecordQRegion
+    } else {
+    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK9QTreeView24visualRegionForSelectionERK14QItemSelection_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QItemSelection*)&selection);
+    // }
     return QTreeView::visualRegionForSelection(selection);
+  }
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTreeView10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::timerEvent(event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QTreeView10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::paintEvent(event);
+  }
   }
 // void drawTree(class QPainter *, const class QRegion &)
   virtual void drawTree(QPainter * painter, const QRegion & region) {
-    auto fnptr = ((void (*)(void* , QPainter *, QRegion*))(callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QRegion*)&region);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawTree", &handled, 2, (uint64_t)painter, (uint64_t)&region, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QRegion*))(callback_ZNK9QTreeView8drawTreeEP8QPainterRK7QRegion_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QRegion*)&region);
+    // }
     QTreeView::drawTree(painter, region);
+  }
   }
 // void drawRow(class QPainter *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual void drawRow(QPainter * painter, const QStyleOptionViewItem & options, const QModelIndex & index) {
-    auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QModelIndex*))(callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QStyleOptionViewItem*)&options, (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawRow", &handled, 3, (uint64_t)painter, (uint64_t)&options, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QModelIndex*))(callback_ZNK9QTreeView7drawRowEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QStyleOptionViewItem*)&options, (QModelIndex*)&index);
+    // }
     QTreeView::drawRow(painter, options, index);
+  }
   }
 // void drawBranches(class QPainter *, const class QRect &, const class QModelIndex &)
   virtual void drawBranches(QPainter * painter, const QRect & rect, const QModelIndex & index) {
-    auto fnptr = ((void (*)(void* , QPainter *, QRect*, QModelIndex*))(callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QRect*)&rect, (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"drawBranches", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QRect*, QModelIndex*))(callback_ZNK9QTreeView12drawBranchesEP8QPainterRK5QRectRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QRect*)&rect, (QModelIndex*)&index);
+    // }
     QTreeView::drawBranches(painter, rect, index);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::mousePressEvent(event);
+  }
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView17mouseReleaseEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::mouseReleaseEvent(event);
+  }
   }
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::mouseDoubleClickEvent(event);
+  }
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTreeView14mouseMoveEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::mouseMoveEvent(event);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTreeView13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::keyPressEvent(event);
+  }
   }
 // void dragMoveEvent(class QDragMoveEvent *)
   virtual void dragMoveEvent(QDragMoveEvent * event) {
-    auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN9QTreeView13dragMoveEventEP14QDragMoveEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTreeView::dragMoveEvent(event);
+  }
   }
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"viewportEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QTreeView13viewportEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QTreeView::viewportEvent(event);
+  }
   }
 // void updateGeometries()
   virtual void updateGeometries() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView16updateGeometriesEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN9QTreeView16updateGeometriesEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QTreeView::updateGeometries();
+  }
   }
 // QSize viewportSizeHint()
   virtual QSize viewportSizeHint() {
-    auto fnptr = ((QSize (*)(void* ))(callback_ZNK9QTreeView16viewportSizeHintEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"viewportSizeHint", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QSize*)(irv);
+      // RecordRecordQSize
+    } else {
+    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK9QTreeView16viewportSizeHintEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QTreeView::viewportSizeHint();
+  }
   }
 // int sizeHintForColumn(int)
   virtual int sizeHintForColumn(int column) {
-    auto fnptr = ((int (*)(void* , int))(callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , column);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHintForColumn", &handled, 1, (uint64_t)column, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , int))(callback_ZNK9QTreeView17sizeHintForColumnEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , column);
+    // }
     return QTreeView::sizeHintForColumn(column);
+  }
   }
 // int indexRowSizeHint(const class QModelIndex &)
   virtual int indexRowSizeHint(const QModelIndex & index) {
-    auto fnptr = ((int (*)(void* , QModelIndex*))(callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"indexRowSizeHint", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QModelIndex*))(callback_ZNK9QTreeView16indexRowSizeHintERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QTreeView::indexRowSizeHint(index);
+  }
   }
 // int rowHeight(const class QModelIndex &)
   virtual int rowHeight(const QModelIndex & index) {
-    auto fnptr = ((int (*)(void* , QModelIndex*))(callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"rowHeight", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QModelIndex*))(callback_ZNK9QTreeView9rowHeightERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QTreeView::rowHeight(index);
+  }
   }
 // void horizontalScrollbarAction(int)
   virtual void horizontalScrollbarAction(int action) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , action);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"horizontalScrollbarAction", &handled, 1, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN9QTreeView25horizontalScrollbarActionEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , action);
+    // }
     QTreeView::horizontalScrollbarAction(action);
+  }
   }
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
-    auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK9QTreeView13isIndexHiddenERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QTreeView::isIndexHidden(index);
+  }
   }
 // void selectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void selectionChanged(const QItemSelection & selected, const QItemSelection & deselected) {
-    auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QItemSelection*)&selected, (QItemSelection*)&deselected);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"selectionChanged", &handled, 2, (uint64_t)&selected, (uint64_t)&deselected, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN9QTreeView16selectionChangedERK14QItemSelectionS2__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QItemSelection*)&selected, (QItemSelection*)&deselected);
+    // }
     QTreeView::selectionChanged(selected, deselected);
+  }
   }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & previous) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&previous, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN9QTreeView14currentChangedERK11QModelIndexS2__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
+    // }
     QTreeView::currentChanged(current, previous);
+  }
   }
 };
 

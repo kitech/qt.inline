@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #include <qgraphicslinearlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsLinearLayout is pure virtual: false
 // QGraphicsLinearLayout has virtual projected: false
@@ -136,6 +137,13 @@ void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void 
 extern "C"
 int C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
   return (int)((QGraphicsLinearLayout*)this_)->stretchFactor(item);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:80
+// [-2] void setAlignment(class QGraphicsLayoutItem *, Qt::Alignment)
+extern "C"
+void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QGraphicsLinearLayout*)this_)->setAlignment(item, alignment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:81

@@ -2,54 +2,31 @@
 // /usr/include/qt/QtWidgets/qlayout.h
 #include <qlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QLayout is pure virtual: true
 // QLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:145
-// [-2] void widgetEvent(class QEvent *)
-extern "C"
-void* callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QLayout11widgetEventEP6QEvent(void*cbfn)
-{ callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:146
-// [-2] void childEvent(class QChildEvent *)
-extern "C"
-void* callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QLayout10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:147
-// [-2] void addChildLayout(class QLayout *)
-extern "C"
-void* callback_ZN7QLayout14addChildLayoutEPS__fnptr = 0;
-extern "C" void set_callback_ZN7QLayout14addChildLayoutEPS_(void*cbfn)
-{ callback_ZN7QLayout14addChildLayoutEPS__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:148
-// [-2] void addChildWidget(class QWidget *)
-extern "C"
-void* callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = 0;
-extern "C" void set_callback_ZN7QLayout14addChildWidgetEP7QWidget(void*cbfn)
-{ callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:149
-// [1] bool adoptLayout(class QLayout *)
-extern "C"
-void* callback_ZN7QLayout11adoptLayoutEPS__fnptr = 0;
-extern "C" void set_callback_ZN7QLayout11adoptLayoutEPS_(void*cbfn)
-{ callback_ZN7QLayout11adoptLayoutEPS__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayout.h:151
-// [16] QRect alignmentRect(const class QRect &)
-extern "C"
-void* callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = 0;
-extern "C" void set_callback_ZNK7QLayout13alignmentRectERK5QRect(void*cbfn)
-{ callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = cbfn; }
+// void* callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QLayout11widgetEventEP6QEvent(void*cbfn)
+// { callback_ZN7QLayout11widgetEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QLayout10childEventEP11QChildEvent(void*cbfn)
+// { callback_ZN7QLayout10childEventEP11QChildEvent_fnptr = cbfn; }
+// void* callback_ZN7QLayout14addChildLayoutEPS__fnptr = 0;
+// extern "C" void set_callback_ZN7QLayout14addChildLayoutEPS_(void*cbfn)
+// { callback_ZN7QLayout14addChildLayoutEPS__fnptr = cbfn; }
+// void* callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = 0;
+// extern "C" void set_callback_ZN7QLayout14addChildWidgetEP7QWidget(void*cbfn)
+// { callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr = cbfn; }
+// void* callback_ZN7QLayout11adoptLayoutEPS__fnptr = 0;
+// extern "C" void set_callback_ZN7QLayout11adoptLayoutEPS_(void*cbfn)
+// { callback_ZN7QLayout11adoptLayoutEPS__fnptr = cbfn; }
+// void* callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = 0;
+// extern "C" void set_callback_ZNK7QLayout13alignmentRectERK5QRect(void*cbfn)
+// { callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr = cbfn; }
 
 class MyQLayout : public QLayout {
 public:
@@ -60,51 +37,89 @@ MyQLayout(QWidget * parent) : QLayout(parent) {}
 MyQLayout() : QLayout() {}
 // void widgetEvent(class QEvent *)
   virtual void widgetEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QLayout11widgetEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"widgetEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QLayout11widgetEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QLayout::widgetEvent(arg0);
+  }
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * e) {
-    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QLayout10childEventEP11QChildEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QLayout10childEventEP11QChildEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QLayout::childEvent(e);
+  }
   }
 // void addChildLayout(class QLayout *)
   virtual void addChildLayout(QLayout * l) {
-    auto fnptr = ((void (*)(void* , QLayout *))(callback_ZN7QLayout14addChildLayoutEPS__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , l);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildLayout", &handled, 1, (uint64_t)l, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QLayout *))(callback_ZN7QLayout14addChildLayoutEPS__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , l);
+    // }
     QLayout::addChildLayout(l);
+  }
   }
 // void addChildWidget(class QWidget *)
   virtual void addChildWidget(QWidget * w) {
-    auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , w);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"addChildWidget", &handled, 1, (uint64_t)w, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QLayout14addChildWidgetEP7QWidget_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , w);
+    // }
     QLayout::addChildWidget(w);
+  }
   }
 // bool adoptLayout(class QLayout *)
   virtual bool adoptLayout(QLayout * layout) {
-    auto fnptr = ((bool (*)(void* , QLayout *))(callback_ZN7QLayout11adoptLayoutEPS__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , layout);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"adoptLayout", &handled, 1, (uint64_t)layout, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QLayout *))(callback_ZN7QLayout11adoptLayoutEPS__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , layout);
+    // }
     return QLayout::adoptLayout(layout);
+  }
   }
 // QRect alignmentRect(const class QRect &)
   virtual QRect alignmentRect(const QRect & arg0) {
-    auto fnptr = ((QRect (*)(void* , QRect*))(callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QRect*)&arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"alignmentRect", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QRect*)(irv);
+      // RecordRecordQRect
+    } else {
+    // auto fnptr = ((QRect (*)(void* , QRect*))(callback_ZNK7QLayout13alignmentRectERK5QRect_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QRect*)&arg0);
+    // }
     return QLayout::alignmentRect(arg0);
+  }
   }
 };
 
@@ -202,6 +217,20 @@ extern "C"
 void* C_ZNK7QLayout12contentsRectEv(void *this_) {
   auto rv = ((QLayout*)this_)->contentsRect();
 return new QRect(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:96
+// [1] bool setAlignment(class QWidget *, Qt::Alignment)
+extern "C"
+bool C_ZN7QLayout12setAlignmentEP7QWidget6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * w, QFlags<Qt::AlignmentFlag> alignment) {
+  return (bool)((QLayout*)this_)->setAlignment(w, alignment);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:97
+// [1] bool setAlignment(class QLayout *, Qt::Alignment)
+extern "C"
+bool C_ZN7QLayout12setAlignmentEPS_6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * l, QFlags<Qt::AlignmentFlag> alignment) {
+  return (bool)((QLayout*)this_)->setAlignment(l, alignment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:100
@@ -366,6 +395,13 @@ bool C_ZNK7QLayout7isEmptyEv(void *this_) {
 extern "C"
 QSizePolicy::ControlTypes C_ZNK7QLayout12controlTypesEv(void *this_) {
   return (QSizePolicy::ControlTypes)((QLayout*)this_)->controlTypes();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayout.h:130
+// [8] QLayoutItem * replaceWidget(class QWidget *, class QWidget *, Qt::FindChildOptions)
+extern "C"
+void* C_ZN7QLayout13replaceWidgetEP7QWidgetS1_6QFlagsIN2Qt15FindChildOptionEE(void *this_, QWidget * from, QWidget * to, QFlags<Qt::FindChildOption> options) {
+  return (void*)((QLayout*)this_)->replaceWidget(from, to, options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayout.h:132

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qitemselectionmodel.h
 #include <qitemselectionmodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QItemSelection is pure virtual: false
 // QItemSelection has virtual projected: false

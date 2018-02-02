@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qtreewidget.h
 #include <qtreewidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTreeWidgetItem is pure virtual: false
 // QTreeWidgetItem has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidget.h:203
-// [-2] void emitDataChanged()
-extern "C"
-void* callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = 0;
-extern "C" void set_callback_ZN15QTreeWidgetItem15emitDataChangedEv(void*cbfn)
-{ callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = cbfn; }
+// void* callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = 0;
+// extern "C" void set_callback_ZN15QTreeWidgetItem15emitDataChangedEv(void*cbfn)
+// { callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = cbfn; }
 
 class MyQTreeWidgetItem : public QTreeWidgetItem {
 public:
@@ -37,11 +34,17 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, const QStringList & strings, int typ
 MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type) : QTreeWidgetItem(parent, after, type) {}
 // void emitDataChanged()
   virtual void emitDataChanged() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"emitDataChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QTreeWidgetItem::emitDataChanged();
+  }
   }
 };
 

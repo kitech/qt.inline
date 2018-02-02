@@ -2,166 +2,79 @@
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #include <qgraphicsitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsTextItem is pure virtual: false
 // QGraphicsTextItem has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:930
-// [1] bool sceneEvent(class QEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:931
-// [-2] void mousePressEvent(class QGraphicsSceneMouseEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:932
-// [-2] void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:933
-// [-2] void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:934
-// [-2] void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:935
-// [-2] void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:936
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:937
-// [-2] void keyReleaseEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:938
-// [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:939
-// [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:940
-// [-2] void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:941
-// [-2] void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:942
-// [-2] void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:943
-// [-2] void dropEvent(class QGraphicsSceneDragDropEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:944
-// [-2] void inputMethodEvent(class QInputMethodEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:945
-// [-2] void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:946
-// [-2] void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:947
-// [-2] void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
-extern "C"
-void* callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-{ callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:949
-// [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
-extern "C"
-void* callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = 0;
-extern "C" void set_callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE(void*cbfn)
-{ callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:951
-// [1] bool supportsExtension(enum QGraphicsItem::Extension)
-extern "C"
-void* callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-extern "C" void set_callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-{ callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:952
-// [-2] void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
-extern "C"
-void* callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-extern "C" void set_callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-{ callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:953
-// [16] QVariant extension(const class QVariant &)
-extern "C"
-void* callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = 0;
-extern "C" void set_callback_ZNK17QGraphicsTextItem9extensionERK8QVariant(void*cbfn)
-{ callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
+// { callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
+// void* callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = 0;
+// extern "C" void set_callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE(void*cbfn)
+// { callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = cbfn; }
+// void* callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
+// extern "C" void set_callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
+// { callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
+// void* callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
+// extern "C" void set_callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
+// { callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
+// void* callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = 0;
+// extern "C" void set_callback_ZNK17QGraphicsTextItem9extensionERK8QVariant(void*cbfn)
+// { callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsTextItem : public QGraphicsTextItem {
 public:
@@ -172,179 +85,315 @@ MyQGraphicsTextItem(QGraphicsItem * parent) : QGraphicsTextItem(parent) {}
 MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTextItem(text, parent) {}
 // bool sceneEvent(class QEvent *)
   virtual bool sceneEvent(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sceneEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QGraphicsTextItem::sceneEvent(event);
+  }
   }
 // void mousePressEvent(class QGraphicsSceneMouseEvent *)
   virtual void mousePressEvent(QGraphicsSceneMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::mousePressEvent(event);
+  }
   }
 // void mouseMoveEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseMoveEvent(QGraphicsSceneMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::mouseMoveEvent(event);
+  }
   }
 // void mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::mouseReleaseEvent(event);
+  }
   }
 // void mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
   virtual void mouseDoubleClickEvent(QGraphicsSceneMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::mouseDoubleClickEvent(event);
+  }
   }
 // void contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
   virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneContextMenuEvent *))(callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneContextMenuEvent *))(callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::contextMenuEvent(event);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::keyPressEvent(event);
+  }
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::keyReleaseEvent(event);
+  }
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::focusInEvent(event);
+  }
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * event) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::focusOutEvent(event);
+  }
   }
 // void dragEnterEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragEnterEvent(QGraphicsSceneDragDropEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dragEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::dragEnterEvent(event);
+  }
   }
 // void dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragLeaveEvent(QGraphicsSceneDragDropEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dragLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::dragLeaveEvent(event);
+  }
   }
 // void dragMoveEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dragMoveEvent(QGraphicsSceneDragDropEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dragMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::dragMoveEvent(event);
+  }
   }
 // void dropEvent(class QGraphicsSceneDragDropEvent *)
   virtual void dropEvent(QGraphicsSceneDragDropEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dropEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::dropEvent(event);
+  }
   }
 // void inputMethodEvent(class QInputMethodEvent *)
   virtual void inputMethodEvent(QInputMethodEvent * event) {
-    auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::inputMethodEvent(event);
+  }
   }
 // void hoverEnterEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverEnterEvent(QGraphicsSceneHoverEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverEnterEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::hoverEnterEvent(event);
+  }
   }
 // void hoverMoveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverMoveEvent(QGraphicsSceneHoverEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverMoveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::hoverMoveEvent(event);
+  }
   }
 // void hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
   virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent * event) {
-    auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"hoverLeaveEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QGraphicsTextItem::hoverLeaveEvent(event);
+  }
   }
 // QVariant inputMethodQuery(Qt::InputMethodQuery)
   virtual QVariant inputMethodQuery(Qt::InputMethodQuery query) {
-    auto fnptr = ((QVariant (*)(void* , Qt::InputMethodQuery))(callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , query);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"inputMethodQuery", &handled, 1, (uint64_t)query, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , Qt::InputMethodQuery))(callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , query);
+    // }
     return QGraphicsTextItem::inputMethodQuery(query);
+  }
   }
 // bool supportsExtension(enum QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) {
-    auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , extension);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"supportsExtension", &handled, 1, (uint64_t)extension, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , extension);
+    // }
     return QGraphicsTextItem::supportsExtension(extension);
+  }
   }
 // void setExtension(enum QGraphicsItem::Extension, const class QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant) {
-    auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , extension, (QVariant*)&variant);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setExtension", &handled, 2, (uint64_t)extension, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , extension, (QVariant*)&variant);
+    // }
     QGraphicsTextItem::setExtension(extension, variant);
+  }
   }
 // QVariant extension(const class QVariant &)
   virtual QVariant extension(const QVariant & variant) {
-    auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&variant);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"extension", &handled, 1, (uint64_t)&variant, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&variant);
+    // }
     return QGraphicsTextItem::extension(variant);
+  }
   }
 };
 

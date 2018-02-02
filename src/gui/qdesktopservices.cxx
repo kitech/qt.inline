@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qdesktopservices.h
 #include <qdesktopservices.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QDesktopServices is pure virtual: false
 // QDesktopServices has virtual projected: false

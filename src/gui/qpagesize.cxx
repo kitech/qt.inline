@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpagesize.h
 #include <qpagesize.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPageSize is pure virtual: false
 // QPageSize has virtual projected: false

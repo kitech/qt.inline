@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QDragMoveEvent is pure virtual: false
 // QDragMoveEvent has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQDragMoveEvent : public QDragMoveEvent {
 public:
   virtual ~MyQDragMoveEvent() {}
+// void QDragMoveEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
+MyQDragMoveEvent(const QPoint & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type) : QDragMoveEvent(pos, actions, data, buttons, modifiers, type) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:642
+// [-2] void QDragMoveEvent(const class QPoint &, Qt::DropActions, const class QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, enum QEvent::Type)
+extern "C"
+void* C_ZN14QDragMoveEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(QPoint* pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type) {
+  return  new QDragMoveEvent(*pos, actions, data, buttons, modifiers, type);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:644
 // [-2] void ~QDragMoveEvent()

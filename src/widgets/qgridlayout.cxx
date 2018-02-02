@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qgridlayout.h
 #include <qgridlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGridLayout is pure virtual: false
 // QGridLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgridlayout.h:123
-// [-2] void addItem(class QLayoutItem *)
-extern "C"
-void* callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = 0;
-extern "C" void set_callback_ZN11QGridLayout7addItemEP11QLayoutItem(void*cbfn)
-{ callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = cbfn; }
+// void* callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = 0;
+// extern "C" void set_callback_ZN11QGridLayout7addItemEP11QLayoutItem(void*cbfn)
+// { callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = cbfn; }
 
 class MyQGridLayout : public QGridLayout {
 public:
@@ -25,11 +22,17 @@ MyQGridLayout(QWidget * parent) : QGridLayout(parent) {}
 MyQGridLayout() : QGridLayout() {}
 // void addItem(class QLayoutItem *)
   virtual void addItem(QLayoutItem * arg0) {
-    auto fnptr = ((void (*)(void* , QLayoutItem *))(callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"addItem", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QLayoutItem *))(callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QGridLayout::addItem(arg0);
+  }
   }
 };
 
@@ -250,6 +253,34 @@ void C_ZN11QGridLayout9addWidgetEP7QWidget(void *this_, QWidget * w) {
   ((QGridLayout*)this_)->addWidget(w);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:103
+// [-2] void addWidget(class QWidget *, int, int, Qt::Alignment)
+extern "C"
+void C_ZN11QGridLayout9addWidgetEP7QWidgetii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, Qt::Alignment arg3) {
+  ((QGridLayout*)this_)->addWidget(arg0, row, column, arg3);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:104
+// [-2] void addWidget(class QWidget *, int, int, int, int, Qt::Alignment)
+extern "C"
+void C_ZN11QGridLayout9addWidgetEP7QWidgetiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+  ((QGridLayout*)this_)->addWidget(arg0, row, column, rowSpan, columnSpan, arg5);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:105
+// [-2] void addLayout(class QLayout *, int, int, Qt::Alignment)
+extern "C"
+void C_ZN11QGridLayout9addLayoutEP7QLayoutii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, Qt::Alignment arg3) {
+  ((QGridLayout*)this_)->addLayout(arg0, row, column, arg3);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:106
+// [-2] void addLayout(class QLayout *, int, int, int, int, Qt::Alignment)
+extern "C"
+void C_ZN11QGridLayout9addLayoutEP7QLayoutiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayout * arg0, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+  ((QGridLayout*)this_)->addLayout(arg0, row, column, rowSpan, columnSpan, arg5);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:108
 // [-2] void setOriginCorner(Qt::Corner)
 extern "C"
@@ -297,6 +328,13 @@ int C_ZNK11QGridLayout5countEv(void *this_) {
 extern "C"
 void C_ZN11QGridLayout11setGeometryERK5QRect(void *this_, QRect* arg0) {
   ((QGridLayout*)this_)->setGeometry(*arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:117
+// [-2] void addItem(class QLayoutItem *, int, int, int, int, Qt::Alignment)
+extern "C"
+void C_ZN11QGridLayout7addItemEP11QLayoutItemiiii6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QLayoutItem * item, int row, int column, int rowSpan, int columnSpan, Qt::Alignment arg5) {
+  ((QGridLayout*)this_)->addItem(item, row, column, rowSpan, columnSpan, arg5);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:119

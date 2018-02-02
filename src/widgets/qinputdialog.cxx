@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qinputdialog.h
 #include <qinputdialog.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QInputDialog is pure virtual: false
 // QInputDialog has virtual projected: false
@@ -79,6 +80,13 @@ void C_ZN12QInputDialog9setOptionENS_17InputDialogOptionEb(void *this_, QInputDi
 extern "C"
 bool C_ZNK12QInputDialog10testOptionENS_17InputDialogOptionE(void *this_, QInputDialog::InputDialogOption option) {
   return (bool)((QInputDialog*)this_)->testOption(option);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:105
+// [-2] void setOptions(QInputDialog::InputDialogOptions)
+extern "C"
+void C_ZN12QInputDialog10setOptionsE6QFlagsINS_17InputDialogOptionEE(void *this_, QFlags<QInputDialog::InputDialogOption> options) {
+  ((QInputDialog*)this_)->setOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:106
@@ -323,6 +331,30 @@ return new QSize(rv);
 extern "C"
 void C_ZN12QInputDialog10setVisibleEb(void *this_, bool visible) {
   ((QInputDialog*)this_)->setVisible(visible);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:162
+// [8] QString getText(class QWidget *, const class QString &, const class QString &, class QLineEdit::EchoMode, const class QString &, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+extern "C"
+void* C_ZN12QInputDialog7getTextEP7QWidgetRK7QStringS4_N9QLineEdit8EchoModeES4_Pb6QFlagsIN2Qt10WindowTypeEES8_INS9_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QLineEdit::EchoMode echo, QString* text, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
+  auto rv = QInputDialog::getText(parent, *title, *label, echo, *text, ok, flags, inputMethodHints);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:167
+// [8] QString getMultiLineText(class QWidget *, const class QString &, const class QString &, const class QString &, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+extern "C"
+void* C_ZN12QInputDialog16getMultiLineTextEP7QWidgetRK7QStringS4_S4_Pb6QFlagsIN2Qt10WindowTypeEES6_INS7_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QString* text, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
+  auto rv = QInputDialog::getMultiLineText(parent, *title, *label, *text, ok, flags, inputMethodHints);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:171
+// [8] QString getItem(class QWidget *, const class QString &, const class QString &, const class QStringList &, int, _Bool, _Bool *, Qt::WindowFlags, Qt::InputMethodHints)
+extern "C"
+void* C_ZN12QInputDialog7getItemEP7QWidgetRK7QStringS4_RK11QStringListibPb6QFlagsIN2Qt10WindowTypeEES9_INSA_15InputMethodHintEE(QWidget * parent, QString* title, QString* label, QStringList* items, int current, bool editable, bool * ok, QFlags<Qt::WindowType> flags, QFlags<Qt::InputMethodHint> inputMethodHints) {
+  auto rv = QInputDialog::getItem(parent, *title, *label, *items, current, editable, ok, flags, inputMethodHints);
+return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qinputdialog.h:176

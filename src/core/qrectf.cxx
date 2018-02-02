@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qrect.h
 #include <qrect.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRectF is pure virtual: false
 // QRectF has virtual projected: false

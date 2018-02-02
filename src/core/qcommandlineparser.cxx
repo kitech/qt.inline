@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcommandlineparser.h
 #include <qcommandlineparser.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCommandLineParser is pure virtual: false
 // QCommandLineParser has virtual projected: false

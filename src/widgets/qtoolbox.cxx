@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qtoolbox.h
 #include <qtoolbox.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QToolBox is pure virtual: false
 // QToolBox has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbox.h:98
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN8QToolBox5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBox5eventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBox5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbox.h:99
-// [-2] void itemInserted(int)
-extern "C"
-void* callback_ZN8QToolBox12itemInsertedEi_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBox12itemInsertedEi(void*cbfn)
-{ callback_ZN8QToolBox12itemInsertedEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbox.h:100
-// [-2] void itemRemoved(int)
-extern "C"
-void* callback_ZN8QToolBox11itemRemovedEi_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBox11itemRemovedEi(void*cbfn)
-{ callback_ZN8QToolBox11itemRemovedEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbox.h:101
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBox9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbox.h:102
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN8QToolBox11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBox5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBox5eventEP6QEvent(void*cbfn)
+// { callback_ZN8QToolBox5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBox12itemInsertedEi_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBox12itemInsertedEi(void*cbfn)
+// { callback_ZN8QToolBox12itemInsertedEi_fnptr = cbfn; }
+// void* callback_ZN8QToolBox11itemRemovedEi_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBox11itemRemovedEi(void*cbfn)
+// { callback_ZN8QToolBox11itemRemovedEi_fnptr = cbfn; }
+// void* callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBox9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN8QToolBox11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQToolBox : public QToolBox {
 public:
@@ -51,43 +32,74 @@ public:
 MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBox5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBox5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QToolBox::event(e);
+  }
   }
 // void itemInserted(int)
   virtual void itemInserted(int index) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox12itemInsertedEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"itemInserted", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox12itemInsertedEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , index);
+    // }
     QToolBox::itemInserted(index);
+  }
   }
 // void itemRemoved(int)
   virtual void itemRemoved(int index) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox11itemRemovedEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"itemRemoved", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox11itemRemovedEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , index);
+    // }
     QToolBox::itemRemoved(index);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * e) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QToolBox::showEvent(e);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBox11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBox11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QToolBox::changeEvent(arg0);
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgesture.h
 #include <qgesture.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTapGesture is pure virtual: false
 // QTapGesture has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetatype.h
 #include <qmetatype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // VariantData is pure virtual: false
 // VariantData has virtual projected: false

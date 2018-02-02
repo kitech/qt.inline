@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qline.h
 #include <qline.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLineF is pure virtual: false
 // QLineF has virtual projected: false

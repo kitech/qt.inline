@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpalette.h
 #include <qpalette.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPalette is pure virtual: false
 // QPalette has virtual projected: false

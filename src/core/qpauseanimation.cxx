@@ -2,26 +2,19 @@
 // /usr/include/qt/QtCore/qpauseanimation.h
 #include <qpauseanimation.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QPauseAnimation is pure virtual: false
 // QPauseAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:65
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QPauseAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpauseanimation.h:66
-// [-2] void updateCurrentTime(int)
-extern "C"
-void* callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = 0;
-extern "C" void set_callback_ZN15QPauseAnimation17updateCurrentTimeEi(void*cbfn)
-{ callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = cbfn; }
+// void* callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QPauseAnimation5eventEP6QEvent(void*cbfn)
+// { callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = 0;
+// extern "C" void set_callback_ZN15QPauseAnimation17updateCurrentTimeEi(void*cbfn)
+// { callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = cbfn; }
 
 class MyQPauseAnimation : public QPauseAnimation {
 public:
@@ -32,19 +25,32 @@ MyQPauseAnimation(QObject * parent) : QPauseAnimation(parent) {}
 MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QPauseAnimation::event(e);
+  }
   }
 // void updateCurrentTime(int)
   virtual void updateCurrentTime(int arg0) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCurrentTime", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPauseAnimation::updateCurrentTime(arg0);
+  }
   }
 };
 

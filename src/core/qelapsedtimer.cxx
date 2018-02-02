@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qelapsedtimer.h
 #include <qelapsedtimer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QElapsedTimer is pure virtual: false
 // QElapsedTimer has virtual projected: false

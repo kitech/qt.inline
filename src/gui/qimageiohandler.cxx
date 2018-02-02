@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qimageiohandler.h
 #include <qimageiohandler.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QImageIOHandler is pure virtual: true
 // QImageIOHandler has virtual projected: false

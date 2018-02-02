@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qactiongroup.h
 #include <qactiongroup.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QActionGroup is pure virtual: false
 // QActionGroup has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsemaphore.h
 #include <qsemaphore.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSemaphoreReleaser is pure virtual: false
 // QSemaphoreReleaser has virtual projected: false

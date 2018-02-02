@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbytearray.h
 #include <qbytearray.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QByteArrayDataPtr is pure virtual: false
 // QByteArrayDataPtr has virtual projected: false

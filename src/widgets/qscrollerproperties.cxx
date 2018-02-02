@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
 #include <qscrollerproperties.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QScrollerProperties is pure virtual: false
 // QScrollerProperties has virtual projected: false

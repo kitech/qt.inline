@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qsurfaceformat.h
 #include <qsurfaceformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QSurfaceFormat is pure virtual: false
 // QSurfaceFormat has virtual projected: false
@@ -14,6 +15,8 @@ public:
   virtual ~MyQSurfaceFormat() {}
 // void QSurfaceFormat()
 MyQSurfaceFormat() : QSurfaceFormat() {}
+// void QSurfaceFormat(QSurfaceFormat::FormatOptions)
+MyQSurfaceFormat(QFlags<QSurfaceFormat::FormatOption> options) : QSurfaceFormat(options) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -22,6 +25,13 @@ MyQSurfaceFormat() : QSurfaceFormat() {}
 extern "C"
 void* C_ZN14QSurfaceFormatC2Ev() {
   return  new QSurfaceFormat();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:95
+// [-2] void QSurfaceFormat(QSurfaceFormat::FormatOptions)
+extern "C"
+void* C_ZN14QSurfaceFormatC2E6QFlagsINS_12FormatOptionEE(QFlags<QSurfaceFormat::FormatOption> options) {
+  return  new QSurfaceFormat(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:98
@@ -225,6 +235,27 @@ bool C_ZNK14QSurfaceFormat6stereoEv(void *this_) {
 extern "C"
 void C_ZN14QSurfaceFormat9setStereoEb(void *this_, bool enable) {
   ((QSurfaceFormat*)this_)->setStereo(enable);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:142
+// [-2] void setOption(class QSurfaceFormat::FormatOptions)
+extern "C"
+void C_ZN14QSurfaceFormat9setOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
+  ((QSurfaceFormat*)this_)->setOption(opt);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:143
+// [1] bool testOption(class QSurfaceFormat::FormatOptions)
+extern "C"
+bool C_ZNK14QSurfaceFormat10testOptionE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> opt) {
+  return (bool)((QSurfaceFormat*)this_)->testOption(opt);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qsurfaceformat.h:146
+// [-2] void setOptions(class QSurfaceFormat::FormatOptions)
+extern "C"
+void C_ZN14QSurfaceFormat10setOptionsE6QFlagsINS_12FormatOptionEE(void *this_, QFlags<QSurfaceFormat::FormatOption> options) {
+  ((QSurfaceFormat*)this_)->setOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qsurfaceformat.h:147

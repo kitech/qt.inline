@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qprogressdialog.h
 #include <qprogressdialog.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QProgressDialog is pure virtual: false
 // QProgressDialog has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:116
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:117
-// [-2] void closeEvent(class QCloseEvent *)
-extern "C"
-void* callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QProgressDialog10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:118
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QProgressDialog11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:119
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QProgressDialog9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:122
-// [-2] void forceShow()
-extern "C"
-void* callback_ZN15QProgressDialog9forceShowEv_fnptr = 0;
-extern "C" void set_callback_ZN15QProgressDialog9forceShowEv(void*cbfn)
-{ callback_ZN15QProgressDialog9forceShowEv_fnptr = cbfn; }
+// void* callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QProgressDialog10closeEventEP11QCloseEvent(void*cbfn)
+// { callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
+// void* callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QProgressDialog11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QProgressDialog9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN15QProgressDialog9forceShowEv_fnptr = 0;
+// extern "C" void set_callback_ZN15QProgressDialog9forceShowEv(void*cbfn)
+// { callback_ZN15QProgressDialog9forceShowEv_fnptr = cbfn; }
 
 class MyQProgressDialog : public QProgressDialog {
 public:
@@ -53,43 +34,73 @@ MyQProgressDialog(QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDia
 MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) : QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags) {}
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QProgressDialog::resizeEvent(event);
+  }
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QProgressDialog::closeEvent(event);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QProgressDialog::changeEvent(event);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * event) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QProgressDialog::showEvent(event);
+  }
   }
 // void forceShow()
   virtual void forceShow() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN15QProgressDialog9forceShowEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"forceShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN15QProgressDialog9forceShowEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QProgressDialog::forceShow();
+  }
   }
 };
 

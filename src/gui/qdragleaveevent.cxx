@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QDragLeaveEvent is pure virtual: false
 // QDragLeaveEvent has virtual projected: false

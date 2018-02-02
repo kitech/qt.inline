@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qobject.h
 #include <qobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSignalBlocker is pure virtual: false
 // QSignalBlocker has virtual projected: false

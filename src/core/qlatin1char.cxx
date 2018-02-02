@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qchar.h
 #include <qchar.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLatin1Char is pure virtual: false
 // QLatin1Char has virtual projected: false

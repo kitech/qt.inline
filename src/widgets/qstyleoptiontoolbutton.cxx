@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionToolButton is pure virtual: false
 // QStyleOptionToolButton has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:583
-// [-2] void QStyleOptionToolButton(int)
-extern "C"
-void* callback_ZN22QStyleOptionToolButtonC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN22QStyleOptionToolButtonC1Ei(void*cbfn)
-{ callback_ZN22QStyleOptionToolButtonC1Ei_fnptr = cbfn; }
+// void* callback_ZN22QStyleOptionToolButtonC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN22QStyleOptionToolButtonC1Ei(void*cbfn)
+// { callback_ZN22QStyleOptionToolButtonC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionToolButton : public QStyleOptionToolButton {
 public:

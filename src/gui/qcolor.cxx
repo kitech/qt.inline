@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qcolor.h
 #include <qcolor.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QColor is pure virtual: false
 // QColor has virtual projected: false

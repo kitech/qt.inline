@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcoreevent.h
 #include <qcoreevent.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDynamicPropertyChangeEvent is pure virtual: false
 // QDynamicPropertyChangeEvent has virtual projected: false

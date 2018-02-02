@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfilesystemwatcher.h
 #include <qfilesystemwatcher.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFileSystemWatcher is pure virtual: false
 // QFileSystemWatcher has virtual projected: false

@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qlcdnumber.h
 #include <qlcdnumber.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QLCDNumber is pure virtual: false
 // QLCDNumber has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlcdnumber.h:107
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QLCDNumber5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlcdnumber.h:108
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QLCDNumber5eventEP6QEvent(void*cbfn)
+// { callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = cbfn; }
 
 class MyQLCDNumber : public QLCDNumber {
 public:
@@ -32,19 +25,32 @@ MyQLCDNumber(QWidget * parent) : QLCDNumber(parent) {}
 MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QLCDNumber5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QLCDNumber5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QLCDNumber::event(e);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QLCDNumber::paintEvent(arg0);
+  }
   }
 };
 

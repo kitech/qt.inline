@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextImageFormat is pure virtual: false
 // QTextImageFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:752
-// [-2] void QTextImageFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN16QTextImageFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN16QTextImageFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN16QTextImageFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextImageFormat : public QTextImageFormat {
 public:

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextLength is pure virtual: false
 // QTextLength has virtual projected: false

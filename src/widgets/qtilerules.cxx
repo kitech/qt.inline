@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdrawutil.h
 #include <qdrawutil.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTileRules is pure virtual: false
 // QTileRules has virtual projected: false

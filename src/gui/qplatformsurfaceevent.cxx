@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPlatformSurfaceEvent is pure virtual: false
 // QPlatformSurfaceEvent has virtual projected: false

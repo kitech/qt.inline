@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionTab is pure virtual: false
 // QStyleOptionTab has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:289
-// [-2] void QStyleOptionTab(int)
-extern "C"
-void* callback_ZN15QStyleOptionTabC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN15QStyleOptionTabC1Ei(void*cbfn)
-{ callback_ZN15QStyleOptionTabC1Ei_fnptr = cbfn; }
+// void* callback_ZN15QStyleOptionTabC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN15QStyleOptionTabC1Ei(void*cbfn)
+// { callback_ZN15QStyleOptionTabC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTab : public QStyleOptionTab {
 public:

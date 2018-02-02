@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpainterpath.h
 #include <qpainterpath.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPainterPathStroker is pure virtual: false
 // QPainterPathStroker has virtual projected: false

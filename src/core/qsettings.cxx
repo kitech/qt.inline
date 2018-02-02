@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qsettings.h
 #include <qsettings.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSettings is pure virtual: false
 // QSettings has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:202
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN9QSettings5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QSettings5eventEP6QEvent(void*cbfn)
-{ callback_ZN9QSettings5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN9QSettings5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QSettings5eventEP6QEvent(void*cbfn)
+// { callback_ZN9QSettings5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSettings : public QSettings {
 public:
@@ -31,11 +28,18 @@ MyQSettings(const QString & fileName, QSettings::Format format, QObject * parent
 MyQSettings(QObject * parent) : QSettings(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QSettings5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QSettings5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QSettings::event(event);
+  }
   }
 };
 

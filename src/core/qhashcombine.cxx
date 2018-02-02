@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qhashfunctions.h
 #include <qhashfunctions.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QHashCombine is pure virtual: false
 // QHashCombine has virtual projected: false

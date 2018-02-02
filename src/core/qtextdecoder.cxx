@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtextcodec.h
 #include <qtextcodec.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTextDecoder is pure virtual: false
 // QTextDecoder has virtual projected: false

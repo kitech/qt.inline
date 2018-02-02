@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qaccessible.h
 #include <qaccessible.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QAccessibleInterface is pure virtual: true
 // QAccessibleInterface has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:460
-// [-2] void ~QAccessibleInterface()
-extern "C"
-void* callback_ZN20QAccessibleInterfaceD1Ev_fnptr = 0;
-extern "C" void set_callback_ZN20QAccessibleInterfaceD1Ev(void*cbfn)
-{ callback_ZN20QAccessibleInterfaceD1Ev_fnptr = cbfn; }
+// void* callback_ZN20QAccessibleInterfaceD1Ev_fnptr = 0;
+// extern "C" void set_callback_ZN20QAccessibleInterfaceD1Ev(void*cbfn)
+// { callback_ZN20QAccessibleInterfaceD1Ev_fnptr = cbfn; }
 
 class MyQAccessibleInterface : public QAccessibleInterface {
 public:

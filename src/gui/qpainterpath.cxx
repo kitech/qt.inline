@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpainterpath.h
 #include <qpainterpath.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPainterPath is pure virtual: false
 // QPainterPath has virtual projected: false

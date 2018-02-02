@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #include <qdatawidgetmapper.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDataWidgetMapper is pure virtual: false
 // QDataWidgetMapper has virtual projected: false

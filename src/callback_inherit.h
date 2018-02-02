@@ -1,7 +1,9 @@
 #ifndef _CALLBACK_INHERIT_H_
 #define _CALLBACK_INHERIT_H_
 
-extern void (*callbackAllInherits_fnptr)(/*QObject*/void*, char*iname, void* p0, void* p1, void* p2, void* p3, void* p4, void* p5, void* p6, void* p7, void* p8, void* p9);
+#include <stdint.h>
+
+extern uint64_t (*callbackAllInherits_fnptr)(/*QObject*/void*, char*iname, int*handled, int argc, uint64_t p0, uint64_t p1, uint64_t p2, uint64_t p3, uint64_t p4, uint64_t p5, uint64_t p6, uint64_t p7, uint64_t p8, uint64_t p9);
 
 #ifdef __cplusplus
 extern "C"{

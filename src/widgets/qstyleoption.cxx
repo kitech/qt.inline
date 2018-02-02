@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOption is pure virtual: false
 // QStyleOption has virtual projected: false

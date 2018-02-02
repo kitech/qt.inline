@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringlistmodel.h
 #include <qstringlistmodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStringListModel is pure virtual: false
 // QStringListModel has virtual projected: false

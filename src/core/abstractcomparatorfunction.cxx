@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetatype.h
 #include <qmetatype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // AbstractComparatorFunction is pure virtual: false
 // AbstractComparatorFunction has virtual projected: false

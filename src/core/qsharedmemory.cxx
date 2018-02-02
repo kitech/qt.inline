@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsharedmemory.h
 #include <qsharedmemory.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSharedMemory is pure virtual: false
 // QSharedMemory has virtual projected: false

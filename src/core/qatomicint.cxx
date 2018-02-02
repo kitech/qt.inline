@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qatomic.h
 #include <qatomic.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAtomicInt is pure virtual: false
 // QAtomicInt has virtual projected: false

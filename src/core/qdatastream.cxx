@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdatastream.h
 #include <qdatastream.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDataStream is pure virtual: false
 // QDataStream has virtual projected: false
@@ -16,6 +17,8 @@ public:
 MyQDataStream() : QDataStream() {}
 // void QDataStream(class QIODevice *)
 MyQDataStream(QIODevice * arg0) : QDataStream(arg0) {}
+// void QDataStream(class QByteArray *, class QIODevice::OpenMode)
+MyQDataStream(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) : QDataStream(arg0, flags) {}
 // void QDataStream(const class QByteArray &)
 MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
 };
@@ -33,6 +36,13 @@ void* C_ZN11QDataStreamC2Ev() {
 extern "C"
 void* C_ZN11QDataStreamC2EP9QIODevice(QIODevice * arg0) {
   return  new QDataStream(arg0);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:125
+// [-2] void QDataStream(class QByteArray *, class QIODevice::OpenMode)
+extern "C"
+void* C_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) {
+  return  new QDataStream(arg0, flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:126

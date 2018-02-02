@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextdocumentfragment.h
 #include <qtextdocumentfragment.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextDocumentFragment is pure virtual: false
 // QTextDocumentFragment has virtual projected: false

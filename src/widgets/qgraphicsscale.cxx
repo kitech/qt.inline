@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #include <qgraphicstransform.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsScale is pure virtual: false
 // QGraphicsScale has virtual projected: false

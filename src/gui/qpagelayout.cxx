@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpagelayout.h
 #include <qpagelayout.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPageLayout is pure virtual: false
 // QPageLayout has virtual projected: false

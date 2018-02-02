@@ -2,33 +2,22 @@
 // /usr/include/qt/QtCore/qfinalstate.h
 #include <qfinalstate.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFinalState is pure virtual: false
 // QFinalState has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:58
-// [-2] void onEntry(class QEvent *)
-extern "C"
-void* callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QFinalState7onEntryEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:59
-// [-2] void onExit(class QEvent *)
-extern "C"
-void* callback_ZN11QFinalState6onExitEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QFinalState6onExitEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState6onExitEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:61
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QFinalState5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QFinalState5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QFinalState5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QFinalState7onEntryEP6QEvent(void*cbfn)
+// { callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QFinalState6onExitEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QFinalState6onExitEP6QEvent(void*cbfn)
+// { callback_ZN11QFinalState6onExitEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QFinalState5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QFinalState5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QFinalState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFinalState : public QFinalState {
 public:
@@ -37,27 +26,46 @@ public:
 MyQFinalState(QState * parent) : QFinalState(parent) {}
 // void onEntry(class QEvent *)
   virtual void onEntry(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState7onEntryEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"onEntry", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState7onEntryEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QFinalState::onEntry(event);
+  }
   }
 // void onExit(class QEvent *)
   virtual void onExit(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState6onExitEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"onExit", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState6onExitEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QFinalState::onExit(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFinalState5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFinalState5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QFinalState::event(e);
+  }
   }
 };
 

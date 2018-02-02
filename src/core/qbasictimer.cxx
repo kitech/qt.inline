@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbasictimer.h
 #include <qbasictimer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QBasicTimer is pure virtual: false
 // QBasicTimer has virtual projected: false

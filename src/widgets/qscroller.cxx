@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qscroller.h
 #include <qscroller.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QScroller is pure virtual: false
 // QScroller has virtual projected: false

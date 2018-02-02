@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qvector4d.h
 #include <qvector4d.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QVector4D is pure virtual: false
 // QVector4D has virtual projected: false

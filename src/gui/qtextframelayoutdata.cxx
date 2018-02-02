@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextobject.h
 #include <qtextobject.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextFrameLayoutData is pure virtual: false
 // QTextFrameLayoutData has virtual projected: false

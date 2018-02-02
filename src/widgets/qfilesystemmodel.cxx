@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h
 #include <qfilesystemmodel.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFileSystemModel is pure virtual: false
 // QFileSystemModel has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:148
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:149
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QFileSystemModel5eventEP6QEvent(void*cbfn)
-{ callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QFileSystemModel5eventEP6QEvent(void*cbfn)
+// { callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFileSystemModel : public QFileSystemModel {
 public:
@@ -30,19 +23,32 @@ public:
 MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QFileSystemModel::timerEvent(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QFileSystemModel::event(event);
+  }
   }
 };
 
@@ -252,6 +258,13 @@ void C_ZN16QFileSystemModel15setIconProviderEP17QFileIconProvider(void *this_, Q
 extern "C"
 void* C_ZNK16QFileSystemModel12iconProviderEv(void *this_) {
   return (void*)((QFileSystemModel*)this_)->iconProvider();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:117
+// [-2] void setFilter(class QDir::Filters)
+extern "C"
+void C_ZN16QFileSystemModel9setFilterE6QFlagsIN4QDir6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
+  ((QFileSystemModel*)this_)->setFilter(filters);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:118

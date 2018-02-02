@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qundoview.h
 #include <qundoview.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QUndoView is pure virtual: false
 // QUndoView has virtual projected: false

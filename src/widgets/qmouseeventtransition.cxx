@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h
 #include <qmouseeventtransition.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QMouseEventTransition is pure virtual: false
 // QMouseEventTransition has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmouseeventtransition.h:73
-// [-2] void onTransition(class QEvent *)
-extern "C"
-void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmouseeventtransition.h:74
-// [1] bool eventTest(class QEvent *)
-extern "C"
-void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(void*cbfn)
+// { callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*cbfn)
+// { callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQMouseEventTransition : public QMouseEventTransition {
 public:
@@ -32,19 +25,32 @@ MyQMouseEventTransition(QState * sourceState) : QMouseEventTransition(sourceStat
 MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton button, QState * sourceState) : QMouseEventTransition(object, type, button, sourceState) {}
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMouseEventTransition::onTransition(event);
+  }
   }
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QMouseEventTransition::eventTest(event);
+  }
   }
 };
 
@@ -98,6 +104,13 @@ void C_ZN21QMouseEventTransition9setButtonEN2Qt11MouseButtonE(void *this_, Qt::M
 extern "C"
 Qt::KeyboardModifiers C_ZNK21QMouseEventTransition12modifierMaskEv(void *this_) {
   return (Qt::KeyboardModifiers)((QMouseEventTransition*)this_)->modifierMask();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:67
+// [-2] void setModifierMask(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN21QMouseEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QMouseEventTransition*)this_)->setModifierMask(modifiers);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h:69

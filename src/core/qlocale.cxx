@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlocale.h
 #include <qlocale.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLocale is pure virtual: false
 // QLocale has virtual projected: false
@@ -722,6 +723,14 @@ void* C_ZNK7QLocale16toCurrencyStringEfRK7QStringi(void *this_, float i, QString
   auto rv = ((QLocale*)this_)->toCurrencyString(i, *symbol, precision);
 return new QString(rv);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1061
+// [8] QString formattedDataSize(qint64, int, QLocale::DataSizeFormats)
+extern "C"
+void* C_ZN7QLocale17formattedDataSizeExi6QFlagsINS_14DataSizeFormatEE(void *this_, qint64 bytes, int precision, QFlags<QLocale::DataSizeFormat> format) {
+  auto rv = ((QLocale*)this_)->formattedDataSize(bytes, precision, format);
+return new QString(rv);
+}
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1068
 // [8] QString languageToString(enum QLocale::Language)
@@ -768,6 +777,13 @@ extern "C"
 void* C_ZN7QLocale6systemEv() {
   auto rv = QLocale::system();
 return new QLocale(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1079
+// [-2] void setNumberOptions(QLocale::NumberOptions)
+extern "C"
+void C_ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE(void *this_, QFlags<QLocale::NumberOption> options) {
+  ((QLocale*)this_)->setNumberOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1080

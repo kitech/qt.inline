@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qscreen.h
 #include <qscreen.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QScreen is pure virtual: false
 // QScreen has virtual projected: false
@@ -215,6 +216,13 @@ Qt::ScreenOrientation C_ZNK7QScreen17nativeOrientationEv(void *this_) {
 extern "C"
 Qt::ScreenOrientations C_ZNK7QScreen21orientationUpdateMaskEv(void *this_) {
   return (Qt::ScreenOrientations)((QScreen*)this_)->orientationUpdateMask();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qscreen.h:140
+// [-2] void setOrientationUpdateMask(Qt::ScreenOrientations)
+extern "C"
+void C_ZN7QScreen24setOrientationUpdateMaskE6QFlagsIN2Qt17ScreenOrientationEE(void *this_, QFlags<Qt::ScreenOrientation> mask) {
+  ((QScreen*)this_)->setOrientationUpdateMask(mask);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qscreen.h:142

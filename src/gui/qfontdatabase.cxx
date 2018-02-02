@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qfontdatabase.h
 #include <qfontdatabase.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QFontDatabase is pure virtual: false
 // QFontDatabase has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qundostack.h
 #include <qundostack.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QUndoCommand is pure virtual: false
 // QUndoCommand has virtual projected: false

@@ -2,33 +2,22 @@
 // /usr/include/qt/QtWidgets/qfontdialog.h
 #include <qfontdialog.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFontDialog is pure virtual: false
 // QFontDialog has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfontdialog.h:103
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QFontDialog11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfontdialog.h:104
-// [-2] void done(int)
-extern "C"
-void* callback_ZN11QFontDialog4doneEi_fnptr = 0;
-extern "C" void set_callback_ZN11QFontDialog4doneEi(void*cbfn)
-{ callback_ZN11QFontDialog4doneEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfontdialog.h:105
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QFontDialog11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QFontDialog4doneEi_fnptr = 0;
+// extern "C" void set_callback_ZN11QFontDialog4doneEi(void*cbfn)
+// { callback_ZN11QFontDialog4doneEi_fnptr = cbfn; }
+// void* callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 
 class MyQFontDialog : public QFontDialog {
 public:
@@ -39,27 +28,46 @@ MyQFontDialog(QWidget * parent) : QFontDialog(parent) {}
 MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, parent) {}
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QFontDialog::changeEvent(event);
+  }
   }
 // void done(int)
   virtual void done(int result) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN11QFontDialog4doneEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , result);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"done", &handled, 1, (uint64_t)result, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN11QFontDialog4doneEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , result);
+    // }
     QFontDialog::done(result);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , object, event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , object, event);
+    // }
     return QFontDialog::eventFilter(object, event);
+  }
   }
 };
 
@@ -131,6 +139,13 @@ bool C_ZNK11QFontDialog10testOptionENS_16FontDialogOptionE(void *this_, QFontDia
   return (bool)((QFontDialog*)this_)->testOption(option);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontdialog.h:86
+// [-2] void setOptions(QFontDialog::FontDialogOptions)
+extern "C"
+void C_ZN11QFontDialog10setOptionsE6QFlagsINS_16FontDialogOptionEE(void *this_, QFlags<QFontDialog::FontDialogOption> options) {
+  ((QFontDialog*)this_)->setOptions(options);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfontdialog.h:87
 // [4] QFontDialog::FontDialogOptions options()
 extern "C"
@@ -158,6 +173,14 @@ void C_ZN11QFontDialog10setVisibleEb(void *this_, bool visible) {
 extern "C"
 void* C_ZN11QFontDialog7getFontEPbP7QWidget(bool * ok, QWidget * parent) {
   auto rv = QFontDialog::getFont(ok, parent);
+return new QFont(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontdialog.h:95
+// [16] QFont getFont(_Bool *, const class QFont &, class QWidget *, const class QString &, QFontDialog::FontDialogOptions)
+extern "C"
+void* C_ZN11QFontDialog7getFontEPbRK5QFontP7QWidgetRK7QString6QFlagsINS_16FontDialogOptionEE(bool * ok, QFont* initial, QWidget * parent, QString* title, QFlags<QFontDialog::FontDialogOption> options) {
+  auto rv = QFontDialog::getFont(ok, *initial, parent, *title, options);
 return new QFont(rv);
 }
 // Public Visibility=Default Availability=Available

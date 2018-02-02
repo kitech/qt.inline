@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qvalidator.h
 #include <qvalidator.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRegularExpressionValidator is pure virtual: false
 // QRegularExpressionValidator has virtual projected: false

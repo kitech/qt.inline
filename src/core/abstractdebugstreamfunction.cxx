@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetatype.h
 #include <qmetatype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // AbstractDebugStreamFunction is pure virtual: false
 // AbstractDebugStreamFunction has virtual projected: false

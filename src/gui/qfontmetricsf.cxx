@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qfontmetrics.h
 #include <qfontmetrics.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QFontMetricsF is pure virtual: false
 // QFontMetricsF has virtual projected: false

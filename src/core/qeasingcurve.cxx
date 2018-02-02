@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qeasingcurve.h
 #include <qeasingcurve.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QEasingCurve is pure virtual: false
 // QEasingCurve has virtual projected: false

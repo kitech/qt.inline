@@ -2,33 +2,22 @@
 // /usr/include/qt/QtCore/qpropertyanimation.h
 #include <qpropertyanimation.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QPropertyAnimation is pure virtual: false
 // QPropertyAnimation has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:69
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN18QPropertyAnimation5eventEP6QEvent(void*cbfn)
-{ callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:70
-// [-2] void updateCurrentValue(const class QVariant &)
-extern "C"
-void* callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
-extern "C" void set_callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void*cbfn)
-{ callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpropertyanimation.h:71
-// [-2] void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
-extern "C"
-void* callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
-extern "C" void set_callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-{ callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
+// void* callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN18QPropertyAnimation5eventEP6QEvent(void*cbfn)
+// { callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
+// extern "C" void set_callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void*cbfn)
+// { callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
+// void* callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
+// extern "C" void set_callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
+// { callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
 
 class MyQPropertyAnimation : public QPropertyAnimation {
 public:
@@ -39,27 +28,46 @@ MyQPropertyAnimation(QObject * parent) : QPropertyAnimation(parent) {}
 MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject * parent) : QPropertyAnimation(target, propertyName, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QPropertyAnimation::event(event);
+  }
   }
 // void updateCurrentValue(const class QVariant &)
   virtual void updateCurrentValue(const QVariant & value) {
-    auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&value);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCurrentValue", &handled, 1, (uint64_t)&value, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&value);
+    // }
     QPropertyAnimation::updateCurrentValue(value);
+  }
   }
 // void updateState(class QAbstractAnimation::State, class QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-    auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , newState, oldState);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateState", &handled, 2, (uint64_t)newState, (uint64_t)oldState, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , newState, oldState);
+    // }
     QPropertyAnimation::updateState(newState, oldState);
+  }
   }
 };
 

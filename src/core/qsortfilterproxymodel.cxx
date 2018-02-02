@@ -2,47 +2,28 @@
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #include <qsortfilterproxymodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSortFilterProxyModel is pure virtual: false
 // QSortFilterProxyModel has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:122
-// [1] bool filterAcceptsRow(int, const class QModelIndex &)
-extern "C"
-void* callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(void*cbfn)
-{ callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:123
-// [1] bool filterAcceptsColumn(int, const class QModelIndex &)
-extern "C"
-void* callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(void*cbfn)
-{ callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:124
-// [1] bool lessThan(const class QModelIndex &, const class QModelIndex &)
-extern "C"
-void* callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = 0;
-extern "C" void set_callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(void*cbfn)
-{ callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:126
-// [-2] void filterChanged()
-extern "C"
-void* callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = 0;
-extern "C" void set_callback_ZN21QSortFilterProxyModel13filterChangedEv(void*cbfn)
-{ callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:127
-// [-2] void invalidateFilter()
-extern "C"
-void* callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = 0;
-extern "C" void set_callback_ZN21QSortFilterProxyModel16invalidateFilterEv(void*cbfn)
-{ callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = cbfn; }
+// void* callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(void*cbfn)
+// { callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(void*cbfn)
+// { callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = 0;
+// extern "C" void set_callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(void*cbfn)
+// { callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = cbfn; }
+// void* callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = 0;
+// extern "C" void set_callback_ZN21QSortFilterProxyModel13filterChangedEv(void*cbfn)
+// { callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = cbfn; }
+// void* callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = 0;
+// extern "C" void set_callback_ZN21QSortFilterProxyModel16invalidateFilterEv(void*cbfn)
+// { callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = cbfn; }
 
 class MyQSortFilterProxyModel : public QSortFilterProxyModel {
 public:
@@ -51,43 +32,76 @@ public:
 MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
 // bool filterAcceptsRow(int, const class QModelIndex &)
   virtual bool filterAcceptsRow(int source_row, const QModelIndex & source_parent) {
-    auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , source_row, (QModelIndex*)&source_parent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"filterAcceptsRow", &handled, 2, (uint64_t)source_row, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , source_row, (QModelIndex*)&source_parent);
+    // }
     return QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
+  }
   }
 // bool filterAcceptsColumn(int, const class QModelIndex &)
   virtual bool filterAcceptsColumn(int source_column, const QModelIndex & source_parent) {
-    auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , source_column, (QModelIndex*)&source_parent);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"filterAcceptsColumn", &handled, 2, (uint64_t)source_column, (uint64_t)&source_parent, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , source_column, (QModelIndex*)&source_parent);
+    // }
     return QSortFilterProxyModel::filterAcceptsColumn(source_column, source_parent);
+  }
   }
 // bool lessThan(const class QModelIndex &, const class QModelIndex &)
   virtual bool lessThan(const QModelIndex & source_left, const QModelIndex & source_right) {
-    auto fnptr = ((bool (*)(void* , QModelIndex*, QModelIndex*))(callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&source_left, (QModelIndex*)&source_right);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"lessThan", &handled, 2, (uint64_t)&source_left, (uint64_t)&source_right, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QModelIndex*, QModelIndex*))(callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&source_left, (QModelIndex*)&source_right);
+    // }
     return QSortFilterProxyModel::lessThan(source_left, source_right);
+  }
   }
 // void filterChanged()
   virtual void filterChanged() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"filterChanged", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QSortFilterProxyModel::filterChanged();
+  }
   }
 // void invalidateFilter()
   virtual void invalidateFilter() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"invalidateFilter", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QSortFilterProxyModel::invalidateFilter();
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qscopedpointer.h
 #include <qscopedpointer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QScopedPointerPodDeleter is pure virtual: false
 // QScopedPointerPodDeleter has virtual projected: false

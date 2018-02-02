@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpixelformat.h
 #include <qpixelformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPixelFormat is pure virtual: false
 // QPixelFormat has virtual projected: false

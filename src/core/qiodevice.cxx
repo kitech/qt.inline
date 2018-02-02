@@ -2,40 +2,28 @@
 // /usr/include/qt/QtCore/qiodevice.h
 #include <qiodevice.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QIODevice is pure virtual: true
 // QIODevice has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:166
-// [8] qint64 readData(char *, qint64)
-extern "C"
-void* callback_ZN9QIODevice8readDataEPcx_fnptr = 0;
-extern "C" void set_callback_ZN9QIODevice8readDataEPcx(void*cbfn)
-{ callback_ZN9QIODevice8readDataEPcx_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:167
-// [8] qint64 readLineData(char *, qint64)
-extern "C"
-void* callback_ZN9QIODevice12readLineDataEPcx_fnptr = 0;
-extern "C" void set_callback_ZN9QIODevice12readLineDataEPcx(void*cbfn)
-{ callback_ZN9QIODevice12readLineDataEPcx_fnptr = cbfn; }
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:168
-// [8] qint64 writeData(const char *, qint64)
-extern "C"
-void* callback_ZN9QIODevice9writeDataEPKcx_fnptr = 0;
-extern "C" void set_callback_ZN9QIODevice9writeDataEPKcx(void*cbfn)
-{ callback_ZN9QIODevice9writeDataEPKcx_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:172
-// [-2] void setErrorString(const class QString &)
-extern "C"
-void* callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = 0;
-extern "C" void set_callback_ZN9QIODevice14setErrorStringERK7QString(void*cbfn)
-{ callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = cbfn; }
+// void* callback_ZN9QIODevice8readDataEPcx_fnptr = 0;
+// extern "C" void set_callback_ZN9QIODevice8readDataEPcx(void*cbfn)
+// { callback_ZN9QIODevice8readDataEPcx_fnptr = cbfn; }
+// void* callback_ZN9QIODevice12readLineDataEPcx_fnptr = 0;
+// extern "C" void set_callback_ZN9QIODevice12readLineDataEPcx(void*cbfn)
+// { callback_ZN9QIODevice12readLineDataEPcx_fnptr = cbfn; }
+// void* callback_ZN9QIODevice9writeDataEPKcx_fnptr = 0;
+// extern "C" void set_callback_ZN9QIODevice9writeDataEPKcx(void*cbfn)
+// { callback_ZN9QIODevice9writeDataEPKcx_fnptr = cbfn; }
+// void* callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void*cbfn)
+// { callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr = cbfn; }
+// void* callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = 0;
+// extern "C" void set_callback_ZN9QIODevice14setErrorStringERK7QString(void*cbfn)
+// { callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = cbfn; }
 
 class MyQIODevice : public QIODevice {
 public:
@@ -46,35 +34,76 @@ MyQIODevice() : QIODevice() {}
 MyQIODevice(QObject * parent) : QIODevice(parent) {}
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
-    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice8readDataEPcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, maxlen);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice8readDataEPcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, maxlen);
+    // }
     return QIODevice::readData(data, maxlen);
+  }
   }
 // qint64 readLineData(char *, qint64)
   virtual qint64 readLineData(char * data, qint64 maxlen) {
-    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice12readLineDataEPcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, maxlen);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"readLineData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice12readLineDataEPcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, maxlen);
+    // }
     return QIODevice::readLineData(data, maxlen);
+  }
   }
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QIODevice9writeDataEPKcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, len);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QIODevice9writeDataEPKcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, len);
+    // }
     return QIODevice::writeData(data, len);
+  }
+  }
+// void setOpenMode(QIODevice::OpenMode)
+  virtual void setOpenMode(QFlags<QIODevice::OpenModeFlag> openMode) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setOpenMode", &handled, 1, (uint64_t)openMode, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFlags<QIODevice::OpenModeFlag>))(callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , openMode);
+    // }
+    QIODevice::setOpenMode(openMode);
+  }
   }
 // void setErrorString(const class QString &)
   virtual void setErrorString(const QString & errorString) {
-    auto fnptr = ((void (*)(void* , QString*))(callback_ZN9QIODevice14setErrorStringERK7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&errorString);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setErrorString", &handled, 1, (uint64_t)&errorString, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*))(callback_ZN9QIODevice14setErrorStringERK7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&errorString);
+    // }
     QIODevice::setErrorString(errorString);
+  }
   }
 };
 
@@ -199,6 +228,13 @@ int C_ZNK9QIODevice19currentWriteChannelEv(void *this_) {
 extern "C"
 void C_ZN9QIODevice22setCurrentWriteChannelEi(void *this_, int channel) {
   ((QIODevice*)this_)->setCurrentWriteChannel(channel);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qiodevice.h:106
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN9QIODevice4openE6QFlagsINS_12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> mode) {
+  return (bool)((QIODevice*)this_)->open(mode);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:107

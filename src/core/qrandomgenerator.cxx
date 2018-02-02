@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qrandom.h
 #include <qrandom.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRandomGenerator is pure virtual: false
 // QRandomGenerator has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrandom.h:172
-// [-2] void QRandomGenerator(enum QRandomGenerator::System)
-extern "C"
-void* callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = 0;
-extern "C" void set_callback_ZN16QRandomGeneratorC1ENS_6SystemE(void*cbfn)
-{ callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = cbfn; }
+// void* callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = 0;
+// extern "C" void set_callback_ZN16QRandomGeneratorC1ENS_6SystemE(void*cbfn)
+// { callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = cbfn; }
 
 class MyQRandomGenerator : public QRandomGenerator {
 public:

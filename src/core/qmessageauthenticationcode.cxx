@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmessageauthenticationcode.h
 #include <qmessageauthenticationcode.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMessageAuthenticationCode is pure virtual: false
 // QMessageAuthenticationCode has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qhash.h
 #include <qhash.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QHashData is pure virtual: false
 // QHashData has virtual projected: false

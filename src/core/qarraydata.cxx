@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qarraydata.h
 #include <qarraydata.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QArrayData is pure virtual: false
 // QArrayData has virtual projected: false
@@ -57,6 +58,13 @@ extern "C"
 void C_ZNK10QArrayData10cloneFlagsEv(void *this_) {
   auto rv = ((QArrayData*)this_)->cloneFlags();
 /*return rv;*/
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qarraydata.h:115
+// [8] QArrayData * allocate(size_t, size_t, size_t, QArrayData::AllocationOptions)
+extern "C"
+void* C_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE(size_t objectSize, size_t alignment, size_t capacity, QFlags<QArrayData::AllocationOption> options) {
+  return (void*)QArrayData::allocate(objectSize, alignment, capacity, options);
 }
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:123

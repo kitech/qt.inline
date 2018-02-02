@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmimedatabase.h
 #include <qmimedatabase.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMimeDatabase is pure virtual: false
 // QMimeDatabase has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcommandlineoption.h
 #include <qcommandlineoption.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCommandLineOption is pure virtual: false
 // QCommandLineOption has virtual projected: false

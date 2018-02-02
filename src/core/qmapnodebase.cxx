@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmap.h
 #include <qmap.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMapNodeBase is pure virtual: false
 // QMapNodeBase has virtual projected: false

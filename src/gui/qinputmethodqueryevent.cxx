@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QInputMethodQueryEvent is pure virtual: false
 // QInputMethodQueryEvent has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQInputMethodQueryEvent : public QInputMethodQueryEvent {
 public:
   virtual ~MyQInputMethodQueryEvent() {}
+// void QInputMethodQueryEvent(Qt::InputMethodQueries)
+MyQInputMethodQueryEvent(QFlags<Qt::InputMethodQuery> queries) : QInputMethodQueryEvent(queries) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:581
+// [-2] void QInputMethodQueryEvent(Qt::InputMethodQueries)
+extern "C"
+void* C_ZN22QInputMethodQueryEventC2E6QFlagsIN2Qt16InputMethodQueryEE(QFlags<Qt::InputMethodQuery> queries) {
+  return  new QInputMethodQueryEvent(queries);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:582
 // [-2] void ~QInputMethodQueryEvent()

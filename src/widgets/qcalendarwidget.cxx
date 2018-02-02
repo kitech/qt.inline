@@ -2,68 +2,37 @@
 // /usr/include/qt/QtWidgets/qcalendarwidget.h
 #include <qcalendarwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QCalendarWidget is pure virtual: false
 // QCalendarWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:141
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:142
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:143
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:144
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:145
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:147
-// [-2] void paintCell(class QPainter *, const class QRect &, const class QDate &)
-extern "C"
-void* callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = 0;
-extern "C" void set_callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void*cbfn)
-{ callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:148
-// [-2] void updateCell(const class QDate &)
-extern "C"
-void* callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget10updateCellERK5QDate(void*cbfn)
-{ callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcalendarwidget.h:149
-// [-2] void updateCells()
-extern "C"
-void* callback_ZN15QCalendarWidget11updateCellsEv_fnptr = 0;
-extern "C" void set_callback_ZN15QCalendarWidget11updateCellsEv(void*cbfn)
-{ callback_ZN15QCalendarWidget11updateCellsEv_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget5eventEP6QEvent(void*cbfn)
+// { callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = 0;
+// extern "C" void set_callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void*cbfn)
+// { callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget10updateCellERK5QDate(void*cbfn)
+// { callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = cbfn; }
+// void* callback_ZN15QCalendarWidget11updateCellsEv_fnptr = 0;
+// extern "C" void set_callback_ZN15QCalendarWidget11updateCellsEv(void*cbfn)
+// { callback_ZN15QCalendarWidget11updateCellsEv_fnptr = cbfn; }
 
 class MyQCalendarWidget : public QCalendarWidget {
 public:
@@ -72,67 +41,117 @@ public:
 MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QCalendarWidget::event(event);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * watched, QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , watched, event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)watched, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , watched, event);
+    // }
     return QCalendarWidget::eventFilter(watched, event);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QCalendarWidget::mousePressEvent(event);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QCalendarWidget::resizeEvent(event);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QCalendarWidget::keyPressEvent(event);
+  }
   }
 // void paintCell(class QPainter *, const class QRect &, const class QDate &)
   virtual void paintCell(QPainter * painter, const QRect & rect, const QDate & date) {
-    auto fnptr = ((void (*)(void* , QPainter *, QRect*, QDate*))(callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QRect*)&rect, (QDate*)&date);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintCell", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QRect*, QDate*))(callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QRect*)&rect, (QDate*)&date);
+    // }
     QCalendarWidget::paintCell(painter, rect, date);
+  }
   }
 // void updateCell(const class QDate &)
   virtual void updateCell(const QDate & date) {
-    auto fnptr = ((void (*)(void* , QDate*))(callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QDate*)&date);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCell", &handled, 1, (uint64_t)&date, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QDate*))(callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QDate*)&date);
+    // }
     QCalendarWidget::updateCell(date);
+  }
   }
 // void updateCells()
   virtual void updateCells() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN15QCalendarWidget11updateCellsEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateCells", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN15QCalendarWidget11updateCellsEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QCalendarWidget::updateCells();
+  }
   }
 };
 

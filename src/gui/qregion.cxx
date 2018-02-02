@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qregion.h
 #include <qregion.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRegion is pure virtual: false
 // QRegion has virtual projected: false

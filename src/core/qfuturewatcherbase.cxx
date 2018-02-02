@@ -2,40 +2,25 @@
 // /usr/include/qt/QtCore/qfuturewatcher.h
 #include <qfuturewatcher.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFutureWatcherBase is pure virtual: true
 // QFutureWatcherBase has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:101
-// [-2] void connectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:102
-// [-2] void disconnectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:105
-// [-2] void connectOutputInterface()
-extern "C"
-void* callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = 0;
-extern "C" void set_callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void*cbfn)
-{ callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:106
-// [-2] void disconnectOutputInterface(_Bool)
-extern "C"
-void* callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = 0;
-extern "C" void set_callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void*cbfn)
-{ callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = cbfn; }
+// void* callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = 0;
+// extern "C" void set_callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void*cbfn)
+// { callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = cbfn; }
+// void* callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = 0;
+// extern "C" void set_callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void*cbfn)
+// { callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = cbfn; }
 
 class MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
@@ -44,35 +29,59 @@ public:
 MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&signal);
+    // }
     QFutureWatcherBase::connectNotify(signal);
+  }
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&signal);
+    // }
     QFutureWatcherBase::disconnectNotify(signal);
+  }
   }
 // void connectOutputInterface()
   virtual void connectOutputInterface() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"connectOutputInterface", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QFutureWatcherBase::connectOutputInterface();
+  }
   }
 // void disconnectOutputInterface(_Bool)
   virtual void disconnectOutputInterface(bool pendingAssignment) {
-    auto fnptr = ((void (*)(void* , bool))(callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , pendingAssignment);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectOutputInterface", &handled, 1, (uint64_t)pendingAssignment, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , bool))(callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , pendingAssignment);
+    // }
     QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
+  }
   }
 };
 

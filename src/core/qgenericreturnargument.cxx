@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qobjectdefs.h
 #include <qobjectdefs.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QGenericReturnArgument is pure virtual: false
 // QGenericReturnArgument has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstringview.h
 #include <qstringview.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStringView is pure virtual: false
 // QStringView has virtual projected: false

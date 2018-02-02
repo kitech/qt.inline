@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qspinbox.h
 #include <qspinbox.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDoubleSpinBox is pure virtual: false
 // QDoubleSpinBox has virtual projected: false

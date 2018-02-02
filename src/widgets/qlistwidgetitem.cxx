@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #include <qlistwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QListWidgetItem is pure virtual: false
 // QListWidgetItem has virtual projected: false

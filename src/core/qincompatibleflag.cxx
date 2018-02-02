@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qflags.h
 #include <qflags.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QIncompatibleFlag is pure virtual: false
 // QIncompatibleFlag has virtual projected: false

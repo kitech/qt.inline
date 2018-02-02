@@ -2,54 +2,31 @@
 // /usr/include/qt/QtWidgets/qstatusbar.h
 #include <qstatusbar.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStatusBar is pure virtual: false
 // QStatusBar has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:82
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:83
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:84
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:87
-// [-2] void reformat()
-extern "C"
-void* callback_ZN10QStatusBar8reformatEv_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar8reformatEv(void*cbfn)
-{ callback_ZN10QStatusBar8reformatEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:88
-// [-2] void hideOrShow()
-extern "C"
-void* callback_ZN10QStatusBar10hideOrShowEv_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar10hideOrShowEv(void*cbfn)
-{ callback_ZN10QStatusBar10hideOrShowEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstatusbar.h:89
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN10QStatusBar5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QStatusBar5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QStatusBar5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar8reformatEv_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar8reformatEv(void*cbfn)
+// { callback_ZN10QStatusBar8reformatEv_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar10hideOrShowEv_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar10hideOrShowEv(void*cbfn)
+// { callback_ZN10QStatusBar10hideOrShowEv_fnptr = cbfn; }
+// void* callback_ZN10QStatusBar5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QStatusBar5eventEP6QEvent(void*cbfn)
+// { callback_ZN10QStatusBar5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStatusBar : public QStatusBar {
 public:
@@ -58,51 +35,88 @@ public:
 MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QStatusBar::showEvent(arg0);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QStatusBar::paintEvent(arg0);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QStatusBar::resizeEvent(arg0);
+  }
   }
 // void reformat()
   virtual void reformat() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar8reformatEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"reformat", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar8reformatEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QStatusBar::reformat();
+  }
   }
 // void hideOrShow()
   virtual void hideOrShow() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar10hideOrShowEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"hideOrShow", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar10hideOrShowEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QStatusBar::hideOrShow();
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QStatusBar5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QStatusBar5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QStatusBar::event(arg0);
+  }
   }
 };
 

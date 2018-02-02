@@ -2,40 +2,25 @@
 // /usr/include/qt/QtCore/qbuffer.h
 #include <qbuffer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QBuffer is pure virtual: false
 // QBuffer has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbuffer.h:87
-// [-2] void connectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbuffer.h:88
-// [-2] void disconnectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbuffer.h:90
-// [8] qint64 readData(char *, qint64)
-extern "C"
-void* callback_ZN7QBuffer8readDataEPcx_fnptr = 0;
-extern "C" void set_callback_ZN7QBuffer8readDataEPcx(void*cbfn)
-{ callback_ZN7QBuffer8readDataEPcx_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbuffer.h:91
-// [8] qint64 writeData(const char *, qint64)
-extern "C"
-void* callback_ZN7QBuffer9writeDataEPKcx_fnptr = 0;
-extern "C" void set_callback_ZN7QBuffer9writeDataEPKcx(void*cbfn)
-{ callback_ZN7QBuffer9writeDataEPKcx_fnptr = cbfn; }
+// void* callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN7QBuffer8readDataEPcx_fnptr = 0;
+// extern "C" void set_callback_ZN7QBuffer8readDataEPcx(void*cbfn)
+// { callback_ZN7QBuffer8readDataEPcx_fnptr = cbfn; }
+// void* callback_ZN7QBuffer9writeDataEPKcx_fnptr = 0;
+// extern "C" void set_callback_ZN7QBuffer9writeDataEPKcx(void*cbfn)
+// { callback_ZN7QBuffer9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQBuffer : public QBuffer {
 public:
@@ -46,35 +31,61 @@ MyQBuffer(QObject * parent) : QBuffer(parent) {}
 MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & arg0) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&arg0);
+    // }
     QBuffer::connectNotify(arg0);
+  }
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & arg0) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&arg0);
+    // }
     QBuffer::disconnectNotify(arg0);
+  }
   }
 // qint64 readData(char *, qint64)
   virtual qint64 readData(char * data, qint64 maxlen) {
-    auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN7QBuffer8readDataEPcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, maxlen);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"readData", &handled, 2, (uint64_t)data, (uint64_t)maxlen, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN7QBuffer8readDataEPcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, maxlen);
+    // }
     return QBuffer::readData(data, maxlen);
+  }
   }
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN7QBuffer9writeDataEPKcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, len);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN7QBuffer9writeDataEPKcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, len);
+    // }
     return QBuffer::writeData(data, len);
+  }
   }
 };
 
@@ -152,6 +163,13 @@ extern "C"
 void* C_ZNK7QBuffer4dataEv(void *this_) {
   auto& rv = ((QBuffer*)this_)->data();
 return new QByteArray(rv);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbuffer.h:76
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN7QBuffer4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
+  return (bool)((QBuffer*)this_)->open(openMode);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:78

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #include <qgraphicstransform.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsRotation is pure virtual: false
 // QGraphicsRotation has virtual projected: false

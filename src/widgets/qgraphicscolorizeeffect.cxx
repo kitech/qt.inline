@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #include <qgraphicseffect.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsColorizeEffect is pure virtual: false
 // QGraphicsColorizeEffect has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicseffect.h:147
-// [-2] void draw(class QPainter *)
-extern "C"
-void* callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = 0;
-extern "C" void set_callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(void*cbfn)
-{ callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = cbfn; }
+// void* callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = 0;
+// extern "C" void set_callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter(void*cbfn)
+// { callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsColorizeEffect : public QGraphicsColorizeEffect {
 public:
@@ -23,11 +20,17 @@ public:
 MyQGraphicsColorizeEffect(QObject * parent) : QGraphicsColorizeEffect(parent) {}
 // void draw(class QPainter *)
   virtual void draw(QPainter * painter) {
-    auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"draw", &handled, 1, (uint64_t)painter, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN23QGraphicsColorizeEffect4drawEP8QPainter_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter);
+    // }
     QGraphicsColorizeEffect::draw(painter);
+  }
   }
 };
 

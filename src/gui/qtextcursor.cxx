@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextcursor.h
 #include <qtextcursor.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextCursor is pure virtual: false
 // QTextCursor has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetatype.h
 #include <qmetatype.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // AbstractConverterFunction is pure virtual: false
 // AbstractConverterFunction has virtual projected: false

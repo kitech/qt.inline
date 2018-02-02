@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbrush.h
 #include <qbrush.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QConicalGradient is pure virtual: false
 // QConicalGradient has virtual projected: false

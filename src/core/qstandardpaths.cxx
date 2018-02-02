@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstandardpaths.h
 #include <qstandardpaths.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QStandardPaths is pure virtual: false
 // QStandardPaths has virtual projected: false
@@ -15,6 +16,14 @@
 extern "C"
 void* C_ZN14QStandardPaths16writableLocationENS_16StandardLocationE(QStandardPaths::StandardLocation type) {
   auto rv = QStandardPaths::writableLocation(type);
+return new QString(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstandardpaths.h:91
+// [8] QString locate(enum QStandardPaths::StandardLocation, const class QString &, QStandardPaths::LocateOptions)
+extern "C"
+void* C_ZN14QStandardPaths6locateENS_16StandardLocationERK7QString6QFlagsINS_12LocateOptionEE(QStandardPaths::StandardLocation type, QString* fileName, QFlags<QStandardPaths::LocateOption> options) {
+  auto rv = QStandardPaths::locate(type, *fileName, options);
 return new QString(rv);
 }
 // Public static Visibility=Default Availability=Available

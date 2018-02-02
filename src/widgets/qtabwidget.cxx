@@ -2,82 +2,43 @@
 // /usr/include/qt/QtWidgets/qtabwidget.h
 #include <qtabwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTabWidget is pure virtual: false
 // QTabWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:161
-// [-2] void tabInserted(int)
-extern "C"
-void* callback_ZN10QTabWidget11tabInsertedEi_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget11tabInsertedEi(void*cbfn)
-{ callback_ZN10QTabWidget11tabInsertedEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:162
-// [-2] void tabRemoved(int)
-extern "C"
-void* callback_ZN10QTabWidget10tabRemovedEi_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget10tabRemovedEi(void*cbfn)
-{ callback_ZN10QTabWidget10tabRemovedEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:164
-// [-2] void showEvent(class QShowEvent *)
-extern "C"
-void* callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget9showEventEP10QShowEvent(void*cbfn)
-{ callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:165
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:166
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:167
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:168
-// [-2] void setTabBar(class QTabBar *)
-extern "C"
-void* callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget9setTabBarEP7QTabBar(void*cbfn)
-{ callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:169
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:170
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN10QTabWidget5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN10QTabWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN10QTabWidget5eventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtabwidget.h:171
-// [-2] void initStyleOption(class QStyleOptionTabWidgetFrame *)
-extern "C"
-void* callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = 0;
-extern "C" void set_callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame(void*cbfn)
-{ callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget11tabInsertedEi_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget11tabInsertedEi(void*cbfn)
+// { callback_ZN10QTabWidget11tabInsertedEi_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget10tabRemovedEi_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget10tabRemovedEi(void*cbfn)
+// { callback_ZN10QTabWidget10tabRemovedEi_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget9showEventEP10QShowEvent(void*cbfn)
+// { callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget9setTabBarEP7QTabBar(void*cbfn)
+// { callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN10QTabWidget5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN10QTabWidget5eventEP6QEvent(void*cbfn)
+// { callback_ZN10QTabWidget5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = 0;
+// extern "C" void set_callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame(void*cbfn)
+// { callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = cbfn; }
 
 class MyQTabWidget : public QTabWidget {
 public:
@@ -86,83 +47,144 @@ public:
 MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
 // void tabInserted(int)
   virtual void tabInserted(int index) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget11tabInsertedEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"tabInserted", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget11tabInsertedEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , index);
+    // }
     QTabWidget::tabInserted(index);
+  }
   }
 // void tabRemoved(int)
   virtual void tabRemoved(int index) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget10tabRemovedEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"tabRemoved", &handled, 1, (uint64_t)index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget10tabRemovedEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , index);
+    // }
     QTabWidget::tabRemoved(index);
+  }
   }
 // void showEvent(class QShowEvent *)
   virtual void showEvent(QShowEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"showEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::showEvent(arg0);
+  }
   }
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::resizeEvent(arg0);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::keyPressEvent(arg0);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::paintEvent(arg0);
+  }
   }
 // void setTabBar(class QTabBar *)
   virtual void setTabBar(QTabBar * arg0) {
-    auto fnptr = ((void (*)(void* , QTabBar *))(callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setTabBar", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTabBar *))(callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::setTabBar(arg0);
+  }
   }
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QTabWidget::changeEvent(arg0);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QTabWidget5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QTabWidget5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QTabWidget::event(arg0);
+  }
   }
 // void initStyleOption(class QStyleOptionTabWidgetFrame *)
   virtual void initStyleOption(QStyleOptionTabWidgetFrame * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionTabWidgetFrame *))(callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionTabWidgetFrame *))(callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QTabWidget::initStyleOption(option);
+  }
   }
 };
 

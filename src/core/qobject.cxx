@@ -2,75 +2,40 @@
 // /usr/include/qt/QtCore/qobject.h
 #include <qobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QObject is pure virtual: false
 // QObject has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:422
-// [8] QObject * sender()
-extern "C"
-void* callback_ZNK7QObject6senderEv_fnptr = 0;
-extern "C" void set_callback_ZNK7QObject6senderEv(void*cbfn)
-{ callback_ZNK7QObject6senderEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:423
-// [4] int senderSignalIndex()
-extern "C"
-void* callback_ZNK7QObject17senderSignalIndexEv_fnptr = 0;
-extern "C" void set_callback_ZNK7QObject17senderSignalIndexEv(void*cbfn)
-{ callback_ZNK7QObject17senderSignalIndexEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:424
-// [4] int receivers(const char *)
-extern "C"
-void* callback_ZNK7QObject9receiversEPKc_fnptr = 0;
-extern "C" void set_callback_ZNK7QObject9receiversEPKc(void*cbfn)
-{ callback_ZNK7QObject9receiversEPKc_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:425
-// [1] bool isSignalConnected(const class QMetaMethod &)
-extern "C"
-void* callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void*cbfn)
-{ callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:427
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QObject10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:428
-// [-2] void childEvent(class QChildEvent *)
-extern "C"
-void* callback_ZN7QObject10childEventEP11QChildEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QObject10childEventEP11QChildEvent(void*cbfn)
-{ callback_ZN7QObject10childEventEP11QChildEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:429
-// [-2] void customEvent(class QEvent *)
-extern "C"
-void* callback_ZN7QObject11customEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QObject11customEventEP6QEvent(void*cbfn)
-{ callback_ZN7QObject11customEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:431
-// [-2] void connectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN7QObject13connectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:432
-// [-2] void disconnectNotify(const class QMetaMethod &)
-extern "C"
-void* callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-extern "C" void set_callback_ZN7QObject16disconnectNotifyERK11QMetaMethod(void*cbfn)
-{ callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZNK7QObject6senderEv_fnptr = 0;
+// extern "C" void set_callback_ZNK7QObject6senderEv(void*cbfn)
+// { callback_ZNK7QObject6senderEv_fnptr = cbfn; }
+// void* callback_ZNK7QObject17senderSignalIndexEv_fnptr = 0;
+// extern "C" void set_callback_ZNK7QObject17senderSignalIndexEv(void*cbfn)
+// { callback_ZNK7QObject17senderSignalIndexEv_fnptr = cbfn; }
+// void* callback_ZNK7QObject9receiversEPKc_fnptr = 0;
+// extern "C" void set_callback_ZNK7QObject9receiversEPKc(void*cbfn)
+// { callback_ZNK7QObject9receiversEPKc_fnptr = cbfn; }
+// void* callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void*cbfn)
+// { callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QObject10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN7QObject10childEventEP11QChildEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QObject10childEventEP11QChildEvent(void*cbfn)
+// { callback_ZN7QObject10childEventEP11QChildEvent_fnptr = cbfn; }
+// void* callback_ZN7QObject11customEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QObject11customEventEP6QEvent(void*cbfn)
+// { callback_ZN7QObject11customEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN7QObject13connectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
+// void* callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = 0;
+// extern "C" void set_callback_ZN7QObject16disconnectNotifyERK11QMetaMethod(void*cbfn)
+// { callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
 
 class MyQObject : public QObject {
 public:
@@ -79,75 +44,133 @@ public:
 MyQObject(QObject * parent) : QObject(parent) {}
 // QObject * sender()
   virtual QObject * sender() {
-    auto fnptr = ((QObject * (*)(void* ))(callback_ZNK7QObject6senderEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sender", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QObject *)(irv);
+      // PointerPointerQObject *
+    } else {
+    // auto fnptr = ((QObject * (*)(void* ))(callback_ZNK7QObject6senderEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QObject::sender();
+  }
   }
 // int senderSignalIndex()
   virtual int senderSignalIndex() {
-    auto fnptr = ((int (*)(void* ))(callback_ZNK7QObject17senderSignalIndexEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"senderSignalIndex", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* ))(callback_ZNK7QObject17senderSignalIndexEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QObject::senderSignalIndex();
+  }
   }
 // int receivers(const char *)
   virtual int receivers(const char * signal) {
-    auto fnptr = ((int (*)(void* , const char *))(callback_ZNK7QObject9receiversEPKc_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"receivers", &handled, 1, (uint64_t)signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , const char *))(callback_ZNK7QObject9receiversEPKc_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , signal);
+    // }
     return QObject::receivers(signal);
+  }
   }
 // bool isSignalConnected(const class QMetaMethod &)
   virtual bool isSignalConnected(const QMetaMethod & signal) {
-    auto fnptr = ((bool (*)(void* , QMetaMethod*))(callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isSignalConnected", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QMetaMethod*))(callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&signal);
+    // }
     return QObject::isSignalConnected(signal);
+  }
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QObject::timerEvent(event);
+  }
   }
 // void childEvent(class QChildEvent *)
   virtual void childEvent(QChildEvent * event) {
-    auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QObject10childEventEP11QChildEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"childEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QObject10childEventEP11QChildEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QObject::childEvent(event);
+  }
   }
 // void customEvent(class QEvent *)
   virtual void customEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QObject11customEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"customEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QObject11customEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QObject::customEvent(event);
+  }
   }
 // void connectNotify(const class QMetaMethod &)
   virtual void connectNotify(const QMetaMethod & signal) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"connectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&signal);
+    // }
     QObject::connectNotify(signal);
+  }
   }
 // void disconnectNotify(const class QMetaMethod &)
   virtual void disconnectNotify(const QMetaMethod & signal) {
-    auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QMetaMethod*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"disconnectNotify", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QMetaMethod*)&signal);
+    // }
     QObject::disconnectNotify(signal);
+  }
   }
 };
 

@@ -2,40 +2,25 @@
 // /usr/include/qt/QtWidgets/qaccessiblewidget.h
 #include <qaccessiblewidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QAccessibleWidget is pure virtual: false
 // QAccessibleWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:84
-// [-2] void ~QAccessibleWidget()
-extern "C"
-void* callback_ZN17QAccessibleWidgetD1Ev_fnptr = 0;
-extern "C" void set_callback_ZN17QAccessibleWidgetD1Ev(void*cbfn)
-{ callback_ZN17QAccessibleWidgetD1Ev_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:85
-// [8] QWidget * widget()
-extern "C"
-void* callback_ZNK17QAccessibleWidget6widgetEv_fnptr = 0;
-extern "C" void set_callback_ZNK17QAccessibleWidget6widgetEv(void*cbfn)
-{ callback_ZNK17QAccessibleWidget6widgetEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:86
-// [8] QObject * parentObject()
-extern "C"
-void* callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = 0;
-extern "C" void set_callback_ZNK17QAccessibleWidget12parentObjectEv(void*cbfn)
-{ callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaccessiblewidget.h:88
-// [-2] void addControllingSignal(const class QString &)
-extern "C"
-void* callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = 0;
-extern "C" void set_callback_ZN17QAccessibleWidget20addControllingSignalERK7QString(void*cbfn)
-{ callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = cbfn; }
+// void* callback_ZN17QAccessibleWidgetD1Ev_fnptr = 0;
+// extern "C" void set_callback_ZN17QAccessibleWidgetD1Ev(void*cbfn)
+// { callback_ZN17QAccessibleWidgetD1Ev_fnptr = cbfn; }
+// void* callback_ZNK17QAccessibleWidget6widgetEv_fnptr = 0;
+// extern "C" void set_callback_ZNK17QAccessibleWidget6widgetEv(void*cbfn)
+// { callback_ZNK17QAccessibleWidget6widgetEv_fnptr = cbfn; }
+// void* callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = 0;
+// extern "C" void set_callback_ZNK17QAccessibleWidget12parentObjectEv(void*cbfn)
+// { callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = cbfn; }
+// void* callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = 0;
+// extern "C" void set_callback_ZN17QAccessibleWidget20addControllingSignalERK7QString(void*cbfn)
+// { callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = cbfn; }
 
 class MyQAccessibleWidget : public QAccessibleWidget {
 public:
@@ -45,27 +30,47 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
 // void ~QAccessibleWidget()
 // QWidget * widget()
   virtual QWidget * widget() {
-    auto fnptr = ((QWidget * (*)(void* ))(callback_ZNK17QAccessibleWidget6widgetEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"widget", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QWidget *)(irv);
+      // PointerPointerQWidget *
+    } else {
+    // auto fnptr = ((QWidget * (*)(void* ))(callback_ZNK17QAccessibleWidget6widgetEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QAccessibleWidget::widget();
+  }
   }
 // QObject * parentObject()
   virtual QObject * parentObject() {
-    auto fnptr = ((QObject * (*)(void* ))(callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"parentObject", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QObject *)(irv);
+      // PointerPointerQObject *
+    } else {
+    // auto fnptr = ((QObject * (*)(void* ))(callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QAccessibleWidget::parentObject();
+  }
   }
 // void addControllingSignal(const class QString &)
   virtual void addControllingSignal(const QString & signal) {
-    auto fnptr = ((void (*)(void* , QString*))(callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&signal);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"addControllingSignal", &handled, 1, (uint64_t)&signal, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*))(callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&signal);
+    // }
     QAccessibleWidget::addControllingSignal(signal);
+  }
   }
 };
 

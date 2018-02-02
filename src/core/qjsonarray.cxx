@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qjsonarray.h
 #include <qjsonarray.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QJsonArray is pure virtual: false
 // QJsonArray has virtual projected: false

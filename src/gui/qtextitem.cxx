@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpaintengine.h
 #include <qpaintengine.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextItem is pure virtual: false
 // QTextItem has virtual projected: false

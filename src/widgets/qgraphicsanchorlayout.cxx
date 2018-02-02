@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #include <qgraphicsanchorlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsAnchorLayout is pure virtual: false
 // QGraphicsAnchorLayout has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:107
-// [16] QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
-extern "C"
-void* callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
-extern "C" void set_callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
-{ callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
+// void* callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
+// extern "C" void set_callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
+// { callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
 
 class MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
 public:
@@ -23,11 +20,18 @@ public:
 MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(parent) {}
 // QSizeF sizeHint(Qt::SizeHint, const class QSizeF &)
   virtual QSizeF sizeHint(Qt::SizeHint which, const QSizeF & constraint) {
-    auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , which, (QSizeF*)&constraint);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sizeHint", &handled, 2, (uint64_t)which, (uint64_t)&constraint, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QSizeF*)(irv);
+      // RecordRecordQSizeF
+    } else {
+    // auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , which, (QSizeF*)&constraint);
+    // }
     return QGraphicsAnchorLayout::sizeHint(which, constraint);
+  }
   }
 };
 
@@ -66,6 +70,13 @@ void* C_ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPoint
 extern "C"
 void C_ZN21QGraphicsAnchorLayout16addCornerAnchorsEP19QGraphicsLayoutItemN2Qt6CornerES1_S3_(void *this_, QGraphicsLayoutItem * firstItem, Qt::Corner firstCorner, QGraphicsLayoutItem * secondItem, Qt::Corner secondCorner) {
   ((QGraphicsAnchorLayout*)this_)->addCornerAnchors(firstItem, firstCorner, secondItem, secondCorner);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:90
+// [-2] void addAnchors(class QGraphicsLayoutItem *, class QGraphicsLayoutItem *, Qt::Orientations)
+extern "C"
+void C_ZN21QGraphicsAnchorLayout10addAnchorsEP19QGraphicsLayoutItemS1_6QFlagsIN2Qt11OrientationEE(void *this_, QGraphicsLayoutItem * firstItem, QGraphicsLayoutItem * secondItem, QFlags<Qt::Orientation> orientations) {
+  ((QGraphicsAnchorLayout*)this_)->addAnchors(firstItem, secondItem, orientations);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:94

@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #include <qkeyeventtransition.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QKeyEventTransition is pure virtual: false
 // QKeyEventTransition has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeyeventtransition.h:69
-// [-2] void onTransition(class QEvent *)
-extern "C"
-void* callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(void*cbfn)
-{ callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeyeventtransition.h:70
-// [1] bool eventTest(class QEvent *)
-extern "C"
-void* callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN19QKeyEventTransition9eventTestEP6QEvent(void*cbfn)
-{ callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(void*cbfn)
+// { callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN19QKeyEventTransition9eventTestEP6QEvent(void*cbfn)
+// { callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQKeyEventTransition : public QKeyEventTransition {
 public:
@@ -32,19 +25,32 @@ MyQKeyEventTransition(QState * sourceState) : QKeyEventTransition(sourceState) {
 MyQKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sourceState) : QKeyEventTransition(object, type, key, sourceState) {}
 // void onTransition(class QEvent *)
   virtual void onTransition(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"onTransition", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QKeyEventTransition::onTransition(event);
+  }
   }
 // bool eventTest(class QEvent *)
   virtual bool eventTest(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventTest", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QKeyEventTransition::eventTest(event);
+  }
   }
 };
 
@@ -98,5 +104,12 @@ void C_ZN19QKeyEventTransition6setKeyEi(void *this_, int key) {
 extern "C"
 Qt::KeyboardModifiers C_ZNK19QKeyEventTransition12modifierMaskEv(void *this_) {
   return (Qt::KeyboardModifiers)((QKeyEventTransition*)this_)->modifierMask();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:66
+// [-2] void setModifierMask(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QKeyEventTransition*)this_)->setModifierMask(modifiers);
 }
 //  main block end

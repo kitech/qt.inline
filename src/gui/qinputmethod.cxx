@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qinputmethod.h
 #include <qinputmethod.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QInputMethod is pure virtual: false
 // QInputMethod has virtual projected: false
@@ -135,6 +136,13 @@ void C_ZN12QInputMethod4showEv(void *this_) {
 extern "C"
 void C_ZN12QInputMethod4hideEv(void *this_) {
   ((QInputMethod*)this_)->hide();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qinputmethod.h:103
+// [-2] void update(Qt::InputMethodQueries)
+extern "C"
+void C_ZN12QInputMethod6updateE6QFlagsIN2Qt16InputMethodQueryEE(void *this_, QFlags<Qt::InputMethodQuery> queries) {
+  ((QInputMethod*)this_)->update(queries);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qinputmethod.h:104

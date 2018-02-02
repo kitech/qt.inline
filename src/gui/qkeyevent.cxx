@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QKeyEvent is pure virtual: false
 // QKeyEvent has virtual projected: false
@@ -12,8 +13,26 @@
 class MyQKeyEvent : public QKeyEvent {
 public:
   virtual ~MyQKeyEvent() {}
+// void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
+MyQKeyEvent(QEvent::Type type, int key, QFlags<Qt::KeyboardModifier> modifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type, key, modifiers, text, autorep, count) {}
+// void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const class QString &, _Bool, ushort)
+MyQKeyEvent(QEvent::Type type, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:338
+// [-2] void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, const class QString &, _Bool, ushort)
+extern "C"
+void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt(QEvent::Type type, int key, QFlags<Qt::KeyboardModifier> modifiers, QString* text, bool autorep, ushort count) {
+  return  new QKeyEvent(type, key, modifiers, *text, autorep, count);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:340
+// [-2] void QKeyEvent(enum QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const class QString &, _Bool, ushort)
+extern "C"
+void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt(QEvent::Type type, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, QString* text, bool autorep, ushort count) {
+  return  new QKeyEvent(type, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, *text, autorep, count);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:343
 // [-2] void ~QKeyEvent()

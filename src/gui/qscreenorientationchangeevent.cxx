@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QScreenOrientationChangeEvent is pure virtual: false
 // QScreenOrientationChangeEvent has virtual projected: false

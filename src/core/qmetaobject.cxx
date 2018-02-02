@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qobjectdefs.h
 #include <qobjectdefs.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMetaObject is pure virtual: false
 // QMetaObject has virtual projected: false

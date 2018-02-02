@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qthreadpool.h
 #include <qthreadpool.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QThreadPool is pure virtual: false
 // QThreadPool has virtual projected: false

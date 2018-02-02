@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcollator.h
 #include <qcollator.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCollator is pure virtual: false
 // QCollator has virtual projected: false

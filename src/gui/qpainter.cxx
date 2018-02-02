@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpainter.h
 #include <qpainter.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPainter is pure virtual: false
 // QPainter has virtual projected: false
@@ -1399,6 +1400,13 @@ void C_ZN8QPainter9eraseRectERK5QRect(void *this_, QRect* arg0) {
 extern "C"
 void C_ZN8QPainter13setRenderHintENS_10RenderHintEb(void *this_, QPainter::RenderHint hint, bool on) {
   ((QPainter*)this_)->setRenderHint(hint, on);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:456
+// [-2] void setRenderHints(QPainter::RenderHints, _Bool)
+extern "C"
+void C_ZN8QPainter14setRenderHintsE6QFlagsINS_10RenderHintEEb(void *this_, QFlags<QPainter::RenderHint> hints, bool on) {
+  ((QPainter*)this_)->setRenderHints(hints, on);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:457

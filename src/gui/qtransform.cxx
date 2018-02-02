@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtransform.h
 #include <qtransform.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTransform is pure virtual: false
 // QTransform has virtual projected: false

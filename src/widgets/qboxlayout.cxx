@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qboxlayout.h
 #include <qboxlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QBoxLayout is pure virtual: false
 // QBoxLayout has virtual projected: false
@@ -73,6 +74,13 @@ void C_ZN10QBoxLayout13addSpacerItemEP11QSpacerItem(void *this_, QSpacerItem * s
   ((QBoxLayout*)this_)->addSpacerItem(spacerItem);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:74
+// [-2] void addWidget(class QWidget *, int, Qt::Alignment)
+extern "C"
+void C_ZN10QBoxLayout9addWidgetEP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QWidget * arg0, int stretch, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QBoxLayout*)this_)->addWidget(arg0, stretch, alignment);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:75
 // [-2] void addLayout(class QLayout *, int)
 extern "C"
@@ -113,6 +121,13 @@ void C_ZN10QBoxLayout13insertStretchEii(void *this_, int index, int stretch) {
 extern "C"
 void C_ZN10QBoxLayout16insertSpacerItemEiP11QSpacerItem(void *this_, int index, QSpacerItem * spacerItem) {
   ((QBoxLayout*)this_)->insertSpacerItem(index, spacerItem);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:82
+// [-2] void insertWidget(int, class QWidget *, int, Qt::Alignment)
+extern "C"
+void C_ZN10QBoxLayout12insertWidgetEiP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE(void *this_, int index, QWidget * widget, int stretch, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QBoxLayout*)this_)->insertWidget(index, widget, stretch, alignment);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qboxlayout.h:83

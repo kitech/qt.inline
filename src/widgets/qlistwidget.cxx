@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #include <qlistwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QListWidget is pure virtual: false
 // QListWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:281
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QListWidget5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QListWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QListWidget5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:289
-// [1] bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
-extern "C"
-void* callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
-extern "C" void set_callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
-{ callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:290
-// [4] Qt::DropActions supportedDropActions()
-extern "C"
-void* callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = 0;
-extern "C" void set_callback_ZNK11QListWidget20supportedDropActionsEv(void*cbfn)
-{ callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:300
-// [24] QModelIndex indexFromItem(class QListWidgetItem *)
-extern "C"
-void* callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = 0;
-extern "C" void set_callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(void*cbfn)
-{ callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:301
-// [8] QListWidgetItem * itemFromIndex(const class QModelIndex &)
-extern "C"
-void* callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void*cbfn)
-{ callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN11QListWidget5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QListWidget5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QListWidget5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
+// extern "C" void set_callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
+// { callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
+// void* callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = 0;
+// extern "C" void set_callback_ZNK11QListWidget20supportedDropActionsEv(void*cbfn)
+// { callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = cbfn; }
+// void* callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = 0;
+// extern "C" void set_callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(void*cbfn)
+// { callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = cbfn; }
+// void* callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void*cbfn)
+// { callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
 
 class MyQListWidget : public QListWidget {
 public:
@@ -51,43 +32,78 @@ public:
 MyQListWidget(QWidget * parent) : QListWidget(parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QListWidget5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QListWidget5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QListWidget::event(e);
+  }
   }
 // bool dropMimeData(int, const class QMimeData *, Qt::DropAction)
   virtual bool dropMimeData(int index, const QMimeData * data, Qt::DropAction action) {
-    auto fnptr = ((bool (*)(void* , int, const QMimeData *, Qt::DropAction))(callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , index, data, action);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dropMimeData", &handled, 3, (uint64_t)index, (uint64_t)data, (uint64_t)action, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , int, const QMimeData *, Qt::DropAction))(callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , index, data, action);
+    // }
     return QListWidget::dropMimeData(index, data, action);
+  }
   }
 // Qt::DropActions supportedDropActions()
   virtual Qt::DropActions supportedDropActions() {
-    auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK11QListWidget20supportedDropActionsEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"supportedDropActions", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (Qt::DropActions)(int)(irv);
+      // ElaboratedRecordQFlags<Qt::DropAction>
+    } else {
+    // auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK11QListWidget20supportedDropActionsEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QListWidget::supportedDropActions();
+  }
   }
 // QModelIndex indexFromItem(class QListWidgetItem *)
   virtual QModelIndex indexFromItem(QListWidgetItem * item) {
-    auto fnptr = ((QModelIndex (*)(void* , QListWidgetItem *))(callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , item);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"indexFromItem", &handled, 1, (uint64_t)item, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndex*)(irv);
+      // RecordRecordQModelIndex
+    } else {
+    // auto fnptr = ((QModelIndex (*)(void* , QListWidgetItem *))(callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , item);
+    // }
     return QListWidget::indexFromItem(item);
+  }
   }
 // QListWidgetItem * itemFromIndex(const class QModelIndex &)
   virtual QListWidgetItem * itemFromIndex(const QModelIndex & index) {
-    auto fnptr = ((QListWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"itemFromIndex", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QListWidgetItem *)(irv);
+      // PointerPointerQListWidgetItem *
+    } else {
+    // auto fnptr = ((QListWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QListWidget::itemFromIndex(index);
+  }
   }
 };
 

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qcommonstyle.h
 #include <qcommonstyle.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QCommonStyle is pure virtual: false
 // QCommonStyle has virtual projected: false

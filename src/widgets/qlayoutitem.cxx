@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qlayoutitem.h
 #include <qlayoutitem.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QLayoutItem is pure virtual: true
 // QLayoutItem has virtual projected: false
@@ -12,8 +13,17 @@
 class MyQLayoutItem : public QLayoutItem {
 public:
   virtual ~MyQLayoutItem() {}
+// void QLayoutItem(Qt::Alignment)
+MyQLayoutItem(QFlags<Qt::AlignmentFlag> alignment) : QLayoutItem(alignment) {}
 };
 
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:63
+// [-2] void QLayoutItem(Qt::Alignment)
+extern "C"
+void* C_ZN11QLayoutItemC1E6QFlagsIN2Qt13AlignmentFlagEE(QFlags<Qt::AlignmentFlag> alignment) {
+  return 0; // new QLayoutItem(alignment);
+}
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:64
 // [-2] void ~QLayoutItem()
@@ -129,6 +139,13 @@ void* C_ZN11QLayoutItem10spacerItemEv(void *this_) {
 extern "C"
 Qt::Alignment C_ZNK11QLayoutItem9alignmentEv(void *this_) {
   return (Qt::Alignment)((QLayoutItem*)this_)->alignment();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:82
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QLayoutItem12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> a) {
+  ((QLayoutItem*)this_)->setAlignment(a);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:83

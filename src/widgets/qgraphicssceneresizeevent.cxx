@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsSceneResizeEvent is pure virtual: false
 // QGraphicsSceneResizeEvent has virtual projected: false

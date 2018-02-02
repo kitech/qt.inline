@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdatetime.h
 #include <qdatetime.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDate is pure virtual: false
 // QDate has virtual projected: false

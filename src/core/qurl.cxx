@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qurl.h
 #include <qurl.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QUrl is pure virtual: false
 // QUrl has virtual projected: false
@@ -67,6 +68,14 @@ return new QUrl(rv);
 extern "C"
 void* C_ZN4QUrl13fromUserInputERK7QString(QString* userInput) {
   auto rv = QUrl::fromUserInput(*userInput);
+return new QUrl(rv);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:212
+// [8] QUrl fromUserInput(const class QString &, const class QString &, QUrl::UserInputResolutionOptions)
+extern "C"
+void* C_ZN4QUrl13fromUserInputERK7QStringS2_6QFlagsINS_25UserInputResolutionOptionEE(QString* userInput, QString* workingDirectory, QFlags<QUrl::UserInputResolutionOption> options) {
+  auto rv = QUrl::fromUserInput(*userInput, *workingDirectory, options);
 return new QUrl(rv);
 }
 // Public Visibility=Default Availability=Available

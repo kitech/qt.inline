@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qdesktopwidget.h
 #include <qdesktopwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDesktopWidget is pure virtual: false
 // QDesktopWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdesktopwidget.h:90
-// [-2] void resizeEvent(class QResizeEvent *)
-extern "C"
-void* callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-extern "C" void set_callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(void*cbfn)
-{ callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
+// void* callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(void*cbfn)
+// { callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 
 class MyQDesktopWidget : public QDesktopWidget {
 public:
@@ -23,11 +20,17 @@ public:
 MyQDesktopWidget() : QDesktopWidget() {}
 // void resizeEvent(class QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * e) {
-    auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QDesktopWidget::resizeEvent(e);
+  }
   }
 };
 

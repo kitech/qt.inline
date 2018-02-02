@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qvariant.h
 #include <qvariant.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QVariantComparisonHelper is pure virtual: false
 // QVariantComparisonHelper has virtual projected: false

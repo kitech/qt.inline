@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qpoint.h
 #include <qpoint.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QPointF is pure virtual: false
 // QPointF has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcontiguouscache.h
 #include <qcontiguouscache.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QContiguousCacheData is pure virtual: false
 // QContiguousCacheData has virtual projected: false

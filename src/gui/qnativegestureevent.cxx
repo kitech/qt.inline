@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QNativeGestureEvent is pure virtual: false
 // QNativeGestureEvent has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qabstracteventdispatcher.h
 #include <qabstracteventdispatcher.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAbstractEventDispatcher is pure virtual: true
 // QAbstractEventDispatcher has virtual projected: false

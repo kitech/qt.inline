@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #include <qtablewidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QTableWidgetSelectionRange is pure virtual: false
 // QTableWidgetSelectionRange has virtual projected: false

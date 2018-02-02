@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qversionnumber.h
 #include <qversionnumber.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QVersionNumber is pure virtual: false
 // QVersionNumber has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qregularexpression.h
 #include <qregularexpression.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRegularExpression is pure virtual: false
 // QRegularExpression has virtual projected: false
@@ -14,6 +15,8 @@ public:
   virtual ~MyQRegularExpression() {}
 // void QRegularExpression()
 MyQRegularExpression() : QRegularExpression() {}
+// void QRegularExpression(const class QString &, QRegularExpression::PatternOptions)
+MyQRegularExpression(const QString & pattern, QFlags<QRegularExpression::PatternOption> options) : QRegularExpression(pattern, options) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -25,11 +28,25 @@ void C_ZNK18QRegularExpression14patternOptionsEv(void *this_) {
 /*return rv;*/
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:82
+// [-2] void setPatternOptions(QRegularExpression::PatternOptions)
+extern "C"
+void C_ZN18QRegularExpression17setPatternOptionsE6QFlagsINS_13PatternOptionEE(void *this_, QFlags<QRegularExpression::PatternOption> options) {
+  ((QRegularExpression*)this_)->setPatternOptions(options);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:84
 // [-2] void QRegularExpression()
 extern "C"
 void* C_ZN18QRegularExpressionC2Ev() {
   return  new QRegularExpression();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:85
+// [-2] void QRegularExpression(const class QString &, QRegularExpression::PatternOptions)
+extern "C"
+void* C_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE(QString* pattern, QFlags<QRegularExpression::PatternOption> options) {
+  return  new QRegularExpression(*pattern, options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:87
@@ -88,6 +105,38 @@ return new QString(rv);
 extern "C"
 int C_ZNK18QRegularExpression12captureCountEv(void *this_) {
   return (int)((QRegularExpression*)this_)->captureCount();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:121
+// [8] QRegularExpressionMatch match(const class QString &, int, enum QRegularExpression::MatchType, QRegularExpression::MatchOptions)
+extern "C"
+void* C_ZNK18QRegularExpression5matchERK7QStringiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE(void *this_, QString* subject, int offset, QRegularExpression::MatchType matchType, QFlags<QRegularExpression::MatchOption> matchOptions) {
+  auto rv = ((QRegularExpression*)this_)->match(*subject, offset, matchType, matchOptions);
+return new QRegularExpressionMatch(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:126
+// [8] QRegularExpressionMatch match(const class QStringRef &, int, enum QRegularExpression::MatchType, QRegularExpression::MatchOptions)
+extern "C"
+void* C_ZNK18QRegularExpression5matchERK10QStringRefiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE(void *this_, QStringRef* subjectRef, int offset, QRegularExpression::MatchType matchType, QFlags<QRegularExpression::MatchOption> matchOptions) {
+  auto rv = ((QRegularExpression*)this_)->match(*subjectRef, offset, matchType, matchOptions);
+return new QRegularExpressionMatch(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:131
+// [8] QRegularExpressionMatchIterator globalMatch(const class QString &, int, enum QRegularExpression::MatchType, QRegularExpression::MatchOptions)
+extern "C"
+void* C_ZNK18QRegularExpression11globalMatchERK7QStringiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE(void *this_, QString* subject, int offset, QRegularExpression::MatchType matchType, QFlags<QRegularExpression::MatchOption> matchOptions) {
+  auto rv = ((QRegularExpression*)this_)->globalMatch(*subject, offset, matchType, matchOptions);
+return new QRegularExpressionMatchIterator(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:136
+// [8] QRegularExpressionMatchIterator globalMatch(const class QStringRef &, int, enum QRegularExpression::MatchType, QRegularExpression::MatchOptions)
+extern "C"
+void* C_ZNK18QRegularExpression11globalMatchERK10QStringRefiNS_9MatchTypeE6QFlagsINS_11MatchOptionEE(void *this_, QStringRef* subjectRef, int offset, QRegularExpression::MatchType matchType, QFlags<QRegularExpression::MatchOption> matchOptions) {
+  auto rv = ((QRegularExpression*)this_)->globalMatch(*subjectRef, offset, matchType, matchOptions);
+return new QRegularExpressionMatchIterator(rv);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:141

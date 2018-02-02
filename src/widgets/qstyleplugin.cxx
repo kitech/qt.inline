@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstyleplugin.h
 #include <qstyleplugin.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStylePlugin is pure virtual: true
 // QStylePlugin has virtual projected: false

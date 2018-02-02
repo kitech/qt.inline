@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qwidget.h
 #include <qwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QWidgetData is pure virtual: false
 // QWidgetData has virtual projected: false

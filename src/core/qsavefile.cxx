@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qsavefile.h
 #include <qsavefile.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSaveFile is pure virtual: false
 // QSaveFile has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsavefile.h:87
-// [8] qint64 writeData(const char *, qint64)
-extern "C"
-void* callback_ZN9QSaveFile9writeDataEPKcx_fnptr = 0;
-extern "C" void set_callback_ZN9QSaveFile9writeDataEPKcx(void*cbfn)
-{ callback_ZN9QSaveFile9writeDataEPKcx_fnptr = cbfn; }
+// void* callback_ZN9QSaveFile9writeDataEPKcx_fnptr = 0;
+// extern "C" void set_callback_ZN9QSaveFile9writeDataEPKcx(void*cbfn)
+// { callback_ZN9QSaveFile9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQSaveFile : public QSaveFile {
 public:
@@ -27,11 +24,18 @@ MyQSaveFile(QObject * parent) : QSaveFile(parent) {}
 MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
 // qint64 writeData(const char *, qint64)
   virtual qint64 writeData(const char * data, qint64 len) {
-    auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QSaveFile9writeDataEPKcx_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , data, len);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"writeData", &handled, 2, (uint64_t)data, (uint64_t)len, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (qint64)(irv);
+      // TypedefLongLonglong long
+    } else {
+    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QSaveFile9writeDataEPKcx_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , data, len);
+    // }
     return QSaveFile::writeData(data, len);
+  }
   }
 };
 
@@ -87,6 +91,13 @@ return new QString(rv);
 extern "C"
 void C_ZN9QSaveFile11setFileNameERK7QString(void *this_, QString* name) {
   ((QSaveFile*)this_)->setFileName(*name);
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsavefile.h:78
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN9QSaveFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
+  return (bool)((QSaveFile*)this_)->open(flags);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsavefile.h:79

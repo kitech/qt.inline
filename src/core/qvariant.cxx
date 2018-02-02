@@ -2,40 +2,25 @@
 // /usr/include/qt/QtCore/qvariant.h
 #include <qvariant.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QVariant is pure virtual: false
 // QVariant has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:464
-// [-2] void create(int, const void *)
-extern "C"
-void* callback_ZN8QVariant6createEiPKv_fnptr = 0;
-extern "C" void set_callback_ZN8QVariant6createEiPKv(void*cbfn)
-{ callback_ZN8QVariant6createEiPKv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:465
-// [1] bool cmp(const class QVariant &)
-extern "C"
-void* callback_ZNK8QVariant3cmpERKS__fnptr = 0;
-extern "C" void set_callback_ZNK8QVariant3cmpERKS_(void*cbfn)
-{ callback_ZNK8QVariant3cmpERKS__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:466
-// [4] int compare(const class QVariant &)
-extern "C"
-void* callback_ZNK8QVariant7compareERKS__fnptr = 0;
-extern "C" void set_callback_ZNK8QVariant7compareERKS_(void*cbfn)
-{ callback_ZNK8QVariant7compareERKS__fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:467
-// [1] bool convert(const int, void *)
-extern "C"
-void* callback_ZNK8QVariant7convertEiPv_fnptr = 0;
-extern "C" void set_callback_ZNK8QVariant7convertEiPv(void*cbfn)
-{ callback_ZNK8QVariant7convertEiPv_fnptr = cbfn; }
+// void* callback_ZN8QVariant6createEiPKv_fnptr = 0;
+// extern "C" void set_callback_ZN8QVariant6createEiPKv(void*cbfn)
+// { callback_ZN8QVariant6createEiPKv_fnptr = cbfn; }
+// void* callback_ZNK8QVariant3cmpERKS__fnptr = 0;
+// extern "C" void set_callback_ZNK8QVariant3cmpERKS_(void*cbfn)
+// { callback_ZNK8QVariant3cmpERKS__fnptr = cbfn; }
+// void* callback_ZNK8QVariant7compareERKS__fnptr = 0;
+// extern "C" void set_callback_ZNK8QVariant7compareERKS_(void*cbfn)
+// { callback_ZNK8QVariant7compareERKS__fnptr = cbfn; }
+// void* callback_ZNK8QVariant7convertEiPv_fnptr = 0;
+// extern "C" void set_callback_ZNK8QVariant7convertEiPv(void*cbfn)
+// { callback_ZNK8QVariant7convertEiPv_fnptr = cbfn; }
 
 class MyQVariant : public QVariant {
 public:
@@ -126,35 +111,62 @@ MyQVariant(const QJsonArray & jsonArray) : QVariant(jsonArray) {}
 MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
 // void create(int, const void *)
   virtual void create(int type, const void * copy) {
-    auto fnptr = ((void (*)(void* , int, const void *))(callback_ZN8QVariant6createEiPKv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , type, copy);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"create", &handled, 2, (uint64_t)type, (uint64_t)copy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, const void *))(callback_ZN8QVariant6createEiPKv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , type, copy);
+    // }
     QVariant::create(type, copy);
+  }
   }
 // bool cmp(const class QVariant &)
   virtual bool cmp(const QVariant & other) {
-    auto fnptr = ((bool (*)(void* , QVariant*))(callback_ZNK8QVariant3cmpERKS__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&other);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"cmp", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QVariant*))(callback_ZNK8QVariant3cmpERKS__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&other);
+    // }
     return QVariant::cmp(other);
+  }
   }
 // int compare(const class QVariant &)
   virtual int compare(const QVariant & other) {
-    auto fnptr = ((int (*)(void* , QVariant*))(callback_ZNK8QVariant7compareERKS__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QVariant*)&other);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"compare", &handled, 1, (uint64_t)&other, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QVariant*))(callback_ZNK8QVariant7compareERKS__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QVariant*)&other);
+    // }
     return QVariant::compare(other);
+  }
   }
 // bool convert(const int, void *)
   virtual bool convert(const int t, void * ptr) {
-    auto fnptr = ((bool (*)(void* , const int, void *))(callback_ZNK8QVariant7convertEiPv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , t, ptr);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"convert", &handled, 2, (uint64_t)t, (uint64_t)ptr, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , const int, void *))(callback_ZNK8QVariant7convertEiPv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , t, ptr);
+    // }
     return QVariant::convert(t, ptr);
+  }
   }
 };
 

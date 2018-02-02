@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlinkedlist.h
 #include <qlinkedlist.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLinkedListData is pure virtual: false
 // QLinkedListData has virtual projected: false

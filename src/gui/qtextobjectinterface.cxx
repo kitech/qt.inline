@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qabstracttextdocumentlayout.h
 #include <qabstracttextdocumentlayout.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextObjectInterface is pure virtual: true
 // QTextObjectInterface has virtual projected: false

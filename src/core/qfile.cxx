@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfile.h
 #include <qfile.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFile is pure virtual: false
 // QFile has virtual projected: false
@@ -206,6 +207,20 @@ bool C_ZN5QFile4copyERK7QStringS2_(QString* fileName, QString* newName) {
   return (bool)QFile::copy(*fileName, *newName);
 }
 // Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:127
+// [1] bool open(QIODevice::OpenMode)
+extern "C"
+bool C_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
+  return (bool)((QFile*)this_)->open(flags);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:129
+// [1] bool open(int, QIODevice::OpenMode, QFileDevice::FileHandleFlags)
+extern "C"
+bool C_ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14FileHandleFlagEE(void *this_, int fd, QFlags<QIODevice::OpenModeFlag> ioFlags, QFlags<QFileDevice::FileHandleFlag> handleFlags) {
+  return (bool)((QFile*)this_)->open(fd, ioFlags, handleFlags);
+}
+// Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:131
 // [8] qint64 size()
 extern "C"
@@ -241,5 +256,19 @@ extern "C"
 void C_ZN5QFile11permissionsERK7QString(QString* filename) {
   auto rv = QFile::permissions(*filename);
 /*return rv;*/
+}
+// Public virtual Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:138
+// [1] bool setPermissions(QFileDevice::Permissions)
+extern "C"
+bool C_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissionSpec) {
+  return (bool)((QFile*)this_)->setPermissions(permissionSpec);
+}
+// Public static Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:139
+// [1] bool setPermissions(const class QString &, QFileDevice::Permissions)
+extern "C"
+bool C_ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE(QString* filename, QFlags<QFileDevice::Permission> permissionSpec) {
+  return (bool)QFile::setPermissions(*filename, permissionSpec);
 }
 //  main block end

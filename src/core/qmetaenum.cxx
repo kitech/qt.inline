@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetaobject.h
 #include <qmetaobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMetaEnum is pure virtual: false
 // QMetaEnum has virtual projected: false

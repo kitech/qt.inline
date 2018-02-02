@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qfileiconprovider.h
 #include <qfileiconprovider.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QFileIconProvider is pure virtual: false
 // QFileIconProvider has virtual projected: false
@@ -53,6 +54,13 @@ extern "C"
 void* C_ZNK17QFileIconProvider4typeERK9QFileInfo(void *this_, QFileInfo* info) {
   auto rv = ((QFileIconProvider*)this_)->type(*info);
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:69
+// [-2] void setOptions(QFileIconProvider::Options)
+extern "C"
+void C_ZN17QFileIconProvider10setOptionsE6QFlagsINS_6OptionEE(void *this_, QFlags<QFileIconProvider::Option> options) {
+  ((QFileIconProvider*)this_)->setOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfileiconprovider.h:70

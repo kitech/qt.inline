@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtextboundaryfinder.h
 #include <qtextboundaryfinder.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTextBoundaryFinder is pure virtual: false
 // QTextBoundaryFinder has virtual projected: false

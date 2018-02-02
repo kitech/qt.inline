@@ -2,33 +2,22 @@
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h
 #include <qstyleditemdelegate.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyledItemDelegate is pure virtual: false
 // QStyledItemDelegate has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleditemdelegate.h:91
-// [-2] void initStyleOption(class QStyleOptionViewItem *, const class QModelIndex &)
-extern "C"
-void* callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
-{ callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleditemdelegate.h:94
-// [1] bool eventFilter(class QObject *, class QEvent *)
-extern "C"
-void* callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(void*cbfn)
-{ callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleditemdelegate.h:95
-// [1] bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
-extern "C"
-void* callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
-{ callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
+// { callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent(void*cbfn)
+// { callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
+// void* callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
+// { callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
 
 class MyQStyledItemDelegate : public QStyledItemDelegate {
 public:
@@ -37,27 +26,47 @@ public:
 MyQStyledItemDelegate(QObject * parent) : QStyledItemDelegate(parent) {}
 // void initStyleOption(class QStyleOptionViewItem *, const class QModelIndex &)
   virtual void initStyleOption(QStyleOptionViewItem * option, const QModelIndex & index) {
-    auto fnptr = ((void (*)(void* , QStyleOptionViewItem *, QModelIndex*))(callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option, (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 2, (uint64_t)option, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionViewItem *, QModelIndex*))(callback_ZNK19QStyledItemDelegate15initStyleOptionEP20QStyleOptionViewItemRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option, (QModelIndex*)&index);
+    // }
     QStyledItemDelegate::initStyleOption(option, index);
+  }
   }
 // bool eventFilter(class QObject *, class QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , object, event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"eventFilter", &handled, 2, (uint64_t)object, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , object, event);
+    // }
     return QStyledItemDelegate::eventFilter(object, event);
+  }
   }
 // bool editorEvent(class QEvent *, class QAbstractItemModel *, const class QStyleOptionViewItem &, const class QModelIndex &)
   virtual bool editorEvent(QEvent * event, QAbstractItemModel * model, const QStyleOptionViewItem & option, const QModelIndex & index) {
-    auto fnptr = ((bool (*)(void* , QEvent *, QAbstractItemModel *, QStyleOptionViewItem*, QModelIndex*))(callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event, model, (QStyleOptionViewItem*)&option, (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"editorEvent", &handled, 4, (uint64_t)event, (uint64_t)model, (uint64_t)&option, (uint64_t)&index, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *, QAbstractItemModel *, QStyleOptionViewItem*, QModelIndex*))(callback_ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event, model, (QStyleOptionViewItem*)&option, (QModelIndex*)&index);
+    // }
     return QStyledItemDelegate::editorEvent(event, model, option, index);
+  }
   }
 };
 

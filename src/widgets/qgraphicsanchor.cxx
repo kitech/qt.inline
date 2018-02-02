@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #include <qgraphicsanchorlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsAnchor is pure virtual: false
 // QGraphicsAnchor has virtual projected: false

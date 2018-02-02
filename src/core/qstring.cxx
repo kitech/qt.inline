@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qstring.h
 #include <qstring.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QString is pure virtual: false
 // QString has virtual projected: false

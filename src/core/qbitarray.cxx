@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbitarray.h
 #include <qbitarray.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QBitArray is pure virtual: false
 // QBitArray has virtual projected: false

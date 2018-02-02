@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qrawfont.h
 #include <qrawfont.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRawFont is pure virtual: false
 // QRawFont has virtual projected: false

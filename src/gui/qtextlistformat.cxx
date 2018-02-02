@@ -2,19 +2,16 @@
 // /usr/include/qt/QtGui/qtextformat.h
 #include <qtextformat.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextListFormat is pure virtual: false
 // QTextListFormat has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextformat.h:714
-// [-2] void QTextListFormat(const class QTextFormat &)
-extern "C"
-void* callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = 0;
-extern "C" void set_callback_ZN15QTextListFormatC1ERK11QTextFormat(void*cbfn)
-{ callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = cbfn; }
+// void* callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = 0;
+// extern "C" void set_callback_ZN15QTextListFormatC1ERK11QTextFormat(void*cbfn)
+// { callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextListFormat : public QTextListFormat {
 public:

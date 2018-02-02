@@ -2,12 +2,16 @@
 // /usr/include/qt/QtCore/qtemporaryfile.h
 #include <qtemporaryfile.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTemporaryFile is pure virtual: false
-// QTemporaryFile has virtual projected: false
+// QTemporaryFile has virtual projected: true
 //  header block end
 
 //  main block begin
+// void* callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void*cbfn)
+// { callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr = cbfn; }
 
 class MyQTemporaryFile : public QTemporaryFile {
 public:
@@ -20,6 +24,21 @@ MyQTemporaryFile(const QString & templateName) : QTemporaryFile(templateName) {}
 MyQTemporaryFile(QObject * parent) : QTemporaryFile(parent) {}
 // void QTemporaryFile(const class QString &, class QObject *)
 MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFile(templateName, parent) {}
+// bool open(QIODevice::OpenMode)
+  virtual bool open(QFlags<QIODevice::OpenModeFlag> flags) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"open", &handled, 1, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QFlags<QIODevice::OpenModeFlag>))(callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , flags);
+    // }
+    return QTemporaryFile::open(flags);
+  }
+  }
 };
 
 // Public virtual Visibility=Default Availability=Available
@@ -34,28 +53,32 @@ void* C_ZNK14QTemporaryFile10metaObjectEv(void *this_) {
 // [-2] void QTemporaryFile()
 extern "C"
 void* C_ZN14QTemporaryFileC2Ev() {
-  return  new QTemporaryFile();
+  auto _nilp = (MyQTemporaryFile*)(0);
+  return  new MyQTemporaryFile();
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:67
 // [-2] void QTemporaryFile(const class QString &)
 extern "C"
 void* C_ZN14QTemporaryFileC2ERK7QString(QString* templateName) {
-  return  new QTemporaryFile(*templateName);
+  auto _nilp = (MyQTemporaryFile*)(0);
+  return  new MyQTemporaryFile(*templateName);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:69
 // [-2] void QTemporaryFile(class QObject *)
 extern "C"
 void* C_ZN14QTemporaryFileC2EP7QObject(QObject * parent) {
-  return  new QTemporaryFile(parent);
+  auto _nilp = (MyQTemporaryFile*)(0);
+  return  new MyQTemporaryFile(parent);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:70
 // [-2] void QTemporaryFile(const class QString &, class QObject *)
 extern "C"
 void* C_ZN14QTemporaryFileC2ERK7QStringP7QObject(QString* templateName, QObject * parent) {
-  return  new QTemporaryFile(*templateName, parent);
+  auto _nilp = (MyQTemporaryFile*)(0);
+  return  new MyQTemporaryFile(*templateName, parent);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:72

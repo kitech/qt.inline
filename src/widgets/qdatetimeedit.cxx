@@ -2,103 +2,52 @@
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #include <qdatetimeedit.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDateTimeEdit is pure virtual: false
 // QDateTimeEdit has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:178
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:180
-// [-2] void wheelEvent(class QWheelEvent *)
-extern "C"
-void* callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:182
-// [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:183
-// [1] bool focusNextPrevChild(_Bool)
-extern "C"
-void* callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit18focusNextPrevChildEb(void*cbfn)
-{ callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:184
-// [4] QValidator::State validate(class QString &, int &)
-extern "C"
-void* callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit8validateER7QStringRi(void*cbfn)
-{ callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:185
-// [-2] void fixup(class QString &)
-extern "C"
-void* callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit5fixupER7QString(void*cbfn)
-{ callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:187
-// [8] QDateTime dateTimeFromText(const class QString &)
-extern "C"
-void* callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(void*cbfn)
-{ callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:188
-// [8] QString textFromDateTime(const class QDateTime &)
-extern "C"
-void* callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(void*cbfn)
-{ callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:189
-// [4] QAbstractSpinBox::StepEnabled stepEnabled()
-extern "C"
-void* callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit11stepEnabledEv(void*cbfn)
-{ callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:190
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:191
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:192
-// [-2] void initStyleOption(class QStyleOptionSpinBox *)
-extern "C"
-void* callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
-extern "C" void set_callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
-{ callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:194
-// [-2] void QDateTimeEdit(const class QVariant &, class QVariant::Type, class QWidget *)
-extern "C"
-void* callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = 0;
-extern "C" void set_callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget(void*cbfn)
-{ callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void*cbfn)
+// { callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit18focusNextPrevChildEb(void*cbfn)
+// { callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit8validateER7QStringRi(void*cbfn)
+// { callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit5fixupER7QString(void*cbfn)
+// { callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(void*cbfn)
+// { callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(void*cbfn)
+// { callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit11stepEnabledEv(void*cbfn)
+// { callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
+// extern "C" void set_callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
+// { callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
+// void* callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = 0;
+// extern "C" void set_callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget(void*cbfn)
+// { callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = cbfn; }
 
 class MyQDateTimeEdit : public QDateTimeEdit {
 public:
@@ -113,99 +62,176 @@ MyQDateTimeEdit(const QDate & d, QWidget * parent) : QDateTimeEdit(d, parent) {}
 MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDateTimeEdit::keyPressEvent(event);
+  }
   }
 // void wheelEvent(class QWheelEvent *)
   virtual void wheelEvent(QWheelEvent * event) {
-    auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"wheelEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDateTimeEdit::wheelEvent(event);
+  }
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * event) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDateTimeEdit::focusInEvent(event);
+  }
   }
 // bool focusNextPrevChild(_Bool)
   virtual bool focusNextPrevChild(bool next) {
-    auto fnptr = ((bool (*)(void* , bool))(callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , next);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusNextPrevChild", &handled, 1, (uint64_t)next, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , next);
+    // }
     return QDateTimeEdit::focusNextPrevChild(next);
+  }
   }
 // QValidator::State validate(class QString &, int &)
   virtual QValidator::State validate(QString & input, int & pos) {
-    auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&input, pos);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"validate", &handled, 2, (uint64_t)&input, (uint64_t)&pos, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QValidator::State)(int)(irv);
+      // ElaboratedEnumQValidator::State
+    } else {
+    // auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&input, pos);
+    // }
     return QDateTimeEdit::validate(input, pos);
+  }
   }
 // void fixup(class QString &)
   virtual void fixup(QString & input) {
-    auto fnptr = ((void (*)(void* , QString*))(callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&input);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"fixup", &handled, 1, (uint64_t)&input, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QString*))(callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&input);
+    // }
     QDateTimeEdit::fixup(input);
+  }
   }
 // QDateTime dateTimeFromText(const class QString &)
   virtual QDateTime dateTimeFromText(const QString & text) {
-    auto fnptr = ((QDateTime (*)(void* , QString*))(callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&text);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"dateTimeFromText", &handled, 1, (uint64_t)&text, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QDateTime*)(irv);
+      // RecordRecordQDateTime
+    } else {
+    // auto fnptr = ((QDateTime (*)(void* , QString*))(callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&text);
+    // }
     return QDateTimeEdit::dateTimeFromText(text);
+  }
   }
 // QString textFromDateTime(const class QDateTime &)
   virtual QString textFromDateTime(const QDateTime & dt) {
-    auto fnptr = ((QString (*)(void* , QDateTime*))(callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QDateTime*)&dt);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"textFromDateTime", &handled, 1, (uint64_t)&dt, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QString*)(irv);
+      // RecordRecordQString
+    } else {
+    // auto fnptr = ((QString (*)(void* , QDateTime*))(callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QDateTime*)&dt);
+    // }
     return QDateTimeEdit::textFromDateTime(dt);
+  }
   }
 // QAbstractSpinBox::StepEnabled stepEnabled()
   virtual QAbstractSpinBox::StepEnabled stepEnabled() {
-    auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"stepEnabled", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QAbstractSpinBox::StepEnabled)(int)(irv);
+      // TypedefRecordQFlags<QAbstractSpinBox::StepEnabledFlag>
+    } else {
+    // auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QDateTimeEdit::stepEnabled();
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * event) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDateTimeEdit::mousePressEvent(event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDateTimeEdit::paintEvent(event);
+  }
   }
 // void initStyleOption(class QStyleOptionSpinBox *)
   virtual void initStyleOption(QStyleOptionSpinBox * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QDateTimeEdit::initStyleOption(option);
+  }
   }
 // void QDateTimeEdit(const class QVariant &, class QVariant::Type, class QWidget *)
 MyQDateTimeEdit(const QVariant & val, QVariant::Type parserType, QWidget * parent) : QDateTimeEdit(val, parserType, parent) {}

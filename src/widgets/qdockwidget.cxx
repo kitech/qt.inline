@@ -2,47 +2,28 @@
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #include <qdockwidget.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QDockWidget is pure virtual: false
 // QDockWidget has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:116
-// [-2] void changeEvent(class QEvent *)
-extern "C"
-void* callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QDockWidget11changeEventEP6QEvent(void*cbfn)
-{ callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:117
-// [-2] void closeEvent(class QCloseEvent *)
-extern "C"
-void* callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QDockWidget10closeEventEP11QCloseEvent(void*cbfn)
-{ callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:118
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QDockWidget10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:119
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QDockWidget5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QDockWidget5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QDockWidget5eventEP6QEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:120
-// [-2] void initStyleOption(class QStyleOptionDockWidget *)
-extern "C"
-void* callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = 0;
-extern "C" void set_callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(void*cbfn)
-{ callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = cbfn; }
+// void* callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QDockWidget11changeEventEP6QEvent(void*cbfn)
+// { callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QDockWidget10closeEventEP11QCloseEvent(void*cbfn)
+// { callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = cbfn; }
+// void* callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QDockWidget10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN11QDockWidget5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QDockWidget5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QDockWidget5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = 0;
+// extern "C" void set_callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(void*cbfn)
+// { callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = cbfn; }
 
 class MyQDockWidget : public QDockWidget {
 public:
@@ -53,43 +34,74 @@ MyQDockWidget(const QString & title, QWidget * parent, QFlags<Qt::WindowType> fl
 MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(parent, flags) {}
 // void changeEvent(class QEvent *)
   virtual void changeEvent(QEvent * event) {
-    auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"changeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDockWidget::changeEvent(event);
+  }
   }
 // void closeEvent(class QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event) {
-    auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"closeEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDockWidget::closeEvent(event);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QDockWidget::paintEvent(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QDockWidget5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QDockWidget5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QDockWidget::event(event);
+  }
   }
 // void initStyleOption(class QStyleOptionDockWidget *)
   virtual void initStyleOption(QStyleOptionDockWidget * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionDockWidget *))(callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionDockWidget *))(callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QDockWidget::initStyleOption(option);
+  }
   }
 };
 
@@ -138,6 +150,13 @@ void C_ZN11QDockWidget9setWidgetEP7QWidget(void *this_, QWidget * widget) {
   ((QDockWidget*)this_)->setWidget(widget);
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:89
+// [-2] void setFeatures(QDockWidget::DockWidgetFeatures)
+extern "C"
+void C_ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE(void *this_, QFlags<QDockWidget::DockWidgetFeature> features) {
+  ((QDockWidget*)this_)->setFeatures(features);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:90
 // [4] QDockWidget::DockWidgetFeatures features()
 extern "C"
@@ -158,6 +177,13 @@ void C_ZN11QDockWidget11setFloatingEb(void *this_, bool floating) {
 extern "C"
 bool C_ZNK11QDockWidget10isFloatingEv(void *this_) {
   return (bool)((QDockWidget*)this_)->isFloating();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:95
+// [-2] void setAllowedAreas(Qt::DockWidgetAreas)
+extern "C"
+void C_ZN11QDockWidget15setAllowedAreasE6QFlagsIN2Qt14DockWidgetAreaEE(void *this_, QFlags<Qt::DockWidgetArea> areas) {
+  ((QDockWidget*)this_)->setAllowedAreas(areas);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:96
@@ -195,11 +221,25 @@ void* C_ZNK11QDockWidget16toggleViewActionEv(void *this_) {
   return (void*)((QDockWidget*)this_)->toggleViewAction();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:109
+// [-2] void featuresChanged(class QDockWidget::DockWidgetFeatures)
+extern "C"
+void C_ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(void *this_, QFlags<QDockWidget::DockWidgetFeature> features) {
+  ((QDockWidget*)this_)->featuresChanged(features);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:110
 // [-2] void topLevelChanged(_Bool)
 extern "C"
 void C_ZN11QDockWidget15topLevelChangedEb(void *this_, bool topLevel) {
   ((QDockWidget*)this_)->topLevelChanged(topLevel);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:111
+// [-2] void allowedAreasChanged(Qt::DockWidgetAreas)
+extern "C"
+void C_ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(void *this_, QFlags<Qt::DockWidgetArea> allowedAreas) {
+  ((QDockWidget*)this_)->allowedAreasChanged(allowedAreas);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:112

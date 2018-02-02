@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextlayout.h
 #include <qtextlayout.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextLayout is pure virtual: false
 // QTextLayout has virtual projected: false

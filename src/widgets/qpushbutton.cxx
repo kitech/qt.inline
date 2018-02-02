@@ -2,54 +2,31 @@
 // /usr/include/qt/QtWidgets/qpushbutton.h
 #include <qpushbutton.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QPushButton is pure virtual: false
 // QPushButton has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:91
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QPushButton5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QPushButton5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QPushButton5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:92
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QPushButton10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:93
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QPushButton13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:94
-// [-2] void focusInEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QPushButton12focusInEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:95
-// [-2] void focusOutEvent(class QFocusEvent *)
-extern "C"
-void* callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QPushButton13focusOutEventEP11QFocusEvent(void*cbfn)
-{ callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qpushbutton.h:96
-// [-2] void initStyleOption(class QStyleOptionButton *)
-extern "C"
-void* callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = 0;
-extern "C" void set_callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(void*cbfn)
-{ callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = cbfn; }
+// void* callback_ZN11QPushButton5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QPushButton5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QPushButton5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QPushButton10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QPushButton13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QPushButton12focusInEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QPushButton13focusOutEventEP11QFocusEvent(void*cbfn)
+// { callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
+// void* callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = 0;
+// extern "C" void set_callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(void*cbfn)
+// { callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = cbfn; }
 
 class MyQPushButton : public QPushButton {
 public:
@@ -62,51 +39,88 @@ MyQPushButton(const QString & text, QWidget * parent) : QPushButton(text, parent
 MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPushButton(icon, text, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QPushButton5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QPushButton5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QPushButton::event(e);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPushButton::paintEvent(arg0);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPushButton::keyPressEvent(arg0);
+  }
   }
 // void focusInEvent(class QFocusEvent *)
   virtual void focusInEvent(QFocusEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusInEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPushButton::focusInEvent(arg0);
+  }
   }
 // void focusOutEvent(class QFocusEvent *)
   virtual void focusOutEvent(QFocusEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"focusOutEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPushButton::focusOutEvent(arg0);
+  }
   }
 // void initStyleOption(class QStyleOptionButton *)
   virtual void initStyleOption(QStyleOptionButton * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionButton *))(callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionButton *))(callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QPushButton::initStyleOption(option);
+  }
   }
 };
 

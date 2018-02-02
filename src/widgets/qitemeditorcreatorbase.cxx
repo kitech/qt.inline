@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #include <qitemeditorfactory.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QItemEditorCreatorBase is pure virtual: true
 // QItemEditorCreatorBase has virtual projected: false

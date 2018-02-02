@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qbytearraymatcher.h
 #include <qbytearraymatcher.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QByteArrayMatcher is pure virtual: false
 // QByteArrayMatcher has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsSceneHoverEvent is pure virtual: false
 // QGraphicsSceneHoverEvent has virtual projected: false
@@ -126,5 +127,12 @@ void C_ZN24QGraphicsSceneHoverEvent16setLastScreenPosERK6QPoint(void *this_, QPo
 extern "C"
 Qt::KeyboardModifiers C_ZNK24QGraphicsSceneHoverEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QGraphicsSceneHoverEvent*)this_)->modifiers();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:223
+// [-2] void setModifiers(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN24QGraphicsSceneHoverEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QGraphicsSceneHoverEvent*)this_)->setModifiers(modifiers);
 }
 //  main block end

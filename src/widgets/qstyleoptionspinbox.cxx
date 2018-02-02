@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleOptionSpinBox is pure virtual: false
 // QStyleOptionSpinBox has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:556
-// [-2] void QStyleOptionSpinBox(int)
-extern "C"
-void* callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = 0;
-extern "C" void set_callback_ZN19QStyleOptionSpinBoxC1Ei(void*cbfn)
-{ callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = cbfn; }
+// void* callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = 0;
+// extern "C" void set_callback_ZN19QStyleOptionSpinBoxC1Ei(void*cbfn)
+// { callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
 public:

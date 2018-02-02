@@ -2,40 +2,25 @@
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
 #include <qkeysequenceedit.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QKeySequenceEdit is pure virtual: false
 // QKeySequenceEdit has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeysequenceedit.h:75
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QKeySequenceEdit5eventEP6QEvent(void*cbfn)
-{ callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeysequenceedit.h:76
-// [-2] void keyPressEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeysequenceedit.h:77
-// [-2] void keyReleaseEvent(class QKeyEvent *)
-extern "C"
-void* callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(void*cbfn)
-{ callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qkeysequenceedit.h:78
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QKeySequenceEdit5eventEP6QEvent(void*cbfn)
+// { callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(void*cbfn)
+// { callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
+// void* callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQKeySequenceEdit : public QKeySequenceEdit {
 public:
@@ -46,35 +31,60 @@ MyQKeySequenceEdit(QWidget * parent) : QKeySequenceEdit(parent) {}
 MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySequenceEdit(keySequence, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QKeySequenceEdit::event(arg0);
+  }
   }
 // void keyPressEvent(class QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyPressEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QKeySequenceEdit::keyPressEvent(arg0);
+  }
   }
 // void keyReleaseEvent(class QKeyEvent *)
   virtual void keyReleaseEvent(QKeyEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"keyReleaseEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QKeySequenceEdit::keyReleaseEvent(arg0);
+  }
   }
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QKeySequenceEdit::timerEvent(arg0);
+  }
   }
 };
 

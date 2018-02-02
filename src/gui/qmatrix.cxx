@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qmatrix.h
 #include <qmatrix.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QMatrix is pure virtual: false
 // QMatrix has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qmatrix4x4.h
 #include <qmatrix4x4.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QMatrix4x4 is pure virtual: false
 // QMatrix4x4 has virtual projected: false

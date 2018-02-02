@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qkeysequence.h
 #include <qkeysequence.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QKeySequence is pure virtual: false
 // QKeySequence has virtual projected: false

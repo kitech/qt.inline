@@ -2,215 +2,103 @@
 // /usr/include/qt/QtWidgets/qheaderview.h
 #include <qheaderview.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QHeaderView is pure virtual: false
 // QHeaderView has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:205
-// [-2] void updateSection(int)
-extern "C"
-void* callback_ZN11QHeaderView13updateSectionEi_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView13updateSectionEi(void*cbfn)
-{ callback_ZN11QHeaderView13updateSectionEi_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:206
-// [-2] void resizeSections()
-extern "C"
-void* callback_ZN11QHeaderView14resizeSectionsEv_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView14resizeSectionsEv(void*cbfn)
-{ callback_ZN11QHeaderView14resizeSectionsEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:207
-// [-2] void sectionsInserted(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void*cbfn)
-{ callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:208
-// [-2] void sectionsAboutToBeRemoved(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
-{ callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:212
-// [-2] void initialize()
-extern "C"
-void* callback_ZN11QHeaderView10initializeEv_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView10initializeEv(void*cbfn)
-{ callback_ZN11QHeaderView10initializeEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:214
-// [-2] void initializeSections()
-extern "C"
-void* callback_ZN11QHeaderView18initializeSectionsEv_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEv(void*cbfn)
-{ callback_ZN11QHeaderView18initializeSectionsEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:215
-// [-2] void initializeSections(int, int)
-extern "C"
-void* callback_ZN11QHeaderView18initializeSectionsEii_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEii(void*cbfn)
-{ callback_ZN11QHeaderView18initializeSectionsEii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:216
-// [-2] void currentChanged(const class QModelIndex &, const class QModelIndex &)
-extern "C"
-void* callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2_(void*cbfn)
-{ callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:218
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QHeaderView5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QHeaderView5eventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:219
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:220
-// [-2] void mousePressEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:221
-// [-2] void mouseMoveEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:222
-// [-2] void mouseReleaseEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:223
-// [-2] void mouseDoubleClickEvent(class QMouseEvent *)
-extern "C"
-void* callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-{ callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:224
-// [1] bool viewportEvent(class QEvent *)
-extern "C"
-void* callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView13viewportEventEP6QEvent(void*cbfn)
-{ callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:226
-// [-2] void paintSection(class QPainter *, const class QRect &, int)
-extern "C"
-void* callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti(void*cbfn)
-{ callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:227
-// [8] QSize sectionSizeFromContents(int)
-extern "C"
-void* callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView23sectionSizeFromContentsEi(void*cbfn)
-{ callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:229
-// [4] int horizontalOffset()
-extern "C"
-void* callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView16horizontalOffsetEv(void*cbfn)
-{ callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:230
-// [4] int verticalOffset()
-extern "C"
-void* callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView14verticalOffsetEv(void*cbfn)
-{ callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:231
-// [-2] void updateGeometries()
-extern "C"
-void* callback_ZN11QHeaderView16updateGeometriesEv_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView16updateGeometriesEv(void*cbfn)
-{ callback_ZN11QHeaderView16updateGeometriesEv_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:232
-// [-2] void scrollContentsBy(int, int)
-extern "C"
-void* callback_ZN11QHeaderView16scrollContentsByEii_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView16scrollContentsByEii(void*cbfn)
-{ callback_ZN11QHeaderView16scrollContentsByEii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:235
-// [-2] void rowsInserted(const class QModelIndex &, int, int)
-extern "C"
-void* callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii(void*cbfn)
-{ callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:237
-// [16] QRect visualRect(const class QModelIndex &)
-extern "C"
-void* callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView10visualRectERK11QModelIndex(void*cbfn)
-{ callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:238
-// [-2] void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
-extern "C"
-void* callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void*cbfn)
-{ callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:240
-// [24] QModelIndex indexAt(const class QPoint &)
-extern "C"
-void* callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView7indexAtERK6QPoint(void*cbfn)
-{ callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:241
-// [1] bool isIndexHidden(const class QModelIndex &)
-extern "C"
-void* callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex(void*cbfn)
-{ callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:244
-// [-2] void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
-extern "C"
-void* callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-extern "C" void set_callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-{ callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:245
-// [8] QRegion visualRegionForSelection(const class QItemSelection &)
-extern "C"
-void* callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-{ callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qheaderview.h:246
-// [-2] void initStyleOption(class QStyleOptionHeader *)
-extern "C"
-void* callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = 0;
-extern "C" void set_callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void*cbfn)
-{ callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView13updateSectionEi_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView13updateSectionEi(void*cbfn)
+// { callback_ZN11QHeaderView13updateSectionEi_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView14resizeSectionsEv_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView14resizeSectionsEv(void*cbfn)
+// { callback_ZN11QHeaderView14resizeSectionsEv_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void*cbfn)
+// { callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
+// { callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView10initializeEv_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView10initializeEv(void*cbfn)
+// { callback_ZN11QHeaderView10initializeEv_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView18initializeSectionsEv_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEv(void*cbfn)
+// { callback_ZN11QHeaderView18initializeSectionsEv_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView18initializeSectionsEii_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEii(void*cbfn)
+// { callback_ZN11QHeaderView18initializeSectionsEii_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2_(void*cbfn)
+// { callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
+// void* callback_ZN11QHeaderView5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QHeaderView5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
+// { callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView13viewportEventEP6QEvent(void*cbfn)
+// { callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti(void*cbfn)
+// { callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView23sectionSizeFromContentsEi(void*cbfn)
+// { callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView16horizontalOffsetEv(void*cbfn)
+// { callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView14verticalOffsetEv(void*cbfn)
+// { callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView16updateGeometriesEv_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView16updateGeometriesEv(void*cbfn)
+// { callback_ZN11QHeaderView16updateGeometriesEv_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView16scrollContentsByEii_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView16scrollContentsByEii(void*cbfn)
+// { callback_ZN11QHeaderView16scrollContentsByEii_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii(void*cbfn)
+// { callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView10visualRectERK11QModelIndex(void*cbfn)
+// { callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void*cbfn)
+// { callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView7indexAtERK6QPoint(void*cbfn)
+// { callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex(void*cbfn)
+// { callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
+// { callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
+// void* callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
+// extern "C" void set_callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
+// { callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
+// { callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
+// void* callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = 0;
+// extern "C" void set_callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void*cbfn)
+// { callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = cbfn; }
 
 class MyQHeaderView : public QHeaderView {
 public:
@@ -219,235 +107,433 @@ public:
 MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orientation, parent) {}
 // void updateSection(int)
   virtual void updateSection(int logicalIndex) {
-    auto fnptr = ((void (*)(void* , int))(callback_ZN11QHeaderView13updateSectionEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , logicalIndex);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateSection", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int))(callback_ZN11QHeaderView13updateSectionEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , logicalIndex);
+    // }
     QHeaderView::updateSection(logicalIndex);
+  }
   }
 // void resizeSections()
   virtual void resizeSections() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView14resizeSectionsEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"resizeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView14resizeSectionsEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QHeaderView::resizeSections();
+  }
   }
 // void sectionsInserted(const class QModelIndex &, int, int)
   virtual void sectionsInserted(const QModelIndex & parent, int logicalFirst, int logicalLast) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sectionsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
+    // }
     QHeaderView::sectionsInserted(parent, logicalFirst, logicalLast);
+  }
   }
 // void sectionsAboutToBeRemoved(const class QModelIndex &, int, int)
   virtual void sectionsAboutToBeRemoved(const QModelIndex & parent, int logicalFirst, int logicalLast) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sectionsAboutToBeRemoved", &handled, 3, (uint64_t)&parent, (uint64_t)logicalFirst, (uint64_t)logicalLast, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
+    // }
     QHeaderView::sectionsAboutToBeRemoved(parent, logicalFirst, logicalLast);
+  }
   }
 // void initialize()
   virtual void initialize() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView10initializeEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initialize", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView10initializeEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QHeaderView::initialize();
+  }
   }
 // void initializeSections()
   virtual void initializeSections() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView18initializeSectionsEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initializeSections", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView18initializeSectionsEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QHeaderView::initializeSections();
+  }
   }
 // void initializeSections(int, int)
   virtual void initializeSections(int start, int end) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView18initializeSectionsEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , start, end);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initializeSections", &handled, 2, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView18initializeSectionsEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , start, end);
+    // }
     QHeaderView::initializeSections(start, end);
+  }
   }
 // void currentChanged(const class QModelIndex &, const class QModelIndex &)
   virtual void currentChanged(const QModelIndex & current, const QModelIndex & old) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&current, (QModelIndex*)&old);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"currentChanged", &handled, 2, (uint64_t)&current, (uint64_t)&old, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&old);
+    // }
     QHeaderView::currentChanged(current, old);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QHeaderView::event(e);
+  }
   }
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * e) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QHeaderView::paintEvent(e);
+  }
   }
 // void mousePressEvent(class QMouseEvent *)
   virtual void mousePressEvent(QMouseEvent * e) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mousePressEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QHeaderView::mousePressEvent(e);
+  }
   }
 // void mouseMoveEvent(class QMouseEvent *)
   virtual void mouseMoveEvent(QMouseEvent * e) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseMoveEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QHeaderView::mouseMoveEvent(e);
+  }
   }
 // void mouseReleaseEvent(class QMouseEvent *)
   virtual void mouseReleaseEvent(QMouseEvent * e) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseReleaseEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QHeaderView::mouseReleaseEvent(e);
+  }
   }
 // void mouseDoubleClickEvent(class QMouseEvent *)
   virtual void mouseDoubleClickEvent(QMouseEvent * e) {
-    auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"mouseDoubleClickEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     QHeaderView::mouseDoubleClickEvent(e);
+  }
   }
 // bool viewportEvent(class QEvent *)
   virtual bool viewportEvent(QEvent * e) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , e);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"viewportEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , e);
+    // }
     return QHeaderView::viewportEvent(e);
+  }
   }
 // void paintSection(class QPainter *, const class QRect &, int)
   virtual void paintSection(QPainter * painter, const QRect & rect, int logicalIndex) {
-    auto fnptr = ((void (*)(void* , QPainter *, QRect*, int))(callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , painter, (QRect*)&rect, logicalIndex);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintSection", &handled, 3, (uint64_t)painter, (uint64_t)&rect, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPainter *, QRect*, int))(callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , painter, (QRect*)&rect, logicalIndex);
+    // }
     QHeaderView::paintSection(painter, rect, logicalIndex);
+  }
   }
 // QSize sectionSizeFromContents(int)
   virtual QSize sectionSizeFromContents(int logicalIndex) {
-    auto fnptr = ((QSize (*)(void* , int))(callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , logicalIndex);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"sectionSizeFromContents", &handled, 1, (uint64_t)logicalIndex, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QSize*)(irv);
+      // RecordRecordQSize
+    } else {
+    // auto fnptr = ((QSize (*)(void* , int))(callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , logicalIndex);
+    // }
     return QHeaderView::sectionSizeFromContents(logicalIndex);
+  }
   }
 // int horizontalOffset()
   virtual int horizontalOffset() {
-    auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"horizontalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QHeaderView::horizontalOffset();
+  }
   }
 // int verticalOffset()
   virtual int verticalOffset() {
-    auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView14verticalOffsetEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"verticalOffset", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView14verticalOffsetEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     return QHeaderView::verticalOffset();
+  }
   }
 // void updateGeometries()
   virtual void updateGeometries() {
-    auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView16updateGeometriesEv_fnptr));
-    if (fnptr != 0) {
-      fnptr(this );
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"updateGeometries", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView16updateGeometriesEv_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this );
+    // }
     QHeaderView::updateGeometries();
+  }
   }
 // void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy) {
-    auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView16scrollContentsByEii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , dx, dy);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"scrollContentsBy", &handled, 2, (uint64_t)dx, (uint64_t)dy, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView16scrollContentsByEii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , dx, dy);
+    // }
     QHeaderView::scrollContentsBy(dx, dy);
+  }
   }
 // void rowsInserted(const class QModelIndex &, int, int)
   virtual void rowsInserted(const QModelIndex & parent, int start, int end) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&parent, start, end);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"rowsInserted", &handled, 3, (uint64_t)&parent, (uint64_t)start, (uint64_t)end, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&parent, start, end);
+    // }
     QHeaderView::rowsInserted(parent, start, end);
+  }
   }
 // QRect visualRect(const class QModelIndex &)
   virtual QRect visualRect(const QModelIndex & index) {
-    auto fnptr = ((QRect (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"visualRect", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QRect*)(irv);
+      // RecordRecordQRect
+    } else {
+    // auto fnptr = ((QRect (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QHeaderView::visualRect(index);
+  }
   }
 // void scrollTo(const class QModelIndex &, enum QAbstractItemView::ScrollHint)
   virtual void scrollTo(const QModelIndex & index, QAbstractItemView::ScrollHint hint) {
-    auto fnptr = ((void (*)(void* , QModelIndex*, QAbstractItemView::ScrollHint))(callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index, hint);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"scrollTo", &handled, 2, (uint64_t)&index, (uint64_t)hint, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QModelIndex*, QAbstractItemView::ScrollHint))(callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index, hint);
+    // }
     QHeaderView::scrollTo(index, hint);
+  }
   }
 // QModelIndex indexAt(const class QPoint &)
   virtual QModelIndex indexAt(const QPoint & p) {
-    auto fnptr = ((QModelIndex (*)(void* , QPoint*))(callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QPoint*)&p);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"indexAt", &handled, 1, (uint64_t)&p, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndex*)(irv);
+      // RecordRecordQModelIndex
+    } else {
+    // auto fnptr = ((QModelIndex (*)(void* , QPoint*))(callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QPoint*)&p);
+    // }
     return QHeaderView::indexAt(p);
+  }
   }
 // bool isIndexHidden(const class QModelIndex &)
   virtual bool isIndexHidden(const QModelIndex & index) {
-    auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QModelIndex*)&index);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"isIndexHidden", &handled, 1, (uint64_t)&index, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QModelIndex*)&index);
+    // }
     return QHeaderView::isIndexHidden(index);
+  }
+  }
+// QModelIndex moveCursor(enum QAbstractItemView::CursorAction, Qt::KeyboardModifiers)
+  virtual QModelIndex moveCursor(QAbstractItemView::CursorAction arg0, Qt::KeyboardModifiers arg1) {
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"moveCursor", &handled, 2, (uint64_t)arg0, (uint64_t)arg1, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QModelIndex*)(irv);
+      // RecordRecordQModelIndex
+    } else {
+    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, Qt::KeyboardModifiers))(callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0, arg1);
+    // }
+    return QHeaderView::moveCursor(arg0, arg1);
+  }
   }
 // void setSelection(const class QRect &, class QItemSelectionModel::SelectionFlags)
   virtual void setSelection(const QRect & rect, QFlags<QItemSelectionModel::SelectionFlag> flags) {
-    auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QRect*)&rect, flags);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"setSelection", &handled, 2, (uint64_t)&rect, (uint64_t)flags, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QRect*)&rect, flags);
+    // }
     QHeaderView::setSelection(rect, flags);
+  }
   }
 // QRegion visualRegionForSelection(const class QItemSelection &)
   virtual QRegion visualRegionForSelection(const QItemSelection & selection) {
-    auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QItemSelection*)&selection);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"visualRegionForSelection", &handled, 1, (uint64_t)&selection, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QRegion*)(irv);
+      // RecordRecordQRegion
+    } else {
+    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QItemSelection*)&selection);
+    // }
     return QHeaderView::visualRegionForSelection(selection);
+  }
   }
 // void initStyleOption(class QStyleOptionHeader *)
   virtual void initStyleOption(QStyleOptionHeader * option) {
-    auto fnptr = ((void (*)(void* , QStyleOptionHeader *))(callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , option);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"initStyleOption", &handled, 1, (uint64_t)option, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QStyleOptionHeader *))(callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , option);
+    // }
     QHeaderView::initStyleOption(option);
+  }
   }
 };
 
@@ -858,6 +944,13 @@ void C_ZN11QHeaderView21setMaximumSectionSizeEi(void *this_, int size) {
 extern "C"
 Qt::Alignment C_ZNK11QHeaderView16defaultAlignmentEv(void *this_) {
   return (Qt::Alignment)((QHeaderView*)this_)->defaultAlignment();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:173
+// [-2] void setDefaultAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QHeaderView19setDefaultAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QHeaderView*)this_)->setDefaultAlignment(alignment);
 }
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:175

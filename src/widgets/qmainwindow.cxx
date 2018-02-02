@@ -2,26 +2,19 @@
 // /usr/include/qt/QtWidgets/qmainwindow.h
 #include <qmainwindow.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QMainWindow is pure virtual: false
 // QMainWindow has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:206
-// [-2] void contextMenuEvent(class QContextMenuEvent *)
-extern "C"
-void* callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-{ callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:208
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN11QMainWindow5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN11QMainWindow5eventEP6QEvent(void*cbfn)
-{ callback_ZN11QMainWindow5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(void*cbfn)
+// { callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
+// void* callback_ZN11QMainWindow5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN11QMainWindow5eventEP6QEvent(void*cbfn)
+// { callback_ZN11QMainWindow5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQMainWindow : public QMainWindow {
 public:
@@ -30,19 +23,32 @@ public:
 MyQMainWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMainWindow(parent, flags) {}
 // void contextMenuEvent(class QContextMenuEvent *)
   virtual void contextMenuEvent(QContextMenuEvent * event) {
-    auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"contextMenuEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QMainWindow::contextMenuEvent(event);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMainWindow5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMainWindow5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QMainWindow::event(event);
+  }
   }
 };
 
@@ -145,6 +151,20 @@ void C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *this_, QTabWid
 extern "C"
 QTabWidget::TabPosition C_ZNK11QMainWindow11tabPositionEN2Qt14DockWidgetAreaE(void *this_, Qt::DockWidgetArea area) {
   return (QTabWidget::TabPosition)((QMainWindow*)this_)->tabPosition(area);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:117
+// [-2] void setTabPosition(Qt::DockWidgetAreas, class QTabWidget::TabPosition)
+extern "C"
+void C_ZN11QMainWindow14setTabPositionE6QFlagsIN2Qt14DockWidgetAreaEEN10QTabWidget11TabPositionE(void *this_, QFlags<Qt::DockWidgetArea> areas, QTabWidget::TabPosition tabPosition) {
+  ((QMainWindow*)this_)->setTabPosition(areas, tabPosition);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:120
+// [-2] void setDockOptions(QMainWindow::DockOptions)
+extern "C"
+void C_ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE(void *this_, QFlags<QMainWindow::DockOption> options) {
+  ((QMainWindow*)this_)->setDockOptions(options);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmainwindow.h:121

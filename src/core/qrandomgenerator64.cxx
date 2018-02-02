@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qrandom.h
 #include <qrandom.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRandomGenerator64 is pure virtual: false
 // QRandomGenerator64 has virtual projected: false

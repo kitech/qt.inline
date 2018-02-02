@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qjsondocument.h
 #include <qjsondocument.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QJsonParseError is pure virtual: false
 // QJsonParseError has virtual projected: false

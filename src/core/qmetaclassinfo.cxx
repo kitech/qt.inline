@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qmetaobject.h
 #include <qmetaobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMetaClassInfo is pure virtual: false
 // QMetaClassInfo has virtual projected: false

@@ -137,7 +137,7 @@ int main_test(int argc, char **argv)
     }
 
     QDynSlotObject* dso2 = new QDynSlotObject((void*)&callback_slot_test, "released456", 0, 0, 0);
-    QObject::connect(dso, SIGNAL(objectNameChanged(const QString &)), dso2, SLOT(dumnyslot()));
+    QObject::connect(dso, SIGNAL(objectNameChanged(const QString &)), dso2, SLOT(dumnyslot()), Qt::QueuedConnection);
     dso->setObjectName(QString("beginnotdso111"));
     dso->setObjectName(QString("beginnotdso222"));
 
@@ -160,12 +160,12 @@ void QDynSlotObject_connect_switch(QObject*src, char*signature, QDynSlotObject*m
     if (on == 0) {
         QObject::disconnect(src, signature, me, SLOT(dumnyslot()));
     } else {
-        QObject::connect(src, signature, me, SLOT(dumnyslot()));
+        QObject::connect(src, signature, me, SLOT(dumnyslot()), Qt::QueuedConnection);
     }
 }
 
 void QDynSlotObject_connect_test(QObject*ofrom, QObject*oto) {
-    QObject::connect(ofrom, SIGNAL(objectNameChanged(const QString &)), oto, SLOT(dumnyslot()));
+    QObject::connect(ofrom, SIGNAL(objectNameChanged(const QString &)), oto, SLOT(dumnyslot()), Qt::QueuedConnection);
 }
 
 void QDynSlotObject_trigger_test(QObject*osrc) {

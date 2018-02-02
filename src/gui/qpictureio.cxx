@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpicture.h
 #include <qpicture.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPictureIO is pure virtual: false
 // QPictureIO has virtual projected: false

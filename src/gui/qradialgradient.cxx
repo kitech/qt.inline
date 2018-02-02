@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qbrush.h
 #include <qbrush.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRadialGradient is pure virtual: false
 // QRadialGradient has virtual projected: false

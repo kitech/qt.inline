@@ -2,19 +2,16 @@
 // /usr/include/qt/QtWidgets/qaction.h
 #include <qaction.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QAction is pure virtual: false
 // QAction has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:183
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN7QAction5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN7QAction5eventEP6QEvent(void*cbfn)
-{ callback_ZN7QAction5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN7QAction5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN7QAction5eventEP6QEvent(void*cbfn)
+// { callback_ZN7QAction5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAction : public QAction {
 public:
@@ -27,11 +24,18 @@ MyQAction(const QString & text, QObject * parent) : QAction(text, parent) {}
 MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(icon, text, parent) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QAction5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QAction5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QAction::event(arg0);
+  }
   }
 };
 

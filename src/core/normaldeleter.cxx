@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsharedpointer_impl.h
 #include <qsharedpointer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // NormalDeleter is pure virtual: false
 // NormalDeleter has virtual projected: false

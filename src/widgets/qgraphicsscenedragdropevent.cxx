@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsSceneDragDropEvent is pure virtual: false
 // QGraphicsSceneDragDropEvent has virtual projected: false
@@ -83,6 +84,13 @@ Qt::MouseButtons C_ZNK27QGraphicsSceneDragDropEvent7buttonsEv(void *this_) {
   return (Qt::MouseButtons)((QGraphicsSceneDragDropEvent*)this_)->buttons();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:265
+// [-2] void setButtons(Qt::MouseButtons)
+extern "C"
+void C_ZN27QGraphicsSceneDragDropEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void *this_, QFlags<Qt::MouseButton> buttons) {
+  ((QGraphicsSceneDragDropEvent*)this_)->setButtons(buttons);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:267
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C"
@@ -90,11 +98,25 @@ Qt::KeyboardModifiers C_ZNK27QGraphicsSceneDragDropEvent9modifiersEv(void *this_
   return (Qt::KeyboardModifiers)((QGraphicsSceneDragDropEvent*)this_)->modifiers();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:268
+// [-2] void setModifiers(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN27QGraphicsSceneDragDropEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QGraphicsSceneDragDropEvent*)this_)->setModifiers(modifiers);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:270
 // [4] Qt::DropActions possibleActions()
 extern "C"
 Qt::DropActions C_ZNK27QGraphicsSceneDragDropEvent15possibleActionsEv(void *this_) {
   return (Qt::DropActions)((QGraphicsSceneDragDropEvent*)this_)->possibleActions();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:271
+// [-2] void setPossibleActions(Qt::DropActions)
+extern "C"
+void C_ZN27QGraphicsSceneDragDropEvent18setPossibleActionsE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> actions) {
+  ((QGraphicsSceneDragDropEvent*)this_)->setPossibleActions(actions);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:273

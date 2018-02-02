@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtranslator.h
 #include <qtranslator.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTranslator is pure virtual: false
 // QTranslator has virtual projected: false

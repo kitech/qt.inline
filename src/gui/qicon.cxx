@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qicon.h
 #include <qicon.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QIcon is pure virtual: false
 // QIcon has virtual projected: false
@@ -119,6 +120,20 @@ extern "C"
 void* C_ZNK5QIcon4nameEv(void *this_) {
   auto rv = ((QIcon*)this_)->name();
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:93
+// [-2] void paint(class QPainter *, const class QRect &, Qt::Alignment, enum QIcon::Mode, enum QIcon::State)
+extern "C"
+void C_ZNK5QIcon5paintEP8QPainterRK5QRect6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *this_, QPainter * painter, QRect* rect, QFlags<Qt::AlignmentFlag> alignment, QIcon::Mode mode, QIcon::State state) {
+  ((QIcon*)this_)->paint(painter, *rect, alignment, mode, state);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:94
+// [-2] void paint(class QPainter *, int, int, int, int, Qt::Alignment, enum QIcon::Mode, enum QIcon::State)
+extern "C"
+void C_ZNK5QIcon5paintEP8QPainteriiii6QFlagsIN2Qt13AlignmentFlagEENS_4ModeENS_5StateE(void *this_, QPainter * painter, int x, int y, int w, int h, QFlags<Qt::AlignmentFlag> alignment, QIcon::Mode mode, QIcon::State state) {
+  ((QIcon*)this_)->paint(painter, x, y, w, h, alignment, mode, state);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:97

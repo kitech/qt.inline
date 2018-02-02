@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qfactoryinterface.h
 #include <qfactoryinterface.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QFactoryInterface is pure virtual: true
 // QFactoryInterface has virtual projected: false

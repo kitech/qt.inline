@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #include <qstyleoption.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QStyleHintReturnVariant is pure virtual: false
 // QStyleHintReturnVariant has virtual projected: false

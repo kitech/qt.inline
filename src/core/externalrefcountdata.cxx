@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qsharedpointer_impl.h
 #include <qsharedpointer.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // ExternalRefCountData is pure virtual: false
 // ExternalRefCountData has virtual projected: false

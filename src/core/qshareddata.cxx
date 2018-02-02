@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qshareddata.h
 #include <qshareddata.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QSharedData is pure virtual: false
 // QSharedData has virtual projected: false

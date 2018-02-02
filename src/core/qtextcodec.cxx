@@ -2,26 +2,19 @@
 // /usr/include/qt/QtCore/qtextcodec.h
 #include <qtextcodec.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTextCodec is pure virtual: true
 // QTextCodec has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:130
-// [-2] void QTextCodec()
-extern "C"
-void* callback_ZN10QTextCodecC1Ev_fnptr = 0;
-extern "C" void set_callback_ZN10QTextCodecC1Ev(void*cbfn)
-{ callback_ZN10QTextCodecC1Ev_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:131
-// [-2] void ~QTextCodec()
-extern "C"
-void* callback_ZN10QTextCodecD1Ev_fnptr = 0;
-extern "C" void set_callback_ZN10QTextCodecD1Ev(void*cbfn)
-{ callback_ZN10QTextCodecD1Ev_fnptr = cbfn; }
+// void* callback_ZN10QTextCodecC1Ev_fnptr = 0;
+// extern "C" void set_callback_ZN10QTextCodecC1Ev(void*cbfn)
+// { callback_ZN10QTextCodecC1Ev_fnptr = cbfn; }
+// void* callback_ZN10QTextCodecD1Ev_fnptr = 0;
+// extern "C" void set_callback_ZN10QTextCodecD1Ev(void*cbfn)
+// { callback_ZN10QTextCodecD1Ev_fnptr = cbfn; }
 
 class MyQTextCodec : public QTextCodec {
 public:

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qvariant.h
 #include <qvariant.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QAssociativeIterable is pure virtual: false
 // QAssociativeIterable has virtual projected: false

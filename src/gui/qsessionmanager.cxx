@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qsessionmanager.h
 #include <qsessionmanager.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QSessionManager is pure virtual: false
 // QSessionManager has virtual projected: false

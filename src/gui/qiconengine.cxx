@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qiconengine.h
 #include <qiconengine.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QIconEngine is pure virtual: true
 // QIconEngine has virtual projected: false

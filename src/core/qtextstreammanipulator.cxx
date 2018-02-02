@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qtextstream.h
 #include <qtextstream.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTextStreamManipulator is pure virtual: false
 // QTextStreamManipulator has virtual projected: false

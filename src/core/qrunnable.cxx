@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qrunnable.h
 #include <qrunnable.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QRunnable is pure virtual: true
 // QRunnable has virtual projected: false

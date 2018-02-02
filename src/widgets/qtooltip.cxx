@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qtooltip.h
 #include <qtooltip.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QToolTip is pure virtual: false
 // QToolTip has virtual projected: false

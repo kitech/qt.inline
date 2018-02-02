@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlibrary.h
 #include <qlibrary.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLibrary is pure virtual: false
 // QLibrary has virtual projected: false
@@ -160,6 +161,13 @@ extern "C"
 void* C_ZNK8QLibrary11errorStringEv(void *this_) {
   auto rv = ((QLibrary*)this_)->errorString();
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlibrary.h:92
+// [-2] void setLoadHints(QLibrary::LoadHints)
+extern "C"
+void C_ZN8QLibrary12setLoadHintsE6QFlagsINS_8LoadHintEE(void *this_, QFlags<QLibrary::LoadHint> hints) {
+  ((QLibrary*)this_)->setLoadHints(hints);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlibrary.h:93

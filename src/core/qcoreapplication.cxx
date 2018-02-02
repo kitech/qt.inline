@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qcoreapplication.h
 #include <qcoreapplication.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QCoreApplication is pure virtual: false
 // QCoreApplication has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreapplication.h:190
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN16QCoreApplication5eventEP6QEvent(void*cbfn)
-{ callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN16QCoreApplication5eventEP6QEvent(void*cbfn)
+// { callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCoreApplication : public QCoreApplication {
 public:
@@ -23,11 +20,18 @@ public:
 MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, argv, arg2) {}
 // bool event(class QEvent *)
   virtual bool event(QEvent * arg0) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QCoreApplication5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QCoreApplication5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QCoreApplication::event(arg0);
+  }
   }
 };
 

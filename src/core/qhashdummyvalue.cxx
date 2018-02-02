@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qhash.h
 #include <qhash.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QHashDummyValue is pure virtual: false
 // QHashDummyValue has virtual projected: false

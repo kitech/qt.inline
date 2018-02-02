@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qjsonobject.h
 #include <qjsonobject.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QJsonObject is pure virtual: false
 // QJsonObject has virtual projected: false

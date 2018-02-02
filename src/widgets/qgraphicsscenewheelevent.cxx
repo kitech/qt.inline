@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #include <qgraphicssceneevent.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QGraphicsSceneWheelEvent is pure virtual: false
 // QGraphicsSceneWheelEvent has virtual projected: false
@@ -83,11 +84,25 @@ Qt::MouseButtons C_ZNK24QGraphicsSceneWheelEvent7buttonsEv(void *this_) {
   return (Qt::MouseButtons)((QGraphicsSceneWheelEvent*)this_)->buttons();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:152
+// [-2] void setButtons(Qt::MouseButtons)
+extern "C"
+void C_ZN24QGraphicsSceneWheelEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void *this_, QFlags<Qt::MouseButton> buttons) {
+  ((QGraphicsSceneWheelEvent*)this_)->setButtons(buttons);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:154
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C"
 Qt::KeyboardModifiers C_ZNK24QGraphicsSceneWheelEvent9modifiersEv(void *this_) {
   return (Qt::KeyboardModifiers)((QGraphicsSceneWheelEvent*)this_)->modifiers();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:155
+// [-2] void setModifiers(Qt::KeyboardModifiers)
+extern "C"
+void C_ZN24QGraphicsSceneWheelEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
+  ((QGraphicsSceneWheelEvent*)this_)->setModifiers(modifiers);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h:157

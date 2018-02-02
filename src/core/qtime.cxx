@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdatetime.h
 #include <qdatetime.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTime is pure virtual: false
 // QTime has virtual projected: false

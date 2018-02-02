@@ -2,6 +2,7 @@
 // /usr/include/qt/QtWidgets/qboxlayout.h
 #include <qboxlayout.h>
 #include <QtWidgets>
+#include "callback_inherit.h"
 
 // QVBoxLayout is pure virtual: false
 // QVBoxLayout has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qcoreevent.h
 #include <qcoreevent.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTimerEvent is pure virtual: false
 // QTimerEvent has virtual projected: false

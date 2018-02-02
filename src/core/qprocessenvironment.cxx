@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qprocess.h
 #include <qprocess.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QProcessEnvironment is pure virtual: false
 // QProcessEnvironment has virtual projected: false

@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtexttable.h
 #include <qtexttable.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextTable is pure virtual: false
 // QTextTable has virtual projected: false

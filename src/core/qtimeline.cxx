@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qtimeline.h
 #include <qtimeline.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QTimeLine is pure virtual: false
 // QTimeLine has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimeline.h:130
-// [-2] void timerEvent(class QTimerEvent *)
-extern "C"
-void* callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = 0;
-extern "C" void set_callback_ZN9QTimeLine10timerEventEP11QTimerEvent(void*cbfn)
-{ callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = cbfn; }
+// void* callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = 0;
+// extern "C" void set_callback_ZN9QTimeLine10timerEventEP11QTimerEvent(void*cbfn)
+// { callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQTimeLine : public QTimeLine {
 public:
@@ -23,11 +20,17 @@ public:
 MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
 // void timerEvent(class QTimerEvent *)
   virtual void timerEvent(QTimerEvent * event) {
-    auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"timerEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QTimeLine::timerEvent(event);
+  }
   }
 };
 

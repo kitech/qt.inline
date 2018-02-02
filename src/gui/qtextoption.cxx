@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qtextoption.h
 #include <qtextoption.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QTextOption is pure virtual: false
 // QTextOption has virtual projected: false
@@ -14,6 +15,8 @@ public:
   virtual ~MyQTextOption() {}
 // void QTextOption()
 MyQTextOption() : QTextOption() {}
+// void QTextOption(Qt::Alignment)
+MyQTextOption(QFlags<Qt::AlignmentFlag> alignment) : QTextOption(alignment) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -24,11 +27,25 @@ void* C_ZN11QTextOptionC2Ev() {
   return  new QTextOption();
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:86
+// [-2] void QTextOption(Qt::Alignment)
+extern "C"
+void* C_ZN11QTextOptionC2E6QFlagsIN2Qt13AlignmentFlagEE(QFlags<Qt::AlignmentFlag> alignment) {
+  return  new QTextOption(alignment);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:87
 // [-2] void ~QTextOption()
 extern "C"
 void C_ZN11QTextOptionD2Ev(void *this_) {
   delete (QTextOption*)(this_);
+}
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:92
+// [-2] void setAlignment(Qt::Alignment)
+extern "C"
+void C_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
+  ((QTextOption*)this_)->setAlignment(alignment);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:93

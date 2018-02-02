@@ -2,75 +2,86 @@
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
 #include <qpaintdevicewindow.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPaintDeviceWindow is pure virtual: false
 // QPaintDeviceWindow has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:69
-// [-2] void paintEvent(class QPaintEvent *)
-extern "C"
-void* callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = 0;
-extern "C" void set_callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void*cbfn)
-{ callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:71
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
-void* callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-extern "C" void set_callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:72
-// [-2] void exposeEvent(class QExposeEvent *)
-extern "C"
-void* callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = 0;
-extern "C" void set_callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void*cbfn)
-{ callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:73
-// [1] bool event(class QEvent *)
-extern "C"
-void* callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = 0;
-extern "C" void set_callback_ZN18QPaintDeviceWindow5eventEP6QEvent(void*cbfn)
-{ callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = cbfn; }
+// void* callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = 0;
+// extern "C" void set_callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void*cbfn)
+// { callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = cbfn; }
+// void* callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
+// extern "C" void set_callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
+// { callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
+// void* callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = 0;
+// extern "C" void set_callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void*cbfn)
+// { callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = cbfn; }
+// void* callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = 0;
+// extern "C" void set_callback_ZN18QPaintDeviceWindow5eventEP6QEvent(void*cbfn)
+// { callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQPaintDeviceWindow : public QPaintDeviceWindow {
 public:
   virtual ~MyQPaintDeviceWindow() {}
 // void paintEvent(class QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event) {
-    auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"paintEvent", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     QPaintDeviceWindow::paintEvent(event);
+  }
   }
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
-    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , metric);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , metric);
+    // }
     return QPaintDeviceWindow::metric(metric);
+  }
   }
 // void exposeEvent(class QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0) {
-    auto fnptr = ((void (*)(void* , QExposeEvent *))(callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"exposeEvent", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QExposeEvent *))(callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     QPaintDeviceWindow::exposeEvent(arg0);
+  }
   }
 // bool event(class QEvent *)
   virtual bool event(QEvent * event) {
-    auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , event);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"event", &handled, 1, (uint64_t)event, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (bool)(irv);
+      // BoolBoolbool
+    } else {
+    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , event);
+    // }
     return QPaintDeviceWindow::event(event);
+  }
   }
 };
 

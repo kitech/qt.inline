@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qidentityproxymodel.h
 #include <qidentityproxymodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QIdentityProxyModel is pure virtual: false
 // QIdentityProxyModel has virtual projected: false

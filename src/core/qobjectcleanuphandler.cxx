@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qobjectcleanuphandler.h
 #include <qobjectcleanuphandler.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QObjectCleanupHandler is pure virtual: false
 // QObjectCleanupHandler has virtual projected: false

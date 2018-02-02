@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qitemselectionmodel.h
 #include <qitemselectionmodel.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QItemSelectionModel is pure virtual: false
 // QItemSelectionModel has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:212
-// [-2] void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
-extern "C"
-void* callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = 0;
-extern "C" void set_callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(void*cbfn)
-{ callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
+// void* callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = 0;
+// extern "C" void set_callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(void*cbfn)
+// { callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
 
 class MyQItemSelectionModel : public QItemSelectionModel {
 public:
@@ -25,11 +22,17 @@ MyQItemSelectionModel(QAbstractItemModel * model) : QItemSelectionModel(model) {
 MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelectionModel(model, parent) {}
 // void emitSelectionChanged(const class QItemSelection &, const class QItemSelection &)
   virtual void emitSelectionChanged(const QItemSelection & newSelection, const QItemSelection & oldSelection) {
-    auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QItemSelection*)&newSelection, (QItemSelection*)&oldSelection);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"emitSelectionChanged", &handled, 2, (uint64_t)&newSelection, (uint64_t)&oldSelection, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+      // VoidVoidvoid
+    } else {
+    // auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QItemSelection*)&newSelection, (QItemSelection*)&oldSelection);
+    // }
     QItemSelectionModel::emitSelectionChanged(newSelection, oldSelection);
+  }
   }
 };
 

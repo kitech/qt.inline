@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qmovie.h
 #include <qmovie.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QMovie is pure virtual: false
 // QMovie has virtual projected: false

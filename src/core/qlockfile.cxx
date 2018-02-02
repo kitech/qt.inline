@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qlockfile.h
 #include <qlockfile.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QLockFile is pure virtual: false
 // QLockFile has virtual projected: false

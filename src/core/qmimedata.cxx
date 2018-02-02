@@ -2,19 +2,16 @@
 // /usr/include/qt/QtCore/qmimedata.h
 #include <qmimedata.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QMimeData is pure virtual: false
 // QMimeData has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimedata.h:88
-// [16] QVariant retrieveData(const class QString &, class QVariant::Type)
-extern "C"
-void* callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = 0;
-extern "C" void set_callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(void*cbfn)
-{ callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = cbfn; }
+// void* callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = 0;
+// extern "C" void set_callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(void*cbfn)
+// { callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = cbfn; }
 
 class MyQMimeData : public QMimeData {
 public:
@@ -23,11 +20,18 @@ public:
 MyQMimeData() : QMimeData() {}
 // QVariant retrieveData(const class QString &, class QVariant::Type)
   virtual QVariant retrieveData(const QString & mimetype, QVariant::Type preferredType) {
-    auto fnptr = ((QVariant (*)(void* , QString*, QVariant::Type))(callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , (QString*)&mimetype, preferredType);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"retrieveData", &handled, 2, (uint64_t)&mimetype, (uint64_t)preferredType, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return *(QVariant*)(irv);
+      // RecordRecordQVariant
+    } else {
+    // auto fnptr = ((QVariant (*)(void* , QString*, QVariant::Type))(callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , (QString*)&mimetype, preferredType);
+    // }
     return QMimeData::retrieveData(mimetype, preferredType);
+  }
   }
 };
 

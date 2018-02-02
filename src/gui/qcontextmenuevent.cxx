@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qevent.h
 #include <qevent.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QContextMenuEvent is pure virtual: false
 // QContextMenuEvent has virtual projected: false
@@ -12,12 +13,21 @@
 class MyQContextMenuEvent : public QContextMenuEvent {
 public:
   virtual ~MyQContextMenuEvent() {}
+// void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)
+MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos, QFlags<Qt::KeyboardModifier> modifiers) : QContextMenuEvent(reason, pos, globalPos, modifiers) {}
 // void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos) : QContextMenuEvent(reason, pos, globalPos) {}
 // void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &)
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QContextMenuEvent(reason, pos) {}
 };
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:511
+// [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &, Qt::KeyboardModifiers)
+extern "C"
+void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos, QFlags<Qt::KeyboardModifier> modifiers) {
+  return  new QContextMenuEvent(reason, *pos, *globalPos, modifiers);
+}
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:513
 // [-2] void QContextMenuEvent(enum QContextMenuEvent::Reason, const class QPoint &, const class QPoint &)

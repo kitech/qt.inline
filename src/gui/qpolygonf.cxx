@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qpolygon.h
 #include <qpolygon.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPolygonF is pure virtual: false
 // QPolygonF has virtual projected: false

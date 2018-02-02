@@ -2,6 +2,7 @@
 // /usr/include/qt/QtGui/qglyphrun.h
 #include <qglyphrun.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QGlyphRun is pure virtual: false
 // QGlyphRun has virtual projected: false

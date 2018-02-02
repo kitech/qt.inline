@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qpagedpaintdevice.h
 #include <qpagedpaintdevice.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QPagedPaintDevice is pure virtual: true
 // QPagedPaintDevice has virtual projected: false
 //  header block end
 
 //  main block begin
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:246
-// [8] QPageLayout devicePageLayout()
-extern "C"
-void* callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
-extern "C" void set_callback_ZNK17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-{ callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
-// Protected Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:247
-// [8] QPageLayout & devicePageLayout()
-extern "C"
-void* callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
-extern "C" void set_callback_ZN17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-{ callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
+// void* callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
+// extern "C" void set_callback_ZNK17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
+// { callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
+// void* callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
+// extern "C" void set_callback_ZN17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
+// { callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:58

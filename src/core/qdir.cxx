@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qdir.h
 #include <qdir.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QDir is pure virtual: false
 // QDir has virtual projected: false
@@ -14,6 +15,8 @@ public:
   virtual ~MyQDir() {}
 // void QDir(const class QString &)
 MyQDir(const QString & path) : QDir(path) {}
+// void QDir(const class QString &, const class QString &, QDir::SortFlags, QDir::Filters)
+MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -22,6 +25,13 @@ MyQDir(const QString & path) : QDir(path) {}
 extern "C"
 void* C_ZN4QDirC2ERK7QString(QString* path) {
   return  new QDir(*path);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:103
+// [-2] void QDir(const class QString &, const class QString &, QDir::SortFlags, QDir::Filters)
+extern "C"
+void* C_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(QString* path, QString* nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) {
+  return  new QDir(*path, *nameFilter, sort, filter);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:105
@@ -167,6 +177,13 @@ void C_ZNK4QDir6filterEv(void *this_) {
 /*return rv;*/
 }
 // Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:142
+// [-2] void setFilter(QDir::Filters)
+extern "C"
+void C_ZN4QDir9setFilterE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filter) {
+  ((QDir*)this_)->setFilter(filter);
+}
+// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:143
 // [4] QDir::SortFlags sorting()
 extern "C"
@@ -187,6 +204,13 @@ void C_ZN4QDir10setSortingE6QFlagsINS_8SortFlagEE(void *this_, QFlags<QDir::Sort
 extern "C"
 uint C_ZNK4QDir5countEv(void *this_) {
   return (uint)((QDir*)this_)->count();
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:147
+// [1] bool isEmpty(QDir::Filters)
+extern "C"
+bool C_ZNK4QDir7isEmptyE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
+  return (bool)((QDir*)this_)->isEmpty(filters);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:161

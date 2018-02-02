@@ -2,26 +2,19 @@
 // /usr/include/qt/QtGui/qrasterwindow.h
 #include <qrasterwindow.h>
 #include <QtGui>
+#include "callback_inherit.h"
 
 // QRasterWindow is pure virtual: false
 // QRasterWindow has virtual projected: true
 //  header block end
 
 //  main block begin
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qrasterwindow.h:60
-// [4] int metric(enum QPaintDevice::PaintDeviceMetric)
-extern "C"
-void* callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-extern "C" void set_callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-{ callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qrasterwindow.h:61
-// [8] QPaintDevice * redirected(class QPoint *)
-extern "C"
-void* callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = 0;
-extern "C" void set_callback_ZNK13QRasterWindow10redirectedEP6QPoint(void*cbfn)
-{ callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = cbfn; }
+// void* callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
+// extern "C" void set_callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
+// { callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
+// void* callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = 0;
+// extern "C" void set_callback_ZNK13QRasterWindow10redirectedEP6QPoint(void*cbfn)
+// { callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = cbfn; }
 
 class MyQRasterWindow : public QRasterWindow {
 public:
@@ -30,19 +23,33 @@ public:
 MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
 // int metric(enum QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) {
-    auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , metric);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"metric", &handled, 1, (uint64_t)metric, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (int)(irv);
+      // IntIntint
+    } else {
+    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , metric);
+    // }
     return QRasterWindow::metric(metric);
+  }
   }
 // QPaintDevice * redirected(class QPoint *)
   virtual QPaintDevice * redirected(QPoint * arg0) {
-    auto fnptr = ((QPaintDevice * (*)(void* , QPoint *))(callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr));
-    if (fnptr != 0) {
-      fnptr(this , arg0);
-    }
+    int handled = 0;
+    auto irv = callbackAllInherits_fnptr(this, (char*)"redirected", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (handled) {
+    return (QPaintDevice *)(irv);
+      // PointerPointerQPaintDevice *
+    } else {
+    // auto fnptr = ((QPaintDevice * (*)(void* , QPoint *))(callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr));
+    // if (fnptr != 0) {
+    //   fnptr(this , arg0);
+    // }
     return QRasterWindow::redirected(arg0);
+  }
   }
 };
 

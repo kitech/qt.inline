@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qpluginloader.h
 #include <qpluginloader.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QPluginLoader is pure virtual: false
 // QPluginLoader has virtual projected: false
@@ -104,6 +105,13 @@ extern "C"
 void* C_ZNK13QPluginLoader11errorStringEv(void *this_) {
   auto rv = ((QPluginLoader*)this_)->errorString();
 return new QString(rv);
+}
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:81
+// [-2] void setLoadHints(class QLibrary::LoadHints)
+extern "C"
+void C_ZN13QPluginLoader12setLoadHintsE6QFlagsIN8QLibrary8LoadHintEE(void *this_, QFlags<QLibrary::LoadHint> loadHints) {
+  ((QPluginLoader*)this_)->setLoadHints(loadHints);
 }
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpluginloader.h:82

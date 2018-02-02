@@ -2,6 +2,7 @@
 // /usr/include/qt/QtCore/qxmlstream.h
 #include <qxmlstream.h>
 #include <QtCore>
+#include "callback_inherit.h"
 
 // QXmlStreamNotationDeclaration is pure virtual: false
 // QXmlStreamNotationDeclaration has virtual projected: false
