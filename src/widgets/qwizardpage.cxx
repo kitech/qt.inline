@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant(void*cbfn)
-// { callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK11QWizardPage5fieldERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK11QWizardPage5fieldERK7QString(void*cbfn)
-// { callback_ZNK11QWizardPage5fieldERK7QString_fnptr = cbfn; }
-// void* callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = 0;
-// extern "C" void set_callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6_(void*cbfn)
-// { callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr = cbfn; }
-// void* callback_ZNK11QWizardPage6wizardEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QWizardPage6wizardEv(void*cbfn)
-// { callback_ZNK11QWizardPage6wizardEv_fnptr = cbfn; }
 
 class MyQWizardPage : public QWizardPage {
 public:
@@ -34,10 +22,6 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*, QVariant*))(callback_ZN11QWizardPage8setFieldERK7QStringRK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&name, (QVariant*)&value);
-    // }
     QWizardPage::setField(name, value);
   }
   }
@@ -49,10 +33,6 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QString*))(callback_ZNK11QWizardPage5fieldERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&name);
-    // }
     return QWizardPage::field(name);
   }
   }
@@ -63,10 +43,6 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*, QWidget *, const char *, const char *))(callback_ZN11QWizardPage13registerFieldERK7QStringP7QWidgetPKcS6__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&name, widget, property, changedSignal);
-    // }
     QWizardPage::registerField(name, widget, property, changedSignal);
   }
   }
@@ -78,10 +54,6 @@ MyQWizardPage(QWidget * parent) : QWizardPage(parent) {}
     return (QWizard *)(irv);
       // PointerPointerQWizard *
     } else {
-    // auto fnptr = ((QWizard * (*)(void* ))(callback_ZNK11QWizardPage6wizardEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QWizardPage::wizard();
   }
   }

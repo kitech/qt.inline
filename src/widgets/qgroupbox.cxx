@@ -9,36 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QGroupBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN9QGroupBox5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox10childEventEP11QChildEvent(void*cbfn)
-// { callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr = 0;
-// extern "C" void set_callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox(void*cbfn)
-// { callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr = cbfn; }
 
 class MyQGroupBox : public QGroupBox {
 public:
@@ -55,10 +25,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QGroupBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGroupBox::event(event);
   }
   }
@@ -69,10 +35,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN9QGroupBox10childEventEP11QChildEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::childEvent(event);
   }
   }
@@ -83,10 +45,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN9QGroupBox11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::resizeEvent(event);
   }
   }
@@ -97,10 +55,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QGroupBox10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::paintEvent(event);
   }
   }
@@ -111,10 +65,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QGroupBox12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::focusInEvent(event);
   }
   }
@@ -125,10 +75,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN9QGroupBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::changeEvent(event);
   }
   }
@@ -139,10 +85,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::mousePressEvent(event);
   }
   }
@@ -153,10 +95,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::mouseMoveEvent(event);
   }
   }
@@ -167,10 +105,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QGroupBox17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGroupBox::mouseReleaseEvent(event);
   }
   }
@@ -181,10 +115,6 @@ MyQGroupBox(const QString & title, QWidget * parent) : QGroupBox(title, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionGroupBox *))(callback_ZNK9QGroupBox15initStyleOptionEP20QStyleOptionGroupBox_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QGroupBox::initStyleOption(option);
   }
   }

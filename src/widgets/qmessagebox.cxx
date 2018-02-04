@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QMessageBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QMessageBox5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QMessageBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQMessageBox : public QMessageBox {
 public:
@@ -45,10 +27,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QMessageBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QMessageBox::event(e);
   }
   }
@@ -59,10 +37,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QMessageBox11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMessageBox::resizeEvent(event);
   }
   }
@@ -73,10 +47,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN11QMessageBox9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMessageBox::showEvent(event);
   }
   }
@@ -87,10 +57,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QMessageBox10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMessageBox::closeEvent(event);
   }
   }
@@ -101,10 +67,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QMessageBox13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMessageBox::keyPressEvent(event);
   }
   }
@@ -115,10 +77,6 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QMessageBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMessageBox::changeEvent(event);
   }
   }

@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN21QMouseEventTransition12onTransitionEP6QEvent(void*cbfn)
-// { callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN21QMouseEventTransition9eventTestEP6QEvent(void*cbfn)
-// { callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQMouseEventTransition : public QMouseEventTransition {
 public:
@@ -30,10 +24,6 @@ MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton but
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition12onTransitionEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QMouseEventTransition::onTransition(event);
   }
   }
@@ -45,10 +35,6 @@ MyQMouseEventTransition(QObject * object, QEvent::Type type, Qt::MouseButton but
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN21QMouseEventTransition9eventTestEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QMouseEventTransition::eventTest(event);
   }
   }

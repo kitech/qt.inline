@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = 0;
-// extern "C" void set_callback_ZN16QRandomGeneratorC1ENS_6SystemE(void*cbfn)
-// { callback_ZN16QRandomGeneratorC1ENS_6SystemE_fnptr = cbfn; }
 
 class MyQRandomGenerator : public QRandomGenerator {
 public:

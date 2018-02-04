@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QCoreApplication5eventEP6QEvent(void*cbfn)
-// { callback_ZN16QCoreApplication5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCoreApplication : public QCoreApplication {
 public:
@@ -26,10 +23,6 @@ MyQCoreApplication(int & argc, char** argv, int arg2) : QCoreApplication(argc, a
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QCoreApplication5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QCoreApplication::event(arg0);
   }
   }

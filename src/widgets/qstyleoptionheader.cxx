@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QStyleOptionHeaderC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN18QStyleOptionHeaderC1Ei(void*cbfn)
-// { callback_ZN18QStyleOptionHeaderC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionHeader : public QStyleOptionHeader {
 public:

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr = 0;
-// extern "C" void set_callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter(void*cbfn)
-// { callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr = cbfn; }
 
 class MyQGraphicsOpacityEffect : public QGraphicsOpacityEffect {
 public:
@@ -25,10 +22,6 @@ MyQGraphicsOpacityEffect(QObject * parent) : QGraphicsOpacityEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN22QGraphicsOpacityEffect4drawEP8QPainter_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter);
-    // }
     QGraphicsOpacityEffect::draw(painter);
   }
   }

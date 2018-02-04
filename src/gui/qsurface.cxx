@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = 0;
-// extern "C" void set_callback_ZN8QSurfaceC1ENS_12SurfaceClassE(void*cbfn)
-// { callback_ZN8QSurfaceC1ENS_12SurfaceClassE_fnptr = cbfn; }
 
 class MyQSurface : public QSurface {
 public:

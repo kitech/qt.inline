@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = 0;
-// extern "C" void set_callback_ZNK20QFutureInterfaceBase4refTEv(void*cbfn)
-// { callback_ZNK20QFutureInterfaceBase4refTEv_fnptr = cbfn; }
-// void* callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = 0;
-// extern "C" void set_callback_ZNK20QFutureInterfaceBase6derefTEv(void*cbfn)
-// { callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr = cbfn; }
 
 class MyQFutureInterfaceBase : public QFutureInterfaceBase {
 public:
@@ -29,10 +23,6 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase4refTEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QFutureInterfaceBase::refT();
   }
   }
@@ -44,10 +34,6 @@ MyQFutureInterfaceBase(QFutureInterfaceBase::State initialState) : QFutureInterf
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK20QFutureInterfaceBase6derefTEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QFutureInterfaceBase::derefT();
   }
   }

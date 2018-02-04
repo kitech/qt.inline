@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN17QAccessibleWidgetD1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN17QAccessibleWidgetD1Ev(void*cbfn)
-// { callback_ZN17QAccessibleWidgetD1Ev_fnptr = cbfn; }
-// void* callback_ZNK17QAccessibleWidget6widgetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAccessibleWidget6widgetEv(void*cbfn)
-// { callback_ZNK17QAccessibleWidget6widgetEv_fnptr = cbfn; }
-// void* callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAccessibleWidget12parentObjectEv(void*cbfn)
-// { callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr = cbfn; }
-// void* callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZN17QAccessibleWidget20addControllingSignalERK7QString(void*cbfn)
-// { callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr = cbfn; }
 
 class MyQAccessibleWidget : public QAccessibleWidget {
 public:
@@ -36,10 +24,6 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     return (QWidget *)(irv);
       // PointerPointerQWidget *
     } else {
-    // auto fnptr = ((QWidget * (*)(void* ))(callback_ZNK17QAccessibleWidget6widgetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAccessibleWidget::widget();
   }
   }
@@ -51,10 +35,6 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     return (QObject *)(irv);
       // PointerPointerQObject *
     } else {
-    // auto fnptr = ((QObject * (*)(void* ))(callback_ZNK17QAccessibleWidget12parentObjectEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAccessibleWidget::parentObject();
   }
   }
@@ -65,10 +45,6 @@ MyQAccessibleWidget(QWidget * o, QAccessible::Role r, const QString & name) : QA
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*))(callback_ZN17QAccessibleWidget20addControllingSignalERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&signal);
-    // }
     QAccessibleWidget::addControllingSignal(signal);
   }
   }

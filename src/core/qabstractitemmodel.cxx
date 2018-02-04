@@ -9,63 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel17resetInternalDataEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr = cbfn; }
-// void* callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QAbstractItemModel11createIndexEiiPv(void*cbfn)
-// { callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr = cbfn; }
-// void* callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr = 0;
-// extern "C" void set_callback_ZNK18QAbstractItemModel11createIndexEiiy(void*cbfn)
-// { callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream(void*cbfn)
-// { callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii(void*cbfn)
-// { callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel13endInsertRowsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii(void*cbfn)
-// { callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel13endRemoveRowsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i(void*cbfn)
-// { callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel11endMoveRowsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii(void*cbfn)
-// { callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel16endInsertColumnsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii(void*cbfn)
-// { callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel16endRemoveColumnsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i(void*cbfn)
-// { callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel14endMoveColumnsEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel15beginResetModelEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel13endResetModelEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel13endResetModelEv(void*cbfn)
-// { callback_ZN18QAbstractItemModel13endResetModelEv_fnptr = cbfn; }
-// void* callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2_(void*cbfn)
-// { callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr = cbfn; }
 
 class MyQAbstractItemModel : public QAbstractItemModel {
 public:
@@ -79,10 +22,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel17resetInternalDataEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::resetInternalData();
   }
   }
@@ -94,10 +33,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , int, int, void *))(callback_ZNK18QAbstractItemModel11createIndexEiiPv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, column, data);
-    // }
     return QAbstractItemModel::createIndex(row, column, data);
   }
   }
@@ -109,10 +44,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , int, int, quintptr))(callback_ZNK18QAbstractItemModel11createIndexEiiy_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, column, id);
-    // }
     return QAbstractItemModel::createIndex(row, column, id);
   }
   }
@@ -124,10 +55,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , int, int, QModelIndex*, QDataStream*))(callback_ZN18QAbstractItemModel10decodeDataEiiRK11QModelIndexR11QDataStream_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, column, (QModelIndex*)&parent, (QDataStream*)&stream);
-    // }
     return QAbstractItemModel::decodeData(row, column, parent, stream);
   }
   }
@@ -138,10 +65,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel15beginInsertRowsERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, first, last);
-    // }
     QAbstractItemModel::beginInsertRows(parent, first, last);
   }
   }
@@ -152,10 +75,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endInsertRowsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endInsertRows();
   }
   }
@@ -166,10 +85,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel15beginRemoveRowsERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, first, last);
-    // }
     QAbstractItemModel::beginRemoveRows(parent, first, last);
   }
   }
@@ -180,10 +95,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endRemoveRowsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endRemoveRows();
   }
   }
@@ -195,10 +106,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*, int, int, QModelIndex*, int))(callback_ZN18QAbstractItemModel13beginMoveRowsERK11QModelIndexiiS2_i_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&sourceParent, sourceFirst, sourceLast, (QModelIndex*)&destinationParent, destinationRow);
-    // }
     return QAbstractItemModel::beginMoveRows(sourceParent, sourceFirst, sourceLast, destinationParent, destinationRow);
   }
   }
@@ -209,10 +116,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel11endMoveRowsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endMoveRows();
   }
   }
@@ -223,10 +126,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, first, last);
-    // }
     QAbstractItemModel::beginInsertColumns(parent, first, last);
   }
   }
@@ -237,10 +136,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel16endInsertColumnsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endInsertColumns();
   }
   }
@@ -251,10 +146,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, first, last);
-    // }
     QAbstractItemModel::beginRemoveColumns(parent, first, last);
   }
   }
@@ -265,10 +156,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel16endRemoveColumnsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endRemoveColumns();
   }
   }
@@ -280,10 +167,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*, int, int, QModelIndex*, int))(callback_ZN18QAbstractItemModel16beginMoveColumnsERK11QModelIndexiiS2_i_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&sourceParent, sourceFirst, sourceLast, (QModelIndex*)&destinationParent, destinationColumn);
-    // }
     return QAbstractItemModel::beginMoveColumns(sourceParent, sourceFirst, sourceLast, destinationParent, destinationColumn);
   }
   }
@@ -294,10 +177,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel14endMoveColumnsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endMoveColumns();
   }
   }
@@ -308,10 +187,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel15beginResetModelEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::beginResetModel();
   }
   }
@@ -322,10 +197,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QAbstractItemModel13endResetModelEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemModel::endResetModel();
   }
   }
@@ -336,10 +207,6 @@ MyQAbstractItemModel(QObject * parent) : QAbstractItemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN18QAbstractItemModel21changePersistentIndexERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&from, (QModelIndex*)&to);
-    // }
     QAbstractItemModel::changePersistentIndex(from, to);
   }
   }

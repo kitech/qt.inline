@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFinalState7onEntryEP6QEvent(void*cbfn)
-// { callback_ZN11QFinalState7onEntryEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QFinalState6onExitEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFinalState6onExitEP6QEvent(void*cbfn)
-// { callback_ZN11QFinalState6onExitEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QFinalState5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFinalState5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QFinalState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFinalState : public QFinalState {
 public:
@@ -31,10 +22,6 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState7onEntryEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QFinalState::onEntry(event);
   }
   }
@@ -45,10 +32,6 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFinalState6onExitEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QFinalState::onExit(event);
   }
   }
@@ -60,10 +43,6 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFinalState5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QFinalState::event(e);
   }
   }

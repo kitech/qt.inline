@@ -9,45 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit8validateER7QStringRi(void*cbfn)
-// { callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit5fixupER7QString(void*cbfn)
-// { callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(void*cbfn)
-// { callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(void*cbfn)
-// { callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit11stepEnabledEv(void*cbfn)
-// { callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
-// extern "C" void set_callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
-// { callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
-// void* callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget(void*cbfn)
-// { callback_ZN13QDateTimeEditC1ERK8QVariantNS0_4TypeEP7QWidget_fnptr = cbfn; }
 
 class MyQDateTimeEdit : public QDateTimeEdit {
 public:
@@ -67,10 +28,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDateTimeEdit::keyPressEvent(event);
   }
   }
@@ -81,10 +38,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDateTimeEdit::wheelEvent(event);
   }
   }
@@ -95,10 +48,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDateTimeEdit::focusInEvent(event);
   }
   }
@@ -110,10 +59,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN13QDateTimeEdit18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QDateTimeEdit::focusNextPrevChild(next);
   }
   }
@@ -125,10 +70,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return (QValidator::State)(int)(irv);
       // ElaboratedEnumQValidator::State
     } else {
-    // auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK13QDateTimeEdit8validateER7QStringRi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&input, pos);
-    // }
     return QDateTimeEdit::validate(input, pos);
   }
   }
@@ -139,10 +80,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*))(callback_ZNK13QDateTimeEdit5fixupER7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&input);
-    // }
     QDateTimeEdit::fixup(input);
   }
   }
@@ -154,10 +91,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return *(QDateTime*)(irv);
       // RecordRecordQDateTime
     } else {
-    // auto fnptr = ((QDateTime (*)(void* , QString*))(callback_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&text);
-    // }
     return QDateTimeEdit::dateTimeFromText(text);
   }
   }
@@ -169,10 +102,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return *(QString*)(irv);
       // RecordRecordQString
     } else {
-    // auto fnptr = ((QString (*)(void* , QDateTime*))(callback_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QDateTime*)&dt);
-    // }
     return QDateTimeEdit::textFromDateTime(dt);
   }
   }
@@ -184,10 +113,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     return (QAbstractSpinBox::StepEnabled)(int)(irv);
       // TypedefRecordQFlags<QAbstractSpinBox::StepEnabledFlag>
     } else {
-    // auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK13QDateTimeEdit11stepEnabledEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QDateTimeEdit::stepEnabled();
   }
   }
@@ -198,10 +123,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDateTimeEdit::mousePressEvent(event);
   }
   }
@@ -212,10 +133,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QDateTimeEdit10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDateTimeEdit::paintEvent(event);
   }
   }
@@ -226,10 +143,6 @@ MyQDateTimeEdit(const QTime & t, QWidget * parent) : QDateTimeEdit(t, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK13QDateTimeEdit15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QDateTimeEdit::initStyleOption(option);
   }
   }

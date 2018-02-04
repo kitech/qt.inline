@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN12QColorDialog11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QColorDialog11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN12QColorDialog11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN12QColorDialog4doneEi_fnptr = 0;
-// extern "C" void set_callback_ZN12QColorDialog4doneEi(void*cbfn)
-// { callback_ZN12QColorDialog4doneEi_fnptr = cbfn; }
 
 class MyQColorDialog : public QColorDialog {
 public:
@@ -30,10 +24,6 @@ MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN12QColorDialog11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QColorDialog::changeEvent(event);
   }
   }
@@ -44,10 +34,6 @@ MyQColorDialog(const QColor & initial, QWidget * parent) : QColorDialog(initial,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN12QColorDialog4doneEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , result);
-    // }
     QColorDialog::done(result);
   }
   }

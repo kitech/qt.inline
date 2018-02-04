@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN7QDialog9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN7QDialog14adjustPositionEP7QWidget(void*cbfn)
-// { callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr = cbfn; }
 
 class MyQDialog : public QDialog {
 public:
@@ -43,10 +22,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN7QDialog13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::keyPressEvent(arg0);
   }
   }
@@ -57,10 +32,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN7QDialog10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::closeEvent(arg0);
   }
   }
@@ -71,10 +42,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN7QDialog9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::showEvent(arg0);
   }
   }
@@ -85,10 +52,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QDialog11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::resizeEvent(arg0);
   }
   }
@@ -99,10 +62,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN7QDialog16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::contextMenuEvent(arg0);
   }
   }
@@ -114,10 +73,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN7QDialog11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QDialog::eventFilter(arg0, arg1);
   }
   }
@@ -128,10 +83,6 @@ MyQDialog(QWidget * parent, QFlags<Qt::WindowType> f) : QDialog(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN7QDialog14adjustPositionEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QDialog::adjustPosition(arg0);
   }
   }

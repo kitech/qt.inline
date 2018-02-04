@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QFocusFrame5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFocusFrame5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QFocusFrame5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFocusFrame10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr = 0;
-// extern "C" void set_callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption(void*cbfn)
-// { callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr = cbfn; }
 
 class MyQFocusFrame : public QFocusFrame {
 public:
@@ -35,10 +23,6 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QFocusFrame5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QFocusFrame::event(e);
   }
   }
@@ -50,10 +34,6 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QFocusFrame11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QFocusFrame::eventFilter(arg0, arg1);
   }
   }
@@ -64,10 +44,6 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QFocusFrame10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QFocusFrame::paintEvent(arg0);
   }
   }
@@ -78,10 +54,6 @@ MyQFocusFrame(QWidget * parent) : QFocusFrame(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOption *))(callback_ZNK11QFocusFrame15initStyleOptionEP12QStyleOption_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QFocusFrame::initStyleOption(option);
   }
   }

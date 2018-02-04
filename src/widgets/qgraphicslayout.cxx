@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem(void*cbfn)
-// { callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr = cbfn; }
 
 class MyQGraphicsLayout : public QGraphicsLayout {
 public:
@@ -25,10 +22,6 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsLayoutItem *))(callback_ZN15QGraphicsLayout18addChildLayoutItemEP19QGraphicsLayoutItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , layoutItem);
-    // }
     QGraphicsLayout::addChildLayoutItem(layoutItem);
   }
   }

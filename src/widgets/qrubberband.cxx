@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QRubberBand5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QRubberBand5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QRubberBand9moveEventEP10QMoveEvent(void*cbfn)
-// { callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr = cbfn; }
-// void* callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr = 0;
-// extern "C" void set_callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand(void*cbfn)
-// { callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr = cbfn; }
 
 class MyQRubberBand : public QRubberBand {
 public:
@@ -44,10 +23,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QRubberBand5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QRubberBand::event(e);
   }
   }
@@ -58,10 +33,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QRubberBand10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QRubberBand::paintEvent(arg0);
   }
   }
@@ -72,10 +43,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QRubberBand11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QRubberBand::changeEvent(arg0);
   }
   }
@@ -86,10 +53,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN11QRubberBand9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QRubberBand::showEvent(arg0);
   }
   }
@@ -100,10 +63,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QRubberBand11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QRubberBand::resizeEvent(arg0);
   }
   }
@@ -114,10 +73,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN11QRubberBand9moveEventEP10QMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QRubberBand::moveEvent(arg0);
   }
   }
@@ -128,10 +83,6 @@ MyQRubberBand(QRubberBand::Shape arg0, QWidget * arg1) : QRubberBand(arg0, arg1)
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionRubberBand *))(callback_ZNK11QRubberBand15initStyleOptionEP22QStyleOptionRubberBand_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QRubberBand::initStyleOption(option);
   }
   }

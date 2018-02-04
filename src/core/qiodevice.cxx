@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QIODevice8readDataEPcx_fnptr = 0;
-// extern "C" void set_callback_ZN9QIODevice8readDataEPcx(void*cbfn)
-// { callback_ZN9QIODevice8readDataEPcx_fnptr = cbfn; }
-// void* callback_ZN9QIODevice12readLineDataEPcx_fnptr = 0;
-// extern "C" void set_callback_ZN9QIODevice12readLineDataEPcx(void*cbfn)
-// { callback_ZN9QIODevice12readLineDataEPcx_fnptr = cbfn; }
-// void* callback_ZN9QIODevice9writeDataEPKcx_fnptr = 0;
-// extern "C" void set_callback_ZN9QIODevice9writeDataEPKcx(void*cbfn)
-// { callback_ZN9QIODevice9writeDataEPKcx_fnptr = cbfn; }
-// void* callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE(void*cbfn)
-// { callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr = cbfn; }
-// void* callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZN9QIODevice14setErrorStringERK7QString(void*cbfn)
-// { callback_ZN9QIODevice14setErrorStringERK7QString_fnptr = cbfn; }
 
 class MyQIODevice : public QIODevice {
 public:
@@ -40,10 +25,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice8readDataEPcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, maxlen);
-    // }
     return QIODevice::readData(data, maxlen);
   }
   }
@@ -55,10 +36,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN9QIODevice12readLineDataEPcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, maxlen);
-    // }
     return QIODevice::readLineData(data, maxlen);
   }
   }
@@ -70,10 +47,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QIODevice9writeDataEPKcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, len);
-    // }
     return QIODevice::writeData(data, len);
   }
   }
@@ -84,10 +57,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFlags<QIODevice::OpenModeFlag>))(callback_ZN9QIODevice11setOpenModeE6QFlagsINS_12OpenModeFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , openMode);
-    // }
     QIODevice::setOpenMode(openMode);
   }
   }
@@ -98,10 +67,6 @@ MyQIODevice(QObject * parent) : QIODevice(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*))(callback_ZN9QIODevice14setErrorStringERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&errorString);
-    // }
     QIODevice::setErrorString(errorString);
   }
   }

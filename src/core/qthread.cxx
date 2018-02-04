@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QThread3runEv_fnptr = 0;
-// extern "C" void set_callback_ZN7QThread3runEv(void*cbfn)
-// { callback_ZN7QThread3runEv_fnptr = cbfn; }
-// void* callback_ZN7QThread4execEv_fnptr = 0;
-// extern "C" void set_callback_ZN7QThread4execEv(void*cbfn)
-// { callback_ZN7QThread4execEv_fnptr = cbfn; }
-// void* callback_ZN7QThread21setTerminationEnabledEb_fnptr = 0;
-// extern "C" void set_callback_ZN7QThread21setTerminationEnabledEb(void*cbfn)
-// { callback_ZN7QThread21setTerminationEnabledEb_fnptr = cbfn; }
 
 class MyQThread : public QThread {
 public:
@@ -31,10 +22,6 @@ MyQThread(QObject * parent) : QThread(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN7QThread3runEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QThread::run();
   }
   }
@@ -46,10 +33,6 @@ MyQThread(QObject * parent) : QThread(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZN7QThread4execEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QThread::exec();
   }
   }
@@ -60,10 +43,6 @@ MyQThread(QObject * parent) : QThread(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , bool))(callback_ZN7QThread21setTerminationEnabledEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , enabled);
-    // }
     QThread::setTerminationEnabled(enabled);
   }
   }

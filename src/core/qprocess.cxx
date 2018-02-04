@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = 0;
-// extern "C" void set_callback_ZN8QProcess15setProcessStateENS_12ProcessStateE(void*cbfn)
-// { callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr = cbfn; }
-// void* callback_ZN8QProcess17setupChildProcessEv_fnptr = 0;
-// extern "C" void set_callback_ZN8QProcess17setupChildProcessEv(void*cbfn)
-// { callback_ZN8QProcess17setupChildProcessEv_fnptr = cbfn; }
-// void* callback_ZN8QProcess8readDataEPcx_fnptr = 0;
-// extern "C" void set_callback_ZN8QProcess8readDataEPcx(void*cbfn)
-// { callback_ZN8QProcess8readDataEPcx_fnptr = cbfn; }
-// void* callback_ZN8QProcess9writeDataEPKcx_fnptr = 0;
-// extern "C" void set_callback_ZN8QProcess9writeDataEPKcx(void*cbfn)
-// { callback_ZN8QProcess9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQProcess : public QProcess {
 public:
@@ -34,10 +22,6 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QProcess::ProcessState))(callback_ZN8QProcess15setProcessStateENS_12ProcessStateE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , state);
-    // }
     QProcess::setProcessState(state);
   }
   }
@@ -48,10 +32,6 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN8QProcess17setupChildProcessEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QProcess::setupChildProcess();
   }
   }
@@ -63,10 +43,6 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN8QProcess8readDataEPcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, maxlen);
-    // }
     return QProcess::readData(data, maxlen);
   }
   }
@@ -78,10 +54,6 @@ MyQProcess(QObject * parent) : QProcess(parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN8QProcess9writeDataEPKcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, len);
-    // }
     return QProcess::writeData(data, len);
   }
   }

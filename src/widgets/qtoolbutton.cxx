@@ -9,42 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QToolButton5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QToolButton5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton11actionEventEP12QActionEvent(void*cbfn)
-// { callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton10enterEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton10enterEventEP6QEvent(void*cbfn)
-// { callback_ZN11QToolButton10enterEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton10leaveEventEP6QEvent(void*cbfn)
-// { callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN11QToolButton11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QToolButton11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr = 0;
-// extern "C" void set_callback_ZNK11QToolButton9hitButtonERK6QPoint(void*cbfn)
-// { callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr = cbfn; }
-// void* callback_ZN11QToolButton14nextCheckStateEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QToolButton14nextCheckStateEv(void*cbfn)
-// { callback_ZN11QToolButton14nextCheckStateEv_fnptr = cbfn; }
-// void* callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr = 0;
-// extern "C" void set_callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton(void*cbfn)
-// { callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr = cbfn; }
 
 class MyQToolButton : public QToolButton {
 public:
@@ -59,10 +23,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QToolButton5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QToolButton::event(e);
   }
   }
@@ -73,10 +33,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QToolButton15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::mousePressEvent(arg0);
   }
   }
@@ -87,10 +43,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::mouseReleaseEvent(arg0);
   }
   }
@@ -101,10 +53,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QToolButton10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::paintEvent(arg0);
   }
   }
@@ -115,10 +63,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN11QToolButton11actionEventEP12QActionEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::actionEvent(arg0);
   }
   }
@@ -129,10 +73,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton10enterEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::enterEvent(arg0);
   }
   }
@@ -143,10 +83,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton10leaveEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::leaveEvent(arg0);
   }
   }
@@ -157,10 +93,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN11QToolButton10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::timerEvent(arg0);
   }
   }
@@ -171,10 +103,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QToolButton11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolButton::changeEvent(arg0);
   }
   }
@@ -186,10 +114,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK11QToolButton9hitButtonERK6QPoint_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPoint*)&pos);
-    // }
     return QToolButton::hitButton(pos);
   }
   }
@@ -200,10 +124,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QToolButton14nextCheckStateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QToolButton::nextCheckState();
   }
   }
@@ -214,10 +134,6 @@ MyQToolButton(QWidget * parent) : QToolButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionToolButton *))(callback_ZNK11QToolButton15initStyleOptionEP22QStyleOptionToolButton_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QToolButton::initStyleOption(option);
   }
   }

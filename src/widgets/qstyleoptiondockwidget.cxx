@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN22QStyleOptionDockWidgetC1Ei(void*cbfn)
-// { callback_ZN22QStyleOptionDockWidgetC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionDockWidget : public QStyleOptionDockWidget {
 public:

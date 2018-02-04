@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSocketNotifier5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSocketNotifier : public QSocketNotifier {
 public:
@@ -26,10 +23,6 @@ MyQSocketNotifier(qintptr socket, QSocketNotifier::Type arg1, QObject * parent) 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSocketNotifier5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QSocketNotifier::event(arg0);
   }
   }

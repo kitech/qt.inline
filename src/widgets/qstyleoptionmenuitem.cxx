@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN20QStyleOptionMenuItemC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN20QStyleOptionMenuItemC1Ei(void*cbfn)
-// { callback_ZN20QStyleOptionMenuItemC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionMenuItem : public QStyleOptionMenuItem {
 public:

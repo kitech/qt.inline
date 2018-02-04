@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QTreeWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QTreeWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QTreeWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
-// extern "C" void set_callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
-// { callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
-// void* callback_ZNK11QTreeWidget20supportedDropActionsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QTreeWidget20supportedDropActionsEv(void*cbfn)
-// { callback_ZNK11QTreeWidget20supportedDropActionsEv_fnptr = cbfn; }
-// void* callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi_fnptr = 0;
-// extern "C" void set_callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi(void*cbfn)
-// { callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi_fnptr = cbfn; }
-// void* callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi_fnptr = 0;
-// extern "C" void set_callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi(void*cbfn)
-// { callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi_fnptr = cbfn; }
-// void* callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex(void*cbfn)
-// { callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN11QTreeWidget9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QTreeWidget9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN11QTreeWidget9dropEventEP10QDropEvent_fnptr = cbfn; }
 
 class MyQTreeWidget : public QTreeWidget {
 public:
@@ -44,10 +23,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QTreeWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QTreeWidget::event(e);
   }
   }
@@ -59,10 +34,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QTreeWidgetItem *, int, const QMimeData *, Qt::DropAction))(callback_ZN11QTreeWidget12dropMimeDataEP15QTreeWidgetItemiPK9QMimeDataN2Qt10DropActionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , parent, index, data, action);
-    // }
     return QTreeWidget::dropMimeData(parent, index, data, action);
   }
   }
@@ -74,10 +45,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
     } else {
-    // auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK11QTreeWidget20supportedDropActionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTreeWidget::supportedDropActions();
   }
   }
@@ -89,10 +56,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , const QTreeWidgetItem *, int))(callback_ZNK11QTreeWidget13indexFromItemEPK15QTreeWidgetItemi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , item, column);
-    // }
     return QTreeWidget::indexFromItem(item, column);
   }
   }
@@ -104,10 +67,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QTreeWidgetItem *, int))(callback_ZNK11QTreeWidget13indexFromItemEP15QTreeWidgetItemi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , item, column);
-    // }
     return QTreeWidget::indexFromItem(item, column);
   }
   }
@@ -119,10 +78,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     return (QTreeWidgetItem *)(irv);
       // PointerPointerQTreeWidgetItem *
     } else {
-    // auto fnptr = ((QTreeWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK11QTreeWidget13itemFromIndexERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QTreeWidget::itemFromIndex(index);
   }
   }
@@ -133,10 +88,6 @@ MyQTreeWidget(QWidget * parent) : QTreeWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN11QTreeWidget9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QTreeWidget::dropEvent(event);
   }
   }

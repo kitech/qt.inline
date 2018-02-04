@@ -9,33 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK7QObject6senderEv_fnptr = 0;
-// extern "C" void set_callback_ZNK7QObject6senderEv(void*cbfn)
-// { callback_ZNK7QObject6senderEv_fnptr = cbfn; }
-// void* callback_ZNK7QObject17senderSignalIndexEv_fnptr = 0;
-// extern "C" void set_callback_ZNK7QObject17senderSignalIndexEv(void*cbfn)
-// { callback_ZNK7QObject17senderSignalIndexEv_fnptr = cbfn; }
-// void* callback_ZNK7QObject9receiversEPKc_fnptr = 0;
-// extern "C" void set_callback_ZNK7QObject9receiversEPKc(void*cbfn)
-// { callback_ZNK7QObject9receiversEPKc_fnptr = cbfn; }
-// void* callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod(void*cbfn)
-// { callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QObject10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN7QObject10childEventEP11QChildEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QObject10childEventEP11QChildEvent(void*cbfn)
-// { callback_ZN7QObject10childEventEP11QChildEvent_fnptr = cbfn; }
-// void* callback_ZN7QObject11customEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QObject11customEventEP6QEvent(void*cbfn)
-// { callback_ZN7QObject11customEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN7QObject13connectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN7QObject16disconnectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
 
 class MyQObject : public QObject {
 public:
@@ -50,10 +23,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return (QObject *)(irv);
       // PointerPointerQObject *
     } else {
-    // auto fnptr = ((QObject * (*)(void* ))(callback_ZNK7QObject6senderEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QObject::sender();
   }
   }
@@ -65,10 +34,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK7QObject17senderSignalIndexEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QObject::senderSignalIndex();
   }
   }
@@ -80,10 +45,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , const char *))(callback_ZNK7QObject9receiversEPKc_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , signal);
-    // }
     return QObject::receivers(signal);
   }
   }
@@ -95,10 +56,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QMetaMethod*))(callback_ZNK7QObject17isSignalConnectedERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&signal);
-    // }
     return QObject::isSignalConnected(signal);
   }
   }
@@ -109,10 +66,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN7QObject10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QObject::timerEvent(event);
   }
   }
@@ -123,10 +76,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN7QObject10childEventEP11QChildEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QObject::childEvent(event);
   }
   }
@@ -137,10 +86,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN7QObject11customEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QObject::customEvent(event);
   }
   }
@@ -151,10 +96,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject13connectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&signal);
-    // }
     QObject::connectNotify(signal);
   }
   }
@@ -165,10 +106,6 @@ MyQObject(QObject * parent) : QObject(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QObject16disconnectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&signal);
-    // }
     QObject::disconnectNotify(signal);
   }
   }

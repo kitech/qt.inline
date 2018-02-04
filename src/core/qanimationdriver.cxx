@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = 0;
-// extern "C" void set_callback_ZN16QAnimationDriver16advanceAnimationEx(void*cbfn)
-// { callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr = cbfn; }
-// void* callback_ZN16QAnimationDriver5startEv_fnptr = 0;
-// extern "C" void set_callback_ZN16QAnimationDriver5startEv(void*cbfn)
-// { callback_ZN16QAnimationDriver5startEv_fnptr = cbfn; }
-// void* callback_ZN16QAnimationDriver4stopEv_fnptr = 0;
-// extern "C" void set_callback_ZN16QAnimationDriver4stopEv(void*cbfn)
-// { callback_ZN16QAnimationDriver4stopEv_fnptr = cbfn; }
 
 class MyQAnimationDriver : public QAnimationDriver {
 public:
@@ -31,10 +22,6 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , qint64))(callback_ZN16QAnimationDriver16advanceAnimationEx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , timeStep);
-    // }
     QAnimationDriver::advanceAnimation(timeStep);
   }
   }
@@ -45,10 +32,6 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver5startEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAnimationDriver::start();
   }
   }
@@ -59,10 +42,6 @@ MyQAnimationDriver(QObject * parent) : QAnimationDriver(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN16QAnimationDriver4stopEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAnimationDriver::stop();
   }
   }

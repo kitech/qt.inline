@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QLCDNumber5eventEP6QEvent(void*cbfn)
-// { callback_ZN10QLCDNumber5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QLCDNumber10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr = cbfn; }
 
 class MyQLCDNumber : public QLCDNumber {
 public:
@@ -31,10 +25,6 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QLCDNumber5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QLCDNumber::event(e);
   }
   }
@@ -45,10 +35,6 @@ MyQLCDNumber(uint numDigits, QWidget * parent) : QLCDNumber(numDigits, parent) {
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QLCDNumber10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QLCDNumber::paintEvent(arg0);
   }
   }

@@ -9,36 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QTabWidget11tabInsertedEi_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget11tabInsertedEi(void*cbfn)
-// { callback_ZN10QTabWidget11tabInsertedEi_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget10tabRemovedEi_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget10tabRemovedEi(void*cbfn)
-// { callback_ZN10QTabWidget10tabRemovedEi_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget9setTabBarEP7QTabBar(void*cbfn)
-// { callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN10QTabWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTabWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN10QTabWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame(void*cbfn)
-// { callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr = cbfn; }
 
 class MyQTabWidget : public QTabWidget {
 public:
@@ -52,10 +22,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget11tabInsertedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , index);
-    // }
     QTabWidget::tabInserted(index);
   }
   }
@@ -66,10 +32,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTabWidget10tabRemovedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , index);
-    // }
     QTabWidget::tabRemoved(index);
   }
   }
@@ -80,10 +42,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QTabWidget9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::showEvent(arg0);
   }
   }
@@ -94,10 +52,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QTabWidget11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::resizeEvent(arg0);
   }
   }
@@ -108,10 +62,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN10QTabWidget13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::keyPressEvent(arg0);
   }
   }
@@ -122,10 +72,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QTabWidget10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::paintEvent(arg0);
   }
   }
@@ -136,10 +82,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTabBar *))(callback_ZN10QTabWidget9setTabBarEP7QTabBar_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::setTabBar(arg0);
   }
   }
@@ -150,10 +92,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN10QTabWidget11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTabWidget::changeEvent(arg0);
   }
   }
@@ -165,10 +103,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QTabWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QTabWidget::event(arg0);
   }
   }
@@ -179,10 +113,6 @@ MyQTabWidget(QWidget * parent) : QTabWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionTabWidgetFrame *))(callback_ZNK10QTabWidget15initStyleOptionEP26QStyleOptionTabWidgetFrame_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QTabWidget::initStyleOption(option);
   }
   }

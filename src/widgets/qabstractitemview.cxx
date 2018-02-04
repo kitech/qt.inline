@@ -9,177 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii(void*cbfn)
-// { callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
-// { callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2__fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2_(void*cbfn)
-// { callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2_(void*cbfn)
-// { callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView16updateEditorDataEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView16updateEditorDataEv(void*cbfn)
-// { callback_ZN17QAbstractItemView16updateEditorDataEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView22updateEditorGeometriesEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView22updateEditorGeometriesEv(void*cbfn)
-// { callback_ZN17QAbstractItemView22updateEditorGeometriesEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView16updateGeometriesEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView16updateGeometriesEv(void*cbfn)
-// { callback_ZN17QAbstractItemView16updateGeometriesEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView23verticalScrollbarActionEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView23verticalScrollbarActionEi(void*cbfn)
-// { callback_ZN17QAbstractItemView23verticalScrollbarActionEi_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView25horizontalScrollbarActionEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView25horizontalScrollbarActionEi(void*cbfn)
-// { callback_ZN17QAbstractItemView25horizontalScrollbarActionEi_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi(void*cbfn)
-// { callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi(void*cbfn)
-// { callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE(void*cbfn)
-// { callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView10commitDataEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView10commitDataEP7QWidget(void*cbfn)
-// { callback_ZN17QAbstractItemView10commitDataEP7QWidget_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView15editorDestroyedEP7QObject_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView15editorDestroyedEP7QObject(void*cbfn)
-// { callback_ZN17QAbstractItemView15editorDestroyedEP7QObject_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi(void*cbfn)
-// { callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi(void*cbfn)
-// { callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView20verticalStepsPerItemEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView20verticalStepsPerItemEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView20verticalStepsPerItemEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView10moveCursorENS_12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView10moveCursorENS_12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
-// { callback_ZN17QAbstractItemView10moveCursorENS_12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView16horizontalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView16horizontalOffsetEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView16horizontalOffsetEv_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView14verticalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView14verticalOffsetEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView14verticalOffsetEv_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex(void*cbfn)
-// { callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-// { callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-// { callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent(void*cbfn)
-// { callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE(void*cbfn)
-// { callback_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView11viewOptionsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView11viewOptionsEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView11viewOptionsEv_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView5stateEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView5stateEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView5stateEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView8setStateENS_5StateE_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView8setStateENS_5StateE(void*cbfn)
-// { callback_ZN17QAbstractItemView8setStateENS_5StateE_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv(void*cbfn)
-// { callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv(void*cbfn)
-// { callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion(void*cbfn)
-// { callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView17scrollDirtyRegionEii_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView17scrollDirtyRegionEii(void*cbfn)
-// { callback_ZN17QAbstractItemView17scrollDirtyRegionEii_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView15startAutoScrollEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView15startAutoScrollEv(void*cbfn)
-// { callback_ZN17QAbstractItemView15startAutoScrollEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14stopAutoScrollEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14stopAutoScrollEv(void*cbfn)
-// { callback_ZN17QAbstractItemView14stopAutoScrollEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView12doAutoScrollEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView12doAutoScrollEv(void*cbfn)
-// { callback_ZN17QAbstractItemView12doAutoScrollEv_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN17QAbstractItemView18focusNextPrevChildEb_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView5eventEP6QEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView13viewportEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView13viewportEventEP6QEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView13viewportEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView9dropEventEP10QDropEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-// { callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView21dropIndicatorPositionEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView21dropIndicatorPositionEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView21dropIndicatorPositionEv_fnptr = cbfn; }
-// void* callback_ZNK17QAbstractItemView16viewportSizeHintEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QAbstractItemView16viewportSizeHintEv(void*cbfn)
-// { callback_ZNK17QAbstractItemView16viewportSizeHintEv_fnptr = cbfn; }
 
 class MyQAbstractItemView : public QAbstractItemView {
 public:
@@ -193,10 +22,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN17QAbstractItemView12rowsInsertedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, start, end);
-    // }
     QAbstractItemView::rowsInserted(parent, start, end);
   }
   }
@@ -207,10 +32,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN17QAbstractItemView20rowsAboutToBeRemovedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, start, end);
-    // }
     QAbstractItemView::rowsAboutToBeRemoved(parent, start, end);
   }
   }
@@ -221,10 +42,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN17QAbstractItemView16selectionChangedERK14QItemSelectionS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selected, (QItemSelection*)&deselected);
-    // }
     QAbstractItemView::selectionChanged(selected, deselected);
   }
   }
@@ -235,10 +52,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN17QAbstractItemView14currentChangedERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
-    // }
     QAbstractItemView::currentChanged(current, previous);
   }
   }
@@ -249,10 +62,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView16updateEditorDataEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::updateEditorData();
   }
   }
@@ -263,10 +72,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView22updateEditorGeometriesEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::updateEditorGeometries();
   }
   }
@@ -277,10 +82,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView16updateGeometriesEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::updateGeometries();
   }
   }
@@ -291,10 +92,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView23verticalScrollbarActionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , action);
-    // }
     QAbstractItemView::verticalScrollbarAction(action);
   }
   }
@@ -305,10 +102,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView25horizontalScrollbarActionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , action);
-    // }
     QAbstractItemView::horizontalScrollbarAction(action);
   }
   }
@@ -319,10 +112,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView29verticalScrollbarValueChangedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , value);
-    // }
     QAbstractItemView::verticalScrollbarValueChanged(value);
   }
   }
@@ -333,10 +122,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView31horizontalScrollbarValueChangedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , value);
-    // }
     QAbstractItemView::horizontalScrollbarValueChanged(value);
   }
   }
@@ -347,10 +132,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *, QAbstractItemDelegate::EndEditHint))(callback_ZN17QAbstractItemView11closeEditorEP7QWidgetN21QAbstractItemDelegate11EndEditHintE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , editor, hint);
-    // }
     QAbstractItemView::closeEditor(editor, hint);
   }
   }
@@ -361,10 +142,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN17QAbstractItemView10commitDataEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , editor);
-    // }
     QAbstractItemView::commitData(editor);
   }
   }
@@ -375,10 +152,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QObject *))(callback_ZN17QAbstractItemView15editorDestroyedEP7QObject_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , editor);
-    // }
     QAbstractItemView::editorDestroyed(editor);
   }
   }
@@ -389,10 +162,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView25setHorizontalStepsPerItemEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , steps);
-    // }
     QAbstractItemView::setHorizontalStepsPerItem(steps);
   }
   }
@@ -404,10 +173,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK17QAbstractItemView22horizontalStepsPerItemEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::horizontalStepsPerItem();
   }
   }
@@ -418,10 +183,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QAbstractItemView23setVerticalStepsPerItemEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , steps);
-    // }
     QAbstractItemView::setVerticalStepsPerItem(steps);
   }
   }
@@ -433,10 +194,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK17QAbstractItemView20verticalStepsPerItemEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::verticalStepsPerItem();
   }
   }
@@ -448,10 +205,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, QFlags<Qt::KeyboardModifier>))(callback_ZN17QAbstractItemView10moveCursorENS_12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , cursorAction, modifiers);
-    // }
     return QAbstractItemView::moveCursor(cursorAction, modifiers);
   }
   }
@@ -463,10 +216,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK17QAbstractItemView16horizontalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::horizontalOffset();
   }
   }
@@ -478,10 +227,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK17QAbstractItemView14verticalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::verticalOffset();
   }
   }
@@ -493,10 +238,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK17QAbstractItemView13isIndexHiddenERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QAbstractItemView::isIndexHidden(index);
   }
   }
@@ -507,10 +248,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN17QAbstractItemView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QRect*)&rect, command);
-    // }
     QAbstractItemView::setSelection(rect, command);
   }
   }
@@ -522,10 +259,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QRegion*)(irv);
       // RecordRecordQRegion
     } else {
-    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK17QAbstractItemView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selection);
-    // }
     return QAbstractItemView::visualRegionForSelection(selection);
   }
   }
@@ -537,10 +270,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*, QAbstractItemView::EditTrigger, QEvent *))(callback_ZN17QAbstractItemView4editERK11QModelIndexNS_11EditTriggerEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index, trigger, event);
-    // }
     return QAbstractItemView::edit(index, trigger, event);
   }
   }
@@ -552,10 +281,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (QItemSelectionModel::SelectionFlags)(int)(irv);
       // ElaboratedRecordQFlags<QItemSelectionModel::SelectionFlag>
     } else {
-    // auto fnptr = ((QItemSelectionModel::SelectionFlags (*)(void* , QModelIndex*, const QEvent *))(callback_ZNK17QAbstractItemView16selectionCommandERK11QModelIndexPK6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index, event);
-    // }
     return QAbstractItemView::selectionCommand(index, event);
   }
   }
@@ -566,10 +291,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFlags<Qt::DropAction>))(callback_ZN17QAbstractItemView9startDragE6QFlagsIN2Qt10DropActionEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , supportedActions);
-    // }
     QAbstractItemView::startDrag(supportedActions);
   }
   }
@@ -581,10 +302,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QStyleOptionViewItem*)(irv);
       // RecordRecordQStyleOptionViewItem
     } else {
-    // auto fnptr = ((QStyleOptionViewItem (*)(void* ))(callback_ZNK17QAbstractItemView11viewOptionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::viewOptions();
   }
   }
@@ -596,10 +313,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (QAbstractItemView::State)(int)(irv);
       // EnumEnumQAbstractItemView::State
     } else {
-    // auto fnptr = ((QAbstractItemView::State (*)(void* ))(callback_ZNK17QAbstractItemView5stateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::state();
   }
   }
@@ -610,10 +323,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractItemView::State))(callback_ZN17QAbstractItemView8setStateENS_5StateE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , state);
-    // }
     QAbstractItemView::setState(state);
   }
   }
@@ -624,10 +333,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView26scheduleDelayedItemsLayoutEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::scheduleDelayedItemsLayout();
   }
   }
@@ -638,10 +343,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView25executeDelayedItemsLayoutEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::executeDelayedItemsLayout();
   }
   }
@@ -652,10 +353,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QRegion*))(callback_ZN17QAbstractItemView14setDirtyRegionERK7QRegion_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QRegion*)&region);
-    // }
     QAbstractItemView::setDirtyRegion(region);
   }
   }
@@ -666,10 +363,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN17QAbstractItemView17scrollDirtyRegionEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QAbstractItemView::scrollDirtyRegion(dx, dy);
   }
   }
@@ -681,10 +374,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QPoint*)(irv);
       // RecordRecordQPoint
     } else {
-    // auto fnptr = ((QPoint (*)(void* ))(callback_ZNK17QAbstractItemView17dirtyRegionOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::dirtyRegionOffset();
   }
   }
@@ -695,10 +384,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView15startAutoScrollEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::startAutoScroll();
   }
   }
@@ -709,10 +394,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView14stopAutoScrollEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::stopAutoScroll();
   }
   }
@@ -723,10 +404,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN17QAbstractItemView12doAutoScrollEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractItemView::doAutoScroll();
   }
   }
@@ -738,10 +415,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN17QAbstractItemView18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QAbstractItemView::focusNextPrevChild(next);
   }
   }
@@ -753,10 +426,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QAbstractItemView5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QAbstractItemView::event(event);
   }
   }
@@ -768,10 +437,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QAbstractItemView13viewportEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QAbstractItemView::viewportEvent(event);
   }
   }
@@ -782,10 +447,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN17QAbstractItemView15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::mousePressEvent(event);
   }
   }
@@ -796,10 +457,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN17QAbstractItemView14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::mouseMoveEvent(event);
   }
   }
@@ -810,10 +467,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN17QAbstractItemView17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::mouseReleaseEvent(event);
   }
   }
@@ -824,10 +477,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN17QAbstractItemView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::mouseDoubleClickEvent(event);
   }
   }
@@ -838,10 +487,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN17QAbstractItemView14dragEnterEventEP15QDragEnterEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::dragEnterEvent(event);
   }
   }
@@ -852,10 +497,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN17QAbstractItemView13dragMoveEventEP14QDragMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::dragMoveEvent(event);
   }
   }
@@ -866,10 +507,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN17QAbstractItemView14dragLeaveEventEP15QDragLeaveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::dragLeaveEvent(event);
   }
   }
@@ -880,10 +517,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN17QAbstractItemView9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::dropEvent(event);
   }
   }
@@ -894,10 +527,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QAbstractItemView12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::focusInEvent(event);
   }
   }
@@ -908,10 +537,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QAbstractItemView13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::focusOutEvent(event);
   }
   }
@@ -922,10 +547,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QAbstractItemView13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::keyPressEvent(event);
   }
   }
@@ -936,10 +557,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN17QAbstractItemView11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::resizeEvent(event);
   }
   }
@@ -950,10 +567,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN17QAbstractItemView10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::timerEvent(event);
   }
   }
@@ -964,10 +577,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN17QAbstractItemView16inputMethodEventEP17QInputMethodEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractItemView::inputMethodEvent(event);
   }
   }
@@ -979,10 +588,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return (QAbstractItemView::DropIndicatorPosition)(int)(irv);
       // EnumEnumQAbstractItemView::DropIndicatorPosition
     } else {
-    // auto fnptr = ((QAbstractItemView::DropIndicatorPosition (*)(void* ))(callback_ZNK17QAbstractItemView21dropIndicatorPositionEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::dropIndicatorPosition();
   }
   }
@@ -994,10 +599,6 @@ MyQAbstractItemView(QWidget * parent) : QAbstractItemView(parent) {}
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK17QAbstractItemView16viewportSizeHintEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractItemView::viewportSizeHint();
   }
   }

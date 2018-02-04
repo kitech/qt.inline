@@ -9,48 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr = 0;
-// extern "C" void set_callback_ZNK15QAbstractButton9hitButtonERK6QPoint(void*cbfn)
-// { callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton13checkStateSetEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton13checkStateSetEv(void*cbfn)
-// { callback_ZN15QAbstractButton13checkStateSetEv_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton14nextCheckStateEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton14nextCheckStateEv(void*cbfn)
-// { callback_ZN15QAbstractButton14nextCheckStateEv_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QAbstractButton5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractButton10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQAbstractButton : public QAbstractButton {
 public:
@@ -64,10 +22,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN15QAbstractButton10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::paintEvent(e);
   }
   }
@@ -79,10 +33,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK15QAbstractButton9hitButtonERK6QPoint_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPoint*)&pos);
-    // }
     return QAbstractButton::hitButton(pos);
   }
   }
@@ -93,10 +43,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QAbstractButton13checkStateSetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractButton::checkStateSet();
   }
   }
@@ -107,10 +53,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QAbstractButton14nextCheckStateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractButton::nextCheckState();
   }
   }
@@ -122,10 +64,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QAbstractButton5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QAbstractButton::event(e);
   }
   }
@@ -136,10 +74,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QAbstractButton13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::keyPressEvent(e);
   }
   }
@@ -150,10 +84,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QAbstractButton15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::keyReleaseEvent(e);
   }
   }
@@ -164,10 +94,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::mousePressEvent(e);
   }
   }
@@ -178,10 +104,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::mouseReleaseEvent(e);
   }
   }
@@ -192,10 +114,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QAbstractButton14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::mouseMoveEvent(e);
   }
   }
@@ -206,10 +124,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QAbstractButton12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::focusInEvent(e);
   }
   }
@@ -220,10 +134,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QAbstractButton13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::focusOutEvent(e);
   }
   }
@@ -234,10 +144,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QAbstractButton11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::changeEvent(e);
   }
   }
@@ -248,10 +154,6 @@ MyQAbstractButton(QWidget * parent) : QAbstractButton(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN15QAbstractButton10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractButton::timerEvent(e);
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN14QStackedWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN14QStackedWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN14QStackedWidget5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStackedWidget : public QStackedWidget {
 public:
@@ -26,10 +23,6 @@ MyQStackedWidget(QWidget * parent) : QStackedWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN14QStackedWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QStackedWidget::event(e);
   }
   }

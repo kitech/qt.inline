@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QDockWidget11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QDockWidget10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QDockWidget10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN11QDockWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QDockWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QDockWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = 0;
-// extern "C" void set_callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget(void*cbfn)
-// { callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr = cbfn; }
 
 class MyQDockWidget : public QDockWidget {
 public:
@@ -39,10 +24,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QDockWidget11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDockWidget::changeEvent(event);
   }
   }
@@ -53,10 +34,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN11QDockWidget10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDockWidget::closeEvent(event);
   }
   }
@@ -67,10 +44,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QDockWidget10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDockWidget::paintEvent(event);
   }
   }
@@ -82,10 +55,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QDockWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QDockWidget::event(event);
   }
   }
@@ -96,10 +65,6 @@ MyQDockWidget(QWidget * parent, QFlags<Qt::WindowType> flags) : QDockWidget(pare
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionDockWidget *))(callback_ZNK11QDockWidget15initStyleOptionEP22QStyleOptionDockWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QDockWidget::initStyleOption(option);
   }
   }

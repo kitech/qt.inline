@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QSettings5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QSettings5eventEP6QEvent(void*cbfn)
-// { callback_ZN9QSettings5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSettings : public QSettings {
 public:
@@ -34,10 +31,6 @@ MyQSettings(QObject * parent) : QSettings(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QSettings5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QSettings::event(event);
   }
   }

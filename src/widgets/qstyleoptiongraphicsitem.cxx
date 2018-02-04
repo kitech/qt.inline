@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN24QStyleOptionGraphicsItemC1Ei(void*cbfn)
-// { callback_ZN24QStyleOptionGraphicsItemC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionGraphicsItem : public QStyleOptionGraphicsItem {
 public:

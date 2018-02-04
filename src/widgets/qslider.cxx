@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QSlider10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QSlider10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN7QSlider10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN7QSlider15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QSlider15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN7QSlider15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider_fnptr = 0;
-// extern "C" void set_callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider(void*cbfn)
-// { callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider_fnptr = cbfn; }
 
 class MyQSlider : public QSlider {
 public:
@@ -39,10 +24,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QSlider10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QSlider::paintEvent(ev);
   }
   }
@@ -53,10 +34,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QSlider15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QSlider::mousePressEvent(ev);
   }
   }
@@ -67,10 +44,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QSlider17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QSlider::mouseReleaseEvent(ev);
   }
   }
@@ -81,10 +54,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN7QSlider14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QSlider::mouseMoveEvent(ev);
   }
   }
@@ -95,10 +64,6 @@ MyQSlider(Qt::Orientation orientation, QWidget * parent) : QSlider(orientation, 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionSlider *))(callback_ZNK7QSlider15initStyleOptionEP18QStyleOptionSlider_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QSlider::initStyleOption(option);
   }
   }

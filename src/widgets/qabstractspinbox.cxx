@@ -9,66 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr = 0;
-// extern "C" void set_callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox(void*cbfn)
-// { callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr = cbfn; }
-// void* callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr = 0;
-// extern "C" void set_callback_ZNK16QAbstractSpinBox8lineEditEv(void*cbfn)
-// { callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr = cbfn; }
-// void* callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr = 0;
-// extern "C" void set_callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit(void*cbfn)
-// { callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr = cbfn; }
-// void* callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr = 0;
-// extern "C" void set_callback_ZNK16QAbstractSpinBox11stepEnabledEv(void*cbfn)
-// { callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr = cbfn; }
 
 class MyQAbstractSpinBox : public QAbstractSpinBox {
 public:
@@ -82,10 +22,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN16QAbstractSpinBox11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::resizeEvent(event);
   }
   }
@@ -96,10 +32,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QAbstractSpinBox13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::keyPressEvent(event);
   }
   }
@@ -110,10 +42,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QAbstractSpinBox15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::keyReleaseEvent(event);
   }
   }
@@ -124,10 +52,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN16QAbstractSpinBox10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::wheelEvent(event);
   }
   }
@@ -138,10 +62,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN16QAbstractSpinBox12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::focusInEvent(event);
   }
   }
@@ -152,10 +72,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN16QAbstractSpinBox13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::focusOutEvent(event);
   }
   }
@@ -166,10 +82,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN16QAbstractSpinBox16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::contextMenuEvent(event);
   }
   }
@@ -180,10 +92,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN16QAbstractSpinBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::changeEvent(event);
   }
   }
@@ -194,10 +102,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN16QAbstractSpinBox10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::closeEvent(event);
   }
   }
@@ -208,10 +112,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN16QAbstractSpinBox9hideEventEP10QHideEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::hideEvent(event);
   }
   }
@@ -222,10 +122,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::mousePressEvent(event);
   }
   }
@@ -236,10 +132,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::mouseReleaseEvent(event);
   }
   }
@@ -250,10 +142,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN16QAbstractSpinBox14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::mouseMoveEvent(event);
   }
   }
@@ -264,10 +152,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QAbstractSpinBox10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::timerEvent(event);
   }
   }
@@ -278,10 +162,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN16QAbstractSpinBox10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::paintEvent(event);
   }
   }
@@ -292,10 +172,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN16QAbstractSpinBox9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractSpinBox::showEvent(event);
   }
   }
@@ -306,10 +182,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionSpinBox *))(callback_ZNK16QAbstractSpinBox15initStyleOptionEP19QStyleOptionSpinBox_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QAbstractSpinBox::initStyleOption(option);
   }
   }
@@ -321,10 +193,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     return (QLineEdit *)(irv);
       // PointerPointerQLineEdit *
     } else {
-    // auto fnptr = ((QLineEdit * (*)(void* ))(callback_ZNK16QAbstractSpinBox8lineEditEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractSpinBox::lineEdit();
   }
   }
@@ -335,10 +203,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QLineEdit *))(callback_ZN16QAbstractSpinBox11setLineEditEP9QLineEdit_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , edit);
-    // }
     QAbstractSpinBox::setLineEdit(edit);
   }
   }
@@ -350,10 +214,6 @@ MyQAbstractSpinBox(QWidget * parent) : QAbstractSpinBox(parent) {}
     return (QAbstractSpinBox::StepEnabled)(int)(irv);
       // TypedefRecordQFlags<QAbstractSpinBox::StepEnabledFlag>
     } else {
-    // auto fnptr = ((QAbstractSpinBox::StepEnabled (*)(void* ))(callback_ZNK16QAbstractSpinBox11stepEnabledEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractSpinBox::stepEnabled();
   }
   }

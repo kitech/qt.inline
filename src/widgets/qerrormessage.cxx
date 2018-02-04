@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QErrorMessage4doneEi_fnptr = 0;
-// extern "C" void set_callback_ZN13QErrorMessage4doneEi(void*cbfn)
-// { callback_ZN13QErrorMessage4doneEi_fnptr = cbfn; }
-// void* callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QErrorMessage11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQErrorMessage : public QErrorMessage {
 public:
@@ -28,10 +22,6 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN13QErrorMessage4doneEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QErrorMessage::done(arg0);
   }
   }
@@ -42,10 +32,6 @@ MyQErrorMessage(QWidget * parent) : QErrorMessage(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QErrorMessage11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QErrorMessage::changeEvent(e);
   }
   }

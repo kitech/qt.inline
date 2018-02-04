@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void*cbfn)
-// { callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr = cbfn; }
 
 class MyQTemporaryFile : public QTemporaryFile {
 public:
@@ -32,10 +29,6 @@ MyQTemporaryFile(const QString & templateName, QObject * parent) : QTemporaryFil
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QFlags<QIODevice::OpenModeFlag>))(callback_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , flags);
-    // }
     return QTemporaryFile::open(flags);
   }
   }

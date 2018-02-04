@@ -9,30 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// void* callback_ZNK6QImage15mirrored_helperEbb_fnptr = 0;
-// extern "C" void set_callback_ZNK6QImage15mirrored_helperEbb(void*cbfn)
-// { callback_ZNK6QImage15mirrored_helperEbb_fnptr = cbfn; }
-// void* callback_ZNK6QImage17rgbSwapped_helperEv_fnptr = 0;
-// extern "C" void set_callback_ZNK6QImage17rgbSwapped_helperEv(void*cbfn)
-// { callback_ZNK6QImage17rgbSwapped_helperEv_fnptr = cbfn; }
-// void* callback_ZN6QImage16mirrored_inplaceEbb_fnptr = 0;
-// extern "C" void set_callback_ZN6QImage16mirrored_inplaceEbb(void*cbfn)
-// { callback_ZN6QImage16mirrored_inplaceEbb_fnptr = cbfn; }
-// void* callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr = 0;
-// extern "C" void set_callback_ZN6QImage18rgbSwapped_inplaceEv(void*cbfn)
-// { callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr = cbfn; }
-// void* callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-// { callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
-// void* callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-// { callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
-// void* callback_ZNK6QImage12smoothScaledEii_fnptr = 0;
-// extern "C" void set_callback_ZNK6QImage12smoothScaledEii(void*cbfn)
-// { callback_ZNK6QImage12smoothScaledEii_fnptr = cbfn; }
 
 class MyQImage : public QImage {
 public:
@@ -55,10 +31,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK6QImage6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , metric);
-    // }
     return QImage::metric(metric);
   }
   }
@@ -70,10 +42,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return *(QImage*)(irv);
       // RecordRecordQImage
     } else {
-    // auto fnptr = ((QImage (*)(void* , bool, bool))(callback_ZNK6QImage15mirrored_helperEbb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , horizontal, vertical);
-    // }
     return QImage::mirrored_helper(horizontal, vertical);
   }
   }
@@ -85,10 +53,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return *(QImage*)(irv);
       // RecordRecordQImage
     } else {
-    // auto fnptr = ((QImage (*)(void* ))(callback_ZNK6QImage17rgbSwapped_helperEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QImage::rgbSwapped_helper();
   }
   }
@@ -99,10 +63,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , bool, bool))(callback_ZN6QImage16mirrored_inplaceEbb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , horizontal, vertical);
-    // }
     QImage::mirrored_inplace(horizontal, vertical);
   }
   }
@@ -113,10 +73,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN6QImage18rgbSwapped_inplaceEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QImage::rgbSwapped_inplace();
   }
   }
@@ -128,10 +84,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return *(QImage*)(irv);
       // RecordRecordQImage
     } else {
-    // auto fnptr = ((QImage (*)(void* , QImage::Format, QFlags<Qt::ImageConversionFlag>))(callback_ZNK6QImage22convertToFormat_helperENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , format, flags);
-    // }
     return QImage::convertToFormat_helper(format, flags);
   }
   }
@@ -143,10 +95,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QImage::Format, QFlags<Qt::ImageConversionFlag>))(callback_ZN6QImage23convertToFormat_inplaceENS_6FormatE6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , format, flags);
-    // }
     return QImage::convertToFormat_inplace(format, flags);
   }
   }
@@ -158,10 +106,6 @@ MyQImage(const QString & fileName, const char * format) : QImage(fileName, forma
     return *(QImage*)(irv);
       // RecordRecordQImage
     } else {
-    // auto fnptr = ((QImage (*)(void* , int, int))(callback_ZNK6QImage12smoothScaledEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , w, h);
-    // }
     return QImage::smoothScaled(w, h);
   }
   }

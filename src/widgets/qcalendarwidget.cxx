@@ -9,30 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = 0;
-// extern "C" void set_callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate(void*cbfn)
-// { callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget10updateCellERK5QDate(void*cbfn)
-// { callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr = cbfn; }
-// void* callback_ZN15QCalendarWidget11updateCellsEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QCalendarWidget11updateCellsEv(void*cbfn)
-// { callback_ZN15QCalendarWidget11updateCellsEv_fnptr = cbfn; }
 
 class MyQCalendarWidget : public QCalendarWidget {
 public:
@@ -47,10 +23,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QCalendarWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QCalendarWidget::event(event);
   }
   }
@@ -62,10 +34,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , watched, event);
-    // }
     return QCalendarWidget::eventFilter(watched, event);
   }
   }
@@ -76,10 +44,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QCalendarWidget15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QCalendarWidget::mousePressEvent(event);
   }
   }
@@ -90,10 +54,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QCalendarWidget11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QCalendarWidget::resizeEvent(event);
   }
   }
@@ -104,10 +64,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QCalendarWidget13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QCalendarWidget::keyPressEvent(event);
   }
   }
@@ -118,10 +74,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QRect*, QDate*))(callback_ZNK15QCalendarWidget9paintCellEP8QPainterRK5QRectRK5QDate_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRect*)&rect, (QDate*)&date);
-    // }
     QCalendarWidget::paintCell(painter, rect, date);
   }
   }
@@ -132,10 +84,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDate*))(callback_ZN15QCalendarWidget10updateCellERK5QDate_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QDate*)&date);
-    // }
     QCalendarWidget::updateCell(date);
   }
   }
@@ -146,10 +94,6 @@ MyQCalendarWidget(QWidget * parent) : QCalendarWidget(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QCalendarWidget11updateCellsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QCalendarWidget::updateCells();
   }
   }

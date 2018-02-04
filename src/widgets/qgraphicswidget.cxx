@@ -9,81 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK15QGraphicsWidget15initStyleOptionEP12QStyleOption_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsWidget15initStyleOptionEP12QStyleOption(void*cbfn)
-// { callback_ZNK15QGraphicsWidget15initStyleOptionEP12QStyleOption_fnptr = cbfn; }
-// void* callback_ZNK15QGraphicsWidget8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsWidget8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
-// { callback_ZNK15QGraphicsWidget8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget14updateGeometryEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget14updateGeometryEv(void*cbfn)
-// { callback_ZN15QGraphicsWidget14updateGeometryEv_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant(void*cbfn)
-// { callback_ZN15QGraphicsWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget14propertyChangeERK7QStringRK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget14propertyChangeERK7QStringRK8QVariant(void*cbfn)
-// { callback_ZN15QGraphicsWidget14propertyChangeERK7QStringRK8QVariant_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget10sceneEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget10sceneEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget10sceneEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget16windowFrameEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget16windowFrameEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget16windowFrameEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK15QGraphicsWidget20windowFrameSectionAtERK7QPointF_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsWidget20windowFrameSectionAtERK7QPointF(void*cbfn)
-// { callback_ZNK15QGraphicsWidget20windowFrameSectionAtERK7QPointF_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN15QGraphicsWidget18focusNextPrevChildEb_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget9hideEventEP10QHideEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget9hideEventEP10QHideEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget9hideEventEP10QHideEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget9moveEventEP23QGraphicsSceneMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget9moveEventEP23QGraphicsSceneMoveEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget9moveEventEP23QGraphicsSceneMoveEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget11polishEventEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget11polishEventEv(void*cbfn)
-// { callback_ZN15QGraphicsWidget11polishEventEv_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget11resizeEventEP25QGraphicsSceneResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget11resizeEventEP25QGraphicsSceneResizeEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget11resizeEventEP25QGraphicsSceneResizeEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget14grabMouseEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget14grabMouseEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget14grabMouseEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget16ungrabMouseEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget16ungrabMouseEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget16ungrabMouseEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget17grabKeyboardEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget17grabKeyboardEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget17grabKeyboardEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsWidget19ungrabKeyboardEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsWidget19ungrabKeyboardEventEP6QEvent(void*cbfn)
-// { callback_ZN15QGraphicsWidget19ungrabKeyboardEventEP6QEvent_fnptr = cbfn; }
 
 class MyQGraphicsWidget : public QGraphicsWidget {
 public:
@@ -97,10 +22,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOption *))(callback_ZNK15QGraphicsWidget15initStyleOptionEP12QStyleOption_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QGraphicsWidget::initStyleOption(option);
   }
   }
@@ -112,10 +33,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return *(QSizeF*)(irv);
       // RecordRecordQSizeF
     } else {
-    // auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK15QGraphicsWidget8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , which, (QSizeF*)&constraint);
-    // }
     return QGraphicsWidget::sizeHint(which, constraint);
   }
   }
@@ -126,10 +43,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsWidget14updateGeometryEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QGraphicsWidget::updateGeometry();
   }
   }
@@ -141,10 +54,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QGraphicsItem::GraphicsItemChange, QVariant*))(callback_ZN15QGraphicsWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , change, (QVariant*)&value);
-    // }
     return QGraphicsWidget::itemChange(change, value);
   }
   }
@@ -156,10 +65,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QString*, QVariant*))(callback_ZN15QGraphicsWidget14propertyChangeERK7QStringRK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&propertyName, (QVariant*)&value);
-    // }
     return QGraphicsWidget::propertyChange(propertyName, value);
   }
   }
@@ -171,10 +76,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget10sceneEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGraphicsWidget::sceneEvent(event);
   }
   }
@@ -186,10 +87,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget16windowFrameEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QGraphicsWidget::windowFrameEvent(e);
   }
   }
@@ -201,10 +98,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return (Qt::WindowFrameSection)(int)(irv);
       // ElaboratedEnumQt::WindowFrameSection
     } else {
-    // auto fnptr = ((Qt::WindowFrameSection (*)(void* , QPointF*))(callback_ZNK15QGraphicsWidget20windowFrameSectionAtERK7QPointF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPointF*)&pos);
-    // }
     return QGraphicsWidget::windowFrameSectionAt(pos);
   }
   }
@@ -216,10 +109,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGraphicsWidget::event(event);
   }
   }
@@ -230,10 +119,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::changeEvent(event);
   }
   }
@@ -244,10 +129,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN15QGraphicsWidget10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::closeEvent(event);
   }
   }
@@ -258,10 +139,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QGraphicsWidget12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::focusInEvent(event);
   }
   }
@@ -273,10 +150,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN15QGraphicsWidget18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QGraphicsWidget::focusNextPrevChild(next);
   }
   }
@@ -287,10 +160,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN15QGraphicsWidget13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::focusOutEvent(event);
   }
   }
@@ -301,10 +170,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN15QGraphicsWidget9hideEventEP10QHideEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::hideEvent(event);
   }
   }
@@ -315,10 +180,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneMoveEvent *))(callback_ZN15QGraphicsWidget9moveEventEP23QGraphicsSceneMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::moveEvent(event);
   }
   }
@@ -329,10 +190,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsWidget11polishEventEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QGraphicsWidget::polishEvent();
   }
   }
@@ -343,10 +200,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneResizeEvent *))(callback_ZN15QGraphicsWidget11resizeEventEP25QGraphicsSceneResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::resizeEvent(event);
   }
   }
@@ -357,10 +210,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN15QGraphicsWidget9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::showEvent(event);
   }
   }
@@ -371,10 +220,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN15QGraphicsWidget14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::hoverMoveEvent(event);
   }
   }
@@ -385,10 +230,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN15QGraphicsWidget15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::hoverLeaveEvent(event);
   }
   }
@@ -399,10 +240,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget14grabMouseEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::grabMouseEvent(event);
   }
   }
@@ -413,10 +250,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget16ungrabMouseEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::ungrabMouseEvent(event);
   }
   }
@@ -427,10 +260,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget17grabKeyboardEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::grabKeyboardEvent(event);
   }
   }
@@ -441,10 +270,6 @@ MyQGraphicsWidget(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags) : QGrap
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QGraphicsWidget19ungrabKeyboardEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsWidget::ungrabKeyboardEvent(event);
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = 0;
-// extern "C" void set_callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE(void*cbfn)
-// { callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr = cbfn; }
 
 class MyQMimeData : public QMimeData {
 public:
@@ -26,10 +23,6 @@ MyQMimeData() : QMimeData() {}
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QString*, QVariant::Type))(callback_ZNK9QMimeData12retrieveDataERK7QStringN8QVariant4TypeE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&mimetype, preferredType);
-    // }
     return QMimeData::retrieveData(mimetype, preferredType);
   }
   }

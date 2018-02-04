@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine7onEntryEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine6onExitEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine6onExitEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine6onExitEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine14beginMicrostepEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine12endMicrostepEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QStateMachine5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QStateMachine5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QStateMachine5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStateMachine : public QStateMachine {
 public:
@@ -45,10 +24,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine7onEntryEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::onEntry(event);
   }
   }
@@ -59,10 +34,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine6onExitEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::onExit(event);
   }
   }
@@ -73,10 +44,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine22beginSelectTransitionsEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::beginSelectTransitions(event);
   }
   }
@@ -87,10 +54,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine20endSelectTransitionsEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::endSelectTransitions(event);
   }
   }
@@ -101,10 +64,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine14beginMicrostepEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::beginMicrostep(event);
   }
   }
@@ -115,10 +74,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QStateMachine12endMicrostepEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QStateMachine::endMicrostep(event);
   }
   }
@@ -130,10 +85,6 @@ MyQStateMachine(QState::ChildMode childMode, QObject * parent) : QStateMachine(c
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QStateMachine5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QStateMachine::event(e);
   }
   }

@@ -9,39 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString_fnptr = cbfn; }
-// void* callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat_fnptr = cbfn; }
-// void* callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor_fnptr = cbfn; }
-// void* callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont_fnptr = cbfn; }
-// void* callback_ZNK18QSyntaxHighlighter6formatEi_fnptr = 0;
-// extern "C" void set_callback_ZNK18QSyntaxHighlighter6formatEi(void*cbfn)
-// { callback_ZNK18QSyntaxHighlighter6formatEi_fnptr = cbfn; }
-// void* callback_ZNK18QSyntaxHighlighter18previousBlockStateEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QSyntaxHighlighter18previousBlockStateEv(void*cbfn)
-// { callback_ZNK18QSyntaxHighlighter18previousBlockStateEv_fnptr = cbfn; }
-// void* callback_ZNK18QSyntaxHighlighter17currentBlockStateEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QSyntaxHighlighter17currentBlockStateEv(void*cbfn)
-// { callback_ZNK18QSyntaxHighlighter17currentBlockStateEv_fnptr = cbfn; }
-// void* callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi_fnptr = cbfn; }
-// void* callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData_fnptr = 0;
-// extern "C" void set_callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData(void*cbfn)
-// { callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData_fnptr = cbfn; }
-// void* callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv(void*cbfn)
-// { callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv_fnptr = cbfn; }
-// void* callback_ZNK18QSyntaxHighlighter12currentBlockEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QSyntaxHighlighter12currentBlockEv(void*cbfn)
-// { callback_ZNK18QSyntaxHighlighter12currentBlockEv_fnptr = cbfn; }
 
 class MyQSyntaxHighlighter : public QSyntaxHighlighter {
 public:
@@ -57,10 +24,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*))(callback_ZN18QSyntaxHighlighter14highlightBlockERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&text);
-    // }
     QSyntaxHighlighter::highlightBlock(text);
   }
   }
@@ -71,10 +34,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, QTextCharFormat*))(callback_ZN18QSyntaxHighlighter9setFormatEiiRK15QTextCharFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , start, count, (QTextCharFormat*)&format);
-    // }
     QSyntaxHighlighter::setFormat(start, count, format);
   }
   }
@@ -85,10 +44,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, QColor*))(callback_ZN18QSyntaxHighlighter9setFormatEiiRK6QColor_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , start, count, (QColor*)&color);
-    // }
     QSyntaxHighlighter::setFormat(start, count, color);
   }
   }
@@ -99,10 +54,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, QFont*))(callback_ZN18QSyntaxHighlighter9setFormatEiiRK5QFont_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , start, count, (QFont*)&font);
-    // }
     QSyntaxHighlighter::setFormat(start, count, font);
   }
   }
@@ -114,10 +65,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return *(QTextCharFormat*)(irv);
       // RecordRecordQTextCharFormat
     } else {
-    // auto fnptr = ((QTextCharFormat (*)(void* , int))(callback_ZNK18QSyntaxHighlighter6formatEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , pos);
-    // }
     return QSyntaxHighlighter::format(pos);
   }
   }
@@ -129,10 +76,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK18QSyntaxHighlighter18previousBlockStateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QSyntaxHighlighter::previousBlockState();
   }
   }
@@ -144,10 +87,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK18QSyntaxHighlighter17currentBlockStateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QSyntaxHighlighter::currentBlockState();
   }
   }
@@ -158,10 +97,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN18QSyntaxHighlighter20setCurrentBlockStateEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , newState);
-    // }
     QSyntaxHighlighter::setCurrentBlockState(newState);
   }
   }
@@ -172,10 +107,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextBlockUserData *))(callback_ZN18QSyntaxHighlighter23setCurrentBlockUserDataEP18QTextBlockUserData_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data);
-    // }
     QSyntaxHighlighter::setCurrentBlockUserData(data);
   }
   }
@@ -187,10 +118,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return (QTextBlockUserData *)(irv);
       // PointerPointerQTextBlockUserData *
     } else {
-    // auto fnptr = ((QTextBlockUserData * (*)(void* ))(callback_ZNK18QSyntaxHighlighter20currentBlockUserDataEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QSyntaxHighlighter::currentBlockUserData();
   }
   }
@@ -202,10 +129,6 @@ MyQSyntaxHighlighter(QTextDocument * parent) : QSyntaxHighlighter(parent) {}
     return *(QTextBlock*)(irv);
       // RecordRecordQTextBlock
     } else {
-    // auto fnptr = ((QTextBlock (*)(void* ))(callback_ZNK18QSyntaxHighlighter12currentBlockEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QSyntaxHighlighter::currentBlock();
   }
   }

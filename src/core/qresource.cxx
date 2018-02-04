@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK9QResource5isDirEv_fnptr = 0;
-// extern "C" void set_callback_ZNK9QResource5isDirEv(void*cbfn)
-// { callback_ZNK9QResource5isDirEv_fnptr = cbfn; }
-// void* callback_ZNK9QResource6isFileEv_fnptr = 0;
-// extern "C" void set_callback_ZNK9QResource6isFileEv(void*cbfn)
-// { callback_ZNK9QResource6isFileEv_fnptr = cbfn; }
 
 class MyQResource : public QResource {
 public:
@@ -29,10 +23,6 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource5isDirEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QResource::isDir();
   }
   }
@@ -44,10 +34,6 @@ MyQResource(const QString & file, const QLocale & locale) : QResource(file, loca
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK9QResource6isFileEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QResource::isFile();
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QGraphicsTransform6updateEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QGraphicsTransform6updateEv(void*cbfn)
-// { callback_ZN18QGraphicsTransform6updateEv_fnptr = cbfn; }
 
 class MyQGraphicsTransform : public QGraphicsTransform {
 public:
@@ -25,10 +22,6 @@ MyQGraphicsTransform(QObject * parent) : QGraphicsTransform(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QGraphicsTransform6updateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QGraphicsTransform::update();
   }
   }

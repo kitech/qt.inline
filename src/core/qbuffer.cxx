@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN7QBuffer13connectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN7QBuffer8readDataEPcx_fnptr = 0;
-// extern "C" void set_callback_ZN7QBuffer8readDataEPcx(void*cbfn)
-// { callback_ZN7QBuffer8readDataEPcx_fnptr = cbfn; }
-// void* callback_ZN7QBuffer9writeDataEPKcx_fnptr = 0;
-// extern "C" void set_callback_ZN7QBuffer9writeDataEPKcx(void*cbfn)
-// { callback_ZN7QBuffer9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQBuffer : public QBuffer {
 public:
@@ -36,10 +24,6 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer13connectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&arg0);
-    // }
     QBuffer::connectNotify(arg0);
   }
   }
@@ -50,10 +34,6 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN7QBuffer16disconnectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&arg0);
-    // }
     QBuffer::disconnectNotify(arg0);
   }
   }
@@ -65,10 +45,6 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , char *, qint64))(callback_ZN7QBuffer8readDataEPcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, maxlen);
-    // }
     return QBuffer::readData(data, maxlen);
   }
   }
@@ -80,10 +56,6 @@ MyQBuffer(QByteArray * buf, QObject * parent) : QBuffer(buf, parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN7QBuffer9writeDataEPKcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, len);
-    // }
     return QBuffer::writeData(data, len);
   }
   }

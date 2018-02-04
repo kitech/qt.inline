@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFontDialog11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QFontDialog4doneEi_fnptr = 0;
-// extern "C" void set_callback_ZN11QFontDialog4doneEi(void*cbfn)
-// { callback_ZN11QFontDialog4doneEi_fnptr = cbfn; }
-// void* callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
 
 class MyQFontDialog : public QFontDialog {
 public:
@@ -33,10 +24,6 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFontDialog11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QFontDialog::changeEvent(event);
   }
   }
@@ -47,10 +34,6 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN11QFontDialog4doneEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , result);
-    // }
     QFontDialog::done(result);
   }
   }
@@ -62,10 +45,6 @@ MyQFontDialog(const QFont & initial, QWidget * parent) : QFontDialog(initial, pa
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN11QFontDialog11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , object, event);
-    // }
     return QFontDialog::eventFilter(object, event);
   }
   }

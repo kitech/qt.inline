@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QKeyEventTransition12onTransitionEP6QEvent(void*cbfn)
-// { callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QKeyEventTransition9eventTestEP6QEvent(void*cbfn)
-// { callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
 
 class MyQKeyEventTransition : public QKeyEventTransition {
 public:
@@ -30,10 +24,6 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sou
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition12onTransitionEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QKeyEventTransition::onTransition(event);
   }
   }
@@ -45,10 +35,6 @@ MyQKeyEventTransition(QObject * object, QEvent::Type type, int key, QState * sou
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QKeyEventTransition9eventTestEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QKeyEventTransition::eventTest(event);
   }
   }

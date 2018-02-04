@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = 0;
-// extern "C" void set_callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void*cbfn)
-// { callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr = cbfn; }
-// void* callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = 0;
-// extern "C" void set_callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void*cbfn)
-// { callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr = cbfn; }
 
 class MyQGraphicsItemAnimation : public QGraphicsItemAnimation {
 public:
@@ -28,10 +22,6 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation19beforeAnimationStepEd_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , step);
-    // }
     QGraphicsItemAnimation::beforeAnimationStep(step);
   }
   }
@@ -42,10 +32,6 @@ MyQGraphicsItemAnimation(QObject * parent) : QGraphicsItemAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , qreal))(callback_ZN22QGraphicsItemAnimation18afterAnimationStepEd_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , step);
-    // }
     QGraphicsItemAnimation::afterAnimationStep(step);
   }
   }

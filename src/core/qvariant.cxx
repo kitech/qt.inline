@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QVariant6createEiPKv_fnptr = 0;
-// extern "C" void set_callback_ZN8QVariant6createEiPKv(void*cbfn)
-// { callback_ZN8QVariant6createEiPKv_fnptr = cbfn; }
-// void* callback_ZNK8QVariant3cmpERKS__fnptr = 0;
-// extern "C" void set_callback_ZNK8QVariant3cmpERKS_(void*cbfn)
-// { callback_ZNK8QVariant3cmpERKS__fnptr = cbfn; }
-// void* callback_ZNK8QVariant7compareERKS__fnptr = 0;
-// extern "C" void set_callback_ZNK8QVariant7compareERKS_(void*cbfn)
-// { callback_ZNK8QVariant7compareERKS__fnptr = cbfn; }
-// void* callback_ZNK8QVariant7convertEiPv_fnptr = 0;
-// extern "C" void set_callback_ZNK8QVariant7convertEiPv(void*cbfn)
-// { callback_ZNK8QVariant7convertEiPv_fnptr = cbfn; }
 
 class MyQVariant : public QVariant {
 public:
@@ -116,10 +104,6 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, const void *))(callback_ZN8QVariant6createEiPKv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , type, copy);
-    // }
     QVariant::create(type, copy);
   }
   }
@@ -131,10 +115,6 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QVariant*))(callback_ZNK8QVariant3cmpERKS__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&other);
-    // }
     return QVariant::cmp(other);
   }
   }
@@ -146,10 +126,6 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QVariant*))(callback_ZNK8QVariant7compareERKS__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&other);
-    // }
     return QVariant::compare(other);
   }
   }
@@ -161,10 +137,6 @@ MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , const int, void *))(callback_ZNK8QVariant7convertEiPv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , t, ptr);
-    // }
     return QVariant::convert(t, ptr);
   }
   }

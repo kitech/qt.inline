@@ -9,51 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QComboBox12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN9QComboBox12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN9QComboBox13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN9QComboBox11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN9QComboBox11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN9QComboBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN9QComboBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox9hideEventEP10QHideEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox9hideEventEP10QHideEvent(void*cbfn)
-// { callback_ZN9QComboBox9hideEventEP10QHideEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QComboBox15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN9QComboBox13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN9QComboBox15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN9QComboBox10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-// { callback_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// void* callback_ZNK9QComboBox15initStyleOptionEP20QStyleOptionComboBox_fnptr = 0;
-// extern "C" void set_callback_ZNK9QComboBox15initStyleOptionEP20QStyleOptionComboBox(void*cbfn)
-// { callback_ZNK9QComboBox15initStyleOptionEP20QStyleOptionComboBox_fnptr = cbfn; }
 
 class MyQComboBox : public QComboBox {
 public:
@@ -67,10 +22,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QComboBox12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::focusInEvent(e);
   }
   }
@@ -81,10 +32,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QComboBox13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::focusOutEvent(e);
   }
   }
@@ -95,10 +42,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN9QComboBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::changeEvent(e);
   }
   }
@@ -109,10 +52,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN9QComboBox11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::resizeEvent(e);
   }
   }
@@ -123,10 +62,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QComboBox10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::paintEvent(e);
   }
   }
@@ -137,10 +72,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN9QComboBox9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::showEvent(e);
   }
   }
@@ -151,10 +82,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN9QComboBox9hideEventEP10QHideEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::hideEvent(e);
   }
   }
@@ -165,10 +92,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QComboBox15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::mousePressEvent(e);
   }
   }
@@ -179,10 +102,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::mouseReleaseEvent(e);
   }
   }
@@ -193,10 +112,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QComboBox13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::keyPressEvent(e);
   }
   }
@@ -207,10 +122,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QComboBox15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::keyReleaseEvent(e);
   }
   }
@@ -221,10 +132,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN9QComboBox10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::wheelEvent(e);
   }
   }
@@ -235,10 +142,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QComboBox::contextMenuEvent(e);
   }
   }
@@ -249,10 +152,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QComboBox::inputMethodEvent(arg0);
   }
   }
@@ -263,10 +162,6 @@ MyQComboBox(QWidget * parent) : QComboBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionComboBox *))(callback_ZNK9QComboBox15initStyleOptionEP20QStyleOptionComboBox_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QComboBox::initStyleOption(option);
   }
   }

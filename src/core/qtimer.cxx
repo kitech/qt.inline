@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QTimer10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQTimer : public QTimer {
 public:
@@ -25,10 +22,6 @@ MyQTimer(QObject * parent) : QTimer(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN6QTimer10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTimer::timerEvent(arg0);
   }
   }

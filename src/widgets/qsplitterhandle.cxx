@@ -9,30 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle12moveSplitterEi(void*cbfn)
-// { callback_ZN15QSplitterHandle12moveSplitterEi_fnptr = cbfn; }
-// void* callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = 0;
-// extern "C" void set_callback_ZN15QSplitterHandle20closestLegalPositionEi(void*cbfn)
-// { callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr = cbfn; }
 
 class MyQSplitterHandle : public QSplitterHandle {
 public:
@@ -46,10 +22,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN15QSplitterHandle10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplitterHandle::paintEvent(arg0);
   }
   }
@@ -60,10 +32,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplitterHandle::mouseMoveEvent(arg0);
   }
   }
@@ -74,10 +42,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplitterHandle::mousePressEvent(arg0);
   }
   }
@@ -88,10 +52,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN15QSplitterHandle17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplitterHandle::mouseReleaseEvent(arg0);
   }
   }
@@ -102,10 +62,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QSplitterHandle11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplitterHandle::resizeEvent(arg0);
   }
   }
@@ -117,10 +73,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSplitterHandle5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QSplitterHandle::event(arg0);
   }
   }
@@ -131,10 +83,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN15QSplitterHandle12moveSplitterEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , p);
-    // }
     QSplitterHandle::moveSplitter(p);
   }
   }
@@ -146,10 +94,6 @@ MyQSplitterHandle(Qt::Orientation o, QSplitter * parent) : QSplitterHandle(o, pa
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , int))(callback_ZN15QSplitterHandle20closestLegalPositionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , p);
-    // }
     return QSplitterHandle::closestLegalPosition(p);
   }
   }

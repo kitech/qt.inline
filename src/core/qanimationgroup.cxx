@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAnimationGroup5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAnimationGroup : public QAnimationGroup {
 public:
@@ -26,10 +23,6 @@ MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QAnimationGroup5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QAnimationGroup::event(event);
   }
   }

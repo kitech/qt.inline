@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QFontComboBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QFontComboBox5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFontComboBox : public QFontComboBox {
 public:
@@ -26,10 +23,6 @@ MyQFontComboBox(QWidget * parent) : QFontComboBox(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QFontComboBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QFontComboBox::event(e);
   }
   }

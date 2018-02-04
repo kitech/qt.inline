@@ -9,69 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QAbstractScrollArea18setViewportMarginsEiiii_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea18setViewportMarginsEiiii(void*cbfn)
-// { callback_ZN19QAbstractScrollArea18setViewportMarginsEiiii_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins(void*cbfn)
-// { callback_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins_fnptr = cbfn; }
-// void* callback_ZNK19QAbstractScrollArea15viewportMarginsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK19QAbstractScrollArea15viewportMarginsEv(void*cbfn)
-// { callback_ZNK19QAbstractScrollArea15viewportMarginsEv_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea5eventEP6QEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea13viewportEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea13viewportEventEP6QEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea13viewportEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea9dropEventEP10QDropEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN19QAbstractScrollArea13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN19QAbstractScrollArea16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractScrollArea16scrollContentsByEii(void*cbfn)
-// { callback_ZN19QAbstractScrollArea16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZNK19QAbstractScrollArea16viewportSizeHintEv_fnptr = 0;
-// extern "C" void set_callback_ZNK19QAbstractScrollArea16viewportSizeHintEv(void*cbfn)
-// { callback_ZNK19QAbstractScrollArea16viewportSizeHintEv_fnptr = cbfn; }
 
 class MyQAbstractScrollArea : public QAbstractScrollArea {
 public:
@@ -85,10 +22,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int, int))(callback_ZN19QAbstractScrollArea18setViewportMarginsEiiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , left, top, right, bottom);
-    // }
     QAbstractScrollArea::setViewportMargins(left, top, right, bottom);
   }
   }
@@ -99,10 +32,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMargins*))(callback_ZN19QAbstractScrollArea18setViewportMarginsERK8QMargins_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMargins*)&margins);
-    // }
     QAbstractScrollArea::setViewportMargins(margins);
   }
   }
@@ -114,10 +43,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return *(QMargins*)(irv);
       // RecordRecordQMargins
     } else {
-    // auto fnptr = ((QMargins (*)(void* ))(callback_ZNK19QAbstractScrollArea15viewportMarginsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractScrollArea::viewportMargins();
   }
   }
@@ -129,10 +54,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN19QAbstractScrollArea11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QAbstractScrollArea::eventFilter(arg0, arg1);
   }
   }
@@ -144,10 +65,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QAbstractScrollArea5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QAbstractScrollArea::event(arg0);
   }
   }
@@ -159,10 +76,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN19QAbstractScrollArea13viewportEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QAbstractScrollArea::viewportEvent(arg0);
   }
   }
@@ -173,10 +86,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN19QAbstractScrollArea11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::resizeEvent(arg0);
   }
   }
@@ -187,10 +96,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN19QAbstractScrollArea10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::paintEvent(arg0);
   }
   }
@@ -201,10 +106,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN19QAbstractScrollArea15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::mousePressEvent(arg0);
   }
   }
@@ -215,10 +116,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN19QAbstractScrollArea17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::mouseReleaseEvent(arg0);
   }
   }
@@ -229,10 +126,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN19QAbstractScrollArea21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::mouseDoubleClickEvent(arg0);
   }
   }
@@ -243,10 +136,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN19QAbstractScrollArea14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::mouseMoveEvent(arg0);
   }
   }
@@ -257,10 +146,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN19QAbstractScrollArea10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::wheelEvent(arg0);
   }
   }
@@ -271,10 +156,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN19QAbstractScrollArea16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::contextMenuEvent(arg0);
   }
   }
@@ -285,10 +166,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN19QAbstractScrollArea14dragEnterEventEP15QDragEnterEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::dragEnterEvent(arg0);
   }
   }
@@ -299,10 +176,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN19QAbstractScrollArea13dragMoveEventEP14QDragMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::dragMoveEvent(arg0);
   }
   }
@@ -313,10 +186,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN19QAbstractScrollArea14dragLeaveEventEP15QDragLeaveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::dragLeaveEvent(arg0);
   }
   }
@@ -327,10 +196,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN19QAbstractScrollArea9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::dropEvent(arg0);
   }
   }
@@ -341,10 +206,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN19QAbstractScrollArea13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractScrollArea::keyPressEvent(arg0);
   }
   }
@@ -355,10 +216,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN19QAbstractScrollArea16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QAbstractScrollArea::scrollContentsBy(dx, dy);
   }
   }
@@ -370,10 +227,6 @@ MyQAbstractScrollArea(QWidget * parent) : QAbstractScrollArea(parent) {}
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK19QAbstractScrollArea16viewportSizeHintEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractScrollArea::viewportSizeHint();
   }
   }

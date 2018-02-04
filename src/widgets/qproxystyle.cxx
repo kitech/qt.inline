@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QProxyStyle5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QProxyStyle5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QProxyStyle5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQProxyStyle : public QProxyStyle {
 public:
@@ -28,10 +25,6 @@ MyQProxyStyle(const QString & key) : QProxyStyle(key) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QProxyStyle5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QProxyStyle::event(e);
   }
   }

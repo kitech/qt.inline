@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsEffect4drawEP8QPainter(void*cbfn)
-// { callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE(void*cbfn)
-// { callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsEffect18updateBoundingRectEv(void*cbfn)
-// { callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr = cbfn; }
-// void* callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsEffect14sourceIsPixmapEv(void*cbfn)
-// { callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr = cbfn; }
-// void* callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE(void*cbfn)
-// { callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr = cbfn; }
-// void* callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = 0;
-// extern "C" void set_callback_ZN15QGraphicsEffect10drawSourceEP8QPainter(void*cbfn)
-// { callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr = cbfn; }
-// void* callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = 0;
-// extern "C" void set_callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE(void*cbfn)
-// { callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr = cbfn; }
 
 class MyQGraphicsEffect : public QGraphicsEffect {
 public:
@@ -43,10 +22,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect4drawEP8QPainter_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter);
-    // }
     QGraphicsEffect::draw(painter);
   }
   }
@@ -57,10 +32,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFlags<QGraphicsEffect::ChangeFlag>))(callback_ZN15QGraphicsEffect13sourceChangedE6QFlagsINS_10ChangeFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , flags);
-    // }
     QGraphicsEffect::sourceChanged(flags);
   }
   }
@@ -71,10 +42,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QGraphicsEffect18updateBoundingRectEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QGraphicsEffect::updateBoundingRect();
   }
   }
@@ -86,10 +53,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK15QGraphicsEffect14sourceIsPixmapEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QGraphicsEffect::sourceIsPixmap();
   }
   }
@@ -101,10 +64,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return *(QRectF*)(irv);
       // RecordRecordQRectF
     } else {
-    // auto fnptr = ((QRectF (*)(void* , Qt::CoordinateSystem))(callback_ZNK15QGraphicsEffect18sourceBoundingRectEN2Qt16CoordinateSystemE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , system);
-    // }
     return QGraphicsEffect::sourceBoundingRect(system);
   }
   }
@@ -115,10 +74,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN15QGraphicsEffect10drawSourceEP8QPainter_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter);
-    // }
     QGraphicsEffect::drawSource(painter);
   }
   }
@@ -130,10 +85,6 @@ MyQGraphicsEffect(QObject * parent) : QGraphicsEffect(parent) {}
     return *(QPixmap*)(irv);
       // RecordRecordQPixmap
     } else {
-    // auto fnptr = ((QPixmap (*)(void* , Qt::CoordinateSystem, QPoint *, QGraphicsEffect::PixmapPadMode))(callback_ZNK15QGraphicsEffect12sourcePixmapEN2Qt16CoordinateSystemEP6QPointNS_13PixmapPadModeE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , system, offset, mode);
-    // }
     return QGraphicsEffect::sourcePixmap(system, offset, mode);
   }
   }

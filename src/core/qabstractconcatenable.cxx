@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar_fnptr = 0;
-// extern "C" void set_callback_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar(void*cbfn)
-// { callback_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar_fnptr = cbfn; }
-// void* callback_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar_fnptr = 0;
-// extern "C" void set_callback_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar(void*cbfn)
-// { callback_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar_fnptr = cbfn; }
-// void* callback_ZN21QAbstractConcatenable14appendLatin1ToEPKciP5QChar_fnptr = 0;
-// extern "C" void set_callback_ZN21QAbstractConcatenable14appendLatin1ToEPKciP5QChar(void*cbfn)
-// { callback_ZN21QAbstractConcatenable14appendLatin1ToEPKciP5QChar_fnptr = cbfn; }
 
 class MyQAbstractConcatenable : public QAbstractConcatenable {
 public:
@@ -29,10 +20,6 @@ public:
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , const char *, int, QChar *&))(callback_ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , a, len, out);
-    // }
     QAbstractConcatenable::convertFromAscii(a, len, out);
   }
   }
@@ -43,10 +30,6 @@ public:
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , char, QChar *&))(callback_ZN21QAbstractConcatenable16convertFromAsciiEcRP5QChar_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , a, out);
-    // }
     QAbstractConcatenable::convertFromAscii(a, out);
   }
   }
@@ -57,10 +40,6 @@ public:
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , const char *, int, QChar *))(callback_ZN21QAbstractConcatenable14appendLatin1ToEPKciP5QChar_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , a, len, out);
-    // }
     QAbstractConcatenable::appendLatin1To(a, len, out);
   }
   }

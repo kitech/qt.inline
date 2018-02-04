@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTimeLine10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQTimeLine : public QTimeLine {
 public:
@@ -25,10 +22,6 @@ MyQTimeLine(int duration, QObject * parent) : QTimeLine(duration, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTimeLine10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QTimeLine::timerEvent(event);
   }
   }

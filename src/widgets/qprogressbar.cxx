@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN12QProgressBar5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QProgressBar5eventEP6QEvent(void*cbfn)
-// { callback_ZN12QProgressBar5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QProgressBar10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = 0;
-// extern "C" void set_callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar(void*cbfn)
-// { callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr = cbfn; }
 
 class MyQProgressBar : public QProgressBar {
 public:
@@ -32,10 +23,6 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QProgressBar5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QProgressBar::event(e);
   }
   }
@@ -46,10 +33,6 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN12QProgressBar10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QProgressBar::paintEvent(arg0);
   }
   }
@@ -60,10 +43,6 @@ MyQProgressBar(QWidget * parent) : QProgressBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionProgressBar *))(callback_ZNK12QProgressBar15initStyleOptionEP23QStyleOptionProgressBar_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QProgressBar::initStyleOption(option);
   }
   }

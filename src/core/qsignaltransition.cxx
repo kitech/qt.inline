@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QSignalTransition9eventTestEP6QEvent(void*cbfn)
-// { callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QSignalTransition12onTransitionEP6QEvent(void*cbfn)
-// { callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QSignalTransition5eventEP6QEvent(void*cbfn)
-// { callback_ZN17QSignalTransition5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSignalTransition : public QSignalTransition {
 public:
@@ -34,10 +25,6 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition9eventTestEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QSignalTransition::eventTest(event);
   }
   }
@@ -48,10 +35,6 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN17QSignalTransition12onTransitionEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QSignalTransition::onTransition(event);
   }
   }
@@ -63,10 +46,6 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QSignalTransition5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QSignalTransition::event(e);
   }
   }

@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QFileDialog4doneEi_fnptr = 0;
-// extern "C" void set_callback_ZN11QFileDialog4doneEi(void*cbfn)
-// { callback_ZN11QFileDialog4doneEi_fnptr = cbfn; }
-// void* callback_ZN11QFileDialog6acceptEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QFileDialog6acceptEv(void*cbfn)
-// { callback_ZN11QFileDialog6acceptEv_fnptr = cbfn; }
-// void* callback_ZN11QFileDialog11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QFileDialog11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN11QFileDialog11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQFileDialog : public QFileDialog {
 public:
@@ -33,10 +24,6 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN11QFileDialog4doneEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , result);
-    // }
     QFileDialog::done(result);
   }
   }
@@ -47,10 +34,6 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QFileDialog6acceptEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QFileDialog::accept();
   }
   }
@@ -61,10 +44,6 @@ MyQFileDialog(QWidget * parent, const QString & caption, const QString & directo
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN11QFileDialog11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QFileDialog::changeEvent(e);
   }
   }

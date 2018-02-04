@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QProgressDialog10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QProgressDialog11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QProgressDialog9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN15QProgressDialog9forceShowEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QProgressDialog9forceShowEv(void*cbfn)
-// { callback_ZN15QProgressDialog9forceShowEv_fnptr = cbfn; }
 
 class MyQProgressDialog : public QProgressDialog {
 public:
@@ -39,10 +24,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN15QProgressDialog11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QProgressDialog::resizeEvent(event);
   }
   }
@@ -53,10 +34,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN15QProgressDialog10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QProgressDialog::closeEvent(event);
   }
   }
@@ -67,10 +44,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QProgressDialog11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QProgressDialog::changeEvent(event);
   }
   }
@@ -81,10 +54,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN15QProgressDialog9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QProgressDialog::showEvent(event);
   }
   }
@@ -95,10 +64,6 @@ MyQProgressDialog(const QString & labelText, const QString & cancelButtonText, i
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QProgressDialog9forceShowEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QProgressDialog::forceShow();
   }
   }

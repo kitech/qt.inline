@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsPixmapItem : public QGraphicsPixmapItem {
 public:
@@ -34,10 +25,6 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsPixmapItem::supportsExtension(extension);
   }
   }
@@ -48,10 +35,6 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsPixmapItem::setExtension(extension, variant);
   }
   }
@@ -63,10 +46,6 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK19QGraphicsPixmapItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsPixmapItem::extension(variant);
   }
   }

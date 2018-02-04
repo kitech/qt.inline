@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr = cbfn; }
 
 class MyQDesktopWidget : public QDesktopWidget {
 public:
@@ -25,10 +22,6 @@ MyQDesktopWidget() : QDesktopWidget() {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN14QDesktopWidget11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QDesktopWidget::resizeEvent(e);
   }
   }

@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QKeySequenceEdit5eventEP6QEvent(void*cbfn)
-// { callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr = cbfn; }
 
 class MyQKeySequenceEdit : public QKeySequenceEdit {
 public:
@@ -37,10 +25,6 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QKeySequenceEdit5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QKeySequenceEdit::event(arg0);
   }
   }
@@ -51,10 +35,6 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QKeySequenceEdit::keyPressEvent(arg0);
   }
   }
@@ -65,10 +45,6 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN16QKeySequenceEdit15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QKeySequenceEdit::keyReleaseEvent(arg0);
   }
   }
@@ -79,10 +55,6 @@ MyQKeySequenceEdit(const QKeySequence & keySequence, QWidget * parent) : QKeySeq
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QKeySequenceEdit10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QKeySequenceEdit::timerEvent(arg0);
   }
   }

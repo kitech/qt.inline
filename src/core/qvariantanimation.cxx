@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QVariantAnimation5eventEP6QEvent(void*cbfn)
-// { callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = 0;
-// extern "C" void set_callback_ZN17QVariantAnimation17updateCurrentTimeEi(void*cbfn)
-// { callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr = cbfn; }
-// void* callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
-// extern "C" void set_callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-// { callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
-// void* callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant(void*cbfn)
-// { callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = 0;
-// extern "C" void set_callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d(void*cbfn)
-// { callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr = cbfn; }
 
 class MyQVariantAnimation : public QVariantAnimation {
 public:
@@ -38,10 +23,6 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QVariantAnimation5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QVariantAnimation::event(event);
   }
   }
@@ -52,10 +33,6 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN17QVariantAnimation17updateCurrentTimeEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QVariantAnimation::updateCurrentTime(arg0);
   }
   }
@@ -66,10 +43,6 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , newState, oldState);
-    // }
     QVariantAnimation::updateState(newState, oldState);
   }
   }
@@ -80,10 +53,6 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN17QVariantAnimation18updateCurrentValueERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&value);
-    // }
     QVariantAnimation::updateCurrentValue(value);
   }
   }
@@ -95,10 +64,6 @@ MyQVariantAnimation(QObject * parent) : QVariantAnimation(parent) {}
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*, QVariant*, qreal))(callback_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&from, (QVariant*)&to, progress);
-    // }
     return QVariantAnimation::interpolated(from, to, progress);
   }
   }

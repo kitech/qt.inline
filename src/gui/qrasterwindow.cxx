@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// void* callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = 0;
-// extern "C" void set_callback_ZNK13QRasterWindow10redirectedEP6QPoint(void*cbfn)
-// { callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr = cbfn; }
 
 class MyQRasterWindow : public QRasterWindow {
 public:
@@ -29,10 +23,6 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK13QRasterWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , metric);
-    // }
     return QRasterWindow::metric(metric);
   }
   }
@@ -44,10 +34,6 @@ MyQRasterWindow(QWindow * parent) : QRasterWindow(parent) {}
     return (QPaintDevice *)(irv);
       // PointerPointerQPaintDevice *
     } else {
-    // auto fnptr = ((QPaintDevice * (*)(void* , QPoint *))(callback_ZNK13QRasterWindow10redirectedEP6QPoint_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QRasterWindow::redirected(arg0);
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN26QStyleOptionTabWidgetFrameC1Ei(void*cbfn)
-// { callback_ZN26QStyleOptionTabWidgetFrameC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTabWidgetFrame : public QStyleOptionTabWidgetFrame {
 public:

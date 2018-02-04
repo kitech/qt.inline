@@ -9,72 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void*cbfn)
-// { callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr = cbfn; }
-// void* callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE(void*cbfn)
-// { callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr = cbfn; }
-// void* callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsTextItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsTextItem : public QGraphicsTextItem {
 public:
@@ -91,10 +25,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN17QGraphicsTextItem10sceneEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGraphicsTextItem::sceneEvent(event);
   }
   }
@@ -105,10 +35,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::mousePressEvent(event);
   }
   }
@@ -119,10 +45,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::mouseMoveEvent(event);
   }
   }
@@ -133,10 +55,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::mouseReleaseEvent(event);
   }
   }
@@ -147,10 +65,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneMouseEvent *))(callback_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::mouseDoubleClickEvent(event);
   }
   }
@@ -161,10 +75,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneContextMenuEvent *))(callback_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::contextMenuEvent(event);
   }
   }
@@ -175,10 +85,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::keyPressEvent(event);
   }
   }
@@ -189,10 +95,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::keyReleaseEvent(event);
   }
   }
@@ -203,10 +105,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::focusInEvent(event);
   }
   }
@@ -217,10 +115,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::focusOutEvent(event);
   }
   }
@@ -231,10 +125,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::dragEnterEvent(event);
   }
   }
@@ -245,10 +135,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::dragLeaveEvent(event);
   }
   }
@@ -259,10 +145,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::dragMoveEvent(event);
   }
   }
@@ -273,10 +155,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneDragDropEvent *))(callback_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::dropEvent(event);
   }
   }
@@ -287,10 +165,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::inputMethodEvent(event);
   }
   }
@@ -301,10 +175,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::hoverEnterEvent(event);
   }
   }
@@ -315,10 +185,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::hoverMoveEvent(event);
   }
   }
@@ -329,10 +195,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsSceneHoverEvent *))(callback_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsTextItem::hoverLeaveEvent(event);
   }
   }
@@ -344,10 +206,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , Qt::InputMethodQuery))(callback_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , query);
-    // }
     return QGraphicsTextItem::inputMethodQuery(query);
   }
   }
@@ -359,10 +217,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsTextItem::supportsExtension(extension);
   }
   }
@@ -373,10 +227,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsTextItem::setExtension(extension, variant);
   }
   }
@@ -388,10 +238,6 @@ MyQGraphicsTextItem(const QString & text, QGraphicsItem * parent) : QGraphicsTex
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsTextItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsTextItem::extension(variant);
   }
   }

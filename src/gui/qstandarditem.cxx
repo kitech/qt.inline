@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QStandardItem15emitDataChangedEv_fnptr = 0;
-// extern "C" void set_callback_ZN13QStandardItem15emitDataChangedEv(void*cbfn)
-// { callback_ZN13QStandardItem15emitDataChangedEv_fnptr = cbfn; }
 
 class MyQStandardItem : public QStandardItem {
 public:
@@ -31,10 +28,6 @@ MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN13QStandardItem15emitDataChangedEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QStandardItem::emitDataChanged();
   }
   }

@@ -9,36 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea13setupViewportEP7QWidget(void*cbfn)
-// { callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea5eventEP6QEvent(void*cbfn)
-// { callback_ZN8QMdiArea5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea10childEventEP11QChildEvent(void*cbfn)
-// { callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea13viewportEventEP6QEvent(void*cbfn)
-// { callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMdiArea16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN8QMdiArea16scrollContentsByEii(void*cbfn)
-// { callback_ZN8QMdiArea16scrollContentsByEii_fnptr = cbfn; }
 
 class MyQMdiArea : public QMdiArea {
 public:
@@ -52,10 +22,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN8QMdiArea13setupViewportEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , viewport);
-    // }
     QMdiArea::setupViewport(viewport);
   }
   }
@@ -67,10 +33,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QMdiArea::event(event);
   }
   }
@@ -82,10 +44,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , object, event);
-    // }
     return QMdiArea::eventFilter(object, event);
   }
   }
@@ -96,10 +54,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMdiArea10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , paintEvent);
-    // }
     QMdiArea::paintEvent(paintEvent);
   }
   }
@@ -110,10 +64,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN8QMdiArea10childEventEP11QChildEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , childEvent);
-    // }
     QMdiArea::childEvent(childEvent);
   }
   }
@@ -124,10 +74,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMdiArea11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , resizeEvent);
-    // }
     QMdiArea::resizeEvent(resizeEvent);
   }
   }
@@ -138,10 +84,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMdiArea10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , timerEvent);
-    // }
     QMdiArea::timerEvent(timerEvent);
   }
   }
@@ -152,10 +94,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QMdiArea9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , showEvent);
-    // }
     QMdiArea::showEvent(showEvent);
   }
   }
@@ -167,10 +105,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMdiArea13viewportEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QMdiArea::viewportEvent(event);
   }
   }
@@ -181,10 +115,6 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN8QMdiArea16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QMdiArea::scrollContentsBy(dx, dy);
   }
   }

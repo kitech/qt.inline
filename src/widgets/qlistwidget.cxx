@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QListWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QListWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QListWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
-// extern "C" void set_callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
-// { callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
-// void* callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QListWidget20supportedDropActionsEv(void*cbfn)
-// { callback_ZNK11QListWidget20supportedDropActionsEv_fnptr = cbfn; }
-// void* callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = 0;
-// extern "C" void set_callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem(void*cbfn)
-// { callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr = cbfn; }
-// void* callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex(void*cbfn)
-// { callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
 
 class MyQListWidget : public QListWidget {
 public:
@@ -38,10 +23,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QListWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QListWidget::event(e);
   }
   }
@@ -53,10 +34,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , int, const QMimeData *, Qt::DropAction))(callback_ZN11QListWidget12dropMimeDataEiPK9QMimeDataN2Qt10DropActionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , index, data, action);
-    // }
     return QListWidget::dropMimeData(index, data, action);
   }
   }
@@ -68,10 +45,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
     } else {
-    // auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK11QListWidget20supportedDropActionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QListWidget::supportedDropActions();
   }
   }
@@ -83,10 +56,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QListWidgetItem *))(callback_ZNK11QListWidget13indexFromItemEP15QListWidgetItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , item);
-    // }
     return QListWidget::indexFromItem(item);
   }
   }
@@ -98,10 +67,6 @@ MyQListWidget(QWidget * parent) : QListWidget(parent) {}
     return (QListWidgetItem *)(irv);
       // PointerPointerQListWidgetItem *
     } else {
-    // auto fnptr = ((QListWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK11QListWidget13itemFromIndexERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QListWidget::itemFromIndex(index);
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QStyleOptionTabC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN15QStyleOptionTabC1Ei(void*cbfn)
-// { callback_ZN15QStyleOptionTabC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTab : public QStyleOptionTab {
 public:

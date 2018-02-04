@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = 0;
-// extern "C" void set_callback_ZN19QAbstractProxyModel17resetInternalDataEv(void*cbfn)
-// { callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr = cbfn; }
 
 class MyQAbstractProxyModel : public QAbstractProxyModel {
 public:
@@ -25,10 +22,6 @@ MyQAbstractProxyModel(QObject * parent) : QAbstractProxyModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN19QAbstractProxyModel17resetInternalDataEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QAbstractProxyModel::resetInternalData();
   }
   }

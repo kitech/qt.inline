@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// void* callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE(void*cbfn)
-// { callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr = cbfn; }
 
 class MyQPixmap : public QPixmap {
 public:
@@ -37,10 +31,6 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK7QPixmap6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QPixmap::metric(arg0);
   }
   }
@@ -52,10 +42,6 @@ MyQPixmap(char** xpm) : QPixmap(xpm) {}
     return *(QPixmap*)(irv);
       // RecordRecordQPixmap
     } else {
-    // auto fnptr = ((QPixmap (*)(void* , QImage*, QFlags<Qt::ImageConversionFlag>))(callback_ZN7QPixmap16fromImageInPlaceER6QImage6QFlagsIN2Qt19ImageConversionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QImage*)&image, flags);
-    // }
     return QPixmap::fromImageInPlace(image, flags);
   }
   }

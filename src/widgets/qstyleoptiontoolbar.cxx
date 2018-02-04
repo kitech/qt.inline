@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QStyleOptionToolBarC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN19QStyleOptionToolBarC1Ei(void*cbfn)
-// { callback_ZN19QStyleOptionToolBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionToolBar : public QStyleOptionToolBar {
 public:

@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN24QAbstractOpenGLFunctionsC1Ev(void*cbfn)
-// { callback_ZN24QAbstractOpenGLFunctionsC1Ev_fnptr = cbfn; }
-// void* callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = 0;
-// extern "C" void set_callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv(void*cbfn)
-// { callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr = cbfn; }
 
 class MyQAbstractOpenGLFunctions : public QAbstractOpenGLFunctions {
 public:
@@ -29,10 +23,6 @@ MyQAbstractOpenGLFunctions() : QAbstractOpenGLFunctions() {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* ))(callback_ZNK24QAbstractOpenGLFunctions13isInitializedEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractOpenGLFunctions::isInitialized();
   }
   }

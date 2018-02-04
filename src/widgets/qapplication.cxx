@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN12QApplication5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QApplication5eventEP6QEvent(void*cbfn)
-// { callback_ZN12QApplication5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQApplication : public QApplication {
 public:
@@ -26,10 +23,6 @@ MyQApplication(int & argc, char** argv, int arg2) : QApplication(argc, argv, arg
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QApplication5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QApplication::event(arg0);
   }
   }

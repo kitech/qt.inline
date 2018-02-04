@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = 0;
-// extern "C" void set_callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod(void*cbfn)
-// { callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr = cbfn; }
-// void* callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = 0;
-// extern "C" void set_callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv(void*cbfn)
-// { callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr = cbfn; }
-// void* callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = 0;
-// extern "C" void set_callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb(void*cbfn)
-// { callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr = cbfn; }
 
 class MyQFutureWatcherBase : public QFutureWatcherBase {
 public:
@@ -34,10 +22,6 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase13connectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&signal);
-    // }
     QFutureWatcherBase::connectNotify(signal);
   }
   }
@@ -48,10 +32,6 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMetaMethod*))(callback_ZN18QFutureWatcherBase16disconnectNotifyERK11QMetaMethod_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QMetaMethod*)&signal);
-    // }
     QFutureWatcherBase::disconnectNotify(signal);
   }
   }
@@ -62,10 +42,6 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN18QFutureWatcherBase22connectOutputInterfaceEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QFutureWatcherBase::connectOutputInterface();
   }
   }
@@ -76,10 +52,6 @@ MyQFutureWatcherBase(QObject * parent) : QFutureWatcherBase(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , bool))(callback_ZN18QFutureWatcherBase25disconnectOutputInterfaceEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , pendingAssignment);
-    // }
     QFutureWatcherBase::disconnectOutputInterface(pendingAssignment);
   }
   }

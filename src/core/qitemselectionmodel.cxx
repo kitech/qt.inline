@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = 0;
-// extern "C" void set_callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2_(void*cbfn)
-// { callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
 
 class MyQItemSelectionModel : public QItemSelectionModel {
 public:
@@ -27,10 +24,6 @@ MyQItemSelectionModel(QAbstractItemModel * model, QObject * parent) : QItemSelec
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN19QItemSelectionModel20emitSelectionChangedERK14QItemSelectionS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&newSelection, (QItemSelection*)&oldSelection);
-    // }
     QItemSelectionModel::emitSelectionChanged(newSelection, oldSelection);
   }
   }

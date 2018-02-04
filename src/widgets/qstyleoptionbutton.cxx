@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QStyleOptionButtonC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN18QStyleOptionButtonC1Ei(void*cbfn)
-// { callback_ZN18QStyleOptionButtonC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionButton : public QStyleOptionButton {
 public:

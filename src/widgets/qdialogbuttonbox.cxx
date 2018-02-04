@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QDialogButtonBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QDialogButtonBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN16QDialogButtonBox11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN16QDialogButtonBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QDialogButtonBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN16QDialogButtonBox5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQDialogButtonBox : public QDialogButtonBox {
 public:
@@ -34,10 +28,6 @@ MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orienta
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN16QDialogButtonBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QDialogButtonBox::changeEvent(event);
   }
   }
@@ -49,10 +39,6 @@ MyQDialogButtonBox(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orienta
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QDialogButtonBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QDialogButtonBox::event(event);
   }
   }

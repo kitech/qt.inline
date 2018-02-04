@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QTextObjectC1EP13QTextDocument_fnptr = 0;
-// extern "C" void set_callback_ZN11QTextObjectC1EP13QTextDocument(void*cbfn)
-// { callback_ZN11QTextObjectC1EP13QTextDocument_fnptr = cbfn; }
-// void* callback_ZN11QTextObjectD1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN11QTextObjectD1Ev(void*cbfn)
-// { callback_ZN11QTextObjectD1Ev_fnptr = cbfn; }
-// void* callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN11QTextObject9setFormatERK11QTextFormat(void*cbfn)
-// { callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextObject : public QTextObject {
 public:
@@ -32,10 +23,6 @@ MyQTextObject(QTextDocument * doc) : QTextObject(doc) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextFormat*))(callback_ZN11QTextObject9setFormatERK11QTextFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextFormat*)&format);
-    // }
     QTextObject::setFormat(format);
   }
   }

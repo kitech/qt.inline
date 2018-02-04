@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsSimpleTextItem : public QGraphicsSimpleTextItem {
 public:
@@ -34,10 +25,6 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK23QGraphicsSimpleTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsSimpleTextItem::supportsExtension(extension);
   }
   }
@@ -48,10 +35,6 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN23QGraphicsSimpleTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsSimpleTextItem::setExtension(extension, variant);
   }
   }
@@ -63,10 +46,6 @@ MyQGraphicsSimpleTextItem(const QString & text, QGraphicsItem * parent) : QGraph
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsSimpleTextItem::extension(variant);
   }
   }

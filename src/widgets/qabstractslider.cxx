@@ -9,30 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QAbstractSlider5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QAbstractSlider5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii(void*cbfn)
-// { callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii_fnptr = cbfn; }
-// void* callback_ZNK15QAbstractSlider12repeatActionEv_fnptr = 0;
-// extern "C" void set_callback_ZNK15QAbstractSlider12repeatActionEv(void*cbfn)
-// { callback_ZNK15QAbstractSlider12repeatActionEv_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE(void*cbfn)
-// { callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN15QAbstractSlider11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QAbstractSlider11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN15QAbstractSlider11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQAbstractSlider : public QAbstractSlider {
 public:
@@ -47,10 +23,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QAbstractSlider5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QAbstractSlider::event(e);
   }
   }
@@ -61,10 +33,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractSlider::SliderAction, int, int))(callback_ZN15QAbstractSlider15setRepeatActionENS_12SliderActionEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , action, thresholdTime, repeatTime);
-    // }
     QAbstractSlider::setRepeatAction(action, thresholdTime, repeatTime);
   }
   }
@@ -76,10 +44,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     return (QAbstractSlider::SliderAction)(int)(irv);
       // EnumEnumQAbstractSlider::SliderAction
     } else {
-    // auto fnptr = ((QAbstractSlider::SliderAction (*)(void* ))(callback_ZNK15QAbstractSlider12repeatActionEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QAbstractSlider::repeatAction();
   }
   }
@@ -90,10 +54,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractSlider::SliderChange))(callback_ZN15QAbstractSlider12sliderChangeENS_12SliderChangeE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , change);
-    // }
     QAbstractSlider::sliderChange(change);
   }
   }
@@ -104,10 +64,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN15QAbstractSlider13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QAbstractSlider::keyPressEvent(ev);
   }
   }
@@ -118,10 +74,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN15QAbstractSlider10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QAbstractSlider::timerEvent(arg0);
   }
   }
@@ -132,10 +84,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN15QAbstractSlider10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractSlider::wheelEvent(e);
   }
   }
@@ -146,10 +94,6 @@ MyQAbstractSlider(QWidget * parent) : QAbstractSlider(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN15QAbstractSlider11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QAbstractSlider::changeEvent(e);
   }
   }

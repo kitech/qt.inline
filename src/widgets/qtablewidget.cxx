@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN12QTableWidget5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QTableWidget5eventEP6QEvent(void*cbfn)
-// { callback_ZN12QTableWidget5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE_fnptr = 0;
-// extern "C" void set_callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE(void*cbfn)
-// { callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE_fnptr = cbfn; }
-// void* callback_ZNK12QTableWidget20supportedDropActionsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK12QTableWidget20supportedDropActionsEv(void*cbfn)
-// { callback_ZNK12QTableWidget20supportedDropActionsEv_fnptr = cbfn; }
-// void* callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem_fnptr = 0;
-// extern "C" void set_callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem(void*cbfn)
-// { callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem_fnptr = cbfn; }
-// void* callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex(void*cbfn)
-// { callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN12QTableWidget9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN12QTableWidget9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN12QTableWidget9dropEventEP10QDropEvent_fnptr = cbfn; }
 
 class MyQTableWidget : public QTableWidget {
 public:
@@ -43,10 +25,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN12QTableWidget5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QTableWidget::event(e);
   }
   }
@@ -58,10 +36,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , int, int, const QMimeData *, Qt::DropAction))(callback_ZN12QTableWidget12dropMimeDataEiiPK9QMimeDataN2Qt10DropActionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, column, data, action);
-    // }
     return QTableWidget::dropMimeData(row, column, data, action);
   }
   }
@@ -73,10 +47,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return (Qt::DropActions)(int)(irv);
       // ElaboratedRecordQFlags<Qt::DropAction>
     } else {
-    // auto fnptr = ((Qt::DropActions (*)(void* ))(callback_ZNK12QTableWidget20supportedDropActionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTableWidget::supportedDropActions();
   }
   }
@@ -88,10 +58,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QTableWidgetItem *))(callback_ZNK12QTableWidget13indexFromItemEP16QTableWidgetItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , item);
-    // }
     return QTableWidget::indexFromItem(item);
   }
   }
@@ -103,10 +69,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     return (QTableWidgetItem *)(irv);
       // PointerPointerQTableWidgetItem *
     } else {
-    // auto fnptr = ((QTableWidgetItem * (*)(void* , QModelIndex*))(callback_ZNK12QTableWidget13itemFromIndexERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QTableWidget::itemFromIndex(index);
   }
   }
@@ -117,10 +79,6 @@ MyQTableWidget(int rows, int columns, QWidget * parent) : QTableWidget(rows, col
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN12QTableWidget9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QTableWidget::dropEvent(event);
   }
   }

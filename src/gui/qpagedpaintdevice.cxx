@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
-// extern "C" void set_callback_ZNK17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-// { callback_ZNK17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
-// void* callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = 0;
-// extern "C" void set_callback_ZN17QPagedPaintDevice16devicePageLayoutEv(void*cbfn)
-// { callback_ZN17QPagedPaintDevice16devicePageLayoutEv_fnptr = cbfn; }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagedpaintdevice.h:58

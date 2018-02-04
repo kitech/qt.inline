@@ -9,96 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QHeaderView13updateSectionEi_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView13updateSectionEi(void*cbfn)
-// { callback_ZN11QHeaderView13updateSectionEi_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView14resizeSectionsEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView14resizeSectionsEv(void*cbfn)
-// { callback_ZN11QHeaderView14resizeSectionsEv_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii(void*cbfn)
-// { callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii(void*cbfn)
-// { callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView10initializeEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView10initializeEv(void*cbfn)
-// { callback_ZN11QHeaderView10initializeEv_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView18initializeSectionsEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEv(void*cbfn)
-// { callback_ZN11QHeaderView18initializeSectionsEv_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView18initializeSectionsEii_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView18initializeSectionsEii(void*cbfn)
-// { callback_ZN11QHeaderView18initializeSectionsEii_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2_(void*cbfn)
-// { callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
-// void* callback_ZN11QHeaderView5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QHeaderView5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView13viewportEventEP6QEvent(void*cbfn)
-// { callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti(void*cbfn)
-// { callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView23sectionSizeFromContentsEi(void*cbfn)
-// { callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView16horizontalOffsetEv(void*cbfn)
-// { callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView14verticalOffsetEv(void*cbfn)
-// { callback_ZNK11QHeaderView14verticalOffsetEv_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView16updateGeometriesEv_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView16updateGeometriesEv(void*cbfn)
-// { callback_ZN11QHeaderView16updateGeometriesEv_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView16scrollContentsByEii(void*cbfn)
-// { callback_ZN11QHeaderView16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii(void*cbfn)
-// { callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView10visualRectERK11QModelIndex(void*cbfn)
-// { callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE(void*cbfn)
-// { callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView7indexAtERK6QPoint(void*cbfn)
-// { callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex(void*cbfn)
-// { callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
-// { callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
-// void* callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-// { callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-// { callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// void* callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = 0;
-// extern "C" void set_callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader(void*cbfn)
-// { callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr = cbfn; }
 
 class MyQHeaderView : public QHeaderView {
 public:
@@ -112,10 +22,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN11QHeaderView13updateSectionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , logicalIndex);
-    // }
     QHeaderView::updateSection(logicalIndex);
   }
   }
@@ -126,10 +32,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView14resizeSectionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QHeaderView::resizeSections();
   }
   }
@@ -140,10 +42,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView16sectionsInsertedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
-    // }
     QHeaderView::sectionsInserted(parent, logicalFirst, logicalLast);
   }
   }
@@ -154,10 +52,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView24sectionsAboutToBeRemovedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, logicalFirst, logicalLast);
-    // }
     QHeaderView::sectionsAboutToBeRemoved(parent, logicalFirst, logicalLast);
   }
   }
@@ -168,10 +62,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView10initializeEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QHeaderView::initialize();
   }
   }
@@ -182,10 +72,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView18initializeSectionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QHeaderView::initializeSections();
   }
   }
@@ -196,10 +82,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView18initializeSectionsEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , start, end);
-    // }
     QHeaderView::initializeSections(start, end);
   }
   }
@@ -210,10 +92,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN11QHeaderView14currentChangedERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&old);
-    // }
     QHeaderView::currentChanged(current, old);
   }
   }
@@ -225,10 +103,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QHeaderView::event(e);
   }
   }
@@ -239,10 +113,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QHeaderView10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QHeaderView::paintEvent(e);
   }
   }
@@ -253,10 +123,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QHeaderView::mousePressEvent(e);
   }
   }
@@ -267,10 +133,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QHeaderView::mouseMoveEvent(e);
   }
   }
@@ -281,10 +143,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QHeaderView::mouseReleaseEvent(e);
   }
   }
@@ -295,10 +153,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN11QHeaderView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QHeaderView::mouseDoubleClickEvent(e);
   }
   }
@@ -310,10 +164,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QHeaderView13viewportEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QHeaderView::viewportEvent(e);
   }
   }
@@ -324,10 +174,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QRect*, int))(callback_ZNK11QHeaderView12paintSectionEP8QPainterRK5QRecti_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRect*)&rect, logicalIndex);
-    // }
     QHeaderView::paintSection(painter, rect, logicalIndex);
   }
   }
@@ -339,10 +185,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* , int))(callback_ZNK11QHeaderView23sectionSizeFromContentsEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , logicalIndex);
-    // }
     return QHeaderView::sectionSizeFromContents(logicalIndex);
   }
   }
@@ -354,10 +196,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView16horizontalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QHeaderView::horizontalOffset();
   }
   }
@@ -369,10 +207,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QHeaderView14verticalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QHeaderView::verticalOffset();
   }
   }
@@ -383,10 +217,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN11QHeaderView16updateGeometriesEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QHeaderView::updateGeometries();
   }
   }
@@ -397,10 +227,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QHeaderView16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QHeaderView::scrollContentsBy(dx, dy);
   }
   }
@@ -411,10 +237,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QHeaderView12rowsInsertedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, start, end);
-    // }
     QHeaderView::rowsInserted(parent, start, end);
   }
   }
@@ -426,10 +248,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return *(QRect*)(irv);
       // RecordRecordQRect
     } else {
-    // auto fnptr = ((QRect (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView10visualRectERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QHeaderView::visualRect(index);
   }
   }
@@ -440,10 +258,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QAbstractItemView::ScrollHint))(callback_ZN11QHeaderView8scrollToERK11QModelIndexN17QAbstractItemView10ScrollHintE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index, hint);
-    // }
     QHeaderView::scrollTo(index, hint);
   }
   }
@@ -455,10 +269,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QPoint*))(callback_ZNK11QHeaderView7indexAtERK6QPoint_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPoint*)&p);
-    // }
     return QHeaderView::indexAt(p);
   }
   }
@@ -470,10 +280,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK11QHeaderView13isIndexHiddenERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QHeaderView::isIndexHidden(index);
   }
   }
@@ -485,10 +291,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, Qt::KeyboardModifiers))(callback_ZN11QHeaderView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QHeaderView::moveCursor(arg0, arg1);
   }
   }
@@ -499,10 +301,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN11QHeaderView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QRect*)&rect, flags);
-    // }
     QHeaderView::setSelection(rect, flags);
   }
   }
@@ -514,10 +312,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     return *(QRegion*)(irv);
       // RecordRecordQRegion
     } else {
-    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK11QHeaderView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selection);
-    // }
     return QHeaderView::visualRegionForSelection(selection);
   }
   }
@@ -528,10 +322,6 @@ MyQHeaderView(Qt::Orientation orientation, QWidget * parent) : QHeaderView(orien
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionHeader *))(callback_ZNK11QHeaderView15initStyleOptionEP18QStyleOptionHeader_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QHeaderView::initStyleOption(option);
   }
   }

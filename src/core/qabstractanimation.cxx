@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractAnimation5eventEP6QEvent(void*cbfn)
-// { callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractAnimation17updateCurrentTimeEi(void*cbfn)
-// { callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr = cbfn; }
-// void* callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractAnimation11updateStateENS_5StateES0_(void*cbfn)
-// { callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr = cbfn; }
-// void* callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr = 0;
-// extern "C" void set_callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE(void*cbfn)
-// { callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr = cbfn; }
 
 class MyQAbstractAnimation : public QAbstractAnimation {
 public:
@@ -35,10 +23,6 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QAbstractAnimation5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QAbstractAnimation::event(event);
   }
   }
@@ -49,10 +33,6 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN18QAbstractAnimation17updateCurrentTimeEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , currentTime);
-    // }
     QAbstractAnimation::updateCurrentTime(currentTime);
   }
   }
@@ -63,10 +43,6 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QAbstractAnimation11updateStateENS_5StateES0__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , newState, oldState);
-    // }
     QAbstractAnimation::updateState(newState, oldState);
   }
   }
@@ -77,10 +53,6 @@ MyQAbstractAnimation(QObject * parent) : QAbstractAnimation(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::Direction))(callback_ZN18QAbstractAnimation15updateDirectionENS_9DirectionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , direction);
-    // }
     QAbstractAnimation::updateDirection(direction);
   }
   }

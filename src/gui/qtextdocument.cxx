@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN13QTextDocument12createObjectERK11QTextFormat(void*cbfn)
-// { callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr = cbfn; }
-// void* callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = 0;
-// extern "C" void set_callback_ZN13QTextDocument12loadResourceEiRK4QUrl(void*cbfn)
-// { callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr = cbfn; }
 
 class MyQTextDocument : public QTextDocument {
 public:
@@ -31,10 +25,6 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
     return (QTextObject *)(irv);
       // PointerPointerQTextObject *
     } else {
-    // auto fnptr = ((QTextObject * (*)(void* , QTextFormat*))(callback_ZN13QTextDocument12createObjectERK11QTextFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextFormat*)&f);
-    // }
     return QTextDocument::createObject(f);
   }
   }
@@ -46,10 +36,6 @@ MyQTextDocument(const QString & text, QObject * parent) : QTextDocument(text, pa
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , int, QUrl*))(callback_ZN13QTextDocument12loadResourceEiRK4QUrl_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , type, (QUrl*)&name);
-    // }
     return QTextDocument::loadResource(type, name);
   }
   }

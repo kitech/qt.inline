@@ -9,84 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QGraphicsView13setupViewportEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView13setupViewportEP7QWidget(void*cbfn)
-// { callback_ZN13QGraphicsView13setupViewportEP7QWidget_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QGraphicsView5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView13viewportEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView13viewportEventEP6QEvent(void*cbfn)
-// { callback_ZN13QGraphicsView13viewportEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-// { callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-// { callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-// { callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN13QGraphicsView9dropEventEP10QDropEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN13QGraphicsView18focusNextPrevChildEb_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN13QGraphicsView10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView16scrollContentsByEii(void*cbfn)
-// { callback_ZN13QGraphicsView16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN13QGraphicsView9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-// { callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF(void*cbfn)
-// { callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF(void*cbfn)
-// { callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF_fnptr = cbfn; }
-// void* callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem_fnptr = 0;
-// extern "C" void set_callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem(void*cbfn)
-// { callback_ZN13QGraphicsView9drawItemsEP8QPainteriPP13QGraphicsItemPK24QStyleOptionGraphicsItem_fnptr = cbfn; }
 
 class MyQGraphicsView : public QGraphicsView {
 public:
@@ -102,10 +24,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN13QGraphicsView13setupViewportEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , widget);
-    // }
     QGraphicsView::setupViewport(widget);
   }
   }
@@ -117,10 +35,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QGraphicsView5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGraphicsView::event(event);
   }
   }
@@ -132,10 +46,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QGraphicsView13viewportEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QGraphicsView::viewportEvent(event);
   }
   }
@@ -146,10 +56,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN13QGraphicsView16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::contextMenuEvent(event);
   }
   }
@@ -160,10 +66,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN13QGraphicsView14dragEnterEventEP15QDragEnterEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::dragEnterEvent(event);
   }
   }
@@ -174,10 +76,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN13QGraphicsView14dragLeaveEventEP15QDragLeaveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::dragLeaveEvent(event);
   }
   }
@@ -188,10 +86,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN13QGraphicsView13dragMoveEventEP14QDragMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::dragMoveEvent(event);
   }
   }
@@ -202,10 +96,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN13QGraphicsView9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::dropEvent(event);
   }
   }
@@ -216,10 +106,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QGraphicsView12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::focusInEvent(event);
   }
   }
@@ -231,10 +117,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN13QGraphicsView18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QGraphicsView::focusNextPrevChild(next);
   }
   }
@@ -245,10 +127,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QGraphicsView13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::focusOutEvent(event);
   }
   }
@@ -259,10 +137,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QGraphicsView13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::keyPressEvent(event);
   }
   }
@@ -273,10 +147,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QGraphicsView15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::keyReleaseEvent(event);
   }
   }
@@ -287,10 +157,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QGraphicsView21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::mouseDoubleClickEvent(event);
   }
   }
@@ -301,10 +167,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QGraphicsView15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::mousePressEvent(event);
   }
   }
@@ -315,10 +177,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QGraphicsView14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::mouseMoveEvent(event);
   }
   }
@@ -329,10 +187,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QGraphicsView17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::mouseReleaseEvent(event);
   }
   }
@@ -343,10 +197,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN13QGraphicsView10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::wheelEvent(event);
   }
   }
@@ -357,10 +207,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QGraphicsView10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::paintEvent(event);
   }
   }
@@ -371,10 +217,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN13QGraphicsView11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::resizeEvent(event);
   }
   }
@@ -385,10 +227,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN13QGraphicsView16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QGraphicsView::scrollContentsBy(dx, dy);
   }
   }
@@ -399,10 +237,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN13QGraphicsView9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::showEvent(event);
   }
   }
@@ -413,10 +247,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN13QGraphicsView16inputMethodEventEP17QInputMethodEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QGraphicsView::inputMethodEvent(event);
   }
   }
@@ -427,10 +257,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QRectF*))(callback_ZN13QGraphicsView14drawBackgroundEP8QPainterRK6QRectF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRectF*)&rect);
-    // }
     QGraphicsView::drawBackground(painter, rect);
   }
   }
@@ -441,10 +267,6 @@ MyQGraphicsView(QGraphicsScene * scene, QWidget * parent) : QGraphicsView(scene,
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QRectF*))(callback_ZN13QGraphicsView14drawForegroundEP8QPainterRK6QRectF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRectF*)&rect);
-    // }
     QGraphicsView::drawForeground(painter, rect);
   }
   }

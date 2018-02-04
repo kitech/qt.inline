@@ -9,39 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN6QLabel5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel5eventEP6QEvent(void*cbfn)
-// { callback_ZN6QLabel5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN6QLabel13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN6QLabel10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN6QLabel11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN6QLabel15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN6QLabel14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN6QLabel17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN6QLabel16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN6QLabel12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN6QLabel13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN6QLabel18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN6QLabel18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN6QLabel18focusNextPrevChildEb_fnptr = cbfn; }
 
 class MyQLabel : public QLabel {
 public:
@@ -58,10 +25,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN6QLabel5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QLabel::event(e);
   }
   }
@@ -72,10 +35,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN6QLabel13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::keyPressEvent(ev);
   }
   }
@@ -86,10 +45,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN6QLabel10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QLabel::paintEvent(arg0);
   }
   }
@@ -100,10 +55,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QLabel11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QLabel::changeEvent(arg0);
   }
   }
@@ -114,10 +65,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN6QLabel15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::mousePressEvent(ev);
   }
   }
@@ -128,10 +75,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN6QLabel14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::mouseMoveEvent(ev);
   }
   }
@@ -142,10 +85,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN6QLabel17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::mouseReleaseEvent(ev);
   }
   }
@@ -156,10 +95,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN6QLabel16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::contextMenuEvent(ev);
   }
   }
@@ -170,10 +105,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN6QLabel12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::focusInEvent(ev);
   }
   }
@@ -184,10 +115,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN6QLabel13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ev);
-    // }
     QLabel::focusOutEvent(ev);
   }
   }
@@ -199,10 +126,6 @@ MyQLabel(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f) : QLa
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN6QLabel18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QLabel::focusNextPrevChild(next);
   }
   }

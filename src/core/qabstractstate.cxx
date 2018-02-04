@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN14QAbstractStateC1EP6QState_fnptr = 0;
-// extern "C" void set_callback_ZN14QAbstractStateC1EP6QState(void*cbfn)
-// { callback_ZN14QAbstractStateC1EP6QState_fnptr = cbfn; }
-// void* callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN14QAbstractState7onEntryEP6QEvent(void*cbfn)
-// { callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN14QAbstractState6onExitEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN14QAbstractState6onExitEP6QEvent(void*cbfn)
-// { callback_ZN14QAbstractState6onExitEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN14QAbstractState5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN14QAbstractState5eventEP6QEvent(void*cbfn)
-// { callback_ZN14QAbstractState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAbstractState : public QAbstractState {
 public:
@@ -34,10 +22,6 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN14QAbstractState7onEntryEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractState::onEntry(event);
   }
   }
@@ -48,10 +32,6 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN14QAbstractState6onExitEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QAbstractState::onExit(event);
   }
   }
@@ -63,10 +43,6 @@ MyQAbstractState(QState * parent) : QAbstractState(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN14QAbstractState5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QAbstractState::event(e);
   }
   }

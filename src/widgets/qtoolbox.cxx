@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QToolBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QToolBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN8QToolBox5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QToolBox12itemInsertedEi_fnptr = 0;
-// extern "C" void set_callback_ZN8QToolBox12itemInsertedEi(void*cbfn)
-// { callback_ZN8QToolBox12itemInsertedEi_fnptr = cbfn; }
-// void* callback_ZN8QToolBox11itemRemovedEi_fnptr = 0;
-// extern "C" void set_callback_ZN8QToolBox11itemRemovedEi(void*cbfn)
-// { callback_ZN8QToolBox11itemRemovedEi_fnptr = cbfn; }
-// void* callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QToolBox9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QToolBox11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN8QToolBox11changeEventEP6QEvent_fnptr = cbfn; }
 
 class MyQToolBox : public QToolBox {
 public:
@@ -38,10 +23,6 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QToolBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QToolBox::event(e);
   }
   }
@@ -52,10 +33,6 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox12itemInsertedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , index);
-    // }
     QToolBox::itemInserted(index);
   }
   }
@@ -66,10 +43,6 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN8QToolBox11itemRemovedEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , index);
-    // }
     QToolBox::itemRemoved(index);
   }
   }
@@ -80,10 +53,6 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN8QToolBox9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QToolBox::showEvent(e);
   }
   }
@@ -94,10 +63,6 @@ MyQToolBox(QWidget * parent, QFlags<Qt::WindowType> f) : QToolBox(parent, f) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QToolBox11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QToolBox::changeEvent(arg0);
   }
   }

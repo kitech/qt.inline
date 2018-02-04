@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QWizard5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard5eventEP6QEvent(void*cbfn)
-// { callback_ZN7QWizard5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN7QWizard4doneEi_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard4doneEi(void*cbfn)
-// { callback_ZN7QWizard4doneEi_fnptr = cbfn; }
-// void* callback_ZN7QWizard14initializePageEi_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard14initializePageEi(void*cbfn)
-// { callback_ZN7QWizard14initializePageEi_fnptr = cbfn; }
-// void* callback_ZN7QWizard11cleanupPageEi_fnptr = 0;
-// extern "C" void set_callback_ZN7QWizard11cleanupPageEi(void*cbfn)
-// { callback_ZN7QWizard11cleanupPageEi_fnptr = cbfn; }
 
 class MyQWizard : public QWizard {
 public:
@@ -41,10 +23,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QWizard5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QWizard::event(event);
   }
   }
@@ -55,10 +33,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN7QWizard11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QWizard::resizeEvent(event);
   }
   }
@@ -69,10 +43,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN7QWizard10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QWizard::paintEvent(event);
   }
   }
@@ -83,10 +53,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard4doneEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , result);
-    // }
     QWizard::done(result);
   }
   }
@@ -97,10 +63,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard14initializePageEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , id);
-    // }
     QWizard::initializePage(id);
   }
   }
@@ -111,10 +73,6 @@ MyQWizard(QWidget * parent, QFlags<Qt::WindowType> flags) : QWizard(parent, flag
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN7QWizard11cleanupPageEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , id);
-    // }
     QWizard::cleanupPage(id);
   }
   }

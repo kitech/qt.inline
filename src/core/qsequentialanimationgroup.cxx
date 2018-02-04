@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN25QSequentialAnimationGroup5eventEP6QEvent(void*cbfn)
-// { callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr = 0;
-// extern "C" void set_callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi(void*cbfn)
-// { callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr = cbfn; }
-// void* callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
-// extern "C" void set_callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-// { callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
-// void* callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = 0;
-// extern "C" void set_callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void*cbfn)
-// { callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr = cbfn; }
 
 class MyQSequentialAnimationGroup : public QSequentialAnimationGroup {
 public:
@@ -35,10 +23,6 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN25QSequentialAnimationGroup5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QSequentialAnimationGroup::event(event);
   }
   }
@@ -49,10 +33,6 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN25QSequentialAnimationGroup17updateCurrentTimeEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSequentialAnimationGroup::updateCurrentTime(arg0);
   }
   }
@@ -63,10 +43,6 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN25QSequentialAnimationGroup11updateStateEN18QAbstractAnimation5StateES1__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , newState, oldState);
-    // }
     QSequentialAnimationGroup::updateState(newState, oldState);
   }
   }
@@ -77,10 +53,6 @@ MyQSequentialAnimationGroup(QObject * parent) : QSequentialAnimationGroup(parent
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::Direction))(callback_ZN25QSequentialAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , direction);
-    // }
     QSequentialAnimationGroup::updateDirection(direction);
   }
   }

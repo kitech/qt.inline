@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QPushButton5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QPushButton5eventEP6QEvent(void*cbfn)
-// { callback_ZN11QPushButton5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QPushButton10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QPushButton13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QPushButton12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QPushButton13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = 0;
-// extern "C" void set_callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton(void*cbfn)
-// { callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr = cbfn; }
 
 class MyQPushButton : public QPushButton {
 public:
@@ -45,10 +27,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN11QPushButton5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QPushButton::event(e);
   }
   }
@@ -59,10 +37,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN11QPushButton10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPushButton::paintEvent(arg0);
   }
   }
@@ -73,10 +47,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN11QPushButton13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPushButton::keyPressEvent(arg0);
   }
   }
@@ -87,10 +57,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPushButton::focusInEvent(arg0);
   }
   }
@@ -101,10 +67,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN11QPushButton13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPushButton::focusOutEvent(arg0);
   }
   }
@@ -115,10 +77,6 @@ MyQPushButton(const QIcon & icon, const QString & text, QWidget * parent) : QPus
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionButton *))(callback_ZNK11QPushButton15initStyleOptionEP18QStyleOptionButton_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QPushButton::initStyleOption(option);
   }
   }

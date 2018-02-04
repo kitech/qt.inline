@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
-// void* callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void*cbfn)
-// { callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr = cbfn; }
-// void* callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QPaintDeviceWindow5eventEP6QEvent(void*cbfn)
-// { callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQPaintDeviceWindow : public QPaintDeviceWindow {
 public:
@@ -32,10 +20,6 @@ public:
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QPaintDeviceWindow::paintEvent(event);
   }
   }
@@ -47,10 +31,6 @@ public:
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , metric);
-    // }
     return QPaintDeviceWindow::metric(metric);
   }
   }
@@ -61,10 +41,6 @@ public:
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QExposeEvent *))(callback_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPaintDeviceWindow::exposeEvent(arg0);
   }
   }
@@ -76,10 +52,6 @@ public:
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPaintDeviceWindow5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QPaintDeviceWindow::event(event);
   }
   }

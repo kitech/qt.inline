@@ -9,90 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QTextEdit5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit5eventEP6QEvent(void*cbfn)
-// { callback_ZN9QTextEdit5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit18focusNextPrevChildEb(void*cbfn)
-// { callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent(void*cbfn)
-// { callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent(void*cbfn)
-// { callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent(void*cbfn)
-// { callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit9dropEventEP10QDropEvent(void*cbfn)
-// { callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr = 0;
-// extern "C" void set_callback_ZNK9QTextEdit27createMimeDataFromSelectionEv(void*cbfn)
-// { callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr = cbfn; }
-// void* callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr = 0;
-// extern "C" void set_callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData(void*cbfn)
-// { callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData(void*cbfn)
-// { callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent(void*cbfn)
-// { callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit16scrollContentsByEii(void*cbfn)
-// { callback_ZN9QTextEdit16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor(void*cbfn)
-// { callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr = cbfn; }
-// void* callback_ZN9QTextEdit7zoomInFEf_fnptr = 0;
-// extern "C" void set_callback_ZN9QTextEdit7zoomInFEf(void*cbfn)
-// { callback_ZN9QTextEdit7zoomInFEf_fnptr = cbfn; }
 
 class MyQTextEdit : public QTextEdit {
 public:
@@ -109,10 +25,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QTextEdit5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QTextEdit::event(e);
   }
   }
@@ -123,10 +35,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN9QTextEdit10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::timerEvent(e);
   }
   }
@@ -137,10 +45,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTextEdit13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::keyPressEvent(e);
   }
   }
@@ -151,10 +55,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN9QTextEdit15keyReleaseEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::keyReleaseEvent(e);
   }
   }
@@ -165,10 +65,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN9QTextEdit11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::resizeEvent(e);
   }
   }
@@ -179,10 +75,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QTextEdit10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::paintEvent(e);
   }
   }
@@ -193,10 +85,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::mousePressEvent(e);
   }
   }
@@ -207,10 +95,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::mouseMoveEvent(e);
   }
   }
@@ -221,10 +105,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::mouseReleaseEvent(e);
   }
   }
@@ -235,10 +115,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QTextEdit21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::mouseDoubleClickEvent(e);
   }
   }
@@ -250,10 +126,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , bool))(callback_ZN9QTextEdit18focusNextPrevChildEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , next);
-    // }
     return QTextEdit::focusNextPrevChild(next);
   }
   }
@@ -264,10 +136,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN9QTextEdit16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::contextMenuEvent(e);
   }
   }
@@ -278,10 +146,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragEnterEvent *))(callback_ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::dragEnterEvent(e);
   }
   }
@@ -292,10 +156,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragLeaveEvent *))(callback_ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::dragLeaveEvent(e);
   }
   }
@@ -306,10 +166,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDragMoveEvent *))(callback_ZN9QTextEdit13dragMoveEventEP14QDragMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::dragMoveEvent(e);
   }
   }
@@ -320,10 +176,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QDropEvent *))(callback_ZN9QTextEdit9dropEventEP10QDropEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::dropEvent(e);
   }
   }
@@ -334,10 +186,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QTextEdit12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::focusInEvent(e);
   }
   }
@@ -348,10 +196,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN9QTextEdit13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::focusOutEvent(e);
   }
   }
@@ -362,10 +206,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN9QTextEdit9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTextEdit::showEvent(arg0);
   }
   }
@@ -376,10 +216,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN9QTextEdit11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::changeEvent(e);
   }
   }
@@ -390,10 +226,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN9QTextEdit10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTextEdit::wheelEvent(e);
   }
   }
@@ -405,10 +237,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return (QMimeData *)(irv);
       // PointerPointerQMimeData *
     } else {
-    // auto fnptr = ((QMimeData * (*)(void* ))(callback_ZNK9QTextEdit27createMimeDataFromSelectionEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTextEdit::createMimeDataFromSelection();
   }
   }
@@ -420,10 +248,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , const QMimeData *))(callback_ZNK9QTextEdit21canInsertFromMimeDataEPK9QMimeData_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , source);
-    // }
     return QTextEdit::canInsertFromMimeData(source);
   }
   }
@@ -434,10 +258,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , const QMimeData *))(callback_ZN9QTextEdit18insertFromMimeDataEPK9QMimeData_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , source);
-    // }
     QTextEdit::insertFromMimeData(source);
   }
   }
@@ -448,10 +268,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QInputMethodEvent *))(callback_ZN9QTextEdit16inputMethodEventEP17QInputMethodEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QTextEdit::inputMethodEvent(arg0);
   }
   }
@@ -462,10 +278,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN9QTextEdit16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QTextEdit::scrollContentsBy(dx, dy);
   }
   }
@@ -476,10 +288,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextCursor*))(callback_ZN9QTextEdit15doSetTextCursorERK11QTextCursor_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextCursor*)&cursor);
-    // }
     QTextEdit::doSetTextCursor(cursor);
   }
   }
@@ -490,10 +298,6 @@ MyQTextEdit(const QString & text, QWidget * parent) : QTextEdit(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , float))(callback_ZN9QTextEdit7zoomInFEf_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , range);
-    // }
     QTextEdit::zoomInF(range);
   }
   }

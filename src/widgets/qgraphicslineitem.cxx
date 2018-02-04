@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK17QGraphicsLineItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsLineItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK17QGraphicsLineItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsLineItem : public QGraphicsLineItem {
 public:
@@ -36,10 +27,6 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsLineItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsLineItem::supportsExtension(extension);
   }
   }
@@ -50,10 +37,6 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsLineItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsLineItem::setExtension(extension, variant);
   }
   }
@@ -65,10 +48,6 @@ MyQGraphicsLineItem(qreal x1, qreal y1, qreal x2, qreal y2, QGraphicsItem * pare
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsLineItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsLineItem::extension(variant);
   }
   }

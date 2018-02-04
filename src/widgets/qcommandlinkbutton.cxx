@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QCommandLinkButton8sizeHintEv(void*cbfn)
-// { callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr = cbfn; }
-// void* callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr = 0;
-// extern "C" void set_callback_ZNK18QCommandLinkButton14heightForWidthEi(void*cbfn)
-// { callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr = cbfn; }
-// void* callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr = 0;
-// extern "C" void set_callback_ZNK18QCommandLinkButton15minimumSizeHintEv(void*cbfn)
-// { callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr = cbfn; }
-// void* callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QCommandLinkButton5eventEP6QEvent(void*cbfn)
-// { callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr = cbfn; }
 
 class MyQCommandLinkButton : public QCommandLinkButton {
 public:
@@ -42,10 +27,6 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK18QCommandLinkButton8sizeHintEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QCommandLinkButton::sizeHint();
   }
   }
@@ -57,10 +38,6 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , int))(callback_ZNK18QCommandLinkButton14heightForWidthEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QCommandLinkButton::heightForWidth(arg0);
   }
   }
@@ -72,10 +49,6 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK18QCommandLinkButton15minimumSizeHintEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QCommandLinkButton::minimumSizeHint();
   }
   }
@@ -87,10 +60,6 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QCommandLinkButton5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QCommandLinkButton::event(e);
   }
   }
@@ -101,10 +70,6 @@ MyQCommandLinkButton(const QString & text, const QString & description, QWidget 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN18QCommandLinkButton10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QCommandLinkButton::paintEvent(arg0);
   }
   }

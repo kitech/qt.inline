@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 
 class MyQPicture : public QPicture {
 public:
@@ -26,10 +23,6 @@ MyQPicture(int formatVersion) : QPicture(formatVersion) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , m);
-    // }
     return QPicture::metric(m);
   }
   }

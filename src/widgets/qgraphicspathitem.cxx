@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK17QGraphicsPathItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK17QGraphicsPathItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK17QGraphicsPathItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsPathItem : public QGraphicsPathItem {
 public:
@@ -34,10 +25,6 @@ MyQGraphicsPathItem(const QPainterPath & path, QGraphicsItem * parent) : QGraphi
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK17QGraphicsPathItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsPathItem::supportsExtension(extension);
   }
   }
@@ -48,10 +35,6 @@ MyQGraphicsPathItem(const QPainterPath & path, QGraphicsItem * parent) : QGraphi
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN17QGraphicsPathItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsPathItem::setExtension(extension, variant);
   }
   }
@@ -63,10 +46,6 @@ MyQGraphicsPathItem(const QPainterPath & path, QGraphicsItem * parent) : QGraphi
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK17QGraphicsPathItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsPathItem::extension(variant);
   }
   }

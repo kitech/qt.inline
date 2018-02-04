@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN10QCompleter5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QCompleter5eventEP6QEvent(void*cbfn)
-// { callback_ZN10QCompleter5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQCompleter : public QCompleter {
 public:
@@ -33,10 +27,6 @@ MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(com
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN10QCompleter11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , o, e);
-    // }
     return QCompleter::eventFilter(o, e);
   }
   }
@@ -48,10 +38,6 @@ MyQCompleter(const QStringList & completions, QObject * parent) : QCompleter(com
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QCompleter5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QCompleter::event(arg0);
   }
   }

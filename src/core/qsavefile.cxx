@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QSaveFile9writeDataEPKcx_fnptr = 0;
-// extern "C" void set_callback_ZN9QSaveFile9writeDataEPKcx(void*cbfn)
-// { callback_ZN9QSaveFile9writeDataEPKcx_fnptr = cbfn; }
 
 class MyQSaveFile : public QSaveFile {
 public:
@@ -30,10 +27,6 @@ MyQSaveFile(const QString & name, QObject * parent) : QSaveFile(name, parent) {}
     return (qint64)(irv);
       // TypedefLongLonglong long
     } else {
-    // auto fnptr = ((qint64 (*)(void* , const char *, qint64))(callback_ZN9QSaveFile9writeDataEPKcx_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , data, len);
-    // }
     return QSaveFile::writeData(data, len);
   }
   }

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QSystemTrayIcon5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQSystemTrayIcon : public QSystemTrayIcon {
 public:
@@ -28,10 +25,6 @@ MyQSystemTrayIcon(const QIcon & icon, QObject * parent) : QSystemTrayIcon(icon, 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QSystemTrayIcon5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QSystemTrayIcon::event(event);
   }
   }

@@ -9,48 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString(void*cbfn)
-// { callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap(void*cbfn)
-// { callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect(void*cbfn)
-// { callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE(void*cbfn)
-// { callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
-// { callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b(void*cbfn)
-// { callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi(void*cbfn)
-// { callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi_fnptr = cbfn; }
-// void* callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void*cbfn)
-// { callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem(void*cbfn)
-// { callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant(void*cbfn)
-// { callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb(void*cbfn)
-// { callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant(void*cbfn)
-// { callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString(void*cbfn)
-// { callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString_fnptr = cbfn; }
 
 class MyQItemDelegate : public QItemDelegate {
 public:
@@ -64,10 +22,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QRect*, QString*))(callback_ZNK13QItemDelegate11drawDisplayEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QStyleOptionViewItem*)&option, (QRect*)&rect, (QString*)&text);
-    // }
     QItemDelegate::drawDisplay(painter, option, rect, text);
   }
   }
@@ -78,10 +32,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QRect*, QPixmap*))(callback_ZNK13QItemDelegate14drawDecorationEP8QPainterRK20QStyleOptionViewItemRK5QRectRK7QPixmap_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QStyleOptionViewItem*)&option, (QRect*)&rect, (QPixmap*)&pixmap);
-    // }
     QItemDelegate::drawDecoration(painter, option, rect, pixmap);
   }
   }
@@ -92,10 +42,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QRect*))(callback_ZNK13QItemDelegate9drawFocusEP8QPainterRK20QStyleOptionViewItemRK5QRect_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QStyleOptionViewItem*)&option, (QRect*)&rect);
-    // }
     QItemDelegate::drawFocus(painter, option, rect);
   }
   }
@@ -106,10 +52,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QRect*, Qt::CheckState))(callback_ZNK13QItemDelegate9drawCheckEP8QPainterRK20QStyleOptionViewItemRK5QRectN2Qt10CheckStateE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QStyleOptionViewItem*)&option, (QRect*)&rect, state);
-    // }
     QItemDelegate::drawCheck(painter, option, rect, state);
   }
   }
@@ -120,10 +62,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QStyleOptionViewItem*, QModelIndex*))(callback_ZNK13QItemDelegate14drawBackgroundEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QStyleOptionViewItem*)&option, (QModelIndex*)&index);
-    // }
     QItemDelegate::drawBackground(painter, option, index);
   }
   }
@@ -134,10 +72,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionViewItem*, QRect *, QRect *, QRect *, bool))(callback_ZNK13QItemDelegate8doLayoutERK20QStyleOptionViewItemP5QRectS4_S4_b_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QStyleOptionViewItem*)&option, checkRect, iconRect, textRect, hint);
-    // }
     QItemDelegate::doLayout(option, checkRect, iconRect, textRect, hint);
   }
   }
@@ -149,10 +83,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return *(QRect*)(irv);
       // RecordRecordQRect
     } else {
-    // auto fnptr = ((QRect (*)(void* , QStyleOptionViewItem*, QModelIndex*, int))(callback_ZNK13QItemDelegate4rectERK20QStyleOptionViewItemRK11QModelIndexi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QStyleOptionViewItem*)&option, (QModelIndex*)&index, role);
-    // }
     return QItemDelegate::rect(option, index, role);
   }
   }
@@ -164,10 +94,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN13QItemDelegate11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , object, event);
-    // }
     return QItemDelegate::eventFilter(object, event);
   }
   }
@@ -179,10 +105,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *, QAbstractItemModel *, QStyleOptionViewItem*, QModelIndex*))(callback_ZN13QItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event, model, (QStyleOptionViewItem*)&option, (QModelIndex*)&index);
-    // }
     return QItemDelegate::editorEvent(event, model, option, index);
   }
   }
@@ -194,10 +116,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return *(QStyleOptionViewItem*)(irv);
       // RecordRecordQStyleOptionViewItem
     } else {
-    // auto fnptr = ((QStyleOptionViewItem (*)(void* , QModelIndex*, QStyleOptionViewItem*))(callback_ZNK13QItemDelegate10setOptionsERK11QModelIndexRK20QStyleOptionViewItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index, (QStyleOptionViewItem*)&option);
-    // }
     return QItemDelegate::setOptions(index, option);
   }
   }
@@ -209,10 +127,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return *(QPixmap*)(irv);
       // RecordRecordQPixmap
     } else {
-    // auto fnptr = ((QPixmap (*)(void* , QStyleOptionViewItem*, QVariant*))(callback_ZNK13QItemDelegate10decorationERK20QStyleOptionViewItemRK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QStyleOptionViewItem*)&option, (QVariant*)&variant);
-    // }
     return QItemDelegate::decoration(option, variant);
   }
   }
@@ -224,10 +138,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return (QPixmap *)(irv);
       // PointerPointerQPixmap *
     } else {
-    // auto fnptr = ((QPixmap * (*)(void* , QPixmap*, QPalette*, bool))(callback_ZNK13QItemDelegate8selectedERK7QPixmapRK8QPaletteb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPixmap*)&pixmap, (QPalette*)&palette, enabled);
-    // }
     return QItemDelegate::selected(pixmap, palette, enabled);
   }
   }
@@ -239,10 +149,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return *(QRect*)(irv);
       // RecordRecordQRect
     } else {
-    // auto fnptr = ((QRect (*)(void* , QStyleOptionViewItem*, QRect*, QVariant*))(callback_ZNK13QItemDelegate7doCheckERK20QStyleOptionViewItemRK5QRectRK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QStyleOptionViewItem*)&option, (QRect*)&bounding, (QVariant*)&variant);
-    // }
     return QItemDelegate::doCheck(option, bounding, variant);
   }
   }
@@ -254,10 +160,6 @@ MyQItemDelegate(QObject * parent) : QItemDelegate(parent) {}
     return *(QRect*)(irv);
       // RecordRecordQRect
     } else {
-    // auto fnptr = ((QRect (*)(void* , QPainter *, QRect*, QFont*, QString*))(callback_ZNK13QItemDelegate13textRectangleEP8QPainterRK5QRectRK5QFontRK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRect*)&rect, (QFont*)&font, (QString*)&text);
-    // }
     return QItemDelegate::textRectangle(painter, rect, font, text);
   }
   }

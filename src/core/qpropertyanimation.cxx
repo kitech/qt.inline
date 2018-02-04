@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN18QPropertyAnimation5eventEP6QEvent(void*cbfn)
-// { callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant(void*cbfn)
-// { callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr = cbfn; }
-// void* callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = 0;
-// extern "C" void set_callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_(void*cbfn)
-// { callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr = cbfn; }
 
 class MyQPropertyAnimation : public QPropertyAnimation {
 public:
@@ -34,10 +25,6 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN18QPropertyAnimation5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QPropertyAnimation::event(event);
   }
   }
@@ -48,10 +35,6 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QVariant*))(callback_ZN18QPropertyAnimation18updateCurrentValueERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&value);
-    // }
     QPropertyAnimation::updateCurrentValue(value);
   }
   }
@@ -62,10 +45,6 @@ MyQPropertyAnimation(QObject * target, const QByteArray & propertyName, QObject 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractAnimation::State, QAbstractAnimation::State))(callback_ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , newState, oldState);
-    // }
     QPropertyAnimation::updateState(newState, oldState);
   }
   }

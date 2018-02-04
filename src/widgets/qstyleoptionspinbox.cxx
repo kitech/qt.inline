@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN19QStyleOptionSpinBoxC1Ei(void*cbfn)
-// { callback_ZN19QStyleOptionSpinBoxC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionSpinBox : public QStyleOptionSpinBox {
 public:

@@ -9,78 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QTableView8rowMovedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView8rowMovedEiii(void*cbfn)
-// { callback_ZN10QTableView8rowMovedEiii_fnptr = cbfn; }
-// void* callback_ZN10QTableView11columnMovedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView11columnMovedEiii(void*cbfn)
-// { callback_ZN10QTableView11columnMovedEiii_fnptr = cbfn; }
-// void* callback_ZN10QTableView10rowResizedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView10rowResizedEiii(void*cbfn)
-// { callback_ZN10QTableView10rowResizedEiii_fnptr = cbfn; }
-// void* callback_ZN10QTableView13columnResizedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView13columnResizedEiii(void*cbfn)
-// { callback_ZN10QTableView13columnResizedEiii_fnptr = cbfn; }
-// void* callback_ZN10QTableView15rowCountChangedEii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView15rowCountChangedEii(void*cbfn)
-// { callback_ZN10QTableView15rowCountChangedEii_fnptr = cbfn; }
-// void* callback_ZN10QTableView18columnCountChangedEii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView18columnCountChangedEii(void*cbfn)
-// { callback_ZN10QTableView18columnCountChangedEii_fnptr = cbfn; }
-// void* callback_ZN10QTableView16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView16scrollContentsByEii(void*cbfn)
-// { callback_ZN10QTableView16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZNK10QTableView11viewOptionsEv_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView11viewOptionsEv(void*cbfn)
-// { callback_ZNK10QTableView11viewOptionsEv_fnptr = cbfn; }
-// void* callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZNK10QTableView16horizontalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView16horizontalOffsetEv(void*cbfn)
-// { callback_ZNK10QTableView16horizontalOffsetEv_fnptr = cbfn; }
-// void* callback_ZNK10QTableView14verticalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView14verticalOffsetEv(void*cbfn)
-// { callback_ZNK10QTableView14verticalOffsetEv_fnptr = cbfn; }
-// void* callback_ZN10QTableView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
-// { callback_ZN10QTableView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
-// void* callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-// { callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// void* callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-// { callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// void* callback_ZN10QTableView16updateGeometriesEv_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView16updateGeometriesEv(void*cbfn)
-// { callback_ZN10QTableView16updateGeometriesEv_fnptr = cbfn; }
-// void* callback_ZNK10QTableView16viewportSizeHintEv_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView16viewportSizeHintEv(void*cbfn)
-// { callback_ZNK10QTableView16viewportSizeHintEv_fnptr = cbfn; }
-// void* callback_ZNK10QTableView14sizeHintForRowEi_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView14sizeHintForRowEi(void*cbfn)
-// { callback_ZNK10QTableView14sizeHintForRowEi_fnptr = cbfn; }
-// void* callback_ZNK10QTableView17sizeHintForColumnEi_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView17sizeHintForColumnEi(void*cbfn)
-// { callback_ZNK10QTableView17sizeHintForColumnEi_fnptr = cbfn; }
-// void* callback_ZN10QTableView23verticalScrollbarActionEi_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView23verticalScrollbarActionEi(void*cbfn)
-// { callback_ZN10QTableView23verticalScrollbarActionEi_fnptr = cbfn; }
-// void* callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView25horizontalScrollbarActionEi(void*cbfn)
-// { callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr = cbfn; }
-// void* callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex(void*cbfn)
-// { callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2_(void*cbfn)
-// { callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr = cbfn; }
-// void* callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZN10QTableView14currentChangedERK11QModelIndexS2_(void*cbfn)
-// { callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
 
 class MyQTableView : public QTableView {
 public:
@@ -94,10 +22,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView8rowMovedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, oldIndex, newIndex);
-    // }
     QTableView::rowMoved(row, oldIndex, newIndex);
   }
   }
@@ -108,10 +32,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView11columnMovedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , column, oldIndex, newIndex);
-    // }
     QTableView::columnMoved(column, oldIndex, newIndex);
   }
   }
@@ -122,10 +42,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView10rowResizedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row, oldHeight, newHeight);
-    // }
     QTableView::rowResized(row, oldHeight, newHeight);
   }
   }
@@ -136,10 +52,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN10QTableView13columnResizedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , column, oldWidth, newWidth);
-    // }
     QTableView::columnResized(column, oldWidth, newWidth);
   }
   }
@@ -150,10 +62,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView15rowCountChangedEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , oldCount, newCount);
-    // }
     QTableView::rowCountChanged(oldCount, newCount);
   }
   }
@@ -164,10 +72,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView18columnCountChangedEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , oldCount, newCount);
-    // }
     QTableView::columnCountChanged(oldCount, newCount);
   }
   }
@@ -178,10 +82,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN10QTableView16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QTableView::scrollContentsBy(dx, dy);
   }
   }
@@ -193,10 +93,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return *(QStyleOptionViewItem*)(irv);
       // RecordRecordQStyleOptionViewItem
     } else {
-    // auto fnptr = ((QStyleOptionViewItem (*)(void* ))(callback_ZNK10QTableView11viewOptionsEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTableView::viewOptions();
   }
   }
@@ -207,10 +103,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QTableView10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     QTableView::paintEvent(e);
   }
   }
@@ -221,10 +113,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN10QTableView10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QTableView::timerEvent(event);
   }
   }
@@ -236,10 +124,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK10QTableView16horizontalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTableView::horizontalOffset();
   }
   }
@@ -251,10 +135,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK10QTableView14verticalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTableView::verticalOffset();
   }
   }
@@ -266,10 +146,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, QFlags<Qt::KeyboardModifier>))(callback_ZN10QTableView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , cursorAction, modifiers);
-    // }
     return QTableView::moveCursor(cursorAction, modifiers);
   }
   }
@@ -280,10 +156,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN10QTableView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QRect*)&rect, command);
-    // }
     QTableView::setSelection(rect, command);
   }
   }
@@ -295,10 +167,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return *(QRegion*)(irv);
       // RecordRecordQRegion
     } else {
-    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK10QTableView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selection);
-    // }
     return QTableView::visualRegionForSelection(selection);
   }
   }
@@ -309,10 +177,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN10QTableView16updateGeometriesEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QTableView::updateGeometries();
   }
   }
@@ -324,10 +188,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return *(QSize*)(irv);
       // RecordRecordQSize
     } else {
-    // auto fnptr = ((QSize (*)(void* ))(callback_ZNK10QTableView16viewportSizeHintEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QTableView::viewportSizeHint();
   }
   }
@@ -339,10 +199,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , int))(callback_ZNK10QTableView14sizeHintForRowEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , row);
-    // }
     return QTableView::sizeHintForRow(row);
   }
   }
@@ -354,10 +210,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , int))(callback_ZNK10QTableView17sizeHintForColumnEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , column);
-    // }
     return QTableView::sizeHintForColumn(column);
   }
   }
@@ -368,10 +220,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTableView23verticalScrollbarActionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , action);
-    // }
     QTableView::verticalScrollbarAction(action);
   }
   }
@@ -382,10 +230,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN10QTableView25horizontalScrollbarActionEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , action);
-    // }
     QTableView::horizontalScrollbarAction(action);
   }
   }
@@ -397,10 +241,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK10QTableView13isIndexHiddenERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QTableView::isIndexHidden(index);
   }
   }
@@ -411,10 +251,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QItemSelection*, QItemSelection*))(callback_ZN10QTableView16selectionChangedERK14QItemSelectionS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selected, (QItemSelection*)&deselected);
-    // }
     QTableView::selectionChanged(selected, deselected);
   }
   }
@@ -425,10 +261,6 @@ MyQTableView(QWidget * parent) : QTableView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN10QTableView14currentChangedERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
-    // }
     QTableView::currentChanged(current, previous);
   }
   }

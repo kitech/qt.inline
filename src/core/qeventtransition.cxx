@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QEventTransition9eventTestEP6QEvent(void*cbfn)
-// { callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QEventTransition12onTransitionEP6QEvent(void*cbfn)
-// { callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN16QEventTransition5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QEventTransition5eventEP6QEvent(void*cbfn)
-// { callback_ZN16QEventTransition5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQEventTransition : public QEventTransition {
 public:
@@ -34,10 +25,6 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QEventTransition9eventTestEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QEventTransition::eventTest(event);
   }
   }
@@ -48,10 +35,6 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN16QEventTransition12onTransitionEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QEventTransition::onTransition(event);
   }
   }
@@ -63,10 +46,6 @@ MyQEventTransition(QObject * object, QEvent::Type type, QState * sourceState) : 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QEventTransition5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QEventTransition::event(e);
   }
   }

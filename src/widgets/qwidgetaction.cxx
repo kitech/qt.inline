@@ -9,18 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QWidgetAction5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QWidgetAction5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QWidgetAction5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN13QWidgetAction12createWidgetEP7QWidget(void*cbfn)
-// { callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr = cbfn; }
-// void* callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr = 0;
-// extern "C" void set_callback_ZN13QWidgetAction12deleteWidgetEP7QWidget(void*cbfn)
-// { callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr = cbfn; }
 
 class MyQWidgetAction : public QWidgetAction {
 public:
@@ -35,10 +23,6 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QWidgetAction5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QWidgetAction::event(arg0);
   }
   }
@@ -50,10 +34,6 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN13QWidgetAction11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QWidgetAction::eventFilter(arg0, arg1);
   }
   }
@@ -65,10 +45,6 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     return (QWidget *)(irv);
       // PointerPointerQWidget *
     } else {
-    // auto fnptr = ((QWidget * (*)(void* , QWidget *))(callback_ZN13QWidgetAction12createWidgetEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , parent);
-    // }
     return QWidgetAction::createWidget(parent);
   }
   }
@@ -79,10 +55,6 @@ MyQWidgetAction(QObject * parent) : QWidgetAction(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWidget *))(callback_ZN13QWidgetAction12deleteWidgetEP7QWidget_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , widget);
-    // }
     QWidgetAction::deleteWidget(widget);
   }
   }

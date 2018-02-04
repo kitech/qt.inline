@@ -9,27 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QCheckBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QCheckBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN9QCheckBox5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK9QCheckBox9hitButtonERK6QPoint_fnptr = 0;
-// extern "C" void set_callback_ZNK9QCheckBox9hitButtonERK6QPoint(void*cbfn)
-// { callback_ZNK9QCheckBox9hitButtonERK6QPoint_fnptr = cbfn; }
-// void* callback_ZN9QCheckBox13checkStateSetEv_fnptr = 0;
-// extern "C" void set_callback_ZN9QCheckBox13checkStateSetEv(void*cbfn)
-// { callback_ZN9QCheckBox13checkStateSetEv_fnptr = cbfn; }
-// void* callback_ZN9QCheckBox14nextCheckStateEv_fnptr = 0;
-// extern "C" void set_callback_ZN9QCheckBox14nextCheckStateEv(void*cbfn)
-// { callback_ZN9QCheckBox14nextCheckStateEv_fnptr = cbfn; }
-// void* callback_ZN9QCheckBox10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QCheckBox10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN9QCheckBox10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton_fnptr = 0;
-// extern "C" void set_callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton(void*cbfn)
-// { callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton_fnptr = cbfn; }
 
 class MyQCheckBox : public QCheckBox {
 public:
@@ -46,10 +25,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QCheckBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QCheckBox::event(e);
   }
   }
@@ -61,10 +36,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QPoint*))(callback_ZNK9QCheckBox9hitButtonERK6QPoint_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QPoint*)&pos);
-    // }
     return QCheckBox::hitButton(pos);
   }
   }
@@ -75,10 +46,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN9QCheckBox13checkStateSetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QCheckBox::checkStateSet();
   }
   }
@@ -89,10 +56,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN9QCheckBox14nextCheckStateEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QCheckBox::nextCheckState();
   }
   }
@@ -103,10 +66,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN9QCheckBox10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QCheckBox::paintEvent(arg0);
   }
   }
@@ -117,10 +76,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN9QCheckBox14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QCheckBox::mouseMoveEvent(arg0);
   }
   }
@@ -131,10 +86,6 @@ MyQCheckBox(const QString & text, QWidget * parent) : QCheckBox(text, parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionButton *))(callback_ZNK9QCheckBox15initStyleOptionEP18QStyleOptionButton_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QCheckBox::initStyleOption(option);
   }
   }

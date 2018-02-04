@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN15QPauseAnimation5eventEP6QEvent(void*cbfn)
-// { callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = 0;
-// extern "C" void set_callback_ZN15QPauseAnimation17updateCurrentTimeEi(void*cbfn)
-// { callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr = cbfn; }
 
 class MyQPauseAnimation : public QPauseAnimation {
 public:
@@ -31,10 +25,6 @@ MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) 
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN15QPauseAnimation5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QPauseAnimation::event(e);
   }
   }
@@ -45,10 +35,6 @@ MyQPauseAnimation(int msecs, QObject * parent) : QPauseAnimation(msecs, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int))(callback_ZN15QPauseAnimation17updateCurrentTimeEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QPauseAnimation::updateCurrentTime(arg0);
   }
   }

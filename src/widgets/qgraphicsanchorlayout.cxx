@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
-// extern "C" void set_callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
-// { callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
 
 class MyQGraphicsAnchorLayout : public QGraphicsAnchorLayout {
 public:
@@ -26,10 +23,6 @@ MyQGraphicsAnchorLayout(QGraphicsLayoutItem * parent) : QGraphicsAnchorLayout(pa
     return *(QSizeF*)(irv);
       // RecordRecordQSizeF
     } else {
-    // auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK21QGraphicsAnchorLayout8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , which, (QSizeF*)&constraint);
-    // }
     return QGraphicsAnchorLayout::sizeHint(which, constraint);
   }
   }

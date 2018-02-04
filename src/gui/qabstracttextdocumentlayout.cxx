@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
-// void* callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// void* callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// void* callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr = cbfn; }
-// void* callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout11formatIndexEi(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr = cbfn; }
-// void* callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = 0;
-// extern "C" void set_callback_ZN27QAbstractTextDocumentLayout6formatEi(void*cbfn)
-// { callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr = cbfn; }
 
 class MyQAbstractTextDocumentLayout : public QAbstractTextDocumentLayout {
 public:
@@ -40,10 +22,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN27QAbstractTextDocumentLayout15documentChangedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , from, charsRemoved, charsAdded);
-    // }
     QAbstractTextDocumentLayout::documentChanged(from, charsRemoved, charsAdded);
   }
   }
@@ -54,10 +32,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout18resizeInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
-    // }
     QAbstractTextDocumentLayout::resizeInlineObject(item, posInDocument, format);
   }
   }
@@ -68,10 +42,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextInlineObject*)&item, posInDocument, (QTextFormat*)&format);
-    // }
     QAbstractTextDocumentLayout::positionInlineObject(item, posInDocument, format);
   }
   }
@@ -82,10 +52,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *, QRectF*, QTextInlineObject*, int, QTextFormat*))(callback_ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter, (QRectF*)&rect, (QTextInlineObject*)&object, posInDocument, (QTextFormat*)&format);
-    // }
     QAbstractTextDocumentLayout::drawInlineObject(painter, rect, object, posInDocument, format);
   }
   }
@@ -97,10 +63,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout11formatIndexEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , pos);
-    // }
     return QAbstractTextDocumentLayout::formatIndex(pos);
   }
   }
@@ -112,10 +74,6 @@ MyQAbstractTextDocumentLayout(QTextDocument * doc) : QAbstractTextDocumentLayout
     return *(QTextCharFormat*)(irv);
       // RecordRecordQTextCharFormat
     } else {
-    // auto fnptr = ((QTextCharFormat (*)(void* , int))(callback_ZN27QAbstractTextDocumentLayout6formatEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , pos);
-    // }
     return QAbstractTextDocumentLayout::format(pos);
   }
   }

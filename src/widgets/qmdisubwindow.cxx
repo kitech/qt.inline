@@ -9,66 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow10leaveEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow10leaveEventEP6QEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow10leaveEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN13QMdiSubWindow10childEventEP11QChildEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QMdiSubWindow10childEventEP11QChildEvent(void*cbfn)
-// { callback_ZN13QMdiSubWindow10childEventEP11QChildEvent_fnptr = cbfn; }
 
 class MyQMdiSubWindow : public QMdiSubWindow {
 public:
@@ -83,10 +23,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , object, event);
-    // }
     return QMdiSubWindow::eventFilter(object, event);
   }
   }
@@ -98,10 +34,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QMdiSubWindow5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QMdiSubWindow::event(event);
   }
   }
@@ -112,10 +44,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN13QMdiSubWindow9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , showEvent);
-    // }
     QMdiSubWindow::showEvent(showEvent);
   }
   }
@@ -126,10 +54,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN13QMdiSubWindow9hideEventEP10QHideEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , hideEvent);
-    // }
     QMdiSubWindow::hideEvent(hideEvent);
   }
   }
@@ -140,10 +64,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QMdiSubWindow11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , changeEvent);
-    // }
     QMdiSubWindow::changeEvent(changeEvent);
   }
   }
@@ -154,10 +74,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QCloseEvent *))(callback_ZN13QMdiSubWindow10closeEventEP11QCloseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , closeEvent);
-    // }
     QMdiSubWindow::closeEvent(closeEvent);
   }
   }
@@ -168,10 +84,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN13QMdiSubWindow10leaveEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , leaveEvent);
-    // }
     QMdiSubWindow::leaveEvent(leaveEvent);
   }
   }
@@ -182,10 +94,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , resizeEvent);
-    // }
     QMdiSubWindow::resizeEvent(resizeEvent);
   }
   }
@@ -196,10 +104,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN13QMdiSubWindow10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , timerEvent);
-    // }
     QMdiSubWindow::timerEvent(timerEvent);
   }
   }
@@ -210,10 +114,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMoveEvent *))(callback_ZN13QMdiSubWindow9moveEventEP10QMoveEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , moveEvent);
-    // }
     QMdiSubWindow::moveEvent(moveEvent);
   }
   }
@@ -224,10 +124,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN13QMdiSubWindow10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , paintEvent);
-    // }
     QMdiSubWindow::paintEvent(paintEvent);
   }
   }
@@ -238,10 +134,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , mouseEvent);
-    // }
     QMdiSubWindow::mousePressEvent(mouseEvent);
   }
   }
@@ -252,10 +144,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , mouseEvent);
-    // }
     QMdiSubWindow::mouseDoubleClickEvent(mouseEvent);
   }
   }
@@ -266,10 +154,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , mouseEvent);
-    // }
     QMdiSubWindow::mouseReleaseEvent(mouseEvent);
   }
   }
@@ -280,10 +164,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , mouseEvent);
-    // }
     QMdiSubWindow::mouseMoveEvent(mouseEvent);
   }
   }
@@ -294,10 +174,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , keyEvent);
-    // }
     QMdiSubWindow::keyPressEvent(keyEvent);
   }
   }
@@ -308,10 +184,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , contextMenuEvent);
-    // }
     QMdiSubWindow::contextMenuEvent(contextMenuEvent);
   }
   }
@@ -322,10 +194,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , focusInEvent);
-    // }
     QMdiSubWindow::focusInEvent(focusInEvent);
   }
   }
@@ -336,10 +204,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , focusOutEvent);
-    // }
     QMdiSubWindow::focusOutEvent(focusOutEvent);
   }
   }
@@ -350,10 +214,6 @@ MyQMdiSubWindow(QWidget * parent, QFlags<Qt::WindowType> flags) : QMdiSubWindow(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QChildEvent *))(callback_ZN13QMdiSubWindow10childEventEP11QChildEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , childEvent);
-    // }
     QMdiSubWindow::childEvent(childEvent);
   }
   }

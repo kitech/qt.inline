@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN23QStyleOptionProgressBarC1Ei(void*cbfn)
-// { callback_ZN23QStyleOptionProgressBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionProgressBar : public QStyleOptionProgressBar {
 public:

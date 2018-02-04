@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextListFormatC1ERK11QTextFormat(void*cbfn)
-// { callback_ZN15QTextListFormatC1ERK11QTextFormat_fnptr = cbfn; }
 
 class MyQTextListFormat : public QTextListFormat {
 public:

@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QTextBlockGroupC1EP13QTextDocument_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextBlockGroupC1EP13QTextDocument(void*cbfn)
-// { callback_ZN15QTextBlockGroupC1EP13QTextDocument_fnptr = cbfn; }
-// void* callback_ZN15QTextBlockGroupD1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextBlockGroupD1Ev(void*cbfn)
-// { callback_ZN15QTextBlockGroupD1Ev_fnptr = cbfn; }
-// void* callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock(void*cbfn)
-// { callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock_fnptr = cbfn; }
-// void* callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock(void*cbfn)
-// { callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock_fnptr = cbfn; }
-// void* callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock_fnptr = 0;
-// extern "C" void set_callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock(void*cbfn)
-// { callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock_fnptr = cbfn; }
 
 class MyQTextBlockGroup : public QTextBlockGroup {
 public:
@@ -38,10 +23,6 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextBlock*))(callback_ZN15QTextBlockGroup13blockInsertedERK10QTextBlock_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextBlock*)&block);
-    // }
     QTextBlockGroup::blockInserted(block);
   }
   }
@@ -52,10 +33,6 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextBlock*))(callback_ZN15QTextBlockGroup12blockRemovedERK10QTextBlock_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextBlock*)&block);
-    // }
     QTextBlockGroup::blockRemoved(block);
   }
   }
@@ -66,10 +43,6 @@ MyQTextBlockGroup(QTextDocument * doc) : QTextBlockGroup(doc) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTextBlock*))(callback_ZN15QTextBlockGroup18blockFormatChangedERK10QTextBlock_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QTextBlock*)&block);
-    // }
     QTextBlockGroup::blockFormatChanged(block);
   }
   }

@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = 0;
-// extern "C" void set_callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void*cbfn)
-// { callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr = cbfn; }
-// void* callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void*cbfn)
-// { callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr = cbfn; }
-// void* callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr = 0;
-// extern "C" void set_callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(void*cbfn)
-// { callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr = cbfn; }
 
 class MyQGraphicsEllipseItem : public QGraphicsEllipseItem {
 public:
@@ -36,10 +27,6 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QGraphicsItem::Extension))(callback_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension);
-    // }
     return QGraphicsEllipseItem::supportsExtension(extension);
   }
   }
@@ -50,10 +37,6 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem::Extension, QVariant*))(callback_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , extension, (QVariant*)&variant);
-    // }
     QGraphicsEllipseItem::setExtension(extension, variant);
   }
   }
@@ -65,10 +48,6 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
     return *(QVariant*)(irv);
       // RecordRecordQVariant
     } else {
-    // auto fnptr = ((QVariant (*)(void* , QVariant*))(callback_ZNK20QGraphicsEllipseItem9extensionERK8QVariant_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QVariant*)&variant);
-    // }
     return QGraphicsEllipseItem::extension(variant);
   }
   }

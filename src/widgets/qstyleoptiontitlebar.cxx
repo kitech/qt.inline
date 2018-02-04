@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN20QStyleOptionTitleBarC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN20QStyleOptionTitleBarC1Ei(void*cbfn)
-// { callback_ZN20QStyleOptionTitleBarC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionTitleBar : public QStyleOptionTitleBar {
 public:

@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN7QAction5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN7QAction5eventEP6QEvent(void*cbfn)
-// { callback_ZN7QAction5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQAction : public QAction {
 public:
@@ -30,10 +27,6 @@ MyQAction(const QIcon & icon, const QString & text, QObject * parent) : QAction(
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN7QAction5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QAction::event(arg0);
   }
   }

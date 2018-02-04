@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN6QState7onEntryEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QState7onEntryEP6QEvent(void*cbfn)
-// { callback_ZN6QState7onEntryEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN6QState6onExitEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QState6onExitEP6QEvent(void*cbfn)
-// { callback_ZN6QState6onExitEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN6QState5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN6QState5eventEP6QEvent(void*cbfn)
-// { callback_ZN6QState5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQState : public QState {
 public:
@@ -33,10 +24,6 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QState7onEntryEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QState::onEntry(event);
   }
   }
@@ -47,10 +34,6 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN6QState6onExitEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QState::onExit(event);
   }
   }
@@ -62,10 +45,6 @@ MyQState(QState::ChildMode childMode, QState * parent) : QState(childMode, paren
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN6QState5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QState::event(e);
   }
   }

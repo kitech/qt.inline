@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QTextCodecC1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN10QTextCodecC1Ev(void*cbfn)
-// { callback_ZN10QTextCodecC1Ev_fnptr = cbfn; }
-// void* callback_ZN10QTextCodecD1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN10QTextCodecD1Ev(void*cbfn)
-// { callback_ZN10QTextCodecD1Ev_fnptr = cbfn; }
 
 class MyQTextCodec : public QTextCodec {
 public:

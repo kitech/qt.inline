@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QSpinBox5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QSpinBox5eventEP6QEvent(void*cbfn)
-// { callback_ZN8QSpinBox5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = 0;
-// extern "C" void set_callback_ZNK8QSpinBox8validateER7QStringRi(void*cbfn)
-// { callback_ZNK8QSpinBox8validateER7QStringRi_fnptr = cbfn; }
-// void* callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK8QSpinBox13valueFromTextERK7QString(void*cbfn)
-// { callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr = cbfn; }
-// void* callback_ZNK8QSpinBox13textFromValueEi_fnptr = 0;
-// extern "C" void set_callback_ZNK8QSpinBox13textFromValueEi(void*cbfn)
-// { callback_ZNK8QSpinBox13textFromValueEi_fnptr = cbfn; }
-// void* callback_ZNK8QSpinBox5fixupER7QString_fnptr = 0;
-// extern "C" void set_callback_ZNK8QSpinBox5fixupER7QString(void*cbfn)
-// { callback_ZNK8QSpinBox5fixupER7QString_fnptr = cbfn; }
 
 class MyQSpinBox : public QSpinBox {
 public:
@@ -38,10 +23,6 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QSpinBox5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QSpinBox::event(event);
   }
   }
@@ -53,10 +34,6 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return (QValidator::State)(int)(irv);
       // ElaboratedEnumQValidator::State
     } else {
-    // auto fnptr = ((QValidator::State (*)(void* , QString*, int &))(callback_ZNK8QSpinBox8validateER7QStringRi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&input, pos);
-    // }
     return QSpinBox::validate(input, pos);
   }
   }
@@ -68,10 +45,6 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QString*))(callback_ZNK8QSpinBox13valueFromTextERK7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&text);
-    // }
     return QSpinBox::valueFromText(text);
   }
   }
@@ -83,10 +56,6 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     return *(QString*)(irv);
       // RecordRecordQString
     } else {
-    // auto fnptr = ((QString (*)(void* , int))(callback_ZNK8QSpinBox13textFromValueEi_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , val);
-    // }
     return QSpinBox::textFromValue(val);
   }
   }
@@ -97,10 +66,6 @@ MyQSpinBox(QWidget * parent) : QSpinBox(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QString*))(callback_ZNK8QSpinBox5fixupER7QString_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QString*)&str);
-    // }
     QSpinBox::fixup(str);
   }
   }

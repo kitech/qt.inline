@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK10QPdfWriter11paintEngineEv_fnptr = 0;
-// extern "C" void set_callback_ZNK10QPdfWriter11paintEngineEv(void*cbfn)
-// { callback_ZNK10QPdfWriter11paintEngineEv_fnptr = cbfn; }
-// void* callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = 0;
-// extern "C" void set_callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE(void*cbfn)
-// { callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr = cbfn; }
 
 class MyQPdfWriter : public QPdfWriter {
 public:
@@ -31,10 +25,6 @@ MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
     return (QPaintEngine *)(irv);
       // PointerPointerQPaintEngine *
     } else {
-    // auto fnptr = ((QPaintEngine * (*)(void* ))(callback_ZNK10QPdfWriter11paintEngineEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QPdfWriter::paintEngine();
   }
   }
@@ -46,10 +36,6 @@ MyQPdfWriter(QIODevice * device) : QPdfWriter(device) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* , QPaintDevice::PaintDeviceMetric))(callback_ZNK10QPdfWriter6metricEN12QPaintDevice17PaintDeviceMetricE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , id);
-    // }
     return QPdfWriter::metric(id);
   }
   }

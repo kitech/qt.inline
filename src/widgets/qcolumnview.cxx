@@ -9,42 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex(void*cbfn)
-// { callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZN11QColumnView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE(void*cbfn)
-// { callback_ZN11QColumnView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr = cbfn; }
-// void* callback_ZN11QColumnView11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN11QColumnView11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE(void*cbfn)
-// { callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr = cbfn; }
-// void* callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection_fnptr = 0;
-// extern "C" void set_callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection(void*cbfn)
-// { callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection_fnptr = cbfn; }
-// void* callback_ZNK11QColumnView16horizontalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QColumnView16horizontalOffsetEv(void*cbfn)
-// { callback_ZNK11QColumnView16horizontalOffsetEv_fnptr = cbfn; }
-// void* callback_ZNK11QColumnView14verticalOffsetEv_fnptr = 0;
-// extern "C" void set_callback_ZNK11QColumnView14verticalOffsetEv(void*cbfn)
-// { callback_ZNK11QColumnView14verticalOffsetEv_fnptr = cbfn; }
-// void* callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii(void*cbfn)
-// { callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii_fnptr = cbfn; }
-// void* callback_ZN11QColumnView14currentChangedERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView14currentChangedERK11QModelIndexS2_(void*cbfn)
-// { callback_ZN11QColumnView14currentChangedERK11QModelIndexS2__fnptr = cbfn; }
-// void* callback_ZN11QColumnView16scrollContentsByEii_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView16scrollContentsByEii(void*cbfn)
-// { callback_ZN11QColumnView16scrollContentsByEii_fnptr = cbfn; }
-// void* callback_ZN11QColumnView12createColumnERK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZN11QColumnView12createColumnERK11QModelIndex(void*cbfn)
-// { callback_ZN11QColumnView12createColumnERK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView_fnptr = 0;
-// extern "C" void set_callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView(void*cbfn)
-// { callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView_fnptr = cbfn; }
 
 class MyQColumnView : public QColumnView {
 public:
@@ -59,10 +23,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*))(callback_ZNK11QColumnView13isIndexHiddenERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&index);
-    // }
     return QColumnView::isIndexHidden(index);
   }
   }
@@ -74,10 +34,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return *(QModelIndex*)(irv);
       // RecordRecordQModelIndex
     } else {
-    // auto fnptr = ((QModelIndex (*)(void* , QAbstractItemView::CursorAction, QFlags<Qt::KeyboardModifier>))(callback_ZN11QColumnView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , cursorAction, modifiers);
-    // }
     return QColumnView::moveCursor(cursorAction, modifiers);
   }
   }
@@ -88,10 +44,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN11QColumnView11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QColumnView::resizeEvent(event);
   }
   }
@@ -102,10 +54,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QRect*, QFlags<QItemSelectionModel::SelectionFlag>))(callback_ZN11QColumnView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QRect*)&rect, command);
-    // }
     QColumnView::setSelection(rect, command);
   }
   }
@@ -117,10 +65,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return *(QRegion*)(irv);
       // RecordRecordQRegion
     } else {
-    // auto fnptr = ((QRegion (*)(void* , QItemSelection*))(callback_ZNK11QColumnView24visualRegionForSelectionERK14QItemSelection_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QItemSelection*)&selection);
-    // }
     return QColumnView::visualRegionForSelection(selection);
   }
   }
@@ -132,10 +76,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QColumnView16horizontalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QColumnView::horizontalOffset();
   }
   }
@@ -147,10 +87,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return (int)(irv);
       // IntIntint
     } else {
-    // auto fnptr = ((int (*)(void* ))(callback_ZNK11QColumnView14verticalOffsetEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     return QColumnView::verticalOffset();
   }
   }
@@ -161,10 +97,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, int, int))(callback_ZN11QColumnView12rowsInsertedERK11QModelIndexii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&parent, start, end);
-    // }
     QColumnView::rowsInserted(parent, start, end);
   }
   }
@@ -175,10 +107,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QModelIndex*, QModelIndex*))(callback_ZN11QColumnView14currentChangedERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&current, (QModelIndex*)&previous);
-    // }
     QColumnView::currentChanged(current, previous);
   }
   }
@@ -189,10 +117,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int))(callback_ZN11QColumnView16scrollContentsByEii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , dx, dy);
-    // }
     QColumnView::scrollContentsBy(dx, dy);
   }
   }
@@ -204,10 +128,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     return (QAbstractItemView *)(irv);
       // PointerPointerQAbstractItemView *
     } else {
-    // auto fnptr = ((QAbstractItemView * (*)(void* , QModelIndex*))(callback_ZN11QColumnView12createColumnERK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&rootIndex);
-    // }
     return QColumnView::createColumn(rootIndex);
   }
   }
@@ -218,10 +138,6 @@ MyQColumnView(QWidget * parent) : QColumnView(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractItemView *))(callback_ZNK11QColumnView16initializeColumnEP17QAbstractItemView_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , column);
-    // }
     QColumnView::initializeColumn(column);
   }
   }

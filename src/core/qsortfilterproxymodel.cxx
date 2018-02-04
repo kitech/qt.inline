@@ -9,21 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(void*cbfn)
-// { callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = 0;
-// extern "C" void set_callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(void*cbfn)
-// { callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr = cbfn; }
-// void* callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = 0;
-// extern "C" void set_callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(void*cbfn)
-// { callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr = cbfn; }
-// void* callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = 0;
-// extern "C" void set_callback_ZN21QSortFilterProxyModel13filterChangedEv(void*cbfn)
-// { callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr = cbfn; }
-// void* callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = 0;
-// extern "C" void set_callback_ZN21QSortFilterProxyModel16invalidateFilterEv(void*cbfn)
-// { callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr = cbfn; }
 
 class MyQSortFilterProxyModel : public QSortFilterProxyModel {
 public:
@@ -38,10 +23,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , source_row, (QModelIndex*)&source_parent);
-    // }
     return QSortFilterProxyModel::filterAcceptsRow(source_row, source_parent);
   }
   }
@@ -53,10 +34,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , int, QModelIndex*))(callback_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , source_column, (QModelIndex*)&source_parent);
-    // }
     return QSortFilterProxyModel::filterAcceptsColumn(source_column, source_parent);
   }
   }
@@ -68,10 +45,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QModelIndex*, QModelIndex*))(callback_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2__fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , (QModelIndex*)&source_left, (QModelIndex*)&source_right);
-    // }
     return QSortFilterProxyModel::lessThan(source_left, source_right);
   }
   }
@@ -82,10 +55,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel13filterChangedEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QSortFilterProxyModel::filterChanged();
   }
   }
@@ -96,10 +65,6 @@ MyQSortFilterProxyModel(QObject * parent) : QSortFilterProxyModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN21QSortFilterProxyModel16invalidateFilterEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QSortFilterProxyModel::invalidateFilter();
   }
   }

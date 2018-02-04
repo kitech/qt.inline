@@ -9,33 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QScrollBar10wheelEventEP11QWheelEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar10wheelEventEP11QWheelEvent(void*cbfn)
-// { callback_ZN10QScrollBar10wheelEventEP11QWheelEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN10QScrollBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar9hideEventEP10QHideEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar9hideEventEP10QHideEvent(void*cbfn)
-// { callback_ZN10QScrollBar9hideEventEP10QHideEvent_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE(void*cbfn)
-// { callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE_fnptr = cbfn; }
-// void* callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent(void*cbfn)
-// { callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent_fnptr = cbfn; }
-// void* callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider_fnptr = 0;
-// extern "C" void set_callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider(void*cbfn)
-// { callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider_fnptr = cbfn; }
 
 class MyQScrollBar : public QScrollBar {
 public:
@@ -51,10 +24,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QWheelEvent *))(callback_ZN10QScrollBar10wheelEventEP11QWheelEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::wheelEvent(arg0);
   }
   }
@@ -65,10 +34,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QScrollBar10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::paintEvent(arg0);
   }
   }
@@ -79,10 +44,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN10QScrollBar15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::mousePressEvent(arg0);
   }
   }
@@ -93,10 +54,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN10QScrollBar17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::mouseReleaseEvent(arg0);
   }
   }
@@ -107,10 +64,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN10QScrollBar14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::mouseMoveEvent(arg0);
   }
   }
@@ -121,10 +74,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QHideEvent *))(callback_ZN10QScrollBar9hideEventEP10QHideEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::hideEvent(arg0);
   }
   }
@@ -135,10 +84,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QAbstractSlider::SliderChange))(callback_ZN10QScrollBar12sliderChangeEN15QAbstractSlider12SliderChangeE_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , change);
-    // }
     QScrollBar::sliderChange(change);
   }
   }
@@ -149,10 +94,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QContextMenuEvent *))(callback_ZN10QScrollBar16contextMenuEventEP17QContextMenuEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QScrollBar::contextMenuEvent(arg0);
   }
   }
@@ -163,10 +104,6 @@ MyQScrollBar(Qt::Orientation arg0, QWidget * parent) : QScrollBar(arg0, parent) 
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionSlider *))(callback_ZNK10QScrollBar15initStyleOptionEP18QStyleOptionSlider_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option);
-    // }
     QScrollBar::initStyleOption(option);
   }
   }

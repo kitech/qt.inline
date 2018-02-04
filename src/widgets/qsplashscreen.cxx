@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QSplashScreen5eventEP6QEvent(void*cbfn)
-// { callback_ZN13QSplashScreen5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = 0;
-// extern "C" void set_callback_ZN13QSplashScreen12drawContentsEP8QPainter(void*cbfn)
-// { callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr = cbfn; }
-// void* callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
 
 class MyQSplashScreen : public QSplashScreen {
 public:
@@ -34,10 +25,6 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN13QSplashScreen5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QSplashScreen::event(e);
   }
   }
@@ -48,10 +35,6 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPainter *))(callback_ZN13QSplashScreen12drawContentsEP8QPainter_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , painter);
-    // }
     QSplashScreen::drawContents(painter);
   }
   }
@@ -62,10 +45,6 @@ MyQSplashScreen(QWidget * parent, const QPixmap & pixmap, QFlags<Qt::WindowType>
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN13QSplashScreen15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QSplashScreen::mousePressEvent(arg0);
   }
   }

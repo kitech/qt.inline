@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN9QShortcut5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN9QShortcut5eventEP6QEvent(void*cbfn)
-// { callback_ZN9QShortcut5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQShortcut : public QShortcut {
 public:
@@ -28,10 +25,6 @@ MyQShortcut(const QKeySequence & key, QWidget * parent, const char * member, con
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN9QShortcut5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , e);
-    // }
     return QShortcut::event(e);
   }
   }

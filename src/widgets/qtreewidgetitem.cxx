@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = 0;
-// extern "C" void set_callback_ZN15QTreeWidgetItem15emitDataChangedEv(void*cbfn)
-// { callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr = cbfn; }
 
 class MyQTreeWidgetItem : public QTreeWidgetItem {
 public:
@@ -39,10 +36,6 @@ MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type) :
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN15QTreeWidgetItem15emitDataChangedEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QTreeWidgetItem::emitDataChanged();
   }
   }

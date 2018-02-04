@@ -9,24 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar9showEventEP10QShowEvent(void*cbfn)
-// { callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr = cbfn; }
-// void* callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN10QStatusBar8reformatEv_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar8reformatEv(void*cbfn)
-// { callback_ZN10QStatusBar8reformatEv_fnptr = cbfn; }
-// void* callback_ZN10QStatusBar10hideOrShowEv_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar10hideOrShowEv(void*cbfn)
-// { callback_ZN10QStatusBar10hideOrShowEv_fnptr = cbfn; }
-// void* callback_ZN10QStatusBar5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN10QStatusBar5eventEP6QEvent(void*cbfn)
-// { callback_ZN10QStatusBar5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQStatusBar : public QStatusBar {
 public:
@@ -40,10 +22,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QShowEvent *))(callback_ZN10QStatusBar9showEventEP10QShowEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QStatusBar::showEvent(arg0);
   }
   }
@@ -54,10 +32,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN10QStatusBar10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QStatusBar::paintEvent(arg0);
   }
   }
@@ -68,10 +42,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN10QStatusBar11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QStatusBar::resizeEvent(arg0);
   }
   }
@@ -82,10 +52,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar8reformatEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QStatusBar::reformat();
   }
   }
@@ -96,10 +62,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* ))(callback_ZN10QStatusBar10hideOrShowEv_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this );
-    // }
     QStatusBar::hideOrShow();
   }
   }
@@ -111,10 +73,6 @@ MyQStatusBar(QWidget * parent) : QStatusBar(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN10QStatusBar5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QStatusBar::event(arg0);
   }
   }

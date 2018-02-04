@@ -9,15 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = 0;
-// extern "C" void set_callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem(void*cbfn)
-// { callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr = cbfn; }
-// void* callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = 0;
-// extern "C" void set_callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb(void*cbfn)
-// { callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr = cbfn; }
-// void* callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = 0;
-// extern "C" void set_callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF(void*cbfn)
-// { callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr = cbfn; }
 
 class MyQGraphicsLayoutItem : public QGraphicsLayoutItem {
 public:
@@ -31,10 +22,6 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QGraphicsItem *))(callback_ZN19QGraphicsLayoutItem15setGraphicsItemEP13QGraphicsItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , item);
-    // }
     QGraphicsLayoutItem::setGraphicsItem(item);
   }
   }
@@ -45,10 +32,6 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , bool))(callback_ZN19QGraphicsLayoutItem16setOwnedByLayoutEb_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , ownedByLayout);
-    // }
     QGraphicsLayoutItem::setOwnedByLayout(ownedByLayout);
   }
   }
@@ -60,10 +43,6 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
     return *(QSizeF*)(irv);
       // RecordRecordQSizeF
     } else {
-    // auto fnptr = ((QSizeF (*)(void* , Qt::SizeHint, QSizeF*))(callback_ZNK19QGraphicsLayoutItem8sizeHintEN2Qt8SizeHintERK6QSizeF_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , which, (QSizeF*)&constraint);
-    // }
     return QGraphicsLayoutItem::sizeHint(which, constraint);
   }
   }

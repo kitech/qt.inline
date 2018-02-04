@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN20QAccessibleInterfaceD1Ev_fnptr = 0;
-// extern "C" void set_callback_ZN20QAccessibleInterfaceD1Ev(void*cbfn)
-// { callback_ZN20QAccessibleInterfaceD1Ev_fnptr = cbfn; }
 
 class MyQAccessibleInterface : public QAccessibleInterface {
 public:

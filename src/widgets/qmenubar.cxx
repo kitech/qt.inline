@@ -9,51 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar11changeEventEP6QEvent(void*cbfn)
-// { callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void*cbfn)
-// { callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void*cbfn)
-// { callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar10leaveEventEP6QEvent(void*cbfn)
-// { callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar10paintEventEP11QPaintEvent(void*cbfn)
-// { callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar11resizeEventEP12QResizeEvent(void*cbfn)
-// { callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar11actionEventEP12QActionEvent(void*cbfn)
-// { callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar12focusInEventEP11QFocusEvent(void*cbfn)
-// { callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void*cbfn)
-// { callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr = cbfn; }
-// void* callback_ZN8QMenuBar5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN8QMenuBar5eventEP6QEvent(void*cbfn)
-// { callback_ZN8QMenuBar5eventEP6QEvent_fnptr = cbfn; }
-// void* callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = 0;
-// extern "C" void set_callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction(void*cbfn)
-// { callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr = cbfn; }
 
 class MyQMenuBar : public QMenuBar {
 public:
@@ -67,10 +22,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar11changeEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::changeEvent(arg0);
   }
   }
@@ -81,10 +32,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QKeyEvent *))(callback_ZN8QMenuBar13keyPressEventEP9QKeyEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::keyPressEvent(arg0);
   }
   }
@@ -95,10 +42,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::mouseReleaseEvent(arg0);
   }
   }
@@ -109,10 +52,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar15mousePressEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::mousePressEvent(arg0);
   }
   }
@@ -123,10 +62,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QMouseEvent *))(callback_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::mouseMoveEvent(arg0);
   }
   }
@@ -137,10 +72,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QEvent *))(callback_ZN8QMenuBar10leaveEventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::leaveEvent(arg0);
   }
   }
@@ -151,10 +82,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QPaintEvent *))(callback_ZN8QMenuBar10paintEventEP11QPaintEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::paintEvent(arg0);
   }
   }
@@ -165,10 +92,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QResizeEvent *))(callback_ZN8QMenuBar11resizeEventEP12QResizeEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::resizeEvent(arg0);
   }
   }
@@ -179,10 +102,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QActionEvent *))(callback_ZN8QMenuBar11actionEventEP12QActionEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::actionEvent(arg0);
   }
   }
@@ -193,10 +112,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar13focusOutEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::focusOutEvent(arg0);
   }
   }
@@ -207,10 +122,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QFocusEvent *))(callback_ZN8QMenuBar12focusInEventEP11QFocusEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::focusInEvent(arg0);
   }
   }
@@ -221,10 +132,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN8QMenuBar10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QMenuBar::timerEvent(arg0);
   }
   }
@@ -236,10 +143,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QObject *, QEvent *))(callback_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0, arg1);
-    // }
     return QMenuBar::eventFilter(arg0, arg1);
   }
   }
@@ -251,10 +154,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN8QMenuBar5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     return QMenuBar::event(arg0);
   }
   }
@@ -265,10 +164,6 @@ MyQMenuBar(QWidget * parent) : QMenuBar(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QStyleOptionMenuItem *, const QAction *))(callback_ZNK8QMenuBar15initStyleOptionEP20QStyleOptionMenuItemPK7QAction_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , option, action);
-    // }
     QMenuBar::initStyleOption(option, action);
   }
   }

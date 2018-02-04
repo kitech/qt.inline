@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN21QStyleOptionFocusRectC1Ei_fnptr = 0;
-// extern "C" void set_callback_ZN21QStyleOptionFocusRectC1Ei(void*cbfn)
-// { callback_ZN21QStyleOptionFocusRectC1Ei_fnptr = cbfn; }
 
 class MyQStyleOptionFocusRect : public QStyleOptionFocusRect {
 public:

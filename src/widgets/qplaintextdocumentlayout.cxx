@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = 0;
-// extern "C" void set_callback_ZN24QPlainTextDocumentLayout15documentChangedEiii(void*cbfn)
-// { callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr = cbfn; }
 
 class MyQPlainTextDocumentLayout : public QPlainTextDocumentLayout {
 public:
@@ -25,10 +22,6 @@ MyQPlainTextDocumentLayout(QTextDocument * document) : QPlainTextDocumentLayout(
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , int, int, int))(callback_ZN24QPlainTextDocumentLayout15documentChangedEiii_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , from, arg1, charsAdded);
-    // }
     QPlainTextDocumentLayout::documentChanged(from, arg1, charsAdded);
   }
   }

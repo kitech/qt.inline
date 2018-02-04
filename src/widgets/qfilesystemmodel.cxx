@@ -9,12 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent(void*cbfn)
-// { callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr = cbfn; }
-// void* callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = 0;
-// extern "C" void set_callback_ZN16QFileSystemModel5eventEP6QEvent(void*cbfn)
-// { callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr = cbfn; }
 
 class MyQFileSystemModel : public QFileSystemModel {
 public:
@@ -28,10 +22,6 @@ MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QTimerEvent *))(callback_ZN16QFileSystemModel10timerEventEP11QTimerEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     QFileSystemModel::timerEvent(event);
   }
   }
@@ -43,10 +33,6 @@ MyQFileSystemModel(QObject * parent) : QFileSystemModel(parent) {}
     return (bool)(irv);
       // BoolBoolbool
     } else {
-    // auto fnptr = ((bool (*)(void* , QEvent *))(callback_ZN16QFileSystemModel5eventEP6QEvent_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , event);
-    // }
     return QFileSystemModel::event(event);
   }
   }

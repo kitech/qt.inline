@@ -9,9 +9,6 @@
 //  header block end
 
 //  main block begin
-// void* callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = 0;
-// extern "C" void set_callback_ZN11QGridLayout7addItemEP11QLayoutItem(void*cbfn)
-// { callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr = cbfn; }
 
 class MyQGridLayout : public QGridLayout {
 public:
@@ -27,10 +24,6 @@ MyQGridLayout() : QGridLayout() {}
     if (handled) {
       // VoidVoidvoid
     } else {
-    // auto fnptr = ((void (*)(void* , QLayoutItem *))(callback_ZN11QGridLayout7addItemEP11QLayoutItem_fnptr));
-    // if (fnptr != 0) {
-    //   fnptr(this , arg0);
-    // }
     QGridLayout::addItem(arg0);
   }
   }
